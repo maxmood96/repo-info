@@ -601,14 +601,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.2.dsc' expat_2.6.1-2ubuntu0.2.dsc 2124 SHA512:bb5c41bf71d7e4c8a74daf366d974c19168b8e6327cc4482402f7f17d8fc94a58ce74f172ae537da30d81e62bb3cb567de7489a21d50364ed75859a3637ab5c1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.2.debian.tar.xz' expat_2.6.1-2ubuntu0.2.debian.tar.xz 18596 SHA512:3c2dcd3a278170b33c604ad634ae306d5aa7cb12b01f5d6e2bce3d8871cee1b6b571d9ebeb71a230fb62d2bd01211e00db7c670395385e4be0cfd0f22996291e
-```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
 

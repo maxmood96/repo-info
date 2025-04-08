@@ -1,10 +1,10 @@
-# `sonarqube:25.3.0.104237-community`
+# `sonarqube:25.4.0.105899-community`
 
 ## Docker Metadata
 
-- Image ID: `sha256:94a7de374354b23c76d3c6296244b16ae46b6e1188aff06f81bea35b061ba4e1`
-- Created: `2025-03-04T14:26:37Z`
-- Virtual Size: ~ 1.17 Gb  
+- Image ID: `sha256:c2e29cb0efe6d014a6075242a1c7692cd2c0591c902b7ecb8bdc12b10e784120`
+- Created: `2025-04-07T13:32:50Z`
+- Virtual Size: ~ 1.22 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -14,10 +14,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.14+7`
+  - `JAVA_VERSION=jdk-21.0.6+7`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=25.3.0.104237`
+  - `SONAR_VERSION=25.4.0.105899`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -569,14 +569,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.2.dsc' expat_2.6.1-2ubuntu0.2.dsc 2124 SHA512:bb5c41bf71d7e4c8a74daf366d974c19168b8e6327cc4482402f7f17d8fc94a58ce74f172ae537da30d81e62bb3cb567de7489a21d50364ed75859a3637ab5c1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.2.debian.tar.xz' expat_2.6.1-2ubuntu0.2.debian.tar.xz 18596 SHA512:3c2dcd3a278170b33c604ad634ae306d5aa7cb12b01f5d6e2bce3d8871cee1b6b571d9ebeb71a230fb62d2bd01211e00db7c670395385e4be0cfd0f22996291e
-```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
 
@@ -770,18 +765,18 @@ $ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2ubuntu6.debian.tar.xz' gmp_6.3.0+dfsg-2ubuntu6.debian.tar.xz 38868 SHA512:38a19e745de19cd6d1c9b3aaf6d989fb27098c64cce2b9bc49a14315555265fc6a7633fe8f98e40f3139929b34f7ce068c0023926208e6b6949a25f29ece1b78
 ```
 
-### `dpkg` source package: `gnupg2=2.4.4-2ubuntu17`
+### `dpkg` source package: `gnupg2=2.4.4-2ubuntu17.2`
 
 Binary Packages:
 
-- `dirmngr=2.4.4-2ubuntu17`
-- `gnupg-utils=2.4.4-2ubuntu17`
-- `gpg=2.4.4-2ubuntu17`
-- `gpg-agent=2.4.4-2ubuntu17`
-- `gpgconf=2.4.4-2ubuntu17`
-- `gpgsm=2.4.4-2ubuntu17`
-- `gpgv=2.4.4-2ubuntu17`
-- `keyboxd=2.4.4-2ubuntu17`
+- `dirmngr=2.4.4-2ubuntu17.2`
+- `gnupg-utils=2.4.4-2ubuntu17.2`
+- `gpg=2.4.4-2ubuntu17.2`
+- `gpg-agent=2.4.4-2ubuntu17.2`
+- `gpgconf=2.4.4-2ubuntu17.2`
+- `gpgsm=2.4.4-2ubuntu17.2`
+- `gpgv=2.4.4-2ubuntu17.2`
+- `keyboxd=2.4.4-2ubuntu17.2`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`, `/usr/share/doc/keyboxd/copyright`)
 
@@ -803,11 +798,11 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.dsc' gnupg2_2.4.4-2ubuntu17.dsc 3976 SHA512:5c822f4c067b505435011b570093587c9937e25fc4fbe472478f6d44839a5e674ad06a4d14ce764dbb5365c9fdb591603acbb4762a03acf286f00aa1470e2356
+$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.dsc' gnupg2_2.4.4-2ubuntu17.2.dsc 3947 SHA512:56786f582b69a662f3cb7bfcd23981f8f7b93d9b49bc5a0244d335975714421be475bfd3f0c5532e9bf37b87b03a388a9afc9b5af7a20eed6103739216b0abb2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.debian.tar.xz 86972 SHA512:f790051267b3917d5a6df2847cd068fb5f5f0f71544359e7b77e9caf2607e182d1e31e2f512934d96a24dec609b7a3e6db920de49e3e31185ca88c533b173533
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz 95608 SHA512:aae73a32d6581eabe408b2d50e6ec26fe84d32c45e8581226d020f9d0d37db5707848f5e51728126dac9bc9ee0318b1a7c9f06f57adf8c472cb237686343a505
 ```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.2`
