@@ -1,10 +1,10 @@
-# `rocket.chat:7.4.1`
+# `rocket.chat:7.5.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:33ce6ea8d17e7690410c382d7bd053105733e169fa128127c15eb86694bbd5c8`
-- Created: `2025-03-12T13:09:32Z`
-- Virtual Size: ~ 2.02 Gb  
+- Image ID: `sha256:b327c95a11d677d683b462ce0e7ea376884371a4ee25c200d6302118e08d0dae`
+- Created: `2025-04-07T18:21:52Z`
+- Virtual Size: ~ 2.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `YARN_VERSION=1.22.22`
   - `DENO_VERSION=1.37.1`
   - `NODE_ENV=production`
-  - `RC_VERSION=7.4.1`
+  - `RC_VERSION=7.5.0`
   - `DEPLOY_METHOD=docker-official`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
