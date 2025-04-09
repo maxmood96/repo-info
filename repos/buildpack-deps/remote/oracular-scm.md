@@ -1,7 +1,7 @@
 ## `buildpack-deps:oracular-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:0325cd014a1561ff9039b66c2bf45acf5981fde10dd02e119c30705e51c4b862
+$ docker pull buildpack-deps@sha256:0f41a3d1e33a8daefdc2c9d49cfda939e7d961b4584503a228eae23c9f391478
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull buildpack-deps@sha256:0325cd014a1561ff9039b66c2bf45acf5981fde10dd0
 ### `buildpack-deps:oracular-scm` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:563e8451c6e61acd1253e9387da1481be89ae5e02a0111a8fc481ece758ea0eb
+$ docker pull buildpack-deps@sha256:9c4c5d6d8601b737f6324a4c6430f2d1c648d901479cec3f18a8ae18c6ebdb14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.5 MB (92466770 bytes)**  
+-	Total Size: **92.8 MB (92847832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71d68ca44aa08186ffc80697404b975b0f1762747a215809a8a9f250099ea38b`
+-	Image ID: `sha256:ce3b2a7e0f7d79e4dfa160fb57d78622917c15040fe4b2e611b01b04ab8a3eae`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -41,7 +41,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 13 Aug 2024 17:58:12 GMT
 LABEL org.opencontainers.image.version=24.10
 # Tue, 13 Aug 2024 17:58:12 GMT
-ADD file:08360137caccff53ccad4b814b2e19f27aa9fe2a71175550a7f6b13fe243924d in / 
+ADD file:764959978f9fe798d77bf581ad10e612d454a82cfa4151c252f99dfba77930a3 in / 
 # Tue, 13 Aug 2024 17:58:12 GMT
 CMD ["/bin/bash"]
 # Tue, 13 Aug 2024 17:58:12 GMT
@@ -51,41 +51,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:31734b193a814b7d6f96f0d11a89c942ca61ac79d819105323c548bf31f98613`  
-		Last Modified: Wed, 20 Nov 2024 04:18:12 GMT  
-		Size: 30.6 MB (30601312 bytes)  
+	-	`sha256:440a90d6b31c594198d5c8b7f0cdefd617cd095c8cccb6efe3152af757db0f83`  
+		Last Modified: Fri, 21 Mar 2025 09:40:44 GMT  
+		Size: 30.6 MB (30647018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdb3a0dc114c54fd18d42d481f5d85eb84000d5cd297bd2f753d1290eb36719c`  
-		Last Modified: Tue, 03 Dec 2024 02:29:09 GMT  
-		Size: 15.4 MB (15374140 bytes)  
+	-	`sha256:5caf06dc4ca048294638d860fdbe31b52df91fba85cc982ec96d4cfae787323f`  
+		Last Modified: Wed, 09 Apr 2025 01:11:47 GMT  
+		Size: 15.6 MB (15563441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64ddd91578315b54cf47f01baf6ea302d702c1bc46efefdcad51af4f6a7812b`  
-		Last Modified: Tue, 03 Dec 2024 03:17:12 GMT  
-		Size: 46.5 MB (46491318 bytes)  
+	-	`sha256:d6f2791f340319af4abd181ca8dbaafcbeac7b2dc1efc999fc9a565cc4e5ebd8`  
+		Last Modified: Wed, 09 Apr 2025 02:11:55 GMT  
+		Size: 46.6 MB (46637373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:oracular-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:8ba9fad56bedf47846b079812c8a6d4f47a1dc796f1dbccd5a2d1818033f9fa2
+$ docker pull buildpack-deps@sha256:5eda8ae26a7940ee6170e634f592f37cc782636ca0fe3ac5eb894171e052fd22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097877 bytes)**  
+-	Total Size: **5.1 MB (5091911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f725ce812a005ebd7092e7623bfe9c5a339b6bd4da22634dae370ff500604947`
+-	Image ID: `sha256:ed888582b2d956a58b065cfe697e99aeabd0a2bc51e5adb4119e635d27eeba2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c23bc9c092c296df444d5a1fbe7d557d5c72492a03d7b3b366f8a8106b1c9c9a`  
-		Last Modified: Tue, 03 Dec 2024 03:17:11 GMT  
-		Size: 5.1 MB (5090553 bytes)  
+	-	`sha256:b9169b5c123e40a3cf24ee0b00e8aa1148e0748ad87d070933e630a430f45e60`  
+		Last Modified: Wed, 09 Apr 2025 02:11:54 GMT  
+		Size: 5.1 MB (5084588 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8ba7f94c1ac96e0c4b0ea537df4662194ce9f2b029b822a146f047255b3af022`  
-		Last Modified: Tue, 03 Dec 2024 03:17:11 GMT  
-		Size: 7.3 KB (7324 bytes)  
+	-	`sha256:7a0e0851c02c494f1e5ac13e0228db72a56ff2c889feed304c56a8755047c2d9`  
+		Last Modified: Wed, 09 Apr 2025 02:11:54 GMT  
+		Size: 7.3 KB (7323 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:oracular-scm` - linux; arm variant v7
