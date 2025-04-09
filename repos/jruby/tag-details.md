@@ -76,7 +76,7 @@
 ## `jruby:9`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -89,28 +89,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -157,69 +157,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9` - linux; arm64 variant v8
@@ -361,7 +361,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9-jdk`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -374,28 +374,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -442,69 +442,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9-jdk` - linux; arm64 variant v8
@@ -646,7 +646,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9-jdk8`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -659,28 +659,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -727,69 +727,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9-jdk8` - linux; arm64 variant v8
@@ -931,7 +931,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.3`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -944,136 +944,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1216,7 +1216,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3-jdk`
 
 ```console
-$ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542834fca94304
+$ docker pull jruby@sha256:09309fd977b09dabcc0e596a9584371451901b4779fb365ed8a676418b584b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1229,137 +1229,137 @@ $ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542
 ### `jruby:9.3-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ebd9809ac4204f28b5cb157a7ef0deb8a2a2c6957e31c4753bd6650d42a25194
+$ docker pull jruby@sha256:24a51ca20966f8005db73a395cad07cf43c6fddc397bd51d019f26e7b5d6c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141565337 bytes)**  
+-	Total Size: **141.6 MB (141564398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0242a5e0833b48d0ad2db3e7ee0c0668a6afa3b32c190d5e688ba61b9783ed4a`
+-	Image ID: `sha256:4d7648df68edcb94431b6cbaf53b249911d7236da01e7463ddd843ab077d0c11`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='5b0a0145e7790552a9c8767b4680074c4628ec276e5bb278b61d85cf90facafa';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='1d1662bd8ca7edc9281c723d9eebafea940e6a41464bdc43a83b564bc974c7e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='c555750ee41799d30553bd9744c1ab9b8e6b2a2ea83195619a11ef30cc4154f4';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='7eac77deb8fc6c6130f9445c9a68af0bcc40bf6736b5672ef5c3d737c025e84d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedff63dcc5b49445064f176ebf16e56477bf4c47bacb83d89aa768950b888da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 6.8 MB (6837836 bytes)  
+	-	`sha256:85712dae44390e5d103c02491fc9b98fc25240304d88690f618eebb0ca009073`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cc2621e02dcad4d257b4d645418022cf68483e1549f7978f2d7be8a5684345`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 31.2 MB (31155768 bytes)  
+	-	`sha256:75448bb498e43d700459267caf7ba4fbcafc902ab6e45d78c1328bc803baf51e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8f4b82cc69366f89ce1d877a4baa51227cb6537ff7deb177445dcd7c828ec6`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 199.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d43d10518b990968b34b243bf0e4afdf5d0cc7d0291b2d21eec62c6a176c724`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 1.1 MB (1084471 bytes)  
+	-	`sha256:222c531332988b297864e868f6c817c61d066a308f45518c91e9a46064ab5b61`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.1 MB (1084469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65b8806bd322a225cf4ec306d56e74e8260737fbe25fd3c40dfc42e0670c721b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
+	-	`sha256:448c2f15ee987b38a63abbb0e3e0be74a09567c8c05fbbf5c6a7bbbcb8c957e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:03f199de73e5a5d2e4f5b6b6a0df4cf27ace0a041709db30a14a1aa761223328
+$ docker pull jruby@sha256:29585a7223beeabebca5f9ef0751b3a14c14640e3ea8d430f281277c2b445ccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5205321 bytes)**  
+-	Total Size: **5.2 MB (5207880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8bd709d7e25bbffedb6f17948a9568185a662e5a2a9d7d06b1c394151845d9`
+-	Image ID: `sha256:02fcd11a4dcf3feb78b227e34b899a3df51ded92c4c180d9105efde50aec3642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b57bd3bbc96f077260acc2855b1ead01c8a3282e1d3e1cfd4e504d2f90c121f`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 5.2 MB (5185625 bytes)  
+	-	`sha256:1a99108af5143b006bc80b3a991dfcced5a9f2799df5e095e8a03c1544d9f3cb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.2 MB (5188183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d07e5e2ee8fd5f368752b2f1af0efbd41ce3c5ec06d0d99862259f5ab2be6c20`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 19.7 KB (19696 bytes)  
+	-	`sha256:7fd28438a58c72a6a1fc2d2b28c742aeb80198ffb42d86c205af6cbf9ca00e4f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 19.7 KB (19697 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3-jdk` - linux; arm64 variant v8
@@ -1501,7 +1501,7 @@ $ docker pull jruby@sha256:3385b01df007becc335ba041c4cf5aaca8107c5f3c9690bce7fd1
 ## `jruby:9.3-jdk11`
 
 ```console
-$ docker pull jruby@sha256:5ec03f1a10dd1602dab050f43eb06cd08942ae597494bb8fbf1031dcfb74d9df
+$ docker pull jruby@sha256:31cce9dd024e2692dba798a817b247c933425d826a70c928aa4cb885cc75acfd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1514,139 +1514,139 @@ $ docker pull jruby@sha256:5ec03f1a10dd1602dab050f43eb06cd08942ae597494bb8fbf103
 ### `jruby:9.3-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:edf1e15a3919b2bd029d89a18e2beb27ef5c0094e0ab59039c981e743a475233
+$ docker pull jruby@sha256:ca4cf0b88ee59c255db5cf7cc7eb67d1cde7ebf2ffc9c62c078dfda0f52ae9a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232452191 bytes)**  
+-	Total Size: **232.5 MB (232451155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d83edd6fce38cd3b1663bc3ff38ca114332dedecff207b9d36f189a2e31826fa`
+-	Image ID: `sha256:94899970c0ca167294e2f6d01e64ed81b9c8a6e17a57e70e88160ed194f4e6cd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57720219966e918f1a532346498cfbfb342979a0f5ef1c523ba9e60e4ef5ab63`  
-		Last Modified: Fri, 31 Jan 2025 01:30:17 GMT  
-		Size: 20.3 MB (20251237 bytes)  
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec2b4dbdfccae2f0821bf0672520a085237394280af05d3fa21c12397b754d0`  
-		Last Modified: Fri, 31 Jan 2025 01:30:19 GMT  
-		Size: 145.6 MB (145609067 bytes)  
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ae877ab777ef84fc2dae1668033dcb1343246ee291a5ff14fba9cf841202dff`  
-		Last Modified: Fri, 31 Jan 2025 01:30:15 GMT  
-		Size: 160.0 B  
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87696ca3c0636764531d75907bea3b052b7c6c41c86c6b16b3043606d0a85461`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 6.8 MB (6837825 bytes)  
+	-	`sha256:6fd8621bccd29140a0f3234b9a0d7fd0f9244b9b32f124f4623103922a0471eb`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 6.8 MB (6828544 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c4026fb4665da14b84ec12880f9ea6750b96bbd9f0068e9d258eca709b5731`  
-		Last Modified: Fri, 31 Jan 2025 02:12:39 GMT  
-		Size: 31.2 MB (31155770 bytes)  
+	-	`sha256:608494002b9464d6f89f64dada384cd1c3f5ad32c40c23c221663bbddff63e06`  
+		Last Modified: Wed, 09 Apr 2025 02:14:08 GMT  
+		Size: 31.2 MB (31155745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed7b436161c10ba605a6e1c9c8a7af6ccf4ce5ba59ec4f3cced4d7705610eee`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 198.0 B  
+	-	`sha256:51d32d5edb7057ba080b8a208566e829ebecbb3589d21657a754b33a9a4debd6`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0373f6f0cd3da965cf0c092190873c1851d909dd4b9346f97d1ce2893ce0e30c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 1.1 MB (1084450 bytes)  
+	-	`sha256:12b371cf1f7c402844fd1c055dbd10a3770c7634f70d51c27838ca13038d0072`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 1.1 MB (1084449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df443c790eb01f6883374158228fde1638a5d7337497c4434d7e2d8fb14411ac`  
-		Last Modified: Fri, 31 Jan 2025 02:12:39 GMT  
-		Size: 141.0 B  
+	-	`sha256:139eddf67ac4dedc6cbfb69b5d0fe0a836b6bbb7a9182f9f83f70d7acfd25092`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f6cbca281ed90500a9b1c8b42eb2e58ffdf105625d5737879980f2f7778d9e23
+$ docker pull jruby@sha256:4cc6c718379d766aaef28ea21cfe639f6d9733dfe9610ba40f731b8751f804a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5102053 bytes)**  
+-	Total Size: **5.1 MB (5104610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a31f7adcbe5345923c12dac982bf4fef557e6f212014682229e5d0d0e399067`
+-	Image ID: `sha256:d036454d8d8da0c1aad883a068309217b9209e36f613bf26ee4768a7cdbb450c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a194171abe2d400d1232136d0626004c6ff3c64a77e44123ffc2d1972e08e6b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 5.1 MB (5083246 bytes)  
+	-	`sha256:1365c8185f624d4e8a2a259c35b87ac5b16581d22c0263beeab791ac461f9068`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 5.1 MB (5085804 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:898601dc644e5de351781f26ce797ed949deaa470b5fe57eea9a3b12e4f04ca9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:37 GMT  
-		Size: 18.8 KB (18807 bytes)  
+	-	`sha256:45de8cb335b27f41906c35f7f65753701414ff39fad53ffa84a673a82023e531`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 18.8 KB (18806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3-jdk11` - linux; arm64 variant v8
@@ -1790,7 +1790,7 @@ $ docker pull jruby@sha256:a412e075d85b1f9993648c1560db6679a802f0b3f37b19329900f
 ## `jruby:9.3-jdk17`
 
 ```console
-$ docker pull jruby@sha256:f120e99dc74a6d7f74668c44f11f9b88a786cf2f1b1f8b1b27ede938093996da
+$ docker pull jruby@sha256:aed2f23f5be67f0ba69e8fefb472635ee5bfa3926a61937a8da2046cbed65752
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1803,138 +1803,138 @@ $ docker pull jruby@sha256:f120e99dc74a6d7f74668c44f11f9b88a786cf2f1b1f8b1b27ede
 ### `jruby:9.3-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:b9713de68cdba4aa706888b06471875cc6a3b7429477870c3ac5ba9db819d6dd
+$ docker pull jruby@sha256:24f888d9cc42136d8ac76e6b770e53ffc9051c686f007cc4cb2d61f6290e61c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235180186 bytes)**  
+-	Total Size: **235.2 MB (235176549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:217cf9500cfa7588263d1308f2b2f67c3eede5005be0927fcfcddb7ed880c759`
+-	Image ID: `sha256:9d39ccf8432b28d1c837b347a807f8e79d7df0f117777c129fc9a609331941ae`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a3af83983fb94dd7d11b13ba2dba0fb6819dc2caaf87e6937afd22ad4680ae9a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='62efc3e83fc9bcd08db7c4f02977328cb3559a54519078d8337314cf025d19b7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='f43986385403c0f08bd3512c9d11a51c49044a7c8a0a39cf4e2e3731ca0db229';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='f4cb9ee5906a44d110fa381310cd7181d95498d27087d449e7e9b74bddd9def2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3a1d896eb3a737020e5ec95ec3206b1ca36cb365538382289d3fb46d14303648';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88aed8b4a7e29aae2ef8d1eada343155613c68505de0b35a06bd4927d9ea65d5`  
-		Last Modified: Fri, 31 Jan 2025 01:30:13 GMT  
-		Size: 24.0 MB (24009455 bytes)  
+	-	`sha256:10d22f6ae181c9c52790beddb6d90876eb709a06f60ee327c3542d060b11b396`  
+		Last Modified: Wed, 09 Apr 2025 01:15:55 GMT  
+		Size: 24.0 MB (24015362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba02fbf9c0beb1cd876f134d2dbf73f244a7e109db29c2168249004aaea6c411`  
-		Last Modified: Fri, 31 Jan 2025 01:30:16 GMT  
-		Size: 144.6 MB (144576684 bytes)  
+	-	`sha256:3659942add492828d19e9ea6b7691dd444200f35e6659c8265764fb65f01b9f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:59 GMT  
+		Size: 144.6 MB (144576692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:020b80f54da19b4d38afaf9821813776315c4080223d8f9166d4d46eb6c6cb27`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
+	-	`sha256:60d19df4643f587ef926e1e9b325b9480bff6ca93b67c7ac870ce79434662c1e`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1269c4ddbbd753503ca927375bac1e9450e557f656e4c25a058bb663b0b27215`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:d6bd69e2358a0b1a79b33adc20b6238ba46fa51a8ba3072297dc096106200e31`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fa388c59f104d892f4d2c90ab67a2af8278668ceea391f8bd7087095821860b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 6.8 MB (6840067 bytes)  
+	-	`sha256:0da76d5f68f92186961bd81937b00408f0118597f2ed6407b07c5a469b2d0cef`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 6.8 MB (6831104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e51b760f6618119123fb03fe21395593bf14cdaf8eac49d7237eef99b5f9fb7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 31.2 MB (31155694 bytes)  
+	-	`sha256:d6be36ab25bd9ea2313496eeeb16dd0c211a509d3f75e22db166f863c9c5f50e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:51 GMT  
+		Size: 31.2 MB (31155752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18c4cd0966ee5f745d722227ea2bb4dbcba548be9a967a88940ee22392f7a685`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
+	-	`sha256:df468097319a90de5c798397ff9df85a29a4c3bd37a35a617e8141c5c948e40a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ad57920183193794ecea6f0a72f47dbc1d93d832c697d904fe01dd77dee6bf2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 1.1 MB (1084443 bytes)  
+	-	`sha256:c252bf3c33a72b10b4fcf2d461aa28071237c70e068f1111d6cae85ea542c1d6`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 1.1 MB (1084464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71390032b346c746cb58f9aba305ce63d998467acc4b77ff4503efce78e6f1ae`  
-		Last Modified: Fri, 31 Jan 2025 02:12:48 GMT  
+	-	`sha256:645737554db1e3681ef6047d640bf44f4219a54e384acef93e409eb83898e991`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8a203362c2b377cc6a3c979933c1b765f285b4e974e62e3807315d5a1b571681
+$ docker pull jruby@sha256:a53c144bd089581313a7ff759b9e59dd0ba6ff5b7bc771f69bccdbace16640cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5237904 bytes)**  
+-	Total Size: **5.2 MB (5240474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5e8de7872ec26264ec6f1820b3df8043b26d75f1ead38a724c79021af12a617`
+-	Image ID: `sha256:facdca25707e58fbe34d6442000c9972f66ae70156d623255aa33a3c74f49f88`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:402a4db8437e604b5e9ed72fb6c5ea7ed3a785d03f99529df5333c939628f1ed`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 5.2 MB (5219005 bytes)  
+	-	`sha256:3d5de8b226f804f9286d7feb6c23fd532640b6dc1c1e3da06f329a1209e23e31`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 5.2 MB (5221575 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9f6fae9e85402dcf7ea7f63a4ec66c0350b735e6cf7efce0b312c03633d83650`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
+	-	`sha256:dc5a94a9b44ec4713a6319978b49e77a0cc30544d568ec75639c6c1640407edd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2079,7 +2079,7 @@ $ docker pull jruby@sha256:61884ab0cb877fae643ff50e7db40232b8f618dcce4e9287f73ee
 ## `jruby:9.3-jdk21`
 
 ```console
-$ docker pull jruby@sha256:6e2fc41f7ebc277aedd46b358d0848cff852b15aa1784558a9430d4db1b6fe64
+$ docker pull jruby@sha256:8982b632bf010aa3d79089276bc09565ae20b76b89f02a74b386bae5d17a216c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2092,139 +2092,139 @@ $ docker pull jruby@sha256:6e2fc41f7ebc277aedd46b358d0848cff852b15aa1784558a9430
 ### `jruby:9.3-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:48f241bcaa667539bca9a8b57ac54bc1f2821a83f733ebe3a2e3eea9c376a916
+$ docker pull jruby@sha256:eb5a81a323641ed3c4b2978bfe6915ad3017499a5b76101b46cfd617b1d9c3a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.6 MB (245638544 bytes)**  
+-	Total Size: **245.7 MB (245650521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5383e2f79296427b51d53020791a443fdc4098cf86fdf9b24f91ceec77564704`
+-	Image ID: `sha256:22d99319bd2322dc6ad2bc52dd2440be631b77bab20030da08050535eefbb604`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-21.0.6+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a2650fba422283fbed20d936ce5d2a52906a5414ec17b2f7676dddb87201dbae';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='04fe1273f624187d927f1b466e8cdb630d70786db07bee7599bfa5153060afd3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='163724b70b86d5a8461f85092165a9cc5a098ed900fee90d1b0c0be9607ae3d2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='5ba742c87d48fcf564def56812699f6499a1cfd3535ae43286e94e74b8165faf';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f9ce665314df6489df49d894b81a8b7d89dcbb3916abb4b8f2d9f04f7f30fba`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 20.7 MB (20684621 bytes)  
+	-	`sha256:69ac5503654a9a87aad1bf9db9d8883049288444743ac7d05be1ab56f1d17713`  
+		Last Modified: Wed, 09 Apr 2025 01:16:32 GMT  
+		Size: 20.7 MB (20693548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c63f325f81a44cbc524343f5cdcec789fb188c2333543d3238cdac7cfeafb7`  
-		Last Modified: Tue, 04 Feb 2025 04:40:18 GMT  
-		Size: 157.6 MB (157591234 bytes)  
+	-	`sha256:e6600e0d3831b05b9fb66aebbe3123d683fb18b898986c49e05faf1c667a99a2`  
+		Last Modified: Wed, 09 Apr 2025 01:16:36 GMT  
+		Size: 157.6 MB (157591202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:864a83d54ff514b209c491364b5476319cda130d7de9e481c432148668d4f0ab`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 159.0 B  
+	-	`sha256:7438c1b0bdfc7c1b5a73ccf2d526da05dc7da2275231c346ea0efea5a8d5af45`  
+		Last Modified: Wed, 09 Apr 2025 01:16:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8df0decf9d7f3577a33fb03b83ae0fc1cb904ea030014ac9bc7a5954ccbfec`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce954d09b25ebce7a6d047525bfccd84e6f4e456634f2f3a90af83fe8bfee0c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 5.6 MB (5584136 bytes)  
+	-	`sha256:0496a9f19b46f0b7ca2033856d62ed9029b42b1c9ded8ffd245a8e3d3479f73e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 5.6 MB (5590305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:babd37e1c75bfa032a391fd9b0a8fec8d146c78804457344fe328de093550b77`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 31.2 MB (31155379 bytes)  
+	-	`sha256:d552e4219c4191daa74c4e469890fbd990a76236c43bd057929fe2d31817fb4a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:58 GMT  
+		Size: 31.2 MB (31155836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa54f205edf5ae3acc004f9270d251110bfbfa246f72141622e8a73e1d7d4a89`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 197.0 B  
+	-	`sha256:80f73bcd417aba1dbb9dff80b1ada9403cd4322a1451a846e5b6adc0672f03b5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bf1e130496d6ecd5141473bacc8067eabaa93119d186c0a8c6c4d3ebf43e993`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 1.1 MB (1084451 bytes)  
+	-	`sha256:6ecf67b4fb3aeec05dd90f437b7cbf843a66cd30daa6256b597df6fa0352dd15`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 1.1 MB (1084479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e72602e56d781e824400cce055bdf714ee4780ce157fd9b23f0e3d666a3f6ac5`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
+	-	`sha256:cbc10581eae0e15f62842cbc4f8f5dbd86f2e6faab4b26790e696d4bb3c4de80`  
+		Last Modified: Wed, 09 Apr 2025 02:13:58 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8798e5e5b16fa419d5a9d2c90b306e7e0c6b78f61c833bf1d608aba1e2d5f8eb
+$ docker pull jruby@sha256:d0540ba4ba89c65c3d9bc63cdafdfe940a2f44a096cebbad38cad3cf75eb0dac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306199 bytes)**  
+-	Total Size: **5.3 MB (5308781 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40e7462bb010e4c1162d60dfc5115dfdd759c8c84d4cb3bd18dbc2fdc3c8537d`
+-	Image ID: `sha256:a6778c3b4e4896c42a9f8e32549f1e8447787e2109cccc0711c52b5a9531ec2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1da4d022723eb7f12e3aadd5c238d8382e10a9110f176ca5503b93e24661706`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 5.3 MB (5287307 bytes)  
+	-	`sha256:4d6e4c7faa16391d7911a1b005b77ddbfed32057fa1fde0a3d23474c31b0d39f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 5.3 MB (5289887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6544bf9cddb61c0829cdf9f4767d30b091a6d864e1080da91ade90c648733f1c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 18.9 KB (18892 bytes)  
+	-	`sha256:21c6e3d4e50d530750d0f99faedf6ea52b03174f5816c166a8c3cc753a570026`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 18.9 KB (18894 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3-jdk21` - linux; arm64 variant v8
@@ -2368,7 +2368,7 @@ $ docker pull jruby@sha256:278d3ef87dc59e360ce7876f576e9bda6bec3217669cac96e4ce3
 ## `jruby:9.3-jdk8`
 
 ```console
-$ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542834fca94304
+$ docker pull jruby@sha256:09309fd977b09dabcc0e596a9584371451901b4779fb365ed8a676418b584b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2381,137 +2381,137 @@ $ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542
 ### `jruby:9.3-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ebd9809ac4204f28b5cb157a7ef0deb8a2a2c6957e31c4753bd6650d42a25194
+$ docker pull jruby@sha256:24a51ca20966f8005db73a395cad07cf43c6fddc397bd51d019f26e7b5d6c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141565337 bytes)**  
+-	Total Size: **141.6 MB (141564398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0242a5e0833b48d0ad2db3e7ee0c0668a6afa3b32c190d5e688ba61b9783ed4a`
+-	Image ID: `sha256:4d7648df68edcb94431b6cbaf53b249911d7236da01e7463ddd843ab077d0c11`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='5b0a0145e7790552a9c8767b4680074c4628ec276e5bb278b61d85cf90facafa';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='1d1662bd8ca7edc9281c723d9eebafea940e6a41464bdc43a83b564bc974c7e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='c555750ee41799d30553bd9744c1ab9b8e6b2a2ea83195619a11ef30cc4154f4';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='7eac77deb8fc6c6130f9445c9a68af0bcc40bf6736b5672ef5c3d737c025e84d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedff63dcc5b49445064f176ebf16e56477bf4c47bacb83d89aa768950b888da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 6.8 MB (6837836 bytes)  
+	-	`sha256:85712dae44390e5d103c02491fc9b98fc25240304d88690f618eebb0ca009073`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cc2621e02dcad4d257b4d645418022cf68483e1549f7978f2d7be8a5684345`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 31.2 MB (31155768 bytes)  
+	-	`sha256:75448bb498e43d700459267caf7ba4fbcafc902ab6e45d78c1328bc803baf51e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8f4b82cc69366f89ce1d877a4baa51227cb6537ff7deb177445dcd7c828ec6`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 199.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d43d10518b990968b34b243bf0e4afdf5d0cc7d0291b2d21eec62c6a176c724`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 1.1 MB (1084471 bytes)  
+	-	`sha256:222c531332988b297864e868f6c817c61d066a308f45518c91e9a46064ab5b61`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.1 MB (1084469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65b8806bd322a225cf4ec306d56e74e8260737fbe25fd3c40dfc42e0670c721b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
+	-	`sha256:448c2f15ee987b38a63abbb0e3e0be74a09567c8c05fbbf5c6a7bbbcb8c957e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:03f199de73e5a5d2e4f5b6b6a0df4cf27ace0a041709db30a14a1aa761223328
+$ docker pull jruby@sha256:29585a7223beeabebca5f9ef0751b3a14c14640e3ea8d430f281277c2b445ccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5205321 bytes)**  
+-	Total Size: **5.2 MB (5207880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8bd709d7e25bbffedb6f17948a9568185a662e5a2a9d7d06b1c394151845d9`
+-	Image ID: `sha256:02fcd11a4dcf3feb78b227e34b899a3df51ded92c4c180d9105efde50aec3642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b57bd3bbc96f077260acc2855b1ead01c8a3282e1d3e1cfd4e504d2f90c121f`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 5.2 MB (5185625 bytes)  
+	-	`sha256:1a99108af5143b006bc80b3a991dfcced5a9f2799df5e095e8a03c1544d9f3cb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.2 MB (5188183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d07e5e2ee8fd5f368752b2f1af0efbd41ce3c5ec06d0d99862259f5ab2be6c20`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 19.7 KB (19696 bytes)  
+	-	`sha256:7fd28438a58c72a6a1fc2d2b28c742aeb80198ffb42d86c205af6cbf9ca00e4f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 19.7 KB (19697 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3-jdk8` - linux; arm64 variant v8
@@ -2653,7 +2653,7 @@ $ docker pull jruby@sha256:3385b01df007becc335ba041c4cf5aaca8107c5f3c9690bce7fd1
 ## `jruby:9.3-jre`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2666,136 +2666,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2938,7 +2938,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3-jre11`
 
 ```console
-$ docker pull jruby@sha256:aea4a1d15937719fb4848cca952ffd760f6eb2ee3f61898fb14947377bc0de72
+$ docker pull jruby@sha256:6c0659f9938235a0709a8e91d6db95429f8c0ea420fc1749b59817f187cb9fff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2951,136 +2951,136 @@ $ docker pull jruby@sha256:aea4a1d15937719fb4848cca952ffd760f6eb2ee3f61898fb1494
 ### `jruby:9.3-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:20b9c72a7b54086acdc9eee6f85845f874091c2080fafd9b19f5edebcec0af0b
+$ docker pull jruby@sha256:420e15f013b768224dda629e3a4c346d729d3176e5674a5c401b7c5c966554d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.1 MB (134059834 bytes)**  
+-	Total Size: **134.1 MB (134059250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:338dcc2ccdd5a4d93d944ea8f66b59491fe825779d4045d08be55204ceb195bb`
+-	Image ID: `sha256:cf596e743bcf817ff26cfa2a027580d6fd73d09dcf62e878ba60bd5f4994e575`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d26c566a7010d1303d3979b6f076e7911b49419a609c9e4d81f27262bf47f87c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='4ececb5c229763107e9e4acf3b7035db38cf18a98a47176fa5ed1be3f3d15518';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='e4a00a3ea318a63ba97236633f34c8a5477f6cdb643cf6883788840818110f5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='69b38f0dde128d8c606012335cd60f1f55afa09b4135582188943bee699ebf03';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='5d9552b1fb699da6052cbd600e750dd8ff48a89a384d537919a3c999257979dc';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3058f73b8f4937ab8fb3b4c159a4ec63b748de89e82bb46cb05905502be6f5c3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 20.3 MB (20251256 bytes)  
+	-	`sha256:fe913685dc07308206b8b9368edd760d45c0ed0c1ce0a008219f9ae4565668b6`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 20.3 MB (20260214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f937e0a2086c23a09d1f20c16ad505f7c97bcf945194fbbab952915ef7d69f7a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 47.2 MB (47216682 bytes)  
+	-	`sha256:0298071afd7ec797d4c38d0c29e19fe832ecf95e87bf51f6df5b5f5c220fb8a3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 47.2 MB (47217150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f3083818c14451f2bc51269701808b2b3c9c7c12b5da3128ac588e4a492151d`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 157.0 B  
+	-	`sha256:261c34eb718b577c4eb4d30527baae2184b689e59aaba4f624d32889c2a480fe`  
+		Last Modified: Wed, 09 Apr 2025 01:15:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
+	-	`sha256:96d15027f2149d0b63aec987947cbbfaa63e34e19b3922082fe2180bc11e2847`  
+		Last Modified: Wed, 09 Apr 2025 01:15:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09be752244693ecf129a39b1e46af0cd6d914e1e819a8e4d669d6c4a487272b0`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 6.8 MB (6837856 bytes)  
+	-	`sha256:48a2e5d6a8d32a50f34f7cc9b31841baa43ccf8b8410b84ce39ee2262988bd5d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 6.8 MB (6828528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f6c63bcf74ae46be609899f899077b797aea5956bffff532f899c1fa99b25fd`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155744 bytes)  
+	-	`sha256:5f0a1ab361da0972b439395909793c9109506cccd2a17932eaa710c5a17f082d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc99bbbe3c64c6a696c58ffd3d3ae6693765474da70cd52263d3b03d85aff833`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 198.0 B  
+	-	`sha256:448b65c80d4d614bc9bc9a1f649c757e333e271c7ebd39a638a7ae6f7c26140b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ddb42b497c3a7615236194165fea011199040623b807fa4ac0b44473fb484da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 1.1 MB (1084456 bytes)  
+	-	`sha256:ce0a588589d3ad10256e1fc109421a77c42f851108632519b9b024ba4f11452e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 1.1 MB (1084453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fbe72f3f3d2360b279f80415b57950c81da672e1604f257dfa891b0b418f05b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 142.0 B  
+	-	`sha256:d9c3df4be36b46bc6c2434ebcf47ca70651f4bf4e227ee3c83f6d4ea6584e209`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:206786412faa233bf924edd4e9e987156d74d8b3bacb4bb24fa7b95a52c0dd9d
+$ docker pull jruby@sha256:46a5cac23c30935065c2e5de141145c5d04b5e8feb1b6c22b45181975c049ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5010873 bytes)**  
+-	Total Size: **5.0 MB (5013431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:529ca50533f0c779331b60e7b4a74e98e5a75e5afed18674b58a6266e75a861c`
+-	Image ID: `sha256:0a64e3e609445b11fb61cbf1a17277e46d66b6c909bcb417060d35d25cf6b5e5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1675bb5b520f0ce7aed4a912eeba603a12f01f03616da295c3031c1763632d8d`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 5.0 MB (4992072 bytes)  
+	-	`sha256:070a3ef4ebc984797ffe4d612c78b1c6593ef7803214af08a004a96db6da5df9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 5.0 MB (4994630 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:658b211dda2108a90be5df401864052592a5eb41f9e988c1771e76b76a17167b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
+	-	`sha256:9f03f3b6c127daa39f107a80cdf244eff6fe0ceea3b0c17699057a731b4c4ba8`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
 		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3223,7 +3223,7 @@ $ docker pull jruby@sha256:f79ae6bff4781580d48235ef8736cb49bdf90b2ff57f8546d061c
 ## `jruby:9.3-jre17`
 
 ```console
-$ docker pull jruby@sha256:edf1abcd8f599b13ffc256640301261d6792d6450221b2c1fcbcc7918c68a408
+$ docker pull jruby@sha256:6f6f8010bc2317d6b720b2432f240b7c96472b52c437b5edfdc3ee53d1b05aa7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3236,137 +3236,137 @@ $ docker pull jruby@sha256:edf1abcd8f599b13ffc256640301261d6792d6450221b2c1fcbcc
 ### `jruby:9.3-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:2617a195fb14a21b78642d0b1275705a3d822a4aa5732090a47ee776dbc1fe3e
+$ docker pull jruby@sha256:6851fd08bee736f3bc5f9a81e25afd606ea0f416a920380bc1a8a8645c34e61d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.8 MB (133796774 bytes)**  
+-	Total Size: **133.8 MB (133796006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fdde71a9ab13e392368f4bc227ecfc962b84b3828a6de0cdd48a78474e80a676`
+-	Image ID: `sha256:9d6ba5a8347da9cd2af8b3f8fe54ed2243f7569505d67832a995d4bc170d8046`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a4b0015872758aac6a5d17139e952a3951ee536ae6d9a99828823a80a71add56';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='bab3f352fc7144ac1435924f056872d16f4b32c8bcda58b9a77b636eb1c664f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='7ac439bce4d5ecddb250b31401b1c1a6da2762f51652eafedd53584a0d9e3130';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='2a730e9d34cce4d588739b626a034ed68c065a2db61048ee7886be48ec9fe460';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3887f14f95a14e65a985cfcee6696e01aadee06d3347ab70eb7d6b16ce397238';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c476128eb22bdf6a99b65fa864db0f1ebb019c91a9a4cdc226f6183ad8e3c43`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
-		Size: 20.3 MB (20251225 bytes)  
+	-	`sha256:98e66cedfb5247f86094604841f8e7ddb0b2d05ca0ae60b5be1e8ba41b12ace4`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 20.3 MB (20260107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e846d8e9647d6aab05b8f5a02a6f1fe245fa2b67118f2695141bb2c49300b542`  
-		Last Modified: Fri, 31 Jan 2025 01:31:02 GMT  
-		Size: 47.0 MB (46953971 bytes)  
+	-	`sha256:cb0112479820d174794e74000f9d01cfedd16517deca0a323a1be747efbdfe39`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 47.0 MB (46953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:843c17e581f46279bbc0373ddad8b59e6fb83390f103c2b40004a94eed5e1490`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
+	-	`sha256:4bdfc5969d5b0ac2a56a7db5925216c13cda6f1559687bab2f9c94cf31ac2cd1`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15e0c869e1f807bce22ac6fcdba0ec696d6ea42fdeb1836b9553e561744e4b9d`  
-		Last Modified: Fri, 31 Jan 2025 01:30:58 GMT  
+	-	`sha256:29be0f57f40590223e0b03c89d63aa09fca6560b710b2e6d2d4a8408e9ea31f0`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3e3ae2eea86193ea504c4265b00057be4f50f182950adfebd9d1c53a79d2665`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 6.8 MB (6837894 bytes)  
+	-	`sha256:8364aa20c38b11891f772df25d1721dd079ccc1a3d8a4ae09066509f171e5362`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 6.8 MB (6828536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:104d0d48263d15d367941a3ac9b332dc0c85ef5c61a8416ba64ed4f57a97a71d`  
-		Last Modified: Fri, 31 Jan 2025 02:12:46 GMT  
-		Size: 31.2 MB (31155408 bytes)  
+	-	`sha256:c0e0ed823c572afe827c58442f36987bba2cb77578339240d2620e58d4d3021a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 31.2 MB (31155775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3db7688277f4e8e4beda19eefa45f4f5e38f1b0646101851d38db0ddd1e9b188`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 197.0 B  
+	-	`sha256:df468097319a90de5c798397ff9df85a29a4c3bd37a35a617e8141c5c948e40a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a4ad961fcd9726f620ce4373529701a8a6a05296a1fbe212fe8e7dc97f757df`  
-		Last Modified: Fri, 31 Jan 2025 02:12:44 GMT  
-		Size: 1.1 MB (1084435 bytes)  
+	-	`sha256:58c5fe8c2a49dd0750c0b34949838055778fd8bafe86e336ce68ec1bb5e30b35`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 1.1 MB (1084463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11181fb697415177ba85b9d862aa324e23bb560885d413d7aa159c21c531bf7b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:44 GMT  
-		Size: 143.0 B  
+	-	`sha256:7ba85e06e996f83826e623eb6a1b0956c9cd091741259734cf4b3f3fdebc6559`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:781caeaf6203d211c186c255be51fd948969a2611d3bf8996b553dea801c50e7
+$ docker pull jruby@sha256:3ad51147287436ced8c0ae5485e412fc656c65f309c0b47d20d5ae5340db9f33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4997851 bytes)**  
+-	Total Size: **5.0 MB (5000408 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62dade23a6c8250c8f8200422816d2085c609b876213a5f3e98af0408ef0cb93`
+-	Image ID: `sha256:6c2d683b595e865e2ed5604b8939bc5d45b749411d68e902102cfb80e2299b64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e005574b028abfd9dd1e9f14e07259ed811844a36f02dc2323148e75c411d5b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 5.0 MB (4978958 bytes)  
+	-	`sha256:adc94aa8e27e924f1f216fcdf0f6365a2a0d19bc9a2a72280743c2912dc63c2f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 5.0 MB (4981516 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c382b22ffbc495d12349c514e240bb9b276402191e623d19ab93e4c19467a7ad`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 18.9 KB (18893 bytes)  
+	-	`sha256:05d611f74211206475f8f6750937f2e3822f8a793713e3fb6097df2e7ce8c937`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 18.9 KB (18892 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3-jre17` - linux; arm64 variant v8
@@ -3508,7 +3508,7 @@ $ docker pull jruby@sha256:eadf93794b3bb2f7f8b487ff8ffff615604e649ad644585847561
 ## `jruby:9.3-jre21`
 
 ```console
-$ docker pull jruby@sha256:110bdc03333a7a148e8744f80309c71167d65b7cdefebf1af52fbf93c133394a
+$ docker pull jruby@sha256:661ede430ed3e6d463cb82932457be00f83b2c777a4ff923c131d0a1dacd4f25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3521,137 +3521,137 @@ $ docker pull jruby@sha256:110bdc03333a7a148e8744f80309c71167d65b7cdefebf1af52fb
 ### `jruby:9.3-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74fc12ea820aa8f161518a5ca20995f1b0c3a8967060b54a722a3ac74c219f26
+$ docker pull jruby@sha256:357d286d06a7faa34e955d537afb61489838cfae40751052e59d633f1bd47ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.4 MB (136372030 bytes)**  
+-	Total Size: **136.4 MB (136385638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bab105f43c4cd4f67ee7d411993a5574f2f16355cc6acb928799f5e8148b5b73`
+-	Image ID: `sha256:a9d92ca8c30c09646a90e16cb8aa68f86a57cdfa31966e9e3d9f0ab631fa19f6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-21.0.6+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2b8e353effdf25ad74bbde76a3242135d6d12fe14be177b7108868c3150b48`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 16.1 MB (16135187 bytes)  
+	-	`sha256:22d232ce229a6628d678ae8ff2aa9c943ad95eb21cff968172fa8f5d576a81ac`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 16.1 MB (16146029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379395aa081f5fd7e867ea654d17431258dab5353139b32bc5fa9c09edb8c19a`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 52.9 MB (52876031 bytes)  
+	-	`sha256:3edaf6f6c56c0c148e4d204e7ec02a653fc380cd7941ce53d30c8971245a5b52`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 52.9 MB (52876033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:298e1b6de86675cf06530c6496ec8374d300561fc2cdacf984c524349c6062ae`  
-		Last Modified: Tue, 04 Feb 2025 04:40:11 GMT  
-		Size: 158.0 B  
+	-	`sha256:f13ef442d1584eb54116771dd478f8bf87eb96391f6b2beea06bd0976c31ce7e`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea28f6f7f0aa0864f252fa90ca3f85687428d91dd6f829f2ba81dc8719e2e3be`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:880752f0cd86cc7cb2558f2a0175e9083f2a1d6e52a85b68d308eb86126e2f16`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 5.6 MB (5581894 bytes)  
+	-	`sha256:db842adaca5d196b9f0c99a82cb5ac08022cc6aa1fbac97d6eee286063d20b71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 5.6 MB (5588125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa2c851e5282392b0efbd46783725e904578fcc9a3bd506b1fdc44876741857b`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 31.2 MB (31155788 bytes)  
+	-	`sha256:bfb6b859f435de1672bb4a9d4504d149c91cd49e35dc3e0196f37b0bf03727e0`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 31.2 MB (31155849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f048e5ca169be642b72e65bc56aa6d893af6d6fa4328963c7c9bea49e8992c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:34 GMT  
-		Size: 196.0 B  
+	-	`sha256:08e33e745c02dcfc4ea1195c88ada277229adac2f1a0cd336794d9b6084c3fb9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707d57592ec615ddd388cb1fe65c4c828ed4e3a4e64cdcd8544507b5f5b52798`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 1.1 MB (1084409 bytes)  
+	-	`sha256:6848078ee42490c2e369b76ecb416d673c395adb5202bd81fd1ce304e91be5f5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 1.1 MB (1084456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86a472277eadf91c7596c9211f700db650d2a46e91602f088bb5d03a45e1efac`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
+	-	`sha256:215df6d926aa6fd896b8df86d2d0c4258e6edb9820ee85f964e3b486e3816334`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:863b167ee5a496e3275f737a369382728fee00217c700d83178f5d92fc8bf1cc
+$ docker pull jruby@sha256:68bb8f2251dd6c205cbeb601a1abed593383a7377ba2990824a2cbd7771f84b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5064744 bytes)**  
+-	Total Size: **5.1 MB (5067323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:391039f17044d73453caeb1becb99d5ff17240c4951f1c784ddb6b3b2e38b161`
+-	Image ID: `sha256:17dee2d3d79f95ebdbf67967842bdcab14f3765ff7ac06fe397675c1cd0f9984`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db75e15fde2f2d3ddd2e16cf446b60627d89ad2a516ae2fda80d84a0c554ef27`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 5.0 MB (5045856 bytes)  
+	-	`sha256:92bedb6909224f6e192b5d4e3c4f0b7f3dd50b4eed2c63663f1d2d6381deb4e3`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 5.0 MB (5048436 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b9f3e9b35fedfad30f1efd3d560a8f6301a3e06b919edb66acee3984e09f2da6`  
-		Last Modified: Tue, 04 Feb 2025 05:25:34 GMT  
-		Size: 18.9 KB (18888 bytes)  
+	-	`sha256:f1e0c9b09ea19d4b58698b364857dc0707f499612d13eae23dcc331f32eac03b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 18.9 KB (18887 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3-jre21` - linux; arm64 variant v8
@@ -3793,7 +3793,7 @@ $ docker pull jruby@sha256:48067c7461d47539457153041f6d283cfd74f821dedff8ba3a79e
 ## `jruby:9.3-jre8`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3806,136 +3806,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4078,7 +4078,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3.15`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4091,136 +4091,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3.15` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4363,7 +4363,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3.15-jdk`
 
 ```console
-$ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542834fca94304
+$ docker pull jruby@sha256:09309fd977b09dabcc0e596a9584371451901b4779fb365ed8a676418b584b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4376,137 +4376,137 @@ $ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542
 ### `jruby:9.3.15-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ebd9809ac4204f28b5cb157a7ef0deb8a2a2c6957e31c4753bd6650d42a25194
+$ docker pull jruby@sha256:24a51ca20966f8005db73a395cad07cf43c6fddc397bd51d019f26e7b5d6c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141565337 bytes)**  
+-	Total Size: **141.6 MB (141564398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0242a5e0833b48d0ad2db3e7ee0c0668a6afa3b32c190d5e688ba61b9783ed4a`
+-	Image ID: `sha256:4d7648df68edcb94431b6cbaf53b249911d7236da01e7463ddd843ab077d0c11`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='5b0a0145e7790552a9c8767b4680074c4628ec276e5bb278b61d85cf90facafa';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='1d1662bd8ca7edc9281c723d9eebafea940e6a41464bdc43a83b564bc974c7e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='c555750ee41799d30553bd9744c1ab9b8e6b2a2ea83195619a11ef30cc4154f4';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='7eac77deb8fc6c6130f9445c9a68af0bcc40bf6736b5672ef5c3d737c025e84d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedff63dcc5b49445064f176ebf16e56477bf4c47bacb83d89aa768950b888da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 6.8 MB (6837836 bytes)  
+	-	`sha256:85712dae44390e5d103c02491fc9b98fc25240304d88690f618eebb0ca009073`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cc2621e02dcad4d257b4d645418022cf68483e1549f7978f2d7be8a5684345`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 31.2 MB (31155768 bytes)  
+	-	`sha256:75448bb498e43d700459267caf7ba4fbcafc902ab6e45d78c1328bc803baf51e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8f4b82cc69366f89ce1d877a4baa51227cb6537ff7deb177445dcd7c828ec6`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 199.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d43d10518b990968b34b243bf0e4afdf5d0cc7d0291b2d21eec62c6a176c724`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 1.1 MB (1084471 bytes)  
+	-	`sha256:222c531332988b297864e868f6c817c61d066a308f45518c91e9a46064ab5b61`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.1 MB (1084469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65b8806bd322a225cf4ec306d56e74e8260737fbe25fd3c40dfc42e0670c721b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
+	-	`sha256:448c2f15ee987b38a63abbb0e3e0be74a09567c8c05fbbf5c6a7bbbcb8c957e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:03f199de73e5a5d2e4f5b6b6a0df4cf27ace0a041709db30a14a1aa761223328
+$ docker pull jruby@sha256:29585a7223beeabebca5f9ef0751b3a14c14640e3ea8d430f281277c2b445ccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5205321 bytes)**  
+-	Total Size: **5.2 MB (5207880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8bd709d7e25bbffedb6f17948a9568185a662e5a2a9d7d06b1c394151845d9`
+-	Image ID: `sha256:02fcd11a4dcf3feb78b227e34b899a3df51ded92c4c180d9105efde50aec3642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b57bd3bbc96f077260acc2855b1ead01c8a3282e1d3e1cfd4e504d2f90c121f`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 5.2 MB (5185625 bytes)  
+	-	`sha256:1a99108af5143b006bc80b3a991dfcced5a9f2799df5e095e8a03c1544d9f3cb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.2 MB (5188183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d07e5e2ee8fd5f368752b2f1af0efbd41ce3c5ec06d0d99862259f5ab2be6c20`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 19.7 KB (19696 bytes)  
+	-	`sha256:7fd28438a58c72a6a1fc2d2b28c742aeb80198ffb42d86c205af6cbf9ca00e4f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 19.7 KB (19697 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15-jdk` - linux; arm64 variant v8
@@ -4648,7 +4648,7 @@ $ docker pull jruby@sha256:3385b01df007becc335ba041c4cf5aaca8107c5f3c9690bce7fd1
 ## `jruby:9.3.15-jdk11`
 
 ```console
-$ docker pull jruby@sha256:5ec03f1a10dd1602dab050f43eb06cd08942ae597494bb8fbf1031dcfb74d9df
+$ docker pull jruby@sha256:31cce9dd024e2692dba798a817b247c933425d826a70c928aa4cb885cc75acfd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4661,139 +4661,139 @@ $ docker pull jruby@sha256:5ec03f1a10dd1602dab050f43eb06cd08942ae597494bb8fbf103
 ### `jruby:9.3.15-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:edf1e15a3919b2bd029d89a18e2beb27ef5c0094e0ab59039c981e743a475233
+$ docker pull jruby@sha256:ca4cf0b88ee59c255db5cf7cc7eb67d1cde7ebf2ffc9c62c078dfda0f52ae9a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232452191 bytes)**  
+-	Total Size: **232.5 MB (232451155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d83edd6fce38cd3b1663bc3ff38ca114332dedecff207b9d36f189a2e31826fa`
+-	Image ID: `sha256:94899970c0ca167294e2f6d01e64ed81b9c8a6e17a57e70e88160ed194f4e6cd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57720219966e918f1a532346498cfbfb342979a0f5ef1c523ba9e60e4ef5ab63`  
-		Last Modified: Fri, 31 Jan 2025 01:30:17 GMT  
-		Size: 20.3 MB (20251237 bytes)  
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec2b4dbdfccae2f0821bf0672520a085237394280af05d3fa21c12397b754d0`  
-		Last Modified: Fri, 31 Jan 2025 01:30:19 GMT  
-		Size: 145.6 MB (145609067 bytes)  
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ae877ab777ef84fc2dae1668033dcb1343246ee291a5ff14fba9cf841202dff`  
-		Last Modified: Fri, 31 Jan 2025 01:30:15 GMT  
-		Size: 160.0 B  
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87696ca3c0636764531d75907bea3b052b7c6c41c86c6b16b3043606d0a85461`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 6.8 MB (6837825 bytes)  
+	-	`sha256:6fd8621bccd29140a0f3234b9a0d7fd0f9244b9b32f124f4623103922a0471eb`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 6.8 MB (6828544 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c4026fb4665da14b84ec12880f9ea6750b96bbd9f0068e9d258eca709b5731`  
-		Last Modified: Fri, 31 Jan 2025 02:12:39 GMT  
-		Size: 31.2 MB (31155770 bytes)  
+	-	`sha256:608494002b9464d6f89f64dada384cd1c3f5ad32c40c23c221663bbddff63e06`  
+		Last Modified: Wed, 09 Apr 2025 02:14:08 GMT  
+		Size: 31.2 MB (31155745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed7b436161c10ba605a6e1c9c8a7af6ccf4ce5ba59ec4f3cced4d7705610eee`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 198.0 B  
+	-	`sha256:51d32d5edb7057ba080b8a208566e829ebecbb3589d21657a754b33a9a4debd6`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0373f6f0cd3da965cf0c092190873c1851d909dd4b9346f97d1ce2893ce0e30c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 1.1 MB (1084450 bytes)  
+	-	`sha256:12b371cf1f7c402844fd1c055dbd10a3770c7634f70d51c27838ca13038d0072`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 1.1 MB (1084449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df443c790eb01f6883374158228fde1638a5d7337497c4434d7e2d8fb14411ac`  
-		Last Modified: Fri, 31 Jan 2025 02:12:39 GMT  
-		Size: 141.0 B  
+	-	`sha256:139eddf67ac4dedc6cbfb69b5d0fe0a836b6bbb7a9182f9f83f70d7acfd25092`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f6cbca281ed90500a9b1c8b42eb2e58ffdf105625d5737879980f2f7778d9e23
+$ docker pull jruby@sha256:4cc6c718379d766aaef28ea21cfe639f6d9733dfe9610ba40f731b8751f804a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5102053 bytes)**  
+-	Total Size: **5.1 MB (5104610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a31f7adcbe5345923c12dac982bf4fef557e6f212014682229e5d0d0e399067`
+-	Image ID: `sha256:d036454d8d8da0c1aad883a068309217b9209e36f613bf26ee4768a7cdbb450c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a194171abe2d400d1232136d0626004c6ff3c64a77e44123ffc2d1972e08e6b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 5.1 MB (5083246 bytes)  
+	-	`sha256:1365c8185f624d4e8a2a259c35b87ac5b16581d22c0263beeab791ac461f9068`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 5.1 MB (5085804 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:898601dc644e5de351781f26ce797ed949deaa470b5fe57eea9a3b12e4f04ca9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:37 GMT  
-		Size: 18.8 KB (18807 bytes)  
+	-	`sha256:45de8cb335b27f41906c35f7f65753701414ff39fad53ffa84a673a82023e531`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 18.8 KB (18806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15-jdk11` - linux; arm64 variant v8
@@ -4937,7 +4937,7 @@ $ docker pull jruby@sha256:a412e075d85b1f9993648c1560db6679a802f0b3f37b19329900f
 ## `jruby:9.3.15-jdk17`
 
 ```console
-$ docker pull jruby@sha256:f120e99dc74a6d7f74668c44f11f9b88a786cf2f1b1f8b1b27ede938093996da
+$ docker pull jruby@sha256:aed2f23f5be67f0ba69e8fefb472635ee5bfa3926a61937a8da2046cbed65752
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4950,138 +4950,138 @@ $ docker pull jruby@sha256:f120e99dc74a6d7f74668c44f11f9b88a786cf2f1b1f8b1b27ede
 ### `jruby:9.3.15-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:b9713de68cdba4aa706888b06471875cc6a3b7429477870c3ac5ba9db819d6dd
+$ docker pull jruby@sha256:24f888d9cc42136d8ac76e6b770e53ffc9051c686f007cc4cb2d61f6290e61c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235180186 bytes)**  
+-	Total Size: **235.2 MB (235176549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:217cf9500cfa7588263d1308f2b2f67c3eede5005be0927fcfcddb7ed880c759`
+-	Image ID: `sha256:9d39ccf8432b28d1c837b347a807f8e79d7df0f117777c129fc9a609331941ae`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a3af83983fb94dd7d11b13ba2dba0fb6819dc2caaf87e6937afd22ad4680ae9a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='62efc3e83fc9bcd08db7c4f02977328cb3559a54519078d8337314cf025d19b7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='f43986385403c0f08bd3512c9d11a51c49044a7c8a0a39cf4e2e3731ca0db229';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='f4cb9ee5906a44d110fa381310cd7181d95498d27087d449e7e9b74bddd9def2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3a1d896eb3a737020e5ec95ec3206b1ca36cb365538382289d3fb46d14303648';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88aed8b4a7e29aae2ef8d1eada343155613c68505de0b35a06bd4927d9ea65d5`  
-		Last Modified: Fri, 31 Jan 2025 01:30:13 GMT  
-		Size: 24.0 MB (24009455 bytes)  
+	-	`sha256:10d22f6ae181c9c52790beddb6d90876eb709a06f60ee327c3542d060b11b396`  
+		Last Modified: Wed, 09 Apr 2025 01:15:55 GMT  
+		Size: 24.0 MB (24015362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba02fbf9c0beb1cd876f134d2dbf73f244a7e109db29c2168249004aaea6c411`  
-		Last Modified: Fri, 31 Jan 2025 01:30:16 GMT  
-		Size: 144.6 MB (144576684 bytes)  
+	-	`sha256:3659942add492828d19e9ea6b7691dd444200f35e6659c8265764fb65f01b9f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:59 GMT  
+		Size: 144.6 MB (144576692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:020b80f54da19b4d38afaf9821813776315c4080223d8f9166d4d46eb6c6cb27`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
+	-	`sha256:60d19df4643f587ef926e1e9b325b9480bff6ca93b67c7ac870ce79434662c1e`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1269c4ddbbd753503ca927375bac1e9450e557f656e4c25a058bb663b0b27215`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:d6bd69e2358a0b1a79b33adc20b6238ba46fa51a8ba3072297dc096106200e31`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fa388c59f104d892f4d2c90ab67a2af8278668ceea391f8bd7087095821860b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 6.8 MB (6840067 bytes)  
+	-	`sha256:0da76d5f68f92186961bd81937b00408f0118597f2ed6407b07c5a469b2d0cef`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 6.8 MB (6831104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e51b760f6618119123fb03fe21395593bf14cdaf8eac49d7237eef99b5f9fb7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 31.2 MB (31155694 bytes)  
+	-	`sha256:d6be36ab25bd9ea2313496eeeb16dd0c211a509d3f75e22db166f863c9c5f50e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:51 GMT  
+		Size: 31.2 MB (31155752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18c4cd0966ee5f745d722227ea2bb4dbcba548be9a967a88940ee22392f7a685`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
+	-	`sha256:df468097319a90de5c798397ff9df85a29a4c3bd37a35a617e8141c5c948e40a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ad57920183193794ecea6f0a72f47dbc1d93d832c697d904fe01dd77dee6bf2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 1.1 MB (1084443 bytes)  
+	-	`sha256:c252bf3c33a72b10b4fcf2d461aa28071237c70e068f1111d6cae85ea542c1d6`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 1.1 MB (1084464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71390032b346c746cb58f9aba305ce63d998467acc4b77ff4503efce78e6f1ae`  
-		Last Modified: Fri, 31 Jan 2025 02:12:48 GMT  
+	-	`sha256:645737554db1e3681ef6047d640bf44f4219a54e384acef93e409eb83898e991`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8a203362c2b377cc6a3c979933c1b765f285b4e974e62e3807315d5a1b571681
+$ docker pull jruby@sha256:a53c144bd089581313a7ff759b9e59dd0ba6ff5b7bc771f69bccdbace16640cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5237904 bytes)**  
+-	Total Size: **5.2 MB (5240474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5e8de7872ec26264ec6f1820b3df8043b26d75f1ead38a724c79021af12a617`
+-	Image ID: `sha256:facdca25707e58fbe34d6442000c9972f66ae70156d623255aa33a3c74f49f88`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:402a4db8437e604b5e9ed72fb6c5ea7ed3a785d03f99529df5333c939628f1ed`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 5.2 MB (5219005 bytes)  
+	-	`sha256:3d5de8b226f804f9286d7feb6c23fd532640b6dc1c1e3da06f329a1209e23e31`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 5.2 MB (5221575 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9f6fae9e85402dcf7ea7f63a4ec66c0350b735e6cf7efce0b312c03633d83650`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
+	-	`sha256:dc5a94a9b44ec4713a6319978b49e77a0cc30544d568ec75639c6c1640407edd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5226,7 +5226,7 @@ $ docker pull jruby@sha256:61884ab0cb877fae643ff50e7db40232b8f618dcce4e9287f73ee
 ## `jruby:9.3.15-jdk21`
 
 ```console
-$ docker pull jruby@sha256:6e2fc41f7ebc277aedd46b358d0848cff852b15aa1784558a9430d4db1b6fe64
+$ docker pull jruby@sha256:8982b632bf010aa3d79089276bc09565ae20b76b89f02a74b386bae5d17a216c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5239,139 +5239,139 @@ $ docker pull jruby@sha256:6e2fc41f7ebc277aedd46b358d0848cff852b15aa1784558a9430
 ### `jruby:9.3.15-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:48f241bcaa667539bca9a8b57ac54bc1f2821a83f733ebe3a2e3eea9c376a916
+$ docker pull jruby@sha256:eb5a81a323641ed3c4b2978bfe6915ad3017499a5b76101b46cfd617b1d9c3a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.6 MB (245638544 bytes)**  
+-	Total Size: **245.7 MB (245650521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5383e2f79296427b51d53020791a443fdc4098cf86fdf9b24f91ceec77564704`
+-	Image ID: `sha256:22d99319bd2322dc6ad2bc52dd2440be631b77bab20030da08050535eefbb604`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-21.0.6+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a2650fba422283fbed20d936ce5d2a52906a5414ec17b2f7676dddb87201dbae';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='04fe1273f624187d927f1b466e8cdb630d70786db07bee7599bfa5153060afd3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='163724b70b86d5a8461f85092165a9cc5a098ed900fee90d1b0c0be9607ae3d2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='5ba742c87d48fcf564def56812699f6499a1cfd3535ae43286e94e74b8165faf';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f9ce665314df6489df49d894b81a8b7d89dcbb3916abb4b8f2d9f04f7f30fba`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 20.7 MB (20684621 bytes)  
+	-	`sha256:69ac5503654a9a87aad1bf9db9d8883049288444743ac7d05be1ab56f1d17713`  
+		Last Modified: Wed, 09 Apr 2025 01:16:32 GMT  
+		Size: 20.7 MB (20693548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c63f325f81a44cbc524343f5cdcec789fb188c2333543d3238cdac7cfeafb7`  
-		Last Modified: Tue, 04 Feb 2025 04:40:18 GMT  
-		Size: 157.6 MB (157591234 bytes)  
+	-	`sha256:e6600e0d3831b05b9fb66aebbe3123d683fb18b898986c49e05faf1c667a99a2`  
+		Last Modified: Wed, 09 Apr 2025 01:16:36 GMT  
+		Size: 157.6 MB (157591202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:864a83d54ff514b209c491364b5476319cda130d7de9e481c432148668d4f0ab`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 159.0 B  
+	-	`sha256:7438c1b0bdfc7c1b5a73ccf2d526da05dc7da2275231c346ea0efea5a8d5af45`  
+		Last Modified: Wed, 09 Apr 2025 01:16:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8df0decf9d7f3577a33fb03b83ae0fc1cb904ea030014ac9bc7a5954ccbfec`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce954d09b25ebce7a6d047525bfccd84e6f4e456634f2f3a90af83fe8bfee0c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 5.6 MB (5584136 bytes)  
+	-	`sha256:0496a9f19b46f0b7ca2033856d62ed9029b42b1c9ded8ffd245a8e3d3479f73e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 5.6 MB (5590305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:babd37e1c75bfa032a391fd9b0a8fec8d146c78804457344fe328de093550b77`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 31.2 MB (31155379 bytes)  
+	-	`sha256:d552e4219c4191daa74c4e469890fbd990a76236c43bd057929fe2d31817fb4a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:58 GMT  
+		Size: 31.2 MB (31155836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa54f205edf5ae3acc004f9270d251110bfbfa246f72141622e8a73e1d7d4a89`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 197.0 B  
+	-	`sha256:80f73bcd417aba1dbb9dff80b1ada9403cd4322a1451a846e5b6adc0672f03b5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bf1e130496d6ecd5141473bacc8067eabaa93119d186c0a8c6c4d3ebf43e993`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 1.1 MB (1084451 bytes)  
+	-	`sha256:6ecf67b4fb3aeec05dd90f437b7cbf843a66cd30daa6256b597df6fa0352dd15`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 1.1 MB (1084479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e72602e56d781e824400cce055bdf714ee4780ce157fd9b23f0e3d666a3f6ac5`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
+	-	`sha256:cbc10581eae0e15f62842cbc4f8f5dbd86f2e6faab4b26790e696d4bb3c4de80`  
+		Last Modified: Wed, 09 Apr 2025 02:13:58 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8798e5e5b16fa419d5a9d2c90b306e7e0c6b78f61c833bf1d608aba1e2d5f8eb
+$ docker pull jruby@sha256:d0540ba4ba89c65c3d9bc63cdafdfe940a2f44a096cebbad38cad3cf75eb0dac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306199 bytes)**  
+-	Total Size: **5.3 MB (5308781 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40e7462bb010e4c1162d60dfc5115dfdd759c8c84d4cb3bd18dbc2fdc3c8537d`
+-	Image ID: `sha256:a6778c3b4e4896c42a9f8e32549f1e8447787e2109cccc0711c52b5a9531ec2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1da4d022723eb7f12e3aadd5c238d8382e10a9110f176ca5503b93e24661706`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 5.3 MB (5287307 bytes)  
+	-	`sha256:4d6e4c7faa16391d7911a1b005b77ddbfed32057fa1fde0a3d23474c31b0d39f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 5.3 MB (5289887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6544bf9cddb61c0829cdf9f4767d30b091a6d864e1080da91ade90c648733f1c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 18.9 KB (18892 bytes)  
+	-	`sha256:21c6e3d4e50d530750d0f99faedf6ea52b03174f5816c166a8c3cc753a570026`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 18.9 KB (18894 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15-jdk21` - linux; arm64 variant v8
@@ -5515,7 +5515,7 @@ $ docker pull jruby@sha256:278d3ef87dc59e360ce7876f576e9bda6bec3217669cac96e4ce3
 ## `jruby:9.3.15-jdk8`
 
 ```console
-$ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542834fca94304
+$ docker pull jruby@sha256:09309fd977b09dabcc0e596a9584371451901b4779fb365ed8a676418b584b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5528,137 +5528,137 @@ $ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542
 ### `jruby:9.3.15-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ebd9809ac4204f28b5cb157a7ef0deb8a2a2c6957e31c4753bd6650d42a25194
+$ docker pull jruby@sha256:24a51ca20966f8005db73a395cad07cf43c6fddc397bd51d019f26e7b5d6c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141565337 bytes)**  
+-	Total Size: **141.6 MB (141564398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0242a5e0833b48d0ad2db3e7ee0c0668a6afa3b32c190d5e688ba61b9783ed4a`
+-	Image ID: `sha256:4d7648df68edcb94431b6cbaf53b249911d7236da01e7463ddd843ab077d0c11`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='5b0a0145e7790552a9c8767b4680074c4628ec276e5bb278b61d85cf90facafa';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='1d1662bd8ca7edc9281c723d9eebafea940e6a41464bdc43a83b564bc974c7e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='c555750ee41799d30553bd9744c1ab9b8e6b2a2ea83195619a11ef30cc4154f4';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='7eac77deb8fc6c6130f9445c9a68af0bcc40bf6736b5672ef5c3d737c025e84d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedff63dcc5b49445064f176ebf16e56477bf4c47bacb83d89aa768950b888da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 6.8 MB (6837836 bytes)  
+	-	`sha256:85712dae44390e5d103c02491fc9b98fc25240304d88690f618eebb0ca009073`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cc2621e02dcad4d257b4d645418022cf68483e1549f7978f2d7be8a5684345`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 31.2 MB (31155768 bytes)  
+	-	`sha256:75448bb498e43d700459267caf7ba4fbcafc902ab6e45d78c1328bc803baf51e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8f4b82cc69366f89ce1d877a4baa51227cb6537ff7deb177445dcd7c828ec6`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 199.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d43d10518b990968b34b243bf0e4afdf5d0cc7d0291b2d21eec62c6a176c724`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 1.1 MB (1084471 bytes)  
+	-	`sha256:222c531332988b297864e868f6c817c61d066a308f45518c91e9a46064ab5b61`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.1 MB (1084469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65b8806bd322a225cf4ec306d56e74e8260737fbe25fd3c40dfc42e0670c721b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
+	-	`sha256:448c2f15ee987b38a63abbb0e3e0be74a09567c8c05fbbf5c6a7bbbcb8c957e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:03f199de73e5a5d2e4f5b6b6a0df4cf27ace0a041709db30a14a1aa761223328
+$ docker pull jruby@sha256:29585a7223beeabebca5f9ef0751b3a14c14640e3ea8d430f281277c2b445ccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5205321 bytes)**  
+-	Total Size: **5.2 MB (5207880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8bd709d7e25bbffedb6f17948a9568185a662e5a2a9d7d06b1c394151845d9`
+-	Image ID: `sha256:02fcd11a4dcf3feb78b227e34b899a3df51ded92c4c180d9105efde50aec3642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b57bd3bbc96f077260acc2855b1ead01c8a3282e1d3e1cfd4e504d2f90c121f`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 5.2 MB (5185625 bytes)  
+	-	`sha256:1a99108af5143b006bc80b3a991dfcced5a9f2799df5e095e8a03c1544d9f3cb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.2 MB (5188183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d07e5e2ee8fd5f368752b2f1af0efbd41ce3c5ec06d0d99862259f5ab2be6c20`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 19.7 KB (19696 bytes)  
+	-	`sha256:7fd28438a58c72a6a1fc2d2b28c742aeb80198ffb42d86c205af6cbf9ca00e4f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 19.7 KB (19697 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15-jdk8` - linux; arm64 variant v8
@@ -5800,7 +5800,7 @@ $ docker pull jruby@sha256:3385b01df007becc335ba041c4cf5aaca8107c5f3c9690bce7fd1
 ## `jruby:9.3.15-jre`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5813,136 +5813,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3.15-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6085,7 +6085,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3.15-jre11`
 
 ```console
-$ docker pull jruby@sha256:aea4a1d15937719fb4848cca952ffd760f6eb2ee3f61898fb14947377bc0de72
+$ docker pull jruby@sha256:6c0659f9938235a0709a8e91d6db95429f8c0ea420fc1749b59817f187cb9fff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6098,136 +6098,136 @@ $ docker pull jruby@sha256:aea4a1d15937719fb4848cca952ffd760f6eb2ee3f61898fb1494
 ### `jruby:9.3.15-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:20b9c72a7b54086acdc9eee6f85845f874091c2080fafd9b19f5edebcec0af0b
+$ docker pull jruby@sha256:420e15f013b768224dda629e3a4c346d729d3176e5674a5c401b7c5c966554d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.1 MB (134059834 bytes)**  
+-	Total Size: **134.1 MB (134059250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:338dcc2ccdd5a4d93d944ea8f66b59491fe825779d4045d08be55204ceb195bb`
+-	Image ID: `sha256:cf596e743bcf817ff26cfa2a027580d6fd73d09dcf62e878ba60bd5f4994e575`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d26c566a7010d1303d3979b6f076e7911b49419a609c9e4d81f27262bf47f87c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='4ececb5c229763107e9e4acf3b7035db38cf18a98a47176fa5ed1be3f3d15518';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='e4a00a3ea318a63ba97236633f34c8a5477f6cdb643cf6883788840818110f5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='69b38f0dde128d8c606012335cd60f1f55afa09b4135582188943bee699ebf03';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='5d9552b1fb699da6052cbd600e750dd8ff48a89a384d537919a3c999257979dc';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3058f73b8f4937ab8fb3b4c159a4ec63b748de89e82bb46cb05905502be6f5c3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 20.3 MB (20251256 bytes)  
+	-	`sha256:fe913685dc07308206b8b9368edd760d45c0ed0c1ce0a008219f9ae4565668b6`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 20.3 MB (20260214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f937e0a2086c23a09d1f20c16ad505f7c97bcf945194fbbab952915ef7d69f7a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 47.2 MB (47216682 bytes)  
+	-	`sha256:0298071afd7ec797d4c38d0c29e19fe832ecf95e87bf51f6df5b5f5c220fb8a3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 47.2 MB (47217150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f3083818c14451f2bc51269701808b2b3c9c7c12b5da3128ac588e4a492151d`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 157.0 B  
+	-	`sha256:261c34eb718b577c4eb4d30527baae2184b689e59aaba4f624d32889c2a480fe`  
+		Last Modified: Wed, 09 Apr 2025 01:15:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
+	-	`sha256:96d15027f2149d0b63aec987947cbbfaa63e34e19b3922082fe2180bc11e2847`  
+		Last Modified: Wed, 09 Apr 2025 01:15:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09be752244693ecf129a39b1e46af0cd6d914e1e819a8e4d669d6c4a487272b0`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 6.8 MB (6837856 bytes)  
+	-	`sha256:48a2e5d6a8d32a50f34f7cc9b31841baa43ccf8b8410b84ce39ee2262988bd5d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 6.8 MB (6828528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f6c63bcf74ae46be609899f899077b797aea5956bffff532f899c1fa99b25fd`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155744 bytes)  
+	-	`sha256:5f0a1ab361da0972b439395909793c9109506cccd2a17932eaa710c5a17f082d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc99bbbe3c64c6a696c58ffd3d3ae6693765474da70cd52263d3b03d85aff833`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 198.0 B  
+	-	`sha256:448b65c80d4d614bc9bc9a1f649c757e333e271c7ebd39a638a7ae6f7c26140b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ddb42b497c3a7615236194165fea011199040623b807fa4ac0b44473fb484da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 1.1 MB (1084456 bytes)  
+	-	`sha256:ce0a588589d3ad10256e1fc109421a77c42f851108632519b9b024ba4f11452e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 1.1 MB (1084453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fbe72f3f3d2360b279f80415b57950c81da672e1604f257dfa891b0b418f05b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 142.0 B  
+	-	`sha256:d9c3df4be36b46bc6c2434ebcf47ca70651f4bf4e227ee3c83f6d4ea6584e209`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:206786412faa233bf924edd4e9e987156d74d8b3bacb4bb24fa7b95a52c0dd9d
+$ docker pull jruby@sha256:46a5cac23c30935065c2e5de141145c5d04b5e8feb1b6c22b45181975c049ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5010873 bytes)**  
+-	Total Size: **5.0 MB (5013431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:529ca50533f0c779331b60e7b4a74e98e5a75e5afed18674b58a6266e75a861c`
+-	Image ID: `sha256:0a64e3e609445b11fb61cbf1a17277e46d66b6c909bcb417060d35d25cf6b5e5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1675bb5b520f0ce7aed4a912eeba603a12f01f03616da295c3031c1763632d8d`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 5.0 MB (4992072 bytes)  
+	-	`sha256:070a3ef4ebc984797ffe4d612c78b1c6593ef7803214af08a004a96db6da5df9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 5.0 MB (4994630 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:658b211dda2108a90be5df401864052592a5eb41f9e988c1771e76b76a17167b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
+	-	`sha256:9f03f3b6c127daa39f107a80cdf244eff6fe0ceea3b0c17699057a731b4c4ba8`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
 		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6370,7 +6370,7 @@ $ docker pull jruby@sha256:f79ae6bff4781580d48235ef8736cb49bdf90b2ff57f8546d061c
 ## `jruby:9.3.15-jre17`
 
 ```console
-$ docker pull jruby@sha256:edf1abcd8f599b13ffc256640301261d6792d6450221b2c1fcbcc7918c68a408
+$ docker pull jruby@sha256:6f6f8010bc2317d6b720b2432f240b7c96472b52c437b5edfdc3ee53d1b05aa7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6383,137 +6383,137 @@ $ docker pull jruby@sha256:edf1abcd8f599b13ffc256640301261d6792d6450221b2c1fcbcc
 ### `jruby:9.3.15-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:2617a195fb14a21b78642d0b1275705a3d822a4aa5732090a47ee776dbc1fe3e
+$ docker pull jruby@sha256:6851fd08bee736f3bc5f9a81e25afd606ea0f416a920380bc1a8a8645c34e61d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.8 MB (133796774 bytes)**  
+-	Total Size: **133.8 MB (133796006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fdde71a9ab13e392368f4bc227ecfc962b84b3828a6de0cdd48a78474e80a676`
+-	Image ID: `sha256:9d6ba5a8347da9cd2af8b3f8fe54ed2243f7569505d67832a995d4bc170d8046`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a4b0015872758aac6a5d17139e952a3951ee536ae6d9a99828823a80a71add56';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='bab3f352fc7144ac1435924f056872d16f4b32c8bcda58b9a77b636eb1c664f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='7ac439bce4d5ecddb250b31401b1c1a6da2762f51652eafedd53584a0d9e3130';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='2a730e9d34cce4d588739b626a034ed68c065a2db61048ee7886be48ec9fe460';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3887f14f95a14e65a985cfcee6696e01aadee06d3347ab70eb7d6b16ce397238';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c476128eb22bdf6a99b65fa864db0f1ebb019c91a9a4cdc226f6183ad8e3c43`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
-		Size: 20.3 MB (20251225 bytes)  
+	-	`sha256:98e66cedfb5247f86094604841f8e7ddb0b2d05ca0ae60b5be1e8ba41b12ace4`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 20.3 MB (20260107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e846d8e9647d6aab05b8f5a02a6f1fe245fa2b67118f2695141bb2c49300b542`  
-		Last Modified: Fri, 31 Jan 2025 01:31:02 GMT  
-		Size: 47.0 MB (46953971 bytes)  
+	-	`sha256:cb0112479820d174794e74000f9d01cfedd16517deca0a323a1be747efbdfe39`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 47.0 MB (46953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:843c17e581f46279bbc0373ddad8b59e6fb83390f103c2b40004a94eed5e1490`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
+	-	`sha256:4bdfc5969d5b0ac2a56a7db5925216c13cda6f1559687bab2f9c94cf31ac2cd1`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15e0c869e1f807bce22ac6fcdba0ec696d6ea42fdeb1836b9553e561744e4b9d`  
-		Last Modified: Fri, 31 Jan 2025 01:30:58 GMT  
+	-	`sha256:29be0f57f40590223e0b03c89d63aa09fca6560b710b2e6d2d4a8408e9ea31f0`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3e3ae2eea86193ea504c4265b00057be4f50f182950adfebd9d1c53a79d2665`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 6.8 MB (6837894 bytes)  
+	-	`sha256:8364aa20c38b11891f772df25d1721dd079ccc1a3d8a4ae09066509f171e5362`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 6.8 MB (6828536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:104d0d48263d15d367941a3ac9b332dc0c85ef5c61a8416ba64ed4f57a97a71d`  
-		Last Modified: Fri, 31 Jan 2025 02:12:46 GMT  
-		Size: 31.2 MB (31155408 bytes)  
+	-	`sha256:c0e0ed823c572afe827c58442f36987bba2cb77578339240d2620e58d4d3021a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 31.2 MB (31155775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3db7688277f4e8e4beda19eefa45f4f5e38f1b0646101851d38db0ddd1e9b188`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 197.0 B  
+	-	`sha256:df468097319a90de5c798397ff9df85a29a4c3bd37a35a617e8141c5c948e40a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a4ad961fcd9726f620ce4373529701a8a6a05296a1fbe212fe8e7dc97f757df`  
-		Last Modified: Fri, 31 Jan 2025 02:12:44 GMT  
-		Size: 1.1 MB (1084435 bytes)  
+	-	`sha256:58c5fe8c2a49dd0750c0b34949838055778fd8bafe86e336ce68ec1bb5e30b35`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 1.1 MB (1084463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11181fb697415177ba85b9d862aa324e23bb560885d413d7aa159c21c531bf7b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:44 GMT  
-		Size: 143.0 B  
+	-	`sha256:7ba85e06e996f83826e623eb6a1b0956c9cd091741259734cf4b3f3fdebc6559`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:781caeaf6203d211c186c255be51fd948969a2611d3bf8996b553dea801c50e7
+$ docker pull jruby@sha256:3ad51147287436ced8c0ae5485e412fc656c65f309c0b47d20d5ae5340db9f33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4997851 bytes)**  
+-	Total Size: **5.0 MB (5000408 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62dade23a6c8250c8f8200422816d2085c609b876213a5f3e98af0408ef0cb93`
+-	Image ID: `sha256:6c2d683b595e865e2ed5604b8939bc5d45b749411d68e902102cfb80e2299b64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e005574b028abfd9dd1e9f14e07259ed811844a36f02dc2323148e75c411d5b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 5.0 MB (4978958 bytes)  
+	-	`sha256:adc94aa8e27e924f1f216fcdf0f6365a2a0d19bc9a2a72280743c2912dc63c2f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 5.0 MB (4981516 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c382b22ffbc495d12349c514e240bb9b276402191e623d19ab93e4c19467a7ad`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 18.9 KB (18893 bytes)  
+	-	`sha256:05d611f74211206475f8f6750937f2e3822f8a793713e3fb6097df2e7ce8c937`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 18.9 KB (18892 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15-jre17` - linux; arm64 variant v8
@@ -6655,7 +6655,7 @@ $ docker pull jruby@sha256:eadf93794b3bb2f7f8b487ff8ffff615604e649ad644585847561
 ## `jruby:9.3.15-jre21`
 
 ```console
-$ docker pull jruby@sha256:110bdc03333a7a148e8744f80309c71167d65b7cdefebf1af52fbf93c133394a
+$ docker pull jruby@sha256:661ede430ed3e6d463cb82932457be00f83b2c777a4ff923c131d0a1dacd4f25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6668,137 +6668,137 @@ $ docker pull jruby@sha256:110bdc03333a7a148e8744f80309c71167d65b7cdefebf1af52fb
 ### `jruby:9.3.15-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74fc12ea820aa8f161518a5ca20995f1b0c3a8967060b54a722a3ac74c219f26
+$ docker pull jruby@sha256:357d286d06a7faa34e955d537afb61489838cfae40751052e59d633f1bd47ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.4 MB (136372030 bytes)**  
+-	Total Size: **136.4 MB (136385638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bab105f43c4cd4f67ee7d411993a5574f2f16355cc6acb928799f5e8148b5b73`
+-	Image ID: `sha256:a9d92ca8c30c09646a90e16cb8aa68f86a57cdfa31966e9e3d9f0ab631fa19f6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-21.0.6+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2b8e353effdf25ad74bbde76a3242135d6d12fe14be177b7108868c3150b48`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 16.1 MB (16135187 bytes)  
+	-	`sha256:22d232ce229a6628d678ae8ff2aa9c943ad95eb21cff968172fa8f5d576a81ac`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 16.1 MB (16146029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379395aa081f5fd7e867ea654d17431258dab5353139b32bc5fa9c09edb8c19a`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 52.9 MB (52876031 bytes)  
+	-	`sha256:3edaf6f6c56c0c148e4d204e7ec02a653fc380cd7941ce53d30c8971245a5b52`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 52.9 MB (52876033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:298e1b6de86675cf06530c6496ec8374d300561fc2cdacf984c524349c6062ae`  
-		Last Modified: Tue, 04 Feb 2025 04:40:11 GMT  
-		Size: 158.0 B  
+	-	`sha256:f13ef442d1584eb54116771dd478f8bf87eb96391f6b2beea06bd0976c31ce7e`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea28f6f7f0aa0864f252fa90ca3f85687428d91dd6f829f2ba81dc8719e2e3be`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:880752f0cd86cc7cb2558f2a0175e9083f2a1d6e52a85b68d308eb86126e2f16`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 5.6 MB (5581894 bytes)  
+	-	`sha256:db842adaca5d196b9f0c99a82cb5ac08022cc6aa1fbac97d6eee286063d20b71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 5.6 MB (5588125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa2c851e5282392b0efbd46783725e904578fcc9a3bd506b1fdc44876741857b`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 31.2 MB (31155788 bytes)  
+	-	`sha256:bfb6b859f435de1672bb4a9d4504d149c91cd49e35dc3e0196f37b0bf03727e0`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 31.2 MB (31155849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f048e5ca169be642b72e65bc56aa6d893af6d6fa4328963c7c9bea49e8992c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:34 GMT  
-		Size: 196.0 B  
+	-	`sha256:08e33e745c02dcfc4ea1195c88ada277229adac2f1a0cd336794d9b6084c3fb9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707d57592ec615ddd388cb1fe65c4c828ed4e3a4e64cdcd8544507b5f5b52798`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 1.1 MB (1084409 bytes)  
+	-	`sha256:6848078ee42490c2e369b76ecb416d673c395adb5202bd81fd1ce304e91be5f5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 1.1 MB (1084456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86a472277eadf91c7596c9211f700db650d2a46e91602f088bb5d03a45e1efac`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
+	-	`sha256:215df6d926aa6fd896b8df86d2d0c4258e6edb9820ee85f964e3b486e3816334`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:863b167ee5a496e3275f737a369382728fee00217c700d83178f5d92fc8bf1cc
+$ docker pull jruby@sha256:68bb8f2251dd6c205cbeb601a1abed593383a7377ba2990824a2cbd7771f84b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5064744 bytes)**  
+-	Total Size: **5.1 MB (5067323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:391039f17044d73453caeb1becb99d5ff17240c4951f1c784ddb6b3b2e38b161`
+-	Image ID: `sha256:17dee2d3d79f95ebdbf67967842bdcab14f3765ff7ac06fe397675c1cd0f9984`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db75e15fde2f2d3ddd2e16cf446b60627d89ad2a516ae2fda80d84a0c554ef27`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 5.0 MB (5045856 bytes)  
+	-	`sha256:92bedb6909224f6e192b5d4e3c4f0b7f3dd50b4eed2c63663f1d2d6381deb4e3`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 5.0 MB (5048436 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b9f3e9b35fedfad30f1efd3d560a8f6301a3e06b919edb66acee3984e09f2da6`  
-		Last Modified: Tue, 04 Feb 2025 05:25:34 GMT  
-		Size: 18.9 KB (18888 bytes)  
+	-	`sha256:f1e0c9b09ea19d4b58698b364857dc0707f499612d13eae23dcc331f32eac03b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 18.9 KB (18887 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15-jre21` - linux; arm64 variant v8
@@ -6940,7 +6940,7 @@ $ docker pull jruby@sha256:48067c7461d47539457153041f6d283cfd74f821dedff8ba3a79e
 ## `jruby:9.3.15-jre8`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6953,136 +6953,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3.15-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7225,7 +7225,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3.15.0`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7238,136 +7238,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3.15.0` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7510,7 +7510,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3.15.0-jdk`
 
 ```console
-$ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542834fca94304
+$ docker pull jruby@sha256:09309fd977b09dabcc0e596a9584371451901b4779fb365ed8a676418b584b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7523,137 +7523,137 @@ $ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542
 ### `jruby:9.3.15.0-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ebd9809ac4204f28b5cb157a7ef0deb8a2a2c6957e31c4753bd6650d42a25194
+$ docker pull jruby@sha256:24a51ca20966f8005db73a395cad07cf43c6fddc397bd51d019f26e7b5d6c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141565337 bytes)**  
+-	Total Size: **141.6 MB (141564398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0242a5e0833b48d0ad2db3e7ee0c0668a6afa3b32c190d5e688ba61b9783ed4a`
+-	Image ID: `sha256:4d7648df68edcb94431b6cbaf53b249911d7236da01e7463ddd843ab077d0c11`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='5b0a0145e7790552a9c8767b4680074c4628ec276e5bb278b61d85cf90facafa';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='1d1662bd8ca7edc9281c723d9eebafea940e6a41464bdc43a83b564bc974c7e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='c555750ee41799d30553bd9744c1ab9b8e6b2a2ea83195619a11ef30cc4154f4';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='7eac77deb8fc6c6130f9445c9a68af0bcc40bf6736b5672ef5c3d737c025e84d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedff63dcc5b49445064f176ebf16e56477bf4c47bacb83d89aa768950b888da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 6.8 MB (6837836 bytes)  
+	-	`sha256:85712dae44390e5d103c02491fc9b98fc25240304d88690f618eebb0ca009073`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cc2621e02dcad4d257b4d645418022cf68483e1549f7978f2d7be8a5684345`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 31.2 MB (31155768 bytes)  
+	-	`sha256:75448bb498e43d700459267caf7ba4fbcafc902ab6e45d78c1328bc803baf51e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8f4b82cc69366f89ce1d877a4baa51227cb6537ff7deb177445dcd7c828ec6`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 199.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d43d10518b990968b34b243bf0e4afdf5d0cc7d0291b2d21eec62c6a176c724`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 1.1 MB (1084471 bytes)  
+	-	`sha256:222c531332988b297864e868f6c817c61d066a308f45518c91e9a46064ab5b61`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.1 MB (1084469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65b8806bd322a225cf4ec306d56e74e8260737fbe25fd3c40dfc42e0670c721b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
+	-	`sha256:448c2f15ee987b38a63abbb0e3e0be74a09567c8c05fbbf5c6a7bbbcb8c957e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:03f199de73e5a5d2e4f5b6b6a0df4cf27ace0a041709db30a14a1aa761223328
+$ docker pull jruby@sha256:29585a7223beeabebca5f9ef0751b3a14c14640e3ea8d430f281277c2b445ccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5205321 bytes)**  
+-	Total Size: **5.2 MB (5207880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8bd709d7e25bbffedb6f17948a9568185a662e5a2a9d7d06b1c394151845d9`
+-	Image ID: `sha256:02fcd11a4dcf3feb78b227e34b899a3df51ded92c4c180d9105efde50aec3642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b57bd3bbc96f077260acc2855b1ead01c8a3282e1d3e1cfd4e504d2f90c121f`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 5.2 MB (5185625 bytes)  
+	-	`sha256:1a99108af5143b006bc80b3a991dfcced5a9f2799df5e095e8a03c1544d9f3cb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.2 MB (5188183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d07e5e2ee8fd5f368752b2f1af0efbd41ce3c5ec06d0d99862259f5ab2be6c20`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 19.7 KB (19696 bytes)  
+	-	`sha256:7fd28438a58c72a6a1fc2d2b28c742aeb80198ffb42d86c205af6cbf9ca00e4f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 19.7 KB (19697 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15.0-jdk` - linux; arm64 variant v8
@@ -7795,7 +7795,7 @@ $ docker pull jruby@sha256:3385b01df007becc335ba041c4cf5aaca8107c5f3c9690bce7fd1
 ## `jruby:9.3.15.0-jdk11`
 
 ```console
-$ docker pull jruby@sha256:5ec03f1a10dd1602dab050f43eb06cd08942ae597494bb8fbf1031dcfb74d9df
+$ docker pull jruby@sha256:31cce9dd024e2692dba798a817b247c933425d826a70c928aa4cb885cc75acfd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7808,139 +7808,139 @@ $ docker pull jruby@sha256:5ec03f1a10dd1602dab050f43eb06cd08942ae597494bb8fbf103
 ### `jruby:9.3.15.0-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:edf1e15a3919b2bd029d89a18e2beb27ef5c0094e0ab59039c981e743a475233
+$ docker pull jruby@sha256:ca4cf0b88ee59c255db5cf7cc7eb67d1cde7ebf2ffc9c62c078dfda0f52ae9a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232452191 bytes)**  
+-	Total Size: **232.5 MB (232451155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d83edd6fce38cd3b1663bc3ff38ca114332dedecff207b9d36f189a2e31826fa`
+-	Image ID: `sha256:94899970c0ca167294e2f6d01e64ed81b9c8a6e17a57e70e88160ed194f4e6cd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57720219966e918f1a532346498cfbfb342979a0f5ef1c523ba9e60e4ef5ab63`  
-		Last Modified: Fri, 31 Jan 2025 01:30:17 GMT  
-		Size: 20.3 MB (20251237 bytes)  
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec2b4dbdfccae2f0821bf0672520a085237394280af05d3fa21c12397b754d0`  
-		Last Modified: Fri, 31 Jan 2025 01:30:19 GMT  
-		Size: 145.6 MB (145609067 bytes)  
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ae877ab777ef84fc2dae1668033dcb1343246ee291a5ff14fba9cf841202dff`  
-		Last Modified: Fri, 31 Jan 2025 01:30:15 GMT  
-		Size: 160.0 B  
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87696ca3c0636764531d75907bea3b052b7c6c41c86c6b16b3043606d0a85461`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 6.8 MB (6837825 bytes)  
+	-	`sha256:6fd8621bccd29140a0f3234b9a0d7fd0f9244b9b32f124f4623103922a0471eb`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 6.8 MB (6828544 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c4026fb4665da14b84ec12880f9ea6750b96bbd9f0068e9d258eca709b5731`  
-		Last Modified: Fri, 31 Jan 2025 02:12:39 GMT  
-		Size: 31.2 MB (31155770 bytes)  
+	-	`sha256:608494002b9464d6f89f64dada384cd1c3f5ad32c40c23c221663bbddff63e06`  
+		Last Modified: Wed, 09 Apr 2025 02:14:08 GMT  
+		Size: 31.2 MB (31155745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed7b436161c10ba605a6e1c9c8a7af6ccf4ce5ba59ec4f3cced4d7705610eee`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 198.0 B  
+	-	`sha256:51d32d5edb7057ba080b8a208566e829ebecbb3589d21657a754b33a9a4debd6`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0373f6f0cd3da965cf0c092190873c1851d909dd4b9346f97d1ce2893ce0e30c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 1.1 MB (1084450 bytes)  
+	-	`sha256:12b371cf1f7c402844fd1c055dbd10a3770c7634f70d51c27838ca13038d0072`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 1.1 MB (1084449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df443c790eb01f6883374158228fde1638a5d7337497c4434d7e2d8fb14411ac`  
-		Last Modified: Fri, 31 Jan 2025 02:12:39 GMT  
-		Size: 141.0 B  
+	-	`sha256:139eddf67ac4dedc6cbfb69b5d0fe0a836b6bbb7a9182f9f83f70d7acfd25092`  
+		Last Modified: Wed, 09 Apr 2025 02:14:07 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f6cbca281ed90500a9b1c8b42eb2e58ffdf105625d5737879980f2f7778d9e23
+$ docker pull jruby@sha256:4cc6c718379d766aaef28ea21cfe639f6d9733dfe9610ba40f731b8751f804a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5102053 bytes)**  
+-	Total Size: **5.1 MB (5104610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a31f7adcbe5345923c12dac982bf4fef557e6f212014682229e5d0d0e399067`
+-	Image ID: `sha256:d036454d8d8da0c1aad883a068309217b9209e36f613bf26ee4768a7cdbb450c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a194171abe2d400d1232136d0626004c6ff3c64a77e44123ffc2d1972e08e6b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:38 GMT  
-		Size: 5.1 MB (5083246 bytes)  
+	-	`sha256:1365c8185f624d4e8a2a259c35b87ac5b16581d22c0263beeab791ac461f9068`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 5.1 MB (5085804 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:898601dc644e5de351781f26ce797ed949deaa470b5fe57eea9a3b12e4f04ca9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:37 GMT  
-		Size: 18.8 KB (18807 bytes)  
+	-	`sha256:45de8cb335b27f41906c35f7f65753701414ff39fad53ffa84a673a82023e531`  
+		Last Modified: Wed, 09 Apr 2025 02:14:06 GMT  
+		Size: 18.8 KB (18806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15.0-jdk11` - linux; arm64 variant v8
@@ -8084,7 +8084,7 @@ $ docker pull jruby@sha256:a412e075d85b1f9993648c1560db6679a802f0b3f37b19329900f
 ## `jruby:9.3.15.0-jdk17`
 
 ```console
-$ docker pull jruby@sha256:f120e99dc74a6d7f74668c44f11f9b88a786cf2f1b1f8b1b27ede938093996da
+$ docker pull jruby@sha256:aed2f23f5be67f0ba69e8fefb472635ee5bfa3926a61937a8da2046cbed65752
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8097,138 +8097,138 @@ $ docker pull jruby@sha256:f120e99dc74a6d7f74668c44f11f9b88a786cf2f1b1f8b1b27ede
 ### `jruby:9.3.15.0-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:b9713de68cdba4aa706888b06471875cc6a3b7429477870c3ac5ba9db819d6dd
+$ docker pull jruby@sha256:24f888d9cc42136d8ac76e6b770e53ffc9051c686f007cc4cb2d61f6290e61c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235180186 bytes)**  
+-	Total Size: **235.2 MB (235176549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:217cf9500cfa7588263d1308f2b2f67c3eede5005be0927fcfcddb7ed880c759`
+-	Image ID: `sha256:9d39ccf8432b28d1c837b347a807f8e79d7df0f117777c129fc9a609331941ae`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a3af83983fb94dd7d11b13ba2dba0fb6819dc2caaf87e6937afd22ad4680ae9a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='62efc3e83fc9bcd08db7c4f02977328cb3559a54519078d8337314cf025d19b7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='f43986385403c0f08bd3512c9d11a51c49044a7c8a0a39cf4e2e3731ca0db229';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='f4cb9ee5906a44d110fa381310cd7181d95498d27087d449e7e9b74bddd9def2';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3a1d896eb3a737020e5ec95ec3206b1ca36cb365538382289d3fb46d14303648';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88aed8b4a7e29aae2ef8d1eada343155613c68505de0b35a06bd4927d9ea65d5`  
-		Last Modified: Fri, 31 Jan 2025 01:30:13 GMT  
-		Size: 24.0 MB (24009455 bytes)  
+	-	`sha256:10d22f6ae181c9c52790beddb6d90876eb709a06f60ee327c3542d060b11b396`  
+		Last Modified: Wed, 09 Apr 2025 01:15:55 GMT  
+		Size: 24.0 MB (24015362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba02fbf9c0beb1cd876f134d2dbf73f244a7e109db29c2168249004aaea6c411`  
-		Last Modified: Fri, 31 Jan 2025 01:30:16 GMT  
-		Size: 144.6 MB (144576684 bytes)  
+	-	`sha256:3659942add492828d19e9ea6b7691dd444200f35e6659c8265764fb65f01b9f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:59 GMT  
+		Size: 144.6 MB (144576692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:020b80f54da19b4d38afaf9821813776315c4080223d8f9166d4d46eb6c6cb27`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
+	-	`sha256:60d19df4643f587ef926e1e9b325b9480bff6ca93b67c7ac870ce79434662c1e`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1269c4ddbbd753503ca927375bac1e9450e557f656e4c25a058bb663b0b27215`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:d6bd69e2358a0b1a79b33adc20b6238ba46fa51a8ba3072297dc096106200e31`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fa388c59f104d892f4d2c90ab67a2af8278668ceea391f8bd7087095821860b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 6.8 MB (6840067 bytes)  
+	-	`sha256:0da76d5f68f92186961bd81937b00408f0118597f2ed6407b07c5a469b2d0cef`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 6.8 MB (6831104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e51b760f6618119123fb03fe21395593bf14cdaf8eac49d7237eef99b5f9fb7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 31.2 MB (31155694 bytes)  
+	-	`sha256:d6be36ab25bd9ea2313496eeeb16dd0c211a509d3f75e22db166f863c9c5f50e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:51 GMT  
+		Size: 31.2 MB (31155752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18c4cd0966ee5f745d722227ea2bb4dbcba548be9a967a88940ee22392f7a685`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
+	-	`sha256:df468097319a90de5c798397ff9df85a29a4c3bd37a35a617e8141c5c948e40a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ad57920183193794ecea6f0a72f47dbc1d93d832c697d904fe01dd77dee6bf2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 1.1 MB (1084443 bytes)  
+	-	`sha256:c252bf3c33a72b10b4fcf2d461aa28071237c70e068f1111d6cae85ea542c1d6`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 1.1 MB (1084464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71390032b346c746cb58f9aba305ce63d998467acc4b77ff4503efce78e6f1ae`  
-		Last Modified: Fri, 31 Jan 2025 02:12:48 GMT  
+	-	`sha256:645737554db1e3681ef6047d640bf44f4219a54e384acef93e409eb83898e991`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8a203362c2b377cc6a3c979933c1b765f285b4e974e62e3807315d5a1b571681
+$ docker pull jruby@sha256:a53c144bd089581313a7ff759b9e59dd0ba6ff5b7bc771f69bccdbace16640cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5237904 bytes)**  
+-	Total Size: **5.2 MB (5240474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5e8de7872ec26264ec6f1820b3df8043b26d75f1ead38a724c79021af12a617`
+-	Image ID: `sha256:facdca25707e58fbe34d6442000c9972f66ae70156d623255aa33a3c74f49f88`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:402a4db8437e604b5e9ed72fb6c5ea7ed3a785d03f99529df5333c939628f1ed`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
-		Size: 5.2 MB (5219005 bytes)  
+	-	`sha256:3d5de8b226f804f9286d7feb6c23fd532640b6dc1c1e3da06f329a1209e23e31`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
+		Size: 5.2 MB (5221575 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9f6fae9e85402dcf7ea7f63a4ec66c0350b735e6cf7efce0b312c03633d83650`  
-		Last Modified: Fri, 31 Jan 2025 02:12:47 GMT  
+	-	`sha256:dc5a94a9b44ec4713a6319978b49e77a0cc30544d568ec75639c6c1640407edd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:50 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8373,7 +8373,7 @@ $ docker pull jruby@sha256:61884ab0cb877fae643ff50e7db40232b8f618dcce4e9287f73ee
 ## `jruby:9.3.15.0-jdk21`
 
 ```console
-$ docker pull jruby@sha256:6e2fc41f7ebc277aedd46b358d0848cff852b15aa1784558a9430d4db1b6fe64
+$ docker pull jruby@sha256:8982b632bf010aa3d79089276bc09565ae20b76b89f02a74b386bae5d17a216c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8386,139 +8386,139 @@ $ docker pull jruby@sha256:6e2fc41f7ebc277aedd46b358d0848cff852b15aa1784558a9430
 ### `jruby:9.3.15.0-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:48f241bcaa667539bca9a8b57ac54bc1f2821a83f733ebe3a2e3eea9c376a916
+$ docker pull jruby@sha256:eb5a81a323641ed3c4b2978bfe6915ad3017499a5b76101b46cfd617b1d9c3a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.6 MB (245638544 bytes)**  
+-	Total Size: **245.7 MB (245650521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5383e2f79296427b51d53020791a443fdc4098cf86fdf9b24f91ceec77564704`
+-	Image ID: `sha256:22d99319bd2322dc6ad2bc52dd2440be631b77bab20030da08050535eefbb604`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-21.0.6+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a2650fba422283fbed20d936ce5d2a52906a5414ec17b2f7676dddb87201dbae';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='04fe1273f624187d927f1b466e8cdb630d70786db07bee7599bfa5153060afd3';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='163724b70b86d5a8461f85092165a9cc5a098ed900fee90d1b0c0be9607ae3d2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='5ba742c87d48fcf564def56812699f6499a1cfd3535ae43286e94e74b8165faf';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["jshell"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f9ce665314df6489df49d894b81a8b7d89dcbb3916abb4b8f2d9f04f7f30fba`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 20.7 MB (20684621 bytes)  
+	-	`sha256:69ac5503654a9a87aad1bf9db9d8883049288444743ac7d05be1ab56f1d17713`  
+		Last Modified: Wed, 09 Apr 2025 01:16:32 GMT  
+		Size: 20.7 MB (20693548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c63f325f81a44cbc524343f5cdcec789fb188c2333543d3238cdac7cfeafb7`  
-		Last Modified: Tue, 04 Feb 2025 04:40:18 GMT  
-		Size: 157.6 MB (157591234 bytes)  
+	-	`sha256:e6600e0d3831b05b9fb66aebbe3123d683fb18b898986c49e05faf1c667a99a2`  
+		Last Modified: Wed, 09 Apr 2025 01:16:36 GMT  
+		Size: 157.6 MB (157591202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:864a83d54ff514b209c491364b5476319cda130d7de9e481c432148668d4f0ab`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 159.0 B  
+	-	`sha256:7438c1b0bdfc7c1b5a73ccf2d526da05dc7da2275231c346ea0efea5a8d5af45`  
+		Last Modified: Wed, 09 Apr 2025 01:16:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8df0decf9d7f3577a33fb03b83ae0fc1cb904ea030014ac9bc7a5954ccbfec`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce954d09b25ebce7a6d047525bfccd84e6f4e456634f2f3a90af83fe8bfee0c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 5.6 MB (5584136 bytes)  
+	-	`sha256:0496a9f19b46f0b7ca2033856d62ed9029b42b1c9ded8ffd245a8e3d3479f73e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 5.6 MB (5590305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:babd37e1c75bfa032a391fd9b0a8fec8d146c78804457344fe328de093550b77`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 31.2 MB (31155379 bytes)  
+	-	`sha256:d552e4219c4191daa74c4e469890fbd990a76236c43bd057929fe2d31817fb4a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:58 GMT  
+		Size: 31.2 MB (31155836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa54f205edf5ae3acc004f9270d251110bfbfa246f72141622e8a73e1d7d4a89`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 197.0 B  
+	-	`sha256:80f73bcd417aba1dbb9dff80b1ada9403cd4322a1451a846e5b6adc0672f03b5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bf1e130496d6ecd5141473bacc8067eabaa93119d186c0a8c6c4d3ebf43e993`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 1.1 MB (1084451 bytes)  
+	-	`sha256:6ecf67b4fb3aeec05dd90f437b7cbf843a66cd30daa6256b597df6fa0352dd15`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 1.1 MB (1084479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e72602e56d781e824400cce055bdf714ee4780ce157fd9b23f0e3d666a3f6ac5`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
+	-	`sha256:cbc10581eae0e15f62842cbc4f8f5dbd86f2e6faab4b26790e696d4bb3c4de80`  
+		Last Modified: Wed, 09 Apr 2025 02:13:58 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8798e5e5b16fa419d5a9d2c90b306e7e0c6b78f61c833bf1d608aba1e2d5f8eb
+$ docker pull jruby@sha256:d0540ba4ba89c65c3d9bc63cdafdfe940a2f44a096cebbad38cad3cf75eb0dac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306199 bytes)**  
+-	Total Size: **5.3 MB (5308781 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40e7462bb010e4c1162d60dfc5115dfdd759c8c84d4cb3bd18dbc2fdc3c8537d`
+-	Image ID: `sha256:a6778c3b4e4896c42a9f8e32549f1e8447787e2109cccc0711c52b5a9531ec2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1da4d022723eb7f12e3aadd5c238d8382e10a9110f176ca5503b93e24661706`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 5.3 MB (5287307 bytes)  
+	-	`sha256:4d6e4c7faa16391d7911a1b005b77ddbfed32057fa1fde0a3d23474c31b0d39f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 5.3 MB (5289887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6544bf9cddb61c0829cdf9f4767d30b091a6d864e1080da91ade90c648733f1c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:18 GMT  
-		Size: 18.9 KB (18892 bytes)  
+	-	`sha256:21c6e3d4e50d530750d0f99faedf6ea52b03174f5816c166a8c3cc753a570026`  
+		Last Modified: Wed, 09 Apr 2025 02:13:57 GMT  
+		Size: 18.9 KB (18894 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15.0-jdk21` - linux; arm64 variant v8
@@ -8662,7 +8662,7 @@ $ docker pull jruby@sha256:278d3ef87dc59e360ce7876f576e9bda6bec3217669cac96e4ce3
 ## `jruby:9.3.15.0-jdk8`
 
 ```console
-$ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542834fca94304
+$ docker pull jruby@sha256:09309fd977b09dabcc0e596a9584371451901b4779fb365ed8a676418b584b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8675,137 +8675,137 @@ $ docker pull jruby@sha256:eab87bb2df26860af9f0f8af77a05454e6eb7750d97d4c3be5542
 ### `jruby:9.3.15.0-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ebd9809ac4204f28b5cb157a7ef0deb8a2a2c6957e31c4753bd6650d42a25194
+$ docker pull jruby@sha256:24a51ca20966f8005db73a395cad07cf43c6fddc397bd51d019f26e7b5d6c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.6 MB (141565337 bytes)**  
+-	Total Size: **141.6 MB (141564398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0242a5e0833b48d0ad2db3e7ee0c0668a6afa3b32c190d5e688ba61b9783ed4a`
+-	Image ID: `sha256:4d7648df68edcb94431b6cbaf53b249911d7236da01e7463ddd843ab077d0c11`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='5b0a0145e7790552a9c8767b4680074c4628ec276e5bb278b61d85cf90facafa';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='1d1662bd8ca7edc9281c723d9eebafea940e6a41464bdc43a83b564bc974c7e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='c555750ee41799d30553bd9744c1ab9b8e6b2a2ea83195619a11ef30cc4154f4';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='7eac77deb8fc6c6130f9445c9a68af0bcc40bf6736b5672ef5c3d737c025e84d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedff63dcc5b49445064f176ebf16e56477bf4c47bacb83d89aa768950b888da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 6.8 MB (6837836 bytes)  
+	-	`sha256:85712dae44390e5d103c02491fc9b98fc25240304d88690f618eebb0ca009073`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cc2621e02dcad4d257b4d645418022cf68483e1549f7978f2d7be8a5684345`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 31.2 MB (31155768 bytes)  
+	-	`sha256:75448bb498e43d700459267caf7ba4fbcafc902ab6e45d78c1328bc803baf51e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8f4b82cc69366f89ce1d877a4baa51227cb6537ff7deb177445dcd7c828ec6`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 199.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d43d10518b990968b34b243bf0e4afdf5d0cc7d0291b2d21eec62c6a176c724`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 1.1 MB (1084471 bytes)  
+	-	`sha256:222c531332988b297864e868f6c817c61d066a308f45518c91e9a46064ab5b61`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.1 MB (1084469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65b8806bd322a225cf4ec306d56e74e8260737fbe25fd3c40dfc42e0670c721b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
+	-	`sha256:448c2f15ee987b38a63abbb0e3e0be74a09567c8c05fbbf5c6a7bbbcb8c957e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:03f199de73e5a5d2e4f5b6b6a0df4cf27ace0a041709db30a14a1aa761223328
+$ docker pull jruby@sha256:29585a7223beeabebca5f9ef0751b3a14c14640e3ea8d430f281277c2b445ccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5205321 bytes)**  
+-	Total Size: **5.2 MB (5207880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba8bd709d7e25bbffedb6f17948a9568185a662e5a2a9d7d06b1c394151845d9`
+-	Image ID: `sha256:02fcd11a4dcf3feb78b227e34b899a3df51ded92c4c180d9105efde50aec3642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b57bd3bbc96f077260acc2855b1ead01c8a3282e1d3e1cfd4e504d2f90c121f`  
-		Last Modified: Fri, 31 Jan 2025 02:12:42 GMT  
-		Size: 5.2 MB (5185625 bytes)  
+	-	`sha256:1a99108af5143b006bc80b3a991dfcced5a9f2799df5e095e8a03c1544d9f3cb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.2 MB (5188183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d07e5e2ee8fd5f368752b2f1af0efbd41ce3c5ec06d0d99862259f5ab2be6c20`  
-		Last Modified: Fri, 31 Jan 2025 02:12:41 GMT  
-		Size: 19.7 KB (19696 bytes)  
+	-	`sha256:7fd28438a58c72a6a1fc2d2b28c742aeb80198ffb42d86c205af6cbf9ca00e4f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 19.7 KB (19697 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15.0-jdk8` - linux; arm64 variant v8
@@ -8947,7 +8947,7 @@ $ docker pull jruby@sha256:3385b01df007becc335ba041c4cf5aaca8107c5f3c9690bce7fd1
 ## `jruby:9.3.15.0-jre`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8960,136 +8960,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3.15.0-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9232,7 +9232,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.3.15.0-jre11`
 
 ```console
-$ docker pull jruby@sha256:aea4a1d15937719fb4848cca952ffd760f6eb2ee3f61898fb14947377bc0de72
+$ docker pull jruby@sha256:6c0659f9938235a0709a8e91d6db95429f8c0ea420fc1749b59817f187cb9fff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9245,136 +9245,136 @@ $ docker pull jruby@sha256:aea4a1d15937719fb4848cca952ffd760f6eb2ee3f61898fb1494
 ### `jruby:9.3.15.0-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:20b9c72a7b54086acdc9eee6f85845f874091c2080fafd9b19f5edebcec0af0b
+$ docker pull jruby@sha256:420e15f013b768224dda629e3a4c346d729d3176e5674a5c401b7c5c966554d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.1 MB (134059834 bytes)**  
+-	Total Size: **134.1 MB (134059250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:338dcc2ccdd5a4d93d944ea8f66b59491fe825779d4045d08be55204ceb195bb`
+-	Image ID: `sha256:cf596e743bcf817ff26cfa2a027580d6fd73d09dcf62e878ba60bd5f4994e575`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d26c566a7010d1303d3979b6f076e7911b49419a609c9e4d81f27262bf47f87c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='4ececb5c229763107e9e4acf3b7035db38cf18a98a47176fa5ed1be3f3d15518';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='e4a00a3ea318a63ba97236633f34c8a5477f6cdb643cf6883788840818110f5f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='69b38f0dde128d8c606012335cd60f1f55afa09b4135582188943bee699ebf03';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='5d9552b1fb699da6052cbd600e750dd8ff48a89a384d537919a3c999257979dc';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3058f73b8f4937ab8fb3b4c159a4ec63b748de89e82bb46cb05905502be6f5c3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 20.3 MB (20251256 bytes)  
+	-	`sha256:fe913685dc07308206b8b9368edd760d45c0ed0c1ce0a008219f9ae4565668b6`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 20.3 MB (20260214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f937e0a2086c23a09d1f20c16ad505f7c97bcf945194fbbab952915ef7d69f7a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 47.2 MB (47216682 bytes)  
+	-	`sha256:0298071afd7ec797d4c38d0c29e19fe832ecf95e87bf51f6df5b5f5c220fb8a3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 47.2 MB (47217150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f3083818c14451f2bc51269701808b2b3c9c7c12b5da3128ac588e4a492151d`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 157.0 B  
+	-	`sha256:261c34eb718b577c4eb4d30527baae2184b689e59aaba4f624d32889c2a480fe`  
+		Last Modified: Wed, 09 Apr 2025 01:15:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
+	-	`sha256:96d15027f2149d0b63aec987947cbbfaa63e34e19b3922082fe2180bc11e2847`  
+		Last Modified: Wed, 09 Apr 2025 01:15:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09be752244693ecf129a39b1e46af0cd6d914e1e819a8e4d669d6c4a487272b0`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 6.8 MB (6837856 bytes)  
+	-	`sha256:48a2e5d6a8d32a50f34f7cc9b31841baa43ccf8b8410b84ce39ee2262988bd5d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 6.8 MB (6828528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f6c63bcf74ae46be609899f899077b797aea5956bffff532f899c1fa99b25fd`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155744 bytes)  
+	-	`sha256:5f0a1ab361da0972b439395909793c9109506cccd2a17932eaa710c5a17f082d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 31.2 MB (31155731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc99bbbe3c64c6a696c58ffd3d3ae6693765474da70cd52263d3b03d85aff833`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 198.0 B  
+	-	`sha256:448b65c80d4d614bc9bc9a1f649c757e333e271c7ebd39a638a7ae6f7c26140b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ddb42b497c3a7615236194165fea011199040623b807fa4ac0b44473fb484da`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 1.1 MB (1084456 bytes)  
+	-	`sha256:ce0a588589d3ad10256e1fc109421a77c42f851108632519b9b024ba4f11452e`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 1.1 MB (1084453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fbe72f3f3d2360b279f80415b57950c81da672e1604f257dfa891b0b418f05b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 142.0 B  
+	-	`sha256:d9c3df4be36b46bc6c2434ebcf47ca70651f4bf4e227ee3c83f6d4ea6584e209`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:206786412faa233bf924edd4e9e987156d74d8b3bacb4bb24fa7b95a52c0dd9d
+$ docker pull jruby@sha256:46a5cac23c30935065c2e5de141145c5d04b5e8feb1b6c22b45181975c049ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5010873 bytes)**  
+-	Total Size: **5.0 MB (5013431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:529ca50533f0c779331b60e7b4a74e98e5a75e5afed18674b58a6266e75a861c`
+-	Image ID: `sha256:0a64e3e609445b11fb61cbf1a17277e46d66b6c909bcb417060d35d25cf6b5e5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1675bb5b520f0ce7aed4a912eeba603a12f01f03616da295c3031c1763632d8d`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
-		Size: 5.0 MB (4992072 bytes)  
+	-	`sha256:070a3ef4ebc984797ffe4d612c78b1c6593ef7803214af08a004a96db6da5df9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
+		Size: 5.0 MB (4994630 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:658b211dda2108a90be5df401864052592a5eb41f9e988c1771e76b76a17167b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:33 GMT  
+	-	`sha256:9f03f3b6c127daa39f107a80cdf244eff6fe0ceea3b0c17699057a731b4c4ba8`  
+		Last Modified: Wed, 09 Apr 2025 02:13:44 GMT  
 		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9517,7 +9517,7 @@ $ docker pull jruby@sha256:f79ae6bff4781580d48235ef8736cb49bdf90b2ff57f8546d061c
 ## `jruby:9.3.15.0-jre17`
 
 ```console
-$ docker pull jruby@sha256:edf1abcd8f599b13ffc256640301261d6792d6450221b2c1fcbcc7918c68a408
+$ docker pull jruby@sha256:6f6f8010bc2317d6b720b2432f240b7c96472b52c437b5edfdc3ee53d1b05aa7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9530,137 +9530,137 @@ $ docker pull jruby@sha256:edf1abcd8f599b13ffc256640301261d6792d6450221b2c1fcbcc
 ### `jruby:9.3.15.0-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:2617a195fb14a21b78642d0b1275705a3d822a4aa5732090a47ee776dbc1fe3e
+$ docker pull jruby@sha256:6851fd08bee736f3bc5f9a81e25afd606ea0f416a920380bc1a8a8645c34e61d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.8 MB (133796774 bytes)**  
+-	Total Size: **133.8 MB (133796006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fdde71a9ab13e392368f4bc227ecfc962b84b3828a6de0cdd48a78474e80a676`
+-	Image ID: `sha256:9d6ba5a8347da9cd2af8b3f8fe54ed2243f7569505d67832a995d4bc170d8046`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a4b0015872758aac6a5d17139e952a3951ee536ae6d9a99828823a80a71add56';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='bab3f352fc7144ac1435924f056872d16f4b32c8bcda58b9a77b636eb1c664f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='7ac439bce4d5ecddb250b31401b1c1a6da2762f51652eafedd53584a0d9e3130';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='2a730e9d34cce4d588739b626a034ed68c065a2db61048ee7886be48ec9fe460';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3887f14f95a14e65a985cfcee6696e01aadee06d3347ab70eb7d6b16ce397238';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c476128eb22bdf6a99b65fa864db0f1ebb019c91a9a4cdc226f6183ad8e3c43`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
-		Size: 20.3 MB (20251225 bytes)  
+	-	`sha256:98e66cedfb5247f86094604841f8e7ddb0b2d05ca0ae60b5be1e8ba41b12ace4`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 20.3 MB (20260107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e846d8e9647d6aab05b8f5a02a6f1fe245fa2b67118f2695141bb2c49300b542`  
-		Last Modified: Fri, 31 Jan 2025 01:31:02 GMT  
-		Size: 47.0 MB (46953971 bytes)  
+	-	`sha256:cb0112479820d174794e74000f9d01cfedd16517deca0a323a1be747efbdfe39`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 47.0 MB (46953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:843c17e581f46279bbc0373ddad8b59e6fb83390f103c2b40004a94eed5e1490`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
+	-	`sha256:4bdfc5969d5b0ac2a56a7db5925216c13cda6f1559687bab2f9c94cf31ac2cd1`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15e0c869e1f807bce22ac6fcdba0ec696d6ea42fdeb1836b9553e561744e4b9d`  
-		Last Modified: Fri, 31 Jan 2025 01:30:58 GMT  
+	-	`sha256:29be0f57f40590223e0b03c89d63aa09fca6560b710b2e6d2d4a8408e9ea31f0`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3e3ae2eea86193ea504c4265b00057be4f50f182950adfebd9d1c53a79d2665`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 6.8 MB (6837894 bytes)  
+	-	`sha256:8364aa20c38b11891f772df25d1721dd079ccc1a3d8a4ae09066509f171e5362`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 6.8 MB (6828536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:104d0d48263d15d367941a3ac9b332dc0c85ef5c61a8416ba64ed4f57a97a71d`  
-		Last Modified: Fri, 31 Jan 2025 02:12:46 GMT  
-		Size: 31.2 MB (31155408 bytes)  
+	-	`sha256:c0e0ed823c572afe827c58442f36987bba2cb77578339240d2620e58d4d3021a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 31.2 MB (31155775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3db7688277f4e8e4beda19eefa45f4f5e38f1b0646101851d38db0ddd1e9b188`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 197.0 B  
+	-	`sha256:df468097319a90de5c798397ff9df85a29a4c3bd37a35a617e8141c5c948e40a`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a4ad961fcd9726f620ce4373529701a8a6a05296a1fbe212fe8e7dc97f757df`  
-		Last Modified: Fri, 31 Jan 2025 02:12:44 GMT  
-		Size: 1.1 MB (1084435 bytes)  
+	-	`sha256:58c5fe8c2a49dd0750c0b34949838055778fd8bafe86e336ce68ec1bb5e30b35`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 1.1 MB (1084463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11181fb697415177ba85b9d862aa324e23bb560885d413d7aa159c21c531bf7b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:44 GMT  
-		Size: 143.0 B  
+	-	`sha256:7ba85e06e996f83826e623eb6a1b0956c9cd091741259734cf4b3f3fdebc6559`  
+		Last Modified: Wed, 09 Apr 2025 02:13:49 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:781caeaf6203d211c186c255be51fd948969a2611d3bf8996b553dea801c50e7
+$ docker pull jruby@sha256:3ad51147287436ced8c0ae5485e412fc656c65f309c0b47d20d5ae5340db9f33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4997851 bytes)**  
+-	Total Size: **5.0 MB (5000408 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62dade23a6c8250c8f8200422816d2085c609b876213a5f3e98af0408ef0cb93`
+-	Image ID: `sha256:6c2d683b595e865e2ed5604b8939bc5d45b749411d68e902102cfb80e2299b64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e005574b028abfd9dd1e9f14e07259ed811844a36f02dc2323148e75c411d5b`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 5.0 MB (4978958 bytes)  
+	-	`sha256:adc94aa8e27e924f1f216fcdf0f6365a2a0d19bc9a2a72280743c2912dc63c2f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 5.0 MB (4981516 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c382b22ffbc495d12349c514e240bb9b276402191e623d19ab93e4c19467a7ad`  
-		Last Modified: Fri, 31 Jan 2025 02:12:43 GMT  
-		Size: 18.9 KB (18893 bytes)  
+	-	`sha256:05d611f74211206475f8f6750937f2e3822f8a793713e3fb6097df2e7ce8c937`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 18.9 KB (18892 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15.0-jre17` - linux; arm64 variant v8
@@ -9802,7 +9802,7 @@ $ docker pull jruby@sha256:eadf93794b3bb2f7f8b487ff8ffff615604e649ad644585847561
 ## `jruby:9.3.15.0-jre21`
 
 ```console
-$ docker pull jruby@sha256:110bdc03333a7a148e8744f80309c71167d65b7cdefebf1af52fbf93c133394a
+$ docker pull jruby@sha256:661ede430ed3e6d463cb82932457be00f83b2c777a4ff923c131d0a1dacd4f25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9815,137 +9815,137 @@ $ docker pull jruby@sha256:110bdc03333a7a148e8744f80309c71167d65b7cdefebf1af52fb
 ### `jruby:9.3.15.0-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74fc12ea820aa8f161518a5ca20995f1b0c3a8967060b54a722a3ac74c219f26
+$ docker pull jruby@sha256:357d286d06a7faa34e955d537afb61489838cfae40751052e59d633f1bd47ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.4 MB (136372030 bytes)**  
+-	Total Size: **136.4 MB (136385638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bab105f43c4cd4f67ee7d411993a5574f2f16355cc6acb928799f5e8148b5b73`
+-	Image ID: `sha256:a9d92ca8c30c09646a90e16cb8aa68f86a57cdfa31966e9e3d9f0ab631fa19f6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-21.0.6+7
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2b8e353effdf25ad74bbde76a3242135d6d12fe14be177b7108868c3150b48`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 16.1 MB (16135187 bytes)  
+	-	`sha256:22d232ce229a6628d678ae8ff2aa9c943ad95eb21cff968172fa8f5d576a81ac`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 16.1 MB (16146029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379395aa081f5fd7e867ea654d17431258dab5353139b32bc5fa9c09edb8c19a`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 52.9 MB (52876031 bytes)  
+	-	`sha256:3edaf6f6c56c0c148e4d204e7ec02a653fc380cd7941ce53d30c8971245a5b52`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 52.9 MB (52876033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:298e1b6de86675cf06530c6496ec8374d300561fc2cdacf984c524349c6062ae`  
-		Last Modified: Tue, 04 Feb 2025 04:40:11 GMT  
-		Size: 158.0 B  
+	-	`sha256:f13ef442d1584eb54116771dd478f8bf87eb96391f6b2beea06bd0976c31ce7e`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea28f6f7f0aa0864f252fa90ca3f85687428d91dd6f829f2ba81dc8719e2e3be`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:880752f0cd86cc7cb2558f2a0175e9083f2a1d6e52a85b68d308eb86126e2f16`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 5.6 MB (5581894 bytes)  
+	-	`sha256:db842adaca5d196b9f0c99a82cb5ac08022cc6aa1fbac97d6eee286063d20b71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 5.6 MB (5588125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa2c851e5282392b0efbd46783725e904578fcc9a3bd506b1fdc44876741857b`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 31.2 MB (31155788 bytes)  
+	-	`sha256:bfb6b859f435de1672bb4a9d4504d149c91cd49e35dc3e0196f37b0bf03727e0`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 31.2 MB (31155849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f048e5ca169be642b72e65bc56aa6d893af6d6fa4328963c7c9bea49e8992c`  
-		Last Modified: Tue, 04 Feb 2025 05:25:34 GMT  
-		Size: 196.0 B  
+	-	`sha256:08e33e745c02dcfc4ea1195c88ada277229adac2f1a0cd336794d9b6084c3fb9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707d57592ec615ddd388cb1fe65c4c828ed4e3a4e64cdcd8544507b5f5b52798`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 1.1 MB (1084409 bytes)  
+	-	`sha256:6848078ee42490c2e369b76ecb416d673c395adb5202bd81fd1ce304e91be5f5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 1.1 MB (1084456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86a472277eadf91c7596c9211f700db650d2a46e91602f088bb5d03a45e1efac`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
+	-	`sha256:215df6d926aa6fd896b8df86d2d0c4258e6edb9820ee85f964e3b486e3816334`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:863b167ee5a496e3275f737a369382728fee00217c700d83178f5d92fc8bf1cc
+$ docker pull jruby@sha256:68bb8f2251dd6c205cbeb601a1abed593383a7377ba2990824a2cbd7771f84b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5064744 bytes)**  
+-	Total Size: **5.1 MB (5067323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:391039f17044d73453caeb1becb99d5ff17240c4951f1c784ddb6b3b2e38b161`
+-	Image ID: `sha256:17dee2d3d79f95ebdbf67967842bdcab14f3765ff7ac06fe397675c1cd0f9984`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db75e15fde2f2d3ddd2e16cf446b60627d89ad2a516ae2fda80d84a0c554ef27`  
-		Last Modified: Tue, 04 Feb 2025 05:25:35 GMT  
-		Size: 5.0 MB (5045856 bytes)  
+	-	`sha256:92bedb6909224f6e192b5d4e3c4f0b7f3dd50b4eed2c63663f1d2d6381deb4e3`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 5.0 MB (5048436 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b9f3e9b35fedfad30f1efd3d560a8f6301a3e06b919edb66acee3984e09f2da6`  
-		Last Modified: Tue, 04 Feb 2025 05:25:34 GMT  
-		Size: 18.9 KB (18888 bytes)  
+	-	`sha256:f1e0c9b09ea19d4b58698b364857dc0707f499612d13eae23dcc331f32eac03b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:54 GMT  
+		Size: 18.9 KB (18887 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.3.15.0-jre21` - linux; arm64 variant v8
@@ -10087,7 +10087,7 @@ $ docker pull jruby@sha256:48067c7461d47539457153041f6d283cfd74f821dedff8ba3a79e
 ## `jruby:9.3.15.0-jre8`
 
 ```console
-$ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bcd8bdc8118d1
+$ docker pull jruby@sha256:d1bd2f5b43141f485ac17cfc8578d5e5f56bed61464261ff5a7a10f8d678fc39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10100,136 +10100,136 @@ $ docker pull jruby@sha256:8a23873c58e14ccb758a1d13feea11de8fbe972a6e04cf600e1bc
 ### `jruby:9.3.15.0-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:52cc226ed91cb5569d7a68171c6df18d36aad8e444276aa71bcc1fc52ed772cd
+$ docker pull jruby@sha256:02096713291e0c4e5dc67297c742a69c7c8bf42af61799c24fe0c67effc4db80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.7 MB (128722530 bytes)**  
+-	Total Size: **128.7 MB (128721617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6450b6d95d4090c6e1f2540e65c2408456da8665e13d11729fe701cfb9562e`
+-	Image ID: `sha256:ef8a8f8fab8cbea0e96a98134da0b0dea3c21ae558eb64c849a710d0100579a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk8u442-b06
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='730fe33b1fc1f7da1e325d007b475d25a063850a167b548ea4bf689d4fcd867d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_x64_linux_hotspot_8u442b06.tar.gz';          ;;        arm64)          ESUM='730ed649ee973b7408cf7107e90576b67e8ed4b3aebb9e3e8a1056151f373152';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_aarch64_linux_hotspot_8u442b06.tar.gz';          ;;        armhf)          ESUM='055c47c5c1dfe8c9c135d87fed7a3745c17374618bc8d5acb9316d1b812c0e6d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_arm_linux_hotspot_8u442b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='812ebf110f1d1cfc26a135368850064f96689e7918aa6bbac1c8f210fad5752f';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u442-b06/OpenJDK8U-jre_ppc64le_linux_hotspot_8u442b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_VERSION=9.3.15.0
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV JRUBY_SHA256=0f8f8e4ed2fe97976d1c68350e967b937a860001fe3cbb42247a8612ab246628
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Wed, 29 Jan 2025 18:45:12 GMT
+# Tue, 11 Feb 2025 20:06:31 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f43f208e9ee1adf9ad1f8a93fef57adcefa439b0c85975cd914894d6a55a1c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 6.8 MB (6837925 bytes)  
+	-	`sha256:765977135c1049dc66ab7f9df94a291873075690ba62e68c147aeffa7285d58e`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 6.8 MB (6828549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba724ff0eb2eb5183cb706b096d6145e312724b0f351466ce4ab5c31338fe7`  
-		Last Modified: Fri, 31 Jan 2025 02:12:34 GMT  
-		Size: 31.2 MB (31155668 bytes)  
+	-	`sha256:34e60f91305102809f8fcbbadadce6d1693794986c8c87eb4e46fa93ddfce796`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 31.2 MB (31155746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591b073108a32e0b639c836f428f65b9693a154c3225d4a3b55b1d7672635ca2`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:f30b33b9be9a794ab4e85572ece6ac89661ee6c795aa14ad917180e3a163135c`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0941a96ff6f0c5a52f0f341b489324ac56168c2e09378392107f9e1f15a811`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:337e4d4baabdc4f83560a453950abed7e1cdae1884fe04de964d65c285ba1b35`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
 		Size: 1.1 MB (1084440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b3464778f075fcd8fb714b7cdeaaeefbc742821bdb1a213d6f3ca37b638e3c`  
-		Last Modified: Fri, 31 Jan 2025 02:12:32 GMT  
-		Size: 141.0 B  
+	-	`sha256:1ac4f0e930d4cb55bbff43e9bc280cb52e7b65d7ae50d69100c1b4f44acbe8a8`  
+		Last Modified: Wed, 09 Apr 2025 03:13:14 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.3.15.0-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:16d8e225bb53f318aeed694207d53296769b5c02ed519347f6d25cf1e9db153f
+$ docker pull jruby@sha256:3afc7f370b6f3c9c389eedd1980f4593bf93719bb2584e3ea2161a2eb4cfa9a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5031444 bytes)**  
+-	Total Size: **5.0 MB (5034002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:147d8a14b90de68d355129fb6ab80a901a2e8c4575378697036c9486570e2584`
+-	Image ID: `sha256:64435d36b5dff017f9a8f505123f28bb406b71957c0adb580990fdae3016b7d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a76a43360007b674f5797dbf9d244a2a5e0989e6b714a38be0d0338ba739885`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
-		Size: 5.0 MB (5010861 bytes)  
+	-	`sha256:900ef5eb35b567e6e3391063b4e9d9408c4532eff03d5f50ea5e99b990391ede`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
+		Size: 5.0 MB (5013419 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e50196881ed6426d500b7197be2514af0043d9e5301a55ec34e1fdc7801f7e9`  
-		Last Modified: Fri, 31 Jan 2025 02:12:31 GMT  
+	-	`sha256:0687c65ea2cf920e8a1d5a0a3dcc3140c517956d8d985d50eb4e3e9949cee513`  
+		Last Modified: Wed, 09 Apr 2025 03:13:13 GMT  
 		Size: 20.6 KB (20583 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10372,7 +10372,7 @@ $ docker pull jruby@sha256:7be918f2636a39ede332d8e82175a9ef882a6173e69cddfbc6c5a
 ## `jruby:9.4`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10385,28 +10385,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -10453,69 +10453,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4` - linux; arm64 variant v8
@@ -10657,7 +10657,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4-jdk`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10670,28 +10670,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9.4-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -10738,69 +10738,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk` - linux; arm64 variant v8
@@ -10942,7 +10942,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.4-jdk11`
 
 ```console
-$ docker pull jruby@sha256:1ed0d88ad18f02e24392f13000a629c40f76dd939e0fa26048bdbcd5d140de73
+$ docker pull jruby@sha256:6b23e5c88dcd9f5be24c7ba2f1e0efab0469cd532ee349f3e9be9c7d86961817
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10955,28 +10955,28 @@ $ docker pull jruby@sha256:1ed0d88ad18f02e24392f13000a629c40f76dd939e0fa26048bdb
 ### `jruby:9.4-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:f7ad466463d083c4efda4773a9ad8a103c6b200119916d89aaa1d1b7dab4a0e2
+$ docker pull jruby@sha256:7261ceabb68da1ca5e9c4fffa2d4ebc0f4d00deb6779b4f98d3ef28c8d7035f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.5 MB (239465755 bytes)**  
+-	Total Size: **233.9 MB (233868899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:079edd8e586dc9df15b059016d746e0eb62b433baf6f5d6bb0ccd03d99fe3157`
+-	Image ID: `sha256:f86c999a7d62c3706f4b553f4929252c1880c0f79ceb921bd42e5ae323f91f94`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11025,69 +11025,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57720219966e918f1a532346498cfbfb342979a0f5ef1c523ba9e60e4ef5ab63`  
-		Last Modified: Fri, 31 Jan 2025 01:30:17 GMT  
-		Size: 20.3 MB (20251237 bytes)  
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec2b4dbdfccae2f0821bf0672520a085237394280af05d3fa21c12397b754d0`  
-		Last Modified: Fri, 31 Jan 2025 01:30:19 GMT  
-		Size: 145.6 MB (145609067 bytes)  
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ae877ab777ef84fc2dae1668033dcb1343246ee291a5ff14fba9cf841202dff`  
-		Last Modified: Fri, 31 Jan 2025 01:30:15 GMT  
-		Size: 160.0 B  
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cd22893e207fce6e98cc2ccac04dbda65bd286442193b26129b186555db2ec7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 12.4 MB (12439242 bytes)  
+	-	`sha256:11bbfca76485e2a17899295d102f4d11dbe799eb9a79a13042bf837d33389aaa`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 6.8 MB (6828570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44b7afb82cbfd0f5660fc174180de41ddb7f9af8a3f3fdd4c53117893257a907`  
-		Last Modified: Tue, 11 Feb 2025 22:27:46 GMT  
-		Size: 32.4 MB (32371866 bytes)  
+	-	`sha256:5f916ef778d5245620605120d2f66962cf734b71ce3855ae9dd218e272ecb52f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 32.4 MB (32371957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f0a966b28592479b21897cb18cd5272a713d9b8848681777c1d4d8e1a13fe24`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 196.0 B  
+	-	`sha256:cb79321411016d6a3b29db8d4b4606a2309525850f8eb7bdc9b6af400cb9bf3b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d249331ca996a9266c5c76d301d5b4be05ebfa52908a1c3d59b18fd973244036`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 1.3 MB (1280501 bytes)  
+	-	`sha256:58b671702be9f351f485875d3e9aadbf8bcb704a3ad4c69492c5059649c264fb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 1.3 MB (1285955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377ed85e44e7cba5972392dfe4fde575c0be9c323986820f0f15487df2c8fdaf`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 143.0 B  
+	-	`sha256:847f542a75fecf0a9bbf7c7f7f002f094538113eee150a4984eb2ba2ec1f5e3d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:b5b6e6c1e3471531d4afe5faea1e1f25679eb807c80af2cff395bbf809f66123
+$ docker pull jruby@sha256:76a39a6b7fe8ed429f0581a609d35eb0d34eac1482e33d165d595678b50a3ccc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5166825 bytes)**  
+-	Total Size: **5.2 MB (5169182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5305b2145a94373be8fff09fac96bb175232c2726231f784301ab56cecf15828`
+-	Image ID: `sha256:1ad0ed2b3b34c2a6aa7e188048fd8a543c96556b0ac3e8d39537e669aee81601`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4adf34ae7d088222806365910d475a1d366bd64d1e1bbedff239c42bff7ab751`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 5.1 MB (5148015 bytes)  
+	-	`sha256:baef19caf4d7094f4ef7d5743818880c15f7851dd8e989b5d63b4341219af703`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 5.2 MB (5150375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e0c0aa2e8f298dbae82d36fd0723cfce3cc8200f0c3437fbda3eef409a9fcdd`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 18.8 KB (18810 bytes)  
+	-	`sha256:ad36262c8cdb139e892efb9aab8285396295da048cb0784011a2d62306e8b2c9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 18.8 KB (18807 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk11` - linux; arm64 variant v8
@@ -11231,7 +11231,7 @@ $ docker pull jruby@sha256:6ada3c4c289e766db9b57c324044c246f54dfdd65e0f1644a6b6f
 ## `jruby:9.4-jdk17`
 
 ```console
-$ docker pull jruby@sha256:775b50bec03164eeb806d30db53d7f18f0ebe35df8fa208f657aa588a36800e3
+$ docker pull jruby@sha256:1b1c108018d4dab0a8e8fbe56079a4b5608cf703b8016e4ba6a01e6c3cb6be6b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11244,28 +11244,28 @@ $ docker pull jruby@sha256:775b50bec03164eeb806d30db53d7f18f0ebe35df8fa208f657aa
 ### `jruby:9.4-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ed33d41762cd858d2ecdc65d769dde6c1d1588e0213070baab423a64b0b93a7d
+$ docker pull jruby@sha256:4145b0e74f13719c518019b9e40c9231198cb574937d85b8128e1b125b3542c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242193918 bytes)**  
+-	Total Size: **236.6 MB (236594608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dcef455f11305e388d06366efe9313d49f720b04be76b6bcc102f30eadc80a7`
+-	Image ID: `sha256:cf265075e87b6780cddef1e15a0e123f11201d5acdf7bec138f52c4e0a11f0d5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11314,69 +11314,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88aed8b4a7e29aae2ef8d1eada343155613c68505de0b35a06bd4927d9ea65d5`  
-		Last Modified: Fri, 31 Jan 2025 01:30:13 GMT  
-		Size: 24.0 MB (24009455 bytes)  
+	-	`sha256:10d22f6ae181c9c52790beddb6d90876eb709a06f60ee327c3542d060b11b396`  
+		Last Modified: Wed, 09 Apr 2025 01:15:55 GMT  
+		Size: 24.0 MB (24015362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba02fbf9c0beb1cd876f134d2dbf73f244a7e109db29c2168249004aaea6c411`  
-		Last Modified: Fri, 31 Jan 2025 01:30:16 GMT  
-		Size: 144.6 MB (144576684 bytes)  
+	-	`sha256:3659942add492828d19e9ea6b7691dd444200f35e6659c8265764fb65f01b9f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:59 GMT  
+		Size: 144.6 MB (144576692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:020b80f54da19b4d38afaf9821813776315c4080223d8f9166d4d46eb6c6cb27`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
+	-	`sha256:60d19df4643f587ef926e1e9b325b9480bff6ca93b67c7ac870ce79434662c1e`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1269c4ddbbd753503ca927375bac1e9450e557f656e4c25a058bb663b0b27215`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:d6bd69e2358a0b1a79b33adc20b6238ba46fa51a8ba3072297dc096106200e31`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d2b2a06115dffb37858face44a5c20f142fe51858a266a91097424704dc3f07`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 12.4 MB (12441603 bytes)  
+	-	`sha256:c7a4592aa563b827a77d1f395311e2ddf62a8c18de6dfda19e5d5198efcd7c02`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 6.8 MB (6831077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df1d7cbe7d6ef024e45edc9ca8938007548ca2798a8fdf65cd6f618e7ffac069`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 32.4 MB (32371867 bytes)  
+	-	`sha256:fb112eb27db3f2054775904c1b3da700e6632c03e9aae776c51c9be157b61367`  
+		Last Modified: Wed, 09 Apr 2025 02:47:05 GMT  
+		Size: 32.4 MB (32372344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34755feeb80ebf3b2d75f044a29e06d9c47f01efbf9a2b7cb66c7673e1cf8aa`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 198.0 B  
+	-	`sha256:4894303d73c93c240940d758cef901c280b63613944f6c6d185e13c7fd00b6fa`  
+		Last Modified: Wed, 09 Apr 2025 02:47:03 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41112945c5388c599a03a765f12916cd60df6b8e10cd4ec664a7712709ec39d9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 1.3 MB (1280464 bytes)  
+	-	`sha256:dc00a092927c5cea744c0f61a5675f3a656a73a507196c209f6de20f3fe7087d`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 1.3 MB (1285956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2667d433ae14c3d49df300a381b96630f0b2be0cdc47886ff993c026b29c5ed`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 143.0 B  
+	-	`sha256:5922496c061a9ed8420ffa8b59b2d14fd173083abc303260fd8b6edeadf3feb0`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:afc6424acecbd20b8d844209564f2235ac0369ca4afcf8dc8a9406fe9a097d1b
+$ docker pull jruby@sha256:f9858f90559cfa40f3119c4a5971a9d1d3282b30d74dd9aa117502782c4c831c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5302678 bytes)**  
+-	Total Size: **5.3 MB (5305045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb4d4c5560a4c7eabf4d141fbdf3648c7c885ce33b567e2121ef5f39f4442bec`
+-	Image ID: `sha256:a7fdd41085b45722ba06db484d36b7203da9a23ca6fc67a9a5908ef8191c30f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85898722ec9ea0dc012209b01d4bb0e4dcfc6513e94867053f9429a6b37e7c01`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 5.3 MB (5283774 bytes)  
+	-	`sha256:b654bad22ae5f70cb666db07e50edc2b4ce67a449ab28a0ffb48ee3c71d7dbce`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 5.3 MB (5286146 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ed215ed33c094767ee9826a589d556d13c728401323bc6ad0259081868b2661f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 18.9 KB (18904 bytes)  
+	-	`sha256:d9cf558f9acbbe80daadaa33ed4badd68af9c837186656ee4f7d7215c2506b19`  
+		Last Modified: Wed, 09 Apr 2025 02:47:03 GMT  
+		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk17` - linux; arm64 variant v8
@@ -11520,7 +11520,7 @@ $ docker pull jruby@sha256:0c20d22953119392421ffb14d40d7ea4160ba14727dae5f795a0b
 ## `jruby:9.4-jdk21`
 
 ```console
-$ docker pull jruby@sha256:5641622b488d298362b96fdaea0f328248ce55962e68e224118be11ddb48d16e
+$ docker pull jruby@sha256:6e1a2c38f5586dd1b1a057d52726bfd13fcb7b2bf1d67b583ae1f3ba4a831ee9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11533,28 +11533,28 @@ $ docker pull jruby@sha256:5641622b488d298362b96fdaea0f328248ce55962e68e224118be
 ### `jruby:9.4-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:963b3a5b86ba7309b04102e4fd15e1f0a599f27c5e5726129d5e9e7ffafd71ba
+$ docker pull jruby@sha256:c0c704667fba9c8e9fcca571123cac5a9009756db43a09421d278ef680604194
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.7 MB (252700876 bytes)**  
+-	Total Size: **247.1 MB (247068649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:300dc763542ca51c9a5e5927d12161935c9272d2c28ea98a6faecfa04fcd9b6b`
+-	Image ID: `sha256:6411103c7c65f76d3d1e4bb56492c8649f10491190c95b1588dca5db770976a6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11603,69 +11603,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f9ce665314df6489df49d894b81a8b7d89dcbb3916abb4b8f2d9f04f7f30fba`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 20.7 MB (20684621 bytes)  
+	-	`sha256:69ac5503654a9a87aad1bf9db9d8883049288444743ac7d05be1ab56f1d17713`  
+		Last Modified: Wed, 09 Apr 2025 01:16:32 GMT  
+		Size: 20.7 MB (20693548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c63f325f81a44cbc524343f5cdcec789fb188c2333543d3238cdac7cfeafb7`  
-		Last Modified: Tue, 04 Feb 2025 04:40:18 GMT  
-		Size: 157.6 MB (157591234 bytes)  
+	-	`sha256:e6600e0d3831b05b9fb66aebbe3123d683fb18b898986c49e05faf1c667a99a2`  
+		Last Modified: Wed, 09 Apr 2025 01:16:36 GMT  
+		Size: 157.6 MB (157591202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:864a83d54ff514b209c491364b5476319cda130d7de9e481c432148668d4f0ab`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 159.0 B  
+	-	`sha256:7438c1b0bdfc7c1b5a73ccf2d526da05dc7da2275231c346ea0efea5a8d5af45`  
+		Last Modified: Wed, 09 Apr 2025 01:16:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8df0decf9d7f3577a33fb03b83ae0fc1cb904ea030014ac9bc7a5954ccbfec`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b497a63ffe9d62c73e9db0126be5cb89fa9d41a1da6b1f8899b4ac9316eb3b81`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 11.2 MB (11233921 bytes)  
+	-	`sha256:722ab5193b2318e965e0e72f1f1dc4031966a25566fccecbecc0fd69aff81b66`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 5.6 MB (5590282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f41ef7de2d71d693e4b917f94d84f1014bc02d175a2bc1f0450ebab030c328b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 32.4 MB (32371873 bytes)  
+	-	`sha256:cf35afc9a1c9f0a904c70c91e0ba7f64de287073856d68881ea3646fcbfc77af`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 32.4 MB (32372482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34755feeb80ebf3b2d75f044a29e06d9c47f01efbf9a2b7cb66c7673e1cf8aa`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
+	-	`sha256:0579f81ecb9abd47e50fcb318b4c0d83a8c6cc0051b1126842a12d4e0d74f173`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73133c58636a76bfa46d48ddf0f257079e8c88b2b86df5900dfe8cdfc6f60f9b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 1.3 MB (1280504 bytes)  
+	-	`sha256:c3be6b4984755696f47a3c6dee0cb408014475fa5929e22d26a5e237172a1386`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91858af938415f81d57788559ec5d352f718a74f4a9824864865e85dcbb9c97f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 143.0 B  
+	-	`sha256:75d628d819bea97a2fcbd5cd7bc65d2e06da0527a455bcd191b8aafabf8b43dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:45a49dad84b18cf4296f8fc79a2943b7a3c2c6d22894f922b1b79bb421b6e8ca
+$ docker pull jruby@sha256:ab102ef1266c234d7efd38c4cfb6fb3c2b9db16ef43249694e1765acaf3e74ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5371071 bytes)**  
+-	Total Size: **5.4 MB (5373351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94f4bf2aff04d4d8214f67a747ce6b6998678071e215666d073e6adbb4989992`
+-	Image ID: `sha256:75ffdee05f8510b014fe31ea87ba84123976317f4d53c0b5233d525edfcc2190`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4389b3e05bb0445e03e1f5d10e06c31e04fd9f546ed4b2a217c77581d81daaec`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 5.4 MB (5352172 bytes)  
+	-	`sha256:64c247c6329e4f0e1c371c879372c70d5350d348190059e2d24dcaabdbe9275c`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 5.4 MB (5354458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c77243d379e6ca7a1e80ba760c3d743839b564302c5c4736f1ced71560334e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 18.9 KB (18899 bytes)  
+	-	`sha256:84a3ed08bc614466a77fc1e5c7e39dc8772b4d5aa03fbee375cac201d37d4c33`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 18.9 KB (18893 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk21` - linux; arm64 variant v8
@@ -11809,7 +11809,7 @@ $ docker pull jruby@sha256:00057779ec69569b221894b1f3808049b176b9e482eeafa20787e
 ## `jruby:9.4-jdk8`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11822,28 +11822,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9.4-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11890,69 +11890,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk8` - linux; arm64 variant v8
@@ -12094,7 +12094,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.4-jre`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12107,28 +12107,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -12175,69 +12175,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre` - linux; arm64 variant v8
@@ -12379,7 +12379,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4-jre11`
 
 ```console
-$ docker pull jruby@sha256:2dbb236b00a1f1b4f6f91171f986d405ada391391b3c75ee25ae67866396b391
+$ docker pull jruby@sha256:ae821c7f339f3cb8dcd6ef216a1afce926963d1adac0994167499eb06c32290b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12392,28 +12392,28 @@ $ docker pull jruby@sha256:2dbb236b00a1f1b4f6f91171f986d405ada391391b3c75ee25ae6
 ### `jruby:9.4-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:bad45cb779079dd22d8fde8932b0ad9e26ebb8f3974d13885eb6070124d4ffbb
+$ docker pull jruby@sha256:3d0feddafd8503d7ff54b2f75b6d5c170473b802875c003af4436ba286357114
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.1 MB (141073219 bytes)**  
+-	Total Size: **135.5 MB (135477314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94121bbf1f28228258502640a19766c22fdc567986f832019baa2713b16303e3`
+-	Image ID: `sha256:178ac8c66fbdd1266393900f2ee78ef6cd348cb8df8be6bc3b79bff74e381694`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -12460,69 +12460,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3058f73b8f4937ab8fb3b4c159a4ec63b748de89e82bb46cb05905502be6f5c3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 20.3 MB (20251256 bytes)  
+	-	`sha256:fe913685dc07308206b8b9368edd760d45c0ed0c1ce0a008219f9ae4565668b6`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 20.3 MB (20260214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f937e0a2086c23a09d1f20c16ad505f7c97bcf945194fbbab952915ef7d69f7a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 47.2 MB (47216682 bytes)  
+	-	`sha256:0298071afd7ec797d4c38d0c29e19fe832ecf95e87bf51f6df5b5f5c220fb8a3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 47.2 MB (47217150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f3083818c14451f2bc51269701808b2b3c9c7c12b5da3128ac588e4a492151d`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 157.0 B  
+	-	`sha256:261c34eb718b577c4eb4d30527baae2184b689e59aaba4f624d32889c2a480fe`  
+		Last Modified: Wed, 09 Apr 2025 01:15:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
+	-	`sha256:96d15027f2149d0b63aec987947cbbfaa63e34e19b3922082fe2180bc11e2847`  
+		Last Modified: Wed, 09 Apr 2025 01:15:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e0252c4e561c227f4902be65b9074d5a8505ece133125c0b420a08ba4bccf28`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 12.4 MB (12439116 bytes)  
+	-	`sha256:31934b899f687ecbc80021f1d6078805f6b9d9375417470aeda7da4325434656`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 6.8 MB (6828545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a47e466332e2b9bcbe3a4b621c0e085bf1236dbf7898ef253582684b27584aca`  
-		Last Modified: Tue, 11 Feb 2025 22:27:39 GMT  
-		Size: 32.4 MB (32371826 bytes)  
+	-	`sha256:27ada85cc80f386bedfa3bc0712180f4aeb100663ae46210c8a11e44c6662467`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 32.4 MB (32372261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b3f25abc9f494ed76be843fa8f178bc72e86262d3fc07966fbb4d9dbaaa7b5b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 198.0 B  
+	-	`sha256:0e3b09a06f2a7ae1c103c2159a1f0d83139d05cae23060aa910835af2e061d75`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76927a781fd49be36aace90479c9c38422d90ece41eff9797eff8d356b979a26`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 1.3 MB (1280498 bytes)  
+	-	`sha256:beda07ff0ae1911ffb7bfc94d4b71396c5ee64d5df75874694112de989ad2116`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 1.3 MB (1285969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47aac14d959787460593052df14b0952199759fb55314431f98663e82de3d0ee`  
-		Last Modified: Tue, 11 Feb 2025 22:27:39 GMT  
-		Size: 143.0 B  
+	-	`sha256:04a2a124bfa27fe91b5fdf4b3d520bf6c4366ddf78f326ef1966d5f24397e1dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7934528e3ada0a4c99f0a2657d690b174fae1dbd30dac5be124dc840cda73853
+$ docker pull jruby@sha256:5f4fb004c81902610ff313a6bab6cae691c168d647700805eb268da416898fe0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5075647 bytes)**  
+-	Total Size: **5.1 MB (5078002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9993abcf2025df5debc36cff6ac421ee3bd658ddffeabe9c0f11ab7a334bd46`
+-	Image ID: `sha256:7b61fe474fe3056ddaa4f56ec51e798beeb91ec3fc170ab189a613e94b9227c2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60edf0ed11d5614a54c54f610373f6395a940206fbe13ae44236b4224c7f3927`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 5.1 MB (5056841 bytes)  
+	-	`sha256:96118ea7d1508e563da7c7f5b460291f0bd8175cd0c3e79d39b095465f3f6717`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 5.1 MB (5059201 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb5bd8d047b720324dab458e4c9ed4bb4e9370ca82ee0c380c535583aa424ff0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 18.8 KB (18806 bytes)  
+	-	`sha256:bd785450c12ee88b482fe51b88d82f3286dce7d0695e36582c9e0728cf7991fd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre11` - linux; arm64 variant v8
@@ -12664,7 +12664,7 @@ $ docker pull jruby@sha256:92fd9da10d1e73fb1645b4bcf01a09f54c026099c25c0a0142b9d
 ## `jruby:9.4-jre17`
 
 ```console
-$ docker pull jruby@sha256:a0075422befc60f9d803277df49f7ad935b2e42286de8aadd70acba8b8071a50
+$ docker pull jruby@sha256:85f42599ceee43c23425770dabc8e32b46e9748342c74e324ca80381e4edb340
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12677,28 +12677,28 @@ $ docker pull jruby@sha256:a0075422befc60f9d803277df49f7ad935b2e42286de8aadd70ac
 ### `jruby:9.4-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:2af5691a753ba3766df6658e01ad11edbf327870f0cfedfdadc1791343bf3827
+$ docker pull jruby@sha256:e4b26b56119808ff00f2f47a95f4c78c3734925f45ac41965b51242e9d71f0db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.8 MB (140810580 bytes)**  
+-	Total Size: **135.2 MB (135214078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:723aef1ef24c7c8c279d7b7c30b1bf1c32abb2519766535cc06b9b9648fb4eb7`
+-	Image ID: `sha256:8750b45650bfe9e57992c5d5f00ca2345561fc14f54b9e8da0c424640f4ae75a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -12745,69 +12745,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c476128eb22bdf6a99b65fa864db0f1ebb019c91a9a4cdc226f6183ad8e3c43`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
-		Size: 20.3 MB (20251225 bytes)  
+	-	`sha256:98e66cedfb5247f86094604841f8e7ddb0b2d05ca0ae60b5be1e8ba41b12ace4`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 20.3 MB (20260107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e846d8e9647d6aab05b8f5a02a6f1fe245fa2b67118f2695141bb2c49300b542`  
-		Last Modified: Fri, 31 Jan 2025 01:31:02 GMT  
-		Size: 47.0 MB (46953971 bytes)  
+	-	`sha256:cb0112479820d174794e74000f9d01cfedd16517deca0a323a1be747efbdfe39`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 47.0 MB (46953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:843c17e581f46279bbc0373ddad8b59e6fb83390f103c2b40004a94eed5e1490`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
+	-	`sha256:4bdfc5969d5b0ac2a56a7db5925216c13cda6f1559687bab2f9c94cf31ac2cd1`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15e0c869e1f807bce22ac6fcdba0ec696d6ea42fdeb1836b9553e561744e4b9d`  
-		Last Modified: Fri, 31 Jan 2025 01:30:58 GMT  
+	-	`sha256:29be0f57f40590223e0b03c89d63aa09fca6560b710b2e6d2d4a8408e9ea31f0`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e59efbef1179338d2c26c4cb1505b5697b09953c26e84ba56ba424ac8f36875`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12439183 bytes)  
+	-	`sha256:a329735b98baf6bcd833e5ed07f10bb344d1b3fa40fdda35f11f6cbfafb39300`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05c5100520b452ab936ab196b5ae8d578ab107384b913a9e6c0e7c21960acf13`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371870 bytes)  
+	-	`sha256:a98a53267d5144ea7bc16d71b8f78d6f4323089de75beee505897f871804ae84`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 32.4 MB (32372315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a11946678464d2c91db2f7fbb1f9eef8bf94f4ffa92900944bccb1a5ebe3d3a`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 198.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec9f6f2888357ff0aa6c81d9f43bdba2a6478e419c8ff3c8178bf5955123f5f9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280487 bytes)  
+	-	`sha256:1a7ba5da9a4401d9d9532da84eb2f51086cdf43ba1fd5aab90b2fd605aca93e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 1.3 MB (1285976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:095ea83574145079f198e356b7caf4ace806754e028a6cbe46a7bef08a3c0404`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 145.0 B  
+	-	`sha256:c2ca2ec818dcf33c2e0db27e87f0417700770ac29f84a4b77d354edf08eeefa5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:3984a4dc39cd9fc9b0426166926c1f4f6853e390652e7540e3434063f2b0ed21
+$ docker pull jruby@sha256:68f6043dc1daab4bb8d9f77d087a24a45716e5501b7289170fc90e25d84e082d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5062624 bytes)**  
+-	Total Size: **5.1 MB (5064980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90a4cb9c8caad7a7a284dc165b25ec79911985f1f4119069df1b5716af5b6c1f`
+-	Image ID: `sha256:9fc111d45dccfc26a2b4490884fc6274b16f0fef57e955b99283e6943eee2086`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8cdb7ca848f158292e3ce7feb7e0dbec08e91c2b5e4fd8a3adb05cdc5e25471c`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.0 MB (5043727 bytes)  
+	-	`sha256:5d04f544913cbdb5e6c2012233207ddea37bc3e281ff3aa6fad8e91deb76eb64`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 5.0 MB (5046087 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:312dc2cf3d90c92edd5c5a0e58efbe5928052dd25520d7fd3f73a956cd4a314f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 18.9 KB (18897 bytes)  
+	-	`sha256:4eec1131a741d770d02e9ee9f7c173984564df7bb30f3cbcbd800d18cdc1ff05`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 18.9 KB (18893 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre17` - linux; arm64 variant v8
@@ -12949,7 +12949,7 @@ $ docker pull jruby@sha256:63d16b9e92051bfad62e471ec0451c5b7a1e867bbab5e42a59c20
 ## `jruby:9.4-jre21`
 
 ```console
-$ docker pull jruby@sha256:4fdac0f64e0f098215756ca65b69509b86b8dcc6fa2f604b7585af6f8de8bd8d
+$ docker pull jruby@sha256:de12ecc0fa7dc6ebead82e6b55d5f627fca316e2218bbf73557e754813bdca2f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12962,28 +12962,28 @@ $ docker pull jruby@sha256:4fdac0f64e0f098215756ca65b69509b86b8dcc6fa2f604b7585a
 ### `jruby:9.4-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:c2bbaf3d4ab649e312dd302763a2fe2109f242e1e4598ac029c4998328e55ea1
+$ docker pull jruby@sha256:22d149ec3934f3e77949689f1bb2992219ef09fb4e5b8c31a99f12ab79f4c5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.4 MB (143433549 bytes)**  
+-	Total Size: **137.8 MB (137803687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11a68a1de22487e4244080f86f5a7259e7bd57125e3fc60cef8c2aa6906526a3`
+-	Image ID: `sha256:57e51c026e13926421f48a5a99be142e9f13563ac558041c461a93e4c1f108e8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13030,69 +13030,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2b8e353effdf25ad74bbde76a3242135d6d12fe14be177b7108868c3150b48`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 16.1 MB (16135187 bytes)  
+	-	`sha256:22d232ce229a6628d678ae8ff2aa9c943ad95eb21cff968172fa8f5d576a81ac`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 16.1 MB (16146029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379395aa081f5fd7e867ea654d17431258dab5353139b32bc5fa9c09edb8c19a`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 52.9 MB (52876031 bytes)  
+	-	`sha256:3edaf6f6c56c0c148e4d204e7ec02a653fc380cd7941ce53d30c8971245a5b52`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 52.9 MB (52876033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:298e1b6de86675cf06530c6496ec8374d300561fc2cdacf984c524349c6062ae`  
-		Last Modified: Tue, 04 Feb 2025 04:40:11 GMT  
-		Size: 158.0 B  
+	-	`sha256:f13ef442d1584eb54116771dd478f8bf87eb96391f6b2beea06bd0976c31ce7e`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea28f6f7f0aa0864f252fa90ca3f85687428d91dd6f829f2ba81dc8719e2e3be`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb08ada5f54c21ab6c70d7c8d10ba0757ab8566559c503616ebfb6a64741dcb7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 11.2 MB (11231192 bytes)  
+	-	`sha256:b262f22ba54c808a4a7e619c90f8d0c7fe2dc2a340194cde74526903f1a07817`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 5.6 MB (5588043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b16c0bf027ec892cd079d0eca2b761feaf6be42f5405b88dfcbf1f3947e04f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 32.4 MB (32371948 bytes)  
+	-	`sha256:47ed84ce15a1acbfd857fa721574f06b8009488f57022925150a2122c24a55e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 32.4 MB (32372452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af636c7cf5447a2fa14487c6bb12950c16f20df8716fbda15ebb2c75b102355`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 200.0 B  
+	-	`sha256:0579f81ecb9abd47e50fcb318b4c0d83a8c6cc0051b1126842a12d4e0d74f173`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c60d5ade2287dab138bd44ec778e5aa6b0a6b19b1ebd621f6d31ac02f9345176`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 1.3 MB (1280467 bytes)  
+	-	`sha256:9a590e9d1a1e5685d55534230916fee02fce48092fc6f51f4441f871991e0bc9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 1.3 MB (1285982 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdf7a1b70ae7ed07cd9ca1b208858d40ca8c2b743a3d7e16590e524cc780bc14`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 142.0 B  
+	-	`sha256:75d628d819bea97a2fcbd5cd7bc65d2e06da0527a455bcd191b8aafabf8b43dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a43d4997549950f130fb0548a8c79c80f11875d85b4ce44d6030568a10154acc
+$ docker pull jruby@sha256:dbef547c731d43bfde4b1a8df36ca32a81f7a928034f5aee2caa399e89e80d5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5129613 bytes)**  
+-	Total Size: **5.1 MB (5131895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9772d6c978d80cc175a188d9700034fd3ec8dfeba0a4ad9f4fab17ae24160e3`
+-	Image ID: `sha256:495a069df0df819f76ac10a807c9786a7916329c531d538d067e4e7f845f2355`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3695f4e55d58ca2583966f39292eebfa548a3c53d41f194283b12a728f73c6c5`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 5.1 MB (5110721 bytes)  
+	-	`sha256:7792db5aa71eeb9cd4df36ef08a91e9479e09dac5de47ec258da87dd03c248ea`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 5.1 MB (5113007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2f1d01b74b55129a1e15d810b8d674dfdde961e376646f811f7756f8174831e1`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 18.9 KB (18892 bytes)  
+	-	`sha256:351ef1752c1b02484de24382fcbe7cf8c329293d1008b2d69409fc89bd3f4773`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 18.9 KB (18888 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre21` - linux; arm64 variant v8
@@ -13234,7 +13234,7 @@ $ docker pull jruby@sha256:f4d617d0f9e49a329e6a0c0cee38a3bc8f423f852751e4a2e91d8
 ## `jruby:9.4-jre8`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13247,28 +13247,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13315,69 +13315,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre8` - linux; arm64 variant v8
@@ -13519,7 +13519,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4.12`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13532,28 +13532,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4.12` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13600,69 +13600,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12` - linux; arm64 variant v8
@@ -13804,7 +13804,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4.12-jdk`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13817,28 +13817,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9.4.12-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13885,69 +13885,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jdk` - linux; arm64 variant v8
@@ -14089,7 +14089,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.4.12-jdk11`
 
 ```console
-$ docker pull jruby@sha256:1ed0d88ad18f02e24392f13000a629c40f76dd939e0fa26048bdbcd5d140de73
+$ docker pull jruby@sha256:6b23e5c88dcd9f5be24c7ba2f1e0efab0469cd532ee349f3e9be9c7d86961817
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14102,28 +14102,28 @@ $ docker pull jruby@sha256:1ed0d88ad18f02e24392f13000a629c40f76dd939e0fa26048bdb
 ### `jruby:9.4.12-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:f7ad466463d083c4efda4773a9ad8a103c6b200119916d89aaa1d1b7dab4a0e2
+$ docker pull jruby@sha256:7261ceabb68da1ca5e9c4fffa2d4ebc0f4d00deb6779b4f98d3ef28c8d7035f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.5 MB (239465755 bytes)**  
+-	Total Size: **233.9 MB (233868899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:079edd8e586dc9df15b059016d746e0eb62b433baf6f5d6bb0ccd03d99fe3157`
+-	Image ID: `sha256:f86c999a7d62c3706f4b553f4929252c1880c0f79ceb921bd42e5ae323f91f94`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14172,69 +14172,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57720219966e918f1a532346498cfbfb342979a0f5ef1c523ba9e60e4ef5ab63`  
-		Last Modified: Fri, 31 Jan 2025 01:30:17 GMT  
-		Size: 20.3 MB (20251237 bytes)  
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec2b4dbdfccae2f0821bf0672520a085237394280af05d3fa21c12397b754d0`  
-		Last Modified: Fri, 31 Jan 2025 01:30:19 GMT  
-		Size: 145.6 MB (145609067 bytes)  
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ae877ab777ef84fc2dae1668033dcb1343246ee291a5ff14fba9cf841202dff`  
-		Last Modified: Fri, 31 Jan 2025 01:30:15 GMT  
-		Size: 160.0 B  
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cd22893e207fce6e98cc2ccac04dbda65bd286442193b26129b186555db2ec7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 12.4 MB (12439242 bytes)  
+	-	`sha256:11bbfca76485e2a17899295d102f4d11dbe799eb9a79a13042bf837d33389aaa`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 6.8 MB (6828570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44b7afb82cbfd0f5660fc174180de41ddb7f9af8a3f3fdd4c53117893257a907`  
-		Last Modified: Tue, 11 Feb 2025 22:27:46 GMT  
-		Size: 32.4 MB (32371866 bytes)  
+	-	`sha256:5f916ef778d5245620605120d2f66962cf734b71ce3855ae9dd218e272ecb52f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 32.4 MB (32371957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f0a966b28592479b21897cb18cd5272a713d9b8848681777c1d4d8e1a13fe24`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 196.0 B  
+	-	`sha256:cb79321411016d6a3b29db8d4b4606a2309525850f8eb7bdc9b6af400cb9bf3b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d249331ca996a9266c5c76d301d5b4be05ebfa52908a1c3d59b18fd973244036`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 1.3 MB (1280501 bytes)  
+	-	`sha256:58b671702be9f351f485875d3e9aadbf8bcb704a3ad4c69492c5059649c264fb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 1.3 MB (1285955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377ed85e44e7cba5972392dfe4fde575c0be9c323986820f0f15487df2c8fdaf`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 143.0 B  
+	-	`sha256:847f542a75fecf0a9bbf7c7f7f002f094538113eee150a4984eb2ba2ec1f5e3d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:b5b6e6c1e3471531d4afe5faea1e1f25679eb807c80af2cff395bbf809f66123
+$ docker pull jruby@sha256:76a39a6b7fe8ed429f0581a609d35eb0d34eac1482e33d165d595678b50a3ccc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5166825 bytes)**  
+-	Total Size: **5.2 MB (5169182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5305b2145a94373be8fff09fac96bb175232c2726231f784301ab56cecf15828`
+-	Image ID: `sha256:1ad0ed2b3b34c2a6aa7e188048fd8a543c96556b0ac3e8d39537e669aee81601`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4adf34ae7d088222806365910d475a1d366bd64d1e1bbedff239c42bff7ab751`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 5.1 MB (5148015 bytes)  
+	-	`sha256:baef19caf4d7094f4ef7d5743818880c15f7851dd8e989b5d63b4341219af703`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 5.2 MB (5150375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e0c0aa2e8f298dbae82d36fd0723cfce3cc8200f0c3437fbda3eef409a9fcdd`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 18.8 KB (18810 bytes)  
+	-	`sha256:ad36262c8cdb139e892efb9aab8285396295da048cb0784011a2d62306e8b2c9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 18.8 KB (18807 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jdk11` - linux; arm64 variant v8
@@ -14378,7 +14378,7 @@ $ docker pull jruby@sha256:6ada3c4c289e766db9b57c324044c246f54dfdd65e0f1644a6b6f
 ## `jruby:9.4.12-jdk17`
 
 ```console
-$ docker pull jruby@sha256:775b50bec03164eeb806d30db53d7f18f0ebe35df8fa208f657aa588a36800e3
+$ docker pull jruby@sha256:1b1c108018d4dab0a8e8fbe56079a4b5608cf703b8016e4ba6a01e6c3cb6be6b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14391,28 +14391,28 @@ $ docker pull jruby@sha256:775b50bec03164eeb806d30db53d7f18f0ebe35df8fa208f657aa
 ### `jruby:9.4.12-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ed33d41762cd858d2ecdc65d769dde6c1d1588e0213070baab423a64b0b93a7d
+$ docker pull jruby@sha256:4145b0e74f13719c518019b9e40c9231198cb574937d85b8128e1b125b3542c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242193918 bytes)**  
+-	Total Size: **236.6 MB (236594608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dcef455f11305e388d06366efe9313d49f720b04be76b6bcc102f30eadc80a7`
+-	Image ID: `sha256:cf265075e87b6780cddef1e15a0e123f11201d5acdf7bec138f52c4e0a11f0d5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14461,69 +14461,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88aed8b4a7e29aae2ef8d1eada343155613c68505de0b35a06bd4927d9ea65d5`  
-		Last Modified: Fri, 31 Jan 2025 01:30:13 GMT  
-		Size: 24.0 MB (24009455 bytes)  
+	-	`sha256:10d22f6ae181c9c52790beddb6d90876eb709a06f60ee327c3542d060b11b396`  
+		Last Modified: Wed, 09 Apr 2025 01:15:55 GMT  
+		Size: 24.0 MB (24015362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba02fbf9c0beb1cd876f134d2dbf73f244a7e109db29c2168249004aaea6c411`  
-		Last Modified: Fri, 31 Jan 2025 01:30:16 GMT  
-		Size: 144.6 MB (144576684 bytes)  
+	-	`sha256:3659942add492828d19e9ea6b7691dd444200f35e6659c8265764fb65f01b9f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:59 GMT  
+		Size: 144.6 MB (144576692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:020b80f54da19b4d38afaf9821813776315c4080223d8f9166d4d46eb6c6cb27`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
+	-	`sha256:60d19df4643f587ef926e1e9b325b9480bff6ca93b67c7ac870ce79434662c1e`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1269c4ddbbd753503ca927375bac1e9450e557f656e4c25a058bb663b0b27215`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:d6bd69e2358a0b1a79b33adc20b6238ba46fa51a8ba3072297dc096106200e31`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d2b2a06115dffb37858face44a5c20f142fe51858a266a91097424704dc3f07`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 12.4 MB (12441603 bytes)  
+	-	`sha256:c7a4592aa563b827a77d1f395311e2ddf62a8c18de6dfda19e5d5198efcd7c02`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 6.8 MB (6831077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df1d7cbe7d6ef024e45edc9ca8938007548ca2798a8fdf65cd6f618e7ffac069`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 32.4 MB (32371867 bytes)  
+	-	`sha256:fb112eb27db3f2054775904c1b3da700e6632c03e9aae776c51c9be157b61367`  
+		Last Modified: Wed, 09 Apr 2025 02:47:05 GMT  
+		Size: 32.4 MB (32372344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34755feeb80ebf3b2d75f044a29e06d9c47f01efbf9a2b7cb66c7673e1cf8aa`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 198.0 B  
+	-	`sha256:4894303d73c93c240940d758cef901c280b63613944f6c6d185e13c7fd00b6fa`  
+		Last Modified: Wed, 09 Apr 2025 02:47:03 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41112945c5388c599a03a765f12916cd60df6b8e10cd4ec664a7712709ec39d9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 1.3 MB (1280464 bytes)  
+	-	`sha256:dc00a092927c5cea744c0f61a5675f3a656a73a507196c209f6de20f3fe7087d`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 1.3 MB (1285956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2667d433ae14c3d49df300a381b96630f0b2be0cdc47886ff993c026b29c5ed`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 143.0 B  
+	-	`sha256:5922496c061a9ed8420ffa8b59b2d14fd173083abc303260fd8b6edeadf3feb0`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:afc6424acecbd20b8d844209564f2235ac0369ca4afcf8dc8a9406fe9a097d1b
+$ docker pull jruby@sha256:f9858f90559cfa40f3119c4a5971a9d1d3282b30d74dd9aa117502782c4c831c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5302678 bytes)**  
+-	Total Size: **5.3 MB (5305045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb4d4c5560a4c7eabf4d141fbdf3648c7c885ce33b567e2121ef5f39f4442bec`
+-	Image ID: `sha256:a7fdd41085b45722ba06db484d36b7203da9a23ca6fc67a9a5908ef8191c30f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85898722ec9ea0dc012209b01d4bb0e4dcfc6513e94867053f9429a6b37e7c01`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 5.3 MB (5283774 bytes)  
+	-	`sha256:b654bad22ae5f70cb666db07e50edc2b4ce67a449ab28a0ffb48ee3c71d7dbce`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 5.3 MB (5286146 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ed215ed33c094767ee9826a589d556d13c728401323bc6ad0259081868b2661f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 18.9 KB (18904 bytes)  
+	-	`sha256:d9cf558f9acbbe80daadaa33ed4badd68af9c837186656ee4f7d7215c2506b19`  
+		Last Modified: Wed, 09 Apr 2025 02:47:03 GMT  
+		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jdk17` - linux; arm64 variant v8
@@ -14667,7 +14667,7 @@ $ docker pull jruby@sha256:0c20d22953119392421ffb14d40d7ea4160ba14727dae5f795a0b
 ## `jruby:9.4.12-jdk21`
 
 ```console
-$ docker pull jruby@sha256:5641622b488d298362b96fdaea0f328248ce55962e68e224118be11ddb48d16e
+$ docker pull jruby@sha256:6e1a2c38f5586dd1b1a057d52726bfd13fcb7b2bf1d67b583ae1f3ba4a831ee9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14680,28 +14680,28 @@ $ docker pull jruby@sha256:5641622b488d298362b96fdaea0f328248ce55962e68e224118be
 ### `jruby:9.4.12-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:963b3a5b86ba7309b04102e4fd15e1f0a599f27c5e5726129d5e9e7ffafd71ba
+$ docker pull jruby@sha256:c0c704667fba9c8e9fcca571123cac5a9009756db43a09421d278ef680604194
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.7 MB (252700876 bytes)**  
+-	Total Size: **247.1 MB (247068649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:300dc763542ca51c9a5e5927d12161935c9272d2c28ea98a6faecfa04fcd9b6b`
+-	Image ID: `sha256:6411103c7c65f76d3d1e4bb56492c8649f10491190c95b1588dca5db770976a6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14750,69 +14750,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f9ce665314df6489df49d894b81a8b7d89dcbb3916abb4b8f2d9f04f7f30fba`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 20.7 MB (20684621 bytes)  
+	-	`sha256:69ac5503654a9a87aad1bf9db9d8883049288444743ac7d05be1ab56f1d17713`  
+		Last Modified: Wed, 09 Apr 2025 01:16:32 GMT  
+		Size: 20.7 MB (20693548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c63f325f81a44cbc524343f5cdcec789fb188c2333543d3238cdac7cfeafb7`  
-		Last Modified: Tue, 04 Feb 2025 04:40:18 GMT  
-		Size: 157.6 MB (157591234 bytes)  
+	-	`sha256:e6600e0d3831b05b9fb66aebbe3123d683fb18b898986c49e05faf1c667a99a2`  
+		Last Modified: Wed, 09 Apr 2025 01:16:36 GMT  
+		Size: 157.6 MB (157591202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:864a83d54ff514b209c491364b5476319cda130d7de9e481c432148668d4f0ab`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 159.0 B  
+	-	`sha256:7438c1b0bdfc7c1b5a73ccf2d526da05dc7da2275231c346ea0efea5a8d5af45`  
+		Last Modified: Wed, 09 Apr 2025 01:16:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8df0decf9d7f3577a33fb03b83ae0fc1cb904ea030014ac9bc7a5954ccbfec`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b497a63ffe9d62c73e9db0126be5cb89fa9d41a1da6b1f8899b4ac9316eb3b81`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 11.2 MB (11233921 bytes)  
+	-	`sha256:722ab5193b2318e965e0e72f1f1dc4031966a25566fccecbecc0fd69aff81b66`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 5.6 MB (5590282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f41ef7de2d71d693e4b917f94d84f1014bc02d175a2bc1f0450ebab030c328b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 32.4 MB (32371873 bytes)  
+	-	`sha256:cf35afc9a1c9f0a904c70c91e0ba7f64de287073856d68881ea3646fcbfc77af`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 32.4 MB (32372482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34755feeb80ebf3b2d75f044a29e06d9c47f01efbf9a2b7cb66c7673e1cf8aa`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
+	-	`sha256:0579f81ecb9abd47e50fcb318b4c0d83a8c6cc0051b1126842a12d4e0d74f173`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73133c58636a76bfa46d48ddf0f257079e8c88b2b86df5900dfe8cdfc6f60f9b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 1.3 MB (1280504 bytes)  
+	-	`sha256:c3be6b4984755696f47a3c6dee0cb408014475fa5929e22d26a5e237172a1386`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91858af938415f81d57788559ec5d352f718a74f4a9824864865e85dcbb9c97f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 143.0 B  
+	-	`sha256:75d628d819bea97a2fcbd5cd7bc65d2e06da0527a455bcd191b8aafabf8b43dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:45a49dad84b18cf4296f8fc79a2943b7a3c2c6d22894f922b1b79bb421b6e8ca
+$ docker pull jruby@sha256:ab102ef1266c234d7efd38c4cfb6fb3c2b9db16ef43249694e1765acaf3e74ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5371071 bytes)**  
+-	Total Size: **5.4 MB (5373351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94f4bf2aff04d4d8214f67a747ce6b6998678071e215666d073e6adbb4989992`
+-	Image ID: `sha256:75ffdee05f8510b014fe31ea87ba84123976317f4d53c0b5233d525edfcc2190`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4389b3e05bb0445e03e1f5d10e06c31e04fd9f546ed4b2a217c77581d81daaec`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 5.4 MB (5352172 bytes)  
+	-	`sha256:64c247c6329e4f0e1c371c879372c70d5350d348190059e2d24dcaabdbe9275c`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 5.4 MB (5354458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c77243d379e6ca7a1e80ba760c3d743839b564302c5c4736f1ced71560334e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 18.9 KB (18899 bytes)  
+	-	`sha256:84a3ed08bc614466a77fc1e5c7e39dc8772b4d5aa03fbee375cac201d37d4c33`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 18.9 KB (18893 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jdk21` - linux; arm64 variant v8
@@ -14956,7 +14956,7 @@ $ docker pull jruby@sha256:00057779ec69569b221894b1f3808049b176b9e482eeafa20787e
 ## `jruby:9.4.12-jdk8`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14969,28 +14969,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9.4.12-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15037,69 +15037,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jdk8` - linux; arm64 variant v8
@@ -15241,7 +15241,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.4.12-jre`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15254,28 +15254,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4.12-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15322,69 +15322,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jre` - linux; arm64 variant v8
@@ -15526,7 +15526,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4.12-jre11`
 
 ```console
-$ docker pull jruby@sha256:2dbb236b00a1f1b4f6f91171f986d405ada391391b3c75ee25ae67866396b391
+$ docker pull jruby@sha256:ae821c7f339f3cb8dcd6ef216a1afce926963d1adac0994167499eb06c32290b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15539,28 +15539,28 @@ $ docker pull jruby@sha256:2dbb236b00a1f1b4f6f91171f986d405ada391391b3c75ee25ae6
 ### `jruby:9.4.12-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:bad45cb779079dd22d8fde8932b0ad9e26ebb8f3974d13885eb6070124d4ffbb
+$ docker pull jruby@sha256:3d0feddafd8503d7ff54b2f75b6d5c170473b802875c003af4436ba286357114
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.1 MB (141073219 bytes)**  
+-	Total Size: **135.5 MB (135477314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94121bbf1f28228258502640a19766c22fdc567986f832019baa2713b16303e3`
+-	Image ID: `sha256:178ac8c66fbdd1266393900f2ee78ef6cd348cb8df8be6bc3b79bff74e381694`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15607,69 +15607,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3058f73b8f4937ab8fb3b4c159a4ec63b748de89e82bb46cb05905502be6f5c3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 20.3 MB (20251256 bytes)  
+	-	`sha256:fe913685dc07308206b8b9368edd760d45c0ed0c1ce0a008219f9ae4565668b6`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 20.3 MB (20260214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f937e0a2086c23a09d1f20c16ad505f7c97bcf945194fbbab952915ef7d69f7a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 47.2 MB (47216682 bytes)  
+	-	`sha256:0298071afd7ec797d4c38d0c29e19fe832ecf95e87bf51f6df5b5f5c220fb8a3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 47.2 MB (47217150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f3083818c14451f2bc51269701808b2b3c9c7c12b5da3128ac588e4a492151d`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 157.0 B  
+	-	`sha256:261c34eb718b577c4eb4d30527baae2184b689e59aaba4f624d32889c2a480fe`  
+		Last Modified: Wed, 09 Apr 2025 01:15:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
+	-	`sha256:96d15027f2149d0b63aec987947cbbfaa63e34e19b3922082fe2180bc11e2847`  
+		Last Modified: Wed, 09 Apr 2025 01:15:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e0252c4e561c227f4902be65b9074d5a8505ece133125c0b420a08ba4bccf28`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 12.4 MB (12439116 bytes)  
+	-	`sha256:31934b899f687ecbc80021f1d6078805f6b9d9375417470aeda7da4325434656`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 6.8 MB (6828545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a47e466332e2b9bcbe3a4b621c0e085bf1236dbf7898ef253582684b27584aca`  
-		Last Modified: Tue, 11 Feb 2025 22:27:39 GMT  
-		Size: 32.4 MB (32371826 bytes)  
+	-	`sha256:27ada85cc80f386bedfa3bc0712180f4aeb100663ae46210c8a11e44c6662467`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 32.4 MB (32372261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b3f25abc9f494ed76be843fa8f178bc72e86262d3fc07966fbb4d9dbaaa7b5b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 198.0 B  
+	-	`sha256:0e3b09a06f2a7ae1c103c2159a1f0d83139d05cae23060aa910835af2e061d75`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76927a781fd49be36aace90479c9c38422d90ece41eff9797eff8d356b979a26`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 1.3 MB (1280498 bytes)  
+	-	`sha256:beda07ff0ae1911ffb7bfc94d4b71396c5ee64d5df75874694112de989ad2116`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 1.3 MB (1285969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47aac14d959787460593052df14b0952199759fb55314431f98663e82de3d0ee`  
-		Last Modified: Tue, 11 Feb 2025 22:27:39 GMT  
-		Size: 143.0 B  
+	-	`sha256:04a2a124bfa27fe91b5fdf4b3d520bf6c4366ddf78f326ef1966d5f24397e1dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7934528e3ada0a4c99f0a2657d690b174fae1dbd30dac5be124dc840cda73853
+$ docker pull jruby@sha256:5f4fb004c81902610ff313a6bab6cae691c168d647700805eb268da416898fe0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5075647 bytes)**  
+-	Total Size: **5.1 MB (5078002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9993abcf2025df5debc36cff6ac421ee3bd658ddffeabe9c0f11ab7a334bd46`
+-	Image ID: `sha256:7b61fe474fe3056ddaa4f56ec51e798beeb91ec3fc170ab189a613e94b9227c2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60edf0ed11d5614a54c54f610373f6395a940206fbe13ae44236b4224c7f3927`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 5.1 MB (5056841 bytes)  
+	-	`sha256:96118ea7d1508e563da7c7f5b460291f0bd8175cd0c3e79d39b095465f3f6717`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 5.1 MB (5059201 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb5bd8d047b720324dab458e4c9ed4bb4e9370ca82ee0c380c535583aa424ff0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 18.8 KB (18806 bytes)  
+	-	`sha256:bd785450c12ee88b482fe51b88d82f3286dce7d0695e36582c9e0728cf7991fd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jre11` - linux; arm64 variant v8
@@ -15811,7 +15811,7 @@ $ docker pull jruby@sha256:92fd9da10d1e73fb1645b4bcf01a09f54c026099c25c0a0142b9d
 ## `jruby:9.4.12-jre17`
 
 ```console
-$ docker pull jruby@sha256:a0075422befc60f9d803277df49f7ad935b2e42286de8aadd70acba8b8071a50
+$ docker pull jruby@sha256:85f42599ceee43c23425770dabc8e32b46e9748342c74e324ca80381e4edb340
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15824,28 +15824,28 @@ $ docker pull jruby@sha256:a0075422befc60f9d803277df49f7ad935b2e42286de8aadd70ac
 ### `jruby:9.4.12-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:2af5691a753ba3766df6658e01ad11edbf327870f0cfedfdadc1791343bf3827
+$ docker pull jruby@sha256:e4b26b56119808ff00f2f47a95f4c78c3734925f45ac41965b51242e9d71f0db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.8 MB (140810580 bytes)**  
+-	Total Size: **135.2 MB (135214078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:723aef1ef24c7c8c279d7b7c30b1bf1c32abb2519766535cc06b9b9648fb4eb7`
+-	Image ID: `sha256:8750b45650bfe9e57992c5d5f00ca2345561fc14f54b9e8da0c424640f4ae75a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15892,69 +15892,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c476128eb22bdf6a99b65fa864db0f1ebb019c91a9a4cdc226f6183ad8e3c43`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
-		Size: 20.3 MB (20251225 bytes)  
+	-	`sha256:98e66cedfb5247f86094604841f8e7ddb0b2d05ca0ae60b5be1e8ba41b12ace4`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 20.3 MB (20260107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e846d8e9647d6aab05b8f5a02a6f1fe245fa2b67118f2695141bb2c49300b542`  
-		Last Modified: Fri, 31 Jan 2025 01:31:02 GMT  
-		Size: 47.0 MB (46953971 bytes)  
+	-	`sha256:cb0112479820d174794e74000f9d01cfedd16517deca0a323a1be747efbdfe39`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 47.0 MB (46953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:843c17e581f46279bbc0373ddad8b59e6fb83390f103c2b40004a94eed5e1490`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
+	-	`sha256:4bdfc5969d5b0ac2a56a7db5925216c13cda6f1559687bab2f9c94cf31ac2cd1`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15e0c869e1f807bce22ac6fcdba0ec696d6ea42fdeb1836b9553e561744e4b9d`  
-		Last Modified: Fri, 31 Jan 2025 01:30:58 GMT  
+	-	`sha256:29be0f57f40590223e0b03c89d63aa09fca6560b710b2e6d2d4a8408e9ea31f0`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e59efbef1179338d2c26c4cb1505b5697b09953c26e84ba56ba424ac8f36875`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12439183 bytes)  
+	-	`sha256:a329735b98baf6bcd833e5ed07f10bb344d1b3fa40fdda35f11f6cbfafb39300`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05c5100520b452ab936ab196b5ae8d578ab107384b913a9e6c0e7c21960acf13`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371870 bytes)  
+	-	`sha256:a98a53267d5144ea7bc16d71b8f78d6f4323089de75beee505897f871804ae84`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 32.4 MB (32372315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a11946678464d2c91db2f7fbb1f9eef8bf94f4ffa92900944bccb1a5ebe3d3a`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 198.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec9f6f2888357ff0aa6c81d9f43bdba2a6478e419c8ff3c8178bf5955123f5f9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280487 bytes)  
+	-	`sha256:1a7ba5da9a4401d9d9532da84eb2f51086cdf43ba1fd5aab90b2fd605aca93e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 1.3 MB (1285976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:095ea83574145079f198e356b7caf4ace806754e028a6cbe46a7bef08a3c0404`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 145.0 B  
+	-	`sha256:c2ca2ec818dcf33c2e0db27e87f0417700770ac29f84a4b77d354edf08eeefa5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:3984a4dc39cd9fc9b0426166926c1f4f6853e390652e7540e3434063f2b0ed21
+$ docker pull jruby@sha256:68f6043dc1daab4bb8d9f77d087a24a45716e5501b7289170fc90e25d84e082d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5062624 bytes)**  
+-	Total Size: **5.1 MB (5064980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90a4cb9c8caad7a7a284dc165b25ec79911985f1f4119069df1b5716af5b6c1f`
+-	Image ID: `sha256:9fc111d45dccfc26a2b4490884fc6274b16f0fef57e955b99283e6943eee2086`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8cdb7ca848f158292e3ce7feb7e0dbec08e91c2b5e4fd8a3adb05cdc5e25471c`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.0 MB (5043727 bytes)  
+	-	`sha256:5d04f544913cbdb5e6c2012233207ddea37bc3e281ff3aa6fad8e91deb76eb64`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 5.0 MB (5046087 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:312dc2cf3d90c92edd5c5a0e58efbe5928052dd25520d7fd3f73a956cd4a314f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 18.9 KB (18897 bytes)  
+	-	`sha256:4eec1131a741d770d02e9ee9f7c173984564df7bb30f3cbcbd800d18cdc1ff05`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 18.9 KB (18893 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jre17` - linux; arm64 variant v8
@@ -16096,7 +16096,7 @@ $ docker pull jruby@sha256:63d16b9e92051bfad62e471ec0451c5b7a1e867bbab5e42a59c20
 ## `jruby:9.4.12-jre21`
 
 ```console
-$ docker pull jruby@sha256:4fdac0f64e0f098215756ca65b69509b86b8dcc6fa2f604b7585af6f8de8bd8d
+$ docker pull jruby@sha256:de12ecc0fa7dc6ebead82e6b55d5f627fca316e2218bbf73557e754813bdca2f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16109,28 +16109,28 @@ $ docker pull jruby@sha256:4fdac0f64e0f098215756ca65b69509b86b8dcc6fa2f604b7585a
 ### `jruby:9.4.12-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:c2bbaf3d4ab649e312dd302763a2fe2109f242e1e4598ac029c4998328e55ea1
+$ docker pull jruby@sha256:22d149ec3934f3e77949689f1bb2992219ef09fb4e5b8c31a99f12ab79f4c5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.4 MB (143433549 bytes)**  
+-	Total Size: **137.8 MB (137803687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11a68a1de22487e4244080f86f5a7259e7bd57125e3fc60cef8c2aa6906526a3`
+-	Image ID: `sha256:57e51c026e13926421f48a5a99be142e9f13563ac558041c461a93e4c1f108e8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16177,69 +16177,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2b8e353effdf25ad74bbde76a3242135d6d12fe14be177b7108868c3150b48`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 16.1 MB (16135187 bytes)  
+	-	`sha256:22d232ce229a6628d678ae8ff2aa9c943ad95eb21cff968172fa8f5d576a81ac`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 16.1 MB (16146029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379395aa081f5fd7e867ea654d17431258dab5353139b32bc5fa9c09edb8c19a`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 52.9 MB (52876031 bytes)  
+	-	`sha256:3edaf6f6c56c0c148e4d204e7ec02a653fc380cd7941ce53d30c8971245a5b52`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 52.9 MB (52876033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:298e1b6de86675cf06530c6496ec8374d300561fc2cdacf984c524349c6062ae`  
-		Last Modified: Tue, 04 Feb 2025 04:40:11 GMT  
-		Size: 158.0 B  
+	-	`sha256:f13ef442d1584eb54116771dd478f8bf87eb96391f6b2beea06bd0976c31ce7e`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea28f6f7f0aa0864f252fa90ca3f85687428d91dd6f829f2ba81dc8719e2e3be`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb08ada5f54c21ab6c70d7c8d10ba0757ab8566559c503616ebfb6a64741dcb7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 11.2 MB (11231192 bytes)  
+	-	`sha256:b262f22ba54c808a4a7e619c90f8d0c7fe2dc2a340194cde74526903f1a07817`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 5.6 MB (5588043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b16c0bf027ec892cd079d0eca2b761feaf6be42f5405b88dfcbf1f3947e04f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 32.4 MB (32371948 bytes)  
+	-	`sha256:47ed84ce15a1acbfd857fa721574f06b8009488f57022925150a2122c24a55e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 32.4 MB (32372452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af636c7cf5447a2fa14487c6bb12950c16f20df8716fbda15ebb2c75b102355`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 200.0 B  
+	-	`sha256:0579f81ecb9abd47e50fcb318b4c0d83a8c6cc0051b1126842a12d4e0d74f173`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c60d5ade2287dab138bd44ec778e5aa6b0a6b19b1ebd621f6d31ac02f9345176`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 1.3 MB (1280467 bytes)  
+	-	`sha256:9a590e9d1a1e5685d55534230916fee02fce48092fc6f51f4441f871991e0bc9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 1.3 MB (1285982 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdf7a1b70ae7ed07cd9ca1b208858d40ca8c2b743a3d7e16590e524cc780bc14`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 142.0 B  
+	-	`sha256:75d628d819bea97a2fcbd5cd7bc65d2e06da0527a455bcd191b8aafabf8b43dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a43d4997549950f130fb0548a8c79c80f11875d85b4ce44d6030568a10154acc
+$ docker pull jruby@sha256:dbef547c731d43bfde4b1a8df36ca32a81f7a928034f5aee2caa399e89e80d5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5129613 bytes)**  
+-	Total Size: **5.1 MB (5131895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9772d6c978d80cc175a188d9700034fd3ec8dfeba0a4ad9f4fab17ae24160e3`
+-	Image ID: `sha256:495a069df0df819f76ac10a807c9786a7916329c531d538d067e4e7f845f2355`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3695f4e55d58ca2583966f39292eebfa548a3c53d41f194283b12a728f73c6c5`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 5.1 MB (5110721 bytes)  
+	-	`sha256:7792db5aa71eeb9cd4df36ef08a91e9479e09dac5de47ec258da87dd03c248ea`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 5.1 MB (5113007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2f1d01b74b55129a1e15d810b8d674dfdde961e376646f811f7756f8174831e1`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 18.9 KB (18892 bytes)  
+	-	`sha256:351ef1752c1b02484de24382fcbe7cf8c329293d1008b2d69409fc89bd3f4773`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 18.9 KB (18888 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jre21` - linux; arm64 variant v8
@@ -16381,7 +16381,7 @@ $ docker pull jruby@sha256:f4d617d0f9e49a329e6a0c0cee38a3bc8f423f852751e4a2e91d8
 ## `jruby:9.4.12-jre8`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16394,28 +16394,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4.12-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16462,69 +16462,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12-jre8` - linux; arm64 variant v8
@@ -16666,7 +16666,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4.12.0`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16679,28 +16679,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4.12.0` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16747,69 +16747,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0` - linux; arm64 variant v8
@@ -16951,7 +16951,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4.12.0-jdk`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16964,28 +16964,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9.4.12.0-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17032,69 +17032,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jdk` - linux; arm64 variant v8
@@ -17236,7 +17236,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.4.12.0-jdk11`
 
 ```console
-$ docker pull jruby@sha256:1ed0d88ad18f02e24392f13000a629c40f76dd939e0fa26048bdbcd5d140de73
+$ docker pull jruby@sha256:6b23e5c88dcd9f5be24c7ba2f1e0efab0469cd532ee349f3e9be9c7d86961817
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17249,28 +17249,28 @@ $ docker pull jruby@sha256:1ed0d88ad18f02e24392f13000a629c40f76dd939e0fa26048bdb
 ### `jruby:9.4.12.0-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:f7ad466463d083c4efda4773a9ad8a103c6b200119916d89aaa1d1b7dab4a0e2
+$ docker pull jruby@sha256:7261ceabb68da1ca5e9c4fffa2d4ebc0f4d00deb6779b4f98d3ef28c8d7035f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.5 MB (239465755 bytes)**  
+-	Total Size: **233.9 MB (233868899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:079edd8e586dc9df15b059016d746e0eb62b433baf6f5d6bb0ccd03d99fe3157`
+-	Image ID: `sha256:f86c999a7d62c3706f4b553f4929252c1880c0f79ceb921bd42e5ae323f91f94`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17319,69 +17319,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57720219966e918f1a532346498cfbfb342979a0f5ef1c523ba9e60e4ef5ab63`  
-		Last Modified: Fri, 31 Jan 2025 01:30:17 GMT  
-		Size: 20.3 MB (20251237 bytes)  
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec2b4dbdfccae2f0821bf0672520a085237394280af05d3fa21c12397b754d0`  
-		Last Modified: Fri, 31 Jan 2025 01:30:19 GMT  
-		Size: 145.6 MB (145609067 bytes)  
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ae877ab777ef84fc2dae1668033dcb1343246ee291a5ff14fba9cf841202dff`  
-		Last Modified: Fri, 31 Jan 2025 01:30:15 GMT  
-		Size: 160.0 B  
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cd22893e207fce6e98cc2ccac04dbda65bd286442193b26129b186555db2ec7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 12.4 MB (12439242 bytes)  
+	-	`sha256:11bbfca76485e2a17899295d102f4d11dbe799eb9a79a13042bf837d33389aaa`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 6.8 MB (6828570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44b7afb82cbfd0f5660fc174180de41ddb7f9af8a3f3fdd4c53117893257a907`  
-		Last Modified: Tue, 11 Feb 2025 22:27:46 GMT  
-		Size: 32.4 MB (32371866 bytes)  
+	-	`sha256:5f916ef778d5245620605120d2f66962cf734b71ce3855ae9dd218e272ecb52f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 32.4 MB (32371957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f0a966b28592479b21897cb18cd5272a713d9b8848681777c1d4d8e1a13fe24`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 196.0 B  
+	-	`sha256:cb79321411016d6a3b29db8d4b4606a2309525850f8eb7bdc9b6af400cb9bf3b`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d249331ca996a9266c5c76d301d5b4be05ebfa52908a1c3d59b18fd973244036`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 1.3 MB (1280501 bytes)  
+	-	`sha256:58b671702be9f351f485875d3e9aadbf8bcb704a3ad4c69492c5059649c264fb`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 1.3 MB (1285955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377ed85e44e7cba5972392dfe4fde575c0be9c323986820f0f15487df2c8fdaf`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 143.0 B  
+	-	`sha256:847f542a75fecf0a9bbf7c7f7f002f094538113eee150a4984eb2ba2ec1f5e3d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:b5b6e6c1e3471531d4afe5faea1e1f25679eb807c80af2cff395bbf809f66123
+$ docker pull jruby@sha256:76a39a6b7fe8ed429f0581a609d35eb0d34eac1482e33d165d595678b50a3ccc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5166825 bytes)**  
+-	Total Size: **5.2 MB (5169182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5305b2145a94373be8fff09fac96bb175232c2726231f784301ab56cecf15828`
+-	Image ID: `sha256:1ad0ed2b3b34c2a6aa7e188048fd8a543c96556b0ac3e8d39537e669aee81601`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4adf34ae7d088222806365910d475a1d366bd64d1e1bbedff239c42bff7ab751`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 5.1 MB (5148015 bytes)  
+	-	`sha256:baef19caf4d7094f4ef7d5743818880c15f7851dd8e989b5d63b4341219af703`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 5.2 MB (5150375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e0c0aa2e8f298dbae82d36fd0723cfce3cc8200f0c3437fbda3eef409a9fcdd`  
-		Last Modified: Tue, 11 Feb 2025 22:27:45 GMT  
-		Size: 18.8 KB (18810 bytes)  
+	-	`sha256:ad36262c8cdb139e892efb9aab8285396295da048cb0784011a2d62306e8b2c9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 18.8 KB (18807 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jdk11` - linux; arm64 variant v8
@@ -17525,7 +17525,7 @@ $ docker pull jruby@sha256:6ada3c4c289e766db9b57c324044c246f54dfdd65e0f1644a6b6f
 ## `jruby:9.4.12.0-jdk17`
 
 ```console
-$ docker pull jruby@sha256:775b50bec03164eeb806d30db53d7f18f0ebe35df8fa208f657aa588a36800e3
+$ docker pull jruby@sha256:1b1c108018d4dab0a8e8fbe56079a4b5608cf703b8016e4ba6a01e6c3cb6be6b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17538,28 +17538,28 @@ $ docker pull jruby@sha256:775b50bec03164eeb806d30db53d7f18f0ebe35df8fa208f657aa
 ### `jruby:9.4.12.0-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:ed33d41762cd858d2ecdc65d769dde6c1d1588e0213070baab423a64b0b93a7d
+$ docker pull jruby@sha256:4145b0e74f13719c518019b9e40c9231198cb574937d85b8128e1b125b3542c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242193918 bytes)**  
+-	Total Size: **236.6 MB (236594608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dcef455f11305e388d06366efe9313d49f720b04be76b6bcc102f30eadc80a7`
+-	Image ID: `sha256:cf265075e87b6780cddef1e15a0e123f11201d5acdf7bec138f52c4e0a11f0d5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17608,69 +17608,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88aed8b4a7e29aae2ef8d1eada343155613c68505de0b35a06bd4927d9ea65d5`  
-		Last Modified: Fri, 31 Jan 2025 01:30:13 GMT  
-		Size: 24.0 MB (24009455 bytes)  
+	-	`sha256:10d22f6ae181c9c52790beddb6d90876eb709a06f60ee327c3542d060b11b396`  
+		Last Modified: Wed, 09 Apr 2025 01:15:55 GMT  
+		Size: 24.0 MB (24015362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba02fbf9c0beb1cd876f134d2dbf73f244a7e109db29c2168249004aaea6c411`  
-		Last Modified: Fri, 31 Jan 2025 01:30:16 GMT  
-		Size: 144.6 MB (144576684 bytes)  
+	-	`sha256:3659942add492828d19e9ea6b7691dd444200f35e6659c8265764fb65f01b9f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:59 GMT  
+		Size: 144.6 MB (144576692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:020b80f54da19b4d38afaf9821813776315c4080223d8f9166d4d46eb6c6cb27`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
+	-	`sha256:60d19df4643f587ef926e1e9b325b9480bff6ca93b67c7ac870ce79434662c1e`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1269c4ddbbd753503ca927375bac1e9450e557f656e4c25a058bb663b0b27215`  
-		Last Modified: Fri, 31 Jan 2025 01:30:12 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:d6bd69e2358a0b1a79b33adc20b6238ba46fa51a8ba3072297dc096106200e31`  
+		Last Modified: Wed, 09 Apr 2025 01:15:54 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d2b2a06115dffb37858face44a5c20f142fe51858a266a91097424704dc3f07`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 12.4 MB (12441603 bytes)  
+	-	`sha256:c7a4592aa563b827a77d1f395311e2ddf62a8c18de6dfda19e5d5198efcd7c02`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 6.8 MB (6831077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df1d7cbe7d6ef024e45edc9ca8938007548ca2798a8fdf65cd6f618e7ffac069`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 32.4 MB (32371867 bytes)  
+	-	`sha256:fb112eb27db3f2054775904c1b3da700e6632c03e9aae776c51c9be157b61367`  
+		Last Modified: Wed, 09 Apr 2025 02:47:05 GMT  
+		Size: 32.4 MB (32372344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34755feeb80ebf3b2d75f044a29e06d9c47f01efbf9a2b7cb66c7673e1cf8aa`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 198.0 B  
+	-	`sha256:4894303d73c93c240940d758cef901c280b63613944f6c6d185e13c7fd00b6fa`  
+		Last Modified: Wed, 09 Apr 2025 02:47:03 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41112945c5388c599a03a765f12916cd60df6b8e10cd4ec664a7712709ec39d9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 1.3 MB (1280464 bytes)  
+	-	`sha256:dc00a092927c5cea744c0f61a5675f3a656a73a507196c209f6de20f3fe7087d`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 1.3 MB (1285956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2667d433ae14c3d49df300a381b96630f0b2be0cdc47886ff993c026b29c5ed`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 143.0 B  
+	-	`sha256:5922496c061a9ed8420ffa8b59b2d14fd173083abc303260fd8b6edeadf3feb0`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:afc6424acecbd20b8d844209564f2235ac0369ca4afcf8dc8a9406fe9a097d1b
+$ docker pull jruby@sha256:f9858f90559cfa40f3119c4a5971a9d1d3282b30d74dd9aa117502782c4c831c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5302678 bytes)**  
+-	Total Size: **5.3 MB (5305045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb4d4c5560a4c7eabf4d141fbdf3648c7c885ce33b567e2121ef5f39f4442bec`
+-	Image ID: `sha256:a7fdd41085b45722ba06db484d36b7203da9a23ca6fc67a9a5908ef8191c30f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85898722ec9ea0dc012209b01d4bb0e4dcfc6513e94867053f9429a6b37e7c01`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 5.3 MB (5283774 bytes)  
+	-	`sha256:b654bad22ae5f70cb666db07e50edc2b4ce67a449ab28a0ffb48ee3c71d7dbce`  
+		Last Modified: Wed, 09 Apr 2025 02:47:04 GMT  
+		Size: 5.3 MB (5286146 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ed215ed33c094767ee9826a589d556d13c728401323bc6ad0259081868b2661f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
-		Size: 18.9 KB (18904 bytes)  
+	-	`sha256:d9cf558f9acbbe80daadaa33ed4badd68af9c837186656ee4f7d7215c2506b19`  
+		Last Modified: Wed, 09 Apr 2025 02:47:03 GMT  
+		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jdk17` - linux; arm64 variant v8
@@ -17814,7 +17814,7 @@ $ docker pull jruby@sha256:0c20d22953119392421ffb14d40d7ea4160ba14727dae5f795a0b
 ## `jruby:9.4.12.0-jdk21`
 
 ```console
-$ docker pull jruby@sha256:5641622b488d298362b96fdaea0f328248ce55962e68e224118be11ddb48d16e
+$ docker pull jruby@sha256:6e1a2c38f5586dd1b1a057d52726bfd13fcb7b2bf1d67b583ae1f3ba4a831ee9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17827,28 +17827,28 @@ $ docker pull jruby@sha256:5641622b488d298362b96fdaea0f328248ce55962e68e224118be
 ### `jruby:9.4.12.0-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:963b3a5b86ba7309b04102e4fd15e1f0a599f27c5e5726129d5e9e7ffafd71ba
+$ docker pull jruby@sha256:c0c704667fba9c8e9fcca571123cac5a9009756db43a09421d278ef680604194
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.7 MB (252700876 bytes)**  
+-	Total Size: **247.1 MB (247068649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:300dc763542ca51c9a5e5927d12161935c9272d2c28ea98a6faecfa04fcd9b6b`
+-	Image ID: `sha256:6411103c7c65f76d3d1e4bb56492c8649f10491190c95b1588dca5db770976a6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17897,69 +17897,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f9ce665314df6489df49d894b81a8b7d89dcbb3916abb4b8f2d9f04f7f30fba`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 20.7 MB (20684621 bytes)  
+	-	`sha256:69ac5503654a9a87aad1bf9db9d8883049288444743ac7d05be1ab56f1d17713`  
+		Last Modified: Wed, 09 Apr 2025 01:16:32 GMT  
+		Size: 20.7 MB (20693548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c63f325f81a44cbc524343f5cdcec789fb188c2333543d3238cdac7cfeafb7`  
-		Last Modified: Tue, 04 Feb 2025 04:40:18 GMT  
-		Size: 157.6 MB (157591234 bytes)  
+	-	`sha256:e6600e0d3831b05b9fb66aebbe3123d683fb18b898986c49e05faf1c667a99a2`  
+		Last Modified: Wed, 09 Apr 2025 01:16:36 GMT  
+		Size: 157.6 MB (157591202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:864a83d54ff514b209c491364b5476319cda130d7de9e481c432148668d4f0ab`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
-		Size: 159.0 B  
+	-	`sha256:7438c1b0bdfc7c1b5a73ccf2d526da05dc7da2275231c346ea0efea5a8d5af45`  
+		Last Modified: Wed, 09 Apr 2025 01:16:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8df0decf9d7f3577a33fb03b83ae0fc1cb904ea030014ac9bc7a5954ccbfec`  
-		Last Modified: Tue, 04 Feb 2025 04:40:16 GMT  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b497a63ffe9d62c73e9db0126be5cb89fa9d41a1da6b1f8899b4ac9316eb3b81`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 11.2 MB (11233921 bytes)  
+	-	`sha256:722ab5193b2318e965e0e72f1f1dc4031966a25566fccecbecc0fd69aff81b66`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 5.6 MB (5590282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f41ef7de2d71d693e4b917f94d84f1014bc02d175a2bc1f0450ebab030c328b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 32.4 MB (32371873 bytes)  
+	-	`sha256:cf35afc9a1c9f0a904c70c91e0ba7f64de287073856d68881ea3646fcbfc77af`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 32.4 MB (32372482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34755feeb80ebf3b2d75f044a29e06d9c47f01efbf9a2b7cb66c7673e1cf8aa`  
-		Last Modified: Tue, 11 Feb 2025 22:27:47 GMT  
+	-	`sha256:0579f81ecb9abd47e50fcb318b4c0d83a8c6cc0051b1126842a12d4e0d74f173`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73133c58636a76bfa46d48ddf0f257079e8c88b2b86df5900dfe8cdfc6f60f9b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 1.3 MB (1280504 bytes)  
+	-	`sha256:c3be6b4984755696f47a3c6dee0cb408014475fa5929e22d26a5e237172a1386`  
+		Last Modified: Wed, 09 Apr 2025 02:13:43 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91858af938415f81d57788559ec5d352f718a74f4a9824864865e85dcbb9c97f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 143.0 B  
+	-	`sha256:75d628d819bea97a2fcbd5cd7bc65d2e06da0527a455bcd191b8aafabf8b43dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:45a49dad84b18cf4296f8fc79a2943b7a3c2c6d22894f922b1b79bb421b6e8ca
+$ docker pull jruby@sha256:ab102ef1266c234d7efd38c4cfb6fb3c2b9db16ef43249694e1765acaf3e74ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5371071 bytes)**  
+-	Total Size: **5.4 MB (5373351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94f4bf2aff04d4d8214f67a747ce6b6998678071e215666d073e6adbb4989992`
+-	Image ID: `sha256:75ffdee05f8510b014fe31ea87ba84123976317f4d53c0b5233d525edfcc2190`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4389b3e05bb0445e03e1f5d10e06c31e04fd9f546ed4b2a217c77581d81daaec`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 5.4 MB (5352172 bytes)  
+	-	`sha256:64c247c6329e4f0e1c371c879372c70d5350d348190059e2d24dcaabdbe9275c`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 5.4 MB (5354458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c77243d379e6ca7a1e80ba760c3d743839b564302c5c4736f1ced71560334e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:48 GMT  
-		Size: 18.9 KB (18899 bytes)  
+	-	`sha256:84a3ed08bc614466a77fc1e5c7e39dc8772b4d5aa03fbee375cac201d37d4c33`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 18.9 KB (18893 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jdk21` - linux; arm64 variant v8
@@ -18103,7 +18103,7 @@ $ docker pull jruby@sha256:00057779ec69569b221894b1f3808049b176b9e482eeafa20787e
 ## `jruby:9.4.12.0-jdk8`
 
 ```console
-$ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74a42cec85a5d
+$ docker pull jruby@sha256:52b3d86e5ac3e7cc135acc170cafb5600482092e28637aa5a313904cb56a9ab4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18116,28 +18116,28 @@ $ docker pull jruby@sha256:b43394c4766126d9c6664039e79364045e27e30b764cf9bae7f74
 ### `jruby:9.4.12.0-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:739c6278ae4ddf1421bd02d04174399eaa7939416e32354e92c4b6768d040f32
+$ docker pull jruby@sha256:e41111f8d7696d6b1be55e10dc43fd9c6e6a9e129c4279b44d7808ee6da82faa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.6 MB (148577324 bytes)**  
+-	Total Size: **143.0 MB (142982530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1adf1bdd4386e229d247cc8c8c9f112a4e9657f794b54a2db86f17c381be5ede`
+-	Image ID: `sha256:57a8a14d509272e33eab8be2a72d975c6bd6a870b87c0a3815732034972b5ad3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18184,69 +18184,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:736914ed604909486ca1980aa7b186717adddcfe25f28e3666e4c1e5946430fa`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 20.3 MB (20251205 bytes)  
+	-	`sha256:5be7cf89d5161312e6993ebda7aebc21ffede4b475cc2602dae4d7ec85e31078`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 20.3 MB (20260232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af6a6fc29da83ffbb26cbf026cc38b929d37f46d627da4435bfbb490407da1a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 54.7 MB (54722218 bytes)  
+	-	`sha256:f86416e2d53e7d60a4a110d0e4eaaa948ea9aca4bb9647bb718f539dec836a89`  
+		Last Modified: Wed, 09 Apr 2025 01:13:47 GMT  
+		Size: 54.7 MB (54722241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea49627b2936faf3b2b48d821266f89e3471ce8dbeee974c18bfb09103361cbf`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:4fcdfa019188e1a160cb88f130011abd85140552182f3aa7d09670afa5eb20f7`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f80771ae776ef9edec8befd7b8a77e535f88b02dd8c9c2b1b99ff58001a3ac3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:44ad10626ef60329ad372b0dd4895980b1450230dc7c26b7783b3bfb2513929b`  
+		Last Modified: Wed, 09 Apr 2025 01:13:46 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296e7865fc4127cea03c1fde5fa709d6722aae3b9e2d978f82cc78f5c7e3d497`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12437686 bytes)  
+	-	`sha256:8b803acbbecc84f1c24ea9a5fe4277d9c193af182dca43c6f61ae38c68f95481`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 6.8 MB (6828530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29659556624d6ba4ca5d9ae0dc882fbdf54552b743dada3130b90a36db7e547d`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371893 bytes)  
+	-	`sha256:f52cdbd1630887801752c5f54937deba6c463408ab17872794eab48cb5638a00`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 32.4 MB (32372372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef871ed83bab8f362a77dbf000485c12ea5d4277b48a717503b4e11486b52cd9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:f62681b0e66608a51396af844f08e4fcd13df7e883f43c6ca6a508d935e502c4`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e151a3e5f60b5704c087a4e9e25750bbfe93100adaae0207248fb85f455bcd7e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280482 bytes)  
+	-	`sha256:12c9fe6575128c60c5446ef7a581bb564d4a5de787fc2bbb8d5d6a531911817d`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 1.3 MB (1285986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a90838d63db67f9e564d1754c61e003cc02092ce11d80414760a96a39e26162e`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 144.0 B  
+	-	`sha256:e1ec0f404c9f1ab3e99fb7e5a2a41dd34c1ccd9e015167367a9959a0b42b17bf`  
+		Last Modified: Wed, 09 Apr 2025 02:13:38 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:5f963ad95eceb3fe103167d40a5990f7aa5c3d35da86a51b5628ba0d672e3a95
+$ docker pull jruby@sha256:967ab512695b54158d3d46f0b84487c9d0281c183cb93038103e384a2567506c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5271276 bytes)**  
+-	Total Size: **5.3 MB (5273630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e6f464139b20e1f839568064766a1100ca6b452c2ba799bbc21dfaee871c82`
+-	Image ID: `sha256:e9565d4dccdfd10fbfac6f76797152b72bb5fe1227b36b1342900badf3f55f4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:93e37d32b787f4bfe133dbc4debc6c4fd9fab0077861ea1b37a429df4777054f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.3 MB (5250984 bytes)  
+	-	`sha256:6352d8f88f144655e0b69f4d5b84a241af45167c3b64b7155c3191b9671c0bce`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 5.3 MB (5253344 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16e9ddffceca49b4be1a1da2263981379566ac69e3357281a76d38702c669307`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 20.3 KB (20292 bytes)  
+	-	`sha256:920f9f4456092a21d0a4bbbad9f5e1cf4df5ce85951f9e313ec1b23b59e55a60`  
+		Last Modified: Wed, 09 Apr 2025 02:13:37 GMT  
+		Size: 20.3 KB (20286 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jdk8` - linux; arm64 variant v8
@@ -18388,7 +18388,7 @@ $ docker pull jruby@sha256:b688251b78d7b24c661eb2dcbcf746d821f04115a968741ba4f8d
 ## `jruby:9.4.12.0-jre`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18401,28 +18401,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4.12.0-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18469,69 +18469,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jre` - linux; arm64 variant v8
@@ -18673,7 +18673,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:9.4.12.0-jre11`
 
 ```console
-$ docker pull jruby@sha256:2dbb236b00a1f1b4f6f91171f986d405ada391391b3c75ee25ae67866396b391
+$ docker pull jruby@sha256:ae821c7f339f3cb8dcd6ef216a1afce926963d1adac0994167499eb06c32290b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18686,28 +18686,28 @@ $ docker pull jruby@sha256:2dbb236b00a1f1b4f6f91171f986d405ada391391b3c75ee25ae6
 ### `jruby:9.4.12.0-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:bad45cb779079dd22d8fde8932b0ad9e26ebb8f3974d13885eb6070124d4ffbb
+$ docker pull jruby@sha256:3d0feddafd8503d7ff54b2f75b6d5c170473b802875c003af4436ba286357114
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.1 MB (141073219 bytes)**  
+-	Total Size: **135.5 MB (135477314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94121bbf1f28228258502640a19766c22fdc567986f832019baa2713b16303e3`
+-	Image ID: `sha256:178ac8c66fbdd1266393900f2ee78ef6cd348cb8df8be6bc3b79bff74e381694`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18754,69 +18754,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3058f73b8f4937ab8fb3b4c159a4ec63b748de89e82bb46cb05905502be6f5c3`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 20.3 MB (20251256 bytes)  
+	-	`sha256:fe913685dc07308206b8b9368edd760d45c0ed0c1ce0a008219f9ae4565668b6`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 20.3 MB (20260214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f937e0a2086c23a09d1f20c16ad505f7c97bcf945194fbbab952915ef7d69f7a`  
-		Last Modified: Fri, 31 Jan 2025 01:29:53 GMT  
-		Size: 47.2 MB (47216682 bytes)  
+	-	`sha256:0298071afd7ec797d4c38d0c29e19fe832ecf95e87bf51f6df5b5f5c220fb8a3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:34 GMT  
+		Size: 47.2 MB (47217150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f3083818c14451f2bc51269701808b2b3c9c7c12b5da3128ac588e4a492151d`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
-		Size: 157.0 B  
+	-	`sha256:261c34eb718b577c4eb4d30527baae2184b689e59aaba4f624d32889c2a480fe`  
+		Last Modified: Wed, 09 Apr 2025 01:15:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3c7b6bd77aa73b02a876a07119cd314e85e8eb53687bb5153edd5e074e76a94`  
-		Last Modified: Fri, 31 Jan 2025 01:29:52 GMT  
+	-	`sha256:96d15027f2149d0b63aec987947cbbfaa63e34e19b3922082fe2180bc11e2847`  
+		Last Modified: Wed, 09 Apr 2025 01:15:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e0252c4e561c227f4902be65b9074d5a8505ece133125c0b420a08ba4bccf28`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 12.4 MB (12439116 bytes)  
+	-	`sha256:31934b899f687ecbc80021f1d6078805f6b9d9375417470aeda7da4325434656`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 6.8 MB (6828545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a47e466332e2b9bcbe3a4b621c0e085bf1236dbf7898ef253582684b27584aca`  
-		Last Modified: Tue, 11 Feb 2025 22:27:39 GMT  
-		Size: 32.4 MB (32371826 bytes)  
+	-	`sha256:27ada85cc80f386bedfa3bc0712180f4aeb100663ae46210c8a11e44c6662467`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 32.4 MB (32372261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b3f25abc9f494ed76be843fa8f178bc72e86262d3fc07966fbb4d9dbaaa7b5b`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 198.0 B  
+	-	`sha256:0e3b09a06f2a7ae1c103c2159a1f0d83139d05cae23060aa910835af2e061d75`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76927a781fd49be36aace90479c9c38422d90ece41eff9797eff8d356b979a26`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 1.3 MB (1280498 bytes)  
+	-	`sha256:beda07ff0ae1911ffb7bfc94d4b71396c5ee64d5df75874694112de989ad2116`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 1.3 MB (1285969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47aac14d959787460593052df14b0952199759fb55314431f98663e82de3d0ee`  
-		Last Modified: Tue, 11 Feb 2025 22:27:39 GMT  
-		Size: 143.0 B  
+	-	`sha256:04a2a124bfa27fe91b5fdf4b3d520bf6c4366ddf78f326ef1966d5f24397e1dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7934528e3ada0a4c99f0a2657d690b174fae1dbd30dac5be124dc840cda73853
+$ docker pull jruby@sha256:5f4fb004c81902610ff313a6bab6cae691c168d647700805eb268da416898fe0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5075647 bytes)**  
+-	Total Size: **5.1 MB (5078002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9993abcf2025df5debc36cff6ac421ee3bd658ddffeabe9c0f11ab7a334bd46`
+-	Image ID: `sha256:7b61fe474fe3056ddaa4f56ec51e798beeb91ec3fc170ab189a613e94b9227c2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60edf0ed11d5614a54c54f610373f6395a940206fbe13ae44236b4224c7f3927`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 5.1 MB (5056841 bytes)  
+	-	`sha256:96118ea7d1508e563da7c7f5b460291f0bd8175cd0c3e79d39b095465f3f6717`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 5.1 MB (5059201 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb5bd8d047b720324dab458e4c9ed4bb4e9370ca82ee0c380c535583aa424ff0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:38 GMT  
-		Size: 18.8 KB (18806 bytes)  
+	-	`sha256:bd785450c12ee88b482fe51b88d82f3286dce7d0695e36582c9e0728cf7991fd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:40 GMT  
+		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jre11` - linux; arm64 variant v8
@@ -18958,7 +18958,7 @@ $ docker pull jruby@sha256:92fd9da10d1e73fb1645b4bcf01a09f54c026099c25c0a0142b9d
 ## `jruby:9.4.12.0-jre17`
 
 ```console
-$ docker pull jruby@sha256:a0075422befc60f9d803277df49f7ad935b2e42286de8aadd70acba8b8071a50
+$ docker pull jruby@sha256:85f42599ceee43c23425770dabc8e32b46e9748342c74e324ca80381e4edb340
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18971,28 +18971,28 @@ $ docker pull jruby@sha256:a0075422befc60f9d803277df49f7ad935b2e42286de8aadd70ac
 ### `jruby:9.4.12.0-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:2af5691a753ba3766df6658e01ad11edbf327870f0cfedfdadc1791343bf3827
+$ docker pull jruby@sha256:e4b26b56119808ff00f2f47a95f4c78c3734925f45ac41965b51242e9d71f0db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.8 MB (140810580 bytes)**  
+-	Total Size: **135.2 MB (135214078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:723aef1ef24c7c8c279d7b7c30b1bf1c32abb2519766535cc06b9b9648fb4eb7`
+-	Image ID: `sha256:8750b45650bfe9e57992c5d5f00ca2345561fc14f54b9e8da0c424640f4ae75a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19039,69 +19039,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c476128eb22bdf6a99b65fa864db0f1ebb019c91a9a4cdc226f6183ad8e3c43`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
-		Size: 20.3 MB (20251225 bytes)  
+	-	`sha256:98e66cedfb5247f86094604841f8e7ddb0b2d05ca0ae60b5be1e8ba41b12ace4`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 20.3 MB (20260107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e846d8e9647d6aab05b8f5a02a6f1fe245fa2b67118f2695141bb2c49300b542`  
-		Last Modified: Fri, 31 Jan 2025 01:31:02 GMT  
-		Size: 47.0 MB (46953971 bytes)  
+	-	`sha256:cb0112479820d174794e74000f9d01cfedd16517deca0a323a1be747efbdfe39`  
+		Last Modified: Wed, 09 Apr 2025 01:16:05 GMT  
+		Size: 47.0 MB (46953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:843c17e581f46279bbc0373ddad8b59e6fb83390f103c2b40004a94eed5e1490`  
-		Last Modified: Fri, 31 Jan 2025 01:31:01 GMT  
+	-	`sha256:4bdfc5969d5b0ac2a56a7db5925216c13cda6f1559687bab2f9c94cf31ac2cd1`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15e0c869e1f807bce22ac6fcdba0ec696d6ea42fdeb1836b9553e561744e4b9d`  
-		Last Modified: Fri, 31 Jan 2025 01:30:58 GMT  
+	-	`sha256:29be0f57f40590223e0b03c89d63aa09fca6560b710b2e6d2d4a8408e9ea31f0`  
+		Last Modified: Wed, 09 Apr 2025 01:16:04 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e59efbef1179338d2c26c4cb1505b5697b09953c26e84ba56ba424ac8f36875`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 12.4 MB (12439183 bytes)  
+	-	`sha256:a329735b98baf6bcd833e5ed07f10bb344d1b3fa40fdda35f11f6cbfafb39300`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 6.8 MB (6828554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05c5100520b452ab936ab196b5ae8d578ab107384b913a9e6c0e7c21960acf13`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 32.4 MB (32371870 bytes)  
+	-	`sha256:a98a53267d5144ea7bc16d71b8f78d6f4323089de75beee505897f871804ae84`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 32.4 MB (32372315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a11946678464d2c91db2f7fbb1f9eef8bf94f4ffa92900944bccb1a5ebe3d3a`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 198.0 B  
+	-	`sha256:a565b975dbf1f58c9a644b30f2dff7448bdaea2fa564a01d195ef2793d9b8f71`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec9f6f2888357ff0aa6c81d9f43bdba2a6478e419c8ff3c8178bf5955123f5f9`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 1.3 MB (1280487 bytes)  
+	-	`sha256:1a7ba5da9a4401d9d9532da84eb2f51086cdf43ba1fd5aab90b2fd605aca93e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 1.3 MB (1285976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:095ea83574145079f198e356b7caf4ace806754e028a6cbe46a7bef08a3c0404`  
-		Last Modified: Tue, 11 Feb 2025 22:27:52 GMT  
-		Size: 145.0 B  
+	-	`sha256:c2ca2ec818dcf33c2e0db27e87f0417700770ac29f84a4b77d354edf08eeefa5`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:3984a4dc39cd9fc9b0426166926c1f4f6853e390652e7540e3434063f2b0ed21
+$ docker pull jruby@sha256:68f6043dc1daab4bb8d9f77d087a24a45716e5501b7289170fc90e25d84e082d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5062624 bytes)**  
+-	Total Size: **5.1 MB (5064980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90a4cb9c8caad7a7a284dc165b25ec79911985f1f4119069df1b5716af5b6c1f`
+-	Image ID: `sha256:9fc111d45dccfc26a2b4490884fc6274b16f0fef57e955b99283e6943eee2086`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8cdb7ca848f158292e3ce7feb7e0dbec08e91c2b5e4fd8a3adb05cdc5e25471c`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 5.0 MB (5043727 bytes)  
+	-	`sha256:5d04f544913cbdb5e6c2012233207ddea37bc3e281ff3aa6fad8e91deb76eb64`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 5.0 MB (5046087 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:312dc2cf3d90c92edd5c5a0e58efbe5928052dd25520d7fd3f73a956cd4a314f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:51 GMT  
-		Size: 18.9 KB (18897 bytes)  
+	-	`sha256:4eec1131a741d770d02e9ee9f7c173984564df7bb30f3cbcbd800d18cdc1ff05`  
+		Last Modified: Wed, 09 Apr 2025 02:13:45 GMT  
+		Size: 18.9 KB (18893 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jre17` - linux; arm64 variant v8
@@ -19243,7 +19243,7 @@ $ docker pull jruby@sha256:63d16b9e92051bfad62e471ec0451c5b7a1e867bbab5e42a59c20
 ## `jruby:9.4.12.0-jre21`
 
 ```console
-$ docker pull jruby@sha256:4fdac0f64e0f098215756ca65b69509b86b8dcc6fa2f604b7585af6f8de8bd8d
+$ docker pull jruby@sha256:de12ecc0fa7dc6ebead82e6b55d5f627fca316e2218bbf73557e754813bdca2f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19256,28 +19256,28 @@ $ docker pull jruby@sha256:4fdac0f64e0f098215756ca65b69509b86b8dcc6fa2f604b7585a
 ### `jruby:9.4.12.0-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:c2bbaf3d4ab649e312dd302763a2fe2109f242e1e4598ac029c4998328e55ea1
+$ docker pull jruby@sha256:22d149ec3934f3e77949689f1bb2992219ef09fb4e5b8c31a99f12ab79f4c5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.4 MB (143433549 bytes)**  
+-	Total Size: **137.8 MB (137803687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11a68a1de22487e4244080f86f5a7259e7bd57125e3fc60cef8c2aa6906526a3`
+-	Image ID: `sha256:57e51c026e13926421f48a5a99be142e9f13563ac558041c461a93e4c1f108e8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sun, 26 Jan 2025 05:31:07 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sun, 26 Jan 2025 05:31:10 GMT
-ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
-# Sun, 26 Jan 2025 05:31:11 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19324,69 +19324,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
-		Size: 29.5 MB (29535941 bytes)  
+	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
+		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
+		Size: 29.5 MB (29532365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2b8e353effdf25ad74bbde76a3242135d6d12fe14be177b7108868c3150b48`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 16.1 MB (16135187 bytes)  
+	-	`sha256:22d232ce229a6628d678ae8ff2aa9c943ad95eb21cff968172fa8f5d576a81ac`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 16.1 MB (16146029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379395aa081f5fd7e867ea654d17431258dab5353139b32bc5fa9c09edb8c19a`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 52.9 MB (52876031 bytes)  
+	-	`sha256:3edaf6f6c56c0c148e4d204e7ec02a653fc380cd7941ce53d30c8971245a5b52`  
+		Last Modified: Wed, 09 Apr 2025 01:16:17 GMT  
+		Size: 52.9 MB (52876033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:298e1b6de86675cf06530c6496ec8374d300561fc2cdacf984c524349c6062ae`  
-		Last Modified: Tue, 04 Feb 2025 04:40:11 GMT  
-		Size: 158.0 B  
+	-	`sha256:f13ef442d1584eb54116771dd478f8bf87eb96391f6b2beea06bd0976c31ce7e`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea28f6f7f0aa0864f252fa90ca3f85687428d91dd6f829f2ba81dc8719e2e3be`  
-		Last Modified: Tue, 04 Feb 2025 04:40:12 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:164c5647419eb6a457165c7afed20437472154a5cc1e191b9911419f95722d53`  
+		Last Modified: Wed, 09 Apr 2025 01:16:16 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb08ada5f54c21ab6c70d7c8d10ba0757ab8566559c503616ebfb6a64741dcb7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 11.2 MB (11231192 bytes)  
+	-	`sha256:b262f22ba54c808a4a7e619c90f8d0c7fe2dc2a340194cde74526903f1a07817`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 5.6 MB (5588043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b16c0bf027ec892cd079d0eca2b761feaf6be42f5405b88dfcbf1f3947e04f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 32.4 MB (32371948 bytes)  
+	-	`sha256:47ed84ce15a1acbfd857fa721574f06b8009488f57022925150a2122c24a55e9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 32.4 MB (32372452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af636c7cf5447a2fa14487c6bb12950c16f20df8716fbda15ebb2c75b102355`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 200.0 B  
+	-	`sha256:0579f81ecb9abd47e50fcb318b4c0d83a8c6cc0051b1126842a12d4e0d74f173`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c60d5ade2287dab138bd44ec778e5aa6b0a6b19b1ebd621f6d31ac02f9345176`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 1.3 MB (1280467 bytes)  
+	-	`sha256:9a590e9d1a1e5685d55534230916fee02fce48092fc6f51f4441f871991e0bc9`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 1.3 MB (1285982 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdf7a1b70ae7ed07cd9ca1b208858d40ca8c2b743a3d7e16590e524cc780bc14`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 142.0 B  
+	-	`sha256:75d628d819bea97a2fcbd5cd7bc65d2e06da0527a455bcd191b8aafabf8b43dc`  
+		Last Modified: Wed, 09 Apr 2025 02:13:42 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a43d4997549950f130fb0548a8c79c80f11875d85b4ce44d6030568a10154acc
+$ docker pull jruby@sha256:dbef547c731d43bfde4b1a8df36ca32a81f7a928034f5aee2caa399e89e80d5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5129613 bytes)**  
+-	Total Size: **5.1 MB (5131895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9772d6c978d80cc175a188d9700034fd3ec8dfeba0a4ad9f4fab17ae24160e3`
+-	Image ID: `sha256:495a069df0df819f76ac10a807c9786a7916329c531d538d067e4e7f845f2355`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3695f4e55d58ca2583966f39292eebfa548a3c53d41f194283b12a728f73c6c5`  
-		Last Modified: Tue, 11 Feb 2025 22:27:44 GMT  
-		Size: 5.1 MB (5110721 bytes)  
+	-	`sha256:7792db5aa71eeb9cd4df36ef08a91e9479e09dac5de47ec258da87dd03c248ea`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 5.1 MB (5113007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2f1d01b74b55129a1e15d810b8d674dfdde961e376646f811f7756f8174831e1`  
-		Last Modified: Tue, 11 Feb 2025 22:27:43 GMT  
-		Size: 18.9 KB (18892 bytes)  
+	-	`sha256:351ef1752c1b02484de24382fcbe7cf8c329293d1008b2d69409fc89bd3f4773`  
+		Last Modified: Wed, 09 Apr 2025 02:13:41 GMT  
+		Size: 18.9 KB (18888 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jre21` - linux; arm64 variant v8
@@ -19528,7 +19528,7 @@ $ docker pull jruby@sha256:f4d617d0f9e49a329e6a0c0cee38a3bc8f423f852751e4a2e91d8
 ## `jruby:9.4.12.0-jre8`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19541,28 +19541,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:9.4.12.0-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19609,69 +19609,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4.12.0-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4.12.0-jre8` - linux; arm64 variant v8
@@ -19813,7 +19813,7 @@ $ docker pull jruby@sha256:6c55b60e4a5e623ad6cf7b9b156115477fa01873aa1ce8a0af935
 ## `jruby:latest`
 
 ```console
-$ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb3dc27086d9a
+$ docker pull jruby@sha256:a85ee17890508ea93361898770edd4999010f0d811c8d227336c3634bbfd30c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19826,28 +19826,28 @@ $ docker pull jruby@sha256:48acfee5159ef231ce5ec78f5838ed2c7f5777a92afd85c59b3cb
 ### `jruby:latest` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:572a19e6d4b169e57a18038e5a2c51206794f21e9bc75f226f88a38384c2c92d
+$ docker pull jruby@sha256:94a01b885e477ae07c4c467d188868080ad2c7976f3bd0058432bf05c373f3af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.7 MB (135735946 bytes)**  
+-	Total Size: **130.1 MB (130139677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b80830a53d4e68a3e042556a0283b9b81b33d14a593c30f8c994f49c076485c`
+-	Image ID: `sha256:084274cb25be705e197f4dfa1b74ea7310c05859ae2e61877ea16cb8d0b8b169`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 30 Jan 2025 14:32:57 GMT
 CMD ["/bin/bash"]
 # Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19894,69 +19894,69 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58623e1650ebe4dbc9a54be169a098c559ca74062678f7305c1b29bc01c14ee2`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 20.3 MB (20251206 bytes)  
+	-	`sha256:1a0e7b9c8cee8097e1ae6b185ddf7a5b29d6c95c6633efd2c0f9a13813e04323`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 20.3 MB (20260206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538260ff9dfb998d33d883205b277cf302568a2ec180a3ca9339a7c1d060f332`  
-		Last Modified: Fri, 31 Jan 2025 01:29:41 GMT  
-		Size: 41.9 MB (41879483 bytes)  
+	-	`sha256:35260a664b4a8afc750745416ad5505a3fb8aaeded9524b08d333896490c6a77`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 41.9 MB (41879536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ba2f973c3fac81aa9dbe4d14b2224f613adb1d5a317fdcf46567d1657a394b`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
+	-	`sha256:dfeb4939f4bc91a906cb09122139dd2113ed62b05ccebb280385b5efa773c0f3`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec21a3487de493e79717b1f5f20d7e07ce22d0bea68828000a9221b3affa81f`  
-		Last Modified: Fri, 31 Jan 2025 01:29:40 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a91294d1c6d69149ce980161b58b735ba16922f0e1f5d5afb96909152c03fe0`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 12.4 MB (12439102 bytes)  
+	-	`sha256:40d79122e31ae2390f4f4844e46d01ecb92d276745e0fd893549809c14585d51`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 6.8 MB (6828534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d04c4b0ef17d9de173f634e646a198e85bd7e84c8a7c9313f2e48cdbd6f7265`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 32.4 MB (32371863 bytes)  
+	-	`sha256:093502bdcada81cdf755ee7d9268cc0ae0b7816ab1087addc2b06394f59c0dac`  
+		Last Modified: Wed, 09 Apr 2025 02:13:48 GMT  
+		Size: 32.4 MB (32372307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e105e3b89d20cb71204db7cbcf95a13bd0490362f6791c71314df5aa6bb7f7`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
+	-	`sha256:1532dca56c957fa817de797170bf08db840bb48677ade2f2a1b42b7fc2f6c68f`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46e9f82343e27179638397b248d8170ab691c1ae09625ad83af407279af9ef6f`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 1.3 MB (1280481 bytes)  
+	-	`sha256:8c2d9796d4efbd796ce9967cf1e1391cedb90b55c1722ab03e6a1a8b162fff98`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 1.3 MB (1285953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bd861379593fb7bf48bfd53369e2b1855a3f7023ad784f681a5162051cb1cb`  
-		Last Modified: Tue, 11 Feb 2025 22:27:50 GMT  
-		Size: 143.0 B  
+	-	`sha256:4f9137a91c5e5883f71cc8b3d9d98472751a93c8012fac87a426a31017eb91cd`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:latest` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:94a4b2af6f3d4d70a984ed5227def4d202b9727c2e7bec7fcdeadf12c6f9b3e8
+$ docker pull jruby@sha256:7c6b1b2f5519898f98284d58b27b1718f82bd8df6810d77853844cc3e7f6dddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5097382 bytes)**  
+-	Total Size: **5.1 MB (5099737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505f5b1a981c7e3150dd57672acf1db849592ebca3481f60a9bdf5213a5f50a7`
+-	Image ID: `sha256:459f7790b4c9331bee90657a706cd3bdca68ec0613645e97679ad5fd4ba0812f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb3e15ad43d3c593b1b8ed620c5a520f69f81cae614a19ffb5c1e0169de41c3`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 5.1 MB (5076212 bytes)  
+	-	`sha256:71795458a337e34a7522884e34c063addd10899689d77a205fcae7f08087e831`  
+		Last Modified: Wed, 09 Apr 2025 02:13:47 GMT  
+		Size: 5.1 MB (5078572 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:130df02033a0ee047fd2c104d9a2c0b806f901cdea615c910e90a78d0e548f90`  
-		Last Modified: Tue, 11 Feb 2025 22:27:49 GMT  
-		Size: 21.2 KB (21170 bytes)  
+	-	`sha256:a46823d35f8716beaf1882873713dd8f8d7b99a56f478d3f42c2193d10aeb713`  
+		Last Modified: Wed, 09 Apr 2025 02:13:46 GMT  
+		Size: 21.2 KB (21165 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:latest` - linux; arm64 variant v8
