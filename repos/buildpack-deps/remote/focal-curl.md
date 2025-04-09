@@ -1,7 +1,7 @@
 ## `buildpack-deps:focal-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:4da6b2ff6ddf2c4364d0236b0a6fee455f768788ece240518c756ff7d4b06a8c
+$ docker pull buildpack-deps@sha256:db919353a84b30765a78b3de90da7bd7c7cd9faf8c9bc9f18064044e6f7b390c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull buildpack-deps@sha256:4da6b2ff6ddf2c4364d0236b0a6fee455f768788ece2
 ### `buildpack-deps:focal-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:0422293bc781517a1205b2ba6dff7ba236217c9327f8af92e264ba52f93484b1
+$ docker pull buildpack-deps@sha256:2ecd5cec4c7a628e6661f781e743b0514fdbb101f95ebefe044f81ea8a180ff7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.7 MB (38658092 bytes)**  
+-	Total Size: **38.7 MB (38660725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90edfc157d0d40a2b2be22d1471c22b1abd30fce2d83cc55b4f3927fd7a3f52a`
+-	Image ID: `sha256:db0be8081e327c452fe1325fb16cd594fc199d5f2ba7ae7e4a2c176794d737a1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -41,7 +41,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=20.04
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -49,36 +49,36 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c439405a1dd88c17c6ae4e1c05d5c4a282f8957203f506a1d3b8c0b018b66b3`  
-		Last Modified: Sat, 19 Oct 2024 02:06:13 GMT  
-		Size: 11.1 MB (11147032 bytes)  
+	-	`sha256:7577a2ab12ee9be5df3b0c322f8c7e4cb7d72c7826b239c5a9581720d332213b`  
+		Last Modified: Wed, 09 Apr 2025 01:45:55 GMT  
+		Size: 11.2 MB (11150331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:focal-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:116a19e525bb1d8197b26528a2b5ef7fedd9b8d08d42e8f0a74b5f58b28976fc
+$ docker pull buildpack-deps@sha256:a031e87e52845470de0d85073c559da717685438f432fac55b32f00865831a95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3060155 bytes)**  
+-	Total Size: **3.1 MB (3058924 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ef3471432bdf86cd7eed5ee88b82b6d4f8bfa3b8b7fdcce6c6319530cd28365`
+-	Image ID: `sha256:466e5455aef4055c097738a9c21784078d747d98b56f11f94d3a1469097f0caa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:304c699502debcf5c70a97fb9fb35a4238f59c74a383b028c33d0138d0244daa`  
-		Last Modified: Sat, 19 Oct 2024 02:06:13 GMT  
-		Size: 3.1 MB (3053230 bytes)  
+	-	`sha256:9fe89f6aa63c3f3457abfc6672b43fb72a84922fc5bce119e952ae632e8c39ec`  
+		Last Modified: Wed, 09 Apr 2025 01:45:55 GMT  
+		Size: 3.1 MB (3051999 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a0ad0bc1951b5669a88f7481c27f808527008c18d6b05fcf4e25e2ac39fadc42`  
-		Last Modified: Sat, 19 Oct 2024 02:06:13 GMT  
+	-	`sha256:cdf59eabe19b9801d31f65f605c389acbb469ced483fe713d87d269b3f2d7e00`  
+		Last Modified: Wed, 09 Apr 2025 01:45:55 GMT  
 		Size: 6.9 KB (6925 bytes)  
 		MIME: application/vnd.in-toto+json
 
