@@ -9,7 +9,7 @@
 ## `elasticsearch:7.17.28`
 
 ```console
-$ docker pull elasticsearch@sha256:0140bed187eb2cec0738ea0b00f3ec7cb87683413d441043577af88d94c297a2
+$ docker pull elasticsearch@sha256:a06b03a2db8db2be43d3c3851e7bcebdd4fff79f4db08c7da6bad7a8776d3e15
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -146,28 +146,28 @@ $ docker pull elasticsearch@sha256:f479efe3712cd78f9fa14c93b15b648d333cae5c7b3d3
 ### `elasticsearch:7.17.28` - linux; arm64 variant v8
 
 ```console
-$ docker pull elasticsearch@sha256:c1b3d83e3a491ef45b666a1971a7af3a601000aba697fc9bc95267bef9057759
+$ docker pull elasticsearch@sha256:be68618d3bef93f04847acad4b40bb192a3256d1eb4bebe0405a7b6fe85157d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **365.0 MB (364955657 bytes)**  
+-	Total Size: **358.6 MB (358556286 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e55327d50196b341710a8b4cdf91c0bb05a017b6dc61078c8afe0f09e5571c4`
+-	Image ID: `sha256:43c4858c36ae19a0932446d44843940a4fd544da717c6289d28548935efc1e66`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Feb 2025 11:58:14 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Feb 2025 11:58:14 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Feb 2025 11:58:14 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Feb 2025 11:58:14 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:39:47 GMT
-ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
-# Fri, 11 Oct 2024 03:39:47 GMT
+# Tue, 25 Feb 2025 11:58:14 GMT
+ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
+# Tue, 25 Feb 2025 11:58:14 GMT
 CMD ["/bin/bash"]
 # Tue, 25 Feb 2025 11:58:14 GMT
 RUN yes no | dpkg-reconfigure dash &&     for iter in 1 2 3 4 5 6 7 8 9 10; do       export DEBIAN_FRONTEND=noninteractive &&       apt-get update &&       apt-get upgrade -y &&       apt-get install -y --no-install-recommends         ca-certificates curl netcat p11-kit unzip zip &&       apt-get clean &&       rm -rf /var/lib/apt/lists/* &&       exit_code=0 && break ||         exit_code=$? && echo "apt-get error: retry $iter in 10s" && sleep 10;     done;     exit $exit_code # buildkit
@@ -202,75 +202,75 @@ CMD ["eswrapper"]
 ```
 
 -	Layers:
-	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
-		Size: 26.0 MB (25973828 bytes)  
+	-	`sha256:ecd83b6c354452b6a9979c7666bba16927f1e60e2afbfe6401dd6f87d5db8576`  
+		Last Modified: Tue, 08 Apr 2025 11:48:29 GMT  
+		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73b133d5c02ffb14a9c6e6ac94c32dadf32f97af646b31c80a855514c4931f4d`  
-		Last Modified: Tue, 25 Feb 2025 23:40:34 GMT  
-		Size: 13.8 MB (13751417 bytes)  
+	-	`sha256:daba52b3ee0e1cf293f1e799bc34aff58db06cbbea9bbbf91e5d8b2f00df20d5`  
+		Last Modified: Wed, 09 Apr 2025 07:14:17 GMT  
+		Size: 7.3 MB (7348268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19d330b7cf948d0f619255ac08f295788e85a820c6e52b67902c9756bcd6c7e8`  
-		Last Modified: Tue, 25 Feb 2025 23:40:33 GMT  
-		Size: 4.3 KB (4321 bytes)  
+	-	`sha256:cb0efb2f367eb7b6c0a5c424e5c26aef7989018787439f1d51ffe12cf20eac8f`  
+		Last Modified: Wed, 09 Apr 2025 07:14:17 GMT  
+		Size: 4.3 KB (4316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76e89805206fdb8432916dc6560a00ae443669c44d7a09151cb6349c88b484f2`  
-		Last Modified: Tue, 25 Feb 2025 23:40:44 GMT  
-		Size: 324.9 MB (324912862 bytes)  
+	-	`sha256:57744e44e24c68b5b1ed773f7a4a7af87e6f4eff9da3fb2d92d86a51f00c8aab`  
+		Last Modified: Wed, 09 Apr 2025 07:14:25 GMT  
+		Size: 324.9 MB (324912818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8002871af38cc7be0a2eebf218d126f51c10b412966de90d60a9c5f94f8159be`  
-		Last Modified: Tue, 25 Feb 2025 23:40:33 GMT  
-		Size: 9.1 KB (9098 bytes)  
+	-	`sha256:86ac9b2fe3d7dbd6ee539f850b195591ebe42bf0675d72822533dc5860813e69`  
+		Last Modified: Wed, 09 Apr 2025 07:14:17 GMT  
+		Size: 9.1 KB (9096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a2669410c65046a62db0ba3df2e88597b2de8bc96dadfcd351033d56e8f336d`  
-		Last Modified: Tue, 25 Feb 2025 23:40:34 GMT  
-		Size: 2.0 KB (1977 bytes)  
+	-	`sha256:48e3849e414a417bf481779d36f0608cea8bc3cf42ce5861a7ff8431099c240b`  
+		Last Modified: Wed, 09 Apr 2025 07:14:18 GMT  
+		Size: 2.0 KB (1978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bc7747397d0c311890ea63bbc873f60d871d6e4fdd24c861ecb2bd7a2b0d822`  
-		Last Modified: Tue, 25 Feb 2025 23:40:34 GMT  
-		Size: 186.2 KB (186180 bytes)  
+	-	`sha256:a4fca7af8aea6072d1397d107af24b3bfcaef9504a82f7821756397f23922e05`  
+		Last Modified: Wed, 09 Apr 2025 07:14:18 GMT  
+		Size: 186.2 KB (186176 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b714e911a00a541bbddb81fab83d24740b31db75953537789eef197eee32ec39`  
-		Last Modified: Tue, 25 Feb 2025 23:40:35 GMT  
-		Size: 405.0 B  
+	-	`sha256:1051cef15717f8f37760ebdb86e4483fe460d9acd3c9f45d8fcd0f2d6928fde6`  
+		Last Modified: Wed, 09 Apr 2025 07:14:19 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d505b1c53c82d2f484aa0c5c0b57ac1f17d700a7b4334573d9a8397a23f18129`  
-		Last Modified: Tue, 25 Feb 2025 23:40:35 GMT  
-		Size: 115.5 KB (115537 bytes)  
+	-	`sha256:802283160d1a0755ca3c755bb05b374b812ed0382019faacd4c4178cc83886b4`  
+		Last Modified: Wed, 09 Apr 2025 07:14:19 GMT  
+		Size: 115.5 KB (115538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:7.17.28` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:c313ff7c830e1e09ccf30164de34db52281bf4cc226d57ddb12c14c1640c10d8
+$ docker pull elasticsearch@sha256:9bbd1f61ed8374f4a4acb9f971cef4fd7a3597ea50c3ebe831150ee87d1295ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2588225 bytes)**  
+-	Total Size: **2.6 MB (2588257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:371cfa09214ad38aeed4e2a0a3d9aeb9ee33d0f041c24c4407224aecf3d5a3a2`
+-	Image ID: `sha256:c3b0e3d6e8ae67933af732c9232e2292e50b14a7d9c23c16500c021be1dc570b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:991a884ae21011ae96e96f66c15a7e7f0067982813928727d483a3407bfe849b`  
-		Last Modified: Tue, 25 Feb 2025 23:40:33 GMT  
-		Size: 2.6 MB (2550126 bytes)  
+	-	`sha256:6b24d54b97712ffb2fd9c89c0e3c844f3eb06462b455da36ed621ca15cbd3e13`  
+		Last Modified: Wed, 09 Apr 2025 07:14:17 GMT  
+		Size: 2.6 MB (2550166 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:596d93db3ab022ef7a4baa58e6ac5e03b4f0c02fd2fd5908b5e7dce3951c27fb`  
-		Last Modified: Tue, 25 Feb 2025 23:40:33 GMT  
-		Size: 38.1 KB (38099 bytes)  
+	-	`sha256:9813a4422dc683c9f8be09bfc9cdd8dcde7a53d8fba30f14846487da9801f644`  
+		Last Modified: Wed, 09 Apr 2025 07:14:17 GMT  
+		Size: 38.1 KB (38091 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `elasticsearch:8.16.6`
 
 ```console
-$ docker pull elasticsearch@sha256:3910bb23849bfd25b6d0177450abe36a7bc1bd2e83e427bfad916557c5d32242
+$ docker pull elasticsearch@sha256:68627b3dfa0ece66420303449a3bfd53c77685583438285f9e4010d816a9ff64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -411,28 +411,28 @@ $ docker pull elasticsearch@sha256:8e0ebc599e6733e7597a556d0e73b60452e7956e22a58
 ### `elasticsearch:8.16.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull elasticsearch@sha256:46361de8b04efa356a763b1f30be384817e55e585674be8da247e44988844ef8
+$ docker pull elasticsearch@sha256:2a55376334f5de4de0acddb162fac9c8715ea33573986657ea9301b5b544f26d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **526.4 MB (526366510 bytes)**  
+-	Total Size: **520.0 MB (519966844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e63269b9fd03952ca052032714d6750fc3bd1774250b911438d25e5621e830e8`
+-	Image ID: `sha256:c8b4dfc1aaabc4ec3baa82b87188dc780690e55febc0cecb236d5167de618877`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 08:54:09 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 08:54:09 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 08:54:09 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 08:54:09 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:39:47 GMT
-ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
-# Fri, 11 Oct 2024 03:39:47 GMT
+# Tue, 25 Mar 2025 08:54:09 GMT
+ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
+# Tue, 25 Mar 2025 08:54:09 GMT
 CMD ["/bin/bash"]
 # Tue, 25 Mar 2025 08:54:09 GMT
 RUN yes no | dpkg-reconfigure dash &&     for iter in 1 2 3 4 5 6 7 8 9 10; do       export DEBIAN_FRONTEND=noninteractive &&       apt-get update &&       apt-get upgrade -y &&       apt-get install -y --no-install-recommends         ca-certificates curl netcat p11-kit unzip zip  &&       apt-get clean &&       rm -rf /var/lib/apt/lists/* &&       exit_code=0 && break ||         exit_code=$? && echo "apt-get error: retry $iter in 10s" && sleep 10;     done;     exit $exit_code # buildkit
@@ -471,75 +471,75 @@ USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
-		Size: 26.0 MB (25973828 bytes)  
+	-	`sha256:ecd83b6c354452b6a9979c7666bba16927f1e60e2afbfe6401dd6f87d5db8576`  
+		Last Modified: Tue, 08 Apr 2025 11:48:29 GMT  
+		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5c2366281558c3fd6d4aa155d04ace1d089bf5eddaa8f02d51dedadf212541`  
-		Last Modified: Tue, 25 Mar 2025 19:44:24 GMT  
-		Size: 13.8 MB (13751835 bytes)  
+	-	`sha256:54bcd8f73d70ee3efc43c4acccc6503df1857638d0d3eff132a56b861e0a3c74`  
+		Last Modified: Wed, 09 Apr 2025 07:12:57 GMT  
+		Size: 7.3 MB (7348337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0287c434f4bcc57ce95e84644d46ac9e8f3f4fa25e320e2a6d77508895a40175`  
-		Last Modified: Tue, 25 Mar 2025 19:44:23 GMT  
-		Size: 4.3 KB (4318 bytes)  
+	-	`sha256:d7fdd84476023d04d784209b1c5160414958658a04b714efd7f90a00c875b5bb`  
+		Last Modified: Wed, 09 Apr 2025 07:12:56 GMT  
+		Size: 4.3 KB (4327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c7a14a9b09d7b4dce65d0d019b91129bd64364d04be6c066a41ccaa46e13635`  
-		Last Modified: Tue, 25 Mar 2025 19:44:33 GMT  
-		Size: 486.3 MB (486323822 bytes)  
+	-	`sha256:af9079351e19ba875ed361d06f9336c5d394f0714169e73cd33f5599bf98ab4c`  
+		Last Modified: Wed, 09 Apr 2025 07:13:06 GMT  
+		Size: 486.3 MB (486323813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b206641e45ee45a3d961b5b2ab1318cf491b64cb51da5eb310639795206220f1`  
-		Last Modified: Tue, 25 Mar 2025 19:44:23 GMT  
-		Size: 9.1 KB (9097 bytes)  
+	-	`sha256:3c1fa1cf593f93136707e2ad71aa1d3d5764c24fec56b5fbe084ef74b078ddca`  
+		Last Modified: Wed, 09 Apr 2025 07:12:56 GMT  
+		Size: 9.1 KB (9096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dbd57782e82acd156df6b54c5169f01dcdce7dc49a0a29196d77948a0f25774`  
-		Last Modified: Tue, 25 Mar 2025 19:44:24 GMT  
+	-	`sha256:9ee5d3e9da557afc8453351247efb5acf6021cab854f43cedc33bd06834bc0e4`  
+		Last Modified: Wed, 09 Apr 2025 07:12:57 GMT  
 		Size: 1.7 KB (1722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26fa3c6aaeeb254431e665d8be4d4bbb64c28d4ffa0ab60fbcf8176a8454a6c8`  
-		Last Modified: Tue, 25 Mar 2025 19:44:24 GMT  
+	-	`sha256:a4b4e3b3fa7a776aaa13bf89409afb45794dccf12063da628f4ce061d628b57a`  
+		Last Modified: Wed, 09 Apr 2025 07:12:57 GMT  
 		Size: 185.9 KB (185914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bed167ef1f03dbb75fc9f4395ff693c587701fc06b3eca7c5234c8fedf1c8ae7`  
-		Last Modified: Tue, 25 Mar 2025 19:44:25 GMT  
-		Size: 406.0 B  
+	-	`sha256:f584bc0d3add95223ead7ccfba63f8b2645f7473c6c7b55241b109a1cee3141a`  
+		Last Modified: Wed, 09 Apr 2025 07:12:58 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56c77f54fd0f6743e093c589548a2c4e4602840cefde8bd19ed631533f33dcd5`  
-		Last Modified: Tue, 25 Mar 2025 19:44:25 GMT  
-		Size: 115.5 KB (115536 bytes)  
+	-	`sha256:e03cc40f22633682f2beb92402e435bc1e756ca647f73d7915b1e3595021f782`  
+		Last Modified: Wed, 09 Apr 2025 07:12:58 GMT  
+		Size: 115.5 KB (115537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:8.16.6` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:67861c6469782c19521c8711a624037b33e3afd06b0c5c0010959b4f953efdc8
+$ docker pull elasticsearch@sha256:7795b3c844e34e1f4e714e7bdb3a2be9f3f7cbf8d7b5a99887364ca13eec6f5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3040051 bytes)**  
+-	Total Size: **3.0 MB (3040082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df280673d79bab4fdd71e05fb198067256d34bfa607c3a2f0d6febdd9b5083ed`
+-	Image ID: `sha256:21f46b4f77922943d1b34017085d6961a348c42cdad23803249dfd49bf19b355`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cb5d4d5382914cc7eb977992600ca75d0456e3466816627a0887d739edeb871a`  
-		Last Modified: Tue, 25 Mar 2025 19:44:23 GMT  
-		Size: 3.0 MB (3001633 bytes)  
+	-	`sha256:680b5ca2820c62ecdd7aa8f31fac7cb66938cb139c924517a85484d62600ef86`  
+		Last Modified: Wed, 09 Apr 2025 07:12:56 GMT  
+		Size: 3.0 MB (3001673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c6a461b86d6d946853a2e5bbdca88a7318ddb8ab6548a491fe588eabb9d31880`  
-		Last Modified: Tue, 25 Mar 2025 19:44:23 GMT  
-		Size: 38.4 KB (38418 bytes)  
+	-	`sha256:0eca0a65ebb1916946364a471d1adc23becd7be5a5478083d8e98646f23dbed0`  
+		Last Modified: Wed, 09 Apr 2025 07:12:56 GMT  
+		Size: 38.4 KB (38409 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `elasticsearch:8.17.4`
 
 ```console
-$ docker pull elasticsearch@sha256:ee03de0caf099580577f8b9452b7c9860717eda2c2cfa477abe1db5bb89c42a1
+$ docker pull elasticsearch@sha256:0ed88144ac448f40819b1ecd3bda8a33469ec82dbfcd48edf09700d84ac658c3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -680,28 +680,28 @@ $ docker pull elasticsearch@sha256:cfc6e99c748966b39570a430bbce438ff8463930d5a2d
 ### `elasticsearch:8.17.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull elasticsearch@sha256:fec9dd9861e33c7966f7cbc83c0fcee1274b60c9e68930fc6560956ffe49d3b5
+$ docker pull elasticsearch@sha256:dcf4c04c27e5bd6984c4b5a42c6b5eb31df8a1b584ae245e899dd34b44cb0273
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **527.3 MB (527307058 bytes)**  
+-	Total Size: **520.9 MB (520907372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b91f43df96db428e4404a2e6dec5584a7b527755dded3a1c072c178f33ab288e`
+-	Image ID: `sha256:09a1283e613572c77858da7947a0e7fe4a6711b83620bb68e724ae371195e3f1`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 09:28:57 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 09:28:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 09:28:57 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Tue, 25 Mar 2025 09:28:57 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:39:47 GMT
-ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
-# Fri, 11 Oct 2024 03:39:47 GMT
+# Tue, 25 Mar 2025 09:28:57 GMT
+ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
+# Tue, 25 Mar 2025 09:28:57 GMT
 CMD ["/bin/bash"]
 # Tue, 25 Mar 2025 09:28:57 GMT
 RUN yes no | dpkg-reconfigure dash &&     for iter in 1 2 3 4 5 6 7 8 9 10; do       export DEBIAN_FRONTEND=noninteractive &&       apt-get update &&       apt-get upgrade -y &&       apt-get install -y --no-install-recommends         ca-certificates curl netcat p11-kit unzip zip  &&       apt-get clean &&       rm -rf /var/lib/apt/lists/* &&       exit_code=0 && break ||         exit_code=$? && echo "apt-get error: retry $iter in 10s" && sleep 10;     done;     exit $exit_code # buildkit
@@ -740,67 +740,67 @@ USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
-		Size: 26.0 MB (25973828 bytes)  
+	-	`sha256:ecd83b6c354452b6a9979c7666bba16927f1e60e2afbfe6401dd6f87d5db8576`  
+		Last Modified: Tue, 08 Apr 2025 11:48:29 GMT  
+		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5c2366281558c3fd6d4aa155d04ace1d089bf5eddaa8f02d51dedadf212541`  
-		Last Modified: Tue, 25 Mar 2025 19:44:24 GMT  
-		Size: 13.8 MB (13751835 bytes)  
+	-	`sha256:54bcd8f73d70ee3efc43c4acccc6503df1857638d0d3eff132a56b861e0a3c74`  
+		Last Modified: Wed, 09 Apr 2025 07:12:57 GMT  
+		Size: 7.3 MB (7348337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0287c434f4bcc57ce95e84644d46ac9e8f3f4fa25e320e2a6d77508895a40175`  
-		Last Modified: Tue, 25 Mar 2025 19:44:23 GMT  
-		Size: 4.3 KB (4318 bytes)  
+	-	`sha256:d7fdd84476023d04d784209b1c5160414958658a04b714efd7f90a00c875b5bb`  
+		Last Modified: Wed, 09 Apr 2025 07:12:56 GMT  
+		Size: 4.3 KB (4327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:648b38059e64908e99d982b25be15d64748be0656791fc0bce37fc8c101c420e`  
-		Last Modified: Tue, 25 Mar 2025 19:56:51 GMT  
-		Size: 487.3 MB (487264360 bytes)  
+	-	`sha256:c5c0b0ce478afdd24db6c16a0801c539ac5cd4ae4c822f8b7426bb8e902e4deb`  
+		Last Modified: Wed, 09 Apr 2025 07:16:32 GMT  
+		Size: 487.3 MB (487264327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2575204bebd49dca5799047ab6e3a9d7dc04c884b567329f8bf8b8ddd0e8ca01`  
-		Last Modified: Tue, 25 Mar 2025 19:56:41 GMT  
-		Size: 9.1 KB (9099 bytes)  
+	-	`sha256:1e69d0b09ccda41e8f135339af3c75697e973ed82f40e581b9fd2216559319d1`  
+		Last Modified: Wed, 09 Apr 2025 07:16:21 GMT  
+		Size: 9.1 KB (9098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bf271c7c6f82131b0d9fc6ccbfa6342c201a0bace9bc571938a790a06acac8c`  
-		Last Modified: Tue, 25 Mar 2025 19:56:41 GMT  
+	-	`sha256:4a8cf3a7c6c2c001a737de979a6af854a93b2f04a1652d88ed7f5e96e336234e`  
+		Last Modified: Wed, 09 Apr 2025 07:16:22 GMT  
 		Size: 1.7 KB (1723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4848bb6cfb7c74932e6cffd7ddbb39c4e0191e50fd23620b6fb091ab2f23e3e3`  
-		Last Modified: Tue, 25 Mar 2025 19:56:41 GMT  
-		Size: 185.9 KB (185920 bytes)  
+	-	`sha256:96f375f2ee6b299508362a96f88cf686222a0c214112999c2834c38ad5bf9b93`  
+		Last Modified: Wed, 09 Apr 2025 07:16:22 GMT  
+		Size: 185.9 KB (185925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e1d4bbfb5f0aa78027619b3cd1cfcea023d50d2a9c9ea09040670e605b4b34`  
-		Last Modified: Tue, 25 Mar 2025 19:56:42 GMT  
-		Size: 406.0 B  
+	-	`sha256:e51a14de7fb69d6b9d8b7623725fa06d02a072b82daeb363193d8d235eb6db65`  
+		Last Modified: Wed, 09 Apr 2025 07:16:23 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4489603061e1f096fff9b1375795fc37ee904b18a9dcc0b36b793fbf20be1b46`  
-		Last Modified: Tue, 25 Mar 2025 19:56:42 GMT  
+	-	`sha256:28e5ddc851ee0a1c084d4a3fd45cd6d46b0432ab02b5c130cffabaf7f11c5f90`  
+		Last Modified: Wed, 09 Apr 2025 07:16:23 GMT  
 		Size: 115.5 KB (115537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:8.17.4` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:658568a13bc614c3a4dc150f49e96d100e35f46f9d560bc80aedbb8b8ad9d714
+$ docker pull elasticsearch@sha256:6ba0ba7fa7a583ad3c0ca696d662f000bd653b0019ed50c1edd7cea1e0a35cc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3046251 bytes)**  
+-	Total Size: **3.0 MB (3046282 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef581eb893f4c4355cc45e6f1876b83b083fdfff170598c3074897f4046bca85`
+-	Image ID: `sha256:2e81fa84fe7df682270a24c5ebd27d1d7caf1952b249b7e803fbdeca49cea351`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3826b65fbac469198569266d13f91a13064b5e623fef96864b6905132a9c97ad`  
-		Last Modified: Tue, 25 Mar 2025 19:56:42 GMT  
-		Size: 3.0 MB (3007833 bytes)  
+	-	`sha256:3efddebaf5eabfd1ac51b61338c9c41e85e9b46eb0e946d593e547fac7378daf`  
+		Last Modified: Wed, 09 Apr 2025 07:16:22 GMT  
+		Size: 3.0 MB (3007873 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e6a4ccaed599968cf007482fb7413c618fac6160cf9d97669654928eccfb682d`  
-		Last Modified: Tue, 25 Mar 2025 19:56:41 GMT  
-		Size: 38.4 KB (38418 bytes)  
+	-	`sha256:af59734569c92fc8b2d06c88b0e73c6f647b2839bcbf45a5d970400dce6092d9`  
+		Last Modified: Wed, 09 Apr 2025 07:16:21 GMT  
+		Size: 38.4 KB (38409 bytes)  
 		MIME: application/vnd.in-toto+json
