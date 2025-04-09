@@ -1,12 +1,13 @@
 ## `hello-world:nanoserver`
 
 ```console
-$ docker pull hello-world@sha256:d51057fe1bcf1c5e471d6f64e612b41895997cd4f6bea686d248b0a218d5c681
+$ docker pull hello-world@sha256:8e18e6a93a2a60a8f2e4dce31854d273ac80e509c16d0ffed9787fa5911c5015
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 3
 	-	windows version 10.0.26100.3775; amd64
+	-	windows version 10.0.20348.3453; amd64
 	-	windows version 10.0.17763.7136; amd64
 
 ### `hello-world:nanoserver` - windows version 10.0.26100.3775; amd64
@@ -43,6 +44,42 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 	-	`sha256:d230a332f307b4059fc7eca36a7144666aadebf72b66490b0c5b269b0d205491`  
 		Last Modified: Wed, 09 Apr 2025 00:36:12 GMT  
 		Size: 1.0 KB (1027 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hello-world:nanoserver` - windows version 10.0.20348.3453; amd64
+
+```console
+$ docker pull hello-world@sha256:156a2a7ccac3d9740f0ad1133ee43030c24ffcbe308ddc7ee55549dca201a626
+```
+
+-	Docker Version: 27.5.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **120.7 MB (120739083 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6b86ba68e3fdd953ca03bcf259b772df314fa6de46142d96b78a614b013ed881`
+-	Default Command: `["cmd","\/C","type C:\\hello.txt"]`
+
+```dockerfile
+# Fri, 04 Apr 2025 22:57:50 GMT
+RUN Apply image 10.0.20348.3453
+# Wed, 09 Apr 2025 01:13:23 GMT
+RUN cmd /S /C #(nop) COPY file:cdba4efa08a1e42c8764fb75c060ef33719f72777fb28a7592f718539560d6d2 in C: 
+# Wed, 09 Apr 2025 01:13:23 GMT
+RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
+```
+
+-	Layers:
+	-	`sha256:5caa30147a287e99992660f7f85276c53fe3299503a06c47d476387410721453`  
+		Last Modified: Wed, 09 Apr 2025 01:13:36 GMT  
+		Size: 120.7 MB (120736312 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:223fa054cb85e977c4af57e22677013773065ef486dbc055647344471973004d`  
+		Last Modified: Wed, 09 Apr 2025 01:13:25 GMT  
+		Size: 1.7 KB (1741 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cef60f9ad288f7c5bca41e36026b8330e8ee6aba1e25d22f2d0e690fd2b8b46a`  
+		Last Modified: Wed, 09 Apr 2025 01:13:25 GMT  
+		Size: 1.0 KB (1030 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:nanoserver` - windows version 10.0.17763.7136; amd64
