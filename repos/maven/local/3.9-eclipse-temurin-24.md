@@ -218,14 +218,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.4.dsc' binutils_2.42-4ubuntu2.4.dsc 10148 SHA512:4364d6994d339ccdef5e746d7ad35a3ba9a655d1a4074da2169e370d9528df95c55a745fc5d99cf8ea3f92f25c3a95f31ac957d4513bcccbcb2d6802077fabb5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.4.debian.tar.xz' binutils_2.42-4ubuntu2.4.debian.tar.xz 153300 SHA512:758040b0f8af8987251de69efb77d58a9c4e3f2d55a3657ad8143da866911709795b353dcc969ab374ac531e4ac66f8fc42ce910136731851a1e726bfc451a0b
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build2`
 
@@ -591,14 +586,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.2.dsc' expat_2.6.1-2ubuntu0.2.dsc 2124 SHA512:bb5c41bf71d7e4c8a74daf366d974c19168b8e6327cc4482402f7f17d8fc94a58ce74f172ae537da30d81e62bb3cb567de7489a21d50364ed75859a3637ab5c1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.2.debian.tar.xz' expat_2.6.1-2ubuntu0.2.debian.tar.xz 18596 SHA512:3c2dcd3a278170b33c604ad634ae306d5aa7cb12b01f5d6e2bce3d8871cee1b6b571d9ebeb71a230fb62d2bd01211e00db7c670395385e4be0cfd0f22996291e
-```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
 
