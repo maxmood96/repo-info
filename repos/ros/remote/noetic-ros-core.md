@@ -1,7 +1,7 @@
 ## `ros:noetic-ros-core`
 
 ```console
-$ docker pull ros@sha256:d6811fd242773dc3efd24f7285542a3888caf9bb986cf6f351e2c4929194fb38
+$ docker pull ros@sha256:a9155ef6e322a9d972155336c1b537a53492432d7f6507fc8de20aefaf1b8cc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -224,28 +224,28 @@ $ docker pull ros@sha256:063537f27200090830b26f444de82ce21f42d3ff7e4f8c1b8a1f318
 ### `ros:noetic-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:8f4841dced005577d18cd81b26f1fcc8a02132b497876e3aa89e53e21cc34ae0
+$ docker pull ros@sha256:0f7de31ac9a71ebf9ebca0bf424fa4343ae519c76bd4b050de1f573191397a03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.2 MB (208220339 bytes)**  
+-	Total Size: **204.0 MB (204005332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d426ded96d38709672df6adcda90679455d55634253e5d4fb53da2054cb59c4`
+-	Image ID: `sha256:49ac5c2cfabd3fd3599fb21adaea30c6dfa43fb474de5a21de1366025e0b43a3`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:39:45 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:39:47 GMT
-ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
-# Fri, 11 Oct 2024 03:39:47 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
+ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
+# Mon, 10 Feb 2025 08:31:29 GMT
 CMD ["/bin/bash"]
 # Mon, 10 Feb 2025 08:31:29 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
@@ -272,55 +272,55 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
-		Size: 26.0 MB (25973828 bytes)  
+	-	`sha256:ecd83b6c354452b6a9979c7666bba16927f1e60e2afbfe6401dd6f87d5db8576`  
+		Last Modified: Tue, 08 Apr 2025 11:48:29 GMT  
+		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2121f1f68d1125f94e05d5d5f8eb016a4d81ece6993d4e7c57bfe5ad26044844`  
-		Last Modified: Mon, 10 Mar 2025 18:29:17 GMT  
-		Size: 1.2 MB (1191456 bytes)  
+	-	`sha256:79b1b5c52d6e8060d576d30ef37b2dff7ac599a9acd3a50369427d2448b8707c`  
+		Last Modified: Wed, 09 Apr 2025 09:09:06 GMT  
+		Size: 1.2 MB (1194543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd88b5cd2df85b5bf6fb6fb1ce3368e75445a74bb65bca8e0b7c862ee326d6a7`  
-		Last Modified: Mon, 10 Mar 2025 18:29:17 GMT  
-		Size: 5.3 MB (5342153 bytes)  
+	-	`sha256:5fd8cbf95842dba0eabf002f3aea2635e781f046658cce5b7ba313fad10bde90`  
+		Last Modified: Wed, 09 Apr 2025 09:09:06 GMT  
+		Size: 5.3 MB (5344064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc415fb12ec5c88f126a927064c087cfe92feb936886efa41626024d640a7ce1`  
-		Last Modified: Mon, 10 Mar 2025 18:29:17 GMT  
-		Size: 2.0 KB (2002 bytes)  
+	-	`sha256:67fe00290afb945b6813546d3926aea5a8ec0082d4a1dc0d63bb3086b1e2a8a1`  
+		Last Modified: Wed, 09 Apr 2025 09:09:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09c2b989b81c9cede611618c4b68d5118f857fe6d7eb371449bfe5467122384a`  
-		Last Modified: Mon, 10 Mar 2025 18:29:17 GMT  
-		Size: 274.0 B  
+	-	`sha256:eae42f08156cf5ed9de8bc1f6d53206b54a49718b831050ddbac5cee7fb21775`  
+		Last Modified: Wed, 09 Apr 2025 09:09:06 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4605f7e1eea47d341d92031419819b83d0405500f6bf1c118e732be197d7e9a`  
-		Last Modified: Mon, 10 Mar 2025 18:29:24 GMT  
-		Size: 175.7 MB (175710430 bytes)  
+	-	`sha256:7f1035cf4b45887b737d9db818d2873882f4ed775c8802ec12500a5a7eb61928`  
+		Last Modified: Wed, 09 Apr 2025 09:09:11 GMT  
+		Size: 171.5 MB (171486596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca092e0891945ffc24a56747a902585fab1a46bf29aa20e37747360dead81d5`  
-		Last Modified: Mon, 10 Mar 2025 18:29:18 GMT  
-		Size: 196.0 B  
+	-	`sha256:00ea9b1520ad4662c02b05f9d047e3831dc184c6a7323a71f1128591ca69f26d`  
+		Last Modified: Wed, 09 Apr 2025 09:09:07 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:noetic-ros-core` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:75cde1ea8a736c0b29eb43e3e31d960a4963e35585d045a23a34443b06706b1e
+$ docker pull ros@sha256:34f5d25371f8858ec64b5b90e6a02a87290490571242bb5f2eb693d20c242aaf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 MB (26064185 bytes)**  
+-	Total Size: **26.1 MB (26065587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36d9076878575223ebd5faad124520b2761a94459fb98822734c28f591827f7d`
+-	Image ID: `sha256:d6116132cc84451c0715ce6d9193b941c50145a233232866fc290ccea8e9cb7e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f6f7ebe863d8066db648f08ba919f1c3db871a36b1a5608ec0a7cb2a902095ae`  
-		Last Modified: Mon, 10 Mar 2025 18:29:18 GMT  
-		Size: 26.0 MB (26047668 bytes)  
+	-	`sha256:27167fa2a14e9cf15daff2f6310176e962d915900aacb47474061a6874ee4f24`  
+		Last Modified: Wed, 09 Apr 2025 09:09:07 GMT  
+		Size: 26.0 MB (26049070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:23866d8db4dff5fe835c471621039286a99ed5f4bb75312ec0d70bf47b0a7b92`  
-		Last Modified: Mon, 10 Mar 2025 18:29:16 GMT  
+	-	`sha256:cec7aed39508320d33a62deae1dd7261a6270fcade2f287ea90dffb8f5004a26`  
+		Last Modified: Wed, 09 Apr 2025 09:09:05 GMT  
 		Size: 16.5 KB (16517 bytes)  
 		MIME: application/vnd.in-toto+json
