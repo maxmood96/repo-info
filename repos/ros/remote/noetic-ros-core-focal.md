@@ -1,7 +1,7 @@
 ## `ros:noetic-ros-core-focal`
 
 ```console
-$ docker pull ros@sha256:4e654b1839d79e613d0a393fc49c5bdb01a0a7aa8dac5517804ee57a4815ebb8
+$ docker pull ros@sha256:d6811fd242773dc3efd24f7285542a3888caf9bb986cf6f351e2c4929194fb38
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,28 +16,28 @@ $ docker pull ros@sha256:4e654b1839d79e613d0a393fc49c5bdb01a0a7aa8dac5517804ee57
 ### `ros:noetic-ros-core-focal` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:7d6ca3817633bb47b79586aa8e706ddb7f042871e5942b2704b701eaa42c1e75
+$ docker pull ros@sha256:e3ee73327a6c0b9fcc0d0417f497efd32bdd1fb805eedc6cb9ac569a74106ea5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.3 MB (216275831 bytes)**  
+-	Total Size: **211.1 MB (211140864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3eba44f69107ee478fe9cdcdcf61af311b30cd2e2238cd7bcfdd450f467d08cd`
+-	Image ID: `sha256:bf4322e50775a7c49dcdea57f96c4f54a779e8ae843ab3585f21def61bd84b6e`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Mon, 10 Feb 2025 08:31:29 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Mon, 10 Feb 2025 08:31:29 GMT
 CMD ["/bin/bash"]
 # Mon, 10 Feb 2025 08:31:29 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
@@ -64,57 +64,57 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7281aa604e720b5eaf7e72404849690d72fa5effb15608d2a303b3882f13c9dc`  
-		Last Modified: Mon, 10 Mar 2025 18:14:14 GMT  
-		Size: 1.2 MB (1191587 bytes)  
+	-	`sha256:fe5f39a48dd5e32631ed16c88dce9f258413e07a4bd18febf0fe86116fd84718`  
+		Last Modified: Wed, 09 Apr 2025 01:20:59 GMT  
+		Size: 1.2 MB (1194707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:066a18ba426e6ea26c8fd790e38fecd6025373c25669dd4315eeb94f7ed6599d`  
-		Last Modified: Mon, 10 Mar 2025 18:14:14 GMT  
-		Size: 5.4 MB (5361910 bytes)  
+	-	`sha256:6e85c211102ab44bb27f6fae9285c9d5372b02fa7957fef17cf88938d6c6fdfc`  
+		Last Modified: Wed, 09 Apr 2025 01:20:59 GMT  
+		Size: 5.4 MB (5363878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e537c3c3ddc4adb3cc0de8338089b7d98cf338a1a97a138514e61d335c0a0ddf`  
-		Last Modified: Mon, 10 Mar 2025 18:14:13 GMT  
-		Size: 2.0 KB (2002 bytes)  
+	-	`sha256:d6311663f122dccef631ec54a38cb7388fd50b5c2fe26207dbc65c9e1cce5709`  
+		Last Modified: Wed, 09 Apr 2025 01:20:59 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493688bad29a80f481679ba66e7b0d6fcb8fd23852d6436d0d44395070278bf5`  
-		Last Modified: Mon, 10 Mar 2025 18:14:13 GMT  
+	-	`sha256:333ea9a5fcfe3a513395e2980f864dad1efe2ad81c1932bec13e1ad6de300f85`  
+		Last Modified: Wed, 09 Apr 2025 01:20:59 GMT  
 		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23863567396658bbea590c4eba5622c43ca5757b6235b1c39638f702d1783627`  
-		Last Modified: Mon, 10 Mar 2025 18:14:20 GMT  
-		Size: 182.2 MB (182208805 bytes)  
+	-	`sha256:633e89e2c9ac48f8bf438c0688d6ec1409062328508ee6720565f4ba0be5e6a6`  
+		Last Modified: Wed, 09 Apr 2025 01:21:03 GMT  
+		Size: 177.1 MB (177069417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cab278496cd9deb6d829558f60bad9417912d96a69106575b781f28c587248b6`  
-		Last Modified: Mon, 10 Mar 2025 18:14:15 GMT  
-		Size: 195.0 B  
+	-	`sha256:4cf0ccad8440f923e4cdaf8882f41787c599a4e976a9350b51b0f45aebcc9c70`  
+		Last Modified: Wed, 09 Apr 2025 01:21:00 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:noetic-ros-core-focal` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:1cee193e3cf55a547b51bf7b9cd93b5cda6cc68af4c78689dfe8dcfff3d3007e
+$ docker pull ros@sha256:f4c31b8b90bd7e7521a693330759356bfd3a2a2a33e93163f474e52d8878c76b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 MB (26142311 bytes)**  
+-	Total Size: **26.1 MB (26143714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6679ee1502c9df3be8dad2bdc9989cc8c76d1c92ef7058373ad233d522ff006d`
+-	Image ID: `sha256:b714883d7de56c37684a771cbf4fc78714590ee1dd0648a263545c517f80e8cb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ed70aa069ce6da22da1f2b5c384617667bb87a6ecf8b9a3a9f328507e25c6114`  
-		Last Modified: Mon, 10 Mar 2025 18:14:15 GMT  
-		Size: 26.1 MB (26125935 bytes)  
+	-	`sha256:1e714282d84d7ce6bd446b3b0a913a7fdc97e18fd7cba34d59d962e35b020bd2`  
+		Last Modified: Wed, 09 Apr 2025 01:20:59 GMT  
+		Size: 26.1 MB (26127337 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c4fbde5065217803f7c41c39a3e63e07859f8027fb2b78dd749b165ccee46493`  
-		Last Modified: Mon, 10 Mar 2025 18:14:13 GMT  
-		Size: 16.4 KB (16376 bytes)  
+	-	`sha256:3f9dc9e7dadf0400d5163e43754c73c9e03fb1674775b61a4727c541ea31a051`  
+		Last Modified: Wed, 09 Apr 2025 01:20:59 GMT  
+		Size: 16.4 KB (16377 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:noetic-ros-core-focal` - linux; arm variant v7

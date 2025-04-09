@@ -1,7 +1,7 @@
 ## `ros:rolling-ros-core-noble`
 
 ```console
-$ docker pull ros@sha256:11dfbf875a5453b1b0ceb4a47f4bdf6590fb86dfd39d8612298a2433a7ee96b6
+$ docker pull ros@sha256:0d19ea7464b80eed84a06b63e299b60eb3f1e02364c78375e7aa9f5873f1e81a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull ros@sha256:11dfbf875a5453b1b0ceb4a47f4bdf6590fb86dfd39d8612298a243
 ### `ros:rolling-ros-core-noble` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:8c9fc809eb8ea2e76edf1d0407406ace8e9bf582441be2ce9939955e8ccb8043
+$ docker pull ros@sha256:f189a8beab995fe6d4089037e6271b18a135f54e4c5419094ea5521654eedbf4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.2 MB (166192203 bytes)**  
+-	Total Size: **156.8 MB (156761814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7dad43d602d258cb7f34fa2e3625955887ce0f215e8e46e604a68ad7ff94420`
+-	Image ID: `sha256:4812ff35af762386f778c6dbac497fcb7e5e5e37f4867538d3bc93ba91e3742d`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 27 Jan 2025 04:14:00 GMT
+# Mon, 10 Feb 2025 08:53:23 GMT
 ARG RELEASE
-# Mon, 27 Jan 2025 04:14:00 GMT
+# Mon, 10 Feb 2025 08:53:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 27 Jan 2025 04:14:00 GMT
+# Mon, 10 Feb 2025 08:53:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 27 Jan 2025 04:14:00 GMT
+# Mon, 10 Feb 2025 08:53:23 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 27 Jan 2025 04:14:03 GMT
-ADD file:6df775300d76441aa33f31b22c1afce8dfe35c8ffbc14ef27c27009235b12a95 in / 
-# Mon, 27 Jan 2025 04:14:03 GMT
+# Mon, 10 Feb 2025 08:53:23 GMT
+ADD file:1d7c45546e94b90e941c5bf5c7a5d415d7b868581ad96171d4beb76caa8ab683 in / 
+# Mon, 10 Feb 2025 08:53:23 GMT
 CMD ["/bin/bash"]
 # Mon, 10 Feb 2025 08:53:23 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
@@ -62,56 +62,56 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040`  
-		Last Modified: Mon, 27 Jan 2025 05:09:50 GMT  
-		Size: 29.8 MB (29754290 bytes)  
+	-	`sha256:2726e237d1a374379e783053d93d0345c8a3bf3c57b5d35b099de1ad777486ee`  
+		Last Modified: Tue, 08 Apr 2025 11:53:40 GMT  
+		Size: 29.7 MB (29717652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d50e8d3973a6431bf06ae2429fe6043d68076f680d6b9e838871fea0dda80d8a`  
-		Last Modified: Mon, 10 Mar 2025 18:13:39 GMT  
-		Size: 680.3 KB (680326 bytes)  
+	-	`sha256:b8b9da1b5048f08150019e977d6e262db7577c0ddca858e147df7d9bf93f79da`  
+		Last Modified: Wed, 09 Apr 2025 01:20:46 GMT  
+		Size: 683.6 KB (683556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d623b736b410baa5a5818f62b08b2007dd9842030d9973045f5f90da7ee66c55`  
-		Last Modified: Mon, 10 Mar 2025 18:13:39 GMT  
-		Size: 3.6 MB (3561526 bytes)  
+	-	`sha256:c05e54389289d908213d0e62f13c72b2001cc525190c511ba09dfad5c8b084fb`  
+		Last Modified: Wed, 09 Apr 2025 01:20:46 GMT  
+		Size: 3.6 MB (3563161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb2b2c3a23f9902ed270bb51f69b99a73d85d366f06f5a32a28256af861b69d0`  
-		Last Modified: Mon, 10 Mar 2025 18:13:39 GMT  
-		Size: 2.0 KB (2000 bytes)  
+	-	`sha256:03f5382010868ddf658e88e6bffad5d0ce76a6a6a6b354b9cce80c97e508cb63`  
+		Last Modified: Wed, 09 Apr 2025 01:20:46 GMT  
+		Size: 2.0 KB (1998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec4fa6db600a3081b7a0db34679e3c98dc51777a5ba600aafc114cd49bf17f75`  
-		Last Modified: Mon, 10 Mar 2025 18:13:39 GMT  
-		Size: 274.0 B  
+	-	`sha256:c01b64bc19922e1f6345f2b4e899c22ff3b9b37a905b50f5c6e0784ada292f34`  
+		Last Modified: Wed, 09 Apr 2025 01:20:46 GMT  
+		Size: 271.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3ad0c45362760291479652f2f15e1f417e3217c27d636ba16b628a3a019d7da`  
-		Last Modified: Mon, 10 Mar 2025 18:13:42 GMT  
-		Size: 132.2 MB (132193590 bytes)  
+	-	`sha256:7fee44a6aadcf0d84954979ffc4c8878dd6ea0ef9a78cb99a31bced6981ef5ed`  
+		Last Modified: Wed, 09 Apr 2025 01:20:49 GMT  
+		Size: 122.8 MB (122794979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06d9ebb38bcee87c07ca2ae9f32b3c83fd24b46271f5b8317239ea3c4ec23240`  
-		Last Modified: Mon, 10 Mar 2025 18:13:40 GMT  
+	-	`sha256:48198ad8c8df02f87473863271fe668e6d78defe02d55c43b7168acc66a4ecc2`  
+		Last Modified: Wed, 09 Apr 2025 01:20:47 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:rolling-ros-core-noble` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:fbeca46ddd84e1e032f5ad08f1a8ac7fd40556c174ec2bea08b9aa85d902029b
+$ docker pull ros@sha256:1b5482fe1e1507f49fe013bec9a5b1996e805753c0deb290c5c9939b8ce83695
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17766893 bytes)**  
+-	Total Size: **17.8 MB (17796623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55b1571f6ecdcb15e61749149f52d36906b1f775e11fbf70ad4a792095b5b67d`
+-	Image ID: `sha256:727b0b800c933cc35c5239b6571e84eeadf2b87fb6a29d9d26655a2a6f8c8eea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84cb15a154b9ca3645346d64f0482ffe7e6d19610e3c2b64bbe801f500798c2d`  
-		Last Modified: Mon, 10 Mar 2025 18:13:40 GMT  
-		Size: 17.8 MB (17750499 bytes)  
+	-	`sha256:d41a9071eb7d8ecac362ae42915cdc2eaff4c34da8c42cd96c9125a509167f4e`  
+		Last Modified: Wed, 09 Apr 2025 01:20:46 GMT  
+		Size: 17.8 MB (17780229 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e515b1f18393d7bf6ee59b413d093d53d8e53140b412a75e05ac70e62640c670`  
-		Last Modified: Mon, 10 Mar 2025 18:13:39 GMT  
+	-	`sha256:245f7e10fcd0db42ea9e7f2ef2b0a51d1d3dbb59a050fee13607d17031cd83a8`  
+		Last Modified: Wed, 09 Apr 2025 01:20:46 GMT  
 		Size: 16.4 KB (16394 bytes)  
 		MIME: application/vnd.in-toto+json
 
