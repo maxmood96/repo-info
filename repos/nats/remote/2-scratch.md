@@ -1,7 +1,7 @@
 ## `nats:2-scratch`
 
 ```console
-$ docker pull nats@sha256:c81104c29f774ab6ac6178391029a857ca1b201750c9ebefad70bee0b9162cf6
+$ docker pull nats@sha256:0371126d5cb54f668098ddc68b0868425a46bf5fb8d0f4a9e080f1816a3b23c0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,175 +22,175 @@ $ docker pull nats@sha256:c81104c29f774ab6ac6178391029a857ca1b201750c9ebefad70be
 ### `nats:2-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:0b313c16824b8d98736c06153fa01af3c8d62eebc6298e9062fd2e00c0a3e865
+$ docker pull nats@sha256:41dddbc7a9265892086db802a374dbf910b5d0db786c8ba12e27a81f2ede8f05
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6282666 bytes)**  
+-	Total Size: **6.3 MB (6282680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5a2333da61b6c9f0de1de8235aca52ee071283b0c8c6487d3ea15b4a0f9f8e2`
+-	Image ID: `sha256:55ddda49ccc5be8fc53872fcb74f0f168368af1d3e5fc27fd096bb4ab9fac9e5`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["/nats-server"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:54120e60f5a574cbbfd83de2711330ae98499a27ff592bdb694994b87749dd23`  
-		Last Modified: Mon, 31 Mar 2025 17:41:30 GMT  
-		Size: 6.3 MB (6282155 bytes)  
+	-	`sha256:7a31ab99389a11bb36db183df5a6bc8d784c1e96fb10c1973e04b98e17e58f51`  
+		Last Modified: Tue, 08 Apr 2025 17:26:21 GMT  
+		Size: 6.3 MB (6282171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71d71c31c70e45e814d8db85102321f1459be653c595cd91fafb76306cdf405e`  
-		Last Modified: Mon, 31 Mar 2025 19:07:36 GMT  
+	-	`sha256:0bcd18a1de501f0dcf00113b8c1effd2b7f198a1383c537490e8dce3a826adce`  
+		Last Modified: Tue, 08 Apr 2025 21:07:44 GMT  
+		Size: 509.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `nats:2-scratch` - unknown; unknown
+
+```console
+$ docker pull nats@sha256:16692b029d2fd73a6c9833d59190a10a052903fbc5b68228ca0ce31e25895ee4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.5 KB (10466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a60659f991d784a3586e62308c55e27054bad66d740cbde49980328b682cb858`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d0fd9d7883ec1e99c1a17109b0a6fd39dec7b9ec8f40f0ace2f2c15f9d8846a3`  
+		Last Modified: Tue, 08 Apr 2025 21:07:45 GMT  
+		Size: 10.5 KB (10466 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `nats:2-scratch` - linux; arm variant v6
+
+```console
+$ docker pull nats@sha256:f53994879dbfd2fc8177b383905d33db1095d8b42bb4bec64088771cecdb2bf1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 MB (6002072 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:01de3b3fb48e4b75539a9af5640e6f77115cdbe9419f3da2891472ec6e806148`
+-	Entrypoint: `["\/nats-server"]`
+-	Default Command: `["--config","nats-server.conf"]`
+
+```dockerfile
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
+# Tue, 08 Apr 2025 17:23:05 GMT
+COPY /usr/local/bin/nats-server /nats-server # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
+COPY nats-server.conf /nats-server.conf # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
+EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENTRYPOINT ["/nats-server"]
+# Tue, 08 Apr 2025 17:23:05 GMT
+CMD ["--config" "nats-server.conf"]
+```
+
+-	Layers:
+	-	`sha256:bc9bfb085b797367e9407dbdf5a3928ee0d69859fb96188165856b5e8e1b6e88`  
+		Last Modified: Tue, 08 Apr 2025 17:26:22 GMT  
+		Size: 6.0 MB (6001563 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ef30b0264d904d40fbf4763922653522d80a800c24f6bcbb52a1a66fd1accaf8`  
+		Last Modified: Tue, 08 Apr 2025 21:07:08 GMT  
+		Size: 509.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `nats:2-scratch` - unknown; unknown
+
+```console
+$ docker pull nats@sha256:f9537be10194b98f78298fad26add4a04948857f650479e674587da738dcf69c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.6 KB (10593 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7014bcdaac4c9653a29f6fc739854477633a62a69bd0cba053bbeecbfc57e101`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e337d587115a4b810f5a9fa3deb1db109744f3828488f355e6bfa4c965ea5501`  
+		Last Modified: Tue, 08 Apr 2025 21:07:08 GMT  
+		Size: 10.6 KB (10593 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `nats:2-scratch` - linux; arm variant v7
+
+```console
+$ docker pull nats@sha256:859b07690a2059b52277aceb9feed7e81269aed09859f1c3b0f3162d751ddb29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 MB (5992346 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e38aded7ecfd1e1b61cc0452d01e01718e0a4be4ee666ac1980ddacb6f7defbc`
+-	Entrypoint: `["\/nats-server"]`
+-	Default Command: `["--config","nats-server.conf"]`
+
+```dockerfile
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
+# Tue, 08 Apr 2025 17:23:05 GMT
+COPY /usr/local/bin/nats-server /nats-server # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
+COPY nats-server.conf /nats-server.conf # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
+EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENTRYPOINT ["/nats-server"]
+# Tue, 08 Apr 2025 17:23:05 GMT
+CMD ["--config" "nats-server.conf"]
+```
+
+-	Layers:
+	-	`sha256:8f114aa547686a4604d8f5fbabd3d89b59a801cc55b68aa653d813c66ca32a65`  
+		Last Modified: Tue, 08 Apr 2025 17:26:18 GMT  
+		Size: 6.0 MB (5991835 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:844018e59249593be5d829b3a4bba323e96c26297db204b3a8a8a52e847f8041`  
+		Last Modified: Tue, 08 Apr 2025 21:25:07 GMT  
 		Size: 511.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:b8d62bc797363d5eab76aea96ec144d02b901da4dba8eb8bf31cc4e51e3a09d7
+$ docker pull nats@sha256:1e53207f824b4b97a2158a01c60662ef62ff32a777e55e615077563d48bcc314
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 KB (10523 bytes)**  
+-	Total Size: **10.6 KB (10593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbd51cd5b25ea5c4355cd2cde0e286d4f6da98802af9ed8b477001ff7ece4679`
+-	Image ID: `sha256:6a229febf9f435367bc3df4661afe24971b0581fa0b4b375a92d4ac38c3ce791`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19abc39a4cbb247bfa12363ce59bbce1e3bf861fddb9055c3a17e2d39d54d204`  
-		Last Modified: Mon, 31 Mar 2025 19:07:36 GMT  
-		Size: 10.5 KB (10523 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2-scratch` - linux; arm variant v6
-
-```console
-$ docker pull nats@sha256:af5758489c2981e0a1028dc47f82f0dd2d26e2fac7ac1e478a2a15a12029f6d7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6002169 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c17f13cf88d7cb6d029eafd34cd847cbacebb2131dc5b7ecfbed791e2958e6a4`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Mon, 31 Mar 2025 17:39:54 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENTRYPOINT ["/nats-server"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:098bda892a4e7ddd77ca838f72ef9757e9b3cfae3c7bc97076a8dd0b6fd92597`  
-		Last Modified: Mon, 31 Mar 2025 17:41:30 GMT  
-		Size: 6.0 MB (6001660 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1d2651842734b21329c25e1004a4da19102e57001381e60bb4fd58723fe19`  
-		Last Modified: Mon, 31 Mar 2025 19:07:08 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2-scratch` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:736b8ee8472809de9731d9c426d2113e533e5ac68c9fbf4cd6bb44eb636b3d79
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.7 KB (10650 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ffa52afcf9f827961f6f692daeb94f398721ac7559f559d56147558f6742150`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:cc5887e8b88d73925b5364f9143ca37566f003a1560dffe173f7be8f10d66806`  
-		Last Modified: Mon, 31 Mar 2025 19:07:08 GMT  
-		Size: 10.7 KB (10650 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2-scratch` - linux; arm variant v7
-
-```console
-$ docker pull nats@sha256:f1752b6d8b3a5506fab1fdf93ce66a6bd6e934d33a3c230231458f254ff505a6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (5992492 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d3d700cbec0d68868397c08f331e9cee8a3e484035ab651de2414c1bc1039b`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Mon, 31 Mar 2025 17:39:54 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENTRYPOINT ["/nats-server"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:7ae07ef7aadc186e26516a3b1a5bacd27b42c41b8d63efc540622587ef29be07`  
-		Last Modified: Mon, 31 Mar 2025 17:41:36 GMT  
-		Size: 6.0 MB (5991983 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d132fb7bc19f6f368e535b5a46903e88d661e5c0f5e33c79b7d66b962039598`  
-		Last Modified: Mon, 31 Mar 2025 20:44:23 GMT  
-		Size: 509.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2-scratch` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:ff00ada993e928a0dbcd0e627e845b5f9c4d11042f0e089912b8ef2969c89876
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 KB (10649 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab26b373d46f30d56fc9b9ecf02d3c518eb5ab041a8fbb69e562b49b1a864d9d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d552b4d64ce37965149a8aaeed3a0eebd251066efc77cb63ad2307f9d0bbdef7`  
-		Last Modified: Mon, 31 Mar 2025 20:44:23 GMT  
-		Size: 10.6 KB (10649 bytes)  
+	-	`sha256:36f6e0df21021319068725c9d7c2325e4fad06927e5ff9fe7fe11ec830f17f1c`  
+		Last Modified: Tue, 08 Apr 2025 21:25:06 GMT  
+		Size: 10.6 KB (10593 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-scratch` - linux; arm64 variant v8
@@ -254,115 +254,115 @@ $ docker pull nats@sha256:13fe1989809a4185209660bba2e8a407b921e80a959889e94c8d6b
 ### `nats:2-scratch` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:74e2df57ac704452ee531238216b3accd76025199ee310563732dd2c680227a6
+$ docker pull nats@sha256:8cbd8caa2bdb9c64319ae113af4cf4170b92f3795148cb20401f2f1f16aa1d11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5757216 bytes)**  
+-	Total Size: **5.8 MB (5757631 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abd71cf45edbcaea354422b03a686d602fac79be9357fdbc6b5c05d8ab8309e5`
+-	Image ID: `sha256:a8ba2ae7e87afe027065399c01f1230c431bed76a811a5cc5c83e971b6e70a26`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
 ```dockerfile
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["/nats-server"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
 -	Layers:
-	-	`sha256:452917a8c6e0add88a19efed21ff3bf850d722622f476c3b9d4426f3dbaaffb7`  
-		Last Modified: Mon, 31 Mar 2025 17:41:27 GMT  
-		Size: 5.8 MB (5756706 bytes)  
+	-	`sha256:2c03c8b47070105a3781cfd93e5a048f0fcf1895182b8500a1875b914beccc2b`  
+		Last Modified: Tue, 08 Apr 2025 17:26:19 GMT  
+		Size: 5.8 MB (5757122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc09a85b63b7a6867f196c8c27905ad711a7457fa91d3df80022bc3d24111b3`  
-		Last Modified: Mon, 31 Mar 2025 20:07:44 GMT  
-		Size: 510.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `nats:2-scratch` - unknown; unknown
-
-```console
-$ docker pull nats@sha256:9460476db24c3ccd45c6374ab5e0dfa8af2b95e6ed003b294fca69a3f6d49e72
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.6 KB (10613 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8048c19445dcae5f87494cedbc4822265fb6848963d3958920bc8a77dc19881`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:2e79f43f61fe3cbbfb9fa2ab55acbd3a3254d4378c81f4bef4392b1b18e91f10`  
-		Last Modified: Mon, 31 Mar 2025 20:07:44 GMT  
-		Size: 10.6 KB (10613 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `nats:2-scratch` - linux; s390x
-
-```console
-$ docker pull nats@sha256:6b9323c60c161cbd82daa5b02f46e55051f8540e7c9770dc1c2ed619086c6f53
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6122555 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb48b95165c0163d0de0d793f09fa9aaa8dbc79c4b50241ee9e33ac819b1a501`
--	Entrypoint: `["\/nats-server"]`
--	Default Command: `["--config","nats-server.conf"]`
-
-```dockerfile
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
-# Mon, 31 Mar 2025 17:39:54 GMT
-COPY /usr/local/bin/nats-server /nats-server # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
-COPY nats-server.conf /nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
-EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENTRYPOINT ["/nats-server"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-CMD ["--config" "nats-server.conf"]
-```
-
--	Layers:
-	-	`sha256:cdb5d3b73d4e5760c377e2d1a31f668fd95251ac45157f6a4c4d98139b337e23`  
-		Last Modified: Mon, 31 Mar 2025 17:41:31 GMT  
-		Size: 6.1 MB (6122046 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e9431fd0e418054b688573b0ef6c205ce09bcb9015c474b01a32d6800912d0`  
-		Last Modified: Mon, 31 Mar 2025 20:07:36 GMT  
+	-	`sha256:425937f6cd03177f214b970352644a3316a1a6ac085099e96875d62e6eb6b95d`  
+		Last Modified: Tue, 08 Apr 2025 22:18:51 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:2dfb1482f9d33c4a0f01a77e40b206f5b997b290b5e3899ee0c2678dd35731a0
+$ docker pull nats@sha256:5aa97ff134b80e48aaa63c71d9c8343062cb648de6445e6d078b62dab5b08a3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 KB (10523 bytes)**  
+-	Total Size: **10.6 KB (10556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dff58880fe981b8b31c473e8e992460d1ef7a218db9dd4ffc3a951750055bfd3`
+-	Image ID: `sha256:6f8af43893a1163e246e9f97ae6b6ca899d5147c74db410070388f3dc6b1bb9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9bb52fda18a732bf8f1ead6cd17dd200cfcae43fd84710a4ddb71372c0815f2b`  
-		Last Modified: Mon, 31 Mar 2025 20:07:36 GMT  
-		Size: 10.5 KB (10523 bytes)  
+	-	`sha256:b2dde84b1c72b35f921945f0d6bec4b01ff2c811e34deff66dc5a99577731ade`  
+		Last Modified: Tue, 08 Apr 2025 22:18:51 GMT  
+		Size: 10.6 KB (10556 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `nats:2-scratch` - linux; s390x
+
+```console
+$ docker pull nats@sha256:24602554caa826a00e26b3dae9c589026eaab3e0ad8e59cb573cac3996e62f8f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.1 MB (6122577 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7976c47bfec0473931b30ef2753bdc1cefde06b7a03f869cabb36b78aee6fd30`
+-	Entrypoint: `["\/nats-server"]`
+-	Default Command: `["--config","nats-server.conf"]`
+
+```dockerfile
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
+# Tue, 08 Apr 2025 17:23:05 GMT
+COPY /usr/local/bin/nats-server /nats-server # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
+COPY nats-server.conf /nats-server.conf # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
+EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENTRYPOINT ["/nats-server"]
+# Tue, 08 Apr 2025 17:23:05 GMT
+CMD ["--config" "nats-server.conf"]
+```
+
+-	Layers:
+	-	`sha256:096b0701966ee2a29da8fc2c3f8ad25d2a0bb1211425d296e92558196ebe09c9`  
+		Last Modified: Tue, 08 Apr 2025 17:26:22 GMT  
+		Size: 6.1 MB (6122069 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c50402e49c7c832b57fb874a3e012194a27d09597f2d39ddc97db3701ae5bfb7`  
+		Last Modified: Tue, 08 Apr 2025 22:07:44 GMT  
+		Size: 508.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `nats:2-scratch` - unknown; unknown
+
+```console
+$ docker pull nats@sha256:6f2d2b491eee799540891efc47f6f00293192e82097e7b80bb5fd571bbf312c0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.5 KB (10466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8736b1c1aaa3dce6b14a6b7b5cad1d5cc142fae7d7d9fd17b8a6d72e67a82268`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1ab1e3d26d57dec0dbbe6b34b8c0c23c6308ed6e3e58b9267695ff2247985c40`  
+		Last Modified: Tue, 08 Apr 2025 22:07:44 GMT  
+		Size: 10.5 KB (10466 bytes)  
 		MIME: application/vnd.in-toto+json

@@ -1,7 +1,7 @@
 ## `nats:2-alpine`
 
 ```console
-$ docker pull nats@sha256:222b8a7f2b9cbef1a51d412a5782ee75eac04062413d61c960b051e29c214115
+$ docker pull nats@sha256:f3d9be9e3809381297c6fc2e1d071bbab2ff25df5fa89e89edbd00fce34f1ca0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull nats@sha256:222b8a7f2b9cbef1a51d412a5782ee75eac04062413d61c960b051
 ### `nats:2-alpine` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:d2bfc2b0b53f2a35c4b1c6fb432695b13dd232bdb551ea62c9fc00148520401f
+$ docker pull nats@sha256:7cbd5f7f5326233bf97e186073144217f7b98b8cf904d0d83ba9ff08caf6f0d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10386128 bytes)**  
+-	Total Size: **10.4 MB (10386082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6a871a4d4c93dc7e032ef72a3a722439e2ce32e96063585474891c6b654043f`
+-	Image ID: `sha256:a900eac76440acf8f75c33c7a37e9103f53d792b082074036e8ee5a2df6903ef`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -37,19 +37,19 @@ $ docker pull nats@sha256:d2bfc2b0b53f2a35c4b1c6fb432695b13dd232bdb551ea62c9fc00
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV NATS_SERVER=2.11.1-binary
-# Mon, 31 Mar 2025 17:39:54 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='2499105f9e64bef55f168f634d34a586b710f6ac041639d8a18364f2b4f4c410' ;; 		armhf) natsArch='arm6'; sha256='31bc11906458e30c8028cdd0301de98713074db73f5e352f58ce4ecd6b1cc641' ;; 		armv7) natsArch='arm7'; sha256='432f4c47cf5adca05da67f1feaf969f6cea50ed9c3bb743a8bb76b8c5c583c8e' ;; 		x86_64) natsArch='amd64'; sha256='827497f99acd54eb0e4e8bfa3b0eb31dd51c6c259110de11a45a7fdacae6c5b3' ;; 		x86) natsArch='386'; sha256='651065e2170ee0f7e244425c0d0ba30a38776a7aef75e2d5cba0b8b11a950c54' ;; 		s390x) natsArch='s390x'; sha256='23e6ce6b70f9b973106d325eebb8bdd613040bedd4da980ff0aea2d2a7dc122e' ;; 		ppc64le) natsArch='ppc64le'; sha256='5341f41ef6298b05b72dd77c1ec055aeacb1b57dfd600ec888317347b3b4cbf8' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV NATS_SERVER=2.11.1
+# Tue, 08 Apr 2025 17:23:05 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='27c90d8bc0ad10bfb38ef92bdea8528b4bfc5aa56afba91c790fb3921ea205a2' ;; 		armhf) natsArch='arm6'; sha256='8f9f2f4aa85c242f254a175c9455e9d00c6a0e7fc96b87a14ef3bd6d8762e900' ;; 		armv7) natsArch='arm7'; sha256='06dee81c2fd32639ae646112daaf9b84b71023bee88b16fd3324fd922095dda1' ;; 		x86_64) natsArch='amd64'; sha256='f1d9754bf34316d1f7d349b176ff0414c9cce742846bf2eec0b402eee35a638c' ;; 		x86) natsArch='386'; sha256='b746e832f96f07ee5958c99201b7a96695a3e1339f416342b9fd3c083a68dba7' ;; 		s390x) natsArch='s390x'; sha256='018ec95e10758c3e6ea14f034d3fe099234957dec8290bc5aa3480a8d77e3e29' ;; 		ppc64le) natsArch='ppc64le'; sha256='be0f9308ffcdfa36189afdf7e8116235995d7d20406c0fc7b8aa5b5f724aa3d6' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -58,49 +58,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0643a146757fce88425f18db35388da5f1441b9e655395106fc3b6de8f7779a`  
-		Last Modified: Mon, 31 Mar 2025 18:43:34 GMT  
-		Size: 6.7 MB (6742912 bytes)  
+	-	`sha256:2bffd47baa898ba4523ccc09b26058ea27891e234ee7563e763b8f9bd29bde2e`  
+		Last Modified: Tue, 08 Apr 2025 20:28:15 GMT  
+		Size: 6.7 MB (6742867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f810863f848d47b0ec90164d81013c3f49b7d5d94bf9c42a73558dc7c46cfce`  
-		Last Modified: Mon, 31 Mar 2025 18:43:33 GMT  
+	-	`sha256:63af34edcf916551729eef83c51841b9403e9bedf717838e0dedfe7e5bfa977b`  
+		Last Modified: Tue, 08 Apr 2025 20:28:15 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3295cd3199e071474b886bbbcf41ef4c12302ddbe5f1bd9283c8e119abcefe39`  
-		Last Modified: Mon, 31 Mar 2025 18:43:33 GMT  
-		Size: 409.0 B  
+	-	`sha256:f9081de8dcbbc97f988fe2e6b0695f7eaea0f8774966c467ed29bd8602391ff9`  
+		Last Modified: Tue, 08 Apr 2025 20:28:14 GMT  
+		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:7a817ee3d7045d87d4f49299e408201d1118ee221fdda63c5b66733871a32dea
+$ docker pull nats@sha256:062f6b7155ed98648412670dffe43c7be1f4768f50bfa3fa63ba59b794ec300c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.4 KB (14360 bytes)**  
+-	Total Size: **14.3 KB (14317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89e54e9039e9d3c99605b12728bbecef9c9479593bdf67a68e894df9ecba60c4`
+-	Image ID: `sha256:57b2af7e3b213deee44fd319c5441ec699c53280a665cf650e9eec87b50af831`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d380a2bbbdfb0718224f60b142dc29624483f0d28fa0552fb8e915ab9c1d69d2`  
-		Last Modified: Mon, 31 Mar 2025 18:43:33 GMT  
-		Size: 14.4 KB (14360 bytes)  
+	-	`sha256:df59247835527b1024e29a039c6dd53ac255e4500ded522b5e05635e9495a453`  
+		Last Modified: Tue, 08 Apr 2025 20:28:15 GMT  
+		Size: 14.3 KB (14317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats@sha256:5b003eca587d5d1ded87d52f52a88b49c6091e2ae6ffcbcc9591ef31edfb1153
+$ docker pull nats@sha256:33bedd609f7f7f31c7a609239dff642b098d339b2ae5c72f358aca3b0bdfcd99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.8 MB (9830711 bytes)**  
+-	Total Size: **9.8 MB (9830618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd78fe0bc28317f1acadcd3ed9a09443a843f5cf68ef058de361ff0570543e01`
+-	Image ID: `sha256:f144ccbbca357bd10e864ad6a9469caf63d49af1182de50d7da5e3d4641bcf0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -109,19 +109,19 @@ $ docker pull nats@sha256:5b003eca587d5d1ded87d52f52a88b49c6091e2ae6ffcbcc9591ef
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV NATS_SERVER=2.11.1-binary
-# Mon, 31 Mar 2025 17:39:54 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='2499105f9e64bef55f168f634d34a586b710f6ac041639d8a18364f2b4f4c410' ;; 		armhf) natsArch='arm6'; sha256='31bc11906458e30c8028cdd0301de98713074db73f5e352f58ce4ecd6b1cc641' ;; 		armv7) natsArch='arm7'; sha256='432f4c47cf5adca05da67f1feaf969f6cea50ed9c3bb743a8bb76b8c5c583c8e' ;; 		x86_64) natsArch='amd64'; sha256='827497f99acd54eb0e4e8bfa3b0eb31dd51c6c259110de11a45a7fdacae6c5b3' ;; 		x86) natsArch='386'; sha256='651065e2170ee0f7e244425c0d0ba30a38776a7aef75e2d5cba0b8b11a950c54' ;; 		s390x) natsArch='s390x'; sha256='23e6ce6b70f9b973106d325eebb8bdd613040bedd4da980ff0aea2d2a7dc122e' ;; 		ppc64le) natsArch='ppc64le'; sha256='5341f41ef6298b05b72dd77c1ec055aeacb1b57dfd600ec888317347b3b4cbf8' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV NATS_SERVER=2.11.1
+# Tue, 08 Apr 2025 17:23:05 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='27c90d8bc0ad10bfb38ef92bdea8528b4bfc5aa56afba91c790fb3921ea205a2' ;; 		armhf) natsArch='arm6'; sha256='8f9f2f4aa85c242f254a175c9455e9d00c6a0e7fc96b87a14ef3bd6d8762e900' ;; 		armv7) natsArch='arm7'; sha256='06dee81c2fd32639ae646112daaf9b84b71023bee88b16fd3324fd922095dda1' ;; 		x86_64) natsArch='amd64'; sha256='f1d9754bf34316d1f7d349b176ff0414c9cce742846bf2eec0b402eee35a638c' ;; 		x86) natsArch='386'; sha256='b746e832f96f07ee5958c99201b7a96695a3e1339f416342b9fd3c083a68dba7' ;; 		s390x) natsArch='s390x'; sha256='018ec95e10758c3e6ea14f034d3fe099234957dec8290bc5aa3480a8d77e3e29' ;; 		ppc64le) natsArch='ppc64le'; sha256='be0f9308ffcdfa36189afdf7e8116235995d7d20406c0fc7b8aa5b5f724aa3d6' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -130,49 +130,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Fri, 14 Feb 2025 18:28:03 GMT  
 		Size: 3.4 MB (3364731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c92f9bdc82b0d8955653988d31a42d2d808133d9b313a6f16c7c1fc6187ce7c3`  
-		Last Modified: Mon, 31 Mar 2025 18:50:14 GMT  
-		Size: 6.5 MB (6465008 bytes)  
+	-	`sha256:9048a08e892a91b40d37a992fb9228a855e04b86a0193658785404d407502c36`  
+		Last Modified: Tue, 08 Apr 2025 20:28:28 GMT  
+		Size: 6.5 MB (6464916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88f8f3e30080f28fb154a8574bfa9e68094196baa500cc70232b4b6a993d7d96`  
-		Last Modified: Mon, 31 Mar 2025 18:50:13 GMT  
-		Size: 562.0 B  
+	-	`sha256:64b28e407313ff54262ed40c18741ab1d8d650c46875eb53e1f4dae7a19d64f0`  
+		Last Modified: Tue, 08 Apr 2025 20:28:28 GMT  
+		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b07ed84ffecb4fe35014c6ec28f044236b811f87738a6e32d50061b6cdcf8913`  
-		Last Modified: Mon, 31 Mar 2025 18:50:13 GMT  
+	-	`sha256:1037b517e6fb05b376c0f845c2de48f91d85acef85548878752fff9e0e5fcb4e`  
+		Last Modified: Tue, 08 Apr 2025 20:28:28 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:25ca21f30fda2b87f68ede801458791fdf7fb7571b1dfc4c5b92a80f7287b667
+$ docker pull nats@sha256:f99dfd48fc9fbd2ad2bda5e2128399c2608b793c2df1677489b75ed55c958c80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14468 bytes)**  
+-	Total Size: **14.4 KB (14425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa2e55e1097547a0c5dc17d479d5b338734fce9c9e83240bf6a9eb19569188a`
+-	Image ID: `sha256:76d73ac2a38ee74207ea6780edbe4013fa25eafa0ecf5318e88d09592d7da396`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f659982640e897f8f52e71b1b320e9ea56d5354063a38cf666928fe3ccf97400`  
-		Last Modified: Mon, 31 Mar 2025 18:50:13 GMT  
-		Size: 14.5 KB (14468 bytes)  
+	-	`sha256:a5c19b7d31f9642dc7ccbb0d73e2008fec7c606c270d5f41a4a1d534c57eb386`  
+		Last Modified: Tue, 08 Apr 2025 20:28:27 GMT  
+		Size: 14.4 KB (14425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nats@sha256:f6f902d9d220b13f8c52befb0e4f2520a530e999e9d0d7e3b4a7c96d1d6a2d4e
+$ docker pull nats@sha256:2f0c0883a1c8a7dd3a93730ce2ca646928c272aba42b05b5d163f5e779696f63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 MB (9552225 bytes)**  
+-	Total Size: **9.6 MB (9552050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f49a7e1e59161babacc6a62e07238abd7b349a8efc80a4bfd1523785ae8ece72`
+-	Image ID: `sha256:28191bc799228c242ab1ebf65c8eaa89c320b25a78ee799103e544b8250226d2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -181,19 +181,19 @@ $ docker pull nats@sha256:f6f902d9d220b13f8c52befb0e4f2520a530e999e9d0d7e3b4a7c9
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV NATS_SERVER=2.11.1-binary
-# Mon, 31 Mar 2025 17:39:54 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='2499105f9e64bef55f168f634d34a586b710f6ac041639d8a18364f2b4f4c410' ;; 		armhf) natsArch='arm6'; sha256='31bc11906458e30c8028cdd0301de98713074db73f5e352f58ce4ecd6b1cc641' ;; 		armv7) natsArch='arm7'; sha256='432f4c47cf5adca05da67f1feaf969f6cea50ed9c3bb743a8bb76b8c5c583c8e' ;; 		x86_64) natsArch='amd64'; sha256='827497f99acd54eb0e4e8bfa3b0eb31dd51c6c259110de11a45a7fdacae6c5b3' ;; 		x86) natsArch='386'; sha256='651065e2170ee0f7e244425c0d0ba30a38776a7aef75e2d5cba0b8b11a950c54' ;; 		s390x) natsArch='s390x'; sha256='23e6ce6b70f9b973106d325eebb8bdd613040bedd4da980ff0aea2d2a7dc122e' ;; 		ppc64le) natsArch='ppc64le'; sha256='5341f41ef6298b05b72dd77c1ec055aeacb1b57dfd600ec888317347b3b4cbf8' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV NATS_SERVER=2.11.1
+# Tue, 08 Apr 2025 17:23:05 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='27c90d8bc0ad10bfb38ef92bdea8528b4bfc5aa56afba91c790fb3921ea205a2' ;; 		armhf) natsArch='arm6'; sha256='8f9f2f4aa85c242f254a175c9455e9d00c6a0e7fc96b87a14ef3bd6d8762e900' ;; 		armv7) natsArch='arm7'; sha256='06dee81c2fd32639ae646112daaf9b84b71023bee88b16fd3324fd922095dda1' ;; 		x86_64) natsArch='amd64'; sha256='f1d9754bf34316d1f7d349b176ff0414c9cce742846bf2eec0b402eee35a638c' ;; 		x86) natsArch='386'; sha256='b746e832f96f07ee5958c99201b7a96695a3e1339f416342b9fd3c083a68dba7' ;; 		s390x) natsArch='s390x'; sha256='018ec95e10758c3e6ea14f034d3fe099234957dec8290bc5aa3480a8d77e3e29' ;; 		ppc64le) natsArch='ppc64le'; sha256='be0f9308ffcdfa36189afdf7e8116235995d7d20406c0fc7b8aa5b5f724aa3d6' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -202,49 +202,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.1 MB (3098123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4be7f6d278a4174ef17dcd8c89848f067134976f430004cbed069643b89e46e8`  
-		Last Modified: Mon, 31 Mar 2025 20:17:05 GMT  
-		Size: 6.5 MB (6453133 bytes)  
+	-	`sha256:e9b82717f71af9d7a4242a00c3efbdf445cc5b3122fb74530e7d5e2971036151`  
+		Last Modified: Tue, 08 Apr 2025 20:32:08 GMT  
+		Size: 6.5 MB (6452958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:825c724725f466486a81cdde1ec6a92840eb03f19fc7c9f6c2361d13f3398293`  
-		Last Modified: Mon, 31 Mar 2025 20:17:04 GMT  
+	-	`sha256:e49791283070c29e615bbe60ca9b43f0b5c63e67560f09700c02a4920fc31499`  
+		Last Modified: Tue, 08 Apr 2025 20:32:07 GMT  
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe87685444a72475e87e5ffbb1baff8c65017859e8e53c72573fc546273e8ef6`  
-		Last Modified: Mon, 31 Mar 2025 20:17:04 GMT  
+	-	`sha256:e0ade19b2805065881eeef7b4e282331a2f7fbd91f70c6349b33b2d448e8dc64`  
+		Last Modified: Tue, 08 Apr 2025 20:32:07 GMT  
 		Size: 409.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:860dd6d0c495dc91deb8a4c27e98247c01e7cc5ba0a4a80d0e33430aaa5695db
+$ docker pull nats@sha256:f66e974c49c5b42df6f26cfe23be843bed87adb4df5efde68922bcd9bcdb0654
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14468 bytes)**  
+-	Total Size: **14.4 KB (14425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41756094504db64ff2b19360c941882401645db6e11cb7b116c9cc5d965c1002`
+-	Image ID: `sha256:45fd3c0542a49a774cbfafb32d74dcb38bb7230e53a346c90ea2dc92652e671d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a83dd1e9193bcbd50a20cfab9ac07e63cb0d3f71b71000fc9b9e4456a63ddc2c`  
-		Last Modified: Mon, 31 Mar 2025 20:17:04 GMT  
-		Size: 14.5 KB (14468 bytes)  
+	-	`sha256:dafec31d0d294d05c575a7f27247bd7720e66c489584ce418ed700595bb00c9f`  
+		Last Modified: Tue, 08 Apr 2025 20:32:07 GMT  
+		Size: 14.4 KB (14425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nats@sha256:90874ce66332c5ed35925509121cc1231be38266af7f5efe7097f37a54610dc0
+$ docker pull nats@sha256:bc972962a3f6fd357ba4b57dcf878b3c6958fa2fbf75b65bf909c33b47f740e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10234990 bytes)**  
+-	Total Size: **10.2 MB (10234750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e934c9514dbf2966156ca2a5b60a8c62eab86a1d0e9316d96e587bc52837aff`
+-	Image ID: `sha256:413538651b4a89933595bd87d769140c04c8eae8fac10ef3ff3a2d91bc53712f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -253,19 +253,19 @@ $ docker pull nats@sha256:90874ce66332c5ed35925509121cc1231be38266af7f5efe7097f3
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV NATS_SERVER=2.11.1-binary
-# Mon, 31 Mar 2025 17:39:54 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='2499105f9e64bef55f168f634d34a586b710f6ac041639d8a18364f2b4f4c410' ;; 		armhf) natsArch='arm6'; sha256='31bc11906458e30c8028cdd0301de98713074db73f5e352f58ce4ecd6b1cc641' ;; 		armv7) natsArch='arm7'; sha256='432f4c47cf5adca05da67f1feaf969f6cea50ed9c3bb743a8bb76b8c5c583c8e' ;; 		x86_64) natsArch='amd64'; sha256='827497f99acd54eb0e4e8bfa3b0eb31dd51c6c259110de11a45a7fdacae6c5b3' ;; 		x86) natsArch='386'; sha256='651065e2170ee0f7e244425c0d0ba30a38776a7aef75e2d5cba0b8b11a950c54' ;; 		s390x) natsArch='s390x'; sha256='23e6ce6b70f9b973106d325eebb8bdd613040bedd4da980ff0aea2d2a7dc122e' ;; 		ppc64le) natsArch='ppc64le'; sha256='5341f41ef6298b05b72dd77c1ec055aeacb1b57dfd600ec888317347b3b4cbf8' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV NATS_SERVER=2.11.1
+# Tue, 08 Apr 2025 17:23:05 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='27c90d8bc0ad10bfb38ef92bdea8528b4bfc5aa56afba91c790fb3921ea205a2' ;; 		armhf) natsArch='arm6'; sha256='8f9f2f4aa85c242f254a175c9455e9d00c6a0e7fc96b87a14ef3bd6d8762e900' ;; 		armv7) natsArch='arm7'; sha256='06dee81c2fd32639ae646112daaf9b84b71023bee88b16fd3324fd922095dda1' ;; 		x86_64) natsArch='amd64'; sha256='f1d9754bf34316d1f7d349b176ff0414c9cce742846bf2eec0b402eee35a638c' ;; 		x86) natsArch='386'; sha256='b746e832f96f07ee5958c99201b7a96695a3e1339f416342b9fd3c083a68dba7' ;; 		s390x) natsArch='s390x'; sha256='018ec95e10758c3e6ea14f034d3fe099234957dec8290bc5aa3480a8d77e3e29' ;; 		ppc64le) natsArch='ppc64le'; sha256='be0f9308ffcdfa36189afdf7e8116235995d7d20406c0fc7b8aa5b5f724aa3d6' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -274,49 +274,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60797fdb0b4d910be869065ae81ab51200fbe5544785eb4efa8fc7cb9eb3033e`  
-		Last Modified: Mon, 31 Mar 2025 20:11:13 GMT  
-		Size: 6.2 MB (6240991 bytes)  
+	-	`sha256:7b621e6959e97eb3ca377c901a7c1245231edc4c09198cb628915b5d3e10736c`  
+		Last Modified: Tue, 08 Apr 2025 21:41:26 GMT  
+		Size: 6.2 MB (6240748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dda5bbcac3d56d1f2414331f89b9333ef3393083b91ce07a2face8802428335`  
-		Last Modified: Mon, 31 Mar 2025 20:11:12 GMT  
-		Size: 560.0 B  
+	-	`sha256:1118a4f264db0d527eda19b814faffbbb61a8097f95ef2157fab3c21c0da752e`  
+		Last Modified: Tue, 08 Apr 2025 21:41:25 GMT  
+		Size: 562.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c42e24e15c065a92a28be68d337a0e3f21fc9b4bee9e5e931179ab16a647031`  
-		Last Modified: Mon, 31 Mar 2025 20:11:12 GMT  
-		Size: 410.0 B  
+	-	`sha256:cd107cb6fb6fc67b6484a7213268c505f995d9ec489e02602183d895d2cf6142`  
+		Last Modified: Tue, 08 Apr 2025 21:41:25 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:061fa681d240f27b08e83d14d855bff8191035c3944adf647afab28af9d67b5f
+$ docker pull nats@sha256:dbcfea7b097433117d3ae7e09f5c5824d45dd3d22107d68ef1a2d3080a3742ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14512 bytes)**  
+-	Total Size: **14.5 KB (14468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a76bc64a67b68410441588e0e8ebc82c70ec9260099bfb6d4d5154152785d62`
+-	Image ID: `sha256:43ca0929e9d902e26a1809f5bc3001f3f41b0dc140fd461409cd02b47a6b7219`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5b3a7763692c9fffeebb31f53b8a14d7192250292c1661653d8912d27e67bd34`  
-		Last Modified: Mon, 31 Mar 2025 20:11:12 GMT  
-		Size: 14.5 KB (14512 bytes)  
+	-	`sha256:6477b5d99ee19ec70115adc1465de3de4a5c61690c1f3f6c597057a749b64c3a`  
+		Last Modified: Tue, 08 Apr 2025 21:41:25 GMT  
+		Size: 14.5 KB (14468 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nats@sha256:f09b96d5bfacda0649814f91facba68b0ecca96de4ebdea7e17dfde79f1ada96
+$ docker pull nats@sha256:6b6b1109a98eafc180bae27e0e27a1110433dfd3577e78cac2d8eb793969fc43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.8 MB (9796685 bytes)**  
+-	Total Size: **9.8 MB (9797332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10c6bb2aed5161b870f53898cce57635999f3e6368d89209be712832cb7caae3`
+-	Image ID: `sha256:52bb4f9d9231f9b6c625e4a3a3f2874bd83248ad61158f697eb327444118f598`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -325,19 +325,19 @@ $ docker pull nats@sha256:f09b96d5bfacda0649814f91facba68b0ecca96de4ebdea7e17dfd
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV NATS_SERVER=2.11.1-binary
-# Mon, 31 Mar 2025 17:39:54 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='2499105f9e64bef55f168f634d34a586b710f6ac041639d8a18364f2b4f4c410' ;; 		armhf) natsArch='arm6'; sha256='31bc11906458e30c8028cdd0301de98713074db73f5e352f58ce4ecd6b1cc641' ;; 		armv7) natsArch='arm7'; sha256='432f4c47cf5adca05da67f1feaf969f6cea50ed9c3bb743a8bb76b8c5c583c8e' ;; 		x86_64) natsArch='amd64'; sha256='827497f99acd54eb0e4e8bfa3b0eb31dd51c6c259110de11a45a7fdacae6c5b3' ;; 		x86) natsArch='386'; sha256='651065e2170ee0f7e244425c0d0ba30a38776a7aef75e2d5cba0b8b11a950c54' ;; 		s390x) natsArch='s390x'; sha256='23e6ce6b70f9b973106d325eebb8bdd613040bedd4da980ff0aea2d2a7dc122e' ;; 		ppc64le) natsArch='ppc64le'; sha256='5341f41ef6298b05b72dd77c1ec055aeacb1b57dfd600ec888317347b3b4cbf8' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV NATS_SERVER=2.11.1
+# Tue, 08 Apr 2025 17:23:05 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='27c90d8bc0ad10bfb38ef92bdea8528b4bfc5aa56afba91c790fb3921ea205a2' ;; 		armhf) natsArch='arm6'; sha256='8f9f2f4aa85c242f254a175c9455e9d00c6a0e7fc96b87a14ef3bd6d8762e900' ;; 		armv7) natsArch='arm7'; sha256='06dee81c2fd32639ae646112daaf9b84b71023bee88b16fd3324fd922095dda1' ;; 		x86_64) natsArch='amd64'; sha256='f1d9754bf34316d1f7d349b176ff0414c9cce742846bf2eec0b402eee35a638c' ;; 		x86) natsArch='386'; sha256='b746e832f96f07ee5958c99201b7a96695a3e1339f416342b9fd3c083a68dba7' ;; 		s390x) natsArch='s390x'; sha256='018ec95e10758c3e6ea14f034d3fe099234957dec8290bc5aa3480a8d77e3e29' ;; 		ppc64le) natsArch='ppc64le'; sha256='be0f9308ffcdfa36189afdf7e8116235995d7d20406c0fc7b8aa5b5f724aa3d6' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -346,49 +346,49 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:299c0ee564e4568e71d43a566874e9d853458071d554386ad5728913e55f5d42`  
-		Last Modified: Mon, 31 Mar 2025 19:45:06 GMT  
-		Size: 6.2 MB (6221370 bytes)  
+	-	`sha256:1d8be7344e3eed187cfb792f8b098e4b9639bd0e5318ceffb68a33a3bad2164c`  
+		Last Modified: Tue, 08 Apr 2025 20:42:59 GMT  
+		Size: 6.2 MB (6222020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1af98871a1453d715b201d0cb6c30c2e8240dd12ee7af67f4334bfb80877f3bb`  
-		Last Modified: Mon, 31 Mar 2025 19:45:05 GMT  
-		Size: 562.0 B  
+	-	`sha256:bd19bdb0c54b34703a3579dcae0cd27d09d0ed9ac711591a13fba04c9a89aacf`  
+		Last Modified: Tue, 08 Apr 2025 20:42:58 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:103d308786c4f17ef7f21746eadc69443e28518b33fd5534040a513bbb5acc64`  
-		Last Modified: Mon, 31 Mar 2025 19:45:05 GMT  
-		Size: 408.0 B  
+	-	`sha256:f2608514a04b63ea4ad3654f5acd693a1bc97dc1d1c8b8a1495df0e53dda6ff0`  
+		Last Modified: Tue, 08 Apr 2025 20:42:58 GMT  
+		Size: 407.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:261ca6909da20cd9b36804c44211d5a257a4f0a8746e425a8d63cebe1ff274eb
+$ docker pull nats@sha256:28f492787cca2adfb7bcfcb21be59f4685caad51e81ff81fac96d5d46445c776
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.4 KB (14427 bytes)**  
+-	Total Size: **14.4 KB (14385 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bf43f070134532bf9419111138ee6504a3b9010b90d59e6380375b5b9a4abcf`
+-	Image ID: `sha256:ada670995406f8a9d5e52233a0003738fc8c1933710c4de448e87af34e5a3863`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09877c6dec89674d2ec4aefc8edd75ff573a4834ca2851e1a4be89994ffcd528`  
-		Last Modified: Mon, 31 Mar 2025 19:45:05 GMT  
-		Size: 14.4 KB (14427 bytes)  
+	-	`sha256:e269226b323faa520a451de66e148284583959e77af2bf7d56a4d350cc37623a`  
+		Last Modified: Tue, 08 Apr 2025 20:42:58 GMT  
+		Size: 14.4 KB (14385 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nats:2-alpine` - linux; s390x
 
 ```console
-$ docker pull nats@sha256:c14e89986785ed37ac2931d4b307ea84375f49180341e48c9024fe40f226decc
+$ docker pull nats@sha256:cf54ecfbde97d03a9d1a1bfdbcf069c2683ef48f34d72013b9064f5ed0ab9183
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.1 MB (10053962 bytes)**  
+-	Total Size: **10.1 MB (10053959 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:893690471f61ea43e10126b7ceb4fd7a07fd98eb86fff95edc6cd8cf10d1e4ef`
+-	Image ID: `sha256:f94c74252361e5594561679a5358b7e135dd9c7c2f3c51be0138903f04c6aa8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-server","--config","\/etc\/nats\/nats-server.conf"]`
 
@@ -397,19 +397,19 @@ $ docker pull nats@sha256:c14e89986785ed37ac2931d4b307ea84375f49180341e48c9024fe
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
-ENV NATS_SERVER=2.11.1-binary
-# Mon, 31 Mar 2025 17:39:54 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='2499105f9e64bef55f168f634d34a586b710f6ac041639d8a18364f2b4f4c410' ;; 		armhf) natsArch='arm6'; sha256='31bc11906458e30c8028cdd0301de98713074db73f5e352f58ce4ecd6b1cc641' ;; 		armv7) natsArch='arm7'; sha256='432f4c47cf5adca05da67f1feaf969f6cea50ed9c3bb743a8bb76b8c5c583c8e' ;; 		x86_64) natsArch='amd64'; sha256='827497f99acd54eb0e4e8bfa3b0eb31dd51c6c259110de11a45a7fdacae6c5b3' ;; 		x86) natsArch='386'; sha256='651065e2170ee0f7e244425c0d0ba30a38776a7aef75e2d5cba0b8b11a950c54' ;; 		s390x) natsArch='s390x'; sha256='23e6ce6b70f9b973106d325eebb8bdd613040bedd4da980ff0aea2d2a7dc122e' ;; 		ppc64le) natsArch='ppc64le'; sha256='5341f41ef6298b05b72dd77c1ec055aeacb1b57dfd600ec888317347b3b4cbf8' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
+ENV NATS_SERVER=2.11.1
+# Tue, 08 Apr 2025 17:23:05 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='27c90d8bc0ad10bfb38ef92bdea8528b4bfc5aa56afba91c790fb3921ea205a2' ;; 		armhf) natsArch='arm6'; sha256='8f9f2f4aa85c242f254a175c9455e9d00c6a0e7fc96b87a14ef3bd6d8762e900' ;; 		armv7) natsArch='arm7'; sha256='06dee81c2fd32639ae646112daaf9b84b71023bee88b16fd3324fd922095dda1' ;; 		x86_64) natsArch='amd64'; sha256='f1d9754bf34316d1f7d349b176ff0414c9cce742846bf2eec0b402eee35a638c' ;; 		x86) natsArch='386'; sha256='b746e832f96f07ee5958c99201b7a96695a3e1339f416342b9fd3c083a68dba7' ;; 		s390x) natsArch='s390x'; sha256='018ec95e10758c3e6ea14f034d3fe099234957dec8290bc5aa3480a8d77e3e29' ;; 		ppc64le) natsArch='ppc64le'; sha256='be0f9308ffcdfa36189afdf7e8116235995d7d20406c0fc7b8aa5b5f724aa3d6' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates tzdata; 		tar -xf nats-server.tar.gz; 	rm nats-server.tar.gz; 	mv "nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server" /usr/local/bin; 	rm -rf "nats-server-v${NATS_SERVER}-linux-${natsArch}"; # buildkit
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY nats-server.conf /etc/nats/nats-server.conf # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Mar 2025 17:39:54 GMT
+# Tue, 08 Apr 2025 17:23:05 GMT
 CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 ```
 
@@ -418,35 +418,35 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a67f000d40cf6813dabcb134d2a9b15f3b7eb5ba7dba583ad1df023b35efd9ca`  
-		Last Modified: Mon, 31 Mar 2025 19:28:46 GMT  
-		Size: 6.6 MB (6585424 bytes)  
+	-	`sha256:4a92fbe14b2cdd6c1a85f89f171cfbad87c0f00fc6205b2d6c5cfa29cf51cf30`  
+		Last Modified: Tue, 08 Apr 2025 22:04:28 GMT  
+		Size: 6.6 MB (6585420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4501a9ec92d7d9a89fd0e10cd2ba4c8fb93658a4d46301543d45d1f96b07ce32`  
-		Last Modified: Mon, 31 Mar 2025 19:28:45 GMT  
-		Size: 561.0 B  
+	-	`sha256:bc913d6647309b3286a51c5f87c54edfb961dd53b9ca8a4496335154e303ab2e`  
+		Last Modified: Tue, 08 Apr 2025 22:04:28 GMT  
+		Size: 562.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06c2b65e72a2a266d2d783396559cd0ee8346a11e25f65ca2b21cc82de4174b6`  
-		Last Modified: Mon, 31 Mar 2025 19:28:45 GMT  
+	-	`sha256:d22b8967d9a9d213c271cc67dcbe1d89b5b0870a2d2a399344c51f7cdc25b2c7`  
+		Last Modified: Tue, 08 Apr 2025 22:04:28 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-alpine` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:82ec15847478c49a8a561d7f21d2239bbea2614e277659456213e6bdd0f5dd49
+$ docker pull nats@sha256:b55039b07dc68ae69425511e99ab099b60f707e9a565a17a0d28e21a33c1f346
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.4 KB (14360 bytes)**  
+-	Total Size: **14.3 KB (14316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:443d1aa445d5406aada9c0970885e837d983ea976af12760bad0de2704481f16`
+-	Image ID: `sha256:d4570b0028f776dbca1deaabac6952192f625b95ec93d8098c7058262a3ca4b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:688e4b2d5f0fdef107c3405864e3c9cc14ae13fd320ceddce8f4667dcde9d786`  
-		Last Modified: Mon, 31 Mar 2025 19:28:45 GMT  
-		Size: 14.4 KB (14360 bytes)  
+	-	`sha256:5b1859f0680f19779c89b10a96fe392f905b04060b6ca55b19696d4fc51ece7c`  
+		Last Modified: Tue, 08 Apr 2025 22:04:28 GMT  
+		Size: 14.3 KB (14316 bytes)  
 		MIME: application/vnd.in-toto+json
