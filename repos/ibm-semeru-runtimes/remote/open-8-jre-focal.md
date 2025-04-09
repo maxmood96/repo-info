@@ -1,7 +1,7 @@
 ## `ibm-semeru-runtimes:open-8-jre-focal`
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:17b99a2326df2038448d5a8ae133d36d4ab5bc0553ce0abae2a47a2a9d3705a3
+$ docker pull ibm-semeru-runtimes@sha256:33a8e41e11ce879238b24f2df54436a821969da760e11c707625d75c688925ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,27 +18,27 @@ $ docker pull ibm-semeru-runtimes@sha256:17b99a2326df2038448d5a8ae133d36d4ab5bc0
 ### `ibm-semeru-runtimes:open-8-jre-focal` - linux; amd64
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:55c0351132486290a6b3ce6463d4323ec2c2d10328fd013bd127f493311dab3c
+$ docker pull ibm-semeru-runtimes@sha256:6ff14dbf8d3624dba10b0b81ebec6b4a7f249e1c0cbaa6ced5e1453b72e003d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.3 MB (98289389 bytes)**  
+-	Total Size: **98.2 MB (98238279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a887546253edc38eae696a4b9e6971d425a37f5aad28b2e3837913840004de4a`
+-	Image ID: `sha256:e4946e774b36325e5fac9a354602d73ba1cccfb4df3bee7626aaf36c79cccffe`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 13 Mar 2025 08:54:45 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 13 Mar 2025 08:54:45 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 13 Mar 2025 08:54:45 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 13 Mar 2025 08:54:45 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
-ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 13 Mar 2025 08:54:45 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Thu, 13 Mar 2025 08:54:45 GMT
 CMD ["/bin/bash"]
 # Thu, 13 Mar 2025 08:54:45 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
@@ -57,44 +57,44 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ```
 
 -	Layers:
-	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
-		Size: 27.5 MB (27511060 bytes)  
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e85b1bc481a31d7a7be2176aa110342573edf74651a1b49a417c7da3cd26cd5e`  
-		Last Modified: Mon, 24 Mar 2025 17:03:52 GMT  
-		Size: 16.1 MB (16076103 bytes)  
+	-	`sha256:4c1b79d96e4cb136bb9a2e2831db278696e92986b23423003bdde4e78badce65`  
+		Last Modified: Wed, 09 Apr 2025 01:23:51 GMT  
+		Size: 16.1 MB (16081854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21f7a414bfc63fd84afa0f8fe908a06ff00779606e550d90f2707f527f7fddb4`  
-		Last Modified: Mon, 24 Mar 2025 17:03:53 GMT  
-		Size: 50.4 MB (50438020 bytes)  
+	-	`sha256:fdff6146b2f3d2719a776efb56a47c0e2099a4cf1c6a26ef966f11b8451983b4`  
+		Last Modified: Wed, 09 Apr 2025 01:23:52 GMT  
+		Size: 50.4 MB (50438037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a260d4f5b0adc2f193f6211f0f81d1563e80ddbed60572d47aaa38511e4441b`  
-		Last Modified: Mon, 24 Mar 2025 17:03:52 GMT  
-		Size: 4.3 MB (4264206 bytes)  
+	-	`sha256:761368605785e766d3bb01c4a5aa9b247d9735f3acfd53b59d6bcb0117a6d6b2`  
+		Last Modified: Wed, 09 Apr 2025 01:23:51 GMT  
+		Size: 4.2 MB (4207994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibm-semeru-runtimes:open-8-jre-focal` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:9cfeae8765903d5a67b105cafd3e0580efe57d47553c327d10708805ebb0db3c
+$ docker pull ibm-semeru-runtimes@sha256:e102292a613c930b11cdcc32ee59eaf3137a08b1ad1e8afea73c154f58e4e751
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3641275 bytes)**  
+-	Total Size: **3.6 MB (3642238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ead1b506fcf13162cefa8fc5732c4d732535268c6ec673426e0e15b90ecf1f96`
+-	Image ID: `sha256:4c8506f962385366753bdcd0977f9be83bacdff4eeaf7e047f8502652c5729c5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6697f8c9f7f8773ccc438161ca2f0db1fe9c0e97abe9ba02d9683aca50b4636`  
-		Last Modified: Mon, 24 Mar 2025 17:03:52 GMT  
-		Size: 3.6 MB (3617324 bytes)  
+	-	`sha256:cdd3407dcd6be4ba5eb71bd7509d3470554065855c0e2c9f699f3c06b7ca6329`  
+		Last Modified: Wed, 09 Apr 2025 01:23:51 GMT  
+		Size: 3.6 MB (3618287 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:76fe6db150fed530bf909e461502df49be0089ebcfc0b3b62a749a16b895a448`  
-		Last Modified: Mon, 24 Mar 2025 17:03:52 GMT  
+	-	`sha256:3f11a1f20af2f1a6cd67d4abc95eb6c42b0d2a5b0d76e96d88c5a8504515c65c`  
+		Last Modified: Wed, 09 Apr 2025 01:23:50 GMT  
 		Size: 24.0 KB (23951 bytes)  
 		MIME: application/vnd.in-toto+json
 
