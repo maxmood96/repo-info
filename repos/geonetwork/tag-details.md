@@ -4632,7 +4632,7 @@ $ docker pull geonetwork@sha256:9460ffb7b41fa8aee2d7b91ea95bc50aec6f6ada42ff34a9
 ## `geonetwork:4`
 
 ```console
-$ docker pull geonetwork@sha256:498012211c28c0889b69cc9855e2f8467a8a0d61d770a48d7487e0395552a685
+$ docker pull geonetwork@sha256:417e6e487059ac00bbb9506b02be66fce424ac15d7767455dcad6290b533f5b1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4645,110 +4645,110 @@ $ docker pull geonetwork@sha256:498012211c28c0889b69cc9855e2f8467a8a0d61d770a48d
 ### `geonetwork:4` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:f332c7900a689a2487ab66f3c26f73464b5c71a0edc2dd33db5ce06773714813
+$ docker pull geonetwork@sha256:c0a058870342d5f87c3a0122267e59b14e04cc72dbb9d1b9e65e538de2aee478
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **493.1 MB (493062718 bytes)**  
+-	Total Size: **495.2 MB (495222728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:201145a1436bf43da7e89f06bb3ffdcd017a9cc7f6ab1d8e12623309f6d7c349`
+-	Image ID: `sha256:e246e2243e666034be492954fc31e6632cd154e7376f54e183331de778bd9d24`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["jshell"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_VERSION=9.4.57.v20241219
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 WORKDIR /var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV DATA_DIR=/catalogue-data
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV WEBAPP_CONTEXT_PATH=/geonetwork
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER root
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_VERSION=4.4.6
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_DOWNLOAD_MD5=ad596d3348872506c78daa05edb14782
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -4785,158 +4785,158 @@ VOLUME [/catalogue-data]
 		Last Modified: Wed, 09 Apr 2025 02:12:54 GMT  
 		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11248fd3df1b1ba90e1c6652574ab369a32e3976a744d42ab20d030fbc0270cf`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 254.4 KB (254448 bytes)  
+	-	`sha256:863d88ee74e9b127cd626d1715716bac254a56d0acb9103b8fc9fb41634dd0d3`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 254.5 KB (254456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:453c10b14bdcbd380be37f902ca940692effca0db7bd17b00f9c00a95e300858`  
-		Last Modified: Wed, 09 Apr 2025 03:12:18 GMT  
-		Size: 289.1 MB (289123420 bytes)  
+	-	`sha256:2803312fc94b6caeaf7dbf84e368cf2499ca938a86dd3d26ef106b8186e6db69`  
+		Last Modified: Thu, 10 Apr 2025 17:02:25 GMT  
+		Size: 291.3 MB (291283426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6cd96d99acd097c65dbd1cebe80a3f82315280d9911cddb556b8962dd5f3026e`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
+	-	`sha256:cf31790db2412e35661416562d40e3c826a5bc30c98e88a12d9bf2061f270ef4`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
 		Size: 548.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c23a66c06c96e3f74e15824fc6bcfb8aabb0b39c4b9da7507d411a0a4637056b`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 568.0 B  
+	-	`sha256:27dd50c6ff8ae0ea43c0d30a44bec3cd93099d219307c4392a3db32cf2806dfc`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12dd3b6ca956109f04f16767ca4aaeb1faf81862ac10a70044017acd55aab208`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 138.0 B  
+	-	`sha256:ddab656187d92d244ef9b764e86677ee83b575fb9e9fa6836f767804132d8b14`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `geonetwork:4` - unknown; unknown
 
 ```console
-$ docker pull geonetwork@sha256:4ef9bf5af88a953de689760484bb5a2ff4cacde5d5bef625441705b857b46270
+$ docker pull geonetwork@sha256:025f8c223d73eeb31dd7d26d9f75f37f7dbb4250b21c615503d5bd3b1900f156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4719277 bytes)**  
+-	Total Size: **4.7 MB (4727151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a281d22a379d62d91d6dc6cf9804456c6caf750e497fa3874304c102ad7266b`
+-	Image ID: `sha256:b8b5aa288185d694aeadbebe6ec7d684988965b9f73c60fcf969edf6d7cb7649`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:618cd7842898a1f2979d5b4e354f2dcd88f1491d494736a8923d3217321a81bc`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 4.7 MB (4693577 bytes)  
+	-	`sha256:65191a0e054976e674a284b596500bd23af598bb980361b251d4b6547e373473`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 4.7 MB (4701453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:07d8454c603db96a7d7fbfa31c56f387357995732a1fb0b299ccefb84652175a`  
-		Last Modified: Wed, 09 Apr 2025 03:12:13 GMT  
-		Size: 25.7 KB (25700 bytes)  
+	-	`sha256:2a09bd4a5ee3deba7da973df5eccfbea5bd3454506ddbf1901d7790aa0b70564`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 25.7 KB (25698 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `geonetwork:4` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:22b3775c2473c6bd80bda43c5a28c25c8a5f4a19d9e541d119f813a3d56a82c7
+$ docker pull geonetwork@sha256:33cab2b5fb1557b11f51ee549f8496c42301dfa56df34703ef9b1e1d75cf4c43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.1 MB (488141908 bytes)**  
+-	Total Size: **490.3 MB (490301931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdfbad557926e47d2c5fca8a5f90ab9cddaba6188762022678b3e134fb8e3a52`
+-	Image ID: `sha256:0a0ee0189c3c20b5c138cd2ca92d5a60a4f61ab0fc551060dfe60987b284704d`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["jshell"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_VERSION=9.4.57.v20241219
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 WORKDIR /var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV DATA_DIR=/catalogue-data
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV WEBAPP_CONTEXT_PATH=/geonetwork
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER root
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_VERSION=4.4.6
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_DOWNLOAD_MD5=ad596d3348872506c78daa05edb14782
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -4977,44 +4977,44 @@ VOLUME [/catalogue-data]
 		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
 		Size: 252.3 KB (252336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938bb700011ff08df13373e9eed7fb5db408a73ce5cc84ca879802430e2d1e18`  
-		Last Modified: Wed, 09 Apr 2025 21:04:00 GMT  
-		Size: 289.1 MB (289123416 bytes)  
+	-	`sha256:585193448593a2117962f21ebf2e630e6a1bbe52a729d112609020aeafbd78f2`  
+		Last Modified: Thu, 10 Apr 2025 17:13:50 GMT  
+		Size: 291.3 MB (291283437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d57bdffd3614ef1997bf7db6bf2a05a76a9cc1b3dc7d54fe52ddd8b9b85520f`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
-		Size: 550.0 B  
+	-	`sha256:c1419fe88ed9f190540204f61adeb614d5610f81df58de5366bd7cbb3b3598e9`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 551.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96eeb1f6702d743c5166a0ebb0a3b3fa3489157219b14b3edb1d59b21a65e867`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+	-	`sha256:6b8b64edd660084bd55520cf0aadfd8447ac49d7c169795ec35575788996bcea`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
 		Size: 568.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bc4e985ebb91a4763e59030b64e45c95e601f075649dfe2faaf9a59fc5908fb`  
-		Last Modified: Wed, 09 Apr 2025 21:03:55 GMT  
-		Size: 136.0 B  
+	-	`sha256:63454bb74edcb5369c84d6ba0caa4f140080f6f4e2af26878845fd22a330783f`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `geonetwork:4` - unknown; unknown
 
 ```console
-$ docker pull geonetwork@sha256:6105df4eae523bae7e863ec69b3f694ffb05b391ae15b6333115f45922c1b5cd
+$ docker pull geonetwork@sha256:526094ee2566b9b577bf8d0c84e3f41ce65195e24e18cedb48b6366924f829bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4719693 bytes)**  
+-	Total Size: **4.7 MB (4727569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34611048c3c2eee05a761c102d8578c1085b663364ee0385cde48bb0a0a3c2d3`
+-	Image ID: `sha256:ea27041b4373b79b646c28ab09f52fe3e523e6d571833db0190c190f9a8223fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe0857603c621242831ae2e2a521ee40923e38ba29e9c19aa5d2387596af2b47`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
-		Size: 4.7 MB (4693859 bytes)  
+	-	`sha256:9473832b710f1d4556d722ebde230d9937dd112db10fc04a34c9f315a8545ee5`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 4.7 MB (4701735 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ffb14f0ba793b2307fd2f3a460b931b8d52c7c9adac0e3ec43fef816f08e86d4`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+	-	`sha256:0e066fda1e29e447606dc591adef33cde594645fff4eacb66106ce315d1943f8`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5727,7 +5727,7 @@ $ docker pull geonetwork@sha256:3df7a3407945b4fce50ae235fe577c0b982272cf9fd1cb1a
 ## `geonetwork:4.4`
 
 ```console
-$ docker pull geonetwork@sha256:498012211c28c0889b69cc9855e2f8467a8a0d61d770a48d7487e0395552a685
+$ docker pull geonetwork@sha256:417e6e487059ac00bbb9506b02be66fce424ac15d7767455dcad6290b533f5b1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5740,110 +5740,110 @@ $ docker pull geonetwork@sha256:498012211c28c0889b69cc9855e2f8467a8a0d61d770a48d
 ### `geonetwork:4.4` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:f332c7900a689a2487ab66f3c26f73464b5c71a0edc2dd33db5ce06773714813
+$ docker pull geonetwork@sha256:c0a058870342d5f87c3a0122267e59b14e04cc72dbb9d1b9e65e538de2aee478
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **493.1 MB (493062718 bytes)**  
+-	Total Size: **495.2 MB (495222728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:201145a1436bf43da7e89f06bb3ffdcd017a9cc7f6ab1d8e12623309f6d7c349`
+-	Image ID: `sha256:e246e2243e666034be492954fc31e6632cd154e7376f54e183331de778bd9d24`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["jshell"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_VERSION=9.4.57.v20241219
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 WORKDIR /var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV DATA_DIR=/catalogue-data
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV WEBAPP_CONTEXT_PATH=/geonetwork
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER root
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_VERSION=4.4.6
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_DOWNLOAD_MD5=ad596d3348872506c78daa05edb14782
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -5880,158 +5880,158 @@ VOLUME [/catalogue-data]
 		Last Modified: Wed, 09 Apr 2025 02:12:54 GMT  
 		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11248fd3df1b1ba90e1c6652574ab369a32e3976a744d42ab20d030fbc0270cf`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 254.4 KB (254448 bytes)  
+	-	`sha256:863d88ee74e9b127cd626d1715716bac254a56d0acb9103b8fc9fb41634dd0d3`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 254.5 KB (254456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:453c10b14bdcbd380be37f902ca940692effca0db7bd17b00f9c00a95e300858`  
-		Last Modified: Wed, 09 Apr 2025 03:12:18 GMT  
-		Size: 289.1 MB (289123420 bytes)  
+	-	`sha256:2803312fc94b6caeaf7dbf84e368cf2499ca938a86dd3d26ef106b8186e6db69`  
+		Last Modified: Thu, 10 Apr 2025 17:02:25 GMT  
+		Size: 291.3 MB (291283426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6cd96d99acd097c65dbd1cebe80a3f82315280d9911cddb556b8962dd5f3026e`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
+	-	`sha256:cf31790db2412e35661416562d40e3c826a5bc30c98e88a12d9bf2061f270ef4`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
 		Size: 548.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c23a66c06c96e3f74e15824fc6bcfb8aabb0b39c4b9da7507d411a0a4637056b`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 568.0 B  
+	-	`sha256:27dd50c6ff8ae0ea43c0d30a44bec3cd93099d219307c4392a3db32cf2806dfc`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12dd3b6ca956109f04f16767ca4aaeb1faf81862ac10a70044017acd55aab208`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 138.0 B  
+	-	`sha256:ddab656187d92d244ef9b764e86677ee83b575fb9e9fa6836f767804132d8b14`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `geonetwork:4.4` - unknown; unknown
 
 ```console
-$ docker pull geonetwork@sha256:4ef9bf5af88a953de689760484bb5a2ff4cacde5d5bef625441705b857b46270
+$ docker pull geonetwork@sha256:025f8c223d73eeb31dd7d26d9f75f37f7dbb4250b21c615503d5bd3b1900f156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4719277 bytes)**  
+-	Total Size: **4.7 MB (4727151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a281d22a379d62d91d6dc6cf9804456c6caf750e497fa3874304c102ad7266b`
+-	Image ID: `sha256:b8b5aa288185d694aeadbebe6ec7d684988965b9f73c60fcf969edf6d7cb7649`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:618cd7842898a1f2979d5b4e354f2dcd88f1491d494736a8923d3217321a81bc`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 4.7 MB (4693577 bytes)  
+	-	`sha256:65191a0e054976e674a284b596500bd23af598bb980361b251d4b6547e373473`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 4.7 MB (4701453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:07d8454c603db96a7d7fbfa31c56f387357995732a1fb0b299ccefb84652175a`  
-		Last Modified: Wed, 09 Apr 2025 03:12:13 GMT  
-		Size: 25.7 KB (25700 bytes)  
+	-	`sha256:2a09bd4a5ee3deba7da973df5eccfbea5bd3454506ddbf1901d7790aa0b70564`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 25.7 KB (25698 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `geonetwork:4.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:22b3775c2473c6bd80bda43c5a28c25c8a5f4a19d9e541d119f813a3d56a82c7
+$ docker pull geonetwork@sha256:33cab2b5fb1557b11f51ee549f8496c42301dfa56df34703ef9b1e1d75cf4c43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.1 MB (488141908 bytes)**  
+-	Total Size: **490.3 MB (490301931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdfbad557926e47d2c5fca8a5f90ab9cddaba6188762022678b3e134fb8e3a52`
+-	Image ID: `sha256:0a0ee0189c3c20b5c138cd2ca92d5a60a4f61ab0fc551060dfe60987b284704d`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["jshell"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_VERSION=9.4.57.v20241219
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 WORKDIR /var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV DATA_DIR=/catalogue-data
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV WEBAPP_CONTEXT_PATH=/geonetwork
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER root
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_VERSION=4.4.6
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_DOWNLOAD_MD5=ad596d3348872506c78daa05edb14782
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -6072,55 +6072,440 @@ VOLUME [/catalogue-data]
 		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
 		Size: 252.3 KB (252336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938bb700011ff08df13373e9eed7fb5db408a73ce5cc84ca879802430e2d1e18`  
-		Last Modified: Wed, 09 Apr 2025 21:04:00 GMT  
-		Size: 289.1 MB (289123416 bytes)  
+	-	`sha256:585193448593a2117962f21ebf2e630e6a1bbe52a729d112609020aeafbd78f2`  
+		Last Modified: Thu, 10 Apr 2025 17:13:50 GMT  
+		Size: 291.3 MB (291283437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d57bdffd3614ef1997bf7db6bf2a05a76a9cc1b3dc7d54fe52ddd8b9b85520f`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
-		Size: 550.0 B  
+	-	`sha256:c1419fe88ed9f190540204f61adeb614d5610f81df58de5366bd7cbb3b3598e9`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 551.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96eeb1f6702d743c5166a0ebb0a3b3fa3489157219b14b3edb1d59b21a65e867`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+	-	`sha256:6b8b64edd660084bd55520cf0aadfd8447ac49d7c169795ec35575788996bcea`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
 		Size: 568.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bc4e985ebb91a4763e59030b64e45c95e601f075649dfe2faaf9a59fc5908fb`  
-		Last Modified: Wed, 09 Apr 2025 21:03:55 GMT  
-		Size: 136.0 B  
+	-	`sha256:63454bb74edcb5369c84d6ba0caa4f140080f6f4e2af26878845fd22a330783f`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `geonetwork:4.4` - unknown; unknown
 
 ```console
-$ docker pull geonetwork@sha256:6105df4eae523bae7e863ec69b3f694ffb05b391ae15b6333115f45922c1b5cd
+$ docker pull geonetwork@sha256:526094ee2566b9b577bf8d0c84e3f41ce65195e24e18cedb48b6366924f829bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4719693 bytes)**  
+-	Total Size: **4.7 MB (4727569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34611048c3c2eee05a761c102d8578c1085b663364ee0385cde48bb0a0a3c2d3`
+-	Image ID: `sha256:ea27041b4373b79b646c28ab09f52fe3e523e6d571833db0190c190f9a8223fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe0857603c621242831ae2e2a521ee40923e38ba29e9c19aa5d2387596af2b47`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
-		Size: 4.7 MB (4693859 bytes)  
+	-	`sha256:9473832b710f1d4556d722ebde230d9937dd112db10fc04a34c9f315a8545ee5`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 4.7 MB (4701735 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ffb14f0ba793b2307fd2f3a460b931b8d52c7c9adac0e3ec43fef816f08e86d4`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+	-	`sha256:0e066fda1e29e447606dc591adef33cde594645fff4eacb66106ce315d1943f8`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `geonetwork:4.4.7`
 
-**does not exist** (yet?)
+```console
+$ docker pull geonetwork@sha256:417e6e487059ac00bbb9506b02be66fce424ac15d7767455dcad6290b533f5b1
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `geonetwork:4.4.7` - linux; amd64
+
+```console
+$ docker pull geonetwork@sha256:c0a058870342d5f87c3a0122267e59b14e04cc72dbb9d1b9e65e538de2aee478
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **495.2 MB (495222728 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e246e2243e666034be492954fc31e6632cd154e7376f54e183331de778bd9d24`
+-	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
+-	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
+
+```dockerfile
+# Tue, 14 Jan 2025 05:07:03 GMT
+ARG RELEASE
+# Tue, 14 Jan 2025 05:07:03 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 14 Jan 2025 05:07:03 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 14 Jan 2025 05:07:03 GMT
+LABEL org.opencontainers.image.version=20.04
+# Tue, 14 Jan 2025 05:07:03 GMT
+ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
+# Tue, 14 Jan 2025 05:07:03 GMT
+CMD ["/bin/bash"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JAVA_VERSION=jdk-11.0.26+4
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+CMD ["jshell"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_VERSION=9.4.57.v20241219
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_HOME=/usr/local/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_BASE=/var/lib/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV TMPDIR=/tmp/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+WORKDIR /var/lib/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+USER jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV DATA_DIR=/catalogue-data
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV WEBAPP_CONTEXT_PATH=/geonetwork
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
+# Thu, 10 Apr 2025 08:00:31 GMT
+USER root
+# Thu, 10 Apr 2025 08:00:31 GMT
+RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+USER jetty
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_FILE=geonetwork.war
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
+RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENTRYPOINT ["/geonetwork-entrypoint.sh"]
+# Thu, 10 Apr 2025 08:00:31 GMT
+CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
+# Thu, 10 Apr 2025 08:00:31 GMT
+VOLUME [/catalogue-data]
+```
+
+-	Layers:
+	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
+		Size: 27.5 MB (27510394 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:01adfc5c36da48730bc99e5b87b9529c168fa8e56a546819398638d39668a2a9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:27 GMT  
+		Size: 20.3 MB (20260206 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f42209585d065189e8255aefcae91d5ace5811975ac5c12f1c5d915d3558cb9`  
+		Last Modified: Wed, 09 Apr 2025 01:15:28 GMT  
+		Size: 145.6 MB (145609035 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce62d1e5414987174fcc754d43ad9aca148a64d2fded82f9272dd7bfd94977f2`  
+		Last Modified: Wed, 09 Apr 2025 01:15:26 GMT  
+		Size: 161.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0a34aaea29b0eb3fecf3371aa10826ee9b6d20aba3d8e85802144185fb5636b`  
+		Last Modified: Wed, 09 Apr 2025 01:15:15 GMT  
+		Size: 2.3 KB (2280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:db68fa0ae7acca8ee542c99d49663650ca8596e974dc3bbb06f4169d1066f0c9`  
+		Last Modified: Wed, 09 Apr 2025 02:12:55 GMT  
+		Size: 10.3 MB (10299827 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2478bd0dee93acb70c809c2e398a532bfb83d57aa608faccb333223499539b28`  
+		Last Modified: Wed, 09 Apr 2025 02:12:54 GMT  
+		Size: 1.7 KB (1661 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:863d88ee74e9b127cd626d1715716bac254a56d0acb9103b8fc9fb41634dd0d3`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 254.5 KB (254456 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2803312fc94b6caeaf7dbf84e368cf2499ca938a86dd3d26ef106b8186e6db69`  
+		Last Modified: Thu, 10 Apr 2025 17:02:25 GMT  
+		Size: 291.3 MB (291283426 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cf31790db2412e35661416562d40e3c826a5bc30c98e88a12d9bf2061f270ef4`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 548.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:27dd50c6ff8ae0ea43c0d30a44bec3cd93099d219307c4392a3db32cf2806dfc`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 567.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ddab656187d92d244ef9b764e86677ee83b575fb9e9fa6836f767804132d8b14`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 135.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `geonetwork:4.4.7` - unknown; unknown
+
+```console
+$ docker pull geonetwork@sha256:025f8c223d73eeb31dd7d26d9f75f37f7dbb4250b21c615503d5bd3b1900f156
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.7 MB (4727151 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b8b5aa288185d694aeadbebe6ec7d684988965b9f73c60fcf969edf6d7cb7649`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:65191a0e054976e674a284b596500bd23af598bb980361b251d4b6547e373473`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 4.7 MB (4701453 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2a09bd4a5ee3deba7da973df5eccfbea5bd3454506ddbf1901d7790aa0b70564`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 25.7 KB (25698 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `geonetwork:4.4.7` - linux; arm64 variant v8
+
+```console
+$ docker pull geonetwork@sha256:33cab2b5fb1557b11f51ee549f8496c42301dfa56df34703ef9b1e1d75cf4c43
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **490.3 MB (490301931 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0a0ee0189c3c20b5c138cd2ca92d5a60a4f61ab0fc551060dfe60987b284704d`
+-	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
+-	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
+
+```dockerfile
+# Tue, 14 Jan 2025 05:07:03 GMT
+ARG RELEASE
+# Tue, 14 Jan 2025 05:07:03 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 14 Jan 2025 05:07:03 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 14 Jan 2025 05:07:03 GMT
+LABEL org.opencontainers.image.version=20.04
+# Tue, 14 Jan 2025 05:07:03 GMT
+ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
+# Tue, 14 Jan 2025 05:07:03 GMT
+CMD ["/bin/bash"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JAVA_VERSION=jdk-11.0.26+4
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+CMD ["jshell"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_VERSION=9.4.57.v20241219
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_HOME=/usr/local/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_BASE=/var/lib/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV TMPDIR=/tmp/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
+# Tue, 14 Jan 2025 05:07:03 GMT
+RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+WORKDIR /var/lib/jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
+USER jetty
+# Tue, 14 Jan 2025 05:07:03 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 14 Jan 2025 05:07:03 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Jan 2025 05:07:03 GMT
+CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV DATA_DIR=/catalogue-data
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV WEBAPP_CONTEXT_PATH=/geonetwork
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
+# Thu, 10 Apr 2025 08:00:31 GMT
+USER root
+# Thu, 10 Apr 2025 08:00:31 GMT
+RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+USER jetty
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_FILE=geonetwork.war
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
+RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENTRYPOINT ["/geonetwork-entrypoint.sh"]
+# Thu, 10 Apr 2025 08:00:31 GMT
+CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
+# Thu, 10 Apr 2025 08:00:31 GMT
+VOLUME [/catalogue-data]
+```
+
+-	Layers:
+	-	`sha256:ecd83b6c354452b6a9979c7666bba16927f1e60e2afbfe6401dd6f87d5db8576`  
+		Last Modified: Tue, 08 Apr 2025 11:48:29 GMT  
+		Size: 26.0 MB (25977661 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7af9d62a97be401b93c2f6eb1dc4bb4c70329ac3b300956d3867dfc020b29c3e`  
+		Last Modified: Wed, 09 Apr 2025 06:57:19 GMT  
+		Size: 20.1 MB (20092976 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a6690226c1bf50ea55ee4c83d99c9810cf8349e706ff3334d9d4cab98226bc64`  
+		Last Modified: Wed, 09 Apr 2025 07:00:36 GMT  
+		Size: 142.4 MB (142390398 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf8837fd4c31e1c662ee6fe2302dd0844ebfca680b07ebf7eb92fe710fb31a3b`  
+		Last Modified: Wed, 09 Apr 2025 07:00:33 GMT  
+		Size: 161.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e563c234857e950a315cf4000ef89bae9c8c51324464e155332498cb60599d28`  
+		Last Modified: Wed, 09 Apr 2025 07:00:33 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5a64d76707054963b750e73449c36829f855828be76a0204d90fe497fd88d9ea`  
+		Last Modified: Wed, 09 Apr 2025 14:50:14 GMT  
+		Size: 10.3 MB (10299731 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3d69266a67078e0bd3fef3c78018c7b69501e6c6f58f445238e2d616626eafb9`  
+		Last Modified: Wed, 09 Apr 2025 14:50:13 GMT  
+		Size: 1.7 KB (1660 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3e870db17705ff2924d4c3ecf4635895aac0ef554984e65c6c49834323fc7614`  
+		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+		Size: 252.3 KB (252336 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:585193448593a2117962f21ebf2e630e6a1bbe52a729d112609020aeafbd78f2`  
+		Last Modified: Thu, 10 Apr 2025 17:13:50 GMT  
+		Size: 291.3 MB (291283437 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c1419fe88ed9f190540204f61adeb614d5610f81df58de5366bd7cbb3b3598e9`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 551.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6b8b64edd660084bd55520cf0aadfd8447ac49d7c169795ec35575788996bcea`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 568.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:63454bb74edcb5369c84d6ba0caa4f140080f6f4e2af26878845fd22a330783f`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `geonetwork:4.4.7` - unknown; unknown
+
+```console
+$ docker pull geonetwork@sha256:526094ee2566b9b577bf8d0c84e3f41ce65195e24e18cedb48b6366924f829bb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.7 MB (4727569 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ea27041b4373b79b646c28ab09f52fe3e523e6d571833db0190c190f9a8223fe`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9473832b710f1d4556d722ebde230d9937dd112db10fc04a34c9f315a8545ee5`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 4.7 MB (4701735 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:0e066fda1e29e447606dc591adef33cde594645fff4eacb66106ce315d1943f8`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 25.8 KB (25834 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:498012211c28c0889b69cc9855e2f8467a8a0d61d770a48d7487e0395552a685
+$ docker pull geonetwork@sha256:417e6e487059ac00bbb9506b02be66fce424ac15d7767455dcad6290b533f5b1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6133,110 +6518,110 @@ $ docker pull geonetwork@sha256:498012211c28c0889b69cc9855e2f8467a8a0d61d770a48d
 ### `geonetwork:latest` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:f332c7900a689a2487ab66f3c26f73464b5c71a0edc2dd33db5ce06773714813
+$ docker pull geonetwork@sha256:c0a058870342d5f87c3a0122267e59b14e04cc72dbb9d1b9e65e538de2aee478
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **493.1 MB (493062718 bytes)**  
+-	Total Size: **495.2 MB (495222728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:201145a1436bf43da7e89f06bb3ffdcd017a9cc7f6ab1d8e12623309f6d7c349`
+-	Image ID: `sha256:e246e2243e666034be492954fc31e6632cd154e7376f54e183331de778bd9d24`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["jshell"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_VERSION=9.4.57.v20241219
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 WORKDIR /var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV DATA_DIR=/catalogue-data
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV WEBAPP_CONTEXT_PATH=/geonetwork
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER root
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_VERSION=4.4.6
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_DOWNLOAD_MD5=ad596d3348872506c78daa05edb14782
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -6273,158 +6658,158 @@ VOLUME [/catalogue-data]
 		Last Modified: Wed, 09 Apr 2025 02:12:54 GMT  
 		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11248fd3df1b1ba90e1c6652574ab369a32e3976a744d42ab20d030fbc0270cf`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 254.4 KB (254448 bytes)  
+	-	`sha256:863d88ee74e9b127cd626d1715716bac254a56d0acb9103b8fc9fb41634dd0d3`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 254.5 KB (254456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:453c10b14bdcbd380be37f902ca940692effca0db7bd17b00f9c00a95e300858`  
-		Last Modified: Wed, 09 Apr 2025 03:12:18 GMT  
-		Size: 289.1 MB (289123420 bytes)  
+	-	`sha256:2803312fc94b6caeaf7dbf84e368cf2499ca938a86dd3d26ef106b8186e6db69`  
+		Last Modified: Thu, 10 Apr 2025 17:02:25 GMT  
+		Size: 291.3 MB (291283426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6cd96d99acd097c65dbd1cebe80a3f82315280d9911cddb556b8962dd5f3026e`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
+	-	`sha256:cf31790db2412e35661416562d40e3c826a5bc30c98e88a12d9bf2061f270ef4`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
 		Size: 548.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c23a66c06c96e3f74e15824fc6bcfb8aabb0b39c4b9da7507d411a0a4637056b`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 568.0 B  
+	-	`sha256:27dd50c6ff8ae0ea43c0d30a44bec3cd93099d219307c4392a3db32cf2806dfc`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12dd3b6ca956109f04f16767ca4aaeb1faf81862ac10a70044017acd55aab208`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 138.0 B  
+	-	`sha256:ddab656187d92d244ef9b764e86677ee83b575fb9e9fa6836f767804132d8b14`  
+		Last Modified: Thu, 10 Apr 2025 17:02:21 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `geonetwork:latest` - unknown; unknown
 
 ```console
-$ docker pull geonetwork@sha256:4ef9bf5af88a953de689760484bb5a2ff4cacde5d5bef625441705b857b46270
+$ docker pull geonetwork@sha256:025f8c223d73eeb31dd7d26d9f75f37f7dbb4250b21c615503d5bd3b1900f156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4719277 bytes)**  
+-	Total Size: **4.7 MB (4727151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a281d22a379d62d91d6dc6cf9804456c6caf750e497fa3874304c102ad7266b`
+-	Image ID: `sha256:b8b5aa288185d694aeadbebe6ec7d684988965b9f73c60fcf969edf6d7cb7649`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:618cd7842898a1f2979d5b4e354f2dcd88f1491d494736a8923d3217321a81bc`  
-		Last Modified: Wed, 09 Apr 2025 03:12:14 GMT  
-		Size: 4.7 MB (4693577 bytes)  
+	-	`sha256:65191a0e054976e674a284b596500bd23af598bb980361b251d4b6547e373473`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 4.7 MB (4701453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:07d8454c603db96a7d7fbfa31c56f387357995732a1fb0b299ccefb84652175a`  
-		Last Modified: Wed, 09 Apr 2025 03:12:13 GMT  
-		Size: 25.7 KB (25700 bytes)  
+	-	`sha256:2a09bd4a5ee3deba7da973df5eccfbea5bd3454506ddbf1901d7790aa0b70564`  
+		Last Modified: Thu, 10 Apr 2025 17:02:20 GMT  
+		Size: 25.7 KB (25698 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `geonetwork:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:22b3775c2473c6bd80bda43c5a28c25c8a5f4a19d9e541d119f813a3d56a82c7
+$ docker pull geonetwork@sha256:33cab2b5fb1557b11f51ee549f8496c42301dfa56df34703ef9b1e1d75cf4c43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.1 MB (488141908 bytes)**  
+-	Total Size: **490.3 MB (490301931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdfbad557926e47d2c5fca8a5f90ab9cddaba6188762022678b3e134fb8e3a52`
+-	Image ID: `sha256:0a0ee0189c3c20b5c138cd2ca92d5a60a4f61ab0fc551060dfe60987b284704d`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7def4c5807b38ef1a7bb30a86572a795ca604127cc8d1f5b370abf23618104e6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_x64_linux_hotspot_11.0.26_4.tar.gz';          ;;        arm64)          ESUM='e7b3d37c347fe7af2a53711f16da8b9b164748ce4a84e47bb0739c3be7f1c421';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.26_4.tar.gz';          ;;        armhf)          ESUM='79d574328f6960d40349996ef8c5949581f9e533dc76f134857c4125c78558ff';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_arm_linux_hotspot_11.0.26_4.tar.gz';          ;;        ppc64el)          ESUM='42c63651125a149cee2ba781300d75ffa67a25032f95038d50ee6d6177cb2e41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.26_4.tar.gz';          ;;        s390x)          ESUM='0da13d990da34ecc666399cf0efa72a4b4e295f05c0686ea25a4a173a6f4414b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.26_4.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["jshell"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_VERSION=9.4.57.v20241219
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 WORKDIR /var/lib/jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV DATA_DIR=/catalogue-data
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV WEBAPP_CONTEXT_PATH=/geonetwork
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER root
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p ${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /opt/geonetwork &&     chown -R jetty:jetty /opt/geonetwork # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 USER jetty
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_VERSION=4.4.6
-# Thu, 24 Oct 2024 11:20:12 GMT
-ENV GN_DOWNLOAD_MD5=ad596d3348872506c78daa05edb14782
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_VERSION=4.4.7
+# Thu, 10 Apr 2025 08:00:31 GMT
+ENV GN_DOWNLOAD_MD5=31af9fa57a9470d0e153b2a78e079d5f
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN cd /opt/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY jetty/geonetwork_context_template.xml /usr/local/share/geonetwork/geonetwork_context_template.xml # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 COPY ./docker-entrypoint.sh /geonetwork-entrypoint.sh # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 RUN java -jar /usr/local/jetty/start.jar --create-startd --add-module=http-forwarded # buildkit
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 24 Oct 2024 11:20:12 GMT
+# Thu, 10 Apr 2025 08:00:31 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -6465,43 +6850,43 @@ VOLUME [/catalogue-data]
 		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
 		Size: 252.3 KB (252336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938bb700011ff08df13373e9eed7fb5db408a73ce5cc84ca879802430e2d1e18`  
-		Last Modified: Wed, 09 Apr 2025 21:04:00 GMT  
-		Size: 289.1 MB (289123416 bytes)  
+	-	`sha256:585193448593a2117962f21ebf2e630e6a1bbe52a729d112609020aeafbd78f2`  
+		Last Modified: Thu, 10 Apr 2025 17:13:50 GMT  
+		Size: 291.3 MB (291283437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d57bdffd3614ef1997bf7db6bf2a05a76a9cc1b3dc7d54fe52ddd8b9b85520f`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
-		Size: 550.0 B  
+	-	`sha256:c1419fe88ed9f190540204f61adeb614d5610f81df58de5366bd7cbb3b3598e9`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 551.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96eeb1f6702d743c5166a0ebb0a3b3fa3489157219b14b3edb1d59b21a65e867`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+	-	`sha256:6b8b64edd660084bd55520cf0aadfd8447ac49d7c169795ec35575788996bcea`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
 		Size: 568.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bc4e985ebb91a4763e59030b64e45c95e601f075649dfe2faaf9a59fc5908fb`  
-		Last Modified: Wed, 09 Apr 2025 21:03:55 GMT  
-		Size: 136.0 B  
+	-	`sha256:63454bb74edcb5369c84d6ba0caa4f140080f6f4e2af26878845fd22a330783f`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `geonetwork:latest` - unknown; unknown
 
 ```console
-$ docker pull geonetwork@sha256:6105df4eae523bae7e863ec69b3f694ffb05b391ae15b6333115f45922c1b5cd
+$ docker pull geonetwork@sha256:526094ee2566b9b577bf8d0c84e3f41ce65195e24e18cedb48b6366924f829bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4719693 bytes)**  
+-	Total Size: **4.7 MB (4727569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34611048c3c2eee05a761c102d8578c1085b663364ee0385cde48bb0a0a3c2d3`
+-	Image ID: `sha256:ea27041b4373b79b646c28ab09f52fe3e523e6d571833db0190c190f9a8223fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe0857603c621242831ae2e2a521ee40923e38ba29e9c19aa5d2387596af2b47`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
-		Size: 4.7 MB (4693859 bytes)  
+	-	`sha256:9473832b710f1d4556d722ebde230d9937dd112db10fc04a34c9f315a8545ee5`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
+		Size: 4.7 MB (4701735 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ffb14f0ba793b2307fd2f3a460b931b8d52c7c9adac0e3ec43fef816f08e86d4`  
-		Last Modified: Wed, 09 Apr 2025 21:03:54 GMT  
+	-	`sha256:0e066fda1e29e447606dc591adef33cde594645fff4eacb66106ce315d1943f8`  
+		Last Modified: Thu, 10 Apr 2025 17:13:42 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
