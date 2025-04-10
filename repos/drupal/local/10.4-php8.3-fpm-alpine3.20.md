@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd3d2f1c215b3b58300bf731486d8e2f14bf2c1d4967d3ca52e61b73c9c50237`
+- Image ID: `sha256:ef9349dbb07c8ebce3788f45c45ca816ca65ee302f35126ec66f36ab5173292e`
 - Created: `2025-04-03T03:27:18Z`
-- Virtual Size: ~ 183.63 Mb  
+- Virtual Size: ~ 184.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -760,16 +760,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.2-r0 description:
+xz-5.6.2-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.2-r0 webpage:
+xz-5.6.2-r1 webpage:
 https://tukaani.org/xz/
 
-xz-5.6.2-r0 installed size:
+xz-5.6.2-r1 installed size:
 184 KiB
 
-xz-5.6.2-r0 license:
+xz-5.6.2-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -777,16 +777,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.2-r0 description:
+xz-libs-5.6.2-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.2-r0 webpage:
+xz-libs-5.6.2-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.2-r0 installed size:
+xz-libs-5.6.2-r1 installed size:
 236 KiB
 
-xz-libs-5.6.2-r0 license:
+xz-libs-5.6.2-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
