@@ -1,10 +1,10 @@
-# `mediawiki:1.43.0-fpm-alpine`
+# `mediawiki:1.43.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e0ae5105181308eec47097b2b6c0803a6276e1d20996a014e925aaa3dba6069`
-- Created: `2025-02-04T10:42:04Z`
-- Virtual Size: ~ 514.01 Mb  
+- Image ID: `sha256:007af15e8f593e46416a10ba870b24df3e2cf69f89601b57ae3ba3c5ca272daa`
+- Created: `2025-04-10T18:10:22Z`
+- Virtual Size: ~ 516.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.32.tar.xz.asc`
   - `PHP_SHA256=c582ac682a280bbc69bc2186c21eb7e3313cc73099be61a6bc1d2cd337cbf383`
   - `MEDIAWIKI_MAJOR_VERSION=1.43`
-  - `MEDIAWIKI_VERSION=1.43.0`
+  - `MEDIAWIKI_VERSION=1.43.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -539,16 +539,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -692,16 +692,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -1049,16 +1049,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.9-r0 description:
+pyc-3.12.10-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.9-r0 webpage:
+pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.9-r0 installed size:
+pyc-3.12.10-r0 installed size:
 0 B
 
-pyc-3.12.9-r0 license:
+pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1066,16 +1066,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.9-r0 description:
+python3-3.12.10-r0 description:
 High-level scripting language
 
-python3-3.12.9-r0 webpage:
+python3-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-3.12.9-r0 installed size:
+python3-3.12.10-r0 installed size:
 22 MiB
 
-python3-3.12.9-r0 license:
+python3-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1083,16 +1083,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.9-r0 description:
+python3-pyc-3.12.10-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.9-r0 webpage:
+python3-pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.9-r0 installed size:
+python3-pyc-3.12.10-r0 installed size:
 0 B
 
-python3-pyc-3.12.9-r0 license:
+python3-pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1100,16 +1100,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.9-r0 description:
+python3-pycache-pyc0-3.12.10-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.9-r0 webpage:
+python3-pycache-pyc0-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.9-r0 installed size:
+python3-pycache-pyc0-3.12.10-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.9-r0 license:
+python3-pycache-pyc0-3.12.10-r0 license:
 PSF-2.0
 
 ```
