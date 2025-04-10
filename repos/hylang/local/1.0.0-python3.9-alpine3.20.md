@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d741beaa71975ed6e970f7a0dca169e3ba712c72320d747f3bc88d481b5cac1`
+- Image ID: `sha256:66bc7a7a11ab5785166c632dd0cc9bf6b002549a956ab669b25bcf0df6d31b9f`
 - Created: `2025-03-19T17:54:43Z`
 - Virtual Size: ~ 57.97 Mb  
   (total size of all layers on-disk)
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.9.21`
-  - `PYTHON_SHA256=3126f59592c9b0d798584755f2bf7b081fa1ca35ce7a6fea980108d752a05bb1`
+  - `PYTHON_VERSION=3.9.22`
+  - `PYTHON_SHA256=8c136d199d3637a1fce98a16adc809c1d83c922d02d41f3614b34f8b6e7d38ec`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=1.0.0`
 
@@ -566,16 +566,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-1512 KiB
+tzdata-2025b-r0 installed size:
+1516 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -583,16 +583,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.2-r0 description:
+xz-libs-5.6.2-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.2-r0 webpage:
+xz-libs-5.6.2-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.2-r0 installed size:
+xz-libs-5.6.2-r1 installed size:
 236 KiB
 
-xz-libs-5.6.2-r0 license:
+xz-libs-5.6.2-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

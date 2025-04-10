@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14993bf659245e7e0e4832992ad5057186c7bf72e1f2452efca2a3b5c0a8bdec`
+- Image ID: `sha256:7ecc5213647eb5ff202a9ef24b6db12e9033f3ce8b0ac21b2e7ee610dec759a9`
 - Created: `2025-03-19T17:54:43Z`
 - Virtual Size: ~ 61.66 Mb  
   (total size of all layers on-disk)
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
-  - `PYTHON_VERSION=3.10.16`
-  - `PYTHON_SHA256=bfb249609990220491a1b92850a07135ed0831e41738cf681d63cf01b2a8fbd1`
+  - `PYTHON_VERSION=3.10.17`
+  - `PYTHON_SHA256=4c68050f049d1b4ac5aadd0df5f27941c0350d2a9e7ab0907ee5eb5225d9d6b0`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=1.0.0`
 
@@ -294,16 +294,16 @@ Apache-2.0
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -583,16 +583,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -600,16 +600,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

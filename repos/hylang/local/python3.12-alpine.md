@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:000218a676c4c7f874ca6d063e18b8416faca18538d5154d5c36bfd22f593538`
+- Image ID: `sha256:049becd4ea2015d7da3aa6deed38424747811390201e4d3f3f1bb5a804074780`
 - Created: `2025-03-19T17:54:43Z`
-- Virtual Size: ~ 59.65 Mb  
+- Virtual Size: ~ 59.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.9`
-  - `PYTHON_SHA256=7220835d9f90b37c006e9842a8dff4580aaca4318674f947302b8d28f3f81112`
+  - `PYTHON_VERSION=3.12.10`
+  - `PYTHON_SHA256=07ab697474595e06f06647417d3c7fa97ded07afc1a7e4454c5639919b46eaea`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=1.0.0`
 
@@ -294,16 +294,16 @@ Apache-2.0
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -583,16 +583,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -600,16 +600,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

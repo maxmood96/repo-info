@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:493ab7d40cb3c3b402af6a3f39182cae53333de12c23871965cdb7028e652f6f`
+- Image ID: `sha256:7df97f86996131e6b4659a0ca42345941cb01bc97a2fabf219ef68f86c67de88`
 - Created: `2025-03-19T17:54:43Z`
-- Virtual Size: ~ 142.27 Mb  
+- Virtual Size: ~ 143.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
-  - `PYTHON_VERSION=3.11.11`
-  - `PYTHON_SHA256=2a9920c7a0cd236de33644ed980a13cbbc21058bfdc528febb6081575ed73be3`
+  - `PYTHON_VERSION=3.11.12`
+  - `PYTHON_SHA256=849da87af4df137710c1796e276a955f7a85c9f971081067c8f565d15c352a09`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=1.0.0`
 
@@ -1941,23 +1941,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2024b-0+deb11u1`
+### `dpkg` source package: `tzdata=2025b-0+deb11u1`
 
 Binary Packages:
 
-- `tzdata=2024b-0+deb11u1`
+- `tzdata=2025b-0+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2025b-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b-0%2bdeb11u1.dsc' tzdata_2025b-0+deb11u1.dsc 2269 SHA256:5121967edc9e3805e104ddf325afcad8b8fac643677a5253f3443a341123f7a0
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b-0%2bdeb11u1.debian.tar.xz' tzdata_2025b-0+deb11u1.debian.tar.xz 108596 SHA256:42bfe4e25a15fd0ea6b3eda7e40ad52930ee1d93d923dba42891c6ea85184fab
+```
 
-- http://snapshot.debian.org/package/tzdata/2024b-0+deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2025b-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2025b-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2025b-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
 
