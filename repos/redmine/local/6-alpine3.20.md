@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3366b20a2a50eb1156f54e11b9b385e8d947d5de74a1b6237335a0a300fe06c`
+- Image ID: `sha256:435571081632690a00dc0593f9a4f78765be6b4bc89d9c1a7febca0af1192907`
 - Created: `2025-03-11T02:53:30Z`
-- Virtual Size: ~ 413.87 Mb  
+- Virtual Size: ~ 412.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=5dbcbc605e0ed4b09c52703241577eb7edc3a2dc747e184c72b5285719b6ad72`
+  - `RUBY_VERSION=3.3.8`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.8.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=44ae70fee043da3ce48289b7a52618ebe32dc083253993d486211c7e445c8642`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -763,16 +763,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 144 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -797,16 +797,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-13.2.1_git20240309-r0 description:
+libgcc-13.2.1_git20240309-r1 description:
 GNU C compiler runtime libraries
 
-libgcc-13.2.1_git20240309-r0 webpage:
+libgcc-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgcc-13.2.1_git20240309-r0 installed size:
+libgcc-13.2.1_git20240309-r1 installed size:
 152 KiB
 
-libgcc-13.2.1_git20240309-r0 license:
+libgcc-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -1783,16 +1783,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.9-r0 description:
+pyc-3.12.10-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.9-r0 webpage:
+pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.9-r0 installed size:
+pyc-3.12.10-r0 installed size:
 4096 B
 
-pyc-3.12.9-r0 license:
+pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1800,16 +1800,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.9-r0 description:
+python3-3.12.10-r0 description:
 High-level scripting language
 
-python3-3.12.9-r0 webpage:
+python3-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-3.12.9-r0 installed size:
+python3-3.12.10-r0 installed size:
 24 MiB
 
-python3-3.12.9-r0 license:
+python3-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1817,16 +1817,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.9-r0 description:
+python3-pyc-3.12.10-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.9-r0 webpage:
+python3-pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.9-r0 installed size:
+python3-pyc-3.12.10-r0 installed size:
 4096 B
 
-python3-pyc-3.12.9-r0 license:
+python3-pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1834,16 +1834,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.9-r0 description:
+python3-pycache-pyc0-3.12.10-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.9-r0 webpage:
+python3-pycache-pyc0-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.9-r0 installed size:
+python3-pycache-pyc0-3.12.10-r0 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.9-r0 license:
+python3-pycache-pyc0-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -2004,16 +2004,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-1512 KiB
+tzdata-2025b-r0 installed size:
+1516 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -2055,16 +2055,16 @@ GPL-3.0-or-later WITH OpenSSL-Exception
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.2-r0 description:
+xz-libs-5.6.2-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.2-r0 webpage:
+xz-libs-5.6.2-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.2-r0 installed size:
+xz-libs-5.6.2-r1 installed size:
 236 KiB
 
-xz-libs-5.6.2-r0 license:
+xz-libs-5.6.2-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
