@@ -1,10 +1,10 @@
-# `wordpress:beta-6.8-RC2-php8.1-fpm-alpine`
+# `wordpress:beta-6.8-RC3-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d995de1c0ff6109840fb7e8d8576eecaefff5271437a16d99c7e9c10a6d405b4`
-- Created: `2025-04-01T19:03:13Z`
-- Virtual Size: ~ 266.17 Mb  
+- Image ID: `sha256:bb687ae0568d808c50a8b64e35472c8832dcce26f03fdcbe05bc5b3410d735d9`
+- Created: `2025-04-08T19:03:12Z`
+- Virtual Size: ~ 266.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1472,16 +1472,16 @@ libtiff
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.3-r0 description:
+xz-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.3-r0 webpage:
+xz-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-5.6.3-r0 installed size:
+xz-5.6.3-r1 installed size:
 150 KiB
 
-xz-5.6.3-r0 license:
+xz-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1489,16 +1489,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

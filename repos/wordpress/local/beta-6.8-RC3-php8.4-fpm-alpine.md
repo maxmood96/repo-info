@@ -1,10 +1,10 @@
-# `wordpress:beta-6.8-RC2-php8.1-fpm-alpine`
+# `wordpress:beta-6.8-RC3-php8.4-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d995de1c0ff6109840fb7e8d8576eecaefff5271437a16d99c7e9c10a6d405b4`
-- Created: `2025-04-01T19:03:13Z`
-- Virtual Size: ~ 266.17 Mb  
+- Image ID: `sha256:26b3a2a4c53f0ba99e2f77a718412472a23757fa7ddc39ef6e844e2c013def04`
+- Created: `2025-04-08T19:03:12Z`
+- Virtual Size: ~ 279.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.32`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.32.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.32.tar.xz.asc`
-  - `PHP_SHA256=c582ac682a280bbc69bc2186c21eb7e3313cc73099be61a6bc1d2cd337cbf383`
+  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
+  - `PHP_VERSION=8.4.5`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.5.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.5.tar.xz.asc`
+  - `PHP_SHA256=0d3270bbce4d9ec617befce52458b763fd461d475f1fe2ed878bb8573faed327`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1472,16 +1472,16 @@ libtiff
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.3-r0 description:
+xz-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.3-r0 webpage:
+xz-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-5.6.3-r0 installed size:
+xz-5.6.3-r1 installed size:
 150 KiB
 
-xz-5.6.3-r0 license:
+xz-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1489,16 +1489,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

@@ -1,10 +1,10 @@
-# `wordpress:beta-6.8-RC2-php8.4-apache`
+# `wordpress:beta-6.8-RC3-php8.4-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9b4f3fbacde6a9e64163f0a5d2989b883abb3f7c8c8d2de5270bee25721b6fe`
-- Created: `2025-04-01T19:03:13Z`
-- Virtual Size: ~ 715.03 Mb  
+- Image ID: `sha256:9c80fe6017227b794491df027e586873e674d926b02c66e20ce277e58b017b78`
+- Created: `2025-04-08T19:03:12Z`
+- Virtual Size: ~ 715.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -4598,11 +4598,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.5.0-6+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.5.0-6+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2025a-0+deb12u1`
+### `dpkg` source package: `tzdata=2025b-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2025a-0+deb12u1`
+- `tzdata=2025b-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -4611,18 +4611,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2025a-0+deb12u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a-0%2bdeb12u1.dsc' tzdata_2025a-0+deb12u1.dsc 2396 SHA256:7d13ce9fdb245e1b65e388c33b1f13e52edc3954835bcb972c979ae57f7cf2ec
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz' tzdata_2025a.orig.tar.gz 462943 SHA256:4d5fcbc72c7c450ebfe0b659bd0f1c02fbf52fd7f517a9ea13fe71c21eb5f0d0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz.asc' tzdata_2025a.orig.tar.gz.asc 833 SHA256:ed1d0264162b11f16a1c968adc413ed410458477ac094b4a2adc3357a069b2a2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a-0%2bdeb12u1.debian.tar.xz' tzdata_2025a-0+deb12u1.debian.tar.xz 121860 SHA256:0221ce8688e5286f09ea098ff4b422a5c726af66def1d6082a6c5442f1f5dcfa
+$ apt-get source -qq --print-uris tzdata=2025b-0+deb12u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-0%2bdeb12u1.dsc' tzdata_2025b-0+deb12u1.dsc 2396 SHA256:1e226e8d3201e655a2376ffa35745e52db8dd819190868601279b557e97ff732
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-0%2bdeb12u1.debian.tar.xz' tzdata_2025b-0+deb12u1.debian.tar.xz 122000 SHA256:767f447d08d517e5cd828f2cfa675849665f49086acf337d6b83a086617d0bbe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2025a-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025a-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025a-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2025b-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2025b-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2025b-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1+deb12u1`
 
@@ -4849,12 +4849,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.4.1-0.2`
+### `dpkg` source package: `xz-utils=5.4.1-1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.4.1-0.2`
-- `xz-utils=5.4.1-0.2`
+- `liblzma5:amd64=5.4.1-1`
+- `xz-utils=5.4.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
@@ -4877,18 +4877,18 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.4.1-0.2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-0.2.dsc' xz-utils_5.4.1-0.2.dsc 2621 SHA256:faaef4551ecc9547f308ca65cdafe6d2fa43b06f11944001490079303c87bf40
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-0.2.debian.tar.xz' xz-utils_5.4.1-0.2.debian.tar.xz 87432 SHA256:67eeab55ab3e4b35722d4ec255e0f735b3c61aab0437ab3c8274f5aa77c9c407
+$ apt-get source -qq --print-uris xz-utils=5.4.1-1
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.4.1-0.2/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.1-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.1-0.2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.4.1-1/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.4.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.13.dfsg-1`
 
