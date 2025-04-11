@@ -1,20 +1,20 @@
-# `erlang:27.3.0.0`
+# `erlang:27.3.2.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a87497286729cf09e952501a28f405e179355599b49d09fbbec838c0d8b923d`
-- Created: `2025-03-11T02:46:17Z`
+- Image ID: `sha256:1909095c64997f6fad1c93ded7a02d38eac08c113b4ab20942036ce9b3bc3d75`
+- Created: `2025-04-10T05:48:59Z`
 - Virtual Size: ~ 1.64 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=27.3`
+  - `OTP_VERSION=27.3.2`
   - `REBAR3_VERSION=3.24.0`
   - `REBAR_VERSION=2.6.4`
 - Labels:
-  - `org.opencontainers.image.version=27.3`
+  - `org.opencontainers.image.version=27.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -8844,21 +8844,13 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 - `MPL-1.1`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris webkit2gtk=2.48.0-1~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.0-1%7edeb12u1.dsc' webkit2gtk_2.48.0-1~deb12u1.dsc 5196 SHA256:443e831d209604559c25773f0914fb9a8c18198578bec419a70fb660febf64e9
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.0.orig.tar.xz' webkit2gtk_2.48.0.orig.tar.xz 44163600 SHA256:94904a55cf12d44a4e36ceadafff02d46da73d76be9b4769f34cbfdf0eebf88e
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.0.orig.tar.xz.asc' webkit2gtk_2.48.0.orig.tar.xz.asc 833 SHA256:9a077e2d2f102c0ddc12144e9b6c6ce862ce29c82a81a7c5538c605920197d48
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.0-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.48.0-1~deb12u1.debian.tar.xz 90148 SHA256:8d0371bc8821d973302a4f34412536eb0db325fd9555dbfc0b69a4b4aee7589a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/webkit2gtk/2.48.0-1~deb12u1/
 
-- https://sources.debian.net/src/webkit2gtk/2.48.0-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.48.0-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.48.0-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1+deb12u1`
 
