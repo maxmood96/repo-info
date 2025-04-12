@@ -1,10 +1,10 @@
-# `silverpeas:6.4.2`
+# `silverpeas:6.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2926376090c6d3eda48ac73916e313d305d07b9b532de7564aa3b13ff9f7b0dc`
-- Created: `2024-12-12T09:44:16Z`
-- Virtual Size: ~ 2.85 Gb  
+- Image ID: `sha256:32d9d8e4592a6f86b5a4df9b386e0fad363bf74c9385bd5ede84334d6a6beecc`
+- Created: `2025-04-11T14:37:01Z`
+- Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/run.sh"]`
@@ -18,16 +18,16 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.4.2`
+  - `SILVERPEAS_VERSION=6.4.3`
   - `WILDFLY_VERSION=26.1.3`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.4.2`
-  - `name=Silverpeas 6.4.2`
+  - `description=Image to install and to run Silverpeas 6.4.3`
+  - `name=Silverpeas 6.4.3`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
   - `vendor=Silverpeas`
-  - `version=6.4.2`
+  - `version=6.4.3`
 
 ## `dpkg` (`.deb`-based packages)
 
