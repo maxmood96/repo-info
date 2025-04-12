@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe579c4246ec0c080be1f37ace78d2068cdd6b55e69e8dedd78196be1603ce8e`
+- Image ID: `sha256:5885d79a6915a9fdc68d3937476b3d66aa2e6f5051b4808c3c0b5d4895edf2f2`
 - Created: `2025-02-25T18:11:45Z`
-- Virtual Size: ~ 120.69 Mb  
+- Virtual Size: ~ 120.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.5`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.5.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.5.tar.xz.asc`
-  - `PHP_SHA256=0d3270bbce4d9ec617befce52458b763fd461d475f1fe2ed878bb8573faed327`
+  - `PHP_VERSION=8.4.6`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
+  - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
   - `ADMINER_VERSION=4.17.1`
   - `ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a`
   - `ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0`
@@ -200,16 +200,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -251,16 +251,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -319,16 +319,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -693,16 +693,16 @@ LGPL-2.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.3-r0 description:
+xz-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.3-r0 webpage:
+xz-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-5.6.3-r0 installed size:
+xz-5.6.3-r1 installed size:
 150 KiB
 
-xz-5.6.3-r0 license:
+xz-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -710,16 +710,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
