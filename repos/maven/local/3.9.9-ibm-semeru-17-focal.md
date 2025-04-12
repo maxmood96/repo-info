@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8fe7f26c276d9645c821a1d0755e3946dab58de8d35cc38512b5f02abe4d10c`
+- Image ID: `sha256:fffe6d8d56aa2a866f4be7e059c619bd89bcfa900c4c41396320bb388ed4e208`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 593.63 Mb  
+- Virtual Size: ~ 593.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -686,29 +686,15 @@ $ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.14
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.debian.tar.xz' git_2.25.1-1ubuntu3.14.debian.tar.xz 719124 SHA512:4ee6d3c92aad795c88aefba4aa245448aaee1b740494c34f3088716ebd70f54324cd1f7ca0d0e06c2980489f14a31f250d0a512f798dc3373c71818dc48e74c5
 ```
 
-### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
-
-Binary Packages:
-
-- `libc-bin=2.31-0ubuntu9.16`
-- `libc6:amd64=2.31-0ubuntu9.16`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.17`
 
 Binary Packages:
 
+- `libc-bin=2.31-0ubuntu9.17`
+- `libc6:amd64=2.31-0ubuntu9.17`
 - `locales=2.31-0ubuntu9.17`
 
-Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -744,11 +730,11 @@ $ apt-get source -qq --print-uris gmp=2:6.2.0+dfsg-4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.0%2bdfsg-4ubuntu0.1.debian.tar.xz' gmp_6.2.0+dfsg-4ubuntu0.1.debian.tar.xz 21644 SHA512:b89b351bd9648108a15aa4db193610a36d59a9f75ddcbad2ea85004dbdf39553a6e611552351d2f37836eed3d99f152cba22fdbaa71b92f94635797b06404a27
 ```
 
-### `dpkg` source package: `gnupg2=2.2.19-3ubuntu2.2`
+### `dpkg` source package: `gnupg2=2.2.19-3ubuntu2.4`
 
 Binary Packages:
 
-- `gpgv=2.2.19-3ubuntu2.2`
+- `gpgv=2.2.19-3ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -765,15 +751,21 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.4.dsc' gnupg2_2.2.19-3ubuntu2.4.dsc 3939 SHA512:a057c40bc8cc9e3f7d020a1d3a046389331f6032e05839537f81071582e4cfcb290cd019052b674b87d42e7c81924be1ee940af962327725f8f23cc36d080d81
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2' gnupg2_2.2.19.orig.tar.bz2 6754972 SHA512:d7700136ac9f0a8cf04b33da4023a42427fced648c2f90d76250c92904353b85fe728bdd89a713d847e8d38e5900c98d46075614492fdc3d1421f927a92f49dd
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2.asc' gnupg2_2.2.19.orig.tar.bz2.asc 906 SHA512:8b02ce09a50d2aa0c263f7042424ea815386fac56a8d8cea102d1aea2e75802f91bb2ebc7dc2d7a3157126d748ece554e0693d3bf355f908586cbadbe80c68fb
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.4.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.4.debian.tar.xz 74588 SHA512:41307558e6bfded1a1547a5995d3cb28236f309ae206e95a5ec841dfa14f096d8f2d55b6cd976c03a8127483b25d54fa7bc9f2ddb76e5a6fb915cab783be79ba
+```
 
-### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.11`
+### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.12`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.13-2ubuntu1.11`
+- `libgnutls30:amd64=3.6.13-2ubuntu1.12`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -791,9 +783,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.12.dsc' gnutls28_3.6.13-2ubuntu1.12.dsc 3598 SHA512:2f471676f07ad88eda1da024cebf7d6223506e994055c016ace38562295c79485aa91581850a7ff3d1654a7c0f8e3a12138eaf175c79d6d6c84c8aadac040525
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.12.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.12.debian.tar.xz 86900 SHA512:a7042093da477b770a4f8a2c11139b498d8d4c4707d54ed620c5a8a63a3a9bbd4874aa9bb208cc2d676782ee2a7039cd75f457c142ccd8f91b530afa918c3fea
+```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1326,11 +1324,11 @@ $ apt-get source -qq --print-uris libssh=0.9.3-2ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.3-2ubuntu2.5.debian.tar.xz' libssh_0.9.3-2ubuntu2.5.debian.tar.xz 54112 SHA512:784e6ec20522eb9526cb4f3981c9c4d3b80879a3d06f80617fb26fd604ab8459e425ac7482fe5a7f0e2ab7f408edab578b66ea0beda4abb6b1e5e0cc1cc9b1cf
 ```
 
-### `dpkg` source package: `libtasn1-6=4.16.0-2`
+### `dpkg` source package: `libtasn1-6=4.16.0-2ubuntu0.1`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.16.0-2`
+- `libtasn1-6:amd64=4.16.0-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -1342,11 +1340,11 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libtasn1-6=4.16.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0-2.dsc' libtasn1-6_4.16.0-2.dsc 2586 SHA256:fd4a387c71f95c3eceb1072a3f42c7021d73128027ea41a18d6efc6cbfdd764a
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0.orig.tar.gz' libtasn1-6_4.16.0.orig.tar.gz 1812442 SHA256:0e0fb0903839117cb6e3b56e68222771bebf22ad7fc2295a0ed7d576e8d4329d
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0.orig.tar.gz.asc' libtasn1-6_4.16.0.orig.tar.gz.asc 488 SHA256:06c201e8c3b43c27465ed79294d4c4ec8dcd3e95e4a6176ecbf273229ee3e2d0
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0-2.debian.tar.xz' libtasn1-6_4.16.0-2.debian.tar.xz 17740 SHA256:c1a89b0bac0fb7c83ebac4eafbca0475c24350ade6ccaef31266424725610624
+$ apt-get source -qq --print-uris libtasn1-6=4.16.0-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0-2ubuntu0.1.dsc' libtasn1-6_4.16.0-2ubuntu0.1.dsc 2746 SHA512:39ec03bb0c84ca378652bfadad5b20ee0a41235299330691608bd5ac050d15dd960866e90fe35cce4898b1eaa3fcb0a0d1e01ebb8bef69913ec3fce1a1eca210
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0.orig.tar.gz' libtasn1-6_4.16.0.orig.tar.gz 1812442 SHA512:b356249535d5d592f9b59de39d21e26dd0f3f00ea47c9cef292cdd878042ea41ecbb7c8d2f02ac5839f5210092fe92a25acd343260ddf644887b031b167c2e71
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0.orig.tar.gz.asc' libtasn1-6_4.16.0.orig.tar.gz.asc 488 SHA512:53254c2ce61e9bb889fe00b43ef2130ab9f122c44832538e3f7b38cb75ada1656213cf5c8c85321078c6b98d325c46eff41ea64d1971d3183f2ec568a18f7ed2
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.16.0-2ubuntu0.1.debian.tar.xz' libtasn1-6_4.16.0-2ubuntu0.1.debian.tar.xz 20324 SHA512:7b69f7ec20f5ec6208a6bded750a9fa95f1532ba22a7e294661195a84fc995c87d89bc6aeacf4630d3bd10bea4589e32413fcdeb08df0529b6d89ddf4091c6ec
 ```
 
 ### `dpkg` source package: `libunistring=0.9.10-2`
@@ -1954,19 +1952,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2024b-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2025b-0ubuntu0.20.04`
 
 Binary Packages:
 
-- `tzdata=2024b-0ubuntu0.20.04.1`
+- `tzdata=2025b-0ubuntu0.20.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.20.04.dsc' tzdata_2025b-0ubuntu0.20.04.dsc 2548 SHA512:99e0471e091d04d0b4a6e9e611180a50214f1ba417007e97c114ea57d69fe6d85bc85172eb5a481eb112265ef5fb34f5ca497d2b3425a718892132a0df1530cd
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.20.04.debian.tar.xz' tzdata_2025b-0ubuntu0.20.04.debian.tar.xz 177100 SHA512:708073e97b5188689b28c04d4342c42f3b6551094aa2f1b02998278f380766ba300c28ac1fbef90e12febdc3733b7b77235af0b8e81288198983757b728a1b11
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
