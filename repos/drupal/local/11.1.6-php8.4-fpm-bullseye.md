@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ba7500325db61ee15b982032bc3238527963c0700cdd237404461f430fb3e11`
+- Image ID: `sha256:3b013abead12fd2c2638efc4e4cf6ce7075bc02024974019bbbbd95af623e8af`
 - Created: `2025-04-02T21:27:31Z`
-- Virtual Size: ~ 554.97 Mb  
+- Virtual Size: ~ 554.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.5`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.5.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.5.tar.xz.asc`
-  - `PHP_SHA256=0d3270bbce4d9ec617befce52458b763fd461d475f1fe2ed878bb8573faed327`
+  - `PHP_VERSION=8.4.6`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
+  - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
   - `DRUPAL_VERSION=11.1.6`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -988,20 +988,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.66.8-1+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8-1%2bdeb11u5.dsc' glib2.0_2.66.8-1+deb11u5.dsc 3304 SHA256:25c496be75f49f3714e2f627d9f9cfd247471090e26a9c9ef078a9a997ace867
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8.orig.tar.xz' glib2.0_2.66.8.orig.tar.xz 4845548 SHA256:97bc87dd91365589af5cbbfea2574833aea7a1b71840fd365ecd2852c76b9c8b
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8-1%2bdeb11u5.debian.tar.xz' glib2.0_2.66.8-1+deb11u5.debian.tar.xz 189160 SHA256:15c59bae400067d4beb2a9f52b30dbf66fca85b586faf247b4e729258b03024d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.66.8-1+deb11u5/
 
-- https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.66.8-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-13+deb11u11`
 

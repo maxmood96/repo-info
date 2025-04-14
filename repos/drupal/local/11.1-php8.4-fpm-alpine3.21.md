@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f80c1b727cfe42fbfef4740335fe2723a42c775cc4a45a945ac2e39bd1be21e`
+- Image ID: `sha256:b9313295d57a6a1f6b8b3c5a4969ead70329d16910b43655b635c40c509e38e5`
 - Created: `2025-04-02T21:27:31Z`
-- Virtual Size: ~ 186.37 Mb  
+- Virtual Size: ~ 186.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.5`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.5.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.5.tar.xz.asc`
-  - `PHP_SHA256=0d3270bbce4d9ec617befce52458b763fd461d475f1fe2ed878bb8573faed327`
+  - `PHP_VERSION=8.4.6`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
+  - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
   - `DRUPAL_VERSION=11.1.6`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -199,16 +199,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -335,16 +335,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
