@@ -2,6 +2,30 @@
 
 # Tags of `jruby`
 
+-	[`jruby:10`](#jruby10)
+-	[`jruby:10-jdk`](#jruby10-jdk)
+-	[`jruby:10-jdk21`](#jruby10-jdk21)
+-	[`jruby:10.0`](#jruby100)
+-	[`jruby:10.0-jdk`](#jruby100-jdk)
+-	[`jruby:10.0-jdk21`](#jruby100-jdk21)
+-	[`jruby:10.0-jdk24`](#jruby100-jdk24)
+-	[`jruby:10.0-jre`](#jruby100-jre)
+-	[`jruby:10.0-jre21`](#jruby100-jre21)
+-	[`jruby:10.0-jre24`](#jruby100-jre24)
+-	[`jruby:10.0.0`](#jruby1000)
+-	[`jruby:10.0.0-jdk`](#jruby1000-jdk)
+-	[`jruby:10.0.0-jdk21`](#jruby1000-jdk21)
+-	[`jruby:10.0.0-jdk24`](#jruby1000-jdk24)
+-	[`jruby:10.0.0-jre`](#jruby1000-jre)
+-	[`jruby:10.0.0-jre21`](#jruby1000-jre21)
+-	[`jruby:10.0.0-jre24`](#jruby1000-jre24)
+-	[`jruby:10.0.0.0`](#jruby10000)
+-	[`jruby:10.0.0.0-jdk`](#jruby10000-jdk)
+-	[`jruby:10.0.0.0-jdk21`](#jruby10000-jdk21)
+-	[`jruby:10.0.0.0-jdk24`](#jruby10000-jdk24)
+-	[`jruby:10.0.0.0-jre`](#jruby10000-jre)
+-	[`jruby:10.0.0.0-jre21`](#jruby10000-jre21)
+-	[`jruby:10.0.0.0-jre24`](#jruby10000-jre24)
 -	[`jruby:9`](#jruby9)
 -	[`jruby:9-jdk`](#jruby9-jdk)
 -	[`jruby:9-jdk8`](#jruby9-jdk8)
@@ -72,6 +96,102 @@
 -	[`jruby:9.4.12.0-jre21`](#jruby94120-jre21)
 -	[`jruby:9.4.12.0-jre8`](#jruby94120-jre8)
 -	[`jruby:latest`](#jrubylatest)
+
+## `jruby:10`
+
+**does not exist** (yet?)
+
+## `jruby:10-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-jdk24`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-jre`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-jre24`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0-jdk24`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0-jre`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0-jre24`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0-jdk24`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0-jre`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0.0.0-jre24`
+
+**does not exist** (yet?)
 
 ## `jruby:9`
 
