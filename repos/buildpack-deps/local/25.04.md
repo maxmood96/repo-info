@@ -299,13 +299,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13.6ubuntu1.dsc' base-files_13.6ubuntu1.dsc 1720 SHA512:63b31d1bc63b496dcd7e9d483c4491eeba127888c3b59c68e5954d62a1bb3fdea7e1a8aafe63da2c3174b6679a6e34d0a0ce659cfde1d257bd53778c432d8713
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13.6ubuntu1.tar.xz' base-files_13.6ubuntu1.tar.xz 96424 SHA512:34a72dcf6537d434ce564c49a599c48902ad09e0b6c02a33b8a73c4f6a67ec04b03d89e0636558e79d5fe49d3ad2ac1096e49d2bde3efb719477218300fe0336
-```
 
 ### `dpkg` source package: `base-passwd=3.6.6`
 
@@ -4145,13 +4141,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.2-2.dsc' python3-defaults_3.13.2-2.dsc 2948 SHA512:7ecbce9e80f7474226d7aabc03f954f45d520c095ffa3c0c525885aa74c91166bb08834d6efae97b57eb002be2ce0581311d9229afa1db029038a77500b41f82
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.2-2.tar.gz' python3-defaults_3.13.2-2.tar.gz 388662 SHA512:51189844c54d79b88128af0d33ffd4b320370f5ae30cfc42bf2c4e2790121450f4988d01b5b9b035221143c97012f0cc4043a9d5845ef295981fca44fdc16560
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-defaults/3.13.2-2/
+
 
 ### `dpkg` source package: `python3.13=3.13.2-3`
 
@@ -4182,15 +4178,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2-3.dsc' python3.13_3.13.2-3.dsc 4300 SHA512:a6f8138251b745d6ee8c0d727c48d9fa06beec712c6b2cd2b248ed448021c8068603cc53f060ea8f1eba1f59a8c05da2f5e032e13c77e37cedea78749b518540
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2.orig.tar.xz' python3.13_3.13.2.orig.tar.xz 22621108 SHA512:bb1c0598914c6d4326554faa568f660f10b20c701d0f36bf1fa58837b6498d728a407416b06ede39604caea1ca93f60545b83b01ae8ee65f55d4cc83242b63fe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2.orig.tar.xz.asc' python3.13_3.13.2.orig.tar.xz.asc 963 SHA512:5f019be530f688b0adf5d5cc9f2c2243e2f1dc7338559db14c1eedd12aadc85404d42c7aafd74e41828205d85f13f278876662ac30c8f3382a1ee081ba5f29f2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2-3.debian.tar.xz' python3.13_3.13.2-3.debian.tar.xz 585440 SHA512:1e43a9ea299391ecb456c644f825843d0dc283d69e3118b01cb8b9049346caaf497abc723989d702f62c4b2b30f2770e99de14797d668b5d774e5fab0b60728a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.2-3/
+
 
 ### `dpkg` source package: `readline=8.2-6`
 
@@ -4411,15 +4405,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-2.dsc' sqlite3_3.46.1-2.dsc 2632 SHA512:289169f5632fe996e69f16173d08b5a1df051b190dd89daa3afb5cbe91802b965c09a5ea7e1a60c5c7d035664d48983a5857dafe141649198325047bbc064db1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-2.debian.tar.xz' sqlite3_3.46.1-2.debian.tar.xz 30732 SHA512:af0793c571fcea12129b3ac4852ef4faa8af8c9a2ecfb7a278730930c7898fcf15b5839fd8f1f940a971af9ad3dd92bd0dd8b2d51706f9bd15be68eb7a6816dc
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-2/
+
 
 ### `dpkg` source package: `subversion=1.14.5-2build1`
 
