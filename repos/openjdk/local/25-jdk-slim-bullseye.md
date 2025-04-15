@@ -1,10 +1,10 @@
-# `openjdk:25-ea-17-jdk-slim-bullseye`
+# `openjdk:25-ea-18-jdk-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:087e4c8cf68653925744a259f78217899c165bc8e555ae47ed2e49acf154b3b7`
-- Created: `2025-04-05T00:48:13Z`
-- Virtual Size: ~ 447.75 Mb  
+- Image ID: `sha256:dd770b881c9802971e1e4813e510b3534be6374cd1b0e886b1a5f47407464c5d`
+- Created: `2025-04-12T00:48:17Z`
+- Virtual Size: ~ 446.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-25`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=25-ea+17`
+  - `JAVA_VERSION=25-ea+18`
 
 ## `dpkg` (`.deb`-based packages)
 
