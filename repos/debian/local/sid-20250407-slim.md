@@ -409,19 +409,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.21
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.21.dsc' debianutils_5.21.dsc 1631 SHA256:9e26a955c62d09a9401aeb53cb190eca078b2cc13ea33ec874e944e95c21935e
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.21.tar.xz' debianutils_5.21.tar.xz 81916 SHA256:0053dcfd89e5c7dbfb2632450c00af6b8a646eeaaf185bbc8f2915488f994fe5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.21/
 
-- https://sources.debian.net/src/debianutils/5.21/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-3`
 
@@ -1317,21 +1311,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-2.dsc' perl_5.40.1-2.dsc 2372 SHA256:a6a3011bb0422d31b6ae42b755ba3c2667e9de2a3d84559fcb70f8db354fe115
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-2.debian.tar.xz' perl_5.40.1-2.debian.tar.xz 167424 SHA256:fb98273ae62b5750534640cbfeb018c668538dd69d72c1bedec9f5a8a4999044
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.40.1-2/
 
-- https://sources.debian.net/src/perl/5.40.1-2/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-1`
 
@@ -1542,21 +1528,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-1.dsc' tzdata_2025b-1.dsc 2434 SHA256:184bbd6afb219c5d267fab313e2f2bc7325fa2a4f6a5259ad171f0f718add531
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-1.debian.tar.xz' tzdata_2025b-1.debian.tar.xz 126756 SHA256:fa7f90e6efc37c27db5e4464f1f9a656b26ceac42e8c14d7cadb3a74698df5e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-1/
 
-- https://sources.debian.net/src/tzdata/2025b-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41-3`
 
