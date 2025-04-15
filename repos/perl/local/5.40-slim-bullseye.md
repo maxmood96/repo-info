@@ -1,13 +1,13 @@
-# `perl:5.40.1-slim-bullseye`
+# `perl:5.40.2-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d385bc1baf1b0d46a3e318f4182fd4c9b55d1267572790dbdfdee79741155165`
-- Created: `2025-01-22T03:53:54Z`
-- Virtual Size: ~ 178.70 Mb  
+- Image ID: `sha256:356fa7fc3f04c8bfc09d685f4c7d07938b3ec22b3ae43c2b202d30a9e47e4847`
+- Created: `2025-04-14T09:33:51Z`
+- Virtual Size: ~ 178.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.40.1","-de0"]`
+- Command: `["perl5.40.2","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
