@@ -7330,15 +7330,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.dsc' perl_5.34.0-3ubuntu1.3.dsc 2976 SHA512:789ad2abeb08f1ce1e29734ff6b017ec310edf415efe1728654ff1b904ea623d03d4d46afe5cb9ea98302e241ae6fe0ecaaa6e0aae66550bdf93e35ea02c9f31
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.debian.tar.xz' perl_5.34.0-3ubuntu1.3.debian.tar.xz 194972 SHA512:2e59cdae22e90953cd91fd2c3f1c5b30ed92afc3b696d577719a8919d475fe52152fa2c7090d9a5f889e0816e847124e9457e0cd0dba206551303bd82297cad1
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -7551,14 +7545,9 @@ Licenses: (parsed from: `/usr/share/doc/libprotobuf23/copyright`)
 - `GPLWithACException`
 - `Public-Domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris protobuf=3.12.4-1ubuntu7.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.12.4-1ubuntu7.22.04.1.dsc' protobuf_3.12.4-1ubuntu7.22.04.1.dsc 2738 SHA512:10a12abe0dff9fd69954185c8506abc23592bb27b64fecea2921841e32c9b2a86e79c910d6d07f5665bb5180ad406020d38f7807d7631fcb46088cd57243a034
-'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.12.4.orig.tar.gz' protobuf_3.12.4.orig.tar.gz 5310348 SHA512:c5d24502b9a6be0a606a19213186fe462e0de6830547003636f0897781f36d0bd7e4e7d9689d96390a0399ce04b6438cda3a0fe6f97f0feb700a110e90beef0c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.12.4-1ubuntu7.22.04.1.debian.tar.xz' protobuf_3.12.4-1ubuntu7.22.04.1.debian.tar.xz 37932 SHA512:13369a8f106db8c6bbca45bde3f836d3059a1c261a61224bf54c8e2c0223560bd49a9c059c2dfc9402ddf3f2fa1567eb8cfbeb581824dcc271cf0fdfd49c2f8e
-```
 
 ### `dpkg` source package: `pybind11=2.9.1-2`
 

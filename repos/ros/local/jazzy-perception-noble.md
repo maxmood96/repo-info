@@ -2785,14 +2785,9 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `other`
 - `unencumbered`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.24.41-4ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41-4ubuntu1.2.dsc' gtk+3.0_3.24.41-4ubuntu1.2.dsc 4998 SHA512:8cd872308986451b78b9bb83335fc0234be54adf532d980995d3f9103692dc43958c6dfe391b71ebeb84778ec11e8235c4df665ff13f56154a670546555cd9a8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41.orig.tar.xz' gtk+3.0_3.24.41.orig.tar.xz 13188312 SHA512:aaf061d846fac592e71089feace302bdef1bb64bb2ad6ff30d51d90000da9084cad2fa5bf88cb75adcd789c911d94231ae60a2ca7cf97a2f5720687369a3da98
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41-4ubuntu1.2.debian.tar.xz' gtk+3.0_3.24.41-4ubuntu1.2.debian.tar.xz 3480620 SHA512:3a28b5f8155064ab8bbb0b99eb322b28820c590f60c615aee313fc66dadac29790d834a84e91959152ccc9b83a7de9b58c8726593e6af5251552654a31ccd839
-```
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-5.2build1`
 
@@ -7651,15 +7646,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2build2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.dsc' perl_5.38.2-3.2build2.1.dsc 3032 SHA512:5b2059c15c5c2b84fa06696dbf8d9ca3c30cbcf18ca970401a0098304dd1085421e664941f65c3698316d6112aaed3cd573e24d8728ca8306c515e97afd43538
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.debian.tar.xz' perl_5.38.2-3.2build2.1.debian.tar.xz 165908 SHA512:ad6c9712178856e4a35ac811b908591d200d1638ca8f0a6cc71c7e55d796b5e50708773bbf039a7a3a6444950512e7785110c23a0c5c4748f516a0aa3914f89e
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
