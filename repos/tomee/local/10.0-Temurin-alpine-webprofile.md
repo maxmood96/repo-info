@@ -1,10 +1,10 @@
-# `tomee:10.0.0-jre21-Temurin-alpine-webprofile`
+# `tomee:10.0.1-jre21-Temurin-alpine-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6099072f522c465296adb9f83416cef3fa3640af7f71db6d0af91ac34bb0a6f`
-- Created: `2024-12-29T01:38:24Z`
-- Virtual Size: ~ 274.95 Mb  
+- Image ID: `sha256:432997ea441d8d774fd51c6ce4bb67e1627b5956504132d003b0972ff2777618`
+- Created: `2025-04-07T14:29:55Z`
+- Virtual Size: ~ 275.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.6+7`
-  - `TOMEE_VER=10.0.0`
+  - `TOMEE_VER=10.0.1`
   - `TOMEE_BUILD=webprofile`
 
 ## `apk` (`.apk`-based packages)
@@ -177,16 +177,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -296,16 +296,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -687,16 +687,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
