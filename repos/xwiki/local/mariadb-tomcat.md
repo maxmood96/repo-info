@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1dc013447b96098930101a90a2fde8a12ed3df9819fe04eca805d8e98618921a`
-- Created: `2025-03-31T16:08:40Z`
+- Image ID: `sha256:bb301e0c397d666bf45e2d640ce8a3ea03ba6e0b7e09e4194122cb28670ec794`
+- Created: `2025-04-14T12:16:51Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.40`
   - `TOMCAT_SHA512=2bde772acf2e6f300f0f8341eb4de7da5d59af6a95f607bcdb92e4c22e0a253d437ea9a423d7d3e334af1c608f33489f32d32d346fbef5b0abef1dee666895ea`
-  - `XWIKI_VERSION=17.2.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.2.0`
-  - `XWIKI_DOWNLOAD_SHA256=8c35dae775bbc834e5d747c8b0613016beea6168e96034dd11e29ed88fe6e26e`
+  - `XWIKI_VERSION=17.2.1`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.2.1`
+  - `XWIKI_DOWNLOAD_SHA256=333fd344762ae820a4bcb8cdbb2b2c62dfd567aac9382d2e896ff46c1fca5632`
   - `MARIADB_JDBC_VERSION=3.5.3`
   - `MARIADB_JDBC_SHA256=85c4ba2f221d0dfd439c26affbb294f784960763544263c65aba9c2c76858706`
   - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.3`
@@ -3477,15 +3477,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2build2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.dsc' perl_5.38.2-3.2build2.1.dsc 3032 SHA512:5b2059c15c5c2b84fa06696dbf8d9ca3c30cbcf18ca970401a0098304dd1085421e664941f65c3698316d6112aaed3cd573e24d8728ca8306c515e97afd43538
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.debian.tar.xz' perl_5.38.2-3.2build2.1.debian.tar.xz 165908 SHA512:ad6c9712178856e4a35ac811b908591d200d1638ca8f0a6cc71c7e55d796b5e50708773bbf039a7a3a6444950512e7785110c23a0c5c4748f516a0aa3914f89e
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
