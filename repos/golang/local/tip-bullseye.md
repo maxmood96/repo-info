@@ -1,10 +1,10 @@
-# `golang:tip-20250406-bullseye`
+# `golang:tip-20250413-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6c0548863aa386126f12b92f3db1c7954b555d2e78b3b70a71c71f5c21261b8`
-- Created: `2025-04-07T05:23:21Z`
-- Virtual Size: ~ 839.13 Mb  
+- Image ID: `sha256:14beb25355c41e4a022f4b2e274adacee3e0a24506990450276064fd27dafddd`
+- Created: `2025-04-14T05:23:20Z`
+- Virtual Size: ~ 839.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -938,11 +938,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.30.2-1+deb11u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glib2.0=2.66.8-1+deb11u5`
+### `dpkg` source package: `glib2.0=2.66.8-1+deb11u6`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.66.8-1+deb11u5`
+- `libglib2.0-0:amd64=2.66.8-1+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -953,17 +953,17 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.66.8-1+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8-1%2bdeb11u5.dsc' glib2.0_2.66.8-1+deb11u5.dsc 3304 SHA256:25c496be75f49f3714e2f627d9f9cfd247471090e26a9c9ef078a9a997ace867
+$ apt-get source -qq --print-uris glib2.0=2.66.8-1+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8-1%2bdeb11u6.dsc' glib2.0_2.66.8-1+deb11u6.dsc 3304 SHA256:efeceb2095be5fae913bae8b20e33802766c61b2f8c6bdf015370372b188f058
 'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8.orig.tar.xz' glib2.0_2.66.8.orig.tar.xz 4845548 SHA256:97bc87dd91365589af5cbbfea2574833aea7a1b71840fd365ecd2852c76b9c8b
-'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8-1%2bdeb11u5.debian.tar.xz' glib2.0_2.66.8-1+deb11u5.debian.tar.xz 189160 SHA256:15c59bae400067d4beb2a9f52b30dbf66fca85b586faf247b4e729258b03024d
+'http://deb.debian.org/debian-security/pool/updates/main/g/glib2.0/glib2.0_2.66.8-1%2bdeb11u6.debian.tar.xz' glib2.0_2.66.8-1+deb11u6.debian.tar.xz 191264 SHA256:65f731978affae6092688aed1aa2c95355db22057abf9b7ae11a5dd695bdeab8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.66.8-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.66.8-1+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.66.8-1+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-13+deb11u11`
 
