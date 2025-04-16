@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-17`
 
 ```console
-$ docker pull maven@sha256:0e5b0b18e78516bcb8a6011894d50ea38017b9a63d769a542bd99d0feb435ae8
+$ docker pull maven@sha256:b038f33bcfb9ccdc5708102eae3e52019da3e44267380e342fa9a5b6bcb645ce
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -133,13 +133,13 @@ $ docker pull maven@sha256:ef537ec44d8e6e289897b71e44c53afd5c402b51f8a1cbc4c2a0a
 ### `maven:3-amazoncorretto-17` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:2acf8a801d3e7dcc23ca0bacecd9935209866e09d054cf5560232724f47dca5c
+$ docker pull maven@sha256:882621b837faca112c9b3e37eb7459694453b2fcf27141369bcf679eab50ef4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **389.3 MB (389281085 bytes)**  
+-	Total Size: **389.4 MB (389389362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e05781614a1de013cf6d1353dc4bf24c70077c2acff1dcac7a6a51ed7e753e8`
+-	Image ID: `sha256:3e6bc79314c4675a732b380515efc449dfce49884c487dd0f4c3eeadb8d73dc1`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -149,9 +149,9 @@ COPY /rootfs/ / # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["/bin/bash"]
 # Tue, 20 Aug 2024 18:12:59 GMT
-ARG version=17.0.14.7-1
+ARG version=17.0.15.6-1
 # Tue, 20 Aug 2024 18:12:59 GMT
-# ARGS: version=17.0.14.7-1
+# ARGS: version=17.0.15.6-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-17-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-17-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV LANG=C.UTF-8
@@ -196,55 +196,55 @@ CMD ["mvn"]
 		Last Modified: Thu, 27 Mar 2025 19:19:37 GMT  
 		Size: 64.6 MB (64565822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9cb0a04e32045bea8a36477ff07d28428a7ae7e142505376782ccaa20b05e7b`  
-		Last Modified: Fri, 28 Mar 2025 00:13:29 GMT  
-		Size: 150.3 MB (150303064 bytes)  
+	-	`sha256:bbc78a794204205caf229722289ea3beec64dfead5533793f7446dc927d5a3ea`  
+		Last Modified: Wed, 16 Apr 2025 00:08:14 GMT  
+		Size: 150.4 MB (150384110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ab41a34e3ca97525f37963d1c9c4de3474cc2547e060e8e0562ecc2b59ffd5d`  
-		Last Modified: Thu, 10 Apr 2025 00:02:41 GMT  
-		Size: 134.1 MB (134063391 bytes)  
+	-	`sha256:d7b014cb79c9d8cf78f2ec7ec7db39a854f8be24831b3fac0d7032dce2869769`  
+		Last Modified: Wed, 16 Apr 2025 01:25:44 GMT  
+		Size: 134.1 MB (134080324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb777148584384035c10a6de79086b48358826eda2eef2581fd3935ad5b98f42`  
-		Last Modified: Thu, 10 Apr 2025 00:02:38 GMT  
-		Size: 31.2 MB (31177335 bytes)  
+	-	`sha256:1fd30db2c653eceea3a757b034ec398ebca647dd243257f5dcfb0374429339d9`  
+		Last Modified: Wed, 16 Apr 2025 01:25:41 GMT  
+		Size: 31.2 MB (31187628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9c3abd5d241832900c292e1d5f4be4bc2c026803876ecc2ba0773cb2d08a35f`  
-		Last Modified: Thu, 10 Apr 2025 00:02:38 GMT  
-		Size: 9.2 MB (9170432 bytes)  
+	-	`sha256:d7e9403d1c45c894d5f1d673675a6dd1e5d7971d88141f5b80a5663d43b65605`  
+		Last Modified: Wed, 16 Apr 2025 01:25:41 GMT  
+		Size: 9.2 MB (9170435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7738bc78ebdee5facdc13284141c4f1e1dfeed502d227ad595075f2f7911ee61`  
-		Last Modified: Thu, 10 Apr 2025 00:02:37 GMT  
-		Size: 851.0 B  
+	-	`sha256:fcd234ab56d8fe2ccb625168371a75ca160348856310da3d71270ed16bc98afd`  
+		Last Modified: Wed, 16 Apr 2025 01:25:40 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed424304246d0e2e550141d19eed66b5f5d6485c9c6d763279a74b529a2d4db`  
-		Last Modified: Thu, 10 Apr 2025 00:02:39 GMT  
-		Size: 158.0 B  
+	-	`sha256:51b6ed511d59e221fb1356a4ecd1a538d6945d09c4c690f95a27a50cc3208469`  
+		Last Modified: Wed, 16 Apr 2025 01:25:42 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:68bdb818f9cdcbedf8a643d05096668bc1322508cdaa62a763fba19f268d588a
+$ docker pull maven@sha256:8efa85b74971d3d1dbf6e128462f5f5008bb963ea65ab5726da4baf1dc0d18eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.9 MB (6925620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe2bec521da8406d7ad3d0059a307c64eaff383449b19ac3f3822f9f0ce23f96`
+-	Image ID: `sha256:905c907c92f7739dd80c93b215a95e7fd19d0fb3b75a80038bfac7a632333ac1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b094b15a7a8bb766c585058cbb9d253c20c71bff25b772ee407be5edb9a39ac`  
-		Last Modified: Thu, 10 Apr 2025 00:02:38 GMT  
+	-	`sha256:c0a8d82c130b7d30664b828ce85f381fe42a9bf4f6bf76b5771e4a0e17bd9d88`  
+		Last Modified: Wed, 16 Apr 2025 01:25:41 GMT  
 		Size: 6.9 MB (6905922 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df776121a3cae38b96460ba9fb39c17b96b151d0811a75921042efabd2a60825`  
-		Last Modified: Thu, 10 Apr 2025 00:02:37 GMT  
+	-	`sha256:800baedb8e00320a6b431c0d8a74bde0d58dd9078187908e9c155a408aee8031`  
+		Last Modified: Wed, 16 Apr 2025 01:25:40 GMT  
 		Size: 19.7 KB (19698 bytes)  
 		MIME: application/vnd.in-toto+json
