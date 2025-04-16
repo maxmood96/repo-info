@@ -1,7 +1,7 @@
 ## `jetty:9-jdk17-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:21f5ceae45e7e8c88bcc0c197c5e07b778f29dd7e7ff18d24eb5ea97702720fb
+$ docker pull jetty@sha256:6d237aabc798fdc355d89ab8e38c78c4b4eef6eee33e76394cc70f29c1253856
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -117,13 +117,13 @@ $ docker pull jetty@sha256:bfdb97aa78341cf262aa632a1e7dd8605c8983422d4eaa9b23b56
 ### `jetty:9-jdk17-amazoncorretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:0fb39ac928d8cf6ec86bdecbc9880097b85f40b9371914b86a0e1c25d65eea95
+$ docker pull jetty@sha256:ce8bbe80bf88ededdd9e716055e26b3ae5637e9ce8020ff52a40b33026e34529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.1 MB (231067986 bytes)**  
+-	Total Size: **231.2 MB (231152360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce6d628343726ce6830e27e469f13d7538441a4859f7cc1571da8a3716de7044`
+-	Image ID: `sha256:2eba0901f310147c150f34006529611351203a974525906493cb5c727e63cfd5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -133,9 +133,9 @@ COPY /rootfs/ / # buildkit
 # Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
 # Tue, 14 Jan 2025 05:07:03 GMT
-ARG version=17.0.14.7-1
+ARG version=17.0.15.6-1
 # Tue, 14 Jan 2025 05:07:03 GMT
-# ARGS: version=17.0.14.7-1
+# ARGS: version=17.0.15.6-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-17-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-17-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
 # Tue, 14 Jan 2025 05:07:03 GMT
 ENV LANG=C.UTF-8
@@ -176,43 +176,43 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Thu, 27 Mar 2025 19:19:37 GMT  
 		Size: 64.6 MB (64565822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9cb0a04e32045bea8a36477ff07d28428a7ae7e142505376782ccaa20b05e7b`  
-		Last Modified: Fri, 28 Mar 2025 00:13:29 GMT  
-		Size: 150.3 MB (150303064 bytes)  
+	-	`sha256:bbc78a794204205caf229722289ea3beec64dfead5533793f7446dc927d5a3ea`  
+		Last Modified: Wed, 16 Apr 2025 00:08:14 GMT  
+		Size: 150.4 MB (150384110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:655fffe9456d7e3bce9f7213622d19af7cd8085911c7e1a5104009290e5ff7c4`  
-		Last Modified: Fri, 28 Mar 2025 01:26:22 GMT  
-		Size: 16.2 MB (16197407 bytes)  
+	-	`sha256:591291f4acb993e4444698a99e7ad87be5d67e0b3c56d13386029a7a923020dc`  
+		Last Modified: Wed, 16 Apr 2025 01:13:09 GMT  
+		Size: 16.2 MB (16200736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a38154f0ec42e54dac25fa248a8e78b16a771525f1554a24ad955621e5391c31`  
-		Last Modified: Fri, 28 Mar 2025 01:26:21 GMT  
-		Size: 1.7 KB (1661 bytes)  
+	-	`sha256:1639701936ed3a924f54601a25b59d97519326afdcab0c906a4ed55cb47d526a`  
+		Last Modified: Wed, 16 Apr 2025 01:13:09 GMT  
+		Size: 1.7 KB (1660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:9-jdk17-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:1066ebfaae553aa2cb4ca6cefa697c369a83eea2c60df9e16f355d9e9a7fe484
+$ docker pull jetty@sha256:1e8ba53e5a26fbbaac74f5d019be0aeb6496f6b9ffdc84894f8b17ca0d9ac502
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5911453 bytes)**  
+-	Total Size: **5.9 MB (5911480 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbe66ac1716d3b15822e27f58d3a70e4e775943e39f06236736709277da4533c`
+-	Image ID: `sha256:efb96d3f1f5d7e1408e855953828cf30755317c8b7710a0a4d6d2b91c3ea2107`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:256d3b16ede6387bb8f30a5615f3526d2cc502cafbf4cdf09b66b0f13d83cb0d`  
-		Last Modified: Fri, 28 Mar 2025 01:26:21 GMT  
-		Size: 5.9 MB (5893930 bytes)  
+	-	`sha256:f56dcf9a4164134cab9932d136661baa840bd0c1f01cc54e8e4bc7e720db3e2a`  
+		Last Modified: Wed, 16 Apr 2025 01:13:09 GMT  
+		Size: 5.9 MB (5893958 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f7268391a26cfff13d3879cbb8074dade0dcf3161834e382e3893a267e07db7f`  
-		Last Modified: Fri, 28 Mar 2025 01:26:21 GMT  
-		Size: 17.5 KB (17523 bytes)  
+	-	`sha256:1896c2259ec51cae1b36cad7d58377ec27fc4a3d167a54186ccbfa87ac3e627d`  
+		Last Modified: Wed, 16 Apr 2025 01:13:09 GMT  
+		Size: 17.5 KB (17522 bytes)  
 		MIME: application/vnd.in-toto+json
