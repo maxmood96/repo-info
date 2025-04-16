@@ -1,10 +1,10 @@
-# `joomla:5.2.6-php8.1-fpm`
+# `joomla:5.3.0-php8.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2105a302add96bedbb3377081591fe7f4a90f29c4772215c40cd83457179d1a5`
-- Created: `2025-04-09T19:45:06Z`
-- Virtual Size: ~ 747.00 Mb  
+- Image ID: `sha256:56bd30f000e7fd3743e6797bd3f613d2097aaaa17488658c9c585fa7bd2b56fc`
+- Created: `2025-04-15T17:15:48Z`
+- Virtual Size: ~ 747.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.32.tar.xz.asc`
   - `PHP_SHA256=c582ac682a280bbc69bc2186c21eb7e3313cc73099be61a6bc1d2cd337cbf383`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.2.6`
-  - `JOOMLA_SHA512=8573ca86fb57cd610ebbb47e04eacaef295bdb142cc70bee292eab66d8a56a87f78b9a3bf6137513f98ef0a070096b1482747e1fee0c42c12534731a4ef3b7cc`
+  - `JOOMLA_VERSION=5.3.0`
+  - `JOOMLA_SHA512=d3eb711171cff3e04cfb108450231ebc7892499729466c479d0a36cef3637f0cc016beab7beb965add93050f256ac08940e51c709b89107ce36e2038a55d2438`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
