@@ -1,10 +1,10 @@
-# `adminer:5.1.0-fastcgi`
+# `adminer:5.2.1-fastcgi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:764a4ec7e1ab2175e705bb223b0769eaca5317bd705447bd819afa641eb50b89`
-- Created: `2025-03-27T18:41:20Z`
-- Virtual Size: ~ 97.80 Mb  
+- Image ID: `sha256:440f040ad4037da23f2925533de35cfade959b4a01324940f6e656c45f437a87`
+- Created: `2025-04-15T15:52:00Z`
+- Virtual Size: ~ 99.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -21,9 +21,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
   - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
-  - `ADMINER_VERSION=5.1.0`
-  - `ADMINER_DOWNLOAD_SHA256=b11edcee53cef7e64776adfcc21bb1971123c7de55b7d4eef3cd0020142b900e`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=de4dd39ade03d2ebb145782c8fb5bb176eecb8ec4a9cf4ee63b4669be2b1b80c`
+  - `ADMINER_VERSION=5.2.1`
+  - `ADMINER_DOWNLOAD_SHA256=572118dff2305f136a4b8d59404d01c3d8450e99e3abd506081ffdddd8816573`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=64e6b6c9e049ddab694cc8793485f1f1888abaf70ab5a389544c0a1b2926bed6`
 
 ## `apk` (`.apk`-based packages)
 
@@ -625,16 +625,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
