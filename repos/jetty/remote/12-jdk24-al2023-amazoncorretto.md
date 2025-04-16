@@ -1,7 +1,7 @@
 ## `jetty:12-jdk24-al2023-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:35c800aeb470ce0d815d27db91ff5a61a8398d19c2372fcc5a2b0ca4d6c3c290
+$ docker pull jetty@sha256:f75684f97747b2794f3a60627f818bfbdcabec60a289cc0d7ae0c4c3ac7e067b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,31 +14,31 @@ $ docker pull jetty@sha256:35c800aeb470ce0d815d27db91ff5a61a8398d19c2372fcc5a2b0
 ### `jetty:12-jdk24-al2023-amazoncorretto` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:0b39eef0f28001290bd7d0a13ca26337302295ae7d0a53f325c42f3a5334f534
+$ docker pull jetty@sha256:771fe64472c0107f79dddffe1f2f9193dce5b57b93cc509558b1b05d46783b33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **308.8 MB (308845306 bytes)**  
+-	Total Size: **308.8 MB (308827135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b17b53263bdeb8b6f9345a6389a14a3763970c0785558a68385f37d940684f7`
+-	Image ID: `sha256:a60c0e1b9c142d26a86c0bca77d66af7883547423bb0b81d87f168c3f0427e2b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Fri, 21 Mar 2025 22:11:14 GMT
+# Tue, 01 Apr 2025 20:49:23 GMT
 COPY /rootfs/ / # buildkit
-# Fri, 21 Mar 2025 22:11:14 GMT
+# Tue, 01 Apr 2025 20:49:23 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Mar 2025 22:11:14 GMT
-ARG version=24.0.0.36-2
-# Fri, 21 Mar 2025 22:11:14 GMT
+# Tue, 08 Apr 2025 03:30:17 GMT
+ARG version=24.0.1.9-1
+# Tue, 08 Apr 2025 03:30:17 GMT
 ARG package_version=1
-# Fri, 21 Mar 2025 22:11:14 GMT
-# ARGS: version=24.0.0.36-2 package_version=1
+# Tue, 08 Apr 2025 03:30:17 GMT
+# ARGS: version=24.0.1.9-1 package_version=1
 RUN set -eux     && rpm --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2023     && echo "localpkg_gpgcheck=1" >> /etc/dnf/dnf.conf     && CORRETO_TEMP=$(mktemp -d)     && pushd ${CORRETO_TEMP}     && RPM_LIST=("java-24-amazon-corretto-headless-$version.amzn2023.${package_version}.$(uname -m).rpm" "java-24-amazon-corretto-$version.amzn2023.${package_version}.$(uname -m).rpm" "java-24-amazon-corretto-devel-$version.amzn2023.${package_version}.$(uname -m).rpm" "java-24-amazon-corretto-jmods-$version.amzn2023.${package_version}.$(uname -m).rpm")     && for rpm in ${RPM_LIST[@]}; do     curl --fail -O https://corretto.aws/downloads/resources/$(echo $version | tr '-' '.')/${rpm}     && rpm -K "${CORRETO_TEMP}/${rpm}" | grep -F "${CORRETO_TEMP}/${rpm}: digests signatures OK" || exit 1;     done     && dnf install -y ${CORRETO_TEMP}/*.rpm     && popd     && rm -rf /usr/lib/jvm/java-24-amazon-corretto.$(uname -m)/lib/src.zip     && rm -rf ${CORRETO_TEMP}     && dnf clean all     && sed -i '/localpkg_gpgcheck=1/d' /etc/dnf/dnf.conf # buildkit
-# Fri, 21 Mar 2025 22:11:14 GMT
+# Tue, 08 Apr 2025 03:30:17 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Mar 2025 22:11:14 GMT
+# Tue, 08 Apr 2025 03:30:17 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-24-amazon-corretto
 # Tue, 08 Apr 2025 03:30:17 GMT
 ENV JETTY_VERSION=12.0.19
@@ -75,44 +75,44 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Tue, 01 Apr 2025 23:53:54 GMT  
 		Size: 55.9 MB (55907053 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e059f0daed01c9cd9afc957597b24a53681af5c793437212a79d2fde0ebe8715`  
-		Last Modified: Wed, 02 Apr 2025 00:01:54 GMT  
-		Size: 187.3 MB (187286879 bytes)  
+	-	`sha256:30e5513f0760ee159f76115f9757d5cbf79408cd7da31a5b6c87b0838e791a07`  
+		Last Modified: Tue, 15 Apr 2025 23:56:27 GMT  
+		Size: 187.3 MB (187269403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80cf6e771cc6756eade199eb36c8f0e6308eb62d57c8879eca2711454c4df6a5`  
-		Last Modified: Wed, 09 Apr 2025 17:07:55 GMT  
-		Size: 65.6 MB (65649681 bytes)  
+	-	`sha256:a76de37282ecb3be10fd1848d219f86c8c0bbff2f29906efc16a7afedea44167`  
+		Last Modified: Wed, 16 Apr 2025 00:08:49 GMT  
+		Size: 65.6 MB (65648987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db7569757a3f20702e67192a0f528da6192eba6ad240ccda4bed180a37bc1556`  
-		Last Modified: Wed, 09 Apr 2025 17:07:26 GMT  
-		Size: 1.7 KB (1661 bytes)  
+	-	`sha256:a8752cb5c623b80ad4063bb6eed1d3ace9fe3c220ebf7b35bd35cf8e709e187a`  
+		Last Modified: Wed, 16 Apr 2025 00:08:30 GMT  
+		Size: 1.7 KB (1660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk24-al2023-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:0bb9f816e4e1ee2e3b70d73d115669603ee17825d9443114e28d86fd497d63a4
+$ docker pull jetty@sha256:a8f4303c0e28da4ef5ad84f24c2a976ca187ad854e5e5ad82d5a17a8e196b0e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7361792 bytes)**  
+-	Total Size: **7.4 MB (7361790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0bc63b5f5e283a1b0525aa90c3a019c7d7514d9cb3eb9b207b2e16a62a191c2`
+-	Image ID: `sha256:d90467eeb7aa85ca36a1cdf7f4f60d86758d9d776b89e92418f33c8e91e88a9b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39f32cce82cb1ee025648c1cafaa4d16a8a4bd319ce8cad5fdf7137cf140e8b3`  
-		Last Modified: Wed, 09 Apr 2025 17:07:55 GMT  
-		Size: 7.3 MB (7344309 bytes)  
+	-	`sha256:ca59d454bac186ecc7cbdc932df6a57c0319d5c9e67dd2b3f6c8547b72069bd0`  
+		Last Modified: Wed, 16 Apr 2025 00:08:48 GMT  
+		Size: 7.3 MB (7344307 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:68046a932cde37bd181a15f7c19bced251c97f4483898eba82949aa2cb8aee29`  
-		Last Modified: Wed, 09 Apr 2025 17:07:54 GMT  
+	-	`sha256:2d37f61de3c74ba05aa6fd5dbb2bd1ec2241a6a15a736c5cdad8a019c5a57d66`  
+		Last Modified: Wed, 16 Apr 2025 00:08:47 GMT  
 		Size: 17.5 KB (17483 bytes)  
 		MIME: application/vnd.in-toto+json
 
