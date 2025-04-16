@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7b7a3eba646a4172f659d16c1991ddf7138e02881963bf11ce754c58150f964`
-- Created: `2025-03-21T22:11:14Z`
-- Virtual Size: ~ 463.66 Mb  
+- Image ID: `sha256:9695d38d562126fe80e4e398ec55d017450cbf421221abc404bf20d537bbc1f9`
+- Created: `2025-04-15T21:50:45Z`
+- Virtual Size: ~ 463.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -235,15 +235,15 @@ $ dnf --quiet download --source --url fontpackages-filesystem-1.44-8.amzn2.noarc
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/448fc22dde9d7edda53a3d682e77165dfa8566ba98ac0cc85f45ec7f5dbcf256/../../../../../blobstore/a7c49b56992c5deec79f1d6b1cadaf4a1210c7f5cefea9dab4b353e83eeb6ab5/fontpackages-1.44-8.amzn2.src.rpm
 ```
 
-### `rpm` package: `freetype-2.8-14.amzn2.1.2.x86_64`
+### `rpm` package: `freetype-2.8-14.amzn2.1.4.x86_64`
 
 Licenses (from `rpm --query`): (FTL or GPLv2+) and BSD and MIT and Public Domain and zlib with acknowledgement
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url freetype-2.8-14.amzn2.1.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/448fc22dde9d7edda53a3d682e77165dfa8566ba98ac0cc85f45ec7f5dbcf256/../../../../../blobstore/62813f3d4bfeae420781b3927578911e2c6afa12e572fbb421c01c626cc54654/freetype-2.8-14.amzn2.1.2.src.rpm
+$ dnf --quiet download --source --url freetype-2.8-14.amzn2.1.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/448fc22dde9d7edda53a3d682e77165dfa8566ba98ac0cc85f45ec7f5dbcf256/../../../../../blobstore/c61cf3ff2a78982c8e10664d6e6c76a68d9b7dac0bc2e580d8e1feb0a3525792/freetype-2.8-14.amzn2.1.4.src.rpm
 ```
 
 ### `rpm` package: `gawk-4.0.2-4.amzn2.1.3.x86_64`
@@ -390,7 +390,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/448fc22dde9d7edda53a3d682e77165dfa8566ba98ac0cc85f45ec7f5dbcf256/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-devel-17.0.14.7-1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-devel-17.0.15.6-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 

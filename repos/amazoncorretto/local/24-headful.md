@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cedc6d53cd5458206bb08986bcaadcdc0e5cef59635b26e6b33de143c7059f21`
-- Created: `2025-03-21T22:11:14Z`
-- Virtual Size: ~ 440.80 Mb  
+- Image ID: `sha256:13c7d06f615a1bd90906826e7397ff065f46961071d64956b4ba6f5f72af11ff`
+- Created: `2025-04-15T21:50:45Z`
+- Virtual Size: ~ 440.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -505,27 +505,17 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/b97cc280a22c10b1346b6f13d611a0db1b1c420f2f5d84f6e5af3f42d82c1ac4/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-24-amazon-corretto-24.0.0+36-2.amzn2023.1.x86_64`
+### `rpm` package: `java-24-amazon-corretto-24.0.1+9-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-24-amazon-corretto-24.0.0+36-2.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/b97cc280a22c10b1346b6f13d611a0db1b1c420f2f5d84f6e5af3f42d82c1ac4/SRPMS/../../../../blobstore/b7284e4d680a4f64eebcf45d6066ea0da5b694351c51a10738cf83efb22f1271/java-24-amazon-corretto-24.0.0+36-2.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-24-amazon-corretto-headless-24.0.0+36-2.amzn2023.1.x86_64`
+### `rpm` package: `java-24-amazon-corretto-headless-24.0.1+9-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-24-amazon-corretto-headless-24.0.0+36-2.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/b97cc280a22c10b1346b6f13d611a0db1b1c420f2f5d84f6e5af3f42d82c1ac4/SRPMS/../../../../blobstore/b7284e4d680a4f64eebcf45d6066ea0da5b694351c51a10738cf83efb22f1271/java-24-amazon-corretto-24.0.0+36-2.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 
