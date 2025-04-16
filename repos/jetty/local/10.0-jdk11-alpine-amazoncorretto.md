@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90b6e65721bb9864b6d286e9708ceadc6da9f4d25f3475a7dcc17df371182ad2`
+- Image ID: `sha256:03282a329ed2897908968d13eb5b7b330617e7ef36baa7edd8ada310b146e44e`
 - Created: `2025-03-19T00:38:43Z`
-- Virtual Size: ~ 307.10 Mb  
+- Virtual Size: ~ 307.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `amazon-corretto-11`
 
 ```console
-amazon-corretto-11-11.0.26.4.1-r0 description:
+amazon-corretto-11-11.0.27.6.1-r0 description:
 Corretto11
 
-amazon-corretto-11-11.0.26.4.1-r0 webpage:
+amazon-corretto-11-11.0.27.6.1-r0 webpage:
 https://github.com/corretto/corretto-11
 
-amazon-corretto-11-11.0.26.4.1-r0 installed size:
+amazon-corretto-11-11.0.27.6.1-r0 installed size:
 312 MiB
 
-amazon-corretto-11-11.0.26.4.1-r0 license:
+amazon-corretto-11-11.0.27.6.1-r0 license:
 https://github.com/corretto/corretto-11/blob/develop/LICENSE
 
 ```
@@ -178,16 +178,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -909,16 +909,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```

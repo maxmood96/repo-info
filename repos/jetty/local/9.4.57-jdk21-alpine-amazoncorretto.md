@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa487d10fd832fd8519243ee2fb1083240ab537bf92c8309f6f681fd16466f46`
+- Image ID: `sha256:93c88fba84c23904461f35f331afd68a9621380b471a1b63f4a16835700e21fb`
 - Created: `2025-01-14T05:07:03Z`
-- Virtual Size: ~ 347.18 Mb  
+- Virtual Size: ~ 347.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `amazon-corretto-21`
 
 ```console
-amazon-corretto-21-21.0.6.7.1-r0 description:
+amazon-corretto-21-21.0.7.6.1-r0 description:
 Corretto21
 
-amazon-corretto-21-21.0.6.7.1-r0 webpage:
+amazon-corretto-21-21.0.7.6.1-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-21-21.0.6.7.1-r0 installed size:
+amazon-corretto-21-21.0.7.6.1-r0 installed size:
 346 MiB
 
-amazon-corretto-21-21.0.6.7.1-r0 license:
+amazon-corretto-21-21.0.7.6.1-r0 license:
 https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
 
 ```
@@ -178,16 +178,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -212,16 +212,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -535,16 +535,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -552,16 +552,16 @@ curl
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -909,16 +909,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
