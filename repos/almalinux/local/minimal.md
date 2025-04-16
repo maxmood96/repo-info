@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c567d066289e2f5612a85aa882bafd5a4b8872dd5403049d1e1e55c5b6f7a50`
-- Created: `2025-03-07T08:10:42Z`
-- Virtual Size: ~ 91.24 Mb  
+- Image ID: `sha256:72c981668a2c2404b763031e29b0011fe27c8f27715e3576e3f860a33619db72`
+- Created: `2025-04-11T09:18:44Z`
+- Virtual Size: ~ 91.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -222,37 +222,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-14.el9_4.1
 http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glib2-2.68.4-14.el9_4.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-125.el9_5.1.alma.2.x86_64`
+### `rpm` package: `glibc-2.34-125.el9_5.3.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-125.el9_5.1.alma.2
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glibc-2.34-125.el9_5.1.alma.2.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-125.el9_5.3.alma.1
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glibc-2.34-125.el9_5.3.alma.1.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-125.el9_5.1.alma.2.x86_64`
+### `rpm` package: `glibc-common-2.34-125.el9_5.3.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.1.alma.2
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glibc-2.34-125.el9_5.1.alma.2.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.3.alma.1
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glibc-2.34-125.el9_5.3.alma.1.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.1.alma.2.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.3.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.1.alma.2
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glibc-2.34-125.el9_5.1.alma.2.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.3.alma.1
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/glibc-2.34-125.el9_5.3.alma.1.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -756,15 +756,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 http://vault.almalinux.org/9.5/BaseOS/Source/Packages/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-6.el9_5.1.x86_64`
+### `rpm` package: `libxml2-2.9.13-6.el9_5.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.1
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/libxml2-2.9.13-6.el9_5.1.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.2
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/libxml2-2.9.13-6.el9_5.2.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1053,26 +1053,26 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
 http://vault.almalinux.org/9.5/BaseOS/Source/Packages/sqlite-3.34.1-7.el9_3.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-46.el9_5.2.alma.1.x86_64`
+### `rpm` package: `systemd-libs-252-46.el9_5.3.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-46.el9_5.2.alma.1
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/systemd-252-46.el9_5.2.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-46.el9_5.3.alma.1
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/systemd-252-46.el9_5.3.alma.1.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025a-1.el9.noarch`
+### `rpm` package: `tzdata-2025b-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2025a-1.el9.noarch
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/tzdata-2025a-1.el9.src.rpm
+$ dnf --quiet download --source --url tzdata-2025b-1.el9.noarch
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/tzdata-2025b-1.el9.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
