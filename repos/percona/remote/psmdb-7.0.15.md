@@ -1,7 +1,7 @@
 ## `percona:psmdb-7.0.15`
 
 ```console
-$ docker pull percona@sha256:ba5ccf40370835e563edc329603b5f318311d37d7c8dd6579da3464c1d85e59a
+$ docker pull percona@sha256:10b5d807ab699c61c34350712362f9af7a584f0d0441e156b805f8ef81f62794
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull percona@sha256:ba5ccf40370835e563edc329603b5f318311d37d7c8dd6579da
 ### `percona:psmdb-7.0.15` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:225d1e491e6880155c5cda5874eec8673063c84afb9b3eca0146f83f65be8310
+$ docker pull percona@sha256:0b537d2a8ecf1a37d62a38d97bc41e7ce0356367520858807833732648806f25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.9 MB (306929299 bytes)**  
+-	Total Size: **306.9 MB (306912869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c7b665409e3b1e5e5da0444113463a2c537a82b913343888d0f07da5d95c953`
+-	Image ID: `sha256:a905ca519282b32c9d337f24ab04ad3bf62522fa1447f9b86d1f78273922f363`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -86,63 +86,63 @@ CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:3b6f0a53c915c6b97578c3b6958123190d7abeb100a9218d8b40d6b1118b8a42`  
-		Last Modified: Tue, 15 Apr 2025 21:51:29 GMT  
-		Size: 100.8 MB (100819115 bytes)  
+	-	`sha256:f1d1c16b475160efcab2b2b503f0c80ac784f1d235e62bcd92ba127a5a8b5cd3`  
+		Last Modified: Wed, 16 Apr 2025 19:22:43 GMT  
+		Size: 100.8 MB (100813247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1d62d13d0d5451bdcfb395fc9b75ac65ce2ac68bda5e64839caeef179abd225`  
-		Last Modified: Tue, 15 Apr 2025 21:56:52 GMT  
-		Size: 4.3 MB (4316947 bytes)  
+	-	`sha256:e33dd1f69cd50f7654ee4a2c74481f13b264de23b6c44e89e76cba1b7bde05ee`  
+		Last Modified: Wed, 16 Apr 2025 20:47:16 GMT  
+		Size: 4.3 MB (4308210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab16319422e1c23ec23c54126a15c4800797f2ac7a8b13edb0644eb9f4b5d8c`  
-		Last Modified: Tue, 15 Apr 2025 21:56:55 GMT  
-		Size: 200.8 MB (200840841 bytes)  
+	-	`sha256:6c93876244fcaa0292474e3cffec60a98fa037a47e39a40495e7e17510b90dd6`  
+		Last Modified: Wed, 16 Apr 2025 20:47:20 GMT  
+		Size: 200.8 MB (200839034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ded01d227e60b2f35e769e24a25e853fca154837c5d8ab42f07f8a2693d6758c`  
-		Last Modified: Tue, 15 Apr 2025 21:56:51 GMT  
-		Size: 1.2 KB (1232 bytes)  
+	-	`sha256:8b5c2595244af4fb29aebc988d476571be54e49aaf7eb0b1a5618fc6cbc20d0e`  
+		Last Modified: Wed, 16 Apr 2025 20:47:16 GMT  
+		Size: 1.2 KB (1236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7404111fe70fec7f61487e5995c38ab9e40f371a95155141ad4c0a6a0dd9d1b4`  
-		Last Modified: Tue, 15 Apr 2025 21:56:52 GMT  
-		Size: 4.1 KB (4075 bytes)  
+	-	`sha256:77315b7ad517a9ed852cead1c6fdcfcfa09e9ebb93fbb036c6d9a7590aec89c7`  
+		Last Modified: Wed, 16 Apr 2025 20:47:16 GMT  
+		Size: 4.1 KB (4071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8c3e87681f55f0b795c209e507df6ca567cc15c4a133a72268b266768bf8926`  
-		Last Modified: Tue, 15 Apr 2025 21:56:52 GMT  
-		Size: 10.6 KB (10576 bytes)  
+	-	`sha256:532325a1c2611c29cc2893913c1c0b128ff70fe497e224b91898c5391574f7c8`  
+		Last Modified: Wed, 16 Apr 2025 20:47:16 GMT  
+		Size: 10.6 KB (10574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01454b03881ad9f641a3b0f076bc9f917cc1e57e96d6a0a94609cbaa3b6d3240`  
-		Last Modified: Tue, 15 Apr 2025 21:56:53 GMT  
-		Size: 914.5 KB (914516 bytes)  
+	-	`sha256:cc6835fcbf46c6e086cc475007029db782929e68f5917c9c6b598fc9b5df700d`  
+		Last Modified: Wed, 16 Apr 2025 20:47:17 GMT  
+		Size: 914.5 KB (914506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11b8259426e706b86ddb045f356f19c8fcf4c59da0a780a395a5cfd9a9d8a243`  
-		Last Modified: Tue, 15 Apr 2025 21:56:53 GMT  
-		Size: 13.2 KB (13205 bytes)  
+	-	`sha256:c5c33be38d067b9ad64645f5748ab0aefb03f08f48644bc533e96c6be67563a7`  
+		Last Modified: Wed, 16 Apr 2025 20:47:17 GMT  
+		Size: 13.2 KB (13203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a547b99e78f6c8dde56ca98bc34778c8a5644ba6cd08d2be5fe92ae73b4ba363`  
-		Last Modified: Tue, 15 Apr 2025 21:56:53 GMT  
-		Size: 4.0 KB (3959 bytes)  
+	-	`sha256:532e8c684e8c79f9cb374c54043dedcb0f52ab3d9329d64b8c272fe85f5f4fb0`  
+		Last Modified: Wed, 16 Apr 2025 20:47:17 GMT  
+		Size: 4.0 KB (3956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:705a0978f412adc12b75370788f39c140e30b477a030998798c62df061987255`  
-		Last Modified: Tue, 15 Apr 2025 21:56:54 GMT  
-		Size: 4.8 KB (4833 bytes)  
+	-	`sha256:742fb28dede248d2aae6890c9c9c4410bf163d8174151dbe6a4c7a49b8b275fd`  
+		Last Modified: Wed, 16 Apr 2025 20:47:18 GMT  
+		Size: 4.8 KB (4832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `percona:psmdb-7.0.15` - unknown; unknown
 
 ```console
-$ docker pull percona@sha256:e93fc4d1bc67f77091afac8018153faea65e12f017b649b63d6c08dd2701dff9
+$ docker pull percona@sha256:92af5fda33227a395de811cbd4679ed181a2d28cef96335417757e77b14f09cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **32.2 KB (32215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4b5561f2a9d7dd22298f4cb91cd8d7f350a48b2dd0b5f71c466b77870a55260`
+-	Image ID: `sha256:8326d7e038cd0610ae61714019ed8af44bee97445943a54aa5eb34ab6ff8eecc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9fffc1a6d27fa96d0c0cc1e9d6b72f6fecd95a13a1369f8ba4f3758ab4e82117`  
-		Last Modified: Tue, 15 Apr 2025 21:56:51 GMT  
+	-	`sha256:4fc1ca2d687032cb11fe0dfcd894ac32b9c6965a83d5c4f498c30ceed296dcb6`  
+		Last Modified: Wed, 16 Apr 2025 20:47:16 GMT  
 		Size: 32.2 KB (32215 bytes)  
 		MIME: application/vnd.in-toto+json
