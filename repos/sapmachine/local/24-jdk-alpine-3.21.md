@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8efcf9d8ad2f68d25ba6f6e2d95709fbc215da1265c815f3a8cd30e8fa587d2`
-- Created: `2025-03-19T14:31:37Z`
-- Virtual Size: ~ 419.76 Mb  
+- Image ID: `sha256:8a21ff433440a6bd93566710f07231ed1b851e44c29afda3a65582548b050cf8`
+- Created: `2025-04-16T10:34:47Z`
+- Virtual Size: ~ 419.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-24-jdk`
 
 ```console
-sapmachine-24-jdk-24-r0 description:
+sapmachine-24-jdk-24.0.1-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-24-jdk-24-r0 webpage:
+sapmachine-24-jdk-24.0.1-r0 webpage:
 https://sapmachine.io
 
-sapmachine-24-jdk-24-r0 installed size:
+sapmachine-24-jdk-24.0.1-r0 installed size:
 378 MiB
 
-sapmachine-24-jdk-24-r0 license:
+sapmachine-24-jdk-24.0.1-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -595,16 +595,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```

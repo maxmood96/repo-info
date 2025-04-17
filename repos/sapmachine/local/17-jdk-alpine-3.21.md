@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c0633c5bd446d4fbd6dcd6a2c308588bec3ee81fea4c58fc8cc3c574ebc39dc`
-- Created: `2025-01-27T13:39:16Z`
-- Virtual Size: ~ 350.62 Mb  
+- Image ID: `sha256:e01d319d2570974600a641436ce6231f283580e0b301ebf432cd1360658e9717`
+- Created: `2025-04-16T10:34:41Z`
+- Virtual Size: ~ 350.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -289,16 +289,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -323,16 +323,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -544,16 +544,16 @@ MPL-2.0
 ### `apk` package: `nss`
 
 ```console
-nss-3.107-r0 description:
+nss-3.109-r0 description:
 Mozilla Network Security Services
 
-nss-3.107-r0 webpage:
+nss-3.109-r0 webpage:
 https://developer.mozilla.org/docs/Mozilla/Projects/NSS
 
-nss-3.107-r0 installed size:
-3888 KiB
+nss-3.109-r0 installed size:
+3896 KiB
 
-nss-3.107-r0 license:
+nss-3.109-r0 license:
 MPL-2.0
 
 ```
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-17-jdk`
 
 ```console
-sapmachine-17-jdk-17.0.14-r0 description:
+sapmachine-17-jdk-17.0.15-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-17-jdk-17.0.14-r0 webpage:
+sapmachine-17-jdk-17.0.15-r0 webpage:
 https://sapmachine.io
 
-sapmachine-17-jdk-17.0.14-r0 installed size:
+sapmachine-17-jdk-17.0.15-r0 installed size:
 312 MiB
 
-sapmachine-17-jdk-17.0.14-r0 license:
+sapmachine-17-jdk-17.0.15-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -595,16 +595,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
