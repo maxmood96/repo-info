@@ -1,10 +1,10 @@
-# `mongo:8.0.6-noble`
+# `mongo:8.0.8-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ef8fa6da12d9ceadc513c952b92aef3bd60167a732997dacc89ffa75e153e33`
-- Created: `2025-03-21T22:06:21Z`
-- Virtual Size: ~ 888.02 Mb  
+- Image ID: `sha256:6595a4d1b15f4ce3db496c23d969d56fb82e10577b1e4deea5c8e64a829944f1`
+- Created: `2025-04-14T16:11:14Z`
+- Virtual Size: ~ 888.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.6`
+  - `MONGO_VERSION=8.0.8`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -1410,17 +1410,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.6`
+### `dpkg` source package: `mongodb-org=8.0.8`
 
 Binary Packages:
 
-- `mongodb-org=8.0.6`
-- `mongodb-org-database=8.0.6`
-- `mongodb-org-database-tools-extra=8.0.6`
-- `mongodb-org-mongos=8.0.6`
-- `mongodb-org-server=8.0.6`
-- `mongodb-org-shell=8.0.6`
-- `mongodb-org-tools=8.0.6`
+- `mongodb-org=8.0.8`
+- `mongodb-org-database=8.0.8`
+- `mongodb-org-database-tools-extra=8.0.8`
+- `mongodb-org-mongos=8.0.8`
+- `mongodb-org-server=8.0.8`
+- `mongodb-org-shell=8.0.8`
+- `mongodb-org-tools=8.0.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1736,15 +1736,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2build2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.dsc' perl_5.38.2-3.2build2.1.dsc 3032 SHA512:5b2059c15c5c2b84fa06696dbf8d9ca3c30cbcf18ca970401a0098304dd1085421e664941f65c3698316d6112aaed3cd573e24d8728ca8306c515e97afd43538
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.debian.tar.xz' perl_5.38.2-3.2build2.1.debian.tar.xz 165908 SHA512:ad6c9712178856e4a35ac811b908591d200d1638ca8f0a6cc71c7e55d796b5e50708773bbf039a7a3a6444950512e7785110c23a0c5c4748f516a0aa3914f89e
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
