@@ -2049,9 +2049,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-136.147
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.dsc' linux_5.15.0-136.147.dsc 7820 SHA512:3bad626f0f38a237d9c17419e19c50a64c95f5a59ca4589857566b56e18d8b39b16f68150f6622573d652b0ca3ab58f0d5dcf5d2731f6bc3c378679a3a574d0f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.diff.gz' linux_5.15.0-136.147.diff.gz 11422141 SHA512:46001bfb178953a1d824bde72d5ed0da7e323cad52ac9760c758db57851a19a3e31a64b966e7f4dd9642620f50b87c7b5979cd9212e77df81d8246f8974f2710
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.dsc' linux_5.15.0-136.147.dsc 7820 SHA512:3bad626f0f38a237d9c17419e19c50a64c95f5a59ca4589857566b56e18d8b39b16f68150f6622573d652b0ca3ab58f0d5dcf5d2731f6bc3c378679a3a574d0f
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.diff.gz' linux_5.15.0-136.147.diff.gz 11422141 SHA512:46001bfb178953a1d824bde72d5ed0da7e323cad52ac9760c758db57851a19a3e31a64b966e7f4dd9642620f50b87c7b5979cd9212e77df81d8246f8974f2710
 ```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2.2`
@@ -2543,15 +2543,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.dsc' perl_5.34.0-3ubuntu1.3.dsc 2976 SHA512:789ad2abeb08f1ce1e29734ff6b017ec310edf415efe1728654ff1b904ea623d03d4d46afe5cb9ea98302e241ae6fe0ecaaa6e0aae66550bdf93e35ea02c9f31
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.3.debian.tar.xz' perl_5.34.0-3ubuntu1.3.debian.tar.xz 194972 SHA512:2e59cdae22e90953cd91fd2c3f1c5b30ed92afc3b696d577719a8919d475fe52152fa2c7090d9a5f889e0816e847124e9457e0cd0dba206551303bd82297cad1
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
