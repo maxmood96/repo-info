@@ -28,7 +28,15 @@
 -	[`influxdb:2.7-alpine`](#influxdb27-alpine)
 -	[`influxdb:2.7.11`](#influxdb2711)
 -	[`influxdb:2.7.11-alpine`](#influxdb2711-alpine)
+-	[`influxdb:3-core`](#influxdb3-core)
+-	[`influxdb:3-enterprise`](#influxdb3-enterprise)
+-	[`influxdb:3.0-core`](#influxdb30-core)
+-	[`influxdb:3.0-enterprise`](#influxdb30-enterprise)
+-	[`influxdb:3.0.0-core`](#influxdb300-core)
+-	[`influxdb:3.0.0-enterprise`](#influxdb300-enterprise)
 -	[`influxdb:alpine`](#influxdbalpine)
+-	[`influxdb:core`](#influxdbcore)
+-	[`influxdb:enterprise`](#influxdbenterprise)
 -	[`influxdb:latest`](#influxdblatest)
 
 ## `influxdb:1.10-data`
@@ -4085,6 +4093,30 @@ $ docker pull influxdb@sha256:785a462096e047363db49efa834bf8070c1ea74a1eeadfc9bf
 		Size: 31.1 KB (31143 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `influxdb:3-core`
+
+**does not exist** (yet?)
+
+## `influxdb:3-enterprise`
+
+**does not exist** (yet?)
+
+## `influxdb:3.0-core`
+
+**does not exist** (yet?)
+
+## `influxdb:3.0-enterprise`
+
+**does not exist** (yet?)
+
+## `influxdb:3.0.0-core`
+
+**does not exist** (yet?)
+
+## `influxdb:3.0.0-enterprise`
+
+**does not exist** (yet?)
+
 ## `influxdb:alpine`
 
 ```console
@@ -4345,6 +4377,14 @@ $ docker pull influxdb@sha256:785a462096e047363db49efa834bf8070c1ea74a1eeadfc9bf
 		Last Modified: Fri, 14 Feb 2025 23:51:27 GMT  
 		Size: 31.1 KB (31143 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `influxdb:core`
+
+**does not exist** (yet?)
+
+## `influxdb:enterprise`
+
+**does not exist** (yet?)
 
 ## `influxdb:latest`
 
