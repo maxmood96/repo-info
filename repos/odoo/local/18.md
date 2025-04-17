@@ -1,10 +1,10 @@
-# `odoo:18.0-20250401`
+# `odoo:18.0-20250415`
 
 ## Docker Metadata
 
-- Image ID: `sha256:40ac087466901f2fa4fd9378e7de9dea86c934f1fc34e1076494574d353da59d`
-- Created: `2025-04-01T13:33:26Z`
-- Virtual Size: ~ 1.98 Gb  
+- Image ID: `sha256:5e27862e2945ab8823f663c6b825b3ca96a063dd9ddd68f12377e4ee22e11f65`
+- Created: `2025-04-15T14:25:16Z`
+- Virtual Size: ~ 1.99 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -10017,11 +10017,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250401`
+### `dpkg` source package: `odoo=18.0.20250415`
 
 Binary Packages:
 
-- `odoo=18.0.20250401`
+- `odoo=18.0.20250415`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10261,14 +10261,14 @@ $ apt-get source -qq --print-uris pdfminer=20221105+dfsg-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pdfminer/pdfminer_20221105%2bdfsg-1.debian.tar.xz' pdfminer_20221105+dfsg-1.debian.tar.xz 12096 SHA512:72b1ed39e7864b2bdf1c12b15026890c115b045efa60bef0cf46934e3d7d61148c6576b7f47cdabca6136108fcb2488b572b83746ee61adbff6734e745051b23
 ```
 
-### `dpkg` source package: `perl=5.38.2-3.2build2.1`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.1`
 
 Binary Packages:
 
-- `libperl5.38t64:amd64=5.38.2-3.2build2.1`
-- `perl=5.38.2-3.2build2.1`
-- `perl-base=5.38.2-3.2build2.1`
-- `perl-modules-5.38=5.38.2-3.2build2.1`
+- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.1`
+- `perl=5.38.2-3.2ubuntu0.1`
+- `perl-base=5.38.2-3.2ubuntu0.1`
+- `perl-modules-5.38=5.38.2-3.2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.38/copyright`)
 
@@ -10301,11 +10301,11 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2build2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.dsc' perl_5.38.2-3.2build2.1.dsc 3032 SHA512:5b2059c15c5c2b84fa06696dbf8d9ca3c30cbcf18ca970401a0098304dd1085421e664941f65c3698316d6112aaed3cd573e24d8728ca8306c515e97afd43538
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.1.dsc' perl_5.38.2-3.2ubuntu0.1.dsc 3036 SHA512:e0cdb9381f22dc989ba6679382657bf9bffd65a724ce6ca171ed413601ac64697427f544ab5080aee3781073e9ec2d7f5d24ec5b67bd6e20b36591859395a8c0
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2build2.1.debian.tar.xz' perl_5.38.2-3.2build2.1.debian.tar.xz 165908 SHA512:ad6c9712178856e4a35ac811b908591d200d1638ca8f0a6cc71c7e55d796b5e50708773bbf039a7a3a6444950512e7785110c23a0c5c4748f516a0aa3914f89e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.1.debian.tar.xz' perl_5.38.2-3.2ubuntu0.1.debian.tar.xz 166536 SHA512:0faaf2ff4b14f4a6d8bb158305014846b44785fd2683aca379d7718a54da0002d9fab50a45a8efeedfb0ea69e1075b765afe21d65026fb54f1e88a1e27883a4b
 ```
 
 ### `dpkg` source package: `pillow=10.2.0-1ubuntu1`
@@ -10434,12 +10434,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=274.pgdg24.04+1`
+### `dpkg` source package: `postgresql-common=277.pgdg24.04+1`
 
 Binary Packages:
 
-- `postgresql-client=17+274.pgdg24.04+1`
-- `postgresql-client-common=274.pgdg24.04+1`
+- `postgresql-client=17+277.pgdg24.04+1`
+- `postgresql-client-common=277.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
