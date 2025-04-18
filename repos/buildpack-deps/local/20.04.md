@@ -1561,14 +1561,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.23+dfsg-2.1ubuntu11.10
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23%2bdfsg-2.1ubuntu11.10.dsc' imagemagick_6.9.10.23+dfsg-2.1ubuntu11.10.dsc 5255 SHA512:6d17078d258fb223f971b40f92cccaf3827f8e071153c505a54879d657ce5ec0344b4885b27ba296d59b0a26f7d43bb1e1dbbf9139fb6e0e9b9ecd4502411dfd
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23%2bdfsg.orig.tar.xz' imagemagick_6.9.10.23+dfsg.orig.tar.xz 9081188 SHA512:0c5fdfb82d12fef09d79c3a3d03167a57732e566980ca89e977d04502779506eae34e6bc4260c35558db63c572c64fe80d69f6627e180ffc8e8679ebe8574972
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23%2bdfsg-2.1ubuntu11.10.debian.tar.xz' imagemagick_6.9.10.23+dfsg-2.1ubuntu11.10.debian.tar.xz 267804 SHA512:425a38dda2c6af4058357b618ec3e36a83c3796306c954843a221ebb29ac387d71286c14e4a91699959e06a768461aaa142e1aab9a1d57cd410d184dacd3dcbb
-```
 
 ### `dpkg` source package: `init-system-helpers=1.57`
 
@@ -2831,9 +2826,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.4.0-212.232
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-212.232.dsc' linux_5.4.0-212.232.dsc 7442 SHA512:7aa9fdb5dbf1a5469856402a1ba2d171ee3f9aa6b327500778edaeeaf2dcadaa5011ef04996cfe55c6b4ff91eb5a27ab843ee12678c8c019e0e80a727ae69be6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-212.232.diff.gz' linux_5.4.0-212.232.diff.gz 10085577 SHA512:0a1511bf317eb2431955f8738133514054f6c4aa1f8b4071d47062d69f7d0afe00db8d119ff9f01ad0c93d7a476cd945d8d2cadee58db0aed534dc601c9d643e
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-212.232.dsc' linux_5.4.0-212.232.dsc 7442 SHA512:7aa9fdb5dbf1a5469856402a1ba2d171ee3f9aa6b327500778edaeeaf2dcadaa5011ef04996cfe55c6b4ff91eb5a27ab843ee12678c8c019e0e80a727ae69be6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-212.232.diff.gz' linux_5.4.0-212.232.diff.gz 10085577 SHA512:0a1511bf317eb2431955f8738133514054f6c4aa1f8b4071d47062d69f7d0afe00db8d119ff9f01ad0c93d7a476cd945d8d2cadee58db0aed534dc601c9d643e
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`

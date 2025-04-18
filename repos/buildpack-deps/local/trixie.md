@@ -549,19 +549,13 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.277
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.277.dsc' cdebconf_0.277.dsc 2707 SHA256:12afc241658ae9bcbb11d239d06e708fb6138b417b7ce9c31ac642f57fcc4613
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.277.tar.xz' cdebconf_0.277.tar.xz 285420 SHA256:93a72ed5c5cab66f1f7439908348aa3bd97c4fa4a47416694e5dc3add2866e7b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.277/
 
-- https://sources.debian.net/src/cdebconf/0.277/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.277/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.277/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=9.5-1`
 
@@ -4791,20 +4785,13 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.6-7
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-7.dsc' patch_2.7.6-7.dsc 1706 SHA256:d954fd576d935ac54b7d44d4976eb52d0da84a57f7bad90c6e5bd5e33595030a
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-7.debian.tar.xz' patch_2.7.6-7.debian.tar.xz 15084 SHA256:7725f30b042d8cf63516e480036e93ca2ff0ce5ad3754db4a4e69d33e96a2624
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/patch/2.7.6-7/
 
-- https://sources.debian.net/src/patch/2.7.6-7/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.7.6-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.7.6-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.45-1`
 

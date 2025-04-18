@@ -4147,9 +4147,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.64.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.dsc' nghttp2_1.64.0-1.dsc 2531 SHA256:2707e30147f7f5c5562245f1760876476798cf0cac10a9784f8e66a4d14d42a3
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.dsc' nghttp2_1.64.0-1.1.dsc 2514 SHA256:1d0393fc66b1db3e9e842a2a02bf41e7c25b020704ef601b7e5d3f5a0e74cc00
 'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA256:b452dc69a1fcbc9375389b8b154175d8b7b125cdd713fc426774c2b79a1ebd77
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.debian.tar.xz' nghttp2_1.64.0-1.debian.tar.xz 38888 SHA256:3085083399b3f02bfc00e9b4f9c286ddd33c9624b622713a55ebbd8c398625eb
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.debian.tar.xz' nghttp2_1.64.0-1.1.debian.tar.xz 39356 SHA256:02b15d82ad6b62a149481fd2871bda26486457821e9a4fa28897f55e1294f379
 ```
 
 Other potentially useful URLs:

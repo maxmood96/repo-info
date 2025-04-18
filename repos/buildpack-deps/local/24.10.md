@@ -3188,9 +3188,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.11.0-21.21
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0-21.21.dsc' linux_6.11.0-21.21.dsc 8412 SHA512:b99c10c29eaf75b89d8dc843c42aa6019e139b52a4abed169d44552d1832200e89fc26a1c56416d48d74771a914fcba2e335cf6b1cff0c66451250912cf8c5bb
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0.orig.tar.gz' linux_6.11.0.orig.tar.gz 238316413 SHA512:3bde6385b17f326180c78de6afc98425b60a19dbdfcebf4cc4dd42cae8b99a696ab3537a78d81df25b484bb30bc260ac6132e86d61f28c4032672b308b36e546
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0-21.21.diff.gz' linux_6.11.0-21.21.diff.gz 2998489 SHA512:2807a8c751ec4171f5d0521f4a0d1098102bb72d15d21ae399d2c9a5e685b6c5521dcce39345c90a2579045f178d74fd64e77f71054aa03240c92a167404d877
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0-21.21.dsc' linux_6.11.0-21.21.dsc 8412 SHA512:b99c10c29eaf75b89d8dc843c42aa6019e139b52a4abed169d44552d1832200e89fc26a1c56416d48d74771a914fcba2e335cf6b1cff0c66451250912cf8c5bb
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0.orig.tar.gz' linux_6.11.0.orig.tar.gz 238316413 SHA512:3bde6385b17f326180c78de6afc98425b60a19dbdfcebf4cc4dd42cae8b99a696ab3537a78d81df25b484bb30bc260ac6132e86d61f28c4032672b308b36e546
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0-21.21.diff.gz' linux_6.11.0-21.21.diff.gz 2998489 SHA512:2807a8c751ec4171f5d0521f4a0d1098102bb72d15d21ae399d2c9a5e685b6c5521dcce39345c90a2579045f178d74fd64e77f71054aa03240c92a167404d877
 ```
 
 ### `dpkg` source package: `lto-disabled-list=53`
