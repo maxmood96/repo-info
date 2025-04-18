@@ -1,20 +1,20 @@
-# `nginx:1.27.4-alpine-perl`
+# `nginx:1.27.5-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0d716c84e7f67a29e884b31b620f186cf71c8d918503cf51871e96d9a3aede2`
-- Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 86.24 Mb  
+- Image ID: `sha256:a7a1227b6726a96ca5cd679354b590521ca66a3eb3d188883ff99519022ea8a2`
+- Created: `2025-04-16T14:50:31Z`
+- Virtual Size: ~ 86.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.27.4`
+  - `NGINX_VERSION=1.27.5`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.8.9`
+  - `NJS_VERSION=0.8.10`
   - `NJS_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -177,16 +177,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -228,16 +228,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -290,6 +290,23 @@ geoip-1.6.12-r5 installed size:
 
 geoip-1.6.12-r5 license:
 LGPL-2.1-or-later
+
+```
+
+### `apk` package: `gettext-envsubst`
+
+```console
+gettext-envsubst-0.22.5-r0 description:
+GNU gettext envsubst binary
+
+gettext-envsubst-0.22.5-r0 webpage:
+https://www.gnu.org/software/gettext/gettext.html
+
+gettext-envsubst-0.22.5-r0 installed size:
+37 KiB
+
+gettext-envsubst-0.22.5-r0 license:
+GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT
 
 ```
 
@@ -364,16 +381,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -415,16 +432,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -585,16 +602,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -687,16 +704,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.4-r0 description:
+libuuid-2.40.4-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.4-r0 webpage:
+libuuid-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.4-r0 installed size:
+libuuid-2.40.4-r1 installed size:
 29 KiB
 
-libuuid-2.40.4-r0 license:
+libuuid-2.40.4-r1 license:
 BSD-3-Clause
 
 ```
@@ -806,16 +823,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```
@@ -840,16 +857,16 @@ X11
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.42-r1 description:
+libxslt-1.1.42-r2 description:
 XML stylesheet transformation library
 
-libxslt-1.1.42-r1 webpage:
+libxslt-1.1.42-r2 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.42-r1 installed size:
+libxslt-1.1.42-r2 installed size:
 325 KiB
 
-libxslt-1.1.42-r1 license:
+libxslt-1.1.42-r2 license:
 X11
 
 ```
@@ -942,16 +959,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.27.4-r1 description:
+nginx-1.27.5-r1 description:
 High performance web server
 
-nginx-1.27.4-r1 webpage:
+nginx-1.27.5-r1 webpage:
 https://nginx.org/
 
-nginx-1.27.4-r1 installed size:
-2643 KiB
+nginx-1.27.5-r1 installed size:
+2647 KiB
 
-nginx-1.27.4-r1 license:
+nginx-1.27.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -959,16 +976,16 @@ nginx-1.27.4-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.27.4-r1 description:
+nginx-module-geoip-1.27.5-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.27.4-r1 webpage:
+nginx-module-geoip-1.27.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.27.4-r1 installed size:
+nginx-module-geoip-1.27.5-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.27.4-r1 license:
+nginx-module-geoip-1.27.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -976,16 +993,16 @@ nginx-module-geoip-1.27.4-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.27.4-r1 description:
+nginx-module-image-filter-1.27.5-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.27.4-r1 webpage:
+nginx-module-image-filter-1.27.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.27.4-r1 installed size:
+nginx-module-image-filter-1.27.5-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.27.4-r1 license:
+nginx-module-image-filter-1.27.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -993,16 +1010,16 @@ nginx-module-image-filter-1.27.4-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.27.4.0.8.9-r1 description:
+nginx-module-njs-1.27.5.0.8.10-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.27.4.0.8.9-r1 webpage:
+nginx-module-njs-1.27.5.0.8.10-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.27.4.0.8.9-r1 installed size:
-8908 KiB
+nginx-module-njs-1.27.5.0.8.10-r1 installed size:
+9224 KiB
 
-nginx-module-njs-1.27.4.0.8.9-r1 license:
+nginx-module-njs-1.27.5.0.8.10-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1010,16 +1027,16 @@ nginx-module-njs-1.27.4.0.8.9-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.27.4-r1 description:
+nginx-module-perl-1.27.5-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.27.4-r1 webpage:
+nginx-module-perl-1.27.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.27.4-r1 installed size:
+nginx-module-perl-1.27.5-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.27.4-r1 license:
+nginx-module-perl-1.27.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1027,16 +1044,16 @@ nginx-module-perl-1.27.4-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.27.4-r1 description:
+nginx-module-xslt-1.27.5-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.27.4-r1 webpage:
+nginx-module-xslt-1.27.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.27.4-r1 installed size:
+nginx-module-xslt-1.27.5-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.27.4-r1 license:
+nginx-module-xslt-1.27.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1061,16 +1078,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.40.1-r0 description:
+perl-5.40.1-r1 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.40.1-r0 webpage:
+perl-5.40.1-r1 webpage:
 https://www.perl.org/
 
-perl-5.40.1-r0 installed size:
+perl-5.40.1-r1 installed size:
 36 MiB
 
-perl-5.40.1-r0 license:
+perl-5.40.1-r1 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
@@ -1129,16 +1146,16 @@ libtiff
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -1146,16 +1163,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

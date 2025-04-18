@@ -1,17 +1,17 @@
-# `nginx:1.27.4-alpine-slim`
+# `nginx:1.27.5-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:87d52b5d1dcebf9f2a97690fa92ec0c99bd20c5b64ceca6828ce75dae9af3a17`
-- Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 11.89 Mb  
+- Image ID: `sha256:b05483cc4dbba3ead954021d8e11a1fed043c96c4d20924202f165ab065e9fb7`
+- Created: `2025-04-16T14:50:31Z`
+- Virtual Size: ~ 11.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.27.4`
+  - `NGINX_VERSION=1.27.5`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -155,6 +155,23 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `gettext-envsubst`
+
+```console
+gettext-envsubst-0.22.5-r0 description:
+GNU gettext envsubst binary
+
+gettext-envsubst-0.22.5-r0 webpage:
+https://www.gnu.org/software/gettext/gettext.html
+
+gettext-envsubst-0.22.5-r0 installed size:
+37 KiB
+
+gettext-envsubst-0.22.5-r0 license:
+GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT
+
+```
+
 ### `apk` package: `libcrypto3`
 
 ```console
@@ -243,16 +260,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.27.4-r1 description:
+nginx-1.27.5-r1 description:
 High performance web server
 
-nginx-1.27.4-r1 webpage:
+nginx-1.27.5-r1 webpage:
 https://nginx.org/
 
-nginx-1.27.4-r1 installed size:
-2643 KiB
+nginx-1.27.5-r1 installed size:
+2647 KiB
 
-nginx-1.27.4-r1 license:
+nginx-1.27.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -311,16 +328,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```

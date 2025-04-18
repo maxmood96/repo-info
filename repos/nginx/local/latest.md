@@ -1,18 +1,18 @@
-# `nginx:1.27.4`
+# `nginx:1.27.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4cad75abc83d5ca6ee22053d85850676eaef657ee9d723d7bef61179e1e1e485`
-- Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 192.06 Mb  
+- Image ID: `sha256:4e1b6bae1e48cdbde8e6ec3e6ee42d86ad4780156e75790465bf6fb16c551c27`
+- Created: `2025-04-16T14:50:31Z`
+- Virtual Size: ~ 192.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.27.4`
-  - `NJS_VERSION=0.8.9`
+  - `NGINX_VERSION=1.27.5`
+  - `NJS_VERSION=0.8.10`
   - `NJS_RELEASE=1~bookworm`
   - `PKG_RELEASE=1~bookworm`
   - `DYNPKG_RELEASE=1~bookworm`
@@ -2605,11 +2605,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.27.4-1~bookworm`
+- `nginx-module-geoip=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2619,11 +2619,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.27.4-1~bookworm`
+- `nginx-module-image-filter=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2633,11 +2633,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.27.4+0.8.9-1~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.27.5+0.8.10-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.27.4+0.8.9-1~bookworm`
+- `nginx-module-njs=1.27.5+0.8.10-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2647,11 +2647,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.27.4-1~bookworm`
+- `nginx-module-xslt=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2661,11 +2661,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.27.4-1~bookworm`
+- `nginx=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

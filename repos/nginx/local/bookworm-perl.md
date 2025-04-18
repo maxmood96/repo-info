@@ -1,18 +1,18 @@
-# `nginx:1.27.4-perl`
+# `nginx:1.27.5-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:337ba31d940e7c168330b01d07da43bbc808e1dd4d13afb97b3169538c0cd2d6`
-- Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 240.06 Mb  
+- Image ID: `sha256:3e4df43f2596429a7891c666d3ac5df84f915de35e77b4257518a628531c4305`
+- Created: `2025-04-16T14:50:31Z`
+- Virtual Size: ~ 247.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.27.4`
-  - `NJS_VERSION=0.8.9`
+  - `NGINX_VERSION=1.27.5`
+  - `NJS_VERSION=0.8.10`
   - `NJS_RELEASE=1~bookworm`
   - `PKG_RELEASE=1~bookworm`
   - `DYNPKG_RELEASE=1~bookworm`
@@ -2636,11 +2636,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.27.4-1~bookworm`
+- `nginx-module-geoip=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2650,11 +2650,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.27.4-1~bookworm`
+- `nginx-module-image-filter=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2664,11 +2664,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.27.4+0.8.9-1~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.27.5+0.8.10-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.27.4+0.8.9-1~bookworm`
+- `nginx-module-njs=1.27.5+0.8.10-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2678,11 +2678,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-perl=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-perl=1.27.4-1~bookworm`
+- `nginx-module-perl=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2692,11 +2692,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.27.4-1~bookworm`
+- `nginx-module-xslt=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2706,11 +2706,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.27.4-1~bookworm`
+### `dpkg` source package: `nginx=1.27.5-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.27.4-1~bookworm`
+- `nginx=1.27.5-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2924,14 +2924,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre2/10.42-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre2/10.42-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.36.0-7+deb12u1`
+### `dpkg` source package: `perl=5.36.0-7+deb12u2`
 
 Binary Packages:
 
-- `libperl5.36:amd64=5.36.0-7+deb12u1`
-- `perl=5.36.0-7+deb12u1`
-- `perl-base=5.36.0-7+deb12u1`
-- `perl-modules-5.36=5.36.0-7+deb12u1`
+- `libperl5.36:amd64=5.36.0-7+deb12u2`
+- `perl=5.36.0-7+deb12u2`
+- `perl-base=5.36.0-7+deb12u2`
+- `perl-modules-5.36=5.36.0-7+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.36/copyright`)
 
@@ -2966,18 +2966,18 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u1
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u1.dsc' perl_5.36.0-7+deb12u1.dsc 2918 SHA256:26ddac979ddb41229abc97b19fc2e97cdd840fe1a315e8f829ae1aeb0a1d05c5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u1.debian.tar.xz' perl_5.36.0-7+deb12u1.debian.tar.xz 171136 SHA256:e5680de573f95b990cf995a7189c167281785cc49589c43874736e4b8b3c9e2f
+$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.dsc' perl_5.36.0-7+deb12u2.dsc 2357 SHA256:2763db81497ad23c110bb3ff1f2f1e5bca0d583ec172c82afc01ff214ba46ff8
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.debian.tar.xz' perl_5.36.0-7+deb12u2.debian.tar.xz 171576 SHA256:dc3eca212d38826805444abe64c9425b2aacf470d6800ec06d40e8ef02f0c007
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 

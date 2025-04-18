@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ac0c5b47ce3ddb156e09b89da04801d1f6f4dc764a003463779834cfe4e5680`
+- Image ID: `sha256:ac33da27f5f2f1cabdc45445cd6bb3a6f693d092d2a11a6ceda8cd33c3fe2d14`
 - Created: `2025-02-05T21:27:16Z`
 - Virtual Size: ~ 80.66 Mb  
   (total size of all layers on-disk)
@@ -1314,6 +1314,23 @@ LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `gettext-envsubst`
+
+```console
+gettext-envsubst-0.22.5-r0 description:
+GNU gettext envsubst binary
+
+gettext-envsubst-0.22.5-r0 webpage:
+https://www.gnu.org/software/gettext/gettext.html
+
+gettext-envsubst-0.22.5-r0 installed size:
+52 KiB
+
+gettext-envsubst-0.22.5-r0 license:
+GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT
+
+```
+
 ### `apk` package: `grpc`
 
 ```console
@@ -1521,16 +1538,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 144 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -1538,16 +1555,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-13.2.1_git20240309-r0 description:
+libgcc-13.2.1_git20240309-r1 description:
 GNU C compiler runtime libraries
 
-libgcc-13.2.1_git20240309-r0 webpage:
+libgcc-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgcc-13.2.1_git20240309-r0 installed size:
+libgcc-13.2.1_git20240309-r1 installed size:
 152 KiB
 
-libgcc-13.2.1_git20240309-r0 license:
+libgcc-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -1878,16 +1895,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-13.2.1_git20240309-r0 description:
+libstdc++-13.2.1_git20240309-r1 description:
 GNU C++ standard runtime library
 
-libstdc++-13.2.1_git20240309-r0 webpage:
+libstdc++-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libstdc++-13.2.1_git20240309-r0 installed size:
+libstdc++-13.2.1_git20240309-r1 installed size:
 2652 KiB
 
-libstdc++-13.2.1_git20240309-r0 license:
+libstdc++-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -2116,16 +2133,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.12.7-r0 description:
+libxml2-2.12.7-r2 description:
 XML parsing library, version 2
 
-libxml2-2.12.7-r0 webpage:
+libxml2-2.12.7-r2 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.12.7-r0 installed size:
+libxml2-2.12.7-r2 installed size:
 1088 KiB
 
-libxml2-2.12.7-r0 license:
+libxml2-2.12.7-r2 license:
 MIT
 
 ```
@@ -2150,16 +2167,16 @@ X11
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.39-r1 description:
+libxslt-1.1.39-r2 description:
 XML stylesheet transformation library
 
-libxslt-1.1.39-r1 webpage:
+libxslt-1.1.39-r2 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.39-r1 installed size:
+libxslt-1.1.39-r2 installed size:
 352 KiB
 
-libxslt-1.1.39-r1 license:
+libxslt-1.1.39-r2 license:
 X11
 
 ```
@@ -2439,16 +2456,16 @@ libtiff
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-1512 KiB
+tzdata-2025b-r0 installed size:
+1516 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -2456,16 +2473,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.2-r0 description:
+xz-libs-5.6.2-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.2-r0 webpage:
+xz-libs-5.6.2-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.2-r0 installed size:
+xz-libs-5.6.2-r1 installed size:
 236 KiB
 
-xz-libs-5.6.2-r0 license:
+xz-libs-5.6.2-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

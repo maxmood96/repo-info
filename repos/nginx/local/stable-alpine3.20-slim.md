@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95ebc828d689d134d6be9d567df82c9290a4c3c34cd4091fcb424182b790cd63`
-- Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 11.78 Mb  
+- Image ID: `sha256:357e3f017af9bafa4f4d5afd7f5a1878add75d332e4b8857db9db620bac19ed6`
+- Created: `2025-04-16T14:45:25Z`
+- Virtual Size: ~ 11.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -135,6 +135,23 @@ ca-certificates-bundle-20241121-r1 installed size:
 
 ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
+
+```
+
+### `apk` package: `gettext-envsubst`
+
+```console
+gettext-envsubst-0.22.5-r0 description:
+GNU gettext envsubst binary
+
+gettext-envsubst-0.22.5-r0 webpage:
+https://www.gnu.org/software/gettext/gettext.html
+
+gettext-envsubst-0.22.5-r0 installed size:
+52 KiB
+
+gettext-envsubst-0.22.5-r0 license:
+GPL-3.0-or-later AND LGPL-2.1-or-later AND MIT
 
 ```
 
@@ -294,16 +311,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-1512 KiB
+tzdata-2025b-r0 installed size:
+1516 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
