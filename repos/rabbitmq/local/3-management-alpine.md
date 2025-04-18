@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60e5982f359b581081dd1dd453e3632976adc9343b30477d9873df488d3cd5e3`
+- Image ID: `sha256:4e7a6df8984553ebc8f548428dfa36c3be448e6468b61a8b19d627b1bff55977`
 - Created: `2024-09-20T21:15:09Z`
-- Virtual Size: ~ 175.55 Mb  
+- Virtual Size: ~ 175.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -469,16 +469,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.9-r0 description:
+pyc-3.12.10-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.9-r0 webpage:
+pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.9-r0 installed size:
+pyc-3.12.10-r0 installed size:
 0 B
 
-pyc-3.12.9-r0 license:
+pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -486,16 +486,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.9-r0 description:
+python3-3.12.10-r0 description:
 High-level scripting language
 
-python3-3.12.9-r0 webpage:
+python3-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-3.12.9-r0 installed size:
+python3-3.12.10-r0 installed size:
 22 MiB
 
-python3-3.12.9-r0 license:
+python3-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -503,16 +503,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.9-r0 description:
+python3-pyc-3.12.10-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.9-r0 webpage:
+python3-pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.9-r0 installed size:
+python3-pyc-3.12.10-r0 installed size:
 0 B
 
-python3-pyc-3.12.9-r0 license:
+python3-pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -520,16 +520,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.9-r0 description:
+python3-pycache-pyc0-3.12.10-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.9-r0 webpage:
+python3-pycache-pyc0-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.9-r0 installed size:
+python3-pycache-pyc0-3.12.10-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.9-r0 license:
+python3-pycache-pyc0-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -571,16 +571,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
@@ -639,16 +639,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
