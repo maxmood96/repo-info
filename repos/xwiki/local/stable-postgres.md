@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d0f04ff3795661ac04ccdf85e7f4105c5f491e57a1c1c509d31eb2b8e2efd64`
-- Created: `2025-04-14T12:16:51Z`
+- Image ID: `sha256:d6c3590eea126d02cf625fb1d3e37d8aad921cb33e8aa0b24a2220aba883673c`
+- Created: `2025-04-17T12:33:22Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.40`
   - `TOMCAT_SHA512=2bde772acf2e6f300f0f8341eb4de7da5d59af6a95f607bcdb92e4c22e0a253d437ea9a423d7d3e334af1c608f33489f32d32d346fbef5b0abef1dee666895ea`
-  - `XWIKI_VERSION=17.2.1`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.2.1`
-  - `XWIKI_DOWNLOAD_SHA256=333fd344762ae820a4bcb8cdbb2b2c62dfd567aac9382d2e896ff46c1fca5632`
+  - `XWIKI_VERSION=17.2.2`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.2.2`
+  - `XWIKI_DOWNLOAD_SHA256=257501fc3cccfcaf7f82f252410aa6cbf080c1ea55a8e158ac9728c29959a992`
   - `POSTGRES_JDBC_VERSION=42.7.4`
   - `POSTGRES_JDBC_SHA256=188976721ead8e8627eb6d8389d500dccc0c9bebd885268a3047180274a6031e`
   - `POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.4`
