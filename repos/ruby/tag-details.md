@@ -65,6 +65,24 @@
 -	[`ruby:3.4.3-slim`](#ruby343-slim)
 -	[`ruby:3.4.3-slim-bookworm`](#ruby343-slim-bookworm)
 -	[`ruby:3.4.3-slim-bullseye`](#ruby343-slim-bullseye)
+-	[`ruby:3.5-rc`](#ruby35-rc)
+-	[`ruby:3.5-rc-alpine`](#ruby35-rc-alpine)
+-	[`ruby:3.5-rc-alpine3.20`](#ruby35-rc-alpine320)
+-	[`ruby:3.5-rc-alpine3.21`](#ruby35-rc-alpine321)
+-	[`ruby:3.5-rc-bookworm`](#ruby35-rc-bookworm)
+-	[`ruby:3.5-rc-bullseye`](#ruby35-rc-bullseye)
+-	[`ruby:3.5-rc-slim`](#ruby35-rc-slim)
+-	[`ruby:3.5-rc-slim-bookworm`](#ruby35-rc-slim-bookworm)
+-	[`ruby:3.5-rc-slim-bullseye`](#ruby35-rc-slim-bullseye)
+-	[`ruby:3.5.0-preview1`](#ruby350-preview1)
+-	[`ruby:3.5.0-preview1-alpine`](#ruby350-preview1-alpine)
+-	[`ruby:3.5.0-preview1-alpine3.20`](#ruby350-preview1-alpine320)
+-	[`ruby:3.5.0-preview1-alpine3.21`](#ruby350-preview1-alpine321)
+-	[`ruby:3.5.0-preview1-bookworm`](#ruby350-preview1-bookworm)
+-	[`ruby:3.5.0-preview1-bullseye`](#ruby350-preview1-bullseye)
+-	[`ruby:3.5.0-preview1-slim`](#ruby350-preview1-slim)
+-	[`ruby:3.5.0-preview1-slim-bookworm`](#ruby350-preview1-slim-bookworm)
+-	[`ruby:3.5.0-preview1-slim-bullseye`](#ruby350-preview1-slim-bullseye)
 -	[`ruby:alpine`](#rubyalpine)
 -	[`ruby:alpine3.20`](#rubyalpine320)
 -	[`ruby:alpine3.21`](#rubyalpine321)
@@ -41325,6 +41343,168 @@ $ docker pull ruby@sha256:426ded1a38503955fbba69ecc44b4f20e502f78754e3c06a7bda9b
 		Last Modified: Mon, 14 Apr 2025 23:03:56 GMT  
 		Size: 22.8 KB (22757 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `ruby:3.5-rc`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-alpine`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-alpine3.20`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-alpine3.21`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-bookworm`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-bullseye`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-slim`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-slim-bookworm`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5-rc-slim-bullseye`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-alpine`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-alpine3.20`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-alpine3.21`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-bookworm`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-bullseye`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-slim`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-slim-bookworm`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ruby:3.5.0-preview1-slim-bullseye`
+
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:alpine`
 
