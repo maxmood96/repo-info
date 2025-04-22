@@ -1,19 +1,19 @@
-# `erlang:26.2.5.6-alpine`
+# `erlang:26.2.5.11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e32fbf855381b71dec5e1f741997436c72a46ccffa8358df9b6febaf0e00c067`
-- Created: `2025-01-07T02:24:10Z`
-- Virtual Size: ~ 74.64 Mb  
+- Image ID: `sha256:3c00adae3df23e92d604ee31d3dc917273f725227e8a5d11aa541ea4b764a750`
+- Created: `2025-04-19T03:05:32Z`
+- Virtual Size: ~ 74.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5.6`
+  - `OTP_VERSION=26.2.5.11`
   - `REBAR3_VERSION=3.24.0`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5.6`
+  - `org.opencontainers.image.version=26.2.5.11`
 
 ## `apk` (`.apk`-based packages)
 
@@ -173,16 +173,16 @@ Apache-2.0
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-13.2.1_git20240309-r0 description:
+libgcc-13.2.1_git20240309-r1 description:
 GNU C compiler runtime libraries
 
-libgcc-13.2.1_git20240309-r0 webpage:
+libgcc-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgcc-13.2.1_git20240309-r0 installed size:
+libgcc-13.2.1_git20240309-r1 installed size:
 152 KiB
 
-libgcc-13.2.1_git20240309-r0 license:
+libgcc-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -241,16 +241,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-13.2.1_git20240309-r0 description:
+libstdc++-13.2.1_git20240309-r1 description:
 GNU C++ standard runtime library
 
-libstdc++-13.2.1_git20240309-r0 webpage:
+libstdc++-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libstdc++-13.2.1_git20240309-r0 installed size:
+libstdc++-13.2.1_git20240309-r1 installed size:
 2652 KiB
 
-libstdc++-13.2.1_git20240309-r0 license:
+libstdc++-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
