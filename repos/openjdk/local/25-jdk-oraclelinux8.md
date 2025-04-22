@@ -1,10 +1,10 @@
-# `openjdk:25-ea-18-jdk-oraclelinux8`
+# `openjdk:25-ea-19-jdk-oraclelinux8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:799d274b55095dbd14303a5a53a1fbc3069643dcf3017661e781da386ae3ed56`
-- Created: `2025-04-12T00:48:17Z`
-- Virtual Size: ~ 520.10 Mb  
+- Image ID: `sha256:f8fec0a79dc66dece41efb543e18519ed9e52443454cf08110ff04474ddddf83`
+- Created: `2025-04-18T00:48:12Z`
+- Virtual Size: ~ 521.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-25`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=25-ea+18`
+  - `JAVA_VERSION=25-ea+19`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -186,15 +186,15 @@ $ dnf --quiet download --source --url elfutils-libelf-0.190-2.el8
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/elfutils-0.190-2.el8.src.rpm
 ```
 
-### `rpm` package: `expat-2.2.5-16.0.1.el8_10.x86_64`
+### `rpm` package: `expat-2.2.5-17.0.1.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.2.5-16.0.1.el8_10
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/expat-2.2.5-16.0.1.el8_10.src.rpm
+$ dnf --quiet download --source --url expat-2.2.5-17.0.1.el8_10
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/expat-2.2.5-17.0.1.el8_10.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.33-26.el8.x86_64`
