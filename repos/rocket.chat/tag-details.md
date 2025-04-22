@@ -456,7 +456,7 @@ $ docker pull rocket.chat@sha256:45ad88be51e15b443b5be3c228c2a426356bca4d1019aa6
 ## `rocket.chat:7.0`
 
 ```console
-$ docker pull rocket.chat@sha256:dbdf9c160fb249b537a191b187468dc1d8e6ee4aae70d53fe14a0dde3c07ef90
+$ docker pull rocket.chat@sha256:4c39f7ef58cab3e80a65044b443d62c09bd386cf8ba8a6212fa41dba89455a02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -467,13 +467,13 @@ $ docker pull rocket.chat@sha256:dbdf9c160fb249b537a191b187468dc1d8e6ee4aae70d53
 ### `rocket.chat:7.0` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:21494e17310e6ccaf5f5a268503356aabae18d5fbe0279b494aa06a8a7b5ca86
+$ docker pull rocket.chat@sha256:8f648ec3575213fcfd1a13d2f57ff2bc5b1e0f5c44cb8d22becec1f52489caf4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **444.0 MB (443977332 bytes)**  
+-	Total Size: **444.0 MB (443971844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28d75567209b6638695d9d09e80446efb21e5486c2e0436527fd608a68f016c9`
+-	Image ID: `sha256:1e2a056ca5edab448ed5a2fbebca2a25a865efd0634303d45056a72b3c1ab1f4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -483,9 +483,9 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Thu, 06 Mar 2025 18:44:27 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
-ENV NODE_VERSION=20.19.0
+ENV NODE_VERSION=20.19.1
 # Thu, 06 Mar 2025 18:44:27 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version # buildkit
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
 ENV YARN_VERSION=1.22.22
 # Thu, 06 Mar 2025 18:44:27 GMT
@@ -529,37 +529,37 @@ CMD ["node" "main.js"]
 		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
 		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f5d617dc9950bc118a3cabb43c97dce10e009075c283009667bfcf985ec08de`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:d1dd334a81115b09134618d67d53ebb6162d9cd6858905dfaec3a8da9e64ae39`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 3.3 KB (3313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e462af878e0b4b422e64a75ac28a4645d92d3abf2e67416ca0d41e079077b4f`  
-		Last Modified: Tue, 08 Apr 2025 01:26:53 GMT  
-		Size: 41.2 MB (41161214 bytes)  
+	-	`sha256:b452662ac2b1cc5015de958ca3db9cf65d6ea42ad1ffda528555cad4476cd3f9`  
+		Last Modified: Tue, 22 Apr 2025 17:08:08 GMT  
+		Size: 41.2 MB (41159751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ff1ff1719c662cd3c79272225bb8b21a5a84de9bc258e02f6d56d126d43425`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 1.7 MB (1712510 bytes)  
+	-	`sha256:b085206451dbd0bcfa0cdf6c5c2cf33f257e2d077408c49b0a9ff1b411c126a8`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 1.7 MB (1712524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32fdf0df127cfb82bf64506d11e17cc44362f34006d464eed648cf02dbbc1213`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 447.0 B  
+	-	`sha256:9a176e756f6b6a4029593582d7c51f7c2839913d7da3e1a3f967de6e82654258`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:491b6309969a28cee3a00f64afb5bc6b9a6d419a3a406a571232bed5515b1b97`  
-		Last Modified: Tue, 08 Apr 2025 02:24:16 GMT  
-		Size: 45.1 MB (45131177 bytes)  
+	-	`sha256:3a76bf78365ba7e6a7c220878439835c7948710c47ace9429c7d966d69276b30`  
+		Last Modified: Tue, 22 Apr 2025 18:09:31 GMT  
+		Size: 45.1 MB (45131302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c65c30023e568f8534fdcfe27ef1b11e8f7753809820a6f37bbbef90920efce`  
-		Last Modified: Tue, 08 Apr 2025 02:24:05 GMT  
-		Size: 1.2 KB (1175 bytes)  
+	-	`sha256:671f9a34a4b0d4f3abbef7c30c72154a3ad50468f7c5b6aa7c8e0df48289ee25`  
+		Last Modified: Tue, 22 Apr 2025 18:09:30 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cfcbefc8c526d8cba0efab5950fcca3b5b3541c2f9a74108e03b82e8c2b70b`  
-		Last Modified: Tue, 08 Apr 2025 02:24:21 GMT  
-		Size: 327.7 MB (327740172 bytes)  
+	-	`sha256:75d02fb6f3836e5c706331613c464b4b498dedc70a3cfef041d69b33cbb22c06`  
+		Last Modified: Tue, 22 Apr 2025 18:09:40 GMT  
+		Size: 327.7 MB (327736008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -569,27 +569,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.0` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:22de6c4c1a0c338161e76efad284d3a86c5983c3cc8005c888feb7e0bdffb1a9
+$ docker pull rocket.chat@sha256:2f60fa5398454cc7bc736a2df0655e175152c7e312fced077cc52a8a5aa8685a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55765828f44e3e4bef88d51a4abde096b8b8955278ecfa54a945fb7cc947fd9`
+-	Image ID: `sha256:fb8caba4d67386cd19c8bed754a52559ea59260e2ebb2696c3541ff9f0ef90cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:92025f591947528accc61329b46a99f558354705bd4b5ad33cbe041dd08d0a4a`  
-		Last Modified: Tue, 08 Apr 2025 02:24:16 GMT  
+	-	`sha256:bb5bdcb462a5b3f0203474a81ce85aec4514352fb27de73e0f46b5a5224ebad6`  
+		Last Modified: Tue, 22 Apr 2025 18:09:30 GMT  
 		Size: 23.1 KB (23103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.0.9`
 
 ```console
-$ docker pull rocket.chat@sha256:dbdf9c160fb249b537a191b187468dc1d8e6ee4aae70d53fe14a0dde3c07ef90
+$ docker pull rocket.chat@sha256:4c39f7ef58cab3e80a65044b443d62c09bd386cf8ba8a6212fa41dba89455a02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -600,13 +600,13 @@ $ docker pull rocket.chat@sha256:dbdf9c160fb249b537a191b187468dc1d8e6ee4aae70d53
 ### `rocket.chat:7.0.9` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:21494e17310e6ccaf5f5a268503356aabae18d5fbe0279b494aa06a8a7b5ca86
+$ docker pull rocket.chat@sha256:8f648ec3575213fcfd1a13d2f57ff2bc5b1e0f5c44cb8d22becec1f52489caf4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **444.0 MB (443977332 bytes)**  
+-	Total Size: **444.0 MB (443971844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28d75567209b6638695d9d09e80446efb21e5486c2e0436527fd608a68f016c9`
+-	Image ID: `sha256:1e2a056ca5edab448ed5a2fbebca2a25a865efd0634303d45056a72b3c1ab1f4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -616,9 +616,9 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Thu, 06 Mar 2025 18:44:27 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
-ENV NODE_VERSION=20.19.0
+ENV NODE_VERSION=20.19.1
 # Thu, 06 Mar 2025 18:44:27 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version # buildkit
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
 ENV YARN_VERSION=1.22.22
 # Thu, 06 Mar 2025 18:44:27 GMT
@@ -662,37 +662,37 @@ CMD ["node" "main.js"]
 		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
 		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f5d617dc9950bc118a3cabb43c97dce10e009075c283009667bfcf985ec08de`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:d1dd334a81115b09134618d67d53ebb6162d9cd6858905dfaec3a8da9e64ae39`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 3.3 KB (3313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e462af878e0b4b422e64a75ac28a4645d92d3abf2e67416ca0d41e079077b4f`  
-		Last Modified: Tue, 08 Apr 2025 01:26:53 GMT  
-		Size: 41.2 MB (41161214 bytes)  
+	-	`sha256:b452662ac2b1cc5015de958ca3db9cf65d6ea42ad1ffda528555cad4476cd3f9`  
+		Last Modified: Tue, 22 Apr 2025 17:08:08 GMT  
+		Size: 41.2 MB (41159751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ff1ff1719c662cd3c79272225bb8b21a5a84de9bc258e02f6d56d126d43425`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 1.7 MB (1712510 bytes)  
+	-	`sha256:b085206451dbd0bcfa0cdf6c5c2cf33f257e2d077408c49b0a9ff1b411c126a8`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 1.7 MB (1712524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32fdf0df127cfb82bf64506d11e17cc44362f34006d464eed648cf02dbbc1213`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 447.0 B  
+	-	`sha256:9a176e756f6b6a4029593582d7c51f7c2839913d7da3e1a3f967de6e82654258`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:491b6309969a28cee3a00f64afb5bc6b9a6d419a3a406a571232bed5515b1b97`  
-		Last Modified: Tue, 08 Apr 2025 02:24:16 GMT  
-		Size: 45.1 MB (45131177 bytes)  
+	-	`sha256:3a76bf78365ba7e6a7c220878439835c7948710c47ace9429c7d966d69276b30`  
+		Last Modified: Tue, 22 Apr 2025 18:09:31 GMT  
+		Size: 45.1 MB (45131302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c65c30023e568f8534fdcfe27ef1b11e8f7753809820a6f37bbbef90920efce`  
-		Last Modified: Tue, 08 Apr 2025 02:24:05 GMT  
-		Size: 1.2 KB (1175 bytes)  
+	-	`sha256:671f9a34a4b0d4f3abbef7c30c72154a3ad50468f7c5b6aa7c8e0df48289ee25`  
+		Last Modified: Tue, 22 Apr 2025 18:09:30 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cfcbefc8c526d8cba0efab5950fcca3b5b3541c2f9a74108e03b82e8c2b70b`  
-		Last Modified: Tue, 08 Apr 2025 02:24:21 GMT  
-		Size: 327.7 MB (327740172 bytes)  
+	-	`sha256:75d02fb6f3836e5c706331613c464b4b498dedc70a3cfef041d69b33cbb22c06`  
+		Last Modified: Tue, 22 Apr 2025 18:09:40 GMT  
+		Size: 327.7 MB (327736008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -702,27 +702,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.0.9` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:22de6c4c1a0c338161e76efad284d3a86c5983c3cc8005c888feb7e0bdffb1a9
+$ docker pull rocket.chat@sha256:2f60fa5398454cc7bc736a2df0655e175152c7e312fced077cc52a8a5aa8685a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55765828f44e3e4bef88d51a4abde096b8b8955278ecfa54a945fb7cc947fd9`
+-	Image ID: `sha256:fb8caba4d67386cd19c8bed754a52559ea59260e2ebb2696c3541ff9f0ef90cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:92025f591947528accc61329b46a99f558354705bd4b5ad33cbe041dd08d0a4a`  
-		Last Modified: Tue, 08 Apr 2025 02:24:16 GMT  
+	-	`sha256:bb5bdcb462a5b3f0203474a81ce85aec4514352fb27de73e0f46b5a5224ebad6`  
+		Last Modified: Tue, 22 Apr 2025 18:09:30 GMT  
 		Size: 23.1 KB (23103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.1`
 
 ```console
-$ docker pull rocket.chat@sha256:d64fa6ff9c7bfb4928dac0044b5f3ba35ecceaadfd5c63e0c93acda619b33b36
+$ docker pull rocket.chat@sha256:0590ed359c2f93c4b53b4e58f7fd303b148593e1fb65cadb96e18195cb91c6b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -733,13 +733,13 @@ $ docker pull rocket.chat@sha256:d64fa6ff9c7bfb4928dac0044b5f3ba35ecceaadfd5c63e
 ### `rocket.chat:7.1` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:e085043ea41c2feeb803af4db6eb24a1d4fd9c5aaa6328fcae3ef02b6b23bd40
+$ docker pull rocket.chat@sha256:0a219ce6fc4447dac6a982dccecdf192a3d458047201b13f8afd76a1bff16fd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **442.4 MB (442369972 bytes)**  
+-	Total Size: **442.4 MB (442368741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da92ada2d5a9d5e68bb4adea3325c8a8e56a308d11bca5ba7d7d027b34dd1552`
+-	Image ID: `sha256:4dcf4ed44a469be2bee712cafef3d8e2da9863f7903e50cc19faa461decd5ca1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -749,9 +749,9 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Thu, 06 Mar 2025 18:44:27 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
-ENV NODE_VERSION=20.19.0
+ENV NODE_VERSION=20.19.1
 # Thu, 06 Mar 2025 18:44:27 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version # buildkit
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
 ENV YARN_VERSION=1.22.22
 # Thu, 06 Mar 2025 18:44:27 GMT
@@ -795,37 +795,37 @@ CMD ["node" "main.js"]
 		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
 		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f5d617dc9950bc118a3cabb43c97dce10e009075c283009667bfcf985ec08de`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:d1dd334a81115b09134618d67d53ebb6162d9cd6858905dfaec3a8da9e64ae39`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 3.3 KB (3313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e462af878e0b4b422e64a75ac28a4645d92d3abf2e67416ca0d41e079077b4f`  
-		Last Modified: Tue, 08 Apr 2025 01:26:53 GMT  
-		Size: 41.2 MB (41161214 bytes)  
+	-	`sha256:b452662ac2b1cc5015de958ca3db9cf65d6ea42ad1ffda528555cad4476cd3f9`  
+		Last Modified: Tue, 22 Apr 2025 17:08:08 GMT  
+		Size: 41.2 MB (41159751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ff1ff1719c662cd3c79272225bb8b21a5a84de9bc258e02f6d56d126d43425`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 1.7 MB (1712510 bytes)  
+	-	`sha256:b085206451dbd0bcfa0cdf6c5c2cf33f257e2d077408c49b0a9ff1b411c126a8`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 1.7 MB (1712524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32fdf0df127cfb82bf64506d11e17cc44362f34006d464eed648cf02dbbc1213`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 447.0 B  
+	-	`sha256:9a176e756f6b6a4029593582d7c51f7c2839913d7da3e1a3f967de6e82654258`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8ae05e9ee9b1bfa80002680dff2d9814b66725ec4e850ed3ca79358cbb8ffc4`  
-		Last Modified: Tue, 08 Apr 2025 02:24:06 GMT  
-		Size: 45.1 MB (45131209 bytes)  
+	-	`sha256:df75d2e1e6debb924d3d78c8fd7e091e8caab40e943854cce0f39288894b8219`  
+		Last Modified: Tue, 22 Apr 2025 18:09:46 GMT  
+		Size: 45.1 MB (45131253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c65c30023e568f8534fdcfe27ef1b11e8f7753809820a6f37bbbef90920efce`  
-		Last Modified: Tue, 08 Apr 2025 02:24:05 GMT  
-		Size: 1.2 KB (1175 bytes)  
+	-	`sha256:3d4f7632f7431f9f6c3e492da10f34a816a2bcf9f22e6381380928f3e8fadb7d`  
+		Last Modified: Tue, 22 Apr 2025 18:09:45 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86fae68ced2ba5b18372bfa954d509ab38298a583f90c39106730ef261f64111`  
-		Last Modified: Tue, 08 Apr 2025 02:24:11 GMT  
-		Size: 326.1 MB (326132780 bytes)  
+	-	`sha256:c9127863d37257c64f7d78b74473c0d6a69065ce7d6866e63670cefd45b07f7e`  
+		Last Modified: Tue, 22 Apr 2025 18:09:51 GMT  
+		Size: 326.1 MB (326132955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -835,27 +835,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.1` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:a07193a893f26757c9fee052dea41208224941295f794503893022e8b31eb66c
+$ docker pull rocket.chat@sha256:bb6d05fbbf1dd8e4fcfd98b27287de675d31cefa490bf0cc032d518db85b288c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53d0ba0e788f9bd042d96d58de10a52d88f54cf816de006b0890ee1d0bfd2515`
+-	Image ID: `sha256:5aaca972f91c976d0176e659841e505a89e89797c6920916d1fe1769070d64f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f67ac547a72b5f1b08cdef5b74700ea6c5e5a1079ade8fb4cd087673eb735c17`  
-		Last Modified: Tue, 08 Apr 2025 02:24:05 GMT  
+	-	`sha256:2d61050fd0ffecb45de11a83ed65d6e80a0081962906e0b19f9c6c1c03bc7ba7`  
+		Last Modified: Tue, 22 Apr 2025 18:09:45 GMT  
 		Size: 23.1 KB (23103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.1.5`
 
 ```console
-$ docker pull rocket.chat@sha256:d64fa6ff9c7bfb4928dac0044b5f3ba35ecceaadfd5c63e0c93acda619b33b36
+$ docker pull rocket.chat@sha256:0590ed359c2f93c4b53b4e58f7fd303b148593e1fb65cadb96e18195cb91c6b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -866,13 +866,13 @@ $ docker pull rocket.chat@sha256:d64fa6ff9c7bfb4928dac0044b5f3ba35ecceaadfd5c63e
 ### `rocket.chat:7.1.5` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:e085043ea41c2feeb803af4db6eb24a1d4fd9c5aaa6328fcae3ef02b6b23bd40
+$ docker pull rocket.chat@sha256:0a219ce6fc4447dac6a982dccecdf192a3d458047201b13f8afd76a1bff16fd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **442.4 MB (442369972 bytes)**  
+-	Total Size: **442.4 MB (442368741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da92ada2d5a9d5e68bb4adea3325c8a8e56a308d11bca5ba7d7d027b34dd1552`
+-	Image ID: `sha256:4dcf4ed44a469be2bee712cafef3d8e2da9863f7903e50cc19faa461decd5ca1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -882,9 +882,9 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Thu, 06 Mar 2025 18:44:27 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
-ENV NODE_VERSION=20.19.0
+ENV NODE_VERSION=20.19.1
 # Thu, 06 Mar 2025 18:44:27 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version # buildkit
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
 ENV YARN_VERSION=1.22.22
 # Thu, 06 Mar 2025 18:44:27 GMT
@@ -928,37 +928,37 @@ CMD ["node" "main.js"]
 		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
 		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f5d617dc9950bc118a3cabb43c97dce10e009075c283009667bfcf985ec08de`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:d1dd334a81115b09134618d67d53ebb6162d9cd6858905dfaec3a8da9e64ae39`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 3.3 KB (3313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e462af878e0b4b422e64a75ac28a4645d92d3abf2e67416ca0d41e079077b4f`  
-		Last Modified: Tue, 08 Apr 2025 01:26:53 GMT  
-		Size: 41.2 MB (41161214 bytes)  
+	-	`sha256:b452662ac2b1cc5015de958ca3db9cf65d6ea42ad1ffda528555cad4476cd3f9`  
+		Last Modified: Tue, 22 Apr 2025 17:08:08 GMT  
+		Size: 41.2 MB (41159751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ff1ff1719c662cd3c79272225bb8b21a5a84de9bc258e02f6d56d126d43425`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 1.7 MB (1712510 bytes)  
+	-	`sha256:b085206451dbd0bcfa0cdf6c5c2cf33f257e2d077408c49b0a9ff1b411c126a8`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 1.7 MB (1712524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32fdf0df127cfb82bf64506d11e17cc44362f34006d464eed648cf02dbbc1213`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 447.0 B  
+	-	`sha256:9a176e756f6b6a4029593582d7c51f7c2839913d7da3e1a3f967de6e82654258`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8ae05e9ee9b1bfa80002680dff2d9814b66725ec4e850ed3ca79358cbb8ffc4`  
-		Last Modified: Tue, 08 Apr 2025 02:24:06 GMT  
-		Size: 45.1 MB (45131209 bytes)  
+	-	`sha256:df75d2e1e6debb924d3d78c8fd7e091e8caab40e943854cce0f39288894b8219`  
+		Last Modified: Tue, 22 Apr 2025 18:09:46 GMT  
+		Size: 45.1 MB (45131253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c65c30023e568f8534fdcfe27ef1b11e8f7753809820a6f37bbbef90920efce`  
-		Last Modified: Tue, 08 Apr 2025 02:24:05 GMT  
-		Size: 1.2 KB (1175 bytes)  
+	-	`sha256:3d4f7632f7431f9f6c3e492da10f34a816a2bcf9f22e6381380928f3e8fadb7d`  
+		Last Modified: Tue, 22 Apr 2025 18:09:45 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86fae68ced2ba5b18372bfa954d509ab38298a583f90c39106730ef261f64111`  
-		Last Modified: Tue, 08 Apr 2025 02:24:11 GMT  
-		Size: 326.1 MB (326132780 bytes)  
+	-	`sha256:c9127863d37257c64f7d78b74473c0d6a69065ce7d6866e63670cefd45b07f7e`  
+		Last Modified: Tue, 22 Apr 2025 18:09:51 GMT  
+		Size: 326.1 MB (326132955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -968,27 +968,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.1.5` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:a07193a893f26757c9fee052dea41208224941295f794503893022e8b31eb66c
+$ docker pull rocket.chat@sha256:bb6d05fbbf1dd8e4fcfd98b27287de675d31cefa490bf0cc032d518db85b288c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53d0ba0e788f9bd042d96d58de10a52d88f54cf816de006b0890ee1d0bfd2515`
+-	Image ID: `sha256:5aaca972f91c976d0176e659841e505a89e89797c6920916d1fe1769070d64f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f67ac547a72b5f1b08cdef5b74700ea6c5e5a1079ade8fb4cd087673eb735c17`  
-		Last Modified: Tue, 08 Apr 2025 02:24:05 GMT  
+	-	`sha256:2d61050fd0ffecb45de11a83ed65d6e80a0081962906e0b19f9c6c1c03bc7ba7`  
+		Last Modified: Tue, 22 Apr 2025 18:09:45 GMT  
 		Size: 23.1 KB (23103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.2`
 
 ```console
-$ docker pull rocket.chat@sha256:3930a588bb40b7e0730b1454f191c982638aa642c67f526b8755dfb5d2a19e4d
+$ docker pull rocket.chat@sha256:dd90ca295958536c648490c3db9943182e858661de28e8c51f03cf90222d5b3b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -999,13 +999,13 @@ $ docker pull rocket.chat@sha256:3930a588bb40b7e0730b1454f191c982638aa642c67f526
 ### `rocket.chat:7.2` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:ac7ec53336383888cb944ad5e0d82d2f84b7e3a9ffd16b68dfb61fec22aa749a
+$ docker pull rocket.chat@sha256:245f8e36220767ae95d68ec9dc319ec00f2fdaeea7fed1f7fd4e0c790502ce64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **451.4 MB (451377868 bytes)**  
+-	Total Size: **451.4 MB (451377556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf834db7b5aeeeba6fa4477b244435a99ef43a239f920f28e67c18dc0d4ffff9`
+-	Image ID: `sha256:835ecca07ccad4f453a36e7917160bf91d6ac0c5099522b63784a946c588a205`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -1015,9 +1015,9 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Thu, 06 Mar 2025 18:44:27 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
-ENV NODE_VERSION=20.19.0
+ENV NODE_VERSION=20.19.1
 # Thu, 06 Mar 2025 18:44:27 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version # buildkit
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
 ENV YARN_VERSION=1.22.22
 # Thu, 06 Mar 2025 18:44:27 GMT
@@ -1061,37 +1061,37 @@ CMD ["node" "main.js"]
 		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
 		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f5d617dc9950bc118a3cabb43c97dce10e009075c283009667bfcf985ec08de`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:d1dd334a81115b09134618d67d53ebb6162d9cd6858905dfaec3a8da9e64ae39`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 3.3 KB (3313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e462af878e0b4b422e64a75ac28a4645d92d3abf2e67416ca0d41e079077b4f`  
-		Last Modified: Tue, 08 Apr 2025 01:26:53 GMT  
-		Size: 41.2 MB (41161214 bytes)  
+	-	`sha256:b452662ac2b1cc5015de958ca3db9cf65d6ea42ad1ffda528555cad4476cd3f9`  
+		Last Modified: Tue, 22 Apr 2025 17:08:08 GMT  
+		Size: 41.2 MB (41159751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ff1ff1719c662cd3c79272225bb8b21a5a84de9bc258e02f6d56d126d43425`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 1.7 MB (1712510 bytes)  
+	-	`sha256:b085206451dbd0bcfa0cdf6c5c2cf33f257e2d077408c49b0a9ff1b411c126a8`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 1.7 MB (1712524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32fdf0df127cfb82bf64506d11e17cc44362f34006d464eed648cf02dbbc1213`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 447.0 B  
+	-	`sha256:9a176e756f6b6a4029593582d7c51f7c2839913d7da3e1a3f967de6e82654258`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffb9939d5a779be54e90b9304c0cc66520f7cf2d53e89787a40eb322ab5a8bf7`  
-		Last Modified: Tue, 08 Apr 2025 02:24:15 GMT  
-		Size: 45.1 MB (45131213 bytes)  
+	-	`sha256:ab9b85816b04d5d11101eadd9962fce1f1cb0a051bd30f97f316642448639338`  
+		Last Modified: Tue, 22 Apr 2025 18:10:09 GMT  
+		Size: 45.1 MB (45131246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b7f55e11e701476b0e8328d7a334a0c3b57989e5e9e9c0f9e195d3dcd3a52e0`  
-		Last Modified: Tue, 08 Apr 2025 02:24:15 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:9a7b6d45ba85f23dd24c9e95f412b48c90314e40a14bcf44797f66357012eb08`  
+		Last Modified: Tue, 22 Apr 2025 18:10:08 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10ac8aa5b0afcbad1f51b6c87bb39caa52336356bb615852a4b07fd54061d63e`  
-		Last Modified: Tue, 08 Apr 2025 02:24:21 GMT  
-		Size: 335.1 MB (335140674 bytes)  
+	-	`sha256:96d993691dfeefb19ca9f681cab41267b78b2115601131e3fb5575fc79c8aad1`  
+		Last Modified: Tue, 22 Apr 2025 18:10:14 GMT  
+		Size: 335.1 MB (335141776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1101,27 +1101,27 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.2` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:465c2be19462b40da095356930567c98cd5762808af690b5f9a9ec9670d1aa5b
+$ docker pull rocket.chat@sha256:e92356d8631b8365d9076ab6bcb28588f7382bf0f7b775bbb865bdb87e5a61f9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01d4d023d5f08a7dc331ef473470a4b00628e042e01195fffc45e9f2d06742d`
+-	Image ID: `sha256:56f5952fb9a2e565de5568f91fe6e0801b9fa71edd91aa37dde2d9c627927319`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d31e32a10986a8db7ce41c6de96950c09dad5532c4bbef2dd166cd7be9802685`  
-		Last Modified: Tue, 08 Apr 2025 02:24:14 GMT  
+	-	`sha256:ecc2cc4b4ee7d1aaf828be415d9e7abd55c9b3619b8e4f7656da56d11cad8764`  
+		Last Modified: Tue, 22 Apr 2025 18:10:08 GMT  
 		Size: 23.1 KB (23103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rocket.chat:7.2.5`
 
 ```console
-$ docker pull rocket.chat@sha256:3930a588bb40b7e0730b1454f191c982638aa642c67f526b8755dfb5d2a19e4d
+$ docker pull rocket.chat@sha256:dd90ca295958536c648490c3db9943182e858661de28e8c51f03cf90222d5b3b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1132,13 +1132,13 @@ $ docker pull rocket.chat@sha256:3930a588bb40b7e0730b1454f191c982638aa642c67f526
 ### `rocket.chat:7.2.5` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:ac7ec53336383888cb944ad5e0d82d2f84b7e3a9ffd16b68dfb61fec22aa749a
+$ docker pull rocket.chat@sha256:245f8e36220767ae95d68ec9dc319ec00f2fdaeea7fed1f7fd4e0c790502ce64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **451.4 MB (451377868 bytes)**  
+-	Total Size: **451.4 MB (451377556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf834db7b5aeeeba6fa4477b244435a99ef43a239f920f28e67c18dc0d4ffff9`
+-	Image ID: `sha256:835ecca07ccad4f453a36e7917160bf91d6ac0c5099522b63784a946c588a205`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
@@ -1148,9 +1148,9 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Thu, 06 Mar 2025 18:44:27 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
-ENV NODE_VERSION=20.19.0
+ENV NODE_VERSION=20.19.1
 # Thu, 06 Mar 2025 18:44:27 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version # buildkit
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
 # Thu, 06 Mar 2025 18:44:27 GMT
 ENV YARN_VERSION=1.22.22
 # Thu, 06 Mar 2025 18:44:27 GMT
@@ -1194,37 +1194,37 @@ CMD ["node" "main.js"]
 		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
 		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f5d617dc9950bc118a3cabb43c97dce10e009075c283009667bfcf985ec08de`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:d1dd334a81115b09134618d67d53ebb6162d9cd6858905dfaec3a8da9e64ae39`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 3.3 KB (3313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e462af878e0b4b422e64a75ac28a4645d92d3abf2e67416ca0d41e079077b4f`  
-		Last Modified: Tue, 08 Apr 2025 01:26:53 GMT  
-		Size: 41.2 MB (41161214 bytes)  
+	-	`sha256:b452662ac2b1cc5015de958ca3db9cf65d6ea42ad1ffda528555cad4476cd3f9`  
+		Last Modified: Tue, 22 Apr 2025 17:08:08 GMT  
+		Size: 41.2 MB (41159751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ff1ff1719c662cd3c79272225bb8b21a5a84de9bc258e02f6d56d126d43425`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 1.7 MB (1712510 bytes)  
+	-	`sha256:b085206451dbd0bcfa0cdf6c5c2cf33f257e2d077408c49b0a9ff1b411c126a8`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 1.7 MB (1712524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32fdf0df127cfb82bf64506d11e17cc44362f34006d464eed648cf02dbbc1213`  
-		Last Modified: Tue, 08 Apr 2025 01:26:52 GMT  
-		Size: 447.0 B  
+	-	`sha256:9a176e756f6b6a4029593582d7c51f7c2839913d7da3e1a3f967de6e82654258`  
+		Last Modified: Tue, 22 Apr 2025 17:08:07 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffb9939d5a779be54e90b9304c0cc66520f7cf2d53e89787a40eb322ab5a8bf7`  
-		Last Modified: Tue, 08 Apr 2025 02:24:15 GMT  
-		Size: 45.1 MB (45131213 bytes)  
+	-	`sha256:ab9b85816b04d5d11101eadd9962fce1f1cb0a051bd30f97f316642448639338`  
+		Last Modified: Tue, 22 Apr 2025 18:10:09 GMT  
+		Size: 45.1 MB (45131246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b7f55e11e701476b0e8328d7a334a0c3b57989e5e9e9c0f9e195d3dcd3a52e0`  
-		Last Modified: Tue, 08 Apr 2025 02:24:15 GMT  
-		Size: 1.2 KB (1173 bytes)  
+	-	`sha256:9a7b6d45ba85f23dd24c9e95f412b48c90314e40a14bcf44797f66357012eb08`  
+		Last Modified: Tue, 22 Apr 2025 18:10:08 GMT  
+		Size: 1.2 KB (1174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10ac8aa5b0afcbad1f51b6c87bb39caa52336356bb615852a4b07fd54061d63e`  
-		Last Modified: Tue, 08 Apr 2025 02:24:21 GMT  
-		Size: 335.1 MB (335140674 bytes)  
+	-	`sha256:96d993691dfeefb19ca9f681cab41267b78b2115601131e3fb5575fc79c8aad1`  
+		Last Modified: Tue, 22 Apr 2025 18:10:14 GMT  
+		Size: 335.1 MB (335141776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1234,20 +1234,20 @@ CMD ["node" "main.js"]
 ### `rocket.chat:7.2.5` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:465c2be19462b40da095356930567c98cd5762808af690b5f9a9ec9670d1aa5b
+$ docker pull rocket.chat@sha256:e92356d8631b8365d9076ab6bcb28588f7382bf0f7b775bbb865bdb87e5a61f9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.1 KB (23103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01d4d023d5f08a7dc331ef473470a4b00628e042e01195fffc45e9f2d06742d`
+-	Image ID: `sha256:56f5952fb9a2e565de5568f91fe6e0801b9fa71edd91aa37dde2d9c627927319`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d31e32a10986a8db7ce41c6de96950c09dad5532c4bbef2dd166cd7be9802685`  
-		Last Modified: Tue, 08 Apr 2025 02:24:14 GMT  
+	-	`sha256:ecc2cc4b4ee7d1aaf828be415d9e7abd55c9b3619b8e4f7656da56d11cad8764`  
+		Last Modified: Tue, 22 Apr 2025 18:10:08 GMT  
 		Size: 23.1 KB (23103 bytes)  
 		MIME: application/vnd.in-toto+json
 
