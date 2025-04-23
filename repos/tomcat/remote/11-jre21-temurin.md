@@ -1,7 +1,7 @@
 ## `tomcat:11-jre21-temurin`
 
 ```console
-$ docker pull tomcat@sha256:e113edccd73ce4911a58c0505432599cd14f879edf33f295f3a6ec6c01995c9c
+$ docker pull tomcat@sha256:9085d8ff8b5971d25fd17405a4a5e72b6d79ce4df21920299df723f58904f412
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,45 +20,45 @@ $ docker pull tomcat@sha256:e113edccd73ce4911a58c0505432599cd14f879edf33f295f3a6
 ### `tomcat:11-jre21-temurin` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:fc2dbf5a516cebe50b42089d70110ab0407ce1c9717d9ef002b287dee1b5fbde
+$ docker pull tomcat@sha256:44e7f87180b9e03f74c6e8dcd6653f6967a13a91e4f2b8f6ab4eb5b957a1ae82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.6 MB (113624000 bytes)**  
+-	Total Size: **113.6 MB (113639145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1589054a8d9d0ceb889c2f7ccc5aef64c7c6802ed85bc40a782db7ca45abd3d4`
+-	Image ID: `sha256:ca37f0d6077300ad8a89d1e85670371c032556a7eb2d88b2383e2a9789d9a516`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 ARG RELEASE
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:43:14 GMT
 ADD file:1d7c45546e94b90e941c5bf5c7a5d415d7b868581ad96171d4beb76caa8ab683 in / 
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:43:15 GMT
 CMD ["/bin/bash"]
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
-ENV JAVA_VERSION=jdk-21.0.6+7
-# Thu, 30 Jan 2025 14:32:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        riscv64)          ESUM='a8d219a4a97f9c53ba88cb8927910005d4f3d08a87ab1bdebff921ef41afa93d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
+ENV JAVA_VERSION=jdk-21.0.7+6
+# Wed, 09 Apr 2025 14:03:29 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='6d48379e00d47e6fdd417e96421e973898ac90765ea8ff2d09ae0af6d5d6a1c6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_x64_linux_hotspot_21.0.7_6.tar.gz';          ;;        arm64)          ESUM='ab455a401d25e0cd20e652d2ee72e9f56beba0d9faac5a5c62c9b27a19df804b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.7_6.tar.gz';          ;;        ppc64el)          ESUM='721d3b374cb333269d487e7f99e2d247576c989d2e08a2842738ef62f432bcbd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.7_6.tar.gz';          ;;        riscv64)          ESUM='8fd14594d0ad8576ba9b698fd10df4a297c548cfdc81cfbe52ac660aeaf5e2b2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.7_6.tar.gz';          ;;        s390x)          ESUM='24dddeebdf350d6e0bd6e68176c8eee0a4ff9a5c84efd0fd456848d7ad4c1791';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_s390x_linux_hotspot_21.0.7_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 09 Apr 2025 14:03:29 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
@@ -97,37 +97,37 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 08 Apr 2025 11:53:40 GMT  
 		Size: 29.7 MB (29717652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70f077abe239c4b7c52baccfdc40cf1d11599c65c059129059886ba1ce35baf7`  
-		Last Modified: Wed, 09 Apr 2025 01:16:40 GMT  
-		Size: 17.0 MB (16967596 bytes)  
+	-	`sha256:96e234c1654a40863255a62f504e30c6694c9fb70e2389306d5384af64337312`  
+		Last Modified: Wed, 23 Apr 2025 16:32:09 GMT  
+		Size: 17.0 MB (16967805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b32015a69421bcce8c43294589f07eede587c47a2a4da89558659befdc27a754`  
-		Last Modified: Wed, 09 Apr 2025 01:16:41 GMT  
-		Size: 52.9 MB (52876141 bytes)  
+	-	`sha256:a5ac8da3c61b20e48f291d8eb8d7d19d8e11683fe8976dc87255d9f81cfd25f6`  
+		Last Modified: Wed, 23 Apr 2025 16:32:10 GMT  
+		Size: 52.9 MB (52891051 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b689d8529676c7666da8709db4efbb9cd10fe9e60851b44920556f0057025b23`  
-		Last Modified: Wed, 09 Apr 2025 01:16:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:55ade5f85b8cc443b182ffa8554d5ea88c0e7e9e652ac881dd15c98b301c002d`  
+		Last Modified: Wed, 23 Apr 2025 16:32:09 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05b596fb477614cbefc72ad1979a8307c4a41d346ee9db9835a85e6ca807ccb9`  
-		Last Modified: Wed, 09 Apr 2025 01:16:39 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:94f02b181578076f6735394e80f8e39ded2df19f6a04e02edf90548c3322d858`  
+		Last Modified: Wed, 23 Apr 2025 16:32:09 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:473effe1c11bb9ed22203b03675aa780aa8fdc75a2b1cc5c31b29d6ccbecebed`  
-		Last Modified: Wed, 09 Apr 2025 18:30:25 GMT  
-		Size: 139.0 B  
+	-	`sha256:c2a3dfe17faaa9aa709e350368b585b85c8776bfd6246e43587bc849ea223f6e`  
+		Last Modified: Wed, 23 Apr 2025 18:11:15 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:921e2cc7cc983c68165a26fa3eb5639051418c77397b64c852d06efef58c4165`  
-		Last Modified: Wed, 09 Apr 2025 18:30:26 GMT  
-		Size: 13.8 MB (13835491 bytes)  
+	-	`sha256:a5459204d08fd9778e82a5bec457708057ce5a6e4213e9c0f41b9e810c05d937`  
+		Last Modified: Wed, 23 Apr 2025 18:11:18 GMT  
+		Size: 13.8 MB (13835521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bab89d185792fab52acd327795cbf1a7b8a2acfddfcec902c160b3df982ad43`  
-		Last Modified: Wed, 09 Apr 2025 18:30:26 GMT  
-		Size: 224.5 KB (224474 bytes)  
+	-	`sha256:e3f168bca1fa63bd6947f1f302b50149f47d7a36511d6482a238db8c45e92b55`  
+		Last Modified: Wed, 23 Apr 2025 18:11:16 GMT  
+		Size: 224.5 KB (224473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -137,24 +137,24 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:11-jre21-temurin` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:51e4f5ddfe28b8d35e206ea156871e92563e3411e8cac8c1616c070d56dfc143
+$ docker pull tomcat@sha256:dfd9d48baaebdc1d5291eb716a7b40c721fb9122810baffbecdb3d10b762f6cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3209317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da20c21d113cd5ae41a9a848cf1cbdb72950d1bf36ae7047f70fd7d055da9e0a`
+-	Image ID: `sha256:d6cd01675e960767df1c1d8e56b5baab23c19d8ae18097d671ec627542925c83`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f0c92b0df8e8a996f9b0a4864240d4243aa594dd2fc666f98037a0dafff3bb8`  
-		Last Modified: Wed, 09 Apr 2025 18:30:26 GMT  
+	-	`sha256:674c2223e81e80afee1298aba4de1d3d7cc7e0f702dc759d9e0dcf0a39c3580f`  
+		Last Modified: Wed, 23 Apr 2025 18:11:16 GMT  
 		Size: 3.2 MB (3185245 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06e1e8bad3e774e49e90c8a55d80cabdf9254381ee6912abc5ce8ec78ae34bd7`  
-		Last Modified: Wed, 09 Apr 2025 18:30:25 GMT  
+	-	`sha256:76885067e272c17a5f04cf24f3afdff41604528825dc82b81546d69c127cd74d`  
+		Last Modified: Wed, 23 Apr 2025 18:11:15 GMT  
 		Size: 24.1 KB (24072 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -302,45 +302,45 @@ $ docker pull tomcat@sha256:4638586868ea6461fea44a902c5491eee05ae4442c0deeaa9620
 ### `tomcat:11-jre21-temurin` - linux; ppc64le
 
 ```console
-$ docker pull tomcat@sha256:3c40e16d71aa4f335c0ca7633c9b17c6094906326518c7e67f975e7904b43292
+$ docker pull tomcat@sha256:6140f39c87eacb46530b930c048752edca25918fc31452f1197fa5ca9fecbb4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.2 MB (120183226 bytes)**  
+-	Total Size: **120.2 MB (120183727 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:494615599805f02df2d8aaa491f3ecb8a7e55f6ce1f532ec91b187c4e005fab3`
+-	Image ID: `sha256:7cfa88066137a7b7f6396bc5e1179616e3ecc24689d5d25d6cf80569d2c7cad1`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 ARG RELEASE
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:14 GMT
 ADD file:d7a12d3d510b1bacf894dbb7d42f36de9391b0766c28643a60d20d3c37a12762 in / 
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:15 GMT
 CMD ["/bin/bash"]
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
-ENV JAVA_VERSION=jdk-21.0.6+7
-# Thu, 30 Jan 2025 14:32:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        riscv64)          ESUM='a8d219a4a97f9c53ba88cb8927910005d4f3d08a87ab1bdebff921ef41afa93d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
+ENV JAVA_VERSION=jdk-21.0.7+6
+# Wed, 09 Apr 2025 14:03:29 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='6d48379e00d47e6fdd417e96421e973898ac90765ea8ff2d09ae0af6d5d6a1c6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_x64_linux_hotspot_21.0.7_6.tar.gz';          ;;        arm64)          ESUM='ab455a401d25e0cd20e652d2ee72e9f56beba0d9faac5a5c62c9b27a19df804b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.7_6.tar.gz';          ;;        ppc64el)          ESUM='721d3b374cb333269d487e7f99e2d247576c989d2e08a2842738ef62f432bcbd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.7_6.tar.gz';          ;;        riscv64)          ESUM='8fd14594d0ad8576ba9b698fd10df4a297c548cfdc81cfbe52ac660aeaf5e2b2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.7_6.tar.gz';          ;;        s390x)          ESUM='24dddeebdf350d6e0bd6e68176c8eee0a4ff9a5c84efd0fd456848d7ad4c1791';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_s390x_linux_hotspot_21.0.7_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 09 Apr 2025 14:03:29 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
@@ -383,33 +383,33 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 09 Apr 2025 04:36:35 GMT  
 		Size: 18.8 MB (18814458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee8fd0efcc2251766d0b845cd9531bc5af1859c643be4688a5eada4e8ff198d7`  
-		Last Modified: Wed, 09 Apr 2025 04:54:18 GMT  
-		Size: 52.9 MB (52915025 bytes)  
+	-	`sha256:50fbc91513fc92d8789121f22fa99f249b8d3134be1f2e621f6454152621184e`  
+		Last Modified: Wed, 23 Apr 2025 16:53:57 GMT  
+		Size: 52.9 MB (52915469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed131941c543abc33691995f4727f361da0f139e000548d943c075e3c85d677b`  
-		Last Modified: Wed, 09 Apr 2025 04:54:15 GMT  
+	-	`sha256:e86904cfa11c97c4b2cc62c170c1dbd5f61419d670c46a63cfeff373043d8c80`  
+		Last Modified: Wed, 23 Apr 2025 16:53:53 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b12e81419f348fe34056591fdec49a966a027a60aa1345d99136b86c4eecd989`  
-		Last Modified: Wed, 09 Apr 2025 04:54:16 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:796b3f6d8ba9fbe7b8695d6e7cab573c7a24cf91d5a4f9ce10ab12b8215a036f`  
+		Last Modified: Wed, 23 Apr 2025 16:53:53 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e046941dffa208eabea554c86c577060c24200400befcd7d1fa77a175f23d53a`  
-		Last Modified: Wed, 09 Apr 2025 13:49:02 GMT  
-		Size: 138.0 B  
+	-	`sha256:eda74647e6debfc2d58b2cb7a98d7177b45041e955cd47bebfbbdb3ffe612dda`  
+		Last Modified: Wed, 23 Apr 2025 18:34:09 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57700ef1a05368fd2bef6ecc163d9f66e65aeb6ca51443c732b0714aae4f54bb`  
-		Last Modified: Wed, 09 Apr 2025 21:08:19 GMT  
-		Size: 13.9 MB (13853884 bytes)  
+	-	`sha256:d833690dc3f4f35929f326912878fde70b177544f13a5f2c6f9328a1dc63e1a7`  
+		Last Modified: Wed, 23 Apr 2025 18:34:10 GMT  
+		Size: 13.9 MB (13853909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2639488f647dee844db0de0b0e4e3bf10535b8faa56a8da7c5474fe0532c0c54`  
-		Last Modified: Wed, 09 Apr 2025 21:08:18 GMT  
-		Size: 256.3 KB (256349 bytes)  
+	-	`sha256:f142307e2a61ed07649c20a0c6083450fa8acba4ef2eef76941715c5fd87a34d`  
+		Last Modified: Wed, 23 Apr 2025 18:34:09 GMT  
+		Size: 256.4 KB (256380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -419,69 +419,69 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:11-jre21-temurin` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:eaa42456800f862647dc23ffa73ac115d738a1cfcd5e614f62b9960f9e011c27
+$ docker pull tomcat@sha256:be4e9caecfa5c2139c498679847bde3e249023977403e2bcf0c8842ab6ec8df1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3213404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:616801385521e9e3856a71cffa7edd05c914a4196bc8111d5f252cdb38dad29c`
+-	Image ID: `sha256:645db6c0b18d649533443689951fc77f9721bc5b78cbc277bd9ebbdc10b81625`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a5c9747991b69effd49a8ce726429eed629516e39c46534df1f07150e71c3b7`  
-		Last Modified: Wed, 09 Apr 2025 21:08:18 GMT  
+	-	`sha256:ac93bc315454cd8554a386f325e991d02ac0effd0480b27c0bcdc300921e9026`  
+		Last Modified: Wed, 23 Apr 2025 18:34:09 GMT  
 		Size: 3.2 MB (3189226 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:93e8de951b7988338687b8b58e5d517dab0b9b24f50a69edb4438cdd4217fbee`  
-		Last Modified: Wed, 09 Apr 2025 21:08:18 GMT  
+	-	`sha256:895f5a095f43b3f75a4244f09a86d3cbe7fb08b91634ed5c8cc4025640d38d50`  
+		Last Modified: Wed, 23 Apr 2025 18:34:09 GMT  
 		Size: 24.2 KB (24178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:11-jre21-temurin` - linux; riscv64
 
 ```console
-$ docker pull tomcat@sha256:8c7596091a7aee4e21761515c2a97f3144ffbe216f73eb562fc40ceefbb53d4b
+$ docker pull tomcat@sha256:9acbdd31f0e4ec8710970d00086a470ab9d3329746f51230d93aa7f259e696ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.7 MB (113715947 bytes)**  
+-	Total Size: **113.7 MB (113722521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f35564cef695d323b044621f8effe93783b72a22d6f5f97ffeb8d0629ee7f9e2`
+-	Image ID: `sha256:d0964858e8055e884941668142bec092312c32156e418dafc785a546ede8b8bf`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 11:16:50 GMT
 ARG RELEASE
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 11:16:51 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 11:16:51 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 11:16:51 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 11:17:29 GMT
 ADD file:ef7c97f5dd8d665aae899afe52c54f7acaf71fa51e9d7f26e13ed6073141c666 in / 
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 11:17:31 GMT
 CMD ["/bin/bash"]
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
-ENV JAVA_VERSION=jdk-21.0.6+7
-# Thu, 30 Jan 2025 14:32:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        riscv64)          ESUM='a8d219a4a97f9c53ba88cb8927910005d4f3d08a87ab1bdebff921ef41afa93d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
+ENV JAVA_VERSION=jdk-21.0.7+6
+# Wed, 09 Apr 2025 14:03:29 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='6d48379e00d47e6fdd417e96421e973898ac90765ea8ff2d09ae0af6d5d6a1c6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_x64_linux_hotspot_21.0.7_6.tar.gz';          ;;        arm64)          ESUM='ab455a401d25e0cd20e652d2ee72e9f56beba0d9faac5a5c62c9b27a19df804b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.7_6.tar.gz';          ;;        ppc64el)          ESUM='721d3b374cb333269d487e7f99e2d247576c989d2e08a2842738ef62f432bcbd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.7_6.tar.gz';          ;;        riscv64)          ESUM='8fd14594d0ad8576ba9b698fd10df4a297c548cfdc81cfbe52ac660aeaf5e2b2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.7_6.tar.gz';          ;;        s390x)          ESUM='24dddeebdf350d6e0bd6e68176c8eee0a4ff9a5c84efd0fd456848d7ad4c1791';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_s390x_linux_hotspot_21.0.7_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 09 Apr 2025 14:03:29 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
@@ -524,33 +524,33 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 09 Apr 2025 05:37:55 GMT  
 		Size: 17.9 MB (17862386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f8bc25b441fa54c285f9205aed2f1df2d11e070bc3cf80a6702f475ecef4257`  
-		Last Modified: Wed, 09 Apr 2025 05:47:39 GMT  
-		Size: 50.7 MB (50659979 bytes)  
+	-	`sha256:4fd59a4382380c2172e1f3e53e47801a3e0cab6182eb5ea9cc0f6d1bc25b98d0`  
+		Last Modified: Wed, 23 Apr 2025 16:50:07 GMT  
+		Size: 50.7 MB (50666518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8419ad464ec9c72f97eb820d8971be57baf60196013ff2e273077d640098333`  
-		Last Modified: Wed, 09 Apr 2025 05:47:31 GMT  
+	-	`sha256:aa19e750f8267477f46d63880e8edadda1a8f0828bb1e93508ba1e0633ee7ee8`  
+		Last Modified: Wed, 23 Apr 2025 16:49:59 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8df0125d515310dbd2dd69268c10b301acd7489dd873651b9c74b6dae847f99`  
-		Last Modified: Wed, 09 Apr 2025 05:47:32 GMT  
-		Size: 2.3 KB (2279 bytes)  
+	-	`sha256:2a74e82a2cb47bc0b42b5f7d2e4cfe33e9d664414234cbb894b23fb72542b7ab`  
+		Last Modified: Wed, 23 Apr 2025 16:50:00 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96357f55f3dbd261bdac49cd3dd1aefb9ead2255aae19dd9093a37af1f71e4ac`  
-		Last Modified: Wed, 09 Apr 2025 11:53:47 GMT  
-		Size: 139.0 B  
+	-	`sha256:b295fe081229f616c574b80400ce11a76347d44e96c59165454293feca4c2b53`  
+		Last Modified: Wed, 23 Apr 2025 18:41:09 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eec038be2adc1999435ff7b3bd64adf7803b32ad3777ea62e80af1faf7b61803`  
-		Last Modified: Thu, 10 Apr 2025 03:39:33 GMT  
-		Size: 14.0 MB (14020019 bytes)  
+	-	`sha256:0cfe1f5e9f3e7370e942849a13f0cff9c4fcc8a669bb8cd253a8993ddd5dd3b5`  
+		Last Modified: Wed, 23 Apr 2025 18:41:13 GMT  
+		Size: 14.0 MB (14020071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ffa5d62bd8629c41d9dc3419ee87ccdee75eb830ec8fa60d087ab1f48cf5a5d`  
-		Last Modified: Thu, 10 Apr 2025 03:39:31 GMT  
-		Size: 227.7 KB (227720 bytes)  
+	-	`sha256:402289a0beaae2eb42b2c0875d384d7c10d2fd2d13deb9c1a77951087a92f574`  
+		Last Modified: Wed, 23 Apr 2025 18:41:09 GMT  
+		Size: 227.7 KB (227699 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -560,69 +560,69 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:11-jre21-temurin` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:e584233c116a728910f4fba8ed564d418a9a30afddb9f03500eddb79d7adefab
+$ docker pull tomcat@sha256:77f2d647edb82db20d3f6207f52adf6cd6ff64523efa6ba156fa22c27dfd0bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3201698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f3f26f73fb5831d460fb2ad6a00bdbcdaff54b46266140671e8f72463bd8dee`
+-	Image ID: `sha256:442cd2d6c42b612588ee69314e09bf64624da224c58278d5a1b3de1b3dc7e149`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f1786592272f6f15fda6cd35961181794a73f7597fb333877ebe40ecd0121ac6`  
-		Last Modified: Thu, 10 Apr 2025 03:39:31 GMT  
+	-	`sha256:dbb54809254c9a06afca56c39574f8bb84ceab8cf8eb487efacdd34521d18ded`  
+		Last Modified: Wed, 23 Apr 2025 18:41:09 GMT  
 		Size: 3.2 MB (3177520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b89a4310f0d9aecfab301e08f1691e318b5ec3330544e412a77b188ee0ef2c2c`  
-		Last Modified: Thu, 10 Apr 2025 03:39:30 GMT  
+	-	`sha256:687985d68d94c5774cee3ee09249c5e1c25c70fb8e09f938134ad3efc9ff843b`  
+		Last Modified: Wed, 23 Apr 2025 18:41:09 GMT  
 		Size: 24.2 KB (24178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:11-jre21-temurin` - linux; s390x
 
 ```console
-$ docker pull tomcat@sha256:35de26a1923d6016d5518a2917353c5c86f1425ecc724d2e6b05d984c1d27847
+$ docker pull tomcat@sha256:190ba5a5b2ea64f7aae75759fe2c75cfecd16e695bd4e42a73e6b8fbfa448c25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.1 MB (111080819 bytes)**  
+-	Total Size: **111.1 MB (111089438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:296c67cef6bc77504b3f16b2be048ed830713416348ec3e468d4386a1c4aecd1`
+-	Image ID: `sha256:b72d1d6ad29ebf6207c5afa03def203b38c4eea2d1acf821303693c04aeabf44`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 ARG RELEASE
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:30 GMT
 ADD file:8f287f40ca940c9bd87c8706751f5f1c5bbd0a83fd75f7d938832b226fdb936d in / 
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Tue, 08 Apr 2025 10:46:30 GMT
 CMD ["/bin/bash"]
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
-ENV JAVA_VERSION=jdk-21.0.6+7
-# Thu, 30 Jan 2025 14:32:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        riscv64)          ESUM='a8d219a4a97f9c53ba88cb8927910005d4f3d08a87ab1bdebff921ef41afa93d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
+ENV JAVA_VERSION=jdk-21.0.7+6
+# Wed, 09 Apr 2025 14:03:29 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='6d48379e00d47e6fdd417e96421e973898ac90765ea8ff2d09ae0af6d5d6a1c6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_x64_linux_hotspot_21.0.7_6.tar.gz';          ;;        arm64)          ESUM='ab455a401d25e0cd20e652d2ee72e9f56beba0d9faac5a5c62c9b27a19df804b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.7_6.tar.gz';          ;;        ppc64el)          ESUM='721d3b374cb333269d487e7f99e2d247576c989d2e08a2842738ef62f432bcbd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.7_6.tar.gz';          ;;        riscv64)          ESUM='8fd14594d0ad8576ba9b698fd10df4a297c548cfdc81cfbe52ac660aeaf5e2b2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.7_6.tar.gz';          ;;        s390x)          ESUM='24dddeebdf350d6e0bd6e68176c8eee0a4ff9a5c84efd0fd456848d7ad4c1791';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_s390x_linux_hotspot_21.0.7_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 09 Apr 2025 14:03:29 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 30 Jan 2025 14:32:57 GMT
+# Wed, 09 Apr 2025 14:03:29 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 09 Apr 2025 14:03:29 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
@@ -665,33 +665,33 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 09 Apr 2025 04:17:18 GMT  
 		Size: 17.6 MB (17581428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87826d9fb71a09107705d1ea66407a841ed365337b97e0e0a75eac3021b0fccc`  
-		Last Modified: Wed, 09 Apr 2025 04:26:38 GMT  
-		Size: 49.5 MB (49463203 bytes)  
+	-	`sha256:c4d59a493fb602f30ad191ec2e0f8e9de74f9093a070fc7150b7e83452337432`  
+		Last Modified: Wed, 23 Apr 2025 16:47:19 GMT  
+		Size: 49.5 MB (49471731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a66b99f2e8db39ef069862e88de892d4d27946d052912817f73b5d727c4344f`  
-		Last Modified: Wed, 09 Apr 2025 04:26:37 GMT  
+	-	`sha256:3cbde791dc3591e4876efa00c85612124977436be7e9ee1770880dda7e585ed8`  
+		Last Modified: Wed, 23 Apr 2025 16:47:18 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de45870e9153f40e6d252351ad5fbdc89373f1ca90c2dc2948ad5b2a97750bfd`  
-		Last Modified: Wed, 09 Apr 2025 04:26:37 GMT  
+	-	`sha256:1d9e905b5a57971c0230577cb5b1721d56d5f0c41d251f3c65346d664f2abdbd`  
+		Last Modified: Wed, 23 Apr 2025 16:47:18 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c13552da0772fbf58d53a68b369a1a47dd671536609f0293b3cdb422c17c96f`  
-		Last Modified: Wed, 09 Apr 2025 07:27:24 GMT  
-		Size: 138.0 B  
+	-	`sha256:724237e7464c729e7b44cf0819581aeeaca0326d26ada22784149a497fb810d3`  
+		Last Modified: Wed, 23 Apr 2025 18:10:53 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:753f129083d4c580336b4997db27d7ae210ef25c9d126bd3025afd5ed83bd9ce`  
-		Last Modified: Wed, 09 Apr 2025 20:11:54 GMT  
-		Size: 13.8 MB (13844847 bytes)  
+	-	`sha256:d7d5a06be48768d569f448b65a14b2e850b45b7b142b39de09385dd1051c8d3b`  
+		Last Modified: Wed, 23 Apr 2025 18:10:54 GMT  
+		Size: 13.8 MB (13844903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fecbb171a24e72cbcef29b17061eb7b1114e49e65c77655120ae849676cbc0f0`  
-		Last Modified: Wed, 09 Apr 2025 20:11:54 GMT  
-		Size: 232.5 KB (232491 bytes)  
+	-	`sha256:d189132b1c7574d6a7e86c67473a15d071298e92170132a7122f1e5c90e8cc64`  
+		Last Modified: Wed, 23 Apr 2025 18:10:53 GMT  
+		Size: 232.5 KB (232525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -701,23 +701,23 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:11-jre21-temurin` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:7419d0eb6861f4ac5c76011c8937e7a1ba7dce1e549e7059b2cfa6a36316f4e4
+$ docker pull tomcat@sha256:302ede60ae09b0ca99bd403a58668886588c6c00d29b3ce761667694e775fa0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3211516 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b8bf2d18486faad2e161368ad2c63fd126e7a97ef496bd4b595b7b6cc35779e`
+-	Image ID: `sha256:e4a4b3fb2c5f42999f0f3ad8ed0bc56858cbc214bf973551f606234f92dc36e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f002f7f471fc46b273363d8f16ad259279f38cbaf728ded59553d71be7d2e92`  
-		Last Modified: Wed, 09 Apr 2025 20:11:54 GMT  
+	-	`sha256:34fdcc81f8ceb263ecd979b69a757d5f15c4d3dfdb4953819039e782fe38aa6e`  
+		Last Modified: Wed, 23 Apr 2025 18:10:53 GMT  
 		Size: 3.2 MB (3187444 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:651da8d9f45c26bec9cc1de3c5ba155efe09d6ade76892857ed66e0be138a8dd`  
-		Last Modified: Wed, 09 Apr 2025 20:11:54 GMT  
+	-	`sha256:91543dc8d5982f3a80ce547789cf85fdbe6dee50e74b96a7be0dc9f432b7645d`  
+		Last Modified: Wed, 23 Apr 2025 18:10:53 GMT  
 		Size: 24.1 KB (24072 bytes)  
 		MIME: application/vnd.in-toto+json
