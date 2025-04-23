@@ -301,9 +301,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ca-certificates=20241223
-'http://http.debian.net/debian/pool/main/c/ca-certificates/ca-certificates_20241223.dsc' ca-certificates_20241223.dsc 1766 SHA256:8b17779dedec18ad64b97ec99dd3b8f10ec06698e73242dbe7b8d992bd803a55
-'http://http.debian.net/debian/pool/main/c/ca-certificates/ca-certificates_20241223.tar.xz' ca-certificates_20241223.tar.xz 278044 SHA256:dd8286d0a9dd35c756fea5f1df3fed1510fb891f376903891b003cd9b1ad7e03
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20241223.dsc' ca-certificates_20241223.dsc 1766 SHA256:8b17779dedec18ad64b97ec99dd3b8f10ec06698e73242dbe7b8d992bd803a55
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20241223.tar.xz' ca-certificates_20241223.tar.xz 278044 SHA256:dd8286d0a9dd35c756fea5f1df3fed1510fb891f376903891b003cd9b1ad7e03
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ca-certificates/20241223/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20241223/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20241223/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.18.4-1`
 
@@ -614,11 +620,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris diffutils=1:3.10-3
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10-3.dsc' diffutils_3.10-3.dsc 1851 SHA256:f8d39747fc6bfe89d761e168f521f75239b72a9361776b02fd4a870f0c077377
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz' diffutils_3.10.orig.tar.xz 1624240 SHA256:90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc' diffutils_3.10.orig.tar.xz.asc 833 SHA256:a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10-3.debian.tar.xz' diffutils_3.10-3.debian.tar.xz 14284 SHA256:95fc3956547b30ef2a7bf35b682faa1b6500695d2b05babcfc37a6fcefefb185
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-3.dsc' diffutils_3.10-3.dsc 1851 SHA256:f8d39747fc6bfe89d761e168f521f75239b72a9361776b02fd4a870f0c077377
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz' diffutils_3.10.orig.tar.xz 1624240 SHA256:90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc' diffutils_3.10.orig.tar.xz.asc 833 SHA256:a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-3.debian.tar.xz' diffutils_3.10-3.debian.tar.xz 14284 SHA256:95fc3956547b30ef2a7bf35b682faa1b6500695d2b05babcfc37a6fcefefb185
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/diffutils/1:3.10-3/ (for browsing the source)
+- https://sources.debian.net/src/diffutils/1:3.10-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/diffutils/1:3.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.22.18`
 
@@ -3317,9 +3329,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sensible-utils=0.0.24
-'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.24.dsc' sensible-utils_0.0.24.dsc 1743 SHA256:f84ac7cccca8e0f3f9e5c0d5173c7d1f22afdc0a98210120d1d35a92b4baf9df
-'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.24.tar.xz' sensible-utils_0.0.24.tar.xz 73568 SHA256:620602b900bad2b9856556a7895ea146110f602cd526a1cc03068a0bc9542803
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.24.dsc' sensible-utils_0.0.24.dsc 1743 SHA256:f84ac7cccca8e0f3f9e5c0d5173c7d1f22afdc0a98210120d1d35a92b4baf9df
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.24.tar.xz' sensible-utils_0.0.24.tar.xz 73568 SHA256:620602b900bad2b9856556a7895ea146110f602cd526a1cc03068a0bc9542803
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sensible-utils/0.0.24/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.24/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.24/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.17.3-3`
 
