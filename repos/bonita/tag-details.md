@@ -23,7 +23,7 @@
 ## `bonita:10.2`
 
 ```console
-$ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f3462ac52351a29e
+$ docker pull bonita@sha256:f78da68bfaf041f9fe3576e93432c323a78294d3d30f929111a7bd70ffbf9870
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34,13 +34,13 @@ $ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f346
 ### `bonita:10.2` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:4f590e8340bc6fbb05798bfe7ae5f0f272eec52b2194d67f45f02dcb534085e9
+$ docker pull bonita@sha256:03716f55afa4432bcd24e7e6aec3524cca8d9d544e748d3bc127cfc5b57124e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.8 MB (187821017 bytes)**  
+-	Total Size: **187.8 MB (187832757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7f800b63dc06000cb37aef6303d1b99195db2980f2f0e56a8e27a3249552b8`
+-	Image ID: `sha256:d87f013e76336896bb6823f5e23d6a706d837367c952690ed7c2daf678514893`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
@@ -58,9 +58,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
-ENV JAVA_VERSION=jdk-17.0.14+7
+ENV JAVA_VERSION=jdk-17.0.15+6
 # Tue, 15 Oct 2024 08:31:30 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='9dcc53a30676692e604571a6e0bd13ac0c1b15f4bc2b78d19f88bd316075f84a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='38c90337ca2471085f9292d24bec75413b4e56c7826ef25e150a40cc2f727e36';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
@@ -146,79 +146,79 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6cc66ba0a96819420d8faf6f4c52e8d945d6b63a95860584022a8a19e6e7826`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 16.2 MB (16175644 bytes)  
+	-	`sha256:d66c12a520b9eace736b92bf41240c7483e040e711ff64a857f45361e4321637`  
+		Last Modified: Wed, 23 Apr 2025 16:31:54 GMT  
+		Size: 16.2 MB (16176522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2830fdce3f8490cef419b2649bc04882f36bbb72656a0e08c4b4b851191b46f`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 46.6 MB (46619385 bytes)  
+	-	`sha256:aa898b139fbf654b3535786328985e65debbedfbf22748da2ed23b70c2ce50ab`  
+		Last Modified: Wed, 23 Apr 2025 16:31:55 GMT  
+		Size: 46.6 MB (46628593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d359e0dcce06e171a793aefe4843a8de78a18e661c1037ef36dfd3cce3e4852d`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 129.0 B  
+	-	`sha256:e6744199aa66ab985e37e72924f1568a6751afa2c508c42a1b3b945f3a8850a7`  
+		Last Modified: Wed, 23 Apr 2025 16:31:52 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51631fe5dc907fa7751b1ea513749d84083935f3b79726f22e765131db943325`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:b4dce0e52e6a8d74608859f62a4527e9b0c1c8fc882eadac6fa9076824efffb5`  
+		Last Modified: Wed, 23 Apr 2025 16:31:53 GMT  
+		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aecb00b45addf0adf25df4741ec907c2d5248ccc343e2d8b3f930e009db677a7`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.9 MB (1855214 bytes)  
+	-	`sha256:ab6504bc4e9f07ac0b81caab4b6ec7aed50d2682581c41f84db6e6928410b706`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 1.9 MB (1856877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f4bba9a8b0c9e35e9891885a780dd4b94347863afeee368957aa0cef56f60c`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 123.0 B  
+	-	`sha256:32a19673c4d4788726733216e68d51e36938a58f93fbc98334027a349cbf925f`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7f3ca3297a9ed12be94f81a1378413242276e438b2e0e91983f6326bd865448`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 944.0 B  
+	-	`sha256:63d0a7ad3119b22324da0fc5eab9e87a52a22a72f2ac7c6a5fa3bbf6b684189b`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:102a82a150eb2e63b4462bb6f8f56464ddbb723d590c7e4c785497b03b846f68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:7a82923e7a7f3bfa08dc97b41204d3a2427b87afac72f83e4017c9cec6280dd9`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddacd56a6f2da123bd4e056e677a86effd63ce5f1c8d07a706b5415c8030c1de`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 3.7 KB (3710 bytes)  
+	-	`sha256:7e4eef4d588f0ca4a9c73096ae2e4d43a774b7835f464ada58785c7920347094`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 3.7 KB (3708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4251ca8b51619fc69f65b5a9daaa38869a261e0a013903d9360cd12bfe644c45`  
-		Last Modified: Fri, 14 Feb 2025 20:39:09 GMT  
-		Size: 119.5 MB (119515340 bytes)  
+	-	`sha256:f7c8937454b3f41daaae41dcefd13423ea84ba6a99773a8ce156de5f7360ad2e`  
+		Last Modified: Wed, 23 Apr 2025 17:14:56 GMT  
+		Size: 119.5 MB (119515338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f32d0428af9a86a974af6ec7139de25179633359f9187379931f46ffc96de68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 5.9 KB (5885 bytes)  
+	-	`sha256:a5aad1d4acb1f5707afc7bd7014e37483c508f1cc78e7e031b99489feb26f510`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 5.9 KB (5884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:10.2` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:58abc6523a7aec7a4b61cd23df18c4c7ae611c042c1e7e605ed7cf034ef3c817
+$ docker pull bonita@sha256:8a8f80ec47a925d312e33df290002e033d2bd74c2a40cd8109df78accbbce1cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1294787 bytes)**  
+-	Total Size: **1.3 MB (1295409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62fd26982a9b37a9c0e07623d1372adac34087cf1ad89c8d1de459a88b435a31`
+-	Image ID: `sha256:49fe27430126981eb5f581078d0ce825f285f2b301436c29ea958b2047658f1d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:370f6f956e0a3f4b22ad7f78bea4cd46ca9e581988ce05c4541fb55b1bc6dca9`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.3 MB (1265823 bytes)  
+	-	`sha256:833952e789216d24fed307d6e1f346e48cd0d367958fa2dd717751dda74d79c0`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 1.3 MB (1266445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11a02b4899680bf7cc81a79ad506f66875063b4de182dbf2d223da113ff943bf`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:d0c88aacba837536a95f96cf2598108c46fa572442954484d18ca6f6490f2a47`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `bonita:10.2.0`
 
 ```console
-$ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f3462ac52351a29e
+$ docker pull bonita@sha256:f78da68bfaf041f9fe3576e93432c323a78294d3d30f929111a7bd70ffbf9870
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -229,13 +229,13 @@ $ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f346
 ### `bonita:10.2.0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:4f590e8340bc6fbb05798bfe7ae5f0f272eec52b2194d67f45f02dcb534085e9
+$ docker pull bonita@sha256:03716f55afa4432bcd24e7e6aec3524cca8d9d544e748d3bc127cfc5b57124e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.8 MB (187821017 bytes)**  
+-	Total Size: **187.8 MB (187832757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7f800b63dc06000cb37aef6303d1b99195db2980f2f0e56a8e27a3249552b8`
+-	Image ID: `sha256:d87f013e76336896bb6823f5e23d6a706d837367c952690ed7c2daf678514893`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
@@ -253,9 +253,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
-ENV JAVA_VERSION=jdk-17.0.14+7
+ENV JAVA_VERSION=jdk-17.0.15+6
 # Tue, 15 Oct 2024 08:31:30 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='9dcc53a30676692e604571a6e0bd13ac0c1b15f4bc2b78d19f88bd316075f84a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='38c90337ca2471085f9292d24bec75413b4e56c7826ef25e150a40cc2f727e36';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
@@ -341,72 +341,72 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6cc66ba0a96819420d8faf6f4c52e8d945d6b63a95860584022a8a19e6e7826`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 16.2 MB (16175644 bytes)  
+	-	`sha256:d66c12a520b9eace736b92bf41240c7483e040e711ff64a857f45361e4321637`  
+		Last Modified: Wed, 23 Apr 2025 16:31:54 GMT  
+		Size: 16.2 MB (16176522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2830fdce3f8490cef419b2649bc04882f36bbb72656a0e08c4b4b851191b46f`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 46.6 MB (46619385 bytes)  
+	-	`sha256:aa898b139fbf654b3535786328985e65debbedfbf22748da2ed23b70c2ce50ab`  
+		Last Modified: Wed, 23 Apr 2025 16:31:55 GMT  
+		Size: 46.6 MB (46628593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d359e0dcce06e171a793aefe4843a8de78a18e661c1037ef36dfd3cce3e4852d`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 129.0 B  
+	-	`sha256:e6744199aa66ab985e37e72924f1568a6751afa2c508c42a1b3b945f3a8850a7`  
+		Last Modified: Wed, 23 Apr 2025 16:31:52 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51631fe5dc907fa7751b1ea513749d84083935f3b79726f22e765131db943325`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:b4dce0e52e6a8d74608859f62a4527e9b0c1c8fc882eadac6fa9076824efffb5`  
+		Last Modified: Wed, 23 Apr 2025 16:31:53 GMT  
+		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aecb00b45addf0adf25df4741ec907c2d5248ccc343e2d8b3f930e009db677a7`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.9 MB (1855214 bytes)  
+	-	`sha256:ab6504bc4e9f07ac0b81caab4b6ec7aed50d2682581c41f84db6e6928410b706`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 1.9 MB (1856877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f4bba9a8b0c9e35e9891885a780dd4b94347863afeee368957aa0cef56f60c`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 123.0 B  
+	-	`sha256:32a19673c4d4788726733216e68d51e36938a58f93fbc98334027a349cbf925f`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7f3ca3297a9ed12be94f81a1378413242276e438b2e0e91983f6326bd865448`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 944.0 B  
+	-	`sha256:63d0a7ad3119b22324da0fc5eab9e87a52a22a72f2ac7c6a5fa3bbf6b684189b`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:102a82a150eb2e63b4462bb6f8f56464ddbb723d590c7e4c785497b03b846f68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:7a82923e7a7f3bfa08dc97b41204d3a2427b87afac72f83e4017c9cec6280dd9`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddacd56a6f2da123bd4e056e677a86effd63ce5f1c8d07a706b5415c8030c1de`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 3.7 KB (3710 bytes)  
+	-	`sha256:7e4eef4d588f0ca4a9c73096ae2e4d43a774b7835f464ada58785c7920347094`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 3.7 KB (3708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4251ca8b51619fc69f65b5a9daaa38869a261e0a013903d9360cd12bfe644c45`  
-		Last Modified: Fri, 14 Feb 2025 20:39:09 GMT  
-		Size: 119.5 MB (119515340 bytes)  
+	-	`sha256:f7c8937454b3f41daaae41dcefd13423ea84ba6a99773a8ce156de5f7360ad2e`  
+		Last Modified: Wed, 23 Apr 2025 17:14:56 GMT  
+		Size: 119.5 MB (119515338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f32d0428af9a86a974af6ec7139de25179633359f9187379931f46ffc96de68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 5.9 KB (5885 bytes)  
+	-	`sha256:a5aad1d4acb1f5707afc7bd7014e37483c508f1cc78e7e031b99489feb26f510`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 5.9 KB (5884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:10.2.0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:58abc6523a7aec7a4b61cd23df18c4c7ae611c042c1e7e605ed7cf034ef3c817
+$ docker pull bonita@sha256:8a8f80ec47a925d312e33df290002e033d2bd74c2a40cd8109df78accbbce1cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1294787 bytes)**  
+-	Total Size: **1.3 MB (1295409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62fd26982a9b37a9c0e07623d1372adac34087cf1ad89c8d1de459a88b435a31`
+-	Image ID: `sha256:49fe27430126981eb5f581078d0ce825f285f2b301436c29ea958b2047658f1d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:370f6f956e0a3f4b22ad7f78bea4cd46ca9e581988ce05c4541fb55b1bc6dca9`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.3 MB (1265823 bytes)  
+	-	`sha256:833952e789216d24fed307d6e1f346e48cd0d367958fa2dd717751dda74d79c0`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 1.3 MB (1266445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11a02b4899680bf7cc81a79ad506f66875063b4de182dbf2d223da113ff943bf`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:d0c88aacba837536a95f96cf2598108c46fa572442954484d18ca6f6490f2a47`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3239,7 +3239,7 @@ $ docker pull bonita@sha256:411b3def57668c269d506cfdfd2069dc045f9417c6d5816010f0
 ## `bonita:2024.3`
 
 ```console
-$ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f3462ac52351a29e
+$ docker pull bonita@sha256:f78da68bfaf041f9fe3576e93432c323a78294d3d30f929111a7bd70ffbf9870
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3250,13 +3250,13 @@ $ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f346
 ### `bonita:2024.3` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:4f590e8340bc6fbb05798bfe7ae5f0f272eec52b2194d67f45f02dcb534085e9
+$ docker pull bonita@sha256:03716f55afa4432bcd24e7e6aec3524cca8d9d544e748d3bc127cfc5b57124e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.8 MB (187821017 bytes)**  
+-	Total Size: **187.8 MB (187832757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7f800b63dc06000cb37aef6303d1b99195db2980f2f0e56a8e27a3249552b8`
+-	Image ID: `sha256:d87f013e76336896bb6823f5e23d6a706d837367c952690ed7c2daf678514893`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
@@ -3274,9 +3274,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
-ENV JAVA_VERSION=jdk-17.0.14+7
+ENV JAVA_VERSION=jdk-17.0.15+6
 # Tue, 15 Oct 2024 08:31:30 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='9dcc53a30676692e604571a6e0bd13ac0c1b15f4bc2b78d19f88bd316075f84a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='38c90337ca2471085f9292d24bec75413b4e56c7826ef25e150a40cc2f727e36';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
@@ -3362,79 +3362,79 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6cc66ba0a96819420d8faf6f4c52e8d945d6b63a95860584022a8a19e6e7826`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 16.2 MB (16175644 bytes)  
+	-	`sha256:d66c12a520b9eace736b92bf41240c7483e040e711ff64a857f45361e4321637`  
+		Last Modified: Wed, 23 Apr 2025 16:31:54 GMT  
+		Size: 16.2 MB (16176522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2830fdce3f8490cef419b2649bc04882f36bbb72656a0e08c4b4b851191b46f`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 46.6 MB (46619385 bytes)  
+	-	`sha256:aa898b139fbf654b3535786328985e65debbedfbf22748da2ed23b70c2ce50ab`  
+		Last Modified: Wed, 23 Apr 2025 16:31:55 GMT  
+		Size: 46.6 MB (46628593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d359e0dcce06e171a793aefe4843a8de78a18e661c1037ef36dfd3cce3e4852d`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 129.0 B  
+	-	`sha256:e6744199aa66ab985e37e72924f1568a6751afa2c508c42a1b3b945f3a8850a7`  
+		Last Modified: Wed, 23 Apr 2025 16:31:52 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51631fe5dc907fa7751b1ea513749d84083935f3b79726f22e765131db943325`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:b4dce0e52e6a8d74608859f62a4527e9b0c1c8fc882eadac6fa9076824efffb5`  
+		Last Modified: Wed, 23 Apr 2025 16:31:53 GMT  
+		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aecb00b45addf0adf25df4741ec907c2d5248ccc343e2d8b3f930e009db677a7`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.9 MB (1855214 bytes)  
+	-	`sha256:ab6504bc4e9f07ac0b81caab4b6ec7aed50d2682581c41f84db6e6928410b706`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 1.9 MB (1856877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f4bba9a8b0c9e35e9891885a780dd4b94347863afeee368957aa0cef56f60c`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 123.0 B  
+	-	`sha256:32a19673c4d4788726733216e68d51e36938a58f93fbc98334027a349cbf925f`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7f3ca3297a9ed12be94f81a1378413242276e438b2e0e91983f6326bd865448`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 944.0 B  
+	-	`sha256:63d0a7ad3119b22324da0fc5eab9e87a52a22a72f2ac7c6a5fa3bbf6b684189b`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:102a82a150eb2e63b4462bb6f8f56464ddbb723d590c7e4c785497b03b846f68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:7a82923e7a7f3bfa08dc97b41204d3a2427b87afac72f83e4017c9cec6280dd9`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddacd56a6f2da123bd4e056e677a86effd63ce5f1c8d07a706b5415c8030c1de`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 3.7 KB (3710 bytes)  
+	-	`sha256:7e4eef4d588f0ca4a9c73096ae2e4d43a774b7835f464ada58785c7920347094`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 3.7 KB (3708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4251ca8b51619fc69f65b5a9daaa38869a261e0a013903d9360cd12bfe644c45`  
-		Last Modified: Fri, 14 Feb 2025 20:39:09 GMT  
-		Size: 119.5 MB (119515340 bytes)  
+	-	`sha256:f7c8937454b3f41daaae41dcefd13423ea84ba6a99773a8ce156de5f7360ad2e`  
+		Last Modified: Wed, 23 Apr 2025 17:14:56 GMT  
+		Size: 119.5 MB (119515338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f32d0428af9a86a974af6ec7139de25179633359f9187379931f46ffc96de68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 5.9 KB (5885 bytes)  
+	-	`sha256:a5aad1d4acb1f5707afc7bd7014e37483c508f1cc78e7e031b99489feb26f510`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 5.9 KB (5884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2024.3` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:58abc6523a7aec7a4b61cd23df18c4c7ae611c042c1e7e605ed7cf034ef3c817
+$ docker pull bonita@sha256:8a8f80ec47a925d312e33df290002e033d2bd74c2a40cd8109df78accbbce1cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1294787 bytes)**  
+-	Total Size: **1.3 MB (1295409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62fd26982a9b37a9c0e07623d1372adac34087cf1ad89c8d1de459a88b435a31`
+-	Image ID: `sha256:49fe27430126981eb5f581078d0ce825f285f2b301436c29ea958b2047658f1d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:370f6f956e0a3f4b22ad7f78bea4cd46ca9e581988ce05c4541fb55b1bc6dca9`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.3 MB (1265823 bytes)  
+	-	`sha256:833952e789216d24fed307d6e1f346e48cd0d367958fa2dd717751dda74d79c0`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 1.3 MB (1266445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11a02b4899680bf7cc81a79ad506f66875063b4de182dbf2d223da113ff943bf`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:d0c88aacba837536a95f96cf2598108c46fa572442954484d18ca6f6490f2a47`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `bonita:2024.3-u0`
 
 ```console
-$ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f3462ac52351a29e
+$ docker pull bonita@sha256:f78da68bfaf041f9fe3576e93432c323a78294d3d30f929111a7bd70ffbf9870
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3445,13 +3445,13 @@ $ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f346
 ### `bonita:2024.3-u0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:4f590e8340bc6fbb05798bfe7ae5f0f272eec52b2194d67f45f02dcb534085e9
+$ docker pull bonita@sha256:03716f55afa4432bcd24e7e6aec3524cca8d9d544e748d3bc127cfc5b57124e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.8 MB (187821017 bytes)**  
+-	Total Size: **187.8 MB (187832757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7f800b63dc06000cb37aef6303d1b99195db2980f2f0e56a8e27a3249552b8`
+-	Image ID: `sha256:d87f013e76336896bb6823f5e23d6a706d837367c952690ed7c2daf678514893`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
@@ -3469,9 +3469,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
-ENV JAVA_VERSION=jdk-17.0.14+7
+ENV JAVA_VERSION=jdk-17.0.15+6
 # Tue, 15 Oct 2024 08:31:30 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='9dcc53a30676692e604571a6e0bd13ac0c1b15f4bc2b78d19f88bd316075f84a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='38c90337ca2471085f9292d24bec75413b4e56c7826ef25e150a40cc2f727e36';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
@@ -3557,72 +3557,72 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6cc66ba0a96819420d8faf6f4c52e8d945d6b63a95860584022a8a19e6e7826`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 16.2 MB (16175644 bytes)  
+	-	`sha256:d66c12a520b9eace736b92bf41240c7483e040e711ff64a857f45361e4321637`  
+		Last Modified: Wed, 23 Apr 2025 16:31:54 GMT  
+		Size: 16.2 MB (16176522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2830fdce3f8490cef419b2649bc04882f36bbb72656a0e08c4b4b851191b46f`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 46.6 MB (46619385 bytes)  
+	-	`sha256:aa898b139fbf654b3535786328985e65debbedfbf22748da2ed23b70c2ce50ab`  
+		Last Modified: Wed, 23 Apr 2025 16:31:55 GMT  
+		Size: 46.6 MB (46628593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d359e0dcce06e171a793aefe4843a8de78a18e661c1037ef36dfd3cce3e4852d`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 129.0 B  
+	-	`sha256:e6744199aa66ab985e37e72924f1568a6751afa2c508c42a1b3b945f3a8850a7`  
+		Last Modified: Wed, 23 Apr 2025 16:31:52 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51631fe5dc907fa7751b1ea513749d84083935f3b79726f22e765131db943325`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:b4dce0e52e6a8d74608859f62a4527e9b0c1c8fc882eadac6fa9076824efffb5`  
+		Last Modified: Wed, 23 Apr 2025 16:31:53 GMT  
+		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aecb00b45addf0adf25df4741ec907c2d5248ccc343e2d8b3f930e009db677a7`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.9 MB (1855214 bytes)  
+	-	`sha256:ab6504bc4e9f07ac0b81caab4b6ec7aed50d2682581c41f84db6e6928410b706`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 1.9 MB (1856877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f4bba9a8b0c9e35e9891885a780dd4b94347863afeee368957aa0cef56f60c`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 123.0 B  
+	-	`sha256:32a19673c4d4788726733216e68d51e36938a58f93fbc98334027a349cbf925f`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7f3ca3297a9ed12be94f81a1378413242276e438b2e0e91983f6326bd865448`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 944.0 B  
+	-	`sha256:63d0a7ad3119b22324da0fc5eab9e87a52a22a72f2ac7c6a5fa3bbf6b684189b`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:102a82a150eb2e63b4462bb6f8f56464ddbb723d590c7e4c785497b03b846f68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:7a82923e7a7f3bfa08dc97b41204d3a2427b87afac72f83e4017c9cec6280dd9`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddacd56a6f2da123bd4e056e677a86effd63ce5f1c8d07a706b5415c8030c1de`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 3.7 KB (3710 bytes)  
+	-	`sha256:7e4eef4d588f0ca4a9c73096ae2e4d43a774b7835f464ada58785c7920347094`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 3.7 KB (3708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4251ca8b51619fc69f65b5a9daaa38869a261e0a013903d9360cd12bfe644c45`  
-		Last Modified: Fri, 14 Feb 2025 20:39:09 GMT  
-		Size: 119.5 MB (119515340 bytes)  
+	-	`sha256:f7c8937454b3f41daaae41dcefd13423ea84ba6a99773a8ce156de5f7360ad2e`  
+		Last Modified: Wed, 23 Apr 2025 17:14:56 GMT  
+		Size: 119.5 MB (119515338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f32d0428af9a86a974af6ec7139de25179633359f9187379931f46ffc96de68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 5.9 KB (5885 bytes)  
+	-	`sha256:a5aad1d4acb1f5707afc7bd7014e37483c508f1cc78e7e031b99489feb26f510`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 5.9 KB (5884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2024.3-u0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:58abc6523a7aec7a4b61cd23df18c4c7ae611c042c1e7e605ed7cf034ef3c817
+$ docker pull bonita@sha256:8a8f80ec47a925d312e33df290002e033d2bd74c2a40cd8109df78accbbce1cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1294787 bytes)**  
+-	Total Size: **1.3 MB (1295409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62fd26982a9b37a9c0e07623d1372adac34087cf1ad89c8d1de459a88b435a31`
+-	Image ID: `sha256:49fe27430126981eb5f581078d0ce825f285f2b301436c29ea958b2047658f1d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:370f6f956e0a3f4b22ad7f78bea4cd46ca9e581988ce05c4541fb55b1bc6dca9`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.3 MB (1265823 bytes)  
+	-	`sha256:833952e789216d24fed307d6e1f346e48cd0d367958fa2dd717751dda74d79c0`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 1.3 MB (1266445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11a02b4899680bf7cc81a79ad506f66875063b4de182dbf2d223da113ff943bf`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:d0c88aacba837536a95f96cf2598108c46fa572442954484d18ca6f6490f2a47`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6455,7 +6455,7 @@ $ docker pull bonita@sha256:411b3def57668c269d506cfdfd2069dc045f9417c6d5816010f0
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f3462ac52351a29e
+$ docker pull bonita@sha256:f78da68bfaf041f9fe3576e93432c323a78294d3d30f929111a7bd70ffbf9870
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6466,13 +6466,13 @@ $ docker pull bonita@sha256:134ee951ab6e55d45d758e1c0d273ac388d622853f676ed5f346
 ### `bonita:latest` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:4f590e8340bc6fbb05798bfe7ae5f0f272eec52b2194d67f45f02dcb534085e9
+$ docker pull bonita@sha256:03716f55afa4432bcd24e7e6aec3524cca8d9d544e748d3bc127cfc5b57124e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.8 MB (187821017 bytes)**  
+-	Total Size: **187.8 MB (187832757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7f800b63dc06000cb37aef6303d1b99195db2980f2f0e56a8e27a3249552b8`
+-	Image ID: `sha256:d87f013e76336896bb6823f5e23d6a706d837367c952690ed7c2daf678514893`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
@@ -6490,9 +6490,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
-ENV JAVA_VERSION=jdk-17.0.14+7
+ENV JAVA_VERSION=jdk-17.0.15+6
 # Tue, 15 Oct 2024 08:31:30 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='9dcc53a30676692e604571a6e0bd13ac0c1b15f4bc2b78d19f88bd316075f84a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='38c90337ca2471085f9292d24bec75413b4e56c7826ef25e150a40cc2f727e36';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Tue, 15 Oct 2024 08:31:30 GMT
@@ -6578,71 +6578,71 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6cc66ba0a96819420d8faf6f4c52e8d945d6b63a95860584022a8a19e6e7826`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 16.2 MB (16175644 bytes)  
+	-	`sha256:d66c12a520b9eace736b92bf41240c7483e040e711ff64a857f45361e4321637`  
+		Last Modified: Wed, 23 Apr 2025 16:31:54 GMT  
+		Size: 16.2 MB (16176522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2830fdce3f8490cef419b2649bc04882f36bbb72656a0e08c4b4b851191b46f`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 46.6 MB (46619385 bytes)  
+	-	`sha256:aa898b139fbf654b3535786328985e65debbedfbf22748da2ed23b70c2ce50ab`  
+		Last Modified: Wed, 23 Apr 2025 16:31:55 GMT  
+		Size: 46.6 MB (46628593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d359e0dcce06e171a793aefe4843a8de78a18e661c1037ef36dfd3cce3e4852d`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 129.0 B  
+	-	`sha256:e6744199aa66ab985e37e72924f1568a6751afa2c508c42a1b3b945f3a8850a7`  
+		Last Modified: Wed, 23 Apr 2025 16:31:52 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51631fe5dc907fa7751b1ea513749d84083935f3b79726f22e765131db943325`  
-		Last Modified: Fri, 14 Feb 2025 19:25:26 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:b4dce0e52e6a8d74608859f62a4527e9b0c1c8fc882eadac6fa9076824efffb5`  
+		Last Modified: Wed, 23 Apr 2025 16:31:53 GMT  
+		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aecb00b45addf0adf25df4741ec907c2d5248ccc343e2d8b3f930e009db677a7`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.9 MB (1855214 bytes)  
+	-	`sha256:ab6504bc4e9f07ac0b81caab4b6ec7aed50d2682581c41f84db6e6928410b706`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 1.9 MB (1856877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f4bba9a8b0c9e35e9891885a780dd4b94347863afeee368957aa0cef56f60c`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 123.0 B  
+	-	`sha256:32a19673c4d4788726733216e68d51e36938a58f93fbc98334027a349cbf925f`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7f3ca3297a9ed12be94f81a1378413242276e438b2e0e91983f6326bd865448`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 944.0 B  
+	-	`sha256:63d0a7ad3119b22324da0fc5eab9e87a52a22a72f2ac7c6a5fa3bbf6b684189b`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:102a82a150eb2e63b4462bb6f8f56464ddbb723d590c7e4c785497b03b846f68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:7a82923e7a7f3bfa08dc97b41204d3a2427b87afac72f83e4017c9cec6280dd9`  
+		Last Modified: Wed, 23 Apr 2025 17:14:52 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddacd56a6f2da123bd4e056e677a86effd63ce5f1c8d07a706b5415c8030c1de`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 3.7 KB (3710 bytes)  
+	-	`sha256:7e4eef4d588f0ca4a9c73096ae2e4d43a774b7835f464ada58785c7920347094`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 3.7 KB (3708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4251ca8b51619fc69f65b5a9daaa38869a261e0a013903d9360cd12bfe644c45`  
-		Last Modified: Fri, 14 Feb 2025 20:39:09 GMT  
-		Size: 119.5 MB (119515340 bytes)  
+	-	`sha256:f7c8937454b3f41daaae41dcefd13423ea84ba6a99773a8ce156de5f7360ad2e`  
+		Last Modified: Wed, 23 Apr 2025 17:14:56 GMT  
+		Size: 119.5 MB (119515338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f32d0428af9a86a974af6ec7139de25179633359f9187379931f46ffc96de68`  
-		Last Modified: Fri, 14 Feb 2025 20:39:07 GMT  
-		Size: 5.9 KB (5885 bytes)  
+	-	`sha256:a5aad1d4acb1f5707afc7bd7014e37483c508f1cc78e7e031b99489feb26f510`  
+		Last Modified: Wed, 23 Apr 2025 17:14:53 GMT  
+		Size: 5.9 KB (5884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:latest` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:58abc6523a7aec7a4b61cd23df18c4c7ae611c042c1e7e605ed7cf034ef3c817
+$ docker pull bonita@sha256:8a8f80ec47a925d312e33df290002e033d2bd74c2a40cd8109df78accbbce1cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1294787 bytes)**  
+-	Total Size: **1.3 MB (1295409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62fd26982a9b37a9c0e07623d1372adac34087cf1ad89c8d1de459a88b435a31`
+-	Image ID: `sha256:49fe27430126981eb5f581078d0ce825f285f2b301436c29ea958b2047658f1d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:370f6f956e0a3f4b22ad7f78bea4cd46ca9e581988ce05c4541fb55b1bc6dca9`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
-		Size: 1.3 MB (1265823 bytes)  
+	-	`sha256:833952e789216d24fed307d6e1f346e48cd0d367958fa2dd717751dda74d79c0`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Size: 1.3 MB (1266445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11a02b4899680bf7cc81a79ad506f66875063b4de182dbf2d223da113ff943bf`  
-		Last Modified: Fri, 14 Feb 2025 20:39:06 GMT  
+	-	`sha256:d0c88aacba837536a95f96cf2598108c46fa572442954484d18ca6f6490f2a47`  
+		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
