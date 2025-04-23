@@ -1,9 +1,9 @@
-# `nextcloud:29.0.14-apache`
+# `nextcloud:29.0.16-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:08d9356ee0e7ddb947fbf98e6501873ba52cc95d0c9918d94c12dcc08deb2aed`
-- Created: `2025-03-19T22:47:36Z`
+- Image ID: `sha256:da6193bf1a6218e829090582d579159b35fe536d170aba6c1ffcaaeba7f65a2e`
+- Created: `2025-04-18T13:37:27Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,12 +23,11 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc`
   - `PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91`
-  - `IMAGICK_COMMIT_HASH=d7d3c24af1b4f599897408f1714600b69a56473b`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
   - `APACHE_BODY_LIMIT=1073741824`
-  - `NEXTCLOUD_VERSION=29.0.14`
+  - `NEXTCLOUD_VERSION=29.0.16`
 
 ## `dpkg` (`.deb`-based packages)
 

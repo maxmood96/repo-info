@@ -1,10 +1,10 @@
-# `nextcloud:31.0.2-fpm-alpine`
+# `nextcloud:31.0.4-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:90aceabed3e929920921ed6bc6a06017b58cb6ea685df41f39136165f46de99e`
-- Created: `2025-03-19T22:47:36Z`
-- Virtual Size: ~ 1.03 Gb  
+- Image ID: `sha256:bd34c288c0f174524e84df875a42377004b65902664abab400a4e8c907c96272`
+- Created: `2025-04-18T15:01:40Z`
+- Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -21,11 +21,10 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.20.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.20.tar.xz.asc`
   - `PHP_SHA256=f15914e071b5bddaf1475b5f2ba68107e8b8846655f9e89690fb7cd410b0db6c`
-  - `IMAGICK_COMMIT_HASH=d7d3c24af1b4f599897408f1714600b69a56473b`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=31.0.2`
+  - `NEXTCLOUD_VERSION=31.0.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -814,16 +813,16 @@ MIT
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.40.4-r0 description:
+libblkid-2.40.4-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.40.4-r0 webpage:
+libblkid-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.40.4-r0 installed size:
+libblkid-2.40.4-r1 installed size:
 190 KiB
 
-libblkid-2.40.4-r0 license:
+libblkid-2.40.4-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1154,16 +1153,16 @@ BSD-3-Clause
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.40.4-r0 description:
+libmount-2.40.4-r1 description:
 Block device identification library from util-linux
 
-libmount-2.40.4-r0 webpage:
+libmount-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.40.4-r0 installed size:
+libmount-2.40.4-r1 installed size:
 262 KiB
 
-libmount-2.40.4-r0 license:
+libmount-2.40.4-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1953,16 +1952,16 @@ GPL-2.0-or-later
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```

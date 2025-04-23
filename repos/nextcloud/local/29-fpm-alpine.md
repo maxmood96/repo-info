@@ -1,10 +1,10 @@
-# `nextcloud:29.0.14-fpm-alpine`
+# `nextcloud:29.0.16-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:563f902d7f3b9b8fc1fd93f996c46565ce8aae483146566fb2e4f8117e3b3213`
-- Created: `2025-03-19T22:47:36Z`
-- Virtual Size: ~ 933.24 Mb  
+- Image ID: `sha256:0e37a7f5d4dceab803269cc17429d7fe6df3f983914a366b2f2900b597fb5d99`
+- Created: `2025-04-18T13:37:27Z`
+- Virtual Size: ~ 927.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -21,11 +21,10 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc`
   - `PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91`
-  - `IMAGICK_COMMIT_HASH=d7d3c24af1b4f599897408f1714600b69a56473b`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=29.0.14`
+  - `NEXTCLOUD_VERSION=29.0.16`
 
 ## `apk` (`.apk`-based packages)
 
@@ -814,16 +813,16 @@ MIT
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.40.4-r0 description:
+libblkid-2.40.4-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.40.4-r0 webpage:
+libblkid-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.40.4-r0 installed size:
+libblkid-2.40.4-r1 installed size:
 190 KiB
 
-libblkid-2.40.4-r0 license:
+libblkid-2.40.4-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1154,16 +1153,16 @@ BSD-3-Clause
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.40.4-r0 description:
+libmount-2.40.4-r1 description:
 Block device identification library from util-linux
 
-libmount-2.40.4-r0 webpage:
+libmount-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.40.4-r0 installed size:
+libmount-2.40.4-r1 installed size:
 262 KiB
 
-libmount-2.40.4-r0 license:
+libmount-2.40.4-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1953,16 +1952,16 @@ GPL-2.0-or-later
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
@@ -2038,16 +2037,16 @@ GPL-2.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.3-r0 description:
+xz-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.3-r0 webpage:
+xz-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-5.6.3-r0 installed size:
+xz-5.6.3-r1 installed size:
 150 KiB
 
-xz-5.6.3-r0 license:
+xz-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -2055,16 +2054,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
