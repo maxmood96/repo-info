@@ -1,11 +1,11 @@
 ## `eclipse-temurin:24-jdk`
 
 ```console
-$ docker pull eclipse-temurin@sha256:e24c562541702563d1bcd91fb38a86737be0f0e8dc4919b03c626d53f23d327d
+$ docker pull eclipse-temurin@sha256:0907c8846ee238198f94a5679475858165a248823c691f947a27bc08f105e177
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 13
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
@@ -18,53 +18,52 @@ $ docker pull eclipse-temurin@sha256:e24c562541702563d1bcd91fb38a86737be0f0e8dc4
 	-	unknown; unknown
 	-	windows version 10.0.26100.3781; amd64
 	-	windows version 10.0.20348.3566; amd64
-	-	windows version 10.0.17763.7249; amd64
 
 ### `eclipse-temurin:24-jdk` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:0433ea598644e3cee68e0fcea850d2dd578e8ab9a0d6a13f3caba5316450f9e0
+$ docker pull eclipse-temurin@sha256:4e5664f758bc673be8d820f72415174bf525bec2e285277451afae5ce3c80d80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.0 MB (141003486 bytes)**  
+-	Total Size: **141.0 MB (141007677 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ce266cb0c99b2ee9dd0506f154f2f678321563ebb2f9820de3cdcb6f592e8d6`
+-	Image ID: `sha256:bd89625460b70ded19655295ac86cfeee04bf0c1d3e95ce4ada7fcf5b1e05d99`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 ARG RELEASE
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:43:12 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:43:14 GMT
 ADD file:1d7c45546e94b90e941c5bf5c7a5d415d7b868581ad96171d4beb76caa8ab683 in / 
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:43:15 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Tue, 25 Mar 2025 17:58:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='c340dee97b6aa215d248bc196dcac5b56e7be9b5c5d45e691344d40d5d0b171d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_linux_hotspot_24_36.tar.gz';          ;;        arm64)          ESUM='18071047526ab4b53131f9bb323e8703485ae37fcb2f2c5ef0f1b7bab66d1b94';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_linux_hotspot_24_36.tar.gz';          ;;        ppc64el)          ESUM='3a5641ab862a2bbae56886d4ec47f735052780bfe124df7aea2ca40e0f973b5a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_ppc64le_linux_hotspot_24_36.tar.gz';          ;;        riscv64)          ESUM='a1d993ab0b4b80101ec2e2452bdd37735572b734c255576a47c5130eab55f09a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_riscv64_linux_hotspot_24_36.tar.gz';          ;;        s390x)          ESUM='e3149dc2ab1db0bdf86ab8d27a5ad67e32e30c829cef8a02628d36e5781f44ff';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_s390x_linux_hotspot_24_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='78832cb5ea4074f2215cde0d01d6192d09c87636fc24b36647aea61fb23b8272';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz';          ;;        arm64)          ESUM='a598260e340028d9b2383c23df16aa286769a661bd3bf28a52e8c1a5774b1110';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz';          ;;        ppc64el)          ESUM='770e7e506d5ea3baf6c4c9004a82648e29508a1c731d8425acded34906e91b09';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_ppc64le_linux_hotspot_24.0.1_9.tar.gz';          ;;        riscv64)          ESUM='4e953ec63e141b667e02f7179304c6553cbd13ba94b60dcadd8e45c7f309c89d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_riscv64_linux_hotspot_24.0.1_9.tar.gz';          ;;        s390x)          ESUM='6ff3126ae0a7cff3a25b7590adc441550666750515fd7d6e2d2706b5fc9a1f6f';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_s390x_linux_hotspot_24.0.1_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["jshell"]
 ```
 
@@ -73,92 +72,92 @@ CMD ["jshell"]
 		Last Modified: Tue, 08 Apr 2025 11:53:40 GMT  
 		Size: 29.7 MB (29717652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e424a5f4017c616dd70e460381d8638ca74da30bce4cc759914e06c782aa2b8`  
-		Last Modified: Wed, 09 Apr 2025 01:16:38 GMT  
-		Size: 21.3 MB (21326882 bytes)  
+	-	`sha256:7a1ee5f9484c44a740d1739ff335ea5b24ad0cdd733c8677d319e366fa0a9af1`  
+		Last Modified: Wed, 23 Apr 2025 16:32:18 GMT  
+		Size: 21.3 MB (21326970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77ff1ff9a059dfbbea99287fc827dcbaab5bbb5f34f047e9e13fd5435637e80f`  
-		Last Modified: Wed, 09 Apr 2025 01:16:40 GMT  
-		Size: 90.0 MB (89956637 bytes)  
+	-	`sha256:d7c7f4a2597b01bfc3dbb02f005157ff6f6ff76427c5349be26803d977159e2d`  
+		Last Modified: Wed, 23 Apr 2025 16:32:19 GMT  
+		Size: 90.0 MB (89960742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d21c27cceb184256ee474b28fbafebf0ea555626b31cdfc372746ab7e12839f0`  
-		Last Modified: Wed, 09 Apr 2025 01:16:38 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:453c07c74c91e170251fe0808e42234def963d6c13a1f9b279875937a5cb8c15`  
+		Last Modified: Wed, 23 Apr 2025 16:32:17 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:24-jdk` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:0d26aed54768eef2a8a82ece9304541a1e9ecc050b97b0c767b3a90697102e81
+$ docker pull eclipse-temurin@sha256:b5296153db4383915db87b45ba3e4e8a4ba8ff82002f04e87dcc7f5d050f4e78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3264541 bytes)**  
+-	Total Size: **3.3 MB (3264661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82a7ad3587390c9d4af3f5abd03bbcc0dfb136d110fe22adca5d7b8564fe53eb`
+-	Image ID: `sha256:bcf5c2533507fd0a3a1fbb79d89409d6f25623bab3c3c22090e2beb5d0778776`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ceb31a203c3baf617b2a2ec6505f6c146611013824e83047d831bcf1d8cd18c9`  
-		Last Modified: Wed, 09 Apr 2025 01:16:38 GMT  
-		Size: 3.2 MB (3240026 bytes)  
+	-	`sha256:dbc0786c43c5bdaba9e3f5dc1daf4dc99b887f4ea3f0de8a24a85886e4f1b7f4`  
+		Last Modified: Wed, 23 Apr 2025 16:32:18 GMT  
+		Size: 3.2 MB (3240052 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:48073be2867400f57972aa296a98f4ea13e24fef597b6b146d1b572f6c2b1995`  
-		Last Modified: Wed, 09 Apr 2025 01:16:37 GMT  
-		Size: 24.5 KB (24515 bytes)  
+	-	`sha256:2de7c88bc52021385e12aa6247104f8c3584dfda927673b111e05b835e38c680`  
+		Last Modified: Wed, 23 Apr 2025 16:32:17 GMT  
+		Size: 24.6 KB (24609 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:24-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:816337246892898ec3191118ebe5d9c66bb11d15e0b25790ed04a8be09f88649
+$ docker pull eclipse-temurin@sha256:b8bc5c422d4a4dae2f02cd305470182d6e30d36c818899f93966e52e2985b5db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.4 MB (140448168 bytes)**  
+-	Total Size: **140.4 MB (140446550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f8439be07b1af4106e1ab319dc249e6b4461d331161c7fa5d27089b0aa564f6`
+-	Image ID: `sha256:ecbab07bc65ba87592da29e25727bd9fa8142af51e873bd40f2b0949fda287b5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:09 GMT
 ARG RELEASE
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:09 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:09 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:09 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:12 GMT
 ADD file:918b7712da52a62e47b028978dd5fc952b2f7f7f0507ea2362c4ccd14120133c in / 
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:13 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Tue, 25 Mar 2025 17:58:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='c340dee97b6aa215d248bc196dcac5b56e7be9b5c5d45e691344d40d5d0b171d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_linux_hotspot_24_36.tar.gz';          ;;        arm64)          ESUM='18071047526ab4b53131f9bb323e8703485ae37fcb2f2c5ef0f1b7bab66d1b94';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_linux_hotspot_24_36.tar.gz';          ;;        ppc64el)          ESUM='3a5641ab862a2bbae56886d4ec47f735052780bfe124df7aea2ca40e0f973b5a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_ppc64le_linux_hotspot_24_36.tar.gz';          ;;        riscv64)          ESUM='a1d993ab0b4b80101ec2e2452bdd37735572b734c255576a47c5130eab55f09a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_riscv64_linux_hotspot_24_36.tar.gz';          ;;        s390x)          ESUM='e3149dc2ab1db0bdf86ab8d27a5ad67e32e30c829cef8a02628d36e5781f44ff';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_s390x_linux_hotspot_24_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='78832cb5ea4074f2215cde0d01d6192d09c87636fc24b36647aea61fb23b8272';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz';          ;;        arm64)          ESUM='a598260e340028d9b2383c23df16aa286769a661bd3bf28a52e8c1a5774b1110';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz';          ;;        ppc64el)          ESUM='770e7e506d5ea3baf6c4c9004a82648e29508a1c731d8425acded34906e91b09';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_ppc64le_linux_hotspot_24.0.1_9.tar.gz';          ;;        riscv64)          ESUM='4e953ec63e141b667e02f7179304c6553cbd13ba94b60dcadd8e45c7f309c89d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_riscv64_linux_hotspot_24.0.1_9.tar.gz';          ;;        s390x)          ESUM='6ff3126ae0a7cff3a25b7590adc441550666750515fd7d6e2d2706b5fc9a1f6f';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_s390x_linux_hotspot_24.0.1_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["jshell"]
 ```
 
@@ -171,88 +170,88 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Apr 2025 07:09:46 GMT  
 		Size: 22.5 MB (22505411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03d5053eb7b361f72cc13c49b6196523cf837d820bcfb38c5a6e1e38ef865fd`  
-		Last Modified: Wed, 09 Apr 2025 07:09:48 GMT  
-		Size: 89.1 MB (89093483 bytes)  
+	-	`sha256:5472a416535b8eef536cf6bf9f8524a19b07fb80b21381b19a85c88bba48c4e2`  
+		Last Modified: Wed, 23 Apr 2025 16:46:49 GMT  
+		Size: 89.1 MB (89091866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e180717685609933b5eb7bfea3b99fef248102e202ac6d46474033ae8bef8089`  
-		Last Modified: Wed, 09 Apr 2025 07:09:45 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:12037685768f83d5e54e861fcbfb97472968371041fa28dfb80c00e43e04d91f`  
+		Last Modified: Wed, 23 Apr 2025 16:46:45 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:24-jdk` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:67c46f50baecf28a2b0f4f27abdaed10b68e04a4b6d8b3f19f013dce055ef13e
+$ docker pull eclipse-temurin@sha256:a68a34ff1db513c4c32153c56c673e939d78b0a6fb9b95ec7fb4f17dda2957d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3396232 bytes)**  
+-	Total Size: **3.4 MB (3396349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f78803e81368f37f85f7c850d0cab3fc2b21e48ce23bf894daf24a094e57160d`
+-	Image ID: `sha256:f7c54cec9ad9cddf1daf8f23c57288b26b13e33fb6505e111150c6df82291dcc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e04ad37d870cb07c9ee5737b95c8fdd507ba4b2949af5f17c790db82580f3a73`  
-		Last Modified: Wed, 09 Apr 2025 07:09:46 GMT  
-		Size: 3.4 MB (3371557 bytes)  
+	-	`sha256:f6b7145f6984540721e9927503f22d0607c7b9b19253d1f9c2951e21f91262ae`  
+		Last Modified: Wed, 23 Apr 2025 16:46:46 GMT  
+		Size: 3.4 MB (3371583 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc202c6b7879def224137b868822cb367d70caed1e182f987a3949350cb0da62`  
-		Last Modified: Wed, 09 Apr 2025 07:09:45 GMT  
-		Size: 24.7 KB (24675 bytes)  
+	-	`sha256:4773c5f6546fbb7c0166e67111c59eca2e8c85465ee70bf9ba335de0ca86433e`  
+		Last Modified: Wed, 23 Apr 2025 16:46:45 GMT  
+		Size: 24.8 KB (24766 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:24-jdk` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:98c08ab503ac7bbe0e7b2951d4c7271eb98066d24df3f303c376c3df1f9557d4
+$ docker pull eclipse-temurin@sha256:1833082091ea40233b14998a816e1117c92d909c8b15d29911e01ebaed2dc32d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.3 MB (146320309 bytes)**  
+-	Total Size: **146.3 MB (146320094 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efdfef91dff833117076158d9fa3e6a01a7836ba9f055d96f23e92e39b011f2c`
+-	Image ID: `sha256:6f3eadc38c72e83547226e74e20d9b8d597379470e2a5bc20b3537a65fef7df9`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 ARG RELEASE
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:11 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:14 GMT
 ADD file:d7a12d3d510b1bacf894dbb7d42f36de9391b0766c28643a60d20d3c37a12762 in / 
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:15 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Tue, 25 Mar 2025 17:58:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='c340dee97b6aa215d248bc196dcac5b56e7be9b5c5d45e691344d40d5d0b171d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_linux_hotspot_24_36.tar.gz';          ;;        arm64)          ESUM='18071047526ab4b53131f9bb323e8703485ae37fcb2f2c5ef0f1b7bab66d1b94';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_linux_hotspot_24_36.tar.gz';          ;;        ppc64el)          ESUM='3a5641ab862a2bbae56886d4ec47f735052780bfe124df7aea2ca40e0f973b5a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_ppc64le_linux_hotspot_24_36.tar.gz';          ;;        riscv64)          ESUM='a1d993ab0b4b80101ec2e2452bdd37735572b734c255576a47c5130eab55f09a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_riscv64_linux_hotspot_24_36.tar.gz';          ;;        s390x)          ESUM='e3149dc2ab1db0bdf86ab8d27a5ad67e32e30c829cef8a02628d36e5781f44ff';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_s390x_linux_hotspot_24_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='78832cb5ea4074f2215cde0d01d6192d09c87636fc24b36647aea61fb23b8272';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz';          ;;        arm64)          ESUM='a598260e340028d9b2383c23df16aa286769a661bd3bf28a52e8c1a5774b1110';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz';          ;;        ppc64el)          ESUM='770e7e506d5ea3baf6c4c9004a82648e29508a1c731d8425acded34906e91b09';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_ppc64le_linux_hotspot_24.0.1_9.tar.gz';          ;;        riscv64)          ESUM='4e953ec63e141b667e02f7179304c6553cbd13ba94b60dcadd8e45c7f309c89d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_riscv64_linux_hotspot_24.0.1_9.tar.gz';          ;;        s390x)          ESUM='6ff3126ae0a7cff3a25b7590adc441550666750515fd7d6e2d2706b5fc9a1f6f';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_s390x_linux_hotspot_24.0.1_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["jshell"]
 ```
 
@@ -265,88 +264,88 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Apr 2025 04:55:39 GMT  
 		Size: 22.0 MB (22049405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1123fddae74cd78a8b49310ea859220526669dde725712b69e6f38a8ceb9c912`  
-		Last Modified: Wed, 09 Apr 2025 04:55:41 GMT  
-		Size: 89.9 MB (89927722 bytes)  
+	-	`sha256:99ed52e1399f2927ae0627a7dc6d3946eac024ba73b1fd13659f26d53f2788e3`  
+		Last Modified: Wed, 23 Apr 2025 16:56:27 GMT  
+		Size: 89.9 MB (89927507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7403dadf933fbdbbaf6e9bcdc40979b2173a2a5a9528ab3774ada5733b4e6c8c`  
-		Last Modified: Wed, 09 Apr 2025 04:55:38 GMT  
+	-	`sha256:3a8854e282f2230baa12308a4974cca04ecc4263598617b6575e6eeaf05fd48a`  
+		Last Modified: Wed, 23 Apr 2025 16:56:24 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:24-jdk` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:944b4e0d0af767729fc5cb52a0029e512c882d4c64025e6870e2ed125d6d7147
+$ docker pull eclipse-temurin@sha256:cbc53002748c133012824f6dcb210051907a5b7f00377828f86ab3efaaf4c606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3313865 bytes)**  
+-	Total Size: **3.3 MB (3313983 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f137d7a1a6cb8f7451c3a7fb9d2c94e6f77d8d9f63600261655dc2838fa965d`
+-	Image ID: `sha256:5f7548141acae94cf11423de20df997262854b631e5c849f826e41824f0cc2d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6e1484234744dbff88e4537f9479907b28a48640484ffdb04cad05422c2e73ef`  
-		Last Modified: Wed, 09 Apr 2025 04:55:38 GMT  
-		Size: 3.3 MB (3289288 bytes)  
+	-	`sha256:b5c53b7025a5da7b4ead1b39e80af2dec6f6296ee7e46c41d0f8ba600b32c195`  
+		Last Modified: Wed, 23 Apr 2025 16:56:25 GMT  
+		Size: 3.3 MB (3289314 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:73bb55beb5165ec298bb604ea9f42cd6987cabb3044ab1b27040cc81a99f5b28`  
-		Last Modified: Wed, 09 Apr 2025 04:55:37 GMT  
-		Size: 24.6 KB (24577 bytes)  
+	-	`sha256:0ba489a74de21c9fcc1086b8707d9236ae94c7b9d34bb96f0c2e40db62c15c31`  
+		Last Modified: Wed, 23 Apr 2025 16:56:24 GMT  
+		Size: 24.7 KB (24669 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:24-jdk` - linux; riscv64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cfc9e1af500dddeaa4c50f810d869c3999a261425b9a1e8a50e954f054b5ce9b
+$ docker pull eclipse-temurin@sha256:cfe09dd4530b3643e8960114b9a50344c7cfe38dbb078efb09e8c50b848f227d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136952940 bytes)**  
+-	Total Size: **137.0 MB (136951943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fb438ee62fe2e9a961e681f8c3913cd009d2d029cef496a2fa64a4b29942012`
+-	Image ID: `sha256:9d3bcff1c5d1c4ff655e3742693f53b539d564a47cb5d332d2f5f8f9baf5f571`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 11:16:50 GMT
 ARG RELEASE
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 11:16:51 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 11:16:51 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 11:16:51 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 11:17:29 GMT
 ADD file:ef7c97f5dd8d665aae899afe52c54f7acaf71fa51e9d7f26e13ed6073141c666 in / 
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 11:17:31 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Tue, 25 Mar 2025 17:58:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='c340dee97b6aa215d248bc196dcac5b56e7be9b5c5d45e691344d40d5d0b171d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_linux_hotspot_24_36.tar.gz';          ;;        arm64)          ESUM='18071047526ab4b53131f9bb323e8703485ae37fcb2f2c5ef0f1b7bab66d1b94';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_linux_hotspot_24_36.tar.gz';          ;;        ppc64el)          ESUM='3a5641ab862a2bbae56886d4ec47f735052780bfe124df7aea2ca40e0f973b5a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_ppc64le_linux_hotspot_24_36.tar.gz';          ;;        riscv64)          ESUM='a1d993ab0b4b80101ec2e2452bdd37735572b734c255576a47c5130eab55f09a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_riscv64_linux_hotspot_24_36.tar.gz';          ;;        s390x)          ESUM='e3149dc2ab1db0bdf86ab8d27a5ad67e32e30c829cef8a02628d36e5781f44ff';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_s390x_linux_hotspot_24_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='78832cb5ea4074f2215cde0d01d6192d09c87636fc24b36647aea61fb23b8272';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz';          ;;        arm64)          ESUM='a598260e340028d9b2383c23df16aa286769a661bd3bf28a52e8c1a5774b1110';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz';          ;;        ppc64el)          ESUM='770e7e506d5ea3baf6c4c9004a82648e29508a1c731d8425acded34906e91b09';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_ppc64le_linux_hotspot_24.0.1_9.tar.gz';          ;;        riscv64)          ESUM='4e953ec63e141b667e02f7179304c6553cbd13ba94b60dcadd8e45c7f309c89d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_riscv64_linux_hotspot_24.0.1_9.tar.gz';          ;;        s390x)          ESUM='6ff3126ae0a7cff3a25b7590adc441550666750515fd7d6e2d2706b5fc9a1f6f';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_s390x_linux_hotspot_24.0.1_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["jshell"]
 ```
 
@@ -359,88 +358,88 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Apr 2025 05:54:13 GMT  
 		Size: 18.4 MB (18379010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ec2fd5270db78a25fdb19cef4432226d3960e4b55fe61cf2b5518d408a01d1f`  
-		Last Modified: Wed, 09 Apr 2025 05:54:23 GMT  
-		Size: 87.6 MB (87628414 bytes)  
+	-	`sha256:8b9b03ca5383560edf2ae2c73ec0511ea1eddf1f72ce93c136e7734c1837c85d`  
+		Last Modified: Wed, 23 Apr 2025 16:55:25 GMT  
+		Size: 87.6 MB (87627418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176eebc30d946da65f1b02dc1b2e9bbe2225c94d0faf43c837a5d5c2489e5db8`  
-		Last Modified: Wed, 09 Apr 2025 05:54:10 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:882e7c729667b90373b616bf83d220ab654aed96551ac6157818ab627135a19c`  
+		Last Modified: Wed, 23 Apr 2025 16:55:11 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:24-jdk` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:099802f633ee2a3c2b60447b54de3a55bce718dfa0755af472600af01dc3f523
+$ docker pull eclipse-temurin@sha256:51346d91a384a41848f485f9a484a10638f1a7a8672751044252c143dbd5a4c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3372375 bytes)**  
+-	Total Size: **3.4 MB (3372492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51590b9bebc4470cebc82349808221d30d6e24c90e511f337b0e14de4a55c7e0`
+-	Image ID: `sha256:052979a2be71121a36e8644a35c0283aa528ecd9a02ed6345bbb6bfd9786a4fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd7e7722bfdf7100f91960e83f92472badb9fe725a8e4dbafc1570fb107eace8`  
-		Last Modified: Wed, 09 Apr 2025 05:54:10 GMT  
-		Size: 3.3 MB (3347798 bytes)  
+	-	`sha256:81c38086a755c12428c5a288047d37ea512aeb0911e36c9e56cfefc919e26dcf`  
+		Last Modified: Wed, 23 Apr 2025 16:55:12 GMT  
+		Size: 3.3 MB (3347824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3145bdb36edeafa4b860d69e49bdcdd7ca4cb3c6f8ad5d4712b0931138ff00f2`  
-		Last Modified: Wed, 09 Apr 2025 05:54:10 GMT  
-		Size: 24.6 KB (24577 bytes)  
+	-	`sha256:16f8d3e138deddddd509f82285dc397a2a0055358fe42d2efc7faba13f85b602`  
+		Last Modified: Wed, 23 Apr 2025 16:55:11 GMT  
+		Size: 24.7 KB (24668 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:24-jdk` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:158cc03b5d3bed0ea2b6ce2a2db7384a21773ea074087b64b0c50ebc3c6ab601
+$ docker pull eclipse-temurin@sha256:21a8be35ffe4d73b1b04da7e63cecdf4801539a8b89bcd4fe0ff567c8c29e5f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.6 MB (135599232 bytes)**  
+-	Total Size: **135.6 MB (135591139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba69ac82ef9a99a7aa7e9cbb909fdc2082853919e293cc8c40920a900a030d35`
+-	Image ID: `sha256:871b2ee2d48ad88e2e1f9fc445d1c816b2ab5d8765a1d8b92bb33d71fee6818e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 ARG RELEASE
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:29 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:30 GMT
 ADD file:8f287f40ca940c9bd87c8706751f5f1c5bbd0a83fd75f7d938832b226fdb936d in / 
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Tue, 08 Apr 2025 10:46:30 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Tue, 25 Mar 2025 17:58:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='c340dee97b6aa215d248bc196dcac5b56e7be9b5c5d45e691344d40d5d0b171d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_linux_hotspot_24_36.tar.gz';          ;;        arm64)          ESUM='18071047526ab4b53131f9bb323e8703485ae37fcb2f2c5ef0f1b7bab66d1b94';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_linux_hotspot_24_36.tar.gz';          ;;        ppc64el)          ESUM='3a5641ab862a2bbae56886d4ec47f735052780bfe124df7aea2ca40e0f973b5a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_ppc64le_linux_hotspot_24_36.tar.gz';          ;;        riscv64)          ESUM='a1d993ab0b4b80101ec2e2452bdd37735572b734c255576a47c5130eab55f09a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_riscv64_linux_hotspot_24_36.tar.gz';          ;;        s390x)          ESUM='e3149dc2ab1db0bdf86ab8d27a5ad67e32e30c829cef8a02628d36e5781f44ff';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_s390x_linux_hotspot_24_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='78832cb5ea4074f2215cde0d01d6192d09c87636fc24b36647aea61fb23b8272';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_linux_hotspot_24.0.1_9.tar.gz';          ;;        arm64)          ESUM='a598260e340028d9b2383c23df16aa286769a661bd3bf28a52e8c1a5774b1110';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_linux_hotspot_24.0.1_9.tar.gz';          ;;        ppc64el)          ESUM='770e7e506d5ea3baf6c4c9004a82648e29508a1c731d8425acded34906e91b09';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_ppc64le_linux_hotspot_24.0.1_9.tar.gz';          ;;        riscv64)          ESUM='4e953ec63e141b667e02f7179304c6553cbd13ba94b60dcadd8e45c7f309c89d';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_riscv64_linux_hotspot_24.0.1_9.tar.gz';          ;;        s390x)          ESUM='6ff3126ae0a7cff3a25b7590adc441550666750515fd7d6e2d2706b5fc9a1f6f';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_s390x_linux_hotspot_24.0.1_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["jshell"]
 ```
 
@@ -453,54 +452,54 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Apr 2025 04:27:34 GMT  
 		Size: 20.4 MB (20414864 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64ba649f6592fffb698b4967e4cc7f5ac007aac2ae9d86e01ffbd464a7b30a3e`  
-		Last Modified: Wed, 09 Apr 2025 04:27:35 GMT  
-		Size: 85.2 MB (85225847 bytes)  
+	-	`sha256:b6f112101c58caf12b92993df1dc6c47788616a4ac1249ba084854f637dd15cf`  
+		Last Modified: Wed, 23 Apr 2025 16:49:23 GMT  
+		Size: 85.2 MB (85217755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e87be84bf04c4a3952f0bc9460515f3a7b875ecfa1745e896b72aaed9f924dc`  
-		Last Modified: Wed, 09 Apr 2025 04:27:33 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:ee92e09fdb8aec1c15590198b59003f93a04f6c8f02a11d982e49d0e683f4506`  
+		Last Modified: Wed, 23 Apr 2025 16:49:21 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:24-jdk` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:2545fd16f2ee76735669068696a3f28848b2a3700f6f66768a4835fb4c914252
+$ docker pull eclipse-temurin@sha256:5d6d48a643436e67eee20dc9f4f2d91346892572a475c61c9e3dc4da2aa1d516
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3213320 bytes)**  
+-	Total Size: **3.2 MB (3213438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eea5175ad654396afba7d79651314c8a00c66cac9dd3528c33f41116d199fe99`
+-	Image ID: `sha256:9ecc8948926e22393dc1fff42b1fae905ee4b8e777f98524eb08b04b0fb7f6b4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7a6ec0f54361daa4f1b50b0ac250cb44c4971285aa2ff11fc3226738035c5a58`  
-		Last Modified: Wed, 09 Apr 2025 04:27:33 GMT  
-		Size: 3.2 MB (3188803 bytes)  
+	-	`sha256:d9f05a90378890d08b0549d0a42cf5bba188c62a1293ea46aee2073922a60e23`  
+		Last Modified: Wed, 23 Apr 2025 16:49:21 GMT  
+		Size: 3.2 MB (3188829 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa771554705a5ae89ffa404c6d11fd30b346bc2af29176bd08b44868695fe21f`  
-		Last Modified: Wed, 09 Apr 2025 04:27:33 GMT  
-		Size: 24.5 KB (24517 bytes)  
+	-	`sha256:d030e74f2e5aeea087ebf371c67602f6c6144596861e3e4963fc28c9d2ffb9d4`  
+		Last Modified: Wed, 23 Apr 2025 16:49:21 GMT  
+		Size: 24.6 KB (24609 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:24-jdk` - windows version 10.0.26100.3781; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:092a6a15a35b45196602c5be6934afbc6783dccec7011cfb776f76e7bbb6aeb4
+$ docker pull eclipse-temurin@sha256:ed64946c83ab858e1ab0b800d38840536bf4b8ec677ad35fd30b9a48245ce5fe
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 GB (3648094274 bytes)**  
+-	Total Size: **3.6 GB (3648165727 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63158e918166b4e8c69f22d12793acfa6ab2669c43abe2e9fc58724762849ed4`
+-	Image ID: `sha256:c880ebf922a5612108b2322ad55c2bb26e6a19b160fd8eb316450091b711efd6`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -509,15 +508,15 @@ $ docker pull eclipse-temurin@sha256:092a6a15a35b45196602c5be6934afbc6783dccec70
 RUN Apply image 10.0.26100.2605
 # Tue, 15 Apr 2025 10:03:37 GMT
 RUN Install update 10.0.26100.3781
-# Fri, 18 Apr 2025 03:15:17 GMT
+# Wed, 23 Apr 2025 16:36:28 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:15:18 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Fri, 18 Apr 2025 03:15:41 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_windows_hotspot_24_36.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_windows_hotspot_24_36.msi ;     Write-Host ('Verifying sha256 (168a9d9ead2f75de44f6d49ac35a58879066c1215375824ada6e6dc4a9ad0b95) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '168a9d9ead2f75de44f6d49ac35a58879066c1215375824ada6e6dc4a9ad0b95') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-24' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Fri, 18 Apr 2025 03:15:51 GMT
+# Wed, 23 Apr 2025 16:36:29 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 16:36:52 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_windows_hotspot_24.0.1_9.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_windows_hotspot_24.0.1_9.msi ;     Write-Host ('Verifying sha256 (c820fd88f666dbb56109095a7a82ce82ebc0aedb0a0d6d1dd9f75fe2b7ac0eb0) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'c820fd88f666dbb56109095a7a82ce82ebc0aedb0a0d6d1dd9f75fe2b7ac0eb0') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-24' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Wed, 23 Apr 2025 16:37:01 GMT
 RUN Write-Host 'Verifying install ...';     Write-Host 'javac --version'; javac --version;     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
-# Fri, 18 Apr 2025 03:15:52 GMT
+# Wed, 23 Apr 2025 16:37:02 GMT
 CMD ["jshell"]
 ```
 
@@ -530,38 +529,38 @@ CMD ["jshell"]
 		Last Modified: Fri, 18 Apr 2025 03:15:41 GMT  
 		Size: 1.2 GB (1179854238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2d23161a5165a89825dd6254ba4a618001ba6cd8ae7025f8e27ef66577fa499`  
-		Last Modified: Fri, 18 Apr 2025 03:15:55 GMT  
-		Size: 1.4 KB (1353 bytes)  
+	-	`sha256:53ae52025dca9c714fcfc259764104e797ecbf167ec6d88b8e83388392f0f9bf`  
+		Last Modified: Wed, 23 Apr 2025 16:37:05 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46f3be4b871734e598d778cc464785e19098a28ecb16db2a2676264e18f4048c`  
-		Last Modified: Fri, 18 Apr 2025 03:15:55 GMT  
+	-	`sha256:7e9dd48446f8c14af8b6d33640d492bee4c1001c54e5026c0de9d82328b204fb`  
+		Last Modified: Wed, 23 Apr 2025 16:37:05 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c607d788c5364d1b20d1835ff83f5646dcf7559c41e6b8a36f43cb7787d9004f`  
+		Last Modified: Wed, 23 Apr 2025 16:37:20 GMT  
+		Size: 252.6 MB (252595448 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:53ea1fecb2e478ae05cfdadf85147f3197d1e38bfc64c474438332eaf0ec473c`  
+		Last Modified: Wed, 23 Apr 2025 16:37:05 GMT  
+		Size: 405.0 KB (404989 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1bf007a37ffcf3488dc4195cbb9168d8967788c5e1c7127b904a84012ff2d6c`  
+		Last Modified: Wed, 23 Apr 2025 16:37:04 GMT  
 		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78e12673027ce44ee08b745826c08488ed4ffff2f72e258325d9bec8bb2bb944`  
-		Last Modified: Fri, 18 Apr 2025 03:16:11 GMT  
-		Size: 252.6 MB (252556565 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9429476b2818b907b395cd7570a9787455cd07479514057f1034db87b98d81ab`  
-		Last Modified: Fri, 18 Apr 2025 03:15:55 GMT  
-		Size: 372.4 KB (372383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6f8138cf933b90400ff44d7eaae8dca6ee79b9e608a4a368c9e51118bca8bbc`  
-		Last Modified: Fri, 18 Apr 2025 03:15:55 GMT  
-		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:24-jdk` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:57d1db4e03cb9bbddf814ce95dbc0bb73861e8ed852a975137552ad61910695f
+$ docker pull eclipse-temurin@sha256:dcd71b8c77d656834cf6e163eba19b9fb6ce80db07d3641fefe1033deae699c6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2526478615 bytes)**  
+-	Total Size: **2.5 GB (2526525944 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f8a7428882ec02e0c8782a034c43cdece587f8c149b8b5301015c841e01783d`
+-	Image ID: `sha256:686d027c535c79cf3f27c87391460099bd7ebf7322f6b09e2e50cf7ac3113a43`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -570,15 +569,15 @@ $ docker pull eclipse-temurin@sha256:57d1db4e03cb9bbddf814ce95dbc0bb73861e8ed852
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:15 GMT
+# Wed, 23 Apr 2025 16:44:40 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:16 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Fri, 18 Apr 2025 03:16:42 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_windows_hotspot_24_36.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_windows_hotspot_24_36.msi ;     Write-Host ('Verifying sha256 (168a9d9ead2f75de44f6d49ac35a58879066c1215375824ada6e6dc4a9ad0b95) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '168a9d9ead2f75de44f6d49ac35a58879066c1215375824ada6e6dc4a9ad0b95') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-24' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Fri, 18 Apr 2025 03:16:49 GMT
+# Wed, 23 Apr 2025 16:44:41 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 23 Apr 2025 16:45:08 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_windows_hotspot_24.0.1_9.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_windows_hotspot_24.0.1_9.msi ;     Write-Host ('Verifying sha256 (c820fd88f666dbb56109095a7a82ce82ebc0aedb0a0d6d1dd9f75fe2b7ac0eb0) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'c820fd88f666dbb56109095a7a82ce82ebc0aedb0a0d6d1dd9f75fe2b7ac0eb0') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-24' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Wed, 23 Apr 2025 16:45:16 GMT
 RUN Write-Host 'Verifying install ...';     Write-Host 'javac --version'; javac --version;     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
-# Fri, 18 Apr 2025 03:16:49 GMT
+# Wed, 23 Apr 2025 16:45:17 GMT
 CMD ["jshell"]
 ```
 
@@ -591,84 +590,23 @@ CMD ["jshell"]
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c22c40642756d0da5cc245e70633db3662d07dfd50b3c9b27bcbe0ded7e62bc0`  
-		Last Modified: Fri, 18 Apr 2025 03:16:52 GMT  
-		Size: 1.3 KB (1284 bytes)  
+	-	`sha256:8494466c77edaa4544745898543b95d17f61e5d17b3739058f2960732dd94330`  
+		Last Modified: Wed, 23 Apr 2025 16:45:19 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:510619256cb07402a6449ea20b14f43d89a3f249230c16e2b0be32f9b2ebfde7`  
-		Last Modified: Fri, 18 Apr 2025 03:16:52 GMT  
-		Size: 1.3 KB (1278 bytes)  
+	-	`sha256:59207c72e966163d82e7bbae69f8d8926013b422f699e0597ad3302bd826d021`  
+		Last Modified: Wed, 23 Apr 2025 16:45:19 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5917d4ee33bae9f8553e502b77bc5d6581b36a66c5f7aa9424d12de90d88303b`  
-		Last Modified: Fri, 18 Apr 2025 03:17:06 GMT  
-		Size: 252.5 MB (252533234 bytes)  
+	-	`sha256:901d8122a255c363dc2ac9979b3cbfcc46966eb942a55a12fd9b2394c3a5766e`  
+		Last Modified: Wed, 23 Apr 2025 16:45:34 GMT  
+		Size: 252.6 MB (252563274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c323366f4af1465542ea260b1ef14bdbabcc38fb31bd16bddc58888d376757f3`  
-		Last Modified: Fri, 18 Apr 2025 03:16:52 GMT  
-		Size: 359.0 KB (358991 bytes)  
+	-	`sha256:fc531822529dcc1a28b681765cb156feb4bc7cb092dbd22444ec3dba879c5eab`  
+		Last Modified: Wed, 23 Apr 2025 16:45:20 GMT  
+		Size: 376.2 KB (376195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b37e2b48269284f6f110930cc06b39e14f3c132edea39ce927cb6ae4cfad4918`  
-		Last Modified: Fri, 18 Apr 2025 03:16:52 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `eclipse-temurin:24-jdk` - windows version 10.0.17763.7249; amd64
-
-```console
-$ docker pull eclipse-temurin@sha256:f93f65a4c452e38ab6c6609a32c9d578811f32663c2119445b1964b655be66fa
-```
-
--	Docker Version: 27.5.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2422732877 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfaf7f9d764a6cd139c218ac17ed35a7613db4d9803a1828a6cfb3e6c9194dee`
--	Default Command: `["jshell"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 01:15:31 GMT
-RUN Apply image 10.0.17763.6293
-# Tue, 15 Apr 2025 01:47:49 GMT
-RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:10 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:12 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Fri, 18 Apr 2025 03:18:12 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_windows_hotspot_24_36.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_windows_hotspot_24_36.msi ;     Write-Host ('Verifying sha256 (168a9d9ead2f75de44f6d49ac35a58879066c1215375824ada6e6dc4a9ad0b95) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '168a9d9ead2f75de44f6d49ac35a58879066c1215375824ada6e6dc4a9ad0b95') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-24' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Fri, 18 Apr 2025 03:18:22 GMT
-RUN Write-Host 'Verifying install ...';     Write-Host 'javac --version'; javac --version;     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
-# Fri, 18 Apr 2025 03:18:23 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:803f4a9590cb9c635813cbd0ee89190f92d5fe4c7589711cf468879e42ce02ba`  
-		Last Modified: Tue, 10 Sep 2024 17:55:31 GMT  
-		Size: 1.7 GB (1720268357 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:632102e3f287de7b6ffd6cab740fb7afe94ac8418060651b0954506aeecc48f1`  
-		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
-		Size: 445.3 MB (445257460 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a420fbc3087ec9a2163a17be717fe84fe19228979abbdd8e777400ffb6a43fb5`  
-		Last Modified: Fri, 18 Apr 2025 03:18:25 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96a02185cb02eb1437309faf6b7b7010fbfb450f423dcdfb20494719baf1fbf3`  
-		Last Modified: Fri, 18 Apr 2025 03:18:25 GMT  
-		Size: 1.3 KB (1292 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf78b2667c0e860374b35b93c58df2e671f65d35a091ceb9affd89525ac263d5`  
-		Last Modified: Fri, 18 Apr 2025 03:18:40 GMT  
-		Size: 252.6 MB (252555339 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7aae86bc938c56f6b4aeab87d689f2be95af7cc8efddda3a42538f23b4bbb789`  
-		Last Modified: Fri, 18 Apr 2025 03:18:26 GMT  
-		Size: 4.6 MB (4647740 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c5a8f61f35c06a87681997894fb9f9299d572f214dced1d1a923311751939aa`  
-		Last Modified: Fri, 18 Apr 2025 03:18:25 GMT  
-		Size: 1.4 KB (1403 bytes)  
+	-	`sha256:7b47c9d9041b06d235042747eb73f3fd98e33f9affac5e957db8535c7ab060b8`  
+		Last Modified: Wed, 23 Apr 2025 16:45:19 GMT  
+		Size: 1.4 KB (1366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
