@@ -1,7 +1,7 @@
 ## `clojure:temurin-24-lein-2.11.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:39805d626ddd854aa4b96463fa436ee253b6c6ad262ca904b760aeefe8ef6e1c
+$ docker pull clojure@sha256:08276dca70a6d853f0875cae5b187343ed7ec1cb77ef5f88325b42bbf43c31d1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull clojure@sha256:39805d626ddd854aa4b96463fa436ee253b6c6ad262ca904b76
 ### `clojure:temurin-24-lein-2.11.2-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:fb454aa0cd0ca5c4f74445369a2ef0e796b1cd9339331d1d13cfef14c24d207d
+$ docker pull clojure@sha256:f1a675d021172135db3cd94dd992759b3482385391235b134437942b0b1b7c00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138172732 bytes)**  
+-	Total Size: **138.2 MB (138182590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:235084ddbca3fb995cd9458c915c514b1d567fd9f2840bc47b17f379ae6beca7`
+-	Image ID: `sha256:d43087738b60427faecbc5316cb1ea6c9c73a769510e10405eeed32575eca699`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -27,25 +27,25 @@ $ docker pull clojure@sha256:fb454aa0cd0ca5c4f74445369a2ef0e796b1cd9339331d1d13c
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
-ENV JAVA_VERSION=jdk-24+36
-# Tue, 25 Mar 2025 17:58:27 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='4a673456aa6e726b86108a095a21868b7ebcdde050a92b3073d50105ff92f07f';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_alpine-linux_hotspot_24_36.tar.gz';          ;;        x86_64)          ESUM='a642608f0da78344ee6812fb1490b8bc1d7ad5a18064c70994d6f330568c51cb';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_x64_alpine-linux_hotspot_24_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
+ENV JAVA_VERSION=jdk-24.0.1+9
+# Wed, 26 Mar 2025 16:17:22 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='97b14f9c2f7e7ba4d4a958bba6835a23353b5fd858725031fc42af4f40a5a4ad';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_aarch64_alpine-linux_hotspot_24.0.1_9.tar.gz';          ;;        x86_64)          ESUM='74627af4084a9eb65cc5bad3bb5723b89f1ffb5eaec9afbd696ec5bf684ed79a';          BINARY_URL='https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jdk_x64_alpine-linux_hotspot_24.0.1_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Wed, 26 Mar 2025 16:17:22 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 25 Mar 2025 17:58:27 GMT
+# Wed, 26 Mar 2025 16:17:22 GMT
 CMD ["jshell"]
 # Wed, 26 Mar 2025 16:17:22 GMT
 ENV LEIN_VERSION=2.11.2
@@ -74,59 +74,59 @@ CMD ["repl"]
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3da9e4e6bbb3d8fe7ba4feb76b9f85cc591b594ed37c725031140c217b982045`  
-		Last Modified: Tue, 25 Mar 2025 21:57:50 GMT  
-		Size: 21.0 MB (20950921 bytes)  
+	-	`sha256:d89fa3206805da3f39f3d33e513000c7fe732767469d033fea6cf0c47b9c3a6b`  
+		Last Modified: Wed, 23 Apr 2025 16:32:08 GMT  
+		Size: 21.0 MB (20951357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e09b1f076e8ade81f12374738d4768afffa7e33753b8e5edec2e7165fd328397`  
-		Last Modified: Tue, 25 Mar 2025 21:57:52 GMT  
-		Size: 90.1 MB (90074010 bytes)  
+	-	`sha256:e4e10588850906e608ba2d19a979d66a3c3231deab14453e4c96f0f145218c2f`  
+		Last Modified: Wed, 23 Apr 2025 16:32:09 GMT  
+		Size: 90.1 MB (90081657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42fee87929fdd34f08d09385a3965e44dcfaa3724ce5f1a2515708890b07049e`  
-		Last Modified: Tue, 25 Mar 2025 21:57:49 GMT  
-		Size: 130.0 B  
+	-	`sha256:84f971aa3d7e1c0f663d0194507c129d747c8c22bd5a54388471f73fd984c2bb`  
+		Last Modified: Wed, 23 Apr 2025 16:32:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d237c308bf2aec9726a2aad84026d710a041c7de9ee1603fe9726cd1491bed2`  
-		Last Modified: Tue, 25 Mar 2025 21:57:49 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:883498cd171d42da42c278599e117d11db9885fbea522558e72b6f1740e5567d`  
+		Last Modified: Wed, 23 Apr 2025 16:32:07 GMT  
+		Size: 2.3 KB (2279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01a2e6fc065acd07680c49c22223f8dbe9faad5e211618ced5b547104349dab6`  
-		Last Modified: Thu, 27 Mar 2025 17:53:04 GMT  
-		Size: 19.0 MB (18988596 bytes)  
+	-	`sha256:9eb8db30911e4632d4be91516b0c3a4ba5896fb4b8f4a74e449e184321df9b11`  
+		Last Modified: Wed, 23 Apr 2025 17:16:12 GMT  
+		Size: 19.0 MB (18990321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a5a6edc172661d6e24ff3bf8fdf5e5ca2a1364035e802e880624e2991a8b598`  
-		Last Modified: Thu, 27 Mar 2025 17:53:04 GMT  
-		Size: 4.5 MB (4514110 bytes)  
+	-	`sha256:69f6d5d1192c431213714d7ee5ed65f066c5dd484ab01a85879bfcb9ce793e69`  
+		Last Modified: Wed, 23 Apr 2025 17:16:11 GMT  
+		Size: 4.5 MB (4514165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d6b49977bd1291637de306e74470e02786c929e27b55a258b50eb25eb64c2c7`  
-		Last Modified: Thu, 27 Mar 2025 17:53:04 GMT  
-		Size: 405.0 B  
+	-	`sha256:522b3a9b1d3ea7067f7a568da3259f01ce2c0af26b27ae30d7310041a7c41add`  
+		Last Modified: Wed, 23 Apr 2025 17:16:11 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-24-lein-2.11.2-alpine` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:abeef6396d374930c2071f8c0c58e1eb136c2fdf1620d9a84c193b0f7d30ae58
+$ docker pull clojure@sha256:af2af0efb0bd93758eab8ab5b6565bf1f9c35aaf4d3e1d15074a07d279f7264e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1056872 bytes)**  
+-	Total Size: **1.1 MB (1056892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55753360cc501bbc62ea0912459034f9b4806dc32c2d862f513f6061d77b5170`
+-	Image ID: `sha256:f3cdb1186ed208dc8115424b0503314beaaeae4d5bf215d31caf6b1122973696`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ad05873622c7b69f633e280a4a744c62b9e4b51a27fc3a3dbe91fe1e7e3b2b8b`  
-		Last Modified: Thu, 27 Mar 2025 17:53:04 GMT  
-		Size: 1.0 MB (1038617 bytes)  
+	-	`sha256:401fd9679a82703e9ecf3fbf858ddbd93a1dd9b32a6647d23c456aa03722ecc6`  
+		Last Modified: Wed, 23 Apr 2025 17:16:11 GMT  
+		Size: 1.0 MB (1038631 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4a0f09959dac09245c6c76c382f6388795c7dd91fb5a5f6faf17cb41ffecf6b`  
-		Last Modified: Thu, 27 Mar 2025 17:53:04 GMT  
-		Size: 18.3 KB (18255 bytes)  
+	-	`sha256:3144f7e0830cf72cb1a484c3e1baca3b3fedd2be7ca218dfd6de0f1685f14209`  
+		Last Modified: Wed, 23 Apr 2025 17:16:11 GMT  
+		Size: 18.3 KB (18261 bytes)  
 		MIME: application/vnd.in-toto+json
