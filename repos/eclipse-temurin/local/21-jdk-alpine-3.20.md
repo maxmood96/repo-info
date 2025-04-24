@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.6_7-jdk-alpine-3.20`
+# `eclipse-temurin:21.0.7_6-jdk-alpine-3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d01229e15d68f8c071b2630bee3e0e13c42abc2a3b986d805789d7bcadb359c0`
-- Created: `2025-01-30T14:32:57Z`
-- Virtual Size: ~ 359.05 Mb  
+- Image ID: `sha256:71d53ffbb1ce6fd6541e78141fd51b7316bbc184d8ae3d91c621fd928b736bfc`
+- Created: `2025-04-23T14:48:05Z`
+- Virtual Size: ~ 359.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.6+7`
+  - `JAVA_VERSION=jdk-21.0.7+6`
 
 ## `apk` (`.apk`-based packages)
 
@@ -90,16 +90,16 @@ GPL-2.0-only
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.42-r0 description:
+binutils-2.42-r1 description:
 Tools necessary to build programs
 
-binutils-2.42-r0 webpage:
+binutils-2.42-r1 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.42-r0 installed size:
-9612 KiB
+binutils-2.42-r1 installed size:
+9608 KiB
 
-binutils-2.42-r0 license:
+binutils-2.42-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
@@ -668,16 +668,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 144 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -719,16 +719,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-13.2.1_git20240309-r0 description:
+libgcc-13.2.1_git20240309-r1 description:
 GNU C compiler runtime libraries
 
-libgcc-13.2.1_git20240309-r0 webpage:
+libgcc-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgcc-13.2.1_git20240309-r0 installed size:
+libgcc-13.2.1_git20240309-r1 installed size:
 152 KiB
 
-libgcc-13.2.1_git20240309-r0 license:
+libgcc-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -906,16 +906,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-13.2.1_git20240309-r0 description:
+libstdc++-13.2.1_git20240309-r1 description:
 GNU C++ standard runtime library
 
-libstdc++-13.2.1_git20240309-r0 webpage:
+libstdc++-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libstdc++-13.2.1_git20240309-r0 installed size:
+libstdc++-13.2.1_git20240309-r1 installed size:
 2652 KiB
 
-libstdc++-13.2.1_git20240309-r0 license:
+libstdc++-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -1195,16 +1195,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.45.3-r1 description:
+sqlite-libs-3.45.3-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.45.3-r1 webpage:
+sqlite-libs-3.45.3-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.45.3-r1 installed size:
+sqlite-libs-3.45.3-r2 installed size:
 1428 KiB
 
-sqlite-libs-3.45.3-r1 license:
+sqlite-libs-3.45.3-r2 license:
 blessing
 
 ```
@@ -1229,16 +1229,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-1512 KiB
+tzdata-2025b-r0 installed size:
+1516 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
