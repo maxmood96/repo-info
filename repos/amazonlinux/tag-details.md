@@ -74,7 +74,7 @@ $ docker pull amazonlinux@sha256:cbf51820f70fa3f33a9298ce4395463e55c810b1c98b6c8
 ## `amazonlinux:2`
 
 ```console
-$ docker pull amazonlinux@sha256:cdd35aff33c0135d6e3fcadd500577a09c85b70cdf00573e213e1924e802602d
+$ docker pull amazonlinux@sha256:d11c5c03bf15a3de65315bc2f73400883df6efd0f1eab33414584f030fc7c92f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -87,49 +87,49 @@ $ docker pull amazonlinux@sha256:cdd35aff33c0135d6e3fcadd500577a09c85b70cdf00573
 ### `amazonlinux:2` - linux; amd64
 
 ```console
-$ docker pull amazonlinux@sha256:517947963c093641648f2a40536173981801f71ea64023aedcaa9572f6483d66
+$ docker pull amazonlinux@sha256:963589b6ee9a5ae17e2546257758cff7ee8bf9e59d2643548f5bcd8d9922b7ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.8 MB (62752889 bytes)**  
+-	Total Size: **62.8 MB (62761722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a48d139e5b692444eed8c101461177af820284d97a858ef36fefffc2dd3d5668`
+-	Image ID: `sha256:db48e27e6162844a24ac5b6ccf060a0d4298df422f1044fc3642eca9befe3f98`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 27 Mar 2025 17:58:37 GMT
+# Mon, 21 Apr 2025 18:27:09 GMT
 COPY /rootfs/ / # buildkit
-# Thu, 27 Mar 2025 17:58:37 GMT
+# Mon, 21 Apr 2025 18:27:09 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:68b5eef1eb563a36e20df422ee1592c70689019fdd12cc4fdc4e4b24c31c1c77`  
-		Last Modified: Thu, 27 Mar 2025 19:19:22 GMT  
-		Size: 62.8 MB (62752889 bytes)  
+	-	`sha256:07f9ec6a4553009171ec20ecdc638afd0eaac432b31f9e1b569f6e4fe9454d93`  
+		Last Modified: Mon, 21 Apr 2025 21:48:34 GMT  
+		Size: 62.8 MB (62761722 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazonlinux:2` - unknown; unknown
 
 ```console
-$ docker pull amazonlinux@sha256:1d518e38040308af687cfcb7cca958ab0aebd0c36b0da02b5fa336db584fb735
+$ docker pull amazonlinux@sha256:01c53c9cd99e33adeb980c453f35462c93634d9f721a00787000d3cb79b93aa4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5075682 bytes)**  
+-	Total Size: **5.1 MB (5077578 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc5968f08ca56714c992334a21d8bd4ebd0a0331dc7055f9a162e503d5147347`
+-	Image ID: `sha256:f77effd7e85c304f748e06c62ac0c1983fbf4f176a383b3942a4b343060a2290`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e039700213411ed5720e39b4ee90ae7de3d828f815c6554b75e88b9b00fb4f23`  
-		Last Modified: Thu, 27 Mar 2025 23:43:22 GMT  
-		Size: 5.1 MB (5067192 bytes)  
+	-	`sha256:1113f917634a9f05e3ff74936000b25269a6db331526a3420d751f776e04e1c9`  
+		Last Modified: Thu, 24 Apr 2025 20:03:08 GMT  
+		Size: 5.1 MB (5069088 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:043a594d748c080f31187a76926e6fc8c8105ae2f18c60df67cbaa7e1d75bff1`  
-		Last Modified: Thu, 27 Mar 2025 23:43:21 GMT  
+	-	`sha256:0a69e024253cde5e498c27830ad3298278b4fb03c7788d12c48d649d348d00bc`  
+		Last Modified: Thu, 24 Apr 2025 20:03:08 GMT  
 		Size: 8.5 KB (8490 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -184,7 +184,63 @@ $ docker pull amazonlinux@sha256:71c828ba4f96d64256c7f31a7083f7e9892fa4042a1b450
 
 ## `amazonlinux:2.0.20250414.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:0d3f9f4733f2cbe276e15b922a83f7b8cc2ad59874c87731f1a25625b3439d8d
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `amazonlinux:2.0.20250414.0` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:963589b6ee9a5ae17e2546257758cff7ee8bf9e59d2643548f5bcd8d9922b7ca
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62761722 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:db48e27e6162844a24ac5b6ccf060a0d4298df422f1044fc3642eca9befe3f98`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Mon, 21 Apr 2025 18:27:09 GMT
+COPY /rootfs/ / # buildkit
+# Mon, 21 Apr 2025 18:27:09 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:07f9ec6a4553009171ec20ecdc638afd0eaac432b31f9e1b569f6e4fe9454d93`  
+		Last Modified: Mon, 21 Apr 2025 21:48:34 GMT  
+		Size: 62.8 MB (62761722 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `amazonlinux:2.0.20250414.0` - unknown; unknown
+
+```console
+$ docker pull amazonlinux@sha256:01c53c9cd99e33adeb980c453f35462c93634d9f721a00787000d3cb79b93aa4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.1 MB (5077578 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f77effd7e85c304f748e06c62ac0c1983fbf4f176a383b3942a4b343060a2290`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1113f917634a9f05e3ff74936000b25269a6db331526a3420d751f776e04e1c9`  
+		Last Modified: Thu, 24 Apr 2025 20:03:08 GMT  
+		Size: 5.1 MB (5069088 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:0a69e024253cde5e498c27830ad3298278b4fb03c7788d12c48d649d348d00bc`  
+		Last Modified: Thu, 24 Apr 2025 20:03:08 GMT  
+		Size: 8.5 KB (8490 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `amazonlinux:2018.03`
 
@@ -309,7 +365,7 @@ $ docker pull amazonlinux@sha256:cbf51820f70fa3f33a9298ce4395463e55c810b1c98b6c8
 ## `amazonlinux:2023`
 
 ```console
-$ docker pull amazonlinux@sha256:fc7c82b2ba834045bdf454ef0f9e73d6fdf01166e08671037c8ffdaa9de2cac4
+$ docker pull amazonlinux@sha256:494c40ac5bc38e9d3cd65ae44642bca2373c4733eb2096483587b575e241fa42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -322,49 +378,49 @@ $ docker pull amazonlinux@sha256:fc7c82b2ba834045bdf454ef0f9e73d6fdf01166e086710
 ### `amazonlinux:2023` - linux; amd64
 
 ```console
-$ docker pull amazonlinux@sha256:d2b7c9c18d23a992c5364d51f3ec62f4e5d47b6d0b6dfc35078104d414fe48ba
+$ docker pull amazonlinux@sha256:e809271a174e97becee478add6dbe85ffc8eb6eae7818fa3436dbfea3baa1cf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.9 MB (55907053 bytes)**  
+-	Total Size: **55.9 MB (55906521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee582cc512f809ff153fe038c58aaed82d3b04512fd82a2b136af72b133724f`
+-	Image ID: `sha256:02aaecd0683dc539ae8002e489930eea441c79ac7aae31d49dffaa8304dd06c3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Apr 2025 20:49:23 GMT
+# Thu, 17 Apr 2025 17:44:44 GMT
 COPY /rootfs/ / # buildkit
-# Tue, 01 Apr 2025 20:49:23 GMT
+# Thu, 17 Apr 2025 17:44:44 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a60da04a601b8a4165b40817da07cd2d6e94c2b008c87988152b943d6465d10c`  
-		Last Modified: Tue, 01 Apr 2025 23:53:54 GMT  
-		Size: 55.9 MB (55907053 bytes)  
+	-	`sha256:1cf9fb914831ab202ad1756fe44227d7c88c49394a5cc9749ad863e76989673c`  
+		Last Modified: Thu, 17 Apr 2025 22:49:09 GMT  
+		Size: 55.9 MB (55906521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazonlinux:2023` - unknown; unknown
 
 ```console
-$ docker pull amazonlinux@sha256:3eedf9a6b0f4d8a9dee6dff76880cf0cad675ac950375ce0c9c87e9c5ea4f937
+$ docker pull amazonlinux@sha256:f42d6d7e6a1b7dc69d5eda211bc27f8e8806186ac82cd1154426e94dda92d0ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.9 MB (4919626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b446a5866df0d5bd27f8ccf0c765b5f38dd8303d21c9105a7d7b0d2953bb0af`
+-	Image ID: `sha256:8604ebc5985ac587225c297266e95929e37f2734f622858bb9831f00b01fdaac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4184050bae5bca7682598dfc75ec6ba5e579d005649063fc4279c396b73fad9f`  
-		Last Modified: Tue, 01 Apr 2025 23:53:53 GMT  
+	-	`sha256:f62f4393043586953a96df2b9e36411a3e512eba6e8566373f0b3366e626fb55`  
+		Last Modified: Thu, 24 Apr 2025 20:03:15 GMT  
 		Size: 4.9 MB (4910803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5dada95a4d9a37a829ee36e87e3cec09ea67a463ce4840623f12c04145a78828`  
-		Last Modified: Tue, 01 Apr 2025 23:53:53 GMT  
+	-	`sha256:3362b5d56959b721863f94c49c54b238aa9da208c973bed22d566b4ea93c5a00`  
+		Last Modified: Thu, 24 Apr 2025 20:03:14 GMT  
 		Size: 8.8 KB (8823 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -419,12 +475,68 @@ $ docker pull amazonlinux@sha256:9ab94886272ec56f812971f9c46a54534d322c9c6336dc6
 
 ## `amazonlinux:2023.7.20250414.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:0e1cfa70f3a4813562e9ad21ced009b789fc9e7cbec39a1eeb124cfc7eba28f0
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `amazonlinux:2023.7.20250414.0` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:e809271a174e97becee478add6dbe85ffc8eb6eae7818fa3436dbfea3baa1cf3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **55.9 MB (55906521 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:02aaecd0683dc539ae8002e489930eea441c79ac7aae31d49dffaa8304dd06c3`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 17 Apr 2025 17:44:44 GMT
+COPY /rootfs/ / # buildkit
+# Thu, 17 Apr 2025 17:44:44 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:1cf9fb914831ab202ad1756fe44227d7c88c49394a5cc9749ad863e76989673c`  
+		Last Modified: Thu, 17 Apr 2025 22:49:09 GMT  
+		Size: 55.9 MB (55906521 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `amazonlinux:2023.7.20250414.0` - unknown; unknown
+
+```console
+$ docker pull amazonlinux@sha256:f42d6d7e6a1b7dc69d5eda211bc27f8e8806186ac82cd1154426e94dda92d0ca
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.9 MB (4919626 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8604ebc5985ac587225c297266e95929e37f2734f622858bb9831f00b01fdaac`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f62f4393043586953a96df2b9e36411a3e512eba6e8566373f0b3366e626fb55`  
+		Last Modified: Thu, 24 Apr 2025 20:03:15 GMT  
+		Size: 4.9 MB (4910803 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3362b5d56959b721863f94c49c54b238aa9da208c973bed22d566b4ea93c5a00`  
+		Last Modified: Thu, 24 Apr 2025 20:03:14 GMT  
+		Size: 8.8 KB (8823 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `amazonlinux:latest`
 
 ```console
-$ docker pull amazonlinux@sha256:fc7c82b2ba834045bdf454ef0f9e73d6fdf01166e08671037c8ffdaa9de2cac4
+$ docker pull amazonlinux@sha256:494c40ac5bc38e9d3cd65ae44642bca2373c4733eb2096483587b575e241fa42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -437,49 +549,49 @@ $ docker pull amazonlinux@sha256:fc7c82b2ba834045bdf454ef0f9e73d6fdf01166e086710
 ### `amazonlinux:latest` - linux; amd64
 
 ```console
-$ docker pull amazonlinux@sha256:d2b7c9c18d23a992c5364d51f3ec62f4e5d47b6d0b6dfc35078104d414fe48ba
+$ docker pull amazonlinux@sha256:e809271a174e97becee478add6dbe85ffc8eb6eae7818fa3436dbfea3baa1cf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.9 MB (55907053 bytes)**  
+-	Total Size: **55.9 MB (55906521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee582cc512f809ff153fe038c58aaed82d3b04512fd82a2b136af72b133724f`
+-	Image ID: `sha256:02aaecd0683dc539ae8002e489930eea441c79ac7aae31d49dffaa8304dd06c3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Apr 2025 20:49:23 GMT
+# Thu, 17 Apr 2025 17:44:44 GMT
 COPY /rootfs/ / # buildkit
-# Tue, 01 Apr 2025 20:49:23 GMT
+# Thu, 17 Apr 2025 17:44:44 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a60da04a601b8a4165b40817da07cd2d6e94c2b008c87988152b943d6465d10c`  
-		Last Modified: Tue, 01 Apr 2025 23:53:54 GMT  
-		Size: 55.9 MB (55907053 bytes)  
+	-	`sha256:1cf9fb914831ab202ad1756fe44227d7c88c49394a5cc9749ad863e76989673c`  
+		Last Modified: Thu, 17 Apr 2025 22:49:09 GMT  
+		Size: 55.9 MB (55906521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazonlinux:latest` - unknown; unknown
 
 ```console
-$ docker pull amazonlinux@sha256:3eedf9a6b0f4d8a9dee6dff76880cf0cad675ac950375ce0c9c87e9c5ea4f937
+$ docker pull amazonlinux@sha256:f42d6d7e6a1b7dc69d5eda211bc27f8e8806186ac82cd1154426e94dda92d0ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.9 MB (4919626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b446a5866df0d5bd27f8ccf0c765b5f38dd8303d21c9105a7d7b0d2953bb0af`
+-	Image ID: `sha256:8604ebc5985ac587225c297266e95929e37f2734f622858bb9831f00b01fdaac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4184050bae5bca7682598dfc75ec6ba5e579d005649063fc4279c396b73fad9f`  
-		Last Modified: Tue, 01 Apr 2025 23:53:53 GMT  
+	-	`sha256:f62f4393043586953a96df2b9e36411a3e512eba6e8566373f0b3366e626fb55`  
+		Last Modified: Thu, 24 Apr 2025 20:03:15 GMT  
 		Size: 4.9 MB (4910803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5dada95a4d9a37a829ee36e87e3cec09ea67a463ce4840623f12c04145a78828`  
-		Last Modified: Tue, 01 Apr 2025 23:53:53 GMT  
+	-	`sha256:3362b5d56959b721863f94c49c54b238aa9da208c973bed22d566b4ea93c5a00`  
+		Last Modified: Thu, 24 Apr 2025 20:03:14 GMT  
 		Size: 8.8 KB (8823 bytes)  
 		MIME: application/vnd.in-toto+json
 
