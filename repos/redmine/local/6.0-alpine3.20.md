@@ -1,10 +1,10 @@
-# `redmine:6.0.4-alpine3.20`
+# `redmine:6.0.5-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:435571081632690a00dc0593f9a4f78765be6b4bc89d9c1a7febca0af1192907`
-- Created: `2025-03-11T02:53:30Z`
-- Virtual Size: ~ 412.86 Mb  
+- Image ID: `sha256:4e9ad4897afbfd10052a97c2a1dd0fe81025e5b240f4a2c63b6844b592db0303`
+- Created: `2025-04-20T08:40:24Z`
+- Virtual Size: ~ 412.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.0.4`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.4.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=bebf8acb4fd1843f88e5f4285ff0b497fab43320c33e780a5c34e1124c5e177a`
+  - `REDMINE_VERSION=6.0.5`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.5.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=94dcc53115e0581ac46e60c3ed9318f1926ce464babbb385e5236217d1e6a64e`
   - `RAILS_LOG_TO_STDOUT=true`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
@@ -1902,16 +1902,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.45.3-r1 description:
+sqlite-libs-3.45.3-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.45.3-r1 webpage:
+sqlite-libs-3.45.3-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.45.3-r1 installed size:
+sqlite-libs-3.45.3-r2 installed size:
 1428 KiB
 
-sqlite-libs-3.45.3-r1 license:
+sqlite-libs-3.45.3-r2 license:
 blessing
 
 ```
@@ -1936,16 +1936,16 @@ GPL-2.0-only
 ### `apk` package: `subversion`
 
 ```console
-subversion-1.14.3-r2 description:
+subversion-1.14.5-r0 description:
 Replacement for CVS, another versioning system (svn)
 
-subversion-1.14.3-r2 webpage:
+subversion-1.14.5-r0 webpage:
 https://subversion.apache.org/
 
-subversion-1.14.3-r2 installed size:
-980 KiB
+subversion-1.14.5-r0 installed size:
+988 KiB
 
-subversion-1.14.3-r2 license:
+subversion-1.14.5-r0 license:
 Apache-2.0 AND BSD-2-Clause
 
 ```
@@ -1953,16 +1953,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `subversion-libs`
 
 ```console
-subversion-libs-1.14.3-r2 description:
+subversion-libs-1.14.5-r0 description:
 Replacement for CVS, another versioning system (svn) (libraries)
 
-subversion-libs-1.14.3-r2 webpage:
+subversion-libs-1.14.5-r0 webpage:
 https://subversion.apache.org/
 
-subversion-libs-1.14.3-r2 installed size:
+subversion-libs-1.14.5-r0 installed size:
 3536 KiB
 
-subversion-libs-1.14.3-r2 license:
+subversion-libs-1.14.5-r0 license:
 Apache-2.0 AND BSD-2-Clause
 
 ```
