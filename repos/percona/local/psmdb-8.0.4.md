@@ -1,10 +1,10 @@
-# `percona:psmdb-7.0.16`
+# `percona:psmdb-8.0.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e06d1950eb8d3d87c5ff69bc83f2df11affd95e9ec39e4b98945269299b0aa4`
+- Image ID: `sha256:12ebec14447ccf2e2c17c074ed49b2f7bf288617a04c6b43356dba5b8e0fa0ce`
 - Created: `2025-04-22T10:21:47Z`
-- Virtual Size: ~ 714.42 Mb  
+- Virtual Size: ~ 769.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,11 +12,12 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=7.0.16-10`
+  - `PSMDB_VERSION=8.0.4-2`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=7.0.16-10.el9`
+  - `FULL_PERCONA_VERSION=8.0.4-2.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
-  - `PSMDB_REPO=release`
+  - `PSMDB_REPO=testing`
+  - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
   - `CALL_HOME_VERSION=0.1`
   - `GOSU_VERSION=1.11`
@@ -1369,7 +1370,7 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-mongodb-mongosh-2.3.2-1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.5.0-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1381,19 +1382,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-7.0.16-10.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.4-2.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-7.0.16-10.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.4-2.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-7.0.16-10.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.4-2.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
