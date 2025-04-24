@@ -2731,15 +2731,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.4.0-2ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0-2ubuntu1.4.dsc' libarchive_3.4.0-2ubuntu1.4.dsc 2617 SHA512:17dcb40fc2a947bb94edcfa4a6a62f64be7ef999b8b9f931e31c9c672be63b60bf5eb6e2bfca26a1ab96d7b0cf3ac68658d477795f781e8aaebc95226727a7e8
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0.orig.tar.gz' libarchive_3.4.0.orig.tar.gz 6908093 SHA512:2f9e2a551a6bcab56fb1a030b5d656df7299a3d151465aa02f0420d344d2fada49dee4755b3abff9095f62519e14dc9af8afa1695ecc6d5fdb4f0b28e6ede852
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0.orig.tar.gz.asc' libarchive_3.4.0.orig.tar.gz.asc 833 SHA512:9225e17345eec49af5a143d0a5bf69d68eaf0b1ffc635384f0c3b93cb4cbb99f052afce3f88bef38f4bb74d1a826e7277e6f4deef5f0b1e75e032e2f82f9e435
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0-2ubuntu1.4.debian.tar.xz' libarchive_3.4.0-2ubuntu1.4.debian.tar.xz 53900 SHA512:93b433cfb2277aa2e3d4fdbd762bda18929613621f061066a6213b16c09f99ef4dee2a8faa72e4d3bec01e4d65c13884c4b083d84839bfd21a71f598809b08e4
-```
 
 ### `dpkg` source package: `libass=1:0.14.0-2`
 
@@ -5173,14 +5167,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-212.232
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-212.232.dsc' linux_5.4.0-212.232.dsc 7442 SHA512:7aa9fdb5dbf1a5469856402a1ba2d171ee3f9aa6b327500778edaeeaf2dcadaa5011ef04996cfe55c6b4ff91eb5a27ab843ee12678c8c019e0e80a727ae69be6
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-212.232.diff.gz' linux_5.4.0-212.232.diff.gz 10085577 SHA512:0a1511bf317eb2431955f8738133514054f6c4aa1f8b4071d47062d69f7d0afe00db8d119ff9f01ad0c93d7a476cd945d8d2cadee58db0aed534dc601c9d643e
-```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
 
