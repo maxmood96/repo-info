@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51ef9b7d51dc3f21e6a6691de2bf2fe3ef0f26af682eafde7d53c9d85cee3504`
+- Image ID: `sha256:1b3dcaf8849556c9056d7e3c89f50a522a5b1aac892a15bef3bfaa7d647d0be3`
 - Created: `2025-03-30T18:23:11Z`
-- Virtual Size: ~ 553.37 Mb  
+- Virtual Size: ~ 553.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.14+7`
+  - `JAVA_VERSION=jdk-17.0.15+6`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.6.4`
 
@@ -160,16 +160,16 @@ Apache-2.0
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.43.1-r1 description:
+binutils-2.43.1-r2 description:
 Tools necessary to build programs
 
-binutils-2.43.1-r1 webpage:
+binutils-2.43.1-r2 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.43.1-r1 installed size:
+binutils-2.43.1-r2 installed size:
 9 MiB
 
-binutils-2.43.1-r1 license:
+binutils-2.43.1-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
@@ -228,16 +228,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -466,16 +466,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r3 description:
+git-lfs-3.6.0-r4 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r3 webpage:
+git-lfs-3.6.0-r4 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r3 installed size:
+git-lfs-3.6.0-r4 installed size:
 12 MiB
 
-git-lfs-3.6.0-r3 license:
+git-lfs-3.6.0-r4 license:
 MIT
 
 ```
@@ -806,16 +806,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -823,16 +823,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -1010,16 +1010,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -1129,16 +1129,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.4-r0 description:
+libuuid-2.40.4-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.4-r0 webpage:
+libuuid-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.4-r0 installed size:
+libuuid-2.40.4-r1 installed size:
 29 KiB
 
-libuuid-2.40.4-r0 license:
+libuuid-2.40.4-r1 license:
 BSD-3-Clause
 
 ```
@@ -1163,16 +1163,16 @@ BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-6.9.4-r0 description:
+mercurial-6.9.5-r0 description:
 Scalable distributed SCM tool
 
-mercurial-6.9.4-r0 webpage:
+mercurial-6.9.5-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-6.9.4-r0 installed size:
-11 MiB
+mercurial-6.9.5-r0 installed size:
+12 MiB
 
-mercurial-6.9.4-r0 license:
+mercurial-6.9.5-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1180,16 +1180,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-6.9.4-r0 description:
+mercurial-pyc-6.9.5-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-6.9.4-r0 webpage:
+mercurial-pyc-6.9.5-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-6.9.4-r0 installed size:
+mercurial-pyc-6.9.5-r0 installed size:
 9604 KiB
 
-mercurial-pyc-6.9.4-r0 license:
+mercurial-pyc-6.9.5-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1452,16 +1452,16 @@ GPL-2.0-or-later
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.9-r0 description:
+pyc-3.12.10-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.9-r0 webpage:
+pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.9-r0 installed size:
+pyc-3.12.10-r0 installed size:
 0 B
 
-pyc-3.12.9-r0 license:
+pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1469,16 +1469,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.9-r0 description:
+python3-3.12.10-r0 description:
 High-level scripting language
 
-python3-3.12.9-r0 webpage:
+python3-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-3.12.9-r0 installed size:
+python3-3.12.10-r0 installed size:
 22 MiB
 
-python3-3.12.9-r0 license:
+python3-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1486,16 +1486,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.9-r0 description:
+python3-pyc-3.12.10-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.9-r0 webpage:
+python3-pyc-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.9-r0 installed size:
+python3-pyc-3.12.10-r0 installed size:
 0 B
 
-python3-pyc-3.12.9-r0 license:
+python3-pyc-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1503,16 +1503,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.9-r0 description:
+python3-pycache-pyc0-3.12.10-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.9-r0 webpage:
+python3-pycache-pyc0-3.12.10-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.9-r0 installed size:
+python3-pycache-pyc0-3.12.10-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.9-r0 license:
+python3-pycache-pyc0-3.12.10-r0 license:
 PSF-2.0
 
 ```
@@ -1588,16 +1588,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
@@ -1622,16 +1622,16 @@ GPL-2.0-only
 ### `apk` package: `subversion`
 
 ```console
-subversion-1.14.4-r0 description:
+subversion-1.14.5-r0 description:
 Replacement for CVS, another versioning system (svn)
 
-subversion-1.14.4-r0 webpage:
+subversion-1.14.5-r0 webpage:
 https://subversion.apache.org/
 
-subversion-1.14.4-r0 installed size:
+subversion-1.14.5-r0 installed size:
 941 KiB
 
-subversion-1.14.4-r0 license:
+subversion-1.14.5-r0 license:
 Apache-2.0 AND BSD-2-Clause
 
 ```
@@ -1639,16 +1639,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `subversion-libs`
 
 ```console
-subversion-libs-1.14.4-r0 description:
+subversion-libs-1.14.5-r0 description:
 Replacement for CVS, another versioning system (svn) (libraries)
 
-subversion-libs-1.14.4-r0 webpage:
+subversion-libs-1.14.5-r0 webpage:
 https://subversion.apache.org/
 
-subversion-libs-1.14.4-r0 installed size:
+subversion-libs-1.14.5-r0 installed size:
 3495 KiB
 
-subversion-libs-1.14.4-r0 license:
+subversion-libs-1.14.5-r0 license:
 Apache-2.0 AND BSD-2-Clause
 
 ```
@@ -1656,16 +1656,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -1690,16 +1690,16 @@ ISC
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

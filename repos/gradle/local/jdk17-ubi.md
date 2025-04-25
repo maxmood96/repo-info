@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:be57302a31401ff94b4de83211e41636e5ec4273582332b976f2820376301a5d`
-- Created: `2025-03-04T19:20:27Z`
-- Virtual Size: ~ 710.69 Mb  
+- Image ID: `sha256:41c7e52b2201eb792f1927a0b3da0dabfe352839fdf1a9c52ec5af29ce411aa2`
+- Created: `2025-04-15T14:24:24Z`
+- Virtual Size: ~ 713.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.14+7`
+  - `JAVA_VERSION=jdk-17.0.15+6`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.13`
 - Labels:
@@ -362,11 +362,16 @@ $ dnf --quiet download --source --url emacs-filesystem-27.2-11.el9_5.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/e/emacs-27.2-11.el9_5.1.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-3.el9_5.1.x86_64`
+### `rpm` package: `expat-2.5.0-3.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url expat-2.5.0-3.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-3.el9_5.3.src.rpm
+```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
@@ -423,11 +428,16 @@ $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
-### `rpm` package: `freetype-2.10.4-9.el9.x86_64`
+### `rpm` package: `freetype-2.10.4-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): (FTL or GPLv2+) and BSD and MIT and Public Domain and zlib with acknowledgement
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url freetype-2.10.4-10.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/freetype-2.10.4-10.el9_5.src.rpm
+```
 
 ### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
 
@@ -2487,11 +2497,16 @@ $ dnf --quiet download --source --url tar-1.34-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025a-1.el9.noarch`
+### `rpm` package: `tzdata-2025b-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025b-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025b-1.el9.src.rpm
+```
 
 ### `rpm` package: `unzip-6.0-58.el9_5.x86_64`
 

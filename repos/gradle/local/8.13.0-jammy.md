@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:883284e323c369ca468270a731400ed7d02a14ed712c11a4ae7391d129d29489`
-- Created: `2025-03-27T21:20:39Z`
-- Virtual Size: ~ 749.74 Mb  
+- Image ID: `sha256:7deda60a1442db7bc4a7505a6f677d6ad7f40bf751bc6be62447b69b2b183836`
+- Created: `2025-04-15T14:24:24Z`
+- Virtual Size: ~ 757.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.6+7`
+  - `JAVA_VERSION=jdk-21.0.7+6`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.13`
 - Labels:
@@ -2004,14 +2004,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.dsc' openssh_8.9p1-3ubuntu0.11.dsc 3136 SHA512:ef5b948efe03ca7d20f65d13fcd38ef96d0a3b028d2357f76da3aa3b5826d73d015a0da9e6a7902f48339e59c4e5be5b0e36b0e91b8f94095a138d151779b05e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.debian.tar.xz' openssh_8.9p1-3ubuntu0.11.debian.tar.xz 201164 SHA512:57e88f1b4863ccd52d466f9c8e06fa92f97d0bb8944ec328889bab5b4364a4f57def47ce329ef3b262bb52c3bd9e6080ed55d651689c899f8f8ec42329e186c6
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.19`
 
@@ -2146,14 +2141,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.3`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.4`
 
 Binary Packages:
 
-- `libperl5.34:amd64=5.34.0-3ubuntu1.3`
-- `perl=5.34.0-3ubuntu1.3`
-- `perl-base=5.34.0-3ubuntu1.3`
-- `perl-modules-5.34=5.34.0-3ubuntu1.3`
+- `libperl5.34:amd64=5.34.0-3ubuntu1.4`
+- `perl=5.34.0-3ubuntu1.4`
+- `perl-base=5.34.0-3ubuntu1.4`
+- `perl-modules-5.34=5.34.0-3ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.34/copyright`)
 
@@ -2185,9 +2180,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.4.dsc' perl_5.34.0-3ubuntu1.4.dsc 2976 SHA512:d643892a28c72b9664809c9a54d406f702412547d00a5987fdd216ebb492a6c54f76ff3c1e2c274a6d10b0622f62827d4179f3dcaadbd950027f64f507cd4883
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.4.debian.tar.xz' perl_5.34.0-3ubuntu1.4.debian.tar.xz 195388 SHA512:24fc7abd6f70743ec11f6647dac56b4af4faf9ccbf0d906a2e992389812c47240a4fc6d3fb4fe6336290319497bf7f48fff0ee58b8cd31af9883ce03b8e4fce7
+```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 

@@ -1771,14 +1771,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-136.147
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.dsc' linux_5.15.0-136.147.dsc 7820 SHA512:3bad626f0f38a237d9c17419e19c50a64c95f5a59ca4589857566b56e18d8b39b16f68150f6622573d652b0ca3ab58f0d5dcf5d2731f6bc3c378679a3a574d0f
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.diff.gz' linux_5.15.0-136.147.diff.gz 11422141 SHA512:46001bfb178953a1d824bde72d5ed0da7e323cad52ac9760c758db57851a19a3e31a64b966e7f4dd9642620f50b87c7b5979cd9212e77df81d8246f8974f2710
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2058,14 +2053,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.dsc' openssh_8.9p1-3ubuntu0.11.dsc 3136 SHA512:ef5b948efe03ca7d20f65d13fcd38ef96d0a3b028d2357f76da3aa3b5826d73d015a0da9e6a7902f48339e59c4e5be5b0e36b0e91b8f94095a138d151779b05e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.debian.tar.xz' openssh_8.9p1-3ubuntu0.11.debian.tar.xz 201164 SHA512:57e88f1b4863ccd52d466f9c8e06fa92f97d0bb8944ec328889bab5b4364a4f57def47ce329ef3b262bb52c3bd9e6080ed55d651689c899f8f8ec42329e186c6
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.19`
 

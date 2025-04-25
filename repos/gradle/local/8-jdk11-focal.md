@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:139278c8e2517362c2a273b967e063c11c41bd914cdb105bc32024b30a0f3919`
-- Created: `2025-03-27T21:20:39Z`
-- Virtual Size: ~ 748.14 Mb  
+- Image ID: `sha256:32f680b0e8a6d74cbcdd3cbac2bf2b49f60b67468bfcb6843844a3302fca1596`
+- Created: `2025-04-15T14:24:24Z`
+- Virtual Size: ~ 748.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.26+4`
+  - `JAVA_VERSION=jdk-11.0.27+6`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.13`
 - Labels:
@@ -1873,14 +1873,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.dsc' openssh_8.2p1-4ubuntu0.12.dsc 3102 SHA512:da3d5af771b854a5bfa15d75c606192892c818c02ac94d64ec1e1c9c3a555cad4f5754addef863c55baf338c407bef95541e4b1a3af872b4368bd1a224de78c1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.debian.tar.xz' openssh_8.2p1-4ubuntu0.12.debian.tar.xz 185796 SHA512:fdc7e777cd833bbf15a74240ba5751f74d6a4075a3e39ce1956d27b590ec78d6bda35426a01ccf45ec6729a34e59828d1d30a32720551dd14ab9b10114c6ce65
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.24`
 
