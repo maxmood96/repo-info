@@ -1,21 +1,21 @@
-# `nginx:1.26.3`
+# `nginx:1.28.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:64e5ac93d424ecf2fcdb60e508278d86d5e544d5a07ec0983fac0b2dc3c65ddf`
-- Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 191.97 Mb  
+- Image ID: `sha256:244abd08b283a396de679587fab5dec3f2b427a1cc0ada5b813839fcb187f9b8`
+- Created: `2025-04-23T18:00:49Z`
+- Virtual Size: ~ 192.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.26.3`
-  - `NJS_VERSION=0.8.9`
+  - `NGINX_VERSION=1.28.0`
+  - `NJS_VERSION=0.8.10`
   - `NJS_RELEASE=1~bookworm`
   - `PKG_RELEASE=1~bookworm`
-  - `DYNPKG_RELEASE=2~bookworm`
+  - `DYNPKG_RELEASE=1~bookworm`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -2605,11 +2605,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.26.3-2~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.28.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.26.3-2~bookworm`
+- `nginx-module-geoip=1.28.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2619,11 +2619,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.26.3-2~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.28.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.26.3-2~bookworm`
+- `nginx-module-image-filter=1.28.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2633,11 +2633,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.26.3+0.8.9-1~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.28.0+0.8.10-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.26.3+0.8.9-1~bookworm`
+- `nginx-module-njs=1.28.0+0.8.10-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2647,11 +2647,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.26.3-2~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.28.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.26.3-2~bookworm`
+- `nginx-module-xslt=1.28.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2661,11 +2661,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.26.3-1~bookworm`
+### `dpkg` source package: `nginx=1.28.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.26.3-1~bookworm`
+- `nginx=1.28.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
