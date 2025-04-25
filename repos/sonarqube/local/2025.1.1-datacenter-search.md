@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c5bae2ca52349b882b4d8e44f2c50cef92bf8b1e738988a011802d8fac61150`
+- Image ID: `sha256:bbd0f9823361de4be40b97ed775ece3222e644412e439ba924b7800b8648303d`
 - Created: `2025-03-25T16:51:11Z`
 - Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.6+7`
+  - `JAVA_VERSION=jdk-21.0.7+6`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONAR_VERSION=2025.1.1.104738`
