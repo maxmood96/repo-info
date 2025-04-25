@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e246e2243e666034be492954fc31e6632cd154e7376f54e183331de778bd9d24`
+- Image ID: `sha256:6a009252f4ccd6b413edf2d117beaa1289aaa06db1705cb4a260b921e53c3110`
 - Created: `2025-04-10T08:00:31Z`
-- Virtual Size: ~ 822.59 Mb  
+- Virtual Size: ~ 822.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.26+4`
+  - `JAVA_VERSION=jdk-11.0.27+6`
   - `JETTY_VERSION=9.4.57.v20241219`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
