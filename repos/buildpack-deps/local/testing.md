@@ -244,20 +244,13 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.72-3
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72-3.dsc' autoconf_2.72-3.dsc 2059 SHA256:8abbcf3e76f5bf556193b90a12963395de367e8d2e172a12e64ff3dfed7717e1
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72.orig.tar.xz' autoconf_2.72.orig.tar.xz 1389680 SHA256:ba885c1319578d6c94d46e9b0dceb4014caafe2490e437a0dbca3f270a223f5a
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72-3.debian.tar.xz' autoconf_2.72-3.debian.tar.xz 22980 SHA256:567456dba70e2902be944eaa6175d92c553825569ca2146768d1f122bcfd50fb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autoconf/2.72-3/
 
-- https://sources.debian.net/src/autoconf/2.72-3/ (for browsing the source)
-- https://sources.debian.net/src/autoconf/2.72-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autoconf/2.72-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `automake-1.17=1:1.17-4`
 
@@ -4974,20 +4967,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-7
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-7.dsc' procps_4.0.4-7.dsc 2124 SHA256:460a4816eb0457adb04d059bd6950a7a94b0847859560ff5d02d703df5c00bc2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-7.debian.tar.xz' procps_4.0.4-7.debian.tar.xz 29964 SHA256:460a5fb98ad62b5a0256c180b3246099f5c3cb73c97b235aeafaa30fef561015
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-7/
 
-- https://sources.debian.net/src/procps/2:4.0.4-7/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-packaging=24.2-1`
 
@@ -5000,20 +4986,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=24.2-1
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.2-1.dsc' python-packaging_24.2-1.dsc 1911 SHA256:4d6ece32ca44d4c83ea688fe38ea459928b7ce0d4662ab72816157b81f8360dc
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.2.orig.tar.gz' python-packaging_24.2.orig.tar.gz 163950 SHA256:c228a6dc5e932d346bc5739379109d49e8853dd8223571c7c5b55260edc0b97f
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.2-1.debian.tar.xz' python-packaging_24.2-1.debian.tar.xz 2964 SHA256:9e435cf0be0dfec57b5736968df5c499b2ccd846be3b807b2ec021a07536524f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/24.2-1/
 
-- https://sources.debian.net/src/python-packaging/24.2-1/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/24.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/24.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.2-2`
 

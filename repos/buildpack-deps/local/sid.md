@@ -1460,21 +1460,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.84.1-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1-1.dsc' glib2.0_2.84.1-1.dsc 4812 SHA256:991d4523198929543612c1e3f84c1bf746a2d87881e84d48358a1743732bc874
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1.orig-unicode-data.tar.xz' glib2.0_2.84.1.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1.orig.tar.xz' glib2.0_2.84.1.orig.tar.xz 5615396 SHA256:2b4bc2ec49611a5fc35f86aca855f2ed0196e69e53092bab6bb73396bf30789a
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1-1.debian.tar.xz' glib2.0_2.84.1-1.debian.tar.xz 136160 SHA256:3bb55d7ae677b3e52009ce6fc65c82e808a3a041882749945af4d2f3a397f0dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.84.1-1/
 
-- https://sources.debian.net/src/glib2.0/2.84.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.84.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.84.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-6`
 
@@ -2516,20 +2508,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/l
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.4.7-1
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7-1.dsc' libffi_3.4.7-1.dsc 1948 SHA256:905661067ccb62604691b4fdfffaaa29e0af6fe9994a61cb1e7ad6befc2eb5ae
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7.orig.tar.gz' libffi_3.4.7.orig.tar.gz 593636 SHA256:f07c08c9c14977eafb9b5f9277713d91358ec18fc8aaa5607d6790cde90cba12
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7-1.debian.tar.xz' libffi_3.4.7-1.debian.tar.xz 10776 SHA256:af65d5c7024e664f71ba2b3a0ff4b72dc885d8d1b75a7d2d596f3d8e36eb3229
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.4.7-1/
 
-- https://sources.debian.net/src/libffi/3.4.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.4.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.4.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libfido2=1.15.0-1`
 
@@ -2939,20 +2924,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.3-1
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.3-1.dsc' libraw_0.21.3-1.dsc 2364 SHA256:20ce2be6b6de0c44764e0cc680099b2f59bc25609d183fb5e410fded65de6417
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.3.orig.tar.gz' libraw_0.21.3.orig.tar.gz 566017 SHA256:dc3d8b54e333d9d5441336049db255d14b27f19bd326a306cf5aea866806780a
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.3-1.debian.tar.xz' libraw_0.21.3-1.debian.tar.xz 24172 SHA256:a5cc438c93f27aedeabd8c7d6cf2d38d5b29facce4b0f8ed8454f7c8c9e4538f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.21.3-1/
 
-- https://sources.debian.net/src/libraw/0.21.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.21.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.21.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.0-2`
 
@@ -3835,21 +3813,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.1-2
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1-2.dsc' mariadb_11.8.1-2.dsc 5621 SHA256:78a24139e56cf69236a6cb596eb847f4a3ec44392ae85bc2c8f4239c0c3a927f
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1.orig.tar.gz' mariadb_11.8.1.orig.tar.gz 112837824 SHA256:c58e9e96e8e69dba09aa179b9bea63fc2775f3194efb72dfc2c277abfb9936e5
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1.orig.tar.gz.asc' mariadb_11.8.1.orig.tar.gz.asc 833 SHA256:c6a7daa2a40f47997b18515b7e2855a8f1fca603ac91a8a08c97aa47dad10b53
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1-2.debian.tar.xz' mariadb_11.8.1-2.debian.tar.xz 288292 SHA256:0e1ec62635ef9c9ba8f93c8f8e02bab7ef3473ebef94e53ff12a4869cdf3d122
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.1-2/
 
-- https://sources.debian.net/src/mariadb/1:11.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
 
