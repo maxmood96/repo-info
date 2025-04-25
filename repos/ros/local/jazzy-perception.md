@@ -3499,15 +3499,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.3.dsc' libarchive_3.7.2-2ubuntu0.3.dsc 2688 SHA512:706b34e7d8c5d8fc286b3568ca9d48cb26375d0dab569290bdcca49173d297cf22fe0e34c05140b4e723a6e4e8677bb1fa3c469027ef378bd30c4846aba4e227
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.3.debian.tar.xz' libarchive_3.7.2-2ubuntu0.3.debian.tar.xz 29740 SHA512:a06a671079aa69fde6584ee6ffb2e7fc0e97c5a30bded37e03d2f6504144fcaaadc4cc4ebc649ba0f1ba71f4e6405d540ee31e2a4752e711b58091d0130ab9f2
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -6007,14 +6001,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-57.59
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-57.59.dsc' linux_6.8.0-57.59.dsc 9383 SHA512:1ddee3503b0b84000ed8b346c1b93245044b06a2190a98157f8d39aaa5988fe8d0d532884e4c07a1ef7578743735fd3850a3e4bda1e594d982341dc9bdc523f0
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-57.59.diff.gz' linux_6.8.0-57.59.diff.gz 4424523 SHA512:a684118c6dd37faf16a9559b22aef9a70d37a35bd2d8fc152356f82504ce914f52051747ee09bee8ca61a05f60e0efb284b9318fd0e0450f39ea44818a8e2a66
-```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
 
@@ -7300,15 +7289,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.9.dsc' openssh_9.6p1-3ubuntu13.9.dsc 3342 SHA512:3c83e9185a948b4fde582993a59eb7c95cbe532b046d09a68bab5c1b4576ea41ee48cb08858d2d375f297b4c9ef027ce4ae438d095923f630474263f0bd6684e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.9.debian.tar.xz' openssh_9.6p1-3ubuntu13.9.debian.tar.xz 206020 SHA512:72e77a5da332f3fcb944cbbd7dbfc718dd9c3800719b3b7923af18f8b1c4868d4c78d8378e875fa7fe485bd68d2c705f2fab726ff31d2c0c64b35b5994f16e2f
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 

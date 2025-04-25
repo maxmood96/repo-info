@@ -1687,15 +1687,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.6.0-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.3.dsc' libarchive_3.6.0-1ubuntu1.3.dsc 2623 SHA512:ce818381f8e11faece887013daacebd31d424e2df98bcb10265a5c8fb8690fc7504c95fd4116a612aaba348aa605243bd5256b241dd40708142bff962c20c744
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz' libarchive_3.6.0.orig.tar.xz 6400620 SHA512:eeffec08a632cdf55d46b0f4b8261de20128163c39f63422aa5af081c9c5159a9445bca5f89ebaff984d9d5387b5c6901166949df09a2e46fe5adec31bfad0e5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz.asc' libarchive_3.6.0.orig.tar.xz.asc 833 SHA512:be03f9376eaafa77379ccbbc396602039ba7ac79bf496a5a7f60c847296b8425579d267dc6a96a23c07a65a1a8a8d1cc77fae6deb9dcd3fc2bdfa259b623a8d0
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.3.debian.tar.xz' libarchive_3.6.0-1ubuntu1.3.debian.tar.xz 27508 SHA512:5fa93c68c501c6a9c1545b08740517fc7615c01035f46f27e981a6617b23781e35e56f27ed63e31d233b6e1681bad996bc6db410d940a06f785a23e4e94d1624
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 
@@ -2829,14 +2823,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-136.147
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.dsc' linux_5.15.0-136.147.dsc 7820 SHA512:3bad626f0f38a237d9c17419e19c50a64c95f5a59ca4589857566b56e18d8b39b16f68150f6622573d652b0ca3ab58f0d5dcf5d2731f6bc3c378679a3a574d0f
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-136.147.diff.gz' linux_5.15.0-136.147.diff.gz 11422141 SHA512:46001bfb178953a1d824bde72d5ed0da7e323cad52ac9760c758db57851a19a3e31a64b966e7f4dd9642620f50b87c7b5979cd9212e77df81d8246f8974f2710
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
