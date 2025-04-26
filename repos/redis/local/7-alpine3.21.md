@@ -1,10 +1,10 @@
-# `redis:7.4.2-alpine`
+# `redis:7.4.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f5c54441eb93183170be8c9fc2d8e8275171a6866ca1b4ae682a2ced6a98889`
-- Created: `2025-01-06T16:14:31Z`
-- Virtual Size: ~ 41.39 Mb  
+- Image ID: `sha256:9a07b03a187109922388a4ec71fb5db4bc76b301504243ad9d69398e392599d8`
+- Created: `2025-04-24T08:18:49Z`
+- Virtual Size: ~ 41.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
-  - `REDIS_VERSION=7.4.2`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f`
+  - `REDIS_VERSION=7.4.3`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.3.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=e1807d7c0f824f4c5450244ef50c1e596b8d09b35d03a83f4e018fb7316acf45`
 
 ## `apk` (`.apk`-based packages)
 
@@ -259,16 +259,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
