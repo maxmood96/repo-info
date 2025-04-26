@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:575c0421aea86e591f108ab87fd8e841389d8bbb48c9c8f056d6dbcd66c16d92`
+- Image ID: `sha256:323264c9ac1dfef947b8459c75a2eca9c8ec91ca32ee82a7e702f4af1d8dfd47`
 - Created: `2025-03-27T16:03:48Z`
-- Virtual Size: ~ 329.97 Mb  
+- Virtual Size: ~ 329.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-24+36`
+  - `JAVA_VERSION=jdk-24.0.1+9`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -216,16 +216,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -1440,16 +1440,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```

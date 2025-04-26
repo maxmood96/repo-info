@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f472c901ee992f795079cdff3ac040f375b912a86223c4f07c9b4ce3fc42d5e`
+- Image ID: `sha256:d20b12ac8ceb45c4abeb1ad55be7bfaedc557f4e1d19df5692d04e81fdcd04a5`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 511.29 Mb  
+- Virtual Size: ~ 511.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.14+7`
+  - `JAVA_VERSION=jdk-17.0.15+6`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -1699,14 +1699,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.dsc' openssh_8.2p1-4ubuntu0.12.dsc 3102 SHA512:da3d5af771b854a5bfa15d75c606192892c818c02ac94d64ec1e1c9c3a555cad4f5754addef863c55baf338c407bef95541e4b1a3af872b4368bd1a224de78c1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.debian.tar.xz' openssh_8.2p1-4ubuntu0.12.debian.tar.xz 185796 SHA512:fdc7e777cd833bbf15a74240ba5751f74d6a4075a3e39ce1956d27b590ec78d6bda35426a01ccf45ec6729a34e59828d1d30a32720551dd14ab9b10114c6ce65
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.24`
 

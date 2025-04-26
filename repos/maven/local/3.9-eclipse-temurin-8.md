@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16daa7029172ef0f8292c137c11a5d78e1568752b1ded16e7a6a283b39013690`
+- Image ID: `sha256:684ed4b68313ae124b356877b01adc945bbf9a610f7cdf840288649d6e1532f9`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 356.65 Mb  
+- Virtual Size: ~ 364.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1829,15 +1829,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.9.dsc' openssh_9.6p1-3ubuntu13.9.dsc 3342 SHA512:3c83e9185a948b4fde582993a59eb7c95cbe532b046d09a68bab5c1b4576ea41ee48cb08858d2d375f297b4c9ef027ce4ae438d095923f630474263f0bd6684e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.9.debian.tar.xz' openssh_9.6p1-3ubuntu13.9.debian.tar.xz 206020 SHA512:72e77a5da332f3fcb944cbbd7dbfc718dd9c3800719b3b7923af18f8b1c4868d4c78d8378e875fa7fe485bd68d2c705f2fab726ff31d2c0c64b35b5994f16e2f
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
@@ -1949,14 +1943,14 @@ $ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.diff.gz' pcre2_10.42-4ubuntu2.1.diff.gz 8431 SHA512:a739c00ba25573d4e57490d487efcd1f4afbafb820ccb6063fe9d25f22d9a1f9bf7cc91cd89c5ffbb0b533f06133e4beaa16e5aee7f64e8939872ebb933c2f00
 ```
 
-### `dpkg` source package: `perl=5.38.2-3.2build2.1`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.1`
 
 Binary Packages:
 
-- `libperl5.38t64:amd64=5.38.2-3.2build2.1`
-- `perl=5.38.2-3.2build2.1`
-- `perl-base=5.38.2-3.2build2.1`
-- `perl-modules-5.38=5.38.2-3.2build2.1`
+- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.1`
+- `perl=5.38.2-3.2ubuntu0.1`
+- `perl-base=5.38.2-3.2ubuntu0.1`
+- `perl-modules-5.38=5.38.2-3.2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.38/copyright`)
 
@@ -1986,9 +1980,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.1.dsc' perl_5.38.2-3.2ubuntu0.1.dsc 3036 SHA512:e0cdb9381f22dc989ba6679382657bf9bffd65a724ce6ca171ed413601ac64697427f544ab5080aee3781073e9ec2d7f5d24ec5b67bd6e20b36591859395a8c0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.1.debian.tar.xz' perl_5.38.2-3.2ubuntu0.1.debian.tar.xz 166536 SHA512:0faaf2ff4b14f4a6d8bb158305014846b44785fd2683aca379d7718a54da0002d9fab50a45a8efeedfb0ea69e1075b765afe21d65026fb54f1e88a1e27883a4b
+```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 

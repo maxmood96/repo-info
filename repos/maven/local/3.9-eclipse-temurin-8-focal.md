@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb28295a42617575bc519d578eccdbdbfaae3b791d18e79a58a034f3fdcb91f0`
+- Image ID: `sha256:2f49f90d4215dcbe894fec3e7edb208ca76d5801ccc48f56ed0e72815982b07a`
 - Created: `2024-08-20T18:12:59Z`
 - Virtual Size: ~ 371.60 Mb  
   (total size of all layers on-disk)
@@ -1673,14 +1673,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.dsc' openssh_8.2p1-4ubuntu0.12.dsc 3102 SHA512:da3d5af771b854a5bfa15d75c606192892c818c02ac94d64ec1e1c9c3a555cad4f5754addef863c55baf338c407bef95541e4b1a3af872b4368bd1a224de78c1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.debian.tar.xz' openssh_8.2p1-4ubuntu0.12.debian.tar.xz 185796 SHA512:fdc7e777cd833bbf15a74240ba5751f74d6a4075a3e39ce1956d27b590ec78d6bda35426a01ccf45ec6729a34e59828d1d30a32720551dd14ab9b10114c6ce65
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.24`
 
