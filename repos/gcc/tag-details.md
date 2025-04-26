@@ -20,6 +20,12 @@
 -	[`gcc:14.2-bookworm`](#gcc142-bookworm)
 -	[`gcc:14.2.0`](#gcc1420)
 -	[`gcc:14.2.0-bookworm`](#gcc1420-bookworm)
+-	[`gcc:15`](#gcc15)
+-	[`gcc:15-bookworm`](#gcc15-bookworm)
+-	[`gcc:15.1`](#gcc151)
+-	[`gcc:15.1-bookworm`](#gcc151-bookworm)
+-	[`gcc:15.1.0`](#gcc1510)
+-	[`gcc:15.1.0-bookworm`](#gcc1510-bookworm)
 -	[`gcc:bookworm`](#gccbookworm)
 -	[`gcc:latest`](#gcclatest)
 
@@ -10660,6 +10666,60 @@ $ docker pull gcc@sha256:f1b753288a61330463575a2a17ce1932dd3cb4ffb91824c341634ae
 		Last Modified: Tue, 08 Apr 2025 22:03:04 GMT  
 		Size: 30.3 KB (30346 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `gcc:15`
+
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `gcc:15-bookworm`
+
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `gcc:15.1`
+
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `gcc:15.1-bookworm`
+
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `gcc:15.1.0`
+
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `gcc:15.1.0-bookworm`
+
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:bookworm`
 
