@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64828b6254cf57009ff14249016ad6efaee618ff224a6ffab6112ad4c547cc76`
-- Created: `2025-02-13T05:05:05Z`
-- Virtual Size: ~ 158.16 Mb  
+- Image ID: `sha256:45b70c33497dbf91af12b2605cbd5cbfebae87507a9e7ea7a717cda85e2c9c44`
+- Created: `2025-04-23T08:50:54Z`
+- Virtual Size: ~ 159.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.14.0`
+  - `NODE_VERSION=22.15.0`
   - `YARN_VERSION=1.22.22`
 
 ## `apk` (`.apk`-based packages)
@@ -155,16 +155,16 @@ Apache-2.0
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-13.2.1_git20240309-r0 description:
+libgcc-13.2.1_git20240309-r1 description:
 GNU C compiler runtime libraries
 
-libgcc-13.2.1_git20240309-r0 webpage:
+libgcc-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgcc-13.2.1_git20240309-r0 installed size:
+libgcc-13.2.1_git20240309-r1 installed size:
 152 KiB
 
-libgcc-13.2.1_git20240309-r0 license:
+libgcc-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -189,16 +189,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-13.2.1_git20240309-r0 description:
+libstdc++-13.2.1_git20240309-r1 description:
 GNU C++ standard runtime library
 
-libstdc++-13.2.1_git20240309-r0 webpage:
+libstdc++-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libstdc++-13.2.1_git20240309-r0 installed size:
+libstdc++-13.2.1_git20240309-r1 installed size:
 2652 KiB
 
-libstdc++-13.2.1_git20240309-r0 license:
+libstdc++-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
