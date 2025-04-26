@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca07413c96b38fd218bca97d2a36baa91692a0c0d9ae0a542cce3a85c8202216`
+- Image ID: `sha256:929b78929b3a8d240270e7565ade638bb4eb545a3c8ac18e0601822f2f758359`
 - Created: `2025-03-11T21:10:22Z`
-- Virtual Size: ~ 349.10 Mb  
+- Virtual Size: ~ 349.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.14+7`
+  - `JAVA_VERSION=jdk-17.0.15+6`
   - `SOLR_USER=solr`
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
