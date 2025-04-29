@@ -1,7 +1,7 @@
 ## `unit:ruby3.2`
 
 ```console
-$ docker pull unit@sha256:af881d4aaf6b0d607e8a19eb744d11169e7476aebe2853f4af3cb74c73c1b4b3
+$ docker pull unit@sha256:0b45d986a8c4b04fc10251945f9c82accbe939f0040fc386f47651fd264e5513
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull unit@sha256:af881d4aaf6b0d607e8a19eb744d11169e7476aebe2853f4af3cb7
 ### `unit:ruby3.2` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:c75a2251204d32ee490695042a930703d7d32137c7cbec248c299d373dd18340
+$ docker pull unit@sha256:b986718fd64581af6ada765320affc24a1c3f67713516d486cbf61a1d6e2f926
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **405.8 MB (405827721 bytes)**  
+-	Total Size: **405.9 MB (405851294 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8546e8d2c8688c25951587f3902e16adc1b45094860005060f30627233918591`
+-	Image ID: `sha256:97673f14a928ec6ebc075dd1bc0f3d5486e754b237433edcc073fef7dcf98342`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1745798400'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -86,65 +86,65 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:23b7d26ef1d294256da0d70ce374277b9aab5ca683015073316005cb63d33849`  
-		Last Modified: Tue, 08 Apr 2025 00:22:55 GMT  
-		Size: 48.5 MB (48490541 bytes)  
+	-	`sha256:cf05a52c02353f0b2b6f9be0549ac916c3fb1dc8d4bacd405eac7f28562ec9f2`  
+		Last Modified: Mon, 28 Apr 2025 21:08:11 GMT  
+		Size: 48.5 MB (48491199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07d1b5af933d2dfc3d0dd509d6e20534825e4a537f7b006a6cb5b8e5a1f20905`  
-		Last Modified: Tue, 08 Apr 2025 01:24:20 GMT  
-		Size: 24.0 MB (24011090 bytes)  
+	-	`sha256:63964a8518f54dc31f8df89d7f06714c7a793aa1aa08a64ae3d7f4f4f30b4ac8`  
+		Last Modified: Mon, 28 Apr 2025 21:55:02 GMT  
+		Size: 24.0 MB (24011181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb98adba0eb44a2e4facf9ca3626a4a66feedd0dd56d159cca90a35205744e7`  
-		Last Modified: Tue, 08 Apr 2025 02:13:59 GMT  
-		Size: 64.4 MB (64396468 bytes)  
+	-	`sha256:ca513cad200b13ead2c745498459eed58a6db3480e3ba6117f854da097262526`  
+		Last Modified: Mon, 28 Apr 2025 22:15:10 GMT  
+		Size: 64.4 MB (64394427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b617a119f8a27982374d94ec6eb3738ae3d38d6fc2c34c865813926cf596a621`  
-		Last Modified: Tue, 08 Apr 2025 03:16:47 GMT  
-		Size: 211.3 MB (211331550 bytes)  
+	-	`sha256:c187b51b626e1d60ab369727b81f440adea9d45e97a45e137fc318be0bb7f09f`  
+		Last Modified: Mon, 28 Apr 2025 23:12:20 GMT  
+		Size: 211.4 MB (211356050 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edbdb653d6d9b7e636eb46afd3aba9cf2f83707e3e13cfa216facc4ef2f1f799`  
-		Last Modified: Tue, 08 Apr 2025 04:49:44 GMT  
-		Size: 190.0 B  
+	-	`sha256:385f0d8a363f25ba58ea2c538a8a28ade443a3d9b7b2c9c11e5d9b752b62994d`  
+		Last Modified: Tue, 29 Apr 2025 00:22:38 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24e8bdf8986d90be56906025bfc840a49eff1804b88c9895005a5b25f5b7d9ac`  
-		Last Modified: Tue, 08 Apr 2025 04:49:45 GMT  
-		Size: 35.7 MB (35743371 bytes)  
+	-	`sha256:c7f44ea5f18638083fd4cfd9d28103dc6d310eadd12b7839732593d99c691fcc`  
+		Last Modified: Tue, 29 Apr 2025 00:22:39 GMT  
+		Size: 35.7 MB (35743512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d30f24474a96c412b1a570409c86ee0d3f551b13bc2010ba4efce09f2166715e`  
-		Last Modified: Tue, 08 Apr 2025 04:49:44 GMT  
-		Size: 144.0 B  
+	-	`sha256:37ca3e280013a0be034b84dc25359d9d96a8591cc0761e0164dd46df02db243c`  
+		Last Modified: Tue, 29 Apr 2025 00:22:38 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46a3961de9e67cd3313d68cd02cfc092456edbf1c922c2bf8478afb493d16915`  
-		Last Modified: Tue, 08 Apr 2025 05:15:13 GMT  
-		Size: 21.9 MB (21851649 bytes)  
+	-	`sha256:f639966cdd2908e109f76f6f62c3e62d52fa130fc7d534e37804a7cee401610e`  
+		Last Modified: Tue, 29 Apr 2025 01:14:35 GMT  
+		Size: 21.9 MB (21851873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:952b08d4d9039dd33d8a1376c7e269c4104110bfbec8a1684553476f276f7975`  
-		Last Modified: Tue, 08 Apr 2025 05:15:12 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:4460b7b04573ba935f1752fcf68054675bcd9ddfe30285895c0dee97ea22f3b2`  
+		Last Modified: Tue, 29 Apr 2025 01:14:34 GMT  
+		Size: 1.3 KB (1268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7a4976a71ce1c7dc322657aaed3fb6c1b53364d32d4941dda020eea6ce0dbf5`  
-		Last Modified: Tue, 08 Apr 2025 05:15:12 GMT  
+	-	`sha256:9260e1ea853a86720f79b9dbdac8eaf41a0e7b18f4105ae2875e37a49e3ee841`  
+		Last Modified: Tue, 29 Apr 2025 01:14:34 GMT  
 		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:ruby3.2` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:ebf48e41d8060bea2ceb2afea757bed2a28adaf9e4ecafe2cc8841678001161f
+$ docker pull unit@sha256:013c1a8cbfa25da8875700db88b0cb9f5b1009868d6c6f9e5b0de6ae0f30a1f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.0 KB (27954 bytes)**  
+-	Total Size: **28.0 KB (27953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0579a9004c88de637b032d621e64c4cf0cf362a0aa96b536c8fdb3013c5a710`
+-	Image ID: `sha256:7994a7becaafd1116b5a349c775d7dbabc0498647dde52d85ca5712e7ec5c337`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e030ce0b62883532b4ce291154e8c1bb7248681e8a3117ad1726fa756b3b8f2f`  
-		Last Modified: Tue, 08 Apr 2025 05:15:13 GMT  
-		Size: 28.0 KB (27954 bytes)  
+	-	`sha256:5ca8ffae099f91a63f5493d9049b6431da0f1a59f65d21ed700005f12ef8f1a4`  
+		Last Modified: Tue, 29 Apr 2025 01:14:34 GMT  
+		Size: 28.0 KB (27953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:ruby3.2` - linux; arm64 variant v8
