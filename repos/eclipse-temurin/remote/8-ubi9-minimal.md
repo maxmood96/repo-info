@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8-ubi9-minimal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:df2b2f7de355c936442c30369e67894337c8905af5c3bea48b6bc96d9a75c7d5
+$ docker pull eclipse-temurin@sha256:36f5376dd32b25ee89e22f0bde38c4466e3ac12835556ba72954decc6f82f05e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -246,52 +246,52 @@ $ docker pull eclipse-temurin@sha256:115b66cb57a31399fd35104c68fadac91be6a7c3274
 ### `eclipse-temurin:8-ubi9-minimal` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:fb6907543c578ad69e60e859e9045866ad8d783505c04fc0cfb359a3df2a2e6b
+$ docker pull eclipse-temurin@sha256:cf39576c300ff21c687447a0aca0e6a2714b2ad6ca678943a32000fae5eea3f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.4 MB (126439549 bytes)**  
+-	Total Size: **126.2 MB (126244995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5361b5bbea8c3259bc0bf755f28710beebe18e6590a3621cc20d9cf4fb23b01`
+-	Image ID: `sha256:8df77da73b829699d6c256d6ea3d98b1b3dc61b66522a6132384147ca91b60ad`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL maintainer="Red Hat, Inc."
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL vendor="Red Hat, Inc."
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL url="https://www.redhat.com"
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.5"       distribution-scope="public"
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL io.openshift.expose-services=""
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Tue, 25 Mar 2025 15:07:41 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 ENV container oci
-# Tue, 25 Mar 2025 15:07:42 GMT
-COPY dir:b00ac549f2dec3c1bd1264d0d7e9b7a2b7f966cc212ebc6aee6ca6e7f8acdce4 in / 
-# Tue, 25 Mar 2025 15:07:42 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
+COPY dir:352b288c8223eaef7c671c611c93e11c1f1a08ec40f3f05f199babc323ce9c37 in / 
+# Sun, 27 Apr 2025 20:21:59 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Tue, 25 Mar 2025 15:07:42 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 15:07:43 GMT
+# Sun, 27 Apr 2025 20:21:59 GMT
 RUN . /cachi2/cachi2.env &&     rm -rf /var/log/*
-# Tue, 25 Mar 2025 15:07:43 GMT
-LABEL "build-date"="2025-03-25T15:07:15" "architecture"="ppc64le" "vcs-type"="git" "vcs-ref"="63823c7605fee63261a8e33cad8085bc4bb24676" "build-date"="2025-03-25T14:50:12Z" "release"="1742914212"
-# Tue, 25 Mar 2025 15:08:06 GMT
-RUN /bin/sh
+# Sun, 27 Apr 2025 20:21:59 GMT
+COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
+# Sun, 27 Apr 2025 20:21:59 GMT
+LABEL "build-date"="2025-04-28T15:57:47" "architecture"="ppc64le" "vcs-type"="git" "vcs-ref"="f072486a5ead2d7d882ba4af2ce72e19cce20791" "release"="1745855087"
 # Sun, 27 Apr 2025 20:21:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk
 # Sun, 27 Apr 2025 20:21:59 GMT
@@ -313,51 +313,47 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:32cf36dcf251c02cfc81f25bda80482c1e6394e4c1c7cb07317eebdc82a6ef45`  
-		Last Modified: Tue, 25 Mar 2025 18:27:46 GMT  
-		Size: 43.8 MB (43784360 bytes)  
+	-	`sha256:e32416660495649b2ba0129e756351f46ec1023f3bc9594febaf780fbab240ec`  
+		Last Modified: Mon, 28 Apr 2025 18:29:40 GMT  
+		Size: 44.1 MB (44107495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37f45749a0d155c224422d2f971c243e88e0afd5c485b88efda6760e3b544483`  
-		Last Modified: Tue, 25 Mar 2025 18:27:43 GMT  
-		Size: 455.0 B  
+	-	`sha256:6996b2f2feb522ede46945b0975b09aeb2bfb6324b3f69796498cf5a57bfc426`  
+		Last Modified: Tue, 29 Apr 2025 18:41:13 GMT  
+		Size: 30.0 MB (29966503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8dd16b4078507feb1a749b2528be46acfd33dc5eb554c6066f4283898325da2`  
-		Last Modified: Wed, 23 Apr 2025 16:36:18 GMT  
-		Size: 30.5 MB (30483703 bytes)  
+	-	`sha256:16eb37f71745f573a9e73982fb3a92f48e6e8979ebb074b35ec8bb96f263ba56`  
+		Last Modified: Tue, 29 Apr 2025 18:41:13 GMT  
+		Size: 52.2 MB (52168556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:557b4242e73519e1cba1d6b7af6970b46472e8cc288b15fdc9f6ce0a0219b96f`  
-		Last Modified: Mon, 28 Apr 2025 20:11:04 GMT  
-		Size: 52.2 MB (52168589 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d026941b9820218c7dccd4bd0eb84ed6a4af6fc54a5523da78c95953851af73`  
-		Last Modified: Mon, 28 Apr 2025 20:11:00 GMT  
+	-	`sha256:66a493b90ec5d6d9bde43053caadd1bf0c8e1b0c38269331c496612f0dc21b19`  
+		Last Modified: Tue, 29 Apr 2025 18:41:11 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69be83a32cc9101d26b79777bc8fa210ade8359a8af76c6c660595b4e03d6f75`  
-		Last Modified: Mon, 28 Apr 2025 20:11:00 GMT  
-		Size: 2.3 KB (2315 bytes)  
+	-	`sha256:ccebdb419bba02a39c4f4c69a59926d4c64d013ecae394cad722487d9db70fee`  
+		Last Modified: Tue, 29 Apr 2025 18:41:12 GMT  
+		Size: 2.3 KB (2314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:8-ubi9-minimal` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:75a3ac10da27f0601a80cb4d2e7978afe4865c838c23407b36051238561cecca
+$ docker pull eclipse-temurin@sha256:5afb608034c5360c00b7eac093a654b1e864290d2e684f57e0791327cb9344f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3721114 bytes)**  
+-	Total Size: **2.6 MB (2595505 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11ee977b84563e259930f76c82a42f7c7c1fbd3b1a54765b041199d6dcc35894`
+-	Image ID: `sha256:fcf8a1757cc287d4596b6b132c002755fc2a96b57dcf47a4965cd769a79d0e79`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5e3f3393d44c6f217506ac28b79cc110ff320b7cdd0f6cd43174cf7be3bd752`  
-		Last Modified: Mon, 28 Apr 2025 20:11:00 GMT  
-		Size: 3.7 MB (3700422 bytes)  
+	-	`sha256:aa316445d200e4943069faf1890c6e21d2b880ce46b8a00641825a2c68da1e18`  
+		Last Modified: Tue, 29 Apr 2025 18:41:11 GMT  
+		Size: 2.6 MB (2575583 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f825ef4dfeb3100772b87a62bfc4f4aa68784415fa89e175020ac6e846b770fd`  
-		Last Modified: Mon, 28 Apr 2025 20:11:00 GMT  
-		Size: 20.7 KB (20692 bytes)  
+	-	`sha256:1cb709d080c7e248dbe1a396dc4762f5f5d0420f664b483f35378f1a583882e8`  
+		Last Modified: Tue, 29 Apr 2025 18:41:11 GMT  
+		Size: 19.9 KB (19922 bytes)  
 		MIME: application/vnd.in-toto+json
