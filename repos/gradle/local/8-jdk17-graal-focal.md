@@ -1,9 +1,9 @@
-# `gradle:8.13.0-jdk17-graal-focal`
+# `gradle:8.14.0-jdk17-graal-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:29ab1d3d67fed9ede4802865cf2a0702087bd50914cda5ebc6082a23ec994946`
-- Created: `2025-03-27T21:20:39Z`
+- Image ID: `sha256:8eb1317645b2f2c0eff1a19ae69649de3e16877b8865dcd7c87b462fb865a41d`
+- Created: `2025-04-26T01:26:29Z`
 - Virtual Size: ~ 1.18 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=8.13`
+  - `GRADLE_VERSION=8.14`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -1657,19 +1657,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-212.232`
+### `dpkg` source package: `linux=5.4.0-214.234`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-212.232`
+- `linux-libc-dev:amd64=5.4.0-214.234`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-214.234
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-214.234.dsc' linux_5.4.0-214.234.dsc 7401 SHA512:23d0e852135b6ac10328cfc94f8da64e553bf3cf7b56e5ac4c17cb122e5121cfd3ad9d3eab25edc8939c44b2dc6f0af9c39286693fd0dd4d75b7e0e19d1d947f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-214.234.diff.gz' linux_5.4.0-214.234.diff.gz 10088594 SHA512:8f6ee1a2ef8f4d51087fc89af3dd73ee50037fd8a0ed4ae7666dbc04252fc712a5d91491f28d0cc133b801bd836a770d19ae5a0b5684f1beebb6cc7b705c6a7c
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -1932,11 +1937,11 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.10.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.10.debian.tar.xz 190520 SHA512:6782b86834c3643acd64ecf68643af47e030fded12ed90bf84c40072c63bdcd01ada54bdf0eb8ef54123c70d5b96dd447b498ed1a0e0c88efcd56126e2c9e646
 ```
 
-### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.12`
+### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.13`
 
 Binary Packages:
 
-- `openssh-client=1:8.2p1-4ubuntu0.12`
+- `openssh-client=1:8.2p1-4ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1949,9 +1954,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.13.dsc' openssh_8.2p1-4ubuntu0.13.dsc 3102 SHA512:0878b302914b6993ffdaabcf840c2685179324dfcbe5fadd22aa9e75589497e969704ffb3fee29ccd229925cb75d8405c34b8e63195b9a9e2f34a0d55b26b74d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.13.debian.tar.xz' openssh_8.2p1-4ubuntu0.13.debian.tar.xz 186132 SHA512:54a3c8d3a1e042441598a32a0f45db803f676dd3a52c9d58e8dedf1e15bd1140a6fd69143e58858b1ae1a948d015f0b074c022b9dbb40bfcfeee2a7172e5190b
+```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.24`
 

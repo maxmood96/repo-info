@@ -1,9 +1,9 @@
-# `gradle:8.13.0-jdk-lts-and-current-graal`
+# `gradle:8.14.0-jdk-lts-and-current-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aab069af42a27a0400f95c00e928160c163399e0cd3d969e869531010917b574`
-- Created: `2025-04-15T14:24:24Z`
+- Image ID: `sha256:1421219cf8b025d7f8c53783b4fb9f832ff8ad36bfce10deb808a98066d9dd50`
+- Created: `2025-04-26T01:26:29Z`
 - Virtual Size: ~ 1.96 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_LTS_HOME=/opt/java/graalvm21`
   - `JAVA_CURRENT_HOME=/opt/java/graalvm24`
-  - `GRADLE_VERSION=8.13`
+  - `GRADLE_VERSION=8.14`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -1883,19 +1883,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-57.59`
+### `dpkg` source package: `linux=6.8.0-58.60`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-57.59`
+- `linux-libc-dev:amd64=6.8.0-58.60`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-58.60
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-58.60.dsc' linux_6.8.0-58.60.dsc 9342 SHA512:f807eef4a42a178f226c7895b7cfba8bee02db9eef75e486855dd8c411dd9ac9794358c745a8e7bac426b5abea5b36d7ce2921666997bb35a2d34e76c274ad52
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-58.60.diff.gz' linux_6.8.0-58.60.diff.gz 5047026 SHA512:5b93e1fef08fca061b8c65580b6b009cbda6dd0cca7ec29f7e90a156378a2fe49f9d6a570529c704a3de735e6e4aa86398eee32ffe6890118163333ae203ea26
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2182,11 +2187,11 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
 ```
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.9`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.11`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.9`
+- `openssh-client=1:9.6p1-3ubuntu13.11`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2198,9 +2203,15 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.11.dsc' openssh_9.6p1-3ubuntu13.11.dsc 3346 SHA512:b98228441cdfa73bdde5a2a0dcb2f43be26678434e3bf36898e36d00ec336a74411948740b92f0242b25c1c0d21eac1f3a58d814583061e945a0038019e485a9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.11.debian.tar.xz' openssh_9.6p1-3ubuntu13.11.debian.tar.xz 206452 SHA512:5ca42cf0d645111aced486dcdd0702eaaeb5bbd934f29d29304512a946349611d1eb29eaa5a9624fb6f3dde2890d04c7567386bbc090800995ead139ea31fc1d
+```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
