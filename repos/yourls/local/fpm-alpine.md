@@ -1,10 +1,10 @@
-# `yourls:1.10.0-fpm-alpine`
+# `yourls:1.10.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c328ea9370d9eb6101f9d7401032a0ebb43a5731f4abf1db3e6d14503775af0`
-- Created: `2025-04-03T16:33:43Z`
-- Virtual Size: ~ 105.81 Mb  
+- Image ID: `sha256:eed4c2849403e392c9b5ba2324f9e8f3a093d69bd84706a87c934e6a1196fd87`
+- Created: `2025-04-25T02:48:28Z`
+- Virtual Size: ~ 105.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["container-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
   - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
-  - `YOURLS_VERSION=1.10.0`
-  - `YOURLS_SHA256=2756e534ef8a92fc183af5000583b354c9f147beca4a35f68dbe1b0ed0e40bc5`
+  - `YOURLS_VERSION=1.10.1`
+  - `YOURLS_SHA256=ec21841af21194c8ef06a8eaaea5bf26d329741f9d09e04b32685a2d8ac4027e`
 
 ## `apk` (`.apk`-based packages)
 
