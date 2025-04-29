@@ -1,7 +1,7 @@
 ## `node:jod-bullseye-slim`
 
 ```console
-$ docker pull node@sha256:ad79dd24a42f21945a6ff7cf090ad40a73face8e6bd7d16270393da6b2d68b71
+$ docker pull node@sha256:8ae9bd156b2afe831584fef3eec0ab1a258f2c42dec917d15e6f843aa5bca7c8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,19 +16,19 @@ $ docker pull node@sha256:ad79dd24a42f21945a6ff7cf090ad40a73face8e6bd7d16270393d
 ### `node:jod-bullseye-slim` - linux; amd64
 
 ```console
-$ docker pull node@sha256:f815b071b348d132ce017497231f5c3652227af123b6eaa5661292a1f12144d3
+$ docker pull node@sha256:178f72244e5e73240b8ca535752d7c41430f24dbf82da23d71c00bc8805c1df7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.4 MB (80435868 bytes)**  
+-	Total Size: **80.4 MB (80433021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b77bd7a8ba2f90b72c9469921a02409adacdbe1b1f53e2f35e094e7fc39036d6`
+-	Image ID: `sha256:ec1670580653b736edbaa55cd8987058f6160560795207672a9f834760ff3298`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1743984000'
+# Wed, 23 Apr 2025 08:50:54 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1745798400'
 # Wed, 23 Apr 2025 08:50:54 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Wed, 23 Apr 2025 08:50:54 GMT
@@ -48,49 +48,49 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:b983e127c643116d446fa1b64216f464e1d06a8bfaeeb8a895c361c1bc3f5652`  
-		Last Modified: Tue, 08 Apr 2025 00:23:09 GMT  
-		Size: 30.3 MB (30257419 bytes)  
+	-	`sha256:c8e1eb8ab3b017bd9e33ddec83ebdd8292c542bbd14a8d5a6cfa2edc3ad3b8eb`  
+		Last Modified: Mon, 28 Apr 2025 21:08:07 GMT  
+		Size: 30.3 MB (30254604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fe29a9e48c6bc9c73dcfe86ab39922326f221c43e9b38c5a2bd271fb535855`  
-		Last Modified: Wed, 23 Apr 2025 14:04:12 GMT  
-		Size: 4.1 KB (4076 bytes)  
+	-	`sha256:05ab9d7b6191de8c7acd11387c62d8c3d6f756548a4430f01281cd52a796562f`  
+		Last Modified: Mon, 28 Apr 2025 21:57:54 GMT  
+		Size: 4.1 KB (4068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af3e38ce17e12b3dda2b27b8194ef8894f0db33b2e6225f5c120b5877a31665b`  
-		Last Modified: Wed, 23 Apr 2025 14:04:13 GMT  
-		Size: 48.4 MB (48437915 bytes)  
+	-	`sha256:d7406ec698d45d6e6012bf00376d1bb8b9a678737abe8d8576e7c36cd75cd374`  
+		Last Modified: Mon, 28 Apr 2025 21:57:55 GMT  
+		Size: 48.4 MB (48437889 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a16ff64ee0cdcc6f92c0ecd286b6a50a6d72741ea8f18fe2f0e03b6c19e49be`  
-		Last Modified: Wed, 23 Apr 2025 14:04:13 GMT  
-		Size: 1.7 MB (1736008 bytes)  
+	-	`sha256:0d823945a55743a3c55499214de2cc2320964bbcb55d36b35bdc5097828078a5`  
+		Last Modified: Mon, 28 Apr 2025 21:57:54 GMT  
+		Size: 1.7 MB (1736012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bca84bd91ec213269c3ddf1aeac5c3209ce063c7efa8752edf1040c6f4c51dd3`  
-		Last Modified: Wed, 23 Apr 2025 14:04:13 GMT  
-		Size: 450.0 B  
+	-	`sha256:a8ec17fd6b45baa135f3498425a0d91d86dc75f9be8c90ed3a844a5fa0436873`  
+		Last Modified: Mon, 28 Apr 2025 21:57:54 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:jod-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:e4a42c2c4c671f4691f6ee8498b6daf305ffd4b0cdf185ba46eac6c29c803f5f
+$ docker pull node@sha256:8544a34e6d2be9f1f66aa2b5c6bc94d1ef880e1f960faaae20511a567bc8060d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2895113 bytes)**  
+-	Total Size: **2.9 MB (2895166 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8552d029f24ee6e94335e80a500228e410f597740e3e1a7116a278a18c43ec24`
+-	Image ID: `sha256:fe736e7eae07c6055e53df3110b5cec3e6b8755ba65df65515acb78e686c96af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6ec24da402bfb109bedb706716bfba70833207e55dead450448fa8ac4a770b43`  
-		Last Modified: Wed, 23 Apr 2025 14:04:13 GMT  
-		Size: 2.9 MB (2869465 bytes)  
+	-	`sha256:ec4ea9c24de3bfec5156aa51a2eed2e91929a66fabf4af40eb0540ea377a421e`  
+		Last Modified: Mon, 28 Apr 2025 21:57:54 GMT  
+		Size: 2.9 MB (2869519 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:acadafa8e7254404a7031de1b105258acad30ee41c5ab3652e481929ecbeb003`  
-		Last Modified: Wed, 23 Apr 2025 14:04:12 GMT  
-		Size: 25.6 KB (25648 bytes)  
+	-	`sha256:a21724eb22f78a70950966bb97347e1f62af4cad841f106f29b0a8f3ca452949`  
+		Last Modified: Mon, 28 Apr 2025 21:57:54 GMT  
+		Size: 25.6 KB (25647 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:jod-bullseye-slim` - linux; arm variant v7
