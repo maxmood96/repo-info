@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b3045c6ae907a52b316bf9698ae953ae9cd681eee184baf00132b842ab2ef85`
+- Image ID: `sha256:3330e061b25321c37c0e15f7d61b81bfecc39fc964eca4aa4e88834af786fac0`
 - Created: `2025-02-20T11:07:31Z`
-- Virtual Size: ~ 342.36 Mb  
+- Virtual Size: ~ 342.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u442-b06`
+  - `JAVA_VERSION=jdk8u452-b09`
   - `LIGHTSTREAMER_VERSION=7.4.6`
   - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.6/Lightstreamer-7.4.6.tar.gz`
 - Labels:
