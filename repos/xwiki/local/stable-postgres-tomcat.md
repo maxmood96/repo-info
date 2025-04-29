@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64c290096a5765c6fc18e950a77f540527d76c9c091711c17e4c572030a138c0`
-- Created: `2025-04-17T12:33:22Z`
+- Image ID: `sha256:65983035da8e9539328e8690ff88edc428c2ca9e0d0e000b96a988050f0acdfa`
+- Created: `2025-04-28T15:52:06Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.40`
   - `TOMCAT_SHA512=2bde772acf2e6f300f0f8341eb4de7da5d59af6a95f607bcdb92e4c22e0a253d437ea9a423d7d3e334af1c608f33489f32d32d346fbef5b0abef1dee666895ea`
-  - `XWIKI_VERSION=17.2.2`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.2.2`
-  - `XWIKI_DOWNLOAD_SHA256=257501fc3cccfcaf7f82f252410aa6cbf080c1ea55a8e158ac9728c29959a992`
+  - `XWIKI_VERSION=17.3.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.3.0`
+  - `XWIKI_DOWNLOAD_SHA256=ec6e09a392b5f0928fee68f40ffe218ceecad3113597127a0ecd8c67d7d8ce00`
   - `POSTGRES_JDBC_VERSION=42.7.4`
   - `POSTGRES_JDBC_SHA256=188976721ead8e8627eb6d8389d500dccc0c9bebd885268a3047180274a6031e`
   - `POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.4`
@@ -2866,11 +2866,11 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.4-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.4-3build1.diff.gz' libxinerama_1.1.4-3build1.diff.gz 8639 SHA512:d2a13c86831e6fdc23f6f02a4afa8cd7e0d404a87805d793085cb9b59171fe7dd8f74eee8cd2a4c471802dfd24bf4effe2cf6514032066ee20ce663a8d3555f8
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.2`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.3`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.2`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
@@ -2880,10 +2880,10 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.2.dsc 3079 SHA512:c0dc23d454b022b80e89e8037cd2b1de9760bfe3360310b027984cd3a8c5c3841f4f4b6fe626a7ce3b193ceb5b72712aff407810c9a01837f851040ee90d2869
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.3.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.3.dsc 3038 SHA512:368ed5781c9ff0945ffa1a902b8e39e402b994ae9ca0e0a809a3280b7a15b8b392c494ad4ee11a2c51b3d3f35537d4e46fb84ab5d62425b7b87b2fa4684a4a1a
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.2.debian.tar.xz 37588 SHA512:54f987d13780e1fa70c7de5af606921cf57710c9f9f52ae758fd6f44f3e5026dd5dd9902d999b6392e2db3c3c8cbdf9dbe1a971ed12e1219f0cba25ef5f370ed
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.3.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.3.debian.tar.xz 39548 SHA512:a31c46293830d779a76aefbe33aa8fe3e5b8ab21431db4d9f2db33d99f0edb94ad7cf73f14517b1aeb47281add30763f2168ae121a8c3dc6b4fa184a2172afee
 ```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`

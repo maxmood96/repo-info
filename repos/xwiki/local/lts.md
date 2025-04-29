@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:523970c3625473c8f490dfe73336685f4a4db987394d17d6e6d3899c42bb2eff`
-- Created: `2025-03-11T16:16:28Z`
+- Image ID: `sha256:59202a27835ada12d3c50d869374ea7ecce33eb8826166930017dd5e9f6bfe66`
+- Created: `2025-04-25T08:12:38Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.104`
   - `TOMCAT_SHA512=b387fae59f1eda13a5c2336243514d9568057815689057ff920be696548ea6afbcfc0933934d3d6f8c4e2b5108322dc7509bfe934c49d05905c6ce87f1dff53c`
-  - `XWIKI_VERSION=16.10.5`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.5`
-  - `XWIKI_DOWNLOAD_SHA256=ecc2d3e639273eff8ecb441aa55a8baefb87ec02826d178fb1e3aff1223dee4d`
+  - `XWIKI_VERSION=16.10.6`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.6`
+  - `XWIKI_DOWNLOAD_SHA256=b36e814a766e72ce0774a752f5c595ff144f712b36de34fd6869388b3c5f800e`
   - `MYSQL_JDBC_VERSION=9.1.0`
   - `MYSQL_JDBC_SHA256=8776e2ebc46072c9a47ea59d98298c4273bd9f16a7b26b5dfa4744535aa26c62`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.1.0`
@@ -2877,14 +2877,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.2.dsc 3079 SHA512:c0dc23d454b022b80e89e8037cd2b1de9760bfe3360310b027984cd3a8c5c3841f4f4b6fe626a7ce3b193ceb5b72712aff407810c9a01837f851040ee90d2869
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.2.debian.tar.xz 37588 SHA512:54f987d13780e1fa70c7de5af606921cf57710c9f9f52ae758fd6f44f3e5026dd5dd9902d999b6392e2db3c3c8cbdf9dbe1a971ed12e1219f0cba25ef5f370ed
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`
 
