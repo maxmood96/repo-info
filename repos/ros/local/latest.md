@@ -2953,14 +2953,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.2.dsc 3079 SHA512:c0dc23d454b022b80e89e8037cd2b1de9760bfe3360310b027984cd3a8c5c3841f4f4b6fe626a7ce3b193ceb5b72712aff407810c9a01837f851040ee90d2869
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.2.debian.tar.xz 37588 SHA512:54f987d13780e1fa70c7de5af606921cf57710c9f9f52ae758fd6f44f3e5026dd5dd9902d999b6392e2db3c3c8cbdf9dbe1a971ed12e1219f0cba25ef5f370ed
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3build2`
 

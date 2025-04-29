@@ -1723,14 +1723,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.9.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.9.dsc 3162 SHA512:58d9ce782cb87d448f71f14fced4914b8c203e8fda7d23c3655d20ebf616c43242165af6a7367a739c17b87d786e09f0598c74b629539746cf3fa00e7a547c32
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.9.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.9.debian.tar.xz 44136 SHA512:6093df0715bc7211928f57a62d6b9874ebaec01d2f4c9fbd815ea37ce720e7ebe6b8279e33defa730e1e5ba72f65a7de2a6a1a8104b4bb3636498d55ee0e18e7
-```
 
 ### `dpkg` source package: `libyaml=0.2.2-1`
 
