@@ -1,7 +1,7 @@
 ## `monica:4-apache`
 
 ```console
-$ docker pull monica@sha256:d7fa0cf92e8aabad881d1630e9325c6fcc93c0f798b1111b631146e4b7efa3be
+$ docker pull monica@sha256:84bb930274f31883e6aa0999f24fdc1e2ddd2e050ba8a9700190533a0876af2d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -482,19 +482,19 @@ $ docker pull monica@sha256:a65170665053fdcd01715b050d5447881af538c851ef89a2fdfe
 ### `monica:4-apache` - linux; arm variant v7
 
 ```console
-$ docker pull monica@sha256:8e4def4d12939a1ebf205f10c5edc2e0109062391c934265b7980b60c8f645c6
+$ docker pull monica@sha256:0391c01a9c52a0671ba79b408531a872b8896a18607581a3508f1bbb83e51633
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.7 MB (174655298 bytes)**  
+-	Total Size: **174.7 MB (174654392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40ebf15afe6a41cc8186c98069c9ff4f6384d8b408ad5df2b11eef2b06cd5148`
+-	Image ID: `sha256:1399dde107150557df755459afe16bebc2052fb9cbb06b1bdca5f61df82e4874`
 -	Entrypoint: `["\/usr\/local\/bin\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Thu, 13 Mar 2025 21:54:41 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1743984000'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1745798400'
 # Thu, 13 Mar 2025 21:54:41 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Thu, 13 Mar 2025 21:54:41 GMT
@@ -551,160 +551,160 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 13 Mar 2025 21:54:41 GMT
 CMD ["apache2-foreground"]
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 LABEL org.opencontainers.image.authors=Alexis Saettler <alexis@saettler.org> org.opencontainers.image.title=MonicaHQ, the Personal Relationship Manager org.opencontainers.image.description=This is MonicaHQ, your personal memory! MonicaHQ is like a CRM but for the friends, family, and acquaintances around you. org.opencontainers.image.url=https://monicahq.com org.opencontainers.image.source=https://github.com/monicahq/docker org.opencontainers.image.vendor=Monica
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         bash         busybox-static     ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libicu-dev         zlib1g-dev         libzip-dev         libpng-dev         libpq-dev         libxml2-dev         libfreetype6-dev         libjpeg62-turbo-dev         libgmp-dev         libmemcached-dev         libssl-dev         libwebp-dev         libcurl4-openssl-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     if [ ! -e /usr/include/gmp.h ]; then ln -s /usr/include/$debMultiarch/gmp.h /usr/include/gmp.h; fi;    docker-php-ext-configure intl;     docker-php-ext-configure gd --with-jpeg --with-freetype --with-webp;     docker-php-ext-configure gmp;     docker-php-ext-install -j$(nproc)         intl         zip         bcmath         gd         gmp         pdo_mysql         mysqli         pdo_pgsql         soap     ;         pecl install APCu-5.1.24;     pecl install memcached-3.3.0;     pecl install redis-6.2.0;         docker-php-ext-enable         apcu         memcached         redis     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;         mkdir -p /var/spool/cron/crontabs;     rm -f /var/spool/cron/crontabs/root;     echo '* * * * * php /var/www/html/artisan schedule:run -v' > /var/spool/cron/crontabs/www-data # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS=0 PHP_OPCACHE_MAX_ACCELERATED_FILES=20000 PHP_OPCACHE_MEMORY_CONSUMPTION=192 PHP_OPCACHE_MAX_WASTED_PERCENTAGE=10
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 ENV PHP_MEMORY_LIMIT=512M PHP_UPLOAD_LIMIT=512M
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;         docker-php-ext-enable opcache;     {         echo '[opcache]';         echo 'opcache.enable=1';         echo 'opcache.revalidate_freq=0';         echo 'opcache.validate_timestamps=${PHP_OPCACHE_VALIDATE_TIMESTAMPS}';         echo 'opcache.max_accelerated_files=${PHP_OPCACHE_MAX_ACCELERATED_FILES}';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.max_wasted_percentage=${PHP_OPCACHE_MAX_WASTED_PERCENTAGE}';         echo 'opcache.interned_strings_buffer=16';         echo 'opcache.fast_shutdown=1';     } > $PHP_INI_DIR/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> $PHP_INI_DIR/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > $PHP_INI_DIR/conf.d/limits.ini; # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;         a2enmod headers rewrite remoteip;     {         echo RemoteIPHeader X-Real-IP;         echo RemoteIPTrustedProxy 10.0.0.0/8;         echo RemoteIPTrustedProxy 172.16.0.0/12;         echo RemoteIPTrustedProxy 192.168.0.0/16;     } > $APACHE_CONFDIR/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;         {         echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > $APACHE_CONFDIR/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;     APACHE_DOCUMENT_ROOT=/var/www/html/public;     sed -ri -e "s!/var/www/html!${APACHE_DOCUMENT_ROOT}!g" $APACHE_CONFDIR/sites-available/*.conf;     sed -ri -e "s!/var/www/!${APACHE_DOCUMENT_ROOT}!g" $APACHE_CONFDIR/apache2.conf $APACHE_CONFDIR/conf-available/*.conf # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 WORKDIR /var/www/html
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 ENV MONICA_VERSION=v4.1.2
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 LABEL org.opencontainers.image.revision=32028ce3ce79cef38df5d27a297e5b20680f0065 org.opencontainers.image.version=v4.1.2
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         for ext in tar.bz2 tar.bz2.asc; do         curl -fsSL -o monica-${MONICA_VERSION}.$ext "https://github.com/monicahq/monica/releases/download/${MONICA_VERSION}/monica-${MONICA_VERSION}.$ext";     done;         GPGKEY='BDAB0D0D36A00466A2964E85DE15667131EA6018';     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$GPGKEY";     gpg --batch --verify monica-${MONICA_VERSION}.tar.bz2.asc monica-${MONICA_VERSION}.tar.bz2;         tar -xf monica-${MONICA_VERSION}.tar.bz2 -C /var/www/html --strip-components=1;         gpgconf --kill all;     rm -rf "$GNUPGHOME" monica-${MONICA_VERSION}.tar.bz2 monica-${MONICA_VERSION}.tar.bz2.asc;         cp /var/www/html/.env.example /var/www/html/.env;     chown -R www-data:www-data /var/www/html;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 COPY entrypoint.sh queue.sh cron.sh /usr/local/bin/ # buildkit
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-# Tue, 01 Apr 2025 20:44:08 GMT
+# Mon, 28 Apr 2025 07:13:40 GMT
 CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:addc1be20d0979aa781d79a726ebf749adbc030186e63a44319274194e89cfa3`  
-		Last Modified: Tue, 08 Apr 2025 00:23:15 GMT  
-		Size: 23.9 MB (23937867 bytes)  
+	-	`sha256:a3677b10b3c2b17c251b045a96a5c5899810ee1ee2fa8982715ba998fd10e6ad`  
+		Last Modified: Mon, 28 Apr 2025 21:15:45 GMT  
+		Size: 23.9 MB (23938074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7d4b097a6bd1e1c6005148baf6fe5c3fc8f71c3806b0533176b9e71d30fae09`  
-		Last Modified: Tue, 08 Apr 2025 02:06:12 GMT  
+	-	`sha256:eb081af16798c509df91bb641dcb17bd3d33d61f0cf2bac99faf83bffbd9b7da`  
+		Last Modified: Mon, 28 Apr 2025 22:37:30 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2b59a7abdeed6ca1e9edaa9c4d716d1e51f3acd76ac9b8a9593379251477a15`  
-		Last Modified: Tue, 08 Apr 2025 02:06:14 GMT  
-		Size: 76.2 MB (76162685 bytes)  
+	-	`sha256:fdaf0e8dc8cea29863841153fe9f3a8f89bbb039cb649bf7121f6bd16afce897`  
+		Last Modified: Mon, 28 Apr 2025 22:37:33 GMT  
+		Size: 76.2 MB (76161444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:911e77faae9141f2a82370cde20bb002409354ce3554b28663322cebbfd4d775`  
-		Last Modified: Tue, 08 Apr 2025 02:06:12 GMT  
+	-	`sha256:21a0d9733969300ceb14706abdd215b86e83169f1554815cbb19abf8d4283b57`  
+		Last Modified: Mon, 28 Apr 2025 22:37:30 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e979a46700c4cc8c523fd97c1920eda2a65475e59e5b50da04ec094381646cc4`  
-		Last Modified: Tue, 08 Apr 2025 02:10:09 GMT  
-		Size: 18.9 MB (18857333 bytes)  
+	-	`sha256:4f6f48e0c7265485795f32b113efa9b04a68faff23123e36dcc1c1409a0e2ebe`  
+		Last Modified: Mon, 28 Apr 2025 22:41:55 GMT  
+		Size: 18.9 MB (18857578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b785355f97ba083df35cb14c0fd6f4ca577253c72f4946c98e2965daf3ec4b6`  
-		Last Modified: Tue, 08 Apr 2025 02:10:08 GMT  
+	-	`sha256:aef6e5c0032a0aa361aa51604b1c53cc9877e3052605e5f873db12f418bfd7cd`  
+		Last Modified: Mon, 28 Apr 2025 22:41:54 GMT  
 		Size: 433.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6315b72a13f74b37348b5dc00938e06103a423aa74a44181c5cfb4d60cd94140`  
-		Last Modified: Tue, 08 Apr 2025 02:10:08 GMT  
-		Size: 486.0 B  
+	-	`sha256:65d01a9a8ce471d95f06223a7d884bcf99a1eddbaa15f1e4a668e504b9bd3fbe`  
+		Last Modified: Mon, 28 Apr 2025 22:41:54 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbcaeccdea30adc46cc985bb5f02cdd08bde77a9495ffdc08fe1658be1d8d668`  
-		Last Modified: Tue, 08 Apr 2025 04:02:59 GMT  
-		Size: 12.3 MB (12274424 bytes)  
+	-	`sha256:78823b9f8732a68d79bf400a3b469b4c32770327102e9affcf64fa5a800cac28`  
+		Last Modified: Tue, 29 Apr 2025 00:14:20 GMT  
+		Size: 12.3 MB (12274437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f134050e65b60fb1a31a1cf81b68aeeb50ba688dabab1ea0027114376222f3b8`  
-		Last Modified: Tue, 08 Apr 2025 04:02:58 GMT  
+	-	`sha256:5efe0e71301e74247f1b60c8824dbe6f048092c5d3ece0b8cc16ffa58a0bc1da`  
+		Last Modified: Tue, 29 Apr 2025 00:14:19 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ab47df16abc27aaac162e253eb1c51491fbeffe1d808fb30fb2bdd051848c8`  
-		Last Modified: Tue, 08 Apr 2025 04:02:59 GMT  
-		Size: 9.8 MB (9835022 bytes)  
+	-	`sha256:4828bba0db06b7d724d5b23d4bd98b65a4624d2b4719eb666432e3836e04956a`  
+		Last Modified: Tue, 29 Apr 2025 00:14:20 GMT  
+		Size: 9.8 MB (9835056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:307213bc3ede7b195b260bc49fab4d3fd6dd3a0d70d18a916e69739cce6e0e59`  
-		Last Modified: Tue, 08 Apr 2025 04:02:58 GMT  
-		Size: 2.5 KB (2454 bytes)  
+	-	`sha256:857b478981acc4844ea76bd17754189fdbca635c2cb2962e3616c14771978ede`  
+		Last Modified: Tue, 29 Apr 2025 00:14:19 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d9e671314e09ea402c3ee8e0b6cc679e3b612a40a15b25314ce5205eb003851`  
-		Last Modified: Tue, 08 Apr 2025 04:02:59 GMT  
-		Size: 248.0 B  
+	-	`sha256:f18e7fbaf54893351091840f73cf75bd8f8bf97e5674e4ec58e4d0d2822cd1a0`  
+		Last Modified: Tue, 29 Apr 2025 00:14:20 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2d1ac1889dc8fd1f6bad68169bdfe923853f72caff935e73a19acc9c5a363`  
-		Last Modified: Tue, 08 Apr 2025 04:02:59 GMT  
-		Size: 891.0 B  
+	-	`sha256:956f6f458ff41b7f4410300b2234d9391d481db52d5c587eaa71b41ec51b4ff5`  
+		Last Modified: Tue, 29 Apr 2025 00:14:20 GMT  
+		Size: 893.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:574745571e567268aa6845ab259ca50d0fe8cb9adf6165c850826475b1b1d8be`  
-		Last Modified: Tue, 08 Apr 2025 19:05:06 GMT  
-		Size: 1.0 MB (1041659 bytes)  
+	-	`sha256:4f69ef4e7c5ade3eba463f6762bdbd6d5093b911b563632f3c0f696989da36d0`  
+		Last Modified: Tue, 29 Apr 2025 14:47:25 GMT  
+		Size: 1.0 MB (1041653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e97a3b1b04d0c8b19d226aa7da31e77e030cca03a002446840a8f6ed76f00e94`  
-		Last Modified: Tue, 08 Apr 2025 19:05:06 GMT  
-		Size: 4.0 MB (4042890 bytes)  
+	-	`sha256:88373981f38a8bb50310dd693c62613b22c51b75788627c4cbefe3840dc8be74`  
+		Last Modified: Tue, 29 Apr 2025 14:47:26 GMT  
+		Size: 4.0 MB (4042811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34ebd60056c321679c1856cfa9af5ad11e13986220b614577c9163d6d0ed6aa1`  
-		Last Modified: Tue, 08 Apr 2025 19:05:06 GMT  
+	-	`sha256:b20e20e6b8cea4ee171a42724c318965dcdfde9de71057a5cbfa96de9d334cb9`  
+		Last Modified: Tue, 29 Apr 2025 14:47:25 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7437d4efe957a599df3584769638f70d04388bd57f6337b971f1099a77ef5f1`  
-		Last Modified: Tue, 08 Apr 2025 19:05:06 GMT  
-		Size: 626.0 B  
+	-	`sha256:35fe08a0126d9ee63a3cbe8db26f28a8cd540eac16f53a0e596abb7a516f5241`  
+		Last Modified: Tue, 29 Apr 2025 14:47:25 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5c94da4d940070190cd8cf96b1005482e067965a4792799bd63a07e377ad344`  
-		Last Modified: Tue, 08 Apr 2025 19:05:07 GMT  
-		Size: 574.0 B  
+	-	`sha256:5b80d7cf0c6df4c4432b536658500f35de0f4fa0e89ebfdcce67bdc2bcb519d9`  
+		Last Modified: Tue, 29 Apr 2025 14:47:26 GMT  
+		Size: 576.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7ee836eec09ade86ed9f24e44a2d526a562939197e6af00ae4fea419507df99`  
-		Last Modified: Tue, 08 Apr 2025 19:05:07 GMT  
-		Size: 402.0 B  
+	-	`sha256:3faec8882ed2819a4e9e193e8fe2872470317ae10101eb0310900301180ef4c2`  
+		Last Modified: Tue, 29 Apr 2025 14:47:26 GMT  
+		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d94d4637d3453da2c0a0f57a50aaae0feab4765934d4b78ca05f7eb1c3080e7`  
-		Last Modified: Tue, 08 Apr 2025 19:05:07 GMT  
-		Size: 8.2 KB (8199 bytes)  
+	-	`sha256:39be8918e2e3350ffd2ec28231688d21e5aee9e0a9e56c48fec7c3cabfe6cb42`  
+		Last Modified: Tue, 29 Apr 2025 14:47:26 GMT  
+		Size: 8.2 KB (8200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b62eb27e1d763bc90532db16b4dd2c1a55d24bb235ec47dc96d07afd973dbcef`  
-		Last Modified: Tue, 08 Apr 2025 19:05:09 GMT  
-		Size: 28.5 MB (28485794 bytes)  
+	-	`sha256:d6e500debe287b32edbdd8ddd605fdc4d018facbca7eea50a62a71fe7d49ec7a`  
+		Last Modified: Tue, 29 Apr 2025 14:47:28 GMT  
+		Size: 28.5 MB (28485715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f3ad8a2988aa50d244b2761c8f32a5e5040a5324fbd3e31291ebec2696aec6`  
-		Last Modified: Tue, 08 Apr 2025 19:05:08 GMT  
-		Size: 2.1 KB (2077 bytes)  
+	-	`sha256:df51c7cd6388f8eb42acc87338109936c37940dd20b304e56745197eb12e7de7`  
+		Last Modified: Tue, 29 Apr 2025 14:47:27 GMT  
+		Size: 2.1 KB (2078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `monica:4-apache` - unknown; unknown
 
 ```console
-$ docker pull monica@sha256:365e942847d40cefc6d5e7c54004f8ea30207ce81ae8f814b02879b56c1ce82c
+$ docker pull monica@sha256:4cc035eead2235409baad14c4966943e9f230a1888c83d7dc8a191158c5b72d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.6 KB (71629 bytes)**  
+-	Total Size: **71.6 KB (71628 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06d49e0c54355c544c9e609e715b84737e6a6be16ed574dfc736602acfc8ece9`
+-	Image ID: `sha256:6acbd87fffa6f3366d2770b74b34817869384122e2bba00338af8943a956e9bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6ace087ad38df4df81b6019c37589bd2b71cc6fb34dd26f53dcf59a665e880a`  
-		Last Modified: Tue, 08 Apr 2025 19:05:05 GMT  
-		Size: 71.6 KB (71629 bytes)  
+	-	`sha256:36c35071957df31547ed88b1d7254a73d81827dce60a6575cb7d560f97604810`  
+		Last Modified: Tue, 29 Apr 2025 14:47:25 GMT  
+		Size: 71.6 KB (71628 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `monica:4-apache` - linux; arm64 variant v8
