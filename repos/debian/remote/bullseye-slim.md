@@ -1,7 +1,7 @@
 ## `debian:bullseye-slim`
 
 ```console
-$ docker pull debian@sha256:7aafeb23eaef5d5b1de26e967b9a78f018baaac81dd75246b99781eaaa2d59ef
+$ docker pull debian@sha256:fdd75562fdcde1039c2480a1ea1cd2cf03b18b6e4cb551cabb03bde66ade8a5d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,171 +18,171 @@ $ docker pull debian@sha256:7aafeb23eaef5d5b1de26e967b9a78f018baaac81dd75246b997
 ### `debian:bullseye-slim` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:640cce834d7c13cbb09ffec0a09894370517e983ea1c058efa24978fdad80a4a
+$ docker pull debian@sha256:12ddb9ab52c324019d48d0a73cb694a40101bc97ded6cd262f49ddc4779f3bad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.3 MB (30257419 bytes)**  
+-	Total Size: **30.3 MB (30254604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ad184acc3babba4df7e3126b4a8a13bed727901c11fc121f141445f98e1ddba`
+-	Image ID: `sha256:70c53fd29fab3bd5d1cd0d766de32bfe8d90985479a31ea5c42f1fbaf1e2bc2a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1743984000'
+# Mon, 28 Apr 2025 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1745798400'
 ```
 
 -	Layers:
-	-	`sha256:b983e127c643116d446fa1b64216f464e1d06a8bfaeeb8a895c361c1bc3f5652`  
-		Last Modified: Tue, 08 Apr 2025 00:23:09 GMT  
-		Size: 30.3 MB (30257419 bytes)  
+	-	`sha256:c8e1eb8ab3b017bd9e33ddec83ebdd8292c542bbd14a8d5a6cfa2edc3ad3b8eb`  
+		Last Modified: Mon, 28 Apr 2025 21:08:07 GMT  
+		Size: 30.3 MB (30254604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:8a6843ca8be7142b1ee93aff69658679dcce43fc7dc04bd8f2174e6d15048af5
+$ docker pull debian@sha256:742279fff95ba80dd8b8d03e9a1ada7f7eabb7b155e7c392f91ba0e927357794
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2562469 bytes)**  
+-	Total Size: **2.6 MB (2562523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdd7e8ae8ef322ed4413ccb6908a521c79f37bb4cd25bed518f3770230f59f0e`
+-	Image ID: `sha256:7bcd34b22f51cb39a0f42c30d971d430a51a6f86216418ddd80a7e747ed81fc7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4d290f4068f17731942929061875f957b46cac44d28219ce33371c720fcbeae`  
-		Last Modified: Tue, 08 Apr 2025 00:23:08 GMT  
-		Size: 2.6 MB (2562469 bytes)  
+	-	`sha256:369a6408245510a97b53e0e65d97f80aa950e71fd7169bb5bd786f2336444d8c`  
+		Last Modified: Mon, 28 Apr 2025 21:08:07 GMT  
+		Size: 2.6 MB (2562523 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bullseye-slim` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:b04da799ff9e4e278427561460ab9a95eaa9264e67cde09b1eb306e5c2bc3f7f
+$ docker pull debian@sha256:4fb99f25b986f2a101279093b299aa32e25b5337ee660fd6b5b501beb1a1e35c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 MB (25539135 bytes)**  
+-	Total Size: **25.5 MB (25542427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c163ad39b7cf022fcd764b33bcf677bfdfc4afb538d049c49c8e2cb2d76eacb`
+-	Image ID: `sha256:6007328f267a50701d794c0d79032ce5c4fc44ead7496e643dbc998bf03b5e95`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1743984000'
+# Mon, 28 Apr 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1745798400'
 ```
 
 -	Layers:
-	-	`sha256:bfc445187b87c4f640fe8b85c4ee3c251ce5e7023a5ff0acd053bde1f01e6aaf`  
-		Last Modified: Tue, 08 Apr 2025 00:23:52 GMT  
-		Size: 25.5 MB (25539135 bytes)  
+	-	`sha256:93c17983cb6e26d53fe6219e705b968f8a22ae1b4cb559618bdff5ba501ae39d`  
+		Last Modified: Mon, 28 Apr 2025 21:16:22 GMT  
+		Size: 25.5 MB (25542427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:d034b497ce3e792eec6e21f013e11d61ba19fa5ef45695f8b0eb08c4f669e942
+$ docker pull debian@sha256:2e903ebac8873064447d2ea40f8033d790b7cd3aeaed8e294b10f310a6d20997
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2564653 bytes)**  
+-	Total Size: **2.6 MB (2564707 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff5c9a48db834aff70cf453202dc50c41eba8cf6f94327b0ed2adc76ffbff16d`
+-	Image ID: `sha256:57b777d6177eb99fdd2b2d4e90a170ce43fb2fd4aac9d6a63a34540cd4889cf7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:00f42dc42bd9285323aef3c0dbb204f52504027bd5cad6a8c4e1cb1092f7f827`  
-		Last Modified: Tue, 08 Apr 2025 00:23:52 GMT  
-		Size: 2.6 MB (2564653 bytes)  
+	-	`sha256:a5bf1bf2fa68dbe629d442cbaaf36f0df4855ad27d4f1606a1d9811d52212930`  
+		Last Modified: Mon, 28 Apr 2025 21:16:22 GMT  
+		Size: 2.6 MB (2564707 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:d5f15de3519641d0c2a5a68753dc77fcf1b9b975ecfc60ce6e895aecf81c61c1
+$ docker pull debian@sha256:c208163d7e9851125bd566db426cfa5c91d63ede4db32fa1f0df10511ec7963e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.7 MB (28749498 bytes)**  
+-	Total Size: **28.7 MB (28744645 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:373539c1b39a258a9c55ed059319341cac2f3e7e4508707e269d6ad8f56ec3f5`
+-	Image ID: `sha256:e75cdaa3082ec278f5a83a296216501b10f486b4fa6a9b5f66ef7e4350b23cfa`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1743984000'
+# Mon, 28 Apr 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1745798400'
 ```
 
 -	Layers:
-	-	`sha256:59627ca2e9712141a7d131bec6c9931f8ecea11eac34d96bd1213ccea68e18e5`  
-		Last Modified: Tue, 08 Apr 2025 00:23:35 GMT  
-		Size: 28.7 MB (28749498 bytes)  
+	-	`sha256:5d3a81360c5bb9281a4f735a1468429a1898f1a4fc24a2581dde4cf28ace4488`  
+		Last Modified: Mon, 28 Apr 2025 21:21:09 GMT  
+		Size: 28.7 MB (28744645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:ccf1532b84f8208cb219afd105e96a65808fb2a8bd4fdf5c51341c33fc74e8b2
+$ docker pull debian@sha256:73b70342b2c3619f88dfb6616c2a2b289e2a36ae8c32ff8d8b5ba3acd9e0bfda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2562665 bytes)**  
+-	Total Size: **2.6 MB (2562719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9078cab513b1d0d2e1f4fad8de73fbacfc9f1da97bbddf74a8272fb041e2b966`
+-	Image ID: `sha256:bf2c8653bc23646db1353c26313c6065a214d2987aca96dbf0bec83e597abbaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0e56559aff361895d028ff716d9dce4491bfc598a11d917c0ed5e343ef04fe08`  
-		Last Modified: Tue, 08 Apr 2025 00:23:35 GMT  
-		Size: 2.6 MB (2562665 bytes)  
+	-	`sha256:b4ba208c48c95635a7c4edd229be50f11281d452c6d748ef750ab409b407408a`  
+		Last Modified: Mon, 28 Apr 2025 21:21:09 GMT  
+		Size: 2.6 MB (2562719 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bullseye-slim` - linux; 386
 
 ```console
-$ docker pull debian@sha256:4abd01ec2eba1223b7d93de565f7ba3e15dd65ba15c14703bbd8bdec174cfac7
+$ docker pull debian@sha256:5a7d3b46457e09ea4d3029535a72b4a107c991259ad262964e755261095f4bda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.2 MB (31184573 bytes)**  
+-	Total Size: **31.2 MB (31187893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d5dc50c6604403e861e822ef41906c437fc47b7099afb2503d79afc56423284`
+-	Image ID: `sha256:d5a77bda8f274c05989ddca312c86ef3c60757a2b4d7eed86a99daf045a864b1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1743984000'
+# Mon, 28 Apr 2025 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1745798400'
 ```
 
 -	Layers:
-	-	`sha256:c7f226a3ed9e3a783e859dc8479e50da2694130147ffb4885645e02664eedbec`  
-		Last Modified: Tue, 08 Apr 2025 00:23:04 GMT  
-		Size: 31.2 MB (31184573 bytes)  
+	-	`sha256:73bb1b80ecf1f8784ad6f92a35120b6e2306657fc7e8cbaedca1f45900f3d746`  
+		Last Modified: Mon, 28 Apr 2025 21:08:07 GMT  
+		Size: 31.2 MB (31187893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:ef8f029127f586e6b2b6179c79f610a3b797333b5f9804025327266b7600558f
+$ docker pull debian@sha256:2349da2f248171552e25b41dd20ad85d481af0980eb42a69c82cb76c83a6f663
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2559624 bytes)**  
+-	Total Size: **2.6 MB (2559678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab1373e2c5b596d698078c972a80ebc5cae658303a06b929bd076e802ec1030f`
+-	Image ID: `sha256:ea13855426fd0c581f80c63b76f999c051fc6022e60ee063b5843be1b8cf24e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a531b110eeb2520ec41a324b3d1405608f62089c3e22758dba8242d15b88cf46`  
-		Last Modified: Tue, 08 Apr 2025 00:23:03 GMT  
-		Size: 2.6 MB (2559624 bytes)  
+	-	`sha256:c5f66f9a6516c9042408aa2454606b7f41b1ec7751334590e9b6e65983545903`  
+		Last Modified: Mon, 28 Apr 2025 21:08:06 GMT  
+		Size: 2.6 MB (2559678 bytes)  
 		MIME: application/vnd.in-toto+json
