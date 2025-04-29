@@ -1,7 +1,7 @@
 ## `node:hydrogen-slim`
 
 ```console
-$ docker pull node@sha256:ad41da42d38cf34a83dc5ff8cc2eafb86a7c6bae01496f84b26d63894f580885
+$ docker pull node@sha256:76b4f4aafd54672f91ac6b8528e95fc7fdf260c092621dc619a9ab1208f448a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -100,19 +100,19 @@ $ docker pull node@sha256:a5d0e661a8afa546400bb412ae7d5688768d9146f2078a0f2734fd
 ### `node:hydrogen-slim` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:25ef58476c3dffaf410d930bc7cab92ae2eaf97af0c4a77d09ee7e389a6d0287
+$ docker pull node@sha256:bff4b6c02c2c2874bb1601a8cdbb4b4be9e6f90ceaa445f5c7debcc1c980e3f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.6 MB (60565184 bytes)**  
+-	Total Size: **60.6 MB (60565415 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c40bef01ba7d1732db0232290de854f087220432b58796aa60e808505c5e9af`
+-	Image ID: `sha256:9671a5e441ee8ac4558f392e48e6a33d85de7eefaab2b58362d1447d94d1e7ef`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Thu, 27 Mar 2025 14:23:08 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1743984000'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1745798400'
 # Thu, 27 Mar 2025 14:23:08 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 27 Mar 2025 14:23:08 GMT
@@ -132,49 +132,49 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:addc1be20d0979aa781d79a726ebf749adbc030186e63a44319274194e89cfa3`  
-		Last Modified: Tue, 08 Apr 2025 00:23:15 GMT  
-		Size: 23.9 MB (23937867 bytes)  
+	-	`sha256:a3677b10b3c2b17c251b045a96a5c5899810ee1ee2fa8982715ba998fd10e6ad`  
+		Last Modified: Mon, 28 Apr 2025 21:15:45 GMT  
+		Size: 23.9 MB (23938074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f14c54f5528c6e71faaa0697558e42a58dc7c700ed91295dbe6030d1660a4e76`  
-		Last Modified: Tue, 08 Apr 2025 08:06:30 GMT  
-		Size: 3.3 KB (3313 bytes)  
+	-	`sha256:23d1b3bbf741190270efc46410f38b5f8819d917654ce6e078db321721187239`  
+		Last Modified: Tue, 29 Apr 2025 04:05:05 GMT  
+		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858ea38bdc1b7ce2b507847938a3d6089ac631406338ed0f7f5c2f2d8435ae28`  
-		Last Modified: Tue, 08 Apr 2025 08:12:28 GMT  
-		Size: 34.9 MB (34910845 bytes)  
+	-	`sha256:2d29f1a7b2ce56dab243185e1bb87e6d31c4b9fc3e105eabc77f1da3cb07041c`  
+		Last Modified: Tue, 29 Apr 2025 04:11:03 GMT  
+		Size: 34.9 MB (34910870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41040cb2d29c9edbec8c352ec4fb2d8e493d562123bcff22a70f701132a9c0bf`  
-		Last Modified: Tue, 08 Apr 2025 08:12:27 GMT  
-		Size: 1.7 MB (1712712 bytes)  
+	-	`sha256:1c9bf83bf69a4702605498a0b3dc8b2dde59cc1b76d721ed3282f41fa1ba9065`  
+		Last Modified: Tue, 29 Apr 2025 04:11:02 GMT  
+		Size: 1.7 MB (1712714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a8970c7e4d5c02a77f068836462f11355420ec3214f72bb4001fe55b0915de`  
-		Last Modified: Tue, 08 Apr 2025 08:12:27 GMT  
-		Size: 447.0 B  
+	-	`sha256:2b923efafd6204458546426630fbd7d26ad9c233178dae764a4faf139f55db92`  
+		Last Modified: Tue, 29 Apr 2025 04:11:02 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:7a61301b67adf34b02c68cea6ff4dc68939551f724bb770ed8af7291b230ccef
+$ docker pull node@sha256:380dd4a65fe4f4a343c3ee8d44a713091f3275c3f96514882d556d41324a8cdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2572632 bytes)**  
+-	Total Size: **2.6 MB (2572631 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b297353b64c1c5cf2feb034b6ca64b6fd102032b0e17c7332682879d74957808`
+-	Image ID: `sha256:cefd7bcd1cce6d68c2164cc6c6aa035907cd3c7645762b682b04387986241b1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:38a21f51b62a9fcc86e5270f1b836482458b4575a5ad74a778393899c7f5debf`  
-		Last Modified: Tue, 08 Apr 2025 08:12:27 GMT  
+	-	`sha256:33ddefaa90fcf3ed0d6321c1214ea88a20e1f88d9eff803eefb4040e48f55327`  
+		Last Modified: Tue, 29 Apr 2025 04:11:02 GMT  
 		Size: 2.5 MB (2546046 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ac9ecb254106cc9bd8bbdcc06918562112b6449186725edd5cff273ea5e9139c`  
-		Last Modified: Tue, 08 Apr 2025 08:12:26 GMT  
-		Size: 26.6 KB (26586 bytes)  
+	-	`sha256:a5f567e586052ad1e4ff5328eab699b71d725cd45875f7e7b6550d2e468a4658`  
+		Last Modified: Tue, 29 Apr 2025 04:11:01 GMT  
+		Size: 26.6 KB (26585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:hydrogen-slim` - linux; arm64 variant v8
@@ -340,19 +340,19 @@ $ docker pull node@sha256:da05ea5cf4b23c43047090768977fefb757d78268d41dd77801bad
 ### `node:hydrogen-slim` - linux; s390x
 
 ```console
-$ docker pull node@sha256:22410481eb77a3d1b8c69ad9f3aed650952fc40f3f67f193d3456f5147a99511
+$ docker pull node@sha256:976a3801c21e2a78e3a76873f2c427980338f3f95dff9edffa083724634c7553
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.1 MB (67087764 bytes)**  
+-	Total Size: **67.1 MB (67088058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35cda0378a52427a3ae20579af1971b15d781428df390014206f581890e2a796`
+-	Image ID: `sha256:5461527f82d001f3918fa723a5a2f5b87df418f2e8d51ed82f8c6d1616ac3bd3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Thu, 27 Mar 2025 14:23:08 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1743984000'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1745798400'
 # Thu, 27 Mar 2025 14:23:08 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Thu, 27 Mar 2025 14:23:08 GMT
@@ -372,47 +372,47 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:4d39bd57bcf7f4854587de5b4defd11e1b3b354bad1320b74c6994d07d7b3671`  
-		Last Modified: Tue, 08 Apr 2025 00:24:14 GMT  
-		Size: 26.9 MB (26884606 bytes)  
+	-	`sha256:2fb020f3caf1bc1659faa36e1595ae5ea71b8a94867ff23421b5ce8ca15030f4`  
+		Last Modified: Mon, 28 Apr 2025 21:08:21 GMT  
+		Size: 26.9 MB (26884867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e886f5b4883c92a02c0e872cbcc51da89866096330c3f142ace8f31861f655c1`  
-		Last Modified: Tue, 08 Apr 2025 03:59:59 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:9608a827473802af8b915ee8fee097bcbebce106315d05a446e5d4988d68ef97`  
+		Last Modified: Tue, 29 Apr 2025 00:16:49 GMT  
+		Size: 3.3 KB (3311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4de1d151e7c632134d82e3a32decaa77f07fea96940a242068aeca7a904eea9`  
-		Last Modified: Tue, 08 Apr 2025 04:03:12 GMT  
-		Size: 38.5 MB (38486819 bytes)  
+	-	`sha256:1f4d0d71e0b5ac351f948dd1c31ac7c0cfbe522afd151178682e489db8b085bd`  
+		Last Modified: Tue, 29 Apr 2025 04:50:50 GMT  
+		Size: 38.5 MB (38486840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2220e6db4898d1d0a086e8e86b61adaa9502a1526104139b26da7cf2dbee292`  
-		Last Modified: Tue, 08 Apr 2025 04:03:11 GMT  
-		Size: 1.7 MB (1712577 bytes)  
+	-	`sha256:6108c1541b40a61c184f2948b5a1b2485fab704ca4a51edff6417208425243e5`  
+		Last Modified: Tue, 29 Apr 2025 04:50:49 GMT  
+		Size: 1.7 MB (1712591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed7a4a23b98790337a11cefb11e52650fe36ae69ae3d7187c1adf4b64b0379ee`  
-		Last Modified: Tue, 08 Apr 2025 04:03:11 GMT  
-		Size: 448.0 B  
+	-	`sha256:d56ef94b51b65c7c5ea14af723972610bfe79fa4bf0f2f1c03bab458f90c39e6`  
+		Last Modified: Tue, 29 Apr 2025 04:50:49 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:9b0b3e0dca43a67395a99abdd0ea4476f13497d95b9d8c65feb43b9854e8ab42
+$ docker pull node@sha256:90127bbf09db32c01ded4a539b5a7b0a69f6528fb8edb6ac2a17b0c9c5bef333
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.6 MB (2566726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8521c8984c3c2b6589deae59b0cafb8336403af8b20f24ed8e30542ff08cda8`
+-	Image ID: `sha256:cdbdbd5433f7dbabcba359cd54126b6900e18e8b0b457a7d491c7598ec969e58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd637753129cea46944d3adeea616038f8c68b7e27bebd5533cca1d446dfc2fa`  
-		Last Modified: Tue, 08 Apr 2025 04:03:11 GMT  
+	-	`sha256:30b5f55f46fea71af0bfdca2c041681e0170626240ca9ae2c41885226e54e1a9`  
+		Last Modified: Tue, 29 Apr 2025 04:50:49 GMT  
 		Size: 2.5 MB (2540274 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fd336230d5bcc9c1f75c14638c6d826afaf79d237255f10e9ac05adda21e6237`  
-		Last Modified: Tue, 08 Apr 2025 04:03:11 GMT  
+	-	`sha256:85afece269015f849cd2a3f5100642baabb18dee4e12bd757d17f4a9170b4f55`  
+		Last Modified: Tue, 29 Apr 2025 04:50:49 GMT  
 		Size: 26.5 KB (26452 bytes)  
 		MIME: application/vnd.in-toto+json
