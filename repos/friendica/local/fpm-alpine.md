@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6f7bbebd8b08b9b5bc413ae29d08f6afa2fc8254b03bb978f3d60ad62feed97`
-- Created: `2025-01-01T19:19:24Z`
-- Virtual Size: ~ 263.97 Mb  
+- Image ID: `sha256:6c7a23bdaa5035a750175a798930f342146b4c39befb1934ab215ac9badd175d`
+- Created: `2025-04-17T16:08:36Z`
+- Virtual Size: ~ 270.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.28`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc`
-  - `PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.20`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.20.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.20.tar.xz.asc`
+  - `PHP_SHA256=f15914e071b5bddaf1475b5f2ba68107e8b8846655f9e89690fb7cd410b0db6c`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -205,16 +205,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -256,16 +256,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -613,16 +613,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -630,16 +630,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -885,16 +885,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -1480,16 +1480,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r1 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r1 license:
 blessing
 
 ```
@@ -1565,16 +1565,16 @@ ISC
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.3-r0 description:
+xz-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.3-r0 webpage:
+xz-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-5.6.3-r0 installed size:
+xz-5.6.3-r1 installed size:
 150 KiB
 
-xz-5.6.3-r0 license:
+xz-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1582,16 +1582,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
