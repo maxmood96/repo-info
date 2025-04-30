@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:684ed4b68313ae124b356877b01adc945bbf9a610f7cdf840288649d6e1532f9`
+- Image ID: `sha256:7929b2d20c1f2005af39d03d69dccba3d9907052145b5cd64f0ea4c0b6cc0626`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 364.30 Mb  
+- Virtual Size: ~ 364.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u442-b06`
+  - `JAVA_VERSION=jdk8u452-b09`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -1813,11 +1813,11 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
 ```
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.9`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.11`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.9`
+- `openssh-client=1:9.6p1-3ubuntu13.11`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1829,9 +1829,15 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.11.dsc' openssh_9.6p1-3ubuntu13.11.dsc 3346 SHA512:b98228441cdfa73bdde5a2a0dcb2f43be26678434e3bf36898e36d00ec336a74411948740b92f0242b25c1c0d21eac1f3a58d814583061e945a0038019e485a9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.11.debian.tar.xz' openssh_9.6p1-3ubuntu13.11.debian.tar.xz 206452 SHA512:5ca42cf0d645111aced486dcdd0702eaaeb5bbd934f29d29304512a946349611d1eb29eaa5a9624fb6f3dde2890d04c7567386bbc090800995ead139ea31fc1d
+```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
