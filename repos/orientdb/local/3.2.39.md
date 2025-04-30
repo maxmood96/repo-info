@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dcb37831ffaf94dcdbe71b60737c20644bae81e9d0a0914b554aba4b3baae222`
+- Image ID: `sha256:c2ce69a08d5022f414c33c6b0a315622fb8145b5e59a40ca701073ae82494241`
 - Created: `2025-04-14T15:49:16Z`
-- Virtual Size: ~ 378.44 Mb  
+- Virtual Size: ~ 378.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u442-b06`
+  - `JAVA_VERSION=jdk8u452-b09`
   - `ORIENTDB_VERSION=3.2.39`
   - `ORIENTDB_DOWNLOAD_MD5=0d6df6bc6191c28ea3541168159495b8`
   - `ORIENTDB_DOWNLOAD_SHA1=8cad76fdbfe132a7229833ee3d64566043cae22a`
