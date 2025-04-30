@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a597e1ddde57a943be10ce2a073f29271c8c4ae83c0048fac4a57b5a2b337424`
+- Image ID: `sha256:926113ff1d25e4f9f86e3392de8e52f8a58a27f7ae56fb7f0605e8696c49b0cf`
 - Created: `2025-04-09T20:03:41Z`
-- Virtual Size: ~ 294.11 Mb  
+- Virtual Size: ~ 301.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u442-b06`
+  - `JAVA_VERSION=jdk8u452-b09`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -1687,11 +1687,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.3`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.4`
 
 Binary Packages:
 
-- `perl-base=5.34.0-3ubuntu1.3`
+- `perl-base=5.34.0-3ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1723,9 +1723,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.4.dsc' perl_5.34.0-3ubuntu1.4.dsc 2976 SHA512:d643892a28c72b9664809c9a54d406f702412547d00a5987fdd216ebb492a6c54f76ff3c1e2c274a6d10b0622f62827d4179f3dcaadbd950027f64f507cd4883
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.4.debian.tar.xz' perl_5.34.0-3ubuntu1.4.debian.tar.xz 195388 SHA512:24fc7abd6f70743ec11f6647dac56b4af4faf9ccbf0d906a2e992389812c47240a4fc6d3fb4fe6336290319497bf7f48fff0ee58b8cd31af9883ce03b8e4fce7
+```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
