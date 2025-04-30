@@ -4523,14 +4523,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.6.dsc' libxml2_2.9.13+dfsg-1ubuntu0.6.dsc 3071 SHA512:b082d31975cca5181bdc2e2745db3dce8c43bc3b13e29a4e232cfb531fc64c50964e5a9356df49e979be3186916294bd4c34d856bb3c978407d74ea39c13b29c
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.6.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.6.debian.tar.xz 39176 SHA512:3dfec0d45d9a8b06f3f47c5caa23ffc6ef73e3938ce4da04160cd44d1cb35c7a6c062dacf8f9708691cd68744c22f3a9b3ae14001b4842a860bec165a116d394
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -5669,14 +5664,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.7.dsc' poppler_22.02.0-2ubuntu0.7.dsc 3360 SHA512:9c4ebdc4187c31c3748d9e16739a94225175711cfdc72593d2b1ebba8d845fb85e54f75eb73e83087cdb388e488f615f10c8b471bf9c3bedbb5038a60b2c3d83
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.7.debian.tar.xz' poppler_22.02.0-2ubuntu0.7.debian.tar.xz 44340 SHA512:900bb309e07593b89adf48d79e969d8015579c9264e6d9a5d4271f766a686bd2e7767c4a077afa568e7c02b4b78ee86a055f32cdeac31bdc1b3627097fb91a11
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
