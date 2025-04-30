@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:908a2ed408b9a502dbf4b56c5d982482810d537905558d4fae75559f491d9e2a`
+- Image ID: `sha256:e0c158f8140f5305e17f3176a17324d4106ff642e932ebef0607769b4fdd187b`
 - Created: `2025-04-14T23:59:20Z`
 - Virtual Size: ~ 1.11 Gb  
   (total size of all layers on-disk)
@@ -1935,12 +1935,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.7-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.7-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `shadow=1:4.8.1-1`
+### `dpkg` source package: `shadow=1:4.8.1-1+deb11u1`
 
 Binary Packages:
 
-- `login=1:4.8.1-1`
-- `passwd=1:4.8.1-1`
+- `login=1:4.8.1-1+deb11u1`
+- `passwd=1:4.8.1-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1949,17 +1949,17 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1-1.dsc' shadow_4.8.1-1.dsc 2215 SHA256:5c9568dc183781ba654b7daeba6d5d6768d4e0417cc8d8b6f2e534dae6fcdaa6
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1-1.debian.tar.xz' shadow_4.8.1-1.debian.tar.xz 74752 SHA256:fdbccadc28fcca744f365e0529f3828d0c82bc3513b28976dca7308b40ea4773
+$ apt-get source -qq --print-uris shadow=1:4.8.1-1+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.8.1-1%2bdeb11u1.dsc' shadow_4.8.1-1+deb11u1.dsc 2247 SHA256:aaa0ac5c9639c762e9b459a7f0500fa7c24fa2aa37265ef5a30598add64ccc0e
+'http://deb.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
+'http://deb.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.8.1-1%2bdeb11u1.debian.tar.xz' shadow_4.8.1-1+deb11u1.debian.tar.xz 78248 SHA256:68ce171dc78e6fc9c51da4b3a4c8f70b0927ab7e6c40cbebd67908be5ca27aaa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/shadow/1:4.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.8.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/shadow/1:4.8.1-1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.8.1-1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.8.1-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=247.3-7+deb11u6`
 
