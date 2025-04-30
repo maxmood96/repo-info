@@ -1,7 +1,7 @@
 ## `gradle:jdk17-ubi-minimal`
 
 ```console
-$ docker pull gradle@sha256:65018fd75662eb2f109de4921c0ab2f95a47bd347da9185fd14cf482d116f479
+$ docker pull gradle@sha256:2e6266d766cd20692ca5b88739f15e8441f21e534cdaae10be760c63333e2816
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -182,53 +182,53 @@ $ docker pull gradle@sha256:c40c94c7d1d24df82cb2ea49afd99c01029957a4e1ceca394f2c
 ### `gradle:jdk17-ubi-minimal` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:35465325e786a391f00c8bfac3d5585daf78e45cb8549dd3be0ffa4f9c12b5d5
+$ docker pull gradle@sha256:aa6ccdbac3eda7d697dad0a7b5f4982da0934993f0e1b823f78b54d6d3d3333d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **381.8 MB (381845094 bytes)**  
+-	Total Size: **381.7 MB (381670567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1194c366e295e728b7802b600ea270a3b09d9f41a13de1578e3d91dc3fdfa286`
+-	Image ID: `sha256:859e8fe11f76ff596e188d156b87052123c8cc6e8c84055d84238ba12f979448`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Tue, 25 Mar 2025 15:05:12 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL maintainer="Red Hat, Inc."
-# Tue, 25 Mar 2025 15:05:12 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL vendor="Red Hat, Inc."
-# Tue, 25 Mar 2025 15:05:12 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL url="https://www.redhat.com"
-# Tue, 25 Mar 2025 15:05:12 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.5"       distribution-scope="public"
-# Tue, 25 Mar 2025 15:05:12 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL io.openshift.expose-services=""
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Tue, 25 Mar 2025 15:05:13 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV container oci
-# Tue, 25 Mar 2025 15:05:14 GMT
-COPY dir:36dabe56d778e21d6cac6872809f7ae0932c9956fe7621a40aed471a4eb28b35 in / 
-# Tue, 25 Mar 2025 15:05:14 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+COPY dir:37e2781211ed66b85e838f75f63c4036aeedc358075b7ac677bbe4ad43998692 in / 
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Tue, 25 Mar 2025 15:05:14 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Mar 2025 15:05:14 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN . /cachi2/cachi2.env &&     rm -rf /var/log/*
-# Tue, 25 Mar 2025 15:05:14 GMT
-LABEL "build-date"="2025-03-25T15:04:42" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="63823c7605fee63261a8e33cad8085bc4bb24676" "build-date"="2025-03-25T14:50:12Z" "release"="1742914212"
-# Tue, 25 Mar 2025 15:05:25 GMT
-RUN /bin/sh
+# Wed, 23 Apr 2025 14:48:05 GMT
+COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
+# Wed, 23 Apr 2025 14:48:05 GMT
+LABEL "build-date"="2025-04-28T15:48:27" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="f072486a5ead2d7d882ba4af2ce72e19cce20791" "release"="1745855087"
 # Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
 # Wed, 23 Apr 2025 14:48:05 GMT
@@ -278,73 +278,69 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:7b061f511294c383e785796c55415ec3bed7fbb0a98d6cee8c8c6a1436d4ada8`  
-		Last Modified: Tue, 25 Mar 2025 18:27:33 GMT  
-		Size: 37.6 MB (37588703 bytes)  
+	-	`sha256:2aa6bd15812764b98217de512ddcd6b7fc8cb96437e1fa30d7963118dce559ff`  
+		Last Modified: Mon, 28 Apr 2025 16:55:35 GMT  
+		Size: 37.9 MB (37887470 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d6607d3dbc4fd04e0d544f944d20a47a5af1fa8a7520e1f37683ab236e23734`  
-		Last Modified: Tue, 25 Mar 2025 18:27:31 GMT  
-		Size: 456.0 B  
+	-	`sha256:24ce9f57aa1d6908dcd943f34d1cb9f35acee0f7b2adadaef31267686265fc09`  
+		Last Modified: Tue, 29 Apr 2025 17:51:14 GMT  
+		Size: 28.0 MB (27986783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc161fbd238b5be2bdd624ab40e89933f0e00808deb9bfed3955aa0c6bfb80d7`  
-		Last Modified: Wed, 23 Apr 2025 16:33:26 GMT  
-		Size: 28.5 MB (28499508 bytes)  
+	-	`sha256:4ba9138fef356bbd33c4a1f66860ecccb6a575d2204f3a83a7473d8de038efa2`  
+		Last Modified: Tue, 29 Apr 2025 17:53:16 GMT  
+		Size: 143.5 MB (143520720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de4b4144985bd68ac705857ea84437fc90af6be56a25036c63e438a49cf13d86`  
-		Last Modified: Wed, 23 Apr 2025 16:37:29 GMT  
-		Size: 143.5 MB (143520711 bytes)  
+	-	`sha256:1f3b4d8b5def29f1e51716168ded619047c0626abc8fb37e1bb38edffa8c88b0`  
+		Last Modified: Tue, 29 Apr 2025 17:53:12 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:626d928f8e4f06c645e2a27890be3365ea6233134457930c44e861e497769b68`  
-		Last Modified: Wed, 23 Apr 2025 16:37:26 GMT  
-		Size: 130.0 B  
+	-	`sha256:ae00a42cf5e6364f2acba7b444196cfa0912f459d8db1c9bcd01612baab90a5d`  
+		Last Modified: Tue, 29 Apr 2025 17:53:12 GMT  
+		Size: 2.3 KB (2291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dee8d974833c2439c646a68938081fc5f22d289d57448dd56b3732bb55fedc4`  
-		Last Modified: Wed, 23 Apr 2025 16:37:26 GMT  
-		Size: 2.3 KB (2288 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bb6ff8d4c6264c466e93e6c60bb7db8de8cd125a2aebaf5b06b884d24b24a5e`  
-		Last Modified: Wed, 23 Apr 2025 17:33:01 GMT  
-		Size: 1.7 KB (1706 bytes)  
+	-	`sha256:1f15408fb9ec11243f91a777f786600312a78856e8cf9ea473200723063244d4`  
+		Last Modified: Wed, 30 Apr 2025 02:38:10 GMT  
+		Size: 1.7 KB (1707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39edf24f2e5b66fedb093ff1befddd07000a8a86fa6b0285f705e56b6586b6ec`  
-		Last Modified: Wed, 23 Apr 2025 17:33:03 GMT  
-		Size: 34.8 MB (34777467 bytes)  
+	-	`sha256:96d562696aaa7b3dd3e8857cc16f583d3c3bbd27a79183c2fc5e0dc94ef13110`  
+		Last Modified: Wed, 30 Apr 2025 02:38:11 GMT  
+		Size: 34.8 MB (34817355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a841d36bf746b59f67870698e4a7558f8ebb3be5eb84cb2f0afb85f939a82cef`  
-		Last Modified: Mon, 28 Apr 2025 18:00:01 GMT  
-		Size: 137.4 MB (137394558 bytes)  
+	-	`sha256:1ea5948122a49e0daafc916df7655f947a68f989396bfb175c061e6d93c0857e`  
+		Last Modified: Wed, 30 Apr 2025 02:38:14 GMT  
+		Size: 137.4 MB (137394553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b6b1d5d4fe3ba3e29fbb501e8e283e524f4af321fc2e198e0b118122d8e63c0`  
-		Last Modified: Mon, 28 Apr 2025 17:59:57 GMT  
-		Size: 59.5 KB (59535 bytes)  
+	-	`sha256:67df8ac4dce34c6845873a62e52c7bec8d6cfee7b8c04275cf8a92eedb337c3f`  
+		Last Modified: Wed, 30 Apr 2025 02:38:10 GMT  
+		Size: 59.5 KB (59527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:jdk17-ubi-minimal` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:eecf89bd88b921d367cdcce3ba973c4ca8a619f6a8d99c153ba817cc43e933b2
+$ docker pull gradle@sha256:2f0e1ec814ca047f752e847fdcc71dd006f496bad9153415e767b32f5280424e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6448068 bytes)**  
+-	Total Size: **5.3 MB (5322305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98d95e0e955093fc9057836c3b3856af994c928e1e3f0787cfd11f336832b199`
+-	Image ID: `sha256:9c8b7314bddd99b48d7ff432a0fd1b53cb9fc8e6798b4090c6a39377b343d9b6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd1364d6137aa0ea97c7a8d099aa3ad53c93a424ff219337d441dac6e9055599`  
-		Last Modified: Mon, 28 Apr 2025 17:59:57 GMT  
-		Size: 6.4 MB (6424054 bytes)  
+	-	`sha256:cf120b6c5dfcefb0fa256702e21de9df9a827b1d0227bb428df122783a866aa4`  
+		Last Modified: Wed, 30 Apr 2025 02:38:10 GMT  
+		Size: 5.3 MB (5299215 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bf098fb2eb969e75313e0bb983ea71ee320728e48c2ba5c509e9d2d292e4c953`  
-		Last Modified: Mon, 28 Apr 2025 17:59:56 GMT  
-		Size: 24.0 KB (24014 bytes)  
+	-	`sha256:aa2afe31b30e58279e07138d9187e63c23f3b86e768a3b82cc20e18d8adf0296`  
+		Last Modified: Wed, 30 Apr 2025 02:38:10 GMT  
+		Size: 23.1 KB (23090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:jdk17-ubi-minimal` - linux; ppc64le
