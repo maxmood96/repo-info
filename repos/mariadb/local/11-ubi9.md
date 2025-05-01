@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d991ff86d31adbd0c958162039e4801c64e00837060ddf186a89b5e181b6c2c6`
+- Image ID: `sha256:b327986c8f3a536a5cfead2159d976ec4a831cc7ee35405a3200697b85b0980e`
 - Created: `2025-02-14T06:55:09Z`
-- Virtual Size: ~ 467.59 Mb  
+- Virtual Size: ~ 471.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.7.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-03-25T14:50:12Z`
+  - `build-date=2025-04-28T15:45:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=63823c7605fee63261a8e33cad8085bc4bb24676`
+  - `vcs-ref=f072486a5ead2d7d882ba4af2ce72e19cce20791`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.7.2`
@@ -274,7 +274,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-9.el9.noarch
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -360,37 +360,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-14.el9_4.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-14.el9_4.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-common-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -524,7 +524,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2097,7 +2097,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2108,7 +2108,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2254,11 +2254,16 @@ $ dnf --quiet download --source --url tar-1.34-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025a-1.el9.noarch`
+### `rpm` package: `tzdata-2025b-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025b-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025b-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-core-2.37.4-20.el9.x86_64`
 
