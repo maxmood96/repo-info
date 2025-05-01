@@ -1,10 +1,10 @@
-# `eclipse-temurin:8u442-b06-jre-ubi9-minimal`
+# `eclipse-temurin:8u452-b09-jre-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8959b199d657ad6c5a7f37bc6368d5f2c159dbd4577d9daf9d67f1521c740840`
-- Created: `2025-03-25T17:58:27Z`
-- Virtual Size: ~ 282.58 Mb  
+- Image ID: `sha256:cb451a1071c5a51a13b2e082c7025ba727a042afbe06fab067546f36cd40024b`
+- Created: `2025-04-27T20:21:59Z`
+- Virtual Size: ~ 289.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,10 +15,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u442-b06`
+  - `JAVA_VERSION=jdk8u452-b09`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-03-25T14:50:12Z`
+  - `build-date=2025-04-28T15:45:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1742914212`
+  - `release=1745855087`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=63823c7605fee63261a8e33cad8085bc4bb24676`
+  - `vcs-ref=f072486a5ead2d7d882ba4af2ce72e19cce20791`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -304,11 +304,16 @@ $ dnf --quiet download --source --url elfutils-libs-0.191-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.191-4.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-3.el9_5.1.x86_64`
+### `rpm` package: `expat-2.5.0-3.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url expat-2.5.0-3.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-3.el9_5.3.src.rpm
+```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
@@ -354,11 +359,16 @@ $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
-### `rpm` package: `freetype-2.10.4-9.el9.x86_64`
+### `rpm` package: `freetype-2.10.4-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): (FTL or GPLv2+) and BSD and MIT and Public Domain and zlib with acknowledgement
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url freetype-2.10.4-10.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/freetype-2.10.4-10.el9_5.src.rpm
+```
 
 ### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
 
@@ -393,48 +403,48 @@ $ dnf --quiet download --source --url glib2-2.68.4-14.el9_4.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-14.el9_4.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-common-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
-### `rpm` package: `glibc-langpack-en-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-langpack-en-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-langpack-en-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-langpack-en-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.3.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.8.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -1560,11 +1570,16 @@ $ dnf --quiet download --source --url tar-1.34-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2025a-1.el9.noarch`
+### `rpm` package: `tzdata-2025b-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025b-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025b-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-20.el9.x86_64`
 
