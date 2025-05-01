@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f51a8e8739b7959220b9c13e1dbd88511bdfd0dc3c97aa8fbe3d78c870737a1`
+- Image ID: `sha256:ed40a30b6a64ef0ee3efce4661d7ce0ce30c49e97ea493827d16ccbe5c6603f6`
 - Created: `2024-04-05T21:50:10Z`
 - Virtual Size: ~ 171.76 Mb  
   (total size of all layers on-disk)
@@ -3376,14 +3376,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl-openssl-defaults/7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl-openssl-defaults/7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.36.0-7+deb12u1`
+### `dpkg` source package: `perl=5.36.0-7+deb12u2`
 
 Binary Packages:
 
-- `libperl5.36:amd64=5.36.0-7+deb12u1`
-- `perl=5.36.0-7+deb12u1`
-- `perl-base=5.36.0-7+deb12u1`
-- `perl-modules-5.36=5.36.0-7+deb12u1`
+- `libperl5.36:amd64=5.36.0-7+deb12u2`
+- `perl=5.36.0-7+deb12u2`
+- `perl-base=5.36.0-7+deb12u2`
+- `perl-modules-5.36=5.36.0-7+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.36/copyright`)
 
@@ -3418,18 +3418,18 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u1
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u1.dsc' perl_5.36.0-7+deb12u1.dsc 2918 SHA256:26ddac979ddb41229abc97b19fc2e97cdd840fe1a315e8f829ae1aeb0a1d05c5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u1.debian.tar.xz' perl_5.36.0-7+deb12u1.debian.tar.xz 171136 SHA256:e5680de573f95b990cf995a7189c167281785cc49589c43874736e4b8b3c9e2f
+$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.dsc' perl_5.36.0-7+deb12u2.dsc 2357 SHA256:2763db81497ad23c110bb3ff1f2f1e5bca0d583ec172c82afc01ff214ba46ff8
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.debian.tar.xz' perl_5.36.0-7+deb12u2.debian.tar.xz 171576 SHA256:dc3eca212d38826805444abe64c9425b2aacf470d6800ec06d40e8ef02f0c007
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-1`
 
