@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:834e87519d8e0739cd848b09c525f4d74f2dd892c865b1610637d1b869ad6cf6`
+- Image ID: `sha256:fde919f943eaf50059cc3a7368382a370b3193126ef7eec46ff560e8007eb576`
 - Created: `2025-04-26T01:26:29Z`
-- Virtual Size: ~ 594.87 Mb  
+- Virtual Size: ~ 591.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=8.14`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-03-25T14:50:12Z`
+  - `build-date=2025-04-28T15:45:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -33,10 +33,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1742914212`
+  - `release=1745855087`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=63823c7605fee63261a8e33cad8085bc4bb24676`
+  - `vcs-ref=f072486a5ead2d7d882ba4af2ce72e19cce20791`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
