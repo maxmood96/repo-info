@@ -1867,20 +1867,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.7+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u6.dsc' libxml2_2.9.10+dfsg-6.7+deb11u6.dsc 2704 SHA256:d25a3efcde1db33d7d958278d3df23c08deb0f74b8707fdd562308feb78a88f4
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u6.debian.tar.xz' libxml2_2.9.10+dfsg-6.7+deb11u6.debian.tar.xz 46852 SHA256:c9a7ee863cebbb9946556e64d8f3b884d428d95efd0d1cb8f7239f02c9373b9b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u6/
 
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-2.1`
 
