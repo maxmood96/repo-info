@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.150
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.150.dsc' adduser_3.150.dsc 1678 SHA256:155e31a06986ed27d67e4ac262d789768352a6ea65cc74cb6e73c6aa7fb123a3
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.150.tar.xz' adduser_3.150.tar.xz 331704 SHA256:44bb81f4b0557f8a868ccf6310ab18a1b49cf18da65d83a67f2ccc289e275c51
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.150/
 
-- https://sources.debian.net/src/adduser/3.150/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.150/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.150/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -5477,21 +5471,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-2.dsc' tzdata_2025b-2.dsc 2434 SHA256:3d1355d6c2bab50ec3f017d9a844513f7267ab30b927292c1c3cf347c538fd94
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-2.debian.tar.xz' tzdata_2025b-2.debian.tar.xz 126780 SHA256:891fa918c7613fcc459397c188e50d279e712f76625086a67581681bd98fddcb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-2/
 
-- https://sources.debian.net/src/tzdata/2025b-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0051`
 
