@@ -1489,13 +1489,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.8.dsc' distro-info-data_0.52ubuntu0.8.dsc 1796 SHA512:62092d47772522dc13730a6d778def8a575b6eea81e514a17924904ffd17197b29b6dcf5065e8b17adcd95fdde71284e495ba3bc4c2a4e01ec1d806944f4ab49
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.8.tar.xz' distro-info-data_0.52ubuntu0.8.tar.xz 10128 SHA512:af9d6a3345c3284cb387b371ecaeae6a62ae2eeeb14e573a48e9824e4353009aae66495f84fa76be4c2de799e7439ee7db76047a6553109b709c3a1c13a7d100
-```
 
 ### `dpkg` source package: `double-conversion=3.1.7-4`
 
@@ -7411,14 +7407,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.7.dsc' poppler_22.02.0-2ubuntu0.7.dsc 3360 SHA512:9c4ebdc4187c31c3748d9e16739a94225175711cfdc72593d2b1ebba8d845fb85e54f75eb73e83087cdb388e488f615f10c8b471bf9c3bedbb5038a60b2c3d83
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.7.debian.tar.xz' poppler_22.02.0-2ubuntu0.7.debian.tar.xz 44340 SHA512:900bb309e07593b89adf48d79e969d8015579c9264e6d9a5d4271f766a686bd2e7767c4a077afa568e7c02b4b78ee86a055f32cdeac31bdc1b3627097fb91a11
-```
 
 ### `dpkg` source package: `postgresql-14=14.17-0ubuntu0.22.04.1`
 

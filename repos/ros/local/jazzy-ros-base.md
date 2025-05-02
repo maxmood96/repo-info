@@ -122,14 +122,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.3.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.3.dsc 3126 SHA512:40ce65fe0b637a1a1cc156310a95c7221c6f27b7e7caec792bef82feb3bd0033cf91f47bd326a97edc40bf503acf0b3cf64b2d7bc51dd4ed20482036065c1c9a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA512:5e569c3f6adc7b72cd61c65c54a5c3686647eb535bf11e0ceb888e8a093f317fa49df598131493af6ec807011459286516df0170788d02fc73e3a70f218a1923
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.3.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.3.debian.tar.xz 122076 SHA512:6f782c5169f8be8147b077aa986bfd1aaf536657de61eb790ab071a4a0c05808a40629d084c154f880dba65b22d7e4e8be4ceab3dc57ddd522bade8d139b58de
-```
 
 ### `dpkg` source package: `apt=2.7.14build2`
 

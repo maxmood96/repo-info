@@ -1082,9 +1082,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cryptsetup=2:2.2.2-3ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.2.2-3ubuntu2.4.dsc' cryptsetup_2.2.2-3ubuntu2.4.dsc 2968 SHA512:10212eb04e0463bfea7a41d4198ff0b7c5f01067e9a11e24bc1dc5955e0e0e4a384c928bba0c58926c56f6206486f6fecd0e8381bddb84638fdfb8acec25767c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.2.2.orig.tar.gz' cryptsetup_2.2.2.orig.tar.gz 10912347 SHA512:e7a19c12a0959fbaf75caf033d9737e3505a3f97da12a544959a435e10aa5c4499376b66309bd94db2b9acc13a9515ba6359145f950614487b8f35914819e9eb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.2.2-3ubuntu2.4.debian.tar.xz' cryptsetup_2.2.2-3ubuntu2.4.debian.tar.xz 128480 SHA512:8c5c73b3c7d08bb73d2662c782159921c2b75a541a2549512e5a03f881352cc05abe5c9f86c2ec8d3d752aa16ceff56fca357e47fc7994412eeb5dd0203c88ef
+'http://security.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.2.2-3ubuntu2.4.dsc' cryptsetup_2.2.2-3ubuntu2.4.dsc 2968 SHA512:10212eb04e0463bfea7a41d4198ff0b7c5f01067e9a11e24bc1dc5955e0e0e4a384c928bba0c58926c56f6206486f6fecd0e8381bddb84638fdfb8acec25767c
+'http://security.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.2.2.orig.tar.gz' cryptsetup_2.2.2.orig.tar.gz 10912347 SHA512:e7a19c12a0959fbaf75caf033d9737e3505a3f97da12a544959a435e10aa5c4499376b66309bd94db2b9acc13a9515ba6359145f950614487b8f35914819e9eb
+'http://security.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.2.2-3ubuntu2.4.debian.tar.xz' cryptsetup_2.2.2-3ubuntu2.4.debian.tar.xz 128480 SHA512:8c5c73b3c7d08bb73d2662c782159921c2b75a541a2549512e5a03f881352cc05abe5c9f86c2ec8d3d752aa16ceff56fca357e47fc7994412eeb5dd0203c88ef
 ```
 
 ### `dpkg` source package: `cups=2.3.1-9ubuntu1.9`
@@ -1354,13 +1354,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.43ubuntu1.17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1.17.dsc' distro-info-data_0.43ubuntu1.17.dsc 1742 SHA512:4d37c7021d83645ff957be29c19fe5084fdf8b513597adf654ef8551c3066be5d0fe003ddafcc6d10314218cd107d201d291b3b0ebc7d36c008a242006815c4d
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1.17.tar.xz' distro-info-data_0.43ubuntu1.17.tar.xz 8524 SHA512:3178f158a2ceebc9a11e4e2dd3f4c1598ab182184370daf31c9508627cfd35721b9b17bb316f3a8a1901302dcb043bbadbff0d9bbdf12da1827082676449f8f8
-```
 
 ### `dpkg` source package: `double-conversion=3.1.5-4ubuntu1`
 
@@ -7035,14 +7031,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `Apache-2.0`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.6.dsc' poppler_0.86.1-0ubuntu1.6.dsc 3320 SHA512:1840186efffa30a3d4828fd03207131b0a3ce8cd6af1b9d989549438d357b9de830971c37c658501f546c896e77ef9163e8b5050a1114c199c0db8e79fdc6c13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA512:435fc1e7f3e8123e0adde9aa60c0d7dc17db367cde8908932abfef913cee6f27efeb1c4f2d6f316019a69a87f1fa5251be4216d0a81a681a24f24a70ac571670
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.6.debian.tar.xz' poppler_0.86.1-0ubuntu1.6.debian.tar.xz 41788 SHA512:1721eb783de002b777a0be94f39b67c0631960c364ef403e3cfa74291cd457fad8c19c6f49677bd6ecbbcf3a450697b3b20f3b260f12aa9825fe68f993a93361
-```
 
 ### `dpkg` source package: `postgresql-12=12.22-0ubuntu0.20.04.2`
 
