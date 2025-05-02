@@ -1,7 +1,7 @@
 ## `mongo:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull mongo@sha256:3d9192e6a0d8d7f38e19dda839971175c730de926dddad0c4ad87bd4d3f3a476
+$ docker pull mongo@sha256:ec38e18986ef859e3ff82d8a43ef7589aae2322408501938117fda344b96806c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull mongo@sha256:3d9192e6a0d8d7f38e19dda839971175c730de926dddad0c4ad87
 ### `mongo:windowsservercore-ltsc2022` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull mongo@sha256:84ff67a7a24d9208322f58a11866513ea9b60d43f9871f67d334b3331c1262fd
+$ docker pull mongo@sha256:b36cec1a504a8c20ddb6e352c0085f76842f76463a1a313f2ab19f0747f6a93a
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 GB (3043903363 bytes)**  
+-	Total Size: **3.0 GB (3047015361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fba0bca9b66b575156489428fa8e4f103f68180a31888b926ead2cd23e1bbe7d`
+-	Image ID: `sha256:e85e415623098257a3cfe3dc1eb7e31dbbfaa7b3a7febdd470ea26879907f941`
 -	Default Command: `["mongod","--bind_ip_all"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
 
@@ -27,21 +27,21 @@ $ docker pull mongo@sha256:84ff67a7a24d9208322f58a11866513ea9b60d43f9871f67d334b
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:22:08 GMT
+# Thu, 01 May 2025 22:27:43 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Fri, 18 Apr 2025 03:22:08 GMT
-ENV MONGO_VERSION=8.0.8
-# Fri, 18 Apr 2025 03:22:09 GMT
-ENV MONGO_DOWNLOAD_URL=https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.0.8-signed.msi
-# Fri, 18 Apr 2025 03:22:10 GMT
-ENV MONGO_DOWNLOAD_SHA256=4bf700912876c337697fa02bf4c38db0baed89604033b138e5e27d4e3eb743ee
-# Fri, 18 Apr 2025 03:23:34 GMT
+# Thu, 01 May 2025 22:27:44 GMT
+ENV MONGO_VERSION=8.0.9
+# Thu, 01 May 2025 22:27:45 GMT
+ENV MONGO_DOWNLOAD_URL=https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.0.9-signed.msi
+# Thu, 01 May 2025 22:27:46 GMT
+ENV MONGO_DOWNLOAD_SHA256=4acf24592a7658cc58b4293cbf0a3f42133c9c1d4f2234f1a249f74aa1c7d22a
+# Thu, 01 May 2025 22:30:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:MONGO_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	(New-Object System.Net.WebClient).DownloadFile($env:MONGO_DOWNLOAD_URL, 'mongo.msi'); 		if ($env:MONGO_DOWNLOAD_SHA256) { 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:MONGO_DOWNLOAD_SHA256); 		if ((Get-FileHash mongo.msi -Algorithm sha256).Hash -ne $env:MONGO_DOWNLOAD_SHA256) { 			Write-Host 'FAILED!'; 			exit 1; 		}; 	}; 		Write-Host 'Installing ...'; 	Start-Process msiexec -Wait 		-ArgumentList @( 			'/i', 			'mongo.msi', 			'/quiet', 			'/qn', 			'/l*v', 'install.log', 			'INSTALLLOCATION=C:\mongodb', 			'ADDLOCAL=MiscellaneousTools,Router,ServerNoService' 		); 	if (-Not (Test-Path C:\mongodb\bin\mongod.exe -PathType Leaf)) { 		Write-Host 'Installer failed!'; 		Get-Content install.log; 		exit 1; 	}; 	Remove-Item install.log; 		$env:PATH = 'C:\mongodb\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  mongod --version'; mongod --version; 		Write-Host 'Removing ...'; 	Remove-Item C:\windows\installer\*.msi -Force; 	Remove-Item mongo.msi -Force; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:23:35 GMT
+# Thu, 01 May 2025 22:30:43 GMT
 VOLUME [C:\data\db C:\data\configdb]
-# Fri, 18 Apr 2025 03:23:35 GMT
+# Thu, 01 May 2025 22:30:44 GMT
 EXPOSE 27017
-# Fri, 18 Apr 2025 03:23:36 GMT
+# Thu, 01 May 2025 22:30:45 GMT
 CMD ["mongod" "--bind_ip_all"]
 ```
 
@@ -54,35 +54,35 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c0a799ed0baa2f08b457f4262f3681003590d226c51897e208f0ad4446a9f8f`  
-		Last Modified: Fri, 18 Apr 2025 03:23:40 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:de6e3fac54df010b5e00d50bb7603b498f9eb5a2d6a592e758c3e2afaed13049`  
+		Last Modified: Thu, 01 May 2025 22:30:49 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c996944d9075a66673187943a5f15bebda3a7fa5edc6373e2e3fdb752ebf40bc`  
-		Last Modified: Fri, 18 Apr 2025 03:23:40 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:ba627a58ad5f3b612159dabdd4ae608396b78c64ada934e306685f89056c9ef1`  
+		Last Modified: Thu, 01 May 2025 22:30:49 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a4892383e4ce5ad2cd72d4214ecefff8d7e204b5515a2c3988a1a890e785b5`  
-		Last Modified: Fri, 18 Apr 2025 03:23:40 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:57f138553713491a85e2955d3dbf41bfc0d90054fa67cda24d8231bfde8d2571`  
+		Last Modified: Thu, 01 May 2025 22:30:49 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12debd4a8faf494521a140fdf5cbb3618d02ab3ea5ae37a37ec925ccf4cf42d5`  
-		Last Modified: Fri, 18 Apr 2025 03:23:38 GMT  
+	-	`sha256:1cab525b91f5d289114405733c8cd521aadea6b814b07830e74029619bb4e9a4`  
+		Last Modified: Thu, 01 May 2025 22:30:48 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3827c422be56a23d274a26d5f041950f768051ebe2adc6b6a4651cb73d5e807`  
-		Last Modified: Fri, 18 Apr 2025 03:24:41 GMT  
-		Size: 770.3 MB (770311827 bytes)  
+	-	`sha256:1af3a4af14cf5b4f64298a12394bdb87ccba14d4bc3444ca02c7f782761d54a4`  
+		Last Modified: Thu, 01 May 2025 22:31:46 GMT  
+		Size: 773.4 MB (773423840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6588518bb36c4adbc1d16c228d3bd8a60f91fe182cb5d6dccdd2e27d834a3f1c`  
-		Last Modified: Fri, 18 Apr 2025 03:23:38 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:40b86e650e9a6e4416bce15b927cfa5dc429cacbec623d35cd5bff9cbd7c67de`  
+		Last Modified: Thu, 01 May 2025 22:30:48 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90e281d7ba2aec66d5ad3fff066e157e7c00142878b53a0f89838a3de966fb45`  
-		Last Modified: Fri, 18 Apr 2025 03:23:38 GMT  
-		Size: 1.3 KB (1284 bytes)  
+	-	`sha256:64e8c12c43976ffadafca6c648cd95ea6c22787523c4aeb3f24bda9e3dc5ae49`  
+		Last Modified: Thu, 01 May 2025 22:30:48 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e1da6b3b829ec1ae637036628cf9fb2bdf3800173a32af4aac02356b1bbb248`  
-		Last Modified: Fri, 18 Apr 2025 03:23:38 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:87ddf18c6c34734ab52c2be7030255a4c9824c008030f06493a673320f85fdd7`  
+		Last Modified: Thu, 01 May 2025 22:30:48 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
