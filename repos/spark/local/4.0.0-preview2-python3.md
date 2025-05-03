@@ -2153,9 +2153,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-138.148
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-138.148.dsc' linux_5.15.0-138.148.dsc 7779 SHA512:352624b37f98285e26eca14e5ac2f27390fac1dfe2bd77dc68d59d1b0c8c9e3b4a6d5dec51cac66d335c962235488b6738d965c69246249ae0ece6f807aa74c6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-138.148.diff.gz' linux_5.15.0-138.148.diff.gz 11427073 SHA512:2b87ea136260c50809362951ed21fe35075211a906f50414048991847233b243e4b07c57816d09421dd3338aff04b7415243af8958e7238ef16bf7768ebbd444
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-138.148.dsc' linux_5.15.0-138.148.dsc 7779 SHA512:352624b37f98285e26eca14e5ac2f27390fac1dfe2bd77dc68d59d1b0c8c9e3b4a6d5dec51cac66d335c962235488b6738d965c69246249ae0ece6f807aa74c6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-138.148.diff.gz' linux_5.15.0-138.148.diff.gz 11427073 SHA512:2b87ea136260c50809362951ed21fe35075211a906f50414048991847233b243e4b07c57816d09421dd3338aff04b7415243af8958e7238ef16bf7768ebbd444
 ```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
