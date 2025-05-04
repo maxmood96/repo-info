@@ -1,10 +1,10 @@
-# `mongo:8.0.8-noble`
+# `mongo:8.0.9-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6595a4d1b15f4ce3db496c23d969d56fb82e10577b1e4deea5c8e64a829944f1`
-- Created: `2025-04-14T16:11:14Z`
-- Virtual Size: ~ 888.04 Mb  
+- Image ID: `sha256:f6a661f83eeefd672fd9e8496d4f6335fc57534327a61dc930360a603a5937bf`
+- Created: `2025-05-01T22:01:24Z`
+- Virtual Size: ~ 890.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.8`
+  - `MONGO_VERSION=8.0.9`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -1410,17 +1410,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.8`
+### `dpkg` source package: `mongodb-org=8.0.9`
 
 Binary Packages:
 
-- `mongodb-org=8.0.8`
-- `mongodb-org-database=8.0.8`
-- `mongodb-org-database-tools-extra=8.0.8`
-- `mongodb-org-mongos=8.0.8`
-- `mongodb-org-server=8.0.8`
-- `mongodb-org-shell=8.0.8`
-- `mongodb-org-tools=8.0.8`
+- `mongodb-org=8.0.9`
+- `mongodb-org-database=8.0.9`
+- `mongodb-org-database-tools-extra=8.0.9`
+- `mongodb-org-mongos=8.0.9`
+- `mongodb-org-server=8.0.9`
+- `mongodb-org-shell=8.0.9`
+- `mongodb-org-tools=8.0.9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
