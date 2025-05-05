@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ae3652b66c33a193f20ef45f647282a33140715f35ee19152a931b0c8a142d1`
+- Image ID: `sha256:ac3998b90c56b52b40ce71327a21bdd00b53307ecd82c733ce21f3d9f2dae54f`
 - Created: `2025-04-01T00:12:10Z`
-- Virtual Size: ~ 721.09 Mb  
+- Virtual Size: ~ 721.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -109,15 +109,15 @@ $ dnf --quiet download --source --url cpio-2.12-11.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/bb095c4c518e2c72a241855ea49e34dc5a9972ff7cecfcbdd3e1975a346843de/cpio-2.12-11.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `curl-8.3.0-1.amzn2.0.8.x86_64`
+### `rpm` package: `curl-8.3.0-1.amzn2.0.9.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.8
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/4e055e32d1d513ffc57557d31fb4dab26ab6013ef2348e0198b21f77d99db809/curl-8.3.0-1.amzn2.0.8.src.rpm
+$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.9
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/e6078dbee8dd48d798d9e78a83bc25c85bf1194adb2c261ec391b26af1d3dd2b/curl-8.3.0-1.amzn2.0.9.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
@@ -434,15 +434,15 @@ $ dnf --quiet download --source --url libcrypt-2.26-64.amzn2.0.4
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/bb14b25a45f6ce3245747b16b70aff0ecf913e8ee7b163567cb4493131e3ffcf/glibc-2.26-64.amzn2.0.4.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.3.0-1.amzn2.0.8.x86_64`
+### `rpm` package: `libcurl-8.3.0-1.amzn2.0.9.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.8
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/4e055e32d1d513ffc57557d31fb4dab26ab6013ef2348e0198b21f77d99db809/curl-8.3.0-1.amzn2.0.8.src.rpm
+$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.9
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/e6078dbee8dd48d798d9e78a83bc25c85bf1194adb2c261ec391b26af1d3dd2b/curl-8.3.0-1.amzn2.0.9.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-24.amzn2.0.5.x86_64`
