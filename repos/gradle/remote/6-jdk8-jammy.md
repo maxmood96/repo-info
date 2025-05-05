@@ -1,7 +1,7 @@
 ## `gradle:6-jdk8-jammy`
 
 ```console
-$ docker pull gradle@sha256:02056ab0c5cb2a1fa516ccd7833b6493923fa4aef7710d11b542ee3cc180d344
+$ docker pull gradle@sha256:4add1671edb194769dfc84ce88e2f0798bc7dff904f1534500ef17175f577781
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull gradle@sha256:02056ab0c5cb2a1fa516ccd7833b6493923fa4aef7710d11b542
 ### `gradle:6-jdk8-jammy` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:1b31b31104621b9b1833e7f5bf229f5fb6a72d68101a0c1dadbce8600256354c
+$ docker pull gradle@sha256:a1d1946cfbe10c65f28f673d7447588201aaef639f866410da08c28a573ffb31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.5 MB (261505373 bytes)**  
+-	Total Size: **259.2 MB (259181367 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6ee9ccf402528fe303497be19d7c7bcd596cb5f1a4ae9164f095d1564d38e39`
+-	Image ID: `sha256:8fca87c59560ccdbc46f7c38af2d898dcd616c8b9e4d81483739f77b833966f5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -38,7 +38,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Sun, 30 Mar 2025 18:19:35 GMT
 LABEL org.opencontainers.image.version=22.04
 # Sun, 30 Mar 2025 18:19:35 GMT
-ADD file:433cf0b8353e08be3a6582ad5947c57a66bdbb842ed3095246a1ff6876d157f1 in / 
+ADD file:59e67123ba6a5d9eea9813e7b2a767696f767c15c5b23c61c4d5bd6ba6fa9ac6 in / 
 # Sun, 30 Mar 2025 18:19:35 GMT
 CMD ["/bin/bash"]
 # Sun, 30 Mar 2025 18:19:35 GMT
@@ -88,69 +88,69 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:30a9c22ae099393b0131322d7f50d8a9d7cd06c5e518cd27a19ac960a4d0aba3`  
-		Last Modified: Mon, 07 Apr 2025 08:26:26 GMT  
-		Size: 29.5 MB (29532365 bytes)  
+	-	`sha256:215ed5a638430309375291c48a01872859a8dbf1331e54ba0af221918eb8ce2e`  
+		Last Modified: Mon, 28 Apr 2025 10:43:45 GMT  
+		Size: 29.5 MB (29532614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79fcf2be1e50b6eecd7de69e3e91446f571a921ebec66f1cbc9d6de19e4954ac`  
-		Last Modified: Mon, 28 Apr 2025 20:07:45 GMT  
-		Size: 16.1 MB (16146073 bytes)  
+	-	`sha256:938b8c785dea60db2666963afa40357a8e84d8185fa2d14000426894560bb1c4`  
+		Last Modified: Mon, 05 May 2025 16:35:00 GMT  
+		Size: 16.1 MB (16146148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c0d6d799645369cea7f9afb2cf27505b86b3759e66b963126773bddd95ad422`  
-		Last Modified: Mon, 28 Apr 2025 20:07:46 GMT  
-		Size: 54.7 MB (54721288 bytes)  
+	-	`sha256:495de4b299525c570c3239e394140874ac33bb908100a3fa123d1c5776e58dc6`  
+		Last Modified: Mon, 05 May 2025 16:35:01 GMT  
+		Size: 54.7 MB (54721285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ea6baef7d1a5fca3112d6c7468f6f470e8e5bc65e765b62e60f7796ee330d80`  
-		Last Modified: Mon, 28 Apr 2025 20:07:45 GMT  
+	-	`sha256:e344bc0d0cc9782d248fb1cdfc366520065f71a044e95192275d2fa8417aae32`  
+		Last Modified: Mon, 05 May 2025 16:34:59 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ae24dc7af9228bb0183e25246ac49ab388e163a6b2941491289c9a59ef38662`  
-		Last Modified: Mon, 28 Apr 2025 20:07:45 GMT  
+	-	`sha256:69271c2516c9c1081d73ae816a175f11ffa22a3542bb39e20ce5d042247f3adb`  
+		Last Modified: Mon, 05 May 2025 16:34:59 GMT  
 		Size: 2.3 KB (2307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44591326e8b310b0d5e415055b6200efb1c5f3f2379fe1500f43b614e05d058c`  
-		Last Modified: Mon, 28 Apr 2025 21:09:08 GMT  
-		Size: 4.3 KB (4314 bytes)  
+	-	`sha256:75ec151afe6b11b485f868e2c44e8c9caeb70bbb7df5b8710c925abf1f46b161`  
+		Last Modified: Mon, 05 May 2025 17:03:00 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a42b03978e38352acb4311d099f4bfc0e6e15117e1092938c33587c3b8f3f106`  
-		Last Modified: Mon, 28 Apr 2025 21:09:10 GMT  
-		Size: 53.0 MB (52970928 bytes)  
+	-	`sha256:6bb6f291aee818cb9fa351509c37c1a5e42b86ac70129d64016d9f2821e0437f`  
+		Last Modified: Mon, 05 May 2025 17:03:02 GMT  
+		Size: 50.6 MB (50646615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f92fc52f684272e424fd008950ab2602fa0c9d2dae31d17d9571a449804384ad`  
-		Last Modified: Mon, 28 Apr 2025 21:09:13 GMT  
-		Size: 107.7 MB (107696666 bytes)  
+	-	`sha256:8116bd856cfe7a5574cad46e4762cecae096d5ba417a4889479f309ebdb75115`  
+		Last Modified: Mon, 05 May 2025 17:03:04 GMT  
+		Size: 107.7 MB (107696634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:316731e8b354fd00f7b8426064c0a146ae3ac8e5a1bdcb6cabc8e6597b5a04a9`  
-		Last Modified: Mon, 28 Apr 2025 21:09:08 GMT  
-		Size: 431.3 KB (431272 bytes)  
+	-	`sha256:48c2418976aafdc29b0d1c954e5f197ad572ddf91c05c467bec6909dd3caacf3`  
+		Last Modified: Mon, 05 May 2025 17:03:00 GMT  
+		Size: 431.3 KB (431289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:6-jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:c137eb1e88c5ee59d909c12e250f380f72adeb0334f69c6713dae85426e7cacb
+$ docker pull gradle@sha256:77a7e640941ba52a8dd0318ca7d06ad9f503c1450f26e2777ace712761c031ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7473294 bytes)**  
+-	Total Size: **7.5 MB (7473296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd939e373f4b83028426dcc277285cf6d3af8aef9af86cea1763179b075d91d`
+-	Image ID: `sha256:015e44b03dc4e9902d5a82073a9ef4ccb68f5254ba9f83e160acdca712ebe753`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b5c83680d4b146c2d141345d466606b474233956b213d75bca4cff494d3e728`  
-		Last Modified: Mon, 28 Apr 2025 21:09:10 GMT  
+	-	`sha256:43287f7f27ff7b8c51f1ece1471e340fd7be43109ca26cc0acb8df7bda587abb`  
+		Last Modified: Mon, 05 May 2025 17:03:00 GMT  
 		Size: 7.5 MB (7450999 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dd3ac56622ca075dc6becc82dd6e70ce1130152642946b6d14925b8c33b8ced5`  
-		Last Modified: Mon, 28 Apr 2025 21:09:07 GMT  
-		Size: 22.3 KB (22295 bytes)  
+	-	`sha256:fc882c46caa6ff69e3dc91e1ef2c3ad739382c2a3e08bbe82a0136bb4129d25c`  
+		Last Modified: Mon, 05 May 2025 17:03:00 GMT  
+		Size: 22.3 KB (22297 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:6-jdk8-jammy` - linux; arm variant v7
@@ -432,13 +432,13 @@ $ docker pull gradle@sha256:9f005e66324049b7b233a6b89cfcbc36dc02aed5fad55031120d
 ### `gradle:6-jdk8-jammy` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:653a143fd4714e9a96079e7ef29807bfeed3f2bb9dbc86b71f161af2ff6fccb8
+$ docker pull gradle@sha256:285648b05b7314ef0b3fbb9f045fe357fd75b3ce888a2abe7176b287d826b5f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.0 MB (269012502 bytes)**  
+-	Total Size: **266.6 MB (266552748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74b7b6975591fd812bf6ae9683264a78ee75fa5db1a81e3aeb43c9b627909e49`
+-	Image ID: `sha256:834ad55300bfc410336c9c66e87a36e63b3e827cf53eac0eb023c03162758178`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -452,7 +452,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Sun, 30 Mar 2025 18:19:35 GMT
 LABEL org.opencontainers.image.version=22.04
 # Sun, 30 Mar 2025 18:19:35 GMT
-ADD file:b1634c9c9ee669b835ef39787fc71f78267fab0678a8e8c5547ba2339762e075 in / 
+ADD file:f6d72fdda03fb8754d82331b1f726d49b6b7d2d850ad2d1dfc2de6e1b365251b in / 
 # Sun, 30 Mar 2025 18:19:35 GMT
 CMD ["/bin/bash"]
 # Sun, 30 Mar 2025 18:19:35 GMT
@@ -502,67 +502,67 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:220e8fedb927c1ecfafdf1e8cd0a85977de62e4afd95df2c5a27a70d3bdf34b0`  
-		Last Modified: Mon, 07 Apr 2025 08:26:45 GMT  
-		Size: 34.4 MB (34442696 bytes)  
+	-	`sha256:95ba4619a43d3f4f7f5ee2c8fbe313d19bb9c0e9ca5fa9efeb7b93f942dcf377`  
+		Last Modified: Mon, 28 Apr 2025 10:44:03 GMT  
+		Size: 34.4 MB (34443215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a8c38ec2b4ee36ca93f19596eb065a396e648e65a58e52db4e0886be5ded596`  
-		Last Modified: Wed, 09 Apr 2025 04:35:13 GMT  
-		Size: 17.6 MB (17617815 bytes)  
+	-	`sha256:2ec33a1aac040bccef1eea8d18ca590aec33573ce5507988fad5185d8737eaf2`  
+		Last Modified: Mon, 05 May 2025 16:36:58 GMT  
+		Size: 17.6 MB (17617818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fb0d98af307e249085faddd48e8f4aa5a6038ab49a805959004ee7023d96254`  
-		Last Modified: Mon, 28 Apr 2025 20:09:05 GMT  
-		Size: 52.2 MB (52168664 bytes)  
+	-	`sha256:1d29aeb4bb90753569e53f45028868df4b9a71630a245c53c3ebe94b8277bf51`  
+		Last Modified: Mon, 05 May 2025 16:36:59 GMT  
+		Size: 52.2 MB (52168616 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e426a38c46a4a8629c3a8aaae8362fae208327c2232380c5e258ae600ad76d6`  
-		Last Modified: Mon, 28 Apr 2025 20:09:03 GMT  
-		Size: 127.0 B  
+	-	`sha256:c5cece6ebddb6d88a8e9d28cd4d2a70017a55d06a444124b63df1da561db415b`  
+		Last Modified: Mon, 05 May 2025 16:36:57 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a84d408fe9574fde5a2842729cbad669bf7584a830e945b27b5c9beb501c31d`  
-		Last Modified: Mon, 28 Apr 2025 20:09:03 GMT  
+	-	`sha256:2bcd1fef9e26b354289a7ea2dcd8d4314bb418e85f50572867203653956d8bd6`  
+		Last Modified: Mon, 05 May 2025 16:36:57 GMT  
 		Size: 2.3 KB (2307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a236c73ced6acadf26c82263186f79bb1da505fe2cbe8284f75440f09d930112`  
-		Last Modified: Mon, 28 Apr 2025 21:02:17 GMT  
+	-	`sha256:7410dcbd938860dfb896475eed7d6c1cad9d57f18e9b2a4cc92f982344de3337`  
+		Last Modified: Mon, 05 May 2025 19:14:13 GMT  
 		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d208fc339872eb854192e26774a087a718860ae14d15d04f3ea484764a68d42`  
-		Last Modified: Mon, 28 Apr 2025 21:02:21 GMT  
-		Size: 57.0 MB (57044896 bytes)  
+	-	`sha256:d6fbe776df565aab6cf430fce4a1ea9b92eef41e5649d96f358db1b89b4bd2dd`  
+		Last Modified: Mon, 05 May 2025 19:14:15 GMT  
+		Size: 54.6 MB (54584670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b2a69496fdb992da50e1cae80e7601cef407e6cc3796c2661a5e47ef731afbc`  
-		Last Modified: Mon, 28 Apr 2025 21:10:04 GMT  
-		Size: 107.7 MB (107696669 bytes)  
+	-	`sha256:bc97c95d8f28066a16eca571f7ef030d9cc05bf21f6224ab6385f8bc7a711ae4`  
+		Last Modified: Mon, 05 May 2025 19:24:51 GMT  
+		Size: 107.7 MB (107696668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:050fa88028c8d0ae2a3e24c296ef5556eb45e9a5c46da3ebad3b773a4d0d8602`  
-		Last Modified: Mon, 28 Apr 2025 21:10:00 GMT  
+	-	`sha256:04d0f1d5a95fb74e3636e28f0ab53dc4509c2d5673eda1d774c028e790f4c78b`  
+		Last Modified: Mon, 05 May 2025 19:24:48 GMT  
 		Size: 35.0 KB (34981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:6-jdk8-jammy` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:ff36d82c67afdebd7c67c5afceb45a0efc3517f7b1dd09836a0644aa93e3fb83
+$ docker pull gradle@sha256:89a6fe9a9367ae0ff7aae06d53092675e899aa1e4b2021747904477f4f3ee96d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7479237 bytes)**  
+-	Total Size: **7.5 MB (7479238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b02e834c5cb4fe3391d151dc2abbbaefeb34d5d5252f247fd562e59204c66fd`
+-	Image ID: `sha256:594b402c8e9d13954ddb769540d99e203fb3b0d63757493eb05efdab217fe739`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b216faa4b664db629692399584d955c13e6c31b77e4ec155fb908691d0396cc`  
-		Last Modified: Mon, 28 Apr 2025 21:10:00 GMT  
+	-	`sha256:2dc452064dddbc89d29dc39cb65d55263a59dd64cd1e6eedeea04ba476318172`  
+		Last Modified: Mon, 05 May 2025 19:24:48 GMT  
 		Size: 7.5 MB (7456880 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5477df8fe5f4106fcb6a37d8ad643c3d88b3d59d4a99361b4903e70b7dcb2202`  
-		Last Modified: Mon, 28 Apr 2025 21:10:00 GMT  
-		Size: 22.4 KB (22357 bytes)  
+	-	`sha256:7b1e3ce182499a4888ebb0b5230185834dbe286b95f18842e38e78d16903a0e8`  
+		Last Modified: Mon, 05 May 2025 19:24:48 GMT  
+		Size: 22.4 KB (22358 bytes)  
 		MIME: application/vnd.in-toto+json
