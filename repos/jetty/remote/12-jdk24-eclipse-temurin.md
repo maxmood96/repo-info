@@ -1,7 +1,7 @@
 ## `jetty:12-jdk24-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:35a46fb07b0ab7ef169771f403ed9710961229facb33033d881996e361beb7df
+$ docker pull jetty@sha256:495d4c4d03370b8bc36ea813b16b16968788cda99a54ee3b57a58951ac529d5b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull jetty@sha256:35a46fb07b0ab7ef169771f403ed9710961229facb33033d88199
 ### `jetty:12-jdk24-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:e99c1bc2a466efdf90484abef882ea2121e884cea3ac10b19ad453e00c15bf5d
+$ docker pull jetty@sha256:baa362e3ea517a32667062a4370cba6812c2d5b6b7e93c235b0f7b5990aebb70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.7 MB (175740732 bytes)**  
+-	Total Size: **175.7 MB (175740925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8b199ff0d1e7d9cc5478776224232e730ca1e4634a60163e7fb9443940960d5`
+-	Image ID: `sha256:f81342e4451f79d4d2c51a29a1c8c006f24712289cc47691b596dc8843319e21`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -34,7 +34,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 08 Apr 2025 03:30:17 GMT
 LABEL org.opencontainers.image.version=24.04
 # Tue, 08 Apr 2025 03:30:17 GMT
-ADD file:1d7c45546e94b90e941c5bf5c7a5d415d7b868581ad96171d4beb76caa8ab683 in / 
+ADD file:ad85a9d7b0a74c2140bd51d9c4559cca392991e0c95f84cb139347348e5d1f9a in / 
 # Tue, 08 Apr 2025 03:30:17 GMT
 CMD ["/bin/bash"]
 # Tue, 08 Apr 2025 03:30:17 GMT
@@ -88,61 +88,61 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:2726e237d1a374379e783053d93d0345c8a3bf3c57b5d35b099de1ad777486ee`  
-		Last Modified: Tue, 08 Apr 2025 11:53:40 GMT  
-		Size: 29.7 MB (29717652 bytes)  
+	-	`sha256:0622fac788edde5d30e7bbd2688893e5452a19ff237a2e4615e2d8181321cb4e`  
+		Last Modified: Mon, 28 Apr 2025 10:53:49 GMT  
+		Size: 29.7 MB (29717529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a1ee5f9484c44a740d1739ff335ea5b24ad0cdd733c8677d319e366fa0a9af1`  
-		Last Modified: Wed, 23 Apr 2025 16:32:18 GMT  
-		Size: 21.3 MB (21326970 bytes)  
+	-	`sha256:302ef8e7b5f765569c52b3eeabd68e20e27b45d93bd1103257f196da0fa6cb76`  
+		Last Modified: Mon, 05 May 2025 16:35:02 GMT  
+		Size: 21.3 MB (21327109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7c7f4a2597b01bfc3dbb02f005157ff6f6ff76427c5349be26803d977159e2d`  
-		Last Modified: Wed, 23 Apr 2025 16:32:19 GMT  
-		Size: 90.0 MB (89960742 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:453c07c74c91e170251fe0808e42234def963d6c13a1f9b279875937a5cb8c15`  
-		Last Modified: Wed, 23 Apr 2025 16:32:17 GMT  
-		Size: 2.3 KB (2281 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7f6544cd0674888b9c2ae0a2b5275b9cd86bcb0015913e240a1dc121dc7a98a`  
-		Last Modified: Wed, 23 Apr 2025 17:11:34 GMT  
-		Size: 34.7 MB (34731363 bytes)  
+	-	`sha256:233dba26ec9422c72564f7086ddb82da8686c19effb56c08a86675137356d7ee`  
+		Last Modified: Mon, 05 May 2025 16:35:02 GMT  
+		Size: 90.0 MB (89960852 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bbbb3663374269079eb3a74d2437f8b58fcd1102579cf492788291a1f1ce690`  
-		Last Modified: Wed, 23 Apr 2025 17:11:33 GMT  
+	-	`sha256:2bbe33075ab966c12aac41547c30551bd04dc68a304472fde873e2e12e6dc4b9`  
+		Last Modified: Mon, 05 May 2025 16:34:58 GMT  
+		Size: 2.3 KB (2282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:41246b3a95fad89e2b49fbe8b557bc521b072e8735c9fd46fcff24ea43867aef`  
+		Last Modified: Mon, 05 May 2025 17:02:49 GMT  
+		Size: 34.7 MB (34731429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0ead625a7a92d2a56774c9839ee267362ec469b7e773af6e12fae5628bc57c34`  
+		Last Modified: Mon, 05 May 2025 17:02:49 GMT  
 		Size: 1.7 KB (1660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk24-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:f204b4cb656936095f34c50add2651cd0c942ff1663763dfd7e3c967351d876a
+$ docker pull jetty@sha256:10f1bc8f7d88e7122a8bf8712c1d9558cd47309b0aae2fa95bbae2ce788584e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3482734 bytes)**  
+-	Total Size: **3.5 MB (3482737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1d92438f7f9c55e70b84a1a886c5790a1ef9cc0c1316de4414d944bcc4f2831`
+-	Image ID: `sha256:62bfc73d2b98d962d0b5142c45f5b5b58ea9a552710cd296c7d6a6d16df5cc0c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:36869eb3a14c9a38bfde7a233d170be94b12037afed30dc3a9095415319afd74`  
-		Last Modified: Wed, 23 Apr 2025 17:11:33 GMT  
-		Size: 3.5 MB (3461216 bytes)  
+	-	`sha256:f0936522bc1bb2f1ab832f6bf86fefa4e7553c3019cbc66d68c7e57b865c0e1c`  
+		Last Modified: Mon, 05 May 2025 17:02:49 GMT  
+		Size: 3.5 MB (3461220 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc90726b3d724e6b40f50cdb1007c7446a2531fb13fa90fa7df0e901ea3d00c9`  
-		Last Modified: Wed, 23 Apr 2025 17:11:33 GMT  
-		Size: 21.5 KB (21518 bytes)  
+	-	`sha256:cc61572c45ff9022b8e2d7ec6da043c1d3d85852c39d1fe7225696c2d18c4d25`  
+		Last Modified: Mon, 05 May 2025 17:02:49 GMT  
+		Size: 21.5 KB (21517 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12-jdk24-eclipse-temurin` - linux; arm64 variant v8
