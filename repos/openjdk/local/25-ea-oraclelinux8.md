@@ -1,10 +1,10 @@
-# `openjdk:25-ea-20-jdk-oraclelinux8`
+# `openjdk:25-ea-21-jdk-oraclelinux8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c24894beedd622e932eb77288084ceee5f912bd60822edcbb4aaa4264192d563`
-- Created: `2025-04-25T18:48:12Z`
-- Virtual Size: ~ 521.25 Mb  
+- Image ID: `sha256:99b1952c0000a2ed5df2337c598e7d3ba28701c6d7db41cc13401eff0865e630`
+- Created: `2025-05-03T00:48:11Z`
+- Virtual Size: ~ 524.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-25`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=25-ea+20`
+  - `JAVA_VERSION=25-ea+21`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1254,8 +1254,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url tzdata-2025b-1.0.1.el8.noarch
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/tzdata-2025b-1.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/tzdata-2025b-1.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/tzdata-2025b-1.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.4-4.el8_6.x86_64`
