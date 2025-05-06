@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c91f56b449ee93e28fb334072fb8b1d23a6baacdf73a7285467265899a878fdd`
-- Created: `2025-01-29T11:48:08Z`
-- Virtual Size: ~ 498.65 Mb  
+- Image ID: `sha256:d23b75a8acc07edd34a980000d0b2cc4841a4f8def89b09fce982234eb7d47bf`
+- Created: `2025-05-02T14:22:22Z`
+- Virtual Size: ~ 488.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.12.4`
+  - `ARANGO_VERSION=3.12.4.3`
   - `GLIBCXX_FORCE_NEW=1`
 
 ## `apk` (`.apk`-based packages)
@@ -104,16 +104,16 @@ GPL-2.0-only
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.43.1-r1 description:
+binutils-2.43.1-r2 description:
 Tools necessary to build programs
 
-binutils-2.43.1-r1 webpage:
+binutils-2.43.1-r2 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.43.1-r1 installed size:
+binutils-2.43.1-r2 installed size:
 9 MiB
 
-binutils-2.43.1-r1 license:
+binutils-2.43.1-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
