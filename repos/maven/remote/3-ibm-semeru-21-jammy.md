@@ -1,7 +1,7 @@
 ## `maven:3-ibm-semeru-21-jammy`
 
 ```console
-$ docker pull maven@sha256:60a6e49177b21b1b5d04505bbe9863ae06030afcdf1fbb1f14475b7d974ba875
+$ docker pull maven@sha256:6ae93e1207e70a9a09f79f645d9d92a6bd70f538b8b6b9f6c8a1eb1b8d22698d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -286,13 +286,13 @@ $ docker pull maven@sha256:6652e8d545fd7d42375cf4a5eea1cb66b62ab8780f12174b3d981
 ### `maven:3-ibm-semeru-21-jammy` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:bb540d3c94508ce5ff2d8b1ac9d87c88b874d0b82f5dcd7988db1687baa698fd
+$ docker pull maven@sha256:22ea5baa63f630d763555e40f35f3774ab470dfc9b0193ef42abd7d1ec754b2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **318.4 MB (318447134 bytes)**  
+-	Total Size: **318.4 MB (318409758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6dde08754255c29eb64eddab44381f38cb875ffaa75da4a44a31a23cad356a4`
+-	Image ID: `sha256:250b8103b9830632454be3590c45bf6a001fcffe5e22f40fc0e597082529b5c8`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -306,7 +306,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 20 Aug 2024 18:12:59 GMT
 LABEL org.opencontainers.image.version=22.04
 # Tue, 20 Aug 2024 18:12:59 GMT
-ADD file:b1634c9c9ee669b835ef39787fc71f78267fab0678a8e8c5547ba2339762e075 in / 
+ADD file:f6d72fdda03fb8754d82331b1f726d49b6b7d2d850ad2d1dfc2de6e1b365251b in / 
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["/bin/bash"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -356,64 +356,64 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:220e8fedb927c1ecfafdf1e8cd0a85977de62e4afd95df2c5a27a70d3bdf34b0`  
-		Last Modified: Mon, 07 Apr 2025 08:26:45 GMT  
-		Size: 34.4 MB (34442696 bytes)  
+	-	`sha256:95ba4619a43d3f4f7f5ee2c8fbe313d19bb9c0e9ca5fa9efeb7b93f942dcf377`  
+		Last Modified: Mon, 28 Apr 2025 10:44:03 GMT  
+		Size: 34.4 MB (34443215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd0d3723544f563c5caea752a6d25c7e1228adc4e25ad816d88baac9218eacb0`  
-		Last Modified: Wed, 09 Apr 2025 05:00:29 GMT  
-		Size: 12.9 MB (12892817 bytes)  
+	-	`sha256:5a64c9f5a72745f3bafe1231a1d79f060f125195fbcd3f510afac643f962e127`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 12.9 MB (12893020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8a19fc26f9c3e65e19de78544857c6235014bda75e71635143441f85a4f79aa`  
-		Last Modified: Wed, 09 Apr 2025 05:26:36 GMT  
-		Size: 232.9 MB (232908063 bytes)  
+	-	`sha256:d444cf94c2a4554c40a6b17650dde6b43349b5191b18a23581edfad2aaf59707`  
+		Last Modified: Mon, 05 May 2025 17:12:08 GMT  
+		Size: 232.9 MB (232908069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28aa87bb08df3f52cf91bd9937663e6c2a4076220a694dad4b36d5498e0362e5`  
-		Last Modified: Wed, 09 Apr 2025 05:26:27 GMT  
-		Size: 5.1 MB (5144031 bytes)  
+	-	`sha256:ba3156c0d780d00829197c909a09ec8aa05fba8ac8cd217dbcff9ad78e6ebb62`  
+		Last Modified: Mon, 05 May 2025 17:11:57 GMT  
+		Size: 5.1 MB (5109679 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55db49638486328624d507a4a10c80c234810ea6c32ef8c21d6cea881bce8f1e`  
-		Last Modified: Wed, 09 Apr 2025 15:54:07 GMT  
-		Size: 23.9 MB (23888050 bytes)  
+	-	`sha256:b000e57e8c43e0dc3bdb74ee8f64e569e7648673c57108c1d729196ddc29d161`  
+		Last Modified: Tue, 06 May 2025 00:47:40 GMT  
+		Size: 23.9 MB (23884305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87f3ff61e2fe5b087cf26d56ecd6ab7293360af7aff25358310cbdcb47aba9b1`  
-		Last Modified: Wed, 09 Apr 2025 15:54:07 GMT  
-		Size: 9.2 MB (9170439 bytes)  
+	-	`sha256:7458b1745233a978a0cfa1603c2ee0f21c137b3c1b78176bf67e3326be9bdad3`  
+		Last Modified: Tue, 06 May 2025 00:47:38 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e491dedbb00b6f03377674cd8f6f818ddcc7952c13811976a12ca78eea6bcb5`  
-		Last Modified: Wed, 09 Apr 2025 15:54:06 GMT  
-		Size: 852.0 B  
+	-	`sha256:ab02543fda927d588d1fd408ac35d02349c79a673964afd28e3bd3250ca790ff`  
+		Last Modified: Tue, 06 May 2025 00:47:35 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b54d52104a80c82a37a7cfd7520d94db8120d9531a2c65c75d164fc7cfbb49b5`  
-		Last Modified: Wed, 09 Apr 2025 15:54:06 GMT  
-		Size: 154.0 B  
+	-	`sha256:79fd30a443effd24210524d1adafdafcd57fa0d6ba57e38f633f10af954299c3`  
+		Last Modified: Tue, 06 May 2025 00:47:35 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:9a2f4fa88b0ac8e0885380e284efc9b0e8ee670a3c01c706b7dfedddd6856d46
+$ docker pull maven@sha256:35057883c8bc46c356a0ce1d5e14a2874c9de649571433157861334ec105d6d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5179471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38a5c1e388e67bdd97964b89dc5260f83a43a503595cc95a64e29ad683bb16bf`
+-	Image ID: `sha256:c6574b46da42d9fed7844306410882f8f297a2acc78a7d3c1fc436d624d6387a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fe4cbc8eace56f559baadcda7ca76e0d8f160eecb84a3e75751e5c0b338d13d`  
-		Last Modified: Wed, 23 Apr 2025 19:18:15 GMT  
+	-	`sha256:52349f7706858836df11aaacceea6d6064846e58cba1cb33aa2c0f8d2016283a`  
+		Last Modified: Tue, 06 May 2025 00:47:36 GMT  
 		Size: 5.2 MB (5160331 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:635f8f14b9ff9b815dcf750991be4f99eaa92cc84ccea7b1c7669b648a97b79d`  
-		Last Modified: Wed, 23 Apr 2025 19:18:15 GMT  
+	-	`sha256:fe9bab042f863ea13dfc4c9f7f8740dbae474ba35cdbfc645d0de048ca53c143`  
+		Last Modified: Tue, 06 May 2025 00:47:35 GMT  
 		Size: 19.1 KB (19140 bytes)  
 		MIME: application/vnd.in-toto+json
 
