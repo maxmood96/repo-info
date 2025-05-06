@@ -134,19 +134,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.0.dsc' apt_3.0.0.dsc 3158 SHA256:64b43bba97a80a7dcff08ea5f171934e32bd71f99a5c21cc4c92daca0eb30778
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.0.tar.xz' apt_3.0.0.tar.xz 2420300 SHA256:a811ef5c7b6653e4939deed77b34a84be4c4fe57fec1e65a950cca95f8c4226e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.0.0/
 
-- https://sources.debian.net/src/apt/3.0.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
@@ -1540,21 +1534,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.84.1-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1-1.dsc' glib2.0_2.84.1-1.dsc 4812 SHA256:991d4523198929543612c1e3f84c1bf746a2d87881e84d48358a1743732bc874
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1.orig-unicode-data.tar.xz' glib2.0_2.84.1.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1.orig.tar.xz' glib2.0_2.84.1.orig.tar.xz 5615396 SHA256:2b4bc2ec49611a5fc35f86aca855f2ed0196e69e53092bab6bb73396bf30789a
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.1-1.debian.tar.xz' glib2.0_2.84.1-1.debian.tar.xz 136160 SHA256:3bb55d7ae677b3e52009ce6fc65c82e808a3a041882749945af4d2f3a397f0dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.84.1-1/
 
-- https://sources.debian.net/src/glib2.0/2.84.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.84.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.84.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-7`
 
@@ -2713,20 +2699,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/l
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.4.7-1
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7-1.dsc' libffi_3.4.7-1.dsc 1948 SHA256:905661067ccb62604691b4fdfffaaa29e0af6fe9994a61cb1e7ad6befc2eb5ae
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7.orig.tar.gz' libffi_3.4.7.orig.tar.gz 593636 SHA256:f07c08c9c14977eafb9b5f9277713d91358ec18fc8aaa5607d6790cde90cba12
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7-1.debian.tar.xz' libffi_3.4.7-1.debian.tar.xz 10776 SHA256:af65d5c7024e664f71ba2b3a0ff4b72dc885d8d1b75a7d2d596f3d8e36eb3229
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.4.7-1/
 
-- https://sources.debian.net/src/libffi/3.4.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.4.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.4.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libfido2=1.15.0-1`
 
@@ -3136,20 +3115,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.3-1
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.3-1.dsc' libraw_0.21.3-1.dsc 2364 SHA256:20ce2be6b6de0c44764e0cc680099b2f59bc25609d183fb5e410fded65de6417
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.3.orig.tar.gz' libraw_0.21.3.orig.tar.gz 566017 SHA256:dc3d8b54e333d9d5441336049db255d14b27f19bd326a306cf5aea866806780a
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.3-1.debian.tar.xz' libraw_0.21.3-1.debian.tar.xz 24172 SHA256:a5cc438c93f27aedeabd8c7d6cf2d38d5b29facce4b0f8ed8454f7c8c9e4538f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.21.3-1/
 
-- https://sources.debian.net/src/libraw/0.21.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.21.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.21.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `librsvg=2.60.0+dfsg-1`
 
@@ -3971,20 +3943,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.12.22-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.22-1.dsc' linux_6.12.22-1.dsc 206735 SHA256:1d58c4d9132764f480c10ab60791e689d4ae2526b3f2a36410c442da7e1d3a2f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.22.orig.tar.xz' linux_6.12.22.orig.tar.xz 150982632 SHA256:e4da4d0a6bdc3f596515ce296cb87a4f668b5604a8a2b5847c6aa0f7c63a5cac
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.22-1.debian.tar.xz' linux_6.12.22-1.debian.tar.xz 1609160 SHA256:e32110c5492c03c9de090d433273eeeeb9668a2a4a42017c4d88523dc7a88cb4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.12.22-1/
 
-- https://sources.debian.net/src/linux/6.12.22-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.22-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -4113,21 +4078,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.1-2
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1-2.dsc' mariadb_11.8.1-2.dsc 5621 SHA256:78a24139e56cf69236a6cb596eb847f4a3ec44392ae85bc2c8f4239c0c3a927f
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1.orig.tar.gz' mariadb_11.8.1.orig.tar.gz 112837824 SHA256:c58e9e96e8e69dba09aa179b9bea63fc2775f3194efb72dfc2c277abfb9936e5
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1.orig.tar.gz.asc' mariadb_11.8.1.orig.tar.gz.asc 833 SHA256:c6a7daa2a40f47997b18515b7e2855a8f1fca603ac91a8a08c97aa47dad10b53
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.1-2.debian.tar.xz' mariadb_11.8.1-2.debian.tar.xz 288292 SHA256:0e1ec62635ef9c9ba8f93c8f8e02bab7ef3473ebef94e53ff12a4869cdf3d122
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.1-2/
 
-- https://sources.debian.net/src/mariadb/1:11.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
 
@@ -5088,20 +5045,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=24.2-3
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.2-3.dsc' python-packaging_24.2-3.dsc 2280 SHA256:86b3f6aea931ad034d1b969126181b51d418d5a53cdfaf47735f0f1f504308c7
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.2.orig.tar.gz' python-packaging_24.2.orig.tar.gz 163950 SHA256:c228a6dc5e932d346bc5739379109d49e8853dd8223571c7c5b55260edc0b97f
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_24.2-3.debian.tar.xz' python-packaging_24.2-3.debian.tar.xz 4108 SHA256:b8c6860bd6f8b0486c79c7ddcfd8a41b0b3cae7c9b8f663a50645c8a00e51f39
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/24.2-3/
 
-- https://sources.debian.net/src/python-packaging/24.2-3/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/24.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/24.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.3-1`
 
