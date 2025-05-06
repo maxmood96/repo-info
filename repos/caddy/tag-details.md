@@ -1854,7 +1854,7 @@ $ docker pull caddy@sha256:2dd801e7bcc79b26ee94f52b2368550fdf129137252c4d834cca8
 ## `caddy:2-builder`
 
 ```console
-$ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5ac6eaaadbad9
+$ docker pull caddy@sha256:3df563101e58f6d1c6f07777489ba427c2ee6495f05c6e580612c70200346c25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1879,13 +1879,13 @@ $ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5a
 ### `caddy:2-builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -1893,21 +1893,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -1932,33 +1932,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1968,37 +1968,37 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2006,21 +2006,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -2049,29 +2049,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2081,33 +2081,33 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2115,21 +2115,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -2158,29 +2158,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2190,37 +2190,37 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2228,21 +2228,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -2267,32 +2267,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2303,37 +2303,37 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2341,21 +2341,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -2380,33 +2380,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2416,25 +2416,25 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder` - linux; riscv64
@@ -2553,13 +2553,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:2-builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2567,21 +2567,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -2606,33 +2606,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2642,38 +2642,38 @@ WORKDIR /usr/bin
 ### `caddy:2-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2682,39 +2682,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -2727,86 +2727,86 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-builder` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2815,39 +2815,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -2860,79 +2860,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef95d28375e46
+$ docker pull caddy@sha256:c5dbfed180ed27fa9c4c5e6f60c48f89c41e6a97bea1971aabfb99bb5636353c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2955,13 +2955,13 @@ $ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef
 ### `caddy:2-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2969,21 +2969,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -3008,33 +3008,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3044,37 +3044,37 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -3082,21 +3082,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -3125,29 +3125,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3157,33 +3157,33 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -3191,21 +3191,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -3234,29 +3234,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3266,37 +3266,37 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -3304,21 +3304,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -3343,32 +3343,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -3379,37 +3379,37 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -3417,21 +3417,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -3456,33 +3456,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3492,25 +3492,25 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2-builder-alpine` - linux; riscv64
@@ -3629,13 +3629,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:2-builder-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -3643,21 +3643,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -3682,33 +3682,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3718,31 +3718,31 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `caddy:2-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95d3e4fad9e37
+$ docker pull caddy@sha256:7a9305393652f4cd1e9a7cf6b77912ab06360b0df1c5e43ca9ec9ecc420fcd91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3752,14 +3752,14 @@ $ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95
 ### `caddy:2-builder-windowsservercore-1809` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -3768,39 +3768,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -3813,79 +3813,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-builder-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f0829597918467
+$ docker pull caddy@sha256:7c5adf2699c40950af80caa3fecff0abd2cb61b802024c010844bc26aaa9c677
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3895,14 +3895,14 @@ $ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f08
 ### `caddy:2-builder-windowsservercore-ltsc2022` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -3911,39 +3911,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -3956,73 +3956,73 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-windowsservercore`
@@ -6475,7 +6475,7 @@ $ docker pull caddy@sha256:2dd801e7bcc79b26ee94f52b2368550fdf129137252c4d834cca8
 ## `caddy:2.10-builder`
 
 ```console
-$ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5ac6eaaadbad9
+$ docker pull caddy@sha256:3df563101e58f6d1c6f07777489ba427c2ee6495f05c6e580612c70200346c25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6500,13 +6500,13 @@ $ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5a
 ### `caddy:2.10-builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -6514,21 +6514,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -6553,33 +6553,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6589,37 +6589,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -6627,21 +6627,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -6670,29 +6670,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6702,33 +6702,33 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -6736,21 +6736,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -6779,29 +6779,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6811,37 +6811,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -6849,21 +6849,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -6888,32 +6888,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -6924,37 +6924,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -6962,21 +6962,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -7001,33 +7001,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7037,25 +7037,25 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder` - linux; riscv64
@@ -7174,13 +7174,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:2.10-builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -7188,21 +7188,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -7227,33 +7227,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7263,38 +7263,38 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -7303,39 +7303,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -7348,86 +7348,86 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.10-builder` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -7436,39 +7436,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -7481,79 +7481,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.10-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef95d28375e46
+$ docker pull caddy@sha256:c5dbfed180ed27fa9c4c5e6f60c48f89c41e6a97bea1971aabfb99bb5636353c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7576,13 +7576,13 @@ $ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef
 ### `caddy:2.10-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -7590,21 +7590,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -7629,33 +7629,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7665,37 +7665,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -7703,21 +7703,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -7746,29 +7746,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7778,33 +7778,33 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -7812,21 +7812,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -7855,29 +7855,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7887,37 +7887,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -7925,21 +7925,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -7964,32 +7964,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8000,37 +8000,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -8038,21 +8038,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -8077,33 +8077,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -8113,25 +8113,25 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10-builder-alpine` - linux; riscv64
@@ -8250,13 +8250,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:2.10-builder-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -8264,21 +8264,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -8303,33 +8303,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -8339,31 +8339,31 @@ WORKDIR /usr/bin
 ### `caddy:2.10-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `caddy:2.10-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95d3e4fad9e37
+$ docker pull caddy@sha256:7a9305393652f4cd1e9a7cf6b77912ab06360b0df1c5e43ca9ec9ecc420fcd91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8373,14 +8373,14 @@ $ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95
 ### `caddy:2.10-builder-windowsservercore-1809` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -8389,39 +8389,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -8434,79 +8434,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.10-builder-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f0829597918467
+$ docker pull caddy@sha256:7c5adf2699c40950af80caa3fecff0abd2cb61b802024c010844bc26aaa9c677
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8516,14 +8516,14 @@ $ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f08
 ### `caddy:2.10-builder-windowsservercore-ltsc2022` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -8532,39 +8532,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -8577,73 +8577,73 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.10-windowsservercore`
@@ -11096,7 +11096,7 @@ $ docker pull caddy@sha256:2dd801e7bcc79b26ee94f52b2368550fdf129137252c4d834cca8
 ## `caddy:2.10.0-builder`
 
 ```console
-$ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5ac6eaaadbad9
+$ docker pull caddy@sha256:3df563101e58f6d1c6f07777489ba427c2ee6495f05c6e580612c70200346c25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11121,13 +11121,13 @@ $ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5a
 ### `caddy:2.10.0-builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -11135,21 +11135,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -11174,33 +11174,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11210,37 +11210,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -11248,21 +11248,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -11291,29 +11291,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11323,33 +11323,33 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -11357,21 +11357,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -11400,29 +11400,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11432,37 +11432,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -11470,21 +11470,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -11509,32 +11509,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11545,37 +11545,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -11583,21 +11583,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -11622,33 +11622,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11658,25 +11658,25 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder` - linux; riscv64
@@ -11795,13 +11795,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:2.10.0-builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -11809,21 +11809,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -11848,33 +11848,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -11884,38 +11884,38 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -11924,39 +11924,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -11969,86 +11969,86 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.10.0-builder` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -12057,39 +12057,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -12102,79 +12102,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.10.0-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef95d28375e46
+$ docker pull caddy@sha256:c5dbfed180ed27fa9c4c5e6f60c48f89c41e6a97bea1971aabfb99bb5636353c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12197,13 +12197,13 @@ $ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef
 ### `caddy:2.10.0-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -12211,21 +12211,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -12250,33 +12250,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12286,37 +12286,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -12324,21 +12324,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -12367,29 +12367,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12399,33 +12399,33 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -12433,21 +12433,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -12476,29 +12476,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12508,37 +12508,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -12546,21 +12546,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -12585,32 +12585,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -12621,37 +12621,37 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -12659,21 +12659,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -12698,33 +12698,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12734,25 +12734,25 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:2.10.0-builder-alpine` - linux; riscv64
@@ -12871,13 +12871,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:2.10.0-builder-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -12885,21 +12885,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -12924,33 +12924,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12960,31 +12960,31 @@ WORKDIR /usr/bin
 ### `caddy:2.10.0-builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `caddy:2.10.0-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95d3e4fad9e37
+$ docker pull caddy@sha256:7a9305393652f4cd1e9a7cf6b77912ab06360b0df1c5e43ca9ec9ecc420fcd91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12994,14 +12994,14 @@ $ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95
 ### `caddy:2.10.0-builder-windowsservercore-1809` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -13010,39 +13010,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -13055,79 +13055,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.10.0-builder-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f0829597918467
+$ docker pull caddy@sha256:7c5adf2699c40950af80caa3fecff0abd2cb61b802024c010844bc26aaa9c677
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13137,14 +13137,14 @@ $ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f08
 ### `caddy:2.10.0-builder-windowsservercore-ltsc2022` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -13153,39 +13153,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -13198,73 +13198,73 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.10.0-windowsservercore`
@@ -14659,7 +14659,7 @@ $ docker pull caddy@sha256:2dd801e7bcc79b26ee94f52b2368550fdf129137252c4d834cca8
 ## `caddy:builder`
 
 ```console
-$ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5ac6eaaadbad9
+$ docker pull caddy@sha256:3df563101e58f6d1c6f07777489ba427c2ee6495f05c6e580612c70200346c25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14684,13 +14684,13 @@ $ docker pull caddy@sha256:680deea9ca2c0e5e415573a0debd1aa92a7a298a147e70079fd5a
 ### `caddy:builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -14698,21 +14698,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -14737,33 +14737,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -14773,37 +14773,37 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -14811,21 +14811,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -14854,29 +14854,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -14886,33 +14886,33 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -14920,21 +14920,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -14963,29 +14963,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -14995,37 +14995,37 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -15033,21 +15033,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -15072,32 +15072,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15108,37 +15108,37 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -15146,21 +15146,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -15185,33 +15185,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15221,25 +15221,25 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder` - linux; riscv64
@@ -15358,13 +15358,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -15372,21 +15372,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -15411,33 +15411,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15447,38 +15447,38 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -15487,39 +15487,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -15532,86 +15532,86 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:builder` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -15620,39 +15620,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -15665,79 +15665,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef95d28375e46
+$ docker pull caddy@sha256:c5dbfed180ed27fa9c4c5e6f60c48f89c41e6a97bea1971aabfb99bb5636353c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15760,13 +15760,13 @@ $ docker pull caddy@sha256:16205c8e035dae7faae3cb36ff03d76bb08ae2054968a28cf97ef
 ### `caddy:builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a8796717a819bb599
+$ docker pull caddy@sha256:5b34b43839bf2fefd2991f592fb74e60f8457eba01e4f379e8520bc8da42e4d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.8 MB (90787194 bytes)**  
+-	Total Size: **90.8 MB (90826590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf50d03244950e0616f679ea037cbee8e5dcb13b9811335d1e305c8d81464e3b`
+-	Image ID: `sha256:30da546f540254a60a740c0d52fc47e7793156a481a8c1fa038c788e443a977e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -15774,21 +15774,21 @@ $ docker pull caddy@sha256:83d6ff64a667c4b1a69ecadb9946c5c6b779a8da1cb1318a87967
 ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -15813,33 +15813,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfdff1cf77cc238c3b8e5663c583e181f4a737027e840204038f02071b9c7faf`  
-		Last Modified: Tue, 01 Apr 2025 17:07:31 GMT  
-		Size: 294.9 KB (294901 bytes)  
+	-	`sha256:bcde94e77dfab30cceb8ba9b43d3c7ac5efb03bcd79b63cf02b60a0c23261582`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
+		Size: 294.9 KB (294911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1d296901bdc593d88a0813bb00eef0974b68222cba6add046b831c086a1c68c`  
-		Last Modified: Tue, 01 Apr 2025 17:07:26 GMT  
-		Size: 78.9 MB (78942217 bytes)  
+	-	`sha256:92b00dc8dfbaa6cd7e39d09d4f1c726259b4d9a29c697192955da032f472d642`  
+		Last Modified: Tue, 06 May 2025 19:25:20 GMT  
+		Size: 79.0 MB (78981573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efda6a9ec0ed27775d0887572a23317fed2c90e7dc2dbe7ce0dfebddc8ae41f6`  
-		Last Modified: Tue, 01 Apr 2025 17:07:28 GMT  
+	-	`sha256:9b664c7c39c20f5e319a449219b9641bd2fdf7325727a3f69abe1e81bf0f726a`  
+		Last Modified: Tue, 06 May 2025 19:25:19 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22d2f9ebe73d312f2b756c1e064f32804abdab78546220b5eabc10c9adf4cd3f`  
-		Last Modified: Mon, 21 Apr 2025 22:34:53 GMT  
-		Size: 6.1 MB (6072204 bytes)  
+	-	`sha256:21d5d728b3bd2939934fa62f169ecfc75184175e3bb15ecf8fffa9fbed1ff395`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 6.1 MB (6072235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb3684e44506371a5bde488b7b554590968b415a88f7bb305c40be1325137be`  
-		Last Modified: Mon, 21 Apr 2025 22:34:52 GMT  
-		Size: 1.8 MB (1835033 bytes)  
+	-	`sha256:5ec286df111089e00a53c7b5c313ebf6f070b0ec18660117d2a9908d4495b6af`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 1.8 MB (1835034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab56084637a2b1f840222c17cc74c1231a6494e70a6d2dabc966bb34fdaf8e1`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 402.0 B  
+	-	`sha256:4ccb79cc4fabc1207a298e5e9bb6236331056764a33cffd456303244fc3fcf73`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15849,37 +15849,37 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:7641a6b77b25d52be5cb2ada27e70d122aed2425fb631bf7beef4c9d7c79c1ef
+$ docker pull caddy@sha256:3ca2a74a4e9d3c62715c4ea3a96b02fd5d65d3381556a9f00ceb27748c0da6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.7 KB (313717 bytes)**  
+-	Total Size: **313.7 KB (313718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b509cae98035d462abfb3478abd28730dd6fe7f3b268cdeb71a5c08eb5da63`
+-	Image ID: `sha256:a35c574c451ed26e50ed203b6f0a08f49e5a12ad28847735c24bf8e34ad3cfb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71e551c9ba0c6bb67690a1936aa113ca9706afc91f0bd5cf31837bac68de8796`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
+	-	`sha256:fae090ab08d1a25e48eeb9bb52e297e67276a5fd841bec97f9f310de3c5a1404`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
 		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602cd64046087056a772491f34ef777190c7a43b90ea4a4110b2ac3e123f1b19`  
-		Last Modified: Mon, 21 Apr 2025 22:34:51 GMT  
-		Size: 20.1 KB (20114 bytes)  
+	-	`sha256:39e112c595b8b6aaa3c6b655a81e88b6a5768cfa2fbf20074c1a06ee4e757674`  
+		Last Modified: Tue, 06 May 2025 20:07:53 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d5462313842073790b911
+$ docker pull caddy@sha256:c6e0ee9ce74b9ecf0df06549499a7928635a80722c793b8f252a4e3f05422356
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.5 MB (88486954 bytes)**  
+-	Total Size: **88.5 MB (88530665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c995256ce32b777b50f58076a4fcabce77022c1471aa8bd2590fa2e046b78cc`
+-	Image ID: `sha256:bbb244786136b64a182c10e6b24c438f1b59050586c0fdbdf78c8305099c5933`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -15887,21 +15887,21 @@ $ docker pull caddy@sha256:b6387615315b78f2064c32c418abb1bc35c24f22180d546231384
 ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -15930,29 +15930,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 22:09:20 GMT  
 		Size: 296.3 KB (296252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f7a72b848df6c57152561340e794d310a35691d8f3a552ab9db9fd598f168e`  
-		Last Modified: Tue, 01 Apr 2025 17:07:08 GMT  
-		Size: 77.1 MB (77100796 bytes)  
+	-	`sha256:e897536fb13ccfca87cac1110a2b716225d73570f890064e1f163d9b5875cd3a`  
+		Last Modified: Tue, 06 May 2025 19:25:09 GMT  
+		Size: 77.1 MB (77144504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:826258469c5a81a15e8bcf63f5e25a9e65fd6b35f331f66374ae306e61b8a0e5`  
-		Last Modified: Tue, 01 Apr 2025 17:07:05 GMT  
+	-	`sha256:5e205dd8a233395163fb7278cb76d5a78a5e21fd5108812f8a6abaaa1d2c0eb5`  
+		Last Modified: Tue, 06 May 2025 19:25:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09dd18af85543bedde634f071fb50f2bedc89e22face3c9926a37790ee12cf0a`  
-		Last Modified: Mon, 21 Apr 2025 23:05:46 GMT  
-		Size: 6.0 MB (5994292 bytes)  
+	-	`sha256:49fe15c933d4b5f3e3ea539f7476117e9dc315c0dca4b04e9e915e32a8fde138`  
+		Last Modified: Tue, 06 May 2025 20:32:31 GMT  
+		Size: 6.0 MB (5994294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de297fba50d21c5272e477e8386ac5427629f439e9c830fb8c5c604ce936e0f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 1.7 MB (1730292 bytes)  
+	-	`sha256:d93cda4facf1554a7c7324b6dd5046d403992e0875f51cea089c351460a9048f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 1.7 MB (1730291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b059a48b19187cd28e101b86e5eee8ce37e5ad9930d249f404d2eb0e382e307f`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
-		Size: 401.0 B  
+	-	`sha256:c4d386443b0e1c35e51e20dbe920127ea4acd792048154126ce848d65418324f`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -15962,33 +15962,33 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:ee33ced43297c53bc6b8ea21b1035f6c88ff081c2ecfa8c56d133bf1f1eea998
+$ docker pull caddy@sha256:3b9851f28720b5386c271120d301e238d1830570d41a35a13071de2a0ec3adda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.0 KB (20021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5335b4255fc6ac19c0bcdb42fa4c0a4bed4ecf4be186ab1939d43b79d4a3f58`
+-	Image ID: `sha256:e73f4dae2d5f40eb981ac5e2e9bf7f8c6ef70e7a24821ba09b22fa55f213192b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7deaf22240a421ac183eda77fc863eacdba5e2c4b64ffc52aa728ff1996c8c4c`  
-		Last Modified: Mon, 21 Apr 2025 23:05:45 GMT  
+	-	`sha256:0e23fd1530c53ab0b8a72d9fbe8d9b3c56bb77678cf21a11745e633458a507e6`  
+		Last Modified: Tue, 06 May 2025 20:32:30 GMT  
 		Size: 20.0 KB (20021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d02668dc37bd
+$ docker pull caddy@sha256:c4fdef7e70b582a7d5aba19ce1571f45cba70e80802a5cfd64bbeb03b66cd9fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.7 MB (87688989 bytes)**  
+-	Total Size: **87.7 MB (87732189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f79f4a0a63db1c0e61e488a80c0278451bd455e07efb386daca2114b8f230f5`
+-	Image ID: `sha256:b95ef9e02e17529c6943857bda3be01ca6f18e7c7c6c9c6a4aa2a25085f0e96b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -15996,21 +15996,21 @@ $ docker pull caddy@sha256:23a4af5bb5caec4f6d2d489673f88c1aba93f36dd500fdb339a2d
 ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -16039,29 +16039,29 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 21:47:46 GMT  
 		Size: 295.2 KB (295199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9003e8a4d55742a1a2128c3dabddda68ec2c585f52d2aac5eaee8bd68089640`  
-		Last Modified: Tue, 01 Apr 2025 17:07:37 GMT  
-		Size: 77.1 MB (77101211 bytes)  
+	-	`sha256:5f32012e82345c04270d988b1e520857596a775a43ec4b22744ab73bea39d15b`  
+		Last Modified: Tue, 06 May 2025 19:25:39 GMT  
+		Size: 77.1 MB (77144440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:604386f0e0ec73dea2f63b76b965ec9784ab4cd60bc8bf8fd481a1bfc4b272f1`  
-		Last Modified: Tue, 01 Apr 2025 17:09:04 GMT  
+	-	`sha256:9c23a49fcd1db2181cfd2a2ea5f43879dc7c393ddaf883fdbeca06dced4512fb`  
+		Last Modified: Tue, 06 May 2025 19:27:05 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f080e0999db29a748a66704f61eb1044335e87942d5438f4b853563d5146df7`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 5.5 MB (5469600 bytes)  
+	-	`sha256:7d1e7f90cd423ece67bd30e8f8457c57753287f3cd8455ff0559d6094a2200c8`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 5.5 MB (5469572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35fd245dc60ae5d6e39d2c965644a6df1700d9952ddb86bf13c9e527e7247be`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:a92d1c12f5164eb530ae85e5855a8163383869f43f117a4f568ff5c526119d96`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
 		Size: 1.7 MB (1724265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e264a8dce294500e2490124bb788424501c8993d4551f2f9627280eb7a857bc9`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
-		Size: 401.0 B  
+	-	`sha256:b40a17d6e5c7131d0a40b87d3ecb46e5bf14e4b012f989c52538e2825dc6dec5`  
+		Last Modified: Tue, 06 May 2025 20:19:30 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -16071,37 +16071,37 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:50ab1fb310cdee31456c50b6bb6db8642061ca59190cc6ec34c10aad474e827c
+$ docker pull caddy@sha256:e09e235d6575e9790a57c6b7e4e3487b1fca40cacef070153a6b4a11aef07c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **316.7 KB (316684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:000e8ccfa4c39e28c3e6ce546eab59ca525ec773e88d35c9af5ca5e200855e02`
+-	Image ID: `sha256:83bcafcd181ad187caa1d194e542d80cf76b0908617ba5f935ef07b37d719074`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39d43ee73d6b6a7da44bde9e3a98a2491899c9c669a95b7917e790eeac7a5b13`  
-		Last Modified: Mon, 21 Apr 2025 23:43:16 GMT  
+	-	`sha256:3434b9f05b64d3524d3a3e83fc60c0d05fcc3c7afa72af0cc62c08916a5349eb`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 296.4 KB (296448 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64921663613ebe84262cad7469a97f741ac7ddafad97d553bcf63fc7145f1140`  
-		Last Modified: Mon, 21 Apr 2025 23:43:15 GMT  
+	-	`sha256:f6caf191e01b5b4ff72eb495b94a73382d7ff6d0d7527929f4ba47658fe710ea`  
+		Last Modified: Tue, 06 May 2025 20:19:29 GMT  
 		Size: 20.2 KB (20236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941e541700b38c
+$ docker pull caddy@sha256:71656f6ff8d4537604894e8f97151887246bbd1c74f9b0a332e06afcd4d53f2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.3 MB (87311485 bytes)**  
+-	Total Size: **87.3 MB (87341827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6bc430e70975f3406a92212a4966d327a6af0f45c7129a844bf5e495b4c8289`
+-	Image ID: `sha256:d538f19eb4b00dbc08e1f2ad2291ebbc131cc5a81094a75fcdd905bd82551c1a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -16109,21 +16109,21 @@ $ docker pull caddy@sha256:d4d85b008f4a11b61ba8adc823d669e2105d2a9c52005b9f55941
 ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -16148,32 +16148,32 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e33b27c9b76515e1154a131a67e2f0fe88ba9e9bc48a1a704c790a0561e068`  
-		Last Modified: Mon, 24 Mar 2025 21:29:27 GMT  
-		Size: 297.9 KB (297871 bytes)  
+	-	`sha256:2a2f34450ab6893f9de21e818c13da20ab31676614598eac0352797a074049df`  
+		Last Modified: Mon, 05 May 2025 21:13:39 GMT  
+		Size: 297.9 KB (297874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a002eda2038f0953467f843586445333b2af3e827e57b15849040931f2903fb4`  
-		Last Modified: Tue, 01 Apr 2025 17:07:27 GMT  
-		Size: 75.2 MB (75200208 bytes)  
+	-	`sha256:0ae64884db43f30f8dbc9ec3362124d99c8bad23b957254ac52fb30413bd14a7`  
+		Last Modified: Tue, 06 May 2025 19:25:16 GMT  
+		Size: 75.2 MB (75230554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc8c2e8d985822b3b6ac5ae3a8c130feb27393e9e165e3e1cebea69d9e30f32`  
-		Last Modified: Tue, 01 Apr 2025 17:08:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:2bdee32b0d6cb9863bfa2b0996b359506fd0a938301ae9bfdef13cb97a59b1e8`  
+		Last Modified: Tue, 06 May 2025 19:26:19 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fc8c0bfcd99d76d69395e87c229d70d492e493820ee09e9d1b105da31546b7`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 6.1 MB (6118355 bytes)  
+	-	`sha256:c4e22137a3f38ca622d6267ce2e9b89af69fa1a79374adb9f0c29e4494757bb6`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 6.1 MB (6118344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b4da9a5f90495df185171dc2a7d44205e368d3a947c0f2cf9479159392d93`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
-		Size: 1.7 MB (1701430 bytes)  
+	-	`sha256:32090eecb21ab788d303fc0d075bd6c1c482f3fc0ccdabf1bf330d1427561999`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
+		Size: 1.7 MB (1701435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c8db658bdeefb9725383da66ea36dea62564a8f7424efe3d78416b21c3fc85`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:833a87979c7d526727a997810835991ce837b51122422083faf21558ad0f9fc0`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -16184,37 +16184,37 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:62632978e931bb4fcfa6a0b2914d99081c0e1bc62ded5aa83e98ecdc3d0000f2
+$ docker pull caddy@sha256:8431ede88c50d3961bbee063e0c0eda3241e94d4f8f644487256e27f8c326caa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **314.0 KB (313989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa6c9ba3c0bc8153983cd4f731735430f25236241d474cd8092028a71172c65b`
+-	Image ID: `sha256:d7a632bc75664b6893989d39a020d69a2f7b51a3d24781eef4ab3bebbce0c451`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caf743574a407d836048c88cbf4ba791450a2418292a490758a42cf628273efd`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:93faa8f911c37ec92af3848841f8e5a0cda95d0b18c4f7eac7c5ddeb64adf455`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 293.7 KB (293707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a685f5c0307443cc585ea35703fa4d7090ce3bd650d35c62f6194cb99e9b57e`  
-		Last Modified: Mon, 21 Apr 2025 23:35:50 GMT  
+	-	`sha256:5f0142aa8d984cf4539fff2c3d58a80cdcbe233135c7fd394d31b22979f2718a`  
+		Last Modified: Tue, 06 May 2025 20:21:22 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da77284f338a0
+$ docker pull caddy@sha256:80a3aca400c14e5d92366cb03212f5c1eadf80c65a540cd6785a0811132b64f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87468043 bytes)**  
+-	Total Size: **87.5 MB (87511256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06be4edf44ac7147d724a2838b2c5b950e9e8388ae3cb87bb52f6d24b062c0ac`
+-	Image ID: `sha256:e94037e8da20d87d5f1f494141aa3f42fd8cdc6591d347583c9bc54456641e6d`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -16222,21 +16222,21 @@ $ docker pull caddy@sha256:33cf1d9660c7fd9eb096bfe701cd8c5348ad76f9b1d734c7669da
 ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -16261,33 +16261,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27442ea8b4dc6fdf584c0b30a8e1943de4b659fd7ec220499d43ff5c7d4c1c8`  
-		Last Modified: Mon, 24 Mar 2025 21:48:27 GMT  
-		Size: 298.3 KB (298274 bytes)  
+	-	`sha256:38d07c13e49694099e3952065321ca0fc45938d3a118b16ce109a83e147045f6`  
+		Last Modified: Mon, 05 May 2025 19:01:05 GMT  
+		Size: 298.3 KB (298290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee95abad5ecea3c593f42714d65b6f62167cc9a1a7a50eaad85a7db940a3e7f3`  
-		Last Modified: Tue, 01 Apr 2025 17:08:51 GMT  
-		Size: 75.5 MB (75501286 bytes)  
+	-	`sha256:51f44821f8171df650a338e8fdd3b017af075382eee8cc2d34256864c2264897`  
+		Last Modified: Tue, 06 May 2025 19:26:37 GMT  
+		Size: 75.5 MB (75544493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cc8a8fae114e6d1cabbae8d39a9b447bc2cbb6a893c766a392e70bf7d3a831e`  
-		Last Modified: Tue, 01 Apr 2025 17:09:56 GMT  
+	-	`sha256:f36d8fe8d7595d2f87f7dde8e6a7f6b715f24f9b8112a6fa773367fb24c573ad`  
+		Last Modified: Tue, 06 May 2025 19:28:00 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:221d9b6bcddb45fa372e608c547c7f16c93436f546917d54500a2aa20dd0f788`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 6.4 MB (6397956 bytes)  
+	-	`sha256:11b225310d36db0f9444593597b462929399d348352822f193716ebaad9900f5`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 6.4 MB (6397947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f98a6696c5d89c20e8779e833f283f416125c66df9fc4364baa12bdf7b9433cb`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
-		Size: 1.7 MB (1695591 bytes)  
+	-	`sha256:50ccd23280ce9aaddcaa14ad3fecae2514212b0169f34220c75cfb58cdd151f0`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 1.7 MB (1695589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f12aed678d711b832e221ecf04bee39bf94e7c7535cbfa889295f31372444657`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 401.0 B  
+	-	`sha256:4250f17bb780ca7700f6d310e7b0882352efdedc12bf55de668ec0976ec5ce0c`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -16297,25 +16297,25 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:1699e658e2702afacf635ee4ded565981bfb78c0f7d9c0925a02d8457ffadd4a
+$ docker pull caddy@sha256:fae282756aa52e2d858bae023a6a634f1eaf65a9ff88aad451d7cd3afea5ad86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.9 KB (311930 bytes)**  
+-	Total Size: **311.9 KB (311931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:060df1122717a8fa7607718859b37f5933b3bc539792a75b859299e6030ecba5`
+-	Image ID: `sha256:afe39406bd23b128474e9e17e1786e2977e091761d768508f8f8a5920ee9c56a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f85366979d5df23cc957c3c140d29674ecb794d427e161df6a4628e8f25f4a0`  
-		Last Modified: Mon, 21 Apr 2025 23:49:53 GMT  
+	-	`sha256:2b6c80936b539eb135b15be9b618066cd0c6840e3d3d718708ae3e55c908a90f`  
+		Last Modified: Tue, 06 May 2025 20:17:44 GMT  
 		Size: 291.7 KB (291746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d93e6aceadddf1119c891b63166705002953184c0a4f78940c28dc115706b99`  
-		Last Modified: Mon, 21 Apr 2025 23:49:52 GMT  
-		Size: 20.2 KB (20184 bytes)  
+	-	`sha256:62e1351ed1922a227aa97f787071cc22463220131fcce331353b438487893796`  
+		Last Modified: Tue, 06 May 2025 20:17:43 GMT  
+		Size: 20.2 KB (20185 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `caddy:builder-alpine` - linux; riscv64
@@ -16434,13 +16434,13 @@ $ docker pull caddy@sha256:9877d8d33d7e6a0b0311df9c3976a0241b74557132ec2d94d7d5e
 ### `caddy:builder-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef70f3171e863
+$ docker pull caddy@sha256:f7002ca7537c752f6abc667a51062ec0a96108b8449025ce2fa14594bb1d0baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.6 MB (89645737 bytes)**  
+-	Total Size: **89.7 MB (89689215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02398e31b6d83a645a9d9920b29e1679e967fdae9adf26162ff29ec6fbe75a99`
+-	Image ID: `sha256:2aaa1c65099e3920eab25b6d0060f54d0a785bb46926088bc5c850be074519ea`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -16448,21 +16448,21 @@ $ docker pull caddy@sha256:30952f189278c249fe5069f755b2079c7b7c92951c159c9e366ef
 ADD alpine-minirootfs-3.21.3-s390x.tar.gz / # buildkit
 # Fri, 14 Feb 2025 03:28:36 GMT
 CMD ["/bin/sh"]
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
-ENV GOLANG_VERSION=1.24.2
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
+ENV GOLANG_VERSION=1.24.3
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV GOPATH=/go
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 COPY /target/ / # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 01 Apr 2025 16:30:57 GMT
+# Sat, 19 Apr 2025 03:51:58 GMT
 WORKDIR /go
 # Sat, 19 Apr 2025 03:51:58 GMT
 RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
@@ -16487,33 +16487,33 @@ WORKDIR /usr/bin
 		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be80be2c55902add1c4b1f14066b1b4da724beaa2e355b53f8dd45b4887d9b9c`  
-		Last Modified: Mon, 24 Mar 2025 21:26:52 GMT  
-		Size: 296.2 KB (296183 bytes)  
+	-	`sha256:5bd99af01c56b56dd8b4b638222a30d969ae806a266626016d5a030517f57428`  
+		Last Modified: Mon, 05 May 2025 17:56:04 GMT  
+		Size: 296.2 KB (296192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64586fca58b7ef9b98d81252f6468cd1afe274720313716be72d0e12ecde9791`  
-		Last Modified: Tue, 01 Apr 2025 17:08:27 GMT  
-		Size: 77.7 MB (77744430 bytes)  
+	-	`sha256:553e83890111f2cfa590a0023450ca3f44d60d123d688835ec1c4ba557b336f8`  
+		Last Modified: Tue, 06 May 2025 19:25:37 GMT  
+		Size: 77.8 MB (77787898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e049e56da0eb21854c2d4985311d05149a497ab6647152db8a4110d93e6b2468`  
-		Last Modified: Tue, 01 Apr 2025 17:09:14 GMT  
+	-	`sha256:6ad9a5b0e376da7a0d7f9683b35cbd8e9729795bbc267d366b0e055a6f39e539`  
+		Last Modified: Tue, 06 May 2025 19:26:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b73f489b3ae4d224f92a76c2bbea892543e2e7b3ca72e0f9b8adff2e33b845d`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 6.4 MB (6365558 bytes)  
+	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
+		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b557a5b2d1889af09d02d87997a3f0498996f74e827065868b5d28d0200ebe`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 1.8 MB (1771408 bytes)  
+	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467e67bcf04433c6136cc39ae0e7b7508fa6d1939f0734b876969bf782df6b73`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
-		Size: 401.0 B  
+	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -16523,31 +16523,31 @@ WORKDIR /usr/bin
 ### `caddy:builder-alpine` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:48287469d6c3d82a864284f94f98a270f561018b886e3cd8f3afa352050cec10
+$ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdfc04c890db5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **311.8 KB (311767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e66b3ecccb24061ad73b54159e21c1d04ed2df06e2c6039ddaeab037c00eb4b6`
+-	Image ID: `sha256:429e781bbc870b04b05c820d21b684d06972d53b56003dc1d6b416bbc69fd35a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0614b59f15126c2573ca350dc90eec4ef8f22ec470a42933c40da158e610da2`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fbb72388af7a41647b6cb238f92d3daecd1068220618e5bdb9434948e105d4f`  
-		Last Modified: Mon, 21 Apr 2025 23:15:36 GMT  
+	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
+		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `caddy:builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95d3e4fad9e37
+$ docker pull caddy@sha256:7a9305393652f4cd1e9a7cf6b77912ab06360b0df1c5e43ca9ec9ecc420fcd91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16557,14 +16557,14 @@ $ docker pull caddy@sha256:232c3fb379ab59b5815d9960222a90500214ba9177a4a884b2e95
 ### `caddy:builder-windowsservercore-1809` - windows version 10.0.17763.7249; amd64
 
 ```console
-$ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518acb12aa4d62
+$ docker pull caddy@sha256:3987dcdd3466294f9e78a204fd4442d4545b7408d1cd0100a9f5feb76419a648
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2296732556 bytes)**  
+-	Total Size: **2.3 GB (2296873508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bdf67b4ebde66b6747e9843e7fe550b06f0fe3c24c1c4254757b566d9ad6a2`
+-	Image ID: `sha256:0925ca7661d09f87930857cb6ccdb8bb8d6beebd7f3b6ca249b517e6500dfa16`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -16573,39 +16573,39 @@ $ docker pull caddy@sha256:a7ea1ef1309f1b533604f9e47fd8f46e9273b672a5b9143519518
 RUN Apply image 10.0.17763.6293
 # Tue, 15 Apr 2025 01:47:49 GMT
 RUN Install update 10.0.17763.7249
-# Fri, 18 Apr 2025 03:17:05 GMT
+# Tue, 06 May 2025 19:25:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:17:07 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:17:08 GMT
+# Tue, 06 May 2025 19:25:09 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:10 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:17:09 GMT
+# Tue, 06 May 2025 19:25:11 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:18:02 GMT
+# Tue, 06 May 2025 19:26:42 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:18:03 GMT
+# Tue, 06 May 2025 19:26:43 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:18:09 GMT
+# Tue, 06 May 2025 19:26:50 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:18:10 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:19:19 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:19:21 GMT
+# Tue, 06 May 2025 19:26:51 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:29:16 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:29:18 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:44:10 GMT
+# Tue, 06 May 2025 20:09:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:44:13 GMT
+# Tue, 06 May 2025 20:09:36 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:44:14 GMT
+# Tue, 06 May 2025 20:09:37 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:44:15 GMT
+# Tue, 06 May 2025 20:09:38 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:45:02 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:45:03 GMT
+# Tue, 06 May 2025 20:11:09 GMT
 WORKDIR C:\
 ```
 
@@ -16618,79 +16618,79 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:13:03 GMT  
 		Size: 445.3 MB (445257460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc58abf569d39be3c925dc5f3f86dc1a988b54666b1ef1e12e53e7a71ceee179`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:17d94919f07da82617ccb436666a96b40abf546393c58eb49790880f941a2d28`  
+		Last Modified: Tue, 06 May 2025 19:29:24 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:830f09db3a63bcefe67c5e4c9edf039dd6ae6d2659ad1a8c73e98ad7cba6f5f6`  
-		Last Modified: Fri, 18 Apr 2025 03:19:25 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:ac6f1221b9a0df43dd07c42550615723d50c57a6f4fed67ab0d2c2b0b8ade6e2`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:714665fd638a59d67ec9f069d157ce0dce974ed7c9285c968cddc8627580f434`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:c0238ce2ba6db74026942a4eea32b916cbf7e747b83d43c658a5effb1547c165`  
+		Last Modified: Tue, 06 May 2025 19:29:23 GMT  
+		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ad74e1639eca81ea7f6918389decfcbd99eff8cc06d3b45df134905fe3ee644`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
+	-	`sha256:6a4079cd204de4d1b2be19cc9b2bbe6ba1a3c67ad07b9773266f378fb8ea663f`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af4aa0dd71bcec799d3139dbf32c3b593be611239852195e362549d5ef53b12f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:24 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:5d1e4062259794707552486b9754e93f11b8cc8d7c2369389726120c9e2a57f7`  
+		Last Modified: Tue, 06 May 2025 19:29:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b03fb9f9ed271b4b8ba462e9599108f4f231edd3e9e31882613bf832581c5da`  
-		Last Modified: Fri, 18 Apr 2025 03:19:30 GMT  
-		Size: 51.2 MB (51198821 bytes)  
+	-	`sha256:f9b19c6301829b60247c4815c66cf771f0b5eeb7fac5a9e8c17dedfc1069a143`  
+		Last Modified: Tue, 06 May 2025 19:29:27 GMT  
+		Size: 51.2 MB (51230167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3807dff106c6843be9a5701c1480f12b6adc9107b47aa9ea3ebb5d581578496d`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
+	-	`sha256:c740de028ac561af7b1af13adb4941e36150f7c4e21e8f5d23c325646e72f743`  
+		Last Modified: Tue, 06 May 2025 19:29:21 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:59706d027391dd6283b6a2e8c0ef6486e9d3761730d3b8c116a3311ee7cb019f`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 320.9 KB (320891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:36223329e375218f83d378f29a077644e29890c7f1529021705f223cc0dd55db`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.3 KB (1324 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d2695b7b53a4e66df1901b41dc7c2e9d9a955e95b783be3c372df2189983bee6`  
+		Last Modified: Tue, 06 May 2025 19:29:32 GMT  
+		Size: 77.5 MB (77496078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46a4985964b7163036b5745e7930abacfd8ff0ef9504e9cfa96e2af810aac7e3`  
+		Last Modified: Tue, 06 May 2025 19:29:20 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e281c5a110f877cf5ef32176c3363c431b05c611ea9a5eda3cd802156222eab`  
+		Last Modified: Tue, 06 May 2025 20:11:13 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2d62c36606ce35dbd065a72b9c3c470b47b34ef103a5e9a1074e666566f50e7`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d44d9ea57aa8369a8c619a3faabfb151ed0d72f436ac0779347afe279b0cfa35`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b8fa9bc2097fbe08d4713ba5b159b9111273e3cd51f3277f14ae56ed5dd74f`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 332.8 KB (332775 bytes)  
+	-	`sha256:ed5932d52317728f9d7ca78527211fd2812db989d2d438576b42b8d07a27dd7a`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61592680fbb790793d61381979f3bfe77e4832b89285cb3f7574a7f00dca59d1`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:88dbdff2f0aac147759138fb1aa0db8035553b36d7bf172da200c5e4db5c6f1c`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 2.3 MB (2283563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a88a6a4c6fe241e1cb17c9b14ce9eaaab1556394d408c7d194990d713b0b6584`  
-		Last Modified: Fri, 18 Apr 2025 03:19:36 GMT  
-		Size: 77.4 MB (77368125 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac59c8176cabc693d38bb28cba053ca9b77e720f96eaa27ee36b62afedcbf233`  
-		Last Modified: Fri, 18 Apr 2025 03:19:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233522a12b15b4ae3cc5ca6ed917af92ea0cdc99907df28370189264a45118ad`  
-		Last Modified: Mon, 21 Apr 2025 22:45:07 GMT  
-		Size: 1.3 KB (1290 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5210a01ed7decd576dbc999955e6a08f084c4ab3d9286c47c391cb32f4bfde28`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f018eddc2a100b41a8ee2c91defbcea643392feacc69e79c3be0ed377eac3b01`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b3f012693f4b9779457c37af2b07e24dbe97d1fa6d8f47a55d17c93eca2cca`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.4 KB (1368 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d43af34798a541997ea8b16ad84b185ae0f3f847ba4abff7dc62c1efd86dcd5`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 2.3 MB (2289949 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27535f88ba33f080f88664920c0b5216b85d8acccfa68614c8430d654d4ead02`  
-		Last Modified: Mon, 21 Apr 2025 22:45:06 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:b6432f5c76634c2fde67782611d31eff9866b1a4abe7e1fe389b7cbadc4cd7c3`  
+		Last Modified: Tue, 06 May 2025 20:11:12 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:builder-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f0829597918467
+$ docker pull caddy@sha256:7c5adf2699c40950af80caa3fecff0abd2cb61b802024c010844bc26aaa9c677
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16700,14 +16700,14 @@ $ docker pull caddy@sha256:f9cdde3b83579c5c42f4f1503cae4e06d5a0c845807817d5e1f08
 ### `caddy:builder-windowsservercore-ltsc2022` - windows version 10.0.20348.3566; amd64
 
 ```console
-$ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e448320960a46ba5
+$ docker pull caddy@sha256:61a0240aa584cfb2db230269b57b7b61196cfbc8faf40281ba405554ba9e5db6
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2404806762 bytes)**  
+-	Total Size: **2.4 GB (2404827856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44d8241fa6b619c51c83acc4bc9795350101a92fe0dec318f08e98c5c7cc93da`
+-	Image ID: `sha256:0db6a4090771ed6397ce85aa5cc229b51f0207d3e36f2ab9ff3efc7e90ace23e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -16716,39 +16716,39 @@ $ docker pull caddy@sha256:cdfd2c3b7d5a9fb4bb76172262ae151d73be5ea8afe61d08e4483
 RUN Apply image 10.0.20348.2700
 # Wed, 16 Apr 2025 03:49:18 GMT
 RUN Install update 10.0.20348.3566
-# Fri, 18 Apr 2025 03:16:07 GMT
+# Tue, 06 May 2025 19:24:58 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 18 Apr 2025 03:16:08 GMT
+# Tue, 06 May 2025 19:24:59 GMT
 ENV GIT_VERSION=2.48.1
-# Fri, 18 Apr 2025 03:16:09 GMT
+# Tue, 06 May 2025 19:25:00 GMT
 ENV GIT_TAG=v2.48.1.windows.1
-# Fri, 18 Apr 2025 03:16:10 GMT
+# Tue, 06 May 2025 19:25:01 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/MinGit-2.48.1-64-bit.zip
-# Fri, 18 Apr 2025 03:16:11 GMT
+# Tue, 06 May 2025 19:25:02 GMT
 ENV GIT_DOWNLOAD_SHA256=11e8f462726827acccc7ecdad541f2544cbe5506d70fef4fa1ffac7c16288709
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:39 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:16:32 GMT
+# Tue, 06 May 2025 19:25:40 GMT
 ENV GOPATH=C:\go
-# Fri, 18 Apr 2025 03:16:38 GMT
+# Tue, 06 May 2025 19:25:48 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 18 Apr 2025 03:16:40 GMT
-ENV GOLANG_VERSION=1.23.8
-# Fri, 18 Apr 2025 03:17:44 GMT
-RUN $url = 'https://dl.google.com/go/go1.23.8.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'e0ad643f94875403830e84198dc9df6149647c924bfa91521f6eb29f4c013dc7'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 18 Apr 2025 03:17:45 GMT
+# Tue, 06 May 2025 19:25:48 GMT
+ENV GOLANG_VERSION=1.23.9
+# Tue, 06 May 2025 19:27:35 GMT
+RUN $url = 'https://dl.google.com/go/go1.23.9.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '16409aa244b672de037389e9e39115cbf82633e5fa0d4db6ec1a9191ca00a1e1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
+# Tue, 06 May 2025 19:27:36 GMT
 WORKDIR C:\go
-# Mon, 21 Apr 2025 22:42:58 GMT
+# Tue, 06 May 2025 20:10:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Mon, 21 Apr 2025 22:42:59 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV XCADDY_VERSION=v0.4.4
-# Mon, 21 Apr 2025 22:43:00 GMT
+# Tue, 06 May 2025 20:10:22 GMT
 ENV CADDY_VERSION=v2.10.0
-# Mon, 21 Apr 2025 22:43:02 GMT
+# Tue, 06 May 2025 20:10:23 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 21 Apr 2025 22:43:14 GMT
+# Tue, 06 May 2025 20:11:22 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.4.4/xcaddy_0.4.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('cbc63529fd591742d67d68ca21c4cdb70a288cb91b20f2d9c711c34b4674d7beccd3aa774e5a6a4b7ea2c8fa92434911288c872b67fe56b8979eedd19130c041')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 21 Apr 2025 22:43:15 GMT
+# Tue, 06 May 2025 20:11:23 GMT
 WORKDIR C:\
 ```
 
@@ -16761,73 +16761,73 @@ WORKDIR C:\
 		Last Modified: Fri, 18 Apr 2025 03:14:44 GMT  
 		Size: 811.4 MB (811390127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928c0f321e05845c89914a556c7a2028df7f108e64de9acd742cb59298319052`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:dd988c757ad458877d9b2bdf08572210ea954427ee36894ad0bb5d4090a5eaca`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f045b5bc6f0695f8405c8c4eea8d45e4f5165454f8131efafdaa50b08d5907`  
-		Last Modified: Fri, 18 Apr 2025 03:17:53 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727a19edaa05302e09ee84440abab477807119f191e756f3876f28d486ca3fb9`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eba7b5f0531e6fbeaf609d3720cb7829a8e0b772a6ba7dd9c9ed2bfed841c6`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:5f33105bcba42ba9ac66c906a559efc7f4801f310a4a9bbc3038a7f338e1086a`  
+		Last Modified: Tue, 06 May 2025 19:27:44 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ad297dacea5705ef3dcd8bb787de66d167ed4f3df5044ed9c552ad74f6cb7f`  
-		Last Modified: Fri, 18 Apr 2025 03:17:51 GMT  
+	-	`sha256:e0e7fdd7cd12f8878ee99b9218fa9bf8098b93e186e1fb7d9ee15089e5212cbb`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:069e8e74ae803759c5873f048b1ae642d44fe7fa287a65d35a28f88fce77a574`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d0a1f164c0449bbc249fff000b20ca0d037d3cd4ad8f9772e6b6723295ab8d6`  
+		Last Modified: Tue, 06 May 2025 19:27:42 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b962fcde5950e1f060f23fdc1ded93030c5766e6bb724043933d39e0b870266`  
-		Last Modified: Fri, 18 Apr 2025 03:17:58 GMT  
-		Size: 51.2 MB (51194774 bytes)  
+	-	`sha256:a7862ebe1835e4b66847efe02283063d59a3eede2f2e5bf400685760522b3904`  
+		Last Modified: Tue, 06 May 2025 19:27:48 GMT  
+		Size: 51.2 MB (51207342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:280b3e3a762067b28280926bc4906934d3329c9cd8643fad3431b8615acfeacf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
+	-	`sha256:0687e3fa6ae38dff260b3ae98d13775320cb5a228023f326fe1fea45a45e163b`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8888c0676b7a5879eb0a3e3f72caa3b72d9306b76c42471b1114e3213fc4fd70`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 348.6 KB (348640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9089fd6d7f3908ed2cc16d1de7ab1e01b85b5ca1bab4e86211026a75e4b23a3`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808afa509f106e399586ea6bec970ee894c10600120f170ef8d8492886a4aeaf`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 336.8 KB (336759 bytes)  
+	-	`sha256:192243deabbd00cb5f169a24f9cd72332b6775d4d43769d8508a738172fccacb`  
+		Last Modified: Tue, 06 May 2025 19:27:52 GMT  
+		Size: 77.4 MB (77385502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fed32f2f547c14055e5e7ca27a20b78467efed5fa74e3cc6202c4db38d02a54a`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:c0ab27702524765047eca57279e3b7a6ca6c370511543bf4c9cdc14bdbc5cb21`  
+		Last Modified: Tue, 06 May 2025 19:27:40 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac74ed2dce7eb887902902d56f1af4c81bafbd34924c14a79b7c75d1e7dcdcfc`  
-		Last Modified: Fri, 18 Apr 2025 03:18:02 GMT  
-		Size: 77.4 MB (77370408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:311a828d4d5155fb8ac9729979a81963763e30a69570e3399a9a7e3d93c57ad5`  
-		Last Modified: Fri, 18 Apr 2025 03:17:49 GMT  
-		Size: 1.5 KB (1507 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e62b6f9ab04c3a1b1dee2f5edbff887849c6a97eb6801b6d84221f75808c0dd`  
-		Last Modified: Mon, 21 Apr 2025 22:43:21 GMT  
-		Size: 1.3 KB (1291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa6efc43750ca7f4af4ddddbaa007f609c1ee541b0f612017c80c1abb89c60a7`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3aec376748e8ee776931a1bb5e13298acff17bff113f4c724b9fd894870d0ed9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b09a1066dc01b0485d929093cd66c8db502aa48e6e841362af5336d24a61306`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c16ad861b8d30ea2a8ad1d5bb875a94493d8d9edbbe71fde406360b69063e55e`  
-		Last Modified: Mon, 21 Apr 2025 22:43:20 GMT  
-		Size: 2.3 MB (2305347 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016fcce398f29d63026b088a474a74ff4f01e06efd1ccc6a7be5b3cd34163df9`  
-		Last Modified: Mon, 21 Apr 2025 22:43:19 GMT  
+	-	`sha256:a8911db6f45dcaa042e5200a3fe31d83ba9989bcfb2039fbd50e021169a6ae80`  
+		Last Modified: Tue, 06 May 2025 20:11:29 GMT  
 		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0a0417551a6741d3defa2c356bc24317be9b771f960913fb49d6275695fb166c`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f4e5cfc774a91249f0de70b069a694f13da761f22501620145276b8d385ed597`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c8f097d7050db3162a8a5ca82cae69b92e7f870da971f68582c5eced8e43737`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6430c1e1b9802ec232c5041d8ac44bfc4d5a2e86e99296c90400e26f64c6e56d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 2.3 MB (2286995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2735de802d351495b18e93918e61d101b3681c5fbbd9bff485be69fdda2d563d`  
+		Last Modified: Tue, 06 May 2025 20:11:27 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:latest`
