@@ -1,7 +1,7 @@
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:956df2dac87a1d2804abe207ec6239115d72931fb9c56c7f574b482c2a9eb757
+$ docker pull telegraf@sha256:80c2d6e3e421382ace42eb38c125b9b482dc20996693f4ab1967b2e8e76590d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -188,13 +188,13 @@ $ docker pull telegraf@sha256:43aef8fa73b7066f2c6c1fb05ca46bd0e50db98f3c72b05ddd
 ### `telegraf:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull telegraf@sha256:4db496c56367cb8ad48e9cbd34f80b7584c6cd928b7ceaabc19de3ec34afb953
+$ docker pull telegraf@sha256:7236866cd0c185414043e05d17134a659c925307be4df7b08c0c1be8b964b02f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.0 MB (160998981 bytes)**  
+-	Total Size: **160.7 MB (160741620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2521ce55cb4ad77972ebc15835dde0812cf4b80e854eb61e12ac1c79d4665e02`
+-	Image ID: `sha256:543f8780e6330b59dfb5ffb9c60d1a98c5c1132b8e861bfe92539aaca3f620ac`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -203,21 +203,21 @@ $ docker pull telegraf@sha256:4db496c56367cb8ad48e9cbd34f80b7584c6cd928b7ceaabc1
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1745798400'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors libcap2-bin &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Mon, 14 Apr 2025 17:23:46 GMT
-ENV TELEGRAF_VERSION=1.34.2
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
+ENV TELEGRAF_VERSION=1.34.3
+# Mon, 05 May 2025 20:28:05 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb* # buildkit
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
 EXPOSE map[8092/udp:{} 8094/tcp:{} 8125/udp:{}]
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 14 Apr 2025 17:23:46 GMT
+# Mon, 05 May 2025 20:28:05 GMT
 CMD ["telegraf"]
 ```
 
@@ -238,35 +238,35 @@ CMD ["telegraf"]
 		Last Modified: Tue, 29 Apr 2025 19:27:32 GMT  
 		Size: 1.8 KB (1782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19ec0acd2d79ae0af3c87fa5d8728a3905bba96a51a7d14f6d80dbc699c41193`  
-		Last Modified: Tue, 29 Apr 2025 19:28:35 GMT  
-		Size: 70.3 MB (70252909 bytes)  
+	-	`sha256:9f36787a5ee1c46394cceb50e0a896ee120448916cbad47fc0217040703e6e7a`  
+		Last Modified: Tue, 06 May 2025 02:06:32 GMT  
+		Size: 70.0 MB (69995550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c11614f4b96feec840c7fcfea888aae3e841ceaadcf56772bd07605ad3653b46`  
-		Last Modified: Tue, 29 Apr 2025 19:28:32 GMT  
-		Size: 625.0 B  
+	-	`sha256:c3536c1dd589a2ac2c4c00c4cd04745d4d4e332fdae5ec2ff5d532014e0c07f6`  
+		Last Modified: Tue, 06 May 2025 02:06:28 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:latest` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:4960e99ceefe73669254579ef259a90364b5b70d789e7391ef46099ff3349f68
+$ docker pull telegraf@sha256:9cef8234a18e2bced21cf4ae272a9d369c7877266b3cc91a30dc0730b781eb41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6458597 bytes)**  
+-	Total Size: **6.5 MB (6461841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72375b4047e7c0bd12fc239e094e233ca4a423b7ddb235326c8c19d3bea7a0d1`
+-	Image ID: `sha256:07fb57fe16b24773c7424ca1c0442e97df1436abfe3618ac00589a1de84457fc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8740e869f2aa1e62650cc427c3faac38662ca8bf62602d778b6e552afc62892`  
-		Last Modified: Tue, 29 Apr 2025 19:28:32 GMT  
-		Size: 6.4 MB (6443703 bytes)  
+	-	`sha256:353f0e0d864a7a3999c226d18d1ab5b5cb6807ec88724876ccba00c3d8dcf486`  
+		Last Modified: Tue, 06 May 2025 02:06:29 GMT  
+		Size: 6.4 MB (6446947 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bd3fa9092e71045544b4836d7bfac305d6868bfcc4a243ff2c15b60e3175cd1a`  
-		Last Modified: Tue, 29 Apr 2025 19:28:32 GMT  
+	-	`sha256:d1220a2a4a2dc3d9f0273f3ef0a58d42b992b9f7be92783d32b58495669cafb3`  
+		Last Modified: Tue, 06 May 2025 02:06:28 GMT  
 		Size: 14.9 KB (14894 bytes)  
 		MIME: application/vnd.in-toto+json
