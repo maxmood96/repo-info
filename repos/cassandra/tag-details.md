@@ -34,7 +34,7 @@
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:d4fa2fde094cc8baa62f82070a71288355f4a31b20db98c4099ce02babfe9faa
+$ docker pull cassandra@sha256:fe627c64b6e7f7ae35241d0597e251e13c7367a29ef29baf8dc730da2b644823
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -351,13 +351,13 @@ $ docker pull cassandra@sha256:fa6e9deb6d75c328e17b4a0df7640118add293b100d0dd222
 ### `cassandra:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:df9028be9a48ee5bac94549f46b2e25ef8bfd7f9d5bbf10bca457420ff5ad479
+$ docker pull cassandra@sha256:6185e7e56eca46dca3b748898d5663b0152f3dbf3c463e1a2c418608d01f6081
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127262946 bytes)**  
+-	Total Size: **127.3 MB (127262662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75187f19cf19657920fb89b21c91586dcfc3583de4250ff6acddf97222542347`
+-	Image ID: `sha256:bf6d5c14ce4a3b73c0276a203267ebe4f7acbbe75270c75007bb8d6ac9effd6c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -371,7 +371,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -429,72 +429,72 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b569e2c218b9c2239f61d63353fc81d3fc67f02e50d0ffb474c6e1d05888890`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 32.7 MB (32687284 bytes)  
+	-	`sha256:a8193f4f530db52c8c11d3760afc3cca7292d63cee7d164d249599bfd2593989`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 32.7 MB (32687255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6197cdfb16f08f25dfc312edbaa22be804caa46ede65e620c87673f7e837fd`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 1.2 KB (1228 bytes)  
+	-	`sha256:80df0d1b08a6f3dbb7fdaaf12878a4426b6f6399769ef64f977ff768522fa18d`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d88fdd91c498a4cc79691f44811471455d9cc1b090d0a11d1fbf735fb9cc7b16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:06 GMT  
-		Size: 122.0 B  
+	-	`sha256:6567c1ce1a3cce2cc7c311f42a4307d5c83a55bf93ea8320ac7eec5e6ea4deab`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:ee8eabbc27fafaba1f370ccdc183b3f80919f27e89f796a7363e0c322f134ecd
+$ docker pull cassandra@sha256:2d10f9b2e5316bd60b11a9b5120c9e0c12f6c339494d51791d7563d492149fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4511405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84e91ac36cea909039a92c589734ce87f60df7a51d3af5224255e3d3235413b3`
+-	Image ID: `sha256:3d26b425ab2bdf4aa0fa649819ca34a7e2016301dc04e70719655e146212ee0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3db24e1b08ab9bd79833dbb42b0b47c9e292418c65bca46097f5f232c52e1d70`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:d49fb3447aec94f5de8dbf669b24fdd3938468069985013ae9a05bdc39ab8671`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
 		Size: 4.5 MB (4472595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b3d12fcb8cd3d88c171f0dd9d552de8fd1e7e294f696f461f4440ea7ac44ae4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:3adff229a404e6657ad70d34a80097c80f8fc5c1378878cc25c355d739660c9e`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
 		Size: 38.8 KB (38810 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -651,7 +651,7 @@ $ docker pull cassandra@sha256:4e26abc67d6ff7f453e3fbdaf8adaac4467f45595a247b84d
 ## `cassandra:3-jammy`
 
 ```console
-$ docker pull cassandra@sha256:d4fa2fde094cc8baa62f82070a71288355f4a31b20db98c4099ce02babfe9faa
+$ docker pull cassandra@sha256:fe627c64b6e7f7ae35241d0597e251e13c7367a29ef29baf8dc730da2b644823
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -968,13 +968,13 @@ $ docker pull cassandra@sha256:fa6e9deb6d75c328e17b4a0df7640118add293b100d0dd222
 ### `cassandra:3-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:df9028be9a48ee5bac94549f46b2e25ef8bfd7f9d5bbf10bca457420ff5ad479
+$ docker pull cassandra@sha256:6185e7e56eca46dca3b748898d5663b0152f3dbf3c463e1a2c418608d01f6081
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127262946 bytes)**  
+-	Total Size: **127.3 MB (127262662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75187f19cf19657920fb89b21c91586dcfc3583de4250ff6acddf97222542347`
+-	Image ID: `sha256:bf6d5c14ce4a3b73c0276a203267ebe4f7acbbe75270c75007bb8d6ac9effd6c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -988,7 +988,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -1046,72 +1046,72 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b569e2c218b9c2239f61d63353fc81d3fc67f02e50d0ffb474c6e1d05888890`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 32.7 MB (32687284 bytes)  
+	-	`sha256:a8193f4f530db52c8c11d3760afc3cca7292d63cee7d164d249599bfd2593989`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 32.7 MB (32687255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6197cdfb16f08f25dfc312edbaa22be804caa46ede65e620c87673f7e837fd`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 1.2 KB (1228 bytes)  
+	-	`sha256:80df0d1b08a6f3dbb7fdaaf12878a4426b6f6399769ef64f977ff768522fa18d`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d88fdd91c498a4cc79691f44811471455d9cc1b090d0a11d1fbf735fb9cc7b16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:06 GMT  
-		Size: 122.0 B  
+	-	`sha256:6567c1ce1a3cce2cc7c311f42a4307d5c83a55bf93ea8320ac7eec5e6ea4deab`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:ee8eabbc27fafaba1f370ccdc183b3f80919f27e89f796a7363e0c322f134ecd
+$ docker pull cassandra@sha256:2d10f9b2e5316bd60b11a9b5120c9e0c12f6c339494d51791d7563d492149fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4511405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84e91ac36cea909039a92c589734ce87f60df7a51d3af5224255e3d3235413b3`
+-	Image ID: `sha256:3d26b425ab2bdf4aa0fa649819ca34a7e2016301dc04e70719655e146212ee0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3db24e1b08ab9bd79833dbb42b0b47c9e292418c65bca46097f5f232c52e1d70`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:d49fb3447aec94f5de8dbf669b24fdd3938468069985013ae9a05bdc39ab8671`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
 		Size: 4.5 MB (4472595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b3d12fcb8cd3d88c171f0dd9d552de8fd1e7e294f696f461f4440ea7ac44ae4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:3adff229a404e6657ad70d34a80097c80f8fc5c1378878cc25c355d739660c9e`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
 		Size: 38.8 KB (38810 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1268,7 +1268,7 @@ $ docker pull cassandra@sha256:4e26abc67d6ff7f453e3fbdaf8adaac4467f45595a247b84d
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:2bcfdddfb0a996b5431ae420c59f2c21223a3e9bd7d2bc6c48b51a2f4d1834e2
+$ docker pull cassandra@sha256:bec70a93def79da92d6faf272c36c3666b3f4fe950cf0150bd775de16880ff19
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1585,13 +1585,13 @@ $ docker pull cassandra@sha256:b6b598bb28f3d21c6551705a910c724d01b43517a55a6dde5
 ### `cassandra:3.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:1452b60904386ae53abfe3e094f8964d64eaf2d53dfd20aeeb0167df46f21367
+$ docker pull cassandra@sha256:341fcad75c4346d5f6ea7dca62fe871067db41cfb8bfd1d07e2e21126f59d6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.9 MB (122923879 bytes)**  
+-	Total Size: **122.9 MB (122923566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f87ab25cbb929df8ebc80ca9dbae058e611e883685a7fb5bab6f5f877a18b8`
+-	Image ID: `sha256:fe9667724730f984bf8057b21dece40388dd954d059187aa38d292e54828a997`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -1605,7 +1605,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -1663,73 +1663,73 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34f5b128fe172209dabd07faf42a8664ce5136ef48426298b84679025051f1d4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:35 GMT  
-		Size: 28.3 MB (28348218 bytes)  
+	-	`sha256:2415edb197387178c30a5f7f66e300bf890a391df45ba52264c8ddc4787ccc04`  
+		Last Modified: Tue, 06 May 2025 00:15:32 GMT  
+		Size: 28.3 MB (28348158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3376d61499be1101fcafce5c4f8c1deb14ef5b1d502a9390c5356c0c88a93f1b`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 1.2 KB (1227 bytes)  
+	-	`sha256:564aa77106dfb52d82dfcfc89e72de1d0dd09ffdc4b71cddfd40aa9e937f92bb`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de0bc9c2010ed984dace85834e6b7f685cb3efba55c6caf2ac3aceb12fcb1caf`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:663dd3d819d029644a3ddc980380d90d74d083f42e68590edf29c9e855a76362`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:cef6f80be55db688a8c714c3ff3fc48c69e7e15f54cb6c97b763a687eda7c215
+$ docker pull cassandra@sha256:35f906b08300eee7d5506854fc7601cbec05f6e3a8bd4d14be0d0d1a5afd7dba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4502546 bytes)**  
+-	Total Size: **4.5 MB (4502545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cce6f097789908e4c87527fb47443226cab413596731e371dab60f2436253a6`
+-	Image ID: `sha256:b21428593c64b8a68ce460cab4308be4f4d4d7af50f053b9ba8620daf2382100`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dad590e6e7e62378954a2caa54c74745e3e4e5526b0a49bcd08634e05f304c16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:e28577ccf5dec20d7c781287c5bf96a6fac7014ee287ca1cf3b14a3d7ee23089`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 4.5 MB (4464351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6fe9056ec8e968636aecbab20e7f3a35c38bc3a5082ea65dde78cc55ded036fc`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 38.2 KB (38195 bytes)  
+	-	`sha256:7c6d549a273fc06063e9ac5a4301b8e18449f0ca8b110462b6777d8a4ab6ffe7`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 38.2 KB (38194 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:3.0` - linux; ppc64le
@@ -1885,7 +1885,7 @@ $ docker pull cassandra@sha256:18bd32515ec825f9b6063fe206340834e1e60259b47cef1d9
 ## `cassandra:3.0-jammy`
 
 ```console
-$ docker pull cassandra@sha256:2bcfdddfb0a996b5431ae420c59f2c21223a3e9bd7d2bc6c48b51a2f4d1834e2
+$ docker pull cassandra@sha256:bec70a93def79da92d6faf272c36c3666b3f4fe950cf0150bd775de16880ff19
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2202,13 +2202,13 @@ $ docker pull cassandra@sha256:b6b598bb28f3d21c6551705a910c724d01b43517a55a6dde5
 ### `cassandra:3.0-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:1452b60904386ae53abfe3e094f8964d64eaf2d53dfd20aeeb0167df46f21367
+$ docker pull cassandra@sha256:341fcad75c4346d5f6ea7dca62fe871067db41cfb8bfd1d07e2e21126f59d6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.9 MB (122923879 bytes)**  
+-	Total Size: **122.9 MB (122923566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f87ab25cbb929df8ebc80ca9dbae058e611e883685a7fb5bab6f5f877a18b8`
+-	Image ID: `sha256:fe9667724730f984bf8057b21dece40388dd954d059187aa38d292e54828a997`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2222,7 +2222,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -2280,73 +2280,73 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34f5b128fe172209dabd07faf42a8664ce5136ef48426298b84679025051f1d4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:35 GMT  
-		Size: 28.3 MB (28348218 bytes)  
+	-	`sha256:2415edb197387178c30a5f7f66e300bf890a391df45ba52264c8ddc4787ccc04`  
+		Last Modified: Tue, 06 May 2025 00:15:32 GMT  
+		Size: 28.3 MB (28348158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3376d61499be1101fcafce5c4f8c1deb14ef5b1d502a9390c5356c0c88a93f1b`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 1.2 KB (1227 bytes)  
+	-	`sha256:564aa77106dfb52d82dfcfc89e72de1d0dd09ffdc4b71cddfd40aa9e937f92bb`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de0bc9c2010ed984dace85834e6b7f685cb3efba55c6caf2ac3aceb12fcb1caf`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:663dd3d819d029644a3ddc980380d90d74d083f42e68590edf29c9e855a76362`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:cef6f80be55db688a8c714c3ff3fc48c69e7e15f54cb6c97b763a687eda7c215
+$ docker pull cassandra@sha256:35f906b08300eee7d5506854fc7601cbec05f6e3a8bd4d14be0d0d1a5afd7dba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4502546 bytes)**  
+-	Total Size: **4.5 MB (4502545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cce6f097789908e4c87527fb47443226cab413596731e371dab60f2436253a6`
+-	Image ID: `sha256:b21428593c64b8a68ce460cab4308be4f4d4d7af50f053b9ba8620daf2382100`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dad590e6e7e62378954a2caa54c74745e3e4e5526b0a49bcd08634e05f304c16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:e28577ccf5dec20d7c781287c5bf96a6fac7014ee287ca1cf3b14a3d7ee23089`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 4.5 MB (4464351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6fe9056ec8e968636aecbab20e7f3a35c38bc3a5082ea65dde78cc55ded036fc`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 38.2 KB (38195 bytes)  
+	-	`sha256:7c6d549a273fc06063e9ac5a4301b8e18449f0ca8b110462b6777d8a4ab6ffe7`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 38.2 KB (38194 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:3.0-jammy` - linux; ppc64le
@@ -2502,7 +2502,7 @@ $ docker pull cassandra@sha256:18bd32515ec825f9b6063fe206340834e1e60259b47cef1d9
 ## `cassandra:3.0.32`
 
 ```console
-$ docker pull cassandra@sha256:2bcfdddfb0a996b5431ae420c59f2c21223a3e9bd7d2bc6c48b51a2f4d1834e2
+$ docker pull cassandra@sha256:bec70a93def79da92d6faf272c36c3666b3f4fe950cf0150bd775de16880ff19
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2819,13 +2819,13 @@ $ docker pull cassandra@sha256:b6b598bb28f3d21c6551705a910c724d01b43517a55a6dde5
 ### `cassandra:3.0.32` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:1452b60904386ae53abfe3e094f8964d64eaf2d53dfd20aeeb0167df46f21367
+$ docker pull cassandra@sha256:341fcad75c4346d5f6ea7dca62fe871067db41cfb8bfd1d07e2e21126f59d6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.9 MB (122923879 bytes)**  
+-	Total Size: **122.9 MB (122923566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f87ab25cbb929df8ebc80ca9dbae058e611e883685a7fb5bab6f5f877a18b8`
+-	Image ID: `sha256:fe9667724730f984bf8057b21dece40388dd954d059187aa38d292e54828a997`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2839,7 +2839,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -2897,73 +2897,73 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34f5b128fe172209dabd07faf42a8664ce5136ef48426298b84679025051f1d4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:35 GMT  
-		Size: 28.3 MB (28348218 bytes)  
+	-	`sha256:2415edb197387178c30a5f7f66e300bf890a391df45ba52264c8ddc4787ccc04`  
+		Last Modified: Tue, 06 May 2025 00:15:32 GMT  
+		Size: 28.3 MB (28348158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3376d61499be1101fcafce5c4f8c1deb14ef5b1d502a9390c5356c0c88a93f1b`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 1.2 KB (1227 bytes)  
+	-	`sha256:564aa77106dfb52d82dfcfc89e72de1d0dd09ffdc4b71cddfd40aa9e937f92bb`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de0bc9c2010ed984dace85834e6b7f685cb3efba55c6caf2ac3aceb12fcb1caf`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:663dd3d819d029644a3ddc980380d90d74d083f42e68590edf29c9e855a76362`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0.32` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:cef6f80be55db688a8c714c3ff3fc48c69e7e15f54cb6c97b763a687eda7c215
+$ docker pull cassandra@sha256:35f906b08300eee7d5506854fc7601cbec05f6e3a8bd4d14be0d0d1a5afd7dba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4502546 bytes)**  
+-	Total Size: **4.5 MB (4502545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cce6f097789908e4c87527fb47443226cab413596731e371dab60f2436253a6`
+-	Image ID: `sha256:b21428593c64b8a68ce460cab4308be4f4d4d7af50f053b9ba8620daf2382100`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dad590e6e7e62378954a2caa54c74745e3e4e5526b0a49bcd08634e05f304c16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:e28577ccf5dec20d7c781287c5bf96a6fac7014ee287ca1cf3b14a3d7ee23089`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 4.5 MB (4464351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6fe9056ec8e968636aecbab20e7f3a35c38bc3a5082ea65dde78cc55ded036fc`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 38.2 KB (38195 bytes)  
+	-	`sha256:7c6d549a273fc06063e9ac5a4301b8e18449f0ca8b110462b6777d8a4ab6ffe7`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 38.2 KB (38194 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:3.0.32` - linux; ppc64le
@@ -3119,7 +3119,7 @@ $ docker pull cassandra@sha256:18bd32515ec825f9b6063fe206340834e1e60259b47cef1d9
 ## `cassandra:3.0.32-jammy`
 
 ```console
-$ docker pull cassandra@sha256:2bcfdddfb0a996b5431ae420c59f2c21223a3e9bd7d2bc6c48b51a2f4d1834e2
+$ docker pull cassandra@sha256:bec70a93def79da92d6faf272c36c3666b3f4fe950cf0150bd775de16880ff19
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3436,13 +3436,13 @@ $ docker pull cassandra@sha256:b6b598bb28f3d21c6551705a910c724d01b43517a55a6dde5
 ### `cassandra:3.0.32-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:1452b60904386ae53abfe3e094f8964d64eaf2d53dfd20aeeb0167df46f21367
+$ docker pull cassandra@sha256:341fcad75c4346d5f6ea7dca62fe871067db41cfb8bfd1d07e2e21126f59d6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.9 MB (122923879 bytes)**  
+-	Total Size: **122.9 MB (122923566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f87ab25cbb929df8ebc80ca9dbae058e611e883685a7fb5bab6f5f877a18b8`
+-	Image ID: `sha256:fe9667724730f984bf8057b21dece40388dd954d059187aa38d292e54828a997`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -3456,7 +3456,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -3514,73 +3514,73 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34f5b128fe172209dabd07faf42a8664ce5136ef48426298b84679025051f1d4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:35 GMT  
-		Size: 28.3 MB (28348218 bytes)  
+	-	`sha256:2415edb197387178c30a5f7f66e300bf890a391df45ba52264c8ddc4787ccc04`  
+		Last Modified: Tue, 06 May 2025 00:15:32 GMT  
+		Size: 28.3 MB (28348158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3376d61499be1101fcafce5c4f8c1deb14ef5b1d502a9390c5356c0c88a93f1b`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 1.2 KB (1227 bytes)  
+	-	`sha256:564aa77106dfb52d82dfcfc89e72de1d0dd09ffdc4b71cddfd40aa9e937f92bb`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de0bc9c2010ed984dace85834e6b7f685cb3efba55c6caf2ac3aceb12fcb1caf`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:663dd3d819d029644a3ddc980380d90d74d083f42e68590edf29c9e855a76362`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.0.32-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:cef6f80be55db688a8c714c3ff3fc48c69e7e15f54cb6c97b763a687eda7c215
+$ docker pull cassandra@sha256:35f906b08300eee7d5506854fc7601cbec05f6e3a8bd4d14be0d0d1a5afd7dba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4502546 bytes)**  
+-	Total Size: **4.5 MB (4502545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6cce6f097789908e4c87527fb47443226cab413596731e371dab60f2436253a6`
+-	Image ID: `sha256:b21428593c64b8a68ce460cab4308be4f4d4d7af50f053b9ba8620daf2382100`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dad590e6e7e62378954a2caa54c74745e3e4e5526b0a49bcd08634e05f304c16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
+	-	`sha256:e28577ccf5dec20d7c781287c5bf96a6fac7014ee287ca1cf3b14a3d7ee23089`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
 		Size: 4.5 MB (4464351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6fe9056ec8e968636aecbab20e7f3a35c38bc3a5082ea65dde78cc55ded036fc`  
-		Last Modified: Mon, 28 Apr 2025 21:15:34 GMT  
-		Size: 38.2 KB (38195 bytes)  
+	-	`sha256:7c6d549a273fc06063e9ac5a4301b8e18449f0ca8b110462b6777d8a4ab6ffe7`  
+		Last Modified: Tue, 06 May 2025 00:15:31 GMT  
+		Size: 38.2 KB (38194 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:3.0.32-jammy` - linux; ppc64le
@@ -3736,7 +3736,7 @@ $ docker pull cassandra@sha256:18bd32515ec825f9b6063fe206340834e1e60259b47cef1d9
 ## `cassandra:3.11`
 
 ```console
-$ docker pull cassandra@sha256:d4fa2fde094cc8baa62f82070a71288355f4a31b20db98c4099ce02babfe9faa
+$ docker pull cassandra@sha256:fe627c64b6e7f7ae35241d0597e251e13c7367a29ef29baf8dc730da2b644823
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4053,13 +4053,13 @@ $ docker pull cassandra@sha256:fa6e9deb6d75c328e17b4a0df7640118add293b100d0dd222
 ### `cassandra:3.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:df9028be9a48ee5bac94549f46b2e25ef8bfd7f9d5bbf10bca457420ff5ad479
+$ docker pull cassandra@sha256:6185e7e56eca46dca3b748898d5663b0152f3dbf3c463e1a2c418608d01f6081
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127262946 bytes)**  
+-	Total Size: **127.3 MB (127262662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75187f19cf19657920fb89b21c91586dcfc3583de4250ff6acddf97222542347`
+-	Image ID: `sha256:bf6d5c14ce4a3b73c0276a203267ebe4f7acbbe75270c75007bb8d6ac9effd6c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -4073,7 +4073,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -4131,72 +4131,72 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b569e2c218b9c2239f61d63353fc81d3fc67f02e50d0ffb474c6e1d05888890`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 32.7 MB (32687284 bytes)  
+	-	`sha256:a8193f4f530db52c8c11d3760afc3cca7292d63cee7d164d249599bfd2593989`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 32.7 MB (32687255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6197cdfb16f08f25dfc312edbaa22be804caa46ede65e620c87673f7e837fd`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 1.2 KB (1228 bytes)  
+	-	`sha256:80df0d1b08a6f3dbb7fdaaf12878a4426b6f6399769ef64f977ff768522fa18d`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d88fdd91c498a4cc79691f44811471455d9cc1b090d0a11d1fbf735fb9cc7b16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:06 GMT  
-		Size: 122.0 B  
+	-	`sha256:6567c1ce1a3cce2cc7c311f42a4307d5c83a55bf93ea8320ac7eec5e6ea4deab`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:ee8eabbc27fafaba1f370ccdc183b3f80919f27e89f796a7363e0c322f134ecd
+$ docker pull cassandra@sha256:2d10f9b2e5316bd60b11a9b5120c9e0c12f6c339494d51791d7563d492149fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4511405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84e91ac36cea909039a92c589734ce87f60df7a51d3af5224255e3d3235413b3`
+-	Image ID: `sha256:3d26b425ab2bdf4aa0fa649819ca34a7e2016301dc04e70719655e146212ee0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3db24e1b08ab9bd79833dbb42b0b47c9e292418c65bca46097f5f232c52e1d70`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:d49fb3447aec94f5de8dbf669b24fdd3938468069985013ae9a05bdc39ab8671`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
 		Size: 4.5 MB (4472595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b3d12fcb8cd3d88c171f0dd9d552de8fd1e7e294f696f461f4440ea7ac44ae4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:3adff229a404e6657ad70d34a80097c80f8fc5c1378878cc25c355d739660c9e`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
 		Size: 38.8 KB (38810 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4353,7 +4353,7 @@ $ docker pull cassandra@sha256:4e26abc67d6ff7f453e3fbdaf8adaac4467f45595a247b84d
 ## `cassandra:3.11-jammy`
 
 ```console
-$ docker pull cassandra@sha256:d4fa2fde094cc8baa62f82070a71288355f4a31b20db98c4099ce02babfe9faa
+$ docker pull cassandra@sha256:fe627c64b6e7f7ae35241d0597e251e13c7367a29ef29baf8dc730da2b644823
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4670,13 +4670,13 @@ $ docker pull cassandra@sha256:fa6e9deb6d75c328e17b4a0df7640118add293b100d0dd222
 ### `cassandra:3.11-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:df9028be9a48ee5bac94549f46b2e25ef8bfd7f9d5bbf10bca457420ff5ad479
+$ docker pull cassandra@sha256:6185e7e56eca46dca3b748898d5663b0152f3dbf3c463e1a2c418608d01f6081
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127262946 bytes)**  
+-	Total Size: **127.3 MB (127262662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75187f19cf19657920fb89b21c91586dcfc3583de4250ff6acddf97222542347`
+-	Image ID: `sha256:bf6d5c14ce4a3b73c0276a203267ebe4f7acbbe75270c75007bb8d6ac9effd6c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -4690,7 +4690,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -4748,72 +4748,72 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b569e2c218b9c2239f61d63353fc81d3fc67f02e50d0ffb474c6e1d05888890`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 32.7 MB (32687284 bytes)  
+	-	`sha256:a8193f4f530db52c8c11d3760afc3cca7292d63cee7d164d249599bfd2593989`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 32.7 MB (32687255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6197cdfb16f08f25dfc312edbaa22be804caa46ede65e620c87673f7e837fd`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 1.2 KB (1228 bytes)  
+	-	`sha256:80df0d1b08a6f3dbb7fdaaf12878a4426b6f6399769ef64f977ff768522fa18d`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d88fdd91c498a4cc79691f44811471455d9cc1b090d0a11d1fbf735fb9cc7b16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:06 GMT  
-		Size: 122.0 B  
+	-	`sha256:6567c1ce1a3cce2cc7c311f42a4307d5c83a55bf93ea8320ac7eec5e6ea4deab`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:ee8eabbc27fafaba1f370ccdc183b3f80919f27e89f796a7363e0c322f134ecd
+$ docker pull cassandra@sha256:2d10f9b2e5316bd60b11a9b5120c9e0c12f6c339494d51791d7563d492149fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4511405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84e91ac36cea909039a92c589734ce87f60df7a51d3af5224255e3d3235413b3`
+-	Image ID: `sha256:3d26b425ab2bdf4aa0fa649819ca34a7e2016301dc04e70719655e146212ee0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3db24e1b08ab9bd79833dbb42b0b47c9e292418c65bca46097f5f232c52e1d70`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:d49fb3447aec94f5de8dbf669b24fdd3938468069985013ae9a05bdc39ab8671`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
 		Size: 4.5 MB (4472595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b3d12fcb8cd3d88c171f0dd9d552de8fd1e7e294f696f461f4440ea7ac44ae4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:3adff229a404e6657ad70d34a80097c80f8fc5c1378878cc25c355d739660c9e`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
 		Size: 38.8 KB (38810 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4970,7 +4970,7 @@ $ docker pull cassandra@sha256:4e26abc67d6ff7f453e3fbdaf8adaac4467f45595a247b84d
 ## `cassandra:3.11.19`
 
 ```console
-$ docker pull cassandra@sha256:d4fa2fde094cc8baa62f82070a71288355f4a31b20db98c4099ce02babfe9faa
+$ docker pull cassandra@sha256:fe627c64b6e7f7ae35241d0597e251e13c7367a29ef29baf8dc730da2b644823
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5287,13 +5287,13 @@ $ docker pull cassandra@sha256:fa6e9deb6d75c328e17b4a0df7640118add293b100d0dd222
 ### `cassandra:3.11.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:df9028be9a48ee5bac94549f46b2e25ef8bfd7f9d5bbf10bca457420ff5ad479
+$ docker pull cassandra@sha256:6185e7e56eca46dca3b748898d5663b0152f3dbf3c463e1a2c418608d01f6081
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127262946 bytes)**  
+-	Total Size: **127.3 MB (127262662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75187f19cf19657920fb89b21c91586dcfc3583de4250ff6acddf97222542347`
+-	Image ID: `sha256:bf6d5c14ce4a3b73c0276a203267ebe4f7acbbe75270c75007bb8d6ac9effd6c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -5307,7 +5307,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -5365,72 +5365,72 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b569e2c218b9c2239f61d63353fc81d3fc67f02e50d0ffb474c6e1d05888890`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 32.7 MB (32687284 bytes)  
+	-	`sha256:a8193f4f530db52c8c11d3760afc3cca7292d63cee7d164d249599bfd2593989`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 32.7 MB (32687255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6197cdfb16f08f25dfc312edbaa22be804caa46ede65e620c87673f7e837fd`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 1.2 KB (1228 bytes)  
+	-	`sha256:80df0d1b08a6f3dbb7fdaaf12878a4426b6f6399769ef64f977ff768522fa18d`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d88fdd91c498a4cc79691f44811471455d9cc1b090d0a11d1fbf735fb9cc7b16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:06 GMT  
-		Size: 122.0 B  
+	-	`sha256:6567c1ce1a3cce2cc7c311f42a4307d5c83a55bf93ea8320ac7eec5e6ea4deab`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11.19` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:ee8eabbc27fafaba1f370ccdc183b3f80919f27e89f796a7363e0c322f134ecd
+$ docker pull cassandra@sha256:2d10f9b2e5316bd60b11a9b5120c9e0c12f6c339494d51791d7563d492149fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4511405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84e91ac36cea909039a92c589734ce87f60df7a51d3af5224255e3d3235413b3`
+-	Image ID: `sha256:3d26b425ab2bdf4aa0fa649819ca34a7e2016301dc04e70719655e146212ee0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3db24e1b08ab9bd79833dbb42b0b47c9e292418c65bca46097f5f232c52e1d70`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:d49fb3447aec94f5de8dbf669b24fdd3938468069985013ae9a05bdc39ab8671`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
 		Size: 4.5 MB (4472595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b3d12fcb8cd3d88c171f0dd9d552de8fd1e7e294f696f461f4440ea7ac44ae4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:3adff229a404e6657ad70d34a80097c80f8fc5c1378878cc25c355d739660c9e`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
 		Size: 38.8 KB (38810 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5587,7 +5587,7 @@ $ docker pull cassandra@sha256:4e26abc67d6ff7f453e3fbdaf8adaac4467f45595a247b84d
 ## `cassandra:3.11.19-jammy`
 
 ```console
-$ docker pull cassandra@sha256:d4fa2fde094cc8baa62f82070a71288355f4a31b20db98c4099ce02babfe9faa
+$ docker pull cassandra@sha256:fe627c64b6e7f7ae35241d0597e251e13c7367a29ef29baf8dc730da2b644823
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5904,13 +5904,13 @@ $ docker pull cassandra@sha256:fa6e9deb6d75c328e17b4a0df7640118add293b100d0dd222
 ### `cassandra:3.11.19-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:df9028be9a48ee5bac94549f46b2e25ef8bfd7f9d5bbf10bca457420ff5ad479
+$ docker pull cassandra@sha256:6185e7e56eca46dca3b748898d5663b0152f3dbf3c463e1a2c418608d01f6081
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.3 MB (127262946 bytes)**  
+-	Total Size: **127.3 MB (127262662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75187f19cf19657920fb89b21c91586dcfc3583de4250ff6acddf97222542347`
+-	Image ID: `sha256:bf6d5c14ce4a3b73c0276a203267ebe4f7acbbe75270c75007bb8d6ac9effd6c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -5924,7 +5924,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -5982,72 +5982,72 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09fcc9359fc8425e7918dbb4e92c99c70a58af3d836516e89da243092ece7b91`  
-		Last Modified: Mon, 28 Apr 2025 20:09:24 GMT  
-		Size: 40.9 MB (40879150 bytes)  
+	-	`sha256:1e9be09f0a4dc4412fb888fb64d1ce62bc4f2665014768f631a4b98d30e0f2ee`  
+		Last Modified: Mon, 05 May 2025 16:51:08 GMT  
+		Size: 40.9 MB (40879133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b46cc330d0990909835912e315c407563192ec093322ae9d54c7eba746b51b54`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
+	-	`sha256:834d9f2774a3adb3b8894d13f02a242e85d6bb2a0a75e386e2ce34286a1e643e`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7205e220bb79d8da87df9204f27720f45f54945e6f5146b3e1d9b04769b9b953`  
-		Last Modified: Mon, 28 Apr 2025 20:09:23 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:0c5dbc11cd2ce947e030c2f2ddbacbb3040fa54f9b080fc87583d31f8b51c891`  
+		Last Modified: Mon, 05 May 2025 16:51:06 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a254a8580f6cf61103f56f1be8f09cef2be794fce82d97d6605e3589a8ba6859`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 1.7 KB (1738 bytes)  
+	-	`sha256:74580e0531099ff29bc8ed40c498bfb01a2b40b24ea156525f6ca7e167ebe953`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
+		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac8d7910eda4ab4f1fde952e8ed89128e1c07c178c4a9e78ab98e9d613345e47`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
-		Size: 9.4 MB (9362770 bytes)  
+	-	`sha256:e6a6bcc421bb188d989bcd88ea84ee14d975344c6a8bbd714c287ff013dda0a1`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 9.4 MB (9362509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b024b7f5a8611c2f0ede2de9d5249b5a1d6524a14c0d87feafb2ce167c455c5`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 914.4 KB (914449 bytes)  
+	-	`sha256:f8c4915bfaa5b1d95b3b3bcb2029310e816008d26e97c817245e0063b77fa799`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
+		Size: 914.4 KB (914448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b569e2c218b9c2239f61d63353fc81d3fc67f02e50d0ffb474c6e1d05888890`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 32.7 MB (32687284 bytes)  
+	-	`sha256:a8193f4f530db52c8c11d3760afc3cca7292d63cee7d164d249599bfd2593989`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 32.7 MB (32687255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b6197cdfb16f08f25dfc312edbaa22be804caa46ede65e620c87673f7e837fd`  
-		Last Modified: Mon, 28 Apr 2025 21:15:05 GMT  
-		Size: 1.2 KB (1228 bytes)  
+	-	`sha256:80df0d1b08a6f3dbb7fdaaf12878a4426b6f6399769ef64f977ff768522fa18d`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d88fdd91c498a4cc79691f44811471455d9cc1b090d0a11d1fbf735fb9cc7b16`  
-		Last Modified: Mon, 28 Apr 2025 21:15:06 GMT  
-		Size: 122.0 B  
+	-	`sha256:6567c1ce1a3cce2cc7c311f42a4307d5c83a55bf93ea8320ac7eec5e6ea4deab`  
+		Last Modified: Tue, 06 May 2025 00:15:00 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:3.11.19-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:ee8eabbc27fafaba1f370ccdc183b3f80919f27e89f796a7363e0c322f134ecd
+$ docker pull cassandra@sha256:2d10f9b2e5316bd60b11a9b5120c9e0c12f6c339494d51791d7563d492149fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4511405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84e91ac36cea909039a92c589734ce87f60df7a51d3af5224255e3d3235413b3`
+-	Image ID: `sha256:3d26b425ab2bdf4aa0fa649819ca34a7e2016301dc04e70719655e146212ee0d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3db24e1b08ab9bd79833dbb42b0b47c9e292418c65bca46097f5f232c52e1d70`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:d49fb3447aec94f5de8dbf669b24fdd3938468069985013ae9a05bdc39ab8671`  
+		Last Modified: Tue, 06 May 2025 00:14:59 GMT  
 		Size: 4.5 MB (4472595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b3d12fcb8cd3d88c171f0dd9d552de8fd1e7e294f696f461f4440ea7ac44ae4`  
-		Last Modified: Mon, 28 Apr 2025 21:15:04 GMT  
+	-	`sha256:3adff229a404e6657ad70d34a80097c80f8fc5c1378878cc25c355d739660c9e`  
+		Last Modified: Tue, 06 May 2025 00:14:58 GMT  
 		Size: 38.8 KB (38810 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6204,7 +6204,7 @@ $ docker pull cassandra@sha256:4e26abc67d6ff7f453e3fbdaf8adaac4467f45595a247b84d
 ## `cassandra:4`
 
 ```console
-$ docker pull cassandra@sha256:98470d9eca80956103244343c3db95a9ab1949f6f903257fda761a41a44d480e
+$ docker pull cassandra@sha256:8b774810a1a6cf1c5974c4a719b84b3f9096d5d12e923c56e3f8031a942e8bf9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6511,13 +6511,13 @@ $ docker pull cassandra@sha256:747b5ddae0068259ede9a484c9487e59ca2b1816d2a9eec6e
 ### `cassandra:4` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:3218b2acb03b847627833298576c8c9dd94d03fb628cca880e214b4b37ac5d15
+$ docker pull cassandra@sha256:f5bcd3736b8a433ca8e487d8c95afd8bea042fb1156fd6007a835cf838fda909
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.9 MB (151863747 bytes)**  
+-	Total Size: **151.9 MB (151865610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd278854985d696e599f380cf0e140e185d66958bf1147606e48f971c2c79dc9`
+-	Image ID: `sha256:9f1f33733e9d266c8c50124ae0893d52a9eb13e215e4a36e1d71645fc1e12595`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -6531,7 +6531,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -6587,69 +6587,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6e8d96876e810c005a3f69b43b702ed7d50263b7959468ec7347965cc748097`  
-		Last Modified: Wed, 23 Apr 2025 19:33:14 GMT  
-		Size: 50.5 MB (50491898 bytes)  
+	-	`sha256:efa8a4d97a90a1e380881ac584d62ceb2713b5b8d9292e16eeeca7be4c68e404`  
+		Last Modified: Tue, 06 May 2025 00:13:28 GMT  
+		Size: 50.5 MB (50491820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73881039efbfdd7253afc6b07a6cb22c191aea4c1fe3231b1fa2b76a8990752e`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 1.2 KB (1226 bytes)  
+	-	`sha256:a75ffd40aba35585c1358ac0acc2a14807fc8d92d2c63c83e8f1747aa523ffd8`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7b02c9f4f09b775ff338bd434778703e6efe3956b08278507c02eb366ed0ea51
+$ docker pull cassandra@sha256:7b497420133b8ded0c8fe5f2fe2d459e37892e7e2e6391f908c4a9bfda5444e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4458654 bytes)**  
+-	Total Size: **4.5 MB (4458655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa2b7c6d65074bbe04ea3a359ba16bc69feae749c1fe558b926967127737cdb9`
+-	Image ID: `sha256:3eb406a2c7d1e14e2534d92c1885aa03554e21972d176f72cd8fc7133f304374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28493b69cf124fa97cfd2de1c5c8ec7edd341cb156fcaf828d7f49182a49f5ef`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
+	-	`sha256:5ef3939d57c2884f2df59486c190177eec78ecd87ccee0b17926def90b6e9eb7`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
 		Size: 4.4 MB (4423227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31e58c5bd04bd5ea1822d6e250a9263b0214d8526f340e0c640f8ae2003a56cc`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 35.4 KB (35427 bytes)  
+	-	`sha256:1fb302a34d4e2ab37d291a0c18c71d1ea31446d136db2294e4aa8a164f3e2292`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 35.4 KB (35428 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4` - linux; ppc64le
@@ -6943,7 +6943,7 @@ $ docker pull cassandra@sha256:63c7f726d111b1f5a65c5a33167ca56dd9c625511c94a9a08
 ## `cassandra:4-jammy`
 
 ```console
-$ docker pull cassandra@sha256:98470d9eca80956103244343c3db95a9ab1949f6f903257fda761a41a44d480e
+$ docker pull cassandra@sha256:8b774810a1a6cf1c5974c4a719b84b3f9096d5d12e923c56e3f8031a942e8bf9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7250,13 +7250,13 @@ $ docker pull cassandra@sha256:747b5ddae0068259ede9a484c9487e59ca2b1816d2a9eec6e
 ### `cassandra:4-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:3218b2acb03b847627833298576c8c9dd94d03fb628cca880e214b4b37ac5d15
+$ docker pull cassandra@sha256:f5bcd3736b8a433ca8e487d8c95afd8bea042fb1156fd6007a835cf838fda909
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.9 MB (151863747 bytes)**  
+-	Total Size: **151.9 MB (151865610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd278854985d696e599f380cf0e140e185d66958bf1147606e48f971c2c79dc9`
+-	Image ID: `sha256:9f1f33733e9d266c8c50124ae0893d52a9eb13e215e4a36e1d71645fc1e12595`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -7270,7 +7270,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -7326,69 +7326,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6e8d96876e810c005a3f69b43b702ed7d50263b7959468ec7347965cc748097`  
-		Last Modified: Wed, 23 Apr 2025 19:33:14 GMT  
-		Size: 50.5 MB (50491898 bytes)  
+	-	`sha256:efa8a4d97a90a1e380881ac584d62ceb2713b5b8d9292e16eeeca7be4c68e404`  
+		Last Modified: Tue, 06 May 2025 00:13:28 GMT  
+		Size: 50.5 MB (50491820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73881039efbfdd7253afc6b07a6cb22c191aea4c1fe3231b1fa2b76a8990752e`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 1.2 KB (1226 bytes)  
+	-	`sha256:a75ffd40aba35585c1358ac0acc2a14807fc8d92d2c63c83e8f1747aa523ffd8`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7b02c9f4f09b775ff338bd434778703e6efe3956b08278507c02eb366ed0ea51
+$ docker pull cassandra@sha256:7b497420133b8ded0c8fe5f2fe2d459e37892e7e2e6391f908c4a9bfda5444e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4458654 bytes)**  
+-	Total Size: **4.5 MB (4458655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa2b7c6d65074bbe04ea3a359ba16bc69feae749c1fe558b926967127737cdb9`
+-	Image ID: `sha256:3eb406a2c7d1e14e2534d92c1885aa03554e21972d176f72cd8fc7133f304374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28493b69cf124fa97cfd2de1c5c8ec7edd341cb156fcaf828d7f49182a49f5ef`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
+	-	`sha256:5ef3939d57c2884f2df59486c190177eec78ecd87ccee0b17926def90b6e9eb7`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
 		Size: 4.4 MB (4423227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31e58c5bd04bd5ea1822d6e250a9263b0214d8526f340e0c640f8ae2003a56cc`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 35.4 KB (35427 bytes)  
+	-	`sha256:1fb302a34d4e2ab37d291a0c18c71d1ea31446d136db2294e4aa8a164f3e2292`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 35.4 KB (35428 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4-jammy` - linux; ppc64le
@@ -7682,7 +7682,7 @@ $ docker pull cassandra@sha256:63c7f726d111b1f5a65c5a33167ca56dd9c625511c94a9a08
 ## `cassandra:4.0`
 
 ```console
-$ docker pull cassandra@sha256:399e43334f24d9422095defd98a8fe4033218726f13aa07bc6793c640822ee49
+$ docker pull cassandra@sha256:b655eea941b2f6efdae17e716ed28cc08ea25047862cd836c595e6055f07303b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7989,13 +7989,13 @@ $ docker pull cassandra@sha256:84993f0106a22db91325fc649f685b297ff191283a09683d7
 ### `cassandra:4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:b4fd843158b86f65f43b7e754d36eb84a7eddf6a1494c3e1a851fef91398310a
+$ docker pull cassandra@sha256:ea1a9a457f2ca10708718f96348f9e25aac30ea88db755e50ba8c72207577d10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.8 MB (149779968 bytes)**  
+-	Total Size: **149.8 MB (149781891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d29abcf64a5d71287e5ce2df533cd67ba0da65032bf5b708b085c632c577480`
+-	Image ID: `sha256:9ec8b71bb256b0792c9219d870504f3a735dba4b49ba31119af47c2ef79bc9cc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -8009,7 +8009,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -8065,68 +8065,68 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca242bd6583ded94de503874d48ad48f739c26ae684cfe03e51daa65f48ff110`  
-		Last Modified: Wed, 23 Apr 2025 19:33:50 GMT  
-		Size: 48.4 MB (48408122 bytes)  
+	-	`sha256:4cdd614cc55cb4a421cef3576dcfc1c6835bd1cb78d3dbce6fe83a0141e0a793`  
+		Last Modified: Tue, 06 May 2025 00:14:09 GMT  
+		Size: 48.4 MB (48408098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10288d42cd2e8127c0130c4868fad904f5e01dc402dedf56aeb82f075496acbf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
-		Size: 1.2 KB (1223 bytes)  
+	-	`sha256:3b7979e4803f86f1909831a2403c306cbfae2e24cf3a3c2c68f71f401a4f7f2e`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
+		Size: 1.2 KB (1227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:8b701a168d067462e09317d63bfd69346f289e75504e6c111e8b53bc4daacc19
+$ docker pull cassandra@sha256:05538bb47cda40a4c4e5c29f2885097a0c395bd9d11bd375e6ace2109b06500f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4455062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:895855ab9425ab9628000f2e2cb0cdf11f7e7eaab214575af21106e908f5e9e9`
+-	Image ID: `sha256:6c6ecbefff12a5b6863cd411624328a2e5a6a65c999445d1a9be178c40f6379e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fc974b6a22402b01ba31439d54ec54d74b346dc9a72ad4ea1bd794027ce26d4`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:b924ec62f72e62fda5484b7506e44e9ca8a94681d5618529aa6b92b6532ce41f`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
 		Size: 4.4 MB (4420253 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:635c084afe3c899673ec664bd9deed0abac2407778d2885a399043a9821403b3`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:e9c950e5874ee56b5b341eb8969de620c854e92100846bb6feeee092cafc2bc6`  
+		Last Modified: Tue, 06 May 2025 00:14:07 GMT  
 		Size: 34.8 KB (34809 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8421,7 +8421,7 @@ $ docker pull cassandra@sha256:802dda4f93556b87fe978296f5c2fe050c5e013fc540c4c92
 ## `cassandra:4.0-jammy`
 
 ```console
-$ docker pull cassandra@sha256:399e43334f24d9422095defd98a8fe4033218726f13aa07bc6793c640822ee49
+$ docker pull cassandra@sha256:b655eea941b2f6efdae17e716ed28cc08ea25047862cd836c595e6055f07303b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8728,13 +8728,13 @@ $ docker pull cassandra@sha256:84993f0106a22db91325fc649f685b297ff191283a09683d7
 ### `cassandra:4.0-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:b4fd843158b86f65f43b7e754d36eb84a7eddf6a1494c3e1a851fef91398310a
+$ docker pull cassandra@sha256:ea1a9a457f2ca10708718f96348f9e25aac30ea88db755e50ba8c72207577d10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.8 MB (149779968 bytes)**  
+-	Total Size: **149.8 MB (149781891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d29abcf64a5d71287e5ce2df533cd67ba0da65032bf5b708b085c632c577480`
+-	Image ID: `sha256:9ec8b71bb256b0792c9219d870504f3a735dba4b49ba31119af47c2ef79bc9cc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -8748,7 +8748,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -8804,68 +8804,68 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca242bd6583ded94de503874d48ad48f739c26ae684cfe03e51daa65f48ff110`  
-		Last Modified: Wed, 23 Apr 2025 19:33:50 GMT  
-		Size: 48.4 MB (48408122 bytes)  
+	-	`sha256:4cdd614cc55cb4a421cef3576dcfc1c6835bd1cb78d3dbce6fe83a0141e0a793`  
+		Last Modified: Tue, 06 May 2025 00:14:09 GMT  
+		Size: 48.4 MB (48408098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10288d42cd2e8127c0130c4868fad904f5e01dc402dedf56aeb82f075496acbf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
-		Size: 1.2 KB (1223 bytes)  
+	-	`sha256:3b7979e4803f86f1909831a2403c306cbfae2e24cf3a3c2c68f71f401a4f7f2e`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
+		Size: 1.2 KB (1227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:8b701a168d067462e09317d63bfd69346f289e75504e6c111e8b53bc4daacc19
+$ docker pull cassandra@sha256:05538bb47cda40a4c4e5c29f2885097a0c395bd9d11bd375e6ace2109b06500f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4455062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:895855ab9425ab9628000f2e2cb0cdf11f7e7eaab214575af21106e908f5e9e9`
+-	Image ID: `sha256:6c6ecbefff12a5b6863cd411624328a2e5a6a65c999445d1a9be178c40f6379e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fc974b6a22402b01ba31439d54ec54d74b346dc9a72ad4ea1bd794027ce26d4`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:b924ec62f72e62fda5484b7506e44e9ca8a94681d5618529aa6b92b6532ce41f`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
 		Size: 4.4 MB (4420253 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:635c084afe3c899673ec664bd9deed0abac2407778d2885a399043a9821403b3`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:e9c950e5874ee56b5b341eb8969de620c854e92100846bb6feeee092cafc2bc6`  
+		Last Modified: Tue, 06 May 2025 00:14:07 GMT  
 		Size: 34.8 KB (34809 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9160,7 +9160,7 @@ $ docker pull cassandra@sha256:802dda4f93556b87fe978296f5c2fe050c5e013fc540c4c92
 ## `cassandra:4.0.17`
 
 ```console
-$ docker pull cassandra@sha256:399e43334f24d9422095defd98a8fe4033218726f13aa07bc6793c640822ee49
+$ docker pull cassandra@sha256:b655eea941b2f6efdae17e716ed28cc08ea25047862cd836c595e6055f07303b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9467,13 +9467,13 @@ $ docker pull cassandra@sha256:84993f0106a22db91325fc649f685b297ff191283a09683d7
 ### `cassandra:4.0.17` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:b4fd843158b86f65f43b7e754d36eb84a7eddf6a1494c3e1a851fef91398310a
+$ docker pull cassandra@sha256:ea1a9a457f2ca10708718f96348f9e25aac30ea88db755e50ba8c72207577d10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.8 MB (149779968 bytes)**  
+-	Total Size: **149.8 MB (149781891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d29abcf64a5d71287e5ce2df533cd67ba0da65032bf5b708b085c632c577480`
+-	Image ID: `sha256:9ec8b71bb256b0792c9219d870504f3a735dba4b49ba31119af47c2ef79bc9cc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -9487,7 +9487,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -9543,68 +9543,68 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca242bd6583ded94de503874d48ad48f739c26ae684cfe03e51daa65f48ff110`  
-		Last Modified: Wed, 23 Apr 2025 19:33:50 GMT  
-		Size: 48.4 MB (48408122 bytes)  
+	-	`sha256:4cdd614cc55cb4a421cef3576dcfc1c6835bd1cb78d3dbce6fe83a0141e0a793`  
+		Last Modified: Tue, 06 May 2025 00:14:09 GMT  
+		Size: 48.4 MB (48408098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10288d42cd2e8127c0130c4868fad904f5e01dc402dedf56aeb82f075496acbf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
-		Size: 1.2 KB (1223 bytes)  
+	-	`sha256:3b7979e4803f86f1909831a2403c306cbfae2e24cf3a3c2c68f71f401a4f7f2e`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
+		Size: 1.2 KB (1227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0.17` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:8b701a168d067462e09317d63bfd69346f289e75504e6c111e8b53bc4daacc19
+$ docker pull cassandra@sha256:05538bb47cda40a4c4e5c29f2885097a0c395bd9d11bd375e6ace2109b06500f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4455062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:895855ab9425ab9628000f2e2cb0cdf11f7e7eaab214575af21106e908f5e9e9`
+-	Image ID: `sha256:6c6ecbefff12a5b6863cd411624328a2e5a6a65c999445d1a9be178c40f6379e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fc974b6a22402b01ba31439d54ec54d74b346dc9a72ad4ea1bd794027ce26d4`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:b924ec62f72e62fda5484b7506e44e9ca8a94681d5618529aa6b92b6532ce41f`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
 		Size: 4.4 MB (4420253 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:635c084afe3c899673ec664bd9deed0abac2407778d2885a399043a9821403b3`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:e9c950e5874ee56b5b341eb8969de620c854e92100846bb6feeee092cafc2bc6`  
+		Last Modified: Tue, 06 May 2025 00:14:07 GMT  
 		Size: 34.8 KB (34809 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9899,7 +9899,7 @@ $ docker pull cassandra@sha256:802dda4f93556b87fe978296f5c2fe050c5e013fc540c4c92
 ## `cassandra:4.0.17-jammy`
 
 ```console
-$ docker pull cassandra@sha256:399e43334f24d9422095defd98a8fe4033218726f13aa07bc6793c640822ee49
+$ docker pull cassandra@sha256:b655eea941b2f6efdae17e716ed28cc08ea25047862cd836c595e6055f07303b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10206,13 +10206,13 @@ $ docker pull cassandra@sha256:84993f0106a22db91325fc649f685b297ff191283a09683d7
 ### `cassandra:4.0.17-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:b4fd843158b86f65f43b7e754d36eb84a7eddf6a1494c3e1a851fef91398310a
+$ docker pull cassandra@sha256:ea1a9a457f2ca10708718f96348f9e25aac30ea88db755e50ba8c72207577d10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.8 MB (149779968 bytes)**  
+-	Total Size: **149.8 MB (149781891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d29abcf64a5d71287e5ce2df533cd67ba0da65032bf5b708b085c632c577480`
+-	Image ID: `sha256:9ec8b71bb256b0792c9219d870504f3a735dba4b49ba31119af47c2ef79bc9cc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -10226,7 +10226,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -10282,68 +10282,68 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca242bd6583ded94de503874d48ad48f739c26ae684cfe03e51daa65f48ff110`  
-		Last Modified: Wed, 23 Apr 2025 19:33:50 GMT  
-		Size: 48.4 MB (48408122 bytes)  
+	-	`sha256:4cdd614cc55cb4a421cef3576dcfc1c6835bd1cb78d3dbce6fe83a0141e0a793`  
+		Last Modified: Tue, 06 May 2025 00:14:09 GMT  
+		Size: 48.4 MB (48408098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10288d42cd2e8127c0130c4868fad904f5e01dc402dedf56aeb82f075496acbf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
-		Size: 1.2 KB (1223 bytes)  
+	-	`sha256:3b7979e4803f86f1909831a2403c306cbfae2e24cf3a3c2c68f71f401a4f7f2e`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
+		Size: 1.2 KB (1227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.0.17-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:8b701a168d067462e09317d63bfd69346f289e75504e6c111e8b53bc4daacc19
+$ docker pull cassandra@sha256:05538bb47cda40a4c4e5c29f2885097a0c395bd9d11bd375e6ace2109b06500f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4455062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:895855ab9425ab9628000f2e2cb0cdf11f7e7eaab214575af21106e908f5e9e9`
+-	Image ID: `sha256:6c6ecbefff12a5b6863cd411624328a2e5a6a65c999445d1a9be178c40f6379e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fc974b6a22402b01ba31439d54ec54d74b346dc9a72ad4ea1bd794027ce26d4`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:b924ec62f72e62fda5484b7506e44e9ca8a94681d5618529aa6b92b6532ce41f`  
+		Last Modified: Tue, 06 May 2025 00:14:08 GMT  
 		Size: 4.4 MB (4420253 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:635c084afe3c899673ec664bd9deed0abac2407778d2885a399043a9821403b3`  
-		Last Modified: Wed, 23 Apr 2025 19:33:48 GMT  
+	-	`sha256:e9c950e5874ee56b5b341eb8969de620c854e92100846bb6feeee092cafc2bc6`  
+		Last Modified: Tue, 06 May 2025 00:14:07 GMT  
 		Size: 34.8 KB (34809 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10638,7 +10638,7 @@ $ docker pull cassandra@sha256:802dda4f93556b87fe978296f5c2fe050c5e013fc540c4c92
 ## `cassandra:4.1`
 
 ```console
-$ docker pull cassandra@sha256:98470d9eca80956103244343c3db95a9ab1949f6f903257fda761a41a44d480e
+$ docker pull cassandra@sha256:8b774810a1a6cf1c5974c4a719b84b3f9096d5d12e923c56e3f8031a942e8bf9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10945,13 +10945,13 @@ $ docker pull cassandra@sha256:747b5ddae0068259ede9a484c9487e59ca2b1816d2a9eec6e
 ### `cassandra:4.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:3218b2acb03b847627833298576c8c9dd94d03fb628cca880e214b4b37ac5d15
+$ docker pull cassandra@sha256:f5bcd3736b8a433ca8e487d8c95afd8bea042fb1156fd6007a835cf838fda909
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.9 MB (151863747 bytes)**  
+-	Total Size: **151.9 MB (151865610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd278854985d696e599f380cf0e140e185d66958bf1147606e48f971c2c79dc9`
+-	Image ID: `sha256:9f1f33733e9d266c8c50124ae0893d52a9eb13e215e4a36e1d71645fc1e12595`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -10965,7 +10965,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -11021,69 +11021,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6e8d96876e810c005a3f69b43b702ed7d50263b7959468ec7347965cc748097`  
-		Last Modified: Wed, 23 Apr 2025 19:33:14 GMT  
-		Size: 50.5 MB (50491898 bytes)  
+	-	`sha256:efa8a4d97a90a1e380881ac584d62ceb2713b5b8d9292e16eeeca7be4c68e404`  
+		Last Modified: Tue, 06 May 2025 00:13:28 GMT  
+		Size: 50.5 MB (50491820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73881039efbfdd7253afc6b07a6cb22c191aea4c1fe3231b1fa2b76a8990752e`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 1.2 KB (1226 bytes)  
+	-	`sha256:a75ffd40aba35585c1358ac0acc2a14807fc8d92d2c63c83e8f1747aa523ffd8`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7b02c9f4f09b775ff338bd434778703e6efe3956b08278507c02eb366ed0ea51
+$ docker pull cassandra@sha256:7b497420133b8ded0c8fe5f2fe2d459e37892e7e2e6391f908c4a9bfda5444e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4458654 bytes)**  
+-	Total Size: **4.5 MB (4458655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa2b7c6d65074bbe04ea3a359ba16bc69feae749c1fe558b926967127737cdb9`
+-	Image ID: `sha256:3eb406a2c7d1e14e2534d92c1885aa03554e21972d176f72cd8fc7133f304374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28493b69cf124fa97cfd2de1c5c8ec7edd341cb156fcaf828d7f49182a49f5ef`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
+	-	`sha256:5ef3939d57c2884f2df59486c190177eec78ecd87ccee0b17926def90b6e9eb7`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
 		Size: 4.4 MB (4423227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31e58c5bd04bd5ea1822d6e250a9263b0214d8526f340e0c640f8ae2003a56cc`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 35.4 KB (35427 bytes)  
+	-	`sha256:1fb302a34d4e2ab37d291a0c18c71d1ea31446d136db2294e4aa8a164f3e2292`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 35.4 KB (35428 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1` - linux; ppc64le
@@ -11377,7 +11377,7 @@ $ docker pull cassandra@sha256:63c7f726d111b1f5a65c5a33167ca56dd9c625511c94a9a08
 ## `cassandra:4.1-jammy`
 
 ```console
-$ docker pull cassandra@sha256:98470d9eca80956103244343c3db95a9ab1949f6f903257fda761a41a44d480e
+$ docker pull cassandra@sha256:8b774810a1a6cf1c5974c4a719b84b3f9096d5d12e923c56e3f8031a942e8bf9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11684,13 +11684,13 @@ $ docker pull cassandra@sha256:747b5ddae0068259ede9a484c9487e59ca2b1816d2a9eec6e
 ### `cassandra:4.1-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:3218b2acb03b847627833298576c8c9dd94d03fb628cca880e214b4b37ac5d15
+$ docker pull cassandra@sha256:f5bcd3736b8a433ca8e487d8c95afd8bea042fb1156fd6007a835cf838fda909
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.9 MB (151863747 bytes)**  
+-	Total Size: **151.9 MB (151865610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd278854985d696e599f380cf0e140e185d66958bf1147606e48f971c2c79dc9`
+-	Image ID: `sha256:9f1f33733e9d266c8c50124ae0893d52a9eb13e215e4a36e1d71645fc1e12595`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -11704,7 +11704,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -11760,69 +11760,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6e8d96876e810c005a3f69b43b702ed7d50263b7959468ec7347965cc748097`  
-		Last Modified: Wed, 23 Apr 2025 19:33:14 GMT  
-		Size: 50.5 MB (50491898 bytes)  
+	-	`sha256:efa8a4d97a90a1e380881ac584d62ceb2713b5b8d9292e16eeeca7be4c68e404`  
+		Last Modified: Tue, 06 May 2025 00:13:28 GMT  
+		Size: 50.5 MB (50491820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73881039efbfdd7253afc6b07a6cb22c191aea4c1fe3231b1fa2b76a8990752e`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 1.2 KB (1226 bytes)  
+	-	`sha256:a75ffd40aba35585c1358ac0acc2a14807fc8d92d2c63c83e8f1747aa523ffd8`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7b02c9f4f09b775ff338bd434778703e6efe3956b08278507c02eb366ed0ea51
+$ docker pull cassandra@sha256:7b497420133b8ded0c8fe5f2fe2d459e37892e7e2e6391f908c4a9bfda5444e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4458654 bytes)**  
+-	Total Size: **4.5 MB (4458655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa2b7c6d65074bbe04ea3a359ba16bc69feae749c1fe558b926967127737cdb9`
+-	Image ID: `sha256:3eb406a2c7d1e14e2534d92c1885aa03554e21972d176f72cd8fc7133f304374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28493b69cf124fa97cfd2de1c5c8ec7edd341cb156fcaf828d7f49182a49f5ef`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
+	-	`sha256:5ef3939d57c2884f2df59486c190177eec78ecd87ccee0b17926def90b6e9eb7`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
 		Size: 4.4 MB (4423227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31e58c5bd04bd5ea1822d6e250a9263b0214d8526f340e0c640f8ae2003a56cc`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 35.4 KB (35427 bytes)  
+	-	`sha256:1fb302a34d4e2ab37d291a0c18c71d1ea31446d136db2294e4aa8a164f3e2292`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 35.4 KB (35428 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1-jammy` - linux; ppc64le
@@ -12116,7 +12116,7 @@ $ docker pull cassandra@sha256:63c7f726d111b1f5a65c5a33167ca56dd9c625511c94a9a08
 ## `cassandra:4.1.8`
 
 ```console
-$ docker pull cassandra@sha256:98470d9eca80956103244343c3db95a9ab1949f6f903257fda761a41a44d480e
+$ docker pull cassandra@sha256:8b774810a1a6cf1c5974c4a719b84b3f9096d5d12e923c56e3f8031a942e8bf9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12423,13 +12423,13 @@ $ docker pull cassandra@sha256:747b5ddae0068259ede9a484c9487e59ca2b1816d2a9eec6e
 ### `cassandra:4.1.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:3218b2acb03b847627833298576c8c9dd94d03fb628cca880e214b4b37ac5d15
+$ docker pull cassandra@sha256:f5bcd3736b8a433ca8e487d8c95afd8bea042fb1156fd6007a835cf838fda909
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.9 MB (151863747 bytes)**  
+-	Total Size: **151.9 MB (151865610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd278854985d696e599f380cf0e140e185d66958bf1147606e48f971c2c79dc9`
+-	Image ID: `sha256:9f1f33733e9d266c8c50124ae0893d52a9eb13e215e4a36e1d71645fc1e12595`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -12443,7 +12443,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -12499,69 +12499,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6e8d96876e810c005a3f69b43b702ed7d50263b7959468ec7347965cc748097`  
-		Last Modified: Wed, 23 Apr 2025 19:33:14 GMT  
-		Size: 50.5 MB (50491898 bytes)  
+	-	`sha256:efa8a4d97a90a1e380881ac584d62ceb2713b5b8d9292e16eeeca7be4c68e404`  
+		Last Modified: Tue, 06 May 2025 00:13:28 GMT  
+		Size: 50.5 MB (50491820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73881039efbfdd7253afc6b07a6cb22c191aea4c1fe3231b1fa2b76a8990752e`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 1.2 KB (1226 bytes)  
+	-	`sha256:a75ffd40aba35585c1358ac0acc2a14807fc8d92d2c63c83e8f1747aa523ffd8`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1.8` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7b02c9f4f09b775ff338bd434778703e6efe3956b08278507c02eb366ed0ea51
+$ docker pull cassandra@sha256:7b497420133b8ded0c8fe5f2fe2d459e37892e7e2e6391f908c4a9bfda5444e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4458654 bytes)**  
+-	Total Size: **4.5 MB (4458655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa2b7c6d65074bbe04ea3a359ba16bc69feae749c1fe558b926967127737cdb9`
+-	Image ID: `sha256:3eb406a2c7d1e14e2534d92c1885aa03554e21972d176f72cd8fc7133f304374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28493b69cf124fa97cfd2de1c5c8ec7edd341cb156fcaf828d7f49182a49f5ef`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
+	-	`sha256:5ef3939d57c2884f2df59486c190177eec78ecd87ccee0b17926def90b6e9eb7`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
 		Size: 4.4 MB (4423227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31e58c5bd04bd5ea1822d6e250a9263b0214d8526f340e0c640f8ae2003a56cc`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 35.4 KB (35427 bytes)  
+	-	`sha256:1fb302a34d4e2ab37d291a0c18c71d1ea31446d136db2294e4aa8a164f3e2292`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 35.4 KB (35428 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1.8` - linux; ppc64le
@@ -12855,7 +12855,7 @@ $ docker pull cassandra@sha256:63c7f726d111b1f5a65c5a33167ca56dd9c625511c94a9a08
 ## `cassandra:4.1.8-jammy`
 
 ```console
-$ docker pull cassandra@sha256:98470d9eca80956103244343c3db95a9ab1949f6f903257fda761a41a44d480e
+$ docker pull cassandra@sha256:8b774810a1a6cf1c5974c4a719b84b3f9096d5d12e923c56e3f8031a942e8bf9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13162,13 +13162,13 @@ $ docker pull cassandra@sha256:747b5ddae0068259ede9a484c9487e59ca2b1816d2a9eec6e
 ### `cassandra:4.1.8-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:3218b2acb03b847627833298576c8c9dd94d03fb628cca880e214b4b37ac5d15
+$ docker pull cassandra@sha256:f5bcd3736b8a433ca8e487d8c95afd8bea042fb1156fd6007a835cf838fda909
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.9 MB (151863747 bytes)**  
+-	Total Size: **151.9 MB (151865610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd278854985d696e599f380cf0e140e185d66958bf1147606e48f971c2c79dc9`
+-	Image ID: `sha256:9f1f33733e9d266c8c50124ae0893d52a9eb13e215e4a36e1d71645fc1e12595`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -13182,7 +13182,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 24 Mar 2025 23:38:01 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 24 Mar 2025 23:38:01 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
 # Mon, 24 Mar 2025 23:38:01 GMT
 CMD ["/bin/bash"]
 # Mon, 24 Mar 2025 23:38:01 GMT
@@ -13238,69 +13238,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0a9ccad43d6175df33a31d9ef705aee0a7e79c37234a6583a2c9f97ff08f56`  
-		Last Modified: Wed, 23 Apr 2025 16:34:15 GMT  
-		Size: 45.6 MB (45585061 bytes)  
+	-	`sha256:85ace3337c550aa7a2cb842db56c13201aa30b5fb48379850f6df7ace429577b`  
+		Last Modified: Mon, 05 May 2025 16:53:11 GMT  
+		Size: 45.6 MB (45587072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752dc0481ce94de9a181f6af59bbde60866f257bef89c202420b0a8617885ca3`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:3baf982afd58b3822783f4a198bc615dd8684c163e99ddd729acf7980c31eb5d`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:115162747e532e8811a154d137b2281cafe2b8cd2e40d6b91e10d9a9bed48de7`  
-		Last Modified: Wed, 23 Apr 2025 16:34:13 GMT  
+	-	`sha256:b2163faed470d98e7d5bb909681e03aa573b8d002ecaa7c47ad5e331e1c2bea6`  
+		Last Modified: Mon, 05 May 2025 16:53:09 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9b99eeef4ebee10f2a760356b422458c50effb42a4e65a267b42255c18ff6d`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:2dd517796818bed89301080f79278fdc560bc5f5239097b8d1353edb75864450`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df2244d8aac09404f841a3452241e6e0fafcb64c85978fef50cd09d7dfc6b1b6`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 11.5 MB (11453117 bytes)  
+	-	`sha256:51a7d5eed3e11d6386a30ca914c96b1ae99b019d57da3b2cf79ca6d7f63a5e7f`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 11.5 MB (11453043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28688cd18defe8782921ea63ad0b9c3dfbebb3870db94cebb8d7c3895c74cbcf`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 914.5 KB (914463 bytes)  
+	-	`sha256:dc50a818bcdf2eb16930dab63ee04d24fdd711c599f7059ab61365bae867e4d2`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 914.5 KB (914454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6e8d96876e810c005a3f69b43b702ed7d50263b7959468ec7347965cc748097`  
-		Last Modified: Wed, 23 Apr 2025 19:33:14 GMT  
-		Size: 50.5 MB (50491898 bytes)  
+	-	`sha256:efa8a4d97a90a1e380881ac584d62ceb2713b5b8d9292e16eeeca7be4c68e404`  
+		Last Modified: Tue, 06 May 2025 00:13:28 GMT  
+		Size: 50.5 MB (50491820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73881039efbfdd7253afc6b07a6cb22c191aea4c1fe3231b1fa2b76a8990752e`  
-		Last Modified: Wed, 23 Apr 2025 19:33:13 GMT  
-		Size: 1.2 KB (1226 bytes)  
+	-	`sha256:a75ffd40aba35585c1358ac0acc2a14807fc8d92d2c63c83e8f1747aa523ffd8`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:4.1.8-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:7b02c9f4f09b775ff338bd434778703e6efe3956b08278507c02eb366ed0ea51
+$ docker pull cassandra@sha256:7b497420133b8ded0c8fe5f2fe2d459e37892e7e2e6391f908c4a9bfda5444e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4458654 bytes)**  
+-	Total Size: **4.5 MB (4458655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa2b7c6d65074bbe04ea3a359ba16bc69feae749c1fe558b926967127737cdb9`
+-	Image ID: `sha256:3eb406a2c7d1e14e2534d92c1885aa03554e21972d176f72cd8fc7133f304374`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28493b69cf124fa97cfd2de1c5c8ec7edd341cb156fcaf828d7f49182a49f5ef`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
+	-	`sha256:5ef3939d57c2884f2df59486c190177eec78ecd87ccee0b17926def90b6e9eb7`  
+		Last Modified: Tue, 06 May 2025 00:13:27 GMT  
 		Size: 4.4 MB (4423227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31e58c5bd04bd5ea1822d6e250a9263b0214d8526f340e0c640f8ae2003a56cc`  
-		Last Modified: Wed, 23 Apr 2025 19:33:12 GMT  
-		Size: 35.4 KB (35427 bytes)  
+	-	`sha256:1fb302a34d4e2ab37d291a0c18c71d1ea31446d136db2294e4aa8a164f3e2292`  
+		Last Modified: Tue, 06 May 2025 00:13:26 GMT  
+		Size: 35.4 KB (35428 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:4.1.8-jammy` - linux; ppc64le
@@ -13594,7 +13594,7 @@ $ docker pull cassandra@sha256:63c7f726d111b1f5a65c5a33167ca56dd9c625511c94a9a08
 ## `cassandra:5`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13901,28 +13901,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:5` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13977,69 +13977,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5` - linux; ppc64le
@@ -14333,7 +14333,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:5-jammy`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14640,28 +14640,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:5-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14716,69 +14716,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5-jammy` - linux; ppc64le
@@ -15072,7 +15072,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:5.0`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15379,28 +15379,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:5.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15455,69 +15455,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0` - linux; ppc64le
@@ -15811,7 +15811,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:5.0-jammy`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16118,28 +16118,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:5.0-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16194,69 +16194,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0-jammy` - linux; ppc64le
@@ -16550,7 +16550,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:5.0.4`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16857,28 +16857,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:5.0.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16933,69 +16933,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0.4` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0.4` - linux; ppc64le
@@ -17289,7 +17289,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:5.0.4-jammy`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17596,28 +17596,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:5.0.4-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17672,69 +17672,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5.0.4-jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:5.0.4-jammy` - linux; ppc64le
@@ -18028,7 +18028,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:jammy`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18335,28 +18335,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18411,69 +18411,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:jammy` - linux; ppc64le
@@ -18767,7 +18767,7 @@ $ docker pull cassandra@sha256:cb3e7444eea7f1cd43f9d915611eea8388e99187843b4c51a
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:8ab2ccfc05397d2567131f6e02ebb381bbb2605d43c1894f9139f8f444803c6a
+$ docker pull cassandra@sha256:ee5be67d740b5a427881effcfb672b6c986122ec139eada751f82bca247d6904
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19074,28 +19074,28 @@ $ docker pull cassandra@sha256:e586fc26251ab3be472ef1febdd5bbbc468bc63c53694db69
 ### `cassandra:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:6e180f44e042915a56bdea2d032a3ee14b9fb46b549c4f9cf44b25b58a645cea
+$ docker pull cassandra@sha256:e66d9ee815b33137bf8d7c209082d2587333593ba2670d8f3df185070ad7786e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174554693 bytes)**  
+-	Total Size: **174.6 MB (174554600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c004ad19227847824cbb2179d7a3ed6d11695c9aa78d1d6bd71eb48ebc829d9`
+-	Image ID: `sha256:e7d5a20f395acf289b67f8872b3da6e27cd8d04dc68ab8c8892871e7366b94ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG RELEASE
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 07 Apr 2025 07:27:02 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 07 Apr 2025 07:27:04 GMT
-ADD file:f7fa9c3fec404bf0500211305250f795384645b6032774d9641b0dae7d5fac61 in / 
-# Mon, 07 Apr 2025 07:27:05 GMT
+# Thu, 10 Apr 2025 20:24:29 GMT
+ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
+# Thu, 10 Apr 2025 20:24:29 GMT
 CMD ["/bin/bash"]
 # Thu, 10 Apr 2025 20:24:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19150,69 +19150,69 @@ CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:7b76bc00f23a24375cf6b51079ebcf72fb02d56fa741b31e5f979672fc65c576`  
-		Last Modified: Mon, 07 Apr 2025 08:26:32 GMT  
-		Size: 27.4 MB (27354231 bytes)  
+	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
+		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d988c284109adb0ee08f6d6a95a152f6e364456e1a4853bb6c3ebc58c40f099`  
-		Last Modified: Wed, 09 Apr 2025 06:58:01 GMT  
-		Size: 16.1 MB (16059566 bytes)  
+	-	`sha256:df2a012351716029262feccd21d93c2eefbe543395255454bd5fbe2c647d7688`  
+		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
+		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac488a8321ea959588c227573cf8a20259cc8fde212361febce0a1b0c814dbef`  
-		Last Modified: Wed, 23 Apr 2025 16:38:17 GMT  
-		Size: 46.5 MB (46474324 bytes)  
+	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
+		Size: 46.5 MB (46474272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1af5cf872e078be1505c0565767eed13113730ec78326847e626469b0b8c663`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 158.0 B  
+	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
+		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af88f83d0cfd9bd69d840192dccb1b340da7121b21b5d2c5d41ad894714765f2`  
-		Last Modified: Wed, 23 Apr 2025 16:38:15 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
+		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441c11f91fc6295622994ce100f9076be53bd8d2df80522ecdeb090fa7030fd4`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 1.7 KB (1737 bytes)  
+	-	`sha256:4f69bbd15aab387276f2f8f0f6a6c92dd40219f70d89db129ca498998e89b795`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae605834ec66db807140c095dc9d0429863146efdebe4f78f795f794e4407d`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
-		Size: 11.5 MB (11453129 bytes)  
+	-	`sha256:6aa9a1aac629e0be34d0f7170c0e6fc61ee3ce93cf574fc1f4888a0de51d5184`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 11.5 MB (11453101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d59053763f4a82a8ef326e4fb7b3d2c8ffafbfc0f2bf1124d1d8d13bbba6a3`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 914.5 KB (914468 bytes)  
+	-	`sha256:81507a895179f3c97cc0f542206bb1e78c0cc6696ddb0a0ee4c0d9675fe9f62b`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24043258ac96edb5e091d96298b17d356943fb43852e4b7e6ceac6a67c5399be`  
-		Last Modified: Wed, 23 Apr 2025 19:32:24 GMT  
-		Size: 72.3 MB (72293572 bytes)  
+	-	`sha256:fdd892f75a287dfa822e5787d4063a42a75a7cc1ef534d1a05573d3e3a965b89`  
+		Last Modified: Tue, 06 May 2025 00:12:41 GMT  
+		Size: 72.3 MB (72293541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6cb0aa28a6853251c9774c13d3d791a76c9cb8a6486b2782ff18d80efd57a89`  
-		Last Modified: Wed, 23 Apr 2025 19:32:23 GMT  
+	-	`sha256:f34ece8c6c3bbfa2850aa5aa776316ea7e970f69340e068b561a5e72c925b132`  
+		Last Modified: Tue, 06 May 2025 00:12:40 GMT  
 		Size: 1.2 KB (1226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:latest` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:d0153df240e758b99d91709f13378b625ae260783bf332f25c415ab1d7b88609
+$ docker pull cassandra@sha256:71fa0c954f00b74aafd511cf506c83d14da02a3276236174b5a7fb9ab91cf5d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485951 bytes)**  
+-	Total Size: **4.5 MB (4485952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbd68c7bb03a7b16405d33930743c91e3fd1b2b2d2e5ea8090a9ffafffcf2f75`
+-	Image ID: `sha256:d2d5705e396a3b8024101df18c7f9286d12516af5c36f0ad44113c15a93ea8e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e716306e61a7dc7193d9bab32f8dd63ceac17346ab4d353f0490e7bedb76cec`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
+	-	`sha256:814deb0bdf7c5a42dcdab08a2feddf6b22b26b5afb37edd640c1cd1cbaa29273`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
 		Size: 4.4 MB (4449894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9fb7c8516326a4608f2569da7c1641ac34dd8494ff2d4e2d039fcc06116b50a`  
-		Last Modified: Wed, 23 Apr 2025 19:32:22 GMT  
-		Size: 36.1 KB (36057 bytes)  
+	-	`sha256:f1e8dc89b1b10f5dce9947d0e5f4d4bc6e7b08f21982ad2a81503a97785530b9`  
+		Last Modified: Tue, 06 May 2025 00:12:39 GMT  
+		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cassandra:latest` - linux; ppc64le
