@@ -1,10 +1,10 @@
-# `matomo:5.3.1-fpm-alpine`
+# `matomo:5.3.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:225ace19d5413970c9b75568e89d037b8ca988d69e86de360d6b16ece8f021f5`
-- Created: `2025-03-18T14:44:13Z`
-- Virtual Size: ~ 166.58 Mb  
+- Image ID: `sha256:ba89765aff2e4e94f44ac29709decf29efc4f865e68574332efea39523ad00c7`
+- Created: `2025-05-02T14:44:13Z`
+- Virtual Size: ~ 168.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.20.tar.xz.asc`
   - `PHP_SHA256=f15914e071b5bddaf1475b5f2ba68107e8b8846655f9e89690fb7cd410b0db6c`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.3.1`
+  - `MATOMO_VERSION=5.3.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -726,16 +726,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```
