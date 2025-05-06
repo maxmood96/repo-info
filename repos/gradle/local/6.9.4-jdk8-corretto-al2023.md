@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:776180e4ae9b9ffd23e89c2ddfb5c91299164c731933d6ce9cdbcc73a505d75d`
+- Image ID: `sha256:2bb1c35110a8d6af3ac8df89efbac63edbcca861d8be4235f7a66e2b67bd295c`
 - Created: `2025-03-30T18:19:35Z`
 - Virtual Size: ~ 1.28 Gb  
   (total size of all layers on-disk)
@@ -1222,13 +1222,13 @@ $ dnf --quiet download --source --url iso-codes-4.6.0-1.amzn2023.0.3.noarch
 https://cdn.amazonlinux.com/al2023/core/guids/808d8cf28515a4502c5e9f614fa7eb234126b37090a7e5a42c669493471e9407/SRPMS/../../../../blobstore/c790b50188edf877d8c013c972612b69fce52146be9b54539e6cefbb333d2db6/iso-codes-4.6.0-1.amzn2023.0.3.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-1.amzn2023.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_452.b09-1.amzn2023.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_452.b09-2.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75d2e1fb9ae929275bf52884c81ece9e3e66d3c210df7c2a5d14e88be90685bd`
+- Image ID: `sha256:22c47c917c3b5ef22197b9d0b7214f28b8bd3441bb4c8ab0e5b60fec86b71b46`
 - Created: `2025-04-26T01:26:29Z`
-- Virtual Size: ~ 1.16 Gb  
+- Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -1761,11 +1761,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-138.148`
+### `dpkg` source package: `linux=5.15.0-139.149`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-138.148`
+- `linux-libc-dev:amd64=5.15.0-139.149`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1774,10 +1774,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-138.148
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-138.148.dsc' linux_5.15.0-138.148.dsc 7779 SHA512:352624b37f98285e26eca14e5ac2f27390fac1dfe2bd77dc68d59d1b0c8c9e3b4a6d5dec51cac66d335c962235488b6738d965c69246249ae0ece6f807aa74c6
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-138.148.diff.gz' linux_5.15.0-138.148.diff.gz 11427073 SHA512:2b87ea136260c50809362951ed21fe35075211a906f50414048991847233b243e4b07c57816d09421dd3338aff04b7415243af8958e7238ef16bf7768ebbd444
+$ apt-get source -qq --print-uris linux=5.15.0-139.149
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-139.149.dsc' linux_5.15.0-139.149.dsc 7820 SHA512:c76e2a36bff2291fe193fcef89bef2dbe6860a9d29d65d90bae9d15c5cbed5a08df81a605e6096b2902373137f96732caafa4e063c8d628adc245ad2d7f38372
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-139.149.diff.gz' linux_5.15.0-139.149.diff.gz 11428555 SHA512:58d2dc4f11fb7745ad48c500b7f2c0a82b3e8d66da7fc095005d4058a944833e11a521fc8d47a7b0ef527a35edde3a814b3f174473e3ec991861c69e8fd92758
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
