@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:32d9d8e4592a6f86b5a4df9b386e0fad363bf74c9385bd5ede84334d6a6beecc`
+- Image ID: `sha256:f6ebdcc762c3020bef88f073773c343274691002cd2b763de5534a346ce23adc`
 - Created: `2025-04-11T14:37:01Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
@@ -4512,20 +4512,25 @@ $ apt-get source -qq --print-uris libxkbcommon=1.4.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_1.4.0-1.debian.tar.xz' libxkbcommon_1.4.0-1.debian.tar.xz 8028 SHA512:d49087f93cd0cdbd56a7756a9895f97eaffdbf5aba8dfb65896337890cf732818373cb5cccee1dcbe99e119b5eff32380f3840c2f3ee2bcaec064632cd26c0a2
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.6`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.7`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.6`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.7.dsc' libxml2_2.9.13+dfsg-1ubuntu0.7.dsc 3030 SHA512:d95cd238ec1446e5d1346f4377650a3ee3cd508b305656bec7ad0b2033ee4cc9760084206e1f62f82abf393fc3cda22b592254ec6e2f6de41ed042b08ac5fa3f
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.7.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.7.debian.tar.xz 41080 SHA512:1ebdd8989b71aca15457264e746afed0a4b3bf1226fa6321743eb3b2eba50481be5c52d131dd030a1a0ba538774702e846d4b3648141590434733ea781f19165
+```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -5250,14 +5255,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.26+4-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.26%2b4-1ubuntu1%7e22.04.dsc' openjdk-lts_11.0.26+4-1ubuntu1~22.04.dsc 4861 SHA512:454ffad8bcdcbd50eca28b1519bdcb0fddb9498e12ac799cd22b051279866c7e6e19e7918fdb54ffe4a7506b510581162bb8cab97adfe4081c51909de66cb677
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.26%2b4.orig.tar.xz' openjdk-lts_11.0.26+4.orig.tar.xz 69271624 SHA512:a85e2d00f1dd95f86a6e2c4ea537cc00f49bdc527beafb69a497aa3ef91a1c4d793ed905dd351a04306fec0de66348122c177b9b6fb7aa173a3db00ee5a98d88
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.26%2b4-1ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.26+4-1ubuntu1~22.04.debian.tar.xz 169812 SHA512:e1308f47a7a6f18ca052eb1a15f27e810e095eca05a81d8cbb33deee7b334028b01b8688cf99f2bd86f1aa1e9bb02aaec1c3b66daa9a54a66a025d37207516be
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.3`
 
@@ -5523,11 +5523,11 @@ $ apt-get source -qq --print-uris pcsc-lite=1.9.5-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz' pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz 19320 SHA512:faa39ebcf5e06bebf76eac1a80e979f071623868a455f76b61ec56a0f10fca456d95f1d7d688cbfa8ca333d5197f865ad0b3f092e2a6c54327abc28c3b5a7a41
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.3`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.4`
 
 Binary Packages:
 
-- `perl-base=5.34.0-3ubuntu1.3`
+- `perl-base=5.34.0-3ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -5559,9 +5559,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.4.dsc' perl_5.34.0-3ubuntu1.4.dsc 2976 SHA512:d643892a28c72b9664809c9a54d406f702412547d00a5987fdd216ebb492a6c54f76ff3c1e2c274a6d10b0622f62827d4179f3dcaadbd950027f64f507cd4883
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.4.debian.tar.xz' perl_5.34.0-3ubuntu1.4.debian.tar.xz 195388 SHA512:24fc7abd6f70743ec11f6647dac56b4af4faf9ccbf0d906a2e992389812c47240a4fc6d3fb4fe6336290319497bf7f48fff0ee58b8cd31af9883ce03b8e4fce7
+```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -5652,11 +5658,11 @@ $ apt-get source -qq --print-uris poppler-data=0.4.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.11-1.debian.tar.xz' poppler-data_0.4.11-1.debian.tar.xz 19664 SHA512:3bde3ba66ec5212cae67c1fcdbebd6297b912cb0c8fc02bc0db69c1e8cb86e46631bc7cd5840c8a376585b9548ceed2f7e786b00f28d1403505900d2fb440a30
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.7`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.8`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.7`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -5664,9 +5670,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.8.dsc' poppler_22.02.0-2ubuntu0.8.dsc 3401 SHA512:6190ba05e63fbe9a674b369e4b0c8a282cb32b790e060ff24458ee63b7eb7d6e247bb1c11fdf257a21ac185f1e448b43b36509fed5fe4d8aabccc0007caf2dcd
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.8.debian.tar.xz' poppler_22.02.0-2ubuntu0.8.debian.tar.xz 45048 SHA512:735e8e607e80debe8c5c41a7c233c881b56a09545a2cc294796d753a75e21ff8ca570d40d35f7806c0670a219d437655ecae0a25b74fbf008b3bf1c192b97f99
+```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
