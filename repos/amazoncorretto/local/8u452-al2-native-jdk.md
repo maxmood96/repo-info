@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72161f163128bd97e2c1da0eb6b8caddd11ff8d18924aa6391a75f1f6e86f3bf`
-- Created: `2025-04-15T21:50:45Z`
+- Image ID: `sha256:7c9d3d03b1a0f6cd028ce894960a88bcb4e0b4464daef3eab177983200d26c6a`
+- Created: `2025-05-02T21:09:32Z`
 - Virtual Size: ~ 491.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -725,13 +725,13 @@ $ dnf --quiet download --source --url jasper-libs-1.900.1-33.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/75de6d1e8a2b73a3c8a4ebdd3b3a6684b67cc8b6d724ab549866d1f58915510d/jasper-1.900.1-33.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-1.amzn2.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_452.b09-1.amzn2.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_452.b09-2.amzn2.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 

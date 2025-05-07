@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3c628b1bdaeabc3622f4feed8a605146520a1ee88be713c62418c585ab6cca8`
-- Created: `2025-04-15T21:50:45Z`
+- Image ID: `sha256:a3ae714b8208800390228f484d0b40453a56adae49f983b1a8f63ad259de2fff`
+- Created: `2025-05-02T21:09:32Z`
 - Virtual Size: ~ 441.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -725,7 +725,7 @@ $ dnf --quiet download --source --url jasper-libs-1.900.1-33.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/7022f37728e65741caeecec2c31e5b17b6307f9d1947046dc96ba565c2e50e81/../../../../../blobstore/75de6d1e8a2b73a3c8a4ebdd3b3a6684b67cc8b6d724ab549866d1f58915510d/jasper-1.900.1-33.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-1.amzn2.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
