@@ -59,19 +59,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.0.dsc' apt_3.0.0.dsc 3158 SHA256:64b43bba97a80a7dcff08ea5f171934e32bd71f99a5c21cc4c92daca0eb30778
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.0.tar.xz' apt_3.0.0.tar.xz 2420300 SHA256:a811ef5c7b6653e4939deed77b34a84be4c4fe57fec1e65a950cca95f8c4226e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.0.0/
 
-- https://sources.debian.net/src/apt/3.0.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1645,20 +1639,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.4.7-1
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7-1.dsc' libffi_3.4.7-1.dsc 1948 SHA256:905661067ccb62604691b4fdfffaaa29e0af6fe9994a61cb1e7ad6befc2eb5ae
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7.orig.tar.gz' libffi_3.4.7.orig.tar.gz 593636 SHA256:f07c08c9c14977eafb9b5f9277713d91358ec18fc8aaa5607d6790cde90cba12
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.4.7-1.debian.tar.xz' libffi_3.4.7-1.debian.tar.xz 10776 SHA256:af65d5c7024e664f71ba2b3a0ff4b72dc885d8d1b75a7d2d596f3d8e36eb3229
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.4.7-1/
 
-- https://sources.debian.net/src/libffi/3.4.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.4.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.4.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -1726,10 +1713,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libjpeg-turbo=1:2.1.5-3.1
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.1.dsc' libjpeg-turbo_2.1.5-3.1.dsc 2478 SHA256:3b1089198a0f5dd0f6af7a6bbb381c0c710eb1cedf4ae887115a4c8209f081f3
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5.orig.tar.gz' libjpeg-turbo_2.1.5.orig.tar.gz 2264471 SHA256:254f3642b04e309fee775123133c6464181addc150499561020312ec61c1bf7c
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.1.debian.tar.xz' libjpeg-turbo_2.1.5-3.1.debian.tar.xz 107924 SHA256:ec48689b143c03fbc0a06e116f3916ca319afd8b9f2ef2b1226e245464878856
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.1.dsc' libjpeg-turbo_2.1.5-3.1.dsc 2478 SHA256:3b1089198a0f5dd0f6af7a6bbb381c0c710eb1cedf4ae887115a4c8209f081f3
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5.orig.tar.gz' libjpeg-turbo_2.1.5.orig.tar.gz 2264471 SHA256:254f3642b04e309fee775123133c6464181addc150499561020312ec61c1bf7c
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.1.debian.tar.xz' libjpeg-turbo_2.1.5-3.1.debian.tar.xz 107924 SHA256:ec48689b143c03fbc0a06e116f3916ca319afd8b9f2ef2b1226e245464878856
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-3.1/ (for browsing the source)
+- https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-3.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libjpeg-turbo/1:2.1.5-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -1807,10 +1800,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.47-1.1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47-1.1.dsc' libpng1.6_1.6.47-1.1.dsc 2287 SHA256:82ff8051d34181df9ad5d951801d000563613afc357246b73f8db2ad69a7d00f
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47.orig.tar.gz' libpng1.6_1.6.47.orig.tar.gz 1571845 SHA256:631a4c58ea6c10c81f160c4b21fa8495b715d251698ebc2552077e8450f30454
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47-1.1.debian.tar.xz' libpng1.6_1.6.47-1.1.debian.tar.xz 33204 SHA256:288540aedc46a760f7eb0dc5b58d92d7b647a15fcec3e7ec557ada3aa3dd2579
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47-1.1.dsc' libpng1.6_1.6.47-1.1.dsc 2287 SHA256:82ff8051d34181df9ad5d951801d000563613afc357246b73f8db2ad69a7d00f
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47.orig.tar.gz' libpng1.6_1.6.47.orig.tar.gz 1571845 SHA256:631a4c58ea6c10c81f160c4b21fa8495b715d251698ebc2552077e8450f30454
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47-1.1.debian.tar.xz' libpng1.6_1.6.47-1.1.debian.tar.xz 33204 SHA256:288540aedc46a760f7eb0dc5b58d92d7b647a15fcec3e7ec557ada3aa3dd2579
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.47-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.47-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.47-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3363,11 +3362,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.46.1-3
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.dsc' sqlite3_3.46.1-3.dsc 2632 SHA256:6ac6601da84b8e01bbf742e0d15bbdf076a5969f8dfb5175a3a6fb3f95ba6ac5
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.debian.tar.xz' sqlite3_3.46.1-3.debian.tar.xz 30968 SHA256:31e87bd93c95b198c0cfd25eebd0a8e79d53d37601df80f548a2804f810234e9
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.dsc' sqlite3_3.46.1-3.dsc 2632 SHA256:6ac6601da84b8e01bbf742e0d15bbdf076a5969f8dfb5175a3a6fb3f95ba6ac5
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.debian.tar.xz' sqlite3_3.46.1-3.debian.tar.xz 30968 SHA256:31e87bd93c95b198c0cfd25eebd0a8e79d53d37601df80f548a2804f810234e9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sqlite3/3.46.1-3/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.46.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.46.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.8-3-1`
 
