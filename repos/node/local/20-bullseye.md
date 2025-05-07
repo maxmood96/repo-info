@@ -3865,21 +3865,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.5=1:10.5.28-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28-0%2bdeb11u1.dsc' mariadb-10.5_10.5.28-0+deb11u1.dsc 4814 SHA256:1a840414dfb7ff1c3eef55cb32632be765748486f828a9b79dd6e2a22b89936a
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28.orig.tar.gz' mariadb-10.5_10.5.28.orig.tar.gz 117755203 SHA256:0b5070208da0116640f20bd085f1136527f998cc23268715bcbf352e7b7f3cc1
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28.orig.tar.gz.asc' mariadb-10.5_10.5.28.orig.tar.gz.asc 833 SHA256:fc65c8ed3994de259df0c06fd20a6552f99037c4946c446751d0815271848be7
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28-0%2bdeb11u1.debian.tar.xz' mariadb-10.5_10.5.28-0+deb11u1.debian.tar.xz 221360 SHA256:358c2bb75efd2e5ab0749c7a7e5cd45a6a6f41e2044608ead88f54e0a79c21cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.5/1:10.5.28-0+deb11u1/
 
-- https://sources.debian.net/src/mariadb-10.5/1:10.5.28-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.5/1:10.5.28-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.5/1:10.5.28-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-2`
 
