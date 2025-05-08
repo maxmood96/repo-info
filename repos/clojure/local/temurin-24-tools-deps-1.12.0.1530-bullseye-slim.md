@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5f219ad71e45305d3257f39a66fcd64ca0bd090d0b9c411b2ff7b0438b2c590`
+- Image ID: `sha256:7fc2efb5b41394ff0c1697f55e37e04916728a018135a9d1f9c36be2e6f3cffa`
 - Created: `2025-04-28T17:24:54Z`
 - Virtual Size: ~ 474.07 Mb  
   (total size of all layers on-disk)
@@ -627,23 +627,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.46.2-2+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.46.2-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.10-2+deb11u6`
+### `dpkg` source package: `expat=2.2.10-2+deb11u7`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.10-2+deb11u6`
+- `libexpat1:amd64=2.2.10-2+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u7.dsc' expat_2.2.10-2+deb11u7.dsc 2179 SHA256:1fe6d110b6046c7a6ab841dacf25b5d158bfea90c6be82ce0afad2e61ed69e99
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u7.debian.tar.xz' expat_2.2.10-2+deb11u7.debian.tar.xz 68864 SHA256:44cb4324f08be783faf755b97d2e18a25c2785d83577932a8c0f17b67c4b798c
+```
 
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.8.0-1`
 
