@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd89625460b70ded19655295ac86cfeee04bf0c1d3e95ce4ada7fcf5b1e05d99`
+- Image ID: `sha256:3f10d2aae150ec85d0aca9c786a1dc106f1100e0f93248ca4b89923babba48b6`
 - Created: `2025-04-23T14:48:05Z`
 - Virtual Size: ~ 394.53 Mb  
   (total size of all layers on-disk)
@@ -1661,11 +1661,11 @@ $ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.diff.gz' pcre2_10.42-4ubuntu2.1.diff.gz 8431 SHA512:a739c00ba25573d4e57490d487efcd1f4afbafb820ccb6063fe9d25f22d9a1f9bf7cc91cd89c5ffbb0b533f06133e4beaa16e5aee7f64e8939872ebb933c2f00
 ```
 
-### `dpkg` source package: `perl=5.38.2-3.2build2.1`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.1`
 
 Binary Packages:
 
-- `perl-base=5.38.2-3.2build2.1`
+- `perl-base=5.38.2-3.2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1695,9 +1695,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.1.dsc' perl_5.38.2-3.2ubuntu0.1.dsc 3036 SHA512:e0cdb9381f22dc989ba6679382657bf9bffd65a724ce6ca171ed413601ac64697427f544ab5080aee3781073e9ec2d7f5d24ec5b67bd6e20b36591859395a8c0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.1.debian.tar.xz' perl_5.38.2-3.2ubuntu0.1.debian.tar.xz 166536 SHA512:0faaf2ff4b14f4a6d8bb158305014846b44785fd2683aca379d7718a54da0002d9fab50a45a8efeedfb0ea69e1075b765afe21d65026fb54f1e88a1e27883a4b
+```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
