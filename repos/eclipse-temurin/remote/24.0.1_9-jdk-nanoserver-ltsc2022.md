@@ -47,7 +47,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:905464f5b09ec7543cfd4984311153c5e327937892d0e49e145f6b363cf68441`  
-		Last Modified: Wed, 16 Apr 2025 23:30:29 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:50 GMT  
 		Size: 122.5 MB (122539088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1170aa6c028d2c2d24b2a8d5abf6644e51aad9460c14b565e165ca51a5f7f8e1`  
