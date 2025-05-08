@@ -345,7 +345,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:fa5acbf36757d3126014bc0e0a159fb5593a1d68ddba5992ef7ac9aa3e7db8dc`  
-		Last Modified: Mon, 28 Apr 2025 21:10:59 GMT  
+		Last Modified: Thu, 08 May 2025 19:59:58 GMT  
 		Size: 48.8 MB (48775438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25ae256e277ba09f4ad7c8f3b2ae9456505a7cc7ad82eb54a9f4e62b8e541f14`  
