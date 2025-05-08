@@ -51,27 +51,27 @@ CMD ["telegraf"]
 
 -	Layers:
 	-	`sha256:cf05a52c02353f0b2b6f9be0549ac916c3fb1dc8d4bacd405eac7f28562ec9f2`  
-		Last Modified: Mon, 28 Apr 2025 21:08:11 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:39 GMT  
 		Size: 48.5 MB (48491199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:63964a8518f54dc31f8df89d7f06714c7a793aa1aa08a64ae3d7f4f4f30b4ac8`  
-		Last Modified: Mon, 28 Apr 2025 21:55:02 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:39 GMT  
 		Size: 24.0 MB (24011181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1dacc14b4e0bdc5194a2c8473cb1b6c87502ade9e518dd4fc860d6e2b92fabc2`  
-		Last Modified: Mon, 05 May 2025 21:43:54 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:09 GMT  
 		Size: 18.9 MB (18946555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60feec1ed28bf204a6705b299fb6150e3fdc5b79525f640a479f05fee0ecdb59`  
-		Last Modified: Mon, 05 May 2025 21:43:54 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:28 GMT  
 		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acbdec894ca78c4fe47dd8ac0c9f441acfa4578ed79e781c0279e94ff19c9119`  
-		Last Modified: Mon, 05 May 2025 21:43:55 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:14 GMT  
 		Size: 77.2 MB (77196866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01b51d74a199fd95947ea33f9ec3514fffab3a8ef9246bded84a400656d77c13`  
-		Last Modified: Mon, 05 May 2025 21:43:54 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:49 GMT  
 		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -137,11 +137,11 @@ CMD ["telegraf"]
 
 -	Layers:
 	-	`sha256:a735d4b4a53e8e11448d15bc50ce4670d54dff52e426cf0510c9b713d3a7ad09`  
-		Last Modified: Mon, 28 Apr 2025 21:15:27 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:48 GMT  
 		Size: 44.2 MB (44197079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b01e6436acd06b177253a4ba25e5179715088c2f493e89c91bbf6fdc41a2034`  
-		Last Modified: Tue, 29 Apr 2025 03:37:10 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:35 GMT  
 		Size: 21.9 MB (21918380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eabe566c6af2691f3105823447ac937c1f11b004965e6abc01575a064a841148`  
@@ -223,27 +223,27 @@ CMD ["telegraf"]
 
 -	Layers:
 	-	`sha256:de07ba6f486e0ce29760ab32d4381edabbc660a04c493e95eb9a8056925d8955`  
-		Last Modified: Mon, 28 Apr 2025 21:20:23 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:44 GMT  
 		Size: 48.3 MB (48327644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84649bff67ea459549b6f371f7045d9968d6ebf370b815c922a625f3ab065724`  
-		Last Modified: Tue, 29 Apr 2025 01:46:47 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:42 GMT  
 		Size: 23.5 MB (23544262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7446c58993d11b00fcf70a65c363df298c8fd24914c3657943f2362852a75e88`  
-		Last Modified: Tue, 29 Apr 2025 19:27:33 GMT  
+		Last Modified: Thu, 08 May 2025 17:07:55 GMT  
 		Size: 18.9 MB (18871759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38670875debfb321519f19305350d13646a48ebaac8d2b798ab7aa84cefe61b0`  
-		Last Modified: Tue, 29 Apr 2025 19:27:32 GMT  
+		Last Modified: Thu, 08 May 2025 17:07:53 GMT  
 		Size: 1.8 KB (1782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f36787a5ee1c46394cceb50e0a896ee120448916cbad47fc0217040703e6e7a`  
-		Last Modified: Tue, 06 May 2025 02:06:32 GMT  
+		Last Modified: Thu, 08 May 2025 17:08:01 GMT  
 		Size: 70.0 MB (69995550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3536c1dd589a2ac2c4c00c4cd04745d4d4e332fdae5ec2ff5d532014e0c07f6`  
-		Last Modified: Tue, 06 May 2025 02:06:28 GMT  
+		Last Modified: Thu, 08 May 2025 17:07:53 GMT  
 		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
