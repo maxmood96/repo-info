@@ -451,7 +451,7 @@ $ docker pull eclipse-mosquitto@sha256:54536bb60284f7ee539e139c674677c28c774ddb3
 
 -	Layers:
 	-	`sha256:d6346bef358a80996b34f1cb0b909e1b7b1df992a3f5d1f52b3670459d45d78e`  
-		Last Modified: Thu, 06 Mar 2025 17:59:00 GMT  
+		Last Modified: Thu, 08 May 2025 20:04:13 GMT  
 		Size: 555.3 KB (555333 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b0b5330c8d822d3da24a845ff649223cad0d1b159a9f114dd61c9f0e515f222`  
