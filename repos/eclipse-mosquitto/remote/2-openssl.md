@@ -57,15 +57,15 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870`  
-		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
+		Last Modified: Fri, 14 Feb 2025 14:36:50 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f328c27486858a03160ead135c639baf93f169e0529c1438bf8b56b0b398e1db`  
-		Last Modified: Thu, 06 Mar 2025 18:09:20 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:41 GMT  
 		Size: 913.1 KB (913103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c6b47413658b9f0f49afbacc4824cf6dd9e553385025037e37a10c687a8bfcb`  
-		Last Modified: Thu, 06 Mar 2025 18:09:20 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:41 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -131,15 +131,15 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:76099982f06682e28a60c3b774ef20931d07b0a2f551203484e633d8c0361ee7`  
-		Last Modified: Fri, 14 Feb 2025 18:28:03 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:24:56 GMT  
 		Size: 3.4 MB (3364731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59fdea63e2e97a544ee8fffe96a28dc988253fcfbd4aa0918ef1cd00d57f9ed5`  
-		Last Modified: Thu, 06 Mar 2025 17:57:54 GMT  
+		Last Modified: Thu, 08 May 2025 17:19:25 GMT  
 		Size: 883.5 KB (883477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc41ff03e4bf5a80bf1eb67b710a737ef8757408594aff580d4ac385f34816ac`  
-		Last Modified: Thu, 06 Mar 2025 17:57:53 GMT  
+		Last Modified: Thu, 08 May 2025 17:19:28 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -201,15 +201,15 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:6e771e15690e2fabf2332d3a3b744495411d6e0b00b2aea64419b58b0066cf81`  
-		Last Modified: Fri, 14 Feb 2025 12:05:33 GMT  
+		Last Modified: Fri, 14 Feb 2025 14:37:30 GMT  
 		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae48c6456fc4f05e392bdcd87898570d02664374ee7c9f77c7e1809e26308099`  
-		Last Modified: Thu, 06 Mar 2025 17:57:43 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:25 GMT  
 		Size: 913.7 KB (913737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cfcd83700307ee50802e41ac793ea4fd4c5a2c8f4157004cdb5965f500a5927a`  
-		Last Modified: Thu, 06 Mar 2025 17:57:43 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:25 GMT  
 		Size: 366.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -275,7 +275,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:69aa61ccf55e5bf8e7a069b89e8afb42b4f3443b3785868795af8046d810d608`  
-		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
+		Last Modified: Fri, 14 Feb 2025 14:38:41 GMT  
 		Size: 3.5 MB (3463623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d1bf62be25117406c6eae7c80c96b21bd5b8fa2cfbd0cde69d99cf356ac971e`  
@@ -349,7 +349,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:184b14480d317057da092a0994ad6baf4b2df588108f43969f8fd56f021af2c6`  
-		Last Modified: Fri, 14 Feb 2025 12:05:34 GMT  
+		Last Modified: Fri, 14 Feb 2025 14:38:03 GMT  
 		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbfd72115d266cc796753b6242fc229b939cbb9987368e9634961753c1eddd1e`  
@@ -423,7 +423,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:c1a599607158512214777614f916f8193d29fd34b656d47dfc26314af01e2af4`  
-		Last Modified: Fri, 14 Feb 2025 12:05:25 GMT  
+		Last Modified: Fri, 14 Feb 2025 14:38:37 GMT  
 		Size: 3.5 MB (3467567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:562bc257477fa42ea4c411b73546187b75739513f2fa6e05eb75e409056077fb`  
