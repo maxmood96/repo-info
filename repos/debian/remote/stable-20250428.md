@@ -84,7 +84,7 @@ RUN # debian.sh --arch 'armel' out/ 'stable' '@1745798400'
 
 -	Layers:
 	-	`sha256:92d509ed822678d9588999f6e2d95bb0637ce3bc59491955f14a63873e677bc8`  
-		Last Modified: Mon, 28 Apr 2025 21:09:01 GMT  
+		Last Modified: Thu, 08 May 2025 20:26:36 GMT  
 		Size: 46.0 MB (46026799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,7 +127,7 @@ RUN # debian.sh --arch 'armhf' out/ 'stable' '@1745798400'
 
 -	Layers:
 	-	`sha256:b2981e37e4c65722a660bca9163e0a4ec7b5f1d01f62fff33f5abdcf6bf161b3`  
-		Last Modified: Mon, 28 Apr 2025 21:17:54 GMT  
+		Last Modified: Thu, 08 May 2025 20:26:35 GMT  
 		Size: 44.2 MB (44197077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
