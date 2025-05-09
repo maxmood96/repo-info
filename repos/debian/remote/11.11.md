@@ -34,7 +34,7 @@ RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1745798400'
 
 -	Layers:
 	-	`sha256:19f1f54854d69811b3745bdd374e863f2fc2dc765fe37d1a30df3e590273322b`  
-		Last Modified: Thu, 08 May 2025 17:04:45 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:08:07 GMT  
 		Size: 53.7 MB (53747740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -54,7 +54,7 @@ $ docker pull debian@sha256:db7938f0166438793e6ae184e1769c381296041746c6c9e0d55d
 
 -	Layers:
 	-	`sha256:743581ef5c66eb923060543954fec5d71b08a3ca9851e2826909cded5d7183aa`  
-		Last Modified: Thu, 08 May 2025 20:06:44 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:08:06 GMT  
 		Size: 3.9 MB (3918942 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -77,7 +77,7 @@ RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1745798400'
 
 -	Layers:
 	-	`sha256:72fa46f1d669ee2de1ffbc36b654bfe8dd0aad49156f4143a5d9edd3a5c3d559`  
-		Last Modified: Thu, 08 May 2025 17:18:11 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:16:06 GMT  
 		Size: 49.0 MB (49040048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -97,7 +97,7 @@ $ docker pull debian@sha256:755dcbcd2ffecf402344dcde2fb0ba05ab27db0025342dae45e2
 
 -	Layers:
 	-	`sha256:b33d6bb3a1a711657a1924e952442db7e966b48e18809008b2e85603db8e61eb`  
-		Last Modified: Thu, 08 May 2025 20:06:47 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:16:05 GMT  
 		Size: 3.9 MB (3920491 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -120,7 +120,7 @@ RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1745798400'
 
 -	Layers:
 	-	`sha256:9ce0153b823c3af508e9c8a003aa35daca140e8f4578ff2a451ac20469ea739a`  
-		Last Modified: Thu, 08 May 2025 17:08:39 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:20:53 GMT  
 		Size: 52.2 MB (52245979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -140,7 +140,7 @@ $ docker pull debian@sha256:d25813e4dbd5132f0725c55b98078ed0c02c872d2d957a7bfff1
 
 -	Layers:
 	-	`sha256:a1156ea047e30b9fd7e95e7f7d98f47a254601bba068cfec108d993e3fa9dab4`  
-		Last Modified: Thu, 08 May 2025 20:06:50 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:20:51 GMT  
 		Size: 3.9 MB (3918503 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -163,7 +163,7 @@ RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1745798400'
 
 -	Layers:
 	-	`sha256:4ef50a397f2c0106a3e44d1d1bae16cf52fb5e7e855c588f4098e281321c3e7b`  
-		Last Modified: Thu, 08 May 2025 17:55:44 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:08:10 GMT  
 		Size: 54.7 MB (54683102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -183,6 +183,6 @@ $ docker pull debian@sha256:cb0c979b8b8bb6c8f1201a81ec878f08a8e7018385ba15254bea
 
 -	Layers:
 	-	`sha256:181c3e9ca11696caaf9b40cff3e83f976f3e9c33f7590b9002f89963a8e94046`  
-		Last Modified: Thu, 08 May 2025 20:06:54 GMT  
+		Last Modified: Mon, 28 Apr 2025 21:08:09 GMT  
 		Size: 3.9 MB (3915457 bytes)  
 		MIME: application/vnd.in-toto+json
