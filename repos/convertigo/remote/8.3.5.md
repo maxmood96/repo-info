@@ -171,27 +171,27 @@ CMD ["convertigo"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d02cf78c3c10986b4081e1a4c98a6b7f49a0375f36cc1afc33007aa3b30f17a4`  
-		Last Modified: Mon, 05 May 2025 17:12:04 GMT  
+		Last Modified: Fri, 09 May 2025 10:37:41 GMT  
 		Size: 1.5 MB (1489250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a0d7cfed19b85934950aa306199e87e2bfb2f11d05f6fd542490b66aa75c12d`  
-		Last Modified: Mon, 05 May 2025 17:12:04 GMT  
+		Last Modified: Fri, 09 May 2025 10:37:41 GMT  
 		Size: 4.5 KB (4467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6631b77725a1e6c841b59a69e4eb84b6c637e7b588ac1b2907b3d10832084a7`  
-		Last Modified: Mon, 05 May 2025 17:12:04 GMT  
+		Last Modified: Fri, 09 May 2025 10:37:43 GMT  
 		Size: 28.0 KB (28004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1dece2693fe43b06c7f3f353821b6a5d6831515f71590e213cd953060d58620`  
-		Last Modified: Mon, 05 May 2025 17:12:06 GMT  
+		Last Modified: Fri, 09 May 2025 10:38:01 GMT  
 		Size: 118.7 MB (118654463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c70124dc920cef4b8dc51dfea4885c03b8aff9df9a3d82d736fc5373a175a0f`  
-		Last Modified: Mon, 05 May 2025 17:12:05 GMT  
+		Last Modified: Fri, 09 May 2025 10:37:45 GMT  
 		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:721f279ba9e85f1ee3f4ea723aa9b2351dd2bfe1c57c76a7bfb8d6688d500b06`  
-		Last Modified: Mon, 05 May 2025 17:12:05 GMT  
+		Last Modified: Fri, 09 May 2025 10:37:46 GMT  
 		Size: 2.4 KB (2419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
