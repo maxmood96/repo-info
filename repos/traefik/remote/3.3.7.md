@@ -87,7 +87,7 @@ $ docker pull traefik@sha256:7de324c32821c8724d2c440ca03bc7d299b44fc34aa41a70c32
 
 -	Layers:
 	-	`sha256:d2e0fa5ce9694dc3f1b3ced582ca648c81eae1fbb33b1a5e2aba4847963f8ff5`  
-		Last Modified: Mon, 05 May 2025 17:22:51 GMT  
+		Last Modified: Fri, 09 May 2025 09:21:43 GMT  
 		Size: 824.8 KB (824807 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e0d0635e6b5d5845e997aeb8f35a7b94fee0bbf8d9d121c60482829c1e7ab88`  
@@ -235,7 +235,7 @@ $ docker pull traefik@sha256:2d72bf67c3bf79f063a85719d75c72ed4c868e319097137b74c
 
 -	Layers:
 	-	`sha256:f2bffe1f3bd1df7bef22eb6ca3cbfee724c1515ad1dcd2b4afca4387cec1b985`  
-		Last Modified: Mon, 05 May 2025 20:39:50 GMT  
+		Last Modified: Fri, 09 May 2025 09:21:51 GMT  
 		Size: 824.9 KB (824875 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f991dd41e77744aa4f4fc65ca0342142b1a72d3f39b06368272e22198525668f`  
@@ -287,11 +287,11 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 462.6 KB (462565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8760690f7f2156a0e9fc5f84ed94d991334f377dffe1168631b8676250674f01`  
-		Last Modified: Mon, 05 May 2025 18:50:58 GMT  
+		Last Modified: Fri, 09 May 2025 09:21:55 GMT  
 		Size: 47.7 MB (47731032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5801f8915d8385841d5d7044c624cfca214077bdb6d6f4f89d2f4ce23c331cc1`  
-		Last Modified: Mon, 05 May 2025 18:50:56 GMT  
+		Last Modified: Fri, 09 May 2025 09:21:56 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -311,7 +311,7 @@ $ docker pull traefik@sha256:c4465d4ed8871dd60cd98a2f61c7efef5cb9625c7c30da53970
 
 -	Layers:
 	-	`sha256:37eb1b40d184fcd7affa02da58bd9a222f5e4f63d8a8172f13e6232d3c939b89`  
-		Last Modified: Mon, 05 May 2025 18:50:56 GMT  
+		Last Modified: Fri, 09 May 2025 09:21:57 GMT  
 		Size: 822.9 KB (822896 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dbaae6342ada2d5a4821d470342800da4b88f5cb10d8f629454cb9d410db0fe5`  
@@ -363,11 +363,11 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 460.5 KB (460548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eead1e3323e75e64c6e3fa0462c064ef639cdc59e03c4ca762941112cb4809c9`  
-		Last Modified: Mon, 05 May 2025 20:51:20 GMT  
+		Last Modified: Fri, 09 May 2025 09:22:02 GMT  
 		Size: 52.6 MB (52629660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a9e9a8dd26a1f55a28f0e1b93f215e533cf63716b982b7dd033af48217a955f3`  
-		Last Modified: Mon, 05 May 2025 20:51:12 GMT  
+		Last Modified: Fri, 09 May 2025 09:22:02 GMT  
 		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -387,7 +387,7 @@ $ docker pull traefik@sha256:2af50d818edf9da6399155d0eb309047a94a4dc18e5634b8031
 
 -	Layers:
 	-	`sha256:2f1b0ab0d458e28567f4dfad642a01e2e4e3a19cc5a6d09be47856357d33bbbe`  
-		Last Modified: Mon, 05 May 2025 20:51:13 GMT  
+		Last Modified: Fri, 09 May 2025 09:22:04 GMT  
 		Size: 822.9 KB (822892 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f4049dfdb04923a66a84a84489414357d0be29fdb190db4d5dad347eacb51605`  
@@ -439,11 +439,11 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 461.2 KB (461153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9079e1a281c552e61560a3c97f28920794dd4d960a844e9328fc637397020ac`  
-		Last Modified: Mon, 05 May 2025 17:47:17 GMT  
+		Last Modified: Fri, 09 May 2025 09:22:08 GMT  
 		Size: 52.3 MB (52302567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d60cd42227afc989b967feec18a36ec4861e49d9ef73a1b01d81972e1aaacaa`  
-		Last Modified: Mon, 05 May 2025 17:47:16 GMT  
+		Last Modified: Fri, 09 May 2025 09:22:09 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -463,7 +463,7 @@ $ docker pull traefik@sha256:25a1a7f2a2bc0bf4bc233c40535da8f7e61afe1d5470d76d7cb
 
 -	Layers:
 	-	`sha256:2a97deae364c766e7eb04e90de0ae53169cfa889e61ddb8a694a2435cea9dbcf`  
-		Last Modified: Mon, 05 May 2025 17:47:16 GMT  
+		Last Modified: Fri, 09 May 2025 09:22:11 GMT  
 		Size: 822.9 KB (822856 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:732bb005937c6c6e63a662900d0ebf8e896c20cb9a2fe4c5e05c28851df71baa`  
