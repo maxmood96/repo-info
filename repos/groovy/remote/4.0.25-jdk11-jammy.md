@@ -635,11 +635,11 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 125.6 MB (125597008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f750ebe3c95e1051a52b83fd6cdb85725f56457c7e3a0db9c52ed1e1e0ba5894`  
-		Last Modified: Mon, 05 May 2025 16:36:04 GMT  
+		Last Modified: Fri, 09 May 2025 12:24:03 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:550eed26616ec70aa228d5b98453e915c663599cb479980fb5d69f3d3b5f1664`  
-		Last Modified: Mon, 05 May 2025 16:36:04 GMT  
+		Last Modified: Fri, 09 May 2025 12:24:03 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5cdc728cf26e8a226f6c64dc45ca09be4662396610981c35ecb603fbf15972ee`  
