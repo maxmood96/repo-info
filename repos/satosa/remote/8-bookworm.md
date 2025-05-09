@@ -93,7 +93,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 21.6 MB (21641527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a026dad9350703176f1e46c100343f5800d0674f796eb878aedc793638509b5b`  
-		Last Modified: Mon, 28 Apr 2025 23:12:27 GMT  
+		Last Modified: Fri, 09 May 2025 00:25:24 GMT  
 		Size: 9.9 KB (9925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -101,7 +101,7 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:918aa31771ba23ca796358dd37e4e71273069a27b68c8634ef06a3fb7f851700`  
-		Last Modified: Mon, 28 Apr 2025 23:12:27 GMT  
+		Last Modified: Fri, 09 May 2025 00:25:24 GMT  
 		Size: 2.1 KB (2137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
