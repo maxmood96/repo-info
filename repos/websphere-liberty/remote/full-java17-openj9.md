@@ -126,51 +126,51 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 
 -	Layers:
 	-	`sha256:215ed5a638430309375291c48a01872859a8dbf1331e54ba0af221918eb8ce2e`  
-		Last Modified: Thu, 08 May 2025 17:04:39 GMT  
+		Last Modified: Mon, 28 Apr 2025 10:43:45 GMT  
 		Size: 29.5 MB (29532614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33f177f5db89270b070e1644af124a467a0c875ee09cfc1fa9239b72eea64c0c`  
-		Last Modified: Fri, 09 May 2025 16:44:19 GMT  
+		Last Modified: Fri, 09 May 2025 16:43:44 GMT  
 		Size: 12.2 MB (12172112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f688483665c04fc1d231ea5dbc2ea70ccbc9c8d122bfc6b7e099fb087cf466b2`  
-		Last Modified: Fri, 09 May 2025 16:44:25 GMT  
+		Last Modified: Fri, 09 May 2025 16:43:45 GMT  
 		Size: 51.7 MB (51747279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9b08cf00ef33c315cf466a143b8b007197e30ed1139cf5830bea6d5c390206b`  
-		Last Modified: Fri, 09 May 2025 16:44:18 GMT  
+		Last Modified: Fri, 09 May 2025 16:43:44 GMT  
 		Size: 5.0 MB (4978829 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:afcb708810c886222e89ad9425cd000422de3ba67c9a4f62184bfd2da9120f67`  
-		Last Modified: Fri, 09 May 2025 17:08:46 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:22 GMT  
 		Size: 31.7 KB (31748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:988e72158d47b5fbfee9824749aa132b78a3ec2ce519ae9cbbe761ce5a32a6d0`  
-		Last Modified: Fri, 09 May 2025 17:08:54 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:21 GMT  
 		Size: 17.6 MB (17558305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a89d85cfcf02a3d7e5ebbbfa4c7412fb9f90bf1d5f14a25c4521187f901b2d28`  
-		Last Modified: Fri, 09 May 2025 17:08:49 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:21 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2091cbbcc01ff6026b78670fc7a6dabe29f32dfc22a721285afe3de0babe164c`  
-		Last Modified: Fri, 09 May 2025 17:08:50 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:21 GMT  
 		Size: 1.5 KB (1517 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26bec92fbebe6fbb5e8361615e6c34532103a4ce8a40d01d29708236b15bf6dc`  
-		Last Modified: Fri, 09 May 2025 17:12:09 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:22 GMT  
 		Size: 12.3 KB (12312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd30955f93a3fd134a5492643f34f185673e3a2a7a2cc72a5ff950a0618d38bf`  
-		Last Modified: Fri, 09 May 2025 17:12:09 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:22 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b6d4bf43b6585b325804e38162fbd2ea711057f55da49a4e07d6bedfc639f75`  
-		Last Modified: Fri, 09 May 2025 17:12:08 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:22 GMT  
 		Size: 13.1 KB (13113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb7a758a5a5f267aabfcc2c3676c69fc004867635284cce640daa85aab9c8863`  
-		Last Modified: Fri, 09 May 2025 17:12:09 GMT  
+		Last Modified: Fri, 09 May 2025 17:08:23 GMT  
 		Size: 2.8 MB (2801289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85916c98f346960f3c7ff411daabd88c93fbacf9179e362fe8eb69809f309515`  
@@ -178,11 +178,11 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 358.8 MB (358797214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:15ddf0655200571c5387865a2cd29cf9c5accbb80ff71973f6344111cc0d4dca`  
-		Last Modified: Fri, 09 May 2025 17:23:04 GMT  
+		Last Modified: Fri, 09 May 2025 17:22:30 GMT  
 		Size: 943.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2a7575e81802ec09263b4fce9a669f7498b1dd685c925c23e86ddda0cf1bf10`  
-		Last Modified: Fri, 09 May 2025 17:23:10 GMT  
+		Last Modified: Fri, 09 May 2025 17:22:30 GMT  
 		Size: 16.1 MB (16058644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -202,11 +202,11 @@ $ docker pull websphere-liberty@sha256:dedcfaee7ef99c1ab5d2c13a25d59e60e9d0059ba
 
 -	Layers:
 	-	`sha256:eedd7cd85ecdfb95410e8c6a38517dda891cdfdb2013a4bae324829c575814a0`  
-		Last Modified: Fri, 09 May 2025 18:21:58 GMT  
+		Last Modified: Fri, 09 May 2025 17:22:30 GMT  
 		Size: 5.7 MB (5742901 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a7878eb2ca85bbb49ee84f9a19bee6281a3d59e381f7253a9b3a825fa9bfdc5e`  
-		Last Modified: Fri, 09 May 2025 18:21:59 GMT  
+		Last Modified: Fri, 09 May 2025 17:22:29 GMT  
 		Size: 19.6 KB (19607 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -321,19 +321,19 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 
 -	Layers:
 	-	`sha256:67b06617bd6bbb299a723709813a971289b935f40eaff66a3348adf478cd41f6`  
-		Last Modified: Thu, 08 May 2025 17:05:00 GMT  
+		Last Modified: Mon, 28 Apr 2025 10:43:51 GMT  
 		Size: 27.4 MB (27354211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d78892370879d09e257e1f423fb01169148aa714423fd175a7a3f0933ae6673e`  
-		Last Modified: Thu, 08 May 2025 17:57:19 GMT  
+		Last Modified: Mon, 05 May 2025 17:14:03 GMT  
 		Size: 12.1 MB (12129417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc7f8c0173fa4d332329ca3c755d1add20ca85b82c391edf1736b9a59101a32e`  
-		Last Modified: Thu, 08 May 2025 19:43:52 GMT  
+		Last Modified: Mon, 05 May 2025 17:25:09 GMT  
 		Size: 48.1 MB (48083244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44ed36fbbb689c1368752599cfe3453210646db99e152a0873649088c2ce5f38`  
-		Last Modified: Thu, 08 May 2025 19:44:18 GMT  
+		Last Modified: Mon, 05 May 2025 17:25:08 GMT  
 		Size: 4.8 MB (4751627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3cfe81fd8f26023fc499c60adffddc55f93cf18c9e5d7fcfc1ef575e3bb051f`  
@@ -397,11 +397,11 @@ $ docker pull websphere-liberty@sha256:2084a646817d233bd8874acb736046f0a631daa78
 
 -	Layers:
 	-	`sha256:d9591cbceb6a109184c09aca45e0cc6cee2b5b98e75b9fb0500df059b4048b31`  
-		Last Modified: Fri, 09 May 2025 18:22:04 GMT  
+		Last Modified: Tue, 06 May 2025 02:48:16 GMT  
 		Size: 5.7 MB (5735618 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cc39e0e03f3842a83cf4f9c103b5ed6cbce3533b9af683a3bbbd9631a0470051`  
-		Last Modified: Fri, 09 May 2025 18:22:04 GMT  
+		Last Modified: Tue, 06 May 2025 02:48:15 GMT  
 		Size: 19.7 KB (19691 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -516,19 +516,19 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 
 -	Layers:
 	-	`sha256:95ba4619a43d3f4f7f5ee2c8fbe313d19bb9c0e9ca5fa9efeb7b93f942dcf377`  
-		Last Modified: Thu, 08 May 2025 17:15:30 GMT  
+		Last Modified: Mon, 28 Apr 2025 10:44:03 GMT  
 		Size: 34.4 MB (34443215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a64c9f5a72745f3bafe1231a1d79f060f125195fbcd3f510afac643f962e127`  
-		Last Modified: Fri, 09 May 2025 09:51:07 GMT  
+		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
 		Size: 12.9 MB (12893020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9677fdeccfd840c657a0c5ca3aedec08f8e081f57d3eb19db5b023f0b4fde11`  
-		Last Modified: Fri, 09 May 2025 09:51:08 GMT  
+		Last Modified: Mon, 05 May 2025 17:09:08 GMT  
 		Size: 52.8 MB (52766896 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1dbec2888281f0d01bc1fda642914961fe37b10e676c0891102ed29ac29ca743`  
-		Last Modified: Fri, 09 May 2025 09:51:03 GMT  
+		Last Modified: Mon, 05 May 2025 17:09:06 GMT  
 		Size: 3.8 MB (3796640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5206f986c94f57f8ec1a40693694d5fc6bb2980d532fb0cdd4a49773b3991b16`  
@@ -592,11 +592,11 @@ $ docker pull websphere-liberty@sha256:148e6e3fbf34a947074cec142ee5b56a1efb9cccb
 
 -	Layers:
 	-	`sha256:1a6bf95c3074c1ffeec891c49423d9cd88b80f797ff88fab2bed99f787bc0426`  
-		Last Modified: Fri, 09 May 2025 18:22:09 GMT  
+		Last Modified: Mon, 05 May 2025 22:59:21 GMT  
 		Size: 5.7 MB (5744293 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e96b266af55642f0d3d632893ca7fbf5ab5b86865f45d5469d6eab33cdc324df`  
-		Last Modified: Fri, 09 May 2025 18:22:10 GMT  
+		Last Modified: Mon, 05 May 2025 22:59:19 GMT  
 		Size: 19.6 KB (19636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -711,19 +711,19 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 
 -	Layers:
 	-	`sha256:64d717faaf8dba48ef4989d39eb6faef5fe680871a4064f1753d9cc21de5bc3c`  
-		Last Modified: Thu, 08 May 2025 17:06:03 GMT  
+		Last Modified: Mon, 28 Apr 2025 10:44:16 GMT  
 		Size: 28.0 MB (27999984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:573305c63c6b8034a976ad865f575e2879ba561788a75b917f925a7f6f45b358`  
-		Last Modified: Fri, 09 May 2025 07:53:46 GMT  
+		Last Modified: Mon, 05 May 2025 16:47:08 GMT  
 		Size: 12.2 MB (12219201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:150e1bd3f256bac3fd04c5a82f84852bc1c5aca99a3f0c02bed52977b5e6aa72`  
-		Last Modified: Fri, 09 May 2025 07:54:01 GMT  
+		Last Modified: Mon, 05 May 2025 16:59:31 GMT  
 		Size: 50.6 MB (50552919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41e93befd326802b4b155038790fcfecafd4dd0154ea2346980b4cb9ba89a6e5`  
-		Last Modified: Fri, 09 May 2025 07:53:52 GMT  
+		Last Modified: Mon, 05 May 2025 16:59:30 GMT  
 		Size: 5.1 MB (5116929 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:991506ab811fec058ae8cc0ed02a23bff08316ccc0dade6f2e3a248ae1cc2009`  
@@ -787,10 +787,10 @@ $ docker pull websphere-liberty@sha256:fa94d591ba3f896c0f6705afb9e73b56c96867c21
 
 -	Layers:
 	-	`sha256:258e2849049eef0de9a2aaf61a658199d6b0211793c78aec43e9a1e12bd00531`  
-		Last Modified: Fri, 09 May 2025 18:22:14 GMT  
+		Last Modified: Mon, 05 May 2025 20:49:42 GMT  
 		Size: 5.7 MB (5740827 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:757bd03729497ff017f14df4d91a8ad755a48d9ce8a8a4cfc56ab2b3fc943844`  
-		Last Modified: Fri, 09 May 2025 18:22:14 GMT  
+		Last Modified: Mon, 05 May 2025 20:49:41 GMT  
 		Size: 19.6 KB (19608 bytes)  
 		MIME: application/vnd.in-toto+json
