@@ -45,26 +45,26 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 		Size: 108.8 MB (108752293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65886e4bc86839428ebb3594aa57119afe4f6e2b0b2c4893307d4c34fdb386d2`  
-		Last Modified: Thu, 01 May 2025 16:48:05 GMT  
+		Last Modified: Thu, 08 May 2025 22:54:23 GMT  
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5ca77e35d8dbb1edb4f4de2b6a4f0480bcc7295778c9b1c61e772a921d47de15`  
-		Last Modified: Thu, 01 May 2025 16:48:05 GMT  
+		Last Modified: Thu, 08 May 2025 22:54:23 GMT  
 		Size: 6.5 MB (6478821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:deb2786d37a62d2495660d9a38f9bdbb36c84856895bf5ba0adae35dd44e5e21`  
-		Last Modified: Thu, 01 May 2025 16:48:04 GMT  
+		Last Modified: Thu, 08 May 2025 22:54:23 GMT  
 		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2654cee3140e59825c237b4d656aa7ca726756428feda8cbf56491a79a62ad39`  
-		Last Modified: Thu, 01 May 2025 16:48:04 GMT  
+		Last Modified: Thu, 08 May 2025 22:54:23 GMT  
 		Size: 1.1 KB (1081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bc2c0d17001c7a0a4c5f6d89bedd97f81d9944bad261987178826573d37549ea`  
-		Last Modified: Thu, 01 May 2025 16:48:04 GMT  
+		Last Modified: Thu, 08 May 2025 22:54:23 GMT  
 		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e8e6963ed08110da1a824e61ca4f5bbe320457796a1b0bc6e4c4c7324cfb7ea`  
-		Last Modified: Thu, 01 May 2025 16:48:04 GMT  
+		Last Modified: Thu, 08 May 2025 22:54:23 GMT  
 		Size: 1.1 KB (1090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
