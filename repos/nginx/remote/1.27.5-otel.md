@@ -115,11 +115,11 @@ $ docker pull nginx@sha256:0f78e2c266df1b2183ec08607edb171e78496b3a367cb913e5d29
 
 -	Layers:
 	-	`sha256:9cd2784ec9c244a84d871eb4631dfa459e694a33456db970bbb4cd97ee4fe264`  
-		Last Modified: Mon, 28 Apr 2025 22:14:10 GMT  
+		Last Modified: Fri, 09 May 2025 14:39:42 GMT  
 		Size: 3.0 MB (2967055 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b5eec33fc460e63fa73bbf2adef78ef7fab52234253acf6b4c5b72364b6b7eba`  
-		Last Modified: Mon, 28 Apr 2025 22:14:09 GMT  
+		Last Modified: Fri, 09 May 2025 14:39:41 GMT  
 		Size: 24.4 KB (24390 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -227,10 +227,10 @@ $ docker pull nginx@sha256:cf42889184d0c71c5c5e6b1d23a79f3870b63d8f6d6e9ad8faf48
 
 -	Layers:
 	-	`sha256:c435d1e117ec00160f3e0d5beba999433cebeaaa51928d4357b73b4465762fb3`  
-		Last Modified: Tue, 29 Apr 2025 18:22:45 GMT  
+		Last Modified: Fri, 09 May 2025 14:39:41 GMT  
 		Size: 3.0 MB (2967507 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a2fb91fffa82ebc120cc84140595df9831a9275b31e04bce598568079be00a1`  
-		Last Modified: Tue, 29 Apr 2025 18:22:45 GMT  
+		Last Modified: Fri, 09 May 2025 14:39:41 GMT  
 		Size: 24.6 KB (24566 bytes)  
 		MIME: application/vnd.in-toto+json
