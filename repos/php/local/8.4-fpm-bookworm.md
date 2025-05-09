@@ -1,9 +1,9 @@
-# `php:8.4.6-fpm-bookworm`
+# `php:8.4.7-fpm-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:908736f811f2c6813dbf6000be0f75d4840f02ad2cfafa79ccaa1dd02814f631`
-- Created: `2025-04-10T21:29:12Z`
+- Image ID: `sha256:4422f38e20b61852051fa6f33cb0aa5939533233932ca68348766d4a71fe45e7`
+- Created: `2025-05-08T18:45:09Z`
 - Virtual Size: ~ 503.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
-  - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
+  - `PHP_VERSION=8.4.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.7.tar.xz.asc`
+  - `PHP_SHA256=e29f4c23be2816ed005aa3f06bbb8eae0f22cc133863862e893515fc841e65e3`
 
 ## `dpkg` (`.deb`-based packages)
 
