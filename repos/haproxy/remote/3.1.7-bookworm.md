@@ -451,7 +451,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 9.7 MB (9725729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68f0407070c5ecd15cbc637c3813e8127c09e1ed4923fbd9a4193aa243990c02`  
-		Last Modified: Mon, 28 Apr 2025 21:43:06 GMT  
+		Last Modified: Fri, 09 May 2025 17:29:25 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
