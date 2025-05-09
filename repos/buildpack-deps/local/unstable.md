@@ -4429,21 +4429,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.0p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-2.dsc' openssh_10.0p1-2.dsc 3500 SHA256:e67c945e39cefe5d38f1dbd6d122ca2b17193e65788bf48c4d36f7c5b5f1c57c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-2.debian.tar.xz' openssh_10.0p1-2.debian.tar.xz 198240 SHA256:9d08fe1de56fe63dbf1c17a4ecc79f3584b9f0d9690f4d709b0d3e3a812ef210
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.0p1-2/
 
-- https://sources.debian.net/src/openssh/1:10.0p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.0p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.0p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.0-1`
 
@@ -4815,20 +4807,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.4-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.4-2.dsc' postgresql-17_17.4-2.dsc 4245 SHA256:bf413b32dad845f8acd3b3d7838852d6c7a243c1b2dd89d185addd31a6448252
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.4.orig.tar.bz2' postgresql-17_17.4.orig.tar.bz2 21519810 SHA256:c4605b73fea11963406699f949b966e5d173a7ee0ccaef8938dec0ca8a995fe7
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.4-2.debian.tar.xz' postgresql-17_17.4-2.debian.tar.xz 27452 SHA256:2eb3872a3c528aa46a41bb25130fe718727a6d6d759ca8ec23f2913f8d171600
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.4-2/
 
-- https://sources.debian.net/src/postgresql-17/17.4-2/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-8`
 

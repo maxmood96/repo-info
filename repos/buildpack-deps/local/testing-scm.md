@@ -1024,21 +1024,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.7-15
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7-15.dsc' gnupg2_2.4.7-15.dsc 3384 SHA256:cb0899c79a5bfe244b4d52d073268a7c907eed2749ca7b39f5a27eb6a6fb510d
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7.orig.tar.bz2' gnupg2_2.4.7.orig.tar.bz2 8010244 SHA256:7b24706e4da7e0e3b06ca068231027401f238102c41c909631349dcc3b85eb46
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7.orig.tar.bz2.asc' gnupg2_2.4.7.orig.tar.bz2.asc 390 SHA256:cec7da75dab60e3e2f6bf92ed1174126a1e5a1cc5e448f9e004a23be2dd227f6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7-15.debian.tar.xz' gnupg2_2.4.7-15.debian.tar.xz 107744 SHA256:04d3cc873403aba3a5e796dd07ecc7a2c69c827d24ad47faa6729bf69cad8be0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.4.7-15/
 
-- https://sources.debian.net/src/gnupg2/2.4.7-15/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.4.7-15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.4.7-15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.9-2`
 
@@ -2108,21 +2100,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.9.5-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.5-1.dsc' mercurial_6.9.5-1.dsc 2826 SHA256:d3a54b3db58b6f87625332f2c8dca6c19c01417083852ebf87ca635b5ef11c60
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.5.orig.tar.gz' mercurial_6.9.5.orig.tar.gz 8922574 SHA256:d3f22aeef9e9dcd6e562132950226c2c955d35271bd00a01481efca2b1cc65fd
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.5.orig.tar.gz.asc' mercurial_6.9.5.orig.tar.gz.asc 659 SHA256:6dced9fffab5df4ba2c7d27150a8b45659ef87816ff0bd4b881d9d983eac493c
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.5-1.debian.tar.xz' mercurial_6.9.5-1.debian.tar.xz 55596 SHA256:7868f7a171f6ebb1ec1a70bd5a96e547525e665277ff498852e352517dc01363
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.9.5-1/
 
-- https://sources.debian.net/src/mercurial/6.9.5-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.9.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.9.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5+20250216-2`
 
