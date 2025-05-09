@@ -1,10 +1,10 @@
-# `wordpress:cli-2.11.0-php8.4`
+# `wordpress:cli-2.12.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c442180f3fd189cdd553240357aca208c42df1e82e60cc5b098a9775432d04e3`
-- Created: `2025-04-10T22:16:57Z`
-- Virtual Size: ~ 200.38 Mb  
+- Image ID: `sha256:8add464c2927ad131d80e1aef38d0cbc73c490c8f48b44f2f1467534cdba9642`
+- Created: `2025-05-07T07:03:15Z`
+- Virtual Size: ~ 185.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,14 +16,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.6.tar.xz.asc`
-  - `PHP_SHA256=089b08a5efef02313483325f3bacd8c4fe311cf1e1e56749d5cc7d059e225631`
+  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
+  - `PHP_VERSION=8.2.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc`
+  - `PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
-  - `WORDPRESS_CLI_VERSION=2.11.0`
-  - `WORDPRESS_CLI_SHA512=adb12146bab8d829621efed41124dcd0012f9027f47e0228be7080296167566070e4a026a09c3989907840b21de94b7a35f3bfbd5f827c12f27c5803546d1bba`
+  - `WORDPRESS_CLI_VERSION=2.12.0`
+  - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
 
 ## `apk` (`.apk`-based packages)
 
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.5-r0 description:
+c-ares-1.34.3-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.5-r0 webpage:
+c-ares-1.34.3-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.5-r0 installed size:
-233 KiB
+c-ares-1.34.3-r0 installed size:
+229 KiB
 
-c-ares-1.34.5-r0 license:
+c-ares-1.34.3-r0 license:
 MIT
 
 ```
@@ -285,16 +285,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r1 description:
+curl-8.12.1-r0 description:
 URL retrival utility and library
 
-curl-8.12.1-r1 webpage:
+curl-8.12.1-r0 webpage:
 https://curl.se/
 
-curl-8.12.1-r1 installed size:
+curl-8.12.1-r0 installed size:
 246 KiB
 
-curl-8.12.1-r1 license:
+curl-8.12.1-r0 license:
 curl
 
 ```
@@ -523,16 +523,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r1 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r1 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r1 installed size:
+libcurl-8.12.1-r0 installed size:
 628 KiB
 
-libcurl-8.12.1-r1 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
