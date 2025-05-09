@@ -51,27 +51,27 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:0a9a5dfd008f05ebc27e4790db0709a29e527690c21bcbcd01481eaeb6bb49dc`  
-		Last Modified: Fri, 14 Feb 2025 14:35:06 GMT  
+		Last Modified: Fri, 14 Feb 2025 12:05:36 GMT  
 		Size: 3.6 MB (3626897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb66ce059e2c58cd1bca56470e6a25e8e94d630ab09f2c0cc3141d879c460143`  
-		Last Modified: Sat, 15 Feb 2025 00:26:38 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:06 GMT  
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ff82a75234ac7a2c67a34f6e7192f115d5e12e206035e59917e47237ca12cae`  
-		Last Modified: Sat, 15 Feb 2025 00:26:38 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:06 GMT  
 		Size: 296.5 KB (296501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01f13695363bccb9f665399c139ff913d5a2ed7e4ee6208ef774f829ea457c6c`  
-		Last Modified: Sat, 15 Feb 2025 00:26:43 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:08 GMT  
 		Size: 72.0 MB (71980833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:667ef208e5bab47062223cab49f2e19071361ea8eedad28a206903e51d10b243`  
-		Last Modified: Sat, 15 Feb 2025 00:26:38 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:07 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f630e2ff04bbb88b3e31e88074207828bdf03061654955964de05e394c36e557`  
-		Last Modified: Sat, 15 Feb 2025 00:26:39 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:07 GMT  
 		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -91,10 +91,10 @@ $ docker pull kapacitor@sha256:7739053a142992f3b94e50635d0eb198c83110a26140d4b75
 
 -	Layers:
 	-	`sha256:584b24fbdeb04a9522b2ac6b8dcd6834cd4ed8406d9f9d3c986d800cc727731d`  
-		Last Modified: Fri, 14 Feb 2025 23:21:21 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:06 GMT  
 		Size: 368.3 KB (368333 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b16553670a0a3cb59971f6f10e1686b74c1a3804c0b81eb3d9860df537a4c177`  
-		Last Modified: Fri, 14 Feb 2025 23:21:22 GMT  
+		Last Modified: Fri, 14 Feb 2025 19:13:06 GMT  
 		Size: 15.7 KB (15683 bytes)  
 		MIME: application/vnd.in-toto+json
