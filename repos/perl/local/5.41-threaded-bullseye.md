@@ -1,13 +1,13 @@
-# `perl:5.41.10-threaded-bullseye`
+# `perl:5.41.12-threaded-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:67bdf30f15a7e595a89bca5714743b05de06fdee8ca04e8e4bec978c13862d90`
-- Created: `2025-04-14T09:33:51Z`
-- Virtual Size: ~ 893.53 Mb  
+- Image ID: `sha256:9b0e9676642996cd456e41cc5e82480ef52ee1c2ec7fef5fe4fcfc4ee7a6f69e`
+- Created: `2025-05-06T02:04:37Z`
+- Virtual Size: ~ 895.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.41.10","-de0"]`
+- Command: `["perl5.41.12","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -3862,21 +3862,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.5=1:10.5.28-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28-0%2bdeb11u1.dsc' mariadb-10.5_10.5.28-0+deb11u1.dsc 4814 SHA256:1a840414dfb7ff1c3eef55cb32632be765748486f828a9b79dd6e2a22b89936a
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28.orig.tar.gz' mariadb-10.5_10.5.28.orig.tar.gz 117755203 SHA256:0b5070208da0116640f20bd085f1136527f998cc23268715bcbf352e7b7f3cc1
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28.orig.tar.gz.asc' mariadb-10.5_10.5.28.orig.tar.gz.asc 833 SHA256:fc65c8ed3994de259df0c06fd20a6552f99037c4946c446751d0815271848be7
-'http://deb.debian.org/debian-security/pool/updates/main/m/mariadb-10.5/mariadb-10.5_10.5.28-0%2bdeb11u1.debian.tar.xz' mariadb-10.5_10.5.28-0+deb11u1.debian.tar.xz 221360 SHA256:358c2bb75efd2e5ab0749c7a7e5cd45a6a6f41e2044608ead88f54e0a79c21cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.5/1:10.5.28-0+deb11u1/
 
-- https://sources.debian.net/src/mariadb-10.5/1:10.5.28-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.5/1:10.5.28-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.5/1:10.5.28-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-2`
 
@@ -4342,21 +4334,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u4
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u4.dsc' openssh_8.4p1-5+deb11u4.dsc 3270 SHA256:1c6e25883d9a0928d2322a4226c97a4a19b8e32e0667c7eee68e3b9d449b5f40
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u4.debian.tar.xz' openssh_8.4p1-5+deb11u4.debian.tar.xz 187604 SHA256:fa28faa0150608036fb0114d5c0c6cd5caabff073c5e0f70a3c60ac1915e1056
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u4/
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u2`
 
@@ -4721,20 +4705,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.20-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20-0%2bdeb11u1.dsc' postgresql-13_13.20-0+deb11u1.dsc 3703 SHA256:b52c3cffcd407eb8ce02c44f98a27a39f698fc21ba16a52984f8fd7fe12b7a81
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20.orig.tar.bz2' postgresql-13_13.20.orig.tar.bz2 21730844 SHA256:8134b685724d15e60d93bea206fbe0f14c8295e84f1cc91d5a3928163e4fb288
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.20-0+deb11u1.debian.tar.xz 36140 SHA256:13b02d231c1974a46240ba85d5d86aa89585744758e5c1100ce29ddbe36ef48a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.20-0+deb11u1/
 
-- https://sources.debian.net/src/postgresql-13/13.20-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.20-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.20-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
