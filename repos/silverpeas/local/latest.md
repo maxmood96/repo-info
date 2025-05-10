@@ -3526,19 +3526,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL_2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:7.3.7-0ubuntu0.22.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.9.dsc' libreoffice_7.3.7-0ubuntu0.22.04.9.dsc 25782 SHA512:b69951ce922f0eb604fd3917c2c853d8b3f633306e848df0775963c7c069d914c8170df7db1612d801bffc8142ecac1b43c37108d8f991b9e0408cf7ad1de88d
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-helpcontent2.tar.xz' libreoffice_7.3.7.orig-helpcontent2.tar.xz 112067652 SHA512:5f29783b6483824a61c700ad7516a97e69373498ca7dcbe0e24229246d2bd0fb24a2c9e555107af21b9eed35c504f0b65c4e5b5a2aadb79de1a4fa8b21e2bc98
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-tarballs.tar.xz' libreoffice_7.3.7.orig-tarballs.tar.xz 324661956 SHA512:d13cc4817a4fb298049f0306599cf25dee5906a920871c5ef58cdea9019e49580587b51c8af29946eea2d9720ca5f66ee9e2bc8a67ff7d2b1b8377bc02930521
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-translations.tar.xz' libreoffice_7.3.7.orig-translations.tar.xz 208926792 SHA512:d9895f425c7d5928915858af4d560db0b6380477b87add69c103789b4eff3b169360164609c480b9b5591a69f4130b4c77a0741b00b839126d7ce03cbcd4a6f9
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-yaru.tar.xz' libreoffice_7.3.7.orig-yaru.tar.xz 19257660 SHA512:a3bb9e04992224dba3f0a1a2edcf59a06b1c6dfaf71ef8de1fff87f7f6ade96a4557f171f374bc29e661765ef56d2f72e41c574b983d0fa9c3e3acf84439ba03
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz' libreoffice_7.3.7.orig.tar.xz 256653492 SHA512:f7b6279f5ef9f5ad8290d2bdf4fd54f8df7775a21094ba762dbd9299effab31d4f2c6dff9f4b3d9c5673596931df1d16b195474b547007bfc9a396c47e5e181c
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz.asc' libreoffice_7.3.7.orig.tar.xz.asc 833 SHA512:d3cf63b93c397cdf5ecee84b4e544855f5783092fc1e06e6cf798a4a2c908ae389e0111b40828adbeab3f878db1e831ebd0daa50597bc0ff4b27be7b8acdd089
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.9.debian.tar.xz' libreoffice_7.3.7-0ubuntu0.22.04.9.debian.tar.xz 2414828 SHA512:90fa97802b20c5cd2da084e1fb9715c3e8006e27cbf72a39a1549601ba9bf0ebe55eedaf3d0d9cb731a514f80cab0395b843bfc8f9082926d149fe85f459f14a
-```
 
 ### `dpkg` source package: `librevenge=0.0.4-6ubuntu7`
 
