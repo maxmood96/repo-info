@@ -4337,21 +4337,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u4
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u4.dsc' openssh_8.4p1-5+deb11u4.dsc 3270 SHA256:1c6e25883d9a0928d2322a4226c97a4a19b8e32e0667c7eee68e3b9d449b5f40
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u4.debian.tar.xz' openssh_8.4p1-5+deb11u4.debian.tar.xz 187604 SHA256:fa28faa0150608036fb0114d5c0c6cd5caabff073c5e0f70a3c60ac1915e1056
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u4/
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u2`
 
@@ -4716,20 +4708,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.20-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20-0%2bdeb11u1.dsc' postgresql-13_13.20-0+deb11u1.dsc 3703 SHA256:b52c3cffcd407eb8ce02c44f98a27a39f698fc21ba16a52984f8fd7fe12b7a81
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20.orig.tar.bz2' postgresql-13_13.20.orig.tar.bz2 21730844 SHA256:8134b685724d15e60d93bea206fbe0f14c8295e84f1cc91d5a3928163e4fb288
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.20-0+deb11u1.debian.tar.xz 36140 SHA256:13b02d231c1974a46240ba85d5d86aa89585744758e5c1100ce29ddbe36ef48a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.20-0+deb11u1/
 
-- https://sources.debian.net/src/postgresql-13/13.20-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.20-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.20-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
