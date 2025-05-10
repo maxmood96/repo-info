@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:71e7da5120f79c34399d628326e6939420f729583ddde0e66509b3266c421290`
+- Image ID: `sha256:2da82cbda4f401446068c8433a002acd5185ddfbe75f65d4b61515e96083fd5f`
 - Created: `2025-04-15T17:15:48Z`
-- Virtual Size: ~ 760.43 Mb  
+- Virtual Size: ~ 760.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.20.tar.xz.asc`
-  - `PHP_SHA256=f15914e071b5bddaf1475b5f2ba68107e8b8846655f9e89690fb7cd410b0db6c`
+  - `PHP_VERSION=8.3.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
+  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.3.0`
   - `JOOMLA_SHA512=d3eb711171cff3e04cfb108450231ebc7892499729466c479d0a36cef3637f0cc016beab7beb965add93050f256ac08940e51c709b89107ce36e2038a55d2438`
