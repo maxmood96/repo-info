@@ -1,10 +1,10 @@
-# `hylang:1.0.0-python3.13-alpine3.21`
+# `hylang:1.1.0-python3.13-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a19592d9f78a7fd91d4977bb81eb70763bc135222cc7b4841625f7e9bb9839d`
-- Created: `2025-03-19T17:54:43Z`
-- Virtual Size: ~ 56.40 Mb  
+- Image ID: `sha256:20b1aa22c7bd21cd0978862b1929e08f63318fdb2d4ffb8b0945abd7b467c91a`
+- Created: `2025-05-09T15:36:44Z`
+- Virtual Size: ~ 56.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -13,7 +13,7 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.13.3`
   - `PYTHON_SHA256=40f868bcbdeb8149a3149580bb9bfd407b3321cd48f0be631af955ac92c0e041`
-  - `HY_VERSION=1.0.0`
+  - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
 ## `apk` (`.apk`-based packages)
@@ -293,16 +293,16 @@ Apache-2.0
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.4-r0 description:
+libuuid-2.40.4-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.4-r0 webpage:
+libuuid-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.4-r0 installed size:
+libuuid-2.40.4-r1 installed size:
 29 KiB
 
-libuuid-2.40.4-r0 license:
+libuuid-2.40.4-r1 license:
 BSD-3-Clause
 
 ```
@@ -395,16 +395,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```

@@ -1,10 +1,10 @@
-# `hylang:1.0.0-python3.10-alpine3.20`
+# `hylang:1.1.0-python3.10-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f362642cca4dc967522966a0f78e76954fd4d4f04c46fc92e39f4d3df2c4122d`
-- Created: `2025-03-19T17:54:43Z`
-- Virtual Size: ~ 61.36 Mb  
+- Image ID: `sha256:4fe651c35f2093b22f4748e38ebd2a58950c895a0f8528e3632fd8df30cfb8b0`
+- Created: `2025-05-09T15:36:44Z`
+- Virtual Size: ~ 61.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -14,7 +14,7 @@
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.10.17`
   - `PYTHON_SHA256=4c68050f049d1b4ac5aadd0df5f27941c0350d2a9e7ab0907ee5eb5225d9d6b0`
-  - `HY_VERSION=1.0.0`
+  - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
 ## `apk` (`.apk`-based packages)
@@ -532,16 +532,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.45.3-r1 description:
+sqlite-libs-3.45.3-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.45.3-r1 webpage:
+sqlite-libs-3.45.3-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.45.3-r1 installed size:
+sqlite-libs-3.45.3-r2 installed size:
 1428 KiB
 
-sqlite-libs-3.45.3-r1 license:
+sqlite-libs-3.45.3-r2 license:
 blessing
 
 ```

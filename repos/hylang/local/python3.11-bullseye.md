@@ -1,10 +1,10 @@
-# `hylang:1.0.0-python3.11-bullseye`
+# `hylang:1.1.0-python3.11-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:715f18ff42b7ad192b450dd175d9b27d4753228771cbac760ca28e768cac7b9f`
-- Created: `2025-03-19T17:54:43Z`
-- Virtual Size: ~ 143.07 Mb  
+- Image ID: `sha256:3a41af68ca80656bac9684439dd92da44ade806285f0ab553b7798fce3273ef5`
+- Created: `2025-05-09T15:36:44Z`
+- Virtual Size: ~ 155.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -14,7 +14,7 @@
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.11.12`
   - `PYTHON_SHA256=849da87af4df137710c1796e276a955f7a85c9f971081067c8f565d15c352a09`
-  - `HY_VERSION=1.0.0`
+  - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -671,9 +671,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u11`
-- `libc6:amd64=2.31-13+deb11u11`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -692,6 +691,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.31-13+deb11u11/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.31-13+deb11u11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.31-13+deb11u11/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.31-13+deb11u12`
+
+Binary Packages:
+
+- `libc6:amd64=2.31-13+deb11u12`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u12
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.dsc' glibc_2.31-13+deb11u12.dsc 8351 SHA256:951f398a425b3d63f52e9969300d7e8b2c05b2b8fd09ecae289bf542b5d9c881
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.debian.tar.xz' glibc_2.31-13+deb11u12.debian.tar.xz 968580 SHA256:0e0c05529ade55a0c6e2d4aae374b1a90a163ba45c4bcaef814aa6d1fe6f6854
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.31-13+deb11u12/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 

@@ -1,9 +1,9 @@
-# `hylang:1.0.0-pypy3.11-bookworm`
+# `hylang:1.1.0-pypy3.11-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2cd50912f39d1da5e67ec82a80a08540cf9be1cbcb6bda12fb8ebe0b835aaac8`
-- Created: `2025-03-19T17:54:43Z`
+- Image ID: `sha256:047d09c072779cba7329f3baad6102b2ae5ee5dac9f52035674c4e516569cb43`
+- Created: `2025-05-09T15:36:44Z`
 - Virtual Size: ~ 224.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=7.3.19`
-  - `HY_VERSION=1.0.0`
+  - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
 ## `dpkg` (`.deb`-based packages)

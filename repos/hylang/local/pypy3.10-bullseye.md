@@ -1,9 +1,9 @@
-# `hylang:1.0.0-pypy3.10-bullseye`
+# `hylang:1.1.0-pypy3.10-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:164dc657127587b7ad4fb9f80da80526cc45e48ef9299d55967ffd752da6d762`
-- Created: `2025-03-19T17:54:43Z`
+- Image ID: `sha256:262afcb9ab0d16e6ee5f032e830507d5373e170842171fec35a855207fa28d23`
+- Created: `2025-05-09T15:36:44Z`
 - Virtual Size: ~ 222.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=7.3.19`
-  - `HY_VERSION=1.0.0`
+  - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
 ## `dpkg` (`.deb`-based packages)
