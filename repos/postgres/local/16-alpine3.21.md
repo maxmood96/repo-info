@@ -1,10 +1,10 @@
-# `postgres:16.8-alpine3.21`
+# `postgres:16.9-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2875f9e036c28b7bf74dd744e8fcc091b9ff8551f11e8779265439d5a068734d`
-- Created: `2025-02-27T00:53:12Z`
-- Virtual Size: ~ 275.35 Mb  
+- Image ID: `sha256:b56133b65cd327b22cd183d6cea183ffbacd35520b6418f1d01d89b4579caff4`
+- Created: `2025-05-08T18:32:48Z`
+- Virtual Size: ~ 275.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=16`
-  - `PG_VERSION=16.8`
-  - `PG_SHA256=9468083a56ce0ee7d294601b74dad3dd9fc69d87aff61f0a9fb63c813ff7efd8`
+  - `PG_VERSION=16.9`
+  - `PG_SHA256=07c00fb824df0a0c295f249f44691b86e3266753b380c96f633c3311e10bd005`
   - `DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -483,16 +483,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.4-r0 description:
+libuuid-2.40.4-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.4-r0 webpage:
+libuuid-2.40.4-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.4-r0 installed size:
+libuuid-2.40.4-r1 installed size:
 29 KiB
 
-libuuid-2.40.4-r0 license:
+libuuid-2.40.4-r1 license:
 BSD-3-Clause
 
 ```
@@ -517,16 +517,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```
@@ -534,16 +534,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.42-r1 description:
+libxslt-1.1.42-r2 description:
 XML stylesheet transformation library
 
-libxslt-1.1.42-r1 webpage:
+libxslt-1.1.42-r2 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.42-r1 installed size:
+libxslt-1.1.42-r2 installed size:
 325 KiB
 
-libxslt-1.1.42-r1 license:
+libxslt-1.1.42-r2 license:
 X11
 
 ```
@@ -551,16 +551,16 @@ X11
 ### `apk` package: `llvm19-libs`
 
 ```console
-llvm19-libs-19.1.4-r0 description:
+llvm19-libs-19.1.4-r1 description:
 LLVM 19 runtime library
 
-llvm19-libs-19.1.4-r0 webpage:
+llvm19-libs-19.1.4-r1 webpage:
 https://llvm.org/
 
-llvm19-libs-19.1.4-r0 installed size:
+llvm19-libs-19.1.4-r1 installed size:
 153 MiB
 
-llvm19-libs-19.1.4-r0 license:
+llvm19-libs-19.1.4-r1 license:
 Apache-2.0
 
 ```
@@ -704,16 +704,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -721,16 +721,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.3-r0 description:
+xz-libs-5.6.3-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.3-r0 webpage:
+xz-libs-5.6.3-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.3-r0 installed size:
+xz-libs-5.6.3-r1 installed size:
 221 KiB
 
-xz-libs-5.6.3-r0 license:
+xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

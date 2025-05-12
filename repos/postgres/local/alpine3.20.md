@@ -1,10 +1,10 @@
-# `postgres:17.4-alpine3.20`
+# `postgres:17.5-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e6b377122b82566253bfc09a100349df57e01ef2ac25c0943a89e9917a3aa23`
-- Created: `2025-02-27T00:53:12Z`
-- Virtual Size: ~ 248.75 Mb  
+- Image ID: `sha256:06765a29a8a7bba487558c00c5b9509b83fa667b34164d6921fb035cb7dd9844`
+- Created: `2025-05-08T18:32:48Z`
+- Virtual Size: ~ 249.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=17`
-  - `PG_VERSION=17.4`
-  - `PG_SHA256=c4605b73fea11963406699f949b966e5d173a7ee0ccaef8938dec0ca8a995fe7`
+  - `PG_VERSION=17.5`
+  - `PG_SHA256=fcb7ab38e23b264d1902cb25e6adafb4525a6ebcbd015434aeef9eda80f528d8`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -500,16 +500,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.12.7-r0 description:
+libxml2-2.12.7-r2 description:
 XML parsing library, version 2
 
-libxml2-2.12.7-r0 webpage:
+libxml2-2.12.7-r2 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.12.7-r0 installed size:
+libxml2-2.12.7-r2 installed size:
 1088 KiB
 
-libxml2-2.12.7-r0 license:
+libxml2-2.12.7-r2 license:
 MIT
 
 ```
@@ -517,16 +517,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.39-r1 description:
+libxslt-1.1.39-r2 description:
 XML stylesheet transformation library
 
-libxslt-1.1.39-r1 webpage:
+libxslt-1.1.39-r2 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.39-r1 installed size:
+libxslt-1.1.39-r2 installed size:
 352 KiB
 
-libxslt-1.1.39-r1 license:
+libxslt-1.1.39-r2 license:
 X11
 
 ```
@@ -534,16 +534,16 @@ X11
 ### `apk` package: `llvm15-libs`
 
 ```console
-llvm15-libs-15.0.7-r13 description:
+llvm15-libs-15.0.7-r14 description:
 LLVM 15 runtime library
 
-llvm15-libs-15.0.7-r13 webpage:
+llvm15-libs-15.0.7-r14 webpage:
 https://llvm.org/
 
-llvm15-libs-15.0.7-r13 installed size:
+llvm15-libs-15.0.7-r14 installed size:
 123 MiB
 
-llvm15-libs-15.0.7-r13 license:
+llvm15-libs-15.0.7-r14 license:
 Apache-2.0
 
 ```
@@ -687,16 +687,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-1512 KiB
+tzdata-2025b-r0 installed size:
+1516 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
@@ -704,16 +704,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.2-r0 description:
+xz-libs-5.6.2-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.2-r0 webpage:
+xz-libs-5.6.2-r1 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.6.2-r0 installed size:
+xz-libs-5.6.2-r1 installed size:
 236 KiB
 
-xz-libs-5.6.2-r0 license:
+xz-libs-5.6.2-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
