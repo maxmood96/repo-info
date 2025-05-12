@@ -1,10 +1,10 @@
-# `drupal:10.4.6-php8.3-apache-bookworm`
+# `drupal:10.4.7-php8.3-apache-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f2906175ae391d21c7f80cbea849a86766877231c13689bca7b13b40c2f16cbb`
-- Created: `2025-04-03T03:27:18Z`
-- Virtual Size: ~ 605.32 Mb  
+- Image ID: `sha256:8204dfeab3f3c9f226fe64f51c03ecf75b89c3128450f7d96af8c19d9e7ee146`
+- Created: `2025-05-08T09:27:20Z`
+- Virtual Size: ~ 605.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -19,11 +19,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.20.tar.xz.asc`
-  - `PHP_SHA256=f15914e071b5bddaf1475b5f2ba68107e8b8846655f9e89690fb7cd410b0db6c`
-  - `DRUPAL_VERSION=10.4.6`
+  - `PHP_VERSION=8.3.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
+  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
+  - `DRUPAL_VERSION=10.4.7`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
