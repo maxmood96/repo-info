@@ -1355,21 +1355,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.75-6
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-6.dsc' libcap2_2.75-6.dsc 2679 SHA256:33f4a9056ec81e7f982ef30b7eb5f921c9e664720ca829871ea7d841bfd0b9c1
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz' libcap2_2.75.orig.tar.xz 197868 SHA256:de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz.asc' libcap2_2.75.orig.tar.xz.asc 833 SHA256:c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-6.debian.tar.xz' libcap2_2.75-6.debian.tar.xz 22432 SHA256:6092e100a9dc1e4b51066a65866773c7a3f921255054f23a4c481f13916a1ab8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap2/1:2.75-6/
 
-- https://sources.debian.net/src/libcap2/1:2.75-6/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.75-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.75-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcbor=0.10.2-2`
 
@@ -3112,21 +3104,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-2.dsc' tzdata_2025b-2.dsc 2434 SHA256:3d1355d6c2bab50ec3f017d9a844513f7267ab30b927292c1c3cf347c538fd94
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-2.debian.tar.xz' tzdata_2025b-2.debian.tar.xz 126780 SHA256:891fa918c7613fcc459397c188e50d279e712f76625086a67581681bd98fddcb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-2/
 
-- https://sources.debian.net/src/tzdata/2025b-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0051`
 
