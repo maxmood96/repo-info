@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c36168b7e2f8e705953739f2f9cf5a8cae902715aa768fa3ec0ecafe2fc9fe1`
+- Image ID: `sha256:07f99e058e3bfbc7f1f380760be7a996e4cff334b79263ed650066788da204e5`
 - Created: `2025-05-07T07:03:15Z`
-- Virtual Size: ~ 192.29 Mb  
+- Virtual Size: ~ 192.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.20.tar.xz.asc`
-  - `PHP_SHA256=f15914e071b5bddaf1475b5f2ba68107e8b8846655f9e89690fb7cd410b0db6c`
+  - `PHP_VERSION=8.3.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
+  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -1135,16 +1135,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```
