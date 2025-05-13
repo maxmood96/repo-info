@@ -9,10 +9,14 @@
 -	[`clojure:lein-2.11.2-bookworm-slim`](#clojurelein-2112-bookworm-slim)
 -	[`clojure:lein-2.11.2-bullseye`](#clojurelein-2112-bullseye)
 -	[`clojure:lein-2.11.2-bullseye-slim`](#clojurelein-2112-bullseye-slim)
+-	[`clojure:lein-2.11.2-trixie`](#clojurelein-2112-trixie)
+-	[`clojure:lein-2.11.2-trixie-slim`](#clojurelein-2112-trixie-slim)
 -	[`clojure:lein-bookworm`](#clojurelein-bookworm)
 -	[`clojure:lein-bookworm-slim`](#clojurelein-bookworm-slim)
 -	[`clojure:lein-bullseye`](#clojurelein-bullseye)
 -	[`clojure:lein-bullseye-slim`](#clojurelein-bullseye-slim)
+-	[`clojure:lein-trixie`](#clojurelein-trixie)
+-	[`clojure:lein-trixie-slim`](#clojurelein-trixie-slim)
 -	[`clojure:temurin-11-alpine`](#clojuretemurin-11-alpine)
 -	[`clojure:temurin-11-bookworm`](#clojuretemurin-11-bookworm)
 -	[`clojure:temurin-11-bookworm-slim`](#clojuretemurin-11-bookworm-slim)
@@ -28,6 +32,8 @@
 -	[`clojure:temurin-11-lein-2.11.2-bullseye-slim`](#clojuretemurin-11-lein-2112-bullseye-slim)
 -	[`clojure:temurin-11-lein-2.11.2-jammy`](#clojuretemurin-11-lein-2112-jammy)
 -	[`clojure:temurin-11-lein-2.11.2-noble`](#clojuretemurin-11-lein-2112-noble)
+-	[`clojure:temurin-11-lein-2.11.2-trixie`](#clojuretemurin-11-lein-2112-trixie)
+-	[`clojure:temurin-11-lein-2.11.2-trixie-slim`](#clojuretemurin-11-lein-2112-trixie-slim)
 -	[`clojure:temurin-11-lein-alpine`](#clojuretemurin-11-lein-alpine)
 -	[`clojure:temurin-11-lein-bookworm`](#clojuretemurin-11-lein-bookworm)
 -	[`clojure:temurin-11-lein-bookworm-slim`](#clojuretemurin-11-lein-bookworm-slim)
@@ -35,6 +41,8 @@
 -	[`clojure:temurin-11-lein-bullseye-slim`](#clojuretemurin-11-lein-bullseye-slim)
 -	[`clojure:temurin-11-lein-jammy`](#clojuretemurin-11-lein-jammy)
 -	[`clojure:temurin-11-lein-noble`](#clojuretemurin-11-lein-noble)
+-	[`clojure:temurin-11-lein-trixie`](#clojuretemurin-11-lein-trixie)
+-	[`clojure:temurin-11-lein-trixie-slim`](#clojuretemurin-11-lein-trixie-slim)
 -	[`clojure:temurin-11-noble`](#clojuretemurin-11-noble)
 -	[`clojure:temurin-11-tools-deps`](#clojuretemurin-11-tools-deps)
 -	[`clojure:temurin-11-tools-deps-1.12.0.1530`](#clojuretemurin-11-tools-deps-11201530)
@@ -45,6 +53,8 @@
 -	[`clojure:temurin-11-tools-deps-1.12.0.1530-bullseye-slim`](#clojuretemurin-11-tools-deps-11201530-bullseye-slim)
 -	[`clojure:temurin-11-tools-deps-1.12.0.1530-jammy`](#clojuretemurin-11-tools-deps-11201530-jammy)
 -	[`clojure:temurin-11-tools-deps-1.12.0.1530-noble`](#clojuretemurin-11-tools-deps-11201530-noble)
+-	[`clojure:temurin-11-tools-deps-1.12.0.1530-trixie`](#clojuretemurin-11-tools-deps-11201530-trixie)
+-	[`clojure:temurin-11-tools-deps-1.12.0.1530-trixie-slim`](#clojuretemurin-11-tools-deps-11201530-trixie-slim)
 -	[`clojure:temurin-11-tools-deps-alpine`](#clojuretemurin-11-tools-deps-alpine)
 -	[`clojure:temurin-11-tools-deps-bookworm`](#clojuretemurin-11-tools-deps-bookworm)
 -	[`clojure:temurin-11-tools-deps-bookworm-slim`](#clojuretemurin-11-tools-deps-bookworm-slim)
@@ -52,6 +62,10 @@
 -	[`clojure:temurin-11-tools-deps-bullseye-slim`](#clojuretemurin-11-tools-deps-bullseye-slim)
 -	[`clojure:temurin-11-tools-deps-jammy`](#clojuretemurin-11-tools-deps-jammy)
 -	[`clojure:temurin-11-tools-deps-noble`](#clojuretemurin-11-tools-deps-noble)
+-	[`clojure:temurin-11-tools-deps-trixie`](#clojuretemurin-11-tools-deps-trixie)
+-	[`clojure:temurin-11-tools-deps-trixie-slim`](#clojuretemurin-11-tools-deps-trixie-slim)
+-	[`clojure:temurin-11-trixie`](#clojuretemurin-11-trixie)
+-	[`clojure:temurin-11-trixie-slim`](#clojuretemurin-11-trixie-slim)
 -	[`clojure:temurin-17-alpine`](#clojuretemurin-17-alpine)
 -	[`clojure:temurin-17-bookworm`](#clojuretemurin-17-bookworm)
 -	[`clojure:temurin-17-bookworm-slim`](#clojuretemurin-17-bookworm-slim)
@@ -67,6 +81,8 @@
 -	[`clojure:temurin-17-lein-2.11.2-bullseye-slim`](#clojuretemurin-17-lein-2112-bullseye-slim)
 -	[`clojure:temurin-17-lein-2.11.2-jammy`](#clojuretemurin-17-lein-2112-jammy)
 -	[`clojure:temurin-17-lein-2.11.2-noble`](#clojuretemurin-17-lein-2112-noble)
+-	[`clojure:temurin-17-lein-2.11.2-trixie`](#clojuretemurin-17-lein-2112-trixie)
+-	[`clojure:temurin-17-lein-2.11.2-trixie-slim`](#clojuretemurin-17-lein-2112-trixie-slim)
 -	[`clojure:temurin-17-lein-alpine`](#clojuretemurin-17-lein-alpine)
 -	[`clojure:temurin-17-lein-bookworm`](#clojuretemurin-17-lein-bookworm)
 -	[`clojure:temurin-17-lein-bookworm-slim`](#clojuretemurin-17-lein-bookworm-slim)
@@ -74,6 +90,8 @@
 -	[`clojure:temurin-17-lein-bullseye-slim`](#clojuretemurin-17-lein-bullseye-slim)
 -	[`clojure:temurin-17-lein-jammy`](#clojuretemurin-17-lein-jammy)
 -	[`clojure:temurin-17-lein-noble`](#clojuretemurin-17-lein-noble)
+-	[`clojure:temurin-17-lein-trixie`](#clojuretemurin-17-lein-trixie)
+-	[`clojure:temurin-17-lein-trixie-slim`](#clojuretemurin-17-lein-trixie-slim)
 -	[`clojure:temurin-17-noble`](#clojuretemurin-17-noble)
 -	[`clojure:temurin-17-tools-deps`](#clojuretemurin-17-tools-deps)
 -	[`clojure:temurin-17-tools-deps-1.12.0.1530`](#clojuretemurin-17-tools-deps-11201530)
@@ -84,6 +102,8 @@
 -	[`clojure:temurin-17-tools-deps-1.12.0.1530-bullseye-slim`](#clojuretemurin-17-tools-deps-11201530-bullseye-slim)
 -	[`clojure:temurin-17-tools-deps-1.12.0.1530-jammy`](#clojuretemurin-17-tools-deps-11201530-jammy)
 -	[`clojure:temurin-17-tools-deps-1.12.0.1530-noble`](#clojuretemurin-17-tools-deps-11201530-noble)
+-	[`clojure:temurin-17-tools-deps-1.12.0.1530-trixie`](#clojuretemurin-17-tools-deps-11201530-trixie)
+-	[`clojure:temurin-17-tools-deps-1.12.0.1530-trixie-slim`](#clojuretemurin-17-tools-deps-11201530-trixie-slim)
 -	[`clojure:temurin-17-tools-deps-alpine`](#clojuretemurin-17-tools-deps-alpine)
 -	[`clojure:temurin-17-tools-deps-bookworm`](#clojuretemurin-17-tools-deps-bookworm)
 -	[`clojure:temurin-17-tools-deps-bookworm-slim`](#clojuretemurin-17-tools-deps-bookworm-slim)
@@ -91,6 +111,10 @@
 -	[`clojure:temurin-17-tools-deps-bullseye-slim`](#clojuretemurin-17-tools-deps-bullseye-slim)
 -	[`clojure:temurin-17-tools-deps-jammy`](#clojuretemurin-17-tools-deps-jammy)
 -	[`clojure:temurin-17-tools-deps-noble`](#clojuretemurin-17-tools-deps-noble)
+-	[`clojure:temurin-17-tools-deps-trixie`](#clojuretemurin-17-tools-deps-trixie)
+-	[`clojure:temurin-17-tools-deps-trixie-slim`](#clojuretemurin-17-tools-deps-trixie-slim)
+-	[`clojure:temurin-17-trixie`](#clojuretemurin-17-trixie)
+-	[`clojure:temurin-17-trixie-slim`](#clojuretemurin-17-trixie-slim)
 -	[`clojure:temurin-21-alpine`](#clojuretemurin-21-alpine)
 -	[`clojure:temurin-21-bookworm`](#clojuretemurin-21-bookworm)
 -	[`clojure:temurin-21-bookworm-slim`](#clojuretemurin-21-bookworm-slim)
@@ -106,6 +130,8 @@
 -	[`clojure:temurin-21-lein-2.11.2-bullseye-slim`](#clojuretemurin-21-lein-2112-bullseye-slim)
 -	[`clojure:temurin-21-lein-2.11.2-jammy`](#clojuretemurin-21-lein-2112-jammy)
 -	[`clojure:temurin-21-lein-2.11.2-noble`](#clojuretemurin-21-lein-2112-noble)
+-	[`clojure:temurin-21-lein-2.11.2-trixie`](#clojuretemurin-21-lein-2112-trixie)
+-	[`clojure:temurin-21-lein-2.11.2-trixie-slim`](#clojuretemurin-21-lein-2112-trixie-slim)
 -	[`clojure:temurin-21-lein-alpine`](#clojuretemurin-21-lein-alpine)
 -	[`clojure:temurin-21-lein-bookworm`](#clojuretemurin-21-lein-bookworm)
 -	[`clojure:temurin-21-lein-bookworm-slim`](#clojuretemurin-21-lein-bookworm-slim)
@@ -113,6 +139,8 @@
 -	[`clojure:temurin-21-lein-bullseye-slim`](#clojuretemurin-21-lein-bullseye-slim)
 -	[`clojure:temurin-21-lein-jammy`](#clojuretemurin-21-lein-jammy)
 -	[`clojure:temurin-21-lein-noble`](#clojuretemurin-21-lein-noble)
+-	[`clojure:temurin-21-lein-trixie`](#clojuretemurin-21-lein-trixie)
+-	[`clojure:temurin-21-lein-trixie-slim`](#clojuretemurin-21-lein-trixie-slim)
 -	[`clojure:temurin-21-noble`](#clojuretemurin-21-noble)
 -	[`clojure:temurin-21-tools-deps`](#clojuretemurin-21-tools-deps)
 -	[`clojure:temurin-21-tools-deps-1.12.0.1530`](#clojuretemurin-21-tools-deps-11201530)
@@ -123,6 +151,8 @@
 -	[`clojure:temurin-21-tools-deps-1.12.0.1530-bullseye-slim`](#clojuretemurin-21-tools-deps-11201530-bullseye-slim)
 -	[`clojure:temurin-21-tools-deps-1.12.0.1530-jammy`](#clojuretemurin-21-tools-deps-11201530-jammy)
 -	[`clojure:temurin-21-tools-deps-1.12.0.1530-noble`](#clojuretemurin-21-tools-deps-11201530-noble)
+-	[`clojure:temurin-21-tools-deps-1.12.0.1530-trixie`](#clojuretemurin-21-tools-deps-11201530-trixie)
+-	[`clojure:temurin-21-tools-deps-1.12.0.1530-trixie-slim`](#clojuretemurin-21-tools-deps-11201530-trixie-slim)
 -	[`clojure:temurin-21-tools-deps-alpine`](#clojuretemurin-21-tools-deps-alpine)
 -	[`clojure:temurin-21-tools-deps-bookworm`](#clojuretemurin-21-tools-deps-bookworm)
 -	[`clojure:temurin-21-tools-deps-bookworm-slim`](#clojuretemurin-21-tools-deps-bookworm-slim)
@@ -130,6 +160,10 @@
 -	[`clojure:temurin-21-tools-deps-bullseye-slim`](#clojuretemurin-21-tools-deps-bullseye-slim)
 -	[`clojure:temurin-21-tools-deps-jammy`](#clojuretemurin-21-tools-deps-jammy)
 -	[`clojure:temurin-21-tools-deps-noble`](#clojuretemurin-21-tools-deps-noble)
+-	[`clojure:temurin-21-tools-deps-trixie`](#clojuretemurin-21-tools-deps-trixie)
+-	[`clojure:temurin-21-tools-deps-trixie-slim`](#clojuretemurin-21-tools-deps-trixie-slim)
+-	[`clojure:temurin-21-trixie`](#clojuretemurin-21-trixie)
+-	[`clojure:temurin-21-trixie-slim`](#clojuretemurin-21-trixie-slim)
 -	[`clojure:temurin-24-alpine`](#clojuretemurin-24-alpine)
 -	[`clojure:temurin-24-bookworm`](#clojuretemurin-24-bookworm)
 -	[`clojure:temurin-24-bookworm-slim`](#clojuretemurin-24-bookworm-slim)
@@ -143,12 +177,16 @@
 -	[`clojure:temurin-24-lein-2.11.2-bullseye`](#clojuretemurin-24-lein-2112-bullseye)
 -	[`clojure:temurin-24-lein-2.11.2-bullseye-slim`](#clojuretemurin-24-lein-2112-bullseye-slim)
 -	[`clojure:temurin-24-lein-2.11.2-noble`](#clojuretemurin-24-lein-2112-noble)
+-	[`clojure:temurin-24-lein-2.11.2-trixie`](#clojuretemurin-24-lein-2112-trixie)
+-	[`clojure:temurin-24-lein-2.11.2-trixie-slim`](#clojuretemurin-24-lein-2112-trixie-slim)
 -	[`clojure:temurin-24-lein-alpine`](#clojuretemurin-24-lein-alpine)
 -	[`clojure:temurin-24-lein-bookworm`](#clojuretemurin-24-lein-bookworm)
 -	[`clojure:temurin-24-lein-bookworm-slim`](#clojuretemurin-24-lein-bookworm-slim)
 -	[`clojure:temurin-24-lein-bullseye`](#clojuretemurin-24-lein-bullseye)
 -	[`clojure:temurin-24-lein-bullseye-slim`](#clojuretemurin-24-lein-bullseye-slim)
 -	[`clojure:temurin-24-lein-noble`](#clojuretemurin-24-lein-noble)
+-	[`clojure:temurin-24-lein-trixie`](#clojuretemurin-24-lein-trixie)
+-	[`clojure:temurin-24-lein-trixie-slim`](#clojuretemurin-24-lein-trixie-slim)
 -	[`clojure:temurin-24-noble`](#clojuretemurin-24-noble)
 -	[`clojure:temurin-24-tools-deps`](#clojuretemurin-24-tools-deps)
 -	[`clojure:temurin-24-tools-deps-1.12.0.1530`](#clojuretemurin-24-tools-deps-11201530)
@@ -158,12 +196,18 @@
 -	[`clojure:temurin-24-tools-deps-1.12.0.1530-bullseye`](#clojuretemurin-24-tools-deps-11201530-bullseye)
 -	[`clojure:temurin-24-tools-deps-1.12.0.1530-bullseye-slim`](#clojuretemurin-24-tools-deps-11201530-bullseye-slim)
 -	[`clojure:temurin-24-tools-deps-1.12.0.1530-noble`](#clojuretemurin-24-tools-deps-11201530-noble)
+-	[`clojure:temurin-24-tools-deps-1.12.0.1530-trixie`](#clojuretemurin-24-tools-deps-11201530-trixie)
+-	[`clojure:temurin-24-tools-deps-1.12.0.1530-trixie-slim`](#clojuretemurin-24-tools-deps-11201530-trixie-slim)
 -	[`clojure:temurin-24-tools-deps-alpine`](#clojuretemurin-24-tools-deps-alpine)
 -	[`clojure:temurin-24-tools-deps-bookworm`](#clojuretemurin-24-tools-deps-bookworm)
 -	[`clojure:temurin-24-tools-deps-bookworm-slim`](#clojuretemurin-24-tools-deps-bookworm-slim)
 -	[`clojure:temurin-24-tools-deps-bullseye`](#clojuretemurin-24-tools-deps-bullseye)
 -	[`clojure:temurin-24-tools-deps-bullseye-slim`](#clojuretemurin-24-tools-deps-bullseye-slim)
 -	[`clojure:temurin-24-tools-deps-noble`](#clojuretemurin-24-tools-deps-noble)
+-	[`clojure:temurin-24-tools-deps-trixie`](#clojuretemurin-24-tools-deps-trixie)
+-	[`clojure:temurin-24-tools-deps-trixie-slim`](#clojuretemurin-24-tools-deps-trixie-slim)
+-	[`clojure:temurin-24-trixie`](#clojuretemurin-24-trixie)
+-	[`clojure:temurin-24-trixie-slim`](#clojuretemurin-24-trixie-slim)
 -	[`clojure:temurin-8-alpine`](#clojuretemurin-8-alpine)
 -	[`clojure:temurin-8-bookworm`](#clojuretemurin-8-bookworm)
 -	[`clojure:temurin-8-bookworm-slim`](#clojuretemurin-8-bookworm-slim)
@@ -179,6 +223,8 @@
 -	[`clojure:temurin-8-lein-2.11.2-bullseye-slim`](#clojuretemurin-8-lein-2112-bullseye-slim)
 -	[`clojure:temurin-8-lein-2.11.2-jammy`](#clojuretemurin-8-lein-2112-jammy)
 -	[`clojure:temurin-8-lein-2.11.2-noble`](#clojuretemurin-8-lein-2112-noble)
+-	[`clojure:temurin-8-lein-2.11.2-trixie`](#clojuretemurin-8-lein-2112-trixie)
+-	[`clojure:temurin-8-lein-2.11.2-trixie-slim`](#clojuretemurin-8-lein-2112-trixie-slim)
 -	[`clojure:temurin-8-lein-alpine`](#clojuretemurin-8-lein-alpine)
 -	[`clojure:temurin-8-lein-bookworm`](#clojuretemurin-8-lein-bookworm)
 -	[`clojure:temurin-8-lein-bookworm-slim`](#clojuretemurin-8-lein-bookworm-slim)
@@ -186,6 +232,8 @@
 -	[`clojure:temurin-8-lein-bullseye-slim`](#clojuretemurin-8-lein-bullseye-slim)
 -	[`clojure:temurin-8-lein-jammy`](#clojuretemurin-8-lein-jammy)
 -	[`clojure:temurin-8-lein-noble`](#clojuretemurin-8-lein-noble)
+-	[`clojure:temurin-8-lein-trixie`](#clojuretemurin-8-lein-trixie)
+-	[`clojure:temurin-8-lein-trixie-slim`](#clojuretemurin-8-lein-trixie-slim)
 -	[`clojure:temurin-8-noble`](#clojuretemurin-8-noble)
 -	[`clojure:temurin-8-tools-deps`](#clojuretemurin-8-tools-deps)
 -	[`clojure:temurin-8-tools-deps-1.12.0.1530`](#clojuretemurin-8-tools-deps-11201530)
@@ -196,6 +244,8 @@
 -	[`clojure:temurin-8-tools-deps-1.12.0.1530-bullseye-slim`](#clojuretemurin-8-tools-deps-11201530-bullseye-slim)
 -	[`clojure:temurin-8-tools-deps-1.12.0.1530-jammy`](#clojuretemurin-8-tools-deps-11201530-jammy)
 -	[`clojure:temurin-8-tools-deps-1.12.0.1530-noble`](#clojuretemurin-8-tools-deps-11201530-noble)
+-	[`clojure:temurin-8-tools-deps-1.12.0.1530-trixie`](#clojuretemurin-8-tools-deps-11201530-trixie)
+-	[`clojure:temurin-8-tools-deps-1.12.0.1530-trixie-slim`](#clojuretemurin-8-tools-deps-11201530-trixie-slim)
 -	[`clojure:temurin-8-tools-deps-alpine`](#clojuretemurin-8-tools-deps-alpine)
 -	[`clojure:temurin-8-tools-deps-bookworm`](#clojuretemurin-8-tools-deps-bookworm)
 -	[`clojure:temurin-8-tools-deps-bookworm-slim`](#clojuretemurin-8-tools-deps-bookworm-slim)
@@ -203,16 +253,24 @@
 -	[`clojure:temurin-8-tools-deps-bullseye-slim`](#clojuretemurin-8-tools-deps-bullseye-slim)
 -	[`clojure:temurin-8-tools-deps-jammy`](#clojuretemurin-8-tools-deps-jammy)
 -	[`clojure:temurin-8-tools-deps-noble`](#clojuretemurin-8-tools-deps-noble)
+-	[`clojure:temurin-8-tools-deps-trixie`](#clojuretemurin-8-tools-deps-trixie)
+-	[`clojure:temurin-8-tools-deps-trixie-slim`](#clojuretemurin-8-tools-deps-trixie-slim)
+-	[`clojure:temurin-8-trixie`](#clojuretemurin-8-trixie)
+-	[`clojure:temurin-8-trixie-slim`](#clojuretemurin-8-trixie-slim)
 -	[`clojure:tools-deps`](#clojuretools-deps)
 -	[`clojure:tools-deps-1.12.0.1530`](#clojuretools-deps-11201530)
 -	[`clojure:tools-deps-1.12.0.1530-bookworm`](#clojuretools-deps-11201530-bookworm)
 -	[`clojure:tools-deps-1.12.0.1530-bookworm-slim`](#clojuretools-deps-11201530-bookworm-slim)
 -	[`clojure:tools-deps-1.12.0.1530-bullseye`](#clojuretools-deps-11201530-bullseye)
 -	[`clojure:tools-deps-1.12.0.1530-bullseye-slim`](#clojuretools-deps-11201530-bullseye-slim)
+-	[`clojure:tools-deps-1.12.0.1530-trixie`](#clojuretools-deps-11201530-trixie)
+-	[`clojure:tools-deps-1.12.0.1530-trixie-slim`](#clojuretools-deps-11201530-trixie-slim)
 -	[`clojure:tools-deps-bookworm`](#clojuretools-deps-bookworm)
 -	[`clojure:tools-deps-bookworm-slim`](#clojuretools-deps-bookworm-slim)
 -	[`clojure:tools-deps-bullseye`](#clojuretools-deps-bullseye)
 -	[`clojure:tools-deps-bullseye-slim`](#clojuretools-deps-bullseye-slim)
+-	[`clojure:tools-deps-trixie`](#clojuretools-deps-trixie)
+-	[`clojure:tools-deps-trixie-slim`](#clojuretools-deps-trixie-slim)
 
 ## `clojure:latest`
 
@@ -1661,6 +1719,14 @@ $ docker pull clojure@sha256:27694b99cad207738e17f94f25c963074e5d0f01ded98b54814
 		Size: 19.3 KB (19265 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:lein-2.11.2-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:lein-2.11.2-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:lein-bookworm`
 
 ```console
@@ -2464,6 +2530,14 @@ $ docker pull clojure@sha256:27694b99cad207738e17f94f25c963074e5d0f01ded98b54814
 		Last Modified: Tue, 06 May 2025 00:41:57 GMT  
 		Size: 19.3 KB (19265 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:lein-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:lein-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-11-alpine`
 
@@ -5398,6 +5472,14 @@ $ docker pull clojure@sha256:1d9e645a23f70854c1bb3c892179956dd9429deba55eb2f8722
 		Size: 16.1 KB (16058 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-11-lein-2.11.2-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-lein-2.11.2-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-11-lein-alpine`
 
 ```console
@@ -6768,6 +6850,14 @@ $ docker pull clojure@sha256:1d9e645a23f70854c1bb3c892179956dd9429deba55eb2f8722
 		Last Modified: Tue, 06 May 2025 00:27:13 GMT  
 		Size: 16.1 KB (16058 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-11-lein-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-lein-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-11-noble`
 
@@ -8797,6 +8887,14 @@ $ docker pull clojure@sha256:db2e2b33dbd09110a9c599d736cbadc38dc012752274d213e62
 		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-11-tools-deps-1.12.0.1530-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-tools-deps-1.12.0.1530-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-11-tools-deps-alpine`
 
 ```console
@@ -10089,6 +10187,22 @@ $ docker pull clojure@sha256:db2e2b33dbd09110a9c599d736cbadc38dc012752274d213e62
 		Last Modified: Tue, 06 May 2025 00:31:20 GMT  
 		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-11-tools-deps-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-tools-deps-trixie-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-17-alpine`
 
@@ -13263,6 +13377,14 @@ $ docker pull clojure@sha256:efeb282ddbe712cdb558983f83911a52eab75b77f012e65a03c
 		Size: 18.5 KB (18522 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-17-lein-2.11.2-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-lein-2.11.2-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-17-lein-alpine`
 
 ```console
@@ -14745,6 +14867,14 @@ $ docker pull clojure@sha256:efeb282ddbe712cdb558983f83911a52eab75b77f012e65a03c
 		Last Modified: Tue, 06 May 2025 00:36:04 GMT  
 		Size: 18.5 KB (18522 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-17-lein-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-lein-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-17-noble`
 
@@ -16934,6 +17064,14 @@ $ docker pull clojure@sha256:9dacab9890f9820d5a66004158b24674db8ea3a465e63e0b86d
 		Size: 15.7 KB (15679 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-17-tools-deps-1.12.0.1530-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-tools-deps-1.12.0.1530-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-17-tools-deps-alpine`
 
 ```console
@@ -18338,6 +18476,22 @@ $ docker pull clojure@sha256:9dacab9890f9820d5a66004158b24674db8ea3a465e63e0b86d
 		Last Modified: Tue, 06 May 2025 00:40:27 GMT  
 		Size: 15.7 KB (15679 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-17-tools-deps-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-tools-deps-trixie-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-21-alpine`
 
@@ -21610,6 +21764,14 @@ $ docker pull clojure@sha256:dd20cf9911de4fcb3150e77724c2ad567183afa41362eeeed02
 		Size: 18.5 KB (18520 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-21-lein-2.11.2-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-21-lein-2.11.2-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-21-lein-alpine`
 
 ```console
@@ -23216,6 +23378,14 @@ $ docker pull clojure@sha256:dd20cf9911de4fcb3150e77724c2ad567183afa41362eeeed02
 		Last Modified: Tue, 06 May 2025 00:43:19 GMT  
 		Size: 18.5 KB (18520 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-21-lein-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-21-lein-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-21-noble`
 
@@ -25379,6 +25549,14 @@ $ docker pull clojure@sha256:8b7005de4866e273f4983df6cfac437f43803f7978f28ad6bef
 		Size: 15.7 KB (15678 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-21-tools-deps-1.12.0.1530-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-21-tools-deps-1.12.0.1530-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-21-tools-deps-alpine`
 
 ```console
@@ -26901,6 +27079,22 @@ $ docker pull clojure@sha256:8b7005de4866e273f4983df6cfac437f43803f7978f28ad6bef
 		Last Modified: Tue, 06 May 2025 00:46:31 GMT  
 		Size: 15.7 KB (15678 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-21-tools-deps-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-21-tools-deps-trixie-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-21-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-21-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-24-alpine`
 
@@ -29639,6 +29833,14 @@ $ docker pull clojure@sha256:9b0c16af7b68f6883dc344dcba7659499efdfae4d907b436102
 		Size: 18.5 KB (18510 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-24-lein-2.11.2-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-24-lein-2.11.2-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-24-lein-alpine`
 
 ```console
@@ -30972,6 +31174,14 @@ $ docker pull clojure@sha256:9b0c16af7b68f6883dc344dcba7659499efdfae4d907b436102
 		Last Modified: Tue, 06 May 2025 00:48:40 GMT  
 		Size: 18.5 KB (18510 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-24-lein-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-24-lein-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-24-noble`
 
@@ -32874,6 +33084,14 @@ $ docker pull clojure@sha256:6246ca8ee487992ad35d842e9c3db8e5713269a89e7c14c784a
 		Size: 15.7 KB (15668 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-24-tools-deps-1.12.0.1530-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-24-tools-deps-1.12.0.1530-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-24-tools-deps-alpine`
 
 ```console
@@ -34135,6 +34353,22 @@ $ docker pull clojure@sha256:6246ca8ee487992ad35d842e9c3db8e5713269a89e7c14c784a
 		Last Modified: Tue, 06 May 2025 00:50:56 GMT  
 		Size: 15.7 KB (15668 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-24-tools-deps-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-24-tools-deps-trixie-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-24-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-24-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-8-alpine`
 
@@ -37045,6 +37279,14 @@ $ docker pull clojure@sha256:88e93dbf68fc3b02a0ff0567f64e6ae8686254cf4bc059a06eb
 		Size: 16.0 KB (16045 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-8-lein-2.11.2-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-lein-2.11.2-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-8-lein-alpine`
 
 ```console
@@ -38405,6 +38647,14 @@ $ docker pull clojure@sha256:88e93dbf68fc3b02a0ff0567f64e6ae8686254cf4bc059a06eb
 		Last Modified: Tue, 06 May 2025 00:19:12 GMT  
 		Size: 16.0 KB (16045 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:temurin-8-lein-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-lein-trixie-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-8-noble`
 
@@ -40412,6 +40662,14 @@ $ docker pull clojure@sha256:ef05ba0eb770d0f3b9b7ba5d6d77210b57eaf66fb502c5e9d42
 		Size: 13.6 KB (13627 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-8-tools-deps-1.12.0.1530-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-tools-deps-1.12.0.1530-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-8-tools-deps-alpine`
 
 ```console
@@ -41695,6 +41953,22 @@ $ docker pull clojure@sha256:ef05ba0eb770d0f3b9b7ba5d6d77210b57eaf66fb502c5e9d42
 		Size: 13.6 KB (13627 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:temurin-8-tools-deps-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-tools-deps-trixie-slim`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:tools-deps`
 
 ```console
@@ -42829,6 +43103,14 @@ $ docker pull clojure@sha256:b33dc17329a4118a28db0d1bac279033dd0548b85ccbdc71a8e
 		Size: 16.7 KB (16717 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `clojure:tools-deps-1.12.0.1530-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:tools-deps-1.12.0.1530-trixie-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:tools-deps-bookworm`
 
 ```console
@@ -43584,3 +43866,11 @@ $ docker pull clojure@sha256:b33dc17329a4118a28db0d1bac279033dd0548b85ccbdc71a8e
 		Last Modified: Tue, 06 May 2025 00:45:01 GMT  
 		Size: 16.7 KB (16717 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `clojure:tools-deps-trixie`
+
+**does not exist** (yet?)
+
+## `clojure:tools-deps-trixie-slim`
+
+**does not exist** (yet?)
