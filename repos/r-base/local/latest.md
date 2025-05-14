@@ -128,9 +128,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=13.7
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.7.dsc' base-files_13.7.dsc 1102 SHA256:5dcd518081e204dc564923384e950837129dce46ac12afc8c5c79948769fd683
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.7.tar.xz' base-files_13.7.tar.xz 68412 SHA256:3c13412f5f828f24ec8b7a213eed72aa6d35ba9587b9a75a87fd04ffcff3b210
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.7.dsc' base-files_13.7.dsc 1102 SHA256:5dcd518081e204dc564923384e950837129dce46ac12afc8c5c79948769fd683
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.7.tar.xz' base-files_13.7.tar.xz 68412 SHA256:3c13412f5f828f24ec8b7a213eed72aa6d35ba9587b9a75a87fd04ffcff3b210
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/base-files/13.7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -1570,15 +1576,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.75-6
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75-6.dsc' libcap2_2.75-6.dsc 2679 SHA256:33f4a9056ec81e7f982ef30b7eb5f921c9e664720ca829871ea7d841bfd0b9c1
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz' libcap2_2.75.orig.tar.xz 197868 SHA256:de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz.asc' libcap2_2.75.orig.tar.xz.asc 833 SHA256:c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75-6.debian.tar.xz' libcap2_2.75-6.debian.tar.xz 22432 SHA256:6092e100a9dc1e4b51066a65866773c7a3f921255054f23a4c481f13916a1ab8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libcap2/1:2.75-6/
+
 
 ### `dpkg` source package: `libdatrie=0.2.13-3`
 
@@ -1709,20 +1713,13 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/
 - `NTP`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:2.1.5-3.1
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.1.dsc' libjpeg-turbo_2.1.5-3.1.dsc 2478 SHA256:3b1089198a0f5dd0f6af7a6bbb381c0c710eb1cedf4ae887115a4c8209f081f3
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5.orig.tar.gz' libjpeg-turbo_2.1.5.orig.tar.gz 2264471 SHA256:254f3642b04e309fee775123133c6464181addc150499561020312ec61c1bf7c
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.1.debian.tar.xz' libjpeg-turbo_2.1.5-3.1.debian.tar.xz 107924 SHA256:ec48689b143c03fbc0a06e116f3916ca319afd8b9f2ef2b1226e245464878856
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libjpeg-turbo/1:2.1.5-3.1/
 
-- https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-3.1/ (for browsing the source)
-- https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libjpeg-turbo/1:2.1.5-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -3270,10 +3267,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-1
-'http://http.debian.net/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-1.dsc' rust-sequoia-sqv_1.3.0-1.dsc 2605 SHA256:91231c66c47716f3a5da2aa8bcc88e690b3a4ebfa1fd70e91e3f56e9e9591d4b
-'http://http.debian.net/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://http.debian.net/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-1.debian.tar.xz' rust-sequoia-sqv_1.3.0-1.debian.tar.xz 3576 SHA256:1068e699fc0f5e51d74797bdce48ad8eeb63e75ed80253639be0dc69cbd04784
+'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-1.dsc' rust-sequoia-sqv_1.3.0-1.dsc 2605 SHA256:91231c66c47716f3a5da2aa8bcc88e690b3a4ebfa1fd70e91e3f56e9e9591d4b
+'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
+'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-1.debian.tar.xz' rust-sequoia-sqv_1.3.0-1.debian.tar.xz 3576 SHA256:1068e699fc0f5e51d74797bdce48ad8eeb63e75ed80253639be0dc69cbd04784
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-1/ (for browsing the source)
+- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 
@@ -3358,21 +3361,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.dsc' sqlite3_3.46.1-3.dsc 2632 SHA256:6ac6601da84b8e01bbf742e0d15bbdf076a5969f8dfb5175a3a6fb3f95ba6ac5
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.debian.tar.xz' sqlite3_3.46.1-3.debian.tar.xz 30968 SHA256:31e87bd93c95b198c0cfd25eebd0a8e79d53d37601df80f548a2804f810234e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.46.1-3/
 
-- https://sources.debian.net/src/sqlite3/3.46.1-3/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.46.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.46.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.8-3-1`
 
@@ -3561,21 +3556,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-2.dsc' tzdata_2025b-2.dsc 2434 SHA256:3d1355d6c2bab50ec3f017d9a844513f7267ab30b927292c1c3cf347c538fd94
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-2.debian.tar.xz' tzdata_2025b-2.debian.tar.xz 126780 SHA256:891fa918c7613fcc459397c188e50d279e712f76625086a67581681bd98fddcb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-2/
 
-- https://sources.debian.net/src/tzdata/2025b-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0051`
 
