@@ -175,11 +175,11 @@ $ docker pull composer@sha256:f6be3db544e8cff1dc516f958dac8f363e0cc0885dd668398e
 
 -	Layers:
 	-	`sha256:adba90a39fa2adc9e0fee27d81e89681d41b1001e95fe4664d91653394110633`  
-		Last Modified: Thu, 15 May 2025 18:36:16 GMT  
+		Last Modified: Thu, 15 May 2025 20:00:34 GMT  
 		Size: 2.2 MB (2166602 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:020272d340323f6ec0b60e47c2c077352d9aa23dce87fe7c14045d48a976641e`  
-		Last Modified: Thu, 15 May 2025 18:36:16 GMT  
+		Last Modified: Thu, 15 May 2025 20:00:37 GMT  
 		Size: 30.4 KB (30406 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -775,23 +775,23 @@ CMD ["composer"]
 		Size: 20.0 KB (20049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd00efa70d5c02dc18a3cdc342e349480ef0b0967a39d0adfcc0b6da38cb8550`  
-		Last Modified: Thu, 15 May 2025 18:36:21 GMT  
+		Last Modified: Thu, 15 May 2025 20:00:49 GMT  
 		Size: 32.4 MB (32419658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f79027e8e5eb0ccc6e8045cc3304012a98bdcd7f1355faed7546a988975eecef`  
-		Last Modified: Thu, 15 May 2025 18:36:19 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:02 GMT  
 		Size: 259.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3d777fbe21e8668c1816e99c91bb0cced77a6c57339e48bb4a044d4ddf209a8`  
-		Last Modified: Thu, 15 May 2025 18:36:19 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:05 GMT  
 		Size: 1.4 MB (1357393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da7927df329678924f61e5fa3634ee34df06491aa17bb16c018d4143f37af852`  
-		Last Modified: Thu, 15 May 2025 18:36:19 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:07 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55d1c3e1ef417ee302e023c31426fd61e81bce018a1f6bd24fc65fe65aebb233`  
-		Last Modified: Thu, 15 May 2025 18:36:20 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:09 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -811,11 +811,11 @@ $ docker pull composer@sha256:216bf122650e17fda1299a1cfe51b565636ee73e02bea7b697
 
 -	Layers:
 	-	`sha256:030dc51fd132dfb1daf8ab6066b11702342f522152aa8c32326c173e3b67cec6`  
-		Last Modified: Thu, 15 May 2025 18:36:19 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:16 GMT  
 		Size: 2.2 MB (2166390 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:920dad927182fb509e6c519e77a6c83fee5a7ff99b953de8ee91bb3d2d401b9b`  
-		Last Modified: Thu, 15 May 2025 18:36:19 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:17 GMT  
 		Size: 30.4 KB (30375 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -971,11 +971,11 @@ $ docker pull composer@sha256:b4c64a8b3fb799b1d98723b89669eca46bff97fc29ad096ee4
 
 -	Layers:
 	-	`sha256:e21aec0cf850338e7db926a212987e78264c437be134a40d28a49a7d1779bf7d`  
-		Last Modified: Thu, 15 May 2025 18:36:11 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:28 GMT  
 		Size: 2.2 MB (2165159 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:802c17ec003f233031a2bb9860d1e653508c715e9d376b1ebff4ed6b863602c9`  
-		Last Modified: Thu, 15 May 2025 18:36:11 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:31 GMT  
 		Size: 30.4 KB (30443 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1131,11 +1131,11 @@ $ docker pull composer@sha256:0871194220dcca481b3ddbbd86df526cbeac036362327c5618
 
 -	Layers:
 	-	`sha256:ab6afc62b68fc16a588a9b25c9a76748c03f0d39d3c2bf19a04f1e3fca99f368`  
-		Last Modified: Thu, 15 May 2025 18:37:25 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:47 GMT  
 		Size: 2.2 MB (2164101 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:70d6af44a6bdfe3efd4bbd22f43dcbf9d2aa3a9a6d445697fe88db18450cc53f`  
-		Last Modified: Thu, 15 May 2025 18:37:24 GMT  
+		Last Modified: Thu, 15 May 2025 20:01:50 GMT  
 		Size: 30.4 KB (30445 bytes)  
 		MIME: application/vnd.in-toto+json
 
