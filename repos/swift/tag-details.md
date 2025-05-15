@@ -1996,7 +1996,7 @@ $ docker pull swift@sha256:f920e058b542d804dafaaea2237ce0c8e443029b43b69ba76483b
 ## `swift:5.10-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:c15497f891933573634224ac14f350063d1ee701f44ec878cc73c31c82208b2c
+$ docker pull swift@sha256:a288dc6f04ea455efc0965f3c68a2c60e0fed9b3a3f46e0d772c7d01fcb57e82
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2009,13 +2009,13 @@ $ docker pull swift@sha256:c15497f891933573634224ac14f350063d1ee701f44ec878cc73c
 ### `swift:5.10-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:36e860c5b38fc533b524d4f9e303648c56bc363509f59ae6ea0856394550a174
+$ docker pull swift@sha256:690c21aea82837d7ae99153ea536556dd066ea94c3ecccf27576ab962097d2a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **845.2 MB (845166136 bytes)**  
+-	Total Size: **827.5 MB (827497034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5aa0eecf27a84a0bbd75ffad26175e95c55d6326e432bf367b7549e274e954e`
+-	Image ID: `sha256:533fe970ccdde6dc49b785f6f0e82ac6ebbd70662cf2036348bd33a9679aeff0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2024,7 +2024,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2042,7 +2042,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2050,7 +2050,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2078,57 +2078,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be42a9d5a468d054cc9f88e8b397875da74fa27910269db8fbd85a1948761ee6`  
-		Last Modified: Tue, 13 May 2025 19:56:43 GMT  
-		Size: 142.1 MB (142058308 bytes)  
+	-	`sha256:f2fa05d89986b5910778b2eeb0417d85c4a4248dbbb17db06e3c169adc91021a`  
+		Last Modified: Wed, 14 May 2025 23:50:19 GMT  
+		Size: 124.4 MB (124410206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc89b4bdacdb7b3c36c7880be0354e09c972bef53218d216901ba139173099cd`  
 		Last Modified: Mon, 22 Jul 2024 22:10:13 GMT  
 		Size: 623.5 MB (623493795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0496b8ea7a63bfc285f3bccb292526888dafcdfc2b273189245603d21bbd6e53`  
-		Last Modified: Tue, 13 May 2025 19:56:39 GMT  
+	-	`sha256:cee01bb745a87570b027b8df12d52044a40af76ebac1a0e488ec0762c3820aeb`  
+		Last Modified: Wed, 14 May 2025 23:50:17 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:c3e3f27d431a0f875d3d8298769ca467fc4029810f0c89b4dda3e23b0e52ca43
+$ docker pull swift@sha256:bc2ab618753785b52fcc406328f24cd6a49763220df15fecd64afc314231ad8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333143 bytes)**  
+-	Total Size: **13.0 MB (12976433 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aaae084accfe856d758a7d4d3cb6ca40d492b5e10b7d147da19bf55b905fe74`
+-	Image ID: `sha256:57de9ef192c82bb8dd22196e25591409634a8fab3f6dcf00b7deb92a3aeabab2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:478561f2918079720dfe250752928777ae6ff4230aeb0fa0d4c258c5ca8ba516`  
-		Last Modified: Tue, 13 May 2025 19:56:39 GMT  
-		Size: 13.3 MB (13318940 bytes)  
+	-	`sha256:8642f17251d4c26b1b42fd470ed649d5014f7276ae641ef962bcbe4de8db2cc9`  
+		Last Modified: Wed, 14 May 2025 23:50:18 GMT  
+		Size: 13.0 MB (12962230 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fed61666fa781c9401a94d9ef4d499cd8fef8f2f9ba0d5e97c5de0f4fd77ff70`  
-		Last Modified: Tue, 13 May 2025 19:56:39 GMT  
+	-	`sha256:35449fe71ba91679fc05c5c52f9fb567ca74b1021f5b2cfed33dba4f5aee90e5`  
+		Last Modified: Wed, 14 May 2025 23:50:17 GMT  
 		Size: 14.2 KB (14203 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:d72b9ea73878bd6f4f7cb63a7480d6929532312281e4c48628e752d67b375463
+$ docker pull swift@sha256:a771c1535301d3613909740a0dd5250dca2b76821049089ad27efe18a3ace86b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.4 MB (830444813 bytes)**  
+-	Total Size: **813.2 MB (813170618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57578de0a463539703fe67278b39ff7d56b46ea61e2ebee30484da0dd1083ad4`
+-	Image ID: `sha256:61b48cac763332178923d5d9fca1bcc5fde458565cc9a453b80a129f7322488f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2137,7 +2137,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2155,7 +2155,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2163,7 +2163,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2191,51 +2191,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1a45a45f8c3402fa68c9eb441600db731621950faa44316a68132651b518bff`  
 		Last Modified: Wed, 24 Jul 2024 09:18:06 GMT  
 		Size: 617.7 MB (617684710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f887307692f1e9cee778724b9dd627ef06c73100766473a93e53ffa72e60d0d7`  
-		Last Modified: Tue, 13 May 2025 20:29:59 GMT  
+	-	`sha256:fa3b1257fdb9ab18f8615afb676aca7d91c8de553ef3c3c1b2ed9343167ead04`  
+		Last Modified: Thu, 15 May 2025 00:23:30 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:38572434dfd2cf1a0a07d733ba0b8ca8ae53da9c437cee8846a46a9c177b43f6
+$ docker pull swift@sha256:074dae68b3e6d1f815145fc7c32c2acaf18bb036151440b52d3802fa5651fc11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205075 bytes)**  
+-	Total Size: **12.8 MB (12849772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beedd65042da4794b4342b5ed335bb8f827f93666e3aee798c9928036420ca34`
+-	Image ID: `sha256:74a7ae58e21db31123525e34a1f0a8ec457f983c6d045b884574ee044aab373d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2abd45122f4298da0cd94af1275ef9c862b8efc20c19eb9a7556570c94ededd1`  
-		Last Modified: Tue, 13 May 2025 20:30:00 GMT  
-		Size: 13.2 MB (13190768 bytes)  
+	-	`sha256:784b201e34f2ee11a2037815d4e635e653a6636d3f8b1116bb6143642d025934`  
+		Last Modified: Thu, 15 May 2025 00:23:31 GMT  
+		Size: 12.8 MB (12835465 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2cb5630d4780b0b1568f6c42a469682bc8ca9b2cc83d7a2938ded1bcacab5dad`  
-		Last Modified: Tue, 13 May 2025 20:29:59 GMT  
+	-	`sha256:3d92467789b91d8b1cf45a96409f21cf1814a66e766115698655f9c823ac33a9`  
+		Last Modified: Thu, 15 May 2025 00:23:30 GMT  
 		Size: 14.3 KB (14307 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.10-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:c5b58c47edadd9b2f5c60459a9b9ff153ef51c19bd5856c86c7a6e5f1ae6d51f
+$ docker pull swift@sha256:11bbc97bfc987a5028990a154ffdada4f33f2a2d1c08c06439ff60d543052835
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2248,13 +2248,13 @@ $ docker pull swift@sha256:c5b58c47edadd9b2f5c60459a9b9ff153ef51c19bd5856c86c7a6
 ### `swift:5.10-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:2e8ac7b09ed3c1b2d239df42ede053b2097e379f8805b630d9de2b63df3b49a5
+$ docker pull swift@sha256:c55877263349a594b937c90c2b1979adb393f94c6e22bcd60ab9d9456bcdb22a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126329722 bytes)**  
+-	Total Size: **126.3 MB (126308283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:809769d4b04846f76d7681b98063df907e6fd55cdc989d615d7e869fd2cc4694`
+-	Image ID: `sha256:3f999ddfb58b365b8163bcc27a801fd299c495f8a588d6c5ef90c01ab2d22a84`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2263,7 +2263,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2281,7 +2281,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2289,7 +2289,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2312,49 +2312,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f4c3a678c16a68b80ccd3c566bb3522318719da32c7ccc3215c8d2e277bd43`  
-		Last Modified: Tue, 13 May 2025 19:54:58 GMT  
-		Size: 46.7 MB (46715863 bytes)  
+	-	`sha256:5a8ae8368e8a92fba479c9c2b020d9e3be4fca5319269d9651aa6622b68fec30`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 46.7 MB (46715424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:0c34286843751c39fbf1f0d915336c3def14af5dd2b9ebedb97ea3a3e8c697c1
+$ docker pull swift@sha256:4a85fa832b6c311049558c979671a0ddb0b24ac0f3ec316a2ad4462456679a9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389318 bytes)**  
+-	Total Size: **6.4 MB (6411903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1565a429831abc199b17381add1a00780d9afc4b8ac2cb7afc920724752f233a`
+-	Image ID: `sha256:68f4701998cf964bf6395c2923d00b18b5040f1c172ad72946c3f736dd2b72a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f122b52e944abc30f3893f54dfd3dd6d11d99b746b534bfb090e2f03a5432ed6`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 6.4 MB (6378087 bytes)  
+	-	`sha256:49d2cabe08ad30ad2436f05249da992915ab6f2c138c0dde6dd0f7b763de97a6`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 6.4 MB (6400673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b86ea855dd657ee0fa1d1eec4427ebc121aa0e7d0281d334a235bebe6ab00ca7`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 11.2 KB (11231 bytes)  
+	-	`sha256:41dccbadea9f494590d5678fa0f139237fbc1b4ce98dbd34e3ce6a0a0b5445a2`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 11.2 KB (11230 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:e5c9a030ff9efd5a9f1f173b5abc4fbeb8aede152fd906dcdfc3576e9cd4e9b8
+$ docker pull swift@sha256:028b42b46233bc893c06125acd1f7207e06dc2bba01a0df42ce7cea99bf5d308
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.6 MB (122567924 bytes)**  
+-	Total Size: **122.5 MB (122545954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5c488ffef00b6e0c3b47358e9cdc5bdc21d57140ed6b407bffee864449ad978`
+-	Image ID: `sha256:d0f1260748e7a4479b2cf44d912051358dfab3b56c59e4063d9aa65920e7505e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2363,7 +2363,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2381,7 +2381,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2389,7 +2389,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2412,37 +2412,37 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37490a1c2688d25aa10025895769937c0d0429c3aac20c311986b10408830b4a`  
-		Last Modified: Tue, 13 May 2025 20:30:56 GMT  
-		Size: 45.2 MB (45172479 bytes)  
+	-	`sha256:2db9772c3082910e6a8c332d9fa0fe47db5f4ba6aa49e30e72dc4e7f40a11979`  
+		Last Modified: Thu, 15 May 2025 00:24:23 GMT  
+		Size: 45.2 MB (45173547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:bd575c5b8a82e63447f163d76a8a90dd9bf55d7ffc8b92e28b210d3f1303db3e
+$ docker pull swift@sha256:05111e4ee894f84f8b3137d61779c87b748f5b48a0a06e098c228adb73a9ae4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385183 bytes)**  
+-	Total Size: **6.4 MB (6407768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98e343deb47d785e7c79ae54f8e7bc3f424ff5f6eed61011c2d99aa384698c3f`
+-	Image ID: `sha256:e82135c2343803387683e9076f8016a880fe9c9696d073ec4cf55d2c4453a01e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:37f8072f8a37d5642d9181047b9f3f63b55b60a79c6514d242a2d3cbca8c8b27`  
-		Last Modified: Tue, 13 May 2025 20:30:54 GMT  
-		Size: 6.4 MB (6373878 bytes)  
+	-	`sha256:c6813dc1fe1bd5e58e789009ea5dcd2333d643fb58c249a06f9e077ffc514472`  
+		Last Modified: Thu, 15 May 2025 00:24:22 GMT  
+		Size: 6.4 MB (6396464 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7794adb6b7bf7649f35a3ad60dddaf04ca647c7b21cc2d9ba03d57607001e81f`  
-		Last Modified: Tue, 13 May 2025 20:30:54 GMT  
-		Size: 11.3 KB (11305 bytes)  
+	-	`sha256:ebe5453c99bae54e337a73212020a3692253b71834919bbf2ad16208bf01a889`  
+		Last Modified: Thu, 15 May 2025 00:24:22 GMT  
+		Size: 11.3 KB (11304 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.10-slim`
@@ -4650,7 +4650,7 @@ $ docker pull swift@sha256:f920e058b542d804dafaaea2237ce0c8e443029b43b69ba76483b
 ## `swift:5.10.1-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:c15497f891933573634224ac14f350063d1ee701f44ec878cc73c31c82208b2c
+$ docker pull swift@sha256:a288dc6f04ea455efc0965f3c68a2c60e0fed9b3a3f46e0d772c7d01fcb57e82
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4663,13 +4663,13 @@ $ docker pull swift@sha256:c15497f891933573634224ac14f350063d1ee701f44ec878cc73c
 ### `swift:5.10.1-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:36e860c5b38fc533b524d4f9e303648c56bc363509f59ae6ea0856394550a174
+$ docker pull swift@sha256:690c21aea82837d7ae99153ea536556dd066ea94c3ecccf27576ab962097d2a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **845.2 MB (845166136 bytes)**  
+-	Total Size: **827.5 MB (827497034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5aa0eecf27a84a0bbd75ffad26175e95c55d6326e432bf367b7549e274e954e`
+-	Image ID: `sha256:533fe970ccdde6dc49b785f6f0e82ac6ebbd70662cf2036348bd33a9679aeff0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4678,7 +4678,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4696,7 +4696,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4704,7 +4704,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4732,57 +4732,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be42a9d5a468d054cc9f88e8b397875da74fa27910269db8fbd85a1948761ee6`  
-		Last Modified: Tue, 13 May 2025 19:56:43 GMT  
-		Size: 142.1 MB (142058308 bytes)  
+	-	`sha256:f2fa05d89986b5910778b2eeb0417d85c4a4248dbbb17db06e3c169adc91021a`  
+		Last Modified: Wed, 14 May 2025 23:50:19 GMT  
+		Size: 124.4 MB (124410206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc89b4bdacdb7b3c36c7880be0354e09c972bef53218d216901ba139173099cd`  
 		Last Modified: Mon, 22 Jul 2024 22:10:13 GMT  
 		Size: 623.5 MB (623493795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0496b8ea7a63bfc285f3bccb292526888dafcdfc2b273189245603d21bbd6e53`  
-		Last Modified: Tue, 13 May 2025 19:56:39 GMT  
+	-	`sha256:cee01bb745a87570b027b8df12d52044a40af76ebac1a0e488ec0762c3820aeb`  
+		Last Modified: Wed, 14 May 2025 23:50:17 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:c3e3f27d431a0f875d3d8298769ca467fc4029810f0c89b4dda3e23b0e52ca43
+$ docker pull swift@sha256:bc2ab618753785b52fcc406328f24cd6a49763220df15fecd64afc314231ad8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333143 bytes)**  
+-	Total Size: **13.0 MB (12976433 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aaae084accfe856d758a7d4d3cb6ca40d492b5e10b7d147da19bf55b905fe74`
+-	Image ID: `sha256:57de9ef192c82bb8dd22196e25591409634a8fab3f6dcf00b7deb92a3aeabab2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:478561f2918079720dfe250752928777ae6ff4230aeb0fa0d4c258c5ca8ba516`  
-		Last Modified: Tue, 13 May 2025 19:56:39 GMT  
-		Size: 13.3 MB (13318940 bytes)  
+	-	`sha256:8642f17251d4c26b1b42fd470ed649d5014f7276ae641ef962bcbe4de8db2cc9`  
+		Last Modified: Wed, 14 May 2025 23:50:18 GMT  
+		Size: 13.0 MB (12962230 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fed61666fa781c9401a94d9ef4d499cd8fef8f2f9ba0d5e97c5de0f4fd77ff70`  
-		Last Modified: Tue, 13 May 2025 19:56:39 GMT  
+	-	`sha256:35449fe71ba91679fc05c5c52f9fb567ca74b1021f5b2cfed33dba4f5aee90e5`  
+		Last Modified: Wed, 14 May 2025 23:50:17 GMT  
 		Size: 14.2 KB (14203 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10.1-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:d72b9ea73878bd6f4f7cb63a7480d6929532312281e4c48628e752d67b375463
+$ docker pull swift@sha256:a771c1535301d3613909740a0dd5250dca2b76821049089ad27efe18a3ace86b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.4 MB (830444813 bytes)**  
+-	Total Size: **813.2 MB (813170618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57578de0a463539703fe67278b39ff7d56b46ea61e2ebee30484da0dd1083ad4`
+-	Image ID: `sha256:61b48cac763332178923d5d9fca1bcc5fde458565cc9a453b80a129f7322488f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4791,7 +4791,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4809,7 +4809,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4817,7 +4817,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4845,51 +4845,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1a45a45f8c3402fa68c9eb441600db731621950faa44316a68132651b518bff`  
 		Last Modified: Wed, 24 Jul 2024 09:18:06 GMT  
 		Size: 617.7 MB (617684710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f887307692f1e9cee778724b9dd627ef06c73100766473a93e53ffa72e60d0d7`  
-		Last Modified: Tue, 13 May 2025 20:29:59 GMT  
+	-	`sha256:fa3b1257fdb9ab18f8615afb676aca7d91c8de553ef3c3c1b2ed9343167ead04`  
+		Last Modified: Thu, 15 May 2025 00:23:30 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:38572434dfd2cf1a0a07d733ba0b8ca8ae53da9c437cee8846a46a9c177b43f6
+$ docker pull swift@sha256:074dae68b3e6d1f815145fc7c32c2acaf18bb036151440b52d3802fa5651fc11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205075 bytes)**  
+-	Total Size: **12.8 MB (12849772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beedd65042da4794b4342b5ed335bb8f827f93666e3aee798c9928036420ca34`
+-	Image ID: `sha256:74a7ae58e21db31123525e34a1f0a8ec457f983c6d045b884574ee044aab373d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2abd45122f4298da0cd94af1275ef9c862b8efc20c19eb9a7556570c94ededd1`  
-		Last Modified: Tue, 13 May 2025 20:30:00 GMT  
-		Size: 13.2 MB (13190768 bytes)  
+	-	`sha256:784b201e34f2ee11a2037815d4e635e653a6636d3f8b1116bb6143642d025934`  
+		Last Modified: Thu, 15 May 2025 00:23:31 GMT  
+		Size: 12.8 MB (12835465 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2cb5630d4780b0b1568f6c42a469682bc8ca9b2cc83d7a2938ded1bcacab5dad`  
-		Last Modified: Tue, 13 May 2025 20:29:59 GMT  
+	-	`sha256:3d92467789b91d8b1cf45a96409f21cf1814a66e766115698655f9c823ac33a9`  
+		Last Modified: Thu, 15 May 2025 00:23:30 GMT  
 		Size: 14.3 KB (14307 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.10.1-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:c5b58c47edadd9b2f5c60459a9b9ff153ef51c19bd5856c86c7a6e5f1ae6d51f
+$ docker pull swift@sha256:11bbc97bfc987a5028990a154ffdada4f33f2a2d1c08c06439ff60d543052835
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4902,13 +4902,13 @@ $ docker pull swift@sha256:c5b58c47edadd9b2f5c60459a9b9ff153ef51c19bd5856c86c7a6
 ### `swift:5.10.1-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:2e8ac7b09ed3c1b2d239df42ede053b2097e379f8805b630d9de2b63df3b49a5
+$ docker pull swift@sha256:c55877263349a594b937c90c2b1979adb393f94c6e22bcd60ab9d9456bcdb22a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126329722 bytes)**  
+-	Total Size: **126.3 MB (126308283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:809769d4b04846f76d7681b98063df907e6fd55cdc989d615d7e869fd2cc4694`
+-	Image ID: `sha256:3f999ddfb58b365b8163bcc27a801fd299c495f8a588d6c5ef90c01ab2d22a84`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4917,7 +4917,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4935,7 +4935,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4943,7 +4943,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4966,49 +4966,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f4c3a678c16a68b80ccd3c566bb3522318719da32c7ccc3215c8d2e277bd43`  
-		Last Modified: Tue, 13 May 2025 19:54:58 GMT  
-		Size: 46.7 MB (46715863 bytes)  
+	-	`sha256:5a8ae8368e8a92fba479c9c2b020d9e3be4fca5319269d9651aa6622b68fec30`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 46.7 MB (46715424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:0c34286843751c39fbf1f0d915336c3def14af5dd2b9ebedb97ea3a3e8c697c1
+$ docker pull swift@sha256:4a85fa832b6c311049558c979671a0ddb0b24ac0f3ec316a2ad4462456679a9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389318 bytes)**  
+-	Total Size: **6.4 MB (6411903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1565a429831abc199b17381add1a00780d9afc4b8ac2cb7afc920724752f233a`
+-	Image ID: `sha256:68f4701998cf964bf6395c2923d00b18b5040f1c172ad72946c3f736dd2b72a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f122b52e944abc30f3893f54dfd3dd6d11d99b746b534bfb090e2f03a5432ed6`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 6.4 MB (6378087 bytes)  
+	-	`sha256:49d2cabe08ad30ad2436f05249da992915ab6f2c138c0dde6dd0f7b763de97a6`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 6.4 MB (6400673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b86ea855dd657ee0fa1d1eec4427ebc121aa0e7d0281d334a235bebe6ab00ca7`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 11.2 KB (11231 bytes)  
+	-	`sha256:41dccbadea9f494590d5678fa0f139237fbc1b4ce98dbd34e3ce6a0a0b5445a2`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 11.2 KB (11230 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10.1-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:e5c9a030ff9efd5a9f1f173b5abc4fbeb8aede152fd906dcdfc3576e9cd4e9b8
+$ docker pull swift@sha256:028b42b46233bc893c06125acd1f7207e06dc2bba01a0df42ce7cea99bf5d308
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.6 MB (122567924 bytes)**  
+-	Total Size: **122.5 MB (122545954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5c488ffef00b6e0c3b47358e9cdc5bdc21d57140ed6b407bffee864449ad978`
+-	Image ID: `sha256:d0f1260748e7a4479b2cf44d912051358dfab3b56c59e4063d9aa65920e7505e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -5017,7 +5017,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -5035,7 +5035,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -5043,7 +5043,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -5066,37 +5066,37 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37490a1c2688d25aa10025895769937c0d0429c3aac20c311986b10408830b4a`  
-		Last Modified: Tue, 13 May 2025 20:30:56 GMT  
-		Size: 45.2 MB (45172479 bytes)  
+	-	`sha256:2db9772c3082910e6a8c332d9fa0fe47db5f4ba6aa49e30e72dc4e7f40a11979`  
+		Last Modified: Thu, 15 May 2025 00:24:23 GMT  
+		Size: 45.2 MB (45173547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:bd575c5b8a82e63447f163d76a8a90dd9bf55d7ffc8b92e28b210d3f1303db3e
+$ docker pull swift@sha256:05111e4ee894f84f8b3137d61779c87b748f5b48a0a06e098c228adb73a9ae4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385183 bytes)**  
+-	Total Size: **6.4 MB (6407768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98e343deb47d785e7c79ae54f8e7bc3f424ff5f6eed61011c2d99aa384698c3f`
+-	Image ID: `sha256:e82135c2343803387683e9076f8016a880fe9c9696d073ec4cf55d2c4453a01e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:37f8072f8a37d5642d9181047b9f3f63b55b60a79c6514d242a2d3cbca8c8b27`  
-		Last Modified: Tue, 13 May 2025 20:30:54 GMT  
-		Size: 6.4 MB (6373878 bytes)  
+	-	`sha256:c6813dc1fe1bd5e58e789009ea5dcd2333d643fb58c249a06f9e077ffc514472`  
+		Last Modified: Thu, 15 May 2025 00:24:22 GMT  
+		Size: 6.4 MB (6396464 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7794adb6b7bf7649f35a3ad60dddaf04ca647c7b21cc2d9ba03d57607001e81f`  
-		Last Modified: Tue, 13 May 2025 20:30:54 GMT  
-		Size: 11.3 KB (11305 bytes)  
+	-	`sha256:ebe5453c99bae54e337a73212020a3692253b71834919bbf2ad16208bf01a889`  
+		Last Modified: Thu, 15 May 2025 00:24:22 GMT  
+		Size: 11.3 KB (11304 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.10.1-slim`
@@ -6741,7 +6741,7 @@ $ docker pull swift@sha256:f55fd0c209754e6ff03873e7ebc0a2780b7a62c347e396c1b7c90
 ## `swift:5.9-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:264f5d08b3a50125085d2436e88ba43ba36811589605a5a39e0ad902c0436a13
+$ docker pull swift@sha256:30b0bf59028c728b091bec8d3ebc106a8c7e7e44b1a381212215dbc25a17050b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6754,13 +6754,13 @@ $ docker pull swift@sha256:264f5d08b3a50125085d2436e88ba43ba36811589605a5a39e0ad
 ### `swift:5.9-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:9603c6ec03031467bb1cd7e8552e39bc0a6a127fceb8dcf60df29d48bde5a2dc
+$ docker pull swift@sha256:713df316b86a8a9521bbd5f77ff6a05769b8f32ec905e295e109e95b3e9039d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **828.8 MB (828817753 bytes)**  
+-	Total Size: **811.1 MB (811147995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40c943edb74b15c2ee212b54076715e015c2ff4ae97c1e0a5050a080c7f80b55`
+-	Image ID: `sha256:1a01f74cf68fdffd8dbf062a82b50e9d5155de8b33f7afe5f5c30972509068ed`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -6769,7 +6769,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6787,7 +6787,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6795,7 +6795,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6823,57 +6823,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16f996b2c3397e1eb887eaef08ab21976a34a932e1fd6a09edc3a750dac19b8b`  
-		Last Modified: Tue, 13 May 2025 19:56:26 GMT  
-		Size: 142.1 MB (142059035 bytes)  
+	-	`sha256:4b15fb9147f95925bfb26cf4d99625c17603ef587675929c8eb08542488166ce`  
+		Last Modified: Wed, 14 May 2025 23:50:13 GMT  
+		Size: 124.4 MB (124410277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e3b84e0b0a4af75e42ad825d0c6b35b760af581bf2d5a4b350b878039051200`  
 		Last Modified: Mon, 22 Jul 2024 22:09:49 GMT  
 		Size: 607.1 MB (607144685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f725006562e7b7a5caeefca6e2f3234a66d7e0c6a1204a2618e986c54c3380a`  
-		Last Modified: Tue, 13 May 2025 19:56:24 GMT  
+	-	`sha256:93ca5796f265870279cc5b040158ea9540b00145cdf0423a14575393dc3093b8`  
+		Last Modified: Wed, 14 May 2025 23:50:11 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:4bb5d68669c8471d06185ad60f63b13c950b6acc354ba0b60193823710c45c7d
+$ docker pull swift@sha256:2437fba97cc7c4f2611ba2930f078dd2ea7279678e0b4d8406d317724a66a32b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333123 bytes)**  
+-	Total Size: **13.0 MB (12976412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8079135d5a89f45ee539daa2570b37838436e52fe8d8fac758c316cd5d8ab843`
+-	Image ID: `sha256:141b7111d732af773e780879397bc3822721194ff5046c8b7f715896f91b92cb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2264322269447781b3e4a0a1c591428cb138411770e401736ac1a2848534c17d`  
-		Last Modified: Tue, 13 May 2025 19:56:24 GMT  
-		Size: 13.3 MB (13318934 bytes)  
+	-	`sha256:bd1a3eda532a82890c36acb7e86a8caf1c96374609d501e44552d0e81aea6780`  
+		Last Modified: Wed, 14 May 2025 23:50:11 GMT  
+		Size: 13.0 MB (12962224 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:48685574952bc55297799fdee2f54dfc0ae7dbb9e59a92b3024e23d57f52386a`  
-		Last Modified: Tue, 13 May 2025 19:56:23 GMT  
-		Size: 14.2 KB (14189 bytes)  
+	-	`sha256:b75608c6d27c70555ff9e93f91d630c00d75280fd0292bcb9cc43bb5e617307a`  
+		Last Modified: Wed, 14 May 2025 23:50:11 GMT  
+		Size: 14.2 KB (14188 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:f80e7b16315bc6424da071c9b24b5605eb5a4ebbf102a402b4f9fd7514d25ce8
+$ docker pull swift@sha256:14a2a79b96a8d25f2a9ac16401cfaef757b5d749308c03209a03badc73caf598
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **814.7 MB (814742081 bytes)**  
+-	Total Size: **797.5 MB (797467885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ebf3d65f68962532d5af632a1f28b21a99cf9556674ad38e5ba1af165fcb8ae`
+-	Image ID: `sha256:89e37b08e7e105c7387bc98b08167851931907b9a21db4e60526894c80c35271`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -6882,7 +6882,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6900,7 +6900,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6908,7 +6908,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6936,51 +6936,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8485f574f808ff064553a28e0d8a965f1dc079d1971c5ff7056c6587b6ce985`  
 		Last Modified: Wed, 24 Jul 2024 09:29:37 GMT  
 		Size: 602.0 MB (601981978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f847a3135028ff0158dc5b569346f5802090d59ac5b1e294a349ba8f93594545`  
-		Last Modified: Tue, 13 May 2025 20:33:29 GMT  
-		Size: 174.0 B  
+	-	`sha256:91b172b5238e37f864ecee4f7424cd8eeaa4648232b268fb5fcd5ff8ce38697e`  
+		Last Modified: Thu, 15 May 2025 00:26:45 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:28c99739c5e9394ebb2907fc0a0b1d212300af17b8321606b98fb0beb6fe50db
+$ docker pull swift@sha256:1025995da64fbe5c7cb7411ee22ffca5ebe3c999a0f422bc3b8843fdac4031f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205054 bytes)**  
+-	Total Size: **12.8 MB (12849752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bebad620ac30ae322f1c10b98046ea0bfc17bb4147a73be18e2cc386624e8810`
+-	Image ID: `sha256:4cca92e37102cc407edf86c574dd1a635745a53e85cf818be43fd1a1a4af289f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:77bf1a205309bd6c90322184763523cb08719e6614502c4e6aff9e8eb612106a`  
-		Last Modified: Tue, 13 May 2025 20:33:30 GMT  
-		Size: 13.2 MB (13190762 bytes)  
+	-	`sha256:d98142c593bd9a408c9568da5352b753b8833a148bde282b92cd2f46f1bef58d`  
+		Last Modified: Thu, 15 May 2025 00:26:46 GMT  
+		Size: 12.8 MB (12835459 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ceabd98e5d191a391447db57946475086012477bd9d97682003d0bf32f0a287`  
-		Last Modified: Tue, 13 May 2025 20:33:29 GMT  
-		Size: 14.3 KB (14292 bytes)  
+	-	`sha256:fdb2d8f2c9433c02a7ab9d4d5ae61b529969bf15a6e969d216b3aa7cbf7c21c1`  
+		Last Modified: Thu, 15 May 2025 00:26:45 GMT  
+		Size: 14.3 KB (14293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.9-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:06cb188a2dc4d93926e2a50764499db9fd667c6caa9b9ba19e688b145a21c975
+$ docker pull swift@sha256:2a5e4182b66ac53c5c97aae6da01f7dac8685c5b13fd2c3572adc19d8dd937d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6993,13 +6993,13 @@ $ docker pull swift@sha256:06cb188a2dc4d93926e2a50764499db9fd667c6caa9b9ba19e688
 ### `swift:5.9-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:917a9e439b78942ab231c718479d9dfbfcb338b131bc817096acff37199478f7
+$ docker pull swift@sha256:a9d7197d755240bdd3ae25189dac128b32d84e8a2b848a58418767e2ecb28e90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.4 MB (126378410 bytes)**  
+-	Total Size: **126.4 MB (126356968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4960bed8a44d6121572b47cb079836199220758c81b31c0033bd7bc023845a5d`
+-	Image ID: `sha256:e1fbc2d4537ec066d112104dda0649777c2c7e616f9cbea3c9461a5c180d5f00`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -7008,7 +7008,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7026,7 +7026,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7034,7 +7034,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7057,49 +7057,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8597388989eb46149de7c22e00852db955ddea88224fbe84c555cb78e7d4f419`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 46.8 MB (46764551 bytes)  
+	-	`sha256:1b0e54d5c64b0ac8f26eed263a4d94798132ade2b0956014e25e7654602b4077`  
+		Last Modified: Wed, 14 May 2025 23:48:57 GMT  
+		Size: 46.8 MB (46764109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:e103ca91cbcd34ee155eea00f3ec55c5fea8dc5d0324391f0c413e8579951224
+$ docker pull swift@sha256:6d8df515e0cd0cc5d90b59de261aea0bc9a94ab55f4556d823548604205ae7a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389302 bytes)**  
+-	Total Size: **6.4 MB (6411887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f57b9a3e56060a463715a76ed23fac957ea11972d59b52e03a4f5d0328299a9`
+-	Image ID: `sha256:714e4333d223f8381dd63d217a3780c49fa324f10a7abc7339a217f38008890a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ae563951aea73385d970c2241ea724b3b5fa319c7a27f86c3555651e13f46fd`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 6.4 MB (6378083 bytes)  
+	-	`sha256:2598fcd671fa7465c95dcb9bb6bc22348656014d97ff4bbb5575d23627886549`  
+		Last Modified: Wed, 14 May 2025 23:48:56 GMT  
+		Size: 6.4 MB (6400669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0036d381b67f78ad032b000edf662bf55297fd619cfd5612ec6ed49dbef12972`  
-		Last Modified: Tue, 13 May 2025 19:54:56 GMT  
-		Size: 11.2 KB (11219 bytes)  
+	-	`sha256:c4e8124fefc4da97dc62fc6052958b19b433fe905f104ded24dc4b495bc3d8e1`  
+		Last Modified: Wed, 14 May 2025 23:48:56 GMT  
+		Size: 11.2 KB (11218 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:b915f153d557d2f73294ab992a390747240bfb1c2d1cb10a9b84fc117384cca3
+$ docker pull swift@sha256:97c4c36ba81194559b4a7bfa380332c6bb884aaf5f4a958d594669360a3eeee2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.6 MB (122637677 bytes)**  
+-	Total Size: **122.6 MB (122614589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:200bf96f4e702516bfc03721e206cf4d8b008d484ec83290eab7eec3f84ece95`
+-	Image ID: `sha256:9a304d3dae9b06bf25a4881858932142cbdd06107def0216d54ae28d9939bf8d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -7108,7 +7108,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7126,7 +7126,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7134,7 +7134,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7157,36 +7157,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24fdd0d2e3aec55bb8b0539e9015e9ce1eb7d1ae8b335e232c8610bbe8a9f9fd`  
-		Last Modified: Tue, 13 May 2025 20:34:29 GMT  
-		Size: 45.2 MB (45242232 bytes)  
+	-	`sha256:cd1aa8a6f6c9727a2ee981799d2552a7a8bb6bd0986d4842dd67fba944e83191`  
+		Last Modified: Thu, 15 May 2025 00:27:39 GMT  
+		Size: 45.2 MB (45242182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:6eca8c817110dd0107b46b3af7201191d0aa86eee3b38155a39d09e71d7c7e09
+$ docker pull swift@sha256:d7d110b1ddc9aec17ac38452bbc40fbcfc33b73cbf89c5b7696144e3df4b35c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385167 bytes)**  
+-	Total Size: **6.4 MB (6407753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc29c3560c491754f647fb190c49b90a9d75f371b1500d3e8f89b6319d15a9a1`
+-	Image ID: `sha256:17874fc88de8f3ecb5066d0e08803a6101b6dff278feef14be7df7ff76067769`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0b13879144f60530d156280036dbb1ef3df2402b6ebe2dc05d72eabdb2e463fd`  
-		Last Modified: Tue, 13 May 2025 20:34:28 GMT  
-		Size: 6.4 MB (6373874 bytes)  
+	-	`sha256:c7f9508047205d4a16a5fb78b07cefc190f204a3c5b18ac884a919bcab1dc7ee`  
+		Last Modified: Thu, 15 May 2025 00:27:38 GMT  
+		Size: 6.4 MB (6396460 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:564140d1758581b8310f33352143e1678ceca817a2353853fc1ee0092c2ad206`  
-		Last Modified: Tue, 13 May 2025 20:34:27 GMT  
+	-	`sha256:b92b7b6ee3e8879a653cb697896cc2784f1172c2c2da67f80f65b3ecd4ebeda1`  
+		Last Modified: Thu, 15 May 2025 00:27:37 GMT  
 		Size: 11.3 KB (11293 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8832,7 +8832,7 @@ $ docker pull swift@sha256:f55fd0c209754e6ff03873e7ebc0a2780b7a62c347e396c1b7c90
 ## `swift:5.9.2-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:264f5d08b3a50125085d2436e88ba43ba36811589605a5a39e0ad902c0436a13
+$ docker pull swift@sha256:30b0bf59028c728b091bec8d3ebc106a8c7e7e44b1a381212215dbc25a17050b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8845,13 +8845,13 @@ $ docker pull swift@sha256:264f5d08b3a50125085d2436e88ba43ba36811589605a5a39e0ad
 ### `swift:5.9.2-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:9603c6ec03031467bb1cd7e8552e39bc0a6a127fceb8dcf60df29d48bde5a2dc
+$ docker pull swift@sha256:713df316b86a8a9521bbd5f77ff6a05769b8f32ec905e295e109e95b3e9039d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **828.8 MB (828817753 bytes)**  
+-	Total Size: **811.1 MB (811147995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40c943edb74b15c2ee212b54076715e015c2ff4ae97c1e0a5050a080c7f80b55`
+-	Image ID: `sha256:1a01f74cf68fdffd8dbf062a82b50e9d5155de8b33f7afe5f5c30972509068ed`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -8860,7 +8860,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8878,7 +8878,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8886,7 +8886,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8914,57 +8914,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16f996b2c3397e1eb887eaef08ab21976a34a932e1fd6a09edc3a750dac19b8b`  
-		Last Modified: Tue, 13 May 2025 19:56:26 GMT  
-		Size: 142.1 MB (142059035 bytes)  
+	-	`sha256:4b15fb9147f95925bfb26cf4d99625c17603ef587675929c8eb08542488166ce`  
+		Last Modified: Wed, 14 May 2025 23:50:13 GMT  
+		Size: 124.4 MB (124410277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e3b84e0b0a4af75e42ad825d0c6b35b760af581bf2d5a4b350b878039051200`  
 		Last Modified: Mon, 22 Jul 2024 22:09:49 GMT  
 		Size: 607.1 MB (607144685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f725006562e7b7a5caeefca6e2f3234a66d7e0c6a1204a2618e986c54c3380a`  
-		Last Modified: Tue, 13 May 2025 19:56:24 GMT  
+	-	`sha256:93ca5796f265870279cc5b040158ea9540b00145cdf0423a14575393dc3093b8`  
+		Last Modified: Wed, 14 May 2025 23:50:11 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:4bb5d68669c8471d06185ad60f63b13c950b6acc354ba0b60193823710c45c7d
+$ docker pull swift@sha256:2437fba97cc7c4f2611ba2930f078dd2ea7279678e0b4d8406d317724a66a32b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333123 bytes)**  
+-	Total Size: **13.0 MB (12976412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8079135d5a89f45ee539daa2570b37838436e52fe8d8fac758c316cd5d8ab843`
+-	Image ID: `sha256:141b7111d732af773e780879397bc3822721194ff5046c8b7f715896f91b92cb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2264322269447781b3e4a0a1c591428cb138411770e401736ac1a2848534c17d`  
-		Last Modified: Tue, 13 May 2025 19:56:24 GMT  
-		Size: 13.3 MB (13318934 bytes)  
+	-	`sha256:bd1a3eda532a82890c36acb7e86a8caf1c96374609d501e44552d0e81aea6780`  
+		Last Modified: Wed, 14 May 2025 23:50:11 GMT  
+		Size: 13.0 MB (12962224 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:48685574952bc55297799fdee2f54dfc0ae7dbb9e59a92b3024e23d57f52386a`  
-		Last Modified: Tue, 13 May 2025 19:56:23 GMT  
-		Size: 14.2 KB (14189 bytes)  
+	-	`sha256:b75608c6d27c70555ff9e93f91d630c00d75280fd0292bcb9cc43bb5e617307a`  
+		Last Modified: Wed, 14 May 2025 23:50:11 GMT  
+		Size: 14.2 KB (14188 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9.2-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:f80e7b16315bc6424da071c9b24b5605eb5a4ebbf102a402b4f9fd7514d25ce8
+$ docker pull swift@sha256:14a2a79b96a8d25f2a9ac16401cfaef757b5d749308c03209a03badc73caf598
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **814.7 MB (814742081 bytes)**  
+-	Total Size: **797.5 MB (797467885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ebf3d65f68962532d5af632a1f28b21a99cf9556674ad38e5ba1af165fcb8ae`
+-	Image ID: `sha256:89e37b08e7e105c7387bc98b08167851931907b9a21db4e60526894c80c35271`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -8973,7 +8973,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8991,7 +8991,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8999,7 +8999,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9027,51 +9027,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8485f574f808ff064553a28e0d8a965f1dc079d1971c5ff7056c6587b6ce985`  
 		Last Modified: Wed, 24 Jul 2024 09:29:37 GMT  
 		Size: 602.0 MB (601981978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f847a3135028ff0158dc5b569346f5802090d59ac5b1e294a349ba8f93594545`  
-		Last Modified: Tue, 13 May 2025 20:33:29 GMT  
-		Size: 174.0 B  
+	-	`sha256:91b172b5238e37f864ecee4f7424cd8eeaa4648232b268fb5fcd5ff8ce38697e`  
+		Last Modified: Thu, 15 May 2025 00:26:45 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:28c99739c5e9394ebb2907fc0a0b1d212300af17b8321606b98fb0beb6fe50db
+$ docker pull swift@sha256:1025995da64fbe5c7cb7411ee22ffca5ebe3c999a0f422bc3b8843fdac4031f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205054 bytes)**  
+-	Total Size: **12.8 MB (12849752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bebad620ac30ae322f1c10b98046ea0bfc17bb4147a73be18e2cc386624e8810`
+-	Image ID: `sha256:4cca92e37102cc407edf86c574dd1a635745a53e85cf818be43fd1a1a4af289f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:77bf1a205309bd6c90322184763523cb08719e6614502c4e6aff9e8eb612106a`  
-		Last Modified: Tue, 13 May 2025 20:33:30 GMT  
-		Size: 13.2 MB (13190762 bytes)  
+	-	`sha256:d98142c593bd9a408c9568da5352b753b8833a148bde282b92cd2f46f1bef58d`  
+		Last Modified: Thu, 15 May 2025 00:26:46 GMT  
+		Size: 12.8 MB (12835459 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ceabd98e5d191a391447db57946475086012477bd9d97682003d0bf32f0a287`  
-		Last Modified: Tue, 13 May 2025 20:33:29 GMT  
-		Size: 14.3 KB (14292 bytes)  
+	-	`sha256:fdb2d8f2c9433c02a7ab9d4d5ae61b529969bf15a6e969d216b3aa7cbf7c21c1`  
+		Last Modified: Thu, 15 May 2025 00:26:45 GMT  
+		Size: 14.3 KB (14293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.9.2-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:06cb188a2dc4d93926e2a50764499db9fd667c6caa9b9ba19e688b145a21c975
+$ docker pull swift@sha256:2a5e4182b66ac53c5c97aae6da01f7dac8685c5b13fd2c3572adc19d8dd937d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9084,13 +9084,13 @@ $ docker pull swift@sha256:06cb188a2dc4d93926e2a50764499db9fd667c6caa9b9ba19e688
 ### `swift:5.9.2-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:917a9e439b78942ab231c718479d9dfbfcb338b131bc817096acff37199478f7
+$ docker pull swift@sha256:a9d7197d755240bdd3ae25189dac128b32d84e8a2b848a58418767e2ecb28e90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.4 MB (126378410 bytes)**  
+-	Total Size: **126.4 MB (126356968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4960bed8a44d6121572b47cb079836199220758c81b31c0033bd7bc023845a5d`
+-	Image ID: `sha256:e1fbc2d4537ec066d112104dda0649777c2c7e616f9cbea3c9461a5c180d5f00`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -9099,7 +9099,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9117,7 +9117,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9125,7 +9125,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9148,49 +9148,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8597388989eb46149de7c22e00852db955ddea88224fbe84c555cb78e7d4f419`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 46.8 MB (46764551 bytes)  
+	-	`sha256:1b0e54d5c64b0ac8f26eed263a4d94798132ade2b0956014e25e7654602b4077`  
+		Last Modified: Wed, 14 May 2025 23:48:57 GMT  
+		Size: 46.8 MB (46764109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:e103ca91cbcd34ee155eea00f3ec55c5fea8dc5d0324391f0c413e8579951224
+$ docker pull swift@sha256:6d8df515e0cd0cc5d90b59de261aea0bc9a94ab55f4556d823548604205ae7a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389302 bytes)**  
+-	Total Size: **6.4 MB (6411887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f57b9a3e56060a463715a76ed23fac957ea11972d59b52e03a4f5d0328299a9`
+-	Image ID: `sha256:714e4333d223f8381dd63d217a3780c49fa324f10a7abc7339a217f38008890a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ae563951aea73385d970c2241ea724b3b5fa319c7a27f86c3555651e13f46fd`  
-		Last Modified: Tue, 13 May 2025 19:54:57 GMT  
-		Size: 6.4 MB (6378083 bytes)  
+	-	`sha256:2598fcd671fa7465c95dcb9bb6bc22348656014d97ff4bbb5575d23627886549`  
+		Last Modified: Wed, 14 May 2025 23:48:56 GMT  
+		Size: 6.4 MB (6400669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0036d381b67f78ad032b000edf662bf55297fd619cfd5612ec6ed49dbef12972`  
-		Last Modified: Tue, 13 May 2025 19:54:56 GMT  
-		Size: 11.2 KB (11219 bytes)  
+	-	`sha256:c4e8124fefc4da97dc62fc6052958b19b433fe905f104ded24dc4b495bc3d8e1`  
+		Last Modified: Wed, 14 May 2025 23:48:56 GMT  
+		Size: 11.2 KB (11218 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9.2-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:b915f153d557d2f73294ab992a390747240bfb1c2d1cb10a9b84fc117384cca3
+$ docker pull swift@sha256:97c4c36ba81194559b4a7bfa380332c6bb884aaf5f4a958d594669360a3eeee2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.6 MB (122637677 bytes)**  
+-	Total Size: **122.6 MB (122614589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:200bf96f4e702516bfc03721e206cf4d8b008d484ec83290eab7eec3f84ece95`
+-	Image ID: `sha256:9a304d3dae9b06bf25a4881858932142cbdd06107def0216d54ae28d9939bf8d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -9199,7 +9199,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL url="https://www.redhat.com"
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9217,7 +9217,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9225,7 +9225,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9248,36 +9248,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24fdd0d2e3aec55bb8b0539e9015e9ce1eb7d1ae8b335e232c8610bbe8a9f9fd`  
-		Last Modified: Tue, 13 May 2025 20:34:29 GMT  
-		Size: 45.2 MB (45242232 bytes)  
+	-	`sha256:cd1aa8a6f6c9727a2ee981799d2552a7a8bb6bd0986d4842dd67fba944e83191`  
+		Last Modified: Thu, 15 May 2025 00:27:39 GMT  
+		Size: 45.2 MB (45242182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:6eca8c817110dd0107b46b3af7201191d0aa86eee3b38155a39d09e71d7c7e09
+$ docker pull swift@sha256:d7d110b1ddc9aec17ac38452bbc40fbcfc33b73cbf89c5b7696144e3df4b35c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385167 bytes)**  
+-	Total Size: **6.4 MB (6407753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc29c3560c491754f647fb190c49b90a9d75f371b1500d3e8f89b6319d15a9a1`
+-	Image ID: `sha256:17874fc88de8f3ecb5066d0e08803a6101b6dff278feef14be7df7ff76067769`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0b13879144f60530d156280036dbb1ef3df2402b6ebe2dc05d72eabdb2e463fd`  
-		Last Modified: Tue, 13 May 2025 20:34:28 GMT  
-		Size: 6.4 MB (6373874 bytes)  
+	-	`sha256:c7f9508047205d4a16a5fb78b07cefc190f204a3c5b18ac884a919bcab1dc7ee`  
+		Last Modified: Thu, 15 May 2025 00:27:38 GMT  
+		Size: 6.4 MB (6396460 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:564140d1758581b8310f33352143e1678ceca817a2353853fc1ee0092c2ad206`  
-		Last Modified: Tue, 13 May 2025 20:34:27 GMT  
+	-	`sha256:b92b7b6ee3e8879a653cb697896cc2784f1172c2c2da67f80f65b3ecd4ebeda1`  
+		Last Modified: Thu, 15 May 2025 00:27:37 GMT  
 		Size: 11.3 KB (11293 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11486,7 +11486,7 @@ $ docker pull swift@sha256:317bd6f3772c2e33f1363ffdd34a641a42744bf30543f277f0a98
 ## `swift:6.0-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:5a2353202312dcfcb66ae0d1ce7ac63955f856c97649c4a4d520653f6307b1f5
+$ docker pull swift@sha256:6e3697cb595ce1454d9fcbef9803d000bde71a591a3700c29b37f28e23bed954
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11499,13 +11499,13 @@ $ docker pull swift@sha256:5a2353202312dcfcb66ae0d1ce7ac63955f856c97649c4a4d5206
 ### `swift:6.0-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:2491f1b95baa16af49ebbb9a24fc4944ca191bfee236e587acd695bf10689089
+$ docker pull swift@sha256:ec2af11417767335e5c1f2e2a22f07a1ee822b9e022f3ade2a8014de05e0e131
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 GB (1021948972 bytes)**  
+-	Total Size: **1.0 GB (1004280655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:144a451d1acdb6a7ea651e16383c432d48dd47c6e775cb96db907c4ffcdbab86`
+-	Image ID: `sha256:2d21a4641adbf68da0890ea5bac0f896de6c746e3e40cd09d65f82f8978a3eaa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11514,7 +11514,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11532,7 +11532,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11540,7 +11540,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11568,57 +11568,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ecf8f6451bae540492cc07053e904efda1a0692f7f758bdf17e3b44c3d37e85`  
-		Last Modified: Tue, 13 May 2025 19:57:00 GMT  
-		Size: 142.1 MB (142057607 bytes)  
+	-	`sha256:a41bfe63fa485c7eddde6ed211cf90367f66d099bc3b6babaf4b41367cf0b0dd`  
+		Last Modified: Wed, 14 May 2025 23:51:08 GMT  
+		Size: 124.4 MB (124410290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:becb7870dcf6d647e51c7c441149215366fec01a7644653ad7f9dc8baebabdb5`  
 		Last Modified: Thu, 12 Dec 2024 22:37:40 GMT  
 		Size: 800.3 MB (800277307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64cb625ec067aa15bf7702e13b4daa1ec047237e4e36fc04bef73abc09ea8d7`  
-		Last Modified: Tue, 13 May 2025 19:56:58 GMT  
+	-	`sha256:90f1542cdc930875a3ff2909cc93666daa5dc02ba31b66f063eb7f793ee2b712`  
+		Last Modified: Wed, 14 May 2025 23:51:03 GMT  
 		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:2122817f6109cd1bb7df291f80389fb9c9c4676a09ae669a9ee18555f405fd86
+$ docker pull swift@sha256:bbda18919a5d10b853cf9b4f099fafc94cb5d4ede58e641978ac9ba2c64301be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333089 bytes)**  
+-	Total Size: **13.0 MB (12976379 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f395689a12d9c3e06c8ae14696726a73de3abe2325b015eaec67cf4a29565b`
+-	Image ID: `sha256:39b0e560dace0f2e319d1ca4b4f07c93d9033e2ee4013860fa7fc93556d0bce2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa60f945b32d17bc9f74d15d102435d856ffc25dc2b9af83d1fe486c4eca2677`  
-		Last Modified: Tue, 13 May 2025 19:56:58 GMT  
-		Size: 13.3 MB (13318932 bytes)  
+	-	`sha256:bdde748977a4f7e1808cf8ea2db45922c62660502cea6a078e841e47bb9416c5`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 13.0 MB (12962222 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:81787c5134ca2bd62c89f5b21654b3797a740802781a80ea5bcf8aaba4321c27`  
-		Last Modified: Tue, 13 May 2025 19:56:58 GMT  
+	-	`sha256:570d6b02e81e5b46a31262b35c6fbaac6f688dc8c5a581f16684d2d88faf22a3`  
+		Last Modified: Wed, 14 May 2025 23:51:03 GMT  
 		Size: 14.2 KB (14157 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:8355c8e0b18cb75cfe5da1763387de7285a9bb3c8cc1020c37aba5e176a1dfa4
+$ docker pull swift@sha256:94fce5703ff19ac703af3e98804b95be5f1c3b47f54214306f10da33e630af1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 GB (1009233643 bytes)**  
+-	Total Size: **992.0 MB (991959447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3205e406e0820ed9b40b6933b6ee07d5353b2ca48101971b74f3b63f407c6a13`
+-	Image ID: `sha256:970364e2255654d59bc548244e4dec9b6be0ee53c31e60555fcd69fa1bbd3fee`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11627,7 +11627,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11645,7 +11645,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11653,7 +11653,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11681,51 +11681,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f936313db041fe3dee46ad15cc3dda672e3ec8f43c577c59bd936fefae706a1a`  
 		Last Modified: Fri, 13 Dec 2024 00:30:33 GMT  
 		Size: 796.5 MB (796473513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:098d772c614ed4dd4abb7cbc5235e1e92de06912d0ca36f11de7de8c14bc9e17`  
-		Last Modified: Tue, 13 May 2025 20:26:33 GMT  
-		Size: 201.0 B  
+	-	`sha256:6f371385d7c3af77c1bc2ec6b3e01703a1675ca9f8be9403b0898de2eff51057`  
+		Last Modified: Thu, 15 May 2025 00:20:06 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:92a9f2a8ec9d4f7fe43447906af185674ec798d53ea77536ec80bc1ca467cfb7
+$ docker pull swift@sha256:81a40ed9e8aa2ed134b86bdd946bc8df773eea74929b978da1f00fa6cddc53b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205020 bytes)**  
+-	Total Size: **12.8 MB (12849717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:973cdb3f9477a20684603e557e737ab3b87aa32ba16c360dab920921c5664335`
+-	Image ID: `sha256:ef73a23e72e1cc3b6bceee3611cd377a123a6350b3fb4e48a35b4e6b1c354460`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08b922a6afc461c228a8bd25d298c8b3111ff07e41d223b3da5423e5a7384d7d`  
-		Last Modified: Tue, 13 May 2025 20:26:34 GMT  
-		Size: 13.2 MB (13190760 bytes)  
+	-	`sha256:d87d6e0da1ddfc9a9c5e2ddf6108d1ec9eee30a292f4afceacbe6869d00b11f1`  
+		Last Modified: Thu, 15 May 2025 00:20:07 GMT  
+		Size: 12.8 MB (12835457 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a210735c99635dd515db542e497b1046f1d08575019ba535c9488781947dc37e`  
-		Last Modified: Tue, 13 May 2025 20:26:33 GMT  
+	-	`sha256:1017dc586d71578a60c8ba8849e4dea809d21a6d09503f6c5fe629411fdb7318`  
+		Last Modified: Thu, 15 May 2025 00:20:07 GMT  
 		Size: 14.3 KB (14260 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.0-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:d7463fb04e66c461402d069fd2e736cc092dde3d88b298055002aea98e702407
+$ docker pull swift@sha256:2a1d915e2e149e5fa2bfddcf7f1c3b9b0909a30c82dfcb6666b25de1c148e028
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11738,13 +11738,13 @@ $ docker pull swift@sha256:d7463fb04e66c461402d069fd2e736cc092dde3d88b298055002a
 ### `swift:6.0-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:df0de9fbe1f80adcd4c82d5ef7c29a177279d9c25ca7e9b5a0bdbadbd094c960
+$ docker pull swift@sha256:b47861aa1058f46afa4fb50f9a171db0ef617dbcc71acd660391d5ad7298f072
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134592673 bytes)**  
+-	Total Size: **134.6 MB (134571368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f9284813743780ed51205dcf9ed74347894c2b00362ec1adc2c8c317f305e19`
+-	Image ID: `sha256:2ed33ff6768e4012f1576265c533b2bd801a71407f61eab943367f9038cc80d9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11753,7 +11753,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11771,7 +11771,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11779,7 +11779,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11802,49 +11802,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c11347631890746b9195041330af9c1af4a93e58404eca68e418f8ea9d2f2cd8`  
-		Last Modified: Tue, 13 May 2025 19:55:10 GMT  
-		Size: 55.0 MB (54978814 bytes)  
+	-	`sha256:659c59c561f67ead9ab7740cb0c68c50a470fe42bc40a9caa3a78b0a8118b8c5`  
+		Last Modified: Wed, 14 May 2025 23:49:16 GMT  
+		Size: 55.0 MB (54978509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:1dcd845b72778c66236dda6948727415f7349b2c7cea8e923d2643507614bfe6
+$ docker pull swift@sha256:d3858c37b4d796abf623874af36d5a31b657bb6210b84a929908ec54d0e1061a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389270 bytes)**  
+-	Total Size: **6.4 MB (6411856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8cfd131196719ee44dd1ea61e108f9993ef7678b4d4a92953aababf3aafd109c`
+-	Image ID: `sha256:71d7a39d8896c1d94bf5ef5ee151038bfe5e106012d9d139d9bbde2d36f0689d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b339f6f7255a061fa6f6f7960eff5ee22d1df9cb0a0226cefce58d70afbca81`  
-		Last Modified: Tue, 13 May 2025 19:55:08 GMT  
-		Size: 6.4 MB (6378083 bytes)  
+	-	`sha256:b45fd4c955f268283b74ae5fcbc68dceb39257d467215f8f8929822cc8065d31`  
+		Last Modified: Wed, 14 May 2025 23:49:14 GMT  
+		Size: 6.4 MB (6400669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d1dbb10554028ab2132c7ae36b2941dd69a3743447d53a8458e02a7579251108`  
-		Last Modified: Tue, 13 May 2025 19:55:08 GMT  
+	-	`sha256:1b46b4e85d983fdf42e2fac96563d911d75a7f8afda5b447e33ca3fbf101e66a`  
+		Last Modified: Wed, 14 May 2025 23:49:14 GMT  
 		Size: 11.2 KB (11187 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:323205fbde4416bdcf7c8c1d072e266206077f8d2fd34e246d3f915c9e9286c9
+$ docker pull swift@sha256:760f132c7b895c857433b3e1133e7d37ea1391fdc47dd18be32bd463b7cb19bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.3 MB (131254005 bytes)**  
+-	Total Size: **131.2 MB (131232195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d532be2a90f5dc37cf9b727da25831080bca595c650a42a9245ea64435f7202`
+-	Image ID: `sha256:65f2a487a39b3b8d4cbbcf4a886a13cd104201b670382569cfd7766dcf2908ed`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11853,7 +11853,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11871,7 +11871,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11879,7 +11879,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11902,36 +11902,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72094759e64af977dcfd285b32ca02f02e2159dc1b72b54e2bd359a333be1948`  
-		Last Modified: Tue, 13 May 2025 20:27:41 GMT  
-		Size: 53.9 MB (53858560 bytes)  
+	-	`sha256:ad0bd29f335e7970a870ca91833c81aacf13d0ae95872aae4359052f20e99047`  
+		Last Modified: Thu, 15 May 2025 00:21:20 GMT  
+		Size: 53.9 MB (53859788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7ee89a18ceae24c2795203f3e98fdc8b2ff57c57b6d7a9a43e01ce567420c5fa
+$ docker pull swift@sha256:3c8a1d69f09d1fc617e3963ae87d03669b62209c648a2dfade20f0e0f357e087
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385135 bytes)**  
+-	Total Size: **6.4 MB (6407721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d415d22b3b43901758438600bfe6876f24f13929eb9dad262f0a3dfa895271c`
+-	Image ID: `sha256:112760459e9ee06969b4a02855dce51f893c77ef48a03d68dfbae0ac1b3925bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9c7b633af771841c8aae14968f2821a707248b912c5b98a154fe655be882f198`  
-		Last Modified: Tue, 13 May 2025 20:27:40 GMT  
-		Size: 6.4 MB (6373874 bytes)  
+	-	`sha256:4519c3bb840f21a8396f539ddd9988c341381d8c2c15b00c436e433582e5f601`  
+		Last Modified: Thu, 15 May 2025 00:21:18 GMT  
+		Size: 6.4 MB (6396460 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b42e5fbb78d5fe97cd7e2759782b420ab4727bc620826df83fba4e5aa75a3dea`  
-		Last Modified: Tue, 13 May 2025 20:27:39 GMT  
+	-	`sha256:4da265ec5bd77eff5e52f91b01affad56f53453a65fcb7e84c4f07b7db9332f0`  
+		Last Modified: Thu, 15 May 2025 00:21:17 GMT  
 		Size: 11.3 KB (11261 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14140,7 +14140,7 @@ $ docker pull swift@sha256:317bd6f3772c2e33f1363ffdd34a641a42744bf30543f277f0a98
 ## `swift:6.0.3-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:5a2353202312dcfcb66ae0d1ce7ac63955f856c97649c4a4d520653f6307b1f5
+$ docker pull swift@sha256:6e3697cb595ce1454d9fcbef9803d000bde71a591a3700c29b37f28e23bed954
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14153,13 +14153,13 @@ $ docker pull swift@sha256:5a2353202312dcfcb66ae0d1ce7ac63955f856c97649c4a4d5206
 ### `swift:6.0.3-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:2491f1b95baa16af49ebbb9a24fc4944ca191bfee236e587acd695bf10689089
+$ docker pull swift@sha256:ec2af11417767335e5c1f2e2a22f07a1ee822b9e022f3ade2a8014de05e0e131
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 GB (1021948972 bytes)**  
+-	Total Size: **1.0 GB (1004280655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:144a451d1acdb6a7ea651e16383c432d48dd47c6e775cb96db907c4ffcdbab86`
+-	Image ID: `sha256:2d21a4641adbf68da0890ea5bac0f896de6c746e3e40cd09d65f82f8978a3eaa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14168,7 +14168,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14186,7 +14186,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14194,7 +14194,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14222,57 +14222,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ecf8f6451bae540492cc07053e904efda1a0692f7f758bdf17e3b44c3d37e85`  
-		Last Modified: Tue, 13 May 2025 19:57:00 GMT  
-		Size: 142.1 MB (142057607 bytes)  
+	-	`sha256:a41bfe63fa485c7eddde6ed211cf90367f66d099bc3b6babaf4b41367cf0b0dd`  
+		Last Modified: Wed, 14 May 2025 23:51:08 GMT  
+		Size: 124.4 MB (124410290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:becb7870dcf6d647e51c7c441149215366fec01a7644653ad7f9dc8baebabdb5`  
 		Last Modified: Thu, 12 Dec 2024 22:37:40 GMT  
 		Size: 800.3 MB (800277307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f64cb625ec067aa15bf7702e13b4daa1ec047237e4e36fc04bef73abc09ea8d7`  
-		Last Modified: Tue, 13 May 2025 19:56:58 GMT  
+	-	`sha256:90f1542cdc930875a3ff2909cc93666daa5dc02ba31b66f063eb7f793ee2b712`  
+		Last Modified: Wed, 14 May 2025 23:51:03 GMT  
 		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:2122817f6109cd1bb7df291f80389fb9c9c4676a09ae669a9ee18555f405fd86
+$ docker pull swift@sha256:bbda18919a5d10b853cf9b4f099fafc94cb5d4ede58e641978ac9ba2c64301be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333089 bytes)**  
+-	Total Size: **13.0 MB (12976379 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f395689a12d9c3e06c8ae14696726a73de3abe2325b015eaec67cf4a29565b`
+-	Image ID: `sha256:39b0e560dace0f2e319d1ca4b4f07c93d9033e2ee4013860fa7fc93556d0bce2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa60f945b32d17bc9f74d15d102435d856ffc25dc2b9af83d1fe486c4eca2677`  
-		Last Modified: Tue, 13 May 2025 19:56:58 GMT  
-		Size: 13.3 MB (13318932 bytes)  
+	-	`sha256:bdde748977a4f7e1808cf8ea2db45922c62660502cea6a078e841e47bb9416c5`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 13.0 MB (12962222 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:81787c5134ca2bd62c89f5b21654b3797a740802781a80ea5bcf8aaba4321c27`  
-		Last Modified: Tue, 13 May 2025 19:56:58 GMT  
+	-	`sha256:570d6b02e81e5b46a31262b35c6fbaac6f688dc8c5a581f16684d2d88faf22a3`  
+		Last Modified: Wed, 14 May 2025 23:51:03 GMT  
 		Size: 14.2 KB (14157 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0.3-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:8355c8e0b18cb75cfe5da1763387de7285a9bb3c8cc1020c37aba5e176a1dfa4
+$ docker pull swift@sha256:94fce5703ff19ac703af3e98804b95be5f1c3b47f54214306f10da33e630af1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 GB (1009233643 bytes)**  
+-	Total Size: **992.0 MB (991959447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3205e406e0820ed9b40b6933b6ee07d5353b2ca48101971b74f3b63f407c6a13`
+-	Image ID: `sha256:970364e2255654d59bc548244e4dec9b6be0ee53c31e60555fcd69fa1bbd3fee`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14281,7 +14281,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14299,7 +14299,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14307,7 +14307,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14335,51 +14335,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f936313db041fe3dee46ad15cc3dda672e3ec8f43c577c59bd936fefae706a1a`  
 		Last Modified: Fri, 13 Dec 2024 00:30:33 GMT  
 		Size: 796.5 MB (796473513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:098d772c614ed4dd4abb7cbc5235e1e92de06912d0ca36f11de7de8c14bc9e17`  
-		Last Modified: Tue, 13 May 2025 20:26:33 GMT  
-		Size: 201.0 B  
+	-	`sha256:6f371385d7c3af77c1bc2ec6b3e01703a1675ca9f8be9403b0898de2eff51057`  
+		Last Modified: Thu, 15 May 2025 00:20:06 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:92a9f2a8ec9d4f7fe43447906af185674ec798d53ea77536ec80bc1ca467cfb7
+$ docker pull swift@sha256:81a40ed9e8aa2ed134b86bdd946bc8df773eea74929b978da1f00fa6cddc53b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205020 bytes)**  
+-	Total Size: **12.8 MB (12849717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:973cdb3f9477a20684603e557e737ab3b87aa32ba16c360dab920921c5664335`
+-	Image ID: `sha256:ef73a23e72e1cc3b6bceee3611cd377a123a6350b3fb4e48a35b4e6b1c354460`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08b922a6afc461c228a8bd25d298c8b3111ff07e41d223b3da5423e5a7384d7d`  
-		Last Modified: Tue, 13 May 2025 20:26:34 GMT  
-		Size: 13.2 MB (13190760 bytes)  
+	-	`sha256:d87d6e0da1ddfc9a9c5e2ddf6108d1ec9eee30a292f4afceacbe6869d00b11f1`  
+		Last Modified: Thu, 15 May 2025 00:20:07 GMT  
+		Size: 12.8 MB (12835457 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a210735c99635dd515db542e497b1046f1d08575019ba535c9488781947dc37e`  
-		Last Modified: Tue, 13 May 2025 20:26:33 GMT  
+	-	`sha256:1017dc586d71578a60c8ba8849e4dea809d21a6d09503f6c5fe629411fdb7318`  
+		Last Modified: Thu, 15 May 2025 00:20:07 GMT  
 		Size: 14.3 KB (14260 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.0.3-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:d7463fb04e66c461402d069fd2e736cc092dde3d88b298055002aea98e702407
+$ docker pull swift@sha256:2a1d915e2e149e5fa2bfddcf7f1c3b9b0909a30c82dfcb6666b25de1c148e028
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14392,13 +14392,13 @@ $ docker pull swift@sha256:d7463fb04e66c461402d069fd2e736cc092dde3d88b298055002a
 ### `swift:6.0.3-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:df0de9fbe1f80adcd4c82d5ef7c29a177279d9c25ca7e9b5a0bdbadbd094c960
+$ docker pull swift@sha256:b47861aa1058f46afa4fb50f9a171db0ef617dbcc71acd660391d5ad7298f072
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134592673 bytes)**  
+-	Total Size: **134.6 MB (134571368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f9284813743780ed51205dcf9ed74347894c2b00362ec1adc2c8c317f305e19`
+-	Image ID: `sha256:2ed33ff6768e4012f1576265c533b2bd801a71407f61eab943367f9038cc80d9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14407,7 +14407,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14425,7 +14425,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14433,7 +14433,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14456,49 +14456,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c11347631890746b9195041330af9c1af4a93e58404eca68e418f8ea9d2f2cd8`  
-		Last Modified: Tue, 13 May 2025 19:55:10 GMT  
-		Size: 55.0 MB (54978814 bytes)  
+	-	`sha256:659c59c561f67ead9ab7740cb0c68c50a470fe42bc40a9caa3a78b0a8118b8c5`  
+		Last Modified: Wed, 14 May 2025 23:49:16 GMT  
+		Size: 55.0 MB (54978509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:1dcd845b72778c66236dda6948727415f7349b2c7cea8e923d2643507614bfe6
+$ docker pull swift@sha256:d3858c37b4d796abf623874af36d5a31b657bb6210b84a929908ec54d0e1061a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389270 bytes)**  
+-	Total Size: **6.4 MB (6411856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8cfd131196719ee44dd1ea61e108f9993ef7678b4d4a92953aababf3aafd109c`
+-	Image ID: `sha256:71d7a39d8896c1d94bf5ef5ee151038bfe5e106012d9d139d9bbde2d36f0689d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b339f6f7255a061fa6f6f7960eff5ee22d1df9cb0a0226cefce58d70afbca81`  
-		Last Modified: Tue, 13 May 2025 19:55:08 GMT  
-		Size: 6.4 MB (6378083 bytes)  
+	-	`sha256:b45fd4c955f268283b74ae5fcbc68dceb39257d467215f8f8929822cc8065d31`  
+		Last Modified: Wed, 14 May 2025 23:49:14 GMT  
+		Size: 6.4 MB (6400669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d1dbb10554028ab2132c7ae36b2941dd69a3743447d53a8458e02a7579251108`  
-		Last Modified: Tue, 13 May 2025 19:55:08 GMT  
+	-	`sha256:1b46b4e85d983fdf42e2fac96563d911d75a7f8afda5b447e33ca3fbf101e66a`  
+		Last Modified: Wed, 14 May 2025 23:49:14 GMT  
 		Size: 11.2 KB (11187 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0.3-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:323205fbde4416bdcf7c8c1d072e266206077f8d2fd34e246d3f915c9e9286c9
+$ docker pull swift@sha256:760f132c7b895c857433b3e1133e7d37ea1391fdc47dd18be32bd463b7cb19bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.3 MB (131254005 bytes)**  
+-	Total Size: **131.2 MB (131232195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d532be2a90f5dc37cf9b727da25831080bca595c650a42a9245ea64435f7202`
+-	Image ID: `sha256:65f2a487a39b3b8d4cbbcf4a886a13cd104201b670382569cfd7766dcf2908ed`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14507,7 +14507,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL url="https://www.redhat.com"
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14525,7 +14525,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14533,7 +14533,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14556,36 +14556,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72094759e64af977dcfd285b32ca02f02e2159dc1b72b54e2bd359a333be1948`  
-		Last Modified: Tue, 13 May 2025 20:27:41 GMT  
-		Size: 53.9 MB (53858560 bytes)  
+	-	`sha256:ad0bd29f335e7970a870ca91833c81aacf13d0ae95872aae4359052f20e99047`  
+		Last Modified: Thu, 15 May 2025 00:21:20 GMT  
+		Size: 53.9 MB (53859788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7ee89a18ceae24c2795203f3e98fdc8b2ff57c57b6d7a9a43e01ce567420c5fa
+$ docker pull swift@sha256:3c8a1d69f09d1fc617e3963ae87d03669b62209c648a2dfade20f0e0f357e087
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385135 bytes)**  
+-	Total Size: **6.4 MB (6407721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d415d22b3b43901758438600bfe6876f24f13929eb9dad262f0a3dfa895271c`
+-	Image ID: `sha256:112760459e9ee06969b4a02855dce51f893c77ef48a03d68dfbae0ac1b3925bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9c7b633af771841c8aae14968f2821a707248b912c5b98a154fe655be882f198`  
-		Last Modified: Tue, 13 May 2025 20:27:40 GMT  
-		Size: 6.4 MB (6373874 bytes)  
+	-	`sha256:4519c3bb840f21a8396f539ddd9988c341381d8c2c15b00c436e433582e5f601`  
+		Last Modified: Thu, 15 May 2025 00:21:18 GMT  
+		Size: 6.4 MB (6396460 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b42e5fbb78d5fe97cd7e2759782b420ab4727bc620826df83fba4e5aa75a3dea`  
-		Last Modified: Tue, 13 May 2025 20:27:39 GMT  
+	-	`sha256:4da265ec5bd77eff5e52f91b01affad56f53453a65fcb7e84c4f07b7db9332f0`  
+		Last Modified: Thu, 15 May 2025 00:21:17 GMT  
 		Size: 11.3 KB (11261 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16794,7 +16794,7 @@ $ docker pull swift@sha256:7e7ca554c5e005361395d09439617358abb40f81eef125ec79387
 ## `swift:6.1-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:497d578afaf5f898fe4f1b7e55256841be73bc517945a6fef258400d9dd22fde
+$ docker pull swift@sha256:2af43adee1d3fd8f1c4c9d3c3d0c4293706c3bf2871023fdfb610b2a28ac0552
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16807,13 +16807,13 @@ $ docker pull swift@sha256:497d578afaf5f898fe4f1b7e55256841be73bc517945a6fef2584
 ### `swift:6.1-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:3cf06666ae149ded92e6b027eca6bba3b34d345302abf72dd8f54e8027865b9a
+$ docker pull swift@sha256:30e969c0fbd42eeb1d3f82851b9e79ddc5e37010b8d86fec069427d7c1316c39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1114500381 bytes)**  
+-	Total Size: **1.1 GB (1096831764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4277583b588aa29438f6a510a03cd1471316a7cbbf91c19f043c3d420945e01a`
+-	Image ID: `sha256:c0b36e928fdd764c7eaaea9df57e333146df6f196e39f6a9ddaff466db75e56c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -16822,7 +16822,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -16840,7 +16840,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -16848,7 +16848,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -16876,57 +16876,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea284f168ce9339639e92f7a6a9dd237557aaefb907c742e4b022accf758ad87`  
-		Last Modified: Tue, 13 May 2025 19:56:59 GMT  
-		Size: 142.1 MB (142057936 bytes)  
+	-	`sha256:109256f8c1f9d23148400dec331b7433bfdc6eb53036696a13f12a315a91bb23`  
+		Last Modified: Wed, 14 May 2025 23:51:08 GMT  
+		Size: 124.4 MB (124410320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e52c7a91a4cd942cf259b9a0a4b340e167411225580f6094cfa5cd8aa79969e2`  
 		Last Modified: Tue, 01 Apr 2025 17:14:11 GMT  
 		Size: 892.8 MB (892828412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96610aa5706716db49a19b454ba5b4e578f1f38fc8cdc87c74f1f5af9067b5e2`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 174.0 B  
+	-	`sha256:c5738f6cbce85ff91cdc881c09ff9319091cecef6d27fe382e09ce0a9cdfd8bd`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:5a1862383be4b8f3bea8d27a33496288b15fe79988b6aa0bb28b75ab3a5c4432
+$ docker pull swift@sha256:752a03d15baab3c26c25734502a0ab3f4b8afc1f8837bff0e98884f274136b8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333676 bytes)**  
+-	Total Size: **13.0 MB (12976967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18e058bd6678e5302da4121b678ab21bef4b62807f9af8e0977c31a42f39c342`
+-	Image ID: `sha256:e56e093e617157866847842b8102ddd84beb917cfe8636c154e099d2c05239c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3879b76eb7503da6667a2564de4a24e2dbdbe06fc70aff8f1c63f1dfa7c6e6f6`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 13.3 MB (13319230 bytes)  
+	-	`sha256:fae761cdbad49adcf6f043a65f6a4b3103073b8239cffa7d12f9c12cacef8fa1`  
+		Last Modified: Wed, 14 May 2025 23:51:05 GMT  
+		Size: 13.0 MB (12962520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866f434a6669320c52d78937771899ef1e82851be346a8f03277ddef0870f42e`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 14.4 KB (14446 bytes)  
+	-	`sha256:a11a633fa6a280cb02dfa57a14f21cae9e7d27e4aeaf990fc30791da0d80470e`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 14.4 KB (14447 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:24a2f9a5c2af1f236d4fe9e0d063477446d2a6b6cd6810655ce1913fa6e2b0de
+$ docker pull swift@sha256:12c3f468c9959e9a682f040583eef36154b383ec5b247b13fa46f7ccccb5b033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1102221756 bytes)**  
+-	Total Size: **1.1 GB (1084947562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a27753c46e47edea9fad6a5d703bb60444c11b1e6e0a3c45d6ecb53402a869ce`
+-	Image ID: `sha256:d0ef43e3904b06324b467c93f64b6144e23928c639ccce67cfcdd1d58bbed957`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -16935,7 +16935,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -16953,7 +16953,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -16961,7 +16961,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -16989,51 +16989,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:863be352cf308f98508d8edca1c315d6970d6eff40f84c274bc9add322b91f5b`  
 		Last Modified: Tue, 01 Apr 2025 18:53:37 GMT  
 		Size: 889.5 MB (889461654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f122577c0b313838d1e97b587fb88c1b59d5a7da3f12d0d2ee74a239968d9448`  
-		Last Modified: Tue, 13 May 2025 20:22:30 GMT  
-		Size: 173.0 B  
+	-	`sha256:628eba78a075a4ce249b607f45fe4a9b2bcf232aafdd774c281952bd9072e2b3`  
+		Last Modified: Thu, 15 May 2025 00:15:59 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7a191bce9a14def757b69440b6937885ecc9f3ddac48e5245e860d206e2d86e9
+$ docker pull swift@sha256:8f612db0c16389bf1fb79b7942efd58337833a5157b8438d85dbc1ba3d7a1847
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205633 bytes)**  
+-	Total Size: **12.9 MB (12850330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3f4243e49810f15c40b6f1540faa9c94e3fe7a8a34ee0bc4729372bd99284b8`
+-	Image ID: `sha256:e0a44af9177045b584a17a5aa8581de1039162e237a028746e50f68bf31d376a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5f199a0b54bb61011880620df6134217a5c1f0b83dd8a2e59fe3fed8a78ab76b`  
-		Last Modified: Tue, 13 May 2025 20:22:31 GMT  
-		Size: 13.2 MB (13191070 bytes)  
+	-	`sha256:f5aa520eaf89a124c0773bc4004e4af0935f7ea49d5f715c7bd40606d8ee806f`  
+		Last Modified: Thu, 15 May 2025 00:16:01 GMT  
+		Size: 12.8 MB (12835767 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96cfa6fd3df6d0ed6d03ee832f74fde7a68c93780347dc092943971e563f1d4d`  
-		Last Modified: Tue, 13 May 2025 20:22:30 GMT  
+	-	`sha256:3acdfc107437bef655ef859508323080db24672cb5444ce46a0e0b5347702ba3`  
+		Last Modified: Thu, 15 May 2025 00:15:59 GMT  
 		Size: 14.6 KB (14563 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.1-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:2f1d6c940dc9f1ca5cb9c56d2ac9a37b2f2ee2a7061ba3cae484fabe13de6baa
+$ docker pull swift@sha256:3f7793e8ff1d7d88b394ccd3e44504c0cd634c079b31d74adb539ccf003377f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17046,13 +17046,13 @@ $ docker pull swift@sha256:2f1d6c940dc9f1ca5cb9c56d2ac9a37b2f2ee2a7061ba3cae484f
 ### `swift:6.1-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:693b777577bf96d0427938b5463ef82fcfe31151842f659dbc17900805296d94
+$ docker pull swift@sha256:57349cc49b080dc76d6e0f49dbc592dc5db4bcfc2c43f444b5bfbe79d90325f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134552820 bytes)**  
+-	Total Size: **134.5 MB (134531539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22a54afc305f74caca5c6b351462ab241f34208a20683b28a54177ca529fc40d`
+-	Image ID: `sha256:b8e4f7f70867d93275bcc72246806d38f611dc94df9287589f915d2d9466855c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -17061,7 +17061,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -17079,7 +17079,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -17087,7 +17087,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -17110,49 +17110,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daadbda7b75cf6234a3ac20416cbdfdc328350200a9bd92091b7a7c59a6b03a5`  
-		Last Modified: Tue, 13 May 2025 19:55:15 GMT  
-		Size: 54.9 MB (54938961 bytes)  
+	-	`sha256:435f037a30e040c172dc1355e0ce5467f80d5872ec51dea6aa8e0772ef65f6c1`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 54.9 MB (54938680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:da20770c07364e6b5de25b6037796d6d2284e024864e1d25751acf64b2c9a50b
+$ docker pull swift@sha256:fbfafbea92086b2d84d16ccfcf9a1526030bbf5afbe9d70193f04447deebc603
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389886 bytes)**  
+-	Total Size: **6.4 MB (6412471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcb72908f42a49bd01ef55d958dabd6dc6bbf6b0996b288e8e7390c7a40343bc`
+-	Image ID: `sha256:88a4f4756de538a6f6ef38073e22b158f85e1d72c55901d21ab0540b8e9d5eff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d61e7ce6ee5eaf814b302393852cdbe95189f8c0712434e03c3a7d10d9371b21`  
-		Last Modified: Tue, 13 May 2025 19:55:14 GMT  
-		Size: 6.4 MB (6378395 bytes)  
+	-	`sha256:83067a03a59689c649dfe055fb21d61d99fc2d0cefb22e498a4c136c8968107b`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 6.4 MB (6400981 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:32ab8202806d40432c02ec6d26c7c6a0f6f4d62c84890a0416a3dd2526ce2c28`  
-		Last Modified: Tue, 13 May 2025 19:55:13 GMT  
-		Size: 11.5 KB (11491 bytes)  
+	-	`sha256:abd71ebee2e438819ba172ce717411fc59eb32e9aaecfeefe5260902dbb104ec`  
+		Last Modified: Wed, 14 May 2025 23:48:53 GMT  
+		Size: 11.5 KB (11490 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:794a09148bc83284dca72914f97c13d2031e9c461833a101754fd20db4801182
+$ docker pull swift@sha256:9e71f4eebd16b5c604c768b6e22e9c98d6474c7edafa5de5309f1f51ec6ee6e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131071310 bytes)**  
+-	Total Size: **131.0 MB (131048925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcc12b8834fb744d6ba7da825a57755b48b62cdecbe4570fd52daf9f3f302072`
+-	Image ID: `sha256:cc052fca33b9ebacb8521c6916e84bf3e67a09e8f116917dd98f160fa279706b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -17161,7 +17161,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -17179,7 +17179,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -17187,7 +17187,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -17210,36 +17210,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb7ea946effcaf92c0119dc1fe78231462b2919827265fcd35e2c2526032e57e`  
-		Last Modified: Tue, 13 May 2025 20:23:44 GMT  
-		Size: 53.7 MB (53675865 bytes)  
+	-	`sha256:00a7ab97ffe6df544cbadd49aec2808c3e73a54d3daed9e9e5dc5c65817daa70`  
+		Last Modified: Thu, 15 May 2025 00:17:15 GMT  
+		Size: 53.7 MB (53676518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:a285b1a98847c4d0c8e2bf924d4172a86f31aa56f100d6d1b0754274168cdf42
+$ docker pull swift@sha256:7bb3e5e81e5f056143aa26317e978e4383ad9542de13d8a096a1da21bcb8bca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385775 bytes)**  
+-	Total Size: **6.4 MB (6408361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0441a0be400dca2e90ed6229e6dee6fdc5612b80231854f2e735b4be857daf3`
+-	Image ID: `sha256:5f1019d2f7877079e919390ea23bed832b62f039a4db7e2219fbed9b62b28c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6613f7478a8d6306c029eab098ef0ff66af2fc003220a47f5ddcc32b68a0670e`  
-		Last Modified: Tue, 13 May 2025 20:23:43 GMT  
-		Size: 6.4 MB (6374198 bytes)  
+	-	`sha256:6c807edd16aea2f75744fc908175903a1715b3d71534302d914a841b33e1cc5c`  
+		Last Modified: Thu, 15 May 2025 00:17:14 GMT  
+		Size: 6.4 MB (6396784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:390dc5ea2b523c14e73a36272f1b8916362bf15fa177c84bcd0b343f84a73b3a`  
-		Last Modified: Tue, 13 May 2025 20:23:42 GMT  
+	-	`sha256:a078ccb55072e68c79e0fd1b02c941268ea4f557fa671c4dd234a67347108679`  
+		Last Modified: Thu, 15 May 2025 00:17:13 GMT  
 		Size: 11.6 KB (11577 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19448,7 +19448,7 @@ $ docker pull swift@sha256:7e7ca554c5e005361395d09439617358abb40f81eef125ec79387
 ## `swift:6.1.0-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:497d578afaf5f898fe4f1b7e55256841be73bc517945a6fef258400d9dd22fde
+$ docker pull swift@sha256:2af43adee1d3fd8f1c4c9d3c3d0c4293706c3bf2871023fdfb610b2a28ac0552
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19461,13 +19461,13 @@ $ docker pull swift@sha256:497d578afaf5f898fe4f1b7e55256841be73bc517945a6fef2584
 ### `swift:6.1.0-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:3cf06666ae149ded92e6b027eca6bba3b34d345302abf72dd8f54e8027865b9a
+$ docker pull swift@sha256:30e969c0fbd42eeb1d3f82851b9e79ddc5e37010b8d86fec069427d7c1316c39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1114500381 bytes)**  
+-	Total Size: **1.1 GB (1096831764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4277583b588aa29438f6a510a03cd1471316a7cbbf91c19f043c3d420945e01a`
+-	Image ID: `sha256:c0b36e928fdd764c7eaaea9df57e333146df6f196e39f6a9ddaff466db75e56c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19476,7 +19476,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19494,7 +19494,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19502,7 +19502,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19530,57 +19530,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea284f168ce9339639e92f7a6a9dd237557aaefb907c742e4b022accf758ad87`  
-		Last Modified: Tue, 13 May 2025 19:56:59 GMT  
-		Size: 142.1 MB (142057936 bytes)  
+	-	`sha256:109256f8c1f9d23148400dec331b7433bfdc6eb53036696a13f12a315a91bb23`  
+		Last Modified: Wed, 14 May 2025 23:51:08 GMT  
+		Size: 124.4 MB (124410320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e52c7a91a4cd942cf259b9a0a4b340e167411225580f6094cfa5cd8aa79969e2`  
 		Last Modified: Tue, 01 Apr 2025 17:14:11 GMT  
 		Size: 892.8 MB (892828412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96610aa5706716db49a19b454ba5b4e578f1f38fc8cdc87c74f1f5af9067b5e2`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 174.0 B  
+	-	`sha256:c5738f6cbce85ff91cdc881c09ff9319091cecef6d27fe382e09ce0a9cdfd8bd`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.0-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:5a1862383be4b8f3bea8d27a33496288b15fe79988b6aa0bb28b75ab3a5c4432
+$ docker pull swift@sha256:752a03d15baab3c26c25734502a0ab3f4b8afc1f8837bff0e98884f274136b8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333676 bytes)**  
+-	Total Size: **13.0 MB (12976967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18e058bd6678e5302da4121b678ab21bef4b62807f9af8e0977c31a42f39c342`
+-	Image ID: `sha256:e56e093e617157866847842b8102ddd84beb917cfe8636c154e099d2c05239c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3879b76eb7503da6667a2564de4a24e2dbdbe06fc70aff8f1c63f1dfa7c6e6f6`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 13.3 MB (13319230 bytes)  
+	-	`sha256:fae761cdbad49adcf6f043a65f6a4b3103073b8239cffa7d12f9c12cacef8fa1`  
+		Last Modified: Wed, 14 May 2025 23:51:05 GMT  
+		Size: 13.0 MB (12962520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866f434a6669320c52d78937771899ef1e82851be346a8f03277ddef0870f42e`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 14.4 KB (14446 bytes)  
+	-	`sha256:a11a633fa6a280cb02dfa57a14f21cae9e7d27e4aeaf990fc30791da0d80470e`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 14.4 KB (14447 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1.0-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:24a2f9a5c2af1f236d4fe9e0d063477446d2a6b6cd6810655ce1913fa6e2b0de
+$ docker pull swift@sha256:12c3f468c9959e9a682f040583eef36154b383ec5b247b13fa46f7ccccb5b033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1102221756 bytes)**  
+-	Total Size: **1.1 GB (1084947562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a27753c46e47edea9fad6a5d703bb60444c11b1e6e0a3c45d6ecb53402a869ce`
+-	Image ID: `sha256:d0ef43e3904b06324b467c93f64b6144e23928c639ccce67cfcdd1d58bbed957`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19589,7 +19589,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19607,7 +19607,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19615,7 +19615,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19643,51 +19643,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:863be352cf308f98508d8edca1c315d6970d6eff40f84c274bc9add322b91f5b`  
 		Last Modified: Tue, 01 Apr 2025 18:53:37 GMT  
 		Size: 889.5 MB (889461654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f122577c0b313838d1e97b587fb88c1b59d5a7da3f12d0d2ee74a239968d9448`  
-		Last Modified: Tue, 13 May 2025 20:22:30 GMT  
-		Size: 173.0 B  
+	-	`sha256:628eba78a075a4ce249b607f45fe4a9b2bcf232aafdd774c281952bd9072e2b3`  
+		Last Modified: Thu, 15 May 2025 00:15:59 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.0-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7a191bce9a14def757b69440b6937885ecc9f3ddac48e5245e860d206e2d86e9
+$ docker pull swift@sha256:8f612db0c16389bf1fb79b7942efd58337833a5157b8438d85dbc1ba3d7a1847
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205633 bytes)**  
+-	Total Size: **12.9 MB (12850330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3f4243e49810f15c40b6f1540faa9c94e3fe7a8a34ee0bc4729372bd99284b8`
+-	Image ID: `sha256:e0a44af9177045b584a17a5aa8581de1039162e237a028746e50f68bf31d376a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5f199a0b54bb61011880620df6134217a5c1f0b83dd8a2e59fe3fed8a78ab76b`  
-		Last Modified: Tue, 13 May 2025 20:22:31 GMT  
-		Size: 13.2 MB (13191070 bytes)  
+	-	`sha256:f5aa520eaf89a124c0773bc4004e4af0935f7ea49d5f715c7bd40606d8ee806f`  
+		Last Modified: Thu, 15 May 2025 00:16:01 GMT  
+		Size: 12.8 MB (12835767 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96cfa6fd3df6d0ed6d03ee832f74fde7a68c93780347dc092943971e563f1d4d`  
-		Last Modified: Tue, 13 May 2025 20:22:30 GMT  
+	-	`sha256:3acdfc107437bef655ef859508323080db24672cb5444ce46a0e0b5347702ba3`  
+		Last Modified: Thu, 15 May 2025 00:15:59 GMT  
 		Size: 14.6 KB (14563 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.1.0-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:2f1d6c940dc9f1ca5cb9c56d2ac9a37b2f2ee2a7061ba3cae484fabe13de6baa
+$ docker pull swift@sha256:3f7793e8ff1d7d88b394ccd3e44504c0cd634c079b31d74adb539ccf003377f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19700,13 +19700,13 @@ $ docker pull swift@sha256:2f1d6c940dc9f1ca5cb9c56d2ac9a37b2f2ee2a7061ba3cae484f
 ### `swift:6.1.0-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:693b777577bf96d0427938b5463ef82fcfe31151842f659dbc17900805296d94
+$ docker pull swift@sha256:57349cc49b080dc76d6e0f49dbc592dc5db4bcfc2c43f444b5bfbe79d90325f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134552820 bytes)**  
+-	Total Size: **134.5 MB (134531539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22a54afc305f74caca5c6b351462ab241f34208a20683b28a54177ca529fc40d`
+-	Image ID: `sha256:b8e4f7f70867d93275bcc72246806d38f611dc94df9287589f915d2d9466855c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19715,7 +19715,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19733,7 +19733,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19741,7 +19741,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19764,49 +19764,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daadbda7b75cf6234a3ac20416cbdfdc328350200a9bd92091b7a7c59a6b03a5`  
-		Last Modified: Tue, 13 May 2025 19:55:15 GMT  
-		Size: 54.9 MB (54938961 bytes)  
+	-	`sha256:435f037a30e040c172dc1355e0ce5467f80d5872ec51dea6aa8e0772ef65f6c1`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 54.9 MB (54938680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.0-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:da20770c07364e6b5de25b6037796d6d2284e024864e1d25751acf64b2c9a50b
+$ docker pull swift@sha256:fbfafbea92086b2d84d16ccfcf9a1526030bbf5afbe9d70193f04447deebc603
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389886 bytes)**  
+-	Total Size: **6.4 MB (6412471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcb72908f42a49bd01ef55d958dabd6dc6bbf6b0996b288e8e7390c7a40343bc`
+-	Image ID: `sha256:88a4f4756de538a6f6ef38073e22b158f85e1d72c55901d21ab0540b8e9d5eff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d61e7ce6ee5eaf814b302393852cdbe95189f8c0712434e03c3a7d10d9371b21`  
-		Last Modified: Tue, 13 May 2025 19:55:14 GMT  
-		Size: 6.4 MB (6378395 bytes)  
+	-	`sha256:83067a03a59689c649dfe055fb21d61d99fc2d0cefb22e498a4c136c8968107b`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 6.4 MB (6400981 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:32ab8202806d40432c02ec6d26c7c6a0f6f4d62c84890a0416a3dd2526ce2c28`  
-		Last Modified: Tue, 13 May 2025 19:55:13 GMT  
-		Size: 11.5 KB (11491 bytes)  
+	-	`sha256:abd71ebee2e438819ba172ce717411fc59eb32e9aaecfeefe5260902dbb104ec`  
+		Last Modified: Wed, 14 May 2025 23:48:53 GMT  
+		Size: 11.5 KB (11490 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1.0-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:794a09148bc83284dca72914f97c13d2031e9c461833a101754fd20db4801182
+$ docker pull swift@sha256:9e71f4eebd16b5c604c768b6e22e9c98d6474c7edafa5de5309f1f51ec6ee6e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131071310 bytes)**  
+-	Total Size: **131.0 MB (131048925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcc12b8834fb744d6ba7da825a57755b48b62cdecbe4570fd52daf9f3f302072`
+-	Image ID: `sha256:cc052fca33b9ebacb8521c6916e84bf3e67a09e8f116917dd98f160fa279706b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19815,7 +19815,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19833,7 +19833,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19841,7 +19841,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -19864,36 +19864,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb7ea946effcaf92c0119dc1fe78231462b2919827265fcd35e2c2526032e57e`  
-		Last Modified: Tue, 13 May 2025 20:23:44 GMT  
-		Size: 53.7 MB (53675865 bytes)  
+	-	`sha256:00a7ab97ffe6df544cbadd49aec2808c3e73a54d3daed9e9e5dc5c65817daa70`  
+		Last Modified: Thu, 15 May 2025 00:17:15 GMT  
+		Size: 53.7 MB (53676518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.0-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:a285b1a98847c4d0c8e2bf924d4172a86f31aa56f100d6d1b0754274168cdf42
+$ docker pull swift@sha256:7bb3e5e81e5f056143aa26317e978e4383ad9542de13d8a096a1da21bcb8bca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385775 bytes)**  
+-	Total Size: **6.4 MB (6408361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0441a0be400dca2e90ed6229e6dee6fdc5612b80231854f2e735b4be857daf3`
+-	Image ID: `sha256:5f1019d2f7877079e919390ea23bed832b62f039a4db7e2219fbed9b62b28c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6613f7478a8d6306c029eab098ef0ff66af2fc003220a47f5ddcc32b68a0670e`  
-		Last Modified: Tue, 13 May 2025 20:23:43 GMT  
-		Size: 6.4 MB (6374198 bytes)  
+	-	`sha256:6c807edd16aea2f75744fc908175903a1715b3d71534302d914a841b33e1cc5c`  
+		Last Modified: Thu, 15 May 2025 00:17:14 GMT  
+		Size: 6.4 MB (6396784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:390dc5ea2b523c14e73a36272f1b8916362bf15fa177c84bcd0b343f84a73b3a`  
-		Last Modified: Tue, 13 May 2025 20:23:42 GMT  
+	-	`sha256:a078ccb55072e68c79e0fd1b02c941268ea4f557fa671c4dd234a67347108679`  
+		Last Modified: Thu, 15 May 2025 00:17:13 GMT  
 		Size: 11.6 KB (11577 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22102,7 +22102,7 @@ $ docker pull swift@sha256:7e7ca554c5e005361395d09439617358abb40f81eef125ec79387
 ## `swift:rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:497d578afaf5f898fe4f1b7e55256841be73bc517945a6fef258400d9dd22fde
+$ docker pull swift@sha256:2af43adee1d3fd8f1c4c9d3c3d0c4293706c3bf2871023fdfb610b2a28ac0552
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22115,13 +22115,13 @@ $ docker pull swift@sha256:497d578afaf5f898fe4f1b7e55256841be73bc517945a6fef2584
 ### `swift:rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:3cf06666ae149ded92e6b027eca6bba3b34d345302abf72dd8f54e8027865b9a
+$ docker pull swift@sha256:30e969c0fbd42eeb1d3f82851b9e79ddc5e37010b8d86fec069427d7c1316c39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1114500381 bytes)**  
+-	Total Size: **1.1 GB (1096831764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4277583b588aa29438f6a510a03cd1471316a7cbbf91c19f043c3d420945e01a`
+-	Image ID: `sha256:c0b36e928fdd764c7eaaea9df57e333146df6f196e39f6a9ddaff466db75e56c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22130,7 +22130,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22148,7 +22148,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22156,7 +22156,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22184,57 +22184,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea284f168ce9339639e92f7a6a9dd237557aaefb907c742e4b022accf758ad87`  
-		Last Modified: Tue, 13 May 2025 19:56:59 GMT  
-		Size: 142.1 MB (142057936 bytes)  
+	-	`sha256:109256f8c1f9d23148400dec331b7433bfdc6eb53036696a13f12a315a91bb23`  
+		Last Modified: Wed, 14 May 2025 23:51:08 GMT  
+		Size: 124.4 MB (124410320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e52c7a91a4cd942cf259b9a0a4b340e167411225580f6094cfa5cd8aa79969e2`  
 		Last Modified: Tue, 01 Apr 2025 17:14:11 GMT  
 		Size: 892.8 MB (892828412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96610aa5706716db49a19b454ba5b4e578f1f38fc8cdc87c74f1f5af9067b5e2`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 174.0 B  
+	-	`sha256:c5738f6cbce85ff91cdc881c09ff9319091cecef6d27fe382e09ce0a9cdfd8bd`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:5a1862383be4b8f3bea8d27a33496288b15fe79988b6aa0bb28b75ab3a5c4432
+$ docker pull swift@sha256:752a03d15baab3c26c25734502a0ab3f4b8afc1f8837bff0e98884f274136b8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.3 MB (13333676 bytes)**  
+-	Total Size: **13.0 MB (12976967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18e058bd6678e5302da4121b678ab21bef4b62807f9af8e0977c31a42f39c342`
+-	Image ID: `sha256:e56e093e617157866847842b8102ddd84beb917cfe8636c154e099d2c05239c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3879b76eb7503da6667a2564de4a24e2dbdbe06fc70aff8f1c63f1dfa7c6e6f6`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 13.3 MB (13319230 bytes)  
+	-	`sha256:fae761cdbad49adcf6f043a65f6a4b3103073b8239cffa7d12f9c12cacef8fa1`  
+		Last Modified: Wed, 14 May 2025 23:51:05 GMT  
+		Size: 13.0 MB (12962520 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866f434a6669320c52d78937771899ef1e82851be346a8f03277ddef0870f42e`  
-		Last Modified: Tue, 13 May 2025 19:56:57 GMT  
-		Size: 14.4 KB (14446 bytes)  
+	-	`sha256:a11a633fa6a280cb02dfa57a14f21cae9e7d27e4aeaf990fc30791da0d80470e`  
+		Last Modified: Wed, 14 May 2025 23:51:04 GMT  
+		Size: 14.4 KB (14447 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:24a2f9a5c2af1f236d4fe9e0d063477446d2a6b6cd6810655ce1913fa6e2b0de
+$ docker pull swift@sha256:12c3f468c9959e9a682f040583eef36154b383ec5b247b13fa46f7ccccb5b033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1102221756 bytes)**  
+-	Total Size: **1.1 GB (1084947562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a27753c46e47edea9fad6a5d703bb60444c11b1e6e0a3c45d6ecb53402a869ce`
+-	Image ID: `sha256:d0ef43e3904b06324b467c93f64b6144e23928c639ccce67cfcdd1d58bbed957`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22243,7 +22243,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22261,7 +22261,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22269,7 +22269,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22297,51 +22297,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf06289b923f71d197c0cedba311ecfc03d5aec86900f84713b2881185b2a272`  
-		Last Modified: Tue, 13 May 2025 20:22:33 GMT  
-		Size: 135.4 MB (135364484 bytes)  
+	-	`sha256:77ac989b9b7a061304a4313f57a5c75166b0ca722d44372939bcf4488b8d2d80`  
+		Last Modified: Thu, 15 May 2025 00:16:02 GMT  
+		Size: 118.1 MB (118113327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:863be352cf308f98508d8edca1c315d6970d6eff40f84c274bc9add322b91f5b`  
 		Last Modified: Tue, 01 Apr 2025 18:53:37 GMT  
 		Size: 889.5 MB (889461654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f122577c0b313838d1e97b587fb88c1b59d5a7da3f12d0d2ee74a239968d9448`  
-		Last Modified: Tue, 13 May 2025 20:22:30 GMT  
-		Size: 173.0 B  
+	-	`sha256:628eba78a075a4ce249b607f45fe4a9b2bcf232aafdd774c281952bd9072e2b3`  
+		Last Modified: Thu, 15 May 2025 00:15:59 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7a191bce9a14def757b69440b6937885ecc9f3ddac48e5245e860d206e2d86e9
+$ docker pull swift@sha256:8f612db0c16389bf1fb79b7942efd58337833a5157b8438d85dbc1ba3d7a1847
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13205633 bytes)**  
+-	Total Size: **12.9 MB (12850330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3f4243e49810f15c40b6f1540faa9c94e3fe7a8a34ee0bc4729372bd99284b8`
+-	Image ID: `sha256:e0a44af9177045b584a17a5aa8581de1039162e237a028746e50f68bf31d376a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5f199a0b54bb61011880620df6134217a5c1f0b83dd8a2e59fe3fed8a78ab76b`  
-		Last Modified: Tue, 13 May 2025 20:22:31 GMT  
-		Size: 13.2 MB (13191070 bytes)  
+	-	`sha256:f5aa520eaf89a124c0773bc4004e4af0935f7ea49d5f715c7bd40606d8ee806f`  
+		Last Modified: Thu, 15 May 2025 00:16:01 GMT  
+		Size: 12.8 MB (12835767 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96cfa6fd3df6d0ed6d03ee832f74fde7a68c93780347dc092943971e563f1d4d`  
-		Last Modified: Tue, 13 May 2025 20:22:30 GMT  
+	-	`sha256:3acdfc107437bef655ef859508323080db24672cb5444ce46a0e0b5347702ba3`  
+		Last Modified: Thu, 15 May 2025 00:15:59 GMT  
 		Size: 14.6 KB (14563 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:2f1d6c940dc9f1ca5cb9c56d2ac9a37b2f2ee2a7061ba3cae484fabe13de6baa
+$ docker pull swift@sha256:3f7793e8ff1d7d88b394ccd3e44504c0cd634c079b31d74adb539ccf003377f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22354,13 +22354,13 @@ $ docker pull swift@sha256:2f1d6c940dc9f1ca5cb9c56d2ac9a37b2f2ee2a7061ba3cae484f
 ### `swift:rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:693b777577bf96d0427938b5463ef82fcfe31151842f659dbc17900805296d94
+$ docker pull swift@sha256:57349cc49b080dc76d6e0f49dbc592dc5db4bcfc2c43f444b5bfbe79d90325f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134552820 bytes)**  
+-	Total Size: **134.5 MB (134531539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22a54afc305f74caca5c6b351462ab241f34208a20683b28a54177ca529fc40d`
+-	Image ID: `sha256:b8e4f7f70867d93275bcc72246806d38f611dc94df9287589f915d2d9466855c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22369,7 +22369,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22387,7 +22387,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:58f1fd7370bf1be7d595081ce89267556404935630c8266504f6865623b28c9f in / 
+COPY dir:d030c7d773f0a9a0288768cf73fd68603fb78790fc50998f9cb91d0c08117212 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22395,7 +22395,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T04:57:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:40:37" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22418,49 +22418,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:9ecd6eb4d9863a9e6f886b8bf6ac4ca5da3289365ffaccdcf95d3a78de75aad8`  
-		Last Modified: Tue, 13 May 2025 05:40:56 GMT  
-		Size: 79.6 MB (79613859 bytes)  
+	-	`sha256:92efcdccd1058003df257e9cbdf756ff6b10bd276551590536a5a1678e099aaf`  
+		Last Modified: Wed, 14 May 2025 14:00:32 GMT  
+		Size: 79.6 MB (79592859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daadbda7b75cf6234a3ac20416cbdfdc328350200a9bd92091b7a7c59a6b03a5`  
-		Last Modified: Tue, 13 May 2025 19:55:15 GMT  
-		Size: 54.9 MB (54938961 bytes)  
+	-	`sha256:435f037a30e040c172dc1355e0ce5467f80d5872ec51dea6aa8e0772ef65f6c1`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 54.9 MB (54938680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:da20770c07364e6b5de25b6037796d6d2284e024864e1d25751acf64b2c9a50b
+$ docker pull swift@sha256:fbfafbea92086b2d84d16ccfcf9a1526030bbf5afbe9d70193f04447deebc603
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6389886 bytes)**  
+-	Total Size: **6.4 MB (6412471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcb72908f42a49bd01ef55d958dabd6dc6bbf6b0996b288e8e7390c7a40343bc`
+-	Image ID: `sha256:88a4f4756de538a6f6ef38073e22b158f85e1d72c55901d21ab0540b8e9d5eff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d61e7ce6ee5eaf814b302393852cdbe95189f8c0712434e03c3a7d10d9371b21`  
-		Last Modified: Tue, 13 May 2025 19:55:14 GMT  
-		Size: 6.4 MB (6378395 bytes)  
+	-	`sha256:83067a03a59689c649dfe055fb21d61d99fc2d0cefb22e498a4c136c8968107b`  
+		Last Modified: Wed, 14 May 2025 23:48:54 GMT  
+		Size: 6.4 MB (6400981 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:32ab8202806d40432c02ec6d26c7c6a0f6f4d62c84890a0416a3dd2526ce2c28`  
-		Last Modified: Tue, 13 May 2025 19:55:13 GMT  
-		Size: 11.5 KB (11491 bytes)  
+	-	`sha256:abd71ebee2e438819ba172ce717411fc59eb32e9aaecfeefe5260902dbb104ec`  
+		Last Modified: Wed, 14 May 2025 23:48:53 GMT  
+		Size: 11.5 KB (11490 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:794a09148bc83284dca72914f97c13d2031e9c461833a101754fd20db4801182
+$ docker pull swift@sha256:9e71f4eebd16b5c604c768b6e22e9c98d6474c7edafa5de5309f1f51ec6ee6e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.1 MB (131071310 bytes)**  
+-	Total Size: **131.0 MB (131048925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcc12b8834fb744d6ba7da825a57755b48b62cdecbe4570fd52daf9f3f302072`
+-	Image ID: `sha256:cc052fca33b9ebacb8521c6916e84bf3e67a09e8f116917dd98f160fa279706b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22469,7 +22469,7 @@ LABEL maintainer="Red Hat, Inc."       vendor="Red Hat, Inc."
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-container"       name="ubi9"       version="9.6"       distribution-scope="public"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22487,7 +22487,7 @@ LABEL io.openshift.tags="base rhel9"
 # Tue, 01 Apr 2025 00:12:10 GMT
 ENV container oci
 # Tue, 01 Apr 2025 00:12:10 GMT
-COPY dir:bd057af80b77177e32488d4a9c1e03eec3fc66f6e6013bdff07c26eb0b7e514d in / 
+COPY dir:c394b2914ae3358d61caf86b7a5bbfd4d11ff5b87984e3a14471c2a88888fa14 in / 
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22495,7 +22495,7 @@ CMD ["/bin/bash"]
 # Tue, 01 Apr 2025 00:12:10 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 01 Apr 2025 00:12:10 GMT
-LABEL "build-date"="2025-05-13T05:02:19" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0d3315aaa0c7b5560abd0b7de30e7d003d748698" "release"="1747112166"
+LABEL "build-date"="2025-05-14T10:43:22" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="2f42d95842ada13f4b1358571e36e1ab62406115" "release"="1747219013"
 # Tue, 01 Apr 2025 00:12:10 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Tue, 01 Apr 2025 00:12:10 GMT
@@ -22518,36 +22518,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:a8496f8c23f8ff4fb8427e3c056159cbcdbfe54f7e65970b7ae4037235801074`  
-		Last Modified: Tue, 13 May 2025 06:08:14 GMT  
-		Size: 77.4 MB (77395445 bytes)  
+	-	`sha256:391637b3b0856f2a27f616fdf8fe3f1dbd07848a70722ba154c00b969ead8c76`  
+		Last Modified: Wed, 14 May 2025 14:25:42 GMT  
+		Size: 77.4 MB (77372407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb7ea946effcaf92c0119dc1fe78231462b2919827265fcd35e2c2526032e57e`  
-		Last Modified: Tue, 13 May 2025 20:23:44 GMT  
-		Size: 53.7 MB (53675865 bytes)  
+	-	`sha256:00a7ab97ffe6df544cbadd49aec2808c3e73a54d3daed9e9e5dc5c65817daa70`  
+		Last Modified: Thu, 15 May 2025 00:17:15 GMT  
+		Size: 53.7 MB (53676518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:a285b1a98847c4d0c8e2bf924d4172a86f31aa56f100d6d1b0754274168cdf42
+$ docker pull swift@sha256:7bb3e5e81e5f056143aa26317e978e4383ad9542de13d8a096a1da21bcb8bca1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6385775 bytes)**  
+-	Total Size: **6.4 MB (6408361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0441a0be400dca2e90ed6229e6dee6fdc5612b80231854f2e735b4be857daf3`
+-	Image ID: `sha256:5f1019d2f7877079e919390ea23bed832b62f039a4db7e2219fbed9b62b28c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6613f7478a8d6306c029eab098ef0ff66af2fc003220a47f5ddcc32b68a0670e`  
-		Last Modified: Tue, 13 May 2025 20:23:43 GMT  
-		Size: 6.4 MB (6374198 bytes)  
+	-	`sha256:6c807edd16aea2f75744fc908175903a1715b3d71534302d914a841b33e1cc5c`  
+		Last Modified: Thu, 15 May 2025 00:17:14 GMT  
+		Size: 6.4 MB (6396784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:390dc5ea2b523c14e73a36272f1b8916362bf15fa177c84bcd0b343f84a73b3a`  
-		Last Modified: Tue, 13 May 2025 20:23:42 GMT  
+	-	`sha256:a078ccb55072e68c79e0fd1b02c941268ea4f557fa671c4dd234a67347108679`  
+		Last Modified: Thu, 15 May 2025 00:17:13 GMT  
 		Size: 11.6 KB (11577 bytes)  
 		MIME: application/vnd.in-toto+json
 
