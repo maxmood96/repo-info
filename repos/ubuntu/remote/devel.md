@@ -1,7 +1,7 @@
 ## `ubuntu:devel`
 
 ```console
-$ docker pull ubuntu@sha256:3fa335765c57a9ef67f62ef33b4411266c576f4dbdd9d5255f5da2ac306e021f
+$ docker pull ubuntu@sha256:95c5b0baf8b49ce2f548862b1119a7d081d8741e96a7a149a7b3a14e4c2b4a23
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,55 +22,55 @@ $ docker pull ubuntu@sha256:3fa335765c57a9ef67f62ef33b4411266c576f4dbdd9d5255f5d
 ### `ubuntu:devel` - linux; amd64
 
 ```console
-$ docker pull ubuntu@sha256:83e8ad38acc82198ef6f7cd8cef54ec5d0056ac98cb09f0615ac26dd9be92132
+$ docker pull ubuntu@sha256:1419f247ed8839657257f51ea7091f08bc2ce528ce8230ea7818d5d7945838df
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29710540 bytes)**  
+-	Total Size: **29.3 MB (29281519 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fc06bb076f61c4381db3c2e3c0efdd4f96a72cf9472a87004d4f681e006ca55`
+-	Image ID: `sha256:daf1e77671beab112b73b235b881ce373dfe295c97a73d4bfecba2a54941b1d8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 02 Apr 2025 04:31:21 GMT
+# Wed, 14 May 2025 04:22:07 GMT
 ARG RELEASE
-# Wed, 02 Apr 2025 04:31:21 GMT
+# Wed, 14 May 2025 04:22:07 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 02 Apr 2025 04:31:21 GMT
+# Wed, 14 May 2025 04:22:07 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 02 Apr 2025 04:31:21 GMT
-LABEL org.opencontainers.image.version=25.04
-# Wed, 02 Apr 2025 04:31:23 GMT
-ADD file:4e91a036bb7fd027d02229e0891c09685c9a8e10b2e913caca8513e5a856c07c in / 
-# Wed, 02 Apr 2025 04:31:23 GMT
+# Wed, 14 May 2025 04:22:07 GMT
+LABEL org.opencontainers.image.version=25.10
+# Wed, 14 May 2025 04:22:09 GMT
+ADD file:3cec1fcccaf2006b6ff56dc605b2e64e601533472cc244b39a2b9bde0eb3c32c in / 
+# Wed, 14 May 2025 04:22:09 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:54cf94bf6a9e27dfc420b4583d0f5e04f7b0d32156b29a9de5758fdbe214f0bf`  
-		Last Modified: Thu, 08 May 2025 17:07:13 GMT  
-		Size: 29.7 MB (29710540 bytes)  
+	-	`sha256:4b55e964632f88af45c8e80fb4c2f85a63df0f1dbb9104a9ad05b18c2f6e6e20`  
+		Last Modified: Wed, 14 May 2025 05:17:39 GMT  
+		Size: 29.3 MB (29281519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:devel` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:22078207d3535d6b77fc9c86344fef9fa55967fe21808affbfef48e2b26cefb7
+$ docker pull ubuntu@sha256:8c5c61f03be9c223a2baffa716808e430859086e2776bf84ec020fcf7b203dab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 MB (1775943 bytes)**  
+-	Total Size: **1.8 MB (1792873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9714c5cbb72711dfb59193b13cb0e8436c4bc4776b2009e4d7b7616ba885742f`
+-	Image ID: `sha256:9a07df41ca3c8768d34f8d4659dac206391f8c3d5dbbf1c2688d5e0e94a08154`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4f4333e8bf54ca2430a8bef816a64de754ea906d2c4c0c79cb866ea579c59b66`  
-		Last Modified: Wed, 09 Apr 2025 00:43:08 GMT  
-		Size: 1.8 MB (1775943 bytes)  
+	-	`sha256:b9aceb879a9dc6c78cb0319c7498e39969d3eb307d9d4980791d0e944ac15fc2`  
+		Last Modified: Thu, 15 May 2025 19:05:00 GMT  
+		Size: 1.8 MB (1792873 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ubuntu:devel` - linux; arm variant v7
@@ -157,7 +157,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:83550439f8b8ffc46f3be5ee055a935afe082f64085b9655d484efceeaba62b2`  
-		Last Modified: Thu, 08 May 2025 17:17:46 GMT  
+		Last Modified: Wed, 02 Apr 2025 05:20:06 GMT  
 		Size: 28.3 MB (28259438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -211,7 +211,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:5dbbb3ddafe1fab87a2b1a49d634441bb6180275ece999d452a8dec8150303fe`  
-		Last Modified: Fri, 09 May 2025 19:14:17 GMT  
+		Last Modified: Wed, 02 Apr 2025 05:20:20 GMT  
 		Size: 32.9 MB (32917064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -319,7 +319,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:0da16fa1ee9f8c39405683939ed3b583090ca47b5e4b8aad0a1993291bc12217`  
-		Last Modified: Fri, 09 May 2025 19:12:28 GMT  
+		Last Modified: Wed, 02 Apr 2025 05:20:34 GMT  
 		Size: 28.5 MB (28538092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
