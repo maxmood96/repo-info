@@ -231,7 +231,7 @@ $ docker pull nats@sha256:b1a5520c26787b7b5b7598e8c6d32e04b6442246f45f51702f8ab9
 
 -	Layers:
 	-	`sha256:91912f94323f40a81b369bdf7b31adec099387298167e8ee48fdbd643c54bbd7`  
-		Last Modified: Thu, 01 May 2025 16:38:40 GMT  
+		Last Modified: Thu, 15 May 2025 20:40:04 GMT  
 		Size: 14.4 KB (14425 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -303,7 +303,7 @@ $ docker pull nats@sha256:7be154f67a95eb115edaf3da2c42409d3cc505c20e23282796088e
 
 -	Layers:
 	-	`sha256:11e95946e2efd0801ccd7e4d3c070b684baf2d8e019eb4eeacd52b28cbfd858f`  
-		Last Modified: Thu, 01 May 2025 16:38:44 GMT  
+		Last Modified: Thu, 15 May 2025 20:33:28 GMT  
 		Size: 14.5 KB (14468 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -375,7 +375,7 @@ $ docker pull nats@sha256:352c383d3b82380dbd9a1ac107937d3991846006be06142ba8698a
 
 -	Layers:
 	-	`sha256:6b0d2cc36c0ae1fb4725dfc44754cc365298d189308b25b6a818f9373c56d8b5`  
-		Last Modified: Thu, 01 May 2025 16:39:03 GMT  
+		Last Modified: Thu, 15 May 2025 20:35:59 GMT  
 		Size: 14.4 KB (14385 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -447,6 +447,6 @@ $ docker pull nats@sha256:46d9178ace4d9f9b7e8307fdf38c831b0130174836ad584ec872a1
 
 -	Layers:
 	-	`sha256:1046c910412b33c1747ecde0dd3656153062c8e55cde48158e5aa2a7f3053e86`  
-		Last Modified: Thu, 01 May 2025 16:40:06 GMT  
+		Last Modified: Thu, 15 May 2025 20:25:28 GMT  
 		Size: 14.3 KB (14317 bytes)  
 		MIME: application/vnd.in-toto+json
