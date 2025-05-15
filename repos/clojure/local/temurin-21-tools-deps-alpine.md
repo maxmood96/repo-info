@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:58f0908a9ff8a7d8ede7664ef3fefbabdde695a1464872ccd95c384e651d451b`
-- Created: `2025-03-26T16:17:22Z`
-- Virtual Size: ~ 393.01 Mb  
+- Image ID: `sha256:3bee83c67a32b7db4979f1e388d77758e7398945babf48a0a9b4257388c709d6`
+- Created: `2025-05-13T03:53:36Z`
+- Virtual Size: ~ 393.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -1343,6 +1343,23 @@ readline-8.2.13-r0 installed size:
 
 readline-8.2.13-r0 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `rlwrap`
+
+```console
+rlwrap-0.46.1-r0 description:
+readline wrapper
+
+rlwrap-0.46.1-r0 webpage:
+https://github.com/hanslub42/rlwrap
+
+rlwrap-0.46.1-r0 installed size:
+237 KiB
+
+rlwrap-0.46.1-r0 license:
+GPL-2.0-or-later
 
 ```
 
