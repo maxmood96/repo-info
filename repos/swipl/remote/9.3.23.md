@@ -46,11 +46,11 @@ CMD ["swipl"]
 		Size: 28.2 MB (28227642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e10c5bcd9c16b053f0d91c9cd30ef40a438025256e5b311e1b1eb363669ca3d`  
-		Last Modified: Thu, 08 May 2025 17:24:50 GMT  
+		Last Modified: Mon, 28 Apr 2025 22:07:25 GMT  
 		Size: 49.2 MB (49209682 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8204bd08274d48ea464103c197fe59b472a9e725dc8f86a1885aaac4ba8f5974`  
-		Last Modified: Thu, 08 May 2025 17:24:49 GMT  
+		Last Modified: Mon, 28 Apr 2025 22:07:25 GMT  
 		Size: 20.7 MB (20653169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -176,11 +176,11 @@ CMD ["swipl"]
 		Size: 28.1 MB (28066622 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ca5f37e2576990cca711971efc9f32d1d10aa0df685391668834a6a3afef40b`  
-		Last Modified: Thu, 08 May 2025 19:25:10 GMT  
+		Last Modified: Tue, 29 Apr 2025 01:32:51 GMT  
 		Size: 47.7 MB (47731538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c53a8895f034acc71346f4851e9d805d99ddf4b623949ae0a52df0b74702e4ce`  
-		Last Modified: Thu, 08 May 2025 22:44:56 GMT  
+		Last Modified: Tue, 29 Apr 2025 01:32:50 GMT  
 		Size: 20.0 MB (20037371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
