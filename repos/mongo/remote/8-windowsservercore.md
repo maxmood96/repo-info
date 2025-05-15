@@ -49,43 +49,43 @@ CMD ["mongod" "--bind_ip_all"]
 
 -	Layers:
 	-	`sha256:1317fe15185685e9cd27f7542cd96f4847343401288a8b6798273a4ac60844eb`  
-		Last Modified: Thu, 23 Jan 2025 01:13:15 GMT  
+		Last Modified: Tue, 10 Dec 2024 22:58:14 GMT  
 		Size: 2.2 GB (2215307110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc834e13e71633c2d66ec6513d57c31a3157fc5933859d492ecf45fc8a7476c3`  
-		Last Modified: Thu, 15 May 2025 19:25:03 GMT  
+		Last Modified: Tue, 13 May 2025 21:56:34 GMT  
 		Size: 1.2 GB (1215458626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b5916ab5b7401c262199c1564652508e2c5ced569d8c64538b90b80dc6f02868`  
-		Last Modified: Thu, 15 May 2025 19:31:29 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:05 GMT  
 		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:56bd77be7e294d3d1972669c11c3d81e3d7fed974cd7ca44e1b94b151d18be94`  
-		Last Modified: Thu, 15 May 2025 19:31:30 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:05 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6b2766ae26595aa65cc90c60134613ced67d793eec272a69340181fde373b408`  
-		Last Modified: Thu, 15 May 2025 19:31:29 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:05 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:72b289c54e9f06dbd6bc7519c2c7f35ff6b70ca23e574c0a9f5651a79e636a76`  
-		Last Modified: Thu, 15 May 2025 19:31:29 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:03 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ee29362eb62012d86287a9c8ba175c75dbec0a7d34dd384b43c79ba590dee32a`  
-		Last Modified: Thu, 15 May 2025 19:31:49 GMT  
+		Last Modified: Wed, 14 May 2025 20:59:17 GMT  
 		Size: 773.5 MB (773468924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4025ea00589e07dd027416d3bf50ad9139b3bc1b96e9d7b61c24fc03b1a15053`  
-		Last Modified: Thu, 15 May 2025 19:31:30 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:03 GMT  
 		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7b14c5b8852aa0b70c4ea662d4b9a719c49deb31b75187d7a4f47bb82f28bf8a`  
-		Last Modified: Thu, 15 May 2025 19:31:30 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:03 GMT  
 		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22bd54319d0b0d80274a0ff6e11d2f2205bcb7966fbfdd70b8e5c66b9faddbfb`  
-		Last Modified: Thu, 15 May 2025 19:31:30 GMT  
+		Last Modified: Wed, 14 May 2025 20:58:03 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -128,43 +128,43 @@ CMD ["mongod" "--bind_ip_all"]
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f99f0856d3665c6aeede32823351187cdab09d90cb8608ff70427d552ab356b`  
-		Last Modified: Thu, 15 May 2025 19:25:06 GMT  
+		Last Modified: Tue, 13 May 2025 18:47:51 GMT  
 		Size: 811.4 MB (811435715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:50ef3fe06b93219760f10ecac7312e1e4fb75f4e0e9304272ca731a8d33505bf`  
-		Last Modified: Thu, 15 May 2025 20:05:28 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:57 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ce15a67d8375b93523bceffc60d9b0d6bda1d47bd3dcdfffc06ddbc53292997`  
-		Last Modified: Thu, 15 May 2025 20:05:29 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:57 GMT  
 		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:51e335c664b16a6036ed9a8c34fca97ea498c2f63f82ad8e1133ec1098f26a9a`  
-		Last Modified: Thu, 15 May 2025 20:05:29 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:57 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:28d0055ec661d546e6f33726b8b54b43a202918c003e45df8eb779776053e9cb`  
-		Last Modified: Thu, 15 May 2025 20:05:29 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:56 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8776831e599e6a0d7b4b56ac0be4736c3085ef66401584210daba4be491e029f`  
-		Last Modified: Thu, 15 May 2025 20:05:58 GMT  
+		Last Modified: Wed, 14 May 2025 21:08:00 GMT  
 		Size: 773.4 MB (773383006 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed4d0a7f11b32419b037e17203f12de75c835c5cb64d292ace533924d43e7777`  
-		Last Modified: Thu, 15 May 2025 20:05:37 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:57 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:969330e4100ca49e93630fb3e9216972bb12f4d41df6b344f245da433cd52319`  
-		Last Modified: Thu, 15 May 2025 20:05:37 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:56 GMT  
 		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a8f7da95657a70ee1cc223a2c8b60903754f9320b5a9591a2f648c9180ab826f`  
-		Last Modified: Thu, 15 May 2025 20:05:38 GMT  
+		Last Modified: Wed, 14 May 2025 21:06:56 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -207,42 +207,42 @@ CMD ["mongod" "--bind_ip_all"]
 
 -	Layers:
 	-	`sha256:803f4a9590cb9c635813cbd0ee89190f92d5fe4c7589711cf468879e42ce02ba`  
-		Last Modified: Fri, 13 Dec 2024 17:52:52 GMT  
+		Last Modified: Tue, 10 Sep 2024 17:55:31 GMT  
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a95a939635fd6bec8c1562dcdbdde2fdb64095d1be9873313939c878db6f7279`  
-		Last Modified: Thu, 15 May 2025 19:24:26 GMT  
+		Last Modified: Tue, 13 May 2025 17:48:34 GMT  
 		Size: 463.4 MB (463449115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a20545d7f8da75ba423bb3ac161fc9ba6d4fa1bb93deda4314f5e41a58c4c93d`  
-		Last Modified: Thu, 15 May 2025 20:32:53 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:55 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c1f1e5bead40d7da528672258c940c80a70aca7a607dfde72cc3a022ef5f3116`  
-		Last Modified: Thu, 15 May 2025 20:32:53 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:55 GMT  
 		Size: 1.4 KB (1360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c89526aa33026170ce8b931ab5ca09a034c9f2fa96ee2292c205e99c0c6fac9`  
-		Last Modified: Thu, 15 May 2025 20:32:54 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:55 GMT  
 		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:53dd2fb5ee8fc193d7506b8bd815f1dcee480371c59c8f7d1ea5fcb14dbaaf4e`  
-		Last Modified: Thu, 15 May 2025 20:32:53 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:54 GMT  
 		Size: 1.4 KB (1359 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6735561f6b368310847828448334f9a8ec631681cb714e2f623f67daf7dbe86f`  
-		Last Modified: Thu, 15 May 2025 20:33:33 GMT  
+		Last Modified: Wed, 14 May 2025 21:01:58 GMT  
 		Size: 773.4 MB (773449871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3576c1f6dcaa614dab531fed3807a2c32d1ede1362007e83f434a7af96891187`  
-		Last Modified: Thu, 15 May 2025 20:32:54 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:55 GMT  
 		Size: 1.4 KB (1351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fe21e288ac83262ee39912ef906ac1c051ee41d950f7bf9abc4e08cc618d2775`  
-		Last Modified: Thu, 15 May 2025 20:32:54 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:54 GMT  
 		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ea616424480374dbcf66f423e69b1f807dc2fa47de19fd819384ede9a09e6f1e`  
-		Last Modified: Thu, 15 May 2025 20:32:54 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:54 GMT  
 		Size: 1.3 KB (1348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
