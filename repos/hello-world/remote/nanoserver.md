@@ -70,15 +70,15 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:46eb56853bf7d519201d6623d174cec4d04bea0e9d1426f76cc99e437f341f3a`  
-		Last Modified: Tue, 13 May 2025 19:42:18 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:55 GMT  
 		Size: 122.6 MB (122576639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:81016aab28446563c3d1c40c0389cdfbd567057c241a1967de5f0b2a2d2476e8`  
-		Last Modified: Wed, 14 May 2025 20:49:36 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:28 GMT  
 		Size: 1.8 KB (1752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2ca0a8c734908c93ec7779d301e164794354ab8c0dcd9b3e67699b1288ebbee`  
-		Last Modified: Wed, 14 May 2025 20:49:36 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:27 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -106,14 +106,14 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:67993f619eb734923df34b48b82cc62be3bba8b8a12116cccde4695b2546a3ba`  
-		Last Modified: Tue, 13 May 2025 19:41:43 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:12 GMT  
 		Size: 108.8 MB (108780592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0268197ef922fcfd42d9e5b07fbc3cf689d92e7cf15265760b248c621893b8c7`  
-		Last Modified: Wed, 14 May 2025 20:50:09 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:04 GMT  
 		Size: 1.8 KB (1842 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f19c8856cb6aa883b67f7102b0304f59a5c6acd51506b2de38c7330b9ae25824`  
-		Last Modified: Wed, 14 May 2025 20:50:09 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:04 GMT  
 		Size: 1.1 KB (1095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
