@@ -1,7 +1,7 @@
 ## `neo4j:5-community-ubi9`
 
 ```console
-$ docker pull neo4j@sha256:b5e35e4f1ee6808862377bf2bb55372a22e1aae20404fd204b1a8a2b9ddecd82
+$ docker pull neo4j@sha256:97a550fd818e65130862fe8eeb5bea37967a73ba2678c8c7fd6aca3548702c20
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull neo4j@sha256:b5e35e4f1ee6808862377bf2bb55372a22e1aae20404fd204b1a8
 ### `neo4j:5-community-ubi9` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:eeaedea94471624eef8b60cdd8f59605d8d4941f60546c18196187a70a8d7e14
+$ docker pull neo4j@sha256:91e40b035f1876ef7fcc331704689ef4f65f6abfc53fd1864b62618c2ce4888c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **323.2 MB (323186183 bytes)**  
+-	Total Size: **321.8 MB (321753857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02df5cfae8670a945b2a8d61e9dabe01a1f585640afc6ba567585b59808d4832`
+-	Image ID: `sha256:64ea429d8054fb4c118f256157c16c7c6716bf13bc8ff6b69954b713dc7b7815`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -32,7 +32,7 @@ LABEL vendor="Red Hat, Inc."
 # Tue, 06 May 2025 09:58:59 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 06 May 2025 09:58:59 GMT
-LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
 # Tue, 06 May 2025 09:58:59 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 06 May 2025 09:58:59 GMT
@@ -50,17 +50,15 @@ LABEL io.openshift.tags="minimal rhel9"
 # Tue, 06 May 2025 09:58:59 GMT
 ENV container oci
 # Tue, 06 May 2025 09:58:59 GMT
-COPY dir:2dc25289c3b10f6fae681d085452474bf4d133d8f435510e0e9aa64114b861ab in / 
+COPY dir:9782e2e1b0ca599e0a33d178720d08213ae97157f753b7e5bae27ac0755f7280 in / 
 # Tue, 06 May 2025 09:58:59 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 06 May 2025 09:58:59 GMT
 CMD ["/bin/bash"]
 # Tue, 06 May 2025 09:58:59 GMT
-RUN . /cachi2/cachi2.env &&     rm -rf /var/log/*
-# Tue, 06 May 2025 09:58:59 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 06 May 2025 09:58:59 GMT
-LABEL "build-date"="2025-05-13T04:42:10" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="7575d7eb45eb7f545fef31ba067dfe3d8e52c4eb" "release"="1747111267"
+LABEL "build-date"="2025-05-14T10:35:47" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f2f252e0ac953b9e80eaebfc08ec086edac81945" "release"="1747218906"
 # Tue, 06 May 2025 09:58:59 GMT
 RUN set -eux;     arch="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${arch}" in         'x86_64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini";             tini_sha="93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c";             ;;         'aarch64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini-arm64";             tini_sha="07952557df20bfd2a95f9bef198b445e006171969499a1d361bd9e6f8e5e0e81";             ;;         *) echo >&2 "Neo4j does not currently have a docker image for architecture $arch"; exit 1 ;;     esac;     microdnf install -y --nodocs         findutils         gcc         git         gzip         hostname         java-17-openjdk-headless         jq         make         procps         shadow-utils         tar         wget         which;     wget -q ${tini_url} -O /usr/bin/tini;     wget -q ${tini_url}.asc -O tini.asc;     echo "${tini_sha}"  /usr/bin/tini | sha256sum -c --strict --quiet;     chmod a+x /usr/bin/tini;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys         595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7         B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify tini.asc /usr/bin/tini;     git clone https://github.com/ncopa/su-exec.git;     cd su-exec;     git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af;     echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c;     echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c;     make;     mv /su-exec/su-exec /usr/bin/su-exec;     gpgconf --kill all;     rm -rf "$GNUPGHOME" /tini.asc /su-exec;     microdnf remove -y git* perl* make gcc glibc-headers glibc-devel libxcrypt-devel;     microdnf clean all # buildkit
 # Tue, 06 May 2025 09:58:59 GMT
@@ -87,21 +85,21 @@ CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:719fed365262e942a8d13a9f7c6f9e87e6274c4e3ad3d0efc81666b12229084d`  
-		Last Modified: Tue, 13 May 2025 05:25:18 GMT  
-		Size: 39.7 MB (39714170 bytes)  
+	-	`sha256:a080cada37e9f7003fcfc13eb6b0d19a9d6c4bfa9b3a9cb9ef46b184cfa60e43`  
+		Last Modified: Wed, 14 May 2025 14:33:02 GMT  
+		Size: 39.6 MB (39645097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa49a84dda9c758c7a94847f228a8c572615cde24505f4366bdf68c9d504166c`  
-		Last Modified: Tue, 13 May 2025 19:55:13 GMT  
-		Size: 125.8 MB (125788222 bytes)  
+	-	`sha256:f5019d50f4259d6937d3ec0b38cb601fe489455b8ca933695ea361ed91e7460d`  
+		Last Modified: Wed, 14 May 2025 23:48:49 GMT  
+		Size: 124.4 MB (124422479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24261549bf76c3df65d4586c90370a88d5883a88dc988d43d25d761fb692988f`  
-		Last Modified: Tue, 13 May 2025 19:55:09 GMT  
-		Size: 10.0 KB (10028 bytes)  
+	-	`sha256:20c6d57344eb7645a021a049d9140ce39e0a7a1f646dc8b9de02dcfbcd9b5a0f`  
+		Last Modified: Wed, 14 May 2025 23:48:47 GMT  
+		Size: 10.0 KB (10030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9b7920749d78c8078e4453a2f7b5bfd269098a9f61967a2b23c64d5917d1fa5`  
-		Last Modified: Tue, 13 May 2025 19:55:13 GMT  
-		Size: 157.7 MB (157673731 bytes)  
+	-	`sha256:1ed1cdfdee1c2581d6e0df742d3841d071ae72ad1d9b4a217a357ffea520bb94`  
+		Last Modified: Wed, 14 May 2025 23:48:50 GMT  
+		Size: 157.7 MB (157676219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -111,37 +109,37 @@ CMD ["neo4j"]
 ### `neo4j:5-community-ubi9` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:d52c3db4f4bd2b50c545185f225bf0a234cd24d5c3b24e1dc775bfe8d7750140
+$ docker pull neo4j@sha256:30d1c994f80197fea5811fd5edb0e9c395d21d3c222735d47fc531f04266445c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5365633 bytes)**  
+-	Total Size: **5.3 MB (5307988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8394e9aed51e42617fd664ff026a44b6ec0287703aca032625fee0c816cdaa4c`
+-	Image ID: `sha256:368b0d46af2bcf8b9eaa25bd3d70dfd9215324be6f71273cd8d2e288cc9de243`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6df4e99548d366b86ce9010144a8e1dfb51b7998fc4c18bb31b03330b25e2bf7`  
-		Last Modified: Tue, 13 May 2025 19:55:10 GMT  
-		Size: 5.3 MB (5344470 bytes)  
+	-	`sha256:dafb184d9cd163bdb5e62456c04bdd6afda1140611444ae353cc9a9258ad5d52`  
+		Last Modified: Wed, 14 May 2025 23:48:47 GMT  
+		Size: 5.3 MB (5286825 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f41020b67e717beaab9249de537a4916396e101b18fdafeb2dc9a34d388429eb`  
-		Last Modified: Tue, 13 May 2025 19:55:09 GMT  
+	-	`sha256:7e356b1d47c67f9f439bc789cc131f82c12917881ef19745fd5fc631d5f95add`  
+		Last Modified: Wed, 14 May 2025 23:48:47 GMT  
 		Size: 21.2 KB (21163 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:5-community-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:23b4add1c7357232afcab08ebfd6c77093541ce7e20781e8117181ce11b5517d
+$ docker pull neo4j@sha256:2dfe4603dcc3e635737652b0f1741ea44beb6f175c667c359e148932c69b3c14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.0 MB (321006286 bytes)**  
+-	Total Size: **320.0 MB (319954828 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6be22ffd7d0e2e55096560b39502ac73a5cd7e99f84fea62afa3b66f32ee7579`
+-	Image ID: `sha256:e0727b7e5e59f5f8ccf3e7084d0fc1641920ab403c69c461361dc1553f761fff`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -153,7 +151,7 @@ LABEL vendor="Red Hat, Inc."
 # Tue, 06 May 2025 09:58:59 GMT
 LABEL url="https://www.redhat.com"
 # Tue, 06 May 2025 09:58:59 GMT
-LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.5"       distribution-scope="public"
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
 # Tue, 06 May 2025 09:58:59 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
 # Tue, 06 May 2025 09:58:59 GMT
@@ -171,17 +169,15 @@ LABEL io.openshift.tags="minimal rhel9"
 # Tue, 06 May 2025 09:58:59 GMT
 ENV container oci
 # Tue, 06 May 2025 09:58:59 GMT
-COPY dir:322b1eba0279fa9048b9b4a366e8c52ac2af46fb06d006174f85e5f3b1ca4d6a in / 
+COPY dir:3fa6b42aa9cb1575a22397e201df9f16228db85fb99450db2e9f8bef40a52c0f in / 
 # Tue, 06 May 2025 09:58:59 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 06 May 2025 09:58:59 GMT
 CMD ["/bin/bash"]
 # Tue, 06 May 2025 09:58:59 GMT
-RUN . /cachi2/cachi2.env &&     rm -rf /var/log/*
-# Tue, 06 May 2025 09:58:59 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Tue, 06 May 2025 09:58:59 GMT
-LABEL "build-date"="2025-05-13T04:46:37" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="7575d7eb45eb7f545fef31ba067dfe3d8e52c4eb" "release"="1747111267"
+LABEL "build-date"="2025-05-14T10:40:32" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="f2f252e0ac953b9e80eaebfc08ec086edac81945" "release"="1747218906"
 # Tue, 06 May 2025 09:58:59 GMT
 RUN set -eux;     arch="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${arch}" in         'x86_64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini";             tini_sha="93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c";             ;;         'aarch64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini-arm64";             tini_sha="07952557df20bfd2a95f9bef198b445e006171969499a1d361bd9e6f8e5e0e81";             ;;         *) echo >&2 "Neo4j does not currently have a docker image for architecture $arch"; exit 1 ;;     esac;     microdnf install -y --nodocs         findutils         gcc         git         gzip         hostname         java-17-openjdk-headless         jq         make         procps         shadow-utils         tar         wget         which;     wget -q ${tini_url} -O /usr/bin/tini;     wget -q ${tini_url}.asc -O tini.asc;     echo "${tini_sha}"  /usr/bin/tini | sha256sum -c --strict --quiet;     chmod a+x /usr/bin/tini;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys         595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7         B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify tini.asc /usr/bin/tini;     git clone https://github.com/ncopa/su-exec.git;     cd su-exec;     git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af;     echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c;     echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c;     make;     mv /su-exec/su-exec /usr/bin/su-exec;     gpgconf --kill all;     rm -rf "$GNUPGHOME" /tini.asc /su-exec;     microdnf remove -y git* perl* make gcc glibc-headers glibc-devel libxcrypt-devel;     microdnf clean all # buildkit
 # Tue, 06 May 2025 09:58:59 GMT
@@ -208,21 +204,21 @@ CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:3a51516451292e212d18ae92028ed74f1d747fc2bc7752aa8c608a2cc7d626cc`  
-		Last Modified: Tue, 13 May 2025 05:30:51 GMT  
-		Size: 37.9 MB (37887912 bytes)  
+	-	`sha256:9cf99093c2fb01ee3da769d664a9212c42b7d50516f9e77975132a6540ccdf3b`  
+		Last Modified: Wed, 14 May 2025 14:43:12 GMT  
+		Size: 37.9 MB (37876105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d6a0da4464367c8ca0762806acf05a84bca2488db6587847763ac35f2e28ef2`  
-		Last Modified: Tue, 13 May 2025 20:17:45 GMT  
-		Size: 125.4 MB (125434589 bytes)  
+	-	`sha256:6fe4cd13530e532fa31e33704f9d484ab9195622f896e7408f1afa28930291be`  
+		Last Modified: Thu, 15 May 2025 00:11:14 GMT  
+		Size: 124.4 MB (124392392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8af41cc09ac591082803c4b9115b949b89db199a6e2eddfcc89cc033b49e126`  
-		Last Modified: Tue, 13 May 2025 20:17:42 GMT  
-		Size: 10.0 KB (10026 bytes)  
+	-	`sha256:c82c5aa8628e894fed7f0ef9aaedbe1004902ac3714086b3515140ebf654e156`  
+		Last Modified: Thu, 15 May 2025 00:11:09 GMT  
+		Size: 10.0 KB (10028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a262a418b9067529a3586e28969df3e98d43f7a6d29b12ca17a505e2ef0e8574`  
-		Last Modified: Tue, 13 May 2025 20:17:46 GMT  
-		Size: 157.7 MB (157673727 bytes)  
+	-	`sha256:4484c7ca08073314386a62f509bb50aaccb0f6e4ca4b2a6aae779dfefb0a3f7d`  
+		Last Modified: Thu, 15 May 2025 00:11:13 GMT  
+		Size: 157.7 MB (157676271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -232,23 +228,23 @@ CMD ["neo4j"]
 ### `neo4j:5-community-ubi9` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:9f5e8be53481ab653dcae8bee3c48ce71af4007bd446b65578481ce1f29f043e
+$ docker pull neo4j@sha256:42e0f5a0cc7fa11ce3e0df301c967a9319a6823b5eadb77360a820e5bd9ac746
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5345182 bytes)**  
+-	Total Size: **5.3 MB (5287889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:778fc623e4f85a070107d9f247afdef27275f1213ee75d9ec4926e607a936536`
+-	Image ID: `sha256:96461d68ea2702bc7abf9f264ed4cbe3c24bc9f2d9ca276f73e36fc6f396f90a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa6bfda354d9b680ff7d5dbabd8bc01286a7827bfcfb8baf1912def44cf30ff3`  
-		Last Modified: Tue, 13 May 2025 20:17:42 GMT  
-		Size: 5.3 MB (5323882 bytes)  
+	-	`sha256:617cf876ec0e31e3899357388cdfa3a66eda5d8ac20006172cc3c4a57711622f`  
+		Last Modified: Thu, 15 May 2025 00:11:10 GMT  
+		Size: 5.3 MB (5266591 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca8ca22627d398ea0cac07e094057333cfaf3712a29e2421740999df61582188`  
-		Last Modified: Tue, 13 May 2025 20:17:41 GMT  
-		Size: 21.3 KB (21300 bytes)  
+	-	`sha256:dda1332e101efe2c848f3c1fe590f44b3f98ab917be09271426675103202944a`  
+		Last Modified: Thu, 15 May 2025 00:11:09 GMT  
+		Size: 21.3 KB (21298 bytes)  
 		MIME: application/vnd.in-toto+json
