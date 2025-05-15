@@ -32,14 +32,14 @@ RUN cmd /S /C #(nop)  CMD ["cmd" "/C" "type C:\\hello.txt"]
 
 -	Layers:
 	-	`sha256:46eb56853bf7d519201d6623d174cec4d04bea0e9d1426f76cc99e437f341f3a`  
-		Last Modified: Thu, 15 May 2025 19:27:55 GMT  
+		Last Modified: Tue, 13 May 2025 19:42:18 GMT  
 		Size: 122.6 MB (122576639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:81016aab28446563c3d1c40c0389cdfbd567057c241a1967de5f0b2a2d2476e8`  
-		Last Modified: Thu, 15 May 2025 19:27:28 GMT  
+		Last Modified: Wed, 14 May 2025 20:49:36 GMT  
 		Size: 1.8 KB (1752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2ca0a8c734908c93ec7779d301e164794354ab8c0dcd9b3e67699b1288ebbee`  
-		Last Modified: Thu, 15 May 2025 19:27:27 GMT  
+		Last Modified: Wed, 14 May 2025 20:49:36 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
