@@ -168,11 +168,11 @@ $ docker pull websphere-liberty@sha256:a978b6988118d97b09c181321fc8db59f6be8923d
 
 -	Layers:
 	-	`sha256:dd9efa56634a27dd509b5a4a7e6576f3e23bf6c1091c4e01c6346d3b2255bc39`  
-		Last Modified: Wed, 14 May 2025 19:58:24 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:31 GMT  
 		Size: 2.2 MB (2177626 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e93a72c0bb6ec3281c09b3589076621893e84f7af7d69d493d7e69af4f130978`  
-		Last Modified: Wed, 14 May 2025 19:58:23 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:29 GMT  
 		Size: 38.3 KB (38291 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -279,19 +279,19 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 1.5 MB (1536203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bdd2353677fff4d204b05c3ede75419526f90b6d0c20311ab2f6f641cbb7a658`  
-		Last Modified: Wed, 14 May 2025 19:36:05 GMT  
+		Last Modified: Fri, 16 May 2025 21:11:43 GMT  
 		Size: 136.6 MB (136628899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6827ed77dbf25942a04403e2a91e99380557f4b5832eecfa8e9600f26f22e868`  
-		Last Modified: Wed, 14 May 2025 20:01:27 GMT  
+		Last Modified: Fri, 16 May 2025 21:11:25 GMT  
 		Size: 118.1 KB (118116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:add2763caa949cf5216eafba211d2612115f230e2dbdfcd000848b6ed6c5b106`  
-		Last Modified: Wed, 14 May 2025 20:01:28 GMT  
+		Last Modified: Fri, 16 May 2025 21:11:26 GMT  
 		Size: 17.5 MB (17547412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:800f59dc99d346c1ce0324aa4ff9a7fb8212c29f4957e9c59f0a12c40e529dae`  
-		Last Modified: Wed, 14 May 2025 20:01:27 GMT  
+		Last Modified: Fri, 16 May 2025 21:11:25 GMT  
 		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c73bfc4ce09c0c76d43def6e2caa59149b3b8f74c88c70060ac718a9a06239af`  
@@ -307,11 +307,11 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5caeeba22a9466dff013ca0c8f647dbdda1dc89a017484516a7a4ecdf4f3c337`  
-		Last Modified: Wed, 14 May 2025 20:01:29 GMT  
+		Last Modified: Fri, 16 May 2025 21:11:25 GMT  
 		Size: 13.1 KB (13124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06e0d6a8313795006d31daa70d37aebe4424ecf10212b1744b55fda4517428b8`  
-		Last Modified: Wed, 14 May 2025 20:01:29 GMT  
+		Last Modified: Fri, 16 May 2025 21:11:27 GMT  
 		Size: 5.4 MB (5403045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -331,11 +331,11 @@ $ docker pull websphere-liberty@sha256:a8387203dce409328cd54a418da5b4b5cc272a17b
 
 -	Layers:
 	-	`sha256:c1e57655373e49f04b7b6c782e2c54c69b008c6e1dcbbe0e54389829832c8886`  
-		Last Modified: Wed, 14 May 2025 20:01:27 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:36 GMT  
 		Size: 2.2 MB (2180789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bbdfae5cb19dc8cc7d577c599e6a5b88a9cc1ea26a4d7fb04e1870b38f3fa486`  
-		Last Modified: Wed, 14 May 2025 20:01:27 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:35 GMT  
 		Size: 38.3 KB (38338 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -442,19 +442,19 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 1.5 MB (1455700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e2e97bf327de9faf2ba1006ffe91356f4a07ad8ca28c996b313b77ffabe65ed`  
-		Last Modified: Wed, 14 May 2025 19:37:01 GMT  
+		Last Modified: Fri, 16 May 2025 21:12:14 GMT  
 		Size: 132.8 MB (132811842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2dc8e3ca5ba8ab4b4b03c48f7330467d6f3b56ea910ede18f3e09e9637b48ab`  
-		Last Modified: Wed, 14 May 2025 20:05:10 GMT  
+		Last Modified: Fri, 16 May 2025 21:12:04 GMT  
 		Size: 114.7 KB (114668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b14a2b41ba9bf327ceba8dc22280c896cf292aa69a3479b2377996b11156eeb0`  
-		Last Modified: Wed, 14 May 2025 20:05:11 GMT  
+		Last Modified: Fri, 16 May 2025 21:12:05 GMT  
 		Size: 17.5 MB (17546911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a34bce48de7da7a8ea5e8b894153a26a88d3064137a86a98b270ed69025c04b5`  
-		Last Modified: Wed, 14 May 2025 20:05:10 GMT  
+		Last Modified: Fri, 16 May 2025 21:12:03 GMT  
 		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc52d464c51a5570a0c1eb37672ff8874407c9d119da58fc34de8f17cf1fe9c6`  
@@ -470,11 +470,11 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d845ea81397537632a30ec403c6b661631a22417130cb6c5af1491afa80fe5e`  
-		Last Modified: Wed, 14 May 2025 20:05:11 GMT  
+		Last Modified: Fri, 16 May 2025 21:12:05 GMT  
 		Size: 13.1 KB (13131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d104a2863665bb361cfb4d6b27ca3b2861687555e5642e42aab1bd7bebcad44c`  
-		Last Modified: Wed, 14 May 2025 20:05:12 GMT  
+		Last Modified: Fri, 16 May 2025 21:12:06 GMT  
 		Size: 6.1 MB (6109295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -494,10 +494,10 @@ $ docker pull websphere-liberty@sha256:e26eaa2e77f61421bf180a363c9c5fb7e67ed5893
 
 -	Layers:
 	-	`sha256:299f3e89e122292a4f78ee9c8b39d53136683c7b9138acd32aa00d1e8e894f00`  
-		Last Modified: Wed, 14 May 2025 20:05:10 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:41 GMT  
 		Size: 2.2 MB (2176387 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cfdf60e13a7901b0b6b5cf2476160127cdd1a4d392806d1d02582c571398c44a`  
-		Last Modified: Wed, 14 May 2025 20:05:10 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:40 GMT  
 		Size: 38.3 KB (38292 bytes)  
 		MIME: application/vnd.in-toto+json

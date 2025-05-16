@@ -520,11 +520,11 @@ $ docker pull websphere-liberty@sha256:6088e5d0a97765ec45e6ccadbb15866c62016db90
 
 -	Layers:
 	-	`sha256:a87a837324f013aa1b3e4d3968d9b83e807f815b076ca2914a206ba7b1487833`  
-		Last Modified: Fri, 09 May 2025 18:50:57 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:54 GMT  
 		Size: 3.7 MB (3740852 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:36ec1493b8ef2f0d64530bfff4292d7df4783fe9f6bf0e2353f4eff2ca988e14`  
-		Last Modified: Fri, 09 May 2025 18:50:56 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:53 GMT  
 		Size: 40.2 KB (40170 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -691,10 +691,10 @@ $ docker pull websphere-liberty@sha256:29a2d30cd83a9e686a97d290fc21f2d2d631117b5
 
 -	Layers:
 	-	`sha256:05f77d0e47552895bc97730218320541fa946cd9780355f322e01e55882c1b2d`  
-		Last Modified: Fri, 09 May 2025 18:59:40 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:58 GMT  
 		Size: 3.7 MB (3737380 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c1cf24a4a8f3505b7bced91027f93bbd2a1cc63a53e5b9aa0b785e75ae31573e`  
-		Last Modified: Fri, 09 May 2025 18:59:40 GMT  
+		Last Modified: Fri, 16 May 2025 21:16:58 GMT  
 		Size: 40.1 KB (40130 bytes)  
 		MIME: application/vnd.in-toto+json
