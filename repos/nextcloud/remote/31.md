@@ -235,7 +235,7 @@ $ docker pull nextcloud@sha256:706cf99df8d21fa8110dde78d2e3904112df9a49caa161b34
 
 -	Layers:
 	-	`sha256:dc52dcc6f87976a0f1ca6377d8a8992cc35c48ce49ac0875ef4d4bed4f83b83d`  
-		Last Modified: Fri, 09 May 2025 17:37:30 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:03 GMT  
 		Size: 62.6 KB (62579 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -451,7 +451,7 @@ $ docker pull nextcloud@sha256:37aad614ea084e446dd718de1c22b3f5a3f8f8025652fc565
 
 -	Layers:
 	-	`sha256:ad773021edf36b9a510164498bbc697a4b699e3335df7de1dd8966fd7322cc9e`  
-		Last Modified: Fri, 09 May 2025 18:56:23 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:04 GMT  
 		Size: 62.8 KB (62776 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -667,7 +667,7 @@ $ docker pull nextcloud@sha256:0169f5ece8de2cd30022d655a7840ff148c8898264a49ad6d
 
 -	Layers:
 	-	`sha256:d011e7598e483f872f1c758f2b58aa076ab87dbb46628575a08b38eaa46f1833`  
-		Last Modified: Fri, 09 May 2025 20:38:49 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:06 GMT  
 		Size: 62.8 KB (62776 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -883,7 +883,7 @@ $ docker pull nextcloud@sha256:5e4989b29d3c04a933ce7a6b1832d1c1d3b7c336669caa79e
 
 -	Layers:
 	-	`sha256:bb316b016c7b1e0159bed6ea90793ec508487051edb93bd594cbc509c834527e`  
-		Last Modified: Fri, 09 May 2025 21:19:14 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:07 GMT  
 		Size: 62.8 KB (62846 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1099,7 +1099,7 @@ $ docker pull nextcloud@sha256:332c345bec31728ff66f4bf842964529853b6ef7ec9a0a30b
 
 -	Layers:
 	-	`sha256:3af8dad2f7360d77bbb69a5be02ce8fa5509413b29e02ce53ccad32b8a89dcfa`  
-		Last Modified: Fri, 09 May 2025 17:38:02 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:08 GMT  
 		Size: 62.5 KB (62498 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1315,7 +1315,7 @@ $ docker pull nextcloud@sha256:ef7f3ed8f4573fb77653c6727a2f0cfcf687b12a516f73762
 
 -	Layers:
 	-	`sha256:41a2d8710a7e2ca2ea83f942f4c2e8b03145b21aa39c4abf8b0718c14d816dcb`  
-		Last Modified: Fri, 09 May 2025 20:02:48 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:09 GMT  
 		Size: 62.7 KB (62723 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1531,7 +1531,7 @@ $ docker pull nextcloud@sha256:5ed970111bbb1166bbd40e5d07a383bd80974529b0af54b07
 
 -	Layers:
 	-	`sha256:810fc38ab3710d0e9a5660cc41c8ed3a721a78b5be847b844e1e739b6f82adb4`  
-		Last Modified: Fri, 09 May 2025 20:57:09 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:10 GMT  
 		Size: 62.7 KB (62682 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1747,6 +1747,6 @@ $ docker pull nextcloud@sha256:65d617226ede266042029f37b87c0e73dc70f8cab92205596
 
 -	Layers:
 	-	`sha256:cf264db0da88acd8afd52207475146c25fa3a5742064ecc95e638c6004e11db9`  
-		Last Modified: Fri, 09 May 2025 22:32:56 GMT  
+		Last Modified: Fri, 16 May 2025 14:52:11 GMT  
 		Size: 62.6 KB (62570 bytes)  
 		MIME: application/vnd.in-toto+json
