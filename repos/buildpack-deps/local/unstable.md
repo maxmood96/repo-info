@@ -2937,13 +2937,20 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.47-1.1
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47-1.1.dsc' libpng1.6_1.6.47-1.1.dsc 2287 SHA256:82ff8051d34181df9ad5d951801d000563613afc357246b73f8db2ad69a7d00f
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47.orig.tar.gz' libpng1.6_1.6.47.orig.tar.gz 1571845 SHA256:631a4c58ea6c10c81f160c4b21fa8495b715d251698ebc2552077e8450f30454
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.47-1.1.debian.tar.xz' libpng1.6_1.6.47-1.1.debian.tar.xz 33204 SHA256:288540aedc46a760f7eb0dc5b58d92d7b647a15fcec3e7ec557ada3aa3dd2579
+```
 
-- http://snapshot.debian.org/package/libpng1.6/1.6.47-1.1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libpng1.6/1.6.47-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.47-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.47-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3602,20 +3609,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-0.4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-0.4.dsc' libxml2_2.12.7+dfsg+really2.9.14-0.4.dsc 3060 SHA256:ed52ed86b0dbc448c79490829aa8f6b73abf37794e3be27d746a8aa1c90a94e0
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-0.4.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-0.4.debian.tar.xz 38312 SHA256:02dd4c440b5b8bd9376030b5e224a0da707d60e649eec28787b35ebdeebb4f0d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-0.4/
 
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-0.4/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-0.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-0.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
@@ -5575,13 +5575,20 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris util-linux=2.41-4
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-4.dsc' util-linux_2.41-4.dsc 4942 SHA256:01dc6ca434837749483f5de8fc81b2c7c65cbe02bd372d3ae90cab8093418b66
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA256:81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-4.debian.tar.xz' util-linux_2.41-4.debian.tar.xz 120092 SHA256:4861bac9b87dae515d165aa45b0d735171d757382159456f0a26cb5dc4b0907d
+```
 
-- http://snapshot.debian.org/package/util-linux/2.41-4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/util-linux/2.41-4/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.41-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.41-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 

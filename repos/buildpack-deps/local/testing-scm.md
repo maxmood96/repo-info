@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.150
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.150.dsc' adduser_3.150.dsc 1678 SHA256:155e31a06986ed27d67e4ac262d789768352a6ea65cc74cb6e73c6aa7fb123a3
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.150.tar.xz' adduser_3.150.tar.xz 331704 SHA256:44bb81f4b0557f8a868ccf6310ab18a1b49cf18da65d83a67f2ccc289e275c51
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.150/
 
-- https://sources.debian.net/src/adduser/3.150/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.150/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.150/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -2383,21 +2377,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.0p1-2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-2.dsc' openssh_10.0p1-2.dsc 3500 SHA256:e67c945e39cefe5d38f1dbd6d122ca2b17193e65788bf48c4d36f7c5b5f1c57c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-2.debian.tar.xz' openssh_10.0p1-2.debian.tar.xz 198240 SHA256:9d08fe1de56fe63dbf1c17a4ecc79f3584b9f0d9690f4d709b0d3e3a812ef210
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.0p1-2/
 
-- https://sources.debian.net/src/openssh/1:10.0p1-2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.0p1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.0p1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.0-1`
 
@@ -2942,21 +2928,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.dsc' sqlite3_3.46.1-3.dsc 2632 SHA256:6ac6601da84b8e01bbf742e0d15bbdf076a5969f8dfb5175a3a6fb3f95ba6ac5
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-3.debian.tar.xz' sqlite3_3.46.1-3.debian.tar.xz 30968 SHA256:31e87bd93c95b198c0cfd25eebd0a8e79d53d37601df80f548a2804f810234e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.46.1-3/
 
-- https://sources.debian.net/src/sqlite3/3.46.1-3/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.46.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.46.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.5-3`
 
