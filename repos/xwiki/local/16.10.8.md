@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc45c8f4677a6b25bf8004cb04c91e9d658268bd85bbbf0da2b637afcd26d668`
-- Created: `2025-05-09T14:55:49Z`
+- Image ID: `sha256:cc402b616c2270c798adc63cf7240dc4966729fb6fad756b95ca13d7027fb92a`
+- Created: `2025-05-14T13:55:26Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,11 +20,11 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.104`
-  - `TOMCAT_SHA512=b387fae59f1eda13a5c2336243514d9568057815689057ff920be696548ea6afbcfc0933934d3d6f8c4e2b5108322dc7509bfe934c49d05905c6ce87f1dff53c`
-  - `XWIKI_VERSION=16.10.7`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.7`
-  - `XWIKI_DOWNLOAD_SHA256=819af797c94c1918cc3a4bbdf1f0c3c0f83e017c173c02a5ae4d7e42a2a2fb86`
+  - `TOMCAT_VERSION=9.0.105`
+  - `TOMCAT_SHA512=904f10378ee2c7c68529edfefcba50c77eb677aa4586cfac0603e44703b0278f71f683b0295774f3cdcb027229d146490ef2c8868d8c2b5a631cf3db61ff9956`
+  - `XWIKI_VERSION=16.10.8`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.8`
+  - `XWIKI_DOWNLOAD_SHA256=559644b36d96d9daf64bec12559899a525e9f6dc164f7c2dcb1ca6c3a0613a62`
   - `MYSQL_JDBC_VERSION=9.3.0`
   - `MYSQL_JDBC_SHA256=6c8e6692b521376d89bc5618c16cdeaf8c61854329f4fa25677ed08776c5bb76`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0`
@@ -42,11 +42,11 @@
 
 ## `dpkg` (`.deb`-based packages)
 
-### `dpkg` source package: `abseil=20220623.1-3.1ubuntu3`
+### `dpkg` source package: `abseil=20220623.1-3.1ubuntu3.2`
 
 Binary Packages:
 
-- `libabsl20220623t64:amd64=20220623.1-3.1ubuntu3`
+- `libabsl20220623t64:amd64=20220623.1-3.1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libabsl20220623t64/copyright`)
 
@@ -55,10 +55,10 @@ Licenses: (parsed from: `/usr/share/doc/libabsl20220623t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris abseil=20220623.1-3.1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/abseil/abseil_20220623.1-3.1ubuntu3.dsc' abseil_20220623.1-3.1ubuntu3.dsc 2627 SHA512:fc3fa76b206948b66725f1de3c8998a4614ef78a7d9b6629d016a218dc04f0bae7390ede38d561bc3487da18235e0be309f89c0db0eaf191096d18b1d81cb3a1
+$ apt-get source -qq --print-uris abseil=20220623.1-3.1ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/abseil/abseil_20220623.1-3.1ubuntu3.2.dsc' abseil_20220623.1-3.1ubuntu3.2.dsc 2683 SHA512:413059bae795a8924c2db9ac33ecf3270bb3247b34a148a23cd1c058719d5e7e286c99bce428cc14beede0d3e2d75fc4a7e4a424a36ddd8faaacc357eca40590
 'http://archive.ubuntu.com/ubuntu/pool/main/a/abseil/abseil_20220623.1.orig.tar.gz' abseil_20220623.1.orig.tar.gz 1957272 SHA512:3c7fca91a9bda39a43cbdbd855577f58a988a7dc214ac93ef7e4cb2cc6ec24149bd7a414b4f7caf35511eaaa296260051a3d02b69ee5fd6e3247100b0b12258e
-'http://archive.ubuntu.com/ubuntu/pool/main/a/abseil/abseil_20220623.1-3.1ubuntu3.debian.tar.xz' abseil_20220623.1-3.1ubuntu3.debian.tar.xz 8412 SHA512:0a666f60c5d8bd89ebb9ff99de9b120c0ec8858ca199b1236de31f834007facbd896257bde2efbfadc828b5ccf9e8472b0ba89dcb70af89d49db3763258c070e
+'http://archive.ubuntu.com/ubuntu/pool/main/a/abseil/abseil_20220623.1-3.1ubuntu3.2.debian.tar.xz' abseil_20220623.1-3.1ubuntu3.2.debian.tar.xz 10380 SHA512:6f8ca36063ee10af159f97ad552f3c61977487c06e26fc16daa0af3542e3777db4a75e60eca7878782b835b521c6f1df6ff14facc5d35549e28eebb2f0120678
 ```
 
 ### `dpkg` source package: `acl=2.3.2-1build1.1`
