@@ -335,7 +335,7 @@ $ docker pull composer@sha256:d213d5b18fe7e5040ca85d0c1597af0ab21be046a7ddf5cdcd
 
 -	Layers:
 	-	`sha256:2fc6a8d43960284bc0fb5ec86a64f8ecdb8f007b1fca9b46dc2fc1ffaca16ab6`  
-		Last Modified: Thu, 15 May 2025 23:45:51 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:06 GMT  
 		Size: 30.6 KB (30597 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -491,11 +491,11 @@ $ docker pull composer@sha256:00ad2c2548d5273cd4818be1eece123c30d76bd10e8e9611cc
 
 -	Layers:
 	-	`sha256:af2643c8d068200179b6a7138876458e953468aeb0ae7562c167f1b27f66f6fb`  
-		Last Modified: Fri, 16 May 2025 00:13:18 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:10 GMT  
 		Size: 2.2 MB (2167220 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:906135744fe852fa31d76d9c32f60cff2fa4833784a635d1dcf26620114a3c38`  
-		Last Modified: Fri, 16 May 2025 00:13:17 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:10 GMT  
 		Size: 30.8 KB (30812 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -651,11 +651,11 @@ $ docker pull composer@sha256:0458953aa40823fdb082487f89fef39b08f99aae0c002c243f
 
 -	Layers:
 	-	`sha256:99806127942704366caa3b8e55a0bc5d48dd61c5d0b936038cda1f3d2530a1a0`  
-		Last Modified: Thu, 15 May 2025 21:20:55 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:14 GMT  
 		Size: 2.2 MB (2167048 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cc064cb99a429129783e95783d52018217274dccc3381dc4e464fb1f2b31ebc3`  
-		Last Modified: Thu, 15 May 2025 21:20:55 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:13 GMT  
 		Size: 30.8 KB (30844 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -943,15 +943,15 @@ CMD ["composer"]
 		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e2542a28ae090694b598e2b918061f78f4a6de902b2bca2262594153a926dfa`  
-		Last Modified: Thu, 15 May 2025 21:37:48 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:21 GMT  
 		Size: 1.5 MB (1527886 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7799b7b0401db7e24b096d24d81098951daa7d056a56be2cfd544d23b89f230c`  
-		Last Modified: Thu, 15 May 2025 21:37:48 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:21 GMT  
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd48e7946e05fd7ceb4b0b900b8cd4fe45b6283187547deedcd9716f87da84ea`  
-		Last Modified: Thu, 15 May 2025 21:37:48 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:21 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -971,11 +971,11 @@ $ docker pull composer@sha256:629233363aeb9faac91368be42f115494cd65a7655e424a664
 
 -	Layers:
 	-	`sha256:57c0c7eabfd0ac8abe0c26e090f862248898420765cbf21160a4e3ff2d6feafc`  
-		Last Modified: Thu, 15 May 2025 21:37:48 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:22 GMT  
 		Size: 2.2 MB (2165459 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f9d4199f1421fa7ede498ba4ee0f5f43e2d117c7ca774a1de9b2f6e730a374b`  
-		Last Modified: Thu, 15 May 2025 21:37:48 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:22 GMT  
 		Size: 30.8 KB (30758 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1263,15 +1263,15 @@ CMD ["composer"]
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d86b4f24de2f9756f8df8fab35a08884870a6db249f1c864345b101e4ac12ab1`  
-		Last Modified: Thu, 15 May 2025 23:32:44 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:29 GMT  
 		Size: 1.5 MB (1529826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75ee1ad29817cee88d2d4e2f3b023a6f9a52f4b9782b7fa08542b96f18cef898`  
-		Last Modified: Thu, 15 May 2025 23:32:44 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:30 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:073a8d9d544e6c6ac56184f2f7531955496348883f8d42b415a814932c351b57`  
-		Last Modified: Thu, 15 May 2025 23:32:44 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:30 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1291,10 +1291,10 @@ $ docker pull composer@sha256:dffcd44cb48f266ce84dbea977556386c35a6e53c353361cb2
 
 -	Layers:
 	-	`sha256:af62ee0892b68a546d8f5ec59c9be6ff24962ec9f7947b8e627e442ab82cca1e`  
-		Last Modified: Thu, 15 May 2025 23:32:43 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:32 GMT  
 		Size: 2.2 MB (2164181 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e87282835eb849bd92e2d6f3dbb71e0b48d0844bde9aee7efaea2a4dbf4a9342`  
-		Last Modified: Thu, 15 May 2025 23:32:43 GMT  
+		Last Modified: Fri, 16 May 2025 13:57:31 GMT  
 		Size: 30.7 KB (30710 bytes)  
 		MIME: application/vnd.in-toto+json
