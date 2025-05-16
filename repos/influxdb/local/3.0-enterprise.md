@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ffb32e34c04350f27cc051cb0b5683f850bf91421e6f82f00abebb4bf0c64549`
-- Created: `2025-05-05T15:05:32Z`
+- Image ID: `sha256:fcc6e48be2b2670b9aa821717cbc52bdf388a660d63e36b64e81844f3a811ef2`
+- Created: `2025-05-16T17:01:08Z`
 - Virtual Size: ~ 282.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["influxdb3","serve"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=3.0.2`
+  - `INFLUXDB_VERSION=3.0.3`
   - `INFLUXDB3_PLUGIN_DIR=/plugins`
   - `INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3`
   - `INFLUXDB_IOX_DB_DIR=/var/lib/influxdb3`
