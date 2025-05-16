@@ -1,10 +1,10 @@
-# `composer:2.8.8`
+# `composer:2.8.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:539808e605ec8fdd3117a80817d3e99ce4af0c3c34ca931e8f23e5aeeb22aea7`
-- Created: `2025-04-07T06:51:49Z`
-- Virtual Size: ~ 200.16 Mb  
+- Image ID: `sha256:6896f94724b7ddac21b0996f612b72f945d85ae4235decb178acbbef73ced296`
+- Created: `2025-05-15T07:05:58Z`
+- Virtual Size: ~ 201.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=e29f4c23be2816ed005aa3f06bbb8eae0f22cc133863862e893515fc841e65e3`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.8.8`
+  - `COMPOSER_VERSION=2.8.9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -778,16 +778,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
 MIT
 
 ```
