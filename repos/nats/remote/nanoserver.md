@@ -41,7 +41,7 @@ RUN cmd /S /C #(nop)  CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:67993f619eb734923df34b48b82cc62be3bba8b8a12116cccde4695b2546a3ba`  
-		Last Modified: Tue, 13 May 2025 19:41:43 GMT  
+		Last Modified: Thu, 15 May 2025 19:27:12 GMT  
 		Size: 108.8 MB (108780592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ad300c79b9fb6f66461ded839672cf5492f7b7af1319ba6344cb0f67263cfaa`  
