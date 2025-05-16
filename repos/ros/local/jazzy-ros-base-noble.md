@@ -3119,14 +3119,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-59.61
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-59.61.dsc' linux_6.8.0-59.61.dsc 9383 SHA512:2d3a4546f2ffd986a4b474023a2ab61ec78f046a6bb01976014ddc79029fcaeb91466cd70abad9c506eb54224a3b30d3f61c823256dd4f468fb553ce3d4eebb4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-59.61.diff.gz' linux_6.8.0-59.61.diff.gz 5047523 SHA512:0e34ce025591b13215b24975f96d76b1d29abb8f992f1ee52f644d4ab20e6a6fafcacf2063a57c9cfcf3101f0cbc97037d40539bdf3a2c066c6284863d27955c
-```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
