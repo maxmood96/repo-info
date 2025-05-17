@@ -768,11 +768,11 @@ WORKDIR /usr/bin
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56d850f8661517b8a9f5b8f1541531aaa3e647bd024b63b8ed9f6e878e09616a`  
-		Last Modified: Tue, 06 May 2025 20:17:51 GMT  
+		Last Modified: Sat, 17 May 2025 05:29:22 GMT  
 		Size: 6.4 MB (6365560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a703b896c4ecc97e6367f67d4a711da3b02a0a6828fcde549729d64645575472`  
-		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Last Modified: Sat, 17 May 2025 05:29:23 GMT  
 		Size: 1.8 MB (1771406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0f10770fd8e5f7a730b5853591aca18bc28e62855096ab5e064caeb5c858871`  
@@ -800,10 +800,10 @@ $ docker pull caddy@sha256:44444b5765575e3a7910548a4d68bf8e39e0af967c16c1d9a1cdf
 
 -	Layers:
 	-	`sha256:bd9c0347ab986d7e8d836a1765b11b22d1e0854c5e17cab1e759ac95a0986c5d`  
-		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Last Modified: Sat, 17 May 2025 05:29:27 GMT  
 		Size: 291.7 KB (291652 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3f570d9fb1426348020a7e70d70894bc02c277f15a4598ed760b55f0e946777f`  
-		Last Modified: Tue, 06 May 2025 20:17:50 GMT  
+		Last Modified: Sat, 17 May 2025 05:29:29 GMT  
 		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
