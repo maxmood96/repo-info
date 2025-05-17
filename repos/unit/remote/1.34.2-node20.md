@@ -247,15 +247,15 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:531e04b43e64ee287d2d39aef5800e82533b01f16d4ac3ef351148e9b75bde6a`  
-		Last Modified: Thu, 15 May 2025 22:34:15 GMT  
+		Last Modified: Sat, 17 May 2025 00:11:54 GMT  
 		Size: 23.6 MB (23611548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af0552f4a984257e58b61b49e0e2f07fd9a2b566a0445796e18fbe46614bdf89`  
-		Last Modified: Thu, 15 May 2025 22:34:13 GMT  
+		Last Modified: Sat, 17 May 2025 00:11:53 GMT  
 		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1655865f560cb3038ec92134be27cf27c948af4ae535125abf3b5dbac2f186b5`  
-		Last Modified: Thu, 15 May 2025 22:34:13 GMT  
+		Last Modified: Sat, 17 May 2025 00:11:55 GMT  
 		Size: 1.5 KB (1454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
