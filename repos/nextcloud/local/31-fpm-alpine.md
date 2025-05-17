@@ -1,10 +1,10 @@
-# `nextcloud:31.0.4-fpm-alpine`
+# `nextcloud:31.0.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b7bee936cd1f5a1383cf8941de699bfcff0885248f258ea03b8097857c426bc4`
-- Created: `2025-04-18T15:01:40Z`
-- Virtual Size: ~ 1.04 Gb  
+- Image ID: `sha256:689a865e31e2ed3a385aa8da0333753e51e202d0a0e819fd398bcfd61a97901a`
+- Created: `2025-05-16T00:38:01Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=31.0.4`
+  - `NEXTCLOUD_VERSION=31.0.5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1204,16 +1204,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.4-r0 description:
+libpq-17.5-r0 description:
 PostgreSQL client library
 
-libpq-17.4-r0 webpage:
+libpq-17.5-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.4-r0 installed size:
+libpq-17.5-r0 installed size:
 322 KiB
 
-libpq-17.4-r0 license:
+libpq-17.5-r0 license:
 PostgreSQL
 
 ```
@@ -1544,16 +1544,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
 MIT
 
 ```
