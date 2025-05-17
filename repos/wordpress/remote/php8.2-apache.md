@@ -229,7 +229,7 @@ $ docker pull wordpress@sha256:a7b0fc669d7b6e080e8365ed11e2fdde66f72e81163debec2
 		Size: 8.1 MB (8115401 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:89cf12c5597b0743aa98cd3e966a95ef4c263ec168d67e99a39152f8b890d874`  
-		Last Modified: Thu, 01 May 2025 16:48:33 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:06 GMT  
 		Size: 61.1 KB (61085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -439,7 +439,7 @@ $ docker pull wordpress@sha256:dac750e57deb2d55bff14af50e114ebb199e2fe5416a75c10
 		Size: 7.9 MB (7921644 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1e04f0a49c2dfb43c1d066d0cc234214464a1eda189bb039233faa115e96e575`  
-		Last Modified: Thu, 01 May 2025 16:48:14 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:07 GMT  
 		Size: 61.3 KB (61314 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -649,7 +649,7 @@ $ docker pull wordpress@sha256:027295829166c7bb4418e25f47ceec54e7e5d071c31e104d2
 		Size: 7.9 MB (7926338 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8847050a4547104556d8d04c0cb15c318fdd06246cefc579ffb1cdd58e0b8eca`  
-		Last Modified: Thu, 01 May 2025 16:48:50 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:07 GMT  
 		Size: 61.3 KB (61304 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -859,7 +859,7 @@ $ docker pull wordpress@sha256:c270db718209fef31b6e409b4220fb6f4c5509ce245667a39
 		Size: 8.1 MB (8144312 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:715a3bc39e2d42b5b3f19d68ec4d45f225c4fa7c9759ca3b14ec88d33de00780`  
-		Last Modified: Thu, 01 May 2025 16:49:32 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:04 GMT  
 		Size: 61.4 KB (61397 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1065,11 +1065,11 @@ $ docker pull wordpress@sha256:b1bea1a6e24821ce93fb5ccd2c3dc4ce2618e83a7b4bc4587
 
 -	Layers:
 	-	`sha256:eead2d4b9a6a292c7adae36adb277800a5f2f153f461c7cd23558c4ab70e7acb`  
-		Last Modified: Thu, 01 May 2025 16:48:33 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:08 GMT  
 		Size: 8.1 MB (8088557 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c07b4e23b6d9d55639d7f1e323a29df4670dff3bd31187dda88d17e3285cf75b`  
-		Last Modified: Thu, 01 May 2025 16:48:32 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:05 GMT  
 		Size: 61.0 KB (60984 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1275,7 +1275,7 @@ $ docker pull wordpress@sha256:8f7f169a051c1c43db6feb47ba38d4e380eeafad0d4135b06
 
 -	Layers:
 	-	`sha256:21838fccece3929e1043a84cd349dae77f39086433472ec6f70159af83a18f35`  
-		Last Modified: Thu, 01 May 2025 17:17:48 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:05 GMT  
 		Size: 61.1 KB (61051 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1485,7 +1485,7 @@ $ docker pull wordpress@sha256:25cadf8d753067eaae13576c85ab724466c30a260691b51fe
 		Size: 8.1 MB (8094354 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9c02bccc2e840cfd53ab0cc58933e18ff10e22bf238453ab467d33f7dba2ce29`  
-		Last Modified: Thu, 01 May 2025 16:52:48 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:05 GMT  
 		Size: 61.2 KB (61212 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1695,6 +1695,6 @@ $ docker pull wordpress@sha256:5afbb43bd06d08cca06f4c74d046fbd9a671500b837ac2abc
 		Size: 7.9 MB (7945512 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c3f28de96b7197a6f6fd5a5c6169bfc2759eb62b1daad229b2910fd46f37af53`  
-		Last Modified: Thu, 01 May 2025 16:49:25 GMT  
+		Last Modified: Sat, 17 May 2025 08:21:06 GMT  
 		Size: 61.1 KB (61077 bytes)  
 		MIME: application/vnd.in-toto+json
