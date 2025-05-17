@@ -279,11 +279,11 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 3.5 MB (3463623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d1bf62be25117406c6eae7c80c96b21bd5b8fa2cfbd0cde69d99cf356ac971e`  
-		Last Modified: Thu, 06 Mar 2025 17:58:26 GMT  
+		Last Modified: Sat, 17 May 2025 21:20:32 GMT  
 		Size: 954.0 KB (953950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90954414177e77606ffca989f9a8f05a3badeffe271a4f5bd82df9dac4c725df`  
-		Last Modified: Thu, 06 Mar 2025 17:58:26 GMT  
+		Last Modified: Sat, 17 May 2025 21:20:03 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
