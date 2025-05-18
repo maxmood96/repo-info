@@ -454,11 +454,11 @@ $ docker pull logstash@sha256:5d35b2f1b51a5cef286a35a4f9d36711be90d3aa43aa00faaa
 
 -	Layers:
 	-	`sha256:fedbb153abee72146ba7f3db819ca2181dcaef042b98135758aee0ee3233d3bd`  
-		Last Modified: Fri, 09 May 2025 19:02:07 GMT  
+		Last Modified: Sun, 18 May 2025 02:26:14 GMT  
 		Size: 3.5 MB (3512306 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:785590c45c0c784b5bef23e7194f9e21c139065e61f99a4596ae3dcc65e03dc2`  
-		Last Modified: Fri, 09 May 2025 19:02:07 GMT  
+		Last Modified: Sun, 18 May 2025 02:26:15 GMT  
 		Size: 34.6 KB (34592 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -533,7 +533,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d67c1bd3c9da18476c361a404d289c14a3b659b3c9838eeb5fb76622ca373c0`  
-		Last Modified: Fri, 09 May 2025 20:41:15 GMT  
+		Last Modified: Sun, 18 May 2025 02:25:35 GMT  
 		Size: 39.2 MB (39161298 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eadbe60a13b17a898594fb205d68343531555f48df7c2212f4ad5839fe3fa0fe`  
@@ -597,11 +597,11 @@ $ docker pull logstash@sha256:770d27e079560919d5ba17a41c8152caef1d8b91a2bd6d4789
 
 -	Layers:
 	-	`sha256:fe9d18ac130697f87bc64216abf811e4cc259d6501cedfc9725749e45b617d87`  
-		Last Modified: Fri, 09 May 2025 20:41:14 GMT  
+		Last Modified: Sun, 18 May 2025 02:26:32 GMT  
 		Size: 3.5 MB (3511918 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:781fd046b71bbfccb1f6674d89cd234bb4015bf3bdbeb5c70b9107b9d6caa627`  
-		Last Modified: Fri, 09 May 2025 20:41:14 GMT  
+		Last Modified: Sun, 18 May 2025 02:26:32 GMT  
 		Size: 34.7 KB (34736 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -753,11 +753,11 @@ $ docker pull logstash@sha256:2a3c17f6f75f14586f6e913e49c4f928dca44d327360122164
 
 -	Layers:
 	-	`sha256:9b8c13c92bb8b5a4394a8d9a5b379d8f32f19b9ee5113f7933c75693f7cd826b`  
-		Last Modified: Fri, 09 May 2025 19:01:45 GMT  
+		Last Modified: Sun, 18 May 2025 02:25:30 GMT  
 		Size: 3.5 MB (3512867 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64f908ce42481a74989b0eeb60048ca72a7fbc43570b540b6541a657e431ca52`  
-		Last Modified: Fri, 09 May 2025 19:01:45 GMT  
+		Last Modified: Sun, 18 May 2025 02:25:31 GMT  
 		Size: 34.6 KB (34593 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -832,7 +832,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d67c1bd3c9da18476c361a404d289c14a3b659b3c9838eeb5fb76622ca373c0`  
-		Last Modified: Fri, 09 May 2025 20:41:15 GMT  
+		Last Modified: Sun, 18 May 2025 02:25:35 GMT  
 		Size: 39.2 MB (39161298 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eadbe60a13b17a898594fb205d68343531555f48df7c2212f4ad5839fe3fa0fe`  
@@ -896,11 +896,11 @@ $ docker pull logstash@sha256:8ca7853afa74cc67685ba2944ac51bc8c1facce3b5348a76c5
 
 -	Layers:
 	-	`sha256:d81d69a563b6c2ff3055c06866299722ffd3304672e6b28ec8648d94387195aa`  
-		Last Modified: Fri, 09 May 2025 20:42:48 GMT  
+		Last Modified: Sun, 18 May 2025 02:25:54 GMT  
 		Size: 3.5 MB (3512479 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9953585e6c0d0fea69b854d4562b541cb17c1cd5b72f38db0af85d7d42f8a5f6`  
-		Last Modified: Fri, 09 May 2025 20:42:47 GMT  
+		Last Modified: Sun, 18 May 2025 02:25:54 GMT  
 		Size: 34.7 KB (34736 bytes)  
 		MIME: application/vnd.in-toto+json
 
