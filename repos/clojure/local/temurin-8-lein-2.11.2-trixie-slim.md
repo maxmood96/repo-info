@@ -157,19 +157,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.7.dsc' base-files_13.7.dsc 1102 SHA256:5dcd518081e204dc564923384e950837129dce46ac12afc8c5c79948769fd683
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.7.tar.xz' base-files_13.7.tar.xz 68412 SHA256:3c13412f5f828f24ec8b7a213eed72aa6d35ba9587b9a75a87fd04ffcff3b210
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.7/
 
-- https://sources.debian.net/src/base-files/13.7/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
