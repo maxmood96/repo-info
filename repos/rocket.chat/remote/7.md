@@ -127,6 +127,6 @@ $ docker pull rocket.chat@sha256:0fb309f2a35eb2957817e2bb8f82f55d25cced714a76d65
 
 -	Layers:
 	-	`sha256:c19a18698794d2c5e268330a020d8a3d29685573c22e3f6ed7b16a4579b53864`  
-		Last Modified: Thu, 15 May 2025 20:27:18 GMT  
+		Last Modified: Mon, 19 May 2025 12:59:04 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
