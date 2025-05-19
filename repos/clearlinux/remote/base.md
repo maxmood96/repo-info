@@ -58,6 +58,6 @@ $ docker pull clearlinux@sha256:76fb5dbd8566b086efd577cdfbcd7157f21cacceb4168b17
 
 -	Layers:
 	-	`sha256:feba75cfc0dbc6909f4021defc6f5bc54945b7b63bb5f87f3c6bbcce78d42b8b`  
-		Last Modified: Mon, 12 May 2025 19:11:08 GMT  
+		Last Modified: Mon, 19 May 2025 16:14:51 GMT  
 		Size: 6.3 KB (6275 bytes)  
 		MIME: application/vnd.in-toto+json
