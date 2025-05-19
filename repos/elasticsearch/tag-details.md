@@ -963,11 +963,11 @@ $ docker pull elasticsearch@sha256:72bf690040375bba035d491d02a32f796b9b2bff0f4be
 
 -	Layers:
 	-	`sha256:7b95b767d86d2de93b50fc0f28cf030beff0f00499daa6c4b2dd55635c2ce4c2`  
-		Last Modified: Wed, 14 May 2025 23:49:31 GMT  
+		Last Modified: Mon, 19 May 2025 11:06:08 GMT  
 		Size: 2.0 MB (2033713 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5c727007712893159d2f26554e6306acf78fb07848b6f3c545f289bcfe69581c`  
-		Last Modified: Wed, 14 May 2025 23:49:31 GMT  
+		Last Modified: Mon, 19 May 2025 11:06:08 GMT  
 		Size: 34.0 KB (33993 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1115,10 +1115,10 @@ $ docker pull elasticsearch@sha256:4b1d02908abe57bc5df9eaf163b8f8d662527ff8fc7a9
 
 -	Layers:
 	-	`sha256:fe68af109be008ffedca1ccb9c5411f75379b3039553ff7d34aa4dec3c72f855`  
-		Last Modified: Wed, 14 May 2025 23:54:24 GMT  
+		Last Modified: Mon, 19 May 2025 11:06:08 GMT  
 		Size: 2.0 MB (2034277 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5a96965e30bf1747799aa6317314d01407807ef4a65625924ed3d78c5a473f03`  
-		Last Modified: Wed, 14 May 2025 23:54:23 GMT  
+		Last Modified: Mon, 19 May 2025 11:06:07 GMT  
 		Size: 34.2 KB (34175 bytes)  
 		MIME: application/vnd.in-toto+json
