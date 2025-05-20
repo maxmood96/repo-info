@@ -173,19 +173,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u10
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u10.dsc' base-files_12.4+deb12u10.dsc 1137 SHA256:520d9d9b451a62376ea8ee02a80c693781f01e457dd870a08aa46f2f0311c18e
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u10.tar.xz' base-files_12.4+deb12u10.tar.xz 66200 SHA256:9c739c00b8ae35dda6156fa9edb5d13fc951580827353e2957c924e3a7e434da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u10/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u10/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -454,19 +448,13 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2023.3+deb12u1
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3%2bdeb12u1.dsc' debian-archive-keyring_2023.3+deb12u1.dsc 1293 SHA256:6a88f9ae6cd4f38f0aa0b834aa5d19ce9aa3b209b038fb1e02467708a07521ae
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3%2bdeb12u1.tar.xz' debian-archive-keyring_2023.3+deb12u1.tar.xz 177600 SHA256:80b13f893288f319370ede2f3af31f45ff7b66e123e3a22d039a3a70da0d1df3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debian-archive-keyring/2023.3+deb12u1/
 
-- https://sources.debian.net/src/debian-archive-keyring/2023.3+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/debian-archive-keyring/2023.3+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debian-archive-keyring/2023.3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debianutils=5.7-0.5~deb12u1`
 
@@ -759,13 +747,13 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris freetype=2.12.1+dfsg-5+deb12u4
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.dsc' freetype_2.12.1+dfsg-5+deb12u4.dsc 3918 SHA256:eead829b4bc79107e8e79c4da006110dffe264f9d48b3ba02f76cf7e84b64389
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz 263656 SHA256:ce729d97f166a919a6a3037c949af01d5d6e1783614024d72683153f0bc5ef05
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:0303e45fe1dc659f14353c276ac0ea1025b30e19ac8138c52d5df79b55726f14
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz 2038632 SHA256:6664a32e4eedaa89f45422c1150e32da46fd301c972cbfd19d2dcc6dd96f07d1
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:e686683830c782c30cdd83278c8d5ed7ab930ae7d548682565b706322f44007f
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig.tar.xz' freetype_2.12.1+dfsg.orig.tar.xz 2188492 SHA256:7dedb6b9adf331559daea614a83b8de42a753e685ec8e1c4bdb4529eb880b0d1
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.debian.tar.xz' freetype_2.12.1+dfsg-5+deb12u4.debian.tar.xz 44844 SHA256:c625a97a78e4c74acd32e5b63b3973c9ea8a5c3d7b7f8f7c02def4421589c61b
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.dsc' freetype_2.12.1+dfsg-5+deb12u4.dsc 3918 SHA256:eead829b4bc79107e8e79c4da006110dffe264f9d48b3ba02f76cf7e84b64389
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz 263656 SHA256:ce729d97f166a919a6a3037c949af01d5d6e1783614024d72683153f0bc5ef05
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:0303e45fe1dc659f14353c276ac0ea1025b30e19ac8138c52d5df79b55726f14
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz 2038632 SHA256:6664a32e4eedaa89f45422c1150e32da46fd301c972cbfd19d2dcc6dd96f07d1
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:e686683830c782c30cdd83278c8d5ed7ab930ae7d548682565b706322f44007f
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig.tar.xz' freetype_2.12.1+dfsg.orig.tar.xz 2188492 SHA256:7dedb6b9adf331559daea614a83b8de42a753e685ec8e1c4bdb4529eb880b0d1
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.debian.tar.xz' freetype_2.12.1+dfsg-5+deb12u4.debian.tar.xz 44844 SHA256:c625a97a78e4c74acd32e5b63b3973c9ea8a5c3d7b7f8f7c02def4421589c61b
 ```
 
 Other potentially useful URLs:
@@ -795,9 +783,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-12=12.2.0-14
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14.dsc' gcc-12_12.2.0-14.dsc 27302 SHA256:b11f8eca97c60a8e55f0cfd4dffdd52560698909fdcde3eacb5241ce1f1f09ad
+'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14%2bdeb12u1.dsc' gcc-12_12.2.0-14+deb12u1.dsc 27330 SHA256:3aed0b189189c744dc9f4b74798a51d3e512ea85e492568db788a927c88e20ba
 'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz' gcc-12_12.2.0.orig.tar.gz 87090343 SHA256:b8298be16aeeb96a889c6afed0a8e2241b47452e89cc81fe65ea849d5c740fcb
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14.debian.tar.xz' gcc-12_12.2.0-14.debian.tar.xz 1664492 SHA256:e6f33b48753d62be04188a30c69883061a7ad1576c22166e79be2c9e7aa258f2
+'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14%2bdeb12u1.debian.tar.xz' gcc-12_12.2.0-14+deb12u1.debian.tar.xz 1675204 SHA256:59f7f7763a0c355e3f27ff9e7ac80d06382b29939361a87e7b139226bfe7402e
 ```
 
 Other potentially useful URLs:
@@ -1782,10 +1770,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.36.0-7+deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.dsc' perl_5.36.0-7+deb12u2.dsc 2357 SHA256:2763db81497ad23c110bb3ff1f2f1e5bca0d583ec172c82afc01ff214ba46ff8
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.debian.tar.xz' perl_5.36.0-7+deb12u2.debian.tar.xz 171576 SHA256:dc3eca212d38826805444abe64c9425b2aacf470d6800ec06d40e8ef02f0c007
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u2.dsc' perl_5.36.0-7+deb12u2.dsc 2357 SHA256:2763db81497ad23c110bb3ff1f2f1e5bca0d583ec172c82afc01ff214ba46ff8
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u2.debian.tar.xz' perl_5.36.0-7+deb12u2.debian.tar.xz 171576 SHA256:dc3eca212d38826805444abe64c9425b2aacf470d6800ec06d40e8ef02f0c007
 ```
 
 Other potentially useful URLs:
@@ -1843,20 +1831,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1.dsc' shadow_4.13+dfsg1-1.dsc 2402 SHA256:e27b0676e87d4ae75a57cba55433517e8aa30d45817c691c63045d5e6195c667
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1.debian.tar.xz' shadow_4.13+dfsg1-1.debian.tar.xz 78988 SHA256:cbd43c96ebad42bfb1656b5e691cc165f52d1dd6b1ee89202c2a09e59d663b1c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1/
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=252.36-1~deb12u1`
 
@@ -2103,10 +2084,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.4.1-1
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
 ```
 
 Other potentially useful URLs:
