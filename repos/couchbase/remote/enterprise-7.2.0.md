@@ -90,47 +90,47 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476`  
-		Last Modified: Thu, 08 May 2025 17:04:39 GMT  
+		Last Modified: Tue, 08 Apr 2025 11:48:23 GMT  
 		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cffbe2b9edcddfd5b08917124a1b7a8955c3b627e44804caa11dbefe0c6c4a83`  
-		Last Modified: Fri, 09 May 2025 01:10:55 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:25 GMT  
 		Size: 6.3 MB (6295186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b14be9726e814c6332a833d4790f56fe2f95b53e92ba10cfb7bbde1ee1c1926`  
-		Last Modified: Fri, 09 May 2025 01:11:05 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:25 GMT  
 		Size: 1.8 KB (1812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab2fed2aca3694b8546cdb9ef51d41fcde75db05ad4afaaa96ae1f34fe78ca4e`  
-		Last Modified: Fri, 09 May 2025 01:11:25 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:41 GMT  
 		Size: 628.6 MB (628595451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:511d347d047f525ab4c4f06ed8dd4330b90ef86061a18ac3e2991d76dd3c5ff0`  
-		Last Modified: Fri, 09 May 2025 01:11:44 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:25 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d4e1a510b053ae0dee7e87887d10a1b6f8340af34ff2ed1695dd4455cd5bcc4`  
-		Last Modified: Fri, 09 May 2025 01:11:46 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:26 GMT  
 		Size: 709.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c3ceaf01be43b8f52ec42ec0b1b9d77830899a0d1f42c2fc5508de3a2e970f9`  
-		Last Modified: Fri, 09 May 2025 01:11:48 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:26 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ef48f53df3a17bf63597f23c875090060c012268d2c9a9387f833b4fb5a51aa`  
-		Last Modified: Fri, 09 May 2025 01:11:49 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:26 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d87a2f4664db8906c072bcb71b4ddfe103862d4237a47a67402e0189c6f961e0`  
-		Last Modified: Fri, 09 May 2025 01:11:51 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:27 GMT  
 		Size: 216.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9477fdb133a6b55469cb13e90709d3ee052352e5c312175839f0f4402a9779d9`  
-		Last Modified: Fri, 09 May 2025 01:11:52 GMT  
+		Last Modified: Wed, 09 Apr 2025 01:16:27 GMT  
 		Size: 869.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -233,47 +233,47 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:ecd83b6c354452b6a9979c7666bba16927f1e60e2afbfe6401dd6f87d5db8576`  
-		Last Modified: Thu, 08 May 2025 17:05:17 GMT  
+		Last Modified: Tue, 08 Apr 2025 11:48:29 GMT  
 		Size: 26.0 MB (25977661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6cbd3b6d8b3dd5d4ede9235b28df451d880e2947c78240a111c0abd42143dbaa`  
-		Last Modified: Thu, 08 May 2025 17:33:02 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:46:17 GMT  
 		Size: 6.1 MB (6124748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8905232aa5e45362c4fd27f5ab6685c77e5831d3fd08b9a6013aabba5b91344`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:02 GMT  
 		Size: 1.8 KB (1817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b521b5e7a753e315e280410f274c7d4621af65302a73fb045cce7bba2fe15c9`  
-		Last Modified: Fri, 16 May 2025 14:51:59 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:15 GMT  
 		Size: 603.2 MB (603217182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5a4d5c0785052431154be05a806159ef26adb1d8d5a1d3dbae8ece5dfbf1c47`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:02 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ed7cf959e6d7dfd3a4d2d39fc9f7649c08e24dfa433fb261d463cfec289779f`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:02 GMT  
 		Size: 713.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53708b9ab9eb4c0b14533b54b289b4cd38840a51ca17fa755e4d57ac53ea4c05`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:03 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6d39595f48ed670af829ed190ed8c33e0479791977b80d68f982993365c41a7`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:03 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bc2852e89ec5429d9001d2df227171b05817e01057a1c6bfe759d0650e584f1`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:04 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:958054fa8123fd77e7940f525effd32e993163f3291857c0baed33fcbdcce151`  
-		Last Modified: Fri, 09 May 2025 07:58:35 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:04 GMT  
 		Size: 868.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -293,6 +293,6 @@ $ docker pull couchbase@sha256:45d386d8434c9077ca694d3c1204a5cb7a5fad51651a18132
 
 -	Layers:
 	-	`sha256:6548d64010f3ecc17e37b03140fbf33e73d2cdd7baecfb67a15b1c37c03c0f0c`  
-		Last Modified: Fri, 16 May 2025 14:51:41 GMT  
+		Last Modified: Wed, 09 Apr 2025 06:55:02 GMT  
 		Size: 32.0 KB (31983 bytes)  
 		MIME: application/vnd.in-toto+json
