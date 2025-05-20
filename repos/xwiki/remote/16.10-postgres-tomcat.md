@@ -221,11 +221,11 @@ $ docker pull xwiki@sha256:0a7ba040e8b5f38b76c59bb2e8cb86b702d843f9381b86295db2f
 
 -	Layers:
 	-	`sha256:4c07f7baf9657e7995e308a88e4093c22de6531c6bc20e384e0db0ffddcaa5b2`  
-		Last Modified: Wed, 14 May 2025 19:27:19 GMT  
+		Last Modified: Tue, 20 May 2025 07:41:11 GMT  
 		Size: 8.8 MB (8759240 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9df4f0ccaac73ecb62f49285d0ae2ad7adec3b767897ee253b7867336e029823`  
-		Last Modified: Wed, 14 May 2025 19:27:19 GMT  
+		Last Modified: Tue, 20 May 2025 07:41:13 GMT  
 		Size: 40.5 KB (40457 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -439,10 +439,10 @@ $ docker pull xwiki@sha256:4836b7c852d0708a99213899a265924a0b48f4df1f2af58af81ca
 
 -	Layers:
 	-	`sha256:5dd30d05fe9769719429c39b03625f61289864c4601109f47271b0a4d11f5530`  
-		Last Modified: Wed, 14 May 2025 19:31:28 GMT  
+		Last Modified: Tue, 20 May 2025 07:43:04 GMT  
 		Size: 8.8 MB (8759981 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1d270417edfbcc55a768eb470b1a03a8411942ab41e1cc233da4686c595cdfbc`  
-		Last Modified: Wed, 14 May 2025 19:31:27 GMT  
+		Last Modified: Tue, 20 May 2025 07:43:07 GMT  
 		Size: 40.6 KB (40618 bytes)  
 		MIME: application/vnd.in-toto+json
