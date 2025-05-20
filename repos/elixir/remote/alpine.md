@@ -82,11 +82,11 @@ $ docker pull elixir@sha256:1e55ca72aba9a183dc107bb0f9cb0e8c5ce8cad1f57bf4fed587
 
 -	Layers:
 	-	`sha256:13c985bee53d33855e70df53d8c837ad9b199808187a4f38354d217674f8d96f`  
-		Last Modified: Mon, 21 Apr 2025 23:08:56 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:08 GMT  
 		Size: 284.5 KB (284488 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6a46c9a19501e08d88c5d3eaf8b331cb0a22f4fa6a168780134bba3db6ab77a5`  
-		Last Modified: Mon, 21 Apr 2025 23:08:56 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:09 GMT  
 		Size: 10.4 KB (10430 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -153,11 +153,11 @@ $ docker pull elixir@sha256:a24e6a618fd8ad88a119f01cd10829286e2cba26b76673b07345
 
 -	Layers:
 	-	`sha256:c577943ae176030f3c71639ed57e77cc1488931a2372c9269aab5be196e3856f`  
-		Last Modified: Tue, 22 Apr 2025 00:38:22 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:11 GMT  
 		Size: 280.6 KB (280648 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d80de222d4e7f7a71d1a36db02bd0ba3a49bfd9fdb74adcbc5a166920ea4677e`  
-		Last Modified: Tue, 22 Apr 2025 00:38:22 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:12 GMT  
 		Size: 10.5 KB (10522 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -224,11 +224,11 @@ $ docker pull elixir@sha256:49c30d7d90042fe747cbe4f3d5bec8abd5623ec9f7f29223dc9d
 
 -	Layers:
 	-	`sha256:a314f7e25031000e69aee873b2c7e81f719ad1423c39ef3f788ba8c9ab254906`  
-		Last Modified: Tue, 22 Apr 2025 00:16:06 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:14 GMT  
 		Size: 285.3 KB (285302 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:44b0eaf242740f565d097b6cd8a13ffae0436bb947da1cc34f19283fa751d988`  
-		Last Modified: Tue, 22 Apr 2025 00:16:06 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:14 GMT  
 		Size: 10.6 KB (10558 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -295,11 +295,11 @@ $ docker pull elixir@sha256:f39b08de65c29d8d1ce26a7178be39de545a2a8093e5c24208be
 
 -	Layers:
 	-	`sha256:9c1b6d86ff9e73c7869a9579e8013b0c271edcb8525e9ad1c3ff21ff5548c5a5`  
-		Last Modified: Mon, 21 Apr 2025 23:09:51 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:17 GMT  
 		Size: 279.8 KB (279827 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c1d5e99936133e2e8e734093ba7a53d5feca471925ffe9fc360d85eba6411f97`  
-		Last Modified: Mon, 21 Apr 2025 23:09:51 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:17 GMT  
 		Size: 10.4 KB (10388 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -366,11 +366,11 @@ $ docker pull elixir@sha256:1610e1971ad571ebe4de8caf949856d7ab2d365c051405ff6f62
 
 -	Layers:
 	-	`sha256:37aee982d4c888b2159d72a29caf51e6bb7947d874c3116c8d1a681a9bc6f2c1`  
-		Last Modified: Tue, 22 Apr 2025 00:51:34 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:20 GMT  
 		Size: 278.7 KB (278691 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2d105d0362616cff03e3bbf1130b72ac967ed99d11117f6a6b0256208ec89e72`  
-		Last Modified: Tue, 22 Apr 2025 00:51:34 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:20 GMT  
 		Size: 10.5 KB (10486 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -437,10 +437,10 @@ $ docker pull elixir@sha256:34af91cc832501d0185ab267e2c9eb7c7523850a20ed0eeba42d
 
 -	Layers:
 	-	`sha256:077ccbcdfd730853bc73e9cc244da8575a9b4efde6761bb726ffb458401d9e8f`  
-		Last Modified: Mon, 21 Apr 2025 23:45:41 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:23 GMT  
 		Size: 278.6 KB (278645 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:220565a329c2c4d42589dc4f7d359ed0af9ac5ffe4af2e2a46b65fbfd42f1177`  
-		Last Modified: Mon, 21 Apr 2025 23:45:41 GMT  
+		Last Modified: Tue, 20 May 2025 07:57:23 GMT  
 		Size: 10.4 KB (10430 bytes)  
 		MIME: application/vnd.in-toto+json
