@@ -232,15 +232,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1.25.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.10.1.dsc' coreutils_9.5-1ubuntu1.25.10.1.dsc 2314 SHA512:577ade0a4409ecb277eeee3fa37a043191a6c0b17394c4545b2640cef489156112f5ae7847c29ec4e189ba25dec71623bc36f55501aa336694b56f888503021b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA512:2ca0deac4dc10a80fd0c6fd131252e99d457fd03b7bd626a6bc74fe5a0529c0a3d48ce1f5da1d3b3a7a150a1ce44f0fbb6b68a6ac543dfd5baa3e71f5d65401c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz.asc' coreutils_9.5.orig.tar.xz.asc 833 SHA512:029997e0f4ee64e561853cff7c8a124f58cc891598595b44c4a46f9813b4b71c9d677464bc8a26d294e9971832f4b87c23777fea4fac6e8e30f06ad93b9957d5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.10.1.debian.tar.xz' coreutils_9.5-1ubuntu1.25.10.1.debian.tar.xz 30868 SHA512:92b9569a1aa9a8f3eb232b1e65f8c6f05d17e1511e3853e963b5251c1f654fadec24d581761fc8341eb37dffb5ff7e8b140d60a3b7ed58043058ce277c471ae4
-```
 
 ### `dpkg` source package: `dash=0.5.12-12ubuntu1`
 
