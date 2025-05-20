@@ -17,6 +17,9 @@
 -	[`buildpack-deps:25.04`](#buildpack-deps2504)
 -	[`buildpack-deps:25.04-curl`](#buildpack-deps2504-curl)
 -	[`buildpack-deps:25.04-scm`](#buildpack-deps2504-scm)
+-	[`buildpack-deps:25.10`](#buildpack-deps2510)
+-	[`buildpack-deps:25.10-curl`](#buildpack-deps2510-curl)
+-	[`buildpack-deps:25.10-scm`](#buildpack-deps2510-scm)
 -	[`buildpack-deps:bookworm`](#buildpack-depsbookworm)
 -	[`buildpack-deps:bookworm-curl`](#buildpack-depsbookworm-curl)
 -	[`buildpack-deps:bookworm-scm`](#buildpack-depsbookworm-scm)
@@ -43,6 +46,9 @@
 -	[`buildpack-deps:plucky`](#buildpack-depsplucky)
 -	[`buildpack-deps:plucky-curl`](#buildpack-depsplucky-curl)
 -	[`buildpack-deps:plucky-scm`](#buildpack-depsplucky-scm)
+-	[`buildpack-deps:questing`](#buildpack-depsquesting)
+-	[`buildpack-deps:questing-curl`](#buildpack-depsquesting-curl)
+-	[`buildpack-deps:questing-scm`](#buildpack-depsquesting-scm)
 -	[`buildpack-deps:scm`](#buildpack-depsscm)
 -	[`buildpack-deps:sid`](#buildpack-depssid)
 -	[`buildpack-deps:sid-curl`](#buildpack-depssid-curl)
@@ -6436,6 +6442,18 @@ $ docker pull buildpack-deps@sha256:dcb7854b5dd1894ff1e6549a1f5d3d9897c542681293
 		Last Modified: Thu, 17 Apr 2025 21:09:12 GMT  
 		Size: 7.3 KB (7310 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `buildpack-deps:25.10`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:25.10-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:25.10-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:bookworm`
 
@@ -16796,6 +16814,18 @@ $ docker pull buildpack-deps@sha256:dcb7854b5dd1894ff1e6549a1f5d3d9897c542681293
 		Last Modified: Thu, 17 Apr 2025 21:09:12 GMT  
 		Size: 7.3 KB (7310 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `buildpack-deps:questing`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:questing-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:questing-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:scm`
 
