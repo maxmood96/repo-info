@@ -14455,7 +14455,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 183.4 MB (183405963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:018b4568e1c40de3d6b669db3b9763259a0a7cae7af3ca430f1ab06ba801eea7`  
-		Last Modified: Tue, 29 Apr 2025 06:37:38 GMT  
+		Last Modified: Tue, 20 May 2025 16:56:08 GMT  
 		Size: 261.4 MB (261377268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ad3a9d8e57bd139a5408a13a7c765d014524c9b23515965c4315a0b117f28e`  
@@ -16084,7 +16084,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 183.4 MB (183405963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:018b4568e1c40de3d6b669db3b9763259a0a7cae7af3ca430f1ab06ba801eea7`  
-		Last Modified: Tue, 29 Apr 2025 06:37:38 GMT  
+		Last Modified: Tue, 20 May 2025 16:56:08 GMT  
 		Size: 261.4 MB (261377268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ad3a9d8e57bd139a5408a13a7c765d014524c9b23515965c4315a0b117f28e`  
@@ -17713,7 +17713,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 183.4 MB (183405963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:018b4568e1c40de3d6b669db3b9763259a0a7cae7af3ca430f1ab06ba801eea7`  
-		Last Modified: Tue, 29 Apr 2025 06:37:38 GMT  
+		Last Modified: Tue, 20 May 2025 16:56:08 GMT  
 		Size: 261.4 MB (261377268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ad3a9d8e57bd139a5408a13a7c765d014524c9b23515965c4315a0b117f28e`  
@@ -19342,7 +19342,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 183.4 MB (183405963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:018b4568e1c40de3d6b669db3b9763259a0a7cae7af3ca430f1ab06ba801eea7`  
-		Last Modified: Tue, 29 Apr 2025 06:37:38 GMT  
+		Last Modified: Tue, 20 May 2025 16:56:08 GMT  
 		Size: 261.4 MB (261377268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ad3a9d8e57bd139a5408a13a7c765d014524c9b23515965c4315a0b117f28e`  
@@ -27874,7 +27874,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 183.4 MB (183405963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:018b4568e1c40de3d6b669db3b9763259a0a7cae7af3ca430f1ab06ba801eea7`  
-		Last Modified: Tue, 29 Apr 2025 06:37:38 GMT  
+		Last Modified: Tue, 20 May 2025 16:56:08 GMT  
 		Size: 261.4 MB (261377268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ad3a9d8e57bd139a5408a13a7c765d014524c9b23515965c4315a0b117f28e`  
