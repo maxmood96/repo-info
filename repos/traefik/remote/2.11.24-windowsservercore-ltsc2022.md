@@ -41,30 +41,30 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f99f0856d3665c6aeede32823351187cdab09d90cb8608ff70427d552ab356b`  
-		Last Modified: Thu, 15 May 2025 19:25:06 GMT  
+		Last Modified: Tue, 13 May 2025 18:47:51 GMT  
 		Size: 811.4 MB (811435715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8632551e859b0435168b02fb0dcf9b3a3a1e0d8d139a9b2457fb784d32271154`  
-		Last Modified: Mon, 19 May 2025 06:58:35 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:21 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e8c10276064dbb1cbd3c9a741765ba35086d80818ff3b0602e8768e392d5a2aa`  
-		Last Modified: Mon, 19 May 2025 06:58:39 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:28 GMT  
 		Size: 54.1 MB (54103191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:171dfe40a2d2a4f807a60d488c2ae63d642c7a54bfdbd0c851a606f5df54229c`  
-		Last Modified: Mon, 19 May 2025 06:58:42 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:20 GMT  
 		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ef501c55c82dbfc2dd9a00aa3cc543ae20c8f504873a0a776648285950875a5a`  
-		Last Modified: Mon, 19 May 2025 06:58:46 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:20 GMT  
 		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c48b22331cededaa06c682bb3b8f9b408c381236a690bf7922864c4ddae624b2`  
-		Last Modified: Mon, 19 May 2025 06:58:48 GMT  
+		Last Modified: Wed, 14 May 2025 21:00:20 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
