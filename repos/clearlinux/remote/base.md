@@ -34,11 +34,11 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dbc924beb9cea03ab11baaa72b044a9060538e4564c6d4fc09b0b60961f321ed`  
-		Last Modified: Mon, 19 May 2025 23:06:12 GMT  
+		Last Modified: Mon, 19 May 2025 23:05:18 GMT  
 		Size: 73.0 MB (73021135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc590ad57e0a27bd1918f0d9b95238ee6666a57a13d7a0e36b343dcd0e35ac7e`  
-		Last Modified: Mon, 19 May 2025 23:05:47 GMT  
+		Last Modified: Mon, 19 May 2025 23:05:17 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -58,6 +58,6 @@ $ docker pull clearlinux@sha256:7c62f4144cd6e7b377446778575c9ff7632986b5b07bf9eb
 
 -	Layers:
 	-	`sha256:8447a9048951b2730dfa33aae8f0d41cbacc6d3d1d00a608ca4a3bfbda3f2151`  
-		Last Modified: Tue, 20 May 2025 02:04:16 GMT  
+		Last Modified: Mon, 19 May 2025 23:05:17 GMT  
 		Size: 6.3 KB (6275 bytes)  
 		MIME: application/vnd.in-toto+json
