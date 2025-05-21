@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bac483eb5678969ae0a9901f511ed44a0b535171db6a1990e58a0573441dad1c`
-- Created: `2025-04-11T08:17:25Z`
+- Image ID: `sha256:eb03768ac3efb5f9a8bf0c14e9401d7ba90084898075630e1f2a0a51f68598fc`
+- Created: `2025-05-19T11:13:07Z`
 - Virtual Size: ~ 93.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -200,37 +200,37 @@ $ dnf --quiet download --source --url glib2-2.56.4-165.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glib2-2.56.4-165.el8_10.src.rpm
 ```
 
-### `rpm` package: `glibc-2.28-251.el8_10.14.x86_64`
+### `rpm` package: `glibc-2.28-251.el8_10.16.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.28-251.el8_10.14
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.14.src.rpm
+$ dnf --quiet download --source --url glibc-2.28-251.el8_10.16
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.16.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.28-251.el8_10.14.x86_64`
+### `rpm` package: `glibc-common-2.28-251.el8_10.16.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.14
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.14.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.16
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.16.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.14.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.16.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.14
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.14.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.16
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.16.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.1.2-11.el8.x86_64`
@@ -255,15 +255,15 @@ $ dnf --quiet download --source --url gnupg2-2.2.20-3.el8_6
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gnupg2-2.2.20-3.el8_6.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.6.16-8.el8_9.3.x86_64`
+### `rpm` package: `gnutls-3.6.16-8.el8_10.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.6.16-8.el8_9.3
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gnutls-3.6.16-8.el8_9.3.src.rpm
+$ dnf --quiet download --source --url gnutls-3.6.16-8.el8_10.3
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gnutls-3.6.16-8.el8_10.3.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.56.1-1.el8.x86_64`
@@ -718,15 +718,15 @@ $ dnf --quiet download --source --url libstdc++-8.5.0-26.el8_10.alma.1
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-26.el8_10.alma.1.src.rpm
 ```
 
-### `rpm` package: `libtasn1-4.13-4.el8_7.x86_64`
+### `rpm` package: `libtasn1-4.13-5.el8_10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtasn1-4.13-4.el8_7
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libtasn1-4.13-4.el8_7.src.rpm
+$ dnf --quiet download --source --url libtasn1-4.13-5.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libtasn1-4.13-5.el8_10.src.rpm
 ```
 
 ### `rpm` package: `libunistring-0.9.9-3.el8.x86_64`
@@ -1070,15 +1070,15 @@ $ dnf --quiet download --source --url sqlite-libs-3.26.0-19.el8_9
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/sqlite-3.26.0-19.el8_9.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-239-82.el8_10.4.x86_64`
+### `rpm` package: `systemd-libs-239-82.el8_10.5.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-239-82.el8_10.4
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.4.src.rpm
+$ dnf --quiet download --source --url systemd-libs-239-82.el8_10.5
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.5.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2025b-1.el8.noarch`
