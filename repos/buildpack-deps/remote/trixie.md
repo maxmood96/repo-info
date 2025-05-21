@@ -1,11 +1,11 @@
 ## `buildpack-deps:trixie`
 
 ```console
-$ docker pull buildpack-deps@sha256:e1ce56033cf28abdb55baaddada55bcbf51549dc63f786836b047dd2bc328525
+$ docker pull buildpack-deps@sha256:3a941ac2c62e4ab02b461cccb2ff90f2ea9f55cfe8e0a5ffad082e27743826e6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 18
+-	Platforms: 16
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -15,8 +15,6 @@ $ docker pull buildpack-deps@sha256:e1ce56033cf28abdb55baaddada55bcbf51549dc63f7
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
-	-	unknown; unknown
-	-	linux; mips64le
 	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
@@ -348,67 +346,6 @@ $ docker pull buildpack-deps@sha256:b443d8f03ba8095215f0476bb47fbcba0020ebd9018c
 	-	`sha256:143211df77393cba5086c97314e3b23dfe26fff9d42799370f4d4128fbfe4228`  
 		Last Modified: Mon, 28 Apr 2025 23:12:42 GMT  
 		Size: 10.2 KB (10171 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `buildpack-deps:trixie` - linux; mips64le
-
-```console
-$ docker pull buildpack-deps@sha256:3b85efac1f79bab93c159d0bd0adc2d76ccc4137e87862c5eff45d55c8c29c67
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **358.9 MB (358878217 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73c7d9212002765f6ff1ef3b45fc907451bf069ccb3006e0f6c886fe662bc42b`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'trixie' '@1745798400'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-```
-
--	Layers:
-	-	`sha256:10652c2c2b3bd5b9b28442fbbfb7184101c335aa5dcb3d62710cb9f713c501c0`  
-		Last Modified: Mon, 28 Apr 2025 21:13:43 GMT  
-		Size: 49.5 MB (49531578 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7d3a4e6385b92a705792f76e807ceae91282199b9d23037c868b1ca98dc3464`  
-		Last Modified: Tue, 29 Apr 2025 12:47:25 GMT  
-		Size: 25.8 MB (25776650 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dad8d7f3ae9dc226cb705eb814241d9f08617925139271365b3e48e60953de3`  
-		Last Modified: Tue, 29 Apr 2025 21:23:10 GMT  
-		Size: 66.4 MB (66415479 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83a82ad6344f34e23246d466e8d1aa6909b2375d63ee3e3f8b9ff60fded70f64`  
-		Last Modified: Wed, 30 Apr 2025 03:36:30 GMT  
-		Size: 217.2 MB (217154510 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `buildpack-deps:trixie` - unknown; unknown
-
-```console
-$ docker pull buildpack-deps@sha256:789f457bfc882a82134195a5fa596b9fe4bc502c510bcfb29615b9164e2b24df
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 KB (10026 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6d6b7f745863f2992aa6cdaedd834cb1d7883bed8216b3ba68c1e86939294ed`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7c068186b21ac9a4fc4ac0f0ecfda186118906d08d2c847603ddf745768fb298`  
-		Last Modified: Wed, 30 Apr 2025 03:36:11 GMT  
-		Size: 10.0 KB (10026 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:trixie` - linux; ppc64le
