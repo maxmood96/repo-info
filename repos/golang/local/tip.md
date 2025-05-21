@@ -1,10 +1,10 @@
-# `golang:tip-20250509-bookworm`
+# `golang:tip-20250517-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:38a083a5f2c80a69d32c6ea8bf9ec4fa064837ee8d964a4ac787aafffed4b1f3`
-- Created: `2025-05-12T05:23:20Z`
-- Virtual Size: ~ 911.14 Mb  
+- Image ID: `sha256:e54c95a662b84057080158c700071f2fa0af9a2c4ff6e42c0146a27757058987`
+- Created: `2025-05-19T05:23:20Z`
+- Virtual Size: ~ 914.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -853,27 +853,27 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.9.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.9.0-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-12=12.2.0-14`
+### `dpkg` source package: `gcc-12=12.2.0-14+deb12u1`
 
 Binary Packages:
 
-- `cpp-12=12.2.0-14`
-- `g++-12=12.2.0-14`
-- `gcc-12=12.2.0-14`
-- `gcc-12-base:amd64=12.2.0-14`
-- `libasan8:amd64=12.2.0-14`
-- `libatomic1:amd64=12.2.0-14`
-- `libcc1-0:amd64=12.2.0-14`
-- `libgcc-12-dev:amd64=12.2.0-14`
-- `libgcc-s1:amd64=12.2.0-14`
-- `libgomp1:amd64=12.2.0-14`
-- `libitm1:amd64=12.2.0-14`
-- `liblsan0:amd64=12.2.0-14`
-- `libquadmath0:amd64=12.2.0-14`
-- `libstdc++-12-dev:amd64=12.2.0-14`
-- `libstdc++6:amd64=12.2.0-14`
-- `libtsan2:amd64=12.2.0-14`
-- `libubsan1:amd64=12.2.0-14`
+- `cpp-12=12.2.0-14+deb12u1`
+- `g++-12=12.2.0-14+deb12u1`
+- `gcc-12=12.2.0-14+deb12u1`
+- `gcc-12-base:amd64=12.2.0-14+deb12u1`
+- `libasan8:amd64=12.2.0-14+deb12u1`
+- `libatomic1:amd64=12.2.0-14+deb12u1`
+- `libcc1-0:amd64=12.2.0-14+deb12u1`
+- `libgcc-12-dev:amd64=12.2.0-14+deb12u1`
+- `libgcc-s1:amd64=12.2.0-14+deb12u1`
+- `libgomp1:amd64=12.2.0-14+deb12u1`
+- `libitm1:amd64=12.2.0-14+deb12u1`
+- `liblsan0:amd64=12.2.0-14+deb12u1`
+- `libquadmath0:amd64=12.2.0-14+deb12u1`
+- `libstdc++-12-dev:amd64=12.2.0-14+deb12u1`
+- `libstdc++6:amd64=12.2.0-14+deb12u1`
+- `libtsan2:amd64=12.2.0-14+deb12u1`
+- `libubsan1:amd64=12.2.0-14+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-12/copyright`, `/usr/share/doc/gcc-12/copyright`, `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libasan8/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-12-dev/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-12-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan2/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
@@ -887,17 +887,17 @@ Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-1
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-12=12.2.0-14
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14.dsc' gcc-12_12.2.0-14.dsc 27302 SHA256:b11f8eca97c60a8e55f0cfd4dffdd52560698909fdcde3eacb5241ce1f1f09ad
+$ apt-get source -qq --print-uris gcc-12=12.2.0-14+deb12u1
+'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14%2bdeb12u1.dsc' gcc-12_12.2.0-14+deb12u1.dsc 27330 SHA256:3aed0b189189c744dc9f4b74798a51d3e512ea85e492568db788a927c88e20ba
 'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz' gcc-12_12.2.0.orig.tar.gz 87090343 SHA256:b8298be16aeeb96a889c6afed0a8e2241b47452e89cc81fe65ea849d5c740fcb
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14.debian.tar.xz' gcc-12_12.2.0-14.debian.tar.xz 1664492 SHA256:e6f33b48753d62be04188a30c69883061a7ad1576c22166e79be2c9e7aa258f2
+'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14%2bdeb12u1.debian.tar.xz' gcc-12_12.2.0-14+deb12u1.debian.tar.xz 1675204 SHA256:59f7f7763a0c355e3f27ff9e7ac80d06382b29939361a87e7b139226bfe7402e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-12/12.2.0-14/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12.2.0-14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12.2.0-14/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-12/12.2.0-14+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-12/12.2.0-14+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-12/12.2.0-14+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.203`
 
@@ -2141,11 +2141,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.135-1`
+### `dpkg` source package: `linux=6.1.137-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.135-1`
+- `linux-libc-dev:amd64=6.1.137-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2160,17 +2160,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.135-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.135-1.dsc' linux_6.1.135-1.dsc 290931 SHA256:bd6019b1c349507c7158b3563c5bbc2144be6c68a8a76f6e85cd6aabdd0fbf81
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.135.orig.tar.xz' linux_6.1.135.orig.tar.xz 137766128 SHA256:eecffd0bb67604509d6afc06b7016b363488e7887c9541579e0a863afba119fe
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.135-1.debian.tar.xz' linux_6.1.135-1.debian.tar.xz 1746060 SHA256:8281a9404d40b01797d94809af4944c809765e662c3751219e52b56fd57d1c22
+$ apt-get source -qq --print-uris linux=6.1.137-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137-1.dsc' linux_6.1.137-1.dsc 290931 SHA256:4ab504a4a7188ba3cfcf19b5ca80b5d5d742f7dab0cf558a835898092544dc0a
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137.orig.tar.xz' linux_6.1.137.orig.tar.xz 137760676 SHA256:7ca14b68aff9a98c1eaa3500480dbf94d4a8393ab3232e046de4ad44b13a0d30
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137-1.debian.tar.xz' linux_6.1.137-1.debian.tar.xz 1750936 SHA256:61165b4a038811ea07b95d7ded6323c2a11db55299174276dfdefa3006afdf11
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.135-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.135-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.135-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.137-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.137-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.137-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
