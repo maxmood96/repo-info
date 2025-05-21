@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:15b357724faa3b235bd051e28bc5f5cac3a5602268925273fcc2a6569790de08`
-- Created: `2025-04-15T21:50:45Z`
-- Virtual Size: ~ 466.20 Mb  
+- Image ID: `sha256:0c3029606f6f9bd69d444e6ae6ddfb1ecb45a40ec94b0bc75320bb45cb73c1b8`
+- Created: `2025-05-09T18:18:04Z`
+- Virtual Size: ~ 467.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1165,15 +1165,15 @@ $ dnf --quiet download --source --url python-urlgrabber-3.10-9.amzn2.0.1.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/059ccd33bf7223a26eedc0f289477c6c86fa24807e51a00dfbb3b8589ffd60be/python-urlgrabber-3.10-9.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `python2-rpm-4.11.3-48.amzn2.0.4.x86_64`
+### `rpm` package: `python2-rpm-4.11.3-48.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python2-rpm-4.11.3-48.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/371e245661fb226af8dbccdc1217fc0532c5a658b790e9ebab060f0e793ba20c/rpm-4.11.3-48.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url python2-rpm-4.11.3-48.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/dc28631d4f4ee56c56e3bede003391ce81e03c0bf7751a2ac2e52ac686c8c0d4/rpm-4.11.3-48.amzn2.0.5.src.rpm
 ```
 
 ### `rpm` package: `pyxattr-0.5.1-5.amzn2.0.2.x86_64`
@@ -1198,37 +1198,37 @@ $ dnf --quiet download --source --url readline-6.2-10.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/e2b36f4a9d20e84ecb267c1a1b7ac1695a02175ffc08876957103338c6c358a7/readline-6.2-10.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `rpm-4.11.3-48.amzn2.0.4.x86_64`
+### `rpm` package: `rpm-4.11.3-48.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.11.3-48.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/371e245661fb226af8dbccdc1217fc0532c5a658b790e9ebab060f0e793ba20c/rpm-4.11.3-48.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url rpm-4.11.3-48.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/dc28631d4f4ee56c56e3bede003391ce81e03c0bf7751a2ac2e52ac686c8c0d4/rpm-4.11.3-48.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.11.3-48.amzn2.0.4.x86_64`
+### `rpm` package: `rpm-build-libs-4.11.3-48.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-build-libs-4.11.3-48.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/371e245661fb226af8dbccdc1217fc0532c5a658b790e9ebab060f0e793ba20c/rpm-4.11.3-48.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url rpm-build-libs-4.11.3-48.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/dc28631d4f4ee56c56e3bede003391ce81e03c0bf7751a2ac2e52ac686c8c0d4/rpm-4.11.3-48.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.11.3-48.amzn2.0.4.x86_64`
+### `rpm` package: `rpm-libs-4.11.3-48.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.11.3-48.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/371e245661fb226af8dbccdc1217fc0532c5a658b790e9ebab060f0e793ba20c/rpm-4.11.3-48.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.11.3-48.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f1b796fd3de2e1fdd3973df3cdb4d14b8a68e2776103d274aa3e03e03341fd3d/../../../../../blobstore/dc28631d4f4ee56c56e3bede003391ce81e03c0bf7751a2ac2e52ac686c8c0d4/rpm-4.11.3-48.amzn2.0.5.src.rpm
 ```
 
 ### `rpm` package: `sed-4.2.2-5.amzn2.0.2.x86_64`
