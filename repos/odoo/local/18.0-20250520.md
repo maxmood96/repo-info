@@ -1,9 +1,9 @@
-# `odoo:18.0-20250428`
+# `odoo:18.0-20250520`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8abb3b47c4f6002878a93d9d2cb61dc1ec6a17f4c51dade8bc4799dc8989d99b`
-- Created: `2025-04-28T08:21:35Z`
+- Image ID: `sha256:ae6ed794cb71fdd3cce36a5d8c1cd32cbf27104f9d1157d4c1e2e31f41fe2a00`
+- Created: `2025-05-20T06:38:43Z`
 - Virtual Size: ~ 1.99 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -10017,11 +10017,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250428`
+### `dpkg` source package: `odoo=18.0.20250520`
 
 Binary Packages:
 
-- `odoo=18.0.20250428`
+- `odoo=18.0.20250520`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10408,12 +10408,12 @@ $ apt-get source -qq --print-uris polib=1.1.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/polib/polib_1.1.1-1.debian.tar.xz' polib_1.1.1-1.debian.tar.xz 4592 SHA512:d3f45b5e76ee03bf707b537f6e59d90d824498de415ebf04b42817d680c482fa7febae9156c88438b825528deac7af54ab9f559dfad802909e45ee352d227c74
 ```
 
-### `dpkg` source package: `postgresql-17=17.4-1.pgdg24.04+2`
+### `dpkg` source package: `postgresql-17=17.5-1.pgdg24.04+1`
 
 Binary Packages:
 
-- `libpq5:amd64=17.4-1.pgdg24.04+2`
-- `postgresql-client-17=17.4-1.pgdg24.04+2`
+- `libpq5:amd64=17.5-1.pgdg24.04+1`
+- `postgresql-client-17=17.5-1.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-17/copyright`)
 
@@ -10434,12 +10434,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=277.pgdg24.04+1`
+### `dpkg` source package: `postgresql-common=278.pgdg24.04+1`
 
 Binary Packages:
 
-- `postgresql-client=17+277.pgdg24.04+1`
-- `postgresql-client-common=277.pgdg24.04+1`
+- `postgresql-client=17+278.pgdg24.04+1`
+- `postgresql-client-common=278.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
