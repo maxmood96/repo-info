@@ -1,7 +1,7 @@
 ## `satosa:bookworm`
 
 ```console
-$ docker pull satosa@sha256:47a037962bd0d4e1f9eaa3e42a45742fc8c247d31295750267bedf632492278e
+$ docker pull satosa@sha256:d7a2b2b39e80528fccd5f89acb6c5053b24bb14b2159a0c7837263b3eca54448
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -132,19 +132,19 @@ $ docker pull satosa@sha256:02a0afaf21dd895c52097913d6e1438857a22e79c1d7c843f9bb
 ### `satosa:bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull satosa@sha256:cabe2cd432e3e5a75ccca951ee6c54ed2d8dfd10206455b49937da1e493ffdbf
+$ docker pull satosa@sha256:a8f35c7bc428368a555c291dd87b9ac0878205ce4f001bf79e23773ba9e14830
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.5 MB (87543803 bytes)**  
+-	Total Size: **87.6 MB (87562983 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58b668e2f2f55fc64527ac0effa34fa1c9512e252f470c7a00827ce2166f0ba4`
+-	Image ID: `sha256:9aa3bdc78d77eeccc23347c4db3f7e5081695f68939c68fd001361981712f81a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
 ```dockerfile
 # Tue, 19 Dec 2023 14:40:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1745798400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1747699200'
 # Tue, 19 Dec 2023 14:40:43 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 19 Dec 2023 14:40:43 GMT
@@ -186,63 +186,63 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
 -	Layers:
-	-	`sha256:943331d8a9a9863299c02e5de6cce58602a5bc3dc564315aa886fe706376f27f`  
-		Last Modified: Mon, 28 Apr 2025 21:20:37 GMT  
-		Size: 28.1 MB (28066622 bytes)  
+	-	`sha256:b16f1b16678093d11ecfece1004207a40f9bc1b7d9d1d16a070c1db552038818`  
+		Last Modified: Wed, 21 May 2025 22:27:55 GMT  
+		Size: 28.1 MB (28065280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df007eea74a31e334ec983fe01bc025b73676e29573b2429960f3b0a9869c81f`  
-		Last Modified: Tue, 29 Apr 2025 23:04:15 GMT  
-		Size: 3.3 MB (3332107 bytes)  
+	-	`sha256:8a45c7e905d6f25747fdf1b9286ccaf78e53af421e86800be363fac2c5e17386`  
+		Last Modified: Thu, 22 May 2025 06:09:24 GMT  
+		Size: 3.3 MB (3333481 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c90a3059e9c5a6ae3e616a8ca17005c5cf5a6fbc5975ec36c65f1a84d1d986b`  
-		Last Modified: Sat, 10 May 2025 02:10:55 GMT  
-		Size: 13.6 MB (13573851 bytes)  
+	-	`sha256:dc110bfd751c04e6d5d19ad27913af2e11084e2a11823c3e109058abecba404e`  
+		Last Modified: Thu, 22 May 2025 06:09:24 GMT  
+		Size: 13.6 MB (13582101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef83907dd6cd9889472f5564acbd6da872c66f88578598522bec7721720de091`  
-		Last Modified: Sat, 10 May 2025 02:10:55 GMT  
-		Size: 250.0 B  
+	-	`sha256:f014999234874a882373b5dc2c250dd13701d41edebe33e529e193d061249cf4`  
+		Last Modified: Thu, 22 May 2025 06:09:23 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee9780be41772252e3dcfb3d6f179c4fbb5bdb1548e0ddada5d07e64546f82f7`  
-		Last Modified: Sat, 10 May 2025 04:30:31 GMT  
-		Size: 21.3 MB (21309970 bytes)  
+	-	`sha256:6e42f88a3e807c29fadcd62adfdc28c7c70a3f3b771c45d7c93011e272653a78`  
+		Last Modified: Thu, 22 May 2025 11:31:42 GMT  
+		Size: 21.3 MB (21310138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfda7c63832985221d745318cb78258144d26efc2453321be54c4a6681bb0ea7`  
-		Last Modified: Sat, 10 May 2025 04:30:31 GMT  
-		Size: 21.2 MB (21248908 bytes)  
+	-	`sha256:1207eec1788f249704587bf0adcb57520906eb489e37c292aebf470d317382ff`  
+		Last Modified: Thu, 22 May 2025 11:31:42 GMT  
+		Size: 21.3 MB (21259646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:274f6fe8a89b85954685746f6beebee078cac07a6a3b2473febf59764bd1afab`  
-		Last Modified: Sat, 10 May 2025 04:30:30 GMT  
-		Size: 9.9 KB (9923 bytes)  
+	-	`sha256:129945c7e167d98c330eea3dac948cdac58697e41ad6ee903e7d536e956c52d9`  
+		Last Modified: Thu, 22 May 2025 11:31:41 GMT  
+		Size: 9.9 KB (9918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f81bd456e9632d454558c55a827d93cb3202639171ca79aad16cee2df817095d`  
-		Last Modified: Sat, 10 May 2025 04:30:30 GMT  
-		Size: 2.1 KB (2140 bytes)  
+	-	`sha256:9632756a2850860003ee53ac601346d9954fd167f0867e6f3e55986f1c32f001`  
+		Last Modified: Thu, 22 May 2025 11:31:41 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:bookworm` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:3b6b8fac120784f46c82d7c1424f7be022f190a6e40859abff520f5b52bafc88
+$ docker pull satosa@sha256:fc821ad5e0e7f49bc97867ba05ce77b3e9274b052966112cdd86277acc9fdb5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2632723 bytes)**  
+-	Total Size: **2.7 MB (2655515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22edd70e82269483ee2def2b5fabbdddbeffc360e2cec9f173ab342972b83bb2`
+-	Image ID: `sha256:36f07614edeb83b45e57f1f973e0a2c7eb888ab0a1bd6df708ea416aac1b4295`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:59e1c9b7a970e0351f042203044d83283cbcd04833829750d5bb5a24f2e172bb`  
-		Last Modified: Sat, 10 May 2025 04:30:30 GMT  
-		Size: 2.6 MB (2610419 bytes)  
+	-	`sha256:0ad92fab28848ffc1c40e1cf1dcf2ecd604a856629232918937d3aa276d4f723`  
+		Last Modified: Thu, 22 May 2025 11:31:41 GMT  
+		Size: 2.6 MB (2633211 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b03cabb2e2a22083002253313d891b51b681941bc4b62818621e12b3d62bafde`  
-		Last Modified: Sat, 10 May 2025 04:30:30 GMT  
+	-	`sha256:f78d6096357337fa61181a0dd5258facd071bd0fb487497725a17f6e0908e37b`  
+		Last Modified: Thu, 22 May 2025 11:31:41 GMT  
 		Size: 22.3 KB (22304 bytes)  
 		MIME: application/vnd.in-toto+json
