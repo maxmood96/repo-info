@@ -1,7 +1,7 @@
 ## `liquibase:latest`
 
 ```console
-$ docker pull liquibase@sha256:ebe86f503b2a450da6103a386e3640e90816d692296d13b97616840bd58623b3
+$ docker pull liquibase@sha256:a27dff4cba3f0c99f00b0598786c500f978c986c69d83c223400f56e9ede8257
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,80 +14,90 @@ $ docker pull liquibase@sha256:ebe86f503b2a450da6103a386e3640e90816d692296d13b97
 ### `liquibase:latest` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:f48cf9b4f0e747616f1f8040e3b1921500550d7da73ee44064d76cb6b6b031c9
+$ docker pull liquibase@sha256:0d350aa925f8e546a8d8d399c15d4608c6b5509c7e74fb26dacaa065911ab3b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.9 MB (447949357 bytes)**  
+-	Total Size: **455.7 MB (455727405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b639f963a860f06b508321e1e6a4d74df72e448961689e2401e16fbca9064c6`
+-	Image ID: `sha256:3f45e786a35019a591e5b60e8f27c508a17898f3e31b520cb5a98c536751ec6d`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ARG RELEASE
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ADD file:59e67123ba6a5d9eea9813e7b2a767696f767c15c5b23c61c4d5bd6ba6fa9ac6 in / 
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["/bin/bash"]
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
-ENV JAVA_VERSION=jdk-17.0.15+6
-# Mon, 17 Feb 2025 16:29:17 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aaed740c38ff1e87a4b920f9deb165d419d9fdf23f423740d2ecb280eeab9647';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_linux_hotspot_17.0.15_6.tar.gz';          ;;        arm64)          ESUM='c89467f543bd434b71f3b748adeeeb1b2692f90242824b78205be1ae72ba385f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.15_6.tar.gz';          ;;        armhf)          ESUM='c5ba30280b49f5654440c897265819ed749259afd2d46d3136720ab182933679';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_arm_linux_hotspot_17.0.15_6.tar.gz';          ;;        ppc64el)          ESUM='f35795f3f62885460e96ebcc2ee4e34bb59ab0d1668f0dc0642070ed89e3dda9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.15_6.tar.gz';          ;;        s390x)          ESUM='68275080c9010d1ef0cab7002c8489777c85952dc9c422d2aad4b20cd5123d69';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_s390x_linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-21.0.7+6
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='6d48379e00d47e6fdd417e96421e973898ac90765ea8ff2d09ae0af6d5d6a1c6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_x64_linux_hotspot_21.0.7_6.tar.gz';          ;;        arm64)          ESUM='ab455a401d25e0cd20e652d2ee72e9f56beba0d9faac5a5c62c9b27a19df804b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.7_6.tar.gz';          ;;        ppc64el)          ESUM='721d3b374cb333269d487e7f99e2d247576c989d2e08a2842738ef62f432bcbd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.7_6.tar.gz';          ;;        s390x)          ESUM='24dddeebdf350d6e0bd6e68176c8eee0a4ff9a5c84efd0fd456848d7ad4c1791';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_s390x_linux_hotspot_21.0.7_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 RUN groupadd --gid 1001 liquibase &&     useradd --uid 1001 --gid liquibase --create-home --home-dir /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 WORKDIR /liquibase
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LIQUIBASE_VERSION=4.31.1
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LB_SHA256=0555808b59941d497f0c1114c3f2225698afde11c60d191c88e449506a60a3ea
-# Mon, 17 Feb 2025 16:29:17 GMT
-# ARGS: LIQUIBASE_VERSION=4.31.1 LB_SHA256=0555808b59941d497f0c1114c3f2225698afde11c60d191c88e449506a60a3ea
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LIQUIBASE_VERSION=4.32.0
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LB_SHA256=10910d42ae9990c95a4ac8f0a3665a24bd40d08fb264055d78b923a512774d54
+# Fri, 23 May 2025 15:54:00 GMT
+# ARGS: LIQUIBASE_VERSION=4.32.0 LB_SHA256=10910d42ae9990c95a4ac8f0a3665a24bd40d08fb264055d78b923a512774d54
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LPM_VERSION=0.2.8
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
-# Mon, 17 Feb 2025 16:29:17 GMT
-# ARGS: LIQUIBASE_VERSION=4.31.1 LB_SHA256=0555808b59941d497f0c1114c3f2225698afde11c60d191c88e449506a60a3ea LPM_VERSION=0.2.8 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
-RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in       amd64)  DOWNLOAD_ARCH=""  ;;       arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LPM_VERSION=0.2.9
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LPM_SHA256=b9caecd34c98a6c19a2bc582e8064aff5251c5f1adbcd100d3403c5eceb5373a
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LPM_SHA256_ARM=0adb3a96d7384b4da549979bf00217a8914f0df37d1ed8fdb1b4a4baebfa104c
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.description=Liquibase Container Image
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.licenses=Apache-2.0
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.vendor=Liquibase
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.version=4.32.0
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
+# Fri, 23 May 2025 15:54:00 GMT
+# ARGS: LIQUIBASE_VERSION=4.32.0 LB_SHA256=10910d42ae9990c95a4ac8f0a3665a24bd40d08fb264055d78b923a512774d54 LPM_VERSION=0.2.9 LPM_SHA256=b9caecd34c98a6c19a2bc582e8064aff5251c5f1adbcd100d3403c5eceb5373a LPM_SHA256_ARM=0adb3a96d7384b4da549979bf00217a8914f0df37d1ed8fdb1b4a4baebfa104c
+RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in     amd64)  DOWNLOAD_ARCH=""  ;;     arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;     *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
+# Fri, 23 May 2025 15:54:00 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 ENV DOCKER_LIQUIBASE=true
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 USER liquibase:liquibase
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 CMD ["--help"]
 ```
 
@@ -96,148 +106,158 @@ CMD ["--help"]
 		Last Modified: Mon, 28 Apr 2025 10:43:45 GMT  
 		Size: 29.5 MB (29532614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:094bfcb4db7a5f519259e3fe3770affd9596cef0a3ba491c6a061e6d14972bab`  
-		Last Modified: Mon, 05 May 2025 16:35:16 GMT  
-		Size: 16.1 MB (16146206 bytes)  
+	-	`sha256:4882ea02fb5c855bf43fdc95ed1014a31bed0f381b9c67d0c48fa6f4739b1b37`  
+		Last Modified: Mon, 05 May 2025 16:34:55 GMT  
+		Size: 16.1 MB (16146129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4df791be4da659132dea4b5bb8435ffac9728463aab0b421013aefaf00253146`  
-		Last Modified: Mon, 05 May 2025 16:35:17 GMT  
-		Size: 47.0 MB (46958354 bytes)  
+	-	`sha256:8cca298b922759e55496c02c3046c177b262e098e2f246425d6ac38dcef5556b`  
+		Last Modified: Mon, 05 May 2025 16:34:56 GMT  
+		Size: 52.9 MB (52891233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97a8e80e60c29d06e337a6a5e0c546bde1b547f1b08cfbc00b38195b14da1d66`  
-		Last Modified: Mon, 05 May 2025 16:35:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:5ca81fa2d6cd8292d9a604b62d9bb2d5e109095de9d716b30ac6f8b00547bf63`  
+		Last Modified: Mon, 05 May 2025 16:34:55 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7be47dbb02a776fb8eaae5a3127ca438e4982eae6edc2b8a0d2c7d00aa02e078`  
-		Last Modified: Mon, 05 May 2025 16:35:16 GMT  
+	-	`sha256:9f097bb5d471697950a9be820f9ea4aee721a780ff33e2d096c0e549e0b5281f`  
+		Last Modified: Mon, 05 May 2025 16:34:55 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2823c8238d38f33aad28d46bbcac7e16e270910a23ce5cfc1ee07487309083da`  
-		Last Modified: Mon, 05 May 2025 17:04:15 GMT  
-		Size: 4.3 KB (4303 bytes)  
+	-	`sha256:d958e98e9bd688fdc1dc7c847c6543d8680472aa6caa924fa0b7aaf1dca4211f`  
+		Last Modified: Fri, 23 May 2025 17:07:55 GMT  
+		Size: 4.3 KB (4308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7535d1eefb54c71f53c5e9bfd1f7700837360ee1662e90c9567855f703e704ae`  
-		Last Modified: Mon, 05 May 2025 17:04:25 GMT  
-		Size: 352.0 MB (351985741 bytes)  
+	-	`sha256:5ee521cb2acb6c741b13e6f865a721f64c60465ee171ef1d97247fe595056f93`  
+		Last Modified: Fri, 23 May 2025 17:08:01 GMT  
+		Size: 353.6 MB (353635053 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6339123a1053b87a3f21429c0924887ab167bb926a394bd0d12632534a2d8ab`  
-		Last Modified: Mon, 05 May 2025 17:04:16 GMT  
-		Size: 3.3 MB (3319026 bytes)  
+	-	`sha256:42a4db002fb2318ae0f456dff5ae4263df1ee59d6529ace2034ae748e2f22e25`  
+		Last Modified: Fri, 23 May 2025 17:07:55 GMT  
+		Size: 3.5 MB (3514953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ec080dd06498cd39b9254858131f0c0a117df223b2f91f0a3b1f9c8175fc0fd`  
-		Last Modified: Mon, 05 May 2025 17:04:16 GMT  
-		Size: 472.0 B  
+	-	`sha256:da7c3f8066e579ead62154482f01200f2f295e043bdaa6d0e2cf497fccefaa95`  
+		Last Modified: Fri, 23 May 2025 17:07:55 GMT  
+		Size: 471.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98787e1a439c2a5defd1fa2dfc653a6516da4c15816af1e9026a031a8881877c`  
-		Last Modified: Mon, 05 May 2025 17:04:17 GMT  
+	-	`sha256:bac01b82f1bd883e890dcfa3c3579f676f279d5466c45e8f83f94a4b88e6bf79`  
+		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:latest` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:b2d3fff39e574ddc31f9d1790f384f3da545c3ed9531d38621c5723182d2001d
+$ docker pull liquibase@sha256:90b6ea7fffa78b6249f892fa66d619319745b66f74861ba086f992af76da2e41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3777340 bytes)**  
+-	Total Size: **3.8 MB (3822395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9068ad9d457cc107528385870a05fe3d73e14f3978569786b8dbfbfd073bed3f`
+-	Image ID: `sha256:518a54a66087f09fd1f279c9969b6102e5a5b03c1087effa7a7b3caf72dce395`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6678068657bf57f66eff81c85b7ac98f972fdceb33d65d4c1b8c73f4839353e`  
-		Last Modified: Mon, 05 May 2025 17:04:16 GMT  
-		Size: 3.8 MB (3753133 bytes)  
+	-	`sha256:8f55be1ec26432186bb5caaaf035887675cc2e6a324b56d655cda1682a947c73`  
+		Last Modified: Fri, 23 May 2025 17:07:55 GMT  
+		Size: 3.8 MB (3797977 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b29434142a7d09b46914c00d307cda1fcdd39593b88c08d92b09cdfb6f1e3bce`  
-		Last Modified: Mon, 05 May 2025 17:04:15 GMT  
-		Size: 24.2 KB (24207 bytes)  
+	-	`sha256:80706024593596d75ebe100ca946d4245a8a538463257a297bf187be1bcef8f0`  
+		Last Modified: Fri, 23 May 2025 17:07:55 GMT  
+		Size: 24.4 KB (24418 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `liquibase:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull liquibase@sha256:6f479a3b8d1909c1eaa2106e990d062076c82e5ae3957cb7b1c7fea784852151
+$ docker pull liquibase@sha256:e1e71f1cbe92874fd3f6c871b1672b3b6b62271e3d4befd8c2f4ea5fe19294d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **445.0 MB (444954693 bytes)**  
+-	Total Size: **452.4 MB (452383345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fcaff3ce1532db974949bcc67fa839f32993a346419b3905395ba4cd0e8b7ad`
+-	Image ID: `sha256:79763a44eed71f0da68679852185fec6d41bbea210e2657c8c8c42b6a07ec0b7`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ARG RELEASE
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ADD file:da80d592df77a4ddbc2c4267be13e1ead72bc1d7f4535f967c511ae736520d7a in / 
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["/bin/bash"]
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
-ENV JAVA_VERSION=jdk-17.0.15+6
-# Mon, 17 Feb 2025 16:29:17 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aaed740c38ff1e87a4b920f9deb165d419d9fdf23f423740d2ecb280eeab9647';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_linux_hotspot_17.0.15_6.tar.gz';          ;;        arm64)          ESUM='c89467f543bd434b71f3b748adeeeb1b2692f90242824b78205be1ae72ba385f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.15_6.tar.gz';          ;;        armhf)          ESUM='c5ba30280b49f5654440c897265819ed749259afd2d46d3136720ab182933679';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_arm_linux_hotspot_17.0.15_6.tar.gz';          ;;        ppc64el)          ESUM='f35795f3f62885460e96ebcc2ee4e34bb59ab0d1668f0dc0642070ed89e3dda9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.15_6.tar.gz';          ;;        s390x)          ESUM='68275080c9010d1ef0cab7002c8489777c85952dc9c422d2aad4b20cd5123d69';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_s390x_linux_hotspot_17.0.15_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
+ENV JAVA_VERSION=jdk-21.0.7+6
+# Wed, 23 Apr 2025 14:48:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='6d48379e00d47e6fdd417e96421e973898ac90765ea8ff2d09ae0af6d5d6a1c6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_x64_linux_hotspot_21.0.7_6.tar.gz';          ;;        arm64)          ESUM='ab455a401d25e0cd20e652d2ee72e9f56beba0d9faac5a5c62c9b27a19df804b';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.7_6.tar.gz';          ;;        ppc64el)          ESUM='721d3b374cb333269d487e7f99e2d247576c989d2e08a2842738ef62f432bcbd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.7_6.tar.gz';          ;;        s390x)          ESUM='24dddeebdf350d6e0bd6e68176c8eee0a4ff9a5c84efd0fd456848d7ad4c1791';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_s390x_linux_hotspot_21.0.7_6.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Apr 2025 14:48:05 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Wed, 23 Apr 2025 14:48:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 RUN groupadd --gid 1001 liquibase &&     useradd --uid 1001 --gid liquibase --create-home --home-dir /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 WORKDIR /liquibase
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LIQUIBASE_VERSION=4.31.1
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LB_SHA256=0555808b59941d497f0c1114c3f2225698afde11c60d191c88e449506a60a3ea
-# Mon, 17 Feb 2025 16:29:17 GMT
-# ARGS: LIQUIBASE_VERSION=4.31.1 LB_SHA256=0555808b59941d497f0c1114c3f2225698afde11c60d191c88e449506a60a3ea
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LIQUIBASE_VERSION=4.32.0
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LB_SHA256=10910d42ae9990c95a4ac8f0a3665a24bd40d08fb264055d78b923a512774d54
+# Fri, 23 May 2025 15:54:00 GMT
+# ARGS: LIQUIBASE_VERSION=4.32.0 LB_SHA256=10910d42ae9990c95a4ac8f0a3665a24bd40d08fb264055d78b923a512774d54
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LPM_VERSION=0.2.8
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
-# Mon, 17 Feb 2025 16:29:17 GMT
-ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
-# Mon, 17 Feb 2025 16:29:17 GMT
-# ARGS: LIQUIBASE_VERSION=4.31.1 LB_SHA256=0555808b59941d497f0c1114c3f2225698afde11c60d191c88e449506a60a3ea LPM_VERSION=0.2.8 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
-RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in       amd64)  DOWNLOAD_ARCH=""  ;;       arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LPM_VERSION=0.2.9
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LPM_SHA256=b9caecd34c98a6c19a2bc582e8064aff5251c5f1adbcd100d3403c5eceb5373a
+# Fri, 23 May 2025 15:54:00 GMT
+ARG LPM_SHA256_ARM=0adb3a96d7384b4da549979bf00217a8914f0df37d1ed8fdb1b4a4baebfa104c
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.description=Liquibase Container Image
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.licenses=Apache-2.0
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.vendor=Liquibase
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.version=4.32.0
+# Fri, 23 May 2025 15:54:00 GMT
+LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
+# Fri, 23 May 2025 15:54:00 GMT
+# ARGS: LIQUIBASE_VERSION=4.32.0 LB_SHA256=10910d42ae9990c95a4ac8f0a3665a24bd40d08fb264055d78b923a512774d54 LPM_VERSION=0.2.9 LPM_SHA256=b9caecd34c98a6c19a2bc582e8064aff5251c5f1adbcd100d3403c5eceb5373a LPM_SHA256_ARM=0adb3a96d7384b4da549979bf00217a8914f0df37d1ed8fdb1b4a4baebfa104c
+RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in     amd64)  DOWNLOAD_ARCH=""  ;;     arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;     *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
+# Fri, 23 May 2025 15:54:00 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 ENV DOCKER_LIQUIBASE=true
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 USER liquibase:liquibase
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Mon, 17 Feb 2025 16:29:17 GMT
+# Fri, 23 May 2025 15:54:00 GMT
 CMD ["--help"]
 ```
 
@@ -250,63 +270,63 @@ CMD ["--help"]
 		Last Modified: Mon, 05 May 2025 16:49:48 GMT  
 		Size: 16.1 MB (16059611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:752104f1900141a559b0e68417061aa6cedecc9e70caa4685aed66e24a12ec44`  
-		Last Modified: Mon, 05 May 2025 16:55:41 GMT  
-		Size: 46.5 MB (46474272 bytes)  
+	-	`sha256:1cc2e83745f5161ac5876e1e145987a65feb3f11b8d6957c1e6011f3cb9d42a8`  
+		Last Modified: Mon, 05 May 2025 16:58:07 GMT  
+		Size: 52.1 MB (52070754 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b17a6154fa8e1be02bff54c2febdfe1086692615737560db25d42cfe1b5a374e`  
-		Last Modified: Mon, 05 May 2025 16:55:39 GMT  
-		Size: 159.0 B  
+	-	`sha256:ac615b4401d254f31aceacac2a102ab32b6eee92e74b4df225dd7d441c7adf2e`  
+		Last Modified: Mon, 05 May 2025 16:58:05 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0be8ecb107f9f1045913701b14a8cfb603bcccd47377e8d359a9e368e9417f9`  
-		Last Modified: Mon, 05 May 2025 16:55:40 GMT  
+	-	`sha256:b3e772fc7223005edf5117652fbb5f4ba65fad1fa4035b6b61068823847fdfbc`  
+		Last Modified: Mon, 05 May 2025 16:58:06 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02ff05b507ec5d21bb40d03502be4b3a1df1057c119851df7f17af5fd6152e94`  
-		Last Modified: Mon, 05 May 2025 21:52:56 GMT  
-		Size: 4.3 KB (4311 bytes)  
+	-	`sha256:20f9235bfe7aa59babdef142a63fb93aa3456c37921d672a0cab72ed4599d78d`  
+		Last Modified: Fri, 23 May 2025 17:08:23 GMT  
+		Size: 4.3 KB (4312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca138debb8c067ba497462137e82af6fde149d5e26076c45b275dff2752faf97`  
-		Last Modified: Mon, 05 May 2025 21:53:04 GMT  
-		Size: 352.0 MB (351985757 bytes)  
+	-	`sha256:173cd0f721e967d12ff75eb4ec296f271be1e51f181bf08fa8f3c25a34754860`  
+		Last Modified: Fri, 23 May 2025 17:08:31 GMT  
+		Size: 353.6 MB (353635052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a63f100952492244cd0e6eaa217a737ae656956df4880ffb0f45c570c29011e9`  
-		Last Modified: Mon, 05 May 2025 21:52:57 GMT  
-		Size: 3.1 MB (3073415 bytes)  
+	-	`sha256:dd2d39e0c486fd31fb9b828c6d59859550e0f93ad53ed501a26132a078068aac`  
+		Last Modified: Fri, 23 May 2025 17:08:24 GMT  
+		Size: 3.3 MB (3256292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c74a5e2157a37c5dec86b27ebff78cdfe6f2731aac1cfd2eec6c75a431903076`  
-		Last Modified: Mon, 05 May 2025 21:52:56 GMT  
-		Size: 472.0 B  
+	-	`sha256:4c99ce3c41aa39aac3a5829d9fe83bb1872813c7b103629e0f674ca9e21efb73`  
+		Last Modified: Fri, 23 May 2025 17:08:23 GMT  
+		Size: 470.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1091bb23b52dc4006f93285e7ae6f08b721cc7fa22f183b5c037fc6c1b63100`  
-		Last Modified: Mon, 05 May 2025 21:52:57 GMT  
+	-	`sha256:99a1dc20e7529a8ae97ef2c694fa6e36808b3e17745781cc5103f277ad92fce7`  
+		Last Modified: Fri, 23 May 2025 17:08:24 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:latest` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:fa778245eccc8fe3bfcf4003b546f48495aac7ba6f48560d935de0573d9c0770
+$ docker pull liquibase@sha256:04b2be41aeb65f1f12680713dbb6d70a3ed79a240e2238eed8f0453a1c4de31b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3777130 bytes)**  
+-	Total Size: **3.8 MB (3822185 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7b31b819500f106021aa2120e88f33d1260ae8b2c1ad5a12f277a33ef3cb82a`
+-	Image ID: `sha256:19890be5465186e8792a71eada4a03a6e9a01b04248594358fd55cfcd87955ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ef39d9b81ccc44ae774adfad9efd949a7f6ac8ac8fd947fc4ada38c606ad31fd`  
-		Last Modified: Mon, 05 May 2025 21:52:57 GMT  
-		Size: 3.8 MB (3752801 bytes)  
+	-	`sha256:4f7475d95baba7852355b534f8c865af31e431f70e3261fe4ef3e0e055cc32f7`  
+		Last Modified: Fri, 23 May 2025 17:08:24 GMT  
+		Size: 3.8 MB (3797645 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3038fcebd684fa9687bf4aba891d872bd4f37b955f8b45595a13befe9523a154`  
-		Last Modified: Mon, 05 May 2025 21:52:56 GMT  
-		Size: 24.3 KB (24329 bytes)  
+	-	`sha256:44dd890efcbf74f1aec7b6798bb0fb4185985f29013bc932414e6de300ba358a`  
+		Last Modified: Fri, 23 May 2025 17:08:23 GMT  
+		Size: 24.5 KB (24540 bytes)  
 		MIME: application/vnd.in-toto+json
