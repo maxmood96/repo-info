@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27bf829f970515edb4680ae3a0c682d264e83d89e4d01fc7734f72a6e514edb0`
+- Image ID: `sha256:12646b6b309ecfddf45e98a55dd932481a71da94dab342d91efc20a321362628`
 - Created: `2025-05-06T02:04:37Z`
-- Virtual Size: ~ 189.30 Mb  
+- Virtual Size: ~ 176.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.41.12","-de0"]`
@@ -714,41 +714,16 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u11`
-
-Binary Packages:
-
-- `libc-bin=2.31-13+deb11u11`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u11
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u11.dsc' glibc_2.31-13+deb11u11.dsc 8351 SHA256:eab21c7c387c0ebc54485974450b7ee0310ae7081f4cdb90b4591d6942e5c694
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u11.debian.tar.xz' glibc_2.31-13+deb11u11.debian.tar.xz 966464 SHA256:ff78277778ddefe1eb44680cb19d2d4dff91891effc3b59da424ae61b0bcd482
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/glibc/2.31-13+deb11u11/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u11/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `glibc=2.31-13+deb11u12`
 
 Binary Packages:
 
+- `libc-bin=2.31-13+deb11u12`
 - `libc-dev-bin=2.31-13+deb11u12`
 - `libc6:amd64=2.31-13+deb11u12`
 - `libc6-dev:amd64=2.31-13+deb11u12`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1523,11 +1498,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.234-1`
+### `dpkg` source package: `linux=5.10.237-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.234-1`
+- `linux-libc-dev:amd64=5.10.237-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1543,17 +1518,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.234-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.234-1.dsc' linux_5.10.234-1.dsc 209423 SHA256:9015a424ce47030bedb720c779fb0db0fe7a0c0724deaf01449d6b808402220f
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.234.orig.tar.xz' linux_5.10.234.orig.tar.xz 122046700 SHA256:d54c0c22f58e2fe5d41c0002aba7b352d64385479185ab452af60816b20d267e
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.234-1.debian.tar.xz' linux_5.10.234-1.debian.tar.xz 1729620 SHA256:40d58a164347f94449c10290fee109159b2f6aee5b1c07688f63fc26255538ca
+$ apt-get source -qq --print-uris linux=5.10.237-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.237-1.dsc' linux_5.10.237-1.dsc 209423 SHA256:ef29f35761101074ed0ece195e3b323aebbc27cbf9b8f124316c85b1b0475505
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.237.orig.tar.xz' linux_5.10.237.orig.tar.xz 122062112 SHA256:32efd0b87e8732196a8bcc3edd0f8d4479f4edee844ec9e149c0255c94c4c5ee
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.237-1.debian.tar.xz' linux_5.10.237-1.debian.tar.xz 1740896 SHA256:0e4a1633d59c73c1b7024a4071fbb0cc1280624b2c96e6e34a24c9bf40823179
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.234-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.234-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.234-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.237-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.237-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.237-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
