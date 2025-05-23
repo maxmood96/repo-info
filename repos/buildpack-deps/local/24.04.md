@@ -4010,14 +4010,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.8-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.8-0ubuntu0.24.04.1.dsc' postgresql-16_16.8-0ubuntu0.24.04.1.dsc 4329 SHA512:ebdd3a108ed76fb934b53af6a54341b12e87494622f75e94ca2fed375d4c33ff6c17ff5cd71dd20b8c28865616b1e4a865bdafcb9ac8934e619e24f9e12a05e2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.8.orig.tar.gz' postgresql-16_16.8.orig.tar.gz 32765514 SHA512:16758b3d4a0aa8fd693dfb09abc0c6fb5ffc768138d2dc0266f7d697fea12efd5b6bbfb2ef77ea3d804745e4b4085bbd26b4acf972c5e6207f8c6a29bf9c8c93
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.8-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.8-0ubuntu0.24.04.1.debian.tar.xz 35212 SHA512:537b730aa9538f39f27d402b04e11f0f89b63328b3231753496f35c24c2f51637fb6e12abc54be7768fb58736a23a001833e96e48662cdbab8ca4e8dbe11d768
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
@@ -4383,15 +4378,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.1.dsc' sqlite3_3.45.1-1ubuntu2.1.dsc 2601 SHA512:7b7c33b64d4890445390caa55c30d58a7ca5782c3c6055eafdfd1f93c450de7b0e15a1d0f49b2f91b8573784c8007d99144cb69d27ba75c5c7d04dc75eef0a4f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.1.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.1.debian.tar.xz 30488 SHA512:90c4401b0dc709af1e6775dd50d1dde12647350b84b7cfdbddc1453561bfd85dd554eb61c5cdbd805a726c12be34b120aac94be009859186313f1155cec977a7
-```
 
 ### `dpkg` source package: `subversion=1.14.3-1build4`
 

@@ -2254,14 +2254,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.2.0-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.2.0-1.dsc' rust-sequoia-sq_1.2.0-1.dsc 4179 SHA512:be1f78bf2e854537bb99b1d26451c9985689e1b48f3a187450a20174a9aea29c1fff2bf02871ab8fe765e105a8d3a4a0e8c87dfdd8f536d71d13870b51294ab3
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.2.0.orig.tar.gz' rust-sequoia-sq_1.2.0.orig.tar.gz 750156 SHA512:7971ff890872249b5c85724e1dfc3de69769d6a52d5ecf9112679ce225560a8bf9c7e401887cf09e3138873a65fc83c1af65dac7fb89196aecf6009ed626ff4e
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.2.0-1.debian.tar.xz' rust-sequoia-sq_1.2.0-1.debian.tar.xz 5476 SHA512:4e5c6d910924fac384ac08ff2c08406fc05b59bd337aa69c1389922f80f491dd0b673cfedf06282eaa047ee143de3e605f565b25e242fc4ede483922dd2b1212
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.2.0-1/
+
 
 ### `dpkg` source package: `sed=4.9-2build1`
 
@@ -2534,13 +2533,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0051
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0051.dsc' ucf_3.0051.dsc 1512 SHA512:061c279f14497dc4852fc4adc2348dff1ce1a41d92ac6daa451625783a2d5662364b943ce95854b3864215ff127e6413fdf11df96368882e00be43e6bf282407
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0051.tar.xz' ucf_3.0051.tar.xz 70872 SHA512:f59f3750f658c33456b7d8594b10e8120ca96a52d8f1e5524d6b1bccdd4a4a61f5cf8e00ea6e0adce87d1dd7369335cdfde0f9fc7fc02c756e829f6e1a52d2c4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ucf/3.0051/
+
 
 ### `dpkg` source package: `utf8proc=2.9.0-1build1`
 
