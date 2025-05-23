@@ -7054,14 +7054,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.22-0ubuntu0.20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.22-0ubuntu0.20.04.2.dsc' postgresql-12_12.22-0ubuntu0.20.04.2.dsc 3764 SHA512:3195df2dc329919ad4fe8feb8d96ab9af2faeef80c18e717f67434f387b34b90bcac1a3dad7e8dbc599574e2c440aaae462a238152c43ca911681225da387e7c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.22.orig.tar.gz' postgresql-12_12.22.orig.tar.gz 27922580 SHA512:40e01b23a63c0c4a0bc867d2c989b387fad81f1972455d12a244c55e0d1f9d1be13b97652e9904895507e9fca3817b722a920ca466f242cf15987219e440b5d1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.22-0ubuntu0.20.04.2.debian.tar.xz' postgresql-12_12.22-0ubuntu0.20.04.2.debian.tar.xz 50340 SHA512:9184ff4caebb2ad3370b5af4d967b3dadad739c02271f6d1d836dd2c570141a873affb1980a8c1ca037f88cb936e0284dcd3ab2698240df11d34f50b24a20f5d
-```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.4`
 
@@ -10385,15 +10380,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.dsc' sqlite3_3.31.1-4ubuntu0.6.dsc 2519 SHA512:caa3e8fd9404fccdcedbf61702f7247c4699ef04c5cba205410639bd73de9afebab79ed40b0c5ca4e2302d6bd184441fc3faf02d46d10ab6508ea495c24addf8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz 36192 SHA512:12d6a58cbff3ceacfc5c51824f264993bbd9d50116d76c11a9b8ecc7ce417403174f637d8af34bdfe46e1f2555eca19d5da3c4875fb332b1aa268ca9fb81c238
-```
 
 ### `dpkg` source package: `sudo=1.8.31-1ubuntu1.5`
 
