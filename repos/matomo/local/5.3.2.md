@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c74c2bacd5eddea19520e2e6a46a562c02c68041c50f64c8ea35ba7bc27304d`
+- Image ID: `sha256:804b5f93d3d40aee5553197e83f8d6c8cb67259451510d968aac3ee86ac39d31`
 - Created: `2025-05-02T14:44:13Z`
-- Virtual Size: ~ 588.02 Mb  
+- Virtual Size: ~ 588.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -331,11 +331,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/autoconf/2.71-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/autoconf/2.71-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=12.4+deb12u10`
+### `dpkg` source package: `base-files=12.4+deb12u11`
 
 Binary Packages:
 
-- `base-files=12.4+deb12u10`
+- `base-files=12.4+deb12u11`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -344,16 +344,16 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u10
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u10.dsc' base-files_12.4+deb12u10.dsc 1137 SHA256:520d9d9b451a62376ea8ee02a80c693781f01e457dd870a08aa46f2f0311c18e
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u10.tar.xz' base-files_12.4+deb12u10.tar.xz 66200 SHA256:9c739c00b8ae35dda6156fa9edb5d13fc951580827353e2957c924e3a7e434da
+$ apt-get source -qq --print-uris base-files=12.4+deb12u11
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u11.dsc' base-files_12.4+deb12u11.dsc 1137 SHA256:dfc8c2d70b983d0d32d90159fae22dad248c64e1bc2fda2b32a18ded41baf6b6
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u11.tar.xz' base-files_12.4+deb12u11.tar.xz 66184 SHA256:7ad35a64b6bbc06ea311de71198ca05f6edd44f2af0660ac56996d9067a61510
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/base-files/12.4+deb12u10/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/base-files/12.4+deb12u11/ (for browsing the source)
+- https://sources.debian.net/src/base-files/12.4+deb12u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/12.4+deb12u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -384,7 +384,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `bash=5.2.15-2+b7`
+- `bash=5.2.15-2+b8`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -754,11 +754,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/debconf/1.5.82/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/debconf/1.5.82/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `debian-archive-keyring=2023.3+deb12u1`
+### `dpkg` source package: `debian-archive-keyring=2023.3+deb12u2`
 
 Binary Packages:
 
-- `debian-archive-keyring=2023.3+deb12u1`
+- `debian-archive-keyring=2023.3+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
@@ -767,16 +767,16 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2023.3+deb12u1
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3%2bdeb12u1.dsc' debian-archive-keyring_2023.3+deb12u1.dsc 1293 SHA256:6a88f9ae6cd4f38f0aa0b834aa5d19ce9aa3b209b038fb1e02467708a07521ae
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3%2bdeb12u1.tar.xz' debian-archive-keyring_2023.3+deb12u1.tar.xz 177600 SHA256:80b13f893288f319370ede2f3af31f45ff7b66e123e3a22d039a3a70da0d1df3
+$ apt-get source -qq --print-uris debian-archive-keyring=2023.3+deb12u2
+'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3%2bdeb12u2.dsc' debian-archive-keyring_2023.3+deb12u2.dsc 1293 SHA256:e0b44b75906f4f448bba242294e9191ee796e2553f49cb906d19fc8f199b6e7d
+'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3%2bdeb12u2.tar.xz' debian-archive-keyring_2023.3+deb12u2.tar.xz 137864 SHA256:3a34aaa3d753246f65191f5c1f675680a525512611eaffc96092d452dc812ddc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/debian-archive-keyring/2023.3+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/debian-archive-keyring/2023.3+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debian-archive-keyring/2023.3+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/debian-archive-keyring/2023.3+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/debian-archive-keyring/2023.3+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debian-archive-keyring/2023.3+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debianutils=5.7-0.5~deb12u1`
 
@@ -1049,13 +1049,13 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris freetype=2.12.1+dfsg-5+deb12u4
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.dsc' freetype_2.12.1+dfsg-5+deb12u4.dsc 3918 SHA256:eead829b4bc79107e8e79c4da006110dffe264f9d48b3ba02f76cf7e84b64389
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz 263656 SHA256:ce729d97f166a919a6a3037c949af01d5d6e1783614024d72683153f0bc5ef05
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:0303e45fe1dc659f14353c276ac0ea1025b30e19ac8138c52d5df79b55726f14
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz 2038632 SHA256:6664a32e4eedaa89f45422c1150e32da46fd301c972cbfd19d2dcc6dd96f07d1
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:e686683830c782c30cdd83278c8d5ed7ab930ae7d548682565b706322f44007f
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg.orig.tar.xz' freetype_2.12.1+dfsg.orig.tar.xz 2188492 SHA256:7dedb6b9adf331559daea614a83b8de42a753e685ec8e1c4bdb4529eb880b0d1
-'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.debian.tar.xz' freetype_2.12.1+dfsg-5+deb12u4.debian.tar.xz 44844 SHA256:c625a97a78e4c74acd32e5b63b3973c9ea8a5c3d7b7f8f7c02def4421589c61b
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.dsc' freetype_2.12.1+dfsg-5+deb12u4.dsc 3918 SHA256:eead829b4bc79107e8e79c4da006110dffe264f9d48b3ba02f76cf7e84b64389
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz 263656 SHA256:ce729d97f166a919a6a3037c949af01d5d6e1783614024d72683153f0bc5ef05
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:0303e45fe1dc659f14353c276ac0ea1025b30e19ac8138c52d5df79b55726f14
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz 2038632 SHA256:6664a32e4eedaa89f45422c1150e32da46fd301c972cbfd19d2dcc6dd96f07d1
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:e686683830c782c30cdd83278c8d5ed7ab930ae7d548682565b706322f44007f
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig.tar.xz' freetype_2.12.1+dfsg.orig.tar.xz 2188492 SHA256:7dedb6b9adf331559daea614a83b8de42a753e685ec8e1c4bdb4529eb880b0d1
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5%2bdeb12u4.debian.tar.xz' freetype_2.12.1+dfsg-5+deb12u4.debian.tar.xz 44844 SHA256:c625a97a78e4c74acd32e5b63b3973c9ea8a5c3d7b7f8f7c02def4421589c61b
 ```
 
 Other potentially useful URLs:
@@ -1064,27 +1064,27 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/freetype/2.12.1+dfsg-5+deb12u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/freetype/2.12.1+dfsg-5+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-12=12.2.0-14`
+### `dpkg` source package: `gcc-12=12.2.0-14+deb12u1`
 
 Binary Packages:
 
-- `cpp-12=12.2.0-14`
-- `g++-12=12.2.0-14`
-- `gcc-12=12.2.0-14`
-- `gcc-12-base:amd64=12.2.0-14`
-- `libasan8:amd64=12.2.0-14`
-- `libatomic1:amd64=12.2.0-14`
-- `libcc1-0:amd64=12.2.0-14`
-- `libgcc-12-dev:amd64=12.2.0-14`
-- `libgcc-s1:amd64=12.2.0-14`
-- `libgomp1:amd64=12.2.0-14`
-- `libitm1:amd64=12.2.0-14`
-- `liblsan0:amd64=12.2.0-14`
-- `libquadmath0:amd64=12.2.0-14`
-- `libstdc++-12-dev:amd64=12.2.0-14`
-- `libstdc++6:amd64=12.2.0-14`
-- `libtsan2:amd64=12.2.0-14`
-- `libubsan1:amd64=12.2.0-14`
+- `cpp-12=12.2.0-14+deb12u1`
+- `g++-12=12.2.0-14+deb12u1`
+- `gcc-12=12.2.0-14+deb12u1`
+- `gcc-12-base:amd64=12.2.0-14+deb12u1`
+- `libasan8:amd64=12.2.0-14+deb12u1`
+- `libatomic1:amd64=12.2.0-14+deb12u1`
+- `libcc1-0:amd64=12.2.0-14+deb12u1`
+- `libgcc-12-dev:amd64=12.2.0-14+deb12u1`
+- `libgcc-s1:amd64=12.2.0-14+deb12u1`
+- `libgomp1:amd64=12.2.0-14+deb12u1`
+- `libitm1:amd64=12.2.0-14+deb12u1`
+- `liblsan0:amd64=12.2.0-14+deb12u1`
+- `libquadmath0:amd64=12.2.0-14+deb12u1`
+- `libstdc++-12-dev:amd64=12.2.0-14+deb12u1`
+- `libstdc++6:amd64=12.2.0-14+deb12u1`
+- `libtsan2:amd64=12.2.0-14+deb12u1`
+- `libubsan1:amd64=12.2.0-14+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-12/copyright`, `/usr/share/doc/gcc-12/copyright`, `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libasan8/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-12-dev/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-12-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan2/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
@@ -1098,17 +1098,17 @@ Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-1
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-12=12.2.0-14
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14.dsc' gcc-12_12.2.0-14.dsc 27302 SHA256:b11f8eca97c60a8e55f0cfd4dffdd52560698909fdcde3eacb5241ce1f1f09ad
+$ apt-get source -qq --print-uris gcc-12=12.2.0-14+deb12u1
+'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14%2bdeb12u1.dsc' gcc-12_12.2.0-14+deb12u1.dsc 27330 SHA256:3aed0b189189c744dc9f4b74798a51d3e512ea85e492568db788a927c88e20ba
 'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz' gcc-12_12.2.0.orig.tar.gz 87090343 SHA256:b8298be16aeeb96a889c6afed0a8e2241b47452e89cc81fe65ea849d5c740fcb
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14.debian.tar.xz' gcc-12_12.2.0-14.debian.tar.xz 1664492 SHA256:e6f33b48753d62be04188a30c69883061a7ad1576c22166e79be2c9e7aa258f2
+'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14%2bdeb12u1.debian.tar.xz' gcc-12_12.2.0-14+deb12u1.debian.tar.xz 1675204 SHA256:59f7f7763a0c355e3f27ff9e7ac80d06382b29939361a87e7b139226bfe7402e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-12/12.2.0-14/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12.2.0-14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12.2.0-14/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-12/12.2.0-14+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/gcc-12/12.2.0-14+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-12/12.2.0-14+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.203`
 
@@ -1517,14 +1517,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.20.1-2+deb12u2`
+### `dpkg` source package: `krb5=1.20.1-2+deb12u3`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u2`
-- `libk5crypto3:amd64=1.20.1-2+deb12u2`
-- `libkrb5-3:amd64=1.20.1-2+deb12u2`
-- `libkrb5support0:amd64=1.20.1-2+deb12u2`
+- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u3`
+- `libk5crypto3:amd64=1.20.1-2+deb12u3`
+- `libkrb5-3:amd64=1.20.1-2+deb12u3`
+- `libkrb5support0:amd64=1.20.1-2+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1533,18 +1533,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.dsc' krb5_1.20.1-2+deb12u2.dsc 3203 SHA256:0ce7a4e69a947c0d21cc5226fe17f85f03b5011e96171aaeba91d3629fcf4dc2
+$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u3
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u3.dsc' krb5_1.20.1-2+deb12u3.dsc 3808 SHA256:03b83a980f0ca7cf3866d02cf6b6680b9a0f187982e7c4a47cb0599bdd84ce1e
 'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
 'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u2.debian.tar.xz' krb5_1.20.1-2+deb12u2.debian.tar.xz 105728 SHA256:06caf9ae0b57afd373e4a805820c1ceff519a5029566013a5c307f5439ab8364
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u3.debian.tar.xz' krb5_1.20.1-2+deb12u3.debian.tar.xz 107188 SHA256:b8eed3a176fd44dfa89bcbaa49011cfbc1d917ecdec5d64e1b23797deb168def
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.3-1`
 
@@ -1575,11 +1575,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.8.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.8.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libcap2=1:2.66-4`
+### `dpkg` source package: `libcap2=1:2.66-4+deb12u1`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-4`
+- `libcap2:amd64=1:2.66-4+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -1590,17 +1590,17 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-4
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66-4.dsc' libcap2_2.66-4.dsc 2204 SHA256:ab4aaa349c824acaebfb63bec2d2bc10e7cee10ec6725ac6f21f1fe12aa9d8fb
+$ apt-get source -qq --print-uris libcap2=1:2.66-4+deb12u1
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66-4%2bdeb12u1.dsc' libcap2_2.66-4+deb12u1.dsc 2257 SHA256:bbcbd1dbbc8df8c73be9bf46cc08f5f976f123c1811d289b0c6c83c623fe9307
 'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA256:15c40ededb3003d70a283fe587a36b7d19c8b3b554e33f86129c059a4bb466b2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66-4.debian.tar.xz' libcap2_2.66-4.debian.tar.xz 21468 SHA256:5379eec3a05e40c2485ebe451506883c1f2f99d552c6ded29607080fd278dd7c
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66-4%2bdeb12u1.debian.tar.xz' libcap2_2.66-4+deb12u1.debian.tar.xz 22188 SHA256:14ae0646671117b3aec1d3a629bf49af2670edf0ad140747710320c4dd0dd63d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libcap2/1:2.66-4/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.66-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.66-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libcap2/1:2.66-4+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libcap2/1:2.66-4+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap2/1:2.66-4+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.4-1`
 
@@ -2286,11 +2286,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.135-1`
+### `dpkg` source package: `linux=6.1.137-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.135-1`
+- `linux-libc-dev:amd64=6.1.137-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2305,17 +2305,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.135-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.135-1.dsc' linux_6.1.135-1.dsc 290931 SHA256:bd6019b1c349507c7158b3563c5bbc2144be6c68a8a76f6e85cd6aabdd0fbf81
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.135.orig.tar.xz' linux_6.1.135.orig.tar.xz 137766128 SHA256:eecffd0bb67604509d6afc06b7016b363488e7887c9541579e0a863afba119fe
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.135-1.debian.tar.xz' linux_6.1.135-1.debian.tar.xz 1746060 SHA256:8281a9404d40b01797d94809af4944c809765e662c3751219e52b56fd57d1c22
+$ apt-get source -qq --print-uris linux=6.1.137-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137-1.dsc' linux_6.1.137-1.dsc 290931 SHA256:4ab504a4a7188ba3cfcf19b5ca80b5d5d742f7dab0cf558a835898092544dc0a
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137.orig.tar.xz' linux_6.1.137.orig.tar.xz 137760676 SHA256:7ca14b68aff9a98c1eaa3500480dbf94d4a8393ab3232e046de4ad44b13a0d30
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137-1.debian.tar.xz' linux_6.1.137-1.debian.tar.xz 1750936 SHA256:61165b4a038811ea07b95d7ded6323c2a11db55299174276dfdefa3006afdf11
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.135-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.135-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.135-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.137-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.137-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.137-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 
@@ -2671,12 +2671,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.15-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.16-1~deb12u1`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.15-1~deb12u1`
-- `openssl=3.0.15-1~deb12u1`
+- `libssl3:amd64=3.0.16-1~deb12u1`
+- `openssl=3.0.16-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2688,18 +2688,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.15-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.15-1%7edeb12u1.dsc' openssl_3.0.15-1~deb12u1.dsc 2675 SHA256:c036907f6c634ea026143b904f8359222dabe44ef756d13e124e7e7645ef0d67
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.15.orig.tar.gz' openssl_3.0.15.orig.tar.gz 15318633 SHA256:23c666d0edf20f14249b3d8f0368acaee9ab585b09e1de82107c66e1f3ec9533
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.15.orig.tar.gz.asc' openssl_3.0.15.orig.tar.gz.asc 833 SHA256:781ffd542b9ec58d88333abb9af7fb8133059703f023a0b1a555086c51b2b3de
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.15-1%7edeb12u1.debian.tar.xz' openssl_3.0.15-1~deb12u1.debian.tar.xz 55220 SHA256:c4428a53771dd15b8cb1de4a790fae23b849438bd59f853f2ac686eee7e38876
+$ apt-get source -qq --print-uris openssl=3.0.16-1~deb12u1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.dsc' openssl_3.0.16-1~deb12u1.dsc 2675 SHA256:d0c61eed29fcb5c26eabdfbf9cab9216cd955bf6c62a0936e2f10e0b1aca3d03
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz' openssl_3.0.16.orig.tar.gz 15334967 SHA256:57e03c50feab5d31b152af2b764f10379aecd8ee92f16c985983ce4a99f7ef86
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz.asc' openssl_3.0.16.orig.tar.gz.asc 833 SHA256:a08564918ca8ace8fc31cfc7643369eae4cc5af436f448779ec741f1134f4054
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.debian.tar.xz' openssl_3.0.16-1~deb12u1.debian.tar.xz 52852 SHA256:83a175489ae79ae0e0ed4f56b16985e16a0c9a632ba2b3d9b41cdac8f29630df
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.15-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.15-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.15-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.16-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -2869,10 +2869,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.36.0-7+deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.dsc' perl_5.36.0-7+deb12u2.dsc 2357 SHA256:2763db81497ad23c110bb3ff1f2f1e5bca0d583ec172c82afc01ff214ba46ff8
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u2.debian.tar.xz' perl_5.36.0-7+deb12u2.debian.tar.xz 171576 SHA256:dc3eca212d38826805444abe64c9425b2aacf470d6800ec06d40e8ef02f0c007
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u2.dsc' perl_5.36.0-7+deb12u2.dsc 2357 SHA256:2763db81497ad23c110bb3ff1f2f1e5bca0d583ec172c82afc01ff214ba46ff8
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u2.debian.tar.xz' perl_5.36.0-7+deb12u2.debian.tar.xz 171576 SHA256:dc3eca212d38826805444abe64c9425b2aacf470d6800ec06d40e8ef02f0c007
 ```
 
 Other potentially useful URLs:
@@ -3101,12 +3101,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.9-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.9-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `shadow=1:4.13+dfsg1-1`
+### `dpkg` source package: `shadow=1:4.13+dfsg1-1+deb12u1`
 
 Binary Packages:
 
-- `login=1:4.13+dfsg1-1+b1`
-- `passwd=1:4.13+dfsg1-1+b1`
+- `login=1:4.13+dfsg1-1+deb12u1`
+- `passwd=1:4.13+dfsg1-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -3119,17 +3119,17 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1.dsc' shadow_4.13+dfsg1-1.dsc 2402 SHA256:e27b0676e87d4ae75a57cba55433517e8aa30d45817c691c63045d5e6195c667
+$ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-1+deb12u1
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.dsc' shadow_4.13+dfsg1-1+deb12u1.dsc 2433 SHA256:8045717c55c3e19402da41b9223f6e2148e89de66b10210be5ab556b34d85b23
 'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1.orig.tar.xz' shadow_4.13+dfsg1.orig.tar.xz 1811752 SHA256:a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1.debian.tar.xz' shadow_4.13+dfsg1-1.debian.tar.xz 78988 SHA256:cbd43c96ebad42bfb1656b5e691cc165f52d1dd6b1ee89202c2a09e59d663b1c
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.13%2bdfsg1-1%2bdeb12u1.debian.tar.xz' shadow_4.13+dfsg1-1+deb12u1.debian.tar.xz 82088 SHA256:12dfb1a9b824855db5bd5dd731ab0633b274b5fae1cdac8a114359415adf7d31
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.13+dfsg1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.40.1-2+deb12u1`
 
@@ -3405,10 +3405,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.4.1-1
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
 ```
 
 Other potentially useful URLs:
