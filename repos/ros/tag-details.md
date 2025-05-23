@@ -16,6 +16,13 @@
 -	[`ros:jazzy-ros-base-noble`](#rosjazzy-ros-base-noble)
 -	[`ros:jazzy-ros-core`](#rosjazzy-ros-core)
 -	[`ros:jazzy-ros-core-noble`](#rosjazzy-ros-core-noble)
+-	[`ros:kilted`](#roskilted)
+-	[`ros:kilted-perception`](#roskilted-perception)
+-	[`ros:kilted-perception-noble`](#roskilted-perception-noble)
+-	[`ros:kilted-ros-base`](#roskilted-ros-base)
+-	[`ros:kilted-ros-base-noble`](#roskilted-ros-base-noble)
+-	[`ros:kilted-ros-core`](#roskilted-ros-core)
+-	[`ros:kilted-ros-core-noble`](#roskilted-ros-core-noble)
 -	[`ros:latest`](#roslatest)
 -	[`ros:noetic`](#rosnoetic)
 -	[`ros:noetic-perception`](#rosnoetic-perception)
@@ -3655,6 +3662,69 @@ $ docker pull ros@sha256:b24a190b5f02b44122109faacc799239f59a86d09dd26aef4aed794
 		Last Modified: Mon, 05 May 2025 18:20:49 GMT  
 		Size: 16.5 KB (16512 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `ros:kilted`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ros:kilted-perception`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ros:kilted-perception-noble`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ros:kilted-ros-base`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ros:kilted-ros-base-noble`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ros:kilted-ros-core`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `ros:kilted-ros-core-noble`
+
+```console
+$ docker pull ros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ros:latest`
 
