@@ -1,7 +1,7 @@
 ## `openjdk:25-jdk-nanoserver-ltsc2025`
 
 ```console
-$ docker pull openjdk@sha256:d440abd413e075c1ca1b28526b8beea8bbb2dd3f717c4612c887c178d7b16635
+$ docker pull openjdk@sha256:c7b32bdabb2a9734fe90f0fb1e2de18aef4765f528618fa2691b6b007465b2e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,37 +11,37 @@ $ docker pull openjdk@sha256:d440abd413e075c1ca1b28526b8beea8bbb2dd3f717c4612c88
 ### `openjdk:25-jdk-nanoserver-ltsc2025` - windows version 10.0.26100.4061; amd64
 
 ```console
-$ docker pull openjdk@sha256:6ace5329eb455c537fb0cb980d51d0d78bb8cea4f11bee1f987a0c6d91733b26
+$ docker pull openjdk@sha256:de92fc1744a65eeeddaff5dd95309b164c1876ff0c16fa5f4c1b6a8ab3a85c1e
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **400.5 MB (400529300 bytes)**  
+-	Total Size: **400.9 MB (400942552 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:804971ff413d602ca8f0e1605e011c2e54a67bcb61329690b09b3828096f2f5e`
+-	Image ID: `sha256:8d7893029e17389ccd0f0012da311b6ab4eb842484f5e47253e4c73b7587e1cd`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
 ```dockerfile
 # Sat, 10 May 2025 00:58:48 GMT
 RUN Apply image 10.0.26100.4061
-# Fri, 16 May 2025 21:13:37 GMT
+# Fri, 23 May 2025 20:13:11 GMT
 SHELL [cmd /s /c]
-# Fri, 16 May 2025 21:13:38 GMT
+# Fri, 23 May 2025 20:13:12 GMT
 ENV JAVA_HOME=C:\openjdk-25
-# Fri, 16 May 2025 21:13:39 GMT
+# Fri, 23 May 2025 20:13:13 GMT
 USER ContainerAdministrator
-# Fri, 16 May 2025 21:13:42 GMT
+# Fri, 23 May 2025 20:13:15 GMT
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
-# Fri, 16 May 2025 21:13:42 GMT
+# Fri, 23 May 2025 20:13:16 GMT
 USER ContainerUser
-# Fri, 16 May 2025 21:13:43 GMT
-ENV JAVA_VERSION=25-ea+23
-# Fri, 16 May 2025 21:13:51 GMT
-COPY dir:be99341787be1c3f0d565e6ac1d9202629ef201376adf519d795dfb5baaa83fe in C:\openjdk-25 
-# Fri, 16 May 2025 21:13:58 GMT
+# Fri, 23 May 2025 20:13:17 GMT
+ENV JAVA_VERSION=25-ea+24
+# Fri, 23 May 2025 20:13:24 GMT
+COPY dir:d32a1e622c307f990d42f1dfe6052e231c098d4b948c30b3def65fbe5914b454 in C:\openjdk-25 
+# Fri, 23 May 2025 20:13:31 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Fri, 16 May 2025 21:13:58 GMT
+# Fri, 23 May 2025 20:13:31 GMT
 CMD ["jshell"]
 ```
 
@@ -50,39 +50,39 @@ CMD ["jshell"]
 		Last Modified: Tue, 13 May 2025 23:02:56 GMT  
 		Size: 191.4 MB (191412015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ee97e4a225f190885c8aa2b7943f296eb6abd10a185ea32a7043b0d4754e90`  
-		Last Modified: Fri, 16 May 2025 21:14:02 GMT  
-		Size: 1.0 KB (1030 bytes)  
+	-	`sha256:6da2e7ca37ec8067c7ec8d6cab286ef187443fbf8625888ec227b4ba5ade1a36`  
+		Last Modified: Fri, 23 May 2025 20:13:38 GMT  
+		Size: 1.1 KB (1064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5b00dcdbb90acf4badb49ebbfa692589ecddab522108848b6ba2b6fe6bd8bbc`  
-		Last Modified: Fri, 16 May 2025 21:14:02 GMT  
-		Size: 1.1 KB (1057 bytes)  
+	-	`sha256:f058980b6ff436a54f373d5a953732601b094d1a0854191a6e83688219214d79`  
+		Last Modified: Fri, 23 May 2025 20:13:38 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edb43016baaf3ae4792eb1133d66a4293c9d74b406d79510bf2e3499a0c710eb`  
-		Last Modified: Fri, 16 May 2025 21:14:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:53536315e774643720364354ae5d97d41bb1cb77e24755675149a4bb3672215c`  
+		Last Modified: Fri, 23 May 2025 20:13:37 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c39c13378b2ddc602b53e6227e369089729278ee49599e19f369e360b5417743`  
-		Last Modified: Fri, 16 May 2025 21:14:02 GMT  
-		Size: 76.6 KB (76584 bytes)  
+	-	`sha256:7bc06808f8483b763ccbfd31d2583cc388c6af5d8c5579b159aaeae4167c4a57`  
+		Last Modified: Fri, 23 May 2025 20:13:37 GMT  
+		Size: 76.3 KB (76298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2d878af9a1d89335e50590663ea6ff95019d70da97af215b502a2d7e48caf8`  
-		Last Modified: Fri, 16 May 2025 21:14:01 GMT  
-		Size: 1.1 KB (1056 bytes)  
+	-	`sha256:658021efa7f52f0a6ce0061ab2bd2c8d197d3266a56b106e48dacbc1f4b9117e`  
+		Last Modified: Fri, 23 May 2025 20:13:36 GMT  
+		Size: 1.0 KB (1034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8ad6ed16b3f1c1fbda893bcbacd224a0aa46fb28fe2b5dba9483be566ed074f`  
-		Last Modified: Fri, 16 May 2025 21:14:01 GMT  
-		Size: 1.1 KB (1055 bytes)  
+	-	`sha256:41233b75940eacf560efca8c2021a6b4e6d3a4a488185c116c9ab8b87b9a1a3b`  
+		Last Modified: Fri, 23 May 2025 20:13:35 GMT  
+		Size: 1.1 KB (1064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82fb2c7d125ea893de1cbc897b38577a4039d6c265bd744ede8ad5d9ff2224`  
-		Last Modified: Fri, 16 May 2025 21:14:12 GMT  
-		Size: 208.9 MB (208919878 bytes)  
+	-	`sha256:afe506b2a635fdfb165b908a45627c01f275d3599944542fd1eed695fcfed5ac`  
+		Last Modified: Fri, 23 May 2025 20:13:47 GMT  
+		Size: 209.3 MB (209333757 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feaa4455312e51dfdd23927dac9994417af6b3d63b7ea84d52f6d018e85427ac`  
-		Last Modified: Fri, 16 May 2025 21:14:01 GMT  
-		Size: 114.5 KB (114494 bytes)  
+	-	`sha256:f1ef3dfe9796548c729b0cd1f6790b55b97ddc5b6c9f2ae15bfd2cf793a09339`  
+		Last Modified: Fri, 23 May 2025 20:13:36 GMT  
+		Size: 114.2 KB (114170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41933a6ec070fb5ded6fed14447860ea41ed5d54b3fa2ee95dadc7b33fd2cc78`  
-		Last Modified: Fri, 16 May 2025 21:14:01 GMT  
-		Size: 1.1 KB (1065 bytes)  
+	-	`sha256:5fd4b37ba75fdeb73658e9f3c9e58541d4aa9fa0609f3dad9b38ee1f8afe6daa`  
+		Last Modified: Fri, 23 May 2025 20:13:36 GMT  
+		Size: 1.1 KB (1060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
