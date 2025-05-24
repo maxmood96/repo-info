@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe35008d04088ee14984f002c94767c5b7e36fc319b388dd96e1f58cc9fda6fc`
+- Image ID: `sha256:e65d3f263ff96a5aaa795c6d5b16793820ff48e986308c38c87c9026939b974d`
 - Created: `2025-04-09T18:15:04Z`
 - Virtual Size: ~ 207.67 Mb  
   (total size of all layers on-disk)
@@ -662,12 +662,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u11`
+### `dpkg` source package: `glibc=2.31-13+deb11u12`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u11`
-- `libc6:amd64=2.31-13+deb11u11`
+- `libc-bin=2.31-13+deb11u12`
+- `libc6:amd64=2.31-13+deb11u12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -677,17 +677,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u11
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u11.dsc' glibc_2.31-13+deb11u11.dsc 8351 SHA256:eab21c7c387c0ebc54485974450b7ee0310ae7081f4cdb90b4591d6942e5c694
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-13%2bdeb11u11.debian.tar.xz' glibc_2.31-13+deb11u11.debian.tar.xz 966464 SHA256:ff78277778ddefe1eb44680cb19d2d4dff91891effc3b59da424ae61b0bcd482
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u12
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.dsc' glibc_2.31-13+deb11u12.dsc 8351 SHA256:951f398a425b3d63f52e9969300d7e8b2c05b2b8fd09ecae289bf542b5d9c881
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.debian.tar.xz' glibc_2.31-13+deb11u12.debian.tar.xz 968580 SHA256:0e0c05529ade55a0c6e2d4aae374b1a90a163ba45c4bcaef814aa6d1fe6f6854
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u11/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u11/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u12/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
@@ -1545,21 +1545,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u2.dsc' openssl_1.1.1w-0+deb11u2.dsc 2692 SHA256:b9cb4be37fb38d0a670cb734893e71c5df9edd03ffa8f638d4b2975cccf64033
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u2.debian.tar.xz' openssl_1.1.1w-0+deb11u2.debian.tar.xz 101116 SHA256:d9a98897c8b9b2cefa79c58cd01af4559a516b0f682ecfbfbb1132f450584458
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u2/
 
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
