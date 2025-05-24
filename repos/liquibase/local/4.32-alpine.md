@@ -1,10 +1,10 @@
-# `liquibase:4.31-alpine`
+# `liquibase:4.32-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:94c5ce234ca9319f6bb3558eb03318f25c199aa8285f4f3d4d000bb9f444429b`
-- Created: `2025-02-17T16:29:17Z`
-- Virtual Size: ~ 580.09 Mb  
+- Image ID: `sha256:4c7b5749651c357c25993d3697b04ef5fa5b834c046760608a0d4536d794fbfe`
+- Created: `2025-05-23T15:54:00Z`
+- Virtual Size: ~ 599.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -13,6 +13,12 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LIQUIBASE_HOME=/liquibase`
   - `DOCKER_LIQUIBASE=true`
+- Labels:
+  - `org.opencontainers.image.description=Liquibase Container Image (Alpine)`
+  - `org.opencontainers.image.documentation=https://docs.liquibase.com`
+  - `org.opencontainers.image.licenses=Apache-2.0`
+  - `org.opencontainers.image.vendor=Liquibase`
+  - `org.opencontainers.image.version=4.32.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -240,16 +246,16 @@ Apache-2.0
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -356,19 +362,19 @@ X11
 
 ```
 
-### `apk` package: `openjdk17-jre-headless`
+### `apk` package: `openjdk21-jre-headless`
 
 ```console
-openjdk17-jre-headless-17.0.14_p7-r0 description:
-Oracle OpenJDK 17 (JRE headless)
+openjdk21-jre-headless-21.0.7_p6-r0 description:
+Oracle OpenJDK 21 (JRE headless)
 
-openjdk17-jre-headless-17.0.14_p7-r0 webpage:
-https://github.com/openjdk/jdk17u
+openjdk21-jre-headless-21.0.7_p6-r0 webpage:
+https://github.com/openjdk/jdk21u
 
-openjdk17-jre-headless-17.0.14_p7-r0 installed size:
-171 MiB
+openjdk21-jre-headless-21.0.7_p6-r0 installed size:
+187 MiB
 
-openjdk17-jre-headless-17.0.14_p7-r0 license:
+openjdk21-jre-headless-21.0.7_p6-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
