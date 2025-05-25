@@ -1,10 +1,10 @@
-# `mariadb:11.4.5-noble`
+# `mariadb:11.4.7-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:de2083646aa3745a6e09a93e3be24082871004bb6907bc093dae539bead99e95`
-- Created: `2025-02-05T21:06:18Z`
-- Virtual Size: ~ 326.91 Mb  
+- Image ID: `sha256:69a9298b42e7cf475fabcfd382c71a360d45972b2ac49399a55f105df357e730`
+- Created: `2025-05-21T23:31:53Z`
+- Virtual Size: ~ 327.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:11.4.5+maria~ubu2404`
+  - `MARIADB_VERSION=1:11.4.7+maria~ubu2404`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:noble`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.4.5`
+  - `org.opencontainers.image.version=11.4.7`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -545,11 +545,11 @@ $ apt-get source -qq --print-uris findutils=4.9.0-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.9.0-5build1.debian.tar.xz' findutils_4.9.0-5build1.debian.tar.xz 32864 SHA512:501c6e0100ac4a7b304700518c9d45c2f8a1f76bd5f12914c9b136e3b3d117115090177d5e6c863333982ca8ded70d188bbde2ff98d51c1d3c51ff247f5eb95b
 ```
 
-### `dpkg` source package: `galera-4=26.4.21-ubu2404`
+### `dpkg` source package: `galera-4=26.4.22-ubu2404`
 
 Binary Packages:
 
-- `galera-4=26.4.21-ubu2404`
+- `galera-4=26.4.22-ubu2404`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -1595,18 +1595,18 @@ $ apt-get source -qq --print-uris lz4=1.9.4-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.4-1build1.1.debian.tar.xz' lz4_1.9.4-1build1.1.debian.tar.xz 8356 SHA512:deb05c99d5ba5702997608b9c5fbe72b1a383bce253e0e25c409746c44d98245c559c0744767a18d32bdb5303a575c18f5c784fe4ad0b03565a13450c86c74f1
 ```
 
-### `dpkg` source package: `mariadb=1:11.4.5+maria~ubu2404`
+### `dpkg` source package: `mariadb=1:11.4.7+maria~ubu2404`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:11.4.5+maria~ubu2404`
-- `mariadb-backup=1:11.4.5+maria~ubu2404`
-- `mariadb-client=1:11.4.5+maria~ubu2404`
-- `mariadb-client-core=1:11.4.5+maria~ubu2404`
-- `mariadb-common=1:11.4.5+maria~ubu2404`
-- `mariadb-server=1:11.4.5+maria~ubu2404`
-- `mariadb-server-core=1:11.4.5+maria~ubu2404`
-- `mysql-common=1:11.4.5+maria~ubu2404`
+- `libmariadb3:amd64=1:11.4.7+maria~ubu2404`
+- `mariadb-backup=1:11.4.7+maria~ubu2404`
+- `mariadb-client=1:11.4.7+maria~ubu2404`
+- `mariadb-client-core=1:11.4.7+maria~ubu2404`
+- `mariadb-common=1:11.4.7+maria~ubu2404`
+- `mariadb-server=1:11.4.7+maria~ubu2404`
+- `mariadb-server-core=1:11.4.7+maria~ubu2404`
+- `mysql-common=1:11.4.7+maria~ubu2404`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1615,9 +1615,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:11.4.5+maria~ubu2404
-'http://archive.mariadb.org/mariadb-11.4.5/repo/ubuntu/pool/main/m/mariadb/mariadb_11.4.5%2bmaria%7eubu2404.dsc' mariadb_11.4.5+maria~ubu2404.dsc 4574 SHA256:6036e28d290e1a5fdd4871f560696aba3db534fec764dfaaa5be8f851dcfaa18
-'http://archive.mariadb.org/mariadb-11.4.5/repo/ubuntu/pool/main/m/mariadb/mariadb_11.4.5%2bmaria%7eubu2404.tar.xz' mariadb_11.4.5+maria~ubu2404.tar.xz 63127184 SHA256:fb34bde87824033e890bfc00656164b5cf27843520c38a94b2df0086975b665f
+$ apt-get source -qq --print-uris mariadb=1:11.4.7+maria~ubu2404
+'http://archive.mariadb.org/mariadb-11.4.7/repo/ubuntu/pool/main/m/mariadb/mariadb_11.4.7%2bmaria%7eubu2404.dsc' mariadb_11.4.7+maria~ubu2404.dsc 4574 SHA256:1684406031f0a89d475e2c05e9abc587d72dd9ddc80bb979ce2d8e1a3a51f7c2
+'http://archive.mariadb.org/mariadb-11.4.7/repo/ubuntu/pool/main/m/mariadb/mariadb_11.4.7%2bmaria%7eubu2404.tar.xz' mariadb_11.4.7+maria~ubu2404.tar.xz 66092052 SHA256:80fb04476ccd4334b6bf7f33287df922eab53cf028623b3e25a445aa5093af7e
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1build1`
@@ -2121,11 +2121,11 @@ $ apt-get source -qq --print-uris socat=1.8.0.0-4build3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/socat/socat_1.8.0.0-4build3.debian.tar.xz' socat_1.8.0.0-4build3.debian.tar.xz 15632 SHA512:409030c60e6900d984bc02701f2d1536b9c74e2a5e6822d53653b0dc76c85fb30b26a778ebc36f998a504b1c88875cf141820c43be4d88891b3c04c2cfdc151a
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.1`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.1`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2136,11 +2136,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.1.dsc' sqlite3_3.45.1-1ubuntu2.1.dsc 2601 SHA512:7b7c33b64d4890445390caa55c30d58a7ca5782c3c6055eafdfd1f93c450de7b0e15a1d0f49b2f91b8573784c8007d99144cb69d27ba75c5c7d04dc75eef0a4f
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.dsc' sqlite3_3.45.1-1ubuntu2.3.dsc 2601 SHA512:2bc0a399fd75a2be9db259e65435b3628db50fcf13d8f9e518837b0a0ffa30b13ce4237fb7ab23ccee4912147ef53ece2420d5c0bf8aedde43ad7f39e92d7d4b
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.1.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.1.debian.tar.xz 30488 SHA512:90c4401b0dc709af1e6775dd50d1dde12647350b84b7cfdbddc1453561bfd85dd554eb61c5cdbd805a726c12be34b120aac94be009859186313f1155cec977a7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz 33384 SHA512:e6f48f7e73237602d6ba3faaca90d8c20507ddb663d85b616b2f5d460ef2b83c23a36ebd6eb472671b4f749e3e4960cfebcd7b531c0220ecc14bc22e1ead419d
 ```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.6`

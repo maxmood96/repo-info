@@ -1,10 +1,10 @@
-# `mariadb:10.11.11-ubi9`
+# `mariadb:10.11.13-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aabe752f62a53180a820ebe73b1c7e197ad03c1d9ef6733e48f0f82669f615af`
-- Created: `2025-02-05T21:06:18Z`
-- Virtual Size: ~ 468.28 Mb  
+- Image ID: `sha256:6e011f9540ab66056855728ea0934096aec377960428dceaf5bf50834552d166`
+- Created: `2025-05-21T23:31:53Z`
+- Virtual Size: ~ 468.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.17`
-  - `MARIADB_VERSION=10.11.11`
+  - `MARIADB_VERSION=10.11.13`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2025-05-14T10:35:47`
@@ -37,42 +37,42 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.11`
+  - `org.opencontainers.image.version=10.11.13`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
   - `vcs-ref=f2f252e0ac953b9e80eaebfc08ec086edac81945`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=10.11.11`
+  - `version=10.11.13`
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `MariaDB-backup-10.11.11-1.el9.x86_64`
+### `rpm` package: `MariaDB-backup-10.11.13-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-10.11.11-1.el9.x86_64`
+### `rpm` package: `MariaDB-client-10.11.13-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-common-10.11.11-1.el9.x86_64`
+### `rpm` package: `MariaDB-common-10.11.13-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-server-10.11.11-1.el9.x86_64`
+### `rpm` package: `MariaDB-server-10.11.13-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-shared-10.11.11-1.el9.x86_64`
+### `rpm` package: `MariaDB-shared-10.11.13-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1
 
@@ -262,7 +262,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -309,7 +309,7 @@ $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
-### `rpm` package: `galera-4-26.4.21-1.el9.x86_64`
+### `rpm` package: `galera-4-26.4.22-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0
 
@@ -512,7 +512,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2096,7 +2096,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2107,7 +2107,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
