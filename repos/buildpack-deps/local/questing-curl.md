@@ -73,13 +73,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.0.1ubuntu1.dsc' apt_3.0.1ubuntu1.dsc 3276 SHA512:7ee58e5f86019be27cb022b650caba7e73c2536957e25ca63a050239dd4a012d15b07466ec6b9768505c5843301990ea90e1c9559647ca051bb322bc00462b12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.0.1ubuntu1.tar.xz' apt_3.0.1ubuntu1.tar.xz 2420956 SHA512:02fdae8838c05c217fb448e129d402d26671d5fae2afa41a7def884ed38bb96319caa8059fa968caceb10fe69eec4ee4a1b31affefc963f4c955e30824c6d378
-```
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -626,14 +622,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.1.0-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0-4ubuntu1.dsc' gcc-15_15.1.0-4ubuntu1.dsc 52311 SHA512:fa1de2abe13f14f1bbcbbb945ab33735ebe8e5d716b977e140d65928c7963bcdcdddd63618e6022481391d660a731dbc9c025662875b9757643fd0edb1c212de
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0.orig.tar.gz' gcc-15_15.1.0.orig.tar.gz 103173045 SHA512:e14a4862a9ceb5786dfccad069adab71a8872a69fbd99be4861dca17ce7a3b4deaba61f06e810865ff6831bec62fd241df6398e571b0ac97ee5e962b000128f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0-4ubuntu1.debian.tar.xz' gcc-15_15.1.0-4ubuntu1.debian.tar.xz 2373196 SHA512:1e9160eb5b564e5342bcae6f3ed0dbc36e25c414c549c897b7bf5a9764a46965eca6b37cc12eb69bab17807e9df054a6427a0fee444d46fc44bd739db609b9d2
-```
 
 ### `dpkg` source package: `glibc=2.41-6ubuntu1`
 
@@ -678,15 +669,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-6ubuntu1.dsc' glibc_2.41-6ubuntu1.dsc 8027 SHA512:82dfb36cc75f4b7022b8c47656e3f02dc41096a284147d85c6f040e3c053bd8e91dd14e8f032c99387e42f60c306972fbe098551b637dabd02c423c9edd34ec9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 19344868 SHA512:894a3e5a796bc13df30c26a5bfbe4d60b5dbdaac54e7763432235124b547070c7dda88c50584536870cab79183d8cad73a3ac6ed09bfe54fa8482aad07253169
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz.asc' glibc_2.41.orig.tar.xz.asc 981 SHA512:98462e1a1abce7ae7214b48bce160ff95ffb6634708d9952a0997575ae1fb06f4499e01953bace0933e07fddf583f0dfe93221c44192957a894a4126ab073ce8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-6ubuntu1.debian.tar.xz' glibc_2.41-6ubuntu1.debian.tar.xz 458296 SHA512:132e19dbffefe82183ce35c039c2d25991d3691ecc24fa0bfa17ba170df7e334feac96c5e52af96ac499af5f53aa76dbbec0f73671c8bef9285799722ce5619b
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3ubuntu1`
 
@@ -704,14 +689,9 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-3ubuntu1.dsc' gmp_6.3.0+dfsg-3ubuntu1.dsc 2337 SHA512:88827f1cde0e5e1ed94c5218e9b05fbc39ba7f5116a07fded70e8e5269e2019c5b2f2636a7b29af1372b3a4b48f9fc915fe56d577cacd9003ebd3d4ac1f3619f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA512:a422b29024464aeb26c69f64be1bc37407d74e0290f44f67fc040fe38b97f3eb7aa6ba8380722ef36cac39816d1c4f24b771159fb86d5979ef0791dcdef708bc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-3ubuntu1.debian.tar.xz' gmp_6.3.0+dfsg-3ubuntu1.debian.tar.xz 39716 SHA512:d40277a99b8f356cae8be53907cb089929c6757f0aa6042996b37f608b645b4e97b633bb17c1b4dc5aeb767b28efa51dda65239a896240c814c0bfe859404a2f
-```
 
 ### `dpkg` source package: `gnupg2=2.4.4-2ubuntu24`
 
@@ -744,15 +724,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu24
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu24.dsc' gnupg2_2.4.4-2ubuntu24.dsc 3625 SHA512:e937319f2c151c8b17cfd95a5af9d55404473d69fde44f008fb2a53e320c578dddd4ff45dd80af520548bd2ae0fb039478f572577f685e37a671b4ff3a44fab0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu24.debian.tar.xz' gnupg2_2.4.4-2ubuntu24.debian.tar.xz 97344 SHA512:3e8296c00dc2e62e2fda204c4fa2f065b3ecfa643b42799fd2b7a3a4dc96afc7445daaff71cc84893bce8225caac02eab6da645ccc26e405aa170b4c0c975b25
-```
 
 ### `dpkg` source package: `gnutls28=3.8.9-2ubuntu3`
 
@@ -1695,14 +1669,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.dsc' pam_1.5.3-7ubuntu4.dsc 2411 SHA512:ef7b41b13e21d2c2dbf64371956055f042a8d792d84b371489e285e3d46061034715ca5cb41f038b0f83a4046f5020cd7f7f434ee429d5c319d560f9a225b0be
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.debian.tar.xz' pam_1.5.3-7ubuntu4.debian.tar.xz 186684 SHA512:252162a6fc1ed9069fa3dcb039c62671f2fdfb705c9b90ee2fae346cb06c4523aeb0f148393cdee56d9b563ca1c110ccb14540e6efc7e9c19aff3efcec76afcb
-```
 
 ### `dpkg` source package: `pcre2=10.45-1`
 
@@ -2024,14 +1993,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.14-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.14-1ubuntu1.dsc' sysvinit_3.14-1ubuntu1.dsc 2468 SHA512:3fbff17813340564faf970fab51c2e7b8dc115ec0196f836eae5329f9ef45129eba673460677908d0431601eba4e10e6be18630be84c1e596a56405b3d4d5337
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.14.orig.tar.gz' sysvinit_3.14.orig.tar.gz 516357 SHA512:557b6ed9090e6594806b71c9fd054f32972fc6e7bffa4ef92a9dda42c5db08100f226b7b43c0433c1a1e9b16a3ebc483cb42d9aa29a5a3cfd5fc1c60984ef478
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.14-1ubuntu1.debian.tar.xz' sysvinit_3.14-1ubuntu1.debian.tar.xz 122080 SHA512:17bf826ac424055cc7d8d153446a7eb0a749643dacb720ae514e016ea2d45bcf1631ea09134b630c7a67520cac1c4b43f170129ee79bd73b4230cc1a0108fe49
-```
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1`
 
@@ -2153,15 +2117,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.24.5-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.24.5-2ubuntu1.dsc' wget_1.24.5-2ubuntu1.dsc 2288 SHA512:024e102f33abee32993adca81bb45f1d4c61a43740e25c6797f4fe491d7941281de2d6920a19693ab36f8ead9dd015a8161d2d80cfcf46d7edb73808490c84b0
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.24.5.orig.tar.gz' wget_1.24.5.orig.tar.gz 5182521 SHA512:572aa54717e51a9eb9959e127c7afb696645088f32ff7df2cfe9d243957e34ee235e98988fa94649df023d2e3d62b6973e8c9f2eb92beba820dd96d5de2a950d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.24.5.orig.tar.gz.asc' wget_1.24.5.orig.tar.gz.asc 854 SHA512:f819dc43a466682ace38e8537698e3c7c3919203f77373bdaea1b63ead40c4d3663590209dfeb6187d98edd00e30848a3abd5735795fb47878924f1d9b2ee10d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.24.5-2ubuntu1.debian.tar.xz' wget_1.24.5-2ubuntu1.debian.tar.xz 65252 SHA512:7c3b80db521946b7209697f711ee21db1df2e7af20d046f23ebb3d23e80eaf9aea1b9ea882ed29aa05f76732aafce97168756f64fd1781f04a1958c63b53c85c
-```
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
