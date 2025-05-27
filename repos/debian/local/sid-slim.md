@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.1.dsc' apt_3.0.1.dsc 3169 SHA256:1c199019bc7d4e8954008d9b4b1998a4ae8e1d95153a2eae93483c6d07843468
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.1.tar.xz' apt_3.0.1.tar.xz 2421000 SHA256:60128e651f96fda2f747d95d424bbb46e25e95eca8a587ae8f8cd4794728cc6f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.0.1/
 
-- https://sources.debian.net/src/apt/3.0.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1449,21 +1443,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.dsc' sqlite3_3.46.1-4.dsc 2632 SHA256:335716c2a37bbbd0dc03f738be814780af75972f734508ee6f046bb4a25ac407
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.debian.tar.xz' sqlite3_3.46.1-4.debian.tar.xz 33360 SHA256:0dbd7b85e1be2bc80397ddd26662f5ea86cdebad7d2926d9df31eb726e5788e3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.46.1-4/
 
-- https://sources.debian.net/src/sqlite3/3.46.1-4/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.46.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.46.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257.5-2`
 
