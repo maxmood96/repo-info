@@ -1041,15 +1041,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.2.dsc' glib2.0_2.80.0-6ubuntu3.2.dsc 4508 SHA512:adc9598ff96b4c2596c8b5bb34e00a8318f697dabaf28e8258629f09a8b76059acd12285a3917f147c0f94d8b6cb8c128e19f37ea92b28764b55aad92936bcd8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.2.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.2.debian.tar.xz 151008 SHA512:eaf28022c6e27993e471272afecbad602741a02c5e59ca74699dd65ddb113e3389e59933e3fbf2f22c643c6acd5e8891b749b67224ef4a421ab06f18fc3a0c0e
-```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.4`
 
