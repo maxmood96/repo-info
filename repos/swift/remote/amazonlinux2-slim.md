@@ -1,7 +1,7 @@
 ## `swift:amazonlinux2-slim`
 
 ```console
-$ docker pull swift@sha256:6dac363c18410a6725055c8d3f37bdc0001db52c98f9efcb53d28895ddfe18b1
+$ docker pull swift@sha256:3f6c2dc1715b28a3c2e6f611f9f522bc84cac3e706787f4add06a405a13d3d73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull swift@sha256:6dac363c18410a6725055c8d3f37bdc0001db52c98f9efcb53d28
 ### `swift:amazonlinux2-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:f75627e26c2e7f333d64da097b28f802423b0cbb89a94b3c4500acb45ada7dc7
+$ docker pull swift@sha256:71611b7e98d74b1945d34f3ebbad883849663507f606728769af80818852b27c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.0 MB (270989593 bytes)**  
+-	Total Size: **271.0 MB (270988302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa9a08db7e3430ab401022b43b4b755159b4270f3415d68f7ed63d00b239266c`
+-	Image ID: `sha256:8abb0acb25293101cd404be0b12d619ac74277a8b139e716eb326112eb8e546f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -28,24 +28,24 @@ $ docker pull swift@sha256:f75627e26c2e7f333d64da097b28f802423b0cbb89a94b3c4500a
 COPY /rootfs/ / # buildkit
 # Wed, 14 May 2025 20:17:09 GMT
 CMD ["/bin/bash"]
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 LABEL description=Docker Container for the Swift programming language
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 ARG SWIFT_PLATFORM=amazonlinux2
-# Mon, 26 May 2025 22:39:21 GMT
-ARG SWIFT_BRANCH=swift-6.1.1-release
-# Mon, 26 May 2025 22:39:21 GMT
-ARG SWIFT_VERSION=swift-6.1.1-RELEASE
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
+ARG SWIFT_BRANCH=swift-6.1.2-release
+# Wed, 28 May 2025 17:53:13 GMT
+ARG SWIFT_VERSION=swift-6.1.2-RELEASE
+# Wed, 28 May 2025 17:53:13 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Mon, 26 May 2025 22:39:21 GMT
-ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.1-release SWIFT_VERSION=swift-6.1.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Mon, 26 May 2025 22:39:21 GMT
-# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.1-release SWIFT_VERSION=swift-6.1.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Wed, 28 May 2025 17:53:13 GMT
+ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.2-release SWIFT_VERSION=swift-6.1.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Wed, 28 May 2025 17:53:13 GMT
+# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.2-release SWIFT_VERSION=swift-6.1.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && yum -y install tar gzip     && tar -xzf swift.tar.gz --directory / --strip-components=1         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/lib/swift/linux         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/libexec/swift/linux     && chmod -R o+r /usr/lib/swift /usr/libexec/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && yum autoremove -y tar gzip # buildkit
 ```
 
@@ -54,45 +54,45 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Last Modified: Wed, 14 May 2025 22:47:15 GMT  
 		Size: 62.8 MB (62759985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cb5cd12fec0c24fe3b9bdc88ccb7602932623e35866467ae00f0448876b3e97`  
-		Last Modified: Tue, 27 May 2025 18:56:41 GMT  
-		Size: 208.2 MB (208229608 bytes)  
+	-	`sha256:4a75c83407e1e3e47031e98b0645393a466d8a63df826cb0999d510d9fdc5103`  
+		Last Modified: Wed, 28 May 2025 18:28:40 GMT  
+		Size: 208.2 MB (208228317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:amazonlinux2-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:ba66239f6808d385e1c74ac9680b72ddefb9bd32b2817e260b72f1fdef7facc5
+$ docker pull swift@sha256:6f01af2e1228e1d4a717c9e16c3a1d3de22955da80a9ad835cf3e2b3e2a98514
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.1 MB (5089656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d18e8b5af276592e0c4fed76d9749e7cdaf223b7a37f7a86ccb98713caf50b89`
+-	Image ID: `sha256:410cabdace8c899c0a2b4856f285eb77e82603fb862887e8cb3bf4e9c1dbc5c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c00d5408809eff73ef3bf648cf9b478c2d11223556900abb2127d41cebd4e1c9`  
-		Last Modified: Tue, 27 May 2025 18:56:38 GMT  
+	-	`sha256:59f1cc3637ff308b4825a1d6a65cd7c19d1d156384eb95452f5375860f913951`  
+		Last Modified: Wed, 28 May 2025 18:28:37 GMT  
 		Size: 5.1 MB (5077759 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:652491c23b8f03266e064373a63e1f7bcff242a1f0522651f0cfe50b86c8e75b`  
-		Last Modified: Tue, 27 May 2025 18:56:38 GMT  
+	-	`sha256:3cfbc10990cecd29708cfe8cf8394079d0506166c46f9fc42bc796e5e2d6c27e`  
+		Last Modified: Wed, 28 May 2025 18:28:36 GMT  
 		Size: 11.9 KB (11897 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:amazonlinux2-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:5c76ad2b7d3945bacd3922bd826652380d0b1cc40ba96d8084207033464edfad
+$ docker pull swift@sha256:4b4f846a3c4dadb3d247a7fc7fb46dd07f93cc640049b40494071b5cb505eafb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.4 MB (248374448 bytes)**  
+-	Total Size: **248.4 MB (248372192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a48898fc4a89589d1fe1e4771ff1fa920e794bbfb7ae10886b3c7790151c7bd1`
+-	Image ID: `sha256:a2fcc121bb64f6ed2abca5fa712d5289ecaf668630abd1d02205407cd1586639`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -100,24 +100,24 @@ $ docker pull swift@sha256:5c76ad2b7d3945bacd3922bd826652380d0b1cc40ba96d8084207
 COPY /rootfs/ / # buildkit
 # Wed, 14 May 2025 20:17:13 GMT
 CMD ["/bin/bash"]
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 LABEL description=Docker Container for the Swift programming language
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
 ARG SWIFT_PLATFORM=amazonlinux2
-# Mon, 26 May 2025 22:39:21 GMT
-ARG SWIFT_BRANCH=swift-6.1.1-release
-# Mon, 26 May 2025 22:39:21 GMT
-ARG SWIFT_VERSION=swift-6.1.1-RELEASE
-# Mon, 26 May 2025 22:39:21 GMT
+# Wed, 28 May 2025 17:53:13 GMT
+ARG SWIFT_BRANCH=swift-6.1.2-release
+# Wed, 28 May 2025 17:53:13 GMT
+ARG SWIFT_VERSION=swift-6.1.2-RELEASE
+# Wed, 28 May 2025 17:53:13 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Mon, 26 May 2025 22:39:21 GMT
-ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.1-release SWIFT_VERSION=swift-6.1.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Mon, 26 May 2025 22:39:21 GMT
-# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.1-release SWIFT_VERSION=swift-6.1.1-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Wed, 28 May 2025 17:53:13 GMT
+ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.2-release SWIFT_VERSION=swift-6.1.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Wed, 28 May 2025 17:53:13 GMT
+# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=amazonlinux2 SWIFT_BRANCH=swift-6.1.2-release SWIFT_VERSION=swift-6.1.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && yum -y install tar gzip     && tar -xzf swift.tar.gz --directory / --strip-components=1         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/lib/swift/linux         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/libexec/swift/linux     && chmod -R o+r /usr/lib/swift /usr/libexec/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && yum autoremove -y tar gzip # buildkit
 ```
 
@@ -126,31 +126,31 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Last Modified: Wed, 14 May 2025 22:47:33 GMT  
 		Size: 64.6 MB (64607481 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea07380123f99c729bc0b27822feea32e08708bb36ad6b4ca10670a59f2591bd`  
-		Last Modified: Tue, 27 May 2025 21:34:36 GMT  
-		Size: 183.8 MB (183766967 bytes)  
+	-	`sha256:635a5ce398f7d749bb2a1f5f9e2c57343f2b496bb0cc605e4701014b0dbd8b2e`  
+		Last Modified: Wed, 28 May 2025 18:49:59 GMT  
+		Size: 183.8 MB (183764711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:amazonlinux2-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:e3bb03b91b422327055e1c096ad447ada0480496ccf34d2a684fc2ee3739c1ed
+$ docker pull swift@sha256:747d73e47fd658a15f5b46eb4c00d1fdf2b3a2b1a34081aa3a9b0fdcb2cf6abc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.1 MB (5089182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e92fd0169184557d864b20d13e5d3b99b70945844687a18ec95d9d7a72d1bae5`
+-	Image ID: `sha256:9256ef133e8a439c165a1a17c5f3107fc7004acc6626ff6e66b0820db077b3c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1a04aabdb5ad868109711ed33840d93a18a06c3b10ac3dbe24cf2ba1976a7204`  
-		Last Modified: Tue, 27 May 2025 21:34:32 GMT  
+	-	`sha256:94fc86d443cb87881ed42c8fe028003f332f2a22b1241bd3aad02e1ed1db151b`  
+		Last Modified: Wed, 28 May 2025 18:49:55 GMT  
 		Size: 5.1 MB (5077193 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f4d55b6969c067287abbf8ca405ce72432ef25cb7f183d410aaefe4478ef2320`  
-		Last Modified: Tue, 27 May 2025 21:34:31 GMT  
+	-	`sha256:de4fdc993a6c7c0786bb82716d2125a03d5304ba64282898e83bba6ebd3a3250`  
+		Last Modified: Wed, 28 May 2025 18:49:55 GMT  
 		Size: 12.0 KB (11989 bytes)  
 		MIME: application/vnd.in-toto+json
