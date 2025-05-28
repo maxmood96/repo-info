@@ -1,10 +1,10 @@
-# `golang:tip-20250517-bookworm`
+# `golang:tip-20250524-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd1bfcb631b7c8e25b346e75afb61994309ead8e2e0e8d50fd0311739e842488`
-- Created: `2025-05-19T05:23:20Z`
-- Virtual Size: ~ 911.40 Mb  
+- Image ID: `sha256:f1bee35a9106dced5cc59a237c2a37d2070e1d0b3be7eab84f8e95230f513e5b`
+- Created: `2025-05-26T05:23:21Z`
+- Virtual Size: ~ 908.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2153,11 +2153,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.137-1`
+### `dpkg` source package: `linux=6.1.140-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.137-1`
+- `linux-libc-dev:amd64=6.1.140-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2172,17 +2172,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.137-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137-1.dsc' linux_6.1.137-1.dsc 290931 SHA256:4ab504a4a7188ba3cfcf19b5ca80b5d5d742f7dab0cf558a835898092544dc0a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137.orig.tar.xz' linux_6.1.137.orig.tar.xz 137760676 SHA256:7ca14b68aff9a98c1eaa3500480dbf94d4a8393ab3232e046de4ad44b13a0d30
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.137-1.debian.tar.xz' linux_6.1.137-1.debian.tar.xz 1750936 SHA256:61165b4a038811ea07b95d7ded6323c2a11db55299174276dfdefa3006afdf11
+$ apt-get source -qq --print-uris linux=6.1.140-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140-1.dsc' linux_6.1.140-1.dsc 290931 SHA256:90ec880d742107a994dc362ac5282306b7077bf7b8a3090c403ec6db80a6bfcc
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140.orig.tar.xz' linux_6.1.140.orig.tar.xz 137788592 SHA256:7a29d83c6f736c7edaddd82fc6b9f2c31f91b0ccb782c5934ff2c2507930ffca
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140-1.debian.tar.xz' linux_6.1.140-1.debian.tar.xz 1752292 SHA256:318cc4d1f788173832d4d2e255f45f01216b6aa10476691bc96552ae069b6d5f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.137-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.137-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.137-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.140-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.140-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.140-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
