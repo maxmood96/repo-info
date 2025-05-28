@@ -63,9 +63,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=3.0.1
-'http://http.debian.net/debian/pool/main/a/apt/apt_3.0.1.dsc' apt_3.0.1.dsc 3169 SHA256:1c199019bc7d4e8954008d9b4b1998a4ae8e1d95153a2eae93483c6d07843468
-'http://http.debian.net/debian/pool/main/a/apt/apt_3.0.1.tar.xz' apt_3.0.1.tar.xz 2421000 SHA256:60128e651f96fda2f747d95d424bbb46e25e95eca8a587ae8f8cd4794728cc6f
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.1.dsc' apt_3.0.1.dsc 3169 SHA256:1c199019bc7d4e8954008d9b4b1998a4ae8e1d95153a2eae93483c6d07843468
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.1.tar.xz' apt_3.0.1.tar.xz 2421000 SHA256:60128e651f96fda2f747d95d424bbb46e25e95eca8a587ae8f8cd4794728cc6f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/3.0.1/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.0.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -3356,11 +3362,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.46.1-4
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.dsc' sqlite3_3.46.1-4.dsc 2632 SHA256:335716c2a37bbbd0dc03f738be814780af75972f734508ee6f046bb4a25ac407
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://http.debian.net/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.debian.tar.xz' sqlite3_3.46.1-4.debian.tar.xz 33360 SHA256:0dbd7b85e1be2bc80397ddd26662f5ea86cdebad7d2926d9df31eb726e5788e3
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.dsc' sqlite3_3.46.1-4.dsc 2632 SHA256:335716c2a37bbbd0dc03f738be814780af75972f734508ee6f046bb4a25ac407
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.debian.tar.xz' sqlite3_3.46.1-4.debian.tar.xz 33360 SHA256:0dbd7b85e1be2bc80397ddd26662f5ea86cdebad7d2926d9df31eb726e5788e3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sqlite3/3.46.1-4/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.46.1-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.46.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.8-3-1`
 
@@ -3675,20 +3687,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.1230-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1230-1.dsc' vim_9.1.1230-1.dsc 3230 SHA256:4c771a3701ba35dd76648da2465e2babbc56d592bad90234f932934c55f4fe50
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1230.orig.tar.xz' vim_9.1.1230.orig.tar.xz 12331388 SHA256:203640cca8fa97603868ef42f34eeb723803ab15fd141b68b1cba54b7993b2bf
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1230-1.debian.tar.xz' vim_9.1.1230-1.debian.tar.xz 191148 SHA256:f3e6fa014d050fceae78104d4a2592fc70f25fc1dd5429f8718afdd798f13581
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.1230-1/
 
-- https://sources.debian.net/src/vim/2:9.1.1230-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.1230-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.1230-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
