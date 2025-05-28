@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:94e749f78c040e255bde80186c65201bee7f8a51a8a50a74eaea69ab928b938b`
-- Created: `2025-05-15T06:41:20Z`
+- Image ID: `sha256:bd66ad4865e7ec267f6544424c4e79b1382b9514d7de149bfc19f1f5cc3d189a`
+- Created: `2025-05-26T03:35:16Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.0.2`
+  - `NODE_VERSION=24.1.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1471,20 +1471,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u12
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.dsc' glibc_2.31-13+deb11u12.dsc 8351 SHA256:951f398a425b3d63f52e9969300d7e8b2c05b2b8fd09ecae289bf542b5d9c881
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.debian.tar.xz' glibc_2.31-13+deb11u12.debian.tar.xz 968580 SHA256:0e0c05529ade55a0c6e2d4aae374b1a90a163ba45c4bcaef814aa6d1fe6f6854
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u12/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
