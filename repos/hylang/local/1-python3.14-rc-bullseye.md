@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:43a15fe3a36f268b601418ec12b037253bdb703b99711a78b9d0319c3da7d592`
+- Image ID: `sha256:40b9d97c61c9a6da0c1af63fc84301c03509899e018d74d324ad8df9346f32aa`
 - Created: `2025-05-09T15:36:44Z`
-- Virtual Size: ~ 133.76 Mb  
+- Virtual Size: ~ 150.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.0b1`
-  - `PYTHON_SHA256=2ddd30a77c9f62e065ce648664a254b9b0c011bcdaa8c1c2787087e644cbeb39`
+  - `PYTHON_VERSION=3.14.0b2`
+  - `PYTHON_SHA256=7ac9e84844bbc0a5a8f1f79a37a68b3b8caf2a58b4aa5999c49227cb36e70ea6`
   - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
@@ -669,9 +669,27 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u12`
-- `libc6:amd64=2.31-13+deb11u12`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/
+
+
+### `dpkg` source package: `glibc=2.31-13+deb11u13`
+
+Binary Packages:
+
+- `libc6:amd64=2.31-13+deb11u13`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -679,17 +697,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.31-13+deb11u12
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.dsc' glibc_2.31-13+deb11u12.dsc 8351 SHA256:951f398a425b3d63f52e9969300d7e8b2c05b2b8fd09ecae289bf542b5d9c881
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u13
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u13.dsc' glibc_2.31-13+deb11u13.dsc 8388 SHA256:c32a130c8e4fc140cd1f3376a972a4d058074b6f8e778813387b5446a26f4334
 'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u12.debian.tar.xz' glibc_2.31-13+deb11u12.debian.tar.xz 968580 SHA256:0e0c05529ade55a0c6e2d4aae374b1a90a163ba45c4bcaef814aa6d1fe6f6854
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u13.debian.tar.xz' glibc_2.31-13+deb11u13.debian.tar.xz 971240 SHA256:e0be307cc8dc1538e2664aae71f5e3d2e0d7c40ff547c997523c591228cc7eda
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.31-13+deb11u12/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-13+deb11u12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u13/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
@@ -1561,24 +1579,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u2`
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u3`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1w-0+deb11u2`
-- `openssl=1.1.1w-0+deb11u2`
+- `libssl1.1:amd64=1.1.1w-0+deb11u3`
+- `openssl=1.1.1w-0+deb11u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.dsc' openssl_1.1.1w-0+deb11u3.dsc 2655 SHA256:acb879dc5756d4c3fbb97cbe918737e261e353f4570a3cb3eb85c6c83b13fa47
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.debian.tar.xz' openssl_1.1.1w-0+deb11u3.debian.tar.xz 102344 SHA256:df775854ac0d33d6ef023910d5ee28138c30fa2a5e2c09203c4d0a48dc5f885d
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
