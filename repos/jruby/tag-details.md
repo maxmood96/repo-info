@@ -6,6 +6,10 @@
 -	[`jruby:10-jdk`](#jruby10-jdk)
 -	[`jruby:10-jdk21`](#jruby10-jdk21)
 -	[`jruby:10.0`](#jruby100)
+-	[`jruby:10.0-dev-jdk21`](#jruby100-dev-jdk21)
+-	[`jruby:10.0-dev-jdk24`](#jruby100-dev-jdk24)
+-	[`jruby:10.0-dev-jre21`](#jruby100-dev-jre21)
+-	[`jruby:10.0-dev-jre24`](#jruby100-dev-jre24)
 -	[`jruby:10.0-jdk`](#jruby100-jdk)
 -	[`jruby:10.0-jdk21`](#jruby100-jdk21)
 -	[`jruby:10.0-jdk24`](#jruby100-jdk24)
@@ -63,6 +67,14 @@
 -	[`jruby:9.3.15.0-jre21`](#jruby93150-jre21)
 -	[`jruby:9.3.15.0-jre8`](#jruby93150-jre8)
 -	[`jruby:9.4`](#jruby94)
+-	[`jruby:9.4-dev-jdk11`](#jruby94-dev-jdk11)
+-	[`jruby:9.4-dev-jdk17`](#jruby94-dev-jdk17)
+-	[`jruby:9.4-dev-jdk21`](#jruby94-dev-jdk21)
+-	[`jruby:9.4-dev-jdk8`](#jruby94-dev-jdk8)
+-	[`jruby:9.4-dev-jre11`](#jruby94-dev-jre11)
+-	[`jruby:9.4-dev-jre17`](#jruby94-dev-jre17)
+-	[`jruby:9.4-dev-jre21`](#jruby94-dev-jre21)
+-	[`jruby:9.4-dev-jre8`](#jruby94-dev-jre8)
 -	[`jruby:9.4-jdk`](#jruby94-jdk)
 -	[`jruby:9.4-jdk11`](#jruby94-jdk11)
 -	[`jruby:9.4-jdk17`](#jruby94-jdk17)
@@ -1244,6 +1256,22 @@ $ docker pull jruby@sha256:013bda660cf1dbfca70eb7b1f67b20c71f47646ced2cf7fe7b6a1
 		Last Modified: Wed, 07 May 2025 18:22:20 GMT  
 		Size: 21.5 KB (21526 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `jruby:10.0-dev-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-dev-jdk24`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-dev-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.0-dev-jre24`
+
+**does not exist** (yet?)
 
 ## `jruby:10.0-jdk`
 
@@ -17561,6 +17589,38 @@ $ docker pull jruby@sha256:fb485ab2845b204779694c9f278ef02f2503abf76bf286e8c005d
 		Last Modified: Wed, 07 May 2025 18:24:59 GMT  
 		Size: 21.1 KB (21105 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `jruby:9.4-dev-jdk11`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jdk17`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jdk8`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jre11`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jre17`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:9.4-dev-jre8`
+
+**does not exist** (yet?)
 
 ## `jruby:9.4-jdk`
 
