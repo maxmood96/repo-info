@@ -1,26 +1,27 @@
-# `aerospike:ee-8.0.0.7`
+# `aerospike:ce-8.0.0.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:248c76d5e226e95f33c6cbdefbd4a826feb3b7e46990daad7ed82c8fcad314de`
-- Created: `2025-04-25T21:09:11Z`
-- Virtual Size: ~ 222.56 Mb  
+- Image ID: `sha256:bcad6fd6089790611755538974e889a4f5bbb743b33522b4d3c9b0e97e7f05c7`
+- Created: `2025-05-27T23:31:17Z`
+- Virtual Size: ~ 219.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `AEROSPIKE_LINUX_BASE=ubuntu:24.04`
 - Labels:
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:24.04`
   - `org.opencontainers.image.description=Aerospike is a real-time database with predictable performance at petabyte scale with microsecond latency over billions of transactions.`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/aerospike`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.source=https://github.com/aerospike/aerospike-server.docker`
-  - `org.opencontainers.image.title=Aerospike Enterprise Server`
+  - `org.opencontainers.image.title=Aerospike Community Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=8.0.0.7`
+  - `org.opencontainers.image.version=8.0.0.8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -47,11 +48,11 @@ $ apt-get source -qq --print-uris acl=2.3.2-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.2-1build1.1.debian.tar.xz' acl_2.3.2-1build1.1.debian.tar.xz 23472 SHA512:02e1eadeccb773f30f67c40aaf9cef3401cd771870c7aa82e94bcfbdf3f885879abec23a79ad8103e559dcd02b5ab7b92633890040d2b4db1f984a2a4c4aa232
 ```
 
-### `dpkg` source package: `aerospike-server-enterprise=8.0.0.7-1`
+### `dpkg` source package: `aerospike-server-community=8.0.0.8-1`
 
 Binary Packages:
 
-- `aerospike-server-enterprise=8.0.0.7-1`
+- `aerospike-server-community=8.0.0.8-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -233,6 +234,26 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5.1build0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1build0.1.debian.tar.bz2' bzip2_1.0.8-5.1build0.1.debian.tar.bz2 26927 SHA512:ee39a01bcd6b31d70b3dfaa14bf7f943cb3711d073569cf9e35092062742077801ca287425c855a499114335748f2f791a7ff07eb502f2601a3d58f5041e7413
 ```
 
+### `dpkg` source package: `ca-certificates=20240203`
+
+Binary Packages:
+
+- `ca-certificates=20240203`
+
+Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `MPL-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ca-certificates=20240203
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203.dsc' ca-certificates_20240203.dsc 1766 SHA512:3cd6d9322800a3469be7dcea1136daa0f9311ae148b258bbf6689d5992f4dda82351fba34d52bc07c505bf407f3f4feb4e284ecfc2fec18bb1c23b1652b98986
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203.tar.xz' ca-certificates_20240203.tar.xz 263276 SHA512:e9d7b5283c2be9425d18eb4a9b54b1fa54db0b9d1bdb28f9c6db7f8b2e03fd93442ac973f9b024b7a148d71ac2789edbc1207c2048ce4be589eb1a5376640670
+```
+
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
 
 Binary Packages:
@@ -283,9 +304,10 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6
 
 Binary Packages:
 
+- `curl=8.5.0-2ubuntu10.6`
 - `libcurl4t64:amd64=8.5.0-2ubuntu10.6`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-3-clause`
@@ -825,15 +847,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.5.dsc' krb5_1.20.1-6ubuntu2.5.dsc 4080 SHA512:6a09f550faf0d561d386da3a795fdf18084b3039189f3055be2429d0f26e6d8ea1290ab6d8afcc68f2aaee66f679c9051e38acaf329c3335119fd9325f63f785
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.5.debian.tar.xz' krb5_1.20.1-6ubuntu2.5.debian.tar.xz 118440 SHA512:7bc293b3f50c13066bef1a2a085001fbea927eb23a1e58f579e4dea25af6decfb6cf138b2329dba695016721adda049f6e2883c848b98c69aef2c921c15a2f82
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -1454,6 +1470,7 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 Binary Packages:
 
 - `libssl3t64:amd64=3.0.13-0ubuntu3.5`
+- `openssl=3.0.13-0ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
