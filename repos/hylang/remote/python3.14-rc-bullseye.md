@@ -1,7 +1,7 @@
 ## `hylang:python3.14-rc-bullseye`
 
 ```console
-$ docker pull hylang@sha256:dfb1591714e28b589cbe864a1cac77cab1d6fd85f3d063194695d721c18e8ccf
+$ docker pull hylang@sha256:db0be34e4450f6034616f0f4eddc0baef3e07252f24bd132f6636519e2ee2511
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,39 +18,39 @@ $ docker pull hylang@sha256:dfb1591714e28b589cbe864a1cac77cab1d6fd85f3d063194695
 ### `hylang:python3.14-rc-bullseye` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:01609be201b98f347047a69e9da2236c80db7d4c0dc3e93fa83fecdabe9682ad
+$ docker pull hylang@sha256:b3db4fa65cf9459ff16eb5a1e97e1d66f63c1630c71faeabfde2c9a2ceba865c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.0 MB (56968440 bytes)**  
+-	Total Size: **57.0 MB (56968534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40b9d97c61c9a6da0c1af63fc84301c03509899e018d74d324ad8df9346f32aa`
+-	Image ID: `sha256:3eea29b1e1d89355f3ec5504b4f8392da017ed25b0f577b4255449e34633f24f`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Fri, 09 May 2025 15:36:44 GMT
+# Tue, 20 May 2025 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1747699200'
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_VERSION=3.14.0b2
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_SHA256=7ac9e84844bbc0a5a8f1f79a37a68b3b8caf2a58b4aa5999c49227cb36e70ea6
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 		arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 		case "$arch" in 			amd64|arm64) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 				;; 			i386) 				;; 			*) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 				;; 		esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 CMD ["python3"]
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HY_VERSION=1.1.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HYRULE_VERSION=1.0.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 CMD ["hy"]
 ```
 
@@ -71,71 +71,71 @@ CMD ["hy"]
 		Last Modified: Tue, 27 May 2025 19:13:21 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99184940e59f2190aafeed9a11b257d48a7b2604569c99a5601823858974fa0a`  
-		Last Modified: Tue, 27 May 2025 20:09:17 GMT  
-		Size: 5.8 MB (5839092 bytes)  
+	-	`sha256:8a86e319e8dd7246749e3de19e59295ed29f4638a0914108922f39df3d007e71`  
+		Last Modified: Fri, 30 May 2025 18:03:24 GMT  
+		Size: 5.8 MB (5839186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:python3.14-rc-bullseye` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:9c04f52cc0894cda2f17dbe6f8ffd635f9d8a1152f9e6f4272905d789ed66dca
+$ docker pull hylang@sha256:ed672c64c5210862e250f3fa82b4bd64196e89c6a883ae58a75a1dee656e6765
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2742230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f7bcf56f4b0b648bf567479023bdddd6652e2ad79fa690eb5d3a769bd1643b7`
+-	Image ID: `sha256:482eb59538d92552b2e3d79d89dff169909e888aef519bd96b0fb1d3f705271e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:082807a1df02cc1fc9c923e95980bee68c100bf0c61e180ace48098043651b5e`  
-		Last Modified: Tue, 27 May 2025 20:09:17 GMT  
+	-	`sha256:38c60e9fd7a1af8f77fdfac0512434e5857417f9b85a908a429f4ce33a296812`  
+		Last Modified: Fri, 30 May 2025 18:03:24 GMT  
 		Size: 2.7 MB (2734229 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d34ea946f7979afb423c0adbbaf12bdec4130d6de30a24b6d2d52f6b4ca2a820`  
-		Last Modified: Tue, 27 May 2025 20:09:16 GMT  
+	-	`sha256:f1afbb61c9a94426d62d32c4c59e72acc5147f52dc30994014594b88c564c172`  
+		Last Modified: Fri, 30 May 2025 18:03:24 GMT  
 		Size: 8.0 KB (8001 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:python3.14-rc-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull hylang@sha256:afdaff43e0ccbcc3cb4e67070a25de22390e3b1092379b0564d72c7708c1a5b5
+$ docker pull hylang@sha256:55242081f7699d1a437f2a9a7920e8f9876f519297c654e6afd098c86b76e40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **49.9 MB (49872581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1745e2f880d57ba5751973a051c08f9bb574f3a8709af31107e9f64be41f485`
+-	Image ID: `sha256:5bd9dd3e7b468dd3c2da956ab046b0323e0102d534c16067b89db779cc8b026c`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Fri, 09 May 2025 15:36:44 GMT
+# Tue, 20 May 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1747699200'
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_VERSION=3.14.0b2
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_SHA256=7ac9e84844bbc0a5a8f1f79a37a68b3b8caf2a58b4aa5999c49227cb36e70ea6
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 		arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 		case "$arch" in 			amd64|arm64) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 				;; 			i386) 				;; 			*) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 				;; 		esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 CMD ["python3"]
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HY_VERSION=1.1.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HYRULE_VERSION=1.0.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 CMD ["hy"]
 ```
 
@@ -164,63 +164,63 @@ CMD ["hy"]
 ### `hylang:python3.14-rc-bullseye` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:309c660cb35986b5a0bfd533e6770aa7dd973f562c3d8c2fc47f212b749986e7
+$ docker pull hylang@sha256:99ed7461057df5aa79b4fd7cb747a7c756a74634099bc11490639881de7a14da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2746147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c4d5a032628ce9e23bf1703eb9318d1d64b744a4d6c92ffea9a89d956983a29`
+-	Image ID: `sha256:bfc4d7f0b2d4e5128bf4328812f442bf91d8330af45073a7f2ba2bb7753649e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43f8dee17b8f7e70b7d69e7a11a9a770f6e3e20ecf4a14aaae0f957f6e1ed634`  
-		Last Modified: Tue, 27 May 2025 21:13:19 GMT  
+	-	`sha256:8102fc09d2df53c3701eba473f214916d05d5628ee310b051562ec686e407539`  
+		Last Modified: Fri, 30 May 2025 18:13:22 GMT  
 		Size: 2.7 MB (2738070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2ae0d7f43f30482f9ad94c1e191f66e71bd10a484ff67a2723f89e667e3c1393`  
-		Last Modified: Tue, 27 May 2025 21:13:19 GMT  
+	-	`sha256:052b31d8cb854a2e0634be3506f0bd850c77d779e1d639b94d7eebd3168c063a`  
+		Last Modified: Fri, 30 May 2025 18:13:22 GMT  
 		Size: 8.1 KB (8077 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:python3.14-rc-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:4e0153b433d87088df5caf193d428c1a07f84f88355d81b2e9f381e9607a756f
+$ docker pull hylang@sha256:158da0ad534cc352b97d8145b548b7a8eff57a5bd7472eb77dc155e054f4434a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **54.6 MB (54554811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d06c5ccfaa00828f71d2609384f2a3cae88949b4feb241c42a861da9faf10289`
+-	Image ID: `sha256:78f1f274b04f9e0c3e84ae76f0e695264995051b7484bf6bbf409aee5e0342c0`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Fri, 09 May 2025 15:36:44 GMT
+# Tue, 20 May 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1747699200'
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_VERSION=3.14.0b2
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_SHA256=7ac9e84844bbc0a5a8f1f79a37a68b3b8caf2a58b4aa5999c49227cb36e70ea6
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 		arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 		case "$arch" in 			amd64|arm64) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 				;; 			i386) 				;; 			*) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 				;; 		esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 CMD ["python3"]
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HY_VERSION=1.1.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HYRULE_VERSION=1.0.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 CMD ["hy"]
 ```
 
@@ -249,63 +249,63 @@ CMD ["hy"]
 ### `hylang:python3.14-rc-bullseye` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:44eb99affb090cb6bdabca8a8e1e94cb2420a55aed52139502863c29650f9219
+$ docker pull hylang@sha256:723c2dc3c329b55a09a2781f3d1ed37576cb8bbbf932e9cc04aafb60911bd8b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2742593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbeceec3829c02c225b0ca4f427fb27f714b77530d1e5089e2879e762134e0af`
+-	Image ID: `sha256:61166373481ccd470b74b18de8465ec579205aa58ff5fcd9d6573943e99df6b7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e3544cd7dc044261bd27753b26b1b76c985f75311707993042fa199e70b81fe`  
-		Last Modified: Tue, 27 May 2025 21:57:45 GMT  
+	-	`sha256:36d6a13a81624d64fe9f597693fcc37765ce6b7b6fdee29d6291ad52ca1a3823`  
+		Last Modified: Fri, 30 May 2025 18:12:13 GMT  
 		Size: 2.7 MB (2734488 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59ec15fb361643a98e336aeeaa047dce10cb801008f21fc649d3ed2730490eb4`  
-		Last Modified: Tue, 27 May 2025 21:57:44 GMT  
+	-	`sha256:f1adf7bed50ee5ced8dd31bc34e8a9c619043827067304d922421e3952790620`  
+		Last Modified: Fri, 30 May 2025 18:12:13 GMT  
 		Size: 8.1 KB (8105 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:python3.14-rc-bullseye` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:95b86e7d88794d246bebd5acf16440ec522c84f5242fbc9578052c0087cda6da
+$ docker pull hylang@sha256:7c784e490223aa37b37e448a580352cf0b2d37e8dbb35667eb5bf7f93ba925e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.7 MB (57653874 bytes)**  
+-	Total Size: **57.7 MB (57654044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96ac92cda8a74194ef0a5f9e98eeb2d19515da0dc40d2fe2ead6fba2abdcc318`
+-	Image ID: `sha256:4683bfeca71948e16a703b86e91cf2f6d61f4a8a053b7a36a20b094b80e74750`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Fri, 09 May 2025 15:36:44 GMT
+# Tue, 20 May 2025 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1747699200'
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_VERSION=3.14.0b2
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 ENV PYTHON_SHA256=7ac9e84844bbc0a5a8f1f79a37a68b3b8caf2a58b4aa5999c49227cb36e70ea6
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "$gnuArch" != 'riscv64-linux-musl' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 		arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 		case "$arch" in 			amd64|arm64) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 				;; 			i386) 				;; 			*) 				EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 				;; 		esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Mon, 26 May 2025 21:49:30 GMT
 CMD ["python3"]
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HY_VERSION=1.1.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 ENV HYRULE_VERSION=1.0.0
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Fri, 09 May 2025 15:36:44 GMT
+# Fri, 30 May 2025 17:45:59 GMT
 CMD ["hy"]
 ```
 
@@ -326,31 +326,31 @@ CMD ["hy"]
 		Last Modified: Tue, 27 May 2025 19:21:32 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4a3bff82498da43b686bd74953637629bd72c116b2e04ab4769fe5a1e640ef0`  
-		Last Modified: Tue, 27 May 2025 20:09:20 GMT  
-		Size: 5.8 MB (5839065 bytes)  
+	-	`sha256:d830633661a49f98a990b97f85f885ff77d06f04edd972a70d7050e92c6bbaba`  
+		Last Modified: Fri, 30 May 2025 18:03:33 GMT  
+		Size: 5.8 MB (5839235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:python3.14-rc-bullseye` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:115bb295cb661eaf4cd2a8699defd43fbd88df6992e2c6eb0bb8128f5b031b2b
+$ docker pull hylang@sha256:0a54f24a4b4b0cfc6fae08c99e8dba7a9e9f0e54cf20d80ebf915d9385c23900
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2739361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72f35f971f939864bcd98002d2c4a4fc9f21b16b579a5fd6f5aa08fd6bf5d865`
+-	Image ID: `sha256:6b129c28f13d9fec4166bc8b9c4c5bab50c73409ec62f704ca0cd7b7f7827ea8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b9497d16c947617f377facac67fcea7fd909da8819e1432d66dcff5ed985426a`  
-		Last Modified: Tue, 27 May 2025 20:09:20 GMT  
+	-	`sha256:0c3eda14b5b90d7fa52b14fae471fb6f350e249e68b1e18cd3fd556d7fb37e60`  
+		Last Modified: Fri, 30 May 2025 18:03:33 GMT  
 		Size: 2.7 MB (2731392 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21279310796129c19e5ca934ccb5550ac98e72ade1853bce9b2a16838a95ad54`  
-		Last Modified: Tue, 27 May 2025 20:09:19 GMT  
+	-	`sha256:b17046eef67a8375c09ee0d0ccbb8245ab9abb26261f7390899f652a2c583a5a`  
+		Last Modified: Fri, 30 May 2025 18:03:33 GMT  
 		Size: 8.0 KB (7969 bytes)  
 		MIME: application/vnd.in-toto+json
