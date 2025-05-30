@@ -220,14 +220,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1.1ubuntu1.dsc' bash_5.2.37-1.1ubuntu1.dsc 2408 SHA512:a8819417d76bac9cacd39183fc43890f8bf8595ea90837ca631db0e4d646e91d591f20d563ef94440eb2c2e3481aded570d3eccb8bf73c5e26e204d162aef646
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA512:c5380301114967378ace9ae4c510564cb7a827c221470aa532f2360a35000e7719ae081151f3d2ac86dff1d1465f64e60d9202fa6657d716ed6e449f77552158
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1.1ubuntu1.debian.tar.xz' bash_5.2.37-1.1ubuntu1.debian.tar.xz 95552 SHA512:6fbceebae4fc1b00d67849546682f2ccf4a31d52d2d25ef89799f27321c73600ee847deb7b7d379b60df699b1d9a6af55b9b6d309ba175895cc272ecaf2eb883
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build4`
 
@@ -1809,9 +1804,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.64.0-1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.dsc' nghttp2_1.64.0-1.1.dsc 2514 SHA512:210ea3d7805e79fdf45c1cca4f13133334008e083c0bdb57c735157f3dec37361e5d289ea02a45d8fbda1043330ad6756de4d244ada806c2d53e4bfb0f88933a
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1build1.dsc' nghttp2_1.64.0-1.1build1.dsc 2538 SHA512:1c2dafd71567ef061aef83645374621a06db8ef2785611a8ae35158901d101c2ff9764501af9e31b3fa25ca3a585ff1af553b903b1af04850995f1b60790f585
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA512:35f8230a0fa2825f0bc400d4852d8e8b484f659c67b00639ccd074a0029088f016e967db2f62b6b64af1f8ef684f5809a833e7f922e38b9405f7cc7756bcfb75
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.debian.tar.xz' nghttp2_1.64.0-1.1.debian.tar.xz 39356 SHA512:c3d5633ef15b6e724c082e1ce818914dcfc9b621697f60744358fbb5758e4eddd3743e8db60705a1c02fd2edba086009c421d9d43be884de9888c8e78e6449e9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1build1.debian.tar.xz' nghttp2_1.64.0-1.1build1.debian.tar.xz 39428 SHA512:76c5ae970719067d9be67c99494784fee3715cd0f33031c1c2b0e757c702bc3bfaba1becd58c7f176f4bfd8a0349aa06b15bc6ff59cbe83b79556d9994465c80
 ```
 
 ### `dpkg` source package: `npth=1.8-3`
@@ -2329,15 +2324,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-4.dsc' sqlite3_3.46.1-4.dsc 2632 SHA512:791e869fe1a5f536487d624f995adc42702608f4e31ffb74c00482974e8904cbd3ac97202be27dc6a39f3801a6566518e516d36343204e1cac9d1a5ae889f07e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-4.debian.tar.xz' sqlite3_3.46.1-4.debian.tar.xz 33360 SHA512:e352dac7c41fb30c8fe8f0c0196c078108874baec966b3ee94e124b1a2cac864a8e972d0a09d7bffdb9cea6a7ecf2164b52d8a37c383497a986b4f19f8808e7b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-4/
+
 
 ### `dpkg` source package: `subversion=1.14.5-3`
 

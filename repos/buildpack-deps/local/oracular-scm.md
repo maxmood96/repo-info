@@ -2440,15 +2440,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.24.10
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.10.dsc' tzdata_2025b-0ubuntu0.24.10.dsc 2704 SHA512:287de8c774bd704a7519f0e863782c6da5136aeb1203983a16fdf90157093b3ab3481e69ce1a0a8bcc895b71590609bffe0b5678df7ad93ccc0af845525442e8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.10.debian.tar.xz' tzdata_2025b-0ubuntu0.24.10.debian.tar.xz 188140 SHA512:1b1aa9cb7f8c94294567597fa31c18334842bbe990d8877581e901c3636610e77071dca08d62aa2163671ce901fde55367a7c1c3cfa531a95cdc5b27a9933aad
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 

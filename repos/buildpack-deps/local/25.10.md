@@ -342,14 +342,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1.1ubuntu1.dsc' bash_5.2.37-1.1ubuntu1.dsc 2408 SHA512:a8819417d76bac9cacd39183fc43890f8bf8595ea90837ca631db0e4d646e91d591f20d563ef94440eb2c2e3481aded570d3eccb8bf73c5e26e204d162aef646
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA512:c5380301114967378ace9ae4c510564cb7a827c221470aa532f2360a35000e7719ae081151f3d2ac86dff1d1465f64e60d9202fa6657d716ed6e449f77552158
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1.1ubuntu1.debian.tar.xz' bash_5.2.37-1.1ubuntu1.debian.tar.xz 95552 SHA512:6fbceebae4fc1b00d67849546682f2ccf4a31d52d2d25ef89799f27321c73600ee847deb7b7d379b60df699b1d9a6af55b9b6d309ba175895cc272ecaf2eb883
-```
 
 ### `dpkg` source package: `binutils=2.44-3ubuntu1`
 
@@ -2610,14 +2605,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.60.0+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.60.0%2bdfsg-1.dsc' librsvg_2.60.0+dfsg-1.dsc 3057 SHA512:4c22bdd90c9e7bf88eec2fa475c352ed452b2be7d2a6193edc646b2fab9d660c8b028354e87081bd4880f7b726319bdd2d4bba258c9cde862dcc67b1dc6ede41
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.60.0%2bdfsg.orig.tar.xz' librsvg_2.60.0+dfsg.orig.tar.xz 6735208 SHA512:7015dd4b5c1bc90eb24ec5939ef66d973fafb62a1fe6e2da8035b362e96aeb7bdbebdc5b13c9bf734a3d9bbda7ad58315e4806bfb3598a168aef6034b2f371d3
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.60.0%2bdfsg-1.debian.tar.xz' librsvg_2.60.0+dfsg-1.debian.tar.xz 10832756 SHA512:b3e71a7fcd6c521334fffe96c0e3c8e1ff2b85b704e3918105d5e57d4c0bcfaa35d611d8473c8a47a5a325d6ece83f9c4f16baa834450f754634b4c4847bfe8e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.60.0+dfsg-1/
+
 
 ### `dpkg` source package: `libseccomp=2.5.5-1ubuntu6`
 
@@ -3138,14 +3132,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.39-0exp1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu4.dsc' libxslt_1.1.39-0exp1ubuntu4.dsc 2275 SHA512:0d6f7fe11db24c6da597fcce30e78532c3f97270ea925c8bfbc9383779551b40f4a372579341e30b80715d6055dd34978b62b88e3eeca4585545b95b108350d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA512:c0c99dc63f8b2acb6cc3ad7ad684ffa2a427ee8d1740495cbf8a7c9b9c8679f96351b4b676c73ccc191014db4cb4ab42b9a0070f6295565f39dbc665c5c16f89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu4.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu4.debian.tar.xz 23540 SHA512:352d35032a8faddd972835df3ec12f262e341c5118110c51ef34a00c40dae45c74797293515e973854d81671ed9cbe76830ba0e5279655c5d06c70981ceeaac6
-```
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.2build1`
 
@@ -3427,14 +3416,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.2.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.2-1.dsc' mpfr4_4.2.2-1.dsc 1960 SHA512:a2d8114bad92bc6ee04fdff3b15eb7475e3dea26b15f7e4e913bdd21182a186aff7a20052c62e3557af59ea61d2afa37de537e83644cacf1416629c88e7c3773
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.2.orig.tar.xz' mpfr4_4.2.2.orig.tar.xz 1505596 SHA512:eb9e7f51b5385fb349cc4fba3a45ffdf0dd53be6dfc74932dc01258158a10514667960c530c47dd9dfc5aa18be2bd94859d80499844c5713710581e6ac6259a9
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.2-1.debian.tar.xz' mpfr4_4.2.2-1.debian.tar.xz 12564 SHA512:6ddc188fc2f06321771332c0c40ad2ae40e2486d4e5d4a526c744cdd595d83ea511c8728c68551b59de339b04895f4ba5eb26d84566429c19f3fffb3aca611f6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mpfr4/4.2.2-1/
+
 
 ### `dpkg` source package: `mysql-8.4=8.4.5-0ubuntu1`
 
@@ -3582,9 +3570,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.64.0-1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.dsc' nghttp2_1.64.0-1.1.dsc 2514 SHA512:210ea3d7805e79fdf45c1cca4f13133334008e083c0bdb57c735157f3dec37361e5d289ea02a45d8fbda1043330ad6756de4d244ada806c2d53e4bfb0f88933a
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1build1.dsc' nghttp2_1.64.0-1.1build1.dsc 2538 SHA512:1c2dafd71567ef061aef83645374621a06db8ef2785611a8ae35158901d101c2ff9764501af9e31b3fa25ca3a585ff1af553b903b1af04850995f1b60790f585
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA512:35f8230a0fa2825f0bc400d4852d8e8b484f659c67b00639ccd074a0029088f016e967db2f62b6b64af1f8ef684f5809a833e7f922e38b9405f7cc7756bcfb75
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1.debian.tar.xz' nghttp2_1.64.0-1.1.debian.tar.xz 39356 SHA512:c3d5633ef15b6e724c082e1ce818914dcfc9b621697f60744358fbb5758e4eddd3743e8db60705a1c02fd2edba086009c421d9d43be884de9888c8e78e6449e9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1build1.debian.tar.xz' nghttp2_1.64.0-1.1build1.debian.tar.xz 39428 SHA512:76c5ae970719067d9be67c99494784fee3715cd0f33031c1c2b0e757c702bc3bfaba1becd58c7f176f4bfd8a0349aa06b15bc6ff59cbe83b79556d9994465c80
 ```
 
 ### `dpkg` source package: `npth=1.8-3`
@@ -4037,9 +4025,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-17=17.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.5-1.dsc' postgresql-17_17.5-1.dsc 4245 SHA512:c820d35ca68dcfbb3bd25b6ff7c0f4128b79da24b11b74cc90ac39f51cf0e241dac626c95c352075f1a56a2634769efdff5120e03d164f7704972e1bf07247aa
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.5-1build1.dsc' postgresql-17_17.5-1build1.dsc 4269 SHA512:bc53637eeaaad879c3a3818203137626e7fe9ea00a3682b1810b15c04e31adbcf0f414a4d72b73e1fce7f17e76ac7a2d42ba9ff70ccfcf5d502236d6d4801c62
 'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.5.orig.tar.bz2' postgresql-17_17.5.orig.tar.bz2 21595174 SHA512:deae865e6c8e2ef5bb622288f790c5b83d22235496513e60351354970ff193eb885fb632c2d1321b8311c88c05b76a370d8d838473936c8438dbb569086b139f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.5-1.debian.tar.xz' postgresql-17_17.5-1.debian.tar.xz 27596 SHA512:aecbaa5ba2d009dd1e113f30bfa2533ccfb1c81c995685b97a0dfc784ca13856aba1662a204970722bad8f6f07fa214e87fab8313073144526e60e35eaa5b636
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-17/postgresql-17_17.5-1build1.debian.tar.xz' postgresql-17_17.5-1build1.debian.tar.xz 27680 SHA512:94d3f4e53f00f822e5bc890372db4df0ed7c47f873ba645c2a24908286102e688ffa2071b588529ec5d6faf9b679c358eecdcc862e1b9728fab1a53f28c43b19
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-7ubuntu1`
@@ -4342,14 +4330,9 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shared-mime-info=2.4-5build1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_2.4-5build1.dsc' shared-mime-info_2.4-5build1.dsc 2261 SHA512:4471e7e30dfec4a02e23043cfec958481aa0ece4176f812ca96664a325e8d3195aa5a3a6fcd45290e2d8ba7f71f8af9d2f8c508e556ed1300c3888f342851f4e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_2.4.orig.tar.bz2' shared-mime-info_2.4.orig.tar.bz2 7096347 SHA512:712f414e80919bf2a0f5083ced44c54a350948a526850466a6e9f35365dcfd97fad8bcdbb29945de2715a8f9b70a108e931c8500209a4d6e3dddf97af02771cb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_2.4-5build1.debian.tar.xz' shared-mime-info_2.4-5build1.debian.tar.xz 10868 SHA512:1689f23987c47554a14045f74a2d728a0d7a182d7982560c47820c0d5d9296669549a544d132a8873371210abee5a8f0f49845229c2cf8f11a9142ee9d8627e5
-```
 
 ### `dpkg` source package: `sqlite3=3.46.1-4`
 
@@ -4364,15 +4347,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-4.dsc' sqlite3_3.46.1-4.dsc 2632 SHA512:791e869fe1a5f536487d624f995adc42702608f4e31ffb74c00482974e8904cbd3ac97202be27dc6a39f3801a6566518e516d36343204e1cac9d1a5ae889f07e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-4.debian.tar.xz' sqlite3_3.46.1-4.debian.tar.xz 33360 SHA512:e352dac7c41fb30c8fe8f0c0196c078108874baec966b3ee94e124b1a2cac864a8e972d0a09d7bffdb9cea6a7ecf2164b52d8a37c383497a986b4f19f8808e7b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-4/
+
 
 ### `dpkg` source package: `subversion=1.14.5-3`
 
