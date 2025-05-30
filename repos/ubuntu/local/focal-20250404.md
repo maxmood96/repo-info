@@ -69,13 +69,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.10.dsc' apt_2.0.10.dsc 2839 SHA512:46d7630f08f46848b7372f1f0790ebb7c22b6122b80ca254978e774d98cacded26ee9a76ea9274f8c4e33e7eb93a0f92bfe3f0e916d750b17ce8c9ce76143d7b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.10.tar.xz' apt_2.0.10.tar.xz 2180704 SHA512:0bc0bdea92026faec3aa2d220db9edbe812fc000dc16a0c22fc508f3ddfceeb95011717dfa67f7efeb29b7f954975ed32c7c947587fd37aa651097bfe586fc63
-```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -436,14 +432,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.17
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.dsc' glibc_2.31-0ubuntu9.17.dsc 9597 SHA512:ea4d5a3f0dfdb53d297fd5ada22381a223c8b3600b69ad937d09f4018567dc1e2003c1d7dbcc8cca144c8141ced0f331a919df05f69b2261d8cea110843509a6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.debian.tar.xz' glibc_2.31-0ubuntu9.17.debian.tar.xz 891104 SHA512:089a843327e9c60730b5bc34a9b41c9b541da8d7e21b043238de82a0a02ef34cacfd6f654231df7ef7aa758d6018a446dd866e4817385588ff157b96afbafb29
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
