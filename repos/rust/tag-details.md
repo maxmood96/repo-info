@@ -6,6 +6,7 @@
 -	[`rust:1-alpine`](#rust1-alpine)
 -	[`rust:1-alpine3.20`](#rust1-alpine320)
 -	[`rust:1-alpine3.21`](#rust1-alpine321)
+-	[`rust:1-alpine3.22`](#rust1-alpine322)
 -	[`rust:1-bookworm`](#rust1-bookworm)
 -	[`rust:1-bullseye`](#rust1-bullseye)
 -	[`rust:1-slim`](#rust1-slim)
@@ -15,6 +16,7 @@
 -	[`rust:1.87-alpine`](#rust187-alpine)
 -	[`rust:1.87-alpine3.20`](#rust187-alpine320)
 -	[`rust:1.87-alpine3.21`](#rust187-alpine321)
+-	[`rust:1.87-alpine3.22`](#rust187-alpine322)
 -	[`rust:1.87-bookworm`](#rust187-bookworm)
 -	[`rust:1.87-bullseye`](#rust187-bullseye)
 -	[`rust:1.87-slim`](#rust187-slim)
@@ -24,6 +26,7 @@
 -	[`rust:1.87.0-alpine`](#rust1870-alpine)
 -	[`rust:1.87.0-alpine3.20`](#rust1870-alpine320)
 -	[`rust:1.87.0-alpine3.21`](#rust1870-alpine321)
+-	[`rust:1.87.0-alpine3.22`](#rust1870-alpine322)
 -	[`rust:1.87.0-bookworm`](#rust1870-bookworm)
 -	[`rust:1.87.0-bullseye`](#rust1870-bullseye)
 -	[`rust:1.87.0-slim`](#rust1870-slim)
@@ -32,6 +35,7 @@
 -	[`rust:alpine`](#rustalpine)
 -	[`rust:alpine3.20`](#rustalpine320)
 -	[`rust:alpine3.21`](#rustalpine321)
+-	[`rust:alpine3.22`](#rustalpine322)
 -	[`rust:bookworm`](#rustbookworm)
 -	[`rust:bullseye`](#rustbullseye)
 -	[`rust:latest`](#rustlatest)
@@ -938,6 +942,10 @@ $ docker pull rust@sha256:34672929840929fdaeda033ca2f79184da7ad0a5f4ca4c5afc3d17
 		Last Modified: Thu, 15 May 2025 21:51:55 GMT  
 		Size: 12.1 KB (12085 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `rust:1-alpine3.22`
+
+**does not exist** (yet?)
 
 ## `rust:1-bookworm`
 
@@ -3598,6 +3606,10 @@ $ docker pull rust@sha256:34672929840929fdaeda033ca2f79184da7ad0a5f4ca4c5afc3d17
 		Size: 12.1 KB (12085 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `rust:1.87-alpine3.22`
+
+**does not exist** (yet?)
+
 ## `rust:1.87-bookworm`
 
 ```console
@@ -6257,6 +6269,10 @@ $ docker pull rust@sha256:34672929840929fdaeda033ca2f79184da7ad0a5f4ca4c5afc3d17
 		Size: 12.1 KB (12085 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `rust:1.87.0-alpine3.22`
+
+**does not exist** (yet?)
+
 ## `rust:1.87.0-bookworm`
 
 ```console
@@ -8444,6 +8460,10 @@ $ docker pull rust@sha256:34672929840929fdaeda033ca2f79184da7ad0a5f4ca4c5afc3d17
 		Last Modified: Thu, 15 May 2025 21:51:55 GMT  
 		Size: 12.1 KB (12085 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `rust:alpine3.22`
+
+**does not exist** (yet?)
 
 ## `rust:bookworm`
 
