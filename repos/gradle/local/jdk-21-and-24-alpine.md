@@ -1,9 +1,9 @@
-# `gradle:8.14.0-jdk-lts-and-current-alpine`
+# `gradle:8.14.1-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f2c02bfb1803854a25402af2b0bdfeadf16773c28a5f0174de3d9f62e958700`
-- Created: `2025-04-26T01:26:29Z`
+- Image ID: `sha256:dda866fff208c7301f880c21eb19aef889c3afcc3be1ed7faeec5975f8dbce17`
+- Created: `2025-05-27T02:26:11Z`
 - Virtual Size: ~ 854.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_CURRENT_HOME=/opt/java/openjdk24`
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14`
+  - `GRADLE_VERSION=8.14.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -468,16 +468,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r4 description:
+git-lfs-3.6.0-r5 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r4 webpage:
+git-lfs-3.6.0-r5 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r4 installed size:
+git-lfs-3.6.0-r5 installed size:
 12 MiB
 
-git-lfs-3.6.0-r4 license:
+git-lfs-3.6.0-r5 license:
 MIT
 
 ```
@@ -1454,16 +1454,16 @@ GPL-2.0-or-later
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.10-r0 description:
+pyc-3.12.10-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.10-r0 webpage:
+pyc-3.12.10-r1 webpage:
 https://www.python.org/
 
-pyc-3.12.10-r0 installed size:
+pyc-3.12.10-r1 installed size:
 0 B
 
-pyc-3.12.10-r0 license:
+pyc-3.12.10-r1 license:
 PSF-2.0
 
 ```
@@ -1471,16 +1471,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.10-r0 description:
+python3-3.12.10-r1 description:
 High-level scripting language
 
-python3-3.12.10-r0 webpage:
+python3-3.12.10-r1 webpage:
 https://www.python.org/
 
-python3-3.12.10-r0 installed size:
+python3-3.12.10-r1 installed size:
 22 MiB
 
-python3-3.12.10-r0 license:
+python3-3.12.10-r1 license:
 PSF-2.0
 
 ```
@@ -1488,16 +1488,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.10-r0 description:
+python3-pyc-3.12.10-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.10-r0 webpage:
+python3-pyc-3.12.10-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.10-r0 installed size:
+python3-pyc-3.12.10-r1 installed size:
 0 B
 
-python3-pyc-3.12.10-r0 license:
+python3-pyc-3.12.10-r1 license:
 PSF-2.0
 
 ```
@@ -1505,16 +1505,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.10-r0 description:
+python3-pycache-pyc0-3.12.10-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.10-r0 webpage:
+python3-pycache-pyc0-3.12.10-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.10-r0 installed size:
+python3-pycache-pyc0-3.12.10-r1 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.10-r0 license:
+python3-pycache-pyc0-3.12.10-r1 license:
 PSF-2.0
 
 ```
