@@ -81,13 +81,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.13
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.13.dsc' apt_2.4.13.dsc 2801 SHA512:a3b478fc618f6d5cb69e7489543ce3ef89b9f604162adb9540a45f45845c31081647ba6c08fea7d1d125c30daa09d718f88493d850546aa0edb409e1840a79d1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.13.tar.xz' apt_2.4.13.tar.xz 2323800 SHA512:8b085133f1d4416698182374a6b5df2f5d1509500d6c6ebfd7b47c2288f176f0c332703af1a8de0b79ea5fceb2bbd2a0470bd86d584ea36927bc87f406c2d570
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
