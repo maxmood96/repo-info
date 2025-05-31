@@ -2278,7 +2278,12 @@ $ docker pull ruby@sha256:410c2a70fc233aa26e88587fa4f81123a4beec79fc6ea523870f9b
 
 ## `ruby:3-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3-bookworm`
 
@@ -7490,7 +7495,12 @@ $ docker pull ruby@sha256:658f4df28d4bad461f494b2463dbccc94d06fa68af7c0269dc6751
 
 ## `ruby:3.2-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.2-bookworm`
 
@@ -12702,7 +12712,12 @@ $ docker pull ruby@sha256:658f4df28d4bad461f494b2463dbccc94d06fa68af7c0269dc6751
 
 ## `ruby:3.2.8-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.2.8-bookworm`
 
@@ -17914,7 +17929,12 @@ $ docker pull ruby@sha256:2aa056ca2a7356501f0987d9a165a33ff3699712ad8a38bbc892fd
 
 ## `ruby:3.3-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3-bookworm`
 
@@ -23126,7 +23146,12 @@ $ docker pull ruby@sha256:2aa056ca2a7356501f0987d9a165a33ff3699712ad8a38bbc892fd
 
 ## `ruby:3.3.8-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.8-bookworm`
 
@@ -28338,7 +28363,12 @@ $ docker pull ruby@sha256:410c2a70fc233aa26e88587fa4f81123a4beec79fc6ea523870f9b
 
 ## `ruby:3.4-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.4-bookworm`
 
@@ -33550,7 +33580,12 @@ $ docker pull ruby@sha256:410c2a70fc233aa26e88587fa4f81123a4beec79fc6ea523870f9b
 
 ## `ruby:3.4.4-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.4.4-bookworm`
 
@@ -38762,7 +38797,12 @@ $ docker pull ruby@sha256:c3cd4cfe8f9fb8503fc13122bceedb778fb78e88fdef8334b7edb7
 
 ## `ruby:3.5-rc-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.5-rc-bookworm`
 
@@ -43974,7 +44014,12 @@ $ docker pull ruby@sha256:c3cd4cfe8f9fb8503fc13122bceedb778fb78e88fdef8334b7edb7
 
 ## `ruby:3.5.0-preview1-alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.5.0-preview1-bookworm`
 
@@ -48373,7 +48418,12 @@ $ docker pull ruby@sha256:410c2a70fc233aa26e88587fa4f81123a4beec79fc6ea523870f9b
 
 ## `ruby:alpine3.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:bookworm`
 
