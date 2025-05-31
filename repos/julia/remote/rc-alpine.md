@@ -1,7 +1,7 @@
 ## `julia:rc-alpine`
 
 ```console
-$ docker pull julia@sha256:16603705f0937b4b5b33a9f5772f12a16376ba986a83691cb5ad7b78fb300eb9
+$ docker pull julia@sha256:7419e034ef6c427bac610084fd10959047f87141104e3c68c45bce075e3f722a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,73 +12,73 @@ $ docker pull julia@sha256:16603705f0937b4b5b33a9f5772f12a16376ba986a83691cb5ad7
 ### `julia:rc-alpine` - linux; amd64
 
 ```console
-$ docker pull julia@sha256:9028d349d99ca3804c73c4f13f95b22e85a32a3a3ab5076c6c5e2015266b481e
+$ docker pull julia@sha256:cb673b5c33fe325e853fc218f745b9ae505c502b1687690c21dfe7732fc9d1c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.8 MB (300786775 bytes)**  
+-	Total Size: **300.9 MB (300941826 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe088d49d2a544b3619900daf05f58e0116f382e388e95161711103f6ec85152`
+-	Image ID: `sha256:777cb1b4888f28af554a694d796836ecb9b05d53e528a65faf717fada7820319`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Fri, 14 Feb 2025 03:28:36 GMT
-ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
-# Fri, 14 Feb 2025 03:28:36 GMT
+# Fri, 30 May 2025 16:20:41 GMT
+ADD alpine-minirootfs-3.22.0-x86_64.tar.gz / # buildkit
+# Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 ENV JULIA_VERSION=1.12.0-beta3
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			url='https://julialang-s3.julialang.org/bin/musl/x64/1.12/julia-1.12.0-beta3-musl-x86_64.tar.gz'; 			sha256='4db9ef34463798fdeaff91c7cf4b8880b3bd135e2e809aae934bab6f2cba8d33'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		wget -O julia.tar.gz.asc "$url.asc"; 	wget -O julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum -w -c -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apk del --no-network .fetch-deps; 		julia --version # buildkit
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 12 May 2025 23:59:27 GMT
+# Fri, 30 May 2025 20:54:43 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870`  
-		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
-		Size: 3.6 MB (3642247 bytes)  
+	-	`sha256:fe07684b16b82247c3539ed86a65ff37a76138ec25d380bd80c869a1a4c73236`  
+		Last Modified: Fri, 30 May 2025 18:04:24 GMT  
+		Size: 3.8 MB (3796846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b73e2e1365b614b904486ed24ed20a18b090d60b08be72a9a04dbee4d7c2b56`  
-		Last Modified: Tue, 13 May 2025 19:58:45 GMT  
-		Size: 297.1 MB (297144160 bytes)  
+	-	`sha256:5cec390d62fc8d7136c9a44b0ae7e6b02400017709cbb79d7a5b28bdecc0ce2e`  
+		Last Modified: Sat, 31 May 2025 00:05:16 GMT  
+		Size: 297.1 MB (297144613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ce921a4710db7b3d7da4249b5f2c1dbe0b42624d3f5f2397bdfdc79a8aa434e`  
-		Last Modified: Tue, 13 May 2025 19:58:39 GMT  
-		Size: 368.0 B  
+	-	`sha256:ad4b8da648fc7ed7886f3a8bf9b31d33191cc5458896531cc06c9d5a32211b88`  
+		Last Modified: Sat, 31 May 2025 00:04:54 GMT  
+		Size: 367.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:rc-alpine` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:a5ef32e6cd59ad5a50265ea34e617216dc89ba5618371c3bd7134d3954342a7f
+$ docker pull julia@sha256:e23b13a0a416bdb08680edbcc6c4bcd55ddcb7cbd5a9a924b50a5b4f9cf37e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.6 KB (92577 bytes)**  
+-	Total Size: **94.9 KB (94947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65b7f405303476d9a6b2f5b226b029c34392eec63ca2be369f3e7c59bd60a286`
+-	Image ID: `sha256:22bcacfba7fe8bb4f774035a903f7e30e24178d3f1b324a3b52a97b20481a494`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0bfe6acc6417fffb8e93579b9dd880a6a8ffb5d9fbb7c6609e7dbe6bc5981f0b`  
-		Last Modified: Tue, 13 May 2025 19:58:39 GMT  
-		Size: 79.3 KB (79304 bytes)  
+	-	`sha256:bc147e08452b624e729cd756cc489df04d90cf09a320756c80735c39dd8a20f3`  
+		Last Modified: Sat, 31 May 2025 00:04:54 GMT  
+		Size: 81.7 KB (81674 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:528d3490810e65ad51db9e4852ac3b9adf11db0d871ec74624d048514e7d61ba`  
-		Last Modified: Tue, 13 May 2025 19:58:39 GMT  
+	-	`sha256:447fd4160338180d58b241bd37a0fb0c20cda911964229eec5c7a0cdbb7ad227`  
+		Last Modified: Sat, 31 May 2025 00:04:54 GMT  
 		Size: 13.3 KB (13273 bytes)  
 		MIME: application/vnd.in-toto+json
