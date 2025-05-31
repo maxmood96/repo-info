@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3afc46c91512ccd90b9c285426103c2f523ed08b0dc5511165b902ae185886f3`
-- Created: `2024-10-28T16:40:55Z`
-- Virtual Size: ~ 343.54 Mb  
+- Image ID: `sha256:2a9a0017c1208e9c9a2ba664fdb98f01650d752c44e74ec2a5202942ef02ec46`
+- Created: `2025-05-28T13:09:59Z`
+- Virtual Size: ~ 344.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.7.6`
+  - `KAPACITOR_VERSION=1.7.7`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -71,13 +71,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.13
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.13.dsc' apt_2.4.13.dsc 2801 SHA512:a3b478fc618f6d5cb69e7489543ce3ef89b9f604162adb9540a45f45845c31081647ba6c08fea7d1d125c30daa09d718f88493d850546aa0edb409e1840a79d1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.13.tar.xz' apt_2.4.13.tar.xz 2323800 SHA512:8b085133f1d4416698182374a6b5df2f5d1509500d6c6ebfd7b47c2288f176f0c332703af1a8de0b79ea5fceb2bbd2a0470bd86d584ea36927bc87f406c2d570
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -751,11 +747,11 @@ $ apt-get source -qq --print-uris init-system-helpers=1.62
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.tar.xz' init-system-helpers_1.62.tar.xz 42144 SHA512:d90f12e642d086bd0d560ece87d119079c164b90ddbb77b2f804979540095b655715febbc2a5b0d50d7f94434d1ff7c0f4044d5d5411916fbca8300f3f88da7f
 ```
 
-### `dpkg` source package: `kapacitor=1.7.6-1`
+### `dpkg` source package: `kapacitor=1.7.7-1`
 
 Binary Packages:
 
-- `kapacitor=1.7.6-1`
+- `kapacitor=1.7.7-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -800,14 +796,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.6.dsc' krb5_1.19.2-2ubuntu0.6.dsc 3652 SHA512:6238f49faf19c51e7d2b6f3b1897f8d99e85037e501fbf535cbcda1ba04f2415408c2550d968853b4b86aa7a9bdf8c20e905c9dbf780659886bec7adf34918c0
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.6.debian.tar.xz' krb5_1.19.2-2ubuntu0.6.debian.tar.xz 120948 SHA512:8c33d002a641dc81447a58770aa6c01a497d7ccd637765287aeed2e967ddfa40707522385c1b4af2b1a81646a2a9c54f3f5a4b6f2ce833a94fab4c8e2ec8c2c7
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 
@@ -1866,15 +1857,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.dsc' tzdata_2025b-0ubuntu0.22.04.dsc 2533 SHA512:f99e9123221aafba07ef5f24da1774634832f754958be1da82012c77ea745c0325f5a61793592559b4ad231d404584cd424f2398d8d944927708e2ddcf23a048
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.debian.tar.xz 181336 SHA512:98380377069e120395235c692e988c561192c37a316174682a1d4f0d5ba7c77174a0d51b1c53c94965393fa812de4e6fef63790a60bb66cde65f47569ee01166
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
