@@ -653,19 +653,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.18
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.18.dsc' dpkg_1.22.18.dsc 3406 SHA256:570965593ff88a6be0ccc4bef8eff566922c6758f86989d376cb03702374d1d4
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.18.tar.xz' dpkg_1.22.18.tar.xz 5753376 SHA256:7135eb7960e38b2c77810d5aab8cabf5f690fed7475b7b0f2654fd91efbba0f6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.18/
 
-- https://sources.debian.net/src/dpkg/1.22.18/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.18/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.18/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-1`
 
@@ -2722,20 +2716,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.5-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5-2.dsc' systemd_257.5-2.dsc 8615 SHA256:8a55c14c78e4df7c5bb192bfd71b432e395c8204b0b1f6998628cfa857749e5d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5.orig.tar.gz' systemd_257.5.orig.tar.gz 16232112 SHA256:4d65f9482608cf9f7823df42a6d7796f0e0dfcfb94301df75effff86d40da33e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5-2.debian.tar.xz' systemd_257.5-2.debian.tar.xz 183412 SHA256:07156d76b551fa8afd58abfdf95044fe77ed638b3258680cc9059af6215952a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.5-2/
 
-- https://sources.debian.net/src/systemd/257.5-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
