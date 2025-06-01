@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:40b9d97c61c9a6da0c1af63fc84301c03509899e018d74d324ad8df9346f32aa`
-- Created: `2025-05-09T15:36:44Z`
+- Image ID: `sha256:3eea29b1e1d89355f3ec5504b4f8392da017ed25b0f577b4255449e34633f24f`
+- Created: `2025-05-30T17:45:59Z`
 - Virtual Size: ~ 150.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -959,21 +959,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u6.dsc' krb5_1.18.3-6+deb11u6.dsc 3814 SHA256:a9f51d05d8d5d9aa2263c86648ec9b10ccee6b191cb0b3fb9210e2fb1d356936
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u6.debian.tar.xz' krb5_1.18.3-6+deb11u6.debian.tar.xz 115792 SHA256:51892c39de59436b34b9fe36b1620d9c14e57f9eb473a1809f19693750b9ffd3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u6/
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
