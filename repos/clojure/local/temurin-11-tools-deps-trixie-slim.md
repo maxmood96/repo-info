@@ -2923,20 +2923,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.5-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5-2.dsc' systemd_257.5-2.dsc 8615 SHA256:8a55c14c78e4df7c5bb192bfd71b432e395c8204b0b1f6998628cfa857749e5d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5.orig.tar.gz' systemd_257.5.orig.tar.gz 16232112 SHA256:4d65f9482608cf9f7823df42a6d7796f0e0dfcfb94301df75effff86d40da33e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5-2.debian.tar.xz' systemd_257.5-2.debian.tar.xz 183412 SHA256:07156d76b551fa8afd58abfdf95044fe77ed638b3258680cc9059af6215952a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.5-2/
 
-- https://sources.debian.net/src/systemd/257.5-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
