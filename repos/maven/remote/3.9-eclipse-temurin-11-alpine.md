@@ -137,10 +137,10 @@ $ docker pull maven@sha256:28bbf89c661697abf93545a422d3483204c2b04d5c021c5ea3cbc
 
 -	Layers:
 	-	`sha256:a50b10eb0d68c7b39d4e44455db230da0f4304c49e8986627e132bc942ae0660`  
-		Last Modified: Tue, 03 Jun 2025 06:12:48 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:50:58 GMT  
 		Size: 1.1 MB (1133042 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7db7729a856d6cad3ebd88dccbcb71ad23c02046d2008e3058547aed98c3288d`  
-		Last Modified: Tue, 03 Jun 2025 06:12:48 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:50:58 GMT  
 		Size: 19.4 KB (19383 bytes)  
 		MIME: application/vnd.in-toto+json
