@@ -68,15 +68,15 @@ RUN swift --version # buildkit
 		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ae7f1e6cd27183b0b37532a3d52f37db1cfaf2039b3cd65892ebafdb0d51e74`  
-		Last Modified: Wed, 28 May 2025 18:31:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:30:33 GMT  
 		Size: 125.7 MB (125666525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:63f830e02e71deeb0476d0d46d6316f975a70c9e2283fbc72200e3941bfe2adb`  
-		Last Modified: Wed, 28 May 2025 18:31:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:31:16 GMT  
 		Size: 889.1 MB (889119366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8032318a706b963a6ed598116fbc7f80f0a51eb6b138e00bbed0fda6767a6c7`  
-		Last Modified: Wed, 28 May 2025 18:31:00 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:30:21 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
