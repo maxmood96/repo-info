@@ -162,14 +162,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-1.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1.1ubuntu1.dsc' bash_5.2.37-1.1ubuntu1.dsc 2408 SHA512:a8819417d76bac9cacd39183fc43890f8bf8595ea90837ca631db0e4d646e91d591f20d563ef94440eb2c2e3481aded570d3eccb8bf73c5e26e204d162aef646
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA512:c5380301114967378ace9ae4c510564cb7a827c221470aa532f2360a35000e7719ae081151f3d2ac86dff1d1465f64e60d9202fa6657d716ed6e449f77552158
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1.1ubuntu1.debian.tar.xz' bash_5.2.37-1.1ubuntu1.debian.tar.xz 95552 SHA512:6fbceebae4fc1b00d67849546682f2ccf4a31d52d2d25ef89799f27321c73600ee847deb7b7d379b60df699b1d9a6af55b9b6d309ba175895cc272ecaf2eb883
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
