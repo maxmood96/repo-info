@@ -106,11 +106,11 @@ $ docker pull python@sha256:23053a2e40ab9a50723adfc48dd430e3011fee77d7f90560ebfa
 
 -	Layers:
 	-	`sha256:5cca27cc1dedc2a94f413ad4a938665061ae8600184e71e5d3c1e7637616d152`  
-		Last Modified: Thu, 22 May 2025 01:30:46 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:18 GMT  
 		Size: 16.1 MB (16068325 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9ceeffe7582bd93a5efd7499f8f469228c1bb4f2e975b00067c0f2e3d73a4ee`  
-		Last Modified: Thu, 22 May 2025 01:30:45 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:10 GMT  
 		Size: 23.7 KB (23675 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -171,15 +171,15 @@ CMD ["python3"]
 		Size: 184.6 MB (184635154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5541da5c2a304d1a7ca819e953e658df2b9fe450715530bd78f1e0598c6fbefa`  
-		Last Modified: Thu, 22 May 2025 11:07:29 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:22 GMT  
 		Size: 5.9 MB (5872575 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42b9a3cddb86329d310e2a44ee14cd027b5f623dff7ac3aa13aa9a0e2e6bea07`  
-		Last Modified: Thu, 22 May 2025 11:27:02 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:27 GMT  
 		Size: 26.2 MB (26215728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18ff59553e35e6967cb1ce40928fecdf2c7f5ccecde93c082ca176a7bcd89bb6`  
-		Last Modified: Thu, 22 May 2025 11:27:01 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:21 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -199,11 +199,11 @@ $ docker pull python@sha256:8cb83e2b58470787c218d6913d987e8f21e5311121f354b8daaa
 
 -	Layers:
 	-	`sha256:2aca9653c2460222f447c0d2eef1e96ee3ed9cafadb29765b5a78f2ee23d5626`  
-		Last Modified: Thu, 22 May 2025 11:27:01 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:25 GMT  
 		Size: 15.9 MB (15865379 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2efa24a3a6fa544e0e9cd63dc3de265922724b407249872c2fdbefdf3680c54d`  
-		Last Modified: Thu, 22 May 2025 11:27:01 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:21 GMT  
 		Size: 23.8 KB (23809 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -292,11 +292,11 @@ $ docker pull python@sha256:ceecc8a007871f7817228b231b1fa928cd380d9803ee411a82f3
 
 -	Layers:
 	-	`sha256:f0331ae2425e320fabadca19dc80c98633bd0ee20dbf359e13261a58c78177be`  
-		Last Modified: Fri, 23 May 2025 00:43:44 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:30 GMT  
 		Size: 15.9 MB (15870899 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:021f2bfa7bab38b7a0f9150ae681d334b7653df663089be49efb6cebf05d5a6c`  
-		Last Modified: Fri, 23 May 2025 00:43:43 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:24:34 GMT  
 		Size: 23.8 KB (23809 bytes)  
 		MIME: application/vnd.in-toto+json
 
