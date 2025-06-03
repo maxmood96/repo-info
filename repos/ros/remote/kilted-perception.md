@@ -1,7 +1,7 @@
 ## `ros:kilted-perception`
 
 ```console
-$ docker pull ros@sha256:e03b31ffe755dbf3432ddd580a29c6cac8ca3c2a1f79136355a3085933758c88
+$ docker pull ros@sha256:ca1add8668b7f3619328affff18c72a6160cde1d85241c51436dae77e293f8eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull ros@sha256:e03b31ffe755dbf3432ddd580a29c6cac8ca3c2a1f79136355a3085
 ### `ros:kilted-perception` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:cfa513cd5bda79570f98caa5b2be2cf67715702d323a29e728aa27ef83dbf6f8
+$ docker pull ros@sha256:546aac0eeffa0943f6912c23af0efa62ad7b187a3d01ab71ab7b8a38faa60275
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1088999001 bytes)**  
+-	Total Size: **1.1 GB (1089277886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:343fcf51db30970016135d73864802f3cd4e8d0476f94ff695834f94d51151bc`
+-	Image ID: `sha256:d0b14c24431435142b8cf4610bb4d438cb9241e38ad7f954eec16d40b68dce6f`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -40,11 +40,9 @@ CMD ["/bin/bash"]
 # Fri, 23 May 2025 20:53:19 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 20:53:19 GMT
-RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 20:53:19 GMT
-RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-latest-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME" # buildkit
-# Fri, 23 May 2025 20:53:19 GMT
-RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-latest-archive-keyring.gpg ] http://packages.ros.org/ros2/ubuntu noble main" > /etc/apt/sources.list.d/ros2-latest.list # buildkit
+RUN curl -L -s -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.1.0/ros2-apt-source_1.1.0.noble_all.deb     && echo "35441f3092fd05773a3c397fab38661bec466584c7a1f1c05366579997cb5fe7 /tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 20:53:19 GMT
 ENV LANG=C.UTF-8
 # Fri, 23 May 2025 20:53:19 GMT
@@ -76,85 +74,81 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 29.7 MB (29715337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40688eb6ab717091b8ab853e446d63d8b599a40537433633e49421fc01e8ba47`  
-		Last Modified: Tue, 03 Jun 2025 13:38:53 GMT  
-		Size: 683.8 KB (683829 bytes)  
+	-	`sha256:cc922f2ce7df1733459b033fa462a421a0413670300a8b9c5c35ab7b81bc65eb`  
+		Last Modified: Tue, 03 Jun 2025 16:19:30 GMT  
+		Size: 683.8 KB (683816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:511cefe64e624a5297e6da7346ff47e3eeb63abae54ce95b69973dfa5472361b`  
-		Last Modified: Tue, 03 Jun 2025 13:38:53 GMT  
-		Size: 3.6 MB (3563712 bytes)  
+	-	`sha256:01414ea5181d9da01a2e35570eba4ae2e37593bd21d531dfdf78f234660a7b3c`  
+		Last Modified: Tue, 03 Jun 2025 16:19:32 GMT  
+		Size: 6.7 MB (6745536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaaf3966317ae1566784e8b9428d42d9648e8bb216743f683047325d99626124`  
-		Last Modified: Tue, 03 Jun 2025 13:38:53 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:38a09807d31167f2bd782983408d9ff7419d23b415ca575a3c7b3619165ad094`  
+		Last Modified: Tue, 03 Jun 2025 16:19:31 GMT  
+		Size: 94.0 KB (94039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f48ffbd9bb786430457fa415a40d5ee2774efe6b9ca8071aa074d6dbf3cc277`  
-		Last Modified: Tue, 03 Jun 2025 13:38:54 GMT  
-		Size: 272.0 B  
+	-	`sha256:1099b8cd8b60f4a5d2476fd99e6adc027584cdef11cf59f36cc9b81b31e0ebf4`  
+		Last Modified: Tue, 03 Jun 2025 17:07:48 GMT  
+		Size: 132.4 MB (132407147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b7767b77e49a35d6dcfa96835cae86b747e3f835e474d864c4c636a0ac0d6b3`  
-		Last Modified: Tue, 03 Jun 2025 13:39:09 GMT  
-		Size: 135.4 MB (135403352 bytes)  
+	-	`sha256:5402357658db93f168fcdf893f1c237364dea1ba24a8b5536a3c46e931231791`  
+		Last Modified: Tue, 03 Jun 2025 16:19:32 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14018904b0b743f343c924cd937830d4550971e84cabb257732dcf66431c2b47`  
-		Last Modified: Tue, 03 Jun 2025 13:38:54 GMT  
-		Size: 195.0 B  
+	-	`sha256:2760e6e89b71699480f8948db367864cbf4a35b90d807163f094494c524c2b1c`  
+		Last Modified: Tue, 03 Jun 2025 17:09:53 GMT  
+		Size: 110.2 MB (110182872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f47960427d73f74a7f2115f825f2bc60bac1967482a68a64b81b694b113700`  
-		Last Modified: Tue, 03 Jun 2025 13:39:05 GMT  
-		Size: 110.2 MB (110181823 bytes)  
+	-	`sha256:d87d239340021c39b9ae17dd1ad6e2bdfa92f900c692b22d4241368481334529`  
+		Last Modified: Tue, 03 Jun 2025 17:09:39 GMT  
+		Size: 343.7 KB (343730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abeabb39dae26373a956a0d2edd3f461326f490f89d8c8568d2da91adf2e1c85`  
-		Last Modified: Tue, 03 Jun 2025 13:38:56 GMT  
-		Size: 343.7 KB (343731 bytes)  
+	-	`sha256:dc049f401682dbbb9f894685070e5d9b0cba96536602e5b27d53355e49b7ff07`  
+		Last Modified: Tue, 03 Jun 2025 17:09:40 GMT  
+		Size: 2.5 KB (2482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27cba3aab14cc159b2f31dd309c04c3c462ab7d37a2240db4684db8880580ee8`  
-		Last Modified: Tue, 03 Jun 2025 13:38:57 GMT  
-		Size: 2.5 KB (2479 bytes)  
+	-	`sha256:1d5aa038c7c32f417f8539341ca0488c6b029047e95884c31aca6a67db8edf6d`  
+		Last Modified: Tue, 03 Jun 2025 17:09:44 GMT  
+		Size: 28.0 MB (28035155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb24e494585517847245f7bee3feb2de70d2259ffda504ac3a21109e07b5752f`  
-		Last Modified: Tue, 03 Jun 2025 13:39:02 GMT  
-		Size: 28.0 MB (28034338 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56e0ac6f682c12a6d58c3417869d5811ff453068d95ed48e199d7a93f3797ffe`  
-		Last Modified: Tue, 03 Jun 2025 13:44:17 GMT  
-		Size: 781.1 MB (781067400 bytes)  
+	-	`sha256:910602e69e66a1c59ee2737ab00fa9a113e8789504b8e425892e10fc3b6a2da8`  
+		Last Modified: Tue, 03 Jun 2025 17:54:49 GMT  
+		Size: 781.1 MB (781067576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:kilted-perception` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:b45fe31f6ebc173d9c3f767cbfaf1988aa1d0bfc114c797c54686c2614314e0a
+$ docker pull ros@sha256:75e51cf47b3016df9606305344bdbba224b85c7b1f545e0575838a95f8750d82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.0 MB (59961506 bytes)**  
+-	Total Size: **60.0 MB (59970890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5189cc41bb007cfde33a207d0c6bb790ed3bed791f43096177f496a969827904`
+-	Image ID: `sha256:b23a0780f6d3694eee9317b88ce129337339ef6a3549a513b72cc0bfb6eb08f2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2ec92ce9597290f9ec70d89bd70eb58e2780b59d414a9ee9cf24bc45d44deaf3`  
-		Last Modified: Tue, 03 Jun 2025 16:17:43 GMT  
-		Size: 60.0 MB (59951805 bytes)  
+	-	`sha256:a414c569b6fccc39562dfb526c99ce7f2db815233fd7e9ce5d814f5e4182f37c`  
+		Last Modified: Tue, 03 Jun 2025 19:18:31 GMT  
+		Size: 60.0 MB (59961495 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0ae63a0594bc5ff111b7790a57d64128280605f0dd845adbdf5e796ae48bc92e`  
-		Last Modified: Tue, 03 Jun 2025 16:17:45 GMT  
-		Size: 9.7 KB (9701 bytes)  
+	-	`sha256:c40fe2cbcfe864c58bba5a3665b351fea005b02bb97d51164b7d83b9c64970ca`  
+		Last Modified: Tue, 03 Jun 2025 19:18:33 GMT  
+		Size: 9.4 KB (9395 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:kilted-perception` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:a4385f04defed3d0c33a4a762601e6b28bfa5a6c440e9c1cff62c45db68efce1
+$ docker pull ros@sha256:3c354eddd9d7ec8ab36f34a4477d0561ad2d833775e4fbfa7f208fc6edf5d3b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **987.6 MB (987578518 bytes)**  
+-	Total Size: **987.8 MB (987847888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2ed32c3b7a9e04c28eacc711f415f6497b2a6514f0e255212d634a84255f08a`
+-	Image ID: `sha256:86cfacd10f18fc3e9996f657e50e2ad5cda49f495527733cb3ae4012d6e9dc3f`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -174,11 +168,9 @@ CMD ["/bin/bash"]
 # Fri, 23 May 2025 20:53:19 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 20:53:19 GMT
-RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 20:53:19 GMT
-RUN set -eux;        key='C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-latest-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME" # buildkit
-# Fri, 23 May 2025 20:53:19 GMT
-RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-latest-archive-keyring.gpg ] http://packages.ros.org/ros2/ubuntu noble main" > /etc/apt/sources.list.d/ros2-latest.list # buildkit
+RUN curl -L -s -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.1.0/ros2-apt-source_1.1.0.noble_all.deb     && echo "35441f3092fd05773a3c397fab38661bec466584c7a1f1c05366579997cb5fe7 /tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 20:53:19 GMT
 ENV LANG=C.UTF-8
 # Fri, 23 May 2025 20:53:19 GMT
@@ -214,67 +206,63 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Last Modified: Tue, 03 Jun 2025 13:30:16 GMT  
 		Size: 684.0 KB (683990 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3182864e52220424abbc2ed14f34194efd7a8651cbd58c9013d59badb6ce10bb`  
-		Last Modified: Tue, 03 Jun 2025 13:30:31 GMT  
-		Size: 3.6 MB (3562006 bytes)  
+	-	`sha256:50ab34cb0b6b6e950f1d468b84aa6c011ff2c12764c125ea77d46032ffa46e1a`  
+		Last Modified: Tue, 03 Jun 2025 16:21:49 GMT  
+		Size: 6.8 MB (6759025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b30261ce10ab5a3b7dce5ba78a1a951d5652cbf529e166b904f1bd8067ae7ab`  
-		Last Modified: Tue, 03 Jun 2025 13:30:21 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:370382b92e73d710705f3a0ce8123b24b72c27c4fa225dda1a02672c744e317c`  
+		Last Modified: Tue, 03 Jun 2025 16:21:47 GMT  
+		Size: 94.2 KB (94228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac3ede17908e49502f7fe6ff9399c21b4349b35f3533c331faba1f2970ddeecb`  
-		Last Modified: Tue, 03 Jun 2025 13:30:22 GMT  
-		Size: 274.0 B  
+	-	`sha256:9dfc24d4fa426deae9efc62cbc01e2c3bb6b1c57bb5d84b579c4f9c66cbe7134`  
+		Last Modified: Tue, 03 Jun 2025 18:04:08 GMT  
+		Size: 127.1 MB (127103875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a602d5eadde99cf0e2a1b5eef954a00e68ffd7b77f3bcf764f02502d2372066`  
-		Last Modified: Tue, 03 Jun 2025 15:06:51 GMT  
-		Size: 130.1 MB (130123372 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7f9c9b9568b2d87f3a5ab293e2d4c9fbd71f4dffd99e52cf90997e9ca36cfb9`  
-		Last Modified: Tue, 03 Jun 2025 15:06:41 GMT  
+	-	`sha256:d5cbbfd9589f7267a767b8f6ae79bf51b4c883e0a07f96139115cc4f1275110f`  
+		Last Modified: Tue, 03 Jun 2025 16:23:19 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38264588243ea616dd51108f28fd01bacfa4f4f8b8d0d9992b894f06c9b8d061`  
-		Last Modified: Tue, 03 Jun 2025 15:06:54 GMT  
-		Size: 105.6 MB (105596151 bytes)  
+	-	`sha256:b07caf8524de34d67d57f2d53ff16540c50ffd4a8515c4f8fb920b3a8467d9a0`  
+		Last Modified: Tue, 03 Jun 2025 17:13:37 GMT  
+		Size: 105.6 MB (105596816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0a0fbc9639f4dbacf141772ad7cafb19369199dc6d355d3016f948f88930887`  
-		Last Modified: Tue, 03 Jun 2025 15:06:39 GMT  
-		Size: 343.7 KB (343729 bytes)  
+	-	`sha256:3310082fb526791a2fd6dd8b7db9d9d2d4bedf73089c00d1c00a145b3cabd7fc`  
+		Last Modified: Tue, 03 Jun 2025 17:13:30 GMT  
+		Size: 343.7 KB (343730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d9a0142be225e7c3542eb77091174803f76691d1a8a374134833906b0e0a8b`  
-		Last Modified: Tue, 03 Jun 2025 15:06:38 GMT  
-		Size: 2.5 KB (2452 bytes)  
+	-	`sha256:017b43e885b2baa4a904b1d45c018b239b5e48ea556a2a972f4828509e59adb5`  
+		Last Modified: Tue, 03 Jun 2025 17:13:29 GMT  
+		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:184b86d5bdb88222257b484aa3a865a7ba6be1a4695a478f248efb25416f8031`  
-		Last Modified: Tue, 03 Jun 2025 15:06:44 GMT  
-		Size: 27.1 MB (27127919 bytes)  
+	-	`sha256:b0c526d3858a93fb6548b4e772344dacc787c3418de5ec76d7be75e226cb7783`  
+		Last Modified: Tue, 03 Jun 2025 17:13:32 GMT  
+		Size: 27.1 MB (27128379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bdd7f0401b5985fe84b8971d36c0f0166bc40a7520999e1732d27a04e8106ae`  
-		Last Modified: Tue, 03 Jun 2025 13:44:44 GMT  
-		Size: 691.3 MB (691283997 bytes)  
+	-	`sha256:f89f2bcdbfcaa52d114143ced1cfe5056df821a0ecd09b105c9828d99e5d2ce8`  
+		Last Modified: Tue, 03 Jun 2025 19:21:00 GMT  
+		Size: 691.3 MB (691283291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:kilted-perception` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:7b61f738c58f8060037be8fdd0a3004d740ae13ff1dc2d19f8925d583e9bd175
+$ docker pull ros@sha256:454ac3b487aa611233064c701fb45f09e9dedfb901c5137d8cf559ad838f263a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.9 MB (59913251 bytes)**  
+-	Total Size: **59.9 MB (59922635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b17a12bbc0c7737b47b1da46b1eb1b0ce323c41df60193e190d73f4c2719fa8c`
+-	Image ID: `sha256:5724da4991e8d76e8566bbc9e4487bcfe4ef768ea4b8791373e2d950562b735a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:322eb5fb763a30ad15c90950cafc79bef7380711f768120979cb2f183fb8fe2b`  
-		Last Modified: Tue, 03 Jun 2025 16:19:19 GMT  
-		Size: 59.9 MB (59903470 bytes)  
+	-	`sha256:e534fc4de8bbb3018d38148f8d77f8871e56d94decd08af90f16170c443541d5`  
+		Last Modified: Tue, 03 Jun 2025 19:20:00 GMT  
+		Size: 59.9 MB (59913160 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:495f31683edae34ea9063b0b0e3108b840379bb28977cd3b06b9169b56a4ab1e`  
-		Last Modified: Tue, 03 Jun 2025 16:19:21 GMT  
-		Size: 9.8 KB (9781 bytes)  
+	-	`sha256:a75af4b2c0c88922b34ef647d1824949542ef9782eda38647dba5297011e6110`  
+		Last Modified: Tue, 03 Jun 2025 19:20:02 GMT  
+		Size: 9.5 KB (9475 bytes)  
 		MIME: application/vnd.in-toto+json
