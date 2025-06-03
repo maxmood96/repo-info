@@ -71,43 +71,43 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 
 -	Layers:
 	-	`sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62`  
-		Last Modified: Wed, 21 May 2025 22:27:39 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:15 GMT  
 		Size: 28.2 MB (28225330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79f36ae94f40a7aa5fd6bca9f3c08cf4719e80d591037c7a4b94d1539744a8fb`  
-		Last Modified: Wed, 21 May 2025 23:21:49 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:37 GMT  
 		Size: 9.8 MB (9791034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fe37dd6f8888efc5da91f2f29534eed01e10e2cb86c784254b43db36562dc8c`  
-		Last Modified: Wed, 21 May 2025 23:21:49 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:39 GMT  
 		Size: 5.8 MB (5820938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de6efd9c01e056a7294fa312b86336fe6f439b89bc5129eee70623703ccf7aa8`  
-		Last Modified: Wed, 21 May 2025 23:21:49 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:37 GMT  
 		Size: 3.2 KB (3224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30a8e265719c2793ca28cadc5376391c897c89f6726e101bad2a7c247f364ffb`  
-		Last Modified: Wed, 21 May 2025 23:21:49 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:40 GMT  
 		Size: 1.0 MB (1006367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:394da5cd13ce2b03effce819aa590edf6649db4afc44de6c21df01bddf11bf94`  
-		Last Modified: Wed, 21 May 2025 23:21:51 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:56 GMT  
 		Size: 100.2 MB (100242960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9d10ee91c71ce63c26fa20756e8e9073885a91e3759cfebceae9a440a7f4706`  
-		Last Modified: Wed, 21 May 2025 23:21:50 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:33:07 GMT  
 		Size: 23.5 MB (23546404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d829ed22f9224c3579e98603469332a0cc2aaa54e20430745ff2ac440dc1fc8`  
-		Last Modified: Wed, 21 May 2025 23:21:50 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:42 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ead9edcf8ee593eeb009b7e83c7049aa141da36206ea7a4e016b9f9c17244e6b`  
-		Last Modified: Wed, 21 May 2025 23:21:50 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:44 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc84b868a5d32847815f5cede5ad639bd1f4a8e9468c81ac4d8e8d82e610f3d1`  
-		Last Modified: Wed, 21 May 2025 23:21:51 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:46 GMT  
 		Size: 6.3 KB (6283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -195,43 +195,43 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 
 -	Layers:
 	-	`sha256:b16f1b16678093d11ecfece1004207a40f9bc1b7d9d1d16a070c1db552038818`  
-		Last Modified: Wed, 21 May 2025 22:27:55 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 28.1 MB (28065280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:87fb2485b7c4399692ff0f858e85a493f7520a8d7a7c0fea3fdb10af035ca4db`  
-		Last Modified: Thu, 22 May 2025 03:11:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:48 GMT  
 		Size: 9.6 MB (9588655 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a652ae87fbc6c53da5a0254038a21966076bf080aca8e2d28ba72b5d420d5f9`  
-		Last Modified: Thu, 22 May 2025 03:11:15 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:50 GMT  
 		Size: 5.5 MB (5463794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f002cc60651d1b940830c2474392559655131840a6ee05d3fa3ad46043e8d717`  
-		Last Modified: Thu, 22 May 2025 03:11:15 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:49 GMT  
 		Size: 3.2 KB (3227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b2659eb1f1bde104f3c076174116ef9f4048e77b37a35cb0084f845af628f08`  
-		Last Modified: Thu, 22 May 2025 03:11:15 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:50 GMT  
 		Size: 936.1 KB (936108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:110b9d474b0a3bc25d10ea3255f2a23ffce66575ff780d6882a1a7123a73c313`  
-		Last Modified: Thu, 22 May 2025 03:11:20 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:33:06 GMT  
 		Size: 96.0 MB (96038373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dfd6afc77b240651bd89398eb9b69f97346e697cc5cb0b9f4ff0edbed4f17fca`  
-		Last Modified: Thu, 22 May 2025 03:11:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:53 GMT  
 		Size: 22.2 MB (22197938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3aac4036678859e629ddc5174b7ee3f6f51cd04b7985d07ac05b27028ed0816`  
-		Last Modified: Thu, 22 May 2025 03:11:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:51 GMT  
 		Size: 208.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cc68c4f14fa754f1b66375f3dcd348c039bdb940b5430a4b9c3eaab2018d16c`  
-		Last Modified: Thu, 22 May 2025 03:11:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:52 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b940c0915463d99c5f92547a5c658ec36fe7e548d303c2319b315bb21e85d671`  
-		Last Modified: Thu, 22 May 2025 03:11:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:53 GMT  
 		Size: 6.3 KB (6285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
