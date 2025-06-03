@@ -131,11 +131,11 @@ $ docker pull ros@sha256:261a2d39729d32e8b987fb3094c7b6ab3bd6a46f34f4558c21546ad
 
 -	Layers:
 	-	`sha256:aecc145e6f9f2b7644fcea82b10b6136d467a4fa390b4f7f53bdbb796e2ac2ae`  
-		Last Modified: Tue, 03 Jun 2025 10:10:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 16:22:49 GMT  
 		Size: 23.9 MB (23919990 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:954bad2c0aa876fef2d7c6ba11ea7a47b0ed601864f1e97b3f1e776f949edfb4`  
-		Last Modified: Tue, 03 Jun 2025 10:10:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 16:22:50 GMT  
 		Size: 17.2 KB (17173 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -259,10 +259,10 @@ $ docker pull ros@sha256:493d435c02a0caf2dedf6b54cdc168604027057ec4dae0270750ae5
 
 -	Layers:
 	-	`sha256:b21a7701c9bab0c6032fa0a14f10785e9d5d67e754a5695e3675922fa982d71e`  
-		Last Modified: Tue, 03 Jun 2025 12:27:43 GMT  
+		Last Modified: Tue, 03 Jun 2025 16:22:51 GMT  
 		Size: 23.9 MB (23942244 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:780925582b64d792eb1613df51e1564ce5df0be4d8524dd1a9733150be92dce8`  
-		Last Modified: Tue, 03 Jun 2025 12:27:42 GMT  
+		Last Modified: Tue, 03 Jun 2025 16:22:52 GMT  
 		Size: 17.3 KB (17310 bytes)  
 		MIME: application/vnd.in-toto+json
