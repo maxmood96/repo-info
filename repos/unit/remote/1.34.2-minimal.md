@@ -59,19 +59,19 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 
 -	Layers:
 	-	`sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62`  
-		Last Modified: Wed, 21 May 2025 22:27:39 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:15 GMT  
 		Size: 28.2 MB (28225330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f92072fe7c9a728619f201bcbc6daaebc9b0aa0aee2b159dfb141892a5d604a4`  
-		Last Modified: Wed, 21 May 2025 23:34:13 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:17:51 GMT  
 		Size: 26.7 MB (26707660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d24f185f3aca467a111789e3a7e33ac0a377a2d5187a289f4b35f7e94e72ac9`  
-		Last Modified: Wed, 21 May 2025 23:34:13 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:17:48 GMT  
 		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6b34c3126a7204b38cd2203e60a4c46e70209422c94f6a720fd332c2e555c6d`  
-		Last Modified: Wed, 21 May 2025 23:34:13 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:17:49 GMT  
 		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -143,7 +143,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 
 -	Layers:
 	-	`sha256:b16f1b16678093d11ecfece1004207a40f9bc1b7d9d1d16a070c1db552038818`  
-		Last Modified: Wed, 21 May 2025 22:27:55 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 28.1 MB (28065280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45cc1aaf10830a07f9382cfb1387f1f3f0e74492cff0d1847e0ef0b3676e1185`  

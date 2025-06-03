@@ -87,31 +87,31 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 
 -	Layers:
 	-	`sha256:3e6b9d1a95114e19f12262a4e8a59ad1d1a10ca7b82108adcf0605a200294964`  
-		Last Modified: Wed, 21 May 2025 22:27:42 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:19 GMT  
 		Size: 48.5 MB (48488245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37927ed901b1b2608b72796c6881bf645480268eca4ac9a37b9219e050bb4d84`  
-		Last Modified: Wed, 21 May 2025 23:20:21 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:14 GMT  
 		Size: 24.0 MB (24015635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79b2f47ad4443652b9b5cc81a95ede249fd976310efdbee159f29638783778c0`  
-		Last Modified: Wed, 21 May 2025 23:37:25 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:20 GMT  
 		Size: 64.4 MB (64399858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e23f099911d692f62b851cf49a1e93294288a115f5cd2d014180e4d3684d34ab`  
-		Last Modified: Thu, 22 May 2025 00:12:38 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:31:13 GMT  
 		Size: 211.4 MB (211362119 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fcfb5cbafee67567f1c68772788fb12ab6b42a6bd79010b263bf6c281b95f13e`  
-		Last Modified: Thu, 22 May 2025 01:25:06 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:48 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52aaeed6c7db6014be6c3a8efc39b7a112a73f46ef6e2cc9cf6a245668c0b628`  
-		Last Modified: Thu, 22 May 2025 01:25:07 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:53 GMT  
 		Size: 35.7 MB (35743513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d50adfb827fa3f88a68eb503019ef724402779c5db0a2a044320bf3e050ae5e`  
-		Last Modified: Thu, 22 May 2025 01:25:06 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:49 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee47a4cc9819ebe76668150181b4f9b4ced90913f97a71f28f6dbecada158026`  
@@ -223,31 +223,31 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 
 -	Layers:
 	-	`sha256:1a12b4ea7c0ce04aa0e98be0a8c9942162bac71426f734fe6d3bf988bc9e2627`  
-		Last Modified: Wed, 21 May 2025 22:27:39 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:16 GMT  
 		Size: 48.3 MB (48327181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:280bbe393e788ced1dcb033580604b24de083601624337be66b3ec31781dae40`  
-		Last Modified: Thu, 22 May 2025 02:47:26 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 23.6 MB (23551398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f4f297e4f699ae0f384d5cc1ea42065f58a115aa0a634d427cbb186f91cb4d0`  
-		Last Modified: Thu, 22 May 2025 09:17:58 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 64.4 MB (64361989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b58ee5cb7152015437e4a9b3066ae9e25a26a3bef6617d0b7f25368511c2d954`  
-		Last Modified: Thu, 22 May 2025 12:26:26 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:35 GMT  
 		Size: 202.8 MB (202762554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:068f48871ce1606ccda1f9f81ceaa701c52188bc411af9397fb88e457f26dcfe`  
-		Last Modified: Thu, 22 May 2025 19:37:47 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:32:26 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fae82b5dec327c7b05abe9d4d7b963349d6dccceb2e8d2216b0f2a1d4da19b74`  
-		Last Modified: Thu, 22 May 2025 19:53:38 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:39:10 GMT  
 		Size: 35.7 MB (35675393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f47a3e90bf57f20a5a3913f0f3b0f92a19373c1760c6d1ac4fc7aae3ea1fad8`  
-		Last Modified: Thu, 22 May 2025 19:53:37 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:39:09 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77e5e6e656135ee83116d5b6f566c65991bcfc0f90fd15dbef2ac23b6ca81671`  
