@@ -300,7 +300,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'testing' '@1747699200'
 
 -	Layers:
 	-	`sha256:e19710de38784c32f237190e910a593950160509d3d0e2eb14d877e17902e64a`  
-		Last Modified: Wed, 21 May 2025 22:34:51 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:19:26 GMT  
 		Size: 28.2 MB (28245348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -363,6 +363,6 @@ $ docker pull debian@sha256:bb25a1a076817c9521d975bd57c7668800d32ba165ddbac52a70
 
 -	Layers:
 	-	`sha256:02022b0435b3796ad470008b6e81651b0fd88cce87fd06f4328a6403e89d0ed8`  
-		Last Modified: Wed, 21 May 2025 22:31:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:18:52 GMT  
 		Size: 1.9 MB (1897682 bytes)  
 		MIME: application/vnd.in-toto+json
