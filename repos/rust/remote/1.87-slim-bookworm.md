@@ -68,11 +68,11 @@ $ docker pull rust@sha256:efe02561cb166afdf2b5ceff7aa87559a0d4305e49b91aaf2b14ec
 
 -	Layers:
 	-	`sha256:8b0b25427736858183a7036091af78fd2db2d997da37facb6e4d05aaeae085ac`  
-		Last Modified: Wed, 21 May 2025 23:30:44 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:23:24 GMT  
 		Size: 4.0 MB (3984195 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d91ce431f3e8f53deb758af58dcf2d0d526914b7e949edc4a9194ad60d84b79`  
-		Last Modified: Wed, 21 May 2025 23:30:44 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:23:37 GMT  
 		Size: 13.3 KB (13271 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -105,7 +105,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 		Size: 23.9 MB (23932922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e539c78f3bc30c8a78ce390d8985297f1ad0c4df4837969b9e4f564a044b399d`  
-		Last Modified: Thu, 22 May 2025 11:41:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:24:43 GMT  
 		Size: 296.1 MB (296103372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -125,11 +125,11 @@ $ docker pull rust@sha256:25ba9e048c379d8bac387d609f50d1e0d8f158d4cbb30ba2245575
 
 -	Layers:
 	-	`sha256:4dd6605086e19e2f803c03fddacbb4aa7d6419e6c15842dfcdaff2978cacc0f8`  
-		Last Modified: Thu, 22 May 2025 11:41:10 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:26:17 GMT  
 		Size: 3.8 MB (3798621 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e6bff2a208b0c1ddb7c52cba706a5f96b5ac66f870488504f7f00e6bb6f32d3a`  
-		Last Modified: Thu, 22 May 2025 11:41:10 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:26:29 GMT  
 		Size: 13.4 KB (13380 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -182,11 +182,11 @@ $ docker pull rust@sha256:d1387e4857a4d58b05ec8c4e3f6bbf6efcde77b789ce910a242ed6
 
 -	Layers:
 	-	`sha256:7f16df866442281725665a851e300c89faae60bd17230c7ee417d0118d41eb5e`  
-		Last Modified: Thu, 22 May 2025 07:37:05 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:28:42 GMT  
 		Size: 4.0 MB (4006538 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3fc86a2c04212655011614710bf98e11b529c5876504a677b22d74050a3c5ece`  
-		Last Modified: Thu, 22 May 2025 07:37:05 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:28:56 GMT  
 		Size: 13.4 KB (13424 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -239,11 +239,11 @@ $ docker pull rust@sha256:889b0b25c9982cd5fd0571c6b2e686ec647c319ecab6c6d5a7adb6
 
 -	Layers:
 	-	`sha256:b1c6f53dcb1207b295e2a9b9c928c3d427f03fff1cda3c59d8cb153c959edd63`  
-		Last Modified: Wed, 21 May 2025 23:24:35 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:31:28 GMT  
 		Size: 4.0 MB (3963560 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0f37c60466f2e78fb30d52c14fbff69ffd5e0acccfafbf0eeb4d5f39c371cb4`  
-		Last Modified: Wed, 21 May 2025 23:24:34 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:31:41 GMT  
 		Size: 13.2 KB (13219 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -276,7 +276,7 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 		Size: 32.1 MB (32066912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c4c0364e8d115f2b67574578ff7cfea99d5fa39745143f0aa4a9bb4ee5829b6`  
-		Last Modified: Thu, 22 May 2025 10:31:25 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:33:02 GMT  
 		Size: 345.7 MB (345720290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -296,11 +296,11 @@ $ docker pull rust@sha256:aec7caa620dfd5733aa60df2e229ab3af124c05cc1dd24b9eef1b3
 
 -	Layers:
 	-	`sha256:6449d9ad849985c7d32b6c889d938042756ba1085bc3aa0d64a63922a3060211`  
-		Last Modified: Thu, 22 May 2025 10:31:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:34:32 GMT  
 		Size: 4.0 MB (3956503 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:43120ffb87589f975304b84849a9f1c762b500e12eb2fc188a931835b2659397`  
-		Last Modified: Thu, 22 May 2025 10:31:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:34:45 GMT  
 		Size: 13.3 KB (13340 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -353,10 +353,10 @@ $ docker pull rust@sha256:7a4f9ef8212aa8a7d6456c13e712c2838ea2d37473e5dc052a89f5
 
 -	Layers:
 	-	`sha256:ff31c08b679c1c5a077d7a557e36813d9be82c5bbc22efbc845d709dd07bfacf`  
-		Last Modified: Thu, 22 May 2025 03:36:05 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:37:40 GMT  
 		Size: 3.8 MB (3824766 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a6a9a671478833eaf718e74615d4a29101183eeab0898f719807cd0c3a261e6d`  
-		Last Modified: Thu, 22 May 2025 03:36:04 GMT  
+		Last Modified: Tue, 03 Jun 2025 15:37:54 GMT  
 		Size: 13.3 KB (13272 bytes)  
 		MIME: application/vnd.in-toto+json
