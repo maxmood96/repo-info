@@ -1039,21 +1039,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.7-19
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7-19.dsc' gnupg2_2.4.7-19.dsc 4877 SHA256:9d1059a86e2bda3b9a898555e71e2dd361ffaa9e14a6a8a53269bbb13c0c16cf
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7.orig.tar.bz2' gnupg2_2.4.7.orig.tar.bz2 8010244 SHA256:7b24706e4da7e0e3b06ca068231027401f238102c41c909631349dcc3b85eb46
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7.orig.tar.bz2.asc' gnupg2_2.4.7.orig.tar.bz2.asc 390 SHA256:cec7da75dab60e3e2f6bf92ed1174126a1e5a1cc5e448f9e004a23be2dd227f6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.7-19.debian.tar.xz' gnupg2_2.4.7-19.debian.tar.xz 110704 SHA256:2f8bd76f1708fe18e889d015cf3f753ff497a89e898dd35eb2850f48634919a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.4.7-19/
 
-- https://sources.debian.net/src/gnupg2/2.4.7-19/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.4.7-19/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.4.7-19/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.9-2`
 
@@ -2857,20 +2849,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-2.dsc' rust-sequoia-sqv_1.3.0-2.dsc 2634 SHA256:7623cc172abb7b91caf873813a0d24681ba095db83c435ba9b354836368f504f
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-2.debian.tar.xz' rust-sequoia-sqv_1.3.0-2.debian.tar.xz 3688 SHA256:4858c2650c0b9709432213272ae0315c0b2dd01bc9372930adc28d391aaa229b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-2/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 
