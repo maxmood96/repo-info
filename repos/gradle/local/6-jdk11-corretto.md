@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad5f02488db2d894aba7c382c941093ad7c95de9634dc2609ebc512403145a12`
-- Created: `2025-03-30T18:19:35Z`
-- Virtual Size: ~ 775.64 Mb  
+- Image ID: `sha256:3c4df25a0cf276e5241fc45f11675a5ec3c09fd3478ada6a944521b415d2bcf9`
+- Created: `2025-05-29T19:34:11Z`
+- Virtual Size: ~ 826.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -479,6 +479,17 @@ $ dnf --quiet download --source --url gawk-5.1.0-3.amzn2023.0.3
 https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/212e39b4609e36d3f8d02316ad4f9909a28d90e1e9c412174347ad0a78905d84/gawk-5.1.0-3.amzn2023.0.3.src.rpm
 ```
 
+### `rpm` package: `gc-8.0.4-5.amzn2023.0.2.x86_64`
+
+Licenses (from `rpm --query`): BSD
+
+Source:
+
+```console
+$ dnf --quiet download --source --url gc-8.0.4-5.amzn2023.0.2
+https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/701dae70388b507f7c9f2a1b7dfd29a0b22ab36e893f0634c56c42d5dc76ae96/gc-8.0.4-5.amzn2023.0.2.src.rpm
+```
+
 ### `rpm` package: `gdbm-libs-1.19-2.amzn2023.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
@@ -692,6 +703,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url groff-base-1.22.4-7.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/d557100572a14ccfd6d357b41cdbff0f92ad3a917e156eeaa0de0c91021973d7/groff-1.22.4-7.amzn2023.0.2.src.rpm
+```
+
+### `rpm` package: `guile22-2.2.7-2.amzn2023.0.3.x86_64`
+
+Licenses (from `rpm --query`): LGPLv3+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url guile22-2.2.7-2.amzn2023.0.3
+https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/59ea08be82d623e6ded16fdb2366e6312d201c45f15dcff7f553ea7afb1ef242/guile22-2.2.7-2.amzn2023.0.3.src.rpm
 ```
 
 ### `rpm` package: `gzip-1.12-1.amzn2023.0.1.x86_64`
@@ -1464,6 +1486,17 @@ $ dnf --quiet download --source --url libtasn1-4.19.0-1.amzn2023.0.4
 https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/16fd2f1f381f9c740be2b592e421ed187962bef2a8b09bc51ac311aa2f8d6f87/libtasn1-4.19.0-1.amzn2023.0.4.src.rpm
 ```
 
+### `rpm` package: `libtool-ltdl-2.4.7-1.amzn2023.0.3.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libtool-ltdl-2.4.7-1.amzn2023.0.3
+https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/5b6518548908157cc6b618b70226dfeef43f1274a9b168cb86113d3e77240c72/libtool-2.4.7-1.amzn2023.0.3.src.rpm
+```
+
 ### `rpm` package: `libunistring-0.9.10-10.amzn2023.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLV2+ or LGPLv3+
@@ -1594,6 +1627,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.4-1.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/844b15b026f8d8503c2249adcf0e911c74e475fc0cf5e8d149d82bab194ca49a/lz4-1.9.4-1.amzn2023.0.2.src.rpm
+```
+
+### `rpm` package: `make-4.3-5.amzn2023.0.2.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url make-4.3-5.amzn2023.0.2
+https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/86004136594c13d5fe44fd11840007cb8362ed88bb74f08f364712f06d791af0/make-4.3-5.amzn2023.0.2.src.rpm
 ```
 
 ### `rpm` package: `mercurial-5.7.1-1.amzn2023.0.3.x86_64`
@@ -2804,6 +2848,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url systemd-resolved-252.23-3.amzn2023
 https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/d90bd4d00f275d7202db0df299676b07ab804231ad7577edeb13868cb2b7654a/systemd-252.23-3.amzn2023.src.rpm
+```
+
+### `rpm` package: `tar-1.34-1.amzn2023.0.4.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url tar-1.34-1.amzn2023.0.4
+https://cdn.amazonlinux.com/al2023/core/guids/f3a76c63e9e9a6448afc715e3955e1dab5f719fbaeeb0377739e32047d146b4f/SRPMS/../../../../blobstore/5a1f7da086290133e9d24d6eca3d019c9ef716a74f63576097d26661dc95baf2/tar-1.34-1.amzn2023.0.4.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2025b-1.amzn2023.0.1.noarch`

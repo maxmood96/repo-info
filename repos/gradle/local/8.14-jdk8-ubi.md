@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:135c46448958fa3783637790a54325d7e645c03e3ad7f2201cccc3a18a7cc479`
-- Created: `2025-05-27T02:26:11Z`
-- Virtual Size: ~ 594.14 Mb  
+- Image ID: `sha256:0f8c26ff3bcece575128f50acd1056a1d5d14e6b514aed33facea7d1f56136c6`
+- Created: `2025-05-29T19:22:22Z`
+- Virtual Size: ~ 594.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -1395,6 +1395,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.3-5.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/lz4-1.9.3-5.el9.src.rpm
+```
+
+### `rpm` package: `make-4.3-8.el9.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url make-4.3-8.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/m/make-4.3-8.el9.src.rpm
 ```
 
 ### `rpm` package: `microdnf-3.9.1-3.el9.x86_64`

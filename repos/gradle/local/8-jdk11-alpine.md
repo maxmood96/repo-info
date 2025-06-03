@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:50e209d1e05fa65a4ad96d6b3d5bf947dd58b32792ddd29824f6b5286a907170`
-- Created: `2025-05-27T02:26:11Z`
-- Virtual Size: ~ 546.29 Mb  
+- Image ID: `sha256:51ce1664851b801c51e57fb1b1aa9c92605ec5e1b1dc7223670f632b251c8fc6`
+- Created: `2025-05-29T19:22:22Z`
+- Virtual Size: ~ 571.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -154,6 +154,40 @@ apr-util-1.6.3-r1 installed size:
 
 apr-util-1.6.3-r1 license:
 Apache-2.0
+
+```
+
+### `apk` package: `breezy`
+
+```console
+breezy-3.3.9-r0 description:
+Decentralized revision control system
+
+breezy-3.3.9-r0 webpage:
+https://www.breezy-vcs.org/
+
+breezy-3.3.9-r0 installed size:
+10 MiB
+
+breezy-3.3.9-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `breezy-pyc`
+
+```console
+breezy-pyc-3.3.9-r0 description:
+Precompiled Python bytecode for breezy
+
+breezy-pyc-3.3.9-r0 webpage:
+https://www.breezy-vcs.org/
+
+breezy-pyc-3.3.9-r0 installed size:
+7861 KiB
+
+breezy-pyc-3.3.9-r0 license:
+GPL-2.0-or-later
 
 ```
 
@@ -324,6 +358,23 @@ coreutils-sha512sum-9.5-r2 installed size:
 
 coreutils-sha512sum-9.5-r2 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `curl`
+
+```console
+curl-8.12.1-r1 description:
+URL retrival utility and library
+
+curl-8.12.1-r1 webpage:
+https://curl.se/
+
+curl-8.12.1-r1 installed size:
+246 KiB
+
+curl-8.12.1-r1 license:
+curl
 
 ```
 
@@ -1126,6 +1177,23 @@ BSD-2-Clause AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `make`
+
+```console
+make-4.4.1-r2 description:
+GNU make utility to maintain groups of programs
+
+make-4.4.1-r2 webpage:
+https://www.gnu.org/software/make
+
+make-4.4.1-r2 installed size:
+226 KiB
+
+make-4.4.1-r2 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `mercurial`
 
 ```console
@@ -1415,6 +1483,346 @@ GPL-2.0-or-later
 
 ```
 
+### `apk` package: `py3-attrs`
+
+```console
+py3-attrs-24.2.0-r0 description:
+Python classes without boilerplate
+
+py3-attrs-24.2.0-r0 webpage:
+http://www.attrs.org
+
+py3-attrs-24.2.0-r0 installed size:
+203 KiB
+
+py3-attrs-24.2.0-r0 license:
+MIT
+
+```
+
+### `apk` package: `py3-attrs-pyc`
+
+```console
+py3-attrs-pyc-24.2.0-r0 description:
+Precompiled Python bytecode for py3-attrs
+
+py3-attrs-pyc-24.2.0-r0 webpage:
+http://www.attrs.org
+
+py3-attrs-pyc-24.2.0-r0 installed size:
+183 KiB
+
+py3-attrs-pyc-24.2.0-r0 license:
+MIT
+
+```
+
+### `apk` package: `py3-certifi`
+
+```console
+py3-certifi-2024.8.30-r0 description:
+Python3 package for providing Mozilla's CA Bundle
+
+py3-certifi-2024.8.30-r0 webpage:
+https://pypi.org/project/certifi
+
+py3-certifi-2024.8.30-r0 installed size:
+8894 B
+
+py3-certifi-2024.8.30-r0 license:
+MPL-2.0
+
+```
+
+### `apk` package: `py3-certifi-pyc`
+
+```console
+py3-certifi-pyc-2024.8.30-r0 description:
+Precompiled Python bytecode for py3-certifi
+
+py3-certifi-pyc-2024.8.30-r0 webpage:
+https://pypi.org/project/certifi
+
+py3-certifi-pyc-2024.8.30-r0 installed size:
+4106 B
+
+py3-certifi-pyc-2024.8.30-r0 license:
+MPL-2.0
+
+```
+
+### `apk` package: `py3-configobj`
+
+```console
+py3-configobj-5.0.9-r0 description:
+Python3 library for reading and writing of configuration files (ini)
+
+py3-configobj-5.0.9-r0 webpage:
+https://github.com/DiffSK/configobj
+
+py3-configobj-5.0.9-r0 installed size:
+137 KiB
+
+py3-configobj-5.0.9-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `py3-configobj-pyc`
+
+```console
+py3-configobj-pyc-5.0.9-r0 description:
+Precompiled Python bytecode for py3-configobj
+
+py3-configobj-pyc-5.0.9-r0 webpage:
+https://github.com/DiffSK/configobj
+
+py3-configobj-pyc-5.0.9-r0 installed size:
+132 KiB
+
+py3-configobj-pyc-5.0.9-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `py3-dulwich`
+
+```console
+py3-dulwich-0.21.7-r2 description:
+Python implementation of the Git file formats and protocols
+
+py3-dulwich-0.21.7-r2 webpage:
+https://www.dulwich.io/
+
+py3-dulwich-0.21.7-r2 installed size:
+1014 KiB
+
+py3-dulwich-0.21.7-r2 license:
+GPL-2.0-or-later OR Apache-2.0
+
+```
+
+### `apk` package: `py3-dulwich-pyc`
+
+```console
+py3-dulwich-pyc-0.21.7-r2 description:
+Precompiled Python bytecode for py3-dulwich
+
+py3-dulwich-pyc-0.21.7-r2 webpage:
+https://www.dulwich.io/
+
+py3-dulwich-pyc-0.21.7-r2 installed size:
+1104 KiB
+
+py3-dulwich-pyc-0.21.7-r2 license:
+GPL-2.0-or-later OR Apache-2.0
+
+```
+
+### `apk` package: `py3-patiencediff`
+
+```console
+py3-patiencediff-0.2.14-r1 description:
+Patiencediff Python and C implementations
+
+py3-patiencediff-0.2.14-r1 webpage:
+https://www.breezy-vcs.org/
+
+py3-patiencediff-0.2.14-r1 installed size:
+81 KiB
+
+py3-patiencediff-0.2.14-r1 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `py3-patiencediff-pyc`
+
+```console
+py3-patiencediff-pyc-0.2.14-r1 description:
+Precompiled Python bytecode for py3-patiencediff
+
+py3-patiencediff-pyc-0.2.14-r1 webpage:
+https://www.breezy-vcs.org/
+
+py3-patiencediff-pyc-0.2.14-r1 installed size:
+37 KiB
+
+py3-patiencediff-pyc-0.2.14-r1 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `py3-six`
+
+```console
+py3-six-1.16.0-r9 description:
+Python 2 and 3 compatibility library
+
+py3-six-1.16.0-r9 webpage:
+https://pypi.org/project/six
+
+py3-six-1.16.0-r9 installed size:
+37 KiB
+
+py3-six-1.16.0-r9 license:
+MIT
+
+```
+
+### `apk` package: `py3-six-pyc`
+
+```console
+py3-six-pyc-1.16.0-r9 description:
+Precompiled Python bytecode for py3-six
+
+py3-six-pyc-1.16.0-r9 webpage:
+https://pypi.org/project/six
+
+py3-six-pyc-1.16.0-r9 installed size:
+40 KiB
+
+py3-six-pyc-1.16.0-r9 license:
+MIT
+
+```
+
+### `apk` package: `py3-tzdata`
+
+```console
+py3-tzdata-2024.2-r0 description:
+Python package wrapping the IANA time zone database
+
+py3-tzdata-2024.2-r0 webpage:
+https://github.com/python/tzdata
+
+py3-tzdata-2024.2-r0 installed size:
+567 KiB
+
+py3-tzdata-2024.2-r0 license:
+Apache-2.0
+
+```
+
+### `apk` package: `py3-tzdata-pyc`
+
+```console
+py3-tzdata-pyc-2024.2-r0 description:
+Precompiled Python bytecode for py3-tzdata
+
+py3-tzdata-pyc-2024.2-r0 webpage:
+https://github.com/python/tzdata
+
+py3-tzdata-pyc-2024.2-r0 installed size:
+3713 B
+
+py3-tzdata-pyc-2024.2-r0 license:
+Apache-2.0
+
+```
+
+### `apk` package: `py3-tzlocal`
+
+```console
+py3-tzlocal-5.2-r1 description:
+Python tzinfo object for the local timezone
+
+py3-tzlocal-5.2-r1 webpage:
+https://github.com/regebro/tzlocal
+
+py3-tzlocal-5.2-r1 installed size:
+60 KiB
+
+py3-tzlocal-5.2-r1 license:
+MIT
+
+```
+
+### `apk` package: `py3-tzlocal-pyc`
+
+```console
+py3-tzlocal-pyc-5.2-r1 description:
+Precompiled Python bytecode for py3-tzlocal
+
+py3-tzlocal-pyc-5.2-r1 webpage:
+https://github.com/regebro/tzlocal
+
+py3-tzlocal-pyc-5.2-r1 installed size:
+47 KiB
+
+py3-tzlocal-pyc-5.2-r1 license:
+MIT
+
+```
+
+### `apk` package: `py3-urllib3`
+
+```console
+py3-urllib3-1.26.20-r0 description:
+HTTP library with thread-safe connection pooling, file post, and more
+
+py3-urllib3-1.26.20-r0 webpage:
+https://github.com/urllib3/urllib3
+
+py3-urllib3-1.26.20-r0 installed size:
+442 KiB
+
+py3-urllib3-1.26.20-r0 license:
+MIT
+
+```
+
+### `apk` package: `py3-urllib3-pyc`
+
+```console
+py3-urllib3-pyc-1.26.20-r0 description:
+Precompiled Python bytecode for py3-urllib3
+
+py3-urllib3-pyc-1.26.20-r0 webpage:
+https://github.com/urllib3/urllib3
+
+py3-urllib3-pyc-1.26.20-r0 installed size:
+425 KiB
+
+py3-urllib3-pyc-1.26.20-r0 license:
+MIT
+
+```
+
+### `apk` package: `py3-yaml`
+
+```console
+py3-yaml-6.0.2-r0 description:
+Python3 bindings for YAML
+
+py3-yaml-6.0.2-r0 webpage:
+https://pyyaml.org/
+
+py3-yaml-6.0.2-r0 installed size:
+405 KiB
+
+py3-yaml-6.0.2-r0 license:
+MIT
+
+```
+
+### `apk` package: `py3-yaml-pyc`
+
+```console
+py3-yaml-pyc-6.0.2-r0 description:
+Precompiled Python bytecode for py3-yaml
+
+py3-yaml-pyc-6.0.2-r0 webpage:
+https://pyyaml.org/
+
+py3-yaml-pyc-6.0.2-r0 installed size:
+244 KiB
+
+py3-yaml-pyc-6.0.2-r0 license:
+MIT
+
+```
+
 ### `apk` package: `pyc`
 
 ```console
@@ -1667,6 +2075,23 @@ xz-libs-5.6.3-r1 installed size:
 
 xz-libs-5.6.3-r1 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `yaml`
+
+```console
+yaml-0.2.5-r2 description:
+YAML 1.1 parser and emitter written in C
+
+yaml-0.2.5-r2 webpage:
+https://pyyaml.org/wiki/LibYAML
+
+yaml-0.2.5-r2 installed size:
+105 KiB
+
+yaml-0.2.5-r2 license:
+MIT
 
 ```
 
