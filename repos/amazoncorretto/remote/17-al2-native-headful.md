@@ -41,11 +41,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:553ed992015a76bd7bd2b975b84fb4bb8d9fd1cc5d7f3cc5814806bd014114d7`  
-		Last Modified: Wed, 14 May 2025 22:47:15 GMT  
+		Last Modified: Thu, 15 May 2025 19:23:52 GMT  
 		Size: 62.8 MB (62759985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c05ac1afbe04c968c91309512ec5617979b4ec825ff2b18c261390062abf6c1`  
-		Last Modified: Mon, 19 May 2025 23:37:07 GMT  
+		Last Modified: Tue, 20 May 2025 08:45:51 GMT  
 		Size: 91.2 MB (91171517 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -65,11 +65,11 @@ $ docker pull amazoncorretto@sha256:5344398e1ba7091dfb88d6f8d0dddb0a0f82530ed22d
 
 -	Layers:
 	-	`sha256:757e63c6906c5ca8c624d5d9cef0edef731fa2a84b6c37d8d89e28222a03d70e`  
-		Last Modified: Mon, 19 May 2025 23:37:06 GMT  
+		Last Modified: Tue, 20 May 2025 00:48:24 GMT  
 		Size: 5.9 MB (5861380 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4a928e90a39ba7162c2ba1de2021886945ff30981aaff8a10e3dc743f27de10e`  
-		Last Modified: Mon, 19 May 2025 23:37:06 GMT  
+		Last Modified: Tue, 20 May 2025 00:48:24 GMT  
 		Size: 9.5 KB (9471 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -103,11 +103,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:1b914e688cac327114c45b9a58220765af260230389654eb4d8798d0a7d9676d`  
-		Last Modified: Wed, 14 May 2025 22:47:33 GMT  
+		Last Modified: Thu, 15 May 2025 19:24:15 GMT  
 		Size: 64.6 MB (64607481 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:afe54558d6c68095b7733390036959d875f8b55742d1da8178167b6571a57601`  
-		Last Modified: Mon, 19 May 2025 23:58:42 GMT  
+		Last Modified: Mon, 19 May 2025 23:59:16 GMT  
 		Size: 81.9 MB (81909527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -127,10 +127,10 @@ $ docker pull amazoncorretto@sha256:00780d3799184b998d15d133f06d8aa4cbcb5b61851c
 
 -	Layers:
 	-	`sha256:edcdfcf5f5504629d814d9d6ad07ec71d91871070391dba0c1145026e3291f5c`  
-		Last Modified: Mon, 19 May 2025 23:58:40 GMT  
+		Last Modified: Tue, 20 May 2025 00:48:28 GMT  
 		Size: 5.7 MB (5653123 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79b1da282f0a3f67115676660e373fd59c49f7c074acf268d9f1a20a8cd757f2`  
-		Last Modified: Mon, 19 May 2025 23:58:40 GMT  
+		Last Modified: Tue, 20 May 2025 00:48:28 GMT  
 		Size: 9.6 KB (9551 bytes)  
 		MIME: application/vnd.in-toto+json
