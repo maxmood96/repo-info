@@ -978,19 +978,19 @@ CMD ["telegraf"]
 		Size: 24.0 MB (24015635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b57421b1719c516fa392b20629d9355bc18f94370e15f34324697147a2622133`  
-		Last Modified: Wed, 21 May 2025 23:44:15 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:39 GMT  
 		Size: 18.9 MB (18946803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cae6c6b6ed9e01cb08bb1e73e2163818163803a1ed20ac901d7afee97438438`  
-		Last Modified: Wed, 21 May 2025 23:44:14 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:38 GMT  
 		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9bf5d9c397ae2c27e34715d43d7c12bb2c1a94b3448b2effbc3bbcc5bf0d8697`  
-		Last Modified: Wed, 21 May 2025 23:44:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:43 GMT  
 		Size: 77.3 MB (77310012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c970b2d6544b6cdedf23d027a4ef0c61abeb50013e68c1a7876eecf2f3185b85`  
-		Last Modified: Wed, 21 May 2025 23:44:14 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:39 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1428,19 +1428,19 @@ CMD ["telegraf"]
 		Size: 24.0 MB (24015635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b57421b1719c516fa392b20629d9355bc18f94370e15f34324697147a2622133`  
-		Last Modified: Wed, 21 May 2025 23:44:15 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:39 GMT  
 		Size: 18.9 MB (18946803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cae6c6b6ed9e01cb08bb1e73e2163818163803a1ed20ac901d7afee97438438`  
-		Last Modified: Wed, 21 May 2025 23:44:14 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:38 GMT  
 		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9bf5d9c397ae2c27e34715d43d7c12bb2c1a94b3448b2effbc3bbcc5bf0d8697`  
-		Last Modified: Wed, 21 May 2025 23:44:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:43 GMT  
 		Size: 77.3 MB (77310012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c970b2d6544b6cdedf23d027a4ef0c61abeb50013e68c1a7876eecf2f3185b85`  
-		Last Modified: Wed, 21 May 2025 23:44:14 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:20:39 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
