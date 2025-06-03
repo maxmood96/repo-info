@@ -108,11 +108,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:bd26e0aad9f1b20096e647e74023489621fc5ba4de7dc4747a0d0d4bb2823fc7`  
-		Last Modified: Thu, 22 May 2025 13:55:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:17:01 GMT  
 		Size: 6.0 MB (6035363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:314d90cf5c3bc2e0f7191f549f5e1ca5fa12842998e5ec7c9dfbfc7299ce6e94`  
-		Last Modified: Thu, 22 May 2025 16:47:01 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:17:07 GMT  
 		Size: 506.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -282,7 +282,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:57be46b4ea67fc4a82253207a77c64e54d879210f7238768704d05fa2cbde0d0`  
-		Last Modified: Thu, 22 May 2025 13:55:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:23:09 GMT  
 		Size: 5.8 MB (5791123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90ac6089227b1bf8e0c5485c9fafeb79be71f899610ed5cfe50750ec671c2150`  
@@ -340,7 +340,7 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:c45330677ca92d779a584c8b60cd7fed6fbea73ad55c596f77c23ebb08986cc2`  
-		Last Modified: Thu, 22 May 2025 13:55:02 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:23 GMT  
 		Size: 6.2 MB (6156156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94d8c9019ec6e6b470ca5a6c4139cddf8579e979b93b02f0847ea6459c5bdf68`  
