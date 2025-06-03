@@ -1,7 +1,7 @@
 ## `ros:kilted-ros-core-noble`
 
 ```console
-$ docker pull ros@sha256:775e087be29b0cb51bce946ef951129b52467fd2c9855c37936f4647b0a88ae0
+$ docker pull ros@sha256:87b18b0a82ae9801c0cd54e6faf4234bb2ff3e6bfe96a36fa793e4dfcc0946ce
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull ros@sha256:775e087be29b0cb51bce946ef951129b52467fd2c9855c37936f464
 ### `ros:kilted-ros-core-noble` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:8707fba43fda6f15bba7593189718319de5ec11a1bd4d4435c8a4452f469f450
+$ docker pull ros@sha256:b9f2e519aca21d7fafbeb91a7b60c0a38b613f98b0b5e4d6d5046daad7581ab8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.4 MB (169367374 bytes)**  
+-	Total Size: **169.4 MB (169369230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:54eea049178ae193a3353def1b01b0453b1afe58bd561e9cca4e03dfa29fa51e`
+-	Image ID: `sha256:68c2d4c42e51dc47f09cd7c43c1f26683ceece7ccaec644a2ffbf707d336a778`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 28 Apr 2025 09:44:48 GMT
+# Fri, 23 May 2025 20:53:19 GMT
 ARG RELEASE
-# Mon, 28 Apr 2025 09:44:48 GMT
+# Fri, 23 May 2025 20:53:19 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 28 Apr 2025 09:44:48 GMT
+# Fri, 23 May 2025 20:53:19 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 28 Apr 2025 09:44:48 GMT
+# Fri, 23 May 2025 20:53:19 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 28 Apr 2025 09:44:50 GMT
-ADD file:ad85a9d7b0a74c2140bd51d9c4559cca392991e0c95f84cb139347348e5d1f9a in / 
-# Mon, 28 Apr 2025 09:44:51 GMT
+# Fri, 23 May 2025 20:53:19 GMT
+ADD file:598ca0108009b5c2e9e6f4fc4bd19a6bcd604fccb5b9376fac14a75522a5cfa3 in / 
+# Fri, 23 May 2025 20:53:19 GMT
 CMD ["/bin/bash"]
 # Fri, 23 May 2025 20:53:19 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
@@ -62,56 +62,56 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:0622fac788edde5d30e7bbd2688893e5452a19ff237a2e4615e2d8181321cb4e`  
-		Last Modified: Mon, 28 Apr 2025 10:53:49 GMT  
-		Size: 29.7 MB (29717529 bytes)  
+	-	`sha256:d9d352c11bbd3880007953ed6eec1cbace76898828f3434984a0ca60672fdf5a`  
+		Last Modified: Thu, 29 May 2025 06:11:31 GMT  
+		Size: 29.7 MB (29715337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b91156110ebf5bcf8aff955155a3cac5c871a529c0956749cbd2e38258a3de7`  
-		Last Modified: Fri, 23 May 2025 22:09:03 GMT  
-		Size: 683.7 KB (683661 bytes)  
+	-	`sha256:40688eb6ab717091b8ab853e446d63d8b599a40537433633e49421fc01e8ba47`  
+		Last Modified: Tue, 03 Jun 2025 09:47:27 GMT  
+		Size: 683.8 KB (683829 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00676700a9a647dc4f7d22e0482fe6f4beacc969218897119327f2450823d67b`  
-		Last Modified: Fri, 23 May 2025 22:09:03 GMT  
-		Size: 3.6 MB (3563568 bytes)  
+	-	`sha256:511cefe64e624a5297e6da7346ff47e3eeb63abae54ce95b69973dfa5472361b`  
+		Last Modified: Tue, 03 Jun 2025 09:47:28 GMT  
+		Size: 3.6 MB (3563712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f027fb8836d362e986aabf6bc09c600e7dd68d9babac9be88ab53491d01bc86`  
-		Last Modified: Fri, 23 May 2025 22:09:03 GMT  
-		Size: 2.0 KB (2004 bytes)  
+	-	`sha256:aaaf3966317ae1566784e8b9428d42d9648e8bb216743f683047325d99626124`  
+		Last Modified: Tue, 03 Jun 2025 09:47:27 GMT  
+		Size: 2.5 KB (2533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26fe00d49e9d68067a0ad084bcc4f9dd7d1331c48d3dd776eb1250d6f27b6484`  
-		Last Modified: Fri, 23 May 2025 22:09:03 GMT  
-		Size: 274.0 B  
+	-	`sha256:9f48ffbd9bb786430457fa415a40d5ee2774efe6b9ca8071aa074d6dbf3cc277`  
+		Last Modified: Tue, 03 Jun 2025 09:47:27 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18e9a0daafb0c3935bf2adb5b03cc81e3e3bb1b24f04e6c6cc874c48d131ade9`  
-		Last Modified: Fri, 23 May 2025 22:09:06 GMT  
-		Size: 135.4 MB (135400142 bytes)  
+	-	`sha256:7b7767b77e49a35d6dcfa96835cae86b747e3f835e474d864c4c636a0ac0d6b3`  
+		Last Modified: Tue, 03 Jun 2025 09:47:32 GMT  
+		Size: 135.4 MB (135403352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a875d6cf24d0d087ce03f230aedb7c853e4a081d23d611ea274587c8cfdac634`  
-		Last Modified: Fri, 23 May 2025 22:09:04 GMT  
-		Size: 196.0 B  
+	-	`sha256:14018904b0b743f343c924cd937830d4550971e84cabb257732dcf66431c2b47`  
+		Last Modified: Tue, 03 Jun 2025 09:47:28 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:kilted-ros-core-noble` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:38b8949e902b502a677b7ad8fb7294dada49a0cdc159581cf08aff484e8bee00
+$ docker pull ros@sha256:68640a323093d06a5ed06e507e828c34cad379faaa57eecfee60841756b8f429
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.0 MB (17981837 bytes)**  
+-	Total Size: **18.0 MB (17981813 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a50e805645b3732fd925310f283807cc8b8ad00edb18f6c66e331e67677d64b`
+-	Image ID: `sha256:e08859925e8b3f2dd4e0af4a35ef406a8225787973b5f02672b77b07ce8e8d96`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8849e95c8b5b4bba97d40418ae1272cd0c3df591624f2064825e5d2c70e69faa`  
-		Last Modified: Fri, 23 May 2025 22:09:03 GMT  
-		Size: 18.0 MB (17965452 bytes)  
+	-	`sha256:98074dacc84e2b4165a623a175c30d24550deefe89d349c00d4bfbbfac1b3d20`  
+		Last Modified: Tue, 03 Jun 2025 09:47:28 GMT  
+		Size: 18.0 MB (17965428 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d5bd202d5acaa50fdf042f103785c65a76d502395feb5665f40cdc2a2d7ef97f`  
-		Last Modified: Fri, 23 May 2025 22:09:03 GMT  
+	-	`sha256:6e618fc0f487b0f5dbaf89e0632faf580fd6210b13872142bb21940d906b9e64`  
+		Last Modified: Tue, 03 Jun 2025 09:47:27 GMT  
 		Size: 16.4 KB (16385 bytes)  
 		MIME: application/vnd.in-toto+json
 
