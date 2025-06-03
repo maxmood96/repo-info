@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e30a981fb0031ab3a7732a5a0797853ace568c9007c64344379c9135d5bfa765`
+- Image ID: `sha256:31148ccb2c20a5b9b3dbe34ab8fe601b120ca7da903d8e2eeb1ad4d87c90e5e5`
 - Created: `2025-05-14T13:55:26Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
@@ -123,12 +123,12 @@ $ apt-get source -qq --print-uris apr=1.7.2-3.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.2-3.1ubuntu0.1.debian.tar.xz' apr_1.7.2-3.1ubuntu0.1.debian.tar.xz 55364 SHA512:3d5aa043c300f8e505f1ac00d543710b3945638587cd39dad94519f61305270276866549523c0df4d1c962c2dde0a07e01a0da93f5a9399e7a194a25618ef63a
 ```
 
-### `dpkg` source package: `apt=2.7.14build2`
+### `dpkg` source package: `apt=2.8.3`
 
 Binary Packages:
 
-- `apt=2.7.14build2`
-- `libapt-pkg6.0t64:amd64=2.7.14build2`
+- `apt=2.8.3`
+- `libapt-pkg6.0t64:amd64=2.8.3`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0t64/copyright`)
 
@@ -140,9 +140,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.7.14build2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.14build2.dsc' apt_2.7.14build2.dsc 3017 SHA512:8b3d295fe3447d9c6aa3b53bc754070b4c27c2d21055ff4b5d4b9e1f2354e1963469d2560034e7f0ddf4b7b47063b878b3682ecb9772638dbaa98a06f0bf8852
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.14build2.tar.xz' apt_2.7.14build2.tar.xz 2352948 SHA512:02d4e469bccc5f82417b01b8b2193cbc74008e8ff231a2c0733055afc2648e39b6824104376683c4ccf7397ab48f83cbd939d609fe0da00589a63355eba1475f
+$ apt-get source -qq --print-uris apt=2.8.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.3.dsc' apt_2.8.3.dsc 2973 SHA512:02223363e56b43eb224e418f9ff470228777eaac1355c787b0e648e4eae0686d3aa38f28aaf95ad75007f2529b32d5fb535024dd2a634b3fad014c95de0f33a0
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.3.tar.xz' apt_2.8.3.tar.xz 2354680 SHA512:bb79bdeb9a0685efd3e9dd2e491001445ebdbccd889ab4c05c2eb0c048117f769bab86ce4a1889acd426222f2eae97fa43aa83a8227690ca061ce25787343c25
 ```
 
 ### `dpkg` source package: `argon2=0~20190702+dfsg-4build1`
@@ -1007,11 +1007,11 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.2`
+### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.4`
 
 Binary Packages:
 
-- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.2`
+- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 
@@ -1041,9 +1041,15 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.dsc' glib2.0_2.80.0-6ubuntu3.4.dsc 4508 SHA512:a3c543aa79c11ed9653c715326890da9cee05154bc00e029d262bb7710391a8e10c4829187e7d0d5b0204473e1a6b5654f3f8331e029b8ce3fb651f6773feb28
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.4.debian.tar.xz 152380 SHA512:d7b6f2d78aa5a0995eb252bd8dd6c796e7c821f4651432eeca6d8d11cf5c0ed5bd663643f88cc1d2468ee3455b8d692f160ed3f47456851b88f7ec18e5b4c12a
+```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.4`
 
@@ -1523,22 +1529,28 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.5`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.6`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.5`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.5`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.5`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.5`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.6`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.6`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.6`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.dsc' krb5_1.20.1-6ubuntu2.6.dsc 4125 SHA512:6bafe41a37f8bf133ccd7e1aa0d63a1464b411af60ee408a03de69debae259794606011ff42370d168f6bf74af34d90b635c007c9876657af7124259af84c99a
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.debian.tar.xz' krb5_1.20.1-6ubuntu2.6.debian.tar.xz 122284 SHA512:402e34a374db1ece1ce0a604d84d697c590596d5e99601895d9c50c96fcbd8cb08d21b04201296411324b3ae4f169f2295aff825cee182cbbf139ccb16588fc9
+```
 
 ### `dpkg` source package: `lcms2=2.14-2build1`
 
@@ -3814,11 +3826,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.debian.tar.xz' shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz 96392 SHA512:67cd7c7f869250d39ebb7af023ae4aca6eef88de143a85510135d547bb6988895ef02d9aff798888e5d507f415d7d17193c354b2437764b0c4bea18b1178531d
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.1`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.1`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -3826,9 +3838,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.dsc' sqlite3_3.45.1-1ubuntu2.3.dsc 2601 SHA512:2bc0a399fd75a2be9db259e65435b3628db50fcf13d8f9e518837b0a0ffa30b13ce4237fb7ab23ccee4912147ef53ece2420d5c0bf8aedde43ad7f39e92d7d4b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz 33384 SHA512:e6f48f7e73237602d6ba3faaca90d8c20507ddb663d85b616b2f5d460ef2b83c23a36ebd6eb472671b4f749e3e4960cfebcd7b531c0220ecc14bc22e1ead419d
+```
 
 ### `dpkg` source package: `suitesparse=1:7.6.1+dfsg-1build1`
 
@@ -3959,20 +3977,26 @@ $ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.2.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.2.debian.tar.xz 29924 SHA512:4e07ce3aff052c2df29163480690bd3bb392455bd4d0a26322cd4e6dea0a0e0d9512dad558e1ff93e7a899631c39f0f633b308718c8e5aa98f9e7abe26b9a02f
 ```
 
-### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04`
+### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `tzdata=2025b-0ubuntu0.24.04`
+- `tzdata=2025b-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.04.1.dsc' tzdata_2025b-0ubuntu0.24.04.1.dsc 2728 SHA512:e717b51a15bbdd64183841b5136194f75bc2affece27101e3d03ed5b4614959a7810d7e1cfc8e59d846fe87dec7ed01c1cc739a25a0abf95552215f0929ea318
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.24.04.1.debian.tar.xz 188052 SHA512:8120a6b7f4381ce8f5e67b58f0cdc144905c8eed387c5b3ea820c19464308b0b2c9010ad498fe69e5161f4c23ccba78ee7f6d9dc7ac0caa23b18509ea4d8dad4
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
