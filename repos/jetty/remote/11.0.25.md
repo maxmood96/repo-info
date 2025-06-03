@@ -89,35 +89,35 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:d9d352c11bbd3880007953ed6eec1cbace76898828f3434984a0ca60672fdf5a`  
-		Last Modified: Thu, 29 May 2025 06:11:31 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 29.7 MB (29715337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:380ab39b4f9f66f5491f1e6c6e1b00af781c9e67017d5194267c1eb1b1ea9d61`  
-		Last Modified: Tue, 03 Jun 2025 04:16:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:15 GMT  
 		Size: 23.0 MB (22954920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fdf9441e6dddb8defe5d23ab009dd1a3d91ad4f953b4d53d9e904e1adcae03de`  
-		Last Modified: Tue, 03 Jun 2025 04:16:20 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:23 GMT  
 		Size: 157.6 MB (157648066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14ea0157e6cfd88563f52f3de2252f96d1de76755323a4e666dc06bfdc169362`  
-		Last Modified: Tue, 03 Jun 2025 04:16:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:17 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99f05f209f6fd19181ffd50612236193ad46991100ff9ffc79e5b5d7f15f0e06`  
-		Last Modified: Tue, 03 Jun 2025 04:16:12 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:20 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fffede5e82f5b499eaae00f525899a4c25a4ce7b92c88fb28ed180fd023d79c`  
-		Last Modified: Tue, 03 Jun 2025 05:12:25 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:47:34 GMT  
 		Size: 14.6 MB (14581650 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:609f9e7ae3f3752a126ac91615ada174c9f6cc590be28ca9d3a661a6810c4007`  
-		Last Modified: Tue, 03 Jun 2025 05:12:25 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:36:47 GMT  
 		Size: 1.7 KB (1660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -223,23 +223,23 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:69c262fc30fc134b6d373dee8db695319c41d8b9489deb0f682565473bf29748`  
-		Last Modified: Thu, 29 May 2025 06:11:37 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:25 GMT  
 		Size: 28.9 MB (28851899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d25aa6c570ac3eb2e6b67b6b415a041c1abc67be71cd7980de88555abccc2d7`  
-		Last Modified: Tue, 03 Jun 2025 04:43:41 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:34 GMT  
 		Size: 24.2 MB (24164086 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8f9050394cd65db7bd682aa204a01c362d8d2d363adf985a50957840cff4d7e`  
-		Last Modified: Tue, 03 Jun 2025 04:43:45 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:39 GMT  
 		Size: 155.9 MB (155931692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b06e006ec58303e7beba0209f43f756637b1ba897201c22052d0e46037217c36`  
-		Last Modified: Tue, 03 Jun 2025 04:43:40 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:30 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8128e0116aa02398c453c60b880bc13aeab791c1527d27e53b77f6af03bc9201`  
-		Last Modified: Tue, 03 Jun 2025 04:43:40 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:29 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42628066c43a714d7f68129b172e10340e6e59f81a09923ab22b58da378150ca`  
@@ -247,7 +247,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 14.6 MB (14581731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a90bd2d812d152a843045d6f843cc6a15b3ebf32e9351707cd325dd98db5729`  

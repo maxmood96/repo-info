@@ -79,35 +79,35 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870`  
-		Last Modified: Fri, 14 Feb 2025 12:05:35 GMT  
+		Last Modified: Fri, 14 Feb 2025 14:36:50 GMT  
 		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:994661c98e4264bf53af5a49e1f142717665bd41915c9244d1f63dad7897149f`  
-		Last Modified: Wed, 23 Apr 2025 16:31:42 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:54 GMT  
 		Size: 21.0 MB (20951329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26fac3e9314ebcc28feb6049f712a878479f900bc5f70456ecc2fc2fa3695d30`  
-		Last Modified: Wed, 23 Apr 2025 16:31:44 GMT  
+		Last Modified: Thu, 08 May 2025 17:05:08 GMT  
 		Size: 143.8 MB (143775879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2b9ea538182f9ba83b0f571df811bbc4de7f25b42ee9eb9733ce9d5851970f`  
-		Last Modified: Wed, 23 Apr 2025 16:31:42 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:51 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea44d309ec90a992e100ebb714b75633eea050267a3070b3db27c666fae34be2`  
-		Last Modified: Wed, 23 Apr 2025 16:31:42 GMT  
+		Last Modified: Thu, 08 May 2025 17:04:52 GMT  
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:375f839ccca19f3fa8f52b9188285d7a76b29daca9e48bb5841566db235ec8ae`  
-		Last Modified: Wed, 14 May 2025 19:01:34 GMT  
+		Last Modified: Sat, 17 May 2025 10:22:59 GMT  
 		Size: 35.4 MB (35411607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf8c6eb218d7c995cf72f3b975bbdc9c7a54c39557a87e0e9d9a06d731eaa3c7`  
-		Last Modified: Wed, 14 May 2025 19:01:32 GMT  
+		Last Modified: Thu, 15 May 2025 20:35:39 GMT  
 		Size: 1.7 KB (1660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

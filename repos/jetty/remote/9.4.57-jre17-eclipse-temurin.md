@@ -87,35 +87,35 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:d9d352c11bbd3880007953ed6eec1cbace76898828f3434984a0ca60672fdf5a`  
-		Last Modified: Thu, 29 May 2025 06:11:31 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 29.7 MB (29715337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a78734509d335eca0d1c58a3d48cff10dd51f076babdc1594794bbe8cbafd588`  
-		Last Modified: Tue, 03 Jun 2025 04:16:09 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:20 GMT  
 		Size: 17.0 MB (16969579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7d152eceffbe884bcc304a521184b55bd117c57c65393e46c8e7afc8b58064f`  
-		Last Modified: Tue, 03 Jun 2025 04:16:09 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:29 GMT  
 		Size: 47.0 MB (46958575 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e468c91228755a3fd96e3e0f5c149606b23c97ff54e18933eea04d6c3d54e29c`  
-		Last Modified: Tue, 03 Jun 2025 04:16:09 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:21 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:308cfdda1249a6531a87680d2016986fbd02b99194f36112a1da28f687647487`  
-		Last Modified: Tue, 03 Jun 2025 04:16:09 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:22 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd411821d7a531db388fc9bb64c02e26ed20886bae34c05843f3cc46202b51d1`  
-		Last Modified: Tue, 03 Jun 2025 05:12:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:03:07 GMT  
 		Size: 10.3 MB (10290986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94fc5a09ef95234d7a8a0f344c641ab73e5bf1665a4830d09c4d77cc792fa411`  
-		Last Modified: Tue, 03 Jun 2025 05:12:03 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:03:06 GMT  
 		Size: 1.7 KB (1659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -219,23 +219,23 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:69c262fc30fc134b6d373dee8db695319c41d8b9489deb0f682565473bf29748`  
-		Last Modified: Thu, 29 May 2025 06:11:37 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:25 GMT  
 		Size: 28.9 MB (28851899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecb5cdde15082c2c264c46bd2f1aa0a8ad43d7590dd7374853ce1748ae4259a4`  
-		Last Modified: Tue, 03 Jun 2025 04:37:36 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:28 GMT  
 		Size: 17.0 MB (16988306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40cf1c06f50de6ec97f12f6099906a5c09940adce66d3f85fa8964651550fac9`  
-		Last Modified: Tue, 03 Jun 2025 04:41:55 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:35 GMT  
 		Size: 46.5 MB (46474392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3790f5e56d3199420b90752ae9fadccdd125189d2a723774568fcf8eef87c768`  
-		Last Modified: Tue, 03 Jun 2025 04:41:53 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:28 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01de15c36901dba78b0f48401a6a9259b9f51b7b9cd784ea65342e6033b6d45e`  
-		Last Modified: Tue, 03 Jun 2025 04:41:54 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:29 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54d7d46b91e215ecc6ead49bfb1c1c8e9bb5a341384012bd10b3ea79f7dd0140`  
@@ -243,7 +243,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 10.3 MB (10291166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bb1da274bd449c67c2031d6f0bcb19a26a7b18f24d8bba74016e49a59a52a55`  
