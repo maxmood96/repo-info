@@ -197,11 +197,11 @@ $ docker pull golang@sha256:a4c10fc9ba66a936f1fae1101f7145ac46a1a7c23659bb61512e
 
 -	Layers:
 	-	`sha256:a01a515a0ee94466936c9ba56b3c647d720f62ca9dbc2e72e1f3f8c5d64c0db9`  
-		Last Modified: Thu, 22 May 2025 15:40:07 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:42 GMT  
 		Size: 10.1 MB (10119466 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:673998b4db3ba10765f2926cfa36ba26901142ea3d2edcf7778c6641a7a92baa`  
-		Last Modified: Thu, 22 May 2025 15:40:06 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:41 GMT  
 		Size: 27.8 KB (27780 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -288,11 +288,11 @@ $ docker pull golang@sha256:0e3117905c0c39fb1c7d4ac8069c65d2d946751807c844d3e279
 
 -	Layers:
 	-	`sha256:d94cea88216d8d248e740cd0f3c3b33469924a4dd6e6b913c14e789aab287885`  
-		Last Modified: Thu, 22 May 2025 12:32:47 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:45 GMT  
 		Size: 10.3 MB (10340640 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f35df58cd51394db4cdf2c233d9a18dec8850b99703dc62c20a2d5680d5c9087`  
-		Last Modified: Thu, 22 May 2025 12:32:46 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:43 GMT  
 		Size: 27.8 KB (27828 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -379,11 +379,11 @@ $ docker pull golang@sha256:29581a7e4b6fe1ef78be2ed09aab27c98b6a313773f729dcce8c
 
 -	Layers:
 	-	`sha256:3e9b8b69db83a70293e3f96edb4b02d89da0f800f4a576ff02fa32c3677ba78f`  
-		Last Modified: Thu, 22 May 2025 00:12:20 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:49 GMT  
 		Size: 10.3 MB (10292283 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4d683356f275389d3744106ae14a89d26b509b157d44dec05744cdb7f81ad203`  
-		Last Modified: Thu, 22 May 2025 00:12:20 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:46 GMT  
 		Size: 27.6 KB (27589 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -446,7 +446,7 @@ WORKDIR /go
 		Size: 72.9 MB (72929920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:27cb1c32f978f0f5c3282ab3d6751996d78ee08ad6753d5e3479244d4c4aaceb`  
-		Last Modified: Fri, 23 May 2025 04:59:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:47 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -470,7 +470,7 @@ $ docker pull golang@sha256:0b12221b1b0d59023cdd7380337ae8cbcc4b67d45e0a571dda25
 
 -	Layers:
 	-	`sha256:f9b452b45857d4564a97247752307dbd1b1210ea516b20dc6578fbf4f2ba3fcc`  
-		Last Modified: Fri, 23 May 2025 04:59:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:48 GMT  
 		Size: 27.5 KB (27539 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -557,11 +557,11 @@ $ docker pull golang@sha256:0c0c633b8cbaf793301e022744ec11e3f9bbeaf75e59f1ad33c7
 
 -	Layers:
 	-	`sha256:df0acd9213b978fb820ab3b13ab13030596245e95d2546f6338caf01d971c0f8`  
-		Last Modified: Thu, 22 May 2025 17:40:48 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:52 GMT  
 		Size: 10.3 MB (10285269 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7fe6297f1735d08d01cf0e2ff78ffe68f86d53ca06312973f9cd65e9dcda11d3`  
-		Last Modified: Thu, 22 May 2025 17:40:47 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:50 GMT  
 		Size: 27.7 KB (27717 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -648,11 +648,11 @@ $ docker pull golang@sha256:0f06f5284cf3da6f73f07cfe759cde6d514aa95a9a43ce46b947
 
 -	Layers:
 	-	`sha256:1303e93c24e6298a9095987fc830efee8161bd5651e1953dcf8bb644e1f8a9b6`  
-		Last Modified: Thu, 22 May 2025 06:45:24 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:53 GMT  
 		Size: 10.1 MB (10147396 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e3c7bdf713b0e598484c1507ba49f77a53bd0207361e35f03ca7b9fcf405ebf9`  
-		Last Modified: Thu, 22 May 2025 06:45:24 GMT  
+		Last Modified: Tue, 03 Jun 2025 18:18:52 GMT  
 		Size: 27.6 KB (27646 bytes)  
 		MIME: application/vnd.in-toto+json
 
