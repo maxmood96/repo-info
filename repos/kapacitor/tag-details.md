@@ -84,19 +84,19 @@ CMD ["kapacitord"]
 		Size: 7.1 MB (7103251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:539581737f1c584afbeeafe0f4a2da54013ad19715c13944f86921cc5116c1aa`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:21 GMT  
 		Size: 43.6 MB (43588504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64f387a32f78bfe609105966567e19d59bebb4104ff18d17c8bf96284987e5ce`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:24 GMT  
 		Size: 65.7 MB (65672995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39a1ae8e8151318ec3d00f68e3e289ce8dd78565a725bb5ef2c4275e276e782c`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:21 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7b32ba4215fd652f311b69d83b665b4ee0f10657c3daafbf3611a958b801d18`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:22 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -116,11 +116,11 @@ $ docker pull kapacitor@sha256:d9d7c8e3b5bf27b6362efeb5d27bff496eb56088c190ff494
 
 -	Layers:
 	-	`sha256:f7a009309437824c6ce4f78cbad32a7cc8669db38105295c2486dfd05cf441fd`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:12 GMT  
 		Size: 3.6 MB (3574608 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:78d1efe041241a62e140e14055a52d5ae89a7ee0d6ad95b01765fb1315ff34d0`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:14 GMT  
 		Size: 14.8 KB (14758 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -214,11 +214,11 @@ $ docker pull kapacitor@sha256:e1ecd6d820b0f950a208895f149350170fcfa06dee002a451
 
 -	Layers:
 	-	`sha256:4ae3ba52170199918fa8bd7fcc3ddf24f77d4e4eb2672ffd79040fdcc839b480`  
-		Last Modified: Tue, 03 Jun 2025 07:40:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:14 GMT  
 		Size: 3.6 MB (3574875 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8ca3e02b2866fb8797977a43dd24e114baafff0c128b139b136695b39d734596`  
-		Last Modified: Tue, 03 Jun 2025 07:40:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:16 GMT  
 		Size: 14.9 KB (14854 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -394,19 +394,19 @@ CMD ["kapacitord"]
 		Size: 7.1 MB (7103251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:539581737f1c584afbeeafe0f4a2da54013ad19715c13944f86921cc5116c1aa`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:21 GMT  
 		Size: 43.6 MB (43588504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64f387a32f78bfe609105966567e19d59bebb4104ff18d17c8bf96284987e5ce`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:24 GMT  
 		Size: 65.7 MB (65672995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39a1ae8e8151318ec3d00f68e3e289ce8dd78565a725bb5ef2c4275e276e782c`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:21 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7b32ba4215fd652f311b69d83b665b4ee0f10657c3daafbf3611a958b801d18`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:22 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -426,11 +426,11 @@ $ docker pull kapacitor@sha256:d9d7c8e3b5bf27b6362efeb5d27bff496eb56088c190ff494
 
 -	Layers:
 	-	`sha256:f7a009309437824c6ce4f78cbad32a7cc8669db38105295c2486dfd05cf441fd`  
-		Last Modified: Tue, 03 Jun 2025 05:12:59 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:12 GMT  
 		Size: 3.6 MB (3574608 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:78d1efe041241a62e140e14055a52d5ae89a7ee0d6ad95b01765fb1315ff34d0`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:14 GMT  
 		Size: 14.8 KB (14758 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -524,11 +524,11 @@ $ docker pull kapacitor@sha256:e1ecd6d820b0f950a208895f149350170fcfa06dee002a451
 
 -	Layers:
 	-	`sha256:4ae3ba52170199918fa8bd7fcc3ddf24f77d4e4eb2672ffd79040fdcc839b480`  
-		Last Modified: Tue, 03 Jun 2025 07:40:18 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:14 GMT  
 		Size: 3.6 MB (3574875 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8ca3e02b2866fb8797977a43dd24e114baafff0c128b139b136695b39d734596`  
-		Last Modified: Tue, 03 Jun 2025 07:40:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 17:35:16 GMT  
 		Size: 14.9 KB (14854 bytes)  
 		MIME: application/vnd.in-toto+json
 
