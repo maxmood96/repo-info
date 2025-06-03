@@ -41,7 +41,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 
 -	Layers:
 	-	`sha256:8e7bef4a92afca21c56c9f85e4e63885b320f1da8f8f82a1cf87af359faf57d3`  
-		Last Modified: Fri, 30 May 2025 20:51:21 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:31:00 GMT  
 		Size: 860.4 KB (860406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -84,7 +84,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 
 -	Layers:
 	-	`sha256:f24d681ac617a81b6bf760b56095830faa108a76bdab32ea722393a2d8c90151`  
-		Last Modified: Fri, 30 May 2025 21:03:49 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:53:15 GMT  
 		Size: 951.3 KB (951324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -150,7 +150,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 
 -	Layers:
 	-	`sha256:07b73337cea2a5d87c21278f251e1e742e253232ebd035d6a4a6d2cb4612e462`  
-		Last Modified: Fri, 30 May 2025 21:04:09 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:44:14 GMT  
 		Size: 892.1 KB (892107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -236,7 +236,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 
 -	Layers:
 	-	`sha256:f3f5d636887b8d56aabe29047a58ef074511f5252c722b1e476b7f79fd35fb7f`  
-		Last Modified: Fri, 30 May 2025 21:05:56 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:21:50 GMT  
 		Size: 943.7 KB (943684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,7 +279,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 
 -	Layers:
 	-	`sha256:17737180c892fb9eac75524ae789040f0b01415e6e05e063bc2b8f982b340d97`  
-		Last Modified: Fri, 30 May 2025 22:32:33 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:54:40 GMT  
 		Size: 923.4 KB (923440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -299,7 +299,7 @@ $ docker pull busybox@sha256:19c277fa260b32f1f3456eaab122f9e2e890c87c634fc30f96c
 
 -	Layers:
 	-	`sha256:f1f16982b5783a8b5bf140c6a3dcfce4ffac72d379c81df21774aed6a7980f04`  
-		Last Modified: Fri, 30 May 2025 22:32:32 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:54:49 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -322,7 +322,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 
 -	Layers:
 	-	`sha256:3bd977f75e22a5e164e2e6ac3556cee55053022e9ad8bba89614e7a8680791d1`  
-		Last Modified: Fri, 30 May 2025 21:03:26 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:21:50 GMT  
 		Size: 924.0 KB (923954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
