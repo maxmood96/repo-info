@@ -1,10 +1,10 @@
-# `openjdk:25-ea-24-jdk-bullseye`
+# `openjdk:25-ea-25-jdk-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c9a8bfea5a0f886c3e4fed2f82bf153d9031aba8a7dbdd20c7dc25aa11ae226`
-- Created: `2025-05-23T18:48:13Z`
-- Virtual Size: ~ 707.29 Mb  
+- Image ID: `sha256:b1fca81a4ebf79d595e1a810787744d5221ad979cf3148ed55dda699468d27ac`
+- Created: `2025-05-30T06:48:10Z`
+- Virtual Size: ~ 739.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-25`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=25-ea+24`
+  - `JAVA_VERSION=25-ea+25`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1277,21 +1277,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u6.dsc' krb5_1.18.3-6+deb11u6.dsc 3814 SHA256:a9f51d05d8d5d9aa2263c86648ec9b10ccee6b191cb0b3fb9210e2fb1d356936
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u6.debian.tar.xz' krb5_1.18.3-6+deb11u6.debian.tar.xz 115792 SHA256:51892c39de59436b34b9fe36b1620d9c14e57f9eb473a1809f19693750b9ffd3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u6/
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.3-7.1`
 
