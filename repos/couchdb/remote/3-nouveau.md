@@ -58,7 +58,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 
 -	Layers:
 	-	`sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62`  
-		Last Modified: Wed, 21 May 2025 22:27:39 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:15 GMT  
 		Size: 28.2 MB (28225330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9499470c9acbc00bcc886054c1cda3f5c8c36fbf550a642960f2726c99f7cccd`  
@@ -110,11 +110,11 @@ $ docker pull couchdb@sha256:e06b980a13665020a73a39fbad472958d45e6c263edc8c901c8
 
 -	Layers:
 	-	`sha256:6b81beb7bb8f78ee184908beda66bcd1024e3a72659520cb1cf1e11b7b3cc114`  
-		Last Modified: Wed, 21 May 2025 23:21:32 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:01:30 GMT  
 		Size: 3.5 MB (3503225 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4e797f8a70670a8c360e264c6b98942981c8680eb266df741b8e284dd2db0f5a`  
-		Last Modified: Wed, 21 May 2025 23:21:31 GMT  
+		Last Modified: Tue, 03 Jun 2025 14:01:31 GMT  
 		Size: 24.6 KB (24563 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -163,7 +163,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 
 -	Layers:
 	-	`sha256:b16f1b16678093d11ecfece1004207a40f9bc1b7d9d1d16a070c1db552038818`  
-		Last Modified: Wed, 21 May 2025 22:27:55 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 28.1 MB (28065280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:425d94455dcb95ad67cb2c4ce7c07c7a9412b45b73324a1d7f9bcdd23a026302`  
@@ -268,7 +268,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 
 -	Layers:
 	-	`sha256:fb6e196ef379785f6b759a20e90d74fe0566b240771695f724c27a44aa6cd3ce`  
-		Last Modified: Wed, 21 May 2025 22:28:38 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:31:54 GMT  
 		Size: 26.9 MB (26882808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a26396a1c92d005f1f73ce8a5a786829b16fd7bfeea83b11aab47577c79125a6`  
