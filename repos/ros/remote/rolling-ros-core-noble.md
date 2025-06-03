@@ -1,7 +1,7 @@
 ## `ros:rolling-ros-core-noble`
 
 ```console
-$ docker pull ros@sha256:3e33b3a343e54e3ea39e230fbe5bd98cddf097ce3a9a1be87c88b9a72407c276
+$ docker pull ros@sha256:e1ac8d9f1b353eee901f5c13f66741481b8a3f41ad9d3eff2a241c7a98486f9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -63,31 +63,31 @@ CMD ["bash"]
 
 -	Layers:
 	-	`sha256:d9d352c11bbd3880007953ed6eec1cbace76898828f3434984a0ca60672fdf5a`  
-		Last Modified: Thu, 29 May 2025 06:11:31 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 29.7 MB (29715337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7f9f16d221b9a193b1a080b2673609f80f64ede41f3f81c206698e992ac9fa1`  
-		Last Modified: Tue, 03 Jun 2025 09:47:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:40 GMT  
 		Size: 683.8 KB (683811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88f57e92d728e668d2ec085a2a883a4a34de7358c5ae73ab669d9d0dbd34242`  
-		Last Modified: Tue, 03 Jun 2025 09:47:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:40 GMT  
 		Size: 3.6 MB (3563720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b46c7bf8a560bdecd06b706f996ae07581fd85ea16d14584cfa8cec8aef4d2cc`  
-		Last Modified: Tue, 03 Jun 2025 09:47:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:41 GMT  
 		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:341fb3faa63f0489dab4f0a12e3b29eff9ce565faa7156b7f3d9055ed3ba6007`  
-		Last Modified: Tue, 03 Jun 2025 09:47:16 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:41 GMT  
 		Size: 270.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59f2ce02ff513de028c65887ea53630d7a99c801a501871898ce4c97695115ad`  
-		Last Modified: Tue, 03 Jun 2025 09:47:19 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:31:05 GMT  
 		Size: 123.3 MB (123309297 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8434c602a34bcd520302797433be6f8c41329d0a12bbfced7922b0ac74276902`  
-		Last Modified: Tue, 03 Jun 2025 09:47:17 GMT  
+		Last Modified: Tue, 03 Jun 2025 13:30:42 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -118,13 +118,13 @@ $ docker pull ros@sha256:0af802c8512563cf4fb9bfc90e2e1e72d60b4d7342cb0c65cb4a949
 ### `ros:rolling-ros-core-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:1b14a2af0c424fa0c68875a5aa33d2397e1e7f47b204efdc2ae60479809c6292
+$ docker pull ros@sha256:8665115e247c317f652c7573b717db759bd6a22171b9f7b89a5bd9571bb0cacd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.2 MB (151156386 bytes)**  
+-	Total Size: **151.2 MB (151182359 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93b6b70df5a711722a314ea3529de49b9c1fe21dad6270bf65951038b2ddba8e`
+-	Image ID: `sha256:56f281757c38e7c5e34a38e6cbd229f0af06692967663db4a37acb4fda027617`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -138,7 +138,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 10 Feb 2025 08:53:23 GMT
 LABEL org.opencontainers.image.version=24.04
 # Mon, 10 Feb 2025 08:53:23 GMT
-ADD file:1bafcbb31dbbcfab5d15f474524e7fdd408a80128ddb9f1743e9f39cfa86ce33 in / 
+ADD file:6eb9adae2c7e3a73446b74d4e61e58d6e1d0db6c07cc49612eb0b9f38fefef15 in / 
 # Mon, 10 Feb 2025 08:53:23 GMT
 CMD ["/bin/bash"]
 # Mon, 10 Feb 2025 08:53:23 GMT
@@ -166,55 +166,55 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:2f074dc76c5da961ce13817b02fa1e3c3070ad4b94970aa7f52f6c0d63b07696`  
-		Last Modified: Mon, 28 Apr 2025 10:53:55 GMT  
-		Size: 28.8 MB (28846876 bytes)  
+	-	`sha256:69c262fc30fc134b6d373dee8db695319c41d8b9489deb0f682565473bf29748`  
+		Last Modified: Tue, 03 Jun 2025 13:30:25 GMT  
+		Size: 28.9 MB (28851899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d2e6d631663d69d931328844662622971edf603268f55d74da74b2f1832435b`  
-		Last Modified: Mon, 05 May 2025 18:20:50 GMT  
-		Size: 683.7 KB (683725 bytes)  
+	-	`sha256:5e53fe1e2017fff7e98b20b2da2163f1490b2cf016eb94e1e8327d5e6133fed8`  
+		Last Modified: Tue, 03 Jun 2025 13:30:16 GMT  
+		Size: 684.0 KB (683990 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88ec84cbb756b62af9e3d14e9f2de6ea3bab2ef3004d88f35527f5b06731e5de`  
-		Last Modified: Mon, 05 May 2025 18:20:50 GMT  
-		Size: 3.6 MB (3561582 bytes)  
+	-	`sha256:3182864e52220424abbc2ed14f34194efd7a8651cbd58c9013d59badb6ce10bb`  
+		Last Modified: Tue, 03 Jun 2025 13:30:31 GMT  
+		Size: 3.6 MB (3562006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c3c6650198856d89ceb2205e3faf841383f08c4f761180ffb26aff4c61888cb`  
-		Last Modified: Mon, 05 May 2025 18:20:49 GMT  
-		Size: 2.0 KB (2002 bytes)  
+	-	`sha256:3b30261ce10ab5a3b7dce5ba78a1a951d5652cbf529e166b904f1bd8067ae7ab`  
+		Last Modified: Tue, 03 Jun 2025 13:30:21 GMT  
+		Size: 2.5 KB (2533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b4f33a49a4d32aa02eb8d0ed177d6f1618ea6ed82efb0abb3c82978bf9b2487`  
-		Last Modified: Mon, 05 May 2025 18:20:50 GMT  
-		Size: 273.0 B  
+	-	`sha256:ac3ede17908e49502f7fe6ff9399c21b4349b35f3533c331faba1f2970ddeecb`  
+		Last Modified: Tue, 03 Jun 2025 13:30:22 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c13f1440921d6c455b0c453b9a65e79b665657a36ee08beedc3e331c4c25011d`  
-		Last Modified: Mon, 05 May 2025 18:22:19 GMT  
-		Size: 118.1 MB (118061733 bytes)  
+	-	`sha256:cd1f4c48fa47caf9afea890bd995e3397de16a54fd781888ecbaa9b5688368a9`  
+		Last Modified: Tue, 03 Jun 2025 14:19:52 GMT  
+		Size: 118.1 MB (118081461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be707329a911eeedcd5bc240ead95bd8af739c7b6f591ca0cde4104a5fafec3`  
-		Last Modified: Mon, 05 May 2025 18:22:15 GMT  
-		Size: 195.0 B  
+	-	`sha256:56a93e6dc2b884b097ad111c9c09580eebb409db03ba379e3e847dc36468a587`  
+		Last Modified: Tue, 03 Jun 2025 13:56:36 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:rolling-ros-core-noble` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:4db35c64f1e50814a236b63560b43f70a3c692969efd1d71102ff373cc7f5f1c
+$ docker pull ros@sha256:d3682bfe3d2f4b3201b5ab0de8329041fc4af849730027c5a3b78a52c37e2a5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17784907 bytes)**  
+-	Total Size: **17.8 MB (17834279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d2cd61ba94c407732d6454796b01056d14622e3a6f6cf16921e184115f8df78`
+-	Image ID: `sha256:1c225ef0d65d9b0148e5006ce47f6347f7ac30d2b5105f4a0109338aad80c9c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c5e663008e11750d1a6c5fdf3b8081d3e6e7ec5ef7f8f71a2e967f03668cda09`  
-		Last Modified: Mon, 05 May 2025 18:22:16 GMT  
-		Size: 17.8 MB (17768373 bytes)  
+	-	`sha256:7b96616a89b5c750440091f4214b54e828973f3728edf26e22608cc8cc28b8b3`  
+		Last Modified: Tue, 03 Jun 2025 11:30:57 GMT  
+		Size: 17.8 MB (17817745 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:254f2dce752743def88345954574eb95219f7f52769549cec214b17f34e7816a`  
-		Last Modified: Mon, 05 May 2025 18:22:15 GMT  
+	-	`sha256:60a6b954149151c7067fc0801446ffb01f9f23677d1c349d4cf880218e755087`  
+		Last Modified: Tue, 03 Jun 2025 11:30:56 GMT  
 		Size: 16.5 KB (16534 bytes)  
 		MIME: application/vnd.in-toto+json
