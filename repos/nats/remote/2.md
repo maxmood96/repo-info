@@ -166,11 +166,11 @@ CMD ["--config" "nats-server.conf"]
 
 -	Layers:
 	-	`sha256:19256435976b7157e2b1275cbb60c3207747f51bdb7fb339a257b3be2e49c499`  
-		Last Modified: Thu, 22 May 2025 13:54:58 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:07:54 GMT  
 		Size: 6.0 MB (6025008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d9293b5f4677cf2db6d8d8a8a01b039e1134d378f77c7efe3d7b11072a3f4e4`  
-		Last Modified: Fri, 23 May 2025 12:02:01 GMT  
+		Last Modified: Tue, 03 Jun 2025 20:07:53 GMT  
 		Size: 509.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
