@@ -175,11 +175,11 @@ CMD ["kapacitord"]
 		Size: 67.8 MB (67813728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4990d453161f11fbc333be5ac6267e7e95f969c8f3be4dfd124ec0d1ea86e13d`  
-		Last Modified: Tue, 03 Jun 2025 07:40:45 GMT  
+		Last Modified: Tue, 03 Jun 2025 21:05:35 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc78a4f7e13158073f7489833bff5466dc9983fec345090b73d3b62bbd7853ee`  
-		Last Modified: Tue, 03 Jun 2025 07:40:45 GMT  
+		Last Modified: Tue, 03 Jun 2025 21:05:32 GMT  
 		Size: 296.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
