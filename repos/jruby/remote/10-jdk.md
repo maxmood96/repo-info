@@ -105,23 +105,23 @@ CMD ["irb"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0bd95084a075cce136da406cbad197649dd36078ae84fd98cd228dcb5731598`  
-		Last Modified: Tue, 03 Jun 2025 05:12:36 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:29:24 GMT  
 		Size: 6.0 MB (5961835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17593c88886312c7c76de623aae8c9fe06fda888fa5e19eff8def8e0939fb523`  
-		Last Modified: Tue, 03 Jun 2025 05:12:37 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:30:56 GMT  
 		Size: 33.9 MB (33893397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b12013fedee616d0f3ee617d1843c59df927e2025b012de83824431ec25cc120`  
-		Last Modified: Tue, 03 Jun 2025 05:12:35 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:31:05 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:009994aeca49fa25fd3e21351815c1860168dc81e975c9b63c73f774e6f9bff4`  
-		Last Modified: Tue, 03 Jun 2025 05:12:36 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:31:07 GMT  
 		Size: 13.4 MB (13405446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec302f5696755e9f330e1dae773e55c9478eca5bd7dcb26698338e7408081cd2`  
-		Last Modified: Tue, 03 Jun 2025 05:12:36 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:31:11 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -141,11 +141,11 @@ $ docker pull jruby@sha256:7b2559c3c2aab31770e0de8d46ab96b2fc1a2c330edadc95feaa8
 
 -	Layers:
 	-	`sha256:cd0dc83664519579fe17afd2214763c89cf714c318d012e37e6328c1d812435e`  
-		Last Modified: Tue, 03 Jun 2025 05:12:36 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:31:15 GMT  
 		Size: 4.8 MB (4784825 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a416ba8ca14c6c027eac5a64d02a3934dc6d01288056ed10a9c4bced3371fc89`  
-		Last Modified: Tue, 03 Jun 2025 05:12:35 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:31:16 GMT  
 		Size: 20.4 KB (20408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -243,23 +243,23 @@ CMD ["irb"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9afc416fdaaf61461dc4f79fe6ddf2da62ab73c6758848c4db46e231a5767a51`  
-		Last Modified: Tue, 03 Jun 2025 07:32:46 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:31:37 GMT  
 		Size: 4.9 MB (4874244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5186b43bbbf4b1c5435ae1f15418470064c30f96654226b249b528c11ca97b2d`  
-		Last Modified: Tue, 03 Jun 2025 07:32:46 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:32:49 GMT  
 		Size: 33.9 MB (33893431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5455a08fbdddbbb95fd503dcbfe0e2be54d1b437727b603eb822b655ae5fda6`  
-		Last Modified: Tue, 03 Jun 2025 07:32:45 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:32:58 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54854e164df3c892fff2c70e3909f9637b8300ccd4bb791f9daada124ac998db`  
-		Last Modified: Tue, 03 Jun 2025 07:32:46 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:33:01 GMT  
 		Size: 13.5 MB (13473669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3441ca61a41acff22499629d9ef5c7d531d54e450ca059de4fdb336203d9aeb`  
-		Last Modified: Tue, 03 Jun 2025 07:32:46 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:33:04 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,10 +279,10 @@ $ docker pull jruby@sha256:677bd4e42541f2fb5a2dc2699d9a56dc2947a2c4e79326c85c565
 
 -	Layers:
 	-	`sha256:e1c4de8efc370850d9a2047d169737ccb3874deb7d910c375e0a4ac1869255cd`  
-		Last Modified: Tue, 03 Jun 2025 07:32:46 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:33:08 GMT  
 		Size: 4.9 MB (4888916 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f3b69092fd591e52786b1674308fe0ba24e5067eeee167fd024954ca06cd41ab`  
-		Last Modified: Tue, 03 Jun 2025 07:32:45 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:33:10 GMT  
 		Size: 20.6 KB (20620 bytes)  
 		MIME: application/vnd.in-toto+json
