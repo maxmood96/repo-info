@@ -86,7 +86,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e749f6475cadf4afd508e15603543c680150a2dcf6641c3d8a64a766c1bc71bc`  
-		Last Modified: Wed, 21 May 2025 23:21:35 GMT  
+		Last Modified: Wed, 04 Jun 2025 05:54:53 GMT  
 		Size: 42.4 MB (42434239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:002a25bfa7ceaa38750737429b07cefd358da6cdc7699c3062c6602c8a5db5bc`  
