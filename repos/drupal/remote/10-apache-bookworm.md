@@ -203,11 +203,11 @@ $ docker pull drupal@sha256:407fba55d226e83a38edc56eec399c6daab7273c7e0f511515f3
 
 -	Layers:
 	-	`sha256:8e09a62d6f5013de8335f4ccd6e44fcc4eb3e6e4b16270ef2ad1d3cb250933d7`  
-		Last Modified: Wed, 21 May 2025 23:40:08 GMT  
+		Last Modified: Wed, 04 Jun 2025 18:55:07 GMT  
 		Size: 6.9 MB (6893232 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da8fb021dca3eae3bde3434211d6c88d6221e4face49052d5b5ab085bda1bea8`  
-		Last Modified: Wed, 21 May 2025 23:40:07 GMT  
+		Last Modified: Wed, 04 Jun 2025 18:55:09 GMT  
 		Size: 41.0 KB (41043 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -395,11 +395,11 @@ $ docker pull drupal@sha256:bced8aa6f955c4a28c15172600832d43aeceedd616445771f49b
 
 -	Layers:
 	-	`sha256:f2f894b328d85f153e8e7371f5de5f047de44f483f956780346c40b5011fda1f`  
-		Last Modified: Thu, 22 May 2025 12:35:04 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:42:59 GMT  
 		Size: 6.7 MB (6706677 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ffbc5a4839f8d7ab1e85ba0acc0785715dc288b89c30afe807a03254b01414a9`  
-		Last Modified: Thu, 22 May 2025 12:35:03 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:00 GMT  
 		Size: 41.3 KB (41273 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -587,11 +587,11 @@ $ docker pull drupal@sha256:edd3cbe869a5789d3345d5ec76142a9cf891ac79446e66fb9360
 
 -	Layers:
 	-	`sha256:ae9d9dab286bf777f822bb76eefeb5dd144d0152b5b2338c6595e7d5e005ddb2`  
-		Last Modified: Thu, 22 May 2025 09:37:25 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:06 GMT  
 		Size: 6.9 MB (6921812 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:072ea22ba25929286f91b08d18ae421748f1ede050008a576939e18ef05d68c0`  
-		Last Modified: Thu, 22 May 2025 09:37:25 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:07 GMT  
 		Size: 41.4 KB (41365 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -779,11 +779,11 @@ $ docker pull drupal@sha256:9cf34e358319fa17406f1e5c1ee577f2710cee0d8aa38ab4f7aa
 
 -	Layers:
 	-	`sha256:6ff44a9d0d3d19d80051f0ec34ce1b35bea5a4e22f431a9733ceb297e6432f39`  
-		Last Modified: Wed, 21 May 2025 23:39:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:14 GMT  
 		Size: 6.9 MB (6872912 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45e16afdb0b9dc888cca77779e8d2bf6410789773234cc5536c4fe693850041d`  
-		Last Modified: Wed, 21 May 2025 23:39:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:14 GMT  
 		Size: 40.9 KB (40930 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -971,11 +971,11 @@ $ docker pull drupal@sha256:1c036250f4ec48c3a8689c53d2b032ba50660299e7b0a157be41
 
 -	Layers:
 	-	`sha256:e0246baeb00c73e2a2be34a44c2098cdb3a276ac78e0423bf401ee81191b888d`  
-		Last Modified: Thu, 22 May 2025 12:52:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:21 GMT  
 		Size: 6.9 MB (6870147 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:688edfbdc15a1f148babf56c361e3bc799712ec106243b242e390436c82aa021`  
-		Last Modified: Thu, 22 May 2025 12:52:55 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:22 GMT  
 		Size: 41.2 KB (41185 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1163,10 +1163,10 @@ $ docker pull drupal@sha256:28db76ef0f78f757978ac2f36c26ac01e361cdc935e34224f6d2
 
 -	Layers:
 	-	`sha256:950eb66c385c342e704506fee912f1fb00c3a141e11350907ec6b8c8b02e1cac`  
-		Last Modified: Thu, 22 May 2025 04:47:44 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:29 GMT  
 		Size: 6.7 MB (6733327 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e121470003e470658c23dc8013301b23cafc52ccb75b0b80a905d4615a21ce54`  
-		Last Modified: Thu, 22 May 2025 04:47:44 GMT  
+		Last Modified: Wed, 04 Jun 2025 19:43:30 GMT  
 		Size: 41.0 KB (41037 bytes)  
 		MIME: application/vnd.in-toto+json

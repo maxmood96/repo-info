@@ -181,11 +181,11 @@ $ docker pull drupal@sha256:88900c35c47d4beb2d13c909ff71e642e83649c456c5c2975819
 
 -	Layers:
 	-	`sha256:6051c616caa9ad77e8b864d3c3120b26e068ae1ad0596fb6776b3e83de6adacd`  
-		Last Modified: Wed, 21 May 2025 23:38:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 18:36:35 GMT  
 		Size: 6.4 MB (6378865 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:924c63e3810be2b583c4db419d6e85d8d09e15e059bbb761d7fb5ffc511a8136`  
-		Last Modified: Wed, 21 May 2025 23:38:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 18:36:37 GMT  
 		Size: 34.9 KB (34907 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -295,15 +295,15 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5302c25e3ce6e3576ab961f94e55487178e15268bee9e694e8c8228f677f8f8e`  
-		Last Modified: Thu, 22 May 2025 00:15:01 GMT  
+		Last Modified: Wed, 04 Jun 2025 20:46:06 GMT  
 		Size: 27.6 MB (27588253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b99f57aa75fc6e91cdf72aa8edfd2558d4a554b833b467387953ebca2c4d053`  
-		Last Modified: Thu, 22 May 2025 00:15:00 GMT  
+		Last Modified: Wed, 04 Jun 2025 20:46:03 GMT  
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c931ab8bb0ef4ac7a3db625d4c694453cf602f1bccb9a39a64bdd0dbbd9f09e1`  
-		Last Modified: Thu, 22 May 2025 00:15:00 GMT  
+		Last Modified: Wed, 04 Jun 2025 20:46:03 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -311,7 +311,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1eb5684d5a4098836bbcf0102f9a59981f7ec97ca24e1984c84da0606ce2d308`  
-		Last Modified: Thu, 22 May 2025 00:15:00 GMT  
+		Last Modified: Wed, 04 Jun 2025 20:46:02 GMT  
 		Size: 9.2 KB (9197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32f8ee6da3de35b9c38630c7ad35073ae056d78b185e5da467df45232d29db02`  

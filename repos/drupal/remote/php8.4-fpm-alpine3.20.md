@@ -187,11 +187,11 @@ $ docker pull drupal@sha256:ee0870c8138439fdff20c57571d6d4a96185f88bc67e92b91efc
 
 -	Layers:
 	-	`sha256:3431360d6c8c16315b8b9104a0693c236711d5f203ee5e7ffbe121589c568e0b`  
-		Last Modified: Thu, 15 May 2025 19:06:09 GMT  
+		Last Modified: Wed, 04 Jun 2025 18:31:19 GMT  
 		Size: 360.1 KB (360128 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8767d5331701af20841555c0e75d7266dd99bd5db79558211abf4b84b5e84730`  
-		Last Modified: Thu, 15 May 2025 19:06:08 GMT  
+		Last Modified: Wed, 04 Jun 2025 18:31:20 GMT  
 		Size: 32.4 KB (32380 bytes)  
 		MIME: application/vnd.in-toto+json
 
