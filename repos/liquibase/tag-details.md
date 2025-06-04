@@ -471,11 +471,11 @@ $ docker pull liquibase@sha256:320a5a919092cea878a339300632114dee3cb4852d0982765
 
 -	Layers:
 	-	`sha256:6779fcfccf29fba7d611a59c6a302f2d36f8ffd99ccd7b0c7e93b181855567f3`  
-		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:44 GMT  
 		Size: 403.2 KB (403239 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d1393290584387fe56550a652f4a981566d37297b4d14f5ecce2866124751255`  
-		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:44 GMT  
 		Size: 21.7 KB (21711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -595,11 +595,11 @@ $ docker pull liquibase@sha256:a2ba65aaa27cd37509f5c48e4d79ad933b55d857b0b361551
 
 -	Layers:
 	-	`sha256:de4ebc5acfd594b876bcf89cb72433b4b269d9b314403a4e64410bb4ea06ab0f`  
-		Last Modified: Fri, 23 May 2025 17:09:20 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:49 GMT  
 		Size: 402.5 KB (402486 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6c6aef5a59e7465653b4094cc2fc207c7a0c2dacbee07b2ada9f02a5f7e820d3`  
-		Last Modified: Fri, 23 May 2025 17:09:20 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:49 GMT  
 		Size: 21.8 KB (21847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1065,11 +1065,11 @@ $ docker pull liquibase@sha256:320a5a919092cea878a339300632114dee3cb4852d0982765
 
 -	Layers:
 	-	`sha256:6779fcfccf29fba7d611a59c6a302f2d36f8ffd99ccd7b0c7e93b181855567f3`  
-		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:44 GMT  
 		Size: 403.2 KB (403239 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d1393290584387fe56550a652f4a981566d37297b4d14f5ecce2866124751255`  
-		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:44 GMT  
 		Size: 21.7 KB (21711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1189,11 +1189,11 @@ $ docker pull liquibase@sha256:a2ba65aaa27cd37509f5c48e4d79ad933b55d857b0b361551
 
 -	Layers:
 	-	`sha256:de4ebc5acfd594b876bcf89cb72433b4b269d9b314403a4e64410bb4ea06ab0f`  
-		Last Modified: Fri, 23 May 2025 17:09:20 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:49 GMT  
 		Size: 402.5 KB (402486 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6c6aef5a59e7465653b4094cc2fc207c7a0c2dacbee07b2ada9f02a5f7e820d3`  
-		Last Modified: Fri, 23 May 2025 17:09:20 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:49 GMT  
 		Size: 21.8 KB (21847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1326,11 +1326,11 @@ $ docker pull liquibase@sha256:320a5a919092cea878a339300632114dee3cb4852d0982765
 
 -	Layers:
 	-	`sha256:6779fcfccf29fba7d611a59c6a302f2d36f8ffd99ccd7b0c7e93b181855567f3`  
-		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:44 GMT  
 		Size: 403.2 KB (403239 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d1393290584387fe56550a652f4a981566d37297b4d14f5ecce2866124751255`  
-		Last Modified: Fri, 23 May 2025 17:07:56 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:44 GMT  
 		Size: 21.7 KB (21711 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1450,11 +1450,11 @@ $ docker pull liquibase@sha256:a2ba65aaa27cd37509f5c48e4d79ad933b55d857b0b361551
 
 -	Layers:
 	-	`sha256:de4ebc5acfd594b876bcf89cb72433b4b269d9b314403a4e64410bb4ea06ab0f`  
-		Last Modified: Fri, 23 May 2025 17:09:20 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:49 GMT  
 		Size: 402.5 KB (402486 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6c6aef5a59e7465653b4094cc2fc207c7a0c2dacbee07b2ada9f02a5f7e820d3`  
-		Last Modified: Fri, 23 May 2025 17:09:20 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:04:49 GMT  
 		Size: 21.8 KB (21847 bytes)  
 		MIME: application/vnd.in-toto+json
 
