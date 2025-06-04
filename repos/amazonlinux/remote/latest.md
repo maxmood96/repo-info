@@ -52,11 +52,11 @@ $ docker pull amazonlinux@sha256:38619ba6fc6c7740af609d30798f409039b0deb6bb5bbe9
 
 -	Layers:
 	-	`sha256:35c8a56ff1f7f9ab6b80a8777419685fe4e46e07d11fd28734e05a13bb65ef3e`  
-		Last Modified: Fri, 30 May 2025 18:08:14 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:25:48 GMT  
 		Size: 4.7 MB (4663408 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5a7aa99445f4a1aa37524061c6b9d42d11055352dc65627163b972186f7ddb6`  
-		Last Modified: Fri, 30 May 2025 18:08:14 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:25:49 GMT  
 		Size: 8.8 KB (8823 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -101,10 +101,10 @@ $ docker pull amazonlinux@sha256:4e194b4a00159f9acd96f54f0da7ae97fa4f1e2ff56dd65
 
 -	Layers:
 	-	`sha256:cf8e252ea9693e7ab9118f11a8b60fadb40024f2fdd70118e681e4bee1de118f`  
-		Last Modified: Fri, 30 May 2025 18:27:12 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:25:54 GMT  
 		Size: 4.7 MB (4662915 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4626debd546278d09014efd1303e52e88d4a0d4ca09e2bd68101042ef5a1f62d`  
-		Last Modified: Fri, 30 May 2025 18:27:11 GMT  
+		Last Modified: Wed, 04 Jun 2025 00:25:54 GMT  
 		Size: 8.9 KB (8916 bytes)  
 		MIME: application/vnd.in-toto+json
