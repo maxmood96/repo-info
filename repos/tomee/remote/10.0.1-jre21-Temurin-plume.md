@@ -135,11 +135,11 @@ $ docker pull tomee@sha256:acfcf089e99e5c86460a4f5d5be13495a4b1de2c0ff318d13320f
 
 -	Layers:
 	-	`sha256:1ff0ec24e2ff158c023a98aeef580a7b1435e99b569caf97a31020af2e140b1c`  
-		Last Modified: Tue, 03 Jun 2025 05:14:16 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:20:27 GMT  
 		Size: 3.6 MB (3566945 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5aad72b59559ac3ddaa6f8943143dc5ffc4b5660849fd11d3036d5b6c46efaa`  
-		Last Modified: Tue, 03 Jun 2025 05:14:16 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:20:28 GMT  
 		Size: 34.4 KB (34413 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -247,7 +247,7 @@ CMD ["catalina.sh" "run"]
 		Size: 75.6 KB (75645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eba1071aafb2a18ca521acd19eaa365a1339cc387a406956ff32122d0811a12f`  
-		Last Modified: Tue, 03 Jun 2025 10:12:33 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:20:35 GMT  
 		Size: 82.3 MB (82341522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -267,10 +267,10 @@ $ docker pull tomee@sha256:f9a04430312fc11a11c13daabeeae745db3f28f8373f9c0e8614d
 
 -	Layers:
 	-	`sha256:1bd6b5f8cc651bdf10f4c01b1c8ee81df6ce5f79daf50790c8f77ca5f43ad6af`  
-		Last Modified: Tue, 03 Jun 2025 10:12:30 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:20:45 GMT  
 		Size: 3.6 MB (3567752 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:68bb1b2179e6a6371f53ad364e09d2bd589f3ae9fd076cfd59ffe8ff8f1db6f6`  
-		Last Modified: Tue, 03 Jun 2025 10:12:30 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:20:48 GMT  
 		Size: 34.9 KB (34897 bytes)  
 		MIME: application/vnd.in-toto+json
