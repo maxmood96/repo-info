@@ -141,7 +141,7 @@ $ docker pull unit@sha256:41c12865a1f0cc2e9bcdda3530569317d0187e5a5c300fc41d777f
 
 -	Layers:
 	-	`sha256:e51bb14189d77822044df6cc70090e781ff83557d0d3555eeec62c556bcce261`  
-		Last Modified: Thu, 22 May 2025 02:14:45 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:26:53 GMT  
 		Size: 28.6 KB (28613 bytes)  
 		MIME: application/vnd.in-toto+json
 
