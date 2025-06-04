@@ -87,11 +87,11 @@ $ docker pull emqx@sha256:6560eaf1c2eaae0b828df266af312dfdd1dddda8fe08bfa5ae7bf7
 
 -	Layers:
 	-	`sha256:449274ae78aa041ac77737214e56193cd43c0881723f2c85bf57c9131b7adc0b`  
-		Last Modified: Wed, 21 May 2025 23:12:09 GMT  
+		Last Modified: Wed, 04 Jun 2025 13:45:05 GMT  
 		Size: 2.6 MB (2637659 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45ea7e2d146e0e8fea25a6431663c230a255bd6823df1b0e06cc5da2170481d0`  
-		Last Modified: Wed, 21 May 2025 23:12:09 GMT  
+		Last Modified: Wed, 04 Jun 2025 13:45:06 GMT  
 		Size: 12.5 KB (12529 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -171,10 +171,10 @@ $ docker pull emqx@sha256:9703edb1d241e8a0d47e95657530feb8f4d8aecc68077b19f84673
 
 -	Layers:
 	-	`sha256:910e84a7251a931c3ade04975330447dbf0aab3534ac942cfd7f1c65ec137ff0`  
-		Last Modified: Wed, 21 May 2025 23:14:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 13:45:04 GMT  
 		Size: 2.6 MB (2637939 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f639a04a2f1f13461d671647c5f117bf0e9d6758af58a857ce6ecc5f6f05909c`  
-		Last Modified: Wed, 21 May 2025 23:14:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 13:45:06 GMT  
 		Size: 12.6 KB (12632 bytes)  
 		MIME: application/vnd.in-toto+json
