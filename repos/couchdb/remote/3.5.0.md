@@ -249,11 +249,11 @@ $ docker pull couchdb@sha256:822fa8389880291b661473d9dbee399d9264746471de8c1a28b
 
 -	Layers:
 	-	`sha256:8f60b28bb0c99463abf6dde4e4c9dd13dbf846d35cde8ceffd45b8b42e601dad`  
-		Last Modified: Thu, 22 May 2025 02:51:44 GMT  
+		Last Modified: Wed, 04 Jun 2025 09:28:49 GMT  
 		Size: 4.0 MB (4005604 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c708132ec232a0f7f19927a3aca827e5ea1b8afd46888f77b96d93ccd64928ea`  
-		Last Modified: Thu, 22 May 2025 02:51:44 GMT  
+		Last Modified: Wed, 04 Jun 2025 09:28:39 GMT  
 		Size: 32.0 KB (31975 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -371,10 +371,10 @@ $ docker pull couchdb@sha256:636b405f48663602370accde8d8bdac3d47d86051471d1734ec
 
 -	Layers:
 	-	`sha256:c8cb70efa326f50969856150cf5c10d1b1700062b0465df1ef7c61d992759afc`  
-		Last Modified: Thu, 22 May 2025 01:04:37 GMT  
+		Last Modified: Wed, 04 Jun 2025 09:28:45 GMT  
 		Size: 4.0 MB (4004399 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:eaa0b8b821b8a67c0bf0425f63deb4111df467de46101259a3c149b787203648`  
-		Last Modified: Thu, 22 May 2025 01:04:37 GMT  
+		Last Modified: Wed, 04 Jun 2025 09:28:41 GMT  
 		Size: 31.8 KB (31781 bytes)  
 		MIME: application/vnd.in-toto+json
