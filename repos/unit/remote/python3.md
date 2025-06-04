@@ -137,7 +137,7 @@ $ docker pull unit@sha256:305aa58d731bee7af6a57652904f72fb11f2f629acf81f487524ab
 
 -	Layers:
 	-	`sha256:16275633c447b4b07f81a61227a83176726735b92b58ae312f753b9de72efb22`  
-		Last Modified: Thu, 22 May 2025 02:14:52 GMT  
+		Last Modified: Wed, 04 Jun 2025 10:18:14 GMT  
 		Size: 28.6 KB (28564 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -239,15 +239,15 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2e8910eb7314e932fcaa2230b0589092adc73772050ab1e2113ce991cf64449`  
-		Last Modified: Thu, 22 May 2025 20:36:42 GMT  
+		Last Modified: Wed, 04 Jun 2025 10:18:29 GMT  
 		Size: 21.2 MB (21238758 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b521ec6a4b08cb96e27e4d407aeab5f4c98a17dbc7f93ce712b9cffd0e78641`  
-		Last Modified: Thu, 22 May 2025 20:36:41 GMT  
+		Last Modified: Wed, 04 Jun 2025 10:18:31 GMT  
 		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b02a35c715754d4c4b634edc6b6fd3dad3da411f48a91c2ce5e52411e8f06ca4`  
-		Last Modified: Thu, 22 May 2025 20:36:42 GMT  
+		Last Modified: Wed, 04 Jun 2025 10:18:32 GMT  
 		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -267,6 +267,6 @@ $ docker pull unit@sha256:da9868b86f0e2846c0aba1bd91f110b492fcd9829bc4d6b7583012
 
 -	Layers:
 	-	`sha256:52ae11fd355134edd429017e52745ae3d298f8da3e1e094adc4236cb705ca37e`  
-		Last Modified: Thu, 22 May 2025 20:36:41 GMT  
+		Last Modified: Wed, 04 Jun 2025 10:18:35 GMT  
 		Size: 28.7 KB (28668 bytes)  
 		MIME: application/vnd.in-toto+json
