@@ -259,10 +259,10 @@ $ docker pull sonarqube@sha256:61c6ea67b8e4472d3d098b23edcfceffcf67dac3eda61c75e
 
 -	Layers:
 	-	`sha256:5f1096a25ab821dc3387bed0dde42253141fdcca2de14982f4ffb1c0446b57df`  
-		Last Modified: Tue, 03 Jun 2025 08:27:43 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:30:48 GMT  
 		Size: 4.4 MB (4407103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:97b9cd1e9b2dbbcf2c4f5391d942944710f70e7f22258d6ad4fa1d6a0bdf6530`  
-		Last Modified: Tue, 03 Jun 2025 08:27:42 GMT  
+		Last Modified: Wed, 04 Jun 2025 03:30:50 GMT  
 		Size: 18.5 KB (18458 bytes)  
 		MIME: application/vnd.in-toto+json
