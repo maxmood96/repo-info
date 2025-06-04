@@ -1945,7 +1945,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 136.6 MB (136628900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0acf0411bfebaa7eda25bf7999ce9a60880949b45c8078b26fd822e676ebbb51`  
-		Last Modified: Tue, 03 Jun 2025 07:48:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:37:13 GMT  
 		Size: 118.1 KB (118078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea5927c63d37bc5d0bbdd91628a801441c250df1ac04d55f0ab35247ac5a8b04`  
@@ -1953,27 +1953,27 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 17.4 MB (17436560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb094e337d4c28b088de2894172d0ff4dec32ba48db76eefb4b41196cb64752`  
-		Last Modified: Tue, 03 Jun 2025 07:48:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:21:51 GMT  
 		Size: 587.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cbd74db79c3dbdfa10f6796b21eacd43edf43660ea83c3e0608c0bf3959f9f6`  
-		Last Modified: Tue, 03 Jun 2025 07:48:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:27:16 GMT  
 		Size: 1.5 KB (1523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a1911c3d7573fe23c600bf5f65ff076d135e77f4b2da09253e0b115198941d9`  
-		Last Modified: Tue, 03 Jun 2025 07:48:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:31:51 GMT  
 		Size: 11.9 KB (11917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1ed75cc9c6b1a5afc8f79682f8961abc89e1a2543a9ee6aa7a7d292e4cd250b`  
-		Last Modified: Tue, 03 Jun 2025 07:48:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:22:55 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8f3c627f580100a6358bd623944fd8fb6d4474bb0c240a5a7264e806546bca6`  
-		Last Modified: Tue, 03 Jun 2025 07:48:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:19:03 GMT  
 		Size: 12.7 KB (12729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40096bc24f0f05112299aaedd4ae05357244eb97fd7f816cfb651614dee335e3`  
-		Last Modified: Tue, 03 Jun 2025 07:49:01 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:33:07 GMT  
 		Size: 5.4 MB (5418367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7566251e8ad0078f9e99549ec62bbf1b0101e75a7ca6eeb614412045b6495baa`  
@@ -2168,7 +2168,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 359.4 MB (359362921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd5274bb7f9e901609a84d439ecd50b238a0eed7717689e1e027a3bbca6104bc`  
-		Last Modified: Tue, 03 Jun 2025 07:34:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:27:16 GMT  
 		Size: 948.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:831ee7facf5638fee3d76178ef8602310f42c07132e80cef4163a7840d83ff79`  
@@ -3887,7 +3887,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 136.6 MB (136628900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0acf0411bfebaa7eda25bf7999ce9a60880949b45c8078b26fd822e676ebbb51`  
-		Last Modified: Tue, 03 Jun 2025 07:48:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:37:13 GMT  
 		Size: 118.1 KB (118078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea5927c63d37bc5d0bbdd91628a801441c250df1ac04d55f0ab35247ac5a8b04`  
@@ -3895,27 +3895,27 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 17.4 MB (17436560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb094e337d4c28b088de2894172d0ff4dec32ba48db76eefb4b41196cb64752`  
-		Last Modified: Tue, 03 Jun 2025 07:48:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:21:51 GMT  
 		Size: 587.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cbd74db79c3dbdfa10f6796b21eacd43edf43660ea83c3e0608c0bf3959f9f6`  
-		Last Modified: Tue, 03 Jun 2025 07:48:58 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:27:16 GMT  
 		Size: 1.5 KB (1523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a1911c3d7573fe23c600bf5f65ff076d135e77f4b2da09253e0b115198941d9`  
-		Last Modified: Tue, 03 Jun 2025 07:48:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:31:51 GMT  
 		Size: 11.9 KB (11917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1ed75cc9c6b1a5afc8f79682f8961abc89e1a2543a9ee6aa7a7d292e4cd250b`  
-		Last Modified: Tue, 03 Jun 2025 07:48:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:22:55 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8f3c627f580100a6358bd623944fd8fb6d4474bb0c240a5a7264e806546bca6`  
-		Last Modified: Tue, 03 Jun 2025 07:48:59 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:19:03 GMT  
 		Size: 12.7 KB (12729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40096bc24f0f05112299aaedd4ae05357244eb97fd7f816cfb651614dee335e3`  
-		Last Modified: Tue, 03 Jun 2025 07:49:01 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:33:07 GMT  
 		Size: 5.4 MB (5418367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -6021,7 +6021,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 136.6 MB (136628900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:248859a2ea2da12f01695f930ec4bd4e6f35af255a85d044dd3b208a6fb9ccf6`  
-		Last Modified: Tue, 03 Jun 2025 07:50:27 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:38:34 GMT  
 		Size: 118.1 KB (118079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b79733ff37d123ad353d874c5f1c3192a32c572d5bf6faf6afc6b2627210870e`  
@@ -6029,27 +6029,27 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 17.5 MB (17535684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:016575d0d89512c625b2bacb887223ffa0824bf7713bd159f1257d0855801406`  
-		Last Modified: Tue, 03 Jun 2025 07:50:27 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:35:38 GMT  
 		Size: 591.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c52e68ef10ee6a17b419e24b7076fce1ecd1b69a2def7d310f4df6387c6db00b`  
-		Last Modified: Tue, 03 Jun 2025 07:50:27 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:43:50 GMT  
 		Size: 1.5 KB (1525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a17864caaae63646cdfd3c81520e6882ecbe3b3c02fd0088f60e9a614f8409bf`  
-		Last Modified: Tue, 03 Jun 2025 07:50:28 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:26:14 GMT  
 		Size: 12.3 KB (12318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbfffa525f363b20ff5f24db718fbd13e1d020815d419d53583a83903f0359d2`  
-		Last Modified: Tue, 03 Jun 2025 07:50:28 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:33:31 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d753232f54d1f2a1350678a9e23b8a600dcf4013ac244ecfa6bd54633a77a600`  
-		Last Modified: Tue, 03 Jun 2025 07:50:28 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:43:37 GMT  
 		Size: 13.1 KB (13128 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2e172da3ed32e8b64a456218d7301af26a414636e82c98af5ea07c90417b391`  
-		Last Modified: Tue, 03 Jun 2025 07:50:29 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:21:42 GMT  
 		Size: 5.4 MB (5382224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb081e7eecc59bf428ef8c195087e38caac670aaca0c01b637bcefb016289182`  
@@ -6244,7 +6244,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 358.7 MB (358662914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7aa3f6876226d17f69fd87747c911496f8525860aa6fc53a76a6d9492ccbbb0`  
-		Last Modified: Tue, 03 Jun 2025 07:44:34 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:32:30 GMT  
 		Size: 952.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad7cdda3e5c23b7a9162f875e924a0cad5f5991f0f8052ac08f51fbce3649434`  
@@ -7963,7 +7963,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 136.6 MB (136628900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:248859a2ea2da12f01695f930ec4bd4e6f35af255a85d044dd3b208a6fb9ccf6`  
-		Last Modified: Tue, 03 Jun 2025 07:50:27 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:38:34 GMT  
 		Size: 118.1 KB (118079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b79733ff37d123ad353d874c5f1c3192a32c572d5bf6faf6afc6b2627210870e`  
@@ -7971,27 +7971,27 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 		Size: 17.5 MB (17535684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:016575d0d89512c625b2bacb887223ffa0824bf7713bd159f1257d0855801406`  
-		Last Modified: Tue, 03 Jun 2025 07:50:27 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:35:38 GMT  
 		Size: 591.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c52e68ef10ee6a17b419e24b7076fce1ecd1b69a2def7d310f4df6387c6db00b`  
-		Last Modified: Tue, 03 Jun 2025 07:50:27 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:43:50 GMT  
 		Size: 1.5 KB (1525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a17864caaae63646cdfd3c81520e6882ecbe3b3c02fd0088f60e9a614f8409bf`  
-		Last Modified: Tue, 03 Jun 2025 07:50:28 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:26:14 GMT  
 		Size: 12.3 KB (12318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbfffa525f363b20ff5f24db718fbd13e1d020815d419d53583a83903f0359d2`  
-		Last Modified: Tue, 03 Jun 2025 07:50:28 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:33:31 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d753232f54d1f2a1350678a9e23b8a600dcf4013ac244ecfa6bd54633a77a600`  
-		Last Modified: Tue, 03 Jun 2025 07:50:28 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:43:37 GMT  
 		Size: 13.1 KB (13128 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2e172da3ed32e8b64a456218d7301af26a414636e82c98af5ea07c90417b391`  
-		Last Modified: Tue, 03 Jun 2025 07:50:29 GMT  
+		Last Modified: Wed, 04 Jun 2025 21:21:42 GMT  
 		Size: 5.4 MB (5382224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
