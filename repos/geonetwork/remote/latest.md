@@ -327,7 +327,7 @@ VOLUME [/catalogue-data]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f21c904987a032b305f3c47dc820f0664f0c3f78863e77324782d151ec5b0e2`  
-		Last Modified: Tue, 03 Jun 2025 07:25:00 GMT  
+		Last Modified: Wed, 04 Jun 2025 17:25:24 GMT  
 		Size: 10.3 MB (10291166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
