@@ -59,19 +59,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.1.dsc' apt_3.0.1.dsc 3169 SHA256:1c199019bc7d4e8954008d9b4b1998a4ae8e1d95153a2eae93483c6d07843468
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.1.tar.xz' apt_3.0.1.tar.xz 2421000 SHA256:60128e651f96fda2f747d95d424bbb46e25e95eca8a587ae8f8cd4794728cc6f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.0.1/
 
-- https://sources.debian.net/src/apt/3.0.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1272,11 +1266,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris icu=76.1-3
-'http://http.debian.net/debian/pool/main/i/icu/icu_76.1-3.dsc' icu_76.1-3.dsc 2236 SHA256:79dd7a3643acddc5218ceb597320edbe01a3fc9b0f9c7a2b456694afac4bbb15
-'http://http.debian.net/debian/pool/main/i/icu/icu_76.1.orig.tar.gz' icu_76.1.orig.tar.gz 27437767 SHA256:dfacb46bfe4747410472ce3e1144bf28a102feeaa4e3875bac9b4c6cf30f4f3e
-'http://http.debian.net/debian/pool/main/i/icu/icu_76.1.orig.tar.gz.asc' icu_76.1.orig.tar.gz.asc 228 SHA256:6ef6ef96376eb6550f2b450e08b84c29238f60a77b89273f1521e1b57db73472
-'http://http.debian.net/debian/pool/main/i/icu/icu_76.1-3.debian.tar.xz' icu_76.1-3.debian.tar.xz 63784 SHA256:c8f775809d791490284db9ba8c00d73ef8960bd044619a17763b1f72fb14cf44
+'http://deb.debian.org/debian/pool/main/i/icu/icu_76.1-3.dsc' icu_76.1-3.dsc 2236 SHA256:79dd7a3643acddc5218ceb597320edbe01a3fc9b0f9c7a2b456694afac4bbb15
+'http://deb.debian.org/debian/pool/main/i/icu/icu_76.1.orig.tar.gz' icu_76.1.orig.tar.gz 27437767 SHA256:dfacb46bfe4747410472ce3e1144bf28a102feeaa4e3875bac9b4c6cf30f4f3e
+'http://deb.debian.org/debian/pool/main/i/icu/icu_76.1.orig.tar.gz.asc' icu_76.1.orig.tar.gz.asc 228 SHA256:6ef6ef96376eb6550f2b450e08b84c29238f60a77b89273f1521e1b57db73472
+'http://deb.debian.org/debian/pool/main/i/icu/icu_76.1-3.debian.tar.xz' icu_76.1-3.debian.tar.xz 63784 SHA256:c8f775809d791490284db9ba8c00d73ef8960bd044619a17763b1f72fb14cf44
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/icu/76.1-3/ (for browsing the source)
+- https://sources.debian.net/src/icu/76.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/76.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.68`
 
@@ -3370,21 +3370,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.dsc' sqlite3_3.46.1-4.dsc 2632 SHA256:335716c2a37bbbd0dc03f738be814780af75972f734508ee6f046bb4a25ac407
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-4.debian.tar.xz' sqlite3_3.46.1-4.debian.tar.xz 33360 SHA256:0dbd7b85e1be2bc80397ddd26662f5ea86cdebad7d2926d9df31eb726e5788e3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.46.1-4/
 
-- https://sources.debian.net/src/sqlite3/3.46.1-4/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.46.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.46.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.8-3-1`
 
@@ -3423,20 +3415,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.5-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5-2.dsc' systemd_257.5-2.dsc 8615 SHA256:8a55c14c78e4df7c5bb192bfd71b432e395c8204b0b1f6998628cfa857749e5d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5.orig.tar.gz' systemd_257.5.orig.tar.gz 16232112 SHA256:4d65f9482608cf9f7823df42a6d7796f0e0dfcfb94301df75effff86d40da33e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.5-2.debian.tar.xz' systemd_257.5-2.debian.tar.xz 183412 SHA256:07156d76b551fa8afd58abfdf95044fe77ed638b3258680cc9059af6215952a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.5-2/
 
-- https://sources.debian.net/src/systemd/257.5-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
