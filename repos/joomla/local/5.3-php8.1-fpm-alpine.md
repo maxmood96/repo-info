@@ -1,10 +1,10 @@
-# `joomla:5.3.0-php8.1-fpm-alpine`
+# `joomla:5.3.1-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a8578c5209fcf3e7015bc850c5aa85a8fb78ccdbd04219008333bbd3cbd44a6`
-- Created: `2025-04-15T17:15:48Z`
-- Virtual Size: ~ 273.20 Mb  
+- Image ID: `sha256:530685b58c358e343f57280808443f2aecd0a60acc09da9ef093f2717d21680f`
+- Created: `2025-05-31T16:41:51Z`
+- Virtual Size: ~ 274.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.32.tar.xz.asc`
   - `PHP_SHA256=c582ac682a280bbc69bc2186c21eb7e3313cc73099be61a6bc1d2cd337cbf383`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.3.0`
-  - `JOOMLA_SHA512=d3eb711171cff3e04cfb108450231ebc7892499729466c479d0a36cef3637f0cc016beab7beb965add93050f256ac08940e51c709b89107ce36e2038a55d2438`
+  - `JOOMLA_VERSION=5.3.1`
+  - `JOOMLA_SHA512=261107dd5f494bc6ce0705b22a963da37a35855bef49334fdc11ff445fee5f49dbceae2a6ccead8d7e064fda39dd9dc6e6fed31f060c4e4a0eb6cf2a10340010`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -406,16 +406,16 @@ GPL-3.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.04.0-r0 description:
+ghostscript-10.05.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.04.0-r0 webpage:
+ghostscript-10.05.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.04.0-r0 installed size:
-60 MiB
+ghostscript-10.05.1-r0 installed size:
+61 MiB
 
-ghostscript-10.04.0-r0 license:
+ghostscript-10.05.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -777,6 +777,23 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libice`
+
+```console
+libice-1.1.1-r6 description:
+X11 Inter-Client Exchange library
+
+libice-1.1.1-r6 webpage:
+https://xorg.freedesktop.org/
+
+libice-1.1.1-r6 installed size:
+86 KiB
+
+libice-1.1.1-r6 license:
+X11
+
+```
+
 ### `apk` package: `libidn2`
 
 ```console
@@ -933,16 +950,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.4-r0 description:
+libpq-17.5-r0 description:
 PostgreSQL client library
 
-libpq-17.4-r0 webpage:
+libpq-17.5-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.4-r0 installed size:
+libpq-17.5-r0 installed size:
 322 KiB
 
-libpq-17.4-r0 license:
+libpq-17.5-r0 license:
 PostgreSQL
 
 ```
@@ -995,6 +1012,23 @@ libsharpyuv-1.4.0-r0 installed size:
 
 libsharpyuv-1.4.0-r0 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `libsm`
+
+```console
+libsm-1.2.4-r4 description:
+X11 Session Management library
+
+libsm-1.2.4-r4 webpage:
+https://xorg.freedesktop.org/
+
+libsm-1.2.4-r4 installed size:
+33 KiB
+
+libsm-1.2.4-r4 license:
+MIT
 
 ```
 
@@ -1080,6 +1114,23 @@ libunistring-1.2-r0 installed size:
 
 libunistring-1.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libuuid`
+
+```console
+libuuid-2.40.4-r1 description:
+DCE compatible Universally Unique Identifier library
+
+libuuid-2.40.4-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libuuid-2.40.4-r1 installed size:
+29 KiB
+
+libuuid-2.40.4-r1 license:
+BSD-3-Clause
 
 ```
 
@@ -1232,6 +1283,23 @@ libxml2-2.13.4-r5 installed size:
 1054 KiB
 
 libxml2-2.13.4-r5 license:
+MIT
+
+```
+
+### `apk` package: `libxt`
+
+```console
+libxt-1.3.1-r0 description:
+X11 toolkit intrinsics library
+
+libxt-1.3.1-r0 webpage:
+https://xorg.freedesktop.org/
+
+libxt-1.3.1-r0 installed size:
+347 KiB
+
+libxt-1.3.1-r0 license:
 MIT
 
 ```
@@ -1443,16 +1511,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r1 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r1 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r1 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r1 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```
