@@ -80,11 +80,11 @@ $ docker pull ibmjava@sha256:a31d52ad4e81ff9d9bf4474de8008eeb09e626981d03af0303c
 
 -	Layers:
 	-	`sha256:2b0f78e9080b325581210f9ae857d7eefe35ede6580979fc549aa51b4d1cb4ec`  
-		Last Modified: Tue, 03 Jun 2025 04:16:30 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:55:40 GMT  
 		Size: 3.0 MB (2982539 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e749ad81944be5d3dcb8be2766d40da1a1d210a5b9e5176aed053ebfeda35c3`  
-		Last Modified: Tue, 03 Jun 2025 04:16:30 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:55:41 GMT  
 		Size: 13.2 KB (13178 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -135,7 +135,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 1.5 MB (1536197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44b2f15547e085ef3c2dab3cf0b44b8874219e968cbbda093d20abd7c8d74782`  
-		Last Modified: Tue, 03 Jun 2025 04:53:16 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:55:52 GMT  
 		Size: 174.2 MB (174238542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -155,11 +155,11 @@ $ docker pull ibmjava@sha256:4d55357fb38c6953f24e09641304a3d961a8c69787ce99c7eab
 
 -	Layers:
 	-	`sha256:f31da5dc5ccdd685059bb0b15e8aff4edb6eed9dcd1906e91db89e9939f9d5fe`  
-		Last Modified: Tue, 03 Jun 2025 04:53:01 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:56:11 GMT  
 		Size: 3.0 MB (2968488 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a5a5ccf50fc6429eab43f8ed24ea73b49a4ff4c8eac053070c55395a6938b398`  
-		Last Modified: Tue, 03 Jun 2025 04:53:01 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:56:13 GMT  
 		Size: 13.2 KB (13212 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -210,7 +210,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 1.5 MB (1455728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea2d974b5413f042241053a768c76f997e675bc55e8e98836da09fd5211caf69`  
-		Last Modified: Tue, 03 Jun 2025 04:39:50 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:56:26 GMT  
 		Size: 163.3 MB (163297145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -230,10 +230,10 @@ $ docker pull ibmjava@sha256:86bad0987a14f67bfb89db9ee2684dc7c1f50acf6501ae85604
 
 -	Layers:
 	-	`sha256:74df62495bb96ef85a20d09412940687ef4e6fd3074c14dc90b4b4603424503e`  
-		Last Modified: Tue, 03 Jun 2025 04:39:47 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:56:47 GMT  
 		Size: 2.7 MB (2655855 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64d83a744ca31a81fdecced1884f246faa6ce3fb50139d3ec01cb389aabf576e`  
-		Last Modified: Tue, 03 Jun 2025 04:39:47 GMT  
+		Last Modified: Wed, 04 Jun 2025 01:56:48 GMT  
 		Size: 13.2 KB (13178 bytes)  
 		MIME: application/vnd.in-toto+json
