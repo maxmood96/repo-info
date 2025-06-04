@@ -137,11 +137,11 @@ $ docker pull jetty@sha256:b936459777392cfb12e9f4a81ca77a3dce89ad086a2ea621dc951
 
 -	Layers:
 	-	`sha256:16a7158d61f5e647501afa1b19d45148edb4713535f068444bb4e77f35d69f01`  
-		Last Modified: Wed, 23 Apr 2025 17:11:02 GMT  
+		Last Modified: Wed, 04 Jun 2025 14:51:18 GMT  
 		Size: 4.0 MB (4040882 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8eed2781ea8cc75cd191acfd01757ea23d786fabf09586b193771de459328c13`  
-		Last Modified: Wed, 23 Apr 2025 17:11:02 GMT  
+		Last Modified: Wed, 04 Jun 2025 14:51:18 GMT  
 		Size: 21.6 KB (21563 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -271,10 +271,10 @@ $ docker pull jetty@sha256:d36181c70df7308a0ecb60f8aa533ffa5f81e3690903fb8460e9d
 
 -	Layers:
 	-	`sha256:f5391ae8faa6eb54b92b2e59587597ab3df78f900b9721556d1752c9801153c9`  
-		Last Modified: Wed, 23 Apr 2025 17:46:19 GMT  
+		Last Modified: Wed, 04 Jun 2025 14:51:18 GMT  
 		Size: 4.1 MB (4136366 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:693f181c924614a08d804436f2964d2f3850819ddbc99646239722f4e45a4b96`  
-		Last Modified: Wed, 23 Apr 2025 17:46:19 GMT  
+		Last Modified: Wed, 04 Jun 2025 14:51:17 GMT  
 		Size: 21.7 KB (21692 bytes)  
 		MIME: application/vnd.in-toto+json
