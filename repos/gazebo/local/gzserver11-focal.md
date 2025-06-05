@@ -3682,14 +3682,9 @@ Licenses: (parsed from: `/usr/share/doc/libvpx6/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libvpx=1.8.2-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.8.2-1ubuntu0.3.dsc' libvpx_1.8.2-1ubuntu0.3.dsc 2362 SHA512:8eec4edb4fa49c4c8d51e382befe0d11538db49d93e56f6979ad7f67f977c81c8c540c8c361c46c24a47e51d5ac2c6d97b1e379df2137eef69e73b83b31f371a
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.8.2.orig.tar.gz' libvpx_1.8.2.orig.tar.gz 5312988 SHA512:da2ab0775a28ddd78654bbe46886e833d4ef7ba91867fc1427dceced735b6177eff06b24f204c075c50c3a5cadc5be6a1fb213c44df189218a543b52554f3a38
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.8.2-1ubuntu0.3.debian.tar.xz' libvpx_1.8.2-1ubuntu0.3.debian.tar.xz 17204 SHA512:6d716c7538f644ff5d82efe83d9055b0794e1513d82032c2b0cb1ecfa1a25434eec14c5c334ce9b52456bbea03f98dea5d171e926440fe1369f5b08b2fe4bada
-```
 
 ### `dpkg` source package: `libwacom=1.3-2ubuntu3`
 
