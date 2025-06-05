@@ -256,7 +256,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'stable' '@1747699200'
 
 -	Layers:
 	-	`sha256:26e848e85b58dd7c634a9bad89da62de8e243bc05f7171697b5b1122905cb710`  
-		Last Modified: Wed, 21 May 2025 22:29:49 GMT  
+		Last Modified: Thu, 05 Jun 2025 12:55:41 GMT  
 		Size: 48.8 MB (48769754 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -322,7 +322,7 @@ RUN # debian.sh --arch 's390x' out/ 'stable' '@1747699200'
 
 -	Layers:
 	-	`sha256:24535d496c396d6255b01b1ceb22f8b16e24e74fa85b4e2f999f21f774c99c00`  
-		Last Modified: Wed, 21 May 2025 22:29:58 GMT  
+		Last Modified: Thu, 05 Jun 2025 12:55:40 GMT  
 		Size: 47.1 MB (47143845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
