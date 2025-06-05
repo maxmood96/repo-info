@@ -852,23 +852,23 @@ CMD ["chronograf"]
 		Size: 30.3 MB (30255940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46f2416513833f78bbb74265592ef4085530b64ac128a890560f08ae85b4420d`  
-		Last Modified: Wed, 21 May 2025 23:20:46 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:48 GMT  
 		Size: 4.2 MB (4209270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62f10adffb2e09ed44bc5ee7af0c8456102f5aa3ceb4a88079a95e7f23177207`  
-		Last Modified: Wed, 21 May 2025 23:20:47 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:50 GMT  
 		Size: 34.7 MB (34739672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79c789953e61a7c3da7c684e5eb32302d77311acdd8aeef3eeed08ab56307772`  
-		Last Modified: Wed, 21 May 2025 23:20:46 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:48 GMT  
 		Size: 12.2 KB (12245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2221c4f920a4b811a19eb24592c4c1a80ccca66f0d29c59bc965914a5c1d7722`  
-		Last Modified: Wed, 21 May 2025 23:20:46 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:50 GMT  
 		Size: 11.9 KB (11904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:975b723f287caa1b1c8ef3456109c28c5f479e63444940af3fc031eee57b0521`  
-		Last Modified: Wed, 21 May 2025 23:20:47 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:50 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1238,23 +1238,23 @@ CMD ["chronograf"]
 		Size: 30.3 MB (30255940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46f2416513833f78bbb74265592ef4085530b64ac128a890560f08ae85b4420d`  
-		Last Modified: Wed, 21 May 2025 23:20:46 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:48 GMT  
 		Size: 4.2 MB (4209270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62f10adffb2e09ed44bc5ee7af0c8456102f5aa3ceb4a88079a95e7f23177207`  
-		Last Modified: Wed, 21 May 2025 23:20:47 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:50 GMT  
 		Size: 34.7 MB (34739672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79c789953e61a7c3da7c684e5eb32302d77311acdd8aeef3eeed08ab56307772`  
-		Last Modified: Wed, 21 May 2025 23:20:46 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:48 GMT  
 		Size: 12.2 KB (12245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2221c4f920a4b811a19eb24592c4c1a80ccca66f0d29c59bc965914a5c1d7722`  
-		Last Modified: Wed, 21 May 2025 23:20:46 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:50 GMT  
 		Size: 11.9 KB (11904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:975b723f287caa1b1c8ef3456109c28c5f479e63444940af3fc031eee57b0521`  
-		Last Modified: Wed, 21 May 2025 23:20:47 GMT  
+		Last Modified: Thu, 05 Jun 2025 05:11:50 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1804,19 +1804,19 @@ CMD ["chronograf"]
 		Size: 5.2 MB (5209331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:78bbb23b0d55fbf2b9269dfe4311d07cebb987be4ca42a2992adc623ac00d312`  
-		Last Modified: Thu, 22 May 2025 02:49:49 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:30:13 GMT  
 		Size: 32.4 MB (32429493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c488c7652a30628544cb30aa76e54d1fe72e4a5dbf86214476d4664076a27d0a`  
-		Last Modified: Thu, 22 May 2025 02:49:48 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:29:59 GMT  
 		Size: 12.2 KB (12243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd82c3e3385d4b24d7ad73e948cb45fdca2cdfd766bc3930727905044244ef2f`  
-		Last Modified: Thu, 22 May 2025 02:49:48 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:30:03 GMT  
 		Size: 11.9 KB (11903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9f5ccffa13fc10c5a405ab2f34489b52ae43dcbdad7195144329dd8d54a5056`  
-		Last Modified: Thu, 22 May 2025 02:49:49 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:30:07 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2190,19 +2190,19 @@ CMD ["chronograf"]
 		Size: 5.2 MB (5209331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:78bbb23b0d55fbf2b9269dfe4311d07cebb987be4ca42a2992adc623ac00d312`  
-		Last Modified: Thu, 22 May 2025 02:49:49 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:30:13 GMT  
 		Size: 32.4 MB (32429493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c488c7652a30628544cb30aa76e54d1fe72e4a5dbf86214476d4664076a27d0a`  
-		Last Modified: Thu, 22 May 2025 02:49:48 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:29:59 GMT  
 		Size: 12.2 KB (12243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd82c3e3385d4b24d7ad73e948cb45fdca2cdfd766bc3930727905044244ef2f`  
-		Last Modified: Thu, 22 May 2025 02:49:48 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:30:03 GMT  
 		Size: 11.9 KB (11903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9f5ccffa13fc10c5a405ab2f34489b52ae43dcbdad7195144329dd8d54a5056`  
-		Last Modified: Thu, 22 May 2025 02:49:49 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:30:07 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
