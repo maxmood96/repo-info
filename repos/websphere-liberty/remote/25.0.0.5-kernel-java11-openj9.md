@@ -178,11 +178,11 @@ $ docker pull websphere-liberty@sha256:776fff2c52bbe4c8a7f5b03ff5ff5d720c826d882
 
 -	Layers:
 	-	`sha256:7447425232321a59f7df1bc13270a013b2283916637ec941d9c31b1c1881dc0a`  
-		Last Modified: Wed, 21 May 2025 17:37:28 GMT  
+		Last Modified: Thu, 05 Jun 2025 00:21:02 GMT  
 		Size: 3.8 MB (3767485 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:58d26b1b6cc281d9752250a2dd26304afbbe35b8066247b63ccdef9bffca7546`  
-		Last Modified: Wed, 21 May 2025 17:37:28 GMT  
+		Last Modified: Thu, 05 Jun 2025 00:21:04 GMT  
 		Size: 40.1 KB (40130 bytes)  
 		MIME: application/vnd.in-toto+json
 
