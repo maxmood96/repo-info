@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ffdadd692c11bf5c9ac3d78cd1b3b7d244a8a2f367671ccff2d2b3fdf9d0e005`
-- Created: `2025-05-13T03:53:36Z`
-- Virtual Size: ~ 623.37 Mb  
+- Image ID: `sha256:886cabb2ed6d39ea41ca7445e8278d5a817207d310b133ee3232eda34e2a671b`
+- Created: `2025-06-03T15:45:26Z`
+- Virtual Size: ~ 627.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LEIN_VERSION=2.11.2`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
-  - `CLOJURE_VERSION=1.12.0.1530`
+  - `CLOJURE_VERSION=1.12.1.1543`
 
 ## `dpkg` (`.deb`-based packages)
 
