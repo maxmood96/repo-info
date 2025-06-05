@@ -1,7 +1,7 @@
 ## `hylang:python3.14-rc-alpine3.22`
 
 ```console
-$ docker pull hylang@sha256:2f11f801cf1c50fb13c0848344c819c8722c197765e26eb1f43c3090aa11ce11
+$ docker pull hylang@sha256:94f950757268f1d08956de434656cde2188018ebec0914f75e9e5b9f36da04fa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -80,7 +80,7 @@ CMD ["hy"]
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a69eaf2535dac2be2a1acefb9c996f9ccdbc0051ecd8365c2fe975306c36238`  
-		Last Modified: Wed, 04 Jun 2025 21:20:03 GMT  
+		Last Modified: Thu, 05 Jun 2025 02:19:02 GMT  
 		Size: 5.9 MB (5853372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -194,13 +194,13 @@ $ docker pull hylang@sha256:362a67c257ab3626444c2b36424f186fda6976ad59a9da2d425f
 ### `hylang:python3.14-rc-alpine3.22` - linux; arm variant v7
 
 ```console
-$ docker pull hylang@sha256:731e022c3a3a1ba58834b0bea0484c9653b8ce2b905d4e42af33b39f79feb411
+$ docker pull hylang@sha256:2116e91c322d119f1bcf437472de2a29e0d13eeb1045121be9d4051825002c74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **21.7 MB (21731346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:102088f2946307aa293e1361973079cebaed3658fe814acf06edec1462d89c5c`
+-	Image ID: `sha256:4abf883d93a7746198f4706f7852f8e1479164e0fb716fda782972e09a561e87`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -222,13 +222,13 @@ RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Fri, 30 May 2025 21:12:34 GMT
 CMD ["python3"]
-# Fri, 30 May 2025 23:29:22 GMT
+# Wed, 04 Jun 2025 21:00:47 GMT
 ENV HY_VERSION=1.1.0
-# Fri, 30 May 2025 23:29:22 GMT
+# Wed, 04 Jun 2025 21:00:47 GMT
 ENV HYRULE_VERSION=1.0.0
-# Fri, 30 May 2025 23:29:22 GMT
+# Wed, 04 Jun 2025 21:00:47 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Fri, 30 May 2025 23:29:22 GMT
+# Wed, 04 Jun 2025 21:00:47 GMT
 CMD ["hy"]
 ```
 
@@ -257,25 +257,25 @@ CMD ["hy"]
 ### `hylang:python3.14-rc-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:319fdf9a4bb7162a919fc19bd3f25cb16e868cbd3cb5de5b7f40e34fb566932f
+$ docker pull hylang@sha256:9e8b19ab6f604f0ef57aee6167168cc66a28c6bd68e3335b8339195b0b9aeb1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.6 KB (646564 bytes)**  
+-	Total Size: **646.6 KB (646565 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e3014639ebd23fe73a6423fa9a6afedf6677a59d0f5a128a239e8005486f849`
+-	Image ID: `sha256:2ff6c56bfc3dba3fa129286a31331a2d43c8dd9368be7e202e2d89c5eb87eb38`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c7e2d8dd178b60dd185c4fb0b394b30752157faf769a804f51c14560c9d4578f`  
-		Last Modified: Wed, 04 Jun 2025 23:24:21 GMT  
+	-	`sha256:b9f8937ca6c0bf1d4b1ee061048aff1b2d6daefb5057b3d46db323cdf9fb59bb`  
+		Last Modified: Thu, 05 Jun 2025 02:19:32 GMT  
 		Size: 637.1 KB (637119 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20ec68c602fb8aac99750c805a449973c57a52ce490318e9b995b7a010cc1df3`  
-		Last Modified: Wed, 04 Jun 2025 23:24:22 GMT  
-		Size: 9.4 KB (9445 bytes)  
+	-	`sha256:bb0f1ad87e66649083f766cee2994100141235400bf573f11f51e719b1ccdc4d`  
+		Last Modified: Thu, 05 Jun 2025 02:19:33 GMT  
+		Size: 9.4 KB (9446 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:python3.14-rc-alpine3.22` - linux; arm64 variant v8
@@ -424,7 +424,7 @@ CMD ["hy"]
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aaba9d7a031345a43ef6cd8bb95525911bb7c8786662f36a83f289ceb66d3c90`  
-		Last Modified: Wed, 04 Jun 2025 21:20:37 GMT  
+		Last Modified: Thu, 05 Jun 2025 02:21:30 GMT  
 		Size: 5.9 MB (5853418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
