@@ -782,11 +782,11 @@ $ docker pull kibana@sha256:6da6c574816559fb4daa95a8d385201e4f34bd58fcda7238672d
 
 -	Layers:
 	-	`sha256:2d48681433d8c60d5cd6730d06221ee176b9554009f8af482e392227045f3459`  
-		Last Modified: Thu, 29 May 2025 20:44:20 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:23:27 GMT  
 		Size: 4.7 MB (4668281 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ffe9bc4f02f5f9e855bec27ba742b3df0b8f19bde2055f1bd3d81cd96f81f8b1`  
-		Last Modified: Thu, 29 May 2025 20:44:20 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:23:26 GMT  
 		Size: 40.7 KB (40680 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -926,11 +926,11 @@ $ docker pull kibana@sha256:6471809d4524e4ae316e638c5fd660f087fdf37a8229e9124365
 
 -	Layers:
 	-	`sha256:d682ccabe12ecca21bf6a72497eebc52300982236edd9663ccb7cb7bd4e67ace`  
-		Last Modified: Thu, 29 May 2025 21:00:54 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:23:29 GMT  
 		Size: 4.7 MB (4668532 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4f0954513b99adc3d34416d1d9301c9e15c237f5e2b41ab0d19b5de9387ee3c6`  
-		Last Modified: Thu, 29 May 2025 21:00:54 GMT  
+		Last Modified: Thu, 05 Jun 2025 04:23:28 GMT  
 		Size: 40.9 KB (40928 bytes)  
 		MIME: application/vnd.in-toto+json
 
