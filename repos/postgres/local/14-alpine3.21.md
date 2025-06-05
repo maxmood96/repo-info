@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9645962c46cd45bdc545f0956b9b204fef5c4079ed46b771e0fa8b6577423d1b`
-- Created: `2025-05-08T18:32:48Z`
+- Image ID: `sha256:5089e2619ce05e7d56b139cc2c91a77f82462e4fc8f08118534abed75ad09680`
+- Created: `2025-05-30T21:09:41Z`
 - Virtual Size: ~ 271.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -517,16 +517,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
 MIT
 
 ```
