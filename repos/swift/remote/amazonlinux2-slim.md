@@ -55,7 +55,7 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Size: 62.8 MB (62759985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a75c83407e1e3e47031e98b0645393a466d8a63df826cb0999d510d9fdc5103`  
-		Last Modified: Wed, 28 May 2025 18:28:40 GMT  
+		Last Modified: Thu, 05 Jun 2025 08:43:41 GMT  
 		Size: 208.2 MB (208228317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
