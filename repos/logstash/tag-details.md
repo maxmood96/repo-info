@@ -753,11 +753,11 @@ $ docker pull logstash@sha256:2b2eb6c81694b4676bb78dda118f41b2ec24f8a1c7dc07a028
 
 -	Layers:
 	-	`sha256:db58f9f55f37b07d2a9014291ea263c2ed83f313ceea0e5c6cc94cac5b433b65`  
-		Last Modified: Thu, 29 May 2025 20:42:26 GMT  
+		Last Modified: Thu, 05 Jun 2025 08:00:19 GMT  
 		Size: 3.6 MB (3550141 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2a6643356c7b4fd3137b495f359e82b33f3f838d6eedcbaa024fa026135a66f2`  
-		Last Modified: Thu, 29 May 2025 20:42:26 GMT  
+		Last Modified: Thu, 05 Jun 2025 08:00:16 GMT  
 		Size: 34.6 KB (34593 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -896,11 +896,11 @@ $ docker pull logstash@sha256:b0591d80d4e8101b850e568714286933fd74cd6d42d352ad09
 
 -	Layers:
 	-	`sha256:0238e2f0fa92fa580ca57a4b4142dd4bef953515196a7695334bf109c811856f`  
-		Last Modified: Thu, 29 May 2025 20:50:30 GMT  
+		Last Modified: Thu, 05 Jun 2025 08:00:49 GMT  
 		Size: 3.5 MB (3549753 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:064356accd60688e8b34cbbf2b5a52af70337cb23015a19e5c1ed19b18b4be54`  
-		Last Modified: Thu, 29 May 2025 20:50:30 GMT  
+		Last Modified: Thu, 05 Jun 2025 08:00:48 GMT  
 		Size: 34.7 KB (34736 bytes)  
 		MIME: application/vnd.in-toto+json
 
