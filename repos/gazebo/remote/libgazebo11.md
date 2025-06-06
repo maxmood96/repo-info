@@ -107,10 +107,10 @@ $ docker pull gazebo@sha256:cb9feed688586eaecf1c9950fc8de90932e0749cefc3bb7ad543
 
 -	Layers:
 	-	`sha256:f64c30287a70981cd61f73335d25de83782cd0ebf9e49bda35eeb328f6c94918`  
-		Last Modified: Wed, 09 Apr 2025 02:14:42 GMT  
+		Last Modified: Fri, 06 Jun 2025 18:38:16 GMT  
 		Size: 38.2 MB (38186673 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ca0c18d9066686998990c6c94ccbf548fd7e5445f56aaffc862bae23a2240f8`  
-		Last Modified: Wed, 09 Apr 2025 02:14:41 GMT  
+		Last Modified: Fri, 06 Jun 2025 18:38:18 GMT  
 		Size: 8.7 KB (8664 bytes)  
 		MIME: application/vnd.in-toto+json
