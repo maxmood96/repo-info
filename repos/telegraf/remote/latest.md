@@ -91,11 +91,11 @@ $ docker pull telegraf@sha256:2df4b49009b8b7d8a9466bd30de356741864e89b6d6dc6e9d7
 
 -	Layers:
 	-	`sha256:f7c8e7aff936a55078decece5922479b1234cf6fa18c2953e3c9a3d217d7457a`  
-		Last Modified: Wed, 21 May 2025 23:43:34 GMT  
+		Last Modified: Fri, 06 Jun 2025 13:49:22 GMT  
 		Size: 6.5 MB (6474019 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0061786b90580c5e8580bacb8737da04c07062473272e7a5a5987c4fad719ae4`  
-		Last Modified: Wed, 21 May 2025 23:43:34 GMT  
+		Last Modified: Fri, 06 Jun 2025 13:48:59 GMT  
 		Size: 14.8 KB (14772 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -177,11 +177,11 @@ $ docker pull telegraf@sha256:07ac08de5e1fb581cec59b4280a9971add067011d342501125
 
 -	Layers:
 	-	`sha256:75fef11daeb246f512b4cd169a993b6936ed9fe50f6b5dcc2a49be83a416bd17`  
-		Last Modified: Thu, 22 May 2025 14:23:28 GMT  
+		Last Modified: Fri, 06 Jun 2025 13:49:36 GMT  
 		Size: 6.5 MB (6468622 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bc20def5dad261520f6c8500746dbd1402d66ee384de1acccb1715481180f0e5`  
-		Last Modified: Thu, 22 May 2025 14:23:28 GMT  
+		Last Modified: Fri, 06 Jun 2025 13:49:04 GMT  
 		Size: 14.9 KB (14865 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -263,10 +263,10 @@ $ docker pull telegraf@sha256:7850d90309c94d06e1c779d7b08df7822d3e46e3d0c2ee1ea2
 
 -	Layers:
 	-	`sha256:a2e85cd30a9c13e6305be848935f251f98ec03c65373c35767952e8439039366`  
-		Last Modified: Thu, 22 May 2025 11:33:16 GMT  
+		Last Modified: Fri, 06 Jun 2025 13:49:15 GMT  
 		Size: 6.5 MB (6474707 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:140b9a5cc9836a55d8178310fe6654131dba0ef93d9dfffad7c0b006dd1c3aae`  
-		Last Modified: Thu, 22 May 2025 11:33:16 GMT  
+		Last Modified: Fri, 06 Jun 2025 13:49:09 GMT  
 		Size: 14.9 KB (14894 bytes)  
 		MIME: application/vnd.in-toto+json
