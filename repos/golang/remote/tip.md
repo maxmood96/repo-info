@@ -1,7 +1,7 @@
 ## `golang:tip`
 
 ```console
-$ docker pull golang@sha256:30dcec135451df7006681349e8c4a80e4d0ac6dd1cfe3d996583ad4dabb196bb
+$ docker pull golang@sha256:7fc664b20cd0594fb39ea7ab73cf61be0ea79d32b2bf113aace7e5afcb0f50df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -70,7 +70,7 @@ WORKDIR /go
 		Size: 64.4 MB (64399858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1915fc2efaf4770772db9f8420687dcce64a9bf98e1e9a05a96e7cecd75c41fc`  
-		Last Modified: Thu, 05 Jun 2025 20:03:59 GMT  
+		Last Modified: Thu, 05 Jun 2025 23:38:17 GMT  
 		Size: 92.4 MB (92355152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61c772e4d16fa9b2fa9b4ea3dee2c356c3597d08d324bfd3a1c2b9b5a987e5a2`  
@@ -337,7 +337,7 @@ WORKDIR /go
 		Size: 66.2 MB (66224115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:686ae6fdd5eb53687e11cad561a6a54e5880cf10f475b2833caa08f9b555e157`  
-		Last Modified: Thu, 05 Jun 2025 20:04:27 GMT  
+		Last Modified: Fri, 06 Jun 2025 00:21:53 GMT  
 		Size: 89.8 MB (89774664 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59517f64f93ef3235377e65403c21a43aa149e3627f878c0069b20d4472659dd`  
@@ -445,20 +445,20 @@ WORKDIR /go
 ### `golang:tip` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:ce27b8eb358de862da28788712f5664e17ce572107752017d588b92dfa01b390
+$ docker pull golang@sha256:72a59d8f5eccb366efa308ed1edda925ce23379180e7c5c40797cdfe6f83d9d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **27.5 KB (27535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:013210bad9648c8fd31a129210ddbab02f18c7440c1cea1733c41387aa0dbc45`
+-	Image ID: `sha256:9ff2bfaef7774100c6492b54a98937b9afc15ad088aa93f654aca787b93e17ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4e41e4b23e36208a0c75bfaaa5357a51e7bcaeecfce987b8af1bea4320ca0277`  
-		Last Modified: Wed, 04 Jun 2025 01:38:23 GMT  
+	-	`sha256:d9f973ac902a9d51a8ad8893e424c65a3549a07bbb6e20f34a2b4ff263440e73`  
+		Last Modified: Thu, 05 Jun 2025 23:23:41 GMT  
 		Size: 27.5 KB (27535 bytes)  
 		MIME: application/vnd.in-toto+json
 
