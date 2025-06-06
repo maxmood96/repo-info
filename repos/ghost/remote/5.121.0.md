@@ -139,11 +139,11 @@ $ docker pull ghost@sha256:8bc6b866173844c4b54404f8ab9f9f88e414adfe8f85d419a1203
 
 -	Layers:
 	-	`sha256:136ac2f525ac7735e621cadac8acbdf304b806a4d66845a6ba9878164f636976`  
-		Last Modified: Fri, 30 May 2025 21:48:30 GMT  
+		Last Modified: Fri, 06 Jun 2025 21:53:18 GMT  
 		Size: 5.3 MB (5309726 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:641aa8ee8e1f6a042e6d12959e3739a19675fe2e75945c9ec0d0caa2cd6825aa`  
-		Last Modified: Fri, 30 May 2025 21:48:29 GMT  
+		Last Modified: Fri, 06 Jun 2025 21:53:20 GMT  
 		Size: 29.3 KB (29307 bytes)  
 		MIME: application/vnd.in-toto+json
 
