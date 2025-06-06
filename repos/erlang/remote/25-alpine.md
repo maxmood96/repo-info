@@ -68,11 +68,11 @@ $ docker pull erlang@sha256:711f3b0e1c071989498a7ca1be2d1f86fc1445b1f1b5d5b68f27
 
 -	Layers:
 	-	`sha256:af0b5637658cb968a6faf562251928d615aa1116ced44ac804646e5d030968c9`  
-		Last Modified: Mon, 21 Apr 2025 22:38:40 GMT  
+		Last Modified: Fri, 06 Jun 2025 15:32:52 GMT  
 		Size: 273.0 KB (273023 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fdac92a0cac6ceb9dfe43d2ec1e415ec3c2e442d0a56e2108d1a2d64aba053b3`  
-		Last Modified: Mon, 21 Apr 2025 22:38:39 GMT  
+		Last Modified: Fri, 06 Jun 2025 15:32:53 GMT  
 		Size: 15.0 KB (15046 bytes)  
 		MIME: application/vnd.in-toto+json
 
