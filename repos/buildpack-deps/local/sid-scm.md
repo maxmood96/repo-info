@@ -405,21 +405,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.7-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-2.dsc' coreutils_9.7-2.dsc 2122 SHA256:07f292db7de35bc5933677443a1183636ec62e8a6d094dccccdc15d6723763ca
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz' coreutils_9.7.orig.tar.xz 6158960 SHA256:e8bb26ad0293f9b5a1fc43fb42ba970e312c66ce92c1b0b16713d7500db251bf
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz.asc' coreutils_9.7.orig.tar.xz.asc 833 SHA256:5070e9428bd372a7fa1f66b395b81092bb40c98f9f56a2e2bc55c47fd387e901
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-2.debian.tar.xz' coreutils_9.7-2.debian.tar.xz 22284 SHA256:d8154f1cb9b99dfd2801753004984367bf5e921600ba20e1321e9610224be674
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.7-2/
 
-- https://sources.debian.net/src/coreutils/9.7-2/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.13.0-5`
 
@@ -2693,19 +2685,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.3-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.13.3-1.dsc' python3-defaults_3.13.3-1.dsc 2948 SHA256:af78399fad1f67d11d4d537161ee55e826209c068ca2b2c4682d65ebb295f08b
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.13.3-1.tar.gz' python3-defaults_3.13.3-1.tar.gz 147238 SHA256:0c7d00b759d51626f94cf2c1b887ca407d2f3f80772c45ac418dde955638f7f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.13.3-1/
 
-- https://sources.debian.net/src/python3-defaults/3.13.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.13.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.13.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.13=3.13.3-4`
 
@@ -2736,21 +2722,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.3-4
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.3-4.dsc' python3.13_3.13.3-4.dsc 4291 SHA256:f3aaca1767fca2644b18ce807a2f96077972f60c3d25aa208f40ef03897e60a8
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz' python3.13_3.13.3.orig.tar.xz 22654240 SHA256:40f868bcbdeb8149a3149580bb9bfd407b3321cd48f0be631af955ac92c0e041
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz.asc' python3.13_3.13.3.orig.tar.xz.asc 963 SHA256:4195ada13466fdb4e3ca71747bf25817135ba3d94d0aa282f0b75fc6bcd49865
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.3-4.debian.tar.xz' python3.13_3.13.3-4.debian.tar.xz 378748 SHA256:15ac86faa67f2f9a5ed5b2a6b89bcbcc56b82839f564ff6f7067306d46ee9515
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.3-4/
 
-- https://sources.debian.net/src/python3.13/3.13.3-4/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.3-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.3-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 

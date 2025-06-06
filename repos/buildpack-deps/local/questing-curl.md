@@ -908,14 +908,9 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-4ubuntu2.dsc' keyutils_1.6.3-4ubuntu2.dsc 2186 SHA512:3da12fdd088944b7f625699d87b48cbff1048191cc60f304abaf5b7e802a75ba0dadad84bac80c4d6d6071585422b550052fb9d6afb8c66addfe959c69d32cac
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA512:f65965b8566037078b8eeffa66c6fdbe121c8c2bea7fa5bce04cf7ba5ccc50d5b48e51f4a67ca91e4d5d9a12469e7e3eb3036c920ab25e3feba6e93b4c149cf9
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-4ubuntu2.debian.tar.xz' keyutils_1.6.3-4ubuntu2.debian.tar.xz 14684 SHA512:454dd26c32f44c5c608288b243ff2a13a9aa4122e28f942be6c0ccca299d83901cefda9ef6bdad82b3bb8e8a1f0a9e4fd3e85f8f86ca8fdf159d086e99c07583
-```
 
 ### `dpkg` source package: `krb5=1.21.3-4ubuntu2`
 
@@ -1042,14 +1037,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.73-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.73-4ubuntu1.dsc' libcap2_2.73-4ubuntu1.dsc 2311 SHA512:1989e68a69d332e00bffd99cc9311c4772a59788a5bdc9bb5a70c179b9803a43566c6b3e91cc0611994b76521afef3030537dc2ce5d1ccaa3c923b93ef2d0db4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.73.orig.tar.xz' libcap2_2.73.orig.tar.xz 195276 SHA512:8ab72cf39bf029656b2a4a5972a0da4ab4b46a3d8a8da66d6cde925e06fe34df2fa5fc4d0b62c9cec4972b0b2678fdac6ef9421b6fb83c2a5bf869cf8d5fdb16
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.73-4ubuntu1.debian.tar.xz' libcap2_2.73-4ubuntu1.debian.tar.xz 20816 SHA512:5e0306bf245105e9958908f4671b37f6c3580b2875c08dcb364c4ee060930213e5a7e9520d41965e7814987e436c267b9adc04edfbbb6e087a5ff620188af775
-```
 
 ### `dpkg` source package: `libffi=3.4.8-2`
 
@@ -1689,14 +1679,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.5-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5-2ubuntu3.dsc' p11-kit_0.25.5-2ubuntu3.dsc 2398 SHA512:b1d2f2361307d39aedf39ed3500769eba9d8f9e35ba22d2e7e2d35304552c48638589207883e5e0028dece9e3639d9740019f73ca067136cbf9c0c86cd4bc77e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5.orig.tar.xz' p11-kit_0.25.5.orig.tar.xz 1002056 SHA512:177ec6ff5eb891901078306dce2bf3f5c1a0e5c2a8c493bdf5a08ae1ff1240fdf6952961e973c373f80ac3d1d5a9927e07f4da49e4ff92269d992e744889fc94
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5-2ubuntu3.debian.tar.xz' p11-kit_0.25.5-2ubuntu3.debian.tar.xz 33532 SHA512:1debf9e41be4c2ea2af53981bb4a7e29d54e679409793637685a5ac8f3a1ec681f3b55d21382cbd94018705c820d6344792f29537af2c67f9e87cc86dfb10251
-```
 
 ### `dpkg` source package: `pam=1.5.3-7ubuntu5`
 

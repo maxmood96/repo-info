@@ -234,14 +234,9 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.72-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.72-3ubuntu1.dsc' autoconf_2.72-3ubuntu1.dsc 2087 SHA512:49fe16b6308cb33af8b0119ac6dd28e0a9f254a43f3822360992f57376b2f1dcbd4d46d92ba51b2d9b23c384940d60fde6e3ef40fb8ab84ab1134c5763b80667
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.72.orig.tar.xz' autoconf_2.72.orig.tar.xz 1389680 SHA512:c4e9fbd858666d3e5c3b4fe7f89aa3e8e3a0a00dc7e166f8147d937d911b77ba3ac6a016f9d223ccdd830bc8960b3e60397c0607cc6a1fd2c50c7492839ddd17
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.72-3ubuntu1.debian.tar.xz' autoconf_2.72-3ubuntu1.debian.tar.xz 26208 SHA512:97975e570a097f618960dfe72f380f6feca6d4fb15e9ec63bf923654a8b824188a35decaffe11764ab04c0b58c6a0ebc67e729e6f0595d125e16a74b89fb1cff
-```
 
 ### `dpkg` source package: `automake-1.17=1:1.17-3ubuntu1`
 
@@ -1735,14 +1730,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1.dsc' imagemagick_7.1.1.43+dfsg1-1.dsc 5129 SHA512:43b2f110f1add50dca8f193c87a05707baa5b9fa29029d90110928b169d0bab6075b3a4f852e335d5cb1dcf4ddfd45a3f6a99202c5168225b3d1d497357537b3
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA512:790bc01e819d2e1c0a00581b8c8bbe10b185eb52e1cdf1312417c4bdca562fe4742374039a6d164e91c7e009f497a375ebf09f579902803b52f9e94354b72a31
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1.debian.tar.xz 275384 SHA512:cf44335ac54575d3f860b935e810ccf8a8b0cf94782fa393bf851fac99bb2f4b63f712131961ec63628f34e2d8400f65aa00b1995ff4b83692be8ea4d8e94d26
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1/
+
 
 ### `dpkg` source package: `imath=3.1.12-1ubuntu1`
 
@@ -1860,14 +1854,9 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-4ubuntu2.dsc' keyutils_1.6.3-4ubuntu2.dsc 2186 SHA512:3da12fdd088944b7f625699d87b48cbff1048191cc60f304abaf5b7e802a75ba0dadad84bac80c4d6d6071585422b550052fb9d6afb8c66addfe959c69d32cac
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA512:f65965b8566037078b8eeffa66c6fdbe121c8c2bea7fa5bce04cf7ba5ccc50d5b48e51f4a67ca91e4d5d9a12469e7e3eb3036c920ab25e3feba6e93b4c149cf9
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-4ubuntu2.debian.tar.xz' keyutils_1.6.3-4ubuntu2.debian.tar.xz 14684 SHA512:454dd26c32f44c5c608288b243ff2a13a9aa4122e28f942be6c0ccca299d83901cefda9ef6bdad82b3bb8e8a1f0a9e4fd3e85f8f86ca8fdf159d086e99c07583
-```
 
 ### `dpkg` source package: `krb5=1.21.3-4ubuntu2`
 
@@ -2044,14 +2033,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.73-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.73-4ubuntu1.dsc' libcap2_2.73-4ubuntu1.dsc 2311 SHA512:1989e68a69d332e00bffd99cc9311c4772a59788a5bdc9bb5a70c179b9803a43566c6b3e91cc0611994b76521afef3030537dc2ce5d1ccaa3c923b93ef2d0db4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.73.orig.tar.xz' libcap2_2.73.orig.tar.xz 195276 SHA512:8ab72cf39bf029656b2a4a5972a0da4ab4b46a3d8a8da66d6cde925e06fe34df2fa5fc4d0b62c9cec4972b0b2678fdac6ef9421b6fb83c2a5bf869cf8d5fdb16
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.73-4ubuntu1.debian.tar.xz' libcap2_2.73-4ubuntu1.debian.tar.xz 20816 SHA512:5e0306bf245105e9958908f4671b37f6c3580b2875c08dcb364c4ee060930213e5a7e9520d41965e7814987e436c267b9adc04edfbbb6e087a5ff620188af775
-```
 
 ### `dpkg` source package: `libcbor=0.10.2-2ubuntu1`
 
@@ -3853,14 +3837,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.5-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5-2ubuntu3.dsc' p11-kit_0.25.5-2ubuntu3.dsc 2398 SHA512:b1d2f2361307d39aedf39ed3500769eba9d8f9e35ba22d2e7e2d35304552c48638589207883e5e0028dece9e3639d9740019f73ca067136cbf9c0c86cd4bc77e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5.orig.tar.xz' p11-kit_0.25.5.orig.tar.xz 1002056 SHA512:177ec6ff5eb891901078306dce2bf3f5c1a0e5c2a8c493bdf5a08ae1ff1240fdf6952961e973c373f80ac3d1d5a9927e07f4da49e4ff92269d992e744889fc94
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5-2ubuntu3.debian.tar.xz' p11-kit_0.25.5-2ubuntu3.debian.tar.xz 33532 SHA512:1debf9e41be4c2ea2af53981bb4a7e29d54e679409793637685a5ac8f3a1ec681f3b55d21382cbd94018705c820d6344792f29537af2c67f9e87cc86dfb10251
-```
 
 ### `dpkg` source package: `pam=1.5.3-7ubuntu5`
 
@@ -4222,15 +4201,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.3-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-4.dsc' python3.13_3.13.3-4.dsc 4291 SHA512:b474616d17c7e0335ae7a8eb4d9bc385c22ebb0baa3dea43feeaa1193274d9b40a827a478af6e6077e879899216c639379735b714e50e4cfe68d94e5c09381cd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz' python3.13_3.13.3.orig.tar.xz 22654240 SHA512:f7559b6dceae69f48742af0a6497fbec42cd1e5304f64b6eb9d89222a1171ccf12fa186cc0decabb4e98d05223184967a4a7537754c01083dacdc9073cb1a578
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz.asc' python3.13_3.13.3.orig.tar.xz.asc 963 SHA512:54f8da5f4a4dcadc9830cb07aecf695a26a2de48ab98e1f42b09fdde1c70989476d07ce7ea81337216f1e5fcbf6b688e0608c88a2545ced416b01640108e94db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-4.debian.tar.xz' python3.13_3.13.3-4.debian.tar.xz 378748 SHA512:6a4d813da5f1c9cb4a839bf7a026735f3ddb25a81ea4b27f48b06fec0b42da0264676952c7be00100caf2660d9ccb66160ecaf35e3d465d9c5079d4414140c74
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.3-4/
+
 
 ### `dpkg` source package: `readline=8.2-6`
 
