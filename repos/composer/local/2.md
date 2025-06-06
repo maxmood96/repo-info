@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6896f94724b7ddac21b0996f612b72f945d85ae4235decb178acbbef73ced296`
+- Image ID: `sha256:3239af0ffef419697539a163e201fe9f8eb9ece6d8deccd366e3ff6cc88d4258`
 - Created: `2025-05-15T07:05:58Z`
-- Virtual Size: ~ 201.26 Mb  
+- Virtual Size: ~ 200.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.7.tar.xz.asc`
-  - `PHP_SHA256=e29f4c23be2816ed005aa3f06bbb8eae0f22cc133863862e893515fc841e65e3`
+  - `PHP_VERSION=8.4.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.8.tar.xz.asc`
+  - `PHP_SHA256=aa6a4d330b47eacd83e351658ba8c47747a1e4356456219cfb6d75e7838da091`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.8.9`
@@ -1084,16 +1084,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.10-r0 description:
+pyc-3.12.10-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.10-r0 webpage:
+pyc-3.12.10-r1 webpage:
 https://www.python.org/
 
-pyc-3.12.10-r0 installed size:
+pyc-3.12.10-r1 installed size:
 0 B
 
-pyc-3.12.10-r0 license:
+pyc-3.12.10-r1 license:
 PSF-2.0
 
 ```
@@ -1101,16 +1101,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.10-r0 description:
+python3-3.12.10-r1 description:
 High-level scripting language
 
-python3-3.12.10-r0 webpage:
+python3-3.12.10-r1 webpage:
 https://www.python.org/
 
-python3-3.12.10-r0 installed size:
+python3-3.12.10-r1 installed size:
 22 MiB
 
-python3-3.12.10-r0 license:
+python3-3.12.10-r1 license:
 PSF-2.0
 
 ```
@@ -1118,16 +1118,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.10-r0 description:
+python3-pyc-3.12.10-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.10-r0 webpage:
+python3-pyc-3.12.10-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.10-r0 installed size:
+python3-pyc-3.12.10-r1 installed size:
 0 B
 
-python3-pyc-3.12.10-r0 license:
+python3-pyc-3.12.10-r1 license:
 PSF-2.0
 
 ```
@@ -1135,16 +1135,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.10-r0 description:
+python3-pycache-pyc0-3.12.10-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.10-r0 webpage:
+python3-pycache-pyc0-3.12.10-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.10-r0 installed size:
+python3-pycache-pyc0-3.12.10-r1 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.10-r0 license:
+python3-pycache-pyc0-3.12.10-r1 license:
 PSF-2.0
 
 ```
