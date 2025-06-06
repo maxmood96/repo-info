@@ -1,9 +1,9 @@
-# `gradle:8.14.1-jdk17-jammy`
+# `gradle:8.14.2-jdk17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a47cd946af5b416dfa561bcf1d5835ffb08ad2450bc645a4ea5829f5b410e98`
-- Created: `2025-06-02T17:54:56Z`
+- Image ID: `sha256:039d7d33832b5fbe748839e19c3c533c3714a04554bf3f65f2392ad8b3d20db7`
+- Created: `2025-06-05T16:04:16Z`
 - Virtual Size: ~ 722.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.15+6`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.1`
+  - `GRADLE_VERSION=8.14.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

@@ -1,10 +1,10 @@
-# `gradle:7.6.4-jdk8-ubi`
+# `gradle:7.6.5-jdk8-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6d890fde0ee632c71364db117411da16ecc74776a5813f826e534aee5b8c0ab`
-- Created: `2025-06-02T18:03:22Z`
-- Virtual Size: ~ 578.77 Mb  
+- Image ID: `sha256:5300fad8676ef6b10fe6622e8cd4a904af1311de46253079628ffb344db1678b`
+- Created: `2025-06-04T15:28:43Z`
+- Virtual Size: ~ 585.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u452-b09`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.6.4`
+  - `GRADLE_VERSION=7.6.5`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2025-05-14T10:35:47`

@@ -1,9 +1,9 @@
-# `gradle:7.6.4-jdk8-corretto`
+# `gradle:7.6.5-jdk8-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4477626159fb8232456435f60cadc3e4e8de651a5a8a80a4139bd341bb3ad0ab`
-- Created: `2025-05-29T19:53:06Z`
+- Image ID: `sha256:28bfa0faee4726458d5df15ba82944b3884f7b70409bc4a6449c4ffe0263fa2f`
+- Created: `2025-06-04T15:28:43Z`
 - Virtual Size: ~ 1.35 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.6.4`
+  - `GRADLE_VERSION=7.6.5`
 
 ## `rpm` (`.rpm`-based packages)
 

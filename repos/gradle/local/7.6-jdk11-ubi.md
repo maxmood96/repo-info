@@ -1,10 +1,10 @@
-# `gradle:7.6.4-jdk11-ubi`
+# `gradle:7.6.5-jdk11-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ee6da1443afcea380f4c1447b4660aaa800590dab2270c15ea49d07c80449b1`
-- Created: `2025-06-02T18:03:22Z`
-- Virtual Size: ~ 693.79 Mb  
+- Image ID: `sha256:847639b19313a047b20d0f7e3f77d5b78863958c5203ac2c6f8473bc434fb725`
+- Created: `2025-06-04T15:28:43Z`
+- Virtual Size: ~ 700.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.27+6`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.6.4`
+  - `GRADLE_VERSION=7.6.5`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2025-05-14T10:35:47`

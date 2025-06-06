@@ -1,9 +1,9 @@
-# `gradle:8.14.1-jdk11`
+# `gradle:8.14.2-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:da8afe05b1643e0222d276ecd3f0290bb9cfdbddd822be41c1491acd341f9121`
-- Created: `2025-06-02T17:54:56Z`
+- Image ID: `sha256:53acd1cd9cd13c36c9d1e90b61b9bf83962b353ca9e97f6ac23d8de55520a5f8`
+- Created: `2025-06-05T16:04:16Z`
 - Virtual Size: ~ 708.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.27+6`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.1`
+  - `GRADLE_VERSION=8.14.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

@@ -1,9 +1,9 @@
-# `gradle:8.14.1-jdk21-jammy`
+# `gradle:8.14.2-jdk21-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd40c2044a49483b601469e0c4695f29628a322d34d22d32d7a9a277cf33e71f`
-- Created: `2025-06-02T17:54:56Z`
+- Image ID: `sha256:84e4692acbc97f541c06b59c46eefb20003e537ddcdcc132e918d467310e9325`
+- Created: `2025-06-05T16:04:16Z`
 - Virtual Size: ~ 750.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.7+6`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.1`
+  - `GRADLE_VERSION=8.14.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
