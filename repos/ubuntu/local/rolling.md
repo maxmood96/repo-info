@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f51757c148c75f97fd1c48fb6b21ac37bd5108e91e4b1d528d5e62827cf76a36`
-- Created: `2025-04-15T20:57:40.348010129Z`
-- Virtual Size: ~ 76.94 Mb  
+- Image ID: `sha256:8e52407c3d80bc3c82f42d4d25f17154a9fdc3011d0861b0717402870ac5071f`
+- Created: `2025-05-23T17:07:24.727083635Z`
+- Virtual Size: ~ 76.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -216,11 +216,11 @@ $ apt-get source -qq --print-uris cdebconf=0.277ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.277ubuntu1.tar.xz' cdebconf_0.277ubuntu1.tar.xz 286968 SHA512:ebb8cee8ee8d84aaab49a03211d9cad56dec362d80e63f7375dad09e06eecb7a44811078327daf73d14f6bb9bbbba13adc1ac9ec03dbda0ea31c79532c5a6f12
 ```
 
-### `dpkg` source package: `coreutils=9.5-1ubuntu1`
+### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.1`
 
 Binary Packages:
 
-- `coreutils=9.5-1ubuntu1`
+- `coreutils=9.5-1ubuntu1.25.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -235,11 +235,11 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.dsc' coreutils_9.5-1ubuntu1.dsc 2266 SHA512:bdb23bdf96549f4fcefd8792d72bc64c0ec7eea8708ad5b0378723a9b6ac89bd12aa1a1c2ede0d23478293d938a6fe51a55a8a139c4968fee1f20df812d794a2
+$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1.25.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.1.dsc' coreutils_9.5-1ubuntu1.25.04.1.dsc 2314 SHA512:7f26f566ce2ddac56be1f7f38edc02ba38e35b559c8781a13e777907d821b3f18e4a6c555acba262cf25bce593d24809e535b64fbde4296d1e1fab5b3132f596
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA512:2ca0deac4dc10a80fd0c6fd131252e99d457fd03b7bd626a6bc74fe5a0529c0a3d48ce1f5da1d3b3a7a150a1ce44f0fbb6b68a6ac543dfd5baa3e71f5d65401c
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz.asc' coreutils_9.5.orig.tar.xz.asc 833 SHA512:029997e0f4ee64e561853cff7c8a124f58cc891598595b44c4a46f9813b4b71c9d677464bc8a26d294e9971832f4b87c23777fea4fac6e8e30f06ad93b9957d5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.debian.tar.xz' coreutils_9.5-1ubuntu1.debian.tar.xz 30836 SHA512:5d8c43e92246f7bcd005a9fcc0757d698159399d8acaab8646c3dde408beffaca636412da9c359071eb121cdf4b63565fd0f03e35fee83636e1c54d93981e13e
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.1.debian.tar.xz' coreutils_9.5-1ubuntu1.25.04.1.debian.tar.xz 30872 SHA512:ab54fa7cb808b13487339371405917f30300f6f9a32a2cca5c403d059f31e1b0d7fa08a5efb82d61bab1e6a813efa936f617ebe4e2d4f4fa0235d95db81ad8f5
 ```
 
 ### `dpkg` source package: `dash=0.5.12-12ubuntu1`
@@ -1195,11 +1195,11 @@ $ apt-get source -qq --print-uris pcre2=10.45-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45-1.diff.gz' pcre2_10.45-1.diff.gz 8659 SHA512:2c7444846c31495693f5b94357a9f94b3ccb1664ee9eff68433fc4d0e94dbbf32eb24611718daf8338466283d450bfab547946aabae990803c61efeb091b7964
 ```
 
-### `dpkg` source package: `perl=5.40.1-2`
+### `dpkg` source package: `perl=5.40.1-2ubuntu0.1`
 
 Binary Packages:
 
-- `perl-base=5.40.1-2`
+- `perl-base=5.40.1-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1232,11 +1232,11 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.40.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2.dsc' perl_5.40.1-2.dsc 2372 SHA512:5ca77f4dd6f710f2717d7dbeebfc9c362cb45bab49fd0cd8f92f9bac48ee7fff493723952837b38e71184c2c771d6d9f276885ad3af4ee077f7628dc02c14d16
+$ apt-get source -qq --print-uris perl=5.40.1-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2ubuntu0.1.dsc' perl_5.40.1-2ubuntu0.1.dsc 3023 SHA512:1a4c7ebb8f5b466c034299968142b1adf6c8e515f7a4d425c79ca54e3d438915725257b51250298e0fa14b8e19aeb7d4be3745901d717d3fa1340d0ef38c6158
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2.debian.tar.xz' perl_5.40.1-2.debian.tar.xz 167424 SHA512:f1c3a057ca6be012f8ec808064af12565af1c5c7f9750fb641e01acbc705ed51c3a672e516715d44140d43759fda4ff74ccf82b70210cec3d140a08ff509d087
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2ubuntu0.1.debian.tar.xz' perl_5.40.1-2ubuntu0.1.debian.tar.xz 168020 SHA512:04dcfdacd02071bf848a6c8e8c59683903ad57e6dcf4070463f9ef14d7c82f2224a827eda5b1da5974dcf135a396c284c58924934742d864b4bec2a86abe2720
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-7ubuntu1`

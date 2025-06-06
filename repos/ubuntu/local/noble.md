@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a0e45e2ce6e6e22e73185397d162a64fcf2f80a41c597015cab05d9a7b5913ce`
-- Created: `2025-04-28T09:44:51.056370759Z`
-- Virtual Size: ~ 78.10 Mb  
+- Image ID: `sha256:bf16bdcff9c96b76a6d417bd8f0a3abe0e55c0ed9bdb3549e906834e2592fd5f`
+- Created: `2025-05-29T04:21:01.971275965Z`
+- Virtual Size: ~ 78.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -39,12 +39,12 @@ $ apt-get source -qq --print-uris acl=2.3.2-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.2-1build1.1.debian.tar.xz' acl_2.3.2-1build1.1.debian.tar.xz 23472 SHA512:02e1eadeccb773f30f67c40aaf9cef3401cd771870c7aa82e94bcfbdf3f885879abec23a79ad8103e559dcd02b5ab7b92633890040d2b4db1f984a2a4c4aa232
 ```
 
-### `dpkg` source package: `apt=2.7.14build2`
+### `dpkg` source package: `apt=2.8.3`
 
 Binary Packages:
 
-- `apt=2.7.14build2`
-- `libapt-pkg6.0t64:amd64=2.7.14build2`
+- `apt=2.8.3`
+- `libapt-pkg6.0t64:amd64=2.8.3`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0t64/copyright`)
 
@@ -56,9 +56,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.7.14build2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.14build2.dsc' apt_2.7.14build2.dsc 3017 SHA512:8b3d295fe3447d9c6aa3b53bc754070b4c27c2d21055ff4b5d4b9e1f2354e1963469d2560034e7f0ddf4b7b47063b878b3682ecb9772638dbaa98a06f0bf8852
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.14build2.tar.xz' apt_2.7.14build2.tar.xz 2352948 SHA512:02d4e469bccc5f82417b01b8b2193cbc74008e8ff231a2c0733055afc2648e39b6824104376683c4ccf7397ab48f83cbd939d609fe0da00589a63355eba1475f
+$ apt-get source -qq --print-uris apt=2.8.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.3.dsc' apt_2.8.3.dsc 2973 SHA512:02223363e56b43eb224e418f9ff470228777eaac1355c787b0e648e4eae0686d3aa38f28aaf95ad75007f2529b32d5fb535024dd2a634b3fad014c95de0f33a0
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.3.tar.xz' apt_2.8.3.tar.xz 2354680 SHA512:bb79bdeb9a0685efd3e9dd2e491001445ebdbccd889ab4c05c2eb0c048117f769bab86ce4a1889acd426222f2eae97fa43aa83a8227690ca061ce25787343c25
 ```
 
 ### `dpkg` source package: `attr=1:2.5.2-1build1.1`
