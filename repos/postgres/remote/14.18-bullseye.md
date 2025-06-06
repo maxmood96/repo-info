@@ -531,7 +531,7 @@ CMD ["postgres"]
 		Size: 31.2 MB (31189200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5ce2178093e91bbe36fa92bd78a2d935f1fbd2ffdae9ce90da095f181182805`  
-		Last Modified: Thu, 22 May 2025 17:03:51 GMT  
+		Last Modified: Fri, 06 Jun 2025 14:33:13 GMT  
 		Size: 1.7 KB (1678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e00823a2a78cb73237eb1e5a07cdf76b2ef78a290ca7994e4f1ea3f078f9159`  
