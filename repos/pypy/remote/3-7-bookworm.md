@@ -90,11 +90,11 @@ $ docker pull pypy@sha256:97e04e2f13d7153b2d02328e34371ba2cec29f7c2e4f1762f0b88e
 
 -	Layers:
 	-	`sha256:ef10c3656fb49c61be9fc0e7abf001a70259bccb31b19306c867d7f0c5a612f1`  
-		Last Modified: Thu, 22 May 2025 01:15:40 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:47 GMT  
 		Size: 15.9 MB (15899365 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:287a82bd2925b794f82b15371a2d5f589dac4dc6bdf0675ca9dfd5ec3b9ada3b`  
-		Last Modified: Thu, 22 May 2025 01:15:40 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:49 GMT  
 		Size: 24.6 KB (24568 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -175,11 +175,11 @@ $ docker pull pypy@sha256:d027e43c053f7a074503de17b37008fce803342f77e931b1a22e4d
 
 -	Layers:
 	-	`sha256:3bcdf3871e99381e8b3d61eebf22c2177f1abb5361c423e2bd24940600768bc2`  
-		Last Modified: Thu, 22 May 2025 17:24:24 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:50 GMT  
 		Size: 15.9 MB (15928063 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4557605d1ff66cf0fab08214469b968a224976707ab049fa7a56236b70a0b7aa`  
-		Last Modified: Thu, 22 May 2025 17:24:23 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:52 GMT  
 		Size: 24.9 KB (24855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -236,11 +236,11 @@ CMD ["pypy3"]
 		Size: 210.3 MB (210303724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:894d0da58d7417b57a30c0388470ac96fab252ed885b2fcd9df59e4212845194`  
-		Last Modified: Thu, 22 May 2025 01:12:13 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:55 GMT  
 		Size: 3.1 MB (3142678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e9d6a86c93c671c1486243f0263b7c134057080bffae5b11b9ab6325be3cad1`  
-		Last Modified: Thu, 22 May 2025 01:12:14 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:58 GMT  
 		Size: 30.3 MB (30251593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -260,10 +260,10 @@ $ docker pull pypy@sha256:0af0e9b605e6a2610ff56bbadfab0319ee7413dc8784226107a8b2
 
 -	Layers:
 	-	`sha256:65399d501baf2a1645a9a32cf0da5cff86e02c89c2c60ea5eb2482f9956f1898`  
-		Last Modified: Thu, 22 May 2025 01:12:14 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:52 GMT  
 		Size: 15.9 MB (15877508 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:76d644ccb0a2daf606ed2466d79ab24a80288bc7a3ec11c506318ffea5bf02d1`  
-		Last Modified: Thu, 22 May 2025 01:12:13 GMT  
+		Last Modified: Sat, 07 Jun 2025 00:48:55 GMT  
 		Size: 24.5 KB (24464 bytes)  
 		MIME: application/vnd.in-toto+json
