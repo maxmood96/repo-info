@@ -131,7 +131,7 @@ $ docker pull clickhouse@sha256:a1871b03ebda7524b20dbe45b0fb8c17e3e28c8b648700ee
 
 -	Layers:
 	-	`sha256:4fb376b0725185667bf473b112fbfd93df7c33f3f53904103450d279cef15619`  
-		Last Modified: Tue, 03 Jun 2025 04:16:13 GMT  
+		Last Modified: Sat, 07 Jun 2025 02:46:32 GMT  
 		Size: 25.9 KB (25875 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -255,6 +255,6 @@ $ docker pull clickhouse@sha256:f5f4450ab24c67170e5e6ea53247899f99b367124b61cd40
 
 -	Layers:
 	-	`sha256:8ab0b0448fd4735e24b7ffe6b9280a64ecf1e6669d3571e4e8c76d71ff785474`  
-		Last Modified: Tue, 03 Jun 2025 04:23:52 GMT  
+		Last Modified: Sat, 07 Jun 2025 02:46:32 GMT  
 		Size: 26.1 KB (26086 bytes)  
 		MIME: application/vnd.in-toto+json
