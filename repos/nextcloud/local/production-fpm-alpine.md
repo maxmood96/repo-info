@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:689a865e31e2ed3a385aa8da0333753e51e202d0a0e819fd398bcfd61a97901a`
+- Image ID: `sha256:551c7805872cd5e2e1e52f196ef3e831fd9319c8a007b8f07434749a10aabda3`
 - Created: `2025-05-16T00:38:01Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
-  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
+  - `PHP_VERSION=8.3.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.22.tar.xz.asc`
+  - `PHP_SHA256=66c86889059bd27ccf460590ca48fcaf3261349cc9bdba2023ac6a265beabf36`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
@@ -286,16 +286,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cairo`
 
 ```console
-cairo-1.18.2-r1 description:
+cairo-1.18.4-r0 description:
 A vector graphics library
 
-cairo-1.18.2-r1 webpage:
+cairo-1.18.4-r0 webpage:
 https://cairographics.org/
 
-cairo-1.18.2-r1 installed size:
+cairo-1.18.4-r0 installed size:
 1056 KiB
 
-cairo-1.18.2-r1 license:
+cairo-1.18.4-r0 license:
 LGPL-2.1-or-later OR MPL-1.1
 
 ```
@@ -456,16 +456,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.04.0-r0 description:
+ghostscript-10.05.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.04.0-r0 webpage:
+ghostscript-10.05.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.04.0-r0 installed size:
-60 MiB
+ghostscript-10.05.1-r0 installed size:
+61 MiB
 
-ghostscript-10.04.0-r0 license:
+ghostscript-10.05.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -1031,6 +1031,23 @@ LGPL-3.0-or-later
 
 ```
 
+### `apk` package: `libice`
+
+```console
+libice-1.1.1-r6 description:
+X11 Inter-Client Exchange library
+
+libice-1.1.1-r6 webpage:
+https://xorg.freedesktop.org/
+
+libice-1.1.1-r6 installed size:
+86 KiB
+
+libice-1.1.1-r6 license:
+X11
+
+```
+
 ### `apk` package: `libidn2`
 
 ```console
@@ -1303,6 +1320,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libsm`
+
+```console
+libsm-1.2.4-r4 description:
+X11 Session Management library
+
+libsm-1.2.4-r4 webpage:
+https://xorg.freedesktop.org/
+
+libsm-1.2.4-r4 installed size:
+33 KiB
+
+libsm-1.2.4-r4 license:
+MIT
+
+```
+
 ### `apk` package: `libsodium`
 
 ```console
@@ -1385,6 +1419,23 @@ libunistring-1.2-r0 installed size:
 
 libunistring-1.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libuuid`
+
+```console
+libuuid-2.40.4-r1 description:
+DCE compatible Universally Unique Identifier library
+
+libuuid-2.40.4-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libuuid-2.40.4-r1 installed size:
+29 KiB
+
+libuuid-2.40.4-r1 license:
+BSD-3-Clause
 
 ```
 
@@ -1571,6 +1622,23 @@ libxrender-0.9.11-r5 installed size:
 41 KiB
 
 libxrender-0.9.11-r5 license:
+MIT
+
+```
+
+### `apk` package: `libxt`
+
+```console
+libxt-1.3.1-r0 description:
+X11 toolkit intrinsics library
+
+libxt-1.3.1-r0 webpage:
+https://xorg.freedesktop.org/
+
+libxt-1.3.1-r0 installed size:
+347 KiB
+
+libxt-1.3.1-r0 license:
 MIT
 
 ```
