@@ -1,220 +1,268 @@
 ## `ros:jade-perception-trusty`
 
 ```console
-$ docker pull ros@sha256:dffa08d5134dbfc2d422ae7f11bc980c2e66068d259f055271b2f3190d2afc4a
+$ docker pull ros@sha256:ef0cb9f8ac054c7101659290be8ddc0a22005c0bbddd24be1cee1c3f3e3b9559
 ```
 
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 4
 	-	linux; amd64
+	-	unknown; unknown
 	-	linux; arm variant v7
+	-	unknown; unknown
 
 ### `ros:jade-perception-trusty` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:902b5358f0d39fee6b17bca74d101a8ca7004a1c3e03461c5a0dd63a31875d5b
+$ docker pull ros@sha256:9f8f54395c09a07ea893ea1de56791f7e2ae4b0b102eb73b3fca508ce6c38d50
 ```
 
--	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **535.3 MB (535311876 bytes)**  
+-	Total Size: **534.3 MB (534283821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ae08b9b38adaadc267ea6b3d9b8ad21b189d6f40b829c7dbcaf7b95ece9c523`
+-	Image ID: `sha256:0772fa35153bb94356672ed83575c565ec00940215756cd08ef572c4a50f2ac8`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 25 Mar 2021 22:33:40 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 ADD file:276b5d943a4d284f8a7b249176a31f93d95e852480c2b851de287e53ff622bba in / 
-# Thu, 25 Mar 2021 22:33:42 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 25 Mar 2021 22:33:43 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 25 Mar 2021 22:33:44 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 25 Mar 2021 22:33:44 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 CMD ["/bin/bash"]
-# Sat, 09 Dec 2023 02:13:00 GMT
-RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:23:50 GMT
-RUN echo "deb http://snapshots.ros.org/jade/final/ubuntu trusty main" > /etc/apt/sources.list.d/ros1-snapshots.list
-# Sat, 09 Dec 2023 02:23:51 GMT
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA
-# Sat, 09 Dec 2023 02:24:24 GMT
-RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:24:25 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN echo "deb http://snapshots.ros.org/jade/final/ubuntu trusty main" > /etc/apt/sources.list.d/ros1-snapshots.list # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENV LANG=C.UTF-8
-# Sat, 09 Dec 2023 02:24:25 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENV LC_ALL=C.UTF-8
-# Sat, 09 Dec 2023 02:24:47 GMT
-RUN rosdep init     && rosdep update --include-eol-distros
-# Sat, 09 Dec 2023 02:24:47 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN rosdep init     && rosdep update --include-eol-distros # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENV ROS_DISTRO=jade
-# Sat, 09 Dec 2023 02:25:37 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:25:39 GMT
-COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Sat, 09 Dec 2023 02:25:39 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+COPY ./ros_entrypoint.sh / # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Sat, 09 Dec 2023 02:25:39 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 CMD ["bash"]
-# Sat, 09 Dec 2023 02:25:52 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:27:59 GMT
-RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
 	-	`sha256:2e6e20c8e2e69fa5c3fcc310f419975cef5fbeb6f7f2fe1374071141281b6a06`  
 		Last Modified: Fri, 13 Dec 2024 13:52:03 GMT  
 		Size: 70.7 MB (70691577 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0551a797c01db074ab0233ceb567e66b8ebdcb9de9a2e7baa36d57dfbca463a3`  
 		Last Modified: Fri, 13 Dec 2024 14:33:56 GMT  
 		Size: 72.7 KB (72664 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:512123a864da5e2a62949e65b67106292c5c704eff90cac2b949fc8d7ac1e58e`  
 		Last Modified: Fri, 13 Dec 2024 13:28:06 GMT  
 		Size: 189.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33d01337e947ad8ba5e7f80fe0d19f7e8e84090acc36f4b1c5cf200012cd97bb`  
-		Last Modified: Sun, 29 Dec 2024 12:23:44 GMT  
-		Size: 14.4 MB (14431564 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4c96153f4e588786cd925471a77fc3556a775f66f5670ebf2d0e0fb0e29d5d0`  
-		Last Modified: Sat, 21 Dec 2024 13:26:52 GMT  
-		Size: 235.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdbb9cb708d8ceb426b09fe00dc9bb7c16daefa236b44400fbefb3d3bdbef35e`  
-		Last Modified: Sat, 21 Dec 2024 13:26:57 GMT  
-		Size: 15.3 KB (15320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe08daaf27c2f3a370a2349f40b68adbfd23136223f9451c3e2f33d6006cedb2`  
-		Last Modified: Thu, 05 Jun 2025 12:41:45 GMT  
-		Size: 30.9 MB (30916570 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bd1679552169184505d19ce771ce96fd496c5b33d3c8fbc1ee2e439259ea27a`  
-		Last Modified: Thu, 05 Jun 2025 12:41:43 GMT  
-		Size: 1.6 MB (1611440 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0751997d97cf8c1b521c5a34413e1d7637fe87361010221313ebcbf797e28ce8`  
-		Last Modified: Sat, 09 Dec 2023 04:27:12 GMT  
-		Size: 150.1 MB (150103492 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e25e86d5ba9fa465b66f0984335414abb68428fe6d01f0687a411788de38135`  
-		Last Modified: Fri, 09 May 2025 01:53:31 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a97430dcbef96a4842e71af48a3751e0e81deab991f658fba4ab3ce51c10ee6`  
-		Last Modified: Sat, 21 Dec 2024 13:28:17 GMT  
-		Size: 4.0 MB (4019240 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:398362f1ab721cfc99dd0a801ceb7c430aa52ff204079753bfc5907880e0c0aa`  
-		Last Modified: Sat, 21 Dec 2024 13:28:48 GMT  
-		Size: 263.4 MB (263449390 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eca7947e2e80596bd2dd6aa721c50543b02d859c18c479e6fee7974186341fbf`  
+		Last Modified: Fri, 06 Jun 2025 22:50:20 GMT  
+		Size: 14.0 MB (13999678 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:53493d080ac5b1dcf02f0544ab568f501bbd0cd25d5a3d4c090f79cfade15863`  
+		Last Modified: Fri, 06 Jun 2025 22:50:19 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f04b7382600e2675b92184b3c9e606962fb3a31d0fcc797c9718d86c5aeb77e1`  
+		Last Modified: Fri, 06 Jun 2025 22:50:19 GMT  
+		Size: 15.7 KB (15689 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8b0540af077fd693d6d887b2c1377227d8aca763ac4abce016145113d53735c2`  
+		Last Modified: Fri, 06 Jun 2025 22:50:21 GMT  
+		Size: 30.9 MB (30903820 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9a90e857d50dc2639933dc58909049bb48dc5e49480f0b333cf30fd28555667d`  
+		Last Modified: Fri, 06 Jun 2025 22:50:37 GMT  
+		Size: 1.9 MB (1907624 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52d6930123b937d48d4d52a308e963df7fcdc06810cc42be7feaafbc10e10241`  
+		Last Modified: Fri, 06 Jun 2025 23:07:49 GMT  
+		Size: 149.7 MB (149666410 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:844a118e840e02939fac45745192b1b0256e7a176b68dd4d15b726e57f220d86`  
+		Last Modified: Fri, 06 Jun 2025 22:50:20 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84b08e9e2a9e663ee9d05790e491d44762dc6ef429870e731c93a8d91ad0ff0d`  
+		Last Modified: Sat, 07 Jun 2025 00:07:53 GMT  
+		Size: 3.6 MB (3588314 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2adf87410b14d7c7791392c33acdbbc41334482656ccb823e8d5515299dc881`  
+		Last Modified: Sat, 07 Jun 2025 00:11:00 GMT  
+		Size: 263.4 MB (263437423 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ros:jade-perception-trusty` - unknown; unknown
+
+```console
+$ docker pull ros@sha256:b157de88d57575274212d0124a1cc8cfcfec343d20fb8d54d5bf447a444f40dc
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.4 MB (46373540 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:746f0a3eed2f34930319e3aee67c6be458048bf220fb0bbbfa7b789c7778eb5c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:73926cf0909c038bc3983147c2d0eeddbac02c45d62ace2166c8a30563cde817`  
+		Last Modified: Sat, 07 Jun 2025 01:21:14 GMT  
+		Size: 46.4 MB (46363927 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:f8d6360b775d4d5c16158e331b48b37748929466a00016a42d1ff8693415e786`  
+		Last Modified: Sat, 07 Jun 2025 01:21:15 GMT  
+		Size: 9.6 KB (9613 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `ros:jade-perception-trusty` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:dd988c73e0325db104c75b4f2887afdd28ea8913dacea880bf40767bdf6665be
+$ docker pull ros@sha256:8a3700e8223addbe734114f19356b08041adb70d21808e47cd5c14037bfa36b1
 ```
 
--	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **483.1 MB (483068998 bytes)**  
+-	Total Size: **482.0 MB (482040322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48ca05e03c48de16d62f064ae021268f520067a93df0f3cff1190173a452ad26`
+-	Image ID: `sha256:5993a2dd91ba780131db62d446d884b3f3d0ca306f8a5bb21aed97eda2d90d81`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 03:07:46 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 ADD file:e9d55e059869915743a8ca8e64582d23c48fe7e90e439daccd56d3e08e8673b4 in / 
-# Tue, 25 Oct 2022 03:07:48 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Tue, 25 Oct 2022 03:07:48 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Tue, 25 Oct 2022 03:07:49 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Tue, 25 Oct 2022 03:07:49 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 CMD ["/bin/bash"]
-# Sat, 09 Dec 2023 02:23:01 GMT
-RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:33:30 GMT
-RUN echo "deb http://snapshots.ros.org/jade/final/ubuntu trusty main" > /etc/apt/sources.list.d/ros1-snapshots.list
-# Sat, 09 Dec 2023 02:33:31 GMT
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA
-# Sat, 09 Dec 2023 02:33:57 GMT
-RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:33:58 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN echo "deb http://snapshots.ros.org/jade/final/ubuntu trusty main" > /etc/apt/sources.list.d/ros1-snapshots.list # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENV LANG=C.UTF-8
-# Sat, 09 Dec 2023 02:33:58 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENV LC_ALL=C.UTF-8
-# Sat, 09 Dec 2023 02:34:19 GMT
-RUN rosdep init     && rosdep update --include-eol-distros
-# Sat, 09 Dec 2023 02:34:19 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN rosdep init     && rosdep update --include-eol-distros # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENV ROS_DISTRO=jade
-# Sat, 09 Dec 2023 02:35:08 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:35:14 GMT
-COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Sat, 09 Dec 2023 02:35:14 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+COPY ./ros_entrypoint.sh / # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Sat, 09 Dec 2023 02:35:14 GMT
+# Mon, 11 Sep 2017 19:26:55 GMT
 CMD ["bash"]
-# Sat, 09 Dec 2023 02:35:32 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:37:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 11 Sep 2017 19:26:55 GMT
+RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
 	-	`sha256:0db3a87a3d7959895fd860c8b924980adda6e77f5d315b6676a4ac0e12518978`  
 		Last Modified: Tue, 14 Jan 2025 21:10:21 GMT  
 		Size: 64.6 MB (64624015 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a31831ce9fd9e38ad9d926286efdb85e400dc823da723d72cc676869c295fb0`  
 		Last Modified: Sat, 14 Dec 2024 10:55:47 GMT  
 		Size: 76.8 KB (76775 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66373b79ee1bedb2a2bf237fb2a717660559ee8e3fec0aae52d9797c2b32b27c`  
 		Last Modified: Tue, 14 Jan 2025 21:05:11 GMT  
 		Size: 162.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c2d774ce67fd876f763d56c53eda188d1d3d2f597db1c31de370c9bb8078081`  
-		Last Modified: Thu, 05 Jun 2025 08:29:03 GMT  
-		Size: 12.8 MB (12784112 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f54c115f62ca21dee95b1512826f919cf441ef820ad4def1fd12e9399cfd2368`  
-		Last Modified: Fri, 09 May 2025 07:27:54 GMT  
-		Size: 235.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae0a76166bf02cedd290a248eb2b6936b5050f1867e626fd4a1e875a3c1c181d`  
-		Last Modified: Fri, 09 May 2025 07:27:54 GMT  
-		Size: 15.3 KB (15323 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0435615c916dd3345d46937ee435a0444206a393cfe5128f7267986aefec3bd`  
-		Last Modified: Thu, 05 Jun 2025 08:30:57 GMT  
-		Size: 28.4 MB (28380029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73ff40d2bf1609ff61e7db9047f51372b505754fe595fe7867653d62cde72ab5`  
-		Last Modified: Thu, 05 Jun 2025 08:30:53 GMT  
-		Size: 1.6 MB (1611489 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad007fe4c686a92a7afdee4c7d40555a8777f4978c95555372f2f323425a80d6`  
-		Last Modified: Thu, 05 Jun 2025 08:31:20 GMT  
-		Size: 137.7 MB (137714912 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60141996d55b47658bdb73f10c2906a9616a7c7b53b356d1b2258ed2de7d317d`  
-		Last Modified: Fri, 09 May 2025 07:27:54 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c090b43ae257023878b4f3578b78f70878cfd158cfd3516f8b78b9aa923232c4`  
-		Last Modified: Thu, 05 Jun 2025 08:31:02 GMT  
-		Size: 3.7 MB (3666801 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2881c454f602f72f250a4c91e1d1019526c4088bf4298368a900d61d1dff486`  
-		Last Modified: Thu, 05 Jun 2025 08:32:05 GMT  
-		Size: 234.2 MB (234194950 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fca3ba35474a2e7add4548570538f01ba4e19ba476ef013e6894b61ee78fc57f`  
+		Last Modified: Fri, 06 Jun 2025 22:52:08 GMT  
+		Size: 12.4 MB (12355346 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8c3a1499d5668b6eeb89a9466248af62e9ca582a05b6194ab6e3d02eee5dc26e`  
+		Last Modified: Fri, 06 Jun 2025 22:55:37 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8938a18f64a189658ee8f48b5e9f7a626ff41fcf30c5f874cb2abb63d68ef65f`  
+		Last Modified: Fri, 06 Jun 2025 22:55:37 GMT  
+		Size: 15.7 KB (15690 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:263cbdaf4bc7d3a241568d22257a71f9904927c34f31958e9158bce6ef124d42`  
+		Last Modified: Fri, 06 Jun 2025 22:55:39 GMT  
+		Size: 28.4 MB (28374521 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6a92fe5263a2bc487b090e21e20f621403dbf2bbe128fd8708aba520322cceda`  
+		Last Modified: Fri, 06 Jun 2025 22:55:39 GMT  
+		Size: 1.9 MB (1907400 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:26e4d6c3244eb00fe78adf5d790629099bc764bb9edc1c0c19c2e6e30a138bfe`  
+		Last Modified: Fri, 06 Jun 2025 22:55:14 GMT  
+		Size: 137.3 MB (137281787 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1f438e1a65e86df020def93be8ab1a263a07888112d72daaf1891da6b229ace`  
+		Last Modified: Fri, 06 Jun 2025 22:55:38 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b5a3b5e16317ffd998270388053df05039b291855511acb39b0134904a2a00ae`  
+		Last Modified: Fri, 06 Jun 2025 23:15:34 GMT  
+		Size: 3.2 MB (3239276 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ef8ba6057d586a193b1b913e615f036912e80a189369f14808fb933bd40b4f88`  
+		Last Modified: Sat, 07 Jun 2025 00:20:35 GMT  
+		Size: 234.2 MB (234164917 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ros:jade-perception-trusty` - unknown; unknown
+
+```console
+$ docker pull ros@sha256:c986bb08d22efbe203f57b28764441712e5d63e5e1b19732d1fe241d84fe80ba
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **46.5 MB (46501893 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:031ed3287a28b2f46eba7b8fae99995816be7cf081a37e342258b37056ff5ae5`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:59f93ef1fd9cb8884932f51c35a9859f0ddf05ec369986f1e806f4fec123d864`  
+		Last Modified: Sat, 07 Jun 2025 01:22:15 GMT  
+		Size: 46.5 MB (46492184 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:9a3e2e04aace724a1c4769144d3c0efa90d5ee1351f97e133122141ab22717c0`  
+		Last Modified: Sat, 07 Jun 2025 01:22:16 GMT  
+		Size: 9.7 KB (9709 bytes)  
+		MIME: application/vnd.in-toto+json

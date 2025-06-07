@@ -1,124 +1,148 @@
 ## `ros:lunar-ros-base-zesty`
 
 ```console
-$ docker pull ros@sha256:bf936147dd2a1a9199bbd476d9fbfdc4597565c399ebc917f5156d384e49f8af
+$ docker pull ros@sha256:7d96f0cf5c2df67a108ee79b3bbc1060f72e4d9ef3f16b221299b08216c8c9ed
 ```
 
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
 	-	linux; amd64
+	-	unknown; unknown
 
 ### `ros:lunar-ros-base-zesty` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:a5d146d4f9e1bc560613d0a3ce3b8953d325300c5692a7d5564b6716532853b4
+$ docker pull ros@sha256:524a8e0b6d5156b0011303a456ef4a34c1642b2eb4c8f1271b9c47d2ab97d507
 ```
 
--	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **429.6 MB (429558620 bytes)**  
+-	Total Size: **429.4 MB (429388278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a431333fbbf74c34be50fc4e5564d31cee0e3fbd84f8d9843b977ca245951550`
+-	Image ID: `sha256:bea23890d35a11a8b85ee38fc3d100886783c841e14858403c231cc1b52abcfc`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 14 Dec 2017 21:00:08 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 ADD file:796db5dd87a82ef3448e235015cbe46f6e917199753ab9fa0a7fc03d14da91b0 in / 
-# Thu, 14 Dec 2017 21:00:09 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 14 Dec 2017 21:00:09 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 14 Dec 2017 21:00:10 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 14 Dec 2017 21:00:11 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 14 Dec 2017 21:00:11 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 CMD ["/bin/bash"]
-# Sat, 09 Dec 2023 02:45:44 GMT
-RUN find /etc/apt/ -name *.list -exec sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' {} \;
-# Sat, 09 Dec 2023 02:45:55 GMT
-RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:45:56 GMT
-RUN echo "deb http://snapshots.ros.org/lunar/final/ubuntu zesty main" > /etc/apt/sources.list.d/ros1-snapshots.list
-# Sat, 09 Dec 2023 02:45:59 GMT
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA
-# Sat, 09 Dec 2023 02:46:53 GMT
-RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:46:54 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN find /etc/apt/ -name *.list -exec sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' {} \; # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN apt-get update && apt-get install -q -y     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN echo "deb http://snapshots.ros.org/lunar/final/ubuntu zesty main" > /etc/apt/sources.list.d/ros1-snapshots.list # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
 ENV LANG=C.UTF-8
-# Sat, 09 Dec 2023 02:46:54 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 ENV LC_ALL=C.UTF-8
-# Sat, 09 Dec 2023 02:47:23 GMT
-RUN rosdep init     && rosdep update --include-eol-distros
-# Sat, 09 Dec 2023 02:47:23 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN rosdep init     && rosdep update --include-eol-distros # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
 ENV ROS_DISTRO=lunar
-# Sat, 09 Dec 2023 02:49:41 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 09 Dec 2023 02:49:44 GMT
-COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Sat, 09 Dec 2023 02:49:44 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
+COPY ./ros_entrypoint.sh / # buildkit
+# Sat, 07 Oct 2017 00:32:53 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Sat, 09 Dec 2023 02:49:45 GMT
+# Sat, 07 Oct 2017 00:32:53 GMT
 CMD ["bash"]
-# Sat, 09 Dec 2023 02:50:49 GMT
-RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Sat, 07 Oct 2017 00:32:53 GMT
+RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
 	-	`sha256:c2ca09a1934b951505ecc4d6b2e4ab7f9bf27bcdfb8999d0181deca74daf7683`  
 		Last Modified: Sat, 14 Dec 2024 03:46:22 GMT  
 		Size: 38.6 MB (38640200 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6c3619d2153ffdefa4a9c19f15c5d566ce271b397a84537baa9ee45b24178f2`  
 		Last Modified: Sat, 14 Dec 2024 03:46:07 GMT  
 		Size: 847.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0efe07335a049e6afcd757db2d17ba37a12b717eb807acb03ddf3cd756b9fc2a`  
 		Last Modified: Sat, 14 Dec 2024 03:46:07 GMT  
 		Size: 570.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b1bb01b3a3b72463ae8ac5666d57b28f1a21d5256271910ac8df841aa04ecd1`  
 		Last Modified: Sat, 14 Dec 2024 05:44:11 GMT  
 		Size: 854.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43a98c1873995475a895f3d79f405232ef5230076b3f610c949c2e8341743af7`  
 		Last Modified: Mon, 16 Dec 2024 03:45:41 GMT  
 		Size: 163.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5aaa7efcea1ebaacadc918ee46d2be4c8dd7f9168ff4ec81f48099356b72f35c`  
-		Last Modified: Sat, 21 Dec 2024 14:05:42 GMT  
-		Size: 854.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3466ac680b3425e3778c7ef1a2cae696dd5c473755d0678d273c4da84d954e5`  
-		Last Modified: Fri, 06 Jun 2025 00:57:22 GMT  
-		Size: 5.0 MB (4979458 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97f98885729b4de3eb1dc872158d2fba501ab6dc2758b9493d7f9b9a67cf7b85`  
-		Last Modified: Thu, 15 May 2025 19:35:32 GMT  
-		Size: 229.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29c6dae4bb9df59219126cd33acb0d1fff869eb3f7db63e6b8102db3a8bbafef`  
-		Last Modified: Thu, 15 May 2025 19:35:33 GMT  
-		Size: 3.6 KB (3604 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:249f571155312897c3f3b98aefaafad38fbc25ba84244da487726b8fec98f5e5`  
-		Last Modified: Fri, 06 Jun 2025 00:57:49 GMT  
-		Size: 57.4 MB (57400596 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a1fe63f9eb4ad1998c517dea06034bf905f198978d7538418061edb2d36f35c`  
-		Last Modified: Sat, 21 Dec 2024 14:06:25 GMT  
-		Size: 1.6 MB (1611443 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a6f2f70e2e41b5b7f707fea113e5aaede9c85bc7a94ff8ab2a4e7e9a457b891`  
-		Last Modified: Fri, 06 Jun 2025 00:58:26 GMT  
-		Size: 252.3 MB (252329023 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8aee7e342c78bb814dd787acf203b5fb7284ab387dd6863dbb54899c4ddf84e`  
-		Last Modified: Thu, 15 May 2025 19:35:33 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7df65750c9424eb8944df99d4eb73b3895fbd7765fede888fb52eaeef62d006b`  
-		Last Modified: Fri, 06 Jun 2025 00:58:18 GMT  
-		Size: 74.6 MB (74590584 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7bc37efbb469e8561f0c44efd5397dbb3422541bde867c738aa6de98695dddf3`  
+		Last Modified: Fri, 06 Jun 2025 23:07:30 GMT  
+		Size: 865.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:45ad09c0d6321127a19542ba1e423fd805f84ca229cce13fe0c1995dbd157a85`  
+		Last Modified: Fri, 06 Jun 2025 23:07:30 GMT  
+		Size: 5.0 MB (4978299 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ba92ced2324d9cf3036eb243e51bd1408bf93b87dbe3b63ede92123616361c89`  
+		Last Modified: Fri, 06 Jun 2025 23:07:29 GMT  
+		Size: 227.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ede91a3b48718bd23660674457dff97823e2ec7ec2ab575bef81221f4c9dcfc2`  
+		Last Modified: Fri, 06 Jun 2025 23:07:28 GMT  
+		Size: 4.0 KB (3986 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9346f16948021f99c4c9bf898a429461eb3749fa121fd3ae088db00909afcf7`  
+		Last Modified: Fri, 06 Jun 2025 23:07:32 GMT  
+		Size: 57.4 MB (57390018 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:12b1c0f8e08d5581804b5706f222b98d5a30e4a047b476037f3d451544fa5040`  
+		Last Modified: Fri, 06 Jun 2025 23:07:28 GMT  
+		Size: 1.9 MB (1907616 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43bc69ede28004315ef4dacaf467657d528bc974a62e4f0f4048fb80b4abd84a`  
+		Last Modified: Fri, 06 Jun 2025 23:07:55 GMT  
+		Size: 252.1 MB (252098568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3677b8e9b08e94a57ddd05466876c6b32a9330811a37558f27125e8b0da1acb7`  
+		Last Modified: Fri, 06 Jun 2025 23:07:27 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c6d02c5aeaa0232474965599c5a7a77d3e4c0b18a91bae576a631a2572f57efe`  
+		Last Modified: Fri, 06 Jun 2025 23:18:24 GMT  
+		Size: 74.4 MB (74365871 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ros:lunar-ros-base-zesty` - unknown; unknown
+
+```console
+$ docker pull ros@sha256:306ef257819ac3916b16b13d1eeb10f57e51b407dd67078d9b02d38fd5ce4c64
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **37.4 MB (37387576 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a562daec849841a9e473ef6f7f63c9a05cc50feba3b4306163ed12d3c47869a7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cc9e81a3ec0812fc7f2bf6fca783e8de23a1563f2576c01b2a0d21970645a318`  
+		Last Modified: Sat, 07 Jun 2025 01:23:24 GMT  
+		Size: 37.4 MB (37377686 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:7fafaf895d9e6f5b9bd64f55726a2e8a5666a1daa0a0a327ee4300b0aabef5fa`  
+		Last Modified: Sat, 07 Jun 2025 01:23:25 GMT  
+		Size: 9.9 KB (9890 bytes)  
+		MIME: application/vnd.in-toto+json
