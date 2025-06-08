@@ -95,11 +95,11 @@ $ docker pull haskell@sha256:aec52225ea04ac44a58f616cac29cee44e810b035549cc14652
 
 -	Layers:
 	-	`sha256:e3067dd595d1f6568726f7c4a87252080a4374f60a9df9baf49a371a0415a899`  
-		Last Modified: Wed, 21 May 2025 23:17:24 GMT  
+		Last Modified: Sun, 08 Jun 2025 01:04:27 GMT  
 		Size: 9.3 MB (9318715 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9f005cd893146113fdd00ea3073ec9a1a898de510d792dd8ea61055211bdd2aa`  
-		Last Modified: Wed, 21 May 2025 23:17:24 GMT  
+		Last Modified: Sun, 08 Jun 2025 01:04:26 GMT  
 		Size: 26.8 KB (26835 bytes)  
 		MIME: application/vnd.in-toto+json
 
