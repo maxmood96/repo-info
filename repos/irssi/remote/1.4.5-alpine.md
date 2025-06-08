@@ -98,11 +98,11 @@ $ docker pull irssi@sha256:46132c981929f742d56c67d7d39205d6e2c9e85cc6e1a157ee035
 
 -	Layers:
 	-	`sha256:d5141c19d7d7c29ee96ad3455a6b880b48c3d23d580691e98ed9466098bd560c`  
-		Last Modified: Fri, 30 May 2025 22:57:56 GMT  
+		Last Modified: Sun, 08 Jun 2025 15:33:12 GMT  
 		Size: 1.3 MB (1272597 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d183b20b2db8baf1730ae6d210cba41c1c79d4e59162b64e831cc212eb1955ab`  
-		Last Modified: Fri, 30 May 2025 22:57:55 GMT  
+		Last Modified: Sun, 08 Jun 2025 15:33:13 GMT  
 		Size: 17.5 KB (17543 bytes)  
 		MIME: application/vnd.in-toto+json
 
