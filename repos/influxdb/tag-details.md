@@ -342,11 +342,11 @@ $ docker pull influxdb@sha256:a09b826cba5f0dd731648b45939122fa027c8fa1a5c17c21e4
 
 -	Layers:
 	-	`sha256:d8f0728a4d8a2c7651a9d003b10167e01aaa9faad63366157935bbdea1f360e0`  
-		Last Modified: Wed, 21 May 2025 23:40:23 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:32 GMT  
 		Size: 4.6 MB (4589690 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f01d9bcc84f96164dd80c88310fc7fbe3e7d0b13ce9838cb4185b6b8cf28717f`  
-		Last Modified: Wed, 21 May 2025 23:40:23 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:34 GMT  
 		Size: 13.1 KB (13067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -754,11 +754,11 @@ $ docker pull influxdb@sha256:a09b826cba5f0dd731648b45939122fa027c8fa1a5c17c21e4
 
 -	Layers:
 	-	`sha256:d8f0728a4d8a2c7651a9d003b10167e01aaa9faad63366157935bbdea1f360e0`  
-		Last Modified: Wed, 21 May 2025 23:40:23 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:32 GMT  
 		Size: 4.6 MB (4589690 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f01d9bcc84f96164dd80c88310fc7fbe3e7d0b13ce9838cb4185b6b8cf28717f`  
-		Last Modified: Wed, 21 May 2025 23:40:23 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:34 GMT  
 		Size: 13.1 KB (13067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1380,11 +1380,11 @@ $ docker pull influxdb@sha256:5b35e79b7bb00e5004b80bf30f85eaff73b9adffb540491433
 
 -	Layers:
 	-	`sha256:e7ccc061dc847b3b66176b83e8f67949be6cf4a05f56d728fe96711e0765666a`  
-		Last Modified: Wed, 21 May 2025 23:40:33 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:14 GMT  
 		Size: 4.5 MB (4534688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8bde0f7169d31d9fc1d821007f59d77dc3bcd3355df151bb04a75f8e6857b366`  
-		Last Modified: Wed, 21 May 2025 23:40:33 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:15 GMT  
 		Size: 14.7 KB (14707 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1586,11 +1586,11 @@ $ docker pull influxdb@sha256:0d1ddbf322c8975edec4b256a4ff106cc9ba35cdad1c6b6b51
 
 -	Layers:
 	-	`sha256:162e00800135c98d09eb438e234dbeafc196ede45c5981b54e2da959c2ac7c07`  
-		Last Modified: Wed, 21 May 2025 23:40:26 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:01 GMT  
 		Size: 4.5 MB (4459659 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:77a57150a0f00a1a7182cb36b1bcd65deb64c9709afec8f68a1ec8f0fdcbe84a`  
-		Last Modified: Wed, 21 May 2025 23:40:26 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:02 GMT  
 		Size: 13.1 KB (13067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2212,11 +2212,11 @@ $ docker pull influxdb@sha256:5b35e79b7bb00e5004b80bf30f85eaff73b9adffb540491433
 
 -	Layers:
 	-	`sha256:e7ccc061dc847b3b66176b83e8f67949be6cf4a05f56d728fe96711e0765666a`  
-		Last Modified: Wed, 21 May 2025 23:40:33 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:14 GMT  
 		Size: 4.5 MB (4534688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8bde0f7169d31d9fc1d821007f59d77dc3bcd3355df151bb04a75f8e6857b366`  
-		Last Modified: Wed, 21 May 2025 23:40:33 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:15 GMT  
 		Size: 14.7 KB (14707 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2418,11 +2418,11 @@ $ docker pull influxdb@sha256:0d1ddbf322c8975edec4b256a4ff106cc9ba35cdad1c6b6b51
 
 -	Layers:
 	-	`sha256:162e00800135c98d09eb438e234dbeafc196ede45c5981b54e2da959c2ac7c07`  
-		Last Modified: Wed, 21 May 2025 23:40:26 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:01 GMT  
 		Size: 4.5 MB (4459659 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:77a57150a0f00a1a7182cb36b1bcd65deb64c9709afec8f68a1ec8f0fdcbe84a`  
-		Last Modified: Wed, 21 May 2025 23:40:26 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:32:02 GMT  
 		Size: 13.1 KB (13067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4429,11 +4429,11 @@ $ docker pull influxdb@sha256:58c92711cc95e02318be2536aeccb756ce6e1136ec91c1e919
 
 -	Layers:
 	-	`sha256:023afb9e0f1e8d258db1fea55efffc04398e06410645b1ad839a17868498398e`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:41 GMT  
 		Size: 2.2 MB (2203260 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f205c8b6ef888b50c090dc278e429864438a6d7b54fd3a3a6fbe7282bc257604`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:43 GMT  
 		Size: 17.8 KB (17772 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4879,11 +4879,11 @@ $ docker pull influxdb@sha256:58c92711cc95e02318be2536aeccb756ce6e1136ec91c1e919
 
 -	Layers:
 	-	`sha256:023afb9e0f1e8d258db1fea55efffc04398e06410645b1ad839a17868498398e`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:41 GMT  
 		Size: 2.2 MB (2203260 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f205c8b6ef888b50c090dc278e429864438a6d7b54fd3a3a6fbe7282bc257604`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:43 GMT  
 		Size: 17.8 KB (17772 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5329,11 +5329,11 @@ $ docker pull influxdb@sha256:58c92711cc95e02318be2536aeccb756ce6e1136ec91c1e919
 
 -	Layers:
 	-	`sha256:023afb9e0f1e8d258db1fea55efffc04398e06410645b1ad839a17868498398e`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:41 GMT  
 		Size: 2.2 MB (2203260 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f205c8b6ef888b50c090dc278e429864438a6d7b54fd3a3a6fbe7282bc257604`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:43 GMT  
 		Size: 17.8 KB (17772 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6040,11 +6040,11 @@ $ docker pull influxdb@sha256:58c92711cc95e02318be2536aeccb756ce6e1136ec91c1e919
 
 -	Layers:
 	-	`sha256:023afb9e0f1e8d258db1fea55efffc04398e06410645b1ad839a17868498398e`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:41 GMT  
 		Size: 2.2 MB (2203260 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f205c8b6ef888b50c090dc278e429864438a6d7b54fd3a3a6fbe7282bc257604`  
-		Last Modified: Tue, 03 Jun 2025 04:16:32 GMT  
+		Last Modified: Sun, 08 Jun 2025 12:29:43 GMT  
 		Size: 17.8 KB (17772 bytes)  
 		MIME: application/vnd.in-toto+json
 
