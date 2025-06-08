@@ -93,11 +93,11 @@ $ docker pull hitch@sha256:f8fe075157b99e4a69e6df1dc3fede89102999f2d645c50923216
 
 -	Layers:
 	-	`sha256:a3edf26a1553cfa932389f12f1b7b21a0571a0f71db48f8b68c9f77393d9e111`  
-		Last Modified: Wed, 21 May 2025 23:13:28 GMT  
+		Last Modified: Sun, 08 Jun 2025 05:13:48 GMT  
 		Size: 2.7 MB (2711895 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:94327af2f83c7c31412b43389027ac49f3b7f9b0f2f0028cf66091d706a903fc`  
-		Last Modified: Wed, 21 May 2025 23:13:28 GMT  
+		Last Modified: Sun, 08 Jun 2025 05:13:50 GMT  
 		Size: 13.6 KB (13625 bytes)  
 		MIME: application/vnd.in-toto+json
 
