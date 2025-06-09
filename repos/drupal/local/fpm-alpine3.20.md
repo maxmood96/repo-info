@@ -1,10 +1,10 @@
-# `drupal:11.1.7-php8.3-fpm-alpine3.20`
+# `drupal:11.1.8-php8.3-fpm-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ec3a08de641632276d5c5b9a7ddc36a73e7a1d0e601d7700ae9baf31f430e53`
-- Created: `2025-05-08T15:27:27Z`
-- Virtual Size: ~ 179.62 Mb  
+- Image ID: `sha256:e42e05874bd64a6843613a2559862cda7dd629fbe87f857fadf9a0f64e9ff12d`
+- Created: `2025-06-06T03:57:18Z`
+- Virtual Size: ~ 179.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
-  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
-  - `DRUPAL_VERSION=11.1.7`
+  - `PHP_VERSION=8.3.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.22.tar.xz.asc`
+  - `PHP_SHA256=66c86889059bd27ccf460590ca48fcaf3261349cc9bdba2023ac6a265beabf36`
+  - `DRUPAL_VERSION=11.1.8`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -539,16 +539,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.12.7-r2 description:
+libxml2-2.12.10-r0 description:
 XML parsing library, version 2
 
-libxml2-2.12.7-r2 webpage:
+libxml2-2.12.10-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.12.7-r2 installed size:
+libxml2-2.12.10-r0 installed size:
 1088 KiB
 
-libxml2-2.12.7-r2 license:
+libxml2-2.12.10-r0 license:
 MIT
 
 ```
