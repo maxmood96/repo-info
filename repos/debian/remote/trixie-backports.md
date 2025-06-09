@@ -154,7 +154,7 @@ RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sou
 		Size: 45.7 MB (45690818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b1be2ca20bbb1decfba39cac82895ce98ab539c04724ba61ba8b13b98df6d18`  
-		Last Modified: Wed, 21 May 2025 23:13:45 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:47:11 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -174,11 +174,11 @@ $ docker pull debian@sha256:adb610405f3a9b5e259a2f9f5308e1336d66cc139f8ca53a2702
 
 -	Layers:
 	-	`sha256:f4a64528f42fdee75dd0aa903768a74fa4eb9b8e9e535962b1150a574acc1c2d`  
-		Last Modified: Wed, 21 May 2025 23:13:45 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:47:12 GMT  
 		Size: 3.1 MB (3085635 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d38dad595b8131fabcad31eaebb3b28562b0ec570e55f665d55bc1ceb0f2ae03`  
-		Last Modified: Wed, 21 May 2025 23:13:45 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:47:11 GMT  
 		Size: 5.9 KB (5879 bytes)  
 		MIME: application/vnd.in-toto+json
 
