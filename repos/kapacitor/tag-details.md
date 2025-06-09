@@ -736,11 +736,11 @@ $ docker pull kapacitor@sha256:55a66767f7684ac0e6893ef36b11415efaa4bf9b71fe91106
 
 -	Layers:
 	-	`sha256:a5cec689ee3433ffff66c4773b1ef3cbfcb1ee57dd19721c3477a9ae3fb1a715`  
-		Last Modified: Tue, 03 Jun 2025 05:13:15 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:39:55 GMT  
 		Size: 3.6 MB (3582668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a5304b62c2f545ed006db5e8b21a4d866498d168d7ed3a47875ab28d94e35b73`  
-		Last Modified: Tue, 03 Jun 2025 05:13:14 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:39:55 GMT  
 		Size: 15.1 KB (15061 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1046,11 +1046,11 @@ $ docker pull kapacitor@sha256:55a66767f7684ac0e6893ef36b11415efaa4bf9b71fe91106
 
 -	Layers:
 	-	`sha256:a5cec689ee3433ffff66c4773b1ef3cbfcb1ee57dd19721c3477a9ae3fb1a715`  
-		Last Modified: Tue, 03 Jun 2025 05:13:15 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:39:55 GMT  
 		Size: 3.6 MB (3582668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a5304b62c2f545ed006db5e8b21a4d866498d168d7ed3a47875ab28d94e35b73`  
-		Last Modified: Tue, 03 Jun 2025 05:13:14 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:39:55 GMT  
 		Size: 15.1 KB (15061 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1457,11 +1457,11 @@ $ docker pull kapacitor@sha256:55a66767f7684ac0e6893ef36b11415efaa4bf9b71fe91106
 
 -	Layers:
 	-	`sha256:a5cec689ee3433ffff66c4773b1ef3cbfcb1ee57dd19721c3477a9ae3fb1a715`  
-		Last Modified: Tue, 03 Jun 2025 05:13:15 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:39:55 GMT  
 		Size: 3.6 MB (3582668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a5304b62c2f545ed006db5e8b21a4d866498d168d7ed3a47875ab28d94e35b73`  
-		Last Modified: Tue, 03 Jun 2025 05:13:14 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:39:55 GMT  
 		Size: 15.1 KB (15061 bytes)  
 		MIME: application/vnd.in-toto+json
 
