@@ -85,7 +85,7 @@ $ docker pull krakend@sha256:cb8ecf0223863842b12c71330d67da84cf1e8e371b2f14702e2
 
 -	Layers:
 	-	`sha256:bb5d4336a8382b0e47479d2e7c2b6ee7d7a3e60ad3e749a88cb7594c4e093f62`  
-		Last Modified: Tue, 06 May 2025 18:18:46 GMT  
+		Last Modified: Mon, 09 Jun 2025 08:25:17 GMT  
 		Size: 15.2 KB (15209 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -163,6 +163,6 @@ $ docker pull krakend@sha256:39122425be43eec742477c3bfd698064d808c76adf1bd5aa663
 
 -	Layers:
 	-	`sha256:ba7e58961629c942a55ac16cea7dd761bb20af5c0b98ebec9c01061faf2cfdf7`  
-		Last Modified: Tue, 06 May 2025 18:18:29 GMT  
+		Last Modified: Mon, 09 Jun 2025 08:25:20 GMT  
 		Size: 15.3 KB (15328 bytes)  
 		MIME: application/vnd.in-toto+json
