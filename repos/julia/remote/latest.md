@@ -87,11 +87,11 @@ $ docker pull julia@sha256:c91b193bef88e9219383802e34afaa7afe9ec462a3731b2b5e089
 
 -	Layers:
 	-	`sha256:2cc57ed01c15ee585ddd233f89be8518eed8be317f60433abc78bfe8298429bf`  
-		Last Modified: Wed, 21 May 2025 23:13:12 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:20:14 GMT  
 		Size: 2.5 MB (2468025 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c263258e9bac932583c0117f119877da6f210f181c5b5e7b2730c3f398b8c73e`  
-		Last Modified: Wed, 21 May 2025 23:13:11 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:20:14 GMT  
 		Size: 18.4 KB (18399 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -165,11 +165,11 @@ $ docker pull julia@sha256:591fb334aade24bf3fa42c129142f5bea40731a0a9b19a24caa2d
 
 -	Layers:
 	-	`sha256:ae307256b2259c079c5c73913d1091e909d0676aea91a10f71e8ceda65b3a3ec`  
-		Last Modified: Thu, 22 May 2025 00:04:04 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:20:44 GMT  
 		Size: 2.5 MB (2468348 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b833109729c35c99e61b9d8dd759e259182535ff9cb89d7e7bb94e211025ec4c`  
-		Last Modified: Thu, 22 May 2025 00:04:03 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:20:39 GMT  
 		Size: 18.6 KB (18567 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -215,11 +215,11 @@ CMD ["julia"]
 		Size: 29.2 MB (29207487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b116acdbdb48c2c32458ece4bc9b332fe0d732c8ee50fef4590835a2c8671f97`  
-		Last Modified: Wed, 21 May 2025 23:12:52 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:21:19 GMT  
 		Size: 5.9 MB (5874753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10d43a66d9b3dc5e5f077bb8de2765fe5758c7895ec0b7d57bcf182c8142ff1c`  
-		Last Modified: Wed, 21 May 2025 23:12:57 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:21:38 GMT  
 		Size: 237.3 MB (237262010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ab2b050569227207c390eec9c9d7afdbb5e9d3e738de5f94af3ede8d0aa2e6c`  
@@ -243,11 +243,11 @@ $ docker pull julia@sha256:8a8aa7a913f94fa316dbf46de656e1e51e928ae6b7d7d25bcc277
 
 -	Layers:
 	-	`sha256:2563fea185ff5b72eca5fbf1bb70b31dc2affd5d4a09379a8c262ea7fd918e50`  
-		Last Modified: Wed, 21 May 2025 23:12:52 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:21:52 GMT  
 		Size: 2.5 MB (2465152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9a810fa583073816fdb8a253a9bed63d2486e35d7b6961893717e7f390699f45`  
-		Last Modified: Wed, 21 May 2025 23:12:52 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:21:51 GMT  
 		Size: 18.3 KB (18346 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -293,15 +293,15 @@ CMD ["julia"]
 		Size: 32.1 MB (32066912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41c36376ef9322a32cfcc8f3c6ed1b8a7030e96f1b92d284b04162bc74d07fd2`  
-		Last Modified: Wed, 21 May 2025 23:32:17 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:21:57 GMT  
 		Size: 6.3 MB (6250473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b83cc66ea50d083ca5ae96c9349a67d9e2f1a907dc85d7ec648980c20abe1779`  
-		Last Modified: Wed, 21 May 2025 23:32:26 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:22:15 GMT  
 		Size: 248.3 MB (248286226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3a40fb7228b784fbefa86f0b528b1a357bd3ae300698fb3d42523d88465d5fe`  
-		Last Modified: Wed, 21 May 2025 23:32:17 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:21:56 GMT  
 		Size: 367.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -321,11 +321,11 @@ $ docker pull julia@sha256:e5f2ccdf522d4611486bdd7ddcee3356641a5ec387df19012b48d
 
 -	Layers:
 	-	`sha256:6201030b6f17059c15d4c56d3a7e338bd1775b5577571cee6ca3c384f42c2d9d`  
-		Last Modified: Wed, 21 May 2025 23:32:17 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:22:23 GMT  
 		Size: 2.5 MB (2472577 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6efd826f5dd312f129157425f5bf6ec4f476e3e8cc4dabe7d397705b39f7147d`  
-		Last Modified: Wed, 21 May 2025 23:32:17 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:23:40 GMT  
 		Size: 18.5 KB (18470 bytes)  
 		MIME: application/vnd.in-toto+json
 
