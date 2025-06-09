@@ -199,10 +199,10 @@ $ docker pull kapacitor@sha256:9c3d763d08a3d9732e9edb0d0c51e9e2959eb40131b18eb9b
 
 -	Layers:
 	-	`sha256:648dc42e3187f17d4518d03ab5878b6d481f5bf89b6bdb6a266a4b5ccbade699`  
-		Last Modified: Tue, 03 Jun 2025 07:40:45 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:40:10 GMT  
 		Size: 3.6 MB (3582142 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90292be3ad63d09b3de03ed6f0f0f74815563a66e9112ae385de5847ba1c4354`  
-		Last Modified: Tue, 03 Jun 2025 07:40:45 GMT  
+		Last Modified: Mon, 09 Jun 2025 17:40:09 GMT  
 		Size: 15.2 KB (15170 bytes)  
 		MIME: application/vnd.in-toto+json
