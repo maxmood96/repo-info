@@ -6471,7 +6471,7 @@ $ docker pull debian@sha256:f485b1da6c927613e478e6b22baf44f5719ff55912473de20044
 
 -	Layers:
 	-	`sha256:d924053d6af5c06e389e8c9e47de3a8d5a0630578757433fe6ad065a5031f970`  
-		Last Modified: Wed, 21 May 2025 22:29:06 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:02:01 GMT  
 		Size: 3.9 MB (3939731 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6660,7 +6660,7 @@ $ docker pull debian@sha256:f485b1da6c927613e478e6b22baf44f5719ff55912473de20044
 
 -	Layers:
 	-	`sha256:d924053d6af5c06e389e8c9e47de3a8d5a0630578757433fe6ad065a5031f970`  
-		Last Modified: Wed, 21 May 2025 22:29:06 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:02:01 GMT  
 		Size: 3.9 MB (3939731 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11149,11 +11149,11 @@ $ docker pull debian@sha256:63f617a0e2738364766a760ad7cb19746fd0a1e09ef74ce6a17f
 
 -	Layers:
 	-	`sha256:fce966b0ba44197bfce0aa97a0b9e1786390f656fdb8904b160662056ea1afd8`  
-		Last Modified: Wed, 21 May 2025 23:12:58 GMT  
+		Last Modified: Mon, 09 Jun 2025 12:46:38 GMT  
 		Size: 3.6 MB (3638019 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8d0aae2c86a1be16f7e2ca978fac5beb8b81f7809b8d2c41a1356f773bd1193a`  
-		Last Modified: Wed, 21 May 2025 23:12:58 GMT  
+		Last Modified: Mon, 09 Jun 2025 12:46:37 GMT  
 		Size: 5.9 KB (5879 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13029,7 +13029,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 45.7 MB (45690818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e08a77e1f600ff5b4d75268c41e844cd9b9d3ca74e35b24d7053e4d433180b58`  
-		Last Modified: Wed, 21 May 2025 23:13:24 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:09:34 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13049,11 +13049,11 @@ $ docker pull debian@sha256:a72a41ac9b3ac93c22227f481d116a431c711b85db313b9796f4
 
 -	Layers:
 	-	`sha256:86b599ec77472024a925238f7c60ff1918cf09f06a5a43bdbee219e0aed79ce8`  
-		Last Modified: Wed, 21 May 2025 23:13:24 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:09:36 GMT  
 		Size: 3.1 MB (3085637 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:deba14f31547e48f986e936aad9b593972001161d1146219e2b6b3777eaae8bb`  
-		Last Modified: Wed, 21 May 2025 23:13:23 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:09:34 GMT  
 		Size: 5.9 KB (5889 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13241,7 +13241,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 47.7 MB (47731405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e08a77e1f600ff5b4d75268c41e844cd9b9d3ca74e35b24d7053e4d433180b58`  
-		Last Modified: Wed, 21 May 2025 23:13:24 GMT  
+		Last Modified: Mon, 09 Jun 2025 13:09:34 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
