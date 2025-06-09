@@ -139,11 +139,11 @@ $ docker pull jruby@sha256:c13e64afc54270eeb6775bb791dac6ac1ed68e1b1b8ce3caddc50
 
 -	Layers:
 	-	`sha256:33b8b1f0c24c8a2bbd3c6af237ac04a4677beabaaa54399c422e4d3f62e0a090`  
-		Last Modified: Thu, 29 May 2025 20:54:51 GMT  
+		Last Modified: Mon, 09 Jun 2025 21:15:16 GMT  
 		Size: 5.3 MB (5292578 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3c2c7b0b9ffcf3591c6fcb95235a113135f04cc4995a9b68684a04f80eda2a6f`  
-		Last Modified: Thu, 29 May 2025 20:54:51 GMT  
+		Last Modified: Mon, 09 Jun 2025 21:15:18 GMT  
 		Size: 20.3 KB (20292 bytes)  
 		MIME: application/vnd.in-toto+json
 
