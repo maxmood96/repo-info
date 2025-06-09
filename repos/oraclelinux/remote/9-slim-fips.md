@@ -52,11 +52,11 @@ $ docker pull oraclelinux@sha256:0e1c9fa58b80e9419ce0c37130c925eea64d250f155d6cf
 
 -	Layers:
 	-	`sha256:5c1ef43a820de8eec460a21ef6dd313fc1b1527daa42d0e5f6394958b6a3130d`  
-		Last Modified: Fri, 30 May 2025 18:52:31 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:02:17 GMT  
 		Size: 2.2 MB (2198080 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3becb11c94f059ade1e969881dc1917aa238e711a6a8a8e987ee95d3be934192`  
-		Last Modified: Fri, 30 May 2025 18:52:30 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:02:16 GMT  
 		Size: 4.9 KB (4918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -101,10 +101,10 @@ $ docker pull oraclelinux@sha256:1fd0615736447f7aee89e547fc2ff9b7958a7c134985c7a
 
 -	Layers:
 	-	`sha256:5a6fad35bc03557f016f6d0b46c14740d3e4df18a713328fc35851e01d218439`  
-		Last Modified: Fri, 30 May 2025 18:52:50 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:07:01 GMT  
 		Size: 2.2 MB (2197492 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81e65716189f293817322328455db25553b9004e4be06bd1f30df6d81cd01480`  
-		Last Modified: Fri, 30 May 2025 18:52:49 GMT  
+		Last Modified: Mon, 09 Jun 2025 04:06:54 GMT  
 		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.in-toto+json
