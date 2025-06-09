@@ -105,11 +105,11 @@ $ docker pull almalinux@sha256:42eb3bc175271554bbe071ae75dd94e831439833638872403
 
 -	Layers:
 	-	`sha256:70cc5ad83d8b18ada18f2fffd9407adc5b86b4784eeb8d15da30fb954d42a264`  
-		Last Modified: Tue, 20 May 2025 21:32:15 GMT  
+		Last Modified: Mon, 09 Jun 2025 21:07:58 GMT  
 		Size: 4.6 MB (4575688 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9a21be1f575a69bbf4eef72bdf8e95504afb3d44fe4cddb106582f9bfce1ada9`  
-		Last Modified: Tue, 20 May 2025 21:32:15 GMT  
+		Last Modified: Mon, 09 Jun 2025 21:08:00 GMT  
 		Size: 5.3 KB (5267 bytes)  
 		MIME: application/vnd.in-toto+json
 
