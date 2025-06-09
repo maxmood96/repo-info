@@ -139,11 +139,11 @@ $ docker pull orientdb@sha256:c6b814ea8b419cac166a55e11f106693cbb5e2ffe5103acad9
 
 -	Layers:
 	-	`sha256:978fafef5883e447bdd593df6b56daa81188d1d54111efe087fda117cabe2c0c`  
-		Last Modified: Tue, 03 Jun 2025 05:13:26 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:15:49 GMT  
 		Size: 3.4 MB (3440191 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e35b380faaf026e4fcc4cc1c9b391ffc763b0fec62304466dd04c56a96c93566`  
-		Last Modified: Tue, 03 Jun 2025 05:13:26 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:15:48 GMT  
 		Size: 14.5 KB (14513 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -249,7 +249,7 @@ CMD ["server.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e6047eeab93378155c798b785262b353b3afea07a0e4f1c064acdc84ce70205`  
-		Last Modified: Tue, 03 Jun 2025 05:30:33 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:16:01 GMT  
 		Size: 72.9 MB (72931646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -273,11 +273,11 @@ $ docker pull orientdb@sha256:7f96723e22f2b4972cf7714e5c373eaa165746fde6b9e01646
 
 -	Layers:
 	-	`sha256:778625c2a8320ff37e94c6d8e81725fdd5577f9bbab3ee0182ab5720b4b11b6c`  
-		Last Modified: Tue, 03 Jun 2025 05:30:31 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:16:09 GMT  
 		Size: 3.4 MB (3444165 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1f05f1524ba0eed1c96e5acfdc9d3e5e27b6ccaa62a04580941c27a30710e7bf`  
-		Last Modified: Tue, 03 Jun 2025 05:30:31 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:16:09 GMT  
 		Size: 14.6 KB (14595 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -407,10 +407,10 @@ $ docker pull orientdb@sha256:00c5358f6d545ffff0e96f82f396e4a7e197fbc39571e223d6
 
 -	Layers:
 	-	`sha256:df72b58a37756ede545166ce19bde682a6d57efb25e58a6d283b8dbb094e7084`  
-		Last Modified: Tue, 03 Jun 2025 07:51:17 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:16:25 GMT  
 		Size: 3.4 MB (3441348 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7ba0cb31db733cefc7f022cfef2eee6ea86b9adbf55b72f3ec368fba4a8e310a`  
-		Last Modified: Tue, 03 Jun 2025 07:51:16 GMT  
+		Last Modified: Mon, 09 Jun 2025 20:16:25 GMT  
 		Size: 14.6 KB (14620 bytes)  
 		MIME: application/vnd.in-toto+json
