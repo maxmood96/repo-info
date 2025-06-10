@@ -1,7 +1,7 @@
 ## `ros:rolling-ros-core`
 
 ```console
-$ docker pull ros@sha256:4916f3a1119ae50707f18b391f095af128cdcde73c7aa18a7ebb1a284a042474
+$ docker pull ros@sha256:d9e8633978b346c6901503375d9a08903cf408e0a83ce168057e7bb7cc606a5e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull ros@sha256:4916f3a1119ae50707f18b391f095af128cdcde73c7aa18a7ebb1a2
 ### `ros:rolling-ros-core` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:0bc569c5ef8866372fb294e4045789a9455227d78065fdc6778d2e83b09b3aef
+$ docker pull ros@sha256:e8f6fee6cb35893ecabaf63abdd1b6155327c09f5f521ecac2aadaac687caa35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.5 MB (157547754 bytes)**  
+-	Total Size: **169.5 MB (169548776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc6047aa36c852fcef58a62938b9b30427639d22360d6836cd42911401f752cb`
+-	Image ID: `sha256:955aec7c4ef106f0ecb39fa03b442317d388cb8910625777d945db8d49092bd9`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -37,25 +37,25 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:598ca0108009b5c2e9e6f4fc4bd19a6bcd604fccb5b9376fac14a75522a5cfa3 in / 
 # Thu, 29 May 2025 04:21:01 GMT
 CMD ["/bin/bash"]
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN curl -L -s -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.1.0/ros2-apt-source_1.1.0.noble_all.deb     && echo "35441f3092fd05773a3c397fab38661bec466584c7a1f1c05366579997cb5fe7 /tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV LANG=C.UTF-8
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV LC_ALL=C.UTF-8
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV ROS_DISTRO=rolling
-# Tue, 03 Jun 2025 04:32:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.12.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.13.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Jun 2025 04:58:20 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 CMD ["bash"]
 ```
 
@@ -64,61 +64,61 @@ CMD ["bash"]
 		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 29.7 MB (29715337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfec2bd3b8a8f3149ca52fdd8464cc064b20a97e958bb5eb957e5b7915305000`  
-		Last Modified: Tue, 03 Jun 2025 17:07:42 GMT  
-		Size: 683.8 KB (683801 bytes)  
+	-	`sha256:29647462da8b7248faa562686afd7d3260fe5f9ebcad7199b3fc188188ec2cb6`  
+		Last Modified: Tue, 10 Jun 2025 17:40:50 GMT  
+		Size: 683.8 KB (683831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fd1b31239b2b35443682de4bbe0887e0c643f5eb132ac575e10939de024389`  
-		Last Modified: Tue, 03 Jun 2025 17:07:42 GMT  
-		Size: 6.7 MB (6745479 bytes)  
+	-	`sha256:cc8cf1676bf842067dd91d4304cd9e00b68f99f9e3fdbb5aaf3bfbd7f42b6bdd`  
+		Last Modified: Tue, 10 Jun 2025 17:40:51 GMT  
+		Size: 6.7 MB (6745430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cca0363a0b27809e7e539adb870f5b03b5ca8f2306972a10b327fb08237cbc8d`  
-		Last Modified: Tue, 03 Jun 2025 17:07:41 GMT  
-		Size: 94.0 KB (94040 bytes)  
+	-	`sha256:57a2963d62bf807e13e004c105aaff40d7c2b5bf0ec34a98c73b58948b204ebf`  
+		Last Modified: Tue, 10 Jun 2025 17:40:50 GMT  
+		Size: 94.0 KB (94036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:230eccfcfedb004370eed4e1c1f60b458a47d4e95994d4a128760d0914abca62`  
-		Last Modified: Tue, 03 Jun 2025 17:07:49 GMT  
-		Size: 120.3 MB (120308902 bytes)  
+	-	`sha256:086be9840220e0654dbe8ca646f01473644e65977961a84a0d7fd5ef2163ff7c`  
+		Last Modified: Tue, 10 Jun 2025 17:43:16 GMT  
+		Size: 132.3 MB (132309948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6969676f34d01f0babe0b34b6b856a9a446b5d4eb7c892d7518f26d14ddaf5ee`  
-		Last Modified: Tue, 03 Jun 2025 17:07:41 GMT  
-		Size: 195.0 B  
+	-	`sha256:c15678d18204d5f60c2a8207755206c234b0e17d078a20bf91a9d36d9cde82f4`  
+		Last Modified: Tue, 10 Jun 2025 17:40:50 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:rolling-ros-core` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:777a5cc6a5a933045b71d5310f876eb58d1ade80508ef6f3b82ddf7417b5f73c
+$ docker pull ros@sha256:93911fb041f53521ef54ddf326a9bdd7c8d866ba5a115cf9e10fdbd0796e4d4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.9 MB (17868091 bytes)**  
+-	Total Size: **18.3 MB (18307405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2169d46452102ab16701d1974a1108a95946646bd2c0b2af79f98844d060c37e`
+-	Image ID: `sha256:eb6a9385b4fb2bad1aed6f6954cfd0a5b71a416f479280c4b104fc1d8a6c3228`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:085d71fe61e31ba0a0081cb03a1de8fc5988895d50bdedd5f283f44998bb408c`  
-		Last Modified: Tue, 03 Jun 2025 19:19:01 GMT  
-		Size: 17.9 MB (17853427 bytes)  
+	-	`sha256:a4329cced913570e8cd67b06c68910802fe2eae575c7a6de26c6b70367d7ce83`  
+		Last Modified: Tue, 10 Jun 2025 19:17:49 GMT  
+		Size: 18.3 MB (18292741 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:84d36cd23ed47bd955ccf4d7556ba3f06680a0f8780337329dafc01b2f0e8af6`  
-		Last Modified: Tue, 03 Jun 2025 19:19:02 GMT  
+	-	`sha256:223339431727abc37c50fe07c4b4395a6919bc8c21a63646678cf4c897216d76`  
+		Last Modified: Tue, 10 Jun 2025 19:17:50 GMT  
 		Size: 14.7 KB (14664 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:rolling-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:9773c590fdd55b0af001bedbe3b95414ba89809b06c05955e63b0efe16343f5d
+$ docker pull ros@sha256:eeb77a1f73957b7606e34051c69f230bc502eb5b31773c46010b492db68337db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.5 MB (151458684 bytes)**  
+-	Total Size: **163.4 MB (163386472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3cd6aa4cd7559ddc99287153004c4429cd2b2c38ab0175faa145030f166e4e8`
+-	Image ID: `sha256:8933135da0a27dc5165727796aa861f89353f404798f6dcec4a30ab70db79bbf`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -135,25 +135,25 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6eb9adae2c7e3a73446b74d4e61e58d6e1d0db6c07cc49612eb0b9f38fefef15 in / 
 # Thu, 29 May 2025 04:30:36 GMT
 CMD ["/bin/bash"]
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN curl -L -s -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.1.0/ros2-apt-source_1.1.0.noble_all.deb     && echo "35441f3092fd05773a3c397fab38661bec466584c7a1f1c05366579997cb5fe7 /tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV LANG=C.UTF-8
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV LC_ALL=C.UTF-8
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV ROS_DISTRO=rolling
-# Tue, 03 Jun 2025 04:32:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.12.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.13.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Jun 2025 04:58:20 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Tue, 03 Jun 2025 04:32:14 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 CMD ["bash"]
 ```
 
@@ -174,35 +174,35 @@ CMD ["bash"]
 		Last Modified: Tue, 03 Jun 2025 16:21:47 GMT  
 		Size: 94.2 KB (94228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cd2483f06750140b5ef1d9528213984e55b6d22ec6260f43ebb6d9d32604e64`  
-		Last Modified: Tue, 03 Jun 2025 16:24:19 GMT  
-		Size: 115.1 MB (115069346 bytes)  
+	-	`sha256:f46fee428ca8064da8e42ab2a83edde8864b2387c92ad4288a4f0a8f4dea7b0d`  
+		Last Modified: Tue, 10 Jun 2025 18:23:31 GMT  
+		Size: 127.0 MB (126997135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62ff94e561c546a1336514aa0a8683915423278ab9bf7fdc6580fcff40f64e26`  
-		Last Modified: Tue, 03 Jun 2025 16:24:08 GMT  
-		Size: 196.0 B  
+	-	`sha256:48c56dbcf3bcee78c66e7611653fffffc90f5c02e8a46764509d6a4168c73778`  
+		Last Modified: Tue, 10 Jun 2025 18:23:16 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:rolling-ros-core` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:900520548ee44ab74f8b8b7b3d02a170b8c5f7bae444534405699db4ed6e0ed2
+$ docker pull ros@sha256:1c18614374730bd8d774d26401abaa44254b26c53ba7fba30692304e11f83c18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17842223 bytes)**  
+-	Total Size: **18.3 MB (18281537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:854a5d361e7db4a3535476538e06211edb3a2e7b5aeb84ed9545d899e618eac0`
+-	Image ID: `sha256:b877b83f05be35c15de376e538c8192f8050046c20d50b2e0b083c64b331cb8b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a787b6b14c8b7a7c9ade9112e7b9c5aee4128c6a17014c3d3a3e9c739a9668a7`  
-		Last Modified: Tue, 03 Jun 2025 19:19:17 GMT  
-		Size: 17.8 MB (17827433 bytes)  
+	-	`sha256:cf90e5bd12f51b8e47a9c4def18028ed55f5466048c4296ce7edf1376b35d865`  
+		Last Modified: Tue, 10 Jun 2025 19:18:02 GMT  
+		Size: 18.3 MB (18266747 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4d9fd8f7a6bcee5eac879ee871298baeffca21fa21516e9d7a57c846a320f91a`  
-		Last Modified: Tue, 03 Jun 2025 19:19:17 GMT  
+	-	`sha256:075e3267b107e741bb6451a4ceb8e79475caa6119d6c02b4493feb22ec440662`  
+		Last Modified: Tue, 10 Jun 2025 19:18:03 GMT  
 		Size: 14.8 KB (14790 bytes)  
 		MIME: application/vnd.in-toto+json
