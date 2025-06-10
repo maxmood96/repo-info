@@ -50,13 +50,9 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.137ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu2.dsc' adduser_3.137ubuntu2.dsc 1688 SHA512:d0d9ec7cd37888ef35f697feb135951f5d929b889207911bda34519a9484f763324ed9f998ecbd97198b41613a5c7e4735f553ad23007af21aa6cccfd3586f6a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu2.tar.xz' adduser_3.137ubuntu2.tar.xz 280520 SHA512:56ef280c99f93fffdd0e877a8592e51351f200df4dcafb5c3d81a459682838896563751f825718fb5bdf3b733781b93aee6b7343526d59cc467522f31f2b9859
-```
 
 ### `dpkg` source package: `aom=3.12.1-1`
 
@@ -254,15 +250,9 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.17=1:1.17-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.17/automake-1.17_1.17-3ubuntu1.dsc' automake-1.17_1.17-3ubuntu1.dsc 2541 SHA512:3a0b08adca971c4b96dc0ae6aa085f2a51ae5bf52fd38382cac9e00a9760fceaaa12874194604b2137856e74f91a278005848771eb866095af3b781c0013401e
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.17/automake-1.17_1.17.orig.tar.xz' automake-1.17_1.17.orig.tar.xz 1652632 SHA512:46aba1c9d64a6368b326020803a2999831c1deaf31eaa1c1dfdcfa5138a7f755643294e82a08b6daab3983b31eee725bdb7b9edc4e9a558374c7d1f1b8e854a7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.17/automake-1.17_1.17.orig.tar.xz.asc' automake-1.17_1.17.orig.tar.xz.asc 833 SHA512:180dde452ec097a9267c334044a9ec16bb65cc6ccbc000b7eca0af81ed7ece6f4ce6f6c2be8a2cabca9d48fd46085c81f0ee5d020967104bc25f37f52927829a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.17/automake-1.17_1.17-3ubuntu1.debian.tar.xz' automake-1.17_1.17-3ubuntu1.debian.tar.xz 15556 SHA512:89e4ff3fe3c45842163652695135a092f1182e319bb9b5bb0395196f66936dbd8beeea75848422633963cfb979b32dccfe1692afdf921b202d006040ac0388a4
-```
 
 ### `dpkg` source package: `autotools-dev=20240727.1`
 
@@ -672,13 +662,9 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.87ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.87ubuntu1.dsc' debconf_1.5.87ubuntu1.dsc 2060 SHA512:422e0a4d7376387151ab57a90edac973559c84fd493dba73e9dc78928d1dadfbdc916268c5216dc1ecf49fd5894647696b8ed14525222f5618014e396bc219d3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.87ubuntu1.tar.xz' debconf_1.5.87ubuntu1.tar.xz 574428 SHA512:9e6b021155cd01c48552df9c3e61ee5b4dc7ed2355564819d595995715b1ba51301782b30f9710bb24769492844420973981c1e374841624897c703c642dfac9
-```
 
 ### `dpkg` source package: `debianutils=5.22`
 
@@ -693,13 +679,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.22
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.22.dsc' debianutils_5.22.dsc 1631 SHA512:1a1fb717ab2873791f9400a7f352f0aaed266637b1d1f3619f249843d2c09762aa80d7d0143d18374665780137bdfb8e700be635a590a7603d2de898da887b25
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.22.tar.xz' debianutils_5.22.tar.xz 82004 SHA512:cd69bdb06b26ac2ae0f321009d2dae9831dbd0abd1ce575337e774be01aef82b583fd09950ddd802a0688ceb775299ef70352c8ffe3d68cfe4b453b26b289856
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.22/
+
 
 ### `dpkg` source package: `diffutils=1:3.10-4`
 
@@ -1674,15 +1660,9 @@ Licenses: (parsed from: `/usr/share/doc/icu-devtools/copyright`, `/usr/share/doc
 - `GPL-3`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=76.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_76.1-1ubuntu2.dsc' icu_76.1-1ubuntu2.dsc 2343 SHA512:43e57fb6b7bc79604d11e1ba48fd5e2cd1958537118249768a4c80d8a7569b4fb2568fab4d1488d333b7c5b690650428e3b089e3bccbd7c0d014367cbe513ae3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_76.1.orig.tar.gz' icu_76.1.orig.tar.gz 27437767 SHA512:b702ab62fb37a1574d5f4a768326d0f8fa30d9db5b015605b5f8215b5d8547f83d84880c586d3dcc7b6c76f8d47ef34e04b0f51baa55908f737024dd79a42a6c
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_76.1.orig.tar.gz.asc' icu_76.1.orig.tar.gz.asc 228 SHA512:c4bd81d4e98d7e37a6ba9540748c4ce1eb740d70bd689a13e2e51da76503b6e0287afd4d1cd3af4540210f37626dec998fcbd7269976cb801f238b789e604489
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_76.1-1ubuntu2.debian.tar.xz' icu_76.1-1ubuntu2.debian.tar.xz 65132 SHA512:73cfe55930e1597e1e725b03005d9ff51e6332d159d2474c68139526c9dc41558a02a4f162a90b39a6d019599f3acc8b41f0899d1316aa3d2bf388c6c54e965d
-```
 
 ### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1`
 
@@ -2668,15 +2648,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.5-1ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu6.dsc' libseccomp_2.5.5-1ubuntu6.dsc 2831 SHA512:fe3adbb3791a96a88f0eb92791254eff386fb16a8501e3bd98aaa1bc88ff0aea7ff73ff071b5385e4abf8d970f0674ec4ce3f90e9a8c85b560ea4001caa1d4f1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz' libseccomp_2.5.5.orig.tar.gz 642445 SHA512:f630e7a7e53a21b7ccb4d3e7b37616b89aeceba916677c8e3032830411d77a14c2d74dcf594cd193b1acc11f52595072e28316dc44300e54083d5d7b314a38da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc' libseccomp_2.5.5.orig.tar.gz.asc 833 SHA512:a32a7146598f9183179ad15603181d1066e806d01f7c5f215d5405ad8618c06a265d05fff3b4a6cc49c50a577d93d6b920e85f6a581786b3db7389f52a4638e2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu6.debian.tar.xz' libseccomp_2.5.5-1ubuntu6.debian.tar.xz 24524 SHA512:134db79f1009ce22ac1a2ab51ec970493d65c6ed74c67dec18b76b2ff3da201f05c8f9d43629ad3d744258f3785c3c3b02c20c3de5ba820a20a78e922f067412
-```
 
 ### `dpkg` source package: `libselinux=3.8.1-1`
 
@@ -3519,15 +3493,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.5-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5-0ubuntu1.dsc' mysql-8.4_8.4.5-0ubuntu1.dsc 3768 SHA512:5242c4f81c9379fa3af9d0afdacdb4b756ca276fa2a824f552f7fa60f0f46ed3ed53107d66f3a452bad31032e5abe1e33aaf0062842a66cd4c0558b8cbc3838b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5.orig.tar.gz' mysql-8.4_8.4.5.orig.tar.gz 478788925 SHA512:d5353bbc618fb6ec3658773d834942f5bfd11f6f5d3fb4778aa684b970a6143d5e96919ba2311bfb00faf3882da307c62b9370aca8f41136ec129d5fa06bcf5c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5.orig.tar.gz.asc' mysql-8.4_8.4.5.orig.tar.gz.asc 833 SHA512:b7a3044960947e6beea5d44112517d76a089e9c983a356228971c436700083d2724639e03b3714d5bd0bd5e22b25949b750015b07982333e7720402e7133cfa4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5-0ubuntu1.debian.tar.xz' mysql-8.4_8.4.5-0ubuntu1.debian.tar.xz 134036 SHA512:ce32823901b37aeb6a5245916d3785eb9734435fd41eb93beab1f7c434ee3b94a09cdde5092ddaad12ae32ca22f932739085cefbd8f3ed148b8ac5a14c6cf90f
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu1`
 
@@ -4164,13 +4132,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.3-1.dsc' python3-defaults_3.13.3-1.dsc 2948 SHA512:e281b13e12fd826f040900c7eeb531738c1643306103a572d508c7c9f3e8067ab19769b4688bc396e8f08737bbd750febffeae958dcce16fbbaf4b5f8f510617
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.3-1.tar.gz' python3-defaults_3.13.3-1.tar.gz 147238 SHA512:c9e62de6dacd65e61e4aa0f49cd22c9272179fd54f528db8eca737e27a8fbec91551c51872fb6cb02333e8dfb5bec0e19e7132ccb2ffaf6b497604aa58c70818
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-defaults/3.13.3-1/
+
 
 ### `dpkg` source package: `python3.13=3.13.3-4`
 
@@ -4382,14 +4350,9 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.16.0-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.dsc' shadow_4.16.0-7ubuntu1.dsc 2579 SHA512:bf1e673a911f68bad1b56fa82527c19b296ce358f000233ddde5f5db862a55c146d58dccc4836e85712d4fdbdf8ea2b5bafeeceed7aba32b18f4de31b8f175b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA512:fdb6835b54b6507f853d9dcdbf4c794d8f808638226d6baf32c5b33e1aaef79159d7f957f4d515c9c770c6a735d74eeb70fa83337374bd0689341ee001fbb756
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.debian.tar.xz' shadow_4.16.0-7ubuntu1.debian.tar.xz 184116 SHA512:ef799ce47e9d81a751e076297835776ecaeb6c8ffd2b6c6159bd55bbefdd1aade92e47539fc8813be83a6209051d31cb6ee89cd98ff5168dd001cc7227923f28
-```
 
 ### `dpkg` source package: `shared-mime-info=2.4-5build2`
 
@@ -4513,14 +4476,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.4-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.dsc' systemd_257.4-1ubuntu3.dsc 8313 SHA512:2d26b9a9fda10841cdb70ea98e3a470ec57474a770e91024f5d36c794a4566aa74e226c508a605ca1e4848bdc7e71e725cf4eb031120afe023c19cf7c05596cb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4.orig.tar.gz' systemd_257.4.orig.tar.gz 16228313 SHA512:dfa0f6de38fa30daffabf6b02d6533ca4e7027188186d7e2e9648b99dad5c4afa30773138f18a34111e7bb2e6ddae8302284429b98b580e757dc67535846afbe
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.debian.tar.xz' systemd_257.4-1ubuntu3.debian.tar.xz 249932 SHA512:af785f5b0da0ff5115bab1c79a38f579160baedd3250abe24a2696b697f80adfbc42526c45427fdb855eae63450bc9baaef4ea5fccf95c98dccb2ef8a566503e
-```
 
 ### `dpkg` source package: `sysvinit=3.14-4ubuntu1`
 

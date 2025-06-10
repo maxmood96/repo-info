@@ -2400,20 +2400,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.9+dfsg-2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.9%2bdfsg-2.dsc' openldap_2.6.9+dfsg-2.dsc 3278 SHA256:10633be67f8b00746b184bad568c79c1974c26a076136657ca65e70de5d4f73d
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.9%2bdfsg.orig.tar.xz' openldap_2.6.9+dfsg.orig.tar.xz 3753260 SHA256:dfce3ca171b4036b371455314dd35176b700ee988d3b556f156f37088516ef93
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.9%2bdfsg-2.debian.tar.xz' openldap_2.6.9+dfsg-2.debian.tar.xz 170064 SHA256:c1a8d955f17f6d04497636ab17a1b94b149ffaa14e9617276df22d2de449f2d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.6.9+dfsg-2/
 
-- https://sources.debian.net/src/openldap/2.6.9+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.6.9+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.6.9+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:10.0p1-5`
 
@@ -2866,20 +2859,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-2.dsc' rust-sequoia-sqv_1.3.0-2.dsc 2634 SHA256:7623cc172abb7b91caf873813a0d24681ba095db83c435ba9b354836368f504f
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-2.debian.tar.xz' rust-sequoia-sqv_1.3.0-2.debian.tar.xz 3688 SHA256:4858c2650c0b9709432213272ae0315c0b2dd01bc9372930adc28d391aaa229b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-2/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 
@@ -3177,19 +3163,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0051
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0051.dsc' ucf_3.0051.dsc 1512 SHA256:2b7419efb55fb4aa273df04d1de88a1db90220afd68168e451f04185d099482c
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0051.tar.xz' ucf_3.0051.tar.xz 70872 SHA256:760439e290955065d95c6daabb0ed097f4b7cecf31a760a6f40c7ba3efeaae74
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ucf/3.0051/
 
-- https://sources.debian.net/src/ucf/3.0051/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0051/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0051/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.9.0-1`
 
