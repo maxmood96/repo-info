@@ -321,13 +321,9 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.87ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.87ubuntu1.dsc' debconf_1.5.87ubuntu1.dsc 2060 SHA512:422e0a4d7376387151ab57a90edac973559c84fd493dba73e9dc78928d1dadfbdc916268c5216dc1ecf49fd5894647696b8ed14525222f5618014e396bc219d3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.87ubuntu1.tar.xz' debconf_1.5.87ubuntu1.tar.xz 574428 SHA512:9e6b021155cd01c48552df9c3e61ee5b4dc7ed2355564819d595995715b1ba51301782b30f9710bb24769492844420973981c1e374841624897c703c642dfac9
-```
 
 ### `dpkg` source package: `debianutils=5.22`
 
@@ -342,13 +338,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.22
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.22.dsc' debianutils_5.22.dsc 1631 SHA512:1a1fb717ab2873791f9400a7f352f0aaed266637b1d1f3619f249843d2c09762aa80d7d0143d18374665780137bdfb8e700be635a590a7603d2de898da887b25
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.22.tar.xz' debianutils_5.22.tar.xz 82004 SHA512:cd69bdb06b26ac2ae0f321009d2dae9831dbd0abd1ce575337e774be01aef82b583fd09950ddd802a0688ceb775299ef70352c8ffe3d68cfe4b453b26b289856
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.22/
+
 
 ### `dpkg` source package: `diffutils=1:3.10-4`
 
@@ -1286,14 +1282,9 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.16.0-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.dsc' shadow_4.16.0-7ubuntu1.dsc 2579 SHA512:bf1e673a911f68bad1b56fa82527c19b296ce358f000233ddde5f5db862a55c146d58dccc4836e85712d4fdbdf8ea2b5bafeeceed7aba32b18f4de31b8f175b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA512:fdb6835b54b6507f853d9dcdbf4c794d8f808638226d6baf32c5b33e1aaef79159d7f957f4d515c9c770c6a735d74eeb70fa83337374bd0689341ee001fbb756
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.debian.tar.xz' shadow_4.16.0-7ubuntu1.debian.tar.xz 184116 SHA512:ef799ce47e9d81a751e076297835776ecaeb6c8ffd2b6c6159bd55bbefdd1aade92e47539fc8813be83a6209051d31cb6ee89cd98ff5168dd001cc7227923f28
-```
 
 ### `dpkg` source package: `systemd=257.4-1ubuntu3`
 

@@ -1490,14 +1490,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.5-2ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_256.5-2ubuntu3.1.dsc' systemd_256.5-2ubuntu3.1.dsc 8224 SHA512:5350aa2462c30972f816f7d29c2b36f39064f097e4defaec380bb210f792131a7eb41a1027b23d25894a3c8b6972c3b77f44cd2ef4db2044e5cbf71297868d90
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_256.5.orig.tar.gz' systemd_256.5.orig.tar.gz 15664466 SHA512:40558194e05a17b218adf3d6df48b738c866855d43d09c1e9381c2c568a44a8f1617b64476736fc7e34416ad9e8d25dc023cf9de090b4ef9079866919377009f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_256.5-2ubuntu3.1.debian.tar.xz' systemd_256.5-2ubuntu3.1.debian.tar.xz 227504 SHA512:3fef2cf533a897cd7ba028865a218c0e0939a731eddbf52166b1ee10c879d52d9af1d6c67077f00eb12e590bde450d4e9f2741e704e0a952c1c0c7b41e4f1798
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
