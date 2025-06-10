@@ -54,11 +54,11 @@ $ docker pull mageia@sha256:ff1b5ba6d677031a4f65e3ab6e43d145aae70bce5e50fed17b0d
 
 -	Layers:
 	-	`sha256:71a0313dce2de05c47b44e5a7edb3671a1a78dfa03003c4740906d6a5d4f6656`  
-		Last Modified: Mon, 24 Mar 2025 22:01:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 22:12:38 GMT  
 		Size: 7.2 MB (7185320 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2081aa01f25c8c99370aaff94c2ab745e28525f0623234a00c0151b693b47373`  
-		Last Modified: Mon, 24 Mar 2025 22:01:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 22:12:40 GMT  
 		Size: 5.3 KB (5284 bytes)  
 		MIME: application/vnd.in-toto+json
 
