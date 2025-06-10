@@ -258,7 +258,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'sid' '@1747699200'
 
 -	Layers:
 	-	`sha256:27b34307efc56192fd4ca945f6323e2158a324121ac08b2b6be4739d1a7a2345`  
-		Last Modified: Wed, 21 May 2025 22:28:50 GMT  
+		Last Modified: Tue, 10 Jun 2025 08:48:47 GMT  
 		Size: 49.5 MB (49538322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
