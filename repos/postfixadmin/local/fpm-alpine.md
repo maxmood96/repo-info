@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b170af9437f05175b6492b116371eedd6798049edb33e4d915dfa092fdf3c8f9`
+- Image ID: `sha256:b0dcac0bb39e66a06cb0c5fe092392b31f868f0945f849e05f06b57f178c9b56`
 - Created: `2024-12-21T02:12:45Z`
-- Virtual Size: ~ 94.38 Mb  
+- Virtual Size: ~ 94.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
-  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
+  - `PHP_VERSION=8.3.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.22.tar.xz.asc`
+  - `PHP_SHA256=66c86889059bd27ccf460590ca48fcaf3261349cc9bdba2023ac6a265beabf36`
   - `POSTFIXADMIN_VERSION=3.3.15`
   - `POSTFIXADMIN_SHA512=02c4a7fb0d5b148a2f9e73e0278a47d1ee63b29a0019cf510f04d33386fc50727c0dae728eafee688a136159ba462af1931fe0658daa06671459c43668867865`
 - Labels:
@@ -405,16 +405,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.4-r0 description:
+libpq-17.5-r0 description:
 PostgreSQL client library
 
-libpq-17.4-r0 webpage:
+libpq-17.5-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.4-r0 installed size:
+libpq-17.5-r0 installed size:
 322 KiB
 
-libpq-17.4-r0 license:
+libpq-17.5-r0 license:
 PostgreSQL
 
 ```
@@ -490,16 +490,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
 MIT
 
 ```
