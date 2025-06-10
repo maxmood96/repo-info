@@ -1,7 +1,7 @@
 ## `ros:rolling-perception`
 
 ```console
-$ docker pull ros@sha256:8bd1f1a59baba9582b49c3f0635b53b7b3c02d7548f3e929584992d683c138fb
+$ docker pull ros@sha256:1a12cd98712a7d93f7d0b1f7c8775a71b45552d2e5384082ec003067df6cde73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -142,59 +142,59 @@ $ docker pull ros@sha256:dd9f70275eeec1f2defa103f749ae272651088c127c5a31f4e448c4
 ### `ros:rolling-perception` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:cd2169194fa099dbd8f1e3a2ee6b8ce97e195846976927493208fb6ced657c20
+$ docker pull ros@sha256:b1d86c2e076f107a1088126d0416391cd49fce378181d6f268d9d352f1c116b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **975.5 MB (975499606 bytes)**  
+-	Total Size: **988.5 MB (988523191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e98cba738a75cf8b2c8c5677e9e1f984253f10844ae2a5fdc712b8e5a6b69082`
+-	Image ID: `sha256:a5f0bff3c2e5544a0ef6599a93cb5c524123a11edcd4bbc162512f4e142af117`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Thu, 29 May 2025 04:30:33 GMT
 ARG RELEASE
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Thu, 29 May 2025 04:30:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Thu, 29 May 2025 04:30:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Thu, 29 May 2025 04:30:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Thu, 29 May 2025 04:30:36 GMT
 ADD file:6eb9adae2c7e3a73446b74d4e61e58d6e1d0db6c07cc49612eb0b9f38fefef15 in / 
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Thu, 29 May 2025 04:30:36 GMT
 CMD ["/bin/bash"]
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN curl -L -s -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.1.0/ros2-apt-source_1.1.0.noble_all.deb     && echo "35441f3092fd05773a3c397fab38661bec466584c7a1f1c05366579997cb5fe7 /tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV LANG=C.UTF-8
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV LC_ALL=C.UTF-8
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENV ROS_DISTRO=rolling
-# Mon, 10 Feb 2025 08:53:23 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.12.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.13.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Jun 2025 04:58:20 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 CMD ["bash"]
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
+# Tue, 10 Jun 2025 04:58:20 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.12.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 10 Feb 2025 08:53:23 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-perception=0.12.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Jun 2025 04:58:20 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-base=0.13.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 10 Jun 2025 04:58:20 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-perception=0.13.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
@@ -214,55 +214,55 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Tue, 03 Jun 2025 16:21:47 GMT  
 		Size: 94.2 KB (94228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cd2483f06750140b5ef1d9528213984e55b6d22ec6260f43ebb6d9d32604e64`  
-		Last Modified: Tue, 03 Jun 2025 16:24:19 GMT  
-		Size: 115.1 MB (115069346 bytes)  
+	-	`sha256:f46fee428ca8064da8e42ab2a83edde8864b2387c92ad4288a4f0a8f4dea7b0d`  
+		Last Modified: Tue, 10 Jun 2025 18:23:31 GMT  
+		Size: 127.0 MB (126997135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62ff94e561c546a1336514aa0a8683915423278ab9bf7fdc6580fcff40f64e26`  
-		Last Modified: Tue, 03 Jun 2025 16:24:08 GMT  
-		Size: 196.0 B  
+	-	`sha256:48c56dbcf3bcee78c66e7611653fffffc90f5c02e8a46764509d6a4168c73778`  
+		Last Modified: Tue, 10 Jun 2025 18:23:16 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5ee15e60a6b4f2e94d7ea44ffadb43de986c57c1efd5949178c6e8ca09725bf`  
-		Last Modified: Tue, 03 Jun 2025 17:15:35 GMT  
-		Size: 105.6 MB (105595486 bytes)  
+	-	`sha256:e0fae5e91ffe6d48fa6890f1367c170da0c10e901ec4337a30791a899b68a883`  
+		Last Modified: Tue, 10 Jun 2025 18:45:36 GMT  
+		Size: 105.6 MB (105596040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ba8562f5f48d7a0d879f6d9ddad45ef49cf00bf690ac7ef334d9c9ce7091bbc`  
-		Last Modified: Tue, 03 Jun 2025 17:15:08 GMT  
-		Size: 345.2 KB (345215 bytes)  
+	-	`sha256:f565bdcba0c35ecd1cd3d834fbcb8a96e7f87e42d22d85cc01708bea55ed5dc6`  
+		Last Modified: Tue, 10 Jun 2025 18:45:28 GMT  
+		Size: 345.2 KB (345208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:959b24a6aa92e176ae9c16c4107cbfeb29fd061d0e6317e95406c3218cf08e96`  
-		Last Modified: Tue, 03 Jun 2025 17:15:07 GMT  
-		Size: 2.5 KB (2496 bytes)  
+	-	`sha256:b8718eda1d80b4639b71439e318296b002a6b947659a62c101ef0700615df21c`  
+		Last Modified: Tue, 10 Jun 2025 18:45:28 GMT  
+		Size: 2.5 KB (2467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523672174b6d88922a7eebb2d1ebfb5361bc77559dd09c08f9c9cbe7a855604b`  
-		Last Modified: Tue, 03 Jun 2025 17:15:11 GMT  
-		Size: 27.1 MB (27062440 bytes)  
+	-	`sha256:633c9dcdacf75d6cc0ef05e66749bc40bc374e58679978adc043c1b7e1a8e57e`  
+		Last Modified: Tue, 10 Jun 2025 18:45:31 GMT  
+		Size: 27.1 MB (27123509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10971441dcc1bf6a5bd937e6f581e951b5c355290b9aef4eede1272cd6736eea`  
-		Last Modified: Fri, 06 Jun 2025 13:56:56 GMT  
-		Size: 691.0 MB (691035285 bytes)  
+	-	`sha256:165e03005e22d63825bd6ac883666a42efaf3ae407572867fec1f7c946a1f701`  
+		Last Modified: Tue, 10 Jun 2025 19:18:03 GMT  
+		Size: 692.1 MB (692069495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:rolling-perception` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:be61bcfdc93c74a523bfcf94742a01a90344c0bbe930967c91e7159912114a1a
+$ docker pull ros@sha256:508c28ba44c377074b9cc28a8e6f78aebd851501ac412996e055ee1dec8fca86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.8 MB (59797071 bytes)**  
+-	Total Size: **60.7 MB (60652975 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00515e5dac7750558c15a136132a6d448db12534485b39a213c26ead1efa735e`
+-	Image ID: `sha256:2e454544460aa4b3d4481091cf30a10d581ed4d79b317e85fdddf43edd5f4dc9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:931685824977a3f5db5072a45968a8f852d5b5acffd76251688e161a5ea5dbec`  
-		Last Modified: Tue, 03 Jun 2025 19:20:43 GMT  
-		Size: 59.8 MB (59787587 bytes)  
+	-	`sha256:1a4e81d02f23f9040c76cd6aedae343c662584d2b89237eed5d0f5f7663c7013`  
+		Last Modified: Tue, 10 Jun 2025 22:19:21 GMT  
+		Size: 60.6 MB (60643491 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e8588f456d0c75104e9c4cfe44540e8294ed344675783209e1e46b80f0c9e389`  
-		Last Modified: Tue, 03 Jun 2025 19:20:45 GMT  
+	-	`sha256:6d0985cfe4f5cfc36884772e2023bd702b168ff67fb9adb977b7571f990d263b`  
+		Last Modified: Tue, 10 Jun 2025 22:19:22 GMT  
 		Size: 9.5 KB (9484 bytes)  
 		MIME: application/vnd.in-toto+json
