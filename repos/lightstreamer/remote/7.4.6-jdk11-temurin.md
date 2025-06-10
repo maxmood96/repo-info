@@ -133,7 +133,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 

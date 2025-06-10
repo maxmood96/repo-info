@@ -215,7 +215,7 @@ $ docker pull lightstreamer@sha256:943281f8baecd81ff5fb5cd91860b040909dd26f86c4f
 
 -	Layers:
 	-	`sha256:6903efea36c7ac60b90a30a0b6f413ad55fa40f14d0a00d5c606ee628c2bfff3`  
-		Last Modified: Tue, 03 Jun 2025 05:12:50 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:04:59 GMT  
 		Size: 18.5 KB (18478 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -480,7 +480,7 @@ $ docker pull lightstreamer@sha256:a80529dbb078d18ff585f3702934bd9247ed43a2c50bf
 
 -	Layers:
 	-	`sha256:0d59ecae73817220d90e86df74aff771cb02e5c0e38b938aa74bbabd6d7d018f`  
-		Last Modified: Tue, 03 Jun 2025 05:12:53 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:05:37 GMT  
 		Size: 18.2 KB (18176 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -745,7 +745,7 @@ $ docker pull lightstreamer@sha256:a80529dbb078d18ff585f3702934bd9247ed43a2c50bf
 
 -	Layers:
 	-	`sha256:0d59ecae73817220d90e86df74aff771cb02e5c0e38b938aa74bbabd6d7d018f`  
-		Last Modified: Tue, 03 Jun 2025 05:12:53 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:05:37 GMT  
 		Size: 18.2 KB (18176 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1010,7 +1010,7 @@ $ docker pull lightstreamer@sha256:943281f8baecd81ff5fb5cd91860b040909dd26f86c4f
 
 -	Layers:
 	-	`sha256:6903efea36c7ac60b90a30a0b6f413ad55fa40f14d0a00d5c606ee628c2bfff3`  
-		Last Modified: Tue, 03 Jun 2025 05:12:50 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:04:59 GMT  
 		Size: 18.5 KB (18478 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1275,7 +1275,7 @@ $ docker pull lightstreamer@sha256:943281f8baecd81ff5fb5cd91860b040909dd26f86c4f
 
 -	Layers:
 	-	`sha256:6903efea36c7ac60b90a30a0b6f413ad55fa40f14d0a00d5c606ee628c2bfff3`  
-		Last Modified: Tue, 03 Jun 2025 05:12:50 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:04:59 GMT  
 		Size: 18.5 KB (18478 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1805,7 +1805,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2070,7 +2070,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3393,7 +3393,7 @@ $ docker pull lightstreamer@sha256:b5ee377f8eb5bab43659dfc993c4efec092ca30d1c116
 
 -	Layers:
 	-	`sha256:a6c56fb7f3e548632e425ed368209d518b780f04f71229c591cb1b7170bfe48f`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:53:44 GMT  
 		Size: 19.5 KB (19538 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3654,7 +3654,7 @@ $ docker pull lightstreamer@sha256:b5ee377f8eb5bab43659dfc993c4efec092ca30d1c116
 
 -	Layers:
 	-	`sha256:a6c56fb7f3e548632e425ed368209d518b780f04f71229c591cb1b7170bfe48f`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:53:44 GMT  
 		Size: 19.5 KB (19538 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3915,7 +3915,7 @@ $ docker pull lightstreamer@sha256:2d3b6c3167ab92d0c99f0344507642f7fa101c29c8302
 
 -	Layers:
 	-	`sha256:b44166d4a3ad4090d104c15ed5c4019ffc78a39b329dc5ca757ca4ba4c9d0f01`  
-		Last Modified: Tue, 03 Jun 2025 05:12:57 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:35 GMT  
 		Size: 20.1 KB (20059 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4176,7 +4176,7 @@ $ docker pull lightstreamer@sha256:2d3b6c3167ab92d0c99f0344507642f7fa101c29c8302
 
 -	Layers:
 	-	`sha256:b44166d4a3ad4090d104c15ed5c4019ffc78a39b329dc5ca757ca4ba4c9d0f01`  
-		Last Modified: Tue, 03 Jun 2025 05:12:57 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:35 GMT  
 		Size: 20.1 KB (20059 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4437,7 +4437,7 @@ $ docker pull lightstreamer@sha256:2d3b6c3167ab92d0c99f0344507642f7fa101c29c8302
 
 -	Layers:
 	-	`sha256:b44166d4a3ad4090d104c15ed5c4019ffc78a39b329dc5ca757ca4ba4c9d0f01`  
-		Last Modified: Tue, 03 Jun 2025 05:12:57 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:35 GMT  
 		Size: 20.1 KB (20059 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4696,7 +4696,7 @@ $ docker pull lightstreamer@sha256:04be81d4133e872db7e08290b28d28380d39e197c7481
 
 -	Layers:
 	-	`sha256:a172f42f50dc4f62d66bad46aa6eeedb604482c32f603f5b781cf94dd4707e15`  
-		Last Modified: Tue, 03 Jun 2025 05:13:00 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:00 GMT  
 		Size: 19.4 KB (19420 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4953,7 +4953,7 @@ $ docker pull lightstreamer@sha256:04be81d4133e872db7e08290b28d28380d39e197c7481
 
 -	Layers:
 	-	`sha256:a172f42f50dc4f62d66bad46aa6eeedb604482c32f603f5b781cf94dd4707e15`  
-		Last Modified: Tue, 03 Jun 2025 05:13:00 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:00 GMT  
 		Size: 19.4 KB (19420 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5212,7 +5212,7 @@ $ docker pull lightstreamer@sha256:2d3b6c3167ab92d0c99f0344507642f7fa101c29c8302
 
 -	Layers:
 	-	`sha256:b44166d4a3ad4090d104c15ed5c4019ffc78a39b329dc5ca757ca4ba4c9d0f01`  
-		Last Modified: Tue, 03 Jun 2025 05:12:57 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:35 GMT  
 		Size: 20.1 KB (20059 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5473,7 +5473,7 @@ $ docker pull lightstreamer@sha256:2d3b6c3167ab92d0c99f0344507642f7fa101c29c8302
 
 -	Layers:
 	-	`sha256:b44166d4a3ad4090d104c15ed5c4019ffc78a39b329dc5ca757ca4ba4c9d0f01`  
-		Last Modified: Tue, 03 Jun 2025 05:12:57 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:35 GMT  
 		Size: 20.1 KB (20059 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5734,7 +5734,7 @@ $ docker pull lightstreamer@sha256:2d3b6c3167ab92d0c99f0344507642f7fa101c29c8302
 
 -	Layers:
 	-	`sha256:b44166d4a3ad4090d104c15ed5c4019ffc78a39b329dc5ca757ca4ba4c9d0f01`  
-		Last Modified: Tue, 03 Jun 2025 05:12:57 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:35 GMT  
 		Size: 20.1 KB (20059 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5993,7 +5993,7 @@ $ docker pull lightstreamer@sha256:04be81d4133e872db7e08290b28d28380d39e197c7481
 
 -	Layers:
 	-	`sha256:a172f42f50dc4f62d66bad46aa6eeedb604482c32f603f5b781cf94dd4707e15`  
-		Last Modified: Tue, 03 Jun 2025 05:13:00 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:00 GMT  
 		Size: 19.4 KB (19420 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6250,7 +6250,7 @@ $ docker pull lightstreamer@sha256:04be81d4133e872db7e08290b28d28380d39e197c7481
 
 -	Layers:
 	-	`sha256:a172f42f50dc4f62d66bad46aa6eeedb604482c32f603f5b781cf94dd4707e15`  
-		Last Modified: Tue, 03 Jun 2025 05:13:00 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:03:00 GMT  
 		Size: 19.4 KB (19420 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6509,7 +6509,7 @@ $ docker pull lightstreamer@sha256:377c53191e505528172c2e882bbefc849da994d624a4f
 
 -	Layers:
 	-	`sha256:adb50d851b62c528d6aa2addd1b4f817085779c224ee1febc14f023e171169cb`  
-		Last Modified: Tue, 03 Jun 2025 05:12:56 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:02:01 GMT  
 		Size: 19.8 KB (19807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6770,7 +6770,7 @@ $ docker pull lightstreamer@sha256:377c53191e505528172c2e882bbefc849da994d624a4f
 
 -	Layers:
 	-	`sha256:adb50d851b62c528d6aa2addd1b4f817085779c224ee1febc14f023e171169cb`  
-		Last Modified: Tue, 03 Jun 2025 05:12:56 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:02:01 GMT  
 		Size: 19.8 KB (19807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7031,7 +7031,7 @@ $ docker pull lightstreamer@sha256:377c53191e505528172c2e882bbefc849da994d624a4f
 
 -	Layers:
 	-	`sha256:adb50d851b62c528d6aa2addd1b4f817085779c224ee1febc14f023e171169cb`  
-		Last Modified: Tue, 03 Jun 2025 05:12:56 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:02:01 GMT  
 		Size: 19.8 KB (19807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7290,7 +7290,7 @@ $ docker pull lightstreamer@sha256:8f11dc0c97d3c69f529a80a5c49e21f196d39189871e3
 
 -	Layers:
 	-	`sha256:4d0adb713057c579229ed199c4791e13e222cf2849882a47efdba011af86ad72`  
-		Last Modified: Tue, 03 Jun 2025 05:13:12 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:01:23 GMT  
 		Size: 19.2 KB (19174 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7547,7 +7547,7 @@ $ docker pull lightstreamer@sha256:8f11dc0c97d3c69f529a80a5c49e21f196d39189871e3
 
 -	Layers:
 	-	`sha256:4d0adb713057c579229ed199c4791e13e222cf2849882a47efdba011af86ad72`  
-		Last Modified: Tue, 03 Jun 2025 05:13:12 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:01:23 GMT  
 		Size: 19.2 KB (19174 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7806,7 +7806,7 @@ $ docker pull lightstreamer@sha256:377c53191e505528172c2e882bbefc849da994d624a4f
 
 -	Layers:
 	-	`sha256:adb50d851b62c528d6aa2addd1b4f817085779c224ee1febc14f023e171169cb`  
-		Last Modified: Tue, 03 Jun 2025 05:12:56 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:02:01 GMT  
 		Size: 19.8 KB (19807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8067,7 +8067,7 @@ $ docker pull lightstreamer@sha256:377c53191e505528172c2e882bbefc849da994d624a4f
 
 -	Layers:
 	-	`sha256:adb50d851b62c528d6aa2addd1b4f817085779c224ee1febc14f023e171169cb`  
-		Last Modified: Tue, 03 Jun 2025 05:12:56 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:02:01 GMT  
 		Size: 19.8 KB (19807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8328,7 +8328,7 @@ $ docker pull lightstreamer@sha256:377c53191e505528172c2e882bbefc849da994d624a4f
 
 -	Layers:
 	-	`sha256:adb50d851b62c528d6aa2addd1b4f817085779c224ee1febc14f023e171169cb`  
-		Last Modified: Tue, 03 Jun 2025 05:12:56 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:02:01 GMT  
 		Size: 19.8 KB (19807 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8587,7 +8587,7 @@ $ docker pull lightstreamer@sha256:8f11dc0c97d3c69f529a80a5c49e21f196d39189871e3
 
 -	Layers:
 	-	`sha256:4d0adb713057c579229ed199c4791e13e222cf2849882a47efdba011af86ad72`  
-		Last Modified: Tue, 03 Jun 2025 05:13:12 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:01:23 GMT  
 		Size: 19.2 KB (19174 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8844,7 +8844,7 @@ $ docker pull lightstreamer@sha256:8f11dc0c97d3c69f529a80a5c49e21f196d39189871e3
 
 -	Layers:
 	-	`sha256:4d0adb713057c579229ed199c4791e13e222cf2849882a47efdba011af86ad72`  
-		Last Modified: Tue, 03 Jun 2025 05:13:12 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:01:23 GMT  
 		Size: 19.2 KB (19174 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9105,7 +9105,7 @@ $ docker pull lightstreamer@sha256:d9818c187294c564703e3cfa7752c46e8823675bbf30b
 
 -	Layers:
 	-	`sha256:93c063a8cab4798cf236b92d36739451c566cdfda681c427315be1d35dee9f65`  
-		Last Modified: Tue, 03 Jun 2025 05:13:05 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:00:24 GMT  
 		Size: 19.5 KB (19534 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9370,7 +9370,7 @@ $ docker pull lightstreamer@sha256:d9818c187294c564703e3cfa7752c46e8823675bbf30b
 
 -	Layers:
 	-	`sha256:93c063a8cab4798cf236b92d36739451c566cdfda681c427315be1d35dee9f65`  
-		Last Modified: Tue, 03 Jun 2025 05:13:05 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:00:24 GMT  
 		Size: 19.5 KB (19534 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9635,7 +9635,7 @@ $ docker pull lightstreamer@sha256:d9818c187294c564703e3cfa7752c46e8823675bbf30b
 
 -	Layers:
 	-	`sha256:93c063a8cab4798cf236b92d36739451c566cdfda681c427315be1d35dee9f65`  
-		Last Modified: Tue, 03 Jun 2025 05:13:05 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:00:24 GMT  
 		Size: 19.5 KB (19534 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9898,7 +9898,7 @@ $ docker pull lightstreamer@sha256:225efbd7c21e56948251a108d6dfdb3b7ba721a2bbb9a
 
 -	Layers:
 	-	`sha256:6b9b0b62781edbe6ff3c586e39bd1da87f85061afdd8e3955e113cb221a93f28`  
-		Last Modified: Tue, 03 Jun 2025 05:12:54 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:59:40 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10159,7 +10159,7 @@ $ docker pull lightstreamer@sha256:225efbd7c21e56948251a108d6dfdb3b7ba721a2bbb9a
 
 -	Layers:
 	-	`sha256:6b9b0b62781edbe6ff3c586e39bd1da87f85061afdd8e3955e113cb221a93f28`  
-		Last Modified: Tue, 03 Jun 2025 05:12:54 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:59:40 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10422,7 +10422,7 @@ $ docker pull lightstreamer@sha256:d9818c187294c564703e3cfa7752c46e8823675bbf30b
 
 -	Layers:
 	-	`sha256:93c063a8cab4798cf236b92d36739451c566cdfda681c427315be1d35dee9f65`  
-		Last Modified: Tue, 03 Jun 2025 05:13:05 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:00:24 GMT  
 		Size: 19.5 KB (19534 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10687,7 +10687,7 @@ $ docker pull lightstreamer@sha256:d9818c187294c564703e3cfa7752c46e8823675bbf30b
 
 -	Layers:
 	-	`sha256:93c063a8cab4798cf236b92d36739451c566cdfda681c427315be1d35dee9f65`  
-		Last Modified: Tue, 03 Jun 2025 05:13:05 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:00:24 GMT  
 		Size: 19.5 KB (19534 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10952,7 +10952,7 @@ $ docker pull lightstreamer@sha256:d9818c187294c564703e3cfa7752c46e8823675bbf30b
 
 -	Layers:
 	-	`sha256:93c063a8cab4798cf236b92d36739451c566cdfda681c427315be1d35dee9f65`  
-		Last Modified: Tue, 03 Jun 2025 05:13:05 GMT  
+		Last Modified: Tue, 10 Jun 2025 12:00:24 GMT  
 		Size: 19.5 KB (19534 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11215,7 +11215,7 @@ $ docker pull lightstreamer@sha256:225efbd7c21e56948251a108d6dfdb3b7ba721a2bbb9a
 
 -	Layers:
 	-	`sha256:6b9b0b62781edbe6ff3c586e39bd1da87f85061afdd8e3955e113cb221a93f28`  
-		Last Modified: Tue, 03 Jun 2025 05:12:54 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:59:40 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11476,7 +11476,7 @@ $ docker pull lightstreamer@sha256:225efbd7c21e56948251a108d6dfdb3b7ba721a2bbb9a
 
 -	Layers:
 	-	`sha256:6b9b0b62781edbe6ff3c586e39bd1da87f85061afdd8e3955e113cb221a93f28`  
-		Last Modified: Tue, 03 Jun 2025 05:12:54 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:59:40 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12004,7 +12004,7 @@ $ docker pull lightstreamer@sha256:aff23813b867ab07906fb9ad6aad4e510321f6073c063
 
 -	Layers:
 	-	`sha256:dca0e78f1f4ae6c34c123b1a07ec3b0c6cb4cb3f84b6786c442b2de16a55e555`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:57:38 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12269,7 +12269,7 @@ $ docker pull lightstreamer@sha256:aff23813b867ab07906fb9ad6aad4e510321f6073c063
 
 -	Layers:
 	-	`sha256:dca0e78f1f4ae6c34c123b1a07ec3b0c6cb4cb3f84b6786c442b2de16a55e555`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:57:38 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13062,7 +13062,7 @@ $ docker pull lightstreamer@sha256:283f0d222469845ace1b361105a3eff3ec9537ac8b853
 
 -	Layers:
 	-	`sha256:c68ffd7966204b7aa066eab71efbce1bdd355845905960d3d61bf6a252c2c8da`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:56:17 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13323,7 +13323,7 @@ $ docker pull lightstreamer@sha256:283f0d222469845ace1b361105a3eff3ec9537ac8b853
 
 -	Layers:
 	-	`sha256:c68ffd7966204b7aa066eab71efbce1bdd355845905960d3d61bf6a252c2c8da`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:56:17 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13851,7 +13851,7 @@ $ docker pull lightstreamer@sha256:aff23813b867ab07906fb9ad6aad4e510321f6073c063
 
 -	Layers:
 	-	`sha256:dca0e78f1f4ae6c34c123b1a07ec3b0c6cb4cb3f84b6786c442b2de16a55e555`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:57:38 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14116,7 +14116,7 @@ $ docker pull lightstreamer@sha256:aff23813b867ab07906fb9ad6aad4e510321f6073c063
 
 -	Layers:
 	-	`sha256:dca0e78f1f4ae6c34c123b1a07ec3b0c6cb4cb3f84b6786c442b2de16a55e555`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:57:38 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14909,7 +14909,7 @@ $ docker pull lightstreamer@sha256:283f0d222469845ace1b361105a3eff3ec9537ac8b853
 
 -	Layers:
 	-	`sha256:c68ffd7966204b7aa066eab71efbce1bdd355845905960d3d61bf6a252c2c8da`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:56:17 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15170,7 +15170,7 @@ $ docker pull lightstreamer@sha256:283f0d222469845ace1b361105a3eff3ec9537ac8b853
 
 -	Layers:
 	-	`sha256:c68ffd7966204b7aa066eab71efbce1bdd355845905960d3d61bf6a252c2c8da`  
-		Last Modified: Tue, 03 Jun 2025 05:12:58 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:56:17 GMT  
 		Size: 18.9 KB (18899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15698,7 +15698,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15963,7 +15963,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17286,7 +17286,7 @@ $ docker pull lightstreamer@sha256:b5ee377f8eb5bab43659dfc993c4efec092ca30d1c116
 
 -	Layers:
 	-	`sha256:a6c56fb7f3e548632e425ed368209d518b780f04f71229c591cb1b7170bfe48f`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:53:44 GMT  
 		Size: 19.5 KB (19538 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17547,7 +17547,7 @@ $ docker pull lightstreamer@sha256:b5ee377f8eb5bab43659dfc993c4efec092ca30d1c116
 
 -	Layers:
 	-	`sha256:a6c56fb7f3e548632e425ed368209d518b780f04f71229c591cb1b7170bfe48f`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:53:44 GMT  
 		Size: 19.5 KB (19538 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18075,7 +18075,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18340,7 +18340,7 @@ $ docker pull lightstreamer@sha256:16a1d403013d26245618a654b906999196290ef60d8d9
 
 -	Layers:
 	-	`sha256:24fce9349ebe485ce15cf9fbbc0e226587732c38e69179d4c6681576c3c06227`  
-		Last Modified: Tue, 03 Jun 2025 05:13:03 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:55:07 GMT  
 		Size: 19.6 KB (19562 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19663,7 +19663,7 @@ $ docker pull lightstreamer@sha256:b5ee377f8eb5bab43659dfc993c4efec092ca30d1c116
 
 -	Layers:
 	-	`sha256:a6c56fb7f3e548632e425ed368209d518b780f04f71229c591cb1b7170bfe48f`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:53:44 GMT  
 		Size: 19.5 KB (19538 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19924,7 +19924,7 @@ $ docker pull lightstreamer@sha256:b5ee377f8eb5bab43659dfc993c4efec092ca30d1c116
 
 -	Layers:
 	-	`sha256:a6c56fb7f3e548632e425ed368209d518b780f04f71229c591cb1b7170bfe48f`  
-		Last Modified: Tue, 03 Jun 2025 05:13:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 11:53:44 GMT  
 		Size: 19.5 KB (19538 bytes)  
 		MIME: application/vnd.in-toto+json
 
