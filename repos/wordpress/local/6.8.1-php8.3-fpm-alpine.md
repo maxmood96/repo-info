@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:80c3344daaf4ae49135f2feca13d045fc65370d8cf29aaf333887ceb78bb9b06`
+- Image ID: `sha256:d0956a88fc88d7a682daba381f25a93344e762da8a8b1c7e90081acbc95a5c22`
 - Created: `2025-04-30T19:42:17Z`
-- Virtual Size: ~ 273.14 Mb  
+- Virtual Size: ~ 273.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.21.tar.xz.asc`
-  - `PHP_SHA256=4dfb329f209a552c3716394fc123bb62e80a468b55ce27fc8cb0fd5f30b9dcd6`
+  - `PHP_VERSION=8.3.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.22.tar.xz.asc`
+  - `PHP_SHA256=66c86889059bd27ccf460590ca48fcaf3261349cc9bdba2023ac6a265beabf36`
 
 ## `apk` (`.apk`-based packages)
 
@@ -401,16 +401,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.04.0-r0 description:
+ghostscript-10.05.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.04.0-r0 webpage:
+ghostscript-10.05.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.04.0-r0 installed size:
-60 MiB
+ghostscript-10.05.1-r0 installed size:
+61 MiB
 
-ghostscript-10.04.0-r0 license:
+ghostscript-10.05.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -806,6 +806,23 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libice`
+
+```console
+libice-1.1.1-r6 description:
+X11 Inter-Client Exchange library
+
+libice-1.1.1-r6 webpage:
+https://xorg.freedesktop.org/
+
+libice-1.1.1-r6 installed size:
+86 KiB
+
+libice-1.1.1-r6 license:
+X11
+
+```
+
 ### `apk` package: `libidn2`
 
 ```console
@@ -959,6 +976,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libsm`
+
+```console
+libsm-1.2.4-r4 description:
+X11 Session Management library
+
+libsm-1.2.4-r4 webpage:
+https://xorg.freedesktop.org/
+
+libsm-1.2.4-r4 installed size:
+33 KiB
+
+libsm-1.2.4-r4 license:
+MIT
+
+```
+
 ### `apk` package: `libsodium`
 
 ```console
@@ -1041,6 +1075,23 @@ libunistring-1.2-r0 installed size:
 
 libunistring-1.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libuuid`
+
+```console
+libuuid-2.40.4-r1 description:
+DCE compatible Universally Unique Identifier library
+
+libuuid-2.40.4-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libuuid-2.40.4-r1 installed size:
+29 KiB
+
+libuuid-2.40.4-r1 license:
+BSD-3-Clause
 
 ```
 
@@ -1183,16 +1234,33 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
+MIT
+
+```
+
+### `apk` package: `libxt`
+
+```console
+libxt-1.3.1-r0 description:
+X11 toolkit intrinsics library
+
+libxt-1.3.1-r0 webpage:
+https://xorg.freedesktop.org/
+
+libxt-1.3.1-r0 installed size:
+347 KiB
+
+libxt-1.3.1-r0 license:
 MIT
 
 ```

@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:43eb7e5430b6bf6304de76541f2832d656c0e00fb13cd0c5ef8344701540a866`
+- Image ID: `sha256:a3959de7984e4815cb09bb547eb6b0fce052b6532ab9f81366b2caba4dec5a06`
 - Created: `2025-05-07T07:03:15Z`
 - Virtual Size: ~ 200.48 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.7.tar.xz.asc`
-  - `PHP_SHA256=e29f4c23be2816ed005aa3f06bbb8eae0f22cc133863862e893515fc841e65e3`
+  - `PHP_VERSION=8.4.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.8.tar.xz.asc`
+  - `PHP_SHA256=aa6a4d330b47eacd83e351658ba8c47747a1e4356456219cfb6d75e7838da091`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -914,16 +914,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
 MIT
 
 ```
