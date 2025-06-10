@@ -1,7 +1,7 @@
 ## `ros:galactic-ros-core-focal`
 
 ```console
-$ docker pull ros@sha256:8f5a6326be760da91c01175d40bd70ee1aa4a159c0c50f03eebd42fc7bc814e8
+$ docker pull ros@sha256:a3717e650d2c1ebdc85166a3f64b49c2cf8338679babff36cae622c93c8a0d81
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,50 +14,50 @@ $ docker pull ros@sha256:8f5a6326be760da91c01175d40bd70ee1aa4a159c0c50f03eebd42f
 ### `ros:galactic-ros-core-focal` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:548cb7cbc1f0f1bddf6119aaafd9c0f58d4c4d49979385f3506f508dcbc86f5b
+$ docker pull ros@sha256:f433ebe87c80db8d001b366688da325536a5603c1be2a766ef4284096bf1d78a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.3 MB (143257724 bytes)**  
+-	Total Size: **143.8 MB (143823215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b098d76410ec3458136c1083779e1b7d9632e00d5c54bb73bab856fda3b05240`
+-	Image ID: `sha256:c549bf02d5f5c532d835fb1b85a744a23e7c9521a9e773e2c84dcee30463e9e5`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:42:46 GMT
 ARG RELEASE
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:42:46 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:42:46 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:42:46 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:42:48 GMT
 ADD file:f9ee450324e6ff2c946bc9aae5cf7e35e240dbd387d8b9f5ee1ed5b8434b9894 in / 
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:42:48 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
-RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
-RUN echo "deb http://snapshots.ros.org/galactic/final/ubuntu focal main" > /etc/apt/sources.list.d/ros2-snapshots.list # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
+RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Jun 2025 08:00:06 GMT
+RUN set -eux;        key='4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-snapshots-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME" # buildkit
+# Sat, 07 Jun 2025 08:00:06 GMT
+RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-snapshots-archive-keyring.gpg ] http://snapshots.ros.org/galactic/final/ubuntu focal main" > /etc/apt/sources.list.d/ros2-snapshots.list # buildkit
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENV LANG=C.UTF-8
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENV ROS_DISTRO=galactic
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-galactic-ros-core=0.9.3-2*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 CMD ["bash"]
 ```
 
@@ -66,102 +66,102 @@ CMD ["bash"]
 		Last Modified: Thu, 08 May 2025 17:04:39 GMT  
 		Size: 27.5 MB (27510394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:945134a43cf5436bcd4c4fabbe5f8689d89a7e3813c2be30f673ddd81f849543`  
-		Last Modified: Fri, 06 Jun 2025 22:49:26 GMT  
-		Size: 1.2 MB (1194815 bytes)  
+	-	`sha256:11052161241e41a57b1cbb6ef459473de4ccf5cc8cb12c67052f79b515002f0a`  
+		Last Modified: Mon, 09 Jun 2025 21:16:47 GMT  
+		Size: 1.2 MB (1194828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ddc9e11a6f24d45a0fd6c2fd537bb5c96fcfe7ad0f2a5534cc8f35938605463`  
-		Last Modified: Fri, 06 Jun 2025 22:49:27 GMT  
-		Size: 5.4 MB (5363955 bytes)  
+	-	`sha256:931cee7ca53b99f574090e76c6443814931e6dc63cd60275d83c8a8618882c45`  
+		Last Modified: Mon, 09 Jun 2025 21:16:47 GMT  
+		Size: 10.0 MB (9982545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62f4f1b29220d6398d0c70e5bf4d323cf24bc1b2b4587f6b1b9a02658100661b`  
-		Last Modified: Fri, 06 Jun 2025 22:49:27 GMT  
-		Size: 4.0 KB (3989 bytes)  
+	-	`sha256:4ff0cd693b0e9a7b595721f2c18fc344735cff6dd852a68e4566e97c4abe888c`  
+		Last Modified: Mon, 09 Jun 2025 21:16:46 GMT  
+		Size: 4.0 KB (4043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49802bd0654544e040c6c148afac52b1bc2758819ccf7844589f6ea1f8d42935`  
-		Last Modified: Fri, 06 Jun 2025 22:49:27 GMT  
-		Size: 229.0 B  
+	-	`sha256:ff68de3e6e4d94da44fd46aaac8d51e075d6b4d2e63547ee4661ccc80f1b6538`  
+		Last Modified: Mon, 09 Jun 2025 21:16:46 GMT  
+		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4547639f65f5b71b189c02bc2917e674ef90e9b6aac3744e8961e9ae71488bc0`  
-		Last Modified: Fri, 06 Jun 2025 22:49:32 GMT  
-		Size: 109.2 MB (109184147 bytes)  
+	-	`sha256:0e64f09c9c0a539389b70e14ae98f3b1b07c00c6cc24224d7f35361e11faccfe`  
+		Last Modified: Mon, 09 Jun 2025 21:16:52 GMT  
+		Size: 105.1 MB (105130927 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cd83c03f807b7ea0994bf1035dc345d86aa658f5159998acc62e1c70a214182`  
-		Last Modified: Fri, 06 Jun 2025 22:49:28 GMT  
-		Size: 195.0 B  
+	-	`sha256:5cae04d994b8a94412416c264258dcac3f5b4d7632662ba09ae69b75c995d411`  
+		Last Modified: Mon, 09 Jun 2025 21:16:46 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:galactic-ros-core-focal` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:3d840b0b1e25ec3dfdd1e6aa095609a71c48c653e3bc5ead24e0af09555d6d70
+$ docker pull ros@sha256:ec5efeb461ee54afd417411274bbb1c6d2cbea7bc9c320292ede300b4a7f239e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17529458 bytes)**  
+-	Total Size: **17.5 MB (17533939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:617872342dc41f43ce15777a293a32bf0c10e480474dd48736cce76463dab31d`
+-	Image ID: `sha256:d42a6fa891c8a5d787a6d7e3a1036b59a5ab0424990380fcbac5a30381e76373`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f9556e6b5d67234ddbb1027d5eafebb92f48afedc0ad3ab84d357cc5826a3e7f`  
-		Last Modified: Sat, 07 Jun 2025 01:19:51 GMT  
-		Size: 17.5 MB (17514286 bytes)  
+	-	`sha256:43e8dbd1f7ca4668035f3b1a23afc26c35fd078140a0059545b779198d0362de`  
+		Last Modified: Mon, 09 Jun 2025 22:18:01 GMT  
+		Size: 17.5 MB (17517546 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3ab891ec9bb5414a34308ecf2465716cafa4bc4982d8944350155dff3a264317`  
-		Last Modified: Sat, 07 Jun 2025 01:19:52 GMT  
-		Size: 15.2 KB (15172 bytes)  
+	-	`sha256:64b651d5f72059331b9033f24be143c321b1d4c6802cca239bd5e27ea8ea7fab`  
+		Last Modified: Mon, 09 Jun 2025 22:18:02 GMT  
+		Size: 16.4 KB (16393 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:galactic-ros-core-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:6f5cd9da10e0131cae5062e66a561ed67c3085e7d9e70fb4d907e1ba97b2d915
+$ docker pull ros@sha256:885ea35a786ad8da5e0b08b90a6f53e2c16f9a80efc98b1ed20ebfe03f20c3b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.2 MB (137195647 bytes)**  
+-	Total Size: **137.8 MB (137765884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e59688edd96d9a55b6d48b8331191b191d9ead03102fdbe5c542840e57213422`
+-	Image ID: `sha256:e02efb2bb05c593a26f2bc99066834cd024a1cee8d76363e5e2819173f907954`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:46:43 GMT
 ARG RELEASE
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:46:43 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:46:43 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:46:43 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:46:45 GMT
 ADD file:2c90d89e4dd4e1d2473deca816f585a78ced2a0c5c799399810f86fdbb17ac7e in / 
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Tue, 08 Apr 2025 10:46:45 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
-RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
-RUN echo "deb http://snapshots.ros.org/galactic/final/ubuntu focal main" > /etc/apt/sources.list.d/ros2-snapshots.list # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
+RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Jun 2025 08:00:06 GMT
+RUN set -eux;        key='4B63CF8FDE49746E98FA01DDAD19BAB3CBF125EA';        export GNUPGHOME="$(mktemp -d)";        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key";        mkdir -p /usr/share/keyrings;        gpg --batch --export "$key" > /usr/share/keyrings/ros2-snapshots-archive-keyring.gpg;        gpgconf --kill all;        rm -rf "$GNUPGHOME" # buildkit
+# Sat, 07 Jun 2025 08:00:06 GMT
+RUN echo "deb [ signed-by=/usr/share/keyrings/ros2-snapshots-archive-keyring.gpg ] http://snapshots.ros.org/galactic/final/ubuntu focal main" > /etc/apt/sources.list.d/ros2-snapshots.list # buildkit
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENV LANG=C.UTF-8
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENV LC_ALL=C.UTF-8
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENV ROS_DISTRO=galactic
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-galactic-ros-core=0.9.3-2*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 01 Dec 2023 06:00:32 GMT
+# Sat, 07 Jun 2025 08:00:06 GMT
 CMD ["bash"]
 ```
 
@@ -174,47 +174,47 @@ CMD ["bash"]
 		Last Modified: Fri, 06 Jun 2025 23:12:20 GMT  
 		Size: 1.2 MB (1194699 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3da64ed2bb66a6ce3d36adf9712e73c205cbae57442bbdb8365c1c16617e0183`  
-		Last Modified: Fri, 06 Jun 2025 23:12:20 GMT  
-		Size: 5.3 MB (5344104 bytes)  
+	-	`sha256:236fec1006c3522403b0feafac48aeded8531636ac44d158910db311cb217659`  
+		Last Modified: Mon, 09 Jun 2025 21:21:56 GMT  
+		Size: 9.8 MB (9839701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9a127babc495b469c32a2537669b10def6004f278427e28a9ad21e1eaad81c`  
-		Last Modified: Fri, 06 Jun 2025 23:12:20 GMT  
-		Size: 4.0 KB (3983 bytes)  
+	-	`sha256:ac9c0dbae44ad3c2a486914616608617ea5ae7615405075d860ca9d037658472`  
+		Last Modified: Mon, 09 Jun 2025 21:21:57 GMT  
+		Size: 4.0 KB (4046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a0c8192db141ffbb5140fe411c5eced3897890db3b1fcea32de47823cb1e9f5`  
-		Last Modified: Fri, 06 Jun 2025 23:24:52 GMT  
-		Size: 230.0 B  
+	-	`sha256:9dabd21457018d5fffe84a3291535b717890deff8c93a12e7cf4a69e1f23614c`  
+		Last Modified: Mon, 09 Jun 2025 21:23:15 GMT  
+		Size: 283.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9d05758778f2814758f8af46ee68fc371f4c70c37e44d6667bd998a6a401889`  
-		Last Modified: Sat, 07 Jun 2025 23:59:04 GMT  
-		Size: 104.7 MB (104674775 bytes)  
+	-	`sha256:f2dc9cc0fca6354a9e10d48dc43c584ba2f2bfe621df6f2466584a2a5bc12ce5`  
+		Last Modified: Mon, 09 Jun 2025 21:23:22 GMT  
+		Size: 100.7 MB (100749299 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d724ca4312a3680a73d9b733e052cdc81fc0456386fb1c596c2520fc09de111`  
-		Last Modified: Fri, 06 Jun 2025 23:24:55 GMT  
+	-	`sha256:908c356d108f7fc63c325ef52dfc5ceb7c197b2ad917d5c4e64c4d0ce9992940`  
+		Last Modified: Mon, 09 Jun 2025 21:23:08 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:galactic-ros-core-focal` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:ef5b00499c028f1c7e984c287ebdb0d972cb9f3219437caa066c276246817e59
+$ docker pull ros@sha256:1b8ff4f1c4d1a398f009fcc9e62f2828af9312e7262ff309ea5e85a4df27bd1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17521884 bytes)**  
+-	Total Size: **17.5 MB (17526365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec9ee7cfcbef04246e6b926052620d528750616ee431dc2c06308131090ee7d8`
+-	Image ID: `sha256:aa252d53c24c1b75b58763b52888a8995267f98cf7edfbaa5a981cc70a562dc1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b473b35e03df4ffd11151436147454b8ad88a0f1f1628f50dda41f95889d37f4`  
-		Last Modified: Sat, 07 Jun 2025 01:20:06 GMT  
-		Size: 17.5 MB (17506578 bytes)  
+	-	`sha256:b1378a615dd898c97194716bf04077290c94cdf87e57caf705d7d03bba6fc6e8`  
+		Last Modified: Mon, 09 Jun 2025 22:18:15 GMT  
+		Size: 17.5 MB (17509838 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:873ee2c735e58d05673811da84537673af3746b02f8c667a92f71831778f6d56`  
-		Last Modified: Sat, 07 Jun 2025 01:20:07 GMT  
-		Size: 15.3 KB (15306 bytes)  
+	-	`sha256:8584669a13ff3781bbf6ad0f824ce8a47bc69402095019e601e69a12f347c89d`  
+		Last Modified: Mon, 09 Jun 2025 22:18:16 GMT  
+		Size: 16.5 KB (16527 bytes)  
 		MIME: application/vnd.in-toto+json
