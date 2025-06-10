@@ -626,11 +626,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -711,11 +711,11 @@ $ docker pull julia@sha256:4a122c603e89f9bf6cf85a117fe5fea0148ebcd51053053bd881f
 
 -	Layers:
 	-	`sha256:ed8ba6a29d44067d2e54ff2778faa55ede534fab2a3325837af589e80318fb47`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:36 GMT  
 		Size: 79.9 KB (79864 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24af34bc1f2f0e32ab91111730e85752efdd12c6a345b813ee112eea57bcb00e`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:38 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -796,11 +796,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1218,11 +1218,11 @@ $ docker pull julia@sha256:a124a14506b53f6cc76fe95eae8bd751efecdc3f919b5b713e4f0
 
 -	Layers:
 	-	`sha256:fbcc9ea2f41fee43047b44cdf2c100a16b5cf2fb7fdebcd45dc23c22288e9f70`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:14 GMT  
 		Size: 2.7 MB (2736364 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b0f0f6e6ec58446d2804fa608840c75e76337bf90631aedf274871a6c661534`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:16 GMT  
 		Size: 17.2 KB (17230 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1770,11 +1770,11 @@ $ docker pull julia@sha256:8ee37484109603d6a9be889bf552ae0a6f6b55f4615b4d61fb7b9
 
 -	Layers:
 	-	`sha256:6d7afd2c47edba262978ecac388ee149a5da3db1e457a826a44d06953c9992e7`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:18 GMT  
 		Size: 2.5 MB (2468070 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ab2ec9dca6f3fe6d97c796f9b1bf04e58bb94efc7f771ba663f0fef8224c12c`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:19 GMT  
 		Size: 17.2 KB (17214 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2223,11 +2223,11 @@ $ docker pull julia@sha256:4f7175d8174d5a3270d4acc2e83117d0db7530f8720bf1b0c6cb6
 
 -	Layers:
 	-	`sha256:f0e4b83fdc9fbfc4bc87bc626bd590c43ea771815e5afd5ca669751fe4fb068a`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:47 GMT  
 		Size: 82.3 KB (82257 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7326a2bc8e63b6179bc15a24601c0dbc5296ce5bde02b8f8b4c801fdd6cb96b5`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:49 GMT  
 		Size: 12.6 KB (12579 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2308,11 +2308,11 @@ $ docker pull julia@sha256:2223de82816678d7a5d22c595d7f20df940a4c8fa334c4e873afb
 
 -	Layers:
 	-	`sha256:cd6f6fd2d3a0b982ec6c85d31fd7ed1b92c51d681a819bb033ad45cd64fa41d2`  
-		Last Modified: Tue, 11 Mar 2025 17:57:37 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:21 GMT  
 		Size: 79.9 KB (79887 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8be5f503861b92fe7dbe4f2f3ee14b81ddf62127c3b8ee5309c746073e18aac0`  
-		Last Modified: Tue, 11 Mar 2025 17:57:37 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:23 GMT  
 		Size: 12.6 KB (12580 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2393,11 +2393,11 @@ $ docker pull julia@sha256:4f7175d8174d5a3270d4acc2e83117d0db7530f8720bf1b0c6cb6
 
 -	Layers:
 	-	`sha256:f0e4b83fdc9fbfc4bc87bc626bd590c43ea771815e5afd5ca669751fe4fb068a`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:47 GMT  
 		Size: 82.3 KB (82257 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7326a2bc8e63b6179bc15a24601c0dbc5296ce5bde02b8f8b4c801fdd6cb96b5`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:49 GMT  
 		Size: 12.6 KB (12579 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2488,11 +2488,11 @@ $ docker pull julia@sha256:8ee37484109603d6a9be889bf552ae0a6f6b55f4615b4d61fb7b9
 
 -	Layers:
 	-	`sha256:6d7afd2c47edba262978ecac388ee149a5da3db1e457a826a44d06953c9992e7`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:18 GMT  
 		Size: 2.5 MB (2468070 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ab2ec9dca6f3fe6d97c796f9b1bf04e58bb94efc7f771ba663f0fef8224c12c`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:19 GMT  
 		Size: 17.2 KB (17214 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2815,11 +2815,11 @@ $ docker pull julia@sha256:fe850f2b428e44875d889b9ee0728e27bb26db1c614cacd8ecacd
 
 -	Layers:
 	-	`sha256:7bd10ad1664bbe537dbdf727b807e3bd67d0ce29d8af7d1294b30ed50686f80a`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:06:51 GMT  
 		Size: 2.7 MB (2736991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:178605f4f110938f5475449e4a48666cc56cc1f1743821621bf580a60cf3257d`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:06:52 GMT  
 		Size: 16.6 KB (16626 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3367,11 +3367,11 @@ $ docker pull julia@sha256:8ee37484109603d6a9be889bf552ae0a6f6b55f4615b4d61fb7b9
 
 -	Layers:
 	-	`sha256:6d7afd2c47edba262978ecac388ee149a5da3db1e457a826a44d06953c9992e7`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:18 GMT  
 		Size: 2.5 MB (2468070 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ab2ec9dca6f3fe6d97c796f9b1bf04e58bb94efc7f771ba663f0fef8224c12c`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:19 GMT  
 		Size: 17.2 KB (17214 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3820,11 +3820,11 @@ $ docker pull julia@sha256:4f7175d8174d5a3270d4acc2e83117d0db7530f8720bf1b0c6cb6
 
 -	Layers:
 	-	`sha256:f0e4b83fdc9fbfc4bc87bc626bd590c43ea771815e5afd5ca669751fe4fb068a`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:47 GMT  
 		Size: 82.3 KB (82257 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7326a2bc8e63b6179bc15a24601c0dbc5296ce5bde02b8f8b4c801fdd6cb96b5`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:49 GMT  
 		Size: 12.6 KB (12579 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3905,11 +3905,11 @@ $ docker pull julia@sha256:2223de82816678d7a5d22c595d7f20df940a4c8fa334c4e873afb
 
 -	Layers:
 	-	`sha256:cd6f6fd2d3a0b982ec6c85d31fd7ed1b92c51d681a819bb033ad45cd64fa41d2`  
-		Last Modified: Tue, 11 Mar 2025 17:57:37 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:21 GMT  
 		Size: 79.9 KB (79887 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8be5f503861b92fe7dbe4f2f3ee14b81ddf62127c3b8ee5309c746073e18aac0`  
-		Last Modified: Tue, 11 Mar 2025 17:57:37 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:23 GMT  
 		Size: 12.6 KB (12580 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3990,11 +3990,11 @@ $ docker pull julia@sha256:4f7175d8174d5a3270d4acc2e83117d0db7530f8720bf1b0c6cb6
 
 -	Layers:
 	-	`sha256:f0e4b83fdc9fbfc4bc87bc626bd590c43ea771815e5afd5ca669751fe4fb068a`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:47 GMT  
 		Size: 82.3 KB (82257 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7326a2bc8e63b6179bc15a24601c0dbc5296ce5bde02b8f8b4c801fdd6cb96b5`  
-		Last Modified: Sat, 31 May 2025 00:05:02 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:07:49 GMT  
 		Size: 12.6 KB (12579 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4085,11 +4085,11 @@ $ docker pull julia@sha256:8ee37484109603d6a9be889bf552ae0a6f6b55f4615b4d61fb7b9
 
 -	Layers:
 	-	`sha256:6d7afd2c47edba262978ecac388ee149a5da3db1e457a826a44d06953c9992e7`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:18 GMT  
 		Size: 2.5 MB (2468070 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ab2ec9dca6f3fe6d97c796f9b1bf04e58bb94efc7f771ba663f0fef8224c12c`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:02:19 GMT  
 		Size: 17.2 KB (17214 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4412,11 +4412,11 @@ $ docker pull julia@sha256:fe850f2b428e44875d889b9ee0728e27bb26db1c614cacd8ecacd
 
 -	Layers:
 	-	`sha256:7bd10ad1664bbe537dbdf727b807e3bd67d0ce29d8af7d1294b30ed50686f80a`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:06:51 GMT  
 		Size: 2.7 MB (2736991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:178605f4f110938f5475449e4a48666cc56cc1f1743821621bf580a60cf3257d`  
-		Last Modified: Wed, 21 May 2025 23:13:06 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:06:52 GMT  
 		Size: 16.6 KB (16626 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5417,11 +5417,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5502,11 +5502,11 @@ $ docker pull julia@sha256:4a122c603e89f9bf6cf85a117fe5fea0148ebcd51053053bd881f
 
 -	Layers:
 	-	`sha256:ed8ba6a29d44067d2e54ff2778faa55ede534fab2a3325837af589e80318fb47`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:36 GMT  
 		Size: 79.9 KB (79864 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24af34bc1f2f0e32ab91111730e85752efdd12c6a345b813ee112eea57bcb00e`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:38 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5587,11 +5587,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6009,11 +6009,11 @@ $ docker pull julia@sha256:a124a14506b53f6cc76fe95eae8bd751efecdc3f919b5b713e4f0
 
 -	Layers:
 	-	`sha256:fbcc9ea2f41fee43047b44cdf2c100a16b5cf2fb7fdebcd45dc23c22288e9f70`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:14 GMT  
 		Size: 2.7 MB (2736364 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b0f0f6e6ec58446d2804fa608840c75e76337bf90631aedf274871a6c661534`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:16 GMT  
 		Size: 17.2 KB (17230 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7014,11 +7014,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7099,11 +7099,11 @@ $ docker pull julia@sha256:4a122c603e89f9bf6cf85a117fe5fea0148ebcd51053053bd881f
 
 -	Layers:
 	-	`sha256:ed8ba6a29d44067d2e54ff2778faa55ede534fab2a3325837af589e80318fb47`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:36 GMT  
 		Size: 79.9 KB (79864 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24af34bc1f2f0e32ab91111730e85752efdd12c6a345b813ee112eea57bcb00e`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:38 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7184,11 +7184,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7606,11 +7606,11 @@ $ docker pull julia@sha256:a124a14506b53f6cc76fe95eae8bd751efecdc3f919b5b713e4f0
 
 -	Layers:
 	-	`sha256:fbcc9ea2f41fee43047b44cdf2c100a16b5cf2fb7fdebcd45dc23c22288e9f70`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:14 GMT  
 		Size: 2.7 MB (2736364 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b0f0f6e6ec58446d2804fa608840c75e76337bf90631aedf274871a6c661534`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:16 GMT  
 		Size: 17.2 KB (17230 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11020,11 +11020,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11105,11 +11105,11 @@ $ docker pull julia@sha256:4a122c603e89f9bf6cf85a117fe5fea0148ebcd51053053bd881f
 
 -	Layers:
 	-	`sha256:ed8ba6a29d44067d2e54ff2778faa55ede534fab2a3325837af589e80318fb47`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:36 GMT  
 		Size: 79.9 KB (79864 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24af34bc1f2f0e32ab91111730e85752efdd12c6a345b813ee112eea57bcb00e`  
-		Last Modified: Tue, 15 Apr 2025 21:52:49 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:38 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11190,11 +11190,11 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11612,11 +11612,11 @@ $ docker pull julia@sha256:a124a14506b53f6cc76fe95eae8bd751efecdc3f919b5b713e4f0
 
 -	Layers:
 	-	`sha256:fbcc9ea2f41fee43047b44cdf2c100a16b5cf2fb7fdebcd45dc23c22288e9f70`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:14 GMT  
 		Size: 2.7 MB (2736364 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b0f0f6e6ec58446d2804fa608840c75e76337bf90631aedf274871a6c661534`  
-		Last Modified: Wed, 21 May 2025 23:13:13 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:03:16 GMT  
 		Size: 17.2 KB (17230 bytes)  
 		MIME: application/vnd.in-toto+json
 

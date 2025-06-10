@@ -75,10 +75,10 @@ $ docker pull julia@sha256:de4e1be7a7cd276b4c0111b9989eda803b5268fb7b3668c9cf722
 
 -	Layers:
 	-	`sha256:690ae456d9aa420606b4b0cd3aabf5928fc5dbf250f28e4eacb9c03c1e94c6cb`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:02 GMT  
 		Size: 82.2 KB (82234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:677a690ccf98bc64103272bf0cdb14a6eb92649dbe7c17f437f40ea095a4795d`  
-		Last Modified: Sat, 31 May 2025 00:05:01 GMT  
+		Last Modified: Tue, 10 Jun 2025 02:04:03 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
