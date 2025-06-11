@@ -1,7 +1,7 @@
 ## `memcached:1-bookworm`
 
 ```console
-$ docker pull memcached@sha256:0f92cdf1ca059c3b747f95328ed9e8de40866896657cb2b73148be36331efc02
+$ docker pull memcached@sha256:618147e61c21454ec30a246a4e99fa1b08b0af6743ffa4311a1fb221c3d241ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,19 +26,19 @@ $ docker pull memcached@sha256:0f92cdf1ca059c3b747f95328ed9e8de40866896657cb2b73
 ### `memcached:1-bookworm` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:15c127398e9bb6bdfdbd6689b817964617401f2d9ca294758323011b3bb09350
+$ docker pull memcached@sha256:c2b5b37862a0d15d6622bea58a1e3a7a34610456324dc81a6de4e3369d06a5f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (33021901 bytes)**  
+-	Total Size: **33.0 MB (33026651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f40f7fb4f0d5e586a146a0a994596292ea1e784ca1657eed1192b2fe17a003c`
+-	Image ID: `sha256:809ba6b39db15dffb27e2affc4fc5bc5eee2c32ee9b06e08f2f604ee63e41a78`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
 # Tue, 01 Apr 2025 23:49:01 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1747699200'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1749513600'
 # Tue, 01 Apr 2025 23:49:01 GMT
 RUN set -eux; 	groupadd --system --gid 11211 memcache; 	useradd --system --gid memcache --uid 11211 memcache # buildkit
 # Tue, 01 Apr 2025 23:49:01 GMT
@@ -66,52 +66,52 @@ CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62`  
-		Last Modified: Tue, 03 Jun 2025 13:30:15 GMT  
-		Size: 28.2 MB (28225330 bytes)  
+	-	`sha256:dad67da3f26bce15939543965e09c4059533b025f707aad72ed3d3f3a09c66f8`  
+		Last Modified: Tue, 10 Jun 2025 23:26:09 GMT  
+		Size: 28.2 MB (28230129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62639a9e53d980a0e86e3b54ae34e1e913a7f6cebd1bce7741e629047b732896`  
-		Last Modified: Tue, 03 Jun 2025 13:30:47 GMT  
-		Size: 1.1 KB (1108 bytes)  
+	-	`sha256:d35255ebbfb2408b64a9d53c3d868456872a9b4d89ff4e80f2a8d20c4332dd69`  
+		Last Modified: Tue, 10 Jun 2025 23:32:18 GMT  
+		Size: 1.1 KB (1109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5783d9aa8a04d558f9d1d5407d3f6dddb064b0a670738a5cbc480866bbc1a30`  
-		Last Modified: Tue, 03 Jun 2025 13:30:51 GMT  
-		Size: 2.5 MB (2492219 bytes)  
+	-	`sha256:4be9410e6aeed64e084cb2812f5d70658e1a9ffe79b5972cea39097c9b949e4e`  
+		Last Modified: Tue, 10 Jun 2025 23:32:19 GMT  
+		Size: 2.5 MB (2492199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:609bfa774ee059a5d07cc14920af077ac7de9039c567f38164ea31f5eb04d3ba`  
-		Last Modified: Tue, 03 Jun 2025 13:30:47 GMT  
-		Size: 2.3 MB (2302838 bytes)  
+	-	`sha256:78d86227fbbb72b09a47e8016b198dc2062598d3e4c4b358cfa655a2a2c044ef`  
+		Last Modified: Tue, 10 Jun 2025 23:32:20 GMT  
+		Size: 2.3 MB (2302808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:062ee789e2fd31345a9db851ddb0616c67ac7a4ea84e3a0e953af88faa98e3e5`  
-		Last Modified: Tue, 03 Jun 2025 13:30:48 GMT  
+	-	`sha256:cad105488469355bcd85bf5c9c6b74cf9729838da44ad0c6f500f252c6860e8c`  
+		Last Modified: Tue, 10 Jun 2025 23:32:20 GMT  
 		Size: 284.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8416b27aabc571df320856a2ff533825bcbfc2fa602782561ff6b1a0449b821`  
-		Last Modified: Tue, 03 Jun 2025 13:30:48 GMT  
+	-	`sha256:90864ece76220d4e897cf79c19145c02ce9d1c1326bb831401963b27ec0ca566`  
+		Last Modified: Tue, 10 Jun 2025 23:32:19 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:7b5eaaa81772b0dc7377f0c8a8d41bb09c38c1a07292c0e0bef5654ceef3a28b
+$ docker pull memcached@sha256:5b481897e28479249d51b4c0720b45485fe1952dcb27924f267fcd30d68de833
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2334310 bytes)**  
+-	Total Size: **2.4 MB (2425304 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7c8287d2eb936f10093c74288a99d09a35c07df6033435ba68847dba2b0fdff`
+-	Image ID: `sha256:6773503e415cd198fe6533c8042593b7aabb0d583e0baf500eed5c4c78452531`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f5c222a0451ee4a8115a7a9421176131c1481dd511e4ec028e050fdf94e7b741`  
-		Last Modified: Wed, 04 Jun 2025 23:08:22 GMT  
-		Size: 2.3 MB (2308990 bytes)  
+	-	`sha256:4c6461ec41fb74fe203eb1b6c30c50eddc7f6c11871bfa03eab07db6a4b17c6f`  
+		Last Modified: Wed, 11 Jun 2025 00:34:27 GMT  
+		Size: 2.4 MB (2399984 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:01ac10f70adef13c64045d3be5956b00caafe800e1fab7640f6eaa5f9ea66864`  
-		Last Modified: Wed, 04 Jun 2025 23:08:22 GMT  
+	-	`sha256:2e35a57a543fde6b5a8a3e185100a7e9b5ac2a947dea0b7589b5531fab06c67c`  
+		Last Modified: Wed, 11 Jun 2025 00:34:28 GMT  
 		Size: 25.3 KB (25320 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -210,19 +210,19 @@ $ docker pull memcached@sha256:7659c54d461b01b9e2062f0a8843b75b7d6a793c3d358a339
 ### `memcached:1-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull memcached@sha256:95630a66e2d5c3a453ccc0f22d18ce0a297f1f21536938ff8f1b93c86b9cfbea
+$ docker pull memcached@sha256:d208683140025f905b085b97b35b3a533015b73809d3740e5e3d968c202ec9e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.1 MB (28065225 bytes)**  
+-	Total Size: **28.1 MB (28070929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:127e001dab188acb98ae7340be866c4c3ae686a9285cf40bd10f9dc702a73ee9`
+-	Image ID: `sha256:b74912d1ce300e7a774e690f1c07510c2228991f23ee542e33cc1028e45d90bc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
 # Tue, 01 Apr 2025 23:49:01 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1747699200'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1749513600'
 # Tue, 01 Apr 2025 23:49:01 GMT
 RUN set -eux; 	groupadd --system --gid 11211 memcache; 	useradd --system --gid memcache --uid 11211 memcache # buildkit
 # Tue, 01 Apr 2025 23:49:01 GMT
@@ -250,52 +250,52 @@ CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:3726bc5cceb817ddfc7c2e1dbdfb4900fc6e27b680d63b8d751b06952753b6a1`  
-		Last Modified: Tue, 03 Jun 2025 13:30:58 GMT  
-		Size: 23.9 MB (23932922 bytes)  
+	-	`sha256:6aafc35ac588733109bc0c55587676a69c7a13b7c2d7306cdb389c2db1299c9c`  
+		Last Modified: Tue, 10 Jun 2025 23:58:28 GMT  
+		Size: 23.9 MB (23938744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67b5a50ba24d961f5862446c5e48fe0c5dbf9acfb0a3718255dd76fab71e84a7`  
-		Last Modified: Tue, 03 Jun 2025 15:12:43 GMT  
-		Size: 1.1 KB (1108 bytes)  
+	-	`sha256:d6615a784a0e15fd2ed6d79980e68d9cfe87df589b9af6f4c71656286b040acc`  
+		Last Modified: Tue, 10 Jun 2025 23:43:55 GMT  
+		Size: 1.1 KB (1110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad4adc063a4b96db7c50bcc78cd236a7102a3c31a61fb4216967b2cdcab50c24`  
-		Last Modified: Tue, 03 Jun 2025 15:12:44 GMT  
-		Size: 1.9 MB (1946317 bytes)  
+	-	`sha256:e66fc152354c58f6024d7e37104e92e718be7b1e70f9745e96e63006f79730f5`  
+		Last Modified: Tue, 10 Jun 2025 23:43:56 GMT  
+		Size: 1.9 MB (1946292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e26fc15d35761b3f0c7797ea1ffc39ab51d4227089df7d6b5d2a075730795d20`  
-		Last Modified: Tue, 03 Jun 2025 15:12:44 GMT  
-		Size: 2.2 MB (2184474 bytes)  
+	-	`sha256:d3712992b59c9c2fa191ca82275b5fb441fcc21940ef625721d0221723f70d9e`  
+		Last Modified: Tue, 10 Jun 2025 23:43:56 GMT  
+		Size: 2.2 MB (2184378 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c64f51527fd9673b0b39f52e4d608185f9461b4282e581e5ef1ce245bdc451e8`  
-		Last Modified: Tue, 03 Jun 2025 15:12:45 GMT  
-		Size: 282.0 B  
+	-	`sha256:98ba9e36b6e72e151a91cc69343438b9341451e4196d29b259766ab25ece2755`  
+		Last Modified: Tue, 10 Jun 2025 23:43:56 GMT  
+		Size: 283.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:138b4847c3beba31cf3c1807f17ce0b970ec15f04604f92ac076ff994c1a0f68`  
-		Last Modified: Tue, 03 Jun 2025 15:12:45 GMT  
+	-	`sha256:5f566ffc3a278d8a018e52b43be1df458ee6632e59b56f75a94a0d058a6cfe73`  
+		Last Modified: Tue, 10 Jun 2025 23:43:57 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:2f6b92592e3f57dbba3221b48b0dce566be344c3e646a89421cfc68ac2827925
+$ docker pull memcached@sha256:2bbfd653e524ef9316e75f9681ac6876a3e40a63ac124b1e00216760e2855ac0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2336740 bytes)**  
+-	Total Size: **2.4 MB (2427734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857e0ef0a015c3e4c292fe0a24e960bbfba6c8f5844e8022a8d5c11a52d798c8`
+-	Image ID: `sha256:5e73cc4fc38d626337d836752990c011dfc545348cb8fd74aa3ae7a39e08c5bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fb0e5e8b1ea53e4ba20b1cee752d37de3b49eaa2c057aea103fb67ad94a2cf5`  
-		Last Modified: Wed, 04 Jun 2025 23:08:30 GMT  
-		Size: 2.3 MB (2311273 bytes)  
+	-	`sha256:8eec2d1ef62751b78959b1e676c070de5b6da4490f0797715b6038816e6ecbe7`  
+		Last Modified: Wed, 11 Jun 2025 00:34:36 GMT  
+		Size: 2.4 MB (2402267 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:210181bb919654e239b27e79e0a1003bde8ec7d3dd27841dfb0f95d0c62d23d4`  
-		Last Modified: Wed, 04 Jun 2025 23:08:30 GMT  
+	-	`sha256:b7bd74b81adae550be8823fda7677f05554265436005a14b9a3f3775ec776a45`  
+		Last Modified: Wed, 11 Jun 2025 00:34:37 GMT  
 		Size: 25.5 KB (25467 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -394,19 +394,19 @@ $ docker pull memcached@sha256:ed76bdc15573ee04e086b0a05bfe7056bb260ef0625d8fca2
 ### `memcached:1-bookworm` - linux; 386
 
 ```console
-$ docker pull memcached@sha256:427a7ad7f639e7cbf4161751cad9450044cbfaf6be8180abc51e01f68cad186c
+$ docker pull memcached@sha256:2fd3408e4989cc9e56a6d3add7ce53181decaf9d7cc19e14b49670b45944e40e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.0 MB (33962949 bytes)**  
+-	Total Size: **34.0 MB (33967948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50a7e05a07d6b637c8752b13cee1ed7a5ebe2a4ef846c0eecaf4b7904d07ff4c`
+-	Image ID: `sha256:7a326ebe4a452ab75793d01324bf45cdf00e7f2aa83d4793e9993f6317370b81`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
 # Tue, 01 Apr 2025 23:49:01 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1747699200'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1749513600'
 # Tue, 01 Apr 2025 23:49:01 GMT
 RUN set -eux; 	groupadd --system --gid 11211 memcache; 	useradd --system --gid memcache --uid 11211 memcache # buildkit
 # Tue, 01 Apr 2025 23:49:01 GMT
@@ -434,52 +434,52 @@ CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:7d0eb60defa1a32d12e94bc0d7c2c578881c578aeec0c1d786ef5a19c72a34ab`  
-		Last Modified: Tue, 03 Jun 2025 13:37:03 GMT  
-		Size: 29.2 MB (29207487 bytes)  
+	-	`sha256:c3d46fed134488b3ee18c12cb308c8d5520b8c647122c392f9fb76e3e1e2fc61`  
+		Last Modified: Tue, 10 Jun 2025 22:47:25 GMT  
+		Size: 29.2 MB (29212433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12d0594fdf9f07f23d90458a489d7972ab011bc5cca342af82850c3e9c024e3e`  
-		Last Modified: Wed, 04 Jun 2025 09:36:40 GMT  
-		Size: 1.1 KB (1106 bytes)  
+	-	`sha256:fd6e1ece79d563054c9ed24818e5adb5d97e5a1bd3a898d27b10ad0ed0d944fe`  
+		Last Modified: Tue, 10 Jun 2025 23:32:02 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4797e4e934c0c059a34c8b9d6c2adc40dece3f2ba61185edfa1c36591ef3549f`  
-		Last Modified: Wed, 04 Jun 2025 09:36:42 GMT  
-		Size: 2.5 MB (2502658 bytes)  
+	-	`sha256:e9d82ab526e835ea99bac51cedfd44fda08d1096806527e0e4776d1747931bfb`  
+		Last Modified: Tue, 10 Jun 2025 23:32:03 GMT  
+		Size: 2.5 MB (2502688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be7cc241a1440cfefd9f5b88cb6233b9ee820398da0c74155859c3114dd0646c`  
-		Last Modified: Wed, 04 Jun 2025 09:36:51 GMT  
-		Size: 2.3 MB (2251292 bytes)  
+	-	`sha256:4c26ac869e988fa955c3c084363eb741d506a2034cdd3e12a5c98ff74e4c65c5`  
+		Last Modified: Tue, 10 Jun 2025 23:32:03 GMT  
+		Size: 2.3 MB (2251313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30cacd3ce01b0221992568e7179a1408774519b7dfbfc1daf37095764ae9bf16`  
-		Last Modified: Wed, 04 Jun 2025 09:36:46 GMT  
-		Size: 284.0 B  
+	-	`sha256:f87ab77943d07e12971b970348f051de5367dd6a2bb147741b63f12eca74d55f`  
+		Last Modified: Tue, 10 Jun 2025 23:32:03 GMT  
+		Size: 285.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4abb18b4fabd731df2a3dbba62cd3f6de6cc4a6ab8419827bcbeb87641c4ad7`  
-		Last Modified: Wed, 04 Jun 2025 09:36:49 GMT  
+	-	`sha256:5505b2cac6d2a77393345699695a05426271e871ba824bf0e22789a5cdf44f8e`  
+		Last Modified: Tue, 10 Jun 2025 23:32:03 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:3c7de609f262a2ab1ddafedf272ac08f1eded0a2b08450f76dbd927b4b746f6f
+$ docker pull memcached@sha256:f5178b4eff39883c5450012b44b95dc2e13a26e5c3efe2221f9a929a01b99a6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2331395 bytes)**  
+-	Total Size: **2.4 MB (2422389 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edfd69fc1ff5ceb8e449d8374c86427aafe41200a46c937aee60fce7a21ebf13`
+-	Image ID: `sha256:db0fa4b9612a2b4b5f20852ca646c7fa318ae7057ec68f20599d1281453c0ac5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:87803ae24543fc1d1ecf0d1af68207e9714fd56829bab2354f9dd3940e3cf240`  
-		Last Modified: Wed, 04 Jun 2025 23:08:38 GMT  
-		Size: 2.3 MB (2306133 bytes)  
+	-	`sha256:27ef430fcb7445f00c5cbbac9416a8082301986670c56b7112c8ee8d2bc7ea63`  
+		Last Modified: Wed, 11 Jun 2025 00:34:45 GMT  
+		Size: 2.4 MB (2397127 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4b6feaf94b04b7737bdbf12b7c3f15ea0f7c46ead6614b9a46a82b87b5e5c75`  
-		Last Modified: Wed, 04 Jun 2025 23:08:39 GMT  
+	-	`sha256:8c71e82389c2ff610732d9cc27ec31e1061a1fe683a7594c559d2f0ad1b307bf`  
+		Last Modified: Wed, 11 Jun 2025 00:34:46 GMT  
 		Size: 25.3 KB (25262 bytes)  
 		MIME: application/vnd.in-toto+json
 
