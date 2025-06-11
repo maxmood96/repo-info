@@ -1,82 +1,82 @@
 ## `eclipse-temurin:8-jre-nanoserver-ltsc2022`
 
 ```console
-$ docker pull eclipse-temurin@sha256:fd24da65f27555e1096a1d54b1568a68d51392ba67000239111247be73d2a098
+$ docker pull eclipse-temurin@sha256:564e11c35de45fdc7cedf3ca1b328ce4d9c68cb1455b5746f4b3ab1c1cd780e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3692; amd64
+	-	windows version 10.0.20348.3807; amd64
 
-### `eclipse-temurin:8-jre-nanoserver-ltsc2022` - windows version 10.0.20348.3692; amd64
+### `eclipse-temurin:8-jre-nanoserver-ltsc2022` - windows version 10.0.20348.3807; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:930484efb6e2b3ee9f42584da90672f55c73d88ded79df6b3f1566a4c9440f30
+$ docker pull eclipse-temurin@sha256:9b0dffdb19bd751d51d87119ac5251bf9cc4c756f9505d33651e45fb5cf7e533
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.3 MB (163308493 bytes)**  
+-	Total Size: **163.3 MB (163273523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31f2da037dbde7e96982dc056f396e6f67593ca8d695e87faf2d7ec2b9bc7f5d`
+-	Image ID: `sha256:f3fae7af5c3584540cdbe57f7972d9b05691b1d949f13c6194f301d1eb13cb54`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
 ```dockerfile
-# Fri, 09 May 2025 19:22:57 GMT
-RUN Apply image 10.0.20348.3692
-# Wed, 14 May 2025 21:12:13 GMT
+# Thu, 05 Jun 2025 00:43:46 GMT
+RUN Apply image 10.0.20348.3807
+# Tue, 10 Jun 2025 22:12:49 GMT
 SHELL [cmd /s /c]
-# Wed, 14 May 2025 21:12:14 GMT
+# Tue, 10 Jun 2025 22:12:50 GMT
 ENV JAVA_VERSION=jdk8u452-b09
-# Wed, 14 May 2025 21:12:14 GMT
+# Tue, 10 Jun 2025 22:12:51 GMT
 ENV JAVA_HOME=C:\openjdk-8
-# Wed, 14 May 2025 21:12:15 GMT
+# Tue, 10 Jun 2025 22:12:52 GMT
 USER ContainerAdministrator
-# Wed, 14 May 2025 21:12:18 GMT
+# Tue, 10 Jun 2025 22:12:55 GMT
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH%     && setx /M PATH %JAVA_HOME%\bin;%PATH%     && echo Complete.
-# Wed, 14 May 2025 21:12:18 GMT
+# Tue, 10 Jun 2025 22:12:56 GMT
 USER ContainerUser
-# Wed, 14 May 2025 21:12:21 GMT
+# Tue, 10 Jun 2025 22:12:59 GMT
 COPY dir:88632ffe03bdff97c0f2931283e9e8742ceaeaec8904ee54b87f8b4347f84ae7 in C:\openjdk-8 
-# Wed, 14 May 2025 21:12:25 GMT
+# Tue, 10 Jun 2025 22:13:03 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
 ```
 
 -	Layers:
-	-	`sha256:46eb56853bf7d519201d6623d174cec4d04bea0e9d1426f76cc99e437f341f3a`  
-		Last Modified: Thu, 15 May 2025 19:27:55 GMT  
-		Size: 122.6 MB (122576639 bytes)  
+	-	`sha256:96acbf1c6d5b6cc37517502ecbb6a1d2eb55b7615b696401ead868c97a971964`  
+		Last Modified: Tue, 10 Jun 2025 20:17:56 GMT  
+		Size: 122.5 MB (122540534 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ae651cc91f06b415e55640e4dc7b07bd999822210663d662a0ec9043c5d391`  
-		Last Modified: Sun, 18 May 2025 21:01:44 GMT  
+	-	`sha256:62f85e6b79fb65cee18292553318c63d604abe0339c73efe73eb6ea487d3fd9f`  
+		Last Modified: Tue, 10 Jun 2025 22:13:35 GMT  
+		Size: 1.1 KB (1067 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2e93d200952c01b63e15da6669e3af841dc1c5faf762c8cfeb9c5d94473e8013`  
+		Last Modified: Tue, 10 Jun 2025 22:13:34 GMT  
 		Size: 1.0 KB (1027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f66a7765f157e34c443a8af0df411f21f6904b3e22ae841446215727bbba8892`  
-		Last Modified: Sun, 18 May 2025 21:01:44 GMT  
+	-	`sha256:e0fa12ccdeef41adda1dbf9ee952b96f601fa91c7f632d3cd87150ecade5eea8`  
+		Last Modified: Tue, 10 Jun 2025 22:13:35 GMT  
+		Size: 1.0 KB (1033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ecb0bbbebe9dcf237d903466ce5a4bf5e85f53e0c4b8e226cf30da33b2d13bff`  
+		Last Modified: Tue, 10 Jun 2025 22:13:35 GMT  
+		Size: 1.1 KB (1057 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2ec7e53ab8b13c0ef004ce505ac9b8d800516670d9c1a589f9db51d94f845207`  
+		Last Modified: Tue, 10 Jun 2025 22:13:35 GMT  
+		Size: 76.3 KB (76332 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fe782cd0fa9a2219a5dadbfd7a3a867d0b7821dae9abdc0c8ebb8d745081780`  
+		Last Modified: Tue, 10 Jun 2025 22:13:35 GMT  
 		Size: 1.0 KB (1028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6476bb55afc8227cfc5081d2573d12d55fa4ffadb183de589b119911e9926c9c`  
-		Last Modified: Sun, 18 May 2025 21:01:44 GMT  
-		Size: 1.0 KB (1028 bytes)  
+	-	`sha256:7d793aeab7ee806a38c6dac21e70a166b2f7fe9e8a3f2893aba1b59ea6a50003`  
+		Last Modified: Tue, 10 Jun 2025 22:13:38 GMT  
+		Size: 40.6 MB (40552782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9aecdc18d31f3aa91dc7a0905eeb4d4cde31da2ecc611d1f9b4cbda821a3c5e9`  
-		Last Modified: Sun, 18 May 2025 21:01:44 GMT  
-		Size: 1.0 KB (1029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:719f2cc2f8ebfddc68ecab79ad4799c4b9090cc087ab8cbcacafd7c480019eff`  
-		Last Modified: Sun, 18 May 2025 21:01:45 GMT  
-		Size: 76.4 KB (76352 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b28906281c141570e3a0e85ccadd76d1e62a0b750bf269443a9f2fa768a366e3`  
-		Last Modified: Sun, 18 May 2025 21:01:45 GMT  
-		Size: 1.0 KB (1024 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f98cc9ff146c88853184973352bd0cf68cc9d0bbb3d622dfbaba7857317fba5`  
-		Last Modified: Sun, 18 May 2025 21:01:49 GMT  
-		Size: 40.6 MB (40552739 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b1df2202a7285227d2bbaadf1bc9292346e7ea53ac024b33da68bb505914def`  
-		Last Modified: Sun, 18 May 2025 21:01:46 GMT  
-		Size: 97.6 KB (97627 bytes)  
+	-	`sha256:b4303b2a44a2a8ab8348f10138b78057ad49bbe4e2bcaac9b3ef1bc01d676d55`  
+		Last Modified: Tue, 10 Jun 2025 22:13:36 GMT  
+		Size: 98.7 KB (98663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
