@@ -1,10 +1,10 @@
-# `convertigo:8.3.6`
+# `convertigo:8.3.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aea8cd7d53d7b7a8fb670b2d085e759a8fa1f684fed86a2f8069bf4ecadd9cc6`
-- Created: `2025-05-23T10:27:02Z`
-- Virtual Size: ~ 617.78 Mb  
+- Image ID: `sha256:8de34f0f29ac08101b58ba9808eabe507fb9b9f3f5dc927a8a3613a2bc0bce57`
+- Created: `2025-06-10T14:38:21Z`
+- Virtual Size: ~ 617.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -20,11 +20,11 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.105`
-  - `TOMCAT_SHA512=904f10378ee2c7c68529edfefcba50c77eb677aa4586cfac0603e44703b0278f71f683b0295774f3cdcb027229d146490ef2c8868d8c2b5a631cf3db61ff9956`
+  - `TOMCAT_VERSION=9.0.106`
+  - `TOMCAT_SHA512=0b316af119fd9a69761c20bc7f9959513884002fc60f490af6335380a3a62549777bf35a1e8dd3c448e56da8ddcb9dc2301d3b01bba304537ca40456c650c25a`
   - `SWT_GTK3=0`
-  - `CONVERTIGO_VERSION=8.3.6`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.6/convertigo-8.3.6.war`
+  - `CONVERTIGO_VERSION=8.3.7`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.7/convertigo-8.3.7.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1859,14 +1859,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.15
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.15.dsc' systemd_249.11-0ubuntu3.15.dsc 5907 SHA512:4eb12add7fd9df2cd249ab9c83398a23aae61a5a9ab4a1cbb634ec12dfcc1340a7b920fd7165b8da0f77a2ca352d283bfd719ef2930efef0548d75911b629f3e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.15.debian.tar.xz' systemd_249.11-0ubuntu3.15.debian.tar.xz 256372 SHA512:f0b11ad9a94f65242de5747a8d9becf374a787cb4450041d830efd22e7e53e498d2a19e153d128de661a3ad52b290bd8b654531af1aaa10c980ca73cf0dde212
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
