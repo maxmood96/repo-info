@@ -172,7 +172,7 @@ CMD ["erl"]
 		Size: 44.2 MB (44208210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:398663fc3970bc2e3c63f13cb100f8d1192523d96a5bc89d4d3e65f424feeda5`  
-		Last Modified: Wed, 11 Jun 2025 05:15:07 GMT  
+		Last Modified: Wed, 11 Jun 2025 10:00:35 GMT  
 		Size: 60.1 MB (60127511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -404,7 +404,7 @@ CMD ["erl"]
 		Size: 52.3 MB (52337357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db13e382130d218f1b254484b22c187201b6c78e68257a110a03399b7899d85e`  
-		Last Modified: Wed, 11 Jun 2025 05:10:44 GMT  
+		Last Modified: Wed, 11 Jun 2025 10:00:23 GMT  
 		Size: 62.2 MB (62226839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
