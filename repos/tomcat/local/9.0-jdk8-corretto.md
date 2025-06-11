@@ -1,10 +1,10 @@
-# `tomcat:9.0.105-jdk8-corretto-al2`
+# `tomcat:9.0.106-jdk8-corretto-al2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd772d749b94431d899061dfb1a091e50e0b3be8dbf08b35ca1c4fca09f4cc85`
-- Created: `2025-05-13T00:08:31Z`
-- Virtual Size: ~ 387.20 Mb  
+- Image ID: `sha256:2b0f2bbf4bc471f48ac190c4a3818c197d90465a46f649873167887dbb0faacd`
+- Created: `2025-06-10T08:03:44Z`
+- Virtual Size: ~ 388.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -16,8 +16,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.105`
-  - `TOMCAT_SHA512=904f10378ee2c7c68529edfefcba50c77eb677aa4586cfac0603e44703b0278f71f683b0295774f3cdcb027229d146490ef2c8868d8c2b5a631cf3db61ff9956`
+  - `TOMCAT_VERSION=9.0.106`
+  - `TOMCAT_SHA512=0b316af119fd9a69761c20bc7f9959513884002fc60f490af6335380a3a62549777bf35a1e8dd3c448e56da8ddcb9dc2301d3b01bba304537ca40456c650c25a`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -743,15 +743,15 @@ $ dnf --quiet download --source --url libverto-0.2.5-4.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3c2d2d1f7d69e424c8522ebada36884796ac864a4cab8c126785dee5495887ef/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.16.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.17.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.16
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3c2d2d1f7d69e424c8522ebada36884796ac864a4cab8c126785dee5495887ef/../../../../../blobstore/90a60471017e67c167d4ddec6e5ceb776a1fd9ac0c7a6575fe8fdb7b59d6abbe/libxml2-2.9.1-6.amzn2.5.16.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.17
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3c2d2d1f7d69e424c8522ebada36884796ac864a4cab8c126785dee5495887ef/../../../../../blobstore/c1db226f8e050a0a0690e3b5d185e7e261bd3312001a0f3f46576beaa811a1b5/libxml2-2.9.1-6.amzn2.5.17.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.amzn2.0.2.x86_64`
