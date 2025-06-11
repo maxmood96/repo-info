@@ -2454,7 +2454,7 @@ $ docker pull mediawiki@sha256:f0f89e1dec2a439ff6d7dd2dee974fff96ef5528388b71096
 
 -	Layers:
 	-	`sha256:9a9e39bd21bd4fb63b1d3b1e78c4c442ba0f8fe92a49cdab574c8ee4bd59e3ee`  
-		Last Modified: Thu, 10 Apr 2025 19:03:14 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:27:11 GMT  
 		Size: 31.9 KB (31901 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5721,7 +5721,7 @@ $ docker pull mediawiki@sha256:f0f89e1dec2a439ff6d7dd2dee974fff96ef5528388b71096
 
 -	Layers:
 	-	`sha256:9a9e39bd21bd4fb63b1d3b1e78c4c442ba0f8fe92a49cdab574c8ee4bd59e3ee`  
-		Last Modified: Thu, 10 Apr 2025 19:03:14 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:27:11 GMT  
 		Size: 31.9 KB (31901 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8988,7 +8988,7 @@ $ docker pull mediawiki@sha256:0f926a6c47d742b75ae54b0e00a063975d1c39001bb2a449c
 
 -	Layers:
 	-	`sha256:a5040a33de6c3ae9202196d3b1ae946d4e638d56f5dceeac0b03c946a23293b1`  
-		Last Modified: Thu, 10 Apr 2025 19:03:19 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:23:57 GMT  
 		Size: 32.2 KB (32225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12255,7 +12255,7 @@ $ docker pull mediawiki@sha256:0f926a6c47d742b75ae54b0e00a063975d1c39001bb2a449c
 
 -	Layers:
 	-	`sha256:a5040a33de6c3ae9202196d3b1ae946d4e638d56f5dceeac0b03c946a23293b1`  
-		Last Modified: Thu, 10 Apr 2025 19:03:19 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:23:57 GMT  
 		Size: 32.2 KB (32225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15522,7 +15522,7 @@ $ docker pull mediawiki@sha256:ab233d9c90c24b2d75ae8e120eb70cccac733d82d6e0627e9
 
 -	Layers:
 	-	`sha256:1a2d16fb008b7d68065fb3bd0be8b0bfb1048c5afdc1eefeee3487a611cf167e`  
-		Last Modified: Thu, 10 Apr 2025 19:03:29 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:22:01 GMT  
 		Size: 32.5 KB (32545 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18789,7 +18789,7 @@ $ docker pull mediawiki@sha256:ab233d9c90c24b2d75ae8e120eb70cccac733d82d6e0627e9
 
 -	Layers:
 	-	`sha256:1a2d16fb008b7d68065fb3bd0be8b0bfb1048c5afdc1eefeee3487a611cf167e`  
-		Last Modified: Thu, 10 Apr 2025 19:03:29 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:22:01 GMT  
 		Size: 32.5 KB (32545 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23277,7 +23277,7 @@ $ docker pull mediawiki@sha256:0f926a6c47d742b75ae54b0e00a063975d1c39001bb2a449c
 
 -	Layers:
 	-	`sha256:a5040a33de6c3ae9202196d3b1ae946d4e638d56f5dceeac0b03c946a23293b1`  
-		Last Modified: Thu, 10 Apr 2025 19:03:19 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:23:57 GMT  
 		Size: 32.2 KB (32225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26544,7 +26544,7 @@ $ docker pull mediawiki@sha256:ab233d9c90c24b2d75ae8e120eb70cccac733d82d6e0627e9
 
 -	Layers:
 	-	`sha256:1a2d16fb008b7d68065fb3bd0be8b0bfb1048c5afdc1eefeee3487a611cf167e`  
-		Last Modified: Thu, 10 Apr 2025 19:03:29 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:22:01 GMT  
 		Size: 32.5 KB (32545 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -29811,7 +29811,7 @@ $ docker pull mediawiki@sha256:ab233d9c90c24b2d75ae8e120eb70cccac733d82d6e0627e9
 
 -	Layers:
 	-	`sha256:1a2d16fb008b7d68065fb3bd0be8b0bfb1048c5afdc1eefeee3487a611cf167e`  
-		Last Modified: Thu, 10 Apr 2025 19:03:29 GMT  
+		Last Modified: Wed, 11 Jun 2025 22:22:01 GMT  
 		Size: 32.5 KB (32545 bytes)  
 		MIME: application/vnd.in-toto+json
 
