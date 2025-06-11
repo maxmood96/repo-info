@@ -213,7 +213,7 @@ RUN # debian.sh --arch 'i386' out/ 'stable' '@1749513600'
 
 -	Layers:
 	-	`sha256:f04298437549d33808988408e59631512d25d329e8a7d8e17a2c637a18f163b7`  
-		Last Modified: Tue, 10 Jun 2025 22:46:59 GMT  
+		Last Modified: Wed, 11 Jun 2025 00:43:52 GMT  
 		Size: 29.2 MB (29212434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,7 +279,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'stable' '@1749513600'
 
 -	Layers:
 	-	`sha256:cfa5f6f65fdd924999c99c59807049cdf9a1b0fc74f2d689fede954e2243fcc2`  
-		Last Modified: Tue, 10 Jun 2025 22:50:14 GMT  
+		Last Modified: Wed, 11 Jun 2025 00:43:54 GMT  
 		Size: 32.1 MB (32072793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
