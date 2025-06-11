@@ -1,7 +1,7 @@
 ## `openjdk:25-oraclelinux9`
 
 ```console
-$ docker pull openjdk@sha256:210892f35af6482ef05b8409144fa1bf59588200ca7f1f4623c7017d2645a3c3
+$ docker pull openjdk@sha256:127fbdea34fd76d3e99b6299279be7c9f3b566a2e1015e34144af43fcc86614d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull openjdk@sha256:210892f35af6482ef05b8409144fa1bf59588200ca7f1f4623c
 ### `openjdk:25-oraclelinux9` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:45cb451ba4e40cf623accd08dc6c335ee5dc16838f7ef02cee7e04631eb3db2e
+$ docker pull openjdk@sha256:7c61a77efcda275a3884cc7b4a3cdbdc0af56bdf531167be970d9b3d899ba0da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.6 MB (310559409 bytes)**  
+-	Total Size: **310.6 MB (310560377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a01572da91492b75b0c04d71ffcda999c44017a0d1646b8027ac07afc8b3000e`
+-	Image ID: `sha256:2c685aa29d4361533a9408156d721351ff9908990e728ab8155259bd05842f31`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 30 May 2025 16:24:46 GMT
+# Mon, 09 Jun 2025 06:48:11 GMT
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
-# Fri, 30 May 2025 16:24:46 GMT
+# Mon, 09 Jun 2025 06:48:11 GMT
 CMD ["/bin/bash"]
 # Mon, 09 Jun 2025 06:48:11 GMT
 RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all # buildkit
@@ -45,41 +45,41 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9845df06f911da943784ccfba2249144e9c16f5ad081b3583ac643cc30b49df0`  
-		Last Modified: Tue, 03 Jun 2025 13:30:19 GMT  
-		Size: 49.5 MB (49497893 bytes)  
+	-	`sha256:43c486e74c6d5afed80291ce1e8693695e0fbf029fc0f4c3d1e289a8b890a8fd`  
+		Last Modified: Wed, 11 Jun 2025 17:13:14 GMT  
+		Size: 49.5 MB (49500897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f23d8df8cc87f696bbb58f025d825b1a8c79930e21bce87f21d52e6e1ac7ed98`  
-		Last Modified: Mon, 09 Jun 2025 22:07:01 GMT  
-		Size: 38.1 MB (38083311 bytes)  
+	-	`sha256:a55da7740d2fc1993092582883380bd30f04279370067363e4920f684c4603c4`  
+		Last Modified: Wed, 11 Jun 2025 17:33:44 GMT  
+		Size: 38.1 MB (38081375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecc2e6cc5b1befaf3bc3acc92011301a29a9f6d8772722d555bfbb21c3f98bfb`  
-		Last Modified: Tue, 10 Jun 2025 00:48:48 GMT  
-		Size: 223.0 MB (222978205 bytes)  
+	-	`sha256:c9c87f4af59a1769a173b3061f069d6a7c3e1a0c1bbe082ad924db3e0a53e437`  
+		Last Modified: Wed, 11 Jun 2025 18:25:01 GMT  
+		Size: 223.0 MB (222978105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:25-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:883c9db60db0f9decf9d2e780a2cc85bf9b09d0315c89c01d070ec9acf235754
+$ docker pull openjdk@sha256:95d6e55a7a96d783271bd88de43f22aebf62bb37616a2d405063769009cfaebf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3660982 bytes)**  
+-	Total Size: **3.7 MB (3660980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69428b8c5cdd0787412502ba77432cfa7172df5eb3122a32c61300ce56ac9908`
+-	Image ID: `sha256:139184294d550cae41c20ca84262cee3f857f4f15224b70a7e4d0886cf14148b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ac7e80061f157736c0fb2745f5346913c17c03d011752e2c5dc975895069b4b4`  
-		Last Modified: Tue, 10 Jun 2025 00:23:27 GMT  
+	-	`sha256:6a80b3172083238b584ebcdd2679f29d5e0ca6d75c5d94bf25ef56402d076d5a`  
+		Last Modified: Wed, 11 Jun 2025 18:23:19 GMT  
 		Size: 3.6 MB (3641236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:37314215768d539e802b648a5e873218ef841e5e07f6e851e38e43691fbcbd6f`  
-		Last Modified: Tue, 10 Jun 2025 00:23:27 GMT  
-		Size: 19.7 KB (19746 bytes)  
+	-	`sha256:fc318ebc1584df833e373c79d8aba00bae79e2d49e7ba4fb8a9c160481cef0e7`  
+		Last Modified: Wed, 11 Jun 2025 18:23:20 GMT  
+		Size: 19.7 KB (19744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `openjdk:25-oraclelinux9` - linux; arm64 variant v8
