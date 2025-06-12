@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e011f9540ab66056855728ea0934096aec377960428dceaf5bf50834552d166`
+- Image ID: `sha256:f4b9defcec1b94a58ac2458b6c223a76fa05781d1865244f7eb2dfdbacb1e8e3`
 - Created: `2025-05-21T23:31:53Z`
-- Virtual Size: ~ 468.41 Mb  
+- Virtual Size: ~ 468.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.13`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-05-14T10:35:47`
+  - `build-date=2025-06-09T17:19:15`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=f2f252e0ac953b9e80eaebfc08ec086edac81945`
+  - `vcs-ref=7e18551b8a7ac3e7aa6347d84b9f0b5c8cc8fe52`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.13`
@@ -262,7 +262,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://repo.ialab.dsu.edu/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -348,37 +348,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-16.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-16.el9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-168.el9_6.14.x86_64`
+### `rpm` package: `glibc-2.34-168.el9_6.19.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-168.el9_6.14
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.14.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-168.el9_6.19
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.19.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-168.el9_6.14.x86_64`
+### `rpm` package: `glibc-common-2.34-168.el9_6.19.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.14
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.14.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.19
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.19.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.14.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.19.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.14
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.14.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.19
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.19.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -512,7 +512,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://repo.ialab.dsu.edu/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2096,7 +2096,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://repo.ialab.dsu.edu/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2107,7 +2107,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://repo.ialab.dsu.edu/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://ftp-osl.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
