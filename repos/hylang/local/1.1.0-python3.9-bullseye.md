@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:06c25b09420194030eebb2e613404e4ba5a0bf147711fd1c93b0a1679c67e651`
+- Image ID: `sha256:4adb908c8a750dfa88a4925648d4599e54624cbaf99fda1d71426241c336889d`
 - Created: `2025-06-04T21:00:47Z`
-- Virtual Size: ~ 148.58 Mb  
+- Virtual Size: ~ 132.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -666,32 +666,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u12`
-
-Binary Packages:
-
-- `libc-bin=2.31-13+deb11u12`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/
-
-
 ### `dpkg` source package: `glibc=2.31-13+deb11u13`
 
 Binary Packages:
 
+- `libc-bin=2.31-13+deb11u13`
 - `libc6:amd64=2.31-13+deb11u13`
 
-Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -948,26 +930,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.18.3-6+deb11u6`
+### `dpkg` source package: `krb5=1.18.3-6+deb11u7`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u6`
-- `libk5crypto3:amd64=1.18.3-6+deb11u6`
-- `libkrb5-3:amd64=1.18.3-6+deb11u6`
-- `libkrb5support0:amd64=1.18.3-6+deb11u6`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u7`
+- `libk5crypto3:amd64=1.18.3-6+deb11u7`
+- `libkrb5-3:amd64=1.18.3-6+deb11u7`
+- `libkrb5support0:amd64=1.18.3-6+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.dsc' krb5_1.18.3-6+deb11u7.dsc 3814 SHA256:162309912574992c13fadec1c95ad65b4e1a4fef046e15e065f89b13b3e4585f
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.debian.tar.xz' krb5_1.18.3-6+deb11u7.debian.tar.xz 121056 SHA256:db0041a414f71358d1365c766f7a4c66e6b46774841dcdeab97042049f8fa011
+```
 
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
