@@ -185,10 +185,10 @@ $ docker pull bonita@sha256:8a8f80ec47a925d312e33df290002e033d2bd74c2a40cd8109df
 
 -	Layers:
 	-	`sha256:833952e789216d24fed307d6e1f346e48cd0d367958fa2dd717751dda74d79c0`  
-		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Last Modified: Thu, 12 Jun 2025 19:44:37 GMT  
 		Size: 1.3 MB (1266445 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d0c88aacba837536a95f96cf2598108c46fa572442954484d18ca6f6490f2a47`  
-		Last Modified: Wed, 23 Apr 2025 17:14:51 GMT  
+		Last Modified: Thu, 12 Jun 2025 19:43:48 GMT  
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
