@@ -1,7 +1,7 @@
 ## `drupal:php8.4-fpm-alpine3.21`
 
 ```console
-$ docker pull drupal@sha256:32fa932fd43b3b7e423258e5d79808d584f089cfa080da680d24b37d3840b423
+$ docker pull drupal@sha256:2d92cb02c9a02aed479f5392ce1c4b9cb130137019be3a8775b60a29d99d0b1b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -366,13 +366,13 @@ $ docker pull drupal@sha256:7103322a464d541adcb31816bd179f6cd949f7ad8c07c9342e99
 ### `drupal:php8.4-fpm-alpine3.21` - linux; arm variant v7
 
 ```console
-$ docker pull drupal@sha256:46aa8e1dd58186b5ebec42e117a9c87c182b1b0f73ccd65cde93977aafcfaf76
+$ docker pull drupal@sha256:cf22c10a06dcd5547c2d42d869de2bdf4f82c4bbb3e599cfd21427a82b9a5252
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.2 MB (56161996 bytes)**  
+-	Total Size: **56.2 MB (56161940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9db72da32e46382d3da5a49e0758497ec895c67a7919820e6ebe71c08f44ea1c`
+-	Image ID: `sha256:24ce22df572fc74f5734635acad82d1cfc40ae8998fb3a19402c5d9cf54ddc3e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -502,37 +502,37 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Fri, 06 Jun 2025 22:08:59 GMT  
 		Size: 752.8 KB (752766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a712adf0c290f5982b9a91fe000e799340fc980b25ff33f327c543aa3dce3128`  
-		Last Modified: Fri, 06 Jun 2025 22:09:02 GMT  
+	-	`sha256:2741249086949127cd9088734929d165e0e3abf982e835a953af0603d5a63190`  
+		Last Modified: Wed, 11 Jun 2025 22:41:47 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28b83c079bd98b9ca30d53e92189ce0de491f0bd000e6644262ad9aa294f83a8`  
-		Last Modified: Fri, 06 Jun 2025 20:50:06 GMT  
-		Size: 20.1 MB (20068728 bytes)  
+	-	`sha256:4bbfb9e95726a8ff43f4f47df0b03f3ff0872d0388256a5b280fbd91501a4c1c`  
+		Last Modified: Wed, 11 Jun 2025 21:30:48 GMT  
+		Size: 20.1 MB (20068672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:php8.4-fpm-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:b2bc641a17e796c1f39955010b2f604aa83bec9f0b0e83724ba5d663bf1efc70
+$ docker pull drupal@sha256:524af1f2c708c0d6dede4a360c30a6638177b9384c4e2aef61ac58aaacd58a1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **397.5 KB (397459 bytes)**  
+-	Total Size: **409.1 KB (409085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48e40e351d53c910a6207559f831d5ea64f0ab653607f2ffbfdff2b81d415d99`
+-	Image ID: `sha256:cc2234aa0ad0f1b2ac9fd8195fdf02a636400474aecf4af968482d4222ec4a34`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71c5ca577f1055e9d6a8abae4712ba465bdc65874e0e5d50a9d002726d586a08`  
-		Last Modified: Fri, 06 Jun 2025 23:16:54 GMT  
-		Size: 363.6 KB (363615 bytes)  
+	-	`sha256:b22ff65c23a4d11e72da1be97161e94ac7bbf196822198ca1bbf94fc23575bb4`  
+		Last Modified: Wed, 11 Jun 2025 23:06:28 GMT  
+		Size: 375.2 KB (375240 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:56d6be006397f1288b52face06dd365325ea2acd6345148bb8ef153d6cf16d7d`  
-		Last Modified: Fri, 06 Jun 2025 23:16:55 GMT  
-		Size: 33.8 KB (33844 bytes)  
+	-	`sha256:4638e3e34f5c615923e06454e58b92c6f51deff49b872f3fd978f814ab0ea1a2`  
+		Last Modified: Wed, 11 Jun 2025 23:06:29 GMT  
+		Size: 33.8 KB (33845 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:php8.4-fpm-alpine3.21` - linux; arm64 variant v8
@@ -882,13 +882,13 @@ $ docker pull drupal@sha256:83804e3f53c06546ddf5ab99087848ae1b99045b7b3efb9d3188
 ### `drupal:php8.4-fpm-alpine3.21` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:0907b0175069f518d49696eab6e9ca10d028885933420032d1671f1ebcdf1408
+$ docker pull drupal@sha256:d659018ea83519b33079dd41ad6ec6244a5a3854b620d5322b2df56b3fa04615
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.3 MB (60262952 bytes)**  
+-	Total Size: **60.3 MB (60262790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cf6aeaa04d12e13154f85051e5fbb7c858c4feac83e3e142624007f04f2594e`
+-	Image ID: `sha256:df0f64815be3a33d873c1e0305f45b890422bb461ee9d4c204538a98e6e643c5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1010,45 +1010,45 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Fri, 06 Jun 2025 21:40:56 GMT  
 		Size: 1.7 MB (1706942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:672ec3b13d3a9ed81e324aaa499f66ca91d777bd5b95121f72f4f8ebc3752ef1`  
-		Last Modified: Fri, 06 Jun 2025 21:40:55 GMT  
-		Size: 311.0 B  
+	-	`sha256:1e26e1070b231a627c375fdb7fb0005981950cbebc2a34a9f5e1c5ce7cd13431`  
+		Last Modified: Wed, 11 Jun 2025 21:01:23 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf71bcf41394a4c568e16b6bb2174e33bc79c3df10ac7ef1cff5132a40c61269`  
-		Last Modified: Fri, 06 Jun 2025 21:40:57 GMT  
-		Size: 752.8 KB (752770 bytes)  
+	-	`sha256:8d4465fb287794caabbd6098e2111dfc16899f1c83482126ffb77ecf597497aa`  
+		Last Modified: Wed, 11 Jun 2025 21:01:24 GMT  
+		Size: 752.8 KB (752773 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e276ef65356f0c663a55badf8e1cb3fb2394be2b3332cd55b41bde173292135c`  
-		Last Modified: Fri, 06 Jun 2025 21:40:57 GMT  
+	-	`sha256:670384dce5ee122290aa927bc7d42c79ac965c4320b9a253917e911e449c9c2f`  
+		Last Modified: Wed, 11 Jun 2025 21:01:24 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8beea0a8a782c06953edd9c047606081e4d5bf5128240e2b1994555e6c42a77`  
-		Last Modified: Sat, 07 Jun 2025 12:12:03 GMT  
-		Size: 20.1 MB (20068858 bytes)  
+	-	`sha256:17544f9bdf94f5acd87dd542eb6a54fafa41496b574fd4360fce70b12929cb44`  
+		Last Modified: Wed, 11 Jun 2025 21:09:48 GMT  
+		Size: 20.1 MB (20068689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:php8.4-fpm-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:fe62be04ec3eeeb78a8e47e9f62ffa65f6d5e78e9f01db05fc80bbf808b8b0fe
+$ docker pull drupal@sha256:afd590ebbb41911348db8878308c6bffac47fa6fcbdfe24649447bec34d38f20
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.4 KB (395424 bytes)**  
+-	Total Size: **407.1 KB (407050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99807b3e2943e71928a71b7191ceaf7ae03f41d7b0e510b240029d82ed7986fc`
+-	Image ID: `sha256:14c92440a530944985224bbf374e1ac052ddbd013e30472b7d795f8be2a4423b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e0454e6033888a0330ee4e1483fae5d29c3fb8f000ad286e2f2543b140f72415`  
-		Last Modified: Fri, 06 Jun 2025 23:17:18 GMT  
-		Size: 361.7 KB (361654 bytes)  
+	-	`sha256:36982175c2db7f76ef8345e5a7e050737dc392649b58597fc2e73b08bff9ccd9`  
+		Last Modified: Wed, 11 Jun 2025 23:06:37 GMT  
+		Size: 373.3 KB (373279 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1af720b30109ae83f3bc2ca4e1e9a7c185f1c8d3563ccaf0c7ae903e5933d48c`  
-		Last Modified: Fri, 06 Jun 2025 23:17:19 GMT  
-		Size: 33.8 KB (33770 bytes)  
+	-	`sha256:00c8bdb1c6f0d75f7d2804453221444aa95297e75e9a2f99705bcf8c85a5ad6c`  
+		Last Modified: Wed, 11 Jun 2025 23:06:38 GMT  
+		Size: 33.8 KB (33771 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:php8.4-fpm-alpine3.21` - linux; riscv64
