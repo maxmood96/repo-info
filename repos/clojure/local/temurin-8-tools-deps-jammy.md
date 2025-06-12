@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ea08b3c5e3db37f49b67de592af6829e792346ad54e082c3da7adf2e239948a`
-- Created: `2025-06-03T15:45:26Z`
+- Image ID: `sha256:fcbb76105a484a08cd45bd99736ec8131917753b968509a3d5c236b2f2d5147e`
+- Created: `2025-06-07T17:38:11Z`
 - Virtual Size: ~ 391.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u452-b09`
-  - `CLOJURE_VERSION=1.12.1.1543`
+  - `CLOJURE_VERSION=1.12.1.1550`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2450,14 +2450,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.15
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.15.dsc' systemd_249.11-0ubuntu3.15.dsc 5907 SHA512:4eb12add7fd9df2cd249ab9c83398a23aae61a5a9ab4a1cbb634ec12dfcc1340a7b920fd7165b8da0f77a2ca352d283bfd719ef2930efef0548d75911b629f3e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.15.debian.tar.xz' systemd_249.11-0ubuntu3.15.debian.tar.xz 256372 SHA512:f0b11ad9a94f65242de5747a8d9becf374a787cb4450041d830efd22e7e53e498d2a19e153d128de661a3ad52b290bd8b654531af1aaa10c980ca73cf0dde212
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 

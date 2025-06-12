@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:831a973306fe5c28fe4df8a081327e38531d6f6a07d9312ce05267ad8f0e1fff`
-- Created: `2025-06-03T15:45:26Z`
+- Image ID: `sha256:9f3f111ffab1303b398e1d93a60ea14cc9b5004d9f80df7a6733bd5104058f72`
+- Created: `2025-06-07T17:38:11Z`
 - Virtual Size: ~ 532.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.27+6`
-  - `CLOJURE_VERSION=1.12.1.1543`
+  - `CLOJURE_VERSION=1.12.1.1550`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -2007,11 +2007,11 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
 ```
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.11`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.12`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.11`
+- `openssh-client=1:9.6p1-3ubuntu13.12`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2026,11 +2026,11 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.11
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.11.dsc' openssh_9.6p1-3ubuntu13.11.dsc 3346 SHA512:b98228441cdfa73bdde5a2a0dcb2f43be26678434e3bf36898e36d00ec336a74411948740b92f0242b25c1c0d21eac1f3a58d814583061e945a0038019e485a9
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.11.debian.tar.xz' openssh_9.6p1-3ubuntu13.11.debian.tar.xz 206452 SHA512:5ca42cf0d645111aced486dcdd0702eaaeb5bbd934f29d29304512a946349611d1eb29eaa5a9624fb6f3dde2890d04c7567386bbc090800995ead139ea31fc1d
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.dsc' openssh_9.6p1-3ubuntu13.12.dsc 3346 SHA512:0840b1b7f7399b10bd9d4d9d867822fd429ce2843ed1e0ec4d362ff2e6da1b575f1f2246fb9e9105ab1f055824ca142ca91acbc923340e5b0e24c2d746eca33d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.debian.tar.xz' openssh_9.6p1-3ubuntu13.12.debian.tar.xz 206776 SHA512:f3d54e141affd307bfbd978952922dbee9a17f20649b16169dba38fd1c2da14406115012fbdd9b388fdcb9fef3dcf2c9cf64cc28b11f62306b49d1570ce022e6
 ```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
@@ -2498,14 +2498,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.6.dsc' systemd_255.4-1ubuntu8.6.dsc 7320 SHA512:473436d086116f17cc3b558907c5d297463d5872be60811fdb0df509fb566110ca9a1e0b16062e1dc39020672456b8907b3ad34de1e4aee144c7948a7911524c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.6.debian.tar.xz' systemd_255.4-1ubuntu8.6.debian.tar.xz 236228 SHA512:c2d66b8cb58585523507694ec2b7c41052644f705c68328b90086814b2019df18754eb5b893d75f5a3f14bca0df7663f1472597e10cd537cd92f2464d7aeaffe
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
