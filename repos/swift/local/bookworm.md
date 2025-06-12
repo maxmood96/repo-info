@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3454eeb3fb2acd6b7fd41dc9ebee29e0b7fb6c0642850e822df65a7f8ae61fde`
+- Image ID: `sha256:d6950a5b00d553f7bfc3b98a023509c4e6e9ee2635f0082a8e9e2205f701329b`
 - Created: `2025-05-28T17:53:13Z`
 - Virtual Size: ~ 3.57 Gb  
   (total size of all layers on-disk)
@@ -1636,11 +1636,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/less/590-2.1~deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/less/590-2.1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libavif=0.11.1-1`
+### `dpkg` source package: `libavif=0.11.1-1+deb12u1`
 
 Binary Packages:
 
-- `libavif15:amd64=0.11.1-1`
+- `libavif15:amd64=0.11.1-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libavif15/copyright`)
 
@@ -1653,17 +1653,17 @@ Licenses: (parsed from: `/usr/share/doc/libavif15/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libavif=0.11.1-1
-'http://deb.debian.org/debian/pool/main/liba/libavif/libavif_0.11.1-1.dsc' libavif_0.11.1-1.dsc 2576 SHA256:504c853817b4e6ccc4c20db14dc12a1dd70e7dc6b355396e241411382886b1e4
-'http://deb.debian.org/debian/pool/main/liba/libavif/libavif_0.11.1.orig.tar.gz' libavif_0.11.1.orig.tar.gz 5826813 SHA256:0eb49965562a0e5e5de58389650d434cff32af84c34185b6c9b7b2fccae06d4e
-'http://deb.debian.org/debian/pool/main/liba/libavif/libavif_0.11.1-1.debian.tar.xz' libavif_0.11.1-1.debian.tar.xz 6112 SHA256:5e0676782a386293f41673141d19e3083cd20efa4ad85dfd9190d0f56860678a
+$ apt-get source -qq --print-uris libavif=0.11.1-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libavif/libavif_0.11.1-1%2bdeb12u1.dsc' libavif_0.11.1-1+deb12u1.dsc 2763 SHA256:87b4faee8aba6052663493f484f7b58754f727fdc33024e5bbb6e821f5de58bd
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libavif/libavif_0.11.1.orig.tar.gz' libavif_0.11.1.orig.tar.gz 5826813 SHA256:0eb49965562a0e5e5de58389650d434cff32af84c34185b6c9b7b2fccae06d4e
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libavif/libavif_0.11.1-1%2bdeb12u1.debian.tar.xz' libavif_0.11.1-1+deb12u1.debian.tar.xz 7608 SHA256:1c8169da17c31882c0e008e661152bbb697ff49c97fd94a9565a5053cd72c21c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libavif/0.11.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libavif/0.11.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libavif/0.11.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libavif/0.11.1-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libavif/0.11.1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libavif/0.11.1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.11.7-2`
 
@@ -3856,12 +3856,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/svt-av1/1.4.1+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/svt-av1/1.4.1+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=252.36-1~deb12u1`
+### `dpkg` source package: `systemd=252.38-1~deb12u1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=252.36-1~deb12u1`
-- `libudev1:amd64=252.36-1~deb12u1`
+- `libsystemd0:amd64=252.38-1~deb12u1`
+- `libudev1:amd64=252.38-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3877,17 +3877,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=252.36-1~deb12u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.36-1%7edeb12u1.dsc' systemd_252.36-1~deb12u1.dsc 6619 SHA256:659884f01f83ed24e39f3cd9a1271128fcf07b66d0859f98b5e37ae7b937ef49
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.36.orig.tar.gz' systemd_252.36.orig.tar.gz 12304368 SHA256:0b3a1d7b176854caa9a9767eb294ff7131f1a5b93dab7468cce117a61c6bb505
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.36-1%7edeb12u1.debian.tar.xz' systemd_252.36-1~deb12u1.debian.tar.xz 171388 SHA256:6e8387f648d2718e07bfc41f005f6ad60bbba4a34e88a64a3a36169ef222accc
+$ apt-get source -qq --print-uris systemd=252.38-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_252.38-1%7edeb12u1.dsc' systemd_252.38-1~deb12u1.dsc 6618 SHA256:87f5badb0ccf04297e7fbc0854cca3d4b31885fb0fbea69e7079ce813319e4a9
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_252.38.orig.tar.gz' systemd_252.38.orig.tar.gz 12310867 SHA256:ca83ebdf477f2bd5ea9ebcd0873719e974c7c135729a5cdeb0c1e73a0d529f18
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_252.38-1%7edeb12u1.debian.tar.xz' systemd_252.38-1~deb12u1.debian.tar.xz 171312 SHA256:0931da3ceef7a45eca56bce0a08cb36409642da7327d4bd0a3abf69ae7bad6e5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/252.36-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.36-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.36-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/252.38-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/252.38-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/252.38-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
