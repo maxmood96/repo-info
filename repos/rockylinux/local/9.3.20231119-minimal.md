@@ -97,8 +97,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-21.el9
-http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
 https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
+http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
 ```
 
 ### `rpm` package: `dejavu-sans-fonts-2.37-18.el9.noarch`
@@ -193,8 +193,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gmp-6.2.0-13.el9
-https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/g/gmp-6.2.0-13.el9.src.rpm
 http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/g/gmp-6.2.0-13.el9.src.rpm
+https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/g/gmp-6.2.0-13.el9.src.rpm
 ```
 
 ### `rpm` package: `gnupg2-2.3.3-4.el9.x86_64`
@@ -467,8 +467,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libgpg-error-1.42-5.el9
-https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/l/libgpg-error-1.42-5.el9.src.rpm
 http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/libgpg-error-1.42-5.el9.src.rpm
+https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/l/libgpg-error-1.42-5.el9.src.rpm
 ```
 
 ### `rpm` package: `libidn2-2.3.0-7.el9.x86_64`
@@ -497,8 +497,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libmodulemd-2.13.0-2.el9
-http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
 https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
+http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
 ```
 
 ### `rpm` package: `libmount-2.37.4-15.el9.x86_64`
@@ -680,8 +680,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
-https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
+https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libxml2-2.9.13-4.el9.x86_64`
@@ -869,8 +869,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url publicsuffix-list-dafsa-20210518-3.el9.noarch
-http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
 https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
+http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -881,8 +881,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url readline-8.1-4.el9
-https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/r/readline-8.1-4.el9.src.rpm
 http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/r/readline-8.1-4.el9.src.rpm
+https://us.mirrors.cicku.me/rocky/9.6/AppStream/source/tree/Packages/r/readline-8.1-4.el9.src.rpm
 ```
 
 ### `rpm` package: `rocky-gpg-keys-9.3-1.1.el9.noarch`
