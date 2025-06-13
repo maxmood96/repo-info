@@ -883,15 +883,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.5-1ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu6.dsc' libseccomp_2.5.5-1ubuntu6.dsc 2831 SHA512:fe3adbb3791a96a88f0eb92791254eff386fb16a8501e3bd98aaa1bc88ff0aea7ff73ff071b5385e4abf8d970f0674ec4ce3f90e9a8c85b560ea4001caa1d4f1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz' libseccomp_2.5.5.orig.tar.gz 642445 SHA512:f630e7a7e53a21b7ccb4d3e7b37616b89aeceba916677c8e3032830411d77a14c2d74dcf594cd193b1acc11f52595072e28316dc44300e54083d5d7b314a38da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc' libseccomp_2.5.5.orig.tar.gz.asc 833 SHA512:a32a7146598f9183179ad15603181d1066e806d01f7c5f215d5405ad8618c06a265d05fff3b4a6cc49c50a577d93d6b920e85f6a581786b3db7389f52a4638e2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu6.debian.tar.xz' libseccomp_2.5.5-1ubuntu6.debian.tar.xz 24524 SHA512:134db79f1009ce22ac1a2ab51ec970493d65c6ed74c67dec18b76b2ff3da201f05c8f9d43629ad3d744258f3785c3c3b02c20c3de5ba820a20a78e922f067412
-```
 
 ### `dpkg` source package: `libselinux=3.8.1-1`
 
@@ -1304,14 +1298,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.4-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.dsc' systemd_257.4-1ubuntu3.dsc 8313 SHA512:2d26b9a9fda10841cdb70ea98e3a470ec57474a770e91024f5d36c794a4566aa74e226c508a605ca1e4848bdc7e71e725cf4eb031120afe023c19cf7c05596cb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4.orig.tar.gz' systemd_257.4.orig.tar.gz 16228313 SHA512:dfa0f6de38fa30daffabf6b02d6533ca4e7027188186d7e2e9648b99dad5c4afa30773138f18a34111e7bb2e6ddae8302284429b98b580e757dc67535846afbe
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.debian.tar.xz' systemd_257.4-1ubuntu3.debian.tar.xz 249932 SHA512:af785f5b0da0ff5115bab1c79a38f579160baedd3250abe24a2696b697f80adfbc42526c45427fdb855eae63450bc9baaef4ea5fccf95c98dccb2ef8a566503e
-```
 
 ### `dpkg` source package: `sysvinit=3.14-4ubuntu1`
 
