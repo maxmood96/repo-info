@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5dce2b7950b62320c32e125d8f8ea6bad4f10af4499915451ed4d0237fa3f941`
+- Image ID: `sha256:ad7a104f98fe5e58027000c914c51eb8b65847d20f3b6679db6a77c304b7095e`
 - Created: `2025-05-02T14:44:13Z`
-- Virtual Size: ~ 579.63 Mb  
+- Virtual Size: ~ 579.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2954,12 +2954,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.40.1-2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.40.1-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=252.36-1~deb12u1`
+### `dpkg` source package: `systemd=252.38-1~deb12u1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=252.36-1~deb12u1`
-- `libudev1:amd64=252.36-1~deb12u1`
+- `libsystemd0:amd64=252.38-1~deb12u1`
+- `libudev1:amd64=252.38-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2975,17 +2975,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=252.36-1~deb12u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.36-1%7edeb12u1.dsc' systemd_252.36-1~deb12u1.dsc 6619 SHA256:659884f01f83ed24e39f3cd9a1271128fcf07b66d0859f98b5e37ae7b937ef49
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.36.orig.tar.gz' systemd_252.36.orig.tar.gz 12304368 SHA256:0b3a1d7b176854caa9a9767eb294ff7131f1a5b93dab7468cce117a61c6bb505
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.36-1%7edeb12u1.debian.tar.xz' systemd_252.36-1~deb12u1.debian.tar.xz 171388 SHA256:6e8387f648d2718e07bfc41f005f6ad60bbba4a34e88a64a3a36169ef222accc
+$ apt-get source -qq --print-uris systemd=252.38-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_252.38-1%7edeb12u1.dsc' systemd_252.38-1~deb12u1.dsc 6618 SHA256:87f5badb0ccf04297e7fbc0854cca3d4b31885fb0fbea69e7079ce813319e4a9
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_252.38.orig.tar.gz' systemd_252.38.orig.tar.gz 12310867 SHA256:ca83ebdf477f2bd5ea9ebcd0873719e974c7c135729a5cdeb0c1e73a0d529f18
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_252.38-1%7edeb12u1.debian.tar.xz' systemd_252.38-1~deb12u1.debian.tar.xz 171312 SHA256:0931da3ceef7a45eca56bce0a08cb36409642da7327d4bd0a3abf69ae7bad6e5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/252.36-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.36-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.36-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/252.38-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/252.38-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/252.38-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
