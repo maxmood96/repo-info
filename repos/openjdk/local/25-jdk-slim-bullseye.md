@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:70b95d68f39d3e1a19f0a542740ac799e774dd98556b1c918f8839dfbea7cbec`
+- Image ID: `sha256:7fe9edd2d7b6c7f0524e80e0fcbaf3db6e4e2bbcef2a14b9098c8a48a03fae81`
 - Created: `2025-06-09T06:48:11Z`
 - Virtual Size: ~ 484.01 Mb  
   (total size of all layers on-disk)
@@ -633,25 +633,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u12`
+### `dpkg` source package: `glibc=2.31-13+deb11u13`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u12`
-- `libc6:amd64=2.31-13+deb11u12`
+- `libc-bin=2.31-13+deb11u13`
+- `libc6:amd64=2.31-13+deb11u13`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u13
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u13.dsc' glibc_2.31-13+deb11u13.dsc 8388 SHA256:c32a130c8e4fc140cd1f3376a972a4d058074b6f8e778813387b5446a26f4334
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u13.debian.tar.xz' glibc_2.31-13+deb11u13.debian.tar.xz 971240 SHA256:e0be307cc8dc1538e2664aae71f5e3d2e0d7c40ff547c997523c591228cc7eda
+```
 
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u12/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.31-13+deb11u13/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
@@ -890,26 +897,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.18.3-6+deb11u6`
+### `dpkg` source package: `krb5=1.18.3-6+deb11u7`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u6`
-- `libk5crypto3:amd64=1.18.3-6+deb11u6`
-- `libkrb5-3:amd64=1.18.3-6+deb11u6`
-- `libkrb5support0:amd64=1.18.3-6+deb11u6`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u7`
+- `libk5crypto3:amd64=1.18.3-6+deb11u7`
+- `libkrb5-3:amd64=1.18.3-6+deb11u7`
+- `libkrb5support0:amd64=1.18.3-6+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.dsc' krb5_1.18.3-6+deb11u7.dsc 3814 SHA256:162309912574992c13fadec1c95ad65b4e1a4fef046e15e065f89b13b3e4585f
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.debian.tar.xz' krb5_1.18.3-6+deb11u7.debian.tar.xz 121056 SHA256:db0041a414f71358d1365c766f7a4c66e6b46774841dcdeab97042049f8fa011
+```
 
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
@@ -1490,28 +1505,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u2`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.1w-0+deb11u2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u2/
-
-
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u3`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.1w-0+deb11u3`
 - `openssl=1.1.1w-0+deb11u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
