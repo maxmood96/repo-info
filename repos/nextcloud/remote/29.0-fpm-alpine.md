@@ -201,7 +201,7 @@ $ docker pull nextcloud@sha256:3047c116cd58e6f6987ae207f7e21200826e146450a6eaeac
 
 -	Layers:
 	-	`sha256:7073bb16f20f22f6e958dee41a5cf86f678d35151ecafb68d4b1ea51f0e18678`  
-		Last Modified: Mon, 21 Apr 2025 22:08:32 GMT  
+		Last Modified: Fri, 13 Jun 2025 08:41:38 GMT  
 		Size: 43.6 KB (43607 bytes)  
 		MIME: application/vnd.in-toto+json
 
