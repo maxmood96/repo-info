@@ -1,10 +1,10 @@
-# `r-base:4.5.0`
+# `r-base:4.5.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ae6a27605171c1bfac9717ad8e6f57ce4ee29b737d76a0e7deb1c9756f8d7c2`
-- Created: `2025-04-11T18:18:21Z`
-- Virtual Size: ~ 871.36 Mb  
+- Image ID: `sha256:44c7c6fb77c9b9925c3bac9b16096127a1e9c366163db44e5b91839c46fc7fd1`
+- Created: `2025-06-13T15:18:05Z`
+- Virtual Size: ~ 871.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["R"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LC_ALL=en_US.UTF-8`
   - `LANG=en_US.UTF-8`
-  - `R_BASE_VERSION=4.5.0`
+  - `R_BASE_VERSION=4.5.1`
 - Labels:
   - `org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>`
   - `org.opencontainers.image.licenses=GPL-2.0-or-later`
@@ -401,21 +401,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.7-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-2.dsc' coreutils_9.7-2.dsc 2122 SHA256:07f292db7de35bc5933677443a1183636ec62e8a6d094dccccdc15d6723763ca
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz' coreutils_9.7.orig.tar.xz 6158960 SHA256:e8bb26ad0293f9b5a1fc43fb42ba970e312c66ce92c1b0b16713d7500db251bf
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7.orig.tar.xz.asc' coreutils_9.7.orig.tar.xz.asc 833 SHA256:5070e9428bd372a7fa1f66b395b81092bb40c98f9f56a2e2bc55c47fd387e901
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.7-2.debian.tar.xz' coreutils_9.7-2.debian.tar.xz 22284 SHA256:d8154f1cb9b99dfd2801753004984367bf5e921600ba20e1321e9610224be674
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.7-2/
 
-- https://sources.debian.net/src/coreutils/9.7-2/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.14.1-1`
 
@@ -584,19 +576,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.22
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.22.dsc' debianutils_5.22.dsc 1631 SHA256:58033821bf0671e5f9941d6af7dc63362c84131741c7dc93813fb400eead5bd4
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.22.tar.xz' debianutils_5.22.tar.xz 82004 SHA256:043569241cdd893cc45e00f917c94c123d0c24143895d91c4d08c6c567e35155
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.22/
 
-- https://sources.debian.net/src/debianutils/5.22/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.22/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.22/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-4`
 
@@ -657,11 +643,11 @@ $ apt-get source -qq --print-uris dpkg=1.22.20
 'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.20.tar.xz' dpkg_1.22.20.tar.xz 5741308 SHA256:f21bd89cca601500a7ecc446160be72413d822fe09b4ea155c9593b46321d5e4
 ```
 
-### `dpkg` source package: `e2fsprogs=1.47.2-2`
+### `dpkg` source package: `e2fsprogs=1.47.2-3`
 
 Binary Packages:
 
-- `libcom-err2:amd64=1.47.2-2`
+- `libcom-err2:amd64=1.47.2-3`
 
 Licenses: (parsed from: `/usr/share/doc/libcom-err2/copyright`)
 
@@ -685,11 +671,11 @@ Licenses: (parsed from: `/usr/share/doc/libcom-err2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.47.2-2
-'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-2.dsc' e2fsprogs_1.47.2-2.dsc 3035 SHA256:489ec3e7cd420d6359d0772dc1a87402542583029d70c5e7537d46bc20957903
+$ apt-get source -qq --print-uris e2fsprogs=1.47.2-3
+'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3.dsc' e2fsprogs_1.47.2-3.dsc 3035 SHA256:860abb653ecbe01a11bb7e41c9e09a45e83847bffa585f7a3d3c0f9401c9d4bb
 'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz' e2fsprogs_1.47.2.orig.tar.gz 9996725 SHA256:6dcd67ff9d8b13274ba3f088e4318be4f5b71412cd863524423fc49d39a6371f
 'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz.asc' e2fsprogs_1.47.2.orig.tar.gz.asc 488 SHA256:2063f62a198dd3df21f789c990c2cf9b4a5de24ed55f0b78d86e97e98daffc9d
-'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-2.debian.tar.xz' e2fsprogs_1.47.2-2.debian.tar.xz 103720 SHA256:0b0b64486d9a3b0c82f46f4d709de7c81a2c36431a14e4fdd14aed496c0ad44e
+'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3.debian.tar.xz' e2fsprogs_1.47.2-3.debian.tar.xz 103684 SHA256:5517aae5ce5196e49fa314492f0639ad7a1692c9521d703b6c81acff77a1564e
 ```
 
 ### `dpkg` source package: `ed=1.21.1-1`
@@ -3018,14 +3004,14 @@ $ apt-get source -qq --print-uris procps=2:4.0.4-8
 'http://http.debian.net/debian/pool/main/p/procps/procps_4.0.4-8.debian.tar.xz' procps_4.0.4-8.debian.tar.xz 45408 SHA256:0d1723a0134f8b6ae2619a4e9878084c06f92e36ab7c163086d713f2ed064f3d
 ```
 
-### `dpkg` source package: `r-base=4.5.0-3`
+### `dpkg` source package: `r-base=4.5.1-1`
 
 Binary Packages:
 
-- `r-base=4.5.0-3`
-- `r-base-core=4.5.0-3`
-- `r-base-dev=4.5.0-3`
-- `r-recommended=4.5.0-3`
+- `r-base=4.5.1-1`
+- `r-base-core=4.5.1-1`
+- `r-base-dev=4.5.1-1`
+- `r-recommended=4.5.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-base-core/copyright`, `/usr/share/doc/r-base-dev/copyright`, `/usr/share/doc/r-recommended/copyright`)
 
@@ -3039,10 +3025,10 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 Source:
 
 ```console
-$ apt-get source -qq --print-uris r-base=4.5.0-3
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.5.0-3.dsc' r-base_4.5.0-3.dsc 2906 SHA256:5c62f851115924872d7d057b16f1a50d61bd02917751d99d33013cb82e6f9967
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.5.0.orig.tar.gz' r-base_4.5.0.orig.tar.gz 40466335 SHA256:3b33ea113e0d1ddc9793874d5949cec2c7386f66e4abfb1cef9aec22846c3ce1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.5.0-3.debian.tar.xz' r-base_4.5.0-3.debian.tar.xz 100824 SHA256:acbde33497a5ebffb529d91dd09e98d833c4cd46b8bbbda13143b1e34bc83d4d
+$ apt-get source -qq --print-uris r-base=4.5.1-1
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.5.1-1.dsc' r-base_4.5.1-1.dsc 2907 SHA256:1772cedb9d84b0b02d100ea4506a0ac7c52f228545f80bb206872e0673d55dce
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.5.1.orig.tar.gz' r-base_4.5.1.orig.tar.gz 40518816 SHA256:b42a7921400386645b10105b91c68728787db5c4c83c9f6c30acdce632e1bb70
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.5.1-1.debian.tar.xz' r-base_4.5.1-1.debian.tar.xz 100912 SHA256:ec782967247a319a9e1f1b7f072e30a3cc3aec2478d915729214743d23af5ba0
 ```
 
 ### `dpkg` source package: `r-cran-class=7.3-23-1`
