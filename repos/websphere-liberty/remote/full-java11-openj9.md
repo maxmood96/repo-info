@@ -532,7 +532,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 3.4 MB (3447062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a43778c93a6217d3b705dcc69ef073781e2dccbfdb1e0973598360a063f5501`  
-		Last Modified: Wed, 21 May 2025 18:06:02 GMT  
+		Last Modified: Sun, 15 Jun 2025 18:51:41 GMT  
 		Size: 36.5 KB (36501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6a58aa4b2024924db977d17ab2fd3caf12d4571ddfbee6d2d3330aaabcebbf5`  
@@ -540,23 +540,23 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 17.6 MB (17561350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8cc197f05aa36ccbd374a8ec7badcda06d65d2d3de66c52a39e037e860531df`  
-		Last Modified: Wed, 21 May 2025 18:06:02 GMT  
+		Last Modified: Sun, 15 Jun 2025 18:51:42 GMT  
 		Size: 484.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3917e64cc886d2ef11e3ff36c46d506fe48759c45ed90a3f8c92b215e62eac6e`  
-		Last Modified: Wed, 21 May 2025 18:06:02 GMT  
+		Last Modified: Sun, 15 Jun 2025 18:51:42 GMT  
 		Size: 1.5 KB (1518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd92d93d73c0d3706db19d4bb6c06f7fc87136b190fa162c9c78cba222fc80bc`  
-		Last Modified: Wed, 21 May 2025 18:06:03 GMT  
+		Last Modified: Sun, 15 Jun 2025 18:51:42 GMT  
 		Size: 12.3 KB (12310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c0d149692bc57f4b195b5f42a331ecc56735d5e55785d9f4f8e7449dd9a26f4`  
-		Last Modified: Wed, 21 May 2025 18:06:04 GMT  
+		Last Modified: Sun, 15 Jun 2025 18:51:42 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb5233e77b413ba5c4aa8ce78f29eb598b76353518214fb19b0c52246d25a29d`  
-		Last Modified: Wed, 21 May 2025 18:06:04 GMT  
+		Last Modified: Sun, 15 Jun 2025 18:51:42 GMT  
 		Size: 13.1 KB (13117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5db835dc9a52db58b35e127c2533ec506fa9d0c85e44989e65c06f32cf3d649`  
