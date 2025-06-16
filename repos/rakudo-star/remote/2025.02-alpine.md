@@ -73,11 +73,11 @@ $ docker pull rakudo-star@sha256:3b4a1355f7be87536ae0b6657480a1ce4e5032d7ac54410
 
 -	Layers:
 	-	`sha256:fbaab3828903602344fabb36ba9922996d8a4e992345956de3e8de849963a5f9`  
-		Last Modified: Fri, 30 May 2025 18:28:29 GMT  
+		Last Modified: Mon, 16 Jun 2025 03:47:18 GMT  
 		Size: 124.2 KB (124221 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:96075b0510448a463b05851acb6c3cdb26047db661c6ab1e5df701ee4afbf857`  
-		Last Modified: Fri, 30 May 2025 18:28:29 GMT  
+		Last Modified: Mon, 16 Jun 2025 03:47:19 GMT  
 		Size: 11.7 KB (11749 bytes)  
 		MIME: application/vnd.in-toto+json
 
