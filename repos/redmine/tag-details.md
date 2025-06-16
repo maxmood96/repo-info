@@ -2763,7 +2763,7 @@ $ docker pull redmine@sha256:aae3cdbbd3b7802de1a370f213de45d8e172f8634b2bd985196
 
 -	Layers:
 	-	`sha256:9b5d015ea8d21acce1a9a382009f173cf6ce5c256d6c0ddda4822f452d549e26`  
-		Last Modified: Mon, 21 Apr 2025 22:36:39 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:17:07 GMT  
 		Size: 40.6 KB (40559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9144,7 +9144,7 @@ $ docker pull redmine@sha256:aae3cdbbd3b7802de1a370f213de45d8e172f8634b2bd985196
 
 -	Layers:
 	-	`sha256:9b5d015ea8d21acce1a9a382009f173cf6ce5c256d6c0ddda4822f452d549e26`  
-		Last Modified: Mon, 21 Apr 2025 22:36:39 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:17:07 GMT  
 		Size: 40.6 KB (40559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15525,7 +15525,7 @@ $ docker pull redmine@sha256:aae3cdbbd3b7802de1a370f213de45d8e172f8634b2bd985196
 
 -	Layers:
 	-	`sha256:9b5d015ea8d21acce1a9a382009f173cf6ce5c256d6c0ddda4822f452d549e26`  
-		Last Modified: Mon, 21 Apr 2025 22:36:39 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:17:07 GMT  
 		Size: 40.6 KB (40559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21852,7 +21852,7 @@ $ docker pull redmine@sha256:5135f19ce837341f6a6cabefb04ef85083ba7571e4987a00853
 
 -	Layers:
 	-	`sha256:fca5852c33bce55c03686fda2418d59118cebff8cb504a986727728589cc8bc4`  
-		Last Modified: Mon, 21 Apr 2025 22:36:48 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:04:57 GMT  
 		Size: 38.0 KB (38016 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -28089,7 +28089,7 @@ $ docker pull redmine@sha256:5135f19ce837341f6a6cabefb04ef85083ba7571e4987a00853
 
 -	Layers:
 	-	`sha256:fca5852c33bce55c03686fda2418d59118cebff8cb504a986727728589cc8bc4`  
-		Last Modified: Mon, 21 Apr 2025 22:36:48 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:04:57 GMT  
 		Size: 38.0 KB (38016 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -34326,7 +34326,7 @@ $ docker pull redmine@sha256:5135f19ce837341f6a6cabefb04ef85083ba7571e4987a00853
 
 -	Layers:
 	-	`sha256:fca5852c33bce55c03686fda2418d59118cebff8cb504a986727728589cc8bc4`  
-		Last Modified: Mon, 21 Apr 2025 22:36:48 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:04:57 GMT  
 		Size: 38.0 KB (38016 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -39306,7 +39306,7 @@ $ docker pull redmine@sha256:5135f19ce837341f6a6cabefb04ef85083ba7571e4987a00853
 
 -	Layers:
 	-	`sha256:fca5852c33bce55c03686fda2418d59118cebff8cb504a986727728589cc8bc4`  
-		Last Modified: Mon, 21 Apr 2025 22:36:48 GMT  
+		Last Modified: Mon, 16 Jun 2025 07:04:57 GMT  
 		Size: 38.0 KB (38016 bytes)  
 		MIME: application/vnd.in-toto+json
 
