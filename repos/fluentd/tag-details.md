@@ -938,11 +938,11 @@ $ docker pull fluentd@sha256:4749e6c4bc36de5b60c46e82426f3c134f2191d0801f759929b
 
 -	Layers:
 	-	`sha256:fdec952c7de1e97dd74507fa3ea755c52dc9d16ed75228e9b8eebf114e16b5fc`  
-		Last Modified: Thu, 22 May 2025 16:28:24 GMT  
+		Last Modified: Tue, 17 Jun 2025 10:00:33 GMT  
 		Size: 971.1 KB (971137 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:49fdf762d93190a988ce2143b1e50c15ba641106b654bd2cc1b9ce63bd6624d2`  
-		Last Modified: Thu, 22 May 2025 16:28:23 GMT  
+		Last Modified: Tue, 17 Jun 2025 10:00:36 GMT  
 		Size: 13.7 KB (13653 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2428,11 +2428,11 @@ $ docker pull fluentd@sha256:4749e6c4bc36de5b60c46e82426f3c134f2191d0801f759929b
 
 -	Layers:
 	-	`sha256:fdec952c7de1e97dd74507fa3ea755c52dc9d16ed75228e9b8eebf114e16b5fc`  
-		Last Modified: Thu, 22 May 2025 16:28:24 GMT  
+		Last Modified: Tue, 17 Jun 2025 10:00:33 GMT  
 		Size: 971.1 KB (971137 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:49fdf762d93190a988ce2143b1e50c15ba641106b654bd2cc1b9ce63bd6624d2`  
-		Last Modified: Thu, 22 May 2025 16:28:23 GMT  
+		Last Modified: Tue, 17 Jun 2025 10:00:36 GMT  
 		Size: 13.7 KB (13653 bytes)  
 		MIME: application/vnd.in-toto+json
 
