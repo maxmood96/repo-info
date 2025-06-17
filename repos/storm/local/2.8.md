@@ -1,10 +1,10 @@
-# `storm:2.8.0`
+# `storm:2.8.1-jre17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d2b5439e36a81c2e4c85ea12846d7527c5f6189cf4d983efa7671a75f433544`
-- Created: `2025-01-28T06:36:36Z`
-- Virtual Size: ~ 678.52 Mb  
+- Image ID: `sha256:d6724bb04caaf69863bfcb537f453da5aae0875bc8b1c23bb16d2c7ea6bce9a5`
+- Created: `2025-06-16T17:42:24Z`
+- Virtual Size: ~ 703.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1908,14 +1908,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.5`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.6`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.5`
-- `python3.12=3.12.3-1ubuntu0.5`
-- `python3.12-minimal=3.12.3-1ubuntu0.5`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.6`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.6`
+- `python3.12=3.12.3-1ubuntu0.6`
+- `python3.12-minimal=3.12.3-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -1940,10 +1940,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.dsc' python3.12_3.12.3-1ubuntu0.5.dsc 3875 SHA512:38dc5621220a6396c97a383c49c5717a85823967991ef99f143ac73e45c69f93ea73fcf34eafc8a0b5937830a3d1147df9431c59578ae3878dcdc78498b61f18
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.6.dsc' python3.12_3.12.3-1ubuntu0.6.dsc 3875 SHA512:84e275e1b1a83bed0ce715f36763a5c73c5e056d980042f8e829e0dbb65e226d97f98ff837e37a6634e4b8ff4e13ae62686c376c25990fd149bac6fd8163206b
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.debian.tar.xz' python3.12_3.12.3-1ubuntu0.5.debian.tar.xz 234380 SHA512:a73a89a34bfce03854aade75ac6a08b771a6e90c41a0a337590a1e41462a68c8d11e8da9f31639965157d53ff331b96140c147ebeace2d58d0edbd2cad9f60ca
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.6.debian.tar.xz' python3.12_3.12.3-1ubuntu0.6.debian.tar.xz 238992 SHA512:7bcb123037306fb75c7c5e3f3a882fe99fd37cb30f75791359f2430e1426777de98c801e1c8438cf5edb4cd2961f7bcbfc9f09bce9b78377e01bd9bd7cc90999
 ```
 
 ### `dpkg` source package: `readline=8.2-4build1`
