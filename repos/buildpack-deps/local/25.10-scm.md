@@ -108,13 +108,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.0ubuntu3.dsc' apt_3.1.0ubuntu3.dsc 3206 SHA512:4cdb163826af1b5bfc58401b212634fd434f612ee8b8fd4768469b53e81f9076c2071992c8d92235c79ad2fd69eb88420b7ef916eb3d402a21a1482658c9127c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.1.0ubuntu3.tar.xz' apt_3.1.0ubuntu3.tar.xz 2426308 SHA512:8c4d9798f1127e4edbc6cccc5fdc688461573154049526e3668934756908c73ed1dcdf0e8d218bccad475e62a9b79d55a1b1a92ca360e66fe96d287a6ee1938e
-```
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -593,15 +589,9 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `Latex2e`
 - `MIT-US-export`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.47.2-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-1ubuntu1.dsc' e2fsprogs_1.47.2-1ubuntu1.dsc 3289 SHA512:86e1d742f5459eae99979a4f6ee780c0ce2e26089e802b0fc0c03932a43bbf7b6b321b3d1f426b030352b6aa375d4b19aea82d1a913f92b3ee64e62480c66088
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz' e2fsprogs_1.47.2.orig.tar.gz 9996725 SHA512:dd89139c5e2bf999a22d999686ef06ab42f6ad537c6aeaa3fe68d9734d734b7396fd7ab2fd8002be26860c5653991a666d0df06c804c2f1f07f1274468ec728f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz.asc' e2fsprogs_1.47.2.orig.tar.gz.asc 488 SHA512:a22d46cc37497861d5a7e50076b40b8be6f459790f6eaacf0446200776fb74492ca9bfc7abc19edda3c9f7f722c318827b02f9cfbbb2118a8e86bce4d446d56b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-1ubuntu1.debian.tar.xz' e2fsprogs_1.47.2-1ubuntu1.debian.tar.xz 94228 SHA512:3d50e03fabc43643c1e7ad1eafecf3ea2da8967b339ab46a20817e90aead1fd5dd61ae4f06d7d8cd7a634105a3f9b7bc230cff8b843d210a43957f16a1295e16
-```
 
 ### `dpkg` source package: `expat=2.7.1-1`
 
@@ -2581,14 +2571,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-14ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.40.2-14ubuntu1.dsc' util-linux_2.40.2-14ubuntu1.dsc 4952 SHA512:970fc46fc8c726d9e4acfd901387173b75fb75fbf514edd44bc9acb631a95b198c89b78d431c13a7c59eb0a59427c858b9961710adf728e37699192ed8e5a3d4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA512:ffe20b915a518a150401d429b0338bc7022190e4ca0ef91a6d9eea345db8c1e11ad01784163b8fcf978506f3f5cad473f29d5d4ef93a4c66a5ae0ebd9fb0c8f2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.40.2-14ubuntu1.debian.tar.xz' util-linux_2.40.2-14ubuntu1.debian.tar.xz 126204 SHA512:920ac6f4216777ed0a150da248863ef816cdfbca2d6dd371567af6ad15539d9c3470b9fec051518d7cc2ee0dbd0190e8940eba633ac2ebc2952b2fe4e26ecb72
-```
 
 ### `dpkg` source package: `wget=1.25.0-2ubuntu1`
 

@@ -2134,15 +2134,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.7-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.7-1ubuntu2.dsc' python3.12_3.12.7-1ubuntu2.dsc 4340 SHA512:1a4b4fb9559c3810bada2fbdf1ddd9cabeff8c309acce7b9cd6ac0d1cb68086b6b6c8d619f38b4140187d59dc5aac111601903db8bc5d7f90e0f402bbcf05e35
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.7.orig.tar.xz' python3.12_3.12.7.orig.tar.xz 20444032 SHA512:4a363d3f852ad8f4fd1484aa4cec35494a3811be48ef67fadb2bdf2e2489ed07dc78fad6ab475257db503ddd64d39f9800f23a1c94b6bbd15b7f632cff0c90ae
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.7.orig.tar.xz.asc' python3.12_3.12.7.orig.tar.xz.asc 963 SHA512:4d0a7a0da2c81888e93d8ff89ca2ed4bb85a7b0bd00f0d54a14e2c201affac2677ef3984d2b5aea253e624f6465548d9032eefdd9033c1eb3864d82cfd8d3df0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.7-1ubuntu2.debian.tar.xz' python3.12_3.12.7-1ubuntu2.debian.tar.xz 223532 SHA512:e0c0ec2439d69451a3310e71e990ce4e238b6ea9f29d4bb7d910bbd46ce3b354e6115b6848ec298e8d83933b3da21280c55a128aafdaea87b927dd92067e6374
-```
 
 ### `dpkg` source package: `readline=8.2-5`
 
