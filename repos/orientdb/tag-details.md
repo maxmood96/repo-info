@@ -149,11 +149,11 @@ $ docker pull orientdb@sha256:069614943091465c8c604af5e6894042cca1f9f336bc071cb6
 
 -	Layers:
 	-	`sha256:0331e87072451f2334432f1791cedb871393a8044bd1782ac52741292c15ecd0`  
-		Last Modified: Tue, 03 Jun 2025 05:13:17 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:37 GMT  
 		Size: 3.4 MB (3431730 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:76f34f42a477b5ac1624ef3556ffdf47b69867b0f2dc997b7c92d1ed8e94b667`  
-		Last Modified: Tue, 03 Jun 2025 05:13:17 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:38 GMT  
 		Size: 14.2 KB (14212 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -302,11 +302,11 @@ $ docker pull orientdb@sha256:a5c5f85a6269b3f594aaf6b7645237dafb4b673655eeb03ced
 
 -	Layers:
 	-	`sha256:becc68d9eaf81293259f48ae7b162ca0a5f9215b7648bae03f1928d9b404c4d9`  
-		Last Modified: Tue, 03 Jun 2025 05:13:22 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:22 GMT  
 		Size: 3.5 MB (3495620 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:14142a2280d3c20d7b2f46751d5f2c4f9b889f0fda3e85c949ff4f6f98f94102`  
-		Last Modified: Tue, 03 Jun 2025 05:13:21 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:23 GMT  
 		Size: 16.8 KB (16843 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -447,11 +447,11 @@ $ docker pull orientdb@sha256:069614943091465c8c604af5e6894042cca1f9f336bc071cb6
 
 -	Layers:
 	-	`sha256:0331e87072451f2334432f1791cedb871393a8044bd1782ac52741292c15ecd0`  
-		Last Modified: Tue, 03 Jun 2025 05:13:17 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:37 GMT  
 		Size: 3.4 MB (3431730 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:76f34f42a477b5ac1624ef3556ffdf47b69867b0f2dc997b7c92d1ed8e94b667`  
-		Last Modified: Tue, 03 Jun 2025 05:13:17 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:38 GMT  
 		Size: 14.2 KB (14212 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -600,11 +600,11 @@ $ docker pull orientdb@sha256:a5c5f85a6269b3f594aaf6b7645237dafb4b673655eeb03ced
 
 -	Layers:
 	-	`sha256:becc68d9eaf81293259f48ae7b162ca0a5f9215b7648bae03f1928d9b404c4d9`  
-		Last Modified: Tue, 03 Jun 2025 05:13:22 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:22 GMT  
 		Size: 3.5 MB (3495620 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:14142a2280d3c20d7b2f46751d5f2c4f9b889f0fda3e85c949ff4f6f98f94102`  
-		Last Modified: Tue, 03 Jun 2025 05:13:21 GMT  
+		Last Modified: Wed, 18 Jun 2025 09:52:23 GMT  
 		Size: 16.8 KB (16843 bytes)  
 		MIME: application/vnd.in-toto+json
 
