@@ -1,9 +1,9 @@
-# `orientdb:3.2.40`
+# `orientdb:3.2.41`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a5bcd10e9c523ecdc4848903b605100aa3de8d0c9413271146a2fd03cfe8bb4`
-- Created: `2025-05-29T13:16:44Z`
+- Image ID: `sha256:21520e7846003510d1c601f625a9db04672fd6b25fd691834d965a3cd1bc0a7a`
+- Created: `2025-06-17T15:23:58Z`
 - Virtual Size: ~ 378.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,10 +16,10 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u452-b09`
-  - `ORIENTDB_VERSION=3.2.40`
-  - `ORIENTDB_DOWNLOAD_MD5=4cb758ccec4c542187b5d669e749335c`
-  - `ORIENTDB_DOWNLOAD_SHA1=3787f8f20ff77636a56e97c71431b60974e45876`
-  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.40/orientdb-community-3.2.40.tar.gz`
+  - `ORIENTDB_VERSION=3.2.41`
+  - `ORIENTDB_DOWNLOAD_MD5=f25fc2bd1d917a7210462c8ab8745d10`
+  - `ORIENTDB_DOWNLOAD_SHA1=94b197714950b3d1a91cb52de3ab02cd48cfe71a`
+  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.41/orientdb-community-3.2.41.tar.gz`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -1710,14 +1710,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.1.dsc' pam_1.5.3-5ubuntu5.1.dsc 2727 SHA512:99cfdf249f5b221ac319485889fc9b5ddd9e59a4b8a6fcf93b15ac2a639ded5c5d5fc31066da7e736c97526dd6e87fe315c79b6f25cd6ebea4f63f28b8e58519
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.1.debian.tar.xz' pam_1.5.3-5ubuntu5.1.debian.tar.xz 186964 SHA512:1b43adbaf10bb64c2e318961863a18043b5209300dd2f0d52ed2cd212ce8e6887c7863a9c46959e12a4844592ef80db175340d476b76fccd0548cfc151d2cba0
-```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 
