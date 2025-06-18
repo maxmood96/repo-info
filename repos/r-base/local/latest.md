@@ -1000,11 +1000,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.84.2-1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.2-1.dsc' glib2.0_2.84.2-1.dsc 4925 SHA256:0cbbc89ce6d96d53ba39169200e41dab230cd9e89850f7256b5df76cfe9339f8
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.2.orig-unicode-data.tar.xz' glib2.0_2.84.2.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.2.orig.tar.xz' glib2.0_2.84.2.orig.tar.xz 5617588 SHA256:88e960dd937057407d61fcb3b45a860704b25923c37ae2478b85f2ecb5a4021f
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.2-1.debian.tar.xz' glib2.0_2.84.2-1.debian.tar.xz 138104 SHA256:5561d182b3c1aee1157391a4844bbb9f353d967eb2b91c6bbd3138b1b8701e2b
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2-1.dsc' glib2.0_2.84.2-1.dsc 4925 SHA256:0cbbc89ce6d96d53ba39169200e41dab230cd9e89850f7256b5df76cfe9339f8
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2.orig-unicode-data.tar.xz' glib2.0_2.84.2.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2.orig.tar.xz' glib2.0_2.84.2.orig.tar.xz 5617588 SHA256:88e960dd937057407d61fcb3b45a860704b25923c37ae2478b85f2ecb5a4021f
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2-1.debian.tar.xz' glib2.0_2.84.2-1.debian.tar.xz 138104 SHA256:5561d182b3c1aee1157391a4844bbb9f353d967eb2b91c6bbd3138b1b8701e2b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.84.2-1/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.84.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.84.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-8`
 
