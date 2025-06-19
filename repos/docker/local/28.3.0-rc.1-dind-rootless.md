@@ -1,16 +1,16 @@
-# `docker:28.2.2-dind`
+# `docker:28.3.0-rc.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a352870cc821ad619621bb9dbcc14e1847d3d52adc19f953b3a60683d43659da`
-- Created: `2025-06-05T17:36:11Z`
-- Virtual Size: ~ 404.76 Mb  
+- Image ID: `sha256:7a7c92028c0f1b2aced49586905a6a2d5cfc1b9a34178edba5e1b456e33325be`
+- Created: `2025-06-16T17:04:22Z`
+- Virtual Size: ~ 453.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=28.2.2`
+  - `DOCKER_VERSION=28.3.0-rc.1`
   - `DOCKER_BUILDX_VERSION=0.25.0`
   - `DOCKER_COMPOSE_VERSION=2.37.1`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -290,6 +290,74 @@ GPL-2.0-or-later
 
 ```
 
+### `apk` package: `fuse-common`
+
+```console
+fuse-common-3.16.2-r1 description:
+Common files for fuse2 and fuse3
+
+fuse-common-3.16.2-r1 webpage:
+https://github.com/libfuse/libfuse
+
+fuse-common-3.16.2-r1 installed size:
+216 B
+
+fuse-common-3.16.2-r1 license:
+GPL-2.0-only AND LGPL-2.1-only
+
+```
+
+### `apk` package: `fuse-overlayfs`
+
+```console
+fuse-overlayfs-1.15-r0 description:
+FUSE implementation for overlayfs
+
+fuse-overlayfs-1.15-r0 webpage:
+https://github.com/containers/fuse-overlayfs
+
+fuse-overlayfs-1.15-r0 installed size:
+82 KiB
+
+fuse-overlayfs-1.15-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `fuse3`
+
+```console
+fuse3-3.16.2-r1 description:
+Reference implementation of the Linux FUSE (Filesystem in Userspace) interface
+
+fuse3-3.16.2-r1 webpage:
+https://github.com/libfuse/libfuse
+
+fuse3-3.16.2-r1 installed size:
+48 KiB
+
+fuse3-3.16.2-r1 license:
+GPL-2.0-only AND LGPL-2.1-only
+
+```
+
+### `apk` package: `fuse3-libs`
+
+```console
+fuse3-libs-3.16.2-r1 description:
+Reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
+
+fuse3-libs-3.16.2-r1 webpage:
+https://github.com/libfuse/libfuse
+
+fuse3-libs-3.16.2-r1 installed size:
+221 KiB
+
+fuse3-libs-3.16.2-r1 license:
+GPL-2.0-only AND LGPL-2.1-only
+
+```
+
 ### `apk` package: `git`
 
 ```console
@@ -338,6 +406,74 @@ inih-60-r0 installed size:
 
 inih-60-r0 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `iproute2`
+
+```console
+iproute2-6.15.0-r0 description:
+IP Routing Utilities
+
+iproute2-6.15.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-6.15.0-r0 installed size:
+408 KiB
+
+iproute2-6.15.0-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2-minimal`
+
+```console
+iproute2-minimal-6.15.0-r0 description:
+IP Routing Utilities (/sbin/ip only)
+
+iproute2-minimal-6.15.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-minimal-6.15.0-r0 installed size:
+597 KiB
+
+iproute2-minimal-6.15.0-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2-ss`
+
+```console
+iproute2-ss-6.15.0-r0 description:
+IP Routing Utilities (socket statistics tool)
+
+iproute2-ss-6.15.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-ss-6.15.0-r0 installed size:
+96 KiB
+
+iproute2-ss-6.15.0-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2-tc`
+
+```console
+iproute2-tc-6.15.0-r0 description:
+IP Routing Utilities (traffic control and XDP support)
+
+iproute2-tc-6.15.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-tc-6.15.0-r0 installed size:
+570 KiB
+
+iproute2-tc-6.15.0-r0 license:
+GPL-2.0-or-later
 
 ```
 
@@ -477,6 +613,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libcap2`
+
+```console
+libcap2-2.76-r0 description:
+POSIX 1003.1e capabilities (libraries)
+
+libcap2-2.76-r0 webpage:
+https://sites.google.com/site/fullycapable/
+
+libcap2-2.76-r0 installed size:
+47 KiB
+
+libcap2-2.76-r0 license:
+BSD-3-Clause OR GPL-2.0-only
+
+```
+
 ### `apk` package: `libcom_err`
 
 ```console
@@ -559,6 +712,23 @@ libedit-20250104.3.1-r1 installed size:
 
 libedit-20250104.3.1-r1 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `libelf`
+
+```console
+libelf-0.193-r0 description:
+Library to read, modify and create ELF files
+
+libelf-0.193-r0 webpage:
+https://sourceware.org/elfutils/
+
+libelf-0.193-r0 installed size:
+85 KiB
+
+libelf-0.193-r0 license:
+GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )
 
 ```
 
