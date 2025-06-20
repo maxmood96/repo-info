@@ -1763,14 +1763,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.1.dsc' pam_1.5.3-5ubuntu5.1.dsc 2727 SHA512:99cfdf249f5b221ac319485889fc9b5ddd9e59a4b8a6fcf93b15ac2a639ded5c5d5fc31066da7e736c97526dd6e87fe315c79b6f25cd6ebea4f63f28b8e58519
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.1.debian.tar.xz' pam_1.5.3-5ubuntu5.1.debian.tar.xz 186964 SHA512:1b43adbaf10bb64c2e318961863a18043b5209300dd2f0d52ed2cd212ce8e6887c7863a9c46959e12a4844592ef80db175340d476b76fccd0548cfc151d2cba0
-```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 
@@ -1937,14 +1932,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.6.dsc' python3.12_3.12.3-1ubuntu0.6.dsc 3875 SHA512:84e275e1b1a83bed0ce715f36763a5c73c5e056d980042f8e829e0dbb65e226d97f98ff837e37a6634e4b8ff4e13ae62686c376c25990fd149bac6fd8163206b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.6.debian.tar.xz' python3.12_3.12.3-1ubuntu0.6.debian.tar.xz 238992 SHA512:7bcb123037306fb75c7c5e3f3a882fe99fd37cb30f75791359f2430e1426777de98c801e1c8438cf5edb4cd2961f7bcbfc9f09bce9b78377e01bd9bd7cc90999
-```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 
