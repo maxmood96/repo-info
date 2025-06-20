@@ -327,14 +327,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-2ubuntu1.dsc' bash_5.2.37-2ubuntu1.dsc 2019 SHA512:9839d10f87d6e41100b86b59f3b23c33c9c4b5846b03780604c467870d637757df7a321d69a33a82a6d5c30c97a36d681f438a05206fcf2133436933d0f0a8cc
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA512:c5380301114967378ace9ae4c510564cb7a827c221470aa532f2360a35000e7719ae081151f3d2ac86dff1d1465f64e60d9202fa6657d716ed6e449f77552158
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-2ubuntu1.debian.tar.xz' bash_5.2.37-2ubuntu1.debian.tar.xz 95688 SHA512:20612b164cff7d3653e4d5d6910d6dfb6abfd24a8036db88c2b584038118b0c7101e9dbf11993ce0fea954da99592d0ef2729d675702b5cb9478d5cb199d7714
-```
 
 ### `dpkg` source package: `binutils=2.44-3ubuntu1`
 
@@ -1101,14 +1096,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.1.0-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0-5ubuntu1.dsc' gcc-15_15.1.0-5ubuntu1.dsc 52311 SHA512:70f97171465bdf940b4d712f00c4a12124dbc763b3bed7489389318c78d40eeb72c7d496e00b360d81f02d3772beb2a92e94ba16a0817cde2637a7359d013d7a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0.orig.tar.gz' gcc-15_15.1.0.orig.tar.gz 103173045 SHA512:e14a4862a9ceb5786dfccad069adab71a8872a69fbd99be4861dca17ce7a3b4deaba61f06e810865ff6831bec62fd241df6398e571b0ac97ee5e962b000128f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0-5ubuntu1.debian.tar.xz' gcc-15_15.1.0-5ubuntu1.debian.tar.xz 2452072 SHA512:d47db7e22016e1cca4288a1f78594df07f98376bae713d25fe040791c503bbdf26f47a5fed0f41dd40bda084547cfcd6da661e24d5000402c7ce069f517a9a4a
-```
 
 ### `dpkg` source package: `gcc-defaults=1.220ubuntu1`
 
@@ -1270,15 +1260,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.84.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.84.2-1.dsc' glib2.0_2.84.2-1.dsc 4925 SHA512:e072ebdc568ebba1f1ce1829c173eb12d039e2b7c7c6aae4f47ca26e129ba43fafc3a43160449c1dc219641c2691472d46c24031a4fcd6d65c872d16254a8667
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.84.2.orig-unicode-data.tar.xz' glib2.0_2.84.2.orig-unicode-data.tar.xz 660708 SHA512:09546f4f69b7b911fbde1fea66b11ae32a9e1320d2ede32cdfdd0f15843de985070edceb68b0a6bcb2477ef7b7cc298eefc261d26db5fc6b198fd67eaee35097
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.84.2.orig.tar.xz' glib2.0_2.84.2.orig.tar.xz 5617588 SHA512:430928d7d7a442fc3927ca943f2569035fe8768768a0ebc6720ae1ef152b56fc5f8d4215d21b4828cc2f39a8632c907ed2c52a0c8566da1c533a2e049a1a121f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.84.2-1.debian.tar.xz' glib2.0_2.84.2-1.debian.tar.xz 138104 SHA512:d4c90f108e9df8b45bbc047013b56e1d5f17c6b437526283b1d06649204b130396b38b0bcede4c45583ed36ce6529ef95a4d2acaed590eaaf5f90b683af4da43
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.84.2-1/
+
 
 ### `dpkg` source package: `glibc=2.41-6ubuntu2`
 
@@ -2529,14 +2517,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.dsc' libpng1.6_1.6.48-1.dsc 2254 SHA512:e78549e180b0059def83f2ae3581b5b482cca93dbec60bf76a7528ff9455f9c3e234fa91cf42e98e6c50ffa858a3987f59e38925f4373545f2f7ffcee52503ed
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA512:3a0006256abc6f23f5be1d67b201303ceaaa58ffa901f4659ad95f025b08f5e1c30d374cc251196a2ff1ee3ef4b37bd4d61c7779eabd86922d3bdd047264d9c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1.debian.tar.xz' libpng1.6_1.6.48-1.debian.tar.xz 33240 SHA512:6ddc79b0df5a4b6a6a55fa6dde51a6e68044ef74d04da2348f141cd308f331d716cc7dda4653066c90eb33f72762184f814eb830eaaeb1cbf7469a65d1c20b3a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -3763,15 +3750,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.4.1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu3.dsc' openssl_3.4.1-1ubuntu3.dsc 2943 SHA512:86749f9780600fd0d5c6cff3e27e5b6a2ec84fc326c50904b96c756eba2da20822916c140abce178606298ceb8610219eb68ed566e08eae74845c5ca8f99c9dd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1.orig.tar.gz' openssl_3.4.1.orig.tar.gz 18346056 SHA512:1de6307c587686711f05d1e96731c43526fa3af51e4cd94c06c880954b67f6eb4c7db3177f0ea5937d41bc1f8cadcf5bce75025b5c1a46a469376960f1001c5f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1.orig.tar.gz.asc' openssl_3.4.1.orig.tar.gz.asc 833 SHA512:b007d5a35a7904d5d5e053e232a54b2ba75fb43f80bf1fe2175528e86e31cca8161da09d7417b50359008ce1955497e4d11c46794f15cc7c3220aa92eff99ccb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu3.debian.tar.xz' openssl_3.4.1-1ubuntu3.debian.tar.xz 119736 SHA512:24fed727d4e7ce526d3b0f44b2052e7b4a1584d9fd85bab755761d6e27600d2d7400c7a0c8177e24a0b7c8fb2bdb6c6fd1d2bb07a893e64c61a37a50738cbecd
-```
 
 ### `dpkg` source package: `p11-kit=0.25.5-2ubuntu3`
 

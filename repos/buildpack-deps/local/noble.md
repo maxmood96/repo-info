@@ -3173,14 +3173,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-60.63
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-60.63.dsc' linux_6.8.0-60.63.dsc 9342 SHA512:cbc9efec0489fe32258015d765252d0a9a9139dc916952c030ae07bd43d728492b00767c4b17388a39b21815d8cf7b40c277a9597b23ee83fba00e9c97bd83e8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-60.63.diff.gz' linux_6.8.0-60.63.diff.gz 5273829 SHA512:6297a27e6ecbdf2b435fba9d652d92256557b93eabb55cff1ad47f74eacfa3ac25fdb75dcbda5f7d3c3e1112b2a0fa2293d17a4b923fbc751382965cef4a096b
-```
 
 ### `dpkg` source package: `lto-disabled-list=47`
 
@@ -3794,14 +3789,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.1.dsc' pam_1.5.3-5ubuntu5.1.dsc 2727 SHA512:99cfdf249f5b221ac319485889fc9b5ddd9e59a4b8a6fcf93b15ac2a639ded5c5d5fc31066da7e736c97526dd6e87fe315c79b6f25cd6ebea4f63f28b8e58519
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.1.debian.tar.xz' pam_1.5.3-5ubuntu5.1.debian.tar.xz 186964 SHA512:1b43adbaf10bb64c2e318961863a18043b5209300dd2f0d52ed2cd212ce8e6887c7863a9c46959e12a4844592ef80db175340d476b76fccd0548cfc151d2cba0
-```
 
 ### `dpkg` source package: `pango1.0=1.52.1+ds-1build1`
 

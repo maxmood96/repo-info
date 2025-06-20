@@ -3979,20 +3979,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.12.30-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.30-1.dsc' linux_6.12.30-1.dsc 206776 SHA256:e3b918a25307a28e13c7d1e69cae27a8e7d2d74b5b6610d144dd1a5e353880f4
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.30.orig.tar.xz' linux_6.12.30.orig.tar.xz 151040760 SHA256:fcec61273f10fccd7bf4812180d279f49b2c4b1e3ae620156be0b84a82d3ecec
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.30-1.debian.tar.xz' linux_6.12.30-1.debian.tar.xz 1634384 SHA256:98d0f7f32897634cf46159abfc0fc98c6ee742e3d7ca58c441b42946000fc750
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.12.30-1/
 
-- https://sources.debian.net/src/linux/6.12.30-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.30-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.30-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
