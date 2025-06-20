@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:608a965cebd204f442cad743f779520bfc86a1be816b8fbbdffda56cbcccc65d`
+- Image ID: `sha256:d4b18539784a5ad6937498b967d2bb425d9e0206428a76d8bd65a7b53d5f1397`
 - Created: `2025-05-22T14:26:26Z`
 - Virtual Size: ~ 101.30 Mb  
   (total size of all layers on-disk)
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=27.3.4`
-  - `REBAR3_VERSION=3.24.0`
+  - `REBAR3_VERSION=3.25.0`
   - `ELIXIR_VERSION=v1.18.4`
   - `LANG=C.UTF-8`
 - Labels:
