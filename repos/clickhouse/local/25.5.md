@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e032593a9b1d712a6691d4dd875ee034429aee64aee1378d602f1a05ba54c26`
-- Created: `2025-05-23T11:00:13Z`
-- Virtual Size: ~ 698.07 Mb  
+- Image ID: `sha256:37169576133d2bd56a92fc21c2e7a2505170099253126f6e3cb1f64d8130993f`
+- Created: `2025-06-20T10:04:10Z`
+- Virtual Size: ~ 691.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -239,13 +239,13 @@ $ apt-get source -qq --print-uris cdebconf=0.261ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.261ubuntu1.tar.xz' cdebconf_0.261ubuntu1.tar.xz 297016 SHA512:6c2c8e2dccdb923ae6dc6a6b3873e6a56f6bdc4a6298c0576f60cb8d5c63bd06c4b9dac4ada4abd0d672a4e54509ad558fc9d1424a8029568d8d86cb54926390
 ```
 
-### `dpkg` source package: `clickhouse=25.5.1.2782`
+### `dpkg` source package: `clickhouse=25.5.3.75`
 
 Binary Packages:
 
-- `clickhouse-client=25.5.1.2782`
-- `clickhouse-common-static=25.5.1.2782`
-- `clickhouse-server=25.5.1.2782`
+- `clickhouse-client=25.5.3.75`
+- `clickhouse-common-static=25.5.3.75`
+- `clickhouse-server=25.5.3.75`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1273,14 +1273,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.5.dsc' pam_1.4.0-11ubuntu2.5.dsc 2757 SHA512:b58735f6cad6c7378b8e1e536e0b3ab718a4ab505e00f51d91dcacda6dadba53306b91d8d4c1d1b972d3e8a8e0207b2223ce0ca11bfe6776c7d66656377e0ad1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.5.debian.tar.xz' pam_1.4.0-11ubuntu2.5.debian.tar.xz 169436 SHA512:c34afffee9b54c32f220ef870f4476144353c341a5e1d1434bbca351e792c6b516e42b323977e3f7f2f6b2e33d8bd725a48df686b0456d82204801f49397c07d
-```
 
 ### `dpkg` source package: `pcre2=10.39-3ubuntu0.1`
 
