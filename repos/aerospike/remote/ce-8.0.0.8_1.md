@@ -103,11 +103,11 @@ $ docker pull aerospike@sha256:bafdeeb553c8f2c1c18d20cc198af14e1699d0ba6b7a46184
 
 -	Layers:
 	-	`sha256:a7e661e3fe13c6117bbbb427ccb06d86bc1085648f2efaf2ce1e3da5055088ac`  
-		Last Modified: Tue, 03 Jun 2025 04:15:52 GMT  
+		Last Modified: Mon, 23 Jun 2025 17:59:21 GMT  
 		Size: 2.1 MB (2086500 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9b871d57d58eb6309f2778166a4448e12388642f6b06bc343faf65d821402ca4`  
-		Last Modified: Tue, 03 Jun 2025 04:15:52 GMT  
+		Last Modified: Mon, 23 Jun 2025 17:59:20 GMT  
 		Size: 29.0 KB (29012 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -203,10 +203,10 @@ $ docker pull aerospike@sha256:986b2a6e7aa307fb4863eb19f709d3057bff11d82bad48306
 
 -	Layers:
 	-	`sha256:d82798334177ab425882bf931af03ed088f7100da7653a1b16e99637024aff77`  
-		Last Modified: Tue, 03 Jun 2025 04:16:27 GMT  
+		Last Modified: Mon, 23 Jun 2025 17:59:42 GMT  
 		Size: 2.1 MB (2088780 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7938c1abe8c9ce658ab0d452c7250486057f27a1a2b281674a62412bb8551158`  
-		Last Modified: Tue, 03 Jun 2025 04:16:27 GMT  
+		Last Modified: Mon, 23 Jun 2025 17:59:42 GMT  
 		Size: 29.1 KB (29092 bytes)  
 		MIME: application/vnd.in-toto+json
