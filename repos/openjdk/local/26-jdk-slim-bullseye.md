@@ -1,10 +1,10 @@
-# `openjdk:26-ea-2-jdk-slim-bullseye`
+# `openjdk:26-ea-3-jdk-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cde9eeb8a956de10db3d874237f06ebc4034e4836f1f77f7c5ab7d89e691284d`
-- Created: `2025-06-14T00:54:06Z`
-- Virtual Size: ~ 484.04 Mb  
+- Image ID: `sha256:1034ab61b7fc699faa6275c2a4006bdd614a2055b734e6b9d8d040857df7cc0e`
+- Created: `2025-06-20T18:54:20Z`
+- Virtual Size: ~ 484.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+2`
+  - `JAVA_VERSION=26-ea+3`
 
 ## `dpkg` (`.deb`-based packages)
 
