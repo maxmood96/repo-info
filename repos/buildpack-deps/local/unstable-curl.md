@@ -397,21 +397,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.14.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-1.dsc' curl_8.14.1-1.dsc 3231 SHA256:208f5b279d81aacbfbe3da40df2e2b77230b978de4701aab2551e69ebdef1490
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-1.debian.tar.xz' curl_8.14.1-1.debian.tar.xz 50532 SHA256:a6213584f4f185f58cdc412544da3b35829202542251c03b6425af6e0c2f30a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.14.1-1/
 
-- https://sources.debian.net/src/curl/8.14.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.14.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.14.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -687,21 +679,13 @@ Licenses: (parsed from: `/usr/share/doc/libcom-err2/copyright`)
 - `Latex2e`
 - `MIT-US-export`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.47.2-2
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-2.dsc' e2fsprogs_1.47.2-2.dsc 3035 SHA256:489ec3e7cd420d6359d0772dc1a87402542583029d70c5e7537d46bc20957903
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz' e2fsprogs_1.47.2.orig.tar.gz 9996725 SHA256:6dcd67ff9d8b13274ba3f088e4318be4f5b71412cd863524423fc49d39a6371f
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2.orig.tar.gz.asc' e2fsprogs_1.47.2.orig.tar.gz.asc 488 SHA256:2063f62a198dd3df21f789c990c2cf9b4a5de24ed55f0b78d86e97e98daffc9d
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.47.2-2.debian.tar.xz' e2fsprogs_1.47.2-2.debian.tar.xz 103720 SHA256:0b0b64486d9a3b0c82f46f4d709de7c81a2c36431a14e4fdd14aed496c0ad44e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.47.2-2/
 
-- https://sources.debian.net/src/e2fsprogs/1.47.2-2/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.47.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.47.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 

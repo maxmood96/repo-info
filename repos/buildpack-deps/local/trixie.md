@@ -1489,20 +1489,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.47.2-0.1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.2-0.1.dsc' git_2.47.2-0.1.dsc 2832 SHA256:0ff8e1ffeb1471f012ee2b93bcf21ceb2776abd88b1e9a171771f94d13eecde6
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.2.orig.tar.xz' git_2.47.2.orig.tar.xz 7655652 SHA256:b19268be6b6f1556b47a9dd834272e167d3a75740cdcd283cf3812edffe3930f
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.2-0.1.debian.tar.xz' git_2.47.2-0.1.debian.tar.xz 792848 SHA256:a183a1a1edd7190b6c6836f62a98662d1d2228a8b16ddd8163c29101b4342482
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.47.2-0.1/
 
-- https://sources.debian.net/src/git/1:2.47.2-0.1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.47.2-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.47.2-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.84.2-1`
 
@@ -1548,21 +1541,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.84.2-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2-1.dsc' glib2.0_2.84.2-1.dsc 4925 SHA256:0cbbc89ce6d96d53ba39169200e41dab230cd9e89850f7256b5df76cfe9339f8
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2.orig-unicode-data.tar.xz' glib2.0_2.84.2.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2.orig.tar.xz' glib2.0_2.84.2.orig.tar.xz 5617588 SHA256:88e960dd937057407d61fcb3b45a860704b25923c37ae2478b85f2ecb5a4021f
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.2-1.debian.tar.xz' glib2.0_2.84.2-1.debian.tar.xz 138104 SHA256:5561d182b3c1aee1157391a4844bbb9f353d967eb2b91c6bbd3138b1b8701e2b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.84.2-1/
 
-- https://sources.debian.net/src/glib2.0/2.84.2-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.84.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.84.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-8`
 
