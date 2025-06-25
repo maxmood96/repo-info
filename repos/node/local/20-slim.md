@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7c6259cce420b30d3993cf5bb599690239f497ea41fccab48d3926d82a98373`
-- Created: `2025-05-15T01:33:08Z`
-- Virtual Size: ~ 200.85 Mb  
+- Image ID: `sha256:e48a0a3bdd92c3e612071f975b240c26e52625cffdb3d824b9e59287863d16e5`
+- Created: `2025-06-23T10:06:16Z`
+- Virtual Size: ~ 200.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=20.19.2`
+  - `NODE_VERSION=20.19.3`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
