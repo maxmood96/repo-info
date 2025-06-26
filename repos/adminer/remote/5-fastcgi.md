@@ -1,7 +1,7 @@
 ## `adminer:5-fastcgi`
 
 ```console
-$ docker pull adminer@sha256:8fd3ac1d41915d913d7c9d3c2f0af57e967e10a9c0526eefc5a8fa79758d6908
+$ docker pull adminer@sha256:57ebcc6da8e855c69485f85a749811f433e7e012068f0548a7f7edfb6dfcee94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1142,13 +1142,13 @@ $ docker pull adminer@sha256:e78e715f17c4ba7a78d19d0a043200589c378e79f315fd76413
 ### `adminer:5-fastcgi` - linux; riscv64
 
 ```console
-$ docker pull adminer@sha256:e056504be9d3874721bfa0fcce479b8bb70357b0dc9a4a8b9751b68e0e507eb0
+$ docker pull adminer@sha256:ddda49986cc1bb4b9cb204ef6325ed0ff5e1e9446216e37100d1fe725f12389e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.3 MB (40345220 bytes)**  
+-	Total Size: **40.4 MB (40366636 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8228e12b5dbf246a499a6a1f9867a15689c1b578cb3fbbbf08a6d3bf9789249f`
+-	Image ID: `sha256:fa5b747848fd1d5eb58e0f90ade3df27dfeb6e4b1e1b27cf00dedf8cffd85abe`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1189,6 +1189,8 @@ COPY docker-php-source /usr/local/bin/ # buildkit
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
 # Sat, 17 May 2025 11:19:45 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Sat, 17 May 2025 11:19:45 GMT
+RUN docker-php-ext-enable opcache # buildkit
 # Sat, 17 May 2025 11:19:45 GMT
 RUN docker-php-ext-enable sodium # buildkit
 # Sat, 17 May 2025 11:19:45 GMT
@@ -1258,65 +1260,69 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 11 Jun 2025 03:32:54 GMT  
 		Size: 15.1 MB (15111627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5680550dafa433ef13a31340347ca358c20955f90fb9d34e4f905236721fc119`  
-		Last Modified: Wed, 11 Jun 2025 03:32:52 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:b00a8dc5b36f0026ce8b81a353bc7c01fc0f258dbfeb50ac19aa01b84f63941b`  
+		Last Modified: Wed, 25 Jun 2025 19:33:37 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e735e6aa6f16d6212a39c6bef86dc04b6f4ff72a1f76bd74293a8071eaf8f4d1`  
-		Last Modified: Wed, 11 Jun 2025 03:37:47 GMT  
-		Size: 20.0 KB (19991 bytes)  
+	-	`sha256:b9209a0f9e83af953019700fe221986953e41a70e00a49697f5716dea0efde8c`  
+		Last Modified: Wed, 25 Jun 2025 19:33:49 GMT  
+		Size: 20.0 KB (20002 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e50d114926a688f05050344cf6700420ec5beb621c3b0e7b9fe331d9cb33794b`  
+		Last Modified: Wed, 25 Jun 2025 19:33:54 GMT  
+		Size: 20.0 KB (20000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdd62d8ea2f454c60af6403e1ed3e7c3b74a95c292a6653e913cd613d2489e39`  
-		Last Modified: Wed, 11 Jun 2025 03:37:53 GMT  
-		Size: 9.2 KB (9197 bytes)  
+	-	`sha256:5e64f0047a8c01d9742f79c41b4d2930f4d9b1792b7b7c1322c2f3110333a69f`  
+		Last Modified: Wed, 25 Jun 2025 19:34:06 GMT  
+		Size: 9.2 KB (9199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9519614dad1da9a0c12d30fffe2ad43dbcc459bb1d87259f9582f8f06bfe2ac3`  
-		Last Modified: Wed, 11 Jun 2025 14:03:04 GMT  
-		Size: 307.0 B  
+	-	`sha256:8eb480fc1b72c3d2f6115f22e03e8e28d74960b57b412363d118e094da7bfd5e`  
+		Last Modified: Thu, 26 Jun 2025 09:15:17 GMT  
+		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73b3bd80df3832fac98206fcdef79036960e5858ab23f09edd6b2d40ba44ac3f`  
-		Last Modified: Wed, 11 Jun 2025 14:03:04 GMT  
-		Size: 1.0 KB (1040 bytes)  
+	-	`sha256:7c5cb23ced9ab23104586f41772ff96f6bfda76b3b2687e8db2a73e607efe3f8`  
+		Last Modified: Thu, 26 Jun 2025 09:15:19 GMT  
+		Size: 1.0 KB (1043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:372828a9db95f27faa34db305cd4b3f2a7a1bf5038d36292e81cb0201bace7b8`  
-		Last Modified: Wed, 11 Jun 2025 14:03:05 GMT  
-		Size: 3.8 MB (3804359 bytes)  
+	-	`sha256:26d3aa73f64bccfe53bea1f13a488978c314974f17ffc7d24fa324f1ddcf4ff1`  
+		Last Modified: Thu, 26 Jun 2025 09:15:24 GMT  
+		Size: 3.8 MB (3805753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:214d65864ab11bf54fc7805fa77b66e1da844a5bd2ab7d6962842a7aa752c3d2`  
-		Last Modified: Wed, 11 Jun 2025 14:03:04 GMT  
-		Size: 1.7 KB (1705 bytes)  
+	-	`sha256:8fe4d460e5ec9dadbc24ee6db56563e4a5ce0ae1ea9ee70e9dc043041bfcd827`  
+		Last Modified: Thu, 26 Jun 2025 09:15:30 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c961ab235c7a09607ba44054fcef8430f19f1dbaf0ab45dd7f24321f6ba0b3f`  
-		Last Modified: Wed, 11 Jun 2025 14:03:04 GMT  
-		Size: 634.7 KB (634707 bytes)  
+	-	`sha256:3fe3b3fc646f4a641b25707ace24feba32c8ee7f2ecca135823024ac0abe101b`  
+		Last Modified: Thu, 26 Jun 2025 09:15:34 GMT  
+		Size: 634.7 KB (634704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e408bfced29c1c23e7c77063e81103575547dd2298539e7890db48b501c5f45e`  
-		Last Modified: Wed, 11 Jun 2025 14:03:04 GMT  
-		Size: 494.0 B  
+	-	`sha256:690cdc6cf9b4e035d2d6f0390889686effbc3da1f3e3ff84ab3975713c76f4fa`  
+		Last Modified: Thu, 26 Jun 2025 09:15:46 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `adminer:5-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:b79980abcb854a559237738ef5a5a09600c3834c0eb09ee1984b06c9929e3302
+$ docker pull adminer@sha256:e5d610507d49b571a65f5c1ca754a9acc447a5f3b5bb79c2c076ec0148f4efe0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 KB (32966 bytes)**  
+-	Total Size: **34.1 KB (34059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16524793b045d8ecad4c1797a48be0c1e292d3b7acc6b3fe38c7c47c44479e45`
+-	Image ID: `sha256:27f0e0763b6452988367aee1588c2777121ad92f64374e8910e6477b14828ff6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3df51c22d0ffb03bcbbf6da9c390b68cf318665ce22f0d7e8fa694a49f11052b`  
-		Last Modified: Wed, 11 Jun 2025 15:49:19 GMT  
-		Size: 33.0 KB (32966 bytes)  
+	-	`sha256:f712cedfcbdef9573869bc905beb5a33e95169d6a16ed5b86c7e080bc95aea19`  
+		Last Modified: Thu, 26 Jun 2025 09:48:59 GMT  
+		Size: 34.1 KB (34059 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `adminer:5-fastcgi` - linux; s390x
