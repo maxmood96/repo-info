@@ -1,10 +1,10 @@
-# `drupal:11.2.0-php8.4-fpm-bullseye`
+# `drupal:11.2.1-php8.4-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd43832386e5fcc2c9ec93d8117abad9634a1769bf8c3e0cf41ee2c616d06854`
-- Created: `2025-06-20T18:38:37Z`
-- Virtual Size: ~ 556.89 Mb  
+- Image ID: `sha256:4698869d506e8bdf77293ab0ea7814adb36749d617dc5f2d833f184279c23aec`
+- Created: `2025-06-25T15:27:26Z`
+- Virtual Size: ~ 556.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.8.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.8.tar.xz.asc`
   - `PHP_SHA256=aa6a4d330b47eacd83e351658ba8c47747a1e4356456219cfb6d75e7838da091`
-  - `DRUPAL_VERSION=11.2.0`
+  - `DRUPAL_VERSION=11.2.1`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -463,12 +463,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u14`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u15`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u14`
-- `libcurl4:amd64=7.74.0-1.3+deb11u14`
+- `curl=7.74.0-1.3+deb11u15`
+- `libcurl4:amd64=7.74.0-1.3+deb11u15`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -479,13 +479,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u15
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u15.dsc' curl_7.74.0-1.3+deb11u15.dsc 2703 SHA256:6357ca6704bec1b8a690dd5396d910422ffd0f42e6a6bf62aaf1dca7999fd85a
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u15.debian.tar.xz' curl_7.74.0-1.3+deb11u15.debian.tar.xz 78740 SHA256:2c4b3ead4123f8a91cf80321f90c85fa8059c5eecb5b1999f15708744d67925a
+```
 
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u14/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u15/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -1208,11 +1215,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.23/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.23/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=67.1-7`
+### `dpkg` source package: `icu=67.1-7+deb11u1`
 
 Binary Packages:
 
-- `libicu67:amd64=67.1-7`
+- `libicu67:amd64=67.1-7+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1221,18 +1228,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=67.1-7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1-7.dsc' icu_67.1-7.dsc 2236 SHA256:3213915e2b2b07ab1d5fe81ba4e310d8146c0a799fd65ac1f1dbb0c32f56cff1
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1.orig.tar.gz' icu_67.1.orig.tar.gz 24518055 SHA256:94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1.orig.tar.gz.asc' icu_67.1.orig.tar.gz.asc 833 SHA256:0044119f3df92ff3055dc3609f527fa1290177f6ef1b6650ea136698b245e537
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1-7.debian.tar.xz' icu_67.1-7.debian.tar.xz 30256 SHA256:9836cbc00bf8da459734c82ccd435d09674e85e268f272decf16dbfa0bda730e
+$ apt-get source -qq --print-uris icu=67.1-7+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1-7%2bdeb11u1.dsc' icu_67.1-7+deb11u1.dsc 2268 SHA256:44d7e93588f1ed688fe8eb5c992de8cde052bb7310c3cc0e97481768e04946ba
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1.orig.tar.gz' icu_67.1.orig.tar.gz 24518055 SHA256:94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1.orig.tar.gz.asc' icu_67.1.orig.tar.gz.asc 833 SHA256:0044119f3df92ff3055dc3609f527fa1290177f6ef1b6650ea136698b245e537
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1-7%2bdeb11u1.debian.tar.xz' icu_67.1-7+deb11u1.debian.tar.xz 31584 SHA256:83585ac0f3f8bceee980d5ff9e0c64a9fa6d67dddefb7261f9e723f0b11889c7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/67.1-7/ (for browsing the source)
-- https://sources.debian.net/src/icu/67.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/67.1-7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/67.1-7+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/icu/67.1-7+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/67.1-7+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.60`
 
