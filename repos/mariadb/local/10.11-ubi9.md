@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4b9defcec1b94a58ac2458b6c223a76fa05781d1865244f7eb2dfdbacb1e8e3`
+- Image ID: `sha256:dd4c309da5670af86d1a9abdb7d88efd41e0b6352d3c6d185cc5c157eb80c83f`
 - Created: `2025-05-21T23:31:53Z`
-- Virtual Size: ~ 468.40 Mb  
+- Virtual Size: ~ 468.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.13`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-06-09T17:19:15`
+  - `build-date=2025-06-24T16:31:57`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=7e18551b8a7ac3e7aa6347d84b9f0b5c8cc8fe52`
+  - `vcs-ref=69e50e2a07c936e700297091886db408257a857c`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.13`
@@ -243,15 +243,15 @@ $ dnf --quiet download --source --url dnf-data-4.14.0-25.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dnf-4.14.0-25.el9.src.rpm
 ```
 
-### `rpm` package: `elfutils-libelf-0.192-5.el9.x86_64`
+### `rpm` package: `elfutils-libelf-0.192-6.el9_6.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libelf-0.192-5.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.192-5.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-libelf-0.192-6.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.192-6.el9_6.src.rpm
 ```
 
 ### `rpm` package: `epel-release-9-10.el9.noarch`
@@ -262,7 +262,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -512,7 +512,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -548,15 +548,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.6.3-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/keyutils-1.6.3-1.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-6.el9.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-8.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-6.el9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.21.1-8.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-8.el9_6.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
@@ -614,15 +614,15 @@ $ dnf --quiet download --source --url libaio-0.3.111-13.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libaio-0.3.111-13.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-4.el9.x86_64`
+### `rpm` package: `libarchive-3.5.3-5.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-4.el9.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-5.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-5.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -713,15 +713,15 @@ $ dnf --quiet download --source --url libcurl-minimal-7.76.1-31.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-31.el9.src.rpm
 ```
 
-### `rpm` package: `libdb-5.3.28-55.el9.x86_64`
+### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libdb-5.3.28-55.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdb-5.3.28-55.el9.src.rpm
+$ dnf --quiet download --source --url libdb-5.3.28-57.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdb-5.3.28-57.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libdnf-0.69.0-13.el9.x86_64`
@@ -1318,15 +1318,15 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-23.el9.x86_64`
+### `rpm` package: `pam-1.5.1-25.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-23.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-23.el9.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-25.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-25.el9_6.src.rpm
 ```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
@@ -2096,7 +2096,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2107,7 +2107,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://epel.mirror.shastacoe.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2231,15 +2231,15 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-7.el9_3.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-51.el9.x86_64`
+### `rpm` package: `systemd-libs-252-51.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-51.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-51.el9.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-51.el9_6.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-51.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
