@@ -1,10 +1,10 @@
-# `alt:p10`
+# `alt:p11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ea43cfc79fff28924b868d618a6c6031086c4d58fabcbd16065e805a37c41f0`
-- Created: `2025-03-31T10:20:09Z`
-- Virtual Size: ~ 131.83 Mb  
+- Image ID: `sha256:97c70e35e5754c99e2739a341746ab94e4f118e9c63ceaba806e369af80075e9`
+- Created: `2025-06-25T09:58:55Z`
+- Virtual Size: ~ 121.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
