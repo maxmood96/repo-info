@@ -1,7 +1,7 @@
 ## `gradle:jdk11-ubi`
 
 ```console
-$ docker pull gradle@sha256:e9ca0caaf4622971b437b57482311e3aaf4ec981a1c333e2201844faefb32335
+$ docker pull gradle@sha256:e8311e8845fb00a37c7acf18e501401a8cbc694669a17c9f0ae974688033c416
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -307,7 +307,7 @@ USER root
 		Size: 36.2 MB (36236953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d25a86db5e91b7f7b75e18057708dd575b1be1894e77aa8f4c0541e6bfd9c30b`  
-		Last Modified: Thu, 26 Jun 2025 00:54:21 GMT  
+		Last Modified: Thu, 26 Jun 2025 03:47:39 GMT  
 		Size: 137.4 MB (137395508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eade893c9978f0ad92be89ca316e259212e6236ec7e7de0c5c21546d8855b4ce`  
@@ -445,7 +445,7 @@ USER root
 		Size: 30.0 MB (29977285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71d3b24184a977b82ed5f88228fb50d6068d8eaa40fd8a8ee0282e3c0aff0344`  
-		Last Modified: Wed, 25 Jun 2025 17:56:36 GMT  
+		Last Modified: Thu, 26 Jun 2025 04:48:11 GMT  
 		Size: 129.3 MB (129314593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d0286d59311a2e9797206b04995664b2eb5a92010d02e8cbf2fe8c1d28c7a6e`  
@@ -504,13 +504,13 @@ $ docker pull gradle@sha256:6535b629e47d049070fdaed0407716d302d6e80310518df4f5f2
 ### `gradle:jdk11-ubi` - linux; s390x
 
 ```console
-$ docker pull gradle@sha256:7a9bb1122741c3b77ac473c0e2613db14435a455c64da09cbabd20af6b8adf72
+$ docker pull gradle@sha256:7b540f766c27b0ced40aea847a55f4e756f005cd7d860c31a39d7c06485472c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **361.2 MB (361237987 bytes)**  
+-	Total Size: **361.2 MB (361212867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9008c4ae61961d038085e6cea667676fb0aaa2573eadf6fb7e980f0bf5e9b81`
+-	Image ID: `sha256:95afbf2d184c89b518b304efe674782b9a4766a3c06b4323cc2be185ae7d6cc4`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -540,7 +540,7 @@ LABEL io.openshift.tags="minimal rhel9"
 # Wed, 23 Apr 2025 14:48:05 GMT
 ENV container oci
 # Wed, 23 Apr 2025 14:48:05 GMT
-COPY dir:ff1950397341678dc033f4e988cd6b69c89c25529034b9cdafc108775faea49a in / 
+COPY dir:e2a83cbb368dbfe11a6a9aa86493d965978673a0761d29b05526a8733ebbd9fe in / 
 # Wed, 23 Apr 2025 14:48:05 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Wed, 23 Apr 2025 14:48:05 GMT
@@ -548,7 +548,7 @@ CMD ["/bin/bash"]
 # Wed, 23 Apr 2025 14:48:05 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
 # Wed, 23 Apr 2025 14:48:05 GMT
-LABEL "build-date"="2025-06-09T17:34:51" "architecture"="s390x" "vcs-type"="git" "vcs-ref"="7e18551b8a7ac3e7aa6347d84b9f0b5c8cc8fe52" "release"="1749489516"
+LABEL "build-date"="2025-06-24T16:41:50" "architecture"="s390x" "vcs-type"="git" "vcs-ref"="69e50e2a07c936e700297091886db408257a857c" "release"="1750782676"
 # Wed, 23 Apr 2025 14:48:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
 # Wed, 23 Apr 2025 14:48:05 GMT
@@ -598,67 +598,67 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:5daaf2786e383a229ed40c585efaa651974920d655fa2956da851642e2f4439a`  
-		Last Modified: Mon, 09 Jun 2025 18:09:36 GMT  
-		Size: 37.7 MB (37746560 bytes)  
+	-	`sha256:f5839fc3095af9677cbac70df8d81adaddb0cf690ee35af534232f47f1449bd8`  
+		Last Modified: Tue, 24 Jun 2025 18:09:23 GMT  
+		Size: 37.8 MB (37768319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1f097232bdaa82e51d9ad6dab4bedd9d1f75a092afe82c21bd7734fdcadb58e`  
-		Last Modified: Tue, 10 Jun 2025 17:35:57 GMT  
-		Size: 27.6 MB (27617003 bytes)  
+	-	`sha256:1bfe069ac18f73c671841436ed32519261fd79e710a8c71be693f33a3b369ac5`  
+		Last Modified: Wed, 25 Jun 2025 19:02:00 GMT  
+		Size: 27.6 MB (27580403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19c7dc3c8856dba6168905add6ea0419830167247703b27b0f146fd4c2a2d2b1`  
-		Last Modified: Tue, 10 Jun 2025 17:36:11 GMT  
-		Size: 122.0 MB (121994593 bytes)  
+	-	`sha256:38ffc083546a677e4b337dec8d5d00d0d0114df9a41f10b792329eedceb066d2`  
+		Last Modified: Thu, 26 Jun 2025 02:08:46 GMT  
+		Size: 122.0 MB (121994607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b50cad6cc00e1764244d0a5d274bee294d49e1f4e884c0e77c87a212234a718`  
-		Last Modified: Tue, 10 Jun 2025 17:35:55 GMT  
+	-	`sha256:f2b0596a6104a267ae35583c08bea5797778191dfb1cc43d99aaf472a04d5896`  
+		Last Modified: Thu, 26 Jun 2025 02:08:27 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9df9a8ec9b8b6839331d8cbd5620d580b1c3b29fcb038e1159a57c78f5ace93c`  
-		Last Modified: Tue, 10 Jun 2025 17:35:56 GMT  
-		Size: 2.3 KB (2289 bytes)  
+	-	`sha256:1196ce960c0e5ce79306378fe73171a7ec3c7b655ab510e59a7767cf01983359`  
+		Last Modified: Thu, 26 Jun 2025 02:08:27 GMT  
+		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b7c5ad74d3c8fd3fe35f453bb1b4dbbcc456b1568e91c5715e1f0dff03a8ce9`  
-		Last Modified: Tue, 10 Jun 2025 17:51:19 GMT  
+	-	`sha256:bc176961e50be471eb19a39527ddaa4dacee9faabf7e76b2e6a1420681d83685`  
+		Last Modified: Thu, 26 Jun 2025 05:59:33 GMT  
 		Size: 1.7 KB (1711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c9771fec70ed3bf8c4cc25716220111b6a9c4c003efa1ff0e72c84080f2e9aa`  
-		Last Modified: Tue, 10 Jun 2025 17:51:31 GMT  
-		Size: 36.4 MB (36445146 bytes)  
+	-	`sha256:ceb04d96fac5e4de6c82780c2f4232880ea42cd09827a8bfdbf4d277d818693a`  
+		Last Modified: Thu, 26 Jun 2025 05:59:38 GMT  
+		Size: 36.4 MB (36434859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e3b2aec6d382ba773d14cdd9a0b13e43a2e391e0a86d7ea766cf5b29702b4d5`  
-		Last Modified: Tue, 10 Jun 2025 17:51:05 GMT  
-		Size: 137.4 MB (137395512 bytes)  
+	-	`sha256:f3c9378230633b30180eb8c63da21b2999e6da6e5086ba1c26d34eb3456ab32e`  
+		Last Modified: Thu, 26 Jun 2025 05:59:26 GMT  
+		Size: 137.4 MB (137395509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e61c5f2be9c006a7585a76bba403a921db87beb4fa2fead7f465fbd7dbe7f2b`  
-		Last Modified: Tue, 10 Jun 2025 17:51:21 GMT  
-		Size: 35.0 KB (35013 bytes)  
+	-	`sha256:dfd5fe256c1858d371487805b6764f5cde80dccb15537673ceb31f33fe4bf37d`  
+		Last Modified: Thu, 26 Jun 2025 05:59:33 GMT  
+		Size: 35.0 KB (35009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:jdk11-ubi` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:42d7689119494f72e0ed8b7d4db69157b2e22875f78981075258919b2c7fd658
+$ docker pull gradle@sha256:ba8633a149d3f509149de48c58eb1960b6d58583ac59f9739c46eaeb99cac35b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5409104 bytes)**  
+-	Total Size: **5.4 MB (5409187 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84a5bc8d1804c872dc5172ea63c2bf193f5d9fc2f39782092aef4d179ed48d69`
+-	Image ID: `sha256:2113d4e99657092dfe696adc43f7d85bb599d3c62dbd8d8e5649df401cd4359d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b4ef7b5923be9040596e02b7e5fe082e804f3e1d86cc34114ae4dd9c7d9c5e89`  
-		Last Modified: Tue, 10 Jun 2025 20:21:19 GMT  
-		Size: 5.4 MB (5384826 bytes)  
+	-	`sha256:a4eab82fd18f424f4ddb1eb0c34488b6d12317d3e14a5ea5bb14d7021ec329b6`  
+		Last Modified: Thu, 26 Jun 2025 08:19:54 GMT  
+		Size: 5.4 MB (5384910 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:70c77a96a09aceef7da9b10c2dbb68eb399efa4f19781c5ce386207a7cb674a0`  
-		Last Modified: Tue, 10 Jun 2025 20:21:20 GMT  
-		Size: 24.3 KB (24278 bytes)  
+	-	`sha256:74d2ab8c0ccaf1f55775ab3a5924756026547656ad2c80725cb29e7afc14a989`  
+		Last Modified: Thu, 26 Jun 2025 08:19:54 GMT  
+		Size: 24.3 KB (24277 bytes)  
 		MIME: application/vnd.in-toto+json
