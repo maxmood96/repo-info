@@ -1086,14 +1086,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu5.dsc' pam_1.5.3-7ubuntu5.dsc 2545 SHA512:985165cdc05da579dc435f9a90622af42c0b4efbb1700e2ac3d95a98feb935632bebfe14ea0bfcec2c83d9a574193b50d763bc1f9381464422a2858d1eb0fd9e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu5.debian.tar.xz' pam_1.5.3-7ubuntu5.debian.tar.xz 186536 SHA512:bb653bbe1bef33efcff361dfe62c6937475ff8a4aeca270171e78f47e6083e1804fc03182bfbd3b32d3ef4054214b46f1f8b7af818c1c8cfe1eba8e34406fd77
-```
 
 ### `dpkg` source package: `pcre2=10.45-1`
 
