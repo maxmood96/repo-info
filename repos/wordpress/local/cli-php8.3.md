@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c8ded7776350be99eb4523e90cf71837a93f9f193bed667145584b4115245277`
+- Image ID: `sha256:e3d87750522569a378194627d81fbc75ed1a353110b00241d234b8acb2456be9`
 - Created: `2025-05-07T07:03:15Z`
-- Virtual Size: ~ 195.83 Mb  
+- Virtual Size: ~ 195.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -438,16 +438,16 @@ MIT
 ### `apk` package: `less`
 
 ```console
-less-678-r0 description:
+less-679-r0 description:
 File pager
 
-less-678-r0 webpage:
+less-679-r0 webpage:
 https://www.greenwoodsoftware.com/less/
 
-less-678-r0 installed size:
+less-679-r0 installed size:
 223 KiB
 
-less-678-r0 license:
+less-679-r0 license:
 GPL-3.0-or-later OR BSD-2-Clause
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51ef5cfe6422eef80e1429a37f82648fe9124fb34bb906123a6a47d8525bff2b`
+- Image ID: `sha256:a4a444e97e342cffc07c67369d7a72043286987c65f8e2bb8c455bfdf8143548`
 - Created: `2025-04-30T19:42:17Z`
-- Virtual Size: ~ 268.20 Mb  
+- Virtual Size: ~ 268.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -248,16 +248,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.3-r0 description:
+c-ares-1.34.5-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.3-r0 webpage:
+c-ares-1.34.5-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.3-r0 installed size:
-229 KiB
+c-ares-1.34.5-r0 installed size:
+233 KiB
 
-c-ares-1.34.3-r0 license:
+c-ares-1.34.5-r0 license:
 MIT
 
 ```
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -401,16 +401,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.04.0-r0 description:
+ghostscript-10.05.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.04.0-r0 webpage:
+ghostscript-10.05.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.04.0-r0 installed size:
-60 MiB
+ghostscript-10.05.1-r0 installed size:
+61 MiB
 
-ghostscript-10.04.0-r0 license:
+ghostscript-10.05.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -707,16 +707,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -803,6 +803,23 @@ libgomp-14.2.0-r4 installed size:
 
 libgomp-14.2.0-r4 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libice`
+
+```console
+libice-1.1.1-r6 description:
+X11 Inter-Client Exchange library
+
+libice-1.1.1-r6 webpage:
+https://xorg.freedesktop.org/
+
+libice-1.1.1-r6 installed size:
+86 KiB
+
+libice-1.1.1-r6 license:
+X11
 
 ```
 
@@ -959,6 +976,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libsm`
+
+```console
+libsm-1.2.4-r4 description:
+X11 Session Management library
+
+libsm-1.2.4-r4 webpage:
+https://xorg.freedesktop.org/
+
+libsm-1.2.4-r4 installed size:
+33 KiB
+
+libsm-1.2.4-r4 license:
+MIT
+
+```
+
 ### `apk` package: `libsodium`
 
 ```console
@@ -1041,6 +1075,23 @@ libunistring-1.2-r0 installed size:
 
 libunistring-1.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `libuuid`
+
+```console
+libuuid-2.40.4-r1 description:
+DCE compatible Universally Unique Identifier library
+
+libuuid-2.40.4-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libuuid-2.40.4-r1 installed size:
+29 KiB
+
+libuuid-2.40.4-r1 license:
+BSD-3-Clause
 
 ```
 
@@ -1183,16 +1234,33 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
+MIT
+
+```
+
+### `apk` package: `libxt`
+
+```console
+libxt-1.3.1-r0 description:
+X11 toolkit intrinsics library
+
+libxt-1.3.1-r0 webpage:
+https://xorg.freedesktop.org/
+
+libxt-1.3.1-r0 installed size:
+347 KiB
+
+libxt-1.3.1-r0 license:
 MIT
 
 ```
@@ -1404,16 +1472,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r0 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r0 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r0 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r0 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```
