@@ -3184,14 +3184,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.11.0-26.26
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0-26.26.dsc' linux_6.11.0-26.26.dsc 8752 SHA512:5c920a5a2db059b9a6ef9ab27a723a2968a3d110d040716e57b3ad6ae12c75e7f11ef2b7236ef5c917b7ce5bf15923f274e6222cbaf8437bd82590bcb34f6513
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0.orig.tar.gz' linux_6.11.0.orig.tar.gz 238316413 SHA512:3bde6385b17f326180c78de6afc98425b60a19dbdfcebf4cc4dd42cae8b99a696ab3537a78d81df25b484bb30bc260ac6132e86d61f28c4032672b308b36e546
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.11.0-26.26.diff.gz' linux_6.11.0-26.26.diff.gz 3585252 SHA512:c278cb685083abd2aefbff201cfa7b50bfd49ddfdd9a6cb7020aef290565f472c48a9384043cace87b73c91c48f1dbf6b81a6f4e1be52e12cb3faa06da8b8cc6
-```
 
 ### `dpkg` source package: `lto-disabled-list=53`
 
