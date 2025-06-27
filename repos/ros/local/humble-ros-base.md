@@ -1668,15 +1668,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.6.0-1ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.4.dsc' libarchive_3.6.0-1ubuntu1.4.dsc 2623 SHA512:68a15caa880c1d46b21655b3dcfe5d5ad8f44fb0ca95167d6da091506fb9c0b2923392d31711f4a97bd3270d52ac890523081cd7832349ee3ce79ae3aef0db89
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz' libarchive_3.6.0.orig.tar.xz 6400620 SHA512:eeffec08a632cdf55d46b0f4b8261de20128163c39f63422aa5af081c9c5159a9445bca5f89ebaff984d9d5387b5c6901166949df09a2e46fe5adec31bfad0e5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz.asc' libarchive_3.6.0.orig.tar.xz.asc 833 SHA512:be03f9376eaafa77379ccbbc396602039ba7ac79bf496a5a7f60c847296b8425579d267dc6a96a23c07a65a1a8a8d1cc77fae6deb9dcd3fc2bdfa259b623a8d0
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.4.debian.tar.xz' libarchive_3.6.0-1ubuntu1.4.debian.tar.xz 28044 SHA512:200dca710040b38d17757406bcb0c1f52a3ffc1cc411cf1091b2cda7ebb73788be68c2ef1895f3414060ceda72fac36b67e280b28e635af580dca69bab7d1030
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 
@@ -2696,15 +2690,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.34-4ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34-4ubuntu0.22.04.3.dsc' libxslt_1.1.34-4ubuntu0.22.04.3.dsc 2514 SHA512:d5fdfcc292dbb393852fea137e0d3f00a79b13e4b3597a9cc6256042f83ffc14ba6d210db429867d12cfd0b2d29fd2941e4b8ec00dc980eec05df7e4de276b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA512:1516a11ad608b04740674060d2c5d733b88889de5e413b9a4e8bf8d1a90d712149df6d2b1345b615f529d7c7d3fa6dae12e544da828b39c7d415e54c0ee0776b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA512:9b155d4571daede99cdbf2813a85fb04812737b5e23d3f7c9840225b38f3dbf171623a21645daaee190e7ff9ba38bde932922e96a2a2312c203ffa9917c3baea
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34-4ubuntu0.22.04.3.debian.tar.xz' libxslt_1.1.34-4ubuntu0.22.04.3.debian.tar.xz 24764 SHA512:c950edbe8232c46b292d1804ecd3903cecb35500d5465f8ae0080a67650b6046fd8a8056fd5429c339a92423a677e6608d5a149adaded43cfcf6dd26e5f7e5c7
-```
 
 ### `dpkg` source package: `libxt=1:1.2.1-1`
 
