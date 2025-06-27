@@ -850,14 +850,9 @@ Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gosu=1.17-1ubuntu0.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.17-1ubuntu0.24.04.2.dsc' gosu_1.17-1ubuntu0.24.04.2.dsc 2121 SHA512:04cfd359df2ab30e62ac07caafb331b272de60d4fb7d04c2fb70a215bb3f50d4f17a1ce33c405d730fdb169769c9e95198fb8e57b659ecc769b026638e579a45
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.17.orig.tar.gz' gosu_1.17.orig.tar.gz 15256 SHA512:5a8bd7fce5c9080118dcf2c86332671441e133e44d08baea7dbc9f622e8d1bec1a229d3d7a38846bdcdcb66538222d5871e565e71eea1677fcd5727b836cdbce
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.17-1ubuntu0.24.04.2.debian.tar.xz' gosu_1.17-1ubuntu0.24.04.2.debian.tar.xz 2884 SHA512:e3063351e6a385516dee43f58028ff5c547720efb8348a1e543ba50246f0497555e28dd61b3d6ef54a8880371a95a38ef611177a1d3f6b1c250237930f86b965
-```
 
 ### `dpkg` source package: `grep=3.11-4build1`
 
