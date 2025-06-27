@@ -1,10 +1,10 @@
-# `tomee:10.0.1-jre21-Temurin-ubuntu-microprofile`
+# `tomee:10.1.0-jre21-Temurin-ubuntu-microprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d616577b34902a33becaf88a38863337bb6fa06ea775deef9e3fe3a1f04667c`
-- Created: `2025-04-07T14:29:55Z`
-- Virtual Size: ~ 367.58 Mb  
+- Image ID: `sha256:4fb5f2199e2a8fc91e6251bcb38cf4a093a537df2cb30416119def2c2aa5f358`
+- Created: `2025-06-27T00:04:37Z`
+- Virtual Size: ~ 368.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.7+6`
-  - `TOMEE_VER=10.0.1`
+  - `TOMEE_VER=10.1.0`
   - `TOMEE_BUILD=microprofile`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
