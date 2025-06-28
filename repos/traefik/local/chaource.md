@@ -1,10 +1,10 @@
-# `traefik:v3.4.1`
+# `traefik:v3.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff0a241c8a0a140b0d2142f3f481b2fa847a7f42a1356dc39a8eac9b27df4cf3`
-- Created: `2025-05-27T12:53:59Z`
-- Virtual Size: ~ 223.97 Mb  
+- Image ID: `sha256:4113453efcb37896739b56c63b08e0773dbb3a3a98b1f66f413509181663ced3`
+- Created: `2025-06-26T13:34:32Z`
+- Virtual Size: ~ 225.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `org.opencontainers.image.title=Traefik`
   - `org.opencontainers.image.url=https://traefik.io`
   - `org.opencontainers.image.vendor=Traefik Labs`
-  - `org.opencontainers.image.version=v3.4.1`
+  - `org.opencontainers.image.version=v3.4.3`
 
 ## `apk` (`.apk`-based packages)
 
