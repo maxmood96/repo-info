@@ -3413,10 +3413,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=257.6-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257.6-1.dsc' systemd_257.6-1.dsc 8614 SHA256:6edd1e36ac1c7759796182701b83f45a9e96c86a708d153ca64a83b82e4383f3
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257.6.orig.tar.gz' systemd_257.6.orig.tar.gz 16321562 SHA256:1ac656c61e595cc6e653883d554caadd2053f323d9065c0daff69f83368b120c
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257.6-1.debian.tar.xz' systemd_257.6-1.debian.tar.xz 182228 SHA256:e93575db3db98d4f0612798560a1f334ebcaf3033212635dd9d5ee4a11bc1455
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6-1.dsc' systemd_257.6-1.dsc 8614 SHA256:6edd1e36ac1c7759796182701b83f45a9e96c86a708d153ca64a83b82e4383f3
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6.orig.tar.gz' systemd_257.6.orig.tar.gz 16321562 SHA256:1ac656c61e595cc6e653883d554caadd2053f323d9065c0daff69f83368b120c
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6-1.debian.tar.xz' systemd_257.6-1.debian.tar.xz 182228 SHA256:e93575db3db98d4f0612798560a1f334ebcaf3033212635dd9d5ee4a11bc1455
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/systemd/257.6-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.6-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
