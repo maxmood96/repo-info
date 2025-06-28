@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1432e116d9836b1b143028bb6fd1cab4a6b8c6bb9e3002e6cf2a83c113c9726a`
+- Image ID: `sha256:14c736471fb34158badd0affc3d4f3debaefd916597fa8068ea4314a329ce8c1`
 - Created: `2025-06-13T14:47:41Z`
-- Virtual Size: ~ 894.31 Mb  
+- Virtual Size: ~ 894.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -473,16 +473,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.84.2-r0 description:
+glib-2.84.3-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.84.2-r0 webpage:
+glib-2.84.3-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.84.2-r0 installed size:
+glib-2.84.3-r0 installed size:
 5249 KiB
 
-glib-2.84.2-r0 license:
+glib-2.84.3-r0 license:
 LGPL-2.1-or-later
 
 ```
