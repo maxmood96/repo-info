@@ -659,7 +659,12 @@ $ docker pull eggdrop@sha256:7f123e51f800694ec3f3d2c2c46c6b1223181862a3c9b03ff4e
 
 ## `eggdrop:1.10.1rc1`
 
-**does not exist** (yet?)
+```console
+$ docker pull eggdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eggdrop:1.9`
 
