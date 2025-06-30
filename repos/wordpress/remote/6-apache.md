@@ -1,7 +1,7 @@
 ## `wordpress:6-apache`
 
 ```console
-$ docker pull wordpress@sha256:448f75a00b3e7f0aa0d29b50f966c8c8d48f91c0525437e6e8cb4a100efcc706
+$ docker pull wordpress@sha256:9343fc86eb817f2c54d6e9b09783e97e30bac3f3b458e2b7c51e1eba8d205690
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,98 +26,100 @@ $ docker pull wordpress@sha256:448f75a00b3e7f0aa0d29b50f966c8c8d48f91c0525437e6e
 ### `wordpress:6-apache` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:a40e229e7952ecdf9632bfe75af206f09a595305dee7307c28c5ebac290411a9
+$ docker pull wordpress@sha256:015202be6af9cff10d10ce17409965d38878e4e4f3fb6ca22f60d4a9f34dd6a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.6 MB (247584427 bytes)**  
+-	Total Size: **262.8 MB (262816205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47847f8a82402f60321fb54fbe8ada9d9ee6142873b45f7438e0348b6ff92a0c`
+-	Image ID: `sha256:76f4ddced8df0bd1268fbb1e854fa0d4b774b6245e7a982f61cc61407dac1ade`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -182,158 +184,164 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1f9726c0f316920d881fef11907891dd42f5eea8ca35ef7d3b7c16b4b399d7a`  
-		Last Modified: Wed, 25 Jun 2025 19:58:39 GMT  
-		Size: 26.3 MB (26253982 bytes)  
+	-	`sha256:e61feec635e3299b26c2e3056dfa77d7df0739f023c36111250843c1d95ed39b`  
+		Last Modified: Mon, 30 Jun 2025 17:38:27 GMT  
+		Size: 26.3 MB (26253740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f93a88af4b2fa171e818d8ee6748bfdf306358ce84175b3d0baf03bb40ab51c8`  
-		Last Modified: Wed, 25 Jun 2025 19:58:39 GMT  
-		Size: 18.0 MB (18021654 bytes)  
+	-	`sha256:ce898e74d1d6cea643ef3e9b224ee06a56365f40694a673587a605d214068e97`  
+		Last Modified: Mon, 30 Jun 2025 17:38:28 GMT  
+		Size: 33.3 MB (33253422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3446af2f54601c8769a4e0feda8bc3a4a1b905bd4e181d14c3ce0fb2cf637d6c`  
-		Last Modified: Wed, 25 Jun 2025 19:58:36 GMT  
-		Size: 309.0 B  
+	-	`sha256:2a2c28e1058b160b94d18ece2cdece09a540415bb680b5356c1a99bee53f3b7c`  
+		Last Modified: Mon, 30 Jun 2025 17:38:25 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce6f93d754aa5d1c59f6b4e2008f27620f3ac4381401ed50c74462ccb7fc7f1b`  
-		Last Modified: Wed, 25 Jun 2025 19:58:36 GMT  
-		Size: 390.0 B  
+	-	`sha256:67a7df8eecef49bee204826f7771ffd61e5b6cb76e24cc5a02d0df658d7c5055`  
+		Last Modified: Mon, 30 Jun 2025 17:38:25 GMT  
+		Size: 393.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:136b279670b58d55bfae90bf90b80fb215101caecf83c7c3c1966e509fe557be`  
-		Last Modified: Wed, 25 Jun 2025 19:58:37 GMT  
-		Size: 19.1 KB (19145 bytes)  
+	-	`sha256:620a9028ae3421f150fe5da689f45e171d293f98d080766944e86fdf6b9b26e2`  
+		Last Modified: Mon, 30 Jun 2025 17:38:25 GMT  
+		Size: 19.2 KB (19152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6227b8e34b094ba36c78e074bbd3ec8b7e262d6ef2eb57c9df5eaae44f34283`  
-		Last Modified: Wed, 25 Jun 2025 19:58:42 GMT  
-		Size: 26.9 MB (26894967 bytes)  
+	-	`sha256:d0a0033b1ece99d1a700d2e1d4bab86c0804b6a55725fdc7d58a256a91791844`  
+		Last Modified: Mon, 30 Jun 2025 17:38:28 GMT  
+		Size: 26.9 MB (26894968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8372efdae0bcbd7fdae2d0d3554f5e333b9d8f86a12e09b55123fa7d13a010c`  
-		Last Modified: Wed, 25 Jun 2025 19:58:37 GMT  
-		Size: 2.4 KB (2435 bytes)  
+	-	`sha256:04f77b81bf47e4c4b9f42e7885d6389eca427245765fa006b7e5736f3bcf0603`  
+		Last Modified: Mon, 30 Jun 2025 17:38:25 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d5b2b555ac135e7978c373e378a433ce2336a50f12f6297bf485f2efba2e946`  
-		Last Modified: Wed, 25 Jun 2025 19:58:37 GMT  
-		Size: 1.7 KB (1726 bytes)  
+	-	`sha256:bdb50ce455ae323759e888a5009b713621a83fc62800b1074374848724d62fe6`  
+		Last Modified: Mon, 30 Jun 2025 17:38:25 GMT  
+		Size: 1.8 KB (1764 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c4abb1c4aa2c3c8e436c6fe62d705ed684dc1dedfd325d65452f68706509da7a`  
+		Last Modified: Mon, 30 Jun 2025 17:38:25 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:d722461ace0e9ca1183074d0c048b081a4c21b9ab25becc36a40e6188e07891f
+$ docker pull wordpress@sha256:603d7724c2fd6525b7320a547bf079e0209a1afc3d07e6b3409b129ae6655676
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8421978 bytes)**  
+-	Total Size: **8.4 MB (8427319 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:351983c449b03dac33a0e862a6d7b16504e98baee4021b7f6f64a51584e1675a`
+-	Image ID: `sha256:bde678585be624b53dbe0d732c3712d477190eec158abb6e608790e5c54c6bbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43861e3c34ed598c2204ec7b02c10dd7210b2920a0d9c3011e948763e7b459f9`  
-		Last Modified: Wed, 25 Jun 2025 22:12:41 GMT  
-		Size: 8.4 MB (8359506 bytes)  
+	-	`sha256:cfa67ac9b5d93eebfd4e603091cab51054851983254b1e992522456c3995d3ac`  
+		Last Modified: Mon, 30 Jun 2025 19:12:52 GMT  
+		Size: 8.4 MB (8359542 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f3b78c639c9d1946a439c93637c7e918fa0f70a1805507d001f798e8f676c4b2`  
-		Last Modified: Wed, 25 Jun 2025 22:12:42 GMT  
-		Size: 62.5 KB (62472 bytes)  
+	-	`sha256:a70db6f2a0b1c9717e95924e1fdbd748e3d58ef46086d9e5edc7aabf9118bd85`  
+		Last Modified: Mon, 30 Jun 2025 19:12:52 GMT  
+		Size: 67.8 KB (67777 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:de3abb231a42a7170097a440190e80e1cbce26e105de043cf85fd070964a4da5
+$ docker pull wordpress@sha256:09cd117bf5e055e5222a93166cbc7d69ce82feb86d8accdcc3b53a147e05ccc3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.9 MB (216910055 bytes)**  
+-	Total Size: **216.9 MB (216910290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b5c3b1ffa6b5325733938e75f7067996c3db181225f7abded6e2e7f29f188f`
+-	Image ID: `sha256:9f6ee1bd4ef76b24a084dcb75dd83abefce7424a7359fc4796c5179a91e5ffd7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -426,130 +434,136 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 25 Jun 2025 20:09:46 GMT  
 		Size: 2.4 KB (2439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6528a6b6d1471bd8ea18a5c490db738808c15731be764efcac9c06e5cef4b76`  
-		Last Modified: Wed, 25 Jun 2025 20:09:46 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:e48c6c41ed1fde0eb4fcb5aa6cc0b7137bf5d793aa3dd8606283b9bd81d08e5d`  
+		Last Modified: Mon, 30 Jun 2025 17:39:03 GMT  
+		Size: 1.8 KB (1767 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d59d3fad889234df0bcd865f5caa57d77ebb0bcda307cc6e1fb1967b0c0c1435`  
+		Last Modified: Mon, 30 Jun 2025 17:39:03 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:98aa8ff0cd0473a9ec794bcdbd9d2f08988acf81b2647bde97b2aaa4bea5a695
+$ docker pull wordpress@sha256:57afc73ff6916237c64c0907b47a94a950f82fc51f8502a7c8fc935dbbe05a05
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.2 MB (8223922 bytes)**  
+-	Total Size: **8.2 MB (8229240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abb380f50557f8867e51eb51c1f84361c7ab43dd3ea2cfda5b76d90749c5f5c9`
+-	Image ID: `sha256:83311121b96a207d2a7dee4ce4666f036a2c7bd810c0670cff7856b356725eb1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68bc0082acd9f6b0137b38a3bf88cb041a4f9ee2d0be43128db7a683985f8fb9`  
-		Last Modified: Wed, 25 Jun 2025 22:12:49 GMT  
+	-	`sha256:4d96bf8e4134f05123ed5e354cbf356fd9f86b5b16efa9864c39928998b75c18`  
+		Last Modified: Mon, 30 Jun 2025 19:12:59 GMT  
 		Size: 8.2 MB (8161223 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:37d07af03a2e4da2ed78fac70e0f600dcc7cfda6a701f605a56961912006ed34`  
-		Last Modified: Wed, 25 Jun 2025 22:12:49 GMT  
-		Size: 62.7 KB (62699 bytes)  
+	-	`sha256:5667a7721a1f840a162d8e00ce593ae43dfff9e36d873b5eb478dcb96cfdf592`  
+		Last Modified: Mon, 30 Jun 2025 19:13:00 GMT  
+		Size: 68.0 KB (68017 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; arm variant v7
 
 ```console
-$ docker pull wordpress@sha256:7df55e43f03a9604d488b41ed3515051553fd0784d8779d4407d2e4f23b295d6
+$ docker pull wordpress@sha256:91fa9ba513b6bd339c2f21ebcd52430acd0b99373f3b497b162b5511f15f480f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.2 MB (206193515 bytes)**  
+-	Total Size: **206.2 MB (206193750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87bf2c92fc528d16e4caa8a509e6acec20c464c61d2a1ecd1b4349bb63593ec8`
+-	Image ID: `sha256:9338f651836e01f995685fa5f79262d7c50a1ff9efcea58d4fede923e4322f54`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -642,130 +656,136 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 25 Jun 2025 21:24:39 GMT  
 		Size: 2.4 KB (2437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38812bb8bfb13f2e156ea8bac89c5137ebdd8872acf675701c33be9d2dd4e70b`  
-		Last Modified: Wed, 25 Jun 2025 21:24:38 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:49fc4cfb0096da66469534bc96eb62e7afc8a0a99152c2ede28c4d6f887f537a`  
+		Last Modified: Mon, 30 Jun 2025 17:46:31 GMT  
+		Size: 1.8 KB (1767 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:632d451ea79858a772c8a7385b82f346ca4b73b1787648d116f1e56b1d772f91`  
+		Last Modified: Mon, 30 Jun 2025 17:46:31 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:b9c190ceab27712fbc0bd296dc739534645233ff8a7006c96405a7375de4b422
+$ docker pull wordpress@sha256:3de9e5f3e573ac7f8d6122b74221fd1a079f543a194c58331621a619d7095ef3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.2 MB (8228610 bytes)**  
+-	Total Size: **8.2 MB (8233926 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a26246790e30be02715facc0ed008fbbaee100981646a31dcc44a6830b7287d6`
+-	Image ID: `sha256:d59a1e1a107459f4ec4bd0626bc6154dcd7c1ca0c006c9bfa01422054371fd17`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3bf2f8cc5473ba379a59dec332f57bfc439adcc7796484f20d97071e74ed3657`  
-		Last Modified: Thu, 26 Jun 2025 01:12:40 GMT  
+	-	`sha256:7bd779f195371dcdad4ddf8914d29d2302771e7c429606d8a09c99c9233b8cdc`  
+		Last Modified: Mon, 30 Jun 2025 19:13:07 GMT  
 		Size: 8.2 MB (8165919 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b59d070e9afef427e30f973cb0288d31c3302b3ab883d49dc712a0ab405e6959`  
-		Last Modified: Thu, 26 Jun 2025 01:12:41 GMT  
-		Size: 62.7 KB (62691 bytes)  
+	-	`sha256:1d8135cfda57081dd149947187fceba0e1e8baa88beafc7eb4e6d6e9e41b80dd`  
+		Last Modified: Mon, 30 Jun 2025 19:13:08 GMT  
+		Size: 68.0 KB (68007 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull wordpress@sha256:15cc0b42686de72240e8c28cc2b3d1006324f4b2a0604835b8295c4bbd882eea
+$ docker pull wordpress@sha256:64b49f09f0bf74aafb17455a9217b1fe013d6b498cb15b5f364afd205976137a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.2 MB (238237445 bytes)**  
+-	Total Size: **238.2 MB (238237679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd48c4a0315f4c1abd7553d190bcb0448a3e7f7ec48f1bc3aff5463fb1c7580d`
+-	Image ID: `sha256:23cb1139eec44769af850dda699b87c5b4e55384724b4d635de34d688690b511`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -858,130 +878,136 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 25 Jun 2025 23:57:31 GMT  
 		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86b457211347ac026ef833e40b36ddca3569b86077cedc7aa781b08cd8c12508`  
-		Last Modified: Wed, 25 Jun 2025 23:57:31 GMT  
-		Size: 1.7 KB (1727 bytes)  
+	-	`sha256:9c6629fd9122eea41c7d6f524989f1c38765a63c6c08b0aaea23269db670997d`  
+		Last Modified: Mon, 30 Jun 2025 17:47:23 GMT  
+		Size: 1.8 KB (1763 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6f858f356b26c5a4829c6a91854fdb549547524b265ca917484983264142f162`  
+		Last Modified: Mon, 30 Jun 2025 17:47:23 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:294b8107b5310e2adc8635cd8f9c010120e063379b40880db0641c37bbcb17c5
+$ docker pull wordpress@sha256:4844a31f94a88f558513554a0a218638b998fb8b0f92cde43dba2d8185cf8a27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8448604 bytes)**  
+-	Total Size: **8.5 MB (8453923 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd4dce6a41c5583a33c780405264c04c7f5e09c453ec3c48be8b7db1b42c8a72`
+-	Image ID: `sha256:381d84c65299a4add2c86dff0fde208c98f80b4fdc0582061d85bb247c652df1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5a7141e560a4772cc636facbcd8013b390506990ed817e5424f1f877fe74f536`  
-		Last Modified: Thu, 26 Jun 2025 01:12:47 GMT  
+	-	`sha256:f4b9d4e361aee535abb5171733c2d46ca879914c7233c5455772a45e9ac71ee8`  
+		Last Modified: Mon, 30 Jun 2025 19:13:13 GMT  
 		Size: 8.4 MB (8385818 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e34b2329fa9e70bc250f154e7c7cb315579a71d0a115e8e30aa3236775071ef`  
-		Last Modified: Thu, 26 Jun 2025 01:12:47 GMT  
-		Size: 62.8 KB (62786 bytes)  
+	-	`sha256:637b38a29a2b4384901f49605577dfa0e9fd9120aa8f77c4114b86ae38fe6dd1`  
+		Last Modified: Mon, 30 Jun 2025 19:13:14 GMT  
+		Size: 68.1 KB (68105 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:4e0e402d9344ccac81e9e4ecbf0861d67bc339e674f3610cb7d08ecc007cdc74
+$ docker pull wordpress@sha256:e02ef50c68fa438c93b244925d487a4a01407c19843fda1e8af72aca33bd1481
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.9 MB (242926791 bytes)**  
+-	Total Size: **258.4 MB (258351407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:858e3e14ce2ee011dcc9b645ca8db0d838b664e7a7b56eec354ae9e270a81b16`
+-	Image ID: `sha256:2b19d2f6c9b438b6e862a5614430cbecda07cec46cb883c0313b7ec482608ead`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1046,158 +1072,164 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4cc21129b31028ab5f15c95b2254e627a97b107fde625b661cba77510637178`  
-		Last Modified: Wed, 25 Jun 2025 22:50:11 GMT  
-		Size: 26.7 MB (26701110 bytes)  
+	-	`sha256:182434f12cd2fb10c40a2c1189d9cfac05e8156fade32f811d2d8d09c42bfe17`  
+		Last Modified: Mon, 30 Jun 2025 17:39:01 GMT  
+		Size: 26.7 MB (26701133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cae4cfe5aabf3606e0495cb6a772508bbcad9614387271e4ece4b35275688548`  
-		Last Modified: Wed, 25 Jun 2025 22:50:16 GMT  
-		Size: 14.0 MB (14009302 bytes)  
+	-	`sha256:4ad4b89b65330f62c4bf1c453e892856c3d2f60ae1eea242a3aea30635f264fc`  
+		Last Modified: Mon, 30 Jun 2025 17:39:02 GMT  
+		Size: 29.4 MB (29433647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ee90a56edc0fbfc90cb350b6697973e4d0ba2b3114bfec863c105a092bf2d56`  
-		Last Modified: Wed, 25 Jun 2025 22:50:31 GMT  
-		Size: 311.0 B  
+	-	`sha256:019432498c2b96d0db6e26668e058c743ff0c9b50f707461fa9ab5c3bd46b5a1`  
+		Last Modified: Mon, 30 Jun 2025 17:38:59 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da02e3d5c9b374c166bc0659a9b6069206009c27e3b2a3bd5a2cecd52be79aa3`  
-		Last Modified: Wed, 25 Jun 2025 22:50:30 GMT  
-		Size: 391.0 B  
+	-	`sha256:94d71c07020c5e2bff69c5d5bf5ff138fd8cd9962a6a4025b92021bd564af0db`  
+		Last Modified: Mon, 30 Jun 2025 17:38:59 GMT  
+		Size: 394.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89f623dd1346c161cd952fdde50e2187da0fe1221bb90fb4530071d10a688af0`  
-		Last Modified: Wed, 25 Jun 2025 22:50:23 GMT  
-		Size: 19.1 KB (19147 bytes)  
+	-	`sha256:fa8f0d53d1b7c80fc14332f8854c18ab9e661b658083d950939f1083bba84ad1`  
+		Last Modified: Mon, 30 Jun 2025 17:38:58 GMT  
+		Size: 19.1 KB (19150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df60c0f7f3b6fb091a976e3dc6c5cabdbb8bab415132e05718865c8ab6f80820`  
-		Last Modified: Wed, 25 Jun 2025 22:50:11 GMT  
-		Size: 26.9 MB (26894963 bytes)  
+	-	`sha256:5391847f998c3217e7635b4a1be8f7103f15f3cd32346a2e92f9475b3d5873ad`  
+		Last Modified: Mon, 30 Jun 2025 17:39:03 GMT  
+		Size: 26.9 MB (26894967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:086ff4d3f02164aa5aaae3a4d77e77460ad495e7794cfca64ca78d05e5b85d0d`  
-		Last Modified: Wed, 25 Jun 2025 22:50:25 GMT  
-		Size: 2.4 KB (2439 bytes)  
+	-	`sha256:ca30282a98f85dad21e8f6a5567a11a8e567bd0eef14cc9756c8f8cac89dd9e7`  
+		Last Modified: Mon, 30 Jun 2025 17:38:58 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2dc60e7aa4187abd15f41a7ec169bce78b53f18f09177e89bc0d4ab5a35e66`  
-		Last Modified: Wed, 25 Jun 2025 22:50:28 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:674ca477f806e74752f8e48cdb1f6a4594811dec5945bd5760faef0995d57c14`  
+		Last Modified: Mon, 30 Jun 2025 17:38:59 GMT  
+		Size: 1.8 KB (1765 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c55092dad4e5fbf6fef691b51520c948fcafb95c954a1479aca05d1e542fb862`  
+		Last Modified: Mon, 30 Jun 2025 17:38:59 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:324c74f4f3a0841b3d51480775e277eeadf9ba37a5c4283a17ef577a5951114a
+$ docker pull wordpress@sha256:b01f0a59ac0566308be8a5d5d343bccbed2326bf86bee6b2f143e405fd841900
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8394264 bytes)**  
+-	Total Size: **8.4 MB (8399603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b8a35bd893dfd6f5f398579b35ed8432f5c2be4f025b54e57c498d012705e5c`
+-	Image ID: `sha256:fb2175ef0b0e305cf85fe736a2d5c9cd858e3cbff8aee45923488797c6b70569`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bbf8a198ea987368f71eafbdd006898c478187239f759e4fbd9c667db5d0a51d`  
-		Last Modified: Wed, 25 Jun 2025 22:13:05 GMT  
-		Size: 8.3 MB (8331894 bytes)  
+	-	`sha256:98dacd5ef984df9a5d7b20bfdac9b1ff98183dacdc20feb2cb57dbda0399340b`  
+		Last Modified: Mon, 30 Jun 2025 19:13:20 GMT  
+		Size: 8.3 MB (8331930 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6874df0c58a3ce5dc73234b29d111a23802546dc3cf6eda7b8efd7951c9d12c3`  
-		Last Modified: Wed, 25 Jun 2025 22:13:06 GMT  
-		Size: 62.4 KB (62370 bytes)  
+	-	`sha256:e4a3524a12f5bd6b2a53dfb8579f017db8e9697cacc12d457a98c449f8e9cd30`  
+		Last Modified: Mon, 30 Jun 2025 19:13:21 GMT  
+		Size: 67.7 KB (67673 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; mips64le
 
 ```console
-$ docker pull wordpress@sha256:5997537e7f5ef7712dd5ec06b6fab87df422e3c51e02471415ffcebc2018abec
+$ docker pull wordpress@sha256:1297de111481c7b7d14f19ce061320fb36f751d8e38b1a2876af8d969cac62da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.2 MB (219234234 bytes)**  
+-	Total Size: **219.2 MB (219234470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f46bf732ff4fe64bba6d55f6040e9c65b4ff5a691510df4b335a4e30f01d36fa`
+-	Image ID: `sha256:93d3f2b0fb08d439dbf3a3f30163f14ba08a6516a64c317c2579c35253621d91`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1290,126 +1322,132 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 25 Jun 2025 22:22:57 GMT  
 		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1b6e7d2eed95bd1a9b927e363320181dbd5460bc17436a147c15225a2e0b13f`  
-		Last Modified: Wed, 25 Jun 2025 22:22:57 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:6ed9a2f25199f7c26f7261436bc393476fa3716ca63ef14c7191efcf28b446a8`  
+		Last Modified: Mon, 30 Jun 2025 17:59:52 GMT  
+		Size: 1.8 KB (1768 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06cda6bf47a8ab2ea383e736cbd38a001b25a93c8df84988d8b22b547efb54fc`  
+		Last Modified: Mon, 30 Jun 2025 17:59:53 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:55ea9bcf7c8e2ec567c7357cb19c4fb9e55d4cd18124fb858c9430faefe69b15
+$ docker pull wordpress@sha256:4100eca8a6613d52a9d2285a8e095f164d0060cb99da2b31b74c181d01a0600a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.4 KB (62437 bytes)**  
+-	Total Size: **67.7 KB (67744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f4d942ac21a77871fb5c2d6d237050f9abb4f3b31b4fe542f70c0dcb2e39b4e`
+-	Image ID: `sha256:c25a4e69bc514d1b8f9153a3dff364d3e8d4ec99b7e6ade6c4800c9132640ed3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd3a8a62711f2dbd1e0442bd6e312a7dc92f62d48ffdfa96757e126a1dd31f26`  
-		Last Modified: Thu, 26 Jun 2025 01:12:57 GMT  
-		Size: 62.4 KB (62437 bytes)  
+	-	`sha256:73bd9c114990fbff639ad1b892a3aacc796497d9a6deb40801f5b6ec4ad5a0a5`  
+		Last Modified: Mon, 30 Jun 2025 19:13:27 GMT  
+		Size: 67.7 KB (67744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; ppc64le
 
 ```console
-$ docker pull wordpress@sha256:4c2b22b1b26f18b49b9dd86e1c34b071e5e1ca1a8e2a7c9006256e0e64a0a61f
+$ docker pull wordpress@sha256:5bec97dce598512d0facefe837e5ce487d48d4c8907540ac21711a8f9be5835b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.2 MB (252162983 bytes)**  
+-	Total Size: **252.2 MB (252163218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc082b043bfcffe7645fe24d51ea5c80d0db5299f3d564a434d9be980a3a4169`
+-	Image ID: `sha256:78af810b6382312747deef8e381655af34a1b7568254abc29dd5b28bd16f5a67`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1502,130 +1540,136 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 25 Jun 2025 21:45:17 GMT  
 		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6419c774e2fa12c9a2c4c1f31b7954207960acdb5e5bffa88d3c50e88646380`  
-		Last Modified: Wed, 25 Jun 2025 21:45:17 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:00e01302685bd631819f47d5d06a91642ebcff6b1e9cbf7990860ec4c8ae3cdd`  
+		Last Modified: Mon, 30 Jun 2025 17:42:26 GMT  
+		Size: 1.8 KB (1769 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9b909ad55b471bd7d880584f6d27406322d9995ac402ed3bf7352af22d512b22`  
+		Last Modified: Mon, 30 Jun 2025 17:42:25 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:b63d56c47b2977a1393e4bdc415309900b47b21c2b0bed577f37cfe2a048814d
+$ docker pull wordpress@sha256:667c9d8f0f7b1918178c76a7cf7dc10e80d18df3246721de0fe1b76c8fe5c266
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.4 MB (8398371 bytes)**  
+-	Total Size: **8.4 MB (8403678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b3d83db476e769c6275e328736928f0b07f73d8d45e30c91e9bab8560edffcf`
+-	Image ID: `sha256:802c6270fe8ea1a10b6b4cd512d838c9121ff07fd05d02fdc8a613803a9d3d42`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3315d78418a3e13bd36702ec1695a81aa847f26f0f513c4d9803192d5467a8a1`  
-		Last Modified: Wed, 25 Jun 2025 22:13:14 GMT  
+	-	`sha256:46cdf6fb2789aff90d0fb11184cd798d388f1a17b6be4a9cfc1c920efe5edd42`  
+		Last Modified: Mon, 30 Jun 2025 19:13:30 GMT  
 		Size: 8.3 MB (8335773 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5602d206ad05f2d9c189ae70d0141169628e3ff89fccc0fec99d3a9ab0d6abd2`  
-		Last Modified: Wed, 25 Jun 2025 22:13:15 GMT  
-		Size: 62.6 KB (62598 bytes)  
+	-	`sha256:efb107d7ae4d027eee34d07034ce168f2e25df2e604a6def86b02de61a3028ea`  
+		Last Modified: Mon, 30 Jun 2025 19:13:31 GMT  
+		Size: 67.9 KB (67905 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `wordpress:6-apache` - linux; s390x
 
 ```console
-$ docker pull wordpress@sha256:f7a4dce4f04fa0288697011b3d011f0a82e99c128adf776e0a79a4b481a5bf39
+$ docker pull wordpress@sha256:ff80fb0106fabb11cee4a622af0f7a37a7779e1b9f3c2438113e72725b0478a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.1 MB (218100113 bytes)**  
+-	Total Size: **218.1 MB (218100345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e4b887cfcf6a3025714028befcc681bfd4098d18c0435465866b7d90445a624`
+-	Image ID: `sha256:fef0573522096056f9c7aeea7041095c962d45122aa3a8a735fe2a17673d9601`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_VERSION=8.2.28
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.28.tar.xz.asc
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENV PHP_SHA256=af8c9153153a7f489153b7a74f2f29a5ee36f5cb2c6c6929c98411a577e89c91
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 'riscv64-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 WORKDIR /var/www/html
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 EXPOSE map[80/tcp:{}]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ghostscript 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libavif-dev 		libfreetype6-dev 		libicu-dev 		libjpeg-dev 		libmagickwand-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.8.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$extDir"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ] # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPInternalProxy 10.0.0.0/8'; 		echo 'RemoteIPInternalProxy 172.16.0.0/12'; 		echo 'RemoteIPInternalProxy 192.168.0.0/16'; 		echo 'RemoteIPInternalProxy 169.254.0.0/16'; 		echo 'RemoteIPInternalProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' + # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 RUN set -eux; 	version='6.8.1'; 	sha1='52d5f05c96a9155f78ed84700264307e5dea14b4'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 1777 wp-content # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY --chown=www-data:www-data wp-config-docker.php /usr/src/wordpress/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
+RUN ln -svfT docker-entrypoint.sh /usr/local/bin/docker-ensure-installed.sh # buildkit
+# Mon, 09 Jun 2025 23:45:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 30 Apr 2025 19:42:17 GMT
+# Mon, 09 Jun 2025 23:45:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1718,31 +1762,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 26 Jun 2025 02:21:58 GMT  
 		Size: 2.4 KB (2437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b3e2243e5b2c611c22f2410c676db10ee8523293250574dce210397abd7c9fc`  
-		Last Modified: Thu, 26 Jun 2025 02:21:58 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:781af78b4b5d77a9d528f6939b523545cb037397a0d97bb7a5979f6de81c585d`  
+		Last Modified: Mon, 30 Jun 2025 17:41:29 GMT  
+		Size: 1.8 KB (1763 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7eb7c0065b16f0c5aff4d42755a4f3f0501f01d312f6fc1d9a27c3bd895a550c`  
+		Last Modified: Mon, 30 Jun 2025 17:41:29 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `wordpress:6-apache` - unknown; unknown
 
 ```console
-$ docker pull wordpress@sha256:278ed344e539184fcd642d9c3ab048bea681118299d6c954401abcc87a21a417
+$ docker pull wordpress@sha256:6dc75473236562ade9be102389abf8910029a0c02e38df7d64de2442030c32dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.2 MB (8244678 bytes)**  
+-	Total Size: **8.2 MB (8249982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bacd47654d17cae4a74b83c1fe2ff72e245c145dc2f7465b788b2d6c0c511b1`
+-	Image ID: `sha256:0b19079e409756b94a1a96478f4400b60106bfdc00ac55d58e91de1a8bea9aa8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:285502414fbea731d14149ed63728543c3fc39002aa264ebd5c915a69aea18d9`  
-		Last Modified: Thu, 26 Jun 2025 04:12:48 GMT  
+	-	`sha256:3cbe366e6fcaa6a3b7a9c75084aeeb6db4c680214888a04b6b653310929a9114`  
+		Last Modified: Mon, 30 Jun 2025 19:13:37 GMT  
 		Size: 8.2 MB (8182215 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:200b70db0c2335e2e6ac183432c5b3afe8af27ff7b489f54b918742f46fa95fc`  
-		Last Modified: Thu, 26 Jun 2025 04:12:49 GMT  
-		Size: 62.5 KB (62463 bytes)  
+	-	`sha256:7b1bb249115e5b529dd641ea24208435cbbf1ec9a4861b04d44bb809d93f5332`  
+		Last Modified: Mon, 30 Jun 2025 19:13:38 GMT  
+		Size: 67.8 KB (67767 bytes)  
 		MIME: application/vnd.in-toto+json
