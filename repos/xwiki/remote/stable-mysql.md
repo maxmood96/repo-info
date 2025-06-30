@@ -1,7 +1,7 @@
 ## `xwiki:stable-mysql`
 
 ```console
-$ docker pull xwiki@sha256:5c0a7c2b9cd9f58546dd333fddba437ed32f7b76b007128cc83c84cd27b7bed5
+$ docker pull xwiki@sha256:caf6c8ff35c5d928220d3b4ddbea96b31dc6c9410ab0aceb264646ce03fa692c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -232,13 +232,13 @@ $ docker pull xwiki@sha256:8d9618ac164a41b91d39221fd98708242075ef6d1f4117246c00c
 ### `xwiki:stable-mysql` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:a14a67c859a759d62c732901e21d422afdedaa01b93a2264faceb4ab115b9622
+$ docker pull xwiki@sha256:c2b65ffff76d1e995d5d642515defeb0c9937b6946be63a8109899690467ec99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **623.7 MB (623714488 bytes)**  
+-	Total Size: **624.1 MB (624123517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fd05371b419ae4807bccfbced6abe83d1391c2fd745073c2da1ee6cbf4c76aa`
+-	Image ID: `sha256:83bab8cca367c1b63cac18c35103a52c3c07ff617ed7f462b65737c039508178`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -303,53 +303,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 10 Jun 2025 02:03:19 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
-ENV XWIKI_VERSION=17.4.1
-# Tue, 17 Jun 2025 16:40:33 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.4.1
-# Tue, 17 Jun 2025 16:40:33 GMT
-ENV XWIKI_DOWNLOAD_SHA256=59dcf56f6b97c21d42bbebd7a2f4020be6ad77365b9e291740d3950513e6dbf0
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
+ENV XWIKI_VERSION=17.5.0
+# Mon, 30 Jun 2025 14:57:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.5.0
+# Mon, 30 Jun 2025 14:57:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d3990a0f14897c6e748ca7160e748569e572e806c7beba820bf5018cc9fa933c
+# Mon, 30 Jun 2025 14:57:14 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 ENV MYSQL_JDBC_VERSION=9.3.0
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 ENV MYSQL_JDBC_SHA256=6c8e6692b521376d89bc5618c16cdeaf8c61854329f4fa25677ed08776c5bb76
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.3.0.jar
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.3.0.jar
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 17 Jun 2025 16:40:33 GMT
+# Mon, 30 Jun 2025 14:57:14 GMT
 CMD ["xwiki"]
 ```
 
@@ -398,51 +398,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 18 Jun 2025 01:02:25 GMT  
 		Size: 188.8 MB (188832768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48621d0450af455436f1ad36df15616e7eea3b6d4c66b73d7f2f38c8dbe2d156`  
-		Last Modified: Wed, 18 Jun 2025 01:02:38 GMT  
-		Size: 320.2 MB (320236344 bytes)  
+	-	`sha256:3f6f09338eebf738c72f465e133c68ee0f05e20cd5339c5749a100cc5cf00ce6`  
+		Last Modified: Mon, 30 Jun 2025 21:20:35 GMT  
+		Size: 320.6 MB (320645391 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bf47238604e79dc28b8d8a2a1f076938c37c23f2a91e263e373cdc65344c727`  
-		Last Modified: Tue, 17 Jun 2025 18:13:44 GMT  
+	-	`sha256:796fe21beb9fdb620beec71844c511cbeec46aa0ec58ed6c0d7606d8c4be599c`  
+		Last Modified: Mon, 30 Jun 2025 17:44:02 GMT  
 		Size: 2.4 MB (2431591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6defc4475a7ad697ea7cbf6b565f861c2251c509103425c63ad0ec2b9f56803a`  
-		Last Modified: Tue, 17 Jun 2025 18:13:53 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:59132191218e29c8df94a983fe69a8a290229ec1b1a62e46045a5ce92a842f4e`  
+		Last Modified: Mon, 30 Jun 2025 17:44:02 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4208cc380eeff6f25d2d2d85e5274bea94af45d75b9744ebfab5f8dd11de0d1`  
-		Last Modified: Tue, 17 Jun 2025 18:13:57 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:23f30b29917f7f71a619c0280972a910761b4ceb61547405d287896b3eb3c402`  
+		Last Modified: Mon, 30 Jun 2025 17:44:02 GMT  
+		Size: 2.4 KB (2367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d58144950a5783e93e7d41953126d00879d641e3aa01b09db372530c34f2aad`  
-		Last Modified: Tue, 17 Jun 2025 18:14:01 GMT  
-		Size: 6.6 KB (6581 bytes)  
+	-	`sha256:c5fdf84fd31b8e10dcedb80bd8ed04a176c023b05ae482af47b1f80c7b1cb126`  
+		Last Modified: Mon, 30 Jun 2025 17:44:02 GMT  
+		Size: 6.6 KB (6574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef193692c05e2e7d83139a3c6a9c4ae30a82166ef6fd430d11b806b9b96e1515`  
-		Last Modified: Tue, 17 Jun 2025 18:14:04 GMT  
-		Size: 2.5 KB (2510 bytes)  
+	-	`sha256:2a6ddb09284008d4dcab621953827100874bbf96db16e92a6cfd1114479208ce`  
+		Last Modified: Mon, 30 Jun 2025 17:44:02 GMT  
+		Size: 2.5 KB (2507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mysql` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:ae49ac3a1d614215da1533eea54e4e342bb04c467981e2bdd453423a64fea956
+$ docker pull xwiki@sha256:12ea96836a8ed8895563e1246fdc16f0426c901456a6c3ee65e45f4391bcef3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9198039 bytes)**  
+-	Total Size: **9.2 MB (9199782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f4c3f25f2bf726f907427a936d441b6b45fe8081644e33612850c630b159720`
+-	Image ID: `sha256:b637ec78f089aacc6fd145f75f774aba97243b9af61fc5d90af22a8d851cb79a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29d8f67639c7f098d79c903ac4f39774d2f0e554ed84c734e9bd153f49d97e2f`  
-		Last Modified: Tue, 17 Jun 2025 21:07:43 GMT  
-		Size: 9.2 MB (9155666 bytes)  
+	-	`sha256:6b062e8a0e026e9642a258ee2f123dbb387ec34a34a5b947ceae3288be43fc85`  
+		Last Modified: Mon, 30 Jun 2025 21:07:30 GMT  
+		Size: 9.2 MB (9157409 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d996d8033ae7a9a88da0ef319858cae8a227a10748ad20aa4d746759866eb3a6`  
-		Last Modified: Tue, 17 Jun 2025 21:07:43 GMT  
+	-	`sha256:7f6e1ae149c4a69ab234faa485034d0d0d2ea98833c43dc8f4121e726e67371f`  
+		Last Modified: Mon, 30 Jun 2025 21:07:31 GMT  
 		Size: 42.4 KB (42373 bytes)  
 		MIME: application/vnd.in-toto+json
