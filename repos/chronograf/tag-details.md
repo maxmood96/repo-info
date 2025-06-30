@@ -399,11 +399,11 @@ $ docker pull chronograf@sha256:b6a6d39e20abbc3db33205d680f93a1d19657299aa2b0b48
 
 -	Layers:
 	-	`sha256:5195b085c22b585bbb874c8273bee971bfc5088c086391d9ae9c8cb92b96f599`  
-		Last Modified: Wed, 16 Apr 2025 16:54:32 GMT  
+		Last Modified: Mon, 30 Jun 2025 11:15:41 GMT  
 		Size: 240.5 KB (240541 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cfdd35f7cb83c7a7195c2e7e30f801140fb9d8c443199e4d501a3a9211b8d82b`  
-		Last Modified: Wed, 16 Apr 2025 16:54:32 GMT  
+		Last Modified: Mon, 30 Jun 2025 11:15:41 GMT  
 		Size: 17.9 KB (17855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -785,11 +785,11 @@ $ docker pull chronograf@sha256:b6a6d39e20abbc3db33205d680f93a1d19657299aa2b0b48
 
 -	Layers:
 	-	`sha256:5195b085c22b585bbb874c8273bee971bfc5088c086391d9ae9c8cb92b96f599`  
-		Last Modified: Wed, 16 Apr 2025 16:54:32 GMT  
+		Last Modified: Mon, 30 Jun 2025 11:15:41 GMT  
 		Size: 240.5 KB (240541 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cfdd35f7cb83c7a7195c2e7e30f801140fb9d8c443199e4d501a3a9211b8d82b`  
-		Last Modified: Wed, 16 Apr 2025 16:54:32 GMT  
+		Last Modified: Mon, 30 Jun 2025 11:15:41 GMT  
 		Size: 17.9 KB (17855 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3208,11 +3208,11 @@ $ docker pull chronograf@sha256:b6a6d39e20abbc3db33205d680f93a1d19657299aa2b0b48
 
 -	Layers:
 	-	`sha256:5195b085c22b585bbb874c8273bee971bfc5088c086391d9ae9c8cb92b96f599`  
-		Last Modified: Wed, 16 Apr 2025 16:54:32 GMT  
+		Last Modified: Mon, 30 Jun 2025 11:15:41 GMT  
 		Size: 240.5 KB (240541 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cfdd35f7cb83c7a7195c2e7e30f801140fb9d8c443199e4d501a3a9211b8d82b`  
-		Last Modified: Wed, 16 Apr 2025 16:54:32 GMT  
+		Last Modified: Mon, 30 Jun 2025 11:15:41 GMT  
 		Size: 17.9 KB (17855 bytes)  
 		MIME: application/vnd.in-toto+json
 
