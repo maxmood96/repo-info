@@ -11106,14 +11106,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-pip/copyright`)
 - `MPL-2.0`
 - `Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-pip=24.0+dfsg-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip_24.0%2bdfsg-1ubuntu1.1.dsc' python-pip_24.0+dfsg-1ubuntu1.1.dsc 2416 SHA512:a1c37cbe4b8178d6fa50bbd33b2bc32a606f7c0fbf509b71177c09aaedbabf922ed3002380212ad0e08bdc75ecb52890654d87aaffa16f4799ba9eebb326c59a
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip_24.0%2bdfsg.orig.tar.xz' python-pip_24.0+dfsg.orig.tar.xz 1298912 SHA512:17c2ae27a0448938f1dabb33933acd1b4a9015d7bf6c2844e873f10495bc110d289b75b13afd849bd99eb1e2f1eaa103641594e4ecd9ba5d6f423344a3988ccb
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-pip/python-pip_24.0%2bdfsg-1ubuntu1.1.debian.tar.xz' python-pip_24.0+dfsg-1ubuntu1.1.debian.tar.xz 22288 SHA512:738a27b2fb17c7f74c224e45ab57ddd2d6b12436c14ccbc1cfefedca457b1e92397fc5054733e77db476853dd0f061995fb7c1040c35e87bfbc034eb5ed92e05
-```
 
 ### `dpkg` source package: `python-psutil=5.9.8-2build2`
 
