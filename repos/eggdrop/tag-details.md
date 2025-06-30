@@ -4,6 +4,7 @@
 
 -	[`eggdrop:1.10`](#eggdrop110)
 -	[`eggdrop:1.10.0`](#eggdrop1100)
+-	[`eggdrop:1.10.1rc1`](#eggdrop1101rc1)
 -	[`eggdrop:1.9`](#eggdrop19)
 -	[`eggdrop:1.9.5`](#eggdrop195)
 -	[`eggdrop:develop`](#eggdropdevelop)
@@ -655,6 +656,10 @@ $ docker pull eggdrop@sha256:7f123e51f800694ec3f3d2c2c46c6b1223181862a3c9b03ff4e
 		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
 		Size: 18.9 KB (18904 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `eggdrop:1.10.1rc1`
+
+**does not exist** (yet?)
 
 ## `eggdrop:1.9`
 
