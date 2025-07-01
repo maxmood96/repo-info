@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e567569b9c9c24ac75c067bf8a0de0a1ab114864b2a94d90a3651d1bc8bf5610`
-- Created: `2025-06-17T16:40:33Z`
-- Virtual Size: ~ 1.24 Gb  
+- Image ID: `sha256:c3dd6b97f75ac27162920686b00b84d3ef388545cc312e6e47a33f86a27b7caa`
+- Created: `2025-06-30T14:57:14Z`
+- Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.42`
   - `TOMCAT_SHA512=eb09be6df829ebc1fb8851282888966101e878b2c4a507623f3acabc2a1337b89271b4ad7b9361f0bf4bcfe7b5cfec93617bd716043c68afef029c080fff6546`
-  - `XWIKI_VERSION=17.4.1`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.4.1`
-  - `XWIKI_DOWNLOAD_SHA256=59dcf56f6b97c21d42bbebd7a2f4020be6ad77365b9e291740d3950513e6dbf0`
+  - `XWIKI_VERSION=17.5.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.5.0`
+  - `XWIKI_DOWNLOAD_SHA256=d3990a0f14897c6e748ca7160e748569e572e806c7beba820bf5018cc9fa933c`
   - `MYSQL_JDBC_VERSION=9.3.0`
   - `MYSQL_JDBC_SHA256=6c8e6692b521376d89bc5618c16cdeaf8c61854329f4fa25677ed08776c5bb76`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0`
@@ -3591,15 +3591,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.6`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.7`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.6`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.6`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.6`
-- `python3.12=3.12.3-1ubuntu0.6`
-- `python3.12-minimal=3.12.3-1ubuntu0.6`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.7`
+- `python3.12=3.12.3-1ubuntu0.7`
+- `python3.12-minimal=3.12.3-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3621,9 +3621,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.7.dsc' python3.12_3.12.3-1ubuntu0.7.dsc 3920 SHA512:2dfc4b39a6e9900e919b2fbcb4ac155d87062a1464dd56941c19326b9ac2be23589763fb4feef8fff2525e86bf216451ad9522957b862b91275eb59ede2d4f40
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.7.debian.tar.xz' python3.12_3.12.3-1ubuntu0.7.debian.tar.xz 253996 SHA512:18c320d930832737ea1239d2f13272568a123b2e736086dc24eab7abb4948efe0a009f971ad5d5316313bef50d297d72382ef4617599825b9227e6e12774b338
+```
 
 ### `dpkg` source package: `raptor2=2.0.16-3ubuntu0.1`
 
