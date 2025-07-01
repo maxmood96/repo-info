@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49e82bd56a73d3c52c998380920906d84cf23e7e61d754c0e3cc1e8c7c4d242c`
-- Created: `2025-04-30T19:42:17Z`
-- Virtual Size: ~ 702.26 Mb  
+- Image ID: `sha256:52765c99f65c84627ecff56f4aff68f76e020b81789c219f49f650e764b00a1e`
+- Created: `2025-06-09T23:45:55Z`
+- Virtual Size: ~ 702.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1750,11 +1750,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.23+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.23+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=72.1-3`
+### `dpkg` source package: `icu=72.1-3+deb12u1`
 
 Binary Packages:
 
-- `libicu72:amd64=72.1-3`
+- `libicu72:amd64=72.1-3+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libicu72/copyright`)
 
@@ -1764,18 +1764,18 @@ Licenses: (parsed from: `/usr/share/doc/libicu72/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=72.1-3
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1-3.dsc' icu_72.1-3.dsc 2252 SHA256:fdb557502398e70fe74502f5c2e5ec436b7c7f267420fba7ceaca7ce501dbf6e
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1-3.debian.tar.xz' icu_72.1-3.debian.tar.xz 62172 SHA256:e7b9edb525c7c94043577920dc5f1cc63c18e362a07b44d3e3ec39e89f174bb6
+$ apt-get source -qq --print-uris icu=72.1-3+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1-3%2bdeb12u1.dsc' icu_72.1-3+deb12u1.dsc 2284 SHA256:8fd50a21664422b2dd5df4e20175dce3396c89a3a85363db26dd4529bba62a92
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1-3%2bdeb12u1.debian.tar.xz' icu_72.1-3+deb12u1.debian.tar.xz 63620 SHA256:bd6b27fc0a18f6044a47cd96c7d687720b95e4f592718bf8e34c6391b7753a1d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/72.1-3/ (for browsing the source)
-- https://sources.debian.net/src/icu/72.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/72.1-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/72.1-3+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/icu/72.1-3+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/72.1-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ijs=0.35-15`
 
