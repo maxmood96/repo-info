@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:cb0c4ff1723765cb85f2a3cd958edcc0292f455782b047fa24f84760e9d76a4a
+$ docker pull maven@sha256:d45ee0fc241ae56b6c8b89f4662684b36a4f7b56ddd2f50aba706da969647133
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -114,19 +114,19 @@ $ docker pull maven@sha256:f6e240b3091f20d11eb44a4f1e81e077b9537a364a00e590e9405
 ### `maven:3-amazoncorretto-21-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4bca827cadce129c6d189b42dc40a4afe9c558c36ef814937a3616925ef67d1a
+$ docker pull maven@sha256:d25ff814bb96c6ad2daaae95b59ec35a92b08bd2e8ad967140234a0d2846b4a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251827351 bytes)**  
+-	Total Size: **251.8 MB (251827338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1eeceb4db56b6b56078c1cf1cf5972063adbee7232848614aeabbfeca116b3a`
+-	Image ID: `sha256:ff93a9a8671965b3ceb560adcfd93c8caa73dfbc3281e7cd0587bddb14a3c010`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+# Sun, 22 Jun 2025 10:21:55 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Sun, 22 Jun 2025 10:21:55 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '5fdaed0a262b975776b1d5c0170d2e86b1be1e98b27ef97114b04ec9ac7f011d *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sun, 22 Jun 2025 10:21:55 GMT
@@ -162,51 +162,51 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31a64c8691d89d95a9bfafc966940d14539bd376229d163e0a4a31e91fec3922`  
-		Last Modified: Mon, 23 Jun 2025 21:43:19 GMT  
-		Size: 214.8 MB (214795244 bytes)  
+	-	`sha256:ed5b8d7103131be53c7169c468cccee7b0184582c313e8f544e083c3ee9e147b`  
+		Last Modified: Tue, 01 Jul 2025 14:34:25 GMT  
+		Size: 214.8 MB (214795237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3393d88ef67dcc359b3f5167ba80e94424ac6880754f707577b9947bb30a2549`  
-		Last Modified: Mon, 23 Jun 2025 17:45:19 GMT  
-		Size: 9.0 MB (8953395 bytes)  
+	-	`sha256:1e0dc1b4475f9a8a35f11725db714d9527d80e5bc669ad3235e5a8151d831d7f`  
+		Last Modified: Tue, 01 Jul 2025 12:48:22 GMT  
+		Size: 9.0 MB (8953386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c240130d221e4028f2c1ea05c59f7c9e7247fc03107757f46ef0a5ded982e636`  
-		Last Modified: Mon, 23 Jun 2025 17:45:19 GMT  
-		Size: 850.0 B  
+	-	`sha256:643d29adae445cb2f703741b12ceb685598f93d512dc16e08125c3a6fdc10541`  
+		Last Modified: Tue, 01 Jul 2025 12:48:22 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4612b4ebcf2e19751e3333edcbb10e34bb4ecad0f85ce3fc640fc9e44fcf581c`  
-		Last Modified: Mon, 23 Jun 2025 17:45:19 GMT  
-		Size: 155.0 B  
+	-	`sha256:d28a22fd797eea961d21491fd98954f75a96d7aff60790d8a534f920f9a6782c`  
+		Last Modified: Tue, 01 Jul 2025 12:48:22 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:c235c84aa5cdfd58d52753c067315da39f712b0e6ca1790680d64cc4de7a616d
+$ docker pull maven@sha256:7cd70dd0d757d66d545e808f8105e61635ee5a64140648483451e6600f9f203c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3146804 bytes)**  
+-	Total Size: **3.1 MB (3146803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6d706d3991baf92017b5b3fddda65246011447f3103ef52c3f4fe9456871e61`
+-	Image ID: `sha256:ecfad22433257fbecfe72e8b65149903e32573c803d8a3b9dd9d40f6d189463e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:488376ab71c8245d4dd0a31afb4aaa473e6d54ee5d018bb0a012d562ae0695ea`  
-		Last Modified: Mon, 23 Jun 2025 20:29:08 GMT  
+	-	`sha256:acf8a8cdfc13469782db085175239bc696c0cf16b7a6b87da2008a3f95b754c7`  
+		Last Modified: Tue, 01 Jul 2025 14:27:41 GMT  
 		Size: 3.1 MB (3127409 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6b256d912980026a2ac48d5dd52dc31f277e7f0120102d1a31ef82e5d0ff298`  
-		Last Modified: Mon, 23 Jun 2025 20:29:09 GMT  
-		Size: 19.4 KB (19395 bytes)  
+	-	`sha256:07ba1d3e2f6c54df569959b67339ab37cd7b4681979c242880d514d37cd9e55b`  
+		Last Modified: Tue, 01 Jul 2025 14:27:42 GMT  
+		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
