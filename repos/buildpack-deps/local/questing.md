@@ -3244,13 +3244,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=58
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_58.dsc' lto-disabled-list_58.dsc 1441 SHA512:1f20d1ed77f37b973552bc904d52b523bc4bb58314e10e45ca6c726290142bb3f19a241114f6274416ac02c76556dcf06e33ce20fdfa8da374cb805d6e86e211
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_58.tar.xz' lto-disabled-list_58.tar.xz 13744 SHA512:6c2c2dff37277c35bad4bb7b857aa24dd6063a781fbe6c70470c513d0787ec7cdfaaaa6c4c0b8b7ad8c94f94b63d011bcda018e0eb4fb0fed76a39be991d6bc1
-```
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
