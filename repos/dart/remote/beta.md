@@ -1,7 +1,7 @@
 ## `dart:beta`
 
 ```console
-$ docker pull dart@sha256:2c7d392d8901f8cfb23988638cbabe645c155da9c4df973e3cbc0e5723a9b0e4
+$ docker pull dart@sha256:c1512af8a3f577f39a9d5a0aff31124d32743c0fef62263a14775be532603411
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -87,18 +87,18 @@ $ docker pull dart@sha256:1fe3c6393537588d6cb6f06164cf9191a82876213047a43909d531
 ### `dart:beta` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:3236e1e7e8764b0e7050ed16d9dea57a1df669e9c534970efd538382ebd1b3cc
+$ docker pull dart@sha256:fe7495f659d4c94c18d321b65b9d2a3fef98dcc9a7c5a025db9f32833b0630eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.5 MB (228495385 bytes)**  
+-	Total Size: **228.5 MB (228492679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed524c81192289769ee334fb09313a0c46a73de3943d80e756157a292c47bab0`
+-	Image ID: `sha256:28143825cac80aa66ed480f41f18048a4a2baa79942abf06a7297b80f15ea36d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 04 Jun 2025 07:46:12 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
 # Wed, 04 Jun 2025 07:46:12 GMT
 RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         curl         dnsutils         git         openssh-client         unzip     ;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 04 Jun 2025 07:46:12 GMT
@@ -114,44 +114,44 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ```
 
 -	Layers:
-	-	`sha256:6aafc35ac588733109bc0c55587676a69c7a13b7c2d7306cdb389c2db1299c9c`  
-		Last Modified: Tue, 10 Jun 2025 23:58:28 GMT  
+	-	`sha256:aa4115c1f73522274017cc9ef4668eb7be9359f354969cd6ffca48411714e948`  
+		Last Modified: Tue, 01 Jul 2025 01:14:42 GMT  
 		Size: 23.9 MB (23938744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e91b5445b5cd74396ae398266097364c0789e065f5d63837e18fdabb4c59b0cb`  
-		Last Modified: Fri, 20 Jun 2025 18:55:42 GMT  
-		Size: 49.6 MB (49559425 bytes)  
+	-	`sha256:7e9a384e57dc162d271c967993ad51c536042f8fa44021c63d2f1e1451d01d3c`  
+		Last Modified: Tue, 01 Jul 2025 09:03:37 GMT  
+		Size: 49.6 MB (49556735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ffb13dcfc43925f43218d3c69a9e1dae1baa9b3a09f39e988de50ca0c874616`  
-		Last Modified: Fri, 20 Jun 2025 18:55:34 GMT  
-		Size: 1.2 MB (1224883 bytes)  
+	-	`sha256:29ee7d20d2503756c5a0cea91dd771363af7976637e4c7611f6483e765d74e31`  
+		Last Modified: Tue, 01 Jul 2025 09:03:29 GMT  
+		Size: 1.2 MB (1224878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33cfdf86d4d8c1745e6df8271c6306284b455ce14ac13427517532ada8018659`  
-		Last Modified: Fri, 20 Jun 2025 20:53:53 GMT  
-		Size: 153.8 MB (153772301 bytes)  
+	-	`sha256:e54cf14626c44cbbf6c8cdad8192439621a2898fad741460adf06bb3b3154985`  
+		Last Modified: Tue, 01 Jul 2025 11:53:49 GMT  
+		Size: 153.8 MB (153772290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `dart:beta` - unknown; unknown
 
 ```console
-$ docker pull dart@sha256:bbab9c42787843b1f3691f9b8c5f0d4859b869edcd730cb8bebd407c92b46944
+$ docker pull dart@sha256:631aa673f3fc79ff77071df4cb0f8ca24253c67f32f147fb34eb48a32852dcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.0 KB (18013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f6c4a847f94d1882895eefa04010a6f3a0341dda5fdc05157e59826b29523d7`
+-	Image ID: `sha256:be0ec9c76a84329a726eed350d9264a92e24e6807de9b7397802ce1499609404`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc177005bdd640ce7a1ee92cb4d47b49e785f38b00cc7a02f604a2d930fc3ebf`  
-		Last Modified: Fri, 20 Jun 2025 20:53:31 GMT  
+	-	`sha256:888caaf0a5e7f8286320bfdde4894939f26a1b8b9b95cf249af4134cf115b5b4`  
+		Last Modified: Tue, 01 Jul 2025 11:53:33 GMT  
 		Size: 18.0 KB (18013 bytes)  
 		MIME: application/vnd.in-toto+json
 
