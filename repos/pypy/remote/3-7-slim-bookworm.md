@@ -1,7 +1,7 @@
 ## `pypy:3-7-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:be285467ead38ccafb2d9374a2be40708af9c687374d1767508f25ecbd13045f
+$ docker pull pypy@sha256:5d18aa0232059c991ff8d52f1b528a6ff8f55c86154ba248a270a6eb90975f3a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,18 +83,18 @@ $ docker pull pypy@sha256:7c60a28731513f4ea04bcfc7f64dfa3f1c11b1e62bc3d283c2d131
 ### `pypy:3-7-slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull pypy@sha256:04777e9997897fc17fdc2b0c750147c5825ba63720c998490f90f82c16278c7f
+$ docker pull pypy@sha256:8f73a317152f5686a8eca216301908a37e83f6fa3621ef19dd1cd71369b6ef21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.2 MB (64179625 bytes)**  
+-	Total Size: **64.2 MB (64184493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb261da41a7ddd89b7fcf157609f131da2e86b0260f8a0ba0c2e2225a0f3aacf`
+-	Image ID: `sha256:ca3473f51a096839c192f082019a659b740214953790659b0da227082ba5c6cf`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
 # Wed, 09 Apr 2025 18:15:04 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 09 Apr 2025 18:15:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 09 Apr 2025 18:15:04 GMT
@@ -110,41 +110,41 @@ CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c31cfba902c4f6d2a5fad746d73f53324951d835a806e9483ec49148962a55a3`  
-		Last Modified: Wed, 11 Jun 2025 05:13:40 GMT  
-		Size: 3.3 MB (3324416 bytes)  
+	-	`sha256:8b5481b674083481a2170d09513918e1fac14e06c1efaa1984394a983d044bdb`  
+		Last Modified: Tue, 01 Jul 2025 09:09:58 GMT  
+		Size: 3.3 MB (3329318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce2c7a16a93cc04b4bf858e7856d84733a8c7aa76aa721b68c06fbfdab0dfe45`  
-		Last Modified: Wed, 11 Jun 2025 07:59:40 GMT  
-		Size: 32.8 MB (32777534 bytes)  
+	-	`sha256:f61ac87292e55fe4f7988d87ad9efeb5a543f9d727ff509cb49e3a2a03de3e9c`  
+		Last Modified: Tue, 01 Jul 2025 09:02:56 GMT  
+		Size: 32.8 MB (32777497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:d2867a1b46be8d3371820825ee7d181db1eeec947a92e24aa15712e2ecd26b3f
+$ docker pull pypy@sha256:78453db250eeac6c80af78ce51e73f59c0fed69fab39a03cd614d21ae5281af9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2530760 bytes)**  
+-	Total Size: **2.5 MB (2532119 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c30eb80b254bd2751f1931571d8c7657286d0ca5fb0217b898878498a24116c5`
+-	Image ID: `sha256:a99fa1c74bd7674dbcf60cd5150650b019f40203036f29dbd14ae052791a5c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e4636862dc1d34166c3c693f904948ef63de8d8f8e47e63eef3b3d47c00ac5a7`  
-		Last Modified: Wed, 11 Jun 2025 06:39:24 GMT  
-		Size: 2.5 MB (2506348 bytes)  
+	-	`sha256:b268ae701d8b8d8d3b1d62a534a9396704e510a1ee858d579fb4e559175914c7`  
+		Last Modified: Tue, 01 Jul 2025 09:39:29 GMT  
+		Size: 2.5 MB (2507704 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1a093276c93170527f561767d5d73d8408d7c7893f40c45766219a4d8d2207d1`  
-		Last Modified: Wed, 11 Jun 2025 06:39:25 GMT  
-		Size: 24.4 KB (24412 bytes)  
+	-	`sha256:ee565d54b199569fbae8db55745210cc4bce1bf7ca2f51433dddf23a119f5519`  
+		Last Modified: Tue, 01 Jul 2025 09:39:30 GMT  
+		Size: 24.4 KB (24415 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7-slim-bookworm` - linux; 386
