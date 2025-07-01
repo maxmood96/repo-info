@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d415f0debc8cdf6ddff18b3cabe04f5e6161998494ac7d075c7fe6766f79617b`
+- Image ID: `sha256:89489437634ec4836e24928c7c2dc4586ec8e33fb1787a540d1ba1fb46d9f3bd`
 - Created: `2025-06-04T07:46:12Z`
 - Virtual Size: ~ 816.14 Mb  
   (total size of all layers on-disk)
@@ -1159,11 +1159,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.23+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.23+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=72.1-3`
+### `dpkg` source package: `icu=72.1-3+deb12u1`
 
 Binary Packages:
 
-- `libicu72:amd64=72.1-3`
+- `libicu72:amd64=72.1-3+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libicu72/copyright`)
 
@@ -1173,18 +1173,18 @@ Licenses: (parsed from: `/usr/share/doc/libicu72/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=72.1-3
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1-3.dsc' icu_72.1-3.dsc 2252 SHA256:fdb557502398e70fe74502f5c2e5ec436b7c7f267420fba7ceaca7ce501dbf6e
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1-3.debian.tar.xz' icu_72.1-3.debian.tar.xz 62172 SHA256:e7b9edb525c7c94043577920dc5f1cc63c18e362a07b44d3e3ec39e89f174bb6
+$ apt-get source -qq --print-uris icu=72.1-3+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1-3%2bdeb12u1.dsc' icu_72.1-3+deb12u1.dsc 2284 SHA256:8fd50a21664422b2dd5df4e20175dce3396c89a3a85363db26dd4529bba62a92
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1-3%2bdeb12u1.debian.tar.xz' icu_72.1-3+deb12u1.debian.tar.xz 63620 SHA256:bd6b27fc0a18f6044a47cd96c7d687720b95e4f592718bf8e34c6391b7753a1d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/72.1-3/ (for browsing the source)
-- https://sources.debian.net/src/icu/72.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/72.1-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/72.1-3+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/icu/72.1-3+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/72.1-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2`
 
@@ -1998,11 +1998,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxcrypt/1:4.4.33-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxcrypt/1:4.4.33-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3~deb12u1`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3~deb12u2`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3~deb12u1`
+- `libxml2:amd64=2.9.14+dfsg-1.3~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
@@ -2012,17 +2012,17 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u1.dsc' libxml2_2.9.14+dfsg-1.3~deb12u1.dsc 3110 SHA256:2699cc25c155e7b46c47b732e0a6ba5b97de47d0ad3ccac542fc4271cd180645
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u1.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u1.debian.tar.xz 35100 SHA256:7ea1d2de7fa1d6fd9c5c80acc5a535c3c3e7540f3511ca14544700fe4bbb3279
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.dsc' libxml2_2.9.14+dfsg-1.3~deb12u2.dsc 2610 SHA256:d6f39c8c5fc3d86a53fd7a977c89b0e83913e4d73c230d77cb36dde5a9bc5a73
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u2.debian.tar.xz 39296 SHA256:da8c62b2137dac24d6cc2d4634c85db5314fc3cc89661bace8974a4966ab6a64
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.4+dfsg2-5`
 
