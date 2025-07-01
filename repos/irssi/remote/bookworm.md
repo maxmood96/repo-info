@@ -1,7 +1,7 @@
 ## `irssi:bookworm`
 
 ```console
-$ docker pull irssi@sha256:435eb0e627b2c03f3771ec1863901369fc0c55417efe975c0f4665a4db4d212b
+$ docker pull irssi@sha256:aa739be735f83873499c36593645d8f40848c7d254b61068c24feac71b05f16a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,18 +26,18 @@ $ docker pull irssi@sha256:435eb0e627b2c03f3771ec1863901369fc0c55417efe975c0f466
 ### `irssi:bookworm` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:c78309425463b7b98483a99808028c18223162e1b4e0fc08f4acf3d5185e5125
+$ docker pull irssi@sha256:2cf74b146eb20d0a786822ddb4ef7f40203798e758118233f4ccbca678fd7ed4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51056573 bytes)**  
+-	Total Size: **51.1 MB (51063206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7bfd17e927ba159c48cef3b34ef600af1895223aadee3bb2c1e8f912d8d62b3`
+-	Image ID: `sha256:7edddf868535677204c5a7d28e3cd9f918ca046b0050726b3197a5d26e0b3dcb`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -59,21 +59,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:dad67da3f26bce15939543965e09c4059533b025f707aad72ed3d3f3a09c66f8`  
-		Last Modified: Tue, 10 Jun 2025 23:26:09 GMT  
-		Size: 28.2 MB (28230129 bytes)  
+	-	`sha256:3da95a905ed546f99c4564407923a681757d89651a388ec3f1f5e9bf5ed0b39d`  
+		Last Modified: Tue, 01 Jul 2025 01:14:43 GMT  
+		Size: 28.2 MB (28230143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c527eabd9ddc4a328f3d9a85bdfb58f4faeb145137401a12dc39f4bfb161393a`  
-		Last Modified: Tue, 10 Jun 2025 23:28:38 GMT  
-		Size: 18.2 MB (18230328 bytes)  
+	-	`sha256:57696dd1f4b6f1f7efeb6752d7a80bb66ae467c773bd2562e7a9928f0c282c44`  
+		Last Modified: Tue, 01 Jul 2025 02:13:12 GMT  
+		Size: 18.2 MB (18236940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00ca868d8b1a5e69a8399d68be8dce360dbd28db21c8e29cc5d265b3325c41f5`  
-		Last Modified: Tue, 10 Jun 2025 23:28:37 GMT  
-		Size: 3.3 KB (3321 bytes)  
+	-	`sha256:ae555c7b4028931c40d00bb7e2b2df23217a9bd6a3acd7aef015edaf20a4d63b`  
+		Last Modified: Tue, 01 Jul 2025 02:13:11 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b17dd62e293d3236b70116bb2ce45df643b8b3f56da3a2a2102ed0e7e731dd5`  
-		Last Modified: Tue, 10 Jun 2025 23:28:37 GMT  
-		Size: 4.6 MB (4592763 bytes)  
+	-	`sha256:d6c7e7caf5716f9a8d2e5d567f9eddccd9c185f9db428e3a37553d0a88bd6f87`  
+		Last Modified: Tue, 01 Jul 2025 02:13:11 GMT  
+		Size: 4.6 MB (4592767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -83,42 +83,42 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:c58f380b164e1d39c73e9f2e443640a34bf706b8090b5b23e86f17cb7f29538b
+$ docker pull irssi@sha256:33f6cc46ada596a7ba3d9e2487870476272da7be1b12adf46680601ff484defd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5558679 bytes)**  
+-	Total Size: **5.6 MB (5560036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5874bc2d5309cc30db517717103053d0d5acf3be6ceac08ed808bdd511237efa`
+-	Image ID: `sha256:b00d4a3fe59dcaa298024debd5d2679986855481b9191d45299542ec45b17fbf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d86858e4ce4818847f6b0249532f2712cf39eec4bf728e295a0f1993d2608d32`  
-		Last Modified: Wed, 11 Jun 2025 01:59:41 GMT  
-		Size: 5.5 MB (5539964 bytes)  
+	-	`sha256:d8781938a4c4f6985e9c72d1cf52a4f120e22aef5e312e0cf654de976e5976d8`  
+		Last Modified: Tue, 01 Jul 2025 04:59:40 GMT  
+		Size: 5.5 MB (5541320 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af64def490f26e9d61cdd637aca763e387f47dc4ebfb553546be28f6f78f388c`  
-		Last Modified: Wed, 11 Jun 2025 01:59:42 GMT  
-		Size: 18.7 KB (18715 bytes)  
+	-	`sha256:46c8b16251ee7c9db9c7aaf17775e1a51a425755f03e4edbf96f104947cfe106`  
+		Last Modified: Tue, 01 Jul 2025 04:59:41 GMT  
+		Size: 18.7 KB (18716 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull irssi@sha256:6da2b1cead38b3c656f20023e0f911c65e83be433e9282736c3060ca6777b576
+$ docker pull irssi@sha256:eb829e61b8ec9486d5a3bd7ee33334a907ea01eb6ebb045e96d61dc5b437528b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.2 MB (47224488 bytes)**  
+-	Total Size: **47.2 MB (47230934 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef44e5315de23ebed88cc1fbe236edde1991180d32cbb4bbb090906a2ad70ac0`
+-	Image ID: `sha256:02d1dc5067c2dda8bfca4fc03a784f463815099e7a15b551a9d5c6dc140132f3`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -140,21 +140,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:750907abe8bb5d66304ed40261e1579b6575871f6848cfbd720888c20afd3b67`  
-		Last Modified: Tue, 10 Jun 2025 22:47:31 GMT  
-		Size: 25.8 MB (25762396 bytes)  
+	-	`sha256:57a7872a7ce75b95d171f720f215d4e72b887ae709c5c0b319f93f704bd71e07`  
+		Last Modified: Tue, 01 Jul 2025 01:14:42 GMT  
+		Size: 25.8 MB (25762460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:900879b9b0fd1ed9b73ae5ff929f81a4f06deb0fb420a748443848d76470669f`  
-		Last Modified: Tue, 10 Jun 2025 23:38:50 GMT  
-		Size: 17.0 MB (17014043 bytes)  
+	-	`sha256:c04b27175d0207e3f2a1d1306c9b56f17cd26cc52f3ded230bb415a5415ba9b2`  
+		Last Modified: Tue, 01 Jul 2025 02:25:15 GMT  
+		Size: 17.0 MB (17020413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86cd0805f18288d7fc15544c959bc888fd09de6b9d3f45da6fdaab39e74cd505`  
-		Last Modified: Tue, 10 Jun 2025 23:38:48 GMT  
+	-	`sha256:3b6597ad0c6ae200d96b69675a2d11e1afca99073cf04bf33f1309ee07a71710`  
+		Last Modified: Tue, 01 Jul 2025 02:25:11 GMT  
 		Size: 3.3 KB (3321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbf92caf19e04a5762667c9bf02e1dd9372aca93fb216999a11f72cbbe0c2b81`  
-		Last Modified: Tue, 10 Jun 2025 23:38:49 GMT  
-		Size: 4.4 MB (4444696 bytes)  
+	-	`sha256:c8ac2720265df1d1c796bd2568b9de391a67f2248c3863f9e0aa3939b3649a4c`  
+		Last Modified: Tue, 01 Jul 2025 02:25:14 GMT  
+		Size: 4.4 MB (4444708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -164,42 +164,42 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:9a65c35ca7a4841cfe216a3bbb2829001b24addcd31f54cc5644d5bfa1baf5fa
+$ docker pull irssi@sha256:859315da7c36c471ed1f841d68a0f3a3ae1e27a62add8e52e883dc7906a65fd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5560731 bytes)**  
+-	Total Size: **5.6 MB (5562087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:984231523c38f8f59a3416c26fe558a23d15b6e3ca6546ac4529b8282811f887`
+-	Image ID: `sha256:c2024e844dbac4dc38f743120c9a170064959e26635be185c0eecc63b3fc80d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cbf5a86ba1502f2498d12c83da440114b4845a0aa1a5f95e9c9b33d91ee673cc`  
-		Last Modified: Wed, 11 Jun 2025 01:59:47 GMT  
-		Size: 5.5 MB (5541881 bytes)  
+	-	`sha256:76d3827bd9adfb3ce84f3a4d75e9c14990077cf5d4e20b5b4f6f473f5d1b6d8d`  
+		Last Modified: Tue, 01 Jul 2025 04:59:46 GMT  
+		Size: 5.5 MB (5543237 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff0d1c0bbbc7ea483d496db20ced3483769fe82e18061e3cddeef66384145201`  
-		Last Modified: Wed, 11 Jun 2025 01:59:48 GMT  
+	-	`sha256:a34daf291baab6a320078ce34e8f2cf19f73409e0669b2690d7a645da4a1b93c`  
+		Last Modified: Tue, 01 Jul 2025 04:59:47 GMT  
 		Size: 18.9 KB (18850 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:de01e8e4038af4192722f0f6afdc9046f00a9520cc703d80ffdddb39f51148de
+$ docker pull irssi@sha256:7ce7ba9e357617196015433ab4842333aae9041c13700adacd8b460586f91b36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44843499 bytes)**  
+-	Total Size: **44.8 MB (44848190 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91c684cdd62ae2835898b756ec2486f512b4dfb890996c3f8025129899e35f95`
+-	Image ID: `sha256:e19a43ae7891c28120fa9587f691c84681d65b81bc7795df2087b3c992fe78a7`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -221,21 +221,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:6aafc35ac588733109bc0c55587676a69c7a13b7c2d7306cdb389c2db1299c9c`  
-		Last Modified: Tue, 10 Jun 2025 23:58:28 GMT  
+	-	`sha256:aa4115c1f73522274017cc9ef4668eb7be9359f354969cd6ffca48411714e948`  
+		Last Modified: Tue, 01 Jul 2025 01:14:42 GMT  
 		Size: 23.9 MB (23938744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd6a3a7ce9ef204a44690a67412fef5fad23046e051c492503cfc35aec793aa9`  
-		Last Modified: Tue, 10 Jun 2025 23:40:34 GMT  
-		Size: 16.6 MB (16602241 bytes)  
+	-	`sha256:7d9177b0ec76aa8d0a391119fa755b019362255a6b0288d01ec4742b3770f7f2`  
+		Last Modified: Tue, 01 Jul 2025 02:28:15 GMT  
+		Size: 16.6 MB (16606957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:323d94d24c6284e8a9584986341fccbc3f15877804ec45270c76f6ab9e4ceea6`  
-		Last Modified: Tue, 10 Jun 2025 23:40:33 GMT  
-		Size: 3.3 KB (3321 bytes)  
+	-	`sha256:d19d82ed46321fffc470c4117b1fbf85208e416f3b22021d10d0c457655b56fe`  
+		Last Modified: Tue, 01 Jul 2025 02:28:14 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a04eff44ad16ec4eb71048095d27e51b0274d10fc24d0faab5b8a1ba2433741e`  
-		Last Modified: Tue, 10 Jun 2025 23:40:34 GMT  
-		Size: 4.3 MB (4299161 bytes)  
+	-	`sha256:d65a548007ccf10e75a2958b08b9d5a854fe5d6b43300b2796baf7f2cba5090d`  
+		Last Modified: Tue, 01 Jul 2025 02:28:15 GMT  
+		Size: 4.3 MB (4299133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -245,42 +245,42 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:944e013349826d38d096ee6960fd3e3b30527b62656c9fb6a3fb30400b20de9a
+$ docker pull irssi@sha256:e589bf6c14ad3ff3a2e7cdace865455a6fddee82f436c2a0b12d2b36b2f99277
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5560172 bytes)**  
+-	Total Size: **5.6 MB (5561528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70cecaa25d08213acde5d79bca63b95609d80302f5dda226ddd00e080d1d83e0`
+-	Image ID: `sha256:bf4b8d06c6d2c240363a0ef37885bb3f585a1dd98144584cfe782dfbcaf3e79f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc1f4b56dd34ea018454e05739d0dd2137e90e369de6048b67cdd871fb6a2ad5`  
-		Last Modified: Wed, 11 Jun 2025 01:59:53 GMT  
-		Size: 5.5 MB (5541322 bytes)  
+	-	`sha256:5f5df57dd9de82b403de5a415db0c93795f75165f4066224026f48e78be4c1ba`  
+		Last Modified: Tue, 01 Jul 2025 04:59:52 GMT  
+		Size: 5.5 MB (5542678 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0adf7cd3e6b6e4f181384e73b7466d0f18afbba2e112466c84d732982b26e013`  
-		Last Modified: Wed, 11 Jun 2025 01:59:54 GMT  
+	-	`sha256:e62704b96b4163695906895ed6f72bb5ef0debd8686697c04be425c920b2a8fa`  
+		Last Modified: Tue, 01 Jul 2025 04:59:53 GMT  
 		Size: 18.9 KB (18850 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:d19ae5c4834399786534032dfa911ae14c3ea3ba94b941da7da35dc5e0b05ae3
+$ docker pull irssi@sha256:2b4401070933f94fec804b08723598167b4954489c3799672574eb6614d7bef7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.6 MB (50602075 bytes)**  
+-	Total Size: **50.6 MB (50606844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c38c8a5a55c028aa6e2569591923e6346c3afeb2d68b65b94cb30bad3b04589`
+-	Image ID: `sha256:e78adbc941e2ecbfe8e037c43b878a4bfd33aef60c8530ed5050670acb4cbccf`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -302,21 +302,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49101641fdcb7c0ba8f71bd5a0f777918a056354221a3c6ec104096c54b7a5e9`  
-		Last Modified: Wed, 11 Jun 2025 02:01:00 GMT  
-		Size: 18.0 MB (18008093 bytes)  
+	-	`sha256:41164d3d01a7c735e6fafecc467626a5c77671ce8a0fa33911937eceb8c38ddd`  
+		Last Modified: Tue, 01 Jul 2025 02:59:12 GMT  
+		Size: 18.0 MB (18012869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bb916921f0afa51e72645f6a7b9ed68d3b056276cf67a59c37bd7574f66b7ab`  
-		Last Modified: Wed, 11 Jun 2025 00:10:18 GMT  
+	-	`sha256:c288378b9518626cb677b03f875f3a279e9b3e1d3af9a4f7e6481758a8d790a1`  
+		Last Modified: Tue, 01 Jul 2025 02:59:09 GMT  
 		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38bc6bbd95daeacb0dcfde606b0fddf5723e506ec98ec6b2d3a8ad9bb8b8190c`  
-		Last Modified: Wed, 11 Jun 2025 00:10:20 GMT  
-		Size: 4.5 MB (4512951 bytes)  
+	-	`sha256:efc2884b724db5249d0aad9500cebc9751483a3ac83b2e275d8f184d2b254ede`  
+		Last Modified: Tue, 01 Jul 2025 02:59:09 GMT  
+		Size: 4.5 MB (4512941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -326,42 +326,42 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:4a1962a3eae39004c5a69c7d2f19c249179864427ee83214c24e5cffffc14c3a
+$ docker pull irssi@sha256:4668b89432bb1f15378c5b36370bbeb723a0a51915a16e751bcd77e63e1e928c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5565338 bytes)**  
+-	Total Size: **5.6 MB (5566693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e83d10fdb1ab9f8d8ea67d82dba0fab9e627188c3d396f33605150745e85402`
+-	Image ID: `sha256:4c5f99c57a4120af2a9905abde28d181bfcab8c8f17dae023399f20741caf3d8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:13de2fc105385675bb4f5765f672e237f0310fcf7f004929a8204ec3ce1f8873`  
-		Last Modified: Wed, 11 Jun 2025 01:59:59 GMT  
-		Size: 5.5 MB (5546440 bytes)  
+	-	`sha256:524fc05e8c55d957ff31e66ef6a5b859943d347b177bd2fd895f05e6b32dd142`  
+		Last Modified: Tue, 01 Jul 2025 04:59:58 GMT  
+		Size: 5.5 MB (5547796 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cf7bedde0ca58f57469b965ceac267db43ae666bda070664310630e2e8d3c779`  
-		Last Modified: Wed, 11 Jun 2025 02:00:00 GMT  
-		Size: 18.9 KB (18898 bytes)  
+	-	`sha256:12def9da49abaf40dbc1b26bcf18e573d48b05b9b74c7bd55dd3e42562eccf10`  
+		Last Modified: Tue, 01 Jul 2025 04:59:58 GMT  
+		Size: 18.9 KB (18897 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; 386
 
 ```console
-$ docker pull irssi@sha256:b37d52d9a1deab18f31456981789f369cbaf645970bc43e1c240e7618d84622a
+$ docker pull irssi@sha256:841ce10a555a4196723218d763161d39be9aa991784e1461f2b2d1089fc5a6a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.6 MB (51582623 bytes)**  
+-	Total Size: **51.6 MB (51588308 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efe0d2edd98e50fc4278a2320d403695105b83b6d76eb10446c1897cbb2468c1`
+-	Image ID: `sha256:50d60e4107a0f1e04a16943f7a540afd943b36fc3c190fd23fd146690fc0b46b`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -383,21 +383,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:c3d46fed134488b3ee18c12cb308c8d5520b8c647122c392f9fb76e3e1e2fc61`  
-		Last Modified: Tue, 10 Jun 2025 22:47:25 GMT  
-		Size: 29.2 MB (29212433 bytes)  
+	-	`sha256:88e96ee0cb4c7106f4d6a5cdeaeb171ec22a2484245e406cb5267b2be095937c`  
+		Last Modified: Tue, 01 Jul 2025 01:14:33 GMT  
+		Size: 29.2 MB (29212432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62ce553daa5b6952eec3e672c7744b382f8050768eda58913aeeb063e3865c0`  
-		Last Modified: Tue, 10 Jun 2025 23:28:06 GMT  
-		Size: 17.8 MB (17760093 bytes)  
+	-	`sha256:db64584438752d82a9b1a3659ee66e1250d822e318c4165e2e7156632020ae92`  
+		Last Modified: Tue, 01 Jul 2025 02:13:08 GMT  
+		Size: 17.8 MB (17765828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080b2f93f9d03254074cd5f6e732804229a1e44956262e834c5e410451f261c0`  
-		Last Modified: Tue, 10 Jun 2025 23:28:04 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:7aaad2c9d37fd64940abdb0cf1b139975df6b2a986bd8005c0c8827c059f4a3e`  
+		Last Modified: Tue, 01 Jul 2025 02:13:07 GMT  
+		Size: 3.3 KB (3331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfed092130dffbaebe5f93d077902971f6804e8878bd1c7d322be9516deca865`  
-		Last Modified: Tue, 10 Jun 2025 23:28:05 GMT  
-		Size: 4.6 MB (4606742 bytes)  
+	-	`sha256:1bf72bfc9f4fe9beb9c5fd045cf186c726d7e8249fb500819fb07f8488fe5bf4`  
+		Last Modified: Tue, 01 Jul 2025 02:13:08 GMT  
+		Size: 4.6 MB (4606685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -407,42 +407,42 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:7ab4630985df28324c6742da6f0fe77ad2d24322c36f06db691f7df6c6d48e85
+$ docker pull irssi@sha256:ca0a6fdb7b32ad63613764b3ce001b53c6c02d73238ac3a0b2aea93f3c363402
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5554757 bytes)**  
+-	Total Size: **5.6 MB (5556113 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e802e841a21aab481906c270ca0d23ad4c538d42c3ad3db4a2dcbfefa232094`
+-	Image ID: `sha256:d34d1694f0740b3d00db09ad67db91197fe2a373db58aaac29e1a569d3c767b5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f09338e12767b9027ae388aff3d27ea61e68e22d5567fbe02a9d41334040c671`  
-		Last Modified: Wed, 11 Jun 2025 02:00:09 GMT  
-		Size: 5.5 MB (5536097 bytes)  
+	-	`sha256:5a105a85d6e0a4052e3e4f8228c89561b05d2b9e7260b7f6f3d55a364609acc0`  
+		Last Modified: Tue, 01 Jul 2025 05:00:05 GMT  
+		Size: 5.5 MB (5537453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d16bb974ef759bb85374f6ef0b4959cd65a7a2f47336dd442ae745fa0fb57043`  
-		Last Modified: Wed, 11 Jun 2025 02:00:09 GMT  
+	-	`sha256:5bbe9e806407d30fc47200ab051bc025d9afbccd0dc66869c7447e57dee57829`  
+		Last Modified: Tue, 01 Jul 2025 05:00:06 GMT  
 		Size: 18.7 KB (18660 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; mips64le
 
 ```console
-$ docker pull irssi@sha256:977e119718df50bbd19a36a5bbd66ad218ff3043fb6ac9e103d7110fccaffa4f
+$ docker pull irssi@sha256:df5967c9ede98973f92ca74da7b9845e59664590055eda3936fff81ea857f853
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.0 MB (49980478 bytes)**  
+-	Total Size: **50.0 MB (49988889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bb03769a57bdec1d3af0b5a9e488cf657bcde324ff50885b1b2c7097a9e5fc1`
+-	Image ID: `sha256:5fc6ab6ec0f553393d02077553022cf3ffc5a846e325cb49eec1ab0a0cf73f6c`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -464,21 +464,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:ac3f61581c7f5755d8598b3a0857c417db0251b17c0e4e4f43a5fc0e24023524`  
-		Last Modified: Tue, 10 Jun 2025 22:48:26 GMT  
-		Size: 28.5 MB (28516717 bytes)  
+	-	`sha256:fcacdf0767dbc0b08ad73fb46ff36dc2ec6b87367debc1e5018464dc1d3d7035`  
+		Last Modified: Tue, 01 Jul 2025 01:15:02 GMT  
+		Size: 28.5 MB (28516734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d4e7372554ec27ec85d813713854d5262eaabbdb4dc32c8c7e56921a8eae86b`  
-		Last Modified: Wed, 11 Jun 2025 01:12:24 GMT  
-		Size: 16.9 MB (16905674 bytes)  
+	-	`sha256:3c3296150b7b262494f809274cf6020339620c08ef1d168b011a96b76a4696f6`  
+		Last Modified: Tue, 01 Jul 2025 03:13:55 GMT  
+		Size: 16.9 MB (16913919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5ff12e1ec6727ed09e934c7295439183fc5286de0902c6cef9f11b2d9f49314`  
-		Last Modified: Wed, 11 Jun 2025 00:26:37 GMT  
-		Size: 3.3 KB (3331 bytes)  
+	-	`sha256:91276b554fdd588689b56c518ac2a15d919bb634f6a22ee6229b73e5b4ef0045`  
+		Last Modified: Tue, 01 Jul 2025 03:13:54 GMT  
+		Size: 3.3 KB (3329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e03ed786872e05498eab7aaf02cf0270a30a0b974fb9da9ac3e641b53daf205`  
-		Last Modified: Wed, 11 Jun 2025 00:26:45 GMT  
-		Size: 4.6 MB (4554724 bytes)  
+	-	`sha256:f23f1b6e68adab84bd82f90d3851f6c031bacd4d02f66bbe971adad8f1646307`  
+		Last Modified: Tue, 01 Jul 2025 03:13:55 GMT  
+		Size: 4.6 MB (4554875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -488,38 +488,38 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:c770a8449598b27602779ae4f3d0164cfe9cad85cb912205190e0cd959b71869
+$ docker pull irssi@sha256:7efc3b11581765846c9e124eb7be12d006ee89f759e8a60ce008344e39b6f7b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 KB (18609 bytes)**  
+-	Total Size: **18.6 KB (18608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1b6abdfbfad5c99d1d61ad597a882ddaaf34932d327dc0c32baf097d9dc0175`
+-	Image ID: `sha256:b45946433731fbf58bfb2b4867c99c0ebff3d4bbd3ffc3696a628ff3efd8f9a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cc73a967f4705c4019848b099628330d8299fb0d2f0cfeeb18cb3ef69a675c4c`  
-		Last Modified: Wed, 11 Jun 2025 02:00:14 GMT  
-		Size: 18.6 KB (18609 bytes)  
+	-	`sha256:28afaa65760b79b0c61460fc55fb38d9071cd20a154f175d12689933306f6744`  
+		Last Modified: Tue, 01 Jul 2025 05:00:11 GMT  
+		Size: 18.6 KB (18608 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; ppc64le
 
 ```console
-$ docker pull irssi@sha256:c20fd3c9f2bf411ed5322d839de04168088410805c3c471f7232a5d0f1e4afcc
+$ docker pull irssi@sha256:d7db3672adde7499dd8af37789772056af438e8abe23246337adb4d73717f67f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.6 MB (55619922 bytes)**  
+-	Total Size: **55.6 MB (55629197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66a76bcec290036c73471af32678082a1cc365bfabbf0a46b67ab76e79495058`
+-	Image ID: `sha256:0688eda7c5408dd2a546f6993425c437e3be9f32aa2983f700993f5f39f8fe8b`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -541,20 +541,20 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:c9cd5d5c131a8141631d87d9507a82e0549a2144689442301c07d2da80f39d19`  
-		Last Modified: Tue, 10 Jun 2025 23:58:45 GMT  
-		Size: 32.1 MB (32072795 bytes)  
+	-	`sha256:c5884d20b08634214a92bd5de559876bf30e6c5453807c3014f5480eeba20662`  
+		Last Modified: Tue, 01 Jul 2025 01:15:20 GMT  
+		Size: 32.1 MB (32072820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a6a520695abbed1fc01293696c3a22b603af508c2c5ed1a71733b79560eadcf`  
-		Last Modified: Tue, 10 Jun 2025 23:42:02 GMT  
-		Size: 18.7 MB (18714788 bytes)  
+	-	`sha256:5d742a1b12e4e5a0f841e50a1d0eb563ecdb21579abe63655ed98339109a965d`  
+		Last Modified: Tue, 01 Jul 2025 02:30:36 GMT  
+		Size: 18.7 MB (18724035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61c7d397e2cd771fabe0e4ac6683244a3a9d9e5f85ba9cb4f62c4202038fc778`  
-		Last Modified: Tue, 10 Jun 2025 23:42:01 GMT  
-		Size: 3.3 KB (3321 bytes)  
+	-	`sha256:5a1d8d0f8b0828926b123bfc747c086e2a1881718364a41f1270482420e8af31`  
+		Last Modified: Tue, 01 Jul 2025 02:30:35 GMT  
+		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666b33bf8329fe58b376e60cfddc073f0062d265d9842495d7b1c927b55e15e4`  
-		Last Modified: Tue, 10 Jun 2025 23:42:02 GMT  
+	-	`sha256:94a60cb0716164153511293bb6b417aacb8aecf53d258875f56448b5f5404798`  
+		Last Modified: Tue, 01 Jul 2025 02:30:36 GMT  
 		Size: 4.8 MB (4828986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -565,42 +565,42 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:002c063c745ae7567254ed48d266760bbbc0d1b2881b38c20265cdeac5f9d530
+$ docker pull irssi@sha256:c51496f462044314008b4bafb301aa6237b00791c9adfdd4de262aeb3c6084af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5566566 bytes)**  
+-	Total Size: **5.6 MB (5567922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:509ac224886497da49a5d38deb68bb7e8868b87a6c68f357e18aa604d4a552a5`
+-	Image ID: `sha256:eaf88cba7f474f45a0cbbb4ea3aebdac4c43c036398d83ec0148515e0abf1cc3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1a72821ffb661c143c8f9f1df6836fda88b6b9131339c0099d8ad56a619d1c00`  
-		Last Modified: Wed, 11 Jun 2025 02:00:18 GMT  
-		Size: 5.5 MB (5547778 bytes)  
+	-	`sha256:b200921713979cc7ceaa1d7383cd12b785c182e0b33090d2bc87a16529acad0d`  
+		Last Modified: Tue, 01 Jul 2025 05:00:15 GMT  
+		Size: 5.5 MB (5549134 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1cc24fa3c37b70f91b132b62f882b57ea6119a21e1ebed77f749bc8ea16fa898`  
-		Last Modified: Wed, 11 Jun 2025 02:00:21 GMT  
+	-	`sha256:df20cb41db61ef18d9c5b8d1a6611b712c4a9d412967cea0cbf5a0b4e8da25b0`  
+		Last Modified: Tue, 01 Jul 2025 05:00:15 GMT  
 		Size: 18.8 KB (18788 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:bookworm` - linux; s390x
 
 ```console
-$ docker pull irssi@sha256:e5682db7a9f7bfec610e8ea3745e0d95042d0f90b45d5f1cc21f3997c99f962c
+$ docker pull irssi@sha256:eb6c645f0cc9f7c270b33d1ae81e1a7c9e0e74ac7c3e205baf75cbb642c58b6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.7 MB (49671401 bytes)**  
+-	Total Size: **49.7 MB (49677972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48d726236873d9ab6beb3a67de1269e39d62c895d16256d6b20abdc49e074c84`
+-	Image ID: `sha256:41c2f9f3238b98a44b84739e43f5598b382680e76f7fa8ec5a7535b438cb3fae`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
 # Fri, 05 Apr 2024 21:50:10 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 # Fri, 05 Apr 2024 21:50:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 05 Apr 2024 21:50:10 GMT
@@ -622,21 +622,21 @@ CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd6e08090bd63341cde07cfcb415432bf680a6707f77daebec8e0ce6887e7243`  
-		Last Modified: Tue, 10 Jun 2025 23:37:39 GMT  
-		Size: 18.2 MB (18193546 bytes)  
+	-	`sha256:35cc79993540ba198d282b4b42d2e0de5963f9b7daa15c1cffe3229d4f7cfdce`  
+		Last Modified: Tue, 01 Jul 2025 02:25:38 GMT  
+		Size: 18.2 MB (18200122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3392f772f69d0914e0fc65ad8a0f591d9236a4b39960dfcfe3324c01f435e0f1`  
-		Last Modified: Tue, 10 Jun 2025 23:37:37 GMT  
-		Size: 3.3 KB (3322 bytes)  
+	-	`sha256:b21b44156ae87ed7d82e3dee6bcc308edf8b42d6068b34ae58aea1fa5212597a`  
+		Last Modified: Tue, 01 Jul 2025 02:25:37 GMT  
+		Size: 3.3 KB (3325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04e1bf22de9a351589cec379760cd62679723aa99be653054ccdccc94deabc95`  
-		Last Modified: Tue, 10 Jun 2025 23:37:38 GMT  
-		Size: 4.6 MB (4586648 bytes)  
+	-	`sha256:e67968054f3832c8af6ec21841af3ce496ce9b6dd010826cf433ef481068a8b7`  
+		Last Modified: Tue, 01 Jul 2025 02:25:38 GMT  
+		Size: 4.6 MB (4586682 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -646,23 +646,23 @@ CMD ["irssi"]
 ### `irssi:bookworm` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:24b450c5297e500dc2f33da379ec72bac01c11c231ecd5e13f7c8fd49423b4c8
+$ docker pull irssi@sha256:5fcfc176d1b6d40b147206774627a8fe9bff068bc53c031c3bfc2782bf325d9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5554982 bytes)**  
+-	Total Size: **5.6 MB (5556338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe130fb421769d90242e642daa59671e72ee88161d414ec5a277123cb668e628`
+-	Image ID: `sha256:93284d538a2c3cc2bc3d96e4d5b0e22aeefcd88fd28296baf2412b88318a4f02`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5a6f608e5f5cbbd248340aab576588c39549e420a1a95bdd3ece0450a0b02516`  
-		Last Modified: Wed, 11 Jun 2025 02:00:27 GMT  
-		Size: 5.5 MB (5536266 bytes)  
+	-	`sha256:63f01ce8bf78615b1a6305fd1e0a0477bb3399b2d634e6c0620fc6302d15317c`  
+		Last Modified: Tue, 01 Jul 2025 05:00:21 GMT  
+		Size: 5.5 MB (5537622 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31a4088f467aeb478954db254a6c5ecd1e5df45ed7d85a6f44d417b4e6f3a30d`  
-		Last Modified: Wed, 11 Jun 2025 02:00:27 GMT  
+	-	`sha256:f1b39ba887c39429b1a7213fd368025ca74111de20205aea2241eb6eacc22681`  
+		Last Modified: Tue, 01 Jul 2025 05:00:21 GMT  
 		Size: 18.7 KB (18716 bytes)  
 		MIME: application/vnd.in-toto+json
