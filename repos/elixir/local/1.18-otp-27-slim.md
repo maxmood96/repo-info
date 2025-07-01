@@ -1,4 +1,4 @@
-# `elixir:1.18.4-slim`
+# `elixir:1.18.4-otp-27-slim`
 
 ## Docker Metadata
 

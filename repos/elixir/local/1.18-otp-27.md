@@ -1,9 +1,9 @@
-# `elixir:1.18.4`
+# `elixir:1.18.4-otp-27`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8492e371c4951adf2ef509ac851ccdb34efb4b1df5b0512c3f8cdb1eda44da24`
-- Created: `2025-05-22T14:26:26Z`
+- Image ID: `sha256:2a8505909270b633cc27e316c77dfaee1936c2a86eff726258afd74d947c3ac2`
+- Created: `2025-06-30T17:24:21Z`
 - Virtual Size: ~ 1.66 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
