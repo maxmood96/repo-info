@@ -17,7 +17,7 @@
 ## `couchdb:3`
 
 ```console
-$ docker pull couchdb@sha256:bfcf56d766f6e85aa3834197dee2849ed013907130fbe7b137269bc6dab84b29
+$ docker pull couchdb@sha256:6c8a172f9aa64020d9a28c5bcbbdd3852b12125c5a2ab7345d7525abc8c7dfad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -154,19 +154,19 @@ $ docker pull couchdb@sha256:db1bc8f53da793df6ec4ba90325f1fc6fa8c0096396ed58d2f3
 ### `couchdb:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:10159340a455126b0039a6c616258f61fb48990722b7f3d78e38efedf4f49dda
+$ docker pull couchdb@sha256:b4afa7cd0272b0d4093f886b715f7df199ce2beda69aaf8736ba2730cc974d9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.1 MB (139053286 bytes)**  
+-	Total Size: **139.1 MB (139071247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efb0ac883c2114cb29fc3bb00964d3d6212c74a83f58fb0a49105f2c1300c3dd`
+-	Image ID: `sha256:7521534de45ccf5227aba43a1b0681c1fcd41ff93302471185eee8cecd984bed`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -204,201 +204,201 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699d385a56341dc4eca603cb63ab006476be4cb08a753f1a480b78c61886d5bd`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:057de2c1ce1dcd497a72f651e85c5c264a9cddcc9c4e3a9212efcd2ffde822f9`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39112042a5e68058792d92bcf41abba59268974d788b6d03ca6ae25b9eaae866`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 7.7 MB (7655745 bytes)  
+	-	`sha256:89d789849c49c3d61dca13a6d384124e89af9aba2681d81849d2bfeada0c45e0`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 7.7 MB (7659249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a7ecf0714dbbded096bf25904f9f199b23c48ecd57eb8f188802cfdc07dfd50`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 349.0 KB (348957 bytes)  
+	-	`sha256:f6b17c162e267f76b3133ea3b14f100b475df8ea392a73b744e56298491d4a8b`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 349.0 KB (348987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ce88728e5f50fb5c57ce17692eb0a190d5220159249d0713e0b6c86807b7ba4`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 76.3 KB (76295 bytes)  
+	-	`sha256:ecbfba2339642f8fdfdebf0bfe490c31c7d25f1558bf4e67bfdfd3b74d605b2d`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 76.3 KB (76332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b6ae98000b8ca8683d91c5052250a43963399ae199d45cdcf1f168eb63033c`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 277.0 B  
+	-	`sha256:8f096dbc2fc52e8e0ac8d6f43dcb6f377663760330864e2c53bf1453e5e81888`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0499fd43a835922cb9b40e1e5f35bc3dfd60938e9057a41c88fdc7eb107914de`  
-		Last Modified: Wed, 11 Jun 2025 03:00:21 GMT  
-		Size: 102.9 MB (102889172 bytes)  
+	-	`sha256:19f193351f15f4f3106ca77ca9b3f09a278b33be341eaa6a75b187185d44c4e2`  
+		Last Modified: Tue, 01 Jul 2025 06:56:04 GMT  
+		Size: 102.9 MB (102903570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edf55c9860891b15c1049fc9627990536eda0ab9ba5604790714bd8173acf807`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 379.0 B  
+	-	`sha256:20cf586e8e201643afca22216e624b19e180bf42ff21599c6519ae146fb33993`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 380.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c298ad74cc2a3e12580740ef96b9b4c176d4001c79964f77fc4c77ba8400cf1f`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1246 bytes)  
+	-	`sha256:221274c508510f838ecfef7e14486ae6aa5d8660bb39963e9c06c2c31940d3e5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f88b881ddf57c9aee182c813e18cf4a540c5084a04bd4084b825fb8357beda`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 2.2 KB (2230 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:767cdb597d3b7571d40221e4118697dc65eef4d9a0f5b161c6ec8b1bf5c39b71`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 121.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchdb:3` - unknown; unknown
-
-```console
-$ docker pull couchdb@sha256:bb69d4d557e2b15cc52396a81a672cfbcf78540a39f35df9fa29133b2c30a6b2
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4169825 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:637953dc20bcf8062965e6626dd6f658761d49d2648cc1d23a0a70acdb363c14`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d51eeae0aaee7e2c7db21353b7cdc84592b41dca690513cb7fe9a495c42de539`  
-		Last Modified: Wed, 11 Jun 2025 04:33:22 GMT  
-		Size: 4.1 MB (4137850 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2bba0af450f31f51cea7b7faec600738dcd8e966e98b58d646d3b3adbc9b6aed`  
-		Last Modified: Wed, 11 Jun 2025 04:33:23 GMT  
-		Size: 32.0 KB (31975 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchdb:3` - linux; s390x
-
-```console
-$ docker pull couchdb@sha256:70a40edbe2931e6c61ca9b87d702703e0e34cc81ef669b553645bd4a2f0810a7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.5 MB (136514785 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37111e3b2c0d7ce3fc7329887734346d84810a8a3a03f7c061cfa9822b0ed0ef`
--	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
--	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
-
-```dockerfile
-# Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Tue, 06 May 2025 02:16:43 GMT
-LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
-# Tue, 06 May 2025 02:16:43 GMT
-RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV COUCHDB_VERSION=3.5.0
-# Tue, 06 May 2025 02:16:43 GMT
-RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Tue, 06 May 2025 02:16:43 GMT
-VOLUME [/opt/couchdb/data]
-# Tue, 06 May 2025 02:16:43 GMT
-EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
-# Tue, 06 May 2025 02:16:43 GMT
-CMD ["/opt/couchdb/bin/couchdb"]
-```
-
--	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7638cec2b1dd418d3648a58f2ff51f4e8c71d4a0e97a69f6b885c49b8abb52`  
-		Last Modified: Wed, 11 Jun 2025 02:54:18 GMT  
-		Size: 1.2 KB (1185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e6d3b6a7190c29cd3d87e0534ba65c82ca07adaf7c481f25a3ab2b8ec8dfacd`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 7.4 MB (7391008 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11e13446e7ec304491354fbbde8273cbbff88817c38fee62076eabfbed576426`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 355.6 KB (355626 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41b86396b56c86902e6883c0432db94761c7d4a10454af7b19d3beb817ab4064`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 76.3 KB (76350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3af21af686138b5422cc1b475a30fc9bcc248385f6792df2c32029293e0c00ef`  
-		Last Modified: Wed, 11 Jun 2025 06:07:18 GMT  
-		Size: 276.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95ac84f9fe4e7e9dbc101fb7147afb2731f413cd2d26424bd8ef24fffd8499aa`  
-		Last Modified: Wed, 11 Jun 2025 08:04:07 GMT  
-		Size: 101.8 MB (101798517 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:073097c83b8062b974ad403672e4d054f9554b15f3bc5932428ab43311672a7f`  
-		Last Modified: Wed, 11 Jun 2025 06:07:22 GMT  
-		Size: 379.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9bc7737db2d11df145c6878bfbc548696b7a5e4a1700b644f1d6fee3967979a`  
-		Last Modified: Wed, 11 Jun 2025 06:07:26 GMT  
-		Size: 1.2 KB (1243 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73536106cb7ce4d875ef6b84693f465795d59646d8fc66d0c6a38aa500154eb1`  
-		Last Modified: Wed, 11 Jun 2025 06:07:29 GMT  
+	-	`sha256:09397da69982d94f542b2bf8fdde3b4860486ccdd47539cc9b9afc0b9bd1a3b5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7488eb0b92a2c7ff3502aa1d998b1efd701362b8399b8bd850d8701b3b4e3e59`  
-		Last Modified: Wed, 11 Jun 2025 06:07:32 GMT  
+	-	`sha256:a4ae5a71de8a50502b40c9ff6ccbdd6d0804cf5171bf03695ee630ac525cafed`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:b796d6a9719c7f09f486358d454507e4b9e2dc2153249b862496eebc2a1867e0
+$ docker pull couchdb@sha256:9a97e8b52454838dc7b70ff7a33b60b7947aea730389cbaba963a6765dd4e341
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4165534 bytes)**  
+-	Total Size: **4.2 MB (4171217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92e2bb58e11b7e33906937c1b885fa8b5f509093685cc95c846f05c4fcfa523f`
+-	Image ID: `sha256:b276c1b3b9170df5e035c2a2c7f6de25afb8620bfb50bdf27a83ca54ea4eebc9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7073765a63c504b9f6b446f6076e638256e453ec9c708ac1d161b97891ec87f2`  
-		Last Modified: Wed, 11 Jun 2025 07:33:24 GMT  
-		Size: 4.1 MB (4133753 bytes)  
+	-	`sha256:bf1b2ccaa466fdfdd3b5019257f958be163d0aad3e5050c4ba7e765803b5a55e`  
+		Last Modified: Tue, 01 Jul 2025 07:33:26 GMT  
+		Size: 4.1 MB (4139242 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ff3140839540892dee98635e327daa6ebcfcca43f01a39377bf85635e357921`  
-		Last Modified: Wed, 11 Jun 2025 07:33:25 GMT  
+	-	`sha256:5c720b19990429e8a1f92a410aee8043df9db2dd289beafcb3c7b83c0966b824`  
+		Last Modified: Tue, 01 Jul 2025 07:33:27 GMT  
+		Size: 32.0 KB (31975 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:3` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:ac73fdf4fd54cee56fc8b6a426f51fc1b8e22ec5e16bdbaefaa6ce2f3f0b2664
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **136.5 MB (136519415 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2c56607e8d73bd9020c348266288695dd30b582708275bea02973a416de330b8`
+-	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
+-	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
+
+```dockerfile
+# Tue, 06 May 2025 02:16:43 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Tue, 06 May 2025 02:16:43 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Tue, 06 May 2025 02:16:43 GMT
+RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV COUCHDB_VERSION=3.5.0
+# Tue, 06 May 2025 02:16:43 GMT
+RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
+# Tue, 06 May 2025 02:16:43 GMT
+VOLUME [/opt/couchdb/data]
+# Tue, 06 May 2025 02:16:43 GMT
+EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
+# Tue, 06 May 2025 02:16:43 GMT
+CMD ["/opt/couchdb/bin/couchdb"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2126b1cb24a815801c16b429e02991eaeb9b8f45dc5690d80b3f27caaa0d598`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd567b9748513d6b63ef8171d49c4a79eacd4da3746d8ef2c54060e165cc7480`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 7.4 MB (7396227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a21e60876b291985d5300fdfefe23016d85e5c8079b171e0a5ba04a5f434b6f7`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 355.6 KB (355631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:38fbe52ee3623356d1ca5da444a3b3828a1eba1935602aecabf431b111c871bc`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 76.3 KB (76313 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:076c16c9bf9ab9cd7554a7c638316128a1b7a4111c3b64cf92ce541596bf6d09`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 277.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bce1c620b837005ab7259ef43fac1435a47c9d6d1d6c88df96b61bdda21ea8e4`  
+		Last Modified: Tue, 01 Jul 2025 05:33:15 GMT  
+		Size: 101.8 MB (101797998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:259fccf09046b7349d27cff59cec939bdb16f27ed4e2ec515ab9b12c17287e89`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 381.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4da974b84f7c7b36159ee03225e6ac8a002eaf95f2870fd1920139956c94ee6a`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 1.2 KB (1242 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02fb09fc14b8d03d8f6dd86565c54d412d45fce2c3d7578036f32e4ad55e7dfb`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 2.2 KB (2227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84756ec6179c3645b09f561aa70305b85412d9e158d0d08e9a6afe8cc647f576`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:3` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:fb4d5a7a2d4b1bdf9a531ea16983eaf5950ad70e502fb102ec9390c733f440c1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4166926 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dba334bcd3dd1485ab1044da6e1967868a6e8a57f3eb1c07a726d03cea0bc2ee`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:33fa93d481a94be3718287da6d86cb3be87b783860915c39355c523fa5b5fe38`  
+		Last Modified: Tue, 01 Jul 2025 07:33:31 GMT  
+		Size: 4.1 MB (4135145 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:41ae36a9f81ff5111c4db988dda3ff8e22a9bd6daf6a80703a34344b323544b3`  
+		Last Modified: Tue, 01 Jul 2025 07:33:32 GMT  
 		Size: 31.8 KB (31781 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3-nouveau`
 
 ```console
-$ docker pull couchdb@sha256:93c623b7f212a7a50bf0ac210f8cf65aa29b44e51d8be3e51e51b2e7a39195a5
+$ docker pull couchdb@sha256:46474eb6bc641038d4556d527b8a3f6679856e10a7c97a71bec1dece081fb9e5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -518,18 +518,18 @@ $ docker pull couchdb@sha256:451cd0ac40fced0df08bb2d19e91330773f6539524eb25d23d0
 ### `couchdb:3-nouveau` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:61be76d912255e93b30cf1945f014b4fdf76e855777c534beaa082474c92ea7e
+$ docker pull couchdb@sha256:db116fcf30dc07174fc38f70bf3a5ed76acb76b384b07e17609a7a0d4fc55f46
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.2 MB (155198481 bytes)**  
+-	Total Size: **155.2 MB (155201194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3da0e1bcaaa8669646b95ada35469270b7e5acd29ffdea5c36aedda0a0132286`
+-	Image ID: `sha256:7e47749be40012be2041a5e4a6413494c0488e94101277aa4b1c4f8401321362`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -559,82 +559,82 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1f727c2cbc5714897417b3bf92251c1ca577c681e1cd4980da1e0a2b431cfb1`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:a693cf798537b8f1a0fdb8283841b92e518a7e3197417f3eed4dac1f9bae0758`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed4fcda2a3359e316d27ca77539e490e9675e0c09813866f3057f68bfa46ba52`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 7.7 MB (7655686 bytes)  
+	-	`sha256:e1d69f839f98418c99edccd088b9dc936ff6c5c6d5b86f5d30382d93c8839a13`  
+		Last Modified: Tue, 01 Jul 2025 06:57:06 GMT  
+		Size: 7.7 MB (7659267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d98e53920dc0c838f505bb8f5c58498d1729ede7142b247585fbb6f2eeb9e6f8`  
-		Last Modified: Wed, 11 Jun 2025 03:01:09 GMT  
-		Size: 76.7 MB (76653830 bytes)  
+	-	`sha256:893cbb9e4bbc0e3c46cbd7073378e2b9d3b7721ee9d2729ec716d1aac8f31cb4`  
+		Last Modified: Tue, 01 Jul 2025 06:57:16 GMT  
+		Size: 76.7 MB (76652832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e57bacc8b343b9d3e9cfd79301d2848e9f456723c4ff035f5466a9af631a3e9`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 371.8 KB (371775 bytes)  
+	-	`sha256:4e58f8e109d892b64448dc4c0cb910510c7058ba6af57573e92b30eb8bf4bba5`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 371.8 KB (371802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f14885eef1f40435843adc0a9862dcb7e864f00e793527847a43cb667f768318`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 99.3 KB (99289 bytes)  
+	-	`sha256:4f6091d2f9f55226b99ddd02744efed6dd46834e1131c44504c94e93c9edabf2`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 99.3 KB (99316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a5ab6732cf30b1956d2427f8bb4c0b235684efbba3eef54b998ed3e670b32a`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 275.0 B  
+	-	`sha256:e024635eecf21ef2e7fc52aeba13bb7c50099099c5f787f2ef206a7bafddebaf`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf39d19cde025967aed40a9b4330c966ec21090d4ddbad6f805ec6361f9b4b25`  
-		Last Modified: Wed, 11 Jun 2025 03:01:07 GMT  
-		Size: 42.3 MB (42338343 bytes)  
+	-	`sha256:2ff2eb34a38bf8e6324b0b05a365aa266e2ce19a21192834a2d214405b5e6070`  
+		Last Modified: Tue, 01 Jul 2025 06:57:12 GMT  
+		Size: 42.3 MB (42338418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:608b4fdb60bc3e355862f2bc7e1cb9d10c1010116ac9b3ffb19574d033f3bdc0`  
-		Last Modified: Wed, 11 Jun 2025 03:01:05 GMT  
+	-	`sha256:b1c2a290261296ae3b0ab6c38c3822b9cefff7157669181e9560346de7918dc3`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:28b3f34e3cae365f40577b9d4cc00022c011cf439378a8f7f391049df355ba7b
+$ docker pull couchdb@sha256:2cad67354524c81e1e6d392712f9bac8d070950ebeae5cfd2a484ce58d64fa68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3677812 bytes)**  
+-	Total Size: **3.7 MB (3679168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb60e8de67c02bbc6d9d397dfaa4b367c76d915a7b52700c4cb64dd1cd02060c`
+-	Image ID: `sha256:85dd2ebc36f137ab0571fc6d33fa8de49e0795d02fd68f55233675757bc7fd7a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50114b44d6ab1e22d0f8189abebe1eaf92f096aa041486cae8923f1191f5000a`  
-		Last Modified: Wed, 11 Jun 2025 04:33:31 GMT  
-		Size: 3.7 MB (3653066 bytes)  
+	-	`sha256:7881b6766c55e9334fd6ca448ba3c6db249961c146494732c05e1117dfacf2e4`  
+		Last Modified: Tue, 01 Jul 2025 07:33:36 GMT  
+		Size: 3.7 MB (3654422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b1f7b285a519755f67215c2d46c1b594fd3c7cec213165681b8ecf947d092ebc`  
-		Last Modified: Wed, 11 Jun 2025 04:33:32 GMT  
+	-	`sha256:cf649ca3e42aeb205c12902d05cfc9891032a7f6690241e8b327d5376c7705ff`  
+		Last Modified: Tue, 01 Jul 2025 07:33:36 GMT  
 		Size: 24.7 KB (24746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchdb:3-nouveau` - linux; s390x
 
 ```console
-$ docker pull couchdb@sha256:9428288909b8b8780ff7256cfaa475dfa7cae9787a8c199fa25a5484feeb957c
+$ docker pull couchdb@sha256:2e9d03343ad4bd4cc7bb44b910458c53408d1724d6449c081d98f6798b01f0e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.0 MB (149996183 bytes)**  
+-	Total Size: **150.0 MB (150005135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a7a848960ad42d247b6c8cff11f2fb2bb2db639481885f9fef05176da69d826`
+-	Image ID: `sha256:dae7f63d7c73b16e52b8061076c6de3a1cdc31f37d33b0eeff77201ba2f14cad`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -664,71 +664,71 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27c5344ebf30f80f4535f49a310b31534afd0e30faa287c2f76794168336c12`  
-		Last Modified: Wed, 11 Jun 2025 02:53:08 GMT  
-		Size: 1.2 KB (1185 bytes)  
+	-	`sha256:d1cfd19a3932c2cefb87deb176dedfae9fc04b2c159d13af1e7639a7d297b0cd`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7613b58989fe943ef5c79460458da358ff15e59da26c00710d2b35058e86fc`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 7.4 MB (7391037 bytes)  
+	-	`sha256:ba12806f817aa737143cd871d66cf31e264802e3fbdeb94528ae0fa19a20c0e9`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 7.4 MB (7396271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ae980140a28827f67b7331e73db1665544940532e164e45c80b6c78379bc623`  
-		Last Modified: Wed, 11 Jun 2025 02:53:13 GMT  
-		Size: 73.1 MB (73075802 bytes)  
+	-	`sha256:ee4225734fe1d0f4799937a239f3a4d7327e995e5306e116644452a997890a0c`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 73.1 MB (73079488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09451d171b5334d09ddef99e66f401719ea42fefd74cc946f70f4e144d2b9773`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 378.1 KB (378095 bytes)  
+	-	`sha256:7c27b651fab7650b0ed9ace9430ced920feef406ca24cbabea45762025fe0a84`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 378.1 KB (378098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ebcb908b216a8512e6db9e0369099fabf5cc207e27ff06cb96a606556ebe5db`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 99.4 KB (99419 bytes)  
+	-	`sha256:2a4ff360bc1afd86e2255f945cd5031ed759fecda6fbefa405a888015f571364`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 99.4 KB (99447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae4c49bd5f4e303ad8871abcc0328792f4c36d63a3bac236266189eaa875aee`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
+	-	`sha256:f2c5086a911f2ad88703f95c02030c4e899521b38ac62e7b5360b015c1fbb6da`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
 		Size: 278.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e22ced4f81a0aa6f3cec1052bab74c62d3fd61860da74efd2ea47f1dbcb5287`  
-		Last Modified: Wed, 11 Jun 2025 02:53:12 GMT  
-		Size: 42.2 MB (42162095 bytes)  
+	-	`sha256:b4701041b714fbef33c400888a08cebe1aaf3490d9ba9ff876fe569e66148c95`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 42.2 MB (42162137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18e6a140c73952436c63b826d49f3ca1dc4502867f54809f6ffa15309f5196cf`  
-		Last Modified: Wed, 11 Jun 2025 02:53:10 GMT  
+	-	`sha256:32968435ed0d8750d29229da48a7882876a71a95456168578e0abd55dc63fa26`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:d644aae5f48deb39ab35807efd7339906fe75ae9f71da8dc3dfb7a7ececc3927
+$ docker pull couchdb@sha256:dc986a0227184267e2b1388c7df99f41bfc6d295ff97256c587a14068483bf26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3669483 bytes)**  
+-	Total Size: **3.7 MB (3670839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c786bdcb66a2a06c4e498f97125c5286af66de6ece5d3728db0649369c2861`
+-	Image ID: `sha256:200ada59a746cc8d2c7815ed660ac6f65c3f8d740a50f662aa10fa9c8990a8e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7bac52cfee4e7614f1df282f0e9225e48cc895ff50dcbf86b6267184d437230`  
-		Last Modified: Wed, 11 Jun 2025 04:33:36 GMT  
-		Size: 3.6 MB (3644919 bytes)  
+	-	`sha256:d2a7aab3935eb1632112f673e48887ac872c8b7015dbdd26b706dbfb5da24953`  
+		Last Modified: Tue, 01 Jul 2025 07:33:41 GMT  
+		Size: 3.6 MB (3646275 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c788e021d6e8698fd1889130f527f5fea495bae07c9640626152301c9bec455`  
-		Last Modified: Wed, 11 Jun 2025 04:33:37 GMT  
+	-	`sha256:f3202daddc04f223f4ddef033ace3d2788fda2690cf9797dd6b0f7edeeb96e70`  
+		Last Modified: Tue, 01 Jul 2025 07:33:42 GMT  
 		Size: 24.6 KB (24564 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.4`
 
 ```console
-$ docker pull couchdb@sha256:afb5e049d3ea4e2d25b1940ef31a979c21badc84e8c496fc1a8840befc9eb4c4
+$ docker pull couchdb@sha256:791493a47b15464e0d572b603a5f378511edadf9e151b83b4b91a2e6dacd723d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -865,19 +865,19 @@ $ docker pull couchdb@sha256:6dbe8cf2cce545123d8c2bdb7b9392640bc55604238211665fc
 ### `couchdb:3.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:1a43047353f128144897134cb71c61f20c502b7fd2a133280ed3f2d0fa273ab7
+$ docker pull couchdb@sha256:02aee182495702666c9494328844f605d6e29a351e95c98d5e76f43fd3facad4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.3 MB (138313610 bytes)**  
+-	Total Size: **138.3 MB (138331168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64bdcc6fc57768aa8aef4972a25581b940037acbdf3589e67f50c7e504d61326`
+-	Image ID: `sha256:759f07612a24d567b16ed7d68204abf2a8a93eba0c2b85263d6d39fe62b59cf2`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -915,91 +915,91 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699d385a56341dc4eca603cb63ab006476be4cb08a753f1a480b78c61886d5bd`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:057de2c1ce1dcd497a72f651e85c5c264a9cddcc9c4e3a9212efcd2ffde822f9`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39112042a5e68058792d92bcf41abba59268974d788b6d03ca6ae25b9eaae866`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 7.7 MB (7655745 bytes)  
+	-	`sha256:89d789849c49c3d61dca13a6d384124e89af9aba2681d81849d2bfeada0c45e0`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 7.7 MB (7659249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a7ecf0714dbbded096bf25904f9f199b23c48ecd57eb8f188802cfdc07dfd50`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 349.0 KB (348957 bytes)  
+	-	`sha256:f6b17c162e267f76b3133ea3b14f100b475df8ea392a73b744e56298491d4a8b`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 349.0 KB (348987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ce88728e5f50fb5c57ce17692eb0a190d5220159249d0713e0b6c86807b7ba4`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 76.3 KB (76295 bytes)  
+	-	`sha256:ecbfba2339642f8fdfdebf0bfe490c31c7d25f1558bf4e67bfdfd3b74d605b2d`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 76.3 KB (76332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71086ef3a328ee22fd9f6b5afd0dc578eef75738bae0979d7c211804c367273b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:44 GMT  
+	-	`sha256:b250e07422379b841dfb652b751816d5c33fac6656d9c829cd1072d9b6285d5a`  
+		Last Modified: Tue, 01 Jul 2025 06:57:50 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a23cfe052a89028f587864dd16ecb25da8a842d22a8d16105db83a7dff88523`  
-		Last Modified: Wed, 11 Jun 2025 03:01:56 GMT  
-		Size: 102.1 MB (102149499 bytes)  
+	-	`sha256:65abe9f2ac8b8e834b1c0e7e905a9948f43d45b9d3db4f91957a02388d19464e`  
+		Last Modified: Tue, 01 Jul 2025 07:55:35 GMT  
+		Size: 102.2 MB (102163498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37401a866d0c523f979599aad305dcc1b28f2d92604c464030ace3c1d1a5749b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:45 GMT  
+	-	`sha256:dc075ced62bfb75dcca2da6ecc8302684916994141395a2a26a0fe5e549571f6`  
+		Last Modified: Tue, 01 Jul 2025 06:57:55 GMT  
 		Size: 379.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df9c92bb43c702359ec3c51865dafc17ab7f7642621cd02a25c190e3bdf3611b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:44 GMT  
-		Size: 1.2 KB (1244 bytes)  
+	-	`sha256:3ff1ea884708a54eb54b3dd7f771b39216dfc0185bf9bb5c487a051e224ae8a1`  
+		Last Modified: Tue, 01 Jul 2025 06:57:57 GMT  
+		Size: 1.2 KB (1240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b67dd2eb5bff47853414325953ed87d5a67eefb604e3b1bc813405f39c1f41b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:44 GMT  
-		Size: 2.2 KB (2228 bytes)  
+	-	`sha256:42f5ce9bc31ba58d97d41f029abac6b54caa73e066f21f1936319a8f4d06e30e`  
+		Last Modified: Tue, 01 Jul 2025 06:57:58 GMT  
+		Size: 2.2 KB (2224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc996756b1b2d8e077b5e086adc79f871dcbadca13bbe27688455ade339bd901`  
-		Last Modified: Wed, 11 Jun 2025 03:01:45 GMT  
-		Size: 122.0 B  
+	-	`sha256:ebce77b42b013b2a363da72921dfac7a17f025a9a0d80839e28ed5be5d5d422c`  
+		Last Modified: Tue, 01 Jul 2025 06:57:57 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.4` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:9cbca4c5c5b2cb6a9023f65bb6c0908f3d9a07d261716bd1a8c62e39030e833e
+$ docker pull couchdb@sha256:d1e95b2e0ed8142a11bdf8194a4f38a9da0a94863f008398661d9405e11b1777
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4153320 bytes)**  
+-	Total Size: **4.2 MB (4154712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1966bd306a3a908e3d76bb9181208e7eef069abf039c6fcbd47e2d0b303e2cab`
+-	Image ID: `sha256:b9bb5881f82d8257d27c7688a2cc7148d67ee5e6b5a873a8254d65a80c65f610`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a7f2f37c43f0189f42f8645a13a58390a59cd3ca054c874281f366ea9db4ec9`  
-		Last Modified: Wed, 11 Jun 2025 04:33:39 GMT  
-		Size: 4.1 MB (4121959 bytes)  
+	-	`sha256:752d90e1bb6a23ab2ac52a8039545f37fb6f6c25ac33b82bf69b413f8249b9fb`  
+		Last Modified: Tue, 01 Jul 2025 07:33:45 GMT  
+		Size: 4.1 MB (4123351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:74c5b228f90d1c54a515756123083262d5e0ed447fb5aa78cc0c9398b866bb1f`  
-		Last Modified: Wed, 11 Jun 2025 04:33:40 GMT  
+	-	`sha256:b7f2d5a1d89dc28bcf11f7d9c036899913561c69080d7eb8d5c0858c89d6a7de`  
+		Last Modified: Tue, 01 Jul 2025 07:33:46 GMT  
 		Size: 31.4 KB (31361 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchdb:3.4` - linux; s390x
 
 ```console
-$ docker pull couchdb@sha256:de2eb9f1f4fac8d86d4959ddeabce773df9d70bed6378c4b16da741d7c67d445
+$ docker pull couchdb@sha256:5b51d24f9515363f0414248891f43dd3dafa9feeaa944900a3701c1dc3d87551
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.8 MB (135772427 bytes)**  
+-	Total Size: **135.8 MB (135777392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3ec87793c79cc11c1d08f3141b9333c1d595e807f181581dbf470baaa7bea7`
+-	Image ID: `sha256:192b6f53d02ba9c8bd99d0fa1bfd73df2dfcdb0ef4b8045109028d0c36e97b15`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -1037,79 +1037,79 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7638cec2b1dd418d3648a58f2ff51f4e8c71d4a0e97a69f6b885c49b8abb52`  
-		Last Modified: Wed, 11 Jun 2025 02:54:18 GMT  
-		Size: 1.2 KB (1185 bytes)  
+	-	`sha256:d2126b1cb24a815801c16b429e02991eaeb9b8f45dc5690d80b3f27caaa0d598`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e6d3b6a7190c29cd3d87e0534ba65c82ca07adaf7c481f25a3ab2b8ec8dfacd`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 7.4 MB (7391008 bytes)  
+	-	`sha256:fd567b9748513d6b63ef8171d49c4a79eacd4da3746d8ef2c54060e165cc7480`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 7.4 MB (7396227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11e13446e7ec304491354fbbde8273cbbff88817c38fee62076eabfbed576426`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 355.6 KB (355626 bytes)  
+	-	`sha256:a21e60876b291985d5300fdfefe23016d85e5c8079b171e0a5ba04a5f434b6f7`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 355.6 KB (355631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41b86396b56c86902e6883c0432db94761c7d4a10454af7b19d3beb817ab4064`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 76.3 KB (76350 bytes)  
+	-	`sha256:38fbe52ee3623356d1ca5da444a3b3828a1eba1935602aecabf431b111c871bc`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 76.3 KB (76313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:671f8e3c2d0412bc7e6b5d3e3d104ef21e81f9505061dca702f3acb22f819438`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
+	-	`sha256:84442adfb3fccd74c8d9a6dbfeac075831a82bcc81fbb343d2fdb2a6f2ddc522`  
+		Last Modified: Tue, 01 Jul 2025 05:35:00 GMT  
 		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6932103c24c63846d536f898a100bcc12cd99e5e032cf146e09a602ff8cccd9c`  
-		Last Modified: Wed, 11 Jun 2025 02:54:26 GMT  
-		Size: 101.1 MB (101056161 bytes)  
+	-	`sha256:b49592611da8e30a9f0828f2846a5adf3abc594ba46363ca5cea066f2ee51bb9`  
+		Last Modified: Tue, 01 Jul 2025 05:35:12 GMT  
+		Size: 101.1 MB (101055975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0f994523919ffdd34455c64e70e0a4cc2781b725eb741bb7c7f09aa32902346`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 380.0 B  
+	-	`sha256:c7a1b8583d2fac0622737476496f8bd8ef4f6cca7615adf726f8a694ae5d6aac`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
+		Size: 381.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04b06699f67dca2cdca1d34d7eb82daaa3cfff979e2bfafdd916d2f0cde2cf55`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 1.2 KB (1243 bytes)  
+	-	`sha256:ecf271496377b29a716a92772e045770a3cd96a0ee4cb14d8bb0e85b66444172`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
+		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62883712456a7baae762ae5713afaef3ba78931af390f207742967a30069bbe6`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 2.2 KB (2223 bytes)  
+	-	`sha256:db3f250d7726ea434100851e974bd281395a6ccfda5560f78956e7a20639c989`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
+		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47e65fc67b6c9c5da5a6dd0a6e366b1c4e2dc0be902904da075c33291d6eee0f`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
+	-	`sha256:31f2b1d2c7fc3ec047026ff70f0c49401413d04c5c23c7a033bbc572acba8e10`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.4` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:c1e48c4e6ba8dce29cf50910354a1e136893c8d5a75982c5e270e4495d988475
+$ docker pull couchdb@sha256:29513a8635fc2b97d342c1bf0539b28eeb93feffddf0a76f69ae34bec6b02671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4149076 bytes)**  
+-	Total Size: **4.2 MB (4150469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ffbb70c0049b1c544bf4bc1ec39830aaa137e10f5f90f6875dd817558f83fb2`
+-	Image ID: `sha256:4415e069633e081718394dc950d8e374d25d2035c494b0db3e4eb85225a35fc6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e755d8d7f9c61009d72c4795ca7918db818906171411a961778c08d55de7ad14`  
-		Last Modified: Wed, 11 Jun 2025 04:33:44 GMT  
-		Size: 4.1 MB (4117886 bytes)  
+	-	`sha256:2590470e0d87b11cd4d33f9774faa41be6a43ba4c229d061deb8203cc3b8c044`  
+		Last Modified: Tue, 01 Jul 2025 07:33:50 GMT  
+		Size: 4.1 MB (4119278 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:722c60b8401d59cf84efe9f1839da9536282e5fef021d176d7e32819d2fe18e2`  
-		Last Modified: Wed, 11 Jun 2025 04:33:45 GMT  
-		Size: 31.2 KB (31190 bytes)  
+	-	`sha256:bd63ef51fcf32fa04024833483e1f36259d88a8953f69ba728f6739756c69997`  
+		Last Modified: Tue, 01 Jul 2025 07:33:50 GMT  
+		Size: 31.2 KB (31191 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.4-nouveau`
 
 ```console
-$ docker pull couchdb@sha256:8b574553c6c5222bd724b9bf4b50e4b9085952b6c02d2d8830b2efdbacd8aefe
+$ docker pull couchdb@sha256:f7f657adea04937d1a36aa7c79de49f878a1f6135a19b191191470e917989d94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1229,18 +1229,18 @@ $ docker pull couchdb@sha256:8193a64e890ea6c303fb12728d70ed69f2eed19df9ab205e445
 ### `couchdb:3.4-nouveau` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:410e6caeab2c1c636d0cff23197485ab37eb7367f307c0c8dc0db540671d2a5d
+$ docker pull couchdb@sha256:8f2fdbc1d80877b5ad6685351cfbaa7b8f6699684ba10bad370cf6f2e88fbf31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.2 MB (155198594 bytes)**  
+-	Total Size: **155.2 MB (155201131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86a8079cfde2618ee8f206a7f598ee11209c68951446ab3d24386c46c6f9d86`
+-	Image ID: `sha256:d05a5381f5e6a0417f281c0d5f4022c0bee04933cb241ce2a6f5f1de3bc4d390`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -1270,176 +1270,176 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1f727c2cbc5714897417b3bf92251c1ca577c681e1cd4980da1e0a2b431cfb1`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:a693cf798537b8f1a0fdb8283841b92e518a7e3197417f3eed4dac1f9bae0758`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed4fcda2a3359e316d27ca77539e490e9675e0c09813866f3057f68bfa46ba52`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 7.7 MB (7655686 bytes)  
+	-	`sha256:e1d69f839f98418c99edccd088b9dc936ff6c5c6d5b86f5d30382d93c8839a13`  
+		Last Modified: Tue, 01 Jul 2025 06:57:06 GMT  
+		Size: 7.7 MB (7659267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d98e53920dc0c838f505bb8f5c58498d1729ede7142b247585fbb6f2eeb9e6f8`  
-		Last Modified: Wed, 11 Jun 2025 03:01:09 GMT  
-		Size: 76.7 MB (76653830 bytes)  
+	-	`sha256:893cbb9e4bbc0e3c46cbd7073378e2b9d3b7721ee9d2729ec716d1aac8f31cb4`  
+		Last Modified: Tue, 01 Jul 2025 06:57:16 GMT  
+		Size: 76.7 MB (76652832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e57bacc8b343b9d3e9cfd79301d2848e9f456723c4ff035f5466a9af631a3e9`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 371.8 KB (371775 bytes)  
+	-	`sha256:4e58f8e109d892b64448dc4c0cb910510c7058ba6af57573e92b30eb8bf4bba5`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 371.8 KB (371802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f14885eef1f40435843adc0a9862dcb7e864f00e793527847a43cb667f768318`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 99.3 KB (99289 bytes)  
+	-	`sha256:4f6091d2f9f55226b99ddd02744efed6dd46834e1131c44504c94e93c9edabf2`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 99.3 KB (99316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a5ab6732cf30b1956d2427f8bb4c0b235684efbba3eef54b998ed3e670b32a`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 275.0 B  
+	-	`sha256:e024635eecf21ef2e7fc52aeba13bb7c50099099c5f787f2ef206a7bafddebaf`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b6f256aa85ccccc0d3bbef9e209f59aa1579d55174d99eaac3a4b42777789bd`  
-		Last Modified: Wed, 11 Jun 2025 03:02:05 GMT  
-		Size: 42.3 MB (42338456 bytes)  
+	-	`sha256:48fbd185289ac7c8358d7e2bed8aaed955c709ce9d987bc57056ff0ff375e80a`  
+		Last Modified: Tue, 01 Jul 2025 06:59:03 GMT  
+		Size: 42.3 MB (42338356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d89c22bda585ef4b61e91411069feb04fbc1c4d093f833af6c20dd90e76e087e`  
-		Last Modified: Wed, 11 Jun 2025 03:02:03 GMT  
-		Size: 419.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchdb:3.4-nouveau` - unknown; unknown
-
-```console
-$ docker pull couchdb@sha256:ac124ea33cafe773806cda7614f047bb4466439041bdf0e4cf91a7e942959080
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3677176 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19ec303e0389c480782839bd95a10adecc7d574ec4f0c4e864d4cee2ae4f07b0`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:a8886c6ea8456ab8b6a4f204a105b8318814d8ea1272f6d452e49808bfae9afe`  
-		Last Modified: Wed, 11 Jun 2025 04:33:48 GMT  
-		Size: 3.7 MB (3652748 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8873cb330c58c7ee369d7e9d4f6268ff8bb2fc5dfcbceaf10151cea4a7d62bf5`  
-		Last Modified: Wed, 11 Jun 2025 04:33:49 GMT  
-		Size: 24.4 KB (24428 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchdb:3.4-nouveau` - linux; s390x
-
-```console
-$ docker pull couchdb@sha256:f9ee41f46eaa17e55edff1472c24d22cda47250e8b2e197bc75f9db4c672ccdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.0 MB (149995746 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d608cde8564f16961bc9b39844f93e6a019f503e28be9a2c31adb9c7623c44ce`
--	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
-
-```dockerfile
-# Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Tue, 06 May 2025 02:16:43 GMT
-LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
-# Tue, 06 May 2025 02:16:43 GMT
-RUN groupadd -g 5984 -r nouveau && useradd -u 5984 -d /opt/nouveau -g nouveau nouveau # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         openjdk-17-jre-headless      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;    apt-get update;    apt-get install -y curl;    export GNUPGHOME="$(mktemp -d)";    curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;    gpg --batch --import keys.asc;    gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;    command -v gpgconf && gpgconf --kill all || :;    rm -rf "$GNUPGHOME";    apt-key list;    apt purge -y --autoremove curl;    rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN . /etc/os-release;    echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ bookworm main" |        tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;         echo "couchdb-nouveau couchdb-nouveau/enable select false" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive COUCHDB_NOUVEAU_ENABLE=1 apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends             couchdb-nouveau=3.4.3~bookworm;     rm -rf /var/lib/apt/lists/*;     chown -R nouveau:nouveau /opt/nouveau # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=nouveau:nouveau nouveau.yaml /opt/nouveau/etc/nouveau.yaml # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-VOLUME [/opt/nouveau/data]
-# Tue, 06 May 2025 02:16:43 GMT
-EXPOSE map[5987/tcp:{} 5988/tcp:{}]
-# Tue, 06 May 2025 02:16:43 GMT
-CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar" "server" "/opt/nouveau/etc/nouveau.yaml"]
-```
-
--	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27c5344ebf30f80f4535f49a310b31534afd0e30faa287c2f76794168336c12`  
-		Last Modified: Wed, 11 Jun 2025 02:53:08 GMT  
-		Size: 1.2 KB (1185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7613b58989fe943ef5c79460458da358ff15e59da26c00710d2b35058e86fc`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 7.4 MB (7391037 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ae980140a28827f67b7331e73db1665544940532e164e45c80b6c78379bc623`  
-		Last Modified: Wed, 11 Jun 2025 02:53:13 GMT  
-		Size: 73.1 MB (73075802 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09451d171b5334d09ddef99e66f401719ea42fefd74cc946f70f4e144d2b9773`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 378.1 KB (378095 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ebcb908b216a8512e6db9e0369099fabf5cc207e27ff06cb96a606556ebe5db`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 99.4 KB (99419 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae4c49bd5f4e303ad8871abcc0328792f4c36d63a3bac236266189eaa875aee`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 278.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e150935a477bd994159253027a6747e5e05949816b4c22a858c59eb09cfa9e1`  
-		Last Modified: Wed, 11 Jun 2025 02:55:04 GMT  
-		Size: 42.2 MB (42161659 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03dfdacdc57d0aaeb4f7cedef81d33381076a2aeebd232a7eb230ff0be723abe`  
-		Last Modified: Wed, 11 Jun 2025 02:55:01 GMT  
+	-	`sha256:90af7c19e3a60f7af5621c7554c3945d2c05d7d100fc94faa2241bc0617863f6`  
+		Last Modified: Tue, 01 Jul 2025 06:58:55 GMT  
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.4-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:99230260be226e4c58682fdc453fc795b36d10ecbbf5afbc552f42c12ebb2946
+$ docker pull couchdb@sha256:b7036d2db39f6e5d34f47782594b17eb69548e45e5ae0056e657c04b624cf30f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3668870 bytes)**  
+-	Total Size: **3.7 MB (3678529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2864cbe1d945201bb9052920374894a27ec78898751cf69133fa67834a288b3b`
+-	Image ID: `sha256:3b7154cb981ed647d2a758d547eb61cb2ea112ed97e5683dbac3df57eed56096`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56cdfa85b233a1d60442e2c24bb701c10d8c51bb576bff920b4a3ebe1993be09`  
-		Last Modified: Wed, 11 Jun 2025 04:33:53 GMT  
-		Size: 3.6 MB (3644613 bytes)  
+	-	`sha256:a06e03f93cb088abe347b53c29a93b3e4932a65bc0804c7f2ce1e78d58e2a1b3`  
+		Last Modified: Tue, 01 Jul 2025 07:33:54 GMT  
+		Size: 3.7 MB (3654104 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f596efe772c5e037f017516612d75b8f88f8eb7b8674748577be4e8271bd8e04`  
-		Last Modified: Wed, 11 Jun 2025 04:33:54 GMT  
+	-	`sha256:ae52776a14b6d6fee5eafa1a17d4eec080fc654a74f43b9cacfb382cddd5e6fa`  
+		Last Modified: Tue, 01 Jul 2025 07:33:54 GMT  
+		Size: 24.4 KB (24425 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:3.4-nouveau` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:2d1e689142273880955878cf00d254457b870b64b15fc048581cb08a90ec3b73
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **150.0 MB (150004673 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b26f4ed94d27f4a34c25239475d4284a65885a652fda18381323fe4b11c618dc`
+-	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
+
+```dockerfile
+# Tue, 06 May 2025 02:16:43 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Tue, 06 May 2025 02:16:43 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Tue, 06 May 2025 02:16:43 GMT
+RUN groupadd -g 5984 -r nouveau && useradd -u 5984 -d /opt/nouveau -g nouveau nouveau # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         openjdk-17-jre-headless      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;    apt-get update;    apt-get install -y curl;    export GNUPGHOME="$(mktemp -d)";    curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;    gpg --batch --import keys.asc;    gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;    command -v gpgconf && gpgconf --kill all || :;    rm -rf "$GNUPGHOME";    apt-key list;    apt purge -y --autoremove curl;    rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN . /etc/os-release;    echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ bookworm main" |        tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;         echo "couchdb-nouveau couchdb-nouveau/enable select false" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive COUCHDB_NOUVEAU_ENABLE=1 apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends             couchdb-nouveau=3.4.3~bookworm;     rm -rf /var/lib/apt/lists/*;     chown -R nouveau:nouveau /opt/nouveau # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=nouveau:nouveau nouveau.yaml /opt/nouveau/etc/nouveau.yaml # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+VOLUME [/opt/nouveau/data]
+# Tue, 06 May 2025 02:16:43 GMT
+EXPOSE map[5987/tcp:{} 5988/tcp:{}]
+# Tue, 06 May 2025 02:16:43 GMT
+CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar" "server" "/opt/nouveau/etc/nouveau.yaml"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d1cfd19a3932c2cefb87deb176dedfae9fc04b2c159d13af1e7639a7d297b0cd`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ba12806f817aa737143cd871d66cf31e264802e3fbdeb94528ae0fa19a20c0e9`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 7.4 MB (7396271 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ee4225734fe1d0f4799937a239f3a4d7327e995e5306e116644452a997890a0c`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 73.1 MB (73079488 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7c27b651fab7650b0ed9ace9430ced920feef406ca24cbabea45762025fe0a84`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 378.1 KB (378098 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2a4ff360bc1afd86e2255f945cd5031ed759fecda6fbefa405a888015f571364`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 99.4 KB (99447 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2c5086a911f2ad88703f95c02030c4e899521b38ac62e7b5360b015c1fbb6da`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 278.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:98d9984ac2fca5fd474a7e7d4c6ec7d23cea3257ff8739518e18eb3f92b6b19a`  
+		Last Modified: Tue, 01 Jul 2025 05:35:44 GMT  
+		Size: 42.2 MB (42161676 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:55bcd98faf8498e3a4dcdf1bc8c9dce0202498891509715bc939b42491f7d1ae`  
+		Last Modified: Tue, 01 Jul 2025 05:35:41 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:3.4-nouveau` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:259c4e53f6c7daf14fe0f58d22cfca5cf0686d2ea628e86cc2949be0e027578c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 MB (3670226 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22544bcbdd2c144c3b6597d8ba5ce97b8503e5e6673993d9c3e9ea6d7b61b805`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:beca12f02d52dc9f16325f3d24e5065ca1fed1c6bbc436360622379d99b6f80d`  
+		Last Modified: Tue, 01 Jul 2025 07:33:59 GMT  
+		Size: 3.6 MB (3645969 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c5e6e2bb3e3eacd29a89445fd1431cf1ca1c627427540b75ae7721141e09bdd7`  
+		Last Modified: Tue, 01 Jul 2025 07:33:59 GMT  
 		Size: 24.3 KB (24257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.4.3`
 
 ```console
-$ docker pull couchdb@sha256:afb5e049d3ea4e2d25b1940ef31a979c21badc84e8c496fc1a8840befc9eb4c4
+$ docker pull couchdb@sha256:791493a47b15464e0d572b603a5f378511edadf9e151b83b4b91a2e6dacd723d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1576,19 +1576,19 @@ $ docker pull couchdb@sha256:6dbe8cf2cce545123d8c2bdb7b9392640bc55604238211665fc
 ### `couchdb:3.4.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:1a43047353f128144897134cb71c61f20c502b7fd2a133280ed3f2d0fa273ab7
+$ docker pull couchdb@sha256:02aee182495702666c9494328844f605d6e29a351e95c98d5e76f43fd3facad4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.3 MB (138313610 bytes)**  
+-	Total Size: **138.3 MB (138331168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64bdcc6fc57768aa8aef4972a25581b940037acbdf3589e67f50c7e504d61326`
+-	Image ID: `sha256:759f07612a24d567b16ed7d68204abf2a8a93eba0c2b85263d6d39fe62b59cf2`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -1626,91 +1626,91 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699d385a56341dc4eca603cb63ab006476be4cb08a753f1a480b78c61886d5bd`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:057de2c1ce1dcd497a72f651e85c5c264a9cddcc9c4e3a9212efcd2ffde822f9`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39112042a5e68058792d92bcf41abba59268974d788b6d03ca6ae25b9eaae866`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 7.7 MB (7655745 bytes)  
+	-	`sha256:89d789849c49c3d61dca13a6d384124e89af9aba2681d81849d2bfeada0c45e0`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 7.7 MB (7659249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a7ecf0714dbbded096bf25904f9f199b23c48ecd57eb8f188802cfdc07dfd50`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 349.0 KB (348957 bytes)  
+	-	`sha256:f6b17c162e267f76b3133ea3b14f100b475df8ea392a73b744e56298491d4a8b`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 349.0 KB (348987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ce88728e5f50fb5c57ce17692eb0a190d5220159249d0713e0b6c86807b7ba4`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 76.3 KB (76295 bytes)  
+	-	`sha256:ecbfba2339642f8fdfdebf0bfe490c31c7d25f1558bf4e67bfdfd3b74d605b2d`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 76.3 KB (76332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71086ef3a328ee22fd9f6b5afd0dc578eef75738bae0979d7c211804c367273b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:44 GMT  
+	-	`sha256:b250e07422379b841dfb652b751816d5c33fac6656d9c829cd1072d9b6285d5a`  
+		Last Modified: Tue, 01 Jul 2025 06:57:50 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a23cfe052a89028f587864dd16ecb25da8a842d22a8d16105db83a7dff88523`  
-		Last Modified: Wed, 11 Jun 2025 03:01:56 GMT  
-		Size: 102.1 MB (102149499 bytes)  
+	-	`sha256:65abe9f2ac8b8e834b1c0e7e905a9948f43d45b9d3db4f91957a02388d19464e`  
+		Last Modified: Tue, 01 Jul 2025 07:55:35 GMT  
+		Size: 102.2 MB (102163498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37401a866d0c523f979599aad305dcc1b28f2d92604c464030ace3c1d1a5749b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:45 GMT  
+	-	`sha256:dc075ced62bfb75dcca2da6ecc8302684916994141395a2a26a0fe5e549571f6`  
+		Last Modified: Tue, 01 Jul 2025 06:57:55 GMT  
 		Size: 379.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df9c92bb43c702359ec3c51865dafc17ab7f7642621cd02a25c190e3bdf3611b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:44 GMT  
-		Size: 1.2 KB (1244 bytes)  
+	-	`sha256:3ff1ea884708a54eb54b3dd7f771b39216dfc0185bf9bb5c487a051e224ae8a1`  
+		Last Modified: Tue, 01 Jul 2025 06:57:57 GMT  
+		Size: 1.2 KB (1240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b67dd2eb5bff47853414325953ed87d5a67eefb604e3b1bc813405f39c1f41b`  
-		Last Modified: Wed, 11 Jun 2025 03:01:44 GMT  
-		Size: 2.2 KB (2228 bytes)  
+	-	`sha256:42f5ce9bc31ba58d97d41f029abac6b54caa73e066f21f1936319a8f4d06e30e`  
+		Last Modified: Tue, 01 Jul 2025 06:57:58 GMT  
+		Size: 2.2 KB (2224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc996756b1b2d8e077b5e086adc79f871dcbadca13bbe27688455ade339bd901`  
-		Last Modified: Wed, 11 Jun 2025 03:01:45 GMT  
-		Size: 122.0 B  
+	-	`sha256:ebce77b42b013b2a363da72921dfac7a17f025a9a0d80839e28ed5be5d5d422c`  
+		Last Modified: Tue, 01 Jul 2025 06:57:57 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.4.3` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:9cbca4c5c5b2cb6a9023f65bb6c0908f3d9a07d261716bd1a8c62e39030e833e
+$ docker pull couchdb@sha256:d1e95b2e0ed8142a11bdf8194a4f38a9da0a94863f008398661d9405e11b1777
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4153320 bytes)**  
+-	Total Size: **4.2 MB (4154712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1966bd306a3a908e3d76bb9181208e7eef069abf039c6fcbd47e2d0b303e2cab`
+-	Image ID: `sha256:b9bb5881f82d8257d27c7688a2cc7148d67ee5e6b5a873a8254d65a80c65f610`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a7f2f37c43f0189f42f8645a13a58390a59cd3ca054c874281f366ea9db4ec9`  
-		Last Modified: Wed, 11 Jun 2025 04:33:39 GMT  
-		Size: 4.1 MB (4121959 bytes)  
+	-	`sha256:752d90e1bb6a23ab2ac52a8039545f37fb6f6c25ac33b82bf69b413f8249b9fb`  
+		Last Modified: Tue, 01 Jul 2025 07:33:45 GMT  
+		Size: 4.1 MB (4123351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:74c5b228f90d1c54a515756123083262d5e0ed447fb5aa78cc0c9398b866bb1f`  
-		Last Modified: Wed, 11 Jun 2025 04:33:40 GMT  
+	-	`sha256:b7f2d5a1d89dc28bcf11f7d9c036899913561c69080d7eb8d5c0858c89d6a7de`  
+		Last Modified: Tue, 01 Jul 2025 07:33:46 GMT  
 		Size: 31.4 KB (31361 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchdb:3.4.3` - linux; s390x
 
 ```console
-$ docker pull couchdb@sha256:de2eb9f1f4fac8d86d4959ddeabce773df9d70bed6378c4b16da741d7c67d445
+$ docker pull couchdb@sha256:5b51d24f9515363f0414248891f43dd3dafa9feeaa944900a3701c1dc3d87551
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.8 MB (135772427 bytes)**  
+-	Total Size: **135.8 MB (135777392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3ec87793c79cc11c1d08f3141b9333c1d595e807f181581dbf470baaa7bea7`
+-	Image ID: `sha256:192b6f53d02ba9c8bd99d0fa1bfd73df2dfcdb0ef4b8045109028d0c36e97b15`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -1748,79 +1748,79 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7638cec2b1dd418d3648a58f2ff51f4e8c71d4a0e97a69f6b885c49b8abb52`  
-		Last Modified: Wed, 11 Jun 2025 02:54:18 GMT  
-		Size: 1.2 KB (1185 bytes)  
+	-	`sha256:d2126b1cb24a815801c16b429e02991eaeb9b8f45dc5690d80b3f27caaa0d598`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e6d3b6a7190c29cd3d87e0534ba65c82ca07adaf7c481f25a3ab2b8ec8dfacd`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 7.4 MB (7391008 bytes)  
+	-	`sha256:fd567b9748513d6b63ef8171d49c4a79eacd4da3746d8ef2c54060e165cc7480`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 7.4 MB (7396227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11e13446e7ec304491354fbbde8273cbbff88817c38fee62076eabfbed576426`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 355.6 KB (355626 bytes)  
+	-	`sha256:a21e60876b291985d5300fdfefe23016d85e5c8079b171e0a5ba04a5f434b6f7`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 355.6 KB (355631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41b86396b56c86902e6883c0432db94761c7d4a10454af7b19d3beb817ab4064`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 76.3 KB (76350 bytes)  
+	-	`sha256:38fbe52ee3623356d1ca5da444a3b3828a1eba1935602aecabf431b111c871bc`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 76.3 KB (76313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:671f8e3c2d0412bc7e6b5d3e3d104ef21e81f9505061dca702f3acb22f819438`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
+	-	`sha256:84442adfb3fccd74c8d9a6dbfeac075831a82bcc81fbb343d2fdb2a6f2ddc522`  
+		Last Modified: Tue, 01 Jul 2025 05:35:00 GMT  
 		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6932103c24c63846d536f898a100bcc12cd99e5e032cf146e09a602ff8cccd9c`  
-		Last Modified: Wed, 11 Jun 2025 02:54:26 GMT  
-		Size: 101.1 MB (101056161 bytes)  
+	-	`sha256:b49592611da8e30a9f0828f2846a5adf3abc594ba46363ca5cea066f2ee51bb9`  
+		Last Modified: Tue, 01 Jul 2025 05:35:12 GMT  
+		Size: 101.1 MB (101055975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0f994523919ffdd34455c64e70e0a4cc2781b725eb741bb7c7f09aa32902346`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 380.0 B  
+	-	`sha256:c7a1b8583d2fac0622737476496f8bd8ef4f6cca7615adf726f8a694ae5d6aac`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
+		Size: 381.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04b06699f67dca2cdca1d34d7eb82daaa3cfff979e2bfafdd916d2f0cde2cf55`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 1.2 KB (1243 bytes)  
+	-	`sha256:ecf271496377b29a716a92772e045770a3cd96a0ee4cb14d8bb0e85b66444172`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
+		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62883712456a7baae762ae5713afaef3ba78931af390f207742967a30069bbe6`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 2.2 KB (2223 bytes)  
+	-	`sha256:db3f250d7726ea434100851e974bd281395a6ccfda5560f78956e7a20639c989`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
+		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47e65fc67b6c9c5da5a6dd0a6e366b1c4e2dc0be902904da075c33291d6eee0f`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
+	-	`sha256:31f2b1d2c7fc3ec047026ff70f0c49401413d04c5c23c7a033bbc572acba8e10`  
+		Last Modified: Tue, 01 Jul 2025 05:35:01 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.4.3` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:c1e48c4e6ba8dce29cf50910354a1e136893c8d5a75982c5e270e4495d988475
+$ docker pull couchdb@sha256:29513a8635fc2b97d342c1bf0539b28eeb93feffddf0a76f69ae34bec6b02671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4149076 bytes)**  
+-	Total Size: **4.2 MB (4150469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ffbb70c0049b1c544bf4bc1ec39830aaa137e10f5f90f6875dd817558f83fb2`
+-	Image ID: `sha256:4415e069633e081718394dc950d8e374d25d2035c494b0db3e4eb85225a35fc6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e755d8d7f9c61009d72c4795ca7918db818906171411a961778c08d55de7ad14`  
-		Last Modified: Wed, 11 Jun 2025 04:33:44 GMT  
-		Size: 4.1 MB (4117886 bytes)  
+	-	`sha256:2590470e0d87b11cd4d33f9774faa41be6a43ba4c229d061deb8203cc3b8c044`  
+		Last Modified: Tue, 01 Jul 2025 07:33:50 GMT  
+		Size: 4.1 MB (4119278 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:722c60b8401d59cf84efe9f1839da9536282e5fef021d176d7e32819d2fe18e2`  
-		Last Modified: Wed, 11 Jun 2025 04:33:45 GMT  
-		Size: 31.2 KB (31190 bytes)  
+	-	`sha256:bd63ef51fcf32fa04024833483e1f36259d88a8953f69ba728f6739756c69997`  
+		Last Modified: Tue, 01 Jul 2025 07:33:50 GMT  
+		Size: 31.2 KB (31191 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.4.3-nouveau`
 
 ```console
-$ docker pull couchdb@sha256:8b574553c6c5222bd724b9bf4b50e4b9085952b6c02d2d8830b2efdbacd8aefe
+$ docker pull couchdb@sha256:f7f657adea04937d1a36aa7c79de49f878a1f6135a19b191191470e917989d94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1940,18 +1940,18 @@ $ docker pull couchdb@sha256:8193a64e890ea6c303fb12728d70ed69f2eed19df9ab205e445
 ### `couchdb:3.4.3-nouveau` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:410e6caeab2c1c636d0cff23197485ab37eb7367f307c0c8dc0db540671d2a5d
+$ docker pull couchdb@sha256:8f2fdbc1d80877b5ad6685351cfbaa7b8f6699684ba10bad370cf6f2e88fbf31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.2 MB (155198594 bytes)**  
+-	Total Size: **155.2 MB (155201131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86a8079cfde2618ee8f206a7f598ee11209c68951446ab3d24386c46c6f9d86`
+-	Image ID: `sha256:d05a5381f5e6a0417f281c0d5f4022c0bee04933cb241ce2a6f5f1de3bc4d390`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -1981,176 +1981,176 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1f727c2cbc5714897417b3bf92251c1ca577c681e1cd4980da1e0a2b431cfb1`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:a693cf798537b8f1a0fdb8283841b92e518a7e3197417f3eed4dac1f9bae0758`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed4fcda2a3359e316d27ca77539e490e9675e0c09813866f3057f68bfa46ba52`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 7.7 MB (7655686 bytes)  
+	-	`sha256:e1d69f839f98418c99edccd088b9dc936ff6c5c6d5b86f5d30382d93c8839a13`  
+		Last Modified: Tue, 01 Jul 2025 06:57:06 GMT  
+		Size: 7.7 MB (7659267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d98e53920dc0c838f505bb8f5c58498d1729ede7142b247585fbb6f2eeb9e6f8`  
-		Last Modified: Wed, 11 Jun 2025 03:01:09 GMT  
-		Size: 76.7 MB (76653830 bytes)  
+	-	`sha256:893cbb9e4bbc0e3c46cbd7073378e2b9d3b7721ee9d2729ec716d1aac8f31cb4`  
+		Last Modified: Tue, 01 Jul 2025 06:57:16 GMT  
+		Size: 76.7 MB (76652832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e57bacc8b343b9d3e9cfd79301d2848e9f456723c4ff035f5466a9af631a3e9`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 371.8 KB (371775 bytes)  
+	-	`sha256:4e58f8e109d892b64448dc4c0cb910510c7058ba6af57573e92b30eb8bf4bba5`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 371.8 KB (371802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f14885eef1f40435843adc0a9862dcb7e864f00e793527847a43cb667f768318`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 99.3 KB (99289 bytes)  
+	-	`sha256:4f6091d2f9f55226b99ddd02744efed6dd46834e1131c44504c94e93c9edabf2`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 99.3 KB (99316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a5ab6732cf30b1956d2427f8bb4c0b235684efbba3eef54b998ed3e670b32a`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 275.0 B  
+	-	`sha256:e024635eecf21ef2e7fc52aeba13bb7c50099099c5f787f2ef206a7bafddebaf`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b6f256aa85ccccc0d3bbef9e209f59aa1579d55174d99eaac3a4b42777789bd`  
-		Last Modified: Wed, 11 Jun 2025 03:02:05 GMT  
-		Size: 42.3 MB (42338456 bytes)  
+	-	`sha256:48fbd185289ac7c8358d7e2bed8aaed955c709ce9d987bc57056ff0ff375e80a`  
+		Last Modified: Tue, 01 Jul 2025 06:59:03 GMT  
+		Size: 42.3 MB (42338356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d89c22bda585ef4b61e91411069feb04fbc1c4d093f833af6c20dd90e76e087e`  
-		Last Modified: Wed, 11 Jun 2025 03:02:03 GMT  
-		Size: 419.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchdb:3.4.3-nouveau` - unknown; unknown
-
-```console
-$ docker pull couchdb@sha256:ac124ea33cafe773806cda7614f047bb4466439041bdf0e4cf91a7e942959080
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3677176 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19ec303e0389c480782839bd95a10adecc7d574ec4f0c4e864d4cee2ae4f07b0`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:a8886c6ea8456ab8b6a4f204a105b8318814d8ea1272f6d452e49808bfae9afe`  
-		Last Modified: Wed, 11 Jun 2025 04:33:48 GMT  
-		Size: 3.7 MB (3652748 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8873cb330c58c7ee369d7e9d4f6268ff8bb2fc5dfcbceaf10151cea4a7d62bf5`  
-		Last Modified: Wed, 11 Jun 2025 04:33:49 GMT  
-		Size: 24.4 KB (24428 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchdb:3.4.3-nouveau` - linux; s390x
-
-```console
-$ docker pull couchdb@sha256:f9ee41f46eaa17e55edff1472c24d22cda47250e8b2e197bc75f9db4c672ccdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.0 MB (149995746 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d608cde8564f16961bc9b39844f93e6a019f503e28be9a2c31adb9c7623c44ce`
--	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
-
-```dockerfile
-# Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Tue, 06 May 2025 02:16:43 GMT
-LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
-# Tue, 06 May 2025 02:16:43 GMT
-RUN groupadd -g 5984 -r nouveau && useradd -u 5984 -d /opt/nouveau -g nouveau nouveau # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         openjdk-17-jre-headless      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;    apt-get update;    apt-get install -y curl;    export GNUPGHOME="$(mktemp -d)";    curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;    gpg --batch --import keys.asc;    gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;    command -v gpgconf && gpgconf --kill all || :;    rm -rf "$GNUPGHOME";    apt-key list;    apt purge -y --autoremove curl;    rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN . /etc/os-release;    echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ bookworm main" |        tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;         echo "couchdb-nouveau couchdb-nouveau/enable select false" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive COUCHDB_NOUVEAU_ENABLE=1 apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends             couchdb-nouveau=3.4.3~bookworm;     rm -rf /var/lib/apt/lists/*;     chown -R nouveau:nouveau /opt/nouveau # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=nouveau:nouveau nouveau.yaml /opt/nouveau/etc/nouveau.yaml # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-VOLUME [/opt/nouveau/data]
-# Tue, 06 May 2025 02:16:43 GMT
-EXPOSE map[5987/tcp:{} 5988/tcp:{}]
-# Tue, 06 May 2025 02:16:43 GMT
-CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar" "server" "/opt/nouveau/etc/nouveau.yaml"]
-```
-
--	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27c5344ebf30f80f4535f49a310b31534afd0e30faa287c2f76794168336c12`  
-		Last Modified: Wed, 11 Jun 2025 02:53:08 GMT  
-		Size: 1.2 KB (1185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7613b58989fe943ef5c79460458da358ff15e59da26c00710d2b35058e86fc`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 7.4 MB (7391037 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ae980140a28827f67b7331e73db1665544940532e164e45c80b6c78379bc623`  
-		Last Modified: Wed, 11 Jun 2025 02:53:13 GMT  
-		Size: 73.1 MB (73075802 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09451d171b5334d09ddef99e66f401719ea42fefd74cc946f70f4e144d2b9773`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 378.1 KB (378095 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ebcb908b216a8512e6db9e0369099fabf5cc207e27ff06cb96a606556ebe5db`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 99.4 KB (99419 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae4c49bd5f4e303ad8871abcc0328792f4c36d63a3bac236266189eaa875aee`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 278.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e150935a477bd994159253027a6747e5e05949816b4c22a858c59eb09cfa9e1`  
-		Last Modified: Wed, 11 Jun 2025 02:55:04 GMT  
-		Size: 42.2 MB (42161659 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03dfdacdc57d0aaeb4f7cedef81d33381076a2aeebd232a7eb230ff0be723abe`  
-		Last Modified: Wed, 11 Jun 2025 02:55:01 GMT  
+	-	`sha256:90af7c19e3a60f7af5621c7554c3945d2c05d7d100fc94faa2241bc0617863f6`  
+		Last Modified: Tue, 01 Jul 2025 06:58:55 GMT  
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.4.3-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:99230260be226e4c58682fdc453fc795b36d10ecbbf5afbc552f42c12ebb2946
+$ docker pull couchdb@sha256:b7036d2db39f6e5d34f47782594b17eb69548e45e5ae0056e657c04b624cf30f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3668870 bytes)**  
+-	Total Size: **3.7 MB (3678529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2864cbe1d945201bb9052920374894a27ec78898751cf69133fa67834a288b3b`
+-	Image ID: `sha256:3b7154cb981ed647d2a758d547eb61cb2ea112ed97e5683dbac3df57eed56096`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56cdfa85b233a1d60442e2c24bb701c10d8c51bb576bff920b4a3ebe1993be09`  
-		Last Modified: Wed, 11 Jun 2025 04:33:53 GMT  
-		Size: 3.6 MB (3644613 bytes)  
+	-	`sha256:a06e03f93cb088abe347b53c29a93b3e4932a65bc0804c7f2ce1e78d58e2a1b3`  
+		Last Modified: Tue, 01 Jul 2025 07:33:54 GMT  
+		Size: 3.7 MB (3654104 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f596efe772c5e037f017516612d75b8f88f8eb7b8674748577be4e8271bd8e04`  
-		Last Modified: Wed, 11 Jun 2025 04:33:54 GMT  
+	-	`sha256:ae52776a14b6d6fee5eafa1a17d4eec080fc654a74f43b9cacfb382cddd5e6fa`  
+		Last Modified: Tue, 01 Jul 2025 07:33:54 GMT  
+		Size: 24.4 KB (24425 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:3.4.3-nouveau` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:2d1e689142273880955878cf00d254457b870b64b15fc048581cb08a90ec3b73
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **150.0 MB (150004673 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b26f4ed94d27f4a34c25239475d4284a65885a652fda18381323fe4b11c618dc`
+-	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
+
+```dockerfile
+# Tue, 06 May 2025 02:16:43 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Tue, 06 May 2025 02:16:43 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Tue, 06 May 2025 02:16:43 GMT
+RUN groupadd -g 5984 -r nouveau && useradd -u 5984 -d /opt/nouveau -g nouveau nouveau # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         openjdk-17-jre-headless      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;    apt-get update;    apt-get install -y curl;    export GNUPGHOME="$(mktemp -d)";    curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;    gpg --batch --import keys.asc;    gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;    command -v gpgconf && gpgconf --kill all || :;    rm -rf "$GNUPGHOME";    apt-key list;    apt purge -y --autoremove curl;    rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN . /etc/os-release;    echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ bookworm main" |        tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;         echo "couchdb-nouveau couchdb-nouveau/enable select false" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive COUCHDB_NOUVEAU_ENABLE=1 apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends             couchdb-nouveau=3.4.3~bookworm;     rm -rf /var/lib/apt/lists/*;     chown -R nouveau:nouveau /opt/nouveau # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=nouveau:nouveau nouveau.yaml /opt/nouveau/etc/nouveau.yaml # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+VOLUME [/opt/nouveau/data]
+# Tue, 06 May 2025 02:16:43 GMT
+EXPOSE map[5987/tcp:{} 5988/tcp:{}]
+# Tue, 06 May 2025 02:16:43 GMT
+CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar" "server" "/opt/nouveau/etc/nouveau.yaml"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d1cfd19a3932c2cefb87deb176dedfae9fc04b2c159d13af1e7639a7d297b0cd`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ba12806f817aa737143cd871d66cf31e264802e3fbdeb94528ae0fa19a20c0e9`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 7.4 MB (7396271 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ee4225734fe1d0f4799937a239f3a4d7327e995e5306e116644452a997890a0c`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 73.1 MB (73079488 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7c27b651fab7650b0ed9ace9430ced920feef406ca24cbabea45762025fe0a84`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 378.1 KB (378098 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2a4ff360bc1afd86e2255f945cd5031ed759fecda6fbefa405a888015f571364`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 99.4 KB (99447 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2c5086a911f2ad88703f95c02030c4e899521b38ac62e7b5360b015c1fbb6da`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 278.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:98d9984ac2fca5fd474a7e7d4c6ec7d23cea3257ff8739518e18eb3f92b6b19a`  
+		Last Modified: Tue, 01 Jul 2025 05:35:44 GMT  
+		Size: 42.2 MB (42161676 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:55bcd98faf8498e3a4dcdf1bc8c9dce0202498891509715bc939b42491f7d1ae`  
+		Last Modified: Tue, 01 Jul 2025 05:35:41 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:3.4.3-nouveau` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:259c4e53f6c7daf14fe0f58d22cfca5cf0686d2ea628e86cc2949be0e027578c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 MB (3670226 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22544bcbdd2c144c3b6597d8ba5ce97b8503e5e6673993d9c3e9ea6d7b61b805`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:beca12f02d52dc9f16325f3d24e5065ca1fed1c6bbc436360622379d99b6f80d`  
+		Last Modified: Tue, 01 Jul 2025 07:33:59 GMT  
+		Size: 3.6 MB (3645969 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c5e6e2bb3e3eacd29a89445fd1431cf1ca1c627427540b75ae7721141e09bdd7`  
+		Last Modified: Tue, 01 Jul 2025 07:33:59 GMT  
 		Size: 24.3 KB (24257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.5`
 
 ```console
-$ docker pull couchdb@sha256:bfcf56d766f6e85aa3834197dee2849ed013907130fbe7b137269bc6dab84b29
+$ docker pull couchdb@sha256:6c8a172f9aa64020d9a28c5bcbbdd3852b12125c5a2ab7345d7525abc8c7dfad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2287,19 +2287,19 @@ $ docker pull couchdb@sha256:db1bc8f53da793df6ec4ba90325f1fc6fa8c0096396ed58d2f3
 ### `couchdb:3.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:10159340a455126b0039a6c616258f61fb48990722b7f3d78e38efedf4f49dda
+$ docker pull couchdb@sha256:b4afa7cd0272b0d4093f886b715f7df199ce2beda69aaf8736ba2730cc974d9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.1 MB (139053286 bytes)**  
+-	Total Size: **139.1 MB (139071247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efb0ac883c2114cb29fc3bb00964d3d6212c74a83f58fb0a49105f2c1300c3dd`
+-	Image ID: `sha256:7521534de45ccf5227aba43a1b0681c1fcd41ff93302471185eee8cecd984bed`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -2337,201 +2337,201 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699d385a56341dc4eca603cb63ab006476be4cb08a753f1a480b78c61886d5bd`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:057de2c1ce1dcd497a72f651e85c5c264a9cddcc9c4e3a9212efcd2ffde822f9`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39112042a5e68058792d92bcf41abba59268974d788b6d03ca6ae25b9eaae866`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 7.7 MB (7655745 bytes)  
+	-	`sha256:89d789849c49c3d61dca13a6d384124e89af9aba2681d81849d2bfeada0c45e0`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 7.7 MB (7659249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a7ecf0714dbbded096bf25904f9f199b23c48ecd57eb8f188802cfdc07dfd50`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 349.0 KB (348957 bytes)  
+	-	`sha256:f6b17c162e267f76b3133ea3b14f100b475df8ea392a73b744e56298491d4a8b`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 349.0 KB (348987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ce88728e5f50fb5c57ce17692eb0a190d5220159249d0713e0b6c86807b7ba4`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 76.3 KB (76295 bytes)  
+	-	`sha256:ecbfba2339642f8fdfdebf0bfe490c31c7d25f1558bf4e67bfdfd3b74d605b2d`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 76.3 KB (76332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b6ae98000b8ca8683d91c5052250a43963399ae199d45cdcf1f168eb63033c`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 277.0 B  
+	-	`sha256:8f096dbc2fc52e8e0ac8d6f43dcb6f377663760330864e2c53bf1453e5e81888`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0499fd43a835922cb9b40e1e5f35bc3dfd60938e9057a41c88fdc7eb107914de`  
-		Last Modified: Wed, 11 Jun 2025 03:00:21 GMT  
-		Size: 102.9 MB (102889172 bytes)  
+	-	`sha256:19f193351f15f4f3106ca77ca9b3f09a278b33be341eaa6a75b187185d44c4e2`  
+		Last Modified: Tue, 01 Jul 2025 06:56:04 GMT  
+		Size: 102.9 MB (102903570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edf55c9860891b15c1049fc9627990536eda0ab9ba5604790714bd8173acf807`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 379.0 B  
+	-	`sha256:20cf586e8e201643afca22216e624b19e180bf42ff21599c6519ae146fb33993`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 380.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c298ad74cc2a3e12580740ef96b9b4c176d4001c79964f77fc4c77ba8400cf1f`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1246 bytes)  
+	-	`sha256:221274c508510f838ecfef7e14486ae6aa5d8660bb39963e9c06c2c31940d3e5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f88b881ddf57c9aee182c813e18cf4a540c5084a04bd4084b825fb8357beda`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 2.2 KB (2230 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:767cdb597d3b7571d40221e4118697dc65eef4d9a0f5b161c6ec8b1bf5c39b71`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 121.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchdb:3.5` - unknown; unknown
-
-```console
-$ docker pull couchdb@sha256:bb69d4d557e2b15cc52396a81a672cfbcf78540a39f35df9fa29133b2c30a6b2
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4169825 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:637953dc20bcf8062965e6626dd6f658761d49d2648cc1d23a0a70acdb363c14`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d51eeae0aaee7e2c7db21353b7cdc84592b41dca690513cb7fe9a495c42de539`  
-		Last Modified: Wed, 11 Jun 2025 04:33:22 GMT  
-		Size: 4.1 MB (4137850 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2bba0af450f31f51cea7b7faec600738dcd8e966e98b58d646d3b3adbc9b6aed`  
-		Last Modified: Wed, 11 Jun 2025 04:33:23 GMT  
-		Size: 32.0 KB (31975 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchdb:3.5` - linux; s390x
-
-```console
-$ docker pull couchdb@sha256:70a40edbe2931e6c61ca9b87d702703e0e34cc81ef669b553645bd4a2f0810a7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.5 MB (136514785 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37111e3b2c0d7ce3fc7329887734346d84810a8a3a03f7c061cfa9822b0ed0ef`
--	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
--	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
-
-```dockerfile
-# Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Tue, 06 May 2025 02:16:43 GMT
-LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
-# Tue, 06 May 2025 02:16:43 GMT
-RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV COUCHDB_VERSION=3.5.0
-# Tue, 06 May 2025 02:16:43 GMT
-RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Tue, 06 May 2025 02:16:43 GMT
-VOLUME [/opt/couchdb/data]
-# Tue, 06 May 2025 02:16:43 GMT
-EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
-# Tue, 06 May 2025 02:16:43 GMT
-CMD ["/opt/couchdb/bin/couchdb"]
-```
-
--	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7638cec2b1dd418d3648a58f2ff51f4e8c71d4a0e97a69f6b885c49b8abb52`  
-		Last Modified: Wed, 11 Jun 2025 02:54:18 GMT  
-		Size: 1.2 KB (1185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e6d3b6a7190c29cd3d87e0534ba65c82ca07adaf7c481f25a3ab2b8ec8dfacd`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 7.4 MB (7391008 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11e13446e7ec304491354fbbde8273cbbff88817c38fee62076eabfbed576426`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 355.6 KB (355626 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41b86396b56c86902e6883c0432db94761c7d4a10454af7b19d3beb817ab4064`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 76.3 KB (76350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3af21af686138b5422cc1b475a30fc9bcc248385f6792df2c32029293e0c00ef`  
-		Last Modified: Wed, 11 Jun 2025 06:07:18 GMT  
-		Size: 276.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95ac84f9fe4e7e9dbc101fb7147afb2731f413cd2d26424bd8ef24fffd8499aa`  
-		Last Modified: Wed, 11 Jun 2025 08:04:07 GMT  
-		Size: 101.8 MB (101798517 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:073097c83b8062b974ad403672e4d054f9554b15f3bc5932428ab43311672a7f`  
-		Last Modified: Wed, 11 Jun 2025 06:07:22 GMT  
-		Size: 379.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9bc7737db2d11df145c6878bfbc548696b7a5e4a1700b644f1d6fee3967979a`  
-		Last Modified: Wed, 11 Jun 2025 06:07:26 GMT  
-		Size: 1.2 KB (1243 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73536106cb7ce4d875ef6b84693f465795d59646d8fc66d0c6a38aa500154eb1`  
-		Last Modified: Wed, 11 Jun 2025 06:07:29 GMT  
+	-	`sha256:09397da69982d94f542b2bf8fdde3b4860486ccdd47539cc9b9afc0b9bd1a3b5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7488eb0b92a2c7ff3502aa1d998b1efd701362b8399b8bd850d8701b3b4e3e59`  
-		Last Modified: Wed, 11 Jun 2025 06:07:32 GMT  
+	-	`sha256:a4ae5a71de8a50502b40c9ff6ccbdd6d0804cf5171bf03695ee630ac525cafed`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.5` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:b796d6a9719c7f09f486358d454507e4b9e2dc2153249b862496eebc2a1867e0
+$ docker pull couchdb@sha256:9a97e8b52454838dc7b70ff7a33b60b7947aea730389cbaba963a6765dd4e341
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4165534 bytes)**  
+-	Total Size: **4.2 MB (4171217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92e2bb58e11b7e33906937c1b885fa8b5f509093685cc95c846f05c4fcfa523f`
+-	Image ID: `sha256:b276c1b3b9170df5e035c2a2c7f6de25afb8620bfb50bdf27a83ca54ea4eebc9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7073765a63c504b9f6b446f6076e638256e453ec9c708ac1d161b97891ec87f2`  
-		Last Modified: Wed, 11 Jun 2025 07:33:24 GMT  
-		Size: 4.1 MB (4133753 bytes)  
+	-	`sha256:bf1b2ccaa466fdfdd3b5019257f958be163d0aad3e5050c4ba7e765803b5a55e`  
+		Last Modified: Tue, 01 Jul 2025 07:33:26 GMT  
+		Size: 4.1 MB (4139242 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ff3140839540892dee98635e327daa6ebcfcca43f01a39377bf85635e357921`  
-		Last Modified: Wed, 11 Jun 2025 07:33:25 GMT  
+	-	`sha256:5c720b19990429e8a1f92a410aee8043df9db2dd289beafcb3c7b83c0966b824`  
+		Last Modified: Tue, 01 Jul 2025 07:33:27 GMT  
+		Size: 32.0 KB (31975 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:3.5` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:ac73fdf4fd54cee56fc8b6a426f51fc1b8e22ec5e16bdbaefaa6ce2f3f0b2664
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **136.5 MB (136519415 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2c56607e8d73bd9020c348266288695dd30b582708275bea02973a416de330b8`
+-	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
+-	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
+
+```dockerfile
+# Tue, 06 May 2025 02:16:43 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Tue, 06 May 2025 02:16:43 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Tue, 06 May 2025 02:16:43 GMT
+RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV COUCHDB_VERSION=3.5.0
+# Tue, 06 May 2025 02:16:43 GMT
+RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
+# Tue, 06 May 2025 02:16:43 GMT
+VOLUME [/opt/couchdb/data]
+# Tue, 06 May 2025 02:16:43 GMT
+EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
+# Tue, 06 May 2025 02:16:43 GMT
+CMD ["/opt/couchdb/bin/couchdb"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2126b1cb24a815801c16b429e02991eaeb9b8f45dc5690d80b3f27caaa0d598`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd567b9748513d6b63ef8171d49c4a79eacd4da3746d8ef2c54060e165cc7480`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 7.4 MB (7396227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a21e60876b291985d5300fdfefe23016d85e5c8079b171e0a5ba04a5f434b6f7`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 355.6 KB (355631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:38fbe52ee3623356d1ca5da444a3b3828a1eba1935602aecabf431b111c871bc`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 76.3 KB (76313 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:076c16c9bf9ab9cd7554a7c638316128a1b7a4111c3b64cf92ce541596bf6d09`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 277.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bce1c620b837005ab7259ef43fac1435a47c9d6d1d6c88df96b61bdda21ea8e4`  
+		Last Modified: Tue, 01 Jul 2025 05:33:15 GMT  
+		Size: 101.8 MB (101797998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:259fccf09046b7349d27cff59cec939bdb16f27ed4e2ec515ab9b12c17287e89`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 381.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4da974b84f7c7b36159ee03225e6ac8a002eaf95f2870fd1920139956c94ee6a`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 1.2 KB (1242 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02fb09fc14b8d03d8f6dd86565c54d412d45fce2c3d7578036f32e4ad55e7dfb`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 2.2 KB (2227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84756ec6179c3645b09f561aa70305b85412d9e158d0d08e9a6afe8cc647f576`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:3.5` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:fb4d5a7a2d4b1bdf9a531ea16983eaf5950ad70e502fb102ec9390c733f440c1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4166926 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dba334bcd3dd1485ab1044da6e1967868a6e8a57f3eb1c07a726d03cea0bc2ee`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:33fa93d481a94be3718287da6d86cb3be87b783860915c39355c523fa5b5fe38`  
+		Last Modified: Tue, 01 Jul 2025 07:33:31 GMT  
+		Size: 4.1 MB (4135145 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:41ae36a9f81ff5111c4db988dda3ff8e22a9bd6daf6a80703a34344b323544b3`  
+		Last Modified: Tue, 01 Jul 2025 07:33:32 GMT  
 		Size: 31.8 KB (31781 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.5-nouveau`
 
 ```console
-$ docker pull couchdb@sha256:93c623b7f212a7a50bf0ac210f8cf65aa29b44e51d8be3e51e51b2e7a39195a5
+$ docker pull couchdb@sha256:46474eb6bc641038d4556d527b8a3f6679856e10a7c97a71bec1dece081fb9e5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2651,18 +2651,18 @@ $ docker pull couchdb@sha256:451cd0ac40fced0df08bb2d19e91330773f6539524eb25d23d0
 ### `couchdb:3.5-nouveau` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:61be76d912255e93b30cf1945f014b4fdf76e855777c534beaa082474c92ea7e
+$ docker pull couchdb@sha256:db116fcf30dc07174fc38f70bf3a5ed76acb76b384b07e17609a7a0d4fc55f46
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.2 MB (155198481 bytes)**  
+-	Total Size: **155.2 MB (155201194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3da0e1bcaaa8669646b95ada35469270b7e5acd29ffdea5c36aedda0a0132286`
+-	Image ID: `sha256:7e47749be40012be2041a5e4a6413494c0488e94101277aa4b1c4f8401321362`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -2692,82 +2692,82 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1f727c2cbc5714897417b3bf92251c1ca577c681e1cd4980da1e0a2b431cfb1`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:a693cf798537b8f1a0fdb8283841b92e518a7e3197417f3eed4dac1f9bae0758`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed4fcda2a3359e316d27ca77539e490e9675e0c09813866f3057f68bfa46ba52`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 7.7 MB (7655686 bytes)  
+	-	`sha256:e1d69f839f98418c99edccd088b9dc936ff6c5c6d5b86f5d30382d93c8839a13`  
+		Last Modified: Tue, 01 Jul 2025 06:57:06 GMT  
+		Size: 7.7 MB (7659267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d98e53920dc0c838f505bb8f5c58498d1729ede7142b247585fbb6f2eeb9e6f8`  
-		Last Modified: Wed, 11 Jun 2025 03:01:09 GMT  
-		Size: 76.7 MB (76653830 bytes)  
+	-	`sha256:893cbb9e4bbc0e3c46cbd7073378e2b9d3b7721ee9d2729ec716d1aac8f31cb4`  
+		Last Modified: Tue, 01 Jul 2025 06:57:16 GMT  
+		Size: 76.7 MB (76652832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e57bacc8b343b9d3e9cfd79301d2848e9f456723c4ff035f5466a9af631a3e9`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 371.8 KB (371775 bytes)  
+	-	`sha256:4e58f8e109d892b64448dc4c0cb910510c7058ba6af57573e92b30eb8bf4bba5`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 371.8 KB (371802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f14885eef1f40435843adc0a9862dcb7e864f00e793527847a43cb667f768318`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 99.3 KB (99289 bytes)  
+	-	`sha256:4f6091d2f9f55226b99ddd02744efed6dd46834e1131c44504c94e93c9edabf2`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 99.3 KB (99316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a5ab6732cf30b1956d2427f8bb4c0b235684efbba3eef54b998ed3e670b32a`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 275.0 B  
+	-	`sha256:e024635eecf21ef2e7fc52aeba13bb7c50099099c5f787f2ef206a7bafddebaf`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf39d19cde025967aed40a9b4330c966ec21090d4ddbad6f805ec6361f9b4b25`  
-		Last Modified: Wed, 11 Jun 2025 03:01:07 GMT  
-		Size: 42.3 MB (42338343 bytes)  
+	-	`sha256:2ff2eb34a38bf8e6324b0b05a365aa266e2ce19a21192834a2d214405b5e6070`  
+		Last Modified: Tue, 01 Jul 2025 06:57:12 GMT  
+		Size: 42.3 MB (42338418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:608b4fdb60bc3e355862f2bc7e1cb9d10c1010116ac9b3ffb19574d033f3bdc0`  
-		Last Modified: Wed, 11 Jun 2025 03:01:05 GMT  
+	-	`sha256:b1c2a290261296ae3b0ab6c38c3822b9cefff7157669181e9560346de7918dc3`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.5-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:28b3f34e3cae365f40577b9d4cc00022c011cf439378a8f7f391049df355ba7b
+$ docker pull couchdb@sha256:2cad67354524c81e1e6d392712f9bac8d070950ebeae5cfd2a484ce58d64fa68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3677812 bytes)**  
+-	Total Size: **3.7 MB (3679168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb60e8de67c02bbc6d9d397dfaa4b367c76d915a7b52700c4cb64dd1cd02060c`
+-	Image ID: `sha256:85dd2ebc36f137ab0571fc6d33fa8de49e0795d02fd68f55233675757bc7fd7a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50114b44d6ab1e22d0f8189abebe1eaf92f096aa041486cae8923f1191f5000a`  
-		Last Modified: Wed, 11 Jun 2025 04:33:31 GMT  
-		Size: 3.7 MB (3653066 bytes)  
+	-	`sha256:7881b6766c55e9334fd6ca448ba3c6db249961c146494732c05e1117dfacf2e4`  
+		Last Modified: Tue, 01 Jul 2025 07:33:36 GMT  
+		Size: 3.7 MB (3654422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b1f7b285a519755f67215c2d46c1b594fd3c7cec213165681b8ecf947d092ebc`  
-		Last Modified: Wed, 11 Jun 2025 04:33:32 GMT  
+	-	`sha256:cf649ca3e42aeb205c12902d05cfc9891032a7f6690241e8b327d5376c7705ff`  
+		Last Modified: Tue, 01 Jul 2025 07:33:36 GMT  
 		Size: 24.7 KB (24746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchdb:3.5-nouveau` - linux; s390x
 
 ```console
-$ docker pull couchdb@sha256:9428288909b8b8780ff7256cfaa475dfa7cae9787a8c199fa25a5484feeb957c
+$ docker pull couchdb@sha256:2e9d03343ad4bd4cc7bb44b910458c53408d1724d6449c081d98f6798b01f0e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.0 MB (149996183 bytes)**  
+-	Total Size: **150.0 MB (150005135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a7a848960ad42d247b6c8cff11f2fb2bb2db639481885f9fef05176da69d826`
+-	Image ID: `sha256:dae7f63d7c73b16e52b8061076c6de3a1cdc31f37d33b0eeff77201ba2f14cad`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -2797,71 +2797,71 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27c5344ebf30f80f4535f49a310b31534afd0e30faa287c2f76794168336c12`  
-		Last Modified: Wed, 11 Jun 2025 02:53:08 GMT  
-		Size: 1.2 KB (1185 bytes)  
+	-	`sha256:d1cfd19a3932c2cefb87deb176dedfae9fc04b2c159d13af1e7639a7d297b0cd`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7613b58989fe943ef5c79460458da358ff15e59da26c00710d2b35058e86fc`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 7.4 MB (7391037 bytes)  
+	-	`sha256:ba12806f817aa737143cd871d66cf31e264802e3fbdeb94528ae0fa19a20c0e9`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 7.4 MB (7396271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ae980140a28827f67b7331e73db1665544940532e164e45c80b6c78379bc623`  
-		Last Modified: Wed, 11 Jun 2025 02:53:13 GMT  
-		Size: 73.1 MB (73075802 bytes)  
+	-	`sha256:ee4225734fe1d0f4799937a239f3a4d7327e995e5306e116644452a997890a0c`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 73.1 MB (73079488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09451d171b5334d09ddef99e66f401719ea42fefd74cc946f70f4e144d2b9773`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 378.1 KB (378095 bytes)  
+	-	`sha256:7c27b651fab7650b0ed9ace9430ced920feef406ca24cbabea45762025fe0a84`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 378.1 KB (378098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ebcb908b216a8512e6db9e0369099fabf5cc207e27ff06cb96a606556ebe5db`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 99.4 KB (99419 bytes)  
+	-	`sha256:2a4ff360bc1afd86e2255f945cd5031ed759fecda6fbefa405a888015f571364`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 99.4 KB (99447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae4c49bd5f4e303ad8871abcc0328792f4c36d63a3bac236266189eaa875aee`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
+	-	`sha256:f2c5086a911f2ad88703f95c02030c4e899521b38ac62e7b5360b015c1fbb6da`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
 		Size: 278.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e22ced4f81a0aa6f3cec1052bab74c62d3fd61860da74efd2ea47f1dbcb5287`  
-		Last Modified: Wed, 11 Jun 2025 02:53:12 GMT  
-		Size: 42.2 MB (42162095 bytes)  
+	-	`sha256:b4701041b714fbef33c400888a08cebe1aaf3490d9ba9ff876fe569e66148c95`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 42.2 MB (42162137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18e6a140c73952436c63b826d49f3ca1dc4502867f54809f6ffa15309f5196cf`  
-		Last Modified: Wed, 11 Jun 2025 02:53:10 GMT  
+	-	`sha256:32968435ed0d8750d29229da48a7882876a71a95456168578e0abd55dc63fa26`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.5-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:d644aae5f48deb39ab35807efd7339906fe75ae9f71da8dc3dfb7a7ececc3927
+$ docker pull couchdb@sha256:dc986a0227184267e2b1388c7df99f41bfc6d295ff97256c587a14068483bf26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3669483 bytes)**  
+-	Total Size: **3.7 MB (3670839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c786bdcb66a2a06c4e498f97125c5286af66de6ece5d3728db0649369c2861`
+-	Image ID: `sha256:200ada59a746cc8d2c7815ed660ac6f65c3f8d740a50f662aa10fa9c8990a8e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7bac52cfee4e7614f1df282f0e9225e48cc895ff50dcbf86b6267184d437230`  
-		Last Modified: Wed, 11 Jun 2025 04:33:36 GMT  
-		Size: 3.6 MB (3644919 bytes)  
+	-	`sha256:d2a7aab3935eb1632112f673e48887ac872c8b7015dbdd26b706dbfb5da24953`  
+		Last Modified: Tue, 01 Jul 2025 07:33:41 GMT  
+		Size: 3.6 MB (3646275 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c788e021d6e8698fd1889130f527f5fea495bae07c9640626152301c9bec455`  
-		Last Modified: Wed, 11 Jun 2025 04:33:37 GMT  
+	-	`sha256:f3202daddc04f223f4ddef033ace3d2788fda2690cf9797dd6b0f7edeeb96e70`  
+		Last Modified: Tue, 01 Jul 2025 07:33:42 GMT  
 		Size: 24.6 KB (24564 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.5.0`
 
 ```console
-$ docker pull couchdb@sha256:bfcf56d766f6e85aa3834197dee2849ed013907130fbe7b137269bc6dab84b29
+$ docker pull couchdb@sha256:6c8a172f9aa64020d9a28c5bcbbdd3852b12125c5a2ab7345d7525abc8c7dfad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2998,19 +2998,19 @@ $ docker pull couchdb@sha256:db1bc8f53da793df6ec4ba90325f1fc6fa8c0096396ed58d2f3
 ### `couchdb:3.5.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:10159340a455126b0039a6c616258f61fb48990722b7f3d78e38efedf4f49dda
+$ docker pull couchdb@sha256:b4afa7cd0272b0d4093f886b715f7df199ce2beda69aaf8736ba2730cc974d9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.1 MB (139053286 bytes)**  
+-	Total Size: **139.1 MB (139071247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efb0ac883c2114cb29fc3bb00964d3d6212c74a83f58fb0a49105f2c1300c3dd`
+-	Image ID: `sha256:7521534de45ccf5227aba43a1b0681c1fcd41ff93302471185eee8cecd984bed`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -3048,201 +3048,201 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699d385a56341dc4eca603cb63ab006476be4cb08a753f1a480b78c61886d5bd`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:057de2c1ce1dcd497a72f651e85c5c264a9cddcc9c4e3a9212efcd2ffde822f9`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39112042a5e68058792d92bcf41abba59268974d788b6d03ca6ae25b9eaae866`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 7.7 MB (7655745 bytes)  
+	-	`sha256:89d789849c49c3d61dca13a6d384124e89af9aba2681d81849d2bfeada0c45e0`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 7.7 MB (7659249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a7ecf0714dbbded096bf25904f9f199b23c48ecd57eb8f188802cfdc07dfd50`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 349.0 KB (348957 bytes)  
+	-	`sha256:f6b17c162e267f76b3133ea3b14f100b475df8ea392a73b744e56298491d4a8b`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 349.0 KB (348987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ce88728e5f50fb5c57ce17692eb0a190d5220159249d0713e0b6c86807b7ba4`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 76.3 KB (76295 bytes)  
+	-	`sha256:ecbfba2339642f8fdfdebf0bfe490c31c7d25f1558bf4e67bfdfd3b74d605b2d`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 76.3 KB (76332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b6ae98000b8ca8683d91c5052250a43963399ae199d45cdcf1f168eb63033c`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 277.0 B  
+	-	`sha256:8f096dbc2fc52e8e0ac8d6f43dcb6f377663760330864e2c53bf1453e5e81888`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0499fd43a835922cb9b40e1e5f35bc3dfd60938e9057a41c88fdc7eb107914de`  
-		Last Modified: Wed, 11 Jun 2025 03:00:21 GMT  
-		Size: 102.9 MB (102889172 bytes)  
+	-	`sha256:19f193351f15f4f3106ca77ca9b3f09a278b33be341eaa6a75b187185d44c4e2`  
+		Last Modified: Tue, 01 Jul 2025 06:56:04 GMT  
+		Size: 102.9 MB (102903570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edf55c9860891b15c1049fc9627990536eda0ab9ba5604790714bd8173acf807`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 379.0 B  
+	-	`sha256:20cf586e8e201643afca22216e624b19e180bf42ff21599c6519ae146fb33993`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 380.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c298ad74cc2a3e12580740ef96b9b4c176d4001c79964f77fc4c77ba8400cf1f`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1246 bytes)  
+	-	`sha256:221274c508510f838ecfef7e14486ae6aa5d8660bb39963e9c06c2c31940d3e5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f88b881ddf57c9aee182c813e18cf4a540c5084a04bd4084b825fb8357beda`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 2.2 KB (2230 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:767cdb597d3b7571d40221e4118697dc65eef4d9a0f5b161c6ec8b1bf5c39b71`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 121.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchdb:3.5.0` - unknown; unknown
-
-```console
-$ docker pull couchdb@sha256:bb69d4d557e2b15cc52396a81a672cfbcf78540a39f35df9fa29133b2c30a6b2
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4169825 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:637953dc20bcf8062965e6626dd6f658761d49d2648cc1d23a0a70acdb363c14`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d51eeae0aaee7e2c7db21353b7cdc84592b41dca690513cb7fe9a495c42de539`  
-		Last Modified: Wed, 11 Jun 2025 04:33:22 GMT  
-		Size: 4.1 MB (4137850 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2bba0af450f31f51cea7b7faec600738dcd8e966e98b58d646d3b3adbc9b6aed`  
-		Last Modified: Wed, 11 Jun 2025 04:33:23 GMT  
-		Size: 32.0 KB (31975 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchdb:3.5.0` - linux; s390x
-
-```console
-$ docker pull couchdb@sha256:70a40edbe2931e6c61ca9b87d702703e0e34cc81ef669b553645bd4a2f0810a7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.5 MB (136514785 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37111e3b2c0d7ce3fc7329887734346d84810a8a3a03f7c061cfa9822b0ed0ef`
--	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
--	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
-
-```dockerfile
-# Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Tue, 06 May 2025 02:16:43 GMT
-LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
-# Tue, 06 May 2025 02:16:43 GMT
-RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV COUCHDB_VERSION=3.5.0
-# Tue, 06 May 2025 02:16:43 GMT
-RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Tue, 06 May 2025 02:16:43 GMT
-VOLUME [/opt/couchdb/data]
-# Tue, 06 May 2025 02:16:43 GMT
-EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
-# Tue, 06 May 2025 02:16:43 GMT
-CMD ["/opt/couchdb/bin/couchdb"]
-```
-
--	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7638cec2b1dd418d3648a58f2ff51f4e8c71d4a0e97a69f6b885c49b8abb52`  
-		Last Modified: Wed, 11 Jun 2025 02:54:18 GMT  
-		Size: 1.2 KB (1185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e6d3b6a7190c29cd3d87e0534ba65c82ca07adaf7c481f25a3ab2b8ec8dfacd`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 7.4 MB (7391008 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11e13446e7ec304491354fbbde8273cbbff88817c38fee62076eabfbed576426`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 355.6 KB (355626 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41b86396b56c86902e6883c0432db94761c7d4a10454af7b19d3beb817ab4064`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 76.3 KB (76350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3af21af686138b5422cc1b475a30fc9bcc248385f6792df2c32029293e0c00ef`  
-		Last Modified: Wed, 11 Jun 2025 06:07:18 GMT  
-		Size: 276.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95ac84f9fe4e7e9dbc101fb7147afb2731f413cd2d26424bd8ef24fffd8499aa`  
-		Last Modified: Wed, 11 Jun 2025 08:04:07 GMT  
-		Size: 101.8 MB (101798517 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:073097c83b8062b974ad403672e4d054f9554b15f3bc5932428ab43311672a7f`  
-		Last Modified: Wed, 11 Jun 2025 06:07:22 GMT  
-		Size: 379.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9bc7737db2d11df145c6878bfbc548696b7a5e4a1700b644f1d6fee3967979a`  
-		Last Modified: Wed, 11 Jun 2025 06:07:26 GMT  
-		Size: 1.2 KB (1243 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73536106cb7ce4d875ef6b84693f465795d59646d8fc66d0c6a38aa500154eb1`  
-		Last Modified: Wed, 11 Jun 2025 06:07:29 GMT  
+	-	`sha256:09397da69982d94f542b2bf8fdde3b4860486ccdd47539cc9b9afc0b9bd1a3b5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7488eb0b92a2c7ff3502aa1d998b1efd701362b8399b8bd850d8701b3b4e3e59`  
-		Last Modified: Wed, 11 Jun 2025 06:07:32 GMT  
+	-	`sha256:a4ae5a71de8a50502b40c9ff6ccbdd6d0804cf5171bf03695ee630ac525cafed`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.5.0` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:b796d6a9719c7f09f486358d454507e4b9e2dc2153249b862496eebc2a1867e0
+$ docker pull couchdb@sha256:9a97e8b52454838dc7b70ff7a33b60b7947aea730389cbaba963a6765dd4e341
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4165534 bytes)**  
+-	Total Size: **4.2 MB (4171217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92e2bb58e11b7e33906937c1b885fa8b5f509093685cc95c846f05c4fcfa523f`
+-	Image ID: `sha256:b276c1b3b9170df5e035c2a2c7f6de25afb8620bfb50bdf27a83ca54ea4eebc9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7073765a63c504b9f6b446f6076e638256e453ec9c708ac1d161b97891ec87f2`  
-		Last Modified: Wed, 11 Jun 2025 07:33:24 GMT  
-		Size: 4.1 MB (4133753 bytes)  
+	-	`sha256:bf1b2ccaa466fdfdd3b5019257f958be163d0aad3e5050c4ba7e765803b5a55e`  
+		Last Modified: Tue, 01 Jul 2025 07:33:26 GMT  
+		Size: 4.1 MB (4139242 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ff3140839540892dee98635e327daa6ebcfcca43f01a39377bf85635e357921`  
-		Last Modified: Wed, 11 Jun 2025 07:33:25 GMT  
+	-	`sha256:5c720b19990429e8a1f92a410aee8043df9db2dd289beafcb3c7b83c0966b824`  
+		Last Modified: Tue, 01 Jul 2025 07:33:27 GMT  
+		Size: 32.0 KB (31975 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:3.5.0` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:ac73fdf4fd54cee56fc8b6a426f51fc1b8e22ec5e16bdbaefaa6ce2f3f0b2664
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **136.5 MB (136519415 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2c56607e8d73bd9020c348266288695dd30b582708275bea02973a416de330b8`
+-	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
+-	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
+
+```dockerfile
+# Tue, 06 May 2025 02:16:43 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Tue, 06 May 2025 02:16:43 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Tue, 06 May 2025 02:16:43 GMT
+RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV COUCHDB_VERSION=3.5.0
+# Tue, 06 May 2025 02:16:43 GMT
+RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
+# Tue, 06 May 2025 02:16:43 GMT
+VOLUME [/opt/couchdb/data]
+# Tue, 06 May 2025 02:16:43 GMT
+EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
+# Tue, 06 May 2025 02:16:43 GMT
+CMD ["/opt/couchdb/bin/couchdb"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2126b1cb24a815801c16b429e02991eaeb9b8f45dc5690d80b3f27caaa0d598`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd567b9748513d6b63ef8171d49c4a79eacd4da3746d8ef2c54060e165cc7480`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 7.4 MB (7396227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a21e60876b291985d5300fdfefe23016d85e5c8079b171e0a5ba04a5f434b6f7`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 355.6 KB (355631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:38fbe52ee3623356d1ca5da444a3b3828a1eba1935602aecabf431b111c871bc`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 76.3 KB (76313 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:076c16c9bf9ab9cd7554a7c638316128a1b7a4111c3b64cf92ce541596bf6d09`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 277.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bce1c620b837005ab7259ef43fac1435a47c9d6d1d6c88df96b61bdda21ea8e4`  
+		Last Modified: Tue, 01 Jul 2025 05:33:15 GMT  
+		Size: 101.8 MB (101797998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:259fccf09046b7349d27cff59cec939bdb16f27ed4e2ec515ab9b12c17287e89`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 381.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4da974b84f7c7b36159ee03225e6ac8a002eaf95f2870fd1920139956c94ee6a`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 1.2 KB (1242 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02fb09fc14b8d03d8f6dd86565c54d412d45fce2c3d7578036f32e4ad55e7dfb`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 2.2 KB (2227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84756ec6179c3645b09f561aa70305b85412d9e158d0d08e9a6afe8cc647f576`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:3.5.0` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:fb4d5a7a2d4b1bdf9a531ea16983eaf5950ad70e502fb102ec9390c733f440c1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4166926 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dba334bcd3dd1485ab1044da6e1967868a6e8a57f3eb1c07a726d03cea0bc2ee`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:33fa93d481a94be3718287da6d86cb3be87b783860915c39355c523fa5b5fe38`  
+		Last Modified: Tue, 01 Jul 2025 07:33:31 GMT  
+		Size: 4.1 MB (4135145 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:41ae36a9f81ff5111c4db988dda3ff8e22a9bd6daf6a80703a34344b323544b3`  
+		Last Modified: Tue, 01 Jul 2025 07:33:32 GMT  
 		Size: 31.8 KB (31781 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:3.5.0-nouveau`
 
 ```console
-$ docker pull couchdb@sha256:93c623b7f212a7a50bf0ac210f8cf65aa29b44e51d8be3e51e51b2e7a39195a5
+$ docker pull couchdb@sha256:46474eb6bc641038d4556d527b8a3f6679856e10a7c97a71bec1dece081fb9e5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3362,18 +3362,18 @@ $ docker pull couchdb@sha256:451cd0ac40fced0df08bb2d19e91330773f6539524eb25d23d0
 ### `couchdb:3.5.0-nouveau` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:61be76d912255e93b30cf1945f014b4fdf76e855777c534beaa082474c92ea7e
+$ docker pull couchdb@sha256:db116fcf30dc07174fc38f70bf3a5ed76acb76b384b07e17609a7a0d4fc55f46
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.2 MB (155198481 bytes)**  
+-	Total Size: **155.2 MB (155201194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3da0e1bcaaa8669646b95ada35469270b7e5acd29ffdea5c36aedda0a0132286`
+-	Image ID: `sha256:7e47749be40012be2041a5e4a6413494c0488e94101277aa4b1c4f8401321362`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -3403,82 +3403,82 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1f727c2cbc5714897417b3bf92251c1ca577c681e1cd4980da1e0a2b431cfb1`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:a693cf798537b8f1a0fdb8283841b92e518a7e3197417f3eed4dac1f9bae0758`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed4fcda2a3359e316d27ca77539e490e9675e0c09813866f3057f68bfa46ba52`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 7.7 MB (7655686 bytes)  
+	-	`sha256:e1d69f839f98418c99edccd088b9dc936ff6c5c6d5b86f5d30382d93c8839a13`  
+		Last Modified: Tue, 01 Jul 2025 06:57:06 GMT  
+		Size: 7.7 MB (7659267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d98e53920dc0c838f505bb8f5c58498d1729ede7142b247585fbb6f2eeb9e6f8`  
-		Last Modified: Wed, 11 Jun 2025 03:01:09 GMT  
-		Size: 76.7 MB (76653830 bytes)  
+	-	`sha256:893cbb9e4bbc0e3c46cbd7073378e2b9d3b7721ee9d2729ec716d1aac8f31cb4`  
+		Last Modified: Tue, 01 Jul 2025 06:57:16 GMT  
+		Size: 76.7 MB (76652832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e57bacc8b343b9d3e9cfd79301d2848e9f456723c4ff035f5466a9af631a3e9`  
-		Last Modified: Wed, 11 Jun 2025 03:01:03 GMT  
-		Size: 371.8 KB (371775 bytes)  
+	-	`sha256:4e58f8e109d892b64448dc4c0cb910510c7058ba6af57573e92b30eb8bf4bba5`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 371.8 KB (371802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f14885eef1f40435843adc0a9862dcb7e864f00e793527847a43cb667f768318`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 99.3 KB (99289 bytes)  
+	-	`sha256:4f6091d2f9f55226b99ddd02744efed6dd46834e1131c44504c94e93c9edabf2`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 99.3 KB (99316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63a5ab6732cf30b1956d2427f8bb4c0b235684efbba3eef54b998ed3e670b32a`  
-		Last Modified: Wed, 11 Jun 2025 03:01:04 GMT  
-		Size: 275.0 B  
+	-	`sha256:e024635eecf21ef2e7fc52aeba13bb7c50099099c5f787f2ef206a7bafddebaf`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf39d19cde025967aed40a9b4330c966ec21090d4ddbad6f805ec6361f9b4b25`  
-		Last Modified: Wed, 11 Jun 2025 03:01:07 GMT  
-		Size: 42.3 MB (42338343 bytes)  
+	-	`sha256:2ff2eb34a38bf8e6324b0b05a365aa266e2ce19a21192834a2d214405b5e6070`  
+		Last Modified: Tue, 01 Jul 2025 06:57:12 GMT  
+		Size: 42.3 MB (42338418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:608b4fdb60bc3e355862f2bc7e1cb9d10c1010116ac9b3ffb19574d033f3bdc0`  
-		Last Modified: Wed, 11 Jun 2025 03:01:05 GMT  
+	-	`sha256:b1c2a290261296ae3b0ab6c38c3822b9cefff7157669181e9560346de7918dc3`  
+		Last Modified: Tue, 01 Jul 2025 06:57:05 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.5.0-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:28b3f34e3cae365f40577b9d4cc00022c011cf439378a8f7f391049df355ba7b
+$ docker pull couchdb@sha256:2cad67354524c81e1e6d392712f9bac8d070950ebeae5cfd2a484ce58d64fa68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3677812 bytes)**  
+-	Total Size: **3.7 MB (3679168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb60e8de67c02bbc6d9d397dfaa4b367c76d915a7b52700c4cb64dd1cd02060c`
+-	Image ID: `sha256:85dd2ebc36f137ab0571fc6d33fa8de49e0795d02fd68f55233675757bc7fd7a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50114b44d6ab1e22d0f8189abebe1eaf92f096aa041486cae8923f1191f5000a`  
-		Last Modified: Wed, 11 Jun 2025 04:33:31 GMT  
-		Size: 3.7 MB (3653066 bytes)  
+	-	`sha256:7881b6766c55e9334fd6ca448ba3c6db249961c146494732c05e1117dfacf2e4`  
+		Last Modified: Tue, 01 Jul 2025 07:33:36 GMT  
+		Size: 3.7 MB (3654422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b1f7b285a519755f67215c2d46c1b594fd3c7cec213165681b8ecf947d092ebc`  
-		Last Modified: Wed, 11 Jun 2025 04:33:32 GMT  
+	-	`sha256:cf649ca3e42aeb205c12902d05cfc9891032a7f6690241e8b327d5376c7705ff`  
+		Last Modified: Tue, 01 Jul 2025 07:33:36 GMT  
 		Size: 24.7 KB (24746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchdb:3.5.0-nouveau` - linux; s390x
 
 ```console
-$ docker pull couchdb@sha256:9428288909b8b8780ff7256cfaa475dfa7cae9787a8c199fa25a5484feeb957c
+$ docker pull couchdb@sha256:2e9d03343ad4bd4cc7bb44b910458c53408d1724d6449c081d98f6798b01f0e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.0 MB (149996183 bytes)**  
+-	Total Size: **150.0 MB (150005135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a7a848960ad42d247b6c8cff11f2fb2bb2db639481885f9fef05176da69d826`
+-	Image ID: `sha256:dae7f63d7c73b16e52b8061076c6de3a1cdc31f37d33b0eeff77201ba2f14cad`
 -	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -3508,71 +3508,71 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 ```
 
 -	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27c5344ebf30f80f4535f49a310b31534afd0e30faa287c2f76794168336c12`  
-		Last Modified: Wed, 11 Jun 2025 02:53:08 GMT  
-		Size: 1.2 KB (1185 bytes)  
+	-	`sha256:d1cfd19a3932c2cefb87deb176dedfae9fc04b2c159d13af1e7639a7d297b0cd`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7613b58989fe943ef5c79460458da358ff15e59da26c00710d2b35058e86fc`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 7.4 MB (7391037 bytes)  
+	-	`sha256:ba12806f817aa737143cd871d66cf31e264802e3fbdeb94528ae0fa19a20c0e9`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 7.4 MB (7396271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ae980140a28827f67b7331e73db1665544940532e164e45c80b6c78379bc623`  
-		Last Modified: Wed, 11 Jun 2025 02:53:13 GMT  
-		Size: 73.1 MB (73075802 bytes)  
+	-	`sha256:ee4225734fe1d0f4799937a239f3a4d7327e995e5306e116644452a997890a0c`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 73.1 MB (73079488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09451d171b5334d09ddef99e66f401719ea42fefd74cc946f70f4e144d2b9773`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 378.1 KB (378095 bytes)  
+	-	`sha256:7c27b651fab7650b0ed9ace9430ced920feef406ca24cbabea45762025fe0a84`  
+		Last Modified: Tue, 01 Jul 2025 05:34:04 GMT  
+		Size: 378.1 KB (378098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ebcb908b216a8512e6db9e0369099fabf5cc207e27ff06cb96a606556ebe5db`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
-		Size: 99.4 KB (99419 bytes)  
+	-	`sha256:2a4ff360bc1afd86e2255f945cd5031ed759fecda6fbefa405a888015f571364`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
+		Size: 99.4 KB (99447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae4c49bd5f4e303ad8871abcc0328792f4c36d63a3bac236266189eaa875aee`  
-		Last Modified: Wed, 11 Jun 2025 02:53:09 GMT  
+	-	`sha256:f2c5086a911f2ad88703f95c02030c4e899521b38ac62e7b5360b015c1fbb6da`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
 		Size: 278.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e22ced4f81a0aa6f3cec1052bab74c62d3fd61860da74efd2ea47f1dbcb5287`  
-		Last Modified: Wed, 11 Jun 2025 02:53:12 GMT  
-		Size: 42.2 MB (42162095 bytes)  
+	-	`sha256:b4701041b714fbef33c400888a08cebe1aaf3490d9ba9ff876fe569e66148c95`  
+		Last Modified: Tue, 01 Jul 2025 05:34:07 GMT  
+		Size: 42.2 MB (42162137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18e6a140c73952436c63b826d49f3ca1dc4502867f54809f6ffa15309f5196cf`  
-		Last Modified: Wed, 11 Jun 2025 02:53:10 GMT  
+	-	`sha256:32968435ed0d8750d29229da48a7882876a71a95456168578e0abd55dc63fa26`  
+		Last Modified: Tue, 01 Jul 2025 05:34:03 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:3.5.0-nouveau` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:d644aae5f48deb39ab35807efd7339906fe75ae9f71da8dc3dfb7a7ececc3927
+$ docker pull couchdb@sha256:dc986a0227184267e2b1388c7df99f41bfc6d295ff97256c587a14068483bf26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3669483 bytes)**  
+-	Total Size: **3.7 MB (3670839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c786bdcb66a2a06c4e498f97125c5286af66de6ece5d3728db0649369c2861`
+-	Image ID: `sha256:200ada59a746cc8d2c7815ed660ac6f65c3f8d740a50f662aa10fa9c8990a8e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7bac52cfee4e7614f1df282f0e9225e48cc895ff50dcbf86b6267184d437230`  
-		Last Modified: Wed, 11 Jun 2025 04:33:36 GMT  
-		Size: 3.6 MB (3644919 bytes)  
+	-	`sha256:d2a7aab3935eb1632112f673e48887ac872c8b7015dbdd26b706dbfb5da24953`  
+		Last Modified: Tue, 01 Jul 2025 07:33:41 GMT  
+		Size: 3.6 MB (3646275 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c788e021d6e8698fd1889130f527f5fea495bae07c9640626152301c9bec455`  
-		Last Modified: Wed, 11 Jun 2025 04:33:37 GMT  
+	-	`sha256:f3202daddc04f223f4ddef033ace3d2788fda2690cf9797dd6b0f7edeeb96e70`  
+		Last Modified: Tue, 01 Jul 2025 07:33:42 GMT  
 		Size: 24.6 KB (24564 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `couchdb:latest`
 
 ```console
-$ docker pull couchdb@sha256:bfcf56d766f6e85aa3834197dee2849ed013907130fbe7b137269bc6dab84b29
+$ docker pull couchdb@sha256:6c8a172f9aa64020d9a28c5bcbbdd3852b12125c5a2ab7345d7525abc8c7dfad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3709,19 +3709,19 @@ $ docker pull couchdb@sha256:db1bc8f53da793df6ec4ba90325f1fc6fa8c0096396ed58d2f3
 ### `couchdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:10159340a455126b0039a6c616258f61fb48990722b7f3d78e38efedf4f49dda
+$ docker pull couchdb@sha256:b4afa7cd0272b0d4093f886b715f7df199ce2beda69aaf8736ba2730cc974d9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.1 MB (139053286 bytes)**  
+-	Total Size: **139.1 MB (139071247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efb0ac883c2114cb29fc3bb00964d3d6212c74a83f58fb0a49105f2c1300c3dd`
+-	Image ID: `sha256:7521534de45ccf5227aba43a1b0681c1fcd41ff93302471185eee8cecd984bed`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
 ```dockerfile
 # Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 06 May 2025 02:16:43 GMT
 LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
 # Tue, 06 May 2025 02:16:43 GMT
@@ -3759,193 +3759,193 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699d385a56341dc4eca603cb63ab006476be4cb08a753f1a480b78c61886d5bd`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1189 bytes)  
+	-	`sha256:057de2c1ce1dcd497a72f651e85c5c264a9cddcc9c4e3a9212efcd2ffde822f9`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39112042a5e68058792d92bcf41abba59268974d788b6d03ca6ae25b9eaae866`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 7.7 MB (7655745 bytes)  
+	-	`sha256:89d789849c49c3d61dca13a6d384124e89af9aba2681d81849d2bfeada0c45e0`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 7.7 MB (7659249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a7ecf0714dbbded096bf25904f9f199b23c48ecd57eb8f188802cfdc07dfd50`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 349.0 KB (348957 bytes)  
+	-	`sha256:f6b17c162e267f76b3133ea3b14f100b475df8ea392a73b744e56298491d4a8b`  
+		Last Modified: Tue, 01 Jul 2025 06:55:59 GMT  
+		Size: 349.0 KB (348987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ce88728e5f50fb5c57ce17692eb0a190d5220159249d0713e0b6c86807b7ba4`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 76.3 KB (76295 bytes)  
+	-	`sha256:ecbfba2339642f8fdfdebf0bfe490c31c7d25f1558bf4e67bfdfd3b74d605b2d`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 76.3 KB (76332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b6ae98000b8ca8683d91c5052250a43963399ae199d45cdcf1f168eb63033c`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 277.0 B  
+	-	`sha256:8f096dbc2fc52e8e0ac8d6f43dcb6f377663760330864e2c53bf1453e5e81888`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0499fd43a835922cb9b40e1e5f35bc3dfd60938e9057a41c88fdc7eb107914de`  
-		Last Modified: Wed, 11 Jun 2025 03:00:21 GMT  
-		Size: 102.9 MB (102889172 bytes)  
+	-	`sha256:19f193351f15f4f3106ca77ca9b3f09a278b33be341eaa6a75b187185d44c4e2`  
+		Last Modified: Tue, 01 Jul 2025 06:56:04 GMT  
+		Size: 102.9 MB (102903570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edf55c9860891b15c1049fc9627990536eda0ab9ba5604790714bd8173acf807`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 379.0 B  
+	-	`sha256:20cf586e8e201643afca22216e624b19e180bf42ff21599c6519ae146fb33993`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 380.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c298ad74cc2a3e12580740ef96b9b4c176d4001c79964f77fc4c77ba8400cf1f`  
-		Last Modified: Wed, 11 Jun 2025 03:00:14 GMT  
-		Size: 1.2 KB (1246 bytes)  
+	-	`sha256:221274c508510f838ecfef7e14486ae6aa5d8660bb39963e9c06c2c31940d3e5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
+		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f88b881ddf57c9aee182c813e18cf4a540c5084a04bd4084b825fb8357beda`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 2.2 KB (2230 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:767cdb597d3b7571d40221e4118697dc65eef4d9a0f5b161c6ec8b1bf5c39b71`  
-		Last Modified: Wed, 11 Jun 2025 03:00:16 GMT  
-		Size: 121.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchdb:latest` - unknown; unknown
-
-```console
-$ docker pull couchdb@sha256:bb69d4d557e2b15cc52396a81a672cfbcf78540a39f35df9fa29133b2c30a6b2
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4169825 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:637953dc20bcf8062965e6626dd6f658761d49d2648cc1d23a0a70acdb363c14`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d51eeae0aaee7e2c7db21353b7cdc84592b41dca690513cb7fe9a495c42de539`  
-		Last Modified: Wed, 11 Jun 2025 04:33:22 GMT  
-		Size: 4.1 MB (4137850 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2bba0af450f31f51cea7b7faec600738dcd8e966e98b58d646d3b3adbc9b6aed`  
-		Last Modified: Wed, 11 Jun 2025 04:33:23 GMT  
-		Size: 32.0 KB (31975 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchdb:latest` - linux; s390x
-
-```console
-$ docker pull couchdb@sha256:70a40edbe2931e6c61ca9b87d702703e0e34cc81ef669b553645bd4a2f0810a7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.5 MB (136514785 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37111e3b2c0d7ce3fc7329887734346d84810a8a3a03f7c061cfa9822b0ed0ef`
--	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
--	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
-
-```dockerfile
-# Tue, 06 May 2025 02:16:43 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1749513600'
-# Tue, 06 May 2025 02:16:43 GMT
-LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
-# Tue, 06 May 2025 02:16:43 GMT
-RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENV COUCHDB_VERSION=3.5.0
-# Tue, 06 May 2025 02:16:43 GMT
-RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
-# Tue, 06 May 2025 02:16:43 GMT
-ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Tue, 06 May 2025 02:16:43 GMT
-VOLUME [/opt/couchdb/data]
-# Tue, 06 May 2025 02:16:43 GMT
-EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
-# Tue, 06 May 2025 02:16:43 GMT
-CMD ["/opt/couchdb/bin/couchdb"]
-```
-
--	Layers:
-	-	`sha256:0f8692aee2900a8d946bd57522757b4d5de83b6af52eb0aa55e05d787a077615`  
-		Last Modified: Tue, 10 Jun 2025 23:56:06 GMT  
-		Size: 26.9 MB (26887853 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7638cec2b1dd418d3648a58f2ff51f4e8c71d4a0e97a69f6b885c49b8abb52`  
-		Last Modified: Wed, 11 Jun 2025 02:54:18 GMT  
-		Size: 1.2 KB (1185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e6d3b6a7190c29cd3d87e0534ba65c82ca07adaf7c481f25a3ab2b8ec8dfacd`  
-		Last Modified: Wed, 11 Jun 2025 02:54:20 GMT  
-		Size: 7.4 MB (7391008 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11e13446e7ec304491354fbbde8273cbbff88817c38fee62076eabfbed576426`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 355.6 KB (355626 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41b86396b56c86902e6883c0432db94761c7d4a10454af7b19d3beb817ab4064`  
-		Last Modified: Wed, 11 Jun 2025 02:54:19 GMT  
-		Size: 76.3 KB (76350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3af21af686138b5422cc1b475a30fc9bcc248385f6792df2c32029293e0c00ef`  
-		Last Modified: Wed, 11 Jun 2025 06:07:18 GMT  
-		Size: 276.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95ac84f9fe4e7e9dbc101fb7147afb2731f413cd2d26424bd8ef24fffd8499aa`  
-		Last Modified: Wed, 11 Jun 2025 08:04:07 GMT  
-		Size: 101.8 MB (101798517 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:073097c83b8062b974ad403672e4d054f9554b15f3bc5932428ab43311672a7f`  
-		Last Modified: Wed, 11 Jun 2025 06:07:22 GMT  
-		Size: 379.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9bc7737db2d11df145c6878bfbc548696b7a5e4a1700b644f1d6fee3967979a`  
-		Last Modified: Wed, 11 Jun 2025 06:07:26 GMT  
-		Size: 1.2 KB (1243 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73536106cb7ce4d875ef6b84693f465795d59646d8fc66d0c6a38aa500154eb1`  
-		Last Modified: Wed, 11 Jun 2025 06:07:29 GMT  
+	-	`sha256:09397da69982d94f542b2bf8fdde3b4860486ccdd47539cc9b9afc0b9bd1a3b5`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7488eb0b92a2c7ff3502aa1d998b1efd701362b8399b8bd850d8701b3b4e3e59`  
-		Last Modified: Wed, 11 Jun 2025 06:07:32 GMT  
+	-	`sha256:a4ae5a71de8a50502b40c9ff6ccbdd6d0804cf5171bf03695ee630ac525cafed`  
+		Last Modified: Tue, 01 Jul 2025 06:55:58 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchdb:latest` - unknown; unknown
 
 ```console
-$ docker pull couchdb@sha256:b796d6a9719c7f09f486358d454507e4b9e2dc2153249b862496eebc2a1867e0
+$ docker pull couchdb@sha256:9a97e8b52454838dc7b70ff7a33b60b7947aea730389cbaba963a6765dd4e341
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4165534 bytes)**  
+-	Total Size: **4.2 MB (4171217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92e2bb58e11b7e33906937c1b885fa8b5f509093685cc95c846f05c4fcfa523f`
+-	Image ID: `sha256:b276c1b3b9170df5e035c2a2c7f6de25afb8620bfb50bdf27a83ca54ea4eebc9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7073765a63c504b9f6b446f6076e638256e453ec9c708ac1d161b97891ec87f2`  
-		Last Modified: Wed, 11 Jun 2025 07:33:24 GMT  
-		Size: 4.1 MB (4133753 bytes)  
+	-	`sha256:bf1b2ccaa466fdfdd3b5019257f958be163d0aad3e5050c4ba7e765803b5a55e`  
+		Last Modified: Tue, 01 Jul 2025 07:33:26 GMT  
+		Size: 4.1 MB (4139242 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ff3140839540892dee98635e327daa6ebcfcca43f01a39377bf85635e357921`  
-		Last Modified: Wed, 11 Jun 2025 07:33:25 GMT  
+	-	`sha256:5c720b19990429e8a1f92a410aee8043df9db2dd289beafcb3c7b83c0966b824`  
+		Last Modified: Tue, 01 Jul 2025 07:33:27 GMT  
+		Size: 32.0 KB (31975 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:latest` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:ac73fdf4fd54cee56fc8b6a426f51fc1b8e22ec5e16bdbaefaa6ce2f3f0b2664
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **136.5 MB (136519415 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2c56607e8d73bd9020c348266288695dd30b582708275bea02973a416de330b8`
+-	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
+-	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
+
+```dockerfile
+# Tue, 06 May 2025 02:16:43 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Tue, 06 May 2025 02:16:43 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Tue, 06 May 2025 02:16:43 GMT
+RUN groupadd -g 5984 -r couchdb && useradd -u 5984 -d /opt/couchdb -g couchdb couchdb # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENV COUCHDB_VERSION=3.5.0
+# Tue, 06 May 2025 02:16:43 GMT
+RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bookworm     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb 10-docker-default.ini /opt/couchdb/etc/default.d/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY --chown=couchdb:couchdb vm.args /opt/couchdb/etc/ # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat # buildkit
+# Tue, 06 May 2025 02:16:43 GMT
+ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
+# Tue, 06 May 2025 02:16:43 GMT
+VOLUME [/opt/couchdb/data]
+# Tue, 06 May 2025 02:16:43 GMT
+EXPOSE map[4369/tcp:{} 5984/tcp:{} 9100/tcp:{}]
+# Tue, 06 May 2025 02:16:43 GMT
+CMD ["/opt/couchdb/bin/couchdb"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2126b1cb24a815801c16b429e02991eaeb9b8f45dc5690d80b3f27caaa0d598`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd567b9748513d6b63ef8171d49c4a79eacd4da3746d8ef2c54060e165cc7480`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 7.4 MB (7396227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a21e60876b291985d5300fdfefe23016d85e5c8079b171e0a5ba04a5f434b6f7`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 355.6 KB (355631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:38fbe52ee3623356d1ca5da444a3b3828a1eba1935602aecabf431b111c871bc`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 76.3 KB (76313 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:076c16c9bf9ab9cd7554a7c638316128a1b7a4111c3b64cf92ce541596bf6d09`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 277.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bce1c620b837005ab7259ef43fac1435a47c9d6d1d6c88df96b61bdda21ea8e4`  
+		Last Modified: Tue, 01 Jul 2025 05:33:15 GMT  
+		Size: 101.8 MB (101797998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:259fccf09046b7349d27cff59cec939bdb16f27ed4e2ec515ab9b12c17287e89`  
+		Last Modified: Tue, 01 Jul 2025 05:32:55 GMT  
+		Size: 381.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4da974b84f7c7b36159ee03225e6ac8a002eaf95f2870fd1920139956c94ee6a`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 1.2 KB (1242 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02fb09fc14b8d03d8f6dd86565c54d412d45fce2c3d7578036f32e4ad55e7dfb`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 2.2 KB (2227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84756ec6179c3645b09f561aa70305b85412d9e158d0d08e9a6afe8cc647f576`  
+		Last Modified: Tue, 01 Jul 2025 05:32:56 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:latest` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:fb4d5a7a2d4b1bdf9a531ea16983eaf5950ad70e502fb102ec9390c733f440c1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **4.2 MB (4166926 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dba334bcd3dd1485ab1044da6e1967868a6e8a57f3eb1c07a726d03cea0bc2ee`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:33fa93d481a94be3718287da6d86cb3be87b783860915c39355c523fa5b5fe38`  
+		Last Modified: Tue, 01 Jul 2025 07:33:31 GMT  
+		Size: 4.1 MB (4135145 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:41ae36a9f81ff5111c4db988dda3ff8e22a9bd6daf6a80703a34344b323544b3`  
+		Last Modified: Tue, 01 Jul 2025 07:33:32 GMT  
 		Size: 31.8 KB (31781 bytes)  
 		MIME: application/vnd.in-toto+json
