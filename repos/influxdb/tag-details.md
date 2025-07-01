@@ -2530,7 +2530,7 @@ $ docker pull influxdb@sha256:385c44c35f414aacccfd0fd90122de5dcb8706bc694ec77aca
 ## `influxdb:2`
 
 ```console
-$ docker pull influxdb@sha256:04dc18f870f7108d225ab533daf13cf200f985f040c0cee6b24bf70e95532053
+$ docker pull influxdb@sha256:b2766b01a99b4f10054e622df3a7f69cbe41c3722efbdb710f62072b7919ff49
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2667,19 +2667,19 @@ $ docker pull influxdb@sha256:1ee7e90cf7b7806932034fa772c55c1c4affdabcb0be0c12c0
 ### `influxdb:2` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:05a9e597cb6bd926997cb5de1e2da8593ad5d200527a1ec27916ef19854f2b90
+$ docker pull influxdb@sha256:8e42ef527af5083ae810e246067b2a3f6aa2277e56918a93fb06bd46031140c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.5 MB (151541748 bytes)**  
+-	Total Size: **151.5 MB (151541719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a2232fdc606edeb9aa338e7acf7c713d251ae52c30936fe31154e2b944e395b`
+-	Image ID: `sha256:b6324acffea320bef2041e9c6a62cf579b505411efd0beffdd02e0662d79e1f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+# Tue, 24 Jun 2025 22:21:26 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 24 Jun 2025 22:21:26 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 24 Jun 2025 22:21:26 GMT
@@ -2723,68 +2723,68 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5d1adeaee6ad42884f03696f1a8d7957f1407d81bab077ff433ad058deb12b4`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 9.6 MB (9590212 bytes)  
+	-	`sha256:b4a9750ced17eb9680c39392299667138966b00b1b8ba9964360f165d34aae01`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 9.6 MB (9590213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e608cc4c6bfb98dc5899af5cba06a260e46c7db0a4a06d3417f77405f4866f`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 5.8 MB (5790426 bytes)  
+	-	`sha256:64e2c1dd6de92d4b17bd420e8296ec5ce8e0be197ae85866ce510089f56810f2`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 5.8 MB (5790419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43ca9df937c5329bac6cdc5cea28a5633057eb7161bcdbc217a937eecf19d383`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 3.2 KB (3227 bytes)  
+	-	`sha256:c215e349bdf9c4c6bd41276069ce530b4a9d7773dc7b224fcfe4c3e09b9b6ac7`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 3.2 KB (3226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fb10e1d39fc8b7fef29c721f497fec0912fa5aa9200fac9c2921e6fc3a4e32`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 936.1 KB (936109 bytes)  
+	-	`sha256:d4f99d0a91ff766c668b657b3c945795c80020cb8d054ee697cf07674f6df903`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 936.1 KB (936103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af306c5421d00e649d0ec6cbf4ff43b0eb236ebaeeadaccc59482033b9b1cb5`  
-		Last Modified: Thu, 26 Jun 2025 04:33:27 GMT  
-		Size: 96.0 MB (96038392 bytes)  
+	-	`sha256:a2c2fa4831c1b6a310ff1261e99f9b42d128151317b5f5eac991034a5ecb21d5`  
+		Last Modified: Tue, 01 Jul 2025 07:16:41 GMT  
+		Size: 96.0 MB (96038367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7642fd79d9a7197ad9a2ac9f379b2ba07589c66c6c3a6f5f98ea07d78f06e23b`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
-		Size: 11.1 MB (11098977 bytes)  
+	-	`sha256:9c6def7749394d2ac8cb71787fa688047c89e3e5fef367537bab1a51ddf408bf`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 11.1 MB (11098985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8126aa653fd120d5dcd2bb8fbbba893b94a74bb79a24298de9e26e70f53a75eb`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 209.0 B  
+	-	`sha256:8fdc132259701de04ab9a4a64bb74425431c853ac20251882987c28a42a1d142`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25056ab1c476ba142dcfcb4458d77e52d31c63bce5658862f2e2dd77281394da`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
+	-	`sha256:034ec54bce93029ae930b80ea7e8dc06d7765dd5c473efdc32285b6eb3d6f803`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3391f59b468948a00967f49c0eca665926ac1e4d65b120797ae8a4a2fe343656`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
+	-	`sha256:3f046e46a8c615ae075557bb39ffc00094d3bf394f7ea9f46090669132b49b62`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:2` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:f7f99f78c3d2bb450955a9c460d9238bb6cff36698e3b3f9ac62e0a7fd60c08e
+$ docker pull influxdb@sha256:513a8211cdaaadf97a7adebd2ae5488fd379582a4bcdd149b884b4f9885a0c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.0 MB (3012722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d841afeaf46fc45c1cef9b882cbf199df4cb46c52a590924d26f26098ac65c8`
+-	Image ID: `sha256:3e99790d93b535aad6c085ddb5f618f53566efe13ac414605591664f4279e2df`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5d8e8a4cbef84d00153117316e54412170c746a255d0952b382e85dafca13fd8`  
-		Last Modified: Thu, 26 Jun 2025 05:20:28 GMT  
+	-	`sha256:12fcca2d0f365ddd3e6c3bd5f0c280b02f6897514f3cd9212b3c5ae8e94b0e0a`  
+		Last Modified: Tue, 01 Jul 2025 08:20:29 GMT  
 		Size: 3.0 MB (2979001 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7dacc99db9be479885adc48cf53bee3823da392ba1281af7f4f49e6139499ce5`  
-		Last Modified: Thu, 26 Jun 2025 05:20:29 GMT  
+	-	`sha256:2a55c0cda549b8659bcccfae409e8f85910e7dc92523672c92ebc96c2e64d9b9`  
+		Last Modified: Tue, 01 Jul 2025 08:20:30 GMT  
 		Size: 33.7 KB (33721 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3052,7 +3052,7 @@ $ docker pull influxdb@sha256:c44dfa3394146848d926ea117896a1d9a585d974009d658a30
 ## `influxdb:2.7`
 
 ```console
-$ docker pull influxdb@sha256:04dc18f870f7108d225ab533daf13cf200f985f040c0cee6b24bf70e95532053
+$ docker pull influxdb@sha256:b2766b01a99b4f10054e622df3a7f69cbe41c3722efbdb710f62072b7919ff49
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3189,19 +3189,19 @@ $ docker pull influxdb@sha256:1ee7e90cf7b7806932034fa772c55c1c4affdabcb0be0c12c0
 ### `influxdb:2.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:05a9e597cb6bd926997cb5de1e2da8593ad5d200527a1ec27916ef19854f2b90
+$ docker pull influxdb@sha256:8e42ef527af5083ae810e246067b2a3f6aa2277e56918a93fb06bd46031140c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.5 MB (151541748 bytes)**  
+-	Total Size: **151.5 MB (151541719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a2232fdc606edeb9aa338e7acf7c713d251ae52c30936fe31154e2b944e395b`
+-	Image ID: `sha256:b6324acffea320bef2041e9c6a62cf579b505411efd0beffdd02e0662d79e1f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+# Tue, 24 Jun 2025 22:21:26 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 24 Jun 2025 22:21:26 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 24 Jun 2025 22:21:26 GMT
@@ -3245,68 +3245,68 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5d1adeaee6ad42884f03696f1a8d7957f1407d81bab077ff433ad058deb12b4`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 9.6 MB (9590212 bytes)  
+	-	`sha256:b4a9750ced17eb9680c39392299667138966b00b1b8ba9964360f165d34aae01`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 9.6 MB (9590213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e608cc4c6bfb98dc5899af5cba06a260e46c7db0a4a06d3417f77405f4866f`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 5.8 MB (5790426 bytes)  
+	-	`sha256:64e2c1dd6de92d4b17bd420e8296ec5ce8e0be197ae85866ce510089f56810f2`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 5.8 MB (5790419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43ca9df937c5329bac6cdc5cea28a5633057eb7161bcdbc217a937eecf19d383`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 3.2 KB (3227 bytes)  
+	-	`sha256:c215e349bdf9c4c6bd41276069ce530b4a9d7773dc7b224fcfe4c3e09b9b6ac7`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 3.2 KB (3226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fb10e1d39fc8b7fef29c721f497fec0912fa5aa9200fac9c2921e6fc3a4e32`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 936.1 KB (936109 bytes)  
+	-	`sha256:d4f99d0a91ff766c668b657b3c945795c80020cb8d054ee697cf07674f6df903`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 936.1 KB (936103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af306c5421d00e649d0ec6cbf4ff43b0eb236ebaeeadaccc59482033b9b1cb5`  
-		Last Modified: Thu, 26 Jun 2025 04:33:27 GMT  
-		Size: 96.0 MB (96038392 bytes)  
+	-	`sha256:a2c2fa4831c1b6a310ff1261e99f9b42d128151317b5f5eac991034a5ecb21d5`  
+		Last Modified: Tue, 01 Jul 2025 07:16:41 GMT  
+		Size: 96.0 MB (96038367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7642fd79d9a7197ad9a2ac9f379b2ba07589c66c6c3a6f5f98ea07d78f06e23b`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
-		Size: 11.1 MB (11098977 bytes)  
+	-	`sha256:9c6def7749394d2ac8cb71787fa688047c89e3e5fef367537bab1a51ddf408bf`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 11.1 MB (11098985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8126aa653fd120d5dcd2bb8fbbba893b94a74bb79a24298de9e26e70f53a75eb`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 209.0 B  
+	-	`sha256:8fdc132259701de04ab9a4a64bb74425431c853ac20251882987c28a42a1d142`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25056ab1c476ba142dcfcb4458d77e52d31c63bce5658862f2e2dd77281394da`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
+	-	`sha256:034ec54bce93029ae930b80ea7e8dc06d7765dd5c473efdc32285b6eb3d6f803`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3391f59b468948a00967f49c0eca665926ac1e4d65b120797ae8a4a2fe343656`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
+	-	`sha256:3f046e46a8c615ae075557bb39ffc00094d3bf394f7ea9f46090669132b49b62`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:2.7` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:f7f99f78c3d2bb450955a9c460d9238bb6cff36698e3b3f9ac62e0a7fd60c08e
+$ docker pull influxdb@sha256:513a8211cdaaadf97a7adebd2ae5488fd379582a4bcdd149b884b4f9885a0c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.0 MB (3012722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d841afeaf46fc45c1cef9b882cbf199df4cb46c52a590924d26f26098ac65c8`
+-	Image ID: `sha256:3e99790d93b535aad6c085ddb5f618f53566efe13ac414605591664f4279e2df`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5d8e8a4cbef84d00153117316e54412170c746a255d0952b382e85dafca13fd8`  
-		Last Modified: Thu, 26 Jun 2025 05:20:28 GMT  
+	-	`sha256:12fcca2d0f365ddd3e6c3bd5f0c280b02f6897514f3cd9212b3c5ae8e94b0e0a`  
+		Last Modified: Tue, 01 Jul 2025 08:20:29 GMT  
 		Size: 3.0 MB (2979001 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7dacc99db9be479885adc48cf53bee3823da392ba1281af7f4f49e6139499ce5`  
-		Last Modified: Thu, 26 Jun 2025 05:20:29 GMT  
+	-	`sha256:2a55c0cda549b8659bcccfae409e8f85910e7dc92523672c92ebc96c2e64d9b9`  
+		Last Modified: Tue, 01 Jul 2025 08:20:30 GMT  
 		Size: 33.7 KB (33721 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3574,7 +3574,7 @@ $ docker pull influxdb@sha256:c44dfa3394146848d926ea117896a1d9a585d974009d658a30
 ## `influxdb:2.7.12`
 
 ```console
-$ docker pull influxdb@sha256:04dc18f870f7108d225ab533daf13cf200f985f040c0cee6b24bf70e95532053
+$ docker pull influxdb@sha256:b2766b01a99b4f10054e622df3a7f69cbe41c3722efbdb710f62072b7919ff49
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3711,19 +3711,19 @@ $ docker pull influxdb@sha256:1ee7e90cf7b7806932034fa772c55c1c4affdabcb0be0c12c0
 ### `influxdb:2.7.12` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:05a9e597cb6bd926997cb5de1e2da8593ad5d200527a1ec27916ef19854f2b90
+$ docker pull influxdb@sha256:8e42ef527af5083ae810e246067b2a3f6aa2277e56918a93fb06bd46031140c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.5 MB (151541748 bytes)**  
+-	Total Size: **151.5 MB (151541719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a2232fdc606edeb9aa338e7acf7c713d251ae52c30936fe31154e2b944e395b`
+-	Image ID: `sha256:b6324acffea320bef2041e9c6a62cf579b505411efd0beffdd02e0662d79e1f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+# Tue, 24 Jun 2025 22:21:26 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 24 Jun 2025 22:21:26 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 24 Jun 2025 22:21:26 GMT
@@ -3767,68 +3767,68 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5d1adeaee6ad42884f03696f1a8d7957f1407d81bab077ff433ad058deb12b4`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 9.6 MB (9590212 bytes)  
+	-	`sha256:b4a9750ced17eb9680c39392299667138966b00b1b8ba9964360f165d34aae01`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 9.6 MB (9590213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e608cc4c6bfb98dc5899af5cba06a260e46c7db0a4a06d3417f77405f4866f`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 5.8 MB (5790426 bytes)  
+	-	`sha256:64e2c1dd6de92d4b17bd420e8296ec5ce8e0be197ae85866ce510089f56810f2`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 5.8 MB (5790419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43ca9df937c5329bac6cdc5cea28a5633057eb7161bcdbc217a937eecf19d383`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 3.2 KB (3227 bytes)  
+	-	`sha256:c215e349bdf9c4c6bd41276069ce530b4a9d7773dc7b224fcfe4c3e09b9b6ac7`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 3.2 KB (3226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fb10e1d39fc8b7fef29c721f497fec0912fa5aa9200fac9c2921e6fc3a4e32`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 936.1 KB (936109 bytes)  
+	-	`sha256:d4f99d0a91ff766c668b657b3c945795c80020cb8d054ee697cf07674f6df903`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 936.1 KB (936103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af306c5421d00e649d0ec6cbf4ff43b0eb236ebaeeadaccc59482033b9b1cb5`  
-		Last Modified: Thu, 26 Jun 2025 04:33:27 GMT  
-		Size: 96.0 MB (96038392 bytes)  
+	-	`sha256:a2c2fa4831c1b6a310ff1261e99f9b42d128151317b5f5eac991034a5ecb21d5`  
+		Last Modified: Tue, 01 Jul 2025 07:16:41 GMT  
+		Size: 96.0 MB (96038367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7642fd79d9a7197ad9a2ac9f379b2ba07589c66c6c3a6f5f98ea07d78f06e23b`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
-		Size: 11.1 MB (11098977 bytes)  
+	-	`sha256:9c6def7749394d2ac8cb71787fa688047c89e3e5fef367537bab1a51ddf408bf`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 11.1 MB (11098985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8126aa653fd120d5dcd2bb8fbbba893b94a74bb79a24298de9e26e70f53a75eb`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 209.0 B  
+	-	`sha256:8fdc132259701de04ab9a4a64bb74425431c853ac20251882987c28a42a1d142`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25056ab1c476ba142dcfcb4458d77e52d31c63bce5658862f2e2dd77281394da`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
+	-	`sha256:034ec54bce93029ae930b80ea7e8dc06d7765dd5c473efdc32285b6eb3d6f803`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3391f59b468948a00967f49c0eca665926ac1e4d65b120797ae8a4a2fe343656`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
+	-	`sha256:3f046e46a8c615ae075557bb39ffc00094d3bf394f7ea9f46090669132b49b62`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:2.7.12` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:f7f99f78c3d2bb450955a9c460d9238bb6cff36698e3b3f9ac62e0a7fd60c08e
+$ docker pull influxdb@sha256:513a8211cdaaadf97a7adebd2ae5488fd379582a4bcdd149b884b4f9885a0c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.0 MB (3012722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d841afeaf46fc45c1cef9b882cbf199df4cb46c52a590924d26f26098ac65c8`
+-	Image ID: `sha256:3e99790d93b535aad6c085ddb5f618f53566efe13ac414605591664f4279e2df`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5d8e8a4cbef84d00153117316e54412170c746a255d0952b382e85dafca13fd8`  
-		Last Modified: Thu, 26 Jun 2025 05:20:28 GMT  
+	-	`sha256:12fcca2d0f365ddd3e6c3bd5f0c280b02f6897514f3cd9212b3c5ae8e94b0e0a`  
+		Last Modified: Tue, 01 Jul 2025 08:20:29 GMT  
 		Size: 3.0 MB (2979001 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7dacc99db9be479885adc48cf53bee3823da392ba1281af7f4f49e6139499ce5`  
-		Last Modified: Thu, 26 Jun 2025 05:20:29 GMT  
+	-	`sha256:2a55c0cda549b8659bcccfae409e8f85910e7dc92523672c92ebc96c2e64d9b9`  
+		Last Modified: Tue, 01 Jul 2025 08:20:30 GMT  
 		Size: 33.7 KB (33721 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6157,7 +6157,7 @@ $ docker pull influxdb@sha256:ec745999e4b527a2c01e457a8cadaec83d85a2ed8b0f97773f
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:04dc18f870f7108d225ab533daf13cf200f985f040c0cee6b24bf70e95532053
+$ docker pull influxdb@sha256:b2766b01a99b4f10054e622df3a7f69cbe41c3722efbdb710f62072b7919ff49
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6294,19 +6294,19 @@ $ docker pull influxdb@sha256:1ee7e90cf7b7806932034fa772c55c1c4affdabcb0be0c12c0
 ### `influxdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:05a9e597cb6bd926997cb5de1e2da8593ad5d200527a1ec27916ef19854f2b90
+$ docker pull influxdb@sha256:8e42ef527af5083ae810e246067b2a3f6aa2277e56918a93fb06bd46031140c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.5 MB (151541748 bytes)**  
+-	Total Size: **151.5 MB (151541719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a2232fdc606edeb9aa338e7acf7c713d251ae52c30936fe31154e2b944e395b`
+-	Image ID: `sha256:b6324acffea320bef2041e9c6a62cf579b505411efd0beffdd02e0662d79e1f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+# Tue, 24 Jun 2025 22:21:26 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Tue, 24 Jun 2025 22:21:26 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 24 Jun 2025 22:21:26 GMT
@@ -6350,67 +6350,67 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5d1adeaee6ad42884f03696f1a8d7957f1407d81bab077ff433ad058deb12b4`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 9.6 MB (9590212 bytes)  
+	-	`sha256:b4a9750ced17eb9680c39392299667138966b00b1b8ba9964360f165d34aae01`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 9.6 MB (9590213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e608cc4c6bfb98dc5899af5cba06a260e46c7db0a4a06d3417f77405f4866f`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 5.8 MB (5790426 bytes)  
+	-	`sha256:64e2c1dd6de92d4b17bd420e8296ec5ce8e0be197ae85866ce510089f56810f2`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 5.8 MB (5790419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43ca9df937c5329bac6cdc5cea28a5633057eb7161bcdbc217a937eecf19d383`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 3.2 KB (3227 bytes)  
+	-	`sha256:c215e349bdf9c4c6bd41276069ce530b4a9d7773dc7b224fcfe4c3e09b9b6ac7`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 3.2 KB (3226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fb10e1d39fc8b7fef29c721f497fec0912fa5aa9200fac9c2921e6fc3a4e32`  
-		Last Modified: Thu, 26 Jun 2025 04:33:16 GMT  
-		Size: 936.1 KB (936109 bytes)  
+	-	`sha256:d4f99d0a91ff766c668b657b3c945795c80020cb8d054ee697cf07674f6df903`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 936.1 KB (936103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7af306c5421d00e649d0ec6cbf4ff43b0eb236ebaeeadaccc59482033b9b1cb5`  
-		Last Modified: Thu, 26 Jun 2025 04:33:27 GMT  
-		Size: 96.0 MB (96038392 bytes)  
+	-	`sha256:a2c2fa4831c1b6a310ff1261e99f9b42d128151317b5f5eac991034a5ecb21d5`  
+		Last Modified: Tue, 01 Jul 2025 07:16:41 GMT  
+		Size: 96.0 MB (96038367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7642fd79d9a7197ad9a2ac9f379b2ba07589c66c6c3a6f5f98ea07d78f06e23b`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
-		Size: 11.1 MB (11098977 bytes)  
+	-	`sha256:9c6def7749394d2ac8cb71787fa688047c89e3e5fef367537bab1a51ddf408bf`  
+		Last Modified: Tue, 01 Jul 2025 07:16:37 GMT  
+		Size: 11.1 MB (11098985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8126aa653fd120d5dcd2bb8fbbba893b94a74bb79a24298de9e26e70f53a75eb`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
-		Size: 209.0 B  
+	-	`sha256:8fdc132259701de04ab9a4a64bb74425431c853ac20251882987c28a42a1d142`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25056ab1c476ba142dcfcb4458d77e52d31c63bce5658862f2e2dd77281394da`  
-		Last Modified: Thu, 26 Jun 2025 04:33:17 GMT  
+	-	`sha256:034ec54bce93029ae930b80ea7e8dc06d7765dd5c473efdc32285b6eb3d6f803`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3391f59b468948a00967f49c0eca665926ac1e4d65b120797ae8a4a2fe343656`  
-		Last Modified: Thu, 26 Jun 2025 04:33:18 GMT  
+	-	`sha256:3f046e46a8c615ae075557bb39ffc00094d3bf394f7ea9f46090669132b49b62`  
+		Last Modified: Tue, 01 Jul 2025 07:16:36 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:latest` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:f7f99f78c3d2bb450955a9c460d9238bb6cff36698e3b3f9ac62e0a7fd60c08e
+$ docker pull influxdb@sha256:513a8211cdaaadf97a7adebd2ae5488fd379582a4bcdd149b884b4f9885a0c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.0 MB (3012722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d841afeaf46fc45c1cef9b882cbf199df4cb46c52a590924d26f26098ac65c8`
+-	Image ID: `sha256:3e99790d93b535aad6c085ddb5f618f53566efe13ac414605591664f4279e2df`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5d8e8a4cbef84d00153117316e54412170c746a255d0952b382e85dafca13fd8`  
-		Last Modified: Thu, 26 Jun 2025 05:20:28 GMT  
+	-	`sha256:12fcca2d0f365ddd3e6c3bd5f0c280b02f6897514f3cd9212b3c5ae8e94b0e0a`  
+		Last Modified: Tue, 01 Jul 2025 08:20:29 GMT  
 		Size: 3.0 MB (2979001 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7dacc99db9be479885adc48cf53bee3823da392ba1281af7f4f49e6139499ce5`  
-		Last Modified: Thu, 26 Jun 2025 05:20:29 GMT  
+	-	`sha256:2a55c0cda549b8659bcccfae409e8f85910e7dc92523672c92ebc96c2e64d9b9`  
+		Last Modified: Tue, 01 Jul 2025 08:20:30 GMT  
 		Size: 33.7 KB (33721 bytes)  
 		MIME: application/vnd.in-toto+json
