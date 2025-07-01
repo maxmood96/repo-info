@@ -21,6 +21,8 @@
 -	[`maven:3-amazoncorretto-21-debian-bookworm`](#maven3-amazoncorretto-21-debian-bookworm)
 -	[`maven:3-amazoncorretto-24`](#maven3-amazoncorretto-24)
 -	[`maven:3-amazoncorretto-24-alpine`](#maven3-amazoncorretto-24-alpine)
+-	[`maven:3-amazoncorretto-24-debian`](#maven3-amazoncorretto-24-debian)
+-	[`maven:3-amazoncorretto-24-debian-bookworm`](#maven3-amazoncorretto-24-debian-bookworm)
 -	[`maven:3-amazoncorretto-8`](#maven3-amazoncorretto-8)
 -	[`maven:3-amazoncorretto-8-al2023`](#maven3-amazoncorretto-8-al2023)
 -	[`maven:3-amazoncorretto-8-alpine`](#maven3-amazoncorretto-8-alpine)
@@ -71,6 +73,8 @@
 -	[`maven:3.9-amazoncorretto-21-debian-bookworm`](#maven39-amazoncorretto-21-debian-bookworm)
 -	[`maven:3.9-amazoncorretto-24`](#maven39-amazoncorretto-24)
 -	[`maven:3.9-amazoncorretto-24-alpine`](#maven39-amazoncorretto-24-alpine)
+-	[`maven:3.9-amazoncorretto-24-debian`](#maven39-amazoncorretto-24-debian)
+-	[`maven:3.9-amazoncorretto-24-debian-bookworm`](#maven39-amazoncorretto-24-debian-bookworm)
 -	[`maven:3.9-amazoncorretto-8`](#maven39-amazoncorretto-8)
 -	[`maven:3.9-amazoncorretto-8-al2023`](#maven39-amazoncorretto-8-al2023)
 -	[`maven:3.9-amazoncorretto-8-alpine`](#maven39-amazoncorretto-8-alpine)
@@ -121,6 +125,8 @@
 -	[`maven:3.9.10-amazoncorretto-21-debian-bookworm`](#maven3910-amazoncorretto-21-debian-bookworm)
 -	[`maven:3.9.10-amazoncorretto-24`](#maven3910-amazoncorretto-24)
 -	[`maven:3.9.10-amazoncorretto-24-alpine`](#maven3910-amazoncorretto-24-alpine)
+-	[`maven:3.9.10-amazoncorretto-24-debian`](#maven3910-amazoncorretto-24-debian)
+-	[`maven:3.9.10-amazoncorretto-24-debian-bookworm`](#maven3910-amazoncorretto-24-debian-bookworm)
 -	[`maven:3.9.10-amazoncorretto-8`](#maven3910-amazoncorretto-8)
 -	[`maven:3.9.10-amazoncorretto-8-al2023`](#maven3910-amazoncorretto-8-al2023)
 -	[`maven:3.9.10-amazoncorretto-8-alpine`](#maven3910-amazoncorretto-8-alpine)
@@ -5154,6 +5160,24 @@ $ docker pull maven@sha256:b09578befd1ac8cfe00ffa01772174831b7da2eaf7d2f76668b52
 		Last Modified: Mon, 23 Jun 2025 20:29:24 GMT  
 		Size: 16.5 KB (16538 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `maven:3-amazoncorretto-24-debian`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `maven:3-amazoncorretto-24-debian-bookworm`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `maven:3-amazoncorretto-8`
 
@@ -24503,6 +24527,24 @@ $ docker pull maven@sha256:b09578befd1ac8cfe00ffa01772174831b7da2eaf7d2f76668b52
 		Size: 16.5 KB (16538 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `maven:3.9-amazoncorretto-24-debian`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `maven:3.9-amazoncorretto-24-debian-bookworm`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `maven:3.9-amazoncorretto-8`
 
 ```console
@@ -43850,6 +43892,24 @@ $ docker pull maven@sha256:b09578befd1ac8cfe00ffa01772174831b7da2eaf7d2f76668b52
 		Last Modified: Mon, 23 Jun 2025 20:29:24 GMT  
 		Size: 16.5 KB (16538 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `maven:3.9.10-amazoncorretto-24-debian`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `maven:3.9.10-amazoncorretto-24-debian-bookworm`
+
+```console
+$ docker pull maven@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `maven:3.9.10-amazoncorretto-8`
 
