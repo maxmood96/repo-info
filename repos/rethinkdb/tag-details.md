@@ -14,7 +14,7 @@
 ## `rethinkdb:2`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -108,18 +108,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:2` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -139,48 +139,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:2` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -266,7 +266,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:2-bookworm-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -360,18 +360,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:2-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -391,48 +391,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -518,7 +518,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:2.4`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -612,18 +612,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:2.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -643,48 +643,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:2.4` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -770,7 +770,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:2.4-bookworm-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -864,18 +864,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:2.4-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -895,48 +895,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:2.4-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1022,7 +1022,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:2.4.3`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1116,18 +1116,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:2.4.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -1147,48 +1147,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:2.4.3` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1274,7 +1274,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:2.4.4-bookworm-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1368,18 +1368,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:2.4.4-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -1399,48 +1399,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:2.4.4-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1526,7 +1526,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:bookworm-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1620,18 +1620,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -1651,48 +1651,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1778,7 +1778,7 @@ $ docker pull rethinkdb@sha256:6acf490a8c9915f859f4a13f5ff3ba288db467275aef46892
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull rethinkdb@sha256:3c9583f9476c3cf65c58656fef0d84526255231fdf1b8c9f99d42cc73d64552f
+$ docker pull rethinkdb@sha256:42997973c218db6ce67c363275eef4bfac98fa0c26c914fb9627c36b611e24cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1872,18 +1872,18 @@ $ docker pull rethinkdb@sha256:027e89c7987aa760c3acfbc4f6829c74a7404a70b7998a56c
 ### `rethinkdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rethinkdb@sha256:3f14962d8250ce9ad24bab16c7782bfd8d9e544c39aab742c2286d39f3b5f3b6
+$ docker pull rethinkdb@sha256:63773da3fb8f4ceb8b9ecff0e2635b5b97f4c767e65c845adb11e3166978c822
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.0 MB (47032963 bytes)**  
+-	Total Size: **47.0 MB (47034280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0e30f624e812dd326f5e2a82fdc8d16e47de3fb694faad6f64af012a6306ef1`
+-	Image ID: `sha256:0c6844e3972192e6c396448b51a534f138e6b7952967205f3240679bac038335`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
 # Wed, 13 Dec 2023 22:17:20 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1749513600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 # Wed, 13 Dec 2023 22:17:20 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2 curl     && rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 13 Dec 2023 22:17:20 GMT
@@ -1903,48 +1903,48 @@ EXPOSE map[28015/tcp:{} 29015/tcp:{} 8080/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:34ef2a75627f6089e01995bfd3b3786509bbdc7cfb4dbc804b642e195340dbc9`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 28.1 MB (28077675 bytes)  
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef8a011433d3c427a0c26eec72e2fde5f5f4b7b1f0e81011e292bcb0f29b527e`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 9.6 MB (9589891 bytes)  
+	-	`sha256:e842d3928ae192699d24090a12d956c1d9d0d11d34d3189278da85e596be6d47`  
+		Last Modified: Tue, 01 Jul 2025 06:32:08 GMT  
+		Size: 9.6 MB (9591265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d02b0b0e94dc8307bd2a7cb995a7e9548c32788cfb0f1070678831d22263e7d7`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 2.7 KB (2669 bytes)  
+	-	`sha256:583958ea8965a848dba16abdd70b607dc63f27e46ae8fe3911bc9fea794349c5`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 2.7 KB (2671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1599ebd64c17d37175000678d046f6970e068abfcb989c00772eaa4e2613aea6`  
-		Last Modified: Wed, 11 Jun 2025 02:34:51 GMT  
-		Size: 9.4 MB (9362634 bytes)  
+	-	`sha256:98a10c2407cebafaad6e8b92fb956457b1304393265b83f0c58f5e4f1a1b3c6d`  
+		Last Modified: Tue, 01 Jul 2025 06:32:07 GMT  
+		Size: 9.4 MB (9362574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a7cc5e7fd8957749e21ba918af08b2d61d016ba2466eee16f26b862b2fb03c0`  
-		Last Modified: Wed, 11 Jun 2025 02:34:52 GMT  
-		Size: 94.0 B  
+	-	`sha256:b6c0b6b81b342eb63290b82ae6d935905a9246479f45c3cac1cdf4ff8377903f`  
+		Last Modified: Tue, 01 Jul 2025 06:32:06 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rethinkdb:latest` - unknown; unknown
 
 ```console
-$ docker pull rethinkdb@sha256:0eff4eb5359209b0d7fec4c6c9d4731802cbd90a9158ee66eb6b0d54fbf1b64f
+$ docker pull rethinkdb@sha256:5ad043bd09e1b04de5eb8dbed4362fe2900c76f14cd6a0d658a456d589a69ca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2795349 bytes)**  
+-	Total Size: **2.8 MB (2796705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7f5f9392e46fa375f4b12a27f2a7e3fd65512b59e6d011102c0267612732361`
+-	Image ID: `sha256:45fb6d39d7bb8d875d277dcb2190f9c9aab9136972306cc809f302dfde00041d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68157b7d7e4463a4188bdfef8106efa3b5e8cce9b00a699af9e2fcdf7e9b4cf7`  
-		Last Modified: Wed, 11 Jun 2025 04:03:25 GMT  
-		Size: 2.8 MB (2781720 bytes)  
+	-	`sha256:4e67bbb5bedede9db1459e98cb0136156c964baba342647a4abe7f385dc02d0c`  
+		Last Modified: Tue, 01 Jul 2025 10:05:54 GMT  
+		Size: 2.8 MB (2783076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:87512993611693c48dab1067cf8393d80aeabb6b77f9a5a85eea0bc5ab0508c3`  
-		Last Modified: Wed, 11 Jun 2025 04:03:26 GMT  
+	-	`sha256:ad0526bfae0ae43bea2ee69496d84cb751bb723b5fd1f2376cc9b91447b7cee3`  
+		Last Modified: Tue, 01 Jul 2025 10:05:55 GMT  
 		Size: 13.6 KB (13629 bytes)  
 		MIME: application/vnd.in-toto+json
 
