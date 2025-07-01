@@ -1,4 +1,4 @@
-## `debian:12.11-slim`
+## `debian:bookworm-20250630-slim`
 
 ```console
 $ docker pull debian@sha256:6ac2c08566499cc2415926653cf2ed7c3aedac445675a013cc09469c9e118fdd
@@ -22,7 +22,7 @@ $ docker pull debian@sha256:6ac2c08566499cc2415926653cf2ed7c3aedac445675a013cc09
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:12.11-slim` - linux; amd64
+### `debian:bookworm-20250630-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:28c1e76b454bb65a9138a2562708e7fa3a937ae88a36b30fe8a12e3e1d447ce3
@@ -45,7 +45,7 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1751241600'
 		Size: 28.2 MB (28230143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:b6dfaf6563b8a2b8e109435d32c57417ef8a13121e590577a79434572a299edd
@@ -65,7 +65,7 @@ $ docker pull debian@sha256:b6dfaf6563b8a2b8e109435d32c57417ef8a13121e590577a794
 		Size: 2.4 MB (2357705 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:12.11-slim` - linux; arm variant v5
+### `debian:bookworm-20250630-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:f1f1f4f37ddcc302e5c1e3b42287755f81747dca70dd15a66aef0fe3c0aad262
@@ -88,7 +88,7 @@ RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1751241600'
 		Size: 25.8 MB (25762460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:c77935c440a4d23cc12b705cffda22eab1ed55995acdf5af3ee2819ac9057dcc
@@ -108,7 +108,7 @@ $ docker pull debian@sha256:c77935c440a4d23cc12b705cffda22eab1ed55995acdf5af3ee2
 		Size: 2.4 MB (2357893 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:12.11-slim` - linux; arm variant v7
+### `debian:bookworm-20250630-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:74581202804c035932d40618bb03735a64a3a0b5494d5ddc6352e640aa3b8c87
@@ -131,7 +131,7 @@ RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
 		Size: 23.9 MB (23938744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:dce71e1b9fe0d45ceb1a0fbb7fd7b06a471f989b4fb478b5e0a8d116e6072867
@@ -151,7 +151,7 @@ $ docker pull debian@sha256:dce71e1b9fe0d45ceb1a0fbb7fd7b06a471f989b4fb478b5e0a8
 		Size: 2.4 MB (2359871 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:12.11-slim` - linux; arm64 variant v8
+### `debian:bookworm-20250630-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:4d7f63db765ea90bd6bbc4fab5be3df7d3f8030009f397ad6649d876763917d7
@@ -174,7 +174,7 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
 		Size: 28.1 MB (28077678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:f220d38db8e1754c6000f3c674871afca1482074d4c6b9bc410af08dc2ff2df6
@@ -194,7 +194,7 @@ $ docker pull debian@sha256:f220d38db8e1754c6000f3c674871afca1482074d4c6b9bc410a
 		Size: 2.4 MB (2357901 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:12.11-slim` - linux; 386
+### `debian:bookworm-20250630-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:a04c3d4ec8afc6447939c9f9fa9410910ed08b432c4225cf45b138f62078c5ac
@@ -217,7 +217,7 @@ RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1751241600'
 		Size: 29.2 MB (29212432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:9ddf1f17e46ef1d7b27f2abac2c1bda48e4af6a2cc408052f570ce15d53a2396
@@ -237,7 +237,7 @@ $ docker pull debian@sha256:9ddf1f17e46ef1d7b27f2abac2c1bda48e4af6a2cc408052f570
 		Size: 2.4 MB (2354923 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:12.11-slim` - linux; mips64le
+### `debian:bookworm-20250630-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:ee7069addc476c409ab72634385918932238fcc6bb93de376a95345e1b5d3276
@@ -260,7 +260,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1751241600'
 		Size: 28.5 MB (28516734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - linux; ppc64le
+### `debian:bookworm-20250630-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:1cd6f4a158d40e946c7703b69b418345cca0af98856bb420595a0a34a51673f2
@@ -283,7 +283,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1751241600'
 		Size: 32.1 MB (32072820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:33854bdfb2f0ab5c4400d042dcc8ee38be65609c50aa3a20bc191dce6766be4f
@@ -303,7 +303,7 @@ $ docker pull debian@sha256:33854bdfb2f0ab5c4400d042dcc8ee38be65609c50aa3a20bc19
 		Size: 2.4 MB (2362025 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:12.11-slim` - linux; s390x
+### `debian:bookworm-20250630-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:ccbf2c799c72de648f648c84a1f8ceebcbb1e2a1fe72b4993f6744767265fbb0
@@ -326,7 +326,7 @@ RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
 		Size: 26.9 MB (26887811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:12.11-slim` - unknown; unknown
+### `debian:bookworm-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:6335d5b6fe7a5124bfca0da3d5cda8eb26fd41d245db1bf1476746c2c607d609

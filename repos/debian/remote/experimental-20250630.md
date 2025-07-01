@@ -1,20 +1,16 @@
-## `debian:experimental`
+## `debian:experimental-20250630`
 
 ```console
-$ docker pull debian@sha256:e961c224d17584fa6423158954c30989cbc8047b7a38d148f3e8d22c21f84ed8
+$ docker pull debian@sha256:f88ab8b44b10d0ea3264c742c1ea120f576c5d1a74a34b84c6569e47eca8c91e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 18
-	-	linux; amd64
-	-	unknown; unknown
+-	Platforms: 14
 	-	linux; arm variant v5
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
 	-	linux; arm64 variant v8
-	-	unknown; unknown
-	-	linux; 386
 	-	unknown; unknown
 	-	linux; mips64le
 	-	unknown; unknown
@@ -25,60 +21,7 @@ $ docker pull debian@sha256:e961c224d17584fa6423158954c30989cbc8047b7a38d148f3e8
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:experimental` - linux; amd64
-
-```console
-$ docker pull debian@sha256:bb8e2851ce0391e4f7dd293e2cef49194b6dad8d83ef513509e8b3e34da2f9b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49263545 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51e2e73c4c41364c095db0914d8c4dedeb1a150236cf1930938e72d9d10b881e`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'unstable' '@1749513600'
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list # buildkit
-```
-
--	Layers:
-	-	`sha256:93fddcb908571811e3e13798129542e070826b8fa807722501c0632f40b7a77b`  
-		Last Modified: Tue, 10 Jun 2025 23:26:02 GMT  
-		Size: 49.3 MB (49263323 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c892b2072ec578be31bae9f4551551469b915f3cb48aa2ba51aca06535533d6`  
-		Last Modified: Tue, 10 Jun 2025 23:26:32 GMT  
-		Size: 222.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `debian:experimental` - unknown; unknown
-
-```console
-$ docker pull debian@sha256:be783e883d826ae570397b6a1a7fdbeb9aacf70fd53ac7fec8863f3a7d415f63
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3174303 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a644388f1c9f1552951eb993e5f48056c831375f07afb3f38153d6ab199ba066`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1f705ea3a6b21fa9fbdd7cba1183928822ff26c3ed4bd630922964e615d26a35`  
-		Last Modified: Wed, 11 Jun 2025 00:25:22 GMT  
-		Size: 3.2 MB (3168160 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1dda7b6501093ce84e9dba17c6ff836a58b6cd4205d84def4a907fafe922ba0f`  
-		Last Modified: Wed, 11 Jun 2025 00:25:23 GMT  
-		Size: 6.1 KB (6143 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `debian:experimental` - linux; arm variant v5
+### `debian:experimental-20250630` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:653d68c81afed88c9015f8fba89e541e9bb3fb7aa16f6da34e27505428867b84
@@ -107,7 +50,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:2153ac0af56b38fc0d2510fc12e09ae8774c3c9e3d19e992bb76a8faa7c7641a
@@ -131,7 +74,7 @@ $ docker pull debian@sha256:2153ac0af56b38fc0d2510fc12e09ae8774c3c9e3d19e992bb76
 		Size: 6.2 KB (6204 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:experimental` - linux; arm variant v7
+### `debian:experimental-20250630` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:cdfd40035504c619d1dc50eeae0cd616d52fed864b4fe0cc8d0fc8bd145639c8
@@ -160,7 +103,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:2d6be76e896bf6ee2fc140d0e5a89189ab9e30c881c27ef8334d025036f2c187
@@ -184,7 +127,7 @@ $ docker pull debian@sha256:2d6be76e896bf6ee2fc140d0e5a89189ab9e30c881c27ef8334d
 		Size: 6.2 KB (6204 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:experimental` - linux; arm64 variant v8
+### `debian:experimental-20250630` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:e75683b9c5823fc0077c0e0da45910447ebc7e5c4c72f5c7ec9620233eed599e
@@ -213,7 +156,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 221.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:ec9615c89d2fae70b6ac46adf6467723e95a736cfec0f7c98e2d716c2567d23e
@@ -237,60 +180,7 @@ $ docker pull debian@sha256:ec9615c89d2fae70b6ac46adf6467723e95a736cfec0f7c98e2d
 		Size: 6.2 KB (6224 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:experimental` - linux; 386
-
-```console
-$ docker pull debian@sha256:de203a7e6a5899d2210fb40ca57eddcd9030c99eb7cef77e098ae65788e42afe
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.8 MB (50786244 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a114ce5f7b9b94f3ea47afba6e8cc83bf11d0ee750fee45abe636e6850fe077`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'unstable' '@1749513600'
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list # buildkit
-```
-
--	Layers:
-	-	`sha256:f395920f2feadf08d83feacf633e28ec2d6794555dff77f51e2c5a372b240daa`  
-		Last Modified: Tue, 10 Jun 2025 23:26:11 GMT  
-		Size: 50.8 MB (50786023 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ce849b3fc377ca771a0db8f60dd52a44b1f258abeb51a030268dc409bb9180a`  
-		Last Modified: Tue, 10 Jun 2025 23:26:40 GMT  
-		Size: 221.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `debian:experimental` - unknown; unknown
-
-```console
-$ docker pull debian@sha256:f0006650ff35b0c5e3c5c1e2f018fd0c4dc6a71642ce6f0f72392c3ceac1a82a
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3171479 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfc9d0475c1d011504877d811937d7b50d4ed9b7c59293b2b9c7c7ca8cfed38b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6d2f4c0d63d5e0f13871cadd7ae82e83cf5fea0342167750301dc2fb2d3c9900`  
-		Last Modified: Wed, 11 Jun 2025 00:25:44 GMT  
-		Size: 3.2 MB (3165359 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:af3502512456d8913be3133a1d55b0a39033e139a4b0533b3656d63e43eb6a9b`  
-		Last Modified: Wed, 11 Jun 2025 00:25:45 GMT  
-		Size: 6.1 KB (6120 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `debian:experimental` - linux; mips64le
+### `debian:experimental-20250630` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:b519c074a3030ccffb62096600b77d93d9fbc002968df7e4589bb846834c7363
@@ -319,7 +209,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 221.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:26825af6b7acf358879379977501fc28c047430e8cb3cb2cdb3302a2d5ae5c6d
@@ -339,7 +229,7 @@ $ docker pull debian@sha256:26825af6b7acf358879379977501fc28c047430e8cb3cb2cdb33
 		Size: 6.0 KB (5977 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:experimental` - linux; ppc64le
+### `debian:experimental-20250630` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:ec9819740ebed2b30f7bc1a701da526fe2eb8bc2b7f0b8faa981ab14f6102871
@@ -368,7 +258,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:8644ecf36cae01bfa42017ccc853e0bfca4f2224c52b97a647d5afb7050a046f
@@ -392,7 +282,7 @@ $ docker pull debian@sha256:8644ecf36cae01bfa42017ccc853e0bfca4f2224c52b97a647d5
 		Size: 6.2 KB (6176 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:experimental` - linux; riscv64
+### `debian:experimental-20250630` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:09f224d6bfbf183bc8d10de76144c7a5705e269ca6d648771011495fc8de1977
@@ -421,7 +311,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:4a5f42ce1d2b570f841e51285858eac6616bcddc24cb2b4c768b26945fc55449
@@ -445,7 +335,7 @@ $ docker pull debian@sha256:4a5f42ce1d2b570f841e51285858eac6616bcddc24cb2b4c768b
 		Size: 6.2 KB (6176 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:experimental` - linux; s390x
+### `debian:experimental-20250630` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:6cf28e02b90c5da74d99b4acfe6a60c0b7a0feb69bc8b7d0581ed3a503898d5f
@@ -474,7 +364,7 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:experimental` - unknown; unknown
+### `debian:experimental-20250630` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:952a7820a1e322791a191ef393dedadbb9b8ac56b3f8c06028dd337f3e7ca0d8

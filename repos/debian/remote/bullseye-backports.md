@@ -1,7 +1,7 @@
 ## `debian:bullseye-backports`
 
 ```console
-$ docker pull debian@sha256:4939eac334ad0636e4a39f509fd83d0ae4202ed93ab1771f30182b6aeea21022
+$ docker pull debian@sha256:a0a25d2e317c3f9be72a43bddcb6c70daa6f0d5887f9bc2448617c1c5a7cd3c5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -71,106 +71,106 @@ $ docker pull debian@sha256:94121a30180ee1e6c882b3265be7682b982bc5481a85ad0c8aaf
 ### `debian:bullseye-backports` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:f77c8b9604d4b722e12cac43ffa87a9dda27577ee922ba0027aa4a1a88b1c33f
+$ docker pull debian@sha256:f44fe1cb81fe77e1c3a9b420e3e3606afa76bb8e6451eaeb13b2bae4f3e57282
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.0 MB (49044181 bytes)**  
+-	Total Size: **49.0 MB (49044184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5301e507297fc6cb9a2fbba8773da8f272aad569b8f9442757ec62d5ed207c6`
+-	Image ID: `sha256:9f64d7179ecbb38655bb4782fb49cd3e9d76c363dddbd6af65cbb7f0954d9fdb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1749513600'
-# Tue, 10 Jun 2025 00:00:00 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1751241600'
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c43258def9bd93af20e1c5bd4e42a71d9db281a9fc468bbb5eb78d7a51c6472a`  
-		Last Modified: Tue, 10 Jun 2025 22:47:56 GMT  
-		Size: 49.0 MB (49043954 bytes)  
+	-	`sha256:efcf40eae0046ccd92d3b47ff685e1e9cf7a34d0a92f6de893078f115e01f20f`  
+		Last Modified: Tue, 01 Jul 2025 01:15:14 GMT  
+		Size: 49.0 MB (49043960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c12bdd4ca6de465c09f65b3d6b35ba2f656501533e8f202e2ac1e68250aa08`  
-		Last Modified: Tue, 10 Jun 2025 23:25:28 GMT  
-		Size: 227.0 B  
+	-	`sha256:3d4c530dfe3c35890c2d16d3a1a22455e03c47be1b00fb701632f8885439d0c1`  
+		Last Modified: Tue, 01 Jul 2025 02:12:28 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:ebcb18552cd1e7bad5ca416be375cd83b4094ced304375959ec2cd808cc84e62
+$ docker pull debian@sha256:6e6a4ae4a4bd5c80b7967d7c7fb3c8352f40605a74542d4be36c23b87223aab8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (4031760 bytes)**  
+-	Total Size: **4.0 MB (4031762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c157084f8d502e9d440117d9e60d9c15c94c2abb399af7317909b1a71070665`
+-	Image ID: `sha256:dd10165940f5a8aae02efe7098cf357fde2ff9bc9122bf1065ce7c82a362113d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:465608f213d50015569a2d7459e5c901dc6562ff628a53d4862ecc9b322084ee`  
-		Last Modified: Wed, 11 Jun 2025 00:25:03 GMT  
+	-	`sha256:a778796094a93f7534313f0b2071a5a92731d59b2134530360d00766b8d392b0`  
+		Last Modified: Tue, 01 Jul 2025 03:24:55 GMT  
 		Size: 4.0 MB (4025863 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5682bcdf7008acd168b57563792d2481288e6a01b809f42994c25c3b7c86ea26`  
-		Last Modified: Wed, 11 Jun 2025 00:25:04 GMT  
-		Size: 5.9 KB (5897 bytes)  
+	-	`sha256:4a84db63f8f4a36f5f29197bbd15488f50fb01d7de1f863a720bb18968145b6c`  
+		Last Modified: Tue, 01 Jul 2025 03:24:56 GMT  
+		Size: 5.9 KB (5899 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bullseye-backports` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:0d6a0aad6a5a536afd63bfbaa62d2a5cc2f32bf709ebe021eebb6f0a5dc83309
+$ docker pull debian@sha256:1168b6b669e9cc6afbf352519ee04a4233f0c39e17e5bbcb7a434f9c207793de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.3 MB (52252526 bytes)**  
+-	Total Size: **52.3 MB (52252480 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb08bfa909b6dc8b6916c8c89fb469cc549f8d01b240cae0a2aefab65ecee011`
+-	Image ID: `sha256:581835b95178eeec00a3123246b6870153553fae5c52abc44b5f80ba73d8f3ee`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 10 Jun 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1749513600'
-# Tue, 10 Jun 2025 00:00:00 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1751241600'
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:01b9f05048bbb73f25cf8fdb677f6390611ed20f4945645387ddce6122b5075e`  
-		Last Modified: Tue, 10 Jun 2025 22:49:07 GMT  
-		Size: 52.3 MB (52252301 bytes)  
+	-	`sha256:df45b4853b6fce6b81d1ac6218d861c6d7c8c14da4be409d42ee4bfdf0737e71`  
+		Last Modified: Tue, 01 Jul 2025 01:15:18 GMT  
+		Size: 52.3 MB (52252254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b85383dbc7bcda1038d86f0b06555a07e7311c872b05768367c285a8bda3a32`  
-		Last Modified: Tue, 10 Jun 2025 23:24:14 GMT  
-		Size: 225.0 B  
+	-	`sha256:60048776700cb99ca6cda3cda3ef3818ac460e2ceda318768e72e2b01602c543`  
+		Last Modified: Tue, 01 Jul 2025 02:12:21 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:b006db088650b372e49a444488996e4298fea08b529929bd7ff73b04f13277f1
+$ docker pull debian@sha256:a7fd40656efe41b910397c66972974afe95bafbbe036ec828cd4438f48385c9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.0 MB (4029796 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c971972b3f47a270e21f4876f49cdc09d9b4375fd9a8dc04a4677ab5496e3a7e`
+-	Image ID: `sha256:7e2b63df745a44211670c646928fbb3f44af1a3840673d306370d3fedca193ef`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4c145cfabe5f4d1b34e507f36ba9c09ac7b4c8084bf81201da12542ed2d856e`  
-		Last Modified: Wed, 11 Jun 2025 00:25:09 GMT  
+	-	`sha256:07800634365333d86df3f578f31ae63646e336970069d7982e4c5c9e074f8f46`  
+		Last Modified: Tue, 01 Jul 2025 03:25:01 GMT  
 		Size: 4.0 MB (4023881 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:56c1b4a3ca7090550157fc50ed5e8168d2d944ebc0ff4941c7e387c8e7ce85db`  
-		Last Modified: Wed, 11 Jun 2025 00:25:10 GMT  
+	-	`sha256:d1b559d2a951d29f1d3fc317d3e489036de89d88595ef46b07a1565b9e854231`  
+		Last Modified: Tue, 01 Jul 2025 03:25:02 GMT  
 		Size: 5.9 KB (5915 bytes)  
 		MIME: application/vnd.in-toto+json
 

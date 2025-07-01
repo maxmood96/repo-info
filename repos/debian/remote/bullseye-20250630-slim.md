@@ -1,4 +1,4 @@
-## `debian:11-slim`
+## `debian:bullseye-20250630-slim`
 
 ```console
 $ docker pull debian@sha256:b5f9bc44bdfbd9d551dfdd432607cbc6bb5d9d6dea726a1191797d7749166973
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:b5f9bc44bdfbd9d551dfdd432607cbc6bb5d9d6dea726a119179
 	-	linux; 386
 	-	unknown; unknown
 
-### `debian:11-slim` - linux; amd64
+### `debian:bullseye-20250630-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:8717ec90aa91e5980b54b7025c2063d6bcbf3ac3d266bb455e4088cc777410c6
@@ -38,7 +38,7 @@ RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1751241600'
 		Size: 30.3 MB (30256047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:11-slim` - unknown; unknown
+### `debian:bullseye-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:f65954b6d1a8812ab661205193d137cbfd159a9a1f66f44e6fd8c5e33a7156f1
@@ -58,7 +58,7 @@ $ docker pull debian@sha256:f65954b6d1a8812ab661205193d137cbfd159a9a1f66f44e6fd8
 		Size: 2.7 MB (2667340 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:11-slim` - linux; arm variant v7
+### `debian:bullseye-20250630-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:e7b330b651c17e0fd209bbd4902ccffe970a8bbbfa574a7a36c5683552bf666e
@@ -81,7 +81,7 @@ RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1751241600'
 		Size: 25.5 MB (25544163 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:11-slim` - unknown; unknown
+### `debian:bullseye-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:d991f35dfd7b9703a1fe8efa18f31146b8430642de60a3eb8820870b1e59a64c
@@ -101,7 +101,7 @@ $ docker pull debian@sha256:d991f35dfd7b9703a1fe8efa18f31146b8430642de60a3eb8820
 		Size: 2.7 MB (2669524 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:11-slim` - linux; arm64 variant v8
+### `debian:bullseye-20250630-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:d2c4e41b4ba946d25bf64ee474b5dc1856d34c0305930bd13a4c7d02dc1d5c90
@@ -124,7 +124,7 @@ RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1751241600'
 		Size: 28.7 MB (28744140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:11-slim` - unknown; unknown
+### `debian:bullseye-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:c4dc5af6a892e22bd5ad03eedbe9cb1c989c98ceff856df287c537261a2b2d51
@@ -144,7 +144,7 @@ $ docker pull debian@sha256:c4dc5af6a892e22bd5ad03eedbe9cb1c989c98ceff856df287c5
 		Size: 2.7 MB (2667536 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:11-slim` - linux; 386
+### `debian:bullseye-20250630-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:3c589f05d8c3edb24062e9117a62e20b9e7a1ef9b017ae2f261c39aace6c2021
@@ -167,7 +167,7 @@ RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1751241600'
 		Size: 31.2 MB (31189680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:11-slim` - unknown; unknown
+### `debian:bullseye-20250630-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:122db69504f18fb043cfa8651ffa29ac1af65b0d641a7fb1bc47a2c1cfbace3c
