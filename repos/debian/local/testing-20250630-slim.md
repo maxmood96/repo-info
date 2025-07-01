@@ -1,10 +1,10 @@
-# `debian:experimental`
+# `debian:testing-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:51e2e73c4c41364c095db0914d8c4dedeb1a150236cf1930938e72d9d10b881e`
-- Created: `2025-06-10T00:00:00Z`
-- Virtual Size: ~ 119.83 Mb  
+- Image ID: `sha256:b60e22a7cc899beeb43a734104706046aed0554d0eff5ddb2afb64b58e57e42d`
+- Created: `2025-06-30T00:00:00Z`
+- Virtual Size: ~ 78.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -177,7 +177,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `bash=5.2.37-2+b2`
+- `bash=5.2.37-2+b3`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -581,12 +581,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-14/14.2.0-19/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-14/14.2.0-19/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.41-8`
+### `dpkg` source package: `glibc=2.41-9`
 
 Binary Packages:
 
-- `libc-bin=2.41-8`
-- `libc6:amd64=2.41-8`
+- `libc-bin=2.41-9`
+- `libc6:amd64=2.41-9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -626,17 +626,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.41-8
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-8.dsc' glibc_2.41-8.dsc 7540 SHA256:66b66ce63b3ebe841a30c5dd36ce3edc85c39754c8e13d9df485b989d02d3592
+$ apt-get source -qq --print-uris glibc=2.41-9
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-9.dsc' glibc_2.41-9.dsc 7540 SHA256:9bb699c6780fc17a03014cdacfafd2cca8a9574c0452cc01668e8034532e2460
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-8.debian.tar.xz' glibc_2.41-8.debian.tar.xz 425112 SHA256:9d5f07871e2967278e7ba723f27d2ff191782a4390de3980f7008af4a2c4a642
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-9.debian.tar.xz' glibc_2.41-9.debian.tar.xz 433452 SHA256:afa8cbb8c71ab1fffafdbb5e7fa8227443cdc761a157a15b49b1d4592053ba83
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.41-8/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.41-9/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.41-9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.41-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -1477,13 +1477,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=257.6-1
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6-1.dsc' systemd_257.6-1.dsc 8614 SHA256:6edd1e36ac1c7759796182701b83f45a9e96c86a708d153ca64a83b82e4383f3
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6.orig.tar.gz' systemd_257.6.orig.tar.gz 16321562 SHA256:1ac656c61e595cc6e653883d554caadd2053f323d9065c0daff69f83368b120c
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6-1.debian.tar.xz' systemd_257.6-1.debian.tar.xz 182228 SHA256:e93575db3db98d4f0612798560a1f334ebcaf3033212635dd9d5ee4a11bc1455
+```
 
-- http://snapshot.debian.org/package/systemd/257.6-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/257.6-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.6-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
