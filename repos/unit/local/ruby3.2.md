@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08d686896b7627d95a4de9c1670472362d46985b717e0a1e57ccbdd551615fc8`
+- Image ID: `sha256:bb1dddcddbe1c149617fd971e74d68966003c6a7acc1d2b0016c57da9376027c`
 - Created: `2025-03-03T18:37:38Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
@@ -518,11 +518,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311`
+### `dpkg` source package: `ca-certificates=20230311+deb12u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311`
+- `ca-certificates=20230311+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -533,16 +533,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20230311
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311.dsc' ca-certificates_20230311.dsc 1768 SHA256:bf44adb22fce619310b0f8d7bb6952b0a80907de9e3ecb773143769e98478a3b
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311.tar.xz' ca-certificates_20230311.tar.xz 257772 SHA256:83de934afa186e279d1ed08ea0d73f5cf43a6fbfb5f00874b6db3711c64576f3
+$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.dsc' ca-certificates_20230311+deb12u1.dsc 1800 SHA256:d4d57c9b56db87c8ebe7a0c27d55023e3369d183d4b774bdf455f775a80f00eb
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.tar.xz' ca-certificates_20230311+deb12u1.tar.xz 259756 SHA256:4cd6bbd5577a16432438bc1006dc05c333afacb76104fc3564612858c8ee3280
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20230311/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20230311/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20230311/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.16.0-7`
 
@@ -1445,15 +1445,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.42.10+dfsg-1+deb12u1`
+### `dpkg` source package: `gdk-pixbuf=2.42.10+dfsg-1+deb12u2`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.42.10+dfsg-1+deb12u1`
-- `libgdk-pixbuf-2.0-0:amd64=2.42.10+dfsg-1+deb12u1`
-- `libgdk-pixbuf-2.0-dev:amd64=2.42.10+dfsg-1+deb12u1`
-- `libgdk-pixbuf2.0-bin=2.42.10+dfsg-1+deb12u1`
-- `libgdk-pixbuf2.0-common=2.42.10+dfsg-1+deb12u1`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.42.10+dfsg-1+deb12u2`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.10+dfsg-1+deb12u2`
+- `libgdk-pixbuf-2.0-dev:amd64=2.42.10+dfsg-1+deb12u2`
+- `libgdk-pixbuf2.0-bin=2.42.10+dfsg-1+deb12u2`
+- `libgdk-pixbuf2.0-common=2.42.10+dfsg-1+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-dev/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-bin/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1468,17 +1468,17 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-1+deb12u1
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u1.dsc' gdk-pixbuf_2.42.10+dfsg-1+deb12u1.dsc 3328 SHA256:61d9a589c47389c3668d0e0e00b578b4bd362e820ccf0753c44912940a466f2b
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA256:46663e445468e92f4a0ca876b02aed4f8758595ee3acfaa6ef3ba2b29e1c1930
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u1.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-1+deb12u1.debian.tar.xz 22156 SHA256:91b7d1795ffedc62c832c4a7cd4d425c39117372bf4bd69720b5c7d8dd93605e
+$ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-1+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u2.dsc' gdk-pixbuf_2.42.10+dfsg-1+deb12u2.dsc 3173 SHA256:117f2f12e10c1a81b402f316edc37a1f02377e3475601360a2d50583a3432fca
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA256:46663e445468e92f4a0ca876b02aed4f8758595ee3acfaa6ef3ba2b29e1c1930
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-1%2bdeb12u2.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-1+deb12u2.debian.tar.xz 22604 SHA256:0a00c1c52b64abbe5fab1f08cc6c4b1032680c95ca9fdaf148f115011755de4b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.10+dfsg-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.10+dfsg-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.10+dfsg-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.10+dfsg-1+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.10+dfsg-1+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.10+dfsg-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.39.5-0+deb12u2`
 
@@ -1962,13 +1962,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.23+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.23+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=72.1-3`
+### `dpkg` source package: `icu=72.1-3+deb12u1`
 
 Binary Packages:
 
-- `icu-devtools=72.1-3`
-- `libicu-dev:amd64=72.1-3`
-- `libicu72:amd64=72.1-3`
+- `icu-devtools=72.1-3+deb12u1`
+- `libicu-dev:amd64=72.1-3+deb12u1`
+- `libicu72:amd64=72.1-3+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/icu-devtools/copyright`, `/usr/share/doc/libicu-dev/copyright`, `/usr/share/doc/libicu72/copyright`)
 
@@ -1978,18 +1978,18 @@ Licenses: (parsed from: `/usr/share/doc/icu-devtools/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=72.1-3
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1-3.dsc' icu_72.1-3.dsc 2252 SHA256:fdb557502398e70fe74502f5c2e5ec436b7c7f267420fba7ceaca7ce501dbf6e
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_72.1-3.debian.tar.xz' icu_72.1-3.debian.tar.xz 62172 SHA256:e7b9edb525c7c94043577920dc5f1cc63c18e362a07b44d3e3ec39e89f174bb6
+$ apt-get source -qq --print-uris icu=72.1-3+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1-3%2bdeb12u1.dsc' icu_72.1-3+deb12u1.dsc 2284 SHA256:8fd50a21664422b2dd5df4e20175dce3396c89a3a85363db26dd4529bba62a92
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1.orig.tar.gz' icu_72.1.orig.tar.gz 26303933 SHA256:a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1.orig.tar.gz.asc' icu_72.1.orig.tar.gz.asc 659 SHA256:87b6ff610d587292cec0444fa8cbbfb12994cb89bade40578f5ba6470de245c7
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_72.1-3%2bdeb12u1.debian.tar.xz' icu_72.1-3+deb12u1.debian.tar.xz 63620 SHA256:bd6b27fc0a18f6044a47cd96c7d687720b95e4f592718bf8e34c6391b7753a1d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/72.1-3/ (for browsing the source)
-- https://sources.debian.net/src/icu/72.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/72.1-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/72.1-3+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/icu/72.1-3+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/72.1-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3`
 
@@ -3762,12 +3762,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxext/2:1.3.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxext/2:1.3.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3~deb12u1`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3~deb12u2`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3~deb12u1`
-- `libxml2-dev:amd64=2.9.14+dfsg-1.3~deb12u1`
+- `libxml2:amd64=2.9.14+dfsg-1.3~deb12u2`
+- `libxml2-dev:amd64=2.9.14+dfsg-1.3~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-dev/copyright`)
 
@@ -3777,17 +3777,17 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u1.dsc' libxml2_2.9.14+dfsg-1.3~deb12u1.dsc 3110 SHA256:2699cc25c155e7b46c47b732e0a6ba5b97de47d0ad3ccac542fc4271cd180645
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u1.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u1.debian.tar.xz 35100 SHA256:7ea1d2de7fa1d6fd9c5c80acc5a535c3c3e7540f3511ca14544700fe4bbb3279
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.dsc' libxml2_2.9.14+dfsg-1.3~deb12u2.dsc 2610 SHA256:d6f39c8c5fc3d86a53fd7a977c89b0e83913e4d73c230d77cb36dde5a9bc5a73
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u2.debian.tar.xz 39296 SHA256:da8c62b2137dac24d6cc2d4634c85db5314fc3cc89661bace8974a4966ab6a64
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1`
 
