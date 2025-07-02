@@ -111,7 +111,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-
 		Size: 28.0 MB (28035850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a336c75d1a418190091c4dd0e9e617ee21f5a43d5e3250874545d0b86c099b16`  
-		Last Modified: Wed, 02 Jul 2025 05:15:54 GMT  
+		Last Modified: Wed, 02 Jul 2025 13:44:57 GMT  
 		Size: 781.2 MB (781228368 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
