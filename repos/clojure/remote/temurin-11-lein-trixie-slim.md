@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:80cd3853c0b0f54b2b9bdd60980400eff4734d802b05b8d0bff4e088592363c6
+$ docker pull clojure@sha256:0c869dac3aa1f3b5a67d35d4ab0a5249772f49dbcac679a755ed617a62b23d03
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -188,13 +188,13 @@ $ docker pull clojure@sha256:133dce93a4f8e6cf53296e98eb445c6a8810ff0608daaf320c2
 ### `clojure:temurin-11-lein-trixie-slim` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:06e70dc869d8755a0b2e24b5d0ee565ce3bdad0ff267f7029b176df7d1201b50
+$ docker pull clojure@sha256:63e2a1420c532ffcc8fb8bd3629f626bdcd77063d3d2541fd2bea1baa92f9c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.8 MB (229793158 bytes)**  
+-	Total Size: **229.8 MB (229793227 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf407f0f1c677fa8d197dd8ec29d6a0e89e9ac0b81c29844c80de5f0b2c02f70`
+-	Image ID: `sha256:77e013ee463bb2b34ce619f49e79de17178cf0ae9540c0605b2b52ccdcdf4f24`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -229,45 +229,45 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 01 Jul 2025 01:19:23 GMT  
 		Size: 33.6 MB (33586035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ed42b7a45be9a319908284c305fbff7f8a11100527571431a46ab61609503d1`  
-		Last Modified: Tue, 01 Jul 2025 08:34:13 GMT  
-		Size: 132.8 MB (132810556 bytes)  
+	-	`sha256:676faca439b315e8d443d62b4f05302a0a6134f1d73456cdb753985d6bdcded9`  
+		Last Modified: Wed, 02 Jul 2025 10:16:42 GMT  
+		Size: 132.8 MB (132810428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06bd5b8bb5cd3ff8c782ca00a815ea38bcd2efc4ec4af0e2e61c3fb0691651d6`  
-		Last Modified: Tue, 01 Jul 2025 08:34:23 GMT  
-		Size: 58.9 MB (58882393 bytes)  
+	-	`sha256:925958fbd4b01e4c4f5b5f8793dd193242b93a0b83e25599830bfa3ccef37db2`  
+		Last Modified: Wed, 02 Jul 2025 10:17:07 GMT  
+		Size: 58.9 MB (58882578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e0d50575033eb60084cf445d62737dd47bdf407717da81c370faf15fbb8ca6`  
-		Last Modified: Tue, 01 Jul 2025 08:34:20 GMT  
-		Size: 4.5 MB (4514142 bytes)  
+	-	`sha256:50701d8e904a5c05f1f3135f80b696fa7ded1c6c5df10225a1473778c87386ec`  
+		Last Modified: Wed, 02 Jul 2025 10:17:00 GMT  
+		Size: 4.5 MB (4514154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:0dde700fd10bed497b620abee006c78206b3676981d9d96dd2e62d2af3a6909d
+$ docker pull clojure@sha256:22095d83bec3ae299bd5001d9fa48c99ee08c1793c3c4fc0045cff475094db7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4317551 bytes)**  
+-	Total Size: **4.3 MB (4317549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb214e7dd7e5414f3454997c47f4425d6fe0b7ebe2c414115995e98cb52042d5`
+-	Image ID: `sha256:2b70ad2a481a4c9424605cef6fe0b4a025d5f1fc06092ae5205c50b5057f396d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:32741e53743fd5edd1c4f75b4bde363e9b13b65f2e7e4c59471a53296dcb6c51`  
-		Last Modified: Tue, 01 Jul 2025 09:36:17 GMT  
+	-	`sha256:47c3a6d3ab8dbd63d35751a6fafd8fcff75e89719c70869a2bdff71b8382e6d7`  
+		Last Modified: Wed, 02 Jul 2025 12:35:56 GMT  
 		Size: 4.3 MB (4301058 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:68a2f24515694c32061e0b2d2823806ea802759245ca310d30df04ab93165267`  
-		Last Modified: Tue, 01 Jul 2025 09:36:18 GMT  
-		Size: 16.5 KB (16493 bytes)  
+	-	`sha256:fb713432f708771c569f623c6825ded0510e0d5154e14c00218ccd93e4ba5270`  
+		Last Modified: Wed, 02 Jul 2025 12:35:56 GMT  
+		Size: 16.5 KB (16491 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-lein-trixie-slim` - linux; s390x

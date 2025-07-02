@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-bookworm`
 
 ```console
-$ docker pull clojure@sha256:dab47e54dfef687df67daefa272071604a29b433e6b6704f3cb967f98f8f0725
+$ docker pull clojure@sha256:99c36b4edd6d309691b7659e58fbee29fa9ee26a525dc804cb922e658791db7b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -176,13 +176,13 @@ $ docker pull clojure@sha256:6b59ab59ba0c6c37ab34c5dc48d78da18ca31f6d0c87538b662
 ### `clojure:temurin-11-tools-deps-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:ce6c5f1b612b9de24a65be55c2030a605d45c5c4acc1c12341a577bf0cbe6037
+$ docker pull clojure@sha256:21b8a165f678da4c6f84ed2e33aa86ad384171c019e68fc2eaf9db2e7b3fa191
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271967867 bytes)**  
+-	Total Size: **272.0 MB (271967639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c7db6e5dc60b71ffc1918f69c2422d45dc349f15e6c41005ba17b046ff41d19`
+-	Image ID: `sha256:8fb781327396c3f3610b784a0775ed1dff59918ccf00e8e684eabba2f856d067`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -211,45 +211,45 @@ CMD ["clj"]
 		Last Modified: Tue, 01 Jul 2025 01:15:05 GMT  
 		Size: 52.3 MB (52337243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e63c633f9e5d44c1f765a009b05c519412a7c78d0bff2e37793b7681c50f85bb`  
-		Last Modified: Tue, 01 Jul 2025 13:32:39 GMT  
-		Size: 132.8 MB (132810531 bytes)  
+	-	`sha256:eeb88e0eb604515442a1d3c4c17a1fcf57f0a95fb0a8a641f329ce7e3c4fd95a`  
+		Last Modified: Wed, 02 Jul 2025 10:09:23 GMT  
+		Size: 132.8 MB (132810433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48fd3329abbe2ec5dacab52a0cdaad3c9571ec5ca8dfce07e88a8f7548cd85e0`  
-		Last Modified: Tue, 01 Jul 2025 08:36:14 GMT  
-		Size: 86.8 MB (86819449 bytes)  
+	-	`sha256:8c1e537901fdc8fae5bf89429d3106eb9f5fd1dd9f0df1fcf30589616f2132eb`  
+		Last Modified: Wed, 02 Jul 2025 10:18:25 GMT  
+		Size: 86.8 MB (86819318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:279c9a3553b36bf7e1f8e001213d6381152651cf794fca89151627bb3e49e6f2`  
-		Last Modified: Tue, 01 Jul 2025 08:36:01 GMT  
-		Size: 612.0 B  
+	-	`sha256:4f879e08db1f8b16e14901fa3e8266f91ce128e6b23c00c1f73606724a116847`  
+		Last Modified: Wed, 02 Jul 2025 10:18:18 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:33393f3574119bfaa4885a3a3373ec02cbe7dcaa884b0c7b9a7bc05ea63e60ba
+$ docker pull clojure@sha256:104ae9d4370b0f32699c32ca3a43f204d8e754fd65de472183edcf4a0bbb2b95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7407298 bytes)**  
+-	Total Size: **7.4 MB (7407296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:085c95cf73d4eebe59d90cbce29e226bf5516d70ad2e52f56d096835809a2947`
+-	Image ID: `sha256:21a380cc4b896a790b036b30115fc0d00032fb52aba3117f07ea3d16d193cf22`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95312b7911c5e8ab77e7af7e03c1857b899ce301effefeeacea18d26d2880e49`  
-		Last Modified: Tue, 01 Jul 2025 09:35:31 GMT  
+	-	`sha256:b6617df7e9458067c0e322fea755dbb2bfa8b7f16c169c64acf5deb971826122`  
+		Last Modified: Wed, 02 Jul 2025 12:35:09 GMT  
 		Size: 7.4 MB (7392998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfdcf214f98498ff099a395c9b11c9ce2d1852d1635e85cd364ae29dadff0382`  
-		Last Modified: Tue, 01 Jul 2025 09:35:32 GMT  
-		Size: 14.3 KB (14300 bytes)  
+	-	`sha256:ef5b66de124168bad8d8e4a078fe9b2d86787adda553254a8f4db108d6fe579b`  
+		Last Modified: Wed, 02 Jul 2025 12:35:10 GMT  
+		Size: 14.3 KB (14298 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-bookworm` - linux; s390x
