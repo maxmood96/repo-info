@@ -1,7 +1,7 @@
 ## `unit:jsc11`
 
 ```console
-$ docker pull unit@sha256:afc8a115ffdce45b9539f790ce408136ef4a31069db24d7f56d12059cea65a6d
+$ docker pull unit@sha256:c0135b51bc26d3b23173e2a3b3e0bb2240c4e69a81172488fb17c331df41b94b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull unit@sha256:afc8a115ffdce45b9539f790ce408136ef4a31069db24d7f56d120
 ### `unit:jsc11` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:c17528aefcae44ce8a430e69decb3d6d8811e0c688b203ec6664fe0a11640c15
+$ docker pull unit@sha256:ceadce970e0af10d303e3b55f1850225927e5d9fad1ba614329f2e6cabf9e7e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.9 MB (219943918 bytes)**  
+-	Total Size: **219.9 MB (219946575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d41c217afb0ee2438d386b97041caa310581cbe5856210815f5782c29c6d6b1c`
+-	Image ID: `sha256:7cafc19d16217b7b3224a847da4ccdace1ac797158bf3f824915a7c46f08a16d`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -34,7 +34,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Mon, 03 Mar 2025 18:37:38 GMT
 LABEL org.opencontainers.image.version=22.04
 # Mon, 03 Mar 2025 18:37:38 GMT
-ADD file:82f38ebced7b2756311fb492d3d44cc131b22654e8620baa93883537a3e355aa in / 
+ADD file:36d136943d44dbe1fed342b933d9abb8e0694bf141a0c0af85ca83cc73e25158 in / 
 # Mon, 03 Mar 2025 18:37:38 GMT
 CMD ["/bin/bash"]
 # Mon, 03 Mar 2025 18:37:38 GMT
@@ -88,57 +88,57 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:89dc6ea4eae2b38a3550534ece4983005a7d2e90e4fa503ed04dcfc58ee71159`  
-		Last Modified: Tue, 03 Jun 2025 13:30:14 GMT  
-		Size: 29.5 MB (29533003 bytes)  
+	-	`sha256:e735f3a6b70199ad991c5715d965a4d858540eca2be18be0d889698e5a0a3e8c`  
+		Last Modified: Fri, 20 Jun 2025 12:50:42 GMT  
+		Size: 29.5 MB (29535686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdbf599904bab57f4fa8e3dc79abf53d23b0718b8b293d6c57c6611af6410e31`  
-		Last Modified: Tue, 03 Jun 2025 13:32:25 GMT  
-		Size: 16.1 MB (16146415 bytes)  
+	-	`sha256:7a9aa610249b82d4f2c18091b8f803c25132d08e9bcc72165577662bf7f6142b`  
+		Last Modified: Wed, 02 Jul 2025 03:10:36 GMT  
+		Size: 16.1 MB (16146340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4121a4b308c3813e7ca16e4c30ff012542061d07386b3bdff7e38b95739a7d2`  
-		Last Modified: Tue, 03 Jun 2025 13:32:35 GMT  
-		Size: 145.6 MB (145645098 bytes)  
+	-	`sha256:3e7583e02af379ef87d3195e081244c40bb4a0155dd5b8ff4954bb736937a81e`  
+		Last Modified: Wed, 02 Jul 2025 04:11:32 GMT  
+		Size: 145.6 MB (145645058 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d9093c9726fb77042e1abc93563b713ea02e481454345311f69b32a06757c0f`  
-		Last Modified: Tue, 03 Jun 2025 13:32:26 GMT  
+	-	`sha256:30914a62c803f975c25fea5961a34ce06c9fa64d2b50ad6d5eb3cf0655f376a2`  
+		Last Modified: Wed, 02 Jul 2025 03:10:35 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b977c46889de2487c980399cba0fa6c04d3bd8fde596eb59cccf75b06684ea8`  
-		Last Modified: Tue, 03 Jun 2025 13:30:19 GMT  
-		Size: 2.3 KB (2283 bytes)  
+	-	`sha256:5cee5bd7bdee887cd57628a32e0eacb4f6940713657f92370be865c1d342dd98`  
+		Last Modified: Wed, 02 Jul 2025 03:10:35 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f1c7ffb5f54160e5be6dad958492c17c353ac34263984d455ff3f5cb6332d60`  
-		Last Modified: Tue, 03 Jun 2025 14:16:07 GMT  
-		Size: 28.6 MB (28614249 bytes)  
+	-	`sha256:1295b703a0a534f911fbeafa74fe6c4d12503656b47e10966b7d2291e238aadf`  
+		Last Modified: Wed, 02 Jul 2025 04:19:26 GMT  
+		Size: 28.6 MB (28614344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d05cbd493793ae29447f8da8a216836e3a35ce848bb6a2e71714b90a73a1d62`  
-		Last Modified: Tue, 03 Jun 2025 14:16:08 GMT  
-		Size: 1.3 KB (1265 bytes)  
+	-	`sha256:69d2e6059828fd2c4fabce37b055b133b9f589dd5aeeadcc7e8104a5d53d6151`  
+		Last Modified: Wed, 02 Jul 2025 04:19:23 GMT  
+		Size: 1.3 KB (1262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02679636e4ca128fc1df05f66f098af71b36a998378ba913cc5a5ca4d917e6f8`  
-		Last Modified: Tue, 03 Jun 2025 14:16:10 GMT  
-		Size: 1.4 KB (1447 bytes)  
+	-	`sha256:e9ccf14b3de884e3dc517021ce008cc7c81f5066381422e70b700445a44748dc`  
+		Last Modified: Wed, 02 Jul 2025 04:19:23 GMT  
+		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:jsc11` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:d1d8456e520535c59845c92b7e54ee82534f46b0a80333ca5e22d1c465ea66cf
+$ docker pull unit@sha256:afd85a97abf6cece7ef59635b49c88f7023a6377a2c3e8260ce2034ed3ae2b88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.0 KB (26994 bytes)**  
+-	Total Size: **27.0 KB (26993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b3dd71f3df067afb8481390876f3ba29c0aed1b7013ffd7919f1986d66b61c1`
+-	Image ID: `sha256:60a44cb1d67571abea8f111c4f019006d9fd19a1923e7f8ff2382dab1a0a45ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f6584e0d3d9d7581401be96b9ec9b61750bbec9e35d351ca8498d32013da2d99`  
-		Last Modified: Wed, 04 Jun 2025 21:19:15 GMT  
-		Size: 27.0 KB (26994 bytes)  
+	-	`sha256:273d15fa53e38b418e2d6c882ca34d67736716fbc7dbd6007a7965f6e04978e1`  
+		Last Modified: Wed, 02 Jul 2025 05:45:26 GMT  
+		Size: 27.0 KB (26993 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:jsc11` - linux; arm64 variant v8
@@ -267,6 +267,6 @@ $ docker pull unit@sha256:e1e71e9267389565a2e379cd69dc53fd06c7683829a075d0e20d22
 
 -	Layers:
 	-	`sha256:c466250521b7c454667880d3371671694622b58da4b31f6a9f28c8ea545c55b0`  
-		Last Modified: Tue, 03 Jun 2025 10:19:04 GMT  
+		Last Modified: Wed, 02 Jul 2025 05:45:30 GMT  
 		Size: 27.1 KB (27087 bytes)  
 		MIME: application/vnd.in-toto+json
