@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:15b690ddfd6a929e8c0a3ee079e3bb1c636c65639e589dae728194dd206486a3`
+- Image ID: `sha256:ff5ff53b4ba00b7f9c0209a25006d1ae5dd9f7df1ae3034ee9da8ec10763b04f`
 - Created: `2025-04-11T14:37:01Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
@@ -4185,11 +4185,11 @@ $ apt-get source -qq --print-uris libvorbis=1.3.7-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis_1.3.7-1build2.debian.tar.xz' libvorbis_1.3.7-1build2.debian.tar.xz 11748 SHA512:c9fa8e209f79edd59fc38cc586a3afca7d5d98829d6546193f22e046b0d040310f7b8d110ec2e3298ac554d174d9e4d7530ebcf93da5f20b3b3c6ce9279edbab
 ```
 
-### `dpkg` source package: `libvpx=1.11.0-2ubuntu2.3`
+### `dpkg` source package: `libvpx=1.11.0-2ubuntu2.4`
 
 Binary Packages:
 
-- `libvpx7:amd64=1.11.0-2ubuntu2.3`
+- `libvpx7:amd64=1.11.0-2ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libvpx7/copyright`)
 
@@ -4197,9 +4197,14 @@ Licenses: (parsed from: `/usr/share/doc/libvpx7/copyright`)
 - `ISC`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libvpx=1.11.0-2ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.11.0-2ubuntu2.4.dsc' libvpx_1.11.0-2ubuntu2.4.dsc 2401 SHA512:6c3d78ffaab61c65de5d18531b7dcc85244a869009b38772887c6d36f334d9f37b6f2e40d1791c27aa71ed44f9cef61cdf32398c9e689fdff340d1a27e6e6bc5
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.11.0.orig.tar.gz' libvpx_1.11.0.orig.tar.gz 5347256 SHA512:7aa5d30afa956dccda60917fd82f6f9992944ca893437c8cd53a04d1b7a94e0210431954aa136594dc400340123cc166dcc855753e493c8d929667f4c42b65a5
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.11.0-2ubuntu2.4.debian.tar.xz' libvpx_1.11.0-2ubuntu2.4.debian.tar.xz 18972 SHA512:64b22d0487d6d07d387c8d6a8717546903e329d31f7c44b9d8be45b75d0ca77264a44dd8c5dd0e7a5fa4686bfe538ee4d82a01415d0e91d0548a07d1f7b805fb
+```
 
 ### `dpkg` source package: `libwebp=1.2.2-2ubuntu0.22.04.2`
 
@@ -4584,19 +4589,25 @@ $ apt-get source -qq --print-uris libxshmfence=1.3-1build4
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxshmfence/libxshmfence_1.3-1build4.diff.gz' libxshmfence_1.3-1build4.diff.gz 17897 SHA512:a0ba8f59d00f3ecfea17bab46cffc54786c000f0561378a4028bf5d286de31867ac90c5f529306635c505b038d47d63b5d6827026a11f25a94fcb78c914f6d68
 ```
 
-### `dpkg` source package: `libxslt=1.1.34-4ubuntu0.22.04.3`
+### `dpkg` source package: `libxslt=1.1.34-4ubuntu0.22.04.4`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.34-4ubuntu0.22.04.3`
+- `libxslt1.1:amd64=1.1.34-4ubuntu0.22.04.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxslt=1.1.34-4ubuntu0.22.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34-4ubuntu0.22.04.4.dsc' libxslt_1.1.34-4ubuntu0.22.04.4.dsc 2514 SHA512:5f50ed44bbffc36ce0fbc26a66312002ba9f71220efaf24d4238722447605501650b5845f5054e37779708bef66a377baaad73bb8668ae1cfedf8c835546bc41
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA512:1516a11ad608b04740674060d2c5d733b88889de5e413b9a4e8bf8d1a90d712149df6d2b1345b615f529d7c7d3fa6dae12e544da828b39c7d415e54c0ee0776b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA512:9b155d4571daede99cdbf2813a85fb04812737b5e23d3f7c9840225b38f3dbf171623a21645daaee190e7ff9ba38bde932922e96a2a2312c203ffa9917c3baea
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34-4ubuntu0.22.04.4.debian.tar.xz' libxslt_1.1.34-4ubuntu0.22.04.4.debian.tar.xz 31084 SHA512:97474d3f98e4158873b5c1b9bad99d85ae381d29a90bc591d1047ce7a3c62219d56a5fc09d3573c554a79c3048f26f7548bb1489d8d6c61e74d7d3bac4487983
+```
 
 ### `dpkg` source package: `libxss=1:1.2.3-1build2`
 
@@ -5388,22 +5399,27 @@ $ apt-get source -qq --print-uris p11-kit=0.24.0-6build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.0-6build1.debian.tar.xz' p11-kit_0.24.0-6build1.debian.tar.xz 23264 SHA512:a858251688a0655411907d5ac2d122efab057c7bc28dcb3970c68412ca699b00234b74373cbd44472e21cd3f43eab239ddd8411f188e4c214c587052bebedd4c
 ```
 
-### `dpkg` source package: `pam=1.4.0-11ubuntu2.5`
+### `dpkg` source package: `pam=1.4.0-11ubuntu2.6`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-11ubuntu2.5`
-- `libpam-modules-bin=1.4.0-11ubuntu2.5`
-- `libpam-runtime=1.4.0-11ubuntu2.5`
-- `libpam0g:amd64=1.4.0-11ubuntu2.5`
+- `libpam-modules:amd64=1.4.0-11ubuntu2.6`
+- `libpam-modules-bin=1.4.0-11ubuntu2.6`
+- `libpam-runtime=1.4.0-11ubuntu2.6`
+- `libpam0g:amd64=1.4.0-11ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.dsc' pam_1.4.0-11ubuntu2.6.dsc 2728 SHA512:18bfb2e4093ba1ef97a0ab9206a273c7180a607f3709567e72e5968b8d20999960869d6bbf806413066a1ba6c0dd64717015c5c20e83fb7cad31171b0e1a766e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.debian.tar.xz' pam_1.4.0-11ubuntu2.6.debian.tar.xz 187648 SHA512:5e2fe17f27a9fcc30940738efc3d8e0dc72bf2d8c9ab5bf8ecd508151ff00eb29e133d21980fe6c0acf24e201fc84af88b9134017747883c40ec78cdc7e306ae
+```
 
 ### `dpkg` source package: `pango1.0=1.50.6+ds-2ubuntu1`
 
@@ -5738,15 +5754,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.9`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.10`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.9`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.9`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.9`
-- `python3.10=3.10.12-1~22.04.9`
-- `python3.10-minimal=3.10.12-1~22.04.9`
+- `libpython3.10:amd64=3.10.12-1~22.04.10`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.10`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.10`
+- `python3.10=3.10.12-1~22.04.10`
+- `python3.10-minimal=3.10.12-1~22.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -5768,9 +5784,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.dsc' python3.10_3.10.12-1~22.04.10.dsc 3678 SHA512:acd9ae7832465e8cba6dda28c7030db90be64f53cdf28f568d97a5fe9676a60051d5ad3f0e931d513d016c2ea694158478ab27787e578d36aa3eddaad0d59c6a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.debian.tar.xz' python3.10_3.10.12-1~22.04.10.debian.tar.xz 252516 SHA512:1934075f6934e76289ce0db7203239fcec37f4f7fcb63fe3390b45ce47b893a6ef26c1cc53f16a3f14942aec7cb093a42f9204e518c24bbeddf31103a58697a7
+```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
@@ -6252,12 +6273,12 @@ $ apt-get source -qq --print-uris suitesparse=1:5.10.1+dfsg-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/suitesparse/suitesparse_5.10.1%2bdfsg-4build1.debian.tar.xz' suitesparse_5.10.1+dfsg-4build1.debian.tar.xz 23168 SHA512:56f5c555ebc8faed35998582edd66ea1068b5846cf488d0ebefd16f0b43eeeebf1878990e5000aca2635f5aca33dcda996e6b69eefe27dc5b2a92c8c8b090e72
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.15`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.16`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.15`
-- `libudev1:amd64=249.11-0ubuntu3.15`
+- `libsystemd0:amd64=249.11-0ubuntu3.16`
+- `libudev1:amd64=249.11-0ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -6270,9 +6291,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.dsc' systemd_249.11-0ubuntu3.16.dsc 5907 SHA512:1faddef1d1b9d3c90dc2828af76bc4cf315aca5d193975e467854323bb279f4260acf52a228d91f6537ffdfdbb62d2849cad95d87cbb37a3d5f389e5a48d9c57
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.debian.tar.xz' systemd_249.11-0ubuntu3.16.debian.tar.xz 258928 SHA512:ed86a0da87cd7e5981d65eb93e9fc07fdbb167c585b66aed3e20dcd857ef18cd067447636ddf377ba5b80d39db9703a7d1c86461e8e73a6623f8938bca864293
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
