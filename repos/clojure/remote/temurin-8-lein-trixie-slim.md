@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-lein-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:2b2fac88fa1563e840b4fcafef9437d086285353fe8e417cd2bca83f90138446
+$ docker pull clojure@sha256:e95843f9c2359ead297760bb2fd7c1678c6b006c88c750fdb91a237bbcff5163
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull clojure@sha256:2b2fac88fa1563e840b4fcafef9437d086285353fe8e417cd2b
 ### `clojure:temurin-8-lein-trixie-slim` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:8fada166eb0f0c27fc63c21239745ef962fd0d03a849a01b1f595ac753c693a6
+$ docker pull clojure@sha256:6cf4ff30967e02349041074ea48bdcda85ada97ed1b243a37c2713283ea51f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.9 MB (142887794 bytes)**  
+-	Total Size: **142.9 MB (142887754 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc23b75dcac97e86250e75735f2aaf217637275ffe60d8792b222113e1394c28`
+-	Image ID: `sha256:ab6ecce6d963f33f8aa69b0c9dd88bbe518618470c6cf98593abf06bfe9a4895`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -57,45 +57,45 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 01 Jul 2025 01:14:56 GMT  
 		Size: 29.8 MB (29761106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3151f4ebbc3bf342af7d1df50cb795f57dc6f58a802243da3bf884bd4090471`  
-		Last Modified: Tue, 01 Jul 2025 02:37:12 GMT  
-		Size: 54.7 MB (54716173 bytes)  
+	-	`sha256:00d8c706fc7387e9e86e9003ca5b107ede28fe7432d3eb5891487af2b464bd96`  
+		Last Modified: Wed, 02 Jul 2025 04:15:50 GMT  
+		Size: 54.7 MB (54716192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb5184f1b48b2561ccf69b9c09b620b9a1f34e82db6bc0b1d6e43f372dbdef47`  
-		Last Modified: Tue, 01 Jul 2025 02:37:22 GMT  
-		Size: 53.9 MB (53896275 bytes)  
+	-	`sha256:877fea5feac406ed65a0129f941d506ede609bd4b0803c756e97d1b3954b9bb7`  
+		Last Modified: Wed, 02 Jul 2025 04:15:54 GMT  
+		Size: 53.9 MB (53896237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd74d70fb7b0872d6dcdfe3a62f48b1d1b6ffd9e70d3b974194c3cc6ebc3513d`  
-		Last Modified: Tue, 01 Jul 2025 02:37:13 GMT  
-		Size: 4.5 MB (4514208 bytes)  
+	-	`sha256:45a3c34de3dd7bab80a72c90686c569daf262d419eab84f0ff84b5f8b9cd3826`  
+		Last Modified: Wed, 02 Jul 2025 04:15:53 GMT  
+		Size: 4.5 MB (4514187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-lein-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e36da5da7216fd7b04dfb8455855e9f9beff11561283e96aa430a07ed32d50f7
+$ docker pull clojure@sha256:26d0459c71afe1654c3baf540809f5eecd20e5fbefb75ce803bb40de90857f74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4415511 bytes)**  
+-	Total Size: **4.4 MB (4415510 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df9b8b5f5b5f206ed0ae926c51b67a0eb8ed9d4a4a04ef9173aaaebcf13dbc5c`
+-	Image ID: `sha256:29e581c603bd63fac474ccaf987a4c5250ecb500d97b70d214e0c3ac1b966c38`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf36d5a4a85b800add3507082352b82f9a733da70ab791e78e4320f18bddb8e3`  
-		Last Modified: Tue, 01 Jul 2025 06:42:53 GMT  
+	-	`sha256:0cbd9c7606b061f5fb52116dea0726d99b5360023426f82fb3e4c0f44739776e`  
+		Last Modified: Wed, 02 Jul 2025 06:43:40 GMT  
 		Size: 4.4 MB (4399078 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78d78ec3f1500e8387c30a0e0a8368dcd4dab98a487d659b7a94870cb95e08b8`  
-		Last Modified: Tue, 01 Jul 2025 06:42:53 GMT  
-		Size: 16.4 KB (16433 bytes)  
+	-	`sha256:d9b906ac319b6a29dfeb7cdecc60338a9393ebe910cdeb9ade72d71118de6982`  
+		Last Modified: Wed, 02 Jul 2025 06:43:41 GMT  
+		Size: 16.4 KB (16432 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-lein-trixie-slim` - linux; arm64 variant v8

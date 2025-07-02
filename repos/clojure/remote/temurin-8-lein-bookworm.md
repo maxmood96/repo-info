@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-lein-bookworm`
 
 ```console
-$ docker pull clojure@sha256:5f0339b55efb65a8b88a003a6c6a7dacfc6d5972d9a64aba8ffe5bf6d96ca1c2
+$ docker pull clojure@sha256:98eec513104a48d252df15ac02e2e7208228cc3c587a8a5e0ae1490918cae18b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull clojure@sha256:5f0339b55efb65a8b88a003a6c6a7dacfc6d5972d9a64aba8ff
 ### `clojure:temurin-8-lein-bookworm` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:a16f61e5a6bfad6f029857f0d382ea85fdb78ae411c93b0b136f79f2ccc157d7
+$ docker pull clojure@sha256:5b91660a6a4b0d27226ad1ad4631649c8bb2776286dfe77bea21cc36b49236ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169796663 bytes)**  
+-	Total Size: **169.8 MB (169795750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4840dcc38b0e014691735c0b411a6bc96e91bad9244e5541b057c7f2d94802fa`
+-	Image ID: `sha256:d2ecc2c1ea625d76c8170c6e920d2250822e087392c265e8d5190142643ce95f`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -57,45 +57,45 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 01 Jul 2025 01:14:44 GMT  
 		Size: 48.5 MB (48494284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd914325db774260fc65ec22b96978bb9cbc5a82980f27e96f99678f819bcfbb`  
-		Last Modified: Tue, 01 Jul 2025 02:36:22 GMT  
-		Size: 54.7 MB (54716173 bytes)  
+	-	`sha256:ec965058d5f17a1a8e15b6f227c865fbbb6a49c467baa389c626fd099621bc6c`  
+		Last Modified: Wed, 02 Jul 2025 04:15:49 GMT  
+		Size: 54.7 MB (54716200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aee604ebae06e9e109761679c159e4aa38696262d435348fa4104dca8d3f9010`  
-		Last Modified: Tue, 01 Jul 2025 02:36:23 GMT  
-		Size: 62.1 MB (62071965 bytes)  
+	-	`sha256:0a9a0bef61bd66894d1a5a0c9a6a16cd64cd0ddfbeb85df5cdbc249bf80d730a`  
+		Last Modified: Wed, 02 Jul 2025 04:15:49 GMT  
+		Size: 62.1 MB (62071024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9e10237a0a76d35a2fb5676747ac97db7c22252b97e456709208e607f5426b6`  
-		Last Modified: Tue, 01 Jul 2025 02:36:18 GMT  
-		Size: 4.5 MB (4514209 bytes)  
+	-	`sha256:3512f0af2550e280c13e2872aafb436d910b6bddf4e382855ad248ee59bc6491`  
+		Last Modified: Wed, 02 Jul 2025 04:15:48 GMT  
+		Size: 4.5 MB (4514210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-lein-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5c5fce417ce44f5760bf76814d591ac468e950f203411a6b9abe3c6233212293
+$ docker pull clojure@sha256:4403692a2b85de3a504053d2ed27b6c02340ef078d84f09b70be7560774f9f4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6840754 bytes)**  
+-	Total Size: **6.8 MB (6840753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1959fac30be263122351ba09bdeb2c2c27c7dcd6c54e0ef36f217c24f20d826f`
+-	Image ID: `sha256:ca140929123b256ed57bd443dc595bcec219e178fdd60141f8b26183cf939341`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:63d9e621ebeaac25085712bbf1973045cfea12ffda69afe5eddd1c8f7200ee53`  
-		Last Modified: Tue, 01 Jul 2025 06:42:29 GMT  
+	-	`sha256:0f7002e2d895eb649a26068a734c9ee80942b5e3667a4d55aae523e69aaa471d`  
+		Last Modified: Wed, 02 Jul 2025 06:43:14 GMT  
 		Size: 6.8 MB (6824333 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ec9cf43b680288cca28b8ccbe4f615571889412c368684b094945735bfe459af`  
-		Last Modified: Tue, 01 Jul 2025 06:42:30 GMT  
-		Size: 16.4 KB (16421 bytes)  
+	-	`sha256:a701f0b19646f35e6e8ddc3145306cdbbda659810f22aae39c32c45500fb88e4`  
+		Last Modified: Wed, 02 Jul 2025 06:43:15 GMT  
+		Size: 16.4 KB (16420 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-lein-bookworm` - linux; arm64 variant v8

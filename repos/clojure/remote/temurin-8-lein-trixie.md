@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-lein-trixie`
 
 ```console
-$ docker pull clojure@sha256:1844101508136d35a3bfe24c2e8521438a7aaba5d249162421f309e2b003a95e
+$ docker pull clojure@sha256:4b6db95888035b9930dca4c254757bcb426ae8d7f813cad0936d1df1174a84cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull clojure@sha256:1844101508136d35a3bfe24c2e8521438a7aaba5d249162421f
 ### `clojure:temurin-8-lein-trixie` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:4fbf38f2cd59430a0cbf626496e6159083dc4f3bca75e51d46081ee51f2b8284
+$ docker pull clojure@sha256:5c6670015446a97e97a597a4c8dc4484d217c173a1700185109d89e0292cfe7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.0 MB (175010003 bytes)**  
+-	Total Size: **175.0 MB (175010005 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e404c37931fd4d3dd67612126aabb5e94aacf3482cb27096c895a2304bcd56a1`
+-	Image ID: `sha256:c55c243343c43e224e6146febb995f67c6db4e59b74b32f96aadefc2a3d0668b`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -57,45 +57,45 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 01 Jul 2025 01:15:00 GMT  
 		Size: 49.3 MB (49263877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8071acca33ed54aaf47491fbed510ceb02c693347ebaade20187e2d8698c6768`  
-		Last Modified: Tue, 01 Jul 2025 02:37:38 GMT  
-		Size: 54.7 MB (54716181 bytes)  
+	-	`sha256:97f9857c74f955527482cc53f3bb172aed537a18f2bea05ebe1f907bc5544cac`  
+		Last Modified: Wed, 02 Jul 2025 04:16:04 GMT  
+		Size: 54.7 MB (54716196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58cff6cab9c2bdb62f145c64c05b9585438eb9da64ce9c3278b56087a7b608c5`  
-		Last Modified: Tue, 01 Jul 2025 02:37:23 GMT  
-		Size: 66.5 MB (66515746 bytes)  
+	-	`sha256:3cb3cc007beb2a30aa1ca55dfb958df88fd54c29d55b53fd102ec2b35d0db10e`  
+		Last Modified: Wed, 02 Jul 2025 04:16:04 GMT  
+		Size: 66.5 MB (66515713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7295b73e16d41971c93da23fe5af5ac82de8ea2266e11c65ec5039a5f1e92eca`  
-		Last Modified: Tue, 01 Jul 2025 02:37:19 GMT  
-		Size: 4.5 MB (4514167 bytes)  
+	-	`sha256:8ab7e441c52ea302636d3a363b1ecece127a02e15961b79568a5c9cf7afac5c5`  
+		Last Modified: Wed, 02 Jul 2025 04:16:03 GMT  
+		Size: 4.5 MB (4514187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-lein-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:b1d34ec8d6e566315e3cd51e3fc50bb3fcc72623fc03b378dd3d93baeae668a9
+$ docker pull clojure@sha256:267e438f281c8926c08d8cf484c329e22dce3fce8be4c3a09c8fc45cc7b1332d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6585921 bytes)**  
+-	Total Size: **6.6 MB (6585922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca73000daf109f9a6651373c9b152a206068684bb8b839d52e81f257d3a75187`
+-	Image ID: `sha256:a6b3bb62012b1e51163e4d8b8199360d3b5598236232679d5188d9fb3626d083`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e548e3a2a6d9a47099c2ff48c5532ccce41173df530bdaa8b1d4439a089bd95d`  
-		Last Modified: Tue, 01 Jul 2025 06:42:50 GMT  
+	-	`sha256:1358adf6ee7e23db9f0e3f9878db972675ac9393ebb2b78c8e019bdc8a761cbb`  
+		Last Modified: Wed, 02 Jul 2025 06:43:35 GMT  
 		Size: 6.6 MB (6569519 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:edea0b4765e24dfc79f60c6e4ead13824e62487189a723957dfb523c23ca257a`  
-		Last Modified: Tue, 01 Jul 2025 06:42:50 GMT  
-		Size: 16.4 KB (16402 bytes)  
+	-	`sha256:57c2fed9b3d123176873ce27414166e3605b7e364e76d6e240c41cbf6592be6b`  
+		Last Modified: Wed, 02 Jul 2025 06:43:36 GMT  
+		Size: 16.4 KB (16403 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-lein-trixie` - linux; arm64 variant v8
