@@ -907,7 +907,7 @@ $ docker pull logstash@sha256:b0591d80d4e8101b850e568714286933fd74cd6d42d352ad09
 ## `logstash:9.0.2`
 
 ```console
-$ docker pull logstash@sha256:6bb0151b1bb0f737df60d6ab79aa12d3589abe0276ded215e498f2b61b5ff603
+$ docker pull logstash@sha256:f3510c495a7cbbec5ca4a01873f87a04aa2d445aa7e53c1bdd92f06ad1436986
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1190,23 +1190,23 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ### `logstash:9.0.2` - unknown; unknown
 
 ```console
-$ docker pull logstash@sha256:c8579c94144c6adcc463d2fc0134917d08f6e09eb8205358cf05b6c51bcde523
+$ docker pull logstash@sha256:381eacce79ac209558cfe5902f9a133af7eee3d34bb1a4ec2eb12ac338cc4c49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2164433 bytes)**  
+-	Total Size: **2.2 MB (2164432 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2bab15814493f28d55d1f9aff0388cb48f33d1df354861f62a5ffd5413d1144`
+-	Image ID: `sha256:bb853dfce3b5562c53dbed7023683ff9d783ead571d8f6154638f7c1bee7a0b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19e0a9bc14d22e0941ac4b1b6646aadcb1710ed1b332dd077e51e8b98c4d225a`  
-		Last Modified: Thu, 26 Jun 2025 00:53:21 GMT  
+	-	`sha256:feae8d68ac3b776015c557bdd420993ee9fff8a050bca5ba047782b3c26d7f63`  
+		Last Modified: Wed, 02 Jul 2025 00:53:19 GMT  
 		Size: 2.1 MB (2134774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b06d5d5bb66e581aaddc6ca5e51f0152261decbcadc09a7f772de956681f1b53`  
-		Last Modified: Thu, 26 Jun 2025 00:53:22 GMT  
-		Size: 29.7 KB (29659 bytes)  
+	-	`sha256:a5801fc2bd626b8950c9b67aa147f5febcef10b29311b7276755aaae8fca6f07`  
+		Last Modified: Wed, 02 Jul 2025 00:53:20 GMT  
+		Size: 29.7 KB (29658 bytes)  
 		MIME: application/vnd.in-toto+json
