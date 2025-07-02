@@ -1,7 +1,7 @@
 ## `znc:slim`
 
 ```console
-$ docker pull znc@sha256:62154240d1fc0df8aaa23e63d52ebff721c405d3ea43c5c31c1b6ef9594bec39
+$ docker pull znc@sha256:3f2337d1d958c792250b65f5add0e84a6509f33cb05dc0f3e0f25a5af1c03418
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -172,13 +172,13 @@ $ docker pull znc@sha256:aebf7974735485374bb0486f3ae767a0f455e02faffe69c91554b68
 ### `znc:slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull znc@sha256:e13fdfc131f86dbf0d09922b989a80dacbec08988f5fd08b457ad8ae726b4999
+$ docker pull znc@sha256:06112d58fabc065f2556506045d56a9e39af0f6abaad3bf8bdccaa43ae8b3acd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49941339 bytes)**  
+-	Total Size: **50.0 MB (49954138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58499efbd94fde1b46f248536d1e6d44ad8b802a64b2070649f3d6ae4b3ffd15`
+-	Image ID: `sha256:7ecef7aae1a6cc10b959dbb26adea8d134d3acb59f19180081da4b39bc09d6da`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -186,24 +186,24 @@ $ docker pull znc@sha256:e13fdfc131f86dbf0d09922b989a80dacbec08988f5fd08b457ad8a
 ADD alpine-minirootfs-3.22.0-aarch64.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 ENV GPG_KEY=D5823CACB477191CAC0075555AE420CC0209989E
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 ARG CMAKEFLAGS=-DCMAKE_INSTALL_PREFIX=/opt/znc -DWANT_CYRUS=YES -DWANT_PERL=YES -DWANT_PYTHON=YES -DWANT_ARGON=YES
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 ARG MAKEFLAGS=
-# Mon, 09 Jun 2025 21:22:37 GMT
-ENV ZNC_VERSION=1.10.0
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
+ENV ZNC_VERSION=1.10.1
+# Tue, 01 Jul 2025 21:26:43 GMT
 # ARGS: CMAKEFLAGS=-DCMAKE_INSTALL_PREFIX=/opt/znc -DWANT_CYRUS=YES -DWANT_PERL=YES -DWANT_PYTHON=YES -DWANT_ARGON=YES MAKEFLAGS=
 RUN set -x     && adduser -S znc     && addgroup -S znc     && apk add --no-cache --virtual runtime-dependencies         argon2-libs         boost         ca-certificates         cyrus-sasl         icu         icu-data-full         openssl         su-exec         tini         tzdata     && apk add --no-cache --virtual build-dependencies         argon2-dev         boost-dev         build-base         cmake         curl         cyrus-sasl-dev         gettext         gnupg         icu-dev         openssl-dev         perl-dev         python3-dev     && mkdir /znc-src && cd /znc-src     && curl -fsSL "https://znc.in/releases/archive/znc-${ZNC_VERSION}.tar.gz" -o znc.tgz     && curl -fsSL "https://znc.in/releases/archive/znc-${ZNC_VERSION}.tar.gz.sig" -o znc.tgz.sig     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${GPG_KEY}"     && gpg --batch --verify znc.tgz.sig znc.tgz     && rm -rf "$GNUPGHOME"     && tar -zxf znc.tgz --strip-components=1     && mkdir build && cd build     && cmake .. ${CMAKEFLAGS}     && make $MAKEFLAGS     && make install     && apk del build-dependencies     && cd / && rm -rf /znc-src # buildkit
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 COPY entrypoint.sh / # buildkit
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 COPY startup-sequence /startup-sequence/ # buildkit
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 VOLUME [/znc-data]
-# Mon, 09 Jun 2025 21:22:37 GMT
+# Tue, 01 Jul 2025 21:26:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -212,39 +212,39 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
 		Size: 4.1 MB (4135941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b787480e5244847f399b065a5f466afafbdfa7754832a387cd2374dab6d0126`  
-		Last Modified: Mon, 09 Jun 2025 22:25:03 GMT  
-		Size: 45.8 MB (45804478 bytes)  
+	-	`sha256:5154c1d21532aa209257d70744f0b01b1d8e7921f42219cad940056ce4361c17`  
+		Last Modified: Wed, 02 Jul 2025 02:44:08 GMT  
+		Size: 45.8 MB (45817276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9e983a7f6498c03a0e28c4d4bc3295109971ab0d247b76c1d407258b6f52b25`  
-		Last Modified: Mon, 09 Jun 2025 22:25:00 GMT  
-		Size: 171.0 B  
+	-	`sha256:5a5509588fe9fd114a19342f0792dd3ee8d9639a82476f089677f8ac6e0f979d`  
+		Last Modified: Wed, 02 Jul 2025 02:44:00 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d6c22321b9fbea5a7461b17ebd38c8ca2d8f594cbccc2e166ea6898d9fcd92a`  
-		Last Modified: Mon, 09 Jun 2025 22:25:00 GMT  
+	-	`sha256:efd028a2febfde0baf6a60cb6318a60c44aad9230ee763792a6fbe66ec2bab14`  
+		Last Modified: Wed, 02 Jul 2025 02:44:00 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `znc:slim` - unknown; unknown
 
 ```console
-$ docker pull znc@sha256:6defd414b1ccd0c21f52e66e36ac551bb41e074d3beba3f8b7cc8f09ace6826f
+$ docker pull znc@sha256:299be990cc22d96e2cade99c484989cf5cb72ac3d286d5d0236045ed54867c82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.8 MB (1768952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15a0f605c2f5fb11cc018bbf3e7172bb3d6168e83936789a1b1fbac6c7331d5d`
+-	Image ID: `sha256:f91c672e464b3c171fafe67ce5d7ff062de078ff6ffc4f16ded7e82f7ebd1581`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83c36e4d16368632447e3fe669b338d5f6d53af31c40ebecd16e60a335ca5161`  
-		Last Modified: Tue, 10 Jun 2025 00:35:42 GMT  
+	-	`sha256:ce959d80a9d6a2bc34fbdaeedc425ba936406f51b7e44321d1544f1231b5d8db`  
+		Last Modified: Wed, 02 Jul 2025 03:35:24 GMT  
 		Size: 1.8 MB (1754829 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aaa1fcf2608848c5da159105860488d6ae30cc6fe12d3a48f1d5124ba4a3bc02`  
-		Last Modified: Tue, 10 Jun 2025 00:35:43 GMT  
+	-	`sha256:14b3cc6522fb27074edf7c7e58546598f865b65b132630110d148baa3ba6d5d3`  
+		Last Modified: Wed, 02 Jul 2025 03:35:24 GMT  
 		Size: 14.1 KB (14123 bytes)  
 		MIME: application/vnd.in-toto+json
