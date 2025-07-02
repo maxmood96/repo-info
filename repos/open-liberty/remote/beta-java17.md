@@ -136,7 +136,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 241.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6cd474f0a39bf4008597a3bda1207827fb416eae59a4ce4a1840c28a769ac4c`  
-		Last Modified: Wed, 02 Jul 2025 04:14:06 GMT  
+		Last Modified: Wed, 02 Jul 2025 10:39:30 GMT  
 		Size: 31.7 KB (31748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d06f172124df9b98301e90b47cd3134b25e35ec51151e65c1fa8693a8b31781`  
