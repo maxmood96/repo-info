@@ -1,7 +1,7 @@
 ## `spark:latest`
 
 ```console
-$ docker pull spark@sha256:178599eecda8fae8106bb6a938bf05e05132e2c822dce9db0704b1577d90b338
+$ docker pull spark@sha256:9674e00b669aaa2b2c4331ed8473247d79958ddb0dbcf4f978ec73f67f294906
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull spark@sha256:178599eecda8fae8106bb6a938bf05e05132e2c822dce9db0704b
 ### `spark:latest` - linux; amd64
 
 ```console
-$ docker pull spark@sha256:33f19d463a3f2597fe9d12ce49d2dd3ccc71dc4ec5d2f48b0fff9c6831fcc22c
+$ docker pull spark@sha256:99b85cacae60eaf9e1454497090ffc6220cce07f549d656ee19beb2a17d33731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **784.9 MB (784894019 bytes)**  
+-	Total Size: **784.9 MB (784909837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cac57629a94aa4eaf4ec90bbbe7f833dd198ffce40cabf9944c0c259e8730d04`
+-	Image ID: `sha256:b289913db6733dfb6eff122120956c465c6b4e154a5cc67f625c9e4c10dd238e`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -33,7 +33,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Wed, 23 Apr 2025 14:48:05 GMT
 LABEL org.opencontainers.image.version=22.04
 # Wed, 23 Apr 2025 14:48:05 GMT
-ADD file:82f38ebced7b2756311fb492d3d44cc131b22654e8620baa93883537a3e355aa in / 
+ADD file:36d136943d44dbe1fed342b933d9abb8e0694bf141a0c0af85ca83cc73e25158 in / 
 # Wed, 23 Apr 2025 14:48:05 GMT
 CMD ["/bin/bash"]
 # Wed, 23 Apr 2025 14:48:05 GMT
@@ -88,73 +88,73 @@ USER spark
 ```
 
 -	Layers:
-	-	`sha256:89dc6ea4eae2b38a3550534ece4983005a7d2e90e4fa503ed04dcfc58ee71159`  
-		Last Modified: Tue, 03 Jun 2025 13:30:14 GMT  
-		Size: 29.5 MB (29533003 bytes)  
+	-	`sha256:e735f3a6b70199ad991c5715d965a4d858540eca2be18be0d889698e5a0a3e8c`  
+		Last Modified: Fri, 20 Jun 2025 12:50:42 GMT  
+		Size: 29.5 MB (29535686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1a31c0cdef80f5fa991a2f0fec6be6d8c5d095e60b71b292a32a53cbd2dec0d`  
-		Last Modified: Tue, 03 Jun 2025 13:30:22 GMT  
-		Size: 20.7 MB (20694741 bytes)  
+	-	`sha256:5f66c98d4ca092953d076c2cfa57af708cdc6bd15334b62e0beb9ea86daf4783`  
+		Last Modified: Wed, 02 Jul 2025 03:10:31 GMT  
+		Size: 20.7 MB (20694788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ce6d2116d180e0d188799486fc02513ec18f07ea6c47756931a78daaaf3b95d`  
-		Last Modified: Tue, 03 Jun 2025 13:30:30 GMT  
-		Size: 157.6 MB (157647988 bytes)  
+	-	`sha256:5119d8dd3e82db59f1f3abd4735d4ebffa53d0ed2f2c3aaaee63d8a41b5f1923`  
+		Last Modified: Wed, 02 Jul 2025 04:11:31 GMT  
+		Size: 157.6 MB (157648013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7087deaf0f8e8e8c771f241a0bbb781db8181784369e9aab33bd82b046f0fe5f`  
-		Last Modified: Tue, 03 Jun 2025 13:30:20 GMT  
-		Size: 159.0 B  
+	-	`sha256:28c6659903fe6fc6867ec3df4066a36ab43e23482aa4fcf9660e3f388b20f927`  
+		Last Modified: Wed, 02 Jul 2025 03:10:29 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b977c46889de2487c980399cba0fa6c04d3bd8fde596eb59cccf75b06684ea8`  
-		Last Modified: Tue, 03 Jun 2025 13:30:19 GMT  
+	-	`sha256:5bc3ac322a39aaf1330c5a33929c23fde13800e4bd4b0a5676618db9eb460b3f`  
+		Last Modified: Wed, 02 Jul 2025 03:10:15 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34c44de4ce315d5c3a660cf2ec63fa4f000872ca50ab93d905e6f7d097f829bf`  
-		Last Modified: Tue, 03 Jun 2025 13:49:48 GMT  
-		Size: 1.4 KB (1423 bytes)  
+	-	`sha256:dcaa6000e351b27e8199e8412e68de90563620f3c1fa3c52831f913ebed9ffbe`  
+		Last Modified: Wed, 02 Jul 2025 05:11:26 GMT  
+		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85db9014e4e52003253bfbb1cf1aabfd7a6a3084a39ac146cc8a7df3f30b52c2`  
-		Last Modified: Tue, 03 Jun 2025 13:49:50 GMT  
-		Size: 21.7 MB (21687969 bytes)  
+	-	`sha256:be734c4e770dae379780ba98feca4a5c63e0faba2bc3f6ae70568373a48e4cac`  
+		Last Modified: Wed, 02 Jul 2025 05:11:27 GMT  
+		Size: 21.7 MB (21687929 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89952c20a6e0e8584f946594fba7871cc6259c125e3d57d368aaef776cfcd10a`  
-		Last Modified: Tue, 03 Jun 2025 13:50:01 GMT  
-		Size: 441.6 MB (441603411 bytes)  
+	-	`sha256:71c763de88dbce0cd2f54c275d74a330212cc5a042f0df5426c3e6dc2367f613`  
+		Last Modified: Wed, 02 Jul 2025 05:11:57 GMT  
+		Size: 441.6 MB (441603381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c60978d751a76587f7686a4d2d42d83249990f0a9dd3ddae8a46863d57f4438`  
-		Last Modified: Tue, 03 Jun 2025 13:49:52 GMT  
-		Size: 2.1 KB (2134 bytes)  
+	-	`sha256:eb8d4c5b7cd7c8997e0c5b90764a1ef97addbe7bb83a6f3ef2032092b89c5e72`  
+		Last Modified: Wed, 02 Jul 2025 05:11:26 GMT  
+		Size: 2.1 KB (2137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a16b68c169bc65c7fe1a9275ea1298fb56b1b206ee778f1dcde3f569d32df468`  
-		Last Modified: Tue, 03 Jun 2025 14:29:46 GMT  
-		Size: 113.7 MB (113720876 bytes)  
+	-	`sha256:689043cb7c9a58b1103d9fb20ab97e168a92f709797126d40bfe4abd23ad44cd`  
+		Last Modified: Wed, 02 Jul 2025 08:11:45 GMT  
+		Size: 113.7 MB (113734002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `spark:latest` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:2dceebdb25b3ee0162af3b5fb2e8dd8166d8ca0f28ebe3fb43ac998d502b6a96
+$ docker pull spark@sha256:3750a9af8cc26ee18b76c987082e3666cb4ea0e0de1e982338c7b02364f058fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.2 MB (10186252 bytes)**  
+-	Total Size: **10.4 MB (10428201 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a8be22473e03ffbdfd53b2ee8ebc1571a73a4a5c9e033c31951db7cb26ac002`
+-	Image ID: `sha256:5efa5bbbef7ab65fe00b79794c2a0daa37bd0a205990f829e6cd244aeca838d0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6d323b11a8227acaf290dfd32ab0a598c4fb8f7dd0fbb571595b47845eca625`  
-		Last Modified: Tue, 03 Jun 2025 14:10:51 GMT  
-		Size: 10.2 MB (10174659 bytes)  
+	-	`sha256:83ba986641dd4467bf193c2f305aed227862afbac1f8732f3d551ff72042bcf5`  
+		Last Modified: Wed, 02 Jul 2025 08:10:47 GMT  
+		Size: 10.4 MB (10416609 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3fd27bb726d7d3ff82a25aaee74d0a4601427a1bc2cd1c52033821f10ab0895`  
-		Last Modified: Tue, 03 Jun 2025 14:10:52 GMT  
-		Size: 11.6 KB (11593 bytes)  
+	-	`sha256:b5bbc3454466ac9f0b1d3a11470e05328cabb09292e801a363c61ef738f07f8d`  
+		Last Modified: Wed, 02 Jul 2025 08:10:47 GMT  
+		Size: 11.6 KB (11592 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `spark:latest` - linux; arm64 variant v8
