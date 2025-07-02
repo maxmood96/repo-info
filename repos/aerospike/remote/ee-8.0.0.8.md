@@ -1,7 +1,7 @@
 ## `aerospike:ee-8.0.0.8`
 
 ```console
-$ docker pull aerospike@sha256:59ce06d7a36d585f1509a344dab061f1ca7c404d1613c6b9008747af470f77a8
+$ docker pull aerospike@sha256:fe6aca0a858e998538bf07dccedc23388ac2a6a77e9362e94e61f17d40b8f24e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull aerospike@sha256:59ce06d7a36d585f1509a344dab061f1ca7c404d1613c6b90
 ### `aerospike:ee-8.0.0.8` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:ed0a0883ba960867faeffb3fda103a472d7ffabe52e6c1bf48b428369d335ee3
+$ docker pull aerospike@sha256:c432542bf7603c27cf91a115fce7834d3bebeea70c606cf9c11145095c6a9118
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.2 MB (86234554 bytes)**  
+-	Total Size: **86.2 MB (86237542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ed4e1592f3c4172d07c82d19ef8460d60dc368afa2fa1281cf7e7ec78ef4015`
+-	Image ID: `sha256:80ef3e1fcda828f3ce289135b2c3359f4cdb18393a1a0296e5ac0a0aaf464100`
 -	Entrypoint: `["\/usr\/bin\/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 -	`SHELL`: `["\/bin\/bash","-Eeuo","pipefail","-c"]`
@@ -35,7 +35,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 27 May 2025 23:31:17 GMT
 LABEL org.opencontainers.image.version=24.04
 # Tue, 27 May 2025 23:31:17 GMT
-ADD file:598ca0108009b5c2e9e6f4fc4bd19a6bcd604fccb5b9376fac14a75522a5cfa3 in / 
+ADD file:0ebb3dd98809cffc1b5ade76d8ccac01def087e7d7a84a84a33db4aa9090ac67 in / 
 # Tue, 27 May 2025 23:31:17 GMT
 CMD ["/bin/bash"]
 # Tue, 27 May 2025 23:31:17 GMT
@@ -70,57 +70,57 @@ CMD ["asd"]
 ```
 
 -	Layers:
-	-	`sha256:d9d352c11bbd3880007953ed6eec1cbace76898828f3434984a0ca60672fdf5a`  
-		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
-		Size: 29.7 MB (29715337 bytes)  
+	-	`sha256:b08e2ff4391ef70ca747960a731d1f21a75febbd86edc403cd1514a099615808`  
+		Last Modified: Fri, 20 Jun 2025 02:35:35 GMT  
+		Size: 29.7 MB (29718366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4402903650abc38a4d826d56373e53493923e4c9f47ff24af399079aae38235`  
-		Last Modified: Thu, 05 Jun 2025 03:21:37 GMT  
-		Size: 56.5 MB (56516913 bytes)  
+	-	`sha256:d120a9b018a4fbc763e6d2d01d14fd0bd430c38acfaf69e54601db52c4aec0e2`  
+		Last Modified: Wed, 02 Jul 2025 03:10:07 GMT  
+		Size: 56.5 MB (56516873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd6b4fcd184cd10269322dd080f013e67e75ee1cf12c86b797f26485881056f8`  
-		Last Modified: Thu, 05 Jun 2025 00:01:13 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:4a6d020a70f49a2395d3df459035af6c6e6d24fe9dd8ec3a31d3bfdb121f4782`  
+		Last Modified: Wed, 02 Jul 2025 03:10:03 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2aa6acd992abd76d0c505c8fb96e111dc5c51bb10dac0edb2066ae24d8e092e`  
-		Last Modified: Thu, 05 Jun 2025 00:00:15 GMT  
-		Size: 1.1 KB (1106 bytes)  
+	-	`sha256:6a3f1df3ab14a78786bf6f341dbe272af422ee1b41f246452d4cc430366130d5`  
+		Last Modified: Wed, 02 Jul 2025 03:10:03 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `aerospike:ee-8.0.0.8` - unknown; unknown
 
 ```console
-$ docker pull aerospike@sha256:55c4532c717d3df68b2e9cdafc0032879aed3a6ec74116913919b16be2b4ff52
+$ docker pull aerospike@sha256:1cc1cc69b87f3e3334d2a83750cd369db80b7e808fd2b87e99065ab0f6c65dd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2116167 bytes)**  
+-	Total Size: **2.2 MB (2209712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71eb0274500e0d5b3de54de9f9c345da94d50636a0de98a925ee459018200eb8`
+-	Image ID: `sha256:76b2a664aea7b1a5ad625823e02c167a00d3c6e4d00bead29c6b8f7d0dc764de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4429fd4fa4600ef632af74f44f013e5486f9cd6c24cd00619597f453f7ff6bca`  
-		Last Modified: Mon, 23 Jun 2025 18:00:49 GMT  
-		Size: 2.1 MB (2087139 bytes)  
+	-	`sha256:25031e6378069327069d52842b5f4224b96bf189e716d347a4b91277f110af06`  
+		Last Modified: Wed, 02 Jul 2025 05:25:28 GMT  
+		Size: 2.2 MB (2180684 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d59c63fb8700e24e094aa56e46c5afac4977b67a97f101b71725ba1642ffe02d`  
-		Last Modified: Mon, 23 Jun 2025 18:00:48 GMT  
+	-	`sha256:2fbb9bf21bd02ba44cec7ef388d0dced44d53d7ff8221a7d817e43ad2b856bf1`  
+		Last Modified: Wed, 02 Jul 2025 05:25:29 GMT  
 		Size: 29.0 KB (29028 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `aerospike:ee-8.0.0.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull aerospike@sha256:ee92576f2ae51864835fb7bb5ffe415727b2c3bea11c738698bf7ff385e4e675
+$ docker pull aerospike@sha256:6dee4e4f8befe46c48207a3a28ac183c195be5266b42b22062b59a0c778e30d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.8 MB (84802579 bytes)**  
+-	Total Size: **84.8 MB (84806471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9de907a3cec4d35fe06b3789680ff8c90c16e262980e3da6f548d23ec4a0ec9b`
+-	Image ID: `sha256:443ea071742d26e1a5cddc88054eae5077b42302640a37461249093d2d71c487`
 -	Entrypoint: `["\/usr\/bin\/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 -	`SHELL`: `["\/bin\/bash","-Eeuo","pipefail","-c"]`
@@ -135,7 +135,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 27 May 2025 23:31:17 GMT
 LABEL org.opencontainers.image.version=24.04
 # Tue, 27 May 2025 23:31:17 GMT
-ADD file:6eb9adae2c7e3a73446b74d4e61e58d6e1d0db6c07cc49612eb0b9f38fefef15 in / 
+ADD file:d3e5c3c7ed81035a9d3dc27dc9f7b63cca5f6bbbaa499c38e470d52b7e57817d in / 
 # Tue, 27 May 2025 23:31:17 GMT
 CMD ["/bin/bash"]
 # Tue, 27 May 2025 23:31:17 GMT
@@ -170,43 +170,43 @@ CMD ["asd"]
 ```
 
 -	Layers:
-	-	`sha256:69c262fc30fc134b6d373dee8db695319c41d8b9489deb0f682565473bf29748`  
-		Last Modified: Tue, 03 Jun 2025 13:30:25 GMT  
-		Size: 28.9 MB (28851899 bytes)  
+	-	`sha256:3eff7d219313fd6db206bd90410da1ca5af1ba3e5b71b552381cea789c4c6713`  
+		Last Modified: Fri, 20 Jun 2025 09:32:57 GMT  
+		Size: 28.9 MB (28856018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01138690d21f18c98ce2aad73f3ad332e5698b446d532a05b3d9cb077f7331a1`  
-		Last Modified: Sun, 08 Jun 2025 13:37:41 GMT  
-		Size: 55.9 MB (55948378 bytes)  
+	-	`sha256:617adfb4b12f81e88026a728f841b4fe2548a160a13146ff74d16fceda37f424`  
+		Last Modified: Wed, 02 Jul 2025 04:18:04 GMT  
+		Size: 55.9 MB (55948150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d41c1c249a9eed79b71e2ab527ad9b7cd405ad6075d06494d0a9b7b8544379d`  
-		Last Modified: Thu, 05 Jun 2025 00:37:56 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:d754d89d257b8a2f927455510dc90a498143a1594f7c3bdee64dcf8da17747d0`  
+		Last Modified: Wed, 02 Jul 2025 04:18:01 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58059762fc6a9fbf247f3c02f8f471a96c25389fbe550983cd635b74707680c7`  
-		Last Modified: Thu, 05 Jun 2025 00:30:58 GMT  
-		Size: 1.1 KB (1108 bytes)  
+	-	`sha256:8a8a5366353edf09eb38767b7a3887f4c22c9a2417b257f0a1f63e0e0c0bdf1f`  
+		Last Modified: Wed, 02 Jul 2025 04:18:01 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `aerospike:ee-8.0.0.8` - unknown; unknown
 
 ```console
-$ docker pull aerospike@sha256:589d9b63f71cd9b2b735fa23ad3d7bb8a18164c498a110b2e944c236ca69b8cc
+$ docker pull aerospike@sha256:11dd230ac24c34c98f1329a965acc3a322c971ae02a70688b5e6bbe36f19a8ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2118527 bytes)**  
+-	Total Size: **2.2 MB (2212072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38d1bdfed3bbccaff74c11f9d158685824c3fedc40c3b93692ffadc00ee46a64`
+-	Image ID: `sha256:ddcc15cdee5b213df0540f294470900511f57b838db15d12588d5c22ae72df3e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0b76788321cd21cc264cb0167f28ff6aa7f29926a593fce112a430c876027511`  
-		Last Modified: Mon, 23 Jun 2025 18:00:49 GMT  
-		Size: 2.1 MB (2089419 bytes)  
+	-	`sha256:5e5af65889e745046b451d1b6225fd203688adb278a728a14228116dc187aa97`  
+		Last Modified: Wed, 02 Jul 2025 05:25:33 GMT  
+		Size: 2.2 MB (2182964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:366cc54baf98c104cb58a30e1de3a025d37443d8bb40b46ca3158cd726e5ab1f`  
-		Last Modified: Mon, 23 Jun 2025 18:00:48 GMT  
+	-	`sha256:a5cc33ff5e2abd296af6ce6fc71ff35ec65a516b0f06a434e89ab2ca50f9ea16`  
+		Last Modified: Wed, 02 Jul 2025 05:25:34 GMT  
 		Size: 29.1 KB (29108 bytes)  
 		MIME: application/vnd.in-toto+json
