@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:346ecf06efc1d9a654ba9af7dcf0af36b5823c40897c02f8682360be8a5a2b0a`
+- Image ID: `sha256:7fc166991e25c31fb32372f341d99ceb9990a8dbecf8b51853cb0f69e05af576`
 - Created: `2025-04-09T18:15:04Z`
-- Virtual Size: ~ 965.22 Mb  
+- Virtual Size: ~ 965.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
@@ -592,14 +592,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u14`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u15`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u14`
-- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u14`
-- `libcurl4:amd64=7.74.0-1.3+deb11u14`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u14`
+- `curl=7.74.0-1.3+deb11u15`
+- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u15`
+- `libcurl4:amd64=7.74.0-1.3+deb11u15`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u15`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -610,13 +610,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u15
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u15.dsc' curl_7.74.0-1.3+deb11u15.dsc 2703 SHA256:6357ca6704bec1b8a690dd5396d910422ffd0f42e6a6bf62aaf1dca7999fd85a
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u15.debian.tar.xz' curl_7.74.0-1.3+deb11u15.debian.tar.xz 78740 SHA256:2c4b3ead4123f8a91cf80321f90c85fa8059c5eecb5b1999f15708744d67925a
+```
 
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u14/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u15/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -1344,15 +1351,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.42.2+dfsg-1+deb11u2`
+### `dpkg` source package: `gdk-pixbuf=2.42.2+dfsg-1+deb11u3`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.42.2+dfsg-1+deb11u2`
-- `libgdk-pixbuf-2.0-0:amd64=2.42.2+dfsg-1+deb11u2`
-- `libgdk-pixbuf-2.0-dev:amd64=2.42.2+dfsg-1+deb11u2`
-- `libgdk-pixbuf2.0-bin=2.42.2+dfsg-1+deb11u2`
-- `libgdk-pixbuf2.0-common=2.42.2+dfsg-1+deb11u2`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.42.2+dfsg-1+deb11u3`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.2+dfsg-1+deb11u3`
+- `libgdk-pixbuf-2.0-dev:amd64=2.42.2+dfsg-1+deb11u3`
+- `libgdk-pixbuf2.0-bin=2.42.2+dfsg-1+deb11u3`
+- `libgdk-pixbuf2.0-common=2.42.2+dfsg-1+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-dev/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-bin/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1364,17 +1371,17 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.2+dfsg-1+deb11u2
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u2.dsc' gdk-pixbuf_2.42.2+dfsg-1+deb11u2.dsc 3186 SHA256:75494c6db3917a144438ad1b084300e84a1f6ed7f38c354bee9200b2ce44a1eb
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.2+dfsg.orig.tar.xz 6433920 SHA256:f781dca5af4c6536befb1faaa3b82efb9750c52a350842bc82b2aa08ce129ee9
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u2.debian.tar.xz' gdk-pixbuf_2.42.2+dfsg-1+deb11u2.debian.tar.xz 37484 SHA256:45a5a344bc44deea1a6daf3131b070c38af6645759f787f9ab87e9e9f318da93
+$ apt-get source -qq --print-uris gdk-pixbuf=2.42.2+dfsg-1+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u3.dsc' gdk-pixbuf_2.42.2+dfsg-1+deb11u3.dsc 3186 SHA256:23aba98221041b96d48ee8216e7f4156f248862a4fe895757192386f95f9dfe5
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.2+dfsg.orig.tar.xz 6433920 SHA256:f781dca5af4c6536befb1faaa3b82efb9750c52a350842bc82b2aa08ce129ee9
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u3.debian.tar.xz' gdk-pixbuf_2.42.2+dfsg-1+deb11u3.debian.tar.xz 37904 SHA256:47ef6b29764befadcda54f2407d2be922ff2d62d90ce65760b5c3190890ff1c6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.30.2-1+deb11u4`
 
@@ -1790,13 +1797,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.23/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.23/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=67.1-7`
+### `dpkg` source package: `icu=67.1-7+deb11u1`
 
 Binary Packages:
 
-- `icu-devtools=67.1-7`
-- `libicu-dev:amd64=67.1-7`
-- `libicu67:amd64=67.1-7`
+- `icu-devtools=67.1-7+deb11u1`
+- `libicu-dev:amd64=67.1-7+deb11u1`
+- `libicu67:amd64=67.1-7+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1805,18 +1812,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=67.1-7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1-7.dsc' icu_67.1-7.dsc 2236 SHA256:3213915e2b2b07ab1d5fe81ba4e310d8146c0a799fd65ac1f1dbb0c32f56cff1
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1.orig.tar.gz' icu_67.1.orig.tar.gz 24518055 SHA256:94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1.orig.tar.gz.asc' icu_67.1.orig.tar.gz.asc 833 SHA256:0044119f3df92ff3055dc3609f527fa1290177f6ef1b6650ea136698b245e537
-'http://deb.debian.org/debian/pool/main/i/icu/icu_67.1-7.debian.tar.xz' icu_67.1-7.debian.tar.xz 30256 SHA256:9836cbc00bf8da459734c82ccd435d09674e85e268f272decf16dbfa0bda730e
+$ apt-get source -qq --print-uris icu=67.1-7+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1-7%2bdeb11u1.dsc' icu_67.1-7+deb11u1.dsc 2268 SHA256:44d7e93588f1ed688fe8eb5c992de8cde052bb7310c3cc0e97481768e04946ba
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1.orig.tar.gz' icu_67.1.orig.tar.gz 24518055 SHA256:94a80cd6f251a53bd2a997f6f1b5ac6653fe791dfab66e1eb0227740fb86d5dc
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1.orig.tar.gz.asc' icu_67.1.orig.tar.gz.asc 833 SHA256:0044119f3df92ff3055dc3609f527fa1290177f6ef1b6650ea136698b245e537
+'http://deb.debian.org/debian-security/pool/updates/main/i/icu/icu_67.1-7%2bdeb11u1.debian.tar.xz' icu_67.1-7+deb11u1.debian.tar.xz 31584 SHA256:83585ac0f3f8bceee980d5ff9e0c64a9fa6d67dddefb7261f9e723f0b11889c7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/67.1-7/ (for browsing the source)
-- https://sources.debian.net/src/icu/67.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/67.1-7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/67.1-7+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/icu/67.1-7+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/67.1-7+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=2.5.4-1`
 
