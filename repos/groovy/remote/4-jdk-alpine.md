@@ -1,4 +1,4 @@
-## `groovy:alpine`
+## `groovy:4-jdk-alpine`
 
 ```console
 $ docker pull groovy@sha256:e7af88743075bbdc486e94fcc9331fd3fecbd7254978b70288e17ab7c855ab2e
@@ -11,7 +11,7 @@ $ docker pull groovy@sha256:e7af88743075bbdc486e94fcc9331fd3fecbd7254978b70288e1
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `groovy:alpine` - linux; amd64
+### `groovy:4-jdk-alpine` - linux; amd64
 
 ```console
 $ docker pull groovy@sha256:63944e9733842df6cb7584c13dcfae396835f2038b306d13d0f7e8fd610f3854
@@ -107,7 +107,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `groovy:alpine` - unknown; unknown
+### `groovy:4-jdk-alpine` - unknown; unknown
 
 ```console
 $ docker pull groovy@sha256:15d4c4addb592c3a6796c194bf407155e10f064841f7b551da320231486d47b1
@@ -131,7 +131,7 @@ $ docker pull groovy@sha256:15d4c4addb592c3a6796c194bf407155e10f064841f7b551da32
 		Size: 22.0 KB (22030 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `groovy:alpine` - linux; arm64 variant v8
+### `groovy:4-jdk-alpine` - linux; arm64 variant v8
 
 ```console
 $ docker pull groovy@sha256:44097fa02821c5a89136351cb8a67ec3b70f225af65b1e49fbb85761374ce25d
@@ -227,7 +227,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `groovy:alpine` - unknown; unknown
+### `groovy:4-jdk-alpine` - unknown; unknown
 
 ```console
 $ docker pull groovy@sha256:c124f2f4c2e0394d271f66428ddecf7bec8f3ceff35219901e1618a075055af8
