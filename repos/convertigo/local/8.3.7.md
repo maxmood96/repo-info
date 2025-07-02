@@ -1826,15 +1826,9 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `Zlib`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sudo=1.9.9-1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9-1ubuntu2.4.dsc' sudo_1.9.9-1ubuntu2.4.dsc 2595 SHA512:2cb8e6b8a8f9692d381538c0e6adbe66f302245ab531f79a68ee2613586cd72d86189b0fe6c929fbf776ce499fc9c723d4240ebd68aee318cb277d0e1a2069c8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9.orig.tar.gz' sudo_1.9.9.orig.tar.gz 4456969 SHA512:53064240431ae3d9409dc5cb7d72ab55d9ab5f802af4de99fadd987855461b3cca53f261d6256e3b6f35e30c7e162f4dfa3978ef6976415cf5be874fb2026614
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9.orig.tar.gz.asc' sudo_1.9.9.orig.tar.gz.asc 833 SHA512:b73866881351b10e8feca9db238c38330a0d91d53ca33c61c3ed6623e771daf088095332452f99ac2d13126cfc9bab63f0ff1d948b5ae881a194a70c3b0c4e18
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9-1ubuntu2.4.debian.tar.xz' sudo_1.9.9-1ubuntu2.4.debian.tar.xz 51392 SHA512:2a59e9d5a4835b16e2276e75399128836062e9d87e8b116c5a3c3ad6df05731a1524ed26ba7bb43e2b061b7855b2fab21b99bcf51f1514bb4347abe24c27d7d1
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.15`
 
