@@ -1,10 +1,10 @@
-# `mongo:8.0.10-noble`
+# `mongo:8.0.11-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:14bce8bf75c7ffb890108dea16aae00d9f1667b86f19494515e347b0ff3d6dc9`
-- Created: `2025-06-03T22:11:55Z`
-- Virtual Size: ~ 892.44 Mb  
+- Image ID: `sha256:ccf68b64aa3e29c42c491d37273b905ded07899b802d63b4c37c1d711d29e974`
+- Created: `2025-06-27T22:01:28Z`
+- Virtual Size: ~ 901.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.10`
+  - `MONGO_VERSION=8.0.11`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -1381,11 +1381,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20240123-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.debian.tar.xz' mawk_1.3.4.20240123-1build1.debian.tar.xz 15704 SHA512:53a4367656e29f5897ba29cf38b30e2b3a2758d990bbd3a90bdbceb5d3c467615496407af8bd437b4df2e9518096865b7ec6739b0465e8bba20d87ed71782268
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.12.1`
+### `dpkg` source package: `mongodb-database-tools=100.12.2`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.12.1`
+- `mongodb-database-tools=100.12.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1395,11 +1395,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.5.2`
+### `dpkg` source package: `mongodb-mongosh=2.5.3`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.5.2`
+- `mongodb-mongosh=2.5.3`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1410,17 +1410,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.10`
+### `dpkg` source package: `mongodb-org=8.0.11`
 
 Binary Packages:
 
-- `mongodb-org=8.0.10`
-- `mongodb-org-database=8.0.10`
-- `mongodb-org-database-tools-extra=8.0.10`
-- `mongodb-org-mongos=8.0.10`
-- `mongodb-org-server=8.0.10`
-- `mongodb-org-shell=8.0.10`
-- `mongodb-org-tools=8.0.10`
+- `mongodb-org=8.0.11`
+- `mongodb-org-database=8.0.11`
+- `mongodb-org-database-tools-extra=8.0.11`
+- `mongodb-org-mongos=8.0.11`
+- `mongodb-org-server=8.0.11`
+- `mongodb-org-shell=8.0.11`
+- `mongodb-org-tools=8.0.11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1647,14 +1647,14 @@ $ apt-get source -qq --print-uris p11-kit=0.25.3-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz' p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz 26028 SHA512:531ecb33634ae9056eac7bac90579b12113a3800fca4d2e4e2e42266e34ed9b96bdbe322b9c6e54ee1fad20ae9760d92e5fc0bae558477add44f3a587913806b
 ```
 
-### `dpkg` source package: `pam=1.5.3-5ubuntu5.1`
+### `dpkg` source package: `pam=1.5.3-5ubuntu5.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-5ubuntu5.1`
-- `libpam-modules-bin=1.5.3-5ubuntu5.1`
-- `libpam-runtime=1.5.3-5ubuntu5.1`
-- `libpam0g:amd64=1.5.3-5ubuntu5.1`
+- `libpam-modules:amd64=1.5.3-5ubuntu5.4`
+- `libpam-modules-bin=1.5.3-5ubuntu5.4`
+- `libpam-runtime=1.5.3-5ubuntu5.4`
+- `libpam0g:amd64=1.5.3-5ubuntu5.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1670,9 +1670,14 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.dsc' pam_1.5.3-5ubuntu5.4.dsc 2727 SHA512:369ddb9d4dac31f7e568cee35ee8f854563d9916119855093527fb33d925baee2699d04e29797e68c4fd14f51e8f0b753ff67a22cf84393198f833826c3c5f08
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.debian.tar.xz' pam_1.5.3-5ubuntu5.4.debian.tar.xz 203076 SHA512:2c2be3a4ae1e7af5ca1fde500354f47464d36bb437fa77029d964c6c0eb1fdc7e7a5560d38ded6f9436ad51b95d11d105fafe9ee6ff894f0edabdd2b92f5e49b
+```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 
@@ -1880,12 +1885,12 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.debian.tar.xz' shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz 96392 SHA512:67cd7c7f869250d39ebb7af023ae4aca6eef88de143a85510135d547bb6988895ef02d9aff798888e5d507f415d7d17193c354b2437764b0c4bea18b1178531d
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.6`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.6`
-- `libudev1:amd64=255.4-1ubuntu8.6`
+- `libsystemd0:amd64=255.4-1ubuntu8.8`
+- `libudev1:amd64=255.4-1ubuntu8.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1898,9 +1903,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.dsc' systemd_255.4-1ubuntu8.8.dsc 7320 SHA512:faa00da26c27905189ec2273e4f0de0facfe3afe75ee44dae5ffafc4311979ced858e766f42b65ef5aad75c7223189a97dfd2608b2daffd17ef6ce62bb8f1351
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.debian.tar.xz' systemd_255.4-1ubuntu8.8.debian.tar.xz 239924 SHA512:dcc243a9417609d6ffcc4174d72807a6304b9b39b1787420f234cfcc2b2aae9191254000aa26e1ca24cd03d924068eb50c17b1c8d1b754d9516080507b2e8246
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
