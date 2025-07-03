@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:63f7bdc571bf67b9957bd1f5fe4522ba3f5fd48b35b409599e6c30f10c3ca55f`
-- Created: `2025-06-25T05:04:15Z`
-- Virtual Size: ~ 453.53 Mb  
+- Image ID: `sha256:7f9193f50223ddaaf134b9d5c7926d086ed6f71f6aa3987c08519217ffa0e4e3`
+- Created: `2025-07-01T11:30:04Z`
+- Virtual Size: ~ 459.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=28.3.0`
   - `DOCKER_BUILDX_VERSION=0.25.0`
-  - `DOCKER_COMPOSE_VERSION=2.37.3`
+  - `DOCKER_COMPOSE_VERSION=2.38.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -392,6 +392,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `glib`
+
+```console
+glib-2.84.3-r0 description:
+Common C routines used by Gtk+ and other libs
+
+glib-2.84.3-r0 webpage:
+https://developer.gnome.org/glib/
+
+glib-2.84.3-r0 installed size:
+5249 KiB
+
+glib-2.84.3-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `inih`
 
 ```console
@@ -667,16 +684,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.1-r0 description:
+libcurl-8.14.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.1-r0 webpage:
+libcurl-8.14.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.14.1-r0 installed size:
+libcurl-8.14.1-r1 installed size:
 669 KiB
 
-libcurl-8.14.1-r0 license:
+libcurl-8.14.1-r1 license:
 curl
 
 ```
@@ -745,6 +762,23 @@ libexpat-2.7.1-r0 installed size:
 129 KiB
 
 libexpat-2.7.1-r0 license:
+MIT
+
+```
+
+### `apk` package: `libffi`
+
+```console
+libffi-3.4.8-r0 description:
+portable, high level programming interface to various calling conventions.
+
+libffi-3.4.8-r0 webpage:
+https://sourceware.org/libffi/
+
+libffi-3.4.8-r0 installed size:
+38 KiB
+
+libffi-3.4.8-r0 license:
 MIT
 
 ```
@@ -851,6 +885,23 @@ LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libmount`
+
+```console
+libmount-2.41-r9 description:
+Block device identification library from util-linux
+
+libmount-2.41-r9 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libmount-2.41-r9 installed size:
+266 KiB
+
+libmount-2.41-r9 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libncursesw`
 
 ```console
@@ -899,6 +950,40 @@ libpsl-0.21.5-r3 installed size:
 
 libpsl-0.21.5-r3 license:
 MIT
+
+```
+
+### `apk` package: `libseccomp`
+
+```console
+libseccomp-2.6.0-r0 description:
+interface to the Linux Kernel's syscall filtering mechanism
+
+libseccomp-2.6.0-r0 webpage:
+https://github.com/seccomp/libseccomp
+
+libseccomp-2.6.0-r0 installed size:
+163 KiB
+
+libseccomp-2.6.0-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libslirp`
+
+```console
+libslirp-4.8.0-r0 description:
+A general purpose TCP-IP emulator
+
+libslirp-4.8.0-r0 webpage:
+https://gitlab.freedesktop.org/slirp/libslirp
+
+libslirp-4.8.0-r0 installed size:
+117 KiB
+
+libslirp-4.8.0-r0 license:
+BSD-3-Clause
 
 ```
 
@@ -1290,6 +1375,23 @@ skalibs-libs-2.14.4.0-r0 installed size:
 
 skalibs-libs-2.14.4.0-r0 license:
 ISC
+
+```
+
+### `apk` package: `slirp4netns`
+
+```console
+slirp4netns-1.3.1-r0 description:
+User-mode networking for unprivileged network namespaces
+
+slirp4netns-1.3.1-r0 webpage:
+https://github.com/rootless-containers/slirp4netns
+
+slirp4netns-1.3.1-r0 installed size:
+66 KiB
+
+slirp4netns-1.3.1-r0 license:
+GPL-2.0-or-later
 
 ```
 
