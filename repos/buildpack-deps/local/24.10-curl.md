@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb4e94b84b938bc6d05409eacb1a43ca1a998295e68ed25f7005e6a327dcf6c7`
+- Image ID: `sha256:77b7b53e5d98e8134a8be8cb90b2a1be9d6537f764b10536c7b0d9b9c70c3002`
 - Created: `2024-08-13T17:58:12Z`
 - Virtual Size: ~ 118.44 Mb  
   (total size of all layers on-disk)
@@ -1603,14 +1603,14 @@ $ apt-get source -qq --print-uris p11-kit=0.25.5-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.5-2ubuntu1.debian.tar.xz' p11-kit_0.25.5-2ubuntu1.debian.tar.xz 24376 SHA512:959d33b22fbd8c60131f3e292645e49a1cf422357c5f89b5202ed5d499a7393c22ee5b3561048abe5f3635c9265b749e9e0ecf99270bad6032b4b628aec240e4
 ```
 
-### `dpkg` source package: `pam=1.5.3-7ubuntu2`
+### `dpkg` source package: `pam=1.5.3-7ubuntu2.3`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-7ubuntu2`
-- `libpam-modules-bin=1.5.3-7ubuntu2`
-- `libpam-runtime=1.5.3-7ubuntu2`
-- `libpam0g:amd64=1.5.3-7ubuntu2`
+- `libpam-modules:amd64=1.5.3-7ubuntu2.3`
+- `libpam-modules-bin=1.5.3-7ubuntu2.3`
+- `libpam-runtime=1.5.3-7ubuntu2.3`
+- `libpam0g:amd64=1.5.3-7ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1629,10 +1629,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu2.dsc' pam_1.5.3-7ubuntu2.dsc 2411 SHA512:5af4fd2fc5327aa7db1acc4701434e037802061440b5e750468e655fc5a4571f1cd9b843248113f419ee85b95120963e97cae0e1a5308b141243d56bb7a3fd40
+$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu2.3.dsc' pam_1.5.3-7ubuntu2.3.dsc 2727 SHA512:6b2ecb3b72d36a8e851cde057b4139f7a1c6438a54dda1862a7b2b6fabc2fb66a5837e3f55ec63c93e6d3f90d9ef66a4c8d0523769962bb9c76f6ec0bfa029d3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu2.debian.tar.xz' pam_1.5.3-7ubuntu2.debian.tar.xz 186520 SHA512:ef589ef5dbdcd661bff0ef82ec599571de7eaf64e105b2ef6f5c908f3dcbcc13a60c486f97337365c805db156a5bdad5d427a40d2d3528ce5453418bdd5f2370
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu2.3.debian.tar.xz' pam_1.5.3-7ubuntu2.3.debian.tar.xz 202604 SHA512:9036b62dcb2a6a850e7851d39500d8bf823a5726c75c45f30088c227781e3b054a078fa6c9fa44c6623426d7d1788a8e000908c71a8a9efe3c3177abcfb24a46
 ```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu3`
@@ -1913,12 +1913,12 @@ $ apt-get source -qq --print-uris sqlite3=3.46.1-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-1ubuntu0.2.debian.tar.xz' sqlite3_3.46.1-1ubuntu0.2.debian.tar.xz 33388 SHA512:e669b51c9dc88dd8beb3638a7bcc4ecd671a9a7c7c7b10f070f9736682e040ca351234831e62f898148e0f1193a5f3c95bbc0a14dd346be3b00949feeb9e9963
 ```
 
-### `dpkg` source package: `systemd=256.5-2ubuntu3.1`
+### `dpkg` source package: `systemd=256.5-2ubuntu3.3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.5-2ubuntu3.1`
-- `libudev1:amd64=256.5-2ubuntu3.1`
+- `libsystemd0:amd64=256.5-2ubuntu3.3`
+- `libudev1:amd64=256.5-2ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1931,9 +1931,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=256.5-2ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_256.5-2ubuntu3.3.dsc' systemd_256.5-2ubuntu3.3.dsc 8224 SHA512:45d4142ec1569f49017fb1672592937524e7cdf835a0e0d2a79725d3d6562f522876f2309d964168576d6d4819889d45b5b4652d73990e89a8b88134c82862e5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_256.5.orig.tar.gz' systemd_256.5.orig.tar.gz 15664466 SHA512:40558194e05a17b218adf3d6df48b738c866855d43d09c1e9381c2c568a44a8f1617b64476736fc7e34416ad9e8d25dc023cf9de090b4ef9079866919377009f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_256.5-2ubuntu3.3.debian.tar.xz' systemd_256.5-2ubuntu3.3.debian.tar.xz 231504 SHA512:d289761e188091108bcbe44845a3e14910606f1ca3da1619984ebac91fd85c5ab46aef851562e1e496678b5e0b06ec94386b0ccc4bf60807f2012e5ff51fcb4a
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
