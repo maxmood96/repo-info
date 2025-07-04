@@ -1,7 +1,7 @@
 ## `jetty:9-jdk8-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:b8354bfac7bcaaad139a9bf199adb8c3ccf3f8c34494263c47287d080c7026bc
+$ docker pull jetty@sha256:ab06ecb2c7930ad5d64f81252148f43b19f7fbf86505c6390f8f63d30d8c3ba8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -117,13 +117,13 @@ $ docker pull jetty@sha256:972e4eb2775b88445767f7821a1cb12bf069ce99d4f093c5b1351
 ### `jetty:9-jdk8-amazoncorretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:c9afde8bacf8789ff07123fff45f7f1fd88b5962cb24bdeadefbb2b88d3c597b
+$ docker pull jetty@sha256:ff131e23cd62416d26e848411091c9bd5470a4cd7c01c33ba227e79a8205ac48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.7 MB (140650320 bytes)**  
+-	Total Size: **140.7 MB (140657878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74f28ecc07024287e1450424219933792c63f441bfd69685f2e253d44b5cb1a3`
+-	Image ID: `sha256:638f26a4aba5dedba6ac0bb25e824af72e7aedce4bbb1b60d20a0829fa127749`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -172,47 +172,47 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:a3a141bfe5627b562a870ad931fe1cdc50d3dbf733a0568d089499010c9116cb`  
-		Last Modified: Fri, 13 Jun 2025 17:05:27 GMT  
-		Size: 64.8 MB (64790746 bytes)  
+	-	`sha256:409bf1beed8b3d18aa6739b3b654d78ea6e9842b177c58b3fde860845eae1b51`  
+		Last Modified: Wed, 25 Jun 2025 19:30:21 GMT  
+		Size: 64.8 MB (64794781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0c0e8db55ba0608b29f8036dc93a60576d958743c6ff8f30379b8deece0f310`  
-		Last Modified: Fri, 13 Jun 2025 19:50:44 GMT  
-		Size: 59.7 MB (59661256 bytes)  
+	-	`sha256:bc47cbff1aa8bf58344d07be590fcf7138d24079f842d7427ebe10b6e84d4401`  
+		Last Modified: Fri, 04 Jul 2025 03:36:14 GMT  
+		Size: 59.7 MB (59662713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ded07825028f09e87c7869ddf8afd596498481df3be38a208bae4fc12376b189`  
-		Last Modified: Fri, 13 Jun 2025 21:09:34 GMT  
-		Size: 16.2 MB (16196626 bytes)  
+	-	`sha256:8731a7a1dbda694798e73db003cd22885d6b80f65cb4b2aaa31033af52fc6c17`  
+		Last Modified: Fri, 04 Jul 2025 04:55:41 GMT  
+		Size: 16.2 MB (16198692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13feff0d9dbfa6787c60d1af6d84dd8d968032e232e914c977b57ba4d9f2ba7b`  
-		Last Modified: Fri, 13 Jun 2025 21:09:33 GMT  
+	-	`sha256:e1dbda14157bf4fdb1a03407b7cdcfe69efb3274112acb1d009fc7633671e4dc`  
+		Last Modified: Fri, 04 Jul 2025 04:55:40 GMT  
 		Size: 1.7 KB (1660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:9-jdk8-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:e6de000dd85697f27eca5557ee724092813f6298e618930f716b70d540abd391
+$ docker pull jetty@sha256:e85110d3305cdb23eb200c558772df9cc56d42cc8a92ea4bf2e428d615d016bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.7 MB (5749552 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eef7c97bcec6997114fae480f83f63d08a78388157aba45092461dea1596bda0`
+-	Image ID: `sha256:7b652ba2205e68a0cb9d5febe56a644ead0585b07595dada2fe30f733863e83d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1f111447d80d50b3999f4459194c47a32334c09f60aff79c3a9acc9ec1a6691`  
-		Last Modified: Fri, 13 Jun 2025 23:18:32 GMT  
+	-	`sha256:73e6715fcdf3f48ea2fbb656d22a4b4994c463c4d8e374de2c3666605a2c997b`  
+		Last Modified: Fri, 04 Jul 2025 05:18:40 GMT  
 		Size: 5.7 MB (5732040 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bd32b8d65e85d6ccd407fa0cad02528872a85acd3912cd910bb98a4effc6ef6d`  
-		Last Modified: Fri, 13 Jun 2025 23:18:33 GMT  
+	-	`sha256:4ac26f6317c29d4a805622986e63443cfcaea887fe2e2c24451ed547f079fce7`  
+		Last Modified: Fri, 04 Jul 2025 05:18:41 GMT  
 		Size: 17.5 KB (17512 bytes)  
 		MIME: application/vnd.in-toto+json
