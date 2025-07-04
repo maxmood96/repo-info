@@ -1,10 +1,10 @@
-# `rabbitmq:4.1.1`
+# `rabbitmq:4.1.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bdd7110c3ed2b646c0c0f7843800cf11210dc69bbaeb1e771bcb41d9e026eeb0`
-- Created: `2025-06-16T11:56:26Z`
-- Virtual Size: ~ 238.33 Mb  
+- Image ID: `sha256:e83ead07939667681a604706fae3b33c9ea34bc31044db704009f0118b3a115b`
+- Created: `2025-07-03T17:05:34Z`
+- Virtual Size: ~ 238.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.1.1`
+  - `RABBITMQ_VERSION=4.1.2`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -651,19 +651,24 @@ $ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.3.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.3.debian.tar.xz 94620 SHA512:a8c3881fd0a7c80875e3f8076e418731157e9969338bdb707ed1fb5fdb324bb18801555ecddfefc63cb4187fec012a3d06aaac386450742351c90ec17b175564
 ```
 
-### `dpkg` source package: `gosu=1.17-1ubuntu0.24.04.2`
+### `dpkg` source package: `gosu=1.17-1ubuntu0.24.04.3`
 
 Binary Packages:
 
-- `gosu=1.17-1ubuntu0.24.04.2`
+- `gosu=1.17-1ubuntu0.24.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 
 - `Apache-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gosu=1.17-1ubuntu0.24.04.3
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.17-1ubuntu0.24.04.3.dsc' gosu_1.17-1ubuntu0.24.04.3.dsc 2121 SHA512:2819d2dc3a9015c707e30269692cda7ff1619cb7e959a555078608c7ced3c8dfa69af3d02899f9bb69e4dfccad896dc9506f7733829d9685173710f377692db0
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.17.orig.tar.gz' gosu_1.17.orig.tar.gz 15256 SHA512:5a8bd7fce5c9080118dcf2c86332671441e133e44d08baea7dbc9f622e8d1bec1a229d3d7a38846bdcdcb66538222d5871e565e71eea1677fcd5727b836cdbce
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.17-1ubuntu0.24.04.3.debian.tar.xz' gosu_1.17-1ubuntu0.24.04.3.debian.tar.xz 2904 SHA512:c423cff68b95112e3d9fdc44fb2b6462c2891b59c771696eae455df4c2bf693ef8aa84bd1862aeb406cfaf3c2ea65391d6b39e2135e63fe7ef67ff4cee6d9edd
+```
 
 ### `dpkg` source package: `grep=3.11-4build1`
 
@@ -1304,14 +1309,14 @@ $ apt-get source -qq --print-uris p11-kit=0.25.3-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz' p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz 26028 SHA512:531ecb33634ae9056eac7bac90579b12113a3800fca4d2e4e2e42266e34ed9b96bdbe322b9c6e54ee1fad20ae9760d92e5fc0bae558477add44f3a587913806b
 ```
 
-### `dpkg` source package: `pam=1.5.3-5ubuntu5.1`
+### `dpkg` source package: `pam=1.5.3-5ubuntu5.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-5ubuntu5.1`
-- `libpam-modules-bin=1.5.3-5ubuntu5.1`
-- `libpam-runtime=1.5.3-5ubuntu5.1`
-- `libpam0g:amd64=1.5.3-5ubuntu5.1`
+- `libpam-modules:amd64=1.5.3-5ubuntu5.4`
+- `libpam-modules-bin=1.5.3-5ubuntu5.4`
+- `libpam-runtime=1.5.3-5ubuntu5.4`
+- `libpam0g:amd64=1.5.3-5ubuntu5.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1327,9 +1332,14 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.dsc' pam_1.5.3-5ubuntu5.4.dsc 2727 SHA512:369ddb9d4dac31f7e568cee35ee8f854563d9916119855093527fb33d925baee2699d04e29797e68c4fd14f51e8f0b753ff67a22cf84393198f833826c3c5f08
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.debian.tar.xz' pam_1.5.3-5ubuntu5.4.debian.tar.xz 203076 SHA512:2c2be3a4ae1e7af5ca1fde500354f47464d36bb437fa77029d964c6c0eb1fdc7e7a5560d38ded6f9436ad51b95d11d105fafe9ee6ff894f0edabdd2b92f5e49b
+```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 
@@ -1497,12 +1507,12 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.debian.tar.xz' shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz 96392 SHA512:67cd7c7f869250d39ebb7af023ae4aca6eef88de143a85510135d547bb6988895ef02d9aff798888e5d507f415d7d17193c354b2437764b0c4bea18b1178531d
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.6`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.6`
-- `libudev1:amd64=255.4-1ubuntu8.6`
+- `libsystemd0:amd64=255.4-1ubuntu8.8`
+- `libudev1:amd64=255.4-1ubuntu8.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1515,9 +1525,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.dsc' systemd_255.4-1ubuntu8.8.dsc 7320 SHA512:faa00da26c27905189ec2273e4f0de0facfe3afe75ee44dae5ffafc4311979ced858e766f42b65ef5aad75c7223189a97dfd2608b2daffd17ef6ce62bb8f1351
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.debian.tar.xz' systemd_255.4-1ubuntu8.8.debian.tar.xz 239924 SHA512:dcc243a9417609d6ffcc4174d72807a6304b9b39b1787420f234cfcc2b2aae9191254000aa26e1ca24cd03d924068eb50c17b1c8d1b754d9516080507b2e8246
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
