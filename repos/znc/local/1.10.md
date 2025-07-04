@@ -1,17 +1,17 @@
-# `znc:1.10.0`
+# `znc:1.10.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d0b38f1139c032fa67acbe51de4dfbdf32c3816017e8525fcbdd2d7c9702205a`
-- Created: `2025-06-09T21:22:37Z`
-- Virtual Size: ~ 486.32 Mb  
+- Image ID: `sha256:20411f5c040aafa41f3e0eb9d81f97947a4da83cf491900d7c73426b17824898`
+- Created: `2025-07-01T21:26:43Z`
+- Virtual Size: ~ 486.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=D5823CACB477191CAC0075555AE420CC0209989E`
-  - `ZNC_VERSION=1.10.0`
+  - `ZNC_VERSION=1.10.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1769,16 +1769,16 @@ rhash-libs-1.4.5-r0 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20250609.220913 description:
+runtime-dependencies-20250701.214936 description:
 virtual meta package
 
-runtime-dependencies-20250609.220913 webpage:
+runtime-dependencies-20250701.214936 webpage:
 
 
-runtime-dependencies-20250609.220913 installed size:
+runtime-dependencies-20250701.214936 installed size:
 0 B
 
-runtime-dependencies-20250609.220913 license:
+runtime-dependencies-20250701.214936 license:
 
 
 ```
