@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb8e71eada499702c83f9670e3233065771df8e92f4cac83824560b6c9e81880`
+- Image ID: `sha256:7b9f3dd85b3b713e8b2a683701a16f694f940b6d5bb4fef68a3c02b0dc36ae54`
 - Created: `2025-06-03T04:32:14Z`
-- Virtual Size: ~ 530.15 Mb  
+- Virtual Size: ~ 530.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -1269,11 +1269,11 @@ $ apt-get source -qq --print-uris lapack=3.12.0-3build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/lapack_3.12.0-3build1.1.debian.tar.xz' lapack_3.12.0-3build1.1.debian.tar.xz 28916 SHA512:42ca6ffeaec371df0f7242aa6fa932a9cfc3044baa941063dae3be23a4645c5c12e94e51d6c20969a1f5627dbedd165c7e72532d336379fb70248338fed89242
 ```
 
-### `dpkg` source package: `libarchive=3.7.2-2ubuntu0.4`
+### `dpkg` source package: `libarchive=3.7.2-2ubuntu0.5`
 
 Binary Packages:
 
-- `libarchive13t64:amd64=3.7.2-2ubuntu0.4`
+- `libarchive13t64:amd64=3.7.2-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 
@@ -1288,9 +1288,15 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.5.dsc' libarchive_3.7.2-2ubuntu0.5.dsc 2558 SHA512:e79445b3eaf1f19733ff9032f30ea854ff8749d3c33edc3f308d3c4a13af2fb38180ae4986f7dbc8060bf613ebdfd335839e6791f0281e8a7653025a478b06e3
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.5.debian.tar.xz' libarchive_3.7.2-2ubuntu0.5.debian.tar.xz 34236 SHA512:5b91c3314610755887e439998c5c4d5a3c016e83068c81a9a8c0c07e2d30cfd2c84c0c59674ecff25dea838fbbe4fb98cface151d2f05f95e62f80b06b9bcd1a
+```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -1883,19 +1889,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-60.63`
+### `dpkg` source package: `linux=6.8.0-63.66`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-60.63`
+- `linux-libc-dev:amd64=6.8.0-63.66`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-63.66
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-63.66.dsc' linux_6.8.0-63.66.dsc 9383 SHA512:755fd0877e3047fd45d131223145866aa3f2ad6bfc278b5e612f140dc469e4b191b10b836c2a097cf43192f9535b50bf44464038cd6378b0fecfee3bdd4b51ab
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-63.66.diff.gz' linux_6.8.0-63.66.diff.gz 5333357 SHA512:da0fb318fa73599c9dd3abf93df92ecc1d4d73243b9b25c6d794c93f5df09fff1ff16a4d0418eb4425a4b4f45b0fcd0857d7badb380143ff91072159d8f453cf
+```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
@@ -2324,14 +2335,14 @@ $ apt-get source -qq --print-uris p11-kit=0.25.3-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz' p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz 26028 SHA512:531ecb33634ae9056eac7bac90579b12113a3800fca4d2e4e2e42266e34ed9b96bdbe322b9c6e54ee1fad20ae9760d92e5fc0bae558477add44f3a587913806b
 ```
 
-### `dpkg` source package: `pam=1.5.3-5ubuntu5.1`
+### `dpkg` source package: `pam=1.5.3-5ubuntu5.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-5ubuntu5.1`
-- `libpam-modules-bin=1.5.3-5ubuntu5.1`
-- `libpam-runtime=1.5.3-5ubuntu5.1`
-- `libpam0g:amd64=1.5.3-5ubuntu5.1`
+- `libpam-modules:amd64=1.5.3-5ubuntu5.4`
+- `libpam-modules-bin=1.5.3-5ubuntu5.4`
+- `libpam-runtime=1.5.3-5ubuntu5.4`
+- `libpam0g:amd64=1.5.3-5ubuntu5.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -2347,9 +2358,14 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.dsc' pam_1.5.3-5ubuntu5.4.dsc 2727 SHA512:369ddb9d4dac31f7e568cee35ee8f854563d9916119855093527fb33d925baee2699d04e29797e68c4fd14f51e8f0b753ff67a22cf84393198f833826c3c5f08
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.debian.tar.xz' pam_1.5.3-5ubuntu5.4.debian.tar.xz 203076 SHA512:2c2be3a4ae1e7af5ca1fde500354f47464d36bb437fa77029d964c6c0eb1fdc7e7a5560d38ded6f9436ad51b95d11d105fafe9ee6ff894f0edabdd2b92f5e49b
+```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 
@@ -3039,17 +3055,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.5`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.7`
 
 Binary Packages:
 
-- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.5`
-- `python3.12=3.12.3-1ubuntu0.5`
-- `python3.12-dev=3.12.3-1ubuntu0.5`
-- `python3.12-minimal=3.12.3-1ubuntu0.5`
+- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.7`
+- `python3.12=3.12.3-1ubuntu0.7`
+- `python3.12-dev=3.12.3-1ubuntu0.7`
+- `python3.12-minimal=3.12.3-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-dev/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3071,9 +3087,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.7.dsc' python3.12_3.12.3-1ubuntu0.7.dsc 3920 SHA512:2dfc4b39a6e9900e919b2fbcb4ac155d87062a1464dd56941c19326b9ac2be23589763fb4feef8fff2525e86bf216451ad9522957b862b91275eb59ede2d4f40
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.7.debian.tar.xz' python3.12_3.12.3-1ubuntu0.7.debian.tar.xz 253996 SHA512:18c320d930832737ea1239d2f13272568a123b2e736086dc24eab7abb4948efe0a009f971ad5d5316313bef50d297d72382ef4617599825b9227e6e12774b338
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
@@ -5640,12 +5661,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz 33384 SHA512:e6f48f7e73237602d6ba3faaca90d8c20507ddb663d85b616b2f5d460ef2b83c23a36ebd6eb472671b4f749e3e4960cfebcd7b531c0220ecc14bc22e1ead419d
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.6`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.6`
-- `libudev1:amd64=255.4-1ubuntu8.6`
+- `libsystemd0:amd64=255.4-1ubuntu8.8`
+- `libudev1:amd64=255.4-1ubuntu8.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5658,9 +5679,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.dsc' systemd_255.4-1ubuntu8.8.dsc 7320 SHA512:faa00da26c27905189ec2273e4f0de0facfe3afe75ee44dae5ffafc4311979ced858e766f42b65ef5aad75c7223189a97dfd2608b2daffd17ef6ce62bb8f1351
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.debian.tar.xz' systemd_255.4-1ubuntu8.8.debian.tar.xz 239924 SHA512:dcc243a9417609d6ffcc4174d72807a6304b9b39b1787420f234cfcc2b2aae9191254000aa26e1ca24cd03d924068eb50c17b1c8d1b754d9516080507b2e8246
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0289388d8db682cbfe62c775cf4d0a1f74f08bc2f0b24316e5d9cf58db72dffb`
+- Image ID: `sha256:84fcfdc00a096c70701d65348ff2df89721886af9a97465f38aa7555c54f620e`
 - Created: `2025-05-23T20:53:19Z`
-- Virtual Size: ~ 917.28 Mb  
+- Virtual Size: ~ 917.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -1999,11 +1999,11 @@ $ apt-get source -qq --print-uris lerc=4.0.0+ds-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lerc/lerc_4.0.0%2bds-4ubuntu2.debian.tar.xz' lerc_4.0.0+ds-4ubuntu2.debian.tar.xz 7344 SHA512:61f8c1a0b20e3c3016a7787307325e0a56549ff13f88af815bbdfa5e24285e0a090c05ae51b9c9b068b917a64e808cd329c7204e81273169489ba0727e59d1c7
 ```
 
-### `dpkg` source package: `libarchive=3.7.2-2ubuntu0.4`
+### `dpkg` source package: `libarchive=3.7.2-2ubuntu0.5`
 
 Binary Packages:
 
-- `libarchive13t64:amd64=3.7.2-2ubuntu0.4`
+- `libarchive13t64:amd64=3.7.2-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 
@@ -2018,9 +2018,15 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.5.dsc' libarchive_3.7.2-2ubuntu0.5.dsc 2558 SHA512:e79445b3eaf1f19733ff9032f30ea854ff8749d3c33edc3f308d3c4a13af2fb38180ae4986f7dbc8060bf613ebdfd335839e6791f0281e8a7653025a478b06e3
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.5.debian.tar.xz' libarchive_3.7.2-2ubuntu0.5.debian.tar.xz 34236 SHA512:5b91c3314610755887e439998c5c4d5a3c016e83068c81a9a8c0c07e2d30cfd2c84c0c59674ecff25dea838fbbe4fb98cface151d2f05f95e62f80b06b9bcd1a
+```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -3161,19 +3167,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-60.63`
+### `dpkg` source package: `linux=6.8.0-63.66`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-60.63`
+- `linux-libc-dev:amd64=6.8.0-63.66`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-63.66
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-63.66.dsc' linux_6.8.0-63.66.dsc 9383 SHA512:755fd0877e3047fd45d131223145866aa3f2ad6bfc278b5e612f140dc469e4b191b10b836c2a097cf43192f9535b50bf44464038cd6378b0fecfee3bdd4b51ab
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-63.66.diff.gz' linux_6.8.0-63.66.diff.gz 5333357 SHA512:da0fb318fa73599c9dd3abf93df92ecc1d4d73243b9b25c6d794c93f5df09fff1ff16a4d0418eb4425a4b4f45b0fcd0857d7badb380143ff91072159d8f453cf
+```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
@@ -3704,14 +3715,14 @@ $ apt-get source -qq --print-uris p11-kit=0.25.3-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz' p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz 26028 SHA512:531ecb33634ae9056eac7bac90579b12113a3800fca4d2e4e2e42266e34ed9b96bdbe322b9c6e54ee1fad20ae9760d92e5fc0bae558477add44f3a587913806b
 ```
 
-### `dpkg` source package: `pam=1.5.3-5ubuntu5.1`
+### `dpkg` source package: `pam=1.5.3-5ubuntu5.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-5ubuntu5.1`
-- `libpam-modules-bin=1.5.3-5ubuntu5.1`
-- `libpam-runtime=1.5.3-5ubuntu5.1`
-- `libpam0g:amd64=1.5.3-5ubuntu5.1`
+- `libpam-modules:amd64=1.5.3-5ubuntu5.4`
+- `libpam-modules-bin=1.5.3-5ubuntu5.4`
+- `libpam-runtime=1.5.3-5ubuntu5.4`
+- `libpam0g:amd64=1.5.3-5ubuntu5.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -3727,9 +3738,14 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.dsc' pam_1.5.3-5ubuntu5.4.dsc 2727 SHA512:369ddb9d4dac31f7e568cee35ee8f854563d9916119855093527fb33d925baee2699d04e29797e68c4fd14f51e8f0b753ff67a22cf84393198f833826c3c5f08
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.4.debian.tar.xz' pam_1.5.3-5ubuntu5.4.debian.tar.xz 203076 SHA512:2c2be3a4ae1e7af5ca1fde500354f47464d36bb437fa77029d964c6c0eb1fdc7e7a5560d38ded6f9436ad51b95d11d105fafe9ee6ff894f0edabdd2b92f5e49b
+```
 
 ### `dpkg` source package: `pango1.0=1.52.1+ds-1build1`
 
@@ -4829,11 +4845,11 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3-rosdep-modules=0.25.1-1`
+### `dpkg` source package: `python3-rosdep-modules=0.26.0-1`
 
 Binary Packages:
 
-- `python3-rosdep-modules=0.25.1-1`
+- `python3-rosdep-modules=0.26.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4843,11 +4859,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-rosdep=0.25.1-1`
+### `dpkg` source package: `python3-rosdep=0.26.0-1`
 
 Binary Packages:
 
-- `python3-rosdep=0.25.1-1`
+- `python3-rosdep=0.26.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4899,17 +4915,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.5`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.7`
 
 Binary Packages:
 
-- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.5`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.5`
-- `python3.12=3.12.3-1ubuntu0.5`
-- `python3.12-dev=3.12.3-1ubuntu0.5`
-- `python3.12-minimal=3.12.3-1ubuntu0.5`
+- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.7`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.7`
+- `python3.12=3.12.3-1ubuntu0.7`
+- `python3.12-dev=3.12.3-1ubuntu0.7`
+- `python3.12-minimal=3.12.3-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-dev/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -4931,9 +4947,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.7.dsc' python3.12_3.12.3-1ubuntu0.7.dsc 3920 SHA512:2dfc4b39a6e9900e919b2fbcb4ac155d87062a1464dd56941c19326b9ac2be23589763fb4feef8fff2525e86bf216451ad9522957b862b91275eb59ede2d4f40
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.7.debian.tar.xz' python3.12_3.12.3-1ubuntu0.7.debian.tar.xz 253996 SHA512:18c320d930832737ea1239d2f13272568a123b2e736086dc24eab7abb4948efe0a009f971ad5d5316313bef50d297d72382ef4617599825b9227e6e12774b338
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
@@ -5816,11 +5837,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-geometry2=0.41.0-1noble.20250520.042201`
+### `dpkg` source package: `ros-kilted-geometry2=0.41.0-1noble.20250607.003023`
 
 Binary Packages:
 
-- `ros-kilted-geometry2=0.41.0-1noble.20250520.042201`
+- `ros-kilted-geometry2=0.41.0-1noble.20250607.003023`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-geometry2/copyright`)
 
@@ -6058,11 +6079,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-mcap-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-message-filters=7.1.0-2noble.20250520.033613`
+### `dpkg` source package: `ros-kilted-message-filters=7.1.1-1noble.20250606.234501`
 
 Binary Packages:
 
-- `ros-kilted-message-filters=7.1.0-2noble.20250520.033613`
+- `ros-kilted-message-filters=7.1.1-1noble.20250606.234501`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-message-filters/copyright`)
 
@@ -6497,11 +6518,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-rmw/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-robot-state-publisher=3.4.2-2noble.20250520.185832`
+### `dpkg` source package: `ros-kilted-robot-state-publisher=3.4.2-2noble.20250607.000847`
 
 Binary Packages:
 
-- `ros-kilted-robot-state-publisher=3.4.2-2noble.20250520.185832`
+- `ros-kilted-robot-state-publisher=3.4.2-2noble.20250607.000847`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-robot-state-publisher/copyright`)
 
@@ -6511,11 +6532,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-robot-state-publisher/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-ros-base=0.12.0-2noble.20250520.190142`
+### `dpkg` source package: `ros-kilted-ros-base=0.12.0-2noble.20250607.004413`
 
 Binary Packages:
 
-- `ros-kilted-ros-base=0.12.0-2noble.20250520.190142`
+- `ros-kilted-ros-base=0.12.0-2noble.20250607.004413`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-ros-base/copyright`)
 
@@ -7493,11 +7514,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-stereo-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-bullet=0.41.0-1noble.20250520.035659`
+### `dpkg` source package: `ros-kilted-tf2-bullet=0.41.0-1noble.20250607.000954`
 
 Binary Packages:
 
-- `ros-kilted-tf2-bullet=0.41.0-1noble.20250520.035659`
+- `ros-kilted-tf2-bullet=0.41.0-1noble.20250607.000954`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-bullet/copyright`)
 
@@ -7521,11 +7542,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-eigen=0.41.0-1noble.20250520.035702`
+### `dpkg` source package: `ros-kilted-tf2-eigen=0.41.0-1noble.20250607.001003`
 
 Binary Packages:
 
-- `ros-kilted-tf2-eigen=0.41.0-1noble.20250520.035702`
+- `ros-kilted-tf2-eigen=0.41.0-1noble.20250607.001003`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen/copyright`)
 
@@ -7535,11 +7556,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-eigen/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-geometry-msgs=0.41.0-1noble.20250520.041340`
+### `dpkg` source package: `ros-kilted-tf2-geometry-msgs=0.41.0-1noble.20250607.001024`
 
 Binary Packages:
 
-- `ros-kilted-tf2-geometry-msgs=0.41.0-1noble.20250520.041340`
+- `ros-kilted-tf2-geometry-msgs=0.41.0-1noble.20250607.001024`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-geometry-msgs/copyright`)
 
@@ -7549,11 +7570,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-kdl=0.41.0-1noble.20250520.041458`
+### `dpkg` source package: `ros-kilted-tf2-kdl=0.41.0-1noble.20250607.001039`
 
 Binary Packages:
 
-- `ros-kilted-tf2-kdl=0.41.0-1noble.20250520.041458`
+- `ros-kilted-tf2-kdl=0.41.0-1noble.20250607.001039`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-kdl/copyright`)
 
@@ -7605,11 +7626,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-ros=0.41.0-1noble.20250520.035047`
+### `dpkg` source package: `ros-kilted-tf2-ros=0.41.0-1noble.20250606.235018`
 
 Binary Packages:
 
-- `ros-kilted-tf2-ros=0.41.0-1noble.20250520.035047`
+- `ros-kilted-tf2-ros=0.41.0-1noble.20250606.235018`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros/copyright`)
 
@@ -7619,11 +7640,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-kilted-tf2-sensor-msgs=0.41.0-1noble.20250520.041403`
+### `dpkg` source package: `ros-kilted-tf2-sensor-msgs=0.41.0-1noble.20250607.001034`
 
 Binary Packages:
 
-- `ros-kilted-tf2-sensor-msgs=0.41.0-1noble.20250520.041403`
+- `ros-kilted-tf2-sensor-msgs=0.41.0-1noble.20250607.001034`
 
 Licenses: (parsed from: `/usr/share/doc/ros-kilted-tf2-sensor-msgs/copyright`)
 
@@ -8124,11 +8145,11 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz 33384 SHA512:e6f48f7e73237602d6ba3faaca90d8c20507ddb663d85b616b2f5d460ef2b83c23a36ebd6eb472671b4f749e3e4960cfebcd7b531c0220ecc14bc22e1ead419d
 ```
 
-### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5`
+### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5.24.04.1`
 
 Binary Packages:
 
-- `sudo=1.9.15p5-3ubuntu5`
+- `sudo=1.9.15p5-3ubuntu5.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 
@@ -8144,19 +8165,19 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.dsc' sudo_1.9.15p5-3ubuntu5.dsc 2760 SHA512:bc20b56d2f89d8e48fcc59c18a7c5c95774b1076c30278f5e1cadfa001a9b560a34471425bc783228a2e9c1bfb2f616593105c667d5672b11a8e6155154080e1
+$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.1.dsc' sudo_1.9.15p5-3ubuntu5.24.04.1.dsc 2763 SHA512:13b69793dfb87be6cda062f3bb6834e7515bd3159ad32180e83c0cb8afbc58d43b683fb5b75d3c120fee22272d1703b4bad8227124d3f6c00303366d4b9713ee
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA512:ebac69719de2fe7bd587924701bdd24149bf376a68b17ec02f69b2b96d4bb6fa5eb8260a073ec5ea046d3ac69bb5b1c0b9d61709fe6a56f1f66e40817a70b15a
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA512:2447b8b660d8902594a9e809cd96fef8c6074223ced086c1a81453fbe509c387f48f6c2817c802c7d7f3225fcea2539a0e420a4fb120384de5535abec8d60f34
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.debian.tar.xz 55768 SHA512:98e81839d985791849798426e9571e6dde4d6593a4e584849587d9b4d1793f5e9cd2dcdc7359ee24992e82e80ab3b2b31938343dcf5946029949910021f003f6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.1.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.1.debian.tar.xz 70264 SHA512:966c349d788dfff7421eff8287cecae8809bad01f331198e27804c45807968aeafb28bbeae75d2a9187f59777018a1a336381121b7b846e0f59ec0e133906b90
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.6`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.6`
-- `libudev1:amd64=255.4-1ubuntu8.6`
+- `libsystemd0:amd64=255.4-1ubuntu8.8`
+- `libudev1:amd64=255.4-1ubuntu8.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -8169,9 +8190,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.dsc' systemd_255.4-1ubuntu8.8.dsc 7320 SHA512:faa00da26c27905189ec2273e4f0de0facfe3afe75ee44dae5ffafc4311979ced858e766f42b65ef5aad75c7223189a97dfd2608b2daffd17ef6ce62bb8f1351
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.debian.tar.xz' systemd_255.4-1ubuntu8.8.debian.tar.xz 239924 SHA512:dcc243a9417609d6ffcc4174d72807a6304b9b39b1787420f234cfcc2b2aae9191254000aa26e1ca24cd03d924068eb50c17b1c8d1b754d9516080507b2e8246
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
