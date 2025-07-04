@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e52407c3d80bc3c82f42d4d25f17154a9fdc3011d0861b0717402870ac5071f`
-- Created: `2025-05-23T17:07:24.727083635Z`
-- Virtual Size: ~ 76.97 Mb  
+- Image ID: `sha256:cc43ea29b4c1051f3ae3922803f74c3703f5a18d00596bc650af4fe9c1f51414`
+- Created: `2025-06-20T10:17:02.180909183Z`
+- Virtual Size: ~ 76.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1140,14 +1140,14 @@ $ apt-get source -qq --print-uris openssl=3.4.1-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu3.debian.tar.xz' openssl_3.4.1-1ubuntu3.debian.tar.xz 119736 SHA512:24fed727d4e7ce526d3b0f44b2052e7b4a1584d9fd85bab755761d6e27600d2d7400c7a0c8177e24a0b7c8fb2bdb6c6fd1d2bb07a893e64c61a37a50738cbecd
 ```
 
-### `dpkg` source package: `pam=1.5.3-7ubuntu4`
+### `dpkg` source package: `pam=1.5.3-7ubuntu4.3`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-7ubuntu4`
-- `libpam-modules-bin=1.5.3-7ubuntu4`
-- `libpam-runtime=1.5.3-7ubuntu4`
-- `libpam0g:amd64=1.5.3-7ubuntu4`
+- `libpam-modules:amd64=1.5.3-7ubuntu4.3`
+- `libpam-modules-bin=1.5.3-7ubuntu4.3`
+- `libpam-runtime=1.5.3-7ubuntu4.3`
+- `libpam0g:amd64=1.5.3-7ubuntu4.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1166,10 +1166,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.dsc' pam_1.5.3-7ubuntu4.dsc 2411 SHA512:ef7b41b13e21d2c2dbf64371956055f042a8d792d84b371489e285e3d46061034715ca5cb41f038b0f83a4046f5020cd7f7f434ee429d5c319d560f9a225b0be
+$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu4.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.3.dsc' pam_1.5.3-7ubuntu4.3.dsc 2727 SHA512:2ba33b8dbfbe4d760fc15175c56d7fc65ef6cf895664b701a1851934b1eea4f8d8b461f43f3cdfc01d6620be2e2bf565a13bdec8c54e0472936809f1583d6a54
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.debian.tar.xz' pam_1.5.3-7ubuntu4.debian.tar.xz 186684 SHA512:252162a6fc1ed9069fa3dcb039c62671f2fdfb705c9b90ee2fae346cb06c4523aeb0f148393cdee56d9b563ca1c110ccb14540e6efc7e9c19aff3efcec76afcb
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.3.debian.tar.xz' pam_1.5.3-7ubuntu4.3.debian.tar.xz 202792 SHA512:9e6cf390b39c487d6e9fec12ae6dfce7cf1dc41c4d3ee41a35c9c4ddd5a4fc251e59209f1cb7f40bc373c58abf26ae1295d72139eeb9329df4da407c973f7cce
 ```
 
 ### `dpkg` source package: `pcre2=10.45-1`
@@ -1336,12 +1336,12 @@ $ apt-get source -qq --print-uris shadow=1:4.16.0-7ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.debian.tar.xz' shadow_4.16.0-7ubuntu1.debian.tar.xz 184116 SHA512:ef799ce47e9d81a751e076297835776ecaeb6c8ffd2b6c6159bd55bbefdd1aade92e47539fc8813be83a6209051d31cb6ee89cd98ff5168dd001cc7227923f28
 ```
 
-### `dpkg` source package: `systemd=257.4-1ubuntu3`
+### `dpkg` source package: `systemd=257.4-1ubuntu3.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=257.4-1ubuntu3`
-- `libudev1:amd64=257.4-1ubuntu3`
+- `libsystemd0:amd64=257.4-1ubuntu3.1`
+- `libudev1:amd64=257.4-1ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1357,10 +1357,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=257.4-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.dsc' systemd_257.4-1ubuntu3.dsc 8313 SHA512:2d26b9a9fda10841cdb70ea98e3a470ec57474a770e91024f5d36c794a4566aa74e226c508a605ca1e4848bdc7e71e725cf4eb031120afe023c19cf7c05596cb
+$ apt-get source -qq --print-uris systemd=257.4-1ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.1.dsc' systemd_257.4-1ubuntu3.1.dsc 8321 SHA512:91a1d49ceb71bbd463f58a3e9a4aed1ff4a8af724b39cfa86831e6c75637e839d8a5e96cf0aebf14c4ae832faaa8cc52d047498462b7a0167708afffef0de5f1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4.orig.tar.gz' systemd_257.4.orig.tar.gz 16228313 SHA512:dfa0f6de38fa30daffabf6b02d6533ca4e7027188186d7e2e9648b99dad5c4afa30773138f18a34111e7bb2e6ddae8302284429b98b580e757dc67535846afbe
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.debian.tar.xz' systemd_257.4-1ubuntu3.debian.tar.xz 249932 SHA512:af785f5b0da0ff5115bab1c79a38f579160baedd3250abe24a2696b697f80adfbc42526c45427fdb855eae63450bc9baaef4ea5fccf95c98dccb2ef8a566503e
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.4-1ubuntu3.1.debian.tar.xz' systemd_257.4-1ubuntu3.1.debian.tar.xz 256656 SHA512:9917b3f0e923c3465794b460f24a3294829e61ddae1be98b6386204ce37d9f19077f412c32ac3a8dd4215545e13e75ae4e22c771614ad458bf00416102b3a7ec
 ```
 
 ### `dpkg` source package: `sysvinit=3.14-1ubuntu1`
