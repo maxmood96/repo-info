@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f53195aba187ba14d8c0bba40ba5690abfd76161ba390a80eaea4dc0e58b6b3`
+- Image ID: `sha256:215a74616648cc77d5680e8a6d586deae483d6eb8c3aba13f6d471035964436d`
 - Created: `2025-05-09T18:18:04Z`
 - Virtual Size: ~ 483.76 Mb  
   (total size of all layers on-disk)
@@ -1187,15 +1187,15 @@ $ dnf --quiet download --source --url libxcb-1.12-1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1b3f67b974e9f584cf8a25cd1dd9dd328b5cae7e300c6b1d4ab526ee61448e7/../../../../../blobstore/f247c6b583421db5b27b36aa2d19d8cc44685181e32fd319cc2f6aae8d998d88/libxcb-1.12-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.17.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.18.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.17
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1b3f67b974e9f584cf8a25cd1dd9dd328b5cae7e300c6b1d4ab526ee61448e7/../../../../../blobstore/c1db226f8e050a0a0690e3b5d185e7e261bd3312001a0f3f46576beaa811a1b5/libxml2-2.9.1-6.amzn2.5.17.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.18
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1b3f67b974e9f584cf8a25cd1dd9dd328b5cae7e300c6b1d4ab526ee61448e7/../../../../../blobstore/cb704efbcc3ac6418ad0f1de47afaed97dcc30e163dcd35a5ce27a72a3fe6901/libxml2-2.9.1-6.amzn2.5.18.src.rpm
 ```
 
 ### `rpm` package: `libxslt-1.1.28-6.amzn2.0.4.x86_64`
