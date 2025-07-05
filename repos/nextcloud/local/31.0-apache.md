@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73097c457cf98c500a88a449acf4ceb18d514a77a0199d32ecfd5e8bd721b1a5`
+- Image ID: `sha256:a31cd51691669c00ec05a957553d8c011951af6936b7446a7c939ecabfa1e409`
 - Created: `2025-06-13T00:39:02Z`
 - Virtual Size: ~ 1.42 Gb  
   (total size of all layers on-disk)
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.22`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.22.tar.xz.asc`
-  - `PHP_SHA256=66c86889059bd27ccf460590ca48fcaf3261349cc9bdba2023ac6a265beabf36`
+  - `PHP_VERSION=8.3.23`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc`
+  - `PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
