@@ -2942,11 +2942,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.40.1-3
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1-3.dsc' perl_5.40.1-3.dsc 2372 SHA256:97f69bf3cf3a4318a2a2a54cff072e3e870ed5426e7c578831791b63221f40b8
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1-3.debian.tar.xz' perl_5.40.1-3.debian.tar.xz 167844 SHA256:6144b016c000ebdf5643b41b2fb579a5845e17461d187983f82e7d26b637f146
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-3.dsc' perl_5.40.1-3.dsc 2372 SHA256:97f69bf3cf3a4318a2a2a54cff072e3e870ed5426e7c578831791b63221f40b8
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-3.debian.tar.xz' perl_5.40.1-3.debian.tar.xz 167844 SHA256:6144b016c000ebdf5643b41b2fb579a5845e17461d187983f82e7d26b637f146
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/perl/5.40.1-3/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.44.0-3`
 
@@ -3413,20 +3419,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.6-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6-1.dsc' systemd_257.6-1.dsc 8614 SHA256:6edd1e36ac1c7759796182701b83f45a9e96c86a708d153ca64a83b82e4383f3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6.orig.tar.gz' systemd_257.6.orig.tar.gz 16321562 SHA256:1ac656c61e595cc6e653883d554caadd2053f323d9065c0daff69f83368b120c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.6-1.debian.tar.xz' systemd_257.6-1.debian.tar.xz 182228 SHA256:e93575db3db98d4f0612798560a1f334ebcaf3033212635dd9d5ee4a11bc1455
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.6-1/
 
-- https://sources.debian.net/src/systemd/257.6-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
@@ -3569,21 +3568,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-3.dsc' tzdata_2025b-3.dsc 2434 SHA256:2b3a207d8eef325bb92503866ab8de4bf132798bf1871e0fa3a09ceffbb66a40
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-3.debian.tar.xz' tzdata_2025b-3.debian.tar.xz 126968 SHA256:f74bb46d68823bbe8ca8ec004f1effe0b5dfcb47d405a51804a62cd8dcef2623
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-3/
 
-- https://sources.debian.net/src/tzdata/2025b-3/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
