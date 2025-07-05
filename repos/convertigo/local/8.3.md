@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8de34f0f29ac08101b58ba9808eabe507fb9b9f3f5dc927a8a3613a2bc0bce57`
+- Image ID: `sha256:85cd11353b01e8262332bc018bac024f19d4fe306d6c5473bc221da4bfa703fa`
 - Created: `2025-06-10T14:38:21Z`
-- Virtual Size: ~ 617.79 Mb  
+- Virtual Size: ~ 617.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -1537,22 +1537,27 @@ $ apt-get source -qq --print-uris p11-kit=0.24.0-6build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.0-6build1.debian.tar.xz' p11-kit_0.24.0-6build1.debian.tar.xz 23264 SHA512:a858251688a0655411907d5ac2d122efab057c7bc28dcb3970c68412ca699b00234b74373cbd44472e21cd3f43eab239ddd8411f188e4c214c587052bebedd4c
 ```
 
-### `dpkg` source package: `pam=1.4.0-11ubuntu2.5`
+### `dpkg` source package: `pam=1.4.0-11ubuntu2.6`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-11ubuntu2.5`
-- `libpam-modules-bin=1.4.0-11ubuntu2.5`
-- `libpam-runtime=1.4.0-11ubuntu2.5`
-- `libpam0g:amd64=1.4.0-11ubuntu2.5`
+- `libpam-modules:amd64=1.4.0-11ubuntu2.6`
+- `libpam-modules-bin=1.4.0-11ubuntu2.6`
+- `libpam-runtime=1.4.0-11ubuntu2.6`
+- `libpam0g:amd64=1.4.0-11ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.dsc' pam_1.4.0-11ubuntu2.6.dsc 2728 SHA512:18bfb2e4093ba1ef97a0ab9206a273c7180a607f3709567e72e5968b8d20999960869d6bbf806413066a1ba6c0dd64717015c5c20e83fb7cad31171b0e1a766e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.debian.tar.xz' pam_1.4.0-11ubuntu2.6.debian.tar.xz 187648 SHA512:5e2fe17f27a9fcc30940738efc3d8e0dc72bf2d8c9ab5bf8ecd508151ff00eb29e133d21980fe6c0acf24e201fc84af88b9134017747883c40ec78cdc7e306ae
+```
 
 ### `dpkg` source package: `pcre2=10.39-3ubuntu0.1`
 
@@ -1812,11 +1817,11 @@ $ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz 32512 SHA512:2b7c13cdf556fc0f320c1c37ab7d4f9c1b528dc2fc11223d72c0fcc5a50a5fbb3f8e6432236b42b308886a26d248edb5f498249527513247d39cf2705fc2b4aa
 ```
 
-### `dpkg` source package: `sudo=1.9.9-1ubuntu2.4`
+### `dpkg` source package: `sudo=1.9.9-1ubuntu2.5`
 
 Binary Packages:
 
-- `sudo=1.9.9-1ubuntu2.4`
+- `sudo=1.9.9-1ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 
@@ -1826,16 +1831,22 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `Zlib`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.9.9-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9-1ubuntu2.5.dsc' sudo_1.9.9-1ubuntu2.5.dsc 2595 SHA512:64787bbfcc84e1e55af433876323ad1af9e19a1847d251def272ff7d5990b7aa98291b240e32becc99a7e1bfa94540c274f114ea6c0eace08cbf28b6bc67e632
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9.orig.tar.gz' sudo_1.9.9.orig.tar.gz 4456969 SHA512:53064240431ae3d9409dc5cb7d72ab55d9ab5f802af4de99fadd987855461b3cca53f261d6256e3b6f35e30c7e162f4dfa3978ef6976415cf5be874fb2026614
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9.orig.tar.gz.asc' sudo_1.9.9.orig.tar.gz.asc 833 SHA512:b73866881351b10e8feca9db238c38330a0d91d53ca33c61c3ed6623e771daf088095332452f99ac2d13126cfc9bab63f0ff1d948b5ae881a194a70c3b0c4e18
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9-1ubuntu2.5.debian.tar.xz' sudo_1.9.9-1ubuntu2.5.debian.tar.xz 52524 SHA512:1bdbbe559c7aa8652cd64c8ae4c8c62cd63472a5a145289e4105ae4c82d56c8959fee6be8ac50affe6f881a71ab4c00c9721c2e4ebf48cf1e18b352ebbb79194
+```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.15`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.16`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.15`
-- `libudev1:amd64=249.11-0ubuntu3.15`
+- `libsystemd0:amd64=249.11-0ubuntu3.16`
+- `libudev1:amd64=249.11-0ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1848,9 +1859,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.dsc' systemd_249.11-0ubuntu3.16.dsc 5907 SHA512:1faddef1d1b9d3c90dc2828af76bc4cf315aca5d193975e467854323bb279f4260acf52a228d91f6537ffdfdbb62d2849cad95d87cbb37a3d5f389e5a48d9c57
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.debian.tar.xz' systemd_249.11-0ubuntu3.16.debian.tar.xz 258928 SHA512:ed86a0da87cd7e5981d65eb93e9fc07fdbb167c585b66aed3e20dcd857ef18cd067447636ddf377ba5b80d39db9703a7d1c86461e8e73a6623f8938bca864293
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
