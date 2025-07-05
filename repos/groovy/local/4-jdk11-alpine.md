@@ -1,10 +1,10 @@
-# `groovy:4.0.27-jdk21-alpine`
+# `groovy:4.0.27-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:346f0a162b595c41d35fc55590b126c8f5c8b2a513ed5a4730861147a7409c93`
+- Image ID: `sha256:145ac5b14d70e751f7d9de35f2c72c933cd3a7fdea1190fa8f948fa02a0fd73d`
 - Created: `2025-07-01T21:05:12Z`
-- Virtual Size: ~ 394.28 Mb  
+- Virtual Size: ~ 339.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.7+6`
+  - `JAVA_VERSION=jdk-11.0.27+6`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=4.0.27`
 
@@ -120,23 +120,6 @@ apk-tools-2.14.6-r3 installed size:
 
 apk-tools-2.14.6-r3 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `binutils`
-
-```console
-binutils-2.43.1-r2 description:
-Tools necessary to build programs
-
-binutils-2.43.1-r2 webpage:
-https://www.gnu.org/software/binutils/
-
-binutils-2.43.1-r2 installed size:
-9 MiB
-
-binutils-2.43.1-r2 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
 
@@ -599,23 +582,6 @@ GPL-3.0-or-later
 
 ```
 
-### `apk` package: `jansson`
-
-```console
-jansson-2.14-r4 description:
-lightweight JSON library
-
-jansson-2.14-r4 webpage:
-http://www.digip.org/jansson/
-
-jansson-2.14-r4 installed size:
-49 KiB
-
-jansson-2.14-r4 license:
-MIT
-
-```
-
 ### `apk` package: `libassuan`
 
 ```console
@@ -732,23 +698,6 @@ libfontenc-1.1.8-r0 installed size:
 
 libfontenc-1.1.8-r0 license:
 MIT
-
-```
-
-### `apk` package: `libgcc`
-
-```console
-libgcc-14.2.0-r4 description:
-GNU C compiler runtime libraries
-
-libgcc-14.2.0-r4 webpage:
-https://gcc.gnu.org
-
-libgcc-14.2.0-r4 installed size:
-169 KiB
-
-libgcc-14.2.0-r4 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -919,23 +868,6 @@ libssl3-3.3.3-r0 installed size:
 
 libssl3-3.3.3-r0 license:
 Apache-2.0
-
-```
-
-### `apk` package: `libstdc++`
-
-```console
-libstdc++-14.2.0-r4 description:
-GNU C++ standard runtime library
-
-libstdc++-14.2.0-r4 webpage:
-https://gcc.gnu.org
-
-libstdc++-14.2.0-r4 installed size:
-2706 KiB
-
-libstdc++-14.2.0-r4 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -1293,22 +1225,5 @@ zlib-1.3.1-r2 installed size:
 
 zlib-1.3.1-r2 license:
 Zlib
-
-```
-
-### `apk` package: `zstd-libs`
-
-```console
-zstd-libs-1.5.6-r2 description:
-Zstandard - Fast real-time compression algorithm (libraries)
-
-zstd-libs-1.5.6-r2 webpage:
-https://facebook.github.io/zstd/
-
-zstd-libs-1.5.6-r2 installed size:
-697 KiB
-
-zstd-libs-1.5.6-r2 license:
-BSD-3-Clause OR GPL-2.0-or-later
 
 ```
