@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:37beb69f492dcd177f0ddf32b8bc72411a4fc071a24c43f17457acac2d96f00b`
+- Image ID: `sha256:1f60285b8ba643b9143e8bceab65fea4826fa9482a50a5392a660427ee85df80`
 - Created: `2025-05-27T15:48:12Z`
 - Virtual Size: ~ 1.27 Gb  
   (total size of all layers on-disk)
@@ -2144,19 +2144,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-141.151`
+### `dpkg` source package: `linux=5.15.0-143.153`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-141.151`
+- `linux-libc-dev:amd64=5.15.0-143.153`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-143.153
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-143.153.dsc' linux_5.15.0-143.153.dsc 7820 SHA512:d1b71d8527e13f109af292ff8a2d80ca6b50d238a21420e23f786c7a1d906eb78ce259266333fb90bea22ee0854a642c6d82a3fae170447640a467646e060141
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-143.153.diff.gz' linux_5.15.0-143.153.diff.gz 11709695 SHA512:9a46b6331aafe15e796700e331da9d63a4b1c62c0a839385ed02da65e5fa52a05a9c19b0c898f64c4c80fca8359946b8e9a24331466ec97da55c5bbd143c5312
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
 
@@ -2675,22 +2680,27 @@ $ apt-get source -qq --print-uris p11-kit=0.24.0-6build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.0-6build1.debian.tar.xz' p11-kit_0.24.0-6build1.debian.tar.xz 23264 SHA512:a858251688a0655411907d5ac2d122efab057c7bc28dcb3970c68412ca699b00234b74373cbd44472e21cd3f43eab239ddd8411f188e4c214c587052bebedd4c
 ```
 
-### `dpkg` source package: `pam=1.4.0-11ubuntu2.5`
+### `dpkg` source package: `pam=1.4.0-11ubuntu2.6`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-11ubuntu2.5`
-- `libpam-modules-bin=1.4.0-11ubuntu2.5`
-- `libpam-runtime=1.4.0-11ubuntu2.5`
-- `libpam0g:amd64=1.4.0-11ubuntu2.5`
+- `libpam-modules:amd64=1.4.0-11ubuntu2.6`
+- `libpam-modules-bin=1.4.0-11ubuntu2.6`
+- `libpam-runtime=1.4.0-11ubuntu2.6`
+- `libpam0g:amd64=1.4.0-11ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.dsc' pam_1.4.0-11ubuntu2.6.dsc 2728 SHA512:18bfb2e4093ba1ef97a0ab9206a273c7180a607f3709567e72e5968b8d20999960869d6bbf806413066a1ba6c0dd64717015c5c20e83fb7cad31171b0e1a766e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.debian.tar.xz' pam_1.4.0-11ubuntu2.6.debian.tar.xz 187648 SHA512:5e2fe17f27a9fcc30940738efc3d8e0dc72bf2d8c9ab5bf8ecd508151ff00eb29e133d21980fe6c0acf24e201fc84af88b9134017747883c40ec78cdc7e306ae
+```
 
 ### `dpkg` source package: `patch=2.7.6-7build2`
 
@@ -2847,11 +2857,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `python-pip=22.0.2+dfsg-1ubuntu0.5`
+### `dpkg` source package: `python-pip=22.0.2+dfsg-1ubuntu0.6`
 
 Binary Packages:
 
-- `python3-pip=22.0.2+dfsg-1ubuntu0.5`
+- `python3-pip=22.0.2+dfsg-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/python3-pip/copyright`)
 
@@ -2913,17 +2923,17 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.9`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.10`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.9`
-- `libpython3.10-dev:amd64=3.10.12-1~22.04.9`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.9`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.9`
-- `python3.10=3.10.12-1~22.04.9`
-- `python3.10-dev=3.10.12-1~22.04.9`
-- `python3.10-minimal=3.10.12-1~22.04.9`
+- `libpython3.10:amd64=3.10.12-1~22.04.10`
+- `libpython3.10-dev:amd64=3.10.12-1~22.04.10`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.10`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.10`
+- `python3.10=3.10.12-1~22.04.10`
+- `python3.10-dev=3.10.12-1~22.04.10`
+- `python3.10-minimal=3.10.12-1~22.04.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-dev/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-dev/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2945,9 +2955,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.dsc' python3.10_3.10.12-1~22.04.10.dsc 3678 SHA512:acd9ae7832465e8cba6dda28c7030db90be64f53cdf28f568d97a5fe9676a60051d5ad3f0e931d513d016c2ea694158478ab27787e578d36aa3eddaad0d59c6a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.debian.tar.xz' python3.10_3.10.12-1~22.04.10.debian.tar.xz 252516 SHA512:1934075f6934e76289ce0db7203239fcec37f4f7fcb63fe3390b45ce47b893a6ef26c1cc53f16a3f14942aec7cb093a42f9204e518c24bbeddf31103a58697a7
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -3148,12 +3163,12 @@ $ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz 32512 SHA512:2b7c13cdf556fc0f320c1c37ab7d4f9c1b528dc2fc11223d72c0fcc5a50a5fbb3f8e6432236b42b308886a26d248edb5f498249527513247d39cf2705fc2b4aa
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.15`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.16`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.15`
-- `libudev1:amd64=249.11-0ubuntu3.15`
+- `libsystemd0:amd64=249.11-0ubuntu3.16`
+- `libudev1:amd64=249.11-0ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3166,9 +3181,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.dsc' systemd_249.11-0ubuntu3.16.dsc 5907 SHA512:1faddef1d1b9d3c90dc2828af76bc4cf315aca5d193975e467854323bb279f4260acf52a228d91f6537ffdfdbb62d2849cad95d87cbb37a3d5f389e5a48d9c57
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.debian.tar.xz' systemd_249.11-0ubuntu3.16.debian.tar.xz 258928 SHA512:ed86a0da87cd7e5981d65eb93e9fc07fdbb167c585b66aed3e20dcd857ef18cd067447636ddf377ba5b80d39db9703a7d1c86461e8e73a6623f8938bca864293
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
