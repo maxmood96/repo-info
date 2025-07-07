@@ -1,16 +1,16 @@
-# `docker:28.3.0-dind-rootless`
+# `docker:28.3.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f9193f50223ddaaf134b9d5c7926d086ed6f71f6aa3987c08519217ffa0e4e3`
-- Created: `2025-07-01T11:30:04Z`
-- Virtual Size: ~ 459.65 Mb  
+- Image ID: `sha256:c21511f843dd54e89f5b101840d8b53c72e1c5ddcd62a5f854485baaa6600fa9`
+- Created: `2025-07-03T05:04:15Z`
+- Virtual Size: ~ 465.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=28.3.0`
+  - `DOCKER_VERSION=28.3.1`
   - `DOCKER_BUILDX_VERSION=0.25.0`
   - `DOCKER_COMPOSE_VERSION=2.38.1`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -667,16 +667,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -990,16 +990,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1262,16 +1262,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.0-r0 description:
+openssl-3.5.1-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.0-r0 webpage:
+openssl-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.0-r0 installed size:
+openssl-3.5.1-r0 installed size:
 801 KiB
 
-openssl-3.5.0-r0 license:
+openssl-3.5.1-r0 license:
 Apache-2.0
 
 ```

@@ -1,16 +1,16 @@
-# `docker:28.3.0-dind`
+# `docker:28.3.1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a85ae21280c634d50bdf0e58405ffedfdb13fe763a3c3a6facc6e1aeacc11f9a`
-- Created: `2025-06-25T05:04:15Z`
-- Virtual Size: ~ 406.83 Mb  
+- Image ID: `sha256:ee56629b96a64d6e6a67bb353c4659a5b6bcbe3d1b5d839623c78e3fbfb5d5d8`
+- Created: `2025-07-03T05:04:15Z`
+- Virtual Size: ~ 413.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=28.3.0`
+  - `DOCKER_VERSION=28.3.1`
   - `DOCKER_BUILDX_VERSION=0.25.0`
   - `DOCKER_COMPOSE_VERSION=2.38.1`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -497,16 +497,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -735,16 +735,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1007,16 +1007,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.0-r0 description:
+openssl-3.5.1-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.0-r0 webpage:
+openssl-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.0-r0 installed size:
+openssl-3.5.1-r0 installed size:
 801 KiB
 
-openssl-3.5.0-r0 license:
+openssl-3.5.1-r0 license:
 Apache-2.0
 
 ```
