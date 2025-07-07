@@ -1834,12 +1834,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url python3-setuptools-wheel-53.0.0-13.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-setuptools-53.0.0-13.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
 
