@@ -12,7 +12,11 @@
 -	[`percona:ps-8.0`](#perconaps-80)
 -	[`percona:ps-8.0.42-33`](#perconaps-8042-33)
 -	[`percona:psmdb-6.0`](#perconapsmdb-60)
--	[`percona:psmdb-6.0.21`](#perconapsmdb-6021)
+-	[`percona:psmdb-6.0.24`](#perconapsmdb-6024)
+-	[`percona:psmdb-7.0`](#perconapsmdb-70)
+-	[`percona:psmdb-7.0.18`](#perconapsmdb-7018)
+-	[`percona:psmdb-8.0`](#perconapsmdb-80)
+-	[`percona:psmdb-8.0.8`](#perconapsmdb-808)
 
 ## `percona:8`
 
@@ -1660,10 +1664,14 @@ $ docker pull percona@sha256:bfc433096d9e60fb90254e2bc224bf82c968569ccd1f765faa4
 		Size: 33.2 KB (33241 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `percona:psmdb-6.0.21`
+## `percona:psmdb-6.0.24`
+
+**does not exist** (yet?)
+
+## `percona:psmdb-7.0`
 
 ```console
-$ docker pull percona@sha256:7af22227abceabf785ffef7709138aaa6de040c944e5a9817fd8151de66b70fb
+$ docker pull percona@sha256:e9e89d299f2ce383c70277a4847b76c465fe5643487e75f09ed834452a002fd0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1671,16 +1679,16 @@ $ docker pull percona@sha256:7af22227abceabf785ffef7709138aaa6de040c944e5a9817fd
 	-	linux; amd64
 	-	unknown; unknown
 
-### `percona:psmdb-6.0.21` - linux; amd64
+### `percona:psmdb-7.0` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:766ff036661ec878c87335cabdc7bd7d62c6e4de49d07e9bd763e32e686457c0
+$ docker pull percona@sha256:24011b689fa2ee4a21579af292956e097aff0ec26a17ec5b38c8f82c196ec77e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.0 MB (254039353 bytes)**  
+-	Total Size: **261.0 MB (261045852 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1cb2e601f575e0b16994ca3d24a92af9cd705353b7638ca5b8ed4e50f35408e`
+-	Image ID: `sha256:e51144923bb8a934d3a5b9b9e4849f98f304c2136f605ebe34988f2e8d20539a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -1710,25 +1718,25 @@ LABEL io.openshift.tags="minimal rhel9"
 # Tue, 22 Apr 2025 10:21:47 GMT
 ENV container oci
 # Tue, 22 Apr 2025 10:21:47 GMT
-COPY dir:dca6230157d1db8824aac8b8e02a58f86449d038270aad6f0997ce65db8f8656 in /    
+COPY dir:9782e2e1b0ca599e0a33d178720d08213ae97157f753b7e5bae27ac0755f7280 in / 
 # Tue, 22 Apr 2025 10:21:47 GMT
-COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
+COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
 # Tue, 22 Apr 2025 10:21:47 GMT
 CMD ["/bin/bash"]
 # Tue, 22 Apr 2025 10:21:47 GMT
-COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
+COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
 # Tue, 22 Apr 2025 10:21:47 GMT
-LABEL "build-date"="2025-06-30T12:32:07" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f6591f6fb99f567a57f1c8ac4572758f722a244a" "release"="1751286687"
+LABEL "build-date"="2025-05-14T10:35:47" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f2f252e0ac953b9e80eaebfc08ec086edac81945" "release"="1747218906"
 # Tue, 22 Apr 2025 10:21:47 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
 # Tue, 22 Apr 2025 10:21:47 GMT
-RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 4D1BB29D63D98E422B2113B19334A25F8507EFA5 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 3E6D826D3FBAB389C2F38E34BC4D06A08D8B756F;     gpg --batch --export --armor 4D1BB29D63D98E422B2113B19334A25F8507EFA5 > ${GNUPGHOME}/PERCONA-PACKAGING-KEY;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-9;     gpg --batch --export --armor 3E6D826D3FBAB389C2F38E34BC4D06A08D8B756F > ${GNUPGHOME}/RPM-GPG-KEY-oracle;     rpmkeys --import ${GNUPGHOME}/PERCONA-PACKAGING-KEY ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-9 ${GNUPGHOME}/RPM-GPG-KEY-oracle;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     microdnf install -y findutils;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY # buildkit
+RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 4D1BB29D63D98E422B2113B19334A25F8507EFA5 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 4D1BB29D63D98E422B2113B19334A25F8507EFA5 > ${GNUPGHOME}/PERCONA-PACKAGING-KEY;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-9;     rpmkeys --import ${GNUPGHOME}/PERCONA-PACKAGING-KEY ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-9;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     microdnf install -y findutils;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY # buildkit
 # Tue, 22 Apr 2025 10:21:47 GMT
-ENV PSMDB_VERSION=6.0.21-18
+ENV PSMDB_VERSION=7.0.16-10
 # Tue, 22 Apr 2025 10:21:47 GMT
 ENV OS_VER=el9
 # Tue, 22 Apr 2025 10:21:47 GMT
-ENV FULL_PERCONA_VERSION=6.0.21-18.el9
+ENV FULL_PERCONA_VERSION=7.0.16-10.el9
 # Tue, 22 Apr 2025 10:21:47 GMT
 ENV K8S_TOOLS_VERSION=0.5.0
 # Tue, 22 Apr 2025 10:21:47 GMT
@@ -1741,7 +1749,7 @@ ENV CALL_HOME_VERSION=0.1
 ARG PERCONA_TELEMETRY_DISABLE=1
 # Tue, 22 Apr 2025 10:21:47 GMT
 # ARGS: PERCONA_TELEMETRY_DISABLE=1
-RUN set -ex;     percona-release enable psmdb-60 ${PSMDB_REPO};     microdnf -y update libgcrypt;     microdnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         percona-mongodb-mongosh         numactl-libs         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-60/yum/${PSMDB_REPO}/9/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     curl -Lf -o /tmp/numactl.rpm https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackage/numactl-2.0.16-1.el9.x86_64.rpm;     rpmkeys --checksig /tmp/numactl.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rpm -i /tmp/numactl.rpm;     rm -rf /tmp/numactl.rpm /tmp/Percona-Server-MongoDB-server.rpm;     microdnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db # buildkit
+RUN set -ex;     percona-release enable psmdb-70 ${PSMDB_REPO};     microdnf -y update libgcrypt;     microdnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         percona-mongodb-mongosh         numactl-libs         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-70/yum/${PSMDB_REPO}/9/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     curl -O https://download.rockylinux.org/pub/rocky/RPM-GPG-KEY-Rocky-9;     rpm --import RPM-GPG-KEY-Rocky-9;     curl -Lf -o /tmp/numactl.rpm https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Packages/n/numactl-2.0.18-2.${OS_VER}.x86_64.rpm;     rpmkeys --checksig /tmp/numactl.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rpm -i /tmp/numactl.rpm;     rm -rf /tmp/numactl.rpm /tmp/Percona-Server-MongoDB-server.rpm;     microdnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db # buildkit
 # Tue, 22 Apr 2025 10:21:47 GMT
 # ARGS: PERCONA_TELEMETRY_DISABLE=1
 RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo # buildkit
@@ -1778,63 +1786,252 @@ CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:1ec5864c36114bbcd01f21fd199950f3730f43e1c94cc7b37c7bbf8bd446148d`  
-		Last Modified: Mon, 30 Jun 2025 13:22:01 GMT  
-		Size: 39.7 MB (39650824 bytes)  
+	-	`sha256:a080cada37e9f7003fcfc13eb6b0d19a9d6c4bfa9b3a9cb9ef46b184cfa60e43`  
+		Last Modified: Thu, 15 May 2025 19:24:28 GMT  
+		Size: 39.6 MB (39645097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:519acb5a08231668bb8175e85709764d835a69aa2285b7adeb544690b2610b16`  
-		Last Modified: Wed, 02 Jul 2025 18:45:10 GMT  
-		Size: 8.5 MB (8476027 bytes)  
+	-	`sha256:f94da69da44f38163581b1723402f2aae99f46cba2827ce4a78d3fbfcba42d34`  
+		Last Modified: Fri, 16 May 2025 19:16:34 GMT  
+		Size: 8.5 MB (8477903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d415f1d92ec2a451f97dd0ab59cfa3683b8727ac0ddd65839e1a43dc8961d9e9`  
-		Last Modified: Wed, 02 Jul 2025 20:10:47 GMT  
-		Size: 205.0 MB (204959681 bytes)  
+	-	`sha256:c2cfee4a9561a029fe2492ecd55d68c434058c58ec499ba5d09fc0367c1260c5`  
+		Last Modified: Sat, 17 May 2025 07:38:09 GMT  
+		Size: 212.0 MB (211970025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b0532507a2617177b2323fb9de91cae85ead7a8fd69f020777c31dc762bc601`  
-		Last Modified: Wed, 02 Jul 2025 18:45:07 GMT  
-		Size: 1.7 KB (1666 bytes)  
+	-	`sha256:0d7d0d1dcb41538363667e7426ce1eda0a768d6d88f401afb26b20dfdd606a0d`  
+		Last Modified: Fri, 16 May 2025 19:20:25 GMT  
+		Size: 1.7 KB (1671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:266f623e0fbc0b3c109715412a65b9ce6498feaa1c599f52c2097216aceb3999`  
-		Last Modified: Wed, 02 Jul 2025 18:45:07 GMT  
-		Size: 4.1 KB (4074 bytes)  
+	-	`sha256:1ddc25ade0ee4fef7ee2a64c99b6e02c2827296fa0e034e4008595790c5e8278`  
+		Last Modified: Fri, 16 May 2025 19:19:24 GMT  
+		Size: 4.1 KB (4073 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31ca71d147767aae845c216a7c53ff9e1cb45abb8f00b0706633ed9c68cc5aa2`  
-		Last Modified: Wed, 02 Jul 2025 18:45:07 GMT  
-		Size: 10.6 KB (10576 bytes)  
+	-	`sha256:49ad5fa8511211562d3c129413df0e30446ddce59a60a35a5e9bf27d300f8dcf`  
+		Last Modified: Fri, 16 May 2025 19:24:16 GMT  
+		Size: 10.6 KB (10577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec63a895670800ae859ef761585e8e946982d6fe3c5447ab1fb26e0c94b2908d`  
-		Last Modified: Wed, 02 Jul 2025 18:45:09 GMT  
-		Size: 914.5 KB (914516 bytes)  
+	-	`sha256:a0d5788b05f8e49a45eb1dc43f1e1743dda13467ddcc7af317a19c70cfa4f4f4`  
+		Last Modified: Sat, 17 May 2025 07:38:04 GMT  
+		Size: 914.5 KB (914515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79d64723267e2a4cba1d3afa76b9241d65a657301ecc8594a21902defad81ab9`  
-		Last Modified: Wed, 02 Jul 2025 18:45:08 GMT  
+	-	`sha256:9fb842c05682ae200455927734e2e335820663701b9ac4672dcfa34a19689151`  
+		Last Modified: Fri, 16 May 2025 19:26:07 GMT  
 		Size: 13.2 KB (13204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:096097c37731040133c5a8886899ce2403c93726b865212bb4adc6d8182cbb93`  
-		Last Modified: Wed, 02 Jul 2025 18:45:09 GMT  
+	-	`sha256:9fc7932ea5adf18155dcd22ede091e66cdbd55f097e87762352ebcf90355e3d4`  
+		Last Modified: Fri, 16 May 2025 19:29:34 GMT  
 		Size: 4.0 KB (3958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87057e0b6e390378a567f753f6e45f58b6a8fd5aaeebbf4bcd76f27135c597ef`  
-		Last Modified: Wed, 02 Jul 2025 18:45:09 GMT  
-		Size: 4.8 KB (4827 bytes)  
+	-	`sha256:b8cca5176cd784e783af1909761a0f3d83b97379abb7ec21c8c5604931dce9fb`  
+		Last Modified: Fri, 16 May 2025 19:20:49 GMT  
+		Size: 4.8 KB (4829 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `percona:psmdb-6.0.21` - unknown; unknown
+### `percona:psmdb-7.0` - unknown; unknown
 
 ```console
-$ docker pull percona@sha256:bfc433096d9e60fb90254e2bc224bf82c968569ccd1f765faa4f5cc13d80f011
+$ docker pull percona@sha256:163935426bc2f2864d4c7e6333b98029d731f3347bf8a913f2342fbcadf4c81d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 KB (33241 bytes)**  
+-	Total Size: **33.1 KB (33105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a3d36d77dad66963633b8bb67278abf3b95194b07f5ab6678f4ac4bc66c1c1a`
+-	Image ID: `sha256:283d1881dab82491028019356d54bc30976be77159515ea1b0b86c3a81eaeb65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9026c27858dabf524fd7990af76eb229ed3bf0e361854d0c708efbb7d5a9b65`  
-		Last Modified: Wed, 02 Jul 2025 20:10:28 GMT  
-		Size: 33.2 KB (33241 bytes)  
+	-	`sha256:eba9de8e040193d58717d3b3b09b80fb15f34e36bac075655d7f7274d6840444`  
+		Last Modified: Sun, 15 Jun 2025 11:36:41 GMT  
+		Size: 33.1 KB (33105 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `percona:psmdb-7.0.18`
+
+**does not exist** (yet?)
+
+## `percona:psmdb-8.0`
+
+```console
+$ docker pull percona@sha256:2b0f6393c73dc92175365e411d31d38c7b4bcca992ea87f059a8d3f2049cf5bc
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `percona:psmdb-8.0` - linux; amd64
+
+```console
+$ docker pull percona@sha256:1dff70fa617ad5546cbea3e68f71c620047c5e97d47e2a950bda38287d2ca75f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **278.0 MB (277969918 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2ad922c7f38eb1cd68929eaf24f26261a83a5cb715143720e11cd055d5b829ca`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["mongod"]`
+
+```dockerfile
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL maintainer="Red Hat, Inc."
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL vendor="Red Hat, Inc."
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL url="https://www.redhat.com"
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL io.openshift.expose-services=""
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV container oci
+# Tue, 22 Apr 2025 10:21:47 GMT
+COPY dir:9782e2e1b0ca599e0a33d178720d08213ae97157f753b7e5bae27ac0755f7280 in / 
+# Tue, 22 Apr 2025 10:21:47 GMT
+COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
+# Tue, 22 Apr 2025 10:21:47 GMT
+CMD ["/bin/bash"]
+# Tue, 22 Apr 2025 10:21:47 GMT
+COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL "build-date"="2025-05-14T10:35:47" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f2f252e0ac953b9e80eaebfc08ec086edac81945" "release"="1747218906"
+# Tue, 22 Apr 2025 10:21:47 GMT
+LABEL org.opencontainers.image.authors=info@percona.com
+# Tue, 22 Apr 2025 10:21:47 GMT
+RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 4D1BB29D63D98E422B2113B19334A25F8507EFA5 99DB70FAE1D7CE227FB6488205B555B38483C65D 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1;     gpg --batch --export --armor 4D1BB29D63D98E422B2113B19334A25F8507EFA5 > ${GNUPGHOME}/PERCONA-PACKAGING-KEY;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     gpg --batch --export --armor 94E279EB8D8F25B21810ADF121EA45AB2F86D6A1 > ${GNUPGHOME}/RPM-GPG-KEY-EPEL-9;     rpmkeys --import ${GNUPGHOME}/PERCONA-PACKAGING-KEY ${GNUPGHOME}/RPM-GPG-KEY-centosofficial ${GNUPGHOME}/RPM-GPG-KEY-EPEL-9;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     microdnf install -y findutils;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV PSMDB_VERSION=8.0.4-2
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV OS_VER=el9
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV FULL_PERCONA_VERSION=8.0.4-2.el9
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV K8S_TOOLS_VERSION=0.5.0
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV PSMDB_REPO=testing
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV CALL_HOME_VERSION=0.1
+# Tue, 22 Apr 2025 10:21:47 GMT
+ARG PERCONA_TELEMETRY_DISABLE=1
+# Tue, 22 Apr 2025 10:21:47 GMT
+# ARGS: PERCONA_TELEMETRY_DISABLE=1
+RUN set -ex;     percona-release enable psmdb-80 ${PSMDB_REPO};     microdnf -y update libgcrypt;     microdnf -y install         percona-server-mongodb-mongos-${FULL_PERCONA_VERSION}         percona-server-mongodb-tools-${FULL_PERCONA_VERSION}         percona-mongodb-mongosh         numactl-libs         procps-ng         jq         tar         oniguruma         cyrus-sasl-gssapi         policycoreutils;             curl -O https://download.rockylinux.org/pub/rocky/RPM-GPG-KEY-Rocky-9;     rpm --import RPM-GPG-KEY-Rocky-9;     curl -Lf -o /tmp/Percona-Server-MongoDB-server.rpm http://repo.percona.com/psmdb-80/yum/${PSMDB_REPO}/9/RPMS/x86_64/percona-server-mongodb-server-${FULL_PERCONA_VERSION}.x86_64.rpm;     curl -Lf -o /tmp/numactl.rpm https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Packages/n/numactl-2.0.18-2.${OS_VER}.x86_64.rpm;     rpmkeys --checksig /tmp/numactl.rpm;     rpmkeys --checksig /tmp/Percona-Server-MongoDB-server.rpm;     rpm -iv /tmp/Percona-Server-MongoDB-server.rpm --nodeps;     rpm -i /tmp/numactl.rpm;     rm -rf /tmp/numactl.rpm /tmp/Percona-Server-MongoDB-server.rpm;     microdnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /data/db && mkdir -p /data/db;     chown -R 1001:0 /data/db # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+# ARGS: PERCONA_TELEMETRY_DISABLE=1
+RUN useradd -u 1001 -r -g 0 -m -s /sbin/nologin             -c "Default Application User" mongodb;     chmod g+rwx /var/log/mongo;     chown :0 /var/log/mongo # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+COPY LICENSE /licenses/LICENSE.Dockerfile # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+# ARGS: PERCONA_TELEMETRY_DISABLE=1
+RUN cp /usr/share/doc/percona-server-mongodb-server/LICENSE-Community.txt /licenses/LICENSE.Percona-Server-for-MongoDB # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV GOSU_VERSION=1.11
+# Tue, 22 Apr 2025 10:21:47 GMT
+# ARGS: PERCONA_TELEMETRY_DISABLE=1
+RUN set -eux;     curl -Lf -o /usr/bin/gosu https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64;     curl -Lf -o /usr/bin/gosu.asc https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc;         export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify /usr/bin/gosu.asc /usr/bin/gosu;     rm -rf "$GNUPGHOME" /usr/bin/gosu.asc;         chmod +x /usr/bin/gosu;     curl -f -o /licenses/LICENSE.gosu https://raw.githubusercontent.com/tianon/gosu/${GOSU_VERSION}/LICENSE # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+VOLUME [/data/db]
+# Tue, 22 Apr 2025 10:21:47 GMT
+# ARGS: PERCONA_TELEMETRY_DISABLE=1
+RUN set -ex;     curl -fSL https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js -o /js-yaml.js;     echo "45dc3dd03dc07a06705a2c2989b8c7f709013f04bd5386e3279d4e447f07ebd7  /js-yaml.js" | sha256sum -c - # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+# ARGS: PERCONA_TELEMETRY_DISABLE=1
+RUN set -eux;     curl -fL "https://github.com/percona/telemetry-agent/archive/refs/tags/phase-$CALL_HOME_VERSION.tar.gz" -o "phase-$CALL_HOME_VERSION.tar.gz";     echo "$CALL_HOME_DOWNLOAD_SHA256 phase-$CALL_HOME_VERSION.tar.gz" | sha256sum --strict --check;     tar -xvf phase-$CALL_HOME_VERSION.tar.gz;     cp telemetry-agent-phase-$CALL_HOME_VERSION/call-home.sh .;    rm -rf telemetry-agent-phase-$CALL_HOME_VERSION phase-$CALL_HOME_VERSION.tar.gz;     chmod a+rx /call-home.sh;     mkdir -p /usr/local/percona;     chown 1001:1001 /usr/local/percona # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENV CALL_HOME_OPTIONAL_PARAMS= -s el9
+# Tue, 22 Apr 2025 10:21:47 GMT
+COPY ps-entry-dockerhub.sh /entrypoint.sh # buildkit
+# Tue, 22 Apr 2025 10:21:47 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Tue, 22 Apr 2025 10:21:47 GMT
+EXPOSE map[27017/tcp:{}]
+# Tue, 22 Apr 2025 10:21:47 GMT
+USER 1001
+# Tue, 22 Apr 2025 10:21:47 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:a080cada37e9f7003fcfc13eb6b0d19a9d6c4bfa9b3a9cb9ef46b184cfa60e43`  
+		Last Modified: Thu, 15 May 2025 19:24:28 GMT  
+		Size: 39.6 MB (39645097 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:72d801372fe6ebce610862fe2c37dbfa227c7d34e491abf541f48873251a447f`  
+		Last Modified: Fri, 16 May 2025 17:41:43 GMT  
+		Size: 8.5 MB (8477868 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7c10f8cdc7f8866956b83df4962da7eea5e87e56d8dc368b27b7649cf86e6edb`  
+		Last Modified: Fri, 16 May 2025 17:43:22 GMT  
+		Size: 228.9 MB (228894135 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:65fe33ab33148b0252d114b94aba4ca4370fd684657dbcd9be7ae7b0d6aecf01`  
+		Last Modified: Fri, 16 May 2025 17:41:46 GMT  
+		Size: 1.7 KB (1667 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3c2397073a0237bdb0b7dff13dfb95fc552ec4333dd3ffa9867f792ec897410`  
+		Last Modified: Fri, 16 May 2025 17:41:46 GMT  
+		Size: 4.1 KB (4071 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0437180f7960373908bdb1b05ba03c3ef4538de649d8c4f10008de750d6006a9`  
+		Last Modified: Fri, 16 May 2025 17:41:47 GMT  
+		Size: 10.6 KB (10577 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:10e8afd6720fe31a7465500dd96d849b40fb13d7bbf2fdcde25b9b3b1d5ab591`  
+		Last Modified: Fri, 16 May 2025 17:41:48 GMT  
+		Size: 914.5 KB (914516 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b5b6f00e472661afa69c416454bc4a47bb8036d1b3b416552f8cce25a43c598c`  
+		Last Modified: Fri, 16 May 2025 17:41:50 GMT  
+		Size: 13.2 KB (13204 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3922399769d22f51b3c5d65a93fc597e538c44808cad7752178a7d59c80d07c8`  
+		Last Modified: Fri, 16 May 2025 17:41:50 GMT  
+		Size: 4.0 KB (3958 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:63e727eab2a145496d4d4d91aa8e74d1598bae45cbbe79e4addca636cdba893d`  
+		Last Modified: Fri, 16 May 2025 17:41:53 GMT  
+		Size: 4.8 KB (4825 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `percona:psmdb-8.0` - unknown; unknown
+
+```console
+$ docker pull percona@sha256:8e1ef1f5dbab3f06b0d635c92484fe89d9edaa41d3cb80f64f9c8130920898b6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.4 KB (33376 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:259d6a0d0d240be8176dbd989fdfeabed4ff285963c212ca2649ab734a7c1344`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:15e69a180bbaaefabab41d94dd07962b4adaf5200bf73ff1f03573ae3d3fcbe5`  
+		Last Modified: Sun, 15 Jun 2025 12:01:45 GMT  
+		Size: 33.4 KB (33376 bytes)  
+		MIME: application/vnd.in-toto+json
+
+## `percona:psmdb-8.0.8`
+
+**does not exist** (yet?)
