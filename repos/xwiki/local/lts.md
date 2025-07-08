@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a92342346f3929c6c2e783c05efd29c50156d81411fe4c6d61f04aaf8fb5514f`
+- Image ID: `sha256:edf8ec6dcbfae8eda172b7f6fb9a6249107529aae83d63cfd9738ea932648f29`
 - Created: `2025-06-23T09:43:20Z`
-- Virtual Size: ~ 1.24 Gb  
+- Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.106`
-  - `TOMCAT_SHA512=0b316af119fd9a69761c20bc7f9959513884002fc60f490af6335380a3a62549777bf35a1e8dd3c448e56da8ddcb9dc2301d3b01bba304537ca40456c650c25a`
+  - `TOMCAT_VERSION=9.0.107`
+  - `TOMCAT_SHA512=1815837fa10083258b653dab1f3947fadbad377fa66546fa74aecea1439c6fed2ef4e40c86fa55e176d8c5739ad448196a7415ddfca6ff8d17c6fe8cdba0fefb`
   - `XWIKI_VERSION=16.10.9`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.9`
   - `XWIKI_DOWNLOAD_SHA256=5941a1f25e53d9dec1d387891ce9920e80c29f70edb18c4d8522f5c29519da1e`
@@ -1131,15 +1131,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.dsc' gnupg2_2.4.4-2ubuntu17.2.dsc 3947 SHA512:56786f582b69a662f3cb7bfcd23981f8f7b93d9b49bc5a0244d335975714421be475bfd3f0c5532e9bf37b87b03a388a9afc9b5af7a20eed6103739216b0abb2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz 95608 SHA512:aae73a32d6581eabe408b2d50e6ec26fe84d32c45e8581226d020f9d0d37db5707848f5e51728126dac9bc9ee0318b1a7c9f06f57adf8c472cb237686343a505
-```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.3`
 
@@ -4072,17 +4066,17 @@ $ apt-get source -qq --print-uris unzip=6.0-28ubuntu4.1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-28ubuntu4.1.debian.tar.xz' unzip_6.0-28ubuntu4.1.debian.tar.xz 42948 SHA512:59effec60c41e20fe2f36782a62cf5456dd799b5432b75a4f46b8bcb6ff6d1b32d4ad2139183d99e76de573fb370b0745b97d3f207640a0872a4accfc9f4f3fa
 ```
 
-### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.2`
+### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.3`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.3-9ubuntu6.2`
-- `libblkid1:amd64=2.39.3-9ubuntu6.2`
-- `libmount1:amd64=2.39.3-9ubuntu6.2`
-- `libsmartcols1:amd64=2.39.3-9ubuntu6.2`
-- `libuuid1:amd64=2.39.3-9ubuntu6.2`
-- `mount=2.39.3-9ubuntu6.2`
-- `util-linux=2.39.3-9ubuntu6.2`
+- `bsdutils=1:2.39.3-9ubuntu6.3`
+- `libblkid1:amd64=2.39.3-9ubuntu6.3`
+- `libmount1:amd64=2.39.3-9ubuntu6.3`
+- `libsmartcols1:amd64=2.39.3-9ubuntu6.3`
+- `libuuid1:amd64=2.39.3-9ubuntu6.3`
+- `mount=2.39.3-9ubuntu6.3`
+- `util-linux=2.39.3-9ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -4106,10 +4100,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.2.dsc' util-linux_2.39.3-9ubuntu6.2.dsc 4726 SHA512:1a885320d232e0748bb2391ac4c393105d0a5b1827b8b75666650f39a36467f80b66bb07fbad906d4db9f6653aa7d98719f4bf001a17648b4a739b978cb7aaa2
+$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.3.dsc' util-linux_2.39.3-9ubuntu6.3.dsc 4726 SHA512:8abb6a898719a36cf33ef3f9464d78256c05ce68b1eedfe820113d3d85e336277843a8558e37320a4eeaa8a7a5dcaf2df54e0b68baf4a555dd70e71dbb1e373b
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.2.debian.tar.xz' util-linux_2.39.3-9ubuntu6.2.debian.tar.xz 108472 SHA512:7a29bfd3b65117c73148a906869a176d4f94bf7931e2c53409bd72851e81179a4fdf028acd0223e7eae726a96f19d040322c830c2449dfbafaee80e53b833892
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.3.debian.tar.xz' util-linux_2.39.3-9ubuntu6.3.debian.tar.xz 146444 SHA512:525b2bcd406b962ac32bfa558a276a77515a6a12cefca3c8ad5417d9eee6520c7e928e9d88757d3518998cecb6265d3630b54b80bb7c76d418464113dc91d108
 ```
 
 ### `dpkg` source package: `wget=1.21.4-1ubuntu4.1`
