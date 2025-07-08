@@ -1,10 +1,10 @@
-# `openjdk:26-ea-4-jdk-oraclelinux8`
+# `openjdk:26-ea-5-jdk-oraclelinux8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b4282596355259bdc90f0e5c5a37478e2617fe65270a822ea5e39234d0c89af3`
-- Created: `2025-06-28T00:54:13Z`
-- Virtual Size: ~ 557.61 Mb  
+- Image ID: `sha256:94cdfafb1cc96a26733c156219bf469f3f3a438e2851542c90310f984e878e33`
+- Created: `2025-07-05T00:54:13Z`
+- Virtual Size: ~ 557.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+4`
+  - `JAVA_VERSION=26-ea+5`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1220,8 +1220,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url sqlite-libs-3.26.0-19.0.1.el8_9
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/sqlite-3.26.0-19.0.1.el8_9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/sqlite-3.26.0-19.0.1.el8_9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/sqlite-3.26.0-19.0.1.el8_9.src.rpm
 ```
 
 ### `rpm` package: `systemd-libs-239-82.0.4.el8_10.5.x86_64`
