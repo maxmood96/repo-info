@@ -1,7 +1,7 @@
 ## `pypy:2-slim-bullseye`
 
 ```console
-$ docker pull pypy@sha256:b38f7aa2a0196178ebb855bb3514027fddff4c6ac0595e398f5b6afaedb3894b
+$ docker pull pypy@sha256:4b610d639b24c2662259bb477af8516ff50d532901f00ebd20f69e094aa04a91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,29 +83,29 @@ $ docker pull pypy@sha256:05bb475b33c285f8c958af96e07ee5cf55ff5b4c8beb61ee6bab19
 ### `pypy:2-slim-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull pypy@sha256:ceadc5403dcbe25b4abef9b97ffbd6a0e1e8c690f855fe6e3f73d04dab34bcf3
+$ docker pull pypy@sha256:7ce3f9ba436b74bb5da3a7d14e68d47224a91bf0b4d16bbf615c3fc6aac7b81b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.2 MB (61205741 bytes)**  
+-	Total Size: **61.2 MB (61209366 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:725e45627d834b30c1ef75394601496c304551a15bf077a26fbbfa488923d10a`
+-	Image ID: `sha256:29a692b821559c73ae3872533398dc74b468894d9ce6c51032aa5fe6438a68e2`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
-# Wed, 09 Apr 2025 18:15:04 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1751241600'
-# Wed, 09 Apr 2025 18:15:04 GMT
+# Fri, 04 Jul 2025 16:07:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Apr 2025 18:15:04 GMT
+# Fri, 04 Jul 2025 16:07:12 GMT
 ENV LANG=C.UTF-8
-# Wed, 09 Apr 2025 18:15:04 GMT
+# Fri, 04 Jul 2025 16:07:12 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 09 Apr 2025 18:15:04 GMT
-ENV PYPY_VERSION=7.3.19
-# Wed, 09 Apr 2025 18:15:04 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.19-linux64.tar.bz2'; 			sha256='d38445508c2eaf14ebb380d9c1ded321c5ebeae31c7e66800173d83cb8ddf423'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.19-aarch64.tar.bz2'; 			sha256='fe89d4fd4af13f76dfe7315975003518cf176520e3ccec1544a88d174f50910e'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.19-linux32.tar.bz2'; 			sha256='cc52df02b6926bd8645c1651cd7f6637ce51c2f352d0fb3c6b9330d15194b409'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Wed, 09 Apr 2025 18:15:04 GMT
+# Fri, 04 Jul 2025 16:07:12 GMT
+ENV PYPY_VERSION=7.3.20
+# Fri, 04 Jul 2025 16:07:12 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux64.tar.bz2'; 			sha256='aa3bb92dbb529fa2d4920895b16d67a810b0c709207857d56cfe4a6e3b41e02a'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-aarch64.tar.bz2'; 			sha256='f22a1be607deeaa4f9be6bc63aae09fe4fb5b990d6a23aa4e7c5960dc5d93c96'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.20-linux32.tar.bz2'; 			sha256='9d554c5efcb6ef80146bb82965f5d8404d6848e6f04b25c378852a095768a69c'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		pypy -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Fri, 04 Jul 2025 16:07:12 GMT
 CMD ["pypy"]
 ```
 
@@ -114,36 +114,36 @@ CMD ["pypy"]
 		Last Modified: Tue, 01 Jul 2025 01:15:35 GMT  
 		Size: 28.7 MB (28744140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143c8c267e71d0eeb6afb50f1e447aed59f80a7aa76059b0f34ba513a39bcfe8`  
-		Last Modified: Tue, 01 Jul 2025 09:03:55 GMT  
-		Size: 1.1 MB (1055204 bytes)  
+	-	`sha256:cb34f077ca86221c8cfc5c0988ab8f74b59e74e8f088ea560a8d5617be61e0b4`  
+		Last Modified: Tue, 08 Jul 2025 03:02:46 GMT  
+		Size: 1.1 MB (1055234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef1f56ecaa6b3277b42d0dbdb8c1e3024d98a4aee84dc487ee5a64cf30a6417`  
-		Last Modified: Tue, 01 Jul 2025 09:05:05 GMT  
-		Size: 31.4 MB (31406397 bytes)  
+	-	`sha256:61f507cdb166c59ae22735230ee1773d0fd059c52f373162ae66a12da9ed2965`  
+		Last Modified: Tue, 08 Jul 2025 03:02:59 GMT  
+		Size: 31.4 MB (31409992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:a5a00d23f02a4bec837c5ce5dcf673114c9f5e2ad612a2faa6b85bf1587cc9d7
+$ docker pull pypy@sha256:79164fd17ff7ac71452dab5603aeefad48e206af7d0f7890bdde07e5d662eb3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.8 MB (2803381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e090de54b04138ef2c68b89aeeff4e2ddd847cdb132b5fd332d1b756ec2a821`
+-	Image ID: `sha256:2d909b4cbd29e9a2350681ed77e8786e3041127e3c4bfcada1fed77d68e11bc9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0118440a5edf8199520e7edc20c66b5b981bce4b2c82cd851d97da962f85dd55`  
-		Last Modified: Tue, 01 Jul 2025 09:38:32 GMT  
+	-	`sha256:5b464a5e250b5043c7afd3655e9f7970a3481e33e5507fe56ac94baeb1a1bf71`  
+		Last Modified: Tue, 08 Jul 2025 03:38:43 GMT  
 		Size: 2.8 MB (2784926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:800c82eef0710619b80788b80867829297ff78e9ccaca4d69c9a1aac6ddadd82`  
-		Last Modified: Tue, 01 Jul 2025 09:38:33 GMT  
+	-	`sha256:140d7fc7574e15d3c938c0f1099dafbddc243f954fcf1c1b3c415a5ed9385ba7`  
+		Last Modified: Tue, 08 Jul 2025 03:38:43 GMT  
 		Size: 18.5 KB (18455 bytes)  
 		MIME: application/vnd.in-toto+json
 
