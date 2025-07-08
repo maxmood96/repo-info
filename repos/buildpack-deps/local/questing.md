@@ -782,14 +782,9 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris djvulibre=3.5.28-2build4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28-2build4.dsc' djvulibre_3.5.28-2build4.dsc 2499 SHA512:55baf25f2ed6440d0a2bc111b493125a2762ab6ec60a26aae6ee33241ee00a0f3b73b998392e4593a7e8501765bb40b7b6c1d6c25edd14c1ad2eeda439867e63
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28.orig.tar.xz' djvulibre_3.5.28.orig.tar.xz 2959024 SHA512:4fdbecd2b7b583ee4211c9cda6638a3a831c883e2552b3c8ad09f69e8734831addc14f590faab8c58d7f9f017b527abccc384f6066e674e341cf43c96db49cb7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.28-2build4.debian.tar.xz' djvulibre_3.5.28-2build4.debian.tar.xz 17704 SHA512:ded773fa8599b2a3d0a1683d1bb59b276b82a76ed1d6ddc92ea04f5a5186d0c41058c8c99595a37b9a7f111755b52ef455b31cecb2bbca439bc5e2533fa4941b
-```
 
 ### `dpkg` source package: `dpkg=1.22.18ubuntu3`
 
@@ -1010,14 +1005,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.15.0-2.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0-2.2ubuntu1.dsc' fontconfig_2.15.0-2.2ubuntu1.dsc 2780 SHA512:2ebd48a36990ecc6723268f81f65f7c53aa4620953c731860c104fc68cedf4a9c9a611dc44b298cd13b417289903108dc9a0a5bb62d10bc454ae6cac91eac94d
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0.orig.tar.xz' fontconfig_2.15.0.orig.tar.xz 1447820 SHA512:754cd5fffa198fc07a39cf7df683e9adfa7f54ab41fdff8c0eacc078fd35d3e01069ba343f2b045e0b40df88d9f1fc1ee0f7565799f9cb194a59cf95b64c4417
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0-2.2ubuntu1.debian.tar.xz' fontconfig_2.15.0-2.2ubuntu1.debian.tar.xz 33428 SHA512:d4b666d6a8ea4920243c85cac929809a14e28f286129f42516072b261f00e9891e8a3dfb1a0f289922238433cf4239f3cd0abfc9f6ffc86d7bad1b349b6d70b6
-```
 
 ### `dpkg` source package: `fonts-dejavu=2.37-8`
 
@@ -1273,14 +1263,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.48.1-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.48.1-0ubuntu1.dsc' git_2.48.1-0ubuntu1.dsc 2793 SHA512:a8ba9423e2ed2f8183aca1de87630bb4cf2bb6ef0e3100bbd891ce593829b961a691f5a67d9044f2327a567967000257e9507774e4fffd2e5ed080cb3832048e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.48.1.orig.tar.xz' git_2.48.1.orig.tar.xz 7723580 SHA512:75c89ab4ca83adc46989a4b05a9b482b40a7ba69d15aa1c1f27d0cee37c2908e154a75d59b0a0a540647352b9c55020f1a5ad309f0eff78e9fd8e631ef9e4606
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.48.1-0ubuntu1.debian.tar.xz' git_2.48.1-0ubuntu1.debian.tar.xz 795652 SHA512:00ecb7ae69752f59e3c5f57bff03ec7f08d5ae584e07e01e4e40440b9306f19b2ae20dcd0177cf44bd176a64a09603ab2081cff2cc79f492ee9195cdaf9f5342
-```
 
 ### `dpkg` source package: `glib2.0=2.84.3-1`
 
@@ -3308,14 +3293,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.15.0-3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.15.0-3.3.dsc' linux_6.15.0-3.3.dsc 8259 SHA512:51c71c9346536fe4b19c2554ec6d02202b003a48f31f95b09e0fd746558ba7030253266cdf78a991edc704c7561f20452007d1ea8fa2828bbc9991271d68e284
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.15.0.orig.tar.gz' linux_6.15.0.orig.tar.gz 245008961 SHA512:a12a16c08c8867397c69c8eeb5a1a9195253cbcce8d0a9cc731c24d027d79040a9d2b598bcc2c6fca0f4a1f019216e652d2fc1a00025b15c064b7165a61ee9c3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.15.0-3.3.diff.gz' linux_6.15.0-3.3.diff.gz 1289698 SHA512:ff567ebbaef6f3d335c7293e7575c68b52888c1d8da0289aea58c5d3440f043c985878cd759ab1c61117d4bcb752df5ec7593be7a1a71304d18cf03019e10eb9
-```
 
 ### `dpkg` source package: `lto-disabled-list=60`
 
@@ -4012,15 +3992,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-3.dsc' perl_5.40.1-3.dsc 2372 SHA512:096e4d6ca6fd31b114744058a378db78cd66957ca7d84f71fc452a4f338ccb3fed2d92e389be9ff5a93233d2b26dd3aa14e3da78f53b1dcc80ecd68ed94d1b4d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-3.debian.tar.xz' perl_5.40.1-3.debian.tar.xz 167844 SHA512:790047da8e61cabb7ac3d0aff715cdf86a9757ca1858d1fdeb4f7679f1a1aaeec9d9289be848058849bd801d52da0e0eafe88711d4c31c5ba3d2e34a9db08e57
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.40.1-3/
+
 
 ### `dpkg` source package: `pinentry=1.3.1-2ubuntu3`
 
@@ -4555,14 +4533,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.6-1ubuntu1.dsc' systemd_257.6-1ubuntu1.dsc 8466 SHA512:eebfed580b61e4fb13263f61608ab30392593e3c51d04e7675d88dc3bc3167c4d5333ee4187f97b26835713a3b59f33d59d27c5c1ad6a4a3f267d54b958b5449
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.6.orig.tar.gz' systemd_257.6.orig.tar.gz 16321562 SHA512:ceed65196d4235f53db00f5970eadff79149629d8c34f79593d0b326ece536ea0b4f97192458989b5fccbd9438bb2dbb0abda2a5e6c3449a709c9a0889e29d3d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.6-1ubuntu1.debian.tar.xz' systemd_257.6-1ubuntu1.debian.tar.xz 245624 SHA512:b333ca68f218c45c5eb25ffccf7e2b990510624678db5f6eb58a4e66475e096cfebd7c8fa6c629ceb5e8ce316b3d156e139bf8f017ee569f43ab7367effb8c8d
-```
 
 ### `dpkg` source package: `sysvinit=3.14-4ubuntu1`
 
@@ -4804,14 +4777,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu2.dsc' util-linux_2.41-4ubuntu2.dsc 5049 SHA512:b4a844ab0a7cf2dc195de6306d56c25aa79cde50b9bdf9801a99b44507d3e6d67e1ece82e850a39cc39608f6e97cd5596cc5e68c11f20471cf742bd24df65bb9
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA512:800ff92ee7a047732c0accb9dd759d6ed659947373ca72e0dd3ca601d0a6fed9db92c0838cfaff6bcdb8c08bdc1ffa675721893f42945885c57ccd59ab676318
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu2.debian.tar.xz' util-linux_2.41-4ubuntu2.debian.tar.xz 126908 SHA512:851ec67d7bccd3a8ca62393270e339252e1e9b9270b3510b3ccc6665f896313c933e5ce76b666495e91e418b64186e16a7acc01e7743b0e88e9bb4983856f7a9
-```
 
 ### `dpkg` source package: `wget=1.25.0-2ubuntu1`
 
