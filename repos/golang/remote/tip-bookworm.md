@@ -1,7 +1,7 @@
 ## `golang:tip-bookworm`
 
 ```console
-$ docker pull golang@sha256:de7a6fdda2b82799666420fe0233479e5efbde0905bcce0e0fb7efadaed2c204
+$ docker pull golang@sha256:dea5284ad9624a9cf9bb687e0506f7d9c694cb4283e0fb854b24bbcd3d66d788
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,13 +24,13 @@ $ docker pull golang@sha256:de7a6fdda2b82799666420fe0233479e5efbde0905bcce0e0fb7
 ### `golang:tip-bookworm` - linux; amd64
 
 ```console
-$ docker pull golang@sha256:5fc0bd6d1572db5af3f4dbf5d208a1d1c741f0981904fc36be20852cef186866
+$ docker pull golang@sha256:303cd441a1eef717dc555d5ed7ec2662ed3649b0874f22fc52711d56340449f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.4 MB (312355947 bytes)**  
+-	Total Size: **312.4 MB (312356393 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50d3d759d4ca751b6853ab44d953175efa215b9692be343c8d7a86db668ff3a5`
+-	Image ID: `sha256:11b2e6592693c2a366875bf2d49a7b2d2f0a44c646265e56cb48b1fac0a8e840`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -69,17 +69,17 @@ WORKDIR /go
 		Last Modified: Tue, 01 Jul 2025 04:11:56 GMT  
 		Size: 64.4 MB (64399879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd5b82d8a573c3acce7a04551db2d944176e3a323c1e732b84d94f5cac7f8dc7`  
-		Last Modified: Mon, 07 Jul 2025 21:08:08 GMT  
-		Size: 92.4 MB (92354808 bytes)  
+	-	`sha256:70151763f23e129416a9ace117a26a1a30f7614b0aa83aa871c9406f671a2cea`  
+		Last Modified: Tue, 08 Jul 2025 20:42:41 GMT  
+		Size: 92.4 MB (92355253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e9b1bf1df4ddb6cd2f3ba43fc263309f8c370fe86f15d3de62305a26c4885e3`  
 		Last Modified: Mon, 07 Jul 2025 21:08:01 GMT  
 		Size: 83.1 MB (83086126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63cada90faba1dc027228e435444e686275e362a90928927c155229077242cfd`  
-		Last Modified: Mon, 07 Jul 2025 21:08:02 GMT  
-		Size: 126.0 B  
+	-	`sha256:b05089c7cddd5bb06052a74f3ab71e56846ae96036b2a2fed0341630cb0c454e`  
+		Last Modified: Tue, 08 Jul 2025 20:42:14 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -89,25 +89,25 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:0fe2cef4175851cfb80ec7de4a474d7e8992252320aa531f992c5e3697ab2885
+$ docker pull golang@sha256:e36d1b66ff6b142090f851506dd0e9fcec9ce9b053fceaf48e33e893e4dc583b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10516403 bytes)**  
+-	Total Size: **10.5 MB (10516404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20d8dfa64d7949bad077ada91878ad9d103dfb472ce852692fc552428229210`
+-	Image ID: `sha256:140776c1aa3b11ff48fb1c98ceae233e675c8a64a898e037c9ec046bedd4c7b0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:811bbc09a47872aef21c438727f436960cf80dcf95cbcc0a5e1983fdb80f5cb1`  
-		Last Modified: Mon, 07 Jul 2025 23:23:47 GMT  
+	-	`sha256:3ba827092ebf6c7e6c1cf5f8380fe83eee40d996f4a5b9e858ba89f96f4d866b`  
+		Last Modified: Tue, 08 Jul 2025 20:29:45 GMT  
 		Size: 10.5 MB (10488745 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb809233ce0d419338013771e949f410d4c39b1b527c6113ec6441ef98960d2b`  
-		Last Modified: Mon, 07 Jul 2025 23:23:48 GMT  
-		Size: 27.7 KB (27658 bytes)  
+	-	`sha256:3189e23993b98ea0e1b26d8bf46f65bb5b704190309d8812fc70ddcdb8392c00`  
+		Last Modified: Tue, 08 Jul 2025 20:29:46 GMT  
+		Size: 27.7 KB (27659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-bookworm` - linux; arm variant v7
@@ -178,25 +178,25 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:e3a1ea0573cf2c8e1bd125f8c4cea522c266ccb42a179872c27d6e87dc34bd58
+$ docker pull golang@sha256:aee1fcc7d6e223393e93fd2ad25b797b2e8792aec9bab4855c211f1c575c86e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10323241 bytes)**  
+-	Total Size: **10.3 MB (10323242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:397f31ce9b6ef1e01bbb9993e84f36ed4aa5111f8b9550e8ccb5e4765a16d865`
+-	Image ID: `sha256:e57dabc24830ca3ee4ee751274523caf23c55a279802c8fe3a26a6683275bdbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a535dd446ea8a40aab7d946fb1bf2e03c0b41230efaa106f96f66ceb8e8f5fa2`  
-		Last Modified: Mon, 07 Jul 2025 23:23:55 GMT  
+	-	`sha256:535690ffe6f0596567fa2cd98cf875a8868ceb893cd16999e09e8030a1fb7a62`  
+		Last Modified: Tue, 08 Jul 2025 20:29:54 GMT  
 		Size: 10.3 MB (10295459 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb142827615653e1ab4bf5cbcea0e6517c032af9197790b29ca0b79672e33ed1`  
-		Last Modified: Mon, 07 Jul 2025 23:23:56 GMT  
-		Size: 27.8 KB (27782 bytes)  
+	-	`sha256:6a4727ec26dc59e29c82798641b2d4836cb9b3b390e0cc6f18dba1a216ed8afc`  
+		Last Modified: Tue, 08 Jul 2025 20:29:54 GMT  
+		Size: 27.8 KB (27783 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-bookworm` - linux; arm64 variant v8
@@ -267,37 +267,37 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:d9ed33eb437de5eaf99e92cf9c3d1335528913fbbd555e26bfcdcbc5f4669e81
+$ docker pull golang@sha256:9287ae0b6524dad97e4084bc7870a688fc4369ce2f8989cc4acf37c13de3aff7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10544411 bytes)**  
+-	Total Size: **10.5 MB (10543296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d37de1bd49e141f4f6ddec3c36a34aa0991a9aa477b99baab6e3d0ef9a3bb3a`
+-	Image ID: `sha256:9c60ec9992ecea189141a3e8acafc6a942bb9d2748402fd8c76ac6a9b29ad6d9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d43c0e0b3556e7f94206feb35fc2fccf033c8b8d8cd13d50fcbea4324be5d72c`  
-		Last Modified: Tue, 08 Jul 2025 05:23:43 GMT  
+	-	`sha256:0fa249f8d32e3e640ef1257b32ac8c4b8b2239ff24b6f801745092173aa766e8`  
+		Last Modified: Tue, 08 Jul 2025 20:30:03 GMT  
 		Size: 10.5 MB (10516593 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1272dcf2bced8af1694cf71b770c547711bbaf118c598ffac676d2736a3ae698`  
-		Last Modified: Tue, 08 Jul 2025 05:23:43 GMT  
-		Size: 27.8 KB (27818 bytes)  
+	-	`sha256:56a84f0b73518321c022662eeefd0d74aa7d77174c52cca6de900b294f5a92b2`  
+		Last Modified: Tue, 08 Jul 2025 20:30:04 GMT  
+		Size: 26.7 KB (26703 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-bookworm` - linux; 386
 
 ```console
-$ docker pull golang@sha256:204e117da43b8cf7af138c3c01cca20c89ab63dda3ca4cb76b4c51625bf57b1a
+$ docker pull golang@sha256:eefc8661d5cb1ac20340dd1e9f49a0a9f2566a5b7927fb7a69283f04e6705b88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.2 MB (312154769 bytes)**  
+-	Total Size: **312.2 MB (312154790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92c7f47af8c31c75a35945a40b6597066b70b3fddb8309043a798e6210c32837`
+-	Image ID: `sha256:3710d5606cf68f71e2edafa5fc5b373d6b801bc3a8d8add311e04f3404aa9c5e`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -336,16 +336,16 @@ WORKDIR /go
 		Last Modified: Tue, 01 Jul 2025 03:20:00 GMT  
 		Size: 66.2 MB (66225317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c776d33dc276234326c920b797c5c9e8d471a1312f03aead5fa2529825185e6e`  
-		Last Modified: Mon, 07 Jul 2025 21:09:05 GMT  
-		Size: 89.8 MB (89774561 bytes)  
+	-	`sha256:7634121e6b6d081a818c420b64c141cc40e2b79b6d992445a10c5f52e20a41ab`  
+		Last Modified: Tue, 08 Jul 2025 18:11:45 GMT  
+		Size: 89.8 MB (89774582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9fd65ade23887bad8cc24159556378a6549464832612b1c87e5e65754cc9685`  
 		Last Modified: Mon, 07 Jul 2025 21:08:46 GMT  
 		Size: 81.8 MB (81820379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61aee0ba4191b85c25bd6b403eb09e666ec500e916bd1906e335aa18ad2d3b47`  
-		Last Modified: Mon, 07 Jul 2025 21:08:59 GMT  
+	-	`sha256:e4f15e93ce1fceedcdd6dace103307bc97f5e6711c846678a1ab9b4838f6927b`  
+		Last Modified: Tue, 08 Jul 2025 18:11:29 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -356,24 +356,24 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:8c97d4faef33c0b63312e39738c123dcc8eb330d284fa0388eef7adc8464cdb2
+$ docker pull golang@sha256:945d563793130d084accdacbd0d2c510b0fdf1ded9278099d73175596a296b43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10495939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:556b9c47225f02a9e3b392e1bf05d1aba2bed380012647c74aad56e084dbe4d8`
+-	Image ID: `sha256:27e9e2e81ca91a4ffa63c90274785ae0438eaa498faca3ffce4ac07da14ed00d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1bd698a0a0e5b9790d9c07901bf4c2b440d507de1386b50b2ac06a12e881e792`  
-		Last Modified: Mon, 07 Jul 2025 23:24:04 GMT  
+	-	`sha256:cda21092f0d66431424d5967b30d0f297033f40d373979ac902df65d9460c40f`  
+		Last Modified: Tue, 08 Jul 2025 20:30:12 GMT  
 		Size: 10.5 MB (10468323 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bd131b7c3aa90caf7e92e306c8397b766d59ae8e2a79db78327af10189e730d2`  
-		Last Modified: Mon, 07 Jul 2025 23:24:05 GMT  
+	-	`sha256:3288bd0ac81a4627e821b0dbe80d8ba54f4e7f7fe12ebf6913c1b1e51595276f`  
+		Last Modified: Tue, 08 Jul 2025 20:30:12 GMT  
 		Size: 27.6 KB (27616 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -445,21 +445,21 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:651e3d537b86bee4e3e678b08630ab80047b903bcfe8e9ad14ad67dee5019289
+$ docker pull golang@sha256:b1549f1cc540e34919efbaeda2ed7f86e5c597d254d4712d963c45f25217e387
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.5 KB (27530 bytes)**  
+-	Total Size: **27.5 KB (27531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0fc00e204adf1385fbee52ea09005bbe03e0da6bc111dddf266e59535663b9f`
+-	Image ID: `sha256:9cbcdc00f61d52241525386df33c8c4c574a16835e92d0deaf36fbb9f2714f51`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:01efb5c15576482e145575f503b45500e9c04c059249c304a040c7050c7c06e4`  
-		Last Modified: Mon, 07 Jul 2025 23:24:11 GMT  
-		Size: 27.5 KB (27530 bytes)  
+	-	`sha256:64e6639d11f9a7e2e8caa5403d09c17586651845e214732c0e05aa53b8b96e9d`  
+		Last Modified: Tue, 08 Jul 2025 20:30:18 GMT  
+		Size: 27.5 KB (27531 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-bookworm` - linux; ppc64le
@@ -530,24 +530,24 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:91aa7f54fb234af7bedf94c069589827845000b325a3263c493612d3e7fdbe7c
+$ docker pull golang@sha256:884b36eab5a4a6271d7cd83667840803dbb940563f56a078cc0515c76ee4f1a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10488945 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab9947c262af7dbfcde37061a0e3808b9c296048b1667069fdb593159e391732`
+-	Image ID: `sha256:ffcbfdcc512b89e3313aec9dfffeaddf91dcf9e9d31d55d0ddb66c35a49d8b50`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:315aedafbab5885c9c0f3ea9223d68e2f23803d92a0b54d6735189241c7ce4dc`  
-		Last Modified: Mon, 07 Jul 2025 23:24:15 GMT  
+	-	`sha256:426d1451ea4b5c49ac5c1a787612c17fbff7fe2a55005da01f200f78d7cbcadb`  
+		Last Modified: Tue, 08 Jul 2025 20:30:22 GMT  
 		Size: 10.5 MB (10461228 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e1df3f224440a088741b7f9973f581c307e5238de2b9039be67c846661064167`  
-		Last Modified: Mon, 07 Jul 2025 23:24:16 GMT  
+	-	`sha256:f9d9f7b9f58125ddb11f72db14203a49bc9c11e0d9286fe7827daacb518a0dd1`  
+		Last Modified: Tue, 08 Jul 2025 20:30:22 GMT  
 		Size: 27.7 KB (27717 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -619,23 +619,23 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:c8332d9a3e328312a5522de52c81eed9eaaac5196be3de955191eaedc8ead6ba
+$ docker pull golang@sha256:ddf0e2faec5fdeef662737c4044990b45ade3e4a9df6f2558f0328bb8ff97d18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.3 MB (10348160 bytes)**  
+-	Total Size: **10.3 MB (10348162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1a1c07966c472b639023da1d2535d4a8f97304d78c2f443b97bf33ffdd328c6`
+-	Image ID: `sha256:6c34698dc7a668b50875054dab7760e959f75ba9a26b74b1440843647e1a61c1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:35fef79c4303aa4e1e775152295fc2ae8a63c9f120e1099469f08d1f35fd80c1`  
-		Last Modified: Mon, 07 Jul 2025 23:24:23 GMT  
+	-	`sha256:e2958a3f09e33c1a31d9bb04e5e1f663273f5f1a579f7785017452574df31879`  
+		Last Modified: Tue, 08 Jul 2025 20:30:29 GMT  
 		Size: 10.3 MB (10320503 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:44cf62b565fe9819d449f55707cf97f82a26c6067b58a9fd9862eb845d296620`  
-		Last Modified: Mon, 07 Jul 2025 23:24:24 GMT  
-		Size: 27.7 KB (27657 bytes)  
+	-	`sha256:6602f4ef1b533feb8a51d1c3f54d5c0b3e8a435afb433ad287d4d02f44e20895`  
+		Last Modified: Tue, 08 Jul 2025 20:30:30 GMT  
+		Size: 27.7 KB (27659 bytes)  
 		MIME: application/vnd.in-toto+json
