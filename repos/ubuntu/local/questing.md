@@ -1165,15 +1165,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-3.dsc' perl_5.40.1-3.dsc 2372 SHA512:096e4d6ca6fd31b114744058a378db78cd66957ca7d84f71fc452a4f338ccb3fed2d92e389be9ff5a93233d2b26dd3aa14e3da78f53b1dcc80ecd68ed94d1b4d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-3.debian.tar.xz' perl_5.40.1-3.debian.tar.xz 167844 SHA512:790047da8e61cabb7ac3d0aff715cdf86a9757ca1858d1fdeb4f7679f1a1aaeec9d9289be848058849bd801d52da0e0eafe88711d4c31c5ba3d2e34a9db08e57
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.40.1-3/
+
 
 ### `dpkg` source package: `procps=2:4.0.4-7ubuntu1`
 
@@ -1308,14 +1306,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.6-1ubuntu1.dsc' systemd_257.6-1ubuntu1.dsc 8466 SHA512:eebfed580b61e4fb13263f61608ab30392593e3c51d04e7675d88dc3bc3167c4d5333ee4187f97b26835713a3b59f33d59d27c5c1ad6a4a3f267d54b958b5449
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.6.orig.tar.gz' systemd_257.6.orig.tar.gz 16321562 SHA512:ceed65196d4235f53db00f5970eadff79149629d8c34f79593d0b326ece536ea0b4f97192458989b5fccbd9438bb2dbb0abda2a5e6c3449a709c9a0889e29d3d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.6-1ubuntu1.debian.tar.xz' systemd_257.6-1ubuntu1.debian.tar.xz 245624 SHA512:b333ca68f218c45c5eb25ffccf7e2b990510624678db5f6eb58a4e66475e096cfebd7c8fa6c629ceb5e8ce316b3d156e139bf8f017ee569f43ab7367effb8c8d
-```
 
 ### `dpkg` source package: `sysvinit=3.14-4ubuntu1`
 
@@ -1422,14 +1415,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu2.dsc' util-linux_2.41-4ubuntu2.dsc 5049 SHA512:b4a844ab0a7cf2dc195de6306d56c25aa79cde50b9bdf9801a99b44507d3e6d67e1ece82e850a39cc39608f6e97cd5596cc5e68c11f20471cf742bd24df65bb9
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA512:800ff92ee7a047732c0accb9dd759d6ed659947373ca72e0dd3ca601d0a6fed9db92c0838cfaff6bcdb8c08bdc1ffa675721893f42945885c57ccd59ab676318
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41-4ubuntu2.debian.tar.xz' util-linux_2.41-4ubuntu2.debian.tar.xz 126908 SHA512:851ec67d7bccd3a8ca62393270e339252e1e9b9270b3510b3ccc6665f896313c933e5ce76b666495e91e418b64186e16a7acc01e7743b0e88e9bb4983856f7a9
-```
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
