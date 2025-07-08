@@ -14,7 +14,7 @@
 ## `ghost:5`
 
 ```console
-$ docker pull ghost@sha256:78f9f3cf3ce40557f687f7b6edc79b96e1282d00d2d221816839a134ccbacf7b
+$ docker pull ghost@sha256:35d81f748ebebd22ed8100617e8c3371549ac8a83701a77a2f8ed1c98d821de7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -163,64 +163,64 @@ $ docker pull ghost@sha256:d759636445595ee85d7b0dc3cb6923f5a4f9736e5f2421877477a
 ### `ghost:5` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:3e3837fe063eea9331f3eb5976b03a37e121ba563d070e776d5dd537c6e71e11
+$ docker pull ghost@sha256:a99150031b91e8987bf877dbb2db229f9199bad16879e750fb5cf5f71b755fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.2 MB (195157120 bytes)**  
+-	Total Size: **195.1 MB (195136326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a15cf7a790b59c9ce73525bb29e0d4e0120f083d49d3527a65fffa1ae3291f8`
+-	Image ID: `sha256:40addd50656bd504528e9518684dc95b4f46e99fd909fb3f0cbe2e4cc6f492c7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -233,124 +233,124 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
 		Size: 3.3 KB (3306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aec88477a3abb2eafe1d149461ff1972583dffa5e2691bdf317858b41d1a04bc`  
-		Last Modified: Tue, 01 Jul 2025 09:27:01 GMT  
-		Size: 37.3 MB (37275412 bytes)  
+	-	`sha256:ea20d5e020643cbb0af81b95a3f831cd891de65ea7a496365ada0a430acaec2a`  
+		Last Modified: Tue, 08 Jul 2025 02:29:50 GMT  
+		Size: 37.3 MB (37275408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b16bf2f61e07d978d7b5067d8399889bebc5b4a0b69a5cc14034e7cfd78a3bf`  
-		Last Modified: Tue, 01 Jul 2025 09:26:57 GMT  
-		Size: 1.7 MB (1712740 bytes)  
+	-	`sha256:5667beec63918909b2f737da9993d6245952e94444f08e30adee68f4eac029a0`  
+		Last Modified: Tue, 08 Jul 2025 02:29:28 GMT  
+		Size: 1.7 MB (1712702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0836d4f7ecf3a3b928239f07740b8b5cd09139c9b842ab0c5ef83cb56b48dae8`  
-		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
+	-	`sha256:907e69f81293e0e42190fd1417126ee6ba71bf1d64a9a38c3ca8f1a02caa6382`  
+		Last Modified: Tue, 08 Jul 2025 02:29:29 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05d7f2f77360628492c512fa8e8690c5e8160b3fd006d855635bec1823c242f2`  
-		Last Modified: Tue, 01 Jul 2025 21:11:19 GMT  
-		Size: 1.4 MB (1412598 bytes)  
+	-	`sha256:de34fb63ae2ef8ea84f5b143d35e3df6fa920013497ff6b6d4425a00bb9f695b`  
+		Last Modified: Tue, 08 Jul 2025 05:11:59 GMT  
+		Size: 1.4 MB (1412588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:584eee2049bee7cca4ec0c5a7abf5ea3ab7c98b6c496b516b1329aa4ae448e51`  
-		Last Modified: Tue, 01 Jul 2025 21:11:20 GMT  
-		Size: 11.1 MB (11146873 bytes)  
+	-	`sha256:9484b3e58191d4f04612bf8192350043c0dbb7f38782ee0394e87df59c1d9002`  
+		Last Modified: Tue, 08 Jul 2025 07:20:35 GMT  
+		Size: 11.1 MB (11146842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a618dfc93137c134457e4e18d4cc2c939226f4a524a937b62960926ee599e38`  
-		Last Modified: Thu, 03 Jul 2025 17:31:16 GMT  
-		Size: 119.7 MB (119666425 bytes)  
+	-	`sha256:91aca5d55bc9c06f2558819f3aa3bd8814af8af6464497c5f28960322e3dccc3`  
+		Last Modified: Tue, 08 Jul 2025 04:10:57 GMT  
+		Size: 119.6 MB (119645716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ada50413d1119875942ffcbed790aab8f42bb025cc80ec12e3bcf095df2d39d`  
-		Last Modified: Thu, 03 Jul 2025 17:31:02 GMT  
-		Size: 543.0 B  
+	-	`sha256:cceb6ddd0edfad3df253d0281c8ac1dadfe95fac9f2e608ec90b0662be39d178`  
+		Last Modified: Tue, 08 Jul 2025 05:12:06 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:96e2d3c0fc0c41f9599b7c1dbe573bce00515855fac01220c06431c808bb6073
+$ docker pull ghost@sha256:7798653435dd525cd1ab8f263783bc0766dfb1e15a21d2e6e76ddc05f9eb84c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5561969 bytes)**  
+-	Total Size: **5.6 MB (5561970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c8a300da26809bdd7c983178a0a0a383dfa5f451c2e4b16b30b7a6dbb6a6423`
+-	Image ID: `sha256:8eb09274c7f58247da0064335cac5729c17b413928495440af910223a809c8d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2242e891a9f69c7c9de7ff1bd2483a6970db20ada729a0f72d8bf922a96f312b`  
-		Last Modified: Thu, 03 Jul 2025 18:45:40 GMT  
+	-	`sha256:1424556a7bb5523c99e618f19adbb508c32a133caa10b8a843514d310b8db0f9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:29 GMT  
 		Size: 5.5 MB (5532558 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b24409bdca108b5512ba310f458f334a68922e48ae13cfce86a94d14d7c082b`  
-		Last Modified: Thu, 03 Jul 2025 18:45:40 GMT  
-		Size: 29.4 KB (29411 bytes)  
+	-	`sha256:554e22c0141ccc381b0296e2442fc9a2457919d1a85b58c59dc46d7da456b0c7`  
+		Last Modified: Tue, 08 Jul 2025 06:45:30 GMT  
+		Size: 29.4 KB (29412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:5` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:a92d49a5d92b88564653fbaf6c0c4b8d803ef0752cf14dee4411c6b21be9ffd7
+$ docker pull ghost@sha256:05754c7519be5c3c5e6cbd9a6e6a173ab353e0ebb3e473d8c3e1faa1d7948240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.7 MB (191686614 bytes)**  
+-	Total Size: **191.7 MB (191685126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e3222783d5fa32a73f50fe7a16853bea40b0b51ff4a117b90703a77394e36ae`
+-	Image ID: `sha256:f4e3f276b2bf38a304d7c4ae6c04c1fb7bbfab340724b1e220e524eda53799bb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -363,60 +363,60 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 07:26:39 GMT  
 		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fa8f27a92d9c21b1f86c5bb3c25357bde949f1ceb5f9308ab2682f77c4258fa`  
-		Last Modified: Tue, 01 Jul 2025 07:28:57 GMT  
-		Size: 41.2 MB (41153530 bytes)  
+	-	`sha256:752abc28a45cce18393f969d6c32f71a8718ac5018044c0434c7d72347ec73e3`  
+		Last Modified: Tue, 08 Jul 2025 02:01:11 GMT  
+		Size: 41.2 MB (41153528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e73a31be4962e48e8b85176193bca700c3c05bf02906962db98f336cd8ab606`  
-		Last Modified: Tue, 01 Jul 2025 07:28:54 GMT  
-		Size: 1.7 MB (1712567 bytes)  
+	-	`sha256:65a28d5a7831997036fc8314909c7994f7058a153c9edd1567ac7808e763e169`  
+		Last Modified: Tue, 08 Jul 2025 02:01:09 GMT  
+		Size: 1.7 MB (1712540 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b76a3e047cc7ff000fd1b78a75f1a22c819e978499c544a54e78285b5e86aebe`  
-		Last Modified: Tue, 01 Jul 2025 07:28:54 GMT  
-		Size: 447.0 B  
+	-	`sha256:93ab47dbc72640f8eaabc6ccf945d46719852a938427f18312db7e4d556bb1b8`  
+		Last Modified: Tue, 08 Jul 2025 02:01:08 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61ebe739f7e39e54a43a7f5eafd4401e3b1d127ab145e764d1ac64fae36f777e`  
-		Last Modified: Wed, 02 Jul 2025 04:02:42 GMT  
-		Size: 1.4 MB (1376655 bytes)  
+	-	`sha256:7058c1ab2a0c96dd70062ae0cc6ad60f8a4d15e03537bf5164abcf4dfc85e710`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
+		Size: 1.4 MB (1376681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc741ac39afeaffc15d01fb38bb2ba7aa9ac88c42241913a3aa16e674d7dac3e`  
-		Last Modified: Wed, 02 Jul 2025 04:02:43 GMT  
-		Size: 11.1 MB (11147097 bytes)  
+	-	`sha256:8dcf9a4c6206f827c5593cbfa8d78304e0fb504c1eeee32737411fba8f065bad`  
+		Last Modified: Tue, 08 Jul 2025 04:57:42 GMT  
+		Size: 11.1 MB (11146910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ec44163032e0867f5ef5490698fe9a1011210de09cef2d22b1d7489baefcf76`  
-		Last Modified: Thu, 03 Jul 2025 17:24:25 GMT  
-		Size: 108.2 MB (108214758 bytes)  
+	-	`sha256:15c97512150d4aa35439f9844300cc4da66715683b2df58ac3fd66f93eeaf0c9`  
+		Last Modified: Tue, 08 Jul 2025 04:57:48 GMT  
+		Size: 108.2 MB (108213459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b7a1062ac74c7e49f599256605dc4265e0c290c512dc200ddd8309e8de58873`  
-		Last Modified: Thu, 03 Jul 2025 17:24:15 GMT  
+	-	`sha256:9303638a23164a0bc6288b8e049a5f6382751ce44fc0d42336978b670cdbd1d0`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
 		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:37b13d41bf1ddb0b96f253ab26bebe589375ba67d0796bb295a4229a3130a38f
+$ docker pull ghost@sha256:5753ac8aa6a216ea7bb080b19fd9177572cefe133bebc9ae84014f2202a4c5ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5559542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c55e69fcf2a82d8e8050785ce3c2277ef07c55925222d2bce82013fec0abc8d3`
+-	Image ID: `sha256:4ff31df212b73bd389470e35c1b1f6422a56cbe6cec7c4c4c5a0dfda37fecf6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf6f2b5a825e065f43293d40bf04842b909182eb21fcb0b9f8ca399cf6ce30ff`  
-		Last Modified: Thu, 03 Jul 2025 18:45:45 GMT  
+	-	`sha256:d1b10f73ba4334363329c7d918509c8e03420ccaa47834ba63e9704530671917`  
+		Last Modified: Tue, 08 Jul 2025 06:45:34 GMT  
 		Size: 5.5 MB (5530098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11093b6d3a7626ceb7b817fa3bd9b61ed074777f819423883078bb046a2d0ecf`  
-		Last Modified: Thu, 03 Jul 2025 18:45:46 GMT  
+	-	`sha256:41c135465e6fecd2a99cfd7cf3cc4bbca3bc6805cb1869b74c9a1f5d82e3957d`  
+		Last Modified: Tue, 08 Jul 2025 06:45:35 GMT  
 		Size: 29.4 KB (29444 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -553,64 +553,64 @@ $ docker pull ghost@sha256:a608b1364e68a0d44a39d0077aed6653d272cb7c583ec1962a908
 ### `ghost:5` - linux; s390x
 
 ```console
-$ docker pull ghost@sha256:d6beee31d19eda991aebcfbfdeeae7021014151e5cd68773541c35b3798f60b5
+$ docker pull ghost@sha256:59666d613e19cf542bf6ce926c724cbb895205dbf3af1d15428a4e1127ce7ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.3 MB (204349401 bytes)**  
+-	Total Size: **204.3 MB (204320742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07ed31a11c818e1f242f6c865686549882b4de583d0f02496c7792aedfcfdd96`
+-	Image ID: `sha256:4775cf386dd6568a1614fc483af63f55f5ddefa3ec0a21221f9bf127e3c1afc8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -623,67 +623,67 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 05:47:32 GMT  
 		Size: 3.3 KB (3312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:515c3c34b70c95a043894fe7035e66c59d21d8f786319f161b645711e9b33994`  
-		Last Modified: Tue, 01 Jul 2025 05:49:26 GMT  
-		Size: 41.4 MB (41439076 bytes)  
+	-	`sha256:f242ba5bc72210f1dddedaa08936ac3e5c032bb4631a8f3aec8c92431a5e6122`  
+		Last Modified: Tue, 08 Jul 2025 02:34:25 GMT  
+		Size: 41.4 MB (41439083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e62c391502ad61a15025057cb02863d4311e0680919387ee447d88df0c3a36`  
-		Last Modified: Tue, 01 Jul 2025 05:49:18 GMT  
-		Size: 1.7 MB (1712556 bytes)  
+	-	`sha256:fe94503260b1496063d5e1968cc94836bd2dc6ff8e806fc7e25b2204bc385288`  
+		Last Modified: Tue, 08 Jul 2025 02:34:23 GMT  
+		Size: 1.7 MB (1712561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b5101d913e1a8b2507c4c8b39ea7e3adb01f1ae438d52ac83ceee5acefd55bd`  
-		Last Modified: Tue, 01 Jul 2025 05:49:17 GMT  
+	-	`sha256:ea13ff0ad2126d851e6acef47b419db88d7fd3e3a22d4ba0428fe52307cd6305`  
+		Last Modified: Tue, 08 Jul 2025 02:34:22 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fcae7fa2b6e4ba7756fc50c404cf291a94a3dcbce19e2027dc44851e6992cb7`  
-		Last Modified: Tue, 01 Jul 2025 11:09:54 GMT  
-		Size: 1.4 MB (1410185 bytes)  
+	-	`sha256:2275a102518200b1377b5a9bede03c5027895ce5d498dac314547fb429994068`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
+		Size: 1.4 MB (1410165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df439adee2fbec75e5408b63ca5c96409ae00e7535ed5a6c4803ab1e2d68749`  
-		Last Modified: Wed, 02 Jul 2025 01:51:37 GMT  
-		Size: 11.1 MB (11147569 bytes)  
+	-	`sha256:2de1c66fea11623ed618f8c62b3412f7e48140c47603236f635a60ceaebbf23f`  
+		Last Modified: Tue, 08 Jul 2025 05:37:33 GMT  
+		Size: 11.1 MB (11146513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7503a0cfe5293fdeaa0d81c36661f3379b01dfefd5eb1ade4c1ff326b4e4bfd`  
-		Last Modified: Thu, 03 Jul 2025 17:29:53 GMT  
-		Size: 121.7 MB (121747871 bytes)  
+	-	`sha256:f703024d73ef762be3c967ba42693420af4a3c18c96f91be2e2a19850f9a2eaf`  
+		Last Modified: Tue, 08 Jul 2025 05:37:39 GMT  
+		Size: 121.7 MB (121720276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e771bc06de8486d5d8e7fdef546b065f506420e441f4fdac8cdfd8b1de3dae37`  
-		Last Modified: Thu, 03 Jul 2025 17:29:42 GMT  
+	-	`sha256:d79887fd33093fde35e2cd55e5d33aa01b6f82ebf6b0dc4b886e419fd3b47474`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:51509da5813f3386a29563884939ef234c1652457284d49e08f71af76ca0b60a
+$ docker pull ghost@sha256:b8bf63841769748c19cf5b3c90498927cb7b909290cca81437157f8329e7036e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5552928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1cc570973416e71cd9015bb2bb2448b25f9d87245823c04c36691bcff6da322`
+-	Image ID: `sha256:d94ff5a9e5d57814bd50472e8fa27a010db0f1b541fc66fa064f81d2c8446f42`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b194e9ce10da632c4c1776dfd22d85d6fad1e57976c42f6bdb95b9c8915825c`  
-		Last Modified: Thu, 03 Jul 2025 18:45:56 GMT  
+	-	`sha256:ed51287adea80fb227f5665084b52aa72a8eadaf04706ba3308edcccbe425573`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
 		Size: 5.5 MB (5523618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:63edfa7d5126bfabae599e7c7f332dcc6bc3b754e008e246d3cc8c95e6616a7f`  
-		Last Modified: Thu, 03 Jul 2025 18:45:57 GMT  
+	-	`sha256:81c495ddb6518c75460852457bacfce29e1144f77d6745ad704d3b6cb313dee9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
 		Size: 29.3 KB (29310 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ghost:5-alpine`
 
 ```console
-$ docker pull ghost@sha256:d590d65fb4e593f37fc36a4b7a9f624065dcf452383f79dc785c5e409339e05c
+$ docker pull ghost@sha256:35e4d53e2a893d8c70dfa46a78f7420633715b169ce51bb2ef99d2bc9b56042e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -972,13 +972,13 @@ $ docker pull ghost@sha256:2838044ac1257650025a63c281d8fc36ae94a1f192fd64eeed899
 ### `ghost:5-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:4574cddb7a7ca8560e0eab755aae6aec661687038a66e093b5125edd7f7fcc36
+$ docker pull ghost@sha256:d65156baf0edc6fa9d769eb1939110896838e8cf5c192a7c7c41b2f9d44b7eff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.6 MB (177573527 bytes)**  
+-	Total Size: **177.6 MB (177602438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4db2cce72238bd7be1ddd883ebb0c7bb759f7d663a1d3927bb10a76f10a1c87`
+-	Image ID: `sha256:281a2e7d2be42dcd62cb4cb5647720eada9687e35465f01b4e5ee250122b449f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -987,53 +987,53 @@ $ docker pull ghost@sha256:4574cddb7a7ca8560e0eab755aae6aec661687038a66e093b5125
 ADD alpine-minirootfs-3.22.0-armv7.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -1042,81 +1042,81 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 3.2 MB (3219181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fee604b140f3e08926101a61473a1efee5235c8c8c16f6efa1ae1313ac97eb2`  
-		Last Modified: Mon, 23 Jun 2025 14:37:16 GMT  
-		Size: 40.7 MB (40710563 bytes)  
+	-	`sha256:1af8f0453286244fc3585ba8a3c10d8f9c8dc2c35cf67df22efc79e28cfb1e3d`  
+		Last Modified: Tue, 08 Jul 2025 02:27:08 GMT  
+		Size: 40.7 MB (40710931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51df983d6609d1b60649e3e7743675f5be531469866831616e2251ffc75d2cde`  
-		Last Modified: Mon, 23 Jun 2025 14:37:15 GMT  
-		Size: 1.3 MB (1260555 bytes)  
+	-	`sha256:569c04e4b10df975c84b5310832babb917bd5fd2907a59994e861e24cd10d7da`  
+		Last Modified: Tue, 08 Jul 2025 02:26:57 GMT  
+		Size: 1.3 MB (1260558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac1199f90ea2a9661f2954935947c6a4cfd49acec0a8c90a766af4b64dd01ae`  
-		Last Modified: Mon, 23 Jun 2025 14:37:15 GMT  
+	-	`sha256:6f61572d40bf129e3afcebfe3ed224a232daa9eb0d64ff0ed202056d5660a1b3`  
+		Last Modified: Tue, 08 Jul 2025 02:26:55 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e3e6c05cd2c05d18f2ef35392d3cf058d73ec7b5071aba820d9ffa7252388e4`  
-		Last Modified: Mon, 23 Jun 2025 15:23:14 GMT  
-		Size: 701.5 KB (701469 bytes)  
+	-	`sha256:986d0fab50bcdd747575cbcfc01ab851349ce3686e4267b49c5fbdc61cc81547`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 701.5 KB (701475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efb16844acf86f2a94e3b0ea985f5f9c838a1330f9583b36cb48b6ebb19f5b58`  
-		Last Modified: Mon, 23 Jun 2025 15:23:15 GMT  
-		Size: 1.1 MB (1090234 bytes)  
+	-	`sha256:4b0050197e152f9a34377afb8a8c09804f3719e86531df0fdef72204de07c82f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 1.1 MB (1090229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff8718575b25ab4eaf0f79a16f6a47eb7ad2b80b8b53ffedb4d273e92c05232f`  
-		Last Modified: Mon, 23 Jun 2025 15:23:16 GMT  
-		Size: 169.0 B  
+	-	`sha256:67844688851f22b881052bbb291ff921fa4be3ae1a9cb59acb52d52b76b73c99`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a52169ae547780e3eb40de6eb770831b5132b1d607fe0e94d2dc44b330c1363f`  
-		Last Modified: Mon, 23 Jun 2025 15:23:19 GMT  
-		Size: 11.1 MB (11127910 bytes)  
+	-	`sha256:b16788a2a6acd18ab8b056fa5edeccbb0ba2c2edb81dabd11701da42a19e0ccf`  
+		Last Modified: Tue, 08 Jul 2025 04:18:30 GMT  
+		Size: 11.1 MB (11146939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9039f71e7dec45b8c0b80a74f10d4931b61eb41eefcd88153cfcb36aac96439`  
-		Last Modified: Thu, 03 Jul 2025 17:37:37 GMT  
-		Size: 119.5 MB (119462424 bytes)  
+	-	`sha256:57a0fe9a89f60b8f3eacaaab5186b8ba2c22a85ac80577760806a074e54cb96f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:05 GMT  
+		Size: 119.5 MB (119471939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1c14c789e52dda08dedd747a48600d76a8f98a54ac26c9f0dafd16f6716ee4e`  
-		Last Modified: Thu, 03 Jul 2025 17:37:31 GMT  
-		Size: 543.0 B  
+	-	`sha256:e0a1f488444b4ddfa17ebfedbc9d286d700c152faf9eaa2ea3e65b3a5c78cbd0`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:d784e18fd360c38841e150c9d7fb6cec770f9d7965c63eae8470e4832d3607ad
+$ docker pull ghost@sha256:770e103232dd24c4047cf0cc768897b9b053da05dcb39fff4e330ad2637d8002
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3345931 bytes)**  
+-	Total Size: **3.3 MB (3348229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7df84df55f8001868f391ec795e1342e3847e6d3a77d75613bde93eb2450c1c`
+-	Image ID: `sha256:45c1031b470006853f55f11dd21eeb038e47e009019adf508a8bd9f98a71b166`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98cc3dd92483c384d7c58eb0103cb64458e1c5006281cf702f3288f676bdfab2`  
-		Last Modified: Thu, 03 Jul 2025 18:45:55 GMT  
-		Size: 3.3 MB (3313519 bytes)  
+	-	`sha256:e42a7e488d74855d327543a46c871a2ce2c197bf05436d8f71e2ff79eb4e62f1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:41 GMT  
+		Size: 3.3 MB (3315817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2334ea2629a986ab0d61a8f281c136d925131900ab0f02217180ec02038b4332`  
-		Last Modified: Thu, 03 Jul 2025 18:45:55 GMT  
+	-	`sha256:07fa42b3d4fcf54d40fd6d4f5d1752c841dc86d41818b26ec9b829cff95adf39`  
+		Last Modified: Tue, 08 Jul 2025 06:45:42 GMT  
 		Size: 32.4 KB (32412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:5-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:a34645b0defcebfed132bb08b4e6b7db8da3d7c33651f8b921e7b43ad941e1f7
+$ docker pull ghost@sha256:b54c0115b60ba5d50cbc47696fcd189306faaf26b88e401a8e394f22decb3669
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.7 MB (185672324 bytes)**  
+-	Total Size: **185.7 MB (185677526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4795aedb574a7be5e54d468c023914d4c94cf9ec4a5f570a8344dc220c9819ae`
+-	Image ID: `sha256:f9847e2e439344833f5fcb9eb711e9bee9bfe8fdced99f1dde728f9ba89a44bd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -1125,53 +1125,53 @@ $ docker pull ghost@sha256:a34645b0defcebfed132bb08b4e6b7db8da3d7c33651f8b921e7b
 ADD alpine-minirootfs-3.22.0-aarch64.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -1180,75 +1180,75 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
 		Size: 4.1 MB (4135941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04f90736806149fae6bdd9158756b2e36e26d1332fdfaa542b8c76e51eaab5a3`  
-		Last Modified: Mon, 23 Jun 2025 13:42:24 GMT  
-		Size: 42.7 MB (42667990 bytes)  
+	-	`sha256:9215b0a148ff3034ab9411f4d2e0d61eed84cbde6dfe6a8918b7f600e9036425`  
+		Last Modified: Tue, 08 Jul 2025 01:59:07 GMT  
+		Size: 42.7 MB (42667691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:751664c7a20cd031b347bb6f784e7fa0a9d085ae80edaefb73b64aadba63c3fe`  
-		Last Modified: Mon, 23 Jun 2025 13:42:22 GMT  
-		Size: 1.3 MB (1260574 bytes)  
+	-	`sha256:3869675952ff338363bb3aa7dadff48b0ddbbc67e295d7dcd2006fb657598d8b`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 1.3 MB (1260570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9341dd6887d334d194b9fa729e3a082ff648e4e107df376db106d0fee8d8bfb`  
-		Last Modified: Mon, 23 Jun 2025 13:42:21 GMT  
-		Size: 443.0 B  
+	-	`sha256:51ca5d5c78d31635cdd22016fb1a5a8bda0711a6f6315d9c84982b2b0182d854`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 442.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86e38ed0820ba085c392dfe5fbf1a9be23509ed9d3cddc9aba5dd242c9cd0448`  
-		Last Modified: Mon, 23 Jun 2025 14:17:02 GMT  
-		Size: 838.6 KB (838576 bytes)  
+	-	`sha256:6b053d9563bbe8f87afaac7c3dd3fd9333f3d3c27c6a157df06ab616c626f121`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 838.6 KB (838581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f133112eefb395c63b78fc1032a6564650d72b6b4ed321f791134f7002721dff`  
-		Last Modified: Mon, 23 Jun 2025 14:17:00 GMT  
-		Size: 1.1 MB (1054616 bytes)  
+	-	`sha256:16bcef15e0e11cb5de302133686de8640509581a9139bd5432708d0b7807c64f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:06 GMT  
+		Size: 1.1 MB (1054611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9086761dd8381cad3d88f41567c672393ed348965eb73a99eaa882f5106c3dfb`  
-		Last Modified: Mon, 23 Jun 2025 14:17:00 GMT  
-		Size: 170.0 B  
+	-	`sha256:c3f66490e6fccc4c3005bdf8c7a21e2cd5f0400ff3b2a78fc60a32b0622b0ed2`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6e4244711aa942bb071b756ae76ad19a2cd7f050058b6af7124487e5b8e944`  
-		Last Modified: Mon, 23 Jun 2025 14:17:01 GMT  
-		Size: 11.1 MB (11128245 bytes)  
+	-	`sha256:fdd8eb481f8ea682db9ea98ccd5dc35ef92b4ccb39f4cd38d01194141e50569f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:07 GMT  
+		Size: 11.1 MB (11147014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83f20e1958b9055c75d398043d91269564b3a8e5ed9ad908f259b046bb8cc901`  
-		Last Modified: Thu, 03 Jul 2025 17:28:18 GMT  
-		Size: 124.6 MB (124585193 bytes)  
+	-	`sha256:4ae84c53e456f80e7b72106a5b3ae38f11bfe8fe3c2a322d9b5a012ae3805040`  
+		Last Modified: Tue, 08 Jul 2025 05:02:12 GMT  
+		Size: 124.6 MB (124571937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08bdba3652d4d8157bf643349facddaf4f2ef181e1777e05775856050844138d`  
-		Last Modified: Thu, 03 Jul 2025 17:28:01 GMT  
-		Size: 544.0 B  
+	-	`sha256:657e5ac4d86f466ca5dc1dc61eb44e80b75cd8105d6b5ed279d48c9569e954cf`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:34f72dfe779a18d44c53042f713f285f16fc30dadeb249d6bbc478c85b7d3bb1
+$ docker pull ghost@sha256:feea3d7d719c43e00d86e59811560e531f76d250d9902eb242cc6a1325a84f03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3349054 bytes)**  
+-	Total Size: **3.4 MB (3351352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8617d50dec9f5f5236c16f3070eb8709b8b1534b30235101f77a6bc217a5da9e`
+-	Image ID: `sha256:603e91d2ceb2df084389454bad0093df659480d23fb2196a400a365cc5c6de49`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f836dd5201a0691d8ecca299295069090744b248f27db436e51d8a8a565420d0`  
-		Last Modified: Thu, 03 Jul 2025 18:45:59 GMT  
-		Size: 3.3 MB (3316606 bytes)  
+	-	`sha256:638f0aae5cf48d61fdf3077839c600c6ceb74860e95dbecb685bb60c24a78fd1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:45 GMT  
+		Size: 3.3 MB (3318904 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18892407ba4aeed88e43ec84bdd95e17d1057b86f9ef33d9f18bc1b74475a496`  
-		Last Modified: Thu, 03 Jul 2025 18:45:59 GMT  
+	-	`sha256:391d7ac578ab2e22107a52e4478ac1ba8a5c90230712d3d74f8db52d073287a0`  
+		Last Modified: Tue, 08 Jul 2025 06:45:46 GMT  
 		Size: 32.4 KB (32448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ghost:5.129`
 
 ```console
-$ docker pull ghost@sha256:78f9f3cf3ce40557f687f7b6edc79b96e1282d00d2d221816839a134ccbacf7b
+$ docker pull ghost@sha256:35d81f748ebebd22ed8100617e8c3371549ac8a83701a77a2f8ed1c98d821de7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1397,64 +1397,64 @@ $ docker pull ghost@sha256:d759636445595ee85d7b0dc3cb6923f5a4f9736e5f2421877477a
 ### `ghost:5.129` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:3e3837fe063eea9331f3eb5976b03a37e121ba563d070e776d5dd537c6e71e11
+$ docker pull ghost@sha256:a99150031b91e8987bf877dbb2db229f9199bad16879e750fb5cf5f71b755fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.2 MB (195157120 bytes)**  
+-	Total Size: **195.1 MB (195136326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a15cf7a790b59c9ce73525bb29e0d4e0120f083d49d3527a65fffa1ae3291f8`
+-	Image ID: `sha256:40addd50656bd504528e9518684dc95b4f46e99fd909fb3f0cbe2e4cc6f492c7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -1467,124 +1467,124 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
 		Size: 3.3 KB (3306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aec88477a3abb2eafe1d149461ff1972583dffa5e2691bdf317858b41d1a04bc`  
-		Last Modified: Tue, 01 Jul 2025 09:27:01 GMT  
-		Size: 37.3 MB (37275412 bytes)  
+	-	`sha256:ea20d5e020643cbb0af81b95a3f831cd891de65ea7a496365ada0a430acaec2a`  
+		Last Modified: Tue, 08 Jul 2025 02:29:50 GMT  
+		Size: 37.3 MB (37275408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b16bf2f61e07d978d7b5067d8399889bebc5b4a0b69a5cc14034e7cfd78a3bf`  
-		Last Modified: Tue, 01 Jul 2025 09:26:57 GMT  
-		Size: 1.7 MB (1712740 bytes)  
+	-	`sha256:5667beec63918909b2f737da9993d6245952e94444f08e30adee68f4eac029a0`  
+		Last Modified: Tue, 08 Jul 2025 02:29:28 GMT  
+		Size: 1.7 MB (1712702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0836d4f7ecf3a3b928239f07740b8b5cd09139c9b842ab0c5ef83cb56b48dae8`  
-		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
+	-	`sha256:907e69f81293e0e42190fd1417126ee6ba71bf1d64a9a38c3ca8f1a02caa6382`  
+		Last Modified: Tue, 08 Jul 2025 02:29:29 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05d7f2f77360628492c512fa8e8690c5e8160b3fd006d855635bec1823c242f2`  
-		Last Modified: Tue, 01 Jul 2025 21:11:19 GMT  
-		Size: 1.4 MB (1412598 bytes)  
+	-	`sha256:de34fb63ae2ef8ea84f5b143d35e3df6fa920013497ff6b6d4425a00bb9f695b`  
+		Last Modified: Tue, 08 Jul 2025 05:11:59 GMT  
+		Size: 1.4 MB (1412588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:584eee2049bee7cca4ec0c5a7abf5ea3ab7c98b6c496b516b1329aa4ae448e51`  
-		Last Modified: Tue, 01 Jul 2025 21:11:20 GMT  
-		Size: 11.1 MB (11146873 bytes)  
+	-	`sha256:9484b3e58191d4f04612bf8192350043c0dbb7f38782ee0394e87df59c1d9002`  
+		Last Modified: Tue, 08 Jul 2025 07:20:35 GMT  
+		Size: 11.1 MB (11146842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a618dfc93137c134457e4e18d4cc2c939226f4a524a937b62960926ee599e38`  
-		Last Modified: Thu, 03 Jul 2025 17:31:16 GMT  
-		Size: 119.7 MB (119666425 bytes)  
+	-	`sha256:91aca5d55bc9c06f2558819f3aa3bd8814af8af6464497c5f28960322e3dccc3`  
+		Last Modified: Tue, 08 Jul 2025 04:10:57 GMT  
+		Size: 119.6 MB (119645716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ada50413d1119875942ffcbed790aab8f42bb025cc80ec12e3bcf095df2d39d`  
-		Last Modified: Thu, 03 Jul 2025 17:31:02 GMT  
-		Size: 543.0 B  
+	-	`sha256:cceb6ddd0edfad3df253d0281c8ac1dadfe95fac9f2e608ec90b0662be39d178`  
+		Last Modified: Tue, 08 Jul 2025 05:12:06 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5.129` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:96e2d3c0fc0c41f9599b7c1dbe573bce00515855fac01220c06431c808bb6073
+$ docker pull ghost@sha256:7798653435dd525cd1ab8f263783bc0766dfb1e15a21d2e6e76ddc05f9eb84c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5561969 bytes)**  
+-	Total Size: **5.6 MB (5561970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c8a300da26809bdd7c983178a0a0a383dfa5f451c2e4b16b30b7a6dbb6a6423`
+-	Image ID: `sha256:8eb09274c7f58247da0064335cac5729c17b413928495440af910223a809c8d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2242e891a9f69c7c9de7ff1bd2483a6970db20ada729a0f72d8bf922a96f312b`  
-		Last Modified: Thu, 03 Jul 2025 18:45:40 GMT  
+	-	`sha256:1424556a7bb5523c99e618f19adbb508c32a133caa10b8a843514d310b8db0f9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:29 GMT  
 		Size: 5.5 MB (5532558 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b24409bdca108b5512ba310f458f334a68922e48ae13cfce86a94d14d7c082b`  
-		Last Modified: Thu, 03 Jul 2025 18:45:40 GMT  
-		Size: 29.4 KB (29411 bytes)  
+	-	`sha256:554e22c0141ccc381b0296e2442fc9a2457919d1a85b58c59dc46d7da456b0c7`  
+		Last Modified: Tue, 08 Jul 2025 06:45:30 GMT  
+		Size: 29.4 KB (29412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:5.129` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:a92d49a5d92b88564653fbaf6c0c4b8d803ef0752cf14dee4411c6b21be9ffd7
+$ docker pull ghost@sha256:05754c7519be5c3c5e6cbd9a6e6a173ab353e0ebb3e473d8c3e1faa1d7948240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.7 MB (191686614 bytes)**  
+-	Total Size: **191.7 MB (191685126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e3222783d5fa32a73f50fe7a16853bea40b0b51ff4a117b90703a77394e36ae`
+-	Image ID: `sha256:f4e3f276b2bf38a304d7c4ae6c04c1fb7bbfab340724b1e220e524eda53799bb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -1597,60 +1597,60 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 07:26:39 GMT  
 		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fa8f27a92d9c21b1f86c5bb3c25357bde949f1ceb5f9308ab2682f77c4258fa`  
-		Last Modified: Tue, 01 Jul 2025 07:28:57 GMT  
-		Size: 41.2 MB (41153530 bytes)  
+	-	`sha256:752abc28a45cce18393f969d6c32f71a8718ac5018044c0434c7d72347ec73e3`  
+		Last Modified: Tue, 08 Jul 2025 02:01:11 GMT  
+		Size: 41.2 MB (41153528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e73a31be4962e48e8b85176193bca700c3c05bf02906962db98f336cd8ab606`  
-		Last Modified: Tue, 01 Jul 2025 07:28:54 GMT  
-		Size: 1.7 MB (1712567 bytes)  
+	-	`sha256:65a28d5a7831997036fc8314909c7994f7058a153c9edd1567ac7808e763e169`  
+		Last Modified: Tue, 08 Jul 2025 02:01:09 GMT  
+		Size: 1.7 MB (1712540 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b76a3e047cc7ff000fd1b78a75f1a22c819e978499c544a54e78285b5e86aebe`  
-		Last Modified: Tue, 01 Jul 2025 07:28:54 GMT  
-		Size: 447.0 B  
+	-	`sha256:93ab47dbc72640f8eaabc6ccf945d46719852a938427f18312db7e4d556bb1b8`  
+		Last Modified: Tue, 08 Jul 2025 02:01:08 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61ebe739f7e39e54a43a7f5eafd4401e3b1d127ab145e764d1ac64fae36f777e`  
-		Last Modified: Wed, 02 Jul 2025 04:02:42 GMT  
-		Size: 1.4 MB (1376655 bytes)  
+	-	`sha256:7058c1ab2a0c96dd70062ae0cc6ad60f8a4d15e03537bf5164abcf4dfc85e710`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
+		Size: 1.4 MB (1376681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc741ac39afeaffc15d01fb38bb2ba7aa9ac88c42241913a3aa16e674d7dac3e`  
-		Last Modified: Wed, 02 Jul 2025 04:02:43 GMT  
-		Size: 11.1 MB (11147097 bytes)  
+	-	`sha256:8dcf9a4c6206f827c5593cbfa8d78304e0fb504c1eeee32737411fba8f065bad`  
+		Last Modified: Tue, 08 Jul 2025 04:57:42 GMT  
+		Size: 11.1 MB (11146910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ec44163032e0867f5ef5490698fe9a1011210de09cef2d22b1d7489baefcf76`  
-		Last Modified: Thu, 03 Jul 2025 17:24:25 GMT  
-		Size: 108.2 MB (108214758 bytes)  
+	-	`sha256:15c97512150d4aa35439f9844300cc4da66715683b2df58ac3fd66f93eeaf0c9`  
+		Last Modified: Tue, 08 Jul 2025 04:57:48 GMT  
+		Size: 108.2 MB (108213459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b7a1062ac74c7e49f599256605dc4265e0c290c512dc200ddd8309e8de58873`  
-		Last Modified: Thu, 03 Jul 2025 17:24:15 GMT  
+	-	`sha256:9303638a23164a0bc6288b8e049a5f6382751ce44fc0d42336978b670cdbd1d0`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
 		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5.129` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:37b13d41bf1ddb0b96f253ab26bebe589375ba67d0796bb295a4229a3130a38f
+$ docker pull ghost@sha256:5753ac8aa6a216ea7bb080b19fd9177572cefe133bebc9ae84014f2202a4c5ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5559542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c55e69fcf2a82d8e8050785ce3c2277ef07c55925222d2bce82013fec0abc8d3`
+-	Image ID: `sha256:4ff31df212b73bd389470e35c1b1f6422a56cbe6cec7c4c4c5a0dfda37fecf6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf6f2b5a825e065f43293d40bf04842b909182eb21fcb0b9f8ca399cf6ce30ff`  
-		Last Modified: Thu, 03 Jul 2025 18:45:45 GMT  
+	-	`sha256:d1b10f73ba4334363329c7d918509c8e03420ccaa47834ba63e9704530671917`  
+		Last Modified: Tue, 08 Jul 2025 06:45:34 GMT  
 		Size: 5.5 MB (5530098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11093b6d3a7626ceb7b817fa3bd9b61ed074777f819423883078bb046a2d0ecf`  
-		Last Modified: Thu, 03 Jul 2025 18:45:46 GMT  
+	-	`sha256:41c135465e6fecd2a99cfd7cf3cc4bbca3bc6805cb1869b74c9a1f5d82e3957d`  
+		Last Modified: Tue, 08 Jul 2025 06:45:35 GMT  
 		Size: 29.4 KB (29444 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1787,64 +1787,64 @@ $ docker pull ghost@sha256:a608b1364e68a0d44a39d0077aed6653d272cb7c583ec1962a908
 ### `ghost:5.129` - linux; s390x
 
 ```console
-$ docker pull ghost@sha256:d6beee31d19eda991aebcfbfdeeae7021014151e5cd68773541c35b3798f60b5
+$ docker pull ghost@sha256:59666d613e19cf542bf6ce926c724cbb895205dbf3af1d15428a4e1127ce7ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.3 MB (204349401 bytes)**  
+-	Total Size: **204.3 MB (204320742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07ed31a11c818e1f242f6c865686549882b4de583d0f02496c7792aedfcfdd96`
+-	Image ID: `sha256:4775cf386dd6568a1614fc483af63f55f5ddefa3ec0a21221f9bf127e3c1afc8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -1857,67 +1857,67 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 05:47:32 GMT  
 		Size: 3.3 KB (3312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:515c3c34b70c95a043894fe7035e66c59d21d8f786319f161b645711e9b33994`  
-		Last Modified: Tue, 01 Jul 2025 05:49:26 GMT  
-		Size: 41.4 MB (41439076 bytes)  
+	-	`sha256:f242ba5bc72210f1dddedaa08936ac3e5c032bb4631a8f3aec8c92431a5e6122`  
+		Last Modified: Tue, 08 Jul 2025 02:34:25 GMT  
+		Size: 41.4 MB (41439083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e62c391502ad61a15025057cb02863d4311e0680919387ee447d88df0c3a36`  
-		Last Modified: Tue, 01 Jul 2025 05:49:18 GMT  
-		Size: 1.7 MB (1712556 bytes)  
+	-	`sha256:fe94503260b1496063d5e1968cc94836bd2dc6ff8e806fc7e25b2204bc385288`  
+		Last Modified: Tue, 08 Jul 2025 02:34:23 GMT  
+		Size: 1.7 MB (1712561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b5101d913e1a8b2507c4c8b39ea7e3adb01f1ae438d52ac83ceee5acefd55bd`  
-		Last Modified: Tue, 01 Jul 2025 05:49:17 GMT  
+	-	`sha256:ea13ff0ad2126d851e6acef47b419db88d7fd3e3a22d4ba0428fe52307cd6305`  
+		Last Modified: Tue, 08 Jul 2025 02:34:22 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fcae7fa2b6e4ba7756fc50c404cf291a94a3dcbce19e2027dc44851e6992cb7`  
-		Last Modified: Tue, 01 Jul 2025 11:09:54 GMT  
-		Size: 1.4 MB (1410185 bytes)  
+	-	`sha256:2275a102518200b1377b5a9bede03c5027895ce5d498dac314547fb429994068`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
+		Size: 1.4 MB (1410165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df439adee2fbec75e5408b63ca5c96409ae00e7535ed5a6c4803ab1e2d68749`  
-		Last Modified: Wed, 02 Jul 2025 01:51:37 GMT  
-		Size: 11.1 MB (11147569 bytes)  
+	-	`sha256:2de1c66fea11623ed618f8c62b3412f7e48140c47603236f635a60ceaebbf23f`  
+		Last Modified: Tue, 08 Jul 2025 05:37:33 GMT  
+		Size: 11.1 MB (11146513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7503a0cfe5293fdeaa0d81c36661f3379b01dfefd5eb1ade4c1ff326b4e4bfd`  
-		Last Modified: Thu, 03 Jul 2025 17:29:53 GMT  
-		Size: 121.7 MB (121747871 bytes)  
+	-	`sha256:f703024d73ef762be3c967ba42693420af4a3c18c96f91be2e2a19850f9a2eaf`  
+		Last Modified: Tue, 08 Jul 2025 05:37:39 GMT  
+		Size: 121.7 MB (121720276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e771bc06de8486d5d8e7fdef546b065f506420e441f4fdac8cdfd8b1de3dae37`  
-		Last Modified: Thu, 03 Jul 2025 17:29:42 GMT  
+	-	`sha256:d79887fd33093fde35e2cd55e5d33aa01b6f82ebf6b0dc4b886e419fd3b47474`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5.129` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:51509da5813f3386a29563884939ef234c1652457284d49e08f71af76ca0b60a
+$ docker pull ghost@sha256:b8bf63841769748c19cf5b3c90498927cb7b909290cca81437157f8329e7036e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5552928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1cc570973416e71cd9015bb2bb2448b25f9d87245823c04c36691bcff6da322`
+-	Image ID: `sha256:d94ff5a9e5d57814bd50472e8fa27a010db0f1b541fc66fa064f81d2c8446f42`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b194e9ce10da632c4c1776dfd22d85d6fad1e57976c42f6bdb95b9c8915825c`  
-		Last Modified: Thu, 03 Jul 2025 18:45:56 GMT  
+	-	`sha256:ed51287adea80fb227f5665084b52aa72a8eadaf04706ba3308edcccbe425573`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
 		Size: 5.5 MB (5523618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:63edfa7d5126bfabae599e7c7f332dcc6bc3b754e008e246d3cc8c95e6616a7f`  
-		Last Modified: Thu, 03 Jul 2025 18:45:57 GMT  
+	-	`sha256:81c495ddb6518c75460852457bacfce29e1144f77d6745ad704d3b6cb313dee9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
 		Size: 29.3 KB (29310 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ghost:5.129-alpine`
 
 ```console
-$ docker pull ghost@sha256:d590d65fb4e593f37fc36a4b7a9f624065dcf452383f79dc785c5e409339e05c
+$ docker pull ghost@sha256:35e4d53e2a893d8c70dfa46a78f7420633715b169ce51bb2ef99d2bc9b56042e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2206,13 +2206,13 @@ $ docker pull ghost@sha256:2838044ac1257650025a63c281d8fc36ae94a1f192fd64eeed899
 ### `ghost:5.129-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:4574cddb7a7ca8560e0eab755aae6aec661687038a66e093b5125edd7f7fcc36
+$ docker pull ghost@sha256:d65156baf0edc6fa9d769eb1939110896838e8cf5c192a7c7c41b2f9d44b7eff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.6 MB (177573527 bytes)**  
+-	Total Size: **177.6 MB (177602438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4db2cce72238bd7be1ddd883ebb0c7bb759f7d663a1d3927bb10a76f10a1c87`
+-	Image ID: `sha256:281a2e7d2be42dcd62cb4cb5647720eada9687e35465f01b4e5ee250122b449f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -2221,53 +2221,53 @@ $ docker pull ghost@sha256:4574cddb7a7ca8560e0eab755aae6aec661687038a66e093b5125
 ADD alpine-minirootfs-3.22.0-armv7.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -2276,81 +2276,81 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 3.2 MB (3219181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fee604b140f3e08926101a61473a1efee5235c8c8c16f6efa1ae1313ac97eb2`  
-		Last Modified: Mon, 23 Jun 2025 14:37:16 GMT  
-		Size: 40.7 MB (40710563 bytes)  
+	-	`sha256:1af8f0453286244fc3585ba8a3c10d8f9c8dc2c35cf67df22efc79e28cfb1e3d`  
+		Last Modified: Tue, 08 Jul 2025 02:27:08 GMT  
+		Size: 40.7 MB (40710931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51df983d6609d1b60649e3e7743675f5be531469866831616e2251ffc75d2cde`  
-		Last Modified: Mon, 23 Jun 2025 14:37:15 GMT  
-		Size: 1.3 MB (1260555 bytes)  
+	-	`sha256:569c04e4b10df975c84b5310832babb917bd5fd2907a59994e861e24cd10d7da`  
+		Last Modified: Tue, 08 Jul 2025 02:26:57 GMT  
+		Size: 1.3 MB (1260558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac1199f90ea2a9661f2954935947c6a4cfd49acec0a8c90a766af4b64dd01ae`  
-		Last Modified: Mon, 23 Jun 2025 14:37:15 GMT  
+	-	`sha256:6f61572d40bf129e3afcebfe3ed224a232daa9eb0d64ff0ed202056d5660a1b3`  
+		Last Modified: Tue, 08 Jul 2025 02:26:55 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e3e6c05cd2c05d18f2ef35392d3cf058d73ec7b5071aba820d9ffa7252388e4`  
-		Last Modified: Mon, 23 Jun 2025 15:23:14 GMT  
-		Size: 701.5 KB (701469 bytes)  
+	-	`sha256:986d0fab50bcdd747575cbcfc01ab851349ce3686e4267b49c5fbdc61cc81547`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 701.5 KB (701475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efb16844acf86f2a94e3b0ea985f5f9c838a1330f9583b36cb48b6ebb19f5b58`  
-		Last Modified: Mon, 23 Jun 2025 15:23:15 GMT  
-		Size: 1.1 MB (1090234 bytes)  
+	-	`sha256:4b0050197e152f9a34377afb8a8c09804f3719e86531df0fdef72204de07c82f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 1.1 MB (1090229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff8718575b25ab4eaf0f79a16f6a47eb7ad2b80b8b53ffedb4d273e92c05232f`  
-		Last Modified: Mon, 23 Jun 2025 15:23:16 GMT  
-		Size: 169.0 B  
+	-	`sha256:67844688851f22b881052bbb291ff921fa4be3ae1a9cb59acb52d52b76b73c99`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a52169ae547780e3eb40de6eb770831b5132b1d607fe0e94d2dc44b330c1363f`  
-		Last Modified: Mon, 23 Jun 2025 15:23:19 GMT  
-		Size: 11.1 MB (11127910 bytes)  
+	-	`sha256:b16788a2a6acd18ab8b056fa5edeccbb0ba2c2edb81dabd11701da42a19e0ccf`  
+		Last Modified: Tue, 08 Jul 2025 04:18:30 GMT  
+		Size: 11.1 MB (11146939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9039f71e7dec45b8c0b80a74f10d4931b61eb41eefcd88153cfcb36aac96439`  
-		Last Modified: Thu, 03 Jul 2025 17:37:37 GMT  
-		Size: 119.5 MB (119462424 bytes)  
+	-	`sha256:57a0fe9a89f60b8f3eacaaab5186b8ba2c22a85ac80577760806a074e54cb96f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:05 GMT  
+		Size: 119.5 MB (119471939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1c14c789e52dda08dedd747a48600d76a8f98a54ac26c9f0dafd16f6716ee4e`  
-		Last Modified: Thu, 03 Jul 2025 17:37:31 GMT  
-		Size: 543.0 B  
+	-	`sha256:e0a1f488444b4ddfa17ebfedbc9d286d700c152faf9eaa2ea3e65b3a5c78cbd0`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5.129-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:d784e18fd360c38841e150c9d7fb6cec770f9d7965c63eae8470e4832d3607ad
+$ docker pull ghost@sha256:770e103232dd24c4047cf0cc768897b9b053da05dcb39fff4e330ad2637d8002
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3345931 bytes)**  
+-	Total Size: **3.3 MB (3348229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7df84df55f8001868f391ec795e1342e3847e6d3a77d75613bde93eb2450c1c`
+-	Image ID: `sha256:45c1031b470006853f55f11dd21eeb038e47e009019adf508a8bd9f98a71b166`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98cc3dd92483c384d7c58eb0103cb64458e1c5006281cf702f3288f676bdfab2`  
-		Last Modified: Thu, 03 Jul 2025 18:45:55 GMT  
-		Size: 3.3 MB (3313519 bytes)  
+	-	`sha256:e42a7e488d74855d327543a46c871a2ce2c197bf05436d8f71e2ff79eb4e62f1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:41 GMT  
+		Size: 3.3 MB (3315817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2334ea2629a986ab0d61a8f281c136d925131900ab0f02217180ec02038b4332`  
-		Last Modified: Thu, 03 Jul 2025 18:45:55 GMT  
+	-	`sha256:07fa42b3d4fcf54d40fd6d4f5d1752c841dc86d41818b26ec9b829cff95adf39`  
+		Last Modified: Tue, 08 Jul 2025 06:45:42 GMT  
 		Size: 32.4 KB (32412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:5.129-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:a34645b0defcebfed132bb08b4e6b7db8da3d7c33651f8b921e7b43ad941e1f7
+$ docker pull ghost@sha256:b54c0115b60ba5d50cbc47696fcd189306faaf26b88e401a8e394f22decb3669
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.7 MB (185672324 bytes)**  
+-	Total Size: **185.7 MB (185677526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4795aedb574a7be5e54d468c023914d4c94cf9ec4a5f570a8344dc220c9819ae`
+-	Image ID: `sha256:f9847e2e439344833f5fcb9eb711e9bee9bfe8fdced99f1dde728f9ba89a44bd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -2359,53 +2359,53 @@ $ docker pull ghost@sha256:a34645b0defcebfed132bb08b4e6b7db8da3d7c33651f8b921e7b
 ADD alpine-minirootfs-3.22.0-aarch64.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -2414,82 +2414,88 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
 		Size: 4.1 MB (4135941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04f90736806149fae6bdd9158756b2e36e26d1332fdfaa542b8c76e51eaab5a3`  
-		Last Modified: Mon, 23 Jun 2025 13:42:24 GMT  
-		Size: 42.7 MB (42667990 bytes)  
+	-	`sha256:9215b0a148ff3034ab9411f4d2e0d61eed84cbde6dfe6a8918b7f600e9036425`  
+		Last Modified: Tue, 08 Jul 2025 01:59:07 GMT  
+		Size: 42.7 MB (42667691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:751664c7a20cd031b347bb6f784e7fa0a9d085ae80edaefb73b64aadba63c3fe`  
-		Last Modified: Mon, 23 Jun 2025 13:42:22 GMT  
-		Size: 1.3 MB (1260574 bytes)  
+	-	`sha256:3869675952ff338363bb3aa7dadff48b0ddbbc67e295d7dcd2006fb657598d8b`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 1.3 MB (1260570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9341dd6887d334d194b9fa729e3a082ff648e4e107df376db106d0fee8d8bfb`  
-		Last Modified: Mon, 23 Jun 2025 13:42:21 GMT  
-		Size: 443.0 B  
+	-	`sha256:51ca5d5c78d31635cdd22016fb1a5a8bda0711a6f6315d9c84982b2b0182d854`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 442.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86e38ed0820ba085c392dfe5fbf1a9be23509ed9d3cddc9aba5dd242c9cd0448`  
-		Last Modified: Mon, 23 Jun 2025 14:17:02 GMT  
-		Size: 838.6 KB (838576 bytes)  
+	-	`sha256:6b053d9563bbe8f87afaac7c3dd3fd9333f3d3c27c6a157df06ab616c626f121`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 838.6 KB (838581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f133112eefb395c63b78fc1032a6564650d72b6b4ed321f791134f7002721dff`  
-		Last Modified: Mon, 23 Jun 2025 14:17:00 GMT  
-		Size: 1.1 MB (1054616 bytes)  
+	-	`sha256:16bcef15e0e11cb5de302133686de8640509581a9139bd5432708d0b7807c64f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:06 GMT  
+		Size: 1.1 MB (1054611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9086761dd8381cad3d88f41567c672393ed348965eb73a99eaa882f5106c3dfb`  
-		Last Modified: Mon, 23 Jun 2025 14:17:00 GMT  
-		Size: 170.0 B  
+	-	`sha256:c3f66490e6fccc4c3005bdf8c7a21e2cd5f0400ff3b2a78fc60a32b0622b0ed2`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6e4244711aa942bb071b756ae76ad19a2cd7f050058b6af7124487e5b8e944`  
-		Last Modified: Mon, 23 Jun 2025 14:17:01 GMT  
-		Size: 11.1 MB (11128245 bytes)  
+	-	`sha256:fdd8eb481f8ea682db9ea98ccd5dc35ef92b4ccb39f4cd38d01194141e50569f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:07 GMT  
+		Size: 11.1 MB (11147014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83f20e1958b9055c75d398043d91269564b3a8e5ed9ad908f259b046bb8cc901`  
-		Last Modified: Thu, 03 Jul 2025 17:28:18 GMT  
-		Size: 124.6 MB (124585193 bytes)  
+	-	`sha256:4ae84c53e456f80e7b72106a5b3ae38f11bfe8fe3c2a322d9b5a012ae3805040`  
+		Last Modified: Tue, 08 Jul 2025 05:02:12 GMT  
+		Size: 124.6 MB (124571937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08bdba3652d4d8157bf643349facddaf4f2ef181e1777e05775856050844138d`  
-		Last Modified: Thu, 03 Jul 2025 17:28:01 GMT  
-		Size: 544.0 B  
+	-	`sha256:657e5ac4d86f466ca5dc1dc61eb44e80b75cd8105d6b5ed279d48c9569e954cf`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5.129-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:34f72dfe779a18d44c53042f713f285f16fc30dadeb249d6bbc478c85b7d3bb1
+$ docker pull ghost@sha256:feea3d7d719c43e00d86e59811560e531f76d250d9902eb242cc6a1325a84f03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3349054 bytes)**  
+-	Total Size: **3.4 MB (3351352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8617d50dec9f5f5236c16f3070eb8709b8b1534b30235101f77a6bc217a5da9e`
+-	Image ID: `sha256:603e91d2ceb2df084389454bad0093df659480d23fb2196a400a365cc5c6de49`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f836dd5201a0691d8ecca299295069090744b248f27db436e51d8a8a565420d0`  
-		Last Modified: Thu, 03 Jul 2025 18:45:59 GMT  
-		Size: 3.3 MB (3316606 bytes)  
+	-	`sha256:638f0aae5cf48d61fdf3077839c600c6ceb74860e95dbecb685bb60c24a78fd1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:45 GMT  
+		Size: 3.3 MB (3318904 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18892407ba4aeed88e43ec84bdd95e17d1057b86f9ef33d9f18bc1b74475a496`  
-		Last Modified: Thu, 03 Jul 2025 18:45:59 GMT  
+	-	`sha256:391d7ac578ab2e22107a52e4478ac1ba8a5c90230712d3d74f8db52d073287a0`  
+		Last Modified: Tue, 08 Jul 2025 06:45:46 GMT  
 		Size: 32.4 KB (32448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ghost:5.129.1`
 
 ```console
-$ docker pull ghost@sha256:9c3b9a062e46e986a1f1695a5dce2927bc36acbe6071b84e6e4a89e69d728904
+$ docker pull ghost@sha256:35d81f748ebebd22ed8100617e8c3371549ac8a83701a77a2f8ed1c98d821de7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; s390x
 	-	unknown; unknown
 
 ### `ghost:5.129.1` - linux; amd64
@@ -2622,6 +2628,266 @@ $ docker pull ghost@sha256:d759636445595ee85d7b0dc3cb6923f5a4f9736e5f2421877477a
 		Size: 29.3 KB (29309 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `ghost:5.129.1` - linux; arm variant v7
+
+```console
+$ docker pull ghost@sha256:a99150031b91e8987bf877dbb2db229f9199bad16879e750fb5cf5f71b755fbf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.1 MB (195136326 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:40addd50656bd504528e9518684dc95b4f46e99fd909fb3f0cbe2e4cc6f492c7`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["node","current\/index.js"]`
+
+```dockerfile
+# Mon, 30 Jun 2025 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV NODE_VERSION=20.19.3
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV YARN_VERSION=1.22.22
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+CMD ["node"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GOSU_VERSION=1.17
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV NODE_ENV=production
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CLI_VERSION=1.27.0
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_INSTALL=/var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CONTENT=/var/lib/ghost/content
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+WORKDIR /var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+VOLUME [/var/lib/ghost/content]
+# Fri, 04 Jul 2025 20:19:12 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+EXPOSE map[2368/tcp:{}]
+# Fri, 04 Jul 2025 20:19:12 GMT
+CMD ["node" "current/index.js"]
+```
+
+-	Layers:
+	-	`sha256:aa4115c1f73522274017cc9ef4668eb7be9359f354969cd6ffca48411714e948`  
+		Last Modified: Tue, 01 Jul 2025 01:14:42 GMT  
+		Size: 23.9 MB (23938744 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:04825ec3dea737a1a3dcd246d902b5302a6f33d00c351862701a080a888cb776`  
+		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
+		Size: 3.3 KB (3306 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ea20d5e020643cbb0af81b95a3f831cd891de65ea7a496365ada0a430acaec2a`  
+		Last Modified: Tue, 08 Jul 2025 02:29:50 GMT  
+		Size: 37.3 MB (37275408 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5667beec63918909b2f737da9993d6245952e94444f08e30adee68f4eac029a0`  
+		Last Modified: Tue, 08 Jul 2025 02:29:28 GMT  
+		Size: 1.7 MB (1712702 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:907e69f81293e0e42190fd1417126ee6ba71bf1d64a9a38c3ca8f1a02caa6382`  
+		Last Modified: Tue, 08 Jul 2025 02:29:29 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:de34fb63ae2ef8ea84f5b143d35e3df6fa920013497ff6b6d4425a00bb9f695b`  
+		Last Modified: Tue, 08 Jul 2025 05:11:59 GMT  
+		Size: 1.4 MB (1412588 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9484b3e58191d4f04612bf8192350043c0dbb7f38782ee0394e87df59c1d9002`  
+		Last Modified: Tue, 08 Jul 2025 07:20:35 GMT  
+		Size: 11.1 MB (11146842 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:91aca5d55bc9c06f2558819f3aa3bd8814af8af6464497c5f28960322e3dccc3`  
+		Last Modified: Tue, 08 Jul 2025 04:10:57 GMT  
+		Size: 119.6 MB (119645716 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cceb6ddd0edfad3df253d0281c8ac1dadfe95fac9f2e608ec90b0662be39d178`  
+		Last Modified: Tue, 08 Jul 2025 05:12:06 GMT  
+		Size: 541.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ghost:5.129.1` - unknown; unknown
+
+```console
+$ docker pull ghost@sha256:7798653435dd525cd1ab8f263783bc0766dfb1e15a21d2e6e76ddc05f9eb84c1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 MB (5561970 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8eb09274c7f58247da0064335cac5729c17b413928495440af910223a809c8d3`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1424556a7bb5523c99e618f19adbb508c32a133caa10b8a843514d310b8db0f9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:29 GMT  
+		Size: 5.5 MB (5532558 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:554e22c0141ccc381b0296e2442fc9a2457919d1a85b58c59dc46d7da456b0c7`  
+		Last Modified: Tue, 08 Jul 2025 06:45:30 GMT  
+		Size: 29.4 KB (29412 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `ghost:5.129.1` - linux; arm64 variant v8
+
+```console
+$ docker pull ghost@sha256:05754c7519be5c3c5e6cbd9a6e6a173ab353e0ebb3e473d8c3e1faa1d7948240
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **191.7 MB (191685126 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f4e3f276b2bf38a304d7c4ae6c04c1fb7bbfab340724b1e220e524eda53799bb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["node","current\/index.js"]`
+
+```dockerfile
+# Mon, 30 Jun 2025 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV NODE_VERSION=20.19.3
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV YARN_VERSION=1.22.22
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+CMD ["node"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GOSU_VERSION=1.17
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV NODE_ENV=production
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CLI_VERSION=1.27.0
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_INSTALL=/var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CONTENT=/var/lib/ghost/content
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+WORKDIR /var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+VOLUME [/var/lib/ghost/content]
+# Fri, 04 Jul 2025 20:19:12 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+EXPOSE map[2368/tcp:{}]
+# Fri, 04 Jul 2025 20:19:12 GMT
+CMD ["node" "current/index.js"]
+```
+
+-	Layers:
+	-	`sha256:37259e7330667afd74c3386d3ed869f06bd9b7714370c78e3065f4e28607cc02`  
+		Last Modified: Tue, 01 Jul 2025 01:15:09 GMT  
+		Size: 28.1 MB (28077678 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cb840baf5dc419950e7bb7240588a93459f25bee6bc6bbd035a5a1e17a755d78`  
+		Last Modified: Tue, 01 Jul 2025 07:26:39 GMT  
+		Size: 3.3 KB (3309 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:752abc28a45cce18393f969d6c32f71a8718ac5018044c0434c7d72347ec73e3`  
+		Last Modified: Tue, 08 Jul 2025 02:01:11 GMT  
+		Size: 41.2 MB (41153528 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:65a28d5a7831997036fc8314909c7994f7058a153c9edd1567ac7808e763e169`  
+		Last Modified: Tue, 08 Jul 2025 02:01:09 GMT  
+		Size: 1.7 MB (1712540 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93ab47dbc72640f8eaabc6ccf945d46719852a938427f18312db7e4d556bb1b8`  
+		Last Modified: Tue, 08 Jul 2025 02:01:08 GMT  
+		Size: 448.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7058c1ab2a0c96dd70062ae0cc6ad60f8a4d15e03537bf5164abcf4dfc85e710`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
+		Size: 1.4 MB (1376681 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8dcf9a4c6206f827c5593cbfa8d78304e0fb504c1eeee32737411fba8f065bad`  
+		Last Modified: Tue, 08 Jul 2025 04:57:42 GMT  
+		Size: 11.1 MB (11146910 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:15c97512150d4aa35439f9844300cc4da66715683b2df58ac3fd66f93eeaf0c9`  
+		Last Modified: Tue, 08 Jul 2025 04:57:48 GMT  
+		Size: 108.2 MB (108213459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9303638a23164a0bc6288b8e049a5f6382751ce44fc0d42336978b670cdbd1d0`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
+		Size: 541.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ghost:5.129.1` - unknown; unknown
+
+```console
+$ docker pull ghost@sha256:5753ac8aa6a216ea7bb080b19fd9177572cefe133bebc9ae84014f2202a4c5ae
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 MB (5559542 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4ff31df212b73bd389470e35c1b1f6422a56cbe6cec7c4c4c5a0dfda37fecf6b`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d1b10f73ba4334363329c7d918509c8e03420ccaa47834ba63e9704530671917`  
+		Last Modified: Tue, 08 Jul 2025 06:45:34 GMT  
+		Size: 5.5 MB (5530098 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:41c135465e6fecd2a99cfd7cf3cc4bbca3bc6805cb1869b74c9a1f5d82e3957d`  
+		Last Modified: Tue, 08 Jul 2025 06:45:35 GMT  
+		Size: 29.4 KB (29444 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ### `ghost:5.129.1` - linux; ppc64le
 
 ```console
@@ -2752,17 +3018,151 @@ $ docker pull ghost@sha256:a608b1364e68a0d44a39d0077aed6653d272cb7c583ec1962a908
 		Size: 29.4 KB (29358 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `ghost:5.129.1` - linux; s390x
+
+```console
+$ docker pull ghost@sha256:59666d613e19cf542bf6ce926c724cbb895205dbf3af1d15428a4e1127ce7ca5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **204.3 MB (204320742 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4775cf386dd6568a1614fc483af63f55f5ddefa3ec0a21221f9bf127e3c1afc8`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["node","current\/index.js"]`
+
+```dockerfile
+# Mon, 30 Jun 2025 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV NODE_VERSION=20.19.3
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV YARN_VERSION=1.22.22
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+CMD ["node"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GOSU_VERSION=1.17
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV NODE_ENV=production
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CLI_VERSION=1.27.0
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_INSTALL=/var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CONTENT=/var/lib/ghost/content
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+WORKDIR /var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+VOLUME [/var/lib/ghost/content]
+# Fri, 04 Jul 2025 20:19:12 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+EXPOSE map[2368/tcp:{}]
+# Fri, 04 Jul 2025 20:19:12 GMT
+CMD ["node" "current/index.js"]
+```
+
+-	Layers:
+	-	`sha256:46b41ca6e821ec27aa0ddf43e603c69ca49f20e377997e4087ed991c9635aa70`  
+		Last Modified: Tue, 01 Jul 2025 01:15:56 GMT  
+		Size: 26.9 MB (26887811 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79b2a3060fbea188fb3a256c28f2576b49c68d2e7304f74257599f342e9aa837`  
+		Last Modified: Tue, 01 Jul 2025 05:47:32 GMT  
+		Size: 3.3 KB (3312 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f242ba5bc72210f1dddedaa08936ac3e5c032bb4631a8f3aec8c92431a5e6122`  
+		Last Modified: Tue, 08 Jul 2025 02:34:25 GMT  
+		Size: 41.4 MB (41439083 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fe94503260b1496063d5e1968cc94836bd2dc6ff8e806fc7e25b2204bc385288`  
+		Last Modified: Tue, 08 Jul 2025 02:34:23 GMT  
+		Size: 1.7 MB (1712561 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ea13ff0ad2126d851e6acef47b419db88d7fd3e3a22d4ba0428fe52307cd6305`  
+		Last Modified: Tue, 08 Jul 2025 02:34:22 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2275a102518200b1377b5a9bede03c5027895ce5d498dac314547fb429994068`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
+		Size: 1.4 MB (1410165 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2de1c66fea11623ed618f8c62b3412f7e48140c47603236f635a60ceaebbf23f`  
+		Last Modified: Tue, 08 Jul 2025 05:37:33 GMT  
+		Size: 11.1 MB (11146513 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f703024d73ef762be3c967ba42693420af4a3c18c96f91be2e2a19850f9a2eaf`  
+		Last Modified: Tue, 08 Jul 2025 05:37:39 GMT  
+		Size: 121.7 MB (121720276 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d79887fd33093fde35e2cd55e5d33aa01b6f82ebf6b0dc4b886e419fd3b47474`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ghost:5.129.1` - unknown; unknown
+
+```console
+$ docker pull ghost@sha256:b8bf63841769748c19cf5b3c90498927cb7b909290cca81437157f8329e7036e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.6 MB (5552928 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d94ff5a9e5d57814bd50472e8fa27a010db0f1b541fc66fa064f81d2c8446f42`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ed51287adea80fb227f5665084b52aa72a8eadaf04706ba3308edcccbe425573`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
+		Size: 5.5 MB (5523618 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:81c495ddb6518c75460852457bacfce29e1144f77d6745ad704d3b6cb313dee9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
+		Size: 29.3 KB (29310 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ## `ghost:5.129.1-alpine`
 
 ```console
-$ docker pull ghost@sha256:858bcc4f22fc79e41c7dc53c02da137cc21b211618ad6529749f7f3867d83cd1
+$ docker pull ghost@sha256:35e4d53e2a893d8c70dfa46a78f7420633715b169ce51bb2ef99d2bc9b56042e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 8
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
 	-	unknown; unknown
 
 ### `ghost:5.129.1-alpine` - linux; amd64
@@ -3037,10 +3437,286 @@ $ docker pull ghost@sha256:2838044ac1257650025a63c281d8fc36ae94a1f192fd64eeed899
 		Size: 32.2 KB (32197 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `ghost:5.129.1-alpine` - linux; arm variant v7
+
+```console
+$ docker pull ghost@sha256:d65156baf0edc6fa9d769eb1939110896838e8cf5c192a7c7c41b2f9d44b7eff
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **177.6 MB (177602438 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:281a2e7d2be42dcd62cb4cb5647720eada9687e35465f01b4e5ee250122b449f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["node","current\/index.js"]`
+
+```dockerfile
+# Fri, 30 May 2025 16:20:41 GMT
+ADD alpine-minirootfs-3.22.0-armv7.tar.gz / # buildkit
+# Fri, 30 May 2025 16:20:41 GMT
+CMD ["/bin/sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV NODE_VERSION=20.19.3
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV YARN_VERSION=1.22.22
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+CMD ["node"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN apk add --no-cache 		bash # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GOSU_VERSION=1.17
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV NODE_ENV=production
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CLI_VERSION=1.27.0
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_INSTALL=/var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CONTENT=/var/lib/ghost/content
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+WORKDIR /var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+VOLUME [/var/lib/ghost/content]
+# Fri, 04 Jul 2025 20:19:12 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+EXPOSE map[2368/tcp:{}]
+# Fri, 04 Jul 2025 20:19:12 GMT
+CMD ["node" "current/index.js"]
+```
+
+-	Layers:
+	-	`sha256:22e4d17029cf647ff505d5389be90006efc5ed4178aed9a6d798a2bf7a675fc9`  
+		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
+		Size: 3.2 MB (3219181 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1af8f0453286244fc3585ba8a3c10d8f9c8dc2c35cf67df22efc79e28cfb1e3d`  
+		Last Modified: Tue, 08 Jul 2025 02:27:08 GMT  
+		Size: 40.7 MB (40710931 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:569c04e4b10df975c84b5310832babb917bd5fd2907a59994e861e24cd10d7da`  
+		Last Modified: Tue, 08 Jul 2025 02:26:57 GMT  
+		Size: 1.3 MB (1260558 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6f61572d40bf129e3afcebfe3ed224a232daa9eb0d64ff0ed202056d5660a1b3`  
+		Last Modified: Tue, 08 Jul 2025 02:26:55 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:986d0fab50bcdd747575cbcfc01ab851349ce3686e4267b49c5fbdc61cc81547`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 701.5 KB (701475 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4b0050197e152f9a34377afb8a8c09804f3719e86531df0fdef72204de07c82f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 1.1 MB (1090229 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:67844688851f22b881052bbb291ff921fa4be3ae1a9cb59acb52d52b76b73c99`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 171.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b16788a2a6acd18ab8b056fa5edeccbb0ba2c2edb81dabd11701da42a19e0ccf`  
+		Last Modified: Tue, 08 Jul 2025 04:18:30 GMT  
+		Size: 11.1 MB (11146939 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:57a0fe9a89f60b8f3eacaaab5186b8ba2c22a85ac80577760806a074e54cb96f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:05 GMT  
+		Size: 119.5 MB (119471939 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e0a1f488444b4ddfa17ebfedbc9d286d700c152faf9eaa2ea3e65b3a5c78cbd0`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 536.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ghost:5.129.1-alpine` - unknown; unknown
+
+```console
+$ docker pull ghost@sha256:770e103232dd24c4047cf0cc768897b9b053da05dcb39fff4e330ad2637d8002
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.3 MB (3348229 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45c1031b470006853f55f11dd21eeb038e47e009019adf508a8bd9f98a71b166`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e42a7e488d74855d327543a46c871a2ce2c197bf05436d8f71e2ff79eb4e62f1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:41 GMT  
+		Size: 3.3 MB (3315817 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:07fa42b3d4fcf54d40fd6d4f5d1752c841dc86d41818b26ec9b829cff95adf39`  
+		Last Modified: Tue, 08 Jul 2025 06:45:42 GMT  
+		Size: 32.4 KB (32412 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `ghost:5.129.1-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull ghost@sha256:b54c0115b60ba5d50cbc47696fcd189306faaf26b88e401a8e394f22decb3669
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **185.7 MB (185677526 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f9847e2e439344833f5fcb9eb711e9bee9bfe8fdced99f1dde728f9ba89a44bd`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["node","current\/index.js"]`
+
+```dockerfile
+# Fri, 30 May 2025 16:20:41 GMT
+ADD alpine-minirootfs-3.22.0-aarch64.tar.gz / # buildkit
+# Fri, 30 May 2025 16:20:41 GMT
+CMD ["/bin/sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV NODE_VERSION=20.19.3
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENV YARN_VERSION=1.22.22
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 02 Jul 2025 21:10:14 GMT
+CMD ["node"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN apk add --no-cache 		bash # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GOSU_VERSION=1.17
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV NODE_ENV=production
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CLI_VERSION=1.27.0
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_INSTALL=/var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_CONTENT=/var/lib/ghost/content
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
+RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+WORKDIR /var/lib/ghost
+# Fri, 04 Jul 2025 20:19:12 GMT
+VOLUME [/var/lib/ghost/content]
+# Fri, 04 Jul 2025 20:19:12 GMT
+COPY docker-entrypoint.sh /usr/local/bin # buildkit
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 04 Jul 2025 20:19:12 GMT
+EXPOSE map[2368/tcp:{}]
+# Fri, 04 Jul 2025 20:19:12 GMT
+CMD ["node" "current/index.js"]
+```
+
+-	Layers:
+	-	`sha256:d69d4d41cfe2ee680d6972795e2a1eb9e4dc4ec3b3c5e0797c9ab43bb3726fa7`  
+		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
+		Size: 4.1 MB (4135941 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9215b0a148ff3034ab9411f4d2e0d61eed84cbde6dfe6a8918b7f600e9036425`  
+		Last Modified: Tue, 08 Jul 2025 01:59:07 GMT  
+		Size: 42.7 MB (42667691 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3869675952ff338363bb3aa7dadff48b0ddbbc67e295d7dcd2006fb657598d8b`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 1.3 MB (1260570 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:51ca5d5c78d31635cdd22016fb1a5a8bda0711a6f6315d9c84982b2b0182d854`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 442.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6b053d9563bbe8f87afaac7c3dd3fd9333f3d3c27c6a157df06ab616c626f121`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 838.6 KB (838581 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:16bcef15e0e11cb5de302133686de8640509581a9139bd5432708d0b7807c64f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:06 GMT  
+		Size: 1.1 MB (1054611 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c3f66490e6fccc4c3005bdf8c7a21e2cd5f0400ff3b2a78fc60a32b0622b0ed2`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fdd8eb481f8ea682db9ea98ccd5dc35ef92b4ccb39f4cd38d01194141e50569f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:07 GMT  
+		Size: 11.1 MB (11147014 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4ae84c53e456f80e7b72106a5b3ae38f11bfe8fe3c2a322d9b5a012ae3805040`  
+		Last Modified: Tue, 08 Jul 2025 05:02:12 GMT  
+		Size: 124.6 MB (124571937 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:657e5ac4d86f466ca5dc1dc61eb44e80b75cd8105d6b5ed279d48c9569e954cf`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ghost:5.129.1-alpine` - unknown; unknown
+
+```console
+$ docker pull ghost@sha256:feea3d7d719c43e00d86e59811560e531f76d250d9902eb242cc6a1325a84f03
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.4 MB (3351352 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:603e91d2ceb2df084389454bad0093df659480d23fb2196a400a365cc5c6de49`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:638f0aae5cf48d61fdf3077839c600c6ceb74860e95dbecb685bb60c24a78fd1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:45 GMT  
+		Size: 3.3 MB (3318904 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:391d7ac578ab2e22107a52e4478ac1ba8a5c90230712d3d74f8db52d073287a0`  
+		Last Modified: Tue, 08 Jul 2025 06:45:46 GMT  
+		Size: 32.4 KB (32448 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ## `ghost:alpine`
 
 ```console
-$ docker pull ghost@sha256:d590d65fb4e593f37fc36a4b7a9f624065dcf452383f79dc785c5e409339e05c
+$ docker pull ghost@sha256:35e4d53e2a893d8c70dfa46a78f7420633715b169ce51bb2ef99d2bc9b56042e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3329,13 +4005,13 @@ $ docker pull ghost@sha256:2838044ac1257650025a63c281d8fc36ae94a1f192fd64eeed899
 ### `ghost:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:4574cddb7a7ca8560e0eab755aae6aec661687038a66e093b5125edd7f7fcc36
+$ docker pull ghost@sha256:d65156baf0edc6fa9d769eb1939110896838e8cf5c192a7c7c41b2f9d44b7eff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.6 MB (177573527 bytes)**  
+-	Total Size: **177.6 MB (177602438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4db2cce72238bd7be1ddd883ebb0c7bb759f7d663a1d3927bb10a76f10a1c87`
+-	Image ID: `sha256:281a2e7d2be42dcd62cb4cb5647720eada9687e35465f01b4e5ee250122b449f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -3344,53 +4020,53 @@ $ docker pull ghost@sha256:4574cddb7a7ca8560e0eab755aae6aec661687038a66e093b5125
 ADD alpine-minirootfs-3.22.0-armv7.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -3399,81 +4075,81 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 03 Jun 2025 13:30:18 GMT  
 		Size: 3.2 MB (3219181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fee604b140f3e08926101a61473a1efee5235c8c8c16f6efa1ae1313ac97eb2`  
-		Last Modified: Mon, 23 Jun 2025 14:37:16 GMT  
-		Size: 40.7 MB (40710563 bytes)  
+	-	`sha256:1af8f0453286244fc3585ba8a3c10d8f9c8dc2c35cf67df22efc79e28cfb1e3d`  
+		Last Modified: Tue, 08 Jul 2025 02:27:08 GMT  
+		Size: 40.7 MB (40710931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51df983d6609d1b60649e3e7743675f5be531469866831616e2251ffc75d2cde`  
-		Last Modified: Mon, 23 Jun 2025 14:37:15 GMT  
-		Size: 1.3 MB (1260555 bytes)  
+	-	`sha256:569c04e4b10df975c84b5310832babb917bd5fd2907a59994e861e24cd10d7da`  
+		Last Modified: Tue, 08 Jul 2025 02:26:57 GMT  
+		Size: 1.3 MB (1260558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac1199f90ea2a9661f2954935947c6a4cfd49acec0a8c90a766af4b64dd01ae`  
-		Last Modified: Mon, 23 Jun 2025 14:37:15 GMT  
+	-	`sha256:6f61572d40bf129e3afcebfe3ed224a232daa9eb0d64ff0ed202056d5660a1b3`  
+		Last Modified: Tue, 08 Jul 2025 02:26:55 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e3e6c05cd2c05d18f2ef35392d3cf058d73ec7b5071aba820d9ffa7252388e4`  
-		Last Modified: Mon, 23 Jun 2025 15:23:14 GMT  
-		Size: 701.5 KB (701469 bytes)  
+	-	`sha256:986d0fab50bcdd747575cbcfc01ab851349ce3686e4267b49c5fbdc61cc81547`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 701.5 KB (701475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efb16844acf86f2a94e3b0ea985f5f9c838a1330f9583b36cb48b6ebb19f5b58`  
-		Last Modified: Mon, 23 Jun 2025 15:23:15 GMT  
-		Size: 1.1 MB (1090234 bytes)  
+	-	`sha256:4b0050197e152f9a34377afb8a8c09804f3719e86531df0fdef72204de07c82f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:23 GMT  
+		Size: 1.1 MB (1090229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff8718575b25ab4eaf0f79a16f6a47eb7ad2b80b8b53ffedb4d273e92c05232f`  
-		Last Modified: Mon, 23 Jun 2025 15:23:16 GMT  
-		Size: 169.0 B  
+	-	`sha256:67844688851f22b881052bbb291ff921fa4be3ae1a9cb59acb52d52b76b73c99`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a52169ae547780e3eb40de6eb770831b5132b1d607fe0e94d2dc44b330c1363f`  
-		Last Modified: Mon, 23 Jun 2025 15:23:19 GMT  
-		Size: 11.1 MB (11127910 bytes)  
+	-	`sha256:b16788a2a6acd18ab8b056fa5edeccbb0ba2c2edb81dabd11701da42a19e0ccf`  
+		Last Modified: Tue, 08 Jul 2025 04:18:30 GMT  
+		Size: 11.1 MB (11146939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9039f71e7dec45b8c0b80a74f10d4931b61eb41eefcd88153cfcb36aac96439`  
-		Last Modified: Thu, 03 Jul 2025 17:37:37 GMT  
-		Size: 119.5 MB (119462424 bytes)  
+	-	`sha256:57a0fe9a89f60b8f3eacaaab5186b8ba2c22a85ac80577760806a074e54cb96f`  
+		Last Modified: Tue, 08 Jul 2025 04:18:05 GMT  
+		Size: 119.5 MB (119471939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1c14c789e52dda08dedd747a48600d76a8f98a54ac26c9f0dafd16f6716ee4e`  
-		Last Modified: Thu, 03 Jul 2025 17:37:31 GMT  
-		Size: 543.0 B  
+	-	`sha256:e0a1f488444b4ddfa17ebfedbc9d286d700c152faf9eaa2ea3e65b3a5c78cbd0`  
+		Last Modified: Tue, 08 Jul 2025 04:18:27 GMT  
+		Size: 536.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:d784e18fd360c38841e150c9d7fb6cec770f9d7965c63eae8470e4832d3607ad
+$ docker pull ghost@sha256:770e103232dd24c4047cf0cc768897b9b053da05dcb39fff4e330ad2637d8002
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3345931 bytes)**  
+-	Total Size: **3.3 MB (3348229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7df84df55f8001868f391ec795e1342e3847e6d3a77d75613bde93eb2450c1c`
+-	Image ID: `sha256:45c1031b470006853f55f11dd21eeb038e47e009019adf508a8bd9f98a71b166`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98cc3dd92483c384d7c58eb0103cb64458e1c5006281cf702f3288f676bdfab2`  
-		Last Modified: Thu, 03 Jul 2025 18:45:55 GMT  
-		Size: 3.3 MB (3313519 bytes)  
+	-	`sha256:e42a7e488d74855d327543a46c871a2ce2c197bf05436d8f71e2ff79eb4e62f1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:41 GMT  
+		Size: 3.3 MB (3315817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2334ea2629a986ab0d61a8f281c136d925131900ab0f02217180ec02038b4332`  
-		Last Modified: Thu, 03 Jul 2025 18:45:55 GMT  
+	-	`sha256:07fa42b3d4fcf54d40fd6d4f5d1752c841dc86d41818b26ec9b829cff95adf39`  
+		Last Modified: Tue, 08 Jul 2025 06:45:42 GMT  
 		Size: 32.4 KB (32412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:a34645b0defcebfed132bb08b4e6b7db8da3d7c33651f8b921e7b43ad941e1f7
+$ docker pull ghost@sha256:b54c0115b60ba5d50cbc47696fcd189306faaf26b88e401a8e394f22decb3669
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.7 MB (185672324 bytes)**  
+-	Total Size: **185.7 MB (185677526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4795aedb574a7be5e54d468c023914d4c94cf9ec4a5f570a8344dc220c9819ae`
+-	Image ID: `sha256:f9847e2e439344833f5fcb9eb711e9bee9bfe8fdced99f1dde728f9ba89a44bd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -3482,53 +4158,53 @@ $ docker pull ghost@sha256:a34645b0defcebfed132bb08b4e6b7db8da3d7c33651f8b921e7b
 ADD alpine-minirootfs-3.22.0-aarch64.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="1604ac9955804bab4f4c9e7301ff97061ab51f0af24cbd9f3748c944283d7f29" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3 py3-setuptools'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -3537,75 +4213,75 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
 		Size: 4.1 MB (4135941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04f90736806149fae6bdd9158756b2e36e26d1332fdfaa542b8c76e51eaab5a3`  
-		Last Modified: Mon, 23 Jun 2025 13:42:24 GMT  
-		Size: 42.7 MB (42667990 bytes)  
+	-	`sha256:9215b0a148ff3034ab9411f4d2e0d61eed84cbde6dfe6a8918b7f600e9036425`  
+		Last Modified: Tue, 08 Jul 2025 01:59:07 GMT  
+		Size: 42.7 MB (42667691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:751664c7a20cd031b347bb6f784e7fa0a9d085ae80edaefb73b64aadba63c3fe`  
-		Last Modified: Mon, 23 Jun 2025 13:42:22 GMT  
-		Size: 1.3 MB (1260574 bytes)  
+	-	`sha256:3869675952ff338363bb3aa7dadff48b0ddbbc67e295d7dcd2006fb657598d8b`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 1.3 MB (1260570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9341dd6887d334d194b9fa729e3a082ff648e4e107df376db106d0fee8d8bfb`  
-		Last Modified: Mon, 23 Jun 2025 13:42:21 GMT  
-		Size: 443.0 B  
+	-	`sha256:51ca5d5c78d31635cdd22016fb1a5a8bda0711a6f6315d9c84982b2b0182d854`  
+		Last Modified: Tue, 08 Jul 2025 01:59:04 GMT  
+		Size: 442.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86e38ed0820ba085c392dfe5fbf1a9be23509ed9d3cddc9aba5dd242c9cd0448`  
-		Last Modified: Mon, 23 Jun 2025 14:17:02 GMT  
-		Size: 838.6 KB (838576 bytes)  
+	-	`sha256:6b053d9563bbe8f87afaac7c3dd3fd9333f3d3c27c6a157df06ab616c626f121`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 838.6 KB (838581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f133112eefb395c63b78fc1032a6564650d72b6b4ed321f791134f7002721dff`  
-		Last Modified: Mon, 23 Jun 2025 14:17:00 GMT  
-		Size: 1.1 MB (1054616 bytes)  
+	-	`sha256:16bcef15e0e11cb5de302133686de8640509581a9139bd5432708d0b7807c64f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:06 GMT  
+		Size: 1.1 MB (1054611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9086761dd8381cad3d88f41567c672393ed348965eb73a99eaa882f5106c3dfb`  
-		Last Modified: Mon, 23 Jun 2025 14:17:00 GMT  
-		Size: 170.0 B  
+	-	`sha256:c3f66490e6fccc4c3005bdf8c7a21e2cd5f0400ff3b2a78fc60a32b0622b0ed2`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6e4244711aa942bb071b756ae76ad19a2cd7f050058b6af7124487e5b8e944`  
-		Last Modified: Mon, 23 Jun 2025 14:17:01 GMT  
-		Size: 11.1 MB (11128245 bytes)  
+	-	`sha256:fdd8eb481f8ea682db9ea98ccd5dc35ef92b4ccb39f4cd38d01194141e50569f`  
+		Last Modified: Tue, 08 Jul 2025 05:02:07 GMT  
+		Size: 11.1 MB (11147014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83f20e1958b9055c75d398043d91269564b3a8e5ed9ad908f259b046bb8cc901`  
-		Last Modified: Thu, 03 Jul 2025 17:28:18 GMT  
-		Size: 124.6 MB (124585193 bytes)  
+	-	`sha256:4ae84c53e456f80e7b72106a5b3ae38f11bfe8fe3c2a322d9b5a012ae3805040`  
+		Last Modified: Tue, 08 Jul 2025 05:02:12 GMT  
+		Size: 124.6 MB (124571937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08bdba3652d4d8157bf643349facddaf4f2ef181e1777e05775856050844138d`  
-		Last Modified: Thu, 03 Jul 2025 17:28:01 GMT  
-		Size: 544.0 B  
+	-	`sha256:657e5ac4d86f466ca5dc1dc61eb44e80b75cd8105d6b5ed279d48c9569e954cf`  
+		Last Modified: Tue, 08 Jul 2025 05:02:05 GMT  
+		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:34f72dfe779a18d44c53042f713f285f16fc30dadeb249d6bbc478c85b7d3bb1
+$ docker pull ghost@sha256:feea3d7d719c43e00d86e59811560e531f76d250d9902eb242cc6a1325a84f03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3349054 bytes)**  
+-	Total Size: **3.4 MB (3351352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8617d50dec9f5f5236c16f3070eb8709b8b1534b30235101f77a6bc217a5da9e`
+-	Image ID: `sha256:603e91d2ceb2df084389454bad0093df659480d23fb2196a400a365cc5c6de49`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f836dd5201a0691d8ecca299295069090744b248f27db436e51d8a8a565420d0`  
-		Last Modified: Thu, 03 Jul 2025 18:45:59 GMT  
-		Size: 3.3 MB (3316606 bytes)  
+	-	`sha256:638f0aae5cf48d61fdf3077839c600c6ceb74860e95dbecb685bb60c24a78fd1`  
+		Last Modified: Tue, 08 Jul 2025 06:45:45 GMT  
+		Size: 3.3 MB (3318904 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18892407ba4aeed88e43ec84bdd95e17d1057b86f9ef33d9f18bc1b74475a496`  
-		Last Modified: Thu, 03 Jul 2025 18:45:59 GMT  
+	-	`sha256:391d7ac578ab2e22107a52e4478ac1ba8a5c90230712d3d74f8db52d073287a0`  
+		Last Modified: Tue, 08 Jul 2025 06:45:46 GMT  
 		Size: 32.4 KB (32448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ghost:latest`
 
 ```console
-$ docker pull ghost@sha256:78f9f3cf3ce40557f687f7b6edc79b96e1282d00d2d221816839a134ccbacf7b
+$ docker pull ghost@sha256:35d81f748ebebd22ed8100617e8c3371549ac8a83701a77a2f8ed1c98d821de7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3754,64 +4430,64 @@ $ docker pull ghost@sha256:d759636445595ee85d7b0dc3cb6923f5a4f9736e5f2421877477a
 ### `ghost:latest` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:3e3837fe063eea9331f3eb5976b03a37e121ba563d070e776d5dd537c6e71e11
+$ docker pull ghost@sha256:a99150031b91e8987bf877dbb2db229f9199bad16879e750fb5cf5f71b755fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.2 MB (195157120 bytes)**  
+-	Total Size: **195.1 MB (195136326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a15cf7a790b59c9ce73525bb29e0d4e0120f083d49d3527a65fffa1ae3291f8`
+-	Image ID: `sha256:40addd50656bd504528e9518684dc95b4f46e99fd909fb3f0cbe2e4cc6f492c7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -3824,124 +4500,124 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
 		Size: 3.3 KB (3306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aec88477a3abb2eafe1d149461ff1972583dffa5e2691bdf317858b41d1a04bc`  
-		Last Modified: Tue, 01 Jul 2025 09:27:01 GMT  
-		Size: 37.3 MB (37275412 bytes)  
+	-	`sha256:ea20d5e020643cbb0af81b95a3f831cd891de65ea7a496365ada0a430acaec2a`  
+		Last Modified: Tue, 08 Jul 2025 02:29:50 GMT  
+		Size: 37.3 MB (37275408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b16bf2f61e07d978d7b5067d8399889bebc5b4a0b69a5cc14034e7cfd78a3bf`  
-		Last Modified: Tue, 01 Jul 2025 09:26:57 GMT  
-		Size: 1.7 MB (1712740 bytes)  
+	-	`sha256:5667beec63918909b2f737da9993d6245952e94444f08e30adee68f4eac029a0`  
+		Last Modified: Tue, 08 Jul 2025 02:29:28 GMT  
+		Size: 1.7 MB (1712702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0836d4f7ecf3a3b928239f07740b8b5cd09139c9b842ab0c5ef83cb56b48dae8`  
-		Last Modified: Tue, 01 Jul 2025 09:26:56 GMT  
+	-	`sha256:907e69f81293e0e42190fd1417126ee6ba71bf1d64a9a38c3ca8f1a02caa6382`  
+		Last Modified: Tue, 08 Jul 2025 02:29:29 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05d7f2f77360628492c512fa8e8690c5e8160b3fd006d855635bec1823c242f2`  
-		Last Modified: Tue, 01 Jul 2025 21:11:19 GMT  
-		Size: 1.4 MB (1412598 bytes)  
+	-	`sha256:de34fb63ae2ef8ea84f5b143d35e3df6fa920013497ff6b6d4425a00bb9f695b`  
+		Last Modified: Tue, 08 Jul 2025 05:11:59 GMT  
+		Size: 1.4 MB (1412588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:584eee2049bee7cca4ec0c5a7abf5ea3ab7c98b6c496b516b1329aa4ae448e51`  
-		Last Modified: Tue, 01 Jul 2025 21:11:20 GMT  
-		Size: 11.1 MB (11146873 bytes)  
+	-	`sha256:9484b3e58191d4f04612bf8192350043c0dbb7f38782ee0394e87df59c1d9002`  
+		Last Modified: Tue, 08 Jul 2025 07:20:35 GMT  
+		Size: 11.1 MB (11146842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a618dfc93137c134457e4e18d4cc2c939226f4a524a937b62960926ee599e38`  
-		Last Modified: Thu, 03 Jul 2025 17:31:16 GMT  
-		Size: 119.7 MB (119666425 bytes)  
+	-	`sha256:91aca5d55bc9c06f2558819f3aa3bd8814af8af6464497c5f28960322e3dccc3`  
+		Last Modified: Tue, 08 Jul 2025 04:10:57 GMT  
+		Size: 119.6 MB (119645716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ada50413d1119875942ffcbed790aab8f42bb025cc80ec12e3bcf095df2d39d`  
-		Last Modified: Thu, 03 Jul 2025 17:31:02 GMT  
-		Size: 543.0 B  
+	-	`sha256:cceb6ddd0edfad3df253d0281c8ac1dadfe95fac9f2e608ec90b0662be39d178`  
+		Last Modified: Tue, 08 Jul 2025 05:12:06 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:latest` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:96e2d3c0fc0c41f9599b7c1dbe573bce00515855fac01220c06431c808bb6073
+$ docker pull ghost@sha256:7798653435dd525cd1ab8f263783bc0766dfb1e15a21d2e6e76ddc05f9eb84c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5561969 bytes)**  
+-	Total Size: **5.6 MB (5561970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c8a300da26809bdd7c983178a0a0a383dfa5f451c2e4b16b30b7a6dbb6a6423`
+-	Image ID: `sha256:8eb09274c7f58247da0064335cac5729c17b413928495440af910223a809c8d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2242e891a9f69c7c9de7ff1bd2483a6970db20ada729a0f72d8bf922a96f312b`  
-		Last Modified: Thu, 03 Jul 2025 18:45:40 GMT  
+	-	`sha256:1424556a7bb5523c99e618f19adbb508c32a133caa10b8a843514d310b8db0f9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:29 GMT  
 		Size: 5.5 MB (5532558 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b24409bdca108b5512ba310f458f334a68922e48ae13cfce86a94d14d7c082b`  
-		Last Modified: Thu, 03 Jul 2025 18:45:40 GMT  
-		Size: 29.4 KB (29411 bytes)  
+	-	`sha256:554e22c0141ccc381b0296e2442fc9a2457919d1a85b58c59dc46d7da456b0c7`  
+		Last Modified: Tue, 08 Jul 2025 06:45:30 GMT  
+		Size: 29.4 KB (29412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:a92d49a5d92b88564653fbaf6c0c4b8d803ef0752cf14dee4411c6b21be9ffd7
+$ docker pull ghost@sha256:05754c7519be5c3c5e6cbd9a6e6a173ab353e0ebb3e473d8c3e1faa1d7948240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.7 MB (191686614 bytes)**  
+-	Total Size: **191.7 MB (191685126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e3222783d5fa32a73f50fe7a16853bea40b0b51ff4a117b90703a77394e36ae`
+-	Image ID: `sha256:f4e3f276b2bf38a304d7c4ae6c04c1fb7bbfab340724b1e220e524eda53799bb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -3954,60 +4630,60 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 07:26:39 GMT  
 		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fa8f27a92d9c21b1f86c5bb3c25357bde949f1ceb5f9308ab2682f77c4258fa`  
-		Last Modified: Tue, 01 Jul 2025 07:28:57 GMT  
-		Size: 41.2 MB (41153530 bytes)  
+	-	`sha256:752abc28a45cce18393f969d6c32f71a8718ac5018044c0434c7d72347ec73e3`  
+		Last Modified: Tue, 08 Jul 2025 02:01:11 GMT  
+		Size: 41.2 MB (41153528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e73a31be4962e48e8b85176193bca700c3c05bf02906962db98f336cd8ab606`  
-		Last Modified: Tue, 01 Jul 2025 07:28:54 GMT  
-		Size: 1.7 MB (1712567 bytes)  
+	-	`sha256:65a28d5a7831997036fc8314909c7994f7058a153c9edd1567ac7808e763e169`  
+		Last Modified: Tue, 08 Jul 2025 02:01:09 GMT  
+		Size: 1.7 MB (1712540 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b76a3e047cc7ff000fd1b78a75f1a22c819e978499c544a54e78285b5e86aebe`  
-		Last Modified: Tue, 01 Jul 2025 07:28:54 GMT  
-		Size: 447.0 B  
+	-	`sha256:93ab47dbc72640f8eaabc6ccf945d46719852a938427f18312db7e4d556bb1b8`  
+		Last Modified: Tue, 08 Jul 2025 02:01:08 GMT  
+		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61ebe739f7e39e54a43a7f5eafd4401e3b1d127ab145e764d1ac64fae36f777e`  
-		Last Modified: Wed, 02 Jul 2025 04:02:42 GMT  
-		Size: 1.4 MB (1376655 bytes)  
+	-	`sha256:7058c1ab2a0c96dd70062ae0cc6ad60f8a4d15e03537bf5164abcf4dfc85e710`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
+		Size: 1.4 MB (1376681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc741ac39afeaffc15d01fb38bb2ba7aa9ac88c42241913a3aa16e674d7dac3e`  
-		Last Modified: Wed, 02 Jul 2025 04:02:43 GMT  
-		Size: 11.1 MB (11147097 bytes)  
+	-	`sha256:8dcf9a4c6206f827c5593cbfa8d78304e0fb504c1eeee32737411fba8f065bad`  
+		Last Modified: Tue, 08 Jul 2025 04:57:42 GMT  
+		Size: 11.1 MB (11146910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ec44163032e0867f5ef5490698fe9a1011210de09cef2d22b1d7489baefcf76`  
-		Last Modified: Thu, 03 Jul 2025 17:24:25 GMT  
-		Size: 108.2 MB (108214758 bytes)  
+	-	`sha256:15c97512150d4aa35439f9844300cc4da66715683b2df58ac3fd66f93eeaf0c9`  
+		Last Modified: Tue, 08 Jul 2025 04:57:48 GMT  
+		Size: 108.2 MB (108213459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b7a1062ac74c7e49f599256605dc4265e0c290c512dc200ddd8309e8de58873`  
-		Last Modified: Thu, 03 Jul 2025 17:24:15 GMT  
+	-	`sha256:9303638a23164a0bc6288b8e049a5f6382751ce44fc0d42336978b670cdbd1d0`  
+		Last Modified: Tue, 08 Jul 2025 04:57:39 GMT  
 		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:latest` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:37b13d41bf1ddb0b96f253ab26bebe589375ba67d0796bb295a4229a3130a38f
+$ docker pull ghost@sha256:5753ac8aa6a216ea7bb080b19fd9177572cefe133bebc9ae84014f2202a4c5ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5559542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c55e69fcf2a82d8e8050785ce3c2277ef07c55925222d2bce82013fec0abc8d3`
+-	Image ID: `sha256:4ff31df212b73bd389470e35c1b1f6422a56cbe6cec7c4c4c5a0dfda37fecf6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf6f2b5a825e065f43293d40bf04842b909182eb21fcb0b9f8ca399cf6ce30ff`  
-		Last Modified: Thu, 03 Jul 2025 18:45:45 GMT  
+	-	`sha256:d1b10f73ba4334363329c7d918509c8e03420ccaa47834ba63e9704530671917`  
+		Last Modified: Tue, 08 Jul 2025 06:45:34 GMT  
 		Size: 5.5 MB (5530098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11093b6d3a7626ceb7b817fa3bd9b61ed074777f819423883078bb046a2d0ecf`  
-		Last Modified: Thu, 03 Jul 2025 18:45:46 GMT  
+	-	`sha256:41c135465e6fecd2a99cfd7cf3cc4bbca3bc6805cb1869b74c9a1f5d82e3957d`  
+		Last Modified: Tue, 08 Jul 2025 06:45:35 GMT  
 		Size: 29.4 KB (29444 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4144,64 +4820,64 @@ $ docker pull ghost@sha256:a608b1364e68a0d44a39d0077aed6653d272cb7c583ec1962a908
 ### `ghost:latest` - linux; s390x
 
 ```console
-$ docker pull ghost@sha256:d6beee31d19eda991aebcfbfdeeae7021014151e5cd68773541c35b3798f60b5
+$ docker pull ghost@sha256:59666d613e19cf542bf6ce926c724cbb895205dbf3af1d15428a4e1127ce7ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.3 MB (204349401 bytes)**  
+-	Total Size: **204.3 MB (204320742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07ed31a11c818e1f242f6c865686549882b4de583d0f02496c7792aedfcfdd96`
+-	Image ID: `sha256:4775cf386dd6568a1614fc483af63f55f5ddefa3ec0a21221f9bf127e3c1afc8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV NODE_VERSION=20.19.3
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENV YARN_VERSION=1.22.22
-# Mon, 23 Jun 2025 10:06:16 GMT
-RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
+RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 02 Jul 2025 21:10:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jun 2025 10:06:16 GMT
+# Wed, 02 Jul 2025 21:10:14 GMT
 CMD ["node"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GOSU_VERSION=1.17
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV NODE_ENV=production
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CLI_VERSION=1.27.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 02 Jul 2025 20:19:14 GMT
-ENV GHOST_VERSION=5.129.0
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
+ENV GHOST_VERSION=5.129.1
+# Fri, 04 Jul 2025 20:19:12 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 WORKDIR /var/lib/ghost
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 EXPOSE map[2368/tcp:{}]
-# Wed, 02 Jul 2025 20:19:14 GMT
+# Fri, 04 Jul 2025 20:19:12 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -4214,59 +4890,59 @@ CMD ["node" "current/index.js"]
 		Last Modified: Tue, 01 Jul 2025 05:47:32 GMT  
 		Size: 3.3 KB (3312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:515c3c34b70c95a043894fe7035e66c59d21d8f786319f161b645711e9b33994`  
-		Last Modified: Tue, 01 Jul 2025 05:49:26 GMT  
-		Size: 41.4 MB (41439076 bytes)  
+	-	`sha256:f242ba5bc72210f1dddedaa08936ac3e5c032bb4631a8f3aec8c92431a5e6122`  
+		Last Modified: Tue, 08 Jul 2025 02:34:25 GMT  
+		Size: 41.4 MB (41439083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16e62c391502ad61a15025057cb02863d4311e0680919387ee447d88df0c3a36`  
-		Last Modified: Tue, 01 Jul 2025 05:49:18 GMT  
-		Size: 1.7 MB (1712556 bytes)  
+	-	`sha256:fe94503260b1496063d5e1968cc94836bd2dc6ff8e806fc7e25b2204bc385288`  
+		Last Modified: Tue, 08 Jul 2025 02:34:23 GMT  
+		Size: 1.7 MB (1712561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b5101d913e1a8b2507c4c8b39ea7e3adb01f1ae438d52ac83ceee5acefd55bd`  
-		Last Modified: Tue, 01 Jul 2025 05:49:17 GMT  
+	-	`sha256:ea13ff0ad2126d851e6acef47b419db88d7fd3e3a22d4ba0428fe52307cd6305`  
+		Last Modified: Tue, 08 Jul 2025 02:34:22 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fcae7fa2b6e4ba7756fc50c404cf291a94a3dcbce19e2027dc44851e6992cb7`  
-		Last Modified: Tue, 01 Jul 2025 11:09:54 GMT  
-		Size: 1.4 MB (1410185 bytes)  
+	-	`sha256:2275a102518200b1377b5a9bede03c5027895ce5d498dac314547fb429994068`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
+		Size: 1.4 MB (1410165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6df439adee2fbec75e5408b63ca5c96409ae00e7535ed5a6c4803ab1e2d68749`  
-		Last Modified: Wed, 02 Jul 2025 01:51:37 GMT  
-		Size: 11.1 MB (11147569 bytes)  
+	-	`sha256:2de1c66fea11623ed618f8c62b3412f7e48140c47603236f635a60ceaebbf23f`  
+		Last Modified: Tue, 08 Jul 2025 05:37:33 GMT  
+		Size: 11.1 MB (11146513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7503a0cfe5293fdeaa0d81c36661f3379b01dfefd5eb1ade4c1ff326b4e4bfd`  
-		Last Modified: Thu, 03 Jul 2025 17:29:53 GMT  
-		Size: 121.7 MB (121747871 bytes)  
+	-	`sha256:f703024d73ef762be3c967ba42693420af4a3c18c96f91be2e2a19850f9a2eaf`  
+		Last Modified: Tue, 08 Jul 2025 05:37:39 GMT  
+		Size: 121.7 MB (121720276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e771bc06de8486d5d8e7fdef546b065f506420e441f4fdac8cdfd8b1de3dae37`  
-		Last Modified: Thu, 03 Jul 2025 17:29:42 GMT  
+	-	`sha256:d79887fd33093fde35e2cd55e5d33aa01b6f82ebf6b0dc4b886e419fd3b47474`  
+		Last Modified: Tue, 08 Jul 2025 05:37:32 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:latest` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:51509da5813f3386a29563884939ef234c1652457284d49e08f71af76ca0b60a
+$ docker pull ghost@sha256:b8bf63841769748c19cf5b3c90498927cb7b909290cca81437157f8329e7036e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5552928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1cc570973416e71cd9015bb2bb2448b25f9d87245823c04c36691bcff6da322`
+-	Image ID: `sha256:d94ff5a9e5d57814bd50472e8fa27a010db0f1b541fc66fa064f81d2c8446f42`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b194e9ce10da632c4c1776dfd22d85d6fad1e57976c42f6bdb95b9c8915825c`  
-		Last Modified: Thu, 03 Jul 2025 18:45:56 GMT  
+	-	`sha256:ed51287adea80fb227f5665084b52aa72a8eadaf04706ba3308edcccbe425573`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
 		Size: 5.5 MB (5523618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:63edfa7d5126bfabae599e7c7f332dcc6bc3b754e008e246d3cc8c95e6616a7f`  
-		Last Modified: Thu, 03 Jul 2025 18:45:57 GMT  
+	-	`sha256:81c495ddb6518c75460852457bacfce29e1144f77d6745ad704d3b6cb313dee9`  
+		Last Modified: Tue, 08 Jul 2025 06:45:43 GMT  
 		Size: 29.3 KB (29310 bytes)  
 		MIME: application/vnd.in-toto+json
