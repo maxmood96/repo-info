@@ -1,7 +1,7 @@
 ## `bash:alpine3.22`
 
 ```console
-$ docker pull bash@sha256:01a15c6f48f6a3c08431cd77e11567823530b18159889dca3b7309b707beef91
+$ docker pull bash@sha256:a46be7b2080f6b802de3bd5832b93ced90d7ec039c8db73ee0629dbafaa58a8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull bash@sha256:01a15c6f48f6a3c08431cd77e11567823530b18159889dca3b7309
 ### `bash:alpine3.22` - linux; amd64
 
 ```console
-$ docker pull bash@sha256:e2f8e40c16a80c1936ac4ac1f889f15b30b3b7aa9153c3a47e2b4d765eb2b1a8
+$ docker pull bash@sha256:3d7e5d823b3cdf738d461b2f804d615fe960e6a7e9e4ac763bb744de117dab79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6515000 bytes)**  
+-	Total Size: **6.7 MB (6739391 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00fed5cd2660d64aa42e832d7c639dec0ed8b9aad2460b694b5e761473cf6071`
+-	Image ID: `sha256:80f4703a5dbd35bee8fe3ee9ba96e8abc7199d6eb269350b7f004e1a11d7853f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -41,21 +41,17 @@ $ docker pull bash@sha256:e2f8e40c16a80c1936ac4ac1f889f15b30b3b7aa9153c3a47e2b4d
 ADD alpine-minirootfs-3.22.0-x86_64.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_VERSION=5.2.37
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_BASELINE=5.2.37
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_BASELINE_PATCH=37
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_LATEST_PATCH=37
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
+ENV _BASH_VERSION=5.3.0
+# Sat, 05 Jul 2025 20:53:45 GMT
+ENV _BASH_BASELINE=5.3
+# Sat, 05 Jul 2025 20:53:45 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "$_BASH_VERSION" ]; 	bash -c 'help' > /dev/null # buildkit
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
 CMD ["bash"]
 ```
 
@@ -64,37 +60,37 @@ CMD ["bash"]
 		Last Modified: Tue, 03 Jun 2025 13:30:12 GMT  
 		Size: 3.8 MB (3796846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af91e2532c28001d21e1240de7bd4c3216bf359bc7c64704c7d3d4e4ac3d0093`  
-		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
-		Size: 2.7 MB (2717817 bytes)  
+	-	`sha256:d18958fe1e52f35f5a8e00a32f09d00d6d8b65fedcfb68ea8b22c38606f5e704`  
+		Last Modified: Mon, 07 Jul 2025 22:57:22 GMT  
+		Size: 2.9 MB (2942214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70f5897ce880836dd6cef33af686d55ceeb9d7b79de8feb0b1bb2f0c28efe4ed`  
-		Last Modified: Tue, 03 Jun 2025 13:30:13 GMT  
-		Size: 337.0 B  
+	-	`sha256:76aabb526b299ac22504fe062e268052a0aa291ff5fd58a1d50efc05c7e43d22`  
+		Last Modified: Mon, 07 Jul 2025 22:57:21 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:e9b002d5d91a8cba2b0fac40f21b238b9782bd6f6ab97bd275d5b6d77dd1f700
+$ docker pull bash@sha256:2d514483ba28402f3f5820c5dbae30f8c1fcf5e685d5120fe2da6b1aa0954722
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.7 KB (140681 bytes)**  
+-	Total Size: **140.5 KB (140455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9b67d3e9bc4cccd7bdfdfe8eaa96f184264a03fd9fbe59282806f02853dc9ac`
+-	Image ID: `sha256:21310a0a786e00a84155f78352bb60ba9865c4ecae9a4fd0bc7ad4d6720fb9af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b34dbb14f6fb3226255ae63ebe790736b6ddeb248e794c903bab4ab31e0e959b`  
-		Last Modified: Wed, 04 Jun 2025 07:07:34 GMT  
-		Size: 119.6 KB (119577 bytes)  
+	-	`sha256:3750132cfdd8af7421e31910acc9d37587583337da559df1891ca0e3c1969933`  
+		Last Modified: Tue, 08 Jul 2025 00:03:28 GMT  
+		Size: 119.6 KB (119571 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7a629b898bf02d69051586efe464174fb0547db610f45c5e1e2c9f9d5d40eee8`  
-		Last Modified: Wed, 04 Jun 2025 07:07:34 GMT  
-		Size: 21.1 KB (21104 bytes)  
+	-	`sha256:48d2e50019b18c119d64b5898297278f90f23e2535c72bcc138bcc4c619ec79a`  
+		Last Modified: Tue, 08 Jul 2025 00:03:29 GMT  
+		Size: 20.9 KB (20884 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:alpine3.22` - linux; arm variant v6
@@ -318,13 +314,13 @@ $ docker pull bash@sha256:92d9ebf78480ed896acf175474b7c9f533caf15454bd174d403fba
 ### `bash:alpine3.22` - linux; 386
 
 ```console
-$ docker pull bash@sha256:c3fa3bacc8ea4c699efb2578c334ce4bfbdddf786fe43e185b398e7a06f1d2bc
+$ docker pull bash@sha256:9ad6bcf2ee9f57aaf65019d8a0579021f0f77ea8772ef5ddbbfed39620796a4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6276035 bytes)**  
+-	Total Size: **6.5 MB (6494027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bee9ccd20e27dfb433476f1944a11008d13c7d62a02432e4eba8f4fd5e8e899`
+-	Image ID: `sha256:f09b0b8bb2b22783cebc55a33986a9bccdd3962cfd10687fe58e869104b29a49`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -333,21 +329,17 @@ $ docker pull bash@sha256:c3fa3bacc8ea4c699efb2578c334ce4bfbdddf786fe43e185b398e
 ADD alpine-minirootfs-3.22.0-x86.tar.gz / # buildkit
 # Fri, 30 May 2025 16:20:41 GMT
 CMD ["/bin/sh"]
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_VERSION=5.2.37
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_BASELINE=5.2.37
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_BASELINE_PATCH=37
-# Fri, 30 May 2025 18:51:10 GMT
-ENV _BASH_LATEST_PATCH=37
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
+ENV _BASH_VERSION=5.3.0
+# Sat, 05 Jul 2025 20:53:45 GMT
+ENV _BASH_BASELINE=5.3
+# Sat, 05 Jul 2025 20:53:45 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "$_BASH_VERSION" ]; 	bash -c 'help' > /dev/null # buildkit
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 30 May 2025 18:51:10 GMT
+# Sat, 05 Jul 2025 20:53:45 GMT
 CMD ["bash"]
 ```
 
@@ -356,37 +348,37 @@ CMD ["bash"]
 		Last Modified: Tue, 03 Jun 2025 13:30:15 GMT  
 		Size: 3.6 MB (3616029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b0db9e5e0c33d2c03fffd7cfc184be49a29c085f0cb1f9f4ec9433c304fa568`  
-		Last Modified: Wed, 04 Jun 2025 07:07:31 GMT  
-		Size: 2.7 MB (2659675 bytes)  
+	-	`sha256:a41a03a89542d3826bed25b035c287bf6ee07e67a0bc976e2c46e53ed9f85a57`  
+		Last Modified: Mon, 07 Jul 2025 22:57:28 GMT  
+		Size: 2.9 MB (2877668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99670d5669cb74c3a373755d91a192ac2ddd588d06155810bf816cc8a1836870`  
-		Last Modified: Wed, 04 Jun 2025 07:07:30 GMT  
-		Size: 331.0 B  
+	-	`sha256:b938716cc470eaf56330de77db3c1bed05bf19d9a326e7a987be7bac988c9079`  
+		Last Modified: Mon, 07 Jul 2025 22:57:28 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:2dad2599a725d5c6b43398fdc567e35ae59076866e2a2ab06b250df783e5abe7
+$ docker pull bash@sha256:f91afb058654facab07e79d93f4144df150ee25c9a1e969624bfda0faeaddd4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.6 KB (140584 bytes)**  
+-	Total Size: **140.4 KB (140358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e1e7ef295d8010dd2b38fa998090ebb9809516cb81ce72f01cca1b839bdfd20`
+-	Image ID: `sha256:100581fe00d6ccd8ef2162e8f1ab0396b97ebe65ca6a78c244fd4edc144d3045`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:177b915a044bcdaeb8dd35c9e9e99ab420a718edb217728f4b8e3631723cbb9a`  
-		Last Modified: Wed, 04 Jun 2025 07:07:30 GMT  
-		Size: 119.5 KB (119532 bytes)  
+	-	`sha256:97ba0d55b8172f843c0faaf8652b2239336c3c04a4b5303b9a1b1a9d1a0a3930`  
+		Last Modified: Tue, 08 Jul 2025 00:03:49 GMT  
+		Size: 119.5 KB (119526 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b92cea1b0bb1318429db85ffea66125ce9044526c8371bd820bb85289fd3a0fd`  
-		Last Modified: Wed, 04 Jun 2025 07:07:29 GMT  
-		Size: 21.1 KB (21052 bytes)  
+	-	`sha256:a9c1f47460a33fefa55d32aedb4573d1e61195187c3e52e3b2884b9706a1f404`  
+		Last Modified: Tue, 08 Jul 2025 00:03:50 GMT  
+		Size: 20.8 KB (20832 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:alpine3.22` - linux; ppc64le
