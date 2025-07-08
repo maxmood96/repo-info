@@ -1,10 +1,10 @@
-# `gradle:8.14.2-jdk24-alpine`
+# `gradle:8.14.3-jdk24-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:10474d497421d1e4c7c8a716af9bc0d0d69cb144457c58fa48592e0b4ddf2c02`
-- Created: `2025-06-05T16:04:16Z`
-- Virtual Size: ~ 573.58 Mb  
+- Image ID: `sha256:c065c3e67609ac646b95a4bec5de01842509c8a7256e8f274d0e71deda48cda8`
+- Created: `2025-07-05T02:23:10Z`
+- Virtual Size: ~ 573.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-24.0.1+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.2`
+  - `GRADLE_VERSION=8.14.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1860,16 +1860,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.10-r1 description:
+pyc-3.12.11-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.10-r1 webpage:
+pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.10-r1 installed size:
+pyc-3.12.11-r0 installed size:
 0 B
 
-pyc-3.12.10-r1 license:
+pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1877,16 +1877,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.10-r1 description:
+python3-3.12.11-r0 description:
 High-level scripting language
 
-python3-3.12.10-r1 webpage:
+python3-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-3.12.10-r1 installed size:
+python3-3.12.11-r0 installed size:
 22 MiB
 
-python3-3.12.10-r1 license:
+python3-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1894,16 +1894,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.10-r1 description:
+python3-pyc-3.12.11-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.10-r1 webpage:
+python3-pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.10-r1 installed size:
+python3-pyc-3.12.11-r0 installed size:
 0 B
 
-python3-pyc-3.12.10-r1 license:
+python3-pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1911,16 +1911,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.10-r1 description:
+python3-pycache-pyc0-3.12.11-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.10-r1 webpage:
+python3-pycache-pyc0-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.10-r1 installed size:
+python3-pycache-pyc0-3.12.11-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.10-r1 license:
+python3-pycache-pyc0-3.12.11-r0 license:
 PSF-2.0
 
 ```

@@ -1,9 +1,9 @@
-# `gradle:8.14.2-jdk-lts-and-current-corretto`
+# `gradle:8.14.3-jdk-lts-and-current-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:56f7c97cbb8c388865572d6b91431b8fe58a2c0bb2f48e8d5b848240361130bc`
-- Created: `2025-06-05T16:04:16Z`
+- Image ID: `sha256:770ed986f8ee4c453e5a64a15a47c9712dfe4086935f1566439527397641defb`
+- Created: `2025-07-05T02:23:10Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `JAVA_LTS_HOME=/usr/lib/jvm/java-21-amazon-corretto`
   - `JAVA_CURRENT_HOME=/usr/lib/jvm/java-24-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.2`
+  - `GRADLE_VERSION=8.14.3`
 
 ## `rpm` (`.rpm`-based packages)
 

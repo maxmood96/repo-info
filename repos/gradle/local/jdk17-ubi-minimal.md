@@ -1,9 +1,9 @@
-# `gradle:8.14.2-jdk17-ubi`
+# `gradle:8.14.3-jdk17-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b98577a33827267a6612f5d7dd4e0b17059db0be58ebaf19fddbcd57cab8ae0`
-- Created: `2025-06-05T16:04:16Z`
+- Image ID: `sha256:d92457633e991bcc70e31fdad6e6ced282d09a681ef877ad90f07b779d443bc1`
+- Created: `2025-07-05T02:23:10Z`
 - Virtual Size: ~ 721.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.15+6`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.2`
+  - `GRADLE_VERSION=8.14.3`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2025-06-30T12:32:07`
