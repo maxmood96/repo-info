@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f74b04e4c51317840a8ca4c34c005879e44b19854f8479b116d117efeeb4d651`
+- Image ID: `sha256:cba7ad4df6e8c725e13a912717a7c8716a22e57b80076e6b7de23bee78aa557e`
 - Created: `2025-03-03T18:37:38Z`
-- Virtual Size: ~ 910.56 Mb  
+- Virtual Size: ~ 910.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.24.4`
+  - `GOLANG_VERSION=1.24.5`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 - Labels:
