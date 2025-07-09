@@ -1,17 +1,17 @@
-# `pypy:3.10-7.3.19-slim`
+# `pypy:3.11-7.3.20-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d00d1071ba9985bd9002b2fe8297a7ecd97f70802a5344148851683769807d52`
-- Created: `2025-04-09T18:15:04Z`
-- Virtual Size: ~ 208.11 Mb  
+- Image ID: `sha256:565c6319db4dd8285ec3c66d224df28a41787857c684a776be17617b7652bdfa`
+- Created: `2025-07-04T16:11:27Z`
+- Virtual Size: ~ 209.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.19`
+  - `PYPY_VERSION=7.3.20`
 
 ## `dpkg` (`.deb`-based packages)
 

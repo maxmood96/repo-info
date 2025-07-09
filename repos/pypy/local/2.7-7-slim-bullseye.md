@@ -1,17 +1,17 @@
-# `pypy:2.7-7.3.19-slim-bullseye`
+# `pypy:2.7-7.3.20-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:70e1a5b3f10ff05e3636c866e944dff83664fdbc96013cea41d8374e95519695`
-- Created: `2025-04-09T18:15:04Z`
-- Virtual Size: ~ 205.66 Mb  
+- Image ID: `sha256:6bee1640deaef82dd440b7ab89dd45192265bec7b51a57d9426b19ed501ce9a9`
+- Created: `2025-07-04T16:07:12Z`
+- Virtual Size: ~ 205.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.19`
+  - `PYPY_VERSION=7.3.20`
 
 ## `dpkg` (`.deb`-based packages)
 
