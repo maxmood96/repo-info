@@ -1996,7 +1996,7 @@ $ docker pull swift@sha256:2dae3c5281bfc4cc6a161b8d1dfd7b6789511975b07e9639b3368
 ## `swift:5.10-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:c9fb952e298b1c3b88111a6a91020edcc884b893d877ea6cc58715b6397c5328
+$ docker pull swift@sha256:818d171b7997449862107f39de69162da61b9284b77fa2e685fa04e27be1fdf2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2009,13 +2009,13 @@ $ docker pull swift@sha256:c9fb952e298b1c3b88111a6a91020edcc884b893d877ea6cc5871
 ### `swift:5.10-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:b2d5e3dfc76c61ce6032d21fd5e5d693fe2ad8eed2bf33ec973b798f43a1371a
+$ docker pull swift@sha256:8316f311a17e5b50d7365cff6e58de12c0ac33f3699268e1db39c124a9e0602f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **827.5 MB (827474076 bytes)**  
+-	Total Size: **828.4 MB (828363489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbbb4edbfaae40cf640de181fa222f6c9c1700f573f8e21007ead1ec9ee85df3`
+-	Image ID: `sha256:98c339bacb0b5794a3211348984f82b91e603ace1d5dc3f609fc7879cfb8dce7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2042,7 +2042,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2050,7 +2050,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2078,57 +2078,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:521d07c72d7aba81f3f0b742da8bd4488039e1130749f0f29c1bc1b5783f75ae`  
-		Last Modified: Wed, 02 Jul 2025 18:46:39 GMT  
-		Size: 124.4 MB (124398956 bytes)  
+	-	`sha256:284acba000199bff3c3a7f3c88b0a98b0d17db7c8d06bae199cdb12c112d85e6`  
+		Last Modified: Wed, 09 Jul 2025 19:13:00 GMT  
+		Size: 125.3 MB (125288016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc89b4bdacdb7b3c36c7880be0354e09c972bef53218d216901ba139173099cd`  
 		Last Modified: Thu, 19 Dec 2024 10:06:24 GMT  
 		Size: 623.5 MB (623493795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99f857e031122f0fd5801e9b971ea21d76b105cee123d215cdf3d1e522937bf2`  
-		Last Modified: Wed, 02 Jul 2025 18:46:26 GMT  
+	-	`sha256:3baa613d5068e46861e8d346402642a1237faf03f1f11d1288fba82af8f6f453`  
+		Last Modified: Wed, 09 Jul 2025 19:12:54 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7e995d3d94637393cae3be3e187991dd03da92223e6283bdaddf3a68b8b0218d
+$ docker pull swift@sha256:b3a88d2c078b139c15ba1eda5f55b4df3aab53515ae0eb8969a524b0800ec7c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976609 bytes)**  
+-	Total Size: **13.0 MB (12980331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd3c3fb2bb01e27e627b8b8a9cb92ac5c5b1a2d31f87f2a064f01b16b7ed1952`
+-	Image ID: `sha256:8a11c0751e5e9de9ada4eb70e17a38d8d38a018aa2dba93048c50cbc8fe62b7e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3451091ef7ed52a8935185c39107e432a02f1ce8cb1abd2192061c302d333309`  
-		Last Modified: Wed, 02 Jul 2025 19:47:23 GMT  
-		Size: 13.0 MB (12962406 bytes)  
+	-	`sha256:b9abff9641dedc1a0de726df4a5a66f9f9e7cffd4fa34107c1df2de72400e18b`  
+		Last Modified: Wed, 09 Jul 2025 22:47:27 GMT  
+		Size: 13.0 MB (12966128 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0689f46dcfc328b84453b3c94ef0638c6d118645dab8ba57d0089a22e9b5767e`  
-		Last Modified: Wed, 02 Jul 2025 19:47:24 GMT  
+	-	`sha256:1cbe35e53881778825def19ecb6bb9c60a666950621d0718184543eca2862b1a`  
+		Last Modified: Wed, 09 Jul 2025 22:47:28 GMT  
 		Size: 14.2 KB (14203 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:4fb4ec9b5cfa65c1021994ac239c5787f3a959b506a075a34fe32e21bdeef7ef
+$ docker pull swift@sha256:38428b981973c5511dfe34ea5fb4dcbfe75ba704bfb915ceb3f527093ca44b0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **813.1 MB (813075641 bytes)**  
+-	Total Size: **814.0 MB (813971724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ee9b023ce2d745d82d20f50bd82b76f0426e8805310806a0fd7a5798b589107`
+-	Image ID: `sha256:7366a11456a2f3cf82f6f0e1ab16a829c2b2b4f82604b1a1c49a7db479ceceaa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2155,7 +2155,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2163,7 +2163,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2191,51 +2191,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1a45a45f8c3402fa68c9eb441600db731621950faa44316a68132651b518bff`  
 		Last Modified: Thu, 19 Dec 2024 09:24:30 GMT  
 		Size: 617.7 MB (617684710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf6afdff034d94d82aad1e93b8533a5edb70a1b2d4bb10a8e1e6add30083e349`  
-		Last Modified: Wed, 02 Jul 2025 19:21:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:5017f15fd4406c660854e6790027c97ce48f461173afa964c0f8863146488810`  
+		Last Modified: Wed, 09 Jul 2025 20:34:10 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:93bfe28ee65ff39ed335c7648bbd179c1036c2fe64c98b49ea66c4779a0a6cb2
+$ docker pull swift@sha256:0eeda637c4f1a1b8ab8a063e0997c25c6425a60949338b9451fe30eb4f03a2c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12849948 bytes)**  
+-	Total Size: **12.9 MB (12853670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37e22190f398793ca0e963877aa5362f59e98b801c25eafe942accd77ecfacfa`
+-	Image ID: `sha256:3a1c123535f1ed10eb926b99fd19500957002bc5eb903959f3d486f0b7ab426f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:350db17a01ad76cb5d76969f63dcf5ffe434fe60f15a892c9c19abf3fe8b8e74`  
-		Last Modified: Wed, 02 Jul 2025 22:47:32 GMT  
-		Size: 12.8 MB (12835641 bytes)  
+	-	`sha256:f2bf3af07233504607dc235f75e33e23352936f91385958008bbc6380fa99993`  
+		Last Modified: Wed, 09 Jul 2025 22:47:38 GMT  
+		Size: 12.8 MB (12839363 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b14abf83e9dc49151254690dedb3d23800b40d74ed0acd729313845152fbb93`  
-		Last Modified: Wed, 02 Jul 2025 22:47:33 GMT  
+	-	`sha256:c44bbc06b51f9b7b5f9586cc3c690842cecb239129a82ebc31c84d576c35629f`  
+		Last Modified: Wed, 09 Jul 2025 22:47:39 GMT  
 		Size: 14.3 KB (14307 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.10-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:60f733dfd9fcdf6c1b51bfd38460d536cddda6717e40f6cfa68f357ba7738768
+$ docker pull swift@sha256:a569403baeff5d58403aca76653499ad30cfd8ad5604009f0ca32c4db3c15bcf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2248,13 +2248,13 @@ $ docker pull swift@sha256:60f733dfd9fcdf6c1b51bfd38460d536cddda6717e40f6cfa68f3
 ### `swift:5.10-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:5b9692ed065b47854e1928b4c6a78bcf6e1940a9e8b53158fa5e9ec487b3012a
+$ docker pull swift@sha256:3a32b72640b9ea50e4fd463eb98ab332000c5a4f9a523f0f3840f04bb0830d1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126292411 bytes)**  
+-	Total Size: **126.3 MB (126298976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d265471dae9301fe1a45d8fa5276ce5e1c128a5d3e6b68209fa95f6c15029b83`
+-	Image ID: `sha256:7caa745b7b3a0d2971f8943e232598cbb089615ce58c250c596050fed4f460d8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2281,7 +2281,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2289,7 +2289,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2312,49 +2312,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9bb919dbd4d1c0173b8fab14b8ca8c96b9cece1addd85a4304779db1de28f7`  
-		Last Modified: Wed, 02 Jul 2025 18:45:13 GMT  
-		Size: 46.7 MB (46711260 bytes)  
+	-	`sha256:d2f8c134957472a9f6b44d33cc73411c4affe9efd0fce063bd1a88a167103777`  
+		Last Modified: Wed, 09 Jul 2025 19:12:16 GMT  
+		Size: 46.7 MB (46717472 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:ae6e3042e91a569f81a6b33521cb062c7ca47e6ca1dc689c05bc82d85482652a
+$ docker pull swift@sha256:f723d58459053ac991cee3c3c553166a67da6c79519a925859c7e06aa5f01fa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412060 bytes)**  
+-	Total Size: **6.4 MB (6412084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c433d29a4b261ffca937a8d40d2bc06c2eab55dd52662f1dde4aa0da840c8320`
+-	Image ID: `sha256:ac05f1e27d4a28163134da9637eebea6934cd5f0044c5c14b2bb385ed6bb9183`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:92f5531b3b268a140a95092c03b89995e6e2892b3bb05d1ec45586de2ef9a5b2`  
-		Last Modified: Wed, 02 Jul 2025 19:47:28 GMT  
-		Size: 6.4 MB (6400829 bytes)  
+	-	`sha256:d4efbd1964c038c32e152b08e4eacfd234591bf30a4cf79a71f27aa5eae42df1`  
+		Last Modified: Wed, 09 Jul 2025 22:47:31 GMT  
+		Size: 6.4 MB (6400853 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:98c5af8f346f7f76d43a4e3045e1b7348ca176818980ddc8c7aaaaafd4b6374f`  
-		Last Modified: Wed, 02 Jul 2025 19:47:29 GMT  
+	-	`sha256:b6598be0791a684146baf0849a2ca68c2161a636d60adfe9b05e98670d83dad6`  
+		Last Modified: Wed, 09 Jul 2025 22:47:32 GMT  
 		Size: 11.2 KB (11231 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:9696b02084f0c575dc765d4e57f3aff9d3dd6675055b55462e614f8056ddd283
+$ docker pull swift@sha256:0049a0be7b181c499e4ac3eaedef9c08e0e5aa8bed5def105b87f4a16e555ec0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.5 MB (122472640 bytes)**  
+-	Total Size: **122.5 MB (122482688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b99ac5eac9ea9687248aa7d481cc026cd25be8bdb90ae998f353a29ba370bd4`
+-	Image ID: `sha256:d5d993089a1f637373d74ed9f8d63bae68a6b45e2411b7167b140e7fe882faa3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2381,7 +2381,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2389,7 +2389,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -2412,36 +2412,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1c397717144b00e5dde74afa2ff375facea6c068d08cff8254dd223c39e81e`  
-		Last Modified: Wed, 02 Jul 2025 19:22:32 GMT  
-		Size: 45.2 MB (45156066 bytes)  
+	-	`sha256:42e5d7fca0ea73cff626fbce38a212e3348dfe3d408628cc59a1acd5338b3ed3`  
+		Last Modified: Wed, 09 Jul 2025 20:35:06 GMT  
+		Size: 45.2 MB (45167826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:f50bc7bbc55b0954b7ae83900f46686b1636ce1aed14bfd06fe4ef289bf79164
+$ docker pull swift@sha256:0f34cf67f769b8687d595e26a5ad5b4e7d01448a623c13da5580e1f7fe8d92d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6407925 bytes)**  
+-	Total Size: **6.4 MB (6407949 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98e77cfa7f16c086847feaf700831f9204b8b5f027cf423e634ba11ed589d145`
+-	Image ID: `sha256:2cf2961094dec1cd848a493f4f4f05cf015a7ea35904401b723cc23fa543761d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9521dc80ce604c17fb8942ab2c2d4e189fe0f647f33a61336175dd2191e75013`  
-		Last Modified: Wed, 02 Jul 2025 22:47:32 GMT  
-		Size: 6.4 MB (6396620 bytes)  
+	-	`sha256:a9b29dce8821ac569035210d48ea1b8fb2447d84faa3fbb4d54e3edb97dccd0b`  
+		Last Modified: Wed, 09 Jul 2025 22:47:39 GMT  
+		Size: 6.4 MB (6396644 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9326a4298dbb7d3f1acf6da42e4ea5f15817269cbc8d03df7298f315054119db`  
-		Last Modified: Wed, 02 Jul 2025 22:47:32 GMT  
+	-	`sha256:6165ac16a46d86f651db4cb8c97db46d250db9511ab79ec665d4387b5ca4e49b`  
+		Last Modified: Wed, 09 Jul 2025 22:47:39 GMT  
 		Size: 11.3 KB (11305 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2633,69 +2633,69 @@ $ docker pull swift@sha256:74009bea20ae7f6f51bef08db5425b9fcf34adeefea14a674e68b
 ## `swift:5.10-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:9da7f0b92f437592f840e0ce0b6cf1ebe1c7c44c1aca2ae7a862ea609246b103
+$ docker pull swift@sha256:7787334de942929a7bdace75d6e3b449e24c086ff64fa2dd0fa45ef3aa37d65a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:5.10-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:5.10-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:4e2780d37fc777b0391ebb83bc92bcf4f9ad1f355d66b77e04b840bb3d3d9a30
+$ docker pull swift@sha256:9d0369416dc03c12d4b9fe6ef6d8a4d2f73bde945c7a978004b3a1d318773bb4
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5763176605 bytes)**  
+-	Total Size: **5.8 GB (5763778261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e022e5bcc878ecf503f5d6cbac9839e58630a790fddb7beaa613d65e502aad69`
+-	Image ID: `sha256:c38e0bbb642d83e2b23fbeb0bef1cfa530b38f435b32f91ef060306eda117515`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:38:45 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:13:24 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:38:46 GMT
+# Wed, 09 Jul 2025 18:13:25 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:38:47 GMT
+# Wed, 09 Jul 2025 18:13:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:38:48 GMT
+# Wed, 09 Jul 2025 18:13:27 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:38:48 GMT
+# Wed, 09 Jul 2025 18:13:28 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:38:49 GMT
+# Wed, 09 Jul 2025 18:13:29 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:39:47 GMT
+# Wed, 09 Jul 2025 18:14:33 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:39:48 GMT
+# Wed, 09 Jul 2025 18:14:34 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:39:49 GMT
+# Wed, 09 Jul 2025 18:14:35 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:40:16 GMT
+# Wed, 09 Jul 2025 18:15:11 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:18 GMT
+# Wed, 09 Jul 2025 18:15:13 GMT
 ARG VSB=https://aka.ms/vs/17/release/vs_buildtools.exe
-# Tue, 10 Jun 2025 21:40:19 GMT
+# Wed, 09 Jul 2025 18:15:14 GMT
 ARG VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
-# Tue, 10 Jun 2025 21:50:30 GMT
+# Wed, 09 Jul 2025 18:24:58 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:50:31 GMT
+# Wed, 09 Jul 2025 18:24:59 GMT
 ARG SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:50:32 GMT
+# Wed, 09 Jul 2025 18:25:00 GMT
 ARG SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286
-# Tue, 10 Jun 2025 21:52:35 GMT
+# Wed, 09 Jul 2025 18:27:02 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286 VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:52:37 GMT
+# Wed, 09 Jul 2025 18:27:03 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -2704,76 +2704,76 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74f41053edc00fe6213d02ebe41a2aabc8a3f8394d938761e78fa3a575adb879`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:251d9efc96ff82b0133fe23f3b64ae48be12809e33bbc444c7f1d9205013e925`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcdc396bd77a727a0bd9456926beee9b215ba24d465b1a43d6fd421ddbe400a0`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:e8281550d3f912f6e4fa65510e46a6f8451f9263fd10c864fd10194305b32213`  
+		Last Modified: Wed, 09 Jul 2025 19:47:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f566eb8368dc5680657c6c642d46a9f89c7d2eed9db7d5e88024796d5b4ce2f`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1269 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d82a8bc84dd3dfbe1e9772c54383909a3e98ff631941eb5b96012cec91fafaf4`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41d7bfa23403b6b45d12961866d43802865f9a7badb9a9a5328215db991d023b`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c5a85834c3b07ea7d8f7384740497bfc6365c64faba83b572f4cb735b76b872`  
-		Last Modified: Tue, 10 Jun 2025 21:55:39 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec66f148d1ddf19fe5e315049322a3595007ca51a90e2f6986601d26408ddbef`  
-		Last Modified: Tue, 10 Jun 2025 22:48:00 GMT  
-		Size: 150.3 MB (150262386 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c90028dedc1bf3e6bbc031ad7ddbd78b27acfdce5f241ef6a38f7a4b1e45c7d4`  
-		Last Modified: Tue, 10 Jun 2025 21:55:39 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964a757784276232b66fba7abbc26c88560e1f3291eff9265608198e12add1c5`  
-		Last Modified: Tue, 10 Jun 2025 21:55:39 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2768ae5df0ccef80cd398af1512ea7e4ddd81de88e6ecb6e69aa54ceee80f6`  
-		Last Modified: Tue, 10 Jun 2025 21:55:43 GMT  
-		Size: 47.9 MB (47867919 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b575bef4cdafc5982a2c095e6fbffe9b2e2d0360d41d8f46bad144d5c5417bf`  
-		Last Modified: Tue, 10 Jun 2025 21:55:40 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72276b6ce4efbf5096b6c68c8bb7075b7f71501bf97782798638a05705bd8f70`  
-		Last Modified: Tue, 10 Jun 2025 21:55:40 GMT  
-		Size: 1.3 KB (1310 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:018e1aa5cef382eeaea5bd2e26306b07c73197e3c1618656b73b95c513fffd6d`  
-		Last Modified: Tue, 10 Jun 2025 22:48:24 GMT  
-		Size: 1.7 GB (1704518003 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7529a274eed43552f1c427e09ba18becef574b31969780df526f16fb531bf3b`  
-		Last Modified: Tue, 10 Jun 2025 22:47:38 GMT  
+	-	`sha256:e4a34c0a45cd264a2989bb61833655f1d58318e76ce4f33cc3d7d8ff46d199fa`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdd7dd0a461178b8fca406ea4abc8b6554a5d205796329c1e94c9f5a66167c6b`  
-		Last Modified: Tue, 10 Jun 2025 22:47:39 GMT  
+	-	`sha256:108ac8923d0bb49198f44600096cdcb0e202187414a9fd5cecda274a038b6f04`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fcdffa118f36a9389f36c1e1507502456bbd96583e55b1bde70440843e0eef49`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1311 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:690bd6ae681b620ba1637f78d08cb85470586d96867faaa8fe07e7d08862bb37`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99bedfa2f80a6d0d0e384452911edc058de314cb30ebbbab8d3ccefa2d845226`  
-		Last Modified: Tue, 10 Jun 2025 22:48:01 GMT  
-		Size: 1.6 GB (1580259988 bytes)  
+	-	`sha256:80c7edd4b31e2855c81d8282a6b6d3a24ba95ec70728e992d1b89c86e0cba9b4`  
+		Last Modified: Wed, 09 Jul 2025 19:47:51 GMT  
+		Size: 150.3 MB (150266448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:341d283f6db14f3bd51265f9043a8540ca6423dba1bdb954a6ef9349f3565eab`  
-		Last Modified: Tue, 10 Jun 2025 22:47:41 GMT  
+	-	`sha256:3eef82f35e4028be3db7340c2f025047840148aa46bbdaf480ebe65b0e104506`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1312 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:abf250e1d0a67fef6590c591131f34db77d05727e4b1561956570dfe5bd0717f`  
+		Last Modified: Wed, 09 Jul 2025 19:47:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4adae3a146c69f42b74aaf325e55a5df1a3f6ac7dec4e03be3ca611a75086173`  
+		Last Modified: Wed, 09 Jul 2025 19:47:41 GMT  
+		Size: 47.9 MB (47867230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2d5f718b796bf317772ab5cdf215dd8ee66076f53ad4a69956f5a373a4310335`  
+		Last Modified: Wed, 09 Jul 2025 19:47:33 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1df9c07b58004a994b9757b686529e82a47ce83172e42c03f34bc062536c6520`  
+		Last Modified: Wed, 09 Jul 2025 19:47:33 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:33bf9adf092c8ddb49216ec02a5f78bcb80d62f578a24a3c6a9b510f796227c6`  
+		Last Modified: Wed, 09 Jul 2025 19:47:57 GMT  
+		Size: 1.7 GB (1704762147 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f64c81a1a629ac0fb8b904ac05ceb95fc41d140560a32237f86754573552d50b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:35 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4922230344806ea270bb525900302fffdc645571223670d367031612fe5c054b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:35 GMT  
+		Size: 1.3 KB (1325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed1f15ee2ab3ed55bcf60c0d60f2d24577b37c95e8d9edc5b303b8eef7959c27`  
+		Last Modified: Wed, 09 Jul 2025 19:47:57 GMT  
+		Size: 1.6 GB (1580262153 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:755533471a4de86566d47f8953272e00836861388a7b86295215c19b9c5f8218`  
+		Last Modified: Wed, 09 Jul 2025 19:47:43 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4650,7 +4650,7 @@ $ docker pull swift@sha256:2dae3c5281bfc4cc6a161b8d1dfd7b6789511975b07e9639b3368
 ## `swift:5.10.1-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:c9fb952e298b1c3b88111a6a91020edcc884b893d877ea6cc58715b6397c5328
+$ docker pull swift@sha256:818d171b7997449862107f39de69162da61b9284b77fa2e685fa04e27be1fdf2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4663,13 +4663,13 @@ $ docker pull swift@sha256:c9fb952e298b1c3b88111a6a91020edcc884b893d877ea6cc5871
 ### `swift:5.10.1-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:b2d5e3dfc76c61ce6032d21fd5e5d693fe2ad8eed2bf33ec973b798f43a1371a
+$ docker pull swift@sha256:8316f311a17e5b50d7365cff6e58de12c0ac33f3699268e1db39c124a9e0602f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **827.5 MB (827474076 bytes)**  
+-	Total Size: **828.4 MB (828363489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbbb4edbfaae40cf640de181fa222f6c9c1700f573f8e21007ead1ec9ee85df3`
+-	Image ID: `sha256:98c339bacb0b5794a3211348984f82b91e603ace1d5dc3f609fc7879cfb8dce7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4696,7 +4696,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4704,7 +4704,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4732,57 +4732,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:521d07c72d7aba81f3f0b742da8bd4488039e1130749f0f29c1bc1b5783f75ae`  
-		Last Modified: Wed, 02 Jul 2025 18:46:39 GMT  
-		Size: 124.4 MB (124398956 bytes)  
+	-	`sha256:284acba000199bff3c3a7f3c88b0a98b0d17db7c8d06bae199cdb12c112d85e6`  
+		Last Modified: Wed, 09 Jul 2025 19:13:00 GMT  
+		Size: 125.3 MB (125288016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc89b4bdacdb7b3c36c7880be0354e09c972bef53218d216901ba139173099cd`  
 		Last Modified: Thu, 19 Dec 2024 10:06:24 GMT  
 		Size: 623.5 MB (623493795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99f857e031122f0fd5801e9b971ea21d76b105cee123d215cdf3d1e522937bf2`  
-		Last Modified: Wed, 02 Jul 2025 18:46:26 GMT  
+	-	`sha256:3baa613d5068e46861e8d346402642a1237faf03f1f11d1288fba82af8f6f453`  
+		Last Modified: Wed, 09 Jul 2025 19:12:54 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7e995d3d94637393cae3be3e187991dd03da92223e6283bdaddf3a68b8b0218d
+$ docker pull swift@sha256:b3a88d2c078b139c15ba1eda5f55b4df3aab53515ae0eb8969a524b0800ec7c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976609 bytes)**  
+-	Total Size: **13.0 MB (12980331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd3c3fb2bb01e27e627b8b8a9cb92ac5c5b1a2d31f87f2a064f01b16b7ed1952`
+-	Image ID: `sha256:8a11c0751e5e9de9ada4eb70e17a38d8d38a018aa2dba93048c50cbc8fe62b7e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3451091ef7ed52a8935185c39107e432a02f1ce8cb1abd2192061c302d333309`  
-		Last Modified: Wed, 02 Jul 2025 19:47:23 GMT  
-		Size: 13.0 MB (12962406 bytes)  
+	-	`sha256:b9abff9641dedc1a0de726df4a5a66f9f9e7cffd4fa34107c1df2de72400e18b`  
+		Last Modified: Wed, 09 Jul 2025 22:47:27 GMT  
+		Size: 13.0 MB (12966128 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0689f46dcfc328b84453b3c94ef0638c6d118645dab8ba57d0089a22e9b5767e`  
-		Last Modified: Wed, 02 Jul 2025 19:47:24 GMT  
+	-	`sha256:1cbe35e53881778825def19ecb6bb9c60a666950621d0718184543eca2862b1a`  
+		Last Modified: Wed, 09 Jul 2025 22:47:28 GMT  
 		Size: 14.2 KB (14203 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10.1-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:4fb4ec9b5cfa65c1021994ac239c5787f3a959b506a075a34fe32e21bdeef7ef
+$ docker pull swift@sha256:38428b981973c5511dfe34ea5fb4dcbfe75ba704bfb915ceb3f527093ca44b0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **813.1 MB (813075641 bytes)**  
+-	Total Size: **814.0 MB (813971724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ee9b023ce2d745d82d20f50bd82b76f0426e8805310806a0fd7a5798b589107`
+-	Image ID: `sha256:7366a11456a2f3cf82f6f0e1ab16a829c2b2b4f82604b1a1c49a7db479ceceaa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4809,7 +4809,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4817,7 +4817,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4845,51 +4845,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1a45a45f8c3402fa68c9eb441600db731621950faa44316a68132651b518bff`  
 		Last Modified: Thu, 19 Dec 2024 09:24:30 GMT  
 		Size: 617.7 MB (617684710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf6afdff034d94d82aad1e93b8533a5edb70a1b2d4bb10a8e1e6add30083e349`  
-		Last Modified: Wed, 02 Jul 2025 19:21:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:5017f15fd4406c660854e6790027c97ce48f461173afa964c0f8863146488810`  
+		Last Modified: Wed, 09 Jul 2025 20:34:10 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:93bfe28ee65ff39ed335c7648bbd179c1036c2fe64c98b49ea66c4779a0a6cb2
+$ docker pull swift@sha256:0eeda637c4f1a1b8ab8a063e0997c25c6425a60949338b9451fe30eb4f03a2c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12849948 bytes)**  
+-	Total Size: **12.9 MB (12853670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37e22190f398793ca0e963877aa5362f59e98b801c25eafe942accd77ecfacfa`
+-	Image ID: `sha256:3a1c123535f1ed10eb926b99fd19500957002bc5eb903959f3d486f0b7ab426f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:350db17a01ad76cb5d76969f63dcf5ffe434fe60f15a892c9c19abf3fe8b8e74`  
-		Last Modified: Wed, 02 Jul 2025 22:47:32 GMT  
-		Size: 12.8 MB (12835641 bytes)  
+	-	`sha256:f2bf3af07233504607dc235f75e33e23352936f91385958008bbc6380fa99993`  
+		Last Modified: Wed, 09 Jul 2025 22:47:38 GMT  
+		Size: 12.8 MB (12839363 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b14abf83e9dc49151254690dedb3d23800b40d74ed0acd729313845152fbb93`  
-		Last Modified: Wed, 02 Jul 2025 22:47:33 GMT  
+	-	`sha256:c44bbc06b51f9b7b5f9586cc3c690842cecb239129a82ebc31c84d576c35629f`  
+		Last Modified: Wed, 09 Jul 2025 22:47:39 GMT  
 		Size: 14.3 KB (14307 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.10.1-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:60f733dfd9fcdf6c1b51bfd38460d536cddda6717e40f6cfa68f357ba7738768
+$ docker pull swift@sha256:a569403baeff5d58403aca76653499ad30cfd8ad5604009f0ca32c4db3c15bcf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4902,13 +4902,13 @@ $ docker pull swift@sha256:60f733dfd9fcdf6c1b51bfd38460d536cddda6717e40f6cfa68f3
 ### `swift:5.10.1-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:5b9692ed065b47854e1928b4c6a78bcf6e1940a9e8b53158fa5e9ec487b3012a
+$ docker pull swift@sha256:3a32b72640b9ea50e4fd463eb98ab332000c5a4f9a523f0f3840f04bb0830d1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126292411 bytes)**  
+-	Total Size: **126.3 MB (126298976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d265471dae9301fe1a45d8fa5276ce5e1c128a5d3e6b68209fa95f6c15029b83`
+-	Image ID: `sha256:7caa745b7b3a0d2971f8943e232598cbb089615ce58c250c596050fed4f460d8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4935,7 +4935,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4943,7 +4943,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -4966,49 +4966,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e9bb919dbd4d1c0173b8fab14b8ca8c96b9cece1addd85a4304779db1de28f7`  
-		Last Modified: Wed, 02 Jul 2025 18:45:13 GMT  
-		Size: 46.7 MB (46711260 bytes)  
+	-	`sha256:d2f8c134957472a9f6b44d33cc73411c4affe9efd0fce063bd1a88a167103777`  
+		Last Modified: Wed, 09 Jul 2025 19:12:16 GMT  
+		Size: 46.7 MB (46717472 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:ae6e3042e91a569f81a6b33521cb062c7ca47e6ca1dc689c05bc82d85482652a
+$ docker pull swift@sha256:f723d58459053ac991cee3c3c553166a67da6c79519a925859c7e06aa5f01fa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412060 bytes)**  
+-	Total Size: **6.4 MB (6412084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c433d29a4b261ffca937a8d40d2bc06c2eab55dd52662f1dde4aa0da840c8320`
+-	Image ID: `sha256:ac05f1e27d4a28163134da9637eebea6934cd5f0044c5c14b2bb385ed6bb9183`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:92f5531b3b268a140a95092c03b89995e6e2892b3bb05d1ec45586de2ef9a5b2`  
-		Last Modified: Wed, 02 Jul 2025 19:47:28 GMT  
-		Size: 6.4 MB (6400829 bytes)  
+	-	`sha256:d4efbd1964c038c32e152b08e4eacfd234591bf30a4cf79a71f27aa5eae42df1`  
+		Last Modified: Wed, 09 Jul 2025 22:47:31 GMT  
+		Size: 6.4 MB (6400853 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:98c5af8f346f7f76d43a4e3045e1b7348ca176818980ddc8c7aaaaafd4b6374f`  
-		Last Modified: Wed, 02 Jul 2025 19:47:29 GMT  
+	-	`sha256:b6598be0791a684146baf0849a2ca68c2161a636d60adfe9b05e98670d83dad6`  
+		Last Modified: Wed, 09 Jul 2025 22:47:32 GMT  
 		Size: 11.2 KB (11231 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.10.1-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:9696b02084f0c575dc765d4e57f3aff9d3dd6675055b55462e614f8056ddd283
+$ docker pull swift@sha256:0049a0be7b181c499e4ac3eaedef9c08e0e5aa8bed5def105b87f4a16e555ec0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.5 MB (122472640 bytes)**  
+-	Total Size: **122.5 MB (122482688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b99ac5eac9ea9687248aa7d481cc026cd25be8bdb90ae998f353a29ba370bd4`
+-	Image ID: `sha256:d5d993089a1f637373d74ed9f8d63bae68a6b45e2411b7167b140e7fe882faa3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -5035,7 +5035,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 06 Jun 2024 15:11:32 GMT
 ENV container oci
 # Thu, 06 Jun 2024 15:11:32 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -5043,7 +5043,7 @@ CMD ["/bin/bash"]
 # Thu, 06 Jun 2024 15:11:32 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 06 Jun 2024 15:11:32 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 06 Jun 2024 15:11:32 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 06 Jun 2024 15:11:32 GMT
@@ -5066,36 +5066,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1c397717144b00e5dde74afa2ff375facea6c068d08cff8254dd223c39e81e`  
-		Last Modified: Wed, 02 Jul 2025 19:22:32 GMT  
-		Size: 45.2 MB (45156066 bytes)  
+	-	`sha256:42e5d7fca0ea73cff626fbce38a212e3348dfe3d408628cc59a1acd5338b3ed3`  
+		Last Modified: Wed, 09 Jul 2025 20:35:06 GMT  
+		Size: 45.2 MB (45167826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.10.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:f50bc7bbc55b0954b7ae83900f46686b1636ce1aed14bfd06fe4ef289bf79164
+$ docker pull swift@sha256:0f34cf67f769b8687d595e26a5ad5b4e7d01448a623c13da5580e1f7fe8d92d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6407925 bytes)**  
+-	Total Size: **6.4 MB (6407949 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98e77cfa7f16c086847feaf700831f9204b8b5f027cf423e634ba11ed589d145`
+-	Image ID: `sha256:2cf2961094dec1cd848a493f4f4f05cf015a7ea35904401b723cc23fa543761d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9521dc80ce604c17fb8942ab2c2d4e189fe0f647f33a61336175dd2191e75013`  
-		Last Modified: Wed, 02 Jul 2025 22:47:32 GMT  
-		Size: 6.4 MB (6396620 bytes)  
+	-	`sha256:a9b29dce8821ac569035210d48ea1b8fb2447d84faa3fbb4d54e3edb97dccd0b`  
+		Last Modified: Wed, 09 Jul 2025 22:47:39 GMT  
+		Size: 6.4 MB (6396644 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9326a4298dbb7d3f1acf6da42e4ea5f15817269cbc8d03df7298f315054119db`  
-		Last Modified: Wed, 02 Jul 2025 22:47:32 GMT  
+	-	`sha256:6165ac16a46d86f651db4cb8c97db46d250db9511ab79ec665d4387b5ca4e49b`  
+		Last Modified: Wed, 09 Jul 2025 22:47:39 GMT  
 		Size: 11.3 KB (11305 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5287,69 +5287,69 @@ $ docker pull swift@sha256:74009bea20ae7f6f51bef08db5425b9fcf34adeefea14a674e68b
 ## `swift:5.10.1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:9da7f0b92f437592f840e0ce0b6cf1ebe1c7c44c1aca2ae7a862ea609246b103
+$ docker pull swift@sha256:7787334de942929a7bdace75d6e3b449e24c086ff64fa2dd0fa45ef3aa37d65a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:5.10.1-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:5.10.1-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:4e2780d37fc777b0391ebb83bc92bcf4f9ad1f355d66b77e04b840bb3d3d9a30
+$ docker pull swift@sha256:9d0369416dc03c12d4b9fe6ef6d8a4d2f73bde945c7a978004b3a1d318773bb4
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5763176605 bytes)**  
+-	Total Size: **5.8 GB (5763778261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e022e5bcc878ecf503f5d6cbac9839e58630a790fddb7beaa613d65e502aad69`
+-	Image ID: `sha256:c38e0bbb642d83e2b23fbeb0bef1cfa530b38f435b32f91ef060306eda117515`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:38:45 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:13:24 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:38:46 GMT
+# Wed, 09 Jul 2025 18:13:25 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:38:47 GMT
+# Wed, 09 Jul 2025 18:13:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:38:48 GMT
+# Wed, 09 Jul 2025 18:13:27 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:38:48 GMT
+# Wed, 09 Jul 2025 18:13:28 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:38:49 GMT
+# Wed, 09 Jul 2025 18:13:29 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:39:47 GMT
+# Wed, 09 Jul 2025 18:14:33 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:39:48 GMT
+# Wed, 09 Jul 2025 18:14:34 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:39:49 GMT
+# Wed, 09 Jul 2025 18:14:35 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:40:16 GMT
+# Wed, 09 Jul 2025 18:15:11 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:18 GMT
+# Wed, 09 Jul 2025 18:15:13 GMT
 ARG VSB=https://aka.ms/vs/17/release/vs_buildtools.exe
-# Tue, 10 Jun 2025 21:40:19 GMT
+# Wed, 09 Jul 2025 18:15:14 GMT
 ARG VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
-# Tue, 10 Jun 2025 21:50:30 GMT
+# Wed, 09 Jul 2025 18:24:58 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:50:31 GMT
+# Wed, 09 Jul 2025 18:24:59 GMT
 ARG SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:50:32 GMT
+# Wed, 09 Jul 2025 18:25:00 GMT
 ARG SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286
-# Tue, 10 Jun 2025 21:52:35 GMT
+# Wed, 09 Jul 2025 18:27:02 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286 VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:52:37 GMT
+# Wed, 09 Jul 2025 18:27:03 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -5358,76 +5358,76 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74f41053edc00fe6213d02ebe41a2aabc8a3f8394d938761e78fa3a575adb879`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:251d9efc96ff82b0133fe23f3b64ae48be12809e33bbc444c7f1d9205013e925`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcdc396bd77a727a0bd9456926beee9b215ba24d465b1a43d6fd421ddbe400a0`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:e8281550d3f912f6e4fa65510e46a6f8451f9263fd10c864fd10194305b32213`  
+		Last Modified: Wed, 09 Jul 2025 19:47:30 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f566eb8368dc5680657c6c642d46a9f89c7d2eed9db7d5e88024796d5b4ce2f`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1269 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d82a8bc84dd3dfbe1e9772c54383909a3e98ff631941eb5b96012cec91fafaf4`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41d7bfa23403b6b45d12961866d43802865f9a7badb9a9a5328215db991d023b`  
-		Last Modified: Tue, 10 Jun 2025 21:55:38 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c5a85834c3b07ea7d8f7384740497bfc6365c64faba83b572f4cb735b76b872`  
-		Last Modified: Tue, 10 Jun 2025 21:55:39 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec66f148d1ddf19fe5e315049322a3595007ca51a90e2f6986601d26408ddbef`  
-		Last Modified: Tue, 10 Jun 2025 22:48:00 GMT  
-		Size: 150.3 MB (150262386 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c90028dedc1bf3e6bbc031ad7ddbd78b27acfdce5f241ef6a38f7a4b1e45c7d4`  
-		Last Modified: Tue, 10 Jun 2025 21:55:39 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964a757784276232b66fba7abbc26c88560e1f3291eff9265608198e12add1c5`  
-		Last Modified: Tue, 10 Jun 2025 21:55:39 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2768ae5df0ccef80cd398af1512ea7e4ddd81de88e6ecb6e69aa54ceee80f6`  
-		Last Modified: Tue, 10 Jun 2025 21:55:43 GMT  
-		Size: 47.9 MB (47867919 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b575bef4cdafc5982a2c095e6fbffe9b2e2d0360d41d8f46bad144d5c5417bf`  
-		Last Modified: Tue, 10 Jun 2025 21:55:40 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72276b6ce4efbf5096b6c68c8bb7075b7f71501bf97782798638a05705bd8f70`  
-		Last Modified: Tue, 10 Jun 2025 21:55:40 GMT  
-		Size: 1.3 KB (1310 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:018e1aa5cef382eeaea5bd2e26306b07c73197e3c1618656b73b95c513fffd6d`  
-		Last Modified: Tue, 10 Jun 2025 22:48:24 GMT  
-		Size: 1.7 GB (1704518003 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7529a274eed43552f1c427e09ba18becef574b31969780df526f16fb531bf3b`  
-		Last Modified: Tue, 10 Jun 2025 22:47:38 GMT  
+	-	`sha256:e4a34c0a45cd264a2989bb61833655f1d58318e76ce4f33cc3d7d8ff46d199fa`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdd7dd0a461178b8fca406ea4abc8b6554a5d205796329c1e94c9f5a66167c6b`  
-		Last Modified: Tue, 10 Jun 2025 22:47:39 GMT  
+	-	`sha256:108ac8923d0bb49198f44600096cdcb0e202187414a9fd5cecda274a038b6f04`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fcdffa118f36a9389f36c1e1507502456bbd96583e55b1bde70440843e0eef49`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1311 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:690bd6ae681b620ba1637f78d08cb85470586d96867faaa8fe07e7d08862bb37`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99bedfa2f80a6d0d0e384452911edc058de314cb30ebbbab8d3ccefa2d845226`  
-		Last Modified: Tue, 10 Jun 2025 22:48:01 GMT  
-		Size: 1.6 GB (1580259988 bytes)  
+	-	`sha256:80c7edd4b31e2855c81d8282a6b6d3a24ba95ec70728e992d1b89c86e0cba9b4`  
+		Last Modified: Wed, 09 Jul 2025 19:47:51 GMT  
+		Size: 150.3 MB (150266448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:341d283f6db14f3bd51265f9043a8540ca6423dba1bdb954a6ef9349f3565eab`  
-		Last Modified: Tue, 10 Jun 2025 22:47:41 GMT  
+	-	`sha256:3eef82f35e4028be3db7340c2f025047840148aa46bbdaf480ebe65b0e104506`  
+		Last Modified: Wed, 09 Jul 2025 19:47:31 GMT  
+		Size: 1.3 KB (1312 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:abf250e1d0a67fef6590c591131f34db77d05727e4b1561956570dfe5bd0717f`  
+		Last Modified: Wed, 09 Jul 2025 19:47:32 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4adae3a146c69f42b74aaf325e55a5df1a3f6ac7dec4e03be3ca611a75086173`  
+		Last Modified: Wed, 09 Jul 2025 19:47:41 GMT  
+		Size: 47.9 MB (47867230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2d5f718b796bf317772ab5cdf215dd8ee66076f53ad4a69956f5a373a4310335`  
+		Last Modified: Wed, 09 Jul 2025 19:47:33 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1df9c07b58004a994b9757b686529e82a47ce83172e42c03f34bc062536c6520`  
+		Last Modified: Wed, 09 Jul 2025 19:47:33 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:33bf9adf092c8ddb49216ec02a5f78bcb80d62f578a24a3c6a9b510f796227c6`  
+		Last Modified: Wed, 09 Jul 2025 19:47:57 GMT  
+		Size: 1.7 GB (1704762147 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f64c81a1a629ac0fb8b904ac05ceb95fc41d140560a32237f86754573552d50b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:35 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4922230344806ea270bb525900302fffdc645571223670d367031612fe5c054b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:35 GMT  
+		Size: 1.3 KB (1325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed1f15ee2ab3ed55bcf60c0d60f2d24577b37c95e8d9edc5b303b8eef7959c27`  
+		Last Modified: Wed, 09 Jul 2025 19:47:57 GMT  
+		Size: 1.6 GB (1580262153 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:755533471a4de86566d47f8953272e00836861388a7b86295215c19b9c5f8218`  
+		Last Modified: Wed, 09 Jul 2025 19:47:43 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6741,7 +6741,7 @@ $ docker pull swift@sha256:88622d9a590a58eb9ceb518fb95273538fc6325f0583114b5fcf7
 ## `swift:5.9-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:3ad1214c2744225ddfcdf34a25dbbc0c82168b3e91a855f1a120c1520d7d1099
+$ docker pull swift@sha256:c384ebb5294210adee725b5f8a4b8bf028d4a2182077fcbf50b1d9e80f7771b1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6754,13 +6754,13 @@ $ docker pull swift@sha256:3ad1214c2744225ddfcdf34a25dbbc0c82168b3e91a855f1a120c
 ### `swift:5.9-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:49c0f91f2724c9621f7f14295874bab390959687aec6fd8a70b3f0299a3b5b00
+$ docker pull swift@sha256:f94851a83eda0b9a45d83928ff5705faaa7a792c32d52778c75dfd770b9a7408
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **811.1 MB (811125272 bytes)**  
+-	Total Size: **812.0 MB (812014406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d8f6006d78f3660d8ee988764c01cab8de9661b82f83507b33467ab877110ea`
+-	Image ID: `sha256:1d9ac0598c795c5322f4c8a10f1b9e12e46d9fac336a685eedb83ac88cc70642`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -6787,7 +6787,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6795,7 +6795,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6823,57 +6823,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aeb1564ffb6ee02c99158405b94421691b792385f1d1b83c89c584d095ce0b42`  
-		Last Modified: Wed, 02 Jul 2025 19:53:34 GMT  
-		Size: 124.4 MB (124399264 bytes)  
+	-	`sha256:102724b838db2231995c99b2c7de6411ba698434a696d394647c3956e5e8578a`  
+		Last Modified: Wed, 09 Jul 2025 19:13:04 GMT  
+		Size: 125.3 MB (125288043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e3b84e0b0a4af75e42ad825d0c6b35b760af581bf2d5a4b350b878039051200`  
 		Last Modified: Thu, 19 Dec 2024 10:06:09 GMT  
 		Size: 607.1 MB (607144685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59fc2b0ceb9b302b75d508819a1f612e6527f70f5a8649462751c8243145478c`  
-		Last Modified: Wed, 02 Jul 2025 18:46:49 GMT  
-		Size: 172.0 B  
+	-	`sha256:1fc75f106499c322c78fbb84df605ae843e11caa02c62a8791d02f71cf71f24e`  
+		Last Modified: Wed, 09 Jul 2025 19:12:56 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:462ce5ba2bfb29f19b72dcd0eff98d704d7b08f14c079c234d0667efd329cffe
+$ docker pull swift@sha256:2a99b69caa14fe868287ea8011e1bcab6eac28f7d061ad4ed72058b46fd5e3a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976589 bytes)**  
+-	Total Size: **13.0 MB (12980311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812ac8d43f82b220c95b2a18fb18b4ce5444dc44cd3723821df97a257a8e14a9`
+-	Image ID: `sha256:cc9f18dc5d8789e7f75633f78b9dd0025db81ce15ad54b4a888a4891500a8b28`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91d310a38c26d22c53ddc3c897382b7fca137e7b622acd203d8e34ce2c61ff4`  
-		Last Modified: Wed, 02 Jul 2025 19:47:43 GMT  
-		Size: 13.0 MB (12962400 bytes)  
+	-	`sha256:426a77bd56908ff740edbb40b61a41d506cbab7765464ecd4c6b17b01b98d554`  
+		Last Modified: Wed, 09 Jul 2025 22:47:50 GMT  
+		Size: 13.0 MB (12966122 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af5379f052250c26109b4076466751e2205c8fe926887dc8feffa7d1ce03fada`  
-		Last Modified: Wed, 02 Jul 2025 19:47:44 GMT  
+	-	`sha256:819da5967bb18d712c95565435187374f0b81493941350af499b1a5981999ff9`  
+		Last Modified: Wed, 09 Jul 2025 22:47:51 GMT  
 		Size: 14.2 KB (14189 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:78251890c2095d2720b77478778b9bdeb4724d74b4bacbbb4664022aac3a57fd
+$ docker pull swift@sha256:338eb074245c7304a8ab5f39ad3a80e6f3afef1171c623be6c8008e7e5bcb104
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **797.4 MB (797372910 bytes)**  
+-	Total Size: **798.3 MB (798268991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0214a6e507341dc72f36550c6c395550fee71c3daa4d4141bb4e573922ead607`
+-	Image ID: `sha256:7855bb8a833567fde33e32ce9602d3499b25a2ec1cb6b72ece7e98565c952d0c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -6900,7 +6900,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6908,7 +6908,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -6936,51 +6936,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8485f574f808ff064553a28e0d8a965f1dc079d1971c5ff7056c6587b6ce985`  
 		Last Modified: Thu, 19 Dec 2024 10:06:06 GMT  
 		Size: 602.0 MB (601981978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf671d40321195e2322d95d5ab95b598e73e87b10a84927fe65c179ffcbe71a8`  
-		Last Modified: Wed, 02 Jul 2025 19:24:35 GMT  
-		Size: 175.0 B  
+	-	`sha256:930facf0ed68bf9e474579799520fbe3c9436782480b13cbae08144627da3b96`  
+		Last Modified: Wed, 09 Jul 2025 20:36:55 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:39f8fa1ba83f9e890b7106a96f93ab320f723b6d9bf20a54eaba230388e35e29
+$ docker pull swift@sha256:aa24503c6cdda5fabafa4af767ea8111b9f9daf374f1fc8eeadd4eba5838b3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12849928 bytes)**  
+-	Total Size: **12.9 MB (12853650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5c112595026e6814c99091beab9711dbb82c766e068b989d3c9094dd06aafed`
+-	Image ID: `sha256:d2e283b098954e49a0261c0e4d63eef9c98a12a68014a5311b350ec04bebc22a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf8ea9aaad34d93575d458273a76ba8df376ca0017fda0944467e81cb26b3340`  
-		Last Modified: Wed, 02 Jul 2025 22:47:55 GMT  
-		Size: 12.8 MB (12835635 bytes)  
+	-	`sha256:b8b9a24cef8bae9e16e9e705effb5dda9ef625b73eddc143b90d40505ce147b7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:02 GMT  
+		Size: 12.8 MB (12839357 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09cc611d3e4f020830c62f4b0f45b57b1b69a95131cf389f6e8abd7f5cc89b8b`  
-		Last Modified: Wed, 02 Jul 2025 22:47:56 GMT  
+	-	`sha256:98b608319aa61a4ff008dc14c91300a082be691c36c9a648967a782ef79bd2e8`  
+		Last Modified: Wed, 09 Jul 2025 22:48:02 GMT  
 		Size: 14.3 KB (14293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.9-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:5a0bf93f3cada89f45fe992df4a52aa02521f417e21281e8fb4ff3c3d994a076
+$ docker pull swift@sha256:217b6db2ca83086fad06ac29be3672807d1099f815076208628a3959550848b6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6993,13 +6993,13 @@ $ docker pull swift@sha256:5a0bf93f3cada89f45fe992df4a52aa02521f417e21281e8fb4ff
 ### `swift:5.9-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:27bf0af07981e4e602acbb94da5cbbceac165d48660191dd16a45dbda3e76c26
+$ docker pull swift@sha256:55cea0acf03adc54d79f02b189c144bd1dd657d94a60a8693ebcb4343706b7e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126338467 bytes)**  
+-	Total Size: **126.3 MB (126347776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ff66880bfa74e88de508b9f0d37a8ac6f60fe642b8c6fb1c35b7f54de467eb6`
+-	Image ID: `sha256:a531de6e1da1632f77b5f0a3eb319abb0ad3babf400dd03df834e63334c7d80f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -7026,7 +7026,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7034,7 +7034,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7057,49 +7057,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae4a1b7103245859ee33e29d3df4cb6cd1da0980033b80768e2181eceb7d39b`  
-		Last Modified: Wed, 02 Jul 2025 18:45:05 GMT  
-		Size: 46.8 MB (46757316 bytes)  
+	-	`sha256:cc7aa8ed15665f9eeefcecbcaf7d4705074f93140d3552132a1abb8ca1b269ba`  
+		Last Modified: Wed, 09 Jul 2025 19:12:02 GMT  
+		Size: 46.8 MB (46766272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:bdf6a925085246ec7ec55f63bab7d24ca1edff9fe644899efc803fa43c53f478
+$ docker pull swift@sha256:50d882b999e303e9687de37f84db8b96b60c659cf1eac6995964231c3da05a5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412043 bytes)**  
+-	Total Size: **6.4 MB (6412068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44d76ea8ddbaedbb7ecb9f4473032ec14839da38c8497cf15245dd4137e7e66`
+-	Image ID: `sha256:0f754cdf85c205dedc1dbea32254521174a9680f57e8b696d18391054de9b3ea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0958243eb7adbfb23280ebbe01373024245bacabd0c173ed5e62e2af49436c4d`  
-		Last Modified: Wed, 02 Jul 2025 19:47:46 GMT  
-		Size: 6.4 MB (6400825 bytes)  
+	-	`sha256:b36922891b9287843a47cf5193164ce137b650ff95c92c95f1b3ecdcd2f2c481`  
+		Last Modified: Wed, 09 Jul 2025 22:47:55 GMT  
+		Size: 6.4 MB (6400849 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6b604812a81a405a69abcff96ffc823d64fdb3b7bf36af0c574f531d8e7f8995`  
-		Last Modified: Wed, 02 Jul 2025 19:47:47 GMT  
-		Size: 11.2 KB (11218 bytes)  
+	-	`sha256:43c6bd72a614a38ceee5de2940c5b04fd8ed47223bd374a35f101b9f124ce9d9`  
+		Last Modified: Wed, 09 Jul 2025 22:47:56 GMT  
+		Size: 11.2 KB (11219 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:9a4caac309484ab860d9c5344464b386e4bb5e41ca3bbc8e93dcaf005e2c3369
+$ docker pull swift@sha256:e3ae19aabd37d313671ddec05d80e1425723b8ecbe338e115d47277b35c2b38a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.5 MB (122544166 bytes)**  
+-	Total Size: **122.6 MB (122553003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc17db1b2b718c7f9089baac7c0049dca2afaf369bb753e077b11d0809fe730a`
+-	Image ID: `sha256:34a23a5fe680be10c92de55d223cb6f9c801af3472d1f1195509123479289d53`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -7126,7 +7126,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7134,7 +7134,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -7157,36 +7157,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fdc4ba9cbeefd455dd02f1a388bc22c0b966f318224f3ff16affe96636e1ac7`  
-		Last Modified: Wed, 02 Jul 2025 19:25:28 GMT  
-		Size: 45.2 MB (45227592 bytes)  
+	-	`sha256:9d9880f42ef94ae85e24cfc4807bb6f0944f18751e7234557e4dbcb4c909fdc9`  
+		Last Modified: Wed, 09 Jul 2025 20:37:55 GMT  
+		Size: 45.2 MB (45238141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:0725eb14fcded3f2dbac5d28af4dc4a4039130513243c0aebc1bd9b3dce37e1f
+$ docker pull swift@sha256:a4fc3a00ab515908ed74aca58f81bd57172265b5699daf9836a197b443bcaebe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6407909 bytes)**  
+-	Total Size: **6.4 MB (6407933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83e5c0b255b7633464e248045cef41fa82bf6ca2c71902caa47f68f6dae64af8`
+-	Image ID: `sha256:d31757805d3ea8b72e73196ef12485ab04b0e0782be9be90bd88d289312af8d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44f77268094e53801395ea8ebb3a4b2ac938830dacc3a3f2d9faec118b0ec7ea`  
-		Last Modified: Wed, 02 Jul 2025 22:47:51 GMT  
-		Size: 6.4 MB (6396616 bytes)  
+	-	`sha256:e8d77152f271897c93f2f193c4703040ebbaae2fdd46a37948e1a479f36db663`  
+		Last Modified: Wed, 09 Jul 2025 22:48:03 GMT  
+		Size: 6.4 MB (6396640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:440a1381e51cd1873efa2e902f9d17c79cadea1d123a838530fecf847426d2e5`  
-		Last Modified: Wed, 02 Jul 2025 22:47:52 GMT  
+	-	`sha256:0b486a0087cfa42edcdff05d3a2b834ad81e948118ae74503899e7deaaf9b863`  
+		Last Modified: Wed, 09 Jul 2025 22:48:03 GMT  
 		Size: 11.3 KB (11293 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7378,69 +7378,69 @@ $ docker pull swift@sha256:88622d9a590a58eb9ceb518fb95273538fc6325f0583114b5fcf7
 ## `swift:5.9-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:7c0443f0ffa061efc8c5db1caf0c446c488de637d979c1fd0e799409e1ed9b97
+$ docker pull swift@sha256:d9afb7c59773eb579957712724c336ae9966703562871a5e82c55bdf509d371a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:5.9-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:5.9-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:5b898c185788225f229491a9ed0bb2878ec56c9bd5e72d7ad993eb5b46d3b55f
+$ docker pull swift@sha256:10f3c67acb58699460ce09c989f0397de843449a8d39673069a081769b9a4a1c
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6520565423 bytes)**  
+-	Total Size: **6.5 GB (6521096406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43e9f8f4f6cc376affb8c9a92dfc03a881e286ae44f2dd5b48f8d629c09262fe`
+-	Image ID: `sha256:e7f3be94bd3bbac6358cbf2f744f1803644725ea782f93953d8157a2f603cb19`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:32:40 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:12:57 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:32:41 GMT
+# Wed, 09 Jul 2025 18:12:58 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:32:42 GMT
+# Wed, 09 Jul 2025 18:12:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:32:43 GMT
+# Wed, 09 Jul 2025 18:13:00 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:32:44 GMT
+# Wed, 09 Jul 2025 18:13:01 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:32:45 GMT
+# Wed, 09 Jul 2025 18:13:02 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:33:35 GMT
+# Wed, 09 Jul 2025 18:13:59 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:33:36 GMT
+# Wed, 09 Jul 2025 18:14:00 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:33:37 GMT
+# Wed, 09 Jul 2025 18:14:01 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:34:05 GMT
+# Wed, 09 Jul 2025 18:14:34 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:34:06 GMT
+# Wed, 09 Jul 2025 18:14:35 GMT
 ARG VSB=https://aka.ms/vs/17/release/vs_buildtools.exe
-# Tue, 10 Jun 2025 21:34:07 GMT
+# Wed, 09 Jul 2025 18:14:36 GMT
 ARG VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
-# Tue, 10 Jun 2025 21:43:42 GMT
+# Wed, 09 Jul 2025 18:24:10 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:43:43 GMT
+# Wed, 09 Jul 2025 18:24:11 GMT
 ARG SWIFT=https://download.swift.org/swift-5.9.2-release/windows10/swift-5.9.2-RELEASE/swift-5.9.2-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:43:44 GMT
+# Wed, 09 Jul 2025 18:24:12 GMT
 ARG SWIFT_SHA256=D78A717551C78E824C9B74B0CFB1AD86060FC286EA071FDDB26DF18F56DC7212
-# Tue, 10 Jun 2025 21:45:59 GMT
+# Wed, 09 Jul 2025 18:26:07 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-5.9.2-release/windows10/swift-5.9.2-RELEASE/swift-5.9.2-RELEASE-windows10.exe SWIFT_SHA256=D78A717551C78E824C9B74B0CFB1AD86060FC286EA071FDDB26DF18F56DC7212 VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:46:01 GMT
+# Wed, 09 Jul 2025 18:26:09 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -7449,77 +7449,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef666d6c79219139ef24c9eb58d8dbb669155800f0580aadb9d7186c2d362f1`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:c23e02bf1b8148708118bb9442308f11bb1f8e9bd4f96cabe3c9ca794b01003e`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f7ef6392f234663c459a8b6df32660cb1e72ad5a3e0db8e7907a3566e8fcfe1`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3aff3f44865f7507d1b766c4db985f93b0818dfbbeab3f6c8e143d54e1ca807`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1307 bytes)  
+	-	`sha256:cd8556f29595e75403b832af20d8fd504567e00104c91421a1071b9d138a0a4b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d4b58b4caee3a6e60b32843bf1d60fae65e5c9af4550f445435269c3c34517`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1278 bytes)  
+	-	`sha256:af1233fa5fa9b47eecb8cf5c1b28f30518edeff656ed4700b369783173315e47`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6cf5efdd724fda2ee49b11a2fd27ea7a4894caaacee80405ccb9afea9262031`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1284 bytes)  
+	-	`sha256:a9eed02845df4f227dfd2dce4ffded636cf991c9813eb578ddb3fc0061a3c4e7`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eeaa10e4811645b0f0bf30293608083988bf9da0179048146174e5bbf755bc1`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1309 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6009f5869d6d07a2e21e6780c2320b90ff6a97dd1f9e89f81f264d20ae7d8ff`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:cdd0ae26ecd8060a60c3358af0892c480d5350bfc1c87961fad9a5a8f016e53b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aede4727c822998ae912e684822d9ab3def8a8c145cd79b331d703a8817264`  
-		Last Modified: Tue, 10 Jun 2025 22:48:29 GMT  
-		Size: 150.3 MB (150263097 bytes)  
+	-	`sha256:ca47a5ac127a2f85ad54241b749e7e8312e23d7b5ba9c67099a4852145bb3682`  
+		Last Modified: Wed, 09 Jul 2025 19:48:08 GMT  
+		Size: 150.3 MB (150265683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe83ce0601d6a9816cf7d779826122508c487d3bd57b3fd1e63b80f0efba00c`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3eb7f232f97767401a91b5703ff216f43ba33192d725b84ad6eeec916de1ac62`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:eb8730921b8e9de1062bfdce7a5e7dcc36079708b799c911a7d6dcfbc86b080c`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bad76da9af6f9d4195d0b3a907c09d58e543f59726d0d103c861bb2e46040c4`  
-		Last Modified: Tue, 10 Jun 2025 21:49:03 GMT  
-		Size: 47.9 MB (47866987 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66acd4f5fe12c27aca7b398f840f675648ea1dc7e09d3f67585aa9b42bd5e80b`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1277 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d0d98c8df3af4262fe1058a2bd8c69920c6a1f97f625aaed9d4554afd83be9c`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:6ae3bef424172d291b7297a169390f513d526bab5aacba75cd057f1c6249af71`  
+		Last Modified: Wed, 09 Jul 2025 19:47:48 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00156f4c58194ceea7aa2991adb52c8d3d5a10cbe267c0f6317556bc03c2467c`  
-		Last Modified: Tue, 10 Jun 2025 22:48:28 GMT  
-		Size: 1.7 GB (1704546919 bytes)  
+	-	`sha256:fcc4587643db28d05a052d57e60424df9213a378781b1f373375078ba0f3e8d4`  
+		Last Modified: Wed, 09 Jul 2025 19:47:54 GMT  
+		Size: 47.9 MB (47866134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59eb6cb6d0bd6208340b78a634131722894a3f44490aaf2bd16fb2ce3ce9f1f6`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:5755df1fff5894f377f3c2a476c98033c2fb5ee7bfd0754ea79cc77b26d66d16`  
+		Last Modified: Wed, 09 Jul 2025 19:48:25 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01cb9e54eacedbab8a9a10146b6f9262758abd40b08ab505d369d766880b21ff`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:31fcd342f3afe72a7aaade0ad0cd9d676e5d92c30f29aefe8b9b1a659496ce9c`  
+		Last Modified: Wed, 09 Jul 2025 19:47:49 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7e928ab7ff8eead0d0a981cc8166e8250c441b2a8159e5d6b1d969233000c73`  
-		Last Modified: Tue, 10 Jun 2025 22:48:27 GMT  
-		Size: 2.3 GB (2337620071 bytes)  
+	-	`sha256:25d0d752c6e19739426d4363073adc44b1722ccd1c77ce8822b4db0c5233f6e1`  
+		Last Modified: Wed, 09 Jul 2025 19:48:32 GMT  
+		Size: 1.7 GB (1704724551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de6fc0ca17f7f9d0dfc3b04708137fe86ea920f71aa668783e7ebc4b66d65708`  
-		Last Modified: Tue, 10 Jun 2025 21:49:02 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:707eddebebdb30fa8d5d385409f0c874f2893d7d0a96fa07c18a5478dad63ce3`  
+		Last Modified: Wed, 09 Jul 2025 19:47:54 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7940d6d2245f961678b851d84ef89becbabb34b7db53516510543db4b5039b4`  
+		Last Modified: Wed, 09 Jul 2025 19:47:55 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:34206645c4bde30ae3e61575d5cf492f8dd20c04ddc839e1593a95d3d891d5ae`  
+		Last Modified: Wed, 09 Jul 2025 19:48:15 GMT  
+		Size: 2.3 GB (2337619821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ded1645b3710b935db52ab5e76532bcb6015249a0d2e7d17f6ab374053c6d37b`  
+		Last Modified: Wed, 09 Jul 2025 19:48:09 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.9.2`
@@ -8832,7 +8832,7 @@ $ docker pull swift@sha256:88622d9a590a58eb9ceb518fb95273538fc6325f0583114b5fcf7
 ## `swift:5.9.2-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:3ad1214c2744225ddfcdf34a25dbbc0c82168b3e91a855f1a120c1520d7d1099
+$ docker pull swift@sha256:c384ebb5294210adee725b5f8a4b8bf028d4a2182077fcbf50b1d9e80f7771b1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8845,13 +8845,13 @@ $ docker pull swift@sha256:3ad1214c2744225ddfcdf34a25dbbc0c82168b3e91a855f1a120c
 ### `swift:5.9.2-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:49c0f91f2724c9621f7f14295874bab390959687aec6fd8a70b3f0299a3b5b00
+$ docker pull swift@sha256:f94851a83eda0b9a45d83928ff5705faaa7a792c32d52778c75dfd770b9a7408
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **811.1 MB (811125272 bytes)**  
+-	Total Size: **812.0 MB (812014406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d8f6006d78f3660d8ee988764c01cab8de9661b82f83507b33467ab877110ea`
+-	Image ID: `sha256:1d9ac0598c795c5322f4c8a10f1b9e12e46d9fac336a685eedb83ac88cc70642`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -8878,7 +8878,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8886,7 +8886,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8914,57 +8914,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aeb1564ffb6ee02c99158405b94421691b792385f1d1b83c89c584d095ce0b42`  
-		Last Modified: Wed, 02 Jul 2025 19:53:34 GMT  
-		Size: 124.4 MB (124399264 bytes)  
+	-	`sha256:102724b838db2231995c99b2c7de6411ba698434a696d394647c3956e5e8578a`  
+		Last Modified: Wed, 09 Jul 2025 19:13:04 GMT  
+		Size: 125.3 MB (125288043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e3b84e0b0a4af75e42ad825d0c6b35b760af581bf2d5a4b350b878039051200`  
 		Last Modified: Thu, 19 Dec 2024 10:06:09 GMT  
 		Size: 607.1 MB (607144685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59fc2b0ceb9b302b75d508819a1f612e6527f70f5a8649462751c8243145478c`  
-		Last Modified: Wed, 02 Jul 2025 18:46:49 GMT  
-		Size: 172.0 B  
+	-	`sha256:1fc75f106499c322c78fbb84df605ae843e11caa02c62a8791d02f71cf71f24e`  
+		Last Modified: Wed, 09 Jul 2025 19:12:56 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:462ce5ba2bfb29f19b72dcd0eff98d704d7b08f14c079c234d0667efd329cffe
+$ docker pull swift@sha256:2a99b69caa14fe868287ea8011e1bcab6eac28f7d061ad4ed72058b46fd5e3a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976589 bytes)**  
+-	Total Size: **13.0 MB (12980311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812ac8d43f82b220c95b2a18fb18b4ce5444dc44cd3723821df97a257a8e14a9`
+-	Image ID: `sha256:cc9f18dc5d8789e7f75633f78b9dd0025db81ce15ad54b4a888a4891500a8b28`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91d310a38c26d22c53ddc3c897382b7fca137e7b622acd203d8e34ce2c61ff4`  
-		Last Modified: Wed, 02 Jul 2025 19:47:43 GMT  
-		Size: 13.0 MB (12962400 bytes)  
+	-	`sha256:426a77bd56908ff740edbb40b61a41d506cbab7765464ecd4c6b17b01b98d554`  
+		Last Modified: Wed, 09 Jul 2025 22:47:50 GMT  
+		Size: 13.0 MB (12966122 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af5379f052250c26109b4076466751e2205c8fe926887dc8feffa7d1ce03fada`  
-		Last Modified: Wed, 02 Jul 2025 19:47:44 GMT  
+	-	`sha256:819da5967bb18d712c95565435187374f0b81493941350af499b1a5981999ff9`  
+		Last Modified: Wed, 09 Jul 2025 22:47:51 GMT  
 		Size: 14.2 KB (14189 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9.2-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:78251890c2095d2720b77478778b9bdeb4724d74b4bacbbb4664022aac3a57fd
+$ docker pull swift@sha256:338eb074245c7304a8ab5f39ad3a80e6f3afef1171c623be6c8008e7e5bcb104
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **797.4 MB (797372910 bytes)**  
+-	Total Size: **798.3 MB (798268991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0214a6e507341dc72f36550c6c395550fee71c3daa4d4141bb4e573922ead607`
+-	Image ID: `sha256:7855bb8a833567fde33e32ce9602d3499b25a2ec1cb6b72ece7e98565c952d0c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -8991,7 +8991,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -8999,7 +8999,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9027,51 +9027,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8485f574f808ff064553a28e0d8a965f1dc079d1971c5ff7056c6587b6ce985`  
 		Last Modified: Thu, 19 Dec 2024 10:06:06 GMT  
 		Size: 602.0 MB (601981978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf671d40321195e2322d95d5ab95b598e73e87b10a84927fe65c179ffcbe71a8`  
-		Last Modified: Wed, 02 Jul 2025 19:24:35 GMT  
-		Size: 175.0 B  
+	-	`sha256:930facf0ed68bf9e474579799520fbe3c9436782480b13cbae08144627da3b96`  
+		Last Modified: Wed, 09 Jul 2025 20:36:55 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:39f8fa1ba83f9e890b7106a96f93ab320f723b6d9bf20a54eaba230388e35e29
+$ docker pull swift@sha256:aa24503c6cdda5fabafa4af767ea8111b9f9daf374f1fc8eeadd4eba5838b3ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12849928 bytes)**  
+-	Total Size: **12.9 MB (12853650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5c112595026e6814c99091beab9711dbb82c766e068b989d3c9094dd06aafed`
+-	Image ID: `sha256:d2e283b098954e49a0261c0e4d63eef9c98a12a68014a5311b350ec04bebc22a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf8ea9aaad34d93575d458273a76ba8df376ca0017fda0944467e81cb26b3340`  
-		Last Modified: Wed, 02 Jul 2025 22:47:55 GMT  
-		Size: 12.8 MB (12835635 bytes)  
+	-	`sha256:b8b9a24cef8bae9e16e9e705effb5dda9ef625b73eddc143b90d40505ce147b7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:02 GMT  
+		Size: 12.8 MB (12839357 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09cc611d3e4f020830c62f4b0f45b57b1b69a95131cf389f6e8abd7f5cc89b8b`  
-		Last Modified: Wed, 02 Jul 2025 22:47:56 GMT  
+	-	`sha256:98b608319aa61a4ff008dc14c91300a082be691c36c9a648967a782ef79bd2e8`  
+		Last Modified: Wed, 09 Jul 2025 22:48:02 GMT  
 		Size: 14.3 KB (14293 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:5.9.2-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:5a0bf93f3cada89f45fe992df4a52aa02521f417e21281e8fb4ff3c3d994a076
+$ docker pull swift@sha256:217b6db2ca83086fad06ac29be3672807d1099f815076208628a3959550848b6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9084,13 +9084,13 @@ $ docker pull swift@sha256:5a0bf93f3cada89f45fe992df4a52aa02521f417e21281e8fb4ff
 ### `swift:5.9.2-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:27bf0af07981e4e602acbb94da5cbbceac165d48660191dd16a45dbda3e76c26
+$ docker pull swift@sha256:55cea0acf03adc54d79f02b189c144bd1dd657d94a60a8693ebcb4343706b7e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.3 MB (126338467 bytes)**  
+-	Total Size: **126.3 MB (126347776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ff66880bfa74e88de508b9f0d37a8ac6f60fe642b8c6fb1c35b7f54de467eb6`
+-	Image ID: `sha256:a531de6e1da1632f77b5f0a3eb319abb0ad3babf400dd03df834e63334c7d80f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -9117,7 +9117,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9125,7 +9125,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9148,49 +9148,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae4a1b7103245859ee33e29d3df4cb6cd1da0980033b80768e2181eceb7d39b`  
-		Last Modified: Wed, 02 Jul 2025 18:45:05 GMT  
-		Size: 46.8 MB (46757316 bytes)  
+	-	`sha256:cc7aa8ed15665f9eeefcecbcaf7d4705074f93140d3552132a1abb8ca1b269ba`  
+		Last Modified: Wed, 09 Jul 2025 19:12:02 GMT  
+		Size: 46.8 MB (46766272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:bdf6a925085246ec7ec55f63bab7d24ca1edff9fe644899efc803fa43c53f478
+$ docker pull swift@sha256:50d882b999e303e9687de37f84db8b96b60c659cf1eac6995964231c3da05a5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412043 bytes)**  
+-	Total Size: **6.4 MB (6412068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44d76ea8ddbaedbb7ecb9f4473032ec14839da38c8497cf15245dd4137e7e66`
+-	Image ID: `sha256:0f754cdf85c205dedc1dbea32254521174a9680f57e8b696d18391054de9b3ea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0958243eb7adbfb23280ebbe01373024245bacabd0c173ed5e62e2af49436c4d`  
-		Last Modified: Wed, 02 Jul 2025 19:47:46 GMT  
-		Size: 6.4 MB (6400825 bytes)  
+	-	`sha256:b36922891b9287843a47cf5193164ce137b650ff95c92c95f1b3ecdcd2f2c481`  
+		Last Modified: Wed, 09 Jul 2025 22:47:55 GMT  
+		Size: 6.4 MB (6400849 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6b604812a81a405a69abcff96ffc823d64fdb3b7bf36af0c574f531d8e7f8995`  
-		Last Modified: Wed, 02 Jul 2025 19:47:47 GMT  
-		Size: 11.2 KB (11218 bytes)  
+	-	`sha256:43c6bd72a614a38ceee5de2940c5b04fd8ed47223bd374a35f101b9f124ce9d9`  
+		Last Modified: Wed, 09 Jul 2025 22:47:56 GMT  
+		Size: 11.2 KB (11219 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:5.9.2-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:9a4caac309484ab860d9c5344464b386e4bb5e41ca3bbc8e93dcaf005e2c3369
+$ docker pull swift@sha256:e3ae19aabd37d313671ddec05d80e1425723b8ecbe338e115d47277b35c2b38a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.5 MB (122544166 bytes)**  
+-	Total Size: **122.6 MB (122553003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc17db1b2b718c7f9089baac7c0049dca2afaf369bb753e077b11d0809fe730a`
+-	Image ID: `sha256:34a23a5fe680be10c92de55d223cb6f9c801af3472d1f1195509123479289d53`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -9217,7 +9217,7 @@ LABEL io.openshift.tags="base rhel9"
 # Mon, 11 Dec 2023 21:15:07 GMT
 ENV container oci
 # Mon, 11 Dec 2023 21:15:07 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9225,7 +9225,7 @@ CMD ["/bin/bash"]
 # Mon, 11 Dec 2023 21:15:07 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Mon, 11 Dec 2023 21:15:07 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Mon, 11 Dec 2023 21:15:07 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Mon, 11 Dec 2023 21:15:07 GMT
@@ -9248,36 +9248,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fdc4ba9cbeefd455dd02f1a388bc22c0b966f318224f3ff16affe96636e1ac7`  
-		Last Modified: Wed, 02 Jul 2025 19:25:28 GMT  
-		Size: 45.2 MB (45227592 bytes)  
+	-	`sha256:9d9880f42ef94ae85e24cfc4807bb6f0944f18751e7234557e4dbcb4c909fdc9`  
+		Last Modified: Wed, 09 Jul 2025 20:37:55 GMT  
+		Size: 45.2 MB (45238141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:5.9.2-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:0725eb14fcded3f2dbac5d28af4dc4a4039130513243c0aebc1bd9b3dce37e1f
+$ docker pull swift@sha256:a4fc3a00ab515908ed74aca58f81bd57172265b5699daf9836a197b443bcaebe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6407909 bytes)**  
+-	Total Size: **6.4 MB (6407933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83e5c0b255b7633464e248045cef41fa82bf6ca2c71902caa47f68f6dae64af8`
+-	Image ID: `sha256:d31757805d3ea8b72e73196ef12485ab04b0e0782be9be90bd88d289312af8d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44f77268094e53801395ea8ebb3a4b2ac938830dacc3a3f2d9faec118b0ec7ea`  
-		Last Modified: Wed, 02 Jul 2025 22:47:51 GMT  
-		Size: 6.4 MB (6396616 bytes)  
+	-	`sha256:e8d77152f271897c93f2f193c4703040ebbaae2fdd46a37948e1a479f36db663`  
+		Last Modified: Wed, 09 Jul 2025 22:48:03 GMT  
+		Size: 6.4 MB (6396640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:440a1381e51cd1873efa2e902f9d17c79cadea1d123a838530fecf847426d2e5`  
-		Last Modified: Wed, 02 Jul 2025 22:47:52 GMT  
+	-	`sha256:0b486a0087cfa42edcdff05d3a2b834ad81e948118ae74503899e7deaaf9b863`  
+		Last Modified: Wed, 09 Jul 2025 22:48:03 GMT  
 		Size: 11.3 KB (11293 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9469,69 +9469,69 @@ $ docker pull swift@sha256:88622d9a590a58eb9ceb518fb95273538fc6325f0583114b5fcf7
 ## `swift:5.9.2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:7c0443f0ffa061efc8c5db1caf0c446c488de637d979c1fd0e799409e1ed9b97
+$ docker pull swift@sha256:d9afb7c59773eb579957712724c336ae9966703562871a5e82c55bdf509d371a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:5.9.2-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:5.9.2-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:5b898c185788225f229491a9ed0bb2878ec56c9bd5e72d7ad993eb5b46d3b55f
+$ docker pull swift@sha256:10f3c67acb58699460ce09c989f0397de843449a8d39673069a081769b9a4a1c
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6520565423 bytes)**  
+-	Total Size: **6.5 GB (6521096406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43e9f8f4f6cc376affb8c9a92dfc03a881e286ae44f2dd5b48f8d629c09262fe`
+-	Image ID: `sha256:e7f3be94bd3bbac6358cbf2f744f1803644725ea782f93953d8157a2f603cb19`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:32:40 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:12:57 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:32:41 GMT
+# Wed, 09 Jul 2025 18:12:58 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:32:42 GMT
+# Wed, 09 Jul 2025 18:12:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:32:43 GMT
+# Wed, 09 Jul 2025 18:13:00 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:32:44 GMT
+# Wed, 09 Jul 2025 18:13:01 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:32:45 GMT
+# Wed, 09 Jul 2025 18:13:02 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:33:35 GMT
+# Wed, 09 Jul 2025 18:13:59 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:33:36 GMT
+# Wed, 09 Jul 2025 18:14:00 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:33:37 GMT
+# Wed, 09 Jul 2025 18:14:01 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:34:05 GMT
+# Wed, 09 Jul 2025 18:14:34 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:34:06 GMT
+# Wed, 09 Jul 2025 18:14:35 GMT
 ARG VSB=https://aka.ms/vs/17/release/vs_buildtools.exe
-# Tue, 10 Jun 2025 21:34:07 GMT
+# Wed, 09 Jul 2025 18:14:36 GMT
 ARG VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
-# Tue, 10 Jun 2025 21:43:42 GMT
+# Wed, 09 Jul 2025 18:24:10 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:43:43 GMT
+# Wed, 09 Jul 2025 18:24:11 GMT
 ARG SWIFT=https://download.swift.org/swift-5.9.2-release/windows10/swift-5.9.2-RELEASE/swift-5.9.2-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:43:44 GMT
+# Wed, 09 Jul 2025 18:24:12 GMT
 ARG SWIFT_SHA256=D78A717551C78E824C9B74B0CFB1AD86060FC286EA071FDDB26DF18F56DC7212
-# Tue, 10 Jun 2025 21:45:59 GMT
+# Wed, 09 Jul 2025 18:26:07 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-5.9.2-release/windows10/swift-5.9.2-RELEASE/swift-5.9.2-RELEASE-windows10.exe SWIFT_SHA256=D78A717551C78E824C9B74B0CFB1AD86060FC286EA071FDDB26DF18F56DC7212 VSB=https://aka.ms/vs/17/release/vs_buildtools.exe VSB_SHA256=D4E08524CB0E5BD061A24F507928D1CFB91DCE192C5E12ED964B8343FC4CDEDD
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:46:01 GMT
+# Wed, 09 Jul 2025 18:26:09 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -9540,77 +9540,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef666d6c79219139ef24c9eb58d8dbb669155800f0580aadb9d7186c2d362f1`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:c23e02bf1b8148708118bb9442308f11bb1f8e9bd4f96cabe3c9ca794b01003e`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f7ef6392f234663c459a8b6df32660cb1e72ad5a3e0db8e7907a3566e8fcfe1`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3aff3f44865f7507d1b766c4db985f93b0818dfbbeab3f6c8e143d54e1ca807`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1307 bytes)  
+	-	`sha256:cd8556f29595e75403b832af20d8fd504567e00104c91421a1071b9d138a0a4b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d4b58b4caee3a6e60b32843bf1d60fae65e5c9af4550f445435269c3c34517`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1278 bytes)  
+	-	`sha256:af1233fa5fa9b47eecb8cf5c1b28f30518edeff656ed4700b369783173315e47`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6cf5efdd724fda2ee49b11a2fd27ea7a4894caaacee80405ccb9afea9262031`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1284 bytes)  
+	-	`sha256:a9eed02845df4f227dfd2dce4ffded636cf991c9813eb578ddb3fc0061a3c4e7`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eeaa10e4811645b0f0bf30293608083988bf9da0179048146174e5bbf755bc1`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1309 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6009f5869d6d07a2e21e6780c2320b90ff6a97dd1f9e89f81f264d20ae7d8ff`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:cdd0ae26ecd8060a60c3358af0892c480d5350bfc1c87961fad9a5a8f016e53b`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aede4727c822998ae912e684822d9ab3def8a8c145cd79b331d703a8817264`  
-		Last Modified: Tue, 10 Jun 2025 22:48:29 GMT  
-		Size: 150.3 MB (150263097 bytes)  
+	-	`sha256:ca47a5ac127a2f85ad54241b749e7e8312e23d7b5ba9c67099a4852145bb3682`  
+		Last Modified: Wed, 09 Jul 2025 19:48:08 GMT  
+		Size: 150.3 MB (150265683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe83ce0601d6a9816cf7d779826122508c487d3bd57b3fd1e63b80f0efba00c`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1287 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3eb7f232f97767401a91b5703ff216f43ba33192d725b84ad6eeec916de1ac62`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:eb8730921b8e9de1062bfdce7a5e7dcc36079708b799c911a7d6dcfbc86b080c`  
+		Last Modified: Wed, 09 Jul 2025 19:47:47 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bad76da9af6f9d4195d0b3a907c09d58e543f59726d0d103c861bb2e46040c4`  
-		Last Modified: Tue, 10 Jun 2025 21:49:03 GMT  
-		Size: 47.9 MB (47866987 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66acd4f5fe12c27aca7b398f840f675648ea1dc7e09d3f67585aa9b42bd5e80b`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1277 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d0d98c8df3af4262fe1058a2bd8c69920c6a1f97f625aaed9d4554afd83be9c`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
+	-	`sha256:6ae3bef424172d291b7297a169390f513d526bab5aacba75cd057f1c6249af71`  
+		Last Modified: Wed, 09 Jul 2025 19:47:48 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00156f4c58194ceea7aa2991adb52c8d3d5a10cbe267c0f6317556bc03c2467c`  
-		Last Modified: Tue, 10 Jun 2025 22:48:28 GMT  
-		Size: 1.7 GB (1704546919 bytes)  
+	-	`sha256:fcc4587643db28d05a052d57e60424df9213a378781b1f373375078ba0f3e8d4`  
+		Last Modified: Wed, 09 Jul 2025 19:47:54 GMT  
+		Size: 47.9 MB (47866134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59eb6cb6d0bd6208340b78a634131722894a3f44490aaf2bd16fb2ce3ce9f1f6`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:5755df1fff5894f377f3c2a476c98033c2fb5ee7bfd0754ea79cc77b26d66d16`  
+		Last Modified: Wed, 09 Jul 2025 19:48:25 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01cb9e54eacedbab8a9a10146b6f9262758abd40b08ab505d369d766880b21ff`  
-		Last Modified: Tue, 10 Jun 2025 21:49:01 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:31fcd342f3afe72a7aaade0ad0cd9d676e5d92c30f29aefe8b9b1a659496ce9c`  
+		Last Modified: Wed, 09 Jul 2025 19:47:49 GMT  
+		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7e928ab7ff8eead0d0a981cc8166e8250c441b2a8159e5d6b1d969233000c73`  
-		Last Modified: Tue, 10 Jun 2025 22:48:27 GMT  
-		Size: 2.3 GB (2337620071 bytes)  
+	-	`sha256:25d0d752c6e19739426d4363073adc44b1722ccd1c77ce8822b4db0c5233f6e1`  
+		Last Modified: Wed, 09 Jul 2025 19:48:32 GMT  
+		Size: 1.7 GB (1704724551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de6fc0ca17f7f9d0dfc3b04708137fe86ea920f71aa668783e7ebc4b66d65708`  
-		Last Modified: Tue, 10 Jun 2025 21:49:02 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:707eddebebdb30fa8d5d385409f0c874f2893d7d0a96fa07c18a5478dad63ce3`  
+		Last Modified: Wed, 09 Jul 2025 19:47:54 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7940d6d2245f961678b851d84ef89becbabb34b7db53516510543db4b5039b4`  
+		Last Modified: Wed, 09 Jul 2025 19:47:55 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:34206645c4bde30ae3e61575d5cf492f8dd20c04ddc839e1593a95d3d891d5ae`  
+		Last Modified: Wed, 09 Jul 2025 19:48:15 GMT  
+		Size: 2.3 GB (2337619821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ded1645b3710b935db52ab5e76532bcb6015249a0d2e7d17f6ab374053c6d37b`  
+		Last Modified: Wed, 09 Jul 2025 19:48:09 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.0`
@@ -11486,7 +11486,7 @@ $ docker pull swift@sha256:2ade684235da98bc4a4926353707a0335a02fc775a0c6f08642c7
 ## `swift:6.0-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:77a6c4c0fc8fe9388b7bf471b78f6474d7ab69cb457fd21bd05c4ddaea418f18
+$ docker pull swift@sha256:4e142c3079bb743b7396c31a0522920c7de22d8b5f721b39b0875868ec43741f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11499,13 +11499,13 @@ $ docker pull swift@sha256:77a6c4c0fc8fe9388b7bf471b78f6474d7ab69cb457fd21bd05c4
 ### `swift:6.0-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0e330ee1fe76701c97544eaed1ab0d29c913a4536e8de8a50fbc5f3c62a4a7cd
+$ docker pull swift@sha256:f1c94c09da057faa98ef8a61fd1de5725703bbe8cc4e5b668d80bf23811515bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 GB (1004257945 bytes)**  
+-	Total Size: **1.0 GB (1005146730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f45b61a0ef57da0f9109791ec8ca57f7668bd06677c268a13dc7d947a5f14e`
+-	Image ID: `sha256:ca99e0b2631f8bfd075ffbe73e71fdcd58610a74201e01ae40915af939c9a7bb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11532,7 +11532,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11540,7 +11540,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11568,57 +11568,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:865938677a04550a4e7021786ced631ca2534d6a292bd72498823bb855095962`  
-		Last Modified: Wed, 02 Jul 2025 18:47:13 GMT  
-		Size: 124.4 MB (124399288 bytes)  
+	-	`sha256:a32b16da906db0ebd8f76fb71e585d6d854203e92abae3efa174c2e1af2a3d3d`  
+		Last Modified: Wed, 09 Jul 2025 19:13:42 GMT  
+		Size: 125.3 MB (125287719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:becb7870dcf6d647e51c7c441149215366fec01a7644653ad7f9dc8baebabdb5`  
 		Last Modified: Fri, 13 Dec 2024 20:05:18 GMT  
 		Size: 800.3 MB (800277307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:545cb572b486d1648a72db39672b04eff537774e75a8b4d34453feaba80cb313`  
-		Last Modified: Wed, 02 Jul 2025 18:46:59 GMT  
-		Size: 199.0 B  
+	-	`sha256:938dd5527ca4b85d4a681e41774f4010e4c061c08a36c46c7ba509aaa3387a7e`  
+		Last Modified: Wed, 09 Jul 2025 19:13:28 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:1a8f245a5cd8fcf3ffaccebb3f0622a62181e1b6e937e0944cb57a1af5671ea3
+$ docker pull swift@sha256:fe1e96a2c03d854fdce56320f17cfdea4c1f049187a6c9396f87bc04b7fbbe16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976555 bytes)**  
+-	Total Size: **13.0 MB (12980277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b40d79476af1882187e4cf0176c21667389749de905172e5c1848e6a801f328`
+-	Image ID: `sha256:41630571a0d034b992308a8e0c8cbd4688fc9c7a198024d8e120a463b3d140a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1b44b021b026b97e30fdd77ec98d0058a8d49788a02bdca07771f56df7b28b3`  
-		Last Modified: Wed, 02 Jul 2025 19:48:03 GMT  
-		Size: 13.0 MB (12962398 bytes)  
+	-	`sha256:5c9293a52d96d2ad1a5cdbab33b3c041358e4b79e084e6e4d41e51f6672f23b6`  
+		Last Modified: Wed, 09 Jul 2025 22:48:13 GMT  
+		Size: 13.0 MB (12966120 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:344238216d5bec29628c3e2dbd87ee877105d8dfb8a21d9227f35e026f97fc96`  
-		Last Modified: Wed, 02 Jul 2025 19:48:04 GMT  
+	-	`sha256:ec7406f5c956c137c8604a6a9092681fb4c7fcea0930bc39a5d9119250553882`  
+		Last Modified: Wed, 09 Jul 2025 22:48:14 GMT  
 		Size: 14.2 KB (14157 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:24f66489cc1b3097b0e0a118420a8fa628b9135860d146eb00404c5a258b7b9e
+$ docker pull swift@sha256:70ea6650964e1ecfe8dd4fefaf4ca0cb1d7bd224cd575ab724ebc6c27176ad28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **991.9 MB (991864470 bytes)**  
+-	Total Size: **992.8 MB (992760553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee0c2cd276b45d11c303e2d27fa45377c665c4d16d96190bc80f0dd6da624c76`
+-	Image ID: `sha256:0c5b17de55f41527200b70b8b65eaedaccdf37dde5b73f7d0d5aa9afa844c94a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11645,7 +11645,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11653,7 +11653,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11681,51 +11681,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f936313db041fe3dee46ad15cc3dda672e3ec8f43c577c59bd936fefae706a1a`  
 		Last Modified: Fri, 13 Dec 2024 16:18:45 GMT  
 		Size: 796.5 MB (796473513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68d6fc768449e0051bfc45c80914e4266125130ee88be84cb7d59bbf2085e75e`  
-		Last Modified: Wed, 02 Jul 2025 19:18:31 GMT  
-		Size: 200.0 B  
+	-	`sha256:f25f0cf35105eb3d556accc7627aacb2e675cf18ee350e6e0f798c46e34e5cc6`  
+		Last Modified: Wed, 09 Jul 2025 20:42:22 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:e997d5d8ede69785131a463667b20ad41bbbe8686e6724afba2a6e64f60fb11c
+$ docker pull swift@sha256:a5d31192f7f98cf421a06531c98ddf6f4834b10b142dab651ca49f7b147613ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12849894 bytes)**  
+-	Total Size: **12.9 MB (12853615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa6dd70f6b26697c35efd1839e5734657edc5dc403f8fcaaee6413678fc6a26`
+-	Image ID: `sha256:4f707cd96d39617be4d1cfa244d9bef405bc18b5c68e902836ef185925695fcf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:013393464b824e37aacf91e908c3deac3f978623b84da5d673db9578d1ec7708`  
-		Last Modified: Wed, 02 Jul 2025 22:48:10 GMT  
-		Size: 12.8 MB (12835633 bytes)  
+	-	`sha256:e8b84a71562f1d3cc143370a75bb245cd0917d558568dadc66a4c496f4077ef2`  
+		Last Modified: Wed, 09 Jul 2025 22:48:24 GMT  
+		Size: 12.8 MB (12839355 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:906be719182f8f6c92129b162333ae074dc98297de300a914f091e0fa599f8c4`  
-		Last Modified: Wed, 02 Jul 2025 22:48:11 GMT  
-		Size: 14.3 KB (14261 bytes)  
+	-	`sha256:7674806f3075d4de3513b4a58befd469751714d9f221ad81e74dbca1d984a395`  
+		Last Modified: Wed, 09 Jul 2025 22:48:25 GMT  
+		Size: 14.3 KB (14260 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.0-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:790f3c2df0f90bfa7e11ba05bcb33a063c2681850897f5fe4103f8229dd58ce0
+$ docker pull swift@sha256:b7b27c81d7888ab5f5f9dfa98cc37db525b9b5eb4d9b2eed0362c4d3a879fcc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11738,13 +11738,13 @@ $ docker pull swift@sha256:790f3c2df0f90bfa7e11ba05bcb33a063c2681850897f5fe4103f
 ### `swift:6.0-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:8c17654b0f093cc994faec46f084dd8b708b347fe2b2240d528e9b38089a5db5
+$ docker pull swift@sha256:3f295b56ddb75c2c597cd1e7fd8b6cf7c0f341984bf917d97e0762019669afc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134552284 bytes)**  
+-	Total Size: **134.6 MB (134562171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9130f1bdf05abe7091eac5198807412b0fcdc324eaf3ed860f92cdad2f99991f`
+-	Image ID: `sha256:8c071c5e6d53976e237c3bb818edd6991b51ad7d679af7b0a818c0265896cdd8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11771,7 +11771,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11779,7 +11779,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11802,49 +11802,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d686f75250590fe53126b0b20de69fa4f145a53c1410ed550b979d69cd0eb2c`  
-		Last Modified: Wed, 02 Jul 2025 18:45:24 GMT  
-		Size: 55.0 MB (54971133 bytes)  
+	-	`sha256:abec84012e17955c4fa14bbf09a222d5551037803a252fd2dec1ade886510594`  
+		Last Modified: Wed, 09 Jul 2025 19:12:10 GMT  
+		Size: 55.0 MB (54980667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:d22838067f92f43de4a8730388c7e1f3af093bcc0b1c56457ff5d7b8330b688a
+$ docker pull swift@sha256:9d273702687d7e5745b27c93369f6ec32fe8652e2cc2651ab2d7af30110b9d42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412012 bytes)**  
+-	Total Size: **6.4 MB (6412036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6f4541b41299e961cc39270f3e4bd10a7909cec8e46694cafbd6b1b6d533e00`
+-	Image ID: `sha256:405524e66cafa1703ca0aac043601c944d55632e75eabc1fe2beaeb8d3dd5ed4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c3644c953b882891a6bcac7b45ec202dc843fd2509572e68aefbc0be02d15b84`  
-		Last Modified: Wed, 02 Jul 2025 19:48:06 GMT  
-		Size: 6.4 MB (6400825 bytes)  
+	-	`sha256:e458addc71e7764c9beb0da649b384397a718c5216538b1b8fef6f8e319bd881`  
+		Last Modified: Wed, 09 Jul 2025 22:48:17 GMT  
+		Size: 6.4 MB (6400849 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:683c3a616cd5b75daa42f4ac082e3e511a3678dba57c3c95679b30358179affb`  
-		Last Modified: Wed, 02 Jul 2025 19:48:07 GMT  
+	-	`sha256:48abde7e2b850ab6f5200d78e5d1564081c5710578763bdfd190216f1d720b62`  
+		Last Modified: Wed, 09 Jul 2025 22:48:18 GMT  
 		Size: 11.2 KB (11187 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:f9a6c47dd67f3bb1e4a820bb6075cb522dc3887101b317d4a64ad213a8febf38
+$ docker pull swift@sha256:9741cd7e4b7a3ed3a8221919f06aee57ff304c3393fd0585cc71b3c96aaa57d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.2 MB (131157513 bytes)**  
+-	Total Size: **131.2 MB (131167553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65d7a70ae27041e553ed768b61558410e8d645a7ff5614cfb4be22ba7b7e18b3`
+-	Image ID: `sha256:2eb9cb3f9b1f610cab4900fbf0c0801e71ffda48d9fc01bb655622694343f377`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -11871,7 +11871,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11879,7 +11879,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -11902,36 +11902,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26f139838dcc49bdc95530366c936a632605b2367c971e66548b0e31f9a4aa00`  
-		Last Modified: Wed, 02 Jul 2025 19:19:30 GMT  
-		Size: 53.8 MB (53840939 bytes)  
+	-	`sha256:32c285b743b17d906c656770c9a3b85d526a07d06353ec84bdf06735076bc6e0`  
+		Last Modified: Wed, 09 Jul 2025 20:31:50 GMT  
+		Size: 53.9 MB (53852691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:c2826391c7a0efc91aa92cdbfa947a2f3d007c85dadf5c9f3fbf4d7d0669ba55
+$ docker pull swift@sha256:a68e7fd1e51bcf037a11de267716190a5e83f511ddd26ff38b8cb28289a34242
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6407877 bytes)**  
+-	Total Size: **6.4 MB (6407901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:157fd5113e67b7fea693f161d7b2db7c6d141e404072633f6997534c0afab882`
+-	Image ID: `sha256:b015f693fbef0602bf170acc7d27649e9868af64e3f7572d7c14d31aaa6c887b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d327ab7dadc0ec81022cd9adfde8d8a3b2577104a47fac8286088159228edac`  
-		Last Modified: Wed, 02 Jul 2025 22:48:10 GMT  
-		Size: 6.4 MB (6396616 bytes)  
+	-	`sha256:feb9a5dc13f71e1a6e5979c76051082981d3268eb6744363b708d2de56c37766`  
+		Last Modified: Wed, 09 Jul 2025 22:48:24 GMT  
+		Size: 6.4 MB (6396640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b994b29a4887cf1a9302cb72f8052f637dd2e90222a8cf1457bbdaa8baa047d`  
-		Last Modified: Wed, 02 Jul 2025 22:48:11 GMT  
+	-	`sha256:11c2a9bb85521ff36adaf7c3d4b2ad8f54a9a3bd3bd185d28f5dee31a975ae14`  
+		Last Modified: Wed, 09 Jul 2025 22:48:25 GMT  
 		Size: 11.3 KB (11261 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12123,69 +12123,69 @@ $ docker pull swift@sha256:2ade684235da98bc4a4926353707a0335a02fc775a0c6f08642c7
 ## `swift:6.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:5b004a399818a9dd6ff33c0bc40536caadd1f93de436bafc237398a7e23437f2
+$ docker pull swift@sha256:8fc7ef7ee0dde8bc6e6307ba224d69b4a6ddf85c82d0e07f879e8e66b60910bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:6.0-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:6.0-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:0c3f5a51c04d7b624aead4e2a92e8e1ad22f67410d9ee8836bba8a25ba382d00
+$ docker pull swift@sha256:8e44accd3821da7dd531be81a2786049c7d724dc898a81aad9e8e5cf26fd2cd0
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5934044411 bytes)**  
+-	Total Size: **5.9 GB (5933430365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:580fc1a31c1d313909b31e0949cd6cbcd1e0aae293d78af3620911db83aeebec`
+-	Image ID: `sha256:2cdfae808508384b91bace606578bb6cf58879b3c1de41274a7696344806d16c`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:39:58 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:13:40 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:39:59 GMT
+# Wed, 09 Jul 2025 18:13:41 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:40:00 GMT
+# Wed, 09 Jul 2025 18:13:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:40:01 GMT
+# Wed, 09 Jul 2025 18:13:43 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:40:02 GMT
+# Wed, 09 Jul 2025 18:13:44 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:40:02 GMT
+# Wed, 09 Jul 2025 18:13:45 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:41:02 GMT
+# Wed, 09 Jul 2025 18:14:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:41:03 GMT
+# Wed, 09 Jul 2025 18:14:56 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:41:04 GMT
+# Wed, 09 Jul 2025 18:14:57 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:41:36 GMT
+# Wed, 09 Jul 2025 18:15:36 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:41:37 GMT
+# Wed, 09 Jul 2025 18:15:38 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 10 Jun 2025 21:41:38 GMT
+# Wed, 09 Jul 2025 18:15:39 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 10 Jun 2025 21:51:43 GMT
+# Wed, 09 Jul 2025 18:25:40 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:51:44 GMT
+# Wed, 09 Jul 2025 18:25:42 GMT
 ARG SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:51:45 GMT
+# Wed, 09 Jul 2025 18:25:43 GMT
 ARG SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3
-# Tue, 10 Jun 2025 21:54:04 GMT
+# Wed, 09 Jul 2025 18:27:58 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:54:06 GMT
+# Wed, 09 Jul 2025 18:28:00 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -12194,77 +12194,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21c59c3d3ff6f686f350152ce8066ec891af275617df355059ad8a39b90f9b2c`  
-		Last Modified: Tue, 10 Jun 2025 21:57:02 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:f1d98c562dc1ca767d6312b063b5a356f48bed0c363292a7043d90f73039b86a`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51d69c37d5af61b008dcd8d0bcc7d80e08ffa1ef42aaec31ee00f2317bb4111a`  
-		Last Modified: Tue, 10 Jun 2025 21:57:02 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7b839d8d4e72e5fb6ec4d81d3834b8dd4df69cbff1ce1f3cf1b2bc1f856a5d4`  
-		Last Modified: Tue, 10 Jun 2025 21:57:02 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de6ecd7b8eba4f88afaf76616eed7e85de748570058cc618c16d79a4209a9f5a`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30d7d44e050c04d73c47494cf6da70c16cce4e3e385ecdc4c0a7c2cddc58ce99`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60409204361441394edf23ce43923476a4341a729c67b9e3db3e893924468257`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:023b1b44beac822c435aac6e2021468539b1ef74661cc12b3e76432d927495a3`  
-		Last Modified: Wed, 11 Jun 2025 08:10:14 GMT  
-		Size: 150.3 MB (150273070 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0249800320756f04161f28d80a8750632678c642c0c06cf70922f0680cd07141`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937203003edfd071f0e934834abcafa085cf80cc17efb41833e4d40e66f1b656`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce02046c54bbcd4af2ef0d75d9af6240e491afc77da66b0cea1faaf966a3b190`  
-		Last Modified: Tue, 10 Jun 2025 21:57:09 GMT  
-		Size: 47.9 MB (47867262 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2282b24d1803f8d7a28ec93e2d09a2d06e91bf6baecb056412ab1fb250d60a06`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7a5aef2c1c169c709c04f2c471d510b135ae515554d25931370845eb9ecf007`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
+	-	`sha256:489c3025e78e14e4aea96c5bb6ab412694f34ab0b0aa9cab4fbba5ea04c34cde`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4930b5a47f324f0971b8209051feaf7291c95b4555635bf139a640264e8dedf`  
-		Last Modified: Tue, 10 Jun 2025 22:48:37 GMT  
-		Size: 1.7 GB (1687706165 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ab50c516a3db05e4fe5ab9135cc7ce6748008ea7ae4bbf84500b95f8989dd28`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
+	-	`sha256:5a66b1f51027f051eac37f110002dfa383b0a157a1b9e639c3b4a8d48a0c2d54`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f1848d87c2527f125f9fdd2f0a082d21c5c073e5da3cb0fc81416fd22b6a8e`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
-		Size: 1.3 KB (1271 bytes)  
+	-	`sha256:4303c7c6f342d615d29433a71b04c9d41956477b25b0f9a1c4c9236bf46e1b23`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd718dfb9f7943b7120d85b719388608b4c6261966fd7dc82a4eeb71be82d62a`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 1.8 GB (1767929660 bytes)  
+	-	`sha256:e7e9af3eb1fb75de7371bc4d9c760ea9d5f88985924f8da6693b807b4e84e448`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2a4638c46c8fd5a3ce46acd57e30227cb076453ed13901382b40626a13dfad`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:6bda7a6d9c30e7ac0ca8d035fb6e7e9c34f73725f6f7fbec0e12c5bc9e9eddae`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a6228096a5afbb3d54a7a33776c2535c317e6a5f8c6eb3ad7f300cf7cc9dd82`  
+		Last Modified: Wed, 09 Jul 2025 20:01:12 GMT  
+		Size: 150.3 MB (150263140 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:680c3164f2439291499f652747dba0f22a0ed72960b1006be4d8043964de1975`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e966247baabd80bba9f448efed21c07caefc3c8c6cbbc093777f8f88bd2eb8fe`  
+		Last Modified: Wed, 09 Jul 2025 19:48:05 GMT  
+		Size: 1.3 KB (1326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:41060e99d01cb6b30e6d7b0104f67c2a16db7b76627f17febdbe57358a210be7`  
+		Last Modified: Wed, 09 Jul 2025 19:48:11 GMT  
+		Size: 47.9 MB (47866263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8f2bbb75836e84ba4076108c904e6961c1d966f576b8076d83cbc591d2790161`  
+		Last Modified: Wed, 09 Jul 2025 19:48:05 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8a1cb68fe87c13047c0756b66d38ae10f463497997fa638546d26dd8fd78b74e`  
+		Last Modified: Wed, 09 Jul 2025 19:48:07 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:766233aba8e38785c4cf53c638aff89c1ccfe74d63bde443b222d7fd5ddbdae0`  
+		Last Modified: Wed, 09 Jul 2025 19:48:50 GMT  
+		Size: 1.7 GB (1686759861 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4de75a2f26589e90c1d7493b7cf301e5948c64f547017d4eb54c086f3c99d6a`  
+		Last Modified: Wed, 09 Jul 2025 19:48:08 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:92eb1ebfd33d621f34f9f15b49634235a1f3e3be5deb220aa43f1f9674636043`  
+		Last Modified: Wed, 09 Jul 2025 19:48:09 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0736819eeba44adf39876ee83ddda5666e799583ca22ca41fd59eded4c696c25`  
+		Last Modified: Wed, 09 Jul 2025 19:48:31 GMT  
+		Size: 1.8 GB (1767920823 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6769f7153658fa9ead42725abc2444a722cf5de7649b97daee60a0394f317dcd`  
+		Last Modified: Wed, 09 Jul 2025 19:48:12 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.0.3`
@@ -14140,7 +14140,7 @@ $ docker pull swift@sha256:2ade684235da98bc4a4926353707a0335a02fc775a0c6f08642c7
 ## `swift:6.0.3-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:77a6c4c0fc8fe9388b7bf471b78f6474d7ab69cb457fd21bd05c4ddaea418f18
+$ docker pull swift@sha256:4e142c3079bb743b7396c31a0522920c7de22d8b5f721b39b0875868ec43741f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14153,13 +14153,13 @@ $ docker pull swift@sha256:77a6c4c0fc8fe9388b7bf471b78f6474d7ab69cb457fd21bd05c4
 ### `swift:6.0.3-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0e330ee1fe76701c97544eaed1ab0d29c913a4536e8de8a50fbc5f3c62a4a7cd
+$ docker pull swift@sha256:f1c94c09da057faa98ef8a61fd1de5725703bbe8cc4e5b668d80bf23811515bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 GB (1004257945 bytes)**  
+-	Total Size: **1.0 GB (1005146730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f45b61a0ef57da0f9109791ec8ca57f7668bd06677c268a13dc7d947a5f14e`
+-	Image ID: `sha256:ca99e0b2631f8bfd075ffbe73e71fdcd58610a74201e01ae40915af939c9a7bb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14186,7 +14186,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14194,7 +14194,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14222,57 +14222,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:865938677a04550a4e7021786ced631ca2534d6a292bd72498823bb855095962`  
-		Last Modified: Wed, 02 Jul 2025 18:47:13 GMT  
-		Size: 124.4 MB (124399288 bytes)  
+	-	`sha256:a32b16da906db0ebd8f76fb71e585d6d854203e92abae3efa174c2e1af2a3d3d`  
+		Last Modified: Wed, 09 Jul 2025 19:13:42 GMT  
+		Size: 125.3 MB (125287719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:becb7870dcf6d647e51c7c441149215366fec01a7644653ad7f9dc8baebabdb5`  
 		Last Modified: Fri, 13 Dec 2024 20:05:18 GMT  
 		Size: 800.3 MB (800277307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:545cb572b486d1648a72db39672b04eff537774e75a8b4d34453feaba80cb313`  
-		Last Modified: Wed, 02 Jul 2025 18:46:59 GMT  
-		Size: 199.0 B  
+	-	`sha256:938dd5527ca4b85d4a681e41774f4010e4c061c08a36c46c7ba509aaa3387a7e`  
+		Last Modified: Wed, 09 Jul 2025 19:13:28 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:1a8f245a5cd8fcf3ffaccebb3f0622a62181e1b6e937e0944cb57a1af5671ea3
+$ docker pull swift@sha256:fe1e96a2c03d854fdce56320f17cfdea4c1f049187a6c9396f87bc04b7fbbe16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976555 bytes)**  
+-	Total Size: **13.0 MB (12980277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b40d79476af1882187e4cf0176c21667389749de905172e5c1848e6a801f328`
+-	Image ID: `sha256:41630571a0d034b992308a8e0c8cbd4688fc9c7a198024d8e120a463b3d140a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1b44b021b026b97e30fdd77ec98d0058a8d49788a02bdca07771f56df7b28b3`  
-		Last Modified: Wed, 02 Jul 2025 19:48:03 GMT  
-		Size: 13.0 MB (12962398 bytes)  
+	-	`sha256:5c9293a52d96d2ad1a5cdbab33b3c041358e4b79e084e6e4d41e51f6672f23b6`  
+		Last Modified: Wed, 09 Jul 2025 22:48:13 GMT  
+		Size: 13.0 MB (12966120 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:344238216d5bec29628c3e2dbd87ee877105d8dfb8a21d9227f35e026f97fc96`  
-		Last Modified: Wed, 02 Jul 2025 19:48:04 GMT  
+	-	`sha256:ec7406f5c956c137c8604a6a9092681fb4c7fcea0930bc39a5d9119250553882`  
+		Last Modified: Wed, 09 Jul 2025 22:48:14 GMT  
 		Size: 14.2 KB (14157 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0.3-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:24f66489cc1b3097b0e0a118420a8fa628b9135860d146eb00404c5a258b7b9e
+$ docker pull swift@sha256:70ea6650964e1ecfe8dd4fefaf4ca0cb1d7bd224cd575ab724ebc6c27176ad28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **991.9 MB (991864470 bytes)**  
+-	Total Size: **992.8 MB (992760553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee0c2cd276b45d11c303e2d27fa45377c665c4d16d96190bc80f0dd6da624c76`
+-	Image ID: `sha256:0c5b17de55f41527200b70b8b65eaedaccdf37dde5b73f7d0d5aa9afa844c94a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14299,7 +14299,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14307,7 +14307,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14335,51 +14335,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f936313db041fe3dee46ad15cc3dda672e3ec8f43c577c59bd936fefae706a1a`  
 		Last Modified: Fri, 13 Dec 2024 16:18:45 GMT  
 		Size: 796.5 MB (796473513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68d6fc768449e0051bfc45c80914e4266125130ee88be84cb7d59bbf2085e75e`  
-		Last Modified: Wed, 02 Jul 2025 19:18:31 GMT  
-		Size: 200.0 B  
+	-	`sha256:f25f0cf35105eb3d556accc7627aacb2e675cf18ee350e6e0f798c46e34e5cc6`  
+		Last Modified: Wed, 09 Jul 2025 20:42:22 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:e997d5d8ede69785131a463667b20ad41bbbe8686e6724afba2a6e64f60fb11c
+$ docker pull swift@sha256:a5d31192f7f98cf421a06531c98ddf6f4834b10b142dab651ca49f7b147613ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12849894 bytes)**  
+-	Total Size: **12.9 MB (12853615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa6dd70f6b26697c35efd1839e5734657edc5dc403f8fcaaee6413678fc6a26`
+-	Image ID: `sha256:4f707cd96d39617be4d1cfa244d9bef405bc18b5c68e902836ef185925695fcf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:013393464b824e37aacf91e908c3deac3f978623b84da5d673db9578d1ec7708`  
-		Last Modified: Wed, 02 Jul 2025 22:48:10 GMT  
-		Size: 12.8 MB (12835633 bytes)  
+	-	`sha256:e8b84a71562f1d3cc143370a75bb245cd0917d558568dadc66a4c496f4077ef2`  
+		Last Modified: Wed, 09 Jul 2025 22:48:24 GMT  
+		Size: 12.8 MB (12839355 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:906be719182f8f6c92129b162333ae074dc98297de300a914f091e0fa599f8c4`  
-		Last Modified: Wed, 02 Jul 2025 22:48:11 GMT  
-		Size: 14.3 KB (14261 bytes)  
+	-	`sha256:7674806f3075d4de3513b4a58befd469751714d9f221ad81e74dbca1d984a395`  
+		Last Modified: Wed, 09 Jul 2025 22:48:25 GMT  
+		Size: 14.3 KB (14260 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.0.3-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:790f3c2df0f90bfa7e11ba05bcb33a063c2681850897f5fe4103f8229dd58ce0
+$ docker pull swift@sha256:b7b27c81d7888ab5f5f9dfa98cc37db525b9b5eb4d9b2eed0362c4d3a879fcc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14392,13 +14392,13 @@ $ docker pull swift@sha256:790f3c2df0f90bfa7e11ba05bcb33a063c2681850897f5fe4103f
 ### `swift:6.0.3-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:8c17654b0f093cc994faec46f084dd8b708b347fe2b2240d528e9b38089a5db5
+$ docker pull swift@sha256:3f295b56ddb75c2c597cd1e7fd8b6cf7c0f341984bf917d97e0762019669afc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.6 MB (134552284 bytes)**  
+-	Total Size: **134.6 MB (134562171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9130f1bdf05abe7091eac5198807412b0fcdc324eaf3ed860f92cdad2f99991f`
+-	Image ID: `sha256:8c071c5e6d53976e237c3bb818edd6991b51ad7d679af7b0a818c0265896cdd8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14425,7 +14425,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14433,7 +14433,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14456,49 +14456,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d686f75250590fe53126b0b20de69fa4f145a53c1410ed550b979d69cd0eb2c`  
-		Last Modified: Wed, 02 Jul 2025 18:45:24 GMT  
-		Size: 55.0 MB (54971133 bytes)  
+	-	`sha256:abec84012e17955c4fa14bbf09a222d5551037803a252fd2dec1ade886510594`  
+		Last Modified: Wed, 09 Jul 2025 19:12:10 GMT  
+		Size: 55.0 MB (54980667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:d22838067f92f43de4a8730388c7e1f3af093bcc0b1c56457ff5d7b8330b688a
+$ docker pull swift@sha256:9d273702687d7e5745b27c93369f6ec32fe8652e2cc2651ab2d7af30110b9d42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412012 bytes)**  
+-	Total Size: **6.4 MB (6412036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6f4541b41299e961cc39270f3e4bd10a7909cec8e46694cafbd6b1b6d533e00`
+-	Image ID: `sha256:405524e66cafa1703ca0aac043601c944d55632e75eabc1fe2beaeb8d3dd5ed4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c3644c953b882891a6bcac7b45ec202dc843fd2509572e68aefbc0be02d15b84`  
-		Last Modified: Wed, 02 Jul 2025 19:48:06 GMT  
-		Size: 6.4 MB (6400825 bytes)  
+	-	`sha256:e458addc71e7764c9beb0da649b384397a718c5216538b1b8fef6f8e319bd881`  
+		Last Modified: Wed, 09 Jul 2025 22:48:17 GMT  
+		Size: 6.4 MB (6400849 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:683c3a616cd5b75daa42f4ac082e3e511a3678dba57c3c95679b30358179affb`  
-		Last Modified: Wed, 02 Jul 2025 19:48:07 GMT  
+	-	`sha256:48abde7e2b850ab6f5200d78e5d1564081c5710578763bdfd190216f1d720b62`  
+		Last Modified: Wed, 09 Jul 2025 22:48:18 GMT  
 		Size: 11.2 KB (11187 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.0.3-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:f9a6c47dd67f3bb1e4a820bb6075cb522dc3887101b317d4a64ad213a8febf38
+$ docker pull swift@sha256:9741cd7e4b7a3ed3a8221919f06aee57ff304c3393fd0585cc71b3c96aaa57d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.2 MB (131157513 bytes)**  
+-	Total Size: **131.2 MB (131167553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65d7a70ae27041e553ed768b61558410e8d645a7ff5614cfb4be22ba7b7e18b3`
+-	Image ID: `sha256:2eb9cb3f9b1f610cab4900fbf0c0801e71ffda48d9fc01bb655622694343f377`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14525,7 +14525,7 @@ LABEL io.openshift.tags="base rhel9"
 # Thu, 12 Dec 2024 07:44:15 GMT
 ENV container oci
 # Thu, 12 Dec 2024 07:44:15 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14533,7 +14533,7 @@ CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Thu, 12 Dec 2024 07:44:15 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Thu, 12 Dec 2024 07:44:15 GMT
@@ -14556,36 +14556,36 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26f139838dcc49bdc95530366c936a632605b2367c971e66548b0e31f9a4aa00`  
-		Last Modified: Wed, 02 Jul 2025 19:19:30 GMT  
-		Size: 53.8 MB (53840939 bytes)  
+	-	`sha256:32c285b743b17d906c656770c9a3b85d526a07d06353ec84bdf06735076bc6e0`  
+		Last Modified: Wed, 09 Jul 2025 20:31:50 GMT  
+		Size: 53.9 MB (53852691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.0.3-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:c2826391c7a0efc91aa92cdbfa947a2f3d007c85dadf5c9f3fbf4d7d0669ba55
+$ docker pull swift@sha256:a68e7fd1e51bcf037a11de267716190a5e83f511ddd26ff38b8cb28289a34242
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6407877 bytes)**  
+-	Total Size: **6.4 MB (6407901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:157fd5113e67b7fea693f161d7b2db7c6d141e404072633f6997534c0afab882`
+-	Image ID: `sha256:b015f693fbef0602bf170acc7d27649e9868af64e3f7572d7c14d31aaa6c887b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d327ab7dadc0ec81022cd9adfde8d8a3b2577104a47fac8286088159228edac`  
-		Last Modified: Wed, 02 Jul 2025 22:48:10 GMT  
-		Size: 6.4 MB (6396616 bytes)  
+	-	`sha256:feb9a5dc13f71e1a6e5979c76051082981d3268eb6744363b708d2de56c37766`  
+		Last Modified: Wed, 09 Jul 2025 22:48:24 GMT  
+		Size: 6.4 MB (6396640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b994b29a4887cf1a9302cb72f8052f637dd2e90222a8cf1457bbdaa8baa047d`  
-		Last Modified: Wed, 02 Jul 2025 22:48:11 GMT  
+	-	`sha256:11c2a9bb85521ff36adaf7c3d4b2ad8f54a9a3bd3bd185d28f5dee31a975ae14`  
+		Last Modified: Wed, 09 Jul 2025 22:48:25 GMT  
 		Size: 11.3 KB (11261 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14777,69 +14777,69 @@ $ docker pull swift@sha256:2ade684235da98bc4a4926353707a0335a02fc775a0c6f08642c7
 ## `swift:6.0.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:5b004a399818a9dd6ff33c0bc40536caadd1f93de436bafc237398a7e23437f2
+$ docker pull swift@sha256:8fc7ef7ee0dde8bc6e6307ba224d69b4a6ddf85c82d0e07f879e8e66b60910bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:6.0.3-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:6.0.3-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:0c3f5a51c04d7b624aead4e2a92e8e1ad22f67410d9ee8836bba8a25ba382d00
+$ docker pull swift@sha256:8e44accd3821da7dd531be81a2786049c7d724dc898a81aad9e8e5cf26fd2cd0
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5934044411 bytes)**  
+-	Total Size: **5.9 GB (5933430365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:580fc1a31c1d313909b31e0949cd6cbcd1e0aae293d78af3620911db83aeebec`
+-	Image ID: `sha256:2cdfae808508384b91bace606578bb6cf58879b3c1de41274a7696344806d16c`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:39:58 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:13:40 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:39:59 GMT
+# Wed, 09 Jul 2025 18:13:41 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:40:00 GMT
+# Wed, 09 Jul 2025 18:13:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:40:01 GMT
+# Wed, 09 Jul 2025 18:13:43 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:40:02 GMT
+# Wed, 09 Jul 2025 18:13:44 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:40:02 GMT
+# Wed, 09 Jul 2025 18:13:45 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:41:02 GMT
+# Wed, 09 Jul 2025 18:14:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:41:03 GMT
+# Wed, 09 Jul 2025 18:14:56 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:41:04 GMT
+# Wed, 09 Jul 2025 18:14:57 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:41:36 GMT
+# Wed, 09 Jul 2025 18:15:36 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:41:37 GMT
+# Wed, 09 Jul 2025 18:15:38 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 10 Jun 2025 21:41:38 GMT
+# Wed, 09 Jul 2025 18:15:39 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 10 Jun 2025 21:51:43 GMT
+# Wed, 09 Jul 2025 18:25:40 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:51:44 GMT
+# Wed, 09 Jul 2025 18:25:42 GMT
 ARG SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:51:45 GMT
+# Wed, 09 Jul 2025 18:25:43 GMT
 ARG SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3
-# Tue, 10 Jun 2025 21:54:04 GMT
+# Wed, 09 Jul 2025 18:27:58 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:54:06 GMT
+# Wed, 09 Jul 2025 18:28:00 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -14848,77 +14848,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21c59c3d3ff6f686f350152ce8066ec891af275617df355059ad8a39b90f9b2c`  
-		Last Modified: Tue, 10 Jun 2025 21:57:02 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:f1d98c562dc1ca767d6312b063b5a356f48bed0c363292a7043d90f73039b86a`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51d69c37d5af61b008dcd8d0bcc7d80e08ffa1ef42aaec31ee00f2317bb4111a`  
-		Last Modified: Tue, 10 Jun 2025 21:57:02 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7b839d8d4e72e5fb6ec4d81d3834b8dd4df69cbff1ce1f3cf1b2bc1f856a5d4`  
-		Last Modified: Tue, 10 Jun 2025 21:57:02 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de6ecd7b8eba4f88afaf76616eed7e85de748570058cc618c16d79a4209a9f5a`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30d7d44e050c04d73c47494cf6da70c16cce4e3e385ecdc4c0a7c2cddc58ce99`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60409204361441394edf23ce43923476a4341a729c67b9e3db3e893924468257`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:023b1b44beac822c435aac6e2021468539b1ef74661cc12b3e76432d927495a3`  
-		Last Modified: Wed, 11 Jun 2025 08:10:14 GMT  
-		Size: 150.3 MB (150273070 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0249800320756f04161f28d80a8750632678c642c0c06cf70922f0680cd07141`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937203003edfd071f0e934834abcafa085cf80cc17efb41833e4d40e66f1b656`  
-		Last Modified: Tue, 10 Jun 2025 21:57:03 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce02046c54bbcd4af2ef0d75d9af6240e491afc77da66b0cea1faaf966a3b190`  
-		Last Modified: Tue, 10 Jun 2025 21:57:09 GMT  
-		Size: 47.9 MB (47867262 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2282b24d1803f8d7a28ec93e2d09a2d06e91bf6baecb056412ab1fb250d60a06`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7a5aef2c1c169c709c04f2c471d510b135ae515554d25931370845eb9ecf007`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
+	-	`sha256:489c3025e78e14e4aea96c5bb6ab412694f34ab0b0aa9cab4fbba5ea04c34cde`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4930b5a47f324f0971b8209051feaf7291c95b4555635bf139a640264e8dedf`  
-		Last Modified: Tue, 10 Jun 2025 22:48:37 GMT  
-		Size: 1.7 GB (1687706165 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ab50c516a3db05e4fe5ab9135cc7ce6748008ea7ae4bbf84500b95f8989dd28`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
+	-	`sha256:5a66b1f51027f051eac37f110002dfa383b0a157a1b9e639c3b4a8d48a0c2d54`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f1848d87c2527f125f9fdd2f0a082d21c5c073e5da3cb0fc81416fd22b6a8e`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
-		Size: 1.3 KB (1271 bytes)  
+	-	`sha256:4303c7c6f342d615d29433a71b04c9d41956477b25b0f9a1c4c9236bf46e1b23`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd718dfb9f7943b7120d85b719388608b4c6261966fd7dc82a4eeb71be82d62a`  
-		Last Modified: Tue, 10 Jun 2025 22:48:42 GMT  
-		Size: 1.8 GB (1767929660 bytes)  
+	-	`sha256:e7e9af3eb1fb75de7371bc4d9c760ea9d5f88985924f8da6693b807b4e84e448`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f2a4638c46c8fd5a3ce46acd57e30227cb076453ed13901382b40626a13dfad`  
-		Last Modified: Tue, 10 Jun 2025 21:57:04 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:6bda7a6d9c30e7ac0ca8d035fb6e7e9c34f73725f6f7fbec0e12c5bc9e9eddae`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a6228096a5afbb3d54a7a33776c2535c317e6a5f8c6eb3ad7f300cf7cc9dd82`  
+		Last Modified: Wed, 09 Jul 2025 20:01:12 GMT  
+		Size: 150.3 MB (150263140 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:680c3164f2439291499f652747dba0f22a0ed72960b1006be4d8043964de1975`  
+		Last Modified: Wed, 09 Jul 2025 19:48:04 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e966247baabd80bba9f448efed21c07caefc3c8c6cbbc093777f8f88bd2eb8fe`  
+		Last Modified: Wed, 09 Jul 2025 19:48:05 GMT  
+		Size: 1.3 KB (1326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:41060e99d01cb6b30e6d7b0104f67c2a16db7b76627f17febdbe57358a210be7`  
+		Last Modified: Wed, 09 Jul 2025 19:48:11 GMT  
+		Size: 47.9 MB (47866263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8f2bbb75836e84ba4076108c904e6961c1d966f576b8076d83cbc591d2790161`  
+		Last Modified: Wed, 09 Jul 2025 19:48:05 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8a1cb68fe87c13047c0756b66d38ae10f463497997fa638546d26dd8fd78b74e`  
+		Last Modified: Wed, 09 Jul 2025 19:48:07 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:766233aba8e38785c4cf53c638aff89c1ccfe74d63bde443b222d7fd5ddbdae0`  
+		Last Modified: Wed, 09 Jul 2025 19:48:50 GMT  
+		Size: 1.7 GB (1686759861 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4de75a2f26589e90c1d7493b7cf301e5948c64f547017d4eb54c086f3c99d6a`  
+		Last Modified: Wed, 09 Jul 2025 19:48:08 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:92eb1ebfd33d621f34f9f15b49634235a1f3e3be5deb220aa43f1f9674636043`  
+		Last Modified: Wed, 09 Jul 2025 19:48:09 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0736819eeba44adf39876ee83ddda5666e799583ca22ca41fd59eded4c696c25`  
+		Last Modified: Wed, 09 Jul 2025 19:48:31 GMT  
+		Size: 1.8 GB (1767920823 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6769f7153658fa9ead42725abc2444a722cf5de7649b97daee60a0394f317dcd`  
+		Last Modified: Wed, 09 Jul 2025 19:48:12 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.1`
@@ -16794,7 +16794,7 @@ $ docker pull swift@sha256:304774d6f9b36afa4bd5e8d48bc85abc2733ee877358be18ae610
 ## `swift:6.1-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:76f75fd18186a2868659bce4f65486e7a9306c1001ee9f4e8647a003212a3787
+$ docker pull swift@sha256:d32cce8c3fe0ebb83b92d48d402078ef2db16eeff4d76aee45c63554c45d991d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16807,13 +16807,13 @@ $ docker pull swift@sha256:76f75fd18186a2868659bce4f65486e7a9306c1001ee9f4e8647a
 ### `swift:6.1-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:817c87f9fc3e2cdd1ee96a2057640f805e9bf574cc0b12418766e521df925ba2
+$ docker pull swift@sha256:83b8fd11dd457ea4f794a9a25425d476e6e28d08426cc792a3fa6ed6fb30f6cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1094590094 bytes)**  
+-	Total Size: **1.1 GB (1095479665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480a9752ccd3d30eb69aaf85cd5a41c74e44f15b82fd20ff85626f995067fc4b`
+-	Image ID: `sha256:b30c21d0a1c4fcd3b47d5a1e148261f7fdd3f0fee8d7d952092b6d6843aa5888`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -16840,7 +16840,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -16848,7 +16848,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -16876,57 +16876,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:946b0c4013de215e2d78c052169f9aa179b542fcec3fe57a94de24e163b13c54`  
-		Last Modified: Wed, 02 Jul 2025 18:47:42 GMT  
-		Size: 124.4 MB (124398814 bytes)  
+	-	`sha256:05bb9fd0e402c39a29d6a8472b906aebe156ec48cc77f7e8afa943978d5428d1`  
+		Last Modified: Wed, 09 Jul 2025 19:13:50 GMT  
+		Size: 125.3 MB (125288033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbcd9042a6b13defe243d1dd84d563f45f7ead75c07d1598785319b0b77ba9a9`  
 		Last Modified: Tue, 03 Jun 2025 20:30:52 GMT  
 		Size: 890.6 MB (890609955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a25cc58b94d816b386b17767cc403b555c6500b83d1652b8f097ed37401ca6a`  
-		Last Modified: Wed, 02 Jul 2025 18:47:23 GMT  
-		Size: 174.0 B  
+	-	`sha256:4736c883dc6ec93ec4d5f8d5eca1cf897cfd8ee04e692bd877c68fe10f06d91f`  
+		Last Modified: Wed, 09 Jul 2025 19:13:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:844ac101a8ebc5a07aacae8c7a129374ab46ca838c663bf7a7a4574e98357127
+$ docker pull swift@sha256:b3df51c2822f27a54751994afc02b3317425c7194de2e14e652a06e74a9e31a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12977159 bytes)**  
+-	Total Size: **13.0 MB (12980881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02b3cc22eca68a4b81356b1bb332a979ec9b40dcb46ffd47e47194c191feeef4`
+-	Image ID: `sha256:7c674644f5246f9e8a6464535a648b440f6263a3c35f48d4c24a037ff901b8cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62275e3e4b9f62ced61dfa5317619c84fd7a7528b97aec04de7ed159c654e9f3`  
-		Last Modified: Wed, 02 Jul 2025 19:48:27 GMT  
-		Size: 13.0 MB (12962700 bytes)  
+	-	`sha256:554b40d0e0dfeb655e1d01a345c88764f8b9f8ab620ebd4f637d2f5707a4f9f5`  
+		Last Modified: Wed, 09 Jul 2025 22:48:38 GMT  
+		Size: 13.0 MB (12966422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:69d3504bbda5abcc2ed390ac070ea0e7b4bebd2491470176c7897fdde6bad2e6`  
-		Last Modified: Wed, 02 Jul 2025 19:48:27 GMT  
+	-	`sha256:889e633447a2da330a07c9df43f645b272cae47ceb40d3e1d40d91e1f01e533f`  
+		Last Modified: Wed, 09 Jul 2025 22:48:39 GMT  
 		Size: 14.5 KB (14459 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:0004c381cfcfe010a5c71a4449d40441981ffeeb3d4506c0a0a371b41a8d28d0
+$ docker pull swift@sha256:b45b3fc6176176fe58666ad2a41bc3199c9e53b6337cf99c8f6367b46968f033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1082750829 bytes)**  
+-	Total Size: **1.1 GB (1083646907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6377976d191d6946e7e0874f5459e3f12f4849737c5b567e44158ae4cd57a89d`
+-	Image ID: `sha256:39a902a8a89a5bb61fcdcc04958076007f650c864bedc17e450806e67ff2410a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -16953,7 +16953,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -16961,7 +16961,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -16989,51 +16989,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95c0d074e38755136a9465305aafe08516ebba1fecf7d780eff797053a3359fa`  
 		Last Modified: Wed, 04 Jun 2025 15:11:16 GMT  
 		Size: 887.4 MB (887359898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bf2aac7b092a53aa8b80b8cbce5f9b39c0343c718935b5934b56103aa024069`  
-		Last Modified: Wed, 02 Jul 2025 19:15:05 GMT  
-		Size: 174.0 B  
+	-	`sha256:04fba1a5597ef21d761f44e0ac6c7f41582bf225501d649d5b3a280ab1772222`  
+		Last Modified: Wed, 09 Jul 2025 20:42:18 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:93f52c6981048c6ab9bfe5c264c6f00c1c3796b73e9de07916e925eec7431737
+$ docker pull swift@sha256:a48fa7e309702d18c33f2e5039d538c38573a984b17b78d372cd664a797377b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.9 MB (12850522 bytes)**  
+-	Total Size: **12.9 MB (12854244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37bbf5e6a1cc809938020e9dae34e4f25b9884093ca32d92d28f5dc6f885bba7`
+-	Image ID: `sha256:0ebb41eb24b5950985b336d57874e591b17f7e907fa131cef5b3296a8aead510`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85b0069a4218dfd92b68922e839b8fc2256ed022d5b41a7ef6e44af21e545b2e`  
-		Last Modified: Wed, 02 Jul 2025 22:48:33 GMT  
-		Size: 12.8 MB (12835947 bytes)  
+	-	`sha256:f93cb599f028b2f05d0dad11d704b4e57ef6f3b57aff2c555e5c864527073d22`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
+		Size: 12.8 MB (12839669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eac8af38fd06d063230b4bfb82b0e80f4710a3b9416006bf282cd6ffbc085f2a`  
-		Last Modified: Wed, 02 Jul 2025 22:48:34 GMT  
+	-	`sha256:84f6d896ae9212f47d3c906a68ac0a3f44c7687f088f461cd0a2c03ac8d8f745`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
 		Size: 14.6 KB (14575 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.1-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:e73f1d8f195c9e431873b54e2cfcc75c90be8d96e9a6650be92d80ed7683ffc3
+$ docker pull swift@sha256:5ae3390eb5f4a21dc10faa6d1a11c0d18604e7b941ac5919587cdb1b82f47cad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17046,13 +17046,13 @@ $ docker pull swift@sha256:e73f1d8f195c9e431873b54e2cfcc75c90be8d96e9a6650be92d8
 ### `swift:6.1-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:6b190ac69a56cfa9b79b1432215630b36339846b81ae01ead35a7eca1e126cab
+$ docker pull swift@sha256:78793f3fbfbe3509d0a7fc778ec93e81c3daec142b61c6050860f2416c486d55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.5 MB (134511472 bytes)**  
+-	Total Size: **134.5 MB (134519777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef90ae209edae44d9e33c74001b85ce9475c1a6753ab22db9e4d2491db25d9a4`
+-	Image ID: `sha256:45de18b36d56c8f8bfa9cbd6621e08db332d0670d39ce95ef28621064fee49e9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -17079,7 +17079,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -17087,7 +17087,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -17110,49 +17110,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:940a01b7856b7db49bb72e71ca040e1c1e3ae76bc06644bd8091ee25f5064436`  
-		Last Modified: Wed, 02 Jul 2025 18:45:22 GMT  
-		Size: 54.9 MB (54930321 bytes)  
+	-	`sha256:426a01fe5bf57dd7affb06c7f596754daf058cedfa47ca799fd6cf6e810e5910`  
+		Last Modified: Wed, 09 Jul 2025 19:12:04 GMT  
+		Size: 54.9 MB (54938273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:929231aaa33351f1e08ecc6670b8b28e25b63c3d8064e9a4d01f6c74f2391f6a
+$ docker pull swift@sha256:b7b8d0363fb28c0d3b4a705bec5b5d5bc429c7425b21338ea6c64f8a98c575cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412635 bytes)**  
+-	Total Size: **6.4 MB (6412659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e44ff9c622af3a987b9b336558c990f816df00d9b1980945726a8cc07280a54c`
+-	Image ID: `sha256:5175d3fdfd0c484134b4b178aa8c927bcf3363444dfe06a441a1093dc97f0926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50fee12ce60d269d33ee4b01db53ececfae5f935a5e354f556efa8881c43c092`  
-		Last Modified: Wed, 02 Jul 2025 19:48:28 GMT  
-		Size: 6.4 MB (6401137 bytes)  
+	-	`sha256:c8bec2297e6be72686d791705fac0f75540a54af43cb6739d17f852f54751176`  
+		Last Modified: Wed, 09 Jul 2025 22:48:42 GMT  
+		Size: 6.4 MB (6401161 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a96af3fd2e8927edd5a9b44054f87d8e26b3189c9a9ac352854e4cbee0d87c26`  
-		Last Modified: Wed, 02 Jul 2025 19:48:29 GMT  
+	-	`sha256:a716052fbde390cecb98b9c3ede37498ebf1e3134b28661a0364e7de8eed478f`  
+		Last Modified: Wed, 09 Jul 2025 22:48:43 GMT  
 		Size: 11.5 KB (11498 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:1465437742b52bc05197bd346210f03f2a3ad6ce8bc264251d785048a9ee5256
+$ docker pull swift@sha256:a1adfb054e42ded8dfef5cd92e74071fc4b57f7d483790a0a6b80d25ba4ad6f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130969560 bytes)**  
+-	Total Size: **131.0 MB (130976999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7e4d1535cf3c9334849cf2e1eb679460c3d0baafbcc770c7016b36bba151d00`
+-	Image ID: `sha256:61093c23d9a449389fd5adde713e9f3312b992b5335d4b9db105cff8b1370177`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -17179,7 +17179,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -17187,7 +17187,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -17210,37 +17210,37 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080d5d9a35b5e841139792d7ce410f9c97076cc32b01e8c20a48fe9b856f9d0a`  
-		Last Modified: Wed, 02 Jul 2025 19:16:15 GMT  
-		Size: 53.7 MB (53652986 bytes)  
+	-	`sha256:d80a5f75d67088345d947c6e9826b2a8651d5d0bc061a0016bae25cd4c548095`  
+		Last Modified: Wed, 09 Jul 2025 20:28:36 GMT  
+		Size: 53.7 MB (53662137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7763f4b7126318df625ad0df5613ea72770ee8c609a96a1a324c83336a3f4036
+$ docker pull swift@sha256:2186a2585ab8ca6516d8cd32082528c792dbebd67fd26ff62654a3b33fcf4ae5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6408524 bytes)**  
+-	Total Size: **6.4 MB (6408549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4323a0a52cdc6a4d828b3b6fcb046ac7ecfb3d57ae891665a9486b4f631de276`
+-	Image ID: `sha256:1598cc663f29f057690b4b369430cb0343b154507aa12dd7dfa68df0f92cf2f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d90d45aa366beb7ac9e455d3c8a09849e7e1987f9866b77b6323995e9071e024`  
-		Last Modified: Wed, 02 Jul 2025 22:48:35 GMT  
-		Size: 6.4 MB (6396940 bytes)  
+	-	`sha256:75e1207d55303e5084cef8d0e20a88334d52566dfc71c394d24eef2a440a4cd7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
+		Size: 6.4 MB (6396964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a7e3b254a4605b21f4a94eb2d2d1a8ad5bb7aec97051e4d921a9991d5c23fca`  
-		Last Modified: Wed, 02 Jul 2025 22:48:35 GMT  
-		Size: 11.6 KB (11584 bytes)  
+	-	`sha256:69d3ce8e9853272fb081ff9f75e8ee67e0af521f8acbdf4b1f38d2d0e57d21b7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:53 GMT  
+		Size: 11.6 KB (11585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.1-slim`
@@ -17431,69 +17431,69 @@ $ docker pull swift@sha256:304774d6f9b36afa4bd5e8d48bc85abc2733ee877358be18ae610
 ## `swift:6.1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:ccee978ad0bba0dd018844bfccea6d91220e6b6112d807ebc47bf950ec9295a9
+$ docker pull swift@sha256:143f3535ac82dc81868b1c6fa93587ff2e131e53dc35404d5106979c3a4ac482
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:6.1-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:6.1-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:6590a55c0edb499940cd275b96a0c6584a682ea4958177dae8e0a0d56d7d47e2
+$ docker pull swift@sha256:c442a78982f382724db9d766a969959335d44d43ae7399f4777036e49d3b95cf
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (6024362060 bytes)**  
+-	Total Size: **6.0 GB (6024768865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:003f511ab17ec322841dcfbdc272f11a388de88068f9fa5afd99c6b1c6874b26`
+-	Image ID: `sha256:73f87f78f7f6d397c4decfa28852e6a31bf415a075e9e599641cc4875f3261bc`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:39:09 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:17:59 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:39:10 GMT
+# Wed, 09 Jul 2025 18:18:00 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:39:11 GMT
+# Wed, 09 Jul 2025 18:18:01 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:39:12 GMT
+# Wed, 09 Jul 2025 18:18:03 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:39:13 GMT
+# Wed, 09 Jul 2025 18:18:04 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:39:14 GMT
+# Wed, 09 Jul 2025 18:18:05 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:40:13 GMT
+# Wed, 09 Jul 2025 18:19:24 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:14 GMT
+# Wed, 09 Jul 2025 18:19:26 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:40:15 GMT
+# Wed, 09 Jul 2025 18:19:27 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:40:44 GMT
+# Wed, 09 Jul 2025 18:20:08 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:46 GMT
+# Wed, 09 Jul 2025 18:20:09 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 10 Jun 2025 21:40:47 GMT
+# Wed, 09 Jul 2025 18:20:11 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 10 Jun 2025 21:51:09 GMT
+# Wed, 09 Jul 2025 18:30:14 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:51:10 GMT
+# Wed, 09 Jul 2025 18:30:16 GMT
 ARG SWIFT=https://download.swift.org/swift-6.1.2-release/windows10/swift-6.1.2-RELEASE/swift-6.1.2-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:51:11 GMT
+# Wed, 09 Jul 2025 18:30:17 GMT
 ARG SWIFT_SHA256=92A0323ED7DD333C3B05E6E0E428F3A91C77D159F6CCFC8626A996F2ACE09A0B
-# Tue, 10 Jun 2025 21:53:31 GMT
+# Wed, 09 Jul 2025 18:32:29 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.1.2-release/windows10/swift-6.1.2-RELEASE/swift-6.1.2-RELEASE-windows10.exe SWIFT_SHA256=92A0323ED7DD333C3B05E6E0E428F3A91C77D159F6CCFC8626A996F2ACE09A0B VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:53:34 GMT
+# Wed, 09 Jul 2025 18:32:31 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -17502,77 +17502,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4d7a4d7b496641c431ddade4451d4d7aa023441df63183ff200ceb7b5bc03a4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:39 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:2e6ca1988af63b785bcafd8c46fdd2d1deebbb02e959d0c49dcea2d5d9638858`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552438c201b9f814fcda8d723b269a3bf086a0ee6ff936d83f63a6f1508a00cf`  
-		Last Modified: Tue, 10 Jun 2025 21:56:40 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f9316cff6d71bbeec8258be5d8953cf9eb063247d383a310dfb9f6625b2858dc`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42c60635c70e83aa8cbf70a77cb03e17ce66f37ef05c47071f8ba670477719f4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd84527a9b24eb1684360a76088a7c5bad16b745efb26c5711646e48533345f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
+	-	`sha256:5b119fa90024ccbaae32b2001f6cc7a46277a702af66bfccef3f04f99f5555cf`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
 		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4bd42483cb61c6f6a875708c5b427120976c4004dcc8fcf0e0ba54328c5fa2d`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92ae15dd3c3e689edd50355208fe46548a70f34de8a6066f0adbda386a61a55a`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ae27d5b7ceb05c2e94d73c20bc636a9fa901119633735efdb91dbe6b0e03913`  
-		Last Modified: Tue, 10 Jun 2025 22:48:55 GMT  
-		Size: 150.3 MB (150261870 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43d155b918f0245d1982afdc53878a4823867d309582f88fffa12bd489907fde`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f71a302120a724765e5db867cfbe5b8e5c087cad72089c478845caffcb3e48`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf0c063cc623c88a83fdcd7e9e59a37770b9c465bb6de845fd56a6a1d33f15bf`  
-		Last Modified: Tue, 10 Jun 2025 21:56:46 GMT  
-		Size: 47.8 MB (47829937 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f08006fec2d46bcd309ea4d00f298c3d0c23be72bb30a8228d13b8f7d0401d`  
-		Last Modified: Tue, 10 Jun 2025 21:56:43 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0672850cd78a1af1f26d74bf666f7a2942bd969eda49366f73004a1cdd450f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:43 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d4b318d3fba1a7bbd1ce30d719b9fd1df1250502c316ea5b7391e9eba2a1477`  
-		Last Modified: Tue, 10 Jun 2025 22:49:38 GMT  
-		Size: 1.7 GB (1687325367 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6110e290402baf97fcc6b2f499c4b38c51f2a3fd23d309cfbda9730804fd99b4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
-		Size: 1.3 KB (1278 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7ecfe0b790c7109692b9b489a4f8c221a44e8c53444ee82512c310c6e13827f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
+	-	`sha256:5d54c80ff4cdb0e457e8cf67e5176b3fda076276dfbdd462658ea9f36e97c079`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d07b67b3e572f341a0ac7083c0ced5699acf6f9e375611ebbc2fb670ba6da99`  
-		Last Modified: Tue, 10 Jun 2025 22:49:00 GMT  
-		Size: 1.9 GB (1858676568 bytes)  
+	-	`sha256:3ce449966487c6e137c6fd9b2ff00714185d73c0711c77a0c6d3db78f3f7b325`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a7093b81ced861a87b22225f53a5e5c86514bb1b647902cc041988ca949e1a9`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:df0d39837f756a272bb7722ca4833c0b92cce1c97dcc6f5aedbe3120715af779`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:53487277f06de2ac68d6a7bf34e74d06275bf172c7f722e57b405227e2c07fca`  
+		Last Modified: Wed, 09 Jul 2025 19:48:37 GMT  
+		Size: 150.3 MB (150315683 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fc730691fe8c1ebd2b9e9c5bc78f176d5b7834140a0b4251391ebfc80e24c3fb`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:37e167e1a0da30bdf2adc9fcf10beff08ca025e3c9a51dcc9f95f17e99ae2ddc`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4474e71d0bffb141c14e6c66c0fac5a864bab5e1e3416ea6424842e521f3dea4`  
+		Last Modified: Wed, 09 Jul 2025 19:48:29 GMT  
+		Size: 47.9 MB (47889987 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:907e2d4a927b0ad2f054bba4812e81f00f2a0cfd90e6c1ccd6688f8b34241f16`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab9e8812e6114d05c124c0a10ed115434f8ff5d7ea3eef93e385baa03558ab3`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:05057f24c43d44b3b33d956adf5fb2478cd7c560822fe55a8a77790497174aee`  
+		Last Modified: Wed, 09 Jul 2025 19:48:46 GMT  
+		Size: 1.7 GB (1687255825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dada93188f94023399e30ecbdb01c9b34a747edd333529c3a094d0df330385e4`  
+		Last Modified: Wed, 09 Jul 2025 19:48:25 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab7e224cd73d9c7d413e5440a696c1683ed4d83317372b1521e34156938f9a3e`  
+		Last Modified: Wed, 09 Jul 2025 19:48:26 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8506a32f72cccb174431d4128e033cd54181eff08a3fe457fa94dc092ea577d3`  
+		Last Modified: Wed, 09 Jul 2025 19:48:39 GMT  
+		Size: 1.9 GB (1858687154 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:863bf2cc4aed39fe06a97b40468c8e083ae30da96d75f65be3c6269bbb4768a5`  
+		Last Modified: Wed, 09 Jul 2025 19:48:30 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.1.2`
@@ -19448,7 +19448,7 @@ $ docker pull swift@sha256:304774d6f9b36afa4bd5e8d48bc85abc2733ee877358be18ae610
 ## `swift:6.1.2-rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:76f75fd18186a2868659bce4f65486e7a9306c1001ee9f4e8647a003212a3787
+$ docker pull swift@sha256:d32cce8c3fe0ebb83b92d48d402078ef2db16eeff4d76aee45c63554c45d991d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19461,13 +19461,13 @@ $ docker pull swift@sha256:76f75fd18186a2868659bce4f65486e7a9306c1001ee9f4e8647a
 ### `swift:6.1.2-rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:817c87f9fc3e2cdd1ee96a2057640f805e9bf574cc0b12418766e521df925ba2
+$ docker pull swift@sha256:83b8fd11dd457ea4f794a9a25425d476e6e28d08426cc792a3fa6ed6fb30f6cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1094590094 bytes)**  
+-	Total Size: **1.1 GB (1095479665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480a9752ccd3d30eb69aaf85cd5a41c74e44f15b82fd20ff85626f995067fc4b`
+-	Image ID: `sha256:b30c21d0a1c4fcd3b47d5a1e148261f7fdd3f0fee8d7d952092b6d6843aa5888`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19494,7 +19494,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19502,7 +19502,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19530,57 +19530,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:946b0c4013de215e2d78c052169f9aa179b542fcec3fe57a94de24e163b13c54`  
-		Last Modified: Wed, 02 Jul 2025 18:47:42 GMT  
-		Size: 124.4 MB (124398814 bytes)  
+	-	`sha256:05bb9fd0e402c39a29d6a8472b906aebe156ec48cc77f7e8afa943978d5428d1`  
+		Last Modified: Wed, 09 Jul 2025 19:13:50 GMT  
+		Size: 125.3 MB (125288033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbcd9042a6b13defe243d1dd84d563f45f7ead75c07d1598785319b0b77ba9a9`  
 		Last Modified: Tue, 03 Jun 2025 20:30:52 GMT  
 		Size: 890.6 MB (890609955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a25cc58b94d816b386b17767cc403b555c6500b83d1652b8f097ed37401ca6a`  
-		Last Modified: Wed, 02 Jul 2025 18:47:23 GMT  
-		Size: 174.0 B  
+	-	`sha256:4736c883dc6ec93ec4d5f8d5eca1cf897cfd8ee04e692bd877c68fe10f06d91f`  
+		Last Modified: Wed, 09 Jul 2025 19:13:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.2-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:844ac101a8ebc5a07aacae8c7a129374ab46ca838c663bf7a7a4574e98357127
+$ docker pull swift@sha256:b3df51c2822f27a54751994afc02b3317425c7194de2e14e652a06e74a9e31a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12977159 bytes)**  
+-	Total Size: **13.0 MB (12980881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02b3cc22eca68a4b81356b1bb332a979ec9b40dcb46ffd47e47194c191feeef4`
+-	Image ID: `sha256:7c674644f5246f9e8a6464535a648b440f6263a3c35f48d4c24a037ff901b8cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62275e3e4b9f62ced61dfa5317619c84fd7a7528b97aec04de7ed159c654e9f3`  
-		Last Modified: Wed, 02 Jul 2025 19:48:27 GMT  
-		Size: 13.0 MB (12962700 bytes)  
+	-	`sha256:554b40d0e0dfeb655e1d01a345c88764f8b9f8ab620ebd4f637d2f5707a4f9f5`  
+		Last Modified: Wed, 09 Jul 2025 22:48:38 GMT  
+		Size: 13.0 MB (12966422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:69d3504bbda5abcc2ed390ac070ea0e7b4bebd2491470176c7897fdde6bad2e6`  
-		Last Modified: Wed, 02 Jul 2025 19:48:27 GMT  
+	-	`sha256:889e633447a2da330a07c9df43f645b272cae47ceb40d3e1d40d91e1f01e533f`  
+		Last Modified: Wed, 09 Jul 2025 22:48:39 GMT  
 		Size: 14.5 KB (14459 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1.2-rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:0004c381cfcfe010a5c71a4449d40441981ffeeb3d4506c0a0a371b41a8d28d0
+$ docker pull swift@sha256:b45b3fc6176176fe58666ad2a41bc3199c9e53b6337cf99c8f6367b46968f033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1082750829 bytes)**  
+-	Total Size: **1.1 GB (1083646907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6377976d191d6946e7e0874f5459e3f12f4849737c5b567e44158ae4cd57a89d`
+-	Image ID: `sha256:39a902a8a89a5bb61fcdcc04958076007f650c864bedc17e450806e67ff2410a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19607,7 +19607,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19615,7 +19615,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19643,51 +19643,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95c0d074e38755136a9465305aafe08516ebba1fecf7d780eff797053a3359fa`  
 		Last Modified: Wed, 04 Jun 2025 15:11:16 GMT  
 		Size: 887.4 MB (887359898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bf2aac7b092a53aa8b80b8cbce5f9b39c0343c718935b5934b56103aa024069`  
-		Last Modified: Wed, 02 Jul 2025 19:15:05 GMT  
-		Size: 174.0 B  
+	-	`sha256:04fba1a5597ef21d761f44e0ac6c7f41582bf225501d649d5b3a280ab1772222`  
+		Last Modified: Wed, 09 Jul 2025 20:42:18 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.2-rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:93f52c6981048c6ab9bfe5c264c6f00c1c3796b73e9de07916e925eec7431737
+$ docker pull swift@sha256:a48fa7e309702d18c33f2e5039d538c38573a984b17b78d372cd664a797377b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.9 MB (12850522 bytes)**  
+-	Total Size: **12.9 MB (12854244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37bbf5e6a1cc809938020e9dae34e4f25b9884093ca32d92d28f5dc6f885bba7`
+-	Image ID: `sha256:0ebb41eb24b5950985b336d57874e591b17f7e907fa131cef5b3296a8aead510`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85b0069a4218dfd92b68922e839b8fc2256ed022d5b41a7ef6e44af21e545b2e`  
-		Last Modified: Wed, 02 Jul 2025 22:48:33 GMT  
-		Size: 12.8 MB (12835947 bytes)  
+	-	`sha256:f93cb599f028b2f05d0dad11d704b4e57ef6f3b57aff2c555e5c864527073d22`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
+		Size: 12.8 MB (12839669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eac8af38fd06d063230b4bfb82b0e80f4710a3b9416006bf282cd6ffbc085f2a`  
-		Last Modified: Wed, 02 Jul 2025 22:48:34 GMT  
+	-	`sha256:84f6d896ae9212f47d3c906a68ac0a3f44c7687f088f461cd0a2c03ac8d8f745`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
 		Size: 14.6 KB (14575 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.1.2-rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:e73f1d8f195c9e431873b54e2cfcc75c90be8d96e9a6650be92d80ed7683ffc3
+$ docker pull swift@sha256:5ae3390eb5f4a21dc10faa6d1a11c0d18604e7b941ac5919587cdb1b82f47cad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19700,13 +19700,13 @@ $ docker pull swift@sha256:e73f1d8f195c9e431873b54e2cfcc75c90be8d96e9a6650be92d8
 ### `swift:6.1.2-rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:6b190ac69a56cfa9b79b1432215630b36339846b81ae01ead35a7eca1e126cab
+$ docker pull swift@sha256:78793f3fbfbe3509d0a7fc778ec93e81c3daec142b61c6050860f2416c486d55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.5 MB (134511472 bytes)**  
+-	Total Size: **134.5 MB (134519777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef90ae209edae44d9e33c74001b85ce9475c1a6753ab22db9e4d2491db25d9a4`
+-	Image ID: `sha256:45de18b36d56c8f8bfa9cbd6621e08db332d0670d39ce95ef28621064fee49e9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19733,7 +19733,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19741,7 +19741,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19764,49 +19764,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:940a01b7856b7db49bb72e71ca040e1c1e3ae76bc06644bd8091ee25f5064436`  
-		Last Modified: Wed, 02 Jul 2025 18:45:22 GMT  
-		Size: 54.9 MB (54930321 bytes)  
+	-	`sha256:426a01fe5bf57dd7affb06c7f596754daf058cedfa47ca799fd6cf6e810e5910`  
+		Last Modified: Wed, 09 Jul 2025 19:12:04 GMT  
+		Size: 54.9 MB (54938273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.2-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:929231aaa33351f1e08ecc6670b8b28e25b63c3d8064e9a4d01f6c74f2391f6a
+$ docker pull swift@sha256:b7b8d0363fb28c0d3b4a705bec5b5d5bc429c7425b21338ea6c64f8a98c575cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412635 bytes)**  
+-	Total Size: **6.4 MB (6412659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e44ff9c622af3a987b9b336558c990f816df00d9b1980945726a8cc07280a54c`
+-	Image ID: `sha256:5175d3fdfd0c484134b4b178aa8c927bcf3363444dfe06a441a1093dc97f0926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50fee12ce60d269d33ee4b01db53ececfae5f935a5e354f556efa8881c43c092`  
-		Last Modified: Wed, 02 Jul 2025 19:48:28 GMT  
-		Size: 6.4 MB (6401137 bytes)  
+	-	`sha256:c8bec2297e6be72686d791705fac0f75540a54af43cb6739d17f852f54751176`  
+		Last Modified: Wed, 09 Jul 2025 22:48:42 GMT  
+		Size: 6.4 MB (6401161 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a96af3fd2e8927edd5a9b44054f87d8e26b3189c9a9ac352854e4cbee0d87c26`  
-		Last Modified: Wed, 02 Jul 2025 19:48:29 GMT  
+	-	`sha256:a716052fbde390cecb98b9c3ede37498ebf1e3134b28661a0364e7de8eed478f`  
+		Last Modified: Wed, 09 Jul 2025 22:48:43 GMT  
 		Size: 11.5 KB (11498 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:6.1.2-rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:1465437742b52bc05197bd346210f03f2a3ad6ce8bc264251d785048a9ee5256
+$ docker pull swift@sha256:a1adfb054e42ded8dfef5cd92e74071fc4b57f7d483790a0a6b80d25ba4ad6f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130969560 bytes)**  
+-	Total Size: **131.0 MB (130976999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7e4d1535cf3c9334849cf2e1eb679460c3d0baafbcc770c7016b36bba151d00`
+-	Image ID: `sha256:61093c23d9a449389fd5adde713e9f3312b992b5335d4b9db105cff8b1370177`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -19833,7 +19833,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19841,7 +19841,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -19864,37 +19864,37 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080d5d9a35b5e841139792d7ce410f9c97076cc32b01e8c20a48fe9b856f9d0a`  
-		Last Modified: Wed, 02 Jul 2025 19:16:15 GMT  
-		Size: 53.7 MB (53652986 bytes)  
+	-	`sha256:d80a5f75d67088345d947c6e9826b2a8651d5d0bc061a0016bae25cd4c548095`  
+		Last Modified: Wed, 09 Jul 2025 20:28:36 GMT  
+		Size: 53.7 MB (53662137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:6.1.2-rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7763f4b7126318df625ad0df5613ea72770ee8c609a96a1a324c83336a3f4036
+$ docker pull swift@sha256:2186a2585ab8ca6516d8cd32082528c792dbebd67fd26ff62654a3b33fcf4ae5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6408524 bytes)**  
+-	Total Size: **6.4 MB (6408549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4323a0a52cdc6a4d828b3b6fcb046ac7ecfb3d57ae891665a9486b4f631de276`
+-	Image ID: `sha256:1598cc663f29f057690b4b369430cb0343b154507aa12dd7dfa68df0f92cf2f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d90d45aa366beb7ac9e455d3c8a09849e7e1987f9866b77b6323995e9071e024`  
-		Last Modified: Wed, 02 Jul 2025 22:48:35 GMT  
-		Size: 6.4 MB (6396940 bytes)  
+	-	`sha256:75e1207d55303e5084cef8d0e20a88334d52566dfc71c394d24eef2a440a4cd7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
+		Size: 6.4 MB (6396964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a7e3b254a4605b21f4a94eb2d2d1a8ad5bb7aec97051e4d921a9991d5c23fca`  
-		Last Modified: Wed, 02 Jul 2025 22:48:35 GMT  
-		Size: 11.6 KB (11584 bytes)  
+	-	`sha256:69d3ce8e9853272fb081ff9f75e8ee67e0af521f8acbdf4b1f38d2d0e57d21b7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:53 GMT  
+		Size: 11.6 KB (11585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:6.1.2-slim`
@@ -20085,69 +20085,69 @@ $ docker pull swift@sha256:304774d6f9b36afa4bd5e8d48bc85abc2733ee877358be18ae610
 ## `swift:6.1.2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:ccee978ad0bba0dd018844bfccea6d91220e6b6112d807ebc47bf950ec9295a9
+$ docker pull swift@sha256:143f3535ac82dc81868b1c6fa93587ff2e131e53dc35404d5106979c3a4ac482
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:6.1.2-windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:6.1.2-windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:6590a55c0edb499940cd275b96a0c6584a682ea4958177dae8e0a0d56d7d47e2
+$ docker pull swift@sha256:c442a78982f382724db9d766a969959335d44d43ae7399f4777036e49d3b95cf
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (6024362060 bytes)**  
+-	Total Size: **6.0 GB (6024768865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:003f511ab17ec322841dcfbdc272f11a388de88068f9fa5afd99c6b1c6874b26`
+-	Image ID: `sha256:73f87f78f7f6d397c4decfa28852e6a31bf415a075e9e599641cc4875f3261bc`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:39:09 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:17:59 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:39:10 GMT
+# Wed, 09 Jul 2025 18:18:00 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:39:11 GMT
+# Wed, 09 Jul 2025 18:18:01 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:39:12 GMT
+# Wed, 09 Jul 2025 18:18:03 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:39:13 GMT
+# Wed, 09 Jul 2025 18:18:04 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:39:14 GMT
+# Wed, 09 Jul 2025 18:18:05 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:40:13 GMT
+# Wed, 09 Jul 2025 18:19:24 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:14 GMT
+# Wed, 09 Jul 2025 18:19:26 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:40:15 GMT
+# Wed, 09 Jul 2025 18:19:27 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:40:44 GMT
+# Wed, 09 Jul 2025 18:20:08 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:46 GMT
+# Wed, 09 Jul 2025 18:20:09 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 10 Jun 2025 21:40:47 GMT
+# Wed, 09 Jul 2025 18:20:11 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 10 Jun 2025 21:51:09 GMT
+# Wed, 09 Jul 2025 18:30:14 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:51:10 GMT
+# Wed, 09 Jul 2025 18:30:16 GMT
 ARG SWIFT=https://download.swift.org/swift-6.1.2-release/windows10/swift-6.1.2-RELEASE/swift-6.1.2-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:51:11 GMT
+# Wed, 09 Jul 2025 18:30:17 GMT
 ARG SWIFT_SHA256=92A0323ED7DD333C3B05E6E0E428F3A91C77D159F6CCFC8626A996F2ACE09A0B
-# Tue, 10 Jun 2025 21:53:31 GMT
+# Wed, 09 Jul 2025 18:32:29 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.1.2-release/windows10/swift-6.1.2-RELEASE/swift-6.1.2-RELEASE-windows10.exe SWIFT_SHA256=92A0323ED7DD333C3B05E6E0E428F3A91C77D159F6CCFC8626A996F2ACE09A0B VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:53:34 GMT
+# Wed, 09 Jul 2025 18:32:31 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -20156,77 +20156,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4d7a4d7b496641c431ddade4451d4d7aa023441df63183ff200ceb7b5bc03a4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:39 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:2e6ca1988af63b785bcafd8c46fdd2d1deebbb02e959d0c49dcea2d5d9638858`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552438c201b9f814fcda8d723b269a3bf086a0ee6ff936d83f63a6f1508a00cf`  
-		Last Modified: Tue, 10 Jun 2025 21:56:40 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f9316cff6d71bbeec8258be5d8953cf9eb063247d383a310dfb9f6625b2858dc`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42c60635c70e83aa8cbf70a77cb03e17ce66f37ef05c47071f8ba670477719f4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd84527a9b24eb1684360a76088a7c5bad16b745efb26c5711646e48533345f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
+	-	`sha256:5b119fa90024ccbaae32b2001f6cc7a46277a702af66bfccef3f04f99f5555cf`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
 		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4bd42483cb61c6f6a875708c5b427120976c4004dcc8fcf0e0ba54328c5fa2d`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92ae15dd3c3e689edd50355208fe46548a70f34de8a6066f0adbda386a61a55a`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ae27d5b7ceb05c2e94d73c20bc636a9fa901119633735efdb91dbe6b0e03913`  
-		Last Modified: Tue, 10 Jun 2025 22:48:55 GMT  
-		Size: 150.3 MB (150261870 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43d155b918f0245d1982afdc53878a4823867d309582f88fffa12bd489907fde`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f71a302120a724765e5db867cfbe5b8e5c087cad72089c478845caffcb3e48`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf0c063cc623c88a83fdcd7e9e59a37770b9c465bb6de845fd56a6a1d33f15bf`  
-		Last Modified: Tue, 10 Jun 2025 21:56:46 GMT  
-		Size: 47.8 MB (47829937 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f08006fec2d46bcd309ea4d00f298c3d0c23be72bb30a8228d13b8f7d0401d`  
-		Last Modified: Tue, 10 Jun 2025 21:56:43 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0672850cd78a1af1f26d74bf666f7a2942bd969eda49366f73004a1cdd450f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:43 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d4b318d3fba1a7bbd1ce30d719b9fd1df1250502c316ea5b7391e9eba2a1477`  
-		Last Modified: Tue, 10 Jun 2025 22:49:38 GMT  
-		Size: 1.7 GB (1687325367 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6110e290402baf97fcc6b2f499c4b38c51f2a3fd23d309cfbda9730804fd99b4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
-		Size: 1.3 KB (1278 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7ecfe0b790c7109692b9b489a4f8c221a44e8c53444ee82512c310c6e13827f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
+	-	`sha256:5d54c80ff4cdb0e457e8cf67e5176b3fda076276dfbdd462658ea9f36e97c079`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d07b67b3e572f341a0ac7083c0ced5699acf6f9e375611ebbc2fb670ba6da99`  
-		Last Modified: Tue, 10 Jun 2025 22:49:00 GMT  
-		Size: 1.9 GB (1858676568 bytes)  
+	-	`sha256:3ce449966487c6e137c6fd9b2ff00714185d73c0711c77a0c6d3db78f3f7b325`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a7093b81ced861a87b22225f53a5e5c86514bb1b647902cc041988ca949e1a9`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:df0d39837f756a272bb7722ca4833c0b92cce1c97dcc6f5aedbe3120715af779`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:53487277f06de2ac68d6a7bf34e74d06275bf172c7f722e57b405227e2c07fca`  
+		Last Modified: Wed, 09 Jul 2025 19:48:37 GMT  
+		Size: 150.3 MB (150315683 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fc730691fe8c1ebd2b9e9c5bc78f176d5b7834140a0b4251391ebfc80e24c3fb`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:37e167e1a0da30bdf2adc9fcf10beff08ca025e3c9a51dcc9f95f17e99ae2ddc`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4474e71d0bffb141c14e6c66c0fac5a864bab5e1e3416ea6424842e521f3dea4`  
+		Last Modified: Wed, 09 Jul 2025 19:48:29 GMT  
+		Size: 47.9 MB (47889987 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:907e2d4a927b0ad2f054bba4812e81f00f2a0cfd90e6c1ccd6688f8b34241f16`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab9e8812e6114d05c124c0a10ed115434f8ff5d7ea3eef93e385baa03558ab3`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:05057f24c43d44b3b33d956adf5fb2478cd7c560822fe55a8a77790497174aee`  
+		Last Modified: Wed, 09 Jul 2025 19:48:46 GMT  
+		Size: 1.7 GB (1687255825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dada93188f94023399e30ecbdb01c9b34a747edd333529c3a094d0df330385e4`  
+		Last Modified: Wed, 09 Jul 2025 19:48:25 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab7e224cd73d9c7d413e5440a696c1683ed4d83317372b1521e34156938f9a3e`  
+		Last Modified: Wed, 09 Jul 2025 19:48:26 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8506a32f72cccb174431d4128e033cd54181eff08a3fe457fa94dc092ea577d3`  
+		Last Modified: Wed, 09 Jul 2025 19:48:39 GMT  
+		Size: 1.9 GB (1858687154 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:863bf2cc4aed39fe06a97b40468c8e083ae30da96d75f65be3c6269bbb4768a5`  
+		Last Modified: Wed, 09 Jul 2025 19:48:30 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:amazonlinux2`
@@ -22102,7 +22102,7 @@ $ docker pull swift@sha256:304774d6f9b36afa4bd5e8d48bc85abc2733ee877358be18ae610
 ## `swift:rhel-ubi9`
 
 ```console
-$ docker pull swift@sha256:76f75fd18186a2868659bce4f65486e7a9306c1001ee9f4e8647a003212a3787
+$ docker pull swift@sha256:d32cce8c3fe0ebb83b92d48d402078ef2db16eeff4d76aee45c63554c45d991d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22115,13 +22115,13 @@ $ docker pull swift@sha256:76f75fd18186a2868659bce4f65486e7a9306c1001ee9f4e8647a
 ### `swift:rhel-ubi9` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:817c87f9fc3e2cdd1ee96a2057640f805e9bf574cc0b12418766e521df925ba2
+$ docker pull swift@sha256:83b8fd11dd457ea4f794a9a25425d476e6e28d08426cc792a3fa6ed6fb30f6cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1094590094 bytes)**  
+-	Total Size: **1.1 GB (1095479665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480a9752ccd3d30eb69aaf85cd5a41c74e44f15b82fd20ff85626f995067fc4b`
+-	Image ID: `sha256:b30c21d0a1c4fcd3b47d5a1e148261f7fdd3f0fee8d7d952092b6d6843aa5888`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22148,7 +22148,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22156,7 +22156,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22184,57 +22184,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:946b0c4013de215e2d78c052169f9aa179b542fcec3fe57a94de24e163b13c54`  
-		Last Modified: Wed, 02 Jul 2025 18:47:42 GMT  
-		Size: 124.4 MB (124398814 bytes)  
+	-	`sha256:05bb9fd0e402c39a29d6a8472b906aebe156ec48cc77f7e8afa943978d5428d1`  
+		Last Modified: Wed, 09 Jul 2025 19:13:50 GMT  
+		Size: 125.3 MB (125288033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbcd9042a6b13defe243d1dd84d563f45f7ead75c07d1598785319b0b77ba9a9`  
 		Last Modified: Tue, 03 Jun 2025 20:30:52 GMT  
 		Size: 890.6 MB (890609955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a25cc58b94d816b386b17767cc403b555c6500b83d1652b8f097ed37401ca6a`  
-		Last Modified: Wed, 02 Jul 2025 18:47:23 GMT  
-		Size: 174.0 B  
+	-	`sha256:4736c883dc6ec93ec4d5f8d5eca1cf897cfd8ee04e692bd877c68fe10f06d91f`  
+		Last Modified: Wed, 09 Jul 2025 19:13:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:844ac101a8ebc5a07aacae8c7a129374ab46ca838c663bf7a7a4574e98357127
+$ docker pull swift@sha256:b3df51c2822f27a54751994afc02b3317425c7194de2e14e652a06e74a9e31a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12977159 bytes)**  
+-	Total Size: **13.0 MB (12980881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02b3cc22eca68a4b81356b1bb332a979ec9b40dcb46ffd47e47194c191feeef4`
+-	Image ID: `sha256:7c674644f5246f9e8a6464535a648b440f6263a3c35f48d4c24a037ff901b8cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62275e3e4b9f62ced61dfa5317619c84fd7a7528b97aec04de7ed159c654e9f3`  
-		Last Modified: Wed, 02 Jul 2025 19:48:27 GMT  
-		Size: 13.0 MB (12962700 bytes)  
+	-	`sha256:554b40d0e0dfeb655e1d01a345c88764f8b9f8ab620ebd4f637d2f5707a4f9f5`  
+		Last Modified: Wed, 09 Jul 2025 22:48:38 GMT  
+		Size: 13.0 MB (12966422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:69d3504bbda5abcc2ed390ac070ea0e7b4bebd2491470176c7897fdde6bad2e6`  
-		Last Modified: Wed, 02 Jul 2025 19:48:27 GMT  
+	-	`sha256:889e633447a2da330a07c9df43f645b272cae47ceb40d3e1d40d91e1f01e533f`  
+		Last Modified: Wed, 09 Jul 2025 22:48:39 GMT  
 		Size: 14.5 KB (14459 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:rhel-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:0004c381cfcfe010a5c71a4449d40441981ffeeb3d4506c0a0a371b41a8d28d0
+$ docker pull swift@sha256:b45b3fc6176176fe58666ad2a41bc3199c9e53b6337cf99c8f6367b46968f033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1082750829 bytes)**  
+-	Total Size: **1.1 GB (1083646907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6377976d191d6946e7e0874f5459e3f12f4849737c5b567e44158ae4cd57a89d`
+-	Image ID: `sha256:39a902a8a89a5bb61fcdcc04958076007f650c864bedc17e450806e67ff2410a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22261,7 +22261,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22269,7 +22269,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22297,51 +22297,51 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24ffd9f49639bbebde0cc3f73f66b07e736573a2760ba8018f3dc74c6292c015`  
-		Last Modified: Wed, 02 Jul 2025 19:15:16 GMT  
-		Size: 118.1 MB (118074183 bytes)  
+	-	`sha256:5b15d130f1d8b629b4c61e8a3f60449577b6a22521b84395d929fb8fa3902744`  
+		Last Modified: Wed, 09 Jul 2025 20:27:08 GMT  
+		Size: 119.0 MB (118971977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95c0d074e38755136a9465305aafe08516ebba1fecf7d780eff797053a3359fa`  
 		Last Modified: Wed, 04 Jun 2025 15:11:16 GMT  
 		Size: 887.4 MB (887359898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bf2aac7b092a53aa8b80b8cbce5f9b39c0343c718935b5934b56103aa024069`  
-		Last Modified: Wed, 02 Jul 2025 19:15:05 GMT  
-		Size: 174.0 B  
+	-	`sha256:04fba1a5597ef21d761f44e0ac6c7f41582bf225501d649d5b3a280ab1772222`  
+		Last Modified: Wed, 09 Jul 2025 20:42:18 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:93f52c6981048c6ab9bfe5c264c6f00c1c3796b73e9de07916e925eec7431737
+$ docker pull swift@sha256:a48fa7e309702d18c33f2e5039d538c38573a984b17b78d372cd664a797377b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.9 MB (12850522 bytes)**  
+-	Total Size: **12.9 MB (12854244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37bbf5e6a1cc809938020e9dae34e4f25b9884093ca32d92d28f5dc6f885bba7`
+-	Image ID: `sha256:0ebb41eb24b5950985b336d57874e591b17f7e907fa131cef5b3296a8aead510`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85b0069a4218dfd92b68922e839b8fc2256ed022d5b41a7ef6e44af21e545b2e`  
-		Last Modified: Wed, 02 Jul 2025 22:48:33 GMT  
-		Size: 12.8 MB (12835947 bytes)  
+	-	`sha256:f93cb599f028b2f05d0dad11d704b4e57ef6f3b57aff2c555e5c864527073d22`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
+		Size: 12.8 MB (12839669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eac8af38fd06d063230b4bfb82b0e80f4710a3b9416006bf282cd6ffbc085f2a`  
-		Last Modified: Wed, 02 Jul 2025 22:48:34 GMT  
+	-	`sha256:84f6d896ae9212f47d3c906a68ac0a3f44c7687f088f461cd0a2c03ac8d8f745`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
 		Size: 14.6 KB (14575 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:e73f1d8f195c9e431873b54e2cfcc75c90be8d96e9a6650be92d80ed7683ffc3
+$ docker pull swift@sha256:5ae3390eb5f4a21dc10faa6d1a11c0d18604e7b941ac5919587cdb1b82f47cad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22354,13 +22354,13 @@ $ docker pull swift@sha256:e73f1d8f195c9e431873b54e2cfcc75c90be8d96e9a6650be92d8
 ### `swift:rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:6b190ac69a56cfa9b79b1432215630b36339846b81ae01ead35a7eca1e126cab
+$ docker pull swift@sha256:78793f3fbfbe3509d0a7fc778ec93e81c3daec142b61c6050860f2416c486d55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.5 MB (134511472 bytes)**  
+-	Total Size: **134.5 MB (134519777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef90ae209edae44d9e33c74001b85ce9475c1a6753ab22db9e4d2491db25d9a4`
+-	Image ID: `sha256:45de18b36d56c8f8bfa9cbd6621e08db332d0670d39ce95ef28621064fee49e9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22387,7 +22387,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:7492816a02b6a9fdb8e1478b30db4fcac269261988d565b14116767fecae0aba in /    
+COPY dir:c0250cfe883e2c4d07c08fa47bd2da353f06d042ee6f012264ae5eb6800dc3c1 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22395,7 +22395,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:33" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:15:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22418,49 +22418,49 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:991b1257896fd60a9811bb63340736f452483a56f8142d025ae07697ecd87e57`  
-		Last Modified: Wed, 02 Jul 2025 12:09:14 GMT  
-		Size: 79.6 MB (79581151 bytes)  
+	-	`sha256:a6ff26f298d8302a61325f1549cf8f2126089b3bc5a3626af6dd3faa1a5f8083`  
+		Last Modified: Mon, 07 Jul 2025 16:02:28 GMT  
+		Size: 79.6 MB (79581504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:940a01b7856b7db49bb72e71ca040e1c1e3ae76bc06644bd8091ee25f5064436`  
-		Last Modified: Wed, 02 Jul 2025 18:45:22 GMT  
-		Size: 54.9 MB (54930321 bytes)  
+	-	`sha256:426a01fe5bf57dd7affb06c7f596754daf058cedfa47ca799fd6cf6e810e5910`  
+		Last Modified: Wed, 09 Jul 2025 19:12:04 GMT  
+		Size: 54.9 MB (54938273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:929231aaa33351f1e08ecc6670b8b28e25b63c3d8064e9a4d01f6c74f2391f6a
+$ docker pull swift@sha256:b7b8d0363fb28c0d3b4a705bec5b5d5bc429c7425b21338ea6c64f8a98c575cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6412635 bytes)**  
+-	Total Size: **6.4 MB (6412659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e44ff9c622af3a987b9b336558c990f816df00d9b1980945726a8cc07280a54c`
+-	Image ID: `sha256:5175d3fdfd0c484134b4b178aa8c927bcf3363444dfe06a441a1093dc97f0926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50fee12ce60d269d33ee4b01db53ececfae5f935a5e354f556efa8881c43c092`  
-		Last Modified: Wed, 02 Jul 2025 19:48:28 GMT  
-		Size: 6.4 MB (6401137 bytes)  
+	-	`sha256:c8bec2297e6be72686d791705fac0f75540a54af43cb6739d17f852f54751176`  
+		Last Modified: Wed, 09 Jul 2025 22:48:42 GMT  
+		Size: 6.4 MB (6401161 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a96af3fd2e8927edd5a9b44054f87d8e26b3189c9a9ac352854e4cbee0d87c26`  
-		Last Modified: Wed, 02 Jul 2025 19:48:29 GMT  
+	-	`sha256:a716052fbde390cecb98b9c3ede37498ebf1e3134b28661a0364e7de8eed478f`  
+		Last Modified: Wed, 09 Jul 2025 22:48:43 GMT  
 		Size: 11.5 KB (11498 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:1465437742b52bc05197bd346210f03f2a3ad6ce8bc264251d785048a9ee5256
+$ docker pull swift@sha256:a1adfb054e42ded8dfef5cd92e74071fc4b57f7d483790a0a6b80d25ba4ad6f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130969560 bytes)**  
+-	Total Size: **131.0 MB (130976999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7e4d1535cf3c9334849cf2e1eb679460c3d0baafbcc770c7016b36bba151d00`
+-	Image ID: `sha256:61093c23d9a449389fd5adde713e9f3312b992b5335d4b9db105cff8b1370177`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -22487,7 +22487,7 @@ LABEL io.openshift.tags="base rhel9"
 # Wed, 28 May 2025 17:53:13 GMT
 ENV container oci
 # Wed, 28 May 2025 17:53:13 GMT
-COPY dir:42d787c85c3225f4ba157c2deeba72e69e93f12a80db442d151ec5f4c2c764fc in /    
+COPY dir:8948db59aae9e6c75ede941315802e8642d34c0d7e4b58e2d6e01b6ad9401fd7 in /    
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/.    
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22495,7 +22495,7 @@ CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json    
 # Wed, 28 May 2025 17:53:13 GMT
-LABEL "build-date"="2025-07-02T08:45:11" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9" "release"="1751445649"
+LABEL "build-date"="2025-07-07T14:20:16" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="9e371559ce967d5e3744b8a9fcba95f53e30a699" "release"="1751897624"
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
 # Wed, 28 May 2025 17:53:13 GMT
@@ -22518,37 +22518,37 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 ```
 
 -	Layers:
-	-	`sha256:7810b4123c84611d25aab307c7583ee5e99c194789b59694115fdf4fc85f685c`  
-		Last Modified: Wed, 02 Jul 2025 12:09:11 GMT  
-		Size: 77.3 MB (77316574 bytes)  
+	-	`sha256:4aeb1dfbbe0742dde349b9d189e6e14deb188b2ccaa19c25c34b8b1f838c33b5`  
+		Last Modified: Mon, 07 Jul 2025 18:10:18 GMT  
+		Size: 77.3 MB (77314862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080d5d9a35b5e841139792d7ce410f9c97076cc32b01e8c20a48fe9b856f9d0a`  
-		Last Modified: Wed, 02 Jul 2025 19:16:15 GMT  
-		Size: 53.7 MB (53652986 bytes)  
+	-	`sha256:d80a5f75d67088345d947c6e9826b2a8651d5d0bc061a0016bae25cd4c548095`  
+		Last Modified: Wed, 09 Jul 2025 20:28:36 GMT  
+		Size: 53.7 MB (53662137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:7763f4b7126318df625ad0df5613ea72770ee8c609a96a1a324c83336a3f4036
+$ docker pull swift@sha256:2186a2585ab8ca6516d8cd32082528c792dbebd67fd26ff62654a3b33fcf4ae5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6408524 bytes)**  
+-	Total Size: **6.4 MB (6408549 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4323a0a52cdc6a4d828b3b6fcb046ac7ecfb3d57ae891665a9486b4f631de276`
+-	Image ID: `sha256:1598cc663f29f057690b4b369430cb0343b154507aa12dd7dfa68df0f92cf2f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d90d45aa366beb7ac9e455d3c8a09849e7e1987f9866b77b6323995e9071e024`  
-		Last Modified: Wed, 02 Jul 2025 22:48:35 GMT  
-		Size: 6.4 MB (6396940 bytes)  
+	-	`sha256:75e1207d55303e5084cef8d0e20a88334d52566dfc71c394d24eef2a440a4cd7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:52 GMT  
+		Size: 6.4 MB (6396964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a7e3b254a4605b21f4a94eb2d2d1a8ad5bb7aec97051e4d921a9991d5c23fca`  
-		Last Modified: Wed, 02 Jul 2025 22:48:35 GMT  
-		Size: 11.6 KB (11584 bytes)  
+	-	`sha256:69d3ce8e9853272fb081ff9f75e8ee67e0af521f8acbdf4b1f38d2d0e57d21b7`  
+		Last Modified: Wed, 09 Jul 2025 22:48:53 GMT  
+		Size: 11.6 KB (11585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `swift:slim`
@@ -22739,69 +22739,69 @@ $ docker pull swift@sha256:304774d6f9b36afa4bd5e8d48bc85abc2733ee877358be18ae610
 ## `swift:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:ccee978ad0bba0dd018844bfccea6d91220e6b6112d807ebc47bf950ec9295a9
+$ docker pull swift@sha256:143f3535ac82dc81868b1c6fa93587ff2e131e53dc35404d5106979c3a4ac482
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.3807; amd64
+	-	windows version 10.0.20348.3932; amd64
 
-### `swift:windowsservercore-ltsc2022` - windows version 10.0.20348.3807; amd64
+### `swift:windowsservercore-ltsc2022` - windows version 10.0.20348.3932; amd64
 
 ```console
-$ docker pull swift@sha256:6590a55c0edb499940cd275b96a0c6584a682ea4958177dae8e0a0d56d7d47e2
+$ docker pull swift@sha256:c442a78982f382724db9d766a969959335d44d43ae7399f4777036e49d3b95cf
 ```
 
 -	Docker Version: 27.5.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (6024362060 bytes)**  
+-	Total Size: **6.0 GB (6024768865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:003f511ab17ec322841dcfbdc272f11a388de88068f9fa5afd99c6b1c6874b26`
+-	Image ID: `sha256:73f87f78f7f6d397c4decfa28852e6a31bf415a075e9e599641cc4875f3261bc`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 06 Sep 2024 00:01:38 GMT
 RUN Apply image 10.0.20348.2700
-# Thu, 05 Jun 2025 01:01:39 GMT
-RUN Install update 10.0.20348.3807
-# Tue, 10 Jun 2025 21:39:09 GMT
+# Sat, 05 Jul 2025 05:31:06 GMT
+RUN Install update 10.0.20348.3932
+# Wed, 09 Jul 2025 18:17:59 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 10 Jun 2025 21:39:10 GMT
+# Wed, 09 Jul 2025 18:18:00 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 10 Jun 2025 21:39:11 GMT
+# Wed, 09 Jul 2025 18:18:01 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 10 Jun 2025 21:39:12 GMT
+# Wed, 09 Jul 2025 18:18:03 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 10 Jun 2025 21:39:13 GMT
+# Wed, 09 Jul 2025 18:18:04 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 10 Jun 2025 21:39:14 GMT
+# Wed, 09 Jul 2025 18:18:05 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 10 Jun 2025 21:40:13 GMT
+# Wed, 09 Jul 2025 18:19:24 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:14 GMT
+# Wed, 09 Jul 2025 18:19:26 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 10 Jun 2025 21:40:15 GMT
+# Wed, 09 Jul 2025 18:19:27 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 10 Jun 2025 21:40:44 GMT
+# Wed, 09 Jul 2025 18:20:08 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:40:46 GMT
+# Wed, 09 Jul 2025 18:20:09 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 10 Jun 2025 21:40:47 GMT
+# Wed, 09 Jul 2025 18:20:11 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 10 Jun 2025 21:51:09 GMT
+# Wed, 09 Jul 2025 18:30:14 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:51:10 GMT
+# Wed, 09 Jul 2025 18:30:16 GMT
 ARG SWIFT=https://download.swift.org/swift-6.1.2-release/windows10/swift-6.1.2-RELEASE/swift-6.1.2-RELEASE-windows10.exe
-# Tue, 10 Jun 2025 21:51:11 GMT
+# Wed, 09 Jul 2025 18:30:17 GMT
 ARG SWIFT_SHA256=92A0323ED7DD333C3B05E6E0E428F3A91C77D159F6CCFC8626A996F2ACE09A0B
-# Tue, 10 Jun 2025 21:53:31 GMT
+# Wed, 09 Jul 2025 18:32:29 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.1.2-release/windows10/swift-6.1.2-RELEASE/swift-6.1.2-RELEASE-windows10.exe SWIFT_SHA256=92A0323ED7DD333C3B05E6E0E428F3A91C77D159F6CCFC8626A996F2ACE09A0B VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 10 Jun 2025 21:53:34 GMT
+# Wed, 09 Jul 2025 18:32:31 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -22810,75 +22810,75 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Fri, 13 Dec 2024 18:51:46 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5652627be066fd088860f3ebfcc61d4cb76922ffa16c5496b4158c7e4e7151`  
-		Last Modified: Tue, 10 Jun 2025 19:16:01 GMT  
-		Size: 818.1 MB (818059164 bytes)  
+	-	`sha256:b829944a73d1d8ad37eaa13c64bf9189b6895cc5b45b79bb3563fa325d94b6a7`  
+		Last Modified: Wed, 09 Jul 2025 00:17:04 GMT  
+		Size: 818.4 MB (818411069 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4d7a4d7b496641c431ddade4451d4d7aa023441df63183ff200ceb7b5bc03a4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:39 GMT  
-		Size: 1.3 KB (1281 bytes)  
+	-	`sha256:2e6ca1988af63b785bcafd8c46fdd2d1deebbb02e959d0c49dcea2d5d9638858`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552438c201b9f814fcda8d723b269a3bf086a0ee6ff936d83f63a6f1508a00cf`  
-		Last Modified: Tue, 10 Jun 2025 21:56:40 GMT  
-		Size: 1.3 KB (1285 bytes)  
+	-	`sha256:f9316cff6d71bbeec8258be5d8953cf9eb063247d383a310dfb9f6625b2858dc`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42c60635c70e83aa8cbf70a77cb03e17ce66f37ef05c47071f8ba670477719f4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd84527a9b24eb1684360a76088a7c5bad16b745efb26c5711646e48533345f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
+	-	`sha256:5b119fa90024ccbaae32b2001f6cc7a46277a702af66bfccef3f04f99f5555cf`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
 		Size: 1.3 KB (1279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4bd42483cb61c6f6a875708c5b427120976c4004dcc8fcf0e0ba54328c5fa2d`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92ae15dd3c3e689edd50355208fe46548a70f34de8a6066f0adbda386a61a55a`  
-		Last Modified: Tue, 10 Jun 2025 21:56:41 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ae27d5b7ceb05c2e94d73c20bc636a9fa901119633735efdb91dbe6b0e03913`  
-		Last Modified: Tue, 10 Jun 2025 22:48:55 GMT  
-		Size: 150.3 MB (150261870 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43d155b918f0245d1982afdc53878a4823867d309582f88fffa12bd489907fde`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f71a302120a724765e5db867cfbe5b8e5c087cad72089c478845caffcb3e48`  
-		Last Modified: Tue, 10 Jun 2025 21:56:42 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf0c063cc623c88a83fdcd7e9e59a37770b9c465bb6de845fd56a6a1d33f15bf`  
-		Last Modified: Tue, 10 Jun 2025 21:56:46 GMT  
-		Size: 47.8 MB (47829937 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81f08006fec2d46bcd309ea4d00f298c3d0c23be72bb30a8228d13b8f7d0401d`  
-		Last Modified: Tue, 10 Jun 2025 21:56:43 GMT  
-		Size: 1.3 KB (1280 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed0672850cd78a1af1f26d74bf666f7a2942bd969eda49366f73004a1cdd450f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:43 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d4b318d3fba1a7bbd1ce30d719b9fd1df1250502c316ea5b7391e9eba2a1477`  
-		Last Modified: Tue, 10 Jun 2025 22:49:38 GMT  
-		Size: 1.7 GB (1687325367 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6110e290402baf97fcc6b2f499c4b38c51f2a3fd23d309cfbda9730804fd99b4`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
-		Size: 1.3 KB (1278 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7ecfe0b790c7109692b9b489a4f8c221a44e8c53444ee82512c310c6e13827f`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
+	-	`sha256:5d54c80ff4cdb0e457e8cf67e5176b3fda076276dfbdd462658ea9f36e97c079`  
+		Last Modified: Wed, 09 Jul 2025 19:48:22 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d07b67b3e572f341a0ac7083c0ced5699acf6f9e375611ebbc2fb670ba6da99`  
-		Last Modified: Tue, 10 Jun 2025 22:49:00 GMT  
-		Size: 1.9 GB (1858676568 bytes)  
+	-	`sha256:3ce449966487c6e137c6fd9b2ff00714185d73c0711c77a0c6d3db78f3f7b325`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a7093b81ced861a87b22225f53a5e5c86514bb1b647902cc041988ca949e1a9`  
-		Last Modified: Tue, 10 Jun 2025 21:56:44 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:df0d39837f756a272bb7722ca4833c0b92cce1c97dcc6f5aedbe3120715af779`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:53487277f06de2ac68d6a7bf34e74d06275bf172c7f722e57b405227e2c07fca`  
+		Last Modified: Wed, 09 Jul 2025 19:48:37 GMT  
+		Size: 150.3 MB (150315683 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fc730691fe8c1ebd2b9e9c5bc78f176d5b7834140a0b4251391ebfc80e24c3fb`  
+		Last Modified: Wed, 09 Jul 2025 19:48:23 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:37e167e1a0da30bdf2adc9fcf10beff08ca025e3c9a51dcc9f95f17e99ae2ddc`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4474e71d0bffb141c14e6c66c0fac5a864bab5e1e3416ea6424842e521f3dea4`  
+		Last Modified: Wed, 09 Jul 2025 19:48:29 GMT  
+		Size: 47.9 MB (47889987 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:907e2d4a927b0ad2f054bba4812e81f00f2a0cfd90e6c1ccd6688f8b34241f16`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab9e8812e6114d05c124c0a10ed115434f8ff5d7ea3eef93e385baa03558ab3`  
+		Last Modified: Wed, 09 Jul 2025 19:48:24 GMT  
+		Size: 1.3 KB (1281 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:05057f24c43d44b3b33d956adf5fb2478cd7c560822fe55a8a77790497174aee`  
+		Last Modified: Wed, 09 Jul 2025 19:48:46 GMT  
+		Size: 1.7 GB (1687255825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dada93188f94023399e30ecbdb01c9b34a747edd333529c3a094d0df330385e4`  
+		Last Modified: Wed, 09 Jul 2025 19:48:25 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab7e224cd73d9c7d413e5440a696c1683ed4d83317372b1521e34156938f9a3e`  
+		Last Modified: Wed, 09 Jul 2025 19:48:26 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8506a32f72cccb174431d4128e033cd54181eff08a3fe457fa94dc092ea577d3`  
+		Last Modified: Wed, 09 Jul 2025 19:48:39 GMT  
+		Size: 1.9 GB (1858687154 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:863bf2cc4aed39fe06a97b40468c8e083ae30da96d75f65be3c6269bbb4768a5`  
+		Last Modified: Wed, 09 Jul 2025 19:48:30 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
