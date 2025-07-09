@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:623706a2d956175d799bc86ea68e788edc72f94ee4c8b88e3dde398ed1ce6ff7`
-- Created: `2025-06-11T14:25:53Z`
-- Virtual Size: ~ 188.66 Mb  
+- Image ID: `sha256:243c07b7e01c81cb5b1a717398ff8dd618f942b2ca1e9a795a4378a7f05471b5`
+- Created: `2025-07-09T11:09:44Z`
+- Virtual Size: ~ 188.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -288,48 +288,48 @@ $ dnf --quiet download --source --url dnf-data-4.14.0-25.el9.alma.1.noarch
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/dnf-4.14.0-25.el9.alma.1.src.rpm
 ```
 
-### `rpm` package: `elfutils-debuginfod-client-0.192-5.el9.x86_64`
+### `rpm` package: `elfutils-debuginfod-client-0.192-6.el9_6.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-debuginfod-client-0.192-5.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-5.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-debuginfod-client-0.192-6.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-6.el9_6.src.rpm
 ```
 
-### `rpm` package: `elfutils-default-yama-scope-0.192-5.el9.noarch`
+### `rpm` package: `elfutils-default-yama-scope-0.192-6.el9_6.noarch`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-default-yama-scope-0.192-5.el9.noarch
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-5.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-default-yama-scope-0.192-6.el9_6.noarch
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-6.el9_6.src.rpm
 ```
 
-### `rpm` package: `elfutils-libelf-0.192-5.el9.x86_64`
+### `rpm` package: `elfutils-libelf-0.192-6.el9_6.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libelf-0.192-5.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-5.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-libelf-0.192-6.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-6.el9_6.src.rpm
 ```
 
-### `rpm` package: `elfutils-libs-0.192-5.el9.x86_64`
+### `rpm` package: `elfutils-libs-0.192-6.el9_6.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libs-0.192-5.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-5.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-libs-0.192-6.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/elfutils-0.192-6.el9_6.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-5.el9_6.x86_64`
@@ -409,37 +409,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-16.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glib2-2.68.4-16.el9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-168.el9_6.14.alma.1.x86_64`
+### `rpm` package: `glibc-2.34-168.el9_6.20.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-168.el9_6.14.alma.1
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.14.alma.1.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-168.el9_6.20
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.20.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-168.el9_6.14.alma.1.x86_64`
+### `rpm` package: `glibc-common-2.34-168.el9_6.20.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.14.alma.1
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.14.alma.1.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.20
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.20.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.14.alma.1.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.20.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.14.alma.1
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.14.alma.1.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.20
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.20.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -536,15 +536,15 @@ $ dnf --quiet download --source --url ima-evm-utils-1.5-3.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/ima-evm-utils-1.5-3.el9.src.rpm
 ```
 
-### `rpm` package: `iputils-20210202-11.el9.x86_64`
+### `rpm` package: `iputils-20210202-11.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url iputils-20210202-11.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/iputils-20210202-11.el9.src.rpm
+$ dnf --quiet download --source --url iputils-20210202-11.el9_6.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/iputils-20210202-11.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -591,15 +591,15 @@ $ dnf --quiet download --source --url kmod-libs-28-10.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/kmod-28-10.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-6.el9.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-8.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-6.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/krb5-1.21.1-6.el9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.21.1-8.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/krb5-1.21.1-8.el9_6.src.rpm
 ```
 
 ### `rpm` package: `less-590-5.el9.x86_64`
@@ -624,15 +624,15 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-4.el9.x86_64`
+### `rpm` package: `libarchive-3.5.3-5.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-4.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libarchive-3.5.3-4.el9.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-5.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libarchive-3.5.3-5.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -723,15 +723,15 @@ $ dnf --quiet download --source --url libcurl-minimal-7.76.1-31.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/curl-7.76.1-31.el9.src.rpm
 ```
 
-### `rpm` package: `libdb-5.3.28-55.el9.x86_64`
+### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libdb-5.3.28-55.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libdb-5.3.28-55.el9.src.rpm
+$ dnf --quiet download --source --url libdb-5.3.28-57.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libdb-5.3.28-57.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libdnf-0.69.0-13.el9.alma.1.x86_64`
@@ -1251,15 +1251,15 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/p11-kit-0.25.3-3.el9_5.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-23.el9.x86_64`
+### `rpm` package: `pam-1.5.1-25.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-23.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/pam-1.5.1-23.el9.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-25.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/pam-1.5.1-25.el9_6.src.rpm
 ```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
@@ -1306,15 +1306,15 @@ $ dnf --quiet download --source --url popt-1.18-8.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/popt-1.18-8.el9.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.21-2.el9.x86_64`
+### `rpm` package: `python3-3.9.21-2.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.9.21-2.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/python3.9-3.9.21-2.el9.src.rpm
+$ dnf --quiet download --source --url python3-3.9.21-2.el9_6.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/python3.9-3.9.21-2.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `python3-dnf-4.14.0-25.el9.alma.1.noarch`
@@ -1372,15 +1372,15 @@ $ dnf --quiet download --source --url python3-libdnf-0.69.0-13.el9.alma.1
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libdnf-0.69.0-13.el9.alma.1.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.21-2.el9.x86_64`
+### `rpm` package: `python3-libs-3.9.21-2.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.9.21-2.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/python3.9-3.9.21-2.el9.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.9.21-2.el9_6.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/python3.9-3.9.21-2.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-wheel-21.3.1-1.el9.noarch`
@@ -1405,15 +1405,15 @@ $ dnf --quiet download --source --url python3-rpm-4.16.1.3-37.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/rpm-4.16.1.3-37.el9.src.rpm
 ```
 
-### `rpm` package: `python3-setuptools-wheel-53.0.0-13.el9.noarch`
+### `rpm` package: `python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch`
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-setuptools-wheel-53.0.0-13.el9.noarch
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/python-setuptools-53.0.0-13.el9.src.rpm
+$ dnf --quiet download --source --url python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/python-setuptools-53.0.0-13.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -1526,48 +1526,48 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/sqlite-3.34.1-7.el9_3.src.rpm
 ```
 
-### `rpm` package: `systemd-252-51.el9.alma.1.x86_64`
+### `rpm` package: `systemd-252-51.el9_6.1.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-51.el9.alma.1
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-252-51.el9_6.1.alma.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9_6.1.alma.1.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-51.el9.alma.1.x86_64`
+### `rpm` package: `systemd-libs-252-51.el9_6.1.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-51.el9.alma.1
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-51.el9_6.1.alma.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9_6.1.alma.1.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-51.el9.alma.1.x86_64`
+### `rpm` package: `systemd-pam-252-51.el9_6.1.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-51.el9.alma.1
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-51.el9_6.1.alma.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9_6.1.alma.1.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-51.el9.alma.1.noarch`
+### `rpm` package: `systemd-rpm-macros-252-51.el9_6.1.alma.1.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-51.el9.alma.1.noarch
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-51.el9_6.1.alma.1.noarch
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/systemd-252-51.el9_6.1.alma.1.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
