@@ -778,14 +778,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.43.0-1ubuntu7.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2.dsc' git_2.43.0-1ubuntu7.2.dsc 2927 SHA512:139446143bbeac8cdf539fd606e9dd7671c96f63dcd28252e9d8a723df08c302bccd8cafb87b00adcce7fd5d320ae077afd9ebd23b15dc07629bd4dc8a4dec80
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA512:d0c1694ae23ff7d523e617b98d7c9a9753a2ee58f92c21b67a192d1c57398a62ff9c1a34558ae31af8dc8d95122c219f39f654e99a3b4e7cfc3dd07be9e13203
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2.debian.tar.xz' git_2.43.0-1ubuntu7.2.debian.tar.xz 777944 SHA512:723fe87a8e9cccbd66e713207bdada787463d978986efacee41eb20aa5a0f261526e9ce000231733b3d36dcde25016b529061d5f6e6ee2d62141f207087ee39c
-```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.4`
 
@@ -859,15 +854,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.dsc' gnupg2_2.4.4-2ubuntu17.2.dsc 3947 SHA512:56786f582b69a662f3cb7bfcd23981f8f7b93d9b49bc5a0244d335975714421be475bfd3f0c5532e9bf37b87b03a388a9afc9b5af7a20eed6103739216b0abb2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz 95608 SHA512:aae73a32d6581eabe408b2d50e6ec26fe84d32c45e8581226d020f9d0d37db5707848f5e51728126dac9bc9ee0318b1a7c9f06f57adf8c472cb237686343a505
-```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.3`
 
@@ -2252,14 +2241,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.2.dsc' util-linux_2.39.3-9ubuntu6.2.dsc 4726 SHA512:1a885320d232e0748bb2391ac4c393105d0a5b1827b8b75666650f39a36467f80b66bb07fbad906d4db9f6653aa7d98719f4bf001a17648b4a739b978cb7aaa2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA512:a2de1672f06ca5d2d431db1265a8499808770c3781019ec4a3a40170df4685826d8e3ca120841dcc5df4681ca8c935a993317bd0dc70465b21bf8e0efef65afa
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.2.debian.tar.xz' util-linux_2.39.3-9ubuntu6.2.debian.tar.xz 108472 SHA512:7a29bfd3b65117c73148a906869a176d4f94bf7931e2c53409bd72851e81179a4fdf028acd0223e7eae726a96f19d040322c830c2449dfbafaee80e53b833892
-```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 
