@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5f1ff92a6840c80761849b6728ee9a4a3ffefeecdca2742ef00193bff9916bd`
-- Created: `2025-06-27T18:14:04Z`
-- Virtual Size: ~ 715.74 Mb  
+- Image ID: `sha256:ab46a7171d32b2e34fd02f2236b6371153b49be7c1017152da80a25f613b7c95`
+- Created: `2025-07-04T11:31:38Z`
+- Virtual Size: ~ 716.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -239,13 +239,13 @@ $ apt-get source -qq --print-uris cdebconf=0.261ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.261ubuntu1.tar.xz' cdebconf_0.261ubuntu1.tar.xz 297016 SHA512:6c2c8e2dccdb923ae6dc6a6b3873e6a56f6bdc4a6298c0576f60cb8d5c63bd06c4b9dac4ada4abd0d672a4e54509ad558fc9d1424a8029568d8d86cb54926390
 ```
 
-### `dpkg` source package: `clickhouse=25.6.1.3206`
+### `dpkg` source package: `clickhouse=25.6.2.5`
 
 Binary Packages:
 
-- `clickhouse-client=25.6.1.3206`
-- `clickhouse-common-static=25.6.1.3206`
-- `clickhouse-server=25.6.1.3206`
+- `clickhouse-client=25.6.2.5`
+- `clickhouse-common-static=25.6.2.5`
+- `clickhouse-server=25.6.2.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -518,11 +518,11 @@ $ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3ubuntu1.debian.tar.xz' gmp_6.2.1+dfsg-3ubuntu1.debian.tar.xz 40996 SHA512:d7e0a1165a42b11a26a0f9232193db41ce2e7b1f5ea50d258e156fc9d80f9a74b6739491ec73cc1e909a3d09e029f90c3be1460c993690c5081ef8c6a169a4c3
 ```
 
-### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.3`
+### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.4`
 
 Binary Packages:
 
-- `gpgv=2.2.27-3ubuntu2.3`
+- `gpgv=2.2.27-3ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -542,10 +542,10 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.3.dsc' gnupg2_2.2.27-3ubuntu2.3.dsc 3726 SHA512:58082807a69bbf51b0ec944ef98fc82e17041000f84f58cd3f553ee5e1adb34c022661f3af748e65dc59e679ddd99cb2fa27c0f962b44eda51a11339588aed15
+$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.4.dsc' gnupg2_2.2.27-3ubuntu2.4.dsc 3381 SHA512:423656fb510c62d0452ac1963f23b3b7b073e29255be9311e9cf406b8a1463711a0bce4755be70a13c6ddabf526be5c9b8c11df38990e0ab44c9a7d84bff7f6a
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA512:cf336962116c9c08ac80b1299654b94948033ef51d6d5e7f54c2f07bbf7d92c7b0bddb606ceee2cdd837063f519b8d59af5a82816b840a0fc47d90c07b0e95ab
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.3.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.3.debian.tar.xz 75564 SHA512:6ebe8b037c375fa93358547dca58ecfca6d2fec31c6a3e2e5158b8275b468066680b06d94d70444683cb9f5bfef001750bd92be5e13d0ae518c8473bcdb63baa
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.4.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.4.debian.tar.xz 75972 SHA512:d0d262876a8a39f0f31f0a0a40290c8d32b3d52ae3d06180bbf3dbaf13e02a8f637ee3d0ab863cf29c12b16d3cc6399529502e302bd4bd606cb97eeb7674d2a8
 ```
 
 ### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.6`
