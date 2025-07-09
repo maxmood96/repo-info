@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:85cd11353b01e8262332bc018bac024f19d4fe306d6c5473bc221da4bfa703fa`
+- Image ID: `sha256:b89d99bae98e9ec5f511fa43f3b7a996249355657a1a4f9fa1a2044577a1ddaf`
 - Created: `2025-06-10T14:38:21Z`
-- Virtual Size: ~ 617.80 Mb  
+- Virtual Size: ~ 622.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.106`
-  - `TOMCAT_SHA512=0b316af119fd9a69761c20bc7f9959513884002fc60f490af6335380a3a62549777bf35a1e8dd3c448e56da8ddcb9dc2301d3b01bba304537ca40456c650c25a`
+  - `TOMCAT_VERSION=9.0.107`
+  - `TOMCAT_SHA512=1815837fa10083258b653dab1f3947fadbad377fa66546fa74aecea1439c6fed2ef4e40c86fa55e176d8c5739ad448196a7415ddfca6ff8d17c6fe8cdba0fefb`
   - `SWT_GTK3=0`
   - `CONVERTIGO_VERSION=8.3.7`
   - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.7/convertigo-8.3.7.war`
@@ -643,21 +643,21 @@ $ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3ubuntu1.debian.tar.xz' gmp_6.2.1+dfsg-3ubuntu1.debian.tar.xz 40996 SHA512:d7e0a1165a42b11a26a0f9232193db41ce2e7b1f5ea50d258e156fc9d80f9a74b6739491ec73cc1e909a3d09e029f90c3be1460c993690c5081ef8c6a169a4c3
 ```
 
-### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.3`
+### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.4`
 
 Binary Packages:
 
-- `dirmngr=2.2.27-3ubuntu2.3`
-- `gnupg=2.2.27-3ubuntu2.3`
-- `gnupg-l10n=2.2.27-3ubuntu2.3`
-- `gnupg-utils=2.2.27-3ubuntu2.3`
-- `gpg=2.2.27-3ubuntu2.3`
-- `gpg-agent=2.2.27-3ubuntu2.3`
-- `gpg-wks-client=2.2.27-3ubuntu2.3`
-- `gpg-wks-server=2.2.27-3ubuntu2.3`
-- `gpgconf=2.2.27-3ubuntu2.3`
-- `gpgsm=2.2.27-3ubuntu2.3`
-- `gpgv=2.2.27-3ubuntu2.3`
+- `dirmngr=2.2.27-3ubuntu2.4`
+- `gnupg=2.2.27-3ubuntu2.4`
+- `gnupg-l10n=2.2.27-3ubuntu2.4`
+- `gnupg-utils=2.2.27-3ubuntu2.4`
+- `gpg=2.2.27-3ubuntu2.4`
+- `gpg-agent=2.2.27-3ubuntu2.4`
+- `gpg-wks-client=2.2.27-3ubuntu2.4`
+- `gpg-wks-server=2.2.27-3ubuntu2.4`
+- `gpgconf=2.2.27-3ubuntu2.4`
+- `gpgsm=2.2.27-3ubuntu2.4`
+- `gpgv=2.2.27-3ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -677,10 +677,10 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.3.dsc' gnupg2_2.2.27-3ubuntu2.3.dsc 3726 SHA512:58082807a69bbf51b0ec944ef98fc82e17041000f84f58cd3f553ee5e1adb34c022661f3af748e65dc59e679ddd99cb2fa27c0f962b44eda51a11339588aed15
+$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.4.dsc' gnupg2_2.2.27-3ubuntu2.4.dsc 3381 SHA512:423656fb510c62d0452ac1963f23b3b7b073e29255be9311e9cf406b8a1463711a0bce4755be70a13c6ddabf526be5c9b8c11df38990e0ab44c9a7d84bff7f6a
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA512:cf336962116c9c08ac80b1299654b94948033ef51d6d5e7f54c2f07bbf7d92c7b0bddb606ceee2cdd837063f519b8d59af5a82816b840a0fc47d90c07b0e95ab
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.3.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.3.debian.tar.xz 75564 SHA512:6ebe8b037c375fa93358547dca58ecfca6d2fec31c6a3e2e5158b8275b468066680b06d94d70444683cb9f5bfef001750bd92be5e13d0ae518c8473bcdb63baa
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.4.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.4.debian.tar.xz 75972 SHA512:d0d262876a8a39f0f31f0a0a40290c8d32b3d52ae3d06180bbf3dbaf13e02a8f637ee3d0ab863cf29c12b16d3cc6399529502e302bd4bd606cb97eeb7674d2a8
 ```
 
 ### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.6`
@@ -1174,15 +1174,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.3.dsc' libssh_0.9.6-2ubuntu0.22.04.3.dsc 2884 SHA512:d118e2881416d2a4e4d07fb7056c42651e8c5b80a9bc6dccb996559351847bfe7fa28a07926b0027484f091ccd6ae0436c40f82ca9bdf8c8286c191d8f9b723c
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.3.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.3.debian.tar.xz 52472 SHA512:26a7a01afe7e6d6d7da87e2afb76fe8972e1aa471ea6cd763ff2ff0508ae560f7b7ca110577ca4f6bcc071100eeb0653862203bc47b7f91e9ca5b628647c7c4b
-```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.1`
 
