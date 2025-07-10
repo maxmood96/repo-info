@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef90ae209edae44d9e33c74001b85ce9475c1a6753ab22db9e4d2491db25d9a4`
+- Image ID: `sha256:45de18b36d56c8f8bfa9cbd6621e08db332d0670d39ce95ef28621064fee49e9`
 - Created: `2025-05-28T17:53:13Z`
-- Virtual Size: ~ 367.00 Mb  
+- Virtual Size: ~ 367.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-02T08:45:33`
+  - `build-date=2025-07-07T14:15:25`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1751445649`
+  - `release=1751897624`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=e54274dfd7f5b9d250f44c3cc6fbc4a269fe90d9`
+  - `vcs-ref=9e371559ce967d5e3744b8a9fcba95f53e30a699`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -1200,12 +1200,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-9.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-9.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1713,26 +1708,26 @@ $ dnf --quiet download --source --url python3-rpm-4.16.1.3-37.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-37.el9.src.rpm
 ```
 
-### `rpm` package: `python3-setuptools-53.0.0-13.el9.noarch`
+### `rpm` package: `python3-setuptools-53.0.0-13.el9_6.1.noarch`
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-setuptools-53.0.0-13.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-setuptools-53.0.0-13.el9.src.rpm
+$ dnf --quiet download --source --url python3-setuptools-53.0.0-13.el9_6.1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-setuptools-53.0.0-13.el9_6.1.src.rpm
 ```
 
-### `rpm` package: `python3-setuptools-wheel-53.0.0-13.el9.noarch`
+### `rpm` package: `python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch`
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-setuptools-wheel-53.0.0-13.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-setuptools-53.0.0-13.el9.src.rpm
+$ dnf --quiet download --source --url python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-setuptools-53.0.0-13.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `python3-six-1.15.0-9.el9.noarch`
