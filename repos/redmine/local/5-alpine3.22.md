@@ -1,10 +1,10 @@
-# `redmine:5.1.8-alpine3.22`
+# `redmine:5.1.9-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1924aeb58812369fd5be0ed6ea55d79d08951efbe5ff2036b727971568ecc370`
-- Created: `2025-05-30T21:26:15Z`
-- Virtual Size: ~ 416.99 Mb  
+- Image ID: `sha256:00ae4b581144640de3242d020696841cf54f195f9375d196f186d028a51de7f5`
+- Created: `2025-07-07T22:00:32Z`
+- Virtual Size: ~ 423.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.8`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.8.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=50a30cd16c43d0ae64f256866c8cef4b0e9dd818d6feef489fa24507fbde3a7b`
+  - `REDMINE_VERSION=5.1.9`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.9.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=cc0ddafa6fe6f5192236a27cec64e3466023a12c92c1da4abb680248639f678c`
   - `RAILS_LOG_TO_STDOUT=true`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
@@ -746,16 +746,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -763,16 +763,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.0-r2 description:
+libcurl-8.14.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.0-r2 webpage:
+libcurl-8.14.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.14.0-r2 installed size:
+libcurl-8.14.1-r1 installed size:
 669 KiB
 
-libcurl-8.14.0-r2 license:
+libcurl-8.14.1-r1 license:
 curl
 
 ```
@@ -1103,16 +1103,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1868,16 +1868,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.10-r1 description:
+pyc-3.12.11-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.10-r1 webpage:
+pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.10-r1 installed size:
+pyc-3.12.11-r0 installed size:
 0 B
 
-pyc-3.12.10-r1 license:
+pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1885,16 +1885,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.10-r1 description:
+python3-3.12.11-r0 description:
 High-level scripting language
 
-python3-3.12.10-r1 webpage:
+python3-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-3.12.10-r1 installed size:
+python3-3.12.11-r0 installed size:
 22 MiB
 
-python3-3.12.10-r1 license:
+python3-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1902,16 +1902,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.10-r1 description:
+python3-pyc-3.12.11-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.10-r1 webpage:
+python3-pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.10-r1 installed size:
+python3-pyc-3.12.11-r0 installed size:
 0 B
 
-python3-pyc-3.12.10-r1 license:
+python3-pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1919,16 +1919,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.10-r1 description:
+python3-pycache-pyc0-3.12.11-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.10-r1 webpage:
+python3-pycache-pyc0-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.10-r1 installed size:
+python3-pycache-pyc0-3.12.11-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.10-r1 license:
+python3-pycache-pyc0-3.12.11-r0 license:
 PSF-2.0
 
 ```

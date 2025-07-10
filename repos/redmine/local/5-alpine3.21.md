@@ -1,10 +1,10 @@
-# `redmine:5.1.8-alpine3.21`
+# `redmine:5.1.9-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1742d94deaa684a9579f6aecd6073416ae16ea46ce675f0fb4d12e20128c4766`
-- Created: `2025-04-20T08:26:13Z`
-- Virtual Size: ~ 408.60 Mb  
+- Image ID: `sha256:aab474937682f71a1092d19903bc12d8d0684988993aa7b7d977243571d57d1c`
+- Created: `2025-07-07T22:00:32Z`
+- Virtual Size: ~ 409.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.8`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.8.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=50a30cd16c43d0ae64f256866c8cef4b0e9dd818d6feef489fa24507fbde3a7b`
+  - `REDMINE_VERSION=5.1.9`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.9.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=cc0ddafa6fe6f5192236a27cec64e3466023a12c92c1da4abb680248639f678c`
   - `RAILS_LOG_TO_STDOUT=true`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
@@ -457,16 +457,16 @@ GPL-3.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.04.0-r0 description:
+ghostscript-10.05.1-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.04.0-r0 webpage:
+ghostscript-10.05.1-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.04.0-r0 installed size:
-60 MiB
+ghostscript-10.05.1-r0 installed size:
+61 MiB
 
-ghostscript-10.04.0-r0 license:
+ghostscript-10.05.1-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -845,6 +845,23 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libice`
+
+```console
+libice-1.1.1-r6 description:
+X11 Inter-Client Exchange library
+
+libice-1.1.1-r6 webpage:
+https://xorg.freedesktop.org/
+
+libice-1.1.1-r6 installed size:
+86 KiB
+
+libice-1.1.1-r6 license:
+X11
+
+```
+
 ### `apk` package: `libidn2`
 
 ```console
@@ -984,16 +1001,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.4-r0 description:
+libpq-17.5-r0 description:
 PostgreSQL client library
 
-libpq-17.4-r0 webpage:
+libpq-17.5-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.4-r0 installed size:
+libpq-17.5-r0 installed size:
 322 KiB
 
-libpq-17.4-r0 license:
+libpq-17.5-r0 license:
 PostgreSQL
 
 ```
@@ -1046,6 +1063,23 @@ libsharpyuv-1.4.0-r0 installed size:
 
 libsharpyuv-1.4.0-r0 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `libsm`
+
+```console
+libsm-1.2.4-r4 description:
+X11 Session Management library
+
+libsm-1.2.4-r4 webpage:
+https://xorg.freedesktop.org/
+
+libsm-1.2.4-r4 installed size:
+33 KiB
+
+libsm-1.2.4-r4 license:
+MIT
 
 ```
 
@@ -1273,16 +1307,33 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r5 description:
+libxml2-2.13.4-r6 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r5 webpage:
+libxml2-2.13.4-r6 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r5 installed size:
+libxml2-2.13.4-r6 installed size:
 1054 KiB
 
-libxml2-2.13.4-r5 license:
+libxml2-2.13.4-r6 license:
+MIT
+
+```
+
+### `apk` package: `libxt`
+
+```console
+libxt-1.3.1-r0 description:
+X11 toolkit intrinsics library
+
+libxt-1.3.1-r0 webpage:
+https://xorg.freedesktop.org/
+
+libxt-1.3.1-r0 installed size:
+347 KiB
+
+libxt-1.3.1-r0 license:
 MIT
 
 ```
@@ -1800,16 +1851,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.10-r0 description:
+pyc-3.12.11-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.10-r0 webpage:
+pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.10-r0 installed size:
+pyc-3.12.11-r0 installed size:
 0 B
 
-pyc-3.12.10-r0 license:
+pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1817,16 +1868,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.10-r0 description:
+python3-3.12.11-r0 description:
 High-level scripting language
 
-python3-3.12.10-r0 webpage:
+python3-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-3.12.10-r0 installed size:
+python3-3.12.11-r0 installed size:
 22 MiB
 
-python3-3.12.10-r0 license:
+python3-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1834,16 +1885,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.10-r0 description:
+python3-pyc-3.12.11-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.10-r0 webpage:
+python3-pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.10-r0 installed size:
+python3-pyc-3.12.11-r0 installed size:
 0 B
 
-python3-pyc-3.12.10-r0 license:
+python3-pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1851,16 +1902,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.10-r0 description:
+python3-pycache-pyc0-3.12.11-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.10-r0 webpage:
+python3-pycache-pyc0-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.10-r0 installed size:
+python3-pycache-pyc0-3.12.11-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.10-r0 license:
+python3-pycache-pyc0-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1919,16 +1970,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r1 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r1 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r1 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r1 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```

@@ -1,10 +1,10 @@
-# `redmine:5.1.8`
+# `redmine:5.1.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8b9640e8b54f37790485f031b93bd1a5df82bec4892545474a55368ec6a4179`
-- Created: `2025-04-20T08:26:13Z`
-- Virtual Size: ~ 602.33 Mb  
+- Image ID: `sha256:21d6cc3e7c2632182ee1e2da1edd1d007180a338b6461b6068eb2b9f2f2ea445`
+- Created: `2025-07-07T22:00:32Z`
+- Virtual Size: ~ 602.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.8`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.8.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=50a30cd16c43d0ae64f256866c8cef4b0e9dd818d6feef489fa24507fbde3a7b`
+  - `REDMINE_VERSION=5.1.9`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.9.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=cc0ddafa6fe6f5192236a27cec64e3466023a12c92c1da4abb680248639f678c`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
