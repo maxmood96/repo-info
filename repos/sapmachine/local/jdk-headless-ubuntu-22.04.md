@@ -1,4 +1,4 @@
-# `sapmachine:24-jdk-headless-ubuntu-jammy`
+# `sapmachine:jdk-headless-ubuntu-jammy`
 
 ## Docker Metadata
 
@@ -635,14 +635,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.3.dsc' gnupg2_2.2.27-3ubuntu2.3.dsc 3726 SHA512:58082807a69bbf51b0ec944ef98fc82e17041000f84f58cd3f553ee5e1adb34c022661f3af748e65dc59e679ddd99cb2fa27c0f962b44eda51a11339588aed15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA512:cf336962116c9c08ac80b1299654b94948033ef51d6d5e7f54c2f07bbf7d92c7b0bddb606ceee2cdd837063f519b8d59af5a82816b840a0fc47d90c07b0e95ab
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.3.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.3.debian.tar.xz 75564 SHA512:6ebe8b037c375fa93358547dca58ecfca6d2fec31c6a3e2e5158b8275b468066680b06d94d70444683cb9f5bfef001750bd92be5e13d0ae518c8473bcdb63baa
-```
 
 ### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1.6`
 
