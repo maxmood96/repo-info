@@ -3809,7 +3809,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167589980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3d4d0a11d2cfe81f6616b28722f195d37d71daee989e2130691d97bb9aa80d3`  
-		Last Modified: Wed, 09 Jul 2025 21:15:07 GMT  
+		Last Modified: Thu, 10 Jul 2025 14:21:37 GMT  
 		Size: 238.2 MB (238245075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4459c50fbda5a18a5332b861b36d0db8dfafcf155d0996c6db78f7ee35dbee6`  
@@ -4704,7 +4704,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167589980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3d4d0a11d2cfe81f6616b28722f195d37d71daee989e2130691d97bb9aa80d3`  
-		Last Modified: Wed, 09 Jul 2025 21:15:07 GMT  
+		Last Modified: Thu, 10 Jul 2025 14:21:37 GMT  
 		Size: 238.2 MB (238245075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4459c50fbda5a18a5332b861b36d0db8dfafcf155d0996c6db78f7ee35dbee6`  
@@ -5599,7 +5599,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167589980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3d4d0a11d2cfe81f6616b28722f195d37d71daee989e2130691d97bb9aa80d3`  
-		Last Modified: Wed, 09 Jul 2025 21:15:07 GMT  
+		Last Modified: Thu, 10 Jul 2025 14:21:37 GMT  
 		Size: 238.2 MB (238245075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4459c50fbda5a18a5332b861b36d0db8dfafcf155d0996c6db78f7ee35dbee6`  
@@ -6494,7 +6494,7 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 167.6 MB (167589980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3d4d0a11d2cfe81f6616b28722f195d37d71daee989e2130691d97bb9aa80d3`  
-		Last Modified: Wed, 09 Jul 2025 21:15:07 GMT  
+		Last Modified: Thu, 10 Jul 2025 14:21:37 GMT  
 		Size: 238.2 MB (238245075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4459c50fbda5a18a5332b861b36d0db8dfafcf155d0996c6db78f7ee35dbee6`  
