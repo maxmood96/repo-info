@@ -1,10 +1,10 @@
-# `percona:psmdb-6.0.21`
+# `percona:psmdb-8.0.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1cb2e601f575e0b16994ca3d24a92af9cd705353b7638ca5b8ed4e50f35408e`
-- Created: `2025-04-22T10:21:47Z`
-- Virtual Size: ~ 693.21 Mb  
+- Image ID: `sha256:28cf8705a8d48642e95f97df55b7349a40404df99a010f707dbdc1d63abb74c8`
+- Created: `2025-07-07T10:50:23Z`
+- Virtual Size: ~ 802.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,11 +12,12 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=6.0.21-18`
+  - `PSMDB_VERSION=8.0.8-3`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=6.0.21-18.el9`
+  - `FULL_PERCONA_VERSION=8.0.8-3.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
-  - `PSMDB_REPO=release`
+  - `PSMDB_REPO=testing`
+  - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
   - `CALL_HOME_VERSION=0.1`
   - `GOSU_VERSION=1.11`
@@ -450,12 +451,6 @@ Licenses (from `rpm --query`): pubkey
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gpg-pubkey-8507efa5-5b02c2fb`
-
-Licenses (from `rpm --query`): pubkey
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `gpg-pubkey-8d8b756f-629e59ec`
 
 Licenses (from `rpm --query`): pubkey
 
@@ -1098,12 +1093,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-9.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-9.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1226,11 +1216,16 @@ $ dnf --quiet download --source --url npth-1.6-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/npth-1.6-8.el9.src.rpm
 ```
 
-### `rpm` package: `numactl-2.0.16-1.el9.x86_64`
+### `rpm` package: `numactl-2.0.19-1.el9.x86_64`
 
-Licenses (from `rpm --query`): GPLv2
+Licenses (from `rpm --query`): LGPL-2.1-only and GPL-2.0-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url numactl-2.0.19-1.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/numactl-2.0.19-1.el9.src.rpm
+```
 
 ### `rpm` package: `numactl-libs-2.0.19-1.el9.x86_64`
 
@@ -1387,19 +1382,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-6.0.21-18.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.8-3.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-6.0.21-18.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.8-3.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-6.0.21-18.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.8-3.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 

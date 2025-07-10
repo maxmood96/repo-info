@@ -1,27 +1,26 @@
-# `percona:8.0.42-33-centos`
+# `percona:psmdb-8.0.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c906c36d46106f3340f4aa4f20261a29fa9fcc6c0956fe920848ae880d629cce`
-- Created: `2025-05-19T11:07:08Z`
-- Virtual Size: ~ 1.53 Gb  
+- Image ID: `sha256:28cf8705a8d48642e95f97df55b7349a40404df99a010f707dbdc1d63abb74c8`
+- Created: `2025-07-07T10:50:23Z`
+- Virtual Size: ~ 802.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/docker-entrypoint.sh"]`
-- Command: `["mysqld"]`
+- Entrypoint: `["/entrypoint.sh"]`
+- Command: `["mongod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PS_VERSION=8.0.42-33.1`
-  - `MYSQL_SHELL_VERSION=8.0.42-1`
+  - `PSMDB_VERSION=8.0.8-3`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.42-33.1.el9`
-  - `FULL_MYSQL_SHELL_VERSION=8.0.42-1.el9`
-  - `PS_REPO=testing`
-  - `PS_TELEMETRY_VERSION=8.0.42-33-1`
+  - `FULL_PERCONA_VERSION=8.0.8-3.el9`
+  - `K8S_TOOLS_VERSION=0.5.0`
+  - `PSMDB_REPO=testing`
+  - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
-  - `KEY_RPM_DOWNLOAD_SHA256=fcf0eab4f05a1c0de6363ac4b707600a27a9d774e9b491059e59e6921b255a84`
   - `CALL_HOME_VERSION=0.1`
+  - `GOSU_VERSION=1.11`
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
@@ -180,6 +179,17 @@ $ dnf --quiet download --source --url curl-minimal-7.76.1-31.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-31.el9.src.rpm
 ```
 
+### `rpm` package: `cyrus-sasl-gssapi-2.1.27-21.el9.x86_64`
+
+Licenses (from `rpm --query`): BSD with advertising
+
+Source:
+
+```console
+$ dnf --quiet download --source --url cyrus-sasl-gssapi-2.1.27-21.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
+```
+
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-21.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
@@ -334,12 +344,6 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `gflags-2.2.2-9.el9.x86_64`
-
-Licenses (from `rpm --query`): BSD
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
 ### `rpm` package: `glib2-2.68.4-16.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
@@ -428,7 +432,7 @@ $ dnf --quiet download --source --url gobject-introspection-1.68.0-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gobject-introspection-1.68.0-11.el9.src.rpm
 ```
 
-### `rpm` package: `gpg-pubkey-3228467c-613798eb`
+### `rpm` package: `gpg-pubkey-2f86d6a1-5cf7cefb`
 
 Licenses (from `rpm --query`): pubkey
 
@@ -480,17 +484,6 @@ $ dnf --quiet download --source --url grep-3.6-5.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/grep-3.6-5.el9.src.rpm
 ```
 
-### `rpm` package: `groff-base-1.22.4-10.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv3+ and GFDL and BSD and MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url groff-base-1.22.4-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/groff-1.22.4-10.el9.src.rpm
-```
-
 ### `rpm` package: `gzip-1.12-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GFDL
@@ -502,22 +495,16 @@ $ dnf --quiet download --source --url gzip-1.12-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gzip-1.12-1.el9.src.rpm
 ```
 
-### `rpm` package: `hostname-3.23-6.el9.x86_64`
+### `rpm` package: `jq-1.6-15.el9.x86_64`
 
-Licenses (from `rpm --query`): GPLv2+
+Licenses (from `rpm --query`): MIT and ASL 2.0 and CC-BY and GPLv3
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url hostname-3.23-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/h/hostname-3.23-6.el9.src.rpm
+$ dnf --quiet download --source --url jq-1.6-15.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/j/jq-1.6-15.el9.src.rpm
 ```
-
-### `rpm` package: `jemalloc-5.2.1-2.el9.x86_64`
-
-Licenses (from `rpm --query`): BSD
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
 
@@ -618,17 +605,6 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libaio-0.3.111-13.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libaio-0.3.111-13.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libaio-0.3.111-13.el9.src.rpm
-```
-
 ### `rpm` package: `libarchive-3.5.3-5.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD
@@ -649,17 +625,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url libassuan-2.5.5-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libassuan-2.5.5-3.el9.src.rpm
-```
-
-### `rpm` package: `libatomic-11.5.0-5.el9_5.x86_64`
-
-Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libatomic-11.5.0-5.el9_5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-5.el9_5.src.rpm
 ```
 
 ### `rpm` package: `libattr-2.5.1-3.el9.x86_64`
@@ -704,17 +669,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url libcap-ng-0.8.2-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libcap-ng-0.8.2-7.el9.src.rpm
-```
-
-### `rpm` package: `libcbor-0.7.0-5.el9.x86_64`
-
-Licenses (from `rpm --query`): MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libcbor-0.7.0-5.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libcbor-0.7.0-5.el9.src.rpm
 ```
 
 ### `rpm` package: `libcom_err-1.46.5-7.el9.x86_64`
@@ -838,17 +792,6 @@ $ dnf --quiet download --source --url libgpg-error-1.42-5.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libgpg-error-1.42-5.el9.src.rpm
 ```
 
-### `rpm` package: `libicu-67.1-9.el9.x86_64`
-
-Licenses (from `rpm --query`): MIT and UCD and Public Domain
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libicu-67.1-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/i/icu-67.1-9.el9.src.rpm
-```
-
 ### `rpm` package: `libidn2-2.3.0-7.el9.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or LGPLv3+) and GPLv3+
@@ -913,17 +856,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpeas-1.30.0-4.el9.src.rpm
-```
-
-### `rpm` package: `libpkgconf-1.7.3-10.el9.x86_64`
-
-Licenses (from `rpm --query`): ISC
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libpkgconf-1.7.3-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pkgconf-1.7.3-10.el9.src.rpm
 ```
 
 ### `rpm` package: `libpwquality-1.4.4-8.el9.x86_64`
@@ -1078,17 +1010,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url libtasn1-4.16.0-9.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libtasn1-4.16.0-9.el9.src.rpm
-```
-
-### `rpm` package: `libtirpc-1.3.3-9.el9.x86_64`
-
-Licenses (from `rpm --query`): SISSL and BSD
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libtirpc-1.3.3-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libtirpc-1.3.3-9.el9.src.rpm
 ```
 
 ### `rpm` package: `libtool-ltdl-2.4.6-46.el9.x86_64`
@@ -1251,17 +1172,6 @@ $ dnf --quiet download --source --url mpfr-4.1.0-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/m/mpfr-4.1.0-7.el9.src.rpm
 ```
 
-### `rpm` package: `ncurses-6.2-10.20210508.el9.x86_64`
-
-Licenses (from `rpm --query`): MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url ncurses-6.2-10.20210508.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.2-10.20210508.el9.src.rpm
-```
-
 ### `rpm` package: `ncurses-base-6.2-10.20210508.el9.noarch`
 
 Licenses (from `rpm --query`): MIT
@@ -1282,17 +1192,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url ncurses-libs-6.2-10.20210508.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.2-10.20210508.el9.src.rpm
-```
-
-### `rpm` package: `net-tools-2.0-0.64.20160912git.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url net-tools-2.0-0.64.20160912git.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/net-tools-2.0-0.64.20160912git.el9.src.rpm
 ```
 
 ### `rpm` package: `nettle-3.10.1-1.el9.x86_64`
@@ -1317,6 +1216,17 @@ $ dnf --quiet download --source --url npth-1.6-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/npth-1.6-8.el9.src.rpm
 ```
 
+### `rpm` package: `numactl-2.0.19-1.el9.x86_64`
+
+Licenses (from `rpm --query`): LGPL-2.1-only and GPL-2.0-only
+
+Source:
+
+```console
+$ dnf --quiet download --source --url numactl-2.0.19-1.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/numactl-2.0.19-1.el9.src.rpm
+```
+
 ### `rpm` package: `numactl-libs-2.0.19-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-only and GPL-2.0-only
@@ -1326,6 +1236,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url numactl-libs-2.0.19-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/numactl-2.0.19-1.el9.src.rpm
+```
+
+### `rpm` package: `oniguruma-6.9.6-1.el9.5.x86_64`
+
+Licenses (from `rpm --query`): BSD
+
+Source:
+
+```console
+$ dnf --quiet download --source --url oniguruma-6.9.6-1.el9.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/o/oniguruma-6.9.6-1.el9.5.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.6.8-4.el9.x86_64`
@@ -1347,17 +1268,6 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssl-3.2.2-6.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.2.2-6.el9_5.1.src.rpm
-```
-
-### `rpm` package: `openssl-devel-3.2.2-6.el9_5.1.x86_64`
-
-Licenses (from `rpm --query`): ASL 2.0
-
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-devel-3.2.2-6.el9_5.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.2.2-6.el9_5.1.src.rpm
 ```
 
@@ -1460,15 +1370,9 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-icu-data-files-8.0.42-33.1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.5.1-1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-mysql-shell-8.0.42-1.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2
+Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -1478,33 +1382,21 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-client-8.0.42-33.1.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.8-3.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-server-devel-8.0.42-33.1.el9.x86_64`
-
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-rocksdb-8.0.42-33.1.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.8-3.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-server-server-8.0.42-33.1.el9.x86_64`
-
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-shared-8.0.42-33.1.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.8-3.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -1513,666 +1405,6 @@ Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affil
 Licenses (from `rpm --query`): GPLv3
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `perl-AutoLoader-5.74-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-AutoLoader-5.74-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-B-1.80-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-B-1.80-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Carp-1.50-460.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Carp-1.50-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Carp-1.50-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-Class-Struct-0.66-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Class-Struct-0.66-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Data-Dumper-2.174-462.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Data-Dumper-2.174-462.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Data-Dumper-2.174-462.el9.src.rpm
-```
-
-### `rpm` package: `perl-Digest-1.19-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Digest-1.19-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Digest-1.19-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Digest-MD5-2.58-4.el9.x86_64`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and RSA
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Digest-MD5-2.58-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Digest-MD5-2.58-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Encode-3.08-462.el9.x86_64`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and Artistic 2.0 and UCD
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Encode-3.08-462.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Encode-3.08-462.el9.src.rpm
-```
-
-### `rpm` package: `perl-Errno-1.30-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Errno-1.30-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Exporter-5.74-461.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Exporter-5.74-461.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Exporter-5.74-461.el9.src.rpm
-```
-
-### `rpm` package: `perl-Fcntl-1.13-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Fcntl-1.13-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-File-Basename-2.85-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-File-Basename-2.85-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-File-Path-2.18-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-File-Path-2.18-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-File-Path-2.18-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-File-Temp-0.231.100-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-File-Temp-0.231.100-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-File-Temp-0.231.100-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-File-stat-1.09-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-File-stat-1.09-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-FileHandle-2.03-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-FileHandle-2.03-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Getopt-Long-2.52-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPLv2+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Getopt-Long-2.52-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Getopt-Long-2.52-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Getopt-Std-1.12-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Getopt-Std-1.12-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-HTTP-Tiny-0.076-462.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-HTTP-Tiny-0.076-462.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-HTTP-Tiny-0.076-462.el9.src.rpm
-```
-
-### `rpm` package: `perl-IO-1.43-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-IO-1.43-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-IO-Socket-IP-0.41-5.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-IO-Socket-IP-0.41-5.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-IO-Socket-IP-0.41-5.el9.src.rpm
-```
-
-### `rpm` package: `perl-IO-Socket-SSL-2.073-2.el9.noarch`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and MPLv2.0
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-IO-Socket-SSL-2.073-2.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-IO-Socket-SSL-2.073-2.el9.src.rpm
-```
-
-### `rpm` package: `perl-IPC-Open3-1.21-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-IPC-Open3-1.21-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-MIME-Base64-3.16-4.el9.x86_64`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-MIME-Base64-3.16-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-MIME-Base64-3.16-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Mozilla-CA-20200520-6.el9.noarch`
-
-Licenses (from `rpm --query`): MPLv2.0
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Mozilla-CA-20200520-6.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Mozilla-CA-20200520-6.el9.src.rpm
-```
-
-### `rpm` package: `perl-NDBM_File-1.15-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-NDBM_File-1.15-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Net-SSLeay-1.94-1.el9.x86_64`
-
-Licenses (from `rpm --query`): Artistic-2.0
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Net-SSLeay-1.94-1.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Net-SSLeay-1.94-1.el9.src.rpm
-```
-
-### `rpm` package: `perl-POSIX-1.94-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-POSIX-1.94-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-PathTools-3.78-461.el9.x86_64`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and BSD
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-PathTools-3.78-461.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-PathTools-3.78-461.el9.src.rpm
-```
-
-### `rpm` package: `perl-Pod-Escapes-1.07-460.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Pod-Escapes-1.07-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Pod-Escapes-1.07-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-Pod-Perldoc-3.28.01-461.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Pod-Perldoc-3.28.01-461.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Pod-Perldoc-3.28.01-461.el9.src.rpm
-```
-
-### `rpm` package: `perl-Pod-Simple-3.42-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Pod-Simple-3.42-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Pod-Simple-3.42-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Pod-Usage-2.01-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Pod-Usage-2.01-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Pod-Usage-2.01-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Scalar-List-Utils-1.56-462.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Scalar-List-Utils-1.56-462.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Scalar-List-Utils-1.56-462.el9.src.rpm
-```
-
-### `rpm` package: `perl-SelectSaver-1.02-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-SelectSaver-1.02-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Socket-2.031-4.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Socket-2.031-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Socket-2.031-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-Storable-3.21-460.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Storable-3.21-460.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Storable-3.21-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-Symbol-1.08-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Symbol-1.08-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-Term-ANSIColor-5.01-461.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Term-ANSIColor-5.01-461.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Term-ANSIColor-5.01-461.el9.src.rpm
-```
-
-### `rpm` package: `perl-Term-Cap-1.17-460.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Term-Cap-1.17-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Term-Cap-1.17-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-Text-ParseWords-3.30-460.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Text-ParseWords-3.30-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Text-ParseWords-3.30-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-Text-Tabs+Wrap-2013.0523-460.el9.noarch`
-
-Licenses (from `rpm --query`): TTWL
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Text-Tabs+Wrap-2013.0523-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Text-Tabs+Wrap-2013.0523-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-Time-Local-1.300-7.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Time-Local-1.300-7.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Time-Local-1.300-7.el9.src.rpm
-```
-
-### `rpm` package: `perl-URI-5.09-3.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-URI-5.09-3.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-URI-5.09-3.el9.src.rpm
-```
-
-### `rpm` package: `perl-base-2.27-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-base-2.27-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-constant-1.33-461.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-constant-1.33-461.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-constant-1.33-461.el9.src.rpm
-```
-
-### `rpm` package: `perl-if-0.60.800-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-if-0.60.800-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-interpreter-5.32.1-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-interpreter-5.32.1-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-libnet-3.13-4.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-libnet-3.13-4.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-libnet-3.13-4.el9.src.rpm
-```
-
-### `rpm` package: `perl-libs-5.32.1-481.el9.x86_64`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and BSD and HSRL and MIT and UCD and Public domain
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-libs-5.32.1-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-mro-1.23-481.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-mro-1.23-481.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-overload-1.31-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-overload-1.31-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-overloading-0.02-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-overloading-0.02-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-parent-0.238-460.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-parent-0.238-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-parent-0.238-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-podlators-4.14-460.el9.noarch`
-
-Licenses (from `rpm --query`): (GPL+ or Artistic) and FSFAP
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-podlators-4.14-460.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-podlators-4.14-460.el9.src.rpm
-```
-
-### `rpm` package: `perl-subs-1.03-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-subs-1.03-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `perl-vars-1.05-481.el9.noarch`
-
-Licenses (from `rpm --query`): GPL+ or Artistic
-
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-vars-1.05-481.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-5.32.1-481.el9.src.rpm
-```
-
-### `rpm` package: `pkgconf-1.7.3-10.el9.x86_64`
-
-Licenses (from `rpm --query`): ISC
-
-Source:
-
-```console
-$ dnf --quiet download --source --url pkgconf-1.7.3-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pkgconf-1.7.3-10.el9.src.rpm
-```
-
-### `rpm` package: `pkgconf-m4-1.7.3-10.el9.noarch`
-
-Licenses (from `rpm --query`): GPLv2+ with exceptions
-
-Source:
-
-```console
-$ dnf --quiet download --source --url pkgconf-m4-1.7.3-10.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pkgconf-1.7.3-10.el9.src.rpm
-```
-
-### `rpm` package: `pkgconf-pkg-config-1.7.3-10.el9.x86_64`
-
-Licenses (from `rpm --query`): ISC
-
-Source:
-
-```console
-$ dnf --quiet download --source --url pkgconf-pkg-config-1.7.3-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pkgconf-1.7.3-10.el9.src.rpm
-```
 
 ### `rpm` package: `policycoreutils-3.6-2.1.el9.x86_64`
 
@@ -2392,17 +1624,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url util-linux-core-2.37.4-21.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9.src.rpm
-```
-
-### `rpm` package: `which-2.21-29.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv3
-
-Source:
-
-```console
-$ dnf --quiet download --source --url which-2.21-29.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/w/which-2.21-29.el9.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
