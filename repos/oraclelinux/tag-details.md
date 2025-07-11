@@ -2,6 +2,8 @@
 
 # Tags of `oraclelinux`
 
+-	[`oraclelinux:10`](#oraclelinux10)
+-	[`oraclelinux:10-slim`](#oraclelinux10-slim)
 -	[`oraclelinux:7`](#oraclelinux7)
 -	[`oraclelinux:7-slim`](#oraclelinux7-slim)
 -	[`oraclelinux:7-slim-fips`](#oraclelinux7-slim-fips)
@@ -13,6 +15,14 @@
 -	[`oraclelinux:9`](#oraclelinux9)
 -	[`oraclelinux:9-slim`](#oraclelinux9-slim)
 -	[`oraclelinux:9-slim-fips`](#oraclelinux9-slim-fips)
+
+## `oraclelinux:10`
+
+**does not exist** (yet?)
+
+## `oraclelinux:10-slim`
+
+**does not exist** (yet?)
 
 ## `oraclelinux:7`
 
