@@ -3507,10 +3507,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mysql-8.4=8.4.5-0ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5-0ubuntu0.1.dsc' mysql-8.4_8.4.5-0ubuntu0.1.dsc 3739 SHA512:d06c0b1a9834281664fad564223c0e3909b3a24b4529daf24b1b4fe0ad2e58377a4844695dcb1569843ec706b3cafc1c4cbc262cda6afda76e8876e4b61118fa
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5.orig.tar.gz' mysql-8.4_8.4.5.orig.tar.gz 478788925 SHA512:d5353bbc618fb6ec3658773d834942f5bfd11f6f5d3fb4778aa684b970a6143d5e96919ba2311bfb00faf3882da307c62b9370aca8f41136ec129d5fa06bcf5c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5.orig.tar.gz.asc' mysql-8.4_8.4.5.orig.tar.gz.asc 833 SHA512:b7a3044960947e6beea5d44112517d76a089e9c983a356228971c436700083d2724639e03b3714d5bd0bd5e22b25949b750015b07982333e7720402e7133cfa4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5-0ubuntu0.1.debian.tar.xz' mysql-8.4_8.4.5-0ubuntu0.1.debian.tar.xz 133772 SHA512:7261af1eb3cfbacf580f49551b96cb77211c23a78aa5b23c9128d28518eadacbda090f927054ed6281bdf8295c192d724ae8c685685d94eecb59f81c2aa8c7aa
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5-0ubuntu0.1.dsc' mysql-8.4_8.4.5-0ubuntu0.1.dsc 3739 SHA512:d06c0b1a9834281664fad564223c0e3909b3a24b4529daf24b1b4fe0ad2e58377a4844695dcb1569843ec706b3cafc1c4cbc262cda6afda76e8876e4b61118fa
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5.orig.tar.gz' mysql-8.4_8.4.5.orig.tar.gz 478788925 SHA512:d5353bbc618fb6ec3658773d834942f5bfd11f6f5d3fb4778aa684b970a6143d5e96919ba2311bfb00faf3882da307c62b9370aca8f41136ec129d5fa06bcf5c
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5.orig.tar.gz.asc' mysql-8.4_8.4.5.orig.tar.gz.asc 833 SHA512:b7a3044960947e6beea5d44112517d76a089e9c983a356228971c436700083d2724639e03b3714d5bd0bd5e22b25949b750015b07982333e7720402e7133cfa4
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.5-0ubuntu0.1.debian.tar.xz' mysql-8.4_8.4.5-0ubuntu0.1.debian.tar.xz 133772 SHA512:7261af1eb3cfbacf580f49551b96cb77211c23a78aa5b23c9128d28518eadacbda090f927054ed6281bdf8295c192d724ae8c685685d94eecb59f81c2aa8c7aa
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu1`

@@ -1218,14 +1218,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.43.0-1ubuntu7.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2.dsc' git_2.43.0-1ubuntu7.2.dsc 2927 SHA512:139446143bbeac8cdf539fd606e9dd7671c96f63dcd28252e9d8a723df08c302bccd8cafb87b00adcce7fd5d320ae077afd9ebd23b15dc07629bd4dc8a4dec80
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA512:d0c1694ae23ff7d523e617b98d7c9a9753a2ee58f92c21b67a192d1c57398a62ff9c1a34558ae31af8dc8d95122c219f39f654e99a3b4e7cfc3dd07be9e13203
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2.debian.tar.xz' git_2.43.0-1ubuntu7.2.debian.tar.xz 777944 SHA512:723fe87a8e9cccbd66e713207bdada787463d978986efacee41eb20aa5a0f261526e9ce000231733b3d36dcde25016b529061d5f6e6ee2d62141f207087ee39c
-```
 
 ### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.4`
 
@@ -3447,10 +3442,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mysql-8.0=8.0.42-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.24.04.1.dsc' mysql-8.0_8.0.42-0ubuntu0.24.04.1.dsc 3866 SHA512:9aa8156cf041492b063af293f003fe6df8930729096f3f564088d7d01ff7b45bb35a7f670de886a7fdf6b9bfb801b2ad434f6800fd70ed6da9448de29344477b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz' mysql-8.0_8.0.42.orig.tar.gz 492301593 SHA512:66776b5a1be603f215d4b227d395e72476bde76fdc0ba5ffdcfcb851a8261f1428c23c8abf1edca616765ee8254354e9092eaadde5ed43e7e2daa2ac265a0b23
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz.asc' mysql-8.0_8.0.42.orig.tar.gz.asc 833 SHA512:71184a76ab35f27bd3a2e4c43bdd30f4ce515340c8fe50fdd2304b2f977130a79c145c71bb3d4ea8efe8759b2d4fa0dd7f10dc819295b755c81d9c8cd3a078ec
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.24.04.1.debian.tar.xz' mysql-8.0_8.0.42-0ubuntu0.24.04.1.debian.tar.xz 146036 SHA512:5bd7dea398c4a768d5e5ae3814795013c48bb284c7fdda4dc06d5bb037dedb624e163183d898c55ad8f9f05629f7496e3992228bc0d091a3240fcf51a36ab47d
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.24.04.1.dsc' mysql-8.0_8.0.42-0ubuntu0.24.04.1.dsc 3866 SHA512:9aa8156cf041492b063af293f003fe6df8930729096f3f564088d7d01ff7b45bb35a7f670de886a7fdf6b9bfb801b2ad434f6800fd70ed6da9448de29344477b
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz' mysql-8.0_8.0.42.orig.tar.gz 492301593 SHA512:66776b5a1be603f215d4b227d395e72476bde76fdc0ba5ffdcfcb851a8261f1428c23c8abf1edca616765ee8254354e9092eaadde5ed43e7e2daa2ac265a0b23
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz.asc' mysql-8.0_8.0.42.orig.tar.gz.asc 833 SHA512:71184a76ab35f27bd3a2e4c43bdd30f4ce515340c8fe50fdd2304b2f977130a79c145c71bb3d4ea8efe8759b2d4fa0dd7f10dc819295b755c81d9c8cd3a078ec
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.24.04.1.debian.tar.xz' mysql-8.0_8.0.42-0ubuntu0.24.04.1.debian.tar.xz 146036 SHA512:5bd7dea398c4a768d5e5ae3814795013c48bb284c7fdda4dc06d5bb037dedb624e163183d898c55ad8f9f05629f7496e3992228bc0d091a3240fcf51a36ab47d
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.1.0build1`
