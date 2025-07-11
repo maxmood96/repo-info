@@ -2253,14 +2253,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.12
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.12.dsc' git_2.34.1-1ubuntu1.12.dsc 2931 SHA512:e53eb08ba54de2d5fd1e5b710f3153f64b2dadebd51370edbf60abc139074ecbab76907305cd42d923d33684d1bccb7e9a5f145ddb35e0347bf5adfdf341a87c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.12.debian.tar.xz' git_2.34.1-1ubuntu1.12.debian.tar.xz 769996 SHA512:21095936b237e018ebd892c11b661a59670f15b21bb5c01a5bb7cfd3f52dd9c6214b51f8e554b27ec5bfad570811a861af42af59cacd21cffe3ee1204f5eacad
-```
 
 ### `dpkg` source package: `gl2ps=1.4.2+dfsg1-2`
 
@@ -6279,10 +6274,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mysql-8.0=8.0.42-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.42-0ubuntu0.22.04.1.dsc 3821 SHA512:b5151c3be025ad272df8a65b7b54a03885ca08671cad99236080f5e212d0d606baa474696e7e822ba3cb8b1c22d7797aab63bd7a32277b581d023496c77007dc
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz' mysql-8.0_8.0.42.orig.tar.gz 492301593 SHA512:66776b5a1be603f215d4b227d395e72476bde76fdc0ba5ffdcfcb851a8261f1428c23c8abf1edca616765ee8254354e9092eaadde5ed43e7e2daa2ac265a0b23
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz.asc' mysql-8.0_8.0.42.orig.tar.gz.asc 833 SHA512:71184a76ab35f27bd3a2e4c43bdd30f4ce515340c8fe50fdd2304b2f977130a79c145c71bb3d4ea8efe8759b2d4fa0dd7f10dc819295b755c81d9c8cd3a078ec
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.42-0ubuntu0.22.04.1.debian.tar.xz 162648 SHA512:ee72dee570d5d0ca9c6fba8c47bc4e57fa15ce312add5972ad6b3bf3440e5112c15cb77fd855280a183c8da6c6c6b3056f20cf6988dbba8f6b659645d2d402b9
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.42-0ubuntu0.22.04.1.dsc 3821 SHA512:b5151c3be025ad272df8a65b7b54a03885ca08671cad99236080f5e212d0d606baa474696e7e822ba3cb8b1c22d7797aab63bd7a32277b581d023496c77007dc
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz' mysql-8.0_8.0.42.orig.tar.gz 492301593 SHA512:66776b5a1be603f215d4b227d395e72476bde76fdc0ba5ffdcfcb851a8261f1428c23c8abf1edca616765ee8254354e9092eaadde5ed43e7e2daa2ac265a0b23
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42.orig.tar.gz.asc' mysql-8.0_8.0.42.orig.tar.gz.asc 833 SHA512:71184a76ab35f27bd3a2e4c43bdd30f4ce515340c8fe50fdd2304b2f977130a79c145c71bb3d4ea8efe8759b2d4fa0dd7f10dc819295b755c81d9c8cd3a078ec
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.42-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.42-0ubuntu0.22.04.1.debian.tar.xz 162648 SHA512:ee72dee570d5d0ca9c6fba8c47bc4e57fa15ce312add5972ad6b3bf3440e5112c15cb77fd855280a183c8da6c6c6b3056f20cf6988dbba8f6b659645d2d402b9
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
@@ -7542,14 +7537,9 @@ Licenses: (parsed from: `/usr/share/doc/libprotobuf23/copyright`)
 - `GPLWithACException`
 - `Public-Domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris protobuf=3.12.4-1ubuntu7.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.12.4-1ubuntu7.22.04.2.dsc' protobuf_3.12.4-1ubuntu7.22.04.2.dsc 2913 SHA512:373bc749d09ca0f869d8e5e237b551b6973ab9914b6dc8a09fe7cfdf80e88844b889ff24d003a1d1f6b9ad152caf49ac369ae5a585fca7799070d5558651d352
-'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.12.4.orig.tar.gz' protobuf_3.12.4.orig.tar.gz 5310348 SHA512:c5d24502b9a6be0a606a19213186fe462e0de6830547003636f0897781f36d0bd7e4e7d9689d96390a0399ce04b6438cda3a0fe6f97f0feb700a110e90beef0c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.12.4-1ubuntu7.22.04.2.debian.tar.xz' protobuf_3.12.4-1ubuntu7.22.04.2.debian.tar.xz 47220 SHA512:f4d25f995440453578ac513bde17224704b493b71364d589d9cf3570a2975d7c02fd5919fec83bd2c928d7d04b7e2fd3b7788f38be66b308c75dd6afb022f9c3
-```
 
 ### `dpkg` source package: `pybind11=2.9.1-2`
 

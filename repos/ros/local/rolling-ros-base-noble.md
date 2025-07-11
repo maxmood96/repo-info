@@ -1413,14 +1413,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.43.0-1ubuntu7.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2.dsc' git_2.43.0-1ubuntu7.2.dsc 2927 SHA512:139446143bbeac8cdf539fd606e9dd7671c96f63dcd28252e9d8a723df08c302bccd8cafb87b00adcce7fd5d320ae077afd9ebd23b15dc07629bd4dc8a4dec80
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA512:d0c1694ae23ff7d523e617b98d7c9a9753a2ee58f92c21b67a192d1c57398a62ff9c1a34558ae31af8dc8d95122c219f39f654e99a3b4e7cfc3dd07be9e13203
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2.debian.tar.xz' git_2.43.0-1ubuntu7.2.debian.tar.xz 777944 SHA512:723fe87a8e9cccbd66e713207bdada787463d978986efacee41eb20aa5a0f261526e9ce000231733b3d36dcde25016b529061d5f6e6ee2d62141f207087ee39c
-```
 
 ### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.4`
 
