@@ -1,7 +1,7 @@
 ## `nextcloud:stable-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:85b223e81f87ed79b0974532f694e2297e3ab372c6b858fe1848b3955747b08a
+$ docker pull nextcloud@sha256:736d5b54a81767be9f4e1933d737085412ee8c6da2e7219012acb7fb2ba0079f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,92 +26,92 @@ $ docker pull nextcloud@sha256:85b223e81f87ed79b0974532f694e2297e3ab372c6b858fe1
 ### `nextcloud:stable-fpm` - linux; amd64
 
 ```console
-$ docker pull nextcloud@sha256:f9bd50df5d66ae891e9f5a5d82f655c32246c4b159c58f5d8f5915dfb07d1c37
+$ docker pull nextcloud@sha256:01a4f5611dd1a5192b74110b2477a43c700eb37854caf270ca54e1ce2400f82d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **463.4 MB (463415366 bytes)**  
+-	Total Size: **464.1 MB (464080789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d742c91755743ad51c037b9783fcbb0b2205fc83775502a0e45c318276b9b3b3`
+-	Image ID: `sha256:2e45cfebae5d18ec7557791c972c86bb57c89948dc009b96b9c655eafb8fabb5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -164,140 +164,140 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 03 Jul 2025 23:03:33 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12bedcec4d3044733b6972d012719133333a9ae2e66ee4436c31e1b3c3c22bae`  
-		Last Modified: Thu, 03 Jul 2025 23:21:20 GMT  
-		Size: 22.9 MB (22905701 bytes)  
+	-	`sha256:acd012036ccafd7145a23343d28c3a0c60a24fcb9a81e6251722333db57c6999`  
+		Last Modified: Fri, 11 Jul 2025 22:55:47 GMT  
+		Size: 22.9 MB (22905579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1721bb422369b23f68878ef1edc05c09044cee2e1b84c65ce19605d9852f85f6`  
-		Last Modified: Thu, 03 Jul 2025 23:21:16 GMT  
-		Size: 21.1 MB (21133169 bytes)  
+	-	`sha256:fa115168ae5819edd692e2861d2ef19854d5e6e2e978ca97b1bd0081548745b4`  
+		Last Modified: Fri, 11 Jul 2025 22:55:47 GMT  
+		Size: 21.1 MB (21133060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9169095fcef30425c56b1440e0906a8de79aef701846708147da546014baa786`  
-		Last Modified: Thu, 03 Jul 2025 23:21:09 GMT  
-		Size: 792.0 B  
+	-	`sha256:c07cf4726fd1b86aa018b7a2421f2fb612d59b5877cded3ee943c9bafbeeb732`  
+		Last Modified: Fri, 11 Jul 2025 22:55:44 GMT  
+		Size: 798.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9e7f213e6da1779684d6ab428a69f80b622df0a9521dcaf9d1cb0a4e6cec118`  
-		Last Modified: Fri, 04 Jul 2025 00:31:57 GMT  
-		Size: 246.3 MB (246279499 bytes)  
+	-	`sha256:45bc523df24c90a077582c09353fa9fbf88a0388567819b035e97980703c77e4`  
+		Last Modified: Fri, 11 Jul 2025 23:06:34 GMT  
+		Size: 246.9 MB (246945143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cb1aaaa099c879a5edd67908a8820fa91a0b79cdc64ab1821def1b4740cfd9d`  
-		Last Modified: Thu, 03 Jul 2025 23:21:10 GMT  
-		Size: 4.0 KB (4046 bytes)  
+	-	`sha256:9f805c9088a6af24c6b426e50fc5035df6ff70b824443bc0a3aa85a9671de40d`  
+		Last Modified: Fri, 11 Jul 2025 22:55:45 GMT  
+		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac92736008704b704f0933fb9573edc2f96005c52f3525394c2bba0b3658be15`  
-		Last Modified: Thu, 03 Jul 2025 23:21:12 GMT  
-		Size: 2.4 KB (2356 bytes)  
+	-	`sha256:a44552eb76d02aff1e2c18ce99aea64fde64a25331844f4bb1da16b37f787fc0`  
+		Last Modified: Fri, 11 Jul 2025 22:55:45 GMT  
+		Size: 2.4 KB (2359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:a559209fd7046007b7f2a5b3869bd21102ecad6e968d7502b14645939f1b9427
+$ docker pull nextcloud@sha256:be5e74f45f55f646f2b215b1411e6cff0bbc57d352a02a9d4140fd83b2e6eb9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.1 KB (47123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65c8ccbcf3b257c61adab48cc1591c1633fa8f3cab2e33b8686e44bb1294568a`
+-	Image ID: `sha256:ff04474143cf7cd24058163a9eac7000a82341041bb2f882ac562d1049df1999`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6890e8fbc97308e1d1333c788225bbe64a0db672789a1bb4b7acd54274670dfc`  
-		Last Modified: Fri, 04 Jul 2025 02:51:53 GMT  
+	-	`sha256:5b33ab483fb5587b9bc1d6bee6aadf30b1613e59c529c4d170951ae302439e66`  
+		Last Modified: Fri, 11 Jul 2025 23:52:20 GMT  
 		Size: 47.1 KB (47123 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull nextcloud@sha256:486890ec8d83d5ceea05228eee572a77566956cb23ad14194564e6d7767957c3
+$ docker pull nextcloud@sha256:4d37f88025c4cb66f881bd40c62df92e7653d61f67b0ace7f174ad92de3424a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **432.8 MB (432807310 bytes)**  
+-	Total Size: **433.5 MB (433473485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ba224092520211e4dc393f5573e96909a720d6b8baa24f8d06ea5c52b24abcc`
+-	Image ID: `sha256:7beeb3b5ccce19e9fff2ba95951ffa030154b776692d23276c6ef4147e481f7f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -362,128 +362,128 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 04 Jul 2025 02:11:08 GMT  
 		Size: 789.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:453f1b4cef49812dc6a910eb254f1977b42d55d387331f0bb945d1a3c50668df`  
-		Last Modified: Fri, 04 Jul 2025 05:52:20 GMT  
-		Size: 246.3 MB (246276946 bytes)  
+	-	`sha256:1ef8febeba6e948cdfd737ec3573a881cb293d32cf36944e07550d8688d8b7e0`  
+		Last Modified: Fri, 11 Jul 2025 23:53:09 GMT  
+		Size: 246.9 MB (246943121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35dde6bef025f98afa7aae82d3cb7fd61484a2f7a81c57ac61103f3642728b5c`  
-		Last Modified: Fri, 04 Jul 2025 02:19:01 GMT  
-		Size: 4.0 KB (4047 bytes)  
+	-	`sha256:a710fca5cc16dfd5094f583a03281c4516df2a43541a4e4c0767c5c403a4eafc`  
+		Last Modified: Fri, 11 Jul 2025 22:59:27 GMT  
+		Size: 4.0 KB (4046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac5973824c277fa8ef574a7016087c8a028d402b0a2d59ab566153db79db3106`  
-		Last Modified: Fri, 04 Jul 2025 02:19:01 GMT  
-		Size: 2.4 KB (2357 bytes)  
+	-	`sha256:8e57896a27fe2790b3c9e9ac34f8115a32ac4d0d92add476ac2fd2a05495050b`  
+		Last Modified: Fri, 11 Jul 2025 22:59:27 GMT  
+		Size: 2.4 KB (2358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:7c974f3e463f918a393b9052935e48535d61e8c0904c22b9ab68cf26804dd7fb
+$ docker pull nextcloud@sha256:1eb4e37b4eadf8d5ce6c66b83802df56b97607a3d21a6eaca3b2f80059e3c4e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.2 KB (47247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:112d92c6c24c8412283df31a02af8862ae35d2319df06beb6d5285f45bb39b9d`
+-	Image ID: `sha256:9400a584b873b4e171e9f7c82f901a202323bb726ed8be09f19ad99c89523a69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2c11cf1db7fce1a451d8776915a8efbd2e360313a820c1bc1440e1c783b0afac`  
-		Last Modified: Fri, 04 Jul 2025 05:51:52 GMT  
+	-	`sha256:e7adb00a780cf07925739f780d59f5bcfa229bf1ad3d03640ceff5d9ffef8dbf`  
+		Last Modified: Fri, 11 Jul 2025 23:52:24 GMT  
 		Size: 47.2 KB (47247 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:e8e99e2b796d56bafde155a9afde093d4b3bdb65de928050d6c2d95115f497a0
+$ docker pull nextcloud@sha256:9aa7130b256df0f0fa4176b4b322f17de8412510b49895633111bd264ffd1656
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **421.8 MB (421798075 bytes)**  
+-	Total Size: **422.5 MB (422463568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:073a076878b2165841785faff660ebe7a369080c1b83114c6c1f9c2eb4ee8c6b`
+-	Image ID: `sha256:c8e873e18abe27a288865d8e14199b9fd3bbd781ee5b8d5486a98f8a396565da`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -536,140 +536,140 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 04 Jul 2025 00:31:12 GMT  
 		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d14a51204a108b40754e3211b7e92f8cc0ba158680d39a248052785d25294969`  
-		Last Modified: Fri, 04 Jul 2025 05:01:11 GMT  
-		Size: 18.2 MB (18231918 bytes)  
+	-	`sha256:3be768bbcc40296db03abb7c179d2d1edd9678b81ff5753658bc77354d9aa87f`  
+		Last Modified: Fri, 11 Jul 2025 23:01:15 GMT  
+		Size: 18.2 MB (18231644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1d2828fc945795b36381702f7a247995af923c6fae7f5eb644ff53be1a91965`  
-		Last Modified: Fri, 04 Jul 2025 05:01:11 GMT  
-		Size: 19.1 MB (19087369 bytes)  
+	-	`sha256:2fd875b6e7c032f2538cda7ed18103c1255d5bbd15e84a4ca97662454f31b4d9`  
+		Last Modified: Fri, 11 Jul 2025 23:01:15 GMT  
+		Size: 19.1 MB (19087192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a008500e0193135c7ef7f4b27cc652a6e4a60f34ebc3736d80009d077c331154`  
-		Last Modified: Fri, 04 Jul 2025 05:01:10 GMT  
-		Size: 792.0 B  
+	-	`sha256:8da7595774c1a57c0303c6dcb50e90adf13c5415865b369fb54d55572677bf28`  
+		Last Modified: Fri, 11 Jul 2025 23:01:14 GMT  
+		Size: 795.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:887918d201a2353e6195ad0dd8f3c193a348bb469c8b2e5950f4a8c94e8e048a`  
-		Last Modified: Fri, 04 Jul 2025 05:52:28 GMT  
-		Size: 246.3 MB (246276838 bytes)  
+	-	`sha256:75dd45983eadf57eb05065ffea797d54393db67ac45b25dcc75161c438e24af7`  
+		Last Modified: Fri, 11 Jul 2025 23:53:06 GMT  
+		Size: 246.9 MB (246942779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4935a9bd93f03c4696c8f891d60ecfaca7b0cd883c556c92932b487c7b2cf74a`  
-		Last Modified: Fri, 04 Jul 2025 05:05:26 GMT  
+	-	`sha256:3ed6b41f5deac95af018459270c034a6679b10571d7dd6ec0b6beeb555d781de`  
+		Last Modified: Fri, 11 Jul 2025 23:10:08 GMT  
 		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8040198bfad607c7513432c52b3eefa63e19912751a6bd74aa74efc33bba3767`  
-		Last Modified: Fri, 04 Jul 2025 05:05:27 GMT  
+	-	`sha256:508a3af83ee2bba5d76251e2fac3886661ca226569b5107fee2718c2629fec6e`  
+		Last Modified: Fri, 11 Jul 2025 23:10:08 GMT  
 		Size: 2.4 KB (2355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:587c772f7f4afb3e0bdc77d10424a0662c3a7ec951a84d62cb3cd1a5ef008b41
+$ docker pull nextcloud@sha256:6a7fc5f5160672f32243bb540688e28e2edf20addc5edbe84c6be39672b1e4e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.2 KB (47247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14abe28b067a8c6cf2c21a531be7da9522158577bdf2351fcac0910b9d05959d`
+-	Image ID: `sha256:fd4608ab0bdf1144607f98f62e79bb2ea4b9c00da6bd9cf63d6c5f704bc20ccd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:64ec4b8d4ce41435094187de123b8429cf2f89641a0e80463c70d87934d78cc7`  
-		Last Modified: Fri, 04 Jul 2025 05:51:55 GMT  
+	-	`sha256:5bbf8200807b2728319e9033cb7977128763d4b6dc9dc91ea82db5fe6fe75f03`  
+		Last Modified: Fri, 11 Jul 2025 23:52:27 GMT  
 		Size: 47.2 KB (47247 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:6dda2772143f7864595fbddea4bd8cfd982c829ad27614b513d7b73b493b3d08
+$ docker pull nextcloud@sha256:e4bf9779f4943e9aa04d76b73dd285d17da8cf403eb598279f5202a2c7dd7d14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.6 MB (454617856 bytes)**  
+-	Total Size: **455.3 MB (455289697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba2285f441dba63b019e698195a1aad1c1eec578cd56e9d1270ad9cc47ea3869`
+-	Image ID: `sha256:2afd5cf1de5127d5751d530d511fa8f738002c960bcbe91312b153b64f4edacf`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -722,140 +722,140 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 03 Jul 2025 23:58:48 GMT  
 		Size: 9.2 KB (9181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:632978f31faa77a577449458aa99d9a8bedc00e7c4916924ed59d897472653ad`  
-		Last Modified: Fri, 04 Jul 2025 07:47:52 GMT  
-		Size: 20.3 MB (20253546 bytes)  
+	-	`sha256:965c297e6846cdc3ba1cc26bb57cfc24ec5fd4da6f004184138505ceee8ec958`  
+		Last Modified: Fri, 11 Jul 2025 23:17:59 GMT  
+		Size: 20.3 MB (20259724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74fd742f65f24e9e510bdff0f4e4de2d792aa26b78ccc9e8a4d565a0432743e7`  
-		Last Modified: Fri, 04 Jul 2025 07:47:44 GMT  
-		Size: 21.4 MB (21350571 bytes)  
+	-	`sha256:df04d5d5d9b64a01ee447471f37ab25eab70680c0eb28246d7324944e3f2b523`  
+		Last Modified: Fri, 11 Jul 2025 23:17:59 GMT  
+		Size: 21.4 MB (21350456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e7a7c8c3e711df00998514c19a19a20d62e6e2a00607bf504baeff895384b4`  
-		Last Modified: Fri, 04 Jul 2025 07:47:43 GMT  
-		Size: 794.0 B  
+	-	`sha256:475400eafad00692e782abe35c2b5fd5263614e5db471a318de09af91f98391f`  
+		Last Modified: Fri, 11 Jul 2025 23:17:58 GMT  
+		Size: 793.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39562376aaf669b5ac99b9a970fd6d284605885d2cde89d19b616db1f17e0c8d`  
-		Last Modified: Fri, 04 Jul 2025 08:52:44 GMT  
-		Size: 246.3 MB (246279304 bytes)  
+	-	`sha256:610985988ba70480993ef90a0af6029c063a429e07eb8a9d5a36c18ebae1ce13`  
+		Last Modified: Fri, 11 Jul 2025 23:53:49 GMT  
+		Size: 246.9 MB (246945084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77476343a78bd982daede954c59740b0a8f7eb2d23b0dde092b84e2f75fc7ee0`  
-		Last Modified: Fri, 04 Jul 2025 07:47:43 GMT  
+	-	`sha256:dd53745cae450b6468346ff5bebea7fac6c40abd0925f8ef192d8cfaf2fa6b5a`  
+		Last Modified: Fri, 11 Jul 2025 23:17:58 GMT  
 		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c0bcfe5ee757c262bd75470d281c99e74cb66d80cd00b0379d4b60397c46972`  
-		Last Modified: Fri, 04 Jul 2025 07:47:43 GMT  
-		Size: 2.4 KB (2359 bytes)  
+	-	`sha256:17a00b5440f058c7380c9026bd7065bfd7458016c0d186440c7081e0f5f80334`  
+		Last Modified: Fri, 11 Jul 2025 23:17:58 GMT  
+		Size: 2.4 KB (2358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:5279cb02e872257a79c642d46b5b82e8c1bc24e5e633d3cf04864057cd16bd2f
+$ docker pull nextcloud@sha256:7217b05c31f4c12e399764e249f311fb086ef26f660ba03ae943a2521c6423ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.3 KB (47288 bytes)**  
+-	Total Size: **47.3 KB (47289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e1b4f9950ff3c2b3be2361a931ca42dc01205b380da1546c20df3098ebfb976`
+-	Image ID: `sha256:fc676765f4ffc50539df7415954b84b6f71e99e8e76d018bd54a0c9771739c8c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dec75537daeb7bfad278aacf69b01b4a11c6ff5fb13d5c78bead3b575d0f5e1a`  
-		Last Modified: Fri, 04 Jul 2025 08:51:34 GMT  
-		Size: 47.3 KB (47288 bytes)  
+	-	`sha256:4f11c988a387e67a4b697c892772014b559a27ea7d5669df1ed41df1c1b5b82a`  
+		Last Modified: Fri, 11 Jul 2025 23:52:31 GMT  
+		Size: 47.3 KB (47289 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-fpm` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:32735055d9526d91d83e69158f2d4f605e6a66bcb23f6359125414e1834504ae
+$ docker pull nextcloud@sha256:2833ed1869621a8691eeeb44f8d949fef5ab944b7982b4a243642d80f85a7c4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **461.8 MB (461800268 bytes)**  
+-	Total Size: **462.5 MB (462466079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31af9eb56aaaf83a7f35bccf0ccaab2948a450d878a86dda3847dad91f8e6d62`
+-	Image ID: `sha256:22b2c2ce2915d95119b3085cd40f1ec0004d3ddd707b827fa4f5cbea20b4b7ae`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -908,49 +908,49 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 03 Jul 2025 23:04:07 GMT  
 		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e02610de5c99c45b311d66a2d8dfae4e7a99f5a3bb5bbbf15060b0b2810e3fad`  
-		Last Modified: Thu, 03 Jul 2025 23:21:16 GMT  
-		Size: 22.4 MB (22388405 bytes)  
+	-	`sha256:af7a7192d4d60a9c3e64dcc1b7ef735e0aac663dca6249ed5a4b14512c9cac1c`  
+		Last Modified: Fri, 11 Jul 2025 22:56:34 GMT  
+		Size: 22.4 MB (22388213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:319777417d840e616637cfd40a50c1b83e40fb9f0e52c6ee8b05372ded48a77f`  
-		Last Modified: Thu, 03 Jul 2025 23:21:15 GMT  
-		Size: 21.4 MB (21358695 bytes)  
+	-	`sha256:25089b17e9175e52903833dfd25d12f20b04da044a3b8f10b302dc340fafbeb4`  
+		Last Modified: Fri, 11 Jul 2025 22:56:34 GMT  
+		Size: 21.4 MB (21358747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5caecd292dfca5ed1b83e40c1dbcef74125aab7af35835d0605f4f7eec07e35b`  
-		Last Modified: Thu, 03 Jul 2025 23:21:13 GMT  
-		Size: 795.0 B  
+	-	`sha256:9a16b2b4fc35dd3fd50d05fc4def49dc22963dc1ab7e071464034ad3ed85ab0a`  
+		Last Modified: Fri, 11 Jul 2025 22:56:32 GMT  
+		Size: 794.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecbcc898855e6ebc4c5a3da6206e7247f21c5b7be253ce55663ef68fdfd23c2c`  
-		Last Modified: Fri, 04 Jul 2025 02:52:32 GMT  
-		Size: 246.3 MB (246278352 bytes)  
+	-	`sha256:14d32c4f4ae16f022ee629b7cc010974966eb0fb3ab87e0890f43143f484e0b2`  
+		Last Modified: Fri, 11 Jul 2025 23:53:06 GMT  
+		Size: 246.9 MB (246944305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45b6eebb0fc1d2488481f61e5e497d5c15c5fdf9303d6284681bf245426d1999`  
-		Last Modified: Thu, 03 Jul 2025 23:20:43 GMT  
-		Size: 4.0 KB (4046 bytes)  
+	-	`sha256:da11f4c70e3347baf1a94ddcf9ed2caa243272faec6a4ce9bcff5ebfd18626f3`  
+		Last Modified: Fri, 11 Jul 2025 22:56:14 GMT  
+		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84fc297f433cb8da3c6df321986f22b70276e8b00710f13c44633260ddc9d113`  
-		Last Modified: Thu, 03 Jul 2025 23:21:13 GMT  
-		Size: 2.4 KB (2358 bytes)  
+	-	`sha256:e2bc3589c394c28b0ff7f4efae5dbc651fd3e34ea940a2f4cb31d1e85f3a64f9`  
+		Last Modified: Fri, 11 Jul 2025 22:56:32 GMT  
+		Size: 2.4 KB (2356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:59ecdbdce216b9db0a8d8ae20ec8711c7700253fb851a064dbd788ee8a3616c6
+$ docker pull nextcloud@sha256:898be9a88f9a87519e200026816419c08d3a483f5770989c91739d4f1ca8b89b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.1 KB (47074 bytes)**  
+-	Total Size: **47.1 KB (47075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1e95555de752d9bc8910c7c96f2ecf5c5fc14df3539e718a6bd3eb3d2f62da2`
+-	Image ID: `sha256:1887d679fa1d896c86ccd20f6598c52134fab09adfaf5b7ca8ccc2493b0ed12c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5f685bd4f4a7b061b13c59696ea0271d001bb3f1ee19d72c10d79fb273090ead`  
-		Last Modified: Fri, 04 Jul 2025 02:52:05 GMT  
-		Size: 47.1 KB (47074 bytes)  
+	-	`sha256:963eae189f95c72de45cf3e783194376975397122240ddbbd3fcb79b94e08856`  
+		Last Modified: Fri, 11 Jul 2025 23:52:34 GMT  
+		Size: 47.1 KB (47075 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-fpm` - linux; mips64le
@@ -1142,92 +1142,92 @@ $ docker pull nextcloud@sha256:d8b0b8b69351d10a8ff4f9200c7e178d167652966445dc94c
 ### `nextcloud:stable-fpm` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:96d7d786f6786cbd6a9ec481e04d79cf8bce15584a7530e1681ef5c4c8b0aff3
+$ docker pull nextcloud@sha256:edb677c6383fb34ab2f332dc099b2d0915a43cf5bb3ac39e5735b811ad3015ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **468.1 MB (468138596 bytes)**  
+-	Total Size: **468.8 MB (468804643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:334a1dd6f0b1cd2d9a9148b29f410e6694c3fe93207f0e3f3e56d6f35a36a129`
+-	Image ID: `sha256:45d8bd3dd62e1be35d9978498fecc62b94e4ae22f3c505fa7541abb1d583f111`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1280,140 +1280,140 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 03 Jul 2025 23:47:25 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2d36fd37d2034178f792e5dd78555c66aff234a17a45d17e053937a5e96b15f`  
-		Last Modified: Fri, 04 Jul 2025 06:29:42 GMT  
-		Size: 22.8 MB (22762566 bytes)  
+	-	`sha256:14c16a0c8c5e9a937b5a4af572144694e3a6fa4fa83fe6fbe530b48d48633098`  
+		Last Modified: Fri, 11 Jul 2025 23:23:56 GMT  
+		Size: 22.8 MB (22762888 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9baf44d72baa6af63e1cd942b1d75a85ee2fe46fb0c95f79eadb16e5811457be`  
-		Last Modified: Fri, 04 Jul 2025 06:29:42 GMT  
-		Size: 22.1 MB (22092589 bytes)  
+	-	`sha256:161111e22fd7ca76fcddc5c6a682d801a97b88ca8a716d1be7835637e8ce0426`  
+		Last Modified: Fri, 11 Jul 2025 23:23:57 GMT  
+		Size: 22.1 MB (22092546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23be019d717b586889c7fd31791178ce07b208f9cb04498dce94b842ec319ead`  
-		Last Modified: Fri, 04 Jul 2025 06:29:40 GMT  
-		Size: 795.0 B  
+	-	`sha256:18e78c39cfa0c875a6b71adb017b8daaa7d41f07d216719148cd161d2efad7af`  
+		Last Modified: Fri, 11 Jul 2025 23:23:54 GMT  
+		Size: 794.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1e4f2f68a5e73db421ee1c75a3809d1fca635d2097721ac40a21a0c1ffced1`  
-		Last Modified: Fri, 04 Jul 2025 08:52:06 GMT  
-		Size: 246.3 MB (246279506 bytes)  
+	-	`sha256:2d60a55b87d8f53178f9fd947b9f818e0f40ad2e0b0aeca6119b797c9623077a`  
+		Last Modified: Fri, 11 Jul 2025 23:53:09 GMT  
+		Size: 246.9 MB (246945278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb7087685e22d3adab08673d893328a2ce1be3d18e86cbf601a30e4ba452ec2e`  
-		Last Modified: Fri, 04 Jul 2025 06:29:41 GMT  
+	-	`sha256:a628669085989298bbbac2f618c7ad3b68c938c7952dd64bcdb7dad56e508e54`  
+		Last Modified: Fri, 11 Jul 2025 23:23:54 GMT  
 		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89ea114a62288d55f255b12a2d81ab3ceeb0c6a420fe1863215a9c0cef1e6ce8`  
-		Last Modified: Fri, 04 Jul 2025 06:29:41 GMT  
-		Size: 2.4 KB (2357 bytes)  
+	-	`sha256:84745c316f4a307a8b6e4dde76397ac6207ea2319bf17da3bd943a6c512ae4a2`  
+		Last Modified: Fri, 11 Jul 2025 23:23:54 GMT  
+		Size: 2.4 KB (2354 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:41c60f63fd51dce33ee6d4ae75c90401e4bf72eb579be9cb7aa6ac6cab313f0d
+$ docker pull nextcloud@sha256:a3a5180dc09881d6d3ad5559969a5e93c02e29f595e653bd1c87d064281f4534
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.2 KB (47185 bytes)**  
+-	Total Size: **47.2 KB (47184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fac7e09f51d4b751b3a8c58b2556f849d04e7fbf6335fa5157d3831bc8e5a76f`
+-	Image ID: `sha256:cbd4d05c892ea3548d0f1cbb4a5a4630ad26dee620214dccc129f97753818c5e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:011f93028dfecab4f5959fa45457757034f63cf36670e8b83ac86c4e4919fac2`  
-		Last Modified: Fri, 04 Jul 2025 08:51:42 GMT  
-		Size: 47.2 KB (47185 bytes)  
+	-	`sha256:338005bc0bb880eace13391b210346ded78d7b4eb568f5d1bbc35627de66ca7e`  
+		Last Modified: Fri, 11 Jul 2025 23:52:41 GMT  
+		Size: 47.2 KB (47184 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-fpm` - linux; s390x
 
 ```console
-$ docker pull nextcloud@sha256:7849de7d503589cae09277a8a8337b4c965d6c023f552855428a8e1c7dab36ac
+$ docker pull nextcloud@sha256:4a4ba9c477865c2a974aa46e4811490048c13bb03089f9dd18d585c1d6107aac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.4 MB (433367142 bytes)**  
+-	Total Size: **434.0 MB (434033045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dbd29292314e1570c78c48a065f0f194c751bd1f40ab99c0560cab17493aafe`
+-	Image ID: `sha256:e561df099236b472b9a3263964c24fcb7b05f4dadff137fbc008dcccae5fd801`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Mon, 30 Jun 2025 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1751241600'
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_VERSION=8.3.23
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENV PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 WORKDIR /var/www/html
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Thu, 03 Jul 2025 18:33:44 GMT
 CMD ["php-fpm"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-6.q16-6-extra         rsync     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmagickwand-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.24;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.0;     pecl install memcached-3.3.0         --configureoptions 'enable-memcached-igbinary="yes"';     pecl install redis-6.2.0         --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"';         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -r dpkg-query --search         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 VOLUME [/var/www/html]
-# Fri, 13 Jun 2025 00:39:02 GMT
-ENV NEXTCLOUD_VERSION=31.0.6
-# Fri, 13 Jun 2025 00:39:02 GMT
-RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
+ENV NEXTCLOUD_VERSION=31.0.7
+# Fri, 11 Jul 2025 00:40:22 GMT
+RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 13 Jun 2025 00:39:02 GMT
+# Fri, 11 Jul 2025 00:40:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1466,47 +1466,47 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 03 Jul 2025 23:50:01 GMT  
 		Size: 9.2 KB (9178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cba0c754440adc4aee9bda811cf17027e8a47baea82b60a16c5579fbc7b6865d`  
-		Last Modified: Fri, 04 Jul 2025 04:25:05 GMT  
-		Size: 19.4 MB (19425756 bytes)  
+	-	`sha256:598b3360e3de2ddc265c776afb9d5831d4f68982331bb20fb465c6eaf23b1aff`  
+		Last Modified: Fri, 11 Jul 2025 23:11:38 GMT  
+		Size: 19.4 MB (19425775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a53d7d12a91be391ce88616311634c3122b0ade7643402d385e7b72d83a1e865`  
-		Last Modified: Fri, 04 Jul 2025 04:25:05 GMT  
-		Size: 20.3 MB (20314389 bytes)  
+	-	`sha256:abdd12ea072dc487afb1a11924a0d19918669361e077af5663cff41cc39658c2`  
+		Last Modified: Fri, 11 Jul 2025 23:11:39 GMT  
+		Size: 20.3 MB (20314145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c28ff3a2b39253a692bb35da3c6a173b45a657b6da844541738dabe23a62fd24`  
-		Last Modified: Fri, 04 Jul 2025 04:25:02 GMT  
-		Size: 792.0 B  
+	-	`sha256:eb09113df22bd6237393b5cf2bbbec244479960e7d978e444c5436431f3de6f5`  
+		Last Modified: Fri, 11 Jul 2025 23:11:35 GMT  
+		Size: 790.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd0a2d803590d519b98fbd87898182e7ae5ebd4fa8b5c32d8405b94f218d3f7b`  
-		Last Modified: Fri, 04 Jul 2025 05:52:29 GMT  
-		Size: 246.3 MB (246276682 bytes)  
+	-	`sha256:7358cccf38db2077597ee9fd168cbf03bbeedc6ad9025e777dd1d31648414231`  
+		Last Modified: Fri, 11 Jul 2025 23:53:09 GMT  
+		Size: 246.9 MB (246942814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b74f6190d2b5039a224399a3cddc7e082eb8503d2dbb70a510d6595f832a33ac`  
-		Last Modified: Fri, 04 Jul 2025 04:25:02 GMT  
+	-	`sha256:c5bfdb7c3f1a3ed8b7988ee6c7577e272a0dac0b5dd4c338a74ba22de5f4ebc3`  
+		Last Modified: Fri, 11 Jul 2025 23:11:36 GMT  
 		Size: 4.0 KB (4047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90d0ab75f8afaa8725739e9919fe66edca2102732e25957c1ecad3c20921fab4`  
-		Last Modified: Fri, 04 Jul 2025 04:25:03 GMT  
-		Size: 2.4 KB (2357 bytes)  
+	-	`sha256:3f20a4546a1dbf92c28f3d1cf2e0cf241f59348d71313950d95c3aade7927968`  
+		Last Modified: Fri, 11 Jul 2025 23:11:36 GMT  
+		Size: 2.4 KB (2355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-fpm` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:ff7b42e69293486a009b7f296354ee31f751bd5374a57e3026bd7e92ebab4d9f
+$ docker pull nextcloud@sha256:928394f1f18052f69ea2dbe55d0b492bc0e20b592f99d544888ae8f675e63f57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.1 KB (47116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58d7dba48febbe09ac6c854571f4305f24923222c3e8c619d9ee998fd3e334d5`
+-	Image ID: `sha256:a8f4bfce9947878d581ffc5710fa7745f4272bb7a06576645aa5819e6b5266fc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e524b9b764198f325b844d27e1083a6e3d2d44a3a1b23059f31049fc086d0051`  
-		Last Modified: Fri, 04 Jul 2025 05:52:05 GMT  
+	-	`sha256:bbe637e1d7eb51bc1ef7204d1b3f8e70f7fd7965e5c840cf15cb5c3baeff0b2c`  
+		Last Modified: Fri, 11 Jul 2025 23:52:45 GMT  
 		Size: 47.1 KB (47116 bytes)  
 		MIME: application/vnd.in-toto+json
