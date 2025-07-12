@@ -1,9 +1,9 @@
-# `nextcloud:31.0.6-fpm-alpine`
+# `nextcloud:31.0.7-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:670a6bd6667674fd957de32110a1ff34372805c2c2b92c3f3f136f5f386cd5d0`
-- Created: `2025-06-13T14:47:41Z`
+- Image ID: `sha256:ce278edc396cc9640d3b57bb1fba54530ed591f3ce5e8dfd7b9307ab6dae49f9`
+- Created: `2025-07-11T00:40:22Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=31.0.6`
+  - `NEXTCLOUD_VERSION=31.0.7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -575,16 +575,16 @@ MIT
 ### `apk` package: `icu-data-en`
 
 ```console
-icu-data-en-76.1-r0 description:
+icu-data-en-76.1-r1 description:
 Stripped down ICU data with only en_US/GB locale and no legacy charset converters
 
-icu-data-en-76.1-r0 webpage:
+icu-data-en-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-en-76.1-r0 installed size:
+icu-data-en-76.1-r1 installed size:
 2938 KiB
 
-icu-data-en-76.1-r0 license:
+icu-data-en-76.1-r1 license:
 ICU
 
 ```
@@ -592,16 +592,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-76.1-r0 description:
+icu-libs-76.1-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-76.1-r0 webpage:
+icu-libs-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-76.1-r0 installed size:
+icu-libs-76.1-r1 installed size:
 4659 KiB
 
-icu-libs-76.1-r0 license:
+icu-libs-76.1-r1 license:
 ICU
 
 ```
