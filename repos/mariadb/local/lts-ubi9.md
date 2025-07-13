@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:564e469cf87698326586ec61c4a823e1df237c7302d0de0a3ee150a9663b72c0`
+- Image ID: `sha256:9b5706add81488eb60f11aa0ec5a7afcc6e8c3bc9a9a0b90b8c8ab174d41db7c`
 - Created: `2025-06-10T21:48:21Z`
-- Virtual Size: ~ 471.83 Mb  
+- Virtual Size: ~ 471.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-06-30T12:32:07`
+  - `build-date=2025-07-09T14:05:26`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=f6591f6fb99f567a57f1c8ac4572758f722a244a`
+  - `vcs-ref=b946af027f523f072a8882a41937895e04be5bec`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.2`
@@ -274,7 +274,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -524,7 +524,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1110,11 +1110,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-9.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-10.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-10.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-10.el9_6.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -2103,7 +2108,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2114,7 +2119,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://mirror.fmt-2.serverforge.org/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2216,11 +2221,16 @@ $ dnf --quiet download --source --url shadow-utils-4.9-12.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-12.el9.src.rpm
 ```
 
-### `rpm` package: `socat-1.7.4.1-6.el9.x86_64`
+### `rpm` package: `socat-1.7.4.1-6.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url socat-1.7.4.1-6.el9_6.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/s/socat-1.7.4.1-6.el9_6.1.src.rpm
+```
 
 ### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
 
