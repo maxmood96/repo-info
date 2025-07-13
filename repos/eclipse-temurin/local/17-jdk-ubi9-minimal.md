@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b468ed94a3b80ac121917fe7b8ba619406f286a04ffd6f96c751bcadff6e61e9`
+- Image ID: `sha256:1b1563d8ce12dede4b18a58ac55cb7bd8f89061009addf3cc0f6becac88500dd`
 - Created: `2025-04-23T14:48:05Z`
-- Virtual Size: ~ 459.23 Mb  
+- Virtual Size: ~ 459.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-17.0.15+6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-06-30T12:32:07`
+  - `build-date=2025-07-09T14:05:26`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,10 +31,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1751286687`
+  - `release=1752069876`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=f6591f6fb99f567a57f1c8ac4572758f722a244a`
+  - `vcs-ref=b946af027f523f072a8882a41937895e04be5bec`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -1164,11 +1164,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-9.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-10.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-10.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-10.el9_6.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
