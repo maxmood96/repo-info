@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8c56534ee96e9c00c5a36295ecea6de92c42fd0e802431ede3393c8cbfa30ee`
+- Image ID: `sha256:2ee715c58baf8a12a38abed0dd9934e01351587c3373c77fdd4655a2c8716896`
 - Created: `2025-07-07T10:50:23Z`
-- Virtual Size: ~ 693.44 Mb  
+- Virtual Size: ~ 693.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-06-30T12:32:07`
+  - `build-date=2025-07-09T14:05:26`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -36,10 +36,10 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `release=1751286687`
+  - `release=1752069876`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=f6591f6fb99f567a57f1c8ac4572758f722a244a`
+  - `vcs-ref=b946af027f523f072a8882a41937895e04be5bec`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -1094,11 +1094,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-9.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-10.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-10.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-10.el9_6.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1381,7 +1386,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-release-1.0-30.noarch`
+### `rpm` package: `percona-release-1.0-31.noarch`
 
 Licenses (from `rpm --query`): GPL-3.0+
 
