@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b30c21d0a1c4fcd3b47d5a1e148261f7fdd3f0fee8d7d952092b6d6843aa5888`
+- Image ID: `sha256:9143f9bf41d19abe3103b333b30d2a70fb2f83bd8aa8640fd4aa89e1fe214e58`
 - Created: `2025-05-28T17:53:13Z`
 - Virtual Size: ~ 3.39 Gb  
   (total size of all layers on-disk)
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-07T14:15:25`
+  - `build-date=2025-07-09T14:01:19`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1751897624`
+  - `release=1752069608`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=9e371559ce967d5e3744b8a9fcba95f53e30a699`
+  - `vcs-ref=d3a7532cdd2fbad954ad89f2f394e28f4be3593e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
