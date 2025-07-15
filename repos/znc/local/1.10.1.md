@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:20411f5c040aafa41f3e0eb9d81f97947a4da83cf491900d7c73426b17824898`
+- Image ID: `sha256:485a3780538cec9407ab2f3c5640e3480d9fc2aa1f4d938372fba3e0b9975e41`
 - Created: `2025-07-01T21:26:43Z`
-- Virtual Size: ~ 486.34 Mb  
+- Virtual Size: ~ 486.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -86,16 +86,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.0-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.22.0-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.0-r0 installed size:
+alpine-release-3.22.1-r0 installed size:
 343 B
 
-alpine-release-3.22.0-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -137,16 +137,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.44-r0 description:
+binutils-2.44-r2 description:
 Tools necessary to build programs
 
-binutils-2.44-r0 webpage:
+binutils-2.44-r2 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.44-r0 installed size:
+binutils-2.44-r2 installed size:
 10 MiB
 
-binutils-2.44-r0 license:
+binutils-2.44-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
@@ -800,16 +800,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r2 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r2 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r2 installed size:
-251 KiB
+ca-certificates-20250619-r0 installed size:
+241 KiB
 
-ca-certificates-20241121-r2 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -817,16 +817,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r2 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r2 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r2 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r2 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -987,16 +987,16 @@ BSD-3-Clause
 ### `apk` package: `icu`
 
 ```console
-icu-76.1-r0 description:
+icu-76.1-r1 description:
 International Components for Unicode library
 
-icu-76.1-r0 webpage:
+icu-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-76.1-r0 installed size:
+icu-76.1-r1 installed size:
 765 KiB
 
-icu-76.1-r0 license:
+icu-76.1-r1 license:
 ICU
 
 ```
@@ -1004,16 +1004,16 @@ ICU
 ### `apk` package: `icu-data-full`
 
 ```console
-icu-data-full-76.1-r0 description:
+icu-data-full-76.1-r1 description:
 Full ICU data
 
-icu-data-full-76.1-r0 webpage:
+icu-data-full-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-full-76.1-r0 installed size:
+icu-data-full-76.1-r1 installed size:
 30 MiB
 
-icu-data-full-76.1-r0 license:
+icu-data-full-76.1-r1 license:
 ICU
 
 ```
@@ -1021,16 +1021,16 @@ ICU
 ### `apk` package: `icu-dev`
 
 ```console
-icu-dev-76.1-r0 description:
+icu-dev-76.1-r1 description:
 International Components for Unicode library (development files)
 
-icu-dev-76.1-r0 webpage:
+icu-dev-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-dev-76.1-r0 installed size:
+icu-dev-76.1-r1 installed size:
 5073 KiB
 
-icu-dev-76.1-r0 license:
+icu-dev-76.1-r1 license:
 ICU
 
 ```
@@ -1038,16 +1038,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-76.1-r0 description:
+icu-libs-76.1-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-76.1-r0 webpage:
+icu-libs-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-76.1-r0 installed size:
+icu-libs-76.1-r1 installed size:
 4659 KiB
 
-icu-libs-76.1-r0 license:
+icu-libs-76.1-r1 license:
 ICU
 
 ```
@@ -1191,16 +1191,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1344,16 +1344,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1582,16 +1582,16 @@ X11
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.0-r0 description:
+openssl-3.5.1-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.0-r0 webpage:
+openssl-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.0-r0 installed size:
+openssl-3.5.1-r0 installed size:
 801 KiB
 
-openssl-3.5.0-r0 license:
+openssl-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1599,16 +1599,16 @@ Apache-2.0
 ### `apk` package: `openssl-dev`
 
 ```console
-openssl-dev-3.5.0-r0 description:
+openssl-dev-3.5.1-r0 description:
 Toolkit for Transport Layer Security (TLS) (development files)
 
-openssl-dev-3.5.0-r0 webpage:
+openssl-dev-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-openssl-dev-3.5.0-r0 installed size:
+openssl-dev-3.5.1-r0 installed size:
 2152 KiB
 
-openssl-dev-3.5.0-r0 license:
+openssl-dev-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -1769,16 +1769,16 @@ rhash-libs-1.4.5-r0 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20250701.214936 description:
+runtime-dependencies-20250715.192216 description:
 virtual meta package
 
-runtime-dependencies-20250701.214936 webpage:
+runtime-dependencies-20250715.192216 webpage:
 
 
-runtime-dependencies-20250701.214936 installed size:
+runtime-dependencies-20250715.192216 installed size:
 0 B
 
-runtime-dependencies-20250701.214936 license:
+runtime-dependencies-20250715.192216 license:
 
 
 ```
