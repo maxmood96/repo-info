@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3ae2aa5163721c62e98c9f0058c3d7e87e212ec342de4495135d0f48e4e492e`
-- Created: `2025-04-15T21:50:45Z`
-- Virtual Size: ~ 316.37 Mb  
+- Image ID: `sha256:940b422ee00d0fafc61ae663aee0c58426756023fa2f5ec9334447678c4c54bd`
+- Created: `2025-05-09T18:18:04Z`
+- Virtual Size: ~ 316.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -137,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-240 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
