@@ -795,15 +795,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.6.dsc' gnutls28_3.7.3-4ubuntu1.6.dsc 3572 SHA512:557614a247df3266c20164950846e945709420a0d38469e54cc4820f076dd7b41614f89c3acc0fe01ab72c8cbd4aa877f52c326710230f7efe08227a4aa9916b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA512:3ace744affe23e284342658d6d2d2de49dd50065489cbc8be18fc7d38187253e5268ca54027ce5cd517056c249ac039a7481e4548cec04325de37ae85617d077
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA512:cd0d30298377deddf20a835863b71e3f119588061f659906ad2684004758943179531508b1c77c730e930e2131148095e60ad9be365353cce772472d5f5345df
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.6.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.6.debian.tar.xz 94884 SHA512:e758c365a06b242010f7e06ebd88d809ccc1ba0e25ea69ed26d4b62d8ff05ef79ea7638c105c86ab0355344a44aea702a88c63a4acdcab9e865f48e519f86cdf
-```
 
 ### `dpkg` source package: `gosu=1.14-1ubuntu0.1`
 
