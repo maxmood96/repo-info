@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1ac69a93c995317d46b3365485e2e4de5b579d499819eb215ed24c48dc5b1d3`
+- Image ID: `sha256:a75207333f648d7108b9cd71238b987e0dcd8b3125c0fd213edc771cbab5533c`
 - Created: `2025-07-09T14:23:33Z`
 - Virtual Size: ~ 165.32 Mb  
   (total size of all layers on-disk)
@@ -70,16 +70,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.0-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.22.0-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.0-r0 installed size:
+alpine-release-3.22.1-r0 installed size:
 343 B
 
-alpine-release-3.22.0-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -138,16 +138,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r2 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r2 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r2 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r2 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -172,16 +172,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -206,16 +206,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
