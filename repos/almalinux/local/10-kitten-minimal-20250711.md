@@ -1,10 +1,10 @@
-# `almalinux:10-kitten`
+# `almalinux:10-kitten-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3c0cd6a4bad5e9c55be54f90226c6da1101691385bbc4621bb0e5188cdc6e8a`
-- Created: `2025-07-09T12:02:08Z`
-- Virtual Size: ~ 183.23 Mb  
+- Image ID: `sha256:409875baf754a2af44e6b565dbd61c2feb8c11203c3edf6317be1e04a9484dfe`
+- Created: `2025-07-11T10:10:45Z`
+- Virtual Size: ~ 72.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`

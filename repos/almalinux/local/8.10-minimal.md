@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eaa0fa7125cd0279d789be29f8ced05d5b3338ed5770dc5ffa631aa1a818f7fd`
-- Created: `2025-07-09T11:15:44Z`
+- Image ID: `sha256:935c7da4cd7a12ac106e36afaade9c87bffe6a32fe312a9487d9e215d3b78465`
+- Created: `2025-07-12T14:37:45Z`
 - Virtual Size: ~ 93.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -784,15 +784,15 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-20.el8_10.x86_64`
+### `rpm` package: `libxml2-2.9.7-21.el8_10.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-20.el8_10
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-20.el8_10.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.1
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.1.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
