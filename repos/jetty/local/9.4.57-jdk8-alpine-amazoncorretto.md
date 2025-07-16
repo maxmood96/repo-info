@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:826c8bb2b41bda751e6eb18b5701c3d07a18249dd8a3c813d6d9229654528870`
+- Image ID: `sha256:88c68ffe86abc859a9a6c9934b59c7108870874bc155d4afc49ae6054c190a2e`
 - Created: `2025-01-14T05:07:03Z`
-- Virtual Size: ~ 237.87 Mb  
+- Virtual Size: ~ 237.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.3-r0 description:
+alpine-release-3.21.4-r0 description:
 Alpine release data
 
-alpine-release-3.21.3-r0 webpage:
+alpine-release-3.21.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.3-r0 installed size:
+alpine-release-3.21.4-r0 installed size:
 346 B
 
-alpine-release-3.21.3-r0 license:
+alpine-release-3.21.4-r0 license:
 MIT
 
 ```
@@ -212,16 +212,16 @@ MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -535,16 +535,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.3-r0 description:
+libcrypto3-3.3.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.3-r0 webpage:
+libcrypto3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.3-r0 installed size:
+libcrypto3-3.3.4-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.3-r0 license:
+libcrypto3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -722,16 +722,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.3-r0 description:
+libssl3-3.3.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.3-r0 webpage:
+libssl3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.3-r0 installed size:
+libssl3-3.3.4-r0 installed size:
 779 KiB
 
-libssl3-3.3.3-r0 license:
+libssl3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -926,16 +926,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r1 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r1 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r1 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r1 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```
