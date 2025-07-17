@@ -1,9 +1,9 @@
-# `bash:devel-20250627`
+# `bash:devel-20250711`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ad3a2e2b1e65831cacf642f9a6b8a6a131b684bd2d6f81545008d1545bd37e3`
-- Created: `2025-07-07T22:42:46Z`
+- Image ID: `sha256:59fda65e3f0f2b7a7655d685baed02d3187302e088d7826e1949c0769096b1a8`
+- Created: `2025-07-15T04:18:15Z`
 - Virtual Size: ~ 15.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `_BASH_COMMIT=b35866a2891a9b069e37ca5684d4309c0391e261`
-  - `_BASH_VERSION=devel-20250627`
+  - `_BASH_COMMIT=80a8f650a1defc3f72539c3b57bf6d228c33c116`
+  - `_BASH_VERSION=devel-20250711`
 
 ## `apk` (`.apk`-based packages)
 
@@ -70,16 +70,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.0-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.22.0-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.0-r0 installed size:
+alpine-release-3.22.1-r0 installed size:
 343 B
 
-alpine-release-3.22.0-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -138,16 +138,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r2 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r2 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r2 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r2 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -172,16 +172,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -206,16 +206,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
