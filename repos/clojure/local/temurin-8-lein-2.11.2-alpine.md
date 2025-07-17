@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc5857088cae8e360bce0dd3e7b22ec1de799079ef46679580d0e0ab6792c6b8`
-- Created: `2025-04-28T17:24:54Z`
-- Virtual Size: ~ 222.78 Mb  
+- Image ID: `sha256:9d77e7505086afd9d10bd5ae15f42038444fce8ab6aae7c84bf56d6a59eb1969`
+- Created: `2025-06-07T17:38:11Z`
+- Virtual Size: ~ 222.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.3-r0 description:
+alpine-release-3.21.4-r0 description:
 Alpine release data
 
-alpine-release-3.21.3-r0 webpage:
+alpine-release-3.21.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.3-r0 installed size:
+alpine-release-3.21.4-r0 installed size:
 346 B
 
-alpine-release-3.21.3-r0 license:
+alpine-release-3.21.4-r0 license:
 MIT
 
 ```
@@ -212,16 +212,16 @@ MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -365,16 +365,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.47.2-r0 description:
+git-2.47.3-r0 description:
 Distributed version control system
 
-git-2.47.2-r0 webpage:
+git-2.47.3-r0 webpage:
 https://www.git-scm.com/
 
-git-2.47.2-r0 installed size:
+git-2.47.3-r0 installed size:
 6485 KiB
 
-git-2.47.2-r0 license:
+git-2.47.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -382,16 +382,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.47.2-r0 description:
+git-init-template-2.47.3-r0 description:
 Git init template directory
 
-git-init-template-2.47.2-r0 webpage:
+git-init-template-2.47.3-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.47.2-r0 installed size:
+git-init-template-2.47.3-r0 installed size:
 20 KiB
 
-git-init-template-2.47.2-r0 license:
+git-init-template-2.47.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -433,16 +433,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.3-r0 description:
+libcrypto3-3.3.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.3-r0 webpage:
+libcrypto3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.3-r0 installed size:
+libcrypto3-3.3.4-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.3-r0 license:
+libcrypto3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -603,16 +603,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.3-r0 description:
+libssl3-3.3.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.3-r0 webpage:
+libssl3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.3-r0 installed size:
+libssl3-3.3.4-r0 installed size:
 779 KiB
 
-libssl3-3.3.3-r0 license:
+libssl3-3.3.4-r0 license:
 Apache-2.0
 
 ```

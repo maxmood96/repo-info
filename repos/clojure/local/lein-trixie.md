@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c78a671dff717d9cbab169c8d0ec4b937b1d3c76e12e09c2ee711a1c85eef19`
+- Image ID: `sha256:ac317b8fbf08db4b346dd967e1db9d1ede15b360977719aae15fc2d6d5fa9cf0`
 - Created: `2025-06-07T17:38:11Z`
-- Virtual Size: ~ 583.40 Mb  
+- Virtual Size: ~ 591.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -964,11 +964,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.3.0+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.3.0+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.8.9-2`
+### `dpkg` source package: `gnutls28=3.8.9-3`
 
 Binary Packages:
 
-- `libgnutls30t64:amd64=3.8.9-2`
+- `libgnutls30t64:amd64=3.8.9-3`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 
@@ -990,18 +990,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-2.dsc' gnutls28_3.8.9-2.dsc 3236 SHA256:ee7571c280c896765fd3e5baa2f5b422a57b6227616120e95b7a79565d575cf0
+$ apt-get source -qq --print-uris gnutls28=3.8.9-3
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.dsc' gnutls28_3.8.9-3.dsc 3236 SHA256:607dbc91727ff5d8a51af66e800abab837479de4e18775fc069a7b5ffc780d3d
 'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA256:69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
 'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA256:7631d47762865d4ef494492cca794cf0fe6a8be892a4aa02f362ae29006d3054
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-2.debian.tar.xz' gnutls28_3.8.9-2.debian.tar.xz 78404 SHA256:69786eec12ca5559bdf3ccc47c18e93190149e83d92a3d2b79c9068ad101642e
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.debian.tar.xz' gnutls28_3.8.9-3.debian.tar.xz 85848 SHA256:f578bd4dd0b35d56aedf002a4a7b504a965a9d1a4587d2ad3a92718a45887cbf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.8.9-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.9-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.8.9-3/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.8.9-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.8.9-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -2399,24 +2399,31 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/pam/1.7.0-3/
 
 
-### `dpkg` source package: `patch=2.8-1`
+### `dpkg` source package: `patch=2.8-2`
 
 Binary Packages:
 
-- `patch=2.8-1`
+- `patch=2.8-2`
 
 Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris patch=2.8-2
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.dsc' patch_2.8-2.dsc 1689 SHA256:41fbd3f2c99f60dcbe02699ff01955a47711377b20987352b957bd55e02e2088
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8.orig.tar.xz' patch_2.8.orig.tar.xz 907208 SHA256:f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.debian.tar.xz' patch_2.8-2.debian.tar.xz 9460 SHA256:9a740460988c910c5538e4d24df00d9961d19dee014c63e92f5d60e611fa60c4
+```
 
-- http://snapshot.debian.org/package/patch/2.8-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/patch/2.8-2/ (for browsing the source)
+- https://sources.debian.net/src/patch/2.8-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/patch/2.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.45-1`
 
@@ -2447,14 +2454,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre2/10.45-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre2/10.45-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.40.1-3`
+### `dpkg` source package: `perl=5.40.1-5`
 
 Binary Packages:
 
-- `libperl5.40:amd64=5.40.1-3`
-- `perl=5.40.1-3`
-- `perl-base=5.40.1-3`
-- `perl-modules-5.40=5.40.1-3`
+- `libperl5.40:amd64=5.40.1-5`
+- `perl=5.40.1-5`
+- `perl-base=5.40.1-5`
+- `perl-modules-5.40=5.40.1-5`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.40/copyright`)
 
@@ -2484,13 +2491,21 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris perl=5.40.1-5
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-5.dsc' perl_5.40.1-5.dsc 2372 SHA256:c3f58ea3409608fbdf17d87345ef95dc26947d6c5a8b453f723045ee90b6ad34
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-5.debian.tar.xz' perl_5.40.1-5.debian.tar.xz 172804 SHA256:42fa9b556e5dc345374976186407f6d7f0117ca2a7b7c4d81e0f7306826cee33
+```
 
-- http://snapshot.debian.org/package/perl/5.40.1-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/perl/5.40.1-5/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `publicsuffix=20250328.1952-0.1`
 
