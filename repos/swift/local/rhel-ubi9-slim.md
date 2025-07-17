@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:262c4ac14f8d03c3e2aad4793bee0c5707419da209e49eb958fc91086cd1fd04`
+- Image ID: `sha256:b3774fa741c609d5be833479a552c4587cb772cd35d3a1a1e590baec52e87565`
 - Created: `2025-05-28T17:53:13Z`
-- Virtual Size: ~ 367.03 Mb  
+- Virtual Size: ~ 367.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-09T14:01:19`
+  - `build-date=2025-07-16T00:30:50`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1752069608`
+  - `release=1752625787`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=d3a7532cdd2fbad954ad89f2f394e28f4be3593e`
+  - `vcs-ref=7ac0353e4c2bdfd20b20eb5da528070323ac3059`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -414,15 +414,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-16.el9.x86_64`
+### `rpm` package: `glib2-2.68.4-16.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-16.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-16.el9.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-16.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-16.el9_6.2.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-168.el9_6.20.x86_64`
