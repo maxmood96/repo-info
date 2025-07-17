@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:017c7689ab46e179fd5b3283b0eddb30d2a1cc811567560d7540e6a50231d6b8`
+- Image ID: `sha256:920d587d8d93ae304ce05315e626160ff4dbccabdc5c221fcde272fc893f21ec`
 - Created: `2025-06-06T18:27:47Z`
-- Virtual Size: ~ 268.76 Mb  
+- Virtual Size: ~ 268.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -75,16 +75,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.0-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.22.0-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.0-r0 installed size:
+alpine-release-3.22.1-r0 installed size:
 343 B
 
-alpine-release-3.22.0-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -160,16 +160,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r2 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r2 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r2 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r2 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -194,16 +194,16 @@ GPL-3.0-or-later
 ### `apk` package: `icu-data-full`
 
 ```console
-icu-data-full-76.1-r0 description:
+icu-data-full-76.1-r1 description:
 Full ICU data
 
-icu-data-full-76.1-r0 webpage:
+icu-data-full-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-full-76.1-r0 installed size:
+icu-data-full-76.1-r1 installed size:
 30 MiB
 
-icu-data-full-76.1-r0 license:
+icu-data-full-76.1-r1 license:
 ICU
 
 ```
@@ -211,16 +211,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-76.1-r0 description:
+icu-libs-76.1-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-76.1-r0 webpage:
+icu-libs-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-76.1-r0 installed size:
+icu-libs-76.1-r1 installed size:
 4659 KiB
 
-icu-libs-76.1-r0 license:
+icu-libs-76.1-r1 license:
 ICU
 
 ```
@@ -313,16 +313,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.0-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.0-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.0-r0 installed size:
-5079 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.0-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.0-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.5.0-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.0-r0 installed size:
+libssl3-3.5.1-r0 installed size:
 819 KiB
 
-libssl3-3.5.0-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
