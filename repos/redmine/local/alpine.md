@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95c8c8c8c7fac783b49d1384b300b106a0dd75b8fd05ab0cbe725059ff26cab9`
+- Image ID: `sha256:628553601fd02c1c910b91fb7ff01552834368ba351ce50606878d844be1a257`
 - Created: `2025-07-07T22:15:35Z`
-- Virtual Size: ~ 433.65 Mb  
+- Virtual Size: ~ 427.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -83,16 +83,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.0-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.22.0-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.0-r0 installed size:
+alpine-release-3.22.1-r0 installed size:
 343 B
 
-alpine-release-3.22.0-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -151,16 +151,16 @@ Apache-2.0
 ### `apk` package: `avahi-libs`
 
 ```console
-avahi-libs-0.8-r20 description:
+avahi-libs-0.8-r21 description:
 Libraries for avahi run-time use
 
-avahi-libs-0.8-r20 webpage:
+avahi-libs-0.8-r21 webpage:
 https://www.avahi.org/
 
-avahi-libs-0.8-r20 installed size:
+avahi-libs-0.8-r21 installed size:
 104 KiB
 
-avahi-libs-0.8-r20 license:
+avahi-libs-0.8-r21 license:
 LGPL-2.1-or-later
 
 ```
@@ -287,16 +287,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r2 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r2 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r2 installed size:
-251 KiB
+ca-certificates-20250619-r0 installed size:
+241 KiB
 
-ca-certificates-20241121-r2 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -304,16 +304,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r2 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r2 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r2 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r2 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -491,16 +491,16 @@ GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.49.0-r0 description:
+git-2.49.1-r0 description:
 Distributed version control system
 
-git-2.49.0-r0 webpage:
+git-2.49.1-r0 webpage:
 https://www.git-scm.com/
 
-git-2.49.0-r0 installed size:
+git-2.49.1-r0 installed size:
 6568 KiB
 
-git-2.49.0-r0 license:
+git-2.49.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -508,16 +508,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.49.0-r0 description:
+git-init-template-2.49.1-r0 description:
 Git init template directory
 
-git-init-template-2.49.0-r0 webpage:
+git-init-template-2.49.1-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.49.0-r0 installed size:
+git-init-template-2.49.1-r0 installed size:
 20 KiB
 
-git-init-template-2.49.0-r0 license:
+git-init-template-2.49.1-r0 license:
 GPL-2.0-only
 
 ```
