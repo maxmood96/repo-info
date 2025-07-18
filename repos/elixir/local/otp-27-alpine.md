@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0837c4ced9415624430c9701ec8c827077eadac4804db3fb2227c8c849db7528`
+- Image ID: `sha256:44ae747bd24e6f676cbf0f8e2281e0c462bb98d3fd1be1a75d619725b3352b46`
 - Created: `2025-06-30T17:24:21Z`
-- Virtual Size: ~ 101.31 Mb  
+- Virtual Size: ~ 101.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -73,16 +73,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.3-r0 description:
+alpine-release-3.21.4-r0 description:
 Alpine release data
 
-alpine-release-3.21.3-r0 webpage:
+alpine-release-3.21.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.3-r0 installed size:
+alpine-release-3.21.4-r0 installed size:
 346 B
 
-alpine-release-3.21.3-r0 license:
+alpine-release-3.21.4-r0 license:
 MIT
 
 ```
@@ -141,16 +141,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r1 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r1 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r1 installed size:
-251 KiB
+ca-certificates-20250619-r0 installed size:
+241 KiB
 
-ca-certificates-20241121-r1 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -158,16 +158,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -175,16 +175,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.3-r0 description:
+libcrypto3-3.3.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.3-r0 webpage:
+libcrypto3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.3-r0 installed size:
+libcrypto3-3.3.4-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.3-r0 license:
+libcrypto3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -243,16 +243,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.3-r0 description:
+libssl3-3.3.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.3-r0 webpage:
+libssl3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.3-r0 installed size:
+libssl3-3.3.4-r0 installed size:
 779 KiB
 
-libssl3-3.3.3-r0 license:
+libssl3-3.3.4-r0 license:
 Apache-2.0
 
 ```
