@@ -1,10 +1,10 @@
-# `wordpress:6.8.1-php8.1-fpm-alpine`
+# `wordpress:6.8.2-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8c02b1613ec39bc4dc957c07fbe2433f246236609726ed1ec309d1c42575104`
-- Created: `2025-06-09T23:45:55Z`
-- Virtual Size: ~ 268.68 Mb  
+- Image ID: `sha256:d33b2b0078614d02d67bfeb5bdab23be43dee05e4758e2d440998cac8b65885a`
+- Created: `2025-07-15T19:43:37Z`
+- Virtual Size: ~ 268.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -95,16 +95,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.3-r0 description:
+alpine-release-3.21.4-r0 description:
 Alpine release data
 
-alpine-release-3.21.3-r0 webpage:
+alpine-release-3.21.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.3-r0 installed size:
+alpine-release-3.21.4-r0 installed size:
 346 B
 
-alpine-release-3.21.3-r0 license:
+alpine-release-3.21.4-r0 license:
 MIT
 
 ```
@@ -265,16 +265,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r1 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r1 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r1 installed size:
-251 KiB
+ca-certificates-20250619-r0 installed size:
+241 KiB
 
-ca-certificates-20241121-r1 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -282,16 +282,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -469,16 +469,16 @@ LGPL-2.1-or-later
 ### `apk` package: `icu-data-en`
 
 ```console
-icu-data-en-74.2-r0 description:
+icu-data-en-74.2-r1 description:
 Stripped down ICU data with only en_US/GB locale and no legacy charset converters
 
-icu-data-en-74.2-r0 webpage:
+icu-data-en-74.2-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-en-74.2-r0 installed size:
+icu-data-en-74.2-r1 installed size:
 2733 KiB
 
-icu-data-en-74.2-r0 license:
+icu-data-en-74.2-r1 license:
 ICU
 
 ```
@@ -486,16 +486,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-74.2-r0 description:
+icu-libs-74.2-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-74.2-r0 webpage:
+icu-libs-74.2-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-74.2-r0 installed size:
+icu-libs-74.2-r1 installed size:
 4390 KiB
 
-icu-libs-74.2-r0 license:
+icu-libs-74.2-r1 license:
 ICU
 
 ```
@@ -690,16 +690,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.3-r0 description:
+libcrypto3-3.3.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.3-r0 webpage:
+libcrypto3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.3-r0 installed size:
+libcrypto3-3.3.4-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.3-r0 license:
+libcrypto3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -1013,16 +1013,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.3-r0 description:
+libssl3-3.3.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.3-r0 webpage:
+libssl3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.3-r0 installed size:
+libssl3-3.3.4-r0 installed size:
 779 KiB
 
-libssl3-3.3.3-r0 license:
+libssl3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -1404,16 +1404,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.3-r0 description:
+openssl-3.3.4-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.3-r0 webpage:
+openssl-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.3-r0 installed size:
+openssl-3.3.4-r0 installed size:
 769 KiB
 
-openssl-3.3.3-r0 license:
+openssl-3.3.4-r0 license:
 Apache-2.0
 
 ```

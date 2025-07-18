@@ -1,10 +1,10 @@
-# `wordpress:6.8.1-php8.3-fpm-alpine`
+# `wordpress:6.8.2-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:957dac9012711b9b4bb4e931418e936465364e14deedc620b94ce940c6922430`
-- Created: `2025-06-09T23:45:55Z`
-- Virtual Size: ~ 283.67 Mb  
+- Image ID: `sha256:f360863f1858db272b0772b8f6291b1d2a1476b9b2b0a74148eb0b1c2fbadaa0`
+- Created: `2025-07-15T19:43:37Z`
+- Virtual Size: ~ 277.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -95,16 +95,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.0-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.22.0-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.0-r0 installed size:
+alpine-release-3.22.1-r0 installed size:
 343 B
 
-alpine-release-3.22.0-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -163,16 +163,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `avahi-libs`
 
 ```console
-avahi-libs-0.8-r20 description:
+avahi-libs-0.8-r21 description:
 Libraries for avahi run-time use
 
-avahi-libs-0.8-r20 webpage:
+avahi-libs-0.8-r21 webpage:
 https://www.avahi.org/
 
-avahi-libs-0.8-r20 installed size:
+avahi-libs-0.8-r21 installed size:
 104 KiB
 
-avahi-libs-0.8-r20 license:
+avahi-libs-0.8-r21 license:
 LGPL-2.1-or-later
 
 ```
@@ -265,16 +265,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r2 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r2 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r2 installed size:
-251 KiB
+ca-certificates-20250619-r0 installed size:
+241 KiB
 
-ca-certificates-20241121-r2 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -282,16 +282,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r2 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r2 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r2 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r2 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -469,16 +469,16 @@ LGPL-2.1-or-later
 ### `apk` package: `icu-data-en`
 
 ```console
-icu-data-en-76.1-r0 description:
+icu-data-en-76.1-r1 description:
 Stripped down ICU data with only en_US/GB locale and no legacy charset converters
 
-icu-data-en-76.1-r0 webpage:
+icu-data-en-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-en-76.1-r0 installed size:
+icu-data-en-76.1-r1 installed size:
 2938 KiB
 
-icu-data-en-76.1-r0 license:
+icu-data-en-76.1-r1 license:
 ICU
 
 ```
@@ -486,16 +486,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-76.1-r0 description:
+icu-libs-76.1-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-76.1-r0 webpage:
+icu-libs-76.1-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-76.1-r0 installed size:
+icu-libs-76.1-r1 installed size:
 4659 KiB
 
-icu-libs-76.1-r0 license:
+icu-libs-76.1-r1 license:
 ICU
 
 ```
