@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6b657d73ce093efb702e4798237866a325995f76b08be84fc0aa31d335a2ac5`
+- Image ID: `sha256:01217c1d5c1041c77401b85352d739ddb3d31aa16619a10cd742e2023e09587e`
 - Created: `2025-06-02T18:02:05Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
@@ -1255,27 +1255,17 @@ $ dnf --quiet download --source --url iso-codes-4.6.0-1.amzn2023.0.3.noarch
 https://cdn.amazonlinux.com/al2023/core/guids/1a34c41263d9e80bb6c584ad100afd06638b4aafcef4c22a87692dc21797e252/SRPMS/../../../../blobstore/c790b50188edf877d8c013c972612b69fce52146be9b54539e6cefbb333d2db6/iso-codes-4.6.0-1.amzn2023.0.3.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2023.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-1.8.0_462.b08-1.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2023
-https://cdn.amazonlinux.com/al2023/core/guids/1a34c41263d9e80bb6c584ad100afd06638b4aafcef4c22a87692dc21797e252/SRPMS/../../../../blobstore/dcc3462c44de5cce169ad273c5bbb29abcb5984e5dbfa0b1c8065ac5b74cd497/java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2023.src.rpm
-```
-
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_452.b09-2.amzn2023.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_462.b08-1.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-1.8.0-amazon-corretto-devel-1.8.0_452.b09-2.amzn2023
-https://cdn.amazonlinux.com/al2023/core/guids/1a34c41263d9e80bb6c584ad100afd06638b4aafcef4c22a87692dc21797e252/SRPMS/../../../../blobstore/dcc3462c44de5cce169ad273c5bbb29abcb5984e5dbfa0b1c8065ac5b74cd497/java-1.8.0-amazon-corretto-1.8.0_452.b09-2.amzn2023.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 

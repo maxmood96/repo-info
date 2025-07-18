@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:61eff9005ef304245c42a52cd64ae3ebb7d98268a6801dc3605a47f564483e87`
-- Created: `2025-05-29T19:34:11Z`
-- Virtual Size: ~ 542.61 Mb  
+- Image ID: `sha256:2ccf08013f31cbde2080d915efa6e99673da06f131579813d554bc29bc486dcc`
+- Created: `2025-06-02T18:02:05Z`
+- Virtual Size: ~ 542.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -92,16 +92,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.3-r0 description:
+alpine-release-3.21.4-r0 description:
 Alpine release data
 
-alpine-release-3.21.3-r0 webpage:
+alpine-release-3.21.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.3-r0 installed size:
+alpine-release-3.21.4-r0 installed size:
 346 B
 
-alpine-release-3.21.3-r0 license:
+alpine-release-3.21.4-r0 license:
 MIT
 
 ```
@@ -262,16 +262,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r1 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r1 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r1 installed size:
-251 KiB
+ca-certificates-20250619-r0 installed size:
+241 KiB
 
-ca-certificates-20241121-r1 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -279,16 +279,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-217 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+207 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -466,16 +466,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.47.2-r0 description:
+git-2.47.3-r0 description:
 Distributed version control system
 
-git-2.47.2-r0 webpage:
+git-2.47.3-r0 webpage:
 https://www.git-scm.com/
 
-git-2.47.2-r0 installed size:
+git-2.47.3-r0 installed size:
 6485 KiB
 
-git-2.47.2-r0 license:
+git-2.47.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -483,16 +483,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.47.2-r0 description:
+git-init-template-2.47.3-r0 description:
 Git init template directory
 
-git-init-template-2.47.2-r0 webpage:
+git-init-template-2.47.3-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.47.2-r0 installed size:
+git-init-template-2.47.3-r0 installed size:
 20 KiB
 
-git-init-template-2.47.2-r0 license:
+git-init-template-2.47.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -789,16 +789,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.3-r0 description:
+libcrypto3-3.3.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.3-r0 webpage:
+libcrypto3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.3-r0 installed size:
+libcrypto3-3.3.4-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.3-r0 license:
+libcrypto3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -1078,16 +1078,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.3-r0 description:
+libssl3-3.3.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.3-r0 webpage:
+libssl3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.3-r0 installed size:
+libssl3-3.3.4-r0 installed size:
 779 KiB
 
-libssl3-3.3.3-r0 license:
+libssl3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -1401,16 +1401,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.3-r0 description:
+openssl-3.3.4-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.3-r0 webpage:
+openssl-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.3-r0 installed size:
+openssl-3.3.4-r0 installed size:
 769 KiB
 
-openssl-3.3.3-r0 license:
+openssl-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -1826,16 +1826,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.10-r1 description:
+pyc-3.12.11-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.10-r1 webpage:
+pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.10-r1 installed size:
+pyc-3.12.11-r0 installed size:
 0 B
 
-pyc-3.12.10-r1 license:
+pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1843,16 +1843,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.10-r1 description:
+python3-3.12.11-r0 description:
 High-level scripting language
 
-python3-3.12.10-r1 webpage:
+python3-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-3.12.10-r1 installed size:
+python3-3.12.11-r0 installed size:
 22 MiB
 
-python3-3.12.10-r1 license:
+python3-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1860,16 +1860,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.10-r1 description:
+python3-pyc-3.12.11-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.10-r1 webpage:
+python3-pyc-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.10-r1 installed size:
+python3-pyc-3.12.11-r0 installed size:
 0 B
 
-python3-pyc-3.12.10-r1 license:
+python3-pyc-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1877,16 +1877,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.10-r1 description:
+python3-pycache-pyc0-3.12.11-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.10-r1 webpage:
+python3-pycache-pyc0-3.12.11-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.10-r1 installed size:
+python3-pycache-pyc0-3.12.11-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.10-r1 license:
+python3-pycache-pyc0-3.12.11-r0 license:
 PSF-2.0
 
 ```
@@ -1962,16 +1962,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r1 description:
+sqlite-libs-3.48.0-r2 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r1 webpage:
+sqlite-libs-3.48.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r1 installed size:
+sqlite-libs-3.48.0-r2 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r1 license:
+sqlite-libs-3.48.0-r2 license:
 blessing
 
 ```
