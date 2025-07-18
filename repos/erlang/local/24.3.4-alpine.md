@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95a8e4257da960a169e7a1054fd1b9744316d529d6f41dda0f3849c5cb537e0b`
+- Image ID: `sha256:46797c858d7e95832fcccf333f63708647dd167c8d76b1d74b80deb27fbf6feb`
 - Created: `2025-01-07T02:24:10Z`
-- Virtual Size: ~ 74.42 Mb  
+- Virtual Size: ~ 74.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -122,16 +122,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r1 description:
+ca-certificates-20250619-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r1 webpage:
+ca-certificates-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r1 installed size:
-720 KiB
+ca-certificates-20250619-r0 installed size:
+692 KiB
 
-ca-certificates-20241121-r1 license:
+ca-certificates-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -139,16 +139,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r1 description:
+ca-certificates-bundle-20250619-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r1 webpage:
+ca-certificates-bundle-20250619-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r1 installed size:
-240 KiB
+ca-certificates-bundle-20250619-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20241121-r1 license:
+ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -156,16 +156,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.3-r0 description:
+libcrypto3-3.3.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.3-r0 webpage:
+libcrypto3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.3-r0 installed size:
+libcrypto3-3.3.4-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.3-r0 license:
+libcrypto3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -173,16 +173,16 @@ Apache-2.0
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-13.2.1_git20240309-r0 description:
+libgcc-13.2.1_git20240309-r1 description:
 GNU C compiler runtime libraries
 
-libgcc-13.2.1_git20240309-r0 webpage:
+libgcc-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgcc-13.2.1_git20240309-r0 installed size:
+libgcc-13.2.1_git20240309-r1 installed size:
 152 KiB
 
-libgcc-13.2.1_git20240309-r0 license:
+libgcc-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -224,16 +224,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.3-r0 description:
+libssl3-3.3.4-r0 description:
 SSL shared libraries
 
-libssl3-3.3.3-r0 webpage:
+libssl3-3.3.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.3-r0 installed size:
+libssl3-3.3.4-r0 installed size:
 800 KiB
 
-libssl3-3.3.3-r0 license:
+libssl3-3.3.4-r0 license:
 Apache-2.0
 
 ```
@@ -241,16 +241,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-13.2.1_git20240309-r0 description:
+libstdc++-13.2.1_git20240309-r1 description:
 GNU C++ standard runtime library
 
-libstdc++-13.2.1_git20240309-r0 webpage:
+libstdc++-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libstdc++-13.2.1_git20240309-r0 installed size:
+libstdc++-13.2.1_git20240309-r1 installed size:
 2652 KiB
 
-libstdc++-13.2.1_git20240309-r0 license:
+libstdc++-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
