@@ -1917,20 +1917,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.47+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.47%2bdfsg1-1.dsc' imagemagick_7.1.1.47+dfsg1-1.dsc 5104 SHA256:d7a3ebf67490ca1800649efb904db7a95e5b2d0075849abeced63c5477041387
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.47%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.47+dfsg1.orig.tar.xz 10509804 SHA256:0bcc0a5d518d14a8157733d7f536aa7510b19fa55fd7262ca760ea78deab6671
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.47%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.1.47+dfsg1-1.debian.tar.xz 274916 SHA256:3fc8dadeb429c1e14b63ded1ee6e6a20d17e4785ebf365fbc29d4f02b897ebd4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.47+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.47+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.47+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.47+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -3614,20 +3607,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-1.dsc' libxml2_2.12.7+dfsg+really2.9.14-1.dsc 2681 SHA256:bde8a79865bb079ecf858b54f1a89fd791135b7cff228cd63900106bb37ffae2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-1.debian.tar.xz 40760 SHA256:070629f9101eba338ddcf6e66933246a1f072e7e0eaf57c314eced6174e8fe05
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-1/
 
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
@@ -5512,21 +5498,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.22.0-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0-1.dsc' unbound_1.22.0-1.dsc 3169 SHA256:0f0af250e37756b71e644e9ca850efcd5b4b75edac8ae191bdb3b325abca613d
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA256:c5dd1bdef5d5685b2cedb749158dd152c52d44f65529a34ac15cd88d4b1b3d43
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA256:1b5d91ad040b1f1c0351b8f6fe288b4123fc63b887152463512be69bc687f915
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.22.0-1.debian.tar.xz' unbound_1.22.0-1.debian.tar.xz 28800 SHA256:d92e3d3231905c2612cd0c88a5f4634ef0372b7d963169c59e946a267efac75b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.22.0-1/
 
-- https://sources.debian.net/src/unbound/1.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.22.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29`
 
