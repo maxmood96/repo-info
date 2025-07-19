@@ -1,16 +1,17 @@
-# `maven:3.9.10-amazoncorretto-24-debian`
+# `maven:3.9.11-amazoncorretto-24-debian`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d70e7974e307bbd8a5485bef94c54df8ccf613b3859582f855bfe2dd359b83e`
-- Created: `2025-06-30T18:07:48Z`
-- Virtual Size: ~ 509.84 Mb  
+- Image ID: `sha256:09377281743cb0637389be20ec84fae75d79819b621807e110c73341c2af81a1`
+- Created: `2025-07-16T07:27:41Z`
+- Virtual Size: ~ 510.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-24-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
@@ -926,11 +927,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.65.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.65.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-24-amazon-corretto-jdk=1:24.0.1.9-1`
+### `dpkg` source package: `java-24-amazon-corretto-jdk=1:24.0.2.12-1`
 
 Binary Packages:
 
-- `java-24-amazon-corretto-jdk:amd64=1:24.0.1.9-1`
+- `java-24-amazon-corretto-jdk:amd64=1:24.0.2.12-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
