@@ -2045,14 +2045,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-143.153
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-143.153.dsc' linux_5.15.0-143.153.dsc 7820 SHA512:d1b71d8527e13f109af292ff8a2d80ca6b50d238a21420e23f786c7a1d906eb78ce259266333fb90bea22ee0854a642c6d82a3fae170447640a467646e060141
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-143.153.diff.gz' linux_5.15.0-143.153.diff.gz 11709695 SHA512:9a46b6331aafe15e796700e331da9d63a4b1c62c0a839385ed02da65e5fa52a05a9c19b0c898f64c4c80fca8359946b8e9a24331466ec97da55c5bbd143c5312
-```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2.2`
 
