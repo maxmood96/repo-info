@@ -1180,14 +1180,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-3ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3ubuntu3.1.dsc' gdk-pixbuf_2.42.10+dfsg-3ubuntu3.1.dsc 3053 SHA512:db4d6f5ef787164b73b4daebdd4bb9a6731625b123ecef5f1aba430110d46366e882a2e74fa08ffd1e421514aa7828a96fbe1367a015d5979eb42dcfc76c7a33
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA512:34f8d7d44d12308c57bd9622efdb7344bad5a89bad7043b40d4d1cab4112ff505ebb9df98d788068ddd2e44cee193e7bcb4f1d56f0432cc859075425652a06fc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3ubuntu3.1.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-3ubuntu3.1.debian.tar.xz 28372 SHA512:59af8c2c32dfb5f77a6baaa1fea595fd92fc0481b05f8c4b8b5d706838db19e2ad9b6a21142ebfc154e3a8b155d459a7343218e2a625eda055d0ed61d23c8ce9
-```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
 
