@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4814454eede9d83333bcc805dcb1213d6d71ff6ac92ef324209430d855093e58`
-- Created: `2025-07-05T02:23:10Z`
+- Image ID: `sha256:aaabb705d6b8de536b0f557901ca477bcc8137f94fd6900ee9389a9a888cc047`
+- Created: `2025-07-17T03:50:10Z`
 - Virtual Size: ~ 1.95 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -942,14 +942,9 @@ Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git-lfs=3.4.1-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.2.dsc' git-lfs_3.4.1-1ubuntu0.2.dsc 2785 SHA512:88c0016aa300f1f528ebfa07269995c0e1b9d73428fc47e0946803a4f8f176653cb4e9d9afff740bc1ec2bb15243928d7fa3cfc70ced01d665e9d9144bcc4787
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA512:ef30b7906548594edf28e75046bb78f70043d0363390ec3a241fc2ff7790b0f6ab1869b8a6b10d13a4cbcd559db7ea51aa4c1d64e75707357b84f1ddc0f7095c
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.2.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.2.debian.tar.xz 4732 SHA512:c64a9717e2ea55e9370033b377b5279361ebffdaace3402494b703ae8d0969a7d4b982576993b06e333f3bf2fba15ee1ee962c941880bd1bff9cb6d9773c6a56
-```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
 
@@ -1863,19 +1858,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-63.66`
+### `dpkg` source package: `linux=6.8.0-64.67`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-63.66`
+- `linux-libc-dev:amd64=6.8.0-64.67`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-64.67
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-64.67.dsc' linux_6.8.0-64.67.dsc 9342 SHA512:867473b421b8177eb562182c3b55f5a39cf3322dc51b7c0daa55e8a2306debc231b74b5393ff6eb469749e455e646b71561a77d03552ff547e788eb55cbae551
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-64.67.diff.gz' linux_6.8.0-64.67.diff.gz 5617250 SHA512:1b31207c5664897d5a5d6f406009d7786a408f7c8c4e6a46d441cca7489be30c9381f62090d37baab4a540a8dd48dd87ebed96ceb0022724031a9abdcb5968fd
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
