@@ -1,19 +1,19 @@
-# `erlang:28.0.1.0-slim`
+# `erlang:28.0.2.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3b0749f4f02a54d04dc2be13130a401ab35974172cd94cfab9c1987d009c7d6`
-- Created: `2025-06-17T14:21:25Z`
-- Virtual Size: ~ 295.17 Mb  
+- Image ID: `sha256:bf979a997f9d0bd158ad506945aebfb5af3755f3b06143ba3ae66806e1ed8cde`
+- Created: `2025-07-19T21:18:01Z`
+- Virtual Size: ~ 296.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=28.0.1`
+  - `OTP_VERSION=28.0.2`
   - `REBAR3_VERSION=3.25.0`
 - Labels:
-  - `org.opencontainers.image.version=28.0.1`
+  - `org.opencontainers.image.version=28.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -750,11 +750,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.40-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.40-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.9-2+deb12u4`
+### `dpkg` source package: `gnutls28=3.7.9-2+deb12u5`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.9-2+deb12u4`
+- `libgnutls30:amd64=3.7.9-2+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -775,18 +775,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.9-2+deb12u4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u4.dsc' gnutls28_3.7.9-2+deb12u4.dsc 3421 SHA256:2b0d6945d682aa97561b4cb5ffe8ba202074fe4d35fc0e6d34adec2131dcb870
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u4.debian.tar.xz' gnutls28_3.7.9-2+deb12u4.debian.tar.xz 110608 SHA256:40cf28142e9fe9cba6c62c99bce3ccfa33f838faa7ba8c7f3aed62b04c751c1f
+$ apt-get source -qq --print-uris gnutls28=3.7.9-2+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u5.dsc' gnutls28_3.7.9-2+deb12u5.dsc 3421 SHA256:47301d7eab05f68530111dd78ac03de9ecbc842d8783de2d4147e4f122ad81d1
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u5.debian.tar.xz' gnutls28_3.7.9-2+deb12u5.debian.tar.xz 116888 SHA256:70cf23e06e4bb67463c11ee0c9bb27cc78654e6e005782990ffd8b6846964259
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.9-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.9-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.8-5`
 
