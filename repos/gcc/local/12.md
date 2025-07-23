@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:80c3df578c590b4a1e007489d5a50d5bd6b9204ed19ebc197f03866500792e1c`
+- Image ID: `sha256:b45cd04baad81409253c9305810db75909ea7375075ee40b261382c6a6ae665d`
 - Created: `2025-07-11T08:25:10Z`
 - Virtual Size: ~ 1.38 Gb  
   (total size of all layers on-disk)
@@ -938,13 +938,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/diffutils/1:3.8-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/diffutils/1:3.8-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `djvulibre=3.5.28-2`
+### `dpkg` source package: `djvulibre=3.5.28-2.1~deb12u1`
 
 Binary Packages:
 
-- `libdjvulibre-dev:amd64=3.5.28-2+b1`
-- `libdjvulibre-text=3.5.28-2`
-- `libdjvulibre21:amd64=3.5.28-2+b1`
+- `libdjvulibre-dev:amd64=3.5.28-2.1~deb12u1`
+- `libdjvulibre-text=3.5.28-2.1~deb12u1`
+- `libdjvulibre21:amd64=3.5.28-2.1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share/doc/libdjvulibre-text/copyright`, `/usr/share/doc/libdjvulibre21/copyright`)
 
@@ -953,17 +953,17 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris djvulibre=3.5.28-2
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.28-2.dsc' djvulibre_3.5.28-2.dsc 2388 SHA256:0b5f31e70a8f81afec47e67e9465dbece7756f0c7f88da643f0dda82bf78a1ba
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.28.orig.tar.xz' djvulibre_3.5.28.orig.tar.xz 2959024 SHA256:1223b7bf7c8dfe2e290882f3bfb88ba2468b30495a1bf8dfd54dc7e810987887
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.28-2.debian.tar.xz' djvulibre_3.5.28-2.debian.tar.xz 17420 SHA256:6f85dcd7cdb856cc3e4a31fc381e73a6cab717c90e058f474fb4d2ab29635d91
+$ apt-get source -qq --print-uris djvulibre=3.5.28-2.1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/d/djvulibre/djvulibre_3.5.28-2.1%7edeb12u1.dsc' djvulibre_3.5.28-2.1~deb12u1.dsc 2562 SHA256:11ef087eb1bbffd6414967cb432e9fb8ab919bfb0bfb95247d6c84dbae0de263
+'http://deb.debian.org/debian-security/pool/updates/main/d/djvulibre/djvulibre_3.5.28.orig.tar.xz' djvulibre_3.5.28.orig.tar.xz 2959024 SHA256:1223b7bf7c8dfe2e290882f3bfb88ba2468b30495a1bf8dfd54dc7e810987887
+'http://deb.debian.org/debian-security/pool/updates/main/d/djvulibre/djvulibre_3.5.28-2.1%7edeb12u1.debian.tar.xz' djvulibre_3.5.28-2.1~deb12u1.debian.tar.xz 18000 SHA256:fd426066bd9bee9d6fd903a351b83cb55311d7109d4d39f7cb7b4a5b59933db2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/djvulibre/3.5.28-2/ (for browsing the source)
-- https://sources.debian.net/src/djvulibre/3.5.28-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/djvulibre/3.5.28-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/djvulibre/3.5.28-2.1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/djvulibre/3.5.28-2.1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/djvulibre/3.5.28-2.1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.21.22`
 
@@ -1675,11 +1675,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.40-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.40-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.9-2+deb12u4`
+### `dpkg` source package: `gnutls28=3.7.9-2+deb12u5`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.9-2+deb12u4`
+- `libgnutls30:amd64=3.7.9-2+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1700,18 +1700,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.9-2+deb12u4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u4.dsc' gnutls28_3.7.9-2+deb12u4.dsc 3421 SHA256:2b0d6945d682aa97561b4cb5ffe8ba202074fe4d35fc0e6d34adec2131dcb870
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u4.debian.tar.xz' gnutls28_3.7.9-2+deb12u4.debian.tar.xz 110608 SHA256:40cf28142e9fe9cba6c62c99bce3ccfa33f838faa7ba8c7f3aed62b04c751c1f
+$ apt-get source -qq --print-uris gnutls28=3.7.9-2+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u5.dsc' gnutls28_3.7.9-2+deb12u5.dsc 3421 SHA256:47301d7eab05f68530111dd78ac03de9ecbc842d8783de2d4147e4f122ad81d1
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.9-2%2bdeb12u5.debian.tar.xz' gnutls28_3.7.9-2+deb12u5.debian.tar.xz 116888 SHA256:70cf23e06e4bb67463c11ee0c9bb27cc78654e6e005782990ffd8b6846964259
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.9-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.9-2+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.9-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.74.0-3`
 
