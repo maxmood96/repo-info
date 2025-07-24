@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:628553601fd02c1c910b91fb7ff01552834368ba351ce50606878d844be1a257`
+- Image ID: `sha256:816fa9b218a01f2c965267b3350001add3c0ee010bded24a5256485968c82fcb`
 - Created: `2025-07-07T22:15:35Z`
-- Virtual Size: ~ 427.34 Mb  
+- Virtual Size: ~ 427.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.8`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.8.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=44ae70fee043da3ce48289b7a52618ebe32dc083253993d486211c7e445c8642`
+  - `RUBY_VERSION=3.3.9`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.9.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=2b24a2180a2f7f63c099851a1d01e6928cf56d515d136a91bd2075423a7a76bb`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -559,16 +559,16 @@ LGPL-2.1-or-later
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.44-r0 description:
+imagemagick-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.44-r0 webpage:
+imagemagick-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.44-r0 installed size:
-3639 KiB
+imagemagick-7.1.2.0-r0 installed size:
+3635 KiB
 
-imagemagick-7.1.1.44-r0 license:
+imagemagick-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -576,16 +576,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.1.44-r0 description:
+imagemagick-jpeg-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.1.44-r0 webpage:
+imagemagick-jpeg-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.1.44-r0 installed size:
+imagemagick-jpeg-7.1.2.0-r0 installed size:
 54 KiB
 
-imagemagick-jpeg-7.1.1.44-r0 license:
+imagemagick-jpeg-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.44-r0 description:
+imagemagick-libs-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.44-r0 webpage:
+imagemagick-libs-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.44-r0 installed size:
+imagemagick-libs-7.1.2.0-r0 installed size:
 4273 KiB
 
-imagemagick-libs-7.1.1.44-r0 license:
+imagemagick-libs-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -610,16 +610,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.1.44-r0 description:
+imagemagick-pdf-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.1.44-r0 webpage:
+imagemagick-pdf-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.1.44-r0 installed size:
+imagemagick-pdf-7.1.2.0-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.1.44-r0 license:
+imagemagick-pdf-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -627,16 +627,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.1.44-r0 description:
+imagemagick-tiff-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.1.44-r0 webpage:
+imagemagick-tiff-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.1.44-r0 installed size:
+imagemagick-tiff-7.1.2.0-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.1.44-r0 license:
+imagemagick-tiff-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.1.44-r0 description:
+imagemagick-webp-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.1.44-r0 webpage:
+imagemagick-webp-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.1.44-r0 installed size:
+imagemagick-webp-7.1.2.0-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.1.44-r0 license:
+imagemagick-webp-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -1392,16 +1392,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.0.2-r0 description:
+mercurial-7.0.3-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.0.2-r0 webpage:
+mercurial-7.0.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.0.2-r0 installed size:
+mercurial-7.0.3-r0 installed size:
 16 MiB
 
-mercurial-7.0.2-r0 license:
+mercurial-7.0.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1409,16 +1409,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.0.2-r0 description:
+mercurial-pyc-7.0.3-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.0.2-r0 webpage:
+mercurial-pyc-7.0.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.0.2-r0 installed size:
-9480 KiB
+mercurial-pyc-7.0.3-r0 installed size:
+9481 KiB
 
-mercurial-pyc-7.0.2-r0 license:
+mercurial-pyc-7.0.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1987,16 +1987,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```
