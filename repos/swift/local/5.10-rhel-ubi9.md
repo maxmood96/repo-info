@@ -506,34 +506,19 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url git-2.47.1-2.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.1-2.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `git-core-2.47.1-2.el9_6.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url git-core-2.47.1-2.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.1-2.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `git-core-doc-2.47.1-2.el9_6.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url git-core-doc-2.47.1-2.el9_6.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.1-2.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glib2-2.68.4-16.el9_6.2.x86_64`
 
@@ -2042,12 +2027,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/sourc
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-Git-2.47.1-2.el9_6.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.1-2.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `perl-HTTP-Tiny-0.076-462.el9.noarch`
 
