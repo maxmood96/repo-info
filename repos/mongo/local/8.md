@@ -1,10 +1,10 @@
-# `mongo:8.0.11-noble`
+# `mongo:8.0.12-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86a60473693d28072311f2a95339c9f77ebf580c94acd2faadf48e62d246c35e`
-- Created: `2025-06-27T22:01:28Z`
-- Virtual Size: ~ 902.35 Mb  
+- Image ID: `sha256:3628b824922ae469c478a85a325af2cb516237bf83defc63d7db60c7a6ed898c`
+- Created: `2025-07-23T22:01:30Z`
+- Virtual Size: ~ 908.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.11`
+  - `MONGO_VERSION=8.0.12`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -817,12 +817,12 @@ $ apt-get source -qq --print-uris init-system-helpers=1.66ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1.tar.xz' init-system-helpers_1.66ubuntu1.tar.xz 45100 SHA512:222f73347b0ce9eb137c8ce5dc36e9fedbc8dc5ed3f1fde7fbf52258a5437d0a10d3d610ca1d1b206646bb92a5355d1061705440b2d22d9109b5de6d1cb92e98
 ```
 
-### `dpkg` source package: `jq=1.7.1-3build1`
+### `dpkg` source package: `jq=1.7.1-3ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `jq=1.7.1-3build1`
-- `libjq1:amd64=1.7.1-3build1`
+- `jq=1.7.1-3ubuntu0.24.04.1`
+- `libjq1:amd64=1.7.1-3ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/copyright`)
 
@@ -835,10 +835,10 @@ Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/co
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jq=1.7.1-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.7.1-3build1.dsc' jq_1.7.1-3build1.dsc 2140 SHA512:008ce42434857d158d32a56b6385312afe759e6d807db8d0df6c44df251490c96d89b963c7caaa4db19448650909296c9dd91e7f007653ef5bdc18c3de475cfb
+$ apt-get source -qq --print-uris jq=1.7.1-3ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.7.1-3ubuntu0.24.04.1.dsc' jq_1.7.1-3ubuntu0.24.04.1.dsc 2139 SHA512:d61a2080431879460fb27a406dc5e487afdd438cac1e85b80f0aa2fa2818036996c655a7c539218bc228db7c4a05fb26abdb54cd3cb38471c65472c3f3a3be8e
 'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.7.1.orig.tar.gz' jq_1.7.1.orig.tar.gz 1323338 SHA512:af9c444e5306423182f467a53acdf45bb8aefa058a47f490ce16395f0aebfb7627e3843f65e96f41cd9d4b72b8ad274ab0bdb061abc6990b1158f86d2256d4ec
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.7.1-3build1.debian.tar.xz' jq_1.7.1-3build1.debian.tar.xz 14036 SHA512:3eaedafb74f81c0ea79500549270b19d4d590eea7dc7bbed62f5aa87d2fd65cec3558edd423c5f52407e75465f138c76297bca826c3ec9dd48884b6d9fd5c5db
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.7.1-3ubuntu0.24.04.1.debian.tar.xz' jq_1.7.1-3ubuntu0.24.04.1.debian.tar.xz 18772 SHA512:80ca8ace196026750286105ed992e3da96223a87cdd5670af93760030141da66dab2f7422bb487376285bf3f6e04069403b1666737e8f3b220ae872d7444a7a5
 ```
 
 ### `dpkg` source package: `keyutils=1.6.3-3build1`
@@ -1394,11 +1394,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.5.5`
+### `dpkg` source package: `mongodb-mongosh=2.5.6`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.5.5`
+- `mongodb-mongosh=2.5.6`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1409,17 +1409,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.11`
+### `dpkg` source package: `mongodb-org=8.0.12`
 
 Binary Packages:
 
-- `mongodb-org=8.0.11`
-- `mongodb-org-database=8.0.11`
-- `mongodb-org-database-tools-extra=8.0.11`
-- `mongodb-org-mongos=8.0.11`
-- `mongodb-org-server=8.0.11`
-- `mongodb-org-shell=8.0.11`
-- `mongodb-org-tools=8.0.11`
+- `mongodb-org=8.0.12`
+- `mongodb-org-database=8.0.12`
+- `mongodb-org-database-tools-extra=8.0.12`
+- `mongodb-org-mongos=8.0.12`
+- `mongodb-org-server=8.0.12`
+- `mongodb-org-shell=8.0.12`
+- `mongodb-org-tools=8.0.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
