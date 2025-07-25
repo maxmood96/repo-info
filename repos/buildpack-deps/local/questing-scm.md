@@ -2207,14 +2207,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline8t64/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-6
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-6.dsc' readline_8.2-6.dsc 2810 SHA512:b748d32b4dcb87a209cdecf6d28f5e799761577b787d8a116fb59dc73f2aa421d64687fd5f5359f5d46e8915676720b83685d8eb70e9d2840d8bf26a068d9e34
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA512:0a451d459146bfdeecc9cdd94bda6a6416d3e93abd80885a40b334312f16eb890f8618a27ca26868cebbddf1224983e631b1cbc002c1a4d1cd0d65fba9fea49a
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-6.debian.tar.xz' readline_8.2-6.debian.tar.xz 38396 SHA512:6e8f28dd4b3f7e579f97235d31dd19d5a452edb61af247652ffa4c5fd70de23d34581da71e8bba66beb69aa63311ce27177c27e55972cceb6ae886369faa2217
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.2-6/
+
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build7`
 

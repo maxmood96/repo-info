@@ -3827,20 +3827,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-1.dsc' libxml2_2.12.7+dfsg+really2.9.14-1.dsc 2681 SHA256:bde8a79865bb079ecf858b54f1a89fd791135b7cff228cd63900106bb37ffae2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-1.debian.tar.xz 40760 SHA256:070629f9101eba338ddcf6e66933246a1f072e7e0eaf57c314eced6174e8fe05
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-1/
 
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
@@ -3993,20 +3986,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.12.35-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.35-1.dsc' linux_6.12.35-1.dsc 219407 SHA256:a1f10094595d32037a3d56fe030e1f1cc4f7c1c985d5c37c19c784376b4956fc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.35.orig.tar.xz' linux_6.12.35.orig.tar.xz 151106700 SHA256:62e0238ab1d6bffbab18257aa13d3a7d073f2424d265284e764eb530c316e24e
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.35-1.debian.tar.xz' linux_6.12.35-1.debian.tar.xz 1659924 SHA256:42166e7729eb9aa652514a5e6e8e67e38933aaf7ca358bdae08019d489f87382
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.12.35-1/
 
-- https://sources.debian.net/src/linux/6.12.35-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.35-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.35-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 

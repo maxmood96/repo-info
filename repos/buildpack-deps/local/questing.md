@@ -4219,14 +4219,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-6
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-6.dsc' readline_8.2-6.dsc 2810 SHA512:b748d32b4dcb87a209cdecf6d28f5e799761577b787d8a116fb59dc73f2aa421d64687fd5f5359f5d46e8915676720b83685d8eb70e9d2840d8bf26a068d9e34
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA512:0a451d459146bfdeecc9cdd94bda6a6416d3e93abd80885a40b334312f16eb890f8618a27ca26868cebbddf1224983e631b1cbc002c1a4d1cd0d65fba9fea49a
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-6.debian.tar.xz' readline_8.2-6.debian.tar.xz 38396 SHA512:6e8f28dd4b3f7e579f97235d31dd19d5a452edb61af247652ffa4c5fd70de23d34581da71e8bba66beb69aa63311ce27177c27e55972cceb6ae886369faa2217
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.2-6/
+
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 
@@ -4669,14 +4668,9 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.22.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0-1ubuntu1.dsc' unbound_1.22.0-1ubuntu1.dsc 3037 SHA512:ac17e4565bb349d6cd32a1615b3e2bbd4fb7885ff06e3b26a54ca7626c8361521e42e0a9e2ea6e8a08579e4d90c7f710b1e5473b7db3ac79158b32f5d3551ae8
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA512:6c873e19902ce6cd59cec7084d5dba1a5bd5fe4437c827ae69bdf9273bcd8d2d1ec0dc183076f8d2e1fd38730bf8c10852d678399f0b2ea8ccf7e39119568978
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0-1ubuntu1.debian.tar.xz' unbound_1.22.0-1ubuntu1.debian.tar.xz 29768 SHA512:fe8d444a4a36a63d0f452b91e77bf50df3ad34cbd78ba19f944215c2d98ff87c3b7c73c1cc111123db9e50065a54476df248ff94a5c98f360ec2c89a9b2a3f8b
-```
 
 ### `dpkg` source package: `unzip=6.0-28ubuntu6`
 
