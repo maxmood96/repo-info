@@ -2304,14 +2304,9 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-3ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3ubuntu3.1.dsc' gdk-pixbuf_2.42.10+dfsg-3ubuntu3.1.dsc 3053 SHA512:db4d6f5ef787164b73b4daebdd4bb9a6731625b123ecef5f1aba430110d46366e882a2e74fa08ffd1e421514aa7828a96fbe1367a015d5979eb42dcfc76c7a33
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA512:34f8d7d44d12308c57bd9622efdb7344bad5a89bad7043b40d4d1cab4112ff505ebb9df98d788068ddd2e44cee193e7bcb4f1d56f0432cc859075425652a06fc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3ubuntu3.1.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-3ubuntu3.1.debian.tar.xz 28372 SHA512:59af8c2c32dfb5f77a6baaa1fea595fd92fc0481b05f8c4b8b5d706838db19e2ad9b6a21142ebfc154e3a8b155d459a7343218e2a625eda055d0ed61d23c8ce9
-```
 
 ### `dpkg` source package: `geos=3.12.1-3build1`
 
@@ -7129,15 +7124,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-21-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.7+6~us1-0ubuntu1~24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.7%2b6%7eus1-0ubuntu1%7e24.04.dsc' openjdk-21_21.0.7+6~us1-0ubuntu1~24.04.dsc 5101 SHA512:ac5f171571523aa8239538f6ee79c4c106684f762c402a5fbaa5e11475a334f324d735cdc12dd76c653c2ef7e08db5c0229c6d9951e51da13ef129787a8ea3c9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.7%2b6%7eus1.orig-googletest.tar.xz' openjdk-21_21.0.7+6~us1.orig-googletest.tar.xz 612760 SHA512:93ebb96da1b9b77dd07152c91ad7da1957b9fbb17a45879c0c536f2e4157fd090a25cfff4c675d5ae0cce734039513f7e6cf8971d6f39ec36e5b12d40837aaaa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.7%2b6%7eus1.orig.tar.xz' openjdk-21_21.0.7+6~us1.orig.tar.xz 69626988 SHA512:758a52fb0cf67478c2434e9e84e633b5e42faff1dca14f7aec742b13ff7a4ca85eb3ed9de9ce23d36a0b0305429a5f8995f2fe6fe7a6ecd305124cd1377f9ed1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.7%2b6%7eus1-0ubuntu1%7e24.04.debian.tar.xz' openjdk-21_21.0.7+6~us1-0ubuntu1~24.04.debian.tar.xz 216192 SHA512:117d0f92bb8f2566d7a3a5528c7f69b2f0cb203be4f51493b37c20674fd5877605b4c494d34e91e62cff928de012e67fa8c97afd9c6255961f6a0ff5ae30ca20
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.3`
 
@@ -7299,15 +7288,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.dsc' openssh_9.6p1-3ubuntu13.12.dsc 3346 SHA512:0840b1b7f7399b10bd9d4d9d867822fd429ce2843ed1e0ec4d362ff2e6da1b575f1f2246fb9e9105ab1f055824ca142ca91acbc923340e5b0e24c2d746eca33d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.debian.tar.xz' openssh_9.6p1-3ubuntu13.12.debian.tar.xz 206776 SHA512:f3d54e141affd307bfbd978952922dbee9a17f20649b16169dba38fd1c2da14406115012fbdd9b388fdcb9fef3dcf2c9cf64cc28b11f62306b49d1570ce022e6
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
