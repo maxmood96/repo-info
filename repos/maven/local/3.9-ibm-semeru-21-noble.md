@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7c665b8dc93f32251eb6d462e071e1336ae01be19f2cc56082377091b1d6f53`
+- Image ID: `sha256:75f312e4cfb7c3f5a76a3ec618d8688acd33c2b429dbc788406f6caa00e3762e`
 - Created: `2025-07-16T06:51:38Z`
-- Virtual Size: ~ 605.00 Mb  
+- Virtual Size: ~ 617.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.7+6_openj9-0.51.0`
+  - `JAVA_VERSION=jdk-21.0.8+9_openj9-0.53.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `MAVEN_HOME=/usr/share/maven`
@@ -1783,11 +1783,11 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
 ```
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.12`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.13`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.12`
+- `openssh-client=1:9.6p1-3ubuntu13.13`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1802,11 +1802,11 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.dsc' openssh_9.6p1-3ubuntu13.12.dsc 3346 SHA512:0840b1b7f7399b10bd9d4d9d867822fd429ce2843ed1e0ec4d362ff2e6da1b575f1f2246fb9e9105ab1f055824ca142ca91acbc923340e5b0e24c2d746eca33d
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.13.dsc' openssh_9.6p1-3ubuntu13.13.dsc 3346 SHA512:9c3d1d9724c9344ced2ac313d75ee6939d1ea4c2422267e6b84337fe8904c9ce1afab509581b160190453508c343fe4bde6749e72d00445f976d8fd8be4b0e19
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.debian.tar.xz' openssh_9.6p1-3ubuntu13.12.debian.tar.xz 206776 SHA512:f3d54e141affd307bfbd978952922dbee9a17f20649b16169dba38fd1c2da14406115012fbdd9b388fdcb9fef3dcf2c9cf64cc28b11f62306b49d1570ce022e6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.13.debian.tar.xz' openssh_9.6p1-3ubuntu13.13.debian.tar.xz 207116 SHA512:f909fedc14066656855d455996631cda9eff3b144d7e28bef8acfacc229e0d7ab42f77c6d1340700fd049558aa359dce44026bde34a7b885c7afa14270590229
 ```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
