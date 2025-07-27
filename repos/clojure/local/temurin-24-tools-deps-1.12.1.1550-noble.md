@@ -2070,15 +2070,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.dsc' openssh_9.6p1-3ubuntu13.12.dsc 3346 SHA512:0840b1b7f7399b10bd9d4d9d867822fd429ce2843ed1e0ec4d362ff2e6da1b575f1f2246fb9e9105ab1f055824ca142ca91acbc923340e5b0e24c2d746eca33d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.12.debian.tar.xz' openssh_9.6p1-3ubuntu13.12.debian.tar.xz 206776 SHA512:f3d54e141affd307bfbd978952922dbee9a17f20649b16169dba38fd1c2da14406115012fbdd9b388fdcb9fef3dcf2c9cf64cc28b11f62306b49d1570ce022e6
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
