@@ -1,10 +1,10 @@
-# `odoo:18.0-20250710`
+# `odoo:18.0-20250725`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1478c09d56aaebc28ba9b8081e86df3c98caee11d5843fc4423fd9c1bc446526`
-- Created: `2025-07-10T14:32:17Z`
-- Virtual Size: ~ 1.99 Gb  
+- Image ID: `sha256:6b4e8d04ff72c4c1b6ffbfd26fa1222b0f4001b29a38c7e02fc86627d6b1f4ed`
+- Created: `2025-07-25T14:16:20Z`
+- Virtual Size: ~ 2.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -10016,11 +10016,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250710`
+### `dpkg` source package: `odoo=18.0.20250725`
 
 Binary Packages:
 
-- `odoo=18.0.20250710`
+- `odoo=18.0.20250725`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10433,12 +10433,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=278.pgdg24.04+1`
+### `dpkg` source package: `postgresql-common=281.pgdg24.04+1`
 
 Binary Packages:
 
-- `postgresql-client=17+278.pgdg24.04+1`
-- `postgresql-client-common=278.pgdg24.04+1`
+- `postgresql-client=17+281.pgdg24.04+1`
+- `postgresql-client-common=281.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
