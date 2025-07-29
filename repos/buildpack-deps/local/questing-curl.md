@@ -117,14 +117,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.2-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.0.2-2ubuntu2.dsc' audit_4.0.2-2ubuntu2.dsc 2757 SHA512:168529e7b6d57c1d4b3d4624e5f81e8f31939907715c2f5104be4b78068641210fa5c8909dc9b3d0b5a400b7c354ce4a63facc7ea1d88423a4e65a3221152b50
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.0.2.orig.tar.gz' audit_4.0.2.orig.tar.gz 1198769 SHA512:13d4d07b316fc1380d75baefbb1345b34286015d52e758c14b2f82781cf4cffc16b6eb29d999563ff40caa6d005630a5dfc44741e49b71291c9beb84ddc452a4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.0.2-2ubuntu2.debian.tar.xz' audit_4.0.2-2ubuntu2.debian.tar.xz 19532 SHA512:253bd3e605022824735845f050dce42948bd613751b7b2fc409771122a6ea58f462828c8a83f5a81fe123c4dcc12bf6f469f58915c8fc94e72c3f12a629947e2
-```
 
 ### `dpkg` source package: `base-files=13.7ubuntu1`
 
@@ -266,13 +261,9 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.277ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.277ubuntu1.dsc' cdebconf_0.277ubuntu1.dsc 2873 SHA512:d02a094ef7249b90586cf2a1de7b512330d9b00569edd84392aed1611a22b9dfea63318378a748e72dc4c021281c355d3f3f2874350e2b5e74701054494059f1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.277ubuntu1.tar.xz' cdebconf_0.277ubuntu1.tar.xz 286968 SHA512:ebb8cee8ee8d84aaab49a03211d9cad56dec362d80e63f7375dad09e06eecb7a44811078327daf73d14f6bb9bbbba13adc1ac9ec03dbda0ea31c79532c5a6f12
-```
 
 ### `dpkg` source package: `coreutils-from=0.0.0~ubuntu3`
 
@@ -524,13 +515,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.18ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.18ubuntu3.dsc' dpkg_1.22.18ubuntu3.dsc 3414 SHA512:e6b336219c532b8b90c18b047e55e9a75d772397a5aa37fe8c35f65be674363687a6231ac482b2e629aed663f5fb597124fadb610f1bba9a3714542605643863
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.18ubuntu3.tar.xz' dpkg_1.22.18ubuntu3.tar.xz 5679260 SHA512:03f9afb70676ce904684e58739e66dcae766400f5db9f4ea8715a4f13afa8b529b89c55dfd12f3369442184d1dbc62ff78cf1a647c5db550ce3767cbc66876eb
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu1`
 
@@ -780,15 +767,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9-2ubuntu3.dsc' gnutls28_3.8.9-2ubuntu3.dsc 3380 SHA512:668bdb0d6e30c20d6043d1ac0bbdcf61fdce51d53ffab4999ecf30f6eb1ed2365e02dbb1335072c4951c84e5d18d660e955db1d975df8b02c9d2738e9b231c0c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA512:b3b201671bf4e75325610a0291d4cd36a669718e22b3685246b64bde97b5bd94f463ab376ed817869869714115f4ff11bdc53c32604bb04a8ff8e10daa6d1fc7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA512:0eb265bbbc1ee735ecf4e3d308eacf3e3aebe4a9b0848af1fb340ec18e78bb516e1c74a6a72d4764bb03086d88d3ada3cd7ed82861a8f4ca7a403d9a5eb9a3a7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.9-2ubuntu3.debian.tar.xz' gnutls28_3.8.9-2ubuntu3.debian.tar.xz 85852 SHA512:babdee5c127c45d2e7525dc3ebd416c5fd557a6eff7beda3513bc500ab9a77eb4f924a5f1a6e3134cf99594f66c82e82dc70eafae215dd703c96197f93c0fe31
-```
 
 ### `dpkg` source package: `grep=3.11-4build1`
 
@@ -907,15 +888,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-4ubuntu2.dsc' krb5_1.21.3-4ubuntu2.dsc 4090 SHA512:600109c8cd99e304e2e5b9141a3c0d535881a6d985e6c99a80900be90aefca20fc2b71c1ce9a99d1020a8957a6b2c9c3b30b43644e62e59066032aa37146aaad
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA512:87bc06607f4d95ff604169cea22180703a42d667af05f66f1569b8bd592670c42820b335e5c279e8b4f066d1e7da20f1948a1e4def7c5d295c170cbfc7f49c71
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA512:8992a5f5247315b9846aa73be4ee1ea223c0231a52d5c6c28718b1f3e3b45d62e2dad4aa5543a83163d1369bb79886b6c1c22766f22d8aa2f6b2575c54d0075c
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-4ubuntu2.debian.tar.xz' krb5_1.21.3-4ubuntu2.debian.tar.xz 110988 SHA512:64052c74bc443c7f08875ff71ef56d962ef55ac763b9034ca07369e089cbf0a293ac984d0ae67da4d8ef124a73adffcbed9787aab62f4794374d3e8801b4b2ce
-```
 
 ### `dpkg` source package: `libassuan=3.0.2-2`
 
@@ -1961,10 +1936,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.46.1-6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6.dsc' sqlite3_3.46.1-6.dsc 2632 SHA512:e45f4fb4944b79b7c5858d8daa7a1d2b6c0316873014c4bee4fe30b547ac13e2a0792588733509ba6be43e17761ebfced8ca74c60ab0839f5af338ed36a8d4ff
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6ubuntu1.dsc' sqlite3_3.46.1-6ubuntu1.dsc 2739 SHA512:263cb6f141211ca06d487bb2b5ffc734e93473e89e57bb6329652d1f32b684f0f967f504d025309b3b1fd4dd14e85f43f9d4392dab9f90fe31bda0205c7558b4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6.debian.tar.xz' sqlite3_3.46.1-6.debian.tar.xz 33932 SHA512:3621094c25b6ab349e00c9368ec478fe7de59ca59edc8dc3c1fa92336e7de0b2d0d58856d228215edd265ff47887be1025184ad1786c33086affc1a38d157e20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6ubuntu1.debian.tar.xz' sqlite3_3.46.1-6ubuntu1.debian.tar.xz 35556 SHA512:ba10b2713940f5fe26bbe5ceba04609ec7e5f88de8c2272b62cc574ba530d19c2f32feb5acfaaedf922290f3c37ee9e47f01ef80593280d124fb49c413b6ae81
 ```
 
 ### `dpkg` source package: `systemd=257.6-1ubuntu1`
