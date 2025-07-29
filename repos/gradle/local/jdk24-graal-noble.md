@@ -1871,9 +1871,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-64.67
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-64.67.dsc' linux_6.8.0-64.67.dsc 9342 SHA512:867473b421b8177eb562182c3b55f5a39cf3322dc51b7c0daa55e8a2306debc231b74b5393ff6eb469749e455e646b71561a77d03552ff547e788eb55cbae551
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-64.67.diff.gz' linux_6.8.0-64.67.diff.gz 5617250 SHA512:1b31207c5664897d5a5d6f406009d7786a408f7c8c4e6a46d441cca7489be30c9381f62090d37baab4a540a8dd48dd87ebed96ceb0022724031a9abdcb5968fd
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-64.67.dsc' linux_6.8.0-64.67.dsc 9342 SHA512:867473b421b8177eb562182c3b55f5a39cf3322dc51b7c0daa55e8a2306debc231b74b5393ff6eb469749e455e646b71561a77d03552ff547e788eb55cbae551
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-64.67.diff.gz' linux_6.8.0-64.67.diff.gz 5617250 SHA512:1b31207c5664897d5a5d6f406009d7786a408f7c8c4e6a46d441cca7489be30c9381f62090d37baab4a540a8dd48dd87ebed96ceb0022724031a9abdcb5968fd
 ```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
@@ -2736,15 +2736,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.dsc' sqlite3_3.45.1-1ubuntu2.3.dsc 2601 SHA512:2bc0a399fd75a2be9db259e65435b3628db50fcf13d8f9e518837b0a0ffa30b13ce4237fb7ab23ccee4912147ef53ece2420d5c0bf8aedde43ad7f39e92d7d4b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.3.debian.tar.xz 33384 SHA512:e6f48f7e73237602d6ba3faaca90d8c20507ddb663d85b616b2f5d460ef2b83c23a36ebd6eb472671b4f749e3e4960cfebcd7b531c0220ecc14bc22e1ead419d
-```
 
 ### `dpkg` source package: `subversion=1.14.3-1build4`
 
