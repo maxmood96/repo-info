@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2088b3b8d4c183b05a57037d348d5337ad835dd57144d238f68a6f4182cf8099`
+- Image ID: `sha256:156448573ab0509e33a00e79e33eff1aeb8caedda8c5724c93cc01285fea8d5c`
 - Created: `2025-06-27T00:04:37Z`
-- Virtual Size: ~ 403.18 Mb  
+- Virtual Size: ~ 412.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.7+6_openj9-0.51.0`
+  - `JAVA_VERSION=jdk-21.0.8+9_openj9-0.53.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `TOMEE_VER=10.1.0`
@@ -1866,15 +1866,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.4.dsc' sqlite3_3.37.2-2ubuntu0.4.dsc 2602 SHA512:fb62fa3ed86e19ef456a86b924cf0d4fcd21b565e8e85376fd54ac39ef3daa2bc3bd0b3b8b7008217e31c65e04e0dafae0f425bd1be39b33b0e67312ec5a1b7f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz 32512 SHA512:2b7c13cdf556fc0f320c1c37ab7d4f9c1b528dc2fc11223d72c0fcc5a50a5fbb3f8e6432236b42b308886a26d248edb5f498249527513247d39cf2705fc2b4aa
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.16`
 
