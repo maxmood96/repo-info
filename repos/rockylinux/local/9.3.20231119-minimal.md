@@ -234,8 +234,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gpgme-1.15.1-6.el9
-http://mirrors.rit.edu/rocky/9.6/AppStream/source/tree/Packages/g/gpgme-1.15.1-6.el9.src.rpm
 http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/g/gpgme-1.15.1-6.el9.src.rpm
+http://mirrors.rit.edu/rocky/9.6/AppStream/source/tree/Packages/g/gpgme-1.15.1-6.el9.src.rpm
 ```
 
 ### `rpm` package: `grep-3.6-5.el9.x86_64`
@@ -533,8 +533,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpsl-0.21.1-5.el9
-http://mirrors.rit.edu/rocky/9.6/AppStream/source/tree/Packages/l/libpsl-0.21.1-5.el9.src.rpm
 http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/libpsl-0.21.1-5.el9.src.rpm
+http://mirrors.rit.edu/rocky/9.6/AppStream/source/tree/Packages/l/libpsl-0.21.1-5.el9.src.rpm
 ```
 
 ### `rpm` package: `libpwquality-1.4.4-8.el9.x86_64`
@@ -727,8 +727,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.3-5.el9
-http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
 http://mirrors.rit.edu/rocky/9.6/AppStream/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
+http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
 ```
 
 ### `rpm` package: `microdnf-3.9.1-3.el9.x86_64`
@@ -857,8 +857,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url popt-1.18-8.el9
-http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/p/popt-1.18-8.el9.src.rpm
 http://mirrors.rit.edu/rocky/9.6/AppStream/source/tree/Packages/p/popt-1.18-8.el9.src.rpm
+http://distro.ibiblio.org/rocky/9.6/BaseOS/source/tree/Packages/p/popt-1.18-8.el9.src.rpm
 ```
 
 ### `rpm` package: `publicsuffix-list-dafsa-20210518-3.el9.noarch`
