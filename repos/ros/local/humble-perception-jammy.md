@@ -6815,14 +6815,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.27+6~us1-0ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.27%2b6%7eus1-0ubuntu1%7e22.04.dsc' openjdk-lts_11.0.27+6~us1-0ubuntu1~22.04.dsc 4544 SHA512:bd8e325767169d5004fe65ea21375e55c01e6a5e5419816a366a4bdda2c86687b299151ea66e0cf6d2149cb16cff54c9a36e12212653f7cea1db7d48b4ef1c2b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.27%2b6%7eus1.orig.tar.xz' openjdk-lts_11.0.27+6~us1.orig.tar.xz 71615668 SHA512:7205db3b012582cf5a3a2b5c41e99776596406cca108ecf73717cad72ab06ec0128f0f89bf3270e76975f6ab54fcf057bb998f70c49bb875f11d778bb0e875d4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.27%2b6%7eus1-0ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.27+6~us1-0ubuntu1~22.04.debian.tar.xz 169980 SHA512:88059fe1f5520b018fa0909d1f3eec00ddc18627cf216a5c6adc3624a552a7ed0cdfe8cead0af1675ef74bd413b51bcc7860b7379850061c2adc067575ec164d
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.3`
 
@@ -7429,14 +7424,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.8.dsc' poppler_22.02.0-2ubuntu0.8.dsc 3401 SHA512:6190ba05e63fbe9a674b369e4b0c8a282cb32b790e060ff24458ee63b7eb7d6e247bb1c11fdf257a21ac185f1e448b43b36509fed5fe4d8aabccc0007caf2dcd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.8.debian.tar.xz' poppler_22.02.0-2ubuntu0.8.debian.tar.xz 45048 SHA512:735e8e607e80debe8c5c41a7c233c881b56a09545a2cc294796d753a75e21ff8ca570d40d35f7806c0670a219d437655ecae0a25b74fbf008b3bf1c192b97f99
-```
 
 ### `dpkg` source package: `postgresql-14=14.18-0ubuntu0.22.04.1`
 
@@ -12484,15 +12474,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.4.dsc' sqlite3_3.37.2-2ubuntu0.4.dsc 2602 SHA512:fb62fa3ed86e19ef456a86b924cf0d4fcd21b565e8e85376fd54ac39ef3daa2bc3bd0b3b8b7008217e31c65e04e0dafae0f425bd1be39b33b0e67312ec5a1b7f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.4.debian.tar.xz 32512 SHA512:2b7c13cdf556fc0f320c1c37ab7d4f9c1b528dc2fc11223d72c0fcc5a50a5fbb3f8e6432236b42b308886a26d248edb5f498249527513247d39cf2705fc2b4aa
-```
 
 ### `dpkg` source package: `srt=1.4.4-4`
 
