@@ -2936,11 +2936,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.40.1-5
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1-5.dsc' perl_5.40.1-5.dsc 2372 SHA256:c3f58ea3409608fbdf17d87345ef95dc26947d6c5a8b453f723045ee90b6ad34
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.1-5.debian.tar.xz' perl_5.40.1-5.debian.tar.xz 172804 SHA256:42fa9b556e5dc345374976186407f6d7f0117ca2a7b7c4d81e0f7306826cee33
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-5.dsc' perl_5.40.1-5.dsc 2372 SHA256:c3f58ea3409608fbdf17d87345ef95dc26947d6c5a8b453f723045ee90b6ad34
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-5.debian.tar.xz' perl_5.40.1-5.debian.tar.xz 172804 SHA256:42fa9b556e5dc345374976186407f6d7f0117ca2a7b7c4d81e0f7306826cee33
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/perl/5.40.1-5/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.44.0-3`
 
