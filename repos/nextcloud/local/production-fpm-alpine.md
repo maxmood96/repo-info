@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab9c53083df883573418a66ef2cbe7d774bb36327dd7e1789a2c23e5f3a73155`
-- Created: `2025-07-11T00:40:22Z`
-- Virtual Size: ~ 1.03 Gb  
+- Image ID: `sha256:8f064707765211aaedd12dc8e4a5d413204d3b08190eafd720aef88437cb7646`
+- Created: `2025-07-28T20:49:21Z`
+- Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -609,16 +609,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.44-r0 description:
+imagemagick-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.44-r0 webpage:
+imagemagick-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.44-r0 installed size:
-3639 KiB
+imagemagick-7.1.2.0-r0 installed size:
+3635 KiB
 
-imagemagick-7.1.1.44-r0 license:
+imagemagick-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -626,16 +626,16 @@ ImageMagick
 ### `apk` package: `imagemagick-heic`
 
 ```console
-imagemagick-heic-7.1.1.44-r0 description:
+imagemagick-heic-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (HEIC support modules)
 
-imagemagick-heic-7.1.1.44-r0 webpage:
+imagemagick-heic-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-heic-7.1.1.44-r0 installed size:
+imagemagick-heic-7.1.2.0-r0 installed size:
 30 KiB
 
-imagemagick-heic-7.1.1.44-r0 license:
+imagemagick-heic-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -643,16 +643,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.1.44-r0 description:
+imagemagick-jpeg-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.1.44-r0 webpage:
+imagemagick-jpeg-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.1.44-r0 installed size:
+imagemagick-jpeg-7.1.2.0-r0 installed size:
 54 KiB
 
-imagemagick-jpeg-7.1.1.44-r0 license:
+imagemagick-jpeg-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -660,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.44-r0 description:
+imagemagick-libs-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.44-r0 webpage:
+imagemagick-libs-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.44-r0 installed size:
+imagemagick-libs-7.1.2.0-r0 installed size:
 4273 KiB
 
-imagemagick-libs-7.1.1.44-r0 license:
+imagemagick-libs-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pango`
 
 ```console
-imagemagick-pango-7.1.1.44-r0 description:
+imagemagick-pango-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (pango support modules)
 
-imagemagick-pango-7.1.1.44-r0 webpage:
+imagemagick-pango-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pango-7.1.1.44-r0 installed size:
+imagemagick-pango-7.1.2.0-r0 installed size:
 22 KiB
 
-imagemagick-pango-7.1.1.44-r0 license:
+imagemagick-pango-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.1.44-r0 description:
+imagemagick-pdf-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.1.44-r0 webpage:
+imagemagick-pdf-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.1.44-r0 installed size:
+imagemagick-pdf-7.1.2.0-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.1.44-r0 license:
+imagemagick-pdf-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-raw`
 
 ```console
-imagemagick-raw-7.1.1.44-r0 description:
+imagemagick-raw-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (RAW support modules)
 
-imagemagick-raw-7.1.1.44-r0 webpage:
+imagemagick-raw-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-raw-7.1.1.44-r0 installed size:
+imagemagick-raw-7.1.2.0-r0 installed size:
 22 KiB
 
-imagemagick-raw-7.1.1.44-r0 license:
+imagemagick-raw-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-svg`
 
 ```console
-imagemagick-svg-7.1.1.44-r0 description:
+imagemagick-svg-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (SVG support modules)
 
-imagemagick-svg-7.1.1.44-r0 webpage:
+imagemagick-svg-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-svg-7.1.1.44-r0 installed size:
+imagemagick-svg-7.1.2.0-r0 installed size:
 75 KiB
 
-imagemagick-svg-7.1.1.44-r0 license:
+imagemagick-svg-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -745,16 +745,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.1.44-r0 description:
+imagemagick-tiff-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.1.44-r0 webpage:
+imagemagick-tiff-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.1.44-r0 installed size:
+imagemagick-tiff-7.1.2.0-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.1.44-r0 license:
+imagemagick-tiff-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -762,16 +762,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.1.44-r0 description:
+imagemagick-webp-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.1.44-r0 webpage:
+imagemagick-webp-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.1.44-r0 installed size:
+imagemagick-webp-7.1.2.0-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.1.44-r0 license:
+imagemagick-webp-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -1918,16 +1918,16 @@ BSD-3-Clause
 ### `apk` package: `pixman`
 
 ```console
-pixman-0.46.0-r0 description:
+pixman-0.46.4-r0 description:
 Low-level pixel manipulation library
 
-pixman-0.46.0-r0 webpage:
+pixman-0.46.4-r0 webpage:
 https://gitlab.freedesktop.org/pixman
 
-pixman-0.46.0-r0 installed size:
+pixman-0.46.4-r0 installed size:
 557 KiB
 
-pixman-0.46.0-r0 license:
+pixman-0.46.4-r0 license:
 MIT
 
 ```
@@ -2037,16 +2037,16 @@ GPL-2.0-or-later
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```
