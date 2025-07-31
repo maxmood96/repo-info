@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c68b57263fa176cb445fc6457a0950cd4bba4dddd0bee3060f55560ee670d07`
+- Image ID: `sha256:730b47791078004a0c2dd57d5dfe7a9d99995c2170cc6388a846b09adf36a1fc`
 - Created: `2025-04-27T20:21:59Z`
 - Virtual Size: ~ 289.38 Mb  
   (total size of all layers on-disk)
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk8u452-b09`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-15T13:55:15`
+  - `build-date=2025-07-29T04:11:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1752587672`
+  - `release=1753762263`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=49def32f29d405d4663060d62ea5437538e3fbfc`
+  - `vcs-ref=b591154fdaef91b9255cd2dd2768c67f3f60814c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -1515,15 +1515,15 @@ $ dnf --quiet download --source --url shadow-utils-4.9-12.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-12.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-8.el9_6.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-7.el9_3.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-8.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-8.el9_6.src.rpm
 ```
 
 ### `rpm` package: `systemd-252-51.el9_6.1.x86_64`
