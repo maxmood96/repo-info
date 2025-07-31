@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3774fa741c609d5be833479a552c4587cb772cd35d3a1a1e590baec52e87565`
+- Image ID: `sha256:e6958d682003f692f1ea790e11b0fb26326612641a7897f448ed9922f9a67fdc`
 - Created: `2025-05-28T17:53:13Z`
 - Virtual Size: ~ 367.02 Mb  
   (total size of all layers on-disk)
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-16T00:30:50`
+  - `build-date=2025-07-29T06:17:57`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1752625787`
+  - `release=1753769805`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=7ac0353e4c2bdfd20b20eb5da528070323ac3059`
+  - `vcs-ref=ac4a9d43916912bdc8f498f6dfb805b9581306ea`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -1889,15 +1889,15 @@ $ dnf --quiet download --source --url shadow-utils-4.9-12.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-12.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-8.el9_6.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-7.el9_3.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-8.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-8.el9_6.src.rpm
 ```
 
 ### `rpm` package: `subscription-manager-1.29.45.1-1.el9_6.x86_64`
