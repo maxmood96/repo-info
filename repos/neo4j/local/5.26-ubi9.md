@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8dd8ad4574b1722fbf4f45b2342a39feddaa75d38569a969f9f972ee45cc675c`
+- Image ID: `sha256:6f1362907bff2ce367b1690adc2049172a2795e7ee303d35e8ae8f5058b41a9a`
 - Created: `2025-07-10T14:24:05Z`
 - Virtual Size: ~ 650.69 Mb  
   (total size of all layers on-disk)
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-15T13:55:15`
+  - `build-date=2025-07-29T04:11:43`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,10 +31,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1752587672`
+  - `release=1753762263`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=49def32f29d405d4663060d62ea5437538e3fbfc`
+  - `vcs-ref=b591154fdaef91b9255cd2dd2768c67f3f60814c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -85,11 +85,16 @@ $ dnf --quiet download --source --url audit-libs-3.1.5-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/audit-3.1.5-4.el9.src.rpm
 ```
 
-### `rpm` package: `avahi-libs-0.8-22.el9_6.x86_64`
+### `rpm` package: `avahi-libs-0.8-22.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url avahi-libs-0.8-22.el9_6.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/avahi-0.8-22.el9_6.1.src.rpm
+```
 
 ### `rpm` package: `basesystem-11-13.el9.noarch`
 
@@ -675,7 +680,7 @@ $ dnf --quiet download --source --url json-glib-1.6.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/j/json-glib-1.6.6-1.el9.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-5.14.0-570.26.1.el9_6.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-570.30.1.el9_6.x86_64`
 
 Licenses (from `rpm --query`): ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-2-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR CDDL-1.0) AND ((GPL-2.0-only WITH Linux-syscall-note) OR Linux-OpenIB) AND ((GPL-2.0-only WITH Linux-syscall-note) OR MIT) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR MIT) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-Clear AND GFDL-1.1-no-invariants-or-later AND GPL-1.0-or-later AND (GPL-1.0-or-later OR BSD-3-Clause) AND (GPL-1.0-or-later WITH Linux-syscall-note) AND GPL-2.0-only AND (GPL-2.0-only OR Apache-2.0) AND (GPL-2.0-only OR BSD-2-Clause) AND (GPL-2.0-only OR BSD-3-Clause) AND (GPL-2.0-only OR CDDL-1.0) AND (GPL-2.0-only OR GFDL-1.1-no-invariants-or-later) AND (GPL-2.0-only OR GFDL-1.2-no-invariants-only) AND (GPL-2.0-only WITH Linux-syscall-note) AND GPL-2.0-or-later AND (GPL-2.0-or-later OR BSD-2-Clause) AND (GPL-2.0-or-later OR BSD-3-Clause) AND (GPL-2.0-or-later OR CC-BY-4.0) AND (GPL-2.0-or-later WITH GCC-exception-2.0) AND (GPL-2.0-or-later WITH Linux-syscall-note) AND ISC AND LGPL-2.0-or-later AND (LGPL-2.0-or-later OR BSD-2-Clause) AND (LGPL-2.0-or-later WITH Linux-syscall-note) AND LGPL-2.1-only AND (LGPL-2.1-only OR BSD-2-Clause) AND (LGPL-2.1-only WITH Linux-syscall-note) AND LGPL-2.1-or-later AND (LGPL-2.1-or-later WITH Linux-syscall-note) AND (Linux-OpenIB OR GPL-2.0-only) AND (Linux-OpenIB OR GPL-2.0-only OR BSD-2-Clause) AND Linux-man-pages-copyleft AND MIT AND (MIT OR GPL-2.0-only) AND (MIT OR GPL-2.0-or-later) AND (MIT OR LGPL-2.1-only) AND (MPL-1.1 OR GPL-2.0-only) AND (X11 OR GPL-2.0-only) AND (X11 OR GPL-2.0-or-later) AND Zlib
 
@@ -1924,11 +1929,16 @@ $ dnf --quiet download --source --url shadow-utils-4.9-12.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-12.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-8.el9_6.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-8.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-8.el9_6.src.rpm
+```
 
 ### `rpm` package: `systemd-252-51.el9_6.1.x86_64`
 
