@@ -458,13 +458,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.23.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.23.1.dsc' debianutils_5.23.1.dsc 1318 SHA512:c90ded92a20c78eda8cb260f7f142088de9032e406455a63e41d1be05f090f348f70da94c940aa0987d2151cfbe01e6158547d2cf24f59f6fae777b1a9b917e0
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.23.1.tar.xz' debianutils_5.23.1.tar.xz 82152 SHA512:743b90ab02347d9dc94a28fab186d1c4a8a48c70c57b4f8ffed1e6feb8df19e6d2edec6c75b8d4b618eb17ef08b737e51a9dd635299e03e23948ce3334f71476
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.23.1/
+
 
 ### `dpkg` source package: `diffutils=1:3.10-4`
 

@@ -2086,15 +2086,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2ubuntu0.1.dsc' perl_5.40.1-2ubuntu0.1.dsc 3023 SHA512:1a4c7ebb8f5b466c034299968142b1adf6c8e515f7a4d425c79ca54e3d438915725257b51250298e0fa14b8e19aeb7d4be3745901d717d3fa1340d0ef38c6158
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2ubuntu0.1.debian.tar.xz' perl_5.40.1-2ubuntu0.1.debian.tar.xz 168020 SHA512:04dcfdacd02071bf848a6c8e8c59683903ad57e6dcf4070463f9ef14d7c82f2224a827eda5b1da5974dcf135a396c284c58924934742d864b4bec2a86abe2720
-```
 
 ### `dpkg` source package: `pinentry=1.3.1-2ubuntu3`
 

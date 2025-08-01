@@ -631,19 +631,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.23.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.1.dsc' debianutils_5.23.1.dsc 1318 SHA256:0431d45c27aa5d60cdfa0ff300df4708e07c9f60a606afbeb20fb4c318c6eca5
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.1.tar.xz' debianutils_5.23.1.tar.xz 82152 SHA256:206c669cbf431da30904d4f9e69d049cb711714f5c137b66bf0b1f66d58710bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.23.1/
 
-- https://sources.debian.net/src/debianutils/5.23.1/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.23.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.23.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-4`
 
@@ -919,20 +913,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.50.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.50.0-1.dsc' git_2.50.0-1.dsc 2697 SHA256:d009485666d06fa1226d7cd86fcbd545525ce636f71d677c9ad74fad1e5b88c5
-'http://deb.debian.org/debian/pool/main/g/git/git_2.50.0.orig.tar.xz' git_2.50.0.orig.tar.xz 7878256 SHA256:dff3c000e400ace3a63b8a6f8b3b76b88ecfdffd4504a04aba4248372cdec045
-'http://deb.debian.org/debian/pool/main/g/git/git_2.50.0-1.debian.tar.xz' git_2.50.0-1.debian.tar.xz 811464 SHA256:557248aebb8b3956506b5aedee4a600058338016e4147b0b8957e04a21fe4e8a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.50.0-1/
 
-- https://sources.debian.net/src/git/1:2.50.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.50.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.50.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-10`
 
@@ -976,20 +963,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-10
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-10.dsc' glibc_2.41-10.dsc 7544 SHA256:64f94c882849f49381718d4da1ccee72b87e5500c2d1d7f532de1d0bb28e01f1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-10.debian.tar.xz' glibc_2.41-10.debian.tar.xz 436328 SHA256:9a92577a85bdb4804dee8fd2293b54d05aa5bc74cdb255ccdfdf5158b08e557a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.41-10/
 
-- https://sources.debian.net/src/glibc/2.41-10/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -2685,20 +2665,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-8
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-8.dsc' procps_4.0.4-8.dsc 2124 SHA256:996c2e0af9956dd1dfb9604720eb24ec21a79a53c320c7125794f8ac2791a640
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-8.debian.tar.xz' procps_4.0.4-8.debian.tar.xz 45408 SHA256:0d1723a0134f8b6ae2619a4e9878084c06f92e36ab7c163086d713f2ed064f3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-8/
 
-- https://sources.debian.net/src/procps/2:4.0.4-8/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.5-1`
 
