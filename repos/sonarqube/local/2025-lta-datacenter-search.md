@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f329022b6fda329570fdc1c8c317c0026eb512b8ba8440701facc94ae5a8160`
+- Image ID: `sha256:8a2797909748166166904cb7089b7a1e989195e46fd6e8507968c2f52d316930`
 - Created: `2025-07-07T16:01:59Z`
 - Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.7+6`
+  - `JAVA_VERSION=jdk-21.0.8+9`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONAR_VERSION=2025.1.3.110580`
@@ -157,13 +157,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu10.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.2.dsc' base-files_13ubuntu10.2.dsc 1625 SHA512:f4d534e628148a89392a39d58f9d32fe73d54d7407a6de493fae3014d3fe56eb3a602acd0810a6c9127577aee3e534d422242ca6a84d24899d758394c3feb234
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.2.tar.xz' base-files_13ubuntu10.2.tar.xz 94116 SHA512:e83952ce708b6b7723e3f7af0eefdb613f64f0afdf5489c8d3f66c1f970c59949a33e5fa80dd62867b07bd52c1ed67c264accde0b1156ae7cdfecb342b0e0c42
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -966,11 +962,11 @@ $ apt-get source -qq --print-uris init-system-helpers=1.66ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1.tar.xz' init-system-helpers_1.66ubuntu1.tar.xz 45100 SHA512:222f73347b0ce9eb137c8ce5dc36e9fedbc8dc5ed3f1fde7fbf52258a5437d0a10d3d610ca1d1b206646bb92a5355d1061705440b2d22d9109b5de6d1cb92e98
 ```
 
-### `dpkg` source package: `iproute2=6.1.0-1ubuntu6`
+### `dpkg` source package: `iproute2=6.1.0-1ubuntu6.2`
 
 Binary Packages:
 
-- `iproute2=6.1.0-1ubuntu6`
+- `iproute2=6.1.0-1ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
@@ -979,10 +975,10 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris iproute2=6.1.0-1ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.dsc' iproute2_6.1.0-1ubuntu6.dsc 2431 SHA512:5a8544eacf11aa0f97962d051513cd8e62d34b8a51873b566d108f9b3be1f891ed4c6d79139043716621f7ad732a2a2e75441a3ab6e20d014bb4ad4653261b17
+$ apt-get source -qq --print-uris iproute2=6.1.0-1ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.2.dsc' iproute2_6.1.0-1ubuntu6.2.dsc 2402 SHA512:3a2bd69a556c59f4af608c30e94a185a1bacc0cf8053bb73b524b36c241b352c2f4e035ffdf7cd741122ed33228297451597d85b97cd982339a3211b5b7b594e
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0.orig.tar.xz' iproute2_6.1.0.orig.tar.xz 905512 SHA512:4e4d3b5e1e1a5444f42671c1e6caee072e80063e34e37386695f76f85a1ab662f4513050814006e5154426cbaadfba1d86b0be14e65978d5e670a16446047b28
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.debian.tar.xz' iproute2_6.1.0-1ubuntu6.debian.tar.xz 41160 SHA512:7e1e281cd00950469bf7f226bcd8a335284626128692fede4793f62e2fb458e92db17dc592c6ee849b316b9e4ca9d2772bb8c4f7accd4aa79771ab89595194c8
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.2.debian.tar.xz' iproute2_6.1.0-1ubuntu6.2.debian.tar.xz 41816 SHA512:b6cf4ac2b03525ce165cd34c4ec2f1bda577d493c41d4ae2a9391e53ce4591adf805141587ae9116d7d5dd53b88016aefcaed4039353e701f7b3de6c70ae4893
 ```
 
 ### `dpkg` source package: `iptables=1.8.10-3ubuntu2`
@@ -1503,33 +1499,6 @@ $ apt-get source -qq --print-uris libtasn1-6=4.19.0-3ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA512:287f5eddfb5e21762d9f14d11997e56b953b980b2b03a97ed4cd6d37909bda1ed7d2cdff9da5d270a21d863ab7e54be6b85c05f1075ac5d8f0198997cf335ef4
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA512:e0417625f8df22c6421914bf2d4f19d7f27260c24c04f50e59669681f326debe06ddef9dc5a2e20fda50feb30bbbf3f41597e64961257304ec2c407aa76d107e
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3ubuntu0.24.04.1.debian.tar.xz' libtasn1-6_4.19.0-3ubuntu0.24.04.1.debian.tar.xz 24752 SHA512:6353360456b2fe7079f9ee98d82d065c85c488ae6103e68f374267be6e55ebb1e3fe251f2c738b96cf9fc67d36e2b9329d43acb2605d74994b957320649f5687
-```
-
-### `dpkg` source package: `libtirpc=1.3.4+ds-1.1build1`
-
-Binary Packages:
-
-- `libtirpc-common=1.3.4+ds-1.1build1`
-- `libtirpc3t64:amd64=1.3.4+ds-1.1build1`
-
-Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc3t64/copyright`)
-
-- `BSD-2-Clause`
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `GPL-2`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `PERMISSIVE`
-- `__AUTO_PERMISSIVE__`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libtirpc=1.3.4+ds-1.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds-1.1build1.dsc' libtirpc_1.3.4+ds-1.1build1.dsc 2280 SHA512:ca16a8baf2d053d88641fd48df9ef3d6496f6e0c1dbf1e4157ce80a32943e97e010c5360f248f2cdca3bc40ef1a8b3622b020ffe022c0cd6bc72fa4d60b3c1a6
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds.orig.tar.gz' libtirpc_1.3.4+ds.orig.tar.gz 700735 SHA512:125e26247f1ffbf5ce310657515eb84be03b69867e5efbacac6768f406470f9124b66124639daccd9af0c8220a8099cb5dbbe0a370315c61069aa73a5b53815d
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtirpc/libtirpc_1.3.4%2bds-1.1build1.debian.tar.xz' libtirpc_1.3.4+ds-1.1build1.debian.tar.xz 11912 SHA512:f8c5aaa1a07be53c0e95c585806b557143b897648421a6df6dfff586849474dd264eb8608975e18f5e8843febb8a3e4b474f98883c4df72fae917d15f2b05a20
 ```
 
 ### `dpkg` source package: `libunistring=1.1-2build1.1`
@@ -2107,11 +2076,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.debian.tar.xz' shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz 96392 SHA512:67cd7c7f869250d39ebb7af023ae4aca6eef88de143a85510135d547bb6988895ef02d9aff798888e5d507f415d7d17193c354b2437764b0c4bea18b1178531d
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.3`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.3`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2119,9 +2088,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.dsc' sqlite3_3.45.1-1ubuntu2.4.dsc 2601 SHA512:bdff95dee57936221fae6f9afb63298e036ba70ffb273f1ff25f3a063cdc9166214758ce789c2604dc5bdd564a24aa7d7217d1078b98a38c957b89eda9796589
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz 34820 SHA512:5eb09438632a9793590fbb3b3ce47ca3dccbc75cee58009d74fe67e656f327108a10c64e722c52e96c4c6c10a91621a8de4926a89f7fb1e006ec6915f92ded0c
+```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.8`
 
