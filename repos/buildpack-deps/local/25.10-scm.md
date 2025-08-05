@@ -676,14 +676,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.1.0-8ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0-8ubuntu1.dsc' gcc-15_15.1.0-8ubuntu1.dsc 52311 SHA512:a20fce7d3b61e60b68698251a19e2f9785683e27e5574c466d66102d5ffe12a34d2df7e10cd3ea66fbc0ff7660c446f8e35166a1ba123c404d6981e383b96315
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0.orig.tar.gz' gcc-15_15.1.0.orig.tar.gz 103173045 SHA512:e14a4862a9ceb5786dfccad069adab71a8872a69fbd99be4861dca17ce7a3b4deaba61f06e810865ff6831bec62fd241df6398e571b0ac97ee5e962b000128f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.1.0-8ubuntu1.debian.tar.xz' gcc-15_15.1.0-8ubuntu1.debian.tar.xz 2518284 SHA512:55f82d94b6c6e0fc06c726808c3469cf2c36751c052fd0d92475f1705112d4c5d55d879d8a1a10d1f09a7bba037cfbea07646bff67879fdf4dbe0ba7fd8de156
-```
 
 ### `dpkg` source package: `gdbm=1.24-2`
 

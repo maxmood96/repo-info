@@ -568,19 +568,13 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.279
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.279.dsc' cdebconf_0.279.dsc 2707 SHA256:725ce6e9aab5dd76961e1bc3da42a65968db677d85aaa44228e8bf5d149de262
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.279.tar.xz' cdebconf_0.279.tar.xz 285772 SHA256:5ade964aa001d98a9709ed51cfeca6cc73fa5ed6d1ed0d63d6ef5dc4883977d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.279/
 
-- https://sources.debian.net/src/cdebconf/0.279/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.279/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.279/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=9.7-3`
 
@@ -875,19 +869,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.23.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.1.dsc' debianutils_5.23.1.dsc 1318 SHA256:0431d45c27aa5d60cdfa0ff300df4708e07c9f60a606afbeb20fb4c318c6eca5
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.1.tar.xz' debianutils_5.23.1.tar.xz 82152 SHA256:206c669cbf431da30904d4f9e69d049cb711714f5c137b66bf0b1f66d58710bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.23.1/
 
-- https://sources.debian.net/src/debianutils/5.23.1/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.23.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.23.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-4`
 
@@ -1452,20 +1440,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.12+dfsg-3
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg-3.dsc' gdk-pixbuf_2.42.12+dfsg-3.dsc 3214 SHA256:c071f923775e859e5fbf5e0f6a090ad6872cfee44f265cc8c977a40b18c2c8f9
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.12+dfsg.orig.tar.xz 6443656 SHA256:2fab7a828f1a017a235cd800cf0b47d83733037bade493337c46ed79e7ef3678
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg-3.debian.tar.xz' gdk-pixbuf_2.42.12+dfsg-3.debian.tar.xz 22448 SHA256:900fcb2d377a5cd7c7bfb0b56ee6bae104f776b561e67147f571d1875130b2b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.12+dfsg-3/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.12+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.12+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.12+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.47.2-0.2`
 
@@ -2448,21 +2429,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.75-9
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-9.dsc' libcap2_2.75-9.dsc 2678 SHA256:4c9ba574b4c8107d374bd0ff4eef1b6364d46495a0e0bb2186cc57c7c346bdf3
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz' libcap2_2.75.orig.tar.xz 197868 SHA256:de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz.asc' libcap2_2.75.orig.tar.xz.asc 833 SHA256:c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-9.debian.tar.xz' libcap2_2.75-9.debian.tar.xz 22876 SHA256:f55b1bfacce23c73a6ca865482cd538dd7fc88d4c0eb01adff7b6d38298a3a3f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap2/1:2.75-9/
 
-- https://sources.debian.net/src/libcap2/1:2.75-9/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.75-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.75-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcbor=0.10.2-2`
 
