@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1fcea8561110e3d7cf6a0cba61692d2813ce8ad227d71f61da11d41810d473a`
-- Created: `2025-07-29T18:18:05Z`
+- Image ID: `sha256:983ec87d36944762d5f6f6c8790729bd5f5fdb079046c4ea23c97f9a90835677`
+- Created: `2025-08-01T18:58:04Z`
 - Virtual Size: ~ 115.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -791,16 +791,16 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-21.el8_10.1.x86_64`
+### `rpm` package: `libxml2-2.9.7-21.el8_10.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.1
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.1.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.2
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.2.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
