@@ -1,10 +1,10 @@
-# `php:8.4.10-fpm-bullseye`
+# `php:8.4.11-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7bb6c5fbda53e17a9a280953ba5d3038e27094a6d5d09d4fa0aa15a59ceeb3a3`
-- Created: `2025-07-03T14:40:24Z`
-- Virtual Size: ~ 459.46 Mb  
+- Image ID: `sha256:bbeb0e313a7acb912ac920e45c393b28b9b6af27dc647ff3e8fee6ccc01af60e`
+- Created: `2025-08-01T00:46:35Z`
+- Virtual Size: ~ 459.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.10.tar.xz.asc`
-  - `PHP_SHA256=14983a9ef8800e6bc2d920739fd386054402f7976ca9cd7f711509496f0d2632`
+  - `PHP_VERSION=8.4.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.11.tar.xz.asc`
+  - `PHP_SHA256=04cd331380a8683a5c2503938eb51764d48d507c53ad4208d2c82e0eed779a00`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1856,24 +1856,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxcrypt/1:4.4.18-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxcrypt/1:4.4.18-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.10+dfsg-6.7+deb11u7`
+### `dpkg` source package: `libxml2=2.9.10+dfsg-6.7+deb11u8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.10+dfsg-6.7+deb11u7`
+- `libxml2:amd64=2.9.10+dfsg-6.7+deb11u8`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.7+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u8.dsc' libxml2_2.9.10+dfsg-6.7+deb11u8.dsc 2704 SHA256:6a13cdf4b7546ed994a14568f35974c382ff8b5d31996c3cb50d89a7bc040e91
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u8.debian.tar.xz' libxml2_2.9.10+dfsg-6.7+deb11u8.debian.tar.xz 50604 SHA256:31dad41bd24da0c308ca7d60d1b354d696da8450e70e4f3b4270c9a114ac512d
+```
 
-- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-2.1`
 

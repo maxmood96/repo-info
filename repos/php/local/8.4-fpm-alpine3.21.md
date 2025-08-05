@@ -1,10 +1,10 @@
-# `php:8.4.10-fpm-alpine3.21`
+# `php:8.4.11-fpm-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca672989a25640f31f100ef6c7ddf4dff34c79bb1ff6bd92a7e16ac7bb817828`
-- Created: `2025-07-03T14:40:24Z`
-- Virtual Size: ~ 90.88 Mb  
+- Image ID: `sha256:eac658e3f78bbf3b186d06d58560a59a52c9e63c5750c03aff10e0db9107a16c`
+- Created: `2025-08-01T00:46:35Z`
+- Virtual Size: ~ 90.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.10.tar.xz.asc`
-  - `PHP_SHA256=14983a9ef8800e6bc2d920739fd386054402f7976ca9cd7f711509496f0d2632`
+  - `PHP_VERSION=8.4.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.11.tar.xz.asc`
+  - `PHP_SHA256=04cd331380a8683a5c2503938eb51764d48d507c53ad4208d2c82e0eed779a00`
 
 ## `apk` (`.apk`-based packages)
 
@@ -588,16 +588,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r3 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r3 license:
 blessing
 
 ```
