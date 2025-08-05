@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:61ade5c2bbe8793d2cef498a17bbe56cf3d98c21f306417733b704d8a18c5487`
+- Image ID: `sha256:bfe866d01c638502b5aabe801f86c9dac2b1934bb955d8f290079a12c23d3ecd`
 - Created: `2025-07-11T06:25:48Z`
 - Virtual Size: ~ 206.11 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.10.tar.xz.asc`
-  - `PHP_SHA256=14983a9ef8800e6bc2d920739fd386054402f7976ca9cd7f711509496f0d2632`
+  - `PHP_VERSION=8.4.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.11.tar.xz.asc`
+  - `PHP_SHA256=04cd331380a8683a5c2503938eb51764d48d507c53ad4208d2c82e0eed779a00`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.8.10`
@@ -863,16 +863,16 @@ GPL-3.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.0.2-r0 description:
+mercurial-7.0.3-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.0.2-r0 webpage:
+mercurial-7.0.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.0.2-r0 installed size:
+mercurial-7.0.3-r0 installed size:
 16 MiB
 
-mercurial-7.0.2-r0 license:
+mercurial-7.0.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -880,16 +880,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.0.2-r0 description:
+mercurial-pyc-7.0.3-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.0.2-r0 webpage:
+mercurial-pyc-7.0.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.0.2-r0 installed size:
-9480 KiB
+mercurial-pyc-7.0.3-r0 installed size:
+9481 KiB
 
-mercurial-pyc-7.0.2-r0 license:
+mercurial-pyc-7.0.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1237,16 +1237,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```
