@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d33b2b0078614d02d67bfeb5bdab23be43dee05e4758e2d440998cac8b65885a`
+- Image ID: `sha256:2dce7bf1dba90864e1863bb91baff838f77a5c55c9d6524166f4fb4276915683`
 - Created: `2025-07-15T19:43:37Z`
 - Virtual Size: ~ 268.66 Mb  
   (total size of all layers on-disk)
@@ -1472,16 +1472,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r3 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r3 license:
 blessing
 
 ```

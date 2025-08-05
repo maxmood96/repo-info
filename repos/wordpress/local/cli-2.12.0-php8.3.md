@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3148e54b0a50d376973854449486a4ef52331c0ce8182aa201cd24aacd6fc011`
+- Image ID: `sha256:31dcc10417a42a190415997005a627d9ca295ed72d6c14372df065503423fd30`
 - Created: `2025-05-07T07:03:15Z`
 - Virtual Size: ~ 195.89 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.23`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc`
-  - `PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db`
+  - `PHP_VERSION=8.3.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.24.tar.xz.asc`
+  - `PHP_SHA256=388ee5fd111097e97bae439bff46aec4ea27f816d3f0c2cb5490a41410d44251`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -404,16 +404,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.44-r0 description:
+imagemagick-libs-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.44-r0 webpage:
+imagemagick-libs-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.44-r0 installed size:
+imagemagick-libs-7.1.2.0-r0 installed size:
 4273 KiB
 
-imagemagick-libs-7.1.1.44-r0 license:
+imagemagick-libs-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -1169,16 +1169,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```

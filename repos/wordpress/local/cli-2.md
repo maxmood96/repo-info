@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:812044b2e95bda9c49d239732e7255e858c7db0eeb47e0b3cf8e4b8fa3e79293`
+- Image ID: `sha256:78f7b77ef7b542a391057b869c42dae966f359f404c9d47b836af2d1b9107732`
 - Created: `2025-05-07T07:03:15Z`
 - Virtual Size: ~ 189.04 Mb  
   (total size of all layers on-disk)
@@ -404,16 +404,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.44-r0 description:
+imagemagick-libs-7.1.2.0-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.44-r0 webpage:
+imagemagick-libs-7.1.2.0-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.44-r0 installed size:
+imagemagick-libs-7.1.2.0-r0 installed size:
 4273 KiB
 
-imagemagick-libs-7.1.1.44-r0 license:
+imagemagick-libs-7.1.2.0-r0 license:
 ImageMagick
 
 ```
@@ -1169,16 +1169,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```
