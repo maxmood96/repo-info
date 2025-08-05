@@ -1,9 +1,9 @@
-# `openjdk:25-ea-33-jdk-oraclelinux8`
+# `openjdk:25-ea-34-jdk-oraclelinux8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:38234171696c789b98d29c23d09c2888a750c2b03a475da92a7771d7397f8336`
-- Created: `2025-07-26T00:48:10Z`
+- Image ID: `sha256:4fe845ea938b01c71a9a6c74f1603caa32c52923e5b8f03135e8714476a3b31e`
+- Created: `2025-08-02T00:48:09Z`
 - Virtual Size: ~ 557.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-25`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=25-ea+33`
+  - `JAVA_VERSION=25-ea+34`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -897,16 +897,16 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-21.el8_10.1.x86_64`
+### `rpm` package: `libxml2-2.9.7-21.el8_10.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.1
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.1.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.2
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxml2-2.9.7-21.el8_10.2.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
