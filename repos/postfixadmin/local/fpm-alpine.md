@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd377641a42346a929079238e19fd6fde97c832f19d6fdf840c0e5202efb0166`
+- Image ID: `sha256:61e97f28fafc820009a4a25eb42952a2f7e2977d890e12971aec42c2f262f9d9`
 - Created: `2024-12-21T02:12:45Z`
 - Virtual Size: ~ 95.22 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.23`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.23.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.23.tar.xz.asc`
-  - `PHP_SHA256=08be64700f703bca6ff1284bf1fdaffa37ae1b9734b6559f8350248e8960a6db`
+  - `PHP_VERSION=8.3.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.24.tar.xz.asc`
+  - `PHP_SHA256=388ee5fd111097e97bae439bff46aec4ea27f816d3f0c2cb5490a41410d44251`
   - `POSTFIXADMIN_VERSION=3.3.15`
   - `POSTFIXADMIN_SHA512=02c4a7fb0d5b148a2f9e73e0278a47d1ee63b29a0019cf510f04d33386fc50727c0dae728eafee688a136159ba462af1931fe0658daa06671459c43668867865`
 - Labels:
@@ -660,16 +660,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```
