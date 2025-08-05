@@ -458,13 +458,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13ubuntu10.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.2.dsc' base-files_13ubuntu10.2.dsc 1625 SHA512:f4d534e628148a89392a39d58f9d32fe73d54d7407a6de493fae3014d3fe56eb3a602acd0810a6c9127577aee3e534d422242ca6a84d24899d758394c3feb234
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.2.tar.xz' base-files_13ubuntu10.2.tar.xz 94116 SHA512:e83952ce708b6b7723e3f7af0eefdb613f64f0afdf5489c8d3f66c1f970c59949a33e5fa80dd62867b07bd52c1ed67c264accde0b1156ae7cdfecb342b0e0c42
-```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -6394,15 +6390,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=24.2.8-1ubuntu1~24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_24.2.8-1ubuntu1%7e24.04.1.dsc' mesa_24.2.8-1ubuntu1~24.04.1.dsc 6756 SHA512:cf7dc45665d42afe59b8e2f4acd07513fbc274045fdfb22a87ca46cbb931e5e9ea0ad0fd7db1d0dbfab3aa605425bc4335ba2380c6177f6474b0450e495d79ef
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_24.2.8.orig.tar.xz' mesa_24.2.8.orig.tar.xz 29622208 SHA512:3aa1051a72e1428e42f9537d8f6a26f2ebddc78894e0f71d2cdcc9ed555ea4d6489ad8e74d4c59b8cdf7ea1c629fa725ac2fe1e385db5d3a582d8fe8186392d6
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_24.2.8.orig.tar.xz.asc' mesa_24.2.8.orig.tar.xz.asc 488 SHA512:8921c8e04ff571e25b60ed826dfbe89e542b55efe689feab28223b5ac68a384de6da5fed2b6458cbe49c2fbdd94bd9ce99fb0bdca0deef65bc560d05d04ea98d
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_24.2.8-1ubuntu1%7e24.04.1.debian.tar.xz' mesa_24.2.8-1ubuntu1~24.04.1.debian.tar.xz 107576 SHA512:993cff636e7787c5d752a455c5274466762071f9f51efd9680e7e01e0eaddad578a2f0ef97b235844a6f3c78cb57ae0215ff8fde9584c123b59f6be49530cce8
-```
 
 ### `dpkg` source package: `more-itertools=10.2.0-1`
 
