@@ -1,8 +1,8 @@
-# `rabbitmq:4.1.2-management-alpine`
+# `rabbitmq:4.1.3-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4b81eb6da831d726f96424666ff2e9f34cfcd6fb58ecfa603e38f08f965960b`
+- Image ID: `sha256:13886f236d0652dadd5d602ffa779e97e609e3ca037fc7e6f65b80a2d4fda8ab`
 - Created: `2025-04-15T17:26:54Z`
 - Virtual Size: ~ 200.84 Mb  
   (total size of all layers on-disk)
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.1.2`
+  - `RABBITMQ_VERSION=4.1.3`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -605,16 +605,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```
