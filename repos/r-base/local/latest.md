@@ -344,13 +344,13 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.279
-'http://http.debian.net/debian/pool/main/c/cdebconf/cdebconf_0.279.dsc' cdebconf_0.279.dsc 2707 SHA256:725ce6e9aab5dd76961e1bc3da42a65968db677d85aaa44228e8bf5d149de262
-'http://http.debian.net/debian/pool/main/c/cdebconf/cdebconf_0.279.tar.xz' cdebconf_0.279.tar.xz 285772 SHA256:5ade964aa001d98a9709ed51cfeca6cc73fa5ed6d1ed0d63d6ef5dc4883977d1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cdebconf/0.279/
+
 
 ### `dpkg` source package: `cluster=2.1.8.1-1`
 
@@ -1579,15 +1579,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.75-9
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75-9.dsc' libcap2_2.75-9.dsc 2678 SHA256:4c9ba574b4c8107d374bd0ff4eef1b6364d46495a0e0bb2186cc57c7c346bdf3
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz' libcap2_2.75.orig.tar.xz 197868 SHA256:de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz.asc' libcap2_2.75.orig.tar.xz.asc 833 SHA256:c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2
-'http://http.debian.net/debian/pool/main/libc/libcap2/libcap2_2.75-9.debian.tar.xz' libcap2_2.75-9.debian.tar.xz 22876 SHA256:f55b1bfacce23c73a6ca865482cd538dd7fc88d4c0eb01adff7b6d38298a3a3f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libcap2/1:2.75-9/
+
 
 ### `dpkg` source package: `libdatrie=0.2.13-4`
 
