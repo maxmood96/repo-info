@@ -1,18 +1,18 @@
-# `redis:8.0.3`
+# `redis:8.2.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0378d73bea8bd76b6c29a03b1824042f23a097e44b5bc0fbb934ff4a7dff4b5d`
-- Created: `2025-07-06T17:00:21Z`
-- Virtual Size: ~ 127.86 Mb  
+- Image ID: `sha256:2f21f6e6fe03146ad470d4d98839e09d0fe91ed706320d970f9e749f5a3067bc`
+- Created: `2025-08-04T12:27:33Z`
+- Virtual Size: ~ 157.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.0.3.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=2467b9608ecbcc2c0d27397c0c2406b499b6f68bc08ac9f6380b1faf2113ae6f`
+  - `REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.2.0.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=c64219bdcba407d18c8dde1fb87b86945aebf75e60f5b44ff463785a962645ed`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1458,11 +1458,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.16-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.17-1~deb12u1`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.16-1~deb12u1`
+- `libssl3:amd64=3.0.17-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
@@ -1474,18 +1474,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.16-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.dsc' openssl_3.0.16-1~deb12u1.dsc 2675 SHA256:d0c61eed29fcb5c26eabdfbf9cab9216cd955bf6c62a0936e2f10e0b1aca3d03
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz' openssl_3.0.16.orig.tar.gz 15334967 SHA256:57e03c50feab5d31b152af2b764f10379aecd8ee92f16c985983ce4a99f7ef86
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz.asc' openssl_3.0.16.orig.tar.gz.asc 833 SHA256:a08564918ca8ace8fc31cfc7643369eae4cc5af436f448779ec741f1134f4054
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.debian.tar.xz' openssl_3.0.16-1~deb12u1.debian.tar.xz 52852 SHA256:83a175489ae79ae0e0ed4f56b16985e16a0c9a632ba2b3d9b41cdac8f29630df
+$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u1.dsc' openssl_3.0.17-1~deb12u1.dsc 2501 SHA256:dd8cb3961864da275233738fbb84a6a43cfa0a8c7417c669f49b6caa9f5da000
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u1.debian.tar.xz' openssl_3.0.17-1~deb12u1.debian.tar.xz 52296 SHA256:900349f655400709d637945a10670c0f78e78f5dc4e96370a5f0947ad651566e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.16-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
