@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:172cc58c100daa299636cffac2d818066f0d030eb90e2fee66762bcd9080cd1c`
-- Created: `2025-07-12T14:36:17Z`
-- Virtual Size: ~ 188.64 Mb  
+- Image ID: `sha256:bf931a6e3af1c2b9abaa6a5f47be2093d38195e0bf5353150f63e921a13cc2e4`
+- Created: `2025-08-03T12:21:02Z`
+- Virtual Size: ~ 188.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -398,15 +398,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-16.el9.x86_64`
+### `rpm` package: `glib2-2.68.4-16.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-16.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glib2-2.68.4-16.el9.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-16.el9_6.2
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glib2-2.68.4-16.el9_6.2.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-168.el9_6.20.x86_64`
@@ -1086,15 +1086,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-10.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-11.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-10.el9_6
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libxml2-2.9.13-10.el9_6.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-11.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libxml2-2.9.13-11.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1515,15 +1515,15 @@ $ dnf --quiet download --source --url shadow-utils-4.9-12.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/shadow-utils-4.9-12.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-8.el9_6.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/sqlite-3.34.1-7.el9_3.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-8.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/sqlite-3.34.1-8.el9_6.src.rpm
 ```
 
 ### `rpm` package: `systemd-252-51.el9_6.1.alma.1.x86_64`
