@@ -1,10 +1,10 @@
-# `eclipse-temurin:24.0.1_9-jdk-alpine-3.21`
+# `eclipse-temurin:24.0.2_12-jdk-alpine-3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cac64c8eeddf342711bb726145b85d86f7efd851ec3dc1555621d1e238493294`
-- Created: `2025-04-23T14:48:05Z`
-- Virtual Size: ~ 311.14 Mb  
+- Image ID: `sha256:c827a31c0214d9a513e310be233fdd051ace9bc3edd53a7255b81c6400159e81`
+- Created: `2025-08-01T11:04:34Z`
+- Virtual Size: ~ 311.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-24.0.1+9`
+  - `JAVA_VERSION=jdk-24.0.2+12`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1212,16 +1212,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r3 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r3 license:
 blessing
 
 ```
