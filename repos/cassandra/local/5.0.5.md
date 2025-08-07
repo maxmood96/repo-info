@@ -1,10 +1,10 @@
-# `cassandra:5.0.4`
+# `cassandra:5.0.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ddf1d94816654373b8026f7809e40abb2c6236af80032503e9ab1e6788ff907`
-- Created: `2025-04-10T20:24:29Z`
-- Virtual Size: ~ 380.69 Mb  
+- Image ID: `sha256:5e2274b4593b2ca4c1cacc18d2d29a4d0a55c4780e1c293fca752c404ba2a7da`
+- Created: `2025-08-05T14:24:26Z`
+- Virtual Size: ~ 380.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,13 +15,13 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.15+6`
+  - `JAVA_VERSION=jdk-17.0.16+8`
   - `GOSU_VERSION=1.17`
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622`
-  - `CASSANDRA_VERSION=5.0.4`
-  - `CASSANDRA_SHA512=16de8bb78af94dabfd916825f492de7040a7311791bc1d630f14707d88f7132e51ae38dad7ebbaf13d2d154af0bdeefe318d680798b8e247ae4117cbc0e2f6df`
+  - `CASSANDRA_VERSION=5.0.5`
+  - `CASSANDRA_SHA512=a1c1a98d32fb706e65da07308323d3082ba65db1b8713c48c595030c22d97aeab5678aa6e1ddf4e7e852060b44cd24eff7fa70b5250b5e9c39cc8cb96f4127f2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2173,11 +2173,11 @@ $ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
 ```
 
-### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.4`
+### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.5`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.37.2-2ubuntu0.4`
+- `libsqlite3-0:amd64=3.37.2-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2185,9 +2185,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.dsc' sqlite3_3.37.2-2ubuntu0.5.dsc 2602 SHA512:fb731fd5ca44dbfa72f1b685980fc3cc66379f63fe0220460897f142eb91d43f81a2c1180864695157b764c22787621c958b0c2448d7ab820c1638cc7ad5f97d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz 33900 SHA512:47c8ee60e8f1b05eb8156a58ea6e909755895df5db9a7381fa8c9f79e7bd6b9a5e6d8f3fd39446d371485ac5feff5b4ac28ff97b4cea92de912de15b7c728e26
+```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.16`
 
