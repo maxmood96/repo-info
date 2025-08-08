@@ -1,10 +1,10 @@
-# `gradle:8.14.3-jdk17-corretto`
+# `gradle:9.0.0-jdk17-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:440a154fb72d607ffa43424a185d66c3b39cf5c0b67372bf3bf6b76010f1f757`
-- Created: `2025-07-17T03:50:10Z`
-- Virtual Size: ~ 867.19 Mb  
+- Image ID: `sha256:6d506541670aa4392a44f6f7f79a4fc89b5e1a9acad1b1d64565dbf7c1e83fc8`
+- Created: `2025-07-31T17:27:11Z`
+- Virtual Size: ~ 864.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.3`
+  - `GRADLE_VERSION=9.0.0`
 
 ## `rpm` (`.rpm`-based packages)
 

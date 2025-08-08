@@ -1,9 +1,9 @@
-# `gradle:8.14.3-jdk21-graal`
+# `gradle:9.0.0-jdk21-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e31ab0f56b004cd4c0b4f60f6e045b2aaa76cde5ec20c45d6ce59a4585581687`
-- Created: `2025-07-05T02:23:10Z`
+- Image ID: `sha256:48649e89d5a73bd3d7df0b5f52f10ff0dd43c11ace5e17cb62365f0142bbc19c`
+- Created: `2025-07-31T17:27:11Z`
 - Virtual Size: ~ 1.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=8.14.3`
+  - `GRADLE_VERSION=9.0.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -927,19 +927,24 @@ $ apt-get source -qq --print-uris gdbm=1.23-5.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-5.1build1.debian.tar.xz' gdbm_1.23-5.1build1.debian.tar.xz 18524 SHA512:93936a3cb86632d3ba4c2c4275e045749d04cd0ef3caf88fce52e2de46ac419ef75478f7ccb1b8d89de0f8c6835fe5231aa85884e2ba095950f3831e26947855
 ```
 
-### `dpkg` source package: `git-lfs=3.4.1-1ubuntu0.2`
+### `dpkg` source package: `git-lfs=3.4.1-1ubuntu0.3`
 
 Binary Packages:
 
-- `git-lfs=3.4.1-1ubuntu0.2`
+- `git-lfs=3.4.1-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
 - `Expat`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git-lfs=3.4.1-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.dsc' git-lfs_3.4.1-1ubuntu0.3.dsc 2785 SHA512:1500b4de4ce4d9890aa573e51bda030459d445ac2f82b7a0d9b3667dea642371023ead21490792e5525a11a644e6d51a4788cce44786a98dc82c6fe25dbe9c88
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA512:ef30b7906548594edf28e75046bb78f70043d0363390ec3a241fc2ff7790b0f6ab1869b8a6b10d13a4cbcd559db7ea51aa4c1d64e75707357b84f1ddc0f7095c
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz 4756 SHA512:da054387f81a7fed3eb997dcd01c235befbb349a35aa548b7ab3d436cd0d4b83d6bfb144e86f6d9f962437ea255b71b02cd294866e43f62c9c1f35765ad51ef7
+```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
 
@@ -1853,19 +1858,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-63.66`
+### `dpkg` source package: `linux=6.8.0-71.71`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-63.66`
+- `linux-libc-dev:amd64=6.8.0-71.71`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-71.71
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-71.71.dsc' linux_6.8.0-71.71.dsc 9342 SHA512:49bf054041716d6c7e2698f517821d5eee69255d3bf8456860ac20b14bebaa6a861b70c123cf62e49a5a26ce60fd5a4ad68eff564c7edd790619a76cd5c67dd1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-71.71.diff.gz' linux_6.8.0-71.71.diff.gz 5618369 SHA512:a51ca98f067cf4126c73133dc1837ede41b37f37b46e615e6147956c69ddf0b3d2416bf93726e2000be3a5f610d9e109e2d1fe4b1e5314bc7fb463ff1a1ca058
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2172,11 +2182,11 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
 ```
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.12`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.13`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.12`
+- `openssh-client=1:9.6p1-3ubuntu13.13`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2188,9 +2198,15 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.13.dsc' openssh_9.6p1-3ubuntu13.13.dsc 3346 SHA512:9c3d1d9724c9344ced2ac313d75ee6939d1ea4c2422267e6b84337fe8904c9ce1afab509581b160190453508c343fe4bde6749e72d00445f976d8fd8be4b0e19
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.13.debian.tar.xz' openssh_9.6p1-3ubuntu13.13.debian.tar.xz 207116 SHA512:f909fedc14066656855d455996631cda9eff3b144d7e28bef8acfacc229e0d7ab42f77c6d1340700fd049558aa359dce44026bde34a7b885c7afa14270590229
+```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
@@ -2322,14 +2338,14 @@ $ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.diff.gz' pcre2_10.42-4ubuntu2.1.diff.gz 8431 SHA512:a739c00ba25573d4e57490d487efcd1f4afbafb820ccb6063fe9d25f22d9a1f9bf7cc91cd89c5ffbb0b533f06133e4beaa16e5aee7f64e8939872ebb933c2f00
 ```
 
-### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.1`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.2`
 
 Binary Packages:
 
-- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.1`
-- `perl=5.38.2-3.2ubuntu0.1`
-- `perl-base=5.38.2-3.2ubuntu0.1`
-- `perl-modules-5.38=5.38.2-3.2ubuntu0.1`
+- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.2`
+- `perl=5.38.2-3.2ubuntu0.2`
+- `perl-base=5.38.2-3.2ubuntu0.2`
+- `perl-modules-5.38=5.38.2-3.2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.38/copyright`)
 
@@ -2359,9 +2375,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.dsc' perl_5.38.2-3.2ubuntu0.2.dsc 3036 SHA512:bdd956f4f04ef15d13659bac27cce96c4d98caaacc586525302c9e14c865e7c9ae81b7369caf636fd73074edcbc56a6e204e3c2ab0c8f2db52f8fece9f0d4b6c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.debian.tar.xz' perl_5.38.2-3.2ubuntu0.2.debian.tar.xz 171736 SHA512:9511993218de5c72dabb87e2ba13a00b034fbb96637b3791515cbac26fa9820067d95d48f165766cce1086304936c1de6150140023915437a91050f27aced32e
+```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
@@ -2709,11 +2731,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.debian.tar.xz' shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz 96392 SHA512:67cd7c7f869250d39ebb7af023ae4aca6eef88de143a85510135d547bb6988895ef02d9aff798888e5d507f415d7d17193c354b2437764b0c4bea18b1178531d
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.3`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.3`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2721,9 +2743,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.dsc' sqlite3_3.45.1-1ubuntu2.4.dsc 2601 SHA512:bdff95dee57936221fae6f9afb63298e036ba70ffb273f1ff25f3a063cdc9166214758ce789c2604dc5bdd564a24aa7d7217d1078b98a38c957b89eda9796589
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz 34820 SHA512:5eb09438632a9793590fbb3b3ce47ca3dccbc75cee58009d74fe67e656f327108a10c64e722c52e96c4c6c10a91621a8de4926a89f7fb1e006ec6915f92ded0c
+```
 
 ### `dpkg` source package: `subversion=1.14.3-1build4`
 

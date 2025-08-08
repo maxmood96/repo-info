@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:047280831827541d913e9b568fc214f8ff36b87f98550070a1de32d17f592971`
+- Image ID: `sha256:cf844748c3847b0c63dc29fc6979e06e78ab0a42c8e00cd1211700c9102f85a5`
 - Created: `2025-07-05T02:17:41Z`
-- Virtual Size: ~ 712.01 Mb  
+- Virtual Size: ~ 711.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,22 +21,22 @@
   - `GRADLE_VERSION=7.6.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-07-31T22:21:24`
+  - `build-date=2025-08-06T04:59:23`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.41.0-dev`
+  - `io.buildah.version=1.40.1`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1754000177`
+  - `release=1754456323`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=4a0d5874b3d4cd288010979bc55f90bc7199e363`
+  - `vcs-ref=9d904d0c37a2f241eb830c87fef29978a33fdc7e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -230,11 +230,16 @@ $ dnf --quiet download --source --url crypto-policies-20250128-1.git5269e22.el9.
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20250128-1.git5269e22.el9.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-31.el9.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-31.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-minimal-7.76.1-31.el9_6.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-31.el9_6.1.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-21.el9.x86_64`
 
@@ -511,29 +516,49 @@ $ dnf --quiet download --source --url glib2-2.68.4-16.el9_6.2
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-16.el9_6.2.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-168.el9_6.20.x86_64`
+### `rpm` package: `glibc-2.34-168.el9_6.23.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `glibc-common-2.34-168.el9_6.20.x86_64`
+```console
+$ dnf --quiet download --source --url glibc-2.34-168.el9_6.23
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.23.src.rpm
+```
 
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-langpack-en-2.34-168.el9_6.20.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.20.x86_64`
+### `rpm` package: `glibc-common-2.34-168.el9_6.23.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.23
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.23.src.rpm
+```
+
+### `rpm` package: `glibc-langpack-en-2.34-168.el9_6.23.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-langpack-en-2.34-168.el9_6.23
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.23.src.rpm
+```
+
+### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.23.x86_64`
+
+Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
+
+Source:
+
+```console
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.23
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-168.el9_6.23.src.rpm
+```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
 
@@ -866,11 +891,16 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-7.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-31.el9.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-31.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-31.el9_6.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-31.el9_6.1.src.rpm
+```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
@@ -1316,12 +1346,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-11.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-11.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1400,23 +1425,38 @@ $ dnf --quiet download --source --url mpfr-4.1.0-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/m/mpfr-4.1.0-7.el9.src.rpm
 ```
 
-### `rpm` package: `ncurses-6.2-10.20210508.el9.x86_64`
+### `rpm` package: `ncurses-6.2-10.20210508.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `ncurses-base-6.2-10.20210508.el9.noarch`
+```console
+$ dnf --quiet download --source --url ncurses-6.2-10.20210508.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.2-10.20210508.el9_6.2.src.rpm
+```
+
+### `rpm` package: `ncurses-base-6.2-10.20210508.el9_6.2.noarch`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `ncurses-libs-6.2-10.20210508.el9.x86_64`
+```console
+$ dnf --quiet download --source --url ncurses-base-6.2-10.20210508.el9_6.2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.2-10.20210508.el9_6.2.src.rpm
+```
+
+### `rpm` package: `ncurses-libs-6.2-10.20210508.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ncurses-libs-6.2-10.20210508.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.2-10.20210508.el9_6.2.src.rpm
+```
 
 ### `rpm` package: `nettle-3.10.1-1.el9.x86_64`
 
@@ -2540,11 +2580,16 @@ $ dnf --quiet download --source --url wget-1.21.1-8.el9_4
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/w/wget-1.21.1-8.el9_4.src.rpm
 ```
 
-### `rpm` package: `which-2.21-29.el9.x86_64`
+### `rpm` package: `which-2.21-30.el9_6.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url which-2.21-30.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/w/which-2.21-30.el9_6.src.rpm
+```
 
 ### `rpm` package: `xml-common-0.6.3-58.el9.noarch`
 
