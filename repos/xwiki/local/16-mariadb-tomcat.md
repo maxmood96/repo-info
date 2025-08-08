@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:690b3d2eae57c4b3793f4479cab2c693cbdce4bf5f4734c58f12a17f739fa800`
+- Image ID: `sha256:908cabf03148b47bbf76799ae29998cf2630f1ab0c0c90a0ed3441de90924d03`
 - Created: `2025-07-31T08:06:53Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.107`
-  - `TOMCAT_SHA512=1815837fa10083258b653dab1f3947fadbad377fa66546fa74aecea1439c6fed2ef4e40c86fa55e176d8c5739ad448196a7415ddfca6ff8d17c6fe8cdba0fefb`
+  - `TOMCAT_VERSION=9.0.108`
+  - `TOMCAT_SHA512=243474cd54d8589c97f2db964b13b36920500a298b190370a8c58306db786bb30101c33d9ca85eddd8014c5d7f53fec1685beeb4fb7f3037ffcc2f4124c6c6b7`
   - `XWIKI_VERSION=16.10.10`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.10`
   - `XWIKI_DOWNLOAD_SHA256=85dee4db22bb98bde66c4f7b379251f2d86f6ac3e6e92449e3b79a921e0192fd`
