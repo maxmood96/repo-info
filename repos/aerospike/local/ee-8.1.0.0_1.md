@@ -1,10 +1,10 @@
-# `aerospike:ee-8.0.0.9`
+# `aerospike:ee-8.1.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7e4c18941149819459e7a5e9341eb27759519c34ccdecb803a5dee47009c990`
-- Created: `2025-07-28T21:24:04Z`
-- Virtual Size: ~ 224.59 Mb  
+- Image ID: `sha256:faef0300c5a2083d0f7958c781f3653b0e69acc2b525a6a05693bd3da42026fb`
+- Created: `2025-08-05T17:58:51Z`
+- Virtual Size: ~ 209.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `org.opencontainers.image.title=Aerospike Enterprise Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=8.0.0.9`
+  - `org.opencontainers.image.version=8.1.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -48,11 +48,11 @@ $ apt-get source -qq --print-uris acl=2.3.2-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.2-1build1.1.debian.tar.xz' acl_2.3.2-1build1.1.debian.tar.xz 23472 SHA512:02e1eadeccb773f30f67c40aaf9cef3401cd771870c7aa82e94bcfbdf3f885879abec23a79ad8103e559dcd02b5ab7b92633890040d2b4db1f984a2a4c4aa232
 ```
 
-### `dpkg` source package: `aerospike-server-enterprise=8.0.0.9-1`
+### `dpkg` source package: `aerospike-server-enterprise=8.1.0.0-1`
 
 Binary Packages:
 
-- `aerospike-server-enterprise=8.0.0.9-1`
+- `aerospike-server-enterprise=8.1.0.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
