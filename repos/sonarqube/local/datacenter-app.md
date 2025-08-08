@@ -1,9 +1,9 @@
-# `sonarqube:2025.4.1-datacenter-app`
+# `sonarqube:2025.4.2-datacenter-app`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4eb77772fa4120699e38aac140942130534bf4e47ab451d630974b451124a7f7`
-- Created: `2025-07-31T15:40:05Z`
+- Image ID: `sha256:02b7338a53a9a52fca8ba7d49a1776605899a011491dff7795a51763894a6d4f`
+- Created: `2025-08-06T16:26:31Z`
 - Virtual Size: ~ 1.68 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-21.0.8+9`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=2025.4.1.111832`
+  - `SONAR_VERSION=2025.4.2.112048`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
