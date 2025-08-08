@@ -540,15 +540,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-6ubuntu2.dsc' glibc_2.41-6ubuntu2.dsc 8027 SHA512:84d61cacc57660981576fe289ce311fccb53c8060d8b04ba799614b647ea1959e91146b5075016df9dbd67e693ab87eacac2f7e0bbeeda20394560267b70e01b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 19344868 SHA512:894a3e5a796bc13df30c26a5bfbe4d60b5dbdaac54e7763432235124b547070c7dda88c50584536870cab79183d8cad73a3ac6ed09bfe54fa8482aad07253169
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz.asc' glibc_2.41.orig.tar.xz.asc 981 SHA512:98462e1a1abce7ae7214b48bce160ff95ffb6634708d9952a0997575ae1fb06f4499e01953bace0933e07fddf583f0dfe93221c44192957a894a4126ab073ce8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-6ubuntu2.debian.tar.xz' glibc_2.41-6ubuntu2.debian.tar.xz 458328 SHA512:0d13dddd61f37be277a5b2a70dea923f94dc4b76b579058320024255df6164fb5f8e12fcc05071997d748db03c68a93a5635d9372394e57333ec12a29f4c736f
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3ubuntu2`
 
