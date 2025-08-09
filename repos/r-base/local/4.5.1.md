@@ -1438,14 +1438,13 @@ Licenses: (parsed from: `/usr/share/doc/libblas-dev/copyright`, `/usr/share/doc/
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.12.1-4
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.12.1-4.dsc' lapack_3.12.1-4.dsc 3414 SHA256:e9a249e6e359742553527883a071e8338cd4333e4569dd5be21dbf13dbe94e6f
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.12.1.orig.tar.gz' lapack_3.12.1.orig.tar.gz 8067087 SHA256:2ca6407a001a474d4d4d35f3a61550156050c48016d949f0da0529c0aa052422
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.12.1-4.debian.tar.xz' lapack_3.12.1-4.debian.tar.xz 28532 SHA256:1e6f531ffa6d5e0e9b88c5d3c436fa50bb044d657cb1407a94f3f5ec6ec0479c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lapack/3.12.1-4/
+
 
 ### `dpkg` source package: `lattice=0.22-7-1`
 
