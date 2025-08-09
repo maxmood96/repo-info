@@ -1,9 +1,9 @@
-# `silverpeas:6.4.3`
+# `silverpeas:6.4.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5d412c92418af365e3684b168bf1144a87170ef109c474f964f279387b73cbd`
-- Created: `2025-04-11T14:37:01Z`
+- Image ID: `sha256:268967649f27687c6e17a813f64c88ffa6e628c39863ac7929cac699964f5519`
+- Created: `2025-08-07T14:33:54Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,16 +18,16 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.4.3`
+  - `SILVERPEAS_VERSION=6.4.4`
   - `WILDFLY_VERSION=26.1.3`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.4.3`
-  - `name=Silverpeas 6.4.3`
+  - `description=Image to install and to run Silverpeas 6.4.4`
+  - `name=Silverpeas 6.4.4`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
   - `vendor=Silverpeas`
-  - `version=6.4.3`
+  - `version=6.4.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1176,12 +1176,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.42.8+dfsg-1ubuntu0.3`
+### `dpkg` source package: `gdk-pixbuf=2.42.8+dfsg-1ubuntu0.4`
 
 Binary Packages:
 
-- `libgdk-pixbuf-2.0-0:amd64=2.42.8+dfsg-1ubuntu0.3`
-- `libgdk-pixbuf2.0-common=2.42.8+dfsg-1ubuntu0.3`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.8+dfsg-1ubuntu0.4`
+- `libgdk-pixbuf2.0-common=2.42.8+dfsg-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1193,9 +1193,14 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.42.8+dfsg-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-1ubuntu0.4.dsc' gdk-pixbuf_2.42.8+dfsg-1ubuntu0.4.dsc 3238 SHA512:9037c66cb7fd221a38e36d36d42177c440d8ab98ad87cbeedde45ff4381156bb659fba7ec28c171b6f058625618cd490aefcfc5f42456dc6fb6054e6eae2e91c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.8+dfsg.orig.tar.xz 6439548 SHA512:d77093ac4bd5c8f9a5267e67958dd99db009e16f94c44be95a547cd291b6d03fcc35c4a02327dd9f4341af1ae2ecdaa6a1bec02dcf1116ec5a440d22b3f68924
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-1ubuntu0.4.debian.tar.xz' gdk-pixbuf_2.42.8+dfsg-1ubuntu0.4.debian.tar.xz 29736 SHA512:5f88b7e49f1ffdb70ab6560e96f0ecacd83b7c4e7d980593e06f128c15c84139462918e65c034d231463070618fa5e38fd65e8d083d1bbfda2ae656e7592e911
+```
 
 ### `dpkg` source package: `ghostscript=9.55.0~dfsg1-0ubuntu5.12`
 
@@ -1816,11 +1821,11 @@ $ apt-get source -qq --print-uris intel-mediasdk=22.3.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/i/intel-mediasdk/intel-mediasdk_22.3.0-1.debian.tar.xz' intel-mediasdk_22.3.0-1.debian.tar.xz 5124 SHA512:2db0c4c5aa9c1409f0f4840efbbdbf1189f4df408b6a0c3f4e811bdc78c2decaf5662f350e0c72bb29d8f14c8fabd0310d4d3f9b8c507d0557ff8754b7cfb485
 ```
 
-### `dpkg` source package: `iputils=3:20211215-1`
+### `dpkg` source package: `iputils=3:20211215-1ubuntu0.1`
 
 Binary Packages:
 
-- `iputils-ping=3:20211215-1`
+- `iputils-ping=3:20211215-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 
@@ -1829,10 +1834,10 @@ Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris iputils=3:20211215-1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20211215-1.dsc' iputils_20211215-1.dsc 2180 SHA512:795fcc5c68f88b2293be6ee4496703e2ce73bde04ca0cbf84fc236c65f9681b23640aafab0d4e39ad590142f9d8c3853168c3179c43f695de9ade957b26f1873
+$ apt-get source -qq --print-uris iputils=3:20211215-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20211215-1ubuntu0.1.dsc' iputils_20211215-1ubuntu0.1.dsc 2269 SHA512:3d218c702754804d2ac4a8d29b2bc7206588f8d70feb22b7f2b03ebb8f011a833c32c495230f6d2553e68e39f38b9f00824e276f053ac48a98cc4d2ec4a7c0d5
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20211215.orig.tar.xz' iputils_20211215.orig.tar.xz 447600 SHA512:1d2eeda7b0641d498cdfd28924d41a7f4532fb1ae54607a5c8b642e7c33097f60ee19f802d557c3058251668915d7895ed5e3b16971d9bbae4b288d92beae9d4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20211215-1.debian.tar.xz' iputils_20211215-1.debian.tar.xz 10376 SHA512:541774ce1123e9588aadbf5efc3a5a2d3d77ecefb49ec847dfa474e16716c6edbb8915fbde16cd5f715cf550f10de6077c306fdad476e4505379b23a2f73aa96
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20211215-1ubuntu0.1.debian.tar.xz' iputils_20211215-1ubuntu0.1.debian.tar.xz 13272 SHA512:54a70878bc1a40c57e32aeedf1f09d69ca45811852d39111f4368cf6c3359607d6f207b196ee08acbb39b26b4f554a7f115782b32a0de18b8d06da30f77f9387
 ```
 
 ### `dpkg` source package: `iso-codes=4.9.0-1`
@@ -5234,14 +5239,14 @@ $ apt-get source -qq --print-uris openal-soft=1:1.19.1-2build3
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openal-soft/openal-soft_1.19.1-2build3.debian.tar.xz' openal-soft_1.19.1-2build3.debian.tar.xz 12932 SHA512:2353577b8a567a0d8559318f14ac4b4bb9f7f27594e255acd01abbd67669273ed1e3d087552afb876679e1ef6a76f539bd69aabcd895112f35eb4e02d21730d3
 ```
 
-### `dpkg` source package: `openjdk-lts=11.0.27+6~us1-0ubuntu1~22.04`
+### `dpkg` source package: `openjdk-lts=11.0.28+6-1ubuntu1~22.04.1`
 
 Binary Packages:
 
-- `openjdk-11-jdk:amd64=11.0.27+6~us1-0ubuntu1~22.04`
-- `openjdk-11-jdk-headless:amd64=11.0.27+6~us1-0ubuntu1~22.04`
-- `openjdk-11-jre:amd64=11.0.27+6~us1-0ubuntu1~22.04`
-- `openjdk-11-jre-headless:amd64=11.0.27+6~us1-0ubuntu1~22.04`
+- `openjdk-11-jdk:amd64=11.0.28+6-1ubuntu1~22.04.1`
+- `openjdk-11-jdk-headless:amd64=11.0.28+6-1ubuntu1~22.04.1`
+- `openjdk-11-jre:amd64=11.0.28+6-1ubuntu1~22.04.1`
+- `openjdk-11-jre-headless:amd64=11.0.28+6-1ubuntu1~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -5250,9 +5255,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-lts=11.0.28+6-1ubuntu1~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.28%2b6-1ubuntu1%7e22.04.1.dsc' openjdk-lts_11.0.28+6-1ubuntu1~22.04.1.dsc 4869 SHA512:3013858164252d8316e9fee75e5d0a4d13786b5c37acb08cf88e0095406c4aeb040458e05b4ee8fabae1cc13d8e0a0b4571d14a6c8a066685cd4e021b3f1dcb7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.28%2b6.orig.tar.xz' openjdk-lts_11.0.28+6.orig.tar.xz 69281452 SHA512:e25083b5a46ec81972398a4a1ec635f7a797ca486a31d1eb89b9fb34a0f3ebab239bbcf058f229060b9f9b76b895bef6879ee7fa677091aaeb1f42c41f5ae66c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.28%2b6-1ubuntu1%7e22.04.1.debian.tar.xz' openjdk-lts_11.0.28+6-1ubuntu1~22.04.1.debian.tar.xz 171144 SHA512:f40376fe95bdfc665cec0ab6b7f230bce6d485deb1c53588ebdfcf23809f5e6b9ed221217b95f1dd27c071c051888845402d70dca10a8a27b9e59593140de6e1
+```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.3`
 
@@ -5647,11 +5657,11 @@ $ apt-get source -qq --print-uris poppler-data=0.4.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.11-1.debian.tar.xz' poppler-data_0.4.11-1.debian.tar.xz 19664 SHA512:3bde3ba66ec5212cae67c1fcdbebd6297b912cb0c8fc02bc0db69c1e8cb86e46631bc7cd5840c8a376585b9548ceed2f7e786b00f28d1403505900d2fb440a30
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.8`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.9`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.8`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -5659,9 +5669,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.9.dsc' poppler_22.02.0-2ubuntu0.9.dsc 3360 SHA512:147177ea51012c683666c4df1d49c122409c35fc5b6fd48970e2c2236a0fa8281d8bf94dc5cdc55a9cb998f7c62eae96bbe0371e593f737a459a1911e38d6d1f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.9.debian.tar.xz' poppler_22.02.0-2ubuntu0.9.debian.tar.xz 45652 SHA512:ac71a6d80324803439910d90ad9e6e21f9b00a94b9ca6bbe8d1e9e4383b5909e160a54311d7fc03a311971a68b1b7524ce8cd27dfbad6ef6be23521c562e892e
+```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
@@ -6152,11 +6167,11 @@ $ apt-get source -qq --print-uris sphinxbase=0.8+5prealpha+1-13build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/sphinxbase/sphinxbase_0.8%2b5prealpha%2b1-13build1.debian.tar.xz' sphinxbase_0.8+5prealpha+1-13build1.debian.tar.xz 15508 SHA512:7ea64faf18f2e054a2d39215e0d5ae8ba5ac64677a7bbdec04c1d6a804d8c84fa77120f8cefb71a3e7d5c48199397df1ace77154c61c15948e77cbe8f525a0f6
 ```
 
-### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.4`
+### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.5`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.37.2-2ubuntu0.4`
+- `libsqlite3-0:amd64=3.37.2-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -6164,9 +6179,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.dsc' sqlite3_3.37.2-2ubuntu0.5.dsc 2602 SHA512:fb731fd5ca44dbfa72f1b685980fc3cc66379f63fe0220460897f142eb91d43f81a2c1180864695157b764c22787621c958b0c2448d7ab820c1638cc7ad5f97d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz 33900 SHA512:47c8ee60e8f1b05eb8156a58ea6e909755895df5db9a7381fa8c9f79e7bd6b9a5e6d8f3fd39446d371485ac5feff5b4ac28ff97b4cea92de912de15b7c728e26
+```
 
 ### `dpkg` source package: `sratom=0.6.8-1`
 
