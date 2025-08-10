@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f8420dfbedf8bcd40f065611a3fb56220588492102887bea973104abc8b8ea3`
+- Image ID: `sha256:42c653e56b9999204b82c2fc9f61333b672eadafb1275e5a9684f46a17b6bb83`
 - Created: `2025-07-08T16:37:15Z`
-- Virtual Size: ~ 56.12 Mb  
+- Virtual Size: ~ 55.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.5`
-  - `PYTHON_SHA256=93e583f243454e6e9e4588ca2c2662206ad961659863277afcdb96801647d640`
+  - `PYTHON_VERSION=3.13.6`
+  - `PYTHON_SHA256=17ba5508819d8736a14fbfc47d36e184946a877851b2e9c4b6c43acb44a3b104`
   - `HY_VERSION=1.1.0`
   - `HYRULE_VERSION=1.0.0`
 
@@ -395,16 +395,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r3 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r3 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r3 license:
 blessing
 
 ```
