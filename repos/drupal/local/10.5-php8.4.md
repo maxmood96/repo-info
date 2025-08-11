@@ -1,10 +1,10 @@
-# `drupal:10.5.1-php8.4-apache-bookworm`
+# `drupal:10.5.2-php8.4-apache-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:816ac50deb487f017dfec245dc00d30224c0259b60d9f445f3e55150d3a067f3`
-- Created: `2025-06-26T15:27:17Z`
-- Virtual Size: ~ 614.31 Mb  
+- Image ID: `sha256:7fd6b52e435280771ec88338d41cdcf100696675f29ac89212ad19cb8a74fd25`
+- Created: `2025-08-07T15:27:15Z`
+- Virtual Size: ~ 614.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,7 +23,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.11.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.11.tar.xz.asc`
   - `PHP_SHA256=04cd331380a8683a5c2503938eb51764d48d507c53ad4208d2c82e0eed779a00`
-  - `DRUPAL_VERSION=10.5.1`
+  - `DRUPAL_VERSION=10.5.2`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2711,21 +2711,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u1.dsc' openssl_3.0.17-1~deb12u1.dsc 2501 SHA256:dd8cb3961864da275233738fbb84a6a43cfa0a8c7417c669f49b6caa9f5da000
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u1.debian.tar.xz' openssl_3.0.17-1~deb12u1.debian.tar.xz 52296 SHA256:900349f655400709d637945a10670c0f78e78f5dc4e96370a5f0947ad651566e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u1/
 
-- https://sources.debian.net/src/openssl/3.0.17-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.17-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
