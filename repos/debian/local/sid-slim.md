@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.dsc' apt_3.0.3.dsc 3091 SHA256:ccf1666e5b268d76bf62aafb22db089a2fdae9c17d1d1c446546b3621768add7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.tar.xz' apt_3.0.3.tar.xz 2422096 SHA256:5b5f6f6d26121742a83aa80d4ed0eb0c6ce9bea259518db412edefd95760e4ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.0.3/
 
-- https://sources.debian.net/src/apt/3.0.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -139,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8.dsc' base-files_13.8.dsc 1215 SHA256:7affd67993afe347ed581d242fdb591ca4585a513446d24ad5e313f4d2895785
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8.tar.xz' base-files_13.8.tar.xz 68600 SHA256:b2776447ed88d510aa5fa65f0b8ad144811e59d7bf943b977d29c94de0c7e368
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8/
 
-- https://sources.debian.net/src/base-files/13.8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
