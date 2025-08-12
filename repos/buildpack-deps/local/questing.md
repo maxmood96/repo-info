@@ -1088,14 +1088,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-14/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14.3.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.3.0-1ubuntu1.dsc' gcc-14_14.3.0-1ubuntu1.dsc 42455 SHA512:9190e73572b5cf2ae2ba8425db3575755aa56b699aa644fae82fbe8b7bf86beaacfa4b2ce571454bc5cd23aab264de82ee5b67fec052cc005d2a55f66d151b30
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.3.0.orig.tar.gz' gcc-14_14.3.0.orig.tar.gz 100117093 SHA512:cd51c26dde94fadbc677d04194eb49e4c02f4a695a835bcec4562d27e94d76f0bbbc6ffa448beeec2c077b89d51bfe0c18797840272f40b5b7e8be6fd49ae56c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.3.0-1ubuntu1.debian.tar.xz' gcc-14_14.3.0-1ubuntu1.debian.tar.xz 571600 SHA512:a6b20cf066ff0b13bbef50d9fc8f112d91bbdc5594a5f2066fba31099f914f27f98b6a01b260072cc4804f0d15a7cec082fbe1521151c99a1fdbfad6b35f4e99
-```
 
 ### `dpkg` source package: `gcc-15=15.1.0-8ubuntu1`
 
@@ -1719,15 +1714,9 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-1-29t64/copyright`, `/usr/sha
 
 - `imath`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.1.12-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12-1ubuntu1.dsc' imath_3.1.12-1ubuntu1.dsc 2728 SHA512:16be0f55ee341daf74fb8f6867c1f1d7de9685056f1093d2af7d59e7eaef07d1fe5d26c21ad3efff8776e30df3f7d5cfaaad7a68b02c074bbba93703ba9b19b2
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12.orig.tar.gz' imath_3.1.12.orig.tar.gz 604232 SHA512:32628dfcacb610310b81ffe017a66215cf5fb84c2e0a6ac8c94a68c048be3d2b97eb57965dd253770184d5824cce1e5440b8eefb2834666b273b3193ff108343
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12.orig.tar.gz.asc' imath_3.1.12.orig.tar.gz.asc 287 SHA512:9b3978e44b531429aba42b9cc4969a470898d9d74652e3809edb0273ba9b127c471aec6570b5d352be738f59810091c0df2c70d39c16d2c32833d173b270f72c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imath/imath_3.1.12-1ubuntu1.debian.tar.xz' imath_3.1.12-1ubuntu1.debian.tar.xz 10172 SHA512:3c400791f845e9424585cdb7e51b1cfd6586a64d7d15e88392e1413b2e6f1c592cf0360e48e98c34e1ec16aa437b554a42087800268bd1678d45a0ad7ab4f14b
-```
 
 ### `dpkg` source package: `init-system-helpers=1.68`
 
