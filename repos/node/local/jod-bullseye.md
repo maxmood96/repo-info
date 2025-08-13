@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd6d15d2d5cae1a9a816ad18abcccb047d39867cab2979e3992918252b7696a1`
+- Image ID: `sha256:6d768348d679e052ab024ccd8aee0c9083a41a3e080718a66fc706db2c9d4be5`
 - Created: `2025-08-01T10:06:16Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
@@ -1563,11 +1563,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u7`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u8`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u7`
+- `libgnutls30:amd64=3.7.1-5+deb11u8`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1588,18 +1588,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u7.dsc' gnutls28_3.7.1-5+deb11u7.dsc 3522 SHA256:8d00560c912e0a810ca26423179e56587707fbc3d130e9f9f50e37f7da2fa1f5
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u8.dsc' gnutls28_3.7.1-5+deb11u8.dsc 3522 SHA256:c3f51e97ea6488c9b512067ad333d124739ceeba5f92003eacf85cbf94a098d3
 'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
 'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u7.debian.tar.xz' gnutls28_3.7.1-5+deb11u7.debian.tar.xz 115536 SHA256:918d63685881449f35349cc452554d22a055130ab6911e4fcd94cd8946adb544
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u8.debian.tar.xz' gnutls28_3.7.1-5+deb11u8.debian.tar.xz 119824 SHA256:095475aa4bb4c400ea5058057a7192fa8096d83591bffeac865c8bc7d24a1a13
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.66.1-1`
 
@@ -3522,25 +3522,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxext/2:1.3.3-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxext/2:1.3.3-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.10+dfsg-6.7+deb11u7`
+### `dpkg` source package: `libxml2=2.9.10+dfsg-6.7+deb11u8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.10+dfsg-6.7+deb11u7`
-- `libxml2-dev:amd64=2.9.10+dfsg-6.7+deb11u7`
+- `libxml2:amd64=2.9.10+dfsg-6.7+deb11u8`
+- `libxml2-dev:amd64=2.9.10+dfsg-6.7+deb11u8`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-dev/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.7+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u8.dsc' libxml2_2.9.10+dfsg-6.7+deb11u8.dsc 2704 SHA256:6a13cdf4b7546ed994a14568f35974c382ff8b5d31996c3cb50d89a7bc040e91
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u8.debian.tar.xz' libxml2_2.9.10+dfsg-6.7+deb11u8.debian.tar.xz 50604 SHA256:31dad41bd24da0c308ca7d60d1b354d696da8450e70e4f3b4270c9a114ac512d
+```
 
-- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -5119,12 +5126,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/subversion/1.14.1-3+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/subversion/1.14.1-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=247.3-7+deb11u6`
+### `dpkg` source package: `systemd=247.3-7+deb11u7`
 
 Binary Packages:
 
-- `libsystemd0:amd64=247.3-7+deb11u6`
-- `libudev1:amd64=247.3-7+deb11u6`
+- `libsystemd0:amd64=247.3-7+deb11u7`
+- `libudev1:amd64=247.3-7+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5137,13 +5144,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=247.3-7+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.dsc' systemd_247.3-7+deb11u7.dsc 5236 SHA256:2521703c26bedac0ce9bddf6aee2d500d01bf12c3a80d5d62950a30a3fdfa497
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.debian.tar.xz' systemd_247.3-7+deb11u7.debian.tar.xz 207972 SHA256:a175340e4b1341c2f614227de0ffd154073d56cc3ddba2a92668f7f5386f1366
+```
 
-- http://snapshot.debian.org/package/systemd/247.3-7+deb11u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/247.3-7+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/247.3-7+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7+deb11u1`
 
