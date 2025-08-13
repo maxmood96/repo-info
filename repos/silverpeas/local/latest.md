@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:268967649f27687c6e17a813f64c88ffa6e628c39863ac7929cac699964f5519`
+- Image ID: `sha256:8e78ac763e0c3f585909060f2cb4439c04898b5385387b0ee1f92362eb2d5c5d`
 - Created: `2025-08-07T14:33:54Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
@@ -5528,11 +5528,11 @@ $ apt-get source -qq --print-uris pcsc-lite=1.9.5-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz' pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz 19320 SHA512:faa39ebcf5e06bebf76eac1a80e979f071623868a455f76b61ec56a0f10fca456d95f1d7d688cbfa8ca333d5197f865ad0b3f092e2a6c54327abc28c3b5a7a41
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.4`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.5`
 
 Binary Packages:
 
-- `perl-base=5.34.0-3ubuntu1.4`
+- `perl-base=5.34.0-3ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -5564,9 +5564,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.dsc' perl_5.34.0-3ubuntu1.5.dsc 2976 SHA512:e490cfc45a24fa7538f5a92054a19a52fd9675fe7a7e6e0e20b7a6c3e6939ec0cf1b39e71f2daebb8e5ab0968d851fdf1b713166d6855968fb47e846d7350020
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.debian.tar.xz' perl_5.34.0-3ubuntu1.5.debian.tar.xz 200524 SHA512:bb565b5ee511cd73dccf9b596f356fd4d4a32dcd5a584fa73e806322a541706d6940c54732d20d6eb1fcc0bac06fcef5a98f5f6a592b83b12a8ada3157dfdc6f
+```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
