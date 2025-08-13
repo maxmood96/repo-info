@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce0382c0a9068b42dac0c3afea5980345c7495537a0ad62185d41c9ec421d49c`
+- Image ID: `sha256:def48156574f68d61c12b5a1b015dc499c2f9fc077b59fb43074503af8ab87d1`
 - Created: `2025-07-02T04:24:55Z`
 - Virtual Size: ~ 454.35 Mb  
   (total size of all layers on-disk)
@@ -1782,11 +1782,11 @@ $ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.diff.gz' pcre2_10.42-4ubuntu2.1.diff.gz 8431 SHA512:a739c00ba25573d4e57490d487efcd1f4afbafb820ccb6063fe9d25f22d9a1f9bf7cc91cd89c5ffbb0b533f06133e4beaa16e5aee7f64e8939872ebb933c2f00
 ```
 
-### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.1`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.2`
 
 Binary Packages:
 
-- `perl-base=5.38.2-3.2ubuntu0.1`
+- `perl-base=5.38.2-3.2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1816,9 +1816,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.dsc' perl_5.38.2-3.2ubuntu0.2.dsc 3036 SHA512:bdd956f4f04ef15d13659bac27cce96c4d98caaacc586525302c9e14c865e7c9ae81b7369caf636fd73074edcbc56a6e204e3c2ab0c8f2db52f8fece9f0d4b6c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.debian.tar.xz' perl_5.38.2-3.2ubuntu0.2.debian.tar.xz 171736 SHA512:9511993218de5c72dabb87e2ba13a00b034fbb96637b3791515cbac26fa9820067d95d48f165766cce1086304936c1de6150140023915437a91050f27aced32e
+```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
@@ -2011,12 +2017,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz 34820 SHA512:5eb09438632a9793590fbb3b3ce47ca3dccbc75cee58009d74fe67e656f327108a10c64e722c52e96c4c6c10a91621a8de4926a89f7fb1e006ec6915f92ded0c
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.8`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.8`
-- `libudev1:amd64=255.4-1ubuntu8.8`
+- `libsystemd0:amd64=255.4-1ubuntu8.10`
+- `libudev1:amd64=255.4-1ubuntu8.10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2032,10 +2038,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.8
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.dsc' systemd_255.4-1ubuntu8.8.dsc 7320 SHA512:faa00da26c27905189ec2273e4f0de0facfe3afe75ee44dae5ffafc4311979ced858e766f42b65ef5aad75c7223189a97dfd2608b2daffd17ef6ce62bb8f1351
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.8.debian.tar.xz' systemd_255.4-1ubuntu8.8.debian.tar.xz 239924 SHA512:dcc243a9417609d6ffcc4174d72807a6304b9b39b1787420f234cfcc2b2aae9191254000aa26e1ca24cd03d924068eb50c17b1c8d1b754d9516080507b2e8246
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.10
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.10.dsc' systemd_255.4-1ubuntu8.10.dsc 7324 SHA512:c30052292318e7b9b97111798bb17af3e42dd5207550cce735ed027c42ed8eba6f44b807a096410eca54b5a32e710552f8737ff7240332d62a6ad89e3231cdf5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.10.debian.tar.xz' systemd_255.4-1ubuntu8.10.debian.tar.xz 252212 SHA512:b19d9768d4cb62450f299b6a31395cbab6f50ac93d3426d4a686391c6dba9f059834d071f71991f58f78b8d28e66f4e74587ec61a7c8ca536a05371e068c6ec9
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
