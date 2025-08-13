@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a46cf41eed162076563a9f55dc45328a7993233e269c48ffe46ca80b628eb9b`
+- Image ID: `sha256:8b8dd914c6340bac860267eef937d0b1e6682e60e8f88d6d0e6791d083b14741`
 - Created: `2025-08-06T00:42:16Z`
 - Virtual Size: ~ 1.27 Gb  
   (total size of all layers on-disk)
@@ -3246,11 +3246,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.140-1`
+### `dpkg` source package: `linux=6.1.147-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.140-1`
+- `linux-libc-dev:amd64=6.1.147-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3265,17 +3265,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.140-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140-1.dsc' linux_6.1.140-1.dsc 290931 SHA256:90ec880d742107a994dc362ac5282306b7077bf7b8a3090c403ec6db80a6bfcc
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140.orig.tar.xz' linux_6.1.140.orig.tar.xz 137788592 SHA256:7a29d83c6f736c7edaddd82fc6b9f2c31f91b0ccb782c5934ff2c2507930ffca
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140-1.debian.tar.xz' linux_6.1.140-1.debian.tar.xz 1752292 SHA256:318cc4d1f788173832d4d2e255f45f01216b6aa10476691bc96552ae069b6d5f
+$ apt-get source -qq --print-uris linux=6.1.147-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.147-1.dsc' linux_6.1.147-1.dsc 290931 SHA256:4d9fafd10424203e46c918802aea63d6448bb3f902b712e84e36b512031b3bc5
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.147.orig.tar.xz' linux_6.1.147.orig.tar.xz 137834576 SHA256:d7d3456dcabe4bb188112a664c21830de479ac86a09fbc11029a8d9da102d319
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.147-1.debian.tar.xz' linux_6.1.147-1.debian.tar.xz 1771736 SHA256:1ec9a92bb0c8e6d64b2d951bf406d2adaf8a526fb6f745f7b6817f012a4e7d7b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.140-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.140-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.140-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.147-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.147-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.147-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -3693,12 +3693,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.17-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.17-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.17-1~deb12u1`
-- `openssl=3.0.17-1~deb12u1`
+- `libssl3:amd64=3.0.17-1~deb12u2`
+- `openssl=3.0.17-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -3707,13 +3707,21 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.dsc' openssl_3.0.17-1~deb12u2.dsc 2675 SHA256:8eff0f04976f65df9a00507f286c18f42644d73124e3844258f037ff47c4f6cf
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.debian.tar.xz' openssl_3.0.17-1~deb12u2.debian.tar.xz 55224 SHA256:e5b4c3e1b9caad2da53572fe2b4c7ce027ec17e778630f342d194608472d52f1
+```
 
-- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
