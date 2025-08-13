@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49ef25e41244926498d30e0664cdc21e625c14275174104b72870fcb2957d675`
-- Created: `2025-07-04T16:07:12Z`
-- Virtual Size: ~ 1.06 Gb  
+- Image ID: `sha256:690234ffe7292ad7b5aaad4a803e8cd5904a7796678664511ee47aeaeada26b8`
+- Created: `2025-08-08T20:00:48Z`
+- Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
@@ -3827,32 +3827,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxslt/1.1.35-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxss=1:1.2.3-1`
-
-Binary Packages:
-
-- `libxss1:amd64=1:1.2.3-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libxss=1:1.2.3-1
-'http://deb.debian.org/debian/pool/main/libx/libxss/libxss_1.2.3-1.dsc' libxss_1.2.3-1.dsc 2203 SHA256:783dbcd49a0934d994693af676ee98734dad070ab2434a6afe831c2de0ecca1d
-'http://deb.debian.org/debian/pool/main/libx/libxss/libxss_1.2.3.orig.tar.gz' libxss_1.2.3.orig.tar.gz 385215 SHA256:4f74e7e412144591d8e0616db27f433cfc9f45aae6669c6c4bb03e6bf9be809a
-'http://deb.debian.org/debian/pool/main/libx/libxss/libxss_1.2.3.orig.tar.gz.asc' libxss_1.2.3.orig.tar.gz.asc 705 SHA256:4e900524d56c8e7263365267efa91bb3671110c9eb28ccab58f70e2188f0b91b
-'http://deb.debian.org/debian/pool/main/libx/libxss/libxss_1.2.3-1.diff.gz' libxss_1.2.3-1.diff.gz 7145 SHA256:9d381b48f1377f27c506113e1f9b7d6ee286b856421f7f2b27017f01dccfef04
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libxss/1:1.2.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libxss/1:1.2.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxss/1:1.2.3-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libxt=1:1.2.1-1.1`
 
 Binary Packages:
@@ -3937,11 +3911,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.140-1`
+### `dpkg` source package: `linux=6.1.147-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.140-1`
+- `linux-libc-dev:amd64=6.1.147-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3956,17 +3930,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.140-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140-1.dsc' linux_6.1.140-1.dsc 290931 SHA256:90ec880d742107a994dc362ac5282306b7077bf7b8a3090c403ec6db80a6bfcc
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140.orig.tar.xz' linux_6.1.140.orig.tar.xz 137788592 SHA256:7a29d83c6f736c7edaddd82fc6b9f2c31f91b0ccb782c5934ff2c2507930ffca
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.140-1.debian.tar.xz' linux_6.1.140-1.debian.tar.xz 1752292 SHA256:318cc4d1f788173832d4d2e255f45f01216b6aa10476691bc96552ae069b6d5f
+$ apt-get source -qq --print-uris linux=6.1.147-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.147-1.dsc' linux_6.1.147-1.dsc 290931 SHA256:4d9fafd10424203e46c918802aea63d6448bb3f902b712e84e36b512031b3bc5
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.147.orig.tar.xz' linux_6.1.147.orig.tar.xz 137834576 SHA256:d7d3456dcabe4bb188112a664c21830de479ac86a09fbc11029a8d9da102d319
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.147-1.debian.tar.xz' linux_6.1.147-1.debian.tar.xz 1771736 SHA256:1ec9a92bb0c8e6d64b2d951bf406d2adaf8a526fb6f745f7b6817f012a4e7d7b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.140-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.140-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.140-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.147-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.147-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.147-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -4566,11 +4540,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:9.2p1-2+deb12u6`
+### `dpkg` source package: `openssh=1:9.2p1-2+deb12u7`
 
 Binary Packages:
 
-- `openssh-client=1:9.2p1-2+deb12u6`
+- `openssh-client=1:9.2p1-2+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -4585,26 +4559,26 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u6
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u6.dsc' openssh_9.2p1-2+deb12u6.dsc 3381 SHA256:0275cb81c40b90b8ac4e321f2bae896a0d5ac7665b36af6ba4182b2882625868
+$ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u7
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u7.dsc' openssh_9.2p1-2+deb12u7.dsc 3535 SHA256:08f5d94dbd2517a25432e8aa0d0eadc50b5459a8b35dcb88336e4cb555cb2da1
 'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz' openssh_9.2p1.orig.tar.gz 1852380 SHA256:3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46
 'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz.asc' openssh_9.2p1.orig.tar.gz.asc 833 SHA256:7acc8e9502040972aeecb785fa3b6bb00c069cc01fbd7c214f8f7867033a6dbb
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u6.debian.tar.xz' openssh_9.2p1-2+deb12u6.debian.tar.xz 196396 SHA256:8877ff03e7ca5cb92c51876caab8817cb89576c5f1df9c3f32044f3ecddf770a
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u7.debian.tar.xz' openssh_9.2p1-2+deb12u7.debian.tar.xz 197308 SHA256:38fe612408e19713b7c971d9987d788eecf27bbb13a81a6edca4137fd38a9251
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.16-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.17-1~deb12u2`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.16-1~deb12u1`
-- `libssl3:amd64=3.0.16-1~deb12u1`
-- `openssl=3.0.16-1~deb12u1`
+- `libssl-dev:amd64=3.0.17-1~deb12u2`
+- `libssl3:amd64=3.0.17-1~deb12u2`
+- `openssl=3.0.17-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -4616,18 +4590,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.16-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.dsc' openssl_3.0.16-1~deb12u1.dsc 2675 SHA256:d0c61eed29fcb5c26eabdfbf9cab9216cd955bf6c62a0936e2f10e0b1aca3d03
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz' openssl_3.0.16.orig.tar.gz 15334967 SHA256:57e03c50feab5d31b152af2b764f10379aecd8ee92f16c985983ce4a99f7ef86
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz.asc' openssl_3.0.16.orig.tar.gz.asc 833 SHA256:a08564918ca8ace8fc31cfc7643369eae4cc5af436f448779ec741f1134f4054
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.debian.tar.xz' openssl_3.0.16-1~deb12u1.debian.tar.xz 52852 SHA256:83a175489ae79ae0e0ed4f56b16985e16a0c9a632ba2b3d9b41cdac8f29630df
+$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.dsc' openssl_3.0.17-1~deb12u2.dsc 2675 SHA256:8eff0f04976f65df9a00507f286c18f42644d73124e3844258f037ff47c4f6cf
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.debian.tar.xz' openssl_3.0.17-1~deb12u2.debian.tar.xz 55224 SHA256:e5b4c3e1b9caad2da53572fe2b4c7ce027ec17e778630f342d194608472d52f1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.16-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -5526,57 +5500,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tcl8.6=8.6.13+dfsg-2`
-
-Binary Packages:
-
-- `libtcl8.6:amd64=8.6.13+dfsg-2`
-- `tcl8.6=8.6.13+dfsg-2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris tcl8.6=8.6.13+dfsg-2
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.dsc' tcl8.6_8.6.13+dfsg-2.dsc 2120 SHA256:7965fd63c4cb970d0f675f574f6730114c806139e433cb3589a428658fc4d0cd
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg.orig.tar.gz' tcl8.6_8.6.13+dfsg.orig.tar.gz 6302749 SHA256:83bce7277e3825df0179567e0d8a431ebb1a126df53ea4a94af89dd4dd0f26d5
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.13%2bdfsg-2.debian.tar.xz' tcl8.6_8.6.13+dfsg-2.debian.tar.xz 14336 SHA256:899c8d800988caa1f5a8b070d3697f29c3d098754416cc2816b94dfa93aef009
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tcl8.6/8.6.13+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/tcl8.6/8.6.13+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcl8.6/8.6.13+dfsg-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `tcltk-defaults=8.6.13`
-
-Binary Packages:
-
-- `tcl=8.6.13`
-- `tk=8.6.13`
-
-Licenses: (parsed from: `/usr/share/doc/tcl/copyright`, `/usr/share/doc/tk/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris tcltk-defaults=8.6.13
-'http://deb.debian.org/debian/pool/main/t/tcltk-defaults/tcltk-defaults_8.6.13.dsc' tcltk-defaults_8.6.13.dsc 2011 SHA256:21a12e32bdc5335a2e952ef8431b92ac01295b37e1b0e372bdaf33be3ff31773
-'http://deb.debian.org/debian/pool/main/t/tcltk-defaults/tcltk-defaults_8.6.13.tar.xz' tcltk-defaults_8.6.13.tar.xz 14112 SHA256:ad407334848953a79bc4333e9e852ccb30f6ccb8a6bdf80260b415cef5dd7cc4
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tcltk-defaults/8.6.13/ (for browsing the source)
-- https://sources.debian.net/src/tcltk-defaults/8.6.13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcltk-defaults/8.6.13/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `tiff=4.5.0-6+deb12u2`
 
 Binary Packages:
@@ -5603,32 +5526,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.5.0-6+deb12u2/ (for browsing the source)
 - https://sources.debian.net/src/tiff/4.5.0-6+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.5.0-6+deb12u2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `tk8.6=8.6.13-2`
-
-Binary Packages:
-
-- `libtk8.6:amd64=8.6.13-2`
-- `tk8.6=8.6.13-2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris tk8.6=8.6.13-2
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.13-2.dsc' tk8.6_8.6.13-2.dsc 2155 SHA256:12783fea0125ef3e67a1a07b2b24f7e27329214394ca5b543bd38716a91d7a1e
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.13.orig.tar.gz' tk8.6_8.6.13.orig.tar.gz 4546848 SHA256:2e65fa069a23365440a3c56c556b8673b5e32a283800d8d9b257e3f584ce0675
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.13-2.debian.tar.xz' tk8.6_8.6.13-2.debian.tar.xz 10740 SHA256:1e57bc189cfa3e73e140aa1853b91e6c9a4da99eccd931de24e0c2cd525f8319
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tk8.6/8.6.13-2/ (for browsing the source)
-- https://sources.debian.net/src/tk8.6/8.6.13-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tk8.6/8.6.13-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025b-0+deb12u1`
 
@@ -5862,31 +5759,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/x265/3.5-2/ (for browsing the source)
 - https://sources.debian.net/src/x265/3.5-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/x265/3.5-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `xft=2.3.6-1`
-
-Binary Packages:
-
-- `libxft2:amd64=2.3.6-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris xft=2.3.6-1
-'http://deb.debian.org/debian/pool/main/x/xft/xft_2.3.6-1.dsc' xft_2.3.6-1.dsc 2006 SHA256:252220495bd12fac30d8f1b1994916beaed9c5149138dcc62e230fee17339530
-'http://deb.debian.org/debian/pool/main/x/xft/xft_2.3.6.orig.tar.gz' xft_2.3.6.orig.tar.gz 447498 SHA256:b7e59f69e0bbabe9438088775f7e5a7c16a572e58b11f9722519385d38192df5
-'http://deb.debian.org/debian/pool/main/x/xft/xft_2.3.6-1.diff.gz' xft_2.3.6-1.diff.gz 17995 SHA256:9d4c64fc52626134a3f753df88fceaba0cb460bd9b56544f0e42178deca77019
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/xft/2.3.6-1/ (for browsing the source)
-- https://sources.debian.net/src/xft/2.3.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xft/2.3.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1.1`
 
