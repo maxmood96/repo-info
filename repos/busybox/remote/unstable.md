@@ -1,11 +1,11 @@
 ## `busybox:unstable`
 
 ```console
-$ docker pull busybox@sha256:f85340bf132ae937d2c2a763b8335c9bab35d6e8293f70f606b9c6178d84f42b
+$ docker pull busybox@sha256:de02f124ed06177f8dfc9389aae2d7eaa69c687a68ea5d5398430c7583865691
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 18
+-	Platforms: 17
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -17,7 +17,6 @@ $ docker pull busybox@sha256:f85340bf132ae937d2c2a763b8335c9bab35d6e8293f70f606b
 	-	unknown; unknown
 	-	linux; 386
 	-	unknown; unknown
-	-	linux; mips64le
 	-	linux; ppc64le
 	-	unknown; unknown
 	-	linux; riscv64
@@ -28,43 +27,43 @@ $ docker pull busybox@sha256:f85340bf132ae937d2c2a763b8335c9bab35d6e8293f70f606b
 ### `busybox:unstable` - linux; amd64
 
 ```console
-$ docker pull busybox@sha256:7c0ffe5751238c8479f952f3fbc3b719d47bccac0e9bf0a21c77a27cba9ef12d
+$ docker pull busybox@sha256:182014572d8981d8323fe9944876f63b39694e16ce08ae6296e97686c52b150c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2145249 bytes)**  
+-	Total Size: **2.2 MB (2213082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d3e4188a38af91b0c1577b9e88c53368926b2fe0e1fb985d6e8a70040520c4d`
+-	Image ID: `sha256:0ed463b26daee791b094dc3fff25edb3e79f153d37d274e5c2936923c38dac2b`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (glibc), Debian 12
+RUN BusyBox 1.37.0 (glibc), Debian 13
 ```
 
 -	Layers:
-	-	`sha256:90b9666d4aed1893ff122f238948dfd5e8efdcf6c444fe92371ea0f01750bf8c`  
-		Last Modified: Tue, 03 Jun 2025 13:30:14 GMT  
-		Size: 2.1 MB (2145249 bytes)  
+	-	`sha256:80bfbb8a41a2b27d93763e96f5bdccb8ca289387946e406e6f24053f6a8e8494`  
+		Last Modified: Thu, 14 Aug 2025 18:26:34 GMT  
+		Size: 2.2 MB (2213082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:unstable` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:9bae7fffb05c54e92d4e64e92bdd89e08b6b8676997d0eb602bc87a47f48228e
+$ docker pull busybox@sha256:8ca2610657effa4cd12610a65db1c9e526dd7451b91ccabc34d8bab6a119911c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57187f60181f32872eb667590c14f794a76a9902d9c026f079e312a3709b6118`
+-	Image ID: `sha256:707f71fe6e919558038b16deb4e9d21024afd929c88f2290eac6930b3465dce2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:805b1b2017156ad5466b925bc79b01777a570fb1360eca330b47cb99f8734583`  
-		Last Modified: Tue, 03 Jun 2025 14:03:07 GMT  
+	-	`sha256:face90767b53b08c19c644ee985fb1d8ba6fd40ed392a1206fcbe1e2313eece9`  
+		Last Modified: Thu, 14 Aug 2025 20:57:27 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -114,18 +113,18 @@ $ docker pull busybox@sha256:5ef68fd3db3d20f17101d1cc88348ec74437da975d5749564c3
 ### `busybox:unstable` - linux; arm variant v6
 
 ```console
-$ docker pull busybox@sha256:1a0f0cba8dd835da24dae3bc5f046666b0e51c1adf0fbff3faac8b66c60fe3e6
+$ docker pull busybox@sha256:6be497a98f91dd69a4265943283cd996e756c8c94784578a1b0b4573d039c64b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **951.3 KB (951324 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:573021796a71b45328403d06518bb22f0206d30e379128f8f3a2e00b81f71cac`
+-	Image ID: `sha256:a75d86884e77486975dc49a7c0250ac6527ea3c7bf1ca0127a63ecf4a804ba28`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
+RUN BusyBox 1.37.0 (musl), Alpine 3.22.1
 ```
 
 -	Layers:
@@ -180,170 +179,147 @@ $ docker pull busybox@sha256:3bb9fe234d9a306be099a8165664c8dae9c357185283e896b57
 ### `busybox:unstable` - linux; arm64 variant v8
 
 ```console
-$ docker pull busybox@sha256:68a0d55a75c935e1101d16ded1c748babb7f96a9af43f7533ba83b87e2508b82
+$ docker pull busybox@sha256:cddc8af5547af9de5e6fb66b36d66ef7418561204e1255ae528d0b2c919d09a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 MB (1844697 bytes)**  
+-	Total Size: **1.9 MB (1902766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4721e214600044496305a20ca3902677e572127d4d976ed0e54da0137c243a`
+-	Image ID: `sha256:e8291c1a323abf610ebeb32699b8df3e8046823b5dfbf795d888c9c6a73aeff8`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (glibc), Debian 12
+RUN BusyBox 1.37.0 (glibc), Debian 13
 ```
 
 -	Layers:
-	-	`sha256:189fdd1508372905e80cc3edcdb56cdc4fa216aebef6f332dd3cba6e300238ea`  
-		Last Modified: Tue, 03 Jun 2025 13:30:14 GMT  
-		Size: 1.8 MB (1844697 bytes)  
+	-	`sha256:499bcf3c8ead8ef2570f7ee8e4ab5a4489647d67dd1c1b425fdbd4a74f4b4386`  
+		Last Modified: Thu, 14 Aug 2025 18:47:35 GMT  
+		Size: 1.9 MB (1902766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:unstable` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:7fe36bd105f9a3aa3bde5622ccdb8ae36d908b9c1730d9e216c2e34c0655ee25
+$ docker pull busybox@sha256:99232d0ad8279393b5d3d38115608b923e9f4def6abe1bb45bffce455ef49d51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4a5a6d4abde8725c12a828fb22a54e3e90e94cd9a69845beb28eadf1d0b6f54`
+-	Image ID: `sha256:a2eb03bc51672cd2a580973840ffe2500302d03179240d786a84993f8b5415a0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e2c51619cc2da75ea590b63a196235ef67fb5ebaa2f4bf074c745e7b28bd11f9`  
-		Last Modified: Tue, 03 Jun 2025 13:53:46 GMT  
+	-	`sha256:f33efdf20bd5cdabb729319275f331df5d199ebe1ad180a0d2e1e1b49da7b328`  
+		Last Modified: Thu, 14 Aug 2025 20:57:35 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `busybox:unstable` - linux; 386
 
 ```console
-$ docker pull busybox@sha256:18ac7a6883a86416ade8178063c26deff577cd831445f5c5ac5c7a931cb60983
+$ docker pull busybox@sha256:3f5ba1ec9b4c4517d72f004a799482397f690e387db56771551cbd5ef222a83f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2211476 bytes)**  
+-	Total Size: **2.3 MB (2288071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b860bf476e512132ebaa701e97cfe5c25993c07b6d4784d4f4e685501aa0bef`
+-	Image ID: `sha256:db4a220282200c963513a09385e26b6cce33ac47c9d464899677a7e62aacdc35`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (glibc), Debian 12
+RUN BusyBox 1.37.0 (glibc), Debian 13
 ```
 
 -	Layers:
-	-	`sha256:084d025c7245fb575b5508fec7ce8f68a104f79b7f0216734b8c07903acca054`  
-		Last Modified: Tue, 03 Jun 2025 13:36:16 GMT  
-		Size: 2.2 MB (2211476 bytes)  
+	-	`sha256:512eedd9b0b334e8fadf648c75acce67ebcb7e0ffcb62ccc124f04ca6313d117`  
+		Last Modified: Thu, 14 Aug 2025 18:33:42 GMT  
+		Size: 2.3 MB (2288071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:unstable` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:b34711874decd2bf2224127c2c66e513755056851da69fd46ac91bfedc33bee7
+$ docker pull busybox@sha256:0a8ad18a81b2fe3caeab861135324f420cb795d9ac71d6b8c8641944e0863eed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d6905227c50dfa371c174841d1232ee85bbb5898e813a328d0d0760b2ac1520`
+-	Image ID: `sha256:bf2475bbbe01c6ae7b09cf3c2ad4f89ce4683613ea7b93f95278ce3d0eaa846c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85eee015330db4e124f6fcade5270e8be1dbf404489522ff0f45830454b960c4`  
-		Last Modified: Tue, 03 Jun 2025 13:54:05 GMT  
+	-	`sha256:744874fcb26e4b0da534a2fd91763a0d3420546888daad3ad62b0613ad6343cf`  
+		Last Modified: Thu, 14 Aug 2025 20:57:38 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
-
-### `busybox:unstable` - linux; mips64le
-
-```console
-$ docker pull busybox@sha256:ddac8b22852783747c1b61a9354e72279edb0926f4c825f6b5e9724057148249
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2083249 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b81eed542d1e5e9f0971810947a6de31b5ab5d3cc5bf6d7ad8f641784fb31b9f`
--	Default Command: `["sh"]`
-
-```dockerfile
-# Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (glibc), Debian 12
-```
-
--	Layers:
-	-	`sha256:552f827dac3a86a1ae513b14e859fa9f348dc6657f0d3c1868c6f4b7a5b958a4`  
-		Last Modified: Tue, 03 Jun 2025 14:03:21 GMT  
-		Size: 2.1 MB (2083249 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:unstable` - linux; ppc64le
 
 ```console
-$ docker pull busybox@sha256:8412c80c59e2720a095d18c00b982330fe12f9630cb7fca658ff2a4352228f5f
+$ docker pull busybox@sha256:b93c5c00eacbb74d360965d3fb4493356fac80c8d4b5f49d0fb2b24ab63e238a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2464792 bytes)**  
+-	Total Size: **2.5 MB (2526110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:074870a1f80e27608aefd2c568253f644f52534d690c68103f59c31e5a53b775`
+-	Image ID: `sha256:9901c3b33411e9663334f0aa05b147f7b08806a9cd7f59b9a5baf985dac87587`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (glibc), Debian 12
+RUN BusyBox 1.37.0 (glibc), Debian 13
 ```
 
 -	Layers:
-	-	`sha256:f8ec14f72442f0606ff66df10201642839080d2f65fe7a6a6a94fbdcccb16e82`  
-		Last Modified: Tue, 03 Jun 2025 13:54:24 GMT  
-		Size: 2.5 MB (2464792 bytes)  
+	-	`sha256:501067f4ddf03eb658dedfcfaf9190239ca155268d91b4163f95421414dc4a87`  
+		Last Modified: Thu, 14 Aug 2025 18:55:36 GMT  
+		Size: 2.5 MB (2526110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:unstable` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:b28ddde41f449c40682b001e930f495c7038db42c8a5e63c5abfb6bcba17b0e5
+$ docker pull busybox@sha256:b7ddb229ff6ed11791fd0f63af639999425347faf3bc8faf96764884491ba6ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 KB (2026 bytes)**  
+-	Total Size: **3.2 KB (3204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96e006d80df59ef0e16c7bf6a53e76625ac3b40bf61458c2e544717e89b4181d`
+-	Image ID: `sha256:ce8757f158fda29f0ca6e1781d0ae3fff3df3cc8b9a01e574713d8b7e4f9e484`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0b9f361f0561c69161a69bfa610bdadc176f0a54ebb30fa5f51667717d9e72b3`  
-		Last Modified: Tue, 03 Jun 2025 13:54:33 GMT  
-		Size: 2.0 KB (2026 bytes)  
+	-	`sha256:360bf870c81913a6716f111141aa88548c77437f67f8bf70794707527d0b23a0`  
+		Last Modified: Thu, 14 Aug 2025 20:57:41 GMT  
+		Size: 3.2 KB (3204 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `busybox:unstable` - linux; riscv64
 
 ```console
-$ docker pull busybox@sha256:863941f561e8d677843a511089136d8c6d6c75beaea006391be3b2e6e1b49098
+$ docker pull busybox@sha256:a730bc9f9367b59798adeb8f020420ad886d065040f27d312f967ca798903dd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **923.4 KB (923440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:372e83c22bd9d4608e2047349a4c2c8d000bee5afe7645359d60e74834409aea`
+-	Image ID: `sha256:b7e37329b1e59dcccac5f168eb5fe2f4e6429baa0d0f2dce684ec66d0e7632c6`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
+RUN BusyBox 1.37.0 (musl), Alpine 3.22.1
 ```
 
 -	Layers:
@@ -355,62 +331,62 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.0
 ### `busybox:unstable` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:19c277fa260b32f1f3456eaab122f9e2e890c87c634fc30f96c652d95b41b82b
+$ docker pull busybox@sha256:5c1036202ca88a2d590a1b936b3609018d4104a3d3b7733d1a5cd8f21defa671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2950e7fc638784437968e2322682d0db1c0245a5ec7baae8dcf723915e772033`
+-	Image ID: `sha256:05ba8d0d98ed442c81a5d7e7d466208d44d352b14510ccd614467e1ca0c95f24`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f1f16982b5783a8b5bf140c6a3dcfce4ffac72d379c81df21774aed6a7980f04`  
-		Last Modified: Tue, 03 Jun 2025 13:54:49 GMT  
+	-	`sha256:0057f9844ffbea95482edb5136d19c54566819b266d89aa52994e7ce060a6efc`  
+		Last Modified: Tue, 29 Jul 2025 02:57:52 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `busybox:unstable` - linux; s390x
 
 ```console
-$ docker pull busybox@sha256:fec56dcf5c3b8c3635489b39b1096b7d8ba62c701675ab8c7e0ee74be458b8d0
+$ docker pull busybox@sha256:681d8a178f24f0aa7190dbbdf158de335ee321f440963d812723945bb1f97c47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1885567 bytes)**  
+-	Total Size: **2.0 MB (2048434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b77c2495ddab55874cbd7610c80f31d7ae9200a9803a0edc5b79666f32fd155`
+-	Image ID: `sha256:e6fefc09ccc688105f50e70fe6193d9d8465f032d2a37158000de9232fb1fe51`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (glibc), Debian 12
+RUN BusyBox 1.37.0 (glibc), Debian 13
 ```
 
 -	Layers:
-	-	`sha256:5eb33dce04a284c91c76a36f2e27b2eaed37b48c3f483f37600cb8bb165bc20b`  
-		Last Modified: Tue, 03 Jun 2025 14:03:28 GMT  
-		Size: 1.9 MB (1885567 bytes)  
+	-	`sha256:2bcb3ea07b9fd41fe5fe3642a046e5508a97690c0bb022bdf566d8105506262d`  
+		Last Modified: Thu, 14 Aug 2025 18:35:37 GMT  
+		Size: 2.0 MB (2048434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:unstable` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:fda944ec8443c5f3186086c87f9f2be75cf324185be809f5ba1109e7922037e3
+$ docker pull busybox@sha256:3456be86b68738adba69484915098d827bc8d441a4d225e16e6ba77c0f719c39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b3c5e9a01800474342755be2c31065c60c0c3a0d937020afae61eff2e142153`
+-	Image ID: `sha256:98d2fecb51fa4fd14d1ab80e928cad2de82ef6c6d4a10937952954d5eb6e6ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dffd02fc14f5e79a4362b6a2a0dc414cf42a8d61e3e8d62fed4e9b51b3a840ce`  
-		Last Modified: Tue, 03 Jun 2025 14:03:30 GMT  
+	-	`sha256:c6054a36088efbe1727e467626c81dd08a1e85647be9c76b1c1d993356493efa`  
+		Last Modified: Thu, 14 Aug 2025 20:57:46 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
