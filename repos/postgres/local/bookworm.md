@@ -1,8 +1,8 @@
-# `postgres:17.5`
+# `postgres:17.5-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8663c6099632b20b61322e6f9a0a6aa4034ed061bfec05949566f352b92dc5fa`
+- Image ID: `sha256:b38465c419a96f68c550a8bfa9d15e2fac70d2f4c7b30bccd6615043cc9b0f2d`
 - Created: `2025-06-06T18:27:47Z`
 - Virtual Size: ~ 438.43 Mb  
   (total size of all layers on-disk)

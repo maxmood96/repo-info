@@ -1,10 +1,10 @@
-# `postgres:13.21`
+# `postgres:13.21-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54706ca98cd54208379ad1d44c08bbe98ea962a04d8b8655533f18123e3ba7da`
+- Image ID: `sha256:f283de09f4aad995cad327a74f88dec95c06c37061f56c46c2755e55ce380009`
 - Created: `2025-06-06T18:27:47Z`
-- Virtual Size: ~ 423.40 Mb  
+- Virtual Size: ~ 423.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`

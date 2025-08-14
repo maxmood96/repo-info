@@ -1,10 +1,10 @@
-# `postgres:18beta2-bullseye`
+# `postgres:18beta2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77978eaeb9b27e5d919ad1257c381a6854304964a0a0e2262528eee4c9133f7c`
-- Created: `2025-07-18T18:03:02Z`
-- Virtual Size: ~ 426.86 Mb  
+- Image ID: `sha256:0264b83e41d0471b720b6a951816898b015e82ffae8bc7e92d88cf3c37b3c5eb`
+- Created: `2025-08-08T17:41:29Z`
+- Virtual Size: ~ 456.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=18`
-  - `PG_VERSION=18~beta2-1.pgdg110+1`
+  - `PG_VERSION=18~beta2-1.pgdg130+1`
   - `PGDATA=/var/lib/postgresql/18/docker`
