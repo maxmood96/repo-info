@@ -1,11 +1,11 @@
-## `buildpack-deps:testing-scm`
+## `buildpack-deps:forky-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:e08259d54a4a2b36d4bf750b659ad492596aae13c6d4bf7179c11e58350cba6b
+$ docker pull buildpack-deps@sha256:f83700ef3ee1d3a4a8f294a82e9ac579dcb5431144aaa9c2d3877075785f57c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 16
+-	Platforms: 14
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -18,12 +18,10 @@ $ docker pull buildpack-deps@sha256:e08259d54a4a2b36d4bf750b659ad492596aae13c6d4
 	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
-	-	linux; riscv64
-	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `buildpack-deps:testing-scm` - linux; amd64
+### `buildpack-deps:forky-scm` - linux; amd64
 
 ```console
 $ docker pull buildpack-deps@sha256:8e41f63471f373bfe55eafb9bd8706dabc6d65a65fe1b0314d63979a3cc1b82f
@@ -58,7 +56,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 68.1 MB (68140416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:4e5cae3464d6033d9803c7501eb7c55265d3c2e13d8a62e6b304a85402859d43
@@ -82,7 +80,7 @@ $ docker pull buildpack-deps@sha256:4e5cae3464d6033d9803c7501eb7c55265d3c2e13d8a
 		Size: 7.3 KB (7309 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:testing-scm` - linux; arm variant v5
+### `buildpack-deps:forky-scm` - linux; arm variant v5
 
 ```console
 $ docker pull buildpack-deps@sha256:af6ebe611f5fbcee7951499c74e1a31e48034440774f6f6f94c11e4ddd6566fc
@@ -117,7 +115,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 65.7 MB (65730182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:d7137ba4009554b3d5ebb2ed564caf211e6341decc438fdbb36df2315271aaec
@@ -141,7 +139,7 @@ $ docker pull buildpack-deps@sha256:d7137ba4009554b3d5ebb2ed564caf211e6341decc43
 		Size: 7.4 KB (7369 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:testing-scm` - linux; arm variant v7
+### `buildpack-deps:forky-scm` - linux; arm variant v7
 
 ```console
 $ docker pull buildpack-deps@sha256:e57bc056ec79c39b7ee29a5b4ba5ed0008231be7b33a54a553b41fe6c752b23d
@@ -176,7 +174,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 63.1 MB (63135785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:b9c2ca24f27559453fe8c75839af60ac730999bf662076670fe171dfe9b45403
@@ -200,7 +198,7 @@ $ docker pull buildpack-deps@sha256:b9c2ca24f27559453fe8c75839af60ac730999bf6620
 		Size: 7.4 KB (7369 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:testing-scm` - linux; arm64 variant v8
+### `buildpack-deps:forky-scm` - linux; arm64 variant v8
 
 ```console
 $ docker pull buildpack-deps@sha256:c773c963669c948c61b5ede8c995b5a5ca26e5b2f0c3d8954df92a34c4e72610
@@ -235,7 +233,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 68.0 MB (67963901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:9746160fcd36562d8655f4d0fd43ecf6097ef4eb77b58332ee910537ac9fc634
@@ -259,7 +257,7 @@ $ docker pull buildpack-deps@sha256:9746160fcd36562d8655f4d0fd43ecf6097ef4eb77b5
 		Size: 7.4 KB (7387 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:testing-scm` - linux; 386
+### `buildpack-deps:forky-scm` - linux; 386
 
 ```console
 $ docker pull buildpack-deps@sha256:23957de794c9ba4bc9be71bd80ac6d95dc91da0883230650c95821f5326e27a1
@@ -294,7 +292,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 70.2 MB (70223418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:16563007359b1c4ca5255f428bd401f6b07776dcd1781e6339f9a3556bdcc533
@@ -318,7 +316,7 @@ $ docker pull buildpack-deps@sha256:16563007359b1c4ca5255f428bd401f6b07776dcd178
 		Size: 7.3 KB (7287 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:testing-scm` - linux; ppc64le
+### `buildpack-deps:forky-scm` - linux; ppc64le
 
 ```console
 $ docker pull buildpack-deps@sha256:f7c8d27d873af2d0ee698b002feb9172e1fe256d2509f043f28e8836de214f3a
@@ -353,7 +351,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 73.5 MB (73466445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:33a9e2f90dba513f254461ab53a4cbb4588f974c3bb72ca6abd7c602b8ac13d4
@@ -377,66 +375,7 @@ $ docker pull buildpack-deps@sha256:33a9e2f90dba513f254461ab53a4cbb4588f974c3bb7
 		Size: 7.3 KB (7341 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:testing-scm` - linux; riscv64
-
-```console
-$ docker pull buildpack-deps@sha256:1216b26aafc66e0d6a4878cdb99b071a8b288ecfc77acf69fa373c73a9697ade
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.4 MB (139363733 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7357ae44c290465650543ed16db1ea3bcd3c3cc0ac8e7828a3cc23fc24c1761`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1753056000'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-```
-
--	Layers:
-	-	`sha256:a489ab9df1aefdba49bbabdcf18200cb9d10992f1efcb99f048f7a0f7164be67`  
-		Last Modified: Tue, 22 Jul 2025 01:04:52 GMT  
-		Size: 47.8 MB (47762319 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbb8effb6e160b70f600b19cb827eaf34b2cc9bfd41eca7552449795f0cbd0dc`  
-		Last Modified: Tue, 22 Jul 2025 01:30:25 GMT  
-		Size: 25.0 MB (24959852 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:542f02ddec13ffb34a84d866d027083de00933afb7f14da693af1ee2f6d8373c`  
-		Last Modified: Tue, 22 Jul 2025 02:29:59 GMT  
-		Size: 66.6 MB (66641562 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `buildpack-deps:testing-scm` - unknown; unknown
-
-```console
-$ docker pull buildpack-deps@sha256:dadc749684811779c83d1efe0380ca68b0e72b7c9ea708269e79266b125ed934
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 MB (7758591 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19354404065045e5354a4f4fa02606ddb055102a4ccc322a2bea4961db29b675`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:94daf5a82e9c0114e3f8562c34e10c9f2ac06f9d2d53478e344bb93bb9ae6b26`  
-		Last Modified: Tue, 22 Jul 2025 04:22:24 GMT  
-		Size: 7.8 MB (7751245 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:93003ad5091a61c02374e13151f0f0f9eb26c8609e9b63faeec79e69d8336041`  
-		Last Modified: Tue, 22 Jul 2025 04:22:24 GMT  
-		Size: 7.3 KB (7346 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `buildpack-deps:testing-scm` - linux; s390x
+### `buildpack-deps:forky-scm` - linux; s390x
 
 ```console
 $ docker pull buildpack-deps@sha256:4ab576cc73b1750ec93fe4fea952fd61c83b2d07dda064c61b80f9b935f6c828
@@ -471,7 +410,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 69.0 MB (69049583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:testing-scm` - unknown; unknown
+### `buildpack-deps:forky-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:31084dc8558413d4df0311fb123683ebe0be1f34bba4a98a6685b05aa79566b5

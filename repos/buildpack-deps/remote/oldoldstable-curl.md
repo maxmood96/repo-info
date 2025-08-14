@@ -1,4 +1,4 @@
-## `buildpack-deps:bullseye-curl`
+## `buildpack-deps:oldoldstable-curl`
 
 ```console
 $ docker pull buildpack-deps@sha256:d017b57919fc9f4f49612ad376da9818ae0597f90bdbf8807d643ebc546db3c2
@@ -15,7 +15,7 @@ $ docker pull buildpack-deps@sha256:d017b57919fc9f4f49612ad376da9818ae0597f90bdb
 	-	linux; 386
 	-	unknown; unknown
 
-### `buildpack-deps:bullseye-curl` - linux; amd64
+### `buildpack-deps:oldoldstable-curl` - linux; amd64
 
 ```console
 $ docker pull buildpack-deps@sha256:5050d459748889cb8fb1fb4194af955cbc554139ac693b291cbbf62823e3dd2d
@@ -44,7 +44,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 15.8 MB (15765318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-curl` - unknown; unknown
+### `buildpack-deps:oldoldstable-curl` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:af1462618b5a82afe7df2de786fb660ccd6e456664a52ddb21b333ab5e72d5c0
@@ -68,7 +68,7 @@ $ docker pull buildpack-deps@sha256:af1462618b5a82afe7df2de786fb660ccd6e456664a5
 		Size: 6.8 KB (6801 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:bullseye-curl` - linux; arm variant v7
+### `buildpack-deps:oldoldstable-curl` - linux; arm variant v7
 
 ```console
 $ docker pull buildpack-deps@sha256:3e480e510c0695e7efa5cc7d062daa485a519bd017a4da2b2bcecfddb3b215b4
@@ -97,7 +97,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 14.9 MB (14880786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-curl` - unknown; unknown
+### `buildpack-deps:oldoldstable-curl` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:a865c82a207090e2733d17abeebd52fd06ee272ed6c6974c04d94479067d729f
@@ -121,7 +121,7 @@ $ docker pull buildpack-deps@sha256:a865c82a207090e2733d17abeebd52fd06ee272ed6c6
 		Size: 6.9 KB (6867 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:bullseye-curl` - linux; arm64 variant v8
+### `buildpack-deps:oldoldstable-curl` - linux; arm64 variant v8
 
 ```console
 $ docker pull buildpack-deps@sha256:59499984c73882fee3c66a0fd6a96cced071fe250706b7d55db012dbc3ec2852
@@ -150,7 +150,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 15.8 MB (15750676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-curl` - unknown; unknown
+### `buildpack-deps:oldoldstable-curl` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:28d66af0f2ec6d2665e2f97c5fe4dbc4a9bb09f0297f5eb97eb81331dfb84db5
@@ -174,7 +174,7 @@ $ docker pull buildpack-deps@sha256:28d66af0f2ec6d2665e2f97c5fe4dbc4a9bb09f0297f
 		Size: 6.9 KB (6887 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:bullseye-curl` - linux; 386
+### `buildpack-deps:oldoldstable-curl` - linux; 386
 
 ```console
 $ docker pull buildpack-deps@sha256:3b8b7637acb2cd8823d486e608692369dc9022165e18e8589896559bd78f053b
@@ -203,7 +203,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 16.3 MB (16268966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-curl` - unknown; unknown
+### `buildpack-deps:oldoldstable-curl` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:23800e741810d376f1ebea899ae64ef8ac753927e6f6eaa846a7896a1529d7ea

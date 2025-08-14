@@ -1,4 +1,4 @@
-## `buildpack-deps:bullseye-scm`
+## `buildpack-deps:oldoldstable-scm`
 
 ```console
 $ docker pull buildpack-deps@sha256:4f0d4dedc52098dab39aad17f47f62207f192e9e7482c8b5421889c760978fd2
@@ -15,7 +15,7 @@ $ docker pull buildpack-deps@sha256:4f0d4dedc52098dab39aad17f47f62207f192e9e7482
 	-	linux; 386
 	-	unknown; unknown
 
-### `buildpack-deps:bullseye-scm` - linux; amd64
+### `buildpack-deps:oldoldstable-scm` - linux; amd64
 
 ```console
 $ docker pull buildpack-deps@sha256:479db446e61edef3b8d3d310a3e61dda7a9728e36113872f26ca3a7ec42fc519
@@ -50,7 +50,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 54.8 MB (54757082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-scm` - unknown; unknown
+### `buildpack-deps:oldoldstable-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:cf15e3cb19f8e13ef43e0de927395dc608d675542b40788d4452451f1b148a4b
@@ -74,7 +74,7 @@ $ docker pull buildpack-deps@sha256:cf15e3cb19f8e13ef43e0de927395dc608d675542b40
 		Size: 7.4 KB (7352 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:bullseye-scm` - linux; arm variant v7
+### `buildpack-deps:oldoldstable-scm` - linux; arm variant v7
 
 ```console
 $ docker pull buildpack-deps@sha256:b291fb69a3ef37e64ecb7e57290b52c9bce32f235748b6710a91da853092fdbe
@@ -109,7 +109,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 50.6 MB (50632440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-scm` - unknown; unknown
+### `buildpack-deps:oldoldstable-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:e983d60db806856078cafe9ff20a5f100c41516b57117b0d629752fc3f9c3c91
@@ -133,7 +133,7 @@ $ docker pull buildpack-deps@sha256:e983d60db806856078cafe9ff20a5f100c41516b5711
 		Size: 7.4 KB (7419 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:bullseye-scm` - linux; arm64 variant v8
+### `buildpack-deps:oldoldstable-scm` - linux; arm64 variant v8
 
 ```console
 $ docker pull buildpack-deps@sha256:489497cd9738d2b9c0261381fdba9f682987391f41afc84e2c57c4c81d264fa5
@@ -168,7 +168,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 54.9 MB (54856134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-scm` - unknown; unknown
+### `buildpack-deps:oldoldstable-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:f5b8ae0f63d51fa8390eb102db7427f11e6697c911e96f439b8f25b79f92634b
@@ -192,7 +192,7 @@ $ docker pull buildpack-deps@sha256:f5b8ae0f63d51fa8390eb102db7427f11e6697c911e9
 		Size: 7.4 KB (7439 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `buildpack-deps:bullseye-scm` - linux; 386
+### `buildpack-deps:oldoldstable-scm` - linux; 386
 
 ```console
 $ docker pull buildpack-deps@sha256:585efb26dffc050330646520204fe38201f167026a4d2b7888655d5afb62c054
@@ -227,7 +227,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 56.1 MB (56050296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `buildpack-deps:bullseye-scm` - unknown; unknown
+### `buildpack-deps:oldoldstable-scm` - unknown; unknown
 
 ```console
 $ docker pull buildpack-deps@sha256:ae7102dd6fe6bf5012d6fa14eccd9d91644963312a45ff358b54ea03536ba1c8
