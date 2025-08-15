@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad9f9cb73bb4b57b60a3b417f8ee4447bd4b85d8e831a30af0b2d98e39a92fdd`
+- Image ID: `sha256:6051a7272b5a70586cb288700908d88d7709fc0ff4c73261abd4b006e7e55ba8`
 - Created: `2024-01-09T01:14:25Z`
-- Virtual Size: ~ 217.51 Mb  
+- Virtual Size: ~ 217.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1905,14 +1905,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.4`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.5`
 
 Binary Packages:
 
-- `libperl5.34:amd64=5.34.0-3ubuntu1.4`
-- `perl=5.34.0-3ubuntu1.4`
-- `perl-base=5.34.0-3ubuntu1.4`
-- `perl-modules-5.34=5.34.0-3ubuntu1.4`
+- `libperl5.34:amd64=5.34.0-3ubuntu1.5`
+- `perl=5.34.0-3ubuntu1.5`
+- `perl-base=5.34.0-3ubuntu1.5`
+- `perl-modules-5.34=5.34.0-3ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.34/copyright`)
 
@@ -1944,9 +1944,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.dsc' perl_5.34.0-3ubuntu1.5.dsc 2976 SHA512:e490cfc45a24fa7538f5a92054a19a52fd9675fe7a7e6e0e20b7a6c3e6939ec0cf1b39e71f2daebb8e5ab0968d851fdf1b713166d6855968fb47e846d7350020
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.debian.tar.xz' perl_5.34.0-3ubuntu1.5.debian.tar.xz 200524 SHA512:bb565b5ee511cd73dccf9b596f356fd4d4a32dcd5a584fa73e806322a541706d6940c54732d20d6eb1fcc0bac06fcef5a98f5f6a592b83b12a8ada3157dfdc6f
+```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -2174,11 +2180,11 @@ $ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
 ```
 
-### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.4`
+### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.5`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.37.2-2ubuntu0.4`
+- `libsqlite3-0:amd64=3.37.2-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2186,9 +2192,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.dsc' sqlite3_3.37.2-2ubuntu0.5.dsc 2602 SHA512:fb731fd5ca44dbfa72f1b685980fc3cc66379f63fe0220460897f142eb91d43f81a2c1180864695157b764c22787621c958b0c2448d7ab820c1638cc7ad5f97d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz 33900 SHA512:47c8ee60e8f1b05eb8156a58ea6e909755895df5db9a7381fa8c9f79e7bd6b9a5e6d8f3fd39446d371485ac5feff5b4ac28ff97b4cea92de912de15b7c728e26
+```
 
 ### `dpkg` source package: `subversion=1.14.1-3ubuntu0.22.04.1`
 
