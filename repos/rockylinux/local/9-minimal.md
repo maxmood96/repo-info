@@ -97,8 +97,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-21.el9
-http://mirror.cs.vt.edu/pub/rocky/9.6/AppStream/source/tree/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
 https://plug-mirror.rcac.purdue.edu/rocky/9.6/BaseOS/source/tree/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.6/AppStream/source/tree/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
 ```
 
 ### `rpm` package: `dejavu-sans-fonts-2.37-18.el9.noarch`
@@ -497,8 +497,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libmodulemd-2.13.0-2.el9
-https://plug-mirror.rcac.purdue.edu/rocky/9.6/BaseOS/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
 http://mirror.cs.vt.edu/pub/rocky/9.6/AppStream/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
+https://plug-mirror.rcac.purdue.edu/rocky/9.6/BaseOS/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
 ```
 
 ### `rpm` package: `libmount-2.37.4-15.el9.x86_64`
@@ -727,8 +727,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.3-5.el9
-https://plug-mirror.rcac.purdue.edu/rocky/9.6/BaseOS/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
 http://mirror.cs.vt.edu/pub/rocky/9.6/AppStream/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
+https://plug-mirror.rcac.purdue.edu/rocky/9.6/BaseOS/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
 ```
 
 ### `rpm` package: `microdnf-3.9.1-3.el9.x86_64`
