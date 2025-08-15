@@ -1,7 +1,7 @@
 ## `busybox:1-glibc`
 
 ```console
-$ docker pull busybox@sha256:443b7b6cd5fa475ed1f6b0a17bb1dc44f1a9a3b119cdac413744d42849594dbc
+$ docker pull busybox@sha256:a2c55ed708c564a69a695e0a3bb16a4c47d2bb268d2ebd06f0d77336801b80de
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -284,13 +284,13 @@ $ docker pull busybox@sha256:b7ddb229ff6ed11791fd0f63af639999425347faf3bc8faf967
 ### `busybox:1-glibc` - linux; riscv64
 
 ```console
-$ docker pull busybox@sha256:7f547bb01c5b3dc8be19779124c18bf39e614239a5c3c6af54d20621571f56d0
+$ docker pull busybox@sha256:a8d0511bc2cfa71529fe9c01b39cfb9c12b2f35ad446afd3ad27818e0efc58d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1942652 bytes)**  
+-	Total Size: **1.9 MB (1942660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd562ba5950398a65f706a0a984ae274153503bb37d70bb1cead07b560833fd7`
+-	Image ID: `sha256:b0c49ce09295f069bdd052fa85c59e583115b3ea992fef5d63ed43627f45f90e`
 -	Default Command: `["sh"]`
 
 ```dockerfile
@@ -299,28 +299,28 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 ```
 
 -	Layers:
-	-	`sha256:4bf7e84c84219563130f68af2878f5ce1b8af2115dfcaa4dd0dbeee86a5231c2`  
-		Last Modified: Tue, 29 Jul 2025 00:21:05 GMT  
-		Size: 1.9 MB (1942652 bytes)  
+	-	`sha256:3d2c9bfb547cf2d5c1cea22f4a3ef4b9ca65c484a5615d966de0218542f262ac`  
+		Last Modified: Fri, 15 Aug 2025 08:41:29 GMT  
+		Size: 1.9 MB (1942660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:1-glibc` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:9a0e8b9025b1fff0474c2340e463bb91ff40ac41fc17f17c2da907eada4ee01c
+$ docker pull busybox@sha256:0d5a156b0c7cdadb1ceafe7bb105b9c1141f28a66dd5c1709bd52a0c51152a6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d688062b1ce120297799c1c35d820cd5590131c35d4f74d8df1919c5714353a`
+-	Image ID: `sha256:d80759e6501f79f3dcb600bd7770a5cc26fc6dd49bac66526f6de2374f66cdc8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b00368bfef28ab167dc6c6ce07be5d4f9a7d0ea8943d85adeeec15322069cc57`  
-		Last Modified: Tue, 29 Jul 2025 02:57:54 GMT  
+	-	`sha256:f0d08b4cb12217e6d0248fe6636e0b20e2ecf8747ebee6a12e3f327f239f4329`  
+		Last Modified: Fri, 15 Aug 2025 11:57:31 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
