@@ -1,20 +1,20 @@
-# `nginx:1.29.0-alpine-otel`
+# `nginx:1.29.1-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a445e9b2e87acef5ede18cc1f2447b0c2983d1d3f1dc1d42858d4d0331a96aa`
-- Created: `2025-06-24T20:52:14Z`
-- Virtual Size: ~ 88.06 Mb  
+- Image ID: `sha256:8bad9e6fb304b7a770e656f3d30b6eb182ef35f4f09be669d3725104600c9ef1`
+- Created: `2025-08-13T16:34:01Z`
+- Virtual Size: ~ 88.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.0`
+  - `NGINX_VERSION=1.29.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.0`
+  - `NJS_VERSION=0.9.1`
   - `NJS_RELEASE=1`
   - `OTEL_VERSION=0.1.2`
 - Labels:
@@ -2337,16 +2337,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.0-r1 description:
+nginx-1.29.1-r1 description:
 High performance web server
 
-nginx-1.29.0-r1 webpage:
+nginx-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.0-r1 installed size:
-2659 KiB
+nginx-1.29.1-r1 installed size:
+2647 KiB
 
-nginx-1.29.0-r1 license:
+nginx-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2354,16 +2354,16 @@ nginx-1.29.0-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.0-r1 description:
+nginx-module-geoip-1.29.1-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.0-r1 webpage:
+nginx-module-geoip-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.0-r1 installed size:
+nginx-module-geoip-1.29.1-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.0-r1 license:
+nginx-module-geoip-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2371,16 +2371,16 @@ nginx-module-geoip-1.29.0-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.0-r1 description:
+nginx-module-image-filter-1.29.1-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.0-r1 webpage:
+nginx-module-image-filter-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.0-r1 installed size:
+nginx-module-image-filter-1.29.1-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.0-r1 license:
+nginx-module-image-filter-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2388,16 +2388,16 @@ nginx-module-image-filter-1.29.0-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.0.0.9.0-r1 description:
+nginx-module-njs-1.29.1.0.9.1-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.0.0.9.0-r1 webpage:
+nginx-module-njs-1.29.1.0.9.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.0.0.9.0-r1 installed size:
-8871 KiB
+nginx-module-njs-1.29.1.0.9.1-r1 installed size:
+8974 KiB
 
-nginx-module-njs-1.29.0.0.9.0-r1 license:
+nginx-module-njs-1.29.1.0.9.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2405,16 +2405,16 @@ nginx-module-njs-1.29.0.0.9.0-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.29.0.0.1.2-r1 description:
+nginx-module-otel-1.29.1.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.29.0.0.1.2-r1 webpage:
+nginx-module-otel-1.29.1.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.29.0.0.1.2-r1 installed size:
-755 KiB
+nginx-module-otel-1.29.1.0.1.2-r1 installed size:
+723 KiB
 
-nginx-module-otel-1.29.0.0.1.2-r1 license:
+nginx-module-otel-1.29.1.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2422,16 +2422,16 @@ nginx-module-otel-1.29.0.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.0-r1 description:
+nginx-module-xslt-1.29.1-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.0-r1 webpage:
+nginx-module-xslt-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.0-r1 installed size:
+nginx-module-xslt-1.29.1-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.0-r1 license:
+nginx-module-xslt-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```

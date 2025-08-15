@@ -1,20 +1,20 @@
-# `nginx:1.29.0-alpine`
+# `nginx:1.29.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6adbc7fd47ec44ff968ea826c84f41d0d5a70a2dce4bd030757f9b7fe9040b8`
-- Created: `2025-06-24T20:52:14Z`
-- Virtual Size: ~ 52.45 Mb  
+- Image ID: `sha256:4a86014ec6994761b7f3118cf47e4b4fd6bac15fc6fa262c4f356386bbc0e9d9`
+- Created: `2025-08-13T16:34:01Z`
+- Virtual Size: ~ 52.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.0`
+  - `NGINX_VERSION=1.29.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.0`
+  - `NJS_VERSION=0.9.1`
   - `NJS_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -993,16 +993,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.0-r1 description:
+nginx-1.29.1-r1 description:
 High performance web server
 
-nginx-1.29.0-r1 webpage:
+nginx-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.0-r1 installed size:
-2659 KiB
+nginx-1.29.1-r1 installed size:
+2647 KiB
 
-nginx-1.29.0-r1 license:
+nginx-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1010,16 +1010,16 @@ nginx-1.29.0-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.0-r1 description:
+nginx-module-geoip-1.29.1-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.0-r1 webpage:
+nginx-module-geoip-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.0-r1 installed size:
+nginx-module-geoip-1.29.1-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.0-r1 license:
+nginx-module-geoip-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1027,16 +1027,16 @@ nginx-module-geoip-1.29.0-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.0-r1 description:
+nginx-module-image-filter-1.29.1-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.0-r1 webpage:
+nginx-module-image-filter-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.0-r1 installed size:
+nginx-module-image-filter-1.29.1-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.0-r1 license:
+nginx-module-image-filter-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1044,16 +1044,16 @@ nginx-module-image-filter-1.29.0-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.0.0.9.0-r1 description:
+nginx-module-njs-1.29.1.0.9.1-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.0.0.9.0-r1 webpage:
+nginx-module-njs-1.29.1.0.9.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.0.0.9.0-r1 installed size:
-8871 KiB
+nginx-module-njs-1.29.1.0.9.1-r1 installed size:
+8974 KiB
 
-nginx-module-njs-1.29.0.0.9.0-r1 license:
+nginx-module-njs-1.29.1.0.9.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1061,16 +1061,16 @@ nginx-module-njs-1.29.0.0.9.0-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.0-r1 description:
+nginx-module-xslt-1.29.1-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.0-r1 webpage:
+nginx-module-xslt-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.0-r1 installed size:
+nginx-module-xslt-1.29.1-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.0-r1 license:
+nginx-module-xslt-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```

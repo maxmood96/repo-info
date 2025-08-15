@@ -1,20 +1,20 @@
-# `nginx:1.29.0-alpine-perl`
+# `nginx:1.29.1-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8873f5353dea080e5d5dd26e929e4c0ca9153b215d3e49c9308a380bb3315f04`
-- Created: `2025-06-24T20:52:14Z`
-- Virtual Size: ~ 90.82 Mb  
+- Image ID: `sha256:a6dd6369391566bf14d6f6b9ea25699af89f32b3f6d60aea2f29cfb994c60117`
+- Created: `2025-08-13T16:34:01Z`
+- Virtual Size: ~ 90.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.0`
+  - `NGINX_VERSION=1.29.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.0`
+  - `NJS_VERSION=0.9.1`
   - `NJS_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -993,16 +993,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.0-r1 description:
+nginx-1.29.1-r1 description:
 High performance web server
 
-nginx-1.29.0-r1 webpage:
+nginx-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.0-r1 installed size:
-2659 KiB
+nginx-1.29.1-r1 installed size:
+2647 KiB
 
-nginx-1.29.0-r1 license:
+nginx-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1010,16 +1010,16 @@ nginx-1.29.0-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.0-r1 description:
+nginx-module-geoip-1.29.1-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.0-r1 webpage:
+nginx-module-geoip-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.0-r1 installed size:
+nginx-module-geoip-1.29.1-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.0-r1 license:
+nginx-module-geoip-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1027,16 +1027,16 @@ nginx-module-geoip-1.29.0-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.0-r1 description:
+nginx-module-image-filter-1.29.1-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.0-r1 webpage:
+nginx-module-image-filter-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.0-r1 installed size:
+nginx-module-image-filter-1.29.1-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.0-r1 license:
+nginx-module-image-filter-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1044,16 +1044,16 @@ nginx-module-image-filter-1.29.0-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.0.0.9.0-r1 description:
+nginx-module-njs-1.29.1.0.9.1-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.0.0.9.0-r1 webpage:
+nginx-module-njs-1.29.1.0.9.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.0.0.9.0-r1 installed size:
-8871 KiB
+nginx-module-njs-1.29.1.0.9.1-r1 installed size:
+8974 KiB
 
-nginx-module-njs-1.29.0.0.9.0-r1 license:
+nginx-module-njs-1.29.1.0.9.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1061,16 +1061,16 @@ nginx-module-njs-1.29.0.0.9.0-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.29.0-r1 description:
+nginx-module-perl-1.29.1-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.29.0-r1 webpage:
+nginx-module-perl-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.29.0-r1 installed size:
+nginx-module-perl-1.29.1-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.29.0-r1 license:
+nginx-module-perl-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1078,16 +1078,16 @@ nginx-module-perl-1.29.0-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.0-r1 description:
+nginx-module-xslt-1.29.1-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.0-r1 webpage:
+nginx-module-xslt-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.0-r1 installed size:
+nginx-module-xslt-1.29.1-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.0-r1 license:
+nginx-module-xslt-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1112,16 +1112,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.40.2-r0 description:
+perl-5.40.3-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.40.2-r0 webpage:
+perl-5.40.3-r0 webpage:
 https://www.perl.org/
 
-perl-5.40.2-r0 installed size:
+perl-5.40.3-r0 installed size:
 36 MiB
 
-perl-5.40.2-r0 license:
+perl-5.40.3-r0 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```

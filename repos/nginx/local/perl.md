@@ -1,18 +1,18 @@
-# `nginx:1.29.0-perl`
+# `nginx:1.29.1-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7544b6b76528fed03b99ab0a5743cbf50dacc43b4aedf3f35078b218ab990c01`
-- Created: `2025-06-24T20:52:14Z`
-- Virtual Size: ~ 240.24 Mb  
+- Image ID: `sha256:e39d9493055bcb4301d23db6fc524822e9b5d3a3b27160e52d1e7f4c3349896b`
+- Created: `2025-08-13T16:34:01Z`
+- Virtual Size: ~ 240.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.0`
-  - `NJS_VERSION=0.9.0`
+  - `NGINX_VERSION=1.29.1`
+  - `NJS_VERSION=0.9.1`
   - `NJS_RELEASE=1~bookworm`
   - `PKG_RELEASE=1~bookworm`
   - `DYNPKG_RELEASE=1~bookworm`
@@ -2636,11 +2636,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.29.0-1~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.29.1-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.29.0-1~bookworm`
+- `nginx-module-geoip=1.29.1-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2650,11 +2650,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.29.0-1~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.29.1-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.29.0-1~bookworm`
+- `nginx-module-image-filter=1.29.1-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2664,11 +2664,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.29.0+0.9.0-1~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.29.1+0.9.1-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.29.0+0.9.0-1~bookworm`
+- `nginx-module-njs=1.29.1+0.9.1-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2678,11 +2678,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.29.0-1~bookworm`
+### `dpkg` source package: `nginx-module-perl=1.29.1-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-perl=1.29.0-1~bookworm`
+- `nginx-module-perl=1.29.1-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2692,11 +2692,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.29.0-1~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.29.1-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.29.0-1~bookworm`
+- `nginx-module-xslt=1.29.1-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2706,11 +2706,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.29.0-1~bookworm`
+### `dpkg` source package: `nginx=1.29.1-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.29.0-1~bookworm`
+- `nginx=1.29.1-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2794,12 +2794,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.16-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.17-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.16-1~deb12u1`
-- `openssl=3.0.16-1~deb12u1`
+- `libssl3:amd64=3.0.17-1~deb12u2`
+- `openssl=3.0.17-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2811,18 +2811,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.16-1~deb12u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.dsc' openssl_3.0.16-1~deb12u1.dsc 2675 SHA256:d0c61eed29fcb5c26eabdfbf9cab9216cd955bf6c62a0936e2f10e0b1aca3d03
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz' openssl_3.0.16.orig.tar.gz 15334967 SHA256:57e03c50feab5d31b152af2b764f10379aecd8ee92f16c985983ce4a99f7ef86
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16.orig.tar.gz.asc' openssl_3.0.16.orig.tar.gz.asc 833 SHA256:a08564918ca8ace8fc31cfc7643369eae4cc5af436f448779ec741f1134f4054
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.16-1%7edeb12u1.debian.tar.xz' openssl_3.0.16-1~deb12u1.debian.tar.xz 52852 SHA256:83a175489ae79ae0e0ed4f56b16985e16a0c9a632ba2b3d9b41cdac8f29630df
+$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.dsc' openssl_3.0.17-1~deb12u2.dsc 2675 SHA256:8eff0f04976f65df9a00507f286c18f42644d73124e3844258f037ff47c4f6cf
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.debian.tar.xz' openssl_3.0.17-1~deb12u2.debian.tar.xz 55224 SHA256:e5b4c3e1b9caad2da53572fe2b4c7ce027ec17e778630f342d194608472d52f1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.16-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.16-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 

@@ -1,17 +1,17 @@
-# `nginx:1.29.0-alpine-slim`
+# `nginx:1.29.1-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:117beaeb31ddd6ffd1a0399edfa1b6c4a6267b9e116131892f9e15be02080e86`
-- Created: `2025-06-24T20:52:14Z`
-- Virtual Size: ~ 12.47 Mb  
+- Image ID: `sha256:88c76efe46824dabc1a11306985e281a5c779ca367913691751d28327bf4df5d`
+- Created: `2025-08-13T16:34:01Z`
+- Virtual Size: ~ 12.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.0`
+  - `NGINX_VERSION=1.29.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.0-r1 description:
+nginx-1.29.1-r1 description:
 High performance web server
 
-nginx-1.29.0-r1 webpage:
+nginx-1.29.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.0-r1 installed size:
-2659 KiB
+nginx-1.29.1-r1 installed size:
+2647 KiB
 
-nginx-1.29.0-r1 license:
+nginx-1.29.1-r1 license:
 2-clause BSD-like license
 
 ```

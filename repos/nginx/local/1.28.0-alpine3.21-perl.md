@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c76d555232b5bb03f6f43e014c9a46e1d030143d9d99edfa857e1f70aefcb2d1`
+- Image ID: `sha256:0b65b64c7d04c51377093a2450501a185489c12d64aa8cb69b97e8742398b8be`
 - Created: `2025-04-23T18:00:49Z`
-- Virtual Size: ~ 86.55 Mb  
+- Virtual Size: ~ 86.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1078,16 +1078,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.40.1-r1 description:
+perl-5.40.3-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.40.1-r1 webpage:
+perl-5.40.3-r0 webpage:
 https://www.perl.org/
 
-perl-5.40.1-r1 installed size:
+perl-5.40.3-r0 installed size:
 36 MiB
 
-perl-5.40.1-r1 license:
+perl-5.40.3-r0 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
