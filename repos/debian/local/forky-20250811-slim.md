@@ -1,8 +1,8 @@
-# `debian:trixie-slim`
+# `debian:forky-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4f2d356126a64905e3a04f1c23b3f9748411b795ced0b7a436b516b4a791cb6`
+- Image ID: `sha256:6af22cc5b68e49acaf64bd6c88c20ac0f39f1757206e5fa80298bcbd1b0ff118`
 - Created: `2025-08-11T00:00:00Z`
 - Virtual Size: ~ 78.61 Mb  
   (total size of all layers on-disk)
@@ -113,20 +113,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.2-2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.2-2.dsc' audit_4.0.2-2.dsc 2408 SHA256:d0b9457933409cd3287bc0b8bfb10f41c08fb5b24bd5c5b8364125d5a6894974
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.2.orig.tar.gz' audit_4.0.2.orig.tar.gz 1198769 SHA256:d5d1b5d50ee4a2d0d17875bc6ae6bd6a7d5b34d9557ea847a39faec531faaa0a
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.2-2.debian.tar.xz' audit_4.0.2-2.debian.tar.xz 19228 SHA256:33030d53299c57cda73e9e45813b8488f9bc3ad8992aef0b740afabbf66a2ba2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.0.2-2/
 
-- https://sources.debian.net/src/audit/1:4.0.2-2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.0.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.0.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.8`
 
@@ -140,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8.dsc' base-files_13.8.dsc 1215 SHA256:7affd67993afe347ed581d242fdb591ca4585a513446d24ad5e313f4d2895785
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8.tar.xz' base-files_13.8.tar.xz 68600 SHA256:b2776447ed88d510aa5fa65f0b8ad144811e59d7bf943b977d29c94de0c7e368
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8/
 
-- https://sources.debian.net/src/base-files/13.8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
