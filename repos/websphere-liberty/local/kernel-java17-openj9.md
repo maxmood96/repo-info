@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0bd93248553e34fca385f9e8173237af0ef91403b3bd073bc42be5c98d462af`
-- Created: `2025-07-16T23:14:46Z`
-- Virtual Size: ~ 335.42 Mb  
+- Image ID: `sha256:faa73e47547c16a1ae4b9820388b3c5bbfdbb5e75c2754f1851ea8f79ce5e1a8`
+- Created: `2025-08-12T13:27:51Z`
+- Virtual Size: ~ 335.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -23,21 +23,21 @@
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl250720250629-1102`
+  - `BuildLabel=cl250420250407-1902`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=25.0.0.7`
-  - `com.ibm.websphere.liberty.version=25.0.0.7`
-  - `liberty.version=25.0.0.7`
+  - `ProductVersion=25.0.0.8`
+  - `com.ibm.websphere.liberty.version=25.0.0.8`
+  - `liberty.version=25.0.0.8`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl250720250629-1102`
+  - `org.opencontainers.image.revision=cl250420250407-1902`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=25.0.0.7`
+  - `org.opencontainers.image.version=25.0.0.8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1597,11 +1597,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.4`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.5`
 
 Binary Packages:
 
-- `perl-base=5.34.0-3ubuntu1.4`
+- `perl-base=5.34.0-3ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1633,9 +1633,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.dsc' perl_5.34.0-3ubuntu1.5.dsc 2976 SHA512:e490cfc45a24fa7538f5a92054a19a52fd9675fe7a7e6e0e20b7a6c3e6939ec0cf1b39e71f2daebb8e5ab0968d851fdf1b713166d6855968fb47e846d7350020
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.debian.tar.xz' perl_5.34.0-3ubuntu1.5.debian.tar.xz 200524 SHA512:bb565b5ee511cd73dccf9b596f356fd4d4a32dcd5a584fa73e806322a541706d6940c54732d20d6eb1fcc0bac06fcef5a98f5f6a592b83b12a8ada3157dfdc6f
+```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
