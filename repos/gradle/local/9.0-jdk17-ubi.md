@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6823fbea0da258c90053755d2f2e66d962fd76a82e504bb8f64c6427c40021af`
+- Image ID: `sha256:93662c592ed061ef0a889fb471ef926e6805b3bc244f8c5c6c024624fd2fdf97`
 - Created: `2025-07-31T17:27:11Z`
 - Virtual Size: ~ 718.60 Mb  
   (total size of all layers on-disk)
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=9.0.0`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-08-06T04:59:23`
+  - `build-date=2025-08-07T16:38:41`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -33,10 +33,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1754456323`
+  - `release=1754584681`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=9d904d0c37a2f241eb830c87fef29978a33fdc7e`
+  - `vcs-ref=14d0d41651f155541d4ccbcf34f4f03159bc36b2`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -1342,11 +1342,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-11.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-12.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-12.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-12.el9_6.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
