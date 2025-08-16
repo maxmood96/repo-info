@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53fe887b64794cdc5f924e50ea0c63453255ef572a552b665e92befbea3f630a`
+- Image ID: `sha256:1c6f9367b2f3398fe47728670712c068992d2de2037a48f9e2a54f169693f978`
 - Created: `2025-07-18T19:06:54Z`
-- Virtual Size: ~ 493.64 Mb  
+- Virtual Size: ~ 493.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -477,15 +477,15 @@ $ dnf --quiet download --source --url gdbm-1.13-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `gdk-pixbuf2-2.36.12-3.amzn2.x86_64`
+### `rpm` package: `gdk-pixbuf2-2.36.12-3.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gdk-pixbuf2-2.36.12-3.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/66c0234ee1599c3c05a52f8833491fd4aacdc4bb476fe4148153440c07e2632f/gdk-pixbuf2-2.36.12-3.amzn2.src.rpm
+$ dnf --quiet download --source --url gdk-pixbuf2-2.36.12-3.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/d01890f21b88440f133f1114c3c8f72b21c2dc9364b5b4bdf9462dabfd41452c/gdk-pixbuf2-2.36.12-3.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `giflib-4.1.6-9.amzn2.0.2.i686`
@@ -1551,15 +1551,15 @@ $ dnf --quiet download --source --url libxcb-1.12-1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/f247c6b583421db5b27b36aa2d19d8cc44685181e32fd319cc2f6aae8d998d88/libxcb-1.12-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.18.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.19.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.18
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/cb704efbcc3ac6418ad0f1de47afaed97dcc30e163dcd35a5ce27a72a3fe6901/libxml2-2.9.1-6.amzn2.5.18.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.19
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/ca1e3329a262ce619a2ccbe2188250f7c51cae9a10063a382a5b94f9d33aff3d/libxml2-2.9.1-6.amzn2.5.19.src.rpm
 ```
 
 ### `rpm` package: `libxshmfence-1.2-1.amzn2.0.2.x86_64`
@@ -1815,15 +1815,15 @@ $ dnf --quiet download --source --url p11-kit-trust-0.23.22-1.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/79c2f1cc336aa17382372c2c5577054870d1d123e5ce606f33bc2443e9c91347/p11-kit-0.23.22-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `pam-1.1.8-23.amzn2.0.2.x86_64`
+### `rpm` package: `pam-1.1.8-23.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.1.8-23.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/5e5c7ebfb8401c77cbd43f72e15dc1535d84d151108447934025bad6e5398355/pam-1.1.8-23.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url pam-1.1.8-23.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/6999f0315800e5db9313b98ef69238995fabb4fda53142c659ea9907afbd394b/pam-1.1.8-23.amzn2.0.4.src.rpm
 ```
 
 ### `rpm` package: `pango-1.42.4-4.amzn2.x86_64`
@@ -1859,15 +1859,15 @@ $ dnf --quiet download --source --url pinentry-0.8.1-17.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/30819f9f22382344ac3af9a69db748efdb80c7dd77ff73f80d77579fd6409209/pinentry-0.8.1-17.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `pixman-0.34.0-1.amzn2.0.2.x86_64`
+### `rpm` package: `pixman-0.34.0-1.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pixman-0.34.0-1.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/7ca6e19d2329b5a85760de2cf8e9792b4d906c07fbaefed31fdb85d0f6ad1c94/pixman-0.34.0-1.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url pixman-0.34.0-1.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/61208082d40be4b96d4f12dc097aec83ca991740c65694b6c32b9c311c521736/pixman-0.34.0-1.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `popt-1.13-16.amzn2.0.2.x86_64`
