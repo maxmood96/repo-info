@@ -1,10 +1,10 @@
-# `nextcloud:30.0.13-fpm-alpine`
+# `nextcloud:30.0.14-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39f4b6f6e3483229720712e1fb9df49d2d04c0623727ee2f8a9d12464c516249`
-- Created: `2025-08-06T00:42:16Z`
-- Virtual Size: ~ 889.93 Mb  
+- Image ID: `sha256:03da4efbb02b4bdc1b7edb79d55da183edbbef21a6fe7ff9366a1ab75042900a`
+- Created: `2025-08-14T19:55:08Z`
+- Virtual Size: ~ 893.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=30.0.13`
+  - `NEXTCLOUD_VERSION=30.0.14`
 
 ## `apk` (`.apk`-based packages)
 
@@ -473,16 +473,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.84.3-r0 description:
+glib-2.84.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.84.3-r0 webpage:
+glib-2.84.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.84.3-r0 installed size:
+glib-2.84.4-r0 installed size:
 5249 KiB
 
-glib-2.84.3-r0 license:
+glib-2.84.4-r0 license:
 LGPL-2.1-or-later
 
 ```
