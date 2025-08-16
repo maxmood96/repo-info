@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e5a526977c279aca86417ec00b7e40049c16e29f841ce640d2eff34e4befe8d`
-- Created: `2025-03-19T00:38:43Z`
-- Virtual Size: ~ 524.40 Mb  
+- Image ID: `sha256:fad7a889b8774ba8617c8454c7d4010b6907f1307f38114c4e65b3d20266a78e`
+- Created: `2025-08-12T07:13:40Z`
+- Virtual Size: ~ 524.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -777,15 +777,15 @@ $ dnf --quiet download --source --url libverto-0.2.5-4.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.18.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.19.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.18
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/cb704efbcc3ac6418ad0f1de47afaed97dcc30e163dcd35a5ce27a72a3fe6901/libxml2-2.9.1-6.amzn2.5.18.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.19
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ba7f1d31e5f467a6f88efd05b8096755996faffeac9d1fec1127533be0d032f3/../../../../../blobstore/ca1e3329a262ce619a2ccbe2188250f7c51cae9a10063a382a5b94f9d33aff3d/libxml2-2.9.1-6.amzn2.5.19.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.amzn2.0.2.x86_64`
