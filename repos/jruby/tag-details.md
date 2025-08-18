@@ -19063,11 +19063,11 @@ $ docker pull jruby@sha256:5356199859a20f980606fd89809435125dc4cd38fa2f9dec992e3
 
 -	Layers:
 	-	`sha256:90d4f9e90bc1ec477fd9f5e4edb6318104c696f80ff13d1e3b7c0a0c66341e1a`  
-		Last Modified: Tue, 12 Aug 2025 23:23:27 GMT  
+		Last Modified: Mon, 18 Aug 2025 04:32:04 GMT  
 		Size: 5.4 MB (5365684 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dd359e177ad23e13af45e7ae9fbb65fb5595a509e3b377efc27a7b6c949ccb10`  
-		Last Modified: Tue, 12 Aug 2025 23:23:26 GMT  
+		Last Modified: Mon, 18 Aug 2025 04:32:01 GMT  
 		Size: 19.2 KB (19185 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19641,7 +19641,7 @@ CMD ["irb"]
 		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab00a64beb9ace049477270b15c85aefa9e1445e4a57a75777dec97495441d89`  
-		Last Modified: Tue, 12 Aug 2025 23:25:09 GMT  
+		Last Modified: Mon, 18 Aug 2025 04:40:20 GMT  
 		Size: 13.2 MB (13159752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8297dcc98b208551317370f4d8070a351450502974a4c8af74a50a0dc0c44aa2`  
