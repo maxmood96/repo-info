@@ -1,9 +1,9 @@
-# `perl:5.42.0-threaded`
+# `perl:5.42.0-threaded-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:818270eccef2b15aa4c3d8e1637d1852a88b788c9a1bebac2c626198c31053f8`
-- Created: `2025-07-04T18:45:50Z`
+- Image ID: `sha256:058ec8a3557285d4ecb5833bd04c7a378c570855c45df1a7be25482c600d38c9`
+- Created: `2025-08-17T07:01:39Z`
 - Virtual Size: ~ 990.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
