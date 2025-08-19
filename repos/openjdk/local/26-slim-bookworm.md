@@ -1,10 +1,10 @@
-# `openjdk:26-ea-10-jdk-slim-bookworm`
+# `openjdk:26-ea-11-jdk-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4493bd70b11f50972bf4689a4ee5b51ffe4a555f179a2776c7d767a4b7dd5765`
-- Created: `2025-08-09T00:54:27Z`
-- Virtual Size: ~ 484.90 Mb  
+- Image ID: `sha256:c66c3a74d23dcaf43c7c5e6105f50789d82661cf6e7c03a50a4966d9a2e98e2a`
+- Created: `2025-08-16T00:56:10Z`
+- Virtual Size: ~ 484.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+10`
+  - `JAVA_VERSION=26-ea+11`
 
 ## `dpkg` (`.deb`-based packages)
 
