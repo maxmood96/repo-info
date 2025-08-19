@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:92598a7a70c78f3ac410b88659c88bde5e72e23490f34832369f1a186c379c29`
-- Created: `2025-07-14T16:50:38.000741026Z`
+- Image ID: `sha256:72ff9b0d42b4296ec88a705e7708c22f406ba341327cf70b6858ba0543f1fbd2`
+- Created: `2025-08-01T23:04:24.310095255Z`
 - Virtual Size: ~ 77.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1195,11 +1195,11 @@ $ apt-get source -qq --print-uris pcre2=10.45-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45-1.diff.gz' pcre2_10.45-1.diff.gz 8659 SHA512:2c7444846c31495693f5b94357a9f94b3ccb1664ee9eff68433fc4d0e94dbbf32eb24611718daf8338466283d450bfab547946aabae990803c61efeb091b7964
 ```
 
-### `dpkg` source package: `perl=5.40.1-2ubuntu0.1`
+### `dpkg` source package: `perl=5.40.1-2ubuntu0.2`
 
 Binary Packages:
 
-- `perl-base=5.40.1-2ubuntu0.1`
+- `perl-base=5.40.1-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1229,9 +1229,15 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.40.1-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2ubuntu0.2.dsc' perl_5.40.1-2ubuntu0.2.dsc 3023 SHA512:88af975b4783728a34ab86c29f0621a45ec72d4f90b1d57a0c74ae8c4aae9f8df4ee3014b1a71499aff34364a6ba5b91e23a06a28ee1e2525361149291e38f29
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-2ubuntu0.2.debian.tar.xz' perl_5.40.1-2ubuntu0.2.debian.tar.xz 173116 SHA512:4c45dad2a52718e18e738992098bca11ec36e8d23868d8556fdf6d723fda2611869ce83eb6bbda72ccf9b7e3393e9f5b57663b5bfb6305dd567052cc81191e23
+```
 
 ### `dpkg` source package: `procps=2:4.0.4-7ubuntu1`
 
