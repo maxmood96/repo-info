@@ -171,7 +171,7 @@ $ docker pull mageia@sha256:0f0579f8a778c71f1d6974802b2cba1046891447fc252ce714df
 ## `mageia:cauldron`
 
 ```console
-$ docker pull mageia@sha256:5916412298802a413761174fe8c0439fcce662e42a76a32ed5a671157773d801
+$ docker pull mageia@sha256:4c84b2e06d8a92f8dbab646c6970c40355ec04b6a814d76814215c4a867b04bc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -235,49 +235,49 @@ $ docker pull mageia@sha256:e7ade988586df9b4ca6231d1be5f916aba54b5c30986b2d2b255
 ### `mageia:cauldron` - linux; arm variant v7
 
 ```console
-$ docker pull mageia@sha256:54ade9bfe785d2d82a4442e13b8bf87f49b803e6d1bcb7e2fe0fd0684654c5aa
+$ docker pull mageia@sha256:c3a9dbcdeb2b5fee6399a810689c284fca43c859bc6a0619da587c749fb3b7fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.5 MB (104534506 bytes)**  
+-	Total Size: **105.4 MB (105396966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f9c6ef202a2b061319c4d4d776c7584335434daca4e9d32b4d805f4aaac5853`
+-	Image ID: `sha256:0ea9ef95d2e23419fb687eee9b9b577213129eeef9ad4cbe30b4e000f744ea76`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 10 Jul 2025 04:02:25 GMT
+# Sun, 17 Aug 2025 23:02:23 GMT
 ADD rootfs.tar.xz / # buildkit
-# Thu, 10 Jul 2025 04:02:25 GMT
+# Sun, 17 Aug 2025 23:02:23 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b583ef237c1409a0e6c54b2ed85885618ee9f492c67e80b7983fe4048508e238`  
-		Last Modified: Thu, 10 Jul 2025 19:06:53 GMT  
-		Size: 104.5 MB (104534506 bytes)  
+	-	`sha256:239f9ac139d89a1d2575ac478b02ee8441cb0aa25bf372fc4a89430f400a6a80`  
+		Last Modified: Mon, 18 Aug 2025 23:07:04 GMT  
+		Size: 105.4 MB (105396966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mageia:cauldron` - unknown; unknown
 
 ```console
-$ docker pull mageia@sha256:adeca30474b29769f0c55df3fc443d0a009baf59c1a00a484861107fbb387757
+$ docker pull mageia@sha256:8226da461dfe9b5d7759cd2520414d7199d7ae63b1534d1983a09d1eaa6bb7d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.9 MB (6921845 bytes)**  
+-	Total Size: **7.0 MB (6975163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b3b4c854ef74288e51548eacb75f62622161d82900827314b72af20f5268ac1`
+-	Image ID: `sha256:600094c2b47fb8c61b6fe52d6fd710cc7320b47994863ad67c370eee0ba0367b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cff8d27b0a131d694e67532fdb46dcbc64e3b4ef99fbe67bb84f3b12f3e16b55`  
-		Last Modified: Thu, 10 Jul 2025 20:52:37 GMT  
-		Size: 6.9 MB (6916796 bytes)  
+	-	`sha256:3a26afafd391f11b286e186f64c585dcf57a66518caab84330fd5cad663cd68c`  
+		Last Modified: Tue, 19 Aug 2025 02:52:23 GMT  
+		Size: 7.0 MB (6970114 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b0509ae989b19d1e1e4edf1d2f20f9e27f1bb9538f91ad65b201c637feae50e`  
-		Last Modified: Thu, 10 Jul 2025 20:52:37 GMT  
+	-	`sha256:55e55f0568e251fc4fa8f1ad124399df023fb0737be04a49c0da46873fd600e8`  
+		Last Modified: Tue, 19 Aug 2025 02:52:23 GMT  
 		Size: 5.0 KB (5049 bytes)  
 		MIME: application/vnd.in-toto+json
 
