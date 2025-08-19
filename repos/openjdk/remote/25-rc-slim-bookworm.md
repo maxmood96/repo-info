@@ -1,7 +1,7 @@
 ## `openjdk:25-rc-slim-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:35d92fb7d37cd40a5bdd95d3e405714d288c371440ee75777c07a7c9d7bf85e2
+$ docker pull openjdk@sha256:42f6485288092261562bd27467508e30a61e62fcfaaea228053d0c235082e3f1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,31 +83,31 @@ $ docker pull openjdk@sha256:24779b11fd6fc657abceb0e2c9ebdea1309a83c9c64006b8d4d
 ### `openjdk:25-rc-slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:7b822a38eed34029ccdc4ef4964fad10f14e5368e477a98687bedc24394e69b9
+$ docker pull openjdk@sha256:1e87101906c8bbf9cc596d500e9667e1b502891e920111d2b1db128e5de8ff9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.0 MB (252954602 bytes)**  
+-	Total Size: **253.0 MB (252957967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:707af18c821934869d6cbb0f11ad48872777d1bab88a7657c59d4785deca31f3`
+-	Image ID: `sha256:4490d953857e1760ac02987f7df549b77f16032e6756bb55dd37711ae792e330`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Mon, 11 Aug 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1754870400'
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Sat, 16 Aug 2025 00:48:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Sat, 16 Aug 2025 00:48:25 GMT
 ENV JAVA_HOME=/usr/local/openjdk-25
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Sat, 16 Aug 2025 00:48:25 GMT
 ENV PATH=/usr/local/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Sat, 16 Aug 2025 00:48:25 GMT
 ENV LANG=C.UTF-8
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Sat, 16 Aug 2025 00:48:25 GMT
 ENV JAVA_VERSION=25
-# Sat, 09 Aug 2025 00:48:09 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/GA/jdk25/bd75d5f9689641da8e1daabeccb5528b/35/GPL/openjdk-25_linux-x64_bin.tar.gz'; 			downloadSha256='c00224c25b0b915f4d69929d90e59dfd66e949f79f7437d334248f7789b646f4'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/GA/jdk25/bd75d5f9689641da8e1daabeccb5528b/35/GPL/openjdk-25_linux-aarch64_bin.tar.gz'; 			downloadSha256='2cf9e308cd667a6134865652839a3f7d59a93198a10841cb893f65248d1852d7'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
-# Sat, 09 Aug 2025 00:48:09 GMT
+# Sat, 16 Aug 2025 00:48:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/GA/jdk25/bd75d5f9689641da8e1daabeccb5528b/36/GPL/openjdk-25_linux-x64_bin.tar.gz'; 			downloadSha256='59cdcaf255add4721de38eb411d4ecfe779356b61fb671aee63c7dec78054c2b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/GA/jdk25/bd75d5f9689641da8e1daabeccb5528b/36/GPL/openjdk-25_linux-aarch64_bin.tar.gz'; 			downloadSha256='f4a8d27429458a529148f90ebafcd1ae9b1968fa323f9e5e40d579a5c8c0288f'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
+# Sat, 16 Aug 2025 00:48:25 GMT
 CMD ["jshell"]
 ```
 
@@ -116,35 +116,35 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Aug 2025 22:08:02 GMT  
 		Size: 28.1 MB (28082001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9264d93e235056bbba86b53d5e1017f36cfe68b90a121050621f724be3d3805`  
-		Last Modified: Wed, 13 Aug 2025 08:32:03 GMT  
-		Size: 3.9 MB (3851294 bytes)  
+	-	`sha256:18619d6149826238e20d8c833bd88d9141048eb6c0b28fbe96d458d21ffae3c4`  
+		Last Modified: Mon, 18 Aug 2025 22:25:41 GMT  
+		Size: 3.9 MB (3851380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f327c1f41c453443641e371ff690ee2eae781e64817bbcf08bedb1b158f6345`  
-		Last Modified: Wed, 13 Aug 2025 09:16:33 GMT  
-		Size: 221.0 MB (221021307 bytes)  
+	-	`sha256:19bfb761a66e9de6efb272a67edc3e30ec28ec001867e18cd3d0dea7158d8087`  
+		Last Modified: Mon, 18 Aug 2025 22:37:52 GMT  
+		Size: 221.0 MB (221024586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:25-rc-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:1977cecbd8601c3da392f00475fd59b49e61f9421774c743894d2e08644865be
+$ docker pull openjdk@sha256:ce450af2c3f65ff88d6eec4a0d65bba258f71587e7d8518cf69f990e3818989b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2667498 bytes)**  
+-	Total Size: **2.7 MB (2667496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7974dcf30a675024cf0314143ade576ab6bc41f60746ff16b9ec28574f639bec`
+-	Image ID: `sha256:09ef8ce4c9e426dfe9dd807442f3a43f47e232b7ae22ec00c6390040005cf05f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6c4251af9457e8793ee4634c6ed71deeb8e5bb448db865625ec5faae709e0ed3`  
-		Last Modified: Wed, 13 Aug 2025 09:23:27 GMT  
+	-	`sha256:3d4ddc7918d59633784e31265d294508bc2357cfab52755c9e241c91d73eecb1`  
+		Last Modified: Tue, 19 Aug 2025 00:23:46 GMT  
 		Size: 2.7 MB (2650413 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:81a913df4fd43ee16889649651c2744d972c6f107a66584b0be5db2e6d98975b`  
-		Last Modified: Wed, 13 Aug 2025 09:23:28 GMT  
-		Size: 17.1 KB (17085 bytes)  
+	-	`sha256:f4e4dac39fd5c88c372c59a7555f01bfd4d9c5c059c136f991f9ca6fb9ce00e4`  
+		Last Modified: Tue, 19 Aug 2025 00:23:47 GMT  
+		Size: 17.1 KB (17083 bytes)  
 		MIME: application/vnd.in-toto+json
