@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb2eca491e90477147baf69e50b0354a80a085d0fb25fd95679639473a5b4685`
+- Image ID: `sha256:b4bc7fe8a5d7faaeb9efd4bab61762aaccaaf195ea88dd513ef43345acdde431`
 - Created: `2025-07-26T16:25:03Z`
 - Virtual Size: ~ 139.78 Mb  
   (total size of all layers on-disk)
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.6`
-  - `PYTHON_SHA256=17ba5508819d8736a14fbfc47d36e184946a877851b2e9c4b6c43acb44a3b104`
+  - `PYTHON_VERSION=3.13.7`
+  - `PYTHON_SHA256=5462f9099dfd30e238def83c71d91897d8caa5ff6ebc7a50f14d4802cdaaa79a`
   - `SATOSA_VERSION=8.5.1`
 
 ## `apk` (`.apk`-based packages)
