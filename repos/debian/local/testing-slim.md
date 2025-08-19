@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.0.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.dsc' apt_3.0.3.dsc 3091 SHA256:ccf1666e5b268d76bf62aafb22db089a2fdae9c17d1d1c446546b3621768add7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.tar.xz' apt_3.0.3.tar.xz 2422096 SHA256:5b5f6f6d26121742a83aa80d4ed0eb0c6ce9bea259518db412edefd95760e4ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.0.3/
 
-- https://sources.debian.net/src/apt/3.0.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1559,21 +1553,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-4.dsc' tzdata_2025b-4.dsc 2434 SHA256:5bfd58e884f9a9a2b5681647e217e2747db90030158cef813c6ed7a5744aee3f
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-4.debian.tar.xz' tzdata_2025b-4.debian.tar.xz 126968 SHA256:9dd3b3a53a706adfc2ce97569595501f2e278d58f73cf066201385ac71f27116
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-4/
 
-- https://sources.debian.net/src/tzdata/2025b-4/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41-5`
 
