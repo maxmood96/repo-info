@@ -1,24 +1,24 @@
-# `unit:1.34.2-go1.23`
+# `unit:1.34.2-go1.25`
 
 ## Docker Metadata
 
-- Image ID: `sha256:63eac378b91dad495b1cc3197758910597c2585e219c2980155236ded5f7fbd1`
-- Created: `2025-03-03T18:37:38Z`
-- Virtual Size: ~ 895.13 Mb  
+- Image ID: `sha256:b394509aa6a7b64942144c9f771b3483e56962d77b3629e6a9f75f5c4f57c293`
+- Created: `2025-08-18T23:11:58Z`
+- Virtual Size: ~ 863.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.23.12`
+  - `GOLANG_VERSION=1.25.0`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
-  - `org.opencontainers.image.title=Unit (go1.23)`
+  - `org.opencontainers.image.title=Unit (go1.25)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
   - `org.opencontainers.image.version=1.34.2`
