@@ -1,10 +1,10 @@
-# `golang:tip-20250808-trixie`
+# `golang:tip-20250815-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:259700ac83069835e852032edd2ffa7b0ba273f014485c4864dec761cb66abb7`
-- Created: `2025-08-12T17:45:50Z`
-- Virtual Size: ~ 869.23 Mb  
+- Image ID: `sha256:6b08efef0dbe4db37c347fbe77dcc0f268616382ae35b164c3cf253249b3bfd3`
+- Created: `2025-08-18T05:23:18Z`
+- Virtual Size: ~ 869.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
