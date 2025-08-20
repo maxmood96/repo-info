@@ -1,10 +1,10 @@
-# `joomla:5.3.2-php8.2-fpm-alpine`
+# `joomla:5.3.3-php8.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:01757c900e0961cd1be2ac1078e2387150367fb3723eecfe0ab8be15f01578db`
-- Created: `2025-07-09T10:39:39Z`
-- Virtual Size: ~ 275.07 Mb  
+- Image ID: `sha256:c352ccae47033013885fbf3278039b824c84aed26793b4d47ea21bc8173eb6f1`
+- Created: `2025-08-19T22:37:33Z`
+- Virtual Size: ~ 284.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc`
   - `PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.3.2`
-  - `JOOMLA_SHA512=86aa552c44de50342d153bfad774ad2110114542d9e7d5d186cdaf2968864675ed6c752a1de8469d7abd33509ddedb88f58e9dd96d13f6ac3fd61c4125c5e10b`
+  - `JOOMLA_VERSION=5.3.3`
+  - `JOOMLA_SHA512=efc0c5249758f1f7d9915992e01aa44203e86126c59c4c3adec8a7342aec132da2f5e10910fd7e2485ab8f58faa981de6be99cfe3c3b3f3c1e79e7d2d0321388`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -695,16 +695,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.2-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -967,16 +967,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.5-r0 description:
+libpq-17.6-r0 description:
 PostgreSQL client library
 
-libpq-17.5-r0 webpage:
+libpq-17.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.5-r0 installed size:
+libpq-17.6-r0 installed size:
 322 KiB
 
-libpq-17.5-r0 license:
+libpq-17.6-r0 license:
 PostgreSQL
 
 ```
@@ -1069,16 +1069,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.2-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.2-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -1460,16 +1460,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.2-r0 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.2-r0 license:
 Apache-2.0
 
 ```
