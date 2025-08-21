@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31a4d0525acdefa194b1cc9c28c9af7c752cc3cac711727419f40e73fa7fc387`
-- Created: `2025-08-15T11:36:20Z`
-- Virtual Size: ~ 289.19 Mb  
+- Image ID: `sha256:f72ffe6810b784df3e44bddc8fec95bcaaf1425191ecb9b15623103105392442`
+- Created: `2025-08-18T22:43:35Z`
+- Virtual Size: ~ 289.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -2058,6 +2058,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.4-4/ (for browsing the source)
 - https://sources.debian.net/src/ncurses/6.4-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.4-4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `netbase=6.4`
+
+Binary Packages:
+
+- `netbase=6.4`
+
+Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris netbase=6.4
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_6.4.dsc' netbase_6.4.dsc 898 SHA256:dc26cfcaa49fd874cc27c65216b2f8b6d3ad62845b78da4bdf0aea55592af756
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_6.4.tar.xz' netbase_6.4.tar.xz 32712 SHA256:fa6621826ff1150e581bd90bc3c8a4ecafe5df90404f207db6dcdf2c75f26ad7
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/netbase/6.4/ (for browsing the source)
+- https://sources.debian.net/src/netbase/6.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netbase/6.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.8.1-2`
 
