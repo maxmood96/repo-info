@@ -1,17 +1,17 @@
-# `clojure:temurin-8-tools-deps-1.12.1.1550-trixie-slim`
+# `clojure:temurin-8-tools-deps-1.12.1.1561-trixie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:849ea9349d24a96e63d6915df8beba4553fbe93f3e2b97699a121d7161bd1049`
-- Created: `2025-06-07T17:38:11Z`
-- Virtual Size: ~ 399.95 Mb  
+- Image ID: `sha256:8a4f30d51ef4383b4a9e25be8f70f2c95d4e7cf4994219625233acc28b5be877`
+- Created: `2025-08-16T23:31:29Z`
+- Virtual Size: ~ 400.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.1.1550`
+  - `CLOJURE_VERSION=1.12.1.1561`
 
 ## `dpkg` (`.deb`-based packages)
 

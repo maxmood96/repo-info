@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7967310defcade41bad884203689bb1bfa7fddbf22ca980003dc12e3cf6eea0d`
-- Created: `2025-06-07T17:38:11Z`
-- Virtual Size: ~ 532.92 Mb  
+- Image ID: `sha256:27db71bb03b9221e12f47020fa910b07c814eca417df67b1e96907c1736298ab`
+- Created: `2025-08-16T23:31:29Z`
+- Virtual Size: ~ 532.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.28+6`
-  - `CLOJURE_VERSION=1.12.1.1550`
+  - `CLOJURE_VERSION=1.12.1.1561`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
