@@ -636,9 +636,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.dsc' gcc-12_12.3.0-1ubuntu1~22.04.dsc 27867 SHA512:68c0860bb1f453ad06334504034c575bed05512ef2a94599e8bbf57a25ed51dc9a429f4646848c8d98e0d4695f1319fac5d5ebbee3a0f8eecdb279b75936a875
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.dsc' gcc-12_12.3.0-1ubuntu1~22.04.2.dsc 27845 SHA512:4189e457350c0a6f43a4c9b96df4d4cea23ad97b18c7b5592b7a1e27e66cedb30c03e2d71c1496be2157e38900344bcd6171c389bd803e5d14093530528e19a8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
 ```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.10`
@@ -1389,14 +1389,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-151.161
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-151.161.dsc' linux_5.15.0-151.161.dsc 7779 SHA512:e6c8014d49c8fe947aa8977aa5bab6a484b78cf3c2e3fe37505f7a7a2da3c027c8b6ec32b35d185a3322d080c99d783eee0bb2e9fad9ed446d71b38d77bb3d7b
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-151.161.diff.gz' linux_5.15.0-151.161.diff.gz 11862849 SHA512:34866f0c3fc2994e313fd5dfd668d43f9fd10b45fdb4b45738b08e10fe10ecb55ac45e5cfafa1f2f0385b0ceb6781006cea836c52b8245b47570fb211905be02
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
