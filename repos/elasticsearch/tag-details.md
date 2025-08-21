@@ -818,7 +818,7 @@ $ docker pull elasticsearch@sha256:abd54352678c10388d9fe4904c6aab939acb9a2a012f2
 ## `elasticsearch:9.0.5`
 
 ```console
-$ docker pull elasticsearch@sha256:87bf6b28efa7625d8a1e285696086d8d5c24143947c443e4859dfc1ad5e4e895
+$ docker pull elasticsearch@sha256:95f29cf63b861a54c91ec7b1501221353ea95fb0e255acad9b56d8ae3bd2e413
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -831,51 +831,53 @@ $ docker pull elasticsearch@sha256:87bf6b28efa7625d8a1e285696086d8d5c24143947c44
 ### `elasticsearch:9.0.5` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:4dcf0ede9f7a35463de09983f47469c5e6d8ea93dfcd43a0fd6de2c651432480
+$ docker pull elasticsearch@sha256:edc2551ab68e4b57e4f1669303b32706bd38f992f6c138510090e09b4f7070c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **700.2 MB (700247807 bytes)**  
+-	Total Size: **700.2 MB (700243672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:353a37ba012272b782f23297ee76009bb85d66d904f7bb9c0b7309102f542c2e`
+-	Image ID: `sha256:ba689ac832510db777126a2f3d5152c5151a82dc1c2395a28152b764b6fc5b8e`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL maintainer="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL vendor="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.openshift.expose-services=""
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 ENV container oci
-# Thu, 07 Aug 2025 16:38:58 GMT
-COPY dir:fed8131dab1a07775853004683d17f14115862719c3742630632a44de821b8a8 in / 
-# Thu, 07 Aug 2025 16:38:58 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
+COPY dir:e1f22eafd6489859288910ef7585f9d694693aa84a31ba9d54dea9e7a451abe6 in / 
+# Tue, 12 Aug 2025 08:42:57 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Thu, 07 Aug 2025 16:38:58 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 CMD ["/bin/bash"]
-# Thu, 07 Aug 2025 16:38:59 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
-# Thu, 07 Aug 2025 16:38:59 GMT
-LABEL "build-date"="2025-08-07T16:38:41" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="14d0d41651f155541d4ccbcf34f4f03159bc36b2" "release"="1754584681"
+# Tue, 12 Aug 2025 08:42:57 GMT
+COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /root/buildinfo/content_manifests/content-sets.json 
+# Tue, 12 Aug 2025 08:42:57 GMT
+LABEL "build-date"="2025-08-20T13:12:41" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f4b088292653bbf5ca8188a5e59ffd06a8671d4b" "release"="1755695350"
 # Tue, 12 Aug 2025 08:42:57 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
 # Tue, 12 Aug 2025 08:42:57 GMT
@@ -915,119 +917,121 @@ USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:7ceb420857b3cf642e9e34e4e12ebf8ca5ed092e6c4b4f69ce4ed011e9e8140a`  
-		Last Modified: Thu, 07 Aug 2025 18:09:52 GMT  
-		Size: 39.7 MB (39651301 bytes)  
+	-	`sha256:1e02d32990adc4dad7c8927f91cca33a1baba746105504093311eb3b0b691fa0`  
+		Last Modified: Wed, 20 Aug 2025 15:04:59 GMT  
+		Size: 39.6 MB (39647287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81a9a82d55e373efe13158797dd6f98296c5a2207df8666919409f90687af496`  
-		Last Modified: Wed, 13 Aug 2025 23:16:56 GMT  
-		Size: 4.3 MB (4284275 bytes)  
+	-	`sha256:e67bc67af4761ee3bef6b76073d25c0019df4061e1958c6f12d83e8785df3c8b`  
+		Last Modified: Thu, 21 Aug 2025 18:57:51 GMT  
+		Size: 4.3 MB (4284051 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df9f4b3d1afd3d0181217a84ef904397fc11c2776fcfaad83c4b6a4cbd2c27f6`  
-		Last Modified: Wed, 13 Aug 2025 23:16:56 GMT  
-		Size: 1.5 KB (1529 bytes)  
+	-	`sha256:e5a0710cc067d2af9756405b0a840213bd20aca08b778d314408845c43e67fac`  
+		Last Modified: Thu, 21 Aug 2025 18:57:45 GMT  
+		Size: 1.5 KB (1532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ec8180c260bea2a69dab600a4deccbf9fe218301803381f50d066e1518504fd`  
-		Last Modified: Wed, 13 Aug 2025 23:16:56 GMT  
+	-	`sha256:a8503dad9e5dd918ec7a70a64a1edf7fff06e88b9e22f26cb3d09c7557c43a92`  
+		Last Modified: Thu, 21 Aug 2025 18:57:44 GMT  
 		Size: 9.5 KB (9532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4569734777202480898fdf87a2a7b0c15213503055f5fcda28fbda33d6597ff8`  
-		Last Modified: Thu, 14 Aug 2025 01:24:13 GMT  
-		Size: 656.2 MB (656221697 bytes)  
+	-	`sha256:22b5989f2004e5b145f418143623461c76df984491436a51620f38c8957549b7`  
+		Last Modified: Thu, 21 Aug 2025 18:57:18 GMT  
+		Size: 656.2 MB (656221797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e46d8d20778897f688ee685ee7f1c692a103a67f817518e23a6f521c613c541`  
-		Last Modified: Wed, 13 Aug 2025 23:16:57 GMT  
-		Size: 273.0 B  
+	-	`sha256:b97d7b7eed886da1c5b6fb214980a003a07fc741dd3878a3f4b79e18b39c3abd`  
+		Last Modified: Thu, 21 Aug 2025 18:57:43 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:088f24ced92468eda33f1a28c63a4165550275818d562757b2310dfec622daec`  
-		Last Modified: Wed, 13 Aug 2025 23:16:48 GMT  
-		Size: 1.7 KB (1719 bytes)  
+	-	`sha256:b94fa7dc01b095811025735df6f82cdb0265c329facce78591d244e9498af7b1`  
+		Last Modified: Thu, 21 Aug 2025 18:57:44 GMT  
+		Size: 1.7 KB (1718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e800b8ffb1c43322bda946a39e01c2e695d209ede33b378785cf4289ff60fb44`  
-		Last Modified: Wed, 13 Aug 2025 23:16:48 GMT  
-		Size: 75.7 KB (75746 bytes)  
+	-	`sha256:23c0e4ee300fb45a4583ee69d8b833611ad05c7b1320bc4be4f3d8c74b4d486c`  
+		Last Modified: Thu, 21 Aug 2025 18:57:44 GMT  
+		Size: 75.7 KB (75747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37e25803f16ee77a119660805e1a0c0eed602c1e23f9041c914126ded4bb2a5d`  
-		Last Modified: Wed, 13 Aug 2025 23:16:49 GMT  
-		Size: 1.7 KB (1703 bytes)  
+	-	`sha256:357e5cfd9c0a65bed4e7ba9a3860aa096161b1cfde4e3c80cba3c7c1d4fe9cee`  
+		Last Modified: Thu, 21 Aug 2025 18:57:45 GMT  
+		Size: 1.7 KB (1701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.0.5` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:c8e8104e51eeec80aa63196ae4bcd63e9537cbe8c3c2d455bb13a026eb05cd3a
+$ docker pull elasticsearch@sha256:c38fb6a579d4bd2cf5aef74b136c54306f43bfd010c87074245fc418e7ab95ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2067638 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f75977d4429d3a1622231931adfb6d5687d0470fa95ed52936c9b0234cec9ffd`
+-	Image ID: `sha256:d826d838ab66901aef114b8657eeff7369bd7bdad6335a62973ea7d87112509e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19c29cad88fd78b35a6b7dda3f4edf95c3ee40cdae7bf37eb06651865189cfc8`  
-		Last Modified: Thu, 14 Aug 2025 00:25:18 GMT  
+	-	`sha256:c867cf06adc5ceb2755f3408a1e7d38e46a74e449195c0dea2e33015b671d119`  
+		Last Modified: Thu, 21 Aug 2025 21:25:22 GMT  
 		Size: 2.0 MB (2033799 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0d63e70f18eeba04ca0d8ed129962dcea0bb52953cd042fe135fbbaefad3b4f5`  
-		Last Modified: Thu, 14 Aug 2025 00:25:19 GMT  
+	-	`sha256:3f52b71269e28ebc11240cb3c86281f2411081cf0d12ff36860fa82ad6646c95`  
+		Last Modified: Thu, 21 Aug 2025 21:25:23 GMT  
 		Size: 33.8 KB (33839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elasticsearch:9.0.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull elasticsearch@sha256:c99985dd0784e6ae8c3a36a40007bcfaf41218ac20171f82defc7ee597f2eff9
+$ docker pull elasticsearch@sha256:b6f493b714c0f747e094d16677a9e8e111f878852c768f3ff61a9692c7c49c5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **538.7 MB (538666798 bytes)**  
+-	Total Size: **538.7 MB (538707720 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcb3ed02952a0dadcbde404a75813aebbc9d3d4c8d77163e748dbf72a4fe15d7`
+-	Image ID: `sha256:4c2b92bf2f86fed3fe1be1e9d192530847e2eab57eea8b217e1e23505b10b780`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL maintainer="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL vendor="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.openshift.expose-services=""
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 ENV container oci
-# Thu, 07 Aug 2025 16:43:48 GMT
-COPY dir:5da5b397cee17643fbcc12434bebce628a4ff854389d189d0166a1ebc5e815db in / 
-# Thu, 07 Aug 2025 16:43:48 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
+COPY dir:f91aecd64a5df0b73e2b5740ae90f4bb03c2e87890175a65862ca830f6caced5 in / 
+# Tue, 12 Aug 2025 08:42:57 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Thu, 07 Aug 2025 16:43:48 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 CMD ["/bin/bash"]
-# Thu, 07 Aug 2025 16:43:48 GMT
+# Tue, 12 Aug 2025 08:42:57 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
-# Thu, 07 Aug 2025 16:43:49 GMT
-LABEL "build-date"="2025-08-07T16:43:31" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="14d0d41651f155541d4ccbcf34f4f03159bc36b2" "release"="1754584681"
+# Tue, 12 Aug 2025 08:42:57 GMT
+COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /root/buildinfo/content_manifests/content-sets.json 
+# Tue, 12 Aug 2025 08:42:57 GMT
+LABEL "build-date"="2025-08-20T13:14:46" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="f4b088292653bbf5ca8188a5e59ffd06a8671d4b" "release"="1755695350"
 # Tue, 12 Aug 2025 08:42:57 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
 # Tue, 12 Aug 2025 08:42:57 GMT
@@ -1067,75 +1071,75 @@ USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:ae68ff313f78851fbf66137c0a49a327986447045fa7f2497adbc1b57f88db56`  
-		Last Modified: Thu, 07 Aug 2025 18:09:51 GMT  
-		Size: 37.8 MB (37819116 bytes)  
+	-	`sha256:73ac460760dbc07b4e932677ed1d86c86c51259cd8ea7c5f1d5b13c9dd3d9d59`  
+		Last Modified: Wed, 20 Aug 2025 18:13:24 GMT  
+		Size: 37.9 MB (37859581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75308d0ac5a425abed1f8819eb37d4ab57057319595017b63eecce3b4e16eab9`  
-		Last Modified: Thu, 14 Aug 2025 09:32:04 GMT  
-		Size: 4.3 MB (4292602 bytes)  
+	-	`sha256:8819904c4bbdeaf16699d8b133f573cba66f156c19ee525116de9edb1706d4b9`  
+		Last Modified: Thu, 21 Aug 2025 19:11:02 GMT  
+		Size: 4.3 MB (4293045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92a31db30e452e162a036d85d481ff184571e4963d31acf433f52ef7994e94bd`  
-		Last Modified: Thu, 14 Aug 2025 09:32:10 GMT  
-		Size: 1.5 KB (1529 bytes)  
+	-	`sha256:a556c8b5e19f7fe7f0901b590e0d2221f62670c53ab502e0dcde8885393c6153`  
+		Last Modified: Thu, 21 Aug 2025 19:11:00 GMT  
+		Size: 1.5 KB (1524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10bc1f91f1c0eb0d239f3d471e4997e1ab3bf3ee338a875cb2832dd7fb88afec`  
-		Last Modified: Thu, 14 Aug 2025 09:32:14 GMT  
+	-	`sha256:f4f95e25f6efd13f00804818183cf4256e19126ec91f6531ecc13bf4c7729264`  
+		Last Modified: Thu, 21 Aug 2025 19:11:01 GMT  
 		Size: 9.1 KB (9101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0d25eff9b4b0a311457b0e021d4e735681ad025c7cdcb013a5eb58c19fb2ead`  
-		Last Modified: Thu, 14 Aug 2025 16:53:06 GMT  
-		Size: 496.5 MB (496466083 bytes)  
+	-	`sha256:255bafcb0367af1a2542f155d565fc17b3479609e45566af503007aee8dbf935`  
+		Last Modified: Thu, 21 Aug 2025 19:10:35 GMT  
+		Size: 496.5 MB (496466096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f99ef1a74262d823fdc0080f010a46c6aea7d38f627f8209fb6ea2c07f31171`  
-		Last Modified: Thu, 14 Aug 2025 09:32:18 GMT  
-		Size: 274.0 B  
+	-	`sha256:b23afe729ba6234320b894ac11814ad7441cab3c2b2e4c3c6223a8644c3df723`  
+		Last Modified: Thu, 21 Aug 2025 19:11:02 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f37408bd8cf57a0f41fffbf1b3eaa53ac7803d448c31a67f35c43d192041ce40`  
-		Last Modified: Thu, 14 Aug 2025 09:32:21 GMT  
-		Size: 1.7 KB (1716 bytes)  
+	-	`sha256:ad02e23492309edf8c6c3bb28154add8aa4af3cf42530885c677bb22cd3c6c71`  
+		Last Modified: Thu, 21 Aug 2025 19:11:01 GMT  
+		Size: 1.7 KB (1718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f8b6858e60c84c181d226f8d41e6a5291469ebcdbf172662882b118e6e1de01`  
-		Last Modified: Thu, 14 Aug 2025 09:32:24 GMT  
-		Size: 74.6 KB (74641 bytes)  
+	-	`sha256:9352a77d41c2ab8119bc267df715d9a7935cdd1f6a70c837dfc5a8632b364444`  
+		Last Modified: Thu, 21 Aug 2025 19:11:01 GMT  
+		Size: 74.6 KB (74644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5bc70029f7b41f7c43de8d2bdac6d7669628883f46dcff9b1bff9d5d4c8b210`  
-		Last Modified: Thu, 14 Aug 2025 09:32:28 GMT  
+	-	`sha256:870bcad31b1d2441179324c043dde4ff97d89af8c2c045589de71ec4c9211720`  
+		Last Modified: Thu, 21 Aug 2025 19:11:01 GMT  
 		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.0.5` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:82f1886b119e078192962d9b3cad19e29bf6696d504fae5bf2d64c045067c2c9
+$ docker pull elasticsearch@sha256:e3ca8df0277b3244fadf279c10fa24471eebda4c4737a32f351e4ae487a86cfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2068384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f94f39f3a78a0220cfd7ea7eb1b104832a42b98212b671303fa77cf5c3808653`
+-	Image ID: `sha256:af8a21f0b9a3dd5fdaf4984fdc9915819245a514d28410039b417fe253e81f63`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f8ade9f26be29d68cf6e38fa1659002172ed92fcf41482c0d02d24075fd1ff09`  
-		Last Modified: Thu, 14 Aug 2025 12:25:22 GMT  
+	-	`sha256:c417e8e69f68f935392f3b88b0c86ca7701ec7b098f5d8bd12f815f8e976523e`  
+		Last Modified: Thu, 21 Aug 2025 21:25:28 GMT  
 		Size: 2.0 MB (2034363 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2bc49a5dd507be4eec5fa9c505e02ece7897f299b1d5c19b03134bc7196cc6c`  
-		Last Modified: Thu, 14 Aug 2025 12:25:23 GMT  
+	-	`sha256:79a565841354900a57ef557b8b2a37133c32c59379348b9ed3408fcb0c2a3563`  
+		Last Modified: Thu, 21 Aug 2025 21:25:29 GMT  
 		Size: 34.0 KB (34021 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `elasticsearch:9.1.2`
 
 ```console
-$ docker pull elasticsearch@sha256:b1c50fb8d09ea8486c6422e3c5a0d48c97b931bf2dbc42c5321081845f1ff449
+$ docker pull elasticsearch@sha256:59ab37a27e457c0e801a0ce9c1233ba47b81f0d907d3dbf8a413f620e411eb83
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1148,51 +1152,53 @@ $ docker pull elasticsearch@sha256:b1c50fb8d09ea8486c6422e3c5a0d48c97b931bf2dbc4
 ### `elasticsearch:9.1.2` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:28cd5d8cee38b04536640b20267766e1acf9dc798d4270cdc37923e650da6177
+$ docker pull elasticsearch@sha256:d7e6cf7cae9b356cef2ca22d1a19696fd7d2ca7035e2689e3e38d784ce2dd61b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **715.3 MB (715268417 bytes)**  
+-	Total Size: **715.3 MB (715263897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4cb4874c5fe692cc81275353bf95cfa4f42c0e12de139a6de73cf73514278ed`
+-	Image ID: `sha256:0370c61f362b88a0a67d030f1c85970eb435bccd251cc5f70bfbcc7c15d50dbc`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL maintainer="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL vendor="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Thu, 07 Aug 2025 16:38:56 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.openshift.expose-services=""
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Thu, 07 Aug 2025 16:38:57 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 ENV container oci
-# Thu, 07 Aug 2025 16:38:58 GMT
-COPY dir:fed8131dab1a07775853004683d17f14115862719c3742630632a44de821b8a8 in / 
-# Thu, 07 Aug 2025 16:38:58 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
+COPY dir:e1f22eafd6489859288910ef7585f9d694693aa84a31ba9d54dea9e7a451abe6 in / 
+# Tue, 12 Aug 2025 11:49:08 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Thu, 07 Aug 2025 16:38:58 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 CMD ["/bin/bash"]
-# Thu, 07 Aug 2025 16:38:59 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
-# Thu, 07 Aug 2025 16:38:59 GMT
-LABEL "build-date"="2025-08-07T16:38:41" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="14d0d41651f155541d4ccbcf34f4f03159bc36b2" "release"="1754584681"
+# Tue, 12 Aug 2025 11:49:08 GMT
+COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /root/buildinfo/content_manifests/content-sets.json 
+# Tue, 12 Aug 2025 11:49:08 GMT
+LABEL "build-date"="2025-08-20T13:12:41" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f4b088292653bbf5ca8188a5e59ffd06a8671d4b" "release"="1755695350"
 # Tue, 12 Aug 2025 11:49:08 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
 # Tue, 12 Aug 2025 11:49:08 GMT
@@ -1232,119 +1238,121 @@ USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:7ceb420857b3cf642e9e34e4e12ebf8ca5ed092e6c4b4f69ce4ed011e9e8140a`  
-		Last Modified: Thu, 07 Aug 2025 18:09:52 GMT  
-		Size: 39.7 MB (39651301 bytes)  
+	-	`sha256:1e02d32990adc4dad7c8927f91cca33a1baba746105504093311eb3b0b691fa0`  
+		Last Modified: Wed, 20 Aug 2025 15:04:59 GMT  
+		Size: 39.6 MB (39647287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e839ea5017600067984f33322c723fbb2926d3882004507f1bbf54bde509d26e`  
-		Last Modified: Wed, 13 Aug 2025 23:16:27 GMT  
-		Size: 4.3 MB (4284249 bytes)  
+	-	`sha256:a0aa33d5017b50c8b81f51ad7e4b89f05191c17c1060cdb2cdf195b1748b5f4f`  
+		Last Modified: Thu, 21 Aug 2025 19:11:40 GMT  
+		Size: 4.3 MB (4284011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1b264f1dd030f83cebefe2c2d44c015386cec5d3ebca456d8b05e30f83ea65b`  
-		Last Modified: Wed, 13 Aug 2025 23:16:29 GMT  
-		Size: 1.5 KB (1529 bytes)  
+	-	`sha256:38ad447871662cffcb23f6602e68e378bcfe48bf86658ac1e0544574c69c3b14`  
+		Last Modified: Thu, 21 Aug 2025 19:11:40 GMT  
+		Size: 1.5 KB (1527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:953f57a6b9768a9d9f33b59ee12d25e9e66ae920a01acadfd6b74f25a52ba315`  
-		Last Modified: Wed, 13 Aug 2025 23:16:30 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:802114e09db323d502aee10a5eaeb9764c4e875bddd64937bc94a33c6075ed99`  
+		Last Modified: Thu, 21 Aug 2025 19:11:39 GMT  
+		Size: 9.5 KB (9531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdd0d9c3f650dce723f8144caf690c5d64634d2b8d2ff5cea8af66ffc8433290`  
-		Last Modified: Wed, 13 Aug 2025 23:16:42 GMT  
-		Size: 671.2 MB (671242325 bytes)  
+	-	`sha256:8f729a66d74063eafda896c7a70166018059b370c25c94b0e0a6a2e02ecd83c6`  
+		Last Modified: Thu, 21 Aug 2025 21:26:21 GMT  
+		Size: 671.2 MB (671242059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d0ef43482de7c2b8eddf13848a69831588f5c8616fe938acca6201e563adc6d`  
-		Last Modified: Wed, 13 Aug 2025 23:16:31 GMT  
-		Size: 275.0 B  
+	-	`sha256:e755dec823cc88c5f876e3c1cb188a490d8d27b0540718a659cb138531e652cc`  
+		Last Modified: Thu, 21 Aug 2025 19:11:41 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14d24bec251d2a91b3f1d977e87c2e6bc8091f7ae8faacaa6fcd65606277b211`  
-		Last Modified: Wed, 13 Aug 2025 23:16:31 GMT  
-		Size: 1.7 KB (1720 bytes)  
+	-	`sha256:b3dd9405f5c2999ee71893d3d9d5bc4e4b3ab697dc40d4542203954175eaccd3`  
+		Last Modified: Thu, 21 Aug 2025 19:11:40 GMT  
+		Size: 1.7 KB (1719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080987e4afe9971e4cc2added74c21b1e593ab4ac9aeff3ddd2e489fae14391b`  
-		Last Modified: Wed, 13 Aug 2025 23:16:31 GMT  
-		Size: 75.8 KB (75751 bytes)  
+	-	`sha256:22568f2f520f49e439cf2129403897bcb05fc93c018a522e34aae147b0ae53b0`  
+		Last Modified: Thu, 21 Aug 2025 19:11:40 GMT  
+		Size: 75.8 KB (75750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a73b5cae8d3877b510a546bd2785482ce7a83fa0bd0214eae70722db19836424`  
-		Last Modified: Wed, 13 Aug 2025 23:16:31 GMT  
-		Size: 1.7 KB (1703 bytes)  
+	-	`sha256:d9e01424e0dcb6270c9c3177748afc008ebabc6929a2102222d04003805c13d0`  
+		Last Modified: Thu, 21 Aug 2025 19:11:41 GMT  
+		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.1.2` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:a0183a53aad1bcf061099d1bffe4eba95d3158fc9f844da02ea2a19dc0df4d41
+$ docker pull elasticsearch@sha256:9a4aab714437e9ecbabc9c83ac5e8bbb7193a45bb17c434eaa5017b4d954b2cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2121996 bytes)**  
+-	Total Size: **2.1 MB (2121997 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfd5a141a02fca4a6f73cd9b749bef0622f42eb5260d1250a63881c811d0d7bc`
+-	Image ID: `sha256:9a3138af6c8f14c3de127b07e514da75cec06a4e17b7dae7d3d82c12adfae8e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eefdff54942f1fe0f81378fb9ab326ea95a28c6e397bf43156912bdbd839bff9`  
-		Last Modified: Thu, 14 Aug 2025 00:25:25 GMT  
+	-	`sha256:b8c5c8d0a00d9ca19726292f24512a33cc932be9979bc72176a27da0e946a693`  
+		Last Modified: Thu, 21 Aug 2025 21:25:31 GMT  
 		Size: 2.1 MB (2088158 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8e67e509981eb73981026f93bfc940abcaafb4c7e1450b164474872f337377d4`  
-		Last Modified: Thu, 14 Aug 2025 00:25:26 GMT  
-		Size: 33.8 KB (33838 bytes)  
+	-	`sha256:13d65aa61808b3ddf3d01c52b71e79d1122cba66f8747bf2f84096b9fa0fc376`  
+		Last Modified: Thu, 21 Aug 2025 21:25:32 GMT  
+		Size: 33.8 KB (33839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elasticsearch:9.1.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull elasticsearch@sha256:c87bb3d9f66a7da42bdfba55571cc80f3a5cc908bf865f7bf89475b365ecc70e
+$ docker pull elasticsearch@sha256:2b858546f971448bcf3bd35326de4633c6656bad86d322041c257c25f13f31ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.7 MB (553689617 bytes)**  
+-	Total Size: **553.7 MB (553730527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4dc8903e8ff5e503355d6ad230767f79beb6e5803348dac8370f501d82113897`
+-	Image ID: `sha256:6c4f96ee554191ed5fb0239354ee5111416750a1dbb40c7535673c9c8da5089d`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL maintainer="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL vendor="Red Hat, Inc."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.openshift.expose-services=""
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Thu, 07 Aug 2025 16:43:47 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 ENV container oci
-# Thu, 07 Aug 2025 16:43:48 GMT
-COPY dir:5da5b397cee17643fbcc12434bebce628a4ff854389d189d0166a1ebc5e815db in / 
-# Thu, 07 Aug 2025 16:43:48 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
+COPY dir:f91aecd64a5df0b73e2b5740ae90f4bb03c2e87890175a65862ca830f6caced5 in / 
+# Tue, 12 Aug 2025 11:49:08 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Thu, 07 Aug 2025 16:43:48 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 CMD ["/bin/bash"]
-# Thu, 07 Aug 2025 16:43:48 GMT
+# Tue, 12 Aug 2025 11:49:08 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
-# Thu, 07 Aug 2025 16:43:49 GMT
-LABEL "build-date"="2025-08-07T16:43:31" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="14d0d41651f155541d4ccbcf34f4f03159bc36b2" "release"="1754584681"
+# Tue, 12 Aug 2025 11:49:08 GMT
+COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /root/buildinfo/content_manifests/content-sets.json 
+# Tue, 12 Aug 2025 11:49:08 GMT
+LABEL "build-date"="2025-08-20T13:14:46" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="f4b088292653bbf5ca8188a5e59ffd06a8671d4b" "release"="1755695350"
 # Tue, 12 Aug 2025 11:49:08 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
 # Tue, 12 Aug 2025 11:49:08 GMT
@@ -1384,67 +1392,67 @@ USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:ae68ff313f78851fbf66137c0a49a327986447045fa7f2497adbc1b57f88db56`  
-		Last Modified: Thu, 07 Aug 2025 18:09:51 GMT  
-		Size: 37.8 MB (37819116 bytes)  
+	-	`sha256:73ac460760dbc07b4e932677ed1d86c86c51259cd8ea7c5f1d5b13c9dd3d9d59`  
+		Last Modified: Wed, 20 Aug 2025 18:13:24 GMT  
+		Size: 37.9 MB (37859581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75308d0ac5a425abed1f8819eb37d4ab57057319595017b63eecce3b4e16eab9`  
-		Last Modified: Thu, 14 Aug 2025 09:32:04 GMT  
-		Size: 4.3 MB (4292602 bytes)  
+	-	`sha256:8819904c4bbdeaf16699d8b133f573cba66f156c19ee525116de9edb1706d4b9`  
+		Last Modified: Thu, 21 Aug 2025 19:11:02 GMT  
+		Size: 4.3 MB (4293045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92a31db30e452e162a036d85d481ff184571e4963d31acf433f52ef7994e94bd`  
-		Last Modified: Thu, 14 Aug 2025 09:32:10 GMT  
-		Size: 1.5 KB (1529 bytes)  
+	-	`sha256:a556c8b5e19f7fe7f0901b590e0d2221f62670c53ab502e0dcde8885393c6153`  
+		Last Modified: Thu, 21 Aug 2025 19:11:00 GMT  
+		Size: 1.5 KB (1524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10bc1f91f1c0eb0d239f3d471e4997e1ab3bf3ee338a875cb2832dd7fb88afec`  
-		Last Modified: Thu, 14 Aug 2025 09:32:14 GMT  
+	-	`sha256:f4f95e25f6efd13f00804818183cf4256e19126ec91f6531ecc13bf4c7729264`  
+		Last Modified: Thu, 21 Aug 2025 19:11:01 GMT  
 		Size: 9.1 KB (9101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4869bb9b167e08c65346669fb520edbcbab6cd411726218a7368e9f32257fd3`  
-		Last Modified: Thu, 14 Aug 2025 10:13:15 GMT  
-		Size: 511.5 MB (511488901 bytes)  
+	-	`sha256:bd77c4456ef874d16943397fd85331d7dfc4f13a92c6cfbd18cd9b50851d36ff`  
+		Last Modified: Thu, 21 Aug 2025 22:10:29 GMT  
+		Size: 511.5 MB (511488900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54526b76acad0ae919e49d329185c7aae4648c7832ab8f6b88f4b574caf9b504`  
-		Last Modified: Thu, 14 Aug 2025 09:23:31 GMT  
-		Size: 273.0 B  
+	-	`sha256:97a507638ab0d3a20f24db9c8a9b6e1ad5077c16cea1acb3f1f8f3c4837a05cf`  
+		Last Modified: Thu, 21 Aug 2025 19:13:04 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deea1a1365f5633f157152174d6e1ea9902e7a98e38dbcfd9d5d59c49b8e2283`  
-		Last Modified: Thu, 14 Aug 2025 09:23:31 GMT  
-		Size: 1.7 KB (1719 bytes)  
+	-	`sha256:bd92fbd82d25ec7e922d13525c24fc3a66edd3ece1591e6512e56443ef52a0d5`  
+		Last Modified: Thu, 21 Aug 2025 19:13:04 GMT  
+		Size: 1.7 KB (1718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc545d601f3c957ff588d4ae10dddb3ddc90cc512e323607d78f5f90b2136419`  
-		Last Modified: Thu, 14 Aug 2025 09:23:31 GMT  
-		Size: 74.6 KB (74642 bytes)  
+	-	`sha256:c2f2a5180b68254a3d6533587cdfd0ec0c408fbefeaac7fca29acaef2d8b2569`  
+		Last Modified: Thu, 21 Aug 2025 19:13:04 GMT  
+		Size: 74.6 KB (74648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df57e2ccea6c05ae9a576d4bd7619c15d20f353bd7922944ff78ca3b60625bb5`  
-		Last Modified: Thu, 14 Aug 2025 09:23:31 GMT  
-		Size: 1.7 KB (1702 bytes)  
+	-	`sha256:7e7ce74ae9e83a62d8d8e31091d028f354e244e311e6ed7d594504dd8331e4af`  
+		Last Modified: Thu, 21 Aug 2025 19:13:04 GMT  
+		Size: 1.7 KB (1704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.1.2` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:2441565d97d721d1d309be99e6979d63d430651f61ff8e7ffb2e050fe7a2391f
+$ docker pull elasticsearch@sha256:cc23e77b7c492b9d5062645f1fd137db19491239cd8bfbc6192c17a79f9f5e82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2122743 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fca439369cf1fb08120a09a2d978bc4c1ea3e0fc1ed4fae74412003a0a514e6c`
+-	Image ID: `sha256:8e0b95ad11435a70eadc7e940afb285aa696fb333cc31e59385a82569d14803a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bf4c066df5343af043d69fcf50ff74ead696d3f56709723898b55ccd6f1510c8`  
-		Last Modified: Thu, 14 Aug 2025 12:25:26 GMT  
+	-	`sha256:db9869c6e1e12a30ba341817209857da80602278a583c0c9ca8276484372daa3`  
+		Last Modified: Thu, 21 Aug 2025 21:25:37 GMT  
 		Size: 2.1 MB (2088722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df67b779fd1a788a91c55df8b7bb05e46ee65c2b4753903baebd427b8292a8b0`  
-		Last Modified: Thu, 14 Aug 2025 12:25:27 GMT  
+	-	`sha256:91bb809be470c698d842825f6acfa5c2eb26b2c219925692f07a2f581f1cd20f`  
+		Last Modified: Thu, 21 Aug 2025 21:25:38 GMT  
 		Size: 34.0 KB (34021 bytes)  
 		MIME: application/vnd.in-toto+json
