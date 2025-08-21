@@ -1,10 +1,10 @@
-# `odoo:18.0-20250807`
+# `odoo:18.0-20250819`
 
 ## Docker Metadata
 
-- Image ID: `sha256:508cd74923ac0568631614ea1ddc5457cd52113e02c33dae291cd31cad39b68d`
-- Created: `2025-08-07T07:18:18Z`
-- Virtual Size: ~ 2.00 Gb  
+- Image ID: `sha256:4a26e5748f96753d4a5c4c5c28b077b4c363ea118bf897d28a263a84c832fc8d`
+- Created: `2025-08-19T08:02:42Z`
+- Virtual Size: ~ 2.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2568,14 +2568,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.3.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.3.dsc 3038 SHA512:368ed5781c9ff0945ffa1a902b8e39e402b994ae9ca0e0a809a3280b7a15b8b392c494ad4ee11a2c51b3d3f35537d4e46fb84ab5d62425b7b87b2fa4684a4a1a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.3.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.3.debian.tar.xz 39548 SHA512:a31c46293830d779a76aefbe33aa8fe3e5b8ab21431db4d9f2db33d99f0edb94ad7cf73f14517b1aeb47281add30763f2168ae121a8c3dc6b4fa184a2172afee
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1build1`
 
@@ -10012,11 +10007,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250807`
+### `dpkg` source package: `odoo=18.0.20250819`
 
 Binary Packages:
 
-- `odoo=18.0.20250807`
+- `odoo=18.0.20250819`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10403,12 +10398,12 @@ $ apt-get source -qq --print-uris polib=1.1.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/polib/polib_1.1.1-1.debian.tar.xz' polib_1.1.1-1.debian.tar.xz 4592 SHA512:d3f45b5e76ee03bf707b537f6e59d90d824498de415ebf04b42817d680c482fa7febae9156c88438b825528deac7af54ab9f559dfad802909e45ee352d227c74
 ```
 
-### `dpkg` source package: `postgresql-17=17.5-1.pgdg24.04+1`
+### `dpkg` source package: `postgresql-17=17.6-1.pgdg24.04+1`
 
 Binary Packages:
 
-- `libpq5:amd64=17.5-1.pgdg24.04+1`
-- `postgresql-client-17=17.5-1.pgdg24.04+1`
+- `libpq5:amd64=17.6-1.pgdg24.04+1`
+- `postgresql-client-17=17.6-1.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-17/copyright`)
 
@@ -11964,14 +11959,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.2.dsc' tiff_4.5.1+git230720-4ubuntu2.2.dsc 2309 SHA512:d5b88c63cd63e016f5050d592cb36c7fd8b8f53e810bcc1d39bfea16ca649cde2f062af5d8d6adaa309363d101261686e11675249d214e31f9dabf2a579cddf0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA512:6bf9653f5c65d17c2944b20d14a5d5ab3b89d461bc6eb935a54aa8df99ce7221aeb2172f06b44affd06d81aeaab5698b90b07fde883167d0abf51debaaa6f71b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.2.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.2.debian.tar.xz 29924 SHA512:4e07ce3aff052c2df29163480690bd3bb392455bd4d0a26322cd4e6dea0a0e0d9512dad558e1ff93e7a899631c39f0f633b308718c8e5aa98f9e7abe26b9a02f
-```
 
 ### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04.1`
 
