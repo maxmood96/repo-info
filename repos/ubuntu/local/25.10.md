@@ -118,13 +118,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13.7ubuntu1.dsc' base-files_13.7ubuntu1.dsc 1373 SHA512:8a3f66bff12185acc02db134c6b41d24038d1b6dd52e97bf93a352d3fb98d3aa252f3d6caaf4fc9be5211b951fca4ed6940256f5e2c588f413b3274b1dacd324
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13.7ubuntu1.tar.xz' base-files_13.7ubuntu1.tar.xz 96600 SHA512:9452d6dbf0f91e9e7958c41274ccbcece1eb38d6e369248abf467aa302148ec84e3e264e002b6ea96a6bc5f4c91c51bca23a14c4a47308e709bbf22c8f7f0acc
-```
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -552,15 +548,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-9ubuntu1.dsc' glibc_2.41-9ubuntu1.dsc 7853 SHA512:3682e07c46097e14bdac75cb7b6d9522081c94f00183c8ec1ca3df47636b8af541fa80b8d068ce31f85bd88b0bb709bea9ffd4112b01b1858191beb840f0c50e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 19344868 SHA512:894a3e5a796bc13df30c26a5bfbe4d60b5dbdaac54e7763432235124b547070c7dda88c50584536870cab79183d8cad73a3ac6ed09bfe54fa8482aad07253169
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz.asc' glibc_2.41.orig.tar.xz.asc 981 SHA512:98462e1a1abce7ae7214b48bce160ff95ffb6634708d9952a0997575ae1fb06f4499e01953bace0933e07fddf583f0dfe93221c44192957a894a4126ab073ce8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-9ubuntu1.debian.tar.xz' glibc_2.41-9ubuntu1.debian.tar.xz 486580 SHA512:6ce176f5d31d5cd07c2444c28fbe5b20cd6b577f22b4b0a1af76d233d7bc95d6418b6d0f2479f75fe4b0a25a383d25426cc01a25adfb31a3907ccd2363885864
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3ubuntu2`
 
@@ -610,15 +600,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.7-17ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.7-17ubuntu3.dsc' gnupg2_2.4.7-17ubuntu3.dsc 4586 SHA512:d9d294a262a01e911a5efc81a8648572f3aabd4d5fc658895ee70ccdc2931fc32abe052edc3bcd7e53e2b28c9f632ac01ff682c8fb4f844b792e178803bbacb3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.7.orig.tar.bz2' gnupg2_2.4.7.orig.tar.bz2 8010244 SHA512:3e84f1679904bf0efb789df6466e468bd2be9149d52561f35e2380038133479bebf1c61ee7adf6d3564b370915f32111098c052be6e6acaf3083a807f9f36019
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.7.orig.tar.bz2.asc' gnupg2_2.4.7.orig.tar.bz2.asc 390 SHA512:6c0b9876ec8c79e04b495a888e1f83d43385422258fd0f603224a7913a4e6937fe2964457e3029e92bb667b4a586811ea54bd721d47f39d4bf25f6808795ec4d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.7-17ubuntu3.debian.tar.xz' gnupg2_2.4.7-17ubuntu3.debian.tar.xz 111824 SHA512:9b0666501003732699c0163eb0739473420303fdd5ecbe40e9c9ab21de8399e12a9f92c50d868652922e6e67a0ba6b3d86897ca9adc67b9e79b3a9ac4bd950dd
-```
 
 ### `dpkg` source package: `grep=3.11-4build1`
 
@@ -1286,15 +1270,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6ubuntu1.dsc' sqlite3_3.46.1-6ubuntu1.dsc 2739 SHA512:263cb6f141211ca06d487bb2b5ffc734e93473e89e57bb6329652d1f32b684f0f967f504d025309b3b1fd4dd14e85f43f9d4392dab9f90fe31bda0205c7558b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6ubuntu1.debian.tar.xz' sqlite3_3.46.1-6ubuntu1.debian.tar.xz 35556 SHA512:ba10b2713940f5fe26bbe5ceba04609ec7e5f88de8c2272b62cc574ba530d19c2f32feb5acfaaedf922290f3c37ee9e47f01ef80593280d124fb49c413b6ae81
-```
 
 ### `dpkg` source package: `systemd=257.7-1ubuntu1`
 
