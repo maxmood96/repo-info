@@ -1,7 +1,7 @@
 ## `mysql:innovation-oraclelinux9`
 
 ```console
-$ docker pull mysql@sha256:4ff17910bdff29a899a4cc5c95ff524f505e10dba5e1f6d4b7bcf6c4c786bf4a
+$ docker pull mysql@sha256:439bfb4044dc59ade76c4e5c4065c02e5ba4d4007db32c40ac58d55c03069916
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -134,13 +134,13 @@ $ docker pull mysql@sha256:6b97f0aeb85fffeea7f7d87054342e79b38cd334404dcb73807f8
 ### `mysql:innovation-oraclelinux9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mysql@sha256:8920eb635c2d5fd9cc83cb365632a64a8032286648395955701f76d566f7639a
+$ docker pull mysql@sha256:93e95d62edb7375158fc7f38bdf051e617a6c601b909c2fb053fe07def749eea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.7 MB (270696808 bytes)**  
+-	Total Size: **270.7 MB (270692179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7d52b6f8f700b14c8a5f3b5902e3f2fcc8dc3cf210c33348994d8ce62ddbc4`
+-	Image ID: `sha256:775909ac18966dad262819459871dc5c247f0ca8d0f8e391fbc0a0e4095792b5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -186,67 +186,67 @@ CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:da99ef17bcd1d6b39ce9eab8bcb39fc1902df72d68384325b4fa2b0342d5c908`  
-		Last Modified: Fri, 08 Aug 2025 00:16:18 GMT  
-		Size: 48.1 MB (48086911 bytes)  
+	-	`sha256:b5e369658cc0fdedce73e0479a85cd17ba8a09435fc3b21f6afb7e0d4783429d`  
+		Last Modified: Thu, 21 Aug 2025 18:56:13 GMT  
+		Size: 48.1 MB (48086723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc12642f09769eb349de06aea10d4609cc12eb81e238714e9af45811813b4231`  
-		Last Modified: Thu, 07 Aug 2025 23:57:43 GMT  
+	-	`sha256:d212ae8c9f998770f386b491e7ce68f3a723bc4664de920e34b424db9928a2b8`  
+		Last Modified: Thu, 21 Aug 2025 20:10:52 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739cdd12ec77d448f93849150c53cf301f3e1de9e8af8a68273b7b367e8b9431`  
-		Last Modified: Thu, 07 Aug 2025 23:57:46 GMT  
-		Size: 913.4 KB (913442 bytes)  
+	-	`sha256:ea97db50997f07df77c482bfbb0a27db94c04855b5f99cf9c08b9b2688f892c3`  
+		Last Modified: Thu, 21 Aug 2025 20:10:53 GMT  
+		Size: 913.5 KB (913452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7e901e4e4c139386b4b372483359fd51925a811eb3795cab994e3902dcc8723`  
-		Last Modified: Fri, 08 Aug 2025 00:16:15 GMT  
-		Size: 6.4 MB (6446654 bytes)  
+	-	`sha256:07893b7b6550229f3f48d6cfac380579d60fbd0de4175e444353204dd39fd572`  
+		Last Modified: Thu, 21 Aug 2025 20:10:54 GMT  
+		Size: 6.4 MB (6445795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19592870864a65bb7b34d3cf1a267cc76ac1fcca4d5619e47de3cc2d8419c399`  
-		Last Modified: Thu, 07 Aug 2025 23:57:48 GMT  
+	-	`sha256:d08ac0fe1ae14b701f02568df345744b9424b3b8c69bedf9adaeb1f2fab5a46a`  
+		Last Modified: Thu, 21 Aug 2025 20:10:53 GMT  
 		Size: 2.6 KB (2608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3aab55028fec17a260a2e6bce865fe3567b6c3398d227e78a4e1be5d1e469686`  
-		Last Modified: Fri, 08 Aug 2025 00:11:51 GMT  
+	-	`sha256:0705aca3779f8579552e28c42cd5f59bde8df7854590579392a61c74636cd386`  
+		Last Modified: Thu, 21 Aug 2025 20:10:54 GMT  
 		Size: 339.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:734e4b6b957309d2e916ad9f42dd2408662062b35c9a35666d631a5f9116e1e2`  
-		Last Modified: Fri, 08 Aug 2025 00:41:36 GMT  
-		Size: 48.0 MB (48004052 bytes)  
+	-	`sha256:5d112df39e0c0171e5c2fd3ba6683933bd1061b8e00ae333093ef137b291a1bd`  
+		Last Modified: Thu, 21 Aug 2025 20:11:01 GMT  
+		Size: 48.0 MB (48002907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd5a6bb76bb1504b245ae15291e4e97e6ab464eaaf1405a24fad1823835422e`  
-		Last Modified: Fri, 08 Aug 2025 00:11:54 GMT  
+	-	`sha256:5db4e3dbbc31fae7425a753a0e67895019e814d6a367c1b1b1ce856cf092787d`  
+		Last Modified: Thu, 21 Aug 2025 20:10:54 GMT  
 		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8792e39739497fbe4d0b7cccaa1b40466b937fc2f494fc925c1fa150fff94e8`  
-		Last Modified: Fri, 08 Aug 2025 00:41:44 GMT  
-		Size: 167.2 MB (167236264 bytes)  
+	-	`sha256:c8eba9606d89e82f8e2716b04c6c07dbf8e5fb29b38acbd422256bfc2484af5f`  
+		Last Modified: Thu, 21 Aug 2025 22:06:54 GMT  
+		Size: 167.2 MB (167233812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45a43a0d58dcd1f55d4c552dca62d95bbb328aa78db2439c4ddd524af84d7b99`  
-		Last Modified: Fri, 08 Aug 2025 00:11:56 GMT  
-		Size: 5.3 KB (5329 bytes)  
+	-	`sha256:c53b88c5f89df0192aa9e02d0dd87b587a3f7eaaa22b2758b238550112206248`  
+		Last Modified: Thu, 21 Aug 2025 20:10:55 GMT  
+		Size: 5.3 KB (5334 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mysql:innovation-oraclelinux9` - unknown; unknown
 
 ```console
-$ docker pull mysql@sha256:71f38ecaca1f5dea5ab8744d20107cb055a89622644134883b58f45b3d746371
+$ docker pull mysql@sha256:044aac32dadb8c575046f67eeed2d8d92b3fcb4574e5dbee0dc6c2366d916f7e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.7 MB (17730090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61dbf685b382fec4591c12109859a6490b484a08d31e8986df7dd55090b1356f`
+-	Image ID: `sha256:a3e7aa649c7763551530ec55fc37dabb78e0e7ed1e0219d6b6fdb4797e1eff10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9bc92f7f413104f0ad73673607eb4d4e8e1ba1b26cbe96138a63e4a22274b27e`  
-		Last Modified: Fri, 08 Aug 2025 03:03:14 GMT  
+	-	`sha256:9fa1b8161776bf227a6ae2d07bde154e18a312344a4e6e1c2386ae3829742358`  
+		Last Modified: Fri, 22 Aug 2025 00:02:57 GMT  
 		Size: 17.7 MB (17694431 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1dcc3e4d2b4bd513c9a32e1986fe1364bfdb3093db6579dc7f1c826a227e6c17`  
-		Last Modified: Fri, 08 Aug 2025 03:03:15 GMT  
+	-	`sha256:1eacd3227abfeb8887a33151a5ec6ba7a87239f9f0a7481d5c9a5f3a6e99d11c`  
+		Last Modified: Fri, 22 Aug 2025 00:02:58 GMT  
 		Size: 35.7 KB (35659 bytes)  
 		MIME: application/vnd.in-toto+json
