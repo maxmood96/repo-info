@@ -757,14 +757,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-11/copyright`, `/usr/share/doc/gcc-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-11=11.4.0-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0-1ubuntu1%7e22.04.dsc' gcc-11_11.4.0-1ubuntu1~22.04.dsc 22841 SHA512:c463147bafb00dad7d46fcf92a732be9c278e8ffc8e8bc4eca42f5e6f4f1cae3cfd710693315a60f3cd0215e65522a0dfb278099bfeb3f53faf7663a19c50e1f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0.orig.tar.gz' gcc-11_11.4.0.orig.tar.gz 86949353 SHA512:c6fd2066dd230c7b4d4db75bb414dca062eb7f0565c8ea531183a51abd75c229ac0badeb5a959a09fc1a35de4ce5282cdb8142fe356f567da1fa50b1525983a5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-11_11.4.0-1ubuntu1~22.04.debian.tar.xz 543736 SHA512:b9b308246cfa23294c3d65968e505e9d6cc74a428dbd37e761051ec2005388b226e4719ecfb21f9e74c90e29d95afce40c5b750832cb95f43ce8aa60bd6990c6
-```
 
 ### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04`
 
@@ -794,9 +789,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.dsc' gcc-12_12.3.0-1ubuntu1~22.04.dsc 27867 SHA512:68c0860bb1f453ad06334504034c575bed05512ef2a94599e8bbf57a25ed51dc9a429f4646848c8d98e0d4695f1319fac5d5ebbee3a0f8eecdb279b75936a875
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.dsc' gcc-12_12.3.0-1ubuntu1~22.04.2.dsc 27845 SHA512:4189e457350c0a6f43a4c9b96df4d4cea23ad97b18c7b5592b7a1e27e66cedb30c03e2d71c1496be2157e38900344bcd6171c389bd803e5d14093530528e19a8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
 ```
 
 ### `dpkg` source package: `gcc-defaults=1.193ubuntu1`
@@ -2380,14 +2375,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.dsc' python3.10_3.10.12-1~22.04.10.dsc 3678 SHA512:acd9ae7832465e8cba6dda28c7030db90be64f53cdf28f568d97a5fe9676a60051d5ad3f0e931d513d016c2ea694158478ab27787e578d36aa3eddaad0d59c6a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.debian.tar.xz' python3.10_3.10.12-1~22.04.10.debian.tar.xz 252516 SHA512:1934075f6934e76289ce0db7203239fcec37f4f7fcb63fe3390b45ce47b893a6ef26c1cc53f16a3f14942aec7cb093a42f9204e518c24bbeddf31103a58697a7
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
