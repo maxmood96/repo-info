@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ea972cada1868c56fc1e3e18caf42dc0443bb102eef6e5bbc320ab6d0bdab75`
-- Created: `2025-04-28T07:13:40Z`
-- Virtual Size: ~ 243.67 Mb  
+- Image ID: `sha256:79c245dc791b31b2b519b3c5d73f7f5b8d2f25440ed0926c6472b4a58ff569dd`
+- Created: `2025-08-19T21:48:35Z`
+- Virtual Size: ~ 250.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -519,16 +519,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.2-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -655,16 +655,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.5-r0 description:
+libpq-17.6-r0 description:
 PostgreSQL client library
 
-libpq-17.5-r0 webpage:
+libpq-17.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.5-r0 installed size:
+libpq-17.6-r0 installed size:
 322 KiB
 
-libpq-17.5-r0 license:
+libpq-17.6-r0 license:
 PostgreSQL
 
 ```
@@ -740,16 +740,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.2-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.2-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -927,16 +927,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.2-r0 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.2-r0 license:
 Apache-2.0
 
 ```
