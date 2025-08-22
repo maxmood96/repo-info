@@ -3145,14 +3145,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-0.4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-0.4ubuntu0.1.dsc' libxml2_2.12.7+dfsg+really2.9.14-0.4ubuntu0.1.dsc 3149 SHA512:615ce2e28c5d786809a8a0f4d503150463334d30e5aebb7170f5d2e9e1cd974b65903d446e5eceee6c736a839c963cbde80069ce63352331f7e4edc5ee76f120
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-0.4ubuntu0.1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-0.4ubuntu0.1.debian.tar.xz 40240 SHA512:8a820c5411d44785400162bf2507c45cf0cdb244d5552593fb45bae900fdd2e5ddc01c6fc0708f210d597c01c6366cdbd3a4b8bf28fda0cfdfaac936c6a1b28c
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1build1`
 
@@ -4187,15 +4182,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.3-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-1ubuntu0.2.dsc' python3.13_3.13.3-1ubuntu0.2.dsc 4440 SHA512:f48f6479de7faebad1cc5b7b50f200234606e0d6a05079bbaf6ca20e96fd7198b3526ce3f39e4e21d8aa56b2e4a274e61c79035fa1527a3177269576563b4478
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz' python3.13_3.13.3.orig.tar.xz 22654240 SHA512:f7559b6dceae69f48742af0a6497fbec42cd1e5304f64b6eb9d89222a1171ccf12fa186cc0decabb4e98d05223184967a4a7537754c01083dacdc9073cb1a578
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz.asc' python3.13_3.13.3.orig.tar.xz.asc 963 SHA512:54f8da5f4a4dcadc9830cb07aecf695a26a2de48ab98e1f42b09fdde1c70989476d07ce7ea81337216f1e5fcbf6b688e0608c88a2545ced416b01640108e94db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-1ubuntu0.2.debian.tar.xz' python3.13_3.13.3-1ubuntu0.2.debian.tar.xz 283900 SHA512:e980b3a69415cddf33589df54d6f3ee37f59ab75fd81e593a46fa74cda38787b52efa64d47fdba45c8536ab1dafce7406805b2cc1a4489ca7b685d1fd3419224
-```
 
 ### `dpkg` source package: `readline=8.2-6`
 

@@ -742,14 +742,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.50.0-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.50.0-1ubuntu2.dsc' git_2.50.0-1ubuntu2.dsc 2791 SHA512:efef2322481cad4f308513a0cedc610e720aa22f4b23ee01f545d848520f172a8abeb4aab465bf904715828341337d90d863c089b50db38733aa4580fb474985
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.50.0.orig.tar.xz' git_2.50.0.orig.tar.xz 7878256 SHA512:a8fdf5b0ab156822324b76aa7200071eb7244f7714807c39f05bc3361bc261272a6fdd1d0bc3a097dbbf27e92c02eda612aac17cb2a45ddfa222d74937cac67f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.50.0-1ubuntu2.debian.tar.xz' git_2.50.0-1ubuntu2.debian.tar.xz 814372 SHA512:0216591815f700e7cda12cb4bcfb1c4714f9a3f72f0277fc4d469581026e2e674bb66d8381067809cea554d11cb45c8e4115545ae7e0394a4595f1d55776a902
-```
 
 ### `dpkg` source package: `glibc=2.41-9ubuntu1`
 
@@ -794,15 +789,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-9ubuntu1.dsc' glibc_2.41-9ubuntu1.dsc 7853 SHA512:3682e07c46097e14bdac75cb7b6d9522081c94f00183c8ec1ca3df47636b8af541fa80b8d068ce31f85bd88b0bb709bea9ffd4112b01b1858191beb840f0c50e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 19344868 SHA512:894a3e5a796bc13df30c26a5bfbe4d60b5dbdaac54e7763432235124b547070c7dda88c50584536870cab79183d8cad73a3ac6ed09bfe54fa8482aad07253169
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz.asc' glibc_2.41.orig.tar.xz.asc 981 SHA512:98462e1a1abce7ae7214b48bce160ff95ffb6634708d9952a0997575ae1fb06f4499e01953bace0933e07fddf583f0dfe93221c44192957a894a4126ab073ce8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-9ubuntu1.debian.tar.xz' glibc_2.41-9ubuntu1.debian.tar.xz 486580 SHA512:6ce176f5d31d5cd07c2444c28fbe5b20cd6b577f22b4b0a1af76d233d7bc95d6418b6d0f2479f75fe4b0a25a383d25426cc01a25adfb31a3907ccd2363885864
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3ubuntu2`
 
@@ -2166,15 +2155,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.5-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.5-2.dsc' python3.13_3.13.5-2.dsc 3689 SHA512:f84a30129b9df85f4528f68f90e3f54d9624e353273b894b3f9bd2d39c760d59f0b784ffe4921985d60d460fb471bc8a45130cc0e5a6aa2a46609480ea3ba3bc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz' python3.13_3.13.5.orig.tar.xz 22856016 SHA512:2a058072e87b614b204bd1321b2bfa9c4b6614dbd5ded98dc0ee51c0d6b81504f902b7c003ad14295b371a37918f6975dc37d5a9c836dd9c30f8b086e4759193
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz.asc' python3.13_3.13.5.orig.tar.xz.asc 963 SHA512:07c1a2ec2d6ba2805680b7f1dc262fdc5dc3eec4503780ecdc08cd570ccbb5f1efa736ee03c83d36bdb33ce87db06be5892cf5a6eaf4018d5fe78fff99e615ae
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.5-2.debian.tar.xz' python3.13_3.13.5-2.debian.tar.xz 261860 SHA512:23af294f28a1cbcb540ca23cfd978a07a1b8ef90f3e1602db3d35a26433c936465534e7408ed800bf03c281f1a17a32c67d2200c463ea28f227deb1c670c9fd2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.5-2/
+
 
 ### `dpkg` source package: `readline=8.3-1`
 
@@ -2345,15 +2332,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6ubuntu1.dsc' sqlite3_3.46.1-6ubuntu1.dsc 2739 SHA512:263cb6f141211ca06d487bb2b5ffc734e93473e89e57bb6329652d1f32b684f0f967f504d025309b3b1fd4dd14e85f43f9d4392dab9f90fe31bda0205c7558b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-6ubuntu1.debian.tar.xz' sqlite3_3.46.1-6ubuntu1.debian.tar.xz 35556 SHA512:ba10b2713940f5fe26bbe5ceba04609ec7e5f88de8c2272b62cc574ba530d19c2f32feb5acfaaedf922290f3c37ee9e47f01ef80593280d124fb49c413b6ae81
-```
 
 ### `dpkg` source package: `subversion=1.14.5-3`
 
@@ -2406,14 +2387,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.7-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.7-1ubuntu1.dsc' systemd_257.7-1ubuntu1.dsc 8466 SHA512:d26a5545082fcc380f8c316965e854a8ca5cb5e3dffc5512945cbc4da20e1e5235c4cb7c8cf5e1113a255a76f04b6215047b120068fc6c873c826ea1b125b730
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.7.orig.tar.gz' systemd_257.7.orig.tar.gz 16327096 SHA512:fdc7c0153432b261ad8018c869dc714ce1d6d2a8428bdec46f7c5f120b196d3a553a375ae433f0c166c57b6e8b3c56549f585349b7b6ff83c2a86a32982d8411
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_257.7-1ubuntu1.debian.tar.xz' systemd_257.7-1ubuntu1.debian.tar.xz 245860 SHA512:c37c14c6bf4555452a5f5ed1486d16fec1c9b29aa472e89aa549fcbeb113e8f71956f31940402858aafc4c6350a5daf21eed7d28d150c42a776c6f0bcb852e91
-```
 
 ### `dpkg` source package: `sysvinit=3.14-4ubuntu1`
 
