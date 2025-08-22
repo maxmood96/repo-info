@@ -1,10 +1,10 @@
-# `tomee:10.1.0-jre17-Temurin-ubuntu-webprofile`
+# `tomee:10.1.1-jre17-Temurin-ubuntu-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d799f18e91a9ec1325f806ab343f2877abca4b34feaad40bc533c148846aeae9`
-- Created: `2025-06-27T00:04:37Z`
-- Virtual Size: ~ 331.94 Mb  
+- Image ID: `sha256:36482bf182e747beb3a75cb45dca8b4f5ae41036106abb8ec918978749a125f0`
+- Created: `2025-08-19T16:03:33Z`
+- Virtual Size: ~ 332.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.16+8`
-  - `TOMEE_VER=10.1.0`
+  - `TOMEE_VER=10.1.1`
   - `TOMEE_BUILD=webprofile`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`

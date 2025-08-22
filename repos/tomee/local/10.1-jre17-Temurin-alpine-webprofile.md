@@ -1,10 +1,10 @@
-# `tomee:10.1.0-jre17-Temurin-alpine-webprofile`
+# `tomee:10.1.1-jre17-Temurin-alpine-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3459037dda376ef438f07abe7cc26588fff806d8e3b6a613bf8af5b46b948f6`
-- Created: `2025-06-27T00:04:37Z`
-- Virtual Size: ~ 252.60 Mb  
+- Image ID: `sha256:7830822364aaa485ff060392d6d06349ecc52b640c2c92e95acf113972ee732e`
+- Created: `2025-08-19T16:03:33Z`
+- Virtual Size: ~ 252.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.16+8`
-  - `TOMEE_VER=10.1.0`
+  - `TOMEE_VER=10.1.1`
   - `TOMEE_BUILD=webprofile`
 
 ## `apk` (`.apk`-based packages)
