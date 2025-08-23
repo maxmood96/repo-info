@@ -1287,9 +1287,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.5.dsc' glib2.0_2.72.4-0ubuntu2.5.dsc 3670 SHA512:e91a30708fc42cdb8090f29c3bb9177cedbd443182c0cd408c8f911a7e2e2b7e68490a680e4faa57bd216b0e8f3f0df366e26bc8cd34949044c93c6751b53a5f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.5.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.5.debian.tar.xz 148384 SHA512:fd528b4ec420c6593e050d9725e1aee8996152539a48fabb8afb0211015561b8c09d46e61b56b689d536cde24fb7c86de13573c9436bef6ef43fbbf9c0103eaa
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.5.dsc' glib2.0_2.72.4-0ubuntu2.5.dsc 3670 SHA512:e91a30708fc42cdb8090f29c3bb9177cedbd443182c0cd408c8f911a7e2e2b7e68490a680e4faa57bd216b0e8f3f0df366e26bc8cd34949044c93c6751b53a5f
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.5.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.5.debian.tar.xz 148384 SHA512:fd528b4ec420c6593e050d9725e1aee8996152539a48fabb8afb0211015561b8c09d46e61b56b689d536cde24fb7c86de13573c9436bef6ef43fbbf9c0103eaa
 ```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.10`
@@ -5670,14 +5670,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.9.dsc' poppler_22.02.0-2ubuntu0.9.dsc 3360 SHA512:147177ea51012c683666c4df1d49c122409c35fc5b6fd48970e2c2236a0fa8281d8bf94dc5cdc55a9cb998f7c62eae96bbe0371e593f737a459a1911e38d6d1f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.9.debian.tar.xz' poppler_22.02.0-2ubuntu0.9.debian.tar.xz 45652 SHA512:ac71a6d80324803439910d90ad9e6e21f9b00a94b9ca6bbe8d1e9e4383b5909e160a54311d7fc03a311971a68b1b7524ce8cd27dfbad6ef6be23521c562e892e
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
@@ -5779,14 +5774,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.dsc' python3.10_3.10.12-1~22.04.10.dsc 3678 SHA512:acd9ae7832465e8cba6dda28c7030db90be64f53cdf28f568d97a5fe9676a60051d5ad3f0e931d513d016c2ea694158478ab27787e578d36aa3eddaad0d59c6a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.10.debian.tar.xz' python3.10_3.10.12-1~22.04.10.debian.tar.xz 252516 SHA512:1934075f6934e76289ce0db7203239fcec37f4f7fcb63fe3390b45ce47b893a6ef26c1cc53f16a3f14942aec7cb093a42f9204e518c24bbeddf31103a58697a7
-```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
@@ -6345,15 +6335,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.10.dsc' tiff_4.3.0-6ubuntu0.10.dsc 2402 SHA512:57c9cd8b73231e2f8d6f4377242e5bfb5d2401275db8216623a4dab98078d753525bb50131b34179ce30b0e29ad81a1ed21d17dc536f9926d005aa04a2fdcf77
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.10.debian.tar.xz' tiff_4.3.0-6ubuntu0.10.debian.tar.xz 50900 SHA512:77306a746064a74f326c232bbb7017cae9374b7596effae40234d1fef52fd6383a705b8ef0e76ca9c09795e54fc8a4a85ac1171324b535c3c4e28fee30153264
-```
 
 ### `dpkg` source package: `twolame=0.4.0-2build2`
 
