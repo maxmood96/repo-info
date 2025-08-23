@@ -1549,14 +1549,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.7.dsc' libxml2_2.9.13+dfsg-1ubuntu0.7.dsc 3030 SHA512:d95cd238ec1446e5d1346f4377650a3ee3cd508b305656bec7ad0b2033ee4cc9760084206e1f62f82abf393fc3cda22b592254ec6e2f6de41ed042b08ac5fa3f
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.7.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.7.debian.tar.xz 41080 SHA512:1ebdd8989b71aca15457264e746afed0a4b3bf1226fa6321743eb3b2eba50481be5c52d131dd030a1a0ba538774702e846d4b3648141590434733ea781f19165
-```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 
