@@ -1047,11 +1047,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.84.4-2
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.4-2.dsc' glib2.0_2.84.4-2.dsc 4963 SHA256:89b2a3567aad67d8da9c781aae9a79d3f78e370a10bececdaf524875bd04a475
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.4.orig-unicode-data.tar.xz' glib2.0_2.84.4.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.4.orig.tar.xz' glib2.0_2.84.4.orig.tar.xz 5618200 SHA256:8a9ea10943c36fc117e253f80c91e477b673525ae45762942858aef57631bb90
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.84.4-2.debian.tar.xz' glib2.0_2.84.4-2.debian.tar.xz 140072 SHA256:0064357458b263dbdffe9e39b8c5854d59e2fc7dabe78c6de1f0b476da80e1f1
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.4-2.dsc' glib2.0_2.84.4-2.dsc 4963 SHA256:89b2a3567aad67d8da9c781aae9a79d3f78e370a10bececdaf524875bd04a475
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.4.orig-unicode-data.tar.xz' glib2.0_2.84.4.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.4.orig.tar.xz' glib2.0_2.84.4.orig.tar.xz 5618200 SHA256:8a9ea10943c36fc117e253f80c91e477b673525ae45762942858aef57631bb90
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.84.4-2.debian.tar.xz' glib2.0_2.84.4-2.debian.tar.xz 140072 SHA256:0064357458b263dbdffe9e39b8c5854d59e2fc7dabe78c6de1f0b476da80e1f1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.84.4-2/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.84.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.84.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-12`
 
@@ -1191,20 +1197,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.14-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-2.dsc' graphite2_1.3.14-2.dsc 2568 SHA256:98ee6be2e35e2a4f7dbc71a21315399d59c4f79339cb832c6caccf8f62342d26
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-2.debian.tar.xz' graphite2_1.3.14-2.debian.tar.xz 14168 SHA256:dc46cc532a54adfc7ed5798061795120325bf0722221b2a6299f49c403ee9cd4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.14-2/
 
-- https://sources.debian.net/src/graphite2/1.3.14-2/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -1343,19 +1342,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.68
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.68.dsc' init-system-helpers_1.68.dsc 2209 SHA256:58bf10802cf5d2496059368948a80d4a49f768d27b918fbe6dc28353c6cda72c
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.68.tar.xz' init-system-helpers_1.68.tar.xz 45168 SHA256:cdf1c7fe87362a4e3f7446a95b75c29ca6071fda3911adb269508203cd3c458d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.68/
 
-- https://sources.debian.net/src/init-system-helpers/1.68/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.68/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.68/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.27-1`
 
@@ -3301,20 +3294,13 @@ Licenses: (parsed from: `/usr/share/doc/librtmp1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-2
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2.dsc' rtmpdump_2.4+20151223.gitfa8646d.1-2.dsc 2299 SHA256:a296819cd2ab5880b67ad963ef0867cb10e462f4403e52565aa863eb05bb1370
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1.orig.tar.gz' rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz 142213 SHA256:5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-2.debian.tar.xz 8096 SHA256:26d47de07d16285e4ca55b0828cbbf1ba35e671f9b3500a87e301fe755d26882
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-2/
 
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-2/ (for browsing the source)
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-3`
 
@@ -3377,13 +3363,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.25
-'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.25.dsc' sensible-utils_0.0.25.dsc 1718 SHA256:7d0deb8fca88c2e095a838b4ba2443c5c07f1501907b331a7ef051178c90a5a8
-'http://http.debian.net/debian/pool/main/s/sensible-utils/sensible-utils_0.0.25.tar.xz' sensible-utils_0.0.25.tar.xz 76132 SHA256:b905fcb981397db693bbcdda2ba9af712552a092f3bacd621112ccc98ddce4bd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sensible-utils/0.0.25/
+
 
 ### `dpkg` source package: `shadow=1:4.17.4-2`
 
@@ -3549,10 +3535,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tcl8.6=8.6.16+dfsg-1
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.16%2bdfsg-1.dsc' tcl8.6_8.6.16+dfsg-1.dsc 2120 SHA256:684b346f5012d23350f66916eaba4682cdd8e38dac5788543538a2857dab20ac
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.16%2bdfsg.orig.tar.gz' tcl8.6_8.6.16+dfsg.orig.tar.gz 7037224 SHA256:c3b6a803ea2e55cafa8b4b52546a6b3bb3722927dcf4bebe3a6549fd353702ea
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.16%2bdfsg-1.debian.tar.xz' tcl8.6_8.6.16+dfsg-1.debian.tar.xz 14472 SHA256:66060c7937da5bae2a6be123c1240b682ad285cba6853f1d5f2e5d6fb3d049b1
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.16%2bdfsg-1.dsc' tcl8.6_8.6.16+dfsg-1.dsc 2120 SHA256:684b346f5012d23350f66916eaba4682cdd8e38dac5788543538a2857dab20ac
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.16%2bdfsg.orig.tar.gz' tcl8.6_8.6.16+dfsg.orig.tar.gz 7037224 SHA256:c3b6a803ea2e55cafa8b4b52546a6b3bb3722927dcf4bebe3a6549fd353702ea
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.16%2bdfsg-1.debian.tar.xz' tcl8.6_8.6.16+dfsg-1.debian.tar.xz 14472 SHA256:66060c7937da5bae2a6be123c1240b682ad285cba6853f1d5f2e5d6fb3d049b1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tcl8.6/8.6.16+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/tcl8.6/8.6.16+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tcl8.6/8.6.16+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20180621-6`
 
@@ -3609,10 +3601,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tk8.6=8.6.16-1
-'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.16-1.dsc' tk8.6_8.6.16-1.dsc 2155 SHA256:963a9428610a4bbcd0b7d51bbc3eb6a6ba4aa0fe194e0da62a8b0a39ccb262a5
-'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.16.orig.tar.gz' tk8.6_8.6.16.orig.tar.gz 4591625 SHA256:be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe
-'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.16-1.debian.tar.xz' tk8.6_8.6.16-1.debian.tar.xz 10800 SHA256:fa4128d89bd5e80ed90bef0f015de5f3054aab301109eaef336847aa9aca7ac0
+'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.16-1.dsc' tk8.6_8.6.16-1.dsc 2155 SHA256:963a9428610a4bbcd0b7d51bbc3eb6a6ba4aa0fe194e0da62a8b0a39ccb262a5
+'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.16.orig.tar.gz' tk8.6_8.6.16.orig.tar.gz 4591625 SHA256:be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe
+'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.16-1.debian.tar.xz' tk8.6_8.6.16-1.debian.tar.xz 10800 SHA256:fa4128d89bd5e80ed90bef0f015de5f3054aab301109eaef336847aa9aca7ac0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tk8.6/8.6.16-1/ (for browsing the source)
+- https://sources.debian.net/src/tk8.6/8.6.16-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tk8.6/8.6.16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025b-4`
 
