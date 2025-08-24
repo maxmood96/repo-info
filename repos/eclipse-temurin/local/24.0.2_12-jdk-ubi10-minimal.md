@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8875fe38890fc8f86e4f56af3452b392bec92d5e5190f816765b6b274fa64f47`
+- Image ID: `sha256:31c2855c703de452d277448bbe798c822a6daa209b9f98d70e1db37cdc18f6a1`
 - Created: `2025-08-01T11:04:34Z`
 - Virtual Size: ~ 490.29 Mb  
   (total size of all layers on-disk)
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-24.0.2+12`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-08-07T17:00:12`
+  - `build-date=2025-08-20T20:31:46`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,10 +31,10 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10-minimal`
-  - `release=1754585875`
+  - `release=1755721767`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=465bf4251c2aa299ea79fe7ffa726f3ee5f73787`
+  - `vcs-ref=cd3580af593478ee5f4995800114032446965f74`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.0`
