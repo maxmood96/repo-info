@@ -1,10 +1,10 @@
-# `mongo:8.0.12-noble`
+# `mongo:8.0.13-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:91dcc14380635cc7184b14c4839d0e4cbb98ecc1ba92558b531dec565d8772df`
-- Created: `2025-07-23T22:01:30Z`
-- Virtual Size: ~ 908.49 Mb  
+- Image ID: `sha256:ac94e3ac917412d8a10edc7998b6738003623e7ef5a9a5cf3169e9cbff644f33`
+- Created: `2025-08-21T16:01:31Z`
+- Virtual Size: ~ 909.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.12`
+  - `MONGO_VERSION=8.0.13`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -1376,11 +1376,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20240123-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.debian.tar.xz' mawk_1.3.4.20240123-1build1.debian.tar.xz 15704 SHA512:53a4367656e29f5897ba29cf38b30e2b3a2758d990bbd3a90bdbceb5d3c467615496407af8bd437b4df2e9518096865b7ec6739b0465e8bba20d87ed71782268
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.12.2`
+### `dpkg` source package: `mongodb-database-tools=100.13.0`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.12.2`
+- `mongodb-database-tools=100.13.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1405,17 +1405,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.12`
+### `dpkg` source package: `mongodb-org=8.0.13`
 
 Binary Packages:
 
-- `mongodb-org=8.0.12`
-- `mongodb-org-database=8.0.12`
-- `mongodb-org-database-tools-extra=8.0.12`
-- `mongodb-org-mongos=8.0.12`
-- `mongodb-org-server=8.0.12`
-- `mongodb-org-shell=8.0.12`
-- `mongodb-org-tools=8.0.12`
+- `mongodb-org=8.0.13`
+- `mongodb-org-database=8.0.13`
+- `mongodb-org-database-tools-extra=8.0.13`
+- `mongodb-org-mongos=8.0.13`
+- `mongodb-org-server=8.0.13`
+- `mongodb-org-shell=8.0.13`
+- `mongodb-org-tools=8.0.13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
