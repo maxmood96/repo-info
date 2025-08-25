@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0554e0d7b7565568473eb09b84ced741e97003a3d922d0d845273263cc491a8f`
+- Image ID: `sha256:14457e3fd0c73db5b7dc1a6f3819ef447a5edf3d8a62376b7cfbbc41382d2a8d`
 - Created: `2025-08-13T20:35:19Z`
-- Virtual Size: ~ 189.50 Mb  
+- Virtual Size: ~ 189.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -437,16 +437,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.5-r0 description:
+libpq-17.6-r0 description:
 PostgreSQL client library
 
-libpq-17.5-r0 webpage:
+libpq-17.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.5-r0 installed size:
+libpq-17.6-r0 installed size:
 322 KiB
 
-libpq-17.5-r0 license:
+libpq-17.6-r0 license:
 PostgreSQL
 
 ```
