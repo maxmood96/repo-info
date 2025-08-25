@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:436b67e1b502ef92942a6cad068747f580ec55f50862038823d9c621c99caad7`
+- Image ID: `sha256:bd543beb91136a9034c275f5aad4151ff471a2fe4d88c44c835c7b6508fc1e82`
 - Created: `2025-05-28T17:53:13Z`
 - Virtual Size: ~ 367.02 Mb  
   (total size of all layers on-disk)
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-08-07T17:03:02`
+  - `build-date=2025-08-20T08:31:23`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1754586119`
+  - `release=1755678605`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=83292a4afb74b0c36b2dafbdbbdd30c6a678e393`
+  - `vcs-ref=171f11b52e43aee013fe4ef4c4caed923f25c5c1`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -679,11 +679,16 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-5.el9_6.x86_64`
+### `rpm` package: `libarchive-3.5.3-6.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.5.3-6.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-6.el9_6.src.rpm
+```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 
