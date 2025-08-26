@@ -1,16 +1,16 @@
-# `caddy:2.10.0-alpine`
+# `caddy:2.10.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ddf74dfb6187e856dab57d2bf87ab6ae10f093dd7ced7ec1f6d485eff7e7649`
-- Created: `2025-04-19T03:51:58Z`
-- Virtual Size: ~ 50.50 Mb  
+- Image ID: `sha256:572a72cdc384a6f6b8c1d99f569290cee6606bec3cca68812feba43bfda45028`
+- Created: `2025-08-23T03:19:59Z`
+- Virtual Size: ~ 53.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CADDY_VERSION=v2.10.0`
+  - `CADDY_VERSION=v2.10.2`
   - `XDG_CONFIG_HOME=/config`
   - `XDG_DATA_HOME=/data`
 - Labels:
@@ -21,23 +21,23 @@
   - `org.opencontainers.image.title=Caddy`
   - `org.opencontainers.image.url=https://caddyserver.com`
   - `org.opencontainers.image.vendor=Light Code Labs`
-  - `org.opencontainers.image.version=v2.10.0`
+  - `org.opencontainers.image.version=v2.10.2`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.8-r1 description:
+alpine-baselayout-3.7.0-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.8-r1 webpage:
+alpine-baselayout-3.7.0-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.8-r1 installed size:
-6532 B
+alpine-baselayout-3.7.0-r0 installed size:
+6441 B
 
-alpine-baselayout-3.6.8-r1 license:
+alpine-baselayout-3.7.0-r0 license:
 GPL-2.0-only
 
 ```
@@ -45,16 +45,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.8-r1 description:
+alpine-baselayout-data-3.7.0-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.8-r1 webpage:
+alpine-baselayout-data-3.7.0-r0 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.8-r1 installed size:
+alpine-baselayout-data-3.7.0-r0 installed size:
 18 KiB
 
-alpine-baselayout-data-3.6.8-r1 license:
+alpine-baselayout-data-3.7.0-r0 license:
 GPL-2.0-only
 
 ```
@@ -79,16 +79,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.4-r0 description:
+alpine-release-3.22.1-r0 description:
 Alpine release data
 
-alpine-release-3.21.4-r0 webpage:
+alpine-release-3.22.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.4-r0 installed size:
-346 B
+alpine-release-3.22.1-r0 installed size:
+343 B
 
-alpine-release-3.21.4-r0 license:
+alpine-release-3.22.1-r0 license:
 MIT
 
 ```
@@ -96,16 +96,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r3 description:
+apk-tools-2.14.9-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r3 webpage:
+apk-tools-2.14.9-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r3 installed size:
-247 KiB
+apk-tools-2.14.9-r2 installed size:
+68 KiB
 
-apk-tools-2.14.6-r3 license:
+apk-tools-2.14.9-r2 license:
 GPL-2.0-only
 
 ```
@@ -113,16 +113,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r12 description:
+busybox-1.37.0-r18 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r12 webpage:
+busybox-1.37.0-r18 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r12 installed size:
+busybox-1.37.0-r18 installed size:
 798 KiB
 
-busybox-1.37.0-r12 license:
+busybox-1.37.0-r18 license:
 GPL-2.0-only
 
 ```
@@ -130,16 +130,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r12 description:
+busybox-binsh-1.37.0-r18 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r12 webpage:
+busybox-binsh-1.37.0-r18 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r12 installed size:
+busybox-binsh-1.37.0-r18 installed size:
 1 B
 
-busybox-binsh-1.37.0-r12 license:
+busybox-binsh-1.37.0-r18 license:
 GPL-2.0-only
 
 ```
@@ -178,19 +178,36 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `libapk2`
+
+```console
+libapk2-2.14.9-r2 description:
+Alpine Package Keeper - package manager for alpine
+
+libapk2-2.14.9-r2 webpage:
+https://gitlab.alpinelinux.org/alpine/apk-tools
+
+libapk2-2.14.9-r2 installed size:
+179 KiB
+
+libapk2-2.14.9-r2 license:
+GPL-2.0-only
+
+```
+
 ### `apk` package: `libcap`
 
 ```console
-libcap-2.71-r0 description:
+libcap-2.76-r0 description:
 POSIX 1003.1e capabilities
 
-libcap-2.71-r0 webpage:
+libcap-2.76-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-2.71-r0 installed size:
+libcap-2.76-r0 installed size:
 0 B
 
-libcap-2.71-r0 license:
+libcap-2.76-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -198,16 +215,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap-getcap`
 
 ```console
-libcap-getcap-2.71-r0 description:
+libcap-getcap-2.76-r0 description:
 POSIX 1003.1e capabilities (getcap utility)
 
-libcap-getcap-2.71-r0 webpage:
+libcap-getcap-2.76-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-getcap-2.71-r0 installed size:
+libcap-getcap-2.76-r0 installed size:
 13 KiB
 
-libcap-getcap-2.71-r0 license:
+libcap-getcap-2.76-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -215,16 +232,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap-setcap`
 
 ```console
-libcap-setcap-2.71-r0 description:
+libcap-setcap-2.76-r0 description:
 POSIX 1003.1e capabilities (setcap utility)
 
-libcap-setcap-2.71-r0 webpage:
+libcap-setcap-2.76-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-setcap-2.71-r0 installed size:
+libcap-setcap-2.76-r0 installed size:
 13 KiB
 
-libcap-setcap-2.71-r0 license:
+libcap-setcap-2.76-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -232,16 +249,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap-utils`
 
 ```console
-libcap-utils-2.71-r0 description:
+libcap-utils-2.76-r0 description:
 POSIX 1003.1e capabilities (extra utils)
 
-libcap-utils-2.71-r0 webpage:
+libcap-utils-2.76-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-utils-2.71-r0 installed size:
+libcap-utils-2.76-r0 installed size:
 58 KiB
 
-libcap-utils-2.71-r0 license:
+libcap-utils-2.76-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -249,16 +266,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap2`
 
 ```console
-libcap2-2.71-r0 description:
+libcap2-2.76-r0 description:
 POSIX 1003.1e capabilities (libraries)
 
-libcap2-2.71-r0 webpage:
+libcap2-2.76-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap2-2.71-r0 installed size:
-51 KiB
+libcap2-2.76-r0 installed size:
+47 KiB
 
-libcap2-2.71-r0 license:
+libcap2-2.76-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -266,16 +283,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.4-r0 description:
+libcrypto3-3.5.1-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.4-r0 webpage:
+libcrypto3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.4-r0 installed size:
-4607 KiB
+libcrypto3-3.5.1-r0 installed size:
+5091 KiB
 
-libcrypto3-3.3.4-r0 license:
+libcrypto3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -283,16 +300,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.4-r0 description:
+libssl3-3.5.1-r0 description:
 SSL shared libraries
 
-libssl3-3.3.4-r0 webpage:
+libssl3-3.5.1-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.4-r0 installed size:
-779 KiB
+libssl3-3.5.1-r0 installed size:
+819 KiB
 
-libssl3-3.3.4-r0 license:
+libssl3-3.5.1-r0 license:
 Apache-2.0
 
 ```
@@ -317,16 +334,16 @@ Public Domain
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r9 description:
+musl-1.2.5-r10 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r9 webpage:
+musl-1.2.5-r10 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r9 installed size:
+musl-1.2.5-r10 installed size:
 646 KiB
 
-musl-1.2.5-r9 license:
+musl-1.2.5-r10 license:
 MIT
 
 ```
@@ -334,16 +351,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r9 description:
+musl-utils-1.2.5-r10 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r9 webpage:
+musl-utils-1.2.5-r10 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r9 installed size:
-102 KiB
+musl-utils-1.2.5-r10 installed size:
+54 KiB
 
-musl-utils-1.2.5-r9 license:
+musl-utils-1.2.5-r10 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -368,16 +385,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r12 description:
+ssl_client-1.37.0-r18 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r12 webpage:
+ssl_client-1.37.0-r18 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r12 installed size:
+ssl_client-1.37.0-r18 installed size:
 14 KiB
 
-ssl_client-1.37.0-r12 license:
+ssl_client-1.37.0-r18 license:
 GPL-2.0-only
 
 ```
