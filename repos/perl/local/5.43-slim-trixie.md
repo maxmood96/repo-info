@@ -1,13 +1,13 @@
-# `perl:5.43.1-slim`
+# `perl:5.43.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4468b04ba4ce18bdbbe8e88977f86290536de937a2efb8e2be9471eb4404b08`
-- Created: `2025-08-17T07:01:39Z`
-- Virtual Size: ~ 193.55 Mb  
+- Image ID: `sha256:a2d58bb804f911b3a3c40d492a0f618500418a2e6ce26fab1ac1b0d354992860`
+- Created: `2025-08-24T06:40:17Z`
+- Virtual Size: ~ 193.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.43.1","-de0"]`
+- Command: `["perl5.43.2","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
