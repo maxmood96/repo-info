@@ -76,11 +76,11 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 170.1 MB (170101071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7f7dfd7ba73a23de4a0f16fe221c9f2ffab59918cb4a453c83a23c48535ef99`  
-		Last Modified: Mon, 25 Aug 2025 20:56:14 GMT  
+		Last Modified: Tue, 26 Aug 2025 07:38:16 GMT  
 		Size: 173.1 MB (173149157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d26bec78cfe362d7950668b7c345c508873d02f90d2da488b85390d74be378e`  
-		Last Modified: Mon, 25 Aug 2025 20:56:13 GMT  
+		Last Modified: Tue, 26 Aug 2025 07:38:22 GMT  
 		Size: 85.5 MB (85547312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:907ae4af4af7e3a565483ab17c08c51442cc8c6411bdf14ed5c16948560a2a19`  
@@ -92,7 +92,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:58f179e83b73aeeb75a507c323d9fdcb424b17a9db36e09778fa56f29c4409fd`  
-		Last Modified: Mon, 25 Aug 2025 20:56:14 GMT  
+		Last Modified: Tue, 26 Aug 2025 07:38:31 GMT  
 		Size: 134.5 MB (134536045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -185,7 +185,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 168.4 MB (168390361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b3870377278625f9b67d7beb256080cec5b4e47609155e01c5191567f7bd120`  
-		Last Modified: Mon, 25 Aug 2025 23:11:41 GMT  
+		Last Modified: Tue, 26 Aug 2025 07:36:58 GMT  
 		Size: 171.2 MB (171230909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b92d607632844209877f17a16bb8e7ccba46e0337bbe11ed863ebe667b26c038`  
@@ -201,7 +201,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da14f4b943e9bff1ebcb8a7ab0ed345360a42c16333fd57eb21b3e80556af071`  
-		Last Modified: Mon, 25 Aug 2025 23:11:41 GMT  
+		Last Modified: Tue, 26 Aug 2025 07:40:09 GMT  
 		Size: 134.5 MB (134541971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
