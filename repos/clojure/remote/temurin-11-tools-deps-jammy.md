@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-jammy`
 
 ```console
-$ docker pull clojure@sha256:bdfa26879f1628af8c83681c453a928394f071f00693120808f36629d48f036e
+$ docker pull clojure@sha256:a94a51766176ee3c3903b2bc19a7e5bf68e9e6a83016a65d8940e13c18724181
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull clojure@sha256:bdfa26879f1628af8c83681c453a928394f071f00693120808f
 ### `clojure:temurin-11-tools-deps-jammy` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:5332c0e0d2e383bcc3c3725c979a57b7581a5554a6b24eb3bc0a3dd72f439355
+$ docker pull clojure@sha256:0202a22ca931a5752f81229f6ce978898e1b0fc1772df261c61225a927328e4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242164421 bytes)**  
+-	Total Size: **242.3 MB (242261500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16e2758689d69dbf88630916d9dc6dcb1f8be59da3396c527d44997d2913a52e`
+-	Image ID: `sha256:830d003d185f89a30ed5cff912d25355784c37ab328b9c5ffd01d467fee8beb6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -61,15 +61,15 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 01 Aug 2025 11:04:34 GMT
 CMD ["jshell"]
-# Sat, 16 Aug 2025 23:31:29 GMT
-ENV CLOJURE_VERSION=1.12.1.1561
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+ENV CLOJURE_VERSION=1.12.2.1565
+# Tue, 26 Aug 2025 17:11:52 GMT
 WORKDIR /tmp
-# Sat, 16 Aug 2025 23:31:29 GMT
-RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "b0328626c508af54c3eaf00cfb67e85d5215c6447b15c8ecc70fbe29ca95d64e *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "68442caaeaaa0780957953dfac11278e3991d3baeb22579fc582ed1b2d5cd152 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
+# Tue, 26 Aug 2025 17:11:52 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
 CMD ["clj"]
 ```
 
@@ -98,49 +98,49 @@ CMD ["clj"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbc2af6bb88b144d8f2f076193f3667060c41197b9e7babf77e4e7abcf60175a`  
-		Last Modified: Mon, 18 Aug 2025 16:52:15 GMT  
-		Size: 50.8 MB (50804500 bytes)  
+	-	`sha256:5eb9baaf4ae72597392610af169693eb2d3148c3cfbd9b245c4aedd5d67b1bbf`  
+		Last Modified: Tue, 26 Aug 2025 17:28:16 GMT  
+		Size: 50.9 MB (50901577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de8d719e83301d825a8e6a8b42ef6c127a6907110962b4fd61fd2101cd2b1d50`  
-		Last Modified: Mon, 18 Aug 2025 16:52:11 GMT  
-		Size: 612.0 B  
+	-	`sha256:6e958831d95d6bf1b7c8151140946f6b5c3dd46af38a0158b04d46878f2f9a1f`  
+		Last Modified: Tue, 26 Aug 2025 17:28:13 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:aa870900e437aa9976381f26359e1168ce644e48401ba71941ddda7d6dced878
+$ docker pull clojure@sha256:372bccd939b8eee09dfdf5f95f6c7fcb7708c94dbf7645c9b5d0af9447152bb6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.3 MB (6334370 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b117fc989650b7f064c2b6028f582cc4d5b25a0ab3db885c09e5880b894d7e9`
+-	Image ID: `sha256:a0c215f6a99d844b444f485dce23d66bc9f3a4d074d5341b68305ece0b51be47`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5a269b6ee393971cd4d82ca969fa1378882c2b9f59b1afc490ee33e69dca7d8e`  
-		Last Modified: Mon, 18 Aug 2025 18:35:37 GMT  
+	-	`sha256:038b27466e0faa444df0213bde00ee1323523043b24310f203a11be87ab1963a`  
+		Last Modified: Tue, 26 Aug 2025 18:35:36 GMT  
 		Size: 6.3 MB (6320820 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d784dbed8aacf02a4b7fe6775658e83affa403c20aeea1f3546ba6caecc810af`  
-		Last Modified: Mon, 18 Aug 2025 18:35:38 GMT  
+	-	`sha256:a8298fd15486f45cba6127f9df9905c7ff94ae0597d0ae7d328021cd0587ec35`  
+		Last Modified: Tue, 26 Aug 2025 18:35:37 GMT  
 		Size: 13.6 KB (13550 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d7e3efe3b73d1801b49c90afcea77a2524776de4fad95cb5457aaf76981258c7
+$ docker pull clojure@sha256:18834c94773e48ec6fb7e10b397786d556e0c7bc94d74a397b04a4cba7a59621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.6 MB (236639664 bytes)**  
+-	Total Size: **236.7 MB (236741026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcf6e0f22cd0018b63ede3216847ca4e28a68693586a216e4f57e589878a0e48`
+-	Image ID: `sha256:c1b872be1535a4a01c35750d1d4b297d89e7af773d05d236b11179b0b40a0f7b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -177,15 +177,15 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 01 Aug 2025 11:04:34 GMT
 CMD ["jshell"]
-# Sat, 16 Aug 2025 23:31:29 GMT
-ENV CLOJURE_VERSION=1.12.1.1561
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+ENV CLOJURE_VERSION=1.12.2.1565
+# Tue, 26 Aug 2025 17:11:52 GMT
 WORKDIR /tmp
-# Sat, 16 Aug 2025 23:31:29 GMT
-RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "b0328626c508af54c3eaf00cfb67e85d5215c6447b15c8ecc70fbe29ca95d64e *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "68442caaeaaa0780957953dfac11278e3991d3baeb22579fc582ed1b2d5cd152 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
+# Tue, 26 Aug 2025 17:11:52 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
 CMD ["clj"]
 ```
 
@@ -214,49 +214,49 @@ CMD ["clj"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3235181af54c2b52d21e11b6a576a9b49a8c24f13f0a17fc4078afb786ae9ffd`  
-		Last Modified: Mon, 18 Aug 2025 17:03:08 GMT  
-		Size: 50.7 MB (50749884 bytes)  
+	-	`sha256:85f979ea8fc904aff01ed09e82efc69c3bbe0b34fdb610c4eb727d9b9d68aeff`  
+		Last Modified: Tue, 26 Aug 2025 17:38:14 GMT  
+		Size: 50.9 MB (50851244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12d2de3d7d42f688f3d69cb78cbb82936b3f85cc1f795be48c97f3ad73a79c45`  
-		Last Modified: Mon, 18 Aug 2025 17:02:58 GMT  
-		Size: 614.0 B  
+	-	`sha256:f23a47c85a180d5ab6a40ac5c4f804355ab89afc7c4e5a10ea0972c430ca0845`  
+		Last Modified: Tue, 26 Aug 2025 17:38:05 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:187fb724803f3459b04f5d9d9c1e6cb8c6839ee470817f94bf4b9326324fbaea
+$ docker pull clojure@sha256:4a79b1574723028355d8e67ae13d0014841fcace3160ccd8f6ceb368ccce5e05
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.3 MB (6340846 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1a1499a0a050a34540d37e3f0aaff10fcf7c00f9d672c8c6c407ac1198a2d75`
+-	Image ID: `sha256:01c9a0c9318baed9dffcf0b3dc3ac09120a76bb5f084fce4740c27e4534d2e0f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:13a3b31621f75793eb70c9930016b2f8fe4786ef0abeb96eba2338158a3f47d0`  
-		Last Modified: Mon, 18 Aug 2025 18:35:43 GMT  
+	-	`sha256:9c4d8643cc173a0ec133a29d0f70df2fdb38532281e31f96fb3a40122227401d`  
+		Last Modified: Tue, 26 Aug 2025 18:35:43 GMT  
 		Size: 6.3 MB (6327204 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:658265f49f93e52c091d96014104169a912c2d2bfe4fff126696e78901f06047`  
-		Last Modified: Mon, 18 Aug 2025 18:35:45 GMT  
+	-	`sha256:d0136fb4d26ca6e1dd7661dd52b81875b677d2b76c8c3777e8a8d93f5b91fc1c`  
+		Last Modified: Tue, 26 Aug 2025 18:35:44 GMT  
 		Size: 13.6 KB (13642 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-jammy` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:2c68823dd128470a4ffec7712d4dab9d9ddb2b7dce1420791a070c108f431a0c
+$ docker pull clojure@sha256:64a02f75fe79d6e0d6f63e724fb63e3d62d474407d62f3d70c61cdfad61d8eeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.7 MB (239672588 bytes)**  
+-	Total Size: **239.8 MB (239770509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc8f5d185f094df4803cc8af397a48518269ef48324e32346ad8913574ccf269`
+-	Image ID: `sha256:166877f8e2d124d5b571d84923b88ff8427791c5cbc072aabe5eef4ce8b91282`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -293,15 +293,15 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 01 Aug 2025 11:04:34 GMT
 CMD ["jshell"]
-# Sat, 16 Aug 2025 23:31:29 GMT
-ENV CLOJURE_VERSION=1.12.1.1561
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+ENV CLOJURE_VERSION=1.12.2.1565
+# Tue, 26 Aug 2025 17:11:52 GMT
 WORKDIR /tmp
-# Sat, 16 Aug 2025 23:31:29 GMT
-RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "b0328626c508af54c3eaf00cfb67e85d5215c6447b15c8ecc70fbe29ca95d64e *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "68442caaeaaa0780957953dfac11278e3991d3baeb22579fc582ed1b2d5cd152 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
+# Tue, 26 Aug 2025 17:11:52 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
 CMD ["clj"]
 ```
 
@@ -330,49 +330,49 @@ CMD ["clj"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:417a46ee0065b2d021bd586c82eb7c753befa4944b8a0979df4b2e907f5bd03a`  
-		Last Modified: Mon, 18 Aug 2025 17:10:47 GMT  
-		Size: 54.7 MB (54739329 bytes)  
+	-	`sha256:8329a8da4a4cc12e0d209729d8260e91a283080b443f2567838efa8ea0854691`  
+		Last Modified: Tue, 26 Aug 2025 17:45:13 GMT  
+		Size: 54.8 MB (54837249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d725217f890eee4cd946fd17b0708dec9141aca4f743d0e1be06221bbad83442`  
-		Last Modified: Mon, 18 Aug 2025 17:10:40 GMT  
-		Size: 615.0 B  
+	-	`sha256:91f64d0d6cb9483d1432f2da8c4a6d72830bf5a1ea2330dfddc6d35e6ea07862`  
+		Last Modified: Tue, 26 Aug 2025 18:38:07 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4b4fee5109b37c38199ee26fadd19dcd8da85e63368ce9384391cbebfa71506b
+$ docker pull clojure@sha256:86b56c6e5ba019c536a668b32f72c6e9057dfd4a936229b39c8f005df02ac61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6339016 bytes)**  
+-	Total Size: **6.3 MB (6339015 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0c222196f0a455ded129ec7e2343d61f32b41e4a0ed85b2ed604b189901b501`
+-	Image ID: `sha256:e619d0aeaf8495c24315fce462e080201c3f6978b4fbb6b8cb7fee3530b2b41d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1fb3b12676f0fe2568df7474af6b149ae0227882f74ddbf86730f4c7c555de3`  
-		Last Modified: Mon, 18 Aug 2025 18:35:51 GMT  
+	-	`sha256:1a5c75a280209b235a52235c8198021f090de774aa2bbe56f9d573646c84a794`  
+		Last Modified: Tue, 26 Aug 2025 18:35:50 GMT  
 		Size: 6.3 MB (6325428 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:406f6ff737f45cbb5e8e17b871f2681e0dd088f32f81608185f8e1d3ad8d63f6`  
-		Last Modified: Mon, 18 Aug 2025 18:35:52 GMT  
-		Size: 13.6 KB (13588 bytes)  
+	-	`sha256:09860b586136b9f71a706179b010b51604e7dcf52baa9162981b9f76db277f0f`  
+		Last Modified: Tue, 26 Aug 2025 18:35:51 GMT  
+		Size: 13.6 KB (13587 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-jammy` - linux; s390x
 
 ```console
-$ docker pull clojure@sha256:5046509d9668e5adc10428de3efb9f816d870d34d4b95e418d966b695d54a0ac
+$ docker pull clojure@sha256:f0f3928367939beae6497fb21e6a97ca5b5a87f91f5de73c72287ae2acaf1114
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.6 MB (220603103 bytes)**  
+-	Total Size: **220.7 MB (220700365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df60f740e08ee518fa4cbe6ffb73306b315db4f15e97a9f6ff9cee0aac3d089e`
+-	Image ID: `sha256:0947d15d7050d0042726c425d5960daa550789778cdbf3ce20f4a0c70b6d606c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
@@ -409,15 +409,15 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 01 Aug 2025 11:04:34 GMT
 CMD ["jshell"]
-# Sat, 16 Aug 2025 23:31:29 GMT
-ENV CLOJURE_VERSION=1.12.1.1561
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+ENV CLOJURE_VERSION=1.12.2.1565
+# Tue, 26 Aug 2025 17:11:52 GMT
 WORKDIR /tmp
-# Sat, 16 Aug 2025 23:31:29 GMT
-RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "b0328626c508af54c3eaf00cfb67e85d5215c6447b15c8ecc70fbe29ca95d64e *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
+RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "68442caaeaaa0780957953dfac11278e3991d3baeb22579fc582ed1b2d5cd152 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
+# Tue, 26 Aug 2025 17:11:52 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Sat, 16 Aug 2025 23:31:29 GMT
+# Tue, 26 Aug 2025 17:11:52 GMT
 CMD ["clj"]
 ```
 
@@ -446,35 +446,35 @@ CMD ["clj"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b02da59c1c06ad531b7078ac81c92752225d3c4479b31940d0906570e0f9f5c`  
-		Last Modified: Mon, 18 Aug 2025 17:10:54 GMT  
-		Size: 50.8 MB (50810956 bytes)  
+	-	`sha256:804e7f5f8e368aa606e725388e1673c1c4042cab12aae1208f2fcffc48acffec`  
+		Last Modified: Tue, 26 Aug 2025 17:50:56 GMT  
+		Size: 50.9 MB (50908219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85b8855498213629578c9f7316ee4255e4a201b5ee2e269865f6b781926bb05a`  
-		Last Modified: Mon, 18 Aug 2025 17:10:45 GMT  
-		Size: 617.0 B  
+	-	`sha256:0910680076914917c60e955214bf015757c71f590bfa62ac551610c20c6e5f17`  
+		Last Modified: Tue, 26 Aug 2025 18:01:11 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:255e38693d3c20afeccc62d85956405ae5a6a1d1652aa3e546d5f9488dae4a00
+$ docker pull clojure@sha256:6f8fe356ba9e643fb7645cf6a57a88738b986812c4157a172da5a67405b2c071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.3 MB (6330297 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fec22bcbd53e52c2a4768a8b39dd4c33ae721f2e8ed32440f8ae4e5e41ceb0c`
+-	Image ID: `sha256:c15991a92810f4eaf57c46d2cd1d7e521f1e873dadf110bacb6f73fa5010ef6a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b8c9f46ab5000fdc662d68a07d9d8e019cab6cf1e39c809e412775e66ab4903`  
-		Last Modified: Mon, 18 Aug 2025 18:35:58 GMT  
+	-	`sha256:a31ee2a71a3530c14a5d6b8f3a8c7219eb3f07506c761bdb48529b4c3e18e48d`  
+		Last Modified: Tue, 26 Aug 2025 18:35:57 GMT  
 		Size: 6.3 MB (6316747 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1e28c314245e00d49adad2c6a72cf8a64922c21e4feef81d7a66cc6ddf6f0fa0`  
-		Last Modified: Mon, 18 Aug 2025 18:35:59 GMT  
+	-	`sha256:9f41dd29208ba0f8530b3d9981eb45e35a53e771b2e57bf39a0bb6e119f75cae`  
+		Last Modified: Tue, 26 Aug 2025 18:35:58 GMT  
 		Size: 13.6 KB (13550 bytes)  
 		MIME: application/vnd.in-toto+json
