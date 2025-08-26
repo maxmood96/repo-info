@@ -1150,15 +1150,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4t64/copyright`, `/usr/sha
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.24-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.24-2.dsc' gdbm_1.24-2.dsc 2466 SHA512:b25a2656224dc0e7703375a50cb58cb3cb8b63f89a3a2c2e749b96fb40ae989f06a169bb0655dddecbe3e39fe856e8f22022c0b253d9dca303475f4361541dc2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.24.orig.tar.gz' gdbm_1.24.orig.tar.gz 1195931 SHA512:401ff8c707079f21da1ac1d6f4714a87f224b6f41943078487dc891be49f51fd1ac7a32fd599aae0fad185f2c6ba7432616d328fd6aaab068eb54db9562ff7fa
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.24.orig.tar.gz.asc' gdbm_1.24.orig.tar.gz.asc 195 SHA512:c39d91aa6dee98851eac16b27a192300dab9545cff5e441d66a55a0939f1c6bc9e5ead0e96a48ef941f69d586b34d78e786d262d65e3b13ffe2c4f372d823fd6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.24-2.debian.tar.xz' gdbm_1.24-2.debian.tar.xz 16880 SHA512:bb98e8032f57a1dc33d34004e6b748a859aa465bd9fd6a592abe6d3ca09eedfebf05fbf0245d5c4eb01560ee0998f16016cd85ebc3367c25713795a9bab97a0f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdbm/1.24-2/
+
 
 ### `dpkg` source package: `gdk-pixbuf=2.42.12+dfsg-4build1`
 
@@ -3217,14 +3215,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.16.0-13.13
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.16.0-13.13.dsc' linux_6.16.0-13.13.dsc 8485 SHA512:1bd5fd4d3dc3ef6ff1effadfa8446d927ccae6b3166aa41f4da6ee2277a759dbe2178cb32ab029e3a9f71bde2c2eff856c5e269db0d8ea27fb5f31077e6aa74a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.16.0.orig.tar.gz' linux_6.16.0.orig.tar.gz 247360331 SHA512:abc1360664e5cce86228f64e34f1363aec712a9ac8f84cb0ac75df25fd68cb3d8ba3160aa616e3a78efb3616106ab0df2be0a43e215eda934490191e9bcd9b2b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.16.0-13.13.diff.gz' linux_6.16.0-13.13.diff.gz 1344358 SHA512:c4654e0034767fb8c0ee26b40412ac3f5b5f98561799528b68652f2cc8b43dc1006287754a5325a5e7d9bca39f1cbc1aced0c188049b8aa2d906de7c8b7bca52
-```
 
 ### `dpkg` source package: `lto-disabled-list=66`
 
@@ -3237,13 +3230,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=66
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_66.dsc' lto-disabled-list_66.dsc 1441 SHA512:55c3aeb78f8833afba4a69582fff5d2b9442614b98712a0f0f33f09897413681859087aae9fc499f898edf917c2cb45c7418ab8a123e19e01d5ce619907ea9f7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_66.tar.xz' lto-disabled-list_66.tar.xz 14112 SHA512:bcdda3952c24cdca24ef91a505d3ac4e430e9351b998083f72c5babcb22a22de3a977e53f6c5824817115bf17752d4252098f40667f5358fd27182c8dcd123b8
-```
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -3451,15 +3440,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.6-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.6-0ubuntu1.dsc' mysql-8.4_8.4.6-0ubuntu1.dsc 3768 SHA512:2fed917f226f5d5e61cb2848c7fa1ad1e54b922c376bee582d3e34748d1e0886849e3a295df27d42d172094db3b14e97273d1dfb8d8da92c545612a9a68798b1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.6.orig.tar.gz' mysql-8.4_8.4.6.orig.tar.gz 479211975 SHA512:2d498dc71eeede4368bd70fb1d1c012abd774732e341312f469afa3823c3b37489032b3290fa7531fb78c2b36251dbd1b8e1554c9330e18e56407f96fb8d4a1e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.6.orig.tar.gz.asc' mysql-8.4_8.4.6.orig.tar.gz.asc 833 SHA512:afcdbc55f74ad437f0811954c74edd9f203a527d35a6685407d13de8e0cadd511268064a92f3a05e7e05ecff0f81ba0341bab3a5897b5f6575af159626dd2e88
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.6-0ubuntu1.debian.tar.xz' mysql-8.4_8.4.6-0ubuntu1.debian.tar.xz 134908 SHA512:c5434013285e5255571e0a2a2d29fc1cc5924cff766c576e9873f1bb2f2981a7b9fd5a1808df42c4f37fdc7f85b2177a902906ca530928ea7bf8dda04ddab38f
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu1`
 
@@ -4160,14 +4143,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GPL-3+`
 - `ISC-no-attribution`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3-1.dsc' readline_8.3-1.dsc 2817 SHA512:f5fca4244cb1809000664f3d8bf2519406bbe69d690fa933026adc07eef3904012600a2be060688024532f7b1c7ad0757342dfc694313a14a6c7e372050192ee
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3.orig.tar.gz' readline_8.3.orig.tar.gz 3419642 SHA512:513002753dcf5db9213dbbb61d51217245f6a40d33b1dd45238e8062dfa8eef0c890b87a5548e11db959e842724fb572c4d3d7fb433773762a63c30efe808344
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.3-1.debian.tar.xz' readline_8.3-1.debian.tar.xz 33652 SHA512:26e48c406faddd88a65278f03a39061953aa319f1a1c846036254e42dc156b644f509006d1313b61c00c40e5749bc4028e554ed8f65810d4c018d5869292bb26
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.3-1/
+
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.3-1`
 
@@ -4514,14 +4496,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.7.0-3ubuntu1.dsc' tiff_4.7.0-3ubuntu1.dsc 2368 SHA512:20e569ac16dc7a043dd000fbb0dd10afdd0dfb436e362663ec0c592514fd0e8362ba5f5b11abcc3d7ae063d30715f0bec63ac7ffbc1dd335d1658b522cee7912
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA512:6d6f39727a4403ffaae390d54f1d7a6ff926085480422cbc4e2168e8e6490bf283e69361860d0ca0d7951543f48be550641b76d814c24a1b4e4bff1da9e27c6d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.7.0-3ubuntu1.debian.tar.xz' tiff_4.7.0-3ubuntu1.debian.tar.xz 24196 SHA512:f9b88223c96b3b8a92d56b2162cc6131b9656fa74c4ceb266b9cc1b9d8bfaea9b9a7d5c325640354b5c8294d422c485dee04d5787836eaa0a7df63fab375934b
-```
 
 ### `dpkg` source package: `tzdata=2025b-3ubuntu1`
 
