@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf931a6e3af1c2b9abaa6a5f47be2093d38195e0bf5353150f63e921a13cc2e4`
-- Created: `2025-08-03T12:21:02Z`
-- Virtual Size: ~ 188.65 Mb  
+- Image ID: `sha256:86beaeb08a93662c70ce13476bd835381e9002d19088312db06f7bc2cb21feaf`
+- Created: `2025-08-25T10:38:05Z`
+- Virtual Size: ~ 188.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -211,15 +211,15 @@ $ dnf --quiet download --source --url crypto-policies-scripts-20250128-1.git5269
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/crypto-policies-20250128-1.git5269e22.el9.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-31.el9.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-31.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-31.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/curl-7.76.1-31.el9.src.rpm
+$ dnf --quiet download --source --url curl-minimal-7.76.1-31.el9_6.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/curl-7.76.1-31.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-21.el9.x86_64`
@@ -409,37 +409,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-16.el9_6.2
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glib2-2.68.4-16.el9_6.2.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-168.el9_6.20.x86_64`
+### `rpm` package: `glibc-2.34-168.el9_6.23.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-168.el9_6.20
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.20.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-168.el9_6.23
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.23.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-168.el9_6.20.x86_64`
+### `rpm` package: `glibc-common-2.34-168.el9_6.23.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.20
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.20.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-168.el9_6.23
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.23.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.20.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-168.el9_6.23.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.20
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.20.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-168.el9_6.23
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/glibc-2.34-168.el9_6.23.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -624,15 +624,15 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-5.el9_6.x86_64`
+### `rpm` package: `libarchive-3.5.3-6.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-5.el9_6
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libarchive-3.5.3-5.el9_6.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-6.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libarchive-3.5.3-6.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -712,15 +712,15 @@ $ dnf --quiet download --source --url libcomps-0.1.18-1.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libcomps-0.1.18-1.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-31.el9.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-31.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-31.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/curl-7.76.1-31.el9.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-31.el9_6.1
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/curl-7.76.1-31.el9_6.1.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
@@ -1086,15 +1086,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-11.el9_6.x86_64`
+### `rpm` package: `libxml2-2.9.13-12.el9_6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-11.el9_6
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libxml2-2.9.13-11.el9_6.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-12.el9_6
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/libxml2-2.9.13-12.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1152,26 +1152,26 @@ $ dnf --quiet download --source --url mpfr-4.1.0-7.el9
 http://vault.almalinux.org/9.6/BaseOS/Source/Packages/mpfr-4.1.0-7.el9.src.rpm
 ```
 
-### `rpm` package: `ncurses-base-6.2-10.20210508.el9.noarch`
+### `rpm` package: `ncurses-base-6.2-10.20210508.el9_6.2.noarch`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ncurses-base-6.2-10.20210508.el9.noarch
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/ncurses-6.2-10.20210508.el9.src.rpm
+$ dnf --quiet download --source --url ncurses-base-6.2-10.20210508.el9_6.2.noarch
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/ncurses-6.2-10.20210508.el9_6.2.src.rpm
 ```
 
-### `rpm` package: `ncurses-libs-6.2-10.20210508.el9.x86_64`
+### `rpm` package: `ncurses-libs-6.2-10.20210508.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ncurses-libs-6.2-10.20210508.el9
-http://vault.almalinux.org/9.6/BaseOS/Source/Packages/ncurses-6.2-10.20210508.el9.src.rpm
+$ dnf --quiet download --source --url ncurses-libs-6.2-10.20210508.el9_6.2
+http://vault.almalinux.org/9.6/BaseOS/Source/Packages/ncurses-6.2-10.20210508.el9_6.2.src.rpm
 ```
 
 ### `rpm` package: `nettle-3.10.1-1.el9.x86_64`

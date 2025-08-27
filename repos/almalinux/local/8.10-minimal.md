@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f12b6866ee9194bb2f61e296f36739d2b43cee778ffccb1c90ad1ad17bb3271`
-- Created: `2025-08-03T12:37:12Z`
+- Image ID: `sha256:616757b3d9f2180c4b18d331496199c09090c066f65a1559f9a062d08ac88f37`
+- Created: `2025-08-25T10:50:21Z`
 - Virtual Size: ~ 93.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -200,37 +200,37 @@ $ dnf --quiet download --source --url glib2-2.56.4-166.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glib2-2.56.4-166.el8_10.src.rpm
 ```
 
-### `rpm` package: `glibc-2.28-251.el8_10.22.x86_64`
+### `rpm` package: `glibc-2.28-251.el8_10.25.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.28-251.el8_10.22
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.22.src.rpm
+$ dnf --quiet download --source --url glibc-2.28-251.el8_10.25
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.25.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.28-251.el8_10.22.x86_64`
+### `rpm` package: `glibc-common-2.28-251.el8_10.25.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.22
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.22.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.25
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.25.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.22.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.25.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.22
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.22.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.25
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.25.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.1.2-11.el8.x86_64`
@@ -377,15 +377,15 @@ $ dnf --quiet download --source --url libacl-2.2.53-3.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/acl-2.2.53-3.el8.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.3.3-5.el8.x86_64`
+### `rpm` package: `libarchive-3.3.3-6.el8_10.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.3.3-5.el8
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libarchive-3.3.3-5.el8.src.rpm
+$ dnf --quiet download --source --url libarchive-3.3.3-6.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libarchive-3.3.3-6.el8_10.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.1-3.el8.x86_64`
@@ -784,15 +784,15 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-21.el8_10.2.x86_64`
+### `rpm` package: `libxml2-2.9.7-21.el8_10.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.2
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.2.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.3
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.3.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
