@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bdcfe17d6c09e7cd87542c7db022d2ee634ad66f7c0689895f421c90df7852e0`
+- Image ID: `sha256:a63dcd00e0aa850e21f2a3c884e44675483dc8612a426ef9a7f715477f49910d`
 - Created: `2025-07-18T19:06:54Z`
-- Virtual Size: ~ 452.72 Mb  
+- Virtual Size: ~ 452.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -990,15 +990,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.13.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.14.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.13
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/4cd906fa6d6a5fa24ed68859f614e68e716e54217863e833b2343247383ca428/python-2.7.18-1.amzn2.0.13.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.14
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/c55218e92e1a02ee7ac3aa8e3531e26727579df5479ae06fe232ec72028442bb/python-2.7.18-1.amzn2.0.14.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1012,15 +1012,15 @@ $ dnf --quiet download --source --url python-iniparse-0.4-9.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/c44ed4bc8040ce8e74624bd74404387f1c5320ee6b6d975a81e358ab7919b11a/python-iniparse-0.4-9.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.13.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.14.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.13
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/4cd906fa6d6a5fa24ed68859f614e68e716e54217863e833b2343247383ca428/python-2.7.18-1.amzn2.0.13.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.14
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/c55218e92e1a02ee7ac3aa8e3531e26727579df5479ae06fe232ec72028442bb/python-2.7.18-1.amzn2.0.14.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
@@ -1144,15 +1144,15 @@ $ dnf --quiet download --source --url shared-mime-info-1.8-4.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/9e51e9ed398518c869e22c71a6cf809d331622958224ced40e8ebf31bf5e810f/shared-mime-info-1.8-4.amzn2.src.rpm
 ```
 
-### `rpm` package: `sqlite-3.7.17-8.amzn2.1.2.x86_64`
+### `rpm` package: `sqlite-3.7.17-8.amzn2.1.3.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-3.7.17-8.amzn2.1.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/5ada8c006d0e919d9a1fcdc513c897787b875dcd0143ca89aae582983119f1d6/sqlite-3.7.17-8.amzn2.1.2.src.rpm
+$ dnf --quiet download --source --url sqlite-3.7.17-8.amzn2.1.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/4e689052b4f4d507477ab52809204a00a0935bd34d4632e14d62ef99f4c97054/../../../../../blobstore/d42470d85cacfffb16c2c7985980f10429f71b1b8a0c1f28b873abfb426b51c3/sqlite-3.7.17-8.amzn2.1.3.src.rpm
 ```
 
 ### `rpm` package: `system-release-2-17.amzn2.x86_64`
