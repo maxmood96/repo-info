@@ -1,9 +1,9 @@
-# `mongo:6.0.25-jammy`
+# `mongo:6.0.26-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c16ee05bd511afe3c2364b69a20a70959160382c19bf18d4a54cac716a10c78f`
-- Created: `2025-07-17T22:01:10Z`
+- Image ID: `sha256:93600587b81b51470ee6525eb6471cb7af43c7d5381dc428744906ccf24e5deb`
+- Created: `2025-08-25T22:01:20Z`
 - Virtual Size: ~ 764.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=6.0`
-  - `MONGO_VERSION=6.0.25`
+  - `MONGO_VERSION=6.0.26`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1292,11 +1292,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-3.debian.tar.xz' mawk_1.3.4.20200120-3.debian.tar.xz 7520 SHA512:bc4f5401de313108595ba91b17f44b5c67d7650b5557eef8a6c63c75e2ccee5dfd8900576d7e81f0ab1ac2e570f64fa75f38f56f6d4535437c803029216501af
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.12.2`
+### `dpkg` source package: `mongodb-database-tools=100.13.0`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.12.2`
+- `mongodb-database-tools=100.13.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1321,17 +1321,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=6.0.25`
+### `dpkg` source package: `mongodb-org=6.0.26`
 
 Binary Packages:
 
-- `mongodb-org=6.0.25`
-- `mongodb-org-database=6.0.25`
-- `mongodb-org-database-tools-extra=6.0.25`
-- `mongodb-org-mongos=6.0.25`
-- `mongodb-org-server=6.0.25`
-- `mongodb-org-shell=6.0.25`
-- `mongodb-org-tools=6.0.25`
+- `mongodb-org=6.0.26`
+- `mongodb-org-database=6.0.26`
+- `mongodb-org-database-tools-extra=6.0.26`
+- `mongodb-org-mongos=6.0.26`
+- `mongodb-org-server=6.0.26`
+- `mongodb-org-shell=6.0.26`
+- `mongodb-org-tools=6.0.26`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
