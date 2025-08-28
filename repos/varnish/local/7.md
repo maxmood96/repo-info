@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f7c434bc96a63601b4b65c5ba041cefbbdf421a7e223570b0c07e9934f43dc9`
-- Created: `2025-08-25T17:58:49Z`
+- Image ID: `sha256:a9149788935ee7f82ce6b5e85b8fe271a8ad3f040a1fd168f41fd5596e7929c5`
+- Created: `2025-08-26T14:45:42Z`
 - Virtual Size: ~ 300.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2351,11 +2351,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `varnish=7.7.2`
+### `dpkg` source package: `varnish=7.7.3`
 
 Binary Packages:
 
-- `varnish=7.7.2`
+- `varnish=7.7.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
