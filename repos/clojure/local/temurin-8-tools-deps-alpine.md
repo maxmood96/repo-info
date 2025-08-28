@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a60cbbfe7ed5545320362f8667f2747c63a20f3d934dc9dd374edd8618aa90b8`
-- Created: `2025-08-16T23:31:29Z`
-- Virtual Size: ~ 224.92 Mb  
+- Image ID: `sha256:9d1a510e4b0bbb4a35e662329f28a9110439157fd546953caae62c439d5405ad`
+- Created: `2025-08-26T17:11:52Z`
+- Virtual Size: ~ 225.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u462-b08`
-  - `CLOJURE_VERSION=1.12.1.1561`
+  - `CLOJURE_VERSION=1.12.2.1565`
 
 ## `apk` (`.apk`-based packages)
 
