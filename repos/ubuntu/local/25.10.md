@@ -222,13 +222,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`, `/usr/share/doc/co
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils-from=0.0.0~ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu3.dsc' coreutils-from_0.0.0~ubuntu3.dsc 1976 SHA512:8021ec61d1110891f048e658d6a0ad5f631b3945aabda0668cbd4719f1328757ab3ba89f6b8a119fd1a4e8d477f011e3efdeb2a6851d4d564a85539632a3310a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu3.tar.xz' coreutils-from_0.0.0~ubuntu3.tar.xz 5388 SHA512:1abbc5bf6a7f708effd682e6c6366d95e1cb22998c80bfd169168503ce8792d5deccbff2a3e7e2b023e0d50cd64a5a2c466dc60d7eb2a6431819023b430ddf03
-```
 
 ### `dpkg` source package: `coreutils=9.5-1ubuntu2`
 
@@ -250,8 +246,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris coreutils=9.5-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu3.dsc' coreutils-from_0.0.0~ubuntu3.dsc 1976 SHA512:8021ec61d1110891f048e658d6a0ad5f631b3945aabda0668cbd4719f1328757ab3ba89f6b8a119fd1a4e8d477f011e3efdeb2a6851d4d564a85539632a3310a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu3.tar.xz' coreutils-from_0.0.0~ubuntu3.tar.xz 5388 SHA512:1abbc5bf6a7f708effd682e6c6366d95e1cb22998c80bfd169168503ce8792d5deccbff2a3e7e2b023e0d50cd64a5a2c466dc60d7eb2a6431819023b430ddf03
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.dsc' coreutils-from_0.0.0~ubuntu20.dsc 1958 SHA512:57339181d6513f890a2f22d3135ec597cf428a35c821afaf2c5fdb044868f93e73cd8b84442c69adc43f48c10d9416ec5b0511031cdc4ccef8e8f54c8dabfd13
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.tar.xz' coreutils-from_0.0.0~ubuntu20.tar.xz 6888 SHA512:5fecf0936829a7bf375a241511ce88a98fec455499ffe63737e937d8625a89e0431eb3a063a4236c49a19995c16632cc8ff9d489f535b0fc2b0af14f2235c78d
 ```
 
 ### `dpkg` source package: `dash=0.5.12-12ubuntu1`
