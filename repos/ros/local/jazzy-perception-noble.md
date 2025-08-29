@@ -2722,15 +2722,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.24.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.2.dsc' gst-plugins-base1.0_1.24.2-1ubuntu0.2.dsc 4113 SHA512:0f3ad02abd5221d849dd77c5584893ac9bb6d7b3196eb5be817953ad582dcc2086b3fd1ae1be01f36c506224bf38859cc30a3f6632baded4455507f69f1459c6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2.orig.tar.xz' gst-plugins-base1.0_1.24.2.orig.tar.xz 2421032 SHA512:8b4ffbbf427859c4d8ba889034b00ea8314e4357645c788f6b52d65a512ce76fa1840f2a4fd562d92b213ad9dc9636db44de289bc56600ae19bce39e156b1579
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2.orig.tar.xz.asc' gst-plugins-base1.0_1.24.2.orig.tar.xz.asc 833 SHA512:996a9c50facd6d6b4e9496874320fcb1aa374b0ec0a14b9945238b7e233f933856f3b91cc332da2f1e246c870f51373b3d1b9de455bd3d70e51b5a32be429f70
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.24.2-1ubuntu0.2.debian.tar.xz 55932 SHA512:ebf69ae8e359c5f1c00cb6e022089611d707be57a654ac28f01ed9fdb1ea6b0d0c0d8608d56b7e31820940376836019e236599a408f5f1617bb580b5dd66c13f
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.24.2-1ubuntu0.1`
 
