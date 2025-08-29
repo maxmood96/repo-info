@@ -1,10 +1,10 @@
-# `matomo:5.3.2-fpm-alpine`
+# `matomo:5.4.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0cb2d9782fbc25eba48fb270e2ad9c4aa42fdeb2889cc7fd26d3b7749f0adcac`
-- Created: `2025-05-02T14:44:13Z`
-- Virtual Size: ~ 167.47 Mb  
+- Image ID: `sha256:a5ff4affb538548fc577eec5436c1a9868d0e31b8e4fc84c815f18766bde1dde`
+- Created: `2025-08-28T21:23:07Z`
+- Virtual Size: ~ 178.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -16,13 +16,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.24.tar.xz.asc`
-  - `PHP_SHA256=388ee5fd111097e97bae439bff46aec4ea27f816d3f0c2cb5490a41410d44251`
+  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
+  - `PHP_VERSION=8.4.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.12.tar.xz.asc`
+  - `PHP_SHA256=c1b7978cbb5054eed6c749bde4444afc16a3f2268101fb70a7d5d9b1083b12ad`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.3.2`
+  - `MATOMO_VERSION=5.4.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -352,16 +352,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.2-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -539,16 +539,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.2-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.2-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -692,16 +692,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.2-r0 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.2-r0 license:
 Apache-2.0
 
 ```
