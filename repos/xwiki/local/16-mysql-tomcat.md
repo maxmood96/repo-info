@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51456ea3713f1fa599f0a71a2b785712358fe9e577f878728c1aecb0d889df6f`
-- Created: `2025-07-31T08:06:53Z`
+- Image ID: `sha256:044dd305a51697971f0ddbbdadd898c5456a809e166819b34e1358621efc46a3`
+- Created: `2025-08-28T16:09:51Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,14 +22,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.108`
   - `TOMCAT_SHA512=243474cd54d8589c97f2db964b13b36920500a298b190370a8c58306db786bb30101c33d9ca85eddd8014c5d7f53fec1685beeb4fb7f3037ffcc2f4124c6c6b7`
-  - `XWIKI_VERSION=16.10.10`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.10`
-  - `XWIKI_DOWNLOAD_SHA256=85dee4db22bb98bde66c4f7b379251f2d86f6ac3e6e92449e3b79a921e0192fd`
-  - `MYSQL_JDBC_VERSION=9.3.0`
-  - `MYSQL_JDBC_SHA256=6c8e6692b521376d89bc5618c16cdeaf8c61854329f4fa25677ed08776c5bb76`
-  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0`
-  - `MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.3.0.jar`
-  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.3.0.jar`
+  - `XWIKI_VERSION=16.10.11`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.11`
+  - `XWIKI_DOWNLOAD_SHA256=9c1d464e35ed8f58f7b47213220db7528cd10732a7428eb9f7ee7c29adc83bbd`
+  - `MYSQL_JDBC_VERSION=9.4.0`
+  - `MYSQL_JDBC_SHA256=49ed93c8b2bea9cb0929b85a8a28837b191d0f8eac6919fdcef16e36e2cd53b3`
+  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.4.0`
+  - `MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.4.0.jar`
+  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.4.0.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -1248,11 +1248,11 @@ $ apt-get source -qq --print-uris grep=3.11-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.11-4build1.debian.tar.xz' grep_3.11-4build1.debian.tar.xz 20584 SHA512:212c903c240071dda1d8e966991908730af26746558078262aa32b6b0683487cb510d9b9a2c40cafb31024e78e2c74d17eb5681e329aa142b0921b88cacef7eb
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.24.2-1ubuntu0.2`
+### `dpkg` source package: `gst-plugins-base1.0=1.24.2-1ubuntu0.3`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.24.2-1ubuntu0.2`
+- `libgstreamer-plugins-base1.0-0:amd64=1.24.2-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1266,11 +1266,11 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.24.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.2.dsc' gst-plugins-base1.0_1.24.2-1ubuntu0.2.dsc 4113 SHA512:0f3ad02abd5221d849dd77c5584893ac9bb6d7b3196eb5be817953ad582dcc2086b3fd1ae1be01f36c506224bf38859cc30a3f6632baded4455507f69f1459c6
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.24.2-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.3.dsc' gst-plugins-base1.0_1.24.2-1ubuntu0.3.dsc 4113 SHA512:6e3d08f96eb814fb623804a9ee5e3051057ea312fa35a0090c556f425a6c095676042bd8e0c719d7959e426f3df79cf097f2dab57abff34f43440d997219ce50
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2.orig.tar.xz' gst-plugins-base1.0_1.24.2.orig.tar.xz 2421032 SHA512:8b4ffbbf427859c4d8ba889034b00ea8314e4357645c788f6b52d65a512ce76fa1840f2a4fd562d92b213ad9dc9636db44de289bc56600ae19bce39e156b1579
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2.orig.tar.xz.asc' gst-plugins-base1.0_1.24.2.orig.tar.xz.asc 833 SHA512:996a9c50facd6d6b4e9496874320fcb1aa374b0ec0a14b9945238b7e233f933856f3b91cc332da2f1e246c870f51373b3d1b9de455bd3d70e51b5a32be429f70
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.24.2-1ubuntu0.2.debian.tar.xz 55932 SHA512:ebf69ae8e359c5f1c00cb6e022089611d707be57a654ac28f01ed9fdb1ea6b0d0c0d8608d56b7e31820940376836019e236599a408f5f1617bb580b5dd66c13f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.3.debian.tar.xz' gst-plugins-base1.0_1.24.2-1ubuntu0.3.debian.tar.xz 57212 SHA512:69318ed81bde1a8765f64aefa58680c17571444a82260646d27bed3a6f9086438c6f543286b0f80cee3624d00fb248377970302fb829538790da2fcbdedc1d5f
 ```
 
 ### `dpkg` source package: `gstreamer1.0=1.24.2-1ubuntu0.1`
@@ -2861,20 +2861,25 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.4-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.4-3build1.diff.gz' libxinerama_1.1.4-3build1.diff.gz 8639 SHA512:d2a13c86831e6fdc23f6f02a4afa8cd7e0d404a87805d793085cb9b59171fe7dd8f74eee8cd2a4c471802dfd24bf4effe2cf6514032066ee20ce663a8d3555f8
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.3`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.4`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.3`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.4.dsc 2433 SHA512:d72484f67416d641edc0c2398d1f01608721eacbe6ac203627c890ea8f058c0d0b4e707f556b1afa1b1a35997df24854e8b9f471f1294d9d183062bab8b0e22a
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.4.debian.tar.xz 42392 SHA512:e2bfb8bbc48b548fad245b57950d53bb0df78113704b9889b0bbfa89acfd304c169c3a1635e33651722c771a3352b7bdeff20f97fd851496027db6dfcfbcfbf0
+```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`
 
@@ -3520,11 +3525,11 @@ $ apt-get source -qq --print-uris pixman=0.42.2-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.42.2-1build1.diff.gz' pixman_0.42.2-1build1.diff.gz 327276 SHA512:a07846ba47b3f3407e43aefee37efe6265445a8c1e81589a715f175e426ed2a75822cce7545ac94bb368c3eecaaa2ccd7b0c7944aba9b51f0e939403b2f57d1e
 ```
 
-### `dpkg` source package: `poppler=24.02.0-1ubuntu9.5`
+### `dpkg` source package: `poppler=24.02.0-1ubuntu9.6`
 
 Binary Packages:
 
-- `libpoppler134:amd64=24.02.0-1ubuntu9.5`
+- `libpoppler134:amd64=24.02.0-1ubuntu9.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 
@@ -3532,9 +3537,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.dsc' poppler_24.02.0-1ubuntu9.6.dsc 3940 SHA512:2734aba7c7f5882969aca55d0530fefd9e013e4facad1235040aef5678946d6c238e87f514a2a62047af6b5dbbd03591917c2ad968b92dbe2d60bfb8a98e1226
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.debian.tar.xz' poppler_24.02.0-1ubuntu9.6.debian.tar.xz 43112 SHA512:eb41467b5506a10b5cd5743e221470871c733ae1b66904db75eb6ce307b2185bf684f1a0fe7f519760516090d9eacce7250ac6a3497cb213ac0cb94eee43b92f
+```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
@@ -3581,15 +3591,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.7`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.8`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.7`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.7`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.7`
-- `python3.12=3.12.3-1ubuntu0.7`
-- `python3.12-minimal=3.12.3-1ubuntu0.7`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.8`
+- `python3.12=3.12.3-1ubuntu0.8`
+- `python3.12-minimal=3.12.3-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3611,9 +3621,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.dsc' python3.12_3.12.3-1ubuntu0.8.dsc 3920 SHA512:6ec5347db2f302907e401ac4bafc9f884d7f94ebd2d5972f98d0f239121d115fe50cbcc632be12bb31e40cabf26e81e91cba4a92f6f573b4902ed2413a0c2948
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.debian.tar.xz' python3.12_3.12.3-1ubuntu0.8.debian.tar.xz 257268 SHA512:36a58735bef1d2f760403ff898d75f4802d30badcf32ab041fb64e4c8bb0c9cc48de1dfc87f576192c6e03b9128ee50a8609975c7185cb573b51eb4d781036f3
+```
 
 ### `dpkg` source package: `raptor2=2.0.16-3ubuntu0.1`
 
@@ -3938,19 +3953,24 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
 ```
 
-### `dpkg` source package: `tiff=4.5.1+git230720-4ubuntu2.2`
+### `dpkg` source package: `tiff=4.5.1+git230720-4ubuntu2.3`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.5.1+git230720-4ubuntu2.2`
+- `libtiff6:amd64=4.5.1+git230720-4ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.3.dsc' tiff_4.5.1+git230720-4ubuntu2.3.dsc 2313 SHA512:1517204b6d0bcf8dd73d7c5a503f35355673505250660fb6759b9094e39cb8aef760d36a7dab0b1e025152e9df02f786e59f90cf275986e2958d248f57da2c48
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA512:6bf9653f5c65d17c2944b20d14a5d5ab3b89d461bc6eb935a54aa8df99ce7221aeb2172f06b44affd06d81aeaab5698b90b07fde883167d0abf51debaaa6f71b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.3.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.3.debian.tar.xz 31524 SHA512:1f2c2e2dfd22dcf77f74ceeec0c880e50560ef6469e18aab380e27f1eb503ca58c1c654605775be21499d758c4cdd89bcc8a18d95391de89fa0096b029572e3e
+```
 
 ### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04.1`
 
