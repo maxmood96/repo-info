@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aac1d52ff2f0ffcc7a45e71d1caa6c24b756f3772b040b7165e2757f70c0f0ae`
-- Created: `2025-08-14T23:05:41Z`
+- Image ID: `sha256:0c7eb8906f06d9f253cda45b7311fb3c22e2971fe9a63109cf6d24038018f9b5`
+- Created: `2025-08-27T23:04:59Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.6.0`
+  - `NODE_VERSION=24.7.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3761,20 +3761,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.dsc' libxml2_2.9.14+dfsg-1.3~deb12u2.dsc 2610 SHA256:d6f39c8c5fc3d86a53fd7a977c89b0e83913e4d73c230d77cb36dde5a9bc5a73
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u2.debian.tar.xz 39296 SHA256:da8c62b2137dac24d6cc2d4634c85db5314fc3cc89661bace8974a4966ab6a64
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1`
 
