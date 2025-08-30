@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:696231506286d07a559e16ec766f9788d2802d64bc4c5145d76271db1fa10ecb`
+- Image ID: `sha256:f95d41ea09b6bb5c48cc585b251528e1e6c5015e03931d9764882b2d9833928b`
 - Created: `2025-05-17T11:19:45Z`
-- Virtual Size: ~ 98.83 Mb  
+- Virtual Size: ~ 104.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.11`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.11.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.11.tar.xz.asc`
-  - `PHP_SHA256=04cd331380a8683a5c2503938eb51764d48d507c53ad4208d2c82e0eed779a00`
+  - `PHP_VERSION=8.4.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.12.tar.xz.asc`
+  - `PHP_SHA256=c1b7978cbb5054eed6c749bde4444afc16a3f2268101fb70a7d5d9b1083b12ad`
   - `ADMINER_VERSION=5.3.0`
   - `ADMINER_DOWNLOAD_SHA256=7dcc196e941b18b74635afe1740dcd86970ab08b8eba0f00f149925aea3972ed`
   - `ADMINER_SRC_DOWNLOAD_SHA256=b929336214ab94583dc35e7d492879d1de6e3ab75888a2ad2c86166651f2c6d8`
@@ -319,16 +319,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.2-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -404,16 +404,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.5-r0 description:
+libpq-17.6-r0 description:
 PostgreSQL client library
 
-libpq-17.5-r0 webpage:
+libpq-17.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.5-r0 installed size:
+libpq-17.6-r0 installed size:
 322 KiB
 
-libpq-17.5-r0 license:
+libpq-17.6-r0 license:
 PostgreSQL
 
 ```
@@ -455,16 +455,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.2-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.2-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -591,16 +591,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.2-r0 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.2-r0 license:
 Apache-2.0
 
 ```
