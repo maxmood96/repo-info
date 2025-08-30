@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d47cd654c2639cc0669e2d2565bf5ee51433f0b7eb0dcfb45355704e11c90966`
+- Image ID: `sha256:1a5edd1c27851fd5e574426e154486f44e0d1ad6c291ba40e22a34ce803dbd02`
 - Created: `2025-03-03T18:37:38Z`
-- Virtual Size: ~ 592.32 Mb  
+- Virtual Size: ~ 592.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.24.tar.xz.asc`
-  - `PHP_SHA256=388ee5fd111097e97bae439bff46aec4ea27f816d3f0c2cb5490a41410d44251`
+  - `PHP_VERSION=8.3.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.25.tar.xz.asc`
+  - `PHP_SHA256=187b61bb795015adacf53f8c55b44414a63777ec19a776b75fb88614506c0d37`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
@@ -1998,20 +1998,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u2
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.dsc' libxml2_2.9.14+dfsg-1.3~deb12u2.dsc 2610 SHA256:d6f39c8c5fc3d86a53fd7a977c89b0e83913e4d73c230d77cb36dde5a9bc5a73
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u2.debian.tar.xz 39296 SHA256:da8c62b2137dac24d6cc2d4634c85db5314fc3cc89661bace8974a4966ab6a64
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.4+dfsg2-5`
 
