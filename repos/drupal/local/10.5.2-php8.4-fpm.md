@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e13fc18333106fc945fa4a358884894b6b3d9ffe16ffa9476ef0d6ea5feef6a0`
+- Image ID: `sha256:a16041c74d50cd9308a83dab9477eb04e8f30f2bdac819e5332e1702500bec25`
 - Created: `2025-08-13T20:35:19Z`
-- Virtual Size: ~ 599.99 Mb  
+- Virtual Size: ~ 600.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.11`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.11.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.11.tar.xz.asc`
-  - `PHP_SHA256=04cd331380a8683a5c2503938eb51764d48d507c53ad4208d2c82e0eed779a00`
+  - `PHP_VERSION=8.4.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.12.tar.xz.asc`
+  - `PHP_SHA256=c1b7978cbb5054eed6c749bde4444afc16a3f2268101fb70a7d5d9b1083b12ad`
   - `DRUPAL_VERSION=10.5.2`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -2093,11 +2093,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.38-1`
+### `dpkg` source package: `linux=6.12.41-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.38-1`
+- `linux-libc-dev=6.12.41-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2111,17 +2111,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.38-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.38-1.dsc' linux_6.12.38-1.dsc 219407 SHA256:9f4a7aaebf36acdebb649d0936ee4cb27ef61029e99999f517cff9ebbe12d4b3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.38.orig.tar.xz' linux_6.12.38.orig.tar.xz 151129260 SHA256:8c89ced59bbd40280ddbe51e50114e2cf7b665104e16116949bd205c17371c0d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.38-1.debian.tar.xz' linux_6.12.38-1.debian.tar.xz 1665920 SHA256:7f5e17a2422fdbc34cc1ff64b97c475499d82a7e454ca3fc469767cf5670ff5b
+$ apt-get source -qq --print-uris linux=6.12.41-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.dsc' linux_6.12.41-1.dsc 219407 SHA256:65bbf4e35635465326c9470605da1886ce3d3cf7e2a6d93392c4c6245d895b34
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.41.orig.tar.xz' linux_6.12.41.orig.tar.xz 151148292 SHA256:78afa637ca891174c22b332e4c1f87cf6aaa81861a6cca3b529e861843fa2fd3
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.41-1.debian.tar.xz' linux_6.12.41-1.debian.tar.xz 1672664 SHA256:b62680107fc155ad3d2c421ba0af1d5848812674fe767fcd40ba81a414e4ce2a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.38-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.38-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.38-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.41-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.41-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.41-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
