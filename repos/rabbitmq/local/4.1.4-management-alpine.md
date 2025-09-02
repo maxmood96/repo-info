@@ -1,10 +1,10 @@
-# `rabbitmq:4.1.3-management-alpine`
+# `rabbitmq:4.1.4-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:13886f236d0652dadd5d602ffa779e97e609e3ca037fc7e6f65b80a2d4fda8ab`
+- Image ID: `sha256:cdea9836df9c6dda1b884f7e66b4b9159041ecde5e1e7768e0bd214f7a5cb6d6`
 - Created: `2025-04-15T17:26:54Z`
-- Virtual Size: ~ 200.84 Mb  
+- Virtual Size: ~ 196.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.1.3`
+  - `RABBITMQ_VERSION=4.1.4`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
