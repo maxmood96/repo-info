@@ -1,7 +1,7 @@
 ## `clojure:temurin-24-tools-deps-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:b05ec1e8566da76cd259b7a87d99a3524ac98e83f01a09619c22c9c492e162b6
+$ docker pull clojure@sha256:675d32bfa74d739de6890d6e7fa7b07accf96c31f2656f91a26e62f56286d1ba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -108,13 +108,13 @@ $ docker pull clojure@sha256:d53f24edc3e772489733659c1a7def170b636c4d0ce5b1a6419
 ### `clojure:temurin-24-tools-deps-trixie-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:aafd0b580bbf84593e20f095854e71caa4e0c939d65c4788c500e44f7a2fad91
+$ docker pull clojure@sha256:45343a0ee2ccf8f60ff49d72e3993ea544c302d80de4a7fd8c0337a31667e90d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.0 MB (191033243 bytes)**  
+-	Total Size: **191.0 MB (191033411 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c853b4fc46f913fa3c8f5979040089f1dfab9831424a5f769dee3bab8e29c30d`
+-	Image ID: `sha256:ca09d9a0466153fd8f75886ff1cdbbeca038ea35c8f8ff05588eb5dfd76ccb7a`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -148,48 +148,48 @@ CMD ["-M" "--repl"]
 		Last Modified: Tue, 12 Aug 2025 22:12:42 GMT  
 		Size: 30.1 MB (30136044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebe54333b06ad8dc6a1c19356b2654e06d357097398ccfe7bcc23b46b25aca1b`  
-		Last Modified: Mon, 18 Aug 2025 17:25:14 GMT  
-		Size: 89.1 MB (89092501 bytes)  
+	-	`sha256:48cf18e4aa179c876b57ad40859d22f558c7a7074a32428d68128a6c35e022f1`  
+		Last Modified: Tue, 02 Sep 2025 08:26:35 GMT  
+		Size: 89.1 MB (89092502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:432e489d4777f64036ef55d59490f9cdca26a201ab682742854572244a16b1bc`  
-		Last Modified: Tue, 26 Aug 2025 17:59:07 GMT  
-		Size: 71.8 MB (71803654 bytes)  
+	-	`sha256:fe5086f6a8b95de7731f8e09041c1116a55b1961a172fddd5bbbadae10b7dd92`  
+		Last Modified: Tue, 02 Sep 2025 08:32:31 GMT  
+		Size: 71.8 MB (71803824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3c6f7ab409941e185c29ab3bd060e825a11db4cb6fb8efffefaccc9c5cb6fcf`  
-		Last Modified: Tue, 26 Aug 2025 17:58:56 GMT  
-		Size: 615.0 B  
+	-	`sha256:33950eed80bded20eadf6ddb98157ca16abe65b4f29235027144491657cae648`  
+		Last Modified: Tue, 02 Sep 2025 08:32:07 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e63a0f205a7516d2859b9e9459ed964dda9038a7cda1e233e603dff006e2519`  
-		Last Modified: Tue, 26 Aug 2025 17:58:56 GMT  
-		Size: 397.0 B  
+	-	`sha256:7562b1bab1c3b969545580ee522d038ca8431bb1692959b01f49751e7d9ae89b`  
+		Last Modified: Tue, 02 Sep 2025 08:32:10 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-24-tools-deps-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:18c0a50e45cd73738202c7c7bf6a0113157e5ef7a592da2ae1ad49b977e48552
+$ docker pull clojure@sha256:37e0e0c0a0ae1e676db2b0f810308327d75451aa53df855de413dfa8a981e6bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5227617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb24945a92b9347949d8e66d9b7a0bbe70275237a844f3086153d69db8e2035c`
+-	Image ID: `sha256:43f2ca3761c1afefcb2a61c9b527bafd43cbf149553dd535173830ee4bdc5ee8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1df14bd68222f5c79aaf51a403e88e6f324b8a790f53b9f03ebd0b2c2bbb719`  
-		Last Modified: Tue, 26 Aug 2025 18:43:12 GMT  
+	-	`sha256:fe21ed0eb83c933e4589344c43f64a04310a38beb25a93d4aaf33a191faae50b`  
+		Last Modified: Tue, 02 Sep 2025 09:43:54 GMT  
 		Size: 5.2 MB (5211651 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe98071523545ab8248cf53257d917533ec297ddd1b68499a9af9d0c03a86a24`  
-		Last Modified: Tue, 26 Aug 2025 18:43:13 GMT  
+	-	`sha256:9db158523b4673728d833d1eb79f4c002335bc468a9cc0a4a575e7ca1b9e0e0d`  
+		Last Modified: Tue, 02 Sep 2025 09:43:55 GMT  
 		Size: 16.0 KB (15966 bytes)  
 		MIME: application/vnd.in-toto+json
 
