@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:044dd305a51697971f0ddbbdadd898c5456a809e166819b34e1358621efc46a3`
+- Image ID: `sha256:89aee015541720c42db337a35492beb4d5aef83711cf7723cfd5f926250bfced`
 - Created: `2025-08-28T16:09:51Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
@@ -233,19 +233,23 @@ $ apt-get source -qq --print-uris avahi=0.8-13ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.debian.tar.xz' avahi_0.8-13ubuntu6.debian.tar.xz 49216 SHA512:df3e81c6276601ab4f3bd0e0f886f0a4107c14c07b9d3cc655820d602038d5e1fbfa1c6dd9d711fd524fa0f5661ece64425658c50e672fc3ef090f8f89b86367
 ```
 
-### `dpkg` source package: `base-files=13ubuntu10.2`
+### `dpkg` source package: `base-files=13ubuntu10.3`
 
 Binary Packages:
 
-- `base-files=13ubuntu10.2`
+- `base-files=13ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=13ubuntu10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.dsc' base-files_13ubuntu10.3.dsc 1377 SHA512:616eacb8d3217d4c3e8a57f5f3561411933ffdf680a4161cdf96cc39494f093933667d59263e77db92725ccfbf22fbbc60f0b6c94fce853a3e15d5e046e8b3fb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.tar.xz' base-files_13ubuntu10.3.tar.xz 94184 SHA512:9fe21ced2bbb578c164f7cd60e6068a7b66d5e62848b6e7b2ea5670fba48d692a0ab477210bbcc92e41ce16b4ae589784c7168979b5b2727a16c4d1df5f8b22b
+```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
