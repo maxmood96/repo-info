@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-tools-deps-1.12.2.1565-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:31b16c84a0491b3538b2880b65b788f397540bb6b4ef13380dbeafd2041fc292
+$ docker pull clojure@sha256:9430285475424be5a61faf326994b4efbd8942faab31158e0c707c68803366f0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:31b16c84a0491b3538b2880b65b788f397540bb6b4ef13380db
 ### `clojure:temurin-8-tools-deps-1.12.2.1565-bullseye-slim` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:88ef7c398477dd6a98c5fc5bc08d310c9f7cbce79131b927486e5648a75d5627
+$ docker pull clojure@sha256:73c313535ddd8d5a9d2c2ffec026a3dc22be2e9a01bf5b6a406c1d0719c6ab66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.1 MB (144138988 bytes)**  
+-	Total Size: **144.1 MB (144138887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8a05a1311aa8209babd8008b933ec61919b80ad4bb486c7354f430c81e3fc8`
+-	Image ID: `sha256:a043ac9a38a88aa17f23d325daa7bfc70ac72bff20ba1d4833bd3d5cda4f9d5d`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -49,45 +49,45 @@ CMD ["clj"]
 		Last Modified: Tue, 12 Aug 2025 20:44:40 GMT  
 		Size: 30.3 MB (30256118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:798468f59a8358e8e1375320cbce3c4533f21e325c5ab5dd98712ad914b25a53`  
-		Last Modified: Tue, 26 Aug 2025 20:06:33 GMT  
-		Size: 54.7 MB (54731324 bytes)  
+	-	`sha256:e67111f2fd459835eab76012251688fc4aaba02a8fab10c84aff3241acc6d988`  
+		Last Modified: Tue, 02 Sep 2025 00:16:52 GMT  
+		Size: 54.7 MB (54731353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:273cc022573d5f5febefae7438b49c2e393c78e4cf0bef75e00e59889ddb00cc`  
-		Last Modified: Tue, 26 Aug 2025 20:06:25 GMT  
-		Size: 59.2 MB (59150899 bytes)  
+	-	`sha256:376af917ed7e4da63d2e442440ecd39ebb2aa66e4c58d8869d652eb8023a3b98`  
+		Last Modified: Tue, 02 Sep 2025 00:16:52 GMT  
+		Size: 59.2 MB (59150771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89aca9072844d3843c542588825555f4b625ff87568d60faf1507bc3bcac560c`  
-		Last Modified: Tue, 26 Aug 2025 20:06:21 GMT  
-		Size: 615.0 B  
+	-	`sha256:c1c6fab67105b013b4dc541d8f4e0a4f6364e62b73eb7a0f5c5776ffd89c4787`  
+		Last Modified: Tue, 02 Sep 2025 02:32:05 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-tools-deps-1.12.2.1565-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:7cfd62f5057142ab015c71e547cef7cae027171a4ca464fd192025eafe8cb529
+$ docker pull clojure@sha256:ca663a7300debc6bac0f612cf1d03a30a6f96d21cb78f947e5a8ffebc4a53f3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5443968 bytes)**  
+-	Total Size: **5.4 MB (5443967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f6ce717dfe2690dcc2ba4b14bf7bb5e72d1f07490831c2dadf33347876c30de`
+-	Image ID: `sha256:6ef2e89cad5dda2265fd58b0b8d8516d7cffd8cce40e456c52c5fc338d83cc18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:752270d41a48ff438d6e7d295b236e2f84ef98018ef10ee243803268a78c8758`  
-		Last Modified: Tue, 26 Aug 2025 18:44:38 GMT  
+	-	`sha256:07ce417326f873c121bf114f62937c402ace91e3f815eb8039651442bb86118a`  
+		Last Modified: Tue, 02 Sep 2025 03:45:27 GMT  
 		Size: 5.4 MB (5429677 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3a629f1afdeb002509046df7b92f57edd7c0179c081fc8ef90733a4bab2932be`  
-		Last Modified: Tue, 26 Aug 2025 18:44:39 GMT  
-		Size: 14.3 KB (14291 bytes)  
+	-	`sha256:064e89c870ca4be3d5cac29df22a57f5c12161081eb9a563eea77a3dc128147a`  
+		Last Modified: Tue, 02 Sep 2025 03:45:29 GMT  
+		Size: 14.3 KB (14290 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-tools-deps-1.12.2.1565-bullseye-slim` - linux; arm64 variant v8

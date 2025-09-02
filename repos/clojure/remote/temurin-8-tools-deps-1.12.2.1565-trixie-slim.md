@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-tools-deps-1.12.2.1565-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:711fd2319e668de5e6000848bf2095784492d9d4810ca893792e4fdd8a848490
+$ docker pull clojure@sha256:2d95c8f1ca0f041e63cab29fdb1ca1fc2c2e2d59e4e6d4bde17f59ce192c9290
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull clojure@sha256:711fd2319e668de5e6000848bf2095784492d9d4810ca893792
 ### `clojure:temurin-8-tools-deps-1.12.2.1565-trixie-slim` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:1ffce34f2f7a18faaf66e2d30933c22afa708ac6e2e5f15c81822913850ea4ca
+$ docker pull clojure@sha256:be7dbafdc6a07447384158032b8cd2b4c4ba952da123ff9cfc1caaf7717b1473
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.5 MB (156487032 bytes)**  
+-	Total Size: **156.5 MB (156487985 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d03b17d8dc02a48d89c6f6d535b701f3395c1b73decca8dc182a57745f257325`
+-	Image ID: `sha256:76b67e96a4ce5326dcf29225591e8c3c8b0237bcba23771eeeba423149aca61c`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -51,45 +51,45 @@ CMD ["clj"]
 		Last Modified: Tue, 12 Aug 2025 20:45:08 GMT  
 		Size: 29.8 MB (29773285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c16a28dc03ae97576a29ced1841d537d098ad1be02f31c6826de510d07fbcd1f`  
-		Last Modified: Tue, 26 Aug 2025 17:28:10 GMT  
-		Size: 54.7 MB (54731324 bytes)  
+	-	`sha256:b5a4e0713c1c0b870472979bde305efa29d921decfab2c962b1c3f46d1562023`  
+		Last Modified: Tue, 02 Sep 2025 00:16:57 GMT  
+		Size: 54.7 MB (54731323 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7245a7439965e115c4f4dcb7f1b42c69d57dda326232c6eca32ce034ed1553cd`  
-		Last Modified: Tue, 26 Aug 2025 17:28:17 GMT  
-		Size: 72.0 MB (71981777 bytes)  
+	-	`sha256:d7869ab945edd40d0dcd3d3fbae535592077b5b9fe1879c317a2a5402f12a4ed`  
+		Last Modified: Tue, 02 Sep 2025 00:16:59 GMT  
+		Size: 72.0 MB (71982730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5a3ed18f1b1212b3412902c838c14d74e8a7aadefe0945ae31776651da44366`  
-		Last Modified: Tue, 26 Aug 2025 17:28:00 GMT  
-		Size: 614.0 B  
+	-	`sha256:66d66b4dcdd47fd024afddbab028db780116171c23e69bf24870e12f2976340e`  
+		Last Modified: Tue, 02 Sep 2025 01:00:28 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-tools-deps-1.12.2.1565-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:296cf62650d4bbb1c8c0979cda84c5296fe745bf51de20d81ee0a2a612b5a38a
+$ docker pull clojure@sha256:d079af20fa629a79ba94d4346879529821b4c968ec33cecb5cc80e5b70307196
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5391117 bytes)**  
+-	Total Size: **5.4 MB (5391118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:671d73cf8906193da7cc85887669a2ce70de083125fecbdadd49b85e7200987e`
+-	Image ID: `sha256:b97cea394aae6069311f046f11e5aa2d791e091c99c059c1dbb7fd2f7e51669e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1fb2e7221010d431d88d4cbd930264cbf47b26aa9cb6405c3f9cf80b5e0417b9`  
-		Last Modified: Tue, 26 Aug 2025 18:45:07 GMT  
+	-	`sha256:c6d82d7d4faf96e88f26bc362e19c3bc02b2dcf1edaa373a75a98c3701f2bd49`  
+		Last Modified: Tue, 02 Sep 2025 03:46:47 GMT  
 		Size: 5.4 MB (5376847 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de786c33b4813a038b648751398fcf8a8fa98e7c5a5fd53ac7a1fbece585e283`  
-		Last Modified: Tue, 26 Aug 2025 18:45:09 GMT  
-		Size: 14.3 KB (14270 bytes)  
+	-	`sha256:1dbf5ca6b7933188285fc3aa47cbe57e75030f951534a8886e6afb4eae602649`  
+		Last Modified: Tue, 02 Sep 2025 03:46:48 GMT  
+		Size: 14.3 KB (14271 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-tools-deps-1.12.2.1565-trixie-slim` - linux; arm64 variant v8
