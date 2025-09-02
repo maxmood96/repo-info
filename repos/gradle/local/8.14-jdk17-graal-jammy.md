@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:47794d7d9d44c1d931c991caca97fadc158f7b9e4fea347b200b92e3e2f7971d`
+- Image ID: `sha256:e1488dff978ceb19fc08ea039275f08aeb2ddf4c95fc895e72a8d4e5dd7a9a75`
 - Created: `2025-07-17T03:50:10Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
@@ -737,16 +737,16 @@ $ apt-get source -qq --print-uris freetype=2.11.1+dfsg-1ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg-1ubuntu0.3.debian.tar.xz' freetype_2.11.1+dfsg-1ubuntu0.3.debian.tar.xz 42292 SHA512:068774dbcbd393912de1b89323f856121269e2031e662e8473372b1849e7b3d26714f2eb9d7623b49136c7b448b3267959f2c158557fbf771ef294ea799097dc
 ```
 
-### `dpkg` source package: `gcc-11=11.4.0-1ubuntu1~22.04`
+### `dpkg` source package: `gcc-11=11.4.0-1ubuntu1~22.04.2`
 
 Binary Packages:
 
-- `cpp-11=11.4.0-1ubuntu1~22.04`
-- `gcc-11=11.4.0-1ubuntu1~22.04`
-- `gcc-11-base:amd64=11.4.0-1ubuntu1~22.04`
-- `libasan6:amd64=11.4.0-1ubuntu1~22.04`
-- `libgcc-11-dev:amd64=11.4.0-1ubuntu1~22.04`
-- `libtsan0:amd64=11.4.0-1ubuntu1~22.04`
+- `cpp-11=11.4.0-1ubuntu1~22.04.2`
+- `gcc-11=11.4.0-1ubuntu1~22.04.2`
+- `gcc-11-base:amd64=11.4.0-1ubuntu1~22.04.2`
+- `libasan6:amd64=11.4.0-1ubuntu1~22.04.2`
+- `libgcc-11-dev:amd64=11.4.0-1ubuntu1~22.04.2`
+- `libtsan0:amd64=11.4.0-1ubuntu1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-11/copyright`, `/usr/share/doc/gcc-11/copyright`, `/usr/share/doc/gcc-11-base/copyright`, `/usr/share/doc/libasan6/copyright`, `/usr/share/doc/libgcc-11-dev/copyright`, `/usr/share/doc/libtsan0/copyright`)
 
@@ -757,24 +757,29 @@ Licenses: (parsed from: `/usr/share/doc/cpp-11/copyright`, `/usr/share/doc/gcc-1
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-11=11.4.0-1ubuntu1~22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0-1ubuntu1%7e22.04.2.dsc' gcc-11_11.4.0-1ubuntu1~22.04.2.dsc 22819 SHA512:794b7324e8fa7e99b4ed0101d7235e43c074db7b53a3d5d18fd0450736c52347d801052ea41d8f99d4db676b25b73766c21529b41f858038f370d74c0b665b17
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0.orig.tar.gz' gcc-11_11.4.0.orig.tar.gz 86949353 SHA512:c6fd2066dd230c7b4d4db75bb414dca062eb7f0565c8ea531183a51abd75c229ac0badeb5a959a09fc1a35de4ce5282cdb8142fe356f567da1fa50b1525983a5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.4.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-11_11.4.0-1ubuntu1~22.04.2.debian.tar.xz 554168 SHA512:4ff7ebfaa903a9c317a1171b2940ab23082a40d08b501bd56127735ca6ad9c85a9377866b4f39839575d58998498717f73c92bad707f1f35ebfdbdf5b9e056ad
+```
 
-### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04`
+### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.2`
 
 Binary Packages:
 
-- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04`
-- `libatomic1:amd64=12.3.0-1ubuntu1~22.04`
-- `libcc1-0:amd64=12.3.0-1ubuntu1~22.04`
-- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04`
-- `libgomp1:amd64=12.3.0-1ubuntu1~22.04`
-- `libitm1:amd64=12.3.0-1ubuntu1~22.04`
-- `liblsan0:amd64=12.3.0-1ubuntu1~22.04`
-- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04`
-- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04`
-- `libubsan1:amd64=12.3.0-1ubuntu1~22.04`
+- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libatomic1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libcc1-0:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgomp1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libitm1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `liblsan0:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libubsan1:amd64=12.3.0-1ubuntu1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
@@ -788,7 +793,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
+$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.dsc' gcc-12_12.3.0-1ubuntu1~22.04.2.dsc 27845 SHA512:4189e457350c0a6f43a4c9b96df4d4cea23ad97b18c7b5592b7a1e27e66cedb30c03e2d71c1496be2157e38900344bcd6171c389bd803e5d14093530528e19a8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
@@ -1737,19 +1742,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-151.161`
+### `dpkg` source package: `linux=5.15.0-153.163`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-151.161`
+- `linux-libc-dev:amd64=5.15.0-153.163`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-153.163
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-153.163.dsc' linux_5.15.0-153.163.dsc 7820 SHA512:60d78034aaa18f49d03762bcce120f4f0bbd17358c52790c16e8218d5b985b434dd4a3691aab503e4609227dabd66f4fccb98b67e92b64180d1c6408c707572f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-153.163.diff.gz' linux_5.15.0-153.163.diff.gz 11929114 SHA512:57f821fc9e67985f0d96094252b45d77c335eadf9c366b07c4e164de6333535f3c40d77b9107a6f15bd89e7522ca29d14451b936354c0f27a9f55ac3900981e7
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2346,14 +2356,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.10`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.11`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.10`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.10`
-- `python3.10=3.10.12-1~22.04.10`
-- `python3.10-minimal=3.10.12-1~22.04.10`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.11`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.11`
+- `python3.10=3.10.12-1~22.04.11`
+- `python3.10-minimal=3.10.12-1~22.04.11`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2375,9 +2385,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.dsc' python3.10_3.10.12-1~22.04.11.dsc 3723 SHA512:c4fe28e481e1378b345d5da896de0b7f105dbde3a71139527e25731e1820859226e0c9ba072092b2d67deda6c03630e2141a2b2ed3ed002d15284794008dd69e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.debian.tar.xz' python3.10_3.10.12-1~22.04.11.debian.tar.xz 255884 SHA512:0422ae8d184845ee2c9f9efc88f0b9e1046fe02c89b6cf2ce7350569633502e2d9c878123c215b3a5b1b98a1c5a84d1bb66de6701366c6eda5bba8a33bc01b39
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
