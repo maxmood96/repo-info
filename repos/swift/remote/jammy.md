@@ -1,7 +1,7 @@
 ## `swift:jammy`
 
 ```console
-$ docker pull swift@sha256:848a202993100a676bcb5c8bf59990bc8039a49839677ff6ca9c8e8f8bac87af
+$ docker pull swift@sha256:5910655d205a5a54b0b9efdf72c4066a8de1932513fdc81793e2544b5d5a0709
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -107,13 +107,13 @@ $ docker pull swift@sha256:980108b1c5143d36edd38ab6b5a331c8673976ab033cf7922cd2c
 ### `swift:jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:69f31ac3b9953dfe8e7836eb00809cd0f6ce5dc614f4d91cc4ced1486ddc410d
+$ docker pull swift@sha256:722a51e5336574ca2812bb6dea3cbeb1f4bf5c83840d34c2ac78275f007f57fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1089739949 bytes)**  
+-	Total Size: **1.1 GB (1089800697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f66027d1f4f0ec43e74b2c14f0ef196d598e92158d4844a4badaaa2c09c5d328`
+-	Image ID: `sha256:6a300d6efc5f4c6c9da26b20eab66cbaeae46ce93696ae0a92ca938ad416ebb3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -126,7 +126,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Wed, 28 May 2025 17:53:13 GMT
 LABEL org.opencontainers.image.version=22.04
 # Wed, 28 May 2025 17:53:13 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Wed, 28 May 2025 17:53:13 GMT
 CMD ["/bin/bash"]
 # Wed, 28 May 2025 17:53:13 GMT
@@ -156,43 +156,43 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1536f25360d3fbae939bc5271299c1db3c4e59c0e2d477aad1e1e2bb2aba637e`  
-		Last Modified: Tue, 12 Aug 2025 22:56:36 GMT  
-		Size: 171.7 MB (171675858 bytes)  
+	-	`sha256:e28cd728c02634ba58ae20a7fedd7b526deb53c6cf182701bfc4eda3bdbd574a`  
+		Last Modified: Tue, 02 Sep 2025 04:08:47 GMT  
+		Size: 171.7 MB (171734383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2dae3b1c2cf9e27397791cb60d0ce0e85cbc3db01dea2d2dacaf0aabedff6188`  
-		Last Modified: Wed, 13 Aug 2025 00:01:11 GMT  
-		Size: 890.7 MB (890704670 bytes)  
+	-	`sha256:669bcf784b0aab19a54e5e12aaaa4eae03659c2dbd191a481ddc81c52dd67f0a`  
+		Last Modified: Tue, 02 Sep 2025 04:49:59 GMT  
+		Size: 890.7 MB (890704672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b11ba40ea8536cae0aa9836ac69aba47983a3746149e4c257996d17e02fca20`  
-		Last Modified: Tue, 12 Aug 2025 21:46:52 GMT  
-		Size: 174.0 B  
+	-	`sha256:faad6a59d947a81988614478310721c074f7dad4b18f6171fcb1ad59cbb56840`  
+		Last Modified: Tue, 02 Sep 2025 03:26:52 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:jammy` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:3d3756f283c1b69af4fa6be139b4bb1a2bf5589a2e0764d9ae04f1afcabc04a7
+$ docker pull swift@sha256:94b25e96aa2a99a9eef7fa3020d29a7bbdbbc444e84f38e840e8079254c7a7ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.5 MB (8489160 bytes)**  
+-	Total Size: **8.5 MB (8489223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:479f0a00e524dc154cf744ee4c5068bf91521ef5f3b588da0d5f6b53ace665d8`
+-	Image ID: `sha256:a166c4dfcd75f75ef020cff24d08ab8fbacd756931aa1aa187fcbcfe93b46b81`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f8442127a030ad94263f35408702561ed114553d8076f2e030f84add7ba33d60`  
-		Last Modified: Tue, 12 Aug 2025 22:49:27 GMT  
-		Size: 8.5 MB (8473077 bytes)  
+	-	`sha256:69361fe687a21a212dfe901da1258836e59eeb9f9c3a0b2503923f3cfabdda71`  
+		Last Modified: Tue, 02 Sep 2025 04:49:08 GMT  
+		Size: 8.5 MB (8473141 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:42deedf0dd959a322ea7f99f8476ce834e05f79296f2c3315ed73f24c9b1ae67`  
-		Last Modified: Tue, 12 Aug 2025 22:49:28 GMT  
-		Size: 16.1 KB (16083 bytes)  
+	-	`sha256:ffd674790aac9f5a56218b3e92e6cee00e8a54b64310540609bfdd355d8d4b5b`  
+		Last Modified: Tue, 02 Sep 2025 04:49:08 GMT  
+		Size: 16.1 KB (16082 bytes)  
 		MIME: application/vnd.in-toto+json
