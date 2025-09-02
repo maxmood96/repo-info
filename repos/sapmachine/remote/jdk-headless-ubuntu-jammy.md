@@ -1,7 +1,7 @@
 ## `sapmachine:jdk-headless-ubuntu-jammy`
 
 ```console
-$ docker pull sapmachine@sha256:0b0f38ccf05439d44f156b92de84a08af24a36a817399ad6fadf1a635809c7f4
+$ docker pull sapmachine@sha256:9db91536c289ee7e38dd12bcce5c15c5bfb9a6d12128dc1380928be3d76f08c3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,13 +83,13 @@ $ docker pull sapmachine@sha256:b3fdfbbca8dd8249cb98d51c944f4a31abb65b38b10836e8
 ### `sapmachine:jdk-headless-ubuntu-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull sapmachine@sha256:a6697c8d09d394d54bacab2af7e251ad613d9260da7565c20a1e49fedb825948
+$ docker pull sapmachine@sha256:264fa7e478dba95b3c5766f63b80484d31beff2b21c9ee9257b8d120a39bfe06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.1 MB (256109602 bytes)**  
+-	Total Size: **256.1 MB (256111905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5a03cf887a302b321769f0192bbe424ca908fd280155d701da47ab5b5e97d7a`
+-	Image ID: `sha256:63d2e123d45bcc09bf210bf04b5d10c477f2f5baf6e87640149ab65bc95741f9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -102,7 +102,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 15 Jul 2025 19:58:20 GMT
 LABEL org.opencontainers.image.version=22.04
 # Tue, 15 Jul 2025 19:58:20 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Tue, 15 Jul 2025 19:58:20 GMT
 CMD ["/bin/bash"]
 # Tue, 15 Jul 2025 19:58:20 GMT
@@ -114,37 +114,37 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d19a104efb799a2ed0a3c213272b79f4d09b6bdb4522dfff52293047438b14d`  
-		Last Modified: Tue, 12 Aug 2025 21:16:41 GMT  
-		Size: 228.8 MB (228750355 bytes)  
+	-	`sha256:96dc7f950383ce8ddd92e9bf91b27cf3e9d353c76930ded19edfcc3bebf635fc`  
+		Last Modified: Tue, 02 Sep 2025 03:03:24 GMT  
+		Size: 228.8 MB (228750436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:jdk-headless-ubuntu-jammy` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:a295e5c1de64dcad714011981fc0c99ae316c3fbce082749c2875e76d9bfb943
+$ docker pull sapmachine@sha256:eeb4a059e5cd627d7a479988faaa9a087968354b678015209aa107052c9f4627
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2378461 bytes)**  
+-	Total Size: **2.4 MB (2378476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe5d1bfdae80c5761362f9ead23c233953992fd1d51013f67d2d53928291d1fc`
+-	Image ID: `sha256:e68dbad9c8b3eb8e567fed22bc35e0eb60f89b845536ef66e5b7c2f703abc29e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8676d08e84ade4f4e2dd65655af4187ceef3cc25e6eaa4360b1c8339742ac13f`  
-		Last Modified: Wed, 13 Aug 2025 00:09:07 GMT  
-		Size: 2.4 MB (2368721 bytes)  
+	-	`sha256:9bd4a41b18662b8f55f6ce6fd30a038751f9b72cdc195bd4fe26f1f871be6d83`  
+		Last Modified: Tue, 02 Sep 2025 06:08:24 GMT  
+		Size: 2.4 MB (2368737 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:94c522ff647a4952f7693a4f8215eb1b1c49e0d6a568ea65d539c0f4c685bc21`  
-		Last Modified: Wed, 13 Aug 2025 00:09:08 GMT  
-		Size: 9.7 KB (9740 bytes)  
+	-	`sha256:5070d8730d605cf3d3c6f46c33f6d151516ffc099c2126e38de0f8d42ac6ffcd`  
+		Last Modified: Tue, 02 Sep 2025 06:08:25 GMT  
+		Size: 9.7 KB (9739 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `sapmachine:jdk-headless-ubuntu-jammy` - linux; ppc64le
