@@ -8358,7 +8358,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2825397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd31dfbaa990b99f729f826d0ff089974c04e1a4a3ce81f1b31d0baf0b6c73d2`  
-		Last Modified: Tue, 02 Sep 2025 01:20:54 GMT  
+		Last Modified: Tue, 02 Sep 2025 04:05:10 GMT  
 		Size: 364.8 MB (364812257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d86f11e616ff46abfaae121ddb05236743b0925ddabc24ae55dadbfe1d88cc80`  
@@ -9155,7 +9155,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2808724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c703aa772fbd3474eb31c9f8cb9eb838b79c0c6e94301d3406b92cfa12c5f05c`  
-		Last Modified: Tue, 02 Sep 2025 01:21:10 GMT  
+		Last Modified: Tue, 02 Sep 2025 04:05:59 GMT  
 		Size: 364.8 MB (364812327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f8a91968a4d2353785a20fde810841c6c5ffccec780d058aeefdbdca0f40f17`  
@@ -9942,7 +9942,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 5.8 MB (5829945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d677d7873b72a9c31fc7796009dec0c7f95ad3087e909d8db52f2fbf072be1d`  
-		Last Modified: Tue, 02 Sep 2025 01:21:33 GMT  
+		Last Modified: Tue, 02 Sep 2025 04:06:06 GMT  
 		Size: 364.8 MB (364811790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d927e036427a6384f7124d8ada18f83589263b2a9a11e827b8019e6fba1a882b`  
@@ -9950,7 +9950,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c16fb4ac337f00817b916ab84a5b48955a7c7c8c3ccfaaac8c797cc7cf22ab6`  
-		Last Modified: Tue, 02 Sep 2025 01:21:28 GMT  
+		Last Modified: Tue, 02 Sep 2025 04:05:43 GMT  
 		Size: 15.9 MB (15910279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
