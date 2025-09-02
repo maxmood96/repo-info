@@ -2033,20 +2033,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1.dsc' imagemagick_7.1.1.43+dfsg1-1.dsc 5129 SHA256:ea905fe178cb4f854ee59f2e7444de0b8369767a30d988766f2e6c62638802c0
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1.debian.tar.xz 275384 SHA256:4315813d0e1f9f76e7e77387fed5fcd152f540473d3ba97f37d5855b115b119e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -4936,20 +4929,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.5-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.5-1.dsc' postgresql-17_17.5-1.dsc 4245 SHA256:0306e93dd642d752db7dc52152d2a19f57c4f3d0527283d4d0bc78f7aedc092b
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.5.orig.tar.bz2' postgresql-17_17.5.orig.tar.bz2 21595174 SHA256:fcb7ab38e23b264d1902cb25e6adafb4525a6ebcbd015434aeef9eda80f528d8
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.5-1.debian.tar.xz' postgresql-17_17.5-1.debian.tar.xz 27596 SHA256:15359d6bb2a5d515de9cd0d0ff5ac5fefd645d38b111e2deffac53be8ef16d11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.5-1/
 
-- https://sources.debian.net/src/postgresql-17/17.5-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -5304,21 +5290,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.17.4-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4-2.dsc' shadow_4.17.4-2.dsc 2851 SHA256:920de0d3be5303f2c0511d5531c1815abc258b15af8f9c511c8aa6d8e1a91a86
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4.orig.tar.xz' shadow_4.17.4.orig.tar.xz 2326584 SHA256:554801054694ff7d8a7abdf0d6ece34e2f16e111673cc01b8c9ee1278451181e
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4.orig.tar.xz.asc' shadow_4.17.4.orig.tar.xz.asc 488 SHA256:82437d2b54790b3a6734c526b757e693cd0c734ec6afd69f9a9cf0eb1dad8dc4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4-2.debian.tar.xz' shadow_4.17.4-2.debian.tar.xz 167792 SHA256:97eaf0b3682a8a1a1ae6e4c4fac00885a7433d2487e636bde7c1c406e66bdb23
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.17.4-2/
 
-- https://sources.debian.net/src/shadow/1:4.17.4-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.17.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.17.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=2.4-5`
 
@@ -5466,20 +5444,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.7-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7-1.dsc' systemd_257.7-1.dsc 8614 SHA256:bb62345b00bfd49ea5361b0556c944e86215133daa36185c91afe8d0e21c3e70
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7.orig.tar.gz' systemd_257.7.orig.tar.gz 16327096 SHA256:70ecf759260549486045d065555d2f8a0ac0b8523d8f58227559fbd6d7523b08
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7-1.debian.tar.xz' systemd_257.7-1.debian.tar.xz 182316 SHA256:3a4bd913536425bfd2e02f9f527f9c2b1939ab1cb80257b1f786b2bce4770cbe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.7-1/
 
-- https://sources.debian.net/src/systemd/257.7-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 

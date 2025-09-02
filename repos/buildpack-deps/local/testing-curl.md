@@ -2346,21 +2346,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.17.4-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4-2.dsc' shadow_4.17.4-2.dsc 2851 SHA256:920de0d3be5303f2c0511d5531c1815abc258b15af8f9c511c8aa6d8e1a91a86
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4.orig.tar.xz' shadow_4.17.4.orig.tar.xz 2326584 SHA256:554801054694ff7d8a7abdf0d6ece34e2f16e111673cc01b8c9ee1278451181e
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4.orig.tar.xz.asc' shadow_4.17.4.orig.tar.xz.asc 488 SHA256:82437d2b54790b3a6734c526b757e693cd0c734ec6afd69f9a9cf0eb1dad8dc4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.4-2.debian.tar.xz' shadow_4.17.4-2.debian.tar.xz 167792 SHA256:97eaf0b3682a8a1a1ae6e4c4fac00885a7433d2487e636bde7c1c406e66bdb23
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.17.4-2/
 
-- https://sources.debian.net/src/shadow/1:4.17.4-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.17.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.17.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.1-7`
 
@@ -2408,20 +2400,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.7-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7-1.dsc' systemd_257.7-1.dsc 8614 SHA256:bb62345b00bfd49ea5361b0556c944e86215133daa36185c91afe8d0e21c3e70
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7.orig.tar.gz' systemd_257.7.orig.tar.gz 16327096 SHA256:70ecf759260549486045d065555d2f8a0ac0b8523d8f58227559fbd6d7523b08
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7-1.debian.tar.xz' systemd_257.7-1.debian.tar.xz 182316 SHA256:3a4bd913536425bfd2e02f9f527f9c2b1939ab1cb80257b1f786b2bce4770cbe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.7-1/
 
-- https://sources.debian.net/src/systemd/257.7-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 

@@ -3314,20 +3314,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.5.4-4
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-4.dsc' libtool_2.5.4-4.dsc 2232 SHA256:37d98d7c45d1c12c0b7bd55fb6a90fa05aff8aa9ab2bbd9617ce7a6233b1965e
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4.orig.tar.xz' libtool_2.5.4.orig.tar.xz 1069572 SHA256:d9189031edeaa6aa74695b2aeb80a8c26df50b29d8b72c991667e01adecea42c
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-4.debian.tar.xz' libtool_2.5.4-4.debian.tar.xz 37504 SHA256:93e8e286db1322a4f17e3120654ec2664a721e6684c017cb37d471daeb380f8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.5.4-4/
 
-- https://sources.debian.net/src/libtool/2.5.4-4/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.5.4-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.5.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.3-2`
 
@@ -3822,21 +3815,13 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.19-8
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-8.dsc' m4_1.4.19-8.dsc 1783 SHA256:d7e5a26f911d98e7f333c736aa0fa0be4e9a69d88d464a93860a6d1a84e4a588
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz' m4_1.4.19.orig.tar.xz 1654908 SHA256:63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz.asc' m4_1.4.19.orig.tar.xz.asc 488 SHA256:9700ba4dca539b06e033b4e3ab37fa5b983becb6c14569a8b8aa02dee6ab666c
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-8.debian.tar.xz' m4_1.4.19-8.debian.tar.xz 18044 SHA256:81299879531d9b956b71b4dfe4997325f48309cc154bc23a2e9ef71b2b8ca20f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/m4/1.4.19-8/
 
-- https://sources.debian.net/src/m4/1.4.19-8/ (for browsing the source)
-- https://sources.debian.net/src/m4/1.4.19-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/m4/1.4.19-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `make-dfsg=4.4.1-2`
 
@@ -5535,20 +5520,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.1-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.1-1.dsc' util-linux_2.41.1-1.dsc 4942 SHA256:6ceaf307eddc6de72dd42ae25a3c35c0f8bf37ce07f19bafc3529f648a631dd4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.1.orig.tar.xz' util-linux_2.41.1.orig.tar.xz 9606156 SHA256:be9ad9a276f4305ab7dd2f5225c8be1ff54352f565ff4dede9628c1aaa7dec57
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.1-1.debian.tar.xz' util-linux_2.41.1-1.debian.tar.xz 102168 SHA256:4b40a99a2d4414c7229a35b611a29eae0ff39db8549989420d19c94828f41382
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.1-1/
 
-- https://sources.debian.net/src/util-linux/2.41.1-1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
@@ -5612,19 +5590,13 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+24
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b24.dsc' xorg_7.7+24.dsc 1970 SHA256:3bff9d33df4e1e27c64e777f2fbf68b5f0de93f3985783e953ecaa2d00a636f9
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b24.tar.xz' xorg_7.7+24.tar.xz 234100 SHA256:d3a417626799a1a989c34f76a930597e3feee46710b55a334e01a5233cf1daf2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xorg/1:7.7+24/
 
-- https://sources.debian.net/src/xorg/1:7.7+24/ (for browsing the source)
-- https://sources.debian.net/src/xorg/1:7.7+24/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xorg/1:7.7+24/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorgproto=2024.1-1`
 
