@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2e8d6a6e9f1d5b1417bf2a863d45b0c56424ece0637304f45b95d32d08c202b`
-- Created: `2025-06-25T14:56:56Z`
-- Virtual Size: ~ 275.27 Mb  
+- Image ID: `sha256:73d0203e483ccbf1052a370f2ba0cceaf87a43e35e6324bd8882a2862588d9a9`
+- Created: `2025-09-01T15:19:10Z`
+- Virtual Size: ~ 275.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -1892,30 +1892,37 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxcrypt/1:4.4.33-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxcrypt/1:4.4.33-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3~deb12u2`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3~deb12u4`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3~deb12u2`
+- `libxml2:amd64=2.9.14+dfsg-1.3~deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3~deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.dsc' libxml2_2.9.14+dfsg-1.3~deb12u4.dsc 2610 SHA256:de59e0146715a6edb188729823fe13a597b2b9968c69f7e9e32b4c7ef2ad06e1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3%7edeb12u4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3~deb12u4.debian.tar.xz 47500 SHA256:8c2f4b1b03579a3010c4135e57c7754544bf8085960537532faaa0feb0f2930b
+```
 
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3~deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3~deb12u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.35-1+deb12u1`
+### `dpkg` source package: `libxslt=1.1.35-1+deb12u2`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.35-1+deb12u1`
+- `libxslt1.1:amd64=1.1.35-1+deb12u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1924,17 +1931,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u1.dsc' libxslt_1.1.35-1+deb12u1.dsc 2343 SHA256:542b36489cdca4a13dc1bb383842f9c7c1d7169d8d30a100367372fe5fae86c6
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u1.debian.tar.xz' libxslt_1.1.35-1+deb12u1.debian.tar.xz 22944 SHA256:4d8717f10aa236e08219f495881065d15a7115d61536d4865a67274bf442a8db
+$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u2.dsc' libxslt_1.1.35-1+deb12u2.dsc 1842 SHA256:5190c8669cfbbb30f76aa3a0db99cf66d7d452333ee975153bea863ade5e9a32
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u2.debian.tar.xz' libxslt_1.1.35-1+deb12u2.debian.tar.xz 29784 SHA256:9bb447447f396c8faf3bbf39cb6848d7af04de09594670c910f1407ab5280334
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libyaml=0.2.5-1`
 
