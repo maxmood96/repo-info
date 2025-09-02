@@ -16,7 +16,7 @@
 ## `kapacitor:1.7`
 
 ```console
-$ docker pull kapacitor@sha256:db142e34fc6c53f69f87f879a5882689938d47d89c51a06a3ef024913c0bed41
+$ docker pull kapacitor@sha256:cf9cce1202f24d3e064129474e0421b391b3908345aed1f3262bcc419032afc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -127,13 +127,13 @@ $ docker pull kapacitor@sha256:54756b3bf1fe1295f721192b00ab0716b78c2d9d13f36f469
 ### `kapacitor:1.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull kapacitor@sha256:d946ceb5d2b6b8d5552b349f792f9d9c4535c5ba8f2b6871004f46d69a6984f0
+$ docker pull kapacitor@sha256:921dccc90592f4642528b8d9890d697131376ee76e6413958ed0ae657dc806b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.4 MB (145372867 bytes)**  
+-	Total Size: **146.2 MB (146211907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f3f44f4a208e1bcc4416907d7cd7601efa543207a84ae04cb6fa4804671ad57`
+-	Image ID: `sha256:b45864afc67fa813b07870edcdaad96ea6549bb1a56a48afc2b4e45cca745070`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -147,7 +147,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=22.04
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -173,53 +173,53 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476a9430580cac739e29f524f2d4fa032c5bfb4d16c97a34238459efc663af4e`  
-		Last Modified: Tue, 12 Aug 2025 17:24:37 GMT  
-		Size: 7.1 MB (7051909 bytes)  
+	-	`sha256:573b56f55094f2d14930c686b1a46091f6f5d62cadec0da94af57c5297b32867`  
+		Last Modified: Tue, 02 Sep 2025 01:18:59 GMT  
+		Size: 7.1 MB (7051940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a2e62eaf5273f9309d0110fd3120778a77557e5aa2a49de27595f55ec44f2d7`  
-		Last Modified: Wed, 13 Aug 2025 01:24:27 GMT  
-		Size: 43.1 MB (43147465 bytes)  
+	-	`sha256:d9638ee345f265593b563464cf568a673d0e98db70e231aef56afc0c86d6f286`  
+		Last Modified: Tue, 02 Sep 2025 04:52:49 GMT  
+		Size: 44.0 MB (43984242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f1125961f24472ab6a86af3a51a2c72fdf178c78b78f298d98ca36c8342beb8`  
-		Last Modified: Wed, 13 Aug 2025 01:24:35 GMT  
-		Size: 67.8 MB (67813723 bytes)  
+	-	`sha256:7f6291543bbe0b72b0e5d9f237d35f7f024c833bdb4405f30dc0ab575c35cb76`  
+		Last Modified: Tue, 02 Sep 2025 04:52:51 GMT  
+		Size: 67.8 MB (67813732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1616243e97aa3863a0589b1bec272b924c2ccd7dd65dc7ca4ede9d179536495`  
-		Last Modified: Tue, 12 Aug 2025 23:39:58 GMT  
-		Size: 225.0 B  
+	-	`sha256:5773250687d003ee80156d0e620e407d969f002daca34cfa8add5ccf06f0b5fb`  
+		Last Modified: Tue, 02 Sep 2025 04:52:45 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a9dbc6ad85250949431a2c7cced7999a716babfe88df2c37d9170bddd56e76e`  
-		Last Modified: Tue, 12 Aug 2025 23:40:02 GMT  
+	-	`sha256:201328e05e493519cd6c7517b376ae6159b0e7388c12b50e9c3411523ff1423d`  
+		Last Modified: Tue, 02 Sep 2025 04:52:45 GMT  
 		Size: 298.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:1.7` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:92dc287505e3efcafbcde234d46df9c5352bf8e5e94b9d4bf2a0eb579d08caff
+$ docker pull kapacitor@sha256:a605016a8754080f766675eeb49dbd5d81e7380dc7b3693e61c17fd887e2cc3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3730976 bytes)**  
+-	Total Size: **3.7 MB (3730991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0679d991f76cc30593bd3a9d5a1e8b0c187a978c055768e8d23cdd72777cee63`
+-	Image ID: `sha256:19cfa6079c006afd2bd1c619c16cb6ad5804b6d525fa8470c317fa671dae44a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ccc3b90a562a8b9b8e6d25daee5f6d27627be485cd2ce1c4474c7fc13366561`  
-		Last Modified: Wed, 13 Aug 2025 01:21:20 GMT  
-		Size: 3.7 MB (3716122 bytes)  
+	-	`sha256:1bd02e3f57a714de2a2f4b8688974b669e021d19c5ff7cb05dff913501670ed1`  
+		Last Modified: Tue, 02 Sep 2025 07:21:19 GMT  
+		Size: 3.7 MB (3716138 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8895c161a1ad38888c65ef764bf3911f33036e240d1260f7572e7cc3f834e177`  
-		Last Modified: Wed, 13 Aug 2025 01:21:21 GMT  
-		Size: 14.9 KB (14854 bytes)  
+	-	`sha256:9a94161ccfe107181438281ddc335f287b3b08d1243074ba6388442554640983`  
+		Last Modified: Tue, 02 Sep 2025 07:21:20 GMT  
+		Size: 14.9 KB (14853 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kapacitor:1.7-alpine`
@@ -326,7 +326,7 @@ $ docker pull kapacitor@sha256:2f1b54a2048c3a3b338544b0c408b33dd54dbc449f63a8dbd
 ## `kapacitor:1.7.7`
 
 ```console
-$ docker pull kapacitor@sha256:db142e34fc6c53f69f87f879a5882689938d47d89c51a06a3ef024913c0bed41
+$ docker pull kapacitor@sha256:cf9cce1202f24d3e064129474e0421b391b3908345aed1f3262bcc419032afc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -437,13 +437,13 @@ $ docker pull kapacitor@sha256:54756b3bf1fe1295f721192b00ab0716b78c2d9d13f36f469
 ### `kapacitor:1.7.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull kapacitor@sha256:d946ceb5d2b6b8d5552b349f792f9d9c4535c5ba8f2b6871004f46d69a6984f0
+$ docker pull kapacitor@sha256:921dccc90592f4642528b8d9890d697131376ee76e6413958ed0ae657dc806b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.4 MB (145372867 bytes)**  
+-	Total Size: **146.2 MB (146211907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f3f44f4a208e1bcc4416907d7cd7601efa543207a84ae04cb6fa4804671ad57`
+-	Image ID: `sha256:b45864afc67fa813b07870edcdaad96ea6549bb1a56a48afc2b4e45cca745070`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -457,7 +457,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=22.04
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -483,53 +483,53 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476a9430580cac739e29f524f2d4fa032c5bfb4d16c97a34238459efc663af4e`  
-		Last Modified: Tue, 12 Aug 2025 17:24:37 GMT  
-		Size: 7.1 MB (7051909 bytes)  
+	-	`sha256:573b56f55094f2d14930c686b1a46091f6f5d62cadec0da94af57c5297b32867`  
+		Last Modified: Tue, 02 Sep 2025 01:18:59 GMT  
+		Size: 7.1 MB (7051940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a2e62eaf5273f9309d0110fd3120778a77557e5aa2a49de27595f55ec44f2d7`  
-		Last Modified: Wed, 13 Aug 2025 01:24:27 GMT  
-		Size: 43.1 MB (43147465 bytes)  
+	-	`sha256:d9638ee345f265593b563464cf568a673d0e98db70e231aef56afc0c86d6f286`  
+		Last Modified: Tue, 02 Sep 2025 04:52:49 GMT  
+		Size: 44.0 MB (43984242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f1125961f24472ab6a86af3a51a2c72fdf178c78b78f298d98ca36c8342beb8`  
-		Last Modified: Wed, 13 Aug 2025 01:24:35 GMT  
-		Size: 67.8 MB (67813723 bytes)  
+	-	`sha256:7f6291543bbe0b72b0e5d9f237d35f7f024c833bdb4405f30dc0ab575c35cb76`  
+		Last Modified: Tue, 02 Sep 2025 04:52:51 GMT  
+		Size: 67.8 MB (67813732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1616243e97aa3863a0589b1bec272b924c2ccd7dd65dc7ca4ede9d179536495`  
-		Last Modified: Tue, 12 Aug 2025 23:39:58 GMT  
-		Size: 225.0 B  
+	-	`sha256:5773250687d003ee80156d0e620e407d969f002daca34cfa8add5ccf06f0b5fb`  
+		Last Modified: Tue, 02 Sep 2025 04:52:45 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a9dbc6ad85250949431a2c7cced7999a716babfe88df2c37d9170bddd56e76e`  
-		Last Modified: Tue, 12 Aug 2025 23:40:02 GMT  
+	-	`sha256:201328e05e493519cd6c7517b376ae6159b0e7388c12b50e9c3411523ff1423d`  
+		Last Modified: Tue, 02 Sep 2025 04:52:45 GMT  
 		Size: 298.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:1.7.7` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:92dc287505e3efcafbcde234d46df9c5352bf8e5e94b9d4bf2a0eb579d08caff
+$ docker pull kapacitor@sha256:a605016a8754080f766675eeb49dbd5d81e7380dc7b3693e61c17fd887e2cc3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3730976 bytes)**  
+-	Total Size: **3.7 MB (3730991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0679d991f76cc30593bd3a9d5a1e8b0c187a978c055768e8d23cdd72777cee63`
+-	Image ID: `sha256:19cfa6079c006afd2bd1c619c16cb6ad5804b6d525fa8470c317fa671dae44a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ccc3b90a562a8b9b8e6d25daee5f6d27627be485cd2ce1c4474c7fc13366561`  
-		Last Modified: Wed, 13 Aug 2025 01:21:20 GMT  
-		Size: 3.7 MB (3716122 bytes)  
+	-	`sha256:1bd02e3f57a714de2a2f4b8688974b669e021d19c5ff7cb05dff913501670ed1`  
+		Last Modified: Tue, 02 Sep 2025 07:21:19 GMT  
+		Size: 3.7 MB (3716138 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8895c161a1ad38888c65ef764bf3911f33036e240d1260f7572e7cc3f834e177`  
-		Last Modified: Wed, 13 Aug 2025 01:21:21 GMT  
-		Size: 14.9 KB (14854 bytes)  
+	-	`sha256:9a94161ccfe107181438281ddc335f287b3b08d1243074ba6388442554640983`  
+		Last Modified: Tue, 02 Sep 2025 07:21:20 GMT  
+		Size: 14.9 KB (14853 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kapacitor:1.7.7-alpine`
@@ -636,7 +636,7 @@ $ docker pull kapacitor@sha256:2f1b54a2048c3a3b338544b0c408b33dd54dbc449f63a8dbd
 ## `kapacitor:1.8`
 
 ```console
-$ docker pull kapacitor@sha256:d5bada1ee76a55f80a15015f5cc2accbe12453c96649a9f4608020b0756a539c
+$ docker pull kapacitor@sha256:b8be732edc41153315b8dfb8c7c94f0ed38e3c441ed543331d1082b51f1b833f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -747,13 +747,13 @@ $ docker pull kapacitor@sha256:7ccd2c6261d3a87a73c0935fdc18f46e589e888431fba9a84
 ### `kapacitor:1.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull kapacitor@sha256:46cf79ad0f89fe2687bf1acf59cffb7b441ba07de25b182d92d31b5431661190
+$ docker pull kapacitor@sha256:34100f6f7977f8d021357b1a2ca36c97211c65825875426ab734dcc921ee64bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.0 MB (159022868 bytes)**  
+-	Total Size: **159.9 MB (159861919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5000def53d67cb759c435f8cc5cb1e26363bd7c4259d26dab4c1a70a26a841a`
+-	Image ID: `sha256:4ee2588efd929c3449bbaf353507e5bf4badc827ade6b0d888dfd248b15b858c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -767,7 +767,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=22.04
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -793,52 +793,52 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476a9430580cac739e29f524f2d4fa032c5bfb4d16c97a34238459efc663af4e`  
-		Last Modified: Tue, 12 Aug 2025 17:24:37 GMT  
-		Size: 7.1 MB (7051909 bytes)  
+	-	`sha256:573b56f55094f2d14930c686b1a46091f6f5d62cadec0da94af57c5297b32867`  
+		Last Modified: Tue, 02 Sep 2025 01:18:59 GMT  
+		Size: 7.1 MB (7051940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a2e62eaf5273f9309d0110fd3120778a77557e5aa2a49de27595f55ec44f2d7`  
-		Last Modified: Wed, 13 Aug 2025 01:24:27 GMT  
-		Size: 43.1 MB (43147465 bytes)  
+	-	`sha256:d9638ee345f265593b563464cf568a673d0e98db70e231aef56afc0c86d6f286`  
+		Last Modified: Tue, 02 Sep 2025 04:52:49 GMT  
+		Size: 44.0 MB (43984242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b364ad99c784d84f60ae66ff3cdd21f20c030193b0c0b0af2895b3e0d9b35c9e`  
-		Last Modified: Wed, 13 Aug 2025 17:26:11 GMT  
-		Size: 81.5 MB (81463725 bytes)  
+	-	`sha256:59f402fe2a98fccc20b255c74fc100f94277b4d06d76463132c72f7dafe4354c`  
+		Last Modified: Tue, 02 Sep 2025 04:53:16 GMT  
+		Size: 81.5 MB (81463748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8912af52b80bd0db4ff2b6a51d9dbaab0894cf46c5643ad3fde44abb25506227`  
-		Last Modified: Tue, 12 Aug 2025 23:39:52 GMT  
+	-	`sha256:39af266d7e47648a14fdb6b8830ffa7be8c484cc139c85f859afe809596f8a46`  
+		Last Modified: Tue, 02 Sep 2025 04:53:11 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:972ce250eaa6760f24d454e096fdb6d3a90403816a740376563e03a0eb4b9551`  
-		Last Modified: Tue, 12 Aug 2025 23:39:55 GMT  
-		Size: 298.0 B  
+	-	`sha256:7fde9ad70a06bb672ecbda12db9678a6169991c4b47437bcad91e8534b1da785`  
+		Last Modified: Tue, 02 Sep 2025 04:53:11 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:1.8` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:4a6cfebe7936fac5c6b97373033c597d080f60c1db0de2c0499fb6f5da34b8ee
+$ docker pull kapacitor@sha256:cfd4dedb60a41e390dfc9b85f77931871b8c969d9b9f2c66a2e4cd9b4710abe7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3745897 bytes)**  
+-	Total Size: **3.7 MB (3745913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:235cd7f1bcbe49cac80ccf74839f903b9e0f20810ddb7a19ea1cecb6863a4aec`
+-	Image ID: `sha256:c52a169f7adcf5777253e75e49451f8f22ed2296184905887b4c37b3bbf0b9e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7cb9d0ca0e96b8909bdfbe958ac467d13bb6353dc514fb639d4433f726a767a`  
-		Last Modified: Wed, 13 Aug 2025 01:21:28 GMT  
-		Size: 3.7 MB (3730727 bytes)  
+	-	`sha256:118e2379b18bbc6b19ac0580208229b47d3983d8e258bab1ab4daba884071bc1`  
+		Last Modified: Tue, 02 Sep 2025 07:21:27 GMT  
+		Size: 3.7 MB (3730743 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2f331b1f233cd78e7f048bc860290261080c2374350c15561202d4dd58fb7cb`  
-		Last Modified: Wed, 13 Aug 2025 01:21:29 GMT  
+	-	`sha256:f5c7c8d6d7b816b935b3174bb953a63e4d5a9b1a5d8acc1a2861a6a198083d06`  
+		Last Modified: Tue, 02 Sep 2025 07:21:27 GMT  
 		Size: 15.2 KB (15170 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -946,7 +946,7 @@ $ docker pull kapacitor@sha256:958bb89f875d5bd08234cdab7e8380cda7dc4eea714aa5dd2
 ## `kapacitor:1.8.0`
 
 ```console
-$ docker pull kapacitor@sha256:d5bada1ee76a55f80a15015f5cc2accbe12453c96649a9f4608020b0756a539c
+$ docker pull kapacitor@sha256:b8be732edc41153315b8dfb8c7c94f0ed38e3c441ed543331d1082b51f1b833f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1057,13 +1057,13 @@ $ docker pull kapacitor@sha256:7ccd2c6261d3a87a73c0935fdc18f46e589e888431fba9a84
 ### `kapacitor:1.8.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull kapacitor@sha256:46cf79ad0f89fe2687bf1acf59cffb7b441ba07de25b182d92d31b5431661190
+$ docker pull kapacitor@sha256:34100f6f7977f8d021357b1a2ca36c97211c65825875426ab734dcc921ee64bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.0 MB (159022868 bytes)**  
+-	Total Size: **159.9 MB (159861919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5000def53d67cb759c435f8cc5cb1e26363bd7c4259d26dab4c1a70a26a841a`
+-	Image ID: `sha256:4ee2588efd929c3449bbaf353507e5bf4badc827ade6b0d888dfd248b15b858c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -1077,7 +1077,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=22.04
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -1103,52 +1103,52 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476a9430580cac739e29f524f2d4fa032c5bfb4d16c97a34238459efc663af4e`  
-		Last Modified: Tue, 12 Aug 2025 17:24:37 GMT  
-		Size: 7.1 MB (7051909 bytes)  
+	-	`sha256:573b56f55094f2d14930c686b1a46091f6f5d62cadec0da94af57c5297b32867`  
+		Last Modified: Tue, 02 Sep 2025 01:18:59 GMT  
+		Size: 7.1 MB (7051940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a2e62eaf5273f9309d0110fd3120778a77557e5aa2a49de27595f55ec44f2d7`  
-		Last Modified: Wed, 13 Aug 2025 01:24:27 GMT  
-		Size: 43.1 MB (43147465 bytes)  
+	-	`sha256:d9638ee345f265593b563464cf568a673d0e98db70e231aef56afc0c86d6f286`  
+		Last Modified: Tue, 02 Sep 2025 04:52:49 GMT  
+		Size: 44.0 MB (43984242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b364ad99c784d84f60ae66ff3cdd21f20c030193b0c0b0af2895b3e0d9b35c9e`  
-		Last Modified: Wed, 13 Aug 2025 17:26:11 GMT  
-		Size: 81.5 MB (81463725 bytes)  
+	-	`sha256:59f402fe2a98fccc20b255c74fc100f94277b4d06d76463132c72f7dafe4354c`  
+		Last Modified: Tue, 02 Sep 2025 04:53:16 GMT  
+		Size: 81.5 MB (81463748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8912af52b80bd0db4ff2b6a51d9dbaab0894cf46c5643ad3fde44abb25506227`  
-		Last Modified: Tue, 12 Aug 2025 23:39:52 GMT  
+	-	`sha256:39af266d7e47648a14fdb6b8830ffa7be8c484cc139c85f859afe809596f8a46`  
+		Last Modified: Tue, 02 Sep 2025 04:53:11 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:972ce250eaa6760f24d454e096fdb6d3a90403816a740376563e03a0eb4b9551`  
-		Last Modified: Tue, 12 Aug 2025 23:39:55 GMT  
-		Size: 298.0 B  
+	-	`sha256:7fde9ad70a06bb672ecbda12db9678a6169991c4b47437bcad91e8534b1da785`  
+		Last Modified: Tue, 02 Sep 2025 04:53:11 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:4a6cfebe7936fac5c6b97373033c597d080f60c1db0de2c0499fb6f5da34b8ee
+$ docker pull kapacitor@sha256:cfd4dedb60a41e390dfc9b85f77931871b8c969d9b9f2c66a2e4cd9b4710abe7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3745897 bytes)**  
+-	Total Size: **3.7 MB (3745913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:235cd7f1bcbe49cac80ccf74839f903b9e0f20810ddb7a19ea1cecb6863a4aec`
+-	Image ID: `sha256:c52a169f7adcf5777253e75e49451f8f22ed2296184905887b4c37b3bbf0b9e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7cb9d0ca0e96b8909bdfbe958ac467d13bb6353dc514fb639d4433f726a767a`  
-		Last Modified: Wed, 13 Aug 2025 01:21:28 GMT  
-		Size: 3.7 MB (3730727 bytes)  
+	-	`sha256:118e2379b18bbc6b19ac0580208229b47d3983d8e258bab1ab4daba884071bc1`  
+		Last Modified: Tue, 02 Sep 2025 07:21:27 GMT  
+		Size: 3.7 MB (3730743 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2f331b1f233cd78e7f048bc860290261080c2374350c15561202d4dd58fb7cb`  
-		Last Modified: Wed, 13 Aug 2025 01:21:29 GMT  
+	-	`sha256:f5c7c8d6d7b816b935b3174bb953a63e4d5a9b1a5d8acc1a2861a6a198083d06`  
+		Last Modified: Tue, 02 Sep 2025 07:21:27 GMT  
 		Size: 15.2 KB (15170 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1357,7 +1357,7 @@ $ docker pull kapacitor@sha256:2f1b54a2048c3a3b338544b0c408b33dd54dbc449f63a8dbd
 ## `kapacitor:latest`
 
 ```console
-$ docker pull kapacitor@sha256:d5bada1ee76a55f80a15015f5cc2accbe12453c96649a9f4608020b0756a539c
+$ docker pull kapacitor@sha256:b8be732edc41153315b8dfb8c7c94f0ed38e3c441ed543331d1082b51f1b833f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1468,13 +1468,13 @@ $ docker pull kapacitor@sha256:7ccd2c6261d3a87a73c0935fdc18f46e589e888431fba9a84
 ### `kapacitor:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull kapacitor@sha256:46cf79ad0f89fe2687bf1acf59cffb7b441ba07de25b182d92d31b5431661190
+$ docker pull kapacitor@sha256:34100f6f7977f8d021357b1a2ca36c97211c65825875426ab734dcc921ee64bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.0 MB (159022868 bytes)**  
+-	Total Size: **159.9 MB (159861919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5000def53d67cb759c435f8cc5cb1e26363bd7c4259d26dab4c1a70a26a841a`
+-	Image ID: `sha256:4ee2588efd929c3449bbaf353507e5bf4badc827ade6b0d888dfd248b15b858c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -1488,7 +1488,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=22.04
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:b045ee8ca1dc1b3294d6328d500a5ec30fb4bcdea1a91177f0280497c391ce2b in / 
+ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -1514,51 +1514,51 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:12988d4e65587a5bf2d724b19602de581247805c1ae6298b95f29cef57aabbed`  
-		Last Modified: Wed, 30 Jul 2025 09:58:44 GMT  
-		Size: 27.4 MB (27359247 bytes)  
+	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
+		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
+		Size: 27.4 MB (27361469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476a9430580cac739e29f524f2d4fa032c5bfb4d16c97a34238459efc663af4e`  
-		Last Modified: Tue, 12 Aug 2025 17:24:37 GMT  
-		Size: 7.1 MB (7051909 bytes)  
+	-	`sha256:573b56f55094f2d14930c686b1a46091f6f5d62cadec0da94af57c5297b32867`  
+		Last Modified: Tue, 02 Sep 2025 01:18:59 GMT  
+		Size: 7.1 MB (7051940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a2e62eaf5273f9309d0110fd3120778a77557e5aa2a49de27595f55ec44f2d7`  
-		Last Modified: Wed, 13 Aug 2025 01:24:27 GMT  
-		Size: 43.1 MB (43147465 bytes)  
+	-	`sha256:d9638ee345f265593b563464cf568a673d0e98db70e231aef56afc0c86d6f286`  
+		Last Modified: Tue, 02 Sep 2025 04:52:49 GMT  
+		Size: 44.0 MB (43984242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b364ad99c784d84f60ae66ff3cdd21f20c030193b0c0b0af2895b3e0d9b35c9e`  
-		Last Modified: Wed, 13 Aug 2025 17:26:11 GMT  
-		Size: 81.5 MB (81463725 bytes)  
+	-	`sha256:59f402fe2a98fccc20b255c74fc100f94277b4d06d76463132c72f7dafe4354c`  
+		Last Modified: Tue, 02 Sep 2025 04:53:16 GMT  
+		Size: 81.5 MB (81463748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8912af52b80bd0db4ff2b6a51d9dbaab0894cf46c5643ad3fde44abb25506227`  
-		Last Modified: Tue, 12 Aug 2025 23:39:52 GMT  
+	-	`sha256:39af266d7e47648a14fdb6b8830ffa7be8c484cc139c85f859afe809596f8a46`  
+		Last Modified: Tue, 02 Sep 2025 04:53:11 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:972ce250eaa6760f24d454e096fdb6d3a90403816a740376563e03a0eb4b9551`  
-		Last Modified: Tue, 12 Aug 2025 23:39:55 GMT  
-		Size: 298.0 B  
+	-	`sha256:7fde9ad70a06bb672ecbda12db9678a6169991c4b47437bcad91e8534b1da785`  
+		Last Modified: Tue, 02 Sep 2025 04:53:11 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:latest` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:4a6cfebe7936fac5c6b97373033c597d080f60c1db0de2c0499fb6f5da34b8ee
+$ docker pull kapacitor@sha256:cfd4dedb60a41e390dfc9b85f77931871b8c969d9b9f2c66a2e4cd9b4710abe7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3745897 bytes)**  
+-	Total Size: **3.7 MB (3745913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:235cd7f1bcbe49cac80ccf74839f903b9e0f20810ddb7a19ea1cecb6863a4aec`
+-	Image ID: `sha256:c52a169f7adcf5777253e75e49451f8f22ed2296184905887b4c37b3bbf0b9e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7cb9d0ca0e96b8909bdfbe958ac467d13bb6353dc514fb639d4433f726a767a`  
-		Last Modified: Wed, 13 Aug 2025 01:21:28 GMT  
-		Size: 3.7 MB (3730727 bytes)  
+	-	`sha256:118e2379b18bbc6b19ac0580208229b47d3983d8e258bab1ab4daba884071bc1`  
+		Last Modified: Tue, 02 Sep 2025 07:21:27 GMT  
+		Size: 3.7 MB (3730743 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2f331b1f233cd78e7f048bc860290261080c2374350c15561202d4dd58fb7cb`  
-		Last Modified: Wed, 13 Aug 2025 01:21:29 GMT  
+	-	`sha256:f5c7c8d6d7b816b935b3174bb953a63e4d5a9b1a5d8acc1a2861a6a198083d06`  
+		Last Modified: Tue, 02 Sep 2025 07:21:27 GMT  
 		Size: 15.2 KB (15170 bytes)  
 		MIME: application/vnd.in-toto+json
