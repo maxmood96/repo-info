@@ -177,11 +177,11 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5d47eecbd212ecaa57224626f2364b658f0b609dd6d897ac31c4fb8a2f0e1dd`  
-		Last Modified: Tue, 02 Sep 2025 02:11:45 GMT  
+		Last Modified: Tue, 02 Sep 2025 07:47:03 GMT  
 		Size: 191.2 MB (191178840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c610e312f191a4d4a15693f36c44fcf8f1707ad8d6f7e6872b3bc432e6ac739`  
-		Last Modified: Tue, 02 Sep 2025 02:11:47 GMT  
+		Last Modified: Tue, 02 Sep 2025 07:01:44 GMT  
 		Size: 317.3 MB (317325713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e177c4adc836d10349e4280a9c59b83e292102fb99387e9b43ae8664451b3075`  
