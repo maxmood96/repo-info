@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:97ffc2601d2f392c4290ece2828e7acbe10049e8859d9ca7045ec5eef3bf3298`
+- Image ID: `sha256:b11a4f706454ccb2d77974fce401f7530fafac260a72748aa0e6feaf5f146888`
 - Created: `2025-06-03T04:32:14Z`
-- Virtual Size: ~ 424.48 Mb  
+- Virtual Size: ~ 424.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -729,16 +729,16 @@ $ apt-get source -qq --print-uris fmtlib=8.1.1+ds1-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/f/fmtlib/fmtlib_8.1.1%2bds1-2.debian.tar.xz' fmtlib_8.1.1+ds1-2.debian.tar.xz 13240 SHA512:821f21d9d4ea403abfd202d67aa145e6ce578f7929a875b8b865219efde85ab937e46bf1dfde0544ee3467cb36343ed5ce5a0ed938022339d9950a364b65057f
 ```
 
-### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04`
+### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.2`
 
 Binary Packages:
 
-- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04`
-- `libatomic1:amd64=12.3.0-1ubuntu1~22.04`
-- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04`
-- `libgfortran5:amd64=12.3.0-1ubuntu1~22.04`
-- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04`
-- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04`
+- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libatomic1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgfortran5:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgfortran5/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -752,7 +752,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
+$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.dsc' gcc-12_12.3.0-1ubuntu1~22.04.2.dsc 27845 SHA512:4189e457350c0a6f43a4c9b96df4d4cea23ad97b18c7b5592b7a1e27e66cedb30c03e2d71c1496be2157e38900344bcd6171c389bd803e5d14093530528e19a8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
@@ -1587,21 +1587,26 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.27-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.debian.tar.xz' libxcrypt_4.4.27-1.debian.tar.xz 7764 SHA512:02e38ba06f3555dd930fc7ed44602dc816ce48f4c29fdc085249948596d5e7e96600cb81c8c9fb2e1dc33574d5136d08feeff3eb1dd3522aa8e5cdc9037c1ae0
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.7`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.7`
-- `libxml2-utils=2.9.13+dfsg-1ubuntu0.7`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.8`
+- `libxml2-utils=2.9.13+dfsg-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.dsc' libxml2_2.9.13+dfsg-1ubuntu0.8.dsc 2425 SHA512:892dcb90af854dcba471d48b43ded446e54c9c8fc7ae29b005f54e0c7e4341b65d8c492f960741f5ccd186c370ca3ab600d2701850a3aa87ec48ef98c50a3961
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.8.debian.tar.xz 43872 SHA512:095d77f5a968af3249e218f5ba2ebc9949af9ff6d0d1847e6bfba1d2722fb4340a29f091ddf0d628494da0ea78ba0a81c3dc5313b5d4273d6ee5097f05aaf5b7
+```
 
 ### `dpkg` source package: `libxslt=1.1.34-4ubuntu0.22.04.4`
 
@@ -1666,19 +1671,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-151.161`
+### `dpkg` source package: `linux=5.15.0-153.163`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-151.161`
+- `linux-libc-dev:amd64=5.15.0-153.163`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-153.163
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-153.163.dsc' linux_5.15.0-153.163.dsc 7820 SHA512:60d78034aaa18f49d03762bcce120f4f0bbd17358c52790c16e8218d5b985b434dd4a3691aab503e4609227dabd66f4fccb98b67e92b64180d1c6408c707572f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-153.163.diff.gz' linux_5.15.0-153.163.diff.gz 11929114 SHA512:57f821fc9e67985f0d96094252b45d77c335eadf9c366b07c4e164de6333535f3c40d77b9107a6f15bd89e7522ca29d14451b936354c0f27a9f55ac3900981e7
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2793,17 +2803,17 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.10`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.11`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.10`
-- `libpython3.10-dev:amd64=3.10.12-1~22.04.10`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.10`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.10`
-- `python3.10=3.10.12-1~22.04.10`
-- `python3.10-dev=3.10.12-1~22.04.10`
-- `python3.10-minimal=3.10.12-1~22.04.10`
+- `libpython3.10:amd64=3.10.12-1~22.04.11`
+- `libpython3.10-dev:amd64=3.10.12-1~22.04.11`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.11`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.11`
+- `python3.10=3.10.12-1~22.04.11`
+- `python3.10-dev=3.10.12-1~22.04.11`
+- `python3.10-minimal=3.10.12-1~22.04.11`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-dev/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-dev/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2825,9 +2835,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.dsc' python3.10_3.10.12-1~22.04.11.dsc 3723 SHA512:c4fe28e481e1378b345d5da896de0b7f105dbde3a71139527e25731e1820859226e0c9ba072092b2d67deda6c03630e2141a2b2ed3ed002d15284794008dd69e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.debian.tar.xz' python3.10_3.10.12-1~22.04.11.debian.tar.xz 255884 SHA512:0422ae8d184845ee2c9f9efc88f0b9e1046fe02c89b6cf2ce7350569633502e2d9c878123c215b3a5b1b98a1c5a84d1bb66de6701366c6eda5bba8a33bc01b39
+```
 
 ### `dpkg` source package: `pyyaml=5.4.1-1ubuntu1`
 

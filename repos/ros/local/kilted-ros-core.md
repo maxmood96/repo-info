@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:349a1a95819d6cd8ce7d472e18eb929387e3127ce3766d066b27a8262ee76e79`
+- Image ID: `sha256:c1f47dd28302d069548f25a4c06b9ca3be464e3a2b6caa00abec7694a5b3210a`
 - Created: `2025-06-03T04:32:14Z`
-- Virtual Size: ~ 530.36 Mb  
+- Virtual Size: ~ 530.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -129,19 +129,23 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz' audit_3.1.2-2.1build1.1.debian.tar.xz 18860 SHA512:0d536e42718911a3b237816d67a1cb05f0c4e591dcf6aa2e17a657711e27b523bb8f79e06c895a107f0fa0039bdc192cfffd16f7b0c17eced8102bd902ac16e7
 ```
 
-### `dpkg` source package: `base-files=13ubuntu10.2`
+### `dpkg` source package: `base-files=13ubuntu10.3`
 
 Binary Packages:
 
-- `base-files=13ubuntu10.2`
+- `base-files=13ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=13ubuntu10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.dsc' base-files_13ubuntu10.3.dsc 1377 SHA512:616eacb8d3217d4c3e8a57f5f3561411933ffdf680a4161cdf96cc39494f093933667d59263e77db92725ccfbf22fbbc60f0b6c94fce853a3e15d5e046e8b3fb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.tar.xz' base-files_13ubuntu10.3.tar.xz 94184 SHA512:9fe21ced2bbb578c164f7cd60e6068a7b66d5e62848b6e7b2ea5670fba48d692a0ab477210bbcc92e41ce16b4ae589784c7168979b5b2727a16c4d1df5f8b22b
+```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -1801,21 +1805,26 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.36-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.debian.tar.xz' libxcrypt_4.4.36-4build1.debian.tar.xz 8356 SHA512:d181e5637d40e322cf03d80dff03acb9982c0a07a73229d660d8b2fcd02f31783347c0b0208d2ebb077bdf44e87330b04a8cd10a4bc272dbb0feca7f1adfe013
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.3`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.4`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.3`
-- `libxml2-utils=2.9.14+dfsg-1.3ubuntu3.3`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.4`
+- `libxml2-utils=2.9.14+dfsg-1.3ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.4.dsc 2433 SHA512:d72484f67416d641edc0c2398d1f01608721eacbe6ac203627c890ea8f058c0d0b4e707f556b1afa1b1a35997df24854e8b9f471f1294d9d183062bab8b0e22a
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.4.debian.tar.xz 42392 SHA512:e2bfb8bbc48b548fad245b57950d53bb0df78113704b9889b0bbfa89acfd304c169c3a1635e33651722c771a3352b7bdeff20f97fd851496027db6dfcfbcfbf0
+```
 
 ### `dpkg` source package: `libxslt=1.1.39-0exp1ubuntu0.24.04.2`
 
@@ -1879,19 +1888,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-71.71`
+### `dpkg` source package: `linux=6.8.0-79.79`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-71.71`
+- `linux-libc-dev:amd64=6.8.0-79.79`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-79.79
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-79.79.dsc' linux_6.8.0-79.79.dsc 9342 SHA512:4f5da01f0e7a6d1b668334084de01ec66849e8568f38e6746f810d3591a90a6173ab938e22ad04f0e2c8b3c839f7151c3ffe670cbf62186f571db34f7f82a64a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-79.79.diff.gz' linux_6.8.0-79.79.diff.gz 5740641 SHA512:117c0bed7ba3b9807e54dc593dd0d301a2c3d71ce5c81670077ac8c20daab3714e86424b073bbc7d3dd1dc96055100bef151da1d533efab2729b5b230d05c544
+```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
@@ -3040,17 +3054,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.7`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.8`
 
 Binary Packages:
 
-- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.7`
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.7`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.7`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.7`
-- `python3.12=3.12.3-1ubuntu0.7`
-- `python3.12-dev=3.12.3-1ubuntu0.7`
-- `python3.12-minimal=3.12.3-1ubuntu0.7`
+- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.8`
+- `python3.12=3.12.3-1ubuntu0.8`
+- `python3.12-dev=3.12.3-1ubuntu0.8`
+- `python3.12-minimal=3.12.3-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-dev/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3072,9 +3086,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.dsc' python3.12_3.12.3-1ubuntu0.8.dsc 3920 SHA512:6ec5347db2f302907e401ac4bafc9f884d7f94ebd2d5972f98d0f239121d115fe50cbcc632be12bb31e40cabf26e81e91cba4a92f6f573b4902ed2413a0c2948
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.debian.tar.xz' python3.12_3.12.3-1ubuntu0.8.debian.tar.xz 257268 SHA512:36a58735bef1d2f760403ff898d75f4802d30badcf32ab041fb64e4c8bb0c9cc48de1dfc87f576192c6e03b9128ee50a8609975c7185cb573b51eb4d781036f3
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
