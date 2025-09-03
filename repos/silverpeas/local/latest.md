@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e78ac763e0c3f585909060f2cb4439c04898b5385387b0ee1f92362eb2d5c5d`
+- Image ID: `sha256:e38179dfa75c37ce9cf2acfca965d2d565f775ec9029414cbe693de9ad7e8def`
 - Created: `2025-08-07T14:33:54Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
@@ -1147,16 +1147,16 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.3-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.3-2.debian.tar.xz' game-music-emu_0.6.3-2.debian.tar.xz 4284 SHA512:3aa6b247cc2ecaa9baa9e97355c1081a024bb971f732189ef3bbcfa99fe716350e1b9854f52e7d3e279e7dbcbaef0b046fc57b9b96284b7960cb67fd854c006c
 ```
 
-### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04`
+### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.2`
 
 Binary Packages:
 
-- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04`
-- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04`
-- `libgfortran5:amd64=12.3.0-1ubuntu1~22.04`
-- `libgomp1:amd64=12.3.0-1ubuntu1~22.04`
-- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04`
-- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04`
+- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgfortran5:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgomp1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libquadmath0:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgfortran5/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -1170,7 +1170,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
+$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.dsc' gcc-12_12.3.0-1ubuntu1~22.04.2.dsc 27845 SHA512:4189e457350c0a6f43a4c9b96df4d4cea23ad97b18c7b5592b7a1e27e66cedb30c03e2d71c1496be2157e38900344bcd6171c389bd803e5d14093530528e19a8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
@@ -1271,11 +1271,11 @@ $ apt-get source -qq --print-uris giflib=5.1.9-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.9-2ubuntu0.1.debian.tar.xz' giflib_5.1.9-2ubuntu0.1.debian.tar.xz 11128 SHA512:67166988b9bb5d4bc08ce41971391c24d4e5d5adce8292f2b167c55bc7c38897741e0ebf974296c22e232f93813f3137fc1ee21addb046a46c1dc89c0b14e8ee
 ```
 
-### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.5`
+### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.6`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.72.4-0ubuntu2.5`
+- `libglib2.0-0:amd64=2.72.4-0ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -1286,10 +1286,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.5
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.5.dsc' glib2.0_2.72.4-0ubuntu2.5.dsc 3670 SHA512:e91a30708fc42cdb8090f29c3bb9177cedbd443182c0cd408c8f911a7e2e2b7e68490a680e4faa57bd216b0e8f3f0df366e26bc8cd34949044c93c6751b53a5f
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.5.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.5.debian.tar.xz 148384 SHA512:fd528b4ec420c6593e050d9725e1aee8996152539a48fabb8afb0211015561b8c09d46e61b56b689d536cde24fb7c86de13573c9436bef6ef43fbbf9c0103eaa
+$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.6.dsc' glib2.0_2.72.4-0ubuntu2.6.dsc 3670 SHA512:63c4745c87f1e7f9d2673cf30ce10a64f7e652aacebd443030fadf5660bb92e6fff5622570ff5983b26a602252917e5810e019882d60223f5a3bc762083403ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.6.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.6.debian.tar.xz 150472 SHA512:191c2e94d5bbb5ab0b4bd2009fe23a43ea9248173974876a8f24e5145474b1195b284b0b37317433bd46fec7d21908b45550c67c3118019a30aace1ef98058cf
 ```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.10`
@@ -1511,11 +1511,11 @@ $ apt-get source -qq --print-uris grep=3.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.7-1build1.debian.tar.xz' grep_3.7-1build1.debian.tar.xz 18184 SHA512:cbefc3635a0b0acc33d8a052d3ca7d583adbd1bcfc384559076b5e4f5508b4a8301b0dd54a029aecbab925a6f916c99a2d5bebe0a6936fe5ffeb5a07a0d9a917
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.4`
+### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.5`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.4`
+- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1526,9 +1526,14 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.5.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.5.dsc 3796 SHA512:54d1d6135e5701d0c10e5329ca85d351c34aa60a449e84cee50f1b2b4b3578ce405634a4dea9209023f72779d92943763cec9d2801edbb03d4d442bee11f146a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.5.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.5.debian.tar.xz 52132 SHA512:08541478c46d6760919372ff12b6de876e222f2e13ad49549c91fc4d70ac440603e76916068329cadd4107ffa26cc5e79c3a1381fcb8e3ac27a82e08fcd3af1a
+```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1.1`
 
@@ -4507,20 +4512,25 @@ $ apt-get source -qq --print-uris libxkbcommon=1.4.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_1.4.0-1.debian.tar.xz' libxkbcommon_1.4.0-1.debian.tar.xz 8028 SHA512:d49087f93cd0cdbd56a7756a9895f97eaffdbf5aba8dfb65896337890cf732818373cb5cccee1dcbe99e119b5eff32380f3840c2f3ee2bcaec064632cd26c0a2
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.7`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.7`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.dsc' libxml2_2.9.13+dfsg-1ubuntu0.8.dsc 2425 SHA512:892dcb90af854dcba471d48b43ded446e54c9c8fc7ae29b005f54e0c7e4341b65d8c492f960741f5ccd186c370ca3ab600d2701850a3aa87ec48ef98c50a3961
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.8.debian.tar.xz 43872 SHA512:095d77f5a968af3249e218f5ba2ebc9949af9ff6d0d1847e6bfba1d2722fb4340a29f091ddf0d628494da0ea78ba0a81c3dc5313b5d4273d6ee5097f05aaf5b7
+```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -5653,11 +5663,11 @@ $ apt-get source -qq --print-uris poppler-data=0.4.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.11-1.debian.tar.xz' poppler-data_0.4.11-1.debian.tar.xz 19664 SHA512:3bde3ba66ec5212cae67c1fcdbebd6297b912cb0c8fc02bc0db69c1e8cb86e46631bc7cd5840c8a376585b9548ceed2f7e786b00f28d1403505900d2fb440a30
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.9`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.10`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.9`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -5665,9 +5675,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.10.dsc' poppler_22.02.0-2ubuntu0.10.dsc 3364 SHA512:376eb822d761fdd3f546a71e32022f43992c805e0d2492f8c2f7999d0cd5ef9c49dc343954aa55228c3ad466e1d43fd60399b84fc5fc523a94fa4a15e9134b11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.10.debian.tar.xz' poppler_22.02.0-2ubuntu0.10.debian.tar.xz 46036 SHA512:996a1357b39628c784391e30f96094bdabfbaa4947a8831dd5743dda3698e90c2f6d88d4aa48d2968fdca9e4da6532413fedd780bb84c64627e17b63c63f4909
+```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
@@ -5739,15 +5754,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.10`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.11`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.10`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.10`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.10`
-- `python3.10=3.10.12-1~22.04.10`
-- `python3.10-minimal=3.10.12-1~22.04.10`
+- `libpython3.10:amd64=3.10.12-1~22.04.11`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.11`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.11`
+- `python3.10=3.10.12-1~22.04.11`
+- `python3.10-minimal=3.10.12-1~22.04.11`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -5769,9 +5784,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.dsc' python3.10_3.10.12-1~22.04.11.dsc 3723 SHA512:c4fe28e481e1378b345d5da896de0b7f105dbde3a71139527e25731e1820859226e0c9ba072092b2d67deda6c03630e2141a2b2ed3ed002d15284794008dd69e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.11.debian.tar.xz' python3.10_3.10.12-1~22.04.11.debian.tar.xz 255884 SHA512:0422ae8d184845ee2c9f9efc88f0b9e1046fe02c89b6cf2ce7350569633502e2d9c878123c215b3a5b1b98a1c5a84d1bb66de6701366c6eda5bba8a33bc01b39
+```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4.1`
 
@@ -6320,19 +6340,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.10`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.11`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.3.0-6ubuntu0.10`
+- `libtiff5:amd64=4.3.0-6ubuntu0.11`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.11
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.11.dsc' tiff_4.3.0-6ubuntu0.11.dsc 2406 SHA512:7a3b65c7a41e17540a96152cb12f1ad04e06844aab58c3e06956216dd07f85413358702392c7376b7673b7203f982b19c21f3faaacf295a1ff0a1fe9dea28c55
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.11.debian.tar.xz' tiff_4.3.0-6ubuntu0.11.debian.tar.xz 52268 SHA512:02c75744c0497ef8901e48742146d7317512b7765bfa2d0e6fccd67639d80a70bac758893c482cb411da1a3fd8884d2af92d3c17f13f5dc53487567f4d49aefc
+```
 
 ### `dpkg` source package: `twolame=0.4.0-2build2`
 
