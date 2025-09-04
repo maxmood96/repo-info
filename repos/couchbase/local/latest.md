@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bfe1b3ba090b3f8f8f2c2fb3409e05e62d33ec3a64b58120cda0e26ec64f1cc5`
+- Image ID: `sha256:edbc6e45a390861171a703ef60cb9052c89a267b0a52d97e0df03af2dab877b7`
 - Created: `2025-08-13T18:24:10Z`
 - Virtual Size: ~ 1.83 Gb  
   (total size of all layers on-disk)
@@ -170,19 +170,23 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz' audit_3.1.2-2.1build1.1.debian.tar.xz 18860 SHA512:0d536e42718911a3b237816d67a1cb05f0c4e591dcf6aa2e17a657711e27b523bb8f79e06c895a107f0fa0039bdc192cfffd16f7b0c17eced8102bd902ac16e7
 ```
 
-### `dpkg` source package: `base-files=13ubuntu10.2`
+### `dpkg` source package: `base-files=13ubuntu10.3`
 
 Binary Packages:
 
-- `base-files=13ubuntu10.2`
+- `base-files=13ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=13ubuntu10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.dsc' base-files_13ubuntu10.3.dsc 1377 SHA512:616eacb8d3217d4c3e8a57f5f3561411933ffdf680a4161cdf96cc39494f093933667d59263e77db92725ccfbf22fbbc60f0b6c94fce853a3e15d5e046e8b3fb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.tar.xz' base-files_13ubuntu10.3.tar.xz 94184 SHA512:9fe21ced2bbb578c164f7cd60e6068a7b66d5e62848b6e7b2ea5670fba48d692a0ab477210bbcc92e41ce16b4ae589784c7168979b5b2727a16c4d1df5f8b22b
+```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -1494,20 +1498,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.36-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.debian.tar.xz' libxcrypt_4.4.36-4build1.debian.tar.xz 8356 SHA512:d181e5637d40e322cf03d80dff03acb9982c0a07a73229d660d8b2fcd02f31783347c0b0208d2ebb077bdf44e87330b04a8cd10a4bc272dbb0feca7f1adfe013
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.3`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.4`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.3`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.4.dsc 2433 SHA512:d72484f67416d641edc0c2398d1f01608721eacbe6ac203627c890ea8f058c0d0b4e707f556b1afa1b1a35997df24854e8b9f471f1294d9d183062bab8b0e22a
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.4.debian.tar.xz 42392 SHA512:e2bfb8bbc48b548fad245b57950d53bb0df78113704b9889b0bbfa89acfd304c169c3a1635e33651722c771a3352b7bdeff20f97fd851496027db6dfcfbcfbf0
+```
 
 ### `dpkg` source package: `libzstd=1.5.5+dfsg2-2build1.1`
 
@@ -2097,14 +2106,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.7`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.8`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.7`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.7`
-- `python3.12=3.12.3-1ubuntu0.7`
-- `python3.12-minimal=3.12.3-1ubuntu0.7`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.8`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.8`
+- `python3.12=3.12.3-1ubuntu0.8`
+- `python3.12-minimal=3.12.3-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2126,9 +2135,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.dsc' python3.12_3.12.3-1ubuntu0.8.dsc 3920 SHA512:6ec5347db2f302907e401ac4bafc9f884d7f94ebd2d5972f98d0f239121d115fe50cbcc632be12bb31e40cabf26e81e91cba4a92f6f573b4902ed2413a0c2948
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.8.debian.tar.xz' python3.12_3.12.3-1ubuntu0.8.debian.tar.xz 257268 SHA512:36a58735bef1d2f760403ff898d75f4802d30badcf32ab041fb64e4c8bb0c9cc48de1dfc87f576192c6e03b9128ee50a8609975c7185cb573b51eb4d781036f3
+```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 
