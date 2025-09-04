@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f59ffd33b9af4a4e0c2d72effcfd1bb3b644c67b7778969edb1146be6b804d3`
+- Image ID: `sha256:406d3edaa4606a942a5b087f560e2a5463f6e2787aca49193da67031315fc09b`
 - Created: `2025-08-08T07:40:04Z`
 - Virtual Size: ~ 326.57 Mb  
   (total size of all layers on-disk)
@@ -499,13 +499,13 @@ $ apt-get source -qq --print-uris gawk=1:5.1.0-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gawk/gawk_5.1.0-1ubuntu0.1.debian.tar.xz' gawk_5.1.0-1ubuntu0.1.debian.tar.xz 13352 SHA512:7055836c084e6f0215567d73245af866dcac1f568ba6607d099f81d07c662cb062562fd6687bfe2c36f4566a20c551d1604a1257ac46738f8ac03606e7bfb5a5
 ```
 
-### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04`
+### `dpkg` source package: `gcc-12=12.3.0-1ubuntu1~22.04.2`
 
 Binary Packages:
 
-- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04`
-- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04`
-- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04`
+- `gcc-12-base:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libgcc-s1:amd64=12.3.0-1ubuntu1~22.04.2`
+- `libstdc++6:amd64=12.3.0-1ubuntu1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -519,7 +519,7 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
+$ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.dsc' gcc-12_12.3.0-1ubuntu1~22.04.2.dsc 27845 SHA512:4189e457350c0a6f43a4c9b96df4d4cea23ad97b18c7b5592b7a1e27e66cedb30c03e2d71c1496be2157e38900344bcd6171c389bd803e5d14093530528e19a8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0.orig.tar.gz' gcc-12_12.3.0.orig.tar.gz 91555468 SHA512:a33ce506594e13cf96f0419e6d62b71f8906c87c69426218bf8679d281865f1b170bc2f7379216ae1d6ad9f6bdbf5819c34c65c7537fdb74179c27b0d4ab7b48
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.2.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.2.debian.tar.xz 587544 SHA512:84c4e03cba3f408e752690a34b32fa1e231b501ebd502e4cb4843d74fda287704ff60b8be1d6482297f987fa4ab651a0a605fde27dfdbd364cf7ef2c03e39847
