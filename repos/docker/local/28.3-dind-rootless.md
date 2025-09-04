@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e02ef5f5cabe9695528ed4a1d27d7c4ff5b08b682d29a752bf84acdb8150f9b`
+- Image ID: `sha256:7b29145bd4bdb04e294f02ab731ccc80d4f63de5872d18d7e998db0c960a9dd0`
 - Created: `2025-07-29T11:04:14Z`
-- Virtual Size: ~ 460.94 Mb  
+- Virtual Size: ~ 467.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=28.3.3`
-  - `DOCKER_BUILDX_VERSION=0.26.1`
-  - `DOCKER_COMPOSE_VERSION=2.39.1`
+  - `DOCKER_BUILDX_VERSION=0.27.0`
+  - `DOCKER_COMPOSE_VERSION=2.39.2`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -395,16 +395,16 @@ GPL-2.0-only
 ### `apk` package: `glib`
 
 ```console
-glib-2.84.3-r0 description:
+glib-2.84.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.84.3-r0 webpage:
+glib-2.84.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.84.3-r0 installed size:
+glib-2.84.4-r0 installed size:
 5249 KiB
 
-glib-2.84.3-r0 license:
+glib-2.84.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -667,16 +667,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.2-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -990,16 +990,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.2-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.2-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -1262,16 +1262,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.2-r0 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.2-r0 license:
 Apache-2.0
 
 ```
