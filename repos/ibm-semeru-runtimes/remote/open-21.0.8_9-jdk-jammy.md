@@ -236,7 +236,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 243.0 MB (243028770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b4d814407465b28f3c063ca2a2f2decfdc7fff23091e098b4ea997211d4b318`  
-		Last Modified: Tue, 02 Sep 2025 00:53:06 GMT  
+		Last Modified: Thu, 04 Sep 2025 00:41:11 GMT  
 		Size: 5.2 MB (5215368 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
