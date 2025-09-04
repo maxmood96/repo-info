@@ -1,10 +1,10 @@
-# `neo4j:5.26.11-community-ubi9`
+# `neo4j:5.26.12-community-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:178eb034b52d03bb451a10fbbbf4c1f88a4a96b2b387504b74ff55047139e289`
-- Created: `2025-08-26T15:09:07Z`
-- Virtual Size: ~ 604.63 Mb  
+- Image ID: `sha256:3ae2de67f413793990f7131c164196e595415a6e738c1b9fd516953c358077fe`
+- Created: `2025-09-04T06:40:51Z`
+- Virtual Size: ~ 604.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=90b3465fbdc61889d74cd1c9b49f82602dc3b364b84a1478f271f21af491f5ec`
-  - `NEO4J_TARBALL=neo4j-community-5.26.11-unix.tar.gz`
+  - `NEO4J_SHA256=63a686fc7cd28cbbfeb7cb5a98c6d47569914546f23a571390a9d1a1a65bd286`
+  - `NEO4J_TARBALL=neo4j-community-5.26.12-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -680,7 +680,7 @@ $ dnf --quiet download --source --url json-glib-1.6.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/j/json-glib-1.6.6-1.el9.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-5.14.0-570.37.1.el9_6.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-570.39.1.el9_6.x86_64`
 
 Licenses (from `rpm --query`): ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-2-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR CDDL-1.0) AND ((GPL-2.0-only WITH Linux-syscall-note) OR Linux-OpenIB) AND ((GPL-2.0-only WITH Linux-syscall-note) OR MIT) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR MIT) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-Clear AND GFDL-1.1-no-invariants-or-later AND GPL-1.0-or-later AND (GPL-1.0-or-later OR BSD-3-Clause) AND (GPL-1.0-or-later WITH Linux-syscall-note) AND GPL-2.0-only AND (GPL-2.0-only OR Apache-2.0) AND (GPL-2.0-only OR BSD-2-Clause) AND (GPL-2.0-only OR BSD-3-Clause) AND (GPL-2.0-only OR CDDL-1.0) AND (GPL-2.0-only OR GFDL-1.1-no-invariants-or-later) AND (GPL-2.0-only OR GFDL-1.2-no-invariants-only) AND (GPL-2.0-only WITH Linux-syscall-note) AND GPL-2.0-or-later AND (GPL-2.0-or-later OR BSD-2-Clause) AND (GPL-2.0-or-later OR BSD-3-Clause) AND (GPL-2.0-or-later OR CC-BY-4.0) AND (GPL-2.0-or-later WITH GCC-exception-2.0) AND (GPL-2.0-or-later WITH Linux-syscall-note) AND ISC AND LGPL-2.0-or-later AND (LGPL-2.0-or-later OR BSD-2-Clause) AND (LGPL-2.0-or-later WITH Linux-syscall-note) AND LGPL-2.1-only AND (LGPL-2.1-only OR BSD-2-Clause) AND (LGPL-2.1-only WITH Linux-syscall-note) AND LGPL-2.1-or-later AND (LGPL-2.1-or-later WITH Linux-syscall-note) AND (Linux-OpenIB OR GPL-2.0-only) AND (Linux-OpenIB OR GPL-2.0-only OR BSD-2-Clause) AND Linux-man-pages-copyleft AND MIT AND (MIT OR GPL-2.0-only) AND (MIT OR GPL-2.0-or-later) AND (MIT OR LGPL-2.1-only) AND (MPL-1.1 OR GPL-2.0-only) AND (X11 OR GPL-2.0-only) AND (X11 OR GPL-2.0-or-later) AND Zlib
 
@@ -1676,15 +1676,15 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-25.el9_6.x86_64`
+### `rpm` package: `pam-1.5.1-26.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-25.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-25.el9_6.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-26.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-26.el9_6.src.rpm
 ```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
@@ -1786,37 +1786,37 @@ $ dnf --quiet download --source --url publicsuffix-list-dafsa-20210518-3.el9.noa
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
 ```
 
-### `rpm` package: `python-unversioned-command-3.9.21-2.el9_6.1.noarch`
+### `rpm` package: `python-unversioned-command-3.9.21-2.el9_6.2.noarch`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-unversioned-command-3.9.21-2.el9_6.1.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.1.src.rpm
+$ dnf --quiet download --source --url python-unversioned-command-3.9.21-2.el9_6.2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.2.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.21-2.el9_6.1.x86_64`
+### `rpm` package: `python3-3.9.21-2.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.9.21-2.el9_6.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.1.src.rpm
+$ dnf --quiet download --source --url python3-3.9.21-2.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.2.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.21-2.el9_6.1.x86_64`
+### `rpm` package: `python3-libs-3.9.21-2.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.9.21-2.el9_6.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.1.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.9.21-2.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.2.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-wheel-21.3.1-1.el9.noarch`

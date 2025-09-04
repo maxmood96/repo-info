@@ -1680,12 +1680,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-1.5.1-25.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-25.el9_6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
 
@@ -1790,34 +1785,19 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Python
 
-Source:
-
-```console
-$ dnf --quiet download --source --url python-unversioned-command-3.9.21-2.el9_6.1.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `python3-3.9.21-2.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-Source:
-
-```console
-$ dnf --quiet download --source --url python3-3.9.21-2.el9_6.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `python3-libs-3.9.21-2.el9_6.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-Source:
-
-```console
-$ dnf --quiet download --source --url python3-libs-3.9.21-2.el9_6.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `python3-pip-wheel-21.3.1-1.el9.noarch`
 
