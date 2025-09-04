@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdf2a679b61849179e9b4c9ffe8890e19b9265a83a2f0a9404a98b6a322208cf`
-- Created: `2025-08-07T17:02:44Z`
-- Virtual Size: ~ 573.26 Mb  
+- Image ID: `sha256:2b695279ee93f528c0bb1295f508cdd333ee0c80732f794a246a29c94f112a59`
+- Created: `2025-08-28T20:58:57Z`
+- Virtual Size: ~ 573.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -136,19 +136,23 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz' audit_3.1.2-2.1build1.1.debian.tar.xz 18860 SHA512:0d536e42718911a3b237816d67a1cb05f0c4e591dcf6aa2e17a657711e27b523bb8f79e06c895a107f0fa0039bdc192cfffd16f7b0c17eced8102bd902ac16e7
 ```
 
-### `dpkg` source package: `base-files=13ubuntu10.2`
+### `dpkg` source package: `base-files=13ubuntu10.3`
 
 Binary Packages:
 
-- `base-files=13ubuntu10.2`
+- `base-files=13ubuntu10.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=13ubuntu10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.dsc' base-files_13ubuntu10.3.dsc 1377 SHA512:616eacb8d3217d4c3e8a57f5f3561411933ffdf680a4161cdf96cc39494f093933667d59263e77db92725ccfbf22fbbc60f0b6c94fce853a3e15d5e046e8b3fb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.3.tar.xz' base-files_13ubuntu10.3.tar.xz 94184 SHA512:9fe21ced2bbb578c164f7cd60e6068a7b66d5e62848b6e7b2ea5670fba48d692a0ab477210bbcc92e41ce16b4ae589784c7168979b5b2727a16c4d1df5f8b22b
+```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -1492,19 +1496,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-71.71`
+### `dpkg` source package: `linux=6.8.0-79.79`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-71.71`
+- `linux-libc-dev:amd64=6.8.0-79.79`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-79.79
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-79.79.dsc' linux_6.8.0-79.79.dsc 9342 SHA512:4f5da01f0e7a6d1b668334084de01ec66849e8568f38e6746f810d3591a90a6173ab938e22ad04f0e2c8b3c839f7151c3ffe670cbf62186f571db34f7f82a64a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-79.79.diff.gz' linux_6.8.0-79.79.diff.gz 5740641 SHA512:117c0bed7ba3b9807e54dc593dd0d301a2c3d71ce5c81670077ac8c20daab3714e86424b073bbc7d3dd1dc96055100bef151da1d533efab2729b5b230d05c544
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
