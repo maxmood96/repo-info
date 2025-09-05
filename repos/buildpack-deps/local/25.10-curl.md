@@ -203,14 +203,9 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.1.0-2build4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.1.0-2build4.dsc' brotli_1.1.0-2build4.dsc 2364 SHA512:9307728e51cd08c6df5b2c828bfbf8d68e294a89446100ad239acd86451ee70ed262514e336c7614a93abc3254b2aa48f5db528a32623b6d9344ad8bfffaae63
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA512:7a94f8b1ca1d3a411c6b5681bd2ed66183468f7b37a24741601d77ed4353577805de84c810dd26086d4afe6b11bfc4791db3ba7f6f9986bc7acbb8e9b43f488b
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.1.0-2build4.debian.tar.xz' brotli_1.1.0-2build4.debian.tar.xz 5740 SHA512:012bd62881d9e71caaf589e563c2f6198f86372abc7afb22b2ffbc757fde5f72191142bc83ec98093e258a14cd1dc92e2cb9734b6d8f957368b9c8c48bcabc17
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -284,13 +279,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`, `/usr/share/doc/co
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils-from=0.0.0~ubuntu20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.dsc' coreutils-from_0.0.0~ubuntu20.dsc 1958 SHA512:57339181d6513f890a2f22d3135ec597cf428a35c821afaf2c5fdb044868f93e73cd8b84442c69adc43f48c10d9416ec5b0511031cdc4ccef8e8f54c8dabfd13
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.tar.xz' coreutils-from_0.0.0~ubuntu20.tar.xz 6888 SHA512:5fecf0936829a7bf375a241511ce88a98fec455499ffe63737e937d8625a89e0431eb3a063a4236c49a19995c16632cc8ff9d489f535b0fc2b0af14f2235c78d
-```
 
 ### `dpkg` source package: `coreutils=9.5-1ubuntu2`
 
@@ -312,8 +303,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris coreutils=9.5-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.dsc' coreutils-from_0.0.0~ubuntu20.dsc 1958 SHA512:57339181d6513f890a2f22d3135ec597cf428a35c821afaf2c5fdb044868f93e73cd8b84442c69adc43f48c10d9416ec5b0511031cdc4ccef8e8f54c8dabfd13
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.tar.xz' coreutils-from_0.0.0~ubuntu20.tar.xz 6888 SHA512:5fecf0936829a7bf375a241511ce88a98fec455499ffe63737e937d8625a89e0431eb3a063a4236c49a19995c16632cc8ff9d489f535b0fc2b0af14f2235c78d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu22.dsc' coreutils-from_0.0.0~ubuntu22.dsc 1966 SHA512:7969c6b2df5659a413e6eb81907b1dfc74d70b13dd006cae7c56d8b626e5f2494e91d2000f216ae66bd2d7005997910877620858a697df3ef5083ba41275f70c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu22.tar.xz' coreutils-from_0.0.0~ubuntu22.tar.xz 7200 SHA512:1bf154681356a62e2ee03869e6b3bf2c76a60899d0ad2f07892aa90ccabc373fa4a545a599c9e0035cc3d07d66c13ecfe93d76ef779a7808ad6ec686f7329c37
 ```
 
 ### `dpkg` source package: `curl=8.14.1-1ubuntu2`
@@ -338,15 +329,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.14.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1-1ubuntu2.dsc' curl_8.14.1-1ubuntu2.dsc 3259 SHA512:1a5fa26df83be94be78301c62f59aa64f4120b7efeffbb42188f35de571101838e3ca577234a32d82c23ec590aabe24930e0b7a67365284c6a6b16f0740e3e93
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA512:22307bd41d5ded22e7e53e2412b3218763db9b7c32b1254df26172e6cf00d1650c66874dfc03037da89a5bd72ffbca1eeb83784be62a38d5779484376f3a53c7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA512:c9b7ad3407660e87fed16a4184a5d75f08815ab569dc8972115430fe750ca5a0a7c72b60e9bacc5ff50084256d1ebc80bb2141f664fa1e0fb239cb86b03f8819
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1-1ubuntu2.debian.tar.xz' curl_8.14.1-1ubuntu2.debian.tar.xz 52948 SHA512:1dab78f1c997f977d121afeec0d2eb372e575e6e5d479f2fb41f15b31db9855f37d996f1efc71fe96dbd6f6775805630f71ac5727eb1953022b2f8a14ef84a17
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -397,14 +382,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-12ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-12ubuntu1.dsc' dash_0.5.12-12ubuntu1.dsc 2060 SHA512:540bd534f36366297746f183d3613eb0848f4e18aa50b306d3e7c130cc2e107d6eb5b02bab2952efca336c20fbf8683d4f421e5cf82c81a026a6d385ab0c2f1c
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA512:13bd262be0089260cbd13530a9cf34690c0abeb2f1920eb5e61be7951b716f9f335b86279d425dbfae56cbd49231a8fdffdff70601a5177da3d543be6fc5eb17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-12ubuntu1.debian.tar.xz' dash_0.5.12-12ubuntu1.debian.tar.xz 47976 SHA512:5e7603682e51045e053e5d014cc4fe1af15fe2d903ef1fcc1ebbec066d895705639f4a087254c933163cbbd2afd94f061cbda9d6d66b9040a269d45c757f48fd
-```
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg2-9`
 
@@ -603,15 +583,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.10.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-3.dsc' findutils_4.10.0-3.dsc 2291 SHA512:7a651b7be4777d486eee6fc81ba656734e7952a1adae79c3c5d6a5f02441fa04841026dbbd3d9f2d627f4c627d7e0c54c6756e2ffaf3ba47222be3671c81d73b
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz' findutils_4.10.0.orig.tar.xz 2240712 SHA512:b8b683d21cd26c6da4f41c56e83cadbda4780f8610a2bbd4b4e34bb1f339c3209721974b03e076d5eef0331fd876d947b398197aad37c29bbcc2e0405c641b34
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz.asc' findutils_4.10.0.orig.tar.xz.asc 488 SHA512:a835153a0671309021be187bf78afee58d9682acb40545aaa9dd187f0ebdea0cfa5583bd03f363243633ea056ddb0a7a6603987ab5e34a608426cb4265ac6d8f
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-3.debian.tar.xz' findutils_4.10.0-3.debian.tar.xz 33364 SHA512:578c4fa152b39e0e0b9d5ab1ea146889ae53cb623d01f84a93d0ba936c9355b2bc5eb20bd761e5638226a040d131edaba60cc573bb3ef4f04889cd5067d167f5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/findutils/4.10.0-3/
+
 
 ### `dpkg` source package: `gcc-15=15.2.0-1ubuntu1`
 
@@ -630,14 +608,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-1ubuntu1.dsc' gcc-15_15.2.0-1ubuntu1.dsc 52311 SHA512:bb34a410e0f896807f4524ab2a88c69480918ba770aebc7c8d72843d71d03c95bd124e3e01494b9c42256299607fd1a8bc63aa45d460842128665f3f30e8dbbf
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-1ubuntu1.debian.tar.xz' gcc-15_15.2.0-1ubuntu1.debian.tar.xz 2585652 SHA512:ba8962af646bd2925e86448fd4fa70ef0851ef278191fef650488395b659c65ec8c6cef8243f59aa81c7d4d0b90f7d69cfa96bb11d28543949f61ff0251974c1
-```
 
 ### `dpkg` source package: `glibc=2.42-0ubuntu1`
 

@@ -391,20 +391,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2.dsc' bash_5.2.37-2.dsc 2162 SHA256:7e5f6d5a26093e812f8841d5cf3245054102e86986017d8edd859417b03707f9
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA256:370704c9c859f4060b7df19055e43bb9b5fa09d887699cf6ba87885c5485d36a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-2.debian.tar.xz' bash_5.2.37-2.debian.tar.xz 88360 SHA256:42e03ef523258b61fa765b8c9719d7bf461f2a274260d07fbe45ca7e4627923a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.2.37-2/
 
-- https://sources.debian.net/src/bash/5.2.37-2/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.2.37-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.2.37-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils-gold=2.44-2`
 
@@ -1399,20 +1392,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-15-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-1
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0-1.dsc' gcc-15_15.2.0-1.dsc 52169 SHA256:3f2979980e89fa40664ea652f6a38f38f5a998229336ae19ccda2d1a950f6bae
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 100989491 SHA256:3121d3e2821fe21088deb77f11ee786d80969a1c55255386a43ecca1e06b47c0
-'http://deb.debian.org/debian/pool/main/g/gcc-15/gcc-15_15.2.0-1.debian.tar.xz' gcc-15_15.2.0-1.debian.tar.xz 977016 SHA256:e26763bc610faf07b1e6a656fb25669b663f1ad76911debf8f7efddfcba90330
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-15/15.2.0-1/
 
-- https://sources.debian.net/src/gcc-15/15.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-15/15.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-15/15.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.220`
 
@@ -1429,19 +1415,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.220
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.220.dsc' gcc-defaults_1.220.dsc 36895 SHA256:abfa2d362033435385e733f97d0cace1fbc917fd4160c81cc89abac38d3cdc37
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.220.tar.xz' gcc-defaults_1.220.tar.xz 54044 SHA256:d40fbdb57f351a58e050c3e1037201853e88e3f673242b62357dc20030ad4805
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.220/
 
-- https://sources.debian.net/src/gcc-defaults/1.220/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.220/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.220/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.24-2`
 
@@ -3979,20 +3959,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpc3/copyright`)
 
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpclib3=1.3.1-1
-'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.3.1-1.dsc' mpclib3_1.3.1-1.dsc 1877 SHA256:b2252a499fd0f8e92ce2cf7d8e68477ffc9dd06127803a91f0a1115822efec75
-'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.3.1.orig.tar.gz' mpclib3_1.3.1.orig.tar.gz 773573 SHA256:ab642492f5cf882b74aa0cb730cd410a81edcdbec895183ce930e706c1c759b8
-'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.3.1-1.debian.tar.xz' mpclib3_1.3.1-1.debian.tar.xz 4656 SHA256:25adb496258adacad69c022d712f96fbc465bcef9fd4751829dc351d9ce6a45d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mpclib3/1.3.1-1/
 
-- https://sources.debian.net/src/mpclib3/1.3.1-1/ (for browsing the source)
-- https://sources.debian.net/src/mpclib3/1.3.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpclib3/1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpfr4=4.2.2-1`
 
@@ -4005,20 +3978,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.2.2-1
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.2-1.dsc' mpfr4_4.2.2-1.dsc 1960 SHA256:08ee7b45f8a9980570508770a9d48f70d4c1962fd7c98af4a78cbc3747002ecd
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.2.orig.tar.xz' mpfr4_4.2.2.orig.tar.xz 1505596 SHA256:b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.2.2-1.debian.tar.xz' mpfr4_4.2.2-1.debian.tar.xz 12564 SHA256:3e203524cdc516a99ec8a676dd9d21435b5f020e624149d39f4c530393d5a563
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mpfr4/4.2.2-1/
 
-- https://sources.debian.net/src/mpfr4/4.2.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mpfr4/4.2.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpfr4/4.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mysql-defaults=1.1.1`
 
@@ -5467,20 +5433,13 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc3/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.9.0-1
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.9.0-1.dsc' utf8proc_2.9.0-1.dsc 2187 SHA256:bb9fd54cb4584ee7c677901312608249f503aa910ca60db043d3273b86dd228a
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.9.0.orig.tar.gz' utf8proc_2.9.0.orig.tar.gz 193465 SHA256:18c1626e9fc5a2e192311e36b3010bfc698078f692888940f1fa150547abb0c1
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.9.0-1.debian.tar.xz' utf8proc_2.9.0-1.debian.tar.xz 5836 SHA256:b285489bb5d293ce24d2eea42450f3ef15ff13a23fc422de6a0cf5760872f789
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/utf8proc/2.9.0-1/
 
-- https://sources.debian.net/src/utf8proc/2.9.0-1/ (for browsing the source)
-- https://sources.debian.net/src/utf8proc/2.9.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/utf8proc/2.9.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41.1-1`
 

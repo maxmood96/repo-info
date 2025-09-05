@@ -393,14 +393,9 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli-dev/copyright`, `/usr/share/do
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.1.0-2build4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.1.0-2build4.dsc' brotli_1.1.0-2build4.dsc 2364 SHA512:9307728e51cd08c6df5b2c828bfbf8d68e294a89446100ad239acd86451ee70ed262514e336c7614a93abc3254b2aa48f5db528a32623b6d9344ad8bfffaae63
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA512:7a94f8b1ca1d3a411c6b5681bd2ed66183468f7b37a24741601d77ed4353577805de84c810dd26086d4afe6b11bfc4791db3ba7f6f9986bc7acbb8e9b43f488b
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.1.0-2build4.debian.tar.xz' brotli_1.1.0-2build4.debian.tar.xz 5740 SHA512:012bd62881d9e71caaf589e563c2f6198f86372abc7afb22b2ffbc757fde5f72191142bc83ec98093e258a14cd1dc92e2cb9734b6d8f957368b9c8c48bcabc17
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -457,14 +452,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.18.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.4-1.dsc' cairo_1.18.4-1.dsc 2763 SHA512:10a8f66af47ad841224eb6cbfd43e2c2c2217b3437582c0458c244a2e7bbc2dffecd3f43a59cca168b2af924c744d414247896cbd032c73a2fcb2c23574660d1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.4.orig.tar.xz' cairo_1.18.4.orig.tar.xz 32578804 SHA512:863679f817ed67dc2c916c035d740916e27e7e69c04fca63936e37d274e7f4c79848d16c8f7c481798864602e8847c489f698df89b785cbc576c925dbd513316
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.4-1.debian.tar.xz' cairo_1.18.4-1.debian.tar.xz 29920 SHA512:f0b298463141bbd82e12e0d1cc6c9e53f3263a4f8eaeb5a5a8d90f985537c26fea69e278324ea8d3c5bc1f43cba2d3e05802297d0e209adbbed58828810d867e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.18.4-1/
+
 
 ### `dpkg` source package: `cdebconf=0.279ubuntu1`
 
@@ -498,13 +492,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`, `/usr/share/doc/co
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils-from=0.0.0~ubuntu20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.dsc' coreutils-from_0.0.0~ubuntu20.dsc 1958 SHA512:57339181d6513f890a2f22d3135ec597cf428a35c821afaf2c5fdb044868f93e73cd8b84442c69adc43f48c10d9416ec5b0511031cdc4ccef8e8f54c8dabfd13
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.tar.xz' coreutils-from_0.0.0~ubuntu20.tar.xz 6888 SHA512:5fecf0936829a7bf375a241511ce88a98fec455499ffe63737e937d8625a89e0431eb3a063a4236c49a19995c16632cc8ff9d489f535b0fc2b0af14f2235c78d
-```
 
 ### `dpkg` source package: `coreutils=9.5-1ubuntu2`
 
@@ -526,8 +516,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris coreutils=9.5-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.dsc' coreutils-from_0.0.0~ubuntu20.dsc 1958 SHA512:57339181d6513f890a2f22d3135ec597cf428a35c821afaf2c5fdb044868f93e73cd8b84442c69adc43f48c10d9416ec5b0511031cdc4ccef8e8f54c8dabfd13
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu20.tar.xz' coreutils-from_0.0.0~ubuntu20.tar.xz 6888 SHA512:5fecf0936829a7bf375a241511ce88a98fec455499ffe63737e937d8625a89e0431eb3a063a4236c49a19995c16632cc8ff9d489f535b0fc2b0af14f2235c78d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu22.dsc' coreutils-from_0.0.0~ubuntu22.dsc 1966 SHA512:7969c6b2df5659a413e6eb81907b1dfc74d70b13dd006cae7c56d8b626e5f2494e91d2000f216ae66bd2d7005997910877620858a697df3ef5083ba41275f70c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu22.tar.xz' coreutils-from_0.0.0~ubuntu22.tar.xz 7200 SHA512:1bf154681356a62e2ee03869e6b3bf2c76a60899d0ad2f07892aa90ccabc373fa4a545a599c9e0035cc3d07d66c13ecfe93d76ef779a7808ad6ec686f7329c37
 ```
 
 ### `dpkg` source package: `curl=8.14.1-1ubuntu2`
@@ -554,15 +544,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.14.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1-1ubuntu2.dsc' curl_8.14.1-1ubuntu2.dsc 3259 SHA512:1a5fa26df83be94be78301c62f59aa64f4120b7efeffbb42188f35de571101838e3ca577234a32d82c23ec590aabe24930e0b7a67365284c6a6b16f0740e3e93
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA512:22307bd41d5ded22e7e53e2412b3218763db9b7c32b1254df26172e6cf00d1650c66874dfc03037da89a5bd72ffbca1eeb83784be62a38d5779484376f3a53c7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA512:c9b7ad3407660e87fed16a4184a5d75f08815ab569dc8972115430fe750ca5a0a7c72b60e9bacc5ff50084256d1ebc80bb2141f664fa1e0fb239cb86b03f8819
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1-1ubuntu2.debian.tar.xz' curl_8.14.1-1ubuntu2.debian.tar.xz 52948 SHA512:1dab78f1c997f977d121afeec0d2eb372e575e6e5d479f2fb41f15b31db9855f37d996f1efc71fe96dbd6f6775805630f71ac5727eb1953022b2f8a14ef84a17
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -613,14 +597,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-12ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-12ubuntu1.dsc' dash_0.5.12-12ubuntu1.dsc 2060 SHA512:540bd534f36366297746f183d3613eb0848f4e18aa50b306d3e7c130cc2e107d6eb5b02bab2952efca336c20fbf8683d4f421e5cf82c81a026a6d385ab0c2f1c
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA512:13bd262be0089260cbd13530a9cf34690c0abeb2f1920eb5e61be7951b716f9f335b86279d425dbfae56cbd49231a8fdffdff70601a5177da3d543be6fc5eb17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-12ubuntu1.debian.tar.xz' dash_0.5.12-12ubuntu1.debian.tar.xz 47976 SHA512:5e7603682e51045e053e5d014cc4fe1af15fe2d903ef1fcc1ebbec066d895705639f4a087254c933163cbbd2afd94f061cbda9d6d66b9040a269d45c757f48fd
-```
 
 ### `dpkg` source package: `db-defaults=1:5.3.21ubuntu3`
 
@@ -964,15 +943,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.10.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-3.dsc' findutils_4.10.0-3.dsc 2291 SHA512:7a651b7be4777d486eee6fc81ba656734e7952a1adae79c3c5d6a5f02441fa04841026dbbd3d9f2d627f4c627d7e0c54c6756e2ffaf3ba47222be3671c81d73b
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz' findutils_4.10.0.orig.tar.xz 2240712 SHA512:b8b683d21cd26c6da4f41c56e83cadbda4780f8610a2bbd4b4e34bb1f339c3209721974b03e076d5eef0331fd876d947b398197aad37c29bbcc2e0405c641b34
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz.asc' findutils_4.10.0.orig.tar.xz.asc 488 SHA512:a835153a0671309021be187bf78afee58d9682acb40545aaa9dd187f0ebdea0cfa5583bd03f363243633ea056ddb0a7a6603987ab5e34a608426cb4265ac6d8f
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-3.debian.tar.xz' findutils_4.10.0-3.debian.tar.xz 33364 SHA512:578c4fa152b39e0e0b9d5ab1ea146889ae53cb623d01f84a93d0ba936c9355b2bc5eb20bd761e5638226a040d131edaba60cc573bb3ef4f04889cd5067d167f5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/findutils/4.10.0-3/
+
 
 ### `dpkg` source package: `fontconfig=2.15.0-2.3ubuntu1`
 
@@ -1042,18 +1019,13 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype-dev/copyright`, `/usr/share/
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.13.3+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg-1.dsc' freetype_2.13.3+dfsg-1.dsc 3680 SHA512:da953f9b177530c782fc32e09d5b53155c36f20664f35bf408a9ebe3d1f006d7df9d452ab358a7f707f1ff65223062b57cf1c8c55115dac9a493c593e76e63fd
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2demos.tar.xz' freetype_2.13.3+dfsg.orig-ft2demos.tar.xz 342404 SHA512:e662a20ad2ff80534e8ea0df2f299e8f61350f13d279f80f8257b18352e863dd2c266791b85d3410b0c83966cb12e3ff49cf398b83a651dc73772df9fcf5936c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.13.3+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:c676452fb04b49824ce0a7287b46dc0234cee301bf80d31da01f5a1e7009ddbc0479866bfca62086fe23105436b0c02b9fb729b8fa24e7ca703c0fc357fe3675
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2docs.tar.xz' freetype_2.13.3+dfsg.orig-ft2docs.tar.xz 2173852 SHA512:54ef9e3a4f0c298893268ed409f59aa1620a60c656ee3f8bdddbb91ffb2e70eea2f016a85c0a02eef699de362abee4aabae4482f0fa1cbf42967b5873fc84f2d
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.13.3+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:bd1699aa0bf9f93a02b87a9c59ee6b69e4b24626fbcfbf9e0a0739f2634923bd397ee51379f57aae88465823ceb6bfe5cf6708a2bfa32d76f4a64ad6a9c08e3b
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg.orig.tar.xz' freetype_2.13.3+dfsg.orig.tar.xz 2201416 SHA512:634c2644bb70b93a605fae4d3e731cb13d149af4d01029ecf2d166b2e07cba07489303440a836057adc54f9bdabcceb7fde102dc5e5bf69f35c99ebae66f7293
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.3%2bdfsg-1.debian.tar.xz' freetype_2.13.3+dfsg-1.debian.tar.xz 43904 SHA512:b701ab41be470caf67fdf2efcd37f7504145d45872ce52d409a8e2a73b49031bc7159d0b1be02b4cc2b2abd82ca93e43d86b26bc3d3e7a08749f52ae5e3c9367
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/freetype/2.13.3+dfsg-1/
+
 
 ### `dpkg` source package: `fribidi=1.0.16-1`
 
@@ -1111,14 +1083,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-15/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-15=15.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-1ubuntu1.dsc' gcc-15_15.2.0-1ubuntu1.dsc 52311 SHA512:bb34a410e0f896807f4524ab2a88c69480918ba770aebc7c8d72843d71d03c95bd124e3e01494b9c42256299607fd1a8bc63aa45d460842128665f3f30e8dbbf
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0.orig.tar.gz' gcc-15_15.2.0.orig.tar.gz 105962230 SHA512:83887af5c7798105d1ad85f0e9c794daa3cf030638bf40b3bff48771b8325d95c9a0d99d7d2c86c8e45499ff87f975e1914d00b72482862357645cc7ec330d38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-15/gcc-15_15.2.0-1ubuntu1.debian.tar.xz' gcc-15_15.2.0-1ubuntu1.debian.tar.xz 2585652 SHA512:ba8962af646bd2925e86448fd4fa70ef0851ef278191fef650488395b659c65ec8c6cef8243f59aa81c7d4d0b90f7d69cfa96bb11d28543949f61ff0251974c1
-```
 
 ### `dpkg` source package: `gcc-defaults=1.222ubuntu1`
 
@@ -1135,13 +1102,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.222ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.222ubuntu1.dsc' gcc-defaults_1.222ubuntu1.dsc 37375 SHA512:8005980d3223247bf7de7b41511d4d3b55c37876b2a107680754b679d8f08fec0e407c96c28262428515dd463f59a09b28ce4759ff3ad59666cfd5f555dd496d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.222ubuntu1.tar.xz' gcc-defaults_1.222ubuntu1.tar.xz 56852 SHA512:e2616cad2f99e6b514ef35bf5263fda5369179270d8b628c7f2969ce1feed6fbfea9fe4aa4d8831e68a9f502c7be3fa0938656c9333716b1621cbd91fe3f5502
-```
 
 ### `dpkg` source package: `gdbm=1.26-1`
 
@@ -3137,13 +3100,14 @@ Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libxml2/2.14.5+dfsg-0.2/
-
+```console
+$ apt-get source -qq --print-uris libxml2=2.14.5+dfsg-0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.14.5%2bdfsg-0.2.dsc' libxml2_2.14.5+dfsg-0.2.dsc 2985 SHA512:6b03f224f500ed11620f2efa05ed42ab0e6c7117d117918c4c6ea56106627c5bc285f4ec8f62dd0e246c58bdf4790a2e4c32000efd475b35cca76f1ed59b5242
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.14.5%2bdfsg.orig.tar.xz' libxml2_2.14.5+dfsg.orig.tar.xz 1536692 SHA512:8583875597ecae6ece4619b92d3c1ce11d5f3bb93027042d6cafb58ca2c297fc18120862f0aea10273bebe1056687737e28d5452701f7b3eea905076e2259e06
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.14.5%2bdfsg-0.2.debian.tar.xz' libxml2_2.14.5+dfsg-0.2.debian.tar.xz 36732 SHA512:534e849689eeab4f03302b58eb86c312c74e756e6824afb558183408aac16d675e02a390217be1d72d82acfb39950212c8787e2129e6868dc4ac49a403f63dfe
+```
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1`
 
@@ -3261,14 +3225,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.16.0-16.16
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.16.0-16.16.dsc' linux_6.16.0-16.16.dsc 8464 SHA512:a8af35889fd1a17f5541957138b332431a883e15d83ce146d64ff29293f593838b31cb8c480d2d4f2ae4e1ed4a2ed7122c5c6a46ac4ce2a99abdf7bcb0f86a36
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.16.0.orig.tar.gz' linux_6.16.0.orig.tar.gz 247360331 SHA512:abc1360664e5cce86228f64e34f1363aec712a9ac8f84cb0ac75df25fd68cb3d8ba3160aa616e3a78efb3616106ab0df2be0a43e215eda934490191e9bcd9b2b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.16.0-16.16.diff.gz' linux_6.16.0-16.16.diff.gz 1344879 SHA512:d5b9dec0d8eb4a6a16a6195b48cb704687aab96b95a9a0e7423f5292ea5af0ff4f17380ddbfb1f6b4d847f93651b354d97e81a4e13b58f201239163925ce2352
-```
 
 ### `dpkg` source package: `lto-disabled-list=68`
 

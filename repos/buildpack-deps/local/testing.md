@@ -3436,20 +3436,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.5.4-4
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-4.dsc' libtool_2.5.4-4.dsc 2232 SHA256:37d98d7c45d1c12c0b7bd55fb6a90fa05aff8aa9ab2bbd9617ce7a6233b1965e
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4.orig.tar.xz' libtool_2.5.4.orig.tar.xz 1069572 SHA256:d9189031edeaa6aa74695b2aeb80a8c26df50b29d8b72c991667e01adecea42c
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-4.debian.tar.xz' libtool_2.5.4-4.debian.tar.xz 37504 SHA256:93e8e286db1322a4f17e3120654ec2664a721e6684c017cb37d471daeb380f8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.5.4-4/
 
-- https://sources.debian.net/src/libtool/2.5.4-4/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.5.4-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.5.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.3-2`
 
@@ -3973,21 +3966,13 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.19-8
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-8.dsc' m4_1.4.19-8.dsc 1783 SHA256:d7e5a26f911d98e7f333c736aa0fa0be4e9a69d88d464a93860a6d1a84e4a588
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz' m4_1.4.19.orig.tar.xz 1654908 SHA256:63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz.asc' m4_1.4.19.orig.tar.xz.asc 488 SHA256:9700ba4dca539b06e033b4e3ab37fa5b983becb6c14569a8b8aa02dee6ab666c
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-8.debian.tar.xz' m4_1.4.19-8.debian.tar.xz 18044 SHA256:81299879531d9b956b71b4dfe4997325f48309cc154bc23a2e9ef71b2b8ca20f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/m4/1.4.19-8/
 
-- https://sources.debian.net/src/m4/1.4.19-8/ (for browsing the source)
-- https://sources.debian.net/src/m4/1.4.19-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/m4/1.4.19-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `make-dfsg=4.4.1-2`
 
@@ -4554,13 +4539,21 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssh=1:10.0p1-7
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7.dsc' openssh_10.0p1-7.dsc 3654 SHA256:67fee78460ebb9adbe75726dc764360886dec4721cd3d10217bd0d071db0badb
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7.debian.tar.xz' openssh_10.0p1-7.debian.tar.xz 198996 SHA256:09888aeb70db929b83f6acf8439f9de43c69ef7de89bb2f9549ef1bff5688fc5
+```
 
-- http://snapshot.debian.org/package/openssh/1:10.0p1-7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssh/1:10.0p1-7/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:10.0p1-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:10.0p1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.1-1`
 

@@ -2386,13 +2386,21 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssh=1:10.0p1-7
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7.dsc' openssh_10.0p1-7.dsc 3654 SHA256:67fee78460ebb9adbe75726dc764360886dec4721cd3d10217bd0d071db0badb
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7.debian.tar.xz' openssh_10.0p1-7.debian.tar.xz 198996 SHA256:09888aeb70db929b83f6acf8439f9de43c69ef7de89bb2f9549ef1bff5688fc5
+```
 
-- http://snapshot.debian.org/package/openssh/1:10.0p1-7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssh/1:10.0p1-7/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:10.0p1-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:10.0p1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.1-1`
 
