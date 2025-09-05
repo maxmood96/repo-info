@@ -1,10 +1,10 @@
-# `dart:3.10.0-75.2.beta-sdk`
+# `dart:3.10.0-162.1.beta-sdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:73772d903bce62e961e7f57a0e24cd37f59cfcb2abc3ae3ff6f366d90e850b38`
-- Created: `2025-08-20T13:12:00Z`
-- Virtual Size: ~ 769.37 Mb  
+- Image ID: `sha256:44d62b5c67537165b2b3c2ee9f6319e2cdb4edd320b00d3f6c82c800d03c3b85`
+- Created: `2025-09-02T11:42:45Z`
+- Virtual Size: ~ 779.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1962,11 +1962,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxcrypt/1:4.4.38-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxcrypt/1:4.4.38-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.12.7+dfsg+really2.9.14-2.1`
+### `dpkg` source package: `libxml2=2.12.7+dfsg+really2.9.14-2.1+deb13u1`
 
 Binary Packages:
 
-- `libxml2:amd64=2.12.7+dfsg+really2.9.14-2.1`
+- `libxml2:amd64=2.12.7+dfsg+really2.9.14-2.1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
@@ -1976,17 +1976,17 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-2.1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1.dsc 3034 SHA256:a07fc080318d699862a0e27ffb33657d0a51c4af5ab412359e1753d967abf592
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1.debian.tar.xz 43432 SHA256:09a20003e3aba38f01ab65bc3cfe202e5a4f7d6e6d5d45b4e73dce8d36b1185a
+$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-2.1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.dsc 2721 SHA256:1b5ebd1dc73f27d0633797781d3a9304c8d25a4ace8ca32c44a8247757e92b0c
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u1.debian.tar.xz 48728 SHA256:1d83110ae29224c4e74d16f74296491b769120d3fdebe5c893c3389e49e4f51e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-2.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-2.1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-2.1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-2.1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.7+dfsg-1`
 
