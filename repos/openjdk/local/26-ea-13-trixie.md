@@ -1,10 +1,10 @@
-# `openjdk:26-ea-12-jdk-trixie`
+# `openjdk:26-ea-13-jdk-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a0d1af935502074d3ee9942b8319ae476fabdba83015fa652f64a95c1972288c`
-- Created: `2025-08-23T00:48:14Z`
-- Virtual Size: ~ 808.71 Mb  
+- Image ID: `sha256:810428a6029ca8a4cc3fc372e9c51993001424b19e120b986cac7d4f2764e220`
+- Created: `2025-08-30T00:48:13Z`
+- Virtual Size: ~ 808.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+12`
+  - `JAVA_VERSION=26-ea+13`
 
 ## `dpkg` (`.deb`-based packages)
 
