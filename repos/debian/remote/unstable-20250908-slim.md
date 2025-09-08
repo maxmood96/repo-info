@@ -1,11 +1,11 @@
-## `debian:unstable-slim`
+## `debian:unstable-20250908-slim`
 
 ```console
-$ docker pull debian@sha256:05003507c863e0b67e307967e0f562a6b08830bc7953b733b5edaf191b8ce2ec
+$ docker pull debian@sha256:d7d8ad721dcdc66229e069cea14f7fe519a724c0a655e144292e0c03ec6c3e8f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 17
+-	Platforms: 15
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -19,12 +19,10 @@ $ docker pull debian@sha256:05003507c863e0b67e307967e0f562a6b08830bc7953b733b5ed
 	-	linux; mips64le
 	-	linux; ppc64le
 	-	unknown; unknown
-	-	linux; riscv64
-	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:unstable-slim` - linux; amd64
+### `debian:unstable-20250908-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:c45890ee9c1bfd9c1f957dbd51c62869c6ea05315782db9f001f7e57eaaa9cdb
@@ -47,7 +45,7 @@ RUN # debian.sh --arch 'amd64' out/ 'unstable' '@1757289600'
 		Size: 30.0 MB (30020116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:d9ca44936346e7c254a6ac1a7dd86519468e5b4edeed939cc4b1bce8085c2351
@@ -67,7 +65,7 @@ $ docker pull debian@sha256:d9ca44936346e7c254a6ac1a7dd86519468e5b4edeed939cc4b1
 		Size: 2.0 MB (1976170 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:unstable-slim` - linux; arm variant v5
+### `debian:unstable-20250908-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:acb806a05f7bfe5ac7a34c89affc2ae875008697d64628ab55f076639e69973a
@@ -90,7 +88,7 @@ RUN # debian.sh --arch 'armel' out/ 'unstable' '@1757289600'
 		Size: 28.1 MB (28122047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:57b7c1c518d357e031dff9ac3bb143ba6bd5a36195da1d73003591acfffbd146
@@ -110,7 +108,7 @@ $ docker pull debian@sha256:57b7c1c518d357e031dff9ac3bb143ba6bd5a36195da1d730035
 		Size: 2.0 MB (1979111 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:unstable-slim` - linux; arm variant v7
+### `debian:unstable-20250908-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:2d78eda34f68b26f314fdc4f900f7cfd8cfa3ee9d65f6d23139a8a3feac1bbc0
@@ -133,7 +131,7 @@ RUN # debian.sh --arch 'armhf' out/ 'unstable' '@1757289600'
 		Size: 26.4 MB (26372742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:22e2f072e57c1cece3b701aedc399c568c06eeddca14d7777a50f051435cca15
@@ -153,7 +151,7 @@ $ docker pull debian@sha256:22e2f072e57c1cece3b701aedc399c568c06eeddca14d7777a50
 		Size: 2.0 MB (1977531 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:unstable-slim` - linux; arm64 variant v8
+### `debian:unstable-20250908-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:7cd4fd7bde59ed7fd34680889bcd47d12184b568c3afe4091c42608ed8b71a0d
@@ -176,7 +174,7 @@ RUN # debian.sh --arch 'arm64' out/ 'unstable' '@1757289600'
 		Size: 30.3 MB (30300404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:afcc83cb1de8cc6b8b3ca00607f35c16cbf7090651b728f806295325cc84f4b1
@@ -196,7 +194,7 @@ $ docker pull debian@sha256:afcc83cb1de8cc6b8b3ca00607f35c16cbf7090651b728f80629
 		Size: 2.0 MB (1976373 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:unstable-slim` - linux; 386
+### `debian:unstable-20250908-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:b538e87a43a11194b3f4b40f6e397c43e1e88e4a9f2c1000e63b6aa8c7fb89a9
@@ -219,7 +217,7 @@ RUN # debian.sh --arch 'i386' out/ 'unstable' '@1757289600'
 		Size: 31.5 MB (31487493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:2863faff30691ee15896cc8c97db3bc1967721daf50c27935edd1fbee8dffe1e
@@ -239,7 +237,7 @@ $ docker pull debian@sha256:2863faff30691ee15896cc8c97db3bc1967721daf50c27935edd
 		Size: 2.0 MB (1973390 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:unstable-slim` - linux; mips64le
+### `debian:unstable-20250908-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:7ef7e6b420230ee8b3855bf68e0ae73b3d9cc556c64b6293454ffd3843d2df5e
@@ -262,7 +260,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'unstable' '@1757289600'
 		Size: 30.2 MB (30189171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - linux; ppc64le
+### `debian:unstable-20250908-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:928b4ed6c1b6e7e67fd6c723c2680b2541fb8ef8866b5798d4b5255fd1c55890
@@ -285,7 +283,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'unstable' '@1757289600'
 		Size: 33.8 MB (33830120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:2e48c504cae59ba2dd9034a1572ec3f84e27a92e864610173cbd04e0ac9c528c
@@ -305,50 +303,7 @@ $ docker pull debian@sha256:2e48c504cae59ba2dd9034a1572ec3f84e27a92e864610173cbd
 		Size: 2.0 MB (1979653 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:unstable-slim` - linux; riscv64
-
-```console
-$ docker pull debian@sha256:111ed1336ada3db4596f7e56dc8a7903c7983a1ee545b2939916e6fd1702c8b0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.3 MB (28279782 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19df0311eca2f1f79222557427a29fb8c0d6d4ad5d29735fa6af63be23d46da3`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Mon, 11 Aug 2025 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'unstable' '@1754870400'
-```
-
--	Layers:
-	-	`sha256:7851c797d640a88d697d1263c93d170dc46e212cec237cebe47c68853ed71839`  
-		Last Modified: Wed, 13 Aug 2025 01:18:59 GMT  
-		Size: 28.3 MB (28279782 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `debian:unstable-slim` - unknown; unknown
-
-```console
-$ docker pull debian@sha256:dd24cbcff6d0917e67e02e58f5fd9dde573416efd6406db7306f6308e3f88fe6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 MB (1968786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a89723fe45188641ae14fe6f9e3ec0d9d5e15c047fc69f25831e8c7823ae153`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:b0a626a9def5f05511831a99c527675beadf466274e912436e5b5bf325ee8143`  
-		Last Modified: Wed, 13 Aug 2025 03:26:12 GMT  
-		Size: 2.0 MB (1968786 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `debian:unstable-slim` - linux; s390x
+### `debian:unstable-20250908-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:95184635a1e3449d5f778ac85a2818df82d15a15244313b69e6302df4e2f959b
@@ -371,7 +326,7 @@ RUN # debian.sh --arch 's390x' out/ 'unstable' '@1757289600'
 		Size: 30.0 MB (30023049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:unstable-slim` - unknown; unknown
+### `debian:unstable-20250908-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:16a8f354dae6aad78ce2e4a239ac9b56794f0fd0b99c6a389d1a54bbb4420b2c
