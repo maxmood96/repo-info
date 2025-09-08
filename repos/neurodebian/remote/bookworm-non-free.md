@@ -1,7 +1,7 @@
 ## `neurodebian:bookworm-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:f1700f710fb3a7a7ffd7accf0a37c4009bceb1d2017a8205c6c60109fc57db29
+$ docker pull neurodebian@sha256:1d227f401b183c72194a9f4236ed8d04d43de44d1cc46f66ec8aa5b2fd4d231d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,18 +16,18 @@ $ docker pull neurodebian@sha256:f1700f710fb3a7a7ffd7accf0a37c4009bceb1d2017a820
 ### `neurodebian:bookworm-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:3e1e23c85e5bbd51fe50d63418e35e66134c2ffe2f0645c7a4fb95a55f915f6f
+$ docker pull neurodebian@sha256:6f43ef7eb07bc7c20266846a1c98b55a22011567a05f2ac5eff2909071eae0f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.9 MB (59857101 bytes)**  
+-	Total Size: **59.8 MB (59846148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6fab33cac0afcc8955f876e9f2516b2593e2071b93bdd8fcdcfdc67b5bd7eb4`
+-	Image ID: `sha256:c172ba0b81dd8f89238b22511a3d5be1d5180c0258e9e889a6ecb01624a3a2cb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Sat, 01 Mar 2025 01:29:10 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1757289600'
 # Sat, 01 Mar 2025 01:29:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 01 Mar 2025 01:29:10 GMT
@@ -41,70 +41,70 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 ```
 
 -	Layers:
-	-	`sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63`  
-		Last Modified: Tue, 12 Aug 2025 20:44:32 GMT  
-		Size: 48.5 MB (48494511 bytes)  
+	-	`sha256:8fb375ec14f3df8b31b70d0216508565ab7264a7e16cac4f8cc07f8eca22445f`  
+		Last Modified: Mon, 08 Sep 2025 21:12:37 GMT  
+		Size: 48.5 MB (48480610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eca7f8441975b558ca0ef283f56f08f77825f779c076f6de3575109057618921`  
-		Last Modified: Tue, 12 Aug 2025 21:25:50 GMT  
-		Size: 11.3 MB (11266802 bytes)  
+	-	`sha256:efb3e3b92bc6482e0df10b8b95bf25efd483c108ad208a60664cf5f1d1e77be1`  
+		Last Modified: Mon, 08 Sep 2025 21:29:22 GMT  
+		Size: 11.3 MB (11269552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:515da2cae6f4e931c65953b83787a4ed52b06f8970245c8033c02dbe26d32d52`  
-		Last Modified: Tue, 12 Aug 2025 21:25:49 GMT  
+	-	`sha256:89e96c4ca1ae8d9db1d4c02f9c3d0652e417622ed05ff6eb736432722662ccdb`  
+		Last Modified: Mon, 08 Sep 2025 22:09:05 GMT  
 		Size: 1.9 KB (1902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05313306ba9a3a0b254f27c2009f9fcf26e25872e146ec58b68f3f122e9e0c4a`  
-		Last Modified: Tue, 12 Aug 2025 21:25:49 GMT  
-		Size: 272.0 B  
+	-	`sha256:4541b568aaf9f21e14e1425e4fc093a5dd0496df3829b6404b3ad6c41efbbbe3`  
+		Last Modified: Mon, 08 Sep 2025 22:09:04 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e61c2a6c5996ede28c75d6706f475897d1f12b8f2741dc359bf1d5337e64abce`  
-		Last Modified: Tue, 12 Aug 2025 21:25:51 GMT  
-		Size: 93.2 KB (93166 bytes)  
+	-	`sha256:41c1b15bdadbbe93287ac427ea3a8620f5b0157a4e6b13f7635f592e3bcc2708`  
+		Last Modified: Mon, 08 Sep 2025 22:09:05 GMT  
+		Size: 93.4 KB (93361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15131243c0bc8e7238da0779914743d971ccbb6a4c7278acaa41b925dbde7af6`  
-		Last Modified: Tue, 12 Aug 2025 21:25:50 GMT  
-		Size: 448.0 B  
+	-	`sha256:e3c38cbf257c18774f93a43d3e807c5ccb87233a46bd639fbf19fd1391531342`  
+		Last Modified: Mon, 08 Sep 2025 22:09:05 GMT  
+		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:bookworm-non-free` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:56136ee322b43713bfcef696875cb804c977177bdeeb15ab5ec769eba7ba62af
+$ docker pull neurodebian@sha256:a2a94de25facf95724b2d16ca71a72d99a2e112b2d316cd949056412564d4d2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4085158 bytes)**  
+-	Total Size: **4.1 MB (4091931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15c4db29c0f03c077b176a86f738264f0994c8af0b9181fa2d8b02f3273fc49a`
+-	Image ID: `sha256:206e4e0e5813d979635e9c61374bdbc88d22a2f82bc265b156b17600d6bdbdb3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90d172a22a1a332971f73b7920c30fab0bb63a4644d128ebb0ae1439329a6a1a`  
-		Last Modified: Wed, 13 Aug 2025 01:07:28 GMT  
-		Size: 4.1 MB (4068811 bytes)  
+	-	`sha256:6d1673c322c9fbb37ea05028f45c19a0ce42f508639ca61a70c7c7f98a8aa319`  
+		Last Modified: Mon, 08 Sep 2025 22:07:46 GMT  
+		Size: 4.1 MB (4075584 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:52ba733a68ceeec254a0fd4c848d419e069030e5403e7a0277c33ac4f6b24dfc`  
-		Last Modified: Wed, 13 Aug 2025 01:07:29 GMT  
+	-	`sha256:ae33da5884a0a82ad883b93e19d26853d993626f9c39065efe0d9f5aafc836be`  
+		Last Modified: Mon, 08 Sep 2025 22:07:47 GMT  
 		Size: 16.3 KB (16347 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neurodebian:bookworm-non-free` - linux; arm64 variant v8
 
 ```console
-$ docker pull neurodebian@sha256:ba4f5c9d0d8e3e88067449edae8ab672eb4b606fa9dcfc9bbe53120ed06b3fdf
+$ docker pull neurodebian@sha256:c332ce47e958183cb410e1d6ec20b2be14015b101bbb5817ec4d0a9aa6b0cb01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.7 MB (59671163 bytes)**  
+-	Total Size: **59.7 MB (59708575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60cc5e8120b309a808b8b17384338da1db82b3ea82dadecfd2ace44069dd3bdb`
+-	Image ID: `sha256:dd9a8e8b41d0f732b856635dfc148c9421fbca0429e8f76b5fa0bd31453ab413`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Sat, 01 Mar 2025 01:29:10 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
 # Sat, 01 Mar 2025 01:29:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 01 Mar 2025 01:29:10 GMT
@@ -118,70 +118,70 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 ```
 
 -	Layers:
-	-	`sha256:35f134665ae4469a16b5b7b841e9efe6b186960e0533131b3603e4816aabeb3a`  
-		Last Modified: Tue, 12 Aug 2025 22:08:09 GMT  
-		Size: 48.3 MB (48342450 bytes)  
+	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
+		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
+		Size: 48.4 MB (48359019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:398157a4590ac7aadba659d655fa1e00f8f05a8ab0784529d0099545f337bc03`  
-		Last Modified: Wed, 13 Aug 2025 07:32:57 GMT  
-		Size: 11.2 MB (11232652 bytes)  
+	-	`sha256:9bb34e261136388af42fa0af1335a030eea1a9f401d4dff98142f1da415eabd5`  
+		Last Modified: Mon, 08 Sep 2025 21:44:50 GMT  
+		Size: 11.3 MB (11253403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77e01fcd5942424056ba8f0b9a313ff0dde95202c4e3440076fc637b0813c64d`  
-		Last Modified: Wed, 13 Aug 2025 07:32:56 GMT  
-		Size: 1.9 KB (1903 bytes)  
+	-	`sha256:4ea36eb6d50e0170603953736681c374dc844fe3f7850016340a1d2f4918c0b5`  
+		Last Modified: Mon, 08 Sep 2025 22:08:07 GMT  
+		Size: 1.9 KB (1902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8405e7c25660e800db97c97594d0a4f9b537b1a9fc32793315de1592d0bcfdb9`  
-		Last Modified: Wed, 13 Aug 2025 07:32:56 GMT  
-		Size: 274.0 B  
+	-	`sha256:29da554fa0fcd3032487aee0478d47e8a805146cb3bddd18fbad5d609038870e`  
+		Last Modified: Mon, 08 Sep 2025 22:08:11 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2527f69d856843d89ea49d0ee163b7a03c78ceaa2f858c3cbaddacefb732357`  
-		Last Modified: Wed, 13 Aug 2025 07:32:57 GMT  
-		Size: 93.4 KB (93433 bytes)  
+	-	`sha256:fcc2b09e8e858e4635fa19d6758bdf39314fa0cde577075e129e7e80e186328d`  
+		Last Modified: Mon, 08 Sep 2025 22:08:14 GMT  
+		Size: 93.5 KB (93529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f77e7ba9063abd80126010a77ce29596d5e4ba6c0dee2bafae62978e16d71df`  
-		Last Modified: Wed, 13 Aug 2025 08:24:59 GMT  
-		Size: 451.0 B  
+	-	`sha256:b99a489584be5c159eac218a7e93493c1813b822a296ce44cf81cb4637f9423c`  
+		Last Modified: Mon, 08 Sep 2025 22:08:18 GMT  
+		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:bookworm-non-free` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:cced9e2b54e8933202292fb68c6cd3012a6e3b144d28f849eb9f3461833ea802
+$ docker pull neurodebian@sha256:cc7b844224cfc087081bd611b411d90140d4bae81280676b5dc0b13af788416a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4085564 bytes)**  
+-	Total Size: **4.1 MB (4092337 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8929676cc0ef7a9617249ccd15b195901245d06533ca9e718ab60f88e10ddec5`
+-	Image ID: `sha256:0f86f083a734b088c99b09c277fea3d8963dec528e9b2417e7bbdc58af53a0bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a2f476cc4360921349bb63f66510650c7ae8c83cb34b75346b64ded471694c9e`  
-		Last Modified: Wed, 13 Aug 2025 10:09:32 GMT  
-		Size: 4.1 MB (4069065 bytes)  
+	-	`sha256:9a0d14da4341d08026ac22ce25ef56efe152434f1ed4d94d8ea0c1a31e4cc6b2`  
+		Last Modified: Mon, 08 Sep 2025 22:07:53 GMT  
+		Size: 4.1 MB (4075838 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7fc458f66151a39b80f39079ebb5ead336f86564387a23c18609431aff638ef3`  
-		Last Modified: Wed, 13 Aug 2025 10:09:33 GMT  
+	-	`sha256:5c09eae5cd42ea87228f8f7591823ff5cbe807f16966c782f8da6a3af8966e35`  
+		Last Modified: Mon, 08 Sep 2025 22:07:54 GMT  
 		Size: 16.5 KB (16499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neurodebian:bookworm-non-free` - linux; 386
 
 ```console
-$ docker pull neurodebian@sha256:01e8d00045f91fb4738ddefff5ce32ca1be6209de1c09736dbf43c5370751b5d
+$ docker pull neurodebian@sha256:180c2a286506c8d607df812e0989c88b708940bfb3792411db5953ff7a4f7a2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.3 MB (61262833 bytes)**  
+-	Total Size: **61.3 MB (61252826 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d16b3729e307a1bf3bd90822470070fee8025ff7fff664dcde64d0fc71908edf`
+-	Image ID: `sha256:5b4db251014580c0601148a94559714d6947766d1bfd4fd6fc7aaf84bd623b71`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Sat, 01 Mar 2025 01:29:10 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1757289600'
 # Sat, 01 Mar 2025 01:29:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 01 Mar 2025 01:29:10 GMT
@@ -195,51 +195,51 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 ```
 
 -	Layers:
-	-	`sha256:73488b414dce83adc963656678257daf6a25aaa9e6d76928aee03f81611c17ce`  
-		Last Modified: Tue, 12 Aug 2025 20:44:43 GMT  
-		Size: 49.5 MB (49478115 bytes)  
+	-	`sha256:5538e96bb7df1a7ef01bd7fcbf51f4cbc041246109c06cf661f7058c203851af`  
+		Last Modified: Mon, 08 Sep 2025 21:12:26 GMT  
+		Size: 49.5 MB (49466684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5394d0fd08e540a301e3b5f99b64f94f1ba947c5bbe47e0d84a2339afa6c994c`  
-		Last Modified: Tue, 12 Aug 2025 21:21:53 GMT  
-		Size: 11.7 MB (11688885 bytes)  
+	-	`sha256:2d9f1e0563153cc066df6491c74f133efcb40edc5eb0f61d987c52753414e037`  
+		Last Modified: Mon, 08 Sep 2025 21:25:07 GMT  
+		Size: 11.7 MB (11690127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6e663a91a0aa6dacdc64c684bf82d797030d47adcbff357a5cf069460c1197d`  
-		Last Modified: Tue, 12 Aug 2025 21:21:50 GMT  
+	-	`sha256:2a7814d96039aa8fd6261aaf7b5cfceb3feba133e8bca1568a0cdde34995dee5`  
+		Last Modified: Mon, 08 Sep 2025 22:10:19 GMT  
 		Size: 1.9 KB (1899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d45030c4feb33187c49f2fd35da69d2b0a7ae3af8dda4972d933421611e48d5`  
-		Last Modified: Tue, 12 Aug 2025 21:21:50 GMT  
-		Size: 272.0 B  
+	-	`sha256:276fb743fd607e676358632f33e7d22590ee66cc30f7fd6cd688310b84d3a657`  
+		Last Modified: Mon, 08 Sep 2025 22:10:20 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a397d8483559f951b63a3b5852d5066f8d70d659c67795b7972d016edcf480a`  
-		Last Modified: Tue, 12 Aug 2025 21:21:51 GMT  
-		Size: 93.2 KB (93211 bytes)  
+	-	`sha256:fb2275f662700e5881813db764845fb48bbf160416ae633242276ca625541288`  
+		Last Modified: Mon, 08 Sep 2025 22:10:19 GMT  
+		Size: 93.4 KB (93394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39ff42e5d40a326607d815eb58689a4a20fa2e74ee8668f764f746eadf40a2ad`  
-		Last Modified: Tue, 12 Aug 2025 21:21:50 GMT  
-		Size: 451.0 B  
+	-	`sha256:2763fded54c1182ff5b5f837e771c5a48137168e2870ab52ec1e17e95ba7c662`  
+		Last Modified: Mon, 08 Sep 2025 22:10:19 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:bookworm-non-free` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:bdeeddf6ecca857b4fb89f5b698b4675a355670b44cee651810417717e91070f
+$ docker pull neurodebian@sha256:db9f952b4b9884f6b15810229bc63b5376c07e0f3900c2afcc6677bc0bc1a1b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4083090 bytes)**  
+-	Total Size: **4.1 MB (4089859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73276fe5c06baf891d0fa4cebc9ca03db4c8538c244f9f88efe7831ba61ca6fb`
+-	Image ID: `sha256:7d749b7a567dd87cfbc285161259edf132f25ec3dfb417384dc5dc5256253192`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7528113e7f1996421b92ce6c09b20a6971bc66a7884394ec37d5edb8d1c0a25f`  
-		Last Modified: Wed, 13 Aug 2025 01:07:38 GMT  
-		Size: 4.1 MB (4066779 bytes)  
+	-	`sha256:1fffdd5ba041000de4d566ef98f57e8c336b242b4c13f370edd28d7d6a4abddf`  
+		Last Modified: Mon, 08 Sep 2025 22:07:59 GMT  
+		Size: 4.1 MB (4073547 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0f7f08ce14ba39a229be1a13e27219db34478e744420cca8df3c9878a15d1e31`  
-		Last Modified: Wed, 13 Aug 2025 01:07:39 GMT  
-		Size: 16.3 KB (16311 bytes)  
+	-	`sha256:a9c49b10626993226be76089c1be657c79ca21feae895f3e4f09aeb6fc9d642b`  
+		Last Modified: Mon, 08 Sep 2025 22:08:00 GMT  
+		Size: 16.3 KB (16312 bytes)  
 		MIME: application/vnd.in-toto+json
