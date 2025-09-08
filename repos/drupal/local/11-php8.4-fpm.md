@@ -1,9 +1,9 @@
-# `drupal:11.2.3-php8.4-fpm-trixie`
+# `drupal:11.2.4-php8.4-fpm-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7214fd6b7d2ec454352101a9686dac6d6a7929811e99aca9b602500bd54cfbb3`
-- Created: `2025-08-13T20:35:19Z`
+- Image ID: `sha256:b523a67e0125c9ba2cfdc30cf627dbe0e4504079b995e0247a605da31270bd8f`
+- Created: `2025-09-04T09:27:25Z`
 - Virtual Size: ~ 597.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.12.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.12.tar.xz.asc`
   - `PHP_SHA256=c1b7978cbb5054eed6c749bde4444afc16a3f2268101fb70a7d5d9b1083b12ad`
-  - `DRUPAL_VERSION=11.2.3`
+  - `DRUPAL_VERSION=11.2.4`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -245,19 +245,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8.dsc' base-files_13.8.dsc 1215 SHA256:7affd67993afe347ed581d242fdb591ca4585a513446d24ad5e313f4d2895785
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8.tar.xz' base-files_13.8.tar.xz 68600 SHA256:b2776447ed88d510aa5fa65f0b8ad144811e59d7bf943b977d29c94de0c7e368
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8/
 
-- https://sources.debian.net/src/base-files/13.8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -1274,19 +1268,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.68
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.68.dsc' init-system-helpers_1.68.dsc 2209 SHA256:58bf10802cf5d2496059368948a80d4a49f768d27b918fbe6dc28353c6cda72c
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.68.tar.xz' init-system-helpers_1.68.tar.xz 45168 SHA256:cdf1c7fe87362a4e3f7446a95b75c29ca6071fda3911adb269508203cd3c458d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.68/
 
-- https://sources.debian.net/src/init-system-helpers/1.68/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.68/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.68/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.27-1`
 
@@ -2023,20 +2011,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-2.1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1.dsc' libxml2_2.12.7+dfsg+really2.9.14-2.1.dsc 3034 SHA256:a07fc080318d699862a0e27ffb33657d0a51c4af5ab412359e1753d967abf592
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-2.1.debian.tar.xz 43432 SHA256:09a20003e3aba38f01ab65bc3cfe202e5a4f7d6e6d5d45b4e73dce8d36b1185a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-2.1/
 
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.12.7+dfsg+really2.9.14-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.12.7+dfsg+really2.9.14-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzip=1.11.3-2`
 
@@ -2732,20 +2713,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.5-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.5-1.dsc' postgresql-17_17.5-1.dsc 4245 SHA256:0306e93dd642d752db7dc52152d2a19f57c4f3d0527283d4d0bc78f7aedc092b
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.5.orig.tar.bz2' postgresql-17_17.5.orig.tar.bz2 21595174 SHA256:fcb7ab38e23b264d1902cb25e6adafb4525a6ebcbd015434aeef9eda80f528d8
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.5-1.debian.tar.xz' postgresql-17_17.5-1.debian.tar.xz 27596 SHA256:15359d6bb2a5d515de9cd0d0ff5ac5fefd645d38b111e2deffac53be8ef16d11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.5-1/
 
-- https://sources.debian.net/src/postgresql-17/17.5-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=4.1-1`
 
@@ -3004,20 +2978,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.7-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7-1.dsc' systemd_257.7-1.dsc 8614 SHA256:bb62345b00bfd49ea5361b0556c944e86215133daa36185c91afe8d0e21c3e70
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7.orig.tar.gz' systemd_257.7.orig.tar.gz 16327096 SHA256:70ecf759260549486045d065555d2f8a0ac0b8523d8f58227559fbd6d7523b08
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.7-1.debian.tar.xz' systemd_257.7-1.debian.tar.xz 182316 SHA256:3a4bd913536425bfd2e02f9f527f9c2b1939ab1cb80257b1f786b2bce4770cbe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.7-1/
 
-- https://sources.debian.net/src/systemd/257.7-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
@@ -3093,21 +3060,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025b-4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-4.dsc' tzdata_2025b-4.dsc 2434 SHA256:5bfd58e884f9a9a2b5681647e217e2747db90030158cef813c6ed7a5744aee3f
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-4.debian.tar.xz' tzdata_2025b-4.debian.tar.xz 126968 SHA256:9dd3b3a53a706adfc2ce97569595501f2e278d58f73cf066201385ac71f27116
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2025b-4/
 
-- https://sources.debian.net/src/tzdata/2025b-4/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025b-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025b-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41-5`
 
