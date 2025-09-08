@@ -13349,15 +13349,30 @@ $ docker pull adminer@sha256:e50fcab3e2ff1f28a3111f397f9d3520fadded193d99b9c5866
 
 ## `adminer:5.4.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull adminer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `adminer:5.4.0-fastcgi`
 
-**does not exist** (yet?)
+```console
+$ docker pull adminer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `adminer:5.4.0-standalone`
 
-**does not exist** (yet?)
+```console
+$ docker pull adminer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `adminer:fastcgi`
 
