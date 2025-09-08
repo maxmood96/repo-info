@@ -1,10 +1,10 @@
-# `postgres:18beta3-bookworm`
+# `postgres:18rc1-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:05ebc589ba1fb617316724872ffbbf1b1ae05fd1e80e9c493001fe5f97f84fa5`
-- Created: `2025-08-14T17:31:22Z`
-- Virtual Size: ~ 440.57 Mb  
+- Image ID: `sha256:ef6e044377baff49fde9698ba3cc75818568f02be6e9bff5f22356f2a14de7da`
+- Created: `2025-09-05T00:02:55Z`
+- Virtual Size: ~ 440.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=18`
-  - `PG_VERSION=18~beta3-1.pgdg120+1`
+  - `PG_VERSION=18~rc1-1.pgdg12+1`
   - `PGDATA=/var/lib/postgresql/18/docker`
