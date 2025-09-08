@@ -279,7 +279,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'oldstable' '@1757289600'
 
 -	Layers:
 	-	`sha256:0f54dcb7e47208f057aa81cf2174295022370015b155688521b2f676c8352333`  
-		Last Modified: Mon, 08 Sep 2025 20:36:39 GMT  
+		Last Modified: Mon, 08 Sep 2025 22:09:56 GMT  
 		Size: 52.3 MB (52326826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -322,7 +322,7 @@ RUN # debian.sh --arch 's390x' out/ 'oldstable' '@1757289600'
 
 -	Layers:
 	-	`sha256:b68d43703d2d9af0a719d0682250c51f9ac27e5f246b85caabc56601e893eb90`  
-		Last Modified: Mon, 08 Sep 2025 20:36:58 GMT  
+		Last Modified: Mon, 08 Sep 2025 22:09:57 GMT  
 		Size: 47.1 MB (47137541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

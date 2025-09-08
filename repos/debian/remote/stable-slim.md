@@ -85,7 +85,7 @@ RUN # debian.sh --arch 'armel' out/ 'stable' '@1757289600'
 
 -	Layers:
 	-	`sha256:93c79de7046eac261bfcb36e6612f051092deadb6b23f3b130ff353082e72c5e`  
-		Last Modified: Mon, 08 Sep 2025 20:35:15 GMT  
+		Last Modified: Mon, 08 Sep 2025 21:35:52 GMT  
 		Size: 27.9 MB (27941760 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -128,7 +128,7 @@ RUN # debian.sh --arch 'armhf' out/ 'stable' '@1757289600'
 
 -	Layers:
 	-	`sha256:f1b894b0d06ce9d2c62d42072fe4317ff4dc7053dbd99cf035d2c26d4c5b7e63`  
-		Last Modified: Mon, 08 Sep 2025 20:35:58 GMT  
+		Last Modified: Mon, 08 Sep 2025 21:35:54 GMT  
 		Size: 26.2 MB (26207842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -214,7 +214,7 @@ RUN # debian.sh --arch 'i386' out/ 'stable' '@1757289600'
 
 -	Layers:
 	-	`sha256:80c7b29bb3c7f5cd5ba5ca16e8d04dd6c54c19d665662305014914a6467011ca`  
-		Last Modified: Mon, 08 Sep 2025 20:33:45 GMT  
+		Last Modified: Mon, 08 Sep 2025 21:35:52 GMT  
 		Size: 31.3 MB (31289784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -257,7 +257,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'stable' '@1757289600'
 
 -	Layers:
 	-	`sha256:d314ef6ae5738e4e1d5d92dde9666d703c0a5cb6c260690c73bf3a6d015a065e`  
-		Last Modified: Mon, 08 Sep 2025 20:39:31 GMT  
+		Last Modified: Mon, 08 Sep 2025 21:35:59 GMT  
 		Size: 33.6 MB (33594349 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

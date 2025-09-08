@@ -40,7 +40,7 @@ RUN # debian.sh --arch 'amd64' out/ 'forky' '@1757289600'
 
 -	Layers:
 	-	`sha256:f1fdb037839b774b080cd5d5c32cc3201aa45b0bbbd46083fbe77e6569256395`  
-		Last Modified: Mon, 08 Sep 2025 20:33:49 GMT  
+		Last Modified: Mon, 08 Sep 2025 22:15:22 GMT  
 		Size: 30.0 MB (29968551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -126,7 +126,7 @@ RUN # debian.sh --arch 'arm64' out/ 'forky' '@1757289600'
 
 -	Layers:
 	-	`sha256:ef9f70b74d4669973bb31fa83bce113a46873c8b7a9a17ccd9c713822404bfd9`  
-		Last Modified: Mon, 08 Sep 2025 20:35:27 GMT  
+		Last Modified: Mon, 08 Sep 2025 22:28:32 GMT  
 		Size: 30.3 MB (30257786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
