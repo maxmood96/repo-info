@@ -3706,15 +3706,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.13.dsc' openssh_9.6p1-3ubuntu13.13.dsc 3346 SHA512:9c3d1d9724c9344ced2ac313d75ee6939d1ea4c2422267e6b84337fe8904c9ce1afab509581b160190453508c343fe4bde6749e72d00445f976d8fd8be4b0e19
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.13.debian.tar.xz' openssh_9.6p1-3ubuntu13.13.debian.tar.xz 207116 SHA512:f909fedc14066656855d455996631cda9eff3b144d7e28bef8acfacc229e0d7ab42f77c6d1340700fd049558aa359dce44026bde34a7b885c7afa14270590229
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
@@ -4020,14 +4014,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.9-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.9-0ubuntu0.24.04.1.dsc' postgresql-16_16.9-0ubuntu0.24.04.1.dsc 4329 SHA512:3357352237d431dd69cbcab756e29b9a078886fa5c6c36fc2e8d38a6f6a05dfd7bfcb17ee1ff9b3961c2677bb4c56ac605417de58bf00b85785b8396461e044d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.9.orig.tar.gz' postgresql-16_16.9.orig.tar.gz 32809221 SHA512:d561448ebba096c624230f10653700356175eaf999b507c0b85d7eb8d49269cab80bcb3523fa7c9dcf76e0139a0ca87c266bbe720606bb63943493c3a23d0b60
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.9-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.9-0ubuntu0.24.04.1.debian.tar.xz 36016 SHA512:852dbe698ff3e7ae5227662e599c1a79a6b9391af8754077d3089f3efc9f9420e223fed36019c9b03ca115372da001d91b1053fb13e596bd2bc9678cf1ae31cb
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 

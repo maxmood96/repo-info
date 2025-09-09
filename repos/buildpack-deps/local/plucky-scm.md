@@ -329,15 +329,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1.25.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.1.dsc' coreutils_9.5-1ubuntu1.25.04.1.dsc 2314 SHA512:7f26f566ce2ddac56be1f7f38edc02ba38e35b559c8781a13e777907d821b3f18e4a6c555acba262cf25bce593d24809e535b64fbde4296d1e1fab5b3132f596
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA512:2ca0deac4dc10a80fd0c6fd131252e99d457fd03b7bd626a6bc74fe5a0529c0a3d48ce1f5da1d3b3a7a150a1ce44f0fbb6b68a6ac543dfd5baa3e71f5d65401c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz.asc' coreutils_9.5.orig.tar.xz.asc 833 SHA512:029997e0f4ee64e561853cff7c8a124f58cc891598595b44c4a46f9813b4b71c9d677464bc8a26d294e9971832f4b87c23777fea4fac6e8e30f06ad93b9957d5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.1.debian.tar.xz' coreutils_9.5-1ubuntu1.25.04.1.debian.tar.xz 30872 SHA512:ab54fa7cb808b13487339371405917f30300f6f9a32a2cca5c403d059f31e1b0d7fa08a5efb82d61bab1e6a813efa936f617ebe4e2d4f4fa0235d95db81ad8f5
-```
 
 ### `dpkg` source package: `curl=8.12.1-3ubuntu1`
 
@@ -1933,10 +1927,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:9.9p1-3ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.1.dsc' openssh_9.9p1-3ubuntu3.1.dsc 3488 SHA512:a77de83df0e5dd71bdd3dabed2ff1f99875d1c74a2d0046291065df8878b71dcf30d5b8f01485fa1c95acbab6b1e403f766a45c1c59fe222ac33398c969775b8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz' openssh_9.9p1.orig.tar.gz 1964864 SHA512:3cc0ed97f3e29ecbd882eca79239f02eb5a1606fce4f3119ddc3c5e86128aa3ff12dc85000879fccc87b60e7d651cfe37376607ac66075fede2118deaa685d6d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz.asc' openssh_9.9p1.orig.tar.gz.asc 833 SHA512:916e975c54eb68c0b2f0b0006522b241cbe54c4caa88d31537a6278490c93d9d732c2ab3a080ac084bf75cbdd5402901ec68583cbe7c7cde4a8e40e7a8b78c28
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.1.debian.tar.xz' openssh_9.9p1-3ubuntu3.1.debian.tar.xz 212396 SHA512:1e2e866c2dfa109c148a22f096102d9884014857eb263020e31ba182cf2d5c6baca0f936e5f9d7f19ad165ef609f5169bbcb66ccec4a9140aba16ab4f66e31fc
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.1.dsc' openssh_9.9p1-3ubuntu3.1.dsc 3488 SHA512:a77de83df0e5dd71bdd3dabed2ff1f99875d1c74a2d0046291065df8878b71dcf30d5b8f01485fa1c95acbab6b1e403f766a45c1c59fe222ac33398c969775b8
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz' openssh_9.9p1.orig.tar.gz 1964864 SHA512:3cc0ed97f3e29ecbd882eca79239f02eb5a1606fce4f3119ddc3c5e86128aa3ff12dc85000879fccc87b60e7d651cfe37376607ac66075fede2118deaa685d6d
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz.asc' openssh_9.9p1.orig.tar.gz.asc 833 SHA512:916e975c54eb68c0b2f0b0006522b241cbe54c4caa88d31537a6278490c93d9d732c2ab3a080ac084bf75cbdd5402901ec68583cbe7c7cde4a8e40e7a8b78c28
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.1.debian.tar.xz' openssh_9.9p1-3ubuntu3.1.debian.tar.xz 212396 SHA512:1e2e866c2dfa109c148a22f096102d9884014857eb263020e31ba182cf2d5c6baca0f936e5f9d7f19ad165ef609f5169bbcb66ccec4a9140aba16ab4f66e31fc
 ```
 
 ### `dpkg` source package: `openssl=3.4.1-1ubuntu3`
