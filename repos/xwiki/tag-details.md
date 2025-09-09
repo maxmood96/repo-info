@@ -8087,7 +8087,7 @@ CMD ["xwiki"]
 		Size: 188.8 MB (188839178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5cd3c58995a409b5448fef11a5bafcb2a50743b14c317a3e9eb299c816d437e3`  
-		Last Modified: Tue, 09 Sep 2025 06:21:52 GMT  
+		Last Modified: Tue, 09 Sep 2025 13:14:25 GMT  
 		Size: 320.4 MB (320354083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7488d865ff72a1ffd4120e4f504c142e449d39210ab8a15d77178edcd84fca28`  
@@ -9883,7 +9883,7 @@ CMD ["xwiki"]
 		Size: 188.8 MB (188839178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5cd3c58995a409b5448fef11a5bafcb2a50743b14c317a3e9eb299c816d437e3`  
-		Last Modified: Tue, 09 Sep 2025 06:21:52 GMT  
+		Last Modified: Tue, 09 Sep 2025 13:14:25 GMT  
 		Size: 320.4 MB (320354083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7488d865ff72a1ffd4120e4f504c142e449d39210ab8a15d77178edcd84fca28`  
