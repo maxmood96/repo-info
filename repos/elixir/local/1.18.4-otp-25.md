@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89058a852038339b7a73326844fec0f846eac7c509ab120466dac5cc71512b06`
+- Image ID: `sha256:f28a4f41af8519de93ca01a8a0c493c33a0d7fb961bdf94b1302ad12c2951901`
 - Created: `2025-05-22T14:26:26Z`
 - Virtual Size: ~ 1.53 Gb  
   (total size of all layers on-disk)
@@ -4909,11 +4909,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsm/2:1.2.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsm/2:1.2.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libsndfile=1.0.31-2`
+### `dpkg` source package: `libsndfile=1.0.31-2+deb11u1`
 
 Binary Packages:
 
-- `libsndfile1:amd64=1.0.31-2`
+- `libsndfile1:amd64=1.0.31-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
@@ -4932,17 +4932,17 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsndfile=1.0.31-2
-'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile_1.0.31-2.dsc' libsndfile_1.0.31-2.dsc 2296 SHA256:325bf30be4857a5a7eac9866d0161d33804cc6d2b4afc33ee025f30e79c295fc
-'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile_1.0.31.orig.tar.gz' libsndfile_1.0.31.orig.tar.gz 662584 SHA256:8cdee0acb06bb0a3c1a6ca524575643df8b1f3a55a0893b4dd9f829d08263785
-'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile_1.0.31-2.debian.tar.xz' libsndfile_1.0.31-2.debian.tar.xz 14264 SHA256:54eb467c9026753ccd5d9aee2247ccdc512e87542589fff9fe51ca3e3d36e653
+$ apt-get source -qq --print-uris libsndfile=1.0.31-2+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsndfile/libsndfile_1.0.31-2%2bdeb11u1.dsc' libsndfile_1.0.31-2+deb11u1.dsc 2080 SHA256:26c0ab26f44481f8573b95eeaba5bb6061efe1b11e8188513233d26cd6c35bf9
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsndfile/libsndfile_1.0.31.orig.tar.gz' libsndfile_1.0.31.orig.tar.gz 662584 SHA256:8cdee0acb06bb0a3c1a6ca524575643df8b1f3a55a0893b4dd9f829d08263785
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsndfile/libsndfile_1.0.31-2%2bdeb11u1.debian.tar.xz' libsndfile_1.0.31-2+deb11u1.debian.tar.xz 17364 SHA256:b4a36fb38e0c0824e696196c7f97a450f74c90632b7a0617b3782665732035d4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsndfile/1.0.31-2/ (for browsing the source)
-- https://sources.debian.net/src/libsndfile/1.0.31-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsndfile/1.0.31-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libsndfile/1.0.31-2+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/libsndfile/1.0.31-2+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsndfile/1.0.31-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsoup2.4=2.72.0-2+deb11u2`
 
@@ -7247,12 +7247,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.29.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.29.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.21-0+deb11u1`
+### `dpkg` source package: `postgresql-13=13.22-0+deb11u1`
 
 Binary Packages:
 
-- `libpq-dev=13.21-0+deb11u1`
-- `libpq5:amd64=13.21-0+deb11u1`
+- `libpq-dev=13.22-0+deb11u1`
+- `libpq5:amd64=13.22-0+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -7272,13 +7272,20 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-13=13.22-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.22-0%2bdeb11u1.dsc' postgresql-13_13.22-0+deb11u1.dsc 3703 SHA256:a6aad4fc2ec260c82f125ed74318eab7c11a6f43f0cecfbc57632a6ce90cc9d0
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.22.orig.tar.bz2' postgresql-13_13.22.orig.tar.bz2 21783034 SHA256:d36d83dc89e625502cf6fb1d0529642ba1266bd614b4e4a41cefd1dddcf09080
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.22-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.22-0+deb11u1.debian.tar.xz 37104 SHA256:d2269efab97ddcb8b56e130bd0993cfedcfec2d23197347d8ca16ed407ce5ef7
+```
 
-- http://snapshot.debian.org/package/postgresql-13/13.21-0+deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-13/13.22-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-13/13.22-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-13/13.22-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
@@ -8246,12 +8253,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.18.0-2~exp1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.18.0-2~exp1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.48.3-1~deb11u1`
+### `dpkg` source package: `webkit2gtk=2.48.5-1~deb11u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.48.3-1~deb11u1`
-- `libwebkit2gtk-4.0-37:amd64=2.48.3-1~deb11u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.48.5-1~deb11u1`
+- `libwebkit2gtk-4.0-37:amd64=2.48.5-1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8287,13 +8294,21 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 - `MPL-1.1`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris webkit2gtk=2.48.5-1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.5-1%7edeb11u1.dsc' webkit2gtk_2.48.5-1~deb11u1.dsc 4089 SHA256:39357ef226171dd7fd814e3de51c8c4c2d0fe0f3c1f32a20a6d6c833bd8d7abc
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.5.orig.tar.xz' webkit2gtk_2.48.5.orig.tar.xz 44131936 SHA256:bb64ed9d1cfd58e8b5e89ccad71dd31adfed56336bad7695031ad0b668e1987c
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.5.orig.tar.xz.asc' webkit2gtk_2.48.5.orig.tar.xz.asc 833 SHA256:7fe23fa8aac8d768e9aa07462e9b4539ffe9a36a1427d468e42b87dc62008257
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.48.5-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.48.5-1~deb11u1.debian.tar.xz 105124 SHA256:9e7243c1c56d1261d946bad386abce590245fe2e3d14d61aa3ffbdc7cc80b6de
+```
 
-- http://snapshot.debian.org/package/webkit2gtk/2.48.3-1~deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/webkit2gtk/2.48.5-1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.48.5-1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.48.5-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1+deb11u2`
 
