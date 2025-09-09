@@ -2488,7 +2488,7 @@ CMD ["chronograf"]
 		Size: 4.5 MB (4491837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:467a5ecd58b41b80ad949de62a6b6fba37e8deb11ea2845bd270404234897325`  
-		Last Modified: Mon, 08 Sep 2025 22:30:42 GMT  
+		Last Modified: Tue, 09 Sep 2025 19:04:14 GMT  
 		Size: 33.3 MB (33311586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d09cafc7b1ab6e2ff3cabac054c05b11036384584a483791b8f87e4c8f4f9f2`  
@@ -2874,7 +2874,7 @@ CMD ["chronograf"]
 		Size: 4.5 MB (4491837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:467a5ecd58b41b80ad949de62a6b6fba37e8deb11ea2845bd270404234897325`  
-		Last Modified: Mon, 08 Sep 2025 22:30:42 GMT  
+		Last Modified: Tue, 09 Sep 2025 19:04:14 GMT  
 		Size: 33.3 MB (33311586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d09cafc7b1ab6e2ff3cabac054c05b11036384584a483791b8f87e4c8f4f9f2`  
