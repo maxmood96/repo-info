@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc684786d8e3a43ac62e57ad495d6bd438e897e44a20bc9c5ea92200d64458ea`
+- Image ID: `sha256:0df47f5f97d6bdd331ea67d2d3ee75c2064052023ab9fb58a87827dcc64df0b2`
 - Created: `2025-08-07T14:12:07Z`
 - Virtual Size: ~ 1.44 Gb  
   (total size of all layers on-disk)
@@ -4715,12 +4715,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.29.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.29.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.21-0+deb11u1`
+### `dpkg` source package: `postgresql-13=13.22-0+deb11u1`
 
 Binary Packages:
 
-- `libpq-dev=13.21-0+deb11u1`
-- `libpq5:amd64=13.21-0+deb11u1`
+- `libpq-dev=13.22-0+deb11u1`
+- `libpq5:amd64=13.22-0+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4740,13 +4740,20 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-13=13.22-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.22-0%2bdeb11u1.dsc' postgresql-13_13.22-0+deb11u1.dsc 3703 SHA256:a6aad4fc2ec260c82f125ed74318eab7c11a6f43f0cecfbc57632a6ce90cc9d0
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.22.orig.tar.bz2' postgresql-13_13.22.orig.tar.bz2 21783034 SHA256:d36d83dc89e625502cf6fb1d0529642ba1266bd614b4e4a41cefd1dddcf09080
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.22-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.22-0+deb11u1.debian.tar.xz 37104 SHA256:d2269efab97ddcb8b56e130bd0993cfedcfec2d23197347d8ca16ed407ce5ef7
+```
 
-- http://snapshot.debian.org/package/postgresql-13/13.21-0+deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-13/13.22-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-13/13.22-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-13/13.22-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
