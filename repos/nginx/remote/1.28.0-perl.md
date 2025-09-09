@@ -215,7 +215,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4481eed60734ca104045a34c34c7ae239c7b4e9755af101b65421d45ad6f0458`  
-		Last Modified: Tue, 09 Sep 2025 01:10:05 GMT  
+		Last Modified: Tue, 09 Sep 2025 03:01:52 GMT  
 		Size: 11.3 MB (11346598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
