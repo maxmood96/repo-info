@@ -1,7 +1,7 @@
 ## `memcached:1-trixie`
 
 ```console
-$ docker pull memcached@sha256:6d7a60e9f8af041eb72fff0a830c9c3cb0cb805457fa4a4d9c12fa32f30c4476
+$ docker pull memcached@sha256:4404f32a995bf10c1bdbd8dfa61cde8e666abb8ea6ee1ac26555af1b84c22788
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -486,19 +486,19 @@ $ docker pull memcached@sha256:560934ec2011fcab60b6814c10b7533fb0fb0d64c8b3bd401
 ### `memcached:1-trixie` - linux; ppc64le
 
 ```console
-$ docker pull memcached@sha256:dcc628faf353367b245beec24d23d1b3103986479dff33e10653c5ef2d8b54b5
+$ docker pull memcached@sha256:cc8a00f0201351164399372fd2ac08816aad989f5969151fd70c56607d5e0110
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.2 MB (36182904 bytes)**  
+-	Total Size: **36.2 MB (36183172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d113eca2d57658d5e20bd62171298229010cdbce2c33479664dcad6be5ec2acd`
+-	Image ID: `sha256:6bd125589c45979984ff3a478ab0e7e750a860eaff6ec7850f9ebbaa919c5b87`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Mon, 11 Aug 2025 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1754870400'
+# Wed, 13 Aug 2025 00:54:11 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
 # Wed, 13 Aug 2025 00:54:11 GMT
 RUN set -eux; 	groupadd --system --gid 11211 memcache; 	useradd --system --gid memcache --uid 11211 memcache # buildkit
 # Wed, 13 Aug 2025 00:54:11 GMT
@@ -526,53 +526,53 @@ CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:52a4daa8724e9e1632306e15fe478aa26ff0ebcb7ba924cb168e9b6738c239d5`  
-		Last Modified: Wed, 13 Aug 2025 01:42:36 GMT  
-		Size: 33.6 MB (33594213 bytes)  
+	-	`sha256:d11c44105444ef722eccd8c92c6b2fce9986e3274ba9b346e044a458c0425852`  
+		Last Modified: Mon, 08 Sep 2025 22:03:02 GMT  
+		Size: 33.6 MB (33594351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a26c42ec1bf9e33e4a6a75b57802a57b9d166fccf4b2e5b13cef2b9742fc5025`  
-		Last Modified: Thu, 14 Aug 2025 02:32:42 GMT  
-		Size: 1.1 KB (1111 bytes)  
+	-	`sha256:3805484b66af885fcb94d9f71abdb4c78adf567ec71b225f51cc7fe455815788`  
+		Last Modified: Mon, 08 Sep 2025 22:16:29 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a82df09860007e05001d706e92e1aa450bfd12fc72a24522ccca5edc6f43cd`  
-		Last Modified: Thu, 14 Aug 2025 02:32:42 GMT  
-		Size: 170.2 KB (170241 bytes)  
+	-	`sha256:c908d88095afd90a2c732a6214d328ea33ae5e6125054cd931769d033a2d85ef`  
+		Last Modified: Mon, 08 Sep 2025 22:16:34 GMT  
+		Size: 170.3 KB (170317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f425e49b56f20bc4209bec20b1ab8671bd728a94104369def1c947c90134052`  
-		Last Modified: Thu, 14 Aug 2025 02:32:42 GMT  
-		Size: 2.4 MB (2416933 bytes)  
+	-	`sha256:9b3933d81b48ea37c4652fb46426fc2efab079a898f00ab2d4b44121f9f755c9`  
+		Last Modified: Mon, 08 Sep 2025 22:16:37 GMT  
+		Size: 2.4 MB (2416996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b832c8b1a0256fd9b38e9fd823309571e179c77a2f44d5115f06ae282b7972f`  
-		Last Modified: Thu, 14 Aug 2025 02:32:42 GMT  
-		Size: 284.0 B  
+	-	`sha256:b2da33aee9fcd0f7afbf7f76c964d99eb02bc1bf2d4ae769f7df57c59a10084b`  
+		Last Modified: Mon, 08 Sep 2025 22:16:43 GMT  
+		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da165b338847a53b7c8a0a0a08c089c86721f3997c5f507291c4737245ade82f`  
-		Last Modified: Thu, 14 Aug 2025 02:32:42 GMT  
-		Size: 122.0 B  
+	-	`sha256:1036cfc97bcd15cdeb732ba8b33241b43ca197e918d2fb5e0d8896fc1ac87b5f`  
+		Last Modified: Mon, 08 Sep 2025 22:16:54 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:d11fb93c72d4e4416799b886acc2230eefbe26e6381d65c674a1a47f310f22ea
+$ docker pull memcached@sha256:90bc18335a741090cc7fe13f6760141849b97185883934f7fecb17d264815c11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 MB (2033202 bytes)**  
+-	Total Size: **2.0 MB (2034051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2154e1260dfec440f34afa1451b8e89c13a23e1eb451b2250766c9c88cf993a`
+-	Image ID: `sha256:8d372a4b973c46267b2df0aeb2f63680afc3e1b6548afae3c5d0289290417c46`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3c0cb7a63a69d321f183e466c5c0a934dd9a09173b6e174e2f17a9a24e241dee`  
-		Last Modified: Thu, 14 Aug 2025 03:34:34 GMT  
-		Size: 2.0 MB (2010933 bytes)  
+	-	`sha256:e091e2808ebdf1c549d36882b02909df4dd670db92379b9fa13cfa4ac9dd79dc`  
+		Last Modified: Tue, 09 Sep 2025 00:34:38 GMT  
+		Size: 2.0 MB (2011781 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3e4dcd6c60091d8eaa78af8659654106ffc91270b3f5b4b6e166f41e295e361f`  
-		Last Modified: Thu, 14 Aug 2025 03:34:35 GMT  
-		Size: 22.3 KB (22269 bytes)  
+	-	`sha256:2c22910b46d4a012a95c6c78e995a26fe2d195a0b77407a0fa514d40d276b6d5`  
+		Last Modified: Tue, 09 Sep 2025 00:34:39 GMT  
+		Size: 22.3 KB (22270 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `memcached:1-trixie` - linux; riscv64
@@ -670,19 +670,19 @@ $ docker pull memcached@sha256:baed9e51ed43678786168919243f63f8f671526c2bfa19d5c
 ### `memcached:1-trixie` - linux; s390x
 
 ```console
-$ docker pull memcached@sha256:c7b8d8a8065d2a0ea3bdaaadd564986a39a88ad9d9ef599faf4f923888bb9126
+$ docker pull memcached@sha256:3bcbe3a45fd54282baa5a9386b192ca31c3e81bdc8485d8db097149d84fbe350
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32288745 bytes)**  
+-	Total Size: **32.3 MB (32288654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6fca6b4af0e7ae24559fc296fb0ce831a94645f64b986956f57f9306df1ed22`
+-	Image ID: `sha256:4ed130213ee855851e072a1c3e9ff25ce8cf667a1fa2f336e7d3033704caa1ca`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Mon, 11 Aug 2025 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1754870400'
+# Wed, 13 Aug 2025 00:54:11 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
 # Wed, 13 Aug 2025 00:54:11 GMT
 RUN set -eux; 	groupadd --system --gid 11211 memcache; 	useradd --system --gid memcache --uid 11211 memcache # buildkit
 # Wed, 13 Aug 2025 00:54:11 GMT
@@ -710,51 +710,51 @@ CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:bfe4d60a27c9392ab729f16b50a763cda36622d744066c3cf029a072133f2907`  
-		Last Modified: Tue, 12 Aug 2025 20:59:52 GMT  
-		Size: 29.8 MB (29833057 bytes)  
+	-	`sha256:8af003c0cb712f415b555d33f1c4a9cc3fad82782766d388f3426c4d807a5ab2`  
+		Last Modified: Mon, 08 Sep 2025 21:53:51 GMT  
+		Size: 29.8 MB (29832904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:024aba4218861d2cdfa6f7186fcca6f2f2041ce6c7210cd258e28d55a2c1fa16`  
-		Last Modified: Thu, 14 Aug 2025 02:58:06 GMT  
-		Size: 1.1 KB (1109 bytes)  
+	-	`sha256:9b0eb34300a0bc206ba9a76b82bf31f6f577a34dca98674afef0ed67ad674e44`  
+		Last Modified: Mon, 08 Sep 2025 21:59:37 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d2b32b5cc5f77750b103e7bdeb63810088dca53dae4f8b6eed4e17f219a5826`  
-		Last Modified: Thu, 14 Aug 2025 02:58:05 GMT  
-		Size: 140.4 KB (140388 bytes)  
+	-	`sha256:715af3540b6b4658632727451d59f5388cfb20323e3b8c41357eec0bf4434f0f`  
+		Last Modified: Mon, 08 Sep 2025 21:59:42 GMT  
+		Size: 140.4 KB (140449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a046ba92157d2c0b391049e3f702ebcac682b0c6ee6e651f44d940e5d9bd8cd7`  
-		Last Modified: Thu, 14 Aug 2025 02:58:07 GMT  
-		Size: 2.3 MB (2313787 bytes)  
+	-	`sha256:36cd59119f8bc8499d5544d83baf401c6ace107b6246f08931b280b7fe3f6b0a`  
+		Last Modified: Mon, 08 Sep 2025 21:59:48 GMT  
+		Size: 2.3 MB (2313790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dd7d0eef9a2ce528ea647334f74bfda29496059b15274182ae0d16fb7e5f28d`  
-		Last Modified: Thu, 14 Aug 2025 02:58:06 GMT  
-		Size: 283.0 B  
+	-	`sha256:bbc340ae4170d0fb3d1518654e96ccf901244ae3d89c8f9d0becfda13ea5fdc4`  
+		Last Modified: Mon, 08 Sep 2025 21:59:57 GMT  
+		Size: 282.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55c5230e4318cec0912586827ea533d6abfaed20ff08b3662b6cf6871a9abae1`  
-		Last Modified: Thu, 14 Aug 2025 02:58:06 GMT  
-		Size: 121.0 B  
+	-	`sha256:0bcf5c25cf076fc7b3ac2a0aee9b13cfe12e937eded040972dc2e62ba200c1cb`  
+		Last Modified: Mon, 08 Sep 2025 22:00:01 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:88badce3b30eeb4fdb00156647e4a3479b0c7cf8dddb286e0bd07105084f4e5e
+$ docker pull memcached@sha256:affcc5e72b61949e2d9122b48737c8cd0386dc37fd1a1abea985c1f616c91138
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 MB (2030965 bytes)**  
+-	Total Size: **2.0 MB (2031810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7704cd55751a22fc58eb4a349020abdd760508cd1b9344ccb0df28dc62d35f98`
+-	Image ID: `sha256:ed0a6b73823a16e0575e63beabd7bb699fecbf7c9d909ecddfc615655b5a8133`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91e3962d713f291258d33cdc619c48c657c3a72b3a6c808786e3b209389502b2`  
-		Last Modified: Thu, 14 Aug 2025 03:34:39 GMT  
-		Size: 2.0 MB (2008769 bytes)  
+	-	`sha256:a89e1c2c7cfa2e3dfd9af05eede58dadae68f8c06c82fea322010b8f9755513e`  
+		Last Modified: Tue, 09 Sep 2025 00:34:45 GMT  
+		Size: 2.0 MB (2009617 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:76baa03c0dea63878577ee4ab27db735c1db244cbefee8f9c7b5d5eb4d3887f1`  
-		Last Modified: Thu, 14 Aug 2025 03:34:39 GMT  
-		Size: 22.2 KB (22196 bytes)  
+	-	`sha256:ac45e3e5dde8ef6f1dbad5960089acdc43627f47b6053e478b7306ed1b7ed176`  
+		Last Modified: Tue, 09 Sep 2025 00:34:46 GMT  
+		Size: 22.2 KB (22193 bytes)  
 		MIME: application/vnd.in-toto+json
