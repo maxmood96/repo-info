@@ -104,7 +104,7 @@
 ## `mongo:6`
 
 ```console
-$ docker pull mongo@sha256:95ec2fde0ea40f0cce0081f103edeac6acca3530e395f353d98f549ef28ff03a
+$ docker pull mongo@sha256:24dfe04d403945932e23e159038cc820ba09440048d80631ee0fc2baca888fc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -119,13 +119,13 @@ $ docker pull mongo@sha256:95ec2fde0ea40f0cce0081f103edeac6acca3530e395f353d98f5
 ### `mongo:6` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:14e05547450d9cc66e459248ea614b5f9fe0e031bbb5d91c8c5d9f748ca49cd4
+$ docker pull mongo@sha256:4ac03065fbdcdc2e208b1fd0189033d99c2564d7403c1d070e4e51e48127c381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267034734 bytes)**  
+-	Total Size: **266.8 MB (266837251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
+-	Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -142,47 +142,47 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-6.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '39BD841E4BE5FB195A65400E6A26B1AE64C3C388' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=6.0
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=6.0.26
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -191,57 +191,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c358012d5027fe2024e94787e98b7ec27394e91c5787cf5701e2f93ba2746e6d`  
-		Last Modified: Tue, 02 Sep 2025 00:26:06 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:b116b519668dfa26a90626463883f9d846ae10c3e19488526457e82371750cb0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 1.8 KB (1779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965b246ed76c090dbebf36d08904bb355c7415185a4000da433681a58cdb71ca`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.5 MB (1513802 bytes)  
+	-	`sha256:aeea685a44f3d7b311bd1a2f3230e256e8a042621ffffc26374d59e2b8db4840`  
+		Last Modified: Mon, 08 Sep 2025 23:22:15 GMT  
+		Size: 1.5 MB (1513808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c9af8b75f916b536ecd2b06e6b587833a682c50f42be908a56d2318181e613`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.1 MB (1095124 bytes)  
+	-	`sha256:0b52fe09d28e93e0cbf7b60c139059e6baecc497d52e0b7d67df624ce38a9ff8`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
+		Size: 897.3 KB (897329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:9f8d948e2862f589b2507fe1202cf191533592838ec30c90cb77096e8b5189b0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f032b460ca054d4194830a81860381a03861c4907798e0f6a83eaaf7c9900b36`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 262.0 B  
+	-	`sha256:43fe571b293d2b8ca7a97fe24eafe486b255cc532498fb8fb8d86da642c848ef`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9af795c9d1c061c8b5bc131065508057532da862ae285ba9e42ea4b2151550`  
-		Last Modified: Tue, 02 Sep 2025 01:07:28 GMT  
-		Size: 234.9 MB (234881710 bytes)  
+	-	`sha256:422da2760fd00e713d97f4df8c1f2fcb52a0a5b4b9950724398e9d754a68ab2e`  
+		Last Modified: Tue, 09 Sep 2025 01:07:27 GMT  
+		Size: 234.9 MB (234882019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be69a9bc4ef4ab2d9f839bb4d7ea3619a07a65932972d2114e6e3fe77666adb`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
+	-	`sha256:df335ce6323435b37852fbf7edd7b5e564f1ce13f2fc22262361d56e358f0d47`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:6` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:2e1d3175e78be7774fd53ce2d7f881e574f6ee41b146ddcb1d9069cf696d580f
+$ docker pull mongo@sha256:20a67a768ef8fbce8cb46ffadb0d89ee8e53ee6770bbab798f2ffe8d7605dab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251934 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eccc24fff405d3a58e3690df2141e5b15853da5bb77f7174463776f6a6bca9ab`
+-	Image ID: `sha256:57d94638ee3b135b2d1b702bf5721641a687ea728dd2fcbe64aae9055355e18f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4532a2a4639d6e0a81c09509618da0831bf29d0ded37a743dec61d8d0977b302`  
-		Last Modified: Tue, 02 Sep 2025 01:07:18 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:54b526dfcaf20bcdcc16eac7d8dbccccc58a44997169e20edb8214aae60a9ec2`  
+		Last Modified: Tue, 09 Sep 2025 01:07:19 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c50309176fe02fbf9c3ac647db6fefab7ae80adfdb88abf46ba5a1c97fe89e88`  
-		Last Modified: Tue, 02 Sep 2025 01:07:19 GMT  
-		Size: 28.0 KB (27991 bytes)  
+	-	`sha256:ae99449b23456f95285be606bf5726d8aff2d877221bf2212184e9347e0f129b`  
+		Last Modified: Tue, 09 Sep 2025 01:07:20 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:6` - linux; arm64 variant v8
@@ -533,7 +533,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:6-jammy`
 
 ```console
-$ docker pull mongo@sha256:b17d4a3519e39c7114b31309a579f822711b72271e3772c554b6c1657ad43120
+$ docker pull mongo@sha256:ba265abfbe2f9c063b87a0cdab66c13417fe455adb3d23fb47112510ba0eeb9c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -546,13 +546,13 @@ $ docker pull mongo@sha256:b17d4a3519e39c7114b31309a579f822711b72271e3772c554b6c
 ### `mongo:6-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:14e05547450d9cc66e459248ea614b5f9fe0e031bbb5d91c8c5d9f748ca49cd4
+$ docker pull mongo@sha256:4ac03065fbdcdc2e208b1fd0189033d99c2564d7403c1d070e4e51e48127c381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267034734 bytes)**  
+-	Total Size: **266.8 MB (266837251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
+-	Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -569,47 +569,47 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-6.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '39BD841E4BE5FB195A65400E6A26B1AE64C3C388' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=6.0
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=6.0.26
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -618,57 +618,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c358012d5027fe2024e94787e98b7ec27394e91c5787cf5701e2f93ba2746e6d`  
-		Last Modified: Tue, 02 Sep 2025 00:26:06 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:b116b519668dfa26a90626463883f9d846ae10c3e19488526457e82371750cb0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 1.8 KB (1779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965b246ed76c090dbebf36d08904bb355c7415185a4000da433681a58cdb71ca`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.5 MB (1513802 bytes)  
+	-	`sha256:aeea685a44f3d7b311bd1a2f3230e256e8a042621ffffc26374d59e2b8db4840`  
+		Last Modified: Mon, 08 Sep 2025 23:22:15 GMT  
+		Size: 1.5 MB (1513808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c9af8b75f916b536ecd2b06e6b587833a682c50f42be908a56d2318181e613`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.1 MB (1095124 bytes)  
+	-	`sha256:0b52fe09d28e93e0cbf7b60c139059e6baecc497d52e0b7d67df624ce38a9ff8`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
+		Size: 897.3 KB (897329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:9f8d948e2862f589b2507fe1202cf191533592838ec30c90cb77096e8b5189b0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f032b460ca054d4194830a81860381a03861c4907798e0f6a83eaaf7c9900b36`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 262.0 B  
+	-	`sha256:43fe571b293d2b8ca7a97fe24eafe486b255cc532498fb8fb8d86da642c848ef`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9af795c9d1c061c8b5bc131065508057532da862ae285ba9e42ea4b2151550`  
-		Last Modified: Tue, 02 Sep 2025 01:07:28 GMT  
-		Size: 234.9 MB (234881710 bytes)  
+	-	`sha256:422da2760fd00e713d97f4df8c1f2fcb52a0a5b4b9950724398e9d754a68ab2e`  
+		Last Modified: Tue, 09 Sep 2025 01:07:27 GMT  
+		Size: 234.9 MB (234882019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be69a9bc4ef4ab2d9f839bb4d7ea3619a07a65932972d2114e6e3fe77666adb`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
+	-	`sha256:df335ce6323435b37852fbf7edd7b5e564f1ce13f2fc22262361d56e358f0d47`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:6-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:2e1d3175e78be7774fd53ce2d7f881e574f6ee41b146ddcb1d9069cf696d580f
+$ docker pull mongo@sha256:20a67a768ef8fbce8cb46ffadb0d89ee8e53ee6770bbab798f2ffe8d7605dab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251934 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eccc24fff405d3a58e3690df2141e5b15853da5bb77f7174463776f6a6bca9ab`
+-	Image ID: `sha256:57d94638ee3b135b2d1b702bf5721641a687ea728dd2fcbe64aae9055355e18f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4532a2a4639d6e0a81c09509618da0831bf29d0ded37a743dec61d8d0977b302`  
-		Last Modified: Tue, 02 Sep 2025 01:07:18 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:54b526dfcaf20bcdcc16eac7d8dbccccc58a44997169e20edb8214aae60a9ec2`  
+		Last Modified: Tue, 09 Sep 2025 01:07:19 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c50309176fe02fbf9c3ac647db6fefab7ae80adfdb88abf46ba5a1c97fe89e88`  
-		Last Modified: Tue, 02 Sep 2025 01:07:19 GMT  
-		Size: 28.0 KB (27991 bytes)  
+	-	`sha256:ae99449b23456f95285be606bf5726d8aff2d877221bf2212184e9347e0f129b`  
+		Last Modified: Tue, 09 Sep 2025 01:07:20 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:6-jammy` - linux; arm64 variant v8
@@ -1351,7 +1351,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:6.0`
 
 ```console
-$ docker pull mongo@sha256:95ec2fde0ea40f0cce0081f103edeac6acca3530e395f353d98f549ef28ff03a
+$ docker pull mongo@sha256:24dfe04d403945932e23e159038cc820ba09440048d80631ee0fc2baca888fc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1366,13 +1366,13 @@ $ docker pull mongo@sha256:95ec2fde0ea40f0cce0081f103edeac6acca3530e395f353d98f5
 ### `mongo:6.0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:14e05547450d9cc66e459248ea614b5f9fe0e031bbb5d91c8c5d9f748ca49cd4
+$ docker pull mongo@sha256:4ac03065fbdcdc2e208b1fd0189033d99c2564d7403c1d070e4e51e48127c381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267034734 bytes)**  
+-	Total Size: **266.8 MB (266837251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
+-	Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -1389,47 +1389,47 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-6.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '39BD841E4BE5FB195A65400E6A26B1AE64C3C388' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=6.0
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=6.0.26
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -1438,57 +1438,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c358012d5027fe2024e94787e98b7ec27394e91c5787cf5701e2f93ba2746e6d`  
-		Last Modified: Tue, 02 Sep 2025 00:26:06 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:b116b519668dfa26a90626463883f9d846ae10c3e19488526457e82371750cb0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 1.8 KB (1779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965b246ed76c090dbebf36d08904bb355c7415185a4000da433681a58cdb71ca`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.5 MB (1513802 bytes)  
+	-	`sha256:aeea685a44f3d7b311bd1a2f3230e256e8a042621ffffc26374d59e2b8db4840`  
+		Last Modified: Mon, 08 Sep 2025 23:22:15 GMT  
+		Size: 1.5 MB (1513808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c9af8b75f916b536ecd2b06e6b587833a682c50f42be908a56d2318181e613`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.1 MB (1095124 bytes)  
+	-	`sha256:0b52fe09d28e93e0cbf7b60c139059e6baecc497d52e0b7d67df624ce38a9ff8`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
+		Size: 897.3 KB (897329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:9f8d948e2862f589b2507fe1202cf191533592838ec30c90cb77096e8b5189b0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f032b460ca054d4194830a81860381a03861c4907798e0f6a83eaaf7c9900b36`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 262.0 B  
+	-	`sha256:43fe571b293d2b8ca7a97fe24eafe486b255cc532498fb8fb8d86da642c848ef`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9af795c9d1c061c8b5bc131065508057532da862ae285ba9e42ea4b2151550`  
-		Last Modified: Tue, 02 Sep 2025 01:07:28 GMT  
-		Size: 234.9 MB (234881710 bytes)  
+	-	`sha256:422da2760fd00e713d97f4df8c1f2fcb52a0a5b4b9950724398e9d754a68ab2e`  
+		Last Modified: Tue, 09 Sep 2025 01:07:27 GMT  
+		Size: 234.9 MB (234882019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be69a9bc4ef4ab2d9f839bb4d7ea3619a07a65932972d2114e6e3fe77666adb`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
+	-	`sha256:df335ce6323435b37852fbf7edd7b5e564f1ce13f2fc22262361d56e358f0d47`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:6.0` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:2e1d3175e78be7774fd53ce2d7f881e574f6ee41b146ddcb1d9069cf696d580f
+$ docker pull mongo@sha256:20a67a768ef8fbce8cb46ffadb0d89ee8e53ee6770bbab798f2ffe8d7605dab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251934 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eccc24fff405d3a58e3690df2141e5b15853da5bb77f7174463776f6a6bca9ab`
+-	Image ID: `sha256:57d94638ee3b135b2d1b702bf5721641a687ea728dd2fcbe64aae9055355e18f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4532a2a4639d6e0a81c09509618da0831bf29d0ded37a743dec61d8d0977b302`  
-		Last Modified: Tue, 02 Sep 2025 01:07:18 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:54b526dfcaf20bcdcc16eac7d8dbccccc58a44997169e20edb8214aae60a9ec2`  
+		Last Modified: Tue, 09 Sep 2025 01:07:19 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c50309176fe02fbf9c3ac647db6fefab7ae80adfdb88abf46ba5a1c97fe89e88`  
-		Last Modified: Tue, 02 Sep 2025 01:07:19 GMT  
-		Size: 28.0 KB (27991 bytes)  
+	-	`sha256:ae99449b23456f95285be606bf5726d8aff2d877221bf2212184e9347e0f129b`  
+		Last Modified: Tue, 09 Sep 2025 01:07:20 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:6.0` - linux; arm64 variant v8
@@ -1780,7 +1780,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:6.0-jammy`
 
 ```console
-$ docker pull mongo@sha256:b17d4a3519e39c7114b31309a579f822711b72271e3772c554b6c1657ad43120
+$ docker pull mongo@sha256:ba265abfbe2f9c063b87a0cdab66c13417fe455adb3d23fb47112510ba0eeb9c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1793,13 +1793,13 @@ $ docker pull mongo@sha256:b17d4a3519e39c7114b31309a579f822711b72271e3772c554b6c
 ### `mongo:6.0-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:14e05547450d9cc66e459248ea614b5f9fe0e031bbb5d91c8c5d9f748ca49cd4
+$ docker pull mongo@sha256:4ac03065fbdcdc2e208b1fd0189033d99c2564d7403c1d070e4e51e48127c381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267034734 bytes)**  
+-	Total Size: **266.8 MB (266837251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
+-	Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -1816,47 +1816,47 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-6.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '39BD841E4BE5FB195A65400E6A26B1AE64C3C388' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=6.0
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=6.0.26
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -1865,57 +1865,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c358012d5027fe2024e94787e98b7ec27394e91c5787cf5701e2f93ba2746e6d`  
-		Last Modified: Tue, 02 Sep 2025 00:26:06 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:b116b519668dfa26a90626463883f9d846ae10c3e19488526457e82371750cb0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 1.8 KB (1779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965b246ed76c090dbebf36d08904bb355c7415185a4000da433681a58cdb71ca`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.5 MB (1513802 bytes)  
+	-	`sha256:aeea685a44f3d7b311bd1a2f3230e256e8a042621ffffc26374d59e2b8db4840`  
+		Last Modified: Mon, 08 Sep 2025 23:22:15 GMT  
+		Size: 1.5 MB (1513808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c9af8b75f916b536ecd2b06e6b587833a682c50f42be908a56d2318181e613`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.1 MB (1095124 bytes)  
+	-	`sha256:0b52fe09d28e93e0cbf7b60c139059e6baecc497d52e0b7d67df624ce38a9ff8`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
+		Size: 897.3 KB (897329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:9f8d948e2862f589b2507fe1202cf191533592838ec30c90cb77096e8b5189b0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f032b460ca054d4194830a81860381a03861c4907798e0f6a83eaaf7c9900b36`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 262.0 B  
+	-	`sha256:43fe571b293d2b8ca7a97fe24eafe486b255cc532498fb8fb8d86da642c848ef`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9af795c9d1c061c8b5bc131065508057532da862ae285ba9e42ea4b2151550`  
-		Last Modified: Tue, 02 Sep 2025 01:07:28 GMT  
-		Size: 234.9 MB (234881710 bytes)  
+	-	`sha256:422da2760fd00e713d97f4df8c1f2fcb52a0a5b4b9950724398e9d754a68ab2e`  
+		Last Modified: Tue, 09 Sep 2025 01:07:27 GMT  
+		Size: 234.9 MB (234882019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be69a9bc4ef4ab2d9f839bb4d7ea3619a07a65932972d2114e6e3fe77666adb`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
+	-	`sha256:df335ce6323435b37852fbf7edd7b5e564f1ce13f2fc22262361d56e358f0d47`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:6.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:2e1d3175e78be7774fd53ce2d7f881e574f6ee41b146ddcb1d9069cf696d580f
+$ docker pull mongo@sha256:20a67a768ef8fbce8cb46ffadb0d89ee8e53ee6770bbab798f2ffe8d7605dab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251934 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eccc24fff405d3a58e3690df2141e5b15853da5bb77f7174463776f6a6bca9ab`
+-	Image ID: `sha256:57d94638ee3b135b2d1b702bf5721641a687ea728dd2fcbe64aae9055355e18f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4532a2a4639d6e0a81c09509618da0831bf29d0ded37a743dec61d8d0977b302`  
-		Last Modified: Tue, 02 Sep 2025 01:07:18 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:54b526dfcaf20bcdcc16eac7d8dbccccc58a44997169e20edb8214aae60a9ec2`  
+		Last Modified: Tue, 09 Sep 2025 01:07:19 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c50309176fe02fbf9c3ac647db6fefab7ae80adfdb88abf46ba5a1c97fe89e88`  
-		Last Modified: Tue, 02 Sep 2025 01:07:19 GMT  
-		Size: 28.0 KB (27991 bytes)  
+	-	`sha256:ae99449b23456f95285be606bf5726d8aff2d877221bf2212184e9347e0f129b`  
+		Last Modified: Tue, 09 Sep 2025 01:07:20 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:6.0-jammy` - linux; arm64 variant v8
@@ -2598,7 +2598,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:6.0.26`
 
 ```console
-$ docker pull mongo@sha256:95ec2fde0ea40f0cce0081f103edeac6acca3530e395f353d98f549ef28ff03a
+$ docker pull mongo@sha256:24dfe04d403945932e23e159038cc820ba09440048d80631ee0fc2baca888fc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2613,13 +2613,13 @@ $ docker pull mongo@sha256:95ec2fde0ea40f0cce0081f103edeac6acca3530e395f353d98f5
 ### `mongo:6.0.26` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:14e05547450d9cc66e459248ea614b5f9fe0e031bbb5d91c8c5d9f748ca49cd4
+$ docker pull mongo@sha256:4ac03065fbdcdc2e208b1fd0189033d99c2564d7403c1d070e4e51e48127c381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267034734 bytes)**  
+-	Total Size: **266.8 MB (266837251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
+-	Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -2636,47 +2636,47 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-6.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '39BD841E4BE5FB195A65400E6A26B1AE64C3C388' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=6.0
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=6.0.26
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -2685,57 +2685,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c358012d5027fe2024e94787e98b7ec27394e91c5787cf5701e2f93ba2746e6d`  
-		Last Modified: Tue, 02 Sep 2025 00:26:06 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:b116b519668dfa26a90626463883f9d846ae10c3e19488526457e82371750cb0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 1.8 KB (1779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965b246ed76c090dbebf36d08904bb355c7415185a4000da433681a58cdb71ca`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.5 MB (1513802 bytes)  
+	-	`sha256:aeea685a44f3d7b311bd1a2f3230e256e8a042621ffffc26374d59e2b8db4840`  
+		Last Modified: Mon, 08 Sep 2025 23:22:15 GMT  
+		Size: 1.5 MB (1513808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c9af8b75f916b536ecd2b06e6b587833a682c50f42be908a56d2318181e613`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.1 MB (1095124 bytes)  
+	-	`sha256:0b52fe09d28e93e0cbf7b60c139059e6baecc497d52e0b7d67df624ce38a9ff8`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
+		Size: 897.3 KB (897329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:9f8d948e2862f589b2507fe1202cf191533592838ec30c90cb77096e8b5189b0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f032b460ca054d4194830a81860381a03861c4907798e0f6a83eaaf7c9900b36`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 262.0 B  
+	-	`sha256:43fe571b293d2b8ca7a97fe24eafe486b255cc532498fb8fb8d86da642c848ef`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9af795c9d1c061c8b5bc131065508057532da862ae285ba9e42ea4b2151550`  
-		Last Modified: Tue, 02 Sep 2025 01:07:28 GMT  
-		Size: 234.9 MB (234881710 bytes)  
+	-	`sha256:422da2760fd00e713d97f4df8c1f2fcb52a0a5b4b9950724398e9d754a68ab2e`  
+		Last Modified: Tue, 09 Sep 2025 01:07:27 GMT  
+		Size: 234.9 MB (234882019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be69a9bc4ef4ab2d9f839bb4d7ea3619a07a65932972d2114e6e3fe77666adb`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
+	-	`sha256:df335ce6323435b37852fbf7edd7b5e564f1ce13f2fc22262361d56e358f0d47`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:6.0.26` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:2e1d3175e78be7774fd53ce2d7f881e574f6ee41b146ddcb1d9069cf696d580f
+$ docker pull mongo@sha256:20a67a768ef8fbce8cb46ffadb0d89ee8e53ee6770bbab798f2ffe8d7605dab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251934 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eccc24fff405d3a58e3690df2141e5b15853da5bb77f7174463776f6a6bca9ab`
+-	Image ID: `sha256:57d94638ee3b135b2d1b702bf5721641a687ea728dd2fcbe64aae9055355e18f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4532a2a4639d6e0a81c09509618da0831bf29d0ded37a743dec61d8d0977b302`  
-		Last Modified: Tue, 02 Sep 2025 01:07:18 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:54b526dfcaf20bcdcc16eac7d8dbccccc58a44997169e20edb8214aae60a9ec2`  
+		Last Modified: Tue, 09 Sep 2025 01:07:19 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c50309176fe02fbf9c3ac647db6fefab7ae80adfdb88abf46ba5a1c97fe89e88`  
-		Last Modified: Tue, 02 Sep 2025 01:07:19 GMT  
-		Size: 28.0 KB (27991 bytes)  
+	-	`sha256:ae99449b23456f95285be606bf5726d8aff2d877221bf2212184e9347e0f129b`  
+		Last Modified: Tue, 09 Sep 2025 01:07:20 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:6.0.26` - linux; arm64 variant v8
@@ -3027,7 +3027,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:6.0.26-jammy`
 
 ```console
-$ docker pull mongo@sha256:b17d4a3519e39c7114b31309a579f822711b72271e3772c554b6c1657ad43120
+$ docker pull mongo@sha256:ba265abfbe2f9c063b87a0cdab66c13417fe455adb3d23fb47112510ba0eeb9c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3040,13 +3040,13 @@ $ docker pull mongo@sha256:b17d4a3519e39c7114b31309a579f822711b72271e3772c554b6c
 ### `mongo:6.0.26-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:14e05547450d9cc66e459248ea614b5f9fe0e031bbb5d91c8c5d9f748ca49cd4
+$ docker pull mongo@sha256:4ac03065fbdcdc2e208b1fd0189033d99c2564d7403c1d070e4e51e48127c381
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.0 MB (267034734 bytes)**  
+-	Total Size: **266.8 MB (266837251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
+-	Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -3063,47 +3063,47 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-6.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '39BD841E4BE5FB195A65400E6A26B1AE64C3C388' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=6.0
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=6.0.26
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Mon, 25 Aug 2025 22:01:20 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -3112,57 +3112,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c358012d5027fe2024e94787e98b7ec27394e91c5787cf5701e2f93ba2746e6d`  
-		Last Modified: Tue, 02 Sep 2025 00:26:06 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:b116b519668dfa26a90626463883f9d846ae10c3e19488526457e82371750cb0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 1.8 KB (1779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965b246ed76c090dbebf36d08904bb355c7415185a4000da433681a58cdb71ca`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.5 MB (1513802 bytes)  
+	-	`sha256:aeea685a44f3d7b311bd1a2f3230e256e8a042621ffffc26374d59e2b8db4840`  
+		Last Modified: Mon, 08 Sep 2025 23:22:15 GMT  
+		Size: 1.5 MB (1513808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8c9af8b75f916b536ecd2b06e6b587833a682c50f42be908a56d2318181e613`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 1.1 MB (1095124 bytes)  
+	-	`sha256:0b52fe09d28e93e0cbf7b60c139059e6baecc497d52e0b7d67df624ce38a9ff8`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
+		Size: 897.3 KB (897329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:9f8d948e2862f589b2507fe1202cf191533592838ec30c90cb77096e8b5189b0`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f032b460ca054d4194830a81860381a03861c4907798e0f6a83eaaf7c9900b36`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
-		Size: 262.0 B  
+	-	`sha256:43fe571b293d2b8ca7a97fe24eafe486b255cc532498fb8fb8d86da642c848ef`  
+		Last Modified: Mon, 08 Sep 2025 23:22:12 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf9af795c9d1c061c8b5bc131065508057532da862ae285ba9e42ea4b2151550`  
-		Last Modified: Tue, 02 Sep 2025 01:07:28 GMT  
-		Size: 234.9 MB (234881710 bytes)  
+	-	`sha256:422da2760fd00e713d97f4df8c1f2fcb52a0a5b4b9950724398e9d754a68ab2e`  
+		Last Modified: Tue, 09 Sep 2025 01:07:27 GMT  
+		Size: 234.9 MB (234882019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be69a9bc4ef4ab2d9f839bb4d7ea3619a07a65932972d2114e6e3fe77666adb`  
-		Last Modified: Tue, 02 Sep 2025 00:26:07 GMT  
+	-	`sha256:df335ce6323435b37852fbf7edd7b5e564f1ce13f2fc22262361d56e358f0d47`  
+		Last Modified: Mon, 08 Sep 2025 23:22:13 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:6.0.26-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:2e1d3175e78be7774fd53ce2d7f881e574f6ee41b146ddcb1d9069cf696d580f
+$ docker pull mongo@sha256:20a67a768ef8fbce8cb46ffadb0d89ee8e53ee6770bbab798f2ffe8d7605dab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251934 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eccc24fff405d3a58e3690df2141e5b15853da5bb77f7174463776f6a6bca9ab`
+-	Image ID: `sha256:57d94638ee3b135b2d1b702bf5721641a687ea728dd2fcbe64aae9055355e18f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4532a2a4639d6e0a81c09509618da0831bf29d0ded37a743dec61d8d0977b302`  
-		Last Modified: Tue, 02 Sep 2025 01:07:18 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:54b526dfcaf20bcdcc16eac7d8dbccccc58a44997169e20edb8214aae60a9ec2`  
+		Last Modified: Tue, 09 Sep 2025 01:07:19 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c50309176fe02fbf9c3ac647db6fefab7ae80adfdb88abf46ba5a1c97fe89e88`  
-		Last Modified: Tue, 02 Sep 2025 01:07:19 GMT  
-		Size: 28.0 KB (27991 bytes)  
+	-	`sha256:ae99449b23456f95285be606bf5726d8aff2d877221bf2212184e9347e0f129b`  
+		Last Modified: Tue, 09 Sep 2025 01:07:20 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:6.0.26-jammy` - linux; arm64 variant v8
@@ -3845,7 +3845,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7`
 
 ```console
-$ docker pull mongo@sha256:ef6fa0eefb63350592e6589d19ee01e3ea02ab87a723a760c98b4dcc3e5274c7
+$ docker pull mongo@sha256:ad3d4ab800592d7a60d343559152ddb4105518675500ce7b19e60b0653e23658
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3860,70 +3860,70 @@ $ docker pull mongo@sha256:ef6fa0eefb63350592e6589d19ee01e3ea02ab87a723a760c98b4
 ### `mongo:7` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:6789519c0026d84b41591f26b810b745b1d7dfd19991be712a710a8139ae40ef
+$ docker pull mongo@sha256:924ff55fd3c77ac9a05da158cff133251b6baf700ce4fe2114f719b6a279a7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280075992 bytes)**  
+-	Total Size: **279.9 MB (279878152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
+-	Image ID: `sha256:c42b1a5b51f4779f8f39abd5dfad9169eb1a059096f53b859986242c563a92ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG RELEASE
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=7.0
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.23
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -3932,57 +3932,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42869c9f398f4acb68bc4873982e8ec73c56f5aa6c158683a33309a93928e19d`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
-		Size: 1.8 KB (1782 bytes)  
+	-	`sha256:8e8069ef369dba12281edf117d37fdb76c7c52b2e4799668dd6722f9ae6f622f`  
+		Last Modified: Mon, 08 Sep 2025 22:39:27 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e7f42db5a9c374f32537f0ff8bdbab082d419e7b505f5f8f082eface26d8d93`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.5 MB (1513818 bytes)  
+	-	`sha256:de0640117a40e4938d95b1d888a70a7e9f09ece551076db341f18c177e9783dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:31 GMT  
+		Size: 1.5 MB (1513806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42686e6bd012040a618b622a84e97498325b3a037ee72a2410771b7fdee26706`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.1 MB (1095134 bytes)  
+	-	`sha256:d04cd11dfa0008919534d23748a203d510a72db0c70fd30f1e35d1a643257ac2`  
+		Last Modified: Mon, 08 Sep 2025 22:39:39 GMT  
+		Size: 897.3 KB (897317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d70dec88ea665815c4f5e58885e889b7c144730c038d99533449177118afd843`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
+	-	`sha256:d7e3940a139ba188b4f0e2e83616438599ad769eb977ef27999331c1817715dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c0215223c89d650bfad876935b9af5f4954543ece3a8c08552a4cefbb70f295`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 263.0 B  
+	-	`sha256:507abacc6816954d3ee7a51425f3730bf77582c0a640576144749833bb54c5ca`  
+		Last Modified: Mon, 08 Sep 2025 22:39:46 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836cc8275d7863d915fd1279542108ee6b8133a5414754fdfe7fadc7d029267c`  
-		Last Modified: Tue, 02 Sep 2025 00:29:25 GMT  
-		Size: 247.9 MB (247922942 bytes)  
+	-	`sha256:efa0e366c9995f33630c873426e76668b7653e85995080c39111d2d31cd50bc3`  
+		Last Modified: Mon, 08 Sep 2025 22:44:49 GMT  
+		Size: 247.9 MB (247922934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d148e43fcf23d2c68bed5c82263e416e2bc02504528fbfc8a51c2391f67a544a`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:8ab0b2a4a64b471ab4666bbe07456fd853e01457d9a3877854cf08069ee840fc`  
+		Last Modified: Mon, 08 Sep 2025 22:39:49 GMT  
+		Size: 5.0 KB (5000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:18f601abe2b90ffb03639fe6fbc946abf124fdb757ccd02b7a76abfbb6dbcd5f
+$ docker pull mongo@sha256:c2819853aacf180dab101624d340a0dd7b57b136a1f2f4f92249de3f6155a8bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251932 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c7d56fb53ed73aafb05d789cea161759fb23add154fd670edf9f5b0d5823057`
+-	Image ID: `sha256:030c7946aef79815e75621f00d92737fd9506cb3cfed025cca0786c808df62ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cee23b9da14f8498e86568a5a2d03423f521666f21617a3082aa1cfec5d9542c`  
-		Last Modified: Tue, 02 Sep 2025 01:07:36 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:44482d9a119e50dc994833e8a33a61e607a5096134463d4080fb3238de013719`  
+		Last Modified: Tue, 09 Sep 2025 01:07:41 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e957cf66e29d65f9421659d2d7a275ac5d46dd09e0feaddb1ad4a7212b5d3179`  
-		Last Modified: Tue, 02 Sep 2025 01:07:37 GMT  
-		Size: 28.0 KB (27989 bytes)  
+	-	`sha256:d8b7a0a2dda617eb6a3ce7ba7a4afd1cb3406d1d0bbcdcf009d2d243427ba9be`  
+		Last Modified: Tue, 09 Sep 2025 01:07:42 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7` - linux; arm64 variant v8
@@ -4274,7 +4274,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7-jammy`
 
 ```console
-$ docker pull mongo@sha256:393556b45a745f9ffd0e6542503ae8ff229984c7b7c9e01a150bdd67f3c4d332
+$ docker pull mongo@sha256:0f6d97b870d0757692bfbf8ed40252339b715e0d1da5874ab9fe776784de1951
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4287,70 +4287,70 @@ $ docker pull mongo@sha256:393556b45a745f9ffd0e6542503ae8ff229984c7b7c9e01a150bd
 ### `mongo:7-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:6789519c0026d84b41591f26b810b745b1d7dfd19991be712a710a8139ae40ef
+$ docker pull mongo@sha256:924ff55fd3c77ac9a05da158cff133251b6baf700ce4fe2114f719b6a279a7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280075992 bytes)**  
+-	Total Size: **279.9 MB (279878152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
+-	Image ID: `sha256:c42b1a5b51f4779f8f39abd5dfad9169eb1a059096f53b859986242c563a92ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG RELEASE
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=7.0
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.23
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -4359,57 +4359,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42869c9f398f4acb68bc4873982e8ec73c56f5aa6c158683a33309a93928e19d`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
-		Size: 1.8 KB (1782 bytes)  
+	-	`sha256:8e8069ef369dba12281edf117d37fdb76c7c52b2e4799668dd6722f9ae6f622f`  
+		Last Modified: Mon, 08 Sep 2025 22:39:27 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e7f42db5a9c374f32537f0ff8bdbab082d419e7b505f5f8f082eface26d8d93`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.5 MB (1513818 bytes)  
+	-	`sha256:de0640117a40e4938d95b1d888a70a7e9f09ece551076db341f18c177e9783dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:31 GMT  
+		Size: 1.5 MB (1513806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42686e6bd012040a618b622a84e97498325b3a037ee72a2410771b7fdee26706`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.1 MB (1095134 bytes)  
+	-	`sha256:d04cd11dfa0008919534d23748a203d510a72db0c70fd30f1e35d1a643257ac2`  
+		Last Modified: Mon, 08 Sep 2025 22:39:39 GMT  
+		Size: 897.3 KB (897317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d70dec88ea665815c4f5e58885e889b7c144730c038d99533449177118afd843`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
+	-	`sha256:d7e3940a139ba188b4f0e2e83616438599ad769eb977ef27999331c1817715dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c0215223c89d650bfad876935b9af5f4954543ece3a8c08552a4cefbb70f295`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 263.0 B  
+	-	`sha256:507abacc6816954d3ee7a51425f3730bf77582c0a640576144749833bb54c5ca`  
+		Last Modified: Mon, 08 Sep 2025 22:39:46 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836cc8275d7863d915fd1279542108ee6b8133a5414754fdfe7fadc7d029267c`  
-		Last Modified: Tue, 02 Sep 2025 00:29:25 GMT  
-		Size: 247.9 MB (247922942 bytes)  
+	-	`sha256:efa0e366c9995f33630c873426e76668b7653e85995080c39111d2d31cd50bc3`  
+		Last Modified: Mon, 08 Sep 2025 22:44:49 GMT  
+		Size: 247.9 MB (247922934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d148e43fcf23d2c68bed5c82263e416e2bc02504528fbfc8a51c2391f67a544a`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:8ab0b2a4a64b471ab4666bbe07456fd853e01457d9a3877854cf08069ee840fc`  
+		Last Modified: Mon, 08 Sep 2025 22:39:49 GMT  
+		Size: 5.0 KB (5000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:18f601abe2b90ffb03639fe6fbc946abf124fdb757ccd02b7a76abfbb6dbcd5f
+$ docker pull mongo@sha256:c2819853aacf180dab101624d340a0dd7b57b136a1f2f4f92249de3f6155a8bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251932 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c7d56fb53ed73aafb05d789cea161759fb23add154fd670edf9f5b0d5823057`
+-	Image ID: `sha256:030c7946aef79815e75621f00d92737fd9506cb3cfed025cca0786c808df62ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cee23b9da14f8498e86568a5a2d03423f521666f21617a3082aa1cfec5d9542c`  
-		Last Modified: Tue, 02 Sep 2025 01:07:36 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:44482d9a119e50dc994833e8a33a61e607a5096134463d4080fb3238de013719`  
+		Last Modified: Tue, 09 Sep 2025 01:07:41 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e957cf66e29d65f9421659d2d7a275ac5d46dd09e0feaddb1ad4a7212b5d3179`  
-		Last Modified: Tue, 02 Sep 2025 01:07:37 GMT  
-		Size: 28.0 KB (27989 bytes)  
+	-	`sha256:d8b7a0a2dda617eb6a3ce7ba7a4afd1cb3406d1d0bbcdcf009d2d243427ba9be`  
+		Last Modified: Tue, 09 Sep 2025 01:07:42 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7-jammy` - linux; arm64 variant v8
@@ -5092,7 +5092,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0`
 
 ```console
-$ docker pull mongo@sha256:ef6fa0eefb63350592e6589d19ee01e3ea02ab87a723a760c98b4dcc3e5274c7
+$ docker pull mongo@sha256:ad3d4ab800592d7a60d343559152ddb4105518675500ce7b19e60b0653e23658
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5107,70 +5107,70 @@ $ docker pull mongo@sha256:ef6fa0eefb63350592e6589d19ee01e3ea02ab87a723a760c98b4
 ### `mongo:7.0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:6789519c0026d84b41591f26b810b745b1d7dfd19991be712a710a8139ae40ef
+$ docker pull mongo@sha256:924ff55fd3c77ac9a05da158cff133251b6baf700ce4fe2114f719b6a279a7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280075992 bytes)**  
+-	Total Size: **279.9 MB (279878152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
+-	Image ID: `sha256:c42b1a5b51f4779f8f39abd5dfad9169eb1a059096f53b859986242c563a92ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG RELEASE
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=7.0
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.23
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -5179,57 +5179,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42869c9f398f4acb68bc4873982e8ec73c56f5aa6c158683a33309a93928e19d`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
-		Size: 1.8 KB (1782 bytes)  
+	-	`sha256:8e8069ef369dba12281edf117d37fdb76c7c52b2e4799668dd6722f9ae6f622f`  
+		Last Modified: Mon, 08 Sep 2025 22:39:27 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e7f42db5a9c374f32537f0ff8bdbab082d419e7b505f5f8f082eface26d8d93`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.5 MB (1513818 bytes)  
+	-	`sha256:de0640117a40e4938d95b1d888a70a7e9f09ece551076db341f18c177e9783dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:31 GMT  
+		Size: 1.5 MB (1513806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42686e6bd012040a618b622a84e97498325b3a037ee72a2410771b7fdee26706`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.1 MB (1095134 bytes)  
+	-	`sha256:d04cd11dfa0008919534d23748a203d510a72db0c70fd30f1e35d1a643257ac2`  
+		Last Modified: Mon, 08 Sep 2025 22:39:39 GMT  
+		Size: 897.3 KB (897317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d70dec88ea665815c4f5e58885e889b7c144730c038d99533449177118afd843`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
+	-	`sha256:d7e3940a139ba188b4f0e2e83616438599ad769eb977ef27999331c1817715dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c0215223c89d650bfad876935b9af5f4954543ece3a8c08552a4cefbb70f295`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 263.0 B  
+	-	`sha256:507abacc6816954d3ee7a51425f3730bf77582c0a640576144749833bb54c5ca`  
+		Last Modified: Mon, 08 Sep 2025 22:39:46 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836cc8275d7863d915fd1279542108ee6b8133a5414754fdfe7fadc7d029267c`  
-		Last Modified: Tue, 02 Sep 2025 00:29:25 GMT  
-		Size: 247.9 MB (247922942 bytes)  
+	-	`sha256:efa0e366c9995f33630c873426e76668b7653e85995080c39111d2d31cd50bc3`  
+		Last Modified: Mon, 08 Sep 2025 22:44:49 GMT  
+		Size: 247.9 MB (247922934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d148e43fcf23d2c68bed5c82263e416e2bc02504528fbfc8a51c2391f67a544a`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:8ab0b2a4a64b471ab4666bbe07456fd853e01457d9a3877854cf08069ee840fc`  
+		Last Modified: Mon, 08 Sep 2025 22:39:49 GMT  
+		Size: 5.0 KB (5000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:18f601abe2b90ffb03639fe6fbc946abf124fdb757ccd02b7a76abfbb6dbcd5f
+$ docker pull mongo@sha256:c2819853aacf180dab101624d340a0dd7b57b136a1f2f4f92249de3f6155a8bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251932 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c7d56fb53ed73aafb05d789cea161759fb23add154fd670edf9f5b0d5823057`
+-	Image ID: `sha256:030c7946aef79815e75621f00d92737fd9506cb3cfed025cca0786c808df62ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cee23b9da14f8498e86568a5a2d03423f521666f21617a3082aa1cfec5d9542c`  
-		Last Modified: Tue, 02 Sep 2025 01:07:36 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:44482d9a119e50dc994833e8a33a61e607a5096134463d4080fb3238de013719`  
+		Last Modified: Tue, 09 Sep 2025 01:07:41 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e957cf66e29d65f9421659d2d7a275ac5d46dd09e0feaddb1ad4a7212b5d3179`  
-		Last Modified: Tue, 02 Sep 2025 01:07:37 GMT  
-		Size: 28.0 KB (27989 bytes)  
+	-	`sha256:d8b7a0a2dda617eb6a3ce7ba7a4afd1cb3406d1d0bbcdcf009d2d243427ba9be`  
+		Last Modified: Tue, 09 Sep 2025 01:07:42 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0` - linux; arm64 variant v8
@@ -5521,7 +5521,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0-jammy`
 
 ```console
-$ docker pull mongo@sha256:393556b45a745f9ffd0e6542503ae8ff229984c7b7c9e01a150bdd67f3c4d332
+$ docker pull mongo@sha256:0f6d97b870d0757692bfbf8ed40252339b715e0d1da5874ab9fe776784de1951
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5534,70 +5534,70 @@ $ docker pull mongo@sha256:393556b45a745f9ffd0e6542503ae8ff229984c7b7c9e01a150bd
 ### `mongo:7.0-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:6789519c0026d84b41591f26b810b745b1d7dfd19991be712a710a8139ae40ef
+$ docker pull mongo@sha256:924ff55fd3c77ac9a05da158cff133251b6baf700ce4fe2114f719b6a279a7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280075992 bytes)**  
+-	Total Size: **279.9 MB (279878152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
+-	Image ID: `sha256:c42b1a5b51f4779f8f39abd5dfad9169eb1a059096f53b859986242c563a92ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG RELEASE
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=7.0
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.23
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -5606,57 +5606,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42869c9f398f4acb68bc4873982e8ec73c56f5aa6c158683a33309a93928e19d`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
-		Size: 1.8 KB (1782 bytes)  
+	-	`sha256:8e8069ef369dba12281edf117d37fdb76c7c52b2e4799668dd6722f9ae6f622f`  
+		Last Modified: Mon, 08 Sep 2025 22:39:27 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e7f42db5a9c374f32537f0ff8bdbab082d419e7b505f5f8f082eface26d8d93`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.5 MB (1513818 bytes)  
+	-	`sha256:de0640117a40e4938d95b1d888a70a7e9f09ece551076db341f18c177e9783dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:31 GMT  
+		Size: 1.5 MB (1513806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42686e6bd012040a618b622a84e97498325b3a037ee72a2410771b7fdee26706`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.1 MB (1095134 bytes)  
+	-	`sha256:d04cd11dfa0008919534d23748a203d510a72db0c70fd30f1e35d1a643257ac2`  
+		Last Modified: Mon, 08 Sep 2025 22:39:39 GMT  
+		Size: 897.3 KB (897317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d70dec88ea665815c4f5e58885e889b7c144730c038d99533449177118afd843`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
+	-	`sha256:d7e3940a139ba188b4f0e2e83616438599ad769eb977ef27999331c1817715dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c0215223c89d650bfad876935b9af5f4954543ece3a8c08552a4cefbb70f295`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 263.0 B  
+	-	`sha256:507abacc6816954d3ee7a51425f3730bf77582c0a640576144749833bb54c5ca`  
+		Last Modified: Mon, 08 Sep 2025 22:39:46 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836cc8275d7863d915fd1279542108ee6b8133a5414754fdfe7fadc7d029267c`  
-		Last Modified: Tue, 02 Sep 2025 00:29:25 GMT  
-		Size: 247.9 MB (247922942 bytes)  
+	-	`sha256:efa0e366c9995f33630c873426e76668b7653e85995080c39111d2d31cd50bc3`  
+		Last Modified: Mon, 08 Sep 2025 22:44:49 GMT  
+		Size: 247.9 MB (247922934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d148e43fcf23d2c68bed5c82263e416e2bc02504528fbfc8a51c2391f67a544a`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:8ab0b2a4a64b471ab4666bbe07456fd853e01457d9a3877854cf08069ee840fc`  
+		Last Modified: Mon, 08 Sep 2025 22:39:49 GMT  
+		Size: 5.0 KB (5000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:18f601abe2b90ffb03639fe6fbc946abf124fdb757ccd02b7a76abfbb6dbcd5f
+$ docker pull mongo@sha256:c2819853aacf180dab101624d340a0dd7b57b136a1f2f4f92249de3f6155a8bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251932 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c7d56fb53ed73aafb05d789cea161759fb23add154fd670edf9f5b0d5823057`
+-	Image ID: `sha256:030c7946aef79815e75621f00d92737fd9506cb3cfed025cca0786c808df62ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cee23b9da14f8498e86568a5a2d03423f521666f21617a3082aa1cfec5d9542c`  
-		Last Modified: Tue, 02 Sep 2025 01:07:36 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:44482d9a119e50dc994833e8a33a61e607a5096134463d4080fb3238de013719`  
+		Last Modified: Tue, 09 Sep 2025 01:07:41 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e957cf66e29d65f9421659d2d7a275ac5d46dd09e0feaddb1ad4a7212b5d3179`  
-		Last Modified: Tue, 02 Sep 2025 01:07:37 GMT  
-		Size: 28.0 KB (27989 bytes)  
+	-	`sha256:d8b7a0a2dda617eb6a3ce7ba7a4afd1cb3406d1d0bbcdcf009d2d243427ba9be`  
+		Last Modified: Tue, 09 Sep 2025 01:07:42 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0-jammy` - linux; arm64 variant v8
@@ -5992,7 +5992,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0-rc`
 
 ```console
-$ docker pull mongo@sha256:39781ea8d999f417539a3141241de6ff81b3f0ad9e0d60cb1d99800bf71f48d6
+$ docker pull mongo@sha256:28cffbcba48cc2f1c99a082ebb78a054e809a430e90235888adc8fa5f4abc9f4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6007,13 +6007,13 @@ $ docker pull mongo@sha256:39781ea8d999f417539a3141241de6ff81b3f0ad9e0d60cb1d998
 ### `mongo:7.0-rc` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:c90de1ed9d4375846f1969af8b2de80b834be3b721d85e62ba20f47b1e8dfd92
+$ docker pull mongo@sha256:ed7b0d5d94c0e07f67f92a3d15ad5ccca6287d0f1832c6b8497e05f1c1a46602
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280086583 bytes)**  
+-	Total Size: **279.9 MB (279888317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5419e51d66dd9dc38bf8a5e09808af4236cc6ce4d9cf026ab72ef384d03afdce`
+-	Image ID: `sha256:4f3827f5ed9a02cd7ecc9003eeee7e7821f7fda8c2d0bd696d5292bce4f3db8b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -6030,50 +6030,50 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
-ENV GOSU_VERSION=1.17
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/7.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-7.0.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.24~rc0
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -6082,61 +6082,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4889e9979faaea9d2ae5a4617ec798483bdb6ba1a8b145d4a24e73ee12275efe`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 1.8 KB (1781 bytes)  
+	-	`sha256:b928e3dfd1dc722105197864d8502681af1bd78531a150294a5b33416db70fd4`  
+		Last Modified: Mon, 08 Sep 2025 22:43:26 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfd4dde79886fa30d217066301d1622bd39dea4a351447882656a136aa31f0b`  
-		Last Modified: Mon, 01 Sep 2025 23:40:02 GMT  
-		Size: 1.5 MB (1513823 bytes)  
+	-	`sha256:a2c6cc50a1e4f3ee1c71505f9c075ac0b73e01cb25f91be1dd957d2fdf141401`  
+		Last Modified: Mon, 08 Sep 2025 22:43:30 GMT  
+		Size: 1.5 MB (1513825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5042c88ea12d9bd7e7df90c64395163696410139c053228cefe74973be01d1ce`  
-		Last Modified: Mon, 01 Sep 2025 23:40:03 GMT  
-		Size: 1.1 MB (1097387 bytes)  
+	-	`sha256:82378d900bba3f2527ad6343f432a1f9e417ef6e8242f8f4acff541a535d1175`  
+		Last Modified: Mon, 08 Sep 2025 22:43:37 GMT  
+		Size: 899.1 KB (899148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfc1c7522603f7a5e7e6097a4feb495c07fa0c46d705321f3ca61490f3a0749f`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:2f85f80352638d4f9fa4c6f01a5d289c1bcecb0ef7fb130e5b211e84b86bf1fb`  
+		Last Modified: Mon, 08 Sep 2025 22:43:41 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a872cf17de3cd650f1419e9f098802b98915982457d108a37f2687a268897b32`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 265.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8de25fbae283cfd5b2c8d97ffc2f7f2c50a3bbb69177216c267c478e334985`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:469c74db597c02dc6a6f56793e3bef954ab4fffe8e8a3b09a024bc5d6b11dfc1`  
+		Last Modified: Mon, 08 Sep 2025 22:43:44 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63d9ae1118ca4adaa4ca3d4a4295abd77c47593610ac971006ab9d4174c4dfec`  
-		Last Modified: Tue, 02 Sep 2025 01:08:24 GMT  
-		Size: 247.9 MB (247931010 bytes)  
+	-	`sha256:7656338f9c03491c982f2a7fd28778c5c0be9b45d6278f4471cbfa9ad3279c1c`  
+		Last Modified: Mon, 08 Sep 2025 22:43:46 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cace295b07b31db88bc4b40794dd1c3c9afa1534e0d4d4bfb491814698a8e1`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:6bf469d2328f0c7c86edb0c10a377363a020afc9424ab6e73be6621f19f38981`  
+		Last Modified: Tue, 09 Sep 2025 01:09:50 GMT  
+		Size: 247.9 MB (247930980 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a749aeb4859707d30759209f375fac8062043f6792dde4906476c68fa5a0c85`  
+		Last Modified: Mon, 08 Sep 2025 22:43:49 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0-rc` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:033922a2e03f152b1c659bbcb9327644b020c7e0af3b2c2d6f7660f8f7c3bdd6
+$ docker pull mongo@sha256:c739bcb0ab5e782029a0e6706b2ebc2aaf69a748f7fb5786dc59fc0702b77b76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3253731 bytes)**  
+-	Total Size: **3.3 MB (3253720 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a65ff6002ce93b507ae5243d191d04dd0145fc30b8dbfe311154f2d031da787f`
+-	Image ID: `sha256:ef4790c0a3e316b616154df7752e23d4ad805beb59944ad0de3018e9a40e6d37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c27834ead0027870616ddcc4eb1fd9aafe16b9e2b1bfd966c7d29669869e35`  
-		Last Modified: Tue, 02 Sep 2025 01:07:51 GMT  
-		Size: 3.2 MB (3223443 bytes)  
+	-	`sha256:276fc8f784a52c2d7bdf11e6ada3496cc7ca09c6ce6e8994a31e1dd79dd19b82`  
+		Last Modified: Tue, 09 Sep 2025 01:07:55 GMT  
+		Size: 3.2 MB (3223439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dcd3f028df5b90bf219dc45b842adde6f50b088e9027a93f24f57232e91b09d2`  
-		Last Modified: Tue, 02 Sep 2025 01:07:53 GMT  
-		Size: 30.3 KB (30288 bytes)  
+	-	`sha256:68561573089315ba31a8499fa47a42a91a69ce84abcaa176d2eb1a6c674f63eb`  
+		Last Modified: Tue, 09 Sep 2025 01:07:56 GMT  
+		Size: 30.3 KB (30281 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0-rc` - linux; arm64 variant v8
@@ -6435,7 +6435,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0-rc-jammy`
 
 ```console
-$ docker pull mongo@sha256:3046d90c54a7a8b58794fb9b949481bf39eece88f9936d606ce1d45615115a8d
+$ docker pull mongo@sha256:77bda31c46c6238de0bdb07ca9a1d65732da4f828c78608990cc763e137393c6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6448,13 +6448,13 @@ $ docker pull mongo@sha256:3046d90c54a7a8b58794fb9b949481bf39eece88f9936d606ce1d
 ### `mongo:7.0-rc-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:c90de1ed9d4375846f1969af8b2de80b834be3b721d85e62ba20f47b1e8dfd92
+$ docker pull mongo@sha256:ed7b0d5d94c0e07f67f92a3d15ad5ccca6287d0f1832c6b8497e05f1c1a46602
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280086583 bytes)**  
+-	Total Size: **279.9 MB (279888317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5419e51d66dd9dc38bf8a5e09808af4236cc6ce4d9cf026ab72ef384d03afdce`
+-	Image ID: `sha256:4f3827f5ed9a02cd7ecc9003eeee7e7821f7fda8c2d0bd696d5292bce4f3db8b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -6471,50 +6471,50 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
-ENV GOSU_VERSION=1.17
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/7.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-7.0.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.24~rc0
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -6523,61 +6523,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4889e9979faaea9d2ae5a4617ec798483bdb6ba1a8b145d4a24e73ee12275efe`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 1.8 KB (1781 bytes)  
+	-	`sha256:b928e3dfd1dc722105197864d8502681af1bd78531a150294a5b33416db70fd4`  
+		Last Modified: Mon, 08 Sep 2025 22:43:26 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfd4dde79886fa30d217066301d1622bd39dea4a351447882656a136aa31f0b`  
-		Last Modified: Mon, 01 Sep 2025 23:40:02 GMT  
-		Size: 1.5 MB (1513823 bytes)  
+	-	`sha256:a2c6cc50a1e4f3ee1c71505f9c075ac0b73e01cb25f91be1dd957d2fdf141401`  
+		Last Modified: Mon, 08 Sep 2025 22:43:30 GMT  
+		Size: 1.5 MB (1513825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5042c88ea12d9bd7e7df90c64395163696410139c053228cefe74973be01d1ce`  
-		Last Modified: Mon, 01 Sep 2025 23:40:03 GMT  
-		Size: 1.1 MB (1097387 bytes)  
+	-	`sha256:82378d900bba3f2527ad6343f432a1f9e417ef6e8242f8f4acff541a535d1175`  
+		Last Modified: Mon, 08 Sep 2025 22:43:37 GMT  
+		Size: 899.1 KB (899148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfc1c7522603f7a5e7e6097a4feb495c07fa0c46d705321f3ca61490f3a0749f`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:2f85f80352638d4f9fa4c6f01a5d289c1bcecb0ef7fb130e5b211e84b86bf1fb`  
+		Last Modified: Mon, 08 Sep 2025 22:43:41 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a872cf17de3cd650f1419e9f098802b98915982457d108a37f2687a268897b32`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 265.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8de25fbae283cfd5b2c8d97ffc2f7f2c50a3bbb69177216c267c478e334985`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:469c74db597c02dc6a6f56793e3bef954ab4fffe8e8a3b09a024bc5d6b11dfc1`  
+		Last Modified: Mon, 08 Sep 2025 22:43:44 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63d9ae1118ca4adaa4ca3d4a4295abd77c47593610ac971006ab9d4174c4dfec`  
-		Last Modified: Tue, 02 Sep 2025 01:08:24 GMT  
-		Size: 247.9 MB (247931010 bytes)  
+	-	`sha256:7656338f9c03491c982f2a7fd28778c5c0be9b45d6278f4471cbfa9ad3279c1c`  
+		Last Modified: Mon, 08 Sep 2025 22:43:46 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cace295b07b31db88bc4b40794dd1c3c9afa1534e0d4d4bfb491814698a8e1`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:6bf469d2328f0c7c86edb0c10a377363a020afc9424ab6e73be6621f19f38981`  
+		Last Modified: Tue, 09 Sep 2025 01:09:50 GMT  
+		Size: 247.9 MB (247930980 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a749aeb4859707d30759209f375fac8062043f6792dde4906476c68fa5a0c85`  
+		Last Modified: Mon, 08 Sep 2025 22:43:49 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0-rc-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:033922a2e03f152b1c659bbcb9327644b020c7e0af3b2c2d6f7660f8f7c3bdd6
+$ docker pull mongo@sha256:c739bcb0ab5e782029a0e6706b2ebc2aaf69a748f7fb5786dc59fc0702b77b76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3253731 bytes)**  
+-	Total Size: **3.3 MB (3253720 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a65ff6002ce93b507ae5243d191d04dd0145fc30b8dbfe311154f2d031da787f`
+-	Image ID: `sha256:ef4790c0a3e316b616154df7752e23d4ad805beb59944ad0de3018e9a40e6d37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c27834ead0027870616ddcc4eb1fd9aafe16b9e2b1bfd966c7d29669869e35`  
-		Last Modified: Tue, 02 Sep 2025 01:07:51 GMT  
-		Size: 3.2 MB (3223443 bytes)  
+	-	`sha256:276fc8f784a52c2d7bdf11e6ada3496cc7ca09c6ce6e8994a31e1dd79dd19b82`  
+		Last Modified: Tue, 09 Sep 2025 01:07:55 GMT  
+		Size: 3.2 MB (3223439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dcd3f028df5b90bf219dc45b842adde6f50b088e9027a93f24f57232e91b09d2`  
-		Last Modified: Tue, 02 Sep 2025 01:07:53 GMT  
-		Size: 30.3 KB (30288 bytes)  
+	-	`sha256:68561573089315ba31a8499fa47a42a91a69ce84abcaa176d2eb1a6c674f63eb`  
+		Last Modified: Tue, 09 Sep 2025 01:07:56 GMT  
+		Size: 30.3 KB (30281 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0-rc-jammy` - linux; arm64 variant v8
@@ -7614,7 +7614,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0.23`
 
 ```console
-$ docker pull mongo@sha256:ef6fa0eefb63350592e6589d19ee01e3ea02ab87a723a760c98b4dcc3e5274c7
+$ docker pull mongo@sha256:ad3d4ab800592d7a60d343559152ddb4105518675500ce7b19e60b0653e23658
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7629,70 +7629,70 @@ $ docker pull mongo@sha256:ef6fa0eefb63350592e6589d19ee01e3ea02ab87a723a760c98b4
 ### `mongo:7.0.23` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:6789519c0026d84b41591f26b810b745b1d7dfd19991be712a710a8139ae40ef
+$ docker pull mongo@sha256:924ff55fd3c77ac9a05da158cff133251b6baf700ce4fe2114f719b6a279a7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280075992 bytes)**  
+-	Total Size: **279.9 MB (279878152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
+-	Image ID: `sha256:c42b1a5b51f4779f8f39abd5dfad9169eb1a059096f53b859986242c563a92ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG RELEASE
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=7.0
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.23
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -7701,57 +7701,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42869c9f398f4acb68bc4873982e8ec73c56f5aa6c158683a33309a93928e19d`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
-		Size: 1.8 KB (1782 bytes)  
+	-	`sha256:8e8069ef369dba12281edf117d37fdb76c7c52b2e4799668dd6722f9ae6f622f`  
+		Last Modified: Mon, 08 Sep 2025 22:39:27 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e7f42db5a9c374f32537f0ff8bdbab082d419e7b505f5f8f082eface26d8d93`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.5 MB (1513818 bytes)  
+	-	`sha256:de0640117a40e4938d95b1d888a70a7e9f09ece551076db341f18c177e9783dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:31 GMT  
+		Size: 1.5 MB (1513806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42686e6bd012040a618b622a84e97498325b3a037ee72a2410771b7fdee26706`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.1 MB (1095134 bytes)  
+	-	`sha256:d04cd11dfa0008919534d23748a203d510a72db0c70fd30f1e35d1a643257ac2`  
+		Last Modified: Mon, 08 Sep 2025 22:39:39 GMT  
+		Size: 897.3 KB (897317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d70dec88ea665815c4f5e58885e889b7c144730c038d99533449177118afd843`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
+	-	`sha256:d7e3940a139ba188b4f0e2e83616438599ad769eb977ef27999331c1817715dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c0215223c89d650bfad876935b9af5f4954543ece3a8c08552a4cefbb70f295`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 263.0 B  
+	-	`sha256:507abacc6816954d3ee7a51425f3730bf77582c0a640576144749833bb54c5ca`  
+		Last Modified: Mon, 08 Sep 2025 22:39:46 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836cc8275d7863d915fd1279542108ee6b8133a5414754fdfe7fadc7d029267c`  
-		Last Modified: Tue, 02 Sep 2025 00:29:25 GMT  
-		Size: 247.9 MB (247922942 bytes)  
+	-	`sha256:efa0e366c9995f33630c873426e76668b7653e85995080c39111d2d31cd50bc3`  
+		Last Modified: Mon, 08 Sep 2025 22:44:49 GMT  
+		Size: 247.9 MB (247922934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d148e43fcf23d2c68bed5c82263e416e2bc02504528fbfc8a51c2391f67a544a`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:8ab0b2a4a64b471ab4666bbe07456fd853e01457d9a3877854cf08069ee840fc`  
+		Last Modified: Mon, 08 Sep 2025 22:39:49 GMT  
+		Size: 5.0 KB (5000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0.23` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:18f601abe2b90ffb03639fe6fbc946abf124fdb757ccd02b7a76abfbb6dbcd5f
+$ docker pull mongo@sha256:c2819853aacf180dab101624d340a0dd7b57b136a1f2f4f92249de3f6155a8bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251932 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c7d56fb53ed73aafb05d789cea161759fb23add154fd670edf9f5b0d5823057`
+-	Image ID: `sha256:030c7946aef79815e75621f00d92737fd9506cb3cfed025cca0786c808df62ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cee23b9da14f8498e86568a5a2d03423f521666f21617a3082aa1cfec5d9542c`  
-		Last Modified: Tue, 02 Sep 2025 01:07:36 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:44482d9a119e50dc994833e8a33a61e607a5096134463d4080fb3238de013719`  
+		Last Modified: Tue, 09 Sep 2025 01:07:41 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e957cf66e29d65f9421659d2d7a275ac5d46dd09e0feaddb1ad4a7212b5d3179`  
-		Last Modified: Tue, 02 Sep 2025 01:07:37 GMT  
-		Size: 28.0 KB (27989 bytes)  
+	-	`sha256:d8b7a0a2dda617eb6a3ce7ba7a4afd1cb3406d1d0bbcdcf009d2d243427ba9be`  
+		Last Modified: Tue, 09 Sep 2025 01:07:42 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0.23` - linux; arm64 variant v8
@@ -8043,7 +8043,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0.23-jammy`
 
 ```console
-$ docker pull mongo@sha256:393556b45a745f9ffd0e6542503ae8ff229984c7b7c9e01a150bdd67f3c4d332
+$ docker pull mongo@sha256:0f6d97b870d0757692bfbf8ed40252339b715e0d1da5874ab9fe776784de1951
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8056,70 +8056,70 @@ $ docker pull mongo@sha256:393556b45a745f9ffd0e6542503ae8ff229984c7b7c9e01a150bd
 ### `mongo:7.0.23-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:6789519c0026d84b41591f26b810b745b1d7dfd19991be712a710a8139ae40ef
+$ docker pull mongo@sha256:924ff55fd3c77ac9a05da158cff133251b6baf700ce4fe2114f719b6a279a7f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280075992 bytes)**  
+-	Total Size: **279.9 MB (279878152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
+-	Image ID: `sha256:c42b1a5b51f4779f8f39abd5dfad9169eb1a059096f53b859986242c563a92ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG RELEASE
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=7.0
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.23
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 13 Aug 2025 22:01:21 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -8128,57 +8128,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42869c9f398f4acb68bc4873982e8ec73c56f5aa6c158683a33309a93928e19d`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
-		Size: 1.8 KB (1782 bytes)  
+	-	`sha256:8e8069ef369dba12281edf117d37fdb76c7c52b2e4799668dd6722f9ae6f622f`  
+		Last Modified: Mon, 08 Sep 2025 22:39:27 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e7f42db5a9c374f32537f0ff8bdbab082d419e7b505f5f8f082eface26d8d93`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.5 MB (1513818 bytes)  
+	-	`sha256:de0640117a40e4938d95b1d888a70a7e9f09ece551076db341f18c177e9783dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:31 GMT  
+		Size: 1.5 MB (1513806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42686e6bd012040a618b622a84e97498325b3a037ee72a2410771b7fdee26706`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 1.1 MB (1095134 bytes)  
+	-	`sha256:d04cd11dfa0008919534d23748a203d510a72db0c70fd30f1e35d1a643257ac2`  
+		Last Modified: Mon, 08 Sep 2025 22:39:39 GMT  
+		Size: 897.3 KB (897317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d70dec88ea665815c4f5e58885e889b7c144730c038d99533449177118afd843`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
+	-	`sha256:d7e3940a139ba188b4f0e2e83616438599ad769eb977ef27999331c1817715dd`  
+		Last Modified: Mon, 08 Sep 2025 22:39:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c0215223c89d650bfad876935b9af5f4954543ece3a8c08552a4cefbb70f295`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 263.0 B  
+	-	`sha256:507abacc6816954d3ee7a51425f3730bf77582c0a640576144749833bb54c5ca`  
+		Last Modified: Mon, 08 Sep 2025 22:39:46 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836cc8275d7863d915fd1279542108ee6b8133a5414754fdfe7fadc7d029267c`  
-		Last Modified: Tue, 02 Sep 2025 00:29:25 GMT  
-		Size: 247.9 MB (247922942 bytes)  
+	-	`sha256:efa0e366c9995f33630c873426e76668b7653e85995080c39111d2d31cd50bc3`  
+		Last Modified: Mon, 08 Sep 2025 22:44:49 GMT  
+		Size: 247.9 MB (247922934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d148e43fcf23d2c68bed5c82263e416e2bc02504528fbfc8a51c2391f67a544a`  
-		Last Modified: Tue, 02 Sep 2025 00:24:49 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:8ab0b2a4a64b471ab4666bbe07456fd853e01457d9a3877854cf08069ee840fc`  
+		Last Modified: Mon, 08 Sep 2025 22:39:49 GMT  
+		Size: 5.0 KB (5000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0.23-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:18f601abe2b90ffb03639fe6fbc946abf124fdb757ccd02b7a76abfbb6dbcd5f
+$ docker pull mongo@sha256:c2819853aacf180dab101624d340a0dd7b57b136a1f2f4f92249de3f6155a8bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3251932 bytes)**  
+-	Total Size: **3.3 MB (3251925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c7d56fb53ed73aafb05d789cea161759fb23add154fd670edf9f5b0d5823057`
+-	Image ID: `sha256:030c7946aef79815e75621f00d92737fd9506cb3cfed025cca0786c808df62ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cee23b9da14f8498e86568a5a2d03423f521666f21617a3082aa1cfec5d9542c`  
-		Last Modified: Tue, 02 Sep 2025 01:07:36 GMT  
-		Size: 3.2 MB (3223943 bytes)  
+	-	`sha256:44482d9a119e50dc994833e8a33a61e607a5096134463d4080fb3238de013719`  
+		Last Modified: Tue, 09 Sep 2025 01:07:41 GMT  
+		Size: 3.2 MB (3223939 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e957cf66e29d65f9421659d2d7a275ac5d46dd09e0feaddb1ad4a7212b5d3179`  
-		Last Modified: Tue, 02 Sep 2025 01:07:37 GMT  
-		Size: 28.0 KB (27989 bytes)  
+	-	`sha256:d8b7a0a2dda617eb6a3ce7ba7a4afd1cb3406d1d0bbcdcf009d2d243427ba9be`  
+		Last Modified: Tue, 09 Sep 2025 01:07:42 GMT  
+		Size: 28.0 KB (27986 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0.23-jammy` - linux; arm64 variant v8
@@ -8861,7 +8861,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0.24-rc0`
 
 ```console
-$ docker pull mongo@sha256:39781ea8d999f417539a3141241de6ff81b3f0ad9e0d60cb1d99800bf71f48d6
+$ docker pull mongo@sha256:28cffbcba48cc2f1c99a082ebb78a054e809a430e90235888adc8fa5f4abc9f4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8876,13 +8876,13 @@ $ docker pull mongo@sha256:39781ea8d999f417539a3141241de6ff81b3f0ad9e0d60cb1d998
 ### `mongo:7.0.24-rc0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:c90de1ed9d4375846f1969af8b2de80b834be3b721d85e62ba20f47b1e8dfd92
+$ docker pull mongo@sha256:ed7b0d5d94c0e07f67f92a3d15ad5ccca6287d0f1832c6b8497e05f1c1a46602
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280086583 bytes)**  
+-	Total Size: **279.9 MB (279888317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5419e51d66dd9dc38bf8a5e09808af4236cc6ce4d9cf026ab72ef384d03afdce`
+-	Image ID: `sha256:4f3827f5ed9a02cd7ecc9003eeee7e7821f7fda8c2d0bd696d5292bce4f3db8b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -8899,50 +8899,50 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
-ENV GOSU_VERSION=1.17
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/7.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-7.0.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.24~rc0
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -8951,61 +8951,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4889e9979faaea9d2ae5a4617ec798483bdb6ba1a8b145d4a24e73ee12275efe`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 1.8 KB (1781 bytes)  
+	-	`sha256:b928e3dfd1dc722105197864d8502681af1bd78531a150294a5b33416db70fd4`  
+		Last Modified: Mon, 08 Sep 2025 22:43:26 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfd4dde79886fa30d217066301d1622bd39dea4a351447882656a136aa31f0b`  
-		Last Modified: Mon, 01 Sep 2025 23:40:02 GMT  
-		Size: 1.5 MB (1513823 bytes)  
+	-	`sha256:a2c6cc50a1e4f3ee1c71505f9c075ac0b73e01cb25f91be1dd957d2fdf141401`  
+		Last Modified: Mon, 08 Sep 2025 22:43:30 GMT  
+		Size: 1.5 MB (1513825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5042c88ea12d9bd7e7df90c64395163696410139c053228cefe74973be01d1ce`  
-		Last Modified: Mon, 01 Sep 2025 23:40:03 GMT  
-		Size: 1.1 MB (1097387 bytes)  
+	-	`sha256:82378d900bba3f2527ad6343f432a1f9e417ef6e8242f8f4acff541a535d1175`  
+		Last Modified: Mon, 08 Sep 2025 22:43:37 GMT  
+		Size: 899.1 KB (899148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfc1c7522603f7a5e7e6097a4feb495c07fa0c46d705321f3ca61490f3a0749f`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:2f85f80352638d4f9fa4c6f01a5d289c1bcecb0ef7fb130e5b211e84b86bf1fb`  
+		Last Modified: Mon, 08 Sep 2025 22:43:41 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a872cf17de3cd650f1419e9f098802b98915982457d108a37f2687a268897b32`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 265.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8de25fbae283cfd5b2c8d97ffc2f7f2c50a3bbb69177216c267c478e334985`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:469c74db597c02dc6a6f56793e3bef954ab4fffe8e8a3b09a024bc5d6b11dfc1`  
+		Last Modified: Mon, 08 Sep 2025 22:43:44 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63d9ae1118ca4adaa4ca3d4a4295abd77c47593610ac971006ab9d4174c4dfec`  
-		Last Modified: Tue, 02 Sep 2025 01:08:24 GMT  
-		Size: 247.9 MB (247931010 bytes)  
+	-	`sha256:7656338f9c03491c982f2a7fd28778c5c0be9b45d6278f4471cbfa9ad3279c1c`  
+		Last Modified: Mon, 08 Sep 2025 22:43:46 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cace295b07b31db88bc4b40794dd1c3c9afa1534e0d4d4bfb491814698a8e1`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:6bf469d2328f0c7c86edb0c10a377363a020afc9424ab6e73be6621f19f38981`  
+		Last Modified: Tue, 09 Sep 2025 01:09:50 GMT  
+		Size: 247.9 MB (247930980 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a749aeb4859707d30759209f375fac8062043f6792dde4906476c68fa5a0c85`  
+		Last Modified: Mon, 08 Sep 2025 22:43:49 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0.24-rc0` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:033922a2e03f152b1c659bbcb9327644b020c7e0af3b2c2d6f7660f8f7c3bdd6
+$ docker pull mongo@sha256:c739bcb0ab5e782029a0e6706b2ebc2aaf69a748f7fb5786dc59fc0702b77b76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3253731 bytes)**  
+-	Total Size: **3.3 MB (3253720 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a65ff6002ce93b507ae5243d191d04dd0145fc30b8dbfe311154f2d031da787f`
+-	Image ID: `sha256:ef4790c0a3e316b616154df7752e23d4ad805beb59944ad0de3018e9a40e6d37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c27834ead0027870616ddcc4eb1fd9aafe16b9e2b1bfd966c7d29669869e35`  
-		Last Modified: Tue, 02 Sep 2025 01:07:51 GMT  
-		Size: 3.2 MB (3223443 bytes)  
+	-	`sha256:276fc8f784a52c2d7bdf11e6ada3496cc7ca09c6ce6e8994a31e1dd79dd19b82`  
+		Last Modified: Tue, 09 Sep 2025 01:07:55 GMT  
+		Size: 3.2 MB (3223439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dcd3f028df5b90bf219dc45b842adde6f50b088e9027a93f24f57232e91b09d2`  
-		Last Modified: Tue, 02 Sep 2025 01:07:53 GMT  
-		Size: 30.3 KB (30288 bytes)  
+	-	`sha256:68561573089315ba31a8499fa47a42a91a69ce84abcaa176d2eb1a6c674f63eb`  
+		Last Modified: Tue, 09 Sep 2025 01:07:56 GMT  
+		Size: 30.3 KB (30281 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0.24-rc0` - linux; arm64 variant v8
@@ -9304,7 +9304,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:7.0.24-rc0-jammy`
 
 ```console
-$ docker pull mongo@sha256:3046d90c54a7a8b58794fb9b949481bf39eece88f9936d606ce1d45615115a8d
+$ docker pull mongo@sha256:77bda31c46c6238de0bdb07ca9a1d65732da4f828c78608990cc763e137393c6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9317,13 +9317,13 @@ $ docker pull mongo@sha256:3046d90c54a7a8b58794fb9b949481bf39eece88f9936d606ce1d
 ### `mongo:7.0.24-rc0-jammy` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:c90de1ed9d4375846f1969af8b2de80b834be3b721d85e62ba20f47b1e8dfd92
+$ docker pull mongo@sha256:ed7b0d5d94c0e07f67f92a3d15ad5ccca6287d0f1832c6b8497e05f1c1a46602
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280086583 bytes)**  
+-	Total Size: **279.9 MB (279888317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5419e51d66dd9dc38bf8a5e09808af4236cc6ce4d9cf026ab72ef384d03afdce`
+-	Image ID: `sha256:4f3827f5ed9a02cd7ecc9003eeee7e7821f7fda8c2d0bd696d5292bce4f3db8b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -9340,50 +9340,50 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:9303cc1f788d2a9a8f909b154339f7c637b2a53c75c0e7f3da62eb1fefe371b1 in / 
 # Tue, 19 Aug 2025 17:17:10 GMT
 CMD ["/bin/bash"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
-ENV GOSU_VERSION=1.17
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-7.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' 'E58830201F7DD82CD808AA84160D26BB1785BA38' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu jammy/${MONGO_PACKAGE%-unstable}/7.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-7.0.list" # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=7.0.24~rc0
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Fri, 29 Aug 2025 04:01:25 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -9392,61 +9392,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 19:22:51 GMT  
 		Size: 29.5 MB (29536935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4889e9979faaea9d2ae5a4617ec798483bdb6ba1a8b145d4a24e73ee12275efe`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 1.8 KB (1781 bytes)  
+	-	`sha256:b928e3dfd1dc722105197864d8502681af1bd78531a150294a5b33416db70fd4`  
+		Last Modified: Mon, 08 Sep 2025 22:43:26 GMT  
+		Size: 1.8 KB (1783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfd4dde79886fa30d217066301d1622bd39dea4a351447882656a136aa31f0b`  
-		Last Modified: Mon, 01 Sep 2025 23:40:02 GMT  
-		Size: 1.5 MB (1513823 bytes)  
+	-	`sha256:a2c6cc50a1e4f3ee1c71505f9c075ac0b73e01cb25f91be1dd957d2fdf141401`  
+		Last Modified: Mon, 08 Sep 2025 22:43:30 GMT  
+		Size: 1.5 MB (1513825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5042c88ea12d9bd7e7df90c64395163696410139c053228cefe74973be01d1ce`  
-		Last Modified: Mon, 01 Sep 2025 23:40:03 GMT  
-		Size: 1.1 MB (1097387 bytes)  
+	-	`sha256:82378d900bba3f2527ad6343f432a1f9e417ef6e8242f8f4acff541a535d1175`  
+		Last Modified: Mon, 08 Sep 2025 22:43:37 GMT  
+		Size: 899.1 KB (899148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfc1c7522603f7a5e7e6097a4feb495c07fa0c46d705321f3ca61490f3a0749f`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:2f85f80352638d4f9fa4c6f01a5d289c1bcecb0ef7fb130e5b211e84b86bf1fb`  
+		Last Modified: Mon, 08 Sep 2025 22:43:41 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a872cf17de3cd650f1419e9f098802b98915982457d108a37f2687a268897b32`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
-		Size: 265.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da8de25fbae283cfd5b2c8d97ffc2f7f2c50a3bbb69177216c267c478e334985`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:469c74db597c02dc6a6f56793e3bef954ab4fffe8e8a3b09a024bc5d6b11dfc1`  
+		Last Modified: Mon, 08 Sep 2025 22:43:44 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63d9ae1118ca4adaa4ca3d4a4295abd77c47593610ac971006ab9d4174c4dfec`  
-		Last Modified: Tue, 02 Sep 2025 01:08:24 GMT  
-		Size: 247.9 MB (247931010 bytes)  
+	-	`sha256:7656338f9c03491c982f2a7fd28778c5c0be9b45d6278f4471cbfa9ad3279c1c`  
+		Last Modified: Mon, 08 Sep 2025 22:43:46 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cace295b07b31db88bc4b40794dd1c3c9afa1534e0d4d4bfb491814698a8e1`  
-		Last Modified: Mon, 01 Sep 2025 23:40:01 GMT  
+	-	`sha256:6bf469d2328f0c7c86edb0c10a377363a020afc9424ab6e73be6621f19f38981`  
+		Last Modified: Tue, 09 Sep 2025 01:09:50 GMT  
+		Size: 247.9 MB (247930980 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a749aeb4859707d30759209f375fac8062043f6792dde4906476c68fa5a0c85`  
+		Last Modified: Mon, 08 Sep 2025 22:43:49 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:7.0.24-rc0-jammy` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:033922a2e03f152b1c659bbcb9327644b020c7e0af3b2c2d6f7660f8f7c3bdd6
+$ docker pull mongo@sha256:c739bcb0ab5e782029a0e6706b2ebc2aaf69a748f7fb5786dc59fc0702b77b76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3253731 bytes)**  
+-	Total Size: **3.3 MB (3253720 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a65ff6002ce93b507ae5243d191d04dd0145fc30b8dbfe311154f2d031da787f`
+-	Image ID: `sha256:ef4790c0a3e316b616154df7752e23d4ad805beb59944ad0de3018e9a40e6d37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d2c27834ead0027870616ddcc4eb1fd9aafe16b9e2b1bfd966c7d29669869e35`  
-		Last Modified: Tue, 02 Sep 2025 01:07:51 GMT  
-		Size: 3.2 MB (3223443 bytes)  
+	-	`sha256:276fc8f784a52c2d7bdf11e6ada3496cc7ca09c6ce6e8994a31e1dd79dd19b82`  
+		Last Modified: Tue, 09 Sep 2025 01:07:55 GMT  
+		Size: 3.2 MB (3223439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dcd3f028df5b90bf219dc45b842adde6f50b088e9027a93f24f57232e91b09d2`  
-		Last Modified: Tue, 02 Sep 2025 01:07:53 GMT  
-		Size: 30.3 KB (30288 bytes)  
+	-	`sha256:68561573089315ba31a8499fa47a42a91a69ce84abcaa176d2eb1a6c674f63eb`  
+		Last Modified: Tue, 09 Sep 2025 01:07:56 GMT  
+		Size: 30.3 KB (30281 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:7.0.24-rc0-jammy` - linux; arm64 variant v8
@@ -10136,7 +10136,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8`
 
 ```console
-$ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f68991f25bea7b7c
+$ docker pull mongo@sha256:5fba0ca60adfd2946c2d8dc6a356a83966bbfcaf69b85bba9b7d00fafab4b4bb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10151,13 +10151,13 @@ $ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f6899
 ### `mongo:8` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -10174,49 +10174,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -10225,57 +10225,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8` - linux; arm64 variant v8
@@ -10771,7 +10771,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8-noble`
 
 ```console
-$ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af53f5ec53819
+$ docker pull mongo@sha256:15b1c2b9a0382ee2237a4d59bb12c079efdf7eabb8442a3b0ea743586e8ccfd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10784,13 +10784,13 @@ $ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af
 ### `mongo:8-noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -10807,49 +10807,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -10858,57 +10858,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8-noble` - linux; arm64 variant v8
@@ -11391,7 +11391,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0`
 
 ```console
-$ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f68991f25bea7b7c
+$ docker pull mongo@sha256:5fba0ca60adfd2946c2d8dc6a356a83966bbfcaf69b85bba9b7d00fafab4b4bb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11406,13 +11406,13 @@ $ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f6899
 ### `mongo:8.0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -11429,49 +11429,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -11480,57 +11480,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0` - linux; arm64 variant v8
@@ -12026,7 +12026,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0-noble`
 
 ```console
-$ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af53f5ec53819
+$ docker pull mongo@sha256:15b1c2b9a0382ee2237a4d59bb12c079efdf7eabb8442a3b0ea743586e8ccfd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12039,13 +12039,13 @@ $ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af
 ### `mongo:8.0-noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -12062,49 +12062,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -12113,57 +12113,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0-noble` - linux; arm64 variant v8
@@ -12299,7 +12299,7 @@ $ docker pull mongo@sha256:36d9343a3b09ab34874b47a29f749813c9357b93842eb03054ae4
 ## `mongo:8.0-rc`
 
 ```console
-$ docker pull mongo@sha256:d8e6b18e14acdb5b0941eff03da0471d645c7822d0c3e9bc057cd2489e1a5d24
+$ docker pull mongo@sha256:e03cae4b2cefc58ce1334899b711f8bd91e0b64f088120428caf8db913f50b73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12314,13 +12314,13 @@ $ docker pull mongo@sha256:d8e6b18e14acdb5b0941eff03da0471d645c7822d0c3e9bc057cd
 ### `mongo:8.0-rc` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:43f461b5ee2c739d56f812ceedbcd2915079bbddd573e161d9745b8c5846aed1
+$ docker pull mongo@sha256:c97f6ced5b9d5cb12f221f62aed8c444ebb82e763698c1d8ad745421bd378a27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.9 MB (298944256 bytes)**  
+-	Total Size: **298.7 MB (298745535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2f38f12da9a735264de2b93482e0e04dd3d092ae32fc784c262403d9d71a885`
+-	Image ID: `sha256:a6674a5048705b45f2f4b8b2cb2563925493ceae5591e803e67e9806cb0b374e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -12337,52 +12337,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/8.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-8.0.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.14~rc0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -12391,61 +12391,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d743247a0cb53f46317c6a5f080b33fc4e240688e7b785f478fef7babba6d1eb`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:b04e91c9ac0e0cfbe039050cb8baa9c277edd35e6f213b876ec095d420a199a4`  
+		Last Modified: Mon, 08 Sep 2025 23:19:33 GMT  
+		Size: 1.2 KB (1215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4992bf9d17c159011a74f4ebc087e4428fa82ab0379f526ee933dfba466cf35e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:08 GMT  
-		Size: 1.5 MB (1509080 bytes)  
+	-	`sha256:9b9929c4bd55373e9dcdc52b443f61c2f4e372916a749a6dd7a34e2cc4a60556`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
+		Size: 1.5 MB (1509108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66bada9669f289dd1f43edd8689fc0d47a6dbebb2d322e0b3c2a89393c4ecc00`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.1 MB (1132289 bytes)  
+	-	`sha256:df4c5726cffbe6a1cd68ac440c4655c8d8f3b2eb3fac12229ce98a0f51fc614d`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 933.5 KB (933521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2acace9fddf03a340b7dc97a83e06a6b3e745cfdc81926ed7ea616fcd4fae9e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:e32c7b4021db7187bc6ae8531cae8e19446fc616dd4975210db8d2242a9cea2e`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4d5e0ec957c453ba788219988b6e833404e767d7af4098a6f700be61b5a085b`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 266.0 B  
+	-	`sha256:a1fc65a8bf42e077eb7e780495cfafb4e3bd71080f5edb4703217842d90ca4ff`  
+		Last Modified: Mon, 08 Sep 2025 23:19:29 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f266ab931b9a8cabf5485d7905ffec8d8adcb36a8e000f6f0e4d5a959ce87c8`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 268.0 B  
+	-	`sha256:f9969750af89bee52d3338e1ed6762bb982682be36cacc6f1c92ad16f923c5c3`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7d6074ac5a52872dc3c05480acf46ac48e46890fe8d1646690d81917841a931`  
-		Last Modified: Wed, 03 Sep 2025 17:29:26 GMT  
-		Size: 266.6 MB (266572955 bytes)  
+	-	`sha256:ce68c0dddbb152604dca49649ab4a7595be6f027b748d3f1bdc489d9db2f5431`  
+		Last Modified: Tue, 09 Sep 2025 01:10:20 GMT  
+		Size: 266.6 MB (266572980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:192a2a2ff44dda70fbc5619061803bd73189cf7cf8dbaf1b21b77e2cc09d158d`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:fbd350c483d60d2162f8e45682f5fff7b405ff54b9e0866851532b01fe78ac60`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0-rc` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:6a03e61bc4a39c7f84b0ca83922b7be299c49c8686eae2a64de75bdb6d643f16
+$ docker pull mongo@sha256:2b0cb550867743e4b889eecca82e2099bad388138350a34777a96f1d8f6acd6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695771 bytes)**  
+-	Total Size: **2.7 MB (2695762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a2ff7ce865acc920dece75d501fc53da367122d69a6d5f50272693825b838d`
+-	Image ID: `sha256:f656545f401a57c6bfc33f1dd70104860182bb1f618af02c8f4b66267e2985fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c27b1e549c8d2ed500c0fe657face51ec5d33daa46fe86f216038199e4a46d27`  
-		Last Modified: Wed, 03 Sep 2025 19:07:52 GMT  
-		Size: 2.7 MB (2665220 bytes)  
+	-	`sha256:38eb5d578c478bd794cf4623ffc46deda09af2521b4f0d7b7e00991dd7aac6b6`  
+		Last Modified: Tue, 09 Sep 2025 01:08:31 GMT  
+		Size: 2.7 MB (2665216 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:73668ef874880b222b9edd7fd38065166f256b698c1f4b7efe42fddd5693dfa4`  
-		Last Modified: Wed, 03 Sep 2025 19:07:53 GMT  
-		Size: 30.6 KB (30551 bytes)  
+	-	`sha256:e9161f1e9f2d47641a42f4743065bec125bc0763e1d95f21587525866c5c1847`  
+		Last Modified: Tue, 09 Sep 2025 01:08:32 GMT  
+		Size: 30.5 KB (30546 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0-rc` - linux; arm64 variant v8
@@ -12948,7 +12948,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0-rc-noble`
 
 ```console
-$ docker pull mongo@sha256:34c7b09918bab86ac65bcdd499011a47eaba3ce558f6a3d820efdc30fca77d7a
+$ docker pull mongo@sha256:4cc9943150b733b01cef645e3a17e02e6357f0d606f17fc223c6816c5b327e56
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12961,13 +12961,13 @@ $ docker pull mongo@sha256:34c7b09918bab86ac65bcdd499011a47eaba3ce558f6a3d820efd
 ### `mongo:8.0-rc-noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:43f461b5ee2c739d56f812ceedbcd2915079bbddd573e161d9745b8c5846aed1
+$ docker pull mongo@sha256:c97f6ced5b9d5cb12f221f62aed8c444ebb82e763698c1d8ad745421bd378a27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.9 MB (298944256 bytes)**  
+-	Total Size: **298.7 MB (298745535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2f38f12da9a735264de2b93482e0e04dd3d092ae32fc784c262403d9d71a885`
+-	Image ID: `sha256:a6674a5048705b45f2f4b8b2cb2563925493ceae5591e803e67e9806cb0b374e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -12984,52 +12984,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/8.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-8.0.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.14~rc0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -13038,61 +13038,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d743247a0cb53f46317c6a5f080b33fc4e240688e7b785f478fef7babba6d1eb`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:b04e91c9ac0e0cfbe039050cb8baa9c277edd35e6f213b876ec095d420a199a4`  
+		Last Modified: Mon, 08 Sep 2025 23:19:33 GMT  
+		Size: 1.2 KB (1215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4992bf9d17c159011a74f4ebc087e4428fa82ab0379f526ee933dfba466cf35e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:08 GMT  
-		Size: 1.5 MB (1509080 bytes)  
+	-	`sha256:9b9929c4bd55373e9dcdc52b443f61c2f4e372916a749a6dd7a34e2cc4a60556`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
+		Size: 1.5 MB (1509108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66bada9669f289dd1f43edd8689fc0d47a6dbebb2d322e0b3c2a89393c4ecc00`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.1 MB (1132289 bytes)  
+	-	`sha256:df4c5726cffbe6a1cd68ac440c4655c8d8f3b2eb3fac12229ce98a0f51fc614d`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 933.5 KB (933521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2acace9fddf03a340b7dc97a83e06a6b3e745cfdc81926ed7ea616fcd4fae9e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:e32c7b4021db7187bc6ae8531cae8e19446fc616dd4975210db8d2242a9cea2e`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4d5e0ec957c453ba788219988b6e833404e767d7af4098a6f700be61b5a085b`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 266.0 B  
+	-	`sha256:a1fc65a8bf42e077eb7e780495cfafb4e3bd71080f5edb4703217842d90ca4ff`  
+		Last Modified: Mon, 08 Sep 2025 23:19:29 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f266ab931b9a8cabf5485d7905ffec8d8adcb36a8e000f6f0e4d5a959ce87c8`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 268.0 B  
+	-	`sha256:f9969750af89bee52d3338e1ed6762bb982682be36cacc6f1c92ad16f923c5c3`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7d6074ac5a52872dc3c05480acf46ac48e46890fe8d1646690d81917841a931`  
-		Last Modified: Wed, 03 Sep 2025 17:29:26 GMT  
-		Size: 266.6 MB (266572955 bytes)  
+	-	`sha256:ce68c0dddbb152604dca49649ab4a7595be6f027b748d3f1bdc489d9db2f5431`  
+		Last Modified: Tue, 09 Sep 2025 01:10:20 GMT  
+		Size: 266.6 MB (266572980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:192a2a2ff44dda70fbc5619061803bd73189cf7cf8dbaf1b21b77e2cc09d158d`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:fbd350c483d60d2162f8e45682f5fff7b405ff54b9e0866851532b01fe78ac60`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0-rc-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:6a03e61bc4a39c7f84b0ca83922b7be299c49c8686eae2a64de75bdb6d643f16
+$ docker pull mongo@sha256:2b0cb550867743e4b889eecca82e2099bad388138350a34777a96f1d8f6acd6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695771 bytes)**  
+-	Total Size: **2.7 MB (2695762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a2ff7ce865acc920dece75d501fc53da367122d69a6d5f50272693825b838d`
+-	Image ID: `sha256:f656545f401a57c6bfc33f1dd70104860182bb1f618af02c8f4b66267e2985fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c27b1e549c8d2ed500c0fe657face51ec5d33daa46fe86f216038199e4a46d27`  
-		Last Modified: Wed, 03 Sep 2025 19:07:52 GMT  
-		Size: 2.7 MB (2665220 bytes)  
+	-	`sha256:38eb5d578c478bd794cf4623ffc46deda09af2521b4f0d7b7e00991dd7aac6b6`  
+		Last Modified: Tue, 09 Sep 2025 01:08:31 GMT  
+		Size: 2.7 MB (2665216 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:73668ef874880b222b9edd7fd38065166f256b698c1f4b7efe42fddd5693dfa4`  
-		Last Modified: Wed, 03 Sep 2025 19:07:53 GMT  
-		Size: 30.6 KB (30551 bytes)  
+	-	`sha256:e9161f1e9f2d47641a42f4743065bec125bc0763e1d95f21587525866c5c1847`  
+		Last Modified: Tue, 09 Sep 2025 01:08:32 GMT  
+		Size: 30.5 KB (30546 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0-rc-noble` - linux; arm64 variant v8
@@ -13929,7 +13929,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0.13`
 
 ```console
-$ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f68991f25bea7b7c
+$ docker pull mongo@sha256:5fba0ca60adfd2946c2d8dc6a356a83966bbfcaf69b85bba9b7d00fafab4b4bb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13944,13 +13944,13 @@ $ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f6899
 ### `mongo:8.0.13` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -13967,49 +13967,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -14018,57 +14018,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0.13` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0.13` - linux; arm64 variant v8
@@ -14564,7 +14564,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0.13-noble`
 
 ```console
-$ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af53f5ec53819
+$ docker pull mongo@sha256:15b1c2b9a0382ee2237a4d59bb12c079efdf7eabb8442a3b0ea743586e8ccfd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14577,13 +14577,13 @@ $ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af
 ### `mongo:8.0.13-noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -14600,49 +14600,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -14651,57 +14651,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0.13-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0.13-noble` - linux; arm64 variant v8
@@ -15184,7 +15184,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0.14-rc0`
 
 ```console
-$ docker pull mongo@sha256:d8e6b18e14acdb5b0941eff03da0471d645c7822d0c3e9bc057cd2489e1a5d24
+$ docker pull mongo@sha256:e03cae4b2cefc58ce1334899b711f8bd91e0b64f088120428caf8db913f50b73
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15199,13 +15199,13 @@ $ docker pull mongo@sha256:d8e6b18e14acdb5b0941eff03da0471d645c7822d0c3e9bc057cd
 ### `mongo:8.0.14-rc0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:43f461b5ee2c739d56f812ceedbcd2915079bbddd573e161d9745b8c5846aed1
+$ docker pull mongo@sha256:c97f6ced5b9d5cb12f221f62aed8c444ebb82e763698c1d8ad745421bd378a27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.9 MB (298944256 bytes)**  
+-	Total Size: **298.7 MB (298745535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2f38f12da9a735264de2b93482e0e04dd3d092ae32fc784c262403d9d71a885`
+-	Image ID: `sha256:a6674a5048705b45f2f4b8b2cb2563925493ceae5591e803e67e9806cb0b374e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -15222,52 +15222,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/8.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-8.0.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.14~rc0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -15276,61 +15276,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d743247a0cb53f46317c6a5f080b33fc4e240688e7b785f478fef7babba6d1eb`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:b04e91c9ac0e0cfbe039050cb8baa9c277edd35e6f213b876ec095d420a199a4`  
+		Last Modified: Mon, 08 Sep 2025 23:19:33 GMT  
+		Size: 1.2 KB (1215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4992bf9d17c159011a74f4ebc087e4428fa82ab0379f526ee933dfba466cf35e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:08 GMT  
-		Size: 1.5 MB (1509080 bytes)  
+	-	`sha256:9b9929c4bd55373e9dcdc52b443f61c2f4e372916a749a6dd7a34e2cc4a60556`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
+		Size: 1.5 MB (1509108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66bada9669f289dd1f43edd8689fc0d47a6dbebb2d322e0b3c2a89393c4ecc00`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.1 MB (1132289 bytes)  
+	-	`sha256:df4c5726cffbe6a1cd68ac440c4655c8d8f3b2eb3fac12229ce98a0f51fc614d`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 933.5 KB (933521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2acace9fddf03a340b7dc97a83e06a6b3e745cfdc81926ed7ea616fcd4fae9e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:e32c7b4021db7187bc6ae8531cae8e19446fc616dd4975210db8d2242a9cea2e`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4d5e0ec957c453ba788219988b6e833404e767d7af4098a6f700be61b5a085b`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 266.0 B  
+	-	`sha256:a1fc65a8bf42e077eb7e780495cfafb4e3bd71080f5edb4703217842d90ca4ff`  
+		Last Modified: Mon, 08 Sep 2025 23:19:29 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f266ab931b9a8cabf5485d7905ffec8d8adcb36a8e000f6f0e4d5a959ce87c8`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 268.0 B  
+	-	`sha256:f9969750af89bee52d3338e1ed6762bb982682be36cacc6f1c92ad16f923c5c3`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7d6074ac5a52872dc3c05480acf46ac48e46890fe8d1646690d81917841a931`  
-		Last Modified: Wed, 03 Sep 2025 17:29:26 GMT  
-		Size: 266.6 MB (266572955 bytes)  
+	-	`sha256:ce68c0dddbb152604dca49649ab4a7595be6f027b748d3f1bdc489d9db2f5431`  
+		Last Modified: Tue, 09 Sep 2025 01:10:20 GMT  
+		Size: 266.6 MB (266572980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:192a2a2ff44dda70fbc5619061803bd73189cf7cf8dbaf1b21b77e2cc09d158d`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:fbd350c483d60d2162f8e45682f5fff7b405ff54b9e0866851532b01fe78ac60`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0.14-rc0` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:6a03e61bc4a39c7f84b0ca83922b7be299c49c8686eae2a64de75bdb6d643f16
+$ docker pull mongo@sha256:2b0cb550867743e4b889eecca82e2099bad388138350a34777a96f1d8f6acd6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695771 bytes)**  
+-	Total Size: **2.7 MB (2695762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a2ff7ce865acc920dece75d501fc53da367122d69a6d5f50272693825b838d`
+-	Image ID: `sha256:f656545f401a57c6bfc33f1dd70104860182bb1f618af02c8f4b66267e2985fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c27b1e549c8d2ed500c0fe657face51ec5d33daa46fe86f216038199e4a46d27`  
-		Last Modified: Wed, 03 Sep 2025 19:07:52 GMT  
-		Size: 2.7 MB (2665220 bytes)  
+	-	`sha256:38eb5d578c478bd794cf4623ffc46deda09af2521b4f0d7b7e00991dd7aac6b6`  
+		Last Modified: Tue, 09 Sep 2025 01:08:31 GMT  
+		Size: 2.7 MB (2665216 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:73668ef874880b222b9edd7fd38065166f256b698c1f4b7efe42fddd5693dfa4`  
-		Last Modified: Wed, 03 Sep 2025 19:07:53 GMT  
-		Size: 30.6 KB (30551 bytes)  
+	-	`sha256:e9161f1e9f2d47641a42f4743065bec125bc0763e1d95f21587525866c5c1847`  
+		Last Modified: Tue, 09 Sep 2025 01:08:32 GMT  
+		Size: 30.5 KB (30546 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0.14-rc0` - linux; arm64 variant v8
@@ -15833,7 +15833,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:8.0.14-rc0-noble`
 
 ```console
-$ docker pull mongo@sha256:34c7b09918bab86ac65bcdd499011a47eaba3ce558f6a3d820efdc30fca77d7a
+$ docker pull mongo@sha256:4cc9943150b733b01cef645e3a17e02e6357f0d606f17fc223c6816c5b327e56
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15846,13 +15846,13 @@ $ docker pull mongo@sha256:34c7b09918bab86ac65bcdd499011a47eaba3ce558f6a3d820efd
 ### `mongo:8.0.14-rc0-noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:43f461b5ee2c739d56f812ceedbcd2915079bbddd573e161d9745b8c5846aed1
+$ docker pull mongo@sha256:c97f6ced5b9d5cb12f221f62aed8c444ebb82e763698c1d8ad745421bd378a27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.9 MB (298944256 bytes)**  
+-	Total Size: **298.7 MB (298745535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2f38f12da9a735264de2b93482e0e04dd3d092ae32fc784c262403d9d71a885`
+-	Image ID: `sha256:a6674a5048705b45f2f4b8b2cb2563925493ceae5591e803e67e9806cb0b374e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -15869,52 +15869,52 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
-ENV GOSU_VERSION=1.17
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-dev.asc' 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '28DE23AF08040FB24C33F36381B0EBBBADCEA95C' '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=testing
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/8.0 multiverse" | tee "/etc/apt/sources.list.d/mongodb-8.0.list" # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.14~rc0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Wed, 03 Sep 2025 10:01:56 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -15923,61 +15923,61 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d743247a0cb53f46317c6a5f080b33fc4e240688e7b785f478fef7babba6d1eb`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.2 KB (1216 bytes)  
+	-	`sha256:b04e91c9ac0e0cfbe039050cb8baa9c277edd35e6f213b876ec095d420a199a4`  
+		Last Modified: Mon, 08 Sep 2025 23:19:33 GMT  
+		Size: 1.2 KB (1215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4992bf9d17c159011a74f4ebc087e4428fa82ab0379f526ee933dfba466cf35e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:08 GMT  
-		Size: 1.5 MB (1509080 bytes)  
+	-	`sha256:9b9929c4bd55373e9dcdc52b443f61c2f4e372916a749a6dd7a34e2cc4a60556`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
+		Size: 1.5 MB (1509108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66bada9669f289dd1f43edd8689fc0d47a6dbebb2d322e0b3c2a89393c4ecc00`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 1.1 MB (1132289 bytes)  
+	-	`sha256:df4c5726cffbe6a1cd68ac440c4655c8d8f3b2eb3fac12229ce98a0f51fc614d`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 933.5 KB (933521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2acace9fddf03a340b7dc97a83e06a6b3e745cfdc81926ed7ea616fcd4fae9e`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:e32c7b4021db7187bc6ae8531cae8e19446fc616dd4975210db8d2242a9cea2e`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4d5e0ec957c453ba788219988b6e833404e767d7af4098a6f700be61b5a085b`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 266.0 B  
+	-	`sha256:a1fc65a8bf42e077eb7e780495cfafb4e3bd71080f5edb4703217842d90ca4ff`  
+		Last Modified: Mon, 08 Sep 2025 23:19:29 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f266ab931b9a8cabf5485d7905ffec8d8adcb36a8e000f6f0e4d5a959ce87c8`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
-		Size: 268.0 B  
+	-	`sha256:f9969750af89bee52d3338e1ed6762bb982682be36cacc6f1c92ad16f923c5c3`  
+		Last Modified: Mon, 08 Sep 2025 23:19:27 GMT  
+		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7d6074ac5a52872dc3c05480acf46ac48e46890fe8d1646690d81917841a931`  
-		Last Modified: Wed, 03 Sep 2025 17:29:26 GMT  
-		Size: 266.6 MB (266572955 bytes)  
+	-	`sha256:ce68c0dddbb152604dca49649ab4a7595be6f027b748d3f1bdc489d9db2f5431`  
+		Last Modified: Tue, 09 Sep 2025 01:10:20 GMT  
+		Size: 266.6 MB (266572980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:192a2a2ff44dda70fbc5619061803bd73189cf7cf8dbaf1b21b77e2cc09d158d`  
-		Last Modified: Wed, 03 Sep 2025 16:46:06 GMT  
+	-	`sha256:fbd350c483d60d2162f8e45682f5fff7b405ff54b9e0866851532b01fe78ac60`  
+		Last Modified: Mon, 08 Sep 2025 23:19:26 GMT  
 		Size: 5.0 KB (5002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8.0.14-rc0-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:6a03e61bc4a39c7f84b0ca83922b7be299c49c8686eae2a64de75bdb6d643f16
+$ docker pull mongo@sha256:2b0cb550867743e4b889eecca82e2099bad388138350a34777a96f1d8f6acd6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695771 bytes)**  
+-	Total Size: **2.7 MB (2695762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a2ff7ce865acc920dece75d501fc53da367122d69a6d5f50272693825b838d`
+-	Image ID: `sha256:f656545f401a57c6bfc33f1dd70104860182bb1f618af02c8f4b66267e2985fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c27b1e549c8d2ed500c0fe657face51ec5d33daa46fe86f216038199e4a46d27`  
-		Last Modified: Wed, 03 Sep 2025 19:07:52 GMT  
-		Size: 2.7 MB (2665220 bytes)  
+	-	`sha256:38eb5d578c478bd794cf4623ffc46deda09af2521b4f0d7b7e00991dd7aac6b6`  
+		Last Modified: Tue, 09 Sep 2025 01:08:31 GMT  
+		Size: 2.7 MB (2665216 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:73668ef874880b222b9edd7fd38065166f256b698c1f4b7efe42fddd5693dfa4`  
-		Last Modified: Wed, 03 Sep 2025 19:07:53 GMT  
-		Size: 30.6 KB (30551 bytes)  
+	-	`sha256:e9161f1e9f2d47641a42f4743065bec125bc0763e1d95f21587525866c5c1847`  
+		Last Modified: Tue, 09 Sep 2025 01:08:32 GMT  
+		Size: 30.5 KB (30546 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8.0.14-rc0-noble` - linux; arm64 variant v8
@@ -16467,7 +16467,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:latest`
 
 ```console
-$ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f68991f25bea7b7c
+$ docker pull mongo@sha256:5fba0ca60adfd2946c2d8dc6a356a83966bbfcaf69b85bba9b7d00fafab4b4bb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16482,13 +16482,13 @@ $ docker pull mongo@sha256:f4a9789ae2c2712c3350ccc92d15c5ffc11217e02228dcd2f6899
 ### `mongo:latest` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -16505,49 +16505,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -16556,57 +16556,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:latest` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:latest` - linux; arm64 variant v8
@@ -17102,7 +17102,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:noble`
 
 ```console
-$ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af53f5ec53819
+$ docker pull mongo@sha256:15b1c2b9a0382ee2237a4d59bb12c079efdf7eabb8442a3b0ea743586e8ccfd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17115,13 +17115,13 @@ $ docker pull mongo@sha256:0e3276270d54aeb4fc704f41e00efa8be8591a118bad7153832af
 ### `mongo:noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ac36210077ecd3aef38cc2fa57134236293cc6d4905c3d59c66acca572e4d94f
+$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.7 MB (298683300 bytes)**  
+-	Total Size: **298.5 MB (298485153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad0510f12112e4b24a1ccb236cbc46109fbc164bced582815273a8bcb264af6d`
+-	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -17138,49 +17138,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
 # Tue, 19 Aug 2025 14:37:01 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
-ENV GOSU_VERSION=1.17
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ENV GOSU_VERSION=1.18
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_VERSION=3.13.1
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		mkdir -p /opt/js-yaml/; 	wget -O /opt/js-yaml/js-yaml.tgz https://registry.npmjs.org/js-yaml/-/js-yaml-${JSYAML_VERSION}.tgz; 	echo "$JSYAML_CHECKSUM */opt/js-yaml/js-yaml.tgz" | sha256sum -c -; 	tar -xz --strip-components=1 -f /opt/js-yaml/js-yaml.tgz -C /opt/js-yaml package/dist/js-yaml.js package/package.json; 	rm /opt/js-yaml/js-yaml.tgz; 	ln -s /opt/js-yaml/dist/js-yaml.js /js-yaml.js; 		export GNUPGHOME="$(mktemp -d)"; 	wget -O KEYS 'https://pgp.mongodb.com/server-8.0.asc'; 	gpg --batch --import KEYS; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export --armor '4B0752C1BCA238C0B4EE14DC41DE058A4E7DCA05' > /etc/apt/keyrings/mongodb.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" KEYS; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_MAJOR=8.0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.asc ] http://$MONGO_REPO/apt/ubuntu noble/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list" # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV MONGO_VERSION=8.0.13
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 # ARGS: MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 		${MONGO_PACKAGE}-database=$MONGO_VERSION 		${MONGO_PACKAGE}-database-tools-extra=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 VOLUME [/data/db /data/configdb]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV HOME=/data/db
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENV GLIBC_TUNABLES=glibc.pthread.rseq=0
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 EXPOSE map[27017/tcp:{}]
-# Thu, 21 Aug 2025 16:01:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["mongod"]
 ```
 
@@ -17189,57 +17189,57 @@ CMD ["mongod"]
 		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
 		Size: 29.7 MB (29723064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d34afb8dfbde8d9f2bc90e57a2b9c6fadaefd03c9c48b707f693f3118c497f`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d15ffff7401e4deca3c097a987a2fe16f7133a08a9c14ce3d446c9bd4110a77`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.5 MB (1509102 bytes)  
+	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
+		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
+		Size: 1.5 MB (1509085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebac27164ac16e88b8e3a4749ff6d17d29a9c5d2aa938df5a673243916af682`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
-		Size: 1.1 MB (1131214 bytes)  
+	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+		Size: 933.1 KB (933117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05db1cca11ccca860d28390b7f086c52ed282924900de0221a4d3a35b6524e21`  
-		Last Modified: Tue, 02 Sep 2025 00:24:47 GMT  
+	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
+		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dab7e3f122780863fcd0400b054bf7aff860e81331ec2923693ad67fe64bdbd2`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
+		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2951d03792f9f9e109f81aad303c4a8c686257ee47702a806b08e51cbb3816f1`  
-		Last Modified: Tue, 02 Sep 2025 01:08:21 GMT  
-		Size: 266.3 MB (266313323 bytes)  
+	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
+		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
+		Size: 266.3 MB (266313287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854128015e09dea85862301b6c48c17bb87c03097a5a7692fb46b941fa0872f5`  
-		Last Modified: Tue, 02 Sep 2025 00:24:48 GMT  
+	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
+		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
 		Size: 5.0 KB (5003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:571a65123eca238079a0191f42a185c82219321bccf4a5b60b2d1edc0c13c2cb
+$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695155 bytes)**  
+-	Total Size: **2.7 MB (2695145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687ad81065268dad7017ec395dadc10e7fa70763e9a2ff999b7f67a58e2fdfef`
+-	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c082f2a2cdc1ca94eed0132ee60ea724b494ca9310d6175caf42c86e470a39ee`  
-		Last Modified: Tue, 02 Sep 2025 01:08:16 GMT  
-		Size: 2.7 MB (2666310 bytes)  
+	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
+		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
+		Size: 2.7 MB (2666306 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95fd5d1903cc08f8a50c26c46a0f239795d739f4293f301c08f4c535b441fbb2`  
-		Last Modified: Tue, 02 Sep 2025 01:08:17 GMT  
-		Size: 28.8 KB (28845 bytes)  
+	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
+		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:noble` - linux; arm64 variant v8
