@@ -6726,7 +6726,7 @@ $ docker pull debian@sha256:31df12ee36690a6742d5502e732316d5385eebd21e20ff1b383d
 		Size: 3.2 MB (3163682 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:654899ccd116aeb4e3421f08ea1460054366a409e11a3181a0607415a667a648`  
-		Last Modified: Tue, 09 Sep 2025 15:18:42 GMT  
+		Last Modified: Tue, 09 Sep 2025 18:56:55 GMT  
 		Size: 6.2 KB (6176 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7226,7 +7226,7 @@ $ docker pull debian@sha256:31df12ee36690a6742d5502e732316d5385eebd21e20ff1b383d
 		Size: 3.2 MB (3163682 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:654899ccd116aeb4e3421f08ea1460054366a409e11a3181a0607415a667a648`  
-		Last Modified: Tue, 09 Sep 2025 15:18:42 GMT  
+		Last Modified: Tue, 09 Sep 2025 18:56:55 GMT  
 		Size: 6.2 KB (6176 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21159,7 +21159,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'unstable' '@1757289600'
 
 -	Layers:
 	-	`sha256:2d9fe2c135ec3186f7e645d0e3eb1c54f3528993eda16e5b4e354521068aef63`  
-		Last Modified: Mon, 08 Sep 2025 21:47:16 GMT  
+		Last Modified: Tue, 09 Sep 2025 18:57:03 GMT  
 		Size: 28.4 MB (28425360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -21552,7 +21552,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'unstable' '@1757289600'
 
 -	Layers:
 	-	`sha256:2d9fe2c135ec3186f7e645d0e3eb1c54f3528993eda16e5b4e354521068aef63`  
-		Last Modified: Mon, 08 Sep 2025 21:47:16 GMT  
+		Last Modified: Tue, 09 Sep 2025 18:57:03 GMT  
 		Size: 28.4 MB (28425360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
