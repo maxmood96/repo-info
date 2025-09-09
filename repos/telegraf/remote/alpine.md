@@ -1,7 +1,7 @@
 ## `telegraf:alpine`
 
 ```console
-$ docker pull telegraf@sha256:c2f97b178be0d6da47934693aab5f12968d4c357067466b00750d7c883c7ca5d
+$ docker pull telegraf@sha256:e8e90c7458dab6c30f3fa046819e4db6ddde63b2c9be7c0a2de2dc9faf2fb6a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull telegraf@sha256:c2f97b178be0d6da47934693aab5f12968d4c357067466b007
 ### `telegraf:alpine` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:b9f1dad8bfc6e2e0a071ec3708f69b608314a1638df1a27dbee6c8d9c201157d
+$ docker pull telegraf@sha256:8e1002f94b5bf2486eb0c2e12b20c486ad97242d0c9efdab031078f50873caf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.7 MB (85721229 bytes)**  
+-	Total Size: **85.9 MB (85939575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1898bfc2837a825d9ca57c11162f841378cca6e17895db8ff8007425b40ae030`
+-	Image ID: `sha256:0308cea28713e4d54bcac49e9c35389c5c595b84e7d28071ac8e959398cbeb42`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -29,21 +29,21 @@ $ docker pull telegraf@sha256:b9f1dad8bfc6e2e0a071ec3708f69b608314a1638df1a27dbe
 ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:01:16 GMT
 CMD ["/bin/sh"]
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
 RUN echo 'hosts: files dns' >> /etc/nsswitch.conf # buildkit
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
 RUN apk add --no-cache iputils ca-certificates net-snmp-tools procps lm_sensors tzdata setpriv libcap &&     update-ca-certificates # buildkit
-# Tue, 19 Aug 2025 08:40:07 GMT
-ENV TELEGRAF_VERSION=1.35.4
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
+ENV TELEGRAF_VERSION=1.36.0
+# Mon, 08 Sep 2025 21:35:06 GMT
 RUN ARCH= &&     case "$(apk --print-arch)" in         x86_64) ARCH='amd64';;         aarch64) ARCH='arm64';;         *) echo "Unsupported architecture: $(apk --print-arch)"; exit 1;;     esac &&     set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apk add --no-cache --virtual .build-deps wget gnupg tar &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}_linux_${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}_linux_${ARCH}.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}_linux_${ARCH}.tar.gz.asc telegraf-${TELEGRAF_VERSION}_linux_${ARCH}.tar.gz &&     mkdir -p /usr/src /etc/telegraf &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}_linux_${ARCH}.tar.gz &&     mv /usr/src/telegraf*/etc/telegraf/telegraf.conf /etc/telegraf/ &&     mkdir /etc/telegraf/telegraf.d &&     cp -a /usr/src/telegraf*/usr/bin/telegraf /usr/bin/ &&     gpgconf --kill all &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps &&     addgroup -S telegraf &&     adduser -S telegraf -G telegraf &&     chown -R telegraf:telegraf /etc/telegraf # buildkit
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
 EXPOSE map[8092/udp:{} 8094/tcp:{} 8125/udp:{}]
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Aug 2025 08:40:07 GMT
+# Mon, 08 Sep 2025 21:35:06 GMT
 CMD ["telegraf"]
 ```
 
@@ -52,44 +52,44 @@ CMD ["telegraf"]
 		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
 		Size: 3.8 MB (3799689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:111a65e71ad846fe6bc5cf5d9981577f402356a07fa8643556a52a493832248d`  
-		Last Modified: Tue, 19 Aug 2025 16:43:11 GMT  
+	-	`sha256:f57f7bea3083dc00c76d66d744c2500e9fdf264ca4e1a1d29c6c7f178e411a2e`  
+		Last Modified: Mon, 08 Sep 2025 23:21:33 GMT  
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30cbaff1778259b3073527b025ae9ab08156e23a8b7f42fbbc0fafca178fc2a4`  
-		Last Modified: Tue, 19 Aug 2025 16:43:11 GMT  
-		Size: 2.6 MB (2552105 bytes)  
+	-	`sha256:44a3bd815d0677ace72391844908df3b201322b73d9694ba91e4610e608bc52f`  
+		Last Modified: Mon, 08 Sep 2025 23:21:37 GMT  
+		Size: 2.6 MB (2552123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e527cfac45a96a64d7cc6821810e5660eec3f9f105ee9595ff5d0ef9ce3889e5`  
-		Last Modified: Tue, 19 Aug 2025 16:43:18 GMT  
-		Size: 79.4 MB (79368534 bytes)  
+	-	`sha256:92e1b056e56e5538f0d791dd5a49cbf726fd923ac5f48ee7c6f8509f52dd73c9`  
+		Last Modified: Tue, 09 Sep 2025 00:10:47 GMT  
+		Size: 79.6 MB (79586863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:701fb22e4edb908e9c9db1946c3275c80eb50f1b6a4a0a263e2bcc780d2db6cb`  
-		Last Modified: Tue, 19 Aug 2025 16:43:13 GMT  
-		Size: 621.0 B  
+	-	`sha256:f74e8bcadda67067b6ecfb128a06abe5e7de1b76679d4bfceb4b7e2e7fccd747`  
+		Last Modified: Mon, 08 Sep 2025 23:21:49 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:alpine` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:d62ff060ab03e0e18dd18b68bef85d0e6253116947fe2889d8b0627c72be5d6d
+$ docker pull telegraf@sha256:6399707b3929497ea018417bf956e57cb35a8d72248dd5d93ddc24e7cd19e619
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1146960 bytes)**  
+-	Total Size: **1.1 MB (1148716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00067d3ac59b152349cce2ee62d1d1fc80d424366cca0741b5130316ec1f36f0`
+-	Image ID: `sha256:bd53a2646b2e7925055335cef6a55679ceb685b2104c4ebfce8810a9471af8f2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae9d5119dea6d9d8dc370f0197b7815e7ea4eab7a50e3962df4ff7507b5ec15b`  
-		Last Modified: Tue, 19 Aug 2025 18:10:39 GMT  
-		Size: 1.1 MB (1131697 bytes)  
+	-	`sha256:b5ea504d9dfbee3c00456cf096612397252ba9def59f6242ace0b1e792367c1c`  
+		Last Modified: Tue, 09 Sep 2025 00:10:40 GMT  
+		Size: 1.1 MB (1133453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2678129d408de246508eace01dabc93d4762f22a4bce5468f32eb78e3c0d9cf4`  
-		Last Modified: Tue, 19 Aug 2025 18:10:40 GMT  
+	-	`sha256:e805f3d9087c9590961bf99f832797e344abf05a8297cccef1e4c60f59ac8181`  
+		Last Modified: Tue, 09 Sep 2025 00:10:41 GMT  
 		Size: 15.3 KB (15263 bytes)  
 		MIME: application/vnd.in-toto+json
 
