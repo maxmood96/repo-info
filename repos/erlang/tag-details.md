@@ -7229,7 +7229,7 @@ $ docker pull erlang@sha256:8622b7a3bf43c05af7e6f4a8ba1fc36da90a72197443860c66f5
 ## `erlang:26`
 
 ```console
-$ docker pull erlang@sha256:f59ebdf751255311fad64881e729806bbfc67da7623b04104c8031bca73a5e64
+$ docker pull erlang@sha256:e9a88740906a170ca28b5bd2ed90e91c8d119bcc84b3700013de7ed76769d17b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7796,18 +7796,18 @@ $ docker pull erlang@sha256:59d969ce06bacae4dc6ba98dba70f16b52d2ef5d69b3677ba9fc
 ### `erlang:26` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:6d61402dc71e026c29c36dd647e703490290b1b5e4221bd641c81f50a4eab15d
+$ docker pull erlang@sha256:2d57f9a217e614c767582ca5754019d6c62295c5c3d8c3b522851c0a8eef85fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **624.1 MB (624132876 bytes)**  
+-	Total Size: **624.2 MB (624159035 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357b54ce72e0101fb5bf386c60edd49472248ce5694d7f48e43fd127e8f10a39`
+-	Image ID: `sha256:9e0a053397036694fcb21cc18625147e7c00d181a84110422c2e635556e85f30`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -7831,147 +7831,147 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6333bf2e5711796119a92583f9574acddc27c13461058663ab7e1a3de7ec3de5`  
-		Last Modified: Thu, 14 Aug 2025 08:09:16 GMT  
-		Size: 260.8 MB (260831120 bytes)  
+	-	`sha256:9a692e13e4358d17e6ac311bf42a1b425bc5ca90e72ff40a40cb55c7dce24181`  
+		Last Modified: Wed, 10 Sep 2025 01:56:01 GMT  
+		Size: 260.8 MB (260840977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4a63ecb0da3bde3ec0764f5385d0f60cdcaa9ab476b9662d08bb0a4c411de0e`  
-		Last Modified: Thu, 14 Aug 2025 07:51:53 GMT  
-		Size: 195.0 KB (194953 bytes)  
+	-	`sha256:20e15261529102afb893c84f3153cc57c74505f3b4a98a0a49356d60aa1f00ab`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
+		Size: 195.0 KB (194962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34f2f89f6e5b32cb4e19d2acf7de64bd63480f4cb6d641b7f51c6ed9d0ba912`  
-		Last Modified: Thu, 14 Aug 2025 07:51:55 GMT  
-		Size: 819.7 KB (819692 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `erlang:26` - unknown; unknown
-
-```console
-$ docker pull erlang@sha256:bdd56a22c59103242d2bd0cd9faa1986ac15e1c2cabb57fdd93fcb53caa7f7ae
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.2 MB (23243022 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d09f9f69c14eb690f7265d92df04cde18fed3eb07bfcf0f7e2ea2018066c941`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4796b0bff3c2669ed672a75d70c722d05792850e7f15f8fc0e7b2288eb143fd7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:21 GMT  
-		Size: 23.2 MB (23223952 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1080dc2f50ea175f4dd1c09a2f08a42a256d0d58919bf3926224125ed08c9a9c`  
-		Last Modified: Thu, 14 Aug 2025 10:48:22 GMT  
-		Size: 19.1 KB (19070 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `erlang:26` - linux; s390x
-
-```console
-$ docker pull erlang@sha256:084e0dd3a7d06df6bf0b54f9d3ce752b1054d7a655a199693f1c0b6879c39076
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.1 MB (577145311 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0e11d49b5c0cddbe52e881d481b23bf6dff59275e4d8db7eb3dba94423fa339`
--	Default Command: `["erl"]`
-
-```dockerfile
-# Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
-# Wed, 10 May 2023 23:29:59 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
-# Wed, 09 Jul 2025 17:34:23 GMT
-LABEL org.opencontainers.image.version=26.2.5.13
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-CMD ["erl"]
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
-```
-
--	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00df7cf3acf6d844fffd8fffd199fe5de40bf68d545e65dded60e35cbc8badb0`  
-		Last Modified: Wed, 13 Aug 2025 20:00:28 GMT  
-		Size: 258.0 MB (258027827 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e72201bcea72d72440f8d81440738637df6e38a45bcbbe353f054713e6c97f`  
-		Last Modified: Wed, 13 Aug 2025 18:47:42 GMT  
-		Size: 194.9 KB (194946 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34747dbe661de3a983f0e4c6733b8d26a3c03a607a2e57f6d35add7c5fe5ec17`  
-		Last Modified: Wed, 13 Aug 2025 18:47:43 GMT  
+	-	`sha256:a4e7fd5c93067197d9d88ddd900941d37afa79f6d69fa33284061425464a02d1`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
 		Size: 819.7 KB (819693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:9c0707cd2d2b4dd9e627c805cc2204899168a831f3f1dbdbf892bd3e29103812
+$ docker pull erlang@sha256:8b91bad5c4a63532184e1617d2cb2b8daa064d3b4ddb9930ecab04848955f5fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.1 MB (23054831 bytes)**  
+-	Total Size: **23.3 MB (23250150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cdffbc1649226360855c9d3d321c866572afc2f95349f998049ce248dd1fe76`
+-	Image ID: `sha256:6217c3327ca0ccd3f6906662f1e608cc6fffdcd383d7328757f4344824e45de5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e6ce6af0d2d0c37b909a2d1a509f1284753787aecc2f2171fa21607543b30a88`  
-		Last Modified: Wed, 13 Aug 2025 19:48:55 GMT  
-		Size: 23.0 MB (23035809 bytes)  
+	-	`sha256:1b22e49cb91c5c789890d0d7830c7b7c1891820b5f4c5238521b2e162ef10b6f`  
+		Last Modified: Wed, 10 Sep 2025 01:48:18 GMT  
+		Size: 23.2 MB (23231081 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1c31d734b0665c300e03e07e738317740106ae2367617bb8315cb91999aed334`  
-		Last Modified: Wed, 13 Aug 2025 19:48:56 GMT  
+	-	`sha256:29992d8b4cce5c8b2e5e5d842600510fd05b53ae8572246348cc0ed006395140`  
+		Last Modified: Wed, 10 Sep 2025 01:48:19 GMT  
+		Size: 19.1 KB (19069 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `erlang:26` - linux; s390x
+
+```console
+$ docker pull erlang@sha256:6854b8241894b3c436171d0f76382679a74484fe2541625c1dd6b11808c4df8b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **577.2 MB (577177720 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1558ec1dc8c4ad1601475673f4888092786641795980e7e9010826bf5ed8732f`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
+# Wed, 09 Jul 2025 17:34:23 GMT
+LABEL org.opencontainers.image.version=26.2.5.13
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+CMD ["erl"]
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV REBAR_VERSION=2.6.4
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
+```
+
+-	Layers:
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:45279f13ec1aef0eebe4ae96e9145493040cace35f647e8337c6c7e15f464cb9`  
+		Last Modified: Wed, 10 Sep 2025 02:02:14 GMT  
+		Size: 258.0 MB (258041018 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06df071c2084a90522f754d1837b754b52164293233c205029c3dcaf77664a7a`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 194.9 KB (194949 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d5f046c1848a4feb2d5174981de9232343f2f0fbf3eb15606fa093a336fb7453`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 819.7 KB (819693 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `erlang:26` - unknown; unknown
+
+```console
+$ docker pull erlang@sha256:059e8792e58acf86e30c740402c5bc970aee05a61e4be02999cd4fdef9244ec8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.1 MB (23061950 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6be2fe11cddef33ef8d21a08ccdc6916f9f4975eb08a243d5dbad8f6585a59f9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:67b59603770675104ded84edb991728b8f9ed6ac054daac23fe2446f1ae44f30`  
+		Last Modified: Wed, 10 Sep 2025 01:48:36 GMT  
+		Size: 23.0 MB (23042928 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2cfc2eca8dd5c62b4ba63ddacf140bada32db79a430cae07a2155f9fb306c617`  
+		Last Modified: Wed, 10 Sep 2025 01:48:37 GMT  
 		Size: 19.0 KB (19022 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8365,7 +8365,7 @@ $ docker pull erlang@sha256:218809d2027cd8014f3a8e41aff55f0c21ca7df985428db48845
 ## `erlang:26-slim`
 
 ```console
-$ docker pull erlang@sha256:254a62c70ed9f59c017fb5aa13e0f7f7e2c1ac203acdd263ee4548fec5076f07
+$ docker pull erlang@sha256:767b48dc0508f25b4d505b85005d1cde117558d050ba7ac5f1693a6e3f9a7417
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8567,18 +8567,18 @@ $ docker pull erlang@sha256:4607d41dfd811d095bb2e0bd5f6eef7775144058b0ccef5deb7e
 ### `erlang:26-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull erlang@sha256:94c91c0f2ccfc54d553f696fd91eaa4fe12d29ac9ea892be7f47b30c57a3cc1b
+$ docker pull erlang@sha256:8dc2216254afa6aed9b67065d98cd4f13d18be2332c29856757297be624a9513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.4 MB (116405034 bytes)**  
+-	Total Size: **116.4 MB (116421598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87010e2602f274d703871189d380aa4992dd099d869ba449b1ccb8a3c33027e8`
+-	Image ID: `sha256:87ba5935083e0ad3eed7fafad4604f1def57ae5c42cddbb812769c3cb65e9de7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 09 Jul 2025 17:34:23 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
 # Wed, 09 Jul 2025 17:34:23 GMT
 ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
 # Wed, 09 Jul 2025 17:34:23 GMT
@@ -8590,36 +8590,36 @@ CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:35f134665ae4469a16b5b7b841e9efe6b186960e0533131b3603e4816aabeb3a`  
-		Last Modified: Tue, 12 Aug 2025 22:08:09 GMT  
-		Size: 48.3 MB (48342450 bytes)  
+	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
+		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
+		Size: 48.4 MB (48359019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0debbc61e995f80fdb66b12cea14206878e11680dbaf85dc5ea2f2793fb8f408`  
-		Last Modified: Wed, 13 Aug 2025 07:14:02 GMT  
-		Size: 68.1 MB (68062584 bytes)  
+	-	`sha256:bff491d81c98ce5784dbeb349f663b6602f530c05424947b7370194be75eaf81`  
+		Last Modified: Wed, 10 Sep 2025 01:07:40 GMT  
+		Size: 68.1 MB (68062579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:bfffb47551a48a2c0b00211aaec20aab30f94b4215a04e6222442839b3e76a4c
+$ docker pull erlang@sha256:2451f5c98d8b49cb7dd86ec943bdc6cc87756ecc0e24ff4c4fdbc7793ff07c7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3832710 bytes)**  
+-	Total Size: **3.8 MB (3839303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f12426d26ef77ab26f2754cdf8b762e34df5cc5af0a7477736bd9745ee63b150`
+-	Image ID: `sha256:d693218912f04f4592259bf950045300481a4eed06ee5685d6296b5f24b6c8e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4a0b3fd035047779a41669a59afe8bec190432490c5d31190feefc943a05a20`  
-		Last Modified: Wed, 13 Aug 2025 10:47:05 GMT  
-		Size: 3.8 MB (3819001 bytes)  
+	-	`sha256:2448ca6a09e73aa4841b4dce68295954730c54e513fe33bc5fd195b3640d291e`  
+		Last Modified: Wed, 10 Sep 2025 01:46:59 GMT  
+		Size: 3.8 MB (3825594 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:821ef2d7914afea8e492fc37991bb049f8de74cf1fd82ec3d6f0aa66838d7140`  
-		Last Modified: Wed, 13 Aug 2025 10:47:06 GMT  
+	-	`sha256:fe960586878a789340abb6510d812482fe67e9fe425e22f3111a1a857421166f`  
+		Last Modified: Wed, 10 Sep 2025 01:47:00 GMT  
 		Size: 13.7 KB (13709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8858,7 +8858,7 @@ $ docker pull erlang@sha256:85ec63fa3a1ff35a91b87f725778e78ead9b5859ff5d5b2d85f3
 ## `erlang:26.2`
 
 ```console
-$ docker pull erlang@sha256:f59ebdf751255311fad64881e729806bbfc67da7623b04104c8031bca73a5e64
+$ docker pull erlang@sha256:e9a88740906a170ca28b5bd2ed90e91c8d119bcc84b3700013de7ed76769d17b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9425,18 +9425,18 @@ $ docker pull erlang@sha256:59d969ce06bacae4dc6ba98dba70f16b52d2ef5d69b3677ba9fc
 ### `erlang:26.2` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:6d61402dc71e026c29c36dd647e703490290b1b5e4221bd641c81f50a4eab15d
+$ docker pull erlang@sha256:2d57f9a217e614c767582ca5754019d6c62295c5c3d8c3b522851c0a8eef85fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **624.1 MB (624132876 bytes)**  
+-	Total Size: **624.2 MB (624159035 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357b54ce72e0101fb5bf386c60edd49472248ce5694d7f48e43fd127e8f10a39`
+-	Image ID: `sha256:9e0a053397036694fcb21cc18625147e7c00d181a84110422c2e635556e85f30`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -9460,147 +9460,147 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6333bf2e5711796119a92583f9574acddc27c13461058663ab7e1a3de7ec3de5`  
-		Last Modified: Thu, 14 Aug 2025 08:09:16 GMT  
-		Size: 260.8 MB (260831120 bytes)  
+	-	`sha256:9a692e13e4358d17e6ac311bf42a1b425bc5ca90e72ff40a40cb55c7dce24181`  
+		Last Modified: Wed, 10 Sep 2025 01:56:01 GMT  
+		Size: 260.8 MB (260840977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4a63ecb0da3bde3ec0764f5385d0f60cdcaa9ab476b9662d08bb0a4c411de0e`  
-		Last Modified: Thu, 14 Aug 2025 07:51:53 GMT  
-		Size: 195.0 KB (194953 bytes)  
+	-	`sha256:20e15261529102afb893c84f3153cc57c74505f3b4a98a0a49356d60aa1f00ab`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
+		Size: 195.0 KB (194962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34f2f89f6e5b32cb4e19d2acf7de64bd63480f4cb6d641b7f51c6ed9d0ba912`  
-		Last Modified: Thu, 14 Aug 2025 07:51:55 GMT  
-		Size: 819.7 KB (819692 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `erlang:26.2` - unknown; unknown
-
-```console
-$ docker pull erlang@sha256:bdd56a22c59103242d2bd0cd9faa1986ac15e1c2cabb57fdd93fcb53caa7f7ae
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.2 MB (23243022 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d09f9f69c14eb690f7265d92df04cde18fed3eb07bfcf0f7e2ea2018066c941`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4796b0bff3c2669ed672a75d70c722d05792850e7f15f8fc0e7b2288eb143fd7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:21 GMT  
-		Size: 23.2 MB (23223952 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1080dc2f50ea175f4dd1c09a2f08a42a256d0d58919bf3926224125ed08c9a9c`  
-		Last Modified: Thu, 14 Aug 2025 10:48:22 GMT  
-		Size: 19.1 KB (19070 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `erlang:26.2` - linux; s390x
-
-```console
-$ docker pull erlang@sha256:084e0dd3a7d06df6bf0b54f9d3ce752b1054d7a655a199693f1c0b6879c39076
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.1 MB (577145311 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0e11d49b5c0cddbe52e881d481b23bf6dff59275e4d8db7eb3dba94423fa339`
--	Default Command: `["erl"]`
-
-```dockerfile
-# Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
-# Wed, 10 May 2023 23:29:59 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
-# Wed, 09 Jul 2025 17:34:23 GMT
-LABEL org.opencontainers.image.version=26.2.5.13
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-CMD ["erl"]
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
-```
-
--	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00df7cf3acf6d844fffd8fffd199fe5de40bf68d545e65dded60e35cbc8badb0`  
-		Last Modified: Wed, 13 Aug 2025 20:00:28 GMT  
-		Size: 258.0 MB (258027827 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e72201bcea72d72440f8d81440738637df6e38a45bcbbe353f054713e6c97f`  
-		Last Modified: Wed, 13 Aug 2025 18:47:42 GMT  
-		Size: 194.9 KB (194946 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34747dbe661de3a983f0e4c6733b8d26a3c03a607a2e57f6d35add7c5fe5ec17`  
-		Last Modified: Wed, 13 Aug 2025 18:47:43 GMT  
+	-	`sha256:a4e7fd5c93067197d9d88ddd900941d37afa79f6d69fa33284061425464a02d1`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
 		Size: 819.7 KB (819693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26.2` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:9c0707cd2d2b4dd9e627c805cc2204899168a831f3f1dbdbf892bd3e29103812
+$ docker pull erlang@sha256:8b91bad5c4a63532184e1617d2cb2b8daa064d3b4ddb9930ecab04848955f5fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.1 MB (23054831 bytes)**  
+-	Total Size: **23.3 MB (23250150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cdffbc1649226360855c9d3d321c866572afc2f95349f998049ce248dd1fe76`
+-	Image ID: `sha256:6217c3327ca0ccd3f6906662f1e608cc6fffdcd383d7328757f4344824e45de5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e6ce6af0d2d0c37b909a2d1a509f1284753787aecc2f2171fa21607543b30a88`  
-		Last Modified: Wed, 13 Aug 2025 19:48:55 GMT  
-		Size: 23.0 MB (23035809 bytes)  
+	-	`sha256:1b22e49cb91c5c789890d0d7830c7b7c1891820b5f4c5238521b2e162ef10b6f`  
+		Last Modified: Wed, 10 Sep 2025 01:48:18 GMT  
+		Size: 23.2 MB (23231081 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1c31d734b0665c300e03e07e738317740106ae2367617bb8315cb91999aed334`  
-		Last Modified: Wed, 13 Aug 2025 19:48:56 GMT  
+	-	`sha256:29992d8b4cce5c8b2e5e5d842600510fd05b53ae8572246348cc0ed006395140`  
+		Last Modified: Wed, 10 Sep 2025 01:48:19 GMT  
+		Size: 19.1 KB (19069 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `erlang:26.2` - linux; s390x
+
+```console
+$ docker pull erlang@sha256:6854b8241894b3c436171d0f76382679a74484fe2541625c1dd6b11808c4df8b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **577.2 MB (577177720 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1558ec1dc8c4ad1601475673f4888092786641795980e7e9010826bf5ed8732f`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
+# Wed, 09 Jul 2025 17:34:23 GMT
+LABEL org.opencontainers.image.version=26.2.5.13
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+CMD ["erl"]
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV REBAR_VERSION=2.6.4
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
+```
+
+-	Layers:
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:45279f13ec1aef0eebe4ae96e9145493040cace35f647e8337c6c7e15f464cb9`  
+		Last Modified: Wed, 10 Sep 2025 02:02:14 GMT  
+		Size: 258.0 MB (258041018 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06df071c2084a90522f754d1837b754b52164293233c205029c3dcaf77664a7a`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 194.9 KB (194949 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d5f046c1848a4feb2d5174981de9232343f2f0fbf3eb15606fa093a336fb7453`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 819.7 KB (819693 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `erlang:26.2` - unknown; unknown
+
+```console
+$ docker pull erlang@sha256:059e8792e58acf86e30c740402c5bc970aee05a61e4be02999cd4fdef9244ec8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.1 MB (23061950 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6be2fe11cddef33ef8d21a08ccdc6916f9f4975eb08a243d5dbad8f6585a59f9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:67b59603770675104ded84edb991728b8f9ed6ac054daac23fe2446f1ae44f30`  
+		Last Modified: Wed, 10 Sep 2025 01:48:36 GMT  
+		Size: 23.0 MB (23042928 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2cfc2eca8dd5c62b4ba63ddacf140bada32db79a430cae07a2155f9fb306c617`  
+		Last Modified: Wed, 10 Sep 2025 01:48:37 GMT  
 		Size: 19.0 KB (19022 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9994,7 +9994,7 @@ $ docker pull erlang@sha256:218809d2027cd8014f3a8e41aff55f0c21ca7df985428db48845
 ## `erlang:26.2-slim`
 
 ```console
-$ docker pull erlang@sha256:254a62c70ed9f59c017fb5aa13e0f7f7e2c1ac203acdd263ee4548fec5076f07
+$ docker pull erlang@sha256:767b48dc0508f25b4d505b85005d1cde117558d050ba7ac5f1693a6e3f9a7417
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10196,18 +10196,18 @@ $ docker pull erlang@sha256:4607d41dfd811d095bb2e0bd5f6eef7775144058b0ccef5deb7e
 ### `erlang:26.2-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull erlang@sha256:94c91c0f2ccfc54d553f696fd91eaa4fe12d29ac9ea892be7f47b30c57a3cc1b
+$ docker pull erlang@sha256:8dc2216254afa6aed9b67065d98cd4f13d18be2332c29856757297be624a9513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.4 MB (116405034 bytes)**  
+-	Total Size: **116.4 MB (116421598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87010e2602f274d703871189d380aa4992dd099d869ba449b1ccb8a3c33027e8`
+-	Image ID: `sha256:87ba5935083e0ad3eed7fafad4604f1def57ae5c42cddbb812769c3cb65e9de7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 09 Jul 2025 17:34:23 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
 # Wed, 09 Jul 2025 17:34:23 GMT
 ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
 # Wed, 09 Jul 2025 17:34:23 GMT
@@ -10219,36 +10219,36 @@ CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:35f134665ae4469a16b5b7b841e9efe6b186960e0533131b3603e4816aabeb3a`  
-		Last Modified: Tue, 12 Aug 2025 22:08:09 GMT  
-		Size: 48.3 MB (48342450 bytes)  
+	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
+		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
+		Size: 48.4 MB (48359019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0debbc61e995f80fdb66b12cea14206878e11680dbaf85dc5ea2f2793fb8f408`  
-		Last Modified: Wed, 13 Aug 2025 07:14:02 GMT  
-		Size: 68.1 MB (68062584 bytes)  
+	-	`sha256:bff491d81c98ce5784dbeb349f663b6602f530c05424947b7370194be75eaf81`  
+		Last Modified: Wed, 10 Sep 2025 01:07:40 GMT  
+		Size: 68.1 MB (68062579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26.2-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:bfffb47551a48a2c0b00211aaec20aab30f94b4215a04e6222442839b3e76a4c
+$ docker pull erlang@sha256:2451f5c98d8b49cb7dd86ec943bdc6cc87756ecc0e24ff4c4fdbc7793ff07c7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3832710 bytes)**  
+-	Total Size: **3.8 MB (3839303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f12426d26ef77ab26f2754cdf8b762e34df5cc5af0a7477736bd9745ee63b150`
+-	Image ID: `sha256:d693218912f04f4592259bf950045300481a4eed06ee5685d6296b5f24b6c8e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4a0b3fd035047779a41669a59afe8bec190432490c5d31190feefc943a05a20`  
-		Last Modified: Wed, 13 Aug 2025 10:47:05 GMT  
-		Size: 3.8 MB (3819001 bytes)  
+	-	`sha256:2448ca6a09e73aa4841b4dce68295954730c54e513fe33bc5fd195b3640d291e`  
+		Last Modified: Wed, 10 Sep 2025 01:46:59 GMT  
+		Size: 3.8 MB (3825594 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:821ef2d7914afea8e492fc37991bb049f8de74cf1fd82ec3d6f0aa66838d7140`  
-		Last Modified: Wed, 13 Aug 2025 10:47:06 GMT  
+	-	`sha256:fe960586878a789340abb6510d812482fe67e9fe425e22f3111a1a857421166f`  
+		Last Modified: Wed, 10 Sep 2025 01:47:00 GMT  
 		Size: 13.7 KB (13709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10487,7 +10487,7 @@ $ docker pull erlang@sha256:85ec63fa3a1ff35a91b87f725778e78ead9b5859ff5d5b2d85f3
 ## `erlang:26.2.5`
 
 ```console
-$ docker pull erlang@sha256:f59ebdf751255311fad64881e729806bbfc67da7623b04104c8031bca73a5e64
+$ docker pull erlang@sha256:e9a88740906a170ca28b5bd2ed90e91c8d119bcc84b3700013de7ed76769d17b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11054,18 +11054,18 @@ $ docker pull erlang@sha256:59d969ce06bacae4dc6ba98dba70f16b52d2ef5d69b3677ba9fc
 ### `erlang:26.2.5` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:6d61402dc71e026c29c36dd647e703490290b1b5e4221bd641c81f50a4eab15d
+$ docker pull erlang@sha256:2d57f9a217e614c767582ca5754019d6c62295c5c3d8c3b522851c0a8eef85fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **624.1 MB (624132876 bytes)**  
+-	Total Size: **624.2 MB (624159035 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357b54ce72e0101fb5bf386c60edd49472248ce5694d7f48e43fd127e8f10a39`
+-	Image ID: `sha256:9e0a053397036694fcb21cc18625147e7c00d181a84110422c2e635556e85f30`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -11089,147 +11089,147 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6333bf2e5711796119a92583f9574acddc27c13461058663ab7e1a3de7ec3de5`  
-		Last Modified: Thu, 14 Aug 2025 08:09:16 GMT  
-		Size: 260.8 MB (260831120 bytes)  
+	-	`sha256:9a692e13e4358d17e6ac311bf42a1b425bc5ca90e72ff40a40cb55c7dce24181`  
+		Last Modified: Wed, 10 Sep 2025 01:56:01 GMT  
+		Size: 260.8 MB (260840977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4a63ecb0da3bde3ec0764f5385d0f60cdcaa9ab476b9662d08bb0a4c411de0e`  
-		Last Modified: Thu, 14 Aug 2025 07:51:53 GMT  
-		Size: 195.0 KB (194953 bytes)  
+	-	`sha256:20e15261529102afb893c84f3153cc57c74505f3b4a98a0a49356d60aa1f00ab`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
+		Size: 195.0 KB (194962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34f2f89f6e5b32cb4e19d2acf7de64bd63480f4cb6d641b7f51c6ed9d0ba912`  
-		Last Modified: Thu, 14 Aug 2025 07:51:55 GMT  
-		Size: 819.7 KB (819692 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `erlang:26.2.5` - unknown; unknown
-
-```console
-$ docker pull erlang@sha256:bdd56a22c59103242d2bd0cd9faa1986ac15e1c2cabb57fdd93fcb53caa7f7ae
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.2 MB (23243022 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d09f9f69c14eb690f7265d92df04cde18fed3eb07bfcf0f7e2ea2018066c941`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4796b0bff3c2669ed672a75d70c722d05792850e7f15f8fc0e7b2288eb143fd7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:21 GMT  
-		Size: 23.2 MB (23223952 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1080dc2f50ea175f4dd1c09a2f08a42a256d0d58919bf3926224125ed08c9a9c`  
-		Last Modified: Thu, 14 Aug 2025 10:48:22 GMT  
-		Size: 19.1 KB (19070 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `erlang:26.2.5` - linux; s390x
-
-```console
-$ docker pull erlang@sha256:084e0dd3a7d06df6bf0b54f9d3ce752b1054d7a655a199693f1c0b6879c39076
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.1 MB (577145311 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0e11d49b5c0cddbe52e881d481b23bf6dff59275e4d8db7eb3dba94423fa339`
--	Default Command: `["erl"]`
-
-```dockerfile
-# Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
-# Wed, 10 May 2023 23:29:59 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
-# Wed, 09 Jul 2025 17:34:23 GMT
-LABEL org.opencontainers.image.version=26.2.5.13
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-CMD ["erl"]
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
-```
-
--	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00df7cf3acf6d844fffd8fffd199fe5de40bf68d545e65dded60e35cbc8badb0`  
-		Last Modified: Wed, 13 Aug 2025 20:00:28 GMT  
-		Size: 258.0 MB (258027827 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e72201bcea72d72440f8d81440738637df6e38a45bcbbe353f054713e6c97f`  
-		Last Modified: Wed, 13 Aug 2025 18:47:42 GMT  
-		Size: 194.9 KB (194946 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34747dbe661de3a983f0e4c6733b8d26a3c03a607a2e57f6d35add7c5fe5ec17`  
-		Last Modified: Wed, 13 Aug 2025 18:47:43 GMT  
+	-	`sha256:a4e7fd5c93067197d9d88ddd900941d37afa79f6d69fa33284061425464a02d1`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
 		Size: 819.7 KB (819693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26.2.5` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:9c0707cd2d2b4dd9e627c805cc2204899168a831f3f1dbdbf892bd3e29103812
+$ docker pull erlang@sha256:8b91bad5c4a63532184e1617d2cb2b8daa064d3b4ddb9930ecab04848955f5fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.1 MB (23054831 bytes)**  
+-	Total Size: **23.3 MB (23250150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cdffbc1649226360855c9d3d321c866572afc2f95349f998049ce248dd1fe76`
+-	Image ID: `sha256:6217c3327ca0ccd3f6906662f1e608cc6fffdcd383d7328757f4344824e45de5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e6ce6af0d2d0c37b909a2d1a509f1284753787aecc2f2171fa21607543b30a88`  
-		Last Modified: Wed, 13 Aug 2025 19:48:55 GMT  
-		Size: 23.0 MB (23035809 bytes)  
+	-	`sha256:1b22e49cb91c5c789890d0d7830c7b7c1891820b5f4c5238521b2e162ef10b6f`  
+		Last Modified: Wed, 10 Sep 2025 01:48:18 GMT  
+		Size: 23.2 MB (23231081 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1c31d734b0665c300e03e07e738317740106ae2367617bb8315cb91999aed334`  
-		Last Modified: Wed, 13 Aug 2025 19:48:56 GMT  
+	-	`sha256:29992d8b4cce5c8b2e5e5d842600510fd05b53ae8572246348cc0ed006395140`  
+		Last Modified: Wed, 10 Sep 2025 01:48:19 GMT  
+		Size: 19.1 KB (19069 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `erlang:26.2.5` - linux; s390x
+
+```console
+$ docker pull erlang@sha256:6854b8241894b3c436171d0f76382679a74484fe2541625c1dd6b11808c4df8b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **577.2 MB (577177720 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1558ec1dc8c4ad1601475673f4888092786641795980e7e9010826bf5ed8732f`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
+# Wed, 09 Jul 2025 17:34:23 GMT
+LABEL org.opencontainers.image.version=26.2.5.13
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+CMD ["erl"]
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV REBAR_VERSION=2.6.4
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
+```
+
+-	Layers:
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:45279f13ec1aef0eebe4ae96e9145493040cace35f647e8337c6c7e15f464cb9`  
+		Last Modified: Wed, 10 Sep 2025 02:02:14 GMT  
+		Size: 258.0 MB (258041018 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06df071c2084a90522f754d1837b754b52164293233c205029c3dcaf77664a7a`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 194.9 KB (194949 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d5f046c1848a4feb2d5174981de9232343f2f0fbf3eb15606fa093a336fb7453`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 819.7 KB (819693 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `erlang:26.2.5` - unknown; unknown
+
+```console
+$ docker pull erlang@sha256:059e8792e58acf86e30c740402c5bc970aee05a61e4be02999cd4fdef9244ec8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.1 MB (23061950 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6be2fe11cddef33ef8d21a08ccdc6916f9f4975eb08a243d5dbad8f6585a59f9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:67b59603770675104ded84edb991728b8f9ed6ac054daac23fe2446f1ae44f30`  
+		Last Modified: Wed, 10 Sep 2025 01:48:36 GMT  
+		Size: 23.0 MB (23042928 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2cfc2eca8dd5c62b4ba63ddacf140bada32db79a430cae07a2155f9fb306c617`  
+		Last Modified: Wed, 10 Sep 2025 01:48:37 GMT  
 		Size: 19.0 KB (19022 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11623,7 +11623,7 @@ $ docker pull erlang@sha256:218809d2027cd8014f3a8e41aff55f0c21ca7df985428db48845
 ## `erlang:26.2.5-slim`
 
 ```console
-$ docker pull erlang@sha256:254a62c70ed9f59c017fb5aa13e0f7f7e2c1ac203acdd263ee4548fec5076f07
+$ docker pull erlang@sha256:767b48dc0508f25b4d505b85005d1cde117558d050ba7ac5f1693a6e3f9a7417
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11825,18 +11825,18 @@ $ docker pull erlang@sha256:4607d41dfd811d095bb2e0bd5f6eef7775144058b0ccef5deb7e
 ### `erlang:26.2.5-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull erlang@sha256:94c91c0f2ccfc54d553f696fd91eaa4fe12d29ac9ea892be7f47b30c57a3cc1b
+$ docker pull erlang@sha256:8dc2216254afa6aed9b67065d98cd4f13d18be2332c29856757297be624a9513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.4 MB (116405034 bytes)**  
+-	Total Size: **116.4 MB (116421598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87010e2602f274d703871189d380aa4992dd099d869ba449b1ccb8a3c33027e8`
+-	Image ID: `sha256:87ba5935083e0ad3eed7fafad4604f1def57ae5c42cddbb812769c3cb65e9de7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 09 Jul 2025 17:34:23 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
 # Wed, 09 Jul 2025 17:34:23 GMT
 ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
 # Wed, 09 Jul 2025 17:34:23 GMT
@@ -11848,36 +11848,36 @@ CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:35f134665ae4469a16b5b7b841e9efe6b186960e0533131b3603e4816aabeb3a`  
-		Last Modified: Tue, 12 Aug 2025 22:08:09 GMT  
-		Size: 48.3 MB (48342450 bytes)  
+	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
+		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
+		Size: 48.4 MB (48359019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0debbc61e995f80fdb66b12cea14206878e11680dbaf85dc5ea2f2793fb8f408`  
-		Last Modified: Wed, 13 Aug 2025 07:14:02 GMT  
-		Size: 68.1 MB (68062584 bytes)  
+	-	`sha256:bff491d81c98ce5784dbeb349f663b6602f530c05424947b7370194be75eaf81`  
+		Last Modified: Wed, 10 Sep 2025 01:07:40 GMT  
+		Size: 68.1 MB (68062579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26.2.5-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:bfffb47551a48a2c0b00211aaec20aab30f94b4215a04e6222442839b3e76a4c
+$ docker pull erlang@sha256:2451f5c98d8b49cb7dd86ec943bdc6cc87756ecc0e24ff4c4fdbc7793ff07c7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3832710 bytes)**  
+-	Total Size: **3.8 MB (3839303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f12426d26ef77ab26f2754cdf8b762e34df5cc5af0a7477736bd9745ee63b150`
+-	Image ID: `sha256:d693218912f04f4592259bf950045300481a4eed06ee5685d6296b5f24b6c8e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4a0b3fd035047779a41669a59afe8bec190432490c5d31190feefc943a05a20`  
-		Last Modified: Wed, 13 Aug 2025 10:47:05 GMT  
-		Size: 3.8 MB (3819001 bytes)  
+	-	`sha256:2448ca6a09e73aa4841b4dce68295954730c54e513fe33bc5fd195b3640d291e`  
+		Last Modified: Wed, 10 Sep 2025 01:46:59 GMT  
+		Size: 3.8 MB (3825594 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:821ef2d7914afea8e492fc37991bb049f8de74cf1fd82ec3d6f0aa66838d7140`  
-		Last Modified: Wed, 13 Aug 2025 10:47:06 GMT  
+	-	`sha256:fe960586878a789340abb6510d812482fe67e9fe425e22f3111a1a857421166f`  
+		Last Modified: Wed, 10 Sep 2025 01:47:00 GMT  
 		Size: 13.7 KB (13709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12116,7 +12116,7 @@ $ docker pull erlang@sha256:85ec63fa3a1ff35a91b87f725778e78ead9b5859ff5d5b2d85f3
 ## `erlang:26.2.5.13`
 
 ```console
-$ docker pull erlang@sha256:f59ebdf751255311fad64881e729806bbfc67da7623b04104c8031bca73a5e64
+$ docker pull erlang@sha256:e9a88740906a170ca28b5bd2ed90e91c8d119bcc84b3700013de7ed76769d17b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12683,18 +12683,18 @@ $ docker pull erlang@sha256:59d969ce06bacae4dc6ba98dba70f16b52d2ef5d69b3677ba9fc
 ### `erlang:26.2.5.13` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:6d61402dc71e026c29c36dd647e703490290b1b5e4221bd641c81f50a4eab15d
+$ docker pull erlang@sha256:2d57f9a217e614c767582ca5754019d6c62295c5c3d8c3b522851c0a8eef85fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **624.1 MB (624132876 bytes)**  
+-	Total Size: **624.2 MB (624159035 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357b54ce72e0101fb5bf386c60edd49472248ce5694d7f48e43fd127e8f10a39`
+-	Image ID: `sha256:9e0a053397036694fcb21cc18625147e7c00d181a84110422c2e635556e85f30`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -12718,147 +12718,147 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6333bf2e5711796119a92583f9574acddc27c13461058663ab7e1a3de7ec3de5`  
-		Last Modified: Thu, 14 Aug 2025 08:09:16 GMT  
-		Size: 260.8 MB (260831120 bytes)  
+	-	`sha256:9a692e13e4358d17e6ac311bf42a1b425bc5ca90e72ff40a40cb55c7dce24181`  
+		Last Modified: Wed, 10 Sep 2025 01:56:01 GMT  
+		Size: 260.8 MB (260840977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4a63ecb0da3bde3ec0764f5385d0f60cdcaa9ab476b9662d08bb0a4c411de0e`  
-		Last Modified: Thu, 14 Aug 2025 07:51:53 GMT  
-		Size: 195.0 KB (194953 bytes)  
+	-	`sha256:20e15261529102afb893c84f3153cc57c74505f3b4a98a0a49356d60aa1f00ab`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
+		Size: 195.0 KB (194962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34f2f89f6e5b32cb4e19d2acf7de64bd63480f4cb6d641b7f51c6ed9d0ba912`  
-		Last Modified: Thu, 14 Aug 2025 07:51:55 GMT  
-		Size: 819.7 KB (819692 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `erlang:26.2.5.13` - unknown; unknown
-
-```console
-$ docker pull erlang@sha256:bdd56a22c59103242d2bd0cd9faa1986ac15e1c2cabb57fdd93fcb53caa7f7ae
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.2 MB (23243022 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d09f9f69c14eb690f7265d92df04cde18fed3eb07bfcf0f7e2ea2018066c941`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4796b0bff3c2669ed672a75d70c722d05792850e7f15f8fc0e7b2288eb143fd7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:21 GMT  
-		Size: 23.2 MB (23223952 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1080dc2f50ea175f4dd1c09a2f08a42a256d0d58919bf3926224125ed08c9a9c`  
-		Last Modified: Thu, 14 Aug 2025 10:48:22 GMT  
-		Size: 19.1 KB (19070 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `erlang:26.2.5.13` - linux; s390x
-
-```console
-$ docker pull erlang@sha256:084e0dd3a7d06df6bf0b54f9d3ce752b1054d7a655a199693f1c0b6879c39076
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.1 MB (577145311 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0e11d49b5c0cddbe52e881d481b23bf6dff59275e4d8db7eb3dba94423fa339`
--	Default Command: `["erl"]`
-
-```dockerfile
-# Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
-# Wed, 10 May 2023 23:29:59 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 09 Jan 2024 01:14:25 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
-# Wed, 09 Jul 2025 17:34:23 GMT
-LABEL org.opencontainers.image.version=26.2.5.13
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-CMD ["erl"]
-# Wed, 09 Jul 2025 17:34:23 GMT
-ENV REBAR_VERSION=2.6.4
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
-# Wed, 09 Jul 2025 17:34:23 GMT
-RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
-```
-
--	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00df7cf3acf6d844fffd8fffd199fe5de40bf68d545e65dded60e35cbc8badb0`  
-		Last Modified: Wed, 13 Aug 2025 20:00:28 GMT  
-		Size: 258.0 MB (258027827 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e72201bcea72d72440f8d81440738637df6e38a45bcbbe353f054713e6c97f`  
-		Last Modified: Wed, 13 Aug 2025 18:47:42 GMT  
-		Size: 194.9 KB (194946 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34747dbe661de3a983f0e4c6733b8d26a3c03a607a2e57f6d35add7c5fe5ec17`  
-		Last Modified: Wed, 13 Aug 2025 18:47:43 GMT  
+	-	`sha256:a4e7fd5c93067197d9d88ddd900941d37afa79f6d69fa33284061425464a02d1`  
+		Last Modified: Tue, 09 Sep 2025 23:07:29 GMT  
 		Size: 819.7 KB (819693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26.2.5.13` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:9c0707cd2d2b4dd9e627c805cc2204899168a831f3f1dbdbf892bd3e29103812
+$ docker pull erlang@sha256:8b91bad5c4a63532184e1617d2cb2b8daa064d3b4ddb9930ecab04848955f5fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.1 MB (23054831 bytes)**  
+-	Total Size: **23.3 MB (23250150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cdffbc1649226360855c9d3d321c866572afc2f95349f998049ce248dd1fe76`
+-	Image ID: `sha256:6217c3327ca0ccd3f6906662f1e608cc6fffdcd383d7328757f4344824e45de5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e6ce6af0d2d0c37b909a2d1a509f1284753787aecc2f2171fa21607543b30a88`  
-		Last Modified: Wed, 13 Aug 2025 19:48:55 GMT  
-		Size: 23.0 MB (23035809 bytes)  
+	-	`sha256:1b22e49cb91c5c789890d0d7830c7b7c1891820b5f4c5238521b2e162ef10b6f`  
+		Last Modified: Wed, 10 Sep 2025 01:48:18 GMT  
+		Size: 23.2 MB (23231081 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1c31d734b0665c300e03e07e738317740106ae2367617bb8315cb91999aed334`  
-		Last Modified: Wed, 13 Aug 2025 19:48:56 GMT  
+	-	`sha256:29992d8b4cce5c8b2e5e5d842600510fd05b53ae8572246348cc0ed006395140`  
+		Last Modified: Wed, 10 Sep 2025 01:48:19 GMT  
+		Size: 19.1 KB (19069 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `erlang:26.2.5.13` - linux; s390x
+
+```console
+$ docker pull erlang@sha256:6854b8241894b3c436171d0f76382679a74484fe2541625c1dd6b11808c4df8b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **577.2 MB (577177720 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1558ec1dc8c4ad1601475673f4888092786641795980e7e9010826bf5ed8732f`
+-	Default Command: `["erl"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
+# Wed, 09 Jul 2025 17:34:23 GMT
+LABEL org.opencontainers.image.version=26.2.5.13
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="b58e5caf34ef4e94b766173f3839ff29db3bfa9710881f246a9958886b466ac4" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2-1 			libwxgtk-webview3.2-1' 	&& buildDeps='unixodbc-dev 			libsctp-dev 			libwxgtk-webview3.2-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+CMD ["erl"]
+# Wed, 09 Jul 2025 17:34:23 GMT
+ENV REBAR_VERSION=2.6.4
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
+# Wed, 09 Jul 2025 17:34:23 GMT
+RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="7d3f42dc0e126e18fb73e4366129f11dd37bad14d404f461e0a3129ce8903440" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
+```
+
+-	Layers:
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:45279f13ec1aef0eebe4ae96e9145493040cace35f647e8337c6c7e15f464cb9`  
+		Last Modified: Wed, 10 Sep 2025 02:02:14 GMT  
+		Size: 258.0 MB (258041018 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06df071c2084a90522f754d1837b754b52164293233c205029c3dcaf77664a7a`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 194.9 KB (194949 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d5f046c1848a4feb2d5174981de9232343f2f0fbf3eb15606fa093a336fb7453`  
+		Last Modified: Wed, 10 Sep 2025 00:00:53 GMT  
+		Size: 819.7 KB (819693 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `erlang:26.2.5.13` - unknown; unknown
+
+```console
+$ docker pull erlang@sha256:059e8792e58acf86e30c740402c5bc970aee05a61e4be02999cd4fdef9244ec8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **23.1 MB (23061950 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6be2fe11cddef33ef8d21a08ccdc6916f9f4975eb08a243d5dbad8f6585a59f9`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:67b59603770675104ded84edb991728b8f9ed6ac054daac23fe2446f1ae44f30`  
+		Last Modified: Wed, 10 Sep 2025 01:48:36 GMT  
+		Size: 23.0 MB (23042928 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2cfc2eca8dd5c62b4ba63ddacf140bada32db79a430cae07a2155f9fb306c617`  
+		Last Modified: Wed, 10 Sep 2025 01:48:37 GMT  
 		Size: 19.0 KB (19022 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13252,7 +13252,7 @@ $ docker pull erlang@sha256:218809d2027cd8014f3a8e41aff55f0c21ca7df985428db48845
 ## `erlang:26.2.5.13-slim`
 
 ```console
-$ docker pull erlang@sha256:254a62c70ed9f59c017fb5aa13e0f7f7e2c1ac203acdd263ee4548fec5076f07
+$ docker pull erlang@sha256:767b48dc0508f25b4d505b85005d1cde117558d050ba7ac5f1693a6e3f9a7417
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13454,18 +13454,18 @@ $ docker pull erlang@sha256:4607d41dfd811d095bb2e0bd5f6eef7775144058b0ccef5deb7e
 ### `erlang:26.2.5.13-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull erlang@sha256:94c91c0f2ccfc54d553f696fd91eaa4fe12d29ac9ea892be7f47b30c57a3cc1b
+$ docker pull erlang@sha256:8dc2216254afa6aed9b67065d98cd4f13d18be2332c29856757297be624a9513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.4 MB (116405034 bytes)**  
+-	Total Size: **116.4 MB (116421598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87010e2602f274d703871189d380aa4992dd099d869ba449b1ccb8a3c33027e8`
+-	Image ID: `sha256:87ba5935083e0ad3eed7fafad4604f1def57ae5c42cddbb812769c3cb65e9de7`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 09 Jul 2025 17:34:23 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
 # Wed, 09 Jul 2025 17:34:23 GMT
 ENV OTP_VERSION=26.2.5.13 REBAR3_VERSION=3.25.0
 # Wed, 09 Jul 2025 17:34:23 GMT
@@ -13477,36 +13477,36 @@ CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:35f134665ae4469a16b5b7b841e9efe6b186960e0533131b3603e4816aabeb3a`  
-		Last Modified: Tue, 12 Aug 2025 22:08:09 GMT  
-		Size: 48.3 MB (48342450 bytes)  
+	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
+		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
+		Size: 48.4 MB (48359019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0debbc61e995f80fdb66b12cea14206878e11680dbaf85dc5ea2f2793fb8f408`  
-		Last Modified: Wed, 13 Aug 2025 07:14:02 GMT  
-		Size: 68.1 MB (68062584 bytes)  
+	-	`sha256:bff491d81c98ce5784dbeb349f663b6602f530c05424947b7370194be75eaf81`  
+		Last Modified: Wed, 10 Sep 2025 01:07:40 GMT  
+		Size: 68.1 MB (68062579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:26.2.5.13-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:bfffb47551a48a2c0b00211aaec20aab30f94b4215a04e6222442839b3e76a4c
+$ docker pull erlang@sha256:2451f5c98d8b49cb7dd86ec943bdc6cc87756ecc0e24ff4c4fdbc7793ff07c7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3832710 bytes)**  
+-	Total Size: **3.8 MB (3839303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f12426d26ef77ab26f2754cdf8b762e34df5cc5af0a7477736bd9745ee63b150`
+-	Image ID: `sha256:d693218912f04f4592259bf950045300481a4eed06ee5685d6296b5f24b6c8e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4a0b3fd035047779a41669a59afe8bec190432490c5d31190feefc943a05a20`  
-		Last Modified: Wed, 13 Aug 2025 10:47:05 GMT  
-		Size: 3.8 MB (3819001 bytes)  
+	-	`sha256:2448ca6a09e73aa4841b4dce68295954730c54e513fe33bc5fd195b3640d291e`  
+		Last Modified: Wed, 10 Sep 2025 01:46:59 GMT  
+		Size: 3.8 MB (3825594 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:821ef2d7914afea8e492fc37991bb049f8de74cf1fd82ec3d6f0aa66838d7140`  
-		Last Modified: Wed, 13 Aug 2025 10:47:06 GMT  
+	-	`sha256:fe960586878a789340abb6510d812482fe67e9fe425e22f3111a1a857421166f`  
+		Last Modified: Wed, 10 Sep 2025 01:47:00 GMT  
 		Size: 13.7 KB (13709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13745,7 +13745,7 @@ $ docker pull erlang@sha256:85ec63fa3a1ff35a91b87f725778e78ead9b5859ff5d5b2d85f3
 ## `erlang:27`
 
 ```console
-$ docker pull erlang@sha256:b5a6db627304b5859179fbcd1846040dae9fbbe8c45206ccf9ff6e32332f226f
+$ docker pull erlang@sha256:e69d9ecab7750e1672af615d5912aab76c47609e096ee5b86d807f269e2f2449
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14312,18 +14312,18 @@ $ docker pull erlang@sha256:6b8409bf79bd104ad7af6cd8b30e6ece110d8dbbee7dc4c54951
 ### `erlang:27` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:c9c6e591583021b181b28486133537cf257a4d060d14114f73b5ce5e0e27dcb4
+$ docker pull erlang@sha256:0e743daed6ead1f3d1e5d20d5cf75fd75351aa91883dc1be3d0fdf0a8e2eb148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **627.6 MB (627594016 bytes)**  
+-	Total Size: **627.6 MB (627615616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe40007e02b6063d4d01d36abe6b4131470272610e02829d0dceb7d24a84400`
+-	Image ID: `sha256:17edc6eff2b8843e8b88f93ae5a99148b46a3736384eb8566a03d3974ac3df88`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -14347,74 +14347,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:702536ea46e3391a2fce1a77db3089fe59579287e0c0509eb0e692a28d4cc1ac`  
-		Last Modified: Thu, 14 Aug 2025 21:08:26 GMT  
-		Size: 264.3 MB (264288733 bytes)  
+	-	`sha256:92611a9228a684be9e83af19bd67c990a58e5d7febf10a2a5f1724c83fa99e16`  
+		Last Modified: Tue, 09 Sep 2025 23:08:42 GMT  
+		Size: 264.3 MB (264294032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52971769160ceed5af891cc20e79df56ab18a7ee1ea96b5fd11c9e99f3a10243`  
-		Last Modified: Thu, 14 Aug 2025 08:17:10 GMT  
-		Size: 195.7 KB (195680 bytes)  
+	-	`sha256:92dfd7868319e3d768f2814aa201b19ad7de865cc7e30bef3379a4038cae3de0`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
+		Size: 195.7 KB (195689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6b625a001912db662545f24b536a274df2456dadba48246b8ab68fe3825c31`  
-		Last Modified: Thu, 14 Aug 2025 08:17:18 GMT  
+	-	`sha256:32b5b6a049500b2b7a36af462a3ec5302995b1fd60294d4b2cc9b7d23f06dead`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
 		Size: 822.5 KB (822492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:4ced2ed6dafd05af4012b0f1c4a91f1c67001f143d927b001a05e0504582002e
+$ docker pull erlang@sha256:542ac5841581db2a53d99a65c25e4db4a79b96eada01473ab01ca8c8b068ff58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23904872 bytes)**  
+-	Total Size: **23.9 MB (23912002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fe7aaabe8afbdc3b08399c25c7e499f990cd2552677f8a2d07028b2dbda2629`
+-	Image ID: `sha256:6f14f0406c997358a79208299a1c115550c8289e8c621a41825641b732f5089c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:baac8bfc8c0df508e644de27427cfc0b61e31b4aec776da706f93eb9171d15b7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:42 GMT  
-		Size: 23.9 MB (23885834 bytes)  
+	-	`sha256:5ae23dffe502ea38543e1999c5e666970c900ca4fd1553c013ddb9f66d8eb5f6`  
+		Last Modified: Wed, 10 Sep 2025 01:49:03 GMT  
+		Size: 23.9 MB (23892963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adb95f6f0bb06d19c9e16222742ea61d4551dcb2bb2079ce440b2e52fe7e3def`  
-		Last Modified: Thu, 14 Aug 2025 10:48:43 GMT  
-		Size: 19.0 KB (19038 bytes)  
+	-	`sha256:d8bbab23af5c9c15e657d2f954cdaafbadea388eddde3bbbc8288146c83cd2ac`  
+		Last Modified: Wed, 10 Sep 2025 01:49:04 GMT  
+		Size: 19.0 KB (19039 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:27` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:2e0b9aa4694ca7fdc65f6c0b85d52b58ddc962c05cd6282544633a41be56e2ea
+$ docker pull erlang@sha256:b05f3cc504085043031221c9bdd5efa5c5e718e0b1da61215868afb82e1b79e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **580.5 MB (580470399 bytes)**  
+-	Total Size: **580.5 MB (580526630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e2cb1f93e0aaff31d443c6caa51545b0be3f8a8c9ed3fdbbd20568c87ebcdc6`
+-	Image ID: `sha256:92c319489ed98980c093855b9eeeebd34a0aabb456c0de15bca2a025f003a03d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -14438,56 +14438,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ce67b34b18a9e1921cda086baa68d8a3a44dbc618f8079d74afbf26adcd1e4`  
-		Last Modified: Thu, 14 Aug 2025 07:41:49 GMT  
-		Size: 261.3 MB (261349381 bytes)  
+	-	`sha256:3ab070ce0b99d426f280316357ae9170ec18c7423297e88880f7cc7c043832a7`  
+		Last Modified: Tue, 09 Sep 2025 23:47:57 GMT  
+		Size: 261.4 MB (261386367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7509376e82a27e0f9f6b797ad5db1fa7b7503978bf825f83fbb41f39093b35bd`  
-		Last Modified: Wed, 13 Aug 2025 18:34:57 GMT  
-		Size: 195.7 KB (195683 bytes)  
+	-	`sha256:732f1cb1772c4a796d6549acd13a57503dd9d6d395e877db58c86d062d291426`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 195.7 KB (195710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448b09e3542ceacb35bed2c10653c5eeea031c34239fac8fba55beb8d3880b27`  
-		Last Modified: Wed, 13 Aug 2025 18:34:58 GMT  
-		Size: 822.5 KB (822490 bytes)  
+	-	`sha256:18c47408dceb65b33d11383b0ae7be711a312ff94358b11ad87ce4a29875ac6e`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 822.5 KB (822493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:511876bd75aab9c6498cd4650b556e681afaf9fd01d655ba4702d7dc8fcf3a63
+$ docker pull erlang@sha256:6f84106ec8124135ea559aa9f53a0f2d998824a0d3bf298d827d8f90aacf1886
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23716586 bytes)**  
+-	Total Size: **23.7 MB (23723705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae1734fc1d4ea9c95649664775733914e93b9ecf809efe2f44c49e621aa41f44`
+-	Image ID: `sha256:b790683424e4503e48f5010896e58a6271a4de524ea0fa65f34afc7f02475535`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c31d48521c27843748bc934ee6a803c84fba81a5bb7ac93193d9a09261311ccc`  
-		Last Modified: Wed, 13 Aug 2025 19:49:28 GMT  
-		Size: 23.7 MB (23697595 bytes)  
+	-	`sha256:948d4830d1508d91ae9e1fc28a0198205a0c5e22204b7d31d16ada7b4fee91e3`  
+		Last Modified: Wed, 10 Sep 2025 01:49:39 GMT  
+		Size: 23.7 MB (23704714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:94272ad989939da56f3a0eef53ca558a4b3e2d0f0cf5dbebc352ce1f5d964997`  
-		Last Modified: Wed, 13 Aug 2025 19:49:30 GMT  
+	-	`sha256:bc2bc6ecdd9011bf9b7965c6e9ee8cbbdb0f7e82a71e011dcc0ce53cccd83eda`  
+		Last Modified: Wed, 10 Sep 2025 01:49:40 GMT  
 		Size: 19.0 KB (18991 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15374,7 +15374,7 @@ $ docker pull erlang@sha256:ef51ad5293ef2dbc835480c1edb28da9cdd20369a156a90b34ff
 ## `erlang:27.3`
 
 ```console
-$ docker pull erlang@sha256:b5a6db627304b5859179fbcd1846040dae9fbbe8c45206ccf9ff6e32332f226f
+$ docker pull erlang@sha256:e69d9ecab7750e1672af615d5912aab76c47609e096ee5b86d807f269e2f2449
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15941,18 +15941,18 @@ $ docker pull erlang@sha256:6b8409bf79bd104ad7af6cd8b30e6ece110d8dbbee7dc4c54951
 ### `erlang:27.3` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:c9c6e591583021b181b28486133537cf257a4d060d14114f73b5ce5e0e27dcb4
+$ docker pull erlang@sha256:0e743daed6ead1f3d1e5d20d5cf75fd75351aa91883dc1be3d0fdf0a8e2eb148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **627.6 MB (627594016 bytes)**  
+-	Total Size: **627.6 MB (627615616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe40007e02b6063d4d01d36abe6b4131470272610e02829d0dceb7d24a84400`
+-	Image ID: `sha256:17edc6eff2b8843e8b88f93ae5a99148b46a3736384eb8566a03d3974ac3df88`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -15976,74 +15976,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:702536ea46e3391a2fce1a77db3089fe59579287e0c0509eb0e692a28d4cc1ac`  
-		Last Modified: Thu, 14 Aug 2025 21:08:26 GMT  
-		Size: 264.3 MB (264288733 bytes)  
+	-	`sha256:92611a9228a684be9e83af19bd67c990a58e5d7febf10a2a5f1724c83fa99e16`  
+		Last Modified: Tue, 09 Sep 2025 23:08:42 GMT  
+		Size: 264.3 MB (264294032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52971769160ceed5af891cc20e79df56ab18a7ee1ea96b5fd11c9e99f3a10243`  
-		Last Modified: Thu, 14 Aug 2025 08:17:10 GMT  
-		Size: 195.7 KB (195680 bytes)  
+	-	`sha256:92dfd7868319e3d768f2814aa201b19ad7de865cc7e30bef3379a4038cae3de0`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
+		Size: 195.7 KB (195689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6b625a001912db662545f24b536a274df2456dadba48246b8ab68fe3825c31`  
-		Last Modified: Thu, 14 Aug 2025 08:17:18 GMT  
+	-	`sha256:32b5b6a049500b2b7a36af462a3ec5302995b1fd60294d4b2cc9b7d23f06dead`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
 		Size: 822.5 KB (822492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27.3` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:4ced2ed6dafd05af4012b0f1c4a91f1c67001f143d927b001a05e0504582002e
+$ docker pull erlang@sha256:542ac5841581db2a53d99a65c25e4db4a79b96eada01473ab01ca8c8b068ff58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23904872 bytes)**  
+-	Total Size: **23.9 MB (23912002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fe7aaabe8afbdc3b08399c25c7e499f990cd2552677f8a2d07028b2dbda2629`
+-	Image ID: `sha256:6f14f0406c997358a79208299a1c115550c8289e8c621a41825641b732f5089c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:baac8bfc8c0df508e644de27427cfc0b61e31b4aec776da706f93eb9171d15b7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:42 GMT  
-		Size: 23.9 MB (23885834 bytes)  
+	-	`sha256:5ae23dffe502ea38543e1999c5e666970c900ca4fd1553c013ddb9f66d8eb5f6`  
+		Last Modified: Wed, 10 Sep 2025 01:49:03 GMT  
+		Size: 23.9 MB (23892963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adb95f6f0bb06d19c9e16222742ea61d4551dcb2bb2079ce440b2e52fe7e3def`  
-		Last Modified: Thu, 14 Aug 2025 10:48:43 GMT  
-		Size: 19.0 KB (19038 bytes)  
+	-	`sha256:d8bbab23af5c9c15e657d2f954cdaafbadea388eddde3bbbc8288146c83cd2ac`  
+		Last Modified: Wed, 10 Sep 2025 01:49:04 GMT  
+		Size: 19.0 KB (19039 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:27.3` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:2e0b9aa4694ca7fdc65f6c0b85d52b58ddc962c05cd6282544633a41be56e2ea
+$ docker pull erlang@sha256:b05f3cc504085043031221c9bdd5efa5c5e718e0b1da61215868afb82e1b79e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **580.5 MB (580470399 bytes)**  
+-	Total Size: **580.5 MB (580526630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e2cb1f93e0aaff31d443c6caa51545b0be3f8a8c9ed3fdbbd20568c87ebcdc6`
+-	Image ID: `sha256:92c319489ed98980c093855b9eeeebd34a0aabb456c0de15bca2a025f003a03d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -16067,56 +16067,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ce67b34b18a9e1921cda086baa68d8a3a44dbc618f8079d74afbf26adcd1e4`  
-		Last Modified: Thu, 14 Aug 2025 07:41:49 GMT  
-		Size: 261.3 MB (261349381 bytes)  
+	-	`sha256:3ab070ce0b99d426f280316357ae9170ec18c7423297e88880f7cc7c043832a7`  
+		Last Modified: Tue, 09 Sep 2025 23:47:57 GMT  
+		Size: 261.4 MB (261386367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7509376e82a27e0f9f6b797ad5db1fa7b7503978bf825f83fbb41f39093b35bd`  
-		Last Modified: Wed, 13 Aug 2025 18:34:57 GMT  
-		Size: 195.7 KB (195683 bytes)  
+	-	`sha256:732f1cb1772c4a796d6549acd13a57503dd9d6d395e877db58c86d062d291426`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 195.7 KB (195710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448b09e3542ceacb35bed2c10653c5eeea031c34239fac8fba55beb8d3880b27`  
-		Last Modified: Wed, 13 Aug 2025 18:34:58 GMT  
-		Size: 822.5 KB (822490 bytes)  
+	-	`sha256:18c47408dceb65b33d11383b0ae7be711a312ff94358b11ad87ce4a29875ac6e`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 822.5 KB (822493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27.3` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:511876bd75aab9c6498cd4650b556e681afaf9fd01d655ba4702d7dc8fcf3a63
+$ docker pull erlang@sha256:6f84106ec8124135ea559aa9f53a0f2d998824a0d3bf298d827d8f90aacf1886
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23716586 bytes)**  
+-	Total Size: **23.7 MB (23723705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae1734fc1d4ea9c95649664775733914e93b9ecf809efe2f44c49e621aa41f44`
+-	Image ID: `sha256:b790683424e4503e48f5010896e58a6271a4de524ea0fa65f34afc7f02475535`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c31d48521c27843748bc934ee6a803c84fba81a5bb7ac93193d9a09261311ccc`  
-		Last Modified: Wed, 13 Aug 2025 19:49:28 GMT  
-		Size: 23.7 MB (23697595 bytes)  
+	-	`sha256:948d4830d1508d91ae9e1fc28a0198205a0c5e22204b7d31d16ada7b4fee91e3`  
+		Last Modified: Wed, 10 Sep 2025 01:49:39 GMT  
+		Size: 23.7 MB (23704714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:94272ad989939da56f3a0eef53ca558a4b3e2d0f0cf5dbebc352ce1f5d964997`  
-		Last Modified: Wed, 13 Aug 2025 19:49:30 GMT  
+	-	`sha256:bc2bc6ecdd9011bf9b7965c6e9ee8cbbdb0f7e82a71e011dcc0ce53cccd83eda`  
+		Last Modified: Wed, 10 Sep 2025 01:49:40 GMT  
 		Size: 19.0 KB (18991 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17003,7 +17003,7 @@ $ docker pull erlang@sha256:ef51ad5293ef2dbc835480c1edb28da9cdd20369a156a90b34ff
 ## `erlang:27.3.4`
 
 ```console
-$ docker pull erlang@sha256:b5a6db627304b5859179fbcd1846040dae9fbbe8c45206ccf9ff6e32332f226f
+$ docker pull erlang@sha256:e69d9ecab7750e1672af615d5912aab76c47609e096ee5b86d807f269e2f2449
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17570,18 +17570,18 @@ $ docker pull erlang@sha256:6b8409bf79bd104ad7af6cd8b30e6ece110d8dbbee7dc4c54951
 ### `erlang:27.3.4` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:c9c6e591583021b181b28486133537cf257a4d060d14114f73b5ce5e0e27dcb4
+$ docker pull erlang@sha256:0e743daed6ead1f3d1e5d20d5cf75fd75351aa91883dc1be3d0fdf0a8e2eb148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **627.6 MB (627594016 bytes)**  
+-	Total Size: **627.6 MB (627615616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe40007e02b6063d4d01d36abe6b4131470272610e02829d0dceb7d24a84400`
+-	Image ID: `sha256:17edc6eff2b8843e8b88f93ae5a99148b46a3736384eb8566a03d3974ac3df88`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -17605,74 +17605,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:702536ea46e3391a2fce1a77db3089fe59579287e0c0509eb0e692a28d4cc1ac`  
-		Last Modified: Thu, 14 Aug 2025 21:08:26 GMT  
-		Size: 264.3 MB (264288733 bytes)  
+	-	`sha256:92611a9228a684be9e83af19bd67c990a58e5d7febf10a2a5f1724c83fa99e16`  
+		Last Modified: Tue, 09 Sep 2025 23:08:42 GMT  
+		Size: 264.3 MB (264294032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52971769160ceed5af891cc20e79df56ab18a7ee1ea96b5fd11c9e99f3a10243`  
-		Last Modified: Thu, 14 Aug 2025 08:17:10 GMT  
-		Size: 195.7 KB (195680 bytes)  
+	-	`sha256:92dfd7868319e3d768f2814aa201b19ad7de865cc7e30bef3379a4038cae3de0`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
+		Size: 195.7 KB (195689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6b625a001912db662545f24b536a274df2456dadba48246b8ab68fe3825c31`  
-		Last Modified: Thu, 14 Aug 2025 08:17:18 GMT  
+	-	`sha256:32b5b6a049500b2b7a36af462a3ec5302995b1fd60294d4b2cc9b7d23f06dead`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
 		Size: 822.5 KB (822492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27.3.4` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:4ced2ed6dafd05af4012b0f1c4a91f1c67001f143d927b001a05e0504582002e
+$ docker pull erlang@sha256:542ac5841581db2a53d99a65c25e4db4a79b96eada01473ab01ca8c8b068ff58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23904872 bytes)**  
+-	Total Size: **23.9 MB (23912002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fe7aaabe8afbdc3b08399c25c7e499f990cd2552677f8a2d07028b2dbda2629`
+-	Image ID: `sha256:6f14f0406c997358a79208299a1c115550c8289e8c621a41825641b732f5089c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:baac8bfc8c0df508e644de27427cfc0b61e31b4aec776da706f93eb9171d15b7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:42 GMT  
-		Size: 23.9 MB (23885834 bytes)  
+	-	`sha256:5ae23dffe502ea38543e1999c5e666970c900ca4fd1553c013ddb9f66d8eb5f6`  
+		Last Modified: Wed, 10 Sep 2025 01:49:03 GMT  
+		Size: 23.9 MB (23892963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adb95f6f0bb06d19c9e16222742ea61d4551dcb2bb2079ce440b2e52fe7e3def`  
-		Last Modified: Thu, 14 Aug 2025 10:48:43 GMT  
-		Size: 19.0 KB (19038 bytes)  
+	-	`sha256:d8bbab23af5c9c15e657d2f954cdaafbadea388eddde3bbbc8288146c83cd2ac`  
+		Last Modified: Wed, 10 Sep 2025 01:49:04 GMT  
+		Size: 19.0 KB (19039 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:27.3.4` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:2e0b9aa4694ca7fdc65f6c0b85d52b58ddc962c05cd6282544633a41be56e2ea
+$ docker pull erlang@sha256:b05f3cc504085043031221c9bdd5efa5c5e718e0b1da61215868afb82e1b79e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **580.5 MB (580470399 bytes)**  
+-	Total Size: **580.5 MB (580526630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e2cb1f93e0aaff31d443c6caa51545b0be3f8a8c9ed3fdbbd20568c87ebcdc6`
+-	Image ID: `sha256:92c319489ed98980c093855b9eeeebd34a0aabb456c0de15bca2a025f003a03d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -17696,56 +17696,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ce67b34b18a9e1921cda086baa68d8a3a44dbc618f8079d74afbf26adcd1e4`  
-		Last Modified: Thu, 14 Aug 2025 07:41:49 GMT  
-		Size: 261.3 MB (261349381 bytes)  
+	-	`sha256:3ab070ce0b99d426f280316357ae9170ec18c7423297e88880f7cc7c043832a7`  
+		Last Modified: Tue, 09 Sep 2025 23:47:57 GMT  
+		Size: 261.4 MB (261386367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7509376e82a27e0f9f6b797ad5db1fa7b7503978bf825f83fbb41f39093b35bd`  
-		Last Modified: Wed, 13 Aug 2025 18:34:57 GMT  
-		Size: 195.7 KB (195683 bytes)  
+	-	`sha256:732f1cb1772c4a796d6549acd13a57503dd9d6d395e877db58c86d062d291426`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 195.7 KB (195710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448b09e3542ceacb35bed2c10653c5eeea031c34239fac8fba55beb8d3880b27`  
-		Last Modified: Wed, 13 Aug 2025 18:34:58 GMT  
-		Size: 822.5 KB (822490 bytes)  
+	-	`sha256:18c47408dceb65b33d11383b0ae7be711a312ff94358b11ad87ce4a29875ac6e`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 822.5 KB (822493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27.3.4` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:511876bd75aab9c6498cd4650b556e681afaf9fd01d655ba4702d7dc8fcf3a63
+$ docker pull erlang@sha256:6f84106ec8124135ea559aa9f53a0f2d998824a0d3bf298d827d8f90aacf1886
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23716586 bytes)**  
+-	Total Size: **23.7 MB (23723705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae1734fc1d4ea9c95649664775733914e93b9ecf809efe2f44c49e621aa41f44`
+-	Image ID: `sha256:b790683424e4503e48f5010896e58a6271a4de524ea0fa65f34afc7f02475535`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c31d48521c27843748bc934ee6a803c84fba81a5bb7ac93193d9a09261311ccc`  
-		Last Modified: Wed, 13 Aug 2025 19:49:28 GMT  
-		Size: 23.7 MB (23697595 bytes)  
+	-	`sha256:948d4830d1508d91ae9e1fc28a0198205a0c5e22204b7d31d16ada7b4fee91e3`  
+		Last Modified: Wed, 10 Sep 2025 01:49:39 GMT  
+		Size: 23.7 MB (23704714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:94272ad989939da56f3a0eef53ca558a4b3e2d0f0cf5dbebc352ce1f5d964997`  
-		Last Modified: Wed, 13 Aug 2025 19:49:30 GMT  
+	-	`sha256:bc2bc6ecdd9011bf9b7965c6e9ee8cbbdb0f7e82a71e011dcc0ce53cccd83eda`  
+		Last Modified: Wed, 10 Sep 2025 01:49:40 GMT  
 		Size: 19.0 KB (18991 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18632,7 +18632,7 @@ $ docker pull erlang@sha256:ef51ad5293ef2dbc835480c1edb28da9cdd20369a156a90b34ff
 ## `erlang:27.3.4.2`
 
 ```console
-$ docker pull erlang@sha256:b5a6db627304b5859179fbcd1846040dae9fbbe8c45206ccf9ff6e32332f226f
+$ docker pull erlang@sha256:e69d9ecab7750e1672af615d5912aab76c47609e096ee5b86d807f269e2f2449
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19199,18 +19199,18 @@ $ docker pull erlang@sha256:6b8409bf79bd104ad7af6cd8b30e6ece110d8dbbee7dc4c54951
 ### `erlang:27.3.4.2` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:c9c6e591583021b181b28486133537cf257a4d060d14114f73b5ce5e0e27dcb4
+$ docker pull erlang@sha256:0e743daed6ead1f3d1e5d20d5cf75fd75351aa91883dc1be3d0fdf0a8e2eb148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **627.6 MB (627594016 bytes)**  
+-	Total Size: **627.6 MB (627615616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe40007e02b6063d4d01d36abe6b4131470272610e02829d0dceb7d24a84400`
+-	Image ID: `sha256:17edc6eff2b8843e8b88f93ae5a99148b46a3736384eb8566a03d3974ac3df88`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -19234,74 +19234,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:702536ea46e3391a2fce1a77db3089fe59579287e0c0509eb0e692a28d4cc1ac`  
-		Last Modified: Thu, 14 Aug 2025 21:08:26 GMT  
-		Size: 264.3 MB (264288733 bytes)  
+	-	`sha256:92611a9228a684be9e83af19bd67c990a58e5d7febf10a2a5f1724c83fa99e16`  
+		Last Modified: Tue, 09 Sep 2025 23:08:42 GMT  
+		Size: 264.3 MB (264294032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52971769160ceed5af891cc20e79df56ab18a7ee1ea96b5fd11c9e99f3a10243`  
-		Last Modified: Thu, 14 Aug 2025 08:17:10 GMT  
-		Size: 195.7 KB (195680 bytes)  
+	-	`sha256:92dfd7868319e3d768f2814aa201b19ad7de865cc7e30bef3379a4038cae3de0`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
+		Size: 195.7 KB (195689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6b625a001912db662545f24b536a274df2456dadba48246b8ab68fe3825c31`  
-		Last Modified: Thu, 14 Aug 2025 08:17:18 GMT  
+	-	`sha256:32b5b6a049500b2b7a36af462a3ec5302995b1fd60294d4b2cc9b7d23f06dead`  
+		Last Modified: Tue, 09 Sep 2025 22:55:41 GMT  
 		Size: 822.5 KB (822492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27.3.4.2` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:4ced2ed6dafd05af4012b0f1c4a91f1c67001f143d927b001a05e0504582002e
+$ docker pull erlang@sha256:542ac5841581db2a53d99a65c25e4db4a79b96eada01473ab01ca8c8b068ff58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23904872 bytes)**  
+-	Total Size: **23.9 MB (23912002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fe7aaabe8afbdc3b08399c25c7e499f990cd2552677f8a2d07028b2dbda2629`
+-	Image ID: `sha256:6f14f0406c997358a79208299a1c115550c8289e8c621a41825641b732f5089c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:baac8bfc8c0df508e644de27427cfc0b61e31b4aec776da706f93eb9171d15b7`  
-		Last Modified: Thu, 14 Aug 2025 10:48:42 GMT  
-		Size: 23.9 MB (23885834 bytes)  
+	-	`sha256:5ae23dffe502ea38543e1999c5e666970c900ca4fd1553c013ddb9f66d8eb5f6`  
+		Last Modified: Wed, 10 Sep 2025 01:49:03 GMT  
+		Size: 23.9 MB (23892963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adb95f6f0bb06d19c9e16222742ea61d4551dcb2bb2079ce440b2e52fe7e3def`  
-		Last Modified: Thu, 14 Aug 2025 10:48:43 GMT  
-		Size: 19.0 KB (19038 bytes)  
+	-	`sha256:d8bbab23af5c9c15e657d2f954cdaafbadea388eddde3bbbc8288146c83cd2ac`  
+		Last Modified: Wed, 10 Sep 2025 01:49:04 GMT  
+		Size: 19.0 KB (19039 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:27.3.4.2` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:2e0b9aa4694ca7fdc65f6c0b85d52b58ddc962c05cd6282544633a41be56e2ea
+$ docker pull erlang@sha256:b05f3cc504085043031221c9bdd5efa5c5e718e0b1da61215868afb82e1b79e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **580.5 MB (580470399 bytes)**  
+-	Total Size: **580.5 MB (580526630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e2cb1f93e0aaff31d443c6caa51545b0be3f8a8c9ed3fdbbd20568c87ebcdc6`
+-	Image ID: `sha256:92c319489ed98980c093855b9eeeebd34a0aabb456c0de15bca2a025f003a03d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -19325,56 +19325,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8ce67b34b18a9e1921cda086baa68d8a3a44dbc618f8079d74afbf26adcd1e4`  
-		Last Modified: Thu, 14 Aug 2025 07:41:49 GMT  
-		Size: 261.3 MB (261349381 bytes)  
+	-	`sha256:3ab070ce0b99d426f280316357ae9170ec18c7423297e88880f7cc7c043832a7`  
+		Last Modified: Tue, 09 Sep 2025 23:47:57 GMT  
+		Size: 261.4 MB (261386367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7509376e82a27e0f9f6b797ad5db1fa7b7503978bf825f83fbb41f39093b35bd`  
-		Last Modified: Wed, 13 Aug 2025 18:34:57 GMT  
-		Size: 195.7 KB (195683 bytes)  
+	-	`sha256:732f1cb1772c4a796d6549acd13a57503dd9d6d395e877db58c86d062d291426`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 195.7 KB (195710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:448b09e3542ceacb35bed2c10653c5eeea031c34239fac8fba55beb8d3880b27`  
-		Last Modified: Wed, 13 Aug 2025 18:34:58 GMT  
-		Size: 822.5 KB (822490 bytes)  
+	-	`sha256:18c47408dceb65b33d11383b0ae7be711a312ff94358b11ad87ce4a29875ac6e`  
+		Last Modified: Wed, 10 Sep 2025 00:21:04 GMT  
+		Size: 822.5 KB (822493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:27.3.4.2` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:511876bd75aab9c6498cd4650b556e681afaf9fd01d655ba4702d7dc8fcf3a63
+$ docker pull erlang@sha256:6f84106ec8124135ea559aa9f53a0f2d998824a0d3bf298d827d8f90aacf1886
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23716586 bytes)**  
+-	Total Size: **23.7 MB (23723705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae1734fc1d4ea9c95649664775733914e93b9ecf809efe2f44c49e621aa41f44`
+-	Image ID: `sha256:b790683424e4503e48f5010896e58a6271a4de524ea0fa65f34afc7f02475535`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c31d48521c27843748bc934ee6a803c84fba81a5bb7ac93193d9a09261311ccc`  
-		Last Modified: Wed, 13 Aug 2025 19:49:28 GMT  
-		Size: 23.7 MB (23697595 bytes)  
+	-	`sha256:948d4830d1508d91ae9e1fc28a0198205a0c5e22204b7d31d16ada7b4fee91e3`  
+		Last Modified: Wed, 10 Sep 2025 01:49:39 GMT  
+		Size: 23.7 MB (23704714 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:94272ad989939da56f3a0eef53ca558a4b3e2d0f0cf5dbebc352ce1f5d964997`  
-		Last Modified: Wed, 13 Aug 2025 19:49:30 GMT  
+	-	`sha256:bc2bc6ecdd9011bf9b7965c6e9ee8cbbdb0f7e82a71e011dcc0ce53cccd83eda`  
+		Last Modified: Wed, 10 Sep 2025 01:49:40 GMT  
 		Size: 19.0 KB (18991 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20261,7 +20261,7 @@ $ docker pull erlang@sha256:ef51ad5293ef2dbc835480c1edb28da9cdd20369a156a90b34ff
 ## `erlang:28`
 
 ```console
-$ docker pull erlang@sha256:49d3b56485bc89a3e2c6e9010250f475030f5aef3e6124f5b1a88664cd086cb7
+$ docker pull erlang@sha256:bf9213a78489130ebb37e2553a77bfaaa1d40eddfe4510889c3c8efefadeb8f3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20828,18 +20828,18 @@ $ docker pull erlang@sha256:977c3b77a1e28c8956a7fb1083ba1a6a899f5a485d50036880dc
 ### `erlang:28` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:ce9e1f444aa276849b1dbe0a723e92f3ea8273107538e48a480da12889e472c1
+$ docker pull erlang@sha256:6eaad85a226103a5e2348fde456f91227d3a5bfbc1ad23cd2459e113363f8db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **632.0 MB (631978129 bytes)**  
+-	Total Size: **632.0 MB (631986801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:477778c9a448685bb48ab04eff6d690b1ac23dcbbc3bc1f13800332b4bcb5c43`
+-	Image ID: `sha256:66c034e023f650f739709bbb58af2969c1593257d72ae9a25b4d502d202e0870`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -20863,74 +20863,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f56fd7e47b9765fcee6ac3f3fd8842798d5dc90944205ae864d53f3c6ee4da1`  
-		Last Modified: Thu, 14 Aug 2025 16:14:55 GMT  
-		Size: 268.7 MB (268681759 bytes)  
+	-	`sha256:ef9a05f5db59d08e87d33f43bc8a34ba1cc66769fae7e32ee28727c7cad5ffea`  
+		Last Modified: Tue, 09 Sep 2025 22:48:17 GMT  
+		Size: 268.7 MB (268674178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ee251a03247becc9fdc25e6288907683aaf8659a1c391cefae55ede581bce1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:49 GMT  
-		Size: 191.5 KB (191508 bytes)  
+	-	`sha256:7ed7b517ee80f187009f4ab4d3e490b9b5163ab4de73bae00deed8326796101a`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 191.5 KB (191468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e999ff351ed22a5eccb4bc0a98e68485dffa794d30251bcbc78879edc3bcf1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:45 GMT  
-		Size: 817.8 KB (817751 bytes)  
+	-	`sha256:75da773e69eeb535cb4c50be86fb2a0a566ac19cdd77148107b0847b306ab420`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 817.8 KB (817752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:2dd4098c222beeaf971ef3ba2bbfd5c6f893fb55834846fa4ecee682a462c787
+$ docker pull erlang@sha256:16c037ad87b4e92d54f4d432b4361f81dbf95ddc1b04bfff023a2bb0f42ac1c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23905329 bytes)**  
+-	Total Size: **23.9 MB (23912458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ec388741ef0f9855854ed261fbcb495867ffffb263d1656146f85286cbbe71a`
+-	Image ID: `sha256:43dfeaba899626c3326a819a98faecc7106fc77d5f82c81bedb5ff6872672889`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:de8d32753e69b5cf9f3e3fd75bccc236e8714c47f2b33250ffe7953e3fe4055a`  
-		Last Modified: Thu, 14 Aug 2025 10:49:06 GMT  
-		Size: 23.9 MB (23885996 bytes)  
+	-	`sha256:df2e8f9d924f461c4ce67bf50b8d859974a434febea342519ce5fabd8621e59f`  
+		Last Modified: Wed, 10 Sep 2025 01:49:25 GMT  
+		Size: 23.9 MB (23893125 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3fb944cd18a5b955d28884e576caac6947033523c8936489b0514bd1c204f5aa`  
-		Last Modified: Thu, 14 Aug 2025 10:49:07 GMT  
+	-	`sha256:5d20137165e715771003fd8ec188cf8da70534bdd8f07861b2842be78a538155`  
+		Last Modified: Wed, 10 Sep 2025 01:49:26 GMT  
 		Size: 19.3 KB (19333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:28` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:0f0862220399cbb96f82304bac7091333f33707e3cbfb7a72a189b1ce55244ce
+$ docker pull erlang@sha256:b6cec4b61449bb1a1ca653be3d401f5baf948ac448e648a7965d1cb46ba25176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **584.8 MB (584814623 bytes)**  
+-	Total Size: **584.8 MB (584838729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ca744f4fb9bee6d7ba3321aaff5745193d185e5633e1b0b8801989d379de39`
+-	Image ID: `sha256:577247993faaba14ddad5bb7f38dcd65d6bfb64caaf79cff54924e9ed0a689bd`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -20954,56 +20954,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c262224cd87ab2ac636472c51660d7f5938e8051de0533b0c88b56b6cfb5f3dd`  
-		Last Modified: Wed, 13 Aug 2025 19:43:13 GMT  
-		Size: 265.7 MB (265702558 bytes)  
+	-	`sha256:ecf766747f20b3d9976cc0fad036a448ad51689d77e65acbb7ce2a69b6c54239`  
+		Last Modified: Wed, 10 Sep 2025 00:07:39 GMT  
+		Size: 265.7 MB (265707453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53ffa0baff9efd717a70dff5762701119943eae85f5b8d0288b964b7e94480c9`  
-		Last Modified: Wed, 13 Aug 2025 18:28:47 GMT  
-		Size: 191.5 KB (191469 bytes)  
+	-	`sha256:e048654ef2bbfbea6f4c1f9f68b6bae04b8ac351aa154ebce08835626cc2a3b5`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
+		Size: 191.5 KB (191465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ad9a531dc37476560b581384ffd7149b30ba65f07114f3c27505e7b1c37f4c`  
-		Last Modified: Wed, 13 Aug 2025 18:28:49 GMT  
+	-	`sha256:1599910e24ac931162bd040fd778c83967ae01d3b110aac27e971a0683ac1baf`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
 		Size: 817.8 KB (817751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:761808bee044faa1d968d5307ca9e1b696dff29392f089fb66cf05cc636a4d6e
+$ docker pull erlang@sha256:9f889bce74685399a467a59062987d00235b44e907e3511e01a6129d0b12b12f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23717030 bytes)**  
+-	Total Size: **23.7 MB (23724149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bcf3007b8762228f4ebf589f4f705c89ef1ae69e43c7a6a1f26e401af629834`
+-	Image ID: `sha256:163b72decbb4037b3adaab2436b3538c3ecf2ead0145cb49afa52754bff5ffbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11f08d34e54a7adf00253b1fec48fbd68a8dee8231d7f0df1d6dcfdba35d8ada`  
-		Last Modified: Wed, 13 Aug 2025 19:49:45 GMT  
-		Size: 23.7 MB (23697751 bytes)  
+	-	`sha256:be8efeb0ef3ce038f971f1b02e4eabc7aa3aaee473411a4f67a2e9af712712a7`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
+		Size: 23.7 MB (23704870 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2abb514bfda472348ace21090ea25758377dd758bbf7a30f4b5d71b5bb8180cf`  
-		Last Modified: Wed, 13 Aug 2025 19:49:46 GMT  
+	-	`sha256:1e21e8a6428ac33e600e50be1906702cd2b1789f22b98a0bc048293937bfcad9`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
 		Size: 19.3 KB (19279 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21890,7 +21890,7 @@ $ docker pull erlang@sha256:cdb50027b0799fce6f2e84ff257f8754c5c58bc24db1bf5d8250
 ## `erlang:28.0`
 
 ```console
-$ docker pull erlang@sha256:49d3b56485bc89a3e2c6e9010250f475030f5aef3e6124f5b1a88664cd086cb7
+$ docker pull erlang@sha256:bf9213a78489130ebb37e2553a77bfaaa1d40eddfe4510889c3c8efefadeb8f3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22457,18 +22457,18 @@ $ docker pull erlang@sha256:977c3b77a1e28c8956a7fb1083ba1a6a899f5a485d50036880dc
 ### `erlang:28.0` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:ce9e1f444aa276849b1dbe0a723e92f3ea8273107538e48a480da12889e472c1
+$ docker pull erlang@sha256:6eaad85a226103a5e2348fde456f91227d3a5bfbc1ad23cd2459e113363f8db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **632.0 MB (631978129 bytes)**  
+-	Total Size: **632.0 MB (631986801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:477778c9a448685bb48ab04eff6d690b1ac23dcbbc3bc1f13800332b4bcb5c43`
+-	Image ID: `sha256:66c034e023f650f739709bbb58af2969c1593257d72ae9a25b4d502d202e0870`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -22492,74 +22492,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f56fd7e47b9765fcee6ac3f3fd8842798d5dc90944205ae864d53f3c6ee4da1`  
-		Last Modified: Thu, 14 Aug 2025 16:14:55 GMT  
-		Size: 268.7 MB (268681759 bytes)  
+	-	`sha256:ef9a05f5db59d08e87d33f43bc8a34ba1cc66769fae7e32ee28727c7cad5ffea`  
+		Last Modified: Tue, 09 Sep 2025 22:48:17 GMT  
+		Size: 268.7 MB (268674178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ee251a03247becc9fdc25e6288907683aaf8659a1c391cefae55ede581bce1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:49 GMT  
-		Size: 191.5 KB (191508 bytes)  
+	-	`sha256:7ed7b517ee80f187009f4ab4d3e490b9b5163ab4de73bae00deed8326796101a`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 191.5 KB (191468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e999ff351ed22a5eccb4bc0a98e68485dffa794d30251bcbc78879edc3bcf1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:45 GMT  
-		Size: 817.8 KB (817751 bytes)  
+	-	`sha256:75da773e69eeb535cb4c50be86fb2a0a566ac19cdd77148107b0847b306ab420`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 817.8 KB (817752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28.0` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:2dd4098c222beeaf971ef3ba2bbfd5c6f893fb55834846fa4ecee682a462c787
+$ docker pull erlang@sha256:16c037ad87b4e92d54f4d432b4361f81dbf95ddc1b04bfff023a2bb0f42ac1c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23905329 bytes)**  
+-	Total Size: **23.9 MB (23912458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ec388741ef0f9855854ed261fbcb495867ffffb263d1656146f85286cbbe71a`
+-	Image ID: `sha256:43dfeaba899626c3326a819a98faecc7106fc77d5f82c81bedb5ff6872672889`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:de8d32753e69b5cf9f3e3fd75bccc236e8714c47f2b33250ffe7953e3fe4055a`  
-		Last Modified: Thu, 14 Aug 2025 10:49:06 GMT  
-		Size: 23.9 MB (23885996 bytes)  
+	-	`sha256:df2e8f9d924f461c4ce67bf50b8d859974a434febea342519ce5fabd8621e59f`  
+		Last Modified: Wed, 10 Sep 2025 01:49:25 GMT  
+		Size: 23.9 MB (23893125 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3fb944cd18a5b955d28884e576caac6947033523c8936489b0514bd1c204f5aa`  
-		Last Modified: Thu, 14 Aug 2025 10:49:07 GMT  
+	-	`sha256:5d20137165e715771003fd8ec188cf8da70534bdd8f07861b2842be78a538155`  
+		Last Modified: Wed, 10 Sep 2025 01:49:26 GMT  
 		Size: 19.3 KB (19333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:28.0` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:0f0862220399cbb96f82304bac7091333f33707e3cbfb7a72a189b1ce55244ce
+$ docker pull erlang@sha256:b6cec4b61449bb1a1ca653be3d401f5baf948ac448e648a7965d1cb46ba25176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **584.8 MB (584814623 bytes)**  
+-	Total Size: **584.8 MB (584838729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ca744f4fb9bee6d7ba3321aaff5745193d185e5633e1b0b8801989d379de39`
+-	Image ID: `sha256:577247993faaba14ddad5bb7f38dcd65d6bfb64caaf79cff54924e9ed0a689bd`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -22583,56 +22583,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c262224cd87ab2ac636472c51660d7f5938e8051de0533b0c88b56b6cfb5f3dd`  
-		Last Modified: Wed, 13 Aug 2025 19:43:13 GMT  
-		Size: 265.7 MB (265702558 bytes)  
+	-	`sha256:ecf766747f20b3d9976cc0fad036a448ad51689d77e65acbb7ce2a69b6c54239`  
+		Last Modified: Wed, 10 Sep 2025 00:07:39 GMT  
+		Size: 265.7 MB (265707453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53ffa0baff9efd717a70dff5762701119943eae85f5b8d0288b964b7e94480c9`  
-		Last Modified: Wed, 13 Aug 2025 18:28:47 GMT  
-		Size: 191.5 KB (191469 bytes)  
+	-	`sha256:e048654ef2bbfbea6f4c1f9f68b6bae04b8ac351aa154ebce08835626cc2a3b5`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
+		Size: 191.5 KB (191465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ad9a531dc37476560b581384ffd7149b30ba65f07114f3c27505e7b1c37f4c`  
-		Last Modified: Wed, 13 Aug 2025 18:28:49 GMT  
+	-	`sha256:1599910e24ac931162bd040fd778c83967ae01d3b110aac27e971a0683ac1baf`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
 		Size: 817.8 KB (817751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28.0` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:761808bee044faa1d968d5307ca9e1b696dff29392f089fb66cf05cc636a4d6e
+$ docker pull erlang@sha256:9f889bce74685399a467a59062987d00235b44e907e3511e01a6129d0b12b12f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23717030 bytes)**  
+-	Total Size: **23.7 MB (23724149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bcf3007b8762228f4ebf589f4f705c89ef1ae69e43c7a6a1f26e401af629834`
+-	Image ID: `sha256:163b72decbb4037b3adaab2436b3538c3ecf2ead0145cb49afa52754bff5ffbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11f08d34e54a7adf00253b1fec48fbd68a8dee8231d7f0df1d6dcfdba35d8ada`  
-		Last Modified: Wed, 13 Aug 2025 19:49:45 GMT  
-		Size: 23.7 MB (23697751 bytes)  
+	-	`sha256:be8efeb0ef3ce038f971f1b02e4eabc7aa3aaee473411a4f67a2e9af712712a7`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
+		Size: 23.7 MB (23704870 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2abb514bfda472348ace21090ea25758377dd758bbf7a30f4b5d71b5bb8180cf`  
-		Last Modified: Wed, 13 Aug 2025 19:49:46 GMT  
+	-	`sha256:1e21e8a6428ac33e600e50be1906702cd2b1789f22b98a0bc048293937bfcad9`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
 		Size: 19.3 KB (19279 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23519,7 +23519,7 @@ $ docker pull erlang@sha256:cdb50027b0799fce6f2e84ff257f8754c5c58bc24db1bf5d8250
 ## `erlang:28.0.2`
 
 ```console
-$ docker pull erlang@sha256:49d3b56485bc89a3e2c6e9010250f475030f5aef3e6124f5b1a88664cd086cb7
+$ docker pull erlang@sha256:bf9213a78489130ebb37e2553a77bfaaa1d40eddfe4510889c3c8efefadeb8f3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24086,18 +24086,18 @@ $ docker pull erlang@sha256:977c3b77a1e28c8956a7fb1083ba1a6a899f5a485d50036880dc
 ### `erlang:28.0.2` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:ce9e1f444aa276849b1dbe0a723e92f3ea8273107538e48a480da12889e472c1
+$ docker pull erlang@sha256:6eaad85a226103a5e2348fde456f91227d3a5bfbc1ad23cd2459e113363f8db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **632.0 MB (631978129 bytes)**  
+-	Total Size: **632.0 MB (631986801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:477778c9a448685bb48ab04eff6d690b1ac23dcbbc3bc1f13800332b4bcb5c43`
+-	Image ID: `sha256:66c034e023f650f739709bbb58af2969c1593257d72ae9a25b4d502d202e0870`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -24121,74 +24121,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f56fd7e47b9765fcee6ac3f3fd8842798d5dc90944205ae864d53f3c6ee4da1`  
-		Last Modified: Thu, 14 Aug 2025 16:14:55 GMT  
-		Size: 268.7 MB (268681759 bytes)  
+	-	`sha256:ef9a05f5db59d08e87d33f43bc8a34ba1cc66769fae7e32ee28727c7cad5ffea`  
+		Last Modified: Tue, 09 Sep 2025 22:48:17 GMT  
+		Size: 268.7 MB (268674178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ee251a03247becc9fdc25e6288907683aaf8659a1c391cefae55ede581bce1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:49 GMT  
-		Size: 191.5 KB (191508 bytes)  
+	-	`sha256:7ed7b517ee80f187009f4ab4d3e490b9b5163ab4de73bae00deed8326796101a`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 191.5 KB (191468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e999ff351ed22a5eccb4bc0a98e68485dffa794d30251bcbc78879edc3bcf1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:45 GMT  
-		Size: 817.8 KB (817751 bytes)  
+	-	`sha256:75da773e69eeb535cb4c50be86fb2a0a566ac19cdd77148107b0847b306ab420`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 817.8 KB (817752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28.0.2` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:2dd4098c222beeaf971ef3ba2bbfd5c6f893fb55834846fa4ecee682a462c787
+$ docker pull erlang@sha256:16c037ad87b4e92d54f4d432b4361f81dbf95ddc1b04bfff023a2bb0f42ac1c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23905329 bytes)**  
+-	Total Size: **23.9 MB (23912458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ec388741ef0f9855854ed261fbcb495867ffffb263d1656146f85286cbbe71a`
+-	Image ID: `sha256:43dfeaba899626c3326a819a98faecc7106fc77d5f82c81bedb5ff6872672889`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:de8d32753e69b5cf9f3e3fd75bccc236e8714c47f2b33250ffe7953e3fe4055a`  
-		Last Modified: Thu, 14 Aug 2025 10:49:06 GMT  
-		Size: 23.9 MB (23885996 bytes)  
+	-	`sha256:df2e8f9d924f461c4ce67bf50b8d859974a434febea342519ce5fabd8621e59f`  
+		Last Modified: Wed, 10 Sep 2025 01:49:25 GMT  
+		Size: 23.9 MB (23893125 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3fb944cd18a5b955d28884e576caac6947033523c8936489b0514bd1c204f5aa`  
-		Last Modified: Thu, 14 Aug 2025 10:49:07 GMT  
+	-	`sha256:5d20137165e715771003fd8ec188cf8da70534bdd8f07861b2842be78a538155`  
+		Last Modified: Wed, 10 Sep 2025 01:49:26 GMT  
 		Size: 19.3 KB (19333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:28.0.2` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:0f0862220399cbb96f82304bac7091333f33707e3cbfb7a72a189b1ce55244ce
+$ docker pull erlang@sha256:b6cec4b61449bb1a1ca653be3d401f5baf948ac448e648a7965d1cb46ba25176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **584.8 MB (584814623 bytes)**  
+-	Total Size: **584.8 MB (584838729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ca744f4fb9bee6d7ba3321aaff5745193d185e5633e1b0b8801989d379de39`
+-	Image ID: `sha256:577247993faaba14ddad5bb7f38dcd65d6bfb64caaf79cff54924e9ed0a689bd`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -24212,56 +24212,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c262224cd87ab2ac636472c51660d7f5938e8051de0533b0c88b56b6cfb5f3dd`  
-		Last Modified: Wed, 13 Aug 2025 19:43:13 GMT  
-		Size: 265.7 MB (265702558 bytes)  
+	-	`sha256:ecf766747f20b3d9976cc0fad036a448ad51689d77e65acbb7ce2a69b6c54239`  
+		Last Modified: Wed, 10 Sep 2025 00:07:39 GMT  
+		Size: 265.7 MB (265707453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53ffa0baff9efd717a70dff5762701119943eae85f5b8d0288b964b7e94480c9`  
-		Last Modified: Wed, 13 Aug 2025 18:28:47 GMT  
-		Size: 191.5 KB (191469 bytes)  
+	-	`sha256:e048654ef2bbfbea6f4c1f9f68b6bae04b8ac351aa154ebce08835626cc2a3b5`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
+		Size: 191.5 KB (191465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ad9a531dc37476560b581384ffd7149b30ba65f07114f3c27505e7b1c37f4c`  
-		Last Modified: Wed, 13 Aug 2025 18:28:49 GMT  
+	-	`sha256:1599910e24ac931162bd040fd778c83967ae01d3b110aac27e971a0683ac1baf`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
 		Size: 817.8 KB (817751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28.0.2` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:761808bee044faa1d968d5307ca9e1b696dff29392f089fb66cf05cc636a4d6e
+$ docker pull erlang@sha256:9f889bce74685399a467a59062987d00235b44e907e3511e01a6129d0b12b12f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23717030 bytes)**  
+-	Total Size: **23.7 MB (23724149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bcf3007b8762228f4ebf589f4f705c89ef1ae69e43c7a6a1f26e401af629834`
+-	Image ID: `sha256:163b72decbb4037b3adaab2436b3538c3ecf2ead0145cb49afa52754bff5ffbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11f08d34e54a7adf00253b1fec48fbd68a8dee8231d7f0df1d6dcfdba35d8ada`  
-		Last Modified: Wed, 13 Aug 2025 19:49:45 GMT  
-		Size: 23.7 MB (23697751 bytes)  
+	-	`sha256:be8efeb0ef3ce038f971f1b02e4eabc7aa3aaee473411a4f67a2e9af712712a7`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
+		Size: 23.7 MB (23704870 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2abb514bfda472348ace21090ea25758377dd758bbf7a30f4b5d71b5bb8180cf`  
-		Last Modified: Wed, 13 Aug 2025 19:49:46 GMT  
+	-	`sha256:1e21e8a6428ac33e600e50be1906702cd2b1789f22b98a0bc048293937bfcad9`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
 		Size: 19.3 KB (19279 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25148,7 +25148,7 @@ $ docker pull erlang@sha256:cdb50027b0799fce6f2e84ff257f8754c5c58bc24db1bf5d8250
 ## `erlang:28.0.2.0`
 
 ```console
-$ docker pull erlang@sha256:49d3b56485bc89a3e2c6e9010250f475030f5aef3e6124f5b1a88664cd086cb7
+$ docker pull erlang@sha256:bf9213a78489130ebb37e2553a77bfaaa1d40eddfe4510889c3c8efefadeb8f3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25715,18 +25715,18 @@ $ docker pull erlang@sha256:977c3b77a1e28c8956a7fb1083ba1a6a899f5a485d50036880dc
 ### `erlang:28.0.2.0` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:ce9e1f444aa276849b1dbe0a723e92f3ea8273107538e48a480da12889e472c1
+$ docker pull erlang@sha256:6eaad85a226103a5e2348fde456f91227d3a5bfbc1ad23cd2459e113363f8db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **632.0 MB (631978129 bytes)**  
+-	Total Size: **632.0 MB (631986801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:477778c9a448685bb48ab04eff6d690b1ac23dcbbc3bc1f13800332b4bcb5c43`
+-	Image ID: `sha256:66c034e023f650f739709bbb58af2969c1593257d72ae9a25b4d502d202e0870`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -25750,74 +25750,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f56fd7e47b9765fcee6ac3f3fd8842798d5dc90944205ae864d53f3c6ee4da1`  
-		Last Modified: Thu, 14 Aug 2025 16:14:55 GMT  
-		Size: 268.7 MB (268681759 bytes)  
+	-	`sha256:ef9a05f5db59d08e87d33f43bc8a34ba1cc66769fae7e32ee28727c7cad5ffea`  
+		Last Modified: Tue, 09 Sep 2025 22:48:17 GMT  
+		Size: 268.7 MB (268674178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ee251a03247becc9fdc25e6288907683aaf8659a1c391cefae55ede581bce1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:49 GMT  
-		Size: 191.5 KB (191508 bytes)  
+	-	`sha256:7ed7b517ee80f187009f4ab4d3e490b9b5163ab4de73bae00deed8326796101a`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 191.5 KB (191468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e999ff351ed22a5eccb4bc0a98e68485dffa794d30251bcbc78879edc3bcf1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:45 GMT  
-		Size: 817.8 KB (817751 bytes)  
+	-	`sha256:75da773e69eeb535cb4c50be86fb2a0a566ac19cdd77148107b0847b306ab420`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 817.8 KB (817752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28.0.2.0` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:2dd4098c222beeaf971ef3ba2bbfd5c6f893fb55834846fa4ecee682a462c787
+$ docker pull erlang@sha256:16c037ad87b4e92d54f4d432b4361f81dbf95ddc1b04bfff023a2bb0f42ac1c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23905329 bytes)**  
+-	Total Size: **23.9 MB (23912458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ec388741ef0f9855854ed261fbcb495867ffffb263d1656146f85286cbbe71a`
+-	Image ID: `sha256:43dfeaba899626c3326a819a98faecc7106fc77d5f82c81bedb5ff6872672889`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:de8d32753e69b5cf9f3e3fd75bccc236e8714c47f2b33250ffe7953e3fe4055a`  
-		Last Modified: Thu, 14 Aug 2025 10:49:06 GMT  
-		Size: 23.9 MB (23885996 bytes)  
+	-	`sha256:df2e8f9d924f461c4ce67bf50b8d859974a434febea342519ce5fabd8621e59f`  
+		Last Modified: Wed, 10 Sep 2025 01:49:25 GMT  
+		Size: 23.9 MB (23893125 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3fb944cd18a5b955d28884e576caac6947033523c8936489b0514bd1c204f5aa`  
-		Last Modified: Thu, 14 Aug 2025 10:49:07 GMT  
+	-	`sha256:5d20137165e715771003fd8ec188cf8da70534bdd8f07861b2842be78a538155`  
+		Last Modified: Wed, 10 Sep 2025 01:49:26 GMT  
 		Size: 19.3 KB (19333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:28.0.2.0` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:0f0862220399cbb96f82304bac7091333f33707e3cbfb7a72a189b1ce55244ce
+$ docker pull erlang@sha256:b6cec4b61449bb1a1ca653be3d401f5baf948ac448e648a7965d1cb46ba25176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **584.8 MB (584814623 bytes)**  
+-	Total Size: **584.8 MB (584838729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ca744f4fb9bee6d7ba3321aaff5745193d185e5633e1b0b8801989d379de39`
+-	Image ID: `sha256:577247993faaba14ddad5bb7f38dcd65d6bfb64caaf79cff54924e9ed0a689bd`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -25841,56 +25841,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c262224cd87ab2ac636472c51660d7f5938e8051de0533b0c88b56b6cfb5f3dd`  
-		Last Modified: Wed, 13 Aug 2025 19:43:13 GMT  
-		Size: 265.7 MB (265702558 bytes)  
+	-	`sha256:ecf766747f20b3d9976cc0fad036a448ad51689d77e65acbb7ce2a69b6c54239`  
+		Last Modified: Wed, 10 Sep 2025 00:07:39 GMT  
+		Size: 265.7 MB (265707453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53ffa0baff9efd717a70dff5762701119943eae85f5b8d0288b964b7e94480c9`  
-		Last Modified: Wed, 13 Aug 2025 18:28:47 GMT  
-		Size: 191.5 KB (191469 bytes)  
+	-	`sha256:e048654ef2bbfbea6f4c1f9f68b6bae04b8ac351aa154ebce08835626cc2a3b5`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
+		Size: 191.5 KB (191465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ad9a531dc37476560b581384ffd7149b30ba65f07114f3c27505e7b1c37f4c`  
-		Last Modified: Wed, 13 Aug 2025 18:28:49 GMT  
+	-	`sha256:1599910e24ac931162bd040fd778c83967ae01d3b110aac27e971a0683ac1baf`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
 		Size: 817.8 KB (817751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28.0.2.0` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:761808bee044faa1d968d5307ca9e1b696dff29392f089fb66cf05cc636a4d6e
+$ docker pull erlang@sha256:9f889bce74685399a467a59062987d00235b44e907e3511e01a6129d0b12b12f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23717030 bytes)**  
+-	Total Size: **23.7 MB (23724149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bcf3007b8762228f4ebf589f4f705c89ef1ae69e43c7a6a1f26e401af629834`
+-	Image ID: `sha256:163b72decbb4037b3adaab2436b3538c3ecf2ead0145cb49afa52754bff5ffbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11f08d34e54a7adf00253b1fec48fbd68a8dee8231d7f0df1d6dcfdba35d8ada`  
-		Last Modified: Wed, 13 Aug 2025 19:49:45 GMT  
-		Size: 23.7 MB (23697751 bytes)  
+	-	`sha256:be8efeb0ef3ce038f971f1b02e4eabc7aa3aaee473411a4f67a2e9af712712a7`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
+		Size: 23.7 MB (23704870 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2abb514bfda472348ace21090ea25758377dd758bbf7a30f4b5d71b5bb8180cf`  
-		Last Modified: Wed, 13 Aug 2025 19:49:46 GMT  
+	-	`sha256:1e21e8a6428ac33e600e50be1906702cd2b1789f22b98a0bc048293937bfcad9`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
 		Size: 19.3 KB (19279 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27164,7 +27164,7 @@ $ docker pull erlang@sha256:cdf2f9b7a617b25e231762cccd2ee17fccd82956ffe1c4dbb071
 ## `erlang:latest`
 
 ```console
-$ docker pull erlang@sha256:49d3b56485bc89a3e2c6e9010250f475030f5aef3e6124f5b1a88664cd086cb7
+$ docker pull erlang@sha256:bf9213a78489130ebb37e2553a77bfaaa1d40eddfe4510889c3c8efefadeb8f3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27731,18 +27731,18 @@ $ docker pull erlang@sha256:977c3b77a1e28c8956a7fb1083ba1a6a899f5a485d50036880dc
 ### `erlang:latest` - linux; ppc64le
 
 ```console
-$ docker pull erlang@sha256:ce9e1f444aa276849b1dbe0a723e92f3ea8273107538e48a480da12889e472c1
+$ docker pull erlang@sha256:6eaad85a226103a5e2348fde456f91227d3a5bfbc1ad23cd2459e113363f8db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **632.0 MB (631978129 bytes)**  
+-	Total Size: **632.0 MB (631986801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:477778c9a448685bb48ab04eff6d690b1ac23dcbbc3bc1f13800332b4bcb5c43`
+-	Image ID: `sha256:66c034e023f650f739709bbb58af2969c1593257d72ae9a25b4d502d202e0870`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -27766,74 +27766,74 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:33bc01697f2fcceb00fe53fe1bf433b48dc127c82c1555f61eeddeda9d72ff40`  
-		Last Modified: Tue, 12 Aug 2025 23:05:53 GMT  
-		Size: 52.3 MB (52338077 bytes)  
+	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
+		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
+		Size: 52.3 MB (52326822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f87ea767eb09118b3668a0dc44ddf5bf258db4f1bebc7989803cb1b75a66c9`  
-		Last Modified: Wed, 13 Aug 2025 14:33:16 GMT  
-		Size: 25.7 MB (25666039 bytes)  
+	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
+		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
+		Size: 25.7 MB (25668980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddb09aa58684adf8f458ec24cfe46bcd658b8344a3c5c5ec70c88bbe9010b255`  
-		Last Modified: Wed, 13 Aug 2025 22:43:40 GMT  
-		Size: 69.8 MB (69839966 bytes)  
+	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
+		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
+		Size: 69.8 MB (69845800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f9ab368175c07efafc97db73dcb256947b7c350124b285ef68898aa41837a0a`  
-		Last Modified: Thu, 14 Aug 2025 04:19:57 GMT  
-		Size: 214.4 MB (214443029 bytes)  
+	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
+		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
+		Size: 214.5 MB (214461801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f56fd7e47b9765fcee6ac3f3fd8842798d5dc90944205ae864d53f3c6ee4da1`  
-		Last Modified: Thu, 14 Aug 2025 16:14:55 GMT  
-		Size: 268.7 MB (268681759 bytes)  
+	-	`sha256:ef9a05f5db59d08e87d33f43bc8a34ba1cc66769fae7e32ee28727c7cad5ffea`  
+		Last Modified: Tue, 09 Sep 2025 22:48:17 GMT  
+		Size: 268.7 MB (268674178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ee251a03247becc9fdc25e6288907683aaf8659a1c391cefae55ede581bce1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:49 GMT  
-		Size: 191.5 KB (191508 bytes)  
+	-	`sha256:7ed7b517ee80f187009f4ab4d3e490b9b5163ab4de73bae00deed8326796101a`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 191.5 KB (191468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e999ff351ed22a5eccb4bc0a98e68485dffa794d30251bcbc78879edc3bcf1`  
-		Last Modified: Thu, 14 Aug 2025 07:33:45 GMT  
-		Size: 817.8 KB (817751 bytes)  
+	-	`sha256:75da773e69eeb535cb4c50be86fb2a0a566ac19cdd77148107b0847b306ab420`  
+		Last Modified: Tue, 09 Sep 2025 22:48:32 GMT  
+		Size: 817.8 KB (817752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:latest` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:2dd4098c222beeaf971ef3ba2bbfd5c6f893fb55834846fa4ecee682a462c787
+$ docker pull erlang@sha256:16c037ad87b4e92d54f4d432b4361f81dbf95ddc1b04bfff023a2bb0f42ac1c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23905329 bytes)**  
+-	Total Size: **23.9 MB (23912458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ec388741ef0f9855854ed261fbcb495867ffffb263d1656146f85286cbbe71a`
+-	Image ID: `sha256:43dfeaba899626c3326a819a98faecc7106fc77d5f82c81bedb5ff6872672889`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:de8d32753e69b5cf9f3e3fd75bccc236e8714c47f2b33250ffe7953e3fe4055a`  
-		Last Modified: Thu, 14 Aug 2025 10:49:06 GMT  
-		Size: 23.9 MB (23885996 bytes)  
+	-	`sha256:df2e8f9d924f461c4ce67bf50b8d859974a434febea342519ce5fabd8621e59f`  
+		Last Modified: Wed, 10 Sep 2025 01:49:25 GMT  
+		Size: 23.9 MB (23893125 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3fb944cd18a5b955d28884e576caac6947033523c8936489b0514bd1c204f5aa`  
-		Last Modified: Thu, 14 Aug 2025 10:49:07 GMT  
+	-	`sha256:5d20137165e715771003fd8ec188cf8da70534bdd8f07861b2842be78a538155`  
+		Last Modified: Wed, 10 Sep 2025 01:49:26 GMT  
 		Size: 19.3 KB (19333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:latest` - linux; s390x
 
 ```console
-$ docker pull erlang@sha256:0f0862220399cbb96f82304bac7091333f33707e3cbfb7a72a189b1ce55244ce
+$ docker pull erlang@sha256:b6cec4b61449bb1a1ca653be3d401f5baf948ac448e648a7965d1cb46ba25176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **584.8 MB (584814623 bytes)**  
+-	Total Size: **584.8 MB (584838729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ca744f4fb9bee6d7ba3321aaff5745193d185e5633e1b0b8801989d379de39`
+-	Image ID: `sha256:577247993faaba14ddad5bb7f38dcd65d6bfb64caaf79cff54924e9ed0a689bd`
 -	Default Command: `["erl"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1754870400'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -27857,56 +27857,56 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 ```
 
 -	Layers:
-	-	`sha256:635b31fd21bf059b6af0abf57b343066d0218ebb3e0b679927cc1752427a72da`  
-		Last Modified: Tue, 12 Aug 2025 20:53:37 GMT  
-		Size: 47.1 MB (47149866 bytes)  
+	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
+		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
+		Size: 47.1 MB (47137539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af75c300f83884b3a2b4352096299334113ee00d6718ab116cdad0fd28ea4064`  
-		Last Modified: Wed, 13 Aug 2025 03:14:49 GMT  
-		Size: 24.0 MB (24020172 bytes)  
+	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
+		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
+		Size: 24.0 MB (24023865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4afd6f1f2a58fa1289478b7c4157102354638b354f847958c5d7c5b4449c508e`  
-		Last Modified: Wed, 13 Aug 2025 08:03:43 GMT  
-		Size: 63.5 MB (63497769 bytes)  
+	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
+		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
+		Size: 63.5 MB (63501842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b9cbc74544afc5347651ab08e064f57c5d096af02c42cfe03213911a89bce4`  
-		Last Modified: Wed, 13 Aug 2025 19:43:03 GMT  
-		Size: 183.4 MB (183435038 bytes)  
+	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
+		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
+		Size: 183.5 MB (183458814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c262224cd87ab2ac636472c51660d7f5938e8051de0533b0c88b56b6cfb5f3dd`  
-		Last Modified: Wed, 13 Aug 2025 19:43:13 GMT  
-		Size: 265.7 MB (265702558 bytes)  
+	-	`sha256:ecf766747f20b3d9976cc0fad036a448ad51689d77e65acbb7ce2a69b6c54239`  
+		Last Modified: Wed, 10 Sep 2025 00:07:39 GMT  
+		Size: 265.7 MB (265707453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53ffa0baff9efd717a70dff5762701119943eae85f5b8d0288b964b7e94480c9`  
-		Last Modified: Wed, 13 Aug 2025 18:28:47 GMT  
-		Size: 191.5 KB (191469 bytes)  
+	-	`sha256:e048654ef2bbfbea6f4c1f9f68b6bae04b8ac351aa154ebce08835626cc2a3b5`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
+		Size: 191.5 KB (191465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ad9a531dc37476560b581384ffd7149b30ba65f07114f3c27505e7b1c37f4c`  
-		Last Modified: Wed, 13 Aug 2025 18:28:49 GMT  
+	-	`sha256:1599910e24ac931162bd040fd778c83967ae01d3b110aac27e971a0683ac1baf`  
+		Last Modified: Tue, 09 Sep 2025 23:42:36 GMT  
 		Size: 817.8 KB (817751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:latest` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:761808bee044faa1d968d5307ca9e1b696dff29392f089fb66cf05cc636a4d6e
+$ docker pull erlang@sha256:9f889bce74685399a467a59062987d00235b44e907e3511e01a6129d0b12b12f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.7 MB (23717030 bytes)**  
+-	Total Size: **23.7 MB (23724149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bcf3007b8762228f4ebf589f4f705c89ef1ae69e43c7a6a1f26e401af629834`
+-	Image ID: `sha256:163b72decbb4037b3adaab2436b3538c3ecf2ead0145cb49afa52754bff5ffbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11f08d34e54a7adf00253b1fec48fbd68a8dee8231d7f0df1d6dcfdba35d8ada`  
-		Last Modified: Wed, 13 Aug 2025 19:49:45 GMT  
-		Size: 23.7 MB (23697751 bytes)  
+	-	`sha256:be8efeb0ef3ce038f971f1b02e4eabc7aa3aaee473411a4f67a2e9af712712a7`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
+		Size: 23.7 MB (23704870 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2abb514bfda472348ace21090ea25758377dd758bbf7a30f4b5d71b5bb8180cf`  
-		Last Modified: Wed, 13 Aug 2025 19:49:46 GMT  
+	-	`sha256:1e21e8a6428ac33e600e50be1906702cd2b1789f22b98a0bc048293937bfcad9`  
+		Last Modified: Wed, 10 Sep 2025 01:49:44 GMT  
 		Size: 19.3 KB (19279 bytes)  
 		MIME: application/vnd.in-toto+json
 
