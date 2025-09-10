@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:616757b3d9f2180c4b18d331496199c09090c066f65a1559f9a062d08ac88f37`
-- Created: `2025-08-25T10:50:21Z`
+- Image ID: `sha256:2620a583b5274cad386a953bc76f150c3eff98a65d2aca169b88f82463cffc0e`
+- Created: `2025-09-09T08:46:18Z`
 - Virtual Size: ~ 93.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -46,15 +46,15 @@ $ dnf --quiet download --source --url basesystem-11-5.el8.noarch
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/basesystem-11-5.el8.src.rpm
 ```
 
-### `rpm` package: `bash-4.4.20-5.el8.x86_64`
+### `rpm` package: `bash-4.4.20-6.el8_10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url bash-4.4.20-5.el8
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/bash-4.4.20-5.el8.src.rpm
+$ dnf --quiet download --source --url bash-4.4.20-6.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/bash-4.4.20-6.el8_10.src.rpm
 ```
 
 ### `rpm` package: `brotli-1.0.6-3.el8.x86_64`
@@ -145,15 +145,15 @@ $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-6.el8_5
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 ```
 
-### `rpm` package: `elfutils-libelf-0.190-2.el8.x86_64`
+### `rpm` package: `elfutils-libelf-0.190-2.el8.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libelf-0.190-2.el8
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/elfutils-0.190-2.el8.src.rpm
+$ dnf --quiet download --source --url elfutils-libelf-0.190-2.el8.alma.1
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/elfutils-0.190-2.el8.alma.1.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.33-26.el8.x86_64`
@@ -509,15 +509,15 @@ $ dnf --quiet download --source --url libffi-3.1-24.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libffi-3.1-24.el8.src.rpm
 ```
 
-### `rpm` package: `libgcc-8.5.0-26.el8_10.alma.1.x86_64`
+### `rpm` package: `libgcc-8.5.0-28.el8_10.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libgcc-8.5.0-26.el8_10.alma.1
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-26.el8_10.alma.1.src.rpm
+$ dnf --quiet download --source --url libgcc-8.5.0-28.el8_10.alma.1
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-28.el8_10.alma.1.src.rpm
 ```
 
 ### `rpm` package: `libgcrypt-1.8.5-7.el8_6.x86_64`
@@ -707,15 +707,15 @@ $ dnf --quiet download --source --url libssh-config-0.9.6-14.el8.noarch
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libssh-0.9.6-14.el8.src.rpm
 ```
 
-### `rpm` package: `libstdc++-8.5.0-26.el8_10.alma.1.x86_64`
+### `rpm` package: `libstdc++-8.5.0-28.el8_10.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libstdc++-8.5.0-26.el8_10.alma.1
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-26.el8_10.alma.1.src.rpm
+$ dnf --quiet download --source --url libstdc++-8.5.0-28.el8_10.alma.1
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-28.el8_10.alma.1.src.rpm
 ```
 
 ### `rpm` package: `libtasn1-4.13-5.el8_10.x86_64`
