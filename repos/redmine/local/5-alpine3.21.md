@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a86eb16b4d8c352491f57f8c1851b9a4418c4df2281e7b19e23e797ee5ae4b0`
-- Created: `2025-08-19T06:37:23Z`
-- Virtual Size: ~ 409.46 Mb  
+- Image ID: `sha256:cffce3bb8bd38d7d195077ae2854c1c3efd25403c7bd0b9bed52e9a44c2439cf`
+- Created: `2025-09-08T20:04:45Z`
+- Virtual Size: ~ 408.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.18`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
   - `REDMINE_VERSION=5.1.9`
@@ -1001,16 +1001,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.5-r0 description:
+libpq-17.6-r0 description:
 PostgreSQL client library
 
-libpq-17.5-r0 webpage:
+libpq-17.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.5-r0 installed size:
+libpq-17.6-r0 installed size:
 322 KiB
 
-libpq-17.5-r0 license:
+libpq-17.6-r0 license:
 PostgreSQL
 
 ```

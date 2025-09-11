@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:420b2d066510a12d92f6b6e798471152698f3bf231c4055a2185d74a666a1e52`
-- Created: `2025-08-19T06:37:23Z`
-- Virtual Size: ~ 433.71 Mb  
+- Image ID: `sha256:3ddd7221f7b4b24f03edf4c5a36045820e4282768c884200c684fdeeb23fca9c`
+- Created: `2025-09-08T20:04:45Z`
+- Virtual Size: ~ 432.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.18`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
   - `REDMINE_VERSION=6.0.6`
