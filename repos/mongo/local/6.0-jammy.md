@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3d31d91da211d17f4ad1412e121fa3bc4671391096db4b203c8ade266f1d7cb`
-- Created: `2025-08-25T22:01:20Z`
-- Virtual Size: ~ 764.73 Mb  
+- Image ID: `sha256:dbac6a4bc49322d4f0d6d4ecdec8f91f66fd768efa4b0d28b6e21a81cfe7d1f8`
+- Created: `2025-09-08T20:03:49Z`
+- Virtual Size: ~ 764.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mongod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.18`
   - `JSYAML_VERSION=3.13.1`
   - `JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941`
   - `MONGO_PACKAGE=mongodb-org`

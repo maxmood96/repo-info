@@ -1,23 +1,23 @@
-# `mongo:7.0.23-jammy`
+# `mongo:7.0.24-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:626bb65b2a783570c80fc1604037b319219e10a0ee89261edb4397b94410cd26`
-- Created: `2025-08-13T22:01:21Z`
-- Virtual Size: ~ 834.20 Mb  
+- Image ID: `sha256:61337f20df1c51c8226dfd202677c4eeb61df82151edf303318ccf89308539f4`
+- Created: `2025-09-10T22:01:21Z`
+- Virtual Size: ~ 834.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mongod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.18`
   - `JSYAML_VERSION=3.13.1`
   - `JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941`
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.23`
+  - `MONGO_VERSION=7.0.24`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1306,11 +1306,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.5.7`
+### `dpkg` source package: `mongodb-mongosh=2.5.8`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.5.7`
+- `mongodb-mongosh=2.5.8`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1321,17 +1321,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.23`
+### `dpkg` source package: `mongodb-org=7.0.24`
 
 Binary Packages:
 
-- `mongodb-org=7.0.23`
-- `mongodb-org-database=7.0.23`
-- `mongodb-org-database-tools-extra=7.0.23`
-- `mongodb-org-mongos=7.0.23`
-- `mongodb-org-server=7.0.23`
-- `mongodb-org-shell=7.0.23`
-- `mongodb-org-tools=7.0.23`
+- `mongodb-org=7.0.24`
+- `mongodb-org-database=7.0.24`
+- `mongodb-org-database-tools-extra=7.0.24`
+- `mongodb-org-mongos=7.0.24`
+- `mongodb-org-server=7.0.24`
+- `mongodb-org-shell=7.0.24`
+- `mongodb-org-tools=7.0.24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
