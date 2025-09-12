@@ -1020,21 +1020,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.3.3op2-3+deb11u9
-'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.3.3op2-3%2bdeb11u9.dsc' cups_2.3.3op2-3+deb11u9.dsc 3412 SHA256:09a8f0ccbb4892a8d0b06d7c92b8f94461e4c8cad8edbd86f30924c082dacd97
-'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.3.3op2.orig.tar.gz' cups_2.3.3op2.orig.tar.gz 7993205 SHA256:deb3575bbe79c0ae963402787f265bfcf8d804a71fc2c94318a74efec86f96df
-'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.3.3op2.orig.tar.gz.asc' cups_2.3.3op2.orig.tar.gz.asc 833 SHA256:ac9e7e3415d727e9882cf0f65ee38459cbcd602cb49cf392e0a65a172fe3bdaf
-'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.3.3op2-3%2bdeb11u9.debian.tar.xz' cups_2.3.3op2-3+deb11u9.debian.tar.xz 353784 SHA256:98653afef9f252a8c7eea1764f4d29f789866d1aedc14abefc155b544b4fce00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.3.3op2-3+deb11u9/
 
-- https://sources.debian.net/src/cups/2.3.3op2-3+deb11u9/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.3.3op2-3+deb11u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.3.3op2-3+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.74.0-1.3+deb11u15`
 
@@ -2855,20 +2847,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u5.dsc' imagemagick_6.9.11.60+dfsg-1.3+deb11u5.dsc 5106 SHA256:a1c2a8874a8ca94ce38dd5e99b6948a93348a7b89956ef33b1fcb161f847a08e
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u5.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3+deb11u5.debian.tar.xz 269800 SHA256:cd70283887507d9a49c07e98d4a61971875d4502e0d45f3e84ac33575be9689e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u5/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.60`
 
