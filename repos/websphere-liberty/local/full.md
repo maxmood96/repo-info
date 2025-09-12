@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff76e682a4d44322fe11a6d315440038a2a406053024ca1c8c185925f356e14d`
-- Created: `2025-08-12T13:27:51Z`
-- Virtual Size: ~ 842.30 Mb  
+- Image ID: `sha256:b05d022d5d5bce2e3b3d0d73a2b591b3ae21405b3f8a47a97b3267401b4a3c1e`
+- Created: `2025-09-11T16:08:13Z`
+- Virtual Size: ~ 842.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/helpers/runtime`
-  - `JAVA_VERSION=8.0.8.50`
+  - `JAVA_VERSION=8.0.8.51`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport`
   - `LOG_DIR=/logs`
@@ -19,21 +19,21 @@
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl250420250407-1902`
+  - `BuildLabel=cl250920250821-1629`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=25.0.0.8`
-  - `com.ibm.websphere.liberty.version=25.0.0.8`
-  - `liberty.version=25.0.0.8`
+  - `ProductVersion=25.0.0.9`
+  - `com.ibm.websphere.liberty.version=25.0.0.9`
+  - `liberty.version=25.0.0.9`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl250420250407-1902`
+  - `org.opencontainers.image.revision=cl250920250821-1629`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=25.0.0.8`
+  - `org.opencontainers.image.version=25.0.0.9`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a50d394e89ce9bb4fde2af88d9481f54e9fe6bf3328ba77192e6c1e585863a8`
-- Created: `2025-08-12T13:27:51Z`
-- Virtual Size: ~ 335.61 Mb  
+- Image ID: `sha256:20b5e8ae518792bbbb74230b50758bdeec3e25a7a05d73448b851554f275953e`
+- Created: `2025-09-11T16:08:13Z`
+- Virtual Size: ~ 335.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -23,21 +23,21 @@
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl250420250407-1902`
+  - `BuildLabel=cl250920250821-1629`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=25.0.0.8`
-  - `com.ibm.websphere.liberty.version=25.0.0.8`
-  - `liberty.version=25.0.0.8`
+  - `ProductVersion=25.0.0.9`
+  - `com.ibm.websphere.liberty.version=25.0.0.9`
+  - `liberty.version=25.0.0.9`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl250420250407-1902`
+  - `org.opencontainers.image.revision=cl250920250821-1629`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=25.0.0.8`
+  - `org.opencontainers.image.version=25.0.0.9`
 
 ## `dpkg` (`.deb`-based packages)
 
