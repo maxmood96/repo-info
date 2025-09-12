@@ -3048,14 +3048,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.4.dsc 2433 SHA512:d72484f67416d641edc0c2398d1f01608721eacbe6ac203627c890ea8f058c0d0b4e707f556b1afa1b1a35997df24854e8b9f471f1294d9d183062bab8b0e22a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.4.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.4.debian.tar.xz 42392 SHA512:e2bfb8bbc48b548fad245b57950d53bb0df78113704b9889b0bbfa89acfd304c169c3a1635e33651722c771a3352b7bdeff20f97fd851496027db6dfcfbcfbf0
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1build1`
 
