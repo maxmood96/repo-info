@@ -207,10 +207,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bind9=1:9.18.30-0ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.22.04.2.dsc' bind9_9.18.30-0ubuntu0.22.04.2.dsc 3295 SHA512:7ad4f060c68b1dfd809a50a48627e72810b43a0e21d389c656ce72c9d2bf390325172c86534b8fa3a2502208cebdc4f431b2068de6de586db3fd5aa6bb2fb889
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz' bind9_9.18.30.orig.tar.xz 5569784 SHA512:7a7d4524cf7449bdd215c4139f2345644dbcd6e009e841702beb58223ebda82ba2e46a291cf51c9c76c37781a1d89fc7c8a526763b7c3b3e43f47ee3d1a6e142
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz.asc' bind9_9.18.30.orig.tar.xz.asc 833 SHA512:b419e36f6ed5afef72df64283926f45c1c0a7a375258079a92b4ae11726316a74981a5072928f708a2fd8b07108051abec65dbe6a84ab4ecfb015120d1ff375c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.22.04.2.debian.tar.xz' bind9_9.18.30-0ubuntu0.22.04.2.debian.tar.xz 103744 SHA512:69a736d384fe7a18e6ddbd301baf1babeb62d7666721bb1db6a9aa78a4537379f817cd2bcfaabcb915bc1968a4e4e0ed41f6885f2a1555f14235bf944c44bcc5
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.22.04.2.dsc' bind9_9.18.30-0ubuntu0.22.04.2.dsc 3295 SHA512:7ad4f060c68b1dfd809a50a48627e72810b43a0e21d389c656ce72c9d2bf390325172c86534b8fa3a2502208cebdc4f431b2068de6de586db3fd5aa6bb2fb889
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz' bind9_9.18.30.orig.tar.xz 5569784 SHA512:7a7d4524cf7449bdd215c4139f2345644dbcd6e009e841702beb58223ebda82ba2e46a291cf51c9c76c37781a1d89fc7c8a526763b7c3b3e43f47ee3d1a6e142
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz.asc' bind9_9.18.30.orig.tar.xz.asc 833 SHA512:b419e36f6ed5afef72df64283926f45c1c0a7a375258079a92b4ae11726316a74981a5072928f708a2fd8b07108051abec65dbe6a84ab4ecfb015120d1ff375c
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.22.04.2.debian.tar.xz' bind9_9.18.30-0ubuntu0.22.04.2.debian.tar.xz 103744 SHA512:69a736d384fe7a18e6ddbd301baf1babeb62d7666721bb1db6a9aa78a4537379f817cd2bcfaabcb915bc1968a4e4e0ed41f6885f2a1555f14235bf944c44bcc5
 ```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.8`
@@ -1549,14 +1549,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.dsc' libxml2_2.9.13+dfsg-1ubuntu0.8.dsc 2425 SHA512:892dcb90af854dcba471d48b43ded446e54c9c8fc7ae29b005f54e0c7e4341b65d8c492f960741f5ccd186c370ca3ab600d2701850a3aa87ec48ef98c50a3961
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.8.debian.tar.xz 43872 SHA512:095d77f5a968af3249e218f5ba2ebc9949af9ff6d0d1847e6bfba1d2722fb4340a29f091ddf0d628494da0ea78ba0a81c3dc5313b5d4273d6ee5097f05aaf5b7
-```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 
