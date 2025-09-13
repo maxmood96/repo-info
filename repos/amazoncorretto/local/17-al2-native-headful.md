@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89b547358c85bd6ba7abd4949febbe075387fb89fe00bf4c0c1fd804b2511a6d`
+- Image ID: `sha256:f2109bf968f3cf05cef223688068dfcbc98610084ef3d2481dcd7720ff4a32d0`
 - Created: `2025-07-18T19:06:54Z`
-- Virtual Size: ~ 417.58 Mb  
+- Virtual Size: ~ 417.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -356,26 +356,26 @@ $ dnf --quiet download --source --url gdbm-1.13-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `giflib-4.1.6-9.amzn2.0.2.i686`
+### `rpm` package: `giflib-4.1.6-9.amzn2.0.3.i686`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/d5047ca149911b171a47cb2b439aa520d00d79da3bd3efb0f3d1ba289e542a33/giflib-4.1.6-9.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/3ec3e9f97191019ebc27096ef0f8bafc6e6d10b9845b89c89a84b48bf45f24d1/giflib-4.1.6-9.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `giflib-4.1.6-9.amzn2.0.2.x86_64`
+### `rpm` package: `giflib-4.1.6-9.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/d5047ca149911b171a47cb2b439aa520d00d79da3bd3efb0f3d1ba289e542a33/giflib-4.1.6-9.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/3ec3e9f97191019ebc27096ef0f8bafc6e6d10b9845b89c89a84b48bf45f24d1/giflib-4.1.6-9.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.56.1-9.amzn2.0.11.x86_64`
@@ -549,15 +549,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/1579dc52bd90d64e68d663da4dfa4462afa9df1cfbef30d47b64add0dd12210e/keyutils-1.5.8-3.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.8.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.amzn2.2.8
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/1b2848f3a8c5ec186828477807bbd118989420cd7329f560e749c340c26350e0/krb5-1.15.1-55.amzn2.2.8.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.amzn2.2.9
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/ac3e94928a2c038545921facd82919d7b252bf60c4923c1fc3cf4f81968cb24a/krb5-1.15.1-55.amzn2.2.9.src.rpm
 ```
 
 ### `rpm` package: `libICE-1.0.9-9.amzn2.0.2.i686`
@@ -1187,15 +1187,15 @@ $ dnf --quiet download --source --url libxcb-1.12-1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/f247c6b583421db5b27b36aa2d19d8cc44685181e32fd319cc2f6aae8d998d88/libxcb-1.12-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.19.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.20.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.19
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/ca1e3329a262ce619a2ccbe2188250f7c51cae9a10063a382a5b94f9d33aff3d/libxml2-2.9.1-6.amzn2.5.19.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.20
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/e3a24c1c1888b44f2f9a3dfb7a9881fc949c5d76a2d2d908a6ddc772f4b7bbb2/libxml2-2.9.1-6.amzn2.5.20.src.rpm
 ```
 
 ### `rpm` package: `libxslt-1.1.28-6.amzn2.0.5.x86_64`
