@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:838e63f4b6ac0b2a218d2e6b5a2e4413eeccaf014a6f4246dd4fcbb8d319bb3c`
+- Image ID: `sha256:1ad316e0ba31aaeae7d83a0969505a9d2dcaa4726752688019f681f72b093866`
 - Created: `2025-07-16T06:51:38Z`
 - Virtual Size: ~ 353.24 Mb  
   (total size of all layers on-disk)
@@ -11,7 +11,7 @@
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=8.0.8.50`
+  - `JAVA_VERSION=8.0.8.51`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
