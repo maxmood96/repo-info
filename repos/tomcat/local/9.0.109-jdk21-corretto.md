@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2af4ad0ddc03704a34cf4598cdbc7f8777e6b6d7cb0ae6e1a56663aee279ea06`
+- Image ID: `sha256:d6145a5d95c301d99cb87aaa3314c390f166d9b2c04a4b5fc702a982231f9058`
 - Created: `2025-09-05T16:01:09Z`
-- Virtual Size: ~ 533.25 Mb  
+- Virtual Size: ~ 529.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -362,7 +362,7 @@ $ dnf --quiet download --source --url gnupg2-2.0.22-5.amzn2.0.5
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/189e1bdc950a8e13918173d73835981842c90ee3b3cef07c116152a00b8b8a59/gnupg2-2.0.22-5.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `gpg-pubkey-b04f24e3-674f7571`
+### `rpm` package: `gpg-pubkey-b04f24e3-68acbaeb`
 
 Licenses (from `rpm --query`): pubkey
 
