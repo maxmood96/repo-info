@@ -1,10 +1,10 @@
-# `swift:6.1.2-rhel-ubi9`
+# `swift:6.1.3-rhel-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdb3a59cac8c5dc5c49aadf8e4707d01fc87b3db3c9099b2720c555b42c4e822`
-- Created: `2025-05-28T17:53:13Z`
-- Virtual Size: ~ 3.39 Gb  
+- Image ID: `sha256:04cab511ccc1797918245a5497e8308f9661a12b26ca9bdeae5232c78ab9fc33`
+- Created: `2025-09-06T05:03:28Z`
+- Virtual Size: ~ 3.42 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,8 +13,8 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubi9`
-  - `SWIFT_BRANCH=swift-6.1.2-release`
-  - `SWIFT_VERSION=swift-6.1.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.1.3-release`
+  - `SWIFT_VERSION=swift-6.1.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
@@ -745,7 +745,7 @@ $ dnf --quiet download --source --url json-glib-1.6.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/j/json-glib-1.6.6-1.el9.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-5.14.0-570.35.1.el9_6.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-570.41.1.el9_6.x86_64`
 
 Licenses (from `rpm --query`): ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-2-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR CDDL-1.0) AND ((GPL-2.0-only WITH Linux-syscall-note) OR Linux-OpenIB) AND ((GPL-2.0-only WITH Linux-syscall-note) OR MIT) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR MIT) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-Clear AND GFDL-1.1-no-invariants-or-later AND GPL-1.0-or-later AND (GPL-1.0-or-later OR BSD-3-Clause) AND (GPL-1.0-or-later WITH Linux-syscall-note) AND GPL-2.0-only AND (GPL-2.0-only OR Apache-2.0) AND (GPL-2.0-only OR BSD-2-Clause) AND (GPL-2.0-only OR BSD-3-Clause) AND (GPL-2.0-only OR CDDL-1.0) AND (GPL-2.0-only OR GFDL-1.1-no-invariants-or-later) AND (GPL-2.0-only OR GFDL-1.2-no-invariants-only) AND (GPL-2.0-only WITH Linux-syscall-note) AND GPL-2.0-or-later AND (GPL-2.0-or-later OR BSD-2-Clause) AND (GPL-2.0-or-later OR BSD-3-Clause) AND (GPL-2.0-or-later OR CC-BY-4.0) AND (GPL-2.0-or-later WITH GCC-exception-2.0) AND (GPL-2.0-or-later WITH Linux-syscall-note) AND ISC AND LGPL-2.0-or-later AND (LGPL-2.0-or-later OR BSD-2-Clause) AND (LGPL-2.0-or-later WITH Linux-syscall-note) AND LGPL-2.1-only AND (LGPL-2.1-only OR BSD-2-Clause) AND (LGPL-2.1-only WITH Linux-syscall-note) AND LGPL-2.1-or-later AND (LGPL-2.1-or-later WITH Linux-syscall-note) AND (Linux-OpenIB OR GPL-2.0-only) AND (Linux-OpenIB OR GPL-2.0-only OR BSD-2-Clause) AND Linux-man-pages-copyleft AND MIT AND (MIT OR GPL-2.0-only) AND (MIT OR GPL-2.0-or-later) AND (MIT OR LGPL-2.1-only) AND (MPL-1.1 OR GPL-2.0-only) AND (X11 OR GPL-2.0-only) AND (X11 OR GPL-2.0-or-later) AND Zlib
 
@@ -2550,11 +2550,16 @@ $ dnf --quiet download --source --url psmisc-23.4-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/psmisc-23.4-3.el9.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.21-2.el9_6.1.x86_64`
+### `rpm` package: `python3-3.9.21-2.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-3.9.21-2.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.2.src.rpm
+```
 
 ### `rpm` package: `python3-chardet-4.0.0-5.el9.noarch`
 
@@ -2611,11 +2616,16 @@ $ dnf --quiet download --source --url python3-decorator-4.4.2-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-decorator-4.4.2-6.el9.src.rpm
 ```
 
-### `rpm` package: `python3-devel-3.9.21-2.el9_6.1.x86_64`
+### `rpm` package: `python3-devel-3.9.21-2.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-devel-3.9.21-2.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.2.src.rpm
+```
 
 ### `rpm` package: `python3-dnf-4.14.0-25.el9.noarch`
 
@@ -2749,11 +2759,16 @@ $ dnf --quiet download --source --url python3-librepo-1.14.5-2.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/librepo-1.14.5-2.el9.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.21-2.el9_6.1.x86_64`
+### `rpm` package: `python3-libs-3.9.21-2.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): Python
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-libs-3.9.21-2.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.21-2.el9_6.2.src.rpm
+```
 
 ### `rpm` package: `python3-pip-21.3.1-1.el9.noarch`
 

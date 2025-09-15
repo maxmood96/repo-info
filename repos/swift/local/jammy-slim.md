@@ -1,10 +1,10 @@
-# `swift:6.1.2-jammy-slim`
+# `swift:6.1.3-jammy-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:65b43fffed9bed5224a45c02ae752ff1470dbf3a25f33a933002ded01dec124c`
-- Created: `2025-05-28T17:53:13Z`
-- Virtual Size: ~ 275.64 Mb  
+- Image ID: `sha256:0124cef719f3500f97b9f03635df1dfa4ddd3bae79fedd587d2bf4e7a0336b07`
+- Created: `2025-09-06T05:03:28Z`
+- Virtual Size: ~ 276.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.1.2-release`
-  - `SWIFT_VERSION=swift-6.1.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.1.3-release`
+  - `SWIFT_VERSION=swift-6.1.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1196,14 +1196,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.dsc' libxml2_2.9.13+dfsg-1ubuntu0.8.dsc 2425 SHA512:892dcb90af854dcba471d48b43ded446e54c9c8fc7ae29b005f54e0c7e4341b65d8c492f960741f5ccd186c370ca3ab600d2701850a3aa87ec48ef98c50a3961
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.8.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.8.debian.tar.xz 43872 SHA512:095d77f5a968af3249e218f5ba2ebc9949af9ff6d0d1847e6bfba1d2722fb4340a29f091ddf0d628494da0ea78ba0a81c3dc5313b5d4273d6ee5097f05aaf5b7
-```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 

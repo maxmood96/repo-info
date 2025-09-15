@@ -1,10 +1,10 @@
-# `swift:6.1.2-amazonlinux2-slim`
+# `swift:6.1.3-amazonlinux2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:79df9beae450b4f5cc6ec2292af84a52fa89850cd8f8d3be1761258b2a4677fe`
-- Created: `2025-05-28T17:53:13Z`
-- Virtual Size: ~ 739.38 Mb  
+- Image ID: `sha256:444b70ac3a473d3140947728b6ceb876ff7aa12ceb2fd6159e4b76f1856dd299`
+- Created: `2025-09-06T05:03:28Z`
+- Virtual Size: ~ 743.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=amazonlinux2`
-  - `SWIFT_BRANCH=swift-6.1.2-release`
-  - `SWIFT_VERSION=swift-6.1.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.1.3-release`
+  - `SWIFT_VERSION=swift-6.1.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -346,15 +346,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/1579dc52bd90d64e68d663da4dfa4462afa9df1cfbef30d47b64add0dd12210e/keyutils-1.5.8-3.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.8.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.amzn2.2.9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.amzn2.2.8
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/1b2848f3a8c5ec186828477807bbd118989420cd7329f560e749c340c26350e0/krb5-1.15.1-55.amzn2.2.8.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.amzn2.2.9
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/ac3e94928a2c038545921facd82919d7b252bf60c4923c1fc3cf4f81968cb24a/krb5-1.15.1-55.amzn2.2.9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-14.amzn2.x86_64`
@@ -654,15 +654,15 @@ $ dnf --quiet download --source --url libverto-0.2.5-4.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.19.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.20.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.19
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/ca1e3329a262ce619a2ccbe2188250f7c51cae9a10063a382a5b94f9d33aff3d/libxml2-2.9.1-6.amzn2.5.19.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.20
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/11cfab84a945fb8185c1e976d86d35e7512b4874520b31ceb6939751f16169d5/../../../../../blobstore/e3a24c1c1888b44f2f9a3dfb7a9881fc949c5d76a2d2d908a6ddc772f4b7bbb2/libxml2-2.9.1-6.amzn2.5.20.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.amzn2.0.2.x86_64`
