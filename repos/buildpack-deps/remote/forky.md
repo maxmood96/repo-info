@@ -1,14 +1,12 @@
 ## `buildpack-deps:forky`
 
 ```console
-$ docker pull buildpack-deps@sha256:fa973081147fd6f867d02216f9855929b1d806f4d4624a568c435a9b94912ffe
+$ docker pull buildpack-deps@sha256:a8400097f1cacbb3d6b144afbc90437e7bcd6e3e331e195147dc03c0e224c947
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 16
+-	Platforms: 14
 	-	linux; amd64
-	-	unknown; unknown
-	-	linux; arm variant v5
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
@@ -86,71 +84,6 @@ $ docker pull buildpack-deps@sha256:41b5a93efc7dd73975eee1d6dcb2c52e80d27331700a
 	-	`sha256:944c42f7f911f06b2f3be8c882a19e686aaa986b6fc4a04b1f7ddfc33e96359d`  
 		Last Modified: Tue, 09 Sep 2025 01:20:17 GMT  
 		Size: 10.2 KB (10187 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `buildpack-deps:forky` - linux; arm variant v5
-
-```console
-$ docker pull buildpack-deps@sha256:b6d456ea48e54c18b7221ba08b7f98ff67258d9856e7cba1ed7f0d6cd268b428
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.8 MB (342770080 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4099cff28979d6cfc4fd581b4e674fa87d61d39c3c2183d9e9a03a0c4014c63`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Mon, 11 Aug 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'forky' '@1754870400'
-# Tue, 12 Aug 2025 22:12:51 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Tue, 12 Aug 2025 22:12:51 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 12 Aug 2025 22:12:51 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-```
-
--	Layers:
-	-	`sha256:2fa5a98b9608d692994d9abcc2a7007473cf39d4da546665901804b35bd8b320`  
-		Last Modified: Tue, 12 Aug 2025 20:45:48 GMT  
-		Size: 47.4 MB (47442421 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30e8c08416a0595c07b904b87179f903faee6f0a25e5b00b485a3c0b0df46b2f`  
-		Last Modified: Wed, 13 Aug 2025 06:07:53 GMT  
-		Size: 24.3 MB (24331053 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1486224fc8f64dbe0bf66d7516691f5822dfff3ac064ce9811427c63fb10b9c`  
-		Last Modified: Wed, 13 Aug 2025 12:58:51 GMT  
-		Size: 65.7 MB (65730182 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67446a3d10ae9d03ae843fc879c4f1736fb18c208963a5bb5259ca4d4ee16227`  
-		Last Modified: Wed, 13 Aug 2025 12:59:04 GMT  
-		Size: 205.3 MB (205266424 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `buildpack-deps:forky` - unknown; unknown
-
-```console
-$ docker pull buildpack-deps@sha256:61b9ec4000332e992e33599b138ae6a7151efd3e606849fe7f85fd96873c7cc7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.0 MB (16995194 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b70ef1311c3a186e25d9f6d549b40284f4a8450bb720af3d0357472d373fcd5c`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:211702e95625ad2127681bbca87f797abb53ef66c5cd15f4af1c415150d9906a`  
-		Last Modified: Wed, 13 Aug 2025 13:20:26 GMT  
-		Size: 17.0 MB (16984946 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2a3d11f9002a4789a13f8a199d8ee6a7e6f3db671bf7f34555007d76a8abc0b8`  
-		Last Modified: Wed, 13 Aug 2025 13:20:27 GMT  
-		Size: 10.2 KB (10248 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:forky` - linux; arm variant v7

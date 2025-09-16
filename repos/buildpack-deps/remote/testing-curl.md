@@ -1,14 +1,12 @@
 ## `buildpack-deps:testing-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:b71dd4d250057269844780de9d8f8db7d049b00f5c0167d5f1415ead9b0ee8de
+$ docker pull buildpack-deps@sha256:fa44dec1c1f80d83e5dd14fc9b213d79ce6d3d9236a1a9962f4701f10c0b7edb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 16
+-	Platforms: 14
 	-	linux; amd64
-	-	unknown; unknown
-	-	linux; arm variant v5
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
@@ -74,59 +72,6 @@ $ docker pull buildpack-deps@sha256:e2bb4c23b0c1c800f86d8de08d795cf799c3adf75411
 	-	`sha256:74ee2699c2f42ef0baa11da5642a399e684fe3c44b63da73f821e5760cc9e00e`  
 		Last Modified: Mon, 08 Sep 2025 22:20:30 GMT  
 		Size: 6.8 KB (6815 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `buildpack-deps:testing-curl` - linux; arm variant v5
-
-```console
-$ docker pull buildpack-deps@sha256:1a6815a172c8a584569ef695eef1554108cce649d38282c4fea5f6a79cdcd7ad
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.8 MB (71773474 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29c5b9be8e27a18f95e1635abc37da2d926745fa253d0c77bafde838d0be412f`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Mon, 11 Aug 2025 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'forky' '@1754870400'
-# Tue, 12 Aug 2025 22:12:51 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-```
-
--	Layers:
-	-	`sha256:2fa5a98b9608d692994d9abcc2a7007473cf39d4da546665901804b35bd8b320`  
-		Last Modified: Tue, 12 Aug 2025 20:45:48 GMT  
-		Size: 47.4 MB (47442421 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30e8c08416a0595c07b904b87179f903faee6f0a25e5b00b485a3c0b0df46b2f`  
-		Last Modified: Wed, 13 Aug 2025 06:07:53 GMT  
-		Size: 24.3 MB (24331053 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `buildpack-deps:testing-curl` - unknown; unknown
-
-```console
-$ docker pull buildpack-deps@sha256:a8fe06d7c89b41cdc4d96eb2530d82f3ae73d412cc1d131c177c0881923c0eb0
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4126857 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:264be9b520599485c161fdcf09d8348737b089d992503631bd8f7965af19366e`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:83de946f87466516d5701b4d0332795668bab3ec4e4115089a18eebf3569047c`  
-		Last Modified: Wed, 13 Aug 2025 07:20:21 GMT  
-		Size: 4.1 MB (4119981 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2e3ff33f38e9b4f3bc6b2c8e98f302f7bb0ed431c9b94ebd4ba270df6b622d30`  
-		Last Modified: Wed, 13 Aug 2025 07:20:22 GMT  
-		Size: 6.9 KB (6876 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:testing-curl` - linux; arm variant v7
