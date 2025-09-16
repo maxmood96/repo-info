@@ -1,7 +1,7 @@
 ## `clojure:temurin-24-lein-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:ddc23fa0317f86bdf0d064d7ec50303e7dde88697c8d7d5f91534591d22b1471
+$ docker pull clojure@sha256:073ece8d551d66e6ca2c1a7572058139639e66637cb1411af63cb0d68d444aad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -276,24 +276,24 @@ CMD ["repl"]
 ### `clojure:temurin-24-lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:30162265ee39aeeb725394b06dfb90c4149f90097520e7f55c28a208599861fe
+$ docker pull clojure@sha256:854dfe44edf86a6953fe40d03e394c6fff336b936f45242b6a653d6467915194
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2701048 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6cbdc0fc9aff074794321e12d098516be1f5405882c9139ec7a64cb3338ea69`
+-	Image ID: `sha256:da687dcd5f25c0f7b7c0a16ea16fad0af83992cd34fe387c51aa687c05fd63cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47399936e14be36e9286ffe1404e2427f82ec8047d677d9f54ccd916e6dac0ce`  
-		Last Modified: Sat, 13 Sep 2025 06:39:46 GMT  
+	-	`sha256:dfab6c21054ec92759b57cbeadf94e483a1f0b4c63c9675f83e42a692baa7f62`  
+		Last Modified: Tue, 16 Sep 2025 03:42:47 GMT  
 		Size: 2.7 MB (2682565 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:66e23218b2a29dc553a2ba206732399e5097fcd5f9e26cdba05f2de14e41b9c2`  
-		Last Modified: Sat, 13 Sep 2025 06:39:47 GMT  
+	-	`sha256:694446de95ae1e5c1e3a57d22c585d539d21b1c25edfb66c7839b50fa7424de9`  
+		Last Modified: Tue, 16 Sep 2025 03:42:48 GMT  
 		Size: 18.5 KB (18483 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -370,23 +370,23 @@ CMD ["repl"]
 ### `clojure:temurin-24-lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:6e1813854f0ba5bb26f8dab58b09f5a9b84f2a5e0ebde2c4d73decf8603481dc
+$ docker pull clojure@sha256:2c648a2953b1923e2928ea5b98ee1390a6cf273d4a64ce23d8b2a2e4be92dff3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2692234 bytes)**  
+-	Total Size: **2.7 MB (2692235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f32e72dee0b4d74a287fca1475fc2b5624aaef0277977ec717eecb9eec33dbb1`
+-	Image ID: `sha256:b81b69fda5f050e68f81c1a01e56334b54a07e17c5ee908f1e5ed73d12cae63d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ad07ab4d35115be83ac6b3663bd06272155b9eabf6d7e7cc30d743ae38192b3`  
-		Last Modified: Sat, 13 Sep 2025 06:39:51 GMT  
+	-	`sha256:6a8fa1929b137022917069e5bfa08b6c8a807c909c0b8a789a172dc48933291f`  
+		Last Modified: Tue, 16 Sep 2025 03:42:52 GMT  
 		Size: 2.7 MB (2673796 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a6cd191c356c5c45985e3812e1e6a7cec289cb8ae2e9c9810d7a6470b235b63f`  
-		Last Modified: Sat, 13 Sep 2025 06:39:52 GMT  
-		Size: 18.4 KB (18438 bytes)  
+	-	`sha256:37fd7242abbb5db7b6e9caddf60d3c0e41efc1fbda20e3a066c8363b7b5f043a`  
+		Last Modified: Tue, 16 Sep 2025 03:42:53 GMT  
+		Size: 18.4 KB (18439 bytes)  
 		MIME: application/vnd.in-toto+json
