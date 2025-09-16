@@ -1,19 +1,19 @@
-# `erlang:26.2.5.13-alpine`
+# `erlang:26.2.5.15-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fdd8677ac83d4766b57371f5070698639a91348d88b6d2d5876ac8b9e2023c6f`
-- Created: `2025-07-09T17:34:23Z`
-- Virtual Size: ~ 74.65 Mb  
+- Image ID: `sha256:7ef68c03b6c2150bdb8e2f592ab7804a494953b28dd38d066410366e022a8197`
+- Created: `2025-09-13T01:06:53Z`
+- Virtual Size: ~ 74.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5.13`
+  - `OTP_VERSION=26.2.5.15`
   - `REBAR3_VERSION=3.25.0`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5.13`
+  - `org.opencontainers.image.version=26.2.5.15`
 
 ## `apk` (`.apk`-based packages)
 
