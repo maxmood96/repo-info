@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9101cc2ee94fac13bb70747f4c97788d551ca454e8dc621e53b3edd68ed4c421`
+- Image ID: `sha256:2e76b0e2fc80ee241dccfdbce2ee510cd34f3e0cc047644482414c721cef1313`
 - Created: `2025-02-12T00:41:24Z`
-- Virtual Size: ~ 273.83 Mb  
+- Virtual Size: ~ 273.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -313,11 +313,11 @@ $ apt-get source -qq --print-uris cdebconf=0.277ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.277ubuntu1.tar.xz' cdebconf_0.277ubuntu1.tar.xz 286968 SHA512:ebb8cee8ee8d84aaab49a03211d9cad56dec362d80e63f7375dad09e06eecb7a44811078327daf73d14f6bb9bbbba13adc1ac9ec03dbda0ea31c79532c5a6f12
 ```
 
-### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.1`
+### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.2`
 
 Binary Packages:
 
-- `coreutils=9.5-1ubuntu1.25.04.1`
+- `coreutils=9.5-1ubuntu1.25.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -329,9 +329,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1.25.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.2.dsc' coreutils_9.5-1ubuntu1.25.04.2.dsc 2070 SHA512:504c83248e95eee6cdb6ea9de00286e7853b94498f9ef849e4631c15e1df97787db4ef5c5363e38ba357dbd7ac84789093a91e014d44dfd8a7594298786881f4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA512:2ca0deac4dc10a80fd0c6fd131252e99d457fd03b7bd626a6bc74fe5a0529c0a3d48ce1f5da1d3b3a7a150a1ce44f0fbb6b68a6ac543dfd5baa3e71f5d65401c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.2.debian.tar.xz' coreutils_9.5-1ubuntu1.25.04.2.debian.tar.xz 31736 SHA512:6c290618801df22112a7874ea3a423d55603f97485c1c2571e057415f2a7bcd69f64026f9939345a6133b6657c00419c6a62a912f71ffdfa8e02c635c44f2445
+```
 
 ### `dpkg` source package: `curl=8.12.1-3ubuntu1`
 
@@ -1907,11 +1912,11 @@ $ apt-get source -qq --print-uris openldap=2.6.9+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg-2ubuntu1.debian.tar.xz' openldap_2.6.9+dfsg-2ubuntu1.debian.tar.xz 184328 SHA512:519c318c45e9d536aa71a8902746c5fe67ea3069939dc447a0534b4749f1f28ff88585b168b87e42f524a2dc92bc96d2345b1a5d0265f20857c42a7431e0b68d
 ```
 
-### `dpkg` source package: `openssh=1:9.9p1-3ubuntu3.1`
+### `dpkg` source package: `openssh=1:9.9p1-3ubuntu3.2`
 
 Binary Packages:
 
-- `openssh-client=1:9.9p1-3ubuntu3.1`
+- `openssh-client=1:9.9p1-3ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1926,11 +1931,11 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.9p1-3ubuntu3.1
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.1.dsc' openssh_9.9p1-3ubuntu3.1.dsc 3488 SHA512:a77de83df0e5dd71bdd3dabed2ff1f99875d1c74a2d0046291065df8878b71dcf30d5b8f01485fa1c95acbab6b1e403f766a45c1c59fe222ac33398c969775b8
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz' openssh_9.9p1.orig.tar.gz 1964864 SHA512:3cc0ed97f3e29ecbd882eca79239f02eb5a1606fce4f3119ddc3c5e86128aa3ff12dc85000879fccc87b60e7d651cfe37376607ac66075fede2118deaa685d6d
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz.asc' openssh_9.9p1.orig.tar.gz.asc 833 SHA512:916e975c54eb68c0b2f0b0006522b241cbe54c4caa88d31537a6278490c93d9d732c2ab3a080ac084bf75cbdd5402901ec68583cbe7c7cde4a8e40e7a8b78c28
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.1.debian.tar.xz' openssh_9.9p1-3ubuntu3.1.debian.tar.xz 212396 SHA512:1e2e866c2dfa109c148a22f096102d9884014857eb263020e31ba182cf2d5c6baca0f936e5f9d7f19ad165ef609f5169bbcb66ccec4a9140aba16ab4f66e31fc
+$ apt-get source -qq --print-uris openssh=1:9.9p1-3ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.2.dsc' openssh_9.9p1-3ubuntu3.2.dsc 3488 SHA512:7620f750829282bdb15cf884ae06a17feb049a37972652b037c60118a1ad10e06079ee83d3df2fdd465d6a3abbb3e627f20fb1ac21198e81e1043ec949032344
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz' openssh_9.9p1.orig.tar.gz 1964864 SHA512:3cc0ed97f3e29ecbd882eca79239f02eb5a1606fce4f3119ddc3c5e86128aa3ff12dc85000879fccc87b60e7d651cfe37376607ac66075fede2118deaa685d6d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz.asc' openssh_9.9p1.orig.tar.gz.asc 833 SHA512:916e975c54eb68c0b2f0b0006522b241cbe54c4caa88d31537a6278490c93d9d732c2ab3a080ac084bf75cbdd5402901ec68583cbe7c7cde4a8e40e7a8b78c28
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.9p1-3ubuntu3.2.debian.tar.xz' openssh_9.9p1-3ubuntu3.2.debian.tar.xz 212572 SHA512:bce5780f17baed4ee82d9a804c3e20da3342afe1c4b383f6c30c89c99b60896578ff8305b40dfe31c29e51185b775e0d9656de6fe60669b7a4a5fb52c86a58ea
 ```
 
 ### `dpkg` source package: `openssl=3.4.1-1ubuntu3`
@@ -2159,14 +2164,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.13.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.3-1.tar.gz' python3-defaults_3.13.3-1.tar.gz 147238 SHA512:c9e62de6dacd65e61e4aa0f49cd22c9272179fd54f528db8eca737e27a8fbec91551c51872fb6cb02333e8dfb5bec0e19e7132ccb2ffaf6b497604aa58c70818
 ```
 
-### `dpkg` source package: `python3.13=3.13.3-1ubuntu0.2`
+### `dpkg` source package: `python3.13=3.13.3-1ubuntu0.3`
 
 Binary Packages:
 
-- `libpython3.13-minimal:amd64=3.13.3-1ubuntu0.2`
-- `libpython3.13-stdlib:amd64=3.13.3-1ubuntu0.2`
-- `python3.13=3.13.3-1ubuntu0.2`
-- `python3.13-minimal=3.13.3-1ubuntu0.2`
+- `libpython3.13-minimal:amd64=3.13.3-1ubuntu0.3`
+- `libpython3.13-stdlib:amd64=3.13.3-1ubuntu0.3`
+- `python3.13=3.13.3-1ubuntu0.3`
+- `python3.13-minimal=3.13.3-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/share/doc/libpython3.13-stdlib/copyright`, `/usr/share/doc/python3.13/copyright`, `/usr/share/doc/python3.13-minimal/copyright`)
 
@@ -2188,9 +2193,15 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.13=3.13.3-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-1ubuntu0.3.dsc' python3.13_3.13.3-1ubuntu0.3.dsc 4440 SHA512:90a10b0e5b894650b2175160b94f17144020003848beceac70cb074a39a6be3883884afe825a49e69ed3b76080a99bbf5eeb0dc2cc2ea4de3a02a7320213bea1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz' python3.13_3.13.3.orig.tar.xz 22654240 SHA512:f7559b6dceae69f48742af0a6497fbec42cd1e5304f64b6eb9d89222a1171ccf12fa186cc0decabb4e98d05223184967a4a7537754c01083dacdc9073cb1a578
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3.orig.tar.xz.asc' python3.13_3.13.3.orig.tar.xz.asc 963 SHA512:54f8da5f4a4dcadc9830cb07aecf695a26a2de48ab98e1f42b09fdde1c70989476d07ce7ea81337216f1e5fcbf6b688e0608c88a2545ced416b01640108e94db
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.3-1ubuntu0.3.debian.tar.xz' python3.13_3.13.3-1ubuntu0.3.debian.tar.xz 287252 SHA512:b4dcf0c02d2b949e28a1f975a8edc2c7cee668e6776661774607cf08381f4d6e852fd77134f36955bc72b7a3fd47a679b8c1d0a52062f33e03afcee61cf6ae78
+```
 
 ### `dpkg` source package: `readline=8.2-6`
 
@@ -2348,11 +2359,11 @@ $ apt-get source -qq --print-uris shadow=1:4.16.0-7ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.debian.tar.xz' shadow_4.16.0-7ubuntu1.debian.tar.xz 184116 SHA512:ef799ce47e9d81a751e076297835776ecaeb6c8ffd2b6c6159bd55bbefdd1aade92e47539fc8813be83a6209051d31cb6ee89cd98ff5168dd001cc7227923f28
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-3ubuntu0.2`
+### `dpkg` source package: `sqlite3=3.46.1-3ubuntu0.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-3ubuntu0.2`
+- `libsqlite3-0:amd64=3.46.1-3ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2363,11 +2374,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-3ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.2.dsc' sqlite3_3.46.1-3ubuntu0.2.dsc 2747 SHA512:3aba641db4c0320657222ec52747fe5431563bbb463fc3bb8c6e47238a374d48d85ef64e8dbeefcd2f1111a45f739eada10673377b923d1fbdfc19fbb30fdfe2
+$ apt-get source -qq --print-uris sqlite3=3.46.1-3ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.3.dsc' sqlite3_3.46.1-3ubuntu0.3.dsc 2747 SHA512:7e5e6438523773ba92f9ea68c02fca235213d91c14e425c79da06a73078280c0c09da851126ea880718521fc5efa40b40e9132364fd68691102f8c0a325ebdfe
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.2.debian.tar.xz' sqlite3_3.46.1-3ubuntu0.2.debian.tar.xz 34928 SHA512:4da54c866ce93d3af63cebd109297730b058519f31bec46b5906ce0f0fcf31a51fe03d6e9715f194598338db2d00eca0203a964fe9342f59e6bd545fc2cad837
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-3ubuntu0.3.debian.tar.xz 35404 SHA512:8059f30364ed09166c590c6d7ce23ac2f6e513066ec1b22941c975b04ffb0225305f998a57bb278090da552a9b4d0be40a3037df3f32f25a712d5f9c32e15fff
 ```
 
 ### `dpkg` source package: `subversion=1.14.5-2build1`

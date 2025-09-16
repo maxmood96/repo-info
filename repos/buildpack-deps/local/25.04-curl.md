@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:92b9a75de9d654ff38aa553519e2ffbbb7320e57fd68d94c3a2b633c0e3f2dd7`
+- Image ID: `sha256:652d55aa42522ed5c61b5416e882295820b7d8fc8e0c078c0f5b0c8c42d8564a`
 - Created: `2025-02-12T00:41:24Z`
-- Virtual Size: ~ 126.83 Mb  
+- Virtual Size: ~ 126.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -274,11 +274,11 @@ $ apt-get source -qq --print-uris cdebconf=0.277ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.277ubuntu1.tar.xz' cdebconf_0.277ubuntu1.tar.xz 286968 SHA512:ebb8cee8ee8d84aaab49a03211d9cad56dec362d80e63f7375dad09e06eecb7a44811078327daf73d14f6bb9bbbba13adc1ac9ec03dbda0ea31c79532c5a6f12
 ```
 
-### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.1`
+### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.2`
 
 Binary Packages:
 
-- `coreutils=9.5-1ubuntu1.25.04.1`
+- `coreutils=9.5-1ubuntu1.25.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -290,9 +290,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1.25.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.2.dsc' coreutils_9.5-1ubuntu1.25.04.2.dsc 2070 SHA512:504c83248e95eee6cdb6ea9de00286e7853b94498f9ef849e4631c15e1df97787db4ef5c5363e38ba357dbd7ac84789093a91e014d44dfd8a7594298786881f4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA512:2ca0deac4dc10a80fd0c6fd131252e99d457fd03b7bd626a6bc74fe5a0529c0a3d48ce1f5da1d3b3a7a150a1ce44f0fbb6b68a6ac543dfd5baa3e71f5d65401c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.2.debian.tar.xz' coreutils_9.5-1ubuntu1.25.04.2.debian.tar.xz 31736 SHA512:6c290618801df22112a7874ea3a423d55603f97485c1c2571e057415f2a7bcd69f64026f9939345a6133b6657c00419c6a62a912f71ffdfa8e02c635c44f2445
+```
 
 ### `dpkg` source package: `curl=8.12.1-3ubuntu1`
 
@@ -1963,11 +1968,11 @@ $ apt-get source -qq --print-uris shadow=1:4.16.0-7ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.16.0-7ubuntu1.debian.tar.xz' shadow_4.16.0-7ubuntu1.debian.tar.xz 184116 SHA512:ef799ce47e9d81a751e076297835776ecaeb6c8ffd2b6c6159bd55bbefdd1aade92e47539fc8813be83a6209051d31cb6ee89cd98ff5168dd001cc7227923f28
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-3ubuntu0.2`
+### `dpkg` source package: `sqlite3=3.46.1-3ubuntu0.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-3ubuntu0.2`
+- `libsqlite3-0:amd64=3.46.1-3ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1978,11 +1983,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-3ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.2.dsc' sqlite3_3.46.1-3ubuntu0.2.dsc 2747 SHA512:3aba641db4c0320657222ec52747fe5431563bbb463fc3bb8c6e47238a374d48d85ef64e8dbeefcd2f1111a45f739eada10673377b923d1fbdfc19fbb30fdfe2
+$ apt-get source -qq --print-uris sqlite3=3.46.1-3ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.3.dsc' sqlite3_3.46.1-3ubuntu0.3.dsc 2747 SHA512:7e5e6438523773ba92f9ea68c02fca235213d91c14e425c79da06a73078280c0c09da851126ea880718521fc5efa40b40e9132364fd68691102f8c0a325ebdfe
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.2.debian.tar.xz' sqlite3_3.46.1-3ubuntu0.2.debian.tar.xz 34928 SHA512:4da54c866ce93d3af63cebd109297730b058519f31bec46b5906ce0f0fcf31a51fe03d6e9715f194598338db2d00eca0203a964fe9342f59e6bd545fc2cad837
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-3ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-3ubuntu0.3.debian.tar.xz 35404 SHA512:8059f30364ed09166c590c6d7ce23ac2f6e513066ec1b22941c975b04ffb0225305f998a57bb278090da552a9b4d0be40a3037df3f32f25a712d5f9c32e15fff
 ```
 
 ### `dpkg` source package: `systemd=257.4-1ubuntu3.1`
