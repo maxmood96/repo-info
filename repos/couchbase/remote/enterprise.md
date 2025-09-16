@@ -1,7 +1,7 @@
 ## `couchbase:enterprise`
 
 ```console
-$ docker pull couchbase@sha256:5df7918ac292d042a3102b71daf74b9ab1267407496c7213f214845ac6505937
+$ docker pull couchbase@sha256:538ca8d51f155aed7f8947fb9f211c38549e5e3b0de0b85af0d94026bda5ff28
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull couchbase@sha256:5df7918ac292d042a3102b71daf74b9ab1267407496c7213f
 ### `couchbase:enterprise` - linux; amd64
 
 ```console
-$ docker pull couchbase@sha256:9cd73917df2947a61c8dfb5475792f6260b5239b518e0d1d9ee06935b6a83b1b
+$ docker pull couchbase@sha256:38c66b5b289d5220a91b0870ad70d04eafa4569135b60d83d06aa494925004c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **799.2 MB (799241553 bytes)**  
+-	Total Size: **799.2 MB (799242816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edbc6e45a390861171a703ef60cb9052c89a267b0a52d97e0df03af2dab877b7`
+-	Image ID: `sha256:559fa4442091a711c41cab0a46dcfc4183169705c730d95351f80402b39ed71d`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
@@ -34,7 +34,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Wed, 13 Aug 2025 18:24:10 GMT
 LABEL org.opencontainers.image.version=24.04
 # Wed, 13 Aug 2025 18:24:10 GMT
-ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
+ADD file:dafefa97de6dc66a6734ec6f05e58125ce01225cccce3f50662330c252aad518 in / 
 # Wed, 13 Aug 2025 18:24:10 GMT
 CMD ["/bin/bash"]
 # Wed, 13 Aug 2025 18:24:10 GMT
@@ -92,85 +92,85 @@ VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:76249c7cd50397d2e8c06a75106723d057deaba0ffbc7f4af1bb02bcf71d81cf`  
-		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
-		Size: 29.7 MB (29723064 bytes)  
+	-	`sha256:953cdd4133718b72c5d0a78e754c1405c02510fdb5237265f7955863f1757f83`  
+		Last Modified: Wed, 10 Sep 2025 09:09:40 GMT  
+		Size: 29.7 MB (29723450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0a3ee3f21170a6fcb9256f0ed54fdc5084b97e99ad459401ca795a3dd9c2061`  
-		Last Modified: Mon, 01 Sep 2025 23:10:04 GMT  
-		Size: 43.8 MB (43806109 bytes)  
+	-	`sha256:ef8b5ba4c2cd32ca2620ba825b2e1488bbbf2187bdf25b85bb95b09178dc1f70`  
+		Last Modified: Mon, 15 Sep 2025 22:14:53 GMT  
+		Size: 43.8 MB (43806774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed3047574c10a774d6e419b5d133f12560b6c0c22a70bc6e223069d485c5d31b`  
-		Last Modified: Mon, 01 Sep 2025 23:09:58 GMT  
-		Size: 877.7 KB (877703 bytes)  
+	-	`sha256:73ca6ea6e8d5845e9e07426d057187b20f898074092493744456128ee0b25be8`  
+		Last Modified: Mon, 15 Sep 2025 22:14:49 GMT  
+		Size: 877.8 KB (877815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3ee2cadc81e49c2dd8694407292e64f311cc6a3d24f9c4544f0efec2bdcfa4e`  
-		Last Modified: Mon, 01 Sep 2025 23:09:57 GMT  
-		Size: 3.7 KB (3723 bytes)  
+	-	`sha256:b480178de04c1bc8abfe5ce66eb99343688a440c4cd2e6893c7fa07379f67bd8`  
+		Last Modified: Mon, 15 Sep 2025 22:14:49 GMT  
+		Size: 3.7 KB (3726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6770e2cc153b4313b16de10a031099c23677058cbfc4916881ebe26f1f2e6fd0`  
-		Last Modified: Tue, 02 Sep 2025 02:35:43 GMT  
-		Size: 724.8 MB (724827692 bytes)  
+	-	`sha256:e609d856e0f76f188a0af49d96e14edc8c92c212820de09bbbb1fd1c3a125fe1`  
+		Last Modified: Mon, 15 Sep 2025 23:32:26 GMT  
+		Size: 724.8 MB (724827790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:665e12387ccd3d579d2feac905a9c24c65530ab22d9bea1dd01d6005bb9d0da7`  
-		Last Modified: Mon, 01 Sep 2025 23:09:58 GMT  
-		Size: 185.0 B  
+	-	`sha256:5853d0df4c882303b304c2c19fbcace644deee28e6fd74eee31a576ed9c16968`  
+		Last Modified: Mon, 15 Sep 2025 22:14:50 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:052ac385316703bca03dfb708fe37a4cc305330f4a3d2382ae38a42768e4b754`  
-		Last Modified: Mon, 01 Sep 2025 23:09:57 GMT  
-		Size: 816.0 B  
+	-	`sha256:7da2ff9b54dd4a76e97d6d931264aa5849b7a41d43ba69ab1a9cedbecbc9f067`  
+		Last Modified: Mon, 15 Sep 2025 22:14:50 GMT  
+		Size: 817.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a88508fbdf1166b31fda2e6df5524047f2d5b151422620a94439031c42ffcf8`  
-		Last Modified: Mon, 01 Sep 2025 23:09:57 GMT  
-		Size: 848.0 B  
+	-	`sha256:a925dd5e35e512b6219b2129d0dcedec135cfd423c7a7c84f63508b69c51457f`  
+		Last Modified: Mon, 15 Sep 2025 22:14:50 GMT  
+		Size: 847.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2006956a4536380baf1e989859d0f4ac0233dece841cdf49e6bea138bfcd259a`  
-		Last Modified: Mon, 01 Sep 2025 23:09:57 GMT  
-		Size: 233.0 B  
+	-	`sha256:f325ea15b033a21c4db6acc40d3f10e48a0200a1429a20a339f7501e0fc42369`  
+		Last Modified: Mon, 15 Sep 2025 22:14:50 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32725626c6bf5ae331851c394e7fc58bd9409e679134b1c580bac035aeabc7cb`  
-		Last Modified: Mon, 01 Sep 2025 23:09:57 GMT  
+	-	`sha256:eccac3c045ce7b43ffc238d0ea2a96df27ab606810ae96d7df4a9ef7ef59b99f`  
+		Last Modified: Mon, 15 Sep 2025 22:14:50 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8664117eb693886d5e79c003b7c42cca2550bbc69a85e35130b849d556d736cc`  
-		Last Modified: Mon, 01 Sep 2025 23:09:58 GMT  
+	-	`sha256:2c6b3af3d9cfdd5df708df0e216ed73a1ede9273a426cf040fd8b2538f4ac172`  
+		Last Modified: Mon, 15 Sep 2025 22:14:50 GMT  
 		Size: 931.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchbase:enterprise` - unknown; unknown
 
 ```console
-$ docker pull couchbase@sha256:38996b805432af832796d00722f5bd757368370080c10fcc6bbbc44bc60b487f
+$ docker pull couchbase@sha256:7badc1ed5b9e704b01fbe64616c69230f48925c27cc7b2839cf3d666a37bd77b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.2 KB (38181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e44f58e80fedbed61d2b9a103d5f70f2272adb90dbce7d0a265c1389bdc36446`
+-	Image ID: `sha256:8e26fddfbaaa2f7aa11086fc0dfacf35abfb29acc502ed339ec49120348aafdc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29b2d3857e736cf15bd090fd308e84cb1e4880e392e6f37630170c6c787de003`  
-		Last Modified: Tue, 02 Sep 2025 02:33:22 GMT  
+	-	`sha256:350be1f0135c3851f4a0e3c3714dc74273b62e99adcf48e3bdd1ca27b4ca8d6a`  
+		Last Modified: Mon, 15 Sep 2025 23:31:55 GMT  
 		Size: 38.2 KB (38181 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `couchbase:enterprise` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchbase@sha256:65deea4a95a2d322e46b2bf989c367daea2c5315ec85d94b24e42cad34a87539
+$ docker pull couchbase@sha256:6ef84b9f29da6faad69624d16ab05a2ae5733508d5d3e1cc3807b1f01e04716f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **769.5 MB (769538021 bytes)**  
+-	Total Size: **769.5 MB (769539153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b87f571a1e7643d6baefe486b3ae441bb44e50381c9106d6a65624029da7df`
+-	Image ID: `sha256:f3ec3d95a981fc0172487a5e135591c3875b7efb40c4524c9f7a015f320470db`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
@@ -184,7 +184,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Wed, 13 Aug 2025 18:24:10 GMT
 LABEL org.opencontainers.image.version=24.04
 # Wed, 13 Aug 2025 18:24:10 GMT
-ADD file:b7517e9b93ca90114b86d36fa835651ac45b762e188edb92fc804391a8989e04 in / 
+ADD file:4e55519deacaaab35bcc389ec63f319a61c50e3f8f7d19a0df61fa1571c86c6a in / 
 # Wed, 13 Aug 2025 18:24:10 GMT
 CMD ["/bin/bash"]
 # Wed, 13 Aug 2025 18:24:10 GMT
@@ -242,71 +242,71 @@ VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:cc43ec4c13811c515d52d11a6039f3659696499c8782f5f3f601a3fdedf14082`  
-		Last Modified: Tue, 19 Aug 2025 17:59:52 GMT  
-		Size: 28.9 MB (28860240 bytes)  
+	-	`sha256:59a5d47f84c39a2d62d1b5089e60ab67303111f17e1df01dbbcc598246282797`  
+		Last Modified: Wed, 10 Sep 2025 09:09:46 GMT  
+		Size: 28.9 MB (28861317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb29f6fa4dd895fb5dc341dd162defe28e02d9fef43fbfd3255c4558725d8fa`  
-		Last Modified: Tue, 02 Sep 2025 02:36:48 GMT  
-		Size: 43.6 MB (43624132 bytes)  
+	-	`sha256:03dcae5d6dc4a5bd6622ea807742fced17ab3a60962799def67e2ecc47a202a6`  
+		Last Modified: Mon, 15 Sep 2025 22:14:36 GMT  
+		Size: 43.6 MB (43624494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:473bddc4e227b512da258537be6d5ee8eb31ca70500fc56f7402d3ab5db1e2e7`  
-		Last Modified: Tue, 02 Sep 2025 00:47:16 GMT  
-		Size: 764.7 KB (764654 bytes)  
+	-	`sha256:79134233a64b5129132a768c40de30b7c3beb3341f5efd7e5299e7d2f2dfb938`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 764.8 KB (764803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:526d43d7bef6f348a377e28fe6a403d35924b89c0453b9dcad185fd593b4832f`  
-		Last Modified: Tue, 02 Sep 2025 01:05:37 GMT  
-		Size: 3.7 KB (3728 bytes)  
+	-	`sha256:34a93d8ec1eda2b7ca399d314dae55b819c78174bf4962d78d0c4efbdeaca5c7`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 3.7 KB (3723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dbd4cda9aedccf941f60afa4ff1e0cb234c374d2910ff1b37aca8e4fc110c37`  
-		Last Modified: Tue, 02 Sep 2025 02:38:09 GMT  
-		Size: 696.3 MB (696281997 bytes)  
+	-	`sha256:b8748984a3c33536e407007c408db1881e822295f126bf4412926f3607c13a17`  
+		Last Modified: Mon, 15 Sep 2025 23:32:33 GMT  
+		Size: 696.3 MB (696281556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b07046b74a48fb1578155a045dfcf5f029bce00f8fb83e2ebfc0879c2774df7`  
-		Last Modified: Tue, 02 Sep 2025 01:05:37 GMT  
-		Size: 187.0 B  
+	-	`sha256:a241d2d17b34de96ce6d900c43c8dbc554024dc2bfc494a4f0abecd8687238b7`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6dddf5211b5010aa9015029cf0c1686fbc293c3285191b080f0e564bf34406b`  
-		Last Modified: Tue, 02 Sep 2025 01:05:37 GMT  
-		Size: 819.0 B  
+	-	`sha256:2e41a847a66122287fa6c16ffa19829e752d3b5dd7d609f57443794a856327b4`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 816.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22a93a2dbda4f453e5ae599546698d0b423c4ff8df8ac4c90db268817773d766`  
-		Last Modified: Tue, 02 Sep 2025 01:05:37 GMT  
-		Size: 849.0 B  
+	-	`sha256:c50830a1ced44181704a474e65995d14aee493cc243dc45b2d6130768b5cc717`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 845.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0792a748d30ea522a2729addd4b91f1547c654eb8cdc290c6a6a6f34fca7857e`  
-		Last Modified: Tue, 02 Sep 2025 01:05:36 GMT  
-		Size: 233.0 B  
+	-	`sha256:f12ff620be47119efd41d0a52bdef7c2081c744e82909ed5e42bd91c7256c5b8`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d56d4162ee68bb45cac5db977eb962429912a3b8225e60bb5cce8b9cbdc9fbf1`  
-		Last Modified: Tue, 02 Sep 2025 01:05:37 GMT  
-		Size: 219.0 B  
+	-	`sha256:60a172d6cbf3ec69d361cec1086eef6af798b02e7cf1b39c56fb88419f955ceb`  
+		Last Modified: Mon, 15 Sep 2025 22:14:34 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8b59cdc083fbeb3cae24c35b9c55878f7cb81e85a73bc9e2c135ccd461c4e6a`  
-		Last Modified: Tue, 02 Sep 2025 01:05:37 GMT  
+	-	`sha256:eac65c9c0d4358c4e047649af2de09c983bba07d2baa67715328428c1d11560f`  
+		Last Modified: Mon, 15 Sep 2025 22:14:37 GMT  
 		Size: 931.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchbase:enterprise` - unknown; unknown
 
 ```console
-$ docker pull couchbase@sha256:eba72329a5d707fed55ca39d7c0bede8cda6a7e0ff4d19c1465fe487bd533793
+$ docker pull couchbase@sha256:4e8d2869b20a165b03177a0eba7bfaadaeb49d932063388a9c3dd17f9f421044
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.4 KB (38390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e64bbfd9f41af8491cc67e6aba034cd19cd7f924f544c08e0b720fed9924a491`
+-	Image ID: `sha256:ae42e5b4a00ef3e235524c022159936cf15e362707e1837314636ff727b0642b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dc4879ac46f6e3c139ab0b7e7b94b1529f4dd54cc367337742012d28040f5bde`  
-		Last Modified: Tue, 02 Sep 2025 02:33:25 GMT  
+	-	`sha256:6ed317aa99634bf9d5438d62467fef06cc4b791f7dc877960a0fbcbb33161d2b`  
+		Last Modified: Mon, 15 Sep 2025 23:31:58 GMT  
 		Size: 38.4 KB (38390 bytes)  
 		MIME: application/vnd.in-toto+json
