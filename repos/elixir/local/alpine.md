@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af7e18abb7ced1f40fb5eb141137e0eb8738a25f2c4592bb5b3a667bb52e637c`
+- Image ID: `sha256:ee4238155dbaf8ed6c6d3cee2e049513e9654f24829cfc35ae8dd4806f3dfc4d`
 - Created: `2025-06-30T17:24:21Z`
-- Virtual Size: ~ 101.74 Mb  
+- Virtual Size: ~ 107.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=28.0.2`
+  - `OTP_VERSION=28.0.4`
   - `REBAR3_VERSION=3.25.0`
   - `ELIXIR_VERSION=v1.18.4`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=28.0.2`
+  - `org.opencontainers.image.version=28.0.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.2-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.2-r0 license:
 Apache-2.0
 
 ```
@@ -260,16 +260,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.2-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.2-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.2-r0 license:
 Apache-2.0
 
 ```

@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e38689bfb927d5bc176f8ff8092570c88494916fdde569d262aa0997337e2cd7`
+- Image ID: `sha256:3df090ec085617909b51c116e1a38a096364220658e84de2836c951e51c3d3ea`
 - Created: `2025-05-22T14:26:26Z`
 - Virtual Size: ~ 1.63 Gb  
   (total size of all layers on-disk)
@@ -10,13 +10,13 @@
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5.13`
+  - `OTP_VERSION=26.2.5.15`
   - `REBAR3_VERSION=3.25.0`
   - `REBAR_VERSION=2.6.4`
   - `ELIXIR_VERSION=v1.18.4`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5.13`
+  - `org.opencontainers.image.version=26.2.5.15`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1011,11 +1011,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:2.6.1-4~deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:2.6.1-4~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.4.2-3+deb12u8`
+### `dpkg` source package: `cups=2.4.2-3+deb12u9`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.2-3+deb12u8`
+- `libcups2:amd64=2.4.2-3+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -1029,18 +1029,18 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.4.2-3+deb12u8
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3%2bdeb12u8.dsc' cups_2.4.2-3+deb12u8.dsc 3389 SHA256:526c48402f1410ae55dccc0dd6e6ebe654d15e877829ea0e2b8aece7a20c56b7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2.orig.tar.gz' cups_2.4.2.orig.tar.gz 8128785 SHA256:f03ccb40b087d1e30940a40e0141dcbba263f39974c20eb9f2521066c9c6c908
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2.orig.tar.gz.asc' cups_2.4.2.orig.tar.gz.asc 228 SHA256:1c116a5fb52e013f4569c3e4cb09a9934ea5e498b9e9d3b823bc2ae09066555b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3%2bdeb12u8.debian.tar.xz' cups_2.4.2-3+deb12u8.debian.tar.xz 390072 SHA256:e66c4a352a0b89665a8506019f37bfe36a9d032c95c6dad41206ae908404ff9e
+$ apt-get source -qq --print-uris cups=2.4.2-3+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2-3%2bdeb12u9.dsc' cups_2.4.2-3+deb12u9.dsc 3389 SHA256:6474d31542a44084f27e82c780a9874d923517e495487949b517da6c3e7b08dd
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2.orig.tar.gz' cups_2.4.2.orig.tar.gz 8128785 SHA256:f03ccb40b087d1e30940a40e0141dcbba263f39974c20eb9f2521066c9c6c908
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2.orig.tar.gz.asc' cups_2.4.2.orig.tar.gz.asc 228 SHA256:1c116a5fb52e013f4569c3e4cb09a9934ea5e498b9e9d3b823bc2ae09066555b
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2-3%2bdeb12u9.debian.tar.xz' cups_2.4.2-3+deb12u9.debian.tar.xz 391124 SHA256:7cdfaf0d9339a16723ee25e940e65172cd446baf35c476a2fa6de6f4730080c2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/2.4.2-3+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.4.2-3+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.4.2-3+deb12u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/2.4.2-3+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.4.2-3+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.4.2-3+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.88.1-10+deb12u14`
 
