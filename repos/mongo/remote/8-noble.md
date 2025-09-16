@@ -1,7 +1,7 @@
 ## `mongo:8-noble`
 
 ```console
-$ docker pull mongo@sha256:f4367b45782bf9538cdd83e661b37a09891646bf63a6bc5d1d5980c61dd6d3e9
+$ docker pull mongo@sha256:6af40fe9ff78852af89a5ee720a6c3646f7c983149aeeb39a9a327d0b5e4a5c3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull mongo@sha256:f4367b45782bf9538cdd83e661b37a09891646bf63a6bc5d1d598
 ### `mongo:8-noble` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:ef25168dda966e8771443df116f4ba1495fd1190ef4cc777c6231d3a280efe90
+$ docker pull mongo@sha256:42545cf0629db918d1a24a2df8bbca6926ed87bfabf59afc85008dd948448cc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.5 MB (298485153 bytes)**  
+-	Total Size: **298.4 MB (298396325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eff94de2e019609f60acd477a0f6f6da18ed1dd4b111539050dcd4830638aad3`
+-	Image ID: `sha256:a542858eb092b9a1940d08a88c4cd4ddd914bd371c3882b4e8696784d14dbfd8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 14:36:58 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 14:36:58 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 14:36:58 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 14:36:58 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 19 Aug 2025 14:37:00 GMT
-ADD file:e67907c77897d27192314f6c4fa0112b6f7dce3e127500516535cc50fe736c92 in / 
-# Tue, 19 Aug 2025 14:37:01 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ADD file:dafefa97de6dc66a6734ec6f05e58125ce01225cccce3f50662330c252aad518 in / 
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["/bin/bash"]
 # Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
@@ -84,88 +84,88 @@ CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:76249c7cd50397d2e8c06a75106723d057deaba0ffbc7f4af1bb02bcf71d81cf`  
-		Last Modified: Tue, 19 Aug 2025 17:39:10 GMT  
-		Size: 29.7 MB (29723064 bytes)  
+	-	`sha256:953cdd4133718b72c5d0a78e754c1405c02510fdb5237265f7955863f1757f83`  
+		Last Modified: Wed, 10 Sep 2025 09:09:40 GMT  
+		Size: 29.7 MB (29723450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ccce675b9196511cf433580fbb0bb5637c1daab43587bd7144848d08aef509`  
-		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:275311375b8aeb84da2c5f9b521363906f85276346019535ce1c0d6b63d1d8c7`  
+		Last Modified: Mon, 15 Sep 2025 22:22:52 GMT  
+		Size: 1.2 KB (1215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ba0ed20cdee627aa1fbcb24ecf73ff958853057399d7ada8cdda98cf4dd08a9`  
-		Last Modified: Mon, 08 Sep 2025 22:51:48 GMT  
-		Size: 1.5 MB (1509085 bytes)  
+	-	`sha256:1bcda349eff4fe754431a14622c3593d38cfeccb275ee68652d0f8f735798ca3`  
+		Last Modified: Mon, 15 Sep 2025 22:22:54 GMT  
+		Size: 1.5 MB (1509106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da3134f8e68647a7123b4ac350a37d2ad309bbde14917814456f7734a83437c0`  
-		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
-		Size: 933.1 KB (933117 bytes)  
+	-	`sha256:24d3684e3e31c4434717436bac0700a1f14af426e0955b6db6be752dc8fc33bb`  
+		Last Modified: Mon, 15 Sep 2025 22:22:52 GMT  
+		Size: 933.1 KB (933134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a20c427c2ead81581380b6c8e3c1a5b78b48bfaf3d004c13c4609f8dfa127b9d`  
-		Last Modified: Mon, 08 Sep 2025 22:51:54 GMT  
+	-	`sha256:85e4b02a45eb40ad4778159be5b8396c20f8be1f6f9f82819535451e3dd81f0f`  
+		Last Modified: Mon, 15 Sep 2025 22:22:52 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5777c09b20e7e37464a8d804fba7faf34495ff13a6564bb79c1585d62492611c`  
-		Last Modified: Mon, 08 Sep 2025 22:51:59 GMT  
+	-	`sha256:59656346abc5d9043e3da7b4926855003a2493b9186a04bef9c16c41ebb3d719`  
+		Last Modified: Mon, 15 Sep 2025 22:22:52 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:930dfd6340eb6878d40f935b6965e1d87fb79e93b0f28e00018551a4eb6d0fe3`  
-		Last Modified: Mon, 08 Sep 2025 22:52:06 GMT  
-		Size: 266.3 MB (266313287 bytes)  
+	-	`sha256:7704f919bba4f42ae2d842832b8c8287b324b35f3ecf9d46bd47542ae397cece`  
+		Last Modified: Mon, 15 Sep 2025 23:20:46 GMT  
+		Size: 266.2 MB (266224042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96b1c4e20b5db4e77e99be8e36c4f3477990eaca78f81dd2e97ebdadc2f3f803`  
-		Last Modified: Mon, 08 Sep 2025 22:52:04 GMT  
-		Size: 5.0 KB (5003 bytes)  
+	-	`sha256:985e719dc64299f806ef958fbf0ee06f262b547fffc148b00c7bd86a48862d9d`  
+		Last Modified: Mon, 15 Sep 2025 22:22:52 GMT  
+		Size: 5.0 KB (4998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:ac3c4a4d60cac2f92eee8a2c6596f34c69d63b38b8306bc9f4f46db087b53880
+$ docker pull mongo@sha256:c354a7f5ec571dd784670f667b7275d7305cc0c7059948c37ab3c9d2c6e2a5bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2695145 bytes)**  
+-	Total Size: **2.7 MB (2695149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9df39db23719dea2e9a4dc1ec1365f581438567bd142bd88b2129b3b7b48afb7`
+-	Image ID: `sha256:e8b2abf5855d740b03bef5b2060a09d8805cb6075422ca482797a0422e695695`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cbfa16dbbd0a7b538a7cb3bc261f5a357fb84f4191c14ff9bf46976e74445c84`  
-		Last Modified: Tue, 09 Sep 2025 01:08:15 GMT  
-		Size: 2.7 MB (2666306 bytes)  
+	-	`sha256:13455760c786a1d84d4c15b49b1f97a4fbb2f93d8b5b6492709c0c8cb2821792`  
+		Last Modified: Tue, 16 Sep 2025 01:07:35 GMT  
+		Size: 2.7 MB (2666310 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ea483408ab875b86a698e276bc72701ad9f7e6481f9ae67c9c8c39b0c49b4dc5`  
-		Last Modified: Tue, 09 Sep 2025 01:08:16 GMT  
+	-	`sha256:01945ce75d17fae225ed93d4db904998844ec0f72fa56fbb8e289855ac97ba9f`  
+		Last Modified: Tue, 16 Sep 2025 01:07:36 GMT  
 		Size: 28.8 KB (28839 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mongo:8-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:1dd0c159f306bed8aad5a448e2670fd055ee488ddcc1f1d67dbc5794e2e6d30c
+$ docker pull mongo@sha256:e61431ba13f29feb736a81a9ad3eaa046043077d9d8e2fda857bc088287b7679
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.2 MB (286197514 bytes)**  
+-	Total Size: **286.0 MB (286032086 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14ffc41c9728ef0b211afa91c36851d4455257fa666d2fe5b7cbc1ee1b70f80c`
+-	Image ID: `sha256:cff92cf11ae924b70af8689a30c0679eab4d275511ba1edb6b512827bf26322c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 14:38:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 14:38:31 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 14:38:32 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 14:38:32 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 19 Aug 2025 14:38:35 GMT
-ADD file:b7517e9b93ca90114b86d36fa835651ac45b762e188edb92fc804391a8989e04 in / 
-# Tue, 19 Aug 2025 14:38:35 GMT
+# Mon, 08 Sep 2025 20:03:49 GMT
+ADD file:4e55519deacaaab35bcc389ec63f319a61c50e3f8f7d19a0df61fa1571c86c6a in / 
+# Mon, 08 Sep 2025 20:03:49 GMT
 CMD ["/bin/bash"]
 # Mon, 08 Sep 2025 20:03:49 GMT
 RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb # buildkit
@@ -214,59 +214,59 @@ CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cc43ec4c13811c515d52d11a6039f3659696499c8782f5f3f601a3fdedf14082`  
-		Last Modified: Tue, 19 Aug 2025 17:59:52 GMT  
-		Size: 28.9 MB (28860240 bytes)  
+	-	`sha256:59a5d47f84c39a2d62d1b5089e60ab67303111f17e1df01dbbcc598246282797`  
+		Last Modified: Wed, 10 Sep 2025 09:09:46 GMT  
+		Size: 28.9 MB (28861317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f841815c69881be17f797ce9cf1d1163b247b789e5cdcdb29437902e6d9ff2d4`  
-		Last Modified: Tue, 09 Sep 2025 02:16:03 GMT  
+	-	`sha256:f994017a761ad41c695bfee51b1c642ea24e2ac5b579905790f67b985db73307`  
+		Last Modified: Mon, 15 Sep 2025 22:21:47 GMT  
 		Size: 1.2 KB (1215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:beda4782864366c239c155759047ed5e5ad4fc8b94fd90132ea66954df24bd27`  
-		Last Modified: Tue, 09 Sep 2025 02:16:04 GMT  
-		Size: 1.5 MB (1494059 bytes)  
+	-	`sha256:8e9ef52c2c391aacc6cd8cdcc09dafa3f24f92703f1ed986503838cf77db4b8e`  
+		Last Modified: Mon, 15 Sep 2025 22:21:47 GMT  
+		Size: 1.5 MB (1494164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b43425e165b5ee63a1ad55300001fce3443164f4242e1cdda37c770a9b164c7`  
-		Last Modified: Tue, 09 Sep 2025 02:16:05 GMT  
-		Size: 885.1 KB (885136 bytes)  
+	-	`sha256:3647350d8df5b16e5fbaf42ef0141559a9eccae82ebc3a39d86124361a6de7d5`  
+		Last Modified: Mon, 15 Sep 2025 22:21:47 GMT  
+		Size: 885.3 KB (885263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d5286ced06dc2b3c2692d35bb8edbb9308d73245d9bf533b8be09bc0c536f65`  
-		Last Modified: Tue, 09 Sep 2025 02:16:05 GMT  
+	-	`sha256:bf3b0c494ba850f123dffce8a28703c75ea0b044d1d61b3b3683d009589bb152`  
+		Last Modified: Mon, 15 Sep 2025 22:21:47 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1abc0514d8e96567035975f10203e1477b66a44bcc75624ffc61b393952f83a`  
-		Last Modified: Tue, 09 Sep 2025 02:16:04 GMT  
-		Size: 264.0 B  
+	-	`sha256:f13fd5f6c6841e63db3e8d6fdde75ddc0d428a9a15b57d5134dd23890268d999`  
+		Last Modified: Mon, 15 Sep 2025 22:21:47 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e3fe511aefadb9d4f074cbec0a4c9341c623c1a6ecd657e68eb9b1adbfe5a0f`  
-		Last Modified: Tue, 09 Sep 2025 03:00:58 GMT  
-		Size: 255.0 MB (254951482 bytes)  
+	-	`sha256:0f210e551d295ab8b795871284295e4be9419df3e58c35d0d9d6c3ba4fe723c5`  
+		Last Modified: Mon, 15 Sep 2025 23:17:29 GMT  
+		Size: 254.8 MB (254784747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:791918c131046c0fa611fa9bd95c2c117a2649fdac9b27ab53dd9bc99c6b5453`  
-		Last Modified: Tue, 09 Sep 2025 02:16:04 GMT  
-		Size: 5.0 KB (5002 bytes)  
+	-	`sha256:a44ec074022635ab530c3aed70bba3676df7b4114c0cc445464d26424297f530`  
+		Last Modified: Mon, 15 Sep 2025 22:21:47 GMT  
+		Size: 5.0 KB (5001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mongo:8-noble` - unknown; unknown
 
 ```console
-$ docker pull mongo@sha256:fd53c81eb7a3cb99c9bdf28f6c7b7928d5608f6ee3dcb13d618ab5571d4ef3e9
+$ docker pull mongo@sha256:801ebff60f4381c0aef0d750cd8e4b34947512c7b3bea749f164931a4a2f3f3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2696509 bytes)**  
+-	Total Size: **2.7 MB (2696512 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bb36d4dd20a3104c0def9363219f3e9a0f692892ccd3c7369d9d06301ad02cc`
+-	Image ID: `sha256:e7354dc7ad3c66662a2351f9e34efcf9d9cc45bd1bac0f568a8995472a37797d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:321d90ba13953d57e535b66afe0725592dd2a7f6a7e676e80f7c29d33e8095c7`  
-		Last Modified: Tue, 09 Sep 2025 04:08:22 GMT  
-		Size: 2.7 MB (2667442 bytes)  
+	-	`sha256:113ae38841c9830b72ae23d5c306a861d2e718bd2697d3f6f14dde284350d7e7`  
+		Last Modified: Tue, 16 Sep 2025 00:31:55 GMT  
+		Size: 2.7 MB (2667446 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4c4715bd3eb5d28d26397d61f62250eec798244d7cd950eeca3033f35b3b549`  
-		Last Modified: Tue, 09 Sep 2025 04:08:22 GMT  
-		Size: 29.1 KB (29067 bytes)  
+	-	`sha256:0355a991831c1f5e36cf60cb078cc042f38776961674d987bf52d983cc275713`  
+		Last Modified: Tue, 16 Sep 2025 00:31:51 GMT  
+		Size: 29.1 KB (29066 bytes)  
 		MIME: application/vnd.in-toto+json
