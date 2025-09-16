@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:05cbee60139c40399a51c5b7ebed0ef97dfa790aefeff7a81cfab66b175c9384`
-- Created: `2025-08-28T10:13:21Z`
+- Image ID: `sha256:10dbba47529cbfdf1ba2f0867907ef68f361d847b44b292612f3c52ede78fd57`
+- Created: `2025-09-10T10:32:40Z`
 - Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.45`
-  - `TOMCAT_SHA512=2ebff699600c7a11c26e2d166eea3fa4851f894784b87f58555c6f53f4240cec836eef042fc74426959a58d41e68525f015c5f86ca35231b3d19dee07e82abc0`
+  - `TOMCAT_VERSION=10.1.46`
+  - `TOMCAT_SHA512=20da89fa77fb8d4dbfccf6c68383751348169542aad9d3cbcaf82011337355b9847b883cc71678fa6cc71ef3f55e8d5d7a09a53238b86011816fa989f9c4ff5e`
   - `XWIKI_VERSION=17.7.0`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.7.0`
   - `XWIKI_DOWNLOAD_SHA256=709d599c0312d23e21dedcb69e8756b05c5085caea78c268fc9806f2a3957edc`
@@ -459,11 +459,11 @@ $ apt-get source -qq --print-uris clucene-core=2.3.3.4+dfsg-1.2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/clucene-core/clucene-core_2.3.3.4%2bdfsg-1.2ubuntu2.debian.tar.xz' clucene-core_2.3.3.4+dfsg-1.2ubuntu2.debian.tar.xz 11184 SHA512:0a8d0c582c6a90b72ea294c053d1842c23091d944f8241a0cf8bc42cfb555f09b6c3ea538cdefd7e2151c96e071829ea4ab73bb25f6745b86daf9930b13ebb93
 ```
 
-### `dpkg` source package: `coreutils=9.4-3ubuntu6`
+### `dpkg` source package: `coreutils=9.4-3ubuntu6.1`
 
 Binary Packages:
 
-- `coreutils=9.4-3ubuntu6`
+- `coreutils=9.4-3ubuntu6.1`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -478,17 +478,17 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.dsc' coreutils_9.4-3ubuntu6.dsc 2022 SHA512:a48ee363d37e1bda569763d0c42fb13c7b16a5e46e5973d95247b55437aca6ca17e5088e92d5fa6cba0063a7113e2bc1ba027b422703005109cb64d5498237ec
+$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.dsc' coreutils_9.4-3ubuntu6.1.dsc 2030 SHA512:dc10ff1405ba4f50260e3d63b62162e4b9c7d4d258da785f956e008f63ed7dfbf2e10753643e688658957ce0d185b4b31e4c22e8e08007112f2102264926fc6f
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA512:7c55ee23b685a0462bbbd118b04d25278c902604a0dcf3bf4f8bf81faa0500dee5a7813cba6f586d676c98e520cafd420f16479619305e94ea6798d8437561f5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.debian.tar.xz' coreutils_9.4-3ubuntu6.debian.tar.xz 40496 SHA512:2aad112da8db4f919aab7d04a78fc244cdc357665d1b856df099d402cdabd43b5568eee7c96db064149eff9c9ee62503dc0a393f04bf50cb530aa163566bd8f7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
 ```
 
-### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.3`
+### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.4`
 
 Binary Packages:
 
-- `libcups2t64:amd64=2.4.7-1.2ubuntu7.3`
+- `libcups2t64:amd64=2.4.7-1.2ubuntu7.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 
@@ -499,9 +499,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.4.dsc' cups_2.4.7-1.2ubuntu7.4.dsc 3188 SHA512:505fa6ac81d714cbdca0387512918be486fd5c6db88753ccef5d52138f73b1b4b45d9460fcfcc5e43b82681d9ea5eb4c79d3690ab6139954e46115a28f409956
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.4.debian.tar.xz' cups_2.4.7-1.2ubuntu7.4.debian.tar.xz 409276 SHA512:f24cd526dec8b6a1633aedb01e06765d6fe34266842079078f89c5b42e70872df622ac4d42759892802c51d94fd8d602674f1d634a4fb2321517a733b5d01099
+```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
 
@@ -2860,20 +2865,25 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.4-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.4-3build1.diff.gz' libxinerama_1.1.4-3build1.diff.gz 8639 SHA512:d2a13c86831e6fdc23f6f02a4afa8cd7e0d404a87805d793085cb9b59171fe7dd8f74eee8cd2a4c471802dfd24bf4effe2cf6514032066ee20ce663a8d3555f8
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.4`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.5`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.4`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.5.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.5.dsc 3038 SHA512:29b6940fd822a9cf39c4c23f3aa789153955dfeb540a54954f99abf0ba3e78313c5113cdb5c129741687212aeacd4b1053a94d591e7a2a8c1c9044e7f4f1ab97
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.5.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.5.debian.tar.xz 43244 SHA512:8b9cc8d29807a2c220353cfa05b28d9da2a3ea95c075b8861d75e3802ef3631cd7863b49abea4cf6a43415a009e138f577abcafd98109448a476e5cc720a5d1d
+```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`
 
@@ -3815,11 +3825,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.debian.tar.xz' shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz 96392 SHA512:67cd7c7f869250d39ebb7af023ae4aca6eef88de143a85510135d547bb6988895ef02d9aff798888e5d507f415d7d17193c354b2437764b0c4bea18b1178531d
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.4`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.5`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.4`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -3830,11 +3840,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.dsc' sqlite3_3.45.1-1ubuntu2.4.dsc 2601 SHA512:bdff95dee57936221fae6f9afb63298e036ba70ffb273f1ff25f3a063cdc9166214758ce789c2604dc5bdd564a24aa7d7217d1078b98a38c957b89eda9796589
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.dsc' sqlite3_3.45.1-1ubuntu2.5.dsc 2601 SHA512:fb56794498668ca451db41d705708b505877abaa88f4bd36b47d7642f3f9513fb3597c77517e05dd821c90a341de8c032c3f7f39ebdc40a33b99a1802f51907a
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.4.debian.tar.xz 34820 SHA512:5eb09438632a9793590fbb3b3ce47ca3dccbc75cee58009d74fe67e656f327108a10c64e722c52e96c4c6c10a91621a8de4926a89f7fb1e006ec6915f92ded0c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz 35260 SHA512:a031e8f6aeefbb9ea45439a24dc82f9e74b12c3e92b6444057648cc07187c00a0ca6cf32a6c51c0e50787f41d525c687cc3dad7492b46d785fa1088b04d10ea1
 ```
 
 ### `dpkg` source package: `suitesparse=1:7.6.1+dfsg-1build1`
