@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72ff9b0d42b4296ec88a705e7708c22f406ba341327cf70b6858ba0543f1fbd2`
-- Created: `2025-08-01T23:04:24.310095255Z`
-- Virtual Size: ~ 77.00 Mb  
+- Image ID: `sha256:cd51e1b424b2fe3a247012e15bd39dbf7924de54139d3b1ed6f9db7efa9a5f58`
+- Created: `2025-09-10T05:06:35.25595699Z`
+- Virtual Size: ~ 77.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -216,11 +216,11 @@ $ apt-get source -qq --print-uris cdebconf=0.277ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.277ubuntu1.tar.xz' cdebconf_0.277ubuntu1.tar.xz 286968 SHA512:ebb8cee8ee8d84aaab49a03211d9cad56dec362d80e63f7375dad09e06eecb7a44811078327daf73d14f6bb9bbbba13adc1ac9ec03dbda0ea31c79532c5a6f12
 ```
 
-### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.1`
+### `dpkg` source package: `coreutils=9.5-1ubuntu1.25.04.2`
 
 Binary Packages:
 
-- `coreutils=9.5-1ubuntu1.25.04.1`
+- `coreutils=9.5-1ubuntu1.25.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -232,9 +232,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils=9.5-1ubuntu1.25.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.2.dsc' coreutils_9.5-1ubuntu1.25.04.2.dsc 2070 SHA512:504c83248e95eee6cdb6ea9de00286e7853b94498f9ef849e4631c15e1df97787db4ef5c5363e38ba357dbd7ac84789093a91e014d44dfd8a7594298786881f4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA512:2ca0deac4dc10a80fd0c6fd131252e99d457fd03b7bd626a6bc74fe5a0529c0a3d48ce1f5da1d3b3a7a150a1ce44f0fbb6b68a6ac543dfd5baa3e71f5d65401c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.5-1ubuntu1.25.04.2.debian.tar.xz' coreutils_9.5-1ubuntu1.25.04.2.debian.tar.xz 31736 SHA512:6c290618801df22112a7874ea3a423d55603f97485c1c2571e057415f2a7bcd69f64026f9939345a6133b6657c00419c6a62a912f71ffdfa8e02c635c44f2445
+```
 
 ### `dpkg` source package: `dash=0.5.12-12ubuntu1`
 
