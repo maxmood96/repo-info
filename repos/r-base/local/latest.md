@@ -1148,14 +1148,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.14-4
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-4.dsc' graphite2_1.3.14-4.dsc 2574 SHA256:adf240ba09e2fbdafe1ce606b2949090367c7fc80f9d35f3dd18ebad7df00020
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-4.debian.tar.xz' graphite2_1.3.14-4.debian.tar.xz 15284 SHA256:9af20d2fe3154ff2a0e819e91254c5153ceba25b61b1263870caeb565afc1f46
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/graphite2/1.3.14-4/
+
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -2327,21 +2326,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxt=1:1.2.1-1.2
-'http://deb.debian.org/debian/pool/main/libx/libxt/libxt_1.2.1-1.2.dsc' libxt_1.2.1-1.2.dsc 2373 SHA256:780be4cf9b0b90757758691dc8196d85322b30a599c36fb8fe368b7060c7b774
-'http://deb.debian.org/debian/pool/main/libx/libxt/libxt_1.2.1.orig.tar.gz' libxt_1.2.1.orig.tar.gz 1024473 SHA256:6da1bfa9dd0ed87430a5ce95b129485086394df308998ebe34d98e378e3dfb33
-'http://deb.debian.org/debian/pool/main/libx/libxt/libxt_1.2.1.orig.tar.gz.asc' libxt_1.2.1.orig.tar.gz.asc 358 SHA256:da406cc94c25ca6773bb37c2055e2eb5665491f7ca6dfc9ea04f0f30ea3fd098
-'http://deb.debian.org/debian/pool/main/libx/libxt/libxt_1.2.1-1.2.diff.gz' libxt_1.2.1-1.2.diff.gz 45635 SHA256:d4c510871909584398d88552b69cc5e92e124098ce544be93ef1743d0d112d4c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxt/1:1.2.1-1.2/
 
-- https://sources.debian.net/src/libxt/1:1.2.1-1.2/ (for browsing the source)
-- https://sources.debian.net/src/libxt/1:1.2.1-1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxt/1:1.2.1-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.7+dfsg-1.1`
 
@@ -2401,14 +2392,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.21-1
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.21-1.dsc' littler_0.3.21-1.dsc 1874 SHA256:6c4c5d6ca4b508b42975ebb39a936646b654dacaa8823b25d3eeb14a55e36490
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.21.orig.tar.gz' littler_0.3.21.orig.tar.gz 129864 SHA256:9e8be7aca97ef31ecc7af845954caddf52f9dad4d28ee1392dca829b75e64085
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.21-1.debian.tar.xz' littler_0.3.21-1.debian.tar.xz 7040 SHA256:46d6509af2b1343d9871c0d4dc3715b28d20c815f232bef8ae9310358f706088
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/littler/0.3.21-1/
+
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -2632,21 +2622,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.8.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.8.0-1.dsc' nghttp3_1.8.0-1.dsc 1603 SHA256:ffc623e78be62361a82f0a2e7b9a19ff0bcdfc371b8bcc1842039499a12adba2
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.8.0.orig.tar.xz' nghttp3_1.8.0.orig.tar.xz 398640 SHA256:a9dd28970977e6802a3eaf2cfaeae6d0fae60c8d2c0f2c4ce600036a7998ee9a
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.8.0.orig.tar.xz.asc' nghttp3_1.8.0.orig.tar.xz.asc 833 SHA256:c2549dd50a5ad392610d108244357c1cc750fd5bf4a5ef91de1d94d11c49b0cf
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.8.0-1.debian.tar.xz' nghttp3_1.8.0-1.debian.tar.xz 8228 SHA256:fc0cfa954de5b8fef85bd13e1edcbfccb463ce211905e925921b608390c840c9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.8.0-1/
 
-- https://sources.debian.net/src/nghttp3/1.8.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.168-1`
 
@@ -2682,14 +2664,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openblas=0.3.30+ds-2
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.30%2bds-2.dsc' openblas_0.3.30+ds-2.dsc 4670 SHA256:0783d78f68b66583a988f188e478aaf72a71ec830a70f8542f718d860e8d24e4
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.30%2bds.orig.tar.xz' openblas_0.3.30+ds.orig.tar.xz 2230516 SHA256:441ce70583c6d5d18a727b9b20110818f7794cf8209859969d95edc1c5eda30b
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.30%2bds-2.debian.tar.xz' openblas_0.3.30+ds-2.debian.tar.xz 25464 SHA256:6d88e8b2657237988576318e8b13a79599f320f702458df0a1e326f02357fa4d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openblas/0.3.30+ds-2/
+
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 
@@ -3526,20 +3507,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.7.0-4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-4.dsc' tiff_4.7.0-4.dsc 2255 SHA256:9e0e4bf74a2a9bb336380d5aedab154904842408aca5a585c69d4e6f975d4d62
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-4.debian.tar.xz' tiff_4.7.0-4.debian.tar.xz 25572 SHA256:e5fc06518bafea2b271fade4089aa399c57c9750a06d7f0f1646db0342b9be90
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.7.0-4/
 
-- https://sources.debian.net/src/tiff/4.7.0-4/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.17-1`
 
@@ -3652,20 +3626,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.1-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.1-2.dsc' util-linux_2.41.1-2.dsc 4942 SHA256:c0c269ecef45b13d0fb23d12f8c0dd7722cfbbe8370a9ba6b17b18ba2f46099f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.1.orig.tar.xz' util-linux_2.41.1.orig.tar.xz 9606156 SHA256:be9ad9a276f4305ab7dd2f5225c8be1ff54352f565ff4dede9628c1aaa7dec57
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.1-2.debian.tar.xz' util-linux_2.41.1-2.debian.tar.xz 105440 SHA256:0ef516a5bb3bdfa74f39cc35204c72e7f1dafd8a25515bd125dbbc3b2642e911
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.1-2/
 
-- https://sources.debian.net/src/util-linux/2.41.1-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.1.1230-2`
 
