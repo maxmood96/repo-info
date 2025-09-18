@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fcc894a3d98ad4e8792a131bc4ad3e5143cadc877ff911061f8978f67756829`
+- Image ID: `sha256:423d9e146d1e48795e9b13d28e9b31fcc511265a9141604b41ae44e1aa8db7ef`
 - Created: `2025-09-12T20:29:18Z`
 - Virtual Size: ~ 442.36 Mb  
   (total size of all layers on-disk)
@@ -308,11 +308,11 @@ $ apt-get source -qq --print-uris cdebconf=0.271ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.271ubuntu3.tar.xz' cdebconf_0.271ubuntu3.tar.xz 285500 SHA512:f9a3204842db5e0f0e042c9df72dee17692422bc4c745bc0c332317ec87dc219e26eda94404c1d7b0a6d5d6c2105da0b9ebe615c4897f012883bc8222f9ac85d
 ```
 
-### `dpkg` source package: `coreutils=9.4-3ubuntu6`
+### `dpkg` source package: `coreutils=9.4-3ubuntu6.1`
 
 Binary Packages:
 
-- `coreutils=9.4-3ubuntu6`
+- `coreutils=9.4-3ubuntu6.1`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -327,10 +327,10 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.dsc' coreutils_9.4-3ubuntu6.dsc 2022 SHA512:a48ee363d37e1bda569763d0c42fb13c7b16a5e46e5973d95247b55437aca6ca17e5088e92d5fa6cba0063a7113e2bc1ba027b422703005109cb64d5498237ec
+$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.dsc' coreutils_9.4-3ubuntu6.1.dsc 2030 SHA512:dc10ff1405ba4f50260e3d63b62162e4b9c7d4d258da785f956e008f63ed7dfbf2e10753643e688658957ce0d185b4b31e4c22e8e08007112f2102264926fc6f
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA512:7c55ee23b685a0462bbbd118b04d25278c902604a0dcf3bf4f8bf81faa0500dee5a7813cba6f586d676c98e520cafd420f16479619305e94ea6798d8437561f5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.debian.tar.xz' coreutils_9.4-3ubuntu6.debian.tar.xz 40496 SHA512:2aad112da8db4f919aab7d04a78fc244cdc357665d1b856df099d402cdabd43b5568eee7c96db064149eff9c9ee62503dc0a393f04bf50cb530aa163566bd8f7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
 ```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
@@ -543,8 +543,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.1.dsc' dpkg_1.22.6ubuntu6.1.dsc 3156 SHA512:30f74ae1977a3f49ba4878afc4800cf783588e34222c62375cb74acdcd9defaf650705cd17c0296a9f4d86bbd8b3f9de9c40c3b09d1a23eca7972ffd40890226
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.1.tar.xz' dpkg_1.22.6ubuntu6.1.tar.xz 5548380 SHA512:0d6970717cd7f41687c3f42dd0b96edff2a40312bc4e6c60c586c5b7cf5309f8cce354074cd9d5a227e9602e48d1e0015afc01f24d64697e085cbd1da0123137
+'http://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.1.dsc' dpkg_1.22.6ubuntu6.1.dsc 3156 SHA512:30f74ae1977a3f49ba4878afc4800cf783588e34222c62375cb74acdcd9defaf650705cd17c0296a9f4d86bbd8b3f9de9c40c3b09d1a23eca7972ffd40890226
+'http://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.1.tar.xz' dpkg_1.22.6ubuntu6.1.tar.xz 5548380 SHA512:0d6970717cd7f41687c3f42dd0b96edff2a40312bc4e6c60c586c5b7cf5309f8cce354074cd9d5a227e9602e48d1e0015afc01f24d64697e085cbd1da0123137
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
