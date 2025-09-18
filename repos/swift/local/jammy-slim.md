@@ -1,10 +1,10 @@
-# `swift:6.1.3-jammy-slim`
+# `swift:6.2.0-jammy-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0124cef719f3500f97b9f03635df1dfa4ddd3bae79fedd587d2bf4e7a0336b07`
-- Created: `2025-09-06T05:03:28Z`
-- Virtual Size: ~ 276.17 Mb  
+- Image ID: `sha256:a1c9c74b1ac282f960c40dadb6618b6e56625a3e06136dc95b431cd09862c899`
+- Created: `2025-09-15T22:15:37Z`
+- Virtual Size: ~ 280.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.1.3-release`
-  - `SWIFT_VERSION=swift-6.1.3-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2-release`
+  - `SWIFT_VERSION=swift-6.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1185,20 +1185,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.27-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.debian.tar.xz' libxcrypt_4.4.27-1.debian.tar.xz 7764 SHA512:02e38ba06f3555dd930fc7ed44602dc816ce48f4c29fdc085249948596d5e7e96600cb81c8c9fb2e1dc33574d5136d08feeff3eb1dd3522aa8e5cdc9037c1ae0
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.8`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.9`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.8`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.9.dsc' libxml2_2.9.13+dfsg-1ubuntu0.9.dsc 3030 SHA512:2fafe45e162b58ba80a6bc5540ba6c9f99dd0a9c1f075ae12a981260a4e0eed6da05a1bdea8a27832e187009f685b57cbad6505faa6fe0ca8c64a698d6984904
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.9.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.9.debian.tar.xz 44700 SHA512:808b59439fe86e5aa4aeba1cb8566fb99e3aed9bd15af64925a571ee3d67ff24aef2385677796ae3fd84ce14798571b68f0668665ceefa9da2960b03629dd880
+```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 

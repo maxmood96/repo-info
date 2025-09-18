@@ -1,10 +1,10 @@
-# `swift:6.1.3-jammy`
+# `swift:6.2.0-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5993e73ebf553302615fafdace70e820876c14693dd8e81d709b8c5cec2e0a73`
-- Created: `2025-09-06T05:03:28Z`
-- Virtual Size: ~ 3.51 Gb  
+- Image ID: `sha256:c73fcc98234d4716120247517c016c384ee9dff258cf6b5efc78ee2bf694aab1`
+- Created: `2025-09-15T22:15:37Z`
+- Virtual Size: ~ 3.96 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.1.3-release`
-  - `SWIFT_VERSION=swift-6.1.3-RELEASE`
+  - `SWIFT_BRANCH=swift-6.2-release`
+  - `SWIFT_VERSION=swift-6.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1954,21 +1954,26 @@ $ apt-get source -qq --print-uris libxext=2:1.3.4-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxext/libxext_1.3.4-1build1.diff.gz' libxext_1.3.4-1build1.diff.gz 12588 SHA512:bfcebe8e6e277dc1ea81063a4a4663e24b78f2b69439e3b8ed2209168016876f55e8e95c6a1828ab5bf7a1936ec795e14f4391b24ec8801e0102e00e953d46e4
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.8`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.9`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.8`
-- `libxml2-dev:amd64=2.9.13+dfsg-1ubuntu0.8`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.9`
+- `libxml2-dev:amd64=2.9.13+dfsg-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-dev/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.9.dsc' libxml2_2.9.13+dfsg-1ubuntu0.9.dsc 3030 SHA512:2fafe45e162b58ba80a6bc5540ba6c9f99dd0a9c1f075ae12a981260a4e0eed6da05a1bdea8a27832e187009f685b57cbad6505faa6fe0ca8c64a698d6984904
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.9.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.9.debian.tar.xz 44700 SHA512:808b59439fe86e5aa4aeba1cb8566fb99e3aed9bd15af64925a571ee3d67ff24aef2385677796ae3fd84ce14798571b68f0668665ceefa9da2960b03629dd880
+```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3`
 
