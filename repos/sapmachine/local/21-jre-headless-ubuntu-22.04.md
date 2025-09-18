@@ -1,13 +1,13 @@
-# `sapmachine:lts-jre-headless-ubuntu-jammy`
+# `sapmachine:21-jre-headless-ubuntu-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3192ed4358a3c2259190af1fc443c5b94755c89bc2197327af6973abacdfa29f`
-- Created: `2025-07-15T19:58:06Z`
+- Image ID: `sha256:15a774f44e26e3a47986df7df03290fe05bdf17f5716547bb57ca7898e9001c3`
+- Created: `2025-08-11T06:09:32Z`
 - Virtual Size: ~ 252.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/lib/jvm/sapmachine-21`

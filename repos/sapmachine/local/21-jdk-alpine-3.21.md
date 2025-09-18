@@ -1,9 +1,9 @@
-# `sapmachine:lts-alpine-3.21`
+# `sapmachine:21-alpine-3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e9a41ae633053bad2079c9948d9f7c88a8df0417b7f887c84670323441c0c77`
-- Created: `2025-07-15T19:58:06Z`
+- Image ID: `sha256:cc5d5a18df28af5f918275226f2e74b2ae726ff7d19d90e143ca1b9c127fa32a`
+- Created: `2025-08-11T06:09:32Z`
 - Virtual Size: ~ 379.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -595,16 +595,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```

@@ -1,4 +1,4 @@
-# `sapmachine:lts-jdk-headless-ubuntu-jammy`
+# `sapmachine:21-jdk-headless-ubuntu-jammy`
 
 ## Docker Metadata
 

@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:300132390bad8abb5a3237e3ae36d296c7f30ed44ee7369fd336a36fe65d90c6`
-- Created: `2025-07-15T19:58:20Z`
-- Virtual Size: ~ 420.08 Mb  
+- Image ID: `sha256:2c3714a29c422fbe08b74bd89b4b203ac88e81311a95a7ab94a5147168813f2b`
+- Created: `2025-09-17T04:28:56Z`
+- Virtual Size: ~ 424.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-24-sapmachine-jdk`
+  - `JAVA_HOME=/usr/lib/jvm/java-25-sapmachine-jdk`
 
 ## `apk` (`.apk`-based packages)
 
@@ -558,19 +558,19 @@ MPL-2.0
 
 ```
 
-### `apk` package: `sapmachine-24-jdk`
+### `apk` package: `sapmachine-25-jdk`
 
 ```console
-sapmachine-24-jdk-24.0.2-r0 description:
+sapmachine-25-jdk-25-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-24-jdk-24.0.2-r0 webpage:
+sapmachine-25-jdk-25-r0 webpage:
 https://sapmachine.io
 
-sapmachine-24-jdk-24.0.2-r0 installed size:
-378 MiB
+sapmachine-25-jdk-25-r0 installed size:
+381 MiB
 
-sapmachine-24-jdk-24.0.2-r0 license:
+sapmachine-25-jdk-25-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -595,16 +595,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```

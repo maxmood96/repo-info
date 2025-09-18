@@ -1,16 +1,16 @@
-# `sapmachine:lts-jdk-headless-ubuntu-jammy`
+# `sapmachine:jdk-headless-ubuntu-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a53aa7eb1d9f3073458f90c6d997615f607194e8e8c20265f8efd4adb97da2f6`
-- Created: `2025-07-15T19:58:06Z`
-- Virtual Size: ~ 447.98 Mb  
+- Image ID: `sha256:86c18219ca1f2c61c4d23c574b85af740b546766f8daf99c93dd07be6138a224`
+- Created: `2025-09-17T04:28:56Z`
+- Virtual Size: ~ 491.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-21`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-25`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1534,11 +1534,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-21-jdk-headless=21.0.8`
+### `dpkg` source package: `sapmachine-25-jdk-headless=25`
 
 Binary Packages:
 
-- `sapmachine-21-jdk-headless=21.0.8`
+- `sapmachine-25-jdk-headless=25`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

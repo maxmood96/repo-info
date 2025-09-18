@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f35cd3812959e0fb2936ea4b621598e671fc4710fd29430618d53425ba902b6b`
-- Created: `2025-07-15T19:58:20Z`
-- Virtual Size: ~ 214.45 Mb  
+- Image ID: `sha256:2eaae11a30b5f987a0ea8fe3dfc596809ee64bbe5a2290edf8f17faf1eeafe23`
+- Created: `2025-09-17T04:28:56Z`
+- Virtual Size: ~ 217.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-24-sapmachine-jre`
+  - `JAVA_HOME=/usr/lib/jvm/java-25-sapmachine-jre`
 
 ## `apk` (`.apk`-based packages)
 
@@ -221,16 +221,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `java-common`
 
 ```console
-java-common-0.5-r0 description:
+java-common-1.0-r0 description:
 Java common (updates java links)
 
-java-common-0.5-r0 webpage:
+java-common-1.0-r0 webpage:
 https://git.alpinelinux.org/aports/
 
-java-common-0.5-r0 installed size:
+java-common-1.0-r0 installed size:
 1 B
 
-java-common-0.5-r0 license:
+java-common-1.0-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -561,33 +561,33 @@ MPL-2.0
 ### `apk` package: `nss`
 
 ```console
-nss-3.112-r0 description:
+nss-3.114-r0 description:
 Mozilla Network Security Services
 
-nss-3.112-r0 webpage:
+nss-3.114-r0 webpage:
 https://developer.mozilla.org/docs/Mozilla/Projects/NSS
 
-nss-3.112-r0 installed size:
-3900 KiB
+nss-3.114-r0 installed size:
+3913 KiB
 
-nss-3.112-r0 license:
+nss-3.114-r0 license:
 MPL-2.0
 
 ```
 
-### `apk` package: `sapmachine-24-jre`
+### `apk` package: `sapmachine-25-jre`
 
 ```console
-sapmachine-24-jre-24.0.2-r0 description:
+sapmachine-25-jre-25-r0 description:
 The SapMachine Java Runtime Environment
 
-sapmachine-24-jre-24.0.2-r0 webpage:
+sapmachine-25-jre-25-r0 webpage:
 https://sapmachine.io
 
-sapmachine-24-jre-24.0.2-r0 installed size:
-181 MiB
+sapmachine-25-jre-25-r0 installed size:
+184 MiB
 
-sapmachine-24-jre-24.0.2-r0 license:
+sapmachine-25-jre-25-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -612,16 +612,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```

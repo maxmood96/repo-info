@@ -1,13 +1,13 @@
-# `sapmachine:lts-jre-alpine`
+# `sapmachine:21-jre-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:43e2d7842dd0acc3813e6668b84d6858d20d8e4bfdc06b92189f4e0e2fdcf3ef`
-- Created: `2025-07-15T19:58:06Z`
-- Virtual Size: ~ 184.19 Mb  
+- Image ID: `sha256:daccfa23ad77d51c0334da4f96069512faff3e88d91c4a7ec5b28a8e4e1ed2fd`
+- Created: `2025-08-11T06:09:32Z`
+- Virtual Size: ~ 184.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/lib/jvm/java-21-sapmachine-jre`
@@ -221,16 +221,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `java-common`
 
 ```console
-java-common-0.5-r0 description:
+java-common-1.0-r0 description:
 Java common (updates java links)
 
-java-common-0.5-r0 webpage:
+java-common-1.0-r0 webpage:
 https://git.alpinelinux.org/aports/
 
-java-common-0.5-r0 installed size:
+java-common-1.0-r0 installed size:
 1 B
 
-java-common-0.5-r0 license:
+java-common-1.0-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `nss`
 
 ```console
-nss-3.112-r0 description:
+nss-3.114-r0 description:
 Mozilla Network Security Services
 
-nss-3.112-r0 webpage:
+nss-3.114-r0 webpage:
 https://developer.mozilla.org/docs/Mozilla/Projects/NSS
 
-nss-3.112-r0 installed size:
-3900 KiB
+nss-3.114-r0 installed size:
+3913 KiB
 
-nss-3.112-r0 license:
+nss-3.114-r0 license:
 MPL-2.0
 
 ```
@@ -612,16 +612,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.49.2-r0 description:
+sqlite-libs-3.49.2-r1 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.49.2-r0 webpage:
+sqlite-libs-3.49.2-r1 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.49.2-r0 installed size:
+sqlite-libs-3.49.2-r1 installed size:
 1553 KiB
 
-sqlite-libs-3.49.2-r0 license:
+sqlite-libs-3.49.2-r1 license:
 blessing
 
 ```

@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d4eef19d5ddb0d6c28f9a8bc1c235370ec46400a369b7c99908971b30e21873`
-- Created: `2025-07-15T19:58:11Z`
+- Image ID: `sha256:5bb5e7e04b1b562fa489d95ba1bb50d4ded451a6f2c919a93fc862cf93e657bf`
+- Created: `2025-08-11T06:09:35Z`
 - Virtual Size: ~ 233.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/lib/jvm/sapmachine-17`

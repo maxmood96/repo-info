@@ -1,16 +1,16 @@
-# `sapmachine:lts-jre-ubuntu-jammy`
+# `sapmachine:jre-ubuntu-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1097fa8312694ab0ea72f430608fcd93afabd326770b35386d1d450bb98eaf18`
-- Created: `2025-07-15T19:58:06Z`
-- Virtual Size: ~ 256.39 Mb  
+- Image ID: `sha256:6aa47556d3fc43f3622357ba9a69fece82851a758d0b2aa7bc7a270f09832d63`
+- Created: `2025-09-17T04:28:56Z`
+- Virtual Size: ~ 289.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-21`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-25`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1752,11 +1752,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-21-jre=21.0.8`
+### `dpkg` source package: `sapmachine-25-jre=25`
 
 Binary Packages:
 
-- `sapmachine-21-jre=21.0.8`
+- `sapmachine-25-jre=25`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

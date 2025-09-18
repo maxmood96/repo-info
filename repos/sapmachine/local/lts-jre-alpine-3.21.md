@@ -1,16 +1,16 @@
-# `sapmachine:lts-jre-alpine-3.21`
+# `sapmachine:jre-alpine-3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc983509e0766f46d6e1769c733f28555b4019ebcd809873484e3bc72a22915d`
-- Created: `2025-07-15T19:58:06Z`
-- Virtual Size: ~ 183.56 Mb  
+- Image ID: `sha256:686bdc50115f59babae50c7e828797726916e5d57265b3c31f9dd19e2e260dc5`
+- Created: `2025-09-17T04:28:56Z`
+- Virtual Size: ~ 216.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-21-sapmachine-jre`
+  - `JAVA_HOME=/usr/lib/jvm/java-25-sapmachine-jre`
 
 ## `apk` (`.apk`-based packages)
 
@@ -558,19 +558,19 @@ MPL-2.0
 
 ```
 
-### `apk` package: `sapmachine-21-jre`
+### `apk` package: `sapmachine-25-jre`
 
 ```console
-sapmachine-21-jre-21.0.8-r0 description:
+sapmachine-25-jre-25-r0 description:
 The SapMachine Java Runtime Environment
 
-sapmachine-21-jre-21.0.8-r0 webpage:
+sapmachine-25-jre-25-r0 webpage:
 https://sapmachine.io
 
-sapmachine-21-jre-21.0.8-r0 installed size:
-152 MiB
+sapmachine-25-jre-25-r0 installed size:
+184 MiB
 
-sapmachine-21-jre-21.0.8-r0 license:
+sapmachine-25-jre-25-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -595,16 +595,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```

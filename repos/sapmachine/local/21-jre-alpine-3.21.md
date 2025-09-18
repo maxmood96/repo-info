@@ -1,13 +1,13 @@
-# `sapmachine:lts-jre-alpine-3.21`
+# `sapmachine:21-jre-alpine-3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc983509e0766f46d6e1769c733f28555b4019ebcd809873484e3bc72a22915d`
-- Created: `2025-07-15T19:58:06Z`
+- Image ID: `sha256:658735da41134195d35a1e552d12f316bfde3bafb8a1311357fc33e368d31e8d`
+- Created: `2025-08-11T06:09:32Z`
 - Virtual Size: ~ 183.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["jshell"]`
+- Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/lib/jvm/java-21-sapmachine-jre`
@@ -595,16 +595,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r2 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r2 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r2 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r2 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```
