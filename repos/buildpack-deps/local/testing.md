@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.152
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.152.dsc' adduser_3.152.dsc 1678 SHA256:5ad23648a879d006e7a57d351720d4cbbbe3fb5e274ea52beb4f619896b9d520
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.152.tar.xz' adduser_3.152.tar.xz 334252 SHA256:484cdde2d48053be40657b564375469fc577e89f3b984b01aed247b6081355b8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.152/
 
-- https://sources.debian.net/src/adduser/3.152/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -613,21 +607,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.15.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0-1.dsc' curl_8.15.0-1.dsc 3231 SHA256:07ea9589c2ddcc0b0914ff453be55eb672189dcab1d850d07acfd24095422f88
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0.orig.tar.gz' curl_8.15.0.orig.tar.gz 4164379 SHA256:d85cfc79dc505ff800cb1d321a320183035011fa08cb301356425d86be8fc53c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0.orig.tar.gz.asc' curl_8.15.0.orig.tar.gz.asc 488 SHA256:e42b7de5f97107c9496883750f739b8ebeb5947e2af5340847fd483530f4f970
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0-1.debian.tar.xz' curl_8.15.0-1.debian.tar.xz 50824 SHA256:79b1a0601f6cd7045d903828a8bcd4f547b97f082b1e54ed5e17d0678eced1bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.15.0-1/
 
-- https://sources.debian.net/src/curl/8.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -1718,20 +1704,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.14-3
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-3.dsc' graphite2_1.3.14-3.dsc 2558 SHA256:da01edffbe48695ce0d212ffdb0bad1f3d199f7553b77d3b6c9b2425982bbe70
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-3.debian.tar.xz' graphite2_1.3.14-3.debian.tar.xz 15224 SHA256:72b3caba0ea0e9bd09742ae66d342c0f2370360fd9bde3515910d5643da65d01
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.14-3/
 
-- https://sources.debian.net/src/graphite2/1.3.14-3/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.14-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.14-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -3442,20 +3421,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-0.2-7/copyright`, `/usr/share/doc
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.13-1.1
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.13-1.1.dsc' libwmf_0.2.13-1.1.dsc 2345 SHA256:05907248aae50ef26e44f518b628008b86cb8666513e568473fb62dfdee504af
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.13.orig.tar.gz' libwmf_0.2.13.orig.tar.gz 3044235 SHA256:18ba69febd2f515d98a2352de284a8051896062ac9728d2ead07bc39ea75a068
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.13-1.1.debian.tar.xz' libwmf_0.2.13-1.1.debian.tar.xz 25784 SHA256:0032481fbf98810ca446ab8931392acd13bfee29d1df4000fb783b7126f8e0f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwmf/0.2.13-1.1/
 
-- https://sources.debian.net/src/libwmf/0.2.13-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libwmf/0.2.13-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwmf/0.2.13-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.8.12-1`
 
@@ -3781,20 +3753,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.16.3-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.3-1.dsc' linux_6.16.3-1.dsc 208623 SHA256:23786655bbd52893fdab826855027f21b62f2771b17ee7959a755eb26162b9f5
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.3.orig.tar.xz' linux_6.16.3.orig.tar.xz 155666204 SHA256:1224ed87406c28766f98872242620e77a1a93a6d9ae5c0cefecc2ac6754e29ce
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.3-1.debian.tar.xz' linux_6.16.3-1.debian.tar.xz 1534496 SHA256:b2177e8599aa747bd529c913d700e3ec4646be0dce333727655fc1fbb4218250
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.16.3-1/
 
-- https://sources.debian.net/src/linux/6.16.3-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.16.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.16.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -5252,20 +5217,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=48.0-2
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_48.0-2.dsc' sysprof_48.0-2.dsc 3085 SHA256:8e67bfd77ba5d6405dd373625553fedb2d2147aa29268c5639e459727a787e8e
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_48.0.orig.tar.xz' sysprof_48.0.orig.tar.xz 1224264 SHA256:1b0f0380f2f30708ba87829321a06fee1db36dfa87797bbf07f0a7acf4498d18
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_48.0-2.debian.tar.xz' sysprof_48.0-2.debian.tar.xz 17728 SHA256:212e0fb593e6d23ae74ebeca99d73bb9cc5c4bc23607dd384b7e5552a9cd6da6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/48.0-2/
 
-- https://sources.debian.net/src/sysprof/48.0-2/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/48.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/48.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=258~rc3-1`
 

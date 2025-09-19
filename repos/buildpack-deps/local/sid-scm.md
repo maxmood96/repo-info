@@ -183,20 +183,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.1.1-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.1.1-1.dsc' audit_4.1.1-1.dsc 2546 SHA256:e3a3dc27c200b4f30b803932d3df0de7429c192dc7b90831c421a4b4fe87a85d
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.1.1.orig.tar.gz' audit_4.1.1.orig.tar.gz 647606 SHA256:c2dd5fe7c204a5725bc96e3a6eadc86ece4a13e4a4bb98e79f6fe104a09cd4c3
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.1.1-1.debian.tar.xz' audit_4.1.1-1.debian.tar.xz 19728 SHA256:515740585da840b18ada8848fc870fd83cb2de4b622e15c00e4be9ec1e74a735
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.1.1-1/
 
-- https://sources.debian.net/src/audit/1:4.1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=14`
 
@@ -3046,20 +3039,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=258~rc4-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258%7erc4-1.dsc' systemd_258~rc4-1.dsc 8599 SHA256:3266c06a6979cf1e293c4b521a346a9b307b1d05b87d65b73318384e98d44bb1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258%7erc4.orig.tar.gz' systemd_258~rc4.orig.tar.gz 16966974 SHA256:4ecc701154e2372b4e108d9b3c616e985d2a1ef0e563c73ba8849e93a154011a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258%7erc4-1.debian.tar.xz' systemd_258~rc4-1.debian.tar.xz 181988 SHA256:8f3df4bc79d4f45250a5c9ef5c510c56e47989b500937b2f3705a2fa4bcd1d9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/258~rc4-1/
 
-- https://sources.debian.net/src/systemd/258~rc4-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/258~rc4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/258~rc4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 

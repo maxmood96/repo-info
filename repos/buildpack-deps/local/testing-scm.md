@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.152
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.152.dsc' adduser_3.152.dsc 1678 SHA256:5ad23648a879d006e7a57d351720d4cbbbe3fb5e274ea52beb4f619896b9d520
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.152.tar.xz' adduser_3.152.tar.xz 334252 SHA256:484cdde2d48053be40657b564375469fc577e89f3b984b01aed247b6081355b8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.152/
 
-- https://sources.debian.net/src/adduser/3.152/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -435,21 +429,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.15.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0-1.dsc' curl_8.15.0-1.dsc 3231 SHA256:07ea9589c2ddcc0b0914ff453be55eb672189dcab1d850d07acfd24095422f88
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0.orig.tar.gz' curl_8.15.0.orig.tar.gz 4164379 SHA256:d85cfc79dc505ff800cb1d321a320183035011fa08cb301356425d86be8fc53c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0.orig.tar.gz.asc' curl_8.15.0.orig.tar.gz.asc 488 SHA256:e42b7de5f97107c9496883750f739b8ebeb5947e2af5340847fd483530f4f970
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.15.0-1.debian.tar.xz' curl_8.15.0-1.debian.tar.xz 50824 SHA256:79b1a0601f6cd7045d903828a8bcd4f547b97f082b1e54ed5e17d0678eced1bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.15.0-1/
 
-- https://sources.debian.net/src/curl/8.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
