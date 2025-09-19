@@ -6280,10 +6280,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mysql-8.0=8.0.43-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.43-0ubuntu0.22.04.1.dsc 3821 SHA512:56be8fa0718b69d0d8779f2f5b8e4ccac27b705b3f865daab9b3e2bb098438e2e7fbd2078cb831bf5d56ad2e241710a5faa129a54f8097c2b4a0f14325602cb0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43.orig.tar.gz' mysql-8.0_8.0.43.orig.tar.gz 492715363 SHA512:433666f03448833a24e3811afb0fb98cdaeac573f1dc3b682afa10f534f3d3750c515ea93ef2b07557ea5d7151051e181a845e0885d2ac63f01558938c4485ba
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43.orig.tar.gz.asc' mysql-8.0_8.0.43.orig.tar.gz.asc 833 SHA512:63584b7260edcfbf9b848d1361a4d41f238cb691e6ac8328105e933bf62435741e39bdacf249373748a1d36d32d5466c5eb8d8c9c29a4ca80b44238184d959ca
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.43-0ubuntu0.22.04.1.debian.tar.xz 162856 SHA512:0574b07b3e30ba8fc013eae1c9c0a5a47c934a90c31ec30dffa6236de961557ea019a2a91acfc9458e9ce9639f0745246cecc92b9d736b4ce9b650e304ebe9ea
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.43-0ubuntu0.22.04.1.dsc 3821 SHA512:56be8fa0718b69d0d8779f2f5b8e4ccac27b705b3f865daab9b3e2bb098438e2e7fbd2078cb831bf5d56ad2e241710a5faa129a54f8097c2b4a0f14325602cb0
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43.orig.tar.gz' mysql-8.0_8.0.43.orig.tar.gz 492715363 SHA512:433666f03448833a24e3811afb0fb98cdaeac573f1dc3b682afa10f534f3d3750c515ea93ef2b07557ea5d7151051e181a845e0885d2ac63f01558938c4485ba
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43.orig.tar.gz.asc' mysql-8.0_8.0.43.orig.tar.gz.asc 833 SHA512:63584b7260edcfbf9b848d1361a4d41f238cb691e6ac8328105e933bf62435741e39bdacf249373748a1d36d32d5466c5eb8d8c9c29a4ca80b44238184d959ca
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.43-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.43-0ubuntu0.22.04.1.debian.tar.xz 162856 SHA512:0574b07b3e30ba8fc013eae1c9c0a5a47c934a90c31ec30dffa6236de961557ea019a2a91acfc9458e9ce9639f0745246cecc92b9d736b4ce9b650e304ebe9ea
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
