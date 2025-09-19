@@ -1,4 +1,4 @@
-# `wordpress:6.8.2-apache`
+# `wordpress:6.8.2-php8.2-apache`
 
 ## Docker Metadata
 

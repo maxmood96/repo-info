@@ -1,4 +1,4 @@
-# `wordpress:cli-2.12.0`
+# `wordpress:cli-2.12.0-php8.2`
 
 ## Docker Metadata
 
