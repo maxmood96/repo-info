@@ -1,10 +1,10 @@
-# `composer:2.8.11`
+# `composer:2.8.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:62c6cdbf26871a10aeab8d3d02a0cbf9cb6b3ede2a0e6a0c60d2ddcc935973c1`
-- Created: `2025-08-21T11:47:39Z`
-- Virtual Size: ~ 213.02 Mb  
+- Image ID: `sha256:af0a7f68d2db028a980aee72eabd7623023f3fcac41108c53d839708c114bbba`
+- Created: `2025-09-19T12:51:13Z`
+- Virtual Size: ~ 213.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=c1b7978cbb5054eed6c749bde4444afc16a3f2268101fb70a7d5d9b1083b12ad`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.8.11`
+  - `COMPOSER_VERSION=2.8.12`
 
 ## `apk` (`.apk`-based packages)
 
@@ -132,16 +132,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.9-r2 description:
+apk-tools-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.9-r2 webpage:
+apk-tools-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.9-r2 installed size:
+apk-tools-2.14.9-r3 installed size:
 68 KiB
 
-apk-tools-2.14.9-r2 license:
+apk-tools-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -472,16 +472,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.9-r2 description:
+libapk2-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.9-r2 webpage:
+libapk2-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.9-r2 installed size:
+libapk2-2.14.9-r3 installed size:
 179 KiB
 
-libapk2-2.14.9-r2 license:
+libapk2-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
