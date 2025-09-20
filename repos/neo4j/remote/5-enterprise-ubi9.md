@@ -1,7 +1,7 @@
 ## `neo4j:5-enterprise-ubi9`
 
 ```console
-$ docker pull neo4j@sha256:c686de89d0ef3de6eed549a966327a9364e08ca51cdd08d7be65903cd9903b9a
+$ docker pull neo4j@sha256:f0df37009180e8fca40066f660f32b6b07c4c0b1545699596f9a7129ce714c96
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,53 +14,55 @@ $ docker pull neo4j@sha256:c686de89d0ef3de6eed549a966327a9364e08ca51cdd08d7be659
 ### `neo4j:5-enterprise-ubi9` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:6089f065db2f9b574a03494683088025cf54e2c6923bb3c021addd2048b2e8b6
+$ docker pull neo4j@sha256:4d6660a0709650d934bb7b7aa2e2e0f932757ddbac4fa3684e9c5fcbd0d250ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **631.3 MB (631252729 bytes)**  
+-	Total Size: **631.4 MB (631396224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12cedf121255ae9c3b6012aba98cd5520e98f125394238b25dae198638b35f74`
+-	Image ID: `sha256:af1d7af0a027f4438655bc0769181e927783b78a673d4e40b7bc16c1155f81bb`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
-# Wed, 20 Aug 2025 13:14:24 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 20 Aug 2025 13:14:24 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 20 Aug 2025 13:14:24 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 20 Aug 2025 13:14:24 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Wed, 20 Aug 2025 13:14:25 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 ENV container oci
-# Wed, 20 Aug 2025 13:14:25 GMT
-COPY dir:e1f22eafd6489859288910ef7585f9d694693aa84a31ba9d54dea9e7a451abe6 in / 
-# Wed, 20 Aug 2025 13:14:26 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
+COPY dir:c341d431f712f164558c0a23b4ff14b886e2ce5a998d4c5baaaa381ffd7c3b00 in / 
+# Thu, 04 Sep 2025 06:40:51 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Wed, 20 Aug 2025 13:14:26 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 CMD ["/bin/bash"]
-# Wed, 20 Aug 2025 13:14:26 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /usr/share/buildinfo/content-sets.json 
-# Wed, 20 Aug 2025 13:14:26 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 COPY file:58cc94f5b3b2d60de2c77a6ed4b1797dcede502ccdb429a72e7a72d994235b3c in /root/buildinfo/content_manifests/content-sets.json 
-# Wed, 20 Aug 2025 13:14:26 GMT
-LABEL "build-date"="2025-08-20T13:12:41" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="f4b088292653bbf5ca8188a5e59ffd06a8671d4b" "release"="1755695350"
+# Thu, 04 Sep 2025 06:40:51 GMT
+COPY file:097ec12a5c22da979b55e75443e50150904b478d4249b64b2431aae8901ea4d2 in /root/buildinfo/labels.json 
+# Thu, 04 Sep 2025 06:40:51 GMT
+LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0c20ee48321f5d64135f6208d1332c0b032df6c3" "org.opencontainers.image.revision"="0c20ee48321f5d64135f6208d1332c0b032df6c3" "build-date"="2025-09-18T08:36:33Z" "release"="1758184547"
 # Thu, 04 Sep 2025 06:40:51 GMT
 RUN set -eux;     arch="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${arch}" in         'x86_64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini";             tini_sha="93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c";             ;;         'aarch64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini-arm64";             tini_sha="07952557df20bfd2a95f9bef198b445e006171969499a1d361bd9e6f8e5e0e81";             ;;         *) echo >&2 "Neo4j does not currently have a docker image for architecture $arch"; exit 1 ;;     esac;     microdnf install -y --nodocs         findutils         gcc         git         gzip         hostname         java-17-openjdk-headless         jq         make         procps         shadow-utils         tar         wget         which;     wget -q ${tini_url} -O /usr/bin/tini;     wget -q ${tini_url}.asc -O tini.asc;     echo "${tini_sha}"  /usr/bin/tini | sha256sum -c --strict --quiet;     chmod a+x /usr/bin/tini;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys         595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7         B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify tini.asc /usr/bin/tini;     git clone https://github.com/ncopa/su-exec.git;     cd su-exec;     git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af;     echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c;     echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c;     make;     mv /su-exec/su-exec /usr/bin/su-exec;     gpgconf --kill all;     rm -rf "$GNUPGHOME" /tini.asc /su-exec;     microdnf remove -y git* perl* make gcc glibc-headers glibc-devel libxcrypt-devel;     microdnf clean all # buildkit
 # Thu, 04 Sep 2025 06:40:51 GMT
@@ -87,21 +89,21 @@ CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:1e02d32990adc4dad7c8927f91cca33a1baba746105504093311eb3b0b691fa0`  
-		Last Modified: Wed, 20 Aug 2025 15:04:59 GMT  
-		Size: 39.6 MB (39647287 bytes)  
+	-	`sha256:9f4bff248214d12c7254dc3c25ef82bd14ff143e2a06d159f2a8cc1c9e6ef1fd`  
+		Last Modified: Thu, 18 Sep 2025 15:30:42 GMT  
+		Size: 39.6 MB (39648249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4de2749a86fef47b41d29e7f2291348fd567fb88bf8b2e91ca482ce62ed03fa9`  
-		Last Modified: Thu, 04 Sep 2025 18:07:33 GMT  
-		Size: 124.5 MB (124471925 bytes)  
+	-	`sha256:be5b49b0bf687299fdc38e9b6bac1077163896a4f1a4ef865c1d0700c6bfc19c`  
+		Last Modified: Fri, 19 Sep 2025 20:48:20 GMT  
+		Size: 124.6 MB (124614344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81b552c9d59cf3a0ebdee291acc40f04ec1c534a915ed0df2b58e8fc00548fd0`  
-		Last Modified: Thu, 04 Sep 2025 16:48:50 GMT  
-		Size: 10.1 KB (10063 bytes)  
+	-	`sha256:8b215bbce9c6998518f6ae5f9ff8ab2508200d27ae7a02265c07f3fd0c6f103f`  
+		Last Modified: Fri, 19 Sep 2025 20:48:02 GMT  
+		Size: 10.1 KB (10064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90cb6a0d057d1ee15ac4ea221bc886fd7c2b3d327220ae51b097b63d10872040`  
-		Last Modified: Thu, 04 Sep 2025 18:07:39 GMT  
-		Size: 467.1 MB (467123422 bytes)  
+	-	`sha256:801048ffee8c71ad8db863da8eecc0f5e11980b80321e697bbe22b34470271c3`  
+		Last Modified: Sat, 20 Sep 2025 00:57:21 GMT  
+		Size: 467.1 MB (467123535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -111,77 +113,79 @@ CMD ["neo4j"]
 ### `neo4j:5-enterprise-ubi9` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:a200445e114a30606e16e8ec89bed812d8c2c25cc261286eb80022cc69f7fc6d
+$ docker pull neo4j@sha256:09419e55bdd049a4ab1b053df258dd5d7bd24ec7a500fc0845beb8fb710f0ef9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5643241 bytes)**  
+-	Total Size: **5.6 MB (5643250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28c881bb6032f7d63f65f12c53ace061c5337cf09b1e7c680b33a7ef42c203a4`
+-	Image ID: `sha256:127cdcf4a693a5e7b5f5d60e7df0b62cc325bc8db762fe207ace4f91b4748b85`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fc5f276e627abdc6a641dbf7170251f5a02a94cd27e67afdf279531b6d07840`  
-		Last Modified: Thu, 04 Sep 2025 17:44:05 GMT  
-		Size: 5.6 MB (5622955 bytes)  
+	-	`sha256:78ebb7392ecc621b2f4b6dc0265f8ff8f260aef5bc9856507e16ede58598b792`  
+		Last Modified: Fri, 19 Sep 2025 23:44:08 GMT  
+		Size: 5.6 MB (5622965 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:532d72729d3c4ffdc86e1395e2fcd5c475e441a2941d350b93eb15c0a678ffb3`  
-		Last Modified: Thu, 04 Sep 2025 17:44:05 GMT  
-		Size: 20.3 KB (20286 bytes)  
+	-	`sha256:d78a1b95d81b9fa92bcdb7f78791971a3c57e88fe9bdb6b15e11a09125151d41`  
+		Last Modified: Fri, 19 Sep 2025 23:44:09 GMT  
+		Size: 20.3 KB (20285 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:5-enterprise-ubi9` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:f6df1018bccc90a1c46af1038fc6e2b48562d3a7bfce8150086957a35f9a5979
+$ docker pull neo4j@sha256:da71229c19e9f57e6dac687f0e544a9eb0c7063ff9b331ac313dc7874aba5896
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **629.4 MB (629381200 bytes)**  
+-	Total Size: **629.6 MB (629591705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4757e6fc16ecd0454825b0bc5c8030dbc788a73bae04cfd22bf7185df1bd4969`
+-	Image ID: `sha256:ee07959893028072d86790e614f3d1e96ab9e38cb132b48ff77d9882050220c0`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
-# Wed, 20 Aug 2025 13:15:02 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 20 Aug 2025 13:15:02 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 20 Aug 2025 13:15:02 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 20 Aug 2025 13:15:02 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.6"       distribution-scope="public"
-# Wed, 20 Aug 2025 13:15:02 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Wed, 20 Aug 2025 13:15:03 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 ENV container oci
-# Wed, 20 Aug 2025 13:15:04 GMT
-COPY dir:f91aecd64a5df0b73e2b5740ae90f4bb03c2e87890175a65862ca830f6caced5 in / 
-# Wed, 20 Aug 2025 13:15:04 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
+COPY dir:9f6ea5fd9a48598d911c3860918a4b145eb452cb81a81a77f69e1ed6481637df in / 
+# Thu, 04 Sep 2025 06:40:51 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Wed, 20 Aug 2025 13:15:04 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 CMD ["/bin/bash"]
-# Wed, 20 Aug 2025 13:15:04 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /usr/share/buildinfo/content-sets.json 
-# Wed, 20 Aug 2025 13:15:04 GMT
+# Thu, 04 Sep 2025 06:40:51 GMT
 COPY file:0667e9d31385a24c3aef13f2dd9ab6a7b71b3dfcfef5127d3c1e2ea2c838e5cb in /root/buildinfo/content_manifests/content-sets.json 
-# Wed, 20 Aug 2025 13:15:04 GMT
-LABEL "build-date"="2025-08-20T13:14:46" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="f4b088292653bbf5ca8188a5e59ffd06a8671d4b" "release"="1755695350"
+# Thu, 04 Sep 2025 06:40:51 GMT
+COPY file:f5f06837bcbb5ebacc66d8764dd5ddb2c916d273cd4f80d9b8b34880aba3bbeb in /root/buildinfo/labels.json 
+# Thu, 04 Sep 2025 06:40:51 GMT
+LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="0c20ee48321f5d64135f6208d1332c0b032df6c3" "org.opencontainers.image.revision"="0c20ee48321f5d64135f6208d1332c0b032df6c3" "build-date"="2025-09-18T08:39:36Z" "release"="1758184547"
 # Thu, 04 Sep 2025 06:40:51 GMT
 RUN set -eux;     arch="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${arch}" in         'x86_64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini";             tini_sha="93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c";             ;;         'aarch64')             tini_url="https://github.com/krallin/tini/releases/download/v0.19.0/tini-arm64";             tini_sha="07952557df20bfd2a95f9bef198b445e006171969499a1d361bd9e6f8e5e0e81";             ;;         *) echo >&2 "Neo4j does not currently have a docker image for architecture $arch"; exit 1 ;;     esac;     microdnf install -y --nodocs         findutils         gcc         git         gzip         hostname         java-17-openjdk-headless         jq         make         procps         shadow-utils         tar         wget         which;     wget -q ${tini_url} -O /usr/bin/tini;     wget -q ${tini_url}.asc -O tini.asc;     echo "${tini_sha}"  /usr/bin/tini | sha256sum -c --strict --quiet;     chmod a+x /usr/bin/tini;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys         595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7         B42F6819007F00F88E364FD4036A9C25BF357DD4;     gpg --batch --verify tini.asc /usr/bin/tini;     git clone https://github.com/ncopa/su-exec.git;     cd su-exec;     git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af;     echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c;     echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c;     make;     mv /su-exec/su-exec /usr/bin/su-exec;     gpgconf --kill all;     rm -rf "$GNUPGHOME" /tini.asc /su-exec;     microdnf remove -y git* perl* make gcc glibc-headers glibc-devel libxcrypt-devel;     microdnf clean all # buildkit
 # Thu, 04 Sep 2025 06:40:51 GMT
@@ -208,21 +212,21 @@ CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:73ac460760dbc07b4e932677ed1d86c86c51259cd8ea7c5f1d5b13c9dd3d9d59`  
-		Last Modified: Wed, 20 Aug 2025 18:13:24 GMT  
-		Size: 37.9 MB (37859581 bytes)  
+	-	`sha256:a9f9218e937ae927e68fe68d00604365ddda1b238616443bc0a4b9e574067342`  
+		Last Modified: Thu, 18 Sep 2025 15:44:52 GMT  
+		Size: 37.9 MB (37900151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d198245634f6cab26ef3a936439124c980cb07c8404f7c836c9cb3fb613b7acd`  
-		Last Modified: Thu, 04 Sep 2025 16:52:10 GMT  
-		Size: 124.4 MB (124387877 bytes)  
+	-	`sha256:22d48572182a862696c33aee0b7a723700cdcc5e971c796e2e86a49f0971a281`  
+		Last Modified: Fri, 19 Sep 2025 20:48:07 GMT  
+		Size: 124.6 MB (124557932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e496ba6b88f42b817969c2452a3f29b74e501da5e5bb8723c55a0ce7cd500f4`  
-		Last Modified: Thu, 04 Sep 2025 16:51:47 GMT  
+	-	`sha256:2da0f457a100273f6a79bb7010ec95ac1d361395fca9b41c25bfc38d244d44e7`  
+		Last Modified: Fri, 19 Sep 2025 20:47:51 GMT  
 		Size: 10.1 KB (10062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf1b6a6c470aea36326b8653024ab2861cc11f2836d289ef77205cde6e1ba954`  
-		Last Modified: Thu, 04 Sep 2025 18:07:53 GMT  
-		Size: 467.1 MB (467123648 bytes)  
+	-	`sha256:433400dae93b29b0e44d97f03ab051b2a5b6d0baf35b29de481bcaa980987cf4`  
+		Last Modified: Fri, 19 Sep 2025 21:18:09 GMT  
+		Size: 467.1 MB (467123528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -232,23 +236,23 @@ CMD ["neo4j"]
 ### `neo4j:5-enterprise-ubi9` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:b84795801d2177da585fef426ba39df203e9a88f3858f1e5a02004b803b755b2
+$ docker pull neo4j@sha256:e32ad39d8d55e192b99f4714ae3b33649df6ff9296109f9e3144e1887cb88ba9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5623072 bytes)**  
+-	Total Size: **5.6 MB (5623081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:adf9e65a72fcbd356220aa7832f6c86b679c2d7787361bc3e34ba342caca9a35`
+-	Image ID: `sha256:76cf510c8cd6c922353d088573966c233a891679879d0488472e62cb84eea941`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4ce0ce4ba32944b8c7aa152e03a1e30167480059bd716dac86af36a126f20cc5`  
-		Last Modified: Thu, 04 Sep 2025 17:44:12 GMT  
-		Size: 5.6 MB (5602685 bytes)  
+	-	`sha256:6fdc5889e188bae07ef2d41b1391ba95e7637b490dec44f62f44e7e883d31e2b`  
+		Last Modified: Fri, 19 Sep 2025 23:44:14 GMT  
+		Size: 5.6 MB (5602695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:382045dbbe6f51dfaa4bf037dd46b2bfb3e309a43eea89b63c37f859e4645c5a`  
-		Last Modified: Thu, 04 Sep 2025 17:44:12 GMT  
-		Size: 20.4 KB (20387 bytes)  
+	-	`sha256:1838b5b25b3a74641159f270e9c8102e56c93f53c1c80e8dd5b26319bb744d45`  
+		Last Modified: Fri, 19 Sep 2025 23:44:15 GMT  
+		Size: 20.4 KB (20386 bytes)  
 		MIME: application/vnd.in-toto+json
