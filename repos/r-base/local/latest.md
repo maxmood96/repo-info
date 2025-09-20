@@ -928,19 +928,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.226
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.226.dsc' gcc-defaults_1.226.dsc 37750 SHA256:0fdb11463f9750a4519dc05e791723d09b06de6dfc7f9787b1eab6c4c5350a90
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.226.tar.xz' gcc-defaults_1.226.tar.xz 55392 SHA256:2823e8a1958a4b0f2a0ccccf5ae84cfc20d52001bc7410b3a504a979a132264a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.226/
 
-- https://sources.debian.net/src/gcc-defaults/1.226/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.226/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.226/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.26-1`
 
