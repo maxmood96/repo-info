@@ -330,7 +330,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 30.0 MB (29971892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f87ab33dd2cc64e1d0c21de4abcebb14583803bd3669c060e832be1b2a9dfaf7`  
-		Last Modified: Sat, 20 Sep 2025 01:00:17 GMT  
+		Last Modified: Sat, 20 Sep 2025 14:52:54 GMT  
 		Size: 46.8 MB (46831147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7044b1c882db9f5e1a7a1b93ab31fe5abb28ce98a754be47ba6fa18cf7251f57`  
