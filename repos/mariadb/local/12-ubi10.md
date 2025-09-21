@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff53a8d22dc7cb8af929cf6adaa36da50c200e9b7be963776c4142cfef31df2c`
+- Image ID: `sha256:e0d6415351998339c19f4d21ec1e3378d822410eb4e1410f4135e8aa943f0959`
 - Created: `2025-08-10T22:04:52Z`
-- Virtual Size: ~ 569.96 Mb  
+- Virtual Size: ~ 569.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=12.0.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-08-20T20:31:46`
+  - `build-date=2025-09-18T08:57:28Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -33,6 +33,7 @@
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
+  - `org.opencontainers.image.revision=006ec712cf2384ae208886f1374479d6db3cf3ef`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -41,7 +42,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=cd3580af593478ee5f4995800114032446965f74`
+  - `vcs-ref=006ec712cf2384ae208886f1374479d6db3cf3ef`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=12.0.2`
