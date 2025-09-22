@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:93ead42a9555113d36b859de64cbee139900e6f1e77cade450733957f969d8dd`
+- Image ID: `sha256:b1f86448bbb59509f3d583c030a4f9a6b668d5c69ec5d0a052d4104b71b8c47a`
 - Created: `2025-08-01T11:26:55Z`
-- Virtual Size: ~ 749.59 Mb  
+- Virtual Size: ~ 765.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-08-20T13:12:41`
+  - `build-date=2025-09-18T08:36:33Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -36,10 +36,11 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `release=1755695350`
+  - `org.opencontainers.image.revision=0c20ee48321f5d64135f6208d1332c0b032df6c3`
+  - `release=1758184547`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f4b088292653bbf5ca8188a5e59ffd06a8671d4b`
+  - `vcs-ref=0c20ee48321f5d64135f6208d1332c0b032df6c3`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
@@ -420,11 +421,16 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-4.el9.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.3-6.el9.x86_64`
+### `rpm` package: `gnutls-3.8.3-6.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnutls-3.8.3-6.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.3-6.el9_6.2.src.rpm
+```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
 
@@ -1336,11 +1342,16 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-25.el9_6.x86_64`
+### `rpm` package: `pam-1.5.1-26.el9_6.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url pam-1.5.1-26.el9_6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-26.el9_6.src.rpm
+```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
 
@@ -1375,7 +1386,7 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-mongodb-mongosh-2.5.1-1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.5.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1543,29 +1554,49 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-8.el9_6
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-8.el9_6.src.rpm
 ```
 
-### `rpm` package: `systemd-252-51.el9_6.1.x86_64`
+### `rpm` package: `systemd-252-51.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-libs-252-51.el9_6.1.x86_64`
+```console
+$ dnf --quiet download --source --url systemd-252-51.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-51.el9_6.2.src.rpm
+```
+
+### `rpm` package: `systemd-libs-252-51.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-pam-252-51.el9_6.1.x86_64`
+```console
+$ dnf --quiet download --source --url systemd-libs-252-51.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-51.el9_6.2.src.rpm
+```
+
+### `rpm` package: `systemd-pam-252-51.el9_6.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `systemd-rpm-macros-252-51.el9_6.1.noarch`
+```console
+$ dnf --quiet download --source --url systemd-pam-252-51.el9_6.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-51.el9_6.2.src.rpm
+```
+
+### `rpm` package: `systemd-rpm-macros-252-51.el9_6.2.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url systemd-rpm-macros-252-51.el9_6.2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-51.el9_6.2.src.rpm
+```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
 
