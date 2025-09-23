@@ -562,15 +562,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-6ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-6ubuntu1.1.dsc' glibc_2.41-6ubuntu1.1.dsc 8035 SHA512:d4bd436c3ed5f8e9ceaa2e963a93b350e75fb97e627f9cc88b8cbd9f2cf200ea9154cf2525ca03b278a5f207cf44fd61297dcde8b938ff6c54fb3354e502107f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 19344868 SHA512:894a3e5a796bc13df30c26a5bfbe4d60b5dbdaac54e7763432235124b547070c7dda88c50584536870cab79183d8cad73a3ac6ed09bfe54fa8482aad07253169
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41.orig.tar.xz.asc' glibc_2.41.orig.tar.xz.asc 981 SHA512:98462e1a1abce7ae7214b48bce160ff95ffb6634708d9952a0997575ae1fb06f4499e01953bace0933e07fddf583f0dfe93221c44192957a894a4126ab073ce8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.41-6ubuntu1.1.debian.tar.xz' glibc_2.41-6ubuntu1.1.debian.tar.xz 461728 SHA512:8c64f085c552fce16c5372cf1c5a4c536a649a60eda7b1240156cefd735621d32cb809582406ddaa7b30d503b8ae167be0b3f81795257bf8fb9982fdcc6829a7
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3ubuntu1`
 
@@ -1162,14 +1156,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-7ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.3.dsc' pam_1.5.3-7ubuntu4.3.dsc 2727 SHA512:2ba33b8dbfbe4d760fc15175c56d7fc65ef6cf895664b701a1851934b1eea4f8d8b461f43f3cdfc01d6620be2e2bf565a13bdec8c54e0472936809f1583d6a54
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.3.debian.tar.xz' pam_1.5.3-7ubuntu4.3.debian.tar.xz 202792 SHA512:9e6cf390b39c487d6e9fec12ae6dfce7cf1dc41c4d3ee41a35c9c4ddd5a4fc251e59209f1cb7f40bc373c58abf26ae1295d72139eeb9329df4da407c973f7cce
-```
 
 ### `dpkg` source package: `pcre2=10.45-1`
 
