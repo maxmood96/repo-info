@@ -638,15 +638,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.42-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42-0ubuntu1.dsc' glibc_2.42-0ubuntu1.dsc 7889 SHA512:b49a8ab428dec1ae894cee117763dfad419ceb34b1c0036382f6c3c748707779a075dcadc3f571b622d1659ede75b0818d3536ed8619786b3c83d22220f8caed
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42.orig.tar.xz' glibc_2.42.orig.tar.xz 19930508 SHA512:73a617db8e0f0958c0575f7a1c5a35b72b7e070b6cbdd02a9bb134995ca7ca0909f1e50d7362c53d2572d72f1879bb201a61d5275bac16136895d9a34ef0c068
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42.orig.tar.xz.asc' glibc_2.42.orig.tar.xz.asc 981 SHA512:d868220778e98d24aead10a585e6a903892e4d043cd96a404634c8aa03d001d624a46a5c0fe13c86f83f66396a1f360a10990966fe377e98a722914b5087575d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.42-0ubuntu1.debian.tar.xz' glibc_2.42-0ubuntu1.debian.tar.xz 442528 SHA512:2a9b3d4d1f2239e04388d59a43fb5b5f7c252a0d34215ff782ef0c401949958f50aa11202b93915c787d279e6580d2a154fe95fa9430091af5570f1060e9c67c
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3ubuntu2`
 
@@ -664,14 +658,9 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-3ubuntu2.dsc' gmp_6.3.0+dfsg-3ubuntu2.dsc 2337 SHA512:e6c5be8da178f008fc856d593ad5aa06be9b604075559ba1e7e231da7b5d0a8ca3390b25a3ab9388c860462fa49e0d58c2e8c713642927457f865e5caa378696
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA512:a422b29024464aeb26c69f64be1bc37407d74e0290f44f67fc040fe38b97f3eb7aa6ba8380722ef36cac39816d1c4f24b771159fb86d5979ef0791dcdef708bc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-3ubuntu2.debian.tar.xz' gmp_6.3.0+dfsg-3ubuntu2.debian.tar.xz 39724 SHA512:553121b4a70c4a8b46481ae156796354baebc1150e32dd4f4c32695b37b019fec0ac80a4fdae607cce7ab3fb83f83c37aac66ab04cb314e835012bd83c845d51
-```
 
 ### `dpkg` source package: `gnupg2=2.4.8-2ubuntu1`
 
@@ -1327,9 +1316,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lz4=1.10.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-4.dsc' lz4_1.10.0-4.dsc 1941 SHA512:359c0b31d3ea1017f7beac58a54394ca547b5656d0d02fe6685ed854486166ab17f10fcfaf052d0b4e94d802f6ed3b7bdd555652ebbe6d79a6d079ffc19acd1c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-4build1.dsc' lz4_1.10.0-4build1.dsc 1965 SHA512:ede20a0c3a1c8824d1b008cce662dc6593ffcf3eeb72e89e535f84eb8b91396e2b2def6ce86ebd42710955892b10f9b6764eec3ac8b230efb0c0ca7d594e3b53
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0.orig.tar.gz' lz4_1.10.0.orig.tar.gz 387114 SHA512:8c4ceb217e6dc8e7e0beba99adc736aca8963867bcf9f970d621978ba11ce92855912f8b66138037a1d2ae171e8e17beb7be99281fea840106aa60373c455b28
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-4.debian.tar.xz' lz4_1.10.0-4.debian.tar.xz 8080 SHA512:66d6522837ddda23e264f4cbf6c08506868c29183ce476f06297732b6d5d4746ece4e99f6797741f55accbed188d13ab9889cd571dedf38c3b0e8f365323e27e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-4build1.debian.tar.xz' lz4_1.10.0-4build1.debian.tar.xz 8152 SHA512:19dfb1fca73af402bcd18dab9436017767e4a66c7d759623f6cc60a0f08b287ad984c79b887df729a8307cf9b6dd28d41c6c5cd1addf85d2e4e9c59ca1cb1b4d
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20250131-1`
@@ -1441,14 +1430,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.64.0-1.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1build1.dsc' nghttp2_1.64.0-1.1build1.dsc 2538 SHA512:1c2dafd71567ef061aef83645374621a06db8ef2785611a8ae35158901d101c2ff9764501af9e31b3fa25ca3a585ff1af553b903b1af04850995f1b60790f585
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA512:35f8230a0fa2825f0bc400d4852d8e8b484f659c67b00639ccd074a0029088f016e967db2f62b6b64af1f8ef684f5809a833e7f922e38b9405f7cc7756bcfb75
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1build1.debian.tar.xz' nghttp2_1.64.0-1.1build1.debian.tar.xz 39428 SHA512:76c5ae970719067d9be67c99494784fee3715cd0f33031c1c2b0e757c702bc3bfaba1becd58c7f176f4bfd8a0349aa06b15bc6ff59cbe83b79556d9994465c80
-```
 
 ### `dpkg` source package: `npth=1.8-3`
 
@@ -1902,14 +1886,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3.1.dsc' tar_1.35+dfsg-3.1.dsc 2017 SHA512:5659687f13ffd338bb7fb31427d0945dfef0e31cee1f5e646e32884c3927699d007dcb4128c0e5d2c8d886080ba47cfadc7d00abe75ee16c8f5f5ddfbd109e03
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3.1.debian.tar.xz' tar_1.35+dfsg-3.1.debian.tar.xz 21540 SHA512:dd2f35961b183870644c62191b1cc60c2ddf29127e895757c249e65f2299d8b642b43f57e875f0a68bf894637d83a45132e01eecff361655963dcc1d393b4198
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/
+
 
 ### `dpkg` source package: `tzdata=2025b-3ubuntu1`
 
