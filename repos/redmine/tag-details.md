@@ -7,36 +7,55 @@
 -	[`redmine:5-alpine3.21`](#redmine5-alpine321)
 -	[`redmine:5-alpine3.22`](#redmine5-alpine322)
 -	[`redmine:5-bookworm`](#redmine5-bookworm)
+-	[`redmine:5-trixie`](#redmine5-trixie)
 -	[`redmine:5.1`](#redmine51)
 -	[`redmine:5.1-alpine`](#redmine51-alpine)
 -	[`redmine:5.1-alpine3.21`](#redmine51-alpine321)
 -	[`redmine:5.1-alpine3.22`](#redmine51-alpine322)
 -	[`redmine:5.1-bookworm`](#redmine51-bookworm)
+-	[`redmine:5.1-trixie`](#redmine51-trixie)
 -	[`redmine:5.1.10`](#redmine5110)
 -	[`redmine:5.1.10-alpine`](#redmine5110-alpine)
 -	[`redmine:5.1.10-alpine3.21`](#redmine5110-alpine321)
 -	[`redmine:5.1.10-alpine3.22`](#redmine5110-alpine322)
 -	[`redmine:5.1.10-bookworm`](#redmine5110-bookworm)
+-	[`redmine:5.1.10-trixie`](#redmine5110-trixie)
 -	[`redmine:6`](#redmine6)
 -	[`redmine:6-alpine`](#redmine6-alpine)
 -	[`redmine:6-alpine3.21`](#redmine6-alpine321)
 -	[`redmine:6-alpine3.22`](#redmine6-alpine322)
 -	[`redmine:6-bookworm`](#redmine6-bookworm)
+-	[`redmine:6-trixie`](#redmine6-trixie)
 -	[`redmine:6.0`](#redmine60)
 -	[`redmine:6.0-alpine`](#redmine60-alpine)
 -	[`redmine:6.0-alpine3.21`](#redmine60-alpine321)
 -	[`redmine:6.0-alpine3.22`](#redmine60-alpine322)
 -	[`redmine:6.0-bookworm`](#redmine60-bookworm)
+-	[`redmine:6.0-trixie`](#redmine60-trixie)
 -	[`redmine:6.0.7`](#redmine607)
 -	[`redmine:6.0.7-alpine`](#redmine607-alpine)
 -	[`redmine:6.0.7-alpine3.21`](#redmine607-alpine321)
 -	[`redmine:6.0.7-alpine3.22`](#redmine607-alpine322)
 -	[`redmine:6.0.7-bookworm`](#redmine607-bookworm)
+-	[`redmine:6.0.7-trixie`](#redmine607-trixie)
+-	[`redmine:6.1`](#redmine61)
+-	[`redmine:6.1-alpine`](#redmine61-alpine)
+-	[`redmine:6.1-alpine3.21`](#redmine61-alpine321)
+-	[`redmine:6.1-alpine3.22`](#redmine61-alpine322)
+-	[`redmine:6.1-bookworm`](#redmine61-bookworm)
+-	[`redmine:6.1-trixie`](#redmine61-trixie)
+-	[`redmine:6.1.0`](#redmine610)
+-	[`redmine:6.1.0-alpine`](#redmine610-alpine)
+-	[`redmine:6.1.0-alpine3.21`](#redmine610-alpine321)
+-	[`redmine:6.1.0-alpine3.22`](#redmine610-alpine322)
+-	[`redmine:6.1.0-bookworm`](#redmine610-bookworm)
+-	[`redmine:6.1.0-trixie`](#redmine610-trixie)
 -	[`redmine:alpine`](#redminealpine)
 -	[`redmine:alpine3.21`](#redminealpine321)
 -	[`redmine:alpine3.22`](#redminealpine322)
 -	[`redmine:bookworm`](#redminebookworm)
 -	[`redmine:latest`](#redminelatest)
+-	[`redmine:trixie`](#redminetrixie)
 
 ## `redmine:5`
 
@@ -6419,6 +6438,10 @@ $ docker pull redmine@sha256:af1d620c3a326a34f42f83e71ad7a262aef866d49421aecfd3e
 		Size: 40.6 KB (40650 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `redmine:5-trixie`
+
+**does not exist** (yet?)
+
 ## `redmine:5.1`
 
 ```console
@@ -12799,6 +12822,10 @@ $ docker pull redmine@sha256:af1d620c3a326a34f42f83e71ad7a262aef866d49421aecfd3e
 		Last Modified: Wed, 24 Sep 2025 04:49:31 GMT  
 		Size: 40.6 KB (40650 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redmine:5.1-trixie`
+
+**does not exist** (yet?)
 
 ## `redmine:5.1.10`
 
@@ -19181,6 +19208,10 @@ $ docker pull redmine@sha256:af1d620c3a326a34f42f83e71ad7a262aef866d49421aecfd3e
 		Size: 40.6 KB (40650 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `redmine:5.1.10-trixie`
+
+**does not exist** (yet?)
+
 ## `redmine:6`
 
 ```console
@@ -25417,6 +25448,10 @@ $ docker pull redmine@sha256:fc701e46d087198867835fa393a78ffce7635b36c2bacf40c9d
 		Last Modified: Wed, 24 Sep 2025 04:50:30 GMT  
 		Size: 41.2 KB (41245 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redmine:6-trixie`
+
+**does not exist** (yet?)
 
 ## `redmine:6.0`
 
@@ -31655,6 +31690,10 @@ $ docker pull redmine@sha256:fc701e46d087198867835fa393a78ffce7635b36c2bacf40c9d
 		Size: 41.2 KB (41245 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `redmine:6.0-trixie`
+
+**does not exist** (yet?)
+
 ## `redmine:6.0.7`
 
 ```console
@@ -37892,6 +37931,58 @@ $ docker pull redmine@sha256:fc701e46d087198867835fa393a78ffce7635b36c2bacf40c9d
 		Size: 41.2 KB (41245 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `redmine:6.0.7-trixie`
+
+**does not exist** (yet?)
+
+## `redmine:6.1`
+
+**does not exist** (yet?)
+
+## `redmine:6.1-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:6.1-alpine3.21`
+
+**does not exist** (yet?)
+
+## `redmine:6.1-alpine3.22`
+
+**does not exist** (yet?)
+
+## `redmine:6.1-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:6.1-trixie`
+
+**does not exist** (yet?)
+
+## `redmine:6.1.0`
+
+**does not exist** (yet?)
+
+## `redmine:6.1.0-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:6.1.0-alpine3.21`
+
+**does not exist** (yet?)
+
+## `redmine:6.1.0-alpine3.22`
+
+**does not exist** (yet?)
+
+## `redmine:6.1.0-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:6.1.0-trixie`
+
+**does not exist** (yet?)
+
 ## `redmine:alpine`
 
 ```console
@@ -44128,3 +44219,7 @@ $ docker pull redmine@sha256:fc701e46d087198867835fa393a78ffce7635b36c2bacf40c9d
 		Last Modified: Wed, 24 Sep 2025 04:50:30 GMT  
 		Size: 41.2 KB (41245 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redmine:trixie`
+
+**does not exist** (yet?)
