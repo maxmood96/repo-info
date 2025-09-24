@@ -1328,7 +1328,7 @@ $ docker pull unit@sha256:ea237481d7d1565bb0da6ab2a4915ccc184b5b416655441c050780
 ## `unit:1.34.2-node22`
 
 ```console
-$ docker pull unit@sha256:f0bc0c0087945cd5af4a8d7d43cc99e31c3e51c4029d4e16c4e3d3962d4eca09
+$ docker pull unit@sha256:186b91d73021ff44dada904d4c2cccc419abfb4496b0d3aeacca98da88022f34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1475,13 +1475,13 @@ $ docker pull unit@sha256:c8ce4eaad7e7322616fb48f1de403a60cfd7060ce28db196d4fb54
 ### `unit:1.34.2-node22` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c469614cd864febc8e03d4d36c66248c3c49d72aae98afd7fc59dbe169f543ed
+$ docker pull unit@sha256:c506f047f3bdc8f5b5782bd20b470c765c427cc46a83c74ab4d7483af1b39b18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **420.8 MB (420771771 bytes)**  
+-	Total Size: **423.0 MB (423000929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e418d2c734a01d3f389174db68103d8ded20e931d37c0f9adaeb32f56ba93ea`
+-	Image ID: `sha256:0cd47dba9203cfc15590d405e8ce35f35c4ee135ea5978de4a8ed6e3569a7b1c`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -1497,7 +1497,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 # Mon, 03 Mar 2025 18:37:38 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Mon, 03 Mar 2025 18:37:38 GMT
-ENV NODE_VERSION=22.19.0
+ENV NODE_VERSION=22.20.0
 # Mon, 03 Mar 2025 18:37:38 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     5BE8A3F6C8A5C01D106C0AD820B1A390B168D356     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
 # Mon, 03 Mar 2025 18:37:38 GMT
@@ -1557,53 +1557,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
 		Size: 202.9 MB (202918593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:466a56b828bff94b25eb6f5217c939414a737616bf9e39504f3c7cbd3e7ed744`  
-		Last Modified: Tue, 09 Sep 2025 04:02:12 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:50e97a6a6cb1240ad497a19ad55e60067ebe14a8d6018d4ed1f070d319b5cd9d`  
+		Last Modified: Wed, 24 Sep 2025 16:09:19 GMT  
+		Size: 3.3 KB (3326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:793b9e17564d29ef79529cc8a2eb39bd815e67bbb77869248baa7d82531838e3`  
-		Last Modified: Tue, 09 Sep 2025 04:38:23 GMT  
-		Size: 56.1 MB (56110868 bytes)  
+	-	`sha256:d3544e57ea8b84a0e2af6ab97d4a346dd40f4b79ee1d10d8741a302a8c442d5c`  
+		Last Modified: Wed, 24 Sep 2025 16:11:28 GMT  
+		Size: 58.4 MB (58362025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be0e38cf5c5b734c6a55c0a2f0b73f0fc69630d8d950bdf72bd0fdbc44c5bc6`  
-		Last Modified: Tue, 09 Sep 2025 04:05:28 GMT  
-		Size: 1.3 MB (1250673 bytes)  
+	-	`sha256:9ef3b37ae33f61f023e25c51a73b2ec8128484e0bf7f1dd9eb039ac057dc5c7b`  
+		Last Modified: Wed, 24 Sep 2025 16:09:21 GMT  
+		Size: 1.3 MB (1250674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fc784eecf10cbe64d3e590c80a6d8556e4bb101ed7a10f987a9d14b60166ab3`  
-		Last Modified: Tue, 09 Sep 2025 04:05:28 GMT  
+	-	`sha256:3d0dfc1a5ea0a6353465311fb01172777c3193ea327fb15a2492620e31e2e533`  
+		Last Modified: Wed, 24 Sep 2025 16:09:20 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835aedda5f894566ed78d2a7ea58c164c093eb9d545ee5341830f23e8c7e1175`  
-		Last Modified: Tue, 09 Sep 2025 06:47:01 GMT  
-		Size: 24.2 MB (24160157 bytes)  
+	-	`sha256:c906d18879abe64e953d7bf7f3556e054e2d29ab51a315e5c4cad66935df1c92`  
+		Last Modified: Wed, 24 Sep 2025 16:15:06 GMT  
+		Size: 24.1 MB (24138152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ed13494386f64e4c11cfacb70fdbb20adf9a1da8440de4e45d8c15586b8e011`  
-		Last Modified: Tue, 09 Sep 2025 06:46:54 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:9c1d63e2f4f2fe5c4b8aecd94814bde98b7cd49793816e8f7da6a24c2042b067`  
+		Last Modified: Wed, 24 Sep 2025 16:15:03 GMT  
+		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b191bc74a9606bb313c8f05d5a18c5c1714471a4addcc5bb6e9d88b87439ef3`  
-		Last Modified: Tue, 09 Sep 2025 06:46:54 GMT  
-		Size: 1.5 KB (1452 bytes)  
+	-	`sha256:04dc918d881faecc777516c2e377f73d846b84030e1e82901744254110f9903c`  
+		Last Modified: Wed, 24 Sep 2025 16:15:03 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:1.34.2-node22` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:4040ff5d27a34d3060844df3ee49bc2ff125f43adbf3d2a7065d3e47b0dde537
+$ docker pull unit@sha256:10c7a74f9a55a85fa6e2bff1e00bd81be490071a66b9b4b962199ce061589028
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.0 KB (28993 bytes)**  
+-	Total Size: **29.0 KB (28994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d966aca06f1caf1f5d78b4b4702a360b78a04110bfd84e55d12c8663beb70953`
+-	Image ID: `sha256:adf2bf86a7d27db871c27ccf6c7362bada2a97e84c7b366dde342eff2a4f92c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fec8af06f031b4b1b597249a766da84291e5036795d1798aac9aab4b0e07ff7a`  
-		Last Modified: Tue, 09 Sep 2025 08:45:38 GMT  
-		Size: 29.0 KB (28993 bytes)  
+	-	`sha256:1d8e665b7ce6fa2f75f22dad97f7173c6d60b40ea36ad757969d4e987dc21130`  
+		Last Modified: Wed, 24 Sep 2025 17:45:25 GMT  
+		Size: 29.0 KB (28994 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.2-perl5.38`
@@ -6552,7 +6552,7 @@ $ docker pull unit@sha256:065a6fdee187dc7cdb2a5b6ee3ddf8c2df40d7685a0347584d416d
 ## `unit:node`
 
 ```console
-$ docker pull unit@sha256:f0bc0c0087945cd5af4a8d7d43cc99e31c3e51c4029d4e16c4e3d3962d4eca09
+$ docker pull unit@sha256:186b91d73021ff44dada904d4c2cccc419abfb4496b0d3aeacca98da88022f34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6699,13 +6699,13 @@ $ docker pull unit@sha256:c8ce4eaad7e7322616fb48f1de403a60cfd7060ce28db196d4fb54
 ### `unit:node` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c469614cd864febc8e03d4d36c66248c3c49d72aae98afd7fc59dbe169f543ed
+$ docker pull unit@sha256:c506f047f3bdc8f5b5782bd20b470c765c427cc46a83c74ab4d7483af1b39b18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **420.8 MB (420771771 bytes)**  
+-	Total Size: **423.0 MB (423000929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e418d2c734a01d3f389174db68103d8ded20e931d37c0f9adaeb32f56ba93ea`
+-	Image ID: `sha256:0cd47dba9203cfc15590d405e8ce35f35c4ee135ea5978de4a8ed6e3569a7b1c`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -6721,7 +6721,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 # Mon, 03 Mar 2025 18:37:38 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Mon, 03 Mar 2025 18:37:38 GMT
-ENV NODE_VERSION=22.19.0
+ENV NODE_VERSION=22.20.0
 # Mon, 03 Mar 2025 18:37:38 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     5BE8A3F6C8A5C01D106C0AD820B1A390B168D356     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
 # Mon, 03 Mar 2025 18:37:38 GMT
@@ -6781,53 +6781,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
 		Size: 202.9 MB (202918593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:466a56b828bff94b25eb6f5217c939414a737616bf9e39504f3c7cbd3e7ed744`  
-		Last Modified: Tue, 09 Sep 2025 04:02:12 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:50e97a6a6cb1240ad497a19ad55e60067ebe14a8d6018d4ed1f070d319b5cd9d`  
+		Last Modified: Wed, 24 Sep 2025 16:09:19 GMT  
+		Size: 3.3 KB (3326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:793b9e17564d29ef79529cc8a2eb39bd815e67bbb77869248baa7d82531838e3`  
-		Last Modified: Tue, 09 Sep 2025 04:38:23 GMT  
-		Size: 56.1 MB (56110868 bytes)  
+	-	`sha256:d3544e57ea8b84a0e2af6ab97d4a346dd40f4b79ee1d10d8741a302a8c442d5c`  
+		Last Modified: Wed, 24 Sep 2025 16:11:28 GMT  
+		Size: 58.4 MB (58362025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be0e38cf5c5b734c6a55c0a2f0b73f0fc69630d8d950bdf72bd0fdbc44c5bc6`  
-		Last Modified: Tue, 09 Sep 2025 04:05:28 GMT  
-		Size: 1.3 MB (1250673 bytes)  
+	-	`sha256:9ef3b37ae33f61f023e25c51a73b2ec8128484e0bf7f1dd9eb039ac057dc5c7b`  
+		Last Modified: Wed, 24 Sep 2025 16:09:21 GMT  
+		Size: 1.3 MB (1250674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fc784eecf10cbe64d3e590c80a6d8556e4bb101ed7a10f987a9d14b60166ab3`  
-		Last Modified: Tue, 09 Sep 2025 04:05:28 GMT  
+	-	`sha256:3d0dfc1a5ea0a6353465311fb01172777c3193ea327fb15a2492620e31e2e533`  
+		Last Modified: Wed, 24 Sep 2025 16:09:20 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835aedda5f894566ed78d2a7ea58c164c093eb9d545ee5341830f23e8c7e1175`  
-		Last Modified: Tue, 09 Sep 2025 06:47:01 GMT  
-		Size: 24.2 MB (24160157 bytes)  
+	-	`sha256:c906d18879abe64e953d7bf7f3556e054e2d29ab51a315e5c4cad66935df1c92`  
+		Last Modified: Wed, 24 Sep 2025 16:15:06 GMT  
+		Size: 24.1 MB (24138152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ed13494386f64e4c11cfacb70fdbb20adf9a1da8440de4e45d8c15586b8e011`  
-		Last Modified: Tue, 09 Sep 2025 06:46:54 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:9c1d63e2f4f2fe5c4b8aecd94814bde98b7cd49793816e8f7da6a24c2042b067`  
+		Last Modified: Wed, 24 Sep 2025 16:15:03 GMT  
+		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b191bc74a9606bb313c8f05d5a18c5c1714471a4addcc5bb6e9d88b87439ef3`  
-		Last Modified: Tue, 09 Sep 2025 06:46:54 GMT  
-		Size: 1.5 KB (1452 bytes)  
+	-	`sha256:04dc918d881faecc777516c2e377f73d846b84030e1e82901744254110f9903c`  
+		Last Modified: Wed, 24 Sep 2025 16:15:03 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:node` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:4040ff5d27a34d3060844df3ee49bc2ff125f43adbf3d2a7065d3e47b0dde537
+$ docker pull unit@sha256:10c7a74f9a55a85fa6e2bff1e00bd81be490071a66b9b4b962199ce061589028
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.0 KB (28993 bytes)**  
+-	Total Size: **29.0 KB (28994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d966aca06f1caf1f5d78b4b4702a360b78a04110bfd84e55d12c8663beb70953`
+-	Image ID: `sha256:adf2bf86a7d27db871c27ccf6c7362bada2a97e84c7b366dde342eff2a4f92c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fec8af06f031b4b1b597249a766da84291e5036795d1798aac9aab4b0e07ff7a`  
-		Last Modified: Tue, 09 Sep 2025 08:45:38 GMT  
-		Size: 29.0 KB (28993 bytes)  
+	-	`sha256:1d8e665b7ce6fa2f75f22dad97f7173c6d60b40ea36ad757969d4e987dc21130`  
+		Last Modified: Wed, 24 Sep 2025 17:45:25 GMT  
+		Size: 29.0 KB (28994 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:node20`
@@ -7114,7 +7114,7 @@ $ docker pull unit@sha256:ea237481d7d1565bb0da6ab2a4915ccc184b5b416655441c050780
 ## `unit:node22`
 
 ```console
-$ docker pull unit@sha256:f0bc0c0087945cd5af4a8d7d43cc99e31c3e51c4029d4e16c4e3d3962d4eca09
+$ docker pull unit@sha256:186b91d73021ff44dada904d4c2cccc419abfb4496b0d3aeacca98da88022f34
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7261,13 +7261,13 @@ $ docker pull unit@sha256:c8ce4eaad7e7322616fb48f1de403a60cfd7060ce28db196d4fb54
 ### `unit:node22` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c469614cd864febc8e03d4d36c66248c3c49d72aae98afd7fc59dbe169f543ed
+$ docker pull unit@sha256:c506f047f3bdc8f5b5782bd20b470c765c427cc46a83c74ab4d7483af1b39b18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **420.8 MB (420771771 bytes)**  
+-	Total Size: **423.0 MB (423000929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e418d2c734a01d3f389174db68103d8ded20e931d37c0f9adaeb32f56ba93ea`
+-	Image ID: `sha256:0cd47dba9203cfc15590d405e8ce35f35c4ee135ea5978de4a8ed6e3569a7b1c`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -7283,7 +7283,7 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 # Mon, 03 Mar 2025 18:37:38 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Mon, 03 Mar 2025 18:37:38 GMT
-ENV NODE_VERSION=22.19.0
+ENV NODE_VERSION=22.20.0
 # Mon, 03 Mar 2025 18:37:38 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     5BE8A3F6C8A5C01D106C0AD820B1A390B168D356     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version   && rm -rf /tmp/* # buildkit
 # Mon, 03 Mar 2025 18:37:38 GMT
@@ -7343,53 +7343,53 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
 		Size: 202.9 MB (202918593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:466a56b828bff94b25eb6f5217c939414a737616bf9e39504f3c7cbd3e7ed744`  
-		Last Modified: Tue, 09 Sep 2025 04:02:12 GMT  
-		Size: 3.3 KB (3323 bytes)  
+	-	`sha256:50e97a6a6cb1240ad497a19ad55e60067ebe14a8d6018d4ed1f070d319b5cd9d`  
+		Last Modified: Wed, 24 Sep 2025 16:09:19 GMT  
+		Size: 3.3 KB (3326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:793b9e17564d29ef79529cc8a2eb39bd815e67bbb77869248baa7d82531838e3`  
-		Last Modified: Tue, 09 Sep 2025 04:38:23 GMT  
-		Size: 56.1 MB (56110868 bytes)  
+	-	`sha256:d3544e57ea8b84a0e2af6ab97d4a346dd40f4b79ee1d10d8741a302a8c442d5c`  
+		Last Modified: Wed, 24 Sep 2025 16:11:28 GMT  
+		Size: 58.4 MB (58362025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6be0e38cf5c5b734c6a55c0a2f0b73f0fc69630d8d950bdf72bd0fdbc44c5bc6`  
-		Last Modified: Tue, 09 Sep 2025 04:05:28 GMT  
-		Size: 1.3 MB (1250673 bytes)  
+	-	`sha256:9ef3b37ae33f61f023e25c51a73b2ec8128484e0bf7f1dd9eb039ac057dc5c7b`  
+		Last Modified: Wed, 24 Sep 2025 16:09:21 GMT  
+		Size: 1.3 MB (1250674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fc784eecf10cbe64d3e590c80a6d8556e4bb101ed7a10f987a9d14b60166ab3`  
-		Last Modified: Tue, 09 Sep 2025 04:05:28 GMT  
+	-	`sha256:3d0dfc1a5ea0a6353465311fb01172777c3193ea327fb15a2492620e31e2e533`  
+		Last Modified: Wed, 24 Sep 2025 16:09:20 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835aedda5f894566ed78d2a7ea58c164c093eb9d545ee5341830f23e8c7e1175`  
-		Last Modified: Tue, 09 Sep 2025 06:47:01 GMT  
-		Size: 24.2 MB (24160157 bytes)  
+	-	`sha256:c906d18879abe64e953d7bf7f3556e054e2d29ab51a315e5c4cad66935df1c92`  
+		Last Modified: Wed, 24 Sep 2025 16:15:06 GMT  
+		Size: 24.1 MB (24138152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ed13494386f64e4c11cfacb70fdbb20adf9a1da8440de4e45d8c15586b8e011`  
-		Last Modified: Tue, 09 Sep 2025 06:46:54 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:9c1d63e2f4f2fe5c4b8aecd94814bde98b7cd49793816e8f7da6a24c2042b067`  
+		Last Modified: Wed, 24 Sep 2025 16:15:03 GMT  
+		Size: 1.3 KB (1269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b191bc74a9606bb313c8f05d5a18c5c1714471a4addcc5bb6e9d88b87439ef3`  
-		Last Modified: Tue, 09 Sep 2025 06:46:54 GMT  
-		Size: 1.5 KB (1452 bytes)  
+	-	`sha256:04dc918d881faecc777516c2e377f73d846b84030e1e82901744254110f9903c`  
+		Last Modified: Wed, 24 Sep 2025 16:15:03 GMT  
+		Size: 1.5 KB (1453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:node22` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:4040ff5d27a34d3060844df3ee49bc2ff125f43adbf3d2a7065d3e47b0dde537
+$ docker pull unit@sha256:10c7a74f9a55a85fa6e2bff1e00bd81be490071a66b9b4b962199ce061589028
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.0 KB (28993 bytes)**  
+-	Total Size: **29.0 KB (28994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d966aca06f1caf1f5d78b4b4702a360b78a04110bfd84e55d12c8663beb70953`
+-	Image ID: `sha256:adf2bf86a7d27db871c27ccf6c7362bada2a97e84c7b366dde342eff2a4f92c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fec8af06f031b4b1b597249a766da84291e5036795d1798aac9aab4b0e07ff7a`  
-		Last Modified: Tue, 09 Sep 2025 08:45:38 GMT  
-		Size: 29.0 KB (28993 bytes)  
+	-	`sha256:1d8e665b7ce6fa2f75f22dad97f7173c6d60b40ea36ad757969d4e987dc21130`  
+		Last Modified: Wed, 24 Sep 2025 17:45:25 GMT  
+		Size: 29.0 KB (28994 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:perl`
