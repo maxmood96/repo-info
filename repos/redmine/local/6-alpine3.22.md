@@ -1,10 +1,10 @@
-# `redmine:6.0.6-alpine3.22`
+# `redmine:6.1.0-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ddd7221f7b4b24f03edf4c5a36045820e4282768c884200c684fdeeb23fca9c`
-- Created: `2025-09-08T20:04:45Z`
-- Virtual Size: ~ 432.96 Mb  
+- Image ID: `sha256:3869d4de5aade321ba3a42cdfe3411a607c85877309e9d40948f848a82bba08d`
+- Created: `2025-09-24T15:00:28Z`
+- Virtual Size: ~ 431.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,20 +12,19 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=2b24a2180a2f7f63c099851a1d01e6928cf56d515d136a91bd2075423a7a76bb`
+  - `RUBY_VERSION=3.4.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=804995bc22938aa475127000d3103cb133409ad3955edfc0e7412be66a4859b8`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
-  - `GOSU_VERSION=1.18`
+  - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.0.6`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.6.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=b7ac2d28893806b8f4fbd1480b714be546614e830e2029d47a0bf26a352bb3fa`
+  - `REDMINE_VERSION=6.1.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=bc483da195f2444491d870e40f7fc909ae750f7ba8d0e28831e6d6c478812b88`
   - `RAILS_LOG_TO_STDOUT=true`
-  - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -746,16 +745,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.2-r0 description:
+libcrypto3-3.5.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.2-r0 webpage:
+libcrypto3-3.5.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.2-r0 installed size:
+libcrypto3-3.5.3-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.2-r0 license:
+libcrypto3-3.5.3-r0 license:
 Apache-2.0
 
 ```
@@ -797,16 +796,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.2-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.2-r0 license:
 MIT
 
 ```
@@ -1103,16 +1102,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.2-r0 description:
+libssl3-3.5.3-r0 description:
 SSL shared libraries
 
-libssl3-3.5.2-r0 webpage:
+libssl3-3.5.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.2-r0 installed size:
+libssl3-3.5.3-r0 installed size:
 823 KiB
 
-libssl3-3.5.2-r0 license:
+libssl3-3.5.3-r0 license:
 Apache-2.0
 
 ```
@@ -1545,16 +1544,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.0_p1-r7 description:
+openssh-client-common-10.0_p1-r8 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.0_p1-r7 webpage:
+openssh-client-common-10.0_p1-r8 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.0_p1-r7 installed size:
+openssh-client-common-10.0_p1-r8 installed size:
 2504 KiB
 
-openssh-client-common-10.0_p1-r7 license:
+openssh-client-common-10.0_p1-r8 license:
 SSH-OpenSSH
 
 ```
@@ -1562,16 +1561,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.0_p1-r7 description:
+openssh-client-default-10.0_p1-r8 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.0_p1-r7 webpage:
+openssh-client-default-10.0_p1-r8 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.0_p1-r7 installed size:
+openssh-client-default-10.0_p1-r8 installed size:
 830 KiB
 
-openssh-client-default-10.0_p1-r7 license:
+openssh-client-default-10.0_p1-r8 license:
 SSH-OpenSSH
 
 ```
@@ -1579,16 +1578,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.0_p1-r7 description:
+openssh-keygen-10.0_p1-r8 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.0_p1-r7 webpage:
+openssh-keygen-10.0_p1-r8 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.0_p1-r7 installed size:
+openssh-keygen-10.0_p1-r8 installed size:
 470 KiB
 
-openssh-keygen-10.0_p1-r7 license:
+openssh-keygen-10.0_p1-r8 license:
 SSH-OpenSSH
 
 ```
@@ -2055,16 +2054,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.0-r0 description:
+tiff-4.7.1-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.7.0-r0 webpage:
+tiff-4.7.1-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.0-r0 installed size:
-457 KiB
+tiff-4.7.1-r0 installed size:
+453 KiB
 
-tiff-4.7.0-r0 license:
+tiff-4.7.1-r0 license:
 libtiff
 
 ```

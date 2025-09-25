@@ -1,10 +1,10 @@
-# `redmine:6.0.6-alpine3.21`
+# `redmine:6.1.0-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ec7e68d44df62496feb53a5d4a882d7b721045123210f4805e54d04daa8c29f`
-- Created: `2025-09-08T20:04:45Z`
-- Virtual Size: ~ 419.55 Mb  
+- Image ID: `sha256:11f2aa920dc68dffb09fb6f9f46aa00cf1becd585be18e3332368a1f1447457f`
+- Created: `2025-09-24T15:00:28Z`
+- Virtual Size: ~ 412.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,20 +12,19 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=2b24a2180a2f7f63c099851a1d01e6928cf56d515d136a91bd2075423a7a76bb`
+  - `RUBY_VERSION=3.4.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=804995bc22938aa475127000d3103cb133409ad3955edfc0e7412be66a4859b8`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
-  - `GOSU_VERSION=1.18`
+  - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.0.6`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.6.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=b7ac2d28893806b8f4fbd1480b714be546614e830e2029d47a0bf26a352bb3fa`
+  - `REDMINE_VERSION=6.1.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=bc483da195f2444491d870e40f7fc909ae750f7ba8d0e28831e6d6c478812b88`
   - `RAILS_LOG_TO_STDOUT=true`
-  - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -780,16 +779,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.0-r0 description:
+libexpat-2.7.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.0-r0 webpage:
+libexpat-2.7.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.0-r0 installed size:
-129 KiB
+libexpat-2.7.2-r0 installed size:
+133 KiB
 
-libexpat-2.7.0-r0 license:
+libexpat-2.7.2-r0 license:
 MIT
 
 ```
@@ -1970,16 +1969,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r3 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r3 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r3 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r3 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```
@@ -2038,16 +2037,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.0-r0 description:
+tiff-4.7.1-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.7.0-r0 webpage:
+tiff-4.7.1-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.0-r0 installed size:
-457 KiB
+tiff-4.7.1-r0 installed size:
+453 KiB
 
-tiff-4.7.0-r0 license:
+tiff-4.7.1-r0 license:
 libtiff
 
 ```

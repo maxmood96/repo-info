@@ -1,10 +1,10 @@
-# `redmine:6.0.6`
+# `redmine:6.1.0-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:19fc50f1e4f51983b191980d6093d1d96bf31592a8a76953855ccfc72454b1d7`
-- Created: `2025-09-08T20:04:45Z`
-- Virtual Size: ~ 611.28 Mb  
+- Image ID: `sha256:676e975323f6451af7f6422f32d653e3f685d01433e54daac92faef7a4fc2f99`
+- Created: `2025-09-24T15:00:28Z`
+- Virtual Size: ~ 637.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,18 +12,18 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.3.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=2b24a2180a2f7f63c099851a1d01e6928cf56d515d136a91bd2075423a7a76bb`
+  - `RUBY_VERSION=3.4.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=804995bc22938aa475127000d3103cb133409ad3955edfc0e7412be66a4859b8`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
-  - `GOSU_VERSION=1.18`
+  - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.0.6`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.6.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=b7ac2d28893806b8f4fbd1480b714be546614e830e2029d47a0bf26a352bb3fa`
+  - `REDMINE_VERSION=6.1.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=bc483da195f2444491d870e40f7fc909ae750f7ba8d0e28831e6d6c478812b88`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
@@ -575,11 +575,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.4.2-3+deb12u8`
+### `dpkg` source package: `cups=2.4.2-3+deb12u9`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.2-3+deb12u8`
+- `libcups2:amd64=2.4.2-3+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -593,18 +593,18 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.4.2-3+deb12u8
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3%2bdeb12u8.dsc' cups_2.4.2-3+deb12u8.dsc 3389 SHA256:526c48402f1410ae55dccc0dd6e6ebe654d15e877829ea0e2b8aece7a20c56b7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2.orig.tar.gz' cups_2.4.2.orig.tar.gz 8128785 SHA256:f03ccb40b087d1e30940a40e0141dcbba263f39974c20eb9f2521066c9c6c908
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2.orig.tar.gz.asc' cups_2.4.2.orig.tar.gz.asc 228 SHA256:1c116a5fb52e013f4569c3e4cb09a9934ea5e498b9e9d3b823bc2ae09066555b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3%2bdeb12u8.debian.tar.xz' cups_2.4.2-3+deb12u8.debian.tar.xz 390072 SHA256:e66c4a352a0b89665a8506019f37bfe36a9d032c95c6dad41206ae908404ff9e
+$ apt-get source -qq --print-uris cups=2.4.2-3+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2-3%2bdeb12u9.dsc' cups_2.4.2-3+deb12u9.dsc 3389 SHA256:6474d31542a44084f27e82c780a9874d923517e495487949b517da6c3e7b08dd
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2.orig.tar.gz' cups_2.4.2.orig.tar.gz 8128785 SHA256:f03ccb40b087d1e30940a40e0141dcbba263f39974c20eb9f2521066c9c6c908
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2.orig.tar.gz.asc' cups_2.4.2.orig.tar.gz.asc 228 SHA256:1c116a5fb52e013f4569c3e4cb09a9934ea5e498b9e9d3b823bc2ae09066555b
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2-3%2bdeb12u9.debian.tar.xz' cups_2.4.2-3+deb12u9.debian.tar.xz 391124 SHA256:7cdfaf0d9339a16723ee25e940e65172cd446baf35c476a2fa6de6f4730080c2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/2.4.2-3+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.4.2-3+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.4.2-3+deb12u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/2.4.2-3+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.4.2-3+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.4.2-3+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.88.1-10+deb12u14`
 
@@ -1777,15 +1777,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u4`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`)
 
@@ -1819,17 +1819,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u3.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u3.dsc 5106 SHA256:8ff521fb4a39209dc2cc94e470fa6baf63aaf14ca85ac5ad0ef529693192fa9d
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u3.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u3.debian.tar.xz 268876 SHA256:ffe99f85602cff118f2009648645c52ebc6e3df4e02f11554b9b5f42c696331a
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u4.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u4.dsc 5131 SHA256:520ab1f2e2310d89018595597b4e922291725aea14d5f835b042ba657a0a5190
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u4.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u4.debian.tar.xz 275684 SHA256:6d627be6acec16282946f038acb765e8dd0475fc681d17298e84dd0c9593d133
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2+deb12u1`
 
