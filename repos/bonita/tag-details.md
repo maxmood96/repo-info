@@ -4,6 +4,8 @@
 
 -	[`bonita:10.2`](#bonita102)
 -	[`bonita:10.2.0`](#bonita1020)
+-	[`bonita:10.3`](#bonita103)
+-	[`bonita:10.3.0`](#bonita1030)
 -	[`bonita:2022.2`](#bonita20222)
 -	[`bonita:2022.2-u0`](#bonita20222-u0)
 -	[`bonita:2023.1`](#bonita20231)
@@ -12,6 +14,8 @@
 -	[`bonita:2023.2-u0`](#bonita20232-u0)
 -	[`bonita:2024.3`](#bonita20243)
 -	[`bonita:2024.3-u0`](#bonita20243-u0)
+-	[`bonita:2025.1`](#bonita20251)
+-	[`bonita:2025.1-u0`](#bonita20251-u0)
 -	[`bonita:7.15`](#bonita715)
 -	[`bonita:7.15.0`](#bonita7150)
 -	[`bonita:8.0`](#bonita80)
@@ -408,6 +412,396 @@ $ docker pull bonita@sha256:a4cef998a7dcfa9728d13145da7f12cf75c9485fbb36198667a8
 	-	`sha256:2d08721ce43f1cc0169d3c167391416b0326e4047f51928596b10266d97f910a`  
 		Last Modified: Mon, 04 Aug 2025 20:55:20 GMT  
 		Size: 29.0 KB (28964 bytes)  
+		MIME: application/vnd.in-toto+json
+
+## `bonita:10.3`
+
+```console
+$ docker pull bonita@sha256:51c89865b6062c5a679bee38e6aac34c087135cbc49f1681220bb56a2e8622df
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `bonita:10.3` - linux; amd64
+
+```console
+$ docker pull bonita@sha256:c5e55a85071ea61b524fe10d5ea187251920c4379c3faf175c6f5e00477bc4d6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **194.9 MB (194948265 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1b7cb1acb7416289211955ce9fcf64094e0e330e4421248421324eb27c50075f`
+-	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
+-	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
+
+```dockerfile
+# Tue, 15 Jul 2025 11:30:48 GMT
+ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
+# Tue, 15 Jul 2025 11:30:48 GMT
+CMD ["/bin/sh"]
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_VERSION=jdk-21.0.8+9
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='f495749fce8d8974323f30428c1183168f90592dc90bb94c96edab33ffccc94e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        x86_64)          ESUM='f499e2d5c596fd531c8427b2fb207c9eeabed783adad32aeed64b03dd476a231';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN apk add --no-cache tzdata curl unzip bash su-exec jattach # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN mkdir /opt/custom-init.d/ # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN addgroup -S -g 1000 bonita  && adduser -u 1000 -S -G bonita -h /opt/bonita/ -s /sbin/nologin bonita # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BRANDING_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_SHA256
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BASE_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_VERSION=10.3.0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BRANDING_VERSION=2025.1-u0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ZIP_FILE=BonitaCommunity-2025.1-u0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN mkdir /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY files /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then       echo "File already present in /opt/files";     else       curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip       && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c -;     fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_USERNAME=http-api
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_PASSWORD=
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_USERNAME=monitoring
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_PASSWORD=mon1tor1ng_adm1n
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV JMX_REMOTE_ACCESS=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV REMOTE_IP_VALVE_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_STDOUT_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_FILES_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH=/opt/bonita/logs
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_MAX_DAYS=30
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_MAX_THREADS=20
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY templates /opt/templates # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+EXPOSE map[8080/tcp:{} 9000/tcp:{}]
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh" "/opt/files/startup.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
+```
+
+-	Layers:
+	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
+		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
+		Size: 3.6 MB (3637570 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fbfe9407f97c5a3827be879ab9af74bfb17d46f835370cffead35e0378d78bb`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 16.2 MB (16162674 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:229ea679746a032ef8454501b6c2a2fb9fde93f7b6cda28f004dca291ed51a6d`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 53.1 MB (53137932 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a90e240ccfd2dd071291ab367adf045fb6cc8cf23c252ab903fe0fb3f9f4d02`  
+		Last Modified: Mon, 04 Aug 2025 21:23:30 GMT  
+		Size: 127.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f12107c687d793a6d868c79d26bf94594fb9245d01fc0b2a787e481082f3eed`  
+		Last Modified: Mon, 04 Aug 2025 21:23:31 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b4cab1f9d9d95f409ee3fea6044a63ac9bc53c575a1e2c524d07c6a4f6111eb8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 1.9 MB (1856384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efc48bf6928c976d5656bdbfd7b8b4ba25845ab2510f0026d42fb004f8b158b4`  
+		Last Modified: Thu, 25 Sep 2025 17:04:12 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bb95236835943c965ffd830fe7d6643e760eff932fb129b3e4f7e58c9914682`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 945.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9d17c113848349cf14b8cbc80003ce9d7d949685d9efffb217e670b2e6ea455c`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 114.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c797162754dd1192691416527596264d7c436469667d6de2bac617763e7a4a6`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 3.7 KB (3714 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fe553d5c239944db9c03ad06f1213647ac1c7364c8c65d3e57b872e3dabe616`  
+		Last Modified: Thu, 25 Sep 2025 17:04:35 GMT  
+		Size: 120.1 MB (120140553 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aab61bfa680dc2ddeb3b30271c9b2eeb17aeb83a3ea264ff4b60e2739845bfe8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 5.8 KB (5849 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `bonita:10.3` - unknown; unknown
+
+```console
+$ docker pull bonita@sha256:8ca5a8df8c2e307bac0de37eb3e3fea5e7621138e887e3e1d032a0f0a8e1a7eb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1317453 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:36cc9e11bbc4e63e742cd5b5c9aa668d2e515463582649bcc29976265e3fa9db`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:838560e5d041436620e7b68d4326d8a37ae5f064096ff394067124a71d874cf5`  
+		Last Modified: Thu, 25 Sep 2025 17:55:21 GMT  
+		Size: 1.3 MB (1288258 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:49719ac97a8e3ac3243b71aa05111a5d6c471348d8fb2cbf7b41d251d177cdc7`  
+		Last Modified: Thu, 25 Sep 2025 17:55:22 GMT  
+		Size: 29.2 KB (29195 bytes)  
+		MIME: application/vnd.in-toto+json
+
+## `bonita:10.3.0`
+
+```console
+$ docker pull bonita@sha256:51c89865b6062c5a679bee38e6aac34c087135cbc49f1681220bb56a2e8622df
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `bonita:10.3.0` - linux; amd64
+
+```console
+$ docker pull bonita@sha256:c5e55a85071ea61b524fe10d5ea187251920c4379c3faf175c6f5e00477bc4d6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **194.9 MB (194948265 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1b7cb1acb7416289211955ce9fcf64094e0e330e4421248421324eb27c50075f`
+-	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
+-	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
+
+```dockerfile
+# Tue, 15 Jul 2025 11:30:48 GMT
+ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
+# Tue, 15 Jul 2025 11:30:48 GMT
+CMD ["/bin/sh"]
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_VERSION=jdk-21.0.8+9
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='f495749fce8d8974323f30428c1183168f90592dc90bb94c96edab33ffccc94e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        x86_64)          ESUM='f499e2d5c596fd531c8427b2fb207c9eeabed783adad32aeed64b03dd476a231';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN apk add --no-cache tzdata curl unzip bash su-exec jattach # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN mkdir /opt/custom-init.d/ # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN addgroup -S -g 1000 bonita  && adduser -u 1000 -S -G bonita -h /opt/bonita/ -s /sbin/nologin bonita # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BRANDING_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_SHA256
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BASE_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_VERSION=10.3.0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BRANDING_VERSION=2025.1-u0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ZIP_FILE=BonitaCommunity-2025.1-u0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN mkdir /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY files /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then       echo "File already present in /opt/files";     else       curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip       && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c -;     fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_USERNAME=http-api
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_PASSWORD=
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_USERNAME=monitoring
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_PASSWORD=mon1tor1ng_adm1n
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV JMX_REMOTE_ACCESS=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV REMOTE_IP_VALVE_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_STDOUT_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_FILES_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH=/opt/bonita/logs
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_MAX_DAYS=30
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_MAX_THREADS=20
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY templates /opt/templates # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+EXPOSE map[8080/tcp:{} 9000/tcp:{}]
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh" "/opt/files/startup.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
+```
+
+-	Layers:
+	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
+		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
+		Size: 3.6 MB (3637570 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fbfe9407f97c5a3827be879ab9af74bfb17d46f835370cffead35e0378d78bb`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 16.2 MB (16162674 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:229ea679746a032ef8454501b6c2a2fb9fde93f7b6cda28f004dca291ed51a6d`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 53.1 MB (53137932 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a90e240ccfd2dd071291ab367adf045fb6cc8cf23c252ab903fe0fb3f9f4d02`  
+		Last Modified: Mon, 04 Aug 2025 21:23:30 GMT  
+		Size: 127.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f12107c687d793a6d868c79d26bf94594fb9245d01fc0b2a787e481082f3eed`  
+		Last Modified: Mon, 04 Aug 2025 21:23:31 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b4cab1f9d9d95f409ee3fea6044a63ac9bc53c575a1e2c524d07c6a4f6111eb8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 1.9 MB (1856384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efc48bf6928c976d5656bdbfd7b8b4ba25845ab2510f0026d42fb004f8b158b4`  
+		Last Modified: Thu, 25 Sep 2025 17:04:12 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bb95236835943c965ffd830fe7d6643e760eff932fb129b3e4f7e58c9914682`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 945.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9d17c113848349cf14b8cbc80003ce9d7d949685d9efffb217e670b2e6ea455c`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 114.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c797162754dd1192691416527596264d7c436469667d6de2bac617763e7a4a6`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 3.7 KB (3714 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fe553d5c239944db9c03ad06f1213647ac1c7364c8c65d3e57b872e3dabe616`  
+		Last Modified: Thu, 25 Sep 2025 17:04:35 GMT  
+		Size: 120.1 MB (120140553 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aab61bfa680dc2ddeb3b30271c9b2eeb17aeb83a3ea264ff4b60e2739845bfe8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 5.8 KB (5849 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `bonita:10.3.0` - unknown; unknown
+
+```console
+$ docker pull bonita@sha256:8ca5a8df8c2e307bac0de37eb3e3fea5e7621138e887e3e1d032a0f0a8e1a7eb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1317453 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:36cc9e11bbc4e63e742cd5b5c9aa668d2e515463582649bcc29976265e3fa9db`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:838560e5d041436620e7b68d4326d8a37ae5f064096ff394067124a71d874cf5`  
+		Last Modified: Thu, 25 Sep 2025 17:55:21 GMT  
+		Size: 1.3 MB (1288258 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:49719ac97a8e3ac3243b71aa05111a5d6c471348d8fb2cbf7b41d251d177cdc7`  
+		Last Modified: Thu, 25 Sep 2025 17:55:22 GMT  
+		Size: 29.2 KB (29195 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `bonita:2022.2`
@@ -3626,6 +4020,396 @@ $ docker pull bonita@sha256:a4cef998a7dcfa9728d13145da7f12cf75c9485fbb36198667a8
 		Size: 29.0 KB (28964 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `bonita:2025.1`
+
+```console
+$ docker pull bonita@sha256:51c89865b6062c5a679bee38e6aac34c087135cbc49f1681220bb56a2e8622df
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `bonita:2025.1` - linux; amd64
+
+```console
+$ docker pull bonita@sha256:c5e55a85071ea61b524fe10d5ea187251920c4379c3faf175c6f5e00477bc4d6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **194.9 MB (194948265 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1b7cb1acb7416289211955ce9fcf64094e0e330e4421248421324eb27c50075f`
+-	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
+-	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
+
+```dockerfile
+# Tue, 15 Jul 2025 11:30:48 GMT
+ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
+# Tue, 15 Jul 2025 11:30:48 GMT
+CMD ["/bin/sh"]
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_VERSION=jdk-21.0.8+9
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='f495749fce8d8974323f30428c1183168f90592dc90bb94c96edab33ffccc94e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        x86_64)          ESUM='f499e2d5c596fd531c8427b2fb207c9eeabed783adad32aeed64b03dd476a231';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN apk add --no-cache tzdata curl unzip bash su-exec jattach # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN mkdir /opt/custom-init.d/ # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN addgroup -S -g 1000 bonita  && adduser -u 1000 -S -G bonita -h /opt/bonita/ -s /sbin/nologin bonita # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BRANDING_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_SHA256
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BASE_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_VERSION=10.3.0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BRANDING_VERSION=2025.1-u0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ZIP_FILE=BonitaCommunity-2025.1-u0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN mkdir /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY files /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then       echo "File already present in /opt/files";     else       curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip       && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c -;     fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_USERNAME=http-api
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_PASSWORD=
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_USERNAME=monitoring
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_PASSWORD=mon1tor1ng_adm1n
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV JMX_REMOTE_ACCESS=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV REMOTE_IP_VALVE_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_STDOUT_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_FILES_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH=/opt/bonita/logs
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_MAX_DAYS=30
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_MAX_THREADS=20
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY templates /opt/templates # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+EXPOSE map[8080/tcp:{} 9000/tcp:{}]
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh" "/opt/files/startup.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
+```
+
+-	Layers:
+	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
+		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
+		Size: 3.6 MB (3637570 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fbfe9407f97c5a3827be879ab9af74bfb17d46f835370cffead35e0378d78bb`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 16.2 MB (16162674 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:229ea679746a032ef8454501b6c2a2fb9fde93f7b6cda28f004dca291ed51a6d`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 53.1 MB (53137932 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a90e240ccfd2dd071291ab367adf045fb6cc8cf23c252ab903fe0fb3f9f4d02`  
+		Last Modified: Mon, 04 Aug 2025 21:23:30 GMT  
+		Size: 127.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f12107c687d793a6d868c79d26bf94594fb9245d01fc0b2a787e481082f3eed`  
+		Last Modified: Mon, 04 Aug 2025 21:23:31 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b4cab1f9d9d95f409ee3fea6044a63ac9bc53c575a1e2c524d07c6a4f6111eb8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 1.9 MB (1856384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efc48bf6928c976d5656bdbfd7b8b4ba25845ab2510f0026d42fb004f8b158b4`  
+		Last Modified: Thu, 25 Sep 2025 17:04:12 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bb95236835943c965ffd830fe7d6643e760eff932fb129b3e4f7e58c9914682`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 945.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9d17c113848349cf14b8cbc80003ce9d7d949685d9efffb217e670b2e6ea455c`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 114.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c797162754dd1192691416527596264d7c436469667d6de2bac617763e7a4a6`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 3.7 KB (3714 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fe553d5c239944db9c03ad06f1213647ac1c7364c8c65d3e57b872e3dabe616`  
+		Last Modified: Thu, 25 Sep 2025 17:04:35 GMT  
+		Size: 120.1 MB (120140553 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aab61bfa680dc2ddeb3b30271c9b2eeb17aeb83a3ea264ff4b60e2739845bfe8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 5.8 KB (5849 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `bonita:2025.1` - unknown; unknown
+
+```console
+$ docker pull bonita@sha256:8ca5a8df8c2e307bac0de37eb3e3fea5e7621138e887e3e1d032a0f0a8e1a7eb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1317453 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:36cc9e11bbc4e63e742cd5b5c9aa668d2e515463582649bcc29976265e3fa9db`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:838560e5d041436620e7b68d4326d8a37ae5f064096ff394067124a71d874cf5`  
+		Last Modified: Thu, 25 Sep 2025 17:55:21 GMT  
+		Size: 1.3 MB (1288258 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:49719ac97a8e3ac3243b71aa05111a5d6c471348d8fb2cbf7b41d251d177cdc7`  
+		Last Modified: Thu, 25 Sep 2025 17:55:22 GMT  
+		Size: 29.2 KB (29195 bytes)  
+		MIME: application/vnd.in-toto+json
+
+## `bonita:2025.1-u0`
+
+```console
+$ docker pull bonita@sha256:51c89865b6062c5a679bee38e6aac34c087135cbc49f1681220bb56a2e8622df
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `bonita:2025.1-u0` - linux; amd64
+
+```console
+$ docker pull bonita@sha256:c5e55a85071ea61b524fe10d5ea187251920c4379c3faf175c6f5e00477bc4d6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **194.9 MB (194948265 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1b7cb1acb7416289211955ce9fcf64094e0e330e4421248421324eb27c50075f`
+-	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
+-	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
+
+```dockerfile
+# Tue, 15 Jul 2025 11:30:48 GMT
+ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
+# Tue, 15 Jul 2025 11:30:48 GMT
+CMD ["/bin/sh"]
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_VERSION=jdk-21.0.8+9
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='f495749fce8d8974323f30428c1183168f90592dc90bb94c96edab33ffccc94e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        x86_64)          ESUM='f499e2d5c596fd531c8427b2fb207c9eeabed783adad32aeed64b03dd476a231';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN apk add --no-cache tzdata curl unzip bash su-exec jattach # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN mkdir /opt/custom-init.d/ # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+RUN addgroup -S -g 1000 bonita  && adduser -u 1000 -S -G bonita -h /opt/bonita/ -s /sbin/nologin bonita # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BRANDING_VERSION
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_SHA256
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BASE_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ARG BONITA_URL
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_VERSION=10.3.0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BRANDING_VERSION=2025.1-u0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ZIP_FILE=BonitaCommunity-2025.1-u0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN mkdir /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY files /opt/files # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then       echo "File already present in /opt/files";     else       curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip       && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c -;     fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_USERNAME=http-api
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_API_PASSWORD=
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_USERNAME=monitoring
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV MONITORING_PASSWORD=mon1tor1ng_adm1n
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV JMX_REMOTE_ACCESS=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV REMOTE_IP_VALVE_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_STDOUT_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_FILES_ENABLED=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH=/opt/bonita/logs
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ACCESSLOGS_MAX_DAYS=30
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV HTTP_MAX_THREADS=20
+# Thu, 25 Sep 2025 07:56:28 GMT
+COPY templates /opt/templates # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
+EXPOSE map[8080/tcp:{} 9000/tcp:{}]
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh" "/opt/files/startup.sh"]
+# Thu, 25 Sep 2025 07:56:28 GMT
+CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
+```
+
+-	Layers:
+	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
+		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
+		Size: 3.6 MB (3637570 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fbfe9407f97c5a3827be879ab9af74bfb17d46f835370cffead35e0378d78bb`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 16.2 MB (16162674 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:229ea679746a032ef8454501b6c2a2fb9fde93f7b6cda28f004dca291ed51a6d`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 53.1 MB (53137932 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a90e240ccfd2dd071291ab367adf045fb6cc8cf23c252ab903fe0fb3f9f4d02`  
+		Last Modified: Mon, 04 Aug 2025 21:23:30 GMT  
+		Size: 127.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f12107c687d793a6d868c79d26bf94594fb9245d01fc0b2a787e481082f3eed`  
+		Last Modified: Mon, 04 Aug 2025 21:23:31 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b4cab1f9d9d95f409ee3fea6044a63ac9bc53c575a1e2c524d07c6a4f6111eb8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 1.9 MB (1856384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efc48bf6928c976d5656bdbfd7b8b4ba25845ab2510f0026d42fb004f8b158b4`  
+		Last Modified: Thu, 25 Sep 2025 17:04:12 GMT  
+		Size: 122.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bb95236835943c965ffd830fe7d6643e760eff932fb129b3e4f7e58c9914682`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 945.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9d17c113848349cf14b8cbc80003ce9d7d949685d9efffb217e670b2e6ea455c`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 114.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0c797162754dd1192691416527596264d7c436469667d6de2bac617763e7a4a6`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 3.7 KB (3714 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fe553d5c239944db9c03ad06f1213647ac1c7364c8c65d3e57b872e3dabe616`  
+		Last Modified: Thu, 25 Sep 2025 17:04:35 GMT  
+		Size: 120.1 MB (120140553 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aab61bfa680dc2ddeb3b30271c9b2eeb17aeb83a3ea264ff4b60e2739845bfe8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 5.8 KB (5849 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `bonita:2025.1-u0` - unknown; unknown
+
+```console
+$ docker pull bonita@sha256:8ca5a8df8c2e307bac0de37eb3e3fea5e7621138e887e3e1d032a0f0a8e1a7eb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1317453 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:36cc9e11bbc4e63e742cd5b5c9aa668d2e515463582649bcc29976265e3fa9db`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:838560e5d041436620e7b68d4326d8a37ae5f064096ff394067124a71d874cf5`  
+		Last Modified: Thu, 25 Sep 2025 17:55:21 GMT  
+		Size: 1.3 MB (1288258 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:49719ac97a8e3ac3243b71aa05111a5d6c471348d8fb2cbf7b41d251d177cdc7`  
+		Last Modified: Thu, 25 Sep 2025 17:55:22 GMT  
+		Size: 29.2 KB (29195 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ## `bonita:7.15`
 
 ```console
@@ -6455,7 +7239,7 @@ $ docker pull bonita@sha256:b26c17852789c9ca98c3fc7f863018ac94cc505e73c87b23fa83
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:7ba5348f9e97897f95587c2cecbf3d759dcfa53e0a956f789f07018681010b76
+$ docker pull bonita@sha256:51c89865b6062c5a679bee38e6aac34c087135cbc49f1681220bb56a2e8622df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6466,183 +7250,183 @@ $ docker pull bonita@sha256:7ba5348f9e97897f95587c2cecbf3d759dcfa53e0a956f789f07
 ### `bonita:latest` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:5b2ebe7dcb386c9b797ef7961e2f781fba483c065847d4c16307662aea1fdb99
+$ docker pull bonita@sha256:c5e55a85071ea61b524fe10d5ea187251920c4379c3faf175c6f5e00477bc4d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.2 MB (188160106 bytes)**  
+-	Total Size: **194.9 MB (194948265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a15ce949bc4fd127d365abd513141dbbfb34b5ba8a4a3caae91492547ee66dd`
+-	Image ID: `sha256:1b7cb1acb7416289211955ce9fcf64094e0e330e4421248421324eb27c50075f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 15 Oct 2024 08:31:30 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Tue, 15 Jul 2025 11:30:48 GMT
+ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
+# Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
-ENV JAVA_VERSION=jdk-17.0.16+8
-# Tue, 15 Oct 2024 08:31:30 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='88424be8b71d7c801c39866cf19d3b7c49b1c499cdccfa292e103c7cba08c21b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.16_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
+ENV JAVA_VERSION=jdk-21.0.8+9
+# Fri, 01 Aug 2025 11:04:34 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          ESUM='f495749fce8d8974323f30428c1183168f90592dc90bb94c96edab33ffccc94e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        x86_64)          ESUM='f499e2d5c596fd531c8427b2fb207c9eeabed783adad32aeed64b03dd476a231';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.8_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 RUN apk add --no-cache tzdata curl unzip bash su-exec jattach # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 RUN mkdir /opt/custom-init.d/ # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 RUN addgroup -S -g 1000 bonita  && adduser -u 1000 -S -G bonita -h /opt/bonita/ -s /sbin/nologin bonita # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ARG BONITA_VERSION
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ARG BRANDING_VERSION
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ARG BONITA_SHA256
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ARG BASE_URL
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ARG BONITA_URL
-# Tue, 15 Oct 2024 08:31:30 GMT
-ENV BONITA_VERSION=10.2.0
-# Tue, 15 Oct 2024 08:31:30 GMT
-ENV BRANDING_VERSION=2024.3-u0
-# Tue, 15 Oct 2024 08:31:30 GMT
-ENV BONITA_SHA256=75ad51a50cba484d3f74637584bf5144bf0cf28c06ae7a5efe1a804cdc996d86
-# Tue, 15 Oct 2024 08:31:30 GMT
-ENV ZIP_FILE=BonitaCommunity-2024.3-u0.zip
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_VERSION=10.3.0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BRANDING_VERSION=2025.1-u0
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV ZIP_FILE=BonitaCommunity-2025.1-u0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat
-# Tue, 15 Oct 2024 08:31:30 GMT
-ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.2.0/bundle-tomcat-10.2.0.zip
-# Tue, 15 Oct 2024 08:31:30 GMT
-# ARGS: BONITA_VERSION=10.2.0 BRANDING_VERSION=2024.3-u0 BONITA_SHA256=75ad51a50cba484d3f74637584bf5144bf0cf28c06ae7a5efe1a804cdc996d86 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.2.0/bundle-tomcat-10.2.0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
 RUN mkdir /opt/files # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 COPY files /opt/files # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
-# ARGS: BONITA_VERSION=10.2.0 BRANDING_VERSION=2024.3-u0 BONITA_SHA256=75ad51a50cba484d3f74637584bf5144bf0cf28c06ae7a5efe1a804cdc996d86 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.2.0/bundle-tomcat-10.2.0.zip
-RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c - ; fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
+# ARGS: BONITA_VERSION=10.3.0 BRANDING_VERSION=2025.1-u0 BONITA_SHA256=44c078fad0ffeec0afac2bf512040be16af4b722369039fe3daef1c091594637 BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.3.0/bundle-tomcat-10.3.0.zip
+RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then       echo "File already present in /opt/files";     else       curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip       && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c -;     fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV HTTP_API=false
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV HTTP_API_USERNAME=http-api
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV HTTP_API_PASSWORD=
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV MONITORING_USERNAME=monitoring
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV MONITORING_PASSWORD=mon1tor1ng_adm1n
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV JMX_REMOTE_ACCESS=false
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV REMOTE_IP_VALVE_ENABLED=false
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV ACCESSLOGS_STDOUT_ENABLED=false
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV ACCESSLOGS_FILES_ENABLED=false
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV ACCESSLOGS_PATH=/opt/bonita/logs
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV ACCESSLOGS_MAX_DAYS=30
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENV HTTP_MAX_THREADS=20
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 COPY templates /opt/templates # buildkit
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 EXPOSE map[8080/tcp:{} 9000/tcp:{}]
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh" "/opt/files/startup.sh"]
-# Tue, 15 Oct 2024 08:31:30 GMT
+# Thu, 25 Sep 2025 07:56:28 GMT
 CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
+		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
+		Size: 3.6 MB (3637570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2752d65a63e3b8c4fb7950d2928bf6d39b65f2e10205b7bd13ccf5294fda1fba`  
-		Last Modified: Mon, 04 Aug 2025 19:11:28 GMT  
-		Size: 16.3 MB (16280115 bytes)  
+	-	`sha256:0fbfe9407f97c5a3827be879ab9af74bfb17d46f835370cffead35e0378d78bb`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 16.2 MB (16162674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d077c3d94f53d4cc9f31623b79dfdf4d879371fb6b3eab31f31f44109e12af30`  
-		Last Modified: Mon, 04 Aug 2025 19:11:38 GMT  
-		Size: 46.7 MB (46664526 bytes)  
+	-	`sha256:229ea679746a032ef8454501b6c2a2fb9fde93f7b6cda28f004dca291ed51a6d`  
+		Last Modified: Mon, 04 Aug 2025 21:23:32 GMT  
+		Size: 53.1 MB (53137932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07a6416375b2a72eefb771654e6a1bb9ca50021d4e891a59c6feb058b7ecb5d0`  
-		Last Modified: Mon, 04 Aug 2025 19:11:24 GMT  
+	-	`sha256:4a90e240ccfd2dd071291ab367adf045fb6cc8cf23c252ab903fe0fb3f9f4d02`  
+		Last Modified: Mon, 04 Aug 2025 21:23:30 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b392aaebe6179613c78f2474bff6aecdd37380275b7d032d281864c29542def`  
-		Last Modified: Mon, 04 Aug 2025 19:11:21 GMT  
-		Size: 2.3 KB (2280 bytes)  
+	-	`sha256:0f12107c687d793a6d868c79d26bf94594fb9245d01fc0b2a787e481082f3eed`  
+		Last Modified: Mon, 04 Aug 2025 21:23:31 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2be6cfc4127155de976a4ac96958fca10c61dcc15d42d8eee482d21b04b8559`  
-		Last Modified: Mon, 04 Aug 2025 20:18:31 GMT  
-		Size: 1.9 MB (1887267 bytes)  
+	-	`sha256:b4cab1f9d9d95f409ee3fea6044a63ac9bc53c575a1e2c524d07c6a4f6111eb8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 1.9 MB (1856384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782cfbf9db965ae2e03b55aa709cfd45430eb7e790d05ec191d2df6ca24b6a1d`  
-		Last Modified: Mon, 04 Aug 2025 20:18:29 GMT  
-		Size: 123.0 B  
+	-	`sha256:efc48bf6928c976d5656bdbfd7b8b4ba25845ab2510f0026d42fb004f8b158b4`  
+		Last Modified: Thu, 25 Sep 2025 17:04:12 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2cee9d8b9791b1671c1117e6362090eb506faeb29306634ba194bd66a8592df`  
-		Last Modified: Mon, 04 Aug 2025 20:18:28 GMT  
-		Size: 946.0 B  
+	-	`sha256:8bb95236835943c965ffd830fe7d6643e760eff932fb129b3e4f7e58c9914682`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 945.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:531898fd5ad9f0dc3f847d62736e763503447c1a2b34afede7e15ba5e76723e1`  
-		Last Modified: Mon, 04 Aug 2025 20:18:30 GMT  
-		Size: 115.0 B  
+	-	`sha256:9d17c113848349cf14b8cbc80003ce9d7d949685d9efffb217e670b2e6ea455c`  
+		Last Modified: Thu, 25 Sep 2025 17:04:13 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c30be6bf19e540044c3bdcc0a9a0506783fe2083f3bdda3c6ca721b2bb5cb3b`  
-		Last Modified: Mon, 04 Aug 2025 20:18:30 GMT  
-		Size: 3.7 KB (3708 bytes)  
+	-	`sha256:0c797162754dd1192691416527596264d7c436469667d6de2bac617763e7a4a6`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 3.7 KB (3714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0879d458874a96a5c77812f44e684bdd35392e2bb1ed4d17f99638bfbcde7f5`  
-		Last Modified: Mon, 04 Aug 2025 21:16:38 GMT  
-		Size: 119.5 MB (119515325 bytes)  
+	-	`sha256:0fe553d5c239944db9c03ad06f1213647ac1c7364c8c65d3e57b872e3dabe616`  
+		Last Modified: Thu, 25 Sep 2025 17:04:35 GMT  
+		Size: 120.1 MB (120140553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b93fbfa5fb182e400530b9678787ff2213cd857bc40a3ddb1884bc577ff4719`  
-		Last Modified: Mon, 04 Aug 2025 20:18:24 GMT  
-		Size: 5.9 KB (5885 bytes)  
+	-	`sha256:aab61bfa680dc2ddeb3b30271c9b2eeb17aeb83a3ea264ff4b60e2739845bfe8`  
+		Last Modified: Thu, 25 Sep 2025 17:04:14 GMT  
+		Size: 5.8 KB (5849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:latest` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:a4cef998a7dcfa9728d13145da7f12cf75c9485fbb36198667a81e6611005fdf
+$ docker pull bonita@sha256:8ca5a8df8c2e307bac0de37eb3e3fea5e7621138e887e3e1d032a0f0a8e1a7eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1318775 bytes)**  
+-	Total Size: **1.3 MB (1317453 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15df05261e15c922622c4d22beeaf7dc2126b968161dc77b12d33b4624dfe767`
+-	Image ID: `sha256:36cc9e11bbc4e63e742cd5b5c9aa668d2e515463582649bcc29976265e3fa9db`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28faa0fa5fe36471cc405cf68e1d0310a11f7cda09a9fb70d7070dc7007ea991`  
-		Last Modified: Mon, 04 Aug 2025 20:55:19 GMT  
-		Size: 1.3 MB (1289811 bytes)  
+	-	`sha256:838560e5d041436620e7b68d4326d8a37ae5f064096ff394067124a71d874cf5`  
+		Last Modified: Thu, 25 Sep 2025 17:55:21 GMT  
+		Size: 1.3 MB (1288258 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d08721ce43f1cc0169d3c167391416b0326e4047f51928596b10266d97f910a`  
-		Last Modified: Mon, 04 Aug 2025 20:55:20 GMT  
-		Size: 29.0 KB (28964 bytes)  
+	-	`sha256:49719ac97a8e3ac3243b71aa05111a5d6c471348d8fb2cbf7b41d251d177cdc7`  
+		Last Modified: Thu, 25 Sep 2025 17:55:22 GMT  
+		Size: 29.2 KB (29195 bytes)  
 		MIME: application/vnd.in-toto+json
