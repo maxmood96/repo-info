@@ -1,7 +1,7 @@
 ## `swift:amazonlinux2`
 
 ```console
-$ docker pull swift@sha256:6aed71011eac24eb1115df8b57a953c699fdce2c799d6984bae16a9b511d2e41
+$ docker pull swift@sha256:965c999cc4fea41787d508148d7270cb0dabc3f3d470eb1dbb41395a8c504168
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull swift@sha256:6aed71011eac24eb1115df8b57a953c699fdce2c799d6984bae16
 ### `swift:amazonlinux2` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:889cdc0c0e913adef6aa65d761c2bed85d6099b8cfa3c9aee3da76f7a4212c87
+$ docker pull swift@sha256:6fe32f5d5bb5cf69ed9e6ccb6ba017ecbff3d80141102930afcf33d915c8b964
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 GB (1407688580 bytes)**  
+-	Total Size: **1.4 GB (1408571531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e026db4f2ba90275a99e18f2d954fb87e0c47f14d5035ba467cbf8b6a36ac313`
+-	Image ID: `sha256:4d003c535315c3ca2d31fc483d07b4950ae5b3fedf5e867ac13b5120076fbd93`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 08 Sep 2025 17:11:53 GMT
+# Mon, 15 Sep 2025 22:15:37 GMT
 COPY /rootfs/ / # buildkit
-# Mon, 08 Sep 2025 17:11:53 GMT
+# Mon, 15 Sep 2025 22:15:37 GMT
 CMD ["/bin/bash"]
 # Mon, 15 Sep 2025 22:15:37 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
@@ -55,44 +55,44 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:0c31e84362b17be00ccd03302ca56ddbf8561b17d46e8c82bc87c21d389e7731`  
-		Last Modified: Mon, 08 Sep 2025 20:24:26 GMT  
-		Size: 63.0 MB (62983288 bytes)  
+	-	`sha256:fcc68e74b985a5b6eee4c73b52bbf6b5465b7b43a029c51e8950289a9262b97b`  
+		Last Modified: Fri, 19 Sep 2025 15:29:12 GMT  
+		Size: 62.9 MB (62933841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3979593f91af6a9debf09e644977460ebad867c1e4c1f886dad33b86f6fe5a6`  
-		Last Modified: Tue, 16 Sep 2025 20:07:07 GMT  
-		Size: 319.9 MB (319902647 bytes)  
+	-	`sha256:828a1e5c02062e074d22a516fab7cc1c3294d053b6cca119c10603262fb6b69f`  
+		Last Modified: Thu, 25 Sep 2025 04:54:31 GMT  
+		Size: 320.8 MB (320835047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eb227f8b0cca243b4649727bca666fe0c4713ddc1823e4de7fa8f61adf08f3b`  
 		Last Modified: Tue, 16 Sep 2025 20:07:42 GMT  
 		Size: 1.0 GB (1024802471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f82f309e33b3ee88a36d3643db00ab49518da829e1b1b1e348056f828983cb3`  
-		Last Modified: Tue, 16 Sep 2025 16:55:55 GMT  
-		Size: 174.0 B  
+	-	`sha256:d662e3fb2785026ff1741b60c99a3d8bd7e8cb329d4d12060d082741adf5e2a9`  
+		Last Modified: Thu, 25 Sep 2025 02:20:05 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:amazonlinux2` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:22b23c107a0c6403c59123c6170cbf0b2734f845978f555075c1f4cf50db7692
+$ docker pull swift@sha256:e1a508f65257c428057192dc8bd28b6ebcac94098a9cbe5cf291b9e17d1faf30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **12.7 MB (12734865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f21201da7c5cbae36e020eb03eaeeeaa8acf045b413ab64143781bfa4caf750d`
+-	Image ID: `sha256:3983cd955338514422b710f7b4c328c44de3dc235b1fca9d41a50f3f3b57c068`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0f5b92c6670aa5ac73a0e9e84fdf2e546151a3775b9b3c1de0de6e2a122b80bf`  
-		Last Modified: Tue, 16 Sep 2025 19:48:46 GMT  
+	-	`sha256:bb2597631d33737f7ee9ecb276f0b1cd8dd955881d9fa780cdbf78180bf380a6`  
+		Last Modified: Thu, 25 Sep 2025 04:48:23 GMT  
 		Size: 12.7 MB (12719987 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b50b6107ee508defae49cc8bef3d5764056eb4c133f424d6580b4935754e35a5`  
-		Last Modified: Tue, 16 Sep 2025 19:48:47 GMT  
+	-	`sha256:93318fe1e0c8927539ea408a739431e69450f8d1b41a0a0adc380e9ecb0f301a`  
+		Last Modified: Thu, 25 Sep 2025 04:48:24 GMT  
 		Size: 14.9 KB (14878 bytes)  
 		MIME: application/vnd.in-toto+json
 
