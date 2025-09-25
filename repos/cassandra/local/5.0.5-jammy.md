@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bfcfb7878bb8ecaaf9e9e971272a418917134948663f0b27cf9f378925ee403`
-- Created: `2025-09-08T20:03:29Z`
+- Image ID: `sha256:1fd027d08facf8fc9dc658c7ed59f2cbcf3eee62f7df7e592b07826741018105`
+- Created: `2025-09-23T19:28:38Z`
 - Virtual Size: ~ 380.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.16+8`
-  - `GOSU_VERSION=1.18`
+  - `GOSU_VERSION=1.19`
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622`
@@ -467,13 +467,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.3.dsc' dpkg_1.21.1ubuntu2.3.dsc 2254 SHA512:1cbd80001036fd25817149fe11875dff0b9244cac328fdaccff12e33cd608e89c3572a8c044592e80eb8b4b29ce83a25bb9468d791e7f5a53e2f0d327d913d78
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.3.tar.xz' dpkg_1.21.1ubuntu2.3.tar.xz 5017216 SHA512:c81a729a5bc7f73440eeb8c427f42691384dff7d0bd11edeaecead95b3931dd82d4ed70cac3f90befecc6ba6d3116c7a1782e455eee91fa4fe485fa625c04be7
-```
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1.2`
 
@@ -677,15 +673,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.10
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.10.dsc' glibc_2.35-0ubuntu3.10.dsc 8758 SHA512:683c64475ec2daddb0acad56a1aa1a23f6d9346817732f40c040d8a792b5d1b5441eacba4934d8074684fd731b717e8fbe42327b33a38692057987a245e65643
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.10.debian.tar.xz' glibc_2.35-0ubuntu3.10.debian.tar.xz 938532 SHA512:a229f2a2fb9e627df6d0f767a9c06d9cd626cf900f0f76a089837bdc263528639ce25e547c9f5af06b8cac5147ab7e0340766ab4cfe7b1c09862e3ce2dcba042
-```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
