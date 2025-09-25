@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f09fb61e562f00b18e00f7f40169c42995087580fa404c9d771e17dcff48bcb`
-- Created: `2025-08-26T17:11:52Z`
+- Image ID: `sha256:13eac8a8fb12ccdf3837957e0f1fde5150dde1125c188cecb494380491de2963`
+- Created: `2025-09-22T21:54:33Z`
 - Virtual Size: ~ 345.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-24.0.2+12`
-  - `CLOJURE_VERSION=1.12.2.1565`
+  - `CLOJURE_VERSION=1.12.2.1571`
 
 ## `apk` (`.apk`-based packages)
 
