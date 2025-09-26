@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3636b56e7047e491f39a70e879fb9cb42a76d0a88ac9db72e524c6b3df264ef4`
-- Created: `2025-03-06T03:06:23Z`
-- Virtual Size: ~ 205.49 Mb  
+- Image ID: `sha256:c1826a4cc297ef2f0e480423e85ba3d76cbcd2ce488b06d7dd6bf1041aeaef65`
+- Created: `2025-09-23T22:27:44Z`
+- Virtual Size: ~ 219.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2025.02-01`
+  - `rakudo_version=2025.08.1-01`
 
 ## `apk` (`.apk`-based packages)
 
@@ -99,6 +99,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.1.0-r2 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.1.0-r2 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.1.0-r2 installed size:
+913 KiB
+
+brotli-libs-1.1.0-r2 license:
+MIT
+
+```
+
 ### `apk` package: `busybox`
 
 ```console
@@ -133,6 +150,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.34.5-r0 description:
+Asynchronous DNS/names resolver library
+
+c-ares-1.34.5-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.34.5-r0 installed size:
+233 KiB
+
+c-ares-1.34.5-r0 license:
+MIT
+
+```
+
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
@@ -147,6 +181,40 @@ ca-certificates-bundle-20250619-r0 installed size:
 
 ca-certificates-bundle-20250619-r0 license:
 MPL-2.0 AND MIT
+
+```
+
+### `apk` package: `git`
+
+```console
+git-2.49.1-r0 description:
+Distributed version control system
+
+git-2.49.1-r0 webpage:
+https://www.git-scm.com/
+
+git-2.49.1-r0 installed size:
+6568 KiB
+
+git-2.49.1-r0 license:
+GPL-2.0-only
+
+```
+
+### `apk` package: `git-init-template`
+
+```console
+git-init-template-2.49.1-r0 description:
+Git init template directory
+
+git-init-template-2.49.1-r0 webpage:
+https://www.git-scm.com/
+
+git-init-template-2.49.1-r0 installed size:
+20 KiB
+
+git-init-template-2.49.1-r0 license:
+GPL-2.0-only
 
 ```
 
@@ -184,6 +252,57 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.14.1-r1 description:
+The multiprotocol file transfer library
+
+libcurl-8.14.1-r1 webpage:
+https://curl.se/
+
+libcurl-8.14.1-r1 installed size:
+669 KiB
+
+libcurl-8.14.1-r1 license:
+curl
+
+```
+
+### `apk` package: `libexpat`
+
+```console
+libexpat-2.7.2-r0 description:
+XML Parser library written in C (libraries)
+
+libexpat-2.7.2-r0 webpage:
+https://libexpat.github.io/
+
+libexpat-2.7.2-r0 installed size:
+133 KiB
+
+libexpat-2.7.2-r0 license:
+MIT
+
+```
+
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.7-r0 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.7-r0 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.7-r0 installed size:
+193 KiB
+
+libidn2-2.3.7-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libncursesw`
 
 ```console
@@ -201,6 +320,23 @@ X11
 
 ```
 
+### `apk` package: `libpsl`
+
+```console
+libpsl-0.21.5-r3 description:
+C library for the Publix Suffix List
+
+libpsl-0.21.5-r3 webpage:
+https://rockdaboot.github.io/libpsl
+
+libpsl-0.21.5-r3 installed size:
+73 KiB
+
+libpsl-0.21.5-r3 license:
+MIT
+
+```
+
 ### `apk` package: `libssl3`
 
 ```console
@@ -215,6 +351,23 @@ libssl3-3.5.1-r0 installed size:
 
 libssl3-3.5.1-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.3-r0 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.3-r0 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.3-r0 installed size:
+1857 KiB
+
+libunistring-1.3-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -266,6 +419,40 @@ ncurses-terminfo-base-6.5_p20250503-r0 installed size:
 
 ncurses-terminfo-base-6.5_p20250503-r0 license:
 X11
+
+```
+
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.65.0-r0 description:
+HTTP/2 C client, server and proxy (libraries)
+
+nghttp2-libs-1.65.0-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.65.0-r0 installed size:
+129 KiB
+
+nghttp2-libs-1.65.0-r0 license:
+MIT
+
+```
+
+### `apk` package: `pcre2`
+
+```console
+pcre2-10.43-r1 description:
+Perl-compatible regular expression library
+
+pcre2-10.43-r1 webpage:
+https://pcre.org/
+
+pcre2-10.43-r1 installed size:
+707 KiB
+
+pcre2-10.43-r1 license:
+BSD-3-Clause
 
 ```
 
@@ -334,5 +521,22 @@ zlib-1.3.1-r2 installed size:
 
 zlib-1.3.1-r2 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.7-r0 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.7-r0 webpage:
+https://facebook.github.io/zstd/
+
+zstd-libs-1.5.7-r0 installed size:
+701 KiB
+
+zstd-libs-1.5.7-r0 license:
+BSD-3-Clause OR GPL-2.0-or-later
 
 ```
