@@ -616,13 +616,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.1
-'http://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.1.dsc' dpkg_1.22.6ubuntu6.1.dsc 3156 SHA512:30f74ae1977a3f49ba4878afc4800cf783588e34222c62375cb74acdcd9defaf650705cd17c0296a9f4d86bbd8b3f9de9c40c3b09d1a23eca7972ffd40890226
-'http://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.1.tar.xz' dpkg_1.22.6ubuntu6.1.tar.xz 5548380 SHA512:0d6970717cd7f41687c3f42dd0b96edff2a40312bc4e6c60c586c5b7cf5309f8cce354074cd9d5a227e9602e48d1e0015afc01f24d64697e085cbd1da0123137
-```
 
 ### `dpkg` source package: `dulwich=0.21.6-1build2`
 
@@ -1866,14 +1862,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-83.83
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-83.83.dsc' linux_6.8.0-83.83.dsc 9383 SHA512:030f05170e569a577dc96cb9a2841615dafb76cabf14ccbce44143bff1d3c6c8cefa7b4eef534a1bccc6deb779b23ee0ccf381372405429a2acd20422f940ea6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-83.83.diff.gz' linux_6.8.0-83.83.diff.gz 5741287 SHA512:09c29bf6fed486cbf211bf1c3028afe7f23e0c026e68209503c8e1a9317d8522d689c4ba2800c6a19971c86e931c173e91cc41ece7932dc8a4e0c27a454e20a3
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
