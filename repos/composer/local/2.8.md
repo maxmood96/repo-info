@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af0a7f68d2db028a980aee72eabd7623023f3fcac41108c53d839708c114bbba`
+- Image ID: `sha256:1d1f3041725a04bc6b040feaeab0a1a66b1c2b950ef50ccda52b344fe076fdcb`
 - Created: `2025-09-19T12:51:13Z`
-- Virtual Size: ~ 213.27 Mb  
+- Virtual Size: ~ 209.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.12.tar.xz.asc`
-  - `PHP_SHA256=c1b7978cbb5054eed6c749bde4444afc16a3f2268101fb70a7d5d9b1083b12ad`
+  - `PHP_VERSION=8.4.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc`
+  - `PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.8.12`
@@ -523,16 +523,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.2-r0 description:
+libcrypto3-3.5.3-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.2-r0 webpage:
+libcrypto3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.2-r0 installed size:
+libcrypto3-3.5.3-r1 installed size:
 5091 KiB
 
-libcrypto3-3.5.2-r0 license:
+libcrypto3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -574,16 +574,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.2-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.2-r0 license:
 MIT
 
 ```
@@ -727,16 +727,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.2-r0 description:
+libssl3-3.5.3-r1 description:
 SSL shared libraries
 
-libssl3-3.5.2-r0 webpage:
+libssl3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.2-r0 installed size:
+libssl3-3.5.3-r1 installed size:
 823 KiB
 
-libssl3-3.5.2-r0 license:
+libssl3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -999,16 +999,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.0_p1-r7 description:
+openssh-client-common-10.0_p1-r9 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.0_p1-r7 webpage:
+openssh-client-common-10.0_p1-r9 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.0_p1-r7 installed size:
+openssh-client-common-10.0_p1-r9 installed size:
 2504 KiB
 
-openssh-client-common-10.0_p1-r7 license:
+openssh-client-common-10.0_p1-r9 license:
 SSH-OpenSSH
 
 ```
@@ -1016,16 +1016,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.0_p1-r7 description:
+openssh-client-default-10.0_p1-r9 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.0_p1-r7 webpage:
+openssh-client-default-10.0_p1-r9 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.0_p1-r7 installed size:
+openssh-client-default-10.0_p1-r9 installed size:
 830 KiB
 
-openssh-client-default-10.0_p1-r7 license:
+openssh-client-default-10.0_p1-r9 license:
 SSH-OpenSSH
 
 ```
@@ -1033,16 +1033,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.0_p1-r7 description:
+openssh-keygen-10.0_p1-r9 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.0_p1-r7 webpage:
+openssh-keygen-10.0_p1-r9 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.0_p1-r7 installed size:
+openssh-keygen-10.0_p1-r9 installed size:
 470 KiB
 
-openssh-keygen-10.0_p1-r7 license:
+openssh-keygen-10.0_p1-r9 license:
 SSH-OpenSSH
 
 ```
@@ -1050,16 +1050,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.2-r0 description:
+openssl-3.5.3-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.2-r0 webpage:
+openssl-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.2-r0 installed size:
+openssl-3.5.3-r1 installed size:
 801 KiB
 
-openssl-3.5.2-r0 license:
+openssl-3.5.3-r1 license:
 Apache-2.0
 
 ```
