@@ -171,13 +171,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu1.dsc' base-files_14ubuntu1.dsc 1479 SHA512:d33a20092d6f51207f7b4ffffe1986a54ffa2f4fd353a07797372c8fd97fdb49d46f754eb04833f5a70f831b6ab1c429c92727345189b670c35a58839e917c74
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu1.tar.xz' base-files_14ubuntu1.tar.xz 96740 SHA512:da673abde0693651fdcdf63695304871d7aaf07484dd6e1844508e0ae2be2cad082de6d48c3fdd507345a8412c200bc4278690e647496c3c482ba643d7475a7d
-```
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
