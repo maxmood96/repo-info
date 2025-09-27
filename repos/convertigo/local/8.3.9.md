@@ -1,10 +1,10 @@
-# `convertigo:8.3.8`
+# `convertigo:8.3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d9465e4fbdae000337fc4116f42db8c959d48c771e7e045e4a40d8eea9cb721`
-- Created: `2025-09-05T09:19:12Z`
-- Virtual Size: ~ 618.31 Mb  
+- Image ID: `sha256:b5e604d966f49976f70680d304084669ef2b87dea58eb8b128be1edc6f2789fc`
+- Created: `2025-09-25T08:36:21Z`
+- Virtual Size: ~ 618.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `TOMCAT_VERSION=9.0.109`
   - `TOMCAT_SHA512=29341c17d92b8f72700c7e0626405a63f3ba30737019fbe6a25cafbd929c5e14aa99817e1d4990da11593400e8e5977da9f9f7f9c097d95f820783f33a3cf9b7`
   - `SWT_GTK3=0`
-  - `CONVERTIGO_VERSION=8.3.8`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.8/convertigo-8.3.8.war`
+  - `CONVERTIGO_VERSION=8.3.9`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.9/convertigo-8.3.9.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -517,13 +517,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.3.dsc' dpkg_1.21.1ubuntu2.3.dsc 2254 SHA512:1cbd80001036fd25817149fe11875dff0b9244cac328fdaccff12e33cd608e89c3572a8c044592e80eb8b4b29ce83a25bb9468d791e7f5a53e2f0d327d913d78
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.3.tar.xz' dpkg_1.21.1ubuntu2.3.tar.xz 5017216 SHA512:c81a729a5bc7f73440eeb8c427f42691384dff7d0bd11edeaecead95b3931dd82d4ed70cac3f90befecc6ba6d3116c7a1782e455eee91fa4fe485fa625c04be7
-```
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1.2`
 
