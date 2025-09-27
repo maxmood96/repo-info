@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2721845466693f20fce6a6d5dab284838c975677d4c80d97b901d6bf6f20f8de`
-- Created: `2025-08-28T22:35:08Z`
-- Virtual Size: ~ 1.03 Gb  
+- Image ID: `sha256:7dec7dc2cb2fb09a66a525466910bf44f16d948658ef5cb5efd83a8615582237`
+- Created: `2025-09-24T14:35:45Z`
+- Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.19.0`
+  - `NODE_VERSION=22.20.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3579,21 +3579,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.34-4+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34-4%2bdeb11u2.dsc' libxslt_1.1.34-4+deb11u2.dsc 2407 SHA256:41720175b430f240bc2be2eabe444d012eeef747271f60b3566223703a0355d9
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA256:98b1bd46d6792925ad2dfe9a87452ea2adebf69dcb9919ffd55bf926a7f93f7f
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA256:673d1477552bdd5b0cc665704e77ca70e6be5d2f257e6a5a341c846719d747cf
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34-4%2bdeb11u2.debian.tar.xz' libxslt_1.1.34-4+deb11u2.debian.tar.xz 24596 SHA256:70ae56fdde7d16c96b16adbe224d6fc3b26de17716109f4ce853d1e204b20408
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.34-4+deb11u2/
 
-- https://sources.debian.net/src/libxslt/1.1.34-4+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.34-4+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.34-4+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.0-1`
 
