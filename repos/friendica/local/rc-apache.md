@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c53a210df7567c3d5c21c99625d5d7094b139c5bb3b16048cb391fbdcc22f36`
+- Image ID: `sha256:6047dce91f3a12fcf9ae6f23dc5cd22670cf0f29d6bd71ecbf611667afbaaf8e`
 - Created: `2025-08-30T22:12:39Z`
-- Virtual Size: ~ 701.85 Mb  
+- Virtual Size: ~ 701.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.25.tar.xz.asc`
-  - `PHP_SHA256=187b61bb795015adacf53f8c55b44414a63777ec19a776b75fb88614506c0d37`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -1724,13 +1724,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/76.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/76.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u1`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u2`
 
 Binary Packages:
 
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u1`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u1`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u1`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u2`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u2`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`)
 
@@ -1763,17 +1763,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u1.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u1.dsc 5136 SHA256:8e81a74a85be19f0aa3511db289955935b3d30b5c655e911dd10df5bf60a9444
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u1.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u1.debian.tar.xz 277660 SHA256:2b07de47ae8270c0054f5de9bef6f79c9560610f3c7f186ec459d048a4e057b8
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u2.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u2.dsc 5161 SHA256:381837e384fda4697b72cea12aa51ba503d4a3d045033f0599c8901394d04144
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u2.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u2.debian.tar.xz 284216 SHA256:028a64ae6fcefed9d71fadcc165fb6dce9ee83c979ab1ad7c1c906c51093ca08
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69~deb13u1`
 
@@ -3329,11 +3329,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.43-1`
+### `dpkg` source package: `linux=6.12.48-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.43-1`
+- `linux-libc-dev=6.12.48-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3347,17 +3347,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.43-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43-1.dsc' linux_6.12.43-1.dsc 219407 SHA256:3a0ade34fe8cbe46ca1e68f9b74db7923d12d3ce14d7702380f87d75b8ed2d43
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43.orig.tar.xz' linux_6.12.43.orig.tar.xz 151168676 SHA256:325d46f815ef470fe3502d67cfe14ced7ecc727132d6290a13227598b0221d63
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43-1.debian.tar.xz' linux_6.12.43-1.debian.tar.xz 1687580 SHA256:dab5e6c12aafbeea2a921e3d4740bb75474f6616ef38f1e095320213fc7181ad
+$ apt-get source -qq --print-uris linux=6.12.48-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48-1.dsc' linux_6.12.48-1.dsc 219407 SHA256:24a2790d6f213e30fdeae7ebf1f7c159ee07b4d519c2f5699f4b5697190f4426
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48.orig.tar.xz' linux_6.12.48.orig.tar.xz 151183840 SHA256:855183e4e49637975e818ad422ed2cd4e4cc3058cc23b727abd4eb437d0952da
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48-1.debian.tar.xz' linux_6.12.48-1.debian.tar.xz 1720736 SHA256:ca2f90210388e7ac139b6f395558b996646ab8a163cdb82e57003e5522ab946d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.43-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.43-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.43-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.48-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.48-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.48-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 
