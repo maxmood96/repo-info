@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:052cb4dbdcb75b40307bc074fa29bb1d28387753e09708739bd649367371e9b8`
+- Image ID: `sha256:c35ec49c908dab6dfc9125c506a2f3db8e3b99fabff7a1a66ce54a858e8e0f02`
 - Created: `2025-08-19T22:37:33Z`
 - Virtual Size: ~ 287.85 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.25.tar.xz.asc`
-  - `PHP_SHA256=187b61bb795015adacf53f8c55b44414a63777ec19a776b75fb88614506c0d37`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.3.3`
   - `JOOMLA_SHA512=efc0c5249758f1f7d9915992e01aa44203e86126c59c4c3adec8a7342aec132da2f5e10910fd7e2485ab8f58faa981de6be99cfe3c3b3f3c1e79e7d2d0321388`
@@ -695,16 +695,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.2-r0 description:
+libcrypto3-3.5.3-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.2-r0 webpage:
+libcrypto3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.2-r0 installed size:
+libcrypto3-3.5.3-r1 installed size:
 5091 KiB
 
-libcrypto3-3.5.2-r0 license:
+libcrypto3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -729,16 +729,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.2-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.2-r0 license:
 MIT
 
 ```
@@ -1069,16 +1069,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.2-r0 description:
+libssl3-3.5.3-r1 description:
 SSL shared libraries
 
-libssl3-3.5.2-r0 webpage:
+libssl3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.2-r0 installed size:
+libssl3-3.5.3-r1 installed size:
 823 KiB
 
-libssl3-3.5.2-r0 license:
+libssl3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -1460,16 +1460,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.2-r0 description:
+openssl-3.5.3-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.2-r0 webpage:
+openssl-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.2-r0 installed size:
+openssl-3.5.3-r1 installed size:
 801 KiB
 
-openssl-3.5.2-r0 license:
+openssl-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -1579,16 +1579,16 @@ GPL-3.0-or-later
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.0-r0 description:
+tiff-4.7.1-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.7.0-r0 webpage:
+tiff-4.7.1-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.0-r0 installed size:
-457 KiB
+tiff-4.7.1-r0 installed size:
+453 KiB
 
-tiff-4.7.0-r0 license:
+tiff-4.7.1-r0 license:
 libtiff
 
 ```
