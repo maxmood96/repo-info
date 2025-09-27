@@ -1,7 +1,7 @@
 ## `clojure:temurin-17-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:6489e974008d226b5a33aff195aba8efa92114b6de5d237786ba9c119a11a32b
+$ docker pull clojure@sha256:a2b0f7fd5ef7f4da11eccd8f22ec28ad311c5c3b9d91861f8777e22a80bc1f08
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -284,38 +284,38 @@ $ docker pull clojure@sha256:3cf2edfad8615d68b78bbfbca10e250b23ef2d1ca952fb7100f
 ### `clojure:temurin-17-trixie-slim` - linux; riscv64
 
 ```console
-$ docker pull clojure@sha256:69fcaf08153bc09388d53fd6670b7c13fb0fb70e0aa1ffa2a0b762be6c414a41
+$ docker pull clojure@sha256:380a56734bb2a72b0a329219f31de39624e1c3a26e90cde7a5662d8ce2f1773e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.7 MB (237729221 bytes)**  
+-	Total Size: **237.7 MB (237729064 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d71080416703929a073096e6cbc03ccecb0a7cda369a996586e94c62d5345a8`
+-	Image ID: `sha256:bb8d2278a1edf667b7d848a12fefbb76bced23ff744fb1b7202bada934084f86`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
 # Mon, 08 Sep 2025 00:00:00 GMT
 RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1757289600'
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Sep 2025 21:54:33 GMT
-ENV CLOJURE_VERSION=1.12.2.1571
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
+ENV CLOJURE_VERSION=1.12.3.1577
+# Fri, 26 Sep 2025 15:53:20 GMT
 WORKDIR /tmp
-# Mon, 22 Sep 2025 21:54:33 GMT
-RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "14c532e6e2dd760c7bf9d5fdd2044f4ea63e11c9126b89d4e120591352499fff *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl # buildkit
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
+RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "a55106244ca93ef7b61309e9dca4b248257685870824a8abe2efa706ede8241f *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl # buildkit
+# Fri, 26 Sep 2025 15:53:20 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
 ENTRYPOINT ["entrypoint"]
-# Mon, 22 Sep 2025 21:54:33 GMT
+# Fri, 26 Sep 2025 15:53:20 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -332,41 +332,41 @@ CMD ["-M" "--repl"]
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:374ff17ee543d6a06e59f5655f7701935555140857bef7d0cfda2e0a13c0e656`  
-		Last Modified: Tue, 23 Sep 2025 00:36:30 GMT  
-		Size: 70.9 MB (70881176 bytes)  
+	-	`sha256:58777e8a08128ec2e7cac30c5256ee2fdc7077ac20038e980a3b3b7b5bd4bee6`  
+		Last Modified: Sat, 27 Sep 2025 00:18:06 GMT  
+		Size: 70.9 MB (70881022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f99e8261d859832582ed42ae2282a13d9d2cc715cf2d156a13ba7b3e084db6ac`  
-		Last Modified: Tue, 23 Sep 2025 00:36:21 GMT  
-		Size: 616.0 B  
+	-	`sha256:aa26b61ebeb7fa3e69e48190996a8ad3ea63393412b0bd78e503c61a315ffcb4`  
+		Last Modified: Sat, 27 Sep 2025 00:17:59 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17c6e0f167d5feeef5280318e87fbb791488d2df5273a5ebafe355b1d3c8b8c1`  
-		Last Modified: Tue, 23 Sep 2025 00:36:21 GMT  
-		Size: 398.0 B  
+	-	`sha256:7a8c39cbf2dcda6728246472c73754a13252a4d2011d28307dcbbe9c63de866b`  
+		Last Modified: Sat, 27 Sep 2025 00:17:59 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:7e8aab477e6cf9f9338fd98a354c6d7d1a29e22451666a017b70b83413f63270
+$ docker pull clojure@sha256:e40294efa5d0fc09928a63c85a00f55dfaae2ea1a48d3bbcd1f2728b31e3569e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5259561 bytes)**  
+-	Total Size: **5.3 MB (5259559 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8814dfae4fb53c5ba80ac01c9ae2034dfe15924b2b2e93d2d83954f9744bef3e`
+-	Image ID: `sha256:7d805b67eb46dc266edcd1f7a9e8591db29907fac9ce370b63e9e5c1c31a20cd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5bfaacac1657fdd3e6d3e67edb5b3ad4fa06df28b48de187da102a57ca1e2c4a`  
-		Last Modified: Tue, 23 Sep 2025 03:35:52 GMT  
+	-	`sha256:899464412dda06dde887ec22f8b15245e86748c89aad8cafb48185b5f4b31cbb`  
+		Last Modified: Sat, 27 Sep 2025 03:35:51 GMT  
 		Size: 5.2 MB (5243658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0672600d8fe1f71e09ac29e5a1284cd9c10b2f227cd59fd05c2058260fc7c8b5`  
-		Last Modified: Tue, 23 Sep 2025 03:35:53 GMT  
-		Size: 15.9 KB (15903 bytes)  
+	-	`sha256:489f96b4cb958d41d68078a2c07478fbed07fb1612cb35a1662890dc5cd7950b`  
+		Last Modified: Sat, 27 Sep 2025 03:35:52 GMT  
+		Size: 15.9 KB (15901 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-17-trixie-slim` - linux; s390x
