@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24b91ced7bcdace8fa66ff0341666df085c048124e0c20820f22877aa1092020`
-- Created: `2025-07-18T19:06:54Z`
-- Virtual Size: ~ 493.86 Mb  
+- Image ID: `sha256:0a72ee6ae533b860d1526d0a84f4bc7d12bc5bba662960a4d622dca8009b9495`
+- Created: `2025-09-17T00:23:53Z`
+- Virtual Size: ~ 490.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -488,26 +488,26 @@ $ dnf --quiet download --source --url gdk-pixbuf2-2.36.12-3.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/d01890f21b88440f133f1114c3c8f72b21c2dc9364b5b4bdf9462dabfd41452c/gdk-pixbuf2-2.36.12-3.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `giflib-4.1.6-9.amzn2.0.3.i686`
+### `rpm` package: `giflib-4.1.6-9.amzn2.0.4.i686`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/3ec3e9f97191019ebc27096ef0f8bafc6e6d10b9845b89c89a84b48bf45f24d1/giflib-4.1.6-9.amzn2.0.3.src.rpm
+$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/78121da9ac190c3723706f4b2199a890a5dd3a4c34930fd85d282d2490f9720a/giflib-4.1.6-9.amzn2.0.4.src.rpm
 ```
 
-### `rpm` package: `giflib-4.1.6-9.amzn2.0.3.x86_64`
+### `rpm` package: `giflib-4.1.6-9.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/3ec3e9f97191019ebc27096ef0f8bafc6e6d10b9845b89c89a84b48bf45f24d1/giflib-4.1.6-9.amzn2.0.3.src.rpm
+$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/78121da9ac190c3723706f4b2199a890a5dd3a4c34930fd85d282d2490f9720a/giflib-4.1.6-9.amzn2.0.4.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.56.1-9.amzn2.0.11.x86_64`
@@ -1441,15 +1441,15 @@ $ dnf --quiet download --source --url libthai-0.1.14-9.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/8aee8438aa5685bf8dac6ccff2ca30d589257d4763a8f4d4e27243fe3a24bbfa/libthai-0.1.14-9.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libtiff-4.0.3-35.amzn2.0.23.x86_64`
+### `rpm` package: `libtiff-4.0.3-35.amzn2.0.24.x86_64`
 
 Licenses (from `rpm --query`): libtiff
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtiff-4.0.3-35.amzn2.0.23
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/fb98932a56a740dbae63dbe86bd965c561561c480282a71e083415910d414f62/libtiff-4.0.3-35.amzn2.0.23.src.rpm
+$ dnf --quiet download --source --url libtiff-4.0.3-35.amzn2.0.24
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/a9d311e9c29f4242849d168c624cc0fb9c22788acd6412de12e1a804875b597c/libtiff-4.0.3-35.amzn2.0.24.src.rpm
 ```
 
 ### `rpm` package: `libunistring-0.9.3-9.amzn2.0.2.x86_64`

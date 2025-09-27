@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a45e74cbbe3a8756ca1b8c2d015f8b0fe7fa495ea385a4891f8388305fa11964`
-- Created: `2025-07-18T19:06:54Z`
-- Virtual Size: ~ 498.37 Mb  
+- Image ID: `sha256:80daa3facfcd670a836b4d4432a55a945b9555fb3c7aa60fad7a964d5d38326c`
+- Created: `2025-09-17T00:23:53Z`
+- Virtual Size: ~ 495.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -356,26 +356,26 @@ $ dnf --quiet download --source --url gdbm-1.13-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `giflib-4.1.6-9.amzn2.0.3.i686`
+### `rpm` package: `giflib-4.1.6-9.amzn2.0.4.i686`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/3ec3e9f97191019ebc27096ef0f8bafc6e6d10b9845b89c89a84b48bf45f24d1/giflib-4.1.6-9.amzn2.0.3.src.rpm
+$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/78121da9ac190c3723706f4b2199a890a5dd3a4c34930fd85d282d2490f9720a/giflib-4.1.6-9.amzn2.0.4.src.rpm
 ```
 
-### `rpm` package: `giflib-4.1.6-9.amzn2.0.3.x86_64`
+### `rpm` package: `giflib-4.1.6-9.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/3ec3e9f97191019ebc27096ef0f8bafc6e6d10b9845b89c89a84b48bf45f24d1/giflib-4.1.6-9.amzn2.0.3.src.rpm
+$ dnf --quiet download --source --url giflib-4.1.6-9.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e86a25f902c12f4b1d8787bc259d97946392a521837e10a45ab71796089df298/../../../../../blobstore/78121da9ac190c3723706f4b2199a890a5dd3a4c34930fd85d282d2490f9720a/giflib-4.1.6-9.amzn2.0.4.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.56.1-9.amzn2.0.11.x86_64`
