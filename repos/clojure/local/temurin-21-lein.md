@@ -1,4 +1,4 @@
-# `clojure:lein`
+# `clojure:temurin-21-lein`
 
 ## Docker Metadata
 

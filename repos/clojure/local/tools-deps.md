@@ -1,10 +1,10 @@
-# `clojure:temurin-21-bookworm`
+# `clojure:temurin-25-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:837bd84df9eb39e27966be4e437659743593afa5b22f78a83778ecadcab5744c`
-- Created: `2025-09-22T21:54:33Z`
-- Virtual Size: ~ 606.96 Mb  
+- Image ID: `sha256:fe8cae998a3358dae1664e86d66937ba0b13e0a1e56dbd22dd8b23be26eb2e85`
+- Created: `2025-09-26T15:53:20Z`
+- Virtual Size: ~ 561.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.2.1571`
+  - `CLOJURE_VERSION=1.12.3.1577`
 
 ## `dpkg` (`.deb`-based packages)
 
