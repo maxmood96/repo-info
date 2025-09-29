@@ -1,10 +1,10 @@
-# `neo4j:2025.08.0-community-bullseye`
+# `neo4j:2025.09.0-community-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2adf29595cc34c09cadaa43759d2591ccd71a02b13363a4ea281a1f4c8f073a2`
-- Created: `2025-08-27T14:31:02Z`
-- Virtual Size: ~ 633.54 Mb  
+- Image ID: `sha256:8152863011e344900af78c39ddd67f2204ad1da81a191cfd4f208d8b50d1ad74`
+- Created: `2025-09-24T16:30:37Z`
+- Virtual Size: ~ 641.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `NEO4J_SHA256=cce5d0d88c05635692a8db86cde299861ff8fd71271e034fc633080bb09d9c59`
-  - `NEO4J_TARBALL=neo4j-community-2025.08.0-unix.tar.gz`
+  - `NEO4J_SHA256=38e6828ba11a700c94e4a532a10e3481e94cfabc45f9b4819cafc4bdc105cba5`
+  - `NEO4J_TARBALL=neo4j-community-2025.09.0-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -875,12 +875,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.60/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.60/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jq=1.6-2.1`
+### `dpkg` source package: `jq=1.6-2.1+deb11u1`
 
 Binary Packages:
 
-- `jq=1.6-2.1`
-- `libjq1:amd64=1.6-2.1`
+- `jq=1.6-2.1+deb11u1`
+- `libjq1:amd64=1.6-2.1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/copyright`)
 
@@ -893,17 +893,17 @@ Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/co
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jq=1.6-2.1
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.6-2.1.dsc' jq_1.6-2.1.dsc 1704 SHA256:9608980174f7bc9d5a844c43dc65d28c9d5f22ee1294be5e2ff0f753dd685cb7
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA256:3ba940b97571c866923f0409678033d33b5a98758dfc174fad8397ed908bc4d9
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.6-2.1.debian.tar.xz' jq_1.6-2.1.debian.tar.xz 14032 SHA256:6cd5029bacc5f071a112ebdea5760f75c878844f05eb25084a072134759603f5
+$ apt-get source -qq --print-uris jq=1.6-2.1+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6-2.1%2bdeb11u1.dsc' jq_1.6-2.1+deb11u1.dsc 2132 SHA256:f423b9a3a2d570b5c1976a69a0e34fa98847c9ffae29896edb19397908756817
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA256:3ba940b97571c866923f0409678033d33b5a98758dfc174fad8397ed908bc4d9
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6-2.1%2bdeb11u1.debian.tar.xz' jq_1.6-2.1+deb11u1.debian.tar.xz 14408 SHA256:377efe63863d7fe3f177abc6d574f81fbc7683bfb87b005efb53da18493e72ce
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jq/1.6-2.1/ (for browsing the source)
-- https://sources.debian.net/src/jq/1.6-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jq/1.6-2.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jq/1.6-2.1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/jq/1.6-2.1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jq/1.6-2.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.1-2`
 
