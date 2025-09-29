@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:409e16104362e0fe40e18734e4cf0aef18d8b2262559f4f8f53fcc4bb0ab2778`
+- Image ID: `sha256:ce5c5223260b2cdd5b2add4a97f2c8bde2f88b44c15cecf7166af3cf1d113011`
 - Created: `2025-09-04T09:27:25Z`
-- Virtual Size: ~ 180.76 Mb  
+- Virtual Size: ~ 180.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.25.tar.xz.asc`
-  - `PHP_SHA256=187b61bb795015adacf53f8c55b44414a63777ec19a776b75fb88614506c0d37`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
   - `DRUPAL_VERSION=11.2.4`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -726,16 +726,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r3 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r3 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r3 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r3 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```
