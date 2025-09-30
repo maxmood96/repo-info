@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b15837502715cf1db4f55fa19852701738fa0b133f8ad7f34015086207b8262e`
+- Image ID: `sha256:f38ff55f2c64f5786fca49ae3568ce7841dcdd6154c245d6612a39deffb393d6`
 - Created: `2025-09-11T11:18:55Z`
-- Virtual Size: ~ 517.37 Mb  
+- Virtual Size: ~ 517.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.25.tar.xz.asc`
-  - `PHP_SHA256=187b61bb795015adacf53f8c55b44414a63777ec19a776b75fb88614506c0d37`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
   - `POSTFIXADMIN_VERSION=3.3.16`
   - `POSTFIXADMIN_SHA512=d1b8074c32f7912c187c2c37c5cca158432cb85fc415d9efe86cf11f70ab035117053cc579306e224cb180e70fa3c84a68335f18d62b43abf591e8105a00847d`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
@@ -2190,11 +2190,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.148-1`
+### `dpkg` source package: `linux=6.1.153-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.148-1`
+- `linux-libc-dev:amd64=6.1.153-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2209,17 +2209,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.148-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.148-1.dsc' linux_6.1.148-1.dsc 290931 SHA256:e07ffbf994ed914c1cb121575aa4fa72d1ea1ace46a7bbca8a051e334b399c8a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.148.orig.tar.xz' linux_6.1.148.orig.tar.xz 137839088 SHA256:8c9ebc48cf0b303b2027edea6057c133d29f6a996162b2f52f1bfb15a587f7ff
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.148-1.debian.tar.xz' linux_6.1.148-1.debian.tar.xz 1772788 SHA256:03559b2fb3cbb579485cfe0640408a917397fab265091bec672e91ce665b1680
+$ apt-get source -qq --print-uris linux=6.1.153-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153-1.dsc' linux_6.1.153-1.dsc 290931 SHA256:c224f1fd69212b4c049cbc5080db22b168f6ef166de4ae1ca2665f6fe05049e2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153.orig.tar.xz' linux_6.1.153.orig.tar.xz 137857256 SHA256:3cab313f1b0e0ed257888c9057334bc2588f9a0a0f59e641e28b39b07518387f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153-1.debian.tar.xz' linux_6.1.153-1.debian.tar.xz 1780628 SHA256:10fed58690490c38949a3018d8da39a70d13eb0e042f00ac4d5f21afb689e808
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.148-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.148-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.148-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.153-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.153-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.153-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 
