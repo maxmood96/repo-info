@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8681978613c84a92ccaf28a4bc7eef4e214867e5f1066531e000f2abe1e7ef7`
+- Image ID: `sha256:6334db94d7f4383af64fa9f9eabcdad97d7243533ab60096cb02484e8bef4525`
 - Created: `2025-05-07T07:03:15Z`
 - Virtual Size: ~ 202.00 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.25.tar.xz.asc`
-  - `PHP_SHA256=187b61bb795015adacf53f8c55b44414a63777ec19a776b75fb88614506c0d37`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -523,16 +523,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.2-r0 description:
+libcrypto3-3.5.3-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.2-r0 webpage:
+libcrypto3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.2-r0 installed size:
+libcrypto3-3.5.3-r1 installed size:
 5091 KiB
 
-libcrypto3-3.5.2-r0 license:
+libcrypto3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -574,16 +574,16 @@ BSD-2-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.2-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.2-r0 license:
 MIT
 
 ```
@@ -778,16 +778,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.2-r0 description:
+libssl3-3.5.3-r1 description:
 SSL shared libraries
 
-libssl3-3.5.2-r0 webpage:
+libssl3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.2-r0 installed size:
+libssl3-3.5.3-r1 installed size:
 823 KiB
 
-libssl3-3.5.2-r0 license:
+libssl3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -1118,16 +1118,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.2-r0 description:
+openssl-3.5.3-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.2-r0 webpage:
+openssl-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.2-r0 installed size:
+openssl-3.5.3-r1 installed size:
 801 KiB
 
-openssl-3.5.2-r0 license:
+openssl-3.5.3-r1 license:
 Apache-2.0
 
 ```
