@@ -11,7 +11,7 @@
 ## `hitch:1`
 
 ```console
-$ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77944e85ac314
+$ docker pull hitch@sha256:958576e4a2fcada351a4fd94428e287fce4d0729fecb42bde9bfeff48ae34162
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28,18 +28,18 @@ $ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77
 ### `hitch:1` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:18b3f0dd2cae19096b863f0f89b00a40fe7ab2b2a448543dbddbf29c71f1e8fb
+$ docker pull hitch@sha256:167e9c81e5f28b6694453efa66813c2e1f9d9470a256d2523ae9ed77d5a317ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32249636 bytes)**  
+-	Total Size: **32.2 MB (32249951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40eb779ca1cdd4eb04d2fba1dba7cd0e927e96a909a34e747d795d0396f01760`
+-	Image ID: `sha256:8b12272305557b587d40b3028237ebd76c44b54b3049605df2fb487cc60aa706`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -66,62 +66,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:d107e437f7299a0db6425d4e37f44fa779f7917ecc8daf1e87128ee91b9ed3d3`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 28.2 MB (28228346 bytes)  
+	-	`sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375`  
+		Last Modified: Mon, 29 Sep 2025 23:34:35 GMT  
+		Size: 28.2 MB (28228336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415dc7b8d73b82ba6e3dafdffb2479ed80094250447c036b7b6ce0ca609ce678`  
-		Last Modified: Mon, 08 Sep 2025 21:58:22 GMT  
-		Size: 4.0 MB (4020846 bytes)  
+	-	`sha256:384b045d3411f10e1ed6bef6c6d110029cd561b1b39aa8a70e6bc4e1a5c7fecc`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 4.0 MB (4021172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75d2c99cb048924c52b311aa2994281432f8b14b0400f89e35dc4efcb071047c`  
-		Last Modified: Mon, 08 Sep 2025 21:38:40 GMT  
-		Size: 412.0 B  
+	-	`sha256:272cc9b478cfdbb99e544522cad181c1b5a2ccf85ccd60fd1bd733cfe4de891d`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9415a47c87833e81612e7fb4f15a0fcc84123ffe21fad58c2314a2f4e64c4676
+$ docker pull hitch@sha256:5f02b487cf6a7c8cf2a2910f493063d2cd2d801b8f9cf6183ed33ade5ec99eb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2544970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab0c35cf806c8e5c25db885745a3603cacfc5328e0b6563131c29efcd8ed3164`
+-	Image ID: `sha256:9bddcab9774be295a425226c03a310f8a708f04a7ec5679c0f2e1c38ce25db2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe7367f4c4067b2a8cbeb7072f9c8b107634ef05aa050a3c245ec07fa3d5ebb2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:32 GMT  
+	-	`sha256:e26de37078dca82f3b8510bb131012d80f546ff2862532a5cb678007f758dd06`  
+		Last Modified: Tue, 30 Sep 2025 00:46:29 GMT  
 		Size: 2.5 MB (2531345 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4893a646e273a0aa8403a66670473dbb42fec54c2f0a4cfb0dd85fcc4801dff2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:33 GMT  
+	-	`sha256:241298eb984d223a359e5efe377fcd968e8ced41158298d3778b7dc4a2adf158`  
+		Last Modified: Tue, 30 Sep 2025 00:46:30 GMT  
 		Size: 13.6 KB (13625 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:1fe093bea4a13c12828768dc6171e50b588b8da38584425bbf316ea8b16a83e2
+$ docker pull hitch@sha256:e7b8897854a34758024bdd5d1f13c0b9b46cdd65d385596957cdcad5486c7d82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27319084 bytes)**  
+-	Total Size: **27.3 MB (27319172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f546a677e04ce991e1260f4c1cee8fdfa299df0153bf855799cb6db50bb93719`
+-	Image ID: `sha256:88973f665f79e538a2b3c6f7011408f6ef4203d9c8474d5aad8a5c68730c79ef`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -148,62 +148,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:e747f8ef7f1d9a41c99bfb53889f7b8de3504300740a326627fc7522904708cc`  
-		Last Modified: Mon, 08 Sep 2025 21:14:21 GMT  
-		Size: 23.9 MB (23933904 bytes)  
+	-	`sha256:4c0d784fb90dddd991d201014e92ef1ebfe9a20d0f2ea56e2701fb9e8219be91`  
+		Last Modified: Mon, 29 Sep 2025 23:34:19 GMT  
+		Size: 23.9 MB (23933930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08a556ab861f42c017c827c0db8adf09d534ccc548804be0d2e342c9d9462529`  
-		Last Modified: Mon, 08 Sep 2025 21:53:48 GMT  
-		Size: 3.4 MB (3384736 bytes)  
+	-	`sha256:1eea794383b9f4724eeab97155122d94d095faae88930bb1e0508ba64908f38c`  
+		Last Modified: Mon, 29 Sep 2025 23:58:10 GMT  
+		Size: 3.4 MB (3384798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4469b3c31320ec9a53d0c2dfe70a02832a1f3b0f1d22e82ff6431458337da8c`  
-		Last Modified: Mon, 08 Sep 2025 21:53:47 GMT  
+	-	`sha256:4c286b2de78b5d3093f5861a0d64527d7ec696620b1700962cba8d1fdd2e20e7`  
+		Last Modified: Mon, 29 Sep 2025 23:58:09 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:a171953ccfe6ed3a3540aa6d19c7dddae75cef7de63a2eb61cb4d234b9e035a6
+$ docker pull hitch@sha256:f49c96a93c80dc194057b9395e5815e6c3a54562a1d50c6bd00876a33423291e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2547290 bytes)**  
+-	Total Size: **2.5 MB (2547289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:801cad2c9d9a331f00606f988f5cf2f839a1bfb16c800d075fbbe754b22e65da`
+-	Image ID: `sha256:5bd8d14a250746efaaf9f050f900d885acdfcbd5b3152025ce9149d66dd156d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d58619e2b9e19f2076a5a883a3dab02e31a0d10af442c7ce4055e0182df793f7`  
-		Last Modified: Mon, 08 Sep 2025 21:46:37 GMT  
+	-	`sha256:4a02d5d523d422ce04712693824fb7949c641caae808feea9f0e4b5c6e8c601f`  
+		Last Modified: Tue, 30 Sep 2025 00:46:35 GMT  
 		Size: 2.5 MB (2533577 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5426144d001612c508855d889352b7b688ee8468f9e87f9fadb61546aba6d8e9`  
-		Last Modified: Mon, 08 Sep 2025 21:46:38 GMT  
-		Size: 13.7 KB (13713 bytes)  
+	-	`sha256:0cd0ea2e0f1d6b986c2446715fb024facbaf4ad487172c803ae8da50afda3a0b`  
+		Last Modified: Tue, 30 Sep 2025 00:46:36 GMT  
+		Size: 13.7 KB (13712 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:e12503e237e3e1133a6d3e59260b53fa86bf6f4e498796dd077e5de550ac039d
+$ docker pull hitch@sha256:66787b913ecfff5ccac859ff67eef66b1a80cd24000485fce8ba141c7592a9b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (31974262 bytes)**  
+-	Total Size: **32.0 MB (31974329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f39515aaa0526bfc041936e7676b98b3c91d438e611e4ed0972e019d0305ee5`
+-	Image ID: `sha256:39d8f53b48105ea2370f99ed049bbe3c4b673fa8b72b8a0e3cdecb6956c0ac13`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -230,62 +230,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:0878ecc8b0afd0d835641c015541aacd4780ec19e5565a3e1a5af3f77d208d42`  
-		Last Modified: Mon, 08 Sep 2025 21:13:25 GMT  
-		Size: 28.1 MB (28102099 bytes)  
+	-	`sha256:f4e51325a7cb57cd9ae67bd9540483838b96bf7c9b0bf18205d9d30819e9ca38`  
+		Last Modified: Mon, 29 Sep 2025 23:34:17 GMT  
+		Size: 28.1 MB (28102145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb31eaf4b3b75fa92ee1ce071b9e1ce946975047cf10b0f01e8486824e8ff0d5`  
-		Last Modified: Mon, 08 Sep 2025 21:56:13 GMT  
-		Size: 3.9 MB (3871717 bytes)  
+	-	`sha256:65b6360c9dab2e764fb13fdd0f0bec967f2b06cba3ffa21bf6e3a63c92284034`  
+		Last Modified: Mon, 29 Sep 2025 23:51:23 GMT  
+		Size: 3.9 MB (3871740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f72585629d576bac2cb327d7bb1a75636296f9d4d9bdf1938a5fff4899b2b13`  
-		Last Modified: Mon, 08 Sep 2025 21:56:15 GMT  
-		Size: 414.0 B  
+	-	`sha256:c8b929d5a9bcaa3adb3409c119fdc412ac7b1a3378440d58a8ca939f6620158c`  
+		Last Modified: Mon, 29 Sep 2025 23:51:22 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9bae3acb59f59641cb4fd39ca7d1663f2e23d402dd01bb6c5984e47fbaf3210f
+$ docker pull hitch@sha256:6bb5d6990dc49f1a4454d43c3de5262a2a7e9719b9861469043d646aa9cee93b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2545356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f607edb09794726faae83bd92dadbbedfba67ed851862c88e5ca9366bca7ca`
+-	Image ID: `sha256:8edb5fe49f8ead321babeba7003d2077b0e9693354e79b813055f89ce94e10e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1ada844a1c58183a171d03bd5a086b28ae8daacc400f07bb100d4b5555b869c5`  
-		Last Modified: Mon, 08 Sep 2025 21:46:42 GMT  
+	-	`sha256:f47ce8028ae8da7b88b308ca00a2aad862491b2a6c23d9ac260934dae17e8309`  
+		Last Modified: Tue, 30 Sep 2025 00:46:40 GMT  
 		Size: 2.5 MB (2531615 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f2b6015c303c7385d85fbcb875e21c9751037b7476093598d695918c33f543a`  
-		Last Modified: Mon, 08 Sep 2025 21:46:43 GMT  
+	-	`sha256:ae0dd334ab4dc01cbd595b13043aba9812c953d5c3a9f02310fa6eb0544b454d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:41 GMT  
 		Size: 13.7 KB (13741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1` - linux; 386
 
 ```console
-$ docker pull hitch@sha256:878f403cf2dbed9792ffb65955139bc7f870cfca3b9b9bb5cc050fd782a054ac
+$ docker pull hitch@sha256:65eb3ad0d93e7b4566623a4c01729ed5004be8dd17dc4ade683f07e09cc640d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33225669 bytes)**  
+-	Total Size: **33.2 MB (33225953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8adee8303b1c0fbe47181616c9dd0ba0c25252c46f2406d2063fe6647458be3a`
+-	Image ID: `sha256:7f84a54bfad4c009c16c09c04188c72d26a0a4d1ac7f8e8dc5e360fb922a78ee`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -312,51 +312,51 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:dc2a09b0db8b98044474925cacc9c009aa76e5883edf644cc36c3f6a2e3917ac`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 29.2 MB (29209634 bytes)  
+	-	`sha256:5a19917fb037e6569ceef43a0b0faa5c3f8554f4d9b154320d254dea136b463a`  
+		Last Modified: Mon, 29 Sep 2025 23:35:20 GMT  
+		Size: 29.2 MB (29209630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e49bc600cc57fae9140a3f86eedaefc3b3eb8bed90f08f5bbee7cf2dc72ef996`  
-		Last Modified: Mon, 08 Sep 2025 21:56:53 GMT  
-		Size: 4.0 MB (4015590 bytes)  
+	-	`sha256:ad608f8e84a251687c7eb360a639b224caa5571a288f16d0c2d4e8efb60cb2ab`  
+		Last Modified: Mon, 29 Sep 2025 23:56:05 GMT  
+		Size: 4.0 MB (4015879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c09dae409e891850408ec02c5aad42647feb293abe25853c4514e0028c4c2ca`  
-		Last Modified: Mon, 08 Sep 2025 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:ae21e754b268ca970537777293503e6f3982afae153002a6f4140b98b4cec352`  
+		Last Modified: Mon, 29 Sep 2025 23:56:04 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:532f06e1ce5f549a89f5840b9b254c2ae3b6776593ea973b003bf49ba2b5ec61
+$ docker pull hitch@sha256:f24dd18a58ecb53e1ba2e2e105e66ab4672321c8bb00788d0bb8ace25eeb7bd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2542108 bytes)**  
+-	Total Size: **2.5 MB (2542107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88c255dbdbb0620269a98fced0dbaf3216608daa76d36b58ba2d7f74373450eb`
+-	Image ID: `sha256:24919d265c5925aa4e3e6385c10191ea9e63bef7c1efb336d17b0c55afcfcd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61cb707a190a94cb2ffb68d939075c3b16cbd70c6a99fbc002347d32e65d4888`  
-		Last Modified: Mon, 08 Sep 2025 21:46:47 GMT  
+	-	`sha256:b31f7d5850ed6e6580b516fa9a0bc08c9ca4a61fd84a4eed542ad059b064f57e`  
+		Last Modified: Tue, 30 Sep 2025 00:46:45 GMT  
 		Size: 2.5 MB (2528521 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97f73484a11e5eedcd92979ed844a3550e442ecbdb8e04bd8f652cb00b19fc97`  
-		Last Modified: Mon, 08 Sep 2025 21:46:48 GMT  
-		Size: 13.6 KB (13587 bytes)  
+	-	`sha256:7125b77a35b28809d1f27ea16e95ab5bc234b4b97d86f98208aa015bf8c16664`  
+		Last Modified: Tue, 30 Sep 2025 00:46:46 GMT  
+		Size: 13.6 KB (13586 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `hitch:1.8`
 
 ```console
-$ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77944e85ac314
+$ docker pull hitch@sha256:958576e4a2fcada351a4fd94428e287fce4d0729fecb42bde9bfeff48ae34162
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -373,18 +373,18 @@ $ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77
 ### `hitch:1.8` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:18b3f0dd2cae19096b863f0f89b00a40fe7ab2b2a448543dbddbf29c71f1e8fb
+$ docker pull hitch@sha256:167e9c81e5f28b6694453efa66813c2e1f9d9470a256d2523ae9ed77d5a317ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32249636 bytes)**  
+-	Total Size: **32.2 MB (32249951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40eb779ca1cdd4eb04d2fba1dba7cd0e927e96a909a34e747d795d0396f01760`
+-	Image ID: `sha256:8b12272305557b587d40b3028237ebd76c44b54b3049605df2fb487cc60aa706`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -411,62 +411,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:d107e437f7299a0db6425d4e37f44fa779f7917ecc8daf1e87128ee91b9ed3d3`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 28.2 MB (28228346 bytes)  
+	-	`sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375`  
+		Last Modified: Mon, 29 Sep 2025 23:34:35 GMT  
+		Size: 28.2 MB (28228336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415dc7b8d73b82ba6e3dafdffb2479ed80094250447c036b7b6ce0ca609ce678`  
-		Last Modified: Mon, 08 Sep 2025 21:58:22 GMT  
-		Size: 4.0 MB (4020846 bytes)  
+	-	`sha256:384b045d3411f10e1ed6bef6c6d110029cd561b1b39aa8a70e6bc4e1a5c7fecc`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 4.0 MB (4021172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75d2c99cb048924c52b311aa2994281432f8b14b0400f89e35dc4efcb071047c`  
-		Last Modified: Mon, 08 Sep 2025 21:38:40 GMT  
-		Size: 412.0 B  
+	-	`sha256:272cc9b478cfdbb99e544522cad181c1b5a2ccf85ccd60fd1bd733cfe4de891d`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9415a47c87833e81612e7fb4f15a0fcc84123ffe21fad58c2314a2f4e64c4676
+$ docker pull hitch@sha256:5f02b487cf6a7c8cf2a2910f493063d2cd2d801b8f9cf6183ed33ade5ec99eb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2544970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab0c35cf806c8e5c25db885745a3603cacfc5328e0b6563131c29efcd8ed3164`
+-	Image ID: `sha256:9bddcab9774be295a425226c03a310f8a708f04a7ec5679c0f2e1c38ce25db2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe7367f4c4067b2a8cbeb7072f9c8b107634ef05aa050a3c245ec07fa3d5ebb2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:32 GMT  
+	-	`sha256:e26de37078dca82f3b8510bb131012d80f546ff2862532a5cb678007f758dd06`  
+		Last Modified: Tue, 30 Sep 2025 00:46:29 GMT  
 		Size: 2.5 MB (2531345 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4893a646e273a0aa8403a66670473dbb42fec54c2f0a4cfb0dd85fcc4801dff2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:33 GMT  
+	-	`sha256:241298eb984d223a359e5efe377fcd968e8ced41158298d3778b7dc4a2adf158`  
+		Last Modified: Tue, 30 Sep 2025 00:46:30 GMT  
 		Size: 13.6 KB (13625 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:1fe093bea4a13c12828768dc6171e50b588b8da38584425bbf316ea8b16a83e2
+$ docker pull hitch@sha256:e7b8897854a34758024bdd5d1f13c0b9b46cdd65d385596957cdcad5486c7d82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27319084 bytes)**  
+-	Total Size: **27.3 MB (27319172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f546a677e04ce991e1260f4c1cee8fdfa299df0153bf855799cb6db50bb93719`
+-	Image ID: `sha256:88973f665f79e538a2b3c6f7011408f6ef4203d9c8474d5aad8a5c68730c79ef`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -493,62 +493,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:e747f8ef7f1d9a41c99bfb53889f7b8de3504300740a326627fc7522904708cc`  
-		Last Modified: Mon, 08 Sep 2025 21:14:21 GMT  
-		Size: 23.9 MB (23933904 bytes)  
+	-	`sha256:4c0d784fb90dddd991d201014e92ef1ebfe9a20d0f2ea56e2701fb9e8219be91`  
+		Last Modified: Mon, 29 Sep 2025 23:34:19 GMT  
+		Size: 23.9 MB (23933930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08a556ab861f42c017c827c0db8adf09d534ccc548804be0d2e342c9d9462529`  
-		Last Modified: Mon, 08 Sep 2025 21:53:48 GMT  
-		Size: 3.4 MB (3384736 bytes)  
+	-	`sha256:1eea794383b9f4724eeab97155122d94d095faae88930bb1e0508ba64908f38c`  
+		Last Modified: Mon, 29 Sep 2025 23:58:10 GMT  
+		Size: 3.4 MB (3384798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4469b3c31320ec9a53d0c2dfe70a02832a1f3b0f1d22e82ff6431458337da8c`  
-		Last Modified: Mon, 08 Sep 2025 21:53:47 GMT  
+	-	`sha256:4c286b2de78b5d3093f5861a0d64527d7ec696620b1700962cba8d1fdd2e20e7`  
+		Last Modified: Mon, 29 Sep 2025 23:58:09 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:a171953ccfe6ed3a3540aa6d19c7dddae75cef7de63a2eb61cb4d234b9e035a6
+$ docker pull hitch@sha256:f49c96a93c80dc194057b9395e5815e6c3a54562a1d50c6bd00876a33423291e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2547290 bytes)**  
+-	Total Size: **2.5 MB (2547289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:801cad2c9d9a331f00606f988f5cf2f839a1bfb16c800d075fbbe754b22e65da`
+-	Image ID: `sha256:5bd8d14a250746efaaf9f050f900d885acdfcbd5b3152025ce9149d66dd156d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d58619e2b9e19f2076a5a883a3dab02e31a0d10af442c7ce4055e0182df793f7`  
-		Last Modified: Mon, 08 Sep 2025 21:46:37 GMT  
+	-	`sha256:4a02d5d523d422ce04712693824fb7949c641caae808feea9f0e4b5c6e8c601f`  
+		Last Modified: Tue, 30 Sep 2025 00:46:35 GMT  
 		Size: 2.5 MB (2533577 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5426144d001612c508855d889352b7b688ee8468f9e87f9fadb61546aba6d8e9`  
-		Last Modified: Mon, 08 Sep 2025 21:46:38 GMT  
-		Size: 13.7 KB (13713 bytes)  
+	-	`sha256:0cd0ea2e0f1d6b986c2446715fb024facbaf4ad487172c803ae8da50afda3a0b`  
+		Last Modified: Tue, 30 Sep 2025 00:46:36 GMT  
+		Size: 13.7 KB (13712 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:e12503e237e3e1133a6d3e59260b53fa86bf6f4e498796dd077e5de550ac039d
+$ docker pull hitch@sha256:66787b913ecfff5ccac859ff67eef66b1a80cd24000485fce8ba141c7592a9b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (31974262 bytes)**  
+-	Total Size: **32.0 MB (31974329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f39515aaa0526bfc041936e7676b98b3c91d438e611e4ed0972e019d0305ee5`
+-	Image ID: `sha256:39d8f53b48105ea2370f99ed049bbe3c4b673fa8b72b8a0e3cdecb6956c0ac13`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -575,62 +575,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:0878ecc8b0afd0d835641c015541aacd4780ec19e5565a3e1a5af3f77d208d42`  
-		Last Modified: Mon, 08 Sep 2025 21:13:25 GMT  
-		Size: 28.1 MB (28102099 bytes)  
+	-	`sha256:f4e51325a7cb57cd9ae67bd9540483838b96bf7c9b0bf18205d9d30819e9ca38`  
+		Last Modified: Mon, 29 Sep 2025 23:34:17 GMT  
+		Size: 28.1 MB (28102145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb31eaf4b3b75fa92ee1ce071b9e1ce946975047cf10b0f01e8486824e8ff0d5`  
-		Last Modified: Mon, 08 Sep 2025 21:56:13 GMT  
-		Size: 3.9 MB (3871717 bytes)  
+	-	`sha256:65b6360c9dab2e764fb13fdd0f0bec967f2b06cba3ffa21bf6e3a63c92284034`  
+		Last Modified: Mon, 29 Sep 2025 23:51:23 GMT  
+		Size: 3.9 MB (3871740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f72585629d576bac2cb327d7bb1a75636296f9d4d9bdf1938a5fff4899b2b13`  
-		Last Modified: Mon, 08 Sep 2025 21:56:15 GMT  
-		Size: 414.0 B  
+	-	`sha256:c8b929d5a9bcaa3adb3409c119fdc412ac7b1a3378440d58a8ca939f6620158c`  
+		Last Modified: Mon, 29 Sep 2025 23:51:22 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9bae3acb59f59641cb4fd39ca7d1663f2e23d402dd01bb6c5984e47fbaf3210f
+$ docker pull hitch@sha256:6bb5d6990dc49f1a4454d43c3de5262a2a7e9719b9861469043d646aa9cee93b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2545356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f607edb09794726faae83bd92dadbbedfba67ed851862c88e5ca9366bca7ca`
+-	Image ID: `sha256:8edb5fe49f8ead321babeba7003d2077b0e9693354e79b813055f89ce94e10e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1ada844a1c58183a171d03bd5a086b28ae8daacc400f07bb100d4b5555b869c5`  
-		Last Modified: Mon, 08 Sep 2025 21:46:42 GMT  
+	-	`sha256:f47ce8028ae8da7b88b308ca00a2aad862491b2a6c23d9ac260934dae17e8309`  
+		Last Modified: Tue, 30 Sep 2025 00:46:40 GMT  
 		Size: 2.5 MB (2531615 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f2b6015c303c7385d85fbcb875e21c9751037b7476093598d695918c33f543a`  
-		Last Modified: Mon, 08 Sep 2025 21:46:43 GMT  
+	-	`sha256:ae0dd334ab4dc01cbd595b13043aba9812c953d5c3a9f02310fa6eb0544b454d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:41 GMT  
 		Size: 13.7 KB (13741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8` - linux; 386
 
 ```console
-$ docker pull hitch@sha256:878f403cf2dbed9792ffb65955139bc7f870cfca3b9b9bb5cc050fd782a054ac
+$ docker pull hitch@sha256:65eb3ad0d93e7b4566623a4c01729ed5004be8dd17dc4ade683f07e09cc640d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33225669 bytes)**  
+-	Total Size: **33.2 MB (33225953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8adee8303b1c0fbe47181616c9dd0ba0c25252c46f2406d2063fe6647458be3a`
+-	Image ID: `sha256:7f84a54bfad4c009c16c09c04188c72d26a0a4d1ac7f8e8dc5e360fb922a78ee`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -657,51 +657,51 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:dc2a09b0db8b98044474925cacc9c009aa76e5883edf644cc36c3f6a2e3917ac`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 29.2 MB (29209634 bytes)  
+	-	`sha256:5a19917fb037e6569ceef43a0b0faa5c3f8554f4d9b154320d254dea136b463a`  
+		Last Modified: Mon, 29 Sep 2025 23:35:20 GMT  
+		Size: 29.2 MB (29209630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e49bc600cc57fae9140a3f86eedaefc3b3eb8bed90f08f5bbee7cf2dc72ef996`  
-		Last Modified: Mon, 08 Sep 2025 21:56:53 GMT  
-		Size: 4.0 MB (4015590 bytes)  
+	-	`sha256:ad608f8e84a251687c7eb360a639b224caa5571a288f16d0c2d4e8efb60cb2ab`  
+		Last Modified: Mon, 29 Sep 2025 23:56:05 GMT  
+		Size: 4.0 MB (4015879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c09dae409e891850408ec02c5aad42647feb293abe25853c4514e0028c4c2ca`  
-		Last Modified: Mon, 08 Sep 2025 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:ae21e754b268ca970537777293503e6f3982afae153002a6f4140b98b4cec352`  
+		Last Modified: Mon, 29 Sep 2025 23:56:04 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:532f06e1ce5f549a89f5840b9b254c2ae3b6776593ea973b003bf49ba2b5ec61
+$ docker pull hitch@sha256:f24dd18a58ecb53e1ba2e2e105e66ab4672321c8bb00788d0bb8ace25eeb7bd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2542108 bytes)**  
+-	Total Size: **2.5 MB (2542107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88c255dbdbb0620269a98fced0dbaf3216608daa76d36b58ba2d7f74373450eb`
+-	Image ID: `sha256:24919d265c5925aa4e3e6385c10191ea9e63bef7c1efb336d17b0c55afcfcd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61cb707a190a94cb2ffb68d939075c3b16cbd70c6a99fbc002347d32e65d4888`  
-		Last Modified: Mon, 08 Sep 2025 21:46:47 GMT  
+	-	`sha256:b31f7d5850ed6e6580b516fa9a0bc08c9ca4a61fd84a4eed542ad059b064f57e`  
+		Last Modified: Tue, 30 Sep 2025 00:46:45 GMT  
 		Size: 2.5 MB (2528521 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97f73484a11e5eedcd92979ed844a3550e442ecbdb8e04bd8f652cb00b19fc97`  
-		Last Modified: Mon, 08 Sep 2025 21:46:48 GMT  
-		Size: 13.6 KB (13587 bytes)  
+	-	`sha256:7125b77a35b28809d1f27ea16e95ab5bc234b4b97d86f98208aa015bf8c16664`  
+		Last Modified: Tue, 30 Sep 2025 00:46:46 GMT  
+		Size: 13.6 KB (13586 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `hitch:1.8.0`
 
 ```console
-$ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77944e85ac314
+$ docker pull hitch@sha256:958576e4a2fcada351a4fd94428e287fce4d0729fecb42bde9bfeff48ae34162
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -718,18 +718,18 @@ $ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77
 ### `hitch:1.8.0` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:18b3f0dd2cae19096b863f0f89b00a40fe7ab2b2a448543dbddbf29c71f1e8fb
+$ docker pull hitch@sha256:167e9c81e5f28b6694453efa66813c2e1f9d9470a256d2523ae9ed77d5a317ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32249636 bytes)**  
+-	Total Size: **32.2 MB (32249951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40eb779ca1cdd4eb04d2fba1dba7cd0e927e96a909a34e747d795d0396f01760`
+-	Image ID: `sha256:8b12272305557b587d40b3028237ebd76c44b54b3049605df2fb487cc60aa706`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -756,62 +756,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:d107e437f7299a0db6425d4e37f44fa779f7917ecc8daf1e87128ee91b9ed3d3`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 28.2 MB (28228346 bytes)  
+	-	`sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375`  
+		Last Modified: Mon, 29 Sep 2025 23:34:35 GMT  
+		Size: 28.2 MB (28228336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415dc7b8d73b82ba6e3dafdffb2479ed80094250447c036b7b6ce0ca609ce678`  
-		Last Modified: Mon, 08 Sep 2025 21:58:22 GMT  
-		Size: 4.0 MB (4020846 bytes)  
+	-	`sha256:384b045d3411f10e1ed6bef6c6d110029cd561b1b39aa8a70e6bc4e1a5c7fecc`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 4.0 MB (4021172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75d2c99cb048924c52b311aa2994281432f8b14b0400f89e35dc4efcb071047c`  
-		Last Modified: Mon, 08 Sep 2025 21:38:40 GMT  
-		Size: 412.0 B  
+	-	`sha256:272cc9b478cfdbb99e544522cad181c1b5a2ccf85ccd60fd1bd733cfe4de891d`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9415a47c87833e81612e7fb4f15a0fcc84123ffe21fad58c2314a2f4e64c4676
+$ docker pull hitch@sha256:5f02b487cf6a7c8cf2a2910f493063d2cd2d801b8f9cf6183ed33ade5ec99eb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2544970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab0c35cf806c8e5c25db885745a3603cacfc5328e0b6563131c29efcd8ed3164`
+-	Image ID: `sha256:9bddcab9774be295a425226c03a310f8a708f04a7ec5679c0f2e1c38ce25db2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe7367f4c4067b2a8cbeb7072f9c8b107634ef05aa050a3c245ec07fa3d5ebb2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:32 GMT  
+	-	`sha256:e26de37078dca82f3b8510bb131012d80f546ff2862532a5cb678007f758dd06`  
+		Last Modified: Tue, 30 Sep 2025 00:46:29 GMT  
 		Size: 2.5 MB (2531345 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4893a646e273a0aa8403a66670473dbb42fec54c2f0a4cfb0dd85fcc4801dff2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:33 GMT  
+	-	`sha256:241298eb984d223a359e5efe377fcd968e8ced41158298d3778b7dc4a2adf158`  
+		Last Modified: Tue, 30 Sep 2025 00:46:30 GMT  
 		Size: 13.6 KB (13625 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:1fe093bea4a13c12828768dc6171e50b588b8da38584425bbf316ea8b16a83e2
+$ docker pull hitch@sha256:e7b8897854a34758024bdd5d1f13c0b9b46cdd65d385596957cdcad5486c7d82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27319084 bytes)**  
+-	Total Size: **27.3 MB (27319172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f546a677e04ce991e1260f4c1cee8fdfa299df0153bf855799cb6db50bb93719`
+-	Image ID: `sha256:88973f665f79e538a2b3c6f7011408f6ef4203d9c8474d5aad8a5c68730c79ef`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -838,62 +838,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:e747f8ef7f1d9a41c99bfb53889f7b8de3504300740a326627fc7522904708cc`  
-		Last Modified: Mon, 08 Sep 2025 21:14:21 GMT  
-		Size: 23.9 MB (23933904 bytes)  
+	-	`sha256:4c0d784fb90dddd991d201014e92ef1ebfe9a20d0f2ea56e2701fb9e8219be91`  
+		Last Modified: Mon, 29 Sep 2025 23:34:19 GMT  
+		Size: 23.9 MB (23933930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08a556ab861f42c017c827c0db8adf09d534ccc548804be0d2e342c9d9462529`  
-		Last Modified: Mon, 08 Sep 2025 21:53:48 GMT  
-		Size: 3.4 MB (3384736 bytes)  
+	-	`sha256:1eea794383b9f4724eeab97155122d94d095faae88930bb1e0508ba64908f38c`  
+		Last Modified: Mon, 29 Sep 2025 23:58:10 GMT  
+		Size: 3.4 MB (3384798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4469b3c31320ec9a53d0c2dfe70a02832a1f3b0f1d22e82ff6431458337da8c`  
-		Last Modified: Mon, 08 Sep 2025 21:53:47 GMT  
+	-	`sha256:4c286b2de78b5d3093f5861a0d64527d7ec696620b1700962cba8d1fdd2e20e7`  
+		Last Modified: Mon, 29 Sep 2025 23:58:09 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:a171953ccfe6ed3a3540aa6d19c7dddae75cef7de63a2eb61cb4d234b9e035a6
+$ docker pull hitch@sha256:f49c96a93c80dc194057b9395e5815e6c3a54562a1d50c6bd00876a33423291e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2547290 bytes)**  
+-	Total Size: **2.5 MB (2547289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:801cad2c9d9a331f00606f988f5cf2f839a1bfb16c800d075fbbe754b22e65da`
+-	Image ID: `sha256:5bd8d14a250746efaaf9f050f900d885acdfcbd5b3152025ce9149d66dd156d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d58619e2b9e19f2076a5a883a3dab02e31a0d10af442c7ce4055e0182df793f7`  
-		Last Modified: Mon, 08 Sep 2025 21:46:37 GMT  
+	-	`sha256:4a02d5d523d422ce04712693824fb7949c641caae808feea9f0e4b5c6e8c601f`  
+		Last Modified: Tue, 30 Sep 2025 00:46:35 GMT  
 		Size: 2.5 MB (2533577 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5426144d001612c508855d889352b7b688ee8468f9e87f9fadb61546aba6d8e9`  
-		Last Modified: Mon, 08 Sep 2025 21:46:38 GMT  
-		Size: 13.7 KB (13713 bytes)  
+	-	`sha256:0cd0ea2e0f1d6b986c2446715fb024facbaf4ad487172c803ae8da50afda3a0b`  
+		Last Modified: Tue, 30 Sep 2025 00:46:36 GMT  
+		Size: 13.7 KB (13712 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:e12503e237e3e1133a6d3e59260b53fa86bf6f4e498796dd077e5de550ac039d
+$ docker pull hitch@sha256:66787b913ecfff5ccac859ff67eef66b1a80cd24000485fce8ba141c7592a9b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (31974262 bytes)**  
+-	Total Size: **32.0 MB (31974329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f39515aaa0526bfc041936e7676b98b3c91d438e611e4ed0972e019d0305ee5`
+-	Image ID: `sha256:39d8f53b48105ea2370f99ed049bbe3c4b673fa8b72b8a0e3cdecb6956c0ac13`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -920,62 +920,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:0878ecc8b0afd0d835641c015541aacd4780ec19e5565a3e1a5af3f77d208d42`  
-		Last Modified: Mon, 08 Sep 2025 21:13:25 GMT  
-		Size: 28.1 MB (28102099 bytes)  
+	-	`sha256:f4e51325a7cb57cd9ae67bd9540483838b96bf7c9b0bf18205d9d30819e9ca38`  
+		Last Modified: Mon, 29 Sep 2025 23:34:17 GMT  
+		Size: 28.1 MB (28102145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb31eaf4b3b75fa92ee1ce071b9e1ce946975047cf10b0f01e8486824e8ff0d5`  
-		Last Modified: Mon, 08 Sep 2025 21:56:13 GMT  
-		Size: 3.9 MB (3871717 bytes)  
+	-	`sha256:65b6360c9dab2e764fb13fdd0f0bec967f2b06cba3ffa21bf6e3a63c92284034`  
+		Last Modified: Mon, 29 Sep 2025 23:51:23 GMT  
+		Size: 3.9 MB (3871740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f72585629d576bac2cb327d7bb1a75636296f9d4d9bdf1938a5fff4899b2b13`  
-		Last Modified: Mon, 08 Sep 2025 21:56:15 GMT  
-		Size: 414.0 B  
+	-	`sha256:c8b929d5a9bcaa3adb3409c119fdc412ac7b1a3378440d58a8ca939f6620158c`  
+		Last Modified: Mon, 29 Sep 2025 23:51:22 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9bae3acb59f59641cb4fd39ca7d1663f2e23d402dd01bb6c5984e47fbaf3210f
+$ docker pull hitch@sha256:6bb5d6990dc49f1a4454d43c3de5262a2a7e9719b9861469043d646aa9cee93b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2545356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f607edb09794726faae83bd92dadbbedfba67ed851862c88e5ca9366bca7ca`
+-	Image ID: `sha256:8edb5fe49f8ead321babeba7003d2077b0e9693354e79b813055f89ce94e10e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1ada844a1c58183a171d03bd5a086b28ae8daacc400f07bb100d4b5555b869c5`  
-		Last Modified: Mon, 08 Sep 2025 21:46:42 GMT  
+	-	`sha256:f47ce8028ae8da7b88b308ca00a2aad862491b2a6c23d9ac260934dae17e8309`  
+		Last Modified: Tue, 30 Sep 2025 00:46:40 GMT  
 		Size: 2.5 MB (2531615 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f2b6015c303c7385d85fbcb875e21c9751037b7476093598d695918c33f543a`  
-		Last Modified: Mon, 08 Sep 2025 21:46:43 GMT  
+	-	`sha256:ae0dd334ab4dc01cbd595b13043aba9812c953d5c3a9f02310fa6eb0544b454d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:41 GMT  
 		Size: 13.7 KB (13741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0` - linux; 386
 
 ```console
-$ docker pull hitch@sha256:878f403cf2dbed9792ffb65955139bc7f870cfca3b9b9bb5cc050fd782a054ac
+$ docker pull hitch@sha256:65eb3ad0d93e7b4566623a4c01729ed5004be8dd17dc4ade683f07e09cc640d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33225669 bytes)**  
+-	Total Size: **33.2 MB (33225953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8adee8303b1c0fbe47181616c9dd0ba0c25252c46f2406d2063fe6647458be3a`
+-	Image ID: `sha256:7f84a54bfad4c009c16c09c04188c72d26a0a4d1ac7f8e8dc5e360fb922a78ee`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1002,51 +1002,51 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:dc2a09b0db8b98044474925cacc9c009aa76e5883edf644cc36c3f6a2e3917ac`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 29.2 MB (29209634 bytes)  
+	-	`sha256:5a19917fb037e6569ceef43a0b0faa5c3f8554f4d9b154320d254dea136b463a`  
+		Last Modified: Mon, 29 Sep 2025 23:35:20 GMT  
+		Size: 29.2 MB (29209630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e49bc600cc57fae9140a3f86eedaefc3b3eb8bed90f08f5bbee7cf2dc72ef996`  
-		Last Modified: Mon, 08 Sep 2025 21:56:53 GMT  
-		Size: 4.0 MB (4015590 bytes)  
+	-	`sha256:ad608f8e84a251687c7eb360a639b224caa5571a288f16d0c2d4e8efb60cb2ab`  
+		Last Modified: Mon, 29 Sep 2025 23:56:05 GMT  
+		Size: 4.0 MB (4015879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c09dae409e891850408ec02c5aad42647feb293abe25853c4514e0028c4c2ca`  
-		Last Modified: Mon, 08 Sep 2025 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:ae21e754b268ca970537777293503e6f3982afae153002a6f4140b98b4cec352`  
+		Last Modified: Mon, 29 Sep 2025 23:56:04 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:532f06e1ce5f549a89f5840b9b254c2ae3b6776593ea973b003bf49ba2b5ec61
+$ docker pull hitch@sha256:f24dd18a58ecb53e1ba2e2e105e66ab4672321c8bb00788d0bb8ace25eeb7bd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2542108 bytes)**  
+-	Total Size: **2.5 MB (2542107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88c255dbdbb0620269a98fced0dbaf3216608daa76d36b58ba2d7f74373450eb`
+-	Image ID: `sha256:24919d265c5925aa4e3e6385c10191ea9e63bef7c1efb336d17b0c55afcfcd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61cb707a190a94cb2ffb68d939075c3b16cbd70c6a99fbc002347d32e65d4888`  
-		Last Modified: Mon, 08 Sep 2025 21:46:47 GMT  
+	-	`sha256:b31f7d5850ed6e6580b516fa9a0bc08c9ca4a61fd84a4eed542ad059b064f57e`  
+		Last Modified: Tue, 30 Sep 2025 00:46:45 GMT  
 		Size: 2.5 MB (2528521 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97f73484a11e5eedcd92979ed844a3550e442ecbdb8e04bd8f652cb00b19fc97`  
-		Last Modified: Mon, 08 Sep 2025 21:46:48 GMT  
-		Size: 13.6 KB (13587 bytes)  
+	-	`sha256:7125b77a35b28809d1f27ea16e95ab5bc234b4b97d86f98208aa015bf8c16664`  
+		Last Modified: Tue, 30 Sep 2025 00:46:46 GMT  
+		Size: 13.6 KB (13586 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `hitch:1.8.0-1`
 
 ```console
-$ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77944e85ac314
+$ docker pull hitch@sha256:958576e4a2fcada351a4fd94428e287fce4d0729fecb42bde9bfeff48ae34162
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1063,18 +1063,18 @@ $ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77
 ### `hitch:1.8.0-1` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:18b3f0dd2cae19096b863f0f89b00a40fe7ab2b2a448543dbddbf29c71f1e8fb
+$ docker pull hitch@sha256:167e9c81e5f28b6694453efa66813c2e1f9d9470a256d2523ae9ed77d5a317ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32249636 bytes)**  
+-	Total Size: **32.2 MB (32249951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40eb779ca1cdd4eb04d2fba1dba7cd0e927e96a909a34e747d795d0396f01760`
+-	Image ID: `sha256:8b12272305557b587d40b3028237ebd76c44b54b3049605df2fb487cc60aa706`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1101,62 +1101,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:d107e437f7299a0db6425d4e37f44fa779f7917ecc8daf1e87128ee91b9ed3d3`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 28.2 MB (28228346 bytes)  
+	-	`sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375`  
+		Last Modified: Mon, 29 Sep 2025 23:34:35 GMT  
+		Size: 28.2 MB (28228336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415dc7b8d73b82ba6e3dafdffb2479ed80094250447c036b7b6ce0ca609ce678`  
-		Last Modified: Mon, 08 Sep 2025 21:58:22 GMT  
-		Size: 4.0 MB (4020846 bytes)  
+	-	`sha256:384b045d3411f10e1ed6bef6c6d110029cd561b1b39aa8a70e6bc4e1a5c7fecc`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 4.0 MB (4021172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75d2c99cb048924c52b311aa2994281432f8b14b0400f89e35dc4efcb071047c`  
-		Last Modified: Mon, 08 Sep 2025 21:38:40 GMT  
-		Size: 412.0 B  
+	-	`sha256:272cc9b478cfdbb99e544522cad181c1b5a2ccf85ccd60fd1bd733cfe4de891d`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9415a47c87833e81612e7fb4f15a0fcc84123ffe21fad58c2314a2f4e64c4676
+$ docker pull hitch@sha256:5f02b487cf6a7c8cf2a2910f493063d2cd2d801b8f9cf6183ed33ade5ec99eb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2544970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab0c35cf806c8e5c25db885745a3603cacfc5328e0b6563131c29efcd8ed3164`
+-	Image ID: `sha256:9bddcab9774be295a425226c03a310f8a708f04a7ec5679c0f2e1c38ce25db2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe7367f4c4067b2a8cbeb7072f9c8b107634ef05aa050a3c245ec07fa3d5ebb2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:32 GMT  
+	-	`sha256:e26de37078dca82f3b8510bb131012d80f546ff2862532a5cb678007f758dd06`  
+		Last Modified: Tue, 30 Sep 2025 00:46:29 GMT  
 		Size: 2.5 MB (2531345 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4893a646e273a0aa8403a66670473dbb42fec54c2f0a4cfb0dd85fcc4801dff2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:33 GMT  
+	-	`sha256:241298eb984d223a359e5efe377fcd968e8ced41158298d3778b7dc4a2adf158`  
+		Last Modified: Tue, 30 Sep 2025 00:46:30 GMT  
 		Size: 13.6 KB (13625 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0-1` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:1fe093bea4a13c12828768dc6171e50b588b8da38584425bbf316ea8b16a83e2
+$ docker pull hitch@sha256:e7b8897854a34758024bdd5d1f13c0b9b46cdd65d385596957cdcad5486c7d82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27319084 bytes)**  
+-	Total Size: **27.3 MB (27319172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f546a677e04ce991e1260f4c1cee8fdfa299df0153bf855799cb6db50bb93719`
+-	Image ID: `sha256:88973f665f79e538a2b3c6f7011408f6ef4203d9c8474d5aad8a5c68730c79ef`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1183,62 +1183,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:e747f8ef7f1d9a41c99bfb53889f7b8de3504300740a326627fc7522904708cc`  
-		Last Modified: Mon, 08 Sep 2025 21:14:21 GMT  
-		Size: 23.9 MB (23933904 bytes)  
+	-	`sha256:4c0d784fb90dddd991d201014e92ef1ebfe9a20d0f2ea56e2701fb9e8219be91`  
+		Last Modified: Mon, 29 Sep 2025 23:34:19 GMT  
+		Size: 23.9 MB (23933930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08a556ab861f42c017c827c0db8adf09d534ccc548804be0d2e342c9d9462529`  
-		Last Modified: Mon, 08 Sep 2025 21:53:48 GMT  
-		Size: 3.4 MB (3384736 bytes)  
+	-	`sha256:1eea794383b9f4724eeab97155122d94d095faae88930bb1e0508ba64908f38c`  
+		Last Modified: Mon, 29 Sep 2025 23:58:10 GMT  
+		Size: 3.4 MB (3384798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4469b3c31320ec9a53d0c2dfe70a02832a1f3b0f1d22e82ff6431458337da8c`  
-		Last Modified: Mon, 08 Sep 2025 21:53:47 GMT  
+	-	`sha256:4c286b2de78b5d3093f5861a0d64527d7ec696620b1700962cba8d1fdd2e20e7`  
+		Last Modified: Mon, 29 Sep 2025 23:58:09 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:a171953ccfe6ed3a3540aa6d19c7dddae75cef7de63a2eb61cb4d234b9e035a6
+$ docker pull hitch@sha256:f49c96a93c80dc194057b9395e5815e6c3a54562a1d50c6bd00876a33423291e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2547290 bytes)**  
+-	Total Size: **2.5 MB (2547289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:801cad2c9d9a331f00606f988f5cf2f839a1bfb16c800d075fbbe754b22e65da`
+-	Image ID: `sha256:5bd8d14a250746efaaf9f050f900d885acdfcbd5b3152025ce9149d66dd156d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d58619e2b9e19f2076a5a883a3dab02e31a0d10af442c7ce4055e0182df793f7`  
-		Last Modified: Mon, 08 Sep 2025 21:46:37 GMT  
+	-	`sha256:4a02d5d523d422ce04712693824fb7949c641caae808feea9f0e4b5c6e8c601f`  
+		Last Modified: Tue, 30 Sep 2025 00:46:35 GMT  
 		Size: 2.5 MB (2533577 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5426144d001612c508855d889352b7b688ee8468f9e87f9fadb61546aba6d8e9`  
-		Last Modified: Mon, 08 Sep 2025 21:46:38 GMT  
-		Size: 13.7 KB (13713 bytes)  
+	-	`sha256:0cd0ea2e0f1d6b986c2446715fb024facbaf4ad487172c803ae8da50afda3a0b`  
+		Last Modified: Tue, 30 Sep 2025 00:46:36 GMT  
+		Size: 13.7 KB (13712 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0-1` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:e12503e237e3e1133a6d3e59260b53fa86bf6f4e498796dd077e5de550ac039d
+$ docker pull hitch@sha256:66787b913ecfff5ccac859ff67eef66b1a80cd24000485fce8ba141c7592a9b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (31974262 bytes)**  
+-	Total Size: **32.0 MB (31974329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f39515aaa0526bfc041936e7676b98b3c91d438e611e4ed0972e019d0305ee5`
+-	Image ID: `sha256:39d8f53b48105ea2370f99ed049bbe3c4b673fa8b72b8a0e3cdecb6956c0ac13`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1265,62 +1265,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:0878ecc8b0afd0d835641c015541aacd4780ec19e5565a3e1a5af3f77d208d42`  
-		Last Modified: Mon, 08 Sep 2025 21:13:25 GMT  
-		Size: 28.1 MB (28102099 bytes)  
+	-	`sha256:f4e51325a7cb57cd9ae67bd9540483838b96bf7c9b0bf18205d9d30819e9ca38`  
+		Last Modified: Mon, 29 Sep 2025 23:34:17 GMT  
+		Size: 28.1 MB (28102145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb31eaf4b3b75fa92ee1ce071b9e1ce946975047cf10b0f01e8486824e8ff0d5`  
-		Last Modified: Mon, 08 Sep 2025 21:56:13 GMT  
-		Size: 3.9 MB (3871717 bytes)  
+	-	`sha256:65b6360c9dab2e764fb13fdd0f0bec967f2b06cba3ffa21bf6e3a63c92284034`  
+		Last Modified: Mon, 29 Sep 2025 23:51:23 GMT  
+		Size: 3.9 MB (3871740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f72585629d576bac2cb327d7bb1a75636296f9d4d9bdf1938a5fff4899b2b13`  
-		Last Modified: Mon, 08 Sep 2025 21:56:15 GMT  
-		Size: 414.0 B  
+	-	`sha256:c8b929d5a9bcaa3adb3409c119fdc412ac7b1a3378440d58a8ca939f6620158c`  
+		Last Modified: Mon, 29 Sep 2025 23:51:22 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9bae3acb59f59641cb4fd39ca7d1663f2e23d402dd01bb6c5984e47fbaf3210f
+$ docker pull hitch@sha256:6bb5d6990dc49f1a4454d43c3de5262a2a7e9719b9861469043d646aa9cee93b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2545356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f607edb09794726faae83bd92dadbbedfba67ed851862c88e5ca9366bca7ca`
+-	Image ID: `sha256:8edb5fe49f8ead321babeba7003d2077b0e9693354e79b813055f89ce94e10e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1ada844a1c58183a171d03bd5a086b28ae8daacc400f07bb100d4b5555b869c5`  
-		Last Modified: Mon, 08 Sep 2025 21:46:42 GMT  
+	-	`sha256:f47ce8028ae8da7b88b308ca00a2aad862491b2a6c23d9ac260934dae17e8309`  
+		Last Modified: Tue, 30 Sep 2025 00:46:40 GMT  
 		Size: 2.5 MB (2531615 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f2b6015c303c7385d85fbcb875e21c9751037b7476093598d695918c33f543a`  
-		Last Modified: Mon, 08 Sep 2025 21:46:43 GMT  
+	-	`sha256:ae0dd334ab4dc01cbd595b13043aba9812c953d5c3a9f02310fa6eb0544b454d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:41 GMT  
 		Size: 13.7 KB (13741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0-1` - linux; 386
 
 ```console
-$ docker pull hitch@sha256:878f403cf2dbed9792ffb65955139bc7f870cfca3b9b9bb5cc050fd782a054ac
+$ docker pull hitch@sha256:65eb3ad0d93e7b4566623a4c01729ed5004be8dd17dc4ade683f07e09cc640d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33225669 bytes)**  
+-	Total Size: **33.2 MB (33225953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8adee8303b1c0fbe47181616c9dd0ba0c25252c46f2406d2063fe6647458be3a`
+-	Image ID: `sha256:7f84a54bfad4c009c16c09c04188c72d26a0a4d1ac7f8e8dc5e360fb922a78ee`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1347,51 +1347,51 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:dc2a09b0db8b98044474925cacc9c009aa76e5883edf644cc36c3f6a2e3917ac`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 29.2 MB (29209634 bytes)  
+	-	`sha256:5a19917fb037e6569ceef43a0b0faa5c3f8554f4d9b154320d254dea136b463a`  
+		Last Modified: Mon, 29 Sep 2025 23:35:20 GMT  
+		Size: 29.2 MB (29209630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e49bc600cc57fae9140a3f86eedaefc3b3eb8bed90f08f5bbee7cf2dc72ef996`  
-		Last Modified: Mon, 08 Sep 2025 21:56:53 GMT  
-		Size: 4.0 MB (4015590 bytes)  
+	-	`sha256:ad608f8e84a251687c7eb360a639b224caa5571a288f16d0c2d4e8efb60cb2ab`  
+		Last Modified: Mon, 29 Sep 2025 23:56:05 GMT  
+		Size: 4.0 MB (4015879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c09dae409e891850408ec02c5aad42647feb293abe25853c4514e0028c4c2ca`  
-		Last Modified: Mon, 08 Sep 2025 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:ae21e754b268ca970537777293503e6f3982afae153002a6f4140b98b4cec352`  
+		Last Modified: Mon, 29 Sep 2025 23:56:04 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:532f06e1ce5f549a89f5840b9b254c2ae3b6776593ea973b003bf49ba2b5ec61
+$ docker pull hitch@sha256:f24dd18a58ecb53e1ba2e2e105e66ab4672321c8bb00788d0bb8ace25eeb7bd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2542108 bytes)**  
+-	Total Size: **2.5 MB (2542107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88c255dbdbb0620269a98fced0dbaf3216608daa76d36b58ba2d7f74373450eb`
+-	Image ID: `sha256:24919d265c5925aa4e3e6385c10191ea9e63bef7c1efb336d17b0c55afcfcd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61cb707a190a94cb2ffb68d939075c3b16cbd70c6a99fbc002347d32e65d4888`  
-		Last Modified: Mon, 08 Sep 2025 21:46:47 GMT  
+	-	`sha256:b31f7d5850ed6e6580b516fa9a0bc08c9ca4a61fd84a4eed542ad059b064f57e`  
+		Last Modified: Tue, 30 Sep 2025 00:46:45 GMT  
 		Size: 2.5 MB (2528521 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97f73484a11e5eedcd92979ed844a3550e442ecbdb8e04bd8f652cb00b19fc97`  
-		Last Modified: Mon, 08 Sep 2025 21:46:48 GMT  
-		Size: 13.6 KB (13587 bytes)  
+	-	`sha256:7125b77a35b28809d1f27ea16e95ab5bc234b4b97d86f98208aa015bf8c16664`  
+		Last Modified: Tue, 30 Sep 2025 00:46:46 GMT  
+		Size: 13.6 KB (13586 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `hitch:latest`
 
 ```console
-$ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77944e85ac314
+$ docker pull hitch@sha256:958576e4a2fcada351a4fd94428e287fce4d0729fecb42bde9bfeff48ae34162
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1408,18 +1408,18 @@ $ docker pull hitch@sha256:377bda7a08d7f70099a66d2ddce3121365158170ebd837788dc77
 ### `hitch:latest` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:18b3f0dd2cae19096b863f0f89b00a40fe7ab2b2a448543dbddbf29c71f1e8fb
+$ docker pull hitch@sha256:167e9c81e5f28b6694453efa66813c2e1f9d9470a256d2523ae9ed77d5a317ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32249636 bytes)**  
+-	Total Size: **32.2 MB (32249951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40eb779ca1cdd4eb04d2fba1dba7cd0e927e96a909a34e747d795d0396f01760`
+-	Image ID: `sha256:8b12272305557b587d40b3028237ebd76c44b54b3049605df2fb487cc60aa706`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1446,62 +1446,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:d107e437f7299a0db6425d4e37f44fa779f7917ecc8daf1e87128ee91b9ed3d3`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 28.2 MB (28228346 bytes)  
+	-	`sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375`  
+		Last Modified: Mon, 29 Sep 2025 23:34:35 GMT  
+		Size: 28.2 MB (28228336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415dc7b8d73b82ba6e3dafdffb2479ed80094250447c036b7b6ce0ca609ce678`  
-		Last Modified: Mon, 08 Sep 2025 21:58:22 GMT  
-		Size: 4.0 MB (4020846 bytes)  
+	-	`sha256:384b045d3411f10e1ed6bef6c6d110029cd561b1b39aa8a70e6bc4e1a5c7fecc`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 4.0 MB (4021172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75d2c99cb048924c52b311aa2994281432f8b14b0400f89e35dc4efcb071047c`  
-		Last Modified: Mon, 08 Sep 2025 21:38:40 GMT  
-		Size: 412.0 B  
+	-	`sha256:272cc9b478cfdbb99e544522cad181c1b5a2ccf85ccd60fd1bd733cfe4de891d`  
+		Last Modified: Mon, 29 Sep 2025 23:55:01 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9415a47c87833e81612e7fb4f15a0fcc84123ffe21fad58c2314a2f4e64c4676
+$ docker pull hitch@sha256:5f02b487cf6a7c8cf2a2910f493063d2cd2d801b8f9cf6183ed33ade5ec99eb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2544970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab0c35cf806c8e5c25db885745a3603cacfc5328e0b6563131c29efcd8ed3164`
+-	Image ID: `sha256:9bddcab9774be295a425226c03a310f8a708f04a7ec5679c0f2e1c38ce25db2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe7367f4c4067b2a8cbeb7072f9c8b107634ef05aa050a3c245ec07fa3d5ebb2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:32 GMT  
+	-	`sha256:e26de37078dca82f3b8510bb131012d80f546ff2862532a5cb678007f758dd06`  
+		Last Modified: Tue, 30 Sep 2025 00:46:29 GMT  
 		Size: 2.5 MB (2531345 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4893a646e273a0aa8403a66670473dbb42fec54c2f0a4cfb0dd85fcc4801dff2`  
-		Last Modified: Mon, 08 Sep 2025 21:46:33 GMT  
+	-	`sha256:241298eb984d223a359e5efe377fcd968e8ced41158298d3778b7dc4a2adf158`  
+		Last Modified: Tue, 30 Sep 2025 00:46:30 GMT  
 		Size: 13.6 KB (13625 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:1fe093bea4a13c12828768dc6171e50b588b8da38584425bbf316ea8b16a83e2
+$ docker pull hitch@sha256:e7b8897854a34758024bdd5d1f13c0b9b46cdd65d385596957cdcad5486c7d82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27319084 bytes)**  
+-	Total Size: **27.3 MB (27319172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f546a677e04ce991e1260f4c1cee8fdfa299df0153bf855799cb6db50bb93719`
+-	Image ID: `sha256:88973f665f79e538a2b3c6f7011408f6ef4203d9c8474d5aad8a5c68730c79ef`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1528,62 +1528,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:e747f8ef7f1d9a41c99bfb53889f7b8de3504300740a326627fc7522904708cc`  
-		Last Modified: Mon, 08 Sep 2025 21:14:21 GMT  
-		Size: 23.9 MB (23933904 bytes)  
+	-	`sha256:4c0d784fb90dddd991d201014e92ef1ebfe9a20d0f2ea56e2701fb9e8219be91`  
+		Last Modified: Mon, 29 Sep 2025 23:34:19 GMT  
+		Size: 23.9 MB (23933930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08a556ab861f42c017c827c0db8adf09d534ccc548804be0d2e342c9d9462529`  
-		Last Modified: Mon, 08 Sep 2025 21:53:48 GMT  
-		Size: 3.4 MB (3384736 bytes)  
+	-	`sha256:1eea794383b9f4724eeab97155122d94d095faae88930bb1e0508ba64908f38c`  
+		Last Modified: Mon, 29 Sep 2025 23:58:10 GMT  
+		Size: 3.4 MB (3384798 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4469b3c31320ec9a53d0c2dfe70a02832a1f3b0f1d22e82ff6431458337da8c`  
-		Last Modified: Mon, 08 Sep 2025 21:53:47 GMT  
+	-	`sha256:4c286b2de78b5d3093f5861a0d64527d7ec696620b1700962cba8d1fdd2e20e7`  
+		Last Modified: Mon, 29 Sep 2025 23:58:09 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:a171953ccfe6ed3a3540aa6d19c7dddae75cef7de63a2eb61cb4d234b9e035a6
+$ docker pull hitch@sha256:f49c96a93c80dc194057b9395e5815e6c3a54562a1d50c6bd00876a33423291e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2547290 bytes)**  
+-	Total Size: **2.5 MB (2547289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:801cad2c9d9a331f00606f988f5cf2f839a1bfb16c800d075fbbe754b22e65da`
+-	Image ID: `sha256:5bd8d14a250746efaaf9f050f900d885acdfcbd5b3152025ce9149d66dd156d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d58619e2b9e19f2076a5a883a3dab02e31a0d10af442c7ce4055e0182df793f7`  
-		Last Modified: Mon, 08 Sep 2025 21:46:37 GMT  
+	-	`sha256:4a02d5d523d422ce04712693824fb7949c641caae808feea9f0e4b5c6e8c601f`  
+		Last Modified: Tue, 30 Sep 2025 00:46:35 GMT  
 		Size: 2.5 MB (2533577 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5426144d001612c508855d889352b7b688ee8468f9e87f9fadb61546aba6d8e9`  
-		Last Modified: Mon, 08 Sep 2025 21:46:38 GMT  
-		Size: 13.7 KB (13713 bytes)  
+	-	`sha256:0cd0ea2e0f1d6b986c2446715fb024facbaf4ad487172c803ae8da50afda3a0b`  
+		Last Modified: Tue, 30 Sep 2025 00:46:36 GMT  
+		Size: 13.7 KB (13712 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:e12503e237e3e1133a6d3e59260b53fa86bf6f4e498796dd077e5de550ac039d
+$ docker pull hitch@sha256:66787b913ecfff5ccac859ff67eef66b1a80cd24000485fce8ba141c7592a9b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (31974262 bytes)**  
+-	Total Size: **32.0 MB (31974329 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f39515aaa0526bfc041936e7676b98b3c91d438e611e4ed0972e019d0305ee5`
+-	Image ID: `sha256:39d8f53b48105ea2370f99ed049bbe3c4b673fa8b72b8a0e3cdecb6956c0ac13`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1610,62 +1610,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:0878ecc8b0afd0d835641c015541aacd4780ec19e5565a3e1a5af3f77d208d42`  
-		Last Modified: Mon, 08 Sep 2025 21:13:25 GMT  
-		Size: 28.1 MB (28102099 bytes)  
+	-	`sha256:f4e51325a7cb57cd9ae67bd9540483838b96bf7c9b0bf18205d9d30819e9ca38`  
+		Last Modified: Mon, 29 Sep 2025 23:34:17 GMT  
+		Size: 28.1 MB (28102145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb31eaf4b3b75fa92ee1ce071b9e1ce946975047cf10b0f01e8486824e8ff0d5`  
-		Last Modified: Mon, 08 Sep 2025 21:56:13 GMT  
-		Size: 3.9 MB (3871717 bytes)  
+	-	`sha256:65b6360c9dab2e764fb13fdd0f0bec967f2b06cba3ffa21bf6e3a63c92284034`  
+		Last Modified: Mon, 29 Sep 2025 23:51:23 GMT  
+		Size: 3.9 MB (3871740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f72585629d576bac2cb327d7bb1a75636296f9d4d9bdf1938a5fff4899b2b13`  
-		Last Modified: Mon, 08 Sep 2025 21:56:15 GMT  
-		Size: 414.0 B  
+	-	`sha256:c8b929d5a9bcaa3adb3409c119fdc412ac7b1a3378440d58a8ca939f6620158c`  
+		Last Modified: Mon, 29 Sep 2025 23:51:22 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:9bae3acb59f59641cb4fd39ca7d1663f2e23d402dd01bb6c5984e47fbaf3210f
+$ docker pull hitch@sha256:6bb5d6990dc49f1a4454d43c3de5262a2a7e9719b9861469043d646aa9cee93b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2545356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f607edb09794726faae83bd92dadbbedfba67ed851862c88e5ca9366bca7ca`
+-	Image ID: `sha256:8edb5fe49f8ead321babeba7003d2077b0e9693354e79b813055f89ce94e10e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1ada844a1c58183a171d03bd5a086b28ae8daacc400f07bb100d4b5555b869c5`  
-		Last Modified: Mon, 08 Sep 2025 21:46:42 GMT  
+	-	`sha256:f47ce8028ae8da7b88b308ca00a2aad862491b2a6c23d9ac260934dae17e8309`  
+		Last Modified: Tue, 30 Sep 2025 00:46:40 GMT  
 		Size: 2.5 MB (2531615 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8f2b6015c303c7385d85fbcb875e21c9751037b7476093598d695918c33f543a`  
-		Last Modified: Mon, 08 Sep 2025 21:46:43 GMT  
+	-	`sha256:ae0dd334ab4dc01cbd595b13043aba9812c953d5c3a9f02310fa6eb0544b454d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:41 GMT  
 		Size: 13.7 KB (13741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; 386
 
 ```console
-$ docker pull hitch@sha256:878f403cf2dbed9792ffb65955139bc7f870cfca3b9b9bb5cc050fd782a054ac
+$ docker pull hitch@sha256:65eb3ad0d93e7b4566623a4c01729ed5004be8dd17dc4ade683f07e09cc640d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33225669 bytes)**  
+-	Total Size: **33.2 MB (33225953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8adee8303b1c0fbe47181616c9dd0ba0c25252c46f2406d2063fe6647458be3a`
+-	Image ID: `sha256:7f84a54bfad4c009c16c09c04188c72d26a0a4d1ac7f8e8dc5e360fb922a78ee`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Wed, 11 Jun 2025 06:11:46 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1759104000'
 # Wed, 11 Jun 2025 06:11:46 GMT
 ARG SRCVER=1.8.0
 # Wed, 11 Jun 2025 06:11:46 GMT
@@ -1692,43 +1692,43 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:dc2a09b0db8b98044474925cacc9c009aa76e5883edf644cc36c3f6a2e3917ac`  
-		Last Modified: Mon, 08 Sep 2025 21:12:45 GMT  
-		Size: 29.2 MB (29209634 bytes)  
+	-	`sha256:5a19917fb037e6569ceef43a0b0faa5c3f8554f4d9b154320d254dea136b463a`  
+		Last Modified: Mon, 29 Sep 2025 23:35:20 GMT  
+		Size: 29.2 MB (29209630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e49bc600cc57fae9140a3f86eedaefc3b3eb8bed90f08f5bbee7cf2dc72ef996`  
-		Last Modified: Mon, 08 Sep 2025 21:56:53 GMT  
-		Size: 4.0 MB (4015590 bytes)  
+	-	`sha256:ad608f8e84a251687c7eb360a639b224caa5571a288f16d0c2d4e8efb60cb2ab`  
+		Last Modified: Mon, 29 Sep 2025 23:56:05 GMT  
+		Size: 4.0 MB (4015879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c09dae409e891850408ec02c5aad42647feb293abe25853c4514e0028c4c2ca`  
-		Last Modified: Mon, 08 Sep 2025 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:ae21e754b268ca970537777293503e6f3982afae153002a6f4140b98b4cec352`  
+		Last Modified: Mon, 29 Sep 2025 23:56:04 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:532f06e1ce5f549a89f5840b9b254c2ae3b6776593ea973b003bf49ba2b5ec61
+$ docker pull hitch@sha256:f24dd18a58ecb53e1ba2e2e105e66ab4672321c8bb00788d0bb8ace25eeb7bd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2542108 bytes)**  
+-	Total Size: **2.5 MB (2542107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88c255dbdbb0620269a98fced0dbaf3216608daa76d36b58ba2d7f74373450eb`
+-	Image ID: `sha256:24919d265c5925aa4e3e6385c10191ea9e63bef7c1efb336d17b0c55afcfcd20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61cb707a190a94cb2ffb68d939075c3b16cbd70c6a99fbc002347d32e65d4888`  
-		Last Modified: Mon, 08 Sep 2025 21:46:47 GMT  
+	-	`sha256:b31f7d5850ed6e6580b516fa9a0bc08c9ca4a61fd84a4eed542ad059b064f57e`  
+		Last Modified: Tue, 30 Sep 2025 00:46:45 GMT  
 		Size: 2.5 MB (2528521 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97f73484a11e5eedcd92979ed844a3550e442ecbdb8e04bd8f652cb00b19fc97`  
-		Last Modified: Mon, 08 Sep 2025 21:46:48 GMT  
-		Size: 13.6 KB (13587 bytes)  
+	-	`sha256:7125b77a35b28809d1f27ea16e95ab5bc234b4b97d86f98208aa015bf8c16664`  
+		Last Modified: Tue, 30 Sep 2025 00:46:46 GMT  
+		Size: 13.6 KB (13586 bytes)  
 		MIME: application/vnd.in-toto+json
