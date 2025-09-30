@@ -7896,21 +7896,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.2.0-1+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u6.dsc' tiff_4.2.0-1+deb11u6.dsc 2461 SHA256:e8871175e69974b6958e958b4e4aed9b2ffb4ce7616fc1d174fc3ca6f3c95d67
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz' tiff_4.2.0.orig.tar.gz 2809373 SHA256:eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz.asc' tiff_4.2.0.orig.tar.gz.asc 228 SHA256:119bb62934603ff4d3cd81c739d11904b28812a860773b9b2268cc96a339b14f
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u6.debian.tar.xz' tiff_4.2.0-1+deb11u6.debian.tar.xz 44916 SHA256:e8797cd2fa51c858eca826edd8c201e8974d9c5a0fbcf1742ee923459a9cccd3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u6/
 
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `twolame=0.4.0-2`
 
