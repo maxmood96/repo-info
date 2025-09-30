@@ -1188,15 +1188,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.20.dsc' curl_7.81.0-1ubuntu1.20.dsc 3143 SHA512:f80fd64d37020c505e09cb2dfc78061a22051095cd57e16f05708fba65279fd4e97cbd52eb1ed28d5b4acbced4849874418dde0da4b54b0511a9609da44160eb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.20.debian.tar.xz' curl_7.81.0-1ubuntu1.20.debian.tar.xz 82480 SHA512:692b39e78d5334d7d052ec67ee12766ef1e3c641745dfe0c9af4f9ee62c8960ed9715155a671bf97d173ca462f06e6245d1fdcca9104291558c0bb34678afdb9
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -12719,15 +12713,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.11.dsc' tiff_4.3.0-6ubuntu0.11.dsc 2406 SHA512:7a3b65c7a41e17540a96152cb12f1ad04e06844aab58c3e06956216dd07f85413358702392c7376b7673b7203f982b19c21f3faaacf295a1ff0a1fe9dea28c55
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.11.debian.tar.xz' tiff_4.3.0-6ubuntu0.11.debian.tar.xz 52268 SHA512:02c75744c0497ef8901e48742146d7317512b7765bfa2d0e6fccd67639d80a70bac758893c482cb411da1a3fd8884d2af92d3c17f13f5dc53487567f4d49aefc
-```
 
 ### `dpkg` source package: `tinyxml2=9.0.0+dfsg-3`
 
