@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c16c79895e79ea7569594920fc4fd414ed776f4e7c69d4dfd31e4c2e1b5addc`
+- Image ID: `sha256:5cbe663464d4fc0c5baef8b49ab59d6c594dda07c36d629216aca090739a2c95`
 - Created: `2025-08-20T11:59:39Z`
 - Virtual Size: ~ 3.41 Gb  
   (total size of all layers on-disk)
@@ -2252,14 +2252,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/p11-kit/0.23.22-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/p11-kit/0.23.22-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pam=1.4.0-9+deb11u1`
+### `dpkg` source package: `pam=1.4.0-9+deb11u2`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-9+deb11u1`
-- `libpam-modules-bin=1.4.0-9+deb11u1`
-- `libpam-runtime=1.4.0-9+deb11u1`
-- `libpam0g:amd64=1.4.0-9+deb11u1`
+- `libpam-modules:amd64=1.4.0-9+deb11u2`
+- `libpam-modules-bin=1.4.0-9+deb11u2`
+- `libpam-runtime=1.4.0-9+deb11u2`
+- `libpam0g:amd64=1.4.0-9+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -2268,17 +2268,17 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.4.0-9+deb11u1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-9%2bdeb11u1.dsc' pam_1.4.0-9+deb11u1.dsc 1941 SHA256:190b705cc9daeee1febb84e8ac6f31219065f08ff41c8d38fbbb424b545d5ca4
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-9%2bdeb11u1.debian.tar.xz' pam_1.4.0-9+deb11u1.debian.tar.xz 120148 SHA256:bcaaad9423c3ab32c5c4f9e363595a84fe3c535aa9568e42e560028a4e33dfcf
+$ apt-get source -qq --print-uris pam=1.4.0-9+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0-9%2bdeb11u2.dsc' pam_1.4.0-9+deb11u2.dsc 2601 SHA256:d2978a79eeffd7ef3e7a259a3965b127187a07decf558e7455bcf928970a0acf
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0-9%2bdeb11u2.debian.tar.xz' pam_1.4.0-9+deb11u2.debian.tar.xz 140736 SHA256:991c216e703e8fd23ab47a99c389f84e08c4a87801f8baaecf00db0184b84914
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pam/1.4.0-9+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.4.0-9+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.4.0-9+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pam/1.4.0-9+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/pam/1.4.0-9+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pam/1.4.0-9+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
