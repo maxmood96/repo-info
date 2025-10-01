@@ -1,7 +1,7 @@
 ## `redmine:6-alpine3.21`
 
 ```console
-$ docker pull redmine@sha256:fdf792dacf954c47ae8ff01bd3bfa181693cf1563f8e191212d28c8ba79da441
+$ docker pull redmine@sha256:3fef13a9080afb46382826b6c47ce268f6d6598d090607ccb40d007f14b9abb6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -928,13 +928,13 @@ $ docker pull redmine@sha256:e51a4585b3334fdf4bc1ff5bd9a7fa7a168fba8a2d2547cb66c
 ### `redmine:6-alpine3.21` - linux; riscv64
 
 ```console
-$ docker pull redmine@sha256:49e18dade03bfcb24a297e9ceed7c6cdbd67055d91bc4a2c2c1bbe14ebd0caf1
+$ docker pull redmine@sha256:4892ead4dda2cf17f11c5424a2f049ff74e67992965b40e0134a4c153723649e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.7 MB (188680964 bytes)**  
+-	Total Size: **219.0 MB (218971760 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39710bad6683b57f018c42374ee03b5007da7d803789d298c42c5c2e18725928`
+-	Image ID: `sha256:86b5e289befc394d75166b7ca8da77203f1a3b188543426a7ffaa22a6c26e7ad`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -943,67 +943,65 @@ $ docker pull redmine@sha256:49e18dade03bfcb24a297e9ceed7c6cdbd67055d91bc4a2c2c1
 ADD alpine-minirootfs-3.21.4-riscv64.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 ENV LANG=C.UTF-8
-# Thu, 24 Jul 2025 11:34:09 GMT
-ENV RUBY_VERSION=3.3.9
-# Thu, 24 Jul 2025 11:34:09 GMT
-ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.9.tar.xz
-# Thu, 24 Jul 2025 11:34:09 GMT
-ENV RUBY_DOWNLOAD_SHA256=2b24a2180a2f7f63c099851a1d01e6928cf56d515d136a91bd2075423a7a76bb
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
+ENV RUBY_VERSION=3.4.6
+# Tue, 16 Sep 2025 05:03:19 GMT
+ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz
+# Tue, 16 Sep 2025 05:03:19 GMT
+ENV RUBY_DOWNLOAD_SHA256=804995bc22938aa475127000d3103cb133409ad3955edfc0e7412be66a4859b8
+# Tue, 16 Sep 2025 05:03:19 GMT
 RUN set -eux; 		apk add --no-cache --virtual .ruby-builddeps 		autoconf 		bzip2 		bzip2-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		g++ 		gcc 		gdbm-dev 		glib-dev 		gmp-dev 		libc-dev 		libffi-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		ncurses-dev 		openssl 		openssl-dev 		patch 		procps 		yaml-dev 		zlib-dev 		ruby 		tar 		xz 		yaml-dev 		zlib-dev 	; 		rustArch=; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') rustArch='x86_64-unknown-linux-musl'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-musl/rustup-init'; rustupSha256='1455d1df3825c5f24ba06d9dd1c7052908272a2cae9aa749ea49d67acbe22b47' ;; 		'aarch64') rustArch='aarch64-unknown-linux-musl'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-musl/rustup-init'; rustupSha256='7087ada906cd27a00c8e0323401a46804a03a742bd07811da6dead016617cc64' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		wget -O 'thread-stack-fix.patch' 'https://bugs.ruby-lang.org/attachments/download/7081/0001-thread_pthread.c-make-get_main_stack-portable-on-lin.patch'; 	echo '3ab628a51d92fdf0d2b5835e93564857aea73e0c1de00313864a94a6255cb645 *thread-stack-fix.patch' | sha256sum --check --strict; 	patch -p1 -i thread-stack-fix.patch; 	rm thread-stack-fix.patch; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .ruby-rundeps $runDeps; 	apk del --no-network .ruby-builddeps; 		cd /; 	rm -r /usr/src/ruby; 	if 		apk --no-network list --installed 			| grep -v '^[.]ruby-' 			| grep -i ruby 	; then 		exit 1; 	fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Thu, 24 Jul 2025 11:34:09 GMT
+# Tue, 16 Sep 2025 05:03:19 GMT
 CMD ["irb"]
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 RUN addgroup -S -g 1000 redmine && adduser -S -H -G redmine -u 999 redmine # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 RUN set -eux; 	apk add --no-cache 		bash 		breezy 		ca-certificates 		findutils 		ghostscript 		ghostscript-fonts 		git 		imagemagick 		mercurial 		openssh-client 		subversion 		tini 		tzdata 		wget 	; # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
-ENV GOSU_VERSION=1.18
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
+ENV GOSU_VERSION=1.19
+# Thu, 25 Sep 2025 22:23:05 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 ENV RAILS_ENV=production
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 WORKDIR /usr/src/redmine
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 ENV HOME=/home/redmine
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 RUN set -eux; 	[ ! -d "$HOME" ]; 	mkdir -p "$HOME"; 	chown redmine:redmine "$HOME"; 	chmod 1777 "$HOME" # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
-ENV REDMINE_VERSION=6.0.7
-# Sun, 21 Sep 2025 14:39:20 GMT
-ENV REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.7.tar.gz
-# Sun, 21 Sep 2025 14:39:20 GMT
-ENV REDMINE_DOWNLOAD_SHA256=8824560a07673dc7b59f1ca0bf9d7cd854c6c4c97d0fe555a5dbeba332b8dfe8
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
+ENV REDMINE_VERSION=6.1.0
+# Thu, 25 Sep 2025 22:23:05 GMT
+ENV REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.0.tar.gz
+# Thu, 25 Sep 2025 22:23:05 GMT
+ENV REDMINE_DOWNLOAD_SHA256=bc483da195f2444491d870e40f7fc909ae750f7ba8d0e28831e6d6c478812b88
+# Thu, 25 Sep 2025 22:23:05 GMT
 ENV RAILS_LOG_TO_STDOUT=true
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 RUN set -eux; 	wget -O redmine.tar.gz "$REDMINE_DOWNLOAD_URL"; 	echo "$REDMINE_DOWNLOAD_SHA256 *redmine.tar.gz" | sha256sum -c -; 	tar -xf redmine.tar.gz --strip-components=1; 	rm redmine.tar.gz files/delete.me log/delete.me; 	mkdir -p log public/assets public/plugin_assets sqlite tmp/pdf tmp/pids; 	chown -R redmine:redmine ./; 	chmod -R ugo=rwX config db sqlite; 	find log tmp -type d -exec chmod 1777 '{}' + # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
-ENV BUNDLE_FORCE_RUBY_PLATFORM=1
-# Sun, 21 Sep 2025 14:39:20 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		coreutils 		freetds-dev 		gcc 		make 		mariadb-dev 		musl-dev 		patch 		postgresql-dev 		sqlite-dev 		ttf2ufm 		yaml-dev 		zlib-dev 	; 		gosu redmine bundle config --local without 'development test'; 	puma="$(grep -E "^[[:space:]]*gem [:'\"]puma['\",[:space:]].*\$" Gemfile)"; 	{ echo; echo "$puma"; } | sed -re 's/^[[:space:]]+//' >> Gemfile; 	echo '# the following entries only exist to force `bundle install` to pre-install all database adapter dependencies -- they can be safely removed/ignored' > ./config/database.yml; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$adapter:" >> ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 	done; 	gosu redmine bundle install --jobs "$(nproc)"; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		rm /usr/local/bundle/gems/rbpdf-font-1.19.*/lib/fonts/ttf2ufm/ttf2ufm; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/bundle/gems 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redmine-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		cargo 		clang19-dev 		coreutils 		freetds-dev 		gcc 		make 		mariadb-dev 		musl-dev 		patch 		postgresql-dev 		yaml-dev 	; 		gosu redmine bundle config --local without 'development test'; 	puma="$(grep -E "^[[:space:]]*gem [:'\"]puma['\",[:space:]].*\$" Gemfile)"; 	{ echo; echo "$puma"; } | sed -re 's/^[[:space:]]+//' >> Gemfile; 	echo '# the following entries only exist to force `bundle install` to pre-install all database adapter dependencies -- they can be safely removed/ignored' > ./config/database.yml; 	for adapter in mysql2 postgresql sqlserver sqlite3; do 		echo "$adapter:" >> ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 	done; 	gosu redmine bundle install --jobs "$(nproc)"; 	rm ./config/database.yml; 	chmod -R ugo=rwX Gemfile.lock "$GEM_HOME"; 	rm -rf ~redmine/.bundle; 		rm /usr/local/bundle/gems/rbpdf-font-1.19.*/lib/fonts/ttf2ufm/ttf2ufm; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/bundle/gems 		| tr ',' '\n' 		| sort -u 		| awk ' 			$1 == "libc.so" { next } 			system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } 			{ print "so:" $1 } 		' 	)"; 	apk add --no-network --virtual .redmine-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
+# Thu, 25 Sep 2025 22:23:05 GMT
 VOLUME [/usr/src/redmine/files]
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 EXPOSE map[3000/tcp:{}]
-# Sun, 21 Sep 2025 14:39:20 GMT
+# Thu, 25 Sep 2025 22:23:05 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -1012,69 +1010,69 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Tue, 15 Jul 2025 19:00:59 GMT  
 		Size: 3.3 MB (3349090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03c4be3fb7c48ca84ee50be475d7d4a527212bb75b64469ee7eb6e6f0a98941f`  
-		Last Modified: Fri, 18 Jul 2025 03:36:52 GMT  
-		Size: 189.0 B  
+	-	`sha256:da813de376f5d6d96d6c3a3e5402faa60697eced9496ab2deaef64c5a3d46cee`  
+		Last Modified: Wed, 17 Sep 2025 10:07:43 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4af990bad08aaf772d4ffcb9f06a602319d08aef90e9237bbb8ee4e99946120f`  
-		Last Modified: Thu, 24 Jul 2025 21:22:31 GMT  
-		Size: 31.7 MB (31746901 bytes)  
+	-	`sha256:a9f619869feb22afab53ea8468beb3a081d5b688c56184af176d1799b9690b57`  
+		Last Modified: Wed, 17 Sep 2025 10:07:59 GMT  
+		Size: 34.9 MB (34900926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:590aa49d68bcc0b2b953b8aeb5192dc3617a732a168b59d588c9d1d2ecffdace`  
-		Last Modified: Thu, 24 Jul 2025 21:22:25 GMT  
-		Size: 138.0 B  
+	-	`sha256:971a5207a3077c3901cd2926098f7830942529dcb9e4ee334ff38b8c584c4c7d`  
+		Last Modified: Wed, 17 Sep 2025 10:07:43 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:598f300a0267f059e27772110b4c1780006c2a98b756acd2490d11a4b516f573`  
-		Last Modified: Tue, 23 Sep 2025 03:31:58 GMT  
-		Size: 912.0 B  
+	-	`sha256:f5d330b01158c42a3c5113c3ff960b5a5140fe9f26212d0678da77c15507743d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:11 GMT  
+		Size: 909.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb4aa886188321d90c756c0e3dc29d9d37afb9b9da7473dcf1d56f017f2d852f`  
-		Last Modified: Tue, 23 Sep 2025 03:32:03 GMT  
-		Size: 71.5 MB (71468597 bytes)  
+	-	`sha256:4adca41794b76f5898fad8b5602f19bb5798a316bab00434415163bc4dbff21d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:15 GMT  
+		Size: 71.5 MB (71468387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32926b748278afb198304ffd77e8fddb2b7113634ca3cc63184bf21e0b9cbfd3`  
-		Last Modified: Tue, 23 Sep 2025 03:31:58 GMT  
-		Size: 914.1 KB (914123 bytes)  
+	-	`sha256:e14c6388789b1f6c3bcb3f29e7e16fdd5054ec5995d5aa12135dc4347a8c1517`  
+		Last Modified: Tue, 30 Sep 2025 00:46:12 GMT  
+		Size: 915.2 KB (915178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b85713057c411c22171c0ee24ad29365549f6fa0b357a99b3318e707db54d8c`  
-		Last Modified: Tue, 23 Sep 2025 03:31:58 GMT  
-		Size: 135.0 B  
+	-	`sha256:d6222214915d759f0362080a1c1c57e6935f248e9ff6c61abb5cc463d5dc59f0`  
+		Last Modified: Tue, 30 Sep 2025 00:46:11 GMT  
+		Size: 134.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9725ca9096a3503c6c3a8532d621c501e10350b2b9bda9d69d64784b7a787d26`  
-		Last Modified: Tue, 23 Sep 2025 03:31:58 GMT  
-		Size: 125.0 B  
+	-	`sha256:855792868311990c748cba677b8c644cb0af30802ad91e202d45d5af23e244cd`  
+		Last Modified: Tue, 30 Sep 2025 00:46:11 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c585e23fd0504026bdd52a01630531a11592c04ce5c1f50204e5782659cb8e67`  
-		Last Modified: Tue, 23 Sep 2025 03:32:01 GMT  
-		Size: 4.1 MB (4069921 bytes)  
+	-	`sha256:7a6964e17299716edeae64c1b7b95064d8465337b29c8ad4e6d5e92e31a57e6d`  
+		Last Modified: Tue, 30 Sep 2025 00:46:12 GMT  
+		Size: 4.1 MB (4140853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1798a74ac0409f653834d4cbf9c9f3a8b81ee0a50f67bbc72ac04befbb7ba886`  
-		Last Modified: Tue, 23 Sep 2025 03:32:08 GMT  
-		Size: 77.1 MB (77128482 bytes)  
+	-	`sha256:2455e89fd99ae970fc51efd501b346e74bd40a46b62cab96d900baac2be480a5`  
+		Last Modified: Tue, 30 Sep 2025 20:34:50 GMT  
+		Size: 104.2 MB (104193478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c04e8db4b9dba81d6b490863656127250cea487080a7f84801ca8d8e17c4527`  
-		Last Modified: Tue, 23 Sep 2025 03:32:02 GMT  
+	-	`sha256:288d5d1e6a0c92d9cab3e13c07b112c8e7373d7e4b45aff1f79319c9f458335b`  
+		Last Modified: Tue, 30 Sep 2025 00:46:11 GMT  
 		Size: 2.4 KB (2351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redmine:6-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull redmine@sha256:6bdc8429cd068dbb3b9210a351a4be7576a09aace386fedc620f33b4bbd4b7ab
+$ docker pull redmine@sha256:8f7bbc841dee84cbce8d1cacfbffa93665b95119c0a397ebe4a1ea1d9c3245da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.8 KB (36839 bytes)**  
+-	Total Size: **36.8 KB (36778 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30a9b164d2f3af7e0b4f7b33c9334407e8b0208e9fd0b42a5a31df8ca42fee6c`
+-	Image ID: `sha256:c01985456e24dea87ca7d96ccd011f1a008334175a5f91c167cd4c878bdba4a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b9ab1543ab60b8941b72f1b552dc4eecf861c90cdd272fa6526c6469c75dfcf0`  
-		Last Modified: Tue, 23 Sep 2025 04:49:58 GMT  
-		Size: 36.8 KB (36839 bytes)  
+	-	`sha256:858bc82006940d84ba65b2e786e3aef218cb58069a644be4e99aaaef33f55f08`  
+		Last Modified: Tue, 30 Sep 2025 04:49:54 GMT  
+		Size: 36.8 KB (36778 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redmine:6-alpine3.21` - linux; s390x
