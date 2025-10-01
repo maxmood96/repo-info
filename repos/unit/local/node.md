@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5be1d286d63a2de86e44aa99d8dc3956482c33e537e8dccacb0e81ad5634c580`
+- Image ID: `sha256:81c42a0c22ce3b10ade9ce771243ae78e184b45499981fea0315f37e204b7796`
 - Created: `2025-03-03T18:37:38Z`
 - Virtual Size: ~ 1.20 Gb  
   (total size of all layers on-disk)
@@ -1986,23 +1986,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/72.1-3+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/72.1-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u4`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickcore-dev=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u3`
-- `libmagickwand-dev=8:6.9.11.60+dfsg-1.6+deb12u3`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickcore-dev=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u4`
+- `libmagickwand-dev=8:6.9.11.60+dfsg-1.6+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickcore-6.q16-6-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -2036,17 +2036,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u3
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u3.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u3.dsc 5106 SHA256:8ff521fb4a39209dc2cc94e470fa6baf63aaf14ca85ac5ad0ef529693192fa9d
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u3.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u3.debian.tar.xz 268876 SHA256:ffe99f85602cff118f2009648645c52ebc6e3df4e02f11554b9b5f42c696331a
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u4.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u4.dsc 5131 SHA256:520ab1f2e2310d89018595597b4e922291725aea14d5f835b042ba657a0a5190
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u4.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u4.debian.tar.xz 275684 SHA256:6d627be6acec16282946f038acb765e8dd0475fc681d17298e84dd0c9593d133
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.6-1`
 
@@ -3810,12 +3810,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxrender/1:0.9.10-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxrender/1:0.9.10-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.35-1+deb12u2`
+### `dpkg` source package: `libxslt=1.1.35-1+deb12u3`
 
 Binary Packages:
 
-- `libxslt1-dev:amd64=1.1.35-1+deb12u2`
-- `libxslt1.1:amd64=1.1.35-1+deb12u2`
+- `libxslt1-dev:amd64=1.1.35-1+deb12u3`
+- `libxslt1.1:amd64=1.1.35-1+deb12u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3824,17 +3824,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u2
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u2.dsc' libxslt_1.1.35-1+deb12u2.dsc 1842 SHA256:5190c8669cfbbb30f76aa3a0db99cf66d7d452333ee975153bea863ade5e9a32
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u2.debian.tar.xz' libxslt_1.1.35-1+deb12u2.debian.tar.xz 29784 SHA256:9bb447447f396c8faf3bbf39cb6848d7af04de09594670c910f1407ab5280334
+$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.dsc' libxslt_1.1.35-1+deb12u3.dsc 2187 SHA256:f60527764dbce95161371132dcd6acc910661aa56b1f5cb4870b86c372f12391
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u3.debian.tar.xz' libxslt_1.1.35-1+deb12u3.debian.tar.xz 29864 SHA256:837cfd5b4d57557523c748fec1bd98554f65a369a43bded82e42a00ee095abbe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.1`
 
@@ -3920,11 +3920,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.148-1`
+### `dpkg` source package: `linux=6.1.153-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.148-1`
+- `linux-libc-dev:amd64=6.1.153-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3939,17 +3939,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.148-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.148-1.dsc' linux_6.1.148-1.dsc 290931 SHA256:e07ffbf994ed914c1cb121575aa4fa72d1ea1ace46a7bbca8a051e334b399c8a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.148.orig.tar.xz' linux_6.1.148.orig.tar.xz 137839088 SHA256:8c9ebc48cf0b303b2027edea6057c133d29f6a996162b2f52f1bfb15a587f7ff
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.148-1.debian.tar.xz' linux_6.1.148-1.debian.tar.xz 1772788 SHA256:03559b2fb3cbb579485cfe0640408a917397fab265091bec672e91ce665b1680
+$ apt-get source -qq --print-uris linux=6.1.153-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153-1.dsc' linux_6.1.153-1.dsc 290931 SHA256:c224f1fd69212b4c049cbc5080db22b168f6ef166de4ae1ca2665f6fe05049e2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153.orig.tar.xz' linux_6.1.153.orig.tar.xz 137857256 SHA256:3cab313f1b0e0ed257888c9057334bc2588f9a0a0f59e641e28b39b07518387f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.153-1.debian.tar.xz' linux_6.1.153-1.debian.tar.xz 1780628 SHA256:10fed58690490c38949a3018d8da39a70d13eb0e042f00ac4d5f21afb689e808
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.148-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.148-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.148-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.153-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.153-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.153-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
