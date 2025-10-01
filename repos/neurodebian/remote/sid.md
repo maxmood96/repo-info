@@ -1,7 +1,7 @@
 ## `neurodebian:sid`
 
 ```console
-$ docker pull neurodebian@sha256:28ed00c3b99a93843498bcdf4dbb2e106a98bd6f09cb16cb0f429c7287b5b92d
+$ docker pull neurodebian@sha256:6ec025896934b7893111261284996bfafbadd85850a9c9ce64927486850b6997
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,18 +16,18 @@ $ docker pull neurodebian@sha256:28ed00c3b99a93843498bcdf4dbb2e106a98bd6f09cb16c
 ### `neurodebian:sid` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:3a7c2310d559960aaf251bc55abe9a2ab7db5737be3afbf4fe917255a3297e94
+$ docker pull neurodebian@sha256:d352e1bdaf20b107fa873d64a014ec03a55aef6211f5e056a6cd7f3ef5a88915
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.2 MB (60150107 bytes)**  
+-	Total Size: **60.0 MB (60018849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:237a847b33b05b4e89235d3b6749d4840276b001e4738669e669a1a496565414`
+-	Image ID: `sha256:71e0de86f6c90cc7f5b47e859e7f0734d0c0be75b51cc7cdd2e6b8ecce9e6673`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Sep 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'sid' '@1757289600'
+# Tue, 23 Sep 2025 14:32:09 GMT
+RUN # debian.sh --arch 'amd64' out/ 'sid' '@1759104000'
 # Tue, 23 Sep 2025 14:32:09 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 23 Sep 2025 14:32:09 GMT
@@ -39,48 +39,48 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 ```
 
 -	Layers:
-	-	`sha256:8d64c6c7c21822ac171c4c396d70161707401d6d50d133075d661956f08dc756`  
-		Last Modified: Mon, 08 Sep 2025 21:13:08 GMT  
-		Size: 49.7 MB (49657990 bytes)  
+	-	`sha256:edd38bdf09a62ab44ffab2a10058156dc336ea087cf3a73258758d9bc541ff85`  
+		Last Modified: Mon, 29 Sep 2025 23:35:13 GMT  
+		Size: 48.4 MB (48376965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d854924ae9b4b1288c9dfda064ea896d3981b318987c9c6ffe8efb82e63325d9`  
-		Last Modified: Tue, 23 Sep 2025 19:50:14 GMT  
-		Size: 10.4 MB (10399375 bytes)  
+	-	`sha256:1964d781cff69dcbb8224608d47e77cbe0ca18c19fda7c500947ce54b349e439`  
+		Last Modified: Tue, 30 Sep 2025 00:16:32 GMT  
+		Size: 11.5 MB (11549277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e96eca8e251a3599c0646fff211e1ad902995d9c8f4cdcb9aea901bbe51fc8`  
-		Last Modified: Tue, 23 Sep 2025 19:50:09 GMT  
-		Size: 2.6 KB (2634 bytes)  
+	-	`sha256:8083c7a164d9c55e20112d87245a4ac7874df659703dae0592af0ea6dc17eec3`  
+		Last Modified: Tue, 30 Sep 2025 00:16:30 GMT  
+		Size: 2.6 KB (2632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9b127e8318640efb0fdf4c7d5c155014b89218f931be0840c2468e892e0fe82`  
-		Last Modified: Tue, 23 Sep 2025 19:50:11 GMT  
-		Size: 269.0 B  
+	-	`sha256:f64ec4cb897b141395739b755c043b36a97990c58c741b36add1af451669ac27`  
+		Last Modified: Tue, 30 Sep 2025 00:16:30 GMT  
+		Size: 267.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f94e92357646159f3de34f7a59b35af379809eb95e8ca6cdebfc80f6bf415b5`  
-		Last Modified: Tue, 23 Sep 2025 19:50:11 GMT  
-		Size: 89.8 KB (89839 bytes)  
+	-	`sha256:08ce650969fa61f99b87dc4e0c2355ec5b19b5ca0c605b89d71edb13e8210bdf`  
+		Last Modified: Tue, 30 Sep 2025 00:16:30 GMT  
+		Size: 89.7 KB (89708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:sid` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:db93141dbaaab047d2c5961e0f3a40a490a3bc4c02858e362684aac66d8f11cb
+$ docker pull neurodebian@sha256:e7f9cddb4bcb9e61947b1cbfe3d7283a24493ed40d524daf2d52203c8bcf6a1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3623887 bytes)**  
+-	Total Size: **3.6 MB (3589132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40ec5dfabfdd39f0aaf814e90273b851f03175e48b64cc6bdc82acd7e035dd64`
+-	Image ID: `sha256:ee385a97eca1722b360e37f2ea21db83a4ca65ddeeda1726838355898e459199`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b3b0384cfc3d61d143a214949d2e595f859d287f885e4e4d78e634cc601b3ca2`  
-		Last Modified: Tue, 23 Sep 2025 22:07:41 GMT  
-		Size: 3.6 MB (3609940 bytes)  
+	-	`sha256:3450fd91ed423943f5f1ccb0586891b2edc69f23515ac0c6df2af5f4ccf8ad17`  
+		Last Modified: Tue, 30 Sep 2025 22:08:27 GMT  
+		Size: 3.6 MB (3575185 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15b8bd663afd20bb3f9e9dd8d1902aa8ea08259a6ff7149fc262d1757f040bfb`  
-		Last Modified: Tue, 23 Sep 2025 22:07:42 GMT  
+	-	`sha256:c7c306a879bd2d2a90c91968619437991d21396041c3e0a911e5cf413f8d409f`  
+		Last Modified: Tue, 30 Sep 2025 22:08:28 GMT  
 		Size: 13.9 KB (13947 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -158,18 +158,18 @@ $ docker pull neurodebian@sha256:5f6b3b64165dd6cf8115298360e079d70eadbd2cb05021d
 ### `neurodebian:sid` - linux; 386
 
 ```console
-$ docker pull neurodebian@sha256:087bfe5c7fe5a858c0dad888bdae06c7aa709dd89a70dfd28b9efb1eecb2a247
+$ docker pull neurodebian@sha256:0622b7c8607a17ed3f062dcbbe2e5ce444ad89bd2e586f4142e8de5a0190ac11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.8 MB (61758851 bytes)**  
+-	Total Size: **61.5 MB (61496239 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c9911b404ee218bf7821aafaf7618a81634351f6f5577a865753205cecbce39`
+-	Image ID: `sha256:1a7e383cde8bac028bea9bf478d11f6e67bf5fd643663cc161c83f71ffcd1d77`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 Sep 2025 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'sid' '@1757289600'
+# Tue, 23 Sep 2025 14:32:09 GMT
+RUN # debian.sh --arch 'i386' out/ 'sid' '@1759104000'
 # Tue, 23 Sep 2025 14:32:09 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 23 Sep 2025 14:32:09 GMT
@@ -181,47 +181,47 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 ```
 
 -	Layers:
-	-	`sha256:eb039ce3bcf3fbed73729096e510ae45e98c7db73d412a09aa57aaad6f2f6267`  
-		Last Modified: Mon, 08 Sep 2025 21:12:53 GMT  
-		Size: 51.1 MB (51113613 bytes)  
+	-	`sha256:d00269cb73b9e4cfebd155b431da849e0072689663a0a658044389a50f9d989d`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.7 MB (49686171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fc41e7d47140b0d1fc4152bc7af8595e60e5b75abcc8d92b17c1e4bccdc2777`  
-		Last Modified: Tue, 23 Sep 2025 17:35:59 GMT  
-		Size: 10.6 MB (10552105 bytes)  
+	-	`sha256:1d6f6480fd49647a130c5672473eb706e570d0a7e2ffc738010f418159bb8f42`  
+		Last Modified: Tue, 30 Sep 2025 00:23:15 GMT  
+		Size: 11.7 MB (11717042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edeabcf2a16d8446d9f601b7a5f0e0dcc7eec713032a5af69f0e62133b4d0a5e`  
-		Last Modified: Tue, 23 Sep 2025 17:35:57 GMT  
-		Size: 2.6 KB (2634 bytes)  
+	-	`sha256:00bb6b77036d5b364bd2bb6f5016c7e6e6e1f51fd3acd6413ec0fffca6c7be09`  
+		Last Modified: Tue, 30 Sep 2025 00:23:15 GMT  
+		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62a81e3c095adac2afeafbb59a941a25173e7979c43c100a882514bea7877cf2`  
-		Last Modified: Tue, 23 Sep 2025 17:36:00 GMT  
-		Size: 269.0 B  
+	-	`sha256:30ead752bbeef4f8b6544c7e6da0e9c452da6e55d7f7bf44255bc5705f3e41be`  
+		Last Modified: Tue, 30 Sep 2025 00:23:15 GMT  
+		Size: 268.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2a5f5e7ce5e4c5bd3868fbeb258a1b9acc9bf9658887f081960ec7b90b4c574`  
-		Last Modified: Tue, 23 Sep 2025 17:35:57 GMT  
-		Size: 90.2 KB (90230 bytes)  
+	-	`sha256:bbee98413e70c0108e75166cd1eab704dbccca336d46231839dd53c9b6e22b1d`  
+		Last Modified: Tue, 30 Sep 2025 00:23:15 GMT  
+		Size: 90.1 KB (90122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:sid` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:2b4e860b4c2cf391bdc9ff71e490d986221996da51ec3a24f0cfd46a85c4480c
+$ docker pull neurodebian@sha256:83a99d285742e7df8821f912e07a2fdc81967eff6e1c18910effd26a40e17be5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3621820 bytes)**  
+-	Total Size: **3.6 MB (3587067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a62dabffd47060461fc93e44830dedddbd7576c04f5afea31f63b493c1da5551`
+-	Image ID: `sha256:62902d1e1f48582360c7d309fa12760e834aea5cc58e13c631bcbb277337dbec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9896fe7c4d9ef11f9576f83857d7f2ba9fdadb7b07a9a04d20d5e2e494dd447f`  
-		Last Modified: Tue, 23 Sep 2025 19:08:00 GMT  
-		Size: 3.6 MB (3607901 bytes)  
+	-	`sha256:cfa6aeb85429432a36111a8460eb077d4be2c8e303826ac96fdfe3489298992e`  
+		Last Modified: Tue, 30 Sep 2025 16:08:22 GMT  
+		Size: 3.6 MB (3573148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09cc604acd1809bed7d56e0d91d55d2eec5d7d859506811fc30bc2c91a6f86fc`  
-		Last Modified: Tue, 23 Sep 2025 19:08:01 GMT  
+	-	`sha256:fe777d0a54bde48dc55901a7c0d9b6fc6677cdd0df0f45a4aba0d526aa5e4078`  
+		Last Modified: Tue, 30 Sep 2025 16:08:23 GMT  
 		Size: 13.9 KB (13919 bytes)  
 		MIME: application/vnd.in-toto+json
