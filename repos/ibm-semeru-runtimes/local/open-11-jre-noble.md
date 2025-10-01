@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4d0135936bd79cc7027aaee0226f5bd733e7b2845aa2e6f101739e909d3a03e`
-- Created: `2025-08-13T16:09:03Z`
-- Virtual Size: ~ 292.59 Mb  
+- Image ID: `sha256:7b5966c4b94c56db406b02a00507e6db949d86ce6f23e4115182889d9af99fe1`
+- Created: `2025-09-29T16:59:55Z`
+- Virtual Size: ~ 308.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -693,13 +693,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.5`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.5`
-- `libc6:amd64=2.39-0ubuntu8.5`
-- `locales=2.39-0ubuntu8.5`
+- `libc-bin=2.39-0ubuntu8.6`
+- `libc6:amd64=2.39-0ubuntu8.6`
+- `locales=2.39-0ubuntu8.6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -707,9 +707,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.dsc' glibc_2.39-0ubuntu8.6.dsc 9387 SHA512:6467b02c2dcf5a07856a3526ece393fdcd0f7c6aa9d22f20fd42a45a02ad050f995dabd7068f1ddd9aee6ab5ae7810590e00173ecf2ded40231c880d9bf28fe8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.debian.tar.xz' glibc_2.39-0ubuntu8.6.debian.tar.xz 467000 SHA512:5670e98edb2396b6f9fcf021c1f3da5fbb95ba7330e309f9039a5d0a3f148f4298454de70c565fdf9dfeb97edb4e9de6eeb65bd8e19d054c6346642867172d03
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -1582,14 +1588,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.dsc' openssl_3.0.13-0ubuntu3.5.dsc 2512 SHA512:2071df5d403c0b39ae500ee2fe1118313df10cc187d533813f634c96d2653cfde840318238b39525bbb47a52db7abf7fc2dd9b655a486a4c79a6123638f35f9e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.debian.tar.xz' openssl_3.0.13-0ubuntu3.5.debian.tar.xz 169252 SHA512:29b18d2b824b85ac7fe31ad93ef0ac7320701806d59497c65cf615e9495025007c6052c0878a8cc3bf08860ace1e04c33f56e88c7026bd362eb32142c963a1a0
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 

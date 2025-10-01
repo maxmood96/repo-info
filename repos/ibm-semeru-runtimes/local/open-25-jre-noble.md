@@ -1,19 +1,19 @@
-# `ibm-semeru-runtimes:open-jdk-24.0.2_12-jdk-noble`
+# `ibm-semeru-runtimes:open-jdk-25.0.0_36-jre-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39161629b60c2097556ebeb76f61870b0b9e907246dc08fafcafa5d9f8b45790`
-- Created: `2025-08-13T16:09:03Z`
-- Virtual Size: ~ 542.76 Mb  
+- Image ID: `sha256:ed4dee98783ca972511c4c3bb47cb0776c7b6eea460857118eb47c4eb00e1ab2`
+- Created: `2025-09-29T16:59:55Z`
+- Virtual Size: ~ 335.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/bash"]`
+- Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-24.0.2+12_openj9-0.54.0`
+  - `JAVA_VERSION=jdk-25+36_openj9-0.55.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -693,13 +693,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.debian.tar.xz' gcc-14_14.2.0-4ubuntu2~24.04.debian.tar.xz 1950240 SHA512:2b1894ebcb104b85da3c614e0a6c2e24b1f6c1f548645996d2cb0d274301284f1f4db0809c8355997b05fe64b76a73ee1b9499c7b1c229547bad79fee1954d59
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.5`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.6`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.5`
-- `libc6:amd64=2.39-0ubuntu8.5`
-- `locales=2.39-0ubuntu8.5`
+- `libc-bin=2.39-0ubuntu8.6`
+- `libc6:amd64=2.39-0ubuntu8.6`
+- `locales=2.39-0ubuntu8.6`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -707,9 +707,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.dsc' glibc_2.39-0ubuntu8.6.dsc 9387 SHA512:6467b02c2dcf5a07856a3526ece393fdcd0f7c6aa9d22f20fd42a45a02ad050f995dabd7068f1ddd9aee6ab5ae7810590e00173ecf2ded40231c880d9bf28fe8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.6.debian.tar.xz' glibc_2.39-0ubuntu8.6.debian.tar.xz 467000 SHA512:5670e98edb2396b6f9fcf021c1f3da5fbb95ba7330e309f9039a5d0a3f148f4298454de70c565fdf9dfeb97edb4e9de6eeb65bd8e19d054c6346642867172d03
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -1568,12 +1574,12 @@ $ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.6`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.5`
-- `openssl=3.0.13-0ubuntu3.5`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.6`
+- `openssl=3.0.13-0ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1582,9 +1588,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.dsc' openssl_3.0.13-0ubuntu3.6.dsc 2512 SHA512:e57effde33e3e978184e1c2d5167d8f8c1c881aae59f81dfbedeca0004488434c3dff227bec9ca6e3f701c01a9c5a7a3c8ffb3fef3533d9dee0f46b64d03e535
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.6.debian.tar.xz' openssl_3.0.13-0ubuntu3.6.debian.tar.xz 169500 SHA512:bc33f7a4d5c577cc622062b2337a2b897bc06dd6592f6e636832529ff8ebde4f5fcb5d35589d041ec498386d7ec63df2b76f37aaab0b0cddf35a4d53c8a5cc3f
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
