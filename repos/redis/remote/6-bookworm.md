@@ -1,7 +1,7 @@
 ## `redis:6-bookworm`
 
 ```console
-$ docker pull redis@sha256:69e0ac6336226fb82b66aa8731b1c7027c0c3f8a864ff5fc420bbdb86463201c
+$ docker pull redis@sha256:15d7379ba6fe26d9680139f341e98d713637cc5b3c443e3a4ee5bc1cb88c00ac
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -132,19 +132,19 @@ $ docker pull redis@sha256:140684f4d3678a405a1a0d2692529f74a0e97de75df203a622d96
 ### `redis:6-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:955e724cec724d6baf5e67d5ec3d5cc10d0f43c4dbf34a58b79afc47e11a52ca
+$ docker pull redis@sha256:5ca65493f95656bc036a4bad0b224540fb338b953e1dcf2eb9427256091334b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37247368 bytes)**  
+-	Total Size: **37.2 MB (37247598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62c220f4e167865c5e0e6ae8bdfdc8d0f4d277da9cc218d48e15326695c29615`
+-	Image ID: `sha256:7bec9095626b5602c59d9ac1ca1c3531cda369efb75541aefdedf368f2c488b8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Sun, 06 Jul 2025 16:51:58 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1759104000'
 # Sun, 06 Jul 2025 16:51:58 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Sun, 06 Jul 2025 16:51:58 GMT
@@ -178,60 +178,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:952ba1cf349522edb7270da2ee606695f7a7b47b332674ee825bd31cd9ffac57`  
-		Last Modified: Mon, 08 Sep 2025 21:17:19 GMT  
-		Size: 25.8 MB (25757446 bytes)  
+	-	`sha256:e1e8cf6a98b379fbf689c13a9736cd1289212f7d1817f7bef04f737d92c4359f`  
+		Last Modified: Mon, 29 Sep 2025 23:34:08 GMT  
+		Size: 25.8 MB (25757437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bca38d4bd5eb78f270b146a037d3388ee02e89633529f5011fa1e54ad78640c`  
-		Last Modified: Mon, 08 Sep 2025 21:59:39 GMT  
-		Size: 1.1 KB (1100 bytes)  
+	-	`sha256:ece08109c9a92da6daef5d2b34d2dcd9a94e64d061292c80d4d1d7a83414571e`  
+		Last Modified: Tue, 30 Sep 2025 01:00:37 GMT  
+		Size: 1.1 KB (1099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc90ddee6169b7ba45b9201795ba02d9ce30b49629ab23cb51d2b05a72d69a2b`  
-		Last Modified: Mon, 08 Sep 2025 21:59:44 GMT  
-		Size: 870.0 B  
+	-	`sha256:24675291bbf50a11157ba8ec53f0dc3e79b549dbe3905c2768169e126999d487`  
+		Last Modified: Tue, 30 Sep 2025 01:00:37 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2f4742e2743ded62ef659cb5326a15d5c594d543ff712058b75c037963c3984`  
-		Last Modified: Mon, 08 Sep 2025 21:59:47 GMT  
-		Size: 1.4 MB (1414421 bytes)  
+	-	`sha256:038ebd02c80849a12389121cd5c60e0dc3af76754666c7fd796981125a5705f6`  
+		Last Modified: Tue, 30 Sep 2025 01:00:37 GMT  
+		Size: 1.4 MB (1414468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0be99a9b8664c076090b718924710b9e0d0a714fe0bb81475034346f756dca4a`  
-		Last Modified: Mon, 08 Sep 2025 22:48:27 GMT  
-		Size: 10.1 MB (10072832 bytes)  
+	-	`sha256:9f3014a33138faa26947e383e13a3f83a7ed5ffe59889530d510680ebd33802d`  
+		Last Modified: Tue, 30 Sep 2025 01:00:38 GMT  
+		Size: 10.1 MB (10073021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ec7dd8434e8f73837ef50a3dfbea758cca5ddb10336986e4a209efb73707ba3`  
-		Last Modified: Mon, 08 Sep 2025 21:59:52 GMT  
+	-	`sha256:81de5eed0fef2fc84ae3ea02a04fcae16c097f512c954f1b0d3661e77056d9e6`  
+		Last Modified: Tue, 30 Sep 2025 01:00:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46421e7387242c97c850ffc21260ea0066a06aae7a46ac03305cac62acfec5f4`  
-		Last Modified: Mon, 08 Sep 2025 21:59:56 GMT  
-		Size: 570.0 B  
+	-	`sha256:450f55ec09007cc110c2cba5fa0a8b9ac310a92b3f9714baf797bd558daab54c`  
+		Last Modified: Tue, 30 Sep 2025 01:00:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:be22a92243ad81787f24314cc66681f45399568ab5399edeb0d8d4cc2c16e8bc
+$ docker pull redis@sha256:acaf7d24af34024f6481db36722818d2c4e875255083106b2d53a3c74e5593dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.4 MB (2416338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19c571e117c862fcfb1c640e953999a4d84d3ef7022923ef10f1bbece5c34844`
+-	Image ID: `sha256:9d07a7a78e9199178650a58df8267fbb81650c0da52ce2633d8a2f78ba3745fc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0041c32b1372148b72f37ce55f81d2a2333b980d0950778ffe00a13d7dc4d4dc`  
-		Last Modified: Tue, 09 Sep 2025 01:04:25 GMT  
+	-	`sha256:9131927075f1cce9da8bd8d1074d2185d4579c4face606a3c850bc38607a8103`  
+		Last Modified: Tue, 30 Sep 2025 07:04:22 GMT  
 		Size: 2.4 MB (2380424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a74ffb3917e023f64d35b685f340d5d59a5b242ff8c414e1d7ff8d3488b41c68`  
-		Last Modified: Tue, 09 Sep 2025 01:04:26 GMT  
+	-	`sha256:35b438563294ddcac899828bdb3b54e71106422dd5d36fc1f2d1feabfde9698e`  
+		Last Modified: Tue, 30 Sep 2025 07:04:23 GMT  
 		Size: 35.9 KB (35914 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -556,19 +556,19 @@ $ docker pull redis@sha256:b33cb5df4c512ce3e760da48a53fa8060e2dcf588d260e556f695
 ### `redis:6-bookworm` - linux; mips64le
 
 ```console
-$ docker pull redis@sha256:820b1e9dfb6a55d8e127cd5a465e7c27e7ad08dd179aa7865a25ea376083e658
+$ docker pull redis@sha256:d8b85f495791b6ca7a8dd6d713d6e6a852fa426a56956ae05df25686d00b2c57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.3 MB (40262625 bytes)**  
+-	Total Size: **40.3 MB (40262642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f17bb6b4829768fe521c937ed90dd6040c61d7462e8a3a97a0229f17e7cb7c38`
+-	Image ID: `sha256:cb9f1d4ccf4493021f716469b83163082ff56c307b4ced301334e8bf3a5c288c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Sun, 06 Jul 2025 16:51:58 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1759104000'
 # Sun, 06 Jul 2025 16:51:58 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Sun, 06 Jul 2025 16:51:58 GMT
@@ -602,56 +602,56 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:e312b85a00d79bdd7bd2503e855c13252d47980761b762b04df3d1399e2e3efa`  
-		Last Modified: Mon, 08 Sep 2025 21:17:36 GMT  
-		Size: 28.5 MB (28513643 bytes)  
+	-	`sha256:73d0a1261a90ced7c792643cb457a2c9f7bbeca1bcb84939b4029c5a1f01f26c`  
+		Last Modified: Mon, 29 Sep 2025 23:34:06 GMT  
+		Size: 28.5 MB (28513676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82d0f59871ead32d3b08eaab20936354fba295eef6095d4cad3eb85bba1da811`  
-		Last Modified: Tue, 09 Sep 2025 04:01:00 GMT  
-		Size: 1.1 KB (1107 bytes)  
+	-	`sha256:299a19feafca17c760a41bd8c0a6def5d305ec6c2bd7db3db110973a223ea103`  
+		Last Modified: Tue, 30 Sep 2025 13:33:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bf199c63641024745a8ddc4438bdcb52af4bccb3eb28424bc18378b515e1228`  
-		Last Modified: Tue, 09 Sep 2025 04:01:03 GMT  
-		Size: 876.0 B  
+	-	`sha256:c86c49c53b836615ff43d0954dfccb2d1511e63910baaa76f6f8b400de8faa4a`  
+		Last Modified: Tue, 30 Sep 2025 13:33:19 GMT  
+		Size: 874.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a6f6577429cad053478c56fef94f9bba7df653746c6401b717ae2f1488790d3`  
-		Last Modified: Tue, 09 Sep 2025 04:01:08 GMT  
-		Size: 1.3 MB (1325530 bytes)  
+	-	`sha256:6d565c86150dff7363e46160d6364294ad494c9e1a0caa14a8c4d29930df19ce`  
+		Last Modified: Tue, 30 Sep 2025 13:47:11 GMT  
+		Size: 1.3 MB (1325516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81e45e6d6d99f75bc5d9f3467bbe6928c9f59aeecd2c70b27ddb609c3fdb67ee`  
-		Last Modified: Tue, 09 Sep 2025 07:04:39 GMT  
-		Size: 10.4 MB (10420770 bytes)  
+	-	`sha256:2ed7e5c74ee0f01841f2eb42975dbbc7be5934549f9acd5641f58054d16a6ac9`  
+		Last Modified: Tue, 30 Sep 2025 13:58:15 GMT  
+		Size: 10.4 MB (10420774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c41bcbc972d9d43de9145ba0978b6e6a439b82831e0bc754d68937742610418`  
-		Last Modified: Tue, 09 Sep 2025 04:39:22 GMT  
+	-	`sha256:3a9091d3ea001801bee5e0ae22522332ee9fcc01e1d958843ac2bc1937427976`  
+		Last Modified: Tue, 30 Sep 2025 13:58:14 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dddc176722457b65418063d67d866a7eb6a74a518f331a787cd8d14f0e28358a`  
-		Last Modified: Tue, 09 Sep 2025 04:39:23 GMT  
-		Size: 571.0 B  
+	-	`sha256:08f4aaa0c146383842c477e4a3984c651e91b157bfd8640e1f3060b265619601`  
+		Last Modified: Tue, 30 Sep 2025 13:58:14 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:19602ad87fd76f4997085d1a0821bf3f2b8636020a04af752e2feada24d73fd7
+$ docker pull redis@sha256:d25e39a2e723bde46432115e2c439d7c8a6d021efbb68a1ab313a370151262b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **35.6 KB (35647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00bb37062046b18769559eaefbd8d4edfe2e35b007ceb95dcf0ae9e7ede0f990`
+-	Image ID: `sha256:66406a18ebefa3257d33bbc8a07081c56dc84061592af2dfe9278f8aabe9602e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:debb68d0096b397d33113b0e871ac487ef7317cfab1cf8b993218354607b3a02`  
-		Last Modified: Tue, 09 Sep 2025 07:04:31 GMT  
+	-	`sha256:33315aaec5806157dc8b880c58825a5a32299c519ad97a6396470cba3028221f`  
+		Last Modified: Tue, 30 Sep 2025 19:04:42 GMT  
 		Size: 35.6 KB (35647 bytes)  
 		MIME: application/vnd.in-toto+json
 
