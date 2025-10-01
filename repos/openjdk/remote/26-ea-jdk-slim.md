@@ -1,7 +1,7 @@
 ## `openjdk:26-ea-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:f88961776716436962c965eaad18d071bc009a2a5379ca61f4d4e07c4b24f49c
+$ docker pull openjdk@sha256:5be22161570041c14b93cbb54a7012832d6b20963125d097cc1b55d0f2beee48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,18 +83,18 @@ $ docker pull openjdk@sha256:071f9a6482e80d8d3ff3e482bc6ccd2838f65e1634f8302a7ff
 ### `openjdk:26-ea-jdk-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:dd9be3a2b49b8634dc49715a9b16e54469d97b9f91c835f943cf2376047d22f7
+$ docker pull openjdk@sha256:3e875ff086ae24368d31d8e46650883e69fc2978e4c18f2f86755e4f49eb37d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.1 MB (256105290 bytes)**  
+-	Total Size: **256.1 MB (256109885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a901787919a120012b6b11226644963219e95c176955a61a89f72fe611ec9aa9`
+-	Image ID: `sha256:24191b0844c9947ac6c5ec39f5cba44e259cd611e92590e2cc36cd30bcddfe81`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 08 Sep 2025 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
+# Fri, 26 Sep 2025 18:48:12 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
 # Fri, 26 Sep 2025 18:48:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 26 Sep 2025 18:48:12 GMT
@@ -112,39 +112,39 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:b2feff975e6dd2ebaf182772fb9ee26274648387b061e821e0bb5026735dd094`  
-		Last Modified: Mon, 08 Sep 2025 21:13:54 GMT  
-		Size: 30.1 MB (30136631 bytes)  
+	-	`sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412`  
+		Last Modified: Mon, 29 Sep 2025 23:35:13 GMT  
+		Size: 30.1 MB (30140842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a0176f232741aecd90b5649b17b6e1dbda3057fd71101673cad47de2b94b263`  
-		Last Modified: Fri, 26 Sep 2025 22:14:30 GMT  
-		Size: 2.3 MB (2314270 bytes)  
+	-	`sha256:531a7d82847bcb14231685b1228b2ea135fabe4dff05a00b4ccc2e325ad3fad4`  
+		Last Modified: Tue, 30 Sep 2025 00:21:21 GMT  
+		Size: 2.3 MB (2314258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fcddee7b41fb6b9886752c84a48ea1972bc7645708e17f2d9eb4073c98dd9b7`  
-		Last Modified: Sat, 27 Sep 2025 00:29:18 GMT  
-		Size: 223.7 MB (223654389 bytes)  
+	-	`sha256:659e03de74516d5e4c8b7dbfc418738af6cad0b692d5316746c418b993cee2eb`  
+		Last Modified: Tue, 30 Sep 2025 13:23:53 GMT  
+		Size: 223.7 MB (223654785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:26-ea-jdk-slim` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:4751d15c2d78caf98189cac6f4c08c13570c5eff337540189e82cb791f4170a0
+$ docker pull openjdk@sha256:236185a3a3313deacb9ff54a463687e1a6941c1866439c7a0a4af22e226327c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301863 bytes)**  
+-	Total Size: **2.3 MB (2301865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88cb857974497be6d7f49a29a1e0feef32d7f481b8498ad10fdd1a57055ab204`
+-	Image ID: `sha256:151ffa883fba39a354278e941434205016d3b20b3a4ade64e0b27313f5516cfc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a9dccd6e33c8ed6e07d8d49edfa3dbf1bbf1c064efee7d16a2bc6effe9594ef5`  
-		Last Modified: Sat, 27 Sep 2025 00:24:19 GMT  
+	-	`sha256:4a8c03bf7c38092c338ba6ed3a34f35193752dc6db345af1afefbfaf4c29d898`  
+		Last Modified: Tue, 30 Sep 2025 12:23:35 GMT  
 		Size: 2.3 MB (2282238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ca16267122713cde7e2bc776d2d4883ebe71d0b05317c24aff8427ca44eafa5`  
-		Last Modified: Sat, 27 Sep 2025 00:24:20 GMT  
-		Size: 19.6 KB (19625 bytes)  
+	-	`sha256:5ec01f44df90596c31c7f50a72b7ae623ea929eb6b377f3cd80a7eb38b9956cc`  
+		Last Modified: Tue, 30 Sep 2025 12:23:35 GMT  
+		Size: 19.6 KB (19627 bytes)  
 		MIME: application/vnd.in-toto+json
