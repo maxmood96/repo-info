@@ -1,7 +1,7 @@
 ## `buildpack-deps:testing-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:e12938d8421cb70e1933ecaee8d29de1ae32a31c2d08e8600d4d4bda8bb22da9
+$ docker pull buildpack-deps@sha256:b915bc4e1ae762b46b7a68696469601fefe9a8d03b4ae1d4e55808433c58fb5f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -142,18 +142,18 @@ $ docker pull buildpack-deps@sha256:416907b2cfff7c68d21d3f11eda3470eaac4f79e9901
 ### `buildpack-deps:testing-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:97e52ea478ad9828f8b1410a1270c0f4cf57f91b3cea4040499729d92f372f4e
+$ docker pull buildpack-deps@sha256:98f3971a030ec04c585db789c9bf941fed13ebce02cbf669ba34489d194048d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.0 MB (142969742 bytes)**  
+-	Total Size: **143.3 MB (143268987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eea793885a27128a15d12d85c6d7ba293e375e06b785a7c93bb4d0bf9f5023ea`
+-	Image ID: `sha256:8d9a0082a2951e85a77c3b2310b9d8e4e09f3df22b7ae7c058d3365d4bf4fd9f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Tue, 12 Aug 2025 22:12:51 GMT
-RUN # debian.sh --arch 'arm64' out/ 'forky' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'forky' '@1759104000'
 # Tue, 12 Aug 2025 22:12:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Tue, 12 Aug 2025 22:12:51 GMT
@@ -161,40 +161,40 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:43c9f83b4c0cbba0c49dce5bbb999963ed78f9198001feb88e7464916cedc070`  
-		Last Modified: Mon, 08 Sep 2025 21:14:38 GMT  
-		Size: 49.9 MB (49863496 bytes)  
+	-	`sha256:ed417fd581c20c18b8c6cfc58498c59128dd74498d5d6a89f9217103a4fbf9d4`  
+		Last Modified: Mon, 29 Sep 2025 23:35:24 GMT  
+		Size: 49.9 MB (49879877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:001ec7eb396047bfcd475c3064af0e813d0c880bc68b69e6192c860aa1172659`  
-		Last Modified: Tue, 09 Sep 2025 01:25:47 GMT  
-		Size: 25.1 MB (25079091 bytes)  
+	-	`sha256:7009e42d3323422f2397c63e68313d31e460dfa892d093803cd931e5199733e2`  
+		Last Modified: Tue, 30 Sep 2025 01:18:56 GMT  
+		Size: 25.2 MB (25209361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9af77d2a7de68721cd0ac42531f98bd04847eafbed443a4058e3fef3d9fe456`  
-		Last Modified: Tue, 09 Sep 2025 02:13:14 GMT  
-		Size: 68.0 MB (68027155 bytes)  
+	-	`sha256:dde70c2343e98e974396577ed833e905203bb8d9de40b076f03dd816afd1872c`  
+		Last Modified: Tue, 30 Sep 2025 02:14:07 GMT  
+		Size: 68.2 MB (68179749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:testing-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:4cbbc7c3cec00170a754235bdb480fb05c519743e1b59de16d713422047ad6e5
+$ docker pull buildpack-deps@sha256:4fe3f109daf1ead65a8b459a6bdbff6b26ad31fd8a432d3c01a8da3ccab35033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 MB (7786060 bytes)**  
+-	Total Size: **7.8 MB (7780535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35f81d131cb2c808cd20f39066f34c75196f53f68b6a139766587ba8bfbdb093`
+-	Image ID: `sha256:2acf1af5bf3a0d26c11ec627b2447632eec07253b791ec381bb363b12f792bcb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:100546f03752652ad0ff19c35dc7977749d7b1df2b01ec88fb6958f473b65a55`  
-		Last Modified: Tue, 09 Sep 2025 04:20:50 GMT  
-		Size: 7.8 MB (7778671 bytes)  
+	-	`sha256:60d45375e2b61eafc76853974f61035bbad5069680e3b7dc268bd743962dd182`  
+		Last Modified: Tue, 30 Sep 2025 13:23:52 GMT  
+		Size: 7.8 MB (7773146 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91277432f59739e8a9be99c96c39d880ae0155a9fbbe49a91f769600272ec5a6`  
-		Last Modified: Tue, 09 Sep 2025 04:20:51 GMT  
+	-	`sha256:8d88811b43f5ba231168a051b377003176fc625683544c4fbcb51686a4d116e9`  
+		Last Modified: Tue, 30 Sep 2025 13:23:53 GMT  
 		Size: 7.4 KB (7389 bytes)  
 		MIME: application/vnd.in-toto+json
 
