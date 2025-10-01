@@ -32,7 +32,7 @@
 ## `gcc:12`
 
 ```console
-$ docker pull gcc@sha256:165944d1df2d54230afb55e2651f28b8f5519b24a8b1dfb7a4822880fcded66a
+$ docker pull gcc@sha256:551995842d179858240b91c56f395c343fd0804a30042fc9bb617c4b4713ce4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -243,18 +243,18 @@ $ docker pull gcc@sha256:55e4cf8173bf8afe55a61d5341bbe6b30a34a2dffc82de7c99403ed
 ### `gcc:12` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:8fd18a8357a64476ee396098303839deab43e88d81a9747066f24f21c3f6d7eb
+$ docker pull gcc@sha256:77f6671b41d3ab350ca7f5a0a7567c70d7b860c8b2766b91c3f7d08833030d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.4 MB (407377166 bytes)**  
+-	Total Size: **407.4 MB (407407149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44c5143f8532a8f484cfd4276fab6479a146a01262226aa9a42580409cdad4bb`
+-	Image ID: `sha256:4935889aaf764264a6c321dd6bc7fe8f4c7d60a523a1563986635de53d4c21c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -278,78 +278,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:3cd055d0a168dde5be6bdfccc329264cf093640eea3a66901ae13f369f3b149b`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 2.5 MB (2549234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8e0c53652f01eff3acf2f1b53900e1c2430a11629208fdca4ae92696c3458e1`  
-		Last Modified: Tue, 09 Sep 2025 11:38:45 GMT  
-		Size: 103.7 MB (103709750 bytes)  
+	-	`sha256:cc59033e6c182ba840ed40b70c46e84a381c3359dc50c03ac144790574b1f65d`  
+		Last Modified: Tue, 30 Sep 2025 05:43:15 GMT  
+		Size: 103.7 MB (103711454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31755dbf43610505696f82eb71d093f92935fc49bc4232e8a481b93bc1803ede`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 9.3 KB (9316 bytes)  
+	-	`sha256:1bffdb2565bb5c5a0d751343e89f78394a5dbb95af554b4e615b6864ec183845`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 9.3 KB (9280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a64c573f4d8a166bde90997441798f6e595f6bad47ffcb87f222c4143801ed`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:5342090f1ec8aa630b8ba02f2d62948bcebdee1d1f0e44440155fb92f4c23835`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 1.8 KB (1789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5f0443e8e5220966b73d3454c9e90bfd218df9be3f499189434781be9fcb0d15
+$ docker pull gcc@sha256:a2036db3a3889d0f9d0d1c4e6277997f79edee5dfc8ef7f582a11fc5d72183d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d558f78b2c528fadeb3ed7af1030a64f4485ed827d1217161c74e29bd0cb12`
+-	Image ID: `sha256:76fcda419a2ff4bc17b7627c86e3fa7d5d26d0d2bd91f02e51e46641e04818ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06f86efaf1a04eff9416ef4b25d02b9f865ad69c02f854971296dbe2b2948bbd`  
-		Last Modified: Tue, 09 Sep 2025 12:18:44 GMT  
+	-	`sha256:4b21726f71855f40c54422e721dd988a2cc5801ed91e6bccd145fe9c8e1d1c2b`  
+		Last Modified: Wed, 01 Oct 2025 21:18:46 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:67fd1a8769d56ca86b38a00ace89c14fe9cf3e52c4587e90347b7f8eb6bb0866`  
-		Last Modified: Tue, 09 Sep 2025 12:18:45 GMT  
+	-	`sha256:137190b905f96d51a037fba75b256e12bfbff18ab13909ab92b736da1838fb6d`  
+		Last Modified: Wed, 01 Oct 2025 21:18:47 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:eb397d7fe29ea0db08acce1543d4b250c86a38cb9cfde3f82fc6664cdf85b033
+$ docker pull gcc@sha256:c026a7c19395e2e6f310bc114ec082e9073a403ae5064a47345750e7c9ed9dc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.8 MB (467756413 bytes)**  
+-	Total Size: **467.8 MB (467795932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41ac8580522aa946d9228618a30e19157b6c64e229368ac98c9121df89b29814`
+-	Image ID: `sha256:fe78b0c90aebfdc47600680abaf21cf93d829b34954d8ec5b74d6fb468ea328c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -373,78 +373,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb98227ee58e424d6fc7fcdbfa3a7507cd87eec1effcdabbb38d2dc0550fb9a`  
-		Last Modified: Tue, 09 Sep 2025 04:14:02 GMT  
-		Size: 2.7 MB (2734063 bytes)  
+	-	`sha256:1364f33122bcc1a7cb97b8e31683062ed6e01fb4255cbb63d2fbfa74519e5e4a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:34 GMT  
+		Size: 2.7 MB (2734184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e41749e179b5cc3d7b4456eb567317c8f623b24471a54909436ce887b767ba7`  
-		Last Modified: Tue, 09 Sep 2025 04:38:32 GMT  
-		Size: 125.8 MB (125767549 bytes)  
+	-	`sha256:26ac6fe458652b797cefd59d19cb83dd62dd6fc8016e58c23ec2696a76e85e50`  
+		Last Modified: Tue, 30 Sep 2025 03:54:52 GMT  
+		Size: 125.8 MB (125767685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3f7fde3e391fcb06eff49ce77e63235f76fa413de28a46f90c21f8a3a902ea2`  
-		Last Modified: Tue, 09 Sep 2025 04:14:10 GMT  
-		Size: 9.4 KB (9412 bytes)  
+	-	`sha256:717039e7fe0fb70269be4f897351e67bb7bed05edaa1ed754a7a61aeb6f14e70`  
+		Last Modified: Tue, 30 Sep 2025 03:54:30 GMT  
+		Size: 9.4 KB (9429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835e18df4f20584e51f5bc9950fbe7f79de6fa1d51cba345d08dec25ba1a15dd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:14 GMT  
-		Size: 1.8 KB (1807 bytes)  
+	-	`sha256:286c4974d3720eef465547fd3e36c34f43a5551da1f70e5d6ea4549ca46b9b7a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:32 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:760ff93b2fb47a81de93e44a9375bcfd2a30524584bc8f1109370f441f48b239
+$ docker pull gcc@sha256:09b6e567c92a07ed7d962eebc483ad9c2cd8b3d9b68cc6e9468b87bc8ada3769
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fa26f9fc3ee5e98a715f4c71fc72bea5afd0d2186aafdcfc1002847679ccfaf`
+-	Image ID: `sha256:9ed030f82bf43330b4be9d1aa2fbcf9ea181b89f747c4b1b749d442032778a1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:138fe981602b434ee438cb23af42d937afaac8252d461e3d0c799f0ecd27bc37`  
-		Last Modified: Tue, 09 Sep 2025 06:18:46 GMT  
+	-	`sha256:dc0ac1b036b9761a24484962972af17fe05440e5730256018935d6660a80f4c4`  
+		Last Modified: Wed, 01 Oct 2025 15:31:05 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78d208fc8cdd06f987cd617c6bcbac927020c0aaa39eb9585d3c0e33761671f8`  
-		Last Modified: Tue, 09 Sep 2025 06:18:47 GMT  
+	-	`sha256:a6683bcda8ef2b0f4a9b694f96046e2ff25d8ed80e7604599ff4a9b435460e38`  
+		Last Modified: Wed, 01 Oct 2025 15:31:06 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:cff99702edc3441a83f3ca1eb06278605f89b18a3099c00948099e330bbadb9a
+$ docker pull gcc@sha256:d4a10ef002a7ab9067be6f5d6c324007779d515923bd6ba7f0c032ca2c239e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **502.9 MB (502863800 bytes)**  
+-	Total Size: **502.9 MB (502889686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7afbb7f4101a914b24687101b43d968b8ead430a6b245e5e7d7b1621c46ee1`
+-	Image ID: `sha256:8f71298df967b1201a726070af7ff94ed21238524bb957bc54c4e16a81596c52`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -468,78 +468,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecfec52d2230c3d45ffae847aecd286634a7b4e6d618e57da578b86b4ccd492`  
-		Last Modified: Wed, 10 Sep 2025 03:07:48 GMT  
-		Size: 137.6 MB (137554545 bytes)  
+	-	`sha256:4db9af855df728b6cc0e93ecb0ad09b95e7a16f5c7553c3ab8163c55c4f06124`  
+		Last Modified: Wed, 01 Oct 2025 01:42:13 GMT  
+		Size: 137.6 MB (137554221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2021f0e7f23ca74f296947e1a703eb50ec5759cc0565970d4164c5e8cf6ca692`  
-		Last Modified: Wed, 10 Sep 2025 03:01:57 GMT  
-		Size: 9.7 KB (9746 bytes)  
+	-	`sha256:c9d33bffca80741188b52e18433bc1bfbab037104b1705800c907921b3661a0d`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfaccb0ea54bd7e1a42de3e4508a5268045568034e3f507c749e9e15fa7a240`  
-		Last Modified: Wed, 10 Sep 2025 03:01:53 GMT  
+	-	`sha256:1f31825b6833b7d464e5017c2695df00ab854116c96726f6ef3cc2e835df67ee`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
 		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9bd794e131831af9c2d4c9a50e49eef567cac936a64fae3c3374a7a99b3bf10e
+$ docker pull gcc@sha256:45b25689a2d2cb9bf935eecd9737acf23fc87a0b9b227a82fac61f689f44016e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15909668 bytes)**  
+-	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b466fb04c3f27081ca7065a75c4419217b9fda2411cf012cda779e47fc08603d`
+-	Image ID: `sha256:758f8e1aaeb4bbfea160f487f6ab4b74612a054d4683a084e338eaea185df990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eacd824d1e98eeb1efbd3705dcdf9b72a1008d17c091ad465256cffc4f4155ff`  
-		Last Modified: Wed, 10 Sep 2025 03:19:01 GMT  
+	-	`sha256:957377566a284c9a770c0362d4f55afcc90313674ad7e2f49401539ee0e880b5`  
+		Last Modified: Wed, 01 Oct 2025 21:19:07 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe1ec37e0d6e1b206fd832ea417d01ae1c1aeaa54a2500d6b2ac5e9486b99573`  
-		Last Modified: Wed, 10 Sep 2025 03:19:02 GMT  
-		Size: 29.8 KB (29817 bytes)  
+	-	`sha256:e8e0ddc47337b6de61c0ada4d108fa1e54d0d1bad12e629cce278d077fec585c`  
+		Last Modified: Wed, 01 Oct 2025 21:19:08 GMT  
+		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:9b1e35888a031e15bb7d681a3f30aa3d9d821262525fe1f22ab29117e75516a2
+$ docker pull gcc@sha256:b9d3829e5dc4cdd60f253b6d26bcabb33a5b38090c9255a336c2aaff912ff726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.5 MB (438472450 bytes)**  
+-	Total Size: **438.5 MB (438497675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b703cf7331830bc5618274916d1416504e1885715e095cd722848eb83954715`
+-	Image ID: `sha256:307fe3c4a8a6c7bd5ead50d543b381d38faf279cab6bf52c77fd84562041ad36`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -563,67 +563,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c036f03045ddb4ab267807c8dd4096277c82d77e782fa4c5fc7ff6af7049e2a`  
-		Last Modified: Wed, 10 Sep 2025 04:07:32 GMT  
-		Size: 117.6 MB (117606741 bytes)  
+	-	`sha256:5232bad90f434fc5cc3b67f08ed4f5f40a7a9060be6ff99c2d44bdd86da9e7b5`  
+		Last Modified: Tue, 30 Sep 2025 23:48:36 GMT  
+		Size: 117.6 MB (117606813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bbfb77cef42855202f5c505cdde533a2415cf10336d4446b5fc8d7098c21d6e`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 10.2 KB (10240 bytes)  
+	-	`sha256:60dd5b7df53e58e3410f93f0bb265cbed80c5c39befc11886987cadc6419a094`  
+		Last Modified: Tue, 30 Sep 2025 23:48:26 GMT  
+		Size: 10.0 KB (9985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cf08bf15ebbbc04d55087227384a91e516dba88d944c3a4d331a10a68c28a6`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:9058c3fef20aa8669e64f633c6442bc40a8959d4f74a2db01ab318f46e5bfbe3`  
+		Last Modified: Tue, 30 Sep 2025 23:48:23 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5e8133a9093eb7d0c3dffa7bdfec4696f958751e7cde1befc24ab65e37f77813
+$ docker pull gcc@sha256:351c3ae867e2a2ddf502c5fcd1deac52c75990414a5a812b88b956a3274717b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f53f100d2b3d18ba0f824a13536073bfa42f9364ee54105bc5f6094f9945bb4`
+-	Image ID: `sha256:39f88ce9e112b7bbee7b680308e4041faf2a9f28e3e9f9f1161610b311a1dcb8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd5e7d593134df3a018f4a95f99fff03df970ae5d17015e3d53fa9e5e1e5323e`  
-		Last Modified: Wed, 10 Sep 2025 06:19:18 GMT  
+	-	`sha256:efff405e0c6b7397707753dcd8c7a8628e7f6dea67c472f9e6562e478e65bc53`  
+		Last Modified: Wed, 01 Oct 2025 21:19:17 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c358691189499886603eb61237afa269a32da7464d1c53732650ee18f8b45378`  
-		Last Modified: Wed, 10 Sep 2025 06:19:19 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:23d45dd81b1d3b1e542efea37d5e99bc1068abf575752068f21cd6d1c8bb788a`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
+		Size: 29.8 KB (29756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:12-bookworm`
 
 ```console
-$ docker pull gcc@sha256:05e03d8ff6992de6541ab401200b3c7cefcb4b653737aaab9ae4ec76f5023e01
+$ docker pull gcc@sha256:551995842d179858240b91c56f395c343fd0804a30042fc9bb617c4b4713ce4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -834,18 +834,18 @@ $ docker pull gcc@sha256:55e4cf8173bf8afe55a61d5341bbe6b30a34a2dffc82de7c99403ed
 ### `gcc:12-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:8fd18a8357a64476ee396098303839deab43e88d81a9747066f24f21c3f6d7eb
+$ docker pull gcc@sha256:77f6671b41d3ab350ca7f5a0a7567c70d7b860c8b2766b91c3f7d08833030d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.4 MB (407377166 bytes)**  
+-	Total Size: **407.4 MB (407407149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44c5143f8532a8f484cfd4276fab6479a146a01262226aa9a42580409cdad4bb`
+-	Image ID: `sha256:4935889aaf764264a6c321dd6bc7fe8f4c7d60a523a1563986635de53d4c21c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -869,60 +869,60 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:3cd055d0a168dde5be6bdfccc329264cf093640eea3a66901ae13f369f3b149b`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 2.5 MB (2549234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8e0c53652f01eff3acf2f1b53900e1c2430a11629208fdca4ae92696c3458e1`  
-		Last Modified: Tue, 09 Sep 2025 11:38:45 GMT  
-		Size: 103.7 MB (103709750 bytes)  
+	-	`sha256:cc59033e6c182ba840ed40b70c46e84a381c3359dc50c03ac144790574b1f65d`  
+		Last Modified: Tue, 30 Sep 2025 05:43:15 GMT  
+		Size: 103.7 MB (103711454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31755dbf43610505696f82eb71d093f92935fc49bc4232e8a481b93bc1803ede`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 9.3 KB (9316 bytes)  
+	-	`sha256:1bffdb2565bb5c5a0d751343e89f78394a5dbb95af554b4e615b6864ec183845`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 9.3 KB (9280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a64c573f4d8a166bde90997441798f6e595f6bad47ffcb87f222c4143801ed`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:5342090f1ec8aa630b8ba02f2d62948bcebdee1d1f0e44440155fb92f4c23835`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 1.8 KB (1789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5f0443e8e5220966b73d3454c9e90bfd218df9be3f499189434781be9fcb0d15
+$ docker pull gcc@sha256:a2036db3a3889d0f9d0d1c4e6277997f79edee5dfc8ef7f582a11fc5d72183d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d558f78b2c528fadeb3ed7af1030a64f4485ed827d1217161c74e29bd0cb12`
+-	Image ID: `sha256:76fcda419a2ff4bc17b7627c86e3fa7d5d26d0d2bd91f02e51e46641e04818ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06f86efaf1a04eff9416ef4b25d02b9f865ad69c02f854971296dbe2b2948bbd`  
-		Last Modified: Tue, 09 Sep 2025 12:18:44 GMT  
+	-	`sha256:4b21726f71855f40c54422e721dd988a2cc5801ed91e6bccd145fe9c8e1d1c2b`  
+		Last Modified: Wed, 01 Oct 2025 21:18:46 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:67fd1a8769d56ca86b38a00ace89c14fe9cf3e52c4587e90347b7f8eb6bb0866`  
-		Last Modified: Tue, 09 Sep 2025 12:18:45 GMT  
+	-	`sha256:137190b905f96d51a037fba75b256e12bfbff18ab13909ab92b736da1838fb6d`  
+		Last Modified: Wed, 01 Oct 2025 21:18:47 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1024,18 +1024,18 @@ $ docker pull gcc@sha256:09b6e567c92a07ed7d962eebc483ad9c2cd8b3d9b68cc6e9468b87b
 ### `gcc:12-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:cff99702edc3441a83f3ca1eb06278605f89b18a3099c00948099e330bbadb9a
+$ docker pull gcc@sha256:d4a10ef002a7ab9067be6f5d6c324007779d515923bd6ba7f0c032ca2c239e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **502.9 MB (502863800 bytes)**  
+-	Total Size: **502.9 MB (502889686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7afbb7f4101a914b24687101b43d968b8ead430a6b245e5e7d7b1621c46ee1`
+-	Image ID: `sha256:8f71298df967b1201a726070af7ff94ed21238524bb957bc54c4e16a81596c52`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -1059,78 +1059,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecfec52d2230c3d45ffae847aecd286634a7b4e6d618e57da578b86b4ccd492`  
-		Last Modified: Wed, 10 Sep 2025 03:07:48 GMT  
-		Size: 137.6 MB (137554545 bytes)  
+	-	`sha256:4db9af855df728b6cc0e93ecb0ad09b95e7a16f5c7553c3ab8163c55c4f06124`  
+		Last Modified: Wed, 01 Oct 2025 01:42:13 GMT  
+		Size: 137.6 MB (137554221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2021f0e7f23ca74f296947e1a703eb50ec5759cc0565970d4164c5e8cf6ca692`  
-		Last Modified: Wed, 10 Sep 2025 03:01:57 GMT  
-		Size: 9.7 KB (9746 bytes)  
+	-	`sha256:c9d33bffca80741188b52e18433bc1bfbab037104b1705800c907921b3661a0d`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfaccb0ea54bd7e1a42de3e4508a5268045568034e3f507c749e9e15fa7a240`  
-		Last Modified: Wed, 10 Sep 2025 03:01:53 GMT  
+	-	`sha256:1f31825b6833b7d464e5017c2695df00ab854116c96726f6ef3cc2e835df67ee`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
 		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9bd794e131831af9c2d4c9a50e49eef567cac936a64fae3c3374a7a99b3bf10e
+$ docker pull gcc@sha256:45b25689a2d2cb9bf935eecd9737acf23fc87a0b9b227a82fac61f689f44016e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15909668 bytes)**  
+-	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b466fb04c3f27081ca7065a75c4419217b9fda2411cf012cda779e47fc08603d`
+-	Image ID: `sha256:758f8e1aaeb4bbfea160f487f6ab4b74612a054d4683a084e338eaea185df990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eacd824d1e98eeb1efbd3705dcdf9b72a1008d17c091ad465256cffc4f4155ff`  
-		Last Modified: Wed, 10 Sep 2025 03:19:01 GMT  
+	-	`sha256:957377566a284c9a770c0362d4f55afcc90313674ad7e2f49401539ee0e880b5`  
+		Last Modified: Wed, 01 Oct 2025 21:19:07 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe1ec37e0d6e1b206fd832ea417d01ae1c1aeaa54a2500d6b2ac5e9486b99573`  
-		Last Modified: Wed, 10 Sep 2025 03:19:02 GMT  
-		Size: 29.8 KB (29817 bytes)  
+	-	`sha256:e8e0ddc47337b6de61c0ada4d108fa1e54d0d1bad12e629cce278d077fec585c`  
+		Last Modified: Wed, 01 Oct 2025 21:19:08 GMT  
+		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12-bookworm` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:9b1e35888a031e15bb7d681a3f30aa3d9d821262525fe1f22ab29117e75516a2
+$ docker pull gcc@sha256:b9d3829e5dc4cdd60f253b6d26bcabb33a5b38090c9255a336c2aaff912ff726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.5 MB (438472450 bytes)**  
+-	Total Size: **438.5 MB (438497675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b703cf7331830bc5618274916d1416504e1885715e095cd722848eb83954715`
+-	Image ID: `sha256:307fe3c4a8a6c7bd5ead50d543b381d38faf279cab6bf52c77fd84562041ad36`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -1154,67 +1154,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c036f03045ddb4ab267807c8dd4096277c82d77e782fa4c5fc7ff6af7049e2a`  
-		Last Modified: Wed, 10 Sep 2025 04:07:32 GMT  
-		Size: 117.6 MB (117606741 bytes)  
+	-	`sha256:5232bad90f434fc5cc3b67f08ed4f5f40a7a9060be6ff99c2d44bdd86da9e7b5`  
+		Last Modified: Tue, 30 Sep 2025 23:48:36 GMT  
+		Size: 117.6 MB (117606813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bbfb77cef42855202f5c505cdde533a2415cf10336d4446b5fc8d7098c21d6e`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 10.2 KB (10240 bytes)  
+	-	`sha256:60dd5b7df53e58e3410f93f0bb265cbed80c5c39befc11886987cadc6419a094`  
+		Last Modified: Tue, 30 Sep 2025 23:48:26 GMT  
+		Size: 10.0 KB (9985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cf08bf15ebbbc04d55087227384a91e516dba88d944c3a4d331a10a68c28a6`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:9058c3fef20aa8669e64f633c6442bc40a8959d4f74a2db01ab318f46e5bfbe3`  
+		Last Modified: Tue, 30 Sep 2025 23:48:23 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5e8133a9093eb7d0c3dffa7bdfec4696f958751e7cde1befc24ab65e37f77813
+$ docker pull gcc@sha256:351c3ae867e2a2ddf502c5fcd1deac52c75990414a5a812b88b956a3274717b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f53f100d2b3d18ba0f824a13536073bfa42f9364ee54105bc5f6094f9945bb4`
+-	Image ID: `sha256:39f88ce9e112b7bbee7b680308e4041faf2a9f28e3e9f9f1161610b311a1dcb8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd5e7d593134df3a018f4a95f99fff03df970ae5d17015e3d53fa9e5e1e5323e`  
-		Last Modified: Wed, 10 Sep 2025 06:19:18 GMT  
+	-	`sha256:efff405e0c6b7397707753dcd8c7a8628e7f6dea67c472f9e6562e478e65bc53`  
+		Last Modified: Wed, 01 Oct 2025 21:19:17 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c358691189499886603eb61237afa269a32da7464d1c53732650ee18f8b45378`  
-		Last Modified: Wed, 10 Sep 2025 06:19:19 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:23d45dd81b1d3b1e542efea37d5e99bc1068abf575752068f21cd6d1c8bb788a`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
+		Size: 29.8 KB (29756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:12.5`
 
 ```console
-$ docker pull gcc@sha256:165944d1df2d54230afb55e2651f28b8f5519b24a8b1dfb7a4822880fcded66a
+$ docker pull gcc@sha256:551995842d179858240b91c56f395c343fd0804a30042fc9bb617c4b4713ce4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1425,18 +1425,18 @@ $ docker pull gcc@sha256:55e4cf8173bf8afe55a61d5341bbe6b30a34a2dffc82de7c99403ed
 ### `gcc:12.5` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:8fd18a8357a64476ee396098303839deab43e88d81a9747066f24f21c3f6d7eb
+$ docker pull gcc@sha256:77f6671b41d3ab350ca7f5a0a7567c70d7b860c8b2766b91c3f7d08833030d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.4 MB (407377166 bytes)**  
+-	Total Size: **407.4 MB (407407149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44c5143f8532a8f484cfd4276fab6479a146a01262226aa9a42580409cdad4bb`
+-	Image ID: `sha256:4935889aaf764264a6c321dd6bc7fe8f4c7d60a523a1563986635de53d4c21c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -1460,78 +1460,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:3cd055d0a168dde5be6bdfccc329264cf093640eea3a66901ae13f369f3b149b`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 2.5 MB (2549234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8e0c53652f01eff3acf2f1b53900e1c2430a11629208fdca4ae92696c3458e1`  
-		Last Modified: Tue, 09 Sep 2025 11:38:45 GMT  
-		Size: 103.7 MB (103709750 bytes)  
+	-	`sha256:cc59033e6c182ba840ed40b70c46e84a381c3359dc50c03ac144790574b1f65d`  
+		Last Modified: Tue, 30 Sep 2025 05:43:15 GMT  
+		Size: 103.7 MB (103711454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31755dbf43610505696f82eb71d093f92935fc49bc4232e8a481b93bc1803ede`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 9.3 KB (9316 bytes)  
+	-	`sha256:1bffdb2565bb5c5a0d751343e89f78394a5dbb95af554b4e615b6864ec183845`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 9.3 KB (9280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a64c573f4d8a166bde90997441798f6e595f6bad47ffcb87f222c4143801ed`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:5342090f1ec8aa630b8ba02f2d62948bcebdee1d1f0e44440155fb92f4c23835`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 1.8 KB (1789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5f0443e8e5220966b73d3454c9e90bfd218df9be3f499189434781be9fcb0d15
+$ docker pull gcc@sha256:a2036db3a3889d0f9d0d1c4e6277997f79edee5dfc8ef7f582a11fc5d72183d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d558f78b2c528fadeb3ed7af1030a64f4485ed827d1217161c74e29bd0cb12`
+-	Image ID: `sha256:76fcda419a2ff4bc17b7627c86e3fa7d5d26d0d2bd91f02e51e46641e04818ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06f86efaf1a04eff9416ef4b25d02b9f865ad69c02f854971296dbe2b2948bbd`  
-		Last Modified: Tue, 09 Sep 2025 12:18:44 GMT  
+	-	`sha256:4b21726f71855f40c54422e721dd988a2cc5801ed91e6bccd145fe9c8e1d1c2b`  
+		Last Modified: Wed, 01 Oct 2025 21:18:46 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:67fd1a8769d56ca86b38a00ace89c14fe9cf3e52c4587e90347b7f8eb6bb0866`  
-		Last Modified: Tue, 09 Sep 2025 12:18:45 GMT  
+	-	`sha256:137190b905f96d51a037fba75b256e12bfbff18ab13909ab92b736da1838fb6d`  
+		Last Modified: Wed, 01 Oct 2025 21:18:47 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:eb397d7fe29ea0db08acce1543d4b250c86a38cb9cfde3f82fc6664cdf85b033
+$ docker pull gcc@sha256:c026a7c19395e2e6f310bc114ec082e9073a403ae5064a47345750e7c9ed9dc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.8 MB (467756413 bytes)**  
+-	Total Size: **467.8 MB (467795932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41ac8580522aa946d9228618a30e19157b6c64e229368ac98c9121df89b29814`
+-	Image ID: `sha256:fe78b0c90aebfdc47600680abaf21cf93d829b34954d8ec5b74d6fb468ea328c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -1555,78 +1555,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb98227ee58e424d6fc7fcdbfa3a7507cd87eec1effcdabbb38d2dc0550fb9a`  
-		Last Modified: Tue, 09 Sep 2025 04:14:02 GMT  
-		Size: 2.7 MB (2734063 bytes)  
+	-	`sha256:1364f33122bcc1a7cb97b8e31683062ed6e01fb4255cbb63d2fbfa74519e5e4a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:34 GMT  
+		Size: 2.7 MB (2734184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e41749e179b5cc3d7b4456eb567317c8f623b24471a54909436ce887b767ba7`  
-		Last Modified: Tue, 09 Sep 2025 04:38:32 GMT  
-		Size: 125.8 MB (125767549 bytes)  
+	-	`sha256:26ac6fe458652b797cefd59d19cb83dd62dd6fc8016e58c23ec2696a76e85e50`  
+		Last Modified: Tue, 30 Sep 2025 03:54:52 GMT  
+		Size: 125.8 MB (125767685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3f7fde3e391fcb06eff49ce77e63235f76fa413de28a46f90c21f8a3a902ea2`  
-		Last Modified: Tue, 09 Sep 2025 04:14:10 GMT  
-		Size: 9.4 KB (9412 bytes)  
+	-	`sha256:717039e7fe0fb70269be4f897351e67bb7bed05edaa1ed754a7a61aeb6f14e70`  
+		Last Modified: Tue, 30 Sep 2025 03:54:30 GMT  
+		Size: 9.4 KB (9429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835e18df4f20584e51f5bc9950fbe7f79de6fa1d51cba345d08dec25ba1a15dd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:14 GMT  
-		Size: 1.8 KB (1807 bytes)  
+	-	`sha256:286c4974d3720eef465547fd3e36c34f43a5551da1f70e5d6ea4549ca46b9b7a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:32 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:760ff93b2fb47a81de93e44a9375bcfd2a30524584bc8f1109370f441f48b239
+$ docker pull gcc@sha256:09b6e567c92a07ed7d962eebc483ad9c2cd8b3d9b68cc6e9468b87bc8ada3769
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fa26f9fc3ee5e98a715f4c71fc72bea5afd0d2186aafdcfc1002847679ccfaf`
+-	Image ID: `sha256:9ed030f82bf43330b4be9d1aa2fbcf9ea181b89f747c4b1b749d442032778a1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:138fe981602b434ee438cb23af42d937afaac8252d461e3d0c799f0ecd27bc37`  
-		Last Modified: Tue, 09 Sep 2025 06:18:46 GMT  
+	-	`sha256:dc0ac1b036b9761a24484962972af17fe05440e5730256018935d6660a80f4c4`  
+		Last Modified: Wed, 01 Oct 2025 15:31:05 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78d208fc8cdd06f987cd617c6bcbac927020c0aaa39eb9585d3c0e33761671f8`  
-		Last Modified: Tue, 09 Sep 2025 06:18:47 GMT  
+	-	`sha256:a6683bcda8ef2b0f4a9b694f96046e2ff25d8ed80e7604599ff4a9b435460e38`  
+		Last Modified: Wed, 01 Oct 2025 15:31:06 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:cff99702edc3441a83f3ca1eb06278605f89b18a3099c00948099e330bbadb9a
+$ docker pull gcc@sha256:d4a10ef002a7ab9067be6f5d6c324007779d515923bd6ba7f0c032ca2c239e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **502.9 MB (502863800 bytes)**  
+-	Total Size: **502.9 MB (502889686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7afbb7f4101a914b24687101b43d968b8ead430a6b245e5e7d7b1621c46ee1`
+-	Image ID: `sha256:8f71298df967b1201a726070af7ff94ed21238524bb957bc54c4e16a81596c52`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -1650,78 +1650,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecfec52d2230c3d45ffae847aecd286634a7b4e6d618e57da578b86b4ccd492`  
-		Last Modified: Wed, 10 Sep 2025 03:07:48 GMT  
-		Size: 137.6 MB (137554545 bytes)  
+	-	`sha256:4db9af855df728b6cc0e93ecb0ad09b95e7a16f5c7553c3ab8163c55c4f06124`  
+		Last Modified: Wed, 01 Oct 2025 01:42:13 GMT  
+		Size: 137.6 MB (137554221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2021f0e7f23ca74f296947e1a703eb50ec5759cc0565970d4164c5e8cf6ca692`  
-		Last Modified: Wed, 10 Sep 2025 03:01:57 GMT  
-		Size: 9.7 KB (9746 bytes)  
+	-	`sha256:c9d33bffca80741188b52e18433bc1bfbab037104b1705800c907921b3661a0d`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfaccb0ea54bd7e1a42de3e4508a5268045568034e3f507c749e9e15fa7a240`  
-		Last Modified: Wed, 10 Sep 2025 03:01:53 GMT  
+	-	`sha256:1f31825b6833b7d464e5017c2695df00ab854116c96726f6ef3cc2e835df67ee`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
 		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9bd794e131831af9c2d4c9a50e49eef567cac936a64fae3c3374a7a99b3bf10e
+$ docker pull gcc@sha256:45b25689a2d2cb9bf935eecd9737acf23fc87a0b9b227a82fac61f689f44016e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15909668 bytes)**  
+-	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b466fb04c3f27081ca7065a75c4419217b9fda2411cf012cda779e47fc08603d`
+-	Image ID: `sha256:758f8e1aaeb4bbfea160f487f6ab4b74612a054d4683a084e338eaea185df990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eacd824d1e98eeb1efbd3705dcdf9b72a1008d17c091ad465256cffc4f4155ff`  
-		Last Modified: Wed, 10 Sep 2025 03:19:01 GMT  
+	-	`sha256:957377566a284c9a770c0362d4f55afcc90313674ad7e2f49401539ee0e880b5`  
+		Last Modified: Wed, 01 Oct 2025 21:19:07 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe1ec37e0d6e1b206fd832ea417d01ae1c1aeaa54a2500d6b2ac5e9486b99573`  
-		Last Modified: Wed, 10 Sep 2025 03:19:02 GMT  
-		Size: 29.8 KB (29817 bytes)  
+	-	`sha256:e8e0ddc47337b6de61c0ada4d108fa1e54d0d1bad12e629cce278d077fec585c`  
+		Last Modified: Wed, 01 Oct 2025 21:19:08 GMT  
+		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:9b1e35888a031e15bb7d681a3f30aa3d9d821262525fe1f22ab29117e75516a2
+$ docker pull gcc@sha256:b9d3829e5dc4cdd60f253b6d26bcabb33a5b38090c9255a336c2aaff912ff726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.5 MB (438472450 bytes)**  
+-	Total Size: **438.5 MB (438497675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b703cf7331830bc5618274916d1416504e1885715e095cd722848eb83954715`
+-	Image ID: `sha256:307fe3c4a8a6c7bd5ead50d543b381d38faf279cab6bf52c77fd84562041ad36`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -1745,67 +1745,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c036f03045ddb4ab267807c8dd4096277c82d77e782fa4c5fc7ff6af7049e2a`  
-		Last Modified: Wed, 10 Sep 2025 04:07:32 GMT  
-		Size: 117.6 MB (117606741 bytes)  
+	-	`sha256:5232bad90f434fc5cc3b67f08ed4f5f40a7a9060be6ff99c2d44bdd86da9e7b5`  
+		Last Modified: Tue, 30 Sep 2025 23:48:36 GMT  
+		Size: 117.6 MB (117606813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bbfb77cef42855202f5c505cdde533a2415cf10336d4446b5fc8d7098c21d6e`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 10.2 KB (10240 bytes)  
+	-	`sha256:60dd5b7df53e58e3410f93f0bb265cbed80c5c39befc11886987cadc6419a094`  
+		Last Modified: Tue, 30 Sep 2025 23:48:26 GMT  
+		Size: 10.0 KB (9985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cf08bf15ebbbc04d55087227384a91e516dba88d944c3a4d331a10a68c28a6`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:9058c3fef20aa8669e64f633c6442bc40a8959d4f74a2db01ab318f46e5bfbe3`  
+		Last Modified: Tue, 30 Sep 2025 23:48:23 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5e8133a9093eb7d0c3dffa7bdfec4696f958751e7cde1befc24ab65e37f77813
+$ docker pull gcc@sha256:351c3ae867e2a2ddf502c5fcd1deac52c75990414a5a812b88b956a3274717b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f53f100d2b3d18ba0f824a13536073bfa42f9364ee54105bc5f6094f9945bb4`
+-	Image ID: `sha256:39f88ce9e112b7bbee7b680308e4041faf2a9f28e3e9f9f1161610b311a1dcb8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd5e7d593134df3a018f4a95f99fff03df970ae5d17015e3d53fa9e5e1e5323e`  
-		Last Modified: Wed, 10 Sep 2025 06:19:18 GMT  
+	-	`sha256:efff405e0c6b7397707753dcd8c7a8628e7f6dea67c472f9e6562e478e65bc53`  
+		Last Modified: Wed, 01 Oct 2025 21:19:17 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c358691189499886603eb61237afa269a32da7464d1c53732650ee18f8b45378`  
-		Last Modified: Wed, 10 Sep 2025 06:19:19 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:23d45dd81b1d3b1e542efea37d5e99bc1068abf575752068f21cd6d1c8bb788a`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
+		Size: 29.8 KB (29756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:12.5-bookworm`
 
 ```console
-$ docker pull gcc@sha256:165944d1df2d54230afb55e2651f28b8f5519b24a8b1dfb7a4822880fcded66a
+$ docker pull gcc@sha256:551995842d179858240b91c56f395c343fd0804a30042fc9bb617c4b4713ce4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2016,18 +2016,18 @@ $ docker pull gcc@sha256:55e4cf8173bf8afe55a61d5341bbe6b30a34a2dffc82de7c99403ed
 ### `gcc:12.5-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:8fd18a8357a64476ee396098303839deab43e88d81a9747066f24f21c3f6d7eb
+$ docker pull gcc@sha256:77f6671b41d3ab350ca7f5a0a7567c70d7b860c8b2766b91c3f7d08833030d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.4 MB (407377166 bytes)**  
+-	Total Size: **407.4 MB (407407149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44c5143f8532a8f484cfd4276fab6479a146a01262226aa9a42580409cdad4bb`
+-	Image ID: `sha256:4935889aaf764264a6c321dd6bc7fe8f4c7d60a523a1563986635de53d4c21c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2051,78 +2051,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:3cd055d0a168dde5be6bdfccc329264cf093640eea3a66901ae13f369f3b149b`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 2.5 MB (2549234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8e0c53652f01eff3acf2f1b53900e1c2430a11629208fdca4ae92696c3458e1`  
-		Last Modified: Tue, 09 Sep 2025 11:38:45 GMT  
-		Size: 103.7 MB (103709750 bytes)  
+	-	`sha256:cc59033e6c182ba840ed40b70c46e84a381c3359dc50c03ac144790574b1f65d`  
+		Last Modified: Tue, 30 Sep 2025 05:43:15 GMT  
+		Size: 103.7 MB (103711454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31755dbf43610505696f82eb71d093f92935fc49bc4232e8a481b93bc1803ede`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 9.3 KB (9316 bytes)  
+	-	`sha256:1bffdb2565bb5c5a0d751343e89f78394a5dbb95af554b4e615b6864ec183845`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 9.3 KB (9280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a64c573f4d8a166bde90997441798f6e595f6bad47ffcb87f222c4143801ed`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:5342090f1ec8aa630b8ba02f2d62948bcebdee1d1f0e44440155fb92f4c23835`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 1.8 KB (1789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5f0443e8e5220966b73d3454c9e90bfd218df9be3f499189434781be9fcb0d15
+$ docker pull gcc@sha256:a2036db3a3889d0f9d0d1c4e6277997f79edee5dfc8ef7f582a11fc5d72183d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d558f78b2c528fadeb3ed7af1030a64f4485ed827d1217161c74e29bd0cb12`
+-	Image ID: `sha256:76fcda419a2ff4bc17b7627c86e3fa7d5d26d0d2bd91f02e51e46641e04818ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06f86efaf1a04eff9416ef4b25d02b9f865ad69c02f854971296dbe2b2948bbd`  
-		Last Modified: Tue, 09 Sep 2025 12:18:44 GMT  
+	-	`sha256:4b21726f71855f40c54422e721dd988a2cc5801ed91e6bccd145fe9c8e1d1c2b`  
+		Last Modified: Wed, 01 Oct 2025 21:18:46 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:67fd1a8769d56ca86b38a00ace89c14fe9cf3e52c4587e90347b7f8eb6bb0866`  
-		Last Modified: Tue, 09 Sep 2025 12:18:45 GMT  
+	-	`sha256:137190b905f96d51a037fba75b256e12bfbff18ab13909ab92b736da1838fb6d`  
+		Last Modified: Wed, 01 Oct 2025 21:18:47 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:eb397d7fe29ea0db08acce1543d4b250c86a38cb9cfde3f82fc6664cdf85b033
+$ docker pull gcc@sha256:c026a7c19395e2e6f310bc114ec082e9073a403ae5064a47345750e7c9ed9dc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.8 MB (467756413 bytes)**  
+-	Total Size: **467.8 MB (467795932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41ac8580522aa946d9228618a30e19157b6c64e229368ac98c9121df89b29814`
+-	Image ID: `sha256:fe78b0c90aebfdc47600680abaf21cf93d829b34954d8ec5b74d6fb468ea328c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2146,78 +2146,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb98227ee58e424d6fc7fcdbfa3a7507cd87eec1effcdabbb38d2dc0550fb9a`  
-		Last Modified: Tue, 09 Sep 2025 04:14:02 GMT  
-		Size: 2.7 MB (2734063 bytes)  
+	-	`sha256:1364f33122bcc1a7cb97b8e31683062ed6e01fb4255cbb63d2fbfa74519e5e4a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:34 GMT  
+		Size: 2.7 MB (2734184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e41749e179b5cc3d7b4456eb567317c8f623b24471a54909436ce887b767ba7`  
-		Last Modified: Tue, 09 Sep 2025 04:38:32 GMT  
-		Size: 125.8 MB (125767549 bytes)  
+	-	`sha256:26ac6fe458652b797cefd59d19cb83dd62dd6fc8016e58c23ec2696a76e85e50`  
+		Last Modified: Tue, 30 Sep 2025 03:54:52 GMT  
+		Size: 125.8 MB (125767685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3f7fde3e391fcb06eff49ce77e63235f76fa413de28a46f90c21f8a3a902ea2`  
-		Last Modified: Tue, 09 Sep 2025 04:14:10 GMT  
-		Size: 9.4 KB (9412 bytes)  
+	-	`sha256:717039e7fe0fb70269be4f897351e67bb7bed05edaa1ed754a7a61aeb6f14e70`  
+		Last Modified: Tue, 30 Sep 2025 03:54:30 GMT  
+		Size: 9.4 KB (9429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835e18df4f20584e51f5bc9950fbe7f79de6fa1d51cba345d08dec25ba1a15dd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:14 GMT  
-		Size: 1.8 KB (1807 bytes)  
+	-	`sha256:286c4974d3720eef465547fd3e36c34f43a5551da1f70e5d6ea4549ca46b9b7a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:32 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:760ff93b2fb47a81de93e44a9375bcfd2a30524584bc8f1109370f441f48b239
+$ docker pull gcc@sha256:09b6e567c92a07ed7d962eebc483ad9c2cd8b3d9b68cc6e9468b87bc8ada3769
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fa26f9fc3ee5e98a715f4c71fc72bea5afd0d2186aafdcfc1002847679ccfaf`
+-	Image ID: `sha256:9ed030f82bf43330b4be9d1aa2fbcf9ea181b89f747c4b1b749d442032778a1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:138fe981602b434ee438cb23af42d937afaac8252d461e3d0c799f0ecd27bc37`  
-		Last Modified: Tue, 09 Sep 2025 06:18:46 GMT  
+	-	`sha256:dc0ac1b036b9761a24484962972af17fe05440e5730256018935d6660a80f4c4`  
+		Last Modified: Wed, 01 Oct 2025 15:31:05 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78d208fc8cdd06f987cd617c6bcbac927020c0aaa39eb9585d3c0e33761671f8`  
-		Last Modified: Tue, 09 Sep 2025 06:18:47 GMT  
+	-	`sha256:a6683bcda8ef2b0f4a9b694f96046e2ff25d8ed80e7604599ff4a9b435460e38`  
+		Last Modified: Wed, 01 Oct 2025 15:31:06 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:cff99702edc3441a83f3ca1eb06278605f89b18a3099c00948099e330bbadb9a
+$ docker pull gcc@sha256:d4a10ef002a7ab9067be6f5d6c324007779d515923bd6ba7f0c032ca2c239e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **502.9 MB (502863800 bytes)**  
+-	Total Size: **502.9 MB (502889686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7afbb7f4101a914b24687101b43d968b8ead430a6b245e5e7d7b1621c46ee1`
+-	Image ID: `sha256:8f71298df967b1201a726070af7ff94ed21238524bb957bc54c4e16a81596c52`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2241,78 +2241,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecfec52d2230c3d45ffae847aecd286634a7b4e6d618e57da578b86b4ccd492`  
-		Last Modified: Wed, 10 Sep 2025 03:07:48 GMT  
-		Size: 137.6 MB (137554545 bytes)  
+	-	`sha256:4db9af855df728b6cc0e93ecb0ad09b95e7a16f5c7553c3ab8163c55c4f06124`  
+		Last Modified: Wed, 01 Oct 2025 01:42:13 GMT  
+		Size: 137.6 MB (137554221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2021f0e7f23ca74f296947e1a703eb50ec5759cc0565970d4164c5e8cf6ca692`  
-		Last Modified: Wed, 10 Sep 2025 03:01:57 GMT  
-		Size: 9.7 KB (9746 bytes)  
+	-	`sha256:c9d33bffca80741188b52e18433bc1bfbab037104b1705800c907921b3661a0d`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfaccb0ea54bd7e1a42de3e4508a5268045568034e3f507c749e9e15fa7a240`  
-		Last Modified: Wed, 10 Sep 2025 03:01:53 GMT  
+	-	`sha256:1f31825b6833b7d464e5017c2695df00ab854116c96726f6ef3cc2e835df67ee`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
 		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9bd794e131831af9c2d4c9a50e49eef567cac936a64fae3c3374a7a99b3bf10e
+$ docker pull gcc@sha256:45b25689a2d2cb9bf935eecd9737acf23fc87a0b9b227a82fac61f689f44016e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15909668 bytes)**  
+-	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b466fb04c3f27081ca7065a75c4419217b9fda2411cf012cda779e47fc08603d`
+-	Image ID: `sha256:758f8e1aaeb4bbfea160f487f6ab4b74612a054d4683a084e338eaea185df990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eacd824d1e98eeb1efbd3705dcdf9b72a1008d17c091ad465256cffc4f4155ff`  
-		Last Modified: Wed, 10 Sep 2025 03:19:01 GMT  
+	-	`sha256:957377566a284c9a770c0362d4f55afcc90313674ad7e2f49401539ee0e880b5`  
+		Last Modified: Wed, 01 Oct 2025 21:19:07 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe1ec37e0d6e1b206fd832ea417d01ae1c1aeaa54a2500d6b2ac5e9486b99573`  
-		Last Modified: Wed, 10 Sep 2025 03:19:02 GMT  
-		Size: 29.8 KB (29817 bytes)  
+	-	`sha256:e8e0ddc47337b6de61c0ada4d108fa1e54d0d1bad12e629cce278d077fec585c`  
+		Last Modified: Wed, 01 Oct 2025 21:19:08 GMT  
+		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5-bookworm` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:9b1e35888a031e15bb7d681a3f30aa3d9d821262525fe1f22ab29117e75516a2
+$ docker pull gcc@sha256:b9d3829e5dc4cdd60f253b6d26bcabb33a5b38090c9255a336c2aaff912ff726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.5 MB (438472450 bytes)**  
+-	Total Size: **438.5 MB (438497675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b703cf7331830bc5618274916d1416504e1885715e095cd722848eb83954715`
+-	Image ID: `sha256:307fe3c4a8a6c7bd5ead50d543b381d38faf279cab6bf52c77fd84562041ad36`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2336,67 +2336,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c036f03045ddb4ab267807c8dd4096277c82d77e782fa4c5fc7ff6af7049e2a`  
-		Last Modified: Wed, 10 Sep 2025 04:07:32 GMT  
-		Size: 117.6 MB (117606741 bytes)  
+	-	`sha256:5232bad90f434fc5cc3b67f08ed4f5f40a7a9060be6ff99c2d44bdd86da9e7b5`  
+		Last Modified: Tue, 30 Sep 2025 23:48:36 GMT  
+		Size: 117.6 MB (117606813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bbfb77cef42855202f5c505cdde533a2415cf10336d4446b5fc8d7098c21d6e`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 10.2 KB (10240 bytes)  
+	-	`sha256:60dd5b7df53e58e3410f93f0bb265cbed80c5c39befc11886987cadc6419a094`  
+		Last Modified: Tue, 30 Sep 2025 23:48:26 GMT  
+		Size: 10.0 KB (9985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cf08bf15ebbbc04d55087227384a91e516dba88d944c3a4d331a10a68c28a6`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:9058c3fef20aa8669e64f633c6442bc40a8959d4f74a2db01ab318f46e5bfbe3`  
+		Last Modified: Tue, 30 Sep 2025 23:48:23 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5e8133a9093eb7d0c3dffa7bdfec4696f958751e7cde1befc24ab65e37f77813
+$ docker pull gcc@sha256:351c3ae867e2a2ddf502c5fcd1deac52c75990414a5a812b88b956a3274717b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f53f100d2b3d18ba0f824a13536073bfa42f9364ee54105bc5f6094f9945bb4`
+-	Image ID: `sha256:39f88ce9e112b7bbee7b680308e4041faf2a9f28e3e9f9f1161610b311a1dcb8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd5e7d593134df3a018f4a95f99fff03df970ae5d17015e3d53fa9e5e1e5323e`  
-		Last Modified: Wed, 10 Sep 2025 06:19:18 GMT  
+	-	`sha256:efff405e0c6b7397707753dcd8c7a8628e7f6dea67c472f9e6562e478e65bc53`  
+		Last Modified: Wed, 01 Oct 2025 21:19:17 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c358691189499886603eb61237afa269a32da7464d1c53732650ee18f8b45378`  
-		Last Modified: Wed, 10 Sep 2025 06:19:19 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:23d45dd81b1d3b1e542efea37d5e99bc1068abf575752068f21cd6d1c8bb788a`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
+		Size: 29.8 KB (29756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:12.5.0`
 
 ```console
-$ docker pull gcc@sha256:05e03d8ff6992de6541ab401200b3c7cefcb4b653737aaab9ae4ec76f5023e01
+$ docker pull gcc@sha256:551995842d179858240b91c56f395c343fd0804a30042fc9bb617c4b4713ce4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2607,18 +2607,18 @@ $ docker pull gcc@sha256:55e4cf8173bf8afe55a61d5341bbe6b30a34a2dffc82de7c99403ed
 ### `gcc:12.5.0` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:8fd18a8357a64476ee396098303839deab43e88d81a9747066f24f21c3f6d7eb
+$ docker pull gcc@sha256:77f6671b41d3ab350ca7f5a0a7567c70d7b860c8b2766b91c3f7d08833030d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.4 MB (407377166 bytes)**  
+-	Total Size: **407.4 MB (407407149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44c5143f8532a8f484cfd4276fab6479a146a01262226aa9a42580409cdad4bb`
+-	Image ID: `sha256:4935889aaf764264a6c321dd6bc7fe8f4c7d60a523a1563986635de53d4c21c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2642,60 +2642,60 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:3cd055d0a168dde5be6bdfccc329264cf093640eea3a66901ae13f369f3b149b`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 2.5 MB (2549234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8e0c53652f01eff3acf2f1b53900e1c2430a11629208fdca4ae92696c3458e1`  
-		Last Modified: Tue, 09 Sep 2025 11:38:45 GMT  
-		Size: 103.7 MB (103709750 bytes)  
+	-	`sha256:cc59033e6c182ba840ed40b70c46e84a381c3359dc50c03ac144790574b1f65d`  
+		Last Modified: Tue, 30 Sep 2025 05:43:15 GMT  
+		Size: 103.7 MB (103711454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31755dbf43610505696f82eb71d093f92935fc49bc4232e8a481b93bc1803ede`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 9.3 KB (9316 bytes)  
+	-	`sha256:1bffdb2565bb5c5a0d751343e89f78394a5dbb95af554b4e615b6864ec183845`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 9.3 KB (9280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a64c573f4d8a166bde90997441798f6e595f6bad47ffcb87f222c4143801ed`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:5342090f1ec8aa630b8ba02f2d62948bcebdee1d1f0e44440155fb92f4c23835`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 1.8 KB (1789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5f0443e8e5220966b73d3454c9e90bfd218df9be3f499189434781be9fcb0d15
+$ docker pull gcc@sha256:a2036db3a3889d0f9d0d1c4e6277997f79edee5dfc8ef7f582a11fc5d72183d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d558f78b2c528fadeb3ed7af1030a64f4485ed827d1217161c74e29bd0cb12`
+-	Image ID: `sha256:76fcda419a2ff4bc17b7627c86e3fa7d5d26d0d2bd91f02e51e46641e04818ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06f86efaf1a04eff9416ef4b25d02b9f865ad69c02f854971296dbe2b2948bbd`  
-		Last Modified: Tue, 09 Sep 2025 12:18:44 GMT  
+	-	`sha256:4b21726f71855f40c54422e721dd988a2cc5801ed91e6bccd145fe9c8e1d1c2b`  
+		Last Modified: Wed, 01 Oct 2025 21:18:46 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:67fd1a8769d56ca86b38a00ace89c14fe9cf3e52c4587e90347b7f8eb6bb0866`  
-		Last Modified: Tue, 09 Sep 2025 12:18:45 GMT  
+	-	`sha256:137190b905f96d51a037fba75b256e12bfbff18ab13909ab92b736da1838fb6d`  
+		Last Modified: Wed, 01 Oct 2025 21:18:47 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2797,18 +2797,18 @@ $ docker pull gcc@sha256:09b6e567c92a07ed7d962eebc483ad9c2cd8b3d9b68cc6e9468b87b
 ### `gcc:12.5.0` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:cff99702edc3441a83f3ca1eb06278605f89b18a3099c00948099e330bbadb9a
+$ docker pull gcc@sha256:d4a10ef002a7ab9067be6f5d6c324007779d515923bd6ba7f0c032ca2c239e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **502.9 MB (502863800 bytes)**  
+-	Total Size: **502.9 MB (502889686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7afbb7f4101a914b24687101b43d968b8ead430a6b245e5e7d7b1621c46ee1`
+-	Image ID: `sha256:8f71298df967b1201a726070af7ff94ed21238524bb957bc54c4e16a81596c52`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2832,78 +2832,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecfec52d2230c3d45ffae847aecd286634a7b4e6d618e57da578b86b4ccd492`  
-		Last Modified: Wed, 10 Sep 2025 03:07:48 GMT  
-		Size: 137.6 MB (137554545 bytes)  
+	-	`sha256:4db9af855df728b6cc0e93ecb0ad09b95e7a16f5c7553c3ab8163c55c4f06124`  
+		Last Modified: Wed, 01 Oct 2025 01:42:13 GMT  
+		Size: 137.6 MB (137554221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2021f0e7f23ca74f296947e1a703eb50ec5759cc0565970d4164c5e8cf6ca692`  
-		Last Modified: Wed, 10 Sep 2025 03:01:57 GMT  
-		Size: 9.7 KB (9746 bytes)  
+	-	`sha256:c9d33bffca80741188b52e18433bc1bfbab037104b1705800c907921b3661a0d`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfaccb0ea54bd7e1a42de3e4508a5268045568034e3f507c749e9e15fa7a240`  
-		Last Modified: Wed, 10 Sep 2025 03:01:53 GMT  
+	-	`sha256:1f31825b6833b7d464e5017c2695df00ab854116c96726f6ef3cc2e835df67ee`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
 		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9bd794e131831af9c2d4c9a50e49eef567cac936a64fae3c3374a7a99b3bf10e
+$ docker pull gcc@sha256:45b25689a2d2cb9bf935eecd9737acf23fc87a0b9b227a82fac61f689f44016e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15909668 bytes)**  
+-	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b466fb04c3f27081ca7065a75c4419217b9fda2411cf012cda779e47fc08603d`
+-	Image ID: `sha256:758f8e1aaeb4bbfea160f487f6ab4b74612a054d4683a084e338eaea185df990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eacd824d1e98eeb1efbd3705dcdf9b72a1008d17c091ad465256cffc4f4155ff`  
-		Last Modified: Wed, 10 Sep 2025 03:19:01 GMT  
+	-	`sha256:957377566a284c9a770c0362d4f55afcc90313674ad7e2f49401539ee0e880b5`  
+		Last Modified: Wed, 01 Oct 2025 21:19:07 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe1ec37e0d6e1b206fd832ea417d01ae1c1aeaa54a2500d6b2ac5e9486b99573`  
-		Last Modified: Wed, 10 Sep 2025 03:19:02 GMT  
-		Size: 29.8 KB (29817 bytes)  
+	-	`sha256:e8e0ddc47337b6de61c0ada4d108fa1e54d0d1bad12e629cce278d077fec585c`  
+		Last Modified: Wed, 01 Oct 2025 21:19:08 GMT  
+		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5.0` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:9b1e35888a031e15bb7d681a3f30aa3d9d821262525fe1f22ab29117e75516a2
+$ docker pull gcc@sha256:b9d3829e5dc4cdd60f253b6d26bcabb33a5b38090c9255a336c2aaff912ff726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.5 MB (438472450 bytes)**  
+-	Total Size: **438.5 MB (438497675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b703cf7331830bc5618274916d1416504e1885715e095cd722848eb83954715`
+-	Image ID: `sha256:307fe3c4a8a6c7bd5ead50d543b381d38faf279cab6bf52c77fd84562041ad36`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -2927,67 +2927,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c036f03045ddb4ab267807c8dd4096277c82d77e782fa4c5fc7ff6af7049e2a`  
-		Last Modified: Wed, 10 Sep 2025 04:07:32 GMT  
-		Size: 117.6 MB (117606741 bytes)  
+	-	`sha256:5232bad90f434fc5cc3b67f08ed4f5f40a7a9060be6ff99c2d44bdd86da9e7b5`  
+		Last Modified: Tue, 30 Sep 2025 23:48:36 GMT  
+		Size: 117.6 MB (117606813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bbfb77cef42855202f5c505cdde533a2415cf10336d4446b5fc8d7098c21d6e`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 10.2 KB (10240 bytes)  
+	-	`sha256:60dd5b7df53e58e3410f93f0bb265cbed80c5c39befc11886987cadc6419a094`  
+		Last Modified: Tue, 30 Sep 2025 23:48:26 GMT  
+		Size: 10.0 KB (9985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cf08bf15ebbbc04d55087227384a91e516dba88d944c3a4d331a10a68c28a6`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:9058c3fef20aa8669e64f633c6442bc40a8959d4f74a2db01ab318f46e5bfbe3`  
+		Last Modified: Tue, 30 Sep 2025 23:48:23 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5e8133a9093eb7d0c3dffa7bdfec4696f958751e7cde1befc24ab65e37f77813
+$ docker pull gcc@sha256:351c3ae867e2a2ddf502c5fcd1deac52c75990414a5a812b88b956a3274717b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f53f100d2b3d18ba0f824a13536073bfa42f9364ee54105bc5f6094f9945bb4`
+-	Image ID: `sha256:39f88ce9e112b7bbee7b680308e4041faf2a9f28e3e9f9f1161610b311a1dcb8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd5e7d593134df3a018f4a95f99fff03df970ae5d17015e3d53fa9e5e1e5323e`  
-		Last Modified: Wed, 10 Sep 2025 06:19:18 GMT  
+	-	`sha256:efff405e0c6b7397707753dcd8c7a8628e7f6dea67c472f9e6562e478e65bc53`  
+		Last Modified: Wed, 01 Oct 2025 21:19:17 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c358691189499886603eb61237afa269a32da7464d1c53732650ee18f8b45378`  
-		Last Modified: Wed, 10 Sep 2025 06:19:19 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:23d45dd81b1d3b1e542efea37d5e99bc1068abf575752068f21cd6d1c8bb788a`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
+		Size: 29.8 KB (29756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:12.5.0-bookworm`
 
 ```console
-$ docker pull gcc@sha256:165944d1df2d54230afb55e2651f28b8f5519b24a8b1dfb7a4822880fcded66a
+$ docker pull gcc@sha256:551995842d179858240b91c56f395c343fd0804a30042fc9bb617c4b4713ce4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3198,18 +3198,18 @@ $ docker pull gcc@sha256:55e4cf8173bf8afe55a61d5341bbe6b30a34a2dffc82de7c99403ed
 ### `gcc:12.5.0-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:8fd18a8357a64476ee396098303839deab43e88d81a9747066f24f21c3f6d7eb
+$ docker pull gcc@sha256:77f6671b41d3ab350ca7f5a0a7567c70d7b860c8b2766b91c3f7d08833030d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **407.4 MB (407377166 bytes)**  
+-	Total Size: **407.4 MB (407407149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44c5143f8532a8f484cfd4276fab6479a146a01262226aa9a42580409cdad4bb`
+-	Image ID: `sha256:4935889aaf764264a6c321dd6bc7fe8f4c7d60a523a1563986635de53d4c21c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -3233,78 +3233,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:3cd055d0a168dde5be6bdfccc329264cf093640eea3a66901ae13f369f3b149b`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 2.5 MB (2549234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8e0c53652f01eff3acf2f1b53900e1c2430a11629208fdca4ae92696c3458e1`  
-		Last Modified: Tue, 09 Sep 2025 11:38:45 GMT  
-		Size: 103.7 MB (103709750 bytes)  
+	-	`sha256:cc59033e6c182ba840ed40b70c46e84a381c3359dc50c03ac144790574b1f65d`  
+		Last Modified: Tue, 30 Sep 2025 05:43:15 GMT  
+		Size: 103.7 MB (103711454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31755dbf43610505696f82eb71d093f92935fc49bc4232e8a481b93bc1803ede`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 9.3 KB (9316 bytes)  
+	-	`sha256:1bffdb2565bb5c5a0d751343e89f78394a5dbb95af554b4e615b6864ec183845`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 9.3 KB (9280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90a64c573f4d8a166bde90997441798f6e595f6bad47ffcb87f222c4143801ed`  
-		Last Modified: Tue, 09 Sep 2025 11:38:35 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:5342090f1ec8aa630b8ba02f2d62948bcebdee1d1f0e44440155fb92f4c23835`  
+		Last Modified: Tue, 30 Sep 2025 05:43:02 GMT  
+		Size: 1.8 KB (1789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5f0443e8e5220966b73d3454c9e90bfd218df9be3f499189434781be9fcb0d15
+$ docker pull gcc@sha256:a2036db3a3889d0f9d0d1c4e6277997f79edee5dfc8ef7f582a11fc5d72183d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73d558f78b2c528fadeb3ed7af1030a64f4485ed827d1217161c74e29bd0cb12`
+-	Image ID: `sha256:76fcda419a2ff4bc17b7627c86e3fa7d5d26d0d2bd91f02e51e46641e04818ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06f86efaf1a04eff9416ef4b25d02b9f865ad69c02f854971296dbe2b2948bbd`  
-		Last Modified: Tue, 09 Sep 2025 12:18:44 GMT  
+	-	`sha256:4b21726f71855f40c54422e721dd988a2cc5801ed91e6bccd145fe9c8e1d1c2b`  
+		Last Modified: Wed, 01 Oct 2025 21:18:46 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:67fd1a8769d56ca86b38a00ace89c14fe9cf3e52c4587e90347b7f8eb6bb0866`  
-		Last Modified: Tue, 09 Sep 2025 12:18:45 GMT  
+	-	`sha256:137190b905f96d51a037fba75b256e12bfbff18ab13909ab92b736da1838fb6d`  
+		Last Modified: Wed, 01 Oct 2025 21:18:47 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5.0-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:eb397d7fe29ea0db08acce1543d4b250c86a38cb9cfde3f82fc6664cdf85b033
+$ docker pull gcc@sha256:c026a7c19395e2e6f310bc114ec082e9073a403ae5064a47345750e7c9ed9dc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **467.8 MB (467756413 bytes)**  
+-	Total Size: **467.8 MB (467795932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41ac8580522aa946d9228618a30e19157b6c64e229368ac98c9121df89b29814`
+-	Image ID: `sha256:fe78b0c90aebfdc47600680abaf21cf93d829b34954d8ec5b74d6fb468ea328c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -3328,78 +3328,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb98227ee58e424d6fc7fcdbfa3a7507cd87eec1effcdabbb38d2dc0550fb9a`  
-		Last Modified: Tue, 09 Sep 2025 04:14:02 GMT  
-		Size: 2.7 MB (2734063 bytes)  
+	-	`sha256:1364f33122bcc1a7cb97b8e31683062ed6e01fb4255cbb63d2fbfa74519e5e4a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:34 GMT  
+		Size: 2.7 MB (2734184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e41749e179b5cc3d7b4456eb567317c8f623b24471a54909436ce887b767ba7`  
-		Last Modified: Tue, 09 Sep 2025 04:38:32 GMT  
-		Size: 125.8 MB (125767549 bytes)  
+	-	`sha256:26ac6fe458652b797cefd59d19cb83dd62dd6fc8016e58c23ec2696a76e85e50`  
+		Last Modified: Tue, 30 Sep 2025 03:54:52 GMT  
+		Size: 125.8 MB (125767685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3f7fde3e391fcb06eff49ce77e63235f76fa413de28a46f90c21f8a3a902ea2`  
-		Last Modified: Tue, 09 Sep 2025 04:14:10 GMT  
-		Size: 9.4 KB (9412 bytes)  
+	-	`sha256:717039e7fe0fb70269be4f897351e67bb7bed05edaa1ed754a7a61aeb6f14e70`  
+		Last Modified: Tue, 30 Sep 2025 03:54:30 GMT  
+		Size: 9.4 KB (9429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835e18df4f20584e51f5bc9950fbe7f79de6fa1d51cba345d08dec25ba1a15dd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:14 GMT  
-		Size: 1.8 KB (1807 bytes)  
+	-	`sha256:286c4974d3720eef465547fd3e36c34f43a5551da1f70e5d6ea4549ca46b9b7a`  
+		Last Modified: Tue, 30 Sep 2025 03:54:32 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:760ff93b2fb47a81de93e44a9375bcfd2a30524584bc8f1109370f441f48b239
+$ docker pull gcc@sha256:09b6e567c92a07ed7d962eebc483ad9c2cd8b3d9b68cc6e9468b87bc8ada3769
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fa26f9fc3ee5e98a715f4c71fc72bea5afd0d2186aafdcfc1002847679ccfaf`
+-	Image ID: `sha256:9ed030f82bf43330b4be9d1aa2fbcf9ea181b89f747c4b1b749d442032778a1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:138fe981602b434ee438cb23af42d937afaac8252d461e3d0c799f0ecd27bc37`  
-		Last Modified: Tue, 09 Sep 2025 06:18:46 GMT  
+	-	`sha256:dc0ac1b036b9761a24484962972af17fe05440e5730256018935d6660a80f4c4`  
+		Last Modified: Wed, 01 Oct 2025 15:31:05 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78d208fc8cdd06f987cd617c6bcbac927020c0aaa39eb9585d3c0e33761671f8`  
-		Last Modified: Tue, 09 Sep 2025 06:18:47 GMT  
+	-	`sha256:a6683bcda8ef2b0f4a9b694f96046e2ff25d8ed80e7604599ff4a9b435460e38`  
+		Last Modified: Wed, 01 Oct 2025 15:31:06 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5.0-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:cff99702edc3441a83f3ca1eb06278605f89b18a3099c00948099e330bbadb9a
+$ docker pull gcc@sha256:d4a10ef002a7ab9067be6f5d6c324007779d515923bd6ba7f0c032ca2c239e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **502.9 MB (502863800 bytes)**  
+-	Total Size: **502.9 MB (502889686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f7afbb7f4101a914b24687101b43d968b8ead430a6b245e5e7d7b1621c46ee1`
+-	Image ID: `sha256:8f71298df967b1201a726070af7ff94ed21238524bb957bc54c4e16a81596c52`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -3423,78 +3423,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ecfec52d2230c3d45ffae847aecd286634a7b4e6d618e57da578b86b4ccd492`  
-		Last Modified: Wed, 10 Sep 2025 03:07:48 GMT  
-		Size: 137.6 MB (137554545 bytes)  
+	-	`sha256:4db9af855df728b6cc0e93ecb0ad09b95e7a16f5c7553c3ab8163c55c4f06124`  
+		Last Modified: Wed, 01 Oct 2025 01:42:13 GMT  
+		Size: 137.6 MB (137554221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2021f0e7f23ca74f296947e1a703eb50ec5759cc0565970d4164c5e8cf6ca692`  
-		Last Modified: Wed, 10 Sep 2025 03:01:57 GMT  
-		Size: 9.7 KB (9746 bytes)  
+	-	`sha256:c9d33bffca80741188b52e18433bc1bfbab037104b1705800c907921b3661a0d`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
+		Size: 9.6 KB (9614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfaccb0ea54bd7e1a42de3e4508a5268045568034e3f507c749e9e15fa7a240`  
-		Last Modified: Wed, 10 Sep 2025 03:01:53 GMT  
+	-	`sha256:1f31825b6833b7d464e5017c2695df00ab854116c96726f6ef3cc2e835df67ee`  
+		Last Modified: Wed, 01 Oct 2025 01:42:25 GMT  
 		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9bd794e131831af9c2d4c9a50e49eef567cac936a64fae3c3374a7a99b3bf10e
+$ docker pull gcc@sha256:45b25689a2d2cb9bf935eecd9737acf23fc87a0b9b227a82fac61f689f44016e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15909668 bytes)**  
+-	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b466fb04c3f27081ca7065a75c4419217b9fda2411cf012cda779e47fc08603d`
+-	Image ID: `sha256:758f8e1aaeb4bbfea160f487f6ab4b74612a054d4683a084e338eaea185df990`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eacd824d1e98eeb1efbd3705dcdf9b72a1008d17c091ad465256cffc4f4155ff`  
-		Last Modified: Wed, 10 Sep 2025 03:19:01 GMT  
+	-	`sha256:957377566a284c9a770c0362d4f55afcc90313674ad7e2f49401539ee0e880b5`  
+		Last Modified: Wed, 01 Oct 2025 21:19:07 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe1ec37e0d6e1b206fd832ea417d01ae1c1aeaa54a2500d6b2ac5e9486b99573`  
-		Last Modified: Wed, 10 Sep 2025 03:19:02 GMT  
-		Size: 29.8 KB (29817 bytes)  
+	-	`sha256:e8e0ddc47337b6de61c0ada4d108fa1e54d0d1bad12e629cce278d077fec585c`  
+		Last Modified: Wed, 01 Oct 2025 21:19:08 GMT  
+		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:12.5.0-bookworm` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:9b1e35888a031e15bb7d681a3f30aa3d9d821262525fe1f22ab29117e75516a2
+$ docker pull gcc@sha256:b9d3829e5dc4cdd60f253b6d26bcabb33a5b38090c9255a336c2aaff912ff726
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.5 MB (438472450 bytes)**  
+-	Total Size: **438.5 MB (438497675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b703cf7331830bc5618274916d1416504e1885715e095cd722848eb83954715`
+-	Image ID: `sha256:307fe3c4a8a6c7bd5ead50d543b381d38faf279cab6bf52c77fd84562041ad36`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -3518,67 +3518,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c036f03045ddb4ab267807c8dd4096277c82d77e782fa4c5fc7ff6af7049e2a`  
-		Last Modified: Wed, 10 Sep 2025 04:07:32 GMT  
-		Size: 117.6 MB (117606741 bytes)  
+	-	`sha256:5232bad90f434fc5cc3b67f08ed4f5f40a7a9060be6ff99c2d44bdd86da9e7b5`  
+		Last Modified: Tue, 30 Sep 2025 23:48:36 GMT  
+		Size: 117.6 MB (117606813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bbfb77cef42855202f5c505cdde533a2415cf10336d4446b5fc8d7098c21d6e`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 10.2 KB (10240 bytes)  
+	-	`sha256:60dd5b7df53e58e3410f93f0bb265cbed80c5c39befc11886987cadc6419a094`  
+		Last Modified: Tue, 30 Sep 2025 23:48:26 GMT  
+		Size: 10.0 KB (9985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cf08bf15ebbbc04d55087227384a91e516dba88d944c3a4d331a10a68c28a6`  
-		Last Modified: Wed, 10 Sep 2025 03:19:44 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:9058c3fef20aa8669e64f633c6442bc40a8959d4f74a2db01ab318f46e5bfbe3`  
+		Last Modified: Tue, 30 Sep 2025 23:48:23 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:12.5.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5e8133a9093eb7d0c3dffa7bdfec4696f958751e7cde1befc24ab65e37f77813
+$ docker pull gcc@sha256:351c3ae867e2a2ddf502c5fcd1deac52c75990414a5a812b88b956a3274717b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f53f100d2b3d18ba0f824a13536073bfa42f9364ee54105bc5f6094f9945bb4`
+-	Image ID: `sha256:39f88ce9e112b7bbee7b680308e4041faf2a9f28e3e9f9f1161610b311a1dcb8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd5e7d593134df3a018f4a95f99fff03df970ae5d17015e3d53fa9e5e1e5323e`  
-		Last Modified: Wed, 10 Sep 2025 06:19:18 GMT  
+	-	`sha256:efff405e0c6b7397707753dcd8c7a8628e7f6dea67c472f9e6562e478e65bc53`  
+		Last Modified: Wed, 01 Oct 2025 21:19:17 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c358691189499886603eb61237afa269a32da7464d1c53732650ee18f8b45378`  
-		Last Modified: Wed, 10 Sep 2025 06:19:19 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:23d45dd81b1d3b1e542efea37d5e99bc1068abf575752068f21cd6d1c8bb788a`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
+		Size: 29.8 KB (29756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:13`
 
 ```console
-$ docker pull gcc@sha256:5395a1f7f7afa9f3129cb7492ca2127a88c0138a483243f4773f1f28f025ff88
+$ docker pull gcc@sha256:2ef9a351fb7ced0f61a4ab932ce3c09b39410d280d8f2e6b709d920afc4639d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3789,18 +3789,18 @@ $ docker pull gcc@sha256:acc5cf9263d522bb686756a6a09edbaed54ea1c153cebe01b93db5a
 ### `gcc:13` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:18ee75a611fcdfdc33d81c39a4b7b895d7a1d44149f3f21188b2733793db4e4b
+$ docker pull gcc@sha256:6095dd39a218d23fa33cf1d1d2be70f8dc995f1f190d9d9675bde33c61d908f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.3 MB (414259203 bytes)**  
+-	Total Size: **414.3 MB (414300225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7a9ee63bcace4b456ff9b3a2acdfed4a69cb500083ea95c44ece9eb4d9eb65`
+-	Image ID: `sha256:25541d4ec2f47a05082da39a6f5f34e79c8dafef6b1c4db8dbc8a2c8551570be`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -3824,78 +3824,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:9ca3655bca4a19e69b8dfae41d95d8e25d8f88131acaae468090113c1dfd53c8`  
+		Last Modified: Tue, 30 Sep 2025 05:40:27 GMT  
+		Size: 2.5 MB (2549272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db42b2ab7aa03691c2cde2869974d68771954ad506c86aa767edb26f46ff7204`  
-		Last Modified: Tue, 09 Sep 2025 17:31:06 GMT  
-		Size: 110.6 MB (110591796 bytes)  
+	-	`sha256:f8939ee77064827bae0e96c7f90f1137ca106c5aec8c5e9fe40062360eac540a`  
+		Last Modified: Tue, 30 Sep 2025 05:40:43 GMT  
+		Size: 110.6 MB (110604455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f245954e1d7d5c2fc8de0390841300555d5742a1dd6c64fe055f7d542cb411`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 9.3 KB (9302 bytes)  
+	-	`sha256:4d9997eefc6760e076d5e029dbf1056b4a6514252bdfbb45578907dd9c58ec51`  
+		Last Modified: Tue, 30 Sep 2025 05:40:29 GMT  
+		Size: 9.3 KB (9314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf3d1770b94a97a3c927a002b25e784313625213ca28b7c9d4d2ec265d5aa9ac`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 1.8 KB (1813 bytes)  
+	-	`sha256:e8da21099dd413c6fa295e8524299349b7d029cfafb6df42b6e302c140a14249`  
+		Last Modified: Tue, 30 Sep 2025 05:40:30 GMT  
+		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5a9375bfb1c1d7b085112efced9ca95fcae0bf5a73c01725f28e67a7639fdf10
+$ docker pull gcc@sha256:47efb294cb9b40cd7eff88c39e2e8bbdb1804ac37b87976a369d2ca533d191dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79fb4adbad7d6b45292a00cef523bb0c2ff485f5141155f883c358d62d901c33`
+-	Image ID: `sha256:3f204a7e1d56b3a9ef89877b1a7a5c3ca970beb3ccaa97b422a4e438f3a133ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03243c17644f1e5eabebc4936ad0bafaf60cf6c0d69177ed7970d36788f36265`  
-		Last Modified: Tue, 09 Sep 2025 18:18:44 GMT  
+	-	`sha256:e1f3e8b2a04233d64bf42cc008baf71adb706b26e350ebf82f1faa451439f0d3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df9377442a577569a97c5e1be2f7dfacc9e83d89108e77a01ac39cd1b7a7e8c7`  
-		Last Modified: Tue, 09 Sep 2025 18:18:45 GMT  
+	-	`sha256:c0f97110e295e4bd81fc6e84bde7a16e76a4f3b42bea99e1106ab7e9a77e1733`  
+		Last Modified: Wed, 01 Oct 2025 21:19:19 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:b5cfe8cb7778dec4f72ebce0797c0ec44b9b90aa251b8b88a1014f1a98550992
+$ docker pull gcc@sha256:cd34e8cc99e673741278d17ac523edd2da5e9c529565a09c22e9ad9b8504f63b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **478.9 MB (478912606 bytes)**  
+-	Total Size: **479.0 MB (478952284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24221db2058dcb06cfc2ea422f0b7ae5b20ee6362e9a0f94d584b297f9fbb5a6`
+-	Image ID: `sha256:8c95548081d4a663c2a4897dcd439f26f1ac41b4995c0fb6b9c991c56f5c8c11`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -3919,78 +3919,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66253bce4d65682969ba60e116457c9f46076f9bee90892782057c7d141335f4`  
-		Last Modified: Tue, 09 Sep 2025 04:13:58 GMT  
-		Size: 2.7 MB (2734118 bytes)  
+	-	`sha256:89b83d5718c2b0af5deb78b543ff98cf0cc36088448ab196fd8b5c07e71c857e`  
+		Last Modified: Tue, 30 Sep 2025 03:59:06 GMT  
+		Size: 2.7 MB (2734135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afe21933d181486bf7152a9a5bb344ef69c82e95c87e65d751a8c150432e0a4b`  
-		Last Modified: Tue, 09 Sep 2025 09:50:26 GMT  
-		Size: 136.9 MB (136923672 bytes)  
+	-	`sha256:0dbf985d8034ddbe5624d2848e56aec37e0237be59f8cbdda63a255c5f0030b6`  
+		Last Modified: Wed, 01 Oct 2025 11:05:07 GMT  
+		Size: 136.9 MB (136924097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707f3c752d453ec7ec55b087dcc17b68ffd27af981a4ad99982817400909997b`  
-		Last Modified: Tue, 09 Sep 2025 04:14:06 GMT  
-		Size: 9.4 KB (9435 bytes)  
+	-	`sha256:e619474f867473e780b52f13cd2f51fdebf283af5e03d515179b27ec902734e1`  
+		Last Modified: Tue, 30 Sep 2025 03:59:05 GMT  
+		Size: 9.4 KB (9417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb8ef5c7dbc7c1ab0eef744081b67351b2ba469ff54763578f68369bc35fcdd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:09 GMT  
-		Size: 1.8 KB (1799 bytes)  
+	-	`sha256:b7b79dfefba989ba7038f00fb9e9922b1e38913af3889cd635b5436c67c5b31b`  
+		Last Modified: Tue, 30 Sep 2025 03:59:04 GMT  
+		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5dab61777610b9b64d6ce00b29640b0766d32b7a34fe23209db1d9b340ecb1c7
+$ docker pull gcc@sha256:c141708293414a4a82d43569fe05300173798f7e14fa18adefbcef0ce37bd1de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0b308edd2817cdbda1abda9c5d42611724fd6720cf8a81ac136c0f789fdc444`
+-	Image ID: `sha256:ddee1a61425efd73b01caf188a98c12bd9368283e25b893710d7c91c18f250ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd4eb0db65cf5c548461b8bb8bdde953bcf7b97d2f79c422c783afaffa776ada`  
-		Last Modified: Tue, 09 Sep 2025 06:19:10 GMT  
+	-	`sha256:e05d24099f0aee72de59e2a17bc024a623f7bf70083eff406195ba4b76bbf19c`  
+		Last Modified: Wed, 01 Oct 2025 15:31:30 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:383275b97a8c4b889e9eecd610a2bf25fbbd3151a00d0f39b37bd673d8f18e6e`  
-		Last Modified: Tue, 09 Sep 2025 06:19:11 GMT  
+	-	`sha256:ea3e763e04c3bf94c1ab87c9b406a9380819695678af7397f885413d044b522b`  
+		Last Modified: Wed, 01 Oct 2025 15:31:31 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:a7dbffa5f3a4d1dd376537c00713c9b49fe15b1c6ce7a7a832594e4e63bd077d
+$ docker pull gcc@sha256:7fb757a99593e7c64d676b3b77f0144dba2151603585e03ca1bd514664464c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **510.9 MB (510933803 bytes)**  
+-	Total Size: **511.0 MB (510959450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64a4ddb3e35d619b686754547f393d18edb7994dc230b78cf3e980eba57cb5e8`
+-	Image ID: `sha256:42e45ccac4099c12c1b1a0a82129b6c8a818666ba455682122c0c878d7bb79e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -4014,78 +4014,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab5c70d23f6de7407a1820ad3ff75e758e041444b7d497092b13dd120752731d`  
-		Last Modified: Wed, 10 Sep 2025 10:56:41 GMT  
-		Size: 145.6 MB (145624534 bytes)  
+	-	`sha256:385d899aef4b76af828e9adc2fa1f3eb16192771c2d89fe36d3a732dc3e81827`  
+		Last Modified: Wed, 01 Oct 2025 00:53:13 GMT  
+		Size: 145.6 MB (145623963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fb5d3d5376ccc5227a08239b0967b145f24ad176dc378001b5649176f5f3d86`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 9.8 KB (9760 bytes)  
+	-	`sha256:7686bff3695524c2601522f2ff9aa9ab58e321bc502d110d0343d4e89b013c44`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63fbe1820bc3910e2c25adea84e7de59381366777021e261940eada09f64b5ae`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 1.8 KB (1815 bytes)  
+	-	`sha256:436ef9722ff590c1e737a54004253827f8b1d753c40b3170c007f85397d7ae46`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:03486ce1329e4bdd9f5f8cc32a7f06fbb50cfa5888d3e6dfb5ef58b43fb58dfd
+$ docker pull gcc@sha256:1babac8bd3414ee7fd1a772b5a8b665fe415371600b3c94e5e96460f9872f466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40d01b1626d61d74e39857698d8045924c7af2f7e624ef0cdb41d7f1c723647b`
+-	Image ID: `sha256:dcf80b9aed7028e8c152d35006cab194909294d5e782d7bd1437ad7a70382d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1ac1f8ae33982774bc92458079db6aacbe173daf66761bc7a8cf18e154aa5d`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:f7fc9003837f206bcedc846f2e4b9428d68a95d59693690f5c4b29b6ae8c151d`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85bf2d1d10d9694ea8f17d7ecac9d88b5b6a572db913b3032c00d6e1723e31b1`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:e4a52b130d4e85cba4f28fd92d4341b8291e1cee5b0b489dc750d2d01804c685`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:b73b2f835bca57c02d1f2ac84829a1cad72d0bd70446cafb13fa0040052e0ebe
+$ docker pull gcc@sha256:799d9468dd7ebaf3836718157e14d92e8552f72d86e7489759b4a4f237469272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.7 MB (469666165 bytes)**  
+-	Total Size: **469.7 MB (469691584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84429faf9e79ffbb5dc8ed8f5ca7b5663fc29d763a4baaa2aa2021167c23dfcf`
+-	Image ID: `sha256:6115202b5adc7c99571cbd5e601439f2e58115471c4b05dfeebbab575de73732`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -4109,67 +4109,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:517876531befa71956d231a8b5cbd3f0ea5285d2661b2a8997e2778990a90897`  
-		Last Modified: Wed, 10 Sep 2025 02:07:35 GMT  
-		Size: 148.8 MB (148800482 bytes)  
+	-	`sha256:ac237f839a000ac1be93efd1604ec469d210b5c1cf88225bb578ba24a33a190c`  
+		Last Modified: Tue, 30 Sep 2025 22:07:46 GMT  
+		Size: 148.8 MB (148800721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4b684c8ebd6401a9a85f95960a02be9530f448c427312356585b7da6d569788`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 10.2 KB (10213 bytes)  
+	-	`sha256:42003d627cbd2b2b28e1f333f65c1f03a8575f46174a0fa0f2cf9e333f4a5a65`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 10.0 KB (9980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c96246047b0b854ae9531f4fa5a2d27814fad217dae8a29d220e73e077eaad57`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:650f6ce927a103d526f2f9434b3129733571cd727ea92bcc96476451bd15f86c`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3acd46cab03041e5cc4fcb212d2a78ce6aba6ff9df2a997ee35c409e87f65b85
+$ docker pull gcc@sha256:5a4a4056234d0940a21bfe1803d8d6c080f6b3457f21586c97d39f5aef53e01d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ad98d35d75a3c2f72ae4c7262d975ac321d511c2e1447455463c498fc37fe09`
+-	Image ID: `sha256:5d70b5b549bff06318bfa355d629008f9ca3bd38e3752b7e6d0622f75ea94d16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd79efb877a9082bbc59e92d1b8c2128a60927b658e92453ff058fd4452b2306`  
-		Last Modified: Wed, 10 Sep 2025 03:19:38 GMT  
+	-	`sha256:51552c6d6233ac56eb601cbf7611a036127bf8ce55873f79e4573fadd55c6ca3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:49 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89d24016a0f86c4a1aaf560133d5cc71d3e0de10e253b905fccc9612a8064be2`  
-		Last Modified: Wed, 10 Sep 2025 03:19:39 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:27d99bcc6c80edfeabe0a4b0856090889a5b62d90fb49251ad608c5a4f6bd92f`  
+		Last Modified: Wed, 01 Oct 2025 21:19:50 GMT  
+		Size: 29.8 KB (29755 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:13-bookworm`
 
 ```console
-$ docker pull gcc@sha256:efdac2c67d35cfb039de1ed4deede16cd3167c25a7275d31d16ab1a479aba161
+$ docker pull gcc@sha256:2ef9a351fb7ced0f61a4ab932ce3c09b39410d280d8f2e6b709d920afc4639d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4380,18 +4380,18 @@ $ docker pull gcc@sha256:acc5cf9263d522bb686756a6a09edbaed54ea1c153cebe01b93db5a
 ### `gcc:13-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:18ee75a611fcdfdc33d81c39a4b7b895d7a1d44149f3f21188b2733793db4e4b
+$ docker pull gcc@sha256:6095dd39a218d23fa33cf1d1d2be70f8dc995f1f190d9d9675bde33c61d908f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.3 MB (414259203 bytes)**  
+-	Total Size: **414.3 MB (414300225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7a9ee63bcace4b456ff9b3a2acdfed4a69cb500083ea95c44ece9eb4d9eb65`
+-	Image ID: `sha256:25541d4ec2f47a05082da39a6f5f34e79c8dafef6b1c4db8dbc8a2c8551570be`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -4415,60 +4415,60 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:9ca3655bca4a19e69b8dfae41d95d8e25d8f88131acaae468090113c1dfd53c8`  
+		Last Modified: Tue, 30 Sep 2025 05:40:27 GMT  
+		Size: 2.5 MB (2549272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db42b2ab7aa03691c2cde2869974d68771954ad506c86aa767edb26f46ff7204`  
-		Last Modified: Tue, 09 Sep 2025 17:31:06 GMT  
-		Size: 110.6 MB (110591796 bytes)  
+	-	`sha256:f8939ee77064827bae0e96c7f90f1137ca106c5aec8c5e9fe40062360eac540a`  
+		Last Modified: Tue, 30 Sep 2025 05:40:43 GMT  
+		Size: 110.6 MB (110604455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f245954e1d7d5c2fc8de0390841300555d5742a1dd6c64fe055f7d542cb411`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 9.3 KB (9302 bytes)  
+	-	`sha256:4d9997eefc6760e076d5e029dbf1056b4a6514252bdfbb45578907dd9c58ec51`  
+		Last Modified: Tue, 30 Sep 2025 05:40:29 GMT  
+		Size: 9.3 KB (9314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf3d1770b94a97a3c927a002b25e784313625213ca28b7c9d4d2ec265d5aa9ac`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 1.8 KB (1813 bytes)  
+	-	`sha256:e8da21099dd413c6fa295e8524299349b7d029cfafb6df42b6e302c140a14249`  
+		Last Modified: Tue, 30 Sep 2025 05:40:30 GMT  
+		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5a9375bfb1c1d7b085112efced9ca95fcae0bf5a73c01725f28e67a7639fdf10
+$ docker pull gcc@sha256:47efb294cb9b40cd7eff88c39e2e8bbdb1804ac37b87976a369d2ca533d191dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79fb4adbad7d6b45292a00cef523bb0c2ff485f5141155f883c358d62d901c33`
+-	Image ID: `sha256:3f204a7e1d56b3a9ef89877b1a7a5c3ca970beb3ccaa97b422a4e438f3a133ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03243c17644f1e5eabebc4936ad0bafaf60cf6c0d69177ed7970d36788f36265`  
-		Last Modified: Tue, 09 Sep 2025 18:18:44 GMT  
+	-	`sha256:e1f3e8b2a04233d64bf42cc008baf71adb706b26e350ebf82f1faa451439f0d3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df9377442a577569a97c5e1be2f7dfacc9e83d89108e77a01ac39cd1b7a7e8c7`  
-		Last Modified: Tue, 09 Sep 2025 18:18:45 GMT  
+	-	`sha256:c0f97110e295e4bd81fc6e84bde7a16e76a4f3b42bea99e1106ab7e9a77e1733`  
+		Last Modified: Wed, 01 Oct 2025 21:19:19 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4570,18 +4570,18 @@ $ docker pull gcc@sha256:c141708293414a4a82d43569fe05300173798f7e14fa18adefbcef0
 ### `gcc:13-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:a7dbffa5f3a4d1dd376537c00713c9b49fe15b1c6ce7a7a832594e4e63bd077d
+$ docker pull gcc@sha256:7fb757a99593e7c64d676b3b77f0144dba2151603585e03ca1bd514664464c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **510.9 MB (510933803 bytes)**  
+-	Total Size: **511.0 MB (510959450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64a4ddb3e35d619b686754547f393d18edb7994dc230b78cf3e980eba57cb5e8`
+-	Image ID: `sha256:42e45ccac4099c12c1b1a0a82129b6c8a818666ba455682122c0c878d7bb79e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -4605,78 +4605,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab5c70d23f6de7407a1820ad3ff75e758e041444b7d497092b13dd120752731d`  
-		Last Modified: Wed, 10 Sep 2025 10:56:41 GMT  
-		Size: 145.6 MB (145624534 bytes)  
+	-	`sha256:385d899aef4b76af828e9adc2fa1f3eb16192771c2d89fe36d3a732dc3e81827`  
+		Last Modified: Wed, 01 Oct 2025 00:53:13 GMT  
+		Size: 145.6 MB (145623963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fb5d3d5376ccc5227a08239b0967b145f24ad176dc378001b5649176f5f3d86`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 9.8 KB (9760 bytes)  
+	-	`sha256:7686bff3695524c2601522f2ff9aa9ab58e321bc502d110d0343d4e89b013c44`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63fbe1820bc3910e2c25adea84e7de59381366777021e261940eada09f64b5ae`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 1.8 KB (1815 bytes)  
+	-	`sha256:436ef9722ff590c1e737a54004253827f8b1d753c40b3170c007f85397d7ae46`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:03486ce1329e4bdd9f5f8cc32a7f06fbb50cfa5888d3e6dfb5ef58b43fb58dfd
+$ docker pull gcc@sha256:1babac8bd3414ee7fd1a772b5a8b665fe415371600b3c94e5e96460f9872f466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40d01b1626d61d74e39857698d8045924c7af2f7e624ef0cdb41d7f1c723647b`
+-	Image ID: `sha256:dcf80b9aed7028e8c152d35006cab194909294d5e782d7bd1437ad7a70382d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1ac1f8ae33982774bc92458079db6aacbe173daf66761bc7a8cf18e154aa5d`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:f7fc9003837f206bcedc846f2e4b9428d68a95d59693690f5c4b29b6ae8c151d`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85bf2d1d10d9694ea8f17d7ecac9d88b5b6a572db913b3032c00d6e1723e31b1`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:e4a52b130d4e85cba4f28fd92d4341b8291e1cee5b0b489dc750d2d01804c685`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13-bookworm` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:b73b2f835bca57c02d1f2ac84829a1cad72d0bd70446cafb13fa0040052e0ebe
+$ docker pull gcc@sha256:799d9468dd7ebaf3836718157e14d92e8552f72d86e7489759b4a4f237469272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.7 MB (469666165 bytes)**  
+-	Total Size: **469.7 MB (469691584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84429faf9e79ffbb5dc8ed8f5ca7b5663fc29d763a4baaa2aa2021167c23dfcf`
+-	Image ID: `sha256:6115202b5adc7c99571cbd5e601439f2e58115471c4b05dfeebbab575de73732`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -4700,67 +4700,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:517876531befa71956d231a8b5cbd3f0ea5285d2661b2a8997e2778990a90897`  
-		Last Modified: Wed, 10 Sep 2025 02:07:35 GMT  
-		Size: 148.8 MB (148800482 bytes)  
+	-	`sha256:ac237f839a000ac1be93efd1604ec469d210b5c1cf88225bb578ba24a33a190c`  
+		Last Modified: Tue, 30 Sep 2025 22:07:46 GMT  
+		Size: 148.8 MB (148800721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4b684c8ebd6401a9a85f95960a02be9530f448c427312356585b7da6d569788`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 10.2 KB (10213 bytes)  
+	-	`sha256:42003d627cbd2b2b28e1f333f65c1f03a8575f46174a0fa0f2cf9e333f4a5a65`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 10.0 KB (9980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c96246047b0b854ae9531f4fa5a2d27814fad217dae8a29d220e73e077eaad57`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:650f6ce927a103d526f2f9434b3129733571cd727ea92bcc96476451bd15f86c`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3acd46cab03041e5cc4fcb212d2a78ce6aba6ff9df2a997ee35c409e87f65b85
+$ docker pull gcc@sha256:5a4a4056234d0940a21bfe1803d8d6c080f6b3457f21586c97d39f5aef53e01d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ad98d35d75a3c2f72ae4c7262d975ac321d511c2e1447455463c498fc37fe09`
+-	Image ID: `sha256:5d70b5b549bff06318bfa355d629008f9ca3bd38e3752b7e6d0622f75ea94d16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd79efb877a9082bbc59e92d1b8c2128a60927b658e92453ff058fd4452b2306`  
-		Last Modified: Wed, 10 Sep 2025 03:19:38 GMT  
+	-	`sha256:51552c6d6233ac56eb601cbf7611a036127bf8ce55873f79e4573fadd55c6ca3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:49 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89d24016a0f86c4a1aaf560133d5cc71d3e0de10e253b905fccc9612a8064be2`  
-		Last Modified: Wed, 10 Sep 2025 03:19:39 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:27d99bcc6c80edfeabe0a4b0856090889a5b62d90fb49251ad608c5a4f6bd92f`  
+		Last Modified: Wed, 01 Oct 2025 21:19:50 GMT  
+		Size: 29.8 KB (29755 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:13.4`
 
 ```console
-$ docker pull gcc@sha256:5395a1f7f7afa9f3129cb7492ca2127a88c0138a483243f4773f1f28f025ff88
+$ docker pull gcc@sha256:2ef9a351fb7ced0f61a4ab932ce3c09b39410d280d8f2e6b709d920afc4639d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4971,18 +4971,18 @@ $ docker pull gcc@sha256:acc5cf9263d522bb686756a6a09edbaed54ea1c153cebe01b93db5a
 ### `gcc:13.4` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:18ee75a611fcdfdc33d81c39a4b7b895d7a1d44149f3f21188b2733793db4e4b
+$ docker pull gcc@sha256:6095dd39a218d23fa33cf1d1d2be70f8dc995f1f190d9d9675bde33c61d908f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.3 MB (414259203 bytes)**  
+-	Total Size: **414.3 MB (414300225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7a9ee63bcace4b456ff9b3a2acdfed4a69cb500083ea95c44ece9eb4d9eb65`
+-	Image ID: `sha256:25541d4ec2f47a05082da39a6f5f34e79c8dafef6b1c4db8dbc8a2c8551570be`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5006,78 +5006,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:9ca3655bca4a19e69b8dfae41d95d8e25d8f88131acaae468090113c1dfd53c8`  
+		Last Modified: Tue, 30 Sep 2025 05:40:27 GMT  
+		Size: 2.5 MB (2549272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db42b2ab7aa03691c2cde2869974d68771954ad506c86aa767edb26f46ff7204`  
-		Last Modified: Tue, 09 Sep 2025 17:31:06 GMT  
-		Size: 110.6 MB (110591796 bytes)  
+	-	`sha256:f8939ee77064827bae0e96c7f90f1137ca106c5aec8c5e9fe40062360eac540a`  
+		Last Modified: Tue, 30 Sep 2025 05:40:43 GMT  
+		Size: 110.6 MB (110604455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f245954e1d7d5c2fc8de0390841300555d5742a1dd6c64fe055f7d542cb411`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 9.3 KB (9302 bytes)  
+	-	`sha256:4d9997eefc6760e076d5e029dbf1056b4a6514252bdfbb45578907dd9c58ec51`  
+		Last Modified: Tue, 30 Sep 2025 05:40:29 GMT  
+		Size: 9.3 KB (9314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf3d1770b94a97a3c927a002b25e784313625213ca28b7c9d4d2ec265d5aa9ac`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 1.8 KB (1813 bytes)  
+	-	`sha256:e8da21099dd413c6fa295e8524299349b7d029cfafb6df42b6e302c140a14249`  
+		Last Modified: Tue, 30 Sep 2025 05:40:30 GMT  
+		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5a9375bfb1c1d7b085112efced9ca95fcae0bf5a73c01725f28e67a7639fdf10
+$ docker pull gcc@sha256:47efb294cb9b40cd7eff88c39e2e8bbdb1804ac37b87976a369d2ca533d191dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79fb4adbad7d6b45292a00cef523bb0c2ff485f5141155f883c358d62d901c33`
+-	Image ID: `sha256:3f204a7e1d56b3a9ef89877b1a7a5c3ca970beb3ccaa97b422a4e438f3a133ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03243c17644f1e5eabebc4936ad0bafaf60cf6c0d69177ed7970d36788f36265`  
-		Last Modified: Tue, 09 Sep 2025 18:18:44 GMT  
+	-	`sha256:e1f3e8b2a04233d64bf42cc008baf71adb706b26e350ebf82f1faa451439f0d3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df9377442a577569a97c5e1be2f7dfacc9e83d89108e77a01ac39cd1b7a7e8c7`  
-		Last Modified: Tue, 09 Sep 2025 18:18:45 GMT  
+	-	`sha256:c0f97110e295e4bd81fc6e84bde7a16e76a4f3b42bea99e1106ab7e9a77e1733`  
+		Last Modified: Wed, 01 Oct 2025 21:19:19 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:b5cfe8cb7778dec4f72ebce0797c0ec44b9b90aa251b8b88a1014f1a98550992
+$ docker pull gcc@sha256:cd34e8cc99e673741278d17ac523edd2da5e9c529565a09c22e9ad9b8504f63b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **478.9 MB (478912606 bytes)**  
+-	Total Size: **479.0 MB (478952284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24221db2058dcb06cfc2ea422f0b7ae5b20ee6362e9a0f94d584b297f9fbb5a6`
+-	Image ID: `sha256:8c95548081d4a663c2a4897dcd439f26f1ac41b4995c0fb6b9c991c56f5c8c11`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5101,78 +5101,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66253bce4d65682969ba60e116457c9f46076f9bee90892782057c7d141335f4`  
-		Last Modified: Tue, 09 Sep 2025 04:13:58 GMT  
-		Size: 2.7 MB (2734118 bytes)  
+	-	`sha256:89b83d5718c2b0af5deb78b543ff98cf0cc36088448ab196fd8b5c07e71c857e`  
+		Last Modified: Tue, 30 Sep 2025 03:59:06 GMT  
+		Size: 2.7 MB (2734135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afe21933d181486bf7152a9a5bb344ef69c82e95c87e65d751a8c150432e0a4b`  
-		Last Modified: Tue, 09 Sep 2025 09:50:26 GMT  
-		Size: 136.9 MB (136923672 bytes)  
+	-	`sha256:0dbf985d8034ddbe5624d2848e56aec37e0237be59f8cbdda63a255c5f0030b6`  
+		Last Modified: Wed, 01 Oct 2025 11:05:07 GMT  
+		Size: 136.9 MB (136924097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707f3c752d453ec7ec55b087dcc17b68ffd27af981a4ad99982817400909997b`  
-		Last Modified: Tue, 09 Sep 2025 04:14:06 GMT  
-		Size: 9.4 KB (9435 bytes)  
+	-	`sha256:e619474f867473e780b52f13cd2f51fdebf283af5e03d515179b27ec902734e1`  
+		Last Modified: Tue, 30 Sep 2025 03:59:05 GMT  
+		Size: 9.4 KB (9417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb8ef5c7dbc7c1ab0eef744081b67351b2ba469ff54763578f68369bc35fcdd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:09 GMT  
-		Size: 1.8 KB (1799 bytes)  
+	-	`sha256:b7b79dfefba989ba7038f00fb9e9922b1e38913af3889cd635b5436c67c5b31b`  
+		Last Modified: Tue, 30 Sep 2025 03:59:04 GMT  
+		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5dab61777610b9b64d6ce00b29640b0766d32b7a34fe23209db1d9b340ecb1c7
+$ docker pull gcc@sha256:c141708293414a4a82d43569fe05300173798f7e14fa18adefbcef0ce37bd1de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0b308edd2817cdbda1abda9c5d42611724fd6720cf8a81ac136c0f789fdc444`
+-	Image ID: `sha256:ddee1a61425efd73b01caf188a98c12bd9368283e25b893710d7c91c18f250ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd4eb0db65cf5c548461b8bb8bdde953bcf7b97d2f79c422c783afaffa776ada`  
-		Last Modified: Tue, 09 Sep 2025 06:19:10 GMT  
+	-	`sha256:e05d24099f0aee72de59e2a17bc024a623f7bf70083eff406195ba4b76bbf19c`  
+		Last Modified: Wed, 01 Oct 2025 15:31:30 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:383275b97a8c4b889e9eecd610a2bf25fbbd3151a00d0f39b37bd673d8f18e6e`  
-		Last Modified: Tue, 09 Sep 2025 06:19:11 GMT  
+	-	`sha256:ea3e763e04c3bf94c1ab87c9b406a9380819695678af7397f885413d044b522b`  
+		Last Modified: Wed, 01 Oct 2025 15:31:31 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:a7dbffa5f3a4d1dd376537c00713c9b49fe15b1c6ce7a7a832594e4e63bd077d
+$ docker pull gcc@sha256:7fb757a99593e7c64d676b3b77f0144dba2151603585e03ca1bd514664464c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **510.9 MB (510933803 bytes)**  
+-	Total Size: **511.0 MB (510959450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64a4ddb3e35d619b686754547f393d18edb7994dc230b78cf3e980eba57cb5e8`
+-	Image ID: `sha256:42e45ccac4099c12c1b1a0a82129b6c8a818666ba455682122c0c878d7bb79e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5196,78 +5196,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab5c70d23f6de7407a1820ad3ff75e758e041444b7d497092b13dd120752731d`  
-		Last Modified: Wed, 10 Sep 2025 10:56:41 GMT  
-		Size: 145.6 MB (145624534 bytes)  
+	-	`sha256:385d899aef4b76af828e9adc2fa1f3eb16192771c2d89fe36d3a732dc3e81827`  
+		Last Modified: Wed, 01 Oct 2025 00:53:13 GMT  
+		Size: 145.6 MB (145623963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fb5d3d5376ccc5227a08239b0967b145f24ad176dc378001b5649176f5f3d86`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 9.8 KB (9760 bytes)  
+	-	`sha256:7686bff3695524c2601522f2ff9aa9ab58e321bc502d110d0343d4e89b013c44`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63fbe1820bc3910e2c25adea84e7de59381366777021e261940eada09f64b5ae`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 1.8 KB (1815 bytes)  
+	-	`sha256:436ef9722ff590c1e737a54004253827f8b1d753c40b3170c007f85397d7ae46`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:03486ce1329e4bdd9f5f8cc32a7f06fbb50cfa5888d3e6dfb5ef58b43fb58dfd
+$ docker pull gcc@sha256:1babac8bd3414ee7fd1a772b5a8b665fe415371600b3c94e5e96460f9872f466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40d01b1626d61d74e39857698d8045924c7af2f7e624ef0cdb41d7f1c723647b`
+-	Image ID: `sha256:dcf80b9aed7028e8c152d35006cab194909294d5e782d7bd1437ad7a70382d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1ac1f8ae33982774bc92458079db6aacbe173daf66761bc7a8cf18e154aa5d`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:f7fc9003837f206bcedc846f2e4b9428d68a95d59693690f5c4b29b6ae8c151d`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85bf2d1d10d9694ea8f17d7ecac9d88b5b6a572db913b3032c00d6e1723e31b1`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:e4a52b130d4e85cba4f28fd92d4341b8291e1cee5b0b489dc750d2d01804c685`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:b73b2f835bca57c02d1f2ac84829a1cad72d0bd70446cafb13fa0040052e0ebe
+$ docker pull gcc@sha256:799d9468dd7ebaf3836718157e14d92e8552f72d86e7489759b4a4f237469272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.7 MB (469666165 bytes)**  
+-	Total Size: **469.7 MB (469691584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84429faf9e79ffbb5dc8ed8f5ca7b5663fc29d763a4baaa2aa2021167c23dfcf`
+-	Image ID: `sha256:6115202b5adc7c99571cbd5e601439f2e58115471c4b05dfeebbab575de73732`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5291,67 +5291,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:517876531befa71956d231a8b5cbd3f0ea5285d2661b2a8997e2778990a90897`  
-		Last Modified: Wed, 10 Sep 2025 02:07:35 GMT  
-		Size: 148.8 MB (148800482 bytes)  
+	-	`sha256:ac237f839a000ac1be93efd1604ec469d210b5c1cf88225bb578ba24a33a190c`  
+		Last Modified: Tue, 30 Sep 2025 22:07:46 GMT  
+		Size: 148.8 MB (148800721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4b684c8ebd6401a9a85f95960a02be9530f448c427312356585b7da6d569788`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 10.2 KB (10213 bytes)  
+	-	`sha256:42003d627cbd2b2b28e1f333f65c1f03a8575f46174a0fa0f2cf9e333f4a5a65`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 10.0 KB (9980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c96246047b0b854ae9531f4fa5a2d27814fad217dae8a29d220e73e077eaad57`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:650f6ce927a103d526f2f9434b3129733571cd727ea92bcc96476451bd15f86c`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3acd46cab03041e5cc4fcb212d2a78ce6aba6ff9df2a997ee35c409e87f65b85
+$ docker pull gcc@sha256:5a4a4056234d0940a21bfe1803d8d6c080f6b3457f21586c97d39f5aef53e01d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ad98d35d75a3c2f72ae4c7262d975ac321d511c2e1447455463c498fc37fe09`
+-	Image ID: `sha256:5d70b5b549bff06318bfa355d629008f9ca3bd38e3752b7e6d0622f75ea94d16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd79efb877a9082bbc59e92d1b8c2128a60927b658e92453ff058fd4452b2306`  
-		Last Modified: Wed, 10 Sep 2025 03:19:38 GMT  
+	-	`sha256:51552c6d6233ac56eb601cbf7611a036127bf8ce55873f79e4573fadd55c6ca3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:49 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89d24016a0f86c4a1aaf560133d5cc71d3e0de10e253b905fccc9612a8064be2`  
-		Last Modified: Wed, 10 Sep 2025 03:19:39 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:27d99bcc6c80edfeabe0a4b0856090889a5b62d90fb49251ad608c5a4f6bd92f`  
+		Last Modified: Wed, 01 Oct 2025 21:19:50 GMT  
+		Size: 29.8 KB (29755 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:13.4-bookworm`
 
 ```console
-$ docker pull gcc@sha256:5395a1f7f7afa9f3129cb7492ca2127a88c0138a483243f4773f1f28f025ff88
+$ docker pull gcc@sha256:2ef9a351fb7ced0f61a4ab932ce3c09b39410d280d8f2e6b709d920afc4639d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5562,18 +5562,18 @@ $ docker pull gcc@sha256:acc5cf9263d522bb686756a6a09edbaed54ea1c153cebe01b93db5a
 ### `gcc:13.4-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:18ee75a611fcdfdc33d81c39a4b7b895d7a1d44149f3f21188b2733793db4e4b
+$ docker pull gcc@sha256:6095dd39a218d23fa33cf1d1d2be70f8dc995f1f190d9d9675bde33c61d908f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.3 MB (414259203 bytes)**  
+-	Total Size: **414.3 MB (414300225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7a9ee63bcace4b456ff9b3a2acdfed4a69cb500083ea95c44ece9eb4d9eb65`
+-	Image ID: `sha256:25541d4ec2f47a05082da39a6f5f34e79c8dafef6b1c4db8dbc8a2c8551570be`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5597,78 +5597,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:9ca3655bca4a19e69b8dfae41d95d8e25d8f88131acaae468090113c1dfd53c8`  
+		Last Modified: Tue, 30 Sep 2025 05:40:27 GMT  
+		Size: 2.5 MB (2549272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db42b2ab7aa03691c2cde2869974d68771954ad506c86aa767edb26f46ff7204`  
-		Last Modified: Tue, 09 Sep 2025 17:31:06 GMT  
-		Size: 110.6 MB (110591796 bytes)  
+	-	`sha256:f8939ee77064827bae0e96c7f90f1137ca106c5aec8c5e9fe40062360eac540a`  
+		Last Modified: Tue, 30 Sep 2025 05:40:43 GMT  
+		Size: 110.6 MB (110604455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f245954e1d7d5c2fc8de0390841300555d5742a1dd6c64fe055f7d542cb411`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 9.3 KB (9302 bytes)  
+	-	`sha256:4d9997eefc6760e076d5e029dbf1056b4a6514252bdfbb45578907dd9c58ec51`  
+		Last Modified: Tue, 30 Sep 2025 05:40:29 GMT  
+		Size: 9.3 KB (9314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf3d1770b94a97a3c927a002b25e784313625213ca28b7c9d4d2ec265d5aa9ac`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 1.8 KB (1813 bytes)  
+	-	`sha256:e8da21099dd413c6fa295e8524299349b7d029cfafb6df42b6e302c140a14249`  
+		Last Modified: Tue, 30 Sep 2025 05:40:30 GMT  
+		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5a9375bfb1c1d7b085112efced9ca95fcae0bf5a73c01725f28e67a7639fdf10
+$ docker pull gcc@sha256:47efb294cb9b40cd7eff88c39e2e8bbdb1804ac37b87976a369d2ca533d191dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79fb4adbad7d6b45292a00cef523bb0c2ff485f5141155f883c358d62d901c33`
+-	Image ID: `sha256:3f204a7e1d56b3a9ef89877b1a7a5c3ca970beb3ccaa97b422a4e438f3a133ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03243c17644f1e5eabebc4936ad0bafaf60cf6c0d69177ed7970d36788f36265`  
-		Last Modified: Tue, 09 Sep 2025 18:18:44 GMT  
+	-	`sha256:e1f3e8b2a04233d64bf42cc008baf71adb706b26e350ebf82f1faa451439f0d3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df9377442a577569a97c5e1be2f7dfacc9e83d89108e77a01ac39cd1b7a7e8c7`  
-		Last Modified: Tue, 09 Sep 2025 18:18:45 GMT  
+	-	`sha256:c0f97110e295e4bd81fc6e84bde7a16e76a4f3b42bea99e1106ab7e9a77e1733`  
+		Last Modified: Wed, 01 Oct 2025 21:19:19 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:b5cfe8cb7778dec4f72ebce0797c0ec44b9b90aa251b8b88a1014f1a98550992
+$ docker pull gcc@sha256:cd34e8cc99e673741278d17ac523edd2da5e9c529565a09c22e9ad9b8504f63b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **478.9 MB (478912606 bytes)**  
+-	Total Size: **479.0 MB (478952284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24221db2058dcb06cfc2ea422f0b7ae5b20ee6362e9a0f94d584b297f9fbb5a6`
+-	Image ID: `sha256:8c95548081d4a663c2a4897dcd439f26f1ac41b4995c0fb6b9c991c56f5c8c11`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5692,78 +5692,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66253bce4d65682969ba60e116457c9f46076f9bee90892782057c7d141335f4`  
-		Last Modified: Tue, 09 Sep 2025 04:13:58 GMT  
-		Size: 2.7 MB (2734118 bytes)  
+	-	`sha256:89b83d5718c2b0af5deb78b543ff98cf0cc36088448ab196fd8b5c07e71c857e`  
+		Last Modified: Tue, 30 Sep 2025 03:59:06 GMT  
+		Size: 2.7 MB (2734135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afe21933d181486bf7152a9a5bb344ef69c82e95c87e65d751a8c150432e0a4b`  
-		Last Modified: Tue, 09 Sep 2025 09:50:26 GMT  
-		Size: 136.9 MB (136923672 bytes)  
+	-	`sha256:0dbf985d8034ddbe5624d2848e56aec37e0237be59f8cbdda63a255c5f0030b6`  
+		Last Modified: Wed, 01 Oct 2025 11:05:07 GMT  
+		Size: 136.9 MB (136924097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707f3c752d453ec7ec55b087dcc17b68ffd27af981a4ad99982817400909997b`  
-		Last Modified: Tue, 09 Sep 2025 04:14:06 GMT  
-		Size: 9.4 KB (9435 bytes)  
+	-	`sha256:e619474f867473e780b52f13cd2f51fdebf283af5e03d515179b27ec902734e1`  
+		Last Modified: Tue, 30 Sep 2025 03:59:05 GMT  
+		Size: 9.4 KB (9417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb8ef5c7dbc7c1ab0eef744081b67351b2ba469ff54763578f68369bc35fcdd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:09 GMT  
-		Size: 1.8 KB (1799 bytes)  
+	-	`sha256:b7b79dfefba989ba7038f00fb9e9922b1e38913af3889cd635b5436c67c5b31b`  
+		Last Modified: Tue, 30 Sep 2025 03:59:04 GMT  
+		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5dab61777610b9b64d6ce00b29640b0766d32b7a34fe23209db1d9b340ecb1c7
+$ docker pull gcc@sha256:c141708293414a4a82d43569fe05300173798f7e14fa18adefbcef0ce37bd1de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0b308edd2817cdbda1abda9c5d42611724fd6720cf8a81ac136c0f789fdc444`
+-	Image ID: `sha256:ddee1a61425efd73b01caf188a98c12bd9368283e25b893710d7c91c18f250ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd4eb0db65cf5c548461b8bb8bdde953bcf7b97d2f79c422c783afaffa776ada`  
-		Last Modified: Tue, 09 Sep 2025 06:19:10 GMT  
+	-	`sha256:e05d24099f0aee72de59e2a17bc024a623f7bf70083eff406195ba4b76bbf19c`  
+		Last Modified: Wed, 01 Oct 2025 15:31:30 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:383275b97a8c4b889e9eecd610a2bf25fbbd3151a00d0f39b37bd673d8f18e6e`  
-		Last Modified: Tue, 09 Sep 2025 06:19:11 GMT  
+	-	`sha256:ea3e763e04c3bf94c1ab87c9b406a9380819695678af7397f885413d044b522b`  
+		Last Modified: Wed, 01 Oct 2025 15:31:31 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:a7dbffa5f3a4d1dd376537c00713c9b49fe15b1c6ce7a7a832594e4e63bd077d
+$ docker pull gcc@sha256:7fb757a99593e7c64d676b3b77f0144dba2151603585e03ca1bd514664464c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **510.9 MB (510933803 bytes)**  
+-	Total Size: **511.0 MB (510959450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64a4ddb3e35d619b686754547f393d18edb7994dc230b78cf3e980eba57cb5e8`
+-	Image ID: `sha256:42e45ccac4099c12c1b1a0a82129b6c8a818666ba455682122c0c878d7bb79e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5787,78 +5787,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab5c70d23f6de7407a1820ad3ff75e758e041444b7d497092b13dd120752731d`  
-		Last Modified: Wed, 10 Sep 2025 10:56:41 GMT  
-		Size: 145.6 MB (145624534 bytes)  
+	-	`sha256:385d899aef4b76af828e9adc2fa1f3eb16192771c2d89fe36d3a732dc3e81827`  
+		Last Modified: Wed, 01 Oct 2025 00:53:13 GMT  
+		Size: 145.6 MB (145623963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fb5d3d5376ccc5227a08239b0967b145f24ad176dc378001b5649176f5f3d86`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 9.8 KB (9760 bytes)  
+	-	`sha256:7686bff3695524c2601522f2ff9aa9ab58e321bc502d110d0343d4e89b013c44`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63fbe1820bc3910e2c25adea84e7de59381366777021e261940eada09f64b5ae`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 1.8 KB (1815 bytes)  
+	-	`sha256:436ef9722ff590c1e737a54004253827f8b1d753c40b3170c007f85397d7ae46`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:03486ce1329e4bdd9f5f8cc32a7f06fbb50cfa5888d3e6dfb5ef58b43fb58dfd
+$ docker pull gcc@sha256:1babac8bd3414ee7fd1a772b5a8b665fe415371600b3c94e5e96460f9872f466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40d01b1626d61d74e39857698d8045924c7af2f7e624ef0cdb41d7f1c723647b`
+-	Image ID: `sha256:dcf80b9aed7028e8c152d35006cab194909294d5e782d7bd1437ad7a70382d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1ac1f8ae33982774bc92458079db6aacbe173daf66761bc7a8cf18e154aa5d`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:f7fc9003837f206bcedc846f2e4b9428d68a95d59693690f5c4b29b6ae8c151d`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85bf2d1d10d9694ea8f17d7ecac9d88b5b6a572db913b3032c00d6e1723e31b1`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:e4a52b130d4e85cba4f28fd92d4341b8291e1cee5b0b489dc750d2d01804c685`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4-bookworm` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:b73b2f835bca57c02d1f2ac84829a1cad72d0bd70446cafb13fa0040052e0ebe
+$ docker pull gcc@sha256:799d9468dd7ebaf3836718157e14d92e8552f72d86e7489759b4a4f237469272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.7 MB (469666165 bytes)**  
+-	Total Size: **469.7 MB (469691584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84429faf9e79ffbb5dc8ed8f5ca7b5663fc29d763a4baaa2aa2021167c23dfcf`
+-	Image ID: `sha256:6115202b5adc7c99571cbd5e601439f2e58115471c4b05dfeebbab575de73732`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -5882,67 +5882,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:517876531befa71956d231a8b5cbd3f0ea5285d2661b2a8997e2778990a90897`  
-		Last Modified: Wed, 10 Sep 2025 02:07:35 GMT  
-		Size: 148.8 MB (148800482 bytes)  
+	-	`sha256:ac237f839a000ac1be93efd1604ec469d210b5c1cf88225bb578ba24a33a190c`  
+		Last Modified: Tue, 30 Sep 2025 22:07:46 GMT  
+		Size: 148.8 MB (148800721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4b684c8ebd6401a9a85f95960a02be9530f448c427312356585b7da6d569788`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 10.2 KB (10213 bytes)  
+	-	`sha256:42003d627cbd2b2b28e1f333f65c1f03a8575f46174a0fa0f2cf9e333f4a5a65`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 10.0 KB (9980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c96246047b0b854ae9531f4fa5a2d27814fad217dae8a29d220e73e077eaad57`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:650f6ce927a103d526f2f9434b3129733571cd727ea92bcc96476451bd15f86c`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3acd46cab03041e5cc4fcb212d2a78ce6aba6ff9df2a997ee35c409e87f65b85
+$ docker pull gcc@sha256:5a4a4056234d0940a21bfe1803d8d6c080f6b3457f21586c97d39f5aef53e01d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ad98d35d75a3c2f72ae4c7262d975ac321d511c2e1447455463c498fc37fe09`
+-	Image ID: `sha256:5d70b5b549bff06318bfa355d629008f9ca3bd38e3752b7e6d0622f75ea94d16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd79efb877a9082bbc59e92d1b8c2128a60927b658e92453ff058fd4452b2306`  
-		Last Modified: Wed, 10 Sep 2025 03:19:38 GMT  
+	-	`sha256:51552c6d6233ac56eb601cbf7611a036127bf8ce55873f79e4573fadd55c6ca3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:49 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89d24016a0f86c4a1aaf560133d5cc71d3e0de10e253b905fccc9612a8064be2`  
-		Last Modified: Wed, 10 Sep 2025 03:19:39 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:27d99bcc6c80edfeabe0a4b0856090889a5b62d90fb49251ad608c5a4f6bd92f`  
+		Last Modified: Wed, 01 Oct 2025 21:19:50 GMT  
+		Size: 29.8 KB (29755 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:13.4.0`
 
 ```console
-$ docker pull gcc@sha256:efdac2c67d35cfb039de1ed4deede16cd3167c25a7275d31d16ab1a479aba161
+$ docker pull gcc@sha256:2ef9a351fb7ced0f61a4ab932ce3c09b39410d280d8f2e6b709d920afc4639d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6153,18 +6153,18 @@ $ docker pull gcc@sha256:acc5cf9263d522bb686756a6a09edbaed54ea1c153cebe01b93db5a
 ### `gcc:13.4.0` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:18ee75a611fcdfdc33d81c39a4b7b895d7a1d44149f3f21188b2733793db4e4b
+$ docker pull gcc@sha256:6095dd39a218d23fa33cf1d1d2be70f8dc995f1f190d9d9675bde33c61d908f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.3 MB (414259203 bytes)**  
+-	Total Size: **414.3 MB (414300225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7a9ee63bcace4b456ff9b3a2acdfed4a69cb500083ea95c44ece9eb4d9eb65`
+-	Image ID: `sha256:25541d4ec2f47a05082da39a6f5f34e79c8dafef6b1c4db8dbc8a2c8551570be`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -6188,60 +6188,60 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:9ca3655bca4a19e69b8dfae41d95d8e25d8f88131acaae468090113c1dfd53c8`  
+		Last Modified: Tue, 30 Sep 2025 05:40:27 GMT  
+		Size: 2.5 MB (2549272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db42b2ab7aa03691c2cde2869974d68771954ad506c86aa767edb26f46ff7204`  
-		Last Modified: Tue, 09 Sep 2025 17:31:06 GMT  
-		Size: 110.6 MB (110591796 bytes)  
+	-	`sha256:f8939ee77064827bae0e96c7f90f1137ca106c5aec8c5e9fe40062360eac540a`  
+		Last Modified: Tue, 30 Sep 2025 05:40:43 GMT  
+		Size: 110.6 MB (110604455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f245954e1d7d5c2fc8de0390841300555d5742a1dd6c64fe055f7d542cb411`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 9.3 KB (9302 bytes)  
+	-	`sha256:4d9997eefc6760e076d5e029dbf1056b4a6514252bdfbb45578907dd9c58ec51`  
+		Last Modified: Tue, 30 Sep 2025 05:40:29 GMT  
+		Size: 9.3 KB (9314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf3d1770b94a97a3c927a002b25e784313625213ca28b7c9d4d2ec265d5aa9ac`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 1.8 KB (1813 bytes)  
+	-	`sha256:e8da21099dd413c6fa295e8524299349b7d029cfafb6df42b6e302c140a14249`  
+		Last Modified: Tue, 30 Sep 2025 05:40:30 GMT  
+		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5a9375bfb1c1d7b085112efced9ca95fcae0bf5a73c01725f28e67a7639fdf10
+$ docker pull gcc@sha256:47efb294cb9b40cd7eff88c39e2e8bbdb1804ac37b87976a369d2ca533d191dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79fb4adbad7d6b45292a00cef523bb0c2ff485f5141155f883c358d62d901c33`
+-	Image ID: `sha256:3f204a7e1d56b3a9ef89877b1a7a5c3ca970beb3ccaa97b422a4e438f3a133ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03243c17644f1e5eabebc4936ad0bafaf60cf6c0d69177ed7970d36788f36265`  
-		Last Modified: Tue, 09 Sep 2025 18:18:44 GMT  
+	-	`sha256:e1f3e8b2a04233d64bf42cc008baf71adb706b26e350ebf82f1faa451439f0d3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df9377442a577569a97c5e1be2f7dfacc9e83d89108e77a01ac39cd1b7a7e8c7`  
-		Last Modified: Tue, 09 Sep 2025 18:18:45 GMT  
+	-	`sha256:c0f97110e295e4bd81fc6e84bde7a16e76a4f3b42bea99e1106ab7e9a77e1733`  
+		Last Modified: Wed, 01 Oct 2025 21:19:19 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6343,18 +6343,18 @@ $ docker pull gcc@sha256:c141708293414a4a82d43569fe05300173798f7e14fa18adefbcef0
 ### `gcc:13.4.0` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:a7dbffa5f3a4d1dd376537c00713c9b49fe15b1c6ce7a7a832594e4e63bd077d
+$ docker pull gcc@sha256:7fb757a99593e7c64d676b3b77f0144dba2151603585e03ca1bd514664464c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **510.9 MB (510933803 bytes)**  
+-	Total Size: **511.0 MB (510959450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64a4ddb3e35d619b686754547f393d18edb7994dc230b78cf3e980eba57cb5e8`
+-	Image ID: `sha256:42e45ccac4099c12c1b1a0a82129b6c8a818666ba455682122c0c878d7bb79e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -6378,78 +6378,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab5c70d23f6de7407a1820ad3ff75e758e041444b7d497092b13dd120752731d`  
-		Last Modified: Wed, 10 Sep 2025 10:56:41 GMT  
-		Size: 145.6 MB (145624534 bytes)  
+	-	`sha256:385d899aef4b76af828e9adc2fa1f3eb16192771c2d89fe36d3a732dc3e81827`  
+		Last Modified: Wed, 01 Oct 2025 00:53:13 GMT  
+		Size: 145.6 MB (145623963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fb5d3d5376ccc5227a08239b0967b145f24ad176dc378001b5649176f5f3d86`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 9.8 KB (9760 bytes)  
+	-	`sha256:7686bff3695524c2601522f2ff9aa9ab58e321bc502d110d0343d4e89b013c44`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63fbe1820bc3910e2c25adea84e7de59381366777021e261940eada09f64b5ae`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 1.8 KB (1815 bytes)  
+	-	`sha256:436ef9722ff590c1e737a54004253827f8b1d753c40b3170c007f85397d7ae46`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:03486ce1329e4bdd9f5f8cc32a7f06fbb50cfa5888d3e6dfb5ef58b43fb58dfd
+$ docker pull gcc@sha256:1babac8bd3414ee7fd1a772b5a8b665fe415371600b3c94e5e96460f9872f466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40d01b1626d61d74e39857698d8045924c7af2f7e624ef0cdb41d7f1c723647b`
+-	Image ID: `sha256:dcf80b9aed7028e8c152d35006cab194909294d5e782d7bd1437ad7a70382d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1ac1f8ae33982774bc92458079db6aacbe173daf66761bc7a8cf18e154aa5d`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:f7fc9003837f206bcedc846f2e4b9428d68a95d59693690f5c4b29b6ae8c151d`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85bf2d1d10d9694ea8f17d7ecac9d88b5b6a572db913b3032c00d6e1723e31b1`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:e4a52b130d4e85cba4f28fd92d4341b8291e1cee5b0b489dc750d2d01804c685`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4.0` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:b73b2f835bca57c02d1f2ac84829a1cad72d0bd70446cafb13fa0040052e0ebe
+$ docker pull gcc@sha256:799d9468dd7ebaf3836718157e14d92e8552f72d86e7489759b4a4f237469272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.7 MB (469666165 bytes)**  
+-	Total Size: **469.7 MB (469691584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84429faf9e79ffbb5dc8ed8f5ca7b5663fc29d763a4baaa2aa2021167c23dfcf`
+-	Image ID: `sha256:6115202b5adc7c99571cbd5e601439f2e58115471c4b05dfeebbab575de73732`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -6473,67 +6473,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:517876531befa71956d231a8b5cbd3f0ea5285d2661b2a8997e2778990a90897`  
-		Last Modified: Wed, 10 Sep 2025 02:07:35 GMT  
-		Size: 148.8 MB (148800482 bytes)  
+	-	`sha256:ac237f839a000ac1be93efd1604ec469d210b5c1cf88225bb578ba24a33a190c`  
+		Last Modified: Tue, 30 Sep 2025 22:07:46 GMT  
+		Size: 148.8 MB (148800721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4b684c8ebd6401a9a85f95960a02be9530f448c427312356585b7da6d569788`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 10.2 KB (10213 bytes)  
+	-	`sha256:42003d627cbd2b2b28e1f333f65c1f03a8575f46174a0fa0f2cf9e333f4a5a65`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 10.0 KB (9980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c96246047b0b854ae9531f4fa5a2d27814fad217dae8a29d220e73e077eaad57`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:650f6ce927a103d526f2f9434b3129733571cd727ea92bcc96476451bd15f86c`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3acd46cab03041e5cc4fcb212d2a78ce6aba6ff9df2a997ee35c409e87f65b85
+$ docker pull gcc@sha256:5a4a4056234d0940a21bfe1803d8d6c080f6b3457f21586c97d39f5aef53e01d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ad98d35d75a3c2f72ae4c7262d975ac321d511c2e1447455463c498fc37fe09`
+-	Image ID: `sha256:5d70b5b549bff06318bfa355d629008f9ca3bd38e3752b7e6d0622f75ea94d16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd79efb877a9082bbc59e92d1b8c2128a60927b658e92453ff058fd4452b2306`  
-		Last Modified: Wed, 10 Sep 2025 03:19:38 GMT  
+	-	`sha256:51552c6d6233ac56eb601cbf7611a036127bf8ce55873f79e4573fadd55c6ca3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:49 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89d24016a0f86c4a1aaf560133d5cc71d3e0de10e253b905fccc9612a8064be2`  
-		Last Modified: Wed, 10 Sep 2025 03:19:39 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:27d99bcc6c80edfeabe0a4b0856090889a5b62d90fb49251ad608c5a4f6bd92f`  
+		Last Modified: Wed, 01 Oct 2025 21:19:50 GMT  
+		Size: 29.8 KB (29755 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:13.4.0-bookworm`
 
 ```console
-$ docker pull gcc@sha256:5395a1f7f7afa9f3129cb7492ca2127a88c0138a483243f4773f1f28f025ff88
+$ docker pull gcc@sha256:2ef9a351fb7ced0f61a4ab932ce3c09b39410d280d8f2e6b709d920afc4639d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6744,18 +6744,18 @@ $ docker pull gcc@sha256:acc5cf9263d522bb686756a6a09edbaed54ea1c153cebe01b93db5a
 ### `gcc:13.4.0-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:18ee75a611fcdfdc33d81c39a4b7b895d7a1d44149f3f21188b2733793db4e4b
+$ docker pull gcc@sha256:6095dd39a218d23fa33cf1d1d2be70f8dc995f1f190d9d9675bde33c61d908f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **414.3 MB (414259203 bytes)**  
+-	Total Size: **414.3 MB (414300225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7a9ee63bcace4b456ff9b3a2acdfed4a69cb500083ea95c44ece9eb4d9eb65`
+-	Image ID: `sha256:25541d4ec2f47a05082da39a6f5f34e79c8dafef6b1c4db8dbc8a2c8551570be`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -6779,78 +6779,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:66de9a3b6b96c15de3235377e1618295643161d16058e17bde51f54951c6ec21`  
-		Last Modified: Mon, 08 Sep 2025 21:14:33 GMT  
-		Size: 44.2 MB (44195998 bytes)  
+	-	`sha256:03e514ef7fa283c62434ceaa5569a1dfd7eb8f0bc5744761a741cccd05a62353`  
+		Last Modified: Mon, 29 Sep 2025 23:34:15 GMT  
+		Size: 44.2 MB (44195923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0efd1e8889a5c39ed7ad3628cf08e3daff474f9ff5b33972b323c79f306440f8`  
-		Last Modified: Mon, 08 Sep 2025 23:37:54 GMT  
-		Size: 21.9 MB (21931079 bytes)  
+	-	`sha256:8de0c6a4c275fbc1127f1e13a9f6de6ca4fdc975838d76828750e675f4b1fd24`  
+		Last Modified: Tue, 30 Sep 2025 01:05:07 GMT  
+		Size: 21.9 MB (21930710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ad8fb006981127731180a5d548f700fd609cacd7e365cb66fbcaf2fd1e979c`  
-		Last Modified: Tue, 09 Sep 2025 06:17:59 GMT  
-		Size: 59.7 MB (59652826 bytes)  
+	-	`sha256:03c9e67a849318ef85c3217c9988076f862a279a4fa96c042c09b84353bac8b7`  
+		Last Modified: Tue, 30 Sep 2025 02:39:14 GMT  
+		Size: 59.7 MB (59652531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ce01e6286f82afd0f8a0433432ff0d4bb70b6c0a8e6a2da2c4c2417eb37685`  
-		Last Modified: Tue, 09 Sep 2025 10:33:42 GMT  
-		Size: 175.3 MB (175327055 bytes)  
+	-	`sha256:9b780bdf61c238372fac425e5a202e123f13d1b05edc7863caa0d986cec6322a`  
+		Last Modified: Tue, 30 Sep 2025 04:26:31 GMT  
+		Size: 175.4 MB (175356228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8a73429d5f5122e1c7945b965b3f83b680ffe6d37b7c172bd1fff407fe5ffa9`  
-		Last Modified: Tue, 09 Sep 2025 11:38:32 GMT  
-		Size: 2.5 MB (2549334 bytes)  
+	-	`sha256:9ca3655bca4a19e69b8dfae41d95d8e25d8f88131acaae468090113c1dfd53c8`  
+		Last Modified: Tue, 30 Sep 2025 05:40:27 GMT  
+		Size: 2.5 MB (2549272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db42b2ab7aa03691c2cde2869974d68771954ad506c86aa767edb26f46ff7204`  
-		Last Modified: Tue, 09 Sep 2025 17:31:06 GMT  
-		Size: 110.6 MB (110591796 bytes)  
+	-	`sha256:f8939ee77064827bae0e96c7f90f1137ca106c5aec8c5e9fe40062360eac540a`  
+		Last Modified: Tue, 30 Sep 2025 05:40:43 GMT  
+		Size: 110.6 MB (110604455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f245954e1d7d5c2fc8de0390841300555d5742a1dd6c64fe055f7d542cb411`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 9.3 KB (9302 bytes)  
+	-	`sha256:4d9997eefc6760e076d5e029dbf1056b4a6514252bdfbb45578907dd9c58ec51`  
+		Last Modified: Tue, 30 Sep 2025 05:40:29 GMT  
+		Size: 9.3 KB (9314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf3d1770b94a97a3c927a002b25e784313625213ca28b7c9d4d2ec265d5aa9ac`  
-		Last Modified: Tue, 09 Sep 2025 17:30:57 GMT  
-		Size: 1.8 KB (1813 bytes)  
+	-	`sha256:e8da21099dd413c6fa295e8524299349b7d029cfafb6df42b6e302c140a14249`  
+		Last Modified: Tue, 30 Sep 2025 05:40:30 GMT  
+		Size: 1.8 KB (1792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5a9375bfb1c1d7b085112efced9ca95fcae0bf5a73c01725f28e67a7639fdf10
+$ docker pull gcc@sha256:47efb294cb9b40cd7eff88c39e2e8bbdb1804ac37b87976a369d2ca533d191dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 MB (15735693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79fb4adbad7d6b45292a00cef523bb0c2ff485f5141155f883c358d62d901c33`
+-	Image ID: `sha256:3f204a7e1d56b3a9ef89877b1a7a5c3ca970beb3ccaa97b422a4e438f3a133ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03243c17644f1e5eabebc4936ad0bafaf60cf6c0d69177ed7970d36788f36265`  
-		Last Modified: Tue, 09 Sep 2025 18:18:44 GMT  
+	-	`sha256:e1f3e8b2a04233d64bf42cc008baf71adb706b26e350ebf82f1faa451439f0d3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:18 GMT  
 		Size: 15.7 MB (15705802 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df9377442a577569a97c5e1be2f7dfacc9e83d89108e77a01ac39cd1b7a7e8c7`  
-		Last Modified: Tue, 09 Sep 2025 18:18:45 GMT  
+	-	`sha256:c0f97110e295e4bd81fc6e84bde7a16e76a4f3b42bea99e1106ab7e9a77e1733`  
+		Last Modified: Wed, 01 Oct 2025 21:19:19 GMT  
 		Size: 29.9 KB (29891 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4.0-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:b5cfe8cb7778dec4f72ebce0797c0ec44b9b90aa251b8b88a1014f1a98550992
+$ docker pull gcc@sha256:cd34e8cc99e673741278d17ac523edd2da5e9c529565a09c22e9ad9b8504f63b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **478.9 MB (478912606 bytes)**  
+-	Total Size: **479.0 MB (478952284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24221db2058dcb06cfc2ea422f0b7ae5b20ee6362e9a0f94d584b297f9fbb5a6`
+-	Image ID: `sha256:8c95548081d4a663c2a4897dcd439f26f1ac41b4995c0fb6b9c991c56f5c8c11`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -6874,78 +6874,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:a9331b686701a987bcd276cc69a0f676d471ccda1aa353d2f7fad017f2894cd0`  
-		Last Modified: Mon, 08 Sep 2025 21:14:32 GMT  
-		Size: 48.4 MB (48359019 bytes)  
+	-	`sha256:f7b43f0d0a8b99591b27457b368e70a582002600d32503fd07798c1bee7cd134`  
+		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
+		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e108925666d6d84c8fa32751877e66a295ad55c9fbd10142325b99d60e786e17`  
-		Last Modified: Mon, 08 Sep 2025 22:21:46 GMT  
-		Size: 23.6 MB (23594789 bytes)  
+	-	`sha256:7b261306f7eb1436ff95e3b9d948f5373b0dcf6ca1223aaa4c2fb303b03e744c`  
+		Last Modified: Tue, 30 Sep 2025 00:56:21 GMT  
+		Size: 23.6 MB (23594734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:133142790bc081eb3e5455996df5c3f98df543c5a224c3643437a19d4d6a7d93`  
-		Last Modified: Tue, 09 Sep 2025 02:12:12 GMT  
-		Size: 64.4 MB (64371181 bytes)  
+	-	`sha256:a0a2f93f2f0e198bff671333b38213c36ed741b7f552b83c033cf63f52b58c0e`  
+		Last Modified: Tue, 30 Sep 2025 01:19:31 GMT  
+		Size: 64.4 MB (64371209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a74a28f78609dda29415ecfe729e4368c794040a88bc1c63d9b1e59b1d062db`  
-		Last Modified: Tue, 09 Sep 2025 03:11:57 GMT  
-		Size: 202.9 MB (202918593 bytes)  
+	-	`sha256:dce9cde803e18b47bb66244c4b16529b3895360524f73e1026f92cd884258213`  
+		Last Modified: Tue, 30 Sep 2025 03:13:27 GMT  
+		Size: 203.0 MB (202957977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66253bce4d65682969ba60e116457c9f46076f9bee90892782057c7d141335f4`  
-		Last Modified: Tue, 09 Sep 2025 04:13:58 GMT  
-		Size: 2.7 MB (2734118 bytes)  
+	-	`sha256:89b83d5718c2b0af5deb78b543ff98cf0cc36088448ab196fd8b5c07e71c857e`  
+		Last Modified: Tue, 30 Sep 2025 03:59:06 GMT  
+		Size: 2.7 MB (2734135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afe21933d181486bf7152a9a5bb344ef69c82e95c87e65d751a8c150432e0a4b`  
-		Last Modified: Tue, 09 Sep 2025 09:50:26 GMT  
-		Size: 136.9 MB (136923672 bytes)  
+	-	`sha256:0dbf985d8034ddbe5624d2848e56aec37e0237be59f8cbdda63a255c5f0030b6`  
+		Last Modified: Wed, 01 Oct 2025 11:05:07 GMT  
+		Size: 136.9 MB (136924097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707f3c752d453ec7ec55b087dcc17b68ffd27af981a4ad99982817400909997b`  
-		Last Modified: Tue, 09 Sep 2025 04:14:06 GMT  
-		Size: 9.4 KB (9435 bytes)  
+	-	`sha256:e619474f867473e780b52f13cd2f51fdebf283af5e03d515179b27ec902734e1`  
+		Last Modified: Tue, 30 Sep 2025 03:59:05 GMT  
+		Size: 9.4 KB (9417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb8ef5c7dbc7c1ab0eef744081b67351b2ba469ff54763578f68369bc35fcdd`  
-		Last Modified: Tue, 09 Sep 2025 04:14:09 GMT  
-		Size: 1.8 KB (1799 bytes)  
+	-	`sha256:b7b79dfefba989ba7038f00fb9e9922b1e38913af3889cd635b5436c67c5b31b`  
+		Last Modified: Tue, 30 Sep 2025 03:59:04 GMT  
+		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:5dab61777610b9b64d6ce00b29640b0766d32b7a34fe23209db1d9b340ecb1c7
+$ docker pull gcc@sha256:c141708293414a4a82d43569fe05300173798f7e14fa18adefbcef0ce37bd1de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 MB (15961785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0b308edd2817cdbda1abda9c5d42611724fd6720cf8a81ac136c0f789fdc444`
+-	Image ID: `sha256:ddee1a61425efd73b01caf188a98c12bd9368283e25b893710d7c91c18f250ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd4eb0db65cf5c548461b8bb8bdde953bcf7b97d2f79c422c783afaffa776ada`  
-		Last Modified: Tue, 09 Sep 2025 06:19:10 GMT  
+	-	`sha256:e05d24099f0aee72de59e2a17bc024a623f7bf70083eff406195ba4b76bbf19c`  
+		Last Modified: Wed, 01 Oct 2025 15:31:30 GMT  
 		Size: 15.9 MB (15931856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:383275b97a8c4b889e9eecd610a2bf25fbbd3151a00d0f39b37bd673d8f18e6e`  
-		Last Modified: Tue, 09 Sep 2025 06:19:11 GMT  
+	-	`sha256:ea3e763e04c3bf94c1ab87c9b406a9380819695678af7397f885413d044b522b`  
+		Last Modified: Wed, 01 Oct 2025 15:31:31 GMT  
 		Size: 29.9 KB (29929 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4.0-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:a7dbffa5f3a4d1dd376537c00713c9b49fe15b1c6ce7a7a832594e4e63bd077d
+$ docker pull gcc@sha256:7fb757a99593e7c64d676b3b77f0144dba2151603585e03ca1bd514664464c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **510.9 MB (510933803 bytes)**  
+-	Total Size: **511.0 MB (510959450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64a4ddb3e35d619b686754547f393d18edb7994dc230b78cf3e980eba57cb5e8`
+-	Image ID: `sha256:42e45ccac4099c12c1b1a0a82129b6c8a818666ba455682122c0c878d7bb79e9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -6969,78 +6969,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:64b8116dd43c29a2a4aa3131cb4895af0a7267cc5883e3761556e54c369be9af`  
-		Last Modified: Mon, 08 Sep 2025 21:22:08 GMT  
-		Size: 52.3 MB (52326822 bytes)  
+	-	`sha256:812b25f785969d275d8c3962568c03f83ccc4df31b95f01c0646d79d6d5069f3`  
+		Last Modified: Mon, 29 Sep 2025 23:33:30 GMT  
+		Size: 52.3 MB (52326764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a66b92467bcafecf194d3c4efbee466dcb9b2010a0899f7d2b928f9afed69de0`  
-		Last Modified: Tue, 09 Sep 2025 04:47:21 GMT  
-		Size: 25.7 MB (25668980 bytes)  
+	-	`sha256:c7f96d9492071bbcb8f94f1c41ed34bb1a985729d6a6ad6f8a6d10f9bd6e3f16`  
+		Last Modified: Tue, 30 Sep 2025 02:24:29 GMT  
+		Size: 25.7 MB (25668919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aad37d5c4461745e898b391fa21157366a7f13cf28ff4bbb1e1434d87664d3`  
-		Last Modified: Tue, 09 Sep 2025 15:23:55 GMT  
-		Size: 69.8 MB (69845800 bytes)  
+	-	`sha256:8559f87b306ba2a8705f64aa230b6840e422b552a6363650f02e37cde768fc14`  
+		Last Modified: Tue, 30 Sep 2025 09:20:33 GMT  
+		Size: 69.8 MB (69845543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ff0b9d70c9c82f7123de124ae3969749d2f2876102f829f1ffecdc23491a704`  
-		Last Modified: Tue, 09 Sep 2025 22:19:54 GMT  
-		Size: 214.5 MB (214461801 bytes)  
+	-	`sha256:20f3e227faf60c24660ef8277c41d877c19b8ec824c80c672a35bd5c41d3bfe0`  
+		Last Modified: Wed, 01 Oct 2025 21:20:51 GMT  
+		Size: 214.5 MB (214488789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4a6d4da660166c75ca7e139d2135c1581d62a9aba15460a9697bdc6125ffcf9`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 3.0 MB (2994291 bytes)  
+	-	`sha256:421d7d5193c4abee43a4d24d20907e550f56d73cc338958eee65c661e9cbbdef`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 3.0 MB (2994021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab5c70d23f6de7407a1820ad3ff75e758e041444b7d497092b13dd120752731d`  
-		Last Modified: Wed, 10 Sep 2025 10:56:41 GMT  
-		Size: 145.6 MB (145624534 bytes)  
+	-	`sha256:385d899aef4b76af828e9adc2fa1f3eb16192771c2d89fe36d3a732dc3e81827`  
+		Last Modified: Wed, 01 Oct 2025 00:53:13 GMT  
+		Size: 145.6 MB (145623963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fb5d3d5376ccc5227a08239b0967b145f24ad176dc378001b5649176f5f3d86`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 9.8 KB (9760 bytes)  
+	-	`sha256:7686bff3695524c2601522f2ff9aa9ab58e321bc502d110d0343d4e89b013c44`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63fbe1820bc3910e2c25adea84e7de59381366777021e261940eada09f64b5ae`  
-		Last Modified: Wed, 10 Sep 2025 02:06:31 GMT  
-		Size: 1.8 KB (1815 bytes)  
+	-	`sha256:436ef9722ff590c1e737a54004253827f8b1d753c40b3170c007f85397d7ae46`  
+		Last Modified: Wed, 01 Oct 2025 00:53:21 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:03486ce1329e4bdd9f5f8cc32a7f06fbb50cfa5888d3e6dfb5ef58b43fb58dfd
+$ docker pull gcc@sha256:1babac8bd3414ee7fd1a772b5a8b665fe415371600b3c94e5e96460f9872f466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15909669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40d01b1626d61d74e39857698d8045924c7af2f7e624ef0cdb41d7f1c723647b`
+-	Image ID: `sha256:dcf80b9aed7028e8c152d35006cab194909294d5e782d7bd1437ad7a70382d57`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1ac1f8ae33982774bc92458079db6aacbe173daf66761bc7a8cf18e154aa5d`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:f7fc9003837f206bcedc846f2e4b9428d68a95d59693690f5c4b29b6ae8c151d`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 15.9 MB (15879851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85bf2d1d10d9694ea8f17d7ecac9d88b5b6a572db913b3032c00d6e1723e31b1`  
-		Last Modified: Wed, 10 Sep 2025 03:19:26 GMT  
+	-	`sha256:e4a52b130d4e85cba4f28fd92d4341b8291e1cee5b0b489dc750d2d01804c685`  
+		Last Modified: Wed, 01 Oct 2025 21:19:38 GMT  
 		Size: 29.8 KB (29818 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:13.4.0-bookworm` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:b73b2f835bca57c02d1f2ac84829a1cad72d0bd70446cafb13fa0040052e0ebe
+$ docker pull gcc@sha256:799d9468dd7ebaf3836718157e14d92e8552f72d86e7489759b4a4f237469272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **469.7 MB (469666165 bytes)**  
+-	Total Size: **469.7 MB (469691584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84429faf9e79ffbb5dc8ed8f5ca7b5663fc29d763a4baaa2aa2021167c23dfcf`
+-	Image ID: `sha256:6115202b5adc7c99571cbd5e601439f2e58115471c4b05dfeebbab575de73732`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -7064,67 +7064,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:67e2d91fae4fd9af13e4e364bf8120dcca7856e8273995cc0651acae70b27e8e`  
-		Last Modified: Mon, 08 Sep 2025 21:18:01 GMT  
-		Size: 47.1 MB (47137539 bytes)  
+	-	`sha256:87d1bec83b35277b636c6e05b9418301b2f025752d7539cecae442f0b94d8fbe`  
+		Last Modified: Mon, 29 Sep 2025 23:33:26 GMT  
+		Size: 47.1 MB (47137446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60f0c679ec7b70d7fa5065a6e28276437547a7d43502b4e016c2e85aed8c84c`  
-		Last Modified: Tue, 09 Sep 2025 01:20:52 GMT  
-		Size: 24.0 MB (24023865 bytes)  
+	-	`sha256:fa2365377a8d4ecfdf70b8afc073fddfe487283a41bc28927b47a4757047f66c`  
+		Last Modified: Tue, 30 Sep 2025 03:09:03 GMT  
+		Size: 24.0 MB (24023716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ed122f74eb7bf77b1109cb95e13be357040ccb22119f5f02e566a491bcc45e`  
-		Last Modified: Tue, 09 Sep 2025 17:52:15 GMT  
-		Size: 63.5 MB (63501842 bytes)  
+	-	`sha256:1dc9730cf662a91a14b192c512ec1973efc8f7eabd745b63f8c6c877f23bf0d0`  
+		Last Modified: Tue, 30 Sep 2025 09:32:19 GMT  
+		Size: 63.5 MB (63501350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1357b3f44237ddc9c069d6ad92462c82b443e45692de7cff2d9406a0aabe5cf2`  
-		Last Modified: Tue, 09 Sep 2025 19:20:09 GMT  
-		Size: 183.5 MB (183458814 bytes)  
+	-	`sha256:638c6ce763db618afd6e5ac870aebad4698af0a75be5362f1e49c581094dc4c2`  
+		Last Modified: Tue, 30 Sep 2025 19:38:44 GMT  
+		Size: 183.5 MB (183485788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6305fd1f0144c9dface554e4e47b500c09b5c7b10f23c0813e9253818d492c8f`  
-		Last Modified: Wed, 10 Sep 2025 01:45:40 GMT  
-		Size: 2.7 MB (2731589 bytes)  
+	-	`sha256:7feaad5ec498c7a930c3793d1fd7c894cff4909c51a4cd2edd49544870e365cc`  
+		Last Modified: Tue, 30 Sep 2025 22:06:27 GMT  
+		Size: 2.7 MB (2730784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:517876531befa71956d231a8b5cbd3f0ea5285d2661b2a8997e2778990a90897`  
-		Last Modified: Wed, 10 Sep 2025 02:07:35 GMT  
-		Size: 148.8 MB (148800482 bytes)  
+	-	`sha256:ac237f839a000ac1be93efd1604ec469d210b5c1cf88225bb578ba24a33a190c`  
+		Last Modified: Tue, 30 Sep 2025 22:07:46 GMT  
+		Size: 148.8 MB (148800721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4b684c8ebd6401a9a85f95960a02be9530f448c427312356585b7da6d569788`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 10.2 KB (10213 bytes)  
+	-	`sha256:42003d627cbd2b2b28e1f333f65c1f03a8575f46174a0fa0f2cf9e333f4a5a65`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 10.0 KB (9980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c96246047b0b854ae9531f4fa5a2d27814fad217dae8a29d220e73e077eaad57`  
-		Last Modified: Wed, 10 Sep 2025 01:45:39 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:650f6ce927a103d526f2f9434b3129733571cd727ea92bcc96476451bd15f86c`  
+		Last Modified: Tue, 30 Sep 2025 22:06:26 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:13.4.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:3acd46cab03041e5cc4fcb212d2a78ce6aba6ff9df2a997ee35c409e87f65b85
+$ docker pull gcc@sha256:5a4a4056234d0940a21bfe1803d8d6c080f6b3457f21586c97d39f5aef53e01d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15740658 bytes)**  
+-	Total Size: **15.7 MB (15740655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ad98d35d75a3c2f72ae4c7262d975ac321d511c2e1447455463c498fc37fe09`
+-	Image ID: `sha256:5d70b5b549bff06318bfa355d629008f9ca3bd38e3752b7e6d0622f75ea94d16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd79efb877a9082bbc59e92d1b8c2128a60927b658e92453ff058fd4452b2306`  
-		Last Modified: Wed, 10 Sep 2025 03:19:38 GMT  
+	-	`sha256:51552c6d6233ac56eb601cbf7611a036127bf8ce55873f79e4573fadd55c6ca3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:49 GMT  
 		Size: 15.7 MB (15710900 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:89d24016a0f86c4a1aaf560133d5cc71d3e0de10e253b905fccc9612a8064be2`  
-		Last Modified: Wed, 10 Sep 2025 03:19:39 GMT  
-		Size: 29.8 KB (29758 bytes)  
+	-	`sha256:27d99bcc6c80edfeabe0a4b0856090889a5b62d90fb49251ad608c5a4f6bd92f`  
+		Last Modified: Wed, 01 Oct 2025 21:19:50 GMT  
+		Size: 29.8 KB (29755 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:14`
 
 ```console
-$ docker pull gcc@sha256:70feea1720793e76fd2acd58fb6dd007bcac1db2dd3824781483ce2b93dc4c56
+$ docker pull gcc@sha256:710c585419daee545f304885ec05e802391d8497b739eac087b65fd05eccc0ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7335,18 +7335,18 @@ $ docker pull gcc@sha256:4781c4d2cd6000abfd51d347d9e38e60e6f7840990a2a1e12d583f2
 ### `gcc:14` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:2ac5090d00aca6d0f9f52145b6b3c06ad683e031915deebee5d3256c86051214
+$ docker pull gcc@sha256:bfa69a76cc41e338699c376341377f42da80027841d3f2a7a3faf07ccaa67d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.5 MB (447535561 bytes)**  
+-	Total Size: **447.6 MB (447581526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49d4da92f288e1940a3b7853d98a49ee12c13da05d848dcb2fbeb6ab5fdb904d`
+-	Image ID: `sha256:38fccdced1c5ae1fe50247a05384e69ac7161753cb5e1f7944bb5d1a6b240ff0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -7370,78 +7370,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296ac9217694a3320a200caeda702eb5c089f3d04a0ebdf1f2060663d5b8d09d`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 4.2 MB (4206493 bytes)  
+	-	`sha256:2376715efc5c9eba4c54746bcf2aa01808ca02411ef8537cad7e3676f42e4178`  
+		Last Modified: Tue, 30 Sep 2025 05:37:06 GMT  
+		Size: 4.2 MB (4206353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7bba5c10f3640733a50aae1c5a40fe9d1bf96e7d0f9a9912158b610089948e6`  
-		Last Modified: Tue, 09 Sep 2025 11:43:08 GMT  
-		Size: 118.1 MB (118073188 bytes)  
+	-	`sha256:0e75b056922a8f40bd1e5b1539c8d1fc66d7d95353f7f46fc8b2d56148970a80`  
+		Last Modified: Wed, 01 Oct 2025 19:50:31 GMT  
+		Size: 118.1 MB (118075080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9155978494c6237e702c7c3a8cd360c7d5f28a1e2367578f4335559673eef941`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 10.2 KB (10173 bytes)  
+	-	`sha256:ce8c42119a5cf66e327bf828ad0bc3c5307c84a2955bffe89345b5e63f36c028`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 10.0 KB (10019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75948bb1a2c47b6c32ee2fc91d9625690d75fb7d9202062aae313667ae9ebf07`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 2.0 KB (2011 bytes)  
+	-	`sha256:82785cd61d755064e0cbb20653b33ee7a07f6504605513c4c6f81407d697144c`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9c9f4b2b10ee1c4a955fb96688067d65249ae1e3d252713685e5ee5f64f89be6
+$ docker pull gcc@sha256:adba4bd56579ecd0531923d5cff40a8ea38b6cf2093a7a09e1a57fb92789c8b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17178098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5577d9b1564f53bcf9327d147d31a6e68afd8500ccce7d35bf13efe9ac5badb8`
+-	Image ID: `sha256:5608976259062e2f7a60bf17fe0efe07a0173eebdf1870b737b865217d233ea0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc8d7987f679bdc19d7d3ccfd1d381bb9b83fb5658c450ed54d7549ceb40c1c6`  
-		Last Modified: Tue, 09 Sep 2025 12:19:07 GMT  
+	-	`sha256:52836067d93ca5305e7c4cb65a2068ca84ff520c6482d9bad98490686f6cfff3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:43 GMT  
 		Size: 17.1 MB (17148219 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:306b7cedef134be87c8730b012abbcc06b732242d25c746855d395a3b91d4f24`  
-		Last Modified: Tue, 09 Sep 2025 12:19:08 GMT  
+	-	`sha256:d7431ca68938ab71c1838c80869c3716418401b415752fed51d2fdf0004e2ae0`  
+		Last Modified: Wed, 01 Oct 2025 21:19:44 GMT  
 		Size: 29.9 KB (29879 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:2318f16b00414a2b6db3b1ec04ad3c020aaef456ebec0ae939966092fab0d6c3
+$ docker pull gcc@sha256:e30a4e4c5a8a34899cd7f51f9f6bcf96a5b771e796a80c1163343f21cf05387a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **521.0 MB (521042679 bytes)**  
+-	Total Size: **521.1 MB (521054958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd8dfa6b304b575693a1c990af2b99207c824f998a80177dbfd8d187e168561f`
+-	Image ID: `sha256:fe5e9b3fb332f8f4a69c5f8de73114b5911a71829049a663440937c75117b695`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -7465,78 +7465,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9000fdf28e522e1e1c776e19b64b20fdffdad91f7de08ee92488017fe8ffb2cd`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 4.5 MB (4497957 bytes)  
+	-	`sha256:1af533850b3aa4315e9dbec05ee8baa11912855e76bd4da3a8822165a2b6b21f`  
+		Last Modified: Tue, 30 Sep 2025 04:05:02 GMT  
+		Size: 4.5 MB (4498011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c216d477b56aba413fdcdf3b96f2a1b14e36803c6a15f7e97c39b72d71f7ee98`  
-		Last Modified: Tue, 09 Sep 2025 10:54:02 GMT  
-		Size: 148.2 MB (148227801 bytes)  
+	-	`sha256:6b316094ca13462f6b42278a41406dc1d6c720e395467ed9cbd352a97fd2e9a8`  
+		Last Modified: Wed, 01 Oct 2025 20:35:28 GMT  
+		Size: 148.2 MB (148227508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69524b97c3cb354c28f01d8be1cc475e96bfe12b16cbaae6711a10456f62460d`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 10.3 KB (10273 bytes)  
+	-	`sha256:61ce2f706e0f1899ef191e937f60242482d6482efd36c023cf208a534d0effa9`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 10.3 KB (10303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14b2c542f36a2faa902487ca0e14e18b97adec939f18cfb4fc9b471339257b96`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 2.0 KB (1997 bytes)  
+	-	`sha256:51b3410f06dc7d2de5c48e0eeaf33c7d4ac232ee237588addac2be27a72cdf90`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 2.0 KB (1988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:0b4a78d09005f839944b2eb1c98dc3043160661cd80e0661b54aa0369f635620
+$ docker pull gcc@sha256:0e913c3dcd8a10b160bcf879d4a4514f78b187cf4a1ec4e19ca58c8049b297c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17494446 bytes)**  
+-	Total Size: **17.5 MB (17494445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0573b3879f5edeb30a00b437eb7512d16a50665d18ba767b5328228b0ccb4b5`
+-	Image ID: `sha256:b51f805392265546378a81842f424a39912317cfa7a52a1793bb80c6ccf862ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03f5d628f79642d3b24b6aa167d212e6f6b74aede6150abc647122ac833a4ebd`  
-		Last Modified: Tue, 09 Sep 2025 09:19:44 GMT  
+	-	`sha256:6e34944f544d5039f5e88bd5cf455477f94a91dd0d31a864d52bf7ec764a038a`  
+		Last Modified: Wed, 01 Oct 2025 12:31:33 GMT  
 		Size: 17.5 MB (17464529 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d3014cd41aacc2f8b23348a9436420f0ab9f51f3a3283752eda61bf981bcb661`  
-		Last Modified: Tue, 09 Sep 2025 09:19:45 GMT  
-		Size: 29.9 KB (29917 bytes)  
+	-	`sha256:5a4a64bac7da12eea4227d23f57f0e6d0ec5884e39ec69339da97f5156897c17`  
+		Last Modified: Wed, 01 Oct 2025 12:31:34 GMT  
+		Size: 29.9 KB (29916 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:75c016f8b8e5d820c903a136d114c22b88edc27b9bcfbb0f6e0b82352b9aa75c
+$ docker pull gcc@sha256:f5f3d0632016ec0e32c669d0402e47f9d5d4958f40576dc194e9460ee71a92a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.4 MB (543353035 bytes)**  
+-	Total Size: **543.4 MB (543399229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46181a756f7ff241825e094910c39503dc0c4d74709df0b8fb89e1d92886d820`
+-	Image ID: `sha256:70fb4052d73c34a74e0d76913d881a231af244e19fbf0e3d0f61054a54cf34f7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -7560,78 +7560,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d644ba60d3c682f7e666065c4846f49be2236112a6f0efb9b5e5b375d4f95ab0`  
-		Last Modified: Wed, 10 Sep 2025 10:54:27 GMT  
-		Size: 154.3 MB (154257992 bytes)  
+	-	`sha256:20ca448ea2a04bbd4aa0fe0946068d0d83e51138cc1ee298d7075920a97802e6`  
+		Last Modified: Wed, 01 Oct 2025 11:14:22 GMT  
+		Size: 154.3 MB (154258191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48f2a6deb95b820f06a43df567d34d1660ca533cdc8b0a38e11f2e9e847bc5c0`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 10.6 KB (10620 bytes)  
+	-	`sha256:bc1dcf23598d8cc753e0d24429d740bad1940a90e971fbd90ccce692a93e6639`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 10.6 KB (10601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c2766711eee88958f36c3577836a30055bf74e9478a4dcb227df1e3762982ec`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:223a7cebe868a24eb073d35a09468ccbb978fbe9c97035f5fd34069bac8fde79`  
+		Last Modified: Wed, 01 Oct 2025 11:14:53 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:62740ff0357d1e4e2d207f99f2e2b5aad7275f51e3590d53c491813f465115c7
+$ docker pull gcc@sha256:6dba558fb6b19fc6514b201c19d87c4e06deef035eee8bbe34f759050d2ac5c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.4 MB (17395604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743f52d23c494a7fd4d4ef01b991b37edf15fcb2dfa9d92ed1ae5577545f628f`
+-	Image ID: `sha256:4487942cdb08d9e3bcb0061536ec08e3212223d73fbed7b309fa1dd05263067f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7941f8b67f27aa2b58cbc36b9804a0559b64d5af264a72c56725cfed8bd48922`  
-		Last Modified: Wed, 10 Sep 2025 03:19:40 GMT  
+	-	`sha256:988e420a47a4352c952be89e167c2e002e57a1c6170dd219309a8dc3ec64658c`  
+		Last Modified: Wed, 01 Oct 2025 21:20:17 GMT  
 		Size: 17.4 MB (17365798 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9f408b156dfb3e45ea924e69154028ef9d6205c5f2a4f5397ab72974409ad37`  
-		Last Modified: Wed, 10 Sep 2025 03:19:41 GMT  
+	-	`sha256:067c82420c42421081f1d48f6f2af5a2a8064ff90eba611098d9a4fb18d5465a`  
+		Last Modified: Wed, 01 Oct 2025 21:20:18 GMT  
 		Size: 29.8 KB (29806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:ca0fb35ba87bb819c0bdc97f8ad942d65b378f65e8ab3ca81fa8b071507e47f2
+$ docker pull gcc@sha256:7d806ff8d5f89a9465566b2c059333585d13200f49e649e83a7004c7761ca4d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **514.6 MB (514615464 bytes)**  
+-	Total Size: **514.7 MB (514652724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80ddf9e499b2ff023425c47fa2f4c339a567a2b46369d364cabccbab5d777147`
+-	Image ID: `sha256:5d8e370ff8159696a33fd515ad3ef85590fa009bf12367071a86268514e08f55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -7655,67 +7655,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37932e39b16985d8d1fde378531a0e1e91ddb2b9a7fc8850ffc84c94f0467fe`  
-		Last Modified: Wed, 10 Sep 2025 09:27:29 GMT  
-		Size: 158.7 MB (158733112 bytes)  
+	-	`sha256:52079144802bb88a1042e31fd57c051668c91994346d8dc8b2ff12d4bbea7a3a`  
+		Last Modified: Wed, 01 Oct 2025 09:04:16 GMT  
+		Size: 158.7 MB (158733509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c150c67f753f914be8aec0f509776bac5d56751f88b8d5fd2a85011bc3dd20`  
-		Last Modified: Wed, 10 Sep 2025 09:27:27 GMT  
-		Size: 11.1 KB (11102 bytes)  
+	-	`sha256:7e88d797f1550dc5fc6d801bec8bdd4c0f61b46c46150c2348401f3d37613431`  
+		Last Modified: Wed, 01 Oct 2025 09:52:29 GMT  
+		Size: 11.1 KB (11129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb89aa612909ae8e51d59b35f8d927644c3971c611ac665412e6a6856bbe6da`  
-		Last Modified: Wed, 10 Sep 2025 09:27:23 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:11fc07e0ec16d9e0bece8f703a9a67459c8d1ffd2f8215ed0d81af580b94efa0`  
+		Last Modified: Wed, 01 Oct 2025 09:52:27 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:66b80ef1852be5193968a3d45308dd0da14e11cadab624ee65669eeac10cf83f
+$ docker pull gcc@sha256:912d7d23aa9023cf28e5f207d8ab96d17bb8b18be3c372e802e3f1e359df7290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17187168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1993e9dac60b7f7ded78b8ee3691aa44065459306fc1c051dcdecb7ec84c6df2`
+-	Image ID: `sha256:1082d47e47687ec6407a6e7d9818cf4fed67cbdf6db59648630b80a91f831982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da960b6119e43c83b15f4bdee3141f075f63904028ed80f3ce427ce0faf44b5e`  
-		Last Modified: Wed, 10 Sep 2025 12:19:18 GMT  
+	-	`sha256:fef6ac710f844d33351924952d9d55e7b4db7256bf75c4c3a6030c3c7a2bc0fc`  
+		Last Modified: Wed, 01 Oct 2025 21:20:32 GMT  
 		Size: 17.2 MB (17157424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de6388fdadc38f38aab2b50a42e68c2443f7f50224f609632a40733563f344a1`  
-		Last Modified: Wed, 10 Sep 2025 12:19:19 GMT  
+	-	`sha256:723914ddd01bcdab27b21cf141eee28e2fdf11aca0b09cf1ead4df28ae9ecfe8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:33 GMT  
 		Size: 29.7 KB (29744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:14-trixie`
 
 ```console
-$ docker pull gcc@sha256:70feea1720793e76fd2acd58fb6dd007bcac1db2dd3824781483ce2b93dc4c56
+$ docker pull gcc@sha256:710c585419daee545f304885ec05e802391d8497b739eac087b65fd05eccc0ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7926,18 +7926,18 @@ $ docker pull gcc@sha256:4781c4d2cd6000abfd51d347d9e38e60e6f7840990a2a1e12d583f2
 ### `gcc:14-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:2ac5090d00aca6d0f9f52145b6b3c06ad683e031915deebee5d3256c86051214
+$ docker pull gcc@sha256:bfa69a76cc41e338699c376341377f42da80027841d3f2a7a3faf07ccaa67d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.5 MB (447535561 bytes)**  
+-	Total Size: **447.6 MB (447581526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49d4da92f288e1940a3b7853d98a49ee12c13da05d848dcb2fbeb6ab5fdb904d`
+-	Image ID: `sha256:38fccdced1c5ae1fe50247a05384e69ac7161753cb5e1f7944bb5d1a6b240ff0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -7961,78 +7961,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296ac9217694a3320a200caeda702eb5c089f3d04a0ebdf1f2060663d5b8d09d`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 4.2 MB (4206493 bytes)  
+	-	`sha256:2376715efc5c9eba4c54746bcf2aa01808ca02411ef8537cad7e3676f42e4178`  
+		Last Modified: Tue, 30 Sep 2025 05:37:06 GMT  
+		Size: 4.2 MB (4206353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7bba5c10f3640733a50aae1c5a40fe9d1bf96e7d0f9a9912158b610089948e6`  
-		Last Modified: Tue, 09 Sep 2025 11:43:08 GMT  
-		Size: 118.1 MB (118073188 bytes)  
+	-	`sha256:0e75b056922a8f40bd1e5b1539c8d1fc66d7d95353f7f46fc8b2d56148970a80`  
+		Last Modified: Wed, 01 Oct 2025 19:50:31 GMT  
+		Size: 118.1 MB (118075080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9155978494c6237e702c7c3a8cd360c7d5f28a1e2367578f4335559673eef941`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 10.2 KB (10173 bytes)  
+	-	`sha256:ce8c42119a5cf66e327bf828ad0bc3c5307c84a2955bffe89345b5e63f36c028`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 10.0 KB (10019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75948bb1a2c47b6c32ee2fc91d9625690d75fb7d9202062aae313667ae9ebf07`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 2.0 KB (2011 bytes)  
+	-	`sha256:82785cd61d755064e0cbb20653b33ee7a07f6504605513c4c6f81407d697144c`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9c9f4b2b10ee1c4a955fb96688067d65249ae1e3d252713685e5ee5f64f89be6
+$ docker pull gcc@sha256:adba4bd56579ecd0531923d5cff40a8ea38b6cf2093a7a09e1a57fb92789c8b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17178098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5577d9b1564f53bcf9327d147d31a6e68afd8500ccce7d35bf13efe9ac5badb8`
+-	Image ID: `sha256:5608976259062e2f7a60bf17fe0efe07a0173eebdf1870b737b865217d233ea0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc8d7987f679bdc19d7d3ccfd1d381bb9b83fb5658c450ed54d7549ceb40c1c6`  
-		Last Modified: Tue, 09 Sep 2025 12:19:07 GMT  
+	-	`sha256:52836067d93ca5305e7c4cb65a2068ca84ff520c6482d9bad98490686f6cfff3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:43 GMT  
 		Size: 17.1 MB (17148219 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:306b7cedef134be87c8730b012abbcc06b732242d25c746855d395a3b91d4f24`  
-		Last Modified: Tue, 09 Sep 2025 12:19:08 GMT  
+	-	`sha256:d7431ca68938ab71c1838c80869c3716418401b415752fed51d2fdf0004e2ae0`  
+		Last Modified: Wed, 01 Oct 2025 21:19:44 GMT  
 		Size: 29.9 KB (29879 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:2318f16b00414a2b6db3b1ec04ad3c020aaef456ebec0ae939966092fab0d6c3
+$ docker pull gcc@sha256:e30a4e4c5a8a34899cd7f51f9f6bcf96a5b771e796a80c1163343f21cf05387a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **521.0 MB (521042679 bytes)**  
+-	Total Size: **521.1 MB (521054958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd8dfa6b304b575693a1c990af2b99207c824f998a80177dbfd8d187e168561f`
+-	Image ID: `sha256:fe5e9b3fb332f8f4a69c5f8de73114b5911a71829049a663440937c75117b695`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -8056,78 +8056,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9000fdf28e522e1e1c776e19b64b20fdffdad91f7de08ee92488017fe8ffb2cd`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 4.5 MB (4497957 bytes)  
+	-	`sha256:1af533850b3aa4315e9dbec05ee8baa11912855e76bd4da3a8822165a2b6b21f`  
+		Last Modified: Tue, 30 Sep 2025 04:05:02 GMT  
+		Size: 4.5 MB (4498011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c216d477b56aba413fdcdf3b96f2a1b14e36803c6a15f7e97c39b72d71f7ee98`  
-		Last Modified: Tue, 09 Sep 2025 10:54:02 GMT  
-		Size: 148.2 MB (148227801 bytes)  
+	-	`sha256:6b316094ca13462f6b42278a41406dc1d6c720e395467ed9cbd352a97fd2e9a8`  
+		Last Modified: Wed, 01 Oct 2025 20:35:28 GMT  
+		Size: 148.2 MB (148227508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69524b97c3cb354c28f01d8be1cc475e96bfe12b16cbaae6711a10456f62460d`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 10.3 KB (10273 bytes)  
+	-	`sha256:61ce2f706e0f1899ef191e937f60242482d6482efd36c023cf208a534d0effa9`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 10.3 KB (10303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14b2c542f36a2faa902487ca0e14e18b97adec939f18cfb4fc9b471339257b96`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 2.0 KB (1997 bytes)  
+	-	`sha256:51b3410f06dc7d2de5c48e0eeaf33c7d4ac232ee237588addac2be27a72cdf90`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 2.0 KB (1988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:0b4a78d09005f839944b2eb1c98dc3043160661cd80e0661b54aa0369f635620
+$ docker pull gcc@sha256:0e913c3dcd8a10b160bcf879d4a4514f78b187cf4a1ec4e19ca58c8049b297c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17494446 bytes)**  
+-	Total Size: **17.5 MB (17494445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0573b3879f5edeb30a00b437eb7512d16a50665d18ba767b5328228b0ccb4b5`
+-	Image ID: `sha256:b51f805392265546378a81842f424a39912317cfa7a52a1793bb80c6ccf862ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03f5d628f79642d3b24b6aa167d212e6f6b74aede6150abc647122ac833a4ebd`  
-		Last Modified: Tue, 09 Sep 2025 09:19:44 GMT  
+	-	`sha256:6e34944f544d5039f5e88bd5cf455477f94a91dd0d31a864d52bf7ec764a038a`  
+		Last Modified: Wed, 01 Oct 2025 12:31:33 GMT  
 		Size: 17.5 MB (17464529 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d3014cd41aacc2f8b23348a9436420f0ab9f51f3a3283752eda61bf981bcb661`  
-		Last Modified: Tue, 09 Sep 2025 09:19:45 GMT  
-		Size: 29.9 KB (29917 bytes)  
+	-	`sha256:5a4a64bac7da12eea4227d23f57f0e6d0ec5884e39ec69339da97f5156897c17`  
+		Last Modified: Wed, 01 Oct 2025 12:31:34 GMT  
+		Size: 29.9 KB (29916 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14-trixie` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:75c016f8b8e5d820c903a136d114c22b88edc27b9bcfbb0f6e0b82352b9aa75c
+$ docker pull gcc@sha256:f5f3d0632016ec0e32c669d0402e47f9d5d4958f40576dc194e9460ee71a92a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.4 MB (543353035 bytes)**  
+-	Total Size: **543.4 MB (543399229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46181a756f7ff241825e094910c39503dc0c4d74709df0b8fb89e1d92886d820`
+-	Image ID: `sha256:70fb4052d73c34a74e0d76913d881a231af244e19fbf0e3d0f61054a54cf34f7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -8151,78 +8151,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d644ba60d3c682f7e666065c4846f49be2236112a6f0efb9b5e5b375d4f95ab0`  
-		Last Modified: Wed, 10 Sep 2025 10:54:27 GMT  
-		Size: 154.3 MB (154257992 bytes)  
+	-	`sha256:20ca448ea2a04bbd4aa0fe0946068d0d83e51138cc1ee298d7075920a97802e6`  
+		Last Modified: Wed, 01 Oct 2025 11:14:22 GMT  
+		Size: 154.3 MB (154258191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48f2a6deb95b820f06a43df567d34d1660ca533cdc8b0a38e11f2e9e847bc5c0`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 10.6 KB (10620 bytes)  
+	-	`sha256:bc1dcf23598d8cc753e0d24429d740bad1940a90e971fbd90ccce692a93e6639`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 10.6 KB (10601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c2766711eee88958f36c3577836a30055bf74e9478a4dcb227df1e3762982ec`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:223a7cebe868a24eb073d35a09468ccbb978fbe9c97035f5fd34069bac8fde79`  
+		Last Modified: Wed, 01 Oct 2025 11:14:53 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:62740ff0357d1e4e2d207f99f2e2b5aad7275f51e3590d53c491813f465115c7
+$ docker pull gcc@sha256:6dba558fb6b19fc6514b201c19d87c4e06deef035eee8bbe34f759050d2ac5c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.4 MB (17395604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743f52d23c494a7fd4d4ef01b991b37edf15fcb2dfa9d92ed1ae5577545f628f`
+-	Image ID: `sha256:4487942cdb08d9e3bcb0061536ec08e3212223d73fbed7b309fa1dd05263067f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7941f8b67f27aa2b58cbc36b9804a0559b64d5af264a72c56725cfed8bd48922`  
-		Last Modified: Wed, 10 Sep 2025 03:19:40 GMT  
+	-	`sha256:988e420a47a4352c952be89e167c2e002e57a1c6170dd219309a8dc3ec64658c`  
+		Last Modified: Wed, 01 Oct 2025 21:20:17 GMT  
 		Size: 17.4 MB (17365798 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9f408b156dfb3e45ea924e69154028ef9d6205c5f2a4f5397ab72974409ad37`  
-		Last Modified: Wed, 10 Sep 2025 03:19:41 GMT  
+	-	`sha256:067c82420c42421081f1d48f6f2af5a2a8064ff90eba611098d9a4fb18d5465a`  
+		Last Modified: Wed, 01 Oct 2025 21:20:18 GMT  
 		Size: 29.8 KB (29806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14-trixie` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:ca0fb35ba87bb819c0bdc97f8ad942d65b378f65e8ab3ca81fa8b071507e47f2
+$ docker pull gcc@sha256:7d806ff8d5f89a9465566b2c059333585d13200f49e649e83a7004c7761ca4d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **514.6 MB (514615464 bytes)**  
+-	Total Size: **514.7 MB (514652724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80ddf9e499b2ff023425c47fa2f4c339a567a2b46369d364cabccbab5d777147`
+-	Image ID: `sha256:5d8e370ff8159696a33fd515ad3ef85590fa009bf12367071a86268514e08f55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -8246,67 +8246,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37932e39b16985d8d1fde378531a0e1e91ddb2b9a7fc8850ffc84c94f0467fe`  
-		Last Modified: Wed, 10 Sep 2025 09:27:29 GMT  
-		Size: 158.7 MB (158733112 bytes)  
+	-	`sha256:52079144802bb88a1042e31fd57c051668c91994346d8dc8b2ff12d4bbea7a3a`  
+		Last Modified: Wed, 01 Oct 2025 09:04:16 GMT  
+		Size: 158.7 MB (158733509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c150c67f753f914be8aec0f509776bac5d56751f88b8d5fd2a85011bc3dd20`  
-		Last Modified: Wed, 10 Sep 2025 09:27:27 GMT  
-		Size: 11.1 KB (11102 bytes)  
+	-	`sha256:7e88d797f1550dc5fc6d801bec8bdd4c0f61b46c46150c2348401f3d37613431`  
+		Last Modified: Wed, 01 Oct 2025 09:52:29 GMT  
+		Size: 11.1 KB (11129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb89aa612909ae8e51d59b35f8d927644c3971c611ac665412e6a6856bbe6da`  
-		Last Modified: Wed, 10 Sep 2025 09:27:23 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:11fc07e0ec16d9e0bece8f703a9a67459c8d1ffd2f8215ed0d81af580b94efa0`  
+		Last Modified: Wed, 01 Oct 2025 09:52:27 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:66b80ef1852be5193968a3d45308dd0da14e11cadab624ee65669eeac10cf83f
+$ docker pull gcc@sha256:912d7d23aa9023cf28e5f207d8ab96d17bb8b18be3c372e802e3f1e359df7290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17187168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1993e9dac60b7f7ded78b8ee3691aa44065459306fc1c051dcdecb7ec84c6df2`
+-	Image ID: `sha256:1082d47e47687ec6407a6e7d9818cf4fed67cbdf6db59648630b80a91f831982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da960b6119e43c83b15f4bdee3141f075f63904028ed80f3ce427ce0faf44b5e`  
-		Last Modified: Wed, 10 Sep 2025 12:19:18 GMT  
+	-	`sha256:fef6ac710f844d33351924952d9d55e7b4db7256bf75c4c3a6030c3c7a2bc0fc`  
+		Last Modified: Wed, 01 Oct 2025 21:20:32 GMT  
 		Size: 17.2 MB (17157424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de6388fdadc38f38aab2b50a42e68c2443f7f50224f609632a40733563f344a1`  
-		Last Modified: Wed, 10 Sep 2025 12:19:19 GMT  
+	-	`sha256:723914ddd01bcdab27b21cf141eee28e2fdf11aca0b09cf1ead4df28ae9ecfe8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:33 GMT  
 		Size: 29.7 KB (29744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:14.3`
 
 ```console
-$ docker pull gcc@sha256:27003054465a36405f26093701b882ba1639a149adcc16080b5c2b2d0578f541
+$ docker pull gcc@sha256:710c585419daee545f304885ec05e802391d8497b739eac087b65fd05eccc0ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8517,18 +8517,18 @@ $ docker pull gcc@sha256:4781c4d2cd6000abfd51d347d9e38e60e6f7840990a2a1e12d583f2
 ### `gcc:14.3` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:2ac5090d00aca6d0f9f52145b6b3c06ad683e031915deebee5d3256c86051214
+$ docker pull gcc@sha256:bfa69a76cc41e338699c376341377f42da80027841d3f2a7a3faf07ccaa67d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.5 MB (447535561 bytes)**  
+-	Total Size: **447.6 MB (447581526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49d4da92f288e1940a3b7853d98a49ee12c13da05d848dcb2fbeb6ab5fdb904d`
+-	Image ID: `sha256:38fccdced1c5ae1fe50247a05384e69ac7161753cb5e1f7944bb5d1a6b240ff0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -8552,60 +8552,60 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296ac9217694a3320a200caeda702eb5c089f3d04a0ebdf1f2060663d5b8d09d`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 4.2 MB (4206493 bytes)  
+	-	`sha256:2376715efc5c9eba4c54746bcf2aa01808ca02411ef8537cad7e3676f42e4178`  
+		Last Modified: Tue, 30 Sep 2025 05:37:06 GMT  
+		Size: 4.2 MB (4206353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7bba5c10f3640733a50aae1c5a40fe9d1bf96e7d0f9a9912158b610089948e6`  
-		Last Modified: Tue, 09 Sep 2025 11:43:08 GMT  
-		Size: 118.1 MB (118073188 bytes)  
+	-	`sha256:0e75b056922a8f40bd1e5b1539c8d1fc66d7d95353f7f46fc8b2d56148970a80`  
+		Last Modified: Wed, 01 Oct 2025 19:50:31 GMT  
+		Size: 118.1 MB (118075080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9155978494c6237e702c7c3a8cd360c7d5f28a1e2367578f4335559673eef941`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 10.2 KB (10173 bytes)  
+	-	`sha256:ce8c42119a5cf66e327bf828ad0bc3c5307c84a2955bffe89345b5e63f36c028`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 10.0 KB (10019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75948bb1a2c47b6c32ee2fc91d9625690d75fb7d9202062aae313667ae9ebf07`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 2.0 KB (2011 bytes)  
+	-	`sha256:82785cd61d755064e0cbb20653b33ee7a07f6504605513c4c6f81407d697144c`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9c9f4b2b10ee1c4a955fb96688067d65249ae1e3d252713685e5ee5f64f89be6
+$ docker pull gcc@sha256:adba4bd56579ecd0531923d5cff40a8ea38b6cf2093a7a09e1a57fb92789c8b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17178098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5577d9b1564f53bcf9327d147d31a6e68afd8500ccce7d35bf13efe9ac5badb8`
+-	Image ID: `sha256:5608976259062e2f7a60bf17fe0efe07a0173eebdf1870b737b865217d233ea0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc8d7987f679bdc19d7d3ccfd1d381bb9b83fb5658c450ed54d7549ceb40c1c6`  
-		Last Modified: Tue, 09 Sep 2025 12:19:07 GMT  
+	-	`sha256:52836067d93ca5305e7c4cb65a2068ca84ff520c6482d9bad98490686f6cfff3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:43 GMT  
 		Size: 17.1 MB (17148219 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:306b7cedef134be87c8730b012abbcc06b732242d25c746855d395a3b91d4f24`  
-		Last Modified: Tue, 09 Sep 2025 12:19:08 GMT  
+	-	`sha256:d7431ca68938ab71c1838c80869c3716418401b415752fed51d2fdf0004e2ae0`  
+		Last Modified: Wed, 01 Oct 2025 21:19:44 GMT  
 		Size: 29.9 KB (29879 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8668,7 +8668,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.5 MB (4498011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b316094ca13462f6b42278a41406dc1d6c720e395467ed9cbd352a97fd2e9a8`  
-		Last Modified: Tue, 30 Sep 2025 04:04:33 GMT  
+		Last Modified: Wed, 01 Oct 2025 20:35:28 GMT  
 		Size: 148.2 MB (148227508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61ce2f706e0f1899ef191e937f60242482d6482efd36c023cf208a534d0effa9`  
@@ -8707,18 +8707,18 @@ $ docker pull gcc@sha256:0e913c3dcd8a10b160bcf879d4a4514f78b187cf4a1ec4e19ca58c8
 ### `gcc:14.3` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:75c016f8b8e5d820c903a136d114c22b88edc27b9bcfbb0f6e0b82352b9aa75c
+$ docker pull gcc@sha256:f5f3d0632016ec0e32c669d0402e47f9d5d4958f40576dc194e9460ee71a92a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.4 MB (543353035 bytes)**  
+-	Total Size: **543.4 MB (543399229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46181a756f7ff241825e094910c39503dc0c4d74709df0b8fb89e1d92886d820`
+-	Image ID: `sha256:70fb4052d73c34a74e0d76913d881a231af244e19fbf0e3d0f61054a54cf34f7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -8742,78 +8742,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d644ba60d3c682f7e666065c4846f49be2236112a6f0efb9b5e5b375d4f95ab0`  
-		Last Modified: Wed, 10 Sep 2025 10:54:27 GMT  
-		Size: 154.3 MB (154257992 bytes)  
+	-	`sha256:20ca448ea2a04bbd4aa0fe0946068d0d83e51138cc1ee298d7075920a97802e6`  
+		Last Modified: Wed, 01 Oct 2025 11:14:22 GMT  
+		Size: 154.3 MB (154258191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48f2a6deb95b820f06a43df567d34d1660ca533cdc8b0a38e11f2e9e847bc5c0`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 10.6 KB (10620 bytes)  
+	-	`sha256:bc1dcf23598d8cc753e0d24429d740bad1940a90e971fbd90ccce692a93e6639`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 10.6 KB (10601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c2766711eee88958f36c3577836a30055bf74e9478a4dcb227df1e3762982ec`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:223a7cebe868a24eb073d35a09468ccbb978fbe9c97035f5fd34069bac8fde79`  
+		Last Modified: Wed, 01 Oct 2025 11:14:53 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:62740ff0357d1e4e2d207f99f2e2b5aad7275f51e3590d53c491813f465115c7
+$ docker pull gcc@sha256:6dba558fb6b19fc6514b201c19d87c4e06deef035eee8bbe34f759050d2ac5c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.4 MB (17395604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743f52d23c494a7fd4d4ef01b991b37edf15fcb2dfa9d92ed1ae5577545f628f`
+-	Image ID: `sha256:4487942cdb08d9e3bcb0061536ec08e3212223d73fbed7b309fa1dd05263067f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7941f8b67f27aa2b58cbc36b9804a0559b64d5af264a72c56725cfed8bd48922`  
-		Last Modified: Wed, 10 Sep 2025 03:19:40 GMT  
+	-	`sha256:988e420a47a4352c952be89e167c2e002e57a1c6170dd219309a8dc3ec64658c`  
+		Last Modified: Wed, 01 Oct 2025 21:20:17 GMT  
 		Size: 17.4 MB (17365798 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9f408b156dfb3e45ea924e69154028ef9d6205c5f2a4f5397ab72974409ad37`  
-		Last Modified: Wed, 10 Sep 2025 03:19:41 GMT  
+	-	`sha256:067c82420c42421081f1d48f6f2af5a2a8064ff90eba611098d9a4fb18d5465a`  
+		Last Modified: Wed, 01 Oct 2025 21:20:18 GMT  
 		Size: 29.8 KB (29806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:ca0fb35ba87bb819c0bdc97f8ad942d65b378f65e8ab3ca81fa8b071507e47f2
+$ docker pull gcc@sha256:7d806ff8d5f89a9465566b2c059333585d13200f49e649e83a7004c7761ca4d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **514.6 MB (514615464 bytes)**  
+-	Total Size: **514.7 MB (514652724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80ddf9e499b2ff023425c47fa2f4c339a567a2b46369d364cabccbab5d777147`
+-	Image ID: `sha256:5d8e370ff8159696a33fd515ad3ef85590fa009bf12367071a86268514e08f55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -8837,67 +8837,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37932e39b16985d8d1fde378531a0e1e91ddb2b9a7fc8850ffc84c94f0467fe`  
-		Last Modified: Wed, 10 Sep 2025 09:27:29 GMT  
-		Size: 158.7 MB (158733112 bytes)  
+	-	`sha256:52079144802bb88a1042e31fd57c051668c91994346d8dc8b2ff12d4bbea7a3a`  
+		Last Modified: Wed, 01 Oct 2025 09:04:16 GMT  
+		Size: 158.7 MB (158733509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c150c67f753f914be8aec0f509776bac5d56751f88b8d5fd2a85011bc3dd20`  
-		Last Modified: Wed, 10 Sep 2025 09:27:27 GMT  
-		Size: 11.1 KB (11102 bytes)  
+	-	`sha256:7e88d797f1550dc5fc6d801bec8bdd4c0f61b46c46150c2348401f3d37613431`  
+		Last Modified: Wed, 01 Oct 2025 09:52:29 GMT  
+		Size: 11.1 KB (11129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb89aa612909ae8e51d59b35f8d927644c3971c611ac665412e6a6856bbe6da`  
-		Last Modified: Wed, 10 Sep 2025 09:27:23 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:11fc07e0ec16d9e0bece8f703a9a67459c8d1ffd2f8215ed0d81af580b94efa0`  
+		Last Modified: Wed, 01 Oct 2025 09:52:27 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:66b80ef1852be5193968a3d45308dd0da14e11cadab624ee65669eeac10cf83f
+$ docker pull gcc@sha256:912d7d23aa9023cf28e5f207d8ab96d17bb8b18be3c372e802e3f1e359df7290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17187168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1993e9dac60b7f7ded78b8ee3691aa44065459306fc1c051dcdecb7ec84c6df2`
+-	Image ID: `sha256:1082d47e47687ec6407a6e7d9818cf4fed67cbdf6db59648630b80a91f831982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da960b6119e43c83b15f4bdee3141f075f63904028ed80f3ce427ce0faf44b5e`  
-		Last Modified: Wed, 10 Sep 2025 12:19:18 GMT  
+	-	`sha256:fef6ac710f844d33351924952d9d55e7b4db7256bf75c4c3a6030c3c7a2bc0fc`  
+		Last Modified: Wed, 01 Oct 2025 21:20:32 GMT  
 		Size: 17.2 MB (17157424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de6388fdadc38f38aab2b50a42e68c2443f7f50224f609632a40733563f344a1`  
-		Last Modified: Wed, 10 Sep 2025 12:19:19 GMT  
+	-	`sha256:723914ddd01bcdab27b21cf141eee28e2fdf11aca0b09cf1ead4df28ae9ecfe8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:33 GMT  
 		Size: 29.7 KB (29744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:14.3-trixie`
 
 ```console
-$ docker pull gcc@sha256:70feea1720793e76fd2acd58fb6dd007bcac1db2dd3824781483ce2b93dc4c56
+$ docker pull gcc@sha256:710c585419daee545f304885ec05e802391d8497b739eac087b65fd05eccc0ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9108,18 +9108,18 @@ $ docker pull gcc@sha256:4781c4d2cd6000abfd51d347d9e38e60e6f7840990a2a1e12d583f2
 ### `gcc:14.3-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:2ac5090d00aca6d0f9f52145b6b3c06ad683e031915deebee5d3256c86051214
+$ docker pull gcc@sha256:bfa69a76cc41e338699c376341377f42da80027841d3f2a7a3faf07ccaa67d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.5 MB (447535561 bytes)**  
+-	Total Size: **447.6 MB (447581526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49d4da92f288e1940a3b7853d98a49ee12c13da05d848dcb2fbeb6ab5fdb904d`
+-	Image ID: `sha256:38fccdced1c5ae1fe50247a05384e69ac7161753cb5e1f7944bb5d1a6b240ff0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -9143,78 +9143,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296ac9217694a3320a200caeda702eb5c089f3d04a0ebdf1f2060663d5b8d09d`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 4.2 MB (4206493 bytes)  
+	-	`sha256:2376715efc5c9eba4c54746bcf2aa01808ca02411ef8537cad7e3676f42e4178`  
+		Last Modified: Tue, 30 Sep 2025 05:37:06 GMT  
+		Size: 4.2 MB (4206353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7bba5c10f3640733a50aae1c5a40fe9d1bf96e7d0f9a9912158b610089948e6`  
-		Last Modified: Tue, 09 Sep 2025 11:43:08 GMT  
-		Size: 118.1 MB (118073188 bytes)  
+	-	`sha256:0e75b056922a8f40bd1e5b1539c8d1fc66d7d95353f7f46fc8b2d56148970a80`  
+		Last Modified: Wed, 01 Oct 2025 19:50:31 GMT  
+		Size: 118.1 MB (118075080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9155978494c6237e702c7c3a8cd360c7d5f28a1e2367578f4335559673eef941`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 10.2 KB (10173 bytes)  
+	-	`sha256:ce8c42119a5cf66e327bf828ad0bc3c5307c84a2955bffe89345b5e63f36c028`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 10.0 KB (10019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75948bb1a2c47b6c32ee2fc91d9625690d75fb7d9202062aae313667ae9ebf07`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 2.0 KB (2011 bytes)  
+	-	`sha256:82785cd61d755064e0cbb20653b33ee7a07f6504605513c4c6f81407d697144c`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9c9f4b2b10ee1c4a955fb96688067d65249ae1e3d252713685e5ee5f64f89be6
+$ docker pull gcc@sha256:adba4bd56579ecd0531923d5cff40a8ea38b6cf2093a7a09e1a57fb92789c8b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17178098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5577d9b1564f53bcf9327d147d31a6e68afd8500ccce7d35bf13efe9ac5badb8`
+-	Image ID: `sha256:5608976259062e2f7a60bf17fe0efe07a0173eebdf1870b737b865217d233ea0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc8d7987f679bdc19d7d3ccfd1d381bb9b83fb5658c450ed54d7549ceb40c1c6`  
-		Last Modified: Tue, 09 Sep 2025 12:19:07 GMT  
+	-	`sha256:52836067d93ca5305e7c4cb65a2068ca84ff520c6482d9bad98490686f6cfff3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:43 GMT  
 		Size: 17.1 MB (17148219 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:306b7cedef134be87c8730b012abbcc06b732242d25c746855d395a3b91d4f24`  
-		Last Modified: Tue, 09 Sep 2025 12:19:08 GMT  
+	-	`sha256:d7431ca68938ab71c1838c80869c3716418401b415752fed51d2fdf0004e2ae0`  
+		Last Modified: Wed, 01 Oct 2025 21:19:44 GMT  
 		Size: 29.9 KB (29879 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:2318f16b00414a2b6db3b1ec04ad3c020aaef456ebec0ae939966092fab0d6c3
+$ docker pull gcc@sha256:e30a4e4c5a8a34899cd7f51f9f6bcf96a5b771e796a80c1163343f21cf05387a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **521.0 MB (521042679 bytes)**  
+-	Total Size: **521.1 MB (521054958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd8dfa6b304b575693a1c990af2b99207c824f998a80177dbfd8d187e168561f`
+-	Image ID: `sha256:fe5e9b3fb332f8f4a69c5f8de73114b5911a71829049a663440937c75117b695`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -9238,78 +9238,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9000fdf28e522e1e1c776e19b64b20fdffdad91f7de08ee92488017fe8ffb2cd`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 4.5 MB (4497957 bytes)  
+	-	`sha256:1af533850b3aa4315e9dbec05ee8baa11912855e76bd4da3a8822165a2b6b21f`  
+		Last Modified: Tue, 30 Sep 2025 04:05:02 GMT  
+		Size: 4.5 MB (4498011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c216d477b56aba413fdcdf3b96f2a1b14e36803c6a15f7e97c39b72d71f7ee98`  
-		Last Modified: Tue, 09 Sep 2025 10:54:02 GMT  
-		Size: 148.2 MB (148227801 bytes)  
+	-	`sha256:6b316094ca13462f6b42278a41406dc1d6c720e395467ed9cbd352a97fd2e9a8`  
+		Last Modified: Wed, 01 Oct 2025 20:35:28 GMT  
+		Size: 148.2 MB (148227508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69524b97c3cb354c28f01d8be1cc475e96bfe12b16cbaae6711a10456f62460d`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 10.3 KB (10273 bytes)  
+	-	`sha256:61ce2f706e0f1899ef191e937f60242482d6482efd36c023cf208a534d0effa9`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 10.3 KB (10303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14b2c542f36a2faa902487ca0e14e18b97adec939f18cfb4fc9b471339257b96`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 2.0 KB (1997 bytes)  
+	-	`sha256:51b3410f06dc7d2de5c48e0eeaf33c7d4ac232ee237588addac2be27a72cdf90`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 2.0 KB (1988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:0b4a78d09005f839944b2eb1c98dc3043160661cd80e0661b54aa0369f635620
+$ docker pull gcc@sha256:0e913c3dcd8a10b160bcf879d4a4514f78b187cf4a1ec4e19ca58c8049b297c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17494446 bytes)**  
+-	Total Size: **17.5 MB (17494445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0573b3879f5edeb30a00b437eb7512d16a50665d18ba767b5328228b0ccb4b5`
+-	Image ID: `sha256:b51f805392265546378a81842f424a39912317cfa7a52a1793bb80c6ccf862ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03f5d628f79642d3b24b6aa167d212e6f6b74aede6150abc647122ac833a4ebd`  
-		Last Modified: Tue, 09 Sep 2025 09:19:44 GMT  
+	-	`sha256:6e34944f544d5039f5e88bd5cf455477f94a91dd0d31a864d52bf7ec764a038a`  
+		Last Modified: Wed, 01 Oct 2025 12:31:33 GMT  
 		Size: 17.5 MB (17464529 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d3014cd41aacc2f8b23348a9436420f0ab9f51f3a3283752eda61bf981bcb661`  
-		Last Modified: Tue, 09 Sep 2025 09:19:45 GMT  
-		Size: 29.9 KB (29917 bytes)  
+	-	`sha256:5a4a64bac7da12eea4227d23f57f0e6d0ec5884e39ec69339da97f5156897c17`  
+		Last Modified: Wed, 01 Oct 2025 12:31:34 GMT  
+		Size: 29.9 KB (29916 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3-trixie` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:75c016f8b8e5d820c903a136d114c22b88edc27b9bcfbb0f6e0b82352b9aa75c
+$ docker pull gcc@sha256:f5f3d0632016ec0e32c669d0402e47f9d5d4958f40576dc194e9460ee71a92a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.4 MB (543353035 bytes)**  
+-	Total Size: **543.4 MB (543399229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46181a756f7ff241825e094910c39503dc0c4d74709df0b8fb89e1d92886d820`
+-	Image ID: `sha256:70fb4052d73c34a74e0d76913d881a231af244e19fbf0e3d0f61054a54cf34f7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -9333,78 +9333,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d644ba60d3c682f7e666065c4846f49be2236112a6f0efb9b5e5b375d4f95ab0`  
-		Last Modified: Wed, 10 Sep 2025 10:54:27 GMT  
-		Size: 154.3 MB (154257992 bytes)  
+	-	`sha256:20ca448ea2a04bbd4aa0fe0946068d0d83e51138cc1ee298d7075920a97802e6`  
+		Last Modified: Wed, 01 Oct 2025 11:14:22 GMT  
+		Size: 154.3 MB (154258191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48f2a6deb95b820f06a43df567d34d1660ca533cdc8b0a38e11f2e9e847bc5c0`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 10.6 KB (10620 bytes)  
+	-	`sha256:bc1dcf23598d8cc753e0d24429d740bad1940a90e971fbd90ccce692a93e6639`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 10.6 KB (10601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c2766711eee88958f36c3577836a30055bf74e9478a4dcb227df1e3762982ec`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:223a7cebe868a24eb073d35a09468ccbb978fbe9c97035f5fd34069bac8fde79`  
+		Last Modified: Wed, 01 Oct 2025 11:14:53 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:62740ff0357d1e4e2d207f99f2e2b5aad7275f51e3590d53c491813f465115c7
+$ docker pull gcc@sha256:6dba558fb6b19fc6514b201c19d87c4e06deef035eee8bbe34f759050d2ac5c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.4 MB (17395604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743f52d23c494a7fd4d4ef01b991b37edf15fcb2dfa9d92ed1ae5577545f628f`
+-	Image ID: `sha256:4487942cdb08d9e3bcb0061536ec08e3212223d73fbed7b309fa1dd05263067f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7941f8b67f27aa2b58cbc36b9804a0559b64d5af264a72c56725cfed8bd48922`  
-		Last Modified: Wed, 10 Sep 2025 03:19:40 GMT  
+	-	`sha256:988e420a47a4352c952be89e167c2e002e57a1c6170dd219309a8dc3ec64658c`  
+		Last Modified: Wed, 01 Oct 2025 21:20:17 GMT  
 		Size: 17.4 MB (17365798 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9f408b156dfb3e45ea924e69154028ef9d6205c5f2a4f5397ab72974409ad37`  
-		Last Modified: Wed, 10 Sep 2025 03:19:41 GMT  
+	-	`sha256:067c82420c42421081f1d48f6f2af5a2a8064ff90eba611098d9a4fb18d5465a`  
+		Last Modified: Wed, 01 Oct 2025 21:20:18 GMT  
 		Size: 29.8 KB (29806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3-trixie` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:ca0fb35ba87bb819c0bdc97f8ad942d65b378f65e8ab3ca81fa8b071507e47f2
+$ docker pull gcc@sha256:7d806ff8d5f89a9465566b2c059333585d13200f49e649e83a7004c7761ca4d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **514.6 MB (514615464 bytes)**  
+-	Total Size: **514.7 MB (514652724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80ddf9e499b2ff023425c47fa2f4c339a567a2b46369d364cabccbab5d777147`
+-	Image ID: `sha256:5d8e370ff8159696a33fd515ad3ef85590fa009bf12367071a86268514e08f55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -9428,67 +9428,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37932e39b16985d8d1fde378531a0e1e91ddb2b9a7fc8850ffc84c94f0467fe`  
-		Last Modified: Wed, 10 Sep 2025 09:27:29 GMT  
-		Size: 158.7 MB (158733112 bytes)  
+	-	`sha256:52079144802bb88a1042e31fd57c051668c91994346d8dc8b2ff12d4bbea7a3a`  
+		Last Modified: Wed, 01 Oct 2025 09:04:16 GMT  
+		Size: 158.7 MB (158733509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c150c67f753f914be8aec0f509776bac5d56751f88b8d5fd2a85011bc3dd20`  
-		Last Modified: Wed, 10 Sep 2025 09:27:27 GMT  
-		Size: 11.1 KB (11102 bytes)  
+	-	`sha256:7e88d797f1550dc5fc6d801bec8bdd4c0f61b46c46150c2348401f3d37613431`  
+		Last Modified: Wed, 01 Oct 2025 09:52:29 GMT  
+		Size: 11.1 KB (11129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb89aa612909ae8e51d59b35f8d927644c3971c611ac665412e6a6856bbe6da`  
-		Last Modified: Wed, 10 Sep 2025 09:27:23 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:11fc07e0ec16d9e0bece8f703a9a67459c8d1ffd2f8215ed0d81af580b94efa0`  
+		Last Modified: Wed, 01 Oct 2025 09:52:27 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:66b80ef1852be5193968a3d45308dd0da14e11cadab624ee65669eeac10cf83f
+$ docker pull gcc@sha256:912d7d23aa9023cf28e5f207d8ab96d17bb8b18be3c372e802e3f1e359df7290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17187168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1993e9dac60b7f7ded78b8ee3691aa44065459306fc1c051dcdecb7ec84c6df2`
+-	Image ID: `sha256:1082d47e47687ec6407a6e7d9818cf4fed67cbdf6db59648630b80a91f831982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da960b6119e43c83b15f4bdee3141f075f63904028ed80f3ce427ce0faf44b5e`  
-		Last Modified: Wed, 10 Sep 2025 12:19:18 GMT  
+	-	`sha256:fef6ac710f844d33351924952d9d55e7b4db7256bf75c4c3a6030c3c7a2bc0fc`  
+		Last Modified: Wed, 01 Oct 2025 21:20:32 GMT  
 		Size: 17.2 MB (17157424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de6388fdadc38f38aab2b50a42e68c2443f7f50224f609632a40733563f344a1`  
-		Last Modified: Wed, 10 Sep 2025 12:19:19 GMT  
+	-	`sha256:723914ddd01bcdab27b21cf141eee28e2fdf11aca0b09cf1ead4df28ae9ecfe8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:33 GMT  
 		Size: 29.7 KB (29744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:14.3.0`
 
 ```console
-$ docker pull gcc@sha256:27003054465a36405f26093701b882ba1639a149adcc16080b5c2b2d0578f541
+$ docker pull gcc@sha256:710c585419daee545f304885ec05e802391d8497b739eac087b65fd05eccc0ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9699,18 +9699,18 @@ $ docker pull gcc@sha256:4781c4d2cd6000abfd51d347d9e38e60e6f7840990a2a1e12d583f2
 ### `gcc:14.3.0` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:2ac5090d00aca6d0f9f52145b6b3c06ad683e031915deebee5d3256c86051214
+$ docker pull gcc@sha256:bfa69a76cc41e338699c376341377f42da80027841d3f2a7a3faf07ccaa67d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.5 MB (447535561 bytes)**  
+-	Total Size: **447.6 MB (447581526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49d4da92f288e1940a3b7853d98a49ee12c13da05d848dcb2fbeb6ab5fdb904d`
+-	Image ID: `sha256:38fccdced1c5ae1fe50247a05384e69ac7161753cb5e1f7944bb5d1a6b240ff0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -9734,60 +9734,60 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296ac9217694a3320a200caeda702eb5c089f3d04a0ebdf1f2060663d5b8d09d`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 4.2 MB (4206493 bytes)  
+	-	`sha256:2376715efc5c9eba4c54746bcf2aa01808ca02411ef8537cad7e3676f42e4178`  
+		Last Modified: Tue, 30 Sep 2025 05:37:06 GMT  
+		Size: 4.2 MB (4206353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7bba5c10f3640733a50aae1c5a40fe9d1bf96e7d0f9a9912158b610089948e6`  
-		Last Modified: Tue, 09 Sep 2025 11:43:08 GMT  
-		Size: 118.1 MB (118073188 bytes)  
+	-	`sha256:0e75b056922a8f40bd1e5b1539c8d1fc66d7d95353f7f46fc8b2d56148970a80`  
+		Last Modified: Wed, 01 Oct 2025 19:50:31 GMT  
+		Size: 118.1 MB (118075080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9155978494c6237e702c7c3a8cd360c7d5f28a1e2367578f4335559673eef941`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 10.2 KB (10173 bytes)  
+	-	`sha256:ce8c42119a5cf66e327bf828ad0bc3c5307c84a2955bffe89345b5e63f36c028`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 10.0 KB (10019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75948bb1a2c47b6c32ee2fc91d9625690d75fb7d9202062aae313667ae9ebf07`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 2.0 KB (2011 bytes)  
+	-	`sha256:82785cd61d755064e0cbb20653b33ee7a07f6504605513c4c6f81407d697144c`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9c9f4b2b10ee1c4a955fb96688067d65249ae1e3d252713685e5ee5f64f89be6
+$ docker pull gcc@sha256:adba4bd56579ecd0531923d5cff40a8ea38b6cf2093a7a09e1a57fb92789c8b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17178098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5577d9b1564f53bcf9327d147d31a6e68afd8500ccce7d35bf13efe9ac5badb8`
+-	Image ID: `sha256:5608976259062e2f7a60bf17fe0efe07a0173eebdf1870b737b865217d233ea0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc8d7987f679bdc19d7d3ccfd1d381bb9b83fb5658c450ed54d7549ceb40c1c6`  
-		Last Modified: Tue, 09 Sep 2025 12:19:07 GMT  
+	-	`sha256:52836067d93ca5305e7c4cb65a2068ca84ff520c6482d9bad98490686f6cfff3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:43 GMT  
 		Size: 17.1 MB (17148219 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:306b7cedef134be87c8730b012abbcc06b732242d25c746855d395a3b91d4f24`  
-		Last Modified: Tue, 09 Sep 2025 12:19:08 GMT  
+	-	`sha256:d7431ca68938ab71c1838c80869c3716418401b415752fed51d2fdf0004e2ae0`  
+		Last Modified: Wed, 01 Oct 2025 21:19:44 GMT  
 		Size: 29.9 KB (29879 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9850,7 +9850,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.5 MB (4498011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b316094ca13462f6b42278a41406dc1d6c720e395467ed9cbd352a97fd2e9a8`  
-		Last Modified: Tue, 30 Sep 2025 04:04:33 GMT  
+		Last Modified: Wed, 01 Oct 2025 20:35:28 GMT  
 		Size: 148.2 MB (148227508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61ce2f706e0f1899ef191e937f60242482d6482efd36c023cf208a534d0effa9`  
@@ -9889,18 +9889,18 @@ $ docker pull gcc@sha256:0e913c3dcd8a10b160bcf879d4a4514f78b187cf4a1ec4e19ca58c8
 ### `gcc:14.3.0` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:75c016f8b8e5d820c903a136d114c22b88edc27b9bcfbb0f6e0b82352b9aa75c
+$ docker pull gcc@sha256:f5f3d0632016ec0e32c669d0402e47f9d5d4958f40576dc194e9460ee71a92a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.4 MB (543353035 bytes)**  
+-	Total Size: **543.4 MB (543399229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46181a756f7ff241825e094910c39503dc0c4d74709df0b8fb89e1d92886d820`
+-	Image ID: `sha256:70fb4052d73c34a74e0d76913d881a231af244e19fbf0e3d0f61054a54cf34f7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -9924,78 +9924,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d644ba60d3c682f7e666065c4846f49be2236112a6f0efb9b5e5b375d4f95ab0`  
-		Last Modified: Wed, 10 Sep 2025 10:54:27 GMT  
-		Size: 154.3 MB (154257992 bytes)  
+	-	`sha256:20ca448ea2a04bbd4aa0fe0946068d0d83e51138cc1ee298d7075920a97802e6`  
+		Last Modified: Wed, 01 Oct 2025 11:14:22 GMT  
+		Size: 154.3 MB (154258191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48f2a6deb95b820f06a43df567d34d1660ca533cdc8b0a38e11f2e9e847bc5c0`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 10.6 KB (10620 bytes)  
+	-	`sha256:bc1dcf23598d8cc753e0d24429d740bad1940a90e971fbd90ccce692a93e6639`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 10.6 KB (10601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c2766711eee88958f36c3577836a30055bf74e9478a4dcb227df1e3762982ec`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:223a7cebe868a24eb073d35a09468ccbb978fbe9c97035f5fd34069bac8fde79`  
+		Last Modified: Wed, 01 Oct 2025 11:14:53 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:62740ff0357d1e4e2d207f99f2e2b5aad7275f51e3590d53c491813f465115c7
+$ docker pull gcc@sha256:6dba558fb6b19fc6514b201c19d87c4e06deef035eee8bbe34f759050d2ac5c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.4 MB (17395604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743f52d23c494a7fd4d4ef01b991b37edf15fcb2dfa9d92ed1ae5577545f628f`
+-	Image ID: `sha256:4487942cdb08d9e3bcb0061536ec08e3212223d73fbed7b309fa1dd05263067f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7941f8b67f27aa2b58cbc36b9804a0559b64d5af264a72c56725cfed8bd48922`  
-		Last Modified: Wed, 10 Sep 2025 03:19:40 GMT  
+	-	`sha256:988e420a47a4352c952be89e167c2e002e57a1c6170dd219309a8dc3ec64658c`  
+		Last Modified: Wed, 01 Oct 2025 21:20:17 GMT  
 		Size: 17.4 MB (17365798 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9f408b156dfb3e45ea924e69154028ef9d6205c5f2a4f5397ab72974409ad37`  
-		Last Modified: Wed, 10 Sep 2025 03:19:41 GMT  
+	-	`sha256:067c82420c42421081f1d48f6f2af5a2a8064ff90eba611098d9a4fb18d5465a`  
+		Last Modified: Wed, 01 Oct 2025 21:20:18 GMT  
 		Size: 29.8 KB (29806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3.0` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:ca0fb35ba87bb819c0bdc97f8ad942d65b378f65e8ab3ca81fa8b071507e47f2
+$ docker pull gcc@sha256:7d806ff8d5f89a9465566b2c059333585d13200f49e649e83a7004c7761ca4d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **514.6 MB (514615464 bytes)**  
+-	Total Size: **514.7 MB (514652724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80ddf9e499b2ff023425c47fa2f4c339a567a2b46369d364cabccbab5d777147`
+-	Image ID: `sha256:5d8e370ff8159696a33fd515ad3ef85590fa009bf12367071a86268514e08f55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -10019,67 +10019,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37932e39b16985d8d1fde378531a0e1e91ddb2b9a7fc8850ffc84c94f0467fe`  
-		Last Modified: Wed, 10 Sep 2025 09:27:29 GMT  
-		Size: 158.7 MB (158733112 bytes)  
+	-	`sha256:52079144802bb88a1042e31fd57c051668c91994346d8dc8b2ff12d4bbea7a3a`  
+		Last Modified: Wed, 01 Oct 2025 09:04:16 GMT  
+		Size: 158.7 MB (158733509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c150c67f753f914be8aec0f509776bac5d56751f88b8d5fd2a85011bc3dd20`  
-		Last Modified: Wed, 10 Sep 2025 09:27:27 GMT  
-		Size: 11.1 KB (11102 bytes)  
+	-	`sha256:7e88d797f1550dc5fc6d801bec8bdd4c0f61b46c46150c2348401f3d37613431`  
+		Last Modified: Wed, 01 Oct 2025 09:52:29 GMT  
+		Size: 11.1 KB (11129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb89aa612909ae8e51d59b35f8d927644c3971c611ac665412e6a6856bbe6da`  
-		Last Modified: Wed, 10 Sep 2025 09:27:23 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:11fc07e0ec16d9e0bece8f703a9a67459c8d1ffd2f8215ed0d81af580b94efa0`  
+		Last Modified: Wed, 01 Oct 2025 09:52:27 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:66b80ef1852be5193968a3d45308dd0da14e11cadab624ee65669eeac10cf83f
+$ docker pull gcc@sha256:912d7d23aa9023cf28e5f207d8ab96d17bb8b18be3c372e802e3f1e359df7290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17187168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1993e9dac60b7f7ded78b8ee3691aa44065459306fc1c051dcdecb7ec84c6df2`
+-	Image ID: `sha256:1082d47e47687ec6407a6e7d9818cf4fed67cbdf6db59648630b80a91f831982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da960b6119e43c83b15f4bdee3141f075f63904028ed80f3ce427ce0faf44b5e`  
-		Last Modified: Wed, 10 Sep 2025 12:19:18 GMT  
+	-	`sha256:fef6ac710f844d33351924952d9d55e7b4db7256bf75c4c3a6030c3c7a2bc0fc`  
+		Last Modified: Wed, 01 Oct 2025 21:20:32 GMT  
 		Size: 17.2 MB (17157424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de6388fdadc38f38aab2b50a42e68c2443f7f50224f609632a40733563f344a1`  
-		Last Modified: Wed, 10 Sep 2025 12:19:19 GMT  
+	-	`sha256:723914ddd01bcdab27b21cf141eee28e2fdf11aca0b09cf1ead4df28ae9ecfe8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:33 GMT  
 		Size: 29.7 KB (29744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:14.3.0-trixie`
 
 ```console
-$ docker pull gcc@sha256:70feea1720793e76fd2acd58fb6dd007bcac1db2dd3824781483ce2b93dc4c56
+$ docker pull gcc@sha256:710c585419daee545f304885ec05e802391d8497b739eac087b65fd05eccc0ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10290,18 +10290,18 @@ $ docker pull gcc@sha256:4781c4d2cd6000abfd51d347d9e38e60e6f7840990a2a1e12d583f2
 ### `gcc:14.3.0-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:2ac5090d00aca6d0f9f52145b6b3c06ad683e031915deebee5d3256c86051214
+$ docker pull gcc@sha256:bfa69a76cc41e338699c376341377f42da80027841d3f2a7a3faf07ccaa67d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **447.5 MB (447535561 bytes)**  
+-	Total Size: **447.6 MB (447581526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49d4da92f288e1940a3b7853d98a49ee12c13da05d848dcb2fbeb6ab5fdb904d`
+-	Image ID: `sha256:38fccdced1c5ae1fe50247a05384e69ac7161753cb5e1f7944bb5d1a6b240ff0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -10325,78 +10325,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:296ac9217694a3320a200caeda702eb5c089f3d04a0ebdf1f2060663d5b8d09d`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 4.2 MB (4206493 bytes)  
+	-	`sha256:2376715efc5c9eba4c54746bcf2aa01808ca02411ef8537cad7e3676f42e4178`  
+		Last Modified: Tue, 30 Sep 2025 05:37:06 GMT  
+		Size: 4.2 MB (4206353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7bba5c10f3640733a50aae1c5a40fe9d1bf96e7d0f9a9912158b610089948e6`  
-		Last Modified: Tue, 09 Sep 2025 11:43:08 GMT  
-		Size: 118.1 MB (118073188 bytes)  
+	-	`sha256:0e75b056922a8f40bd1e5b1539c8d1fc66d7d95353f7f46fc8b2d56148970a80`  
+		Last Modified: Wed, 01 Oct 2025 19:50:31 GMT  
+		Size: 118.1 MB (118075080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9155978494c6237e702c7c3a8cd360c7d5f28a1e2367578f4335559673eef941`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 10.2 KB (10173 bytes)  
+	-	`sha256:ce8c42119a5cf66e327bf828ad0bc3c5307c84a2955bffe89345b5e63f36c028`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 10.0 KB (10019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75948bb1a2c47b6c32ee2fc91d9625690d75fb7d9202062aae313667ae9ebf07`  
-		Last Modified: Tue, 09 Sep 2025 11:42:59 GMT  
-		Size: 2.0 KB (2011 bytes)  
+	-	`sha256:82785cd61d755064e0cbb20653b33ee7a07f6504605513c4c6f81407d697144c`  
+		Last Modified: Tue, 30 Sep 2025 05:37:05 GMT  
+		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:9c9f4b2b10ee1c4a955fb96688067d65249ae1e3d252713685e5ee5f64f89be6
+$ docker pull gcc@sha256:adba4bd56579ecd0531923d5cff40a8ea38b6cf2093a7a09e1a57fb92789c8b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17178098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5577d9b1564f53bcf9327d147d31a6e68afd8500ccce7d35bf13efe9ac5badb8`
+-	Image ID: `sha256:5608976259062e2f7a60bf17fe0efe07a0173eebdf1870b737b865217d233ea0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc8d7987f679bdc19d7d3ccfd1d381bb9b83fb5658c450ed54d7549ceb40c1c6`  
-		Last Modified: Tue, 09 Sep 2025 12:19:07 GMT  
+	-	`sha256:52836067d93ca5305e7c4cb65a2068ca84ff520c6482d9bad98490686f6cfff3`  
+		Last Modified: Wed, 01 Oct 2025 21:19:43 GMT  
 		Size: 17.1 MB (17148219 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:306b7cedef134be87c8730b012abbcc06b732242d25c746855d395a3b91d4f24`  
-		Last Modified: Tue, 09 Sep 2025 12:19:08 GMT  
+	-	`sha256:d7431ca68938ab71c1838c80869c3716418401b415752fed51d2fdf0004e2ae0`  
+		Last Modified: Wed, 01 Oct 2025 21:19:44 GMT  
 		Size: 29.9 KB (29879 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3.0-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull gcc@sha256:2318f16b00414a2b6db3b1ec04ad3c020aaef456ebec0ae939966092fab0d6c3
+$ docker pull gcc@sha256:e30a4e4c5a8a34899cd7f51f9f6bcf96a5b771e796a80c1163343f21cf05387a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **521.0 MB (521042679 bytes)**  
+-	Total Size: **521.1 MB (521054958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd8dfa6b304b575693a1c990af2b99207c824f998a80177dbfd8d187e168561f`
+-	Image ID: `sha256:fe5e9b3fb332f8f4a69c5f8de73114b5911a71829049a663440937c75117b695`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -10420,78 +10420,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9000fdf28e522e1e1c776e19b64b20fdffdad91f7de08ee92488017fe8ffb2cd`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 4.5 MB (4497957 bytes)  
+	-	`sha256:1af533850b3aa4315e9dbec05ee8baa11912855e76bd4da3a8822165a2b6b21f`  
+		Last Modified: Tue, 30 Sep 2025 04:05:02 GMT  
+		Size: 4.5 MB (4498011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c216d477b56aba413fdcdf3b96f2a1b14e36803c6a15f7e97c39b72d71f7ee98`  
-		Last Modified: Tue, 09 Sep 2025 10:54:02 GMT  
-		Size: 148.2 MB (148227801 bytes)  
+	-	`sha256:6b316094ca13462f6b42278a41406dc1d6c720e395467ed9cbd352a97fd2e9a8`  
+		Last Modified: Wed, 01 Oct 2025 20:35:28 GMT  
+		Size: 148.2 MB (148227508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69524b97c3cb354c28f01d8be1cc475e96bfe12b16cbaae6711a10456f62460d`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 10.3 KB (10273 bytes)  
+	-	`sha256:61ce2f706e0f1899ef191e937f60242482d6482efd36c023cf208a534d0effa9`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 10.3 KB (10303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14b2c542f36a2faa902487ca0e14e18b97adec939f18cfb4fc9b471339257b96`  
-		Last Modified: Tue, 09 Sep 2025 07:45:37 GMT  
-		Size: 2.0 KB (1997 bytes)  
+	-	`sha256:51b3410f06dc7d2de5c48e0eeaf33c7d4ac232ee237588addac2be27a72cdf90`  
+		Last Modified: Tue, 30 Sep 2025 04:05:01 GMT  
+		Size: 2.0 KB (1988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:0b4a78d09005f839944b2eb1c98dc3043160661cd80e0661b54aa0369f635620
+$ docker pull gcc@sha256:0e913c3dcd8a10b160bcf879d4a4514f78b187cf4a1ec4e19ca58c8049b297c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17494446 bytes)**  
+-	Total Size: **17.5 MB (17494445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0573b3879f5edeb30a00b437eb7512d16a50665d18ba767b5328228b0ccb4b5`
+-	Image ID: `sha256:b51f805392265546378a81842f424a39912317cfa7a52a1793bb80c6ccf862ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03f5d628f79642d3b24b6aa167d212e6f6b74aede6150abc647122ac833a4ebd`  
-		Last Modified: Tue, 09 Sep 2025 09:19:44 GMT  
+	-	`sha256:6e34944f544d5039f5e88bd5cf455477f94a91dd0d31a864d52bf7ec764a038a`  
+		Last Modified: Wed, 01 Oct 2025 12:31:33 GMT  
 		Size: 17.5 MB (17464529 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d3014cd41aacc2f8b23348a9436420f0ab9f51f3a3283752eda61bf981bcb661`  
-		Last Modified: Tue, 09 Sep 2025 09:19:45 GMT  
-		Size: 29.9 KB (29917 bytes)  
+	-	`sha256:5a4a64bac7da12eea4227d23f57f0e6d0ec5884e39ec69339da97f5156897c17`  
+		Last Modified: Wed, 01 Oct 2025 12:31:34 GMT  
+		Size: 29.9 KB (29916 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3.0-trixie` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:75c016f8b8e5d820c903a136d114c22b88edc27b9bcfbb0f6e0b82352b9aa75c
+$ docker pull gcc@sha256:f5f3d0632016ec0e32c669d0402e47f9d5d4958f40576dc194e9460ee71a92a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.4 MB (543353035 bytes)**  
+-	Total Size: **543.4 MB (543399229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46181a756f7ff241825e094910c39503dc0c4d74709df0b8fb89e1d92886d820`
+-	Image ID: `sha256:70fb4052d73c34a74e0d76913d881a231af244e19fbf0e3d0f61054a54cf34f7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -10515,78 +10515,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d644ba60d3c682f7e666065c4846f49be2236112a6f0efb9b5e5b375d4f95ab0`  
-		Last Modified: Wed, 10 Sep 2025 10:54:27 GMT  
-		Size: 154.3 MB (154257992 bytes)  
+	-	`sha256:20ca448ea2a04bbd4aa0fe0946068d0d83e51138cc1ee298d7075920a97802e6`  
+		Last Modified: Wed, 01 Oct 2025 11:14:22 GMT  
+		Size: 154.3 MB (154258191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48f2a6deb95b820f06a43df567d34d1660ca533cdc8b0a38e11f2e9e847bc5c0`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 10.6 KB (10620 bytes)  
+	-	`sha256:bc1dcf23598d8cc753e0d24429d740bad1940a90e971fbd90ccce692a93e6639`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 10.6 KB (10601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c2766711eee88958f36c3577836a30055bf74e9478a4dcb227df1e3762982ec`  
-		Last Modified: Wed, 10 Sep 2025 01:06:30 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:223a7cebe868a24eb073d35a09468ccbb978fbe9c97035f5fd34069bac8fde79`  
+		Last Modified: Wed, 01 Oct 2025 11:14:53 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:62740ff0357d1e4e2d207f99f2e2b5aad7275f51e3590d53c491813f465115c7
+$ docker pull gcc@sha256:6dba558fb6b19fc6514b201c19d87c4e06deef035eee8bbe34f759050d2ac5c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.4 MB (17395604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743f52d23c494a7fd4d4ef01b991b37edf15fcb2dfa9d92ed1ae5577545f628f`
+-	Image ID: `sha256:4487942cdb08d9e3bcb0061536ec08e3212223d73fbed7b309fa1dd05263067f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7941f8b67f27aa2b58cbc36b9804a0559b64d5af264a72c56725cfed8bd48922`  
-		Last Modified: Wed, 10 Sep 2025 03:19:40 GMT  
+	-	`sha256:988e420a47a4352c952be89e167c2e002e57a1c6170dd219309a8dc3ec64658c`  
+		Last Modified: Wed, 01 Oct 2025 21:20:17 GMT  
 		Size: 17.4 MB (17365798 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9f408b156dfb3e45ea924e69154028ef9d6205c5f2a4f5397ab72974409ad37`  
-		Last Modified: Wed, 10 Sep 2025 03:19:41 GMT  
+	-	`sha256:067c82420c42421081f1d48f6f2af5a2a8064ff90eba611098d9a4fb18d5465a`  
+		Last Modified: Wed, 01 Oct 2025 21:20:18 GMT  
 		Size: 29.8 KB (29806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:14.3.0-trixie` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:ca0fb35ba87bb819c0bdc97f8ad942d65b378f65e8ab3ca81fa8b071507e47f2
+$ docker pull gcc@sha256:7d806ff8d5f89a9465566b2c059333585d13200f49e649e83a7004c7761ca4d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **514.6 MB (514615464 bytes)**  
+-	Total Size: **514.7 MB (514652724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80ddf9e499b2ff023425c47fa2f4c339a567a2b46369d364cabccbab5d777147`
+-	Image ID: `sha256:5d8e370ff8159696a33fd515ad3ef85590fa009bf12367071a86268514e08f55`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -10610,67 +10610,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d37932e39b16985d8d1fde378531a0e1e91ddb2b9a7fc8850ffc84c94f0467fe`  
-		Last Modified: Wed, 10 Sep 2025 09:27:29 GMT  
-		Size: 158.7 MB (158733112 bytes)  
+	-	`sha256:52079144802bb88a1042e31fd57c051668c91994346d8dc8b2ff12d4bbea7a3a`  
+		Last Modified: Wed, 01 Oct 2025 09:04:16 GMT  
+		Size: 158.7 MB (158733509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65c150c67f753f914be8aec0f509776bac5d56751f88b8d5fd2a85011bc3dd20`  
-		Last Modified: Wed, 10 Sep 2025 09:27:27 GMT  
-		Size: 11.1 KB (11102 bytes)  
+	-	`sha256:7e88d797f1550dc5fc6d801bec8bdd4c0f61b46c46150c2348401f3d37613431`  
+		Last Modified: Wed, 01 Oct 2025 09:52:29 GMT  
+		Size: 11.1 KB (11129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afb89aa612909ae8e51d59b35f8d927644c3971c611ac665412e6a6856bbe6da`  
-		Last Modified: Wed, 10 Sep 2025 09:27:23 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:11fc07e0ec16d9e0bece8f703a9a67459c8d1ffd2f8215ed0d81af580b94efa0`  
+		Last Modified: Wed, 01 Oct 2025 09:52:27 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:14.3.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:66b80ef1852be5193968a3d45308dd0da14e11cadab624ee65669eeac10cf83f
+$ docker pull gcc@sha256:912d7d23aa9023cf28e5f207d8ab96d17bb8b18be3c372e802e3f1e359df7290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17187168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1993e9dac60b7f7ded78b8ee3691aa44065459306fc1c051dcdecb7ec84c6df2`
+-	Image ID: `sha256:1082d47e47687ec6407a6e7d9818cf4fed67cbdf6db59648630b80a91f831982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da960b6119e43c83b15f4bdee3141f075f63904028ed80f3ce427ce0faf44b5e`  
-		Last Modified: Wed, 10 Sep 2025 12:19:18 GMT  
+	-	`sha256:fef6ac710f844d33351924952d9d55e7b4db7256bf75c4c3a6030c3c7a2bc0fc`  
+		Last Modified: Wed, 01 Oct 2025 21:20:32 GMT  
 		Size: 17.2 MB (17157424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de6388fdadc38f38aab2b50a42e68c2443f7f50224f609632a40733563f344a1`  
-		Last Modified: Wed, 10 Sep 2025 12:19:19 GMT  
+	-	`sha256:723914ddd01bcdab27b21cf141eee28e2fdf11aca0b09cf1ead4df28ae9ecfe8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:33 GMT  
 		Size: 29.7 KB (29744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:15`
 
 ```console
-$ docker pull gcc@sha256:670aa1f0d01fe0f16f26284294e787549ed7e72e26d2fe7c3e5c745c298a80b2
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10881,18 +10881,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:15` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -10916,352 +10916,352 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
-		Size: 17.1 MB (17148819 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15` - linux; arm64 variant v8
-
-```console
-$ docker pull gcc@sha256:abd93210de1bdc697f2ab6a6a0486db9f36cede0e1eec0161d5f49aaff02c3b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530810437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d92755a13b819a32426370fe9726b3e5f248c551e6fcf51d00b841f86a89bec`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da96afe3f1214b13c21ac94848afa28a811804a90b82a72f1d70a9f098819e5c`  
-		Last Modified: Tue, 09 Sep 2025 06:21:25 GMT  
-		Size: 4.5 MB (4498016 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:949bac37c57d63c47df67ab22b7ef0dbc012b20e11f175b4937cfbab1f81936d`  
-		Last Modified: Tue, 09 Sep 2025 06:21:30 GMT  
-		Size: 158.0 MB (157995457 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb54d64c040d0e3294c1e4b4e3470562d1781d095448e1601db9b3524bd63c1`  
-		Last Modified: Tue, 09 Sep 2025 04:42:49 GMT  
-		Size: 10.3 KB (10316 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537137b597f2534581e9affd83371c7afc37199ec7e47269bc8c77f4a3af08ee`  
-		Last Modified: Tue, 09 Sep 2025 04:42:50 GMT  
-		Size: 2.0 KB (1997 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:0ce4dfac7361b71c3cda7108edcc4db6642e4394ef637f302982831ca954ecdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17495662 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a50eb8251ae0e1789b464fb3b3adc405b57eda6c8a5a200a102e491e75f9dfc`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7fbcdbf60d3dce684147b4c2cdc4cf4658ccc1168b8657b129137903f5b429e8`  
-		Last Modified: Tue, 09 Sep 2025 06:19:40 GMT  
-		Size: 17.5 MB (17465137 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:021987b3689bde0a440c9b8324fda908c6ad2853b46d201764bf90ff681fe1fd`  
-		Last Modified: Tue, 09 Sep 2025 06:19:41 GMT  
-		Size: 30.5 KB (30525 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15` - linux; ppc64le
-
-```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
-		Size: 17.4 MB (17366394 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15` - linux; s390x
-
-```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
 		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17188336 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
+		Size: 17.1 MB (17148819 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15` - linux; arm64 variant v8
+
+```console
+$ docker pull gcc@sha256:a786a655a60720ba9a032c186cc5a9358e1d95b20ce7c3d2bd08e21284f28f4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **530.8 MB (530822713 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:979b3bfc9201e3c120a561d956af106a7c4b169edadccc6f7f1d6bba410bd0ed`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ff132ea5788a572995d5c6755582b28e439c0dc8a06c9c539e192d02d4fc58b`  
+		Last Modified: Tue, 30 Sep 2025 04:09:09 GMT  
+		Size: 4.5 MB (4498023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
+		Size: 158.0 MB (157995272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 10.3 KB (10280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64dc2b00d3e65c815fcbe711de850ff53c0f3196b2b5ece3fa8fb11598078da8`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 2.0 KB (1990 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241dcd96d704a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.5 MB (17495662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45bba508f0d7420676c37b85fa1f9b52bb9cc6055e6cc3a8d76d56aa031bdb8a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:294df71fb075007c8b9b69008da845257e68b96802a1de0df18bbe8fc3411c3c`  
+		Last Modified: Wed, 01 Oct 2025 12:31:41 GMT  
+		Size: 17.5 MB (17465137 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:944a92994a3e195280dbf3a3637c2e1ad803e82c5f57b0777c6e260a14240eac`  
+		Last Modified: Wed, 01 Oct 2025 12:31:42 GMT  
+		Size: 30.5 KB (30525 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15` - linux; ppc64le
+
+```console
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **553.5 MB (553528036 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.4 MB (17396795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
+		Size: 17.4 MB (17366394 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15` - linux; s390x
+
+```console
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **522.1 MB (522137708 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.2 MB (17188336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:15-trixie`
 
 ```console
-$ docker pull gcc@sha256:750f8f513f9bd7f446c4a3c747bcfaeaf80c79bbb05ac32924d196632465fce3
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11472,18 +11472,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:15-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -11507,61 +11507,61 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
 		Size: 17.1 MB (17148819 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:15-trixie` - linux; arm64 variant v8
@@ -11623,7 +11623,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.5 MB (4498023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
-		Last Modified: Tue, 30 Sep 2025 04:08:35 GMT  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
 		Size: 158.0 MB (157995272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
@@ -11662,18 +11662,18 @@ $ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241d
 ### `gcc:15-trixie` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
+-	Total Size: **553.5 MB (553528036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -11697,78 +11697,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
+-	Total Size: **17.4 MB (17396795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
 		Size: 17.4 MB (17366394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:15-trixie` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
+-	Total Size: **522.1 MB (522137708 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -11792,67 +11792,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 2.0 KB (1994 bytes)  
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17188336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:15.2`
 
 ```console
-$ docker pull gcc@sha256:670aa1f0d01fe0f16f26284294e787549ed7e72e26d2fe7c3e5c745c298a80b2
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12063,18 +12063,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:15.2` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -12098,352 +12098,352 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
-		Size: 17.1 MB (17148819 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2` - linux; arm64 variant v8
-
-```console
-$ docker pull gcc@sha256:abd93210de1bdc697f2ab6a6a0486db9f36cede0e1eec0161d5f49aaff02c3b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530810437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d92755a13b819a32426370fe9726b3e5f248c551e6fcf51d00b841f86a89bec`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da96afe3f1214b13c21ac94848afa28a811804a90b82a72f1d70a9f098819e5c`  
-		Last Modified: Tue, 09 Sep 2025 06:21:25 GMT  
-		Size: 4.5 MB (4498016 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:949bac37c57d63c47df67ab22b7ef0dbc012b20e11f175b4937cfbab1f81936d`  
-		Last Modified: Tue, 09 Sep 2025 06:21:30 GMT  
-		Size: 158.0 MB (157995457 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb54d64c040d0e3294c1e4b4e3470562d1781d095448e1601db9b3524bd63c1`  
-		Last Modified: Tue, 09 Sep 2025 04:42:49 GMT  
-		Size: 10.3 KB (10316 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537137b597f2534581e9affd83371c7afc37199ec7e47269bc8c77f4a3af08ee`  
-		Last Modified: Tue, 09 Sep 2025 04:42:50 GMT  
-		Size: 2.0 KB (1997 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:0ce4dfac7361b71c3cda7108edcc4db6642e4394ef637f302982831ca954ecdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17495662 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a50eb8251ae0e1789b464fb3b3adc405b57eda6c8a5a200a102e491e75f9dfc`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7fbcdbf60d3dce684147b4c2cdc4cf4658ccc1168b8657b129137903f5b429e8`  
-		Last Modified: Tue, 09 Sep 2025 06:19:40 GMT  
-		Size: 17.5 MB (17465137 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:021987b3689bde0a440c9b8324fda908c6ad2853b46d201764bf90ff681fe1fd`  
-		Last Modified: Tue, 09 Sep 2025 06:19:41 GMT  
-		Size: 30.5 KB (30525 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2` - linux; ppc64le
-
-```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
-		Size: 17.4 MB (17366394 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2` - linux; s390x
-
-```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
 		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15.2` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17188336 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
+		Size: 17.1 MB (17148819 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2` - linux; arm64 variant v8
+
+```console
+$ docker pull gcc@sha256:a786a655a60720ba9a032c186cc5a9358e1d95b20ce7c3d2bd08e21284f28f4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **530.8 MB (530822713 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:979b3bfc9201e3c120a561d956af106a7c4b169edadccc6f7f1d6bba410bd0ed`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ff132ea5788a572995d5c6755582b28e439c0dc8a06c9c539e192d02d4fc58b`  
+		Last Modified: Tue, 30 Sep 2025 04:09:09 GMT  
+		Size: 4.5 MB (4498023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
+		Size: 158.0 MB (157995272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 10.3 KB (10280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64dc2b00d3e65c815fcbe711de850ff53c0f3196b2b5ece3fa8fb11598078da8`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 2.0 KB (1990 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241dcd96d704a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.5 MB (17495662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45bba508f0d7420676c37b85fa1f9b52bb9cc6055e6cc3a8d76d56aa031bdb8a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:294df71fb075007c8b9b69008da845257e68b96802a1de0df18bbe8fc3411c3c`  
+		Last Modified: Wed, 01 Oct 2025 12:31:41 GMT  
+		Size: 17.5 MB (17465137 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:944a92994a3e195280dbf3a3637c2e1ad803e82c5f57b0777c6e260a14240eac`  
+		Last Modified: Wed, 01 Oct 2025 12:31:42 GMT  
+		Size: 30.5 KB (30525 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2` - linux; ppc64le
+
+```console
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **553.5 MB (553528036 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.4 MB (17396795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
+		Size: 17.4 MB (17366394 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2` - linux; s390x
+
+```console
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **522.1 MB (522137708 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.2 MB (17188336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:15.2-trixie`
 
 ```console
-$ docker pull gcc@sha256:670aa1f0d01fe0f16f26284294e787549ed7e72e26d2fe7c3e5c745c298a80b2
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12654,18 +12654,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:15.2-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -12689,352 +12689,352 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2-trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
-		Size: 17.1 MB (17148819 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2-trixie` - linux; arm64 variant v8
-
-```console
-$ docker pull gcc@sha256:abd93210de1bdc697f2ab6a6a0486db9f36cede0e1eec0161d5f49aaff02c3b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530810437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d92755a13b819a32426370fe9726b3e5f248c551e6fcf51d00b841f86a89bec`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da96afe3f1214b13c21ac94848afa28a811804a90b82a72f1d70a9f098819e5c`  
-		Last Modified: Tue, 09 Sep 2025 06:21:25 GMT  
-		Size: 4.5 MB (4498016 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:949bac37c57d63c47df67ab22b7ef0dbc012b20e11f175b4937cfbab1f81936d`  
-		Last Modified: Tue, 09 Sep 2025 06:21:30 GMT  
-		Size: 158.0 MB (157995457 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb54d64c040d0e3294c1e4b4e3470562d1781d095448e1601db9b3524bd63c1`  
-		Last Modified: Tue, 09 Sep 2025 04:42:49 GMT  
-		Size: 10.3 KB (10316 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537137b597f2534581e9affd83371c7afc37199ec7e47269bc8c77f4a3af08ee`  
-		Last Modified: Tue, 09 Sep 2025 04:42:50 GMT  
-		Size: 2.0 KB (1997 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2-trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:0ce4dfac7361b71c3cda7108edcc4db6642e4394ef637f302982831ca954ecdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17495662 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a50eb8251ae0e1789b464fb3b3adc405b57eda6c8a5a200a102e491e75f9dfc`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7fbcdbf60d3dce684147b4c2cdc4cf4658ccc1168b8657b129137903f5b429e8`  
-		Last Modified: Tue, 09 Sep 2025 06:19:40 GMT  
-		Size: 17.5 MB (17465137 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:021987b3689bde0a440c9b8324fda908c6ad2853b46d201764bf90ff681fe1fd`  
-		Last Modified: Tue, 09 Sep 2025 06:19:41 GMT  
-		Size: 30.5 KB (30525 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2-trixie` - linux; ppc64le
-
-```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2-trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
-		Size: 17.4 MB (17366394 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2-trixie` - linux; s390x
-
-```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
 		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15.2-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17188336 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
+		Size: 17.1 MB (17148819 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2-trixie` - linux; arm64 variant v8
+
+```console
+$ docker pull gcc@sha256:a786a655a60720ba9a032c186cc5a9358e1d95b20ce7c3d2bd08e21284f28f4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **530.8 MB (530822713 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:979b3bfc9201e3c120a561d956af106a7c4b169edadccc6f7f1d6bba410bd0ed`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ff132ea5788a572995d5c6755582b28e439c0dc8a06c9c539e192d02d4fc58b`  
+		Last Modified: Tue, 30 Sep 2025 04:09:09 GMT  
+		Size: 4.5 MB (4498023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
+		Size: 158.0 MB (157995272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 10.3 KB (10280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64dc2b00d3e65c815fcbe711de850ff53c0f3196b2b5ece3fa8fb11598078da8`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 2.0 KB (1990 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2-trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241dcd96d704a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.5 MB (17495662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45bba508f0d7420676c37b85fa1f9b52bb9cc6055e6cc3a8d76d56aa031bdb8a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:294df71fb075007c8b9b69008da845257e68b96802a1de0df18bbe8fc3411c3c`  
+		Last Modified: Wed, 01 Oct 2025 12:31:41 GMT  
+		Size: 17.5 MB (17465137 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:944a92994a3e195280dbf3a3637c2e1ad803e82c5f57b0777c6e260a14240eac`  
+		Last Modified: Wed, 01 Oct 2025 12:31:42 GMT  
+		Size: 30.5 KB (30525 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2-trixie` - linux; ppc64le
+
+```console
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **553.5 MB (553528036 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2-trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.4 MB (17396795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
+		Size: 17.4 MB (17366394 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2-trixie` - linux; s390x
+
+```console
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **522.1 MB (522137708 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2-trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.2 MB (17188336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:15.2.0`
 
 ```console
-$ docker pull gcc@sha256:750f8f513f9bd7f446c4a3c747bcfaeaf80c79bbb05ac32924d196632465fce3
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13245,18 +13245,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:15.2.0` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -13280,61 +13280,61 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15.2.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
 		Size: 17.1 MB (17148819 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:15.2.0` - linux; arm64 variant v8
@@ -13396,7 +13396,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 4.5 MB (4498023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
-		Last Modified: Tue, 30 Sep 2025 04:08:35 GMT  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
 		Size: 158.0 MB (157995272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
@@ -13435,18 +13435,18 @@ $ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241d
 ### `gcc:15.2.0` - linux; ppc64le
 
 ```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
+-	Total Size: **553.5 MB (553528036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -13470,78 +13470,78 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15.2.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
+-	Total Size: **17.4 MB (17396795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
 		Size: 17.4 MB (17366394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gcc:15.2.0` - linux; s390x
 
 ```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
+-	Total Size: **522.1 MB (522137708 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -13565,67 +13565,67 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 2.0 KB (1994 bytes)  
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15.2.0` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **17.2 MB (17188336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:15.2.0-trixie`
 
 ```console
-$ docker pull gcc@sha256:670aa1f0d01fe0f16f26284294e787549ed7e72e26d2fe7c3e5c745c298a80b2
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13836,18 +13836,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:15.2.0-trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -13871,352 +13871,352 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2.0-trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
-		Size: 17.1 MB (17148819 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2.0-trixie` - linux; arm64 variant v8
-
-```console
-$ docker pull gcc@sha256:abd93210de1bdc697f2ab6a6a0486db9f36cede0e1eec0161d5f49aaff02c3b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530810437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d92755a13b819a32426370fe9726b3e5f248c551e6fcf51d00b841f86a89bec`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da96afe3f1214b13c21ac94848afa28a811804a90b82a72f1d70a9f098819e5c`  
-		Last Modified: Tue, 09 Sep 2025 06:21:25 GMT  
-		Size: 4.5 MB (4498016 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:949bac37c57d63c47df67ab22b7ef0dbc012b20e11f175b4937cfbab1f81936d`  
-		Last Modified: Tue, 09 Sep 2025 06:21:30 GMT  
-		Size: 158.0 MB (157995457 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb54d64c040d0e3294c1e4b4e3470562d1781d095448e1601db9b3524bd63c1`  
-		Last Modified: Tue, 09 Sep 2025 04:42:49 GMT  
-		Size: 10.3 KB (10316 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537137b597f2534581e9affd83371c7afc37199ec7e47269bc8c77f4a3af08ee`  
-		Last Modified: Tue, 09 Sep 2025 04:42:50 GMT  
-		Size: 2.0 KB (1997 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2.0-trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:0ce4dfac7361b71c3cda7108edcc4db6642e4394ef637f302982831ca954ecdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17495662 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a50eb8251ae0e1789b464fb3b3adc405b57eda6c8a5a200a102e491e75f9dfc`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7fbcdbf60d3dce684147b4c2cdc4cf4658ccc1168b8657b129137903f5b429e8`  
-		Last Modified: Tue, 09 Sep 2025 06:19:40 GMT  
-		Size: 17.5 MB (17465137 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:021987b3689bde0a440c9b8324fda908c6ad2853b46d201764bf90ff681fe1fd`  
-		Last Modified: Tue, 09 Sep 2025 06:19:41 GMT  
-		Size: 30.5 KB (30525 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2.0-trixie` - linux; ppc64le
-
-```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:15.2.0-trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
-		Size: 17.4 MB (17366394 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:15.2.0-trixie` - linux; s390x
-
-```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
 		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:15.2.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17188336 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
+		Size: 17.1 MB (17148819 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2.0-trixie` - linux; arm64 variant v8
+
+```console
+$ docker pull gcc@sha256:a786a655a60720ba9a032c186cc5a9358e1d95b20ce7c3d2bd08e21284f28f4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **530.8 MB (530822713 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:979b3bfc9201e3c120a561d956af106a7c4b169edadccc6f7f1d6bba410bd0ed`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ff132ea5788a572995d5c6755582b28e439c0dc8a06c9c539e192d02d4fc58b`  
+		Last Modified: Tue, 30 Sep 2025 04:09:09 GMT  
+		Size: 4.5 MB (4498023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
+		Size: 158.0 MB (157995272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 10.3 KB (10280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64dc2b00d3e65c815fcbe711de850ff53c0f3196b2b5ece3fa8fb11598078da8`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 2.0 KB (1990 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2.0-trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241dcd96d704a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.5 MB (17495662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45bba508f0d7420676c37b85fa1f9b52bb9cc6055e6cc3a8d76d56aa031bdb8a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:294df71fb075007c8b9b69008da845257e68b96802a1de0df18bbe8fc3411c3c`  
+		Last Modified: Wed, 01 Oct 2025 12:31:41 GMT  
+		Size: 17.5 MB (17465137 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:944a92994a3e195280dbf3a3637c2e1ad803e82c5f57b0777c6e260a14240eac`  
+		Last Modified: Wed, 01 Oct 2025 12:31:42 GMT  
+		Size: 30.5 KB (30525 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2.0-trixie` - linux; ppc64le
+
+```console
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **553.5 MB (553528036 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2.0-trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.4 MB (17396795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
+		Size: 17.4 MB (17366394 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:15.2.0-trixie` - linux; s390x
+
+```console
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **522.1 MB (522137708 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:15.2.0-trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.2 MB (17188336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:latest`
 
 ```console
-$ docker pull gcc@sha256:670aa1f0d01fe0f16f26284294e787549ed7e72e26d2fe7c3e5c745c298a80b2
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14427,18 +14427,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:latest` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -14462,352 +14462,352 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:latest` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
-		Size: 17.1 MB (17148819 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:latest` - linux; arm64 variant v8
-
-```console
-$ docker pull gcc@sha256:abd93210de1bdc697f2ab6a6a0486db9f36cede0e1eec0161d5f49aaff02c3b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530810437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d92755a13b819a32426370fe9726b3e5f248c551e6fcf51d00b841f86a89bec`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da96afe3f1214b13c21ac94848afa28a811804a90b82a72f1d70a9f098819e5c`  
-		Last Modified: Tue, 09 Sep 2025 06:21:25 GMT  
-		Size: 4.5 MB (4498016 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:949bac37c57d63c47df67ab22b7ef0dbc012b20e11f175b4937cfbab1f81936d`  
-		Last Modified: Tue, 09 Sep 2025 06:21:30 GMT  
-		Size: 158.0 MB (157995457 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb54d64c040d0e3294c1e4b4e3470562d1781d095448e1601db9b3524bd63c1`  
-		Last Modified: Tue, 09 Sep 2025 04:42:49 GMT  
-		Size: 10.3 KB (10316 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537137b597f2534581e9affd83371c7afc37199ec7e47269bc8c77f4a3af08ee`  
-		Last Modified: Tue, 09 Sep 2025 04:42:50 GMT  
-		Size: 2.0 KB (1997 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:latest` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:0ce4dfac7361b71c3cda7108edcc4db6642e4394ef637f302982831ca954ecdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17495662 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a50eb8251ae0e1789b464fb3b3adc405b57eda6c8a5a200a102e491e75f9dfc`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7fbcdbf60d3dce684147b4c2cdc4cf4658ccc1168b8657b129137903f5b429e8`  
-		Last Modified: Tue, 09 Sep 2025 06:19:40 GMT  
-		Size: 17.5 MB (17465137 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:021987b3689bde0a440c9b8324fda908c6ad2853b46d201764bf90ff681fe1fd`  
-		Last Modified: Tue, 09 Sep 2025 06:19:41 GMT  
-		Size: 30.5 KB (30525 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:latest` - linux; ppc64le
-
-```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:latest` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
-		Size: 17.4 MB (17366394 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:latest` - linux; s390x
-
-```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
 		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:latest` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17188336 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
+		Size: 17.1 MB (17148819 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:latest` - linux; arm64 variant v8
+
+```console
+$ docker pull gcc@sha256:a786a655a60720ba9a032c186cc5a9358e1d95b20ce7c3d2bd08e21284f28f4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **530.8 MB (530822713 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:979b3bfc9201e3c120a561d956af106a7c4b169edadccc6f7f1d6bba410bd0ed`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ff132ea5788a572995d5c6755582b28e439c0dc8a06c9c539e192d02d4fc58b`  
+		Last Modified: Tue, 30 Sep 2025 04:09:09 GMT  
+		Size: 4.5 MB (4498023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
+		Size: 158.0 MB (157995272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 10.3 KB (10280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64dc2b00d3e65c815fcbe711de850ff53c0f3196b2b5ece3fa8fb11598078da8`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 2.0 KB (1990 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:latest` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241dcd96d704a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.5 MB (17495662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45bba508f0d7420676c37b85fa1f9b52bb9cc6055e6cc3a8d76d56aa031bdb8a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:294df71fb075007c8b9b69008da845257e68b96802a1de0df18bbe8fc3411c3c`  
+		Last Modified: Wed, 01 Oct 2025 12:31:41 GMT  
+		Size: 17.5 MB (17465137 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:944a92994a3e195280dbf3a3637c2e1ad803e82c5f57b0777c6e260a14240eac`  
+		Last Modified: Wed, 01 Oct 2025 12:31:42 GMT  
+		Size: 30.5 KB (30525 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:latest` - linux; ppc64le
+
+```console
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **553.5 MB (553528036 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:latest` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.4 MB (17396795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
+		Size: 17.4 MB (17366394 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:latest` - linux; s390x
+
+```console
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **522.1 MB (522137708 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:latest` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.2 MB (17188336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `gcc:trixie`
 
 ```console
-$ docker pull gcc@sha256:670aa1f0d01fe0f16f26284294e787549ed7e72e26d2fe7c3e5c745c298a80b2
+$ docker pull gcc@sha256:00a29c626f3566021df4c7bb03629f672cfe47299f5c8a25d8661eaae1d8793a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15018,18 +15018,18 @@ $ docker pull gcc@sha256:bcf15b3daaef88f507c7525d6bfc6515d16f0a5b6fe64a66268943d
 ### `gcc:trixie` - linux; arm variant v7
 
 ```console
-$ docker pull gcc@sha256:a0490dd9bb6cc00ea9894f71bd7da54389dd5c5c97a2b97dadd34f820c3019e8
+$ docker pull gcc@sha256:eb19499ce17b5707c541bd3a10affe68cabe0e1fb341ed82ca93589f29de92ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.1 MB (454078524 bytes)**  
+-	Total Size: **454.1 MB (454124417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49f3be7d24a059087fdb8fba1e79c3d04bb344b7a4d41e46b08f0c4a44c56e9e`
+-	Image ID: `sha256:57bb8017cc50bad58307938b1fb30d08af14b5d23962c2911e0166ee908e5ddd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1757289600'
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1759104000'
 # Wed, 31 Jan 2024 23:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -15053,344 +15053,344 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 ```
 
 -	Layers:
-	-	`sha256:395f9ad3c9d37c6ea60897f33e8b189e9cd41fba6c60ab63882fd95de8ebb9f2`  
-		Last Modified: Mon, 08 Sep 2025 21:15:43 GMT  
-		Size: 45.7 MB (45711720 bytes)  
+	-	`sha256:2bfc3e00e130950b6362e6dfd7b2fb6422153e64a38bdcb425f69c089f79f4b2`  
+		Last Modified: Mon, 29 Sep 2025 23:35:25 GMT  
+		Size: 45.7 MB (45716141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87266d99f84095bec303de1733ad218d485653dfb6da729b7a066c18810645f9`  
-		Last Modified: Tue, 09 Sep 2025 00:02:54 GMT  
-		Size: 23.6 MB (23614030 bytes)  
+	-	`sha256:9b620f566f8b9a6ca407cd93d4d32d5e383b82be45b456055a87679d13e61cfd`  
+		Last Modified: Tue, 30 Sep 2025 01:08:34 GMT  
+		Size: 23.6 MB (23615872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0847685b749ce0208c0ad2a407e89f30279b1c8515c5c33f13a9c9b4c5e3da02`  
-		Last Modified: Tue, 09 Sep 2025 06:20:22 GMT  
-		Size: 62.7 MB (62719599 bytes)  
+	-	`sha256:d9a27374b29a121fa42dcf5db2ca42fd256fee1410bc83b261d7bbf4f683bdc5`  
+		Last Modified: Tue, 30 Sep 2025 02:39:32 GMT  
+		Size: 62.7 MB (62713383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2036348658d5c1e73dc60e26a597693c7bfe4c2a1637ccf355bd7a79033ee2e`  
-		Last Modified: Tue, 09 Sep 2025 07:22:34 GMT  
-		Size: 193.2 MB (193198347 bytes)  
+	-	`sha256:fe746ef16e33ce8b357ff154e57cc4aebd4d475c542f1765b2868e618152531c`  
+		Last Modified: Tue, 30 Sep 2025 04:38:51 GMT  
+		Size: 193.2 MB (193242678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:068b826efc3c656fbac5126794c12103c52875bd75431e538e91b3256ec7e4ed`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 4.2 MB (4206383 bytes)  
+	-	`sha256:a99f49340716c62c2b72e06d71cc148ca8914fb6659a6d869a8dcdb349bcd4ef`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 4.2 MB (4206269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fd163297091a3b06b54927f3de98cb4243eaed9b03299d7439e8fad0f2183b`  
-		Last Modified: Tue, 09 Sep 2025 11:44:51 GMT  
-		Size: 124.6 MB (124616379 bytes)  
+	-	`sha256:2596b815ca04ac59d73631308863303a8a1bf291fff4f2c498ec12ba88e29e67`  
+		Last Modified: Tue, 30 Sep 2025 05:44:36 GMT  
+		Size: 124.6 MB (124618072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c8ce3e9520dbfc66f0ddbf5f0125bc440476b039034e9efa7044be6a235f34`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 10.1 KB (10059 bytes)  
+	-	`sha256:1266830fc9bec7a0055a30a5bb24ffe8bebfdfe6ecfbd0c6a580b7dff641f91a`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
+		Size: 10.0 KB (10008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d82391ad0e455131a9c308619691359642a92ca3b4a38333e5d7caa9999dcb2`  
-		Last Modified: Tue, 09 Sep 2025 11:44:35 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:b1f027eed9d7c911fa0a55fa5f6ca08557ad1451504687d629fee9897299ea0c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17179297 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8deca29b9048c536a0d86f8bf8d1864fbba68add648ca3adf07bd7a5fdffc20f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6a42728aec0024fd0ba48b9ef7a135bd08fa4be9f75210ec02a228e7f1182a8f`  
-		Last Modified: Tue, 09 Sep 2025 12:19:31 GMT  
-		Size: 17.1 MB (17148819 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:47539d1ae4af7c79bfaa0eaf2005d684326159e2023802f43b8998a42bc9212b`  
-		Last Modified: Tue, 09 Sep 2025 12:19:32 GMT  
-		Size: 30.5 KB (30478 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:trixie` - linux; arm64 variant v8
-
-```console
-$ docker pull gcc@sha256:abd93210de1bdc697f2ab6a6a0486db9f36cede0e1eec0161d5f49aaff02c3b7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530810437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d92755a13b819a32426370fe9726b3e5f248c551e6fcf51d00b841f86a89bec`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:37b49b813d9cadbc816aea22a15ef76898c66b4db015fea88b8f15bf213d5004`  
-		Last Modified: Mon, 08 Sep 2025 21:13:28 GMT  
-		Size: 49.6 MB (49643746 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd36c08acb8bfd3ecaef97bc215303e9b1c59f47cb418c4692d97f29cb1b17c`  
-		Last Modified: Mon, 08 Sep 2025 22:26:04 GMT  
-		Size: 25.0 MB (25015321 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02fd600967e6c49c98883d12d3ca7ba50395f75eb436373e95780141122745a6`  
-		Last Modified: Tue, 09 Sep 2025 02:13:16 GMT  
-		Size: 67.6 MB (67583121 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739133f1214d773878370d419c1d4ee91d9b3c13d17ef30cff3d20122c9738c8`  
-		Last Modified: Tue, 09 Sep 2025 03:12:17 GMT  
-		Size: 226.1 MB (226062463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da96afe3f1214b13c21ac94848afa28a811804a90b82a72f1d70a9f098819e5c`  
-		Last Modified: Tue, 09 Sep 2025 06:21:25 GMT  
-		Size: 4.5 MB (4498016 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:949bac37c57d63c47df67ab22b7ef0dbc012b20e11f175b4937cfbab1f81936d`  
-		Last Modified: Tue, 09 Sep 2025 06:21:30 GMT  
-		Size: 158.0 MB (157995457 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb54d64c040d0e3294c1e4b4e3470562d1781d095448e1601db9b3524bd63c1`  
-		Last Modified: Tue, 09 Sep 2025 04:42:49 GMT  
-		Size: 10.3 KB (10316 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537137b597f2534581e9affd83371c7afc37199ec7e47269bc8c77f4a3af08ee`  
-		Last Modified: Tue, 09 Sep 2025 04:42:50 GMT  
-		Size: 2.0 KB (1997 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:0ce4dfac7361b71c3cda7108edcc4db6642e4394ef637f302982831ca954ecdb
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17495662 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a50eb8251ae0e1789b464fb3b3adc405b57eda6c8a5a200a102e491e75f9dfc`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7fbcdbf60d3dce684147b4c2cdc4cf4658ccc1168b8657b129137903f5b429e8`  
-		Last Modified: Tue, 09 Sep 2025 06:19:40 GMT  
-		Size: 17.5 MB (17465137 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:021987b3689bde0a440c9b8324fda908c6ad2853b46d201764bf90ff681fe1fd`  
-		Last Modified: Tue, 09 Sep 2025 06:19:41 GMT  
-		Size: 30.5 KB (30525 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:trixie` - linux; ppc64le
-
-```console
-$ docker pull gcc@sha256:713421e0186a826125cbcfd89a90a8a264484a5d2e4b3a9d354cd9cb2634d78d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **553.5 MB (553481214 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f4b6703af06f25eaba03d1a56db3e72485c8b9a44cb656cb20dcca62620fca6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:4cb8224e7ffc22512c71f1cfc1042cb22342df02312e61cb1ab0c492c3369711`  
-		Last Modified: Mon, 08 Sep 2025 21:18:07 GMT  
-		Size: 53.1 MB (53104433 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bf3914a916f37a54163b2eb02b685f6e0d654680e02a5e51b78387e81e4077`  
-		Last Modified: Tue, 09 Sep 2025 06:02:47 GMT  
-		Size: 27.0 MB (26993871 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31355a04af67dd51f580585ba523dfd2b5ad7d91e873cb7213748a572df48bb6`  
-		Last Modified: Tue, 09 Sep 2025 15:30:51 GMT  
-		Size: 73.0 MB (73033628 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edecae95b05fd90248eadb0963fee10d4821b177931231ae243c72138252bf33`  
-		Last Modified: Tue, 09 Sep 2025 23:16:12 GMT  
-		Size: 231.1 MB (231054084 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0a00affe51d6c949ef1f3129c6d3c47c0bbd239b33c61833b8f3e8263ac4d4`  
-		Last Modified: Wed, 10 Sep 2025 01:07:36 GMT  
-		Size: 4.9 MB (4896402 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5288d73bb1d9bdfe1f65e3590c4eec2cf4b377fb2872430e16403aacd90352e2`  
-		Last Modified: Wed, 10 Sep 2025 01:08:03 GMT  
-		Size: 164.4 MB (164386160 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e339376af1474d82c79aab9d871872ecee634b145bb538a803a1c94c39598d8`  
-		Last Modified: Wed, 10 Sep 2025 00:39:38 GMT  
-		Size: 10.6 KB (10629 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e027b483c0b664196ab6b91770c2e394bf3510c211e31c4b259f0302b4a6731`  
-		Last Modified: Wed, 10 Sep 2025 00:39:39 GMT  
-		Size: 2.0 KB (2007 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gcc:trixie` - unknown; unknown
-
-```console
-$ docker pull gcc@sha256:22583efe586ad01dbd43d893e212e9a31d732ecc26712183cc44a68f5294b0dd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17396796 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:beefb36e8c3b559323633c6f2338c29a82e5f83c95c5ba33e257724f4713bf9b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4583be959ad3d628f92d54efc562637d154e1c270c8a123e3cb2d9ff12a36958`  
-		Last Modified: Wed, 10 Sep 2025 03:20:03 GMT  
-		Size: 17.4 MB (17366394 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:24e06700931e74573715f7d0880c6697011a9df6c08fa4015c609ad87a470cc4`  
-		Last Modified: Wed, 10 Sep 2025 03:20:04 GMT  
-		Size: 30.4 KB (30402 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gcc:trixie` - linux; s390x
-
-```console
-$ docker pull gcc@sha256:73af4b7fff5d20df8bea4a92a025700cbe30ac6e4810c18e709eb2319fe94894
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **522.1 MB (522100323 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a98f5a136c41a81b8a72922237094f3f6057cef19978dea49c2f1e8197f06a82`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1757289600'
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
-# Sun, 10 Aug 2025 02:06:12 GMT
-ENV GCC_VERSION=15.2.0
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
-# Sun, 10 Aug 2025 02:06:12 GMT
-RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
-```
-
--	Layers:
-	-	`sha256:28eee642962fd09c10ecf87da2d4b65d208f3d5c1bf3fcca21c105c0213f558a`  
-		Last Modified: Mon, 08 Sep 2025 21:32:18 GMT  
-		Size: 49.3 MB (49346327 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e775d8e7868b319a235eef909d5a12163c48c579e84d18d78ed794653cb126a0`  
-		Last Modified: Tue, 09 Sep 2025 06:02:49 GMT  
-		Size: 26.8 MB (26780367 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e76c2286bf1bfe1b0d2250435d28c0af55c645ac84ddeac003b9da9b68c9c87`  
-		Last Modified: Tue, 09 Sep 2025 12:08:32 GMT  
-		Size: 68.6 MB (68636032 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306840f46ff169a4a8d6b52d2078cfa9ec81edfd3ada29db24f34dacc219b6cd`  
-		Last Modified: Tue, 09 Sep 2025 20:08:03 GMT  
-		Size: 206.4 MB (206434434 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfded61089617fde5c660292bc00f73efe7b63329723f3f5599f6de04ad9fc9a`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 4.7 MB (4672099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b03548eea755f84286f8067e16618244e195e7da684b1a1ecb6e7dd94bba340e`  
-		Last Modified: Wed, 10 Sep 2025 09:19:23 GMT  
-		Size: 166.2 MB (166217990 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e47e827b6763ff56c9b111384e7b0fa087d8e66411cd491996efaa14ae598c1`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
-		Size: 11.1 KB (11080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26c543c99c743439ff0bd9551ebfb53db3c34a3e42513b4c1c7fcd38b31993a2`  
-		Last Modified: Wed, 10 Sep 2025 07:54:32 GMT  
+	-	`sha256:7a7e890d3babef97d90c220e90ab77e5e58befe55a3a0c784fb5f49807b0cdb9`  
+		Last Modified: Tue, 30 Sep 2025 05:44:14 GMT  
 		Size: 2.0 KB (1994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gcc:trixie` - unknown; unknown
 
 ```console
-$ docker pull gcc@sha256:da2ed3c333ae3ad8d82bdcbc71c5dd94c9c012f00a3d9d9a1521dd348b0cab31
+$ docker pull gcc@sha256:34926ef9d2a78984e0bd85047907dc2cc82976622ec9249a3becfbf8f87f167c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.2 MB (17188336 bytes)**  
+-	Total Size: **17.2 MB (17179298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad662a4c6a4b281c0155991cfa4faab05efab4f7e3a198873abaff541cbacf7e`
+-	Image ID: `sha256:6a0169c767f76b51af4d335c8865e086e795062149ac1f2eff103a21ee91da2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea498273dec3167de0f5b0285ed9edb2755cc97d015780e36c2a6563ecab1e49`  
-		Last Modified: Wed, 10 Sep 2025 09:19:33 GMT  
+	-	`sha256:af3c82db0b89ea91e093b6cc9f7652f2bace8f3805490a9b866e932aacb4c44d`  
+		Last Modified: Wed, 01 Oct 2025 21:20:13 GMT  
+		Size: 17.1 MB (17148819 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4ee34de3ab7d583558e04619971b9c728e9ecadca7c2250bca2f8a8962b4b561`  
+		Last Modified: Wed, 01 Oct 2025 21:20:15 GMT  
+		Size: 30.5 KB (30479 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:trixie` - linux; arm64 variant v8
+
+```console
+$ docker pull gcc@sha256:a786a655a60720ba9a032c186cc5a9358e1d95b20ce7c3d2bd08e21284f28f4e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **530.8 MB (530822713 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:979b3bfc9201e3c120a561d956af106a7c4b169edadccc6f7f1d6bba410bd0ed`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:28aec8b14b3eeacbf47ef38af72fab694b109fdcdf31581722750599baf1a932`  
+		Last Modified: Mon, 29 Sep 2025 23:35:17 GMT  
+		Size: 49.6 MB (49648695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:003e6ed58c0c6ddbc757cdcbd876d66b9b5eed39128088a0055c819ebe15d20d`  
+		Last Modified: Tue, 30 Sep 2025 00:14:22 GMT  
+		Size: 25.0 MB (25016370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:390c9631087ef516f060328537d417f223e1f264c968e39186895696e78090b7`  
+		Last Modified: Tue, 30 Sep 2025 01:20:15 GMT  
+		Size: 67.6 MB (67582977 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa24803fc7a76e7898f7a43b6b4f9851f1150fe7207758212555ada9266e62d3`  
+		Last Modified: Tue, 30 Sep 2025 03:14:27 GMT  
+		Size: 226.1 MB (226069106 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ff132ea5788a572995d5c6755582b28e439c0dc8a06c9c539e192d02d4fc58b`  
+		Last Modified: Tue, 30 Sep 2025 04:09:09 GMT  
+		Size: 4.5 MB (4498023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e2025ecde4b78462513023b13568efa5f1993b5c5096224ab9a63ae8d9da2d9`  
+		Last Modified: Wed, 01 Oct 2025 21:25:00 GMT  
+		Size: 158.0 MB (157995272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:122699b8f72f9892fd13faf0640668950e746205de5e1912767814cab94843ac`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 10.3 KB (10280 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64dc2b00d3e65c815fcbe711de850ff53c0f3196b2b5ece3fa8fb11598078da8`  
+		Last Modified: Tue, 30 Sep 2025 04:09:00 GMT  
+		Size: 2.0 KB (1990 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:d74cfaa8f269f723332708240a295178c9f41b95db67da0259a241dcd96d704a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.5 MB (17495662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:45bba508f0d7420676c37b85fa1f9b52bb9cc6055e6cc3a8d76d56aa031bdb8a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:294df71fb075007c8b9b69008da845257e68b96802a1de0df18bbe8fc3411c3c`  
+		Last Modified: Wed, 01 Oct 2025 12:31:41 GMT  
+		Size: 17.5 MB (17465137 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:944a92994a3e195280dbf3a3637c2e1ad803e82c5f57b0777c6e260a14240eac`  
+		Last Modified: Wed, 01 Oct 2025 12:31:42 GMT  
+		Size: 30.5 KB (30525 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:trixie` - linux; ppc64le
+
+```console
+$ docker pull gcc@sha256:983d545d94acc2896dd65cd29a63f2f5ecf71ac32c8b89e3397e8e0204379621
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **553.5 MB (553528036 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e15985571a00ed76e6b9d0725ef556ab9546681d1e54a9a40a69efd04504acd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:71fbf24a239310917388930bb043e64907cb532b9ac8f265e44e032dc3bf4409`  
+		Last Modified: Mon, 29 Sep 2025 23:41:05 GMT  
+		Size: 53.1 MB (53109217 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c97a0b9869d194af98b70e095598cab3ab85032828ead695d63f75204d7418fc`  
+		Last Modified: Tue, 30 Sep 2025 09:24:30 GMT  
+		Size: 27.0 MB (26995278 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ed492992022fa9e4a253b427574c9ab21d82072f73e353ad6f09e1555a92cc4`  
+		Last Modified: Wed, 01 Oct 2025 11:14:56 GMT  
+		Size: 73.0 MB (73034854 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48553d2ede59ecf14cef32cc9d20fe7890483825372d31b7943ab6f87976b2a3`  
+		Last Modified: Wed, 01 Oct 2025 11:14:58 GMT  
+		Size: 231.1 MB (231092646 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c39a53ee90064120672c098fb13efc3be9ed90eea13177de030a1446fa42dc01`  
+		Last Modified: Wed, 01 Oct 2025 10:19:04 GMT  
+		Size: 4.9 MB (4896432 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6188379490a676a24b555a7817ff8d77fb8937210e258ede3ef6c4be7a1ab159`  
+		Last Modified: Wed, 01 Oct 2025 19:55:09 GMT  
+		Size: 164.4 MB (164386974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a791315aa9441b2d5d84d66f8eb0005ab849fa45e32f452405e5f34b8db147ca`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 10.6 KB (10625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ebd3951032aa29d5169215d278cf8b22b1d9bc7807f10189ab193ff1ddccb5b5`  
+		Last Modified: Wed, 01 Oct 2025 10:19:03 GMT  
+		Size: 2.0 KB (2010 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:6b554c8cf8757567962aaa4478b05074f6497a38d0b82340438c195fb6db376a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.4 MB (17396795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d18b8431f8c2a20067eb470cbdcdae016640f74509fbb44fa7f0708c8d702d53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d574fe558156daf02e10b308438ecf2307b13a243e3f7dab2396c961f74a044`  
+		Last Modified: Wed, 01 Oct 2025 21:20:39 GMT  
+		Size: 17.4 MB (17366394 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c2871a8b20917ce8f29121ea3a9207af2a6f2c0b16f2350429165dfaee6fec71`  
+		Last Modified: Wed, 01 Oct 2025 21:20:40 GMT  
+		Size: 30.4 KB (30401 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gcc:trixie` - linux; s390x
+
+```console
+$ docker pull gcc@sha256:a4ae9b88279106d905770794f02c011ae92f4140e8a15b1cbec696d7c1d492c9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **522.1 MB (522137708 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c3da3502d561516422d7cca45046dd1ddea67c28a9f2718952bcc6a48fcfead8`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
+# Wed, 31 Jan 2024 23:01:46 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		abigail-tools 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc
+# Sun, 10 Aug 2025 02:06:12 GMT
+ENV GCC_VERSION=15.2.0
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		flex 		gnupg 	; 	rm -r /var/lib/apt/lists/*; 		_fetch() { 		local fetch="$1"; shift; 		local file="$1"; shift; 		for mirror in $GCC_MIRRORS; do 			if curl -fL "$mirror/$fetch" -o "$file"; then 				return 0; 			fi; 		done; 		echo >&2 "error: failed to download '$fetch' from several mirrors"; 		return 1; 	}; 		_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz.sig" 'gcc.tar.xz.sig'; 	_fetch "gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" 'gcc.tar.xz'; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify gcc.tar.xz.sig gcc.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	mkdir -p /usr/src/gcc; 	tar -xf gcc.tar.xz -C /usr/src/gcc --strip-components=1; 	rm gcc.tar.xz*; 		cd /usr/src/gcc; 		./contrib/download_prerequisites; 	{ rm *.tar.* || true; }; 		for f in config.guess config.sub; do 		wget -O "$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb"; 		find -mindepth 2 -name "$f" -exec cp -v "$f" '{}' ';'; 	done; 		dir="$(mktemp -d)"; 	cd "$dir"; 		extraConfigureArgs=''; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		armel) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv5te --with-float=soft" 			;; 		armhf) 			extraConfigureArgs="$extraConfigureArgs --with-arch=armv7-a+fp --with-float=hard --with-mode=thumb" 			;; 				i386) 			extraConfigureArgs="$extraConfigureArgs --with-arch-32=i686"; 			;; 	esac; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	/usr/src/gcc/configure 		--build="$gnuArch" 		--disable-multilib 		--enable-languages=c,c++,fortran,go 		$extraConfigureArgs 	; 	make -j "$(nproc)"; 	make install-strip; 		cd ..; 		rm -rf "$dir" /usr/src/gcc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	{ echo '/usr/local/lib64'; echo '/usr/local/lib'; } > /etc/ld.so.conf.d/000-local-lib.conf; 	ldconfig -v; 	deb="$(readlink -ve /usr/lib/*/libstdc++.so* | head -1)"; 	gcc="$(readlink -ve /usr/local/lib*/libstdc++.so | head -1)"; 	LD_PRELOAD="$deb" abidiff --no-added-syms "$deb" "$gcc" # buildkit
+# Sun, 10 Aug 2025 02:06:12 GMT
+RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++; 	dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran; 	update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999 # buildkit
+```
+
+-	Layers:
+	-	`sha256:024d6c344f0b9dbb2baf07e95dfd2abbfadc5c8262ca381f39f6489670cbaff5`  
+		Last Modified: Mon, 29 Sep 2025 23:41:06 GMT  
+		Size: 49.4 MB (49351442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae40148dca91a7d747a8331f403c812cb96e16b0e939c3f7e22eaed6bd4173a3`  
+		Last Modified: Tue, 30 Sep 2025 09:36:14 GMT  
+		Size: 26.8 MB (26782227 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2360823d72f62f7ab99d1125b961476d915cd531da8e87d42d3767dfd3b86d6`  
+		Last Modified: Tue, 30 Sep 2025 15:54:22 GMT  
+		Size: 68.6 MB (68637856 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e220bcc3f5844a343314a213e702ff36277cc749e3871aa8b07e38bbad44107c`  
+		Last Modified: Wed, 01 Oct 2025 13:21:17 GMT  
+		Size: 206.5 MB (206461799 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:37af5bc9ba50538923c4518cb1d62f305964a49cfc06dccc5833fea1c1767afa`  
+		Last Modified: Wed, 01 Oct 2025 07:40:57 GMT  
+		Size: 4.7 MB (4672749 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce1bf6a68b60a51a6537c1570046d4e00d7c73daf5d92fe356374733cffbb855`  
+		Last Modified: Wed, 01 Oct 2025 07:40:29 GMT  
+		Size: 166.2 MB (166218494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c57bf6c0c191a3a5770baa8dad2a416fd2e2515a8fa1576a8983a1c50cb09ee4`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 11.1 KB (11124 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c7952207148b632aa2ed64f69b4e8a36918aa03cb264eb879b96f5301432843`  
+		Last Modified: Wed, 01 Oct 2025 07:40:56 GMT  
+		Size: 2.0 KB (2017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gcc:trixie` - unknown; unknown
+
+```console
+$ docker pull gcc@sha256:fb27ded263ff0b089f565b5185ca29d36a0b3a685228d85b73ff547ae3f4d6d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **17.2 MB (17188336 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7cf0ac63f944ea9bbad75ab156bf424a2080196b253036d320bd6e1b0b4635ff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:7e356a4bf5b2d5adc4f47c54cf2e57c420d2b867155207b4f4b973e6b9816ee8`  
+		Last Modified: Wed, 01 Oct 2025 21:20:52 GMT  
 		Size: 17.2 MB (17158008 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1840baf0aef478dfba88d849b314670b3bf685a1d3182a181f0b7fece5a99f74`  
-		Last Modified: Wed, 10 Sep 2025 09:19:35 GMT  
+	-	`sha256:25f1a32a9c0ca59e06589dc686c3875422aea38d14e0995eb901fc7c23a18c80`  
+		Last Modified: Wed, 01 Oct 2025 21:20:54 GMT  
 		Size: 30.3 KB (30328 bytes)  
 		MIME: application/vnd.in-toto+json
