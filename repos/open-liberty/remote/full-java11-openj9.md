@@ -305,7 +305,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 42.3 KB (42323 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f933d39b93988e9c2b4783766a43927886c9b808e1d1d93bf171486c706901b7`  
-		Last Modified: Tue, 30 Sep 2025 18:14:26 GMT  
+		Last Modified: Wed, 01 Oct 2025 21:16:22 GMT  
 		Size: 343.4 MB (343352550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e5dd9731f05f11e49f968aff43c2268f1030fc44c3ef5948dce689c6ccfc7d8`  
@@ -470,7 +470,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 36.5 KB (36496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60fa2234766ff29d5aac9893bd7ea711dabf2668e35c1f7c99365907e44193cc`  
-		Last Modified: Wed, 01 Oct 2025 04:09:59 GMT  
+		Last Modified: Wed, 01 Oct 2025 21:16:30 GMT  
 		Size: 343.4 MB (343352595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4e13e81252aabd8f2f03a1d0f47ac65d88f447f9873b238e6a4ac82cafbc78c`  
