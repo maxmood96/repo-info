@@ -1,7 +1,7 @@
 ## `varnish:old`
 
 ```console
-$ docker pull varnish@sha256:ead578d9a236fc959aaf39ae5d313d0ccda17613a3731f92cfe117555b4cf2e7
+$ docker pull varnish@sha256:7290bb02daa62a19004dad8f936032d39255dbd12797c7f65e838b32c743648d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -222,101 +222,101 @@ $ docker pull varnish@sha256:f992b2f49e938ba0f4b0b17151999161f71790a5112c46e2c9c
 ### `varnish:old` - linux; arm64 variant v8
 
 ```console
-$ docker pull varnish@sha256:34cd0a30bda20160ff7ae516e04a1c3adef99857d02fdfcaf3ce813c1428842d
+$ docker pull varnish@sha256:0d7c1c994530d1ed1ca5853a890e344630822f13d8d9178cac04b849b59c52cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.5 MB (110519111 bytes)**  
+-	Total Size: **110.5 MB (110523275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:039ab2351cd19844ffc5080315de35144824e0864dfbe6e515900d5f1a66507e`
+-	Image ID: `sha256:823d030972d97c92df6bc33ef78be438ad647d179137fe35f4bfb6f61d8db9ea`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 
 ```dockerfile
-# Fri, 29 Aug 2025 18:37:31 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1757289600'
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1759104000'
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG PKG_COMMIT=1f0d212dc45065f38bd80ac57fe22773a20a0595
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG VARNISH_VERSION=7.7.3
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG DIST_SHA512=2de3f19d24e42ec092076226b629dc36d4d3c9961454502e7f9a8ff1d440cf54104198e2b5302361f093fa221f04f836bb8dda441921d1721b1d05c90c0f1661
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG VARNISH_MODULES_VERSION=0.26.0
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG VARNISH_MODULES_SHA512SUM=2050ec65ae731bddc74743c9aa6246e41ffba8017c404c32e50d45f72f5a02dd3eb2290f8b8e43e25a385a06819836fb19f8540f1cdae394083729ff6b6aed35
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG VMOD_DYNAMIC_VERSION=7.7
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG VMOD_DYNAMIC_COMMIT=490068ba146c48fd7201c8d19cdb37f6d7d932c7
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=3ff84710d4d9c4fd956cc27c41ae8b3d0bed4db7a2ca70d61e3900cd1f77ff293e2be3551d044a644ec76c6678517d788511e61c803dda2fe75bd5c286d5901b
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ARG TOOLBOX_COMMIT=cfa9ec43a47429ef94f7e04e4abc58c67ad50add
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ENV VMOD_DEPS=autoconf-archive automake curl libtool make pkg-config python3-sphinx
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ENV VARNISH_SIZE=100M
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ENV VSM_NOPID=1
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 # ARGS: PKG_COMMIT=1f0d212dc45065f38bd80ac57fe22773a20a0595 VARNISH_VERSION=7.7.3 DIST_SHA512=2de3f19d24e42ec092076226b629dc36d4d3c9961454502e7f9a8ff1d440cf54104198e2b5302361f093fa221f04f836bb8dda441921d1721b1d05c90c0f1661 VARNISH_MODULES_VERSION=0.26.0 VARNISH_MODULES_SHA512SUM=2050ec65ae731bddc74743c9aa6246e41ffba8017c404c32e50d45f72f5a02dd3eb2290f8b8e43e25a385a06819836fb19f8540f1cdae394083729ff6b6aed35 VMOD_DYNAMIC_VERSION=7.7 VMOD_DYNAMIC_COMMIT=490068ba146c48fd7201c8d19cdb37f6d7d932c7 VMOD_DYNAMIC_SHA512SUM=3ff84710d4d9c4fd956cc27c41ae8b3d0bed4db7a2ca70d61e3900cd1f77ff293e2be3551d044a644ec76c6678517d788511e61c803dda2fe75bd5c286d5901b TOOLBOX_COMMIT=cfa9ec43a47429ef94f7e04e4abc58c67ad50add
 RUN set -ex;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS adduser libgetdns10t64 netbase;         adduser --uid 1000 --quiet --system --no-create-home --home /nonexistent --group varnish;     adduser --uid 1001 --quiet --system --no-create-home --home /nonexistent --ingroup varnish vcache;     adduser --uid 1002 --quiet --system --no-create-home --home /nonexistent --ingroup varnish varnishlog;         cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout $PKG_COMMIT;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-$VARNISH_VERSION.tgz -o $tmpdir/orig.tgz;     echo "$DIST_SHA512  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y --no-install-recommends install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;     cp vcls/verbose_builtin/verbose_builtin.vcl vcls/hit-miss/hit-miss.vcl /etc/varnish/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-mark hold varnish;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS varnish-dev;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;     mkdir -p -m 1777 /var/lib/varnish/varnishd # buildkit
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 WORKDIR /etc/varnish
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 COPY scripts/ /usr/local/bin/ # buildkit
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 COPY default.vcl /etc/varnish/ # buildkit
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 USER varnish
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 EXPOSE map[80/tcp:{} 8443/tcp:{}]
-# Fri, 29 Aug 2025 18:37:31 GMT
+# Tue, 16 Sep 2025 23:33:29 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:b2feff975e6dd2ebaf182772fb9ee26274648387b061e821e0bb5026735dd094`  
-		Last Modified: Mon, 08 Sep 2025 21:13:54 GMT  
-		Size: 30.1 MB (30136631 bytes)  
+	-	`sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412`  
+		Last Modified: Mon, 29 Sep 2025 23:35:13 GMT  
+		Size: 30.1 MB (30140842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b95db52a59f557a64013c0413ad4c7fdfda02dc7d71dc4ada8359ad435f60aa`  
-		Last Modified: Tue, 09 Sep 2025 00:20:13 GMT  
-		Size: 80.4 MB (80380435 bytes)  
+	-	`sha256:378788f9ca239860d89fb5c3bbea1545f80a9267aa9459ec3f9da569d769ed18`  
+		Last Modified: Tue, 30 Sep 2025 00:15:42 GMT  
+		Size: 80.4 MB (80380388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8f1221a4365e75b2f093d2849e49dcd43efab4c3fc25561ade12264e79369bf`  
-		Last Modified: Mon, 08 Sep 2025 22:24:18 GMT  
-		Size: 496.0 B  
+	-	`sha256:fb797e799e3bd572e943838004c1524a12dbcae17a3f5745748f6cf4c918f2cc`  
+		Last Modified: Tue, 30 Sep 2025 00:15:33 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bac397b371684df07816dd8ccffd8a1d93cd6f2c5551537f329f0b0ab7a40c98`  
-		Last Modified: Mon, 08 Sep 2025 22:24:17 GMT  
-		Size: 1.5 KB (1517 bytes)  
+	-	`sha256:ff005f26e2985d74a3fbf6d89f2eefd91990d5d3e5d0079f3436f7f0f5d03907`  
+		Last Modified: Tue, 30 Sep 2025 00:15:33 GMT  
+		Size: 1.5 KB (1518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `varnish:old` - unknown; unknown
 
 ```console
-$ docker pull varnish@sha256:3fcb990fe9d285b0d6e1511655fd18dd6ada705278900042a7e02128a3d4eb9b
+$ docker pull varnish@sha256:4ea1f26847fd13abcc92c49e207e1348e5aa24daedc35ab91326e39467ecae6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.8 KB (19776 bytes)**  
+-	Total Size: **19.2 KB (19152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c980a283bec0356ac4ed751735e36c07ec10c1770c95c332fea24d9fc7ccc81e`
+-	Image ID: `sha256:20574620b612025dc02f51df435429c5bfbdad7b3f8c33785deb4cd003aa1386`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2eef8bd9e2934552fb4337fca4fba8742b2153e1cd79bb4aa0114d701f1ba32d`  
-		Last Modified: Tue, 09 Sep 2025 00:19:49 GMT  
-		Size: 19.8 KB (19776 bytes)  
+	-	`sha256:0515453d2e39868223779e91e4f179ca2d1489b84e6801d027381d9bb9d225f6`  
+		Last Modified: Wed, 01 Oct 2025 12:30:32 GMT  
+		Size: 19.2 KB (19152 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `varnish:old` - linux; 386
