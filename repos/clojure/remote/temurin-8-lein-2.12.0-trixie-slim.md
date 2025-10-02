@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-lein-2.12.0-trixie-slim`
 
 ```console
-$ docker pull clojure@sha256:44bb9d2ddcd4d220ed3978153698456399e1fac56928ad82961448a1e980502f
+$ docker pull clojure@sha256:33bbda42eabe7745d1ed158f1bff969e0fac3d361c341edfdaafcbe444f40d83
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -101,13 +101,13 @@ $ docker pull clojure@sha256:b207b0d8b6ea8461e05899f27321c1f8f382f4f03a5ca51dc11
 ### `clojure:temurin-8-lein-2.12.0-trixie-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:bc54382a2d7fbfd1c09119cd954c52f1d890a32ee98cb9dff653b9d323d8ab96
+$ docker pull clojure@sha256:d0764f780af5e7d7d77886f1c909c14fce4737327a596def0d3991d9e2214463
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.9 MB (104907755 bytes)**  
+-	Total Size: **108.2 MB (108226420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37a1e9970b09c37d3a0c28811ad0c19cf22c11ffa3225fcc6b90383b5dead080`
+-	Image ID: `sha256:dd73c79500add58c943ececb035979dd71f4cc6c7290b5ffc3dc916d972ff9e0`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -142,44 +142,44 @@ CMD ["lein" "repl"]
 		Last Modified: Mon, 29 Sep 2025 23:35:13 GMT  
 		Size: 30.1 MB (30140842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad2345afc33cd196ee66909d7b211046c5804c1f3ef7cc6436db67d7181bae62`  
-		Last Modified: Tue, 30 Sep 2025 00:50:33 GMT  
-		Size: 53.8 MB (53835604 bytes)  
+	-	`sha256:4e0e946b2f9ca962855860909caa70e701f20bf67f0f7faa31d67e696f7d1a56`  
+		Last Modified: Thu, 02 Oct 2025 02:40:13 GMT  
+		Size: 53.8 MB (53835607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7652bc5db9a0d253eed5ceda814c38c2c00df8ba982050a5511bf59848f78003`  
-		Last Modified: Tue, 30 Sep 2025 00:50:17 GMT  
-		Size: 16.4 MB (16413523 bytes)  
+	-	`sha256:7b843b7011cdc8819f073ea2376a2a573d47aead61501173b7f5626684674ba2`  
+		Last Modified: Thu, 02 Oct 2025 02:40:10 GMT  
+		Size: 19.7 MB (19732195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35eb11ab4558bce84482e5964536b2c6b34e83f5402af7e3960e67180c7fce99`  
-		Last Modified: Tue, 30 Sep 2025 00:50:16 GMT  
-		Size: 4.5 MB (4517754 bytes)  
+	-	`sha256:949fd290a8fecab247b8bc192b00c03bc6e603af70d15bf4be28b2918bdaa39a`  
+		Last Modified: Thu, 02 Oct 2025 02:40:09 GMT  
+		Size: 4.5 MB (4517744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-lein-2.12.0-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:74606c617b917a7d32ab0d98fc5a8aa3d816752031de66f10efa581b6d762b1a
+$ docker pull clojure@sha256:f70dc233ac331a9087152d89343faf8e7365112f6795a8408018380228358ebf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2501862 bytes)**  
+-	Total Size: **2.5 MB (2501916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb0268fd274e5acb27af252b49899efef51ef5e7eca3a7e3d2f19313d2a7fdbb`
+-	Image ID: `sha256:d1ccf7c31c831146b1704483e006cb9b44f76b972925a015094f7eb27d8d7837`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:904c453c1e53a44ac72cd9be10c373bf5a966106e95d26cdb5668de7885eabbb`  
-		Last Modified: Tue, 30 Sep 2025 12:36:51 GMT  
-		Size: 2.5 MB (2485316 bytes)  
+	-	`sha256:123b3339654085c1561d97dd9aa680e34d44d2170c581122a70a2029ebf93762`  
+		Last Modified: Thu, 02 Oct 2025 06:49:23 GMT  
+		Size: 2.5 MB (2485370 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad72897803b5e017956cd549777a37b935911ff9ea809173b2b17e64c7db1cc7`  
-		Last Modified: Tue, 30 Sep 2025 12:36:52 GMT  
+	-	`sha256:ba53e690461a7d5d49e5e87a0b2af399c010f4c74ebd4bddd5796922715ca5c2`  
+		Last Modified: Thu, 02 Oct 2025 06:49:23 GMT  
 		Size: 16.5 KB (16546 bytes)  
 		MIME: application/vnd.in-toto+json
 

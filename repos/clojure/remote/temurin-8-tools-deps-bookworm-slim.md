@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:c3541ce05305fdb4f5653d3af9533f8722e56f98467898781920f6a057130a3f
+$ docker pull clojure@sha256:a3ac89b2d4ffd387f2b3df1bfedaf353cfee5070959011f3f3a7a333cf4fc1ad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -95,13 +95,13 @@ $ docker pull clojure@sha256:ef61a67099fa4df063b5f5a52252463672abae500acc3533237
 ### `clojure:temurin-8-tools-deps-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:41902208f1e669e5b4ab76947e2010976ba784ac2a55267da14f41ede915824f
+$ docker pull clojure@sha256:7c660f24a78c94858c6bf3652b9bf71cf0cfd5fc6615629f86b8b9e8a473b99d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.5 MB (151498569 bytes)**  
+-	Total Size: **151.5 MB (151498661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4dbcf83c16948ecf82c3cf2413e2cf63af45031dc5dbc4f7663fa1d856ad923c`
+-	Image ID: `sha256:6b5643ac79299d5c2f83437cf6c4b0e2ae971927c89e64ff34bae44803836a5c`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -130,45 +130,45 @@ CMD ["clj"]
 		Last Modified: Mon, 29 Sep 2025 23:34:17 GMT  
 		Size: 28.1 MB (28102145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e036f7bf5c1bb9805a7fee39fdad087178eaf6d2918624029c470fbd09dc6c1a`  
-		Last Modified: Tue, 30 Sep 2025 00:50:33 GMT  
-		Size: 53.8 MB (53835605 bytes)  
+	-	`sha256:5a8c231e3c0b7fd0d63c9176adacb96c2982dc2e7b87fb573a70c156d7edd5b9`  
+		Last Modified: Thu, 02 Oct 2025 02:40:18 GMT  
+		Size: 53.8 MB (53835607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54de88d0670382aacda1d17825be7997ded9f945967fd3775f1108e2c53d300c`  
-		Last Modified: Tue, 30 Sep 2025 00:50:34 GMT  
-		Size: 69.6 MB (69560176 bytes)  
+	-	`sha256:69dcef46578aa606b7d4f1c8f2aada1fdd641f598af3dc489c9702289a1170bb`  
+		Last Modified: Thu, 02 Oct 2025 02:40:18 GMT  
+		Size: 69.6 MB (69560263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:269aa839fb13cd5995c62c838ac3ee1933547a7ec1c85b16997f0947008d161a`  
-		Last Modified: Tue, 30 Sep 2025 00:50:27 GMT  
-		Size: 611.0 B  
+	-	`sha256:42c55e4c4a00e5b8a52beffc075b37317bcc96d3ced20b18abe857ed2ac41287`  
+		Last Modified: Thu, 02 Oct 2025 02:40:14 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:353c0b3e7c9e8cb4802b726edf48765dc9ad88052cff4be7fa9172ea9618d115
+$ docker pull clojure@sha256:06a4d161ce9e6ea1e58a65f6c62507c2407450826238d3c31de6caa47b64d56c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5255866 bytes)**  
+-	Total Size: **5.3 MB (5255864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b050e5bc8dfde5514b0f1455cc4fb5a762821a0eedff220a771e22b7e82baca7`
+-	Image ID: `sha256:a32d02e66f21f9d11ac37f9494223897135997bdb98657046b068f35f71898ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6acc1bf9785a5882aa49417292fb334de89b006c98add02ed624c0f8b2fee35c`  
-		Last Modified: Wed, 01 Oct 2025 21:46:44 GMT  
+	-	`sha256:839510eff6ce8f0325d3eb84d05573d81ac5e403e3c10b1b9b50759616a40003`  
+		Last Modified: Thu, 02 Oct 2025 06:48:26 GMT  
 		Size: 5.2 MB (5241457 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8cea85ec7bdecd35ac83a7f2860cd156c266852dc36bae24789f9c7138894d86`  
-		Last Modified: Wed, 01 Oct 2025 21:46:45 GMT  
-		Size: 14.4 KB (14409 bytes)  
+	-	`sha256:85fa11111bdcf3ee0934f979a366b192533c225fb0ee03e19a705da064258bde`  
+		Last Modified: Thu, 02 Oct 2025 06:48:27 GMT  
+		Size: 14.4 KB (14407 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-tools-deps-bookworm-slim` - linux; ppc64le

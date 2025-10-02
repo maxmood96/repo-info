@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-tools-deps-1.12.3.1577-bookworm`
 
 ```console
-$ docker pull clojure@sha256:c626a017db39867b374c617a243fb7ed030e607648f72d0cb292e8f3e666fdf9
+$ docker pull clojure@sha256:d2c34bd200f699f7ace4434be732ee620250c77f883e137c05545a96bd20fb2c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -95,13 +95,13 @@ $ docker pull clojure@sha256:2d0e241e973ec3697e5b3314ba560a4841fd3f9aabfe9b11c6c
 ### `clojure:temurin-8-tools-deps-1.12.3.1577-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:368ef66c1c3224532a6f2906743ff70d7153e2f6ea57ab126f244ca80b5b8146
+$ docker pull clojure@sha256:6c7ed5825926733a5669ae1083b3a849e32699cf1a8021a9ccd288a2b728c7e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **183.2 MB (183223584 bytes)**  
+-	Total Size: **183.2 MB (183224909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3604aa90c2925c7573fe3d0923507f17f74f3902b18d68097f42ee5ab9b258bb`
+-	Image ID: `sha256:40803d97ae64b4f3dc4a9946628068810a9b01004ae7652e442dc82c39b7f1d6`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -130,45 +130,45 @@ CMD ["clj"]
 		Last Modified: Mon, 29 Sep 2025 23:34:16 GMT  
 		Size: 48.4 MB (48358915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad2345afc33cd196ee66909d7b211046c5804c1f3ef7cc6436db67d7181bae62`  
-		Last Modified: Tue, 30 Sep 2025 00:50:33 GMT  
-		Size: 53.8 MB (53835604 bytes)  
+	-	`sha256:e4bf0c48d2840040709ae83e6ba342f0de5e6997b81e1279fb25127440b07d6c`  
+		Last Modified: Thu, 02 Oct 2025 02:40:23 GMT  
+		Size: 53.8 MB (53835630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45be55b4d264e3623be4388f5062bae87ff35aae405707637959626fd560230a`  
-		Last Modified: Tue, 30 Sep 2025 00:50:23 GMT  
-		Size: 81.0 MB (81028422 bytes)  
+	-	`sha256:559d8773f4680e524338534c57e221e399f9e17b4bcf4bea18464d24b4f4921c`  
+		Last Modified: Thu, 02 Oct 2025 02:40:20 GMT  
+		Size: 81.0 MB (81029719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9efb7d29e9b7fc9d04cabfee17e838bc6f08597efa1587f08606fad3ce5abb0c`  
-		Last Modified: Tue, 30 Sep 2025 00:50:16 GMT  
-		Size: 611.0 B  
+	-	`sha256:67ae97e4a1960113e142d81a5e7c2448c0a8e8e15b47b8878b688754c6cfe21a`  
+		Last Modified: Thu, 02 Oct 2025 02:40:14 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-tools-deps-1.12.3.1577-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:56c79c6ed8fb2910bbf47dc8ab7d5b8ed3bc86a934bcee670dc365dcc35cee1a
+$ docker pull clojure@sha256:45edd2d61763f620e8fde88d807b321cb713e30aa8f8d5c91ccabdd6347baef2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7517316 bytes)**  
+-	Total Size: **7.5 MB (7517315 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0f824502b0c46f6983b018d7f7cf8eb9b8c6394e3c16c4ca5cf2c2eae294d2c`
+-	Image ID: `sha256:ff08784ad6a6c61d194559723bf88a5da05cbdbbf1c239f20060b6157fa74559`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:35d87863e5c3379570aab64461471b6639266ff03843fc0d5e2ae2bc37d5e91e`  
-		Last Modified: Wed, 01 Oct 2025 21:46:36 GMT  
+	-	`sha256:8c6d5feb426bac933b775b76cd5fb732a89b80e3a1b3574289be42101659e58d`  
+		Last Modified: Thu, 02 Oct 2025 06:48:22 GMT  
 		Size: 7.5 MB (7502961 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7478b108801e2475ea58b1d648551bbe10dd27b52df65fd1a26b0a03a5fa60c8`  
-		Last Modified: Wed, 01 Oct 2025 21:46:37 GMT  
-		Size: 14.4 KB (14355 bytes)  
+	-	`sha256:734cb55111d5ea40447e1bcba0b13f79a950e8d2446be47df7f942681d77d8fd`  
+		Last Modified: Thu, 02 Oct 2025 06:48:23 GMT  
+		Size: 14.4 KB (14354 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-tools-deps-1.12.3.1577-bookworm` - linux; ppc64le
