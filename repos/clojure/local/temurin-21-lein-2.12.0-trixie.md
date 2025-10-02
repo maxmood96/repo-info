@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6f8575ae687d468e4320a1b7950d5ed00748b34c03c9bfafd29c8b4a0e82081`
-- Created: `2025-09-12T20:29:18Z`
-- Virtual Size: ~ 457.87 Mb  
+- Image ID: `sha256:05d815f285abf5aa23118004d36ff2ff1bac227fd2ea5b17103360c37e23599d`
+- Created: `2025-09-26T15:53:20Z`
+- Virtual Size: ~ 457.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -1631,12 +1631,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.46.1-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.46.1-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=257.8-1~deb13u1`
+### `dpkg` source package: `systemd=257.8-1~deb13u2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=257.8-1~deb13u1`
-- `libudev1:amd64=257.8-1~deb13u1`
+- `libsystemd0:amd64=257.8-1~deb13u2`
+- `libudev1:amd64=257.8-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1652,17 +1652,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=257.8-1~deb13u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.dsc' systemd_257.8-1~deb13u1.dsc 8617 SHA256:33cae5644d96e7b107dbc7aba0267a1f2d276c515b973828e5be2bc5f593367e
+$ apt-get source -qq --print-uris systemd=257.8-1~deb13u2
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.dsc' systemd_257.8-1~deb13u2.dsc 8271 SHA256:4e65979b17348341b788be9f7c24a30bb3ec4820a7e0a124da5621c3fdfe5684
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8.orig.tar.gz' systemd_257.8.orig.tar.gz 16385060 SHA256:f280278161446fe3838bedb970c7b3998043ad107f7627735a81483218c6f6f9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.debian.tar.xz' systemd_257.8-1~deb13u1.debian.tar.xz 182904 SHA256:f5581e12e5cbf0fd8c250e473f289a7e66a6c4f8e4ae0762e467fee9faea5183
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.debian.tar.xz' systemd_257.8-1~deb13u2.debian.tar.xz 183536 SHA256:d937a18c390638a2b344d3b4f331d3e73376f40037f5273036c96aeed5b2ea16
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.8-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.8-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
