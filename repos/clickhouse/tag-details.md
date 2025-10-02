@@ -34,7 +34,7 @@
 ## `clickhouse:25.3`
 
 ```console
-$ docker pull clickhouse@sha256:5b7a561f01ffef2778b62a98ad3240597c9b1221054b4d823e887a357fca199d
+$ docker pull clickhouse@sha256:5775d1b0250370902ea04bf37d37583d8db744761aa81223ce648196f3bbc369
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -171,131 +171,131 @@ $ docker pull clickhouse@sha256:50a83551816610e25f1c81d2c2b78c69e6ab1bffca865146
 ### `clickhouse:25.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:d892e915e75c821583672c3d6b896fd7b2f717f458baf44bb362e49c65f1309b
+$ docker pull clickhouse@sha256:e84618e2358bd900c2570a689c36b2616724390957829645328363d01f73b68b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.9 MB (192914616 bytes)**  
+-	Total Size: **192.9 MB (192935452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e58685f5bdad3ba0bc7c8de0469d6b6350387638f0ad3518c7884e93f149081`
+-	Image ID: `sha256:a49c271763f7ebf803294a10c094a4c86f81880afc11f606e54012e89e2c71ee`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.3.6.56
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c53bc80260a87d75c26106a8275097885b20843146fe1e6fd837e6af8a5771e9`  
-		Last Modified: Tue, 02 Sep 2025 01:21:51 GMT  
-		Size: 7.1 MB (7127944 bytes)  
+	-	`sha256:121c7ad3ac83b048884c02adca98157abf994fbb1d74705e59750f5995867c55`  
+		Last Modified: Thu, 02 Oct 2025 03:49:28 GMT  
+		Size: 7.1 MB (7127188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90841967e872576c42e5dbade007e13c3f6bbb85568b8f46a497eb3f8a79ac7c`  
-		Last Modified: Tue, 02 Sep 2025 03:49:34 GMT  
-		Size: 157.6 MB (157554955 bytes)  
+	-	`sha256:eb81e8ce1c0e3bf764f862fa23dffef8b1771e96ddf366e04d8ed686e171d3ca`  
+		Last Modified: Thu, 02 Oct 2025 03:49:38 GMT  
+		Size: 157.6 MB (157554913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b9912743e22819a39e458cd6a730c7b339aef5ae6dd062c9581c0a0864f9f8`  
-		Last Modified: Tue, 02 Sep 2025 00:18:09 GMT  
-		Size: 185.0 B  
+	-	`sha256:1e7a2398c1a8a3864d86081e87c48b95784089b1a3333ce835fbb2732f05256c`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1213c0adac33fc6f8efee9d181b43d6051f12d9d0d5244fe6d539a6943c57d41`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:96d36473197c8e3f1fb7591d0e070152bb411e8a08823f3b5741de1d41b3d556`  
+		Last Modified: Thu, 02 Oct 2025 01:54:45 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:580eb6bfefd035d79b25f94ea56f4f3b900f25188fe3646390a360b5e80e0339`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:5e5b841c9bd049a592566d3d82f67bc63c24fcb26517737c19c47439096587f8`  
+		Last Modified: Thu, 02 Oct 2025 01:54:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6f506816a234fa7168b5864702486c71eb36cb721f2c4eece208a8b057913e`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:99a8344b3fa142ebf1cec3a97c905b3ce9c76af46368c88cbb4011287a0cdfd7`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
 		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e6ed03564cfdcb75cbaa37f1f375a2fed1b6773e070d7f2abd20a3bc3f35784`  
-		Last Modified: Tue, 02 Sep 2025 00:18:13 GMT  
-		Size: 3.8 KB (3835 bytes)  
+	-	`sha256:b2ed403f5f13fcdb3851b9a45a3ca11d06ede3aa1ae3c9343c2c6947c7286069`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 3.8 KB (3832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.3` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:7cd2f404c27c665053aed069feb733b79e882fde09a25bff13117d287f586b28
+$ docker pull clickhouse@sha256:b408decd5cd308f231858854ce60a464f8dd9bcd988ab560b792cf2a54127cc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 KB (26087 bytes)**  
+-	Total Size: **25.5 KB (25451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69efeac22341fe15c4f4eae6fd9d0e2bc4eac00d04ea26ac6f0e94f405f18e6c`
+-	Image ID: `sha256:3dc6173b2bbb09f0d3858408badb7b9ce14ac911992f16645bb321c7d3427c5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88f4c4fd85cb13450eae1a2293511e3b55f142d5e0c8c060e85251e12547649b`  
-		Last Modified: Tue, 02 Sep 2025 03:49:18 GMT  
-		Size: 26.1 KB (26087 bytes)  
+	-	`sha256:161974e701e67229efe4ca238bfa8c9e01cd184158efaf956c6ddc1901452e5a`  
+		Last Modified: Thu, 02 Oct 2025 03:49:20 GMT  
+		Size: 25.5 KB (25451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.3-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:5b7a561f01ffef2778b62a98ad3240597c9b1221054b4d823e887a357fca199d
+$ docker pull clickhouse@sha256:5775d1b0250370902ea04bf37d37583d8db744761aa81223ce648196f3bbc369
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -432,131 +432,131 @@ $ docker pull clickhouse@sha256:50a83551816610e25f1c81d2c2b78c69e6ab1bffca865146
 ### `clickhouse:25.3-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:d892e915e75c821583672c3d6b896fd7b2f717f458baf44bb362e49c65f1309b
+$ docker pull clickhouse@sha256:e84618e2358bd900c2570a689c36b2616724390957829645328363d01f73b68b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.9 MB (192914616 bytes)**  
+-	Total Size: **192.9 MB (192935452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e58685f5bdad3ba0bc7c8de0469d6b6350387638f0ad3518c7884e93f149081`
+-	Image ID: `sha256:a49c271763f7ebf803294a10c094a4c86f81880afc11f606e54012e89e2c71ee`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.3.6.56
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c53bc80260a87d75c26106a8275097885b20843146fe1e6fd837e6af8a5771e9`  
-		Last Modified: Tue, 02 Sep 2025 01:21:51 GMT  
-		Size: 7.1 MB (7127944 bytes)  
+	-	`sha256:121c7ad3ac83b048884c02adca98157abf994fbb1d74705e59750f5995867c55`  
+		Last Modified: Thu, 02 Oct 2025 03:49:28 GMT  
+		Size: 7.1 MB (7127188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90841967e872576c42e5dbade007e13c3f6bbb85568b8f46a497eb3f8a79ac7c`  
-		Last Modified: Tue, 02 Sep 2025 03:49:34 GMT  
-		Size: 157.6 MB (157554955 bytes)  
+	-	`sha256:eb81e8ce1c0e3bf764f862fa23dffef8b1771e96ddf366e04d8ed686e171d3ca`  
+		Last Modified: Thu, 02 Oct 2025 03:49:38 GMT  
+		Size: 157.6 MB (157554913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b9912743e22819a39e458cd6a730c7b339aef5ae6dd062c9581c0a0864f9f8`  
-		Last Modified: Tue, 02 Sep 2025 00:18:09 GMT  
-		Size: 185.0 B  
+	-	`sha256:1e7a2398c1a8a3864d86081e87c48b95784089b1a3333ce835fbb2732f05256c`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1213c0adac33fc6f8efee9d181b43d6051f12d9d0d5244fe6d539a6943c57d41`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:96d36473197c8e3f1fb7591d0e070152bb411e8a08823f3b5741de1d41b3d556`  
+		Last Modified: Thu, 02 Oct 2025 01:54:45 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:580eb6bfefd035d79b25f94ea56f4f3b900f25188fe3646390a360b5e80e0339`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:5e5b841c9bd049a592566d3d82f67bc63c24fcb26517737c19c47439096587f8`  
+		Last Modified: Thu, 02 Oct 2025 01:54:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6f506816a234fa7168b5864702486c71eb36cb721f2c4eece208a8b057913e`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:99a8344b3fa142ebf1cec3a97c905b3ce9c76af46368c88cbb4011287a0cdfd7`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
 		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e6ed03564cfdcb75cbaa37f1f375a2fed1b6773e070d7f2abd20a3bc3f35784`  
-		Last Modified: Tue, 02 Sep 2025 00:18:13 GMT  
-		Size: 3.8 KB (3835 bytes)  
+	-	`sha256:b2ed403f5f13fcdb3851b9a45a3ca11d06ede3aa1ae3c9343c2c6947c7286069`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 3.8 KB (3832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.3-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:7cd2f404c27c665053aed069feb733b79e882fde09a25bff13117d287f586b28
+$ docker pull clickhouse@sha256:b408decd5cd308f231858854ce60a464f8dd9bcd988ab560b792cf2a54127cc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 KB (26087 bytes)**  
+-	Total Size: **25.5 KB (25451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69efeac22341fe15c4f4eae6fd9d0e2bc4eac00d04ea26ac6f0e94f405f18e6c`
+-	Image ID: `sha256:3dc6173b2bbb09f0d3858408badb7b9ce14ac911992f16645bb321c7d3427c5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88f4c4fd85cb13450eae1a2293511e3b55f142d5e0c8c060e85251e12547649b`  
-		Last Modified: Tue, 02 Sep 2025 03:49:18 GMT  
-		Size: 26.1 KB (26087 bytes)  
+	-	`sha256:161974e701e67229efe4ca238bfa8c9e01cd184158efaf956c6ddc1901452e5a`  
+		Last Modified: Thu, 02 Oct 2025 03:49:20 GMT  
+		Size: 25.5 KB (25451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.3.6`
 
 ```console
-$ docker pull clickhouse@sha256:5b7a561f01ffef2778b62a98ad3240597c9b1221054b4d823e887a357fca199d
+$ docker pull clickhouse@sha256:5775d1b0250370902ea04bf37d37583d8db744761aa81223ce648196f3bbc369
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -693,131 +693,131 @@ $ docker pull clickhouse@sha256:50a83551816610e25f1c81d2c2b78c69e6ab1bffca865146
 ### `clickhouse:25.3.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:d892e915e75c821583672c3d6b896fd7b2f717f458baf44bb362e49c65f1309b
+$ docker pull clickhouse@sha256:e84618e2358bd900c2570a689c36b2616724390957829645328363d01f73b68b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.9 MB (192914616 bytes)**  
+-	Total Size: **192.9 MB (192935452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e58685f5bdad3ba0bc7c8de0469d6b6350387638f0ad3518c7884e93f149081`
+-	Image ID: `sha256:a49c271763f7ebf803294a10c094a4c86f81880afc11f606e54012e89e2c71ee`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.3.6.56
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c53bc80260a87d75c26106a8275097885b20843146fe1e6fd837e6af8a5771e9`  
-		Last Modified: Tue, 02 Sep 2025 01:21:51 GMT  
-		Size: 7.1 MB (7127944 bytes)  
+	-	`sha256:121c7ad3ac83b048884c02adca98157abf994fbb1d74705e59750f5995867c55`  
+		Last Modified: Thu, 02 Oct 2025 03:49:28 GMT  
+		Size: 7.1 MB (7127188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90841967e872576c42e5dbade007e13c3f6bbb85568b8f46a497eb3f8a79ac7c`  
-		Last Modified: Tue, 02 Sep 2025 03:49:34 GMT  
-		Size: 157.6 MB (157554955 bytes)  
+	-	`sha256:eb81e8ce1c0e3bf764f862fa23dffef8b1771e96ddf366e04d8ed686e171d3ca`  
+		Last Modified: Thu, 02 Oct 2025 03:49:38 GMT  
+		Size: 157.6 MB (157554913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b9912743e22819a39e458cd6a730c7b339aef5ae6dd062c9581c0a0864f9f8`  
-		Last Modified: Tue, 02 Sep 2025 00:18:09 GMT  
-		Size: 185.0 B  
+	-	`sha256:1e7a2398c1a8a3864d86081e87c48b95784089b1a3333ce835fbb2732f05256c`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1213c0adac33fc6f8efee9d181b43d6051f12d9d0d5244fe6d539a6943c57d41`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:96d36473197c8e3f1fb7591d0e070152bb411e8a08823f3b5741de1d41b3d556`  
+		Last Modified: Thu, 02 Oct 2025 01:54:45 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:580eb6bfefd035d79b25f94ea56f4f3b900f25188fe3646390a360b5e80e0339`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:5e5b841c9bd049a592566d3d82f67bc63c24fcb26517737c19c47439096587f8`  
+		Last Modified: Thu, 02 Oct 2025 01:54:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6f506816a234fa7168b5864702486c71eb36cb721f2c4eece208a8b057913e`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:99a8344b3fa142ebf1cec3a97c905b3ce9c76af46368c88cbb4011287a0cdfd7`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
 		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e6ed03564cfdcb75cbaa37f1f375a2fed1b6773e070d7f2abd20a3bc3f35784`  
-		Last Modified: Tue, 02 Sep 2025 00:18:13 GMT  
-		Size: 3.8 KB (3835 bytes)  
+	-	`sha256:b2ed403f5f13fcdb3851b9a45a3ca11d06ede3aa1ae3c9343c2c6947c7286069`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 3.8 KB (3832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.3.6` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:7cd2f404c27c665053aed069feb733b79e882fde09a25bff13117d287f586b28
+$ docker pull clickhouse@sha256:b408decd5cd308f231858854ce60a464f8dd9bcd988ab560b792cf2a54127cc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 KB (26087 bytes)**  
+-	Total Size: **25.5 KB (25451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69efeac22341fe15c4f4eae6fd9d0e2bc4eac00d04ea26ac6f0e94f405f18e6c`
+-	Image ID: `sha256:3dc6173b2bbb09f0d3858408badb7b9ce14ac911992f16645bb321c7d3427c5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88f4c4fd85cb13450eae1a2293511e3b55f142d5e0c8c060e85251e12547649b`  
-		Last Modified: Tue, 02 Sep 2025 03:49:18 GMT  
-		Size: 26.1 KB (26087 bytes)  
+	-	`sha256:161974e701e67229efe4ca238bfa8c9e01cd184158efaf956c6ddc1901452e5a`  
+		Last Modified: Thu, 02 Oct 2025 03:49:20 GMT  
+		Size: 25.5 KB (25451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.3.6-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:5b7a561f01ffef2778b62a98ad3240597c9b1221054b4d823e887a357fca199d
+$ docker pull clickhouse@sha256:5775d1b0250370902ea04bf37d37583d8db744761aa81223ce648196f3bbc369
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -954,131 +954,131 @@ $ docker pull clickhouse@sha256:50a83551816610e25f1c81d2c2b78c69e6ab1bffca865146
 ### `clickhouse:25.3.6-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:d892e915e75c821583672c3d6b896fd7b2f717f458baf44bb362e49c65f1309b
+$ docker pull clickhouse@sha256:e84618e2358bd900c2570a689c36b2616724390957829645328363d01f73b68b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.9 MB (192914616 bytes)**  
+-	Total Size: **192.9 MB (192935452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e58685f5bdad3ba0bc7c8de0469d6b6350387638f0ad3518c7884e93f149081`
+-	Image ID: `sha256:a49c271763f7ebf803294a10c094a4c86f81880afc11f606e54012e89e2c71ee`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.3.6.56
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c53bc80260a87d75c26106a8275097885b20843146fe1e6fd837e6af8a5771e9`  
-		Last Modified: Tue, 02 Sep 2025 01:21:51 GMT  
-		Size: 7.1 MB (7127944 bytes)  
+	-	`sha256:121c7ad3ac83b048884c02adca98157abf994fbb1d74705e59750f5995867c55`  
+		Last Modified: Thu, 02 Oct 2025 03:49:28 GMT  
+		Size: 7.1 MB (7127188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90841967e872576c42e5dbade007e13c3f6bbb85568b8f46a497eb3f8a79ac7c`  
-		Last Modified: Tue, 02 Sep 2025 03:49:34 GMT  
-		Size: 157.6 MB (157554955 bytes)  
+	-	`sha256:eb81e8ce1c0e3bf764f862fa23dffef8b1771e96ddf366e04d8ed686e171d3ca`  
+		Last Modified: Thu, 02 Oct 2025 03:49:38 GMT  
+		Size: 157.6 MB (157554913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b9912743e22819a39e458cd6a730c7b339aef5ae6dd062c9581c0a0864f9f8`  
-		Last Modified: Tue, 02 Sep 2025 00:18:09 GMT  
-		Size: 185.0 B  
+	-	`sha256:1e7a2398c1a8a3864d86081e87c48b95784089b1a3333ce835fbb2732f05256c`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1213c0adac33fc6f8efee9d181b43d6051f12d9d0d5244fe6d539a6943c57d41`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:96d36473197c8e3f1fb7591d0e070152bb411e8a08823f3b5741de1d41b3d556`  
+		Last Modified: Thu, 02 Oct 2025 01:54:45 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:580eb6bfefd035d79b25f94ea56f4f3b900f25188fe3646390a360b5e80e0339`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:5e5b841c9bd049a592566d3d82f67bc63c24fcb26517737c19c47439096587f8`  
+		Last Modified: Thu, 02 Oct 2025 01:54:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6f506816a234fa7168b5864702486c71eb36cb721f2c4eece208a8b057913e`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:99a8344b3fa142ebf1cec3a97c905b3ce9c76af46368c88cbb4011287a0cdfd7`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
 		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e6ed03564cfdcb75cbaa37f1f375a2fed1b6773e070d7f2abd20a3bc3f35784`  
-		Last Modified: Tue, 02 Sep 2025 00:18:13 GMT  
-		Size: 3.8 KB (3835 bytes)  
+	-	`sha256:b2ed403f5f13fcdb3851b9a45a3ca11d06ede3aa1ae3c9343c2c6947c7286069`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 3.8 KB (3832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.3.6-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:7cd2f404c27c665053aed069feb733b79e882fde09a25bff13117d287f586b28
+$ docker pull clickhouse@sha256:b408decd5cd308f231858854ce60a464f8dd9bcd988ab560b792cf2a54127cc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 KB (26087 bytes)**  
+-	Total Size: **25.5 KB (25451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69efeac22341fe15c4f4eae6fd9d0e2bc4eac00d04ea26ac6f0e94f405f18e6c`
+-	Image ID: `sha256:3dc6173b2bbb09f0d3858408badb7b9ce14ac911992f16645bb321c7d3427c5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88f4c4fd85cb13450eae1a2293511e3b55f142d5e0c8c060e85251e12547649b`  
-		Last Modified: Tue, 02 Sep 2025 03:49:18 GMT  
-		Size: 26.1 KB (26087 bytes)  
+	-	`sha256:161974e701e67229efe4ca238bfa8c9e01cd184158efaf956c6ddc1901452e5a`  
+		Last Modified: Thu, 02 Oct 2025 03:49:20 GMT  
+		Size: 25.5 KB (25451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.3.6.56`
 
 ```console
-$ docker pull clickhouse@sha256:5b7a561f01ffef2778b62a98ad3240597c9b1221054b4d823e887a357fca199d
+$ docker pull clickhouse@sha256:5775d1b0250370902ea04bf37d37583d8db744761aa81223ce648196f3bbc369
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1215,131 +1215,131 @@ $ docker pull clickhouse@sha256:50a83551816610e25f1c81d2c2b78c69e6ab1bffca865146
 ### `clickhouse:25.3.6.56` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:d892e915e75c821583672c3d6b896fd7b2f717f458baf44bb362e49c65f1309b
+$ docker pull clickhouse@sha256:e84618e2358bd900c2570a689c36b2616724390957829645328363d01f73b68b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.9 MB (192914616 bytes)**  
+-	Total Size: **192.9 MB (192935452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e58685f5bdad3ba0bc7c8de0469d6b6350387638f0ad3518c7884e93f149081`
+-	Image ID: `sha256:a49c271763f7ebf803294a10c094a4c86f81880afc11f606e54012e89e2c71ee`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.3.6.56
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c53bc80260a87d75c26106a8275097885b20843146fe1e6fd837e6af8a5771e9`  
-		Last Modified: Tue, 02 Sep 2025 01:21:51 GMT  
-		Size: 7.1 MB (7127944 bytes)  
+	-	`sha256:121c7ad3ac83b048884c02adca98157abf994fbb1d74705e59750f5995867c55`  
+		Last Modified: Thu, 02 Oct 2025 03:49:28 GMT  
+		Size: 7.1 MB (7127188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90841967e872576c42e5dbade007e13c3f6bbb85568b8f46a497eb3f8a79ac7c`  
-		Last Modified: Tue, 02 Sep 2025 03:49:34 GMT  
-		Size: 157.6 MB (157554955 bytes)  
+	-	`sha256:eb81e8ce1c0e3bf764f862fa23dffef8b1771e96ddf366e04d8ed686e171d3ca`  
+		Last Modified: Thu, 02 Oct 2025 03:49:38 GMT  
+		Size: 157.6 MB (157554913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b9912743e22819a39e458cd6a730c7b339aef5ae6dd062c9581c0a0864f9f8`  
-		Last Modified: Tue, 02 Sep 2025 00:18:09 GMT  
-		Size: 185.0 B  
+	-	`sha256:1e7a2398c1a8a3864d86081e87c48b95784089b1a3333ce835fbb2732f05256c`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1213c0adac33fc6f8efee9d181b43d6051f12d9d0d5244fe6d539a6943c57d41`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:96d36473197c8e3f1fb7591d0e070152bb411e8a08823f3b5741de1d41b3d556`  
+		Last Modified: Thu, 02 Oct 2025 01:54:45 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:580eb6bfefd035d79b25f94ea56f4f3b900f25188fe3646390a360b5e80e0339`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:5e5b841c9bd049a592566d3d82f67bc63c24fcb26517737c19c47439096587f8`  
+		Last Modified: Thu, 02 Oct 2025 01:54:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6f506816a234fa7168b5864702486c71eb36cb721f2c4eece208a8b057913e`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:99a8344b3fa142ebf1cec3a97c905b3ce9c76af46368c88cbb4011287a0cdfd7`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
 		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e6ed03564cfdcb75cbaa37f1f375a2fed1b6773e070d7f2abd20a3bc3f35784`  
-		Last Modified: Tue, 02 Sep 2025 00:18:13 GMT  
-		Size: 3.8 KB (3835 bytes)  
+	-	`sha256:b2ed403f5f13fcdb3851b9a45a3ca11d06ede3aa1ae3c9343c2c6947c7286069`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 3.8 KB (3832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.3.6.56` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:7cd2f404c27c665053aed069feb733b79e882fde09a25bff13117d287f586b28
+$ docker pull clickhouse@sha256:b408decd5cd308f231858854ce60a464f8dd9bcd988ab560b792cf2a54127cc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 KB (26087 bytes)**  
+-	Total Size: **25.5 KB (25451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69efeac22341fe15c4f4eae6fd9d0e2bc4eac00d04ea26ac6f0e94f405f18e6c`
+-	Image ID: `sha256:3dc6173b2bbb09f0d3858408badb7b9ce14ac911992f16645bb321c7d3427c5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88f4c4fd85cb13450eae1a2293511e3b55f142d5e0c8c060e85251e12547649b`  
-		Last Modified: Tue, 02 Sep 2025 03:49:18 GMT  
-		Size: 26.1 KB (26087 bytes)  
+	-	`sha256:161974e701e67229efe4ca238bfa8c9e01cd184158efaf956c6ddc1901452e5a`  
+		Last Modified: Thu, 02 Oct 2025 03:49:20 GMT  
+		Size: 25.5 KB (25451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.3.6.56-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:5b7a561f01ffef2778b62a98ad3240597c9b1221054b4d823e887a357fca199d
+$ docker pull clickhouse@sha256:5775d1b0250370902ea04bf37d37583d8db744761aa81223ce648196f3bbc369
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1476,131 +1476,131 @@ $ docker pull clickhouse@sha256:50a83551816610e25f1c81d2c2b78c69e6ab1bffca865146
 ### `clickhouse:25.3.6.56-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:d892e915e75c821583672c3d6b896fd7b2f717f458baf44bb362e49c65f1309b
+$ docker pull clickhouse@sha256:e84618e2358bd900c2570a689c36b2616724390957829645328363d01f73b68b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.9 MB (192914616 bytes)**  
+-	Total Size: **192.9 MB (192935452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e58685f5bdad3ba0bc7c8de0469d6b6350387638f0ad3518c7884e93f149081`
+-	Image ID: `sha256:a49c271763f7ebf803294a10c094a4c86f81880afc11f606e54012e89e2c71ee`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.3.6.56
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.3.6.56 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 28 Aug 2025 16:05:59 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c53bc80260a87d75c26106a8275097885b20843146fe1e6fd837e6af8a5771e9`  
-		Last Modified: Tue, 02 Sep 2025 01:21:51 GMT  
-		Size: 7.1 MB (7127944 bytes)  
+	-	`sha256:121c7ad3ac83b048884c02adca98157abf994fbb1d74705e59750f5995867c55`  
+		Last Modified: Thu, 02 Oct 2025 03:49:28 GMT  
+		Size: 7.1 MB (7127188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90841967e872576c42e5dbade007e13c3f6bbb85568b8f46a497eb3f8a79ac7c`  
-		Last Modified: Tue, 02 Sep 2025 03:49:34 GMT  
-		Size: 157.6 MB (157554955 bytes)  
+	-	`sha256:eb81e8ce1c0e3bf764f862fa23dffef8b1771e96ddf366e04d8ed686e171d3ca`  
+		Last Modified: Thu, 02 Oct 2025 03:49:38 GMT  
+		Size: 157.6 MB (157554913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47b9912743e22819a39e458cd6a730c7b339aef5ae6dd062c9581c0a0864f9f8`  
-		Last Modified: Tue, 02 Sep 2025 00:18:09 GMT  
-		Size: 185.0 B  
+	-	`sha256:1e7a2398c1a8a3864d86081e87c48b95784089b1a3333ce835fbb2732f05256c`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1213c0adac33fc6f8efee9d181b43d6051f12d9d0d5244fe6d539a6943c57d41`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:96d36473197c8e3f1fb7591d0e070152bb411e8a08823f3b5741de1d41b3d556`  
+		Last Modified: Thu, 02 Oct 2025 01:54:45 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:580eb6bfefd035d79b25f94ea56f4f3b900f25188fe3646390a360b5e80e0339`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:5e5b841c9bd049a592566d3d82f67bc63c24fcb26517737c19c47439096587f8`  
+		Last Modified: Thu, 02 Oct 2025 01:54:43 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6f506816a234fa7168b5864702486c71eb36cb721f2c4eece208a8b057913e`  
-		Last Modified: Tue, 02 Sep 2025 00:18:12 GMT  
+	-	`sha256:99a8344b3fa142ebf1cec3a97c905b3ce9c76af46368c88cbb4011287a0cdfd7`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
 		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e6ed03564cfdcb75cbaa37f1f375a2fed1b6773e070d7f2abd20a3bc3f35784`  
-		Last Modified: Tue, 02 Sep 2025 00:18:13 GMT  
-		Size: 3.8 KB (3835 bytes)  
+	-	`sha256:b2ed403f5f13fcdb3851b9a45a3ca11d06ede3aa1ae3c9343c2c6947c7286069`  
+		Last Modified: Thu, 02 Oct 2025 01:54:44 GMT  
+		Size: 3.8 KB (3832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.3.6.56-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:7cd2f404c27c665053aed069feb733b79e882fde09a25bff13117d287f586b28
+$ docker pull clickhouse@sha256:b408decd5cd308f231858854ce60a464f8dd9bcd988ab560b792cf2a54127cc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 KB (26087 bytes)**  
+-	Total Size: **25.5 KB (25451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69efeac22341fe15c4f4eae6fd9d0e2bc4eac00d04ea26ac6f0e94f405f18e6c`
+-	Image ID: `sha256:3dc6173b2bbb09f0d3858408badb7b9ce14ac911992f16645bb321c7d3427c5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88f4c4fd85cb13450eae1a2293511e3b55f142d5e0c8c060e85251e12547649b`  
-		Last Modified: Tue, 02 Sep 2025 03:49:18 GMT  
-		Size: 26.1 KB (26087 bytes)  
+	-	`sha256:161974e701e67229efe4ca238bfa8c9e01cd184158efaf956c6ddc1901452e5a`  
+		Last Modified: Thu, 02 Oct 2025 03:49:20 GMT  
+		Size: 25.5 KB (25451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.6`
 
 ```console
-$ docker pull clickhouse@sha256:60eeec959f0200d08f889381049340a676c1adb3f04e0a9d2078c975bbfdba6b
+$ docker pull clickhouse@sha256:cfb498dcf58a9c02f06423348315ac373b56c9f03a7871478f97469f3b687bfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1737,131 +1737,131 @@ $ docker pull clickhouse@sha256:269cb78b9eee5a609ab20b2c5977bd75a17443f7c5d7b054
 ### `clickhouse:25.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:a64881b9ebed6e6817340fbe4bd7b10e41b5d2b126198607bf48565da31ef74f
+$ docker pull clickhouse@sha256:f7c8af0e7a03bf58d6f667409a1f9cf2b3f31f964438676c6963683674753b4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198248017 bytes)**  
+-	Total Size: **198.3 MB (198268873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7b01f720a485edead0f837a5326d1d523025d2c2f5593dc1b07700cfb1376cb`
+-	Image ID: `sha256:43d89b1a4171e1b5113f1f5d297ff4c2ae97b0ec67fb6445ef19ecf50bbfd045`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.6.12.10
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d37946de2e062811d095b0851034dd7289ca2d346a4320b1f07939da4a691c0`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 7.1 MB (7127987 bytes)  
+	-	`sha256:367ec5f43992c60b09c17ee33e7e12761f084cc06e77a3da47fab947b920b042`  
+		Last Modified: Thu, 02 Oct 2025 03:49:43 GMT  
+		Size: 7.1 MB (7127243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55694d503755d703110a934ed8514d5ea03c4d08f9dc863d0dff9ee5994c7cfe`  
-		Last Modified: Thu, 18 Sep 2025 19:10:32 GMT  
-		Size: 162.9 MB (162888535 bytes)  
+	-	`sha256:a91285ba2899cb4123c76379a914a7e0d5838a0f03a0c3c23f45cf50833a6544`  
+		Last Modified: Thu, 02 Oct 2025 03:49:54 GMT  
+		Size: 162.9 MB (162888501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01d8861c84fae76283c0f8531174991d71f5eaf1338217e9ef74c0ba6dea2324`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 186.0 B  
+	-	`sha256:6cdc606dba5ef56a78a5583d44ebb1494499931ad32268a4b7a0d24ad05615c3`  
+		Last Modified: Thu, 02 Oct 2025 01:17:29 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed161be40290000908e4604fea1c2e58b8e33925362d9682b15c6349c8c3ed98`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:adcfc1f2e769ba5ae693feffd9d7de80c7f8a396a6f4249700c051e96a485992`  
+		Last Modified: Thu, 02 Oct 2025 01:17:32 GMT  
+		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8024951b043b8e61654ffd32eddef2fee22cb34097c8917ac52b9520c5c8f700`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
+	-	`sha256:e391b1713fe929ff58f3bddca94996c949ecdd2d171643328bf917d80edbbf05`  
+		Last Modified: Thu, 02 Oct 2025 01:17:36 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed761be0922bae1061927a6a5c2e71c10f04a90fb7f31d9ba320f7d09d7e09d8`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 363.0 B  
+	-	`sha256:03b99642908f32326654663107bd4697c88c41390d94ddbc37174cbd32c8668e`  
+		Last Modified: Thu, 02 Oct 2025 01:17:39 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:276533c3360217c4db197789d1f9ab39ce7f06bbf6fee13d95fa9e59302a132c`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 3.6 KB (3610 bytes)  
+	-	`sha256:385bb8fe0bd0f4d44e3a5e5874ac102c792d6da98a5737380ad2a2a7de4184e8`  
+		Last Modified: Thu, 02 Oct 2025 01:17:42 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.6` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:d1c722b5a1d3fa58e22d40921adaa088a66eca679baa4e841624a912d8a41ea4
+$ docker pull clickhouse@sha256:86515ffb351f3b1c29e92542e47984b7c936448cec4302043b59a8812c44ff70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25465 bytes)**  
+-	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f2091310b49816e97f1aa793b15b39e0594b517e9dc8c48bbaa3b36e5f0880`
+-	Image ID: `sha256:1acc16935a07a80fdf772e8998e59721c23a25be776c5f3ea8384baa99b1d1c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:886593947163388ddaa74c1285f7810ac544e089905e2759397f3a090af99360`  
-		Last Modified: Thu, 18 Sep 2025 21:49:26 GMT  
-		Size: 25.5 KB (25465 bytes)  
+	-	`sha256:5a98e04df1c902453ae7a938b4044e9b9c586d3f465c73328b8bf8bf7034e3aa`  
+		Last Modified: Thu, 02 Oct 2025 03:49:35 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.6-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:60eeec959f0200d08f889381049340a676c1adb3f04e0a9d2078c975bbfdba6b
+$ docker pull clickhouse@sha256:cfb498dcf58a9c02f06423348315ac373b56c9f03a7871478f97469f3b687bfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1998,131 +1998,131 @@ $ docker pull clickhouse@sha256:269cb78b9eee5a609ab20b2c5977bd75a17443f7c5d7b054
 ### `clickhouse:25.6-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:a64881b9ebed6e6817340fbe4bd7b10e41b5d2b126198607bf48565da31ef74f
+$ docker pull clickhouse@sha256:f7c8af0e7a03bf58d6f667409a1f9cf2b3f31f964438676c6963683674753b4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198248017 bytes)**  
+-	Total Size: **198.3 MB (198268873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7b01f720a485edead0f837a5326d1d523025d2c2f5593dc1b07700cfb1376cb`
+-	Image ID: `sha256:43d89b1a4171e1b5113f1f5d297ff4c2ae97b0ec67fb6445ef19ecf50bbfd045`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.6.12.10
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d37946de2e062811d095b0851034dd7289ca2d346a4320b1f07939da4a691c0`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 7.1 MB (7127987 bytes)  
+	-	`sha256:367ec5f43992c60b09c17ee33e7e12761f084cc06e77a3da47fab947b920b042`  
+		Last Modified: Thu, 02 Oct 2025 03:49:43 GMT  
+		Size: 7.1 MB (7127243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55694d503755d703110a934ed8514d5ea03c4d08f9dc863d0dff9ee5994c7cfe`  
-		Last Modified: Thu, 18 Sep 2025 19:10:32 GMT  
-		Size: 162.9 MB (162888535 bytes)  
+	-	`sha256:a91285ba2899cb4123c76379a914a7e0d5838a0f03a0c3c23f45cf50833a6544`  
+		Last Modified: Thu, 02 Oct 2025 03:49:54 GMT  
+		Size: 162.9 MB (162888501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01d8861c84fae76283c0f8531174991d71f5eaf1338217e9ef74c0ba6dea2324`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 186.0 B  
+	-	`sha256:6cdc606dba5ef56a78a5583d44ebb1494499931ad32268a4b7a0d24ad05615c3`  
+		Last Modified: Thu, 02 Oct 2025 01:17:29 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed161be40290000908e4604fea1c2e58b8e33925362d9682b15c6349c8c3ed98`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:adcfc1f2e769ba5ae693feffd9d7de80c7f8a396a6f4249700c051e96a485992`  
+		Last Modified: Thu, 02 Oct 2025 01:17:32 GMT  
+		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8024951b043b8e61654ffd32eddef2fee22cb34097c8917ac52b9520c5c8f700`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
+	-	`sha256:e391b1713fe929ff58f3bddca94996c949ecdd2d171643328bf917d80edbbf05`  
+		Last Modified: Thu, 02 Oct 2025 01:17:36 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed761be0922bae1061927a6a5c2e71c10f04a90fb7f31d9ba320f7d09d7e09d8`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 363.0 B  
+	-	`sha256:03b99642908f32326654663107bd4697c88c41390d94ddbc37174cbd32c8668e`  
+		Last Modified: Thu, 02 Oct 2025 01:17:39 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:276533c3360217c4db197789d1f9ab39ce7f06bbf6fee13d95fa9e59302a132c`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 3.6 KB (3610 bytes)  
+	-	`sha256:385bb8fe0bd0f4d44e3a5e5874ac102c792d6da98a5737380ad2a2a7de4184e8`  
+		Last Modified: Thu, 02 Oct 2025 01:17:42 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.6-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:d1c722b5a1d3fa58e22d40921adaa088a66eca679baa4e841624a912d8a41ea4
+$ docker pull clickhouse@sha256:86515ffb351f3b1c29e92542e47984b7c936448cec4302043b59a8812c44ff70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25465 bytes)**  
+-	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f2091310b49816e97f1aa793b15b39e0594b517e9dc8c48bbaa3b36e5f0880`
+-	Image ID: `sha256:1acc16935a07a80fdf772e8998e59721c23a25be776c5f3ea8384baa99b1d1c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:886593947163388ddaa74c1285f7810ac544e089905e2759397f3a090af99360`  
-		Last Modified: Thu, 18 Sep 2025 21:49:26 GMT  
-		Size: 25.5 KB (25465 bytes)  
+	-	`sha256:5a98e04df1c902453ae7a938b4044e9b9c586d3f465c73328b8bf8bf7034e3aa`  
+		Last Modified: Thu, 02 Oct 2025 03:49:35 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.6.12`
 
 ```console
-$ docker pull clickhouse@sha256:60eeec959f0200d08f889381049340a676c1adb3f04e0a9d2078c975bbfdba6b
+$ docker pull clickhouse@sha256:cfb498dcf58a9c02f06423348315ac373b56c9f03a7871478f97469f3b687bfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2259,131 +2259,131 @@ $ docker pull clickhouse@sha256:269cb78b9eee5a609ab20b2c5977bd75a17443f7c5d7b054
 ### `clickhouse:25.6.12` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:a64881b9ebed6e6817340fbe4bd7b10e41b5d2b126198607bf48565da31ef74f
+$ docker pull clickhouse@sha256:f7c8af0e7a03bf58d6f667409a1f9cf2b3f31f964438676c6963683674753b4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198248017 bytes)**  
+-	Total Size: **198.3 MB (198268873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7b01f720a485edead0f837a5326d1d523025d2c2f5593dc1b07700cfb1376cb`
+-	Image ID: `sha256:43d89b1a4171e1b5113f1f5d297ff4c2ae97b0ec67fb6445ef19ecf50bbfd045`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.6.12.10
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d37946de2e062811d095b0851034dd7289ca2d346a4320b1f07939da4a691c0`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 7.1 MB (7127987 bytes)  
+	-	`sha256:367ec5f43992c60b09c17ee33e7e12761f084cc06e77a3da47fab947b920b042`  
+		Last Modified: Thu, 02 Oct 2025 03:49:43 GMT  
+		Size: 7.1 MB (7127243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55694d503755d703110a934ed8514d5ea03c4d08f9dc863d0dff9ee5994c7cfe`  
-		Last Modified: Thu, 18 Sep 2025 19:10:32 GMT  
-		Size: 162.9 MB (162888535 bytes)  
+	-	`sha256:a91285ba2899cb4123c76379a914a7e0d5838a0f03a0c3c23f45cf50833a6544`  
+		Last Modified: Thu, 02 Oct 2025 03:49:54 GMT  
+		Size: 162.9 MB (162888501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01d8861c84fae76283c0f8531174991d71f5eaf1338217e9ef74c0ba6dea2324`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 186.0 B  
+	-	`sha256:6cdc606dba5ef56a78a5583d44ebb1494499931ad32268a4b7a0d24ad05615c3`  
+		Last Modified: Thu, 02 Oct 2025 01:17:29 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed161be40290000908e4604fea1c2e58b8e33925362d9682b15c6349c8c3ed98`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:adcfc1f2e769ba5ae693feffd9d7de80c7f8a396a6f4249700c051e96a485992`  
+		Last Modified: Thu, 02 Oct 2025 01:17:32 GMT  
+		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8024951b043b8e61654ffd32eddef2fee22cb34097c8917ac52b9520c5c8f700`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
+	-	`sha256:e391b1713fe929ff58f3bddca94996c949ecdd2d171643328bf917d80edbbf05`  
+		Last Modified: Thu, 02 Oct 2025 01:17:36 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed761be0922bae1061927a6a5c2e71c10f04a90fb7f31d9ba320f7d09d7e09d8`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 363.0 B  
+	-	`sha256:03b99642908f32326654663107bd4697c88c41390d94ddbc37174cbd32c8668e`  
+		Last Modified: Thu, 02 Oct 2025 01:17:39 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:276533c3360217c4db197789d1f9ab39ce7f06bbf6fee13d95fa9e59302a132c`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 3.6 KB (3610 bytes)  
+	-	`sha256:385bb8fe0bd0f4d44e3a5e5874ac102c792d6da98a5737380ad2a2a7de4184e8`  
+		Last Modified: Thu, 02 Oct 2025 01:17:42 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.6.12` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:d1c722b5a1d3fa58e22d40921adaa088a66eca679baa4e841624a912d8a41ea4
+$ docker pull clickhouse@sha256:86515ffb351f3b1c29e92542e47984b7c936448cec4302043b59a8812c44ff70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25465 bytes)**  
+-	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f2091310b49816e97f1aa793b15b39e0594b517e9dc8c48bbaa3b36e5f0880`
+-	Image ID: `sha256:1acc16935a07a80fdf772e8998e59721c23a25be776c5f3ea8384baa99b1d1c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:886593947163388ddaa74c1285f7810ac544e089905e2759397f3a090af99360`  
-		Last Modified: Thu, 18 Sep 2025 21:49:26 GMT  
-		Size: 25.5 KB (25465 bytes)  
+	-	`sha256:5a98e04df1c902453ae7a938b4044e9b9c586d3f465c73328b8bf8bf7034e3aa`  
+		Last Modified: Thu, 02 Oct 2025 03:49:35 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.6.12-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:60eeec959f0200d08f889381049340a676c1adb3f04e0a9d2078c975bbfdba6b
+$ docker pull clickhouse@sha256:cfb498dcf58a9c02f06423348315ac373b56c9f03a7871478f97469f3b687bfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2520,131 +2520,131 @@ $ docker pull clickhouse@sha256:269cb78b9eee5a609ab20b2c5977bd75a17443f7c5d7b054
 ### `clickhouse:25.6.12-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:a64881b9ebed6e6817340fbe4bd7b10e41b5d2b126198607bf48565da31ef74f
+$ docker pull clickhouse@sha256:f7c8af0e7a03bf58d6f667409a1f9cf2b3f31f964438676c6963683674753b4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198248017 bytes)**  
+-	Total Size: **198.3 MB (198268873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7b01f720a485edead0f837a5326d1d523025d2c2f5593dc1b07700cfb1376cb`
+-	Image ID: `sha256:43d89b1a4171e1b5113f1f5d297ff4c2ae97b0ec67fb6445ef19ecf50bbfd045`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.6.12.10
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d37946de2e062811d095b0851034dd7289ca2d346a4320b1f07939da4a691c0`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 7.1 MB (7127987 bytes)  
+	-	`sha256:367ec5f43992c60b09c17ee33e7e12761f084cc06e77a3da47fab947b920b042`  
+		Last Modified: Thu, 02 Oct 2025 03:49:43 GMT  
+		Size: 7.1 MB (7127243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55694d503755d703110a934ed8514d5ea03c4d08f9dc863d0dff9ee5994c7cfe`  
-		Last Modified: Thu, 18 Sep 2025 19:10:32 GMT  
-		Size: 162.9 MB (162888535 bytes)  
+	-	`sha256:a91285ba2899cb4123c76379a914a7e0d5838a0f03a0c3c23f45cf50833a6544`  
+		Last Modified: Thu, 02 Oct 2025 03:49:54 GMT  
+		Size: 162.9 MB (162888501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01d8861c84fae76283c0f8531174991d71f5eaf1338217e9ef74c0ba6dea2324`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 186.0 B  
+	-	`sha256:6cdc606dba5ef56a78a5583d44ebb1494499931ad32268a4b7a0d24ad05615c3`  
+		Last Modified: Thu, 02 Oct 2025 01:17:29 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed161be40290000908e4604fea1c2e58b8e33925362d9682b15c6349c8c3ed98`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:adcfc1f2e769ba5ae693feffd9d7de80c7f8a396a6f4249700c051e96a485992`  
+		Last Modified: Thu, 02 Oct 2025 01:17:32 GMT  
+		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8024951b043b8e61654ffd32eddef2fee22cb34097c8917ac52b9520c5c8f700`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
+	-	`sha256:e391b1713fe929ff58f3bddca94996c949ecdd2d171643328bf917d80edbbf05`  
+		Last Modified: Thu, 02 Oct 2025 01:17:36 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed761be0922bae1061927a6a5c2e71c10f04a90fb7f31d9ba320f7d09d7e09d8`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 363.0 B  
+	-	`sha256:03b99642908f32326654663107bd4697c88c41390d94ddbc37174cbd32c8668e`  
+		Last Modified: Thu, 02 Oct 2025 01:17:39 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:276533c3360217c4db197789d1f9ab39ce7f06bbf6fee13d95fa9e59302a132c`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 3.6 KB (3610 bytes)  
+	-	`sha256:385bb8fe0bd0f4d44e3a5e5874ac102c792d6da98a5737380ad2a2a7de4184e8`  
+		Last Modified: Thu, 02 Oct 2025 01:17:42 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.6.12-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:d1c722b5a1d3fa58e22d40921adaa088a66eca679baa4e841624a912d8a41ea4
+$ docker pull clickhouse@sha256:86515ffb351f3b1c29e92542e47984b7c936448cec4302043b59a8812c44ff70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25465 bytes)**  
+-	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f2091310b49816e97f1aa793b15b39e0594b517e9dc8c48bbaa3b36e5f0880`
+-	Image ID: `sha256:1acc16935a07a80fdf772e8998e59721c23a25be776c5f3ea8384baa99b1d1c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:886593947163388ddaa74c1285f7810ac544e089905e2759397f3a090af99360`  
-		Last Modified: Thu, 18 Sep 2025 21:49:26 GMT  
-		Size: 25.5 KB (25465 bytes)  
+	-	`sha256:5a98e04df1c902453ae7a938b4044e9b9c586d3f465c73328b8bf8bf7034e3aa`  
+		Last Modified: Thu, 02 Oct 2025 03:49:35 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.6.12.10`
 
 ```console
-$ docker pull clickhouse@sha256:60eeec959f0200d08f889381049340a676c1adb3f04e0a9d2078c975bbfdba6b
+$ docker pull clickhouse@sha256:cfb498dcf58a9c02f06423348315ac373b56c9f03a7871478f97469f3b687bfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2781,131 +2781,131 @@ $ docker pull clickhouse@sha256:269cb78b9eee5a609ab20b2c5977bd75a17443f7c5d7b054
 ### `clickhouse:25.6.12.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:a64881b9ebed6e6817340fbe4bd7b10e41b5d2b126198607bf48565da31ef74f
+$ docker pull clickhouse@sha256:f7c8af0e7a03bf58d6f667409a1f9cf2b3f31f964438676c6963683674753b4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198248017 bytes)**  
+-	Total Size: **198.3 MB (198268873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7b01f720a485edead0f837a5326d1d523025d2c2f5593dc1b07700cfb1376cb`
+-	Image ID: `sha256:43d89b1a4171e1b5113f1f5d297ff4c2ae97b0ec67fb6445ef19ecf50bbfd045`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.6.12.10
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d37946de2e062811d095b0851034dd7289ca2d346a4320b1f07939da4a691c0`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 7.1 MB (7127987 bytes)  
+	-	`sha256:367ec5f43992c60b09c17ee33e7e12761f084cc06e77a3da47fab947b920b042`  
+		Last Modified: Thu, 02 Oct 2025 03:49:43 GMT  
+		Size: 7.1 MB (7127243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55694d503755d703110a934ed8514d5ea03c4d08f9dc863d0dff9ee5994c7cfe`  
-		Last Modified: Thu, 18 Sep 2025 19:10:32 GMT  
-		Size: 162.9 MB (162888535 bytes)  
+	-	`sha256:a91285ba2899cb4123c76379a914a7e0d5838a0f03a0c3c23f45cf50833a6544`  
+		Last Modified: Thu, 02 Oct 2025 03:49:54 GMT  
+		Size: 162.9 MB (162888501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01d8861c84fae76283c0f8531174991d71f5eaf1338217e9ef74c0ba6dea2324`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 186.0 B  
+	-	`sha256:6cdc606dba5ef56a78a5583d44ebb1494499931ad32268a4b7a0d24ad05615c3`  
+		Last Modified: Thu, 02 Oct 2025 01:17:29 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed161be40290000908e4604fea1c2e58b8e33925362d9682b15c6349c8c3ed98`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:adcfc1f2e769ba5ae693feffd9d7de80c7f8a396a6f4249700c051e96a485992`  
+		Last Modified: Thu, 02 Oct 2025 01:17:32 GMT  
+		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8024951b043b8e61654ffd32eddef2fee22cb34097c8917ac52b9520c5c8f700`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
+	-	`sha256:e391b1713fe929ff58f3bddca94996c949ecdd2d171643328bf917d80edbbf05`  
+		Last Modified: Thu, 02 Oct 2025 01:17:36 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed761be0922bae1061927a6a5c2e71c10f04a90fb7f31d9ba320f7d09d7e09d8`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 363.0 B  
+	-	`sha256:03b99642908f32326654663107bd4697c88c41390d94ddbc37174cbd32c8668e`  
+		Last Modified: Thu, 02 Oct 2025 01:17:39 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:276533c3360217c4db197789d1f9ab39ce7f06bbf6fee13d95fa9e59302a132c`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 3.6 KB (3610 bytes)  
+	-	`sha256:385bb8fe0bd0f4d44e3a5e5874ac102c792d6da98a5737380ad2a2a7de4184e8`  
+		Last Modified: Thu, 02 Oct 2025 01:17:42 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.6.12.10` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:d1c722b5a1d3fa58e22d40921adaa088a66eca679baa4e841624a912d8a41ea4
+$ docker pull clickhouse@sha256:86515ffb351f3b1c29e92542e47984b7c936448cec4302043b59a8812c44ff70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25465 bytes)**  
+-	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f2091310b49816e97f1aa793b15b39e0594b517e9dc8c48bbaa3b36e5f0880`
+-	Image ID: `sha256:1acc16935a07a80fdf772e8998e59721c23a25be776c5f3ea8384baa99b1d1c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:886593947163388ddaa74c1285f7810ac544e089905e2759397f3a090af99360`  
-		Last Modified: Thu, 18 Sep 2025 21:49:26 GMT  
-		Size: 25.5 KB (25465 bytes)  
+	-	`sha256:5a98e04df1c902453ae7a938b4044e9b9c586d3f465c73328b8bf8bf7034e3aa`  
+		Last Modified: Thu, 02 Oct 2025 03:49:35 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.6.12.10-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:60eeec959f0200d08f889381049340a676c1adb3f04e0a9d2078c975bbfdba6b
+$ docker pull clickhouse@sha256:cfb498dcf58a9c02f06423348315ac373b56c9f03a7871478f97469f3b687bfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3042,131 +3042,131 @@ $ docker pull clickhouse@sha256:269cb78b9eee5a609ab20b2c5977bd75a17443f7c5d7b054
 ### `clickhouse:25.6.12.10-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:a64881b9ebed6e6817340fbe4bd7b10e41b5d2b126198607bf48565da31ef74f
+$ docker pull clickhouse@sha256:f7c8af0e7a03bf58d6f667409a1f9cf2b3f31f964438676c6963683674753b4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.2 MB (198248017 bytes)**  
+-	Total Size: **198.3 MB (198268873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7b01f720a485edead0f837a5326d1d523025d2c2f5593dc1b07700cfb1376cb`
+-	Image ID: `sha256:43d89b1a4171e1b5113f1f5d297ff4c2ae97b0ec67fb6445ef19ecf50bbfd045`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPO_CHANNEL=stable
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG VERSION=25.6.12.10
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV LANG=en_US.UTF-8
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV TZ=UTC
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=25.6.12.10 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 VOLUME [/var/lib/clickhouse]
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Thu, 18 Sep 2025 16:06:29 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d37946de2e062811d095b0851034dd7289ca2d346a4320b1f07939da4a691c0`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 7.1 MB (7127987 bytes)  
+	-	`sha256:367ec5f43992c60b09c17ee33e7e12761f084cc06e77a3da47fab947b920b042`  
+		Last Modified: Thu, 02 Oct 2025 03:49:43 GMT  
+		Size: 7.1 MB (7127243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55694d503755d703110a934ed8514d5ea03c4d08f9dc863d0dff9ee5994c7cfe`  
-		Last Modified: Thu, 18 Sep 2025 19:10:32 GMT  
-		Size: 162.9 MB (162888535 bytes)  
+	-	`sha256:a91285ba2899cb4123c76379a914a7e0d5838a0f03a0c3c23f45cf50833a6544`  
+		Last Modified: Thu, 02 Oct 2025 03:49:54 GMT  
+		Size: 162.9 MB (162888501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01d8861c84fae76283c0f8531174991d71f5eaf1338217e9ef74c0ba6dea2324`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 186.0 B  
+	-	`sha256:6cdc606dba5ef56a78a5583d44ebb1494499931ad32268a4b7a0d24ad05615c3`  
+		Last Modified: Thu, 02 Oct 2025 01:17:29 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed161be40290000908e4604fea1c2e58b8e33925362d9682b15c6349c8c3ed98`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:adcfc1f2e769ba5ae693feffd9d7de80c7f8a396a6f4249700c051e96a485992`  
+		Last Modified: Thu, 02 Oct 2025 01:17:32 GMT  
+		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8024951b043b8e61654ffd32eddef2fee22cb34097c8917ac52b9520c5c8f700`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
+	-	`sha256:e391b1713fe929ff58f3bddca94996c949ecdd2d171643328bf917d80edbbf05`  
+		Last Modified: Thu, 02 Oct 2025 01:17:36 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed761be0922bae1061927a6a5c2e71c10f04a90fb7f31d9ba320f7d09d7e09d8`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 363.0 B  
+	-	`sha256:03b99642908f32326654663107bd4697c88c41390d94ddbc37174cbd32c8668e`  
+		Last Modified: Thu, 02 Oct 2025 01:17:39 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:276533c3360217c4db197789d1f9ab39ce7f06bbf6fee13d95fa9e59302a132c`  
-		Last Modified: Thu, 18 Sep 2025 19:00:50 GMT  
-		Size: 3.6 KB (3610 bytes)  
+	-	`sha256:385bb8fe0bd0f4d44e3a5e5874ac102c792d6da98a5737380ad2a2a7de4184e8`  
+		Last Modified: Thu, 02 Oct 2025 01:17:42 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.6.12.10-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:d1c722b5a1d3fa58e22d40921adaa088a66eca679baa4e841624a912d8a41ea4
+$ docker pull clickhouse@sha256:86515ffb351f3b1c29e92542e47984b7c936448cec4302043b59a8812c44ff70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25465 bytes)**  
+-	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f2091310b49816e97f1aa793b15b39e0594b517e9dc8c48bbaa3b36e5f0880`
+-	Image ID: `sha256:1acc16935a07a80fdf772e8998e59721c23a25be776c5f3ea8384baa99b1d1c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:886593947163388ddaa74c1285f7810ac544e089905e2759397f3a090af99360`  
-		Last Modified: Thu, 18 Sep 2025 21:49:26 GMT  
-		Size: 25.5 KB (25465 bytes)  
+	-	`sha256:5a98e04df1c902453ae7a938b4044e9b9c586d3f465c73328b8bf8bf7034e3aa`  
+		Last Modified: Thu, 02 Oct 2025 03:49:35 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.7`
 
 ```console
-$ docker pull clickhouse@sha256:09ed91ad70e952664c6bd0162149865681d42ab0d75db30e8b35256adb72963b
+$ docker pull clickhouse@sha256:54fcc60dc17f4cceb12b900fb796fe7c6a80fae74711230fdd8f405c27a177b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3303,27 +3303,27 @@ $ docker pull clickhouse@sha256:de370f920364dd41bb6de3629a2af4a6b0778b13dae8987a
 ### `clickhouse:25.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6746518814e510b28bd7dd517195f648529da869ed42524ed7f5e92349dfbc54
+$ docker pull clickhouse@sha256:654f9f9792a490cf31b8faf092dd0196a1acebd74f9ff987b6108b37beacc595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207787017 bytes)**  
+-	Total Size: **207.8 MB (207808212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e40eb8fcf90dc30bd981d04f1906aa9ab03f7cfdca8042011520a76b5a16d8f`
+-	Image ID: `sha256:23bea0072278540189a4781d584a7921ece0d54d58d5c02a84aa34b7b072d333`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -3371,63 +3371,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b243d4603c9fb10873c5c8071c63750ba2ef471941549af64a0e9b750990555`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 7.6 MB (7577255 bytes)  
+	-	`sha256:b5f94767786dd605041010b9d16653de707d91e62034e95623a17796da8185b2`  
+		Last Modified: Thu, 02 Oct 2025 01:12:26 GMT  
+		Size: 7.6 MB (7576770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ddc07aee5da355b3e9f621bb5a1ab52f8e89bb194c0562e178b1302ea61a3`  
-		Last Modified: Thu, 25 Sep 2025 18:49:56 GMT  
-		Size: 172.0 MB (171978270 bytes)  
+	-	`sha256:4bd8cfb8284a935883ded63626c9a02613f38a6f1d72e24a0487bc8725e835c9`  
+		Last Modified: Thu, 02 Oct 2025 03:50:04 GMT  
+		Size: 172.0 MB (171978314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69d97c4d247a31661f8a3e325ec93579864a9387514d044966fb94fc8f5a9704`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 185.0 B  
+	-	`sha256:21b798be5d225971c859628d094e0957d2abbb945f0113b2d8a98191455b56fa`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af9a1cbed902526a98c24edac85a7de58184d45cac51ea3462c88858d01f743b`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:5b80b1373027e5b7339e0c84585c86f0ed7781c65afed3f8fd7cf06b7db4a3ba`  
+		Last Modified: Thu, 02 Oct 2025 01:12:25 GMT  
+		Size: 865.7 KB (865749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92bc58932d6fbb2946acfc63f25b647cb8ecf9173c9dcbfcab667c30f9021467`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
+	-	`sha256:23d58690354538fb0a70d4a5106b1341eac71c7c43859cf5ca8c1cddee95f880`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a40145640226783b4fa4a000af6670d5264b7b371c41c3ee485ca08cb5f8f3ec`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 363.0 B  
+	-	`sha256:cf0e7fcee7279dd29c01faff2af14f1efb62774b342ee417b91dde2375649973`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:043e525e1c360f6690a8c4760e474ee33537cf3a4ed3bf0355fc35bad848f9c1`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 3.6 KB (3608 bytes)  
+	-	`sha256:8af957979b178b1b8c4ed03ba8373db31657a1a88f924857fdee7437e2af1bfc`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.7` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:0f526c3cd32aa9a095e13ee8090d39c575580da66df75b5c32b06c5f7db1c08a
+$ docker pull clickhouse@sha256:0cc600df8da426fb45d86649d9350a4680b090ba14c3c65c3ad418fea36fcf1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.6 KB (25649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df6fe6d09b8c911d4fa679713ab237bd52cf501548efab0c820f717941615a4`
+-	Image ID: `sha256:6abaab9efc046d1524a4b74c6557dc78d6a28688a6ea76b10198972b47b53904`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a07f926872d4924a19972bb2d6ecb84f3ffb6a2d398a06be76cf9f6af60d627e`  
-		Last Modified: Thu, 25 Sep 2025 18:49:30 GMT  
+	-	`sha256:77191bebcc2e1327227c0cb0b905aede42a7f88f90087ceb3693e0e9b0b620be`  
+		Last Modified: Thu, 02 Oct 2025 03:49:51 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.7-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:09ed91ad70e952664c6bd0162149865681d42ab0d75db30e8b35256adb72963b
+$ docker pull clickhouse@sha256:54fcc60dc17f4cceb12b900fb796fe7c6a80fae74711230fdd8f405c27a177b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3564,27 +3564,27 @@ $ docker pull clickhouse@sha256:de370f920364dd41bb6de3629a2af4a6b0778b13dae8987a
 ### `clickhouse:25.7-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6746518814e510b28bd7dd517195f648529da869ed42524ed7f5e92349dfbc54
+$ docker pull clickhouse@sha256:654f9f9792a490cf31b8faf092dd0196a1acebd74f9ff987b6108b37beacc595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207787017 bytes)**  
+-	Total Size: **207.8 MB (207808212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e40eb8fcf90dc30bd981d04f1906aa9ab03f7cfdca8042011520a76b5a16d8f`
+-	Image ID: `sha256:23bea0072278540189a4781d584a7921ece0d54d58d5c02a84aa34b7b072d333`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -3632,63 +3632,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b243d4603c9fb10873c5c8071c63750ba2ef471941549af64a0e9b750990555`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 7.6 MB (7577255 bytes)  
+	-	`sha256:b5f94767786dd605041010b9d16653de707d91e62034e95623a17796da8185b2`  
+		Last Modified: Thu, 02 Oct 2025 01:12:26 GMT  
+		Size: 7.6 MB (7576770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ddc07aee5da355b3e9f621bb5a1ab52f8e89bb194c0562e178b1302ea61a3`  
-		Last Modified: Thu, 25 Sep 2025 18:49:56 GMT  
-		Size: 172.0 MB (171978270 bytes)  
+	-	`sha256:4bd8cfb8284a935883ded63626c9a02613f38a6f1d72e24a0487bc8725e835c9`  
+		Last Modified: Thu, 02 Oct 2025 03:50:04 GMT  
+		Size: 172.0 MB (171978314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69d97c4d247a31661f8a3e325ec93579864a9387514d044966fb94fc8f5a9704`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 185.0 B  
+	-	`sha256:21b798be5d225971c859628d094e0957d2abbb945f0113b2d8a98191455b56fa`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af9a1cbed902526a98c24edac85a7de58184d45cac51ea3462c88858d01f743b`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:5b80b1373027e5b7339e0c84585c86f0ed7781c65afed3f8fd7cf06b7db4a3ba`  
+		Last Modified: Thu, 02 Oct 2025 01:12:25 GMT  
+		Size: 865.7 KB (865749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92bc58932d6fbb2946acfc63f25b647cb8ecf9173c9dcbfcab667c30f9021467`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
+	-	`sha256:23d58690354538fb0a70d4a5106b1341eac71c7c43859cf5ca8c1cddee95f880`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a40145640226783b4fa4a000af6670d5264b7b371c41c3ee485ca08cb5f8f3ec`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 363.0 B  
+	-	`sha256:cf0e7fcee7279dd29c01faff2af14f1efb62774b342ee417b91dde2375649973`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:043e525e1c360f6690a8c4760e474ee33537cf3a4ed3bf0355fc35bad848f9c1`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 3.6 KB (3608 bytes)  
+	-	`sha256:8af957979b178b1b8c4ed03ba8373db31657a1a88f924857fdee7437e2af1bfc`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.7-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:0f526c3cd32aa9a095e13ee8090d39c575580da66df75b5c32b06c5f7db1c08a
+$ docker pull clickhouse@sha256:0cc600df8da426fb45d86649d9350a4680b090ba14c3c65c3ad418fea36fcf1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.6 KB (25649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df6fe6d09b8c911d4fa679713ab237bd52cf501548efab0c820f717941615a4`
+-	Image ID: `sha256:6abaab9efc046d1524a4b74c6557dc78d6a28688a6ea76b10198972b47b53904`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a07f926872d4924a19972bb2d6ecb84f3ffb6a2d398a06be76cf9f6af60d627e`  
-		Last Modified: Thu, 25 Sep 2025 18:49:30 GMT  
+	-	`sha256:77191bebcc2e1327227c0cb0b905aede42a7f88f90087ceb3693e0e9b0b620be`  
+		Last Modified: Thu, 02 Oct 2025 03:49:51 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.7.7`
 
 ```console
-$ docker pull clickhouse@sha256:09ed91ad70e952664c6bd0162149865681d42ab0d75db30e8b35256adb72963b
+$ docker pull clickhouse@sha256:54fcc60dc17f4cceb12b900fb796fe7c6a80fae74711230fdd8f405c27a177b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3825,27 +3825,27 @@ $ docker pull clickhouse@sha256:de370f920364dd41bb6de3629a2af4a6b0778b13dae8987a
 ### `clickhouse:25.7.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6746518814e510b28bd7dd517195f648529da869ed42524ed7f5e92349dfbc54
+$ docker pull clickhouse@sha256:654f9f9792a490cf31b8faf092dd0196a1acebd74f9ff987b6108b37beacc595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207787017 bytes)**  
+-	Total Size: **207.8 MB (207808212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e40eb8fcf90dc30bd981d04f1906aa9ab03f7cfdca8042011520a76b5a16d8f`
+-	Image ID: `sha256:23bea0072278540189a4781d584a7921ece0d54d58d5c02a84aa34b7b072d333`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -3893,63 +3893,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b243d4603c9fb10873c5c8071c63750ba2ef471941549af64a0e9b750990555`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 7.6 MB (7577255 bytes)  
+	-	`sha256:b5f94767786dd605041010b9d16653de707d91e62034e95623a17796da8185b2`  
+		Last Modified: Thu, 02 Oct 2025 01:12:26 GMT  
+		Size: 7.6 MB (7576770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ddc07aee5da355b3e9f621bb5a1ab52f8e89bb194c0562e178b1302ea61a3`  
-		Last Modified: Thu, 25 Sep 2025 18:49:56 GMT  
-		Size: 172.0 MB (171978270 bytes)  
+	-	`sha256:4bd8cfb8284a935883ded63626c9a02613f38a6f1d72e24a0487bc8725e835c9`  
+		Last Modified: Thu, 02 Oct 2025 03:50:04 GMT  
+		Size: 172.0 MB (171978314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69d97c4d247a31661f8a3e325ec93579864a9387514d044966fb94fc8f5a9704`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 185.0 B  
+	-	`sha256:21b798be5d225971c859628d094e0957d2abbb945f0113b2d8a98191455b56fa`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af9a1cbed902526a98c24edac85a7de58184d45cac51ea3462c88858d01f743b`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:5b80b1373027e5b7339e0c84585c86f0ed7781c65afed3f8fd7cf06b7db4a3ba`  
+		Last Modified: Thu, 02 Oct 2025 01:12:25 GMT  
+		Size: 865.7 KB (865749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92bc58932d6fbb2946acfc63f25b647cb8ecf9173c9dcbfcab667c30f9021467`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
+	-	`sha256:23d58690354538fb0a70d4a5106b1341eac71c7c43859cf5ca8c1cddee95f880`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a40145640226783b4fa4a000af6670d5264b7b371c41c3ee485ca08cb5f8f3ec`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 363.0 B  
+	-	`sha256:cf0e7fcee7279dd29c01faff2af14f1efb62774b342ee417b91dde2375649973`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:043e525e1c360f6690a8c4760e474ee33537cf3a4ed3bf0355fc35bad848f9c1`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 3.6 KB (3608 bytes)  
+	-	`sha256:8af957979b178b1b8c4ed03ba8373db31657a1a88f924857fdee7437e2af1bfc`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.7.7` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:0f526c3cd32aa9a095e13ee8090d39c575580da66df75b5c32b06c5f7db1c08a
+$ docker pull clickhouse@sha256:0cc600df8da426fb45d86649d9350a4680b090ba14c3c65c3ad418fea36fcf1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.6 KB (25649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df6fe6d09b8c911d4fa679713ab237bd52cf501548efab0c820f717941615a4`
+-	Image ID: `sha256:6abaab9efc046d1524a4b74c6557dc78d6a28688a6ea76b10198972b47b53904`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a07f926872d4924a19972bb2d6ecb84f3ffb6a2d398a06be76cf9f6af60d627e`  
-		Last Modified: Thu, 25 Sep 2025 18:49:30 GMT  
+	-	`sha256:77191bebcc2e1327227c0cb0b905aede42a7f88f90087ceb3693e0e9b0b620be`  
+		Last Modified: Thu, 02 Oct 2025 03:49:51 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.7.7-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:09ed91ad70e952664c6bd0162149865681d42ab0d75db30e8b35256adb72963b
+$ docker pull clickhouse@sha256:54fcc60dc17f4cceb12b900fb796fe7c6a80fae74711230fdd8f405c27a177b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4086,27 +4086,27 @@ $ docker pull clickhouse@sha256:de370f920364dd41bb6de3629a2af4a6b0778b13dae8987a
 ### `clickhouse:25.7.7-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6746518814e510b28bd7dd517195f648529da869ed42524ed7f5e92349dfbc54
+$ docker pull clickhouse@sha256:654f9f9792a490cf31b8faf092dd0196a1acebd74f9ff987b6108b37beacc595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207787017 bytes)**  
+-	Total Size: **207.8 MB (207808212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e40eb8fcf90dc30bd981d04f1906aa9ab03f7cfdca8042011520a76b5a16d8f`
+-	Image ID: `sha256:23bea0072278540189a4781d584a7921ece0d54d58d5c02a84aa34b7b072d333`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -4154,63 +4154,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b243d4603c9fb10873c5c8071c63750ba2ef471941549af64a0e9b750990555`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 7.6 MB (7577255 bytes)  
+	-	`sha256:b5f94767786dd605041010b9d16653de707d91e62034e95623a17796da8185b2`  
+		Last Modified: Thu, 02 Oct 2025 01:12:26 GMT  
+		Size: 7.6 MB (7576770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ddc07aee5da355b3e9f621bb5a1ab52f8e89bb194c0562e178b1302ea61a3`  
-		Last Modified: Thu, 25 Sep 2025 18:49:56 GMT  
-		Size: 172.0 MB (171978270 bytes)  
+	-	`sha256:4bd8cfb8284a935883ded63626c9a02613f38a6f1d72e24a0487bc8725e835c9`  
+		Last Modified: Thu, 02 Oct 2025 03:50:04 GMT  
+		Size: 172.0 MB (171978314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69d97c4d247a31661f8a3e325ec93579864a9387514d044966fb94fc8f5a9704`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 185.0 B  
+	-	`sha256:21b798be5d225971c859628d094e0957d2abbb945f0113b2d8a98191455b56fa`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af9a1cbed902526a98c24edac85a7de58184d45cac51ea3462c88858d01f743b`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:5b80b1373027e5b7339e0c84585c86f0ed7781c65afed3f8fd7cf06b7db4a3ba`  
+		Last Modified: Thu, 02 Oct 2025 01:12:25 GMT  
+		Size: 865.7 KB (865749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92bc58932d6fbb2946acfc63f25b647cb8ecf9173c9dcbfcab667c30f9021467`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
+	-	`sha256:23d58690354538fb0a70d4a5106b1341eac71c7c43859cf5ca8c1cddee95f880`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a40145640226783b4fa4a000af6670d5264b7b371c41c3ee485ca08cb5f8f3ec`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 363.0 B  
+	-	`sha256:cf0e7fcee7279dd29c01faff2af14f1efb62774b342ee417b91dde2375649973`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:043e525e1c360f6690a8c4760e474ee33537cf3a4ed3bf0355fc35bad848f9c1`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 3.6 KB (3608 bytes)  
+	-	`sha256:8af957979b178b1b8c4ed03ba8373db31657a1a88f924857fdee7437e2af1bfc`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.7.7-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:0f526c3cd32aa9a095e13ee8090d39c575580da66df75b5c32b06c5f7db1c08a
+$ docker pull clickhouse@sha256:0cc600df8da426fb45d86649d9350a4680b090ba14c3c65c3ad418fea36fcf1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.6 KB (25649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df6fe6d09b8c911d4fa679713ab237bd52cf501548efab0c820f717941615a4`
+-	Image ID: `sha256:6abaab9efc046d1524a4b74c6557dc78d6a28688a6ea76b10198972b47b53904`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a07f926872d4924a19972bb2d6ecb84f3ffb6a2d398a06be76cf9f6af60d627e`  
-		Last Modified: Thu, 25 Sep 2025 18:49:30 GMT  
+	-	`sha256:77191bebcc2e1327227c0cb0b905aede42a7f88f90087ceb3693e0e9b0b620be`  
+		Last Modified: Thu, 02 Oct 2025 03:49:51 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.7.7.68`
 
 ```console
-$ docker pull clickhouse@sha256:09ed91ad70e952664c6bd0162149865681d42ab0d75db30e8b35256adb72963b
+$ docker pull clickhouse@sha256:54fcc60dc17f4cceb12b900fb796fe7c6a80fae74711230fdd8f405c27a177b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4347,27 +4347,27 @@ $ docker pull clickhouse@sha256:de370f920364dd41bb6de3629a2af4a6b0778b13dae8987a
 ### `clickhouse:25.7.7.68` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6746518814e510b28bd7dd517195f648529da869ed42524ed7f5e92349dfbc54
+$ docker pull clickhouse@sha256:654f9f9792a490cf31b8faf092dd0196a1acebd74f9ff987b6108b37beacc595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207787017 bytes)**  
+-	Total Size: **207.8 MB (207808212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e40eb8fcf90dc30bd981d04f1906aa9ab03f7cfdca8042011520a76b5a16d8f`
+-	Image ID: `sha256:23bea0072278540189a4781d584a7921ece0d54d58d5c02a84aa34b7b072d333`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -4415,63 +4415,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b243d4603c9fb10873c5c8071c63750ba2ef471941549af64a0e9b750990555`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 7.6 MB (7577255 bytes)  
+	-	`sha256:b5f94767786dd605041010b9d16653de707d91e62034e95623a17796da8185b2`  
+		Last Modified: Thu, 02 Oct 2025 01:12:26 GMT  
+		Size: 7.6 MB (7576770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ddc07aee5da355b3e9f621bb5a1ab52f8e89bb194c0562e178b1302ea61a3`  
-		Last Modified: Thu, 25 Sep 2025 18:49:56 GMT  
-		Size: 172.0 MB (171978270 bytes)  
+	-	`sha256:4bd8cfb8284a935883ded63626c9a02613f38a6f1d72e24a0487bc8725e835c9`  
+		Last Modified: Thu, 02 Oct 2025 03:50:04 GMT  
+		Size: 172.0 MB (171978314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69d97c4d247a31661f8a3e325ec93579864a9387514d044966fb94fc8f5a9704`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 185.0 B  
+	-	`sha256:21b798be5d225971c859628d094e0957d2abbb945f0113b2d8a98191455b56fa`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af9a1cbed902526a98c24edac85a7de58184d45cac51ea3462c88858d01f743b`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:5b80b1373027e5b7339e0c84585c86f0ed7781c65afed3f8fd7cf06b7db4a3ba`  
+		Last Modified: Thu, 02 Oct 2025 01:12:25 GMT  
+		Size: 865.7 KB (865749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92bc58932d6fbb2946acfc63f25b647cb8ecf9173c9dcbfcab667c30f9021467`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
+	-	`sha256:23d58690354538fb0a70d4a5106b1341eac71c7c43859cf5ca8c1cddee95f880`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a40145640226783b4fa4a000af6670d5264b7b371c41c3ee485ca08cb5f8f3ec`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 363.0 B  
+	-	`sha256:cf0e7fcee7279dd29c01faff2af14f1efb62774b342ee417b91dde2375649973`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:043e525e1c360f6690a8c4760e474ee33537cf3a4ed3bf0355fc35bad848f9c1`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 3.6 KB (3608 bytes)  
+	-	`sha256:8af957979b178b1b8c4ed03ba8373db31657a1a88f924857fdee7437e2af1bfc`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.7.7.68` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:0f526c3cd32aa9a095e13ee8090d39c575580da66df75b5c32b06c5f7db1c08a
+$ docker pull clickhouse@sha256:0cc600df8da426fb45d86649d9350a4680b090ba14c3c65c3ad418fea36fcf1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.6 KB (25649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df6fe6d09b8c911d4fa679713ab237bd52cf501548efab0c820f717941615a4`
+-	Image ID: `sha256:6abaab9efc046d1524a4b74c6557dc78d6a28688a6ea76b10198972b47b53904`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a07f926872d4924a19972bb2d6ecb84f3ffb6a2d398a06be76cf9f6af60d627e`  
-		Last Modified: Thu, 25 Sep 2025 18:49:30 GMT  
+	-	`sha256:77191bebcc2e1327227c0cb0b905aede42a7f88f90087ceb3693e0e9b0b620be`  
+		Last Modified: Thu, 02 Oct 2025 03:49:51 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.7.7.68-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:09ed91ad70e952664c6bd0162149865681d42ab0d75db30e8b35256adb72963b
+$ docker pull clickhouse@sha256:54fcc60dc17f4cceb12b900fb796fe7c6a80fae74711230fdd8f405c27a177b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4608,27 +4608,27 @@ $ docker pull clickhouse@sha256:de370f920364dd41bb6de3629a2af4a6b0778b13dae8987a
 ### `clickhouse:25.7.7.68-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6746518814e510b28bd7dd517195f648529da869ed42524ed7f5e92349dfbc54
+$ docker pull clickhouse@sha256:654f9f9792a490cf31b8faf092dd0196a1acebd74f9ff987b6108b37beacc595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207787017 bytes)**  
+-	Total Size: **207.8 MB (207808212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e40eb8fcf90dc30bd981d04f1906aa9ab03f7cfdca8042011520a76b5a16d8f`
+-	Image ID: `sha256:23bea0072278540189a4781d584a7921ece0d54d58d5c02a84aa34b7b072d333`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -4676,63 +4676,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b243d4603c9fb10873c5c8071c63750ba2ef471941549af64a0e9b750990555`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 7.6 MB (7577255 bytes)  
+	-	`sha256:b5f94767786dd605041010b9d16653de707d91e62034e95623a17796da8185b2`  
+		Last Modified: Thu, 02 Oct 2025 01:12:26 GMT  
+		Size: 7.6 MB (7576770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ddc07aee5da355b3e9f621bb5a1ab52f8e89bb194c0562e178b1302ea61a3`  
-		Last Modified: Thu, 25 Sep 2025 18:49:56 GMT  
-		Size: 172.0 MB (171978270 bytes)  
+	-	`sha256:4bd8cfb8284a935883ded63626c9a02613f38a6f1d72e24a0487bc8725e835c9`  
+		Last Modified: Thu, 02 Oct 2025 03:50:04 GMT  
+		Size: 172.0 MB (171978314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69d97c4d247a31661f8a3e325ec93579864a9387514d044966fb94fc8f5a9704`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 185.0 B  
+	-	`sha256:21b798be5d225971c859628d094e0957d2abbb945f0113b2d8a98191455b56fa`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 183.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af9a1cbed902526a98c24edac85a7de58184d45cac51ea3462c88858d01f743b`  
-		Last Modified: Thu, 25 Sep 2025 17:40:02 GMT  
-		Size: 865.8 KB (865751 bytes)  
+	-	`sha256:5b80b1373027e5b7339e0c84585c86f0ed7781c65afed3f8fd7cf06b7db4a3ba`  
+		Last Modified: Thu, 02 Oct 2025 01:12:25 GMT  
+		Size: 865.7 KB (865749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92bc58932d6fbb2946acfc63f25b647cb8ecf9173c9dcbfcab667c30f9021467`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
+	-	`sha256:23d58690354538fb0a70d4a5106b1341eac71c7c43859cf5ca8c1cddee95f880`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a40145640226783b4fa4a000af6670d5264b7b371c41c3ee485ca08cb5f8f3ec`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 363.0 B  
+	-	`sha256:cf0e7fcee7279dd29c01faff2af14f1efb62774b342ee417b91dde2375649973`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:043e525e1c360f6690a8c4760e474ee33537cf3a4ed3bf0355fc35bad848f9c1`  
-		Last Modified: Thu, 25 Sep 2025 17:40:01 GMT  
-		Size: 3.6 KB (3608 bytes)  
+	-	`sha256:8af957979b178b1b8c4ed03ba8373db31657a1a88f924857fdee7437e2af1bfc`  
+		Last Modified: Thu, 02 Oct 2025 01:12:24 GMT  
+		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.7.7.68-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:0f526c3cd32aa9a095e13ee8090d39c575580da66df75b5c32b06c5f7db1c08a
+$ docker pull clickhouse@sha256:0cc600df8da426fb45d86649d9350a4680b090ba14c3c65c3ad418fea36fcf1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.6 KB (25649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df6fe6d09b8c911d4fa679713ab237bd52cf501548efab0c820f717941615a4`
+-	Image ID: `sha256:6abaab9efc046d1524a4b74c6557dc78d6a28688a6ea76b10198972b47b53904`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a07f926872d4924a19972bb2d6ecb84f3ffb6a2d398a06be76cf9f6af60d627e`  
-		Last Modified: Thu, 25 Sep 2025 18:49:30 GMT  
+	-	`sha256:77191bebcc2e1327227c0cb0b905aede42a7f88f90087ceb3693e0e9b0b620be`  
+		Last Modified: Thu, 02 Oct 2025 03:49:51 GMT  
 		Size: 25.6 KB (25649 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.8`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4869,27 +4869,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:25.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -4937,63 +4937,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.8` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.8-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5130,27 +5130,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:25.8-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -5198,63 +5198,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.8-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.8.7`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5391,27 +5391,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:25.8.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -5459,63 +5459,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.8.7` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.8.7-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5652,27 +5652,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:25.8.7-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -5720,63 +5720,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.8.7-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.8.7.3`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5913,27 +5913,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:25.8.7.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -5981,63 +5981,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.8.7.3` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:25.8.7.3-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6174,27 +6174,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:25.8.7.3-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -6242,63 +6242,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:25.8.7.3-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:jammy`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6435,27 +6435,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -6503,63 +6503,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:latest`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6696,27 +6696,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -6764,63 +6764,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:latest` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:lts`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6957,27 +6957,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:lts` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -7025,63 +7025,63 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:lts` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:lts-jammy`
 
 ```console
-$ docker pull clickhouse@sha256:217e9643d44076676669a12ec4c8aa6e43c33a68e24c5400358cfbf98174568f
+$ docker pull clickhouse@sha256:613890f20c8128e9800d8b84abe50da018738af10db4852f86def606fe81de8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7218,27 +7218,27 @@ $ docker pull clickhouse@sha256:78442cad9b27dabbdd92a482c474550fdd5495a71428c3c7
 ### `clickhouse:lts-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:cbb5add2832e1d452312b2c77bd5a68e8cf808177eccfc32fc473cc7de1fc330
+$ docker pull clickhouse@sha256:45284e11c1916b8d698c58fd4b1846a5cc479def5c671dc893ba67141b54ee6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.5 MB (212485993 bytes)**  
+-	Total Size: **212.5 MB (212507218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96d623b7b3b9bc0b020a0ae2eacddb5e9abf59a2e4c35edb4fcb44dcb2ad4e76`
+-	Image ID: `sha256:048d65318933af6af4c7e2790f9c3383163df5fa896bbbf80fd440a452c99378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:21:17 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:21:19 GMT
-ADD file:5f2c65daac761cc691b34ee3e3e2ba42ec520d71fc59aef131d38058a7891ab8 in / 
-# Tue, 19 Aug 2025 17:21:19 GMT
+# Thu, 25 Sep 2025 16:06:42 GMT
+ADD file:7a71c1d52054f8e04c815eaec639d14adaaa62346860f4003201834430b7ff18 in / 
+# Thu, 25 Sep 2025 16:06:42 GMT
 CMD ["/bin/bash"]
 # Thu, 25 Sep 2025 16:06:42 GMT
 ARG DEBIAN_FRONTEND=noninteractive
@@ -7286,55 +7286,55 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdf67ba0bcdcbe417cffb2808175ef408d653d78cb464d1917e84ba0f40ef5de`  
-		Last Modified: Tue, 19 Aug 2025 19:22:54 GMT  
-		Size: 27.4 MB (27361469 bytes)  
+	-	`sha256:f85691aa4b9092cbb48212c835b78068e3321656ba2c306dae491e1a02d1b4d3`  
+		Last Modified: Wed, 01 Oct 2025 14:17:05 GMT  
+		Size: 27.4 MB (27383107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1b04584cd6f09afaec0004bdd62a59044c994531e926d76408bb5410b3db73`  
-		Last Modified: Thu, 25 Sep 2025 17:39:05 GMT  
-		Size: 7.6 MB (7577256 bytes)  
+	-	`sha256:fd4883af93add6aae279fee4649bdd1d9a995335a7b6cd56571e0ede5cfa3c90`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 7.6 MB (7576745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d24ae17e68eaeb435578ea2a5dffb42d7583313ba4bb8c1025b168d9b26f946`  
-		Last Modified: Thu, 25 Sep 2025 17:39:55 GMT  
-		Size: 176.7 MB (176677246 bytes)  
+	-	`sha256:c5c62f433a9dc52cc27e53173033688da9385d89f33f61dd1e46616b648cfff9`  
+		Last Modified: Thu, 02 Oct 2025 02:24:49 GMT  
+		Size: 176.7 MB (176677340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6469e1f2f367bbb723894875fa831da3ce2afb6f9274d10ffff94eb6c54f2306`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 184.0 B  
+	-	`sha256:1ef118ea534c5f67e1733824d0cd7a13aaba75dc7bb545ce03afab3286467ca5`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4efd299d81e2e52296288bc512546b1d40e1acf7511269a7bb7acbe69e8f094`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:7a4bec4fdc4dd175e242482d8672c5c8afd4a7fc3fa304e09269fae978f4c184`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 865.8 KB (865750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6764477384e76a92e9d7bf6f5ace44f0100ae89d363c543363f8dd2baa64b751`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:9c91de072e68e8b01b4fd9357d35930c646ef7ccc02b54c6c03ce76759ec1818`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a55eeddab67d88ebc34168bf1125738b99a1e4e27b642c3cec836de7c6f2dd6`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
-		Size: 361.0 B  
+	-	`sha256:8769598cb0247656c5f52149dd01b09b949dd69468ce37a3cfb5e98734203a77`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:233b658515568da00a5c6b8cfb7273f1f8bcdfd6c94f71f6582f6547a7fff3d3`  
-		Last Modified: Thu, 25 Sep 2025 17:39:04 GMT  
+	-	`sha256:8d3ca6509233f0226292153cc6fcbd7220b85bda4fae17c3f358a26ab50d72a3`  
+		Last Modified: Thu, 02 Oct 2025 01:12:03 GMT  
 		Size: 3.6 KB (3611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:lts-jammy` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ee9717135a59b2d5c616a27f57cff095a38a92132426a14e3899f5d147c742be
+$ docker pull clickhouse@sha256:bf4e7ea6c71047f751747bf2ab58a259474d110a32215457e7662746ac40a5d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 KB (26906 bytes)**  
+-	Total Size: **26.9 KB (26908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56b8f960e6f48c4f4d6760bd939c49a61b2cd0c568d550441e026dd77e1bd0dc`
+-	Image ID: `sha256:e1b22bc64f6f1857003da985a561708f816fe8b2ef5b91efe7f618f012e9f0ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:83660230c78a1f467c12d7ee78f111edf66589c53fed4593422435572363ec20`  
-		Last Modified: Thu, 25 Sep 2025 18:49:49 GMT  
-		Size: 26.9 KB (26906 bytes)  
+	-	`sha256:bf39405f3719575281fce885837c911be2e82299da903bf952b3b3da3de8edf3`  
+		Last Modified: Thu, 02 Oct 2025 03:50:05 GMT  
+		Size: 26.9 KB (26908 bytes)  
 		MIME: application/vnd.in-toto+json
