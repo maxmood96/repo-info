@@ -1,7 +1,7 @@
 ## `neo4j:2025-community`
 
 ```console
-$ docker pull neo4j@sha256:0b333a1dcc4629787d027f98054542d0558faa69ac0bbf5a514cdb2f158bc953
+$ docker pull neo4j@sha256:b17232e8c661cad8acd29fb4311eb91f533c6ce3fe57a23d147290fa25d1ed77
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -110,13 +110,13 @@ $ docker pull neo4j@sha256:c5f8d221ad514a535fab8e362c1955fbce3f800e6fd07d3016d93
 ### `neo4j:2025-community` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:0944654b4a788bbd609c45831043beccf543dd07b16652ba4c36e979e103746a
+$ docker pull neo4j@sha256:daf4d0793e2bdded4cabf22ddfa69f5924d498ede34c225bc13ec550a61ad575
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.3 MB (395312987 bytes)**  
+-	Total Size: **395.3 MB (395312924 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bdf34079927125828bbfd246e642928b0b5ca26edcf8d508f2cc4db8ef6b296`
+-	Image ID: `sha256:313e1dfa25123dc865054d616c811b785f130f18489bfcb1eeff76d2edf640f2`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -158,21 +158,21 @@ CMD ["neo4j"]
 		Last Modified: Mon, 29 Sep 2025 23:34:34 GMT  
 		Size: 28.7 MB (28748427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a29f0c2eb2ab6409ba19d36ee7895b30a88a2bcb4c1cf580cc549ba439a24c5f`  
-		Last Modified: Wed, 01 Oct 2025 20:47:07 GMT  
-		Size: 156.1 MB (156081216 bytes)  
+	-	`sha256:2296a8bac6306c32b6bfae1e6f0902b6d7d41b80ae00093b5a1a144c5b0c0e3b`  
+		Last Modified: Thu, 02 Oct 2025 05:44:21 GMT  
+		Size: 156.1 MB (156081233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b34a95af424e257c2bb99907b39af2cd30b21d3a35b5af3d06d311c51af4f5d`  
-		Last Modified: Wed, 01 Oct 2025 16:24:59 GMT  
+	-	`sha256:d209a5ae7a8389f7e86bbe9aabbf71451598b8fd16f11fe90233e0dd8c9661aa`  
+		Last Modified: Thu, 02 Oct 2025 03:18:18 GMT  
 		Size: 3.9 KB (3867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfc8e8cf6975c78083641dd9f76a8210e39a75f534a716309b0bd0208e56a275`  
-		Last Modified: Wed, 01 Oct 2025 16:24:59 GMT  
+	-	`sha256:faeef762d06f19a0e6085e4de90d80e04447ce39d9fc97f9eef202ee38b40b07`  
+		Last Modified: Thu, 02 Oct 2025 03:18:19 GMT  
 		Size: 10.0 KB (10020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4fe352340a78af4be0b824c7c33883e6da996edaca482750d922ae930107bfb`  
-		Last Modified: Wed, 01 Oct 2025 20:44:21 GMT  
-		Size: 210.5 MB (210469425 bytes)  
+	-	`sha256:5577b7e89a556813237935dbbbc556f61a3a85a96649897f4758e3948546c019`  
+		Last Modified: Thu, 02 Oct 2025 05:44:32 GMT  
+		Size: 210.5 MB (210469345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -182,23 +182,23 @@ CMD ["neo4j"]
 ### `neo4j:2025-community` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:c8ce8d12c7b55bac072a0bdaa0448811c9745422ddc4d787889bbf989b669502
+$ docker pull neo4j@sha256:e5d05fa41cb4271d32b0882eb0f9cc2d5868c889ec8b5f570254b172fbfc61fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4601993 bytes)**  
+-	Total Size: **4.6 MB (4601992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f2236855c3f81f89a829bea25a64e60cdca7cf6214edf78d6f236f096071649`
+-	Image ID: `sha256:c15318e534467ddb991bc6aaa0e8670d52882a759d7593f3fe347e83c7beccf9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c78bc5325a43b81c6999d5b9c5f4d2c7016e41ae068a41e0c7600c22d7df381c`  
-		Last Modified: Wed, 01 Oct 2025 20:43:29 GMT  
+	-	`sha256:b965186bf2200cc6ed180de593c6321aeb78f9d02e868a209dae449ade06b9ce`  
+		Last Modified: Thu, 02 Oct 2025 05:43:31 GMT  
 		Size: 4.6 MB (4577595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6028942db4e915ab6bb0030686868cf925cdad07ac55602dfa008d682c48d05f`  
-		Last Modified: Wed, 01 Oct 2025 20:43:30 GMT  
-		Size: 24.4 KB (24398 bytes)  
+	-	`sha256:4c9448b8d9155a379a9fe9c82279ee40c4f6574c219cd93413176c20e6c1bf1f`  
+		Last Modified: Thu, 02 Oct 2025 05:43:37 GMT  
+		Size: 24.4 KB (24397 bytes)  
 		MIME: application/vnd.in-toto+json
