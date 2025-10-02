@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:33681d1c1b7e9edc8cbaf9a5e9446d801a3e2c4b1d326e3b40598317ed9d6e6b`
-- Created: `2025-09-24T16:30:37Z`
+- Image ID: `sha256:87c6aa59cf660a289d261d9d6a6b9d315d7f63e2270cdda43abf4889906b55a1`
+- Created: `2025-09-30T13:19:30Z`
 - Virtual Size: ~ 856.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=5914da159fa7226f0d94c7af9179705c15df88cdf7e488560c0c21fa9f746fbc`
+  - `NEO4J_SHA256=0b81f4601987925d0a7a844b4206fc75fefb8cd989bc95b00f1ecbf38afc3e4f`
   - `NEO4J_TARBALL=neo4j-enterprise-2025.09.0-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`

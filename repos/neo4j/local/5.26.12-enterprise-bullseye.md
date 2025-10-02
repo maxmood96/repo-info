@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:efaf6188ae29d528dcd6646a225369a970567a6d7b2115ae52f78f1ebfef6591`
+- Image ID: `sha256:40c5a376b91d7dbaf075ad46c47e2928a91a15165a3edf0950470a11aeabe164`
 - Created: `2025-09-04T06:40:51Z`
-- Virtual Size: ~ 884.12 Mb  
+- Virtual Size: ~ 884.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -875,12 +875,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.60/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.60/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jq=1.6-2.1`
+### `dpkg` source package: `jq=1.6-2.1+deb11u1`
 
 Binary Packages:
 
-- `jq=1.6-2.1`
-- `libjq1:amd64=1.6-2.1`
+- `jq=1.6-2.1+deb11u1`
+- `libjq1:amd64=1.6-2.1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/copyright`)
 
@@ -893,17 +893,17 @@ Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/co
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jq=1.6-2.1
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.6-2.1.dsc' jq_1.6-2.1.dsc 1704 SHA256:9608980174f7bc9d5a844c43dc65d28c9d5f22ee1294be5e2ff0f753dd685cb7
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA256:3ba940b97571c866923f0409678033d33b5a98758dfc174fad8397ed908bc4d9
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.6-2.1.debian.tar.xz' jq_1.6-2.1.debian.tar.xz 14032 SHA256:6cd5029bacc5f071a112ebdea5760f75c878844f05eb25084a072134759603f5
+$ apt-get source -qq --print-uris jq=1.6-2.1+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6-2.1%2bdeb11u1.dsc' jq_1.6-2.1+deb11u1.dsc 2132 SHA256:f423b9a3a2d570b5c1976a69a0e34fa98847c9ffae29896edb19397908756817
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA256:3ba940b97571c866923f0409678033d33b5a98758dfc174fad8397ed908bc4d9
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6-2.1%2bdeb11u1.debian.tar.xz' jq_1.6-2.1+deb11u1.debian.tar.xz 14408 SHA256:377efe63863d7fe3f177abc6d574f81fbc7683bfb87b005efb53da18493e72ce
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jq/1.6-2.1/ (for browsing the source)
-- https://sources.debian.net/src/jq/1.6-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jq/1.6-2.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jq/1.6-2.1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/jq/1.6-2.1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jq/1.6-2.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.1-2`
 
@@ -1688,14 +1688,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/p11-kit/0.23.22-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/p11-kit/0.23.22-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pam=1.4.0-9+deb11u1`
+### `dpkg` source package: `pam=1.4.0-9+deb11u2`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-9+deb11u1`
-- `libpam-modules-bin=1.4.0-9+deb11u1`
-- `libpam-runtime=1.4.0-9+deb11u1`
-- `libpam0g:amd64=1.4.0-9+deb11u1`
+- `libpam-modules:amd64=1.4.0-9+deb11u2`
+- `libpam-modules-bin=1.4.0-9+deb11u2`
+- `libpam-runtime=1.4.0-9+deb11u2`
+- `libpam0g:amd64=1.4.0-9+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1704,17 +1704,17 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.4.0-9+deb11u1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-9%2bdeb11u1.dsc' pam_1.4.0-9+deb11u1.dsc 1941 SHA256:190b705cc9daeee1febb84e8ac6f31219065f08ff41c8d38fbbb424b545d5ca4
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-9%2bdeb11u1.debian.tar.xz' pam_1.4.0-9+deb11u1.debian.tar.xz 120148 SHA256:bcaaad9423c3ab32c5c4f9e363595a84fe3c535aa9568e42e560028a4e33dfcf
+$ apt-get source -qq --print-uris pam=1.4.0-9+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0-9%2bdeb11u2.dsc' pam_1.4.0-9+deb11u2.dsc 2601 SHA256:d2978a79eeffd7ef3e7a259a3965b127187a07decf558e7455bcf928970a0acf
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0-9%2bdeb11u2.debian.tar.xz' pam_1.4.0-9+deb11u2.debian.tar.xz 140736 SHA256:991c216e703e8fd23ab47a99c389f84e08c4a87801f8baaecf00db0184b84914
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pam/1.4.0-9+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.4.0-9+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.4.0-9+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pam/1.4.0-9+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/pam/1.4.0-9+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pam/1.4.0-9+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.36-2+deb11u1`
 
