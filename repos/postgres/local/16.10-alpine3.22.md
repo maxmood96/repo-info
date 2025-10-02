@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:03b5a062f98ede3a4966e79bad265a90ce72ed7db185602db9ef80521ce03446`
-- Created: `2025-09-23T19:31:05Z`
+- Image ID: `sha256:f91cd91a5383acd58e85f385b66f8f54948d6bbf64f542a57601a4c0117f2f48`
+- Created: `2025-09-30T18:58:13Z`
 - Virtual Size: ~ 281.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -313,16 +313,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.2-r0 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.2-r0 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.2-r0 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.2-r0 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.2-r0 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.2-r0 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.2-r0 installed size:
+libssl3-3.5.4-r0 installed size:
 823 KiB
 
-libssl3-3.5.2-r0 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```

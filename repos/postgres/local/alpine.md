@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a0f6316c2982c19f3cfc62aa56d5c6171e2a2afc2d6c3ec67c0a6e061efa41c2`
-- Created: `2025-09-25T18:22:35Z`
-- Virtual Size: ~ 286.30 Mb  
+- Image ID: `sha256:5010d943db8e55c0961d675c21786a5bcbb53b335711e9b00633d9213c002924`
+- Created: `2025-09-30T18:58:13Z`
+- Virtual Size: ~ 286.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -313,16 +313,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.3-r1 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.3-r1 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.3-r1 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.3-r1 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.3-r1 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.3-r1 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.3-r1 installed size:
+libssl3-3.5.4-r0 installed size:
 823 KiB
 
-libssl3-3.5.3-r1 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -460,6 +460,23 @@ libstdc++-14.2.0-r6 installed size:
 
 libstdc++-14.2.0-r6 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `liburing`
+
+```console
+liburing-2.9-r0 description:
+Linux kernel io_uring access library
+
+liburing-2.9-r0 webpage:
+https://git.kernel.dk/cgit/liburing/
+
+liburing-2.9-r0 installed size:
+21 KiB
+
+liburing-2.9-r0 license:
+LGPL-2.1-or-later OR MIT
 
 ```
 
