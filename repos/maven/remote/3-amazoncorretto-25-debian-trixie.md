@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-25-debian-trixie`
 
 ```console
-$ docker pull maven@sha256:20866633ad6cf6475c9f6032fb4191523e7a8ff13501ef976ffbb278fb82ad94
+$ docker pull maven@sha256:cd159bc1d48b300e1bce48f98eeec4bd10ef9ab99fbcfc58d2ddb5b5df342415
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull maven@sha256:20866633ad6cf6475c9f6032fb4191523e7a8ff13501ef976ffbb
 ### `maven:3-amazoncorretto-25-debian-trixie` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:273a9ba84bf35cb0ccd9300b2a77a85dd734c4dbf61a41116a2af672830e79ff
+$ docker pull maven@sha256:31d49f557d4c51a8eaf2b6afab6a45845051407b8901762dbb0a7ba4b6fd223e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.8 MB (273775266 bytes)**  
+-	Total Size: **276.7 MB (276732763 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b9e31db8d5c2f32903b1a4491b7bf861fe7e7b0ac006576be5d280605189694`
+-	Image ID: `sha256:20a7fb68b08d9b026ab925d55b2de71fedc8f7586ba1d4627c3584828df778b3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -68,49 +68,49 @@ CMD ["mvn"]
 		Last Modified: Mon, 29 Sep 2025 23:35:28 GMT  
 		Size: 29.8 MB (29777766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1e07cdd15d4a5fce067b6848b05295375af79dd23fa2e03da5f31df90e5ab7c`  
-		Last Modified: Wed, 01 Oct 2025 14:42:13 GMT  
-		Size: 234.8 MB (234753897 bytes)  
+	-	`sha256:add9c18f2266e121ddef7b9d4a6a71cdc3b0a4a15346fcf9233a417a105826c0`  
+		Last Modified: Thu, 02 Oct 2025 14:42:45 GMT  
+		Size: 237.7 MB (237711378 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86dae8666a1da14b084385b34964b7d45e3b6eb4a86c00d84dee57b7c050d685`  
-		Last Modified: Tue, 30 Sep 2025 00:58:29 GMT  
-		Size: 9.2 MB (9242568 bytes)  
+	-	`sha256:edf913faee7db263fcbc22bf3fc31064928f46c00d1be95e7a7d45faa4065ca2`  
+		Last Modified: Thu, 02 Oct 2025 13:18:08 GMT  
+		Size: 9.2 MB (9242584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90241165c737a8564a761e1d129ea1a4e9ccfc51981379512ba1c25874c3e3dc`  
-		Last Modified: Tue, 30 Sep 2025 00:58:29 GMT  
-		Size: 848.0 B  
+	-	`sha256:b50cd470a2d0f19b64609f93526c9a724602358041289ed70cc0ee059f4f11f0`  
+		Last Modified: Thu, 02 Oct 2025 13:18:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f157df299c2df63299461031f8bb50e32d8fc1fb22fac820fea8a44be13a84dc`  
-		Last Modified: Tue, 30 Sep 2025 00:58:29 GMT  
-		Size: 155.0 B  
+	-	`sha256:5aceadef46ecc0afceeac8076d9b2f6514583732c439c3bbb5af6fc15ba30ef7`  
+		Last Modified: Thu, 02 Oct 2025 13:17:33 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-25-debian-trixie` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:eec6194e5dec9365154aad0dd6863513ee0b534e5e1631267db2e89d57f00057
+$ docker pull maven@sha256:0deebcb22b016902d208e56d5b985d744b43a900a627ddf6a211eacccaf3c90a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3129593 bytes)**  
+-	Total Size: **3.1 MB (3129649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be90223913da573eed00ec25fd080b5bb04ee3398cdf61adf95750a17ca17863`
+-	Image ID: `sha256:670e3aa2ac0218a58213a95345f8841a8a740a149840c29b24a04d6dc81a9f49`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:48e75e2555c37cf6145d7ffbebfad99f3a4f01bc47462909067f1766d4ed7c37`  
-		Last Modified: Wed, 01 Oct 2025 14:27:47 GMT  
-		Size: 3.1 MB (3110352 bytes)  
+	-	`sha256:6129f52abd5c22152b2f45bb6f313afc1eb32c6b91a5329c4b27a7db90afb651`  
+		Last Modified: Thu, 02 Oct 2025 14:29:21 GMT  
+		Size: 3.1 MB (3110406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cd30ef87e1edf05b541a9730d63aaabf6cc10e514073a298fdad19a2560232c3`  
-		Last Modified: Wed, 01 Oct 2025 14:27:47 GMT  
-		Size: 19.2 KB (19241 bytes)  
+	-	`sha256:adbd5016b2937b2374ecae115e2c5051a2234cfb6c3a7d61dd0ba23d2071d919`  
+		Last Modified: Thu, 02 Oct 2025 14:29:22 GMT  
+		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-25-debian-trixie` - linux; arm64 variant v8
