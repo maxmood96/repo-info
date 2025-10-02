@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-tools-deps-1.12.3.1577-bullseye`
 
 ```console
-$ docker pull clojure@sha256:6dfc5b572f50b9ee65b0e2b002815f658f585e3b03826f3f3e0c731fc563fdcb
+$ docker pull clojure@sha256:2b97a515fc568622a3e14b5539d7ca8609f2b1708429a45f11c2bf0165a92478
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:6dfc5b572f50b9ee65b0e2b002815f658f585e3b03826f3f3e0
 ### `clojure:temurin-8-tools-deps-1.12.3.1577-bullseye` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:0d5a2c6493a6e24294f1df5f7b8e7109878228ad64d8cf4e1d3b86e00626971f
+$ docker pull clojure@sha256:74a8af072b3d55de5fd3d23a93461e410a6ad6e12924e8cd9cde4d926e76b7b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.0 MB (178047907 bytes)**  
+-	Total Size: **178.0 MB (178047755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c85557f5df8869631c8ff256f564f2fff16af2ac64193025ccb354da44856d2`
+-	Image ID: `sha256:98d80ea1de58dd64ae2aa44fdc2ffcebd50361c1dc76bdc60fc1fa9119e8ba3b`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -49,45 +49,45 @@ CMD ["clj"]
 		Last Modified: Mon, 29 Sep 2025 23:35:07 GMT  
 		Size: 53.8 MB (53756064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50a702fde8e19e23f52aae83b0c182ee09d2efb516c2f2a202f67b5b98d3315a`  
-		Last Modified: Tue, 30 Sep 2025 00:51:29 GMT  
-		Size: 54.7 MB (54731283 bytes)  
+	-	`sha256:ef30ed1e4d6c8801c931ed9a76d7f3211ee14ba703ca30f66cb3b22a49015141`  
+		Last Modified: Thu, 02 Oct 2025 08:56:05 GMT  
+		Size: 54.7 MB (54731353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3756c7c8aac4652545f0c81047ecdd29697fd42f1d13cd941ac76e168aa97b7`  
-		Last Modified: Tue, 30 Sep 2025 00:51:27 GMT  
-		Size: 69.6 MB (69559915 bytes)  
+	-	`sha256:bf92c24dbbe33bf57c1316c651c9e7c8127375fa8659d3b40cf2519abb0fd6f2`  
+		Last Modified: Thu, 02 Oct 2025 08:56:06 GMT  
+		Size: 69.6 MB (69559694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b62634d92b74d3f1e1b8b0c9416165e51bf093d7c45c1f16db18cdc4aebc5d8`  
-		Last Modified: Tue, 30 Sep 2025 00:51:23 GMT  
-		Size: 613.0 B  
+	-	`sha256:7751f090eda5dd55c44a899feff50f22155af2a7000bfa8c57e0ba1f15e44f11`  
+		Last Modified: Thu, 02 Oct 2025 08:56:00 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-tools-deps-1.12.3.1577-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:44a0d3da8102635890fd44bc14722bdb1b9cf1bb5037cd6710cbf20dcb521c10
+$ docker pull clojure@sha256:93edab080dfbf25f8c959e132b1227003aa54a7e9153afdc06efabb6e575097b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7531514 bytes)**  
+-	Total Size: **7.5 MB (7531513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe5b2c2bf0be30bd724bdc79e45a52564777af37e51c3269be54356c4fbba84c`
+-	Image ID: `sha256:92ce3458c2dea5da91df9fc4448532bb04aeb0ad3a349f00569277453b0a4872`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:32b417232e83ec926eb1529670e190df9cb003348d5511b6ec5357a4d0d990f9`  
-		Last Modified: Wed, 01 Oct 2025 15:43:23 GMT  
+	-	`sha256:174fae91130e96489b91a3d3daea3636ca1a564354fc5fda5493ede739314646`  
+		Last Modified: Thu, 02 Oct 2025 12:46:29 GMT  
 		Size: 7.5 MB (7517277 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09576f4c1e90ffc5523471e5a720caa1b38bf0d32990a515e790818bd51f6654`  
-		Last Modified: Wed, 01 Oct 2025 15:43:24 GMT  
-		Size: 14.2 KB (14237 bytes)  
+	-	`sha256:7c4f1fc4f6fb3e12edb9b1000aa1f4765fe2b8497ede6269db5b356b089ff15a`  
+		Last Modified: Thu, 02 Oct 2025 12:46:30 GMT  
+		Size: 14.2 KB (14236 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-tools-deps-1.12.3.1577-bullseye` - linux; arm64 variant v8
