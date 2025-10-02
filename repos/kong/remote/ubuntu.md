@@ -1,7 +1,7 @@
 ## `kong:ubuntu`
 
 ```console
-$ docker pull kong@sha256:30597ffe2fc98160b979311d18f7649edd1ed3bf145063e99b1ef89775a668d6
+$ docker pull kong@sha256:293fb8c293b4920023131558ef314e52086bb4c92cbb3296f60295811aa006ad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull kong@sha256:30597ffe2fc98160b979311d18f7649edd1ed3bf145063e99b1ef8
 ### `kong:ubuntu` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:4c19d5e04a76d2ae7df943a376ace1c3e23beaed5236adc4c0e87aac1c665d61
+$ docker pull kong@sha256:1471adb3f88422fb3d49501df8b1fdf59c558ab689c051cb727be683c2568dd1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.4 MB (120408151 bytes)**  
+-	Total Size: **122.8 MB (122822748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38930d56606d4e6c271cce8c63b4bf401a728c8887517ebb0ea15823411cd51b`
+-	Image ID: `sha256:36c239116ffd706bbd0cee947711bc4095f717273c7c372be0d3714fdb618862`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
@@ -34,7 +34,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Thu, 05 Jun 2025 09:03:49 GMT
 LABEL org.opencontainers.image.version=24.04
 # Thu, 05 Jun 2025 09:03:49 GMT
-ADD file:dafefa97de6dc66a6734ec6f05e58125ce01225cccce3f50662330c252aad518 in / 
+ADD file:d9cb8116905a82675c3c2cbb4782e50ef8cacfc16be3654bc070281a3c8ce646 in / 
 # Thu, 05 Jun 2025 09:03:49 GMT
 CMD ["/bin/bash"]
 # Thu, 05 Jun 2025 09:03:49 GMT
@@ -75,44 +75,44 @@ CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:953cdd4133718b72c5d0a78e754c1405c02510fdb5237265f7955863f1757f83`  
-		Last Modified: Wed, 10 Sep 2025 09:09:40 GMT  
-		Size: 29.7 MB (29723450 bytes)  
+	-	`sha256:a1a21c96bc16121569dd937bcd1c745a5081629b3b08a664446602ded91e10a4`  
+		Last Modified: Tue, 30 Sep 2025 16:57:55 GMT  
+		Size: 29.7 MB (29723011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d32a737aeb4167a859699887d661b37d589e3912ec02074d61c9874d05dffce9`  
-		Last Modified: Mon, 15 Sep 2025 22:19:52 GMT  
-		Size: 125.0 B  
+	-	`sha256:fd6a4e9728b31c5b2f632df2fc077f8db9cea57b494ddfa18e0295dc58ed860e`  
+		Last Modified: Thu, 02 Oct 2025 05:51:32 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbbd7d3d0fb9226e4d5f77687f5c6ff36bb9dd1d1add48fa190ab6aa5f66926f`  
-		Last Modified: Mon, 15 Sep 2025 22:20:01 GMT  
-		Size: 90.7 MB (90683414 bytes)  
+	-	`sha256:f0de3bcdfa9a47a80cf19f2355b8648c6d7b4b1b8d3828bcf3e110ae5654f57e`  
+		Last Modified: Thu, 02 Oct 2025 08:52:00 GMT  
+		Size: 93.1 MB (93098445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df30bba013e8ad37a8eefab77989731e08963276c2b67790edf321591f2a25ae`  
-		Last Modified: Mon, 15 Sep 2025 22:19:52 GMT  
+	-	`sha256:7a56866d3b9d8a343d3cddbc93eb12dc31bec71ded7e89f065ab7c6db26e72cc`  
+		Last Modified: Thu, 02 Oct 2025 05:16:54 GMT  
 		Size: 1.2 KB (1162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kong:ubuntu` - unknown; unknown
 
 ```console
-$ docker pull kong@sha256:2fef901c98c46906a1354c398f4bac15fd535f413fb1b7fb1226964801e2c3d7
+$ docker pull kong@sha256:a7e97d6efb195c3cde661b610a20cc2622b454d5aeb4a06d14788cd011f85b67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.4 MB (5437395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:900359cfd9dd50cf616c65d415c62228193851fd8b3ccbc50ca6fe9af4e39654`
+-	Image ID: `sha256:734d0face96e4e955f63634c6aee051bafce3fcc8f5f16c3d24fb697bc6470f6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7aab9f71b6b92b83016eba41bc8aebad9641898b5bfa9989d6d7de910cf6198b`  
-		Last Modified: Mon, 15 Sep 2025 23:51:22 GMT  
+	-	`sha256:833e13aa1599f57c006734d9af0589368cfff7624b1ab3e499b19732339436f5`  
+		Last Modified: Thu, 02 Oct 2025 08:51:24 GMT  
 		Size: 5.4 MB (5421134 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a0125d3b6f729fe5019e34209322e91d0ab2f975dcc3c4fb9533f757fc115d36`  
-		Last Modified: Mon, 15 Sep 2025 23:51:23 GMT  
+	-	`sha256:bf2e7092256abb52a2329bffe0debe0edd4cb27b70e390e1fa19762519d492da`  
+		Last Modified: Thu, 02 Oct 2025 08:51:25 GMT  
 		Size: 16.3 KB (16261 bytes)  
 		MIME: application/vnd.in-toto+json
 
