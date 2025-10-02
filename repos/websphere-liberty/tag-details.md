@@ -12424,7 +12424,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 5.8 MB (5819341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53873a99f3ef6d4323cb0cd5c74d43e580424b6c08eac4718d18f865eeec35dd`  
-		Last Modified: Thu, 02 Oct 2025 12:21:17 GMT  
+		Last Modified: Thu, 02 Oct 2025 17:32:05 GMT  
 		Size: 365.0 MB (364950158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93d083f3a30b23e369fbc3510091f1fb68f06fc8170197b519244698e6053971`  
@@ -13400,7 +13400,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.7 MB (2728154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84513ae4c812fea3ffde67e29b2de4bd570c66b561e1e2cfe0c3ec1897d147f6`  
-		Last Modified: Thu, 02 Oct 2025 14:11:08 GMT  
+		Last Modified: Thu, 02 Oct 2025 17:04:32 GMT  
 		Size: 365.0 MB (364951267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af493851d586c8327b2c685317eb8feef8474089f707170d7668dce2f9d5e094`  
@@ -14594,7 +14594,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 5.8 MB (5819341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53873a99f3ef6d4323cb0cd5c74d43e580424b6c08eac4718d18f865eeec35dd`  
-		Last Modified: Thu, 02 Oct 2025 12:21:17 GMT  
+		Last Modified: Thu, 02 Oct 2025 17:32:05 GMT  
 		Size: 365.0 MB (364950158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93d083f3a30b23e369fbc3510091f1fb68f06fc8170197b519244698e6053971`  
@@ -17580,7 +17580,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 5.8 MB (5819341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53873a99f3ef6d4323cb0cd5c74d43e580424b6c08eac4718d18f865eeec35dd`  
-		Last Modified: Thu, 02 Oct 2025 12:21:17 GMT  
+		Last Modified: Thu, 02 Oct 2025 17:32:05 GMT  
 		Size: 365.0 MB (364950158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93d083f3a30b23e369fbc3510091f1fb68f06fc8170197b519244698e6053971`  
