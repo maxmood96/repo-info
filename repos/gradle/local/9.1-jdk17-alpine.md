@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6001d4fbdcf54481d367140716ac97fe1e8839d99ac6854fd8df889a06c40ca3`
-- Created: `2025-09-19T14:40:42Z`
-- Virtual Size: ~ 599.62 Mb  
+- Image ID: `sha256:98e11b3b0b570f74473c640a3661ca0847439ea40a192d7e62570d1487b4031e`
+- Created: `2025-09-30T09:31:25Z`
+- Virtual Size: ~ 600.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -2078,6 +2078,23 @@ Apache-2.0 AND BSD-2-Clause
 
 ```
 
+### `apk` package: `tar`
+
+```console
+tar-1.35-r3 description:
+Utility used to store, backup, and transport files
+
+tar-1.35-r3 webpage:
+https://www.gnu.org/software/tar/
+
+tar-1.35-r3 installed size:
+403 KiB
+
+tar-1.35-r3 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `tzdata`
 
 ```console
@@ -2109,6 +2126,23 @@ utmps-libs-0.1.3.1-r0 installed size:
 
 utmps-libs-0.1.3.1-r0 license:
 ISC
+
+```
+
+### `apk` package: `wget`
+
+```console
+wget-1.25.0-r1 description:
+Network utility to retrieve files from the Web
+
+wget-1.25.0-r1 webpage:
+https://www.gnu.org/software/wget/wget.html
+
+wget-1.25.0-r1 installed size:
+407 KiB
+
+wget-1.25.0-r1 license:
+GPL-3.0-or-later WITH OpenSSL-Exception
 
 ```
 

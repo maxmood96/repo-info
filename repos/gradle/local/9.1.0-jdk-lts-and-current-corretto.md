@@ -2,18 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b763c4c2e95b807260af2166a2c7575920f53e301dddae79ac872cb3b0ca4b2`
-- Created: `2025-09-19T14:40:42Z`
-- Virtual Size: ~ 1.24 Gb  
+- Image ID: `sha256:0a52068e9f95bbf362d1ec0b939d3a24c6c655885e13176cf188732ff38e2074`
+- Created: `2025-09-30T09:31:25Z`
+- Virtual Size: ~ 942.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto`
-  - `JAVA_LTS_HOME=/usr/lib/jvm/java-21-amazon-corretto`
-  - `JAVA_CURRENT_HOME=/usr/lib/jvm/java-24-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-25-amazon-corretto`
+  - `JAVA_LTS_HOME=/usr/lib/jvm/java-25-amazon-corretto`
+  - `JAVA_CURRENT_HOME=/usr/lib/jvm/java-25-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.1.0`
 
@@ -740,49 +740,29 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/66e7ab382ba0b0e850343027b4144c27f21dd87d8e3c999a351655d045b173da/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-21-amazon-corretto-21.0.8+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-25.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-21.0.8+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/66e7ab382ba0b0e850343027b4144c27f21dd87d8e3c999a351655d045b173da/SRPMS/../../../../blobstore/25f345df4bf33be7b7273f32bb0d66efbf23da6b13ad1bc6f92e2059755c6927/java-21-amazon-corretto-21.0.8+9-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-21-amazon-corretto-devel-21.0.8+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-devel-25.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-devel-21.0.8+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/66e7ab382ba0b0e850343027b4144c27f21dd87d8e3c999a351655d045b173da/SRPMS/../../../../blobstore/25f345df4bf33be7b7273f32bb0d66efbf23da6b13ad1bc6f92e2059755c6927/java-21-amazon-corretto-21.0.8+9-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-21-amazon-corretto-headless-21.0.8+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-headless-25.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-headless-21.0.8+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/66e7ab382ba0b0e850343027b4144c27f21dd87d8e3c999a351655d045b173da/SRPMS/../../../../blobstore/25f345df4bf33be7b7273f32bb0d66efbf23da6b13ad1bc6f92e2059755c6927/java-21-amazon-corretto-21.0.8+9-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-21-amazon-corretto-jmods-21.0.8+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-jmods-25.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-jmods-21.0.8+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/66e7ab382ba0b0e850343027b4144c27f21dd87d8e3c999a351655d045b173da/SRPMS/../../../../blobstore/25f345df4bf33be7b7273f32bb0d66efbf23da6b13ad1bc6f92e2059755c6927/java-21-amazon-corretto-21.0.8+9-1.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 
