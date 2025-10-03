@@ -1,10 +1,10 @@
-# `wordpress:6.8.2-php8.2-fpm-alpine`
+# `wordpress:6.8.3-php8.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1db6c934129822e801df0e8bb80d83cdfb3cab09478e3d91f1fd5962e62338ae`
-- Created: `2025-08-12T18:29:25Z`
-- Virtual Size: ~ 272.85 Mb  
+- Image ID: `sha256:d1fd508ee11c8c2450f7c6ce38621901cb82f0afd6285ed6b9ad553ee61880c6`
+- Created: `2025-09-30T18:19:42Z`
+- Virtual Size: ~ 272.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -503,16 +503,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.0-r0 description:
+imagemagick-7.1.2.3-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.0-r0 webpage:
+imagemagick-7.1.2.3-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.0-r0 installed size:
-3635 KiB
+imagemagick-7.1.2.3-r0 installed size:
+3658 KiB
 
-imagemagick-7.1.2.0-r0 license:
+imagemagick-7.1.2.3-r0 license:
 ImageMagick
 
 ```
@@ -520,16 +520,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.0-r0 description:
+imagemagick-jpeg-7.1.2.3-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.0-r0 webpage:
+imagemagick-jpeg-7.1.2.3-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.0-r0 installed size:
+imagemagick-jpeg-7.1.2.3-r0 installed size:
 54 KiB
 
-imagemagick-jpeg-7.1.2.0-r0 license:
+imagemagick-jpeg-7.1.2.3-r0 license:
 ImageMagick
 
 ```
@@ -537,16 +537,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.0-r0 description:
+imagemagick-libs-7.1.2.3-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.0-r0 webpage:
+imagemagick-libs-7.1.2.3-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.0-r0 installed size:
+imagemagick-libs-7.1.2.3-r0 installed size:
 4273 KiB
 
-imagemagick-libs-7.1.2.0-r0 license:
+imagemagick-libs-7.1.2.3-r0 license:
 ImageMagick
 
 ```
@@ -554,16 +554,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.0-r0 description:
+imagemagick-pdf-7.1.2.3-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.0-r0 webpage:
+imagemagick-pdf-7.1.2.3-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.0-r0 installed size:
+imagemagick-pdf-7.1.2.3-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.0-r0 license:
+imagemagick-pdf-7.1.2.3-r0 license:
 ImageMagick
 
 ```
@@ -571,16 +571,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.0-r0 description:
+imagemagick-tiff-7.1.2.3-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.0-r0 webpage:
+imagemagick-tiff-7.1.2.3-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.0-r0 installed size:
+imagemagick-tiff-7.1.2.3-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.0-r0 license:
+imagemagick-tiff-7.1.2.3-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.0-r0 description:
+imagemagick-webp-7.1.2.3-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.0-r0 webpage:
+imagemagick-webp-7.1.2.3-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.0-r0 installed size:
+imagemagick-webp-7.1.2.3-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.0-r0 license:
+imagemagick-webp-7.1.2.3-r0 license:
 ImageMagick
 
 ```
@@ -758,16 +758,16 @@ BSD-2-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.3-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.3-r0 license:
 MIT
 
 ```
@@ -1557,16 +1557,16 @@ GPL-3.0-or-later
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.0-r0 description:
+tiff-4.7.1-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.7.0-r0 webpage:
+tiff-4.7.1-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.0-r0 installed size:
-457 KiB
+tiff-4.7.1-r0 installed size:
+453 KiB
 
-tiff-4.7.0-r0 license:
+tiff-4.7.1-r0 license:
 libtiff
 
 ```

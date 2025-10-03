@@ -1,10 +1,10 @@
-# `wordpress:6.8.2-php8.1-fpm-alpine`
+# `wordpress:6.8.3-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bab3106b7a29badc1a0cc656cdd548c1df51211383a7916820c5f919436c93ef`
-- Created: `2025-08-12T18:29:25Z`
-- Virtual Size: ~ 268.66 Mb  
+- Image ID: `sha256:345f88474cbeb90018175e59a566abdc3ced70fa1709748e9906de6dad5aebae`
+- Created: `2025-09-30T18:19:42Z`
+- Virtual Size: ~ 268.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -741,16 +741,16 @@ BSD-2-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.0-r0 description:
+libexpat-2.7.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.0-r0 webpage:
+libexpat-2.7.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.0-r0 installed size:
-129 KiB
+libexpat-2.7.3-r0 installed size:
+133 KiB
 
-libexpat-2.7.0-r0 license:
+libexpat-2.7.3-r0 license:
 MIT
 
 ```
@@ -1523,16 +1523,16 @@ GPL-3.0-or-later
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.0-r0 description:
+tiff-4.7.1-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.7.0-r0 webpage:
+tiff-4.7.1-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.0-r0 installed size:
-457 KiB
+tiff-4.7.1-r0 installed size:
+453 KiB
 
-tiff-4.7.0-r0 license:
+tiff-4.7.1-r0 license:
 libtiff
 
 ```
