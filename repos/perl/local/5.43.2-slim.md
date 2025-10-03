@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af96cbff12a02fb1568d69bd7c1ee1abd05d2cbbfa8587cd53ac643e24808877`
+- Image ID: `sha256:ba903806d6eb865e1a27bb6d845feacb521483b30d3a90d4b1fe1e4a3e30717e`
 - Created: `2025-08-24T06:40:17Z`
 - Virtual Size: ~ 193.64 Mb  
   (total size of all layers on-disk)
@@ -1545,11 +1545,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.43-1`
+### `dpkg` source package: `linux=6.12.48-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.43-1`
+- `linux-libc-dev=6.12.48-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1563,17 +1563,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.43-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43-1.dsc' linux_6.12.43-1.dsc 219407 SHA256:3a0ade34fe8cbe46ca1e68f9b74db7923d12d3ce14d7702380f87d75b8ed2d43
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43.orig.tar.xz' linux_6.12.43.orig.tar.xz 151168676 SHA256:325d46f815ef470fe3502d67cfe14ced7ecc727132d6290a13227598b0221d63
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43-1.debian.tar.xz' linux_6.12.43-1.debian.tar.xz 1687580 SHA256:dab5e6c12aafbeea2a921e3d4740bb75474f6616ef38f1e095320213fc7181ad
+$ apt-get source -qq --print-uris linux=6.12.48-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48-1.dsc' linux_6.12.48-1.dsc 219407 SHA256:24a2790d6f213e30fdeae7ebf1f7c159ee07b4d519c2f5699f4b5697190f4426
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48.orig.tar.xz' linux_6.12.48.orig.tar.xz 151183840 SHA256:855183e4e49637975e818ad422ed2cd4e4cc3058cc23b727abd4eb437d0952da
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48-1.debian.tar.xz' linux_6.12.48-1.debian.tar.xz 1720736 SHA256:ca2f90210388e7ac139b6f395558b996646ab8a163cdb82e57003e5522ab946d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.43-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.43-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.43-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.48-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.48-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.48-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -2226,12 +2226,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.46.1-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.46.1-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=257.8-1~deb13u1`
+### `dpkg` source package: `systemd=257.8-1~deb13u2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=257.8-1~deb13u1`
-- `libudev1:amd64=257.8-1~deb13u1`
+- `libsystemd0:amd64=257.8-1~deb13u2`
+- `libudev1:amd64=257.8-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2247,17 +2247,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=257.8-1~deb13u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.dsc' systemd_257.8-1~deb13u1.dsc 8617 SHA256:33cae5644d96e7b107dbc7aba0267a1f2d276c515b973828e5be2bc5f593367e
+$ apt-get source -qq --print-uris systemd=257.8-1~deb13u2
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.dsc' systemd_257.8-1~deb13u2.dsc 8271 SHA256:4e65979b17348341b788be9f7c24a30bb3ec4820a7e0a124da5621c3fdfe5684
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8.orig.tar.gz' systemd_257.8.orig.tar.gz 16385060 SHA256:f280278161446fe3838bedb970c7b3998043ad107f7627735a81483218c6f6f9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.debian.tar.xz' systemd_257.8-1~deb13u1.debian.tar.xz 182904 SHA256:f5581e12e5cbf0fd8c250e473f289a7e66a6c4f8e4ae0762e467fee9faea5183
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.debian.tar.xz' systemd_257.8-1~deb13u2.debian.tar.xz 183536 SHA256:d937a18c390638a2b344d3b4f331d3e73376f40037f5273036c96aeed5b2ea16
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.8-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.8-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
