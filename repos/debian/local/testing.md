@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.5
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.5.dsc' apt_3.1.5.dsc 3091 SHA256:c3def951f685599231b0e5ab0289fd75ef730cdcb3a69e42a83ebe631ac14433
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.5.tar.xz' apt_3.1.5.tar.xz 2429228 SHA256:9a3fb60d23e7ffda0651e64f548db77cade3e33ac4fd1fe469d405ff28bfa8bb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.5/
 
-- https://sources.debian.net/src/apt/3.1.5/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1176,20 +1170,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6t64/copyright`, `/usr/share/d
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.10.1-1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.1-1.dsc' nettle_3.10.1-1.dsc 2053 SHA256:7b440850ce04b341363f3f5e23dfb9f96ebf7d52e0ef7ba2d07120c90ca61b3c
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.1.orig.tar.gz' nettle_3.10.1.orig.tar.gz 2643267 SHA256:b0fcdd7fc0cdea6e80dcf1dd85ba794af0d5b4a57e26397eee3bc193272d9132
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.1-1.debian.tar.xz' nettle_3.10.1-1.debian.tar.xz 25036 SHA256:2d40d02ddac5985d8833532a17a0ef96cb685ee0547ee9617ec13793b22e34c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.10.1-1/
 
-- https://sources.debian.net/src/nettle/3.10.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.10.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.3-1`
 
