@@ -21,7 +21,7 @@
 ## `ubuntu:22.04`
 
 ```console
-$ docker pull ubuntu@sha256:c35ed11f8af26ef79671ab5536d90cdcf968d5d62f0f852b81f46f58b456fc2f
+$ docker pull ubuntu@sha256:09506232a8004baa32c47d68f1e5c307d648fdd59f5e7eaa42aaf87914100db3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -258,54 +258,54 @@ $ docker pull ubuntu@sha256:53a9b8428d050a6c45d2225bb24f22f59f69803a7651f58d14c8
 ### `ubuntu:22.04` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:ed85bae8cad985d4310aee54e91f24f9992a68d9389dcbfb84f725fa55706735
+$ docker pull ubuntu@sha256:bdc3348d79f07cb718628a17808b52dba987db69c9bc210706f6662d8f5abcaf
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.0 MB (27042655 bytes)**  
+-	Total Size: **27.0 MB (27042913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e7f7d2eb5b4a876520f9198abc763197d4eb650f19703aaa066479a2ba5277e`
+-	Image ID: `sha256:58a94354d25d10f6e53b83cc71791a21a7792f7cec9fdbbcbc038adfdf0fded6`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:44:17 GMT
+# Wed, 01 Oct 2025 07:51:02 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:44:17 GMT
+# Wed, 01 Oct 2025 07:51:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:44:18 GMT
+# Wed, 01 Oct 2025 07:51:04 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:44:18 GMT
+# Wed, 01 Oct 2025 07:51:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:44:58 GMT
-ADD file:c50534025103b387d6edca09570ec78d030f9514a469228d4d2c12ddbc059678 in / 
-# Tue, 19 Aug 2025 17:45:02 GMT
+# Wed, 01 Oct 2025 07:52:24 GMT
+ADD file:49eb482a54d27b9c245629c57f816d00d3f70ec4464924555d739fc1cf52432c in / 
+# Wed, 01 Oct 2025 07:52:30 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d152ae8117dc009abe5def1b70dd1fee217a52c100ea2406284b82890b29223e`  
-		Last Modified: Wed, 03 Sep 2025 03:52:06 GMT  
-		Size: 27.0 MB (27042655 bytes)  
+	-	`sha256:b665bdbb2ecbdbd42e0b5941fb0e987604652880a86a9c6e39dc865d4608cf7c`  
+		Last Modified: Thu, 02 Oct 2025 23:19:28 GMT  
+		Size: 27.0 MB (27042913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:22.04` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:732e4cad88810e83c4182b0caec82dbbb38774cb677e5fb34c8eb9b504c11f12
+$ docker pull ubuntu@sha256:d7283348e263f6e6524e229df6689615cc26a3c29b6021140225d2c08eb3d302
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 MB (1973990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65ec1c08259d7961da651701d1253cfe6f37f05c608567f5a7050e46ed1a399d`
+-	Image ID: `sha256:0001d54db95a8880a1da68b656e7236b31d933bfa4b879e5b8654d6b541dd897`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b4e7f36d51961be74232fde71dd7fcaa1a545db7c91505378c5269fc2ad114ee`  
-		Last Modified: Wed, 03 Sep 2025 05:04:29 GMT  
+	-	`sha256:adc571a54fef723925907dded597e81b9ca4f2d1f6c7c99d049f0d905c5e483b`  
+		Last Modified: Fri, 03 Oct 2025 02:04:27 GMT  
 		Size: 2.0 MB (1973990 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -366,7 +366,7 @@ $ docker pull ubuntu@sha256:02257d9a3c34df374822fe07624f053ed8e0fec5a65dd667b504
 ## `ubuntu:24.04`
 
 ```console
-$ docker pull ubuntu@sha256:fdb6c9ceb1293dcb0b7eda5df195b15303b01857d7b10f98489e7691d20aa2a1
+$ docker pull ubuntu@sha256:728785b59223d755e3e5c5af178fab1be7031f3522c5ccd7a0b32b80d8248123
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -603,54 +603,54 @@ $ docker pull ubuntu@sha256:54e7ffa644a94d0416dcb6814eb790f63507722ef243e96074c9
 ### `ubuntu:24.04` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:f82697e72ac91298f89c0ffece27d77eeaa224047b9eaf1cc7dabdf99296473c
+$ docker pull ubuntu@sha256:e4312cfaf1ff4a73549d4485e64e9c90a1d4e939edcb51430bece4ccc508ad13
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.0 MB (30950703 bytes)**  
+-	Total Size: **31.0 MB (30950446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d80783f99e02476bbec80cf713ce1656bb621b6b0d07d30ceb432ede96756d`
+-	Image ID: `sha256:1f8741c07f9f104965bc16d83f9dc5f0bade7c88c044cdaf8dce5f4b79995210`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:26 GMT
 ARG RELEASE
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:27 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:27 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Sep 2025 06:24:10 GMT
+# Tue, 30 Sep 2025 15:12:28 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 10 Sep 2025 06:24:57 GMT
-ADD file:58fbc6777cd47d1e58396e2c0f70255ae3bd63d0ac2ea2138ed6e5e91fdd70b1 in / 
-# Wed, 10 Sep 2025 06:25:02 GMT
+# Tue, 30 Sep 2025 15:13:37 GMT
+ADD file:13e2355f84c9f5f1ba6aa2fa1db4359cbe23312f7b2905fc8b976899a09fdfef in / 
+# Tue, 30 Sep 2025 15:13:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:fc46b4719a7bc0e446bd2b472a339bdca3990f164daf9dde3e710206f93383d0`  
-		Last Modified: Tue, 16 Sep 2025 19:54:09 GMT  
-		Size: 31.0 MB (30950703 bytes)  
+	-	`sha256:2d699e6bd7ed3cc40f40b8118f763dc4303b0e97b911de163cabf78f19b5d434`  
+		Last Modified: Thu, 02 Oct 2025 23:21:18 GMT  
+		Size: 31.0 MB (30950446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:24.04` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:bccd7583bf2a3ef6332d688cf9b4ef2618d2f84da5f661473a195adaf7bdba5a
+$ docker pull ubuntu@sha256:18ec33a693e2670b23753d357c6f6810686f565dfa1d9696832ec3bbf2a92708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.9 MB (1931899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49e24f0093590f44296c712bda33bf428829b0fe5a373ed8da4850f1d7a1360d`
+-	Image ID: `sha256:3a7aaf888c713a59347710e6cf67cb3e196f691c93908ebab8f0aad3abc8338c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bb4ac575ae5f28d210b4f15b1d596b7eea4a104ae1fb57bbd5f7980fc3ef2b07`  
-		Last Modified: Tue, 16 Sep 2025 23:04:29 GMT  
+	-	`sha256:fba8514450788b7092d97623082d3023f47c48740173fd4973ffd0f36332fc7a`  
+		Last Modified: Fri, 03 Oct 2025 02:04:30 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -711,7 +711,7 @@ $ docker pull ubuntu@sha256:40ec74ae656452e28a6fb83517799b64a1a6efd5904d29abfdae
 ## `ubuntu:25.04`
 
 ```console
-$ docker pull ubuntu@sha256:fecdb5b9bf8874108b4fc23fac669b10968e54c450382b20d7db92565e7655ed
+$ docker pull ubuntu@sha256:103c7471649a4fd9996fe73dff20f46082e4e0f0f6240c91954b8b09c38b6faf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -948,55 +948,55 @@ $ docker pull ubuntu@sha256:e68f57098b50f3aaaf19e2ccfe330f8457e3a085845a5d8dd608
 ### `ubuntu:25.04` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:35b6203082444c27e8c2228f3fac4ae0e94ff21de1d446491e5dca4177b738d5
+$ docker pull ubuntu@sha256:1a9533846e35b50ec9bfdc9876f1493247ecb2d99c3977b21370990259ce6e87
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29739371 bytes)**  
+-	Total Size: **29.7 MB (29737967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:acac04670a0161a425cecc50472049f7f39cfa92f920a33aaf23dd20f1cb0cd3`
+-	Image ID: `sha256:b6fb15445480ceb46bc5e5f99b01124466d279a334b68f5d45abef88cc869414`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 10 Sep 2025 06:02:24 GMT
+# Thu, 25 Sep 2025 20:56:00 GMT
 ARG RELEASE
-# Wed, 10 Sep 2025 06:02:27 GMT
+# Thu, 25 Sep 2025 20:56:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Sep 2025 06:02:29 GMT
+# Thu, 25 Sep 2025 20:56:01 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Sep 2025 06:02:33 GMT
+# Thu, 25 Sep 2025 20:56:02 GMT
 LABEL org.opencontainers.image.version=25.04
-# Wed, 10 Sep 2025 06:05:06 GMT
-ADD file:68087671954e3932e15509e9cc9b7db565054e94955fb28818d1de13284ebd5f in / 
-# Wed, 10 Sep 2025 06:05:14 GMT
+# Thu, 25 Sep 2025 20:56:50 GMT
+ADD file:849fe8318284428b639d3526ad680d7a4abbb8a6c92fe568aa9f007015249211 in / 
+# Thu, 25 Sep 2025 20:56:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:382069180cfc3bdd5a5ad6cfdb0c3c9c4a3ce51c1274664b135e93e5a31dacf5`  
-		Last Modified: Tue, 16 Sep 2025 19:56:08 GMT  
-		Size: 29.7 MB (29739371 bytes)  
+	-	`sha256:bdda45c57df51a6f4f8890e16d9bf8a335f6cff843ac157956d053340de74820`  
+		Last Modified: Thu, 02 Oct 2025 23:23:11 GMT  
+		Size: 29.7 MB (29737967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:25.04` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:5b6f88ece9a1950134d4ce91f45e45f76dff32737be69c3882e917d31d75ae0d
+$ docker pull ubuntu@sha256:4a3f6c5ccb8177ff87ec6360230a55e282c180d8d946fbf852d97c181285b0ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1873177 bytes)**  
+-	Total Size: **1.9 MB (1873217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12a2ff03973c02697cd679899c78a3aff1e308c56e1fa7ba04a71b0f3a838678`
+-	Image ID: `sha256:c1285c4bd2cb70e19666716e0912d2d97073d61f3169e104c00e28ed98037d20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8581923d861674f5f83286aae87efceaf1babe969e50a4492fb9c343652b058b`  
-		Last Modified: Tue, 16 Sep 2025 23:04:35 GMT  
-		Size: 1.9 MB (1873177 bytes)  
+	-	`sha256:2ef1482da8413024fbe91b1fdbdf992bb2c90d8d4c9fad382578b7c89d2774b1`  
+		Last Modified: Fri, 03 Oct 2025 02:04:36 GMT  
+		Size: 1.9 MB (1873217 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ubuntu:25.04` - linux; s390x
@@ -1746,7 +1746,7 @@ $ docker pull ubuntu@sha256:46a4b9f52873d60cc70cd79c8bcea66cb0f11fb14f3cb3cd107d
 ## `ubuntu:jammy`
 
 ```console
-$ docker pull ubuntu@sha256:c35ed11f8af26ef79671ab5536d90cdcf968d5d62f0f852b81f46f58b456fc2f
+$ docker pull ubuntu@sha256:09506232a8004baa32c47d68f1e5c307d648fdd59f5e7eaa42aaf87914100db3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1983,54 +1983,54 @@ $ docker pull ubuntu@sha256:53a9b8428d050a6c45d2225bb24f22f59f69803a7651f58d14c8
 ### `ubuntu:jammy` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:ed85bae8cad985d4310aee54e91f24f9992a68d9389dcbfb84f725fa55706735
+$ docker pull ubuntu@sha256:bdc3348d79f07cb718628a17808b52dba987db69c9bc210706f6662d8f5abcaf
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.0 MB (27042655 bytes)**  
+-	Total Size: **27.0 MB (27042913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e7f7d2eb5b4a876520f9198abc763197d4eb650f19703aaa066479a2ba5277e`
+-	Image ID: `sha256:58a94354d25d10f6e53b83cc71791a21a7792f7cec9fdbbcbc038adfdf0fded6`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 19 Aug 2025 17:44:17 GMT
+# Wed, 01 Oct 2025 07:51:02 GMT
 ARG RELEASE
-# Tue, 19 Aug 2025 17:44:17 GMT
+# Wed, 01 Oct 2025 07:51:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Aug 2025 17:44:18 GMT
+# Wed, 01 Oct 2025 07:51:04 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Aug 2025 17:44:18 GMT
+# Wed, 01 Oct 2025 07:51:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 19 Aug 2025 17:44:58 GMT
-ADD file:c50534025103b387d6edca09570ec78d030f9514a469228d4d2c12ddbc059678 in / 
-# Tue, 19 Aug 2025 17:45:02 GMT
+# Wed, 01 Oct 2025 07:52:24 GMT
+ADD file:49eb482a54d27b9c245629c57f816d00d3f70ec4464924555d739fc1cf52432c in / 
+# Wed, 01 Oct 2025 07:52:30 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d152ae8117dc009abe5def1b70dd1fee217a52c100ea2406284b82890b29223e`  
-		Last Modified: Wed, 03 Sep 2025 03:52:06 GMT  
-		Size: 27.0 MB (27042655 bytes)  
+	-	`sha256:b665bdbb2ecbdbd42e0b5941fb0e987604652880a86a9c6e39dc865d4608cf7c`  
+		Last Modified: Thu, 02 Oct 2025 23:19:28 GMT  
+		Size: 27.0 MB (27042913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:jammy` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:732e4cad88810e83c4182b0caec82dbbb38774cb677e5fb34c8eb9b504c11f12
+$ docker pull ubuntu@sha256:d7283348e263f6e6524e229df6689615cc26a3c29b6021140225d2c08eb3d302
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 MB (1973990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65ec1c08259d7961da651701d1253cfe6f37f05c608567f5a7050e46ed1a399d`
+-	Image ID: `sha256:0001d54db95a8880a1da68b656e7236b31d933bfa4b879e5b8654d6b541dd897`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b4e7f36d51961be74232fde71dd7fcaa1a545db7c91505378c5269fc2ad114ee`  
-		Last Modified: Wed, 03 Sep 2025 05:04:29 GMT  
+	-	`sha256:adc571a54fef723925907dded597e81b9ca4f2d1f6c7c99d049f0d905c5e483b`  
+		Last Modified: Fri, 03 Oct 2025 02:04:27 GMT  
 		Size: 2.0 MB (1973990 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2091,11 +2091,11 @@ $ docker pull ubuntu@sha256:02257d9a3c34df374822fe07624f053ed8e0fec5a65dd667b504
 ## `ubuntu:jammy-20251001`
 
 ```console
-$ docker pull ubuntu@sha256:0064d04cf870a25ecaa085b6006c954862582dc7cf9ca7ce23ed404fdf890ded
+$ docker pull ubuntu@sha256:09506232a8004baa32c47d68f1e5c307d648fdd59f5e7eaa42aaf87914100db3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 10
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
@@ -2103,6 +2103,8 @@ $ docker pull ubuntu@sha256:0064d04cf870a25ecaa085b6006c954862582dc7cf9ca7ce23ed
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -2323,6 +2325,60 @@ $ docker pull ubuntu@sha256:53a9b8428d050a6c45d2225bb24f22f59f69803a7651f58d14c8
 		Size: 2.0 MB (1984666 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `ubuntu:jammy-20251001` - linux; riscv64
+
+```console
+$ docker pull ubuntu@sha256:bdc3348d79f07cb718628a17808b52dba987db69c9bc210706f6662d8f5abcaf
+```
+
+-	Docker Version: 24.0.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.0 MB (27042913 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:58a94354d25d10f6e53b83cc71791a21a7792f7cec9fdbbcbc038adfdf0fded6`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 01 Oct 2025 07:51:02 GMT
+ARG RELEASE
+# Wed, 01 Oct 2025 07:51:03 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Wed, 01 Oct 2025 07:51:04 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Wed, 01 Oct 2025 07:51:04 GMT
+LABEL org.opencontainers.image.version=22.04
+# Wed, 01 Oct 2025 07:52:24 GMT
+ADD file:49eb482a54d27b9c245629c57f816d00d3f70ec4464924555d739fc1cf52432c in / 
+# Wed, 01 Oct 2025 07:52:30 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:b665bdbb2ecbdbd42e0b5941fb0e987604652880a86a9c6e39dc865d4608cf7c`  
+		Last Modified: Thu, 02 Oct 2025 23:19:28 GMT  
+		Size: 27.0 MB (27042913 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ubuntu:jammy-20251001` - unknown; unknown
+
+```console
+$ docker pull ubuntu@sha256:d7283348e263f6e6524e229df6689615cc26a3c29b6021140225d2c08eb3d302
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (1973990 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0001d54db95a8880a1da68b656e7236b31d933bfa4b879e5b8654d6b541dd897`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:adc571a54fef723925907dded597e81b9ca4f2d1f6c7c99d049f0d905c5e483b`  
+		Last Modified: Fri, 03 Oct 2025 02:04:27 GMT  
+		Size: 2.0 MB (1973990 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ### `ubuntu:jammy-20251001` - linux; s390x
 
 ```console
@@ -2380,7 +2436,7 @@ $ docker pull ubuntu@sha256:02257d9a3c34df374822fe07624f053ed8e0fec5a65dd667b504
 ## `ubuntu:latest`
 
 ```console
-$ docker pull ubuntu@sha256:fdb6c9ceb1293dcb0b7eda5df195b15303b01857d7b10f98489e7691d20aa2a1
+$ docker pull ubuntu@sha256:728785b59223d755e3e5c5af178fab1be7031f3522c5ccd7a0b32b80d8248123
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2617,54 +2673,54 @@ $ docker pull ubuntu@sha256:54e7ffa644a94d0416dcb6814eb790f63507722ef243e96074c9
 ### `ubuntu:latest` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:f82697e72ac91298f89c0ffece27d77eeaa224047b9eaf1cc7dabdf99296473c
+$ docker pull ubuntu@sha256:e4312cfaf1ff4a73549d4485e64e9c90a1d4e939edcb51430bece4ccc508ad13
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.0 MB (30950703 bytes)**  
+-	Total Size: **31.0 MB (30950446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d80783f99e02476bbec80cf713ce1656bb621b6b0d07d30ceb432ede96756d`
+-	Image ID: `sha256:1f8741c07f9f104965bc16d83f9dc5f0bade7c88c044cdaf8dce5f4b79995210`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:26 GMT
 ARG RELEASE
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:27 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:27 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Sep 2025 06:24:10 GMT
+# Tue, 30 Sep 2025 15:12:28 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 10 Sep 2025 06:24:57 GMT
-ADD file:58fbc6777cd47d1e58396e2c0f70255ae3bd63d0ac2ea2138ed6e5e91fdd70b1 in / 
-# Wed, 10 Sep 2025 06:25:02 GMT
+# Tue, 30 Sep 2025 15:13:37 GMT
+ADD file:13e2355f84c9f5f1ba6aa2fa1db4359cbe23312f7b2905fc8b976899a09fdfef in / 
+# Tue, 30 Sep 2025 15:13:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:fc46b4719a7bc0e446bd2b472a339bdca3990f164daf9dde3e710206f93383d0`  
-		Last Modified: Tue, 16 Sep 2025 19:54:09 GMT  
-		Size: 31.0 MB (30950703 bytes)  
+	-	`sha256:2d699e6bd7ed3cc40f40b8118f763dc4303b0e97b911de163cabf78f19b5d434`  
+		Last Modified: Thu, 02 Oct 2025 23:21:18 GMT  
+		Size: 31.0 MB (30950446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:latest` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:bccd7583bf2a3ef6332d688cf9b4ef2618d2f84da5f661473a195adaf7bdba5a
+$ docker pull ubuntu@sha256:18ec33a693e2670b23753d357c6f6810686f565dfa1d9696832ec3bbf2a92708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.9 MB (1931899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49e24f0093590f44296c712bda33bf428829b0fe5a373ed8da4850f1d7a1360d`
+-	Image ID: `sha256:3a7aaf888c713a59347710e6cf67cb3e196f691c93908ebab8f0aad3abc8338c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bb4ac575ae5f28d210b4f15b1d596b7eea4a104ae1fb57bbd5f7980fc3ef2b07`  
-		Last Modified: Tue, 16 Sep 2025 23:04:29 GMT  
+	-	`sha256:fba8514450788b7092d97623082d3023f47c48740173fd4973ffd0f36332fc7a`  
+		Last Modified: Fri, 03 Oct 2025 02:04:30 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2725,7 +2781,7 @@ $ docker pull ubuntu@sha256:40ec74ae656452e28a6fb83517799b64a1a6efd5904d29abfdae
 ## `ubuntu:noble`
 
 ```console
-$ docker pull ubuntu@sha256:fdb6c9ceb1293dcb0b7eda5df195b15303b01857d7b10f98489e7691d20aa2a1
+$ docker pull ubuntu@sha256:728785b59223d755e3e5c5af178fab1be7031f3522c5ccd7a0b32b80d8248123
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2962,54 +3018,54 @@ $ docker pull ubuntu@sha256:54e7ffa644a94d0416dcb6814eb790f63507722ef243e96074c9
 ### `ubuntu:noble` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:f82697e72ac91298f89c0ffece27d77eeaa224047b9eaf1cc7dabdf99296473c
+$ docker pull ubuntu@sha256:e4312cfaf1ff4a73549d4485e64e9c90a1d4e939edcb51430bece4ccc508ad13
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.0 MB (30950703 bytes)**  
+-	Total Size: **31.0 MB (30950446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d80783f99e02476bbec80cf713ce1656bb621b6b0d07d30ceb432ede96756d`
+-	Image ID: `sha256:1f8741c07f9f104965bc16d83f9dc5f0bade7c88c044cdaf8dce5f4b79995210`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:26 GMT
 ARG RELEASE
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:27 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Sep 2025 06:24:09 GMT
+# Tue, 30 Sep 2025 15:12:27 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Sep 2025 06:24:10 GMT
+# Tue, 30 Sep 2025 15:12:28 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 10 Sep 2025 06:24:57 GMT
-ADD file:58fbc6777cd47d1e58396e2c0f70255ae3bd63d0ac2ea2138ed6e5e91fdd70b1 in / 
-# Wed, 10 Sep 2025 06:25:02 GMT
+# Tue, 30 Sep 2025 15:13:37 GMT
+ADD file:13e2355f84c9f5f1ba6aa2fa1db4359cbe23312f7b2905fc8b976899a09fdfef in / 
+# Tue, 30 Sep 2025 15:13:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:fc46b4719a7bc0e446bd2b472a339bdca3990f164daf9dde3e710206f93383d0`  
-		Last Modified: Tue, 16 Sep 2025 19:54:09 GMT  
-		Size: 31.0 MB (30950703 bytes)  
+	-	`sha256:2d699e6bd7ed3cc40f40b8118f763dc4303b0e97b911de163cabf78f19b5d434`  
+		Last Modified: Thu, 02 Oct 2025 23:21:18 GMT  
+		Size: 31.0 MB (30950446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:noble` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:bccd7583bf2a3ef6332d688cf9b4ef2618d2f84da5f661473a195adaf7bdba5a
+$ docker pull ubuntu@sha256:18ec33a693e2670b23753d357c6f6810686f565dfa1d9696832ec3bbf2a92708
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.9 MB (1931899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49e24f0093590f44296c712bda33bf428829b0fe5a373ed8da4850f1d7a1360d`
+-	Image ID: `sha256:3a7aaf888c713a59347710e6cf67cb3e196f691c93908ebab8f0aad3abc8338c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bb4ac575ae5f28d210b4f15b1d596b7eea4a104ae1fb57bbd5f7980fc3ef2b07`  
-		Last Modified: Tue, 16 Sep 2025 23:04:29 GMT  
+	-	`sha256:fba8514450788b7092d97623082d3023f47c48740173fd4973ffd0f36332fc7a`  
+		Last Modified: Fri, 03 Oct 2025 02:04:30 GMT  
 		Size: 1.9 MB (1931899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3070,11 +3126,11 @@ $ docker pull ubuntu@sha256:40ec74ae656452e28a6fb83517799b64a1a6efd5904d29abfdae
 ## `ubuntu:noble-20250925`
 
 ```console
-$ docker pull ubuntu@sha256:b5e73ebf4acb88f11ad149d295f3acf22e5d910a425a9a57faeefed165266a17
+$ docker pull ubuntu@sha256:728785b59223d755e3e5c5af178fab1be7031f3522c5ccd7a0b32b80d8248123
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 10
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
@@ -3082,6 +3138,8 @@ $ docker pull ubuntu@sha256:b5e73ebf4acb88f11ad149d295f3acf22e5d910a425a9a57faee
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -3302,6 +3360,60 @@ $ docker pull ubuntu@sha256:54e7ffa644a94d0416dcb6814eb790f63507722ef243e96074c9
 		Size: 1.9 MB (1942531 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `ubuntu:noble-20250925` - linux; riscv64
+
+```console
+$ docker pull ubuntu@sha256:e4312cfaf1ff4a73549d4485e64e9c90a1d4e939edcb51430bece4ccc508ad13
+```
+
+-	Docker Version: 24.0.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.0 MB (30950446 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1f8741c07f9f104965bc16d83f9dc5f0bade7c88c044cdaf8dce5f4b79995210`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 30 Sep 2025 15:12:26 GMT
+ARG RELEASE
+# Tue, 30 Sep 2025 15:12:27 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Tue, 30 Sep 2025 15:12:27 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Tue, 30 Sep 2025 15:12:28 GMT
+LABEL org.opencontainers.image.version=24.04
+# Tue, 30 Sep 2025 15:13:37 GMT
+ADD file:13e2355f84c9f5f1ba6aa2fa1db4359cbe23312f7b2905fc8b976899a09fdfef in / 
+# Tue, 30 Sep 2025 15:13:43 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:2d699e6bd7ed3cc40f40b8118f763dc4303b0e97b911de163cabf78f19b5d434`  
+		Last Modified: Thu, 02 Oct 2025 23:21:18 GMT  
+		Size: 31.0 MB (30950446 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ubuntu:noble-20250925` - unknown; unknown
+
+```console
+$ docker pull ubuntu@sha256:18ec33a693e2670b23753d357c6f6810686f565dfa1d9696832ec3bbf2a92708
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 MB (1931899 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3a7aaf888c713a59347710e6cf67cb3e196f691c93908ebab8f0aad3abc8338c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:fba8514450788b7092d97623082d3023f47c48740173fd4973ffd0f36332fc7a`  
+		Last Modified: Fri, 03 Oct 2025 02:04:30 GMT  
+		Size: 1.9 MB (1931899 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ### `ubuntu:noble-20250925` - linux; s390x
 
 ```console
@@ -3359,7 +3471,7 @@ $ docker pull ubuntu@sha256:40ec74ae656452e28a6fb83517799b64a1a6efd5904d29abfdae
 ## `ubuntu:plucky`
 
 ```console
-$ docker pull ubuntu@sha256:fecdb5b9bf8874108b4fc23fac669b10968e54c450382b20d7db92565e7655ed
+$ docker pull ubuntu@sha256:103c7471649a4fd9996fe73dff20f46082e4e0f0f6240c91954b8b09c38b6faf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3596,55 +3708,55 @@ $ docker pull ubuntu@sha256:e68f57098b50f3aaaf19e2ccfe330f8457e3a085845a5d8dd608
 ### `ubuntu:plucky` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:35b6203082444c27e8c2228f3fac4ae0e94ff21de1d446491e5dca4177b738d5
+$ docker pull ubuntu@sha256:1a9533846e35b50ec9bfdc9876f1493247ecb2d99c3977b21370990259ce6e87
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29739371 bytes)**  
+-	Total Size: **29.7 MB (29737967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:acac04670a0161a425cecc50472049f7f39cfa92f920a33aaf23dd20f1cb0cd3`
+-	Image ID: `sha256:b6fb15445480ceb46bc5e5f99b01124466d279a334b68f5d45abef88cc869414`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 10 Sep 2025 06:02:24 GMT
+# Thu, 25 Sep 2025 20:56:00 GMT
 ARG RELEASE
-# Wed, 10 Sep 2025 06:02:27 GMT
+# Thu, 25 Sep 2025 20:56:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Sep 2025 06:02:29 GMT
+# Thu, 25 Sep 2025 20:56:01 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Sep 2025 06:02:33 GMT
+# Thu, 25 Sep 2025 20:56:02 GMT
 LABEL org.opencontainers.image.version=25.04
-# Wed, 10 Sep 2025 06:05:06 GMT
-ADD file:68087671954e3932e15509e9cc9b7db565054e94955fb28818d1de13284ebd5f in / 
-# Wed, 10 Sep 2025 06:05:14 GMT
+# Thu, 25 Sep 2025 20:56:50 GMT
+ADD file:849fe8318284428b639d3526ad680d7a4abbb8a6c92fe568aa9f007015249211 in / 
+# Thu, 25 Sep 2025 20:56:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:382069180cfc3bdd5a5ad6cfdb0c3c9c4a3ce51c1274664b135e93e5a31dacf5`  
-		Last Modified: Tue, 16 Sep 2025 19:56:08 GMT  
-		Size: 29.7 MB (29739371 bytes)  
+	-	`sha256:bdda45c57df51a6f4f8890e16d9bf8a335f6cff843ac157956d053340de74820`  
+		Last Modified: Thu, 02 Oct 2025 23:23:11 GMT  
+		Size: 29.7 MB (29737967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:plucky` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:5b6f88ece9a1950134d4ce91f45e45f76dff32737be69c3882e917d31d75ae0d
+$ docker pull ubuntu@sha256:4a3f6c5ccb8177ff87ec6360230a55e282c180d8d946fbf852d97c181285b0ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1873177 bytes)**  
+-	Total Size: **1.9 MB (1873217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12a2ff03973c02697cd679899c78a3aff1e308c56e1fa7ba04a71b0f3a838678`
+-	Image ID: `sha256:c1285c4bd2cb70e19666716e0912d2d97073d61f3169e104c00e28ed98037d20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8581923d861674f5f83286aae87efceaf1babe969e50a4492fb9c343652b058b`  
-		Last Modified: Tue, 16 Sep 2025 23:04:35 GMT  
-		Size: 1.9 MB (1873177 bytes)  
+	-	`sha256:2ef1482da8413024fbe91b1fdbdf992bb2c90d8d4c9fad382578b7c89d2774b1`  
+		Last Modified: Fri, 03 Oct 2025 02:04:36 GMT  
+		Size: 1.9 MB (1873217 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ubuntu:plucky` - linux; s390x
@@ -3704,11 +3816,11 @@ $ docker pull ubuntu@sha256:622951575192a52e71dcd65886be6849548cd645e769ba6a9644
 ## `ubuntu:plucky-20250925.1`
 
 ```console
-$ docker pull ubuntu@sha256:61715ab46e7ffac134f0687b9d96826db4e2759e56b00ffd7907c5bf38a9035a
+$ docker pull ubuntu@sha256:103c7471649a4fd9996fe73dff20f46082e4e0f0f6240c91954b8b09c38b6faf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 10
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
@@ -3716,6 +3828,8 @@ $ docker pull ubuntu@sha256:61715ab46e7ffac134f0687b9d96826db4e2759e56b00ffd7907
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -3934,6 +4048,60 @@ $ docker pull ubuntu@sha256:e68f57098b50f3aaaf19e2ccfe330f8457e3a085845a5d8dd608
 	-	`sha256:6116ef69b75ca9ca3c85e1d0334d4e60f81f948dc6ed0487a9a203bcdf49ee9f`  
 		Last Modified: Thu, 02 Oct 2025 02:04:57 GMT  
 		Size: 1.9 MB (1883803 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `ubuntu:plucky-20250925.1` - linux; riscv64
+
+```console
+$ docker pull ubuntu@sha256:1a9533846e35b50ec9bfdc9876f1493247ecb2d99c3977b21370990259ce6e87
+```
+
+-	Docker Version: 24.0.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.7 MB (29737967 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b6fb15445480ceb46bc5e5f99b01124466d279a334b68f5d45abef88cc869414`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 25 Sep 2025 20:56:00 GMT
+ARG RELEASE
+# Thu, 25 Sep 2025 20:56:01 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Thu, 25 Sep 2025 20:56:01 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Thu, 25 Sep 2025 20:56:02 GMT
+LABEL org.opencontainers.image.version=25.04
+# Thu, 25 Sep 2025 20:56:50 GMT
+ADD file:849fe8318284428b639d3526ad680d7a4abbb8a6c92fe568aa9f007015249211 in / 
+# Thu, 25 Sep 2025 20:56:55 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:bdda45c57df51a6f4f8890e16d9bf8a335f6cff843ac157956d053340de74820`  
+		Last Modified: Thu, 02 Oct 2025 23:23:11 GMT  
+		Size: 29.7 MB (29737967 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `ubuntu:plucky-20250925.1` - unknown; unknown
+
+```console
+$ docker pull ubuntu@sha256:4a3f6c5ccb8177ff87ec6360230a55e282c180d8d946fbf852d97c181285b0ad
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 MB (1873217 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c1285c4bd2cb70e19666716e0912d2d97073d61f3169e104c00e28ed98037d20`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:2ef1482da8413024fbe91b1fdbdf992bb2c90d8d4c9fad382578b7c89d2774b1`  
+		Last Modified: Fri, 03 Oct 2025 02:04:36 GMT  
+		Size: 1.9 MB (1873217 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ubuntu:plucky-20250925.1` - linux; s390x
@@ -4683,7 +4851,7 @@ $ docker pull ubuntu@sha256:46a4b9f52873d60cc70cd79c8bcea66cb0f11fb14f3cb3cd107d
 ## `ubuntu:rolling`
 
 ```console
-$ docker pull ubuntu@sha256:fecdb5b9bf8874108b4fc23fac669b10968e54c450382b20d7db92565e7655ed
+$ docker pull ubuntu@sha256:103c7471649a4fd9996fe73dff20f46082e4e0f0f6240c91954b8b09c38b6faf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4920,55 +5088,55 @@ $ docker pull ubuntu@sha256:e68f57098b50f3aaaf19e2ccfe330f8457e3a085845a5d8dd608
 ### `ubuntu:rolling` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:35b6203082444c27e8c2228f3fac4ae0e94ff21de1d446491e5dca4177b738d5
+$ docker pull ubuntu@sha256:1a9533846e35b50ec9bfdc9876f1493247ecb2d99c3977b21370990259ce6e87
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.7 MB (29739371 bytes)**  
+-	Total Size: **29.7 MB (29737967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:acac04670a0161a425cecc50472049f7f39cfa92f920a33aaf23dd20f1cb0cd3`
+-	Image ID: `sha256:b6fb15445480ceb46bc5e5f99b01124466d279a334b68f5d45abef88cc869414`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 10 Sep 2025 06:02:24 GMT
+# Thu, 25 Sep 2025 20:56:00 GMT
 ARG RELEASE
-# Wed, 10 Sep 2025 06:02:27 GMT
+# Thu, 25 Sep 2025 20:56:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 10 Sep 2025 06:02:29 GMT
+# Thu, 25 Sep 2025 20:56:01 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 10 Sep 2025 06:02:33 GMT
+# Thu, 25 Sep 2025 20:56:02 GMT
 LABEL org.opencontainers.image.version=25.04
-# Wed, 10 Sep 2025 06:05:06 GMT
-ADD file:68087671954e3932e15509e9cc9b7db565054e94955fb28818d1de13284ebd5f in / 
-# Wed, 10 Sep 2025 06:05:14 GMT
+# Thu, 25 Sep 2025 20:56:50 GMT
+ADD file:849fe8318284428b639d3526ad680d7a4abbb8a6c92fe568aa9f007015249211 in / 
+# Thu, 25 Sep 2025 20:56:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:382069180cfc3bdd5a5ad6cfdb0c3c9c4a3ce51c1274664b135e93e5a31dacf5`  
-		Last Modified: Tue, 16 Sep 2025 19:56:08 GMT  
-		Size: 29.7 MB (29739371 bytes)  
+	-	`sha256:bdda45c57df51a6f4f8890e16d9bf8a335f6cff843ac157956d053340de74820`  
+		Last Modified: Thu, 02 Oct 2025 23:23:11 GMT  
+		Size: 29.7 MB (29737967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:rolling` - unknown; unknown
 
 ```console
-$ docker pull ubuntu@sha256:5b6f88ece9a1950134d4ce91f45e45f76dff32737be69c3882e917d31d75ae0d
+$ docker pull ubuntu@sha256:4a3f6c5ccb8177ff87ec6360230a55e282c180d8d946fbf852d97c181285b0ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1873177 bytes)**  
+-	Total Size: **1.9 MB (1873217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12a2ff03973c02697cd679899c78a3aff1e308c56e1fa7ba04a71b0f3a838678`
+-	Image ID: `sha256:c1285c4bd2cb70e19666716e0912d2d97073d61f3169e104c00e28ed98037d20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8581923d861674f5f83286aae87efceaf1babe969e50a4492fb9c343652b058b`  
-		Last Modified: Tue, 16 Sep 2025 23:04:35 GMT  
-		Size: 1.9 MB (1873177 bytes)  
+	-	`sha256:2ef1482da8413024fbe91b1fdbdf992bb2c90d8d4c9fad382578b7c89d2774b1`  
+		Last Modified: Fri, 03 Oct 2025 02:04:36 GMT  
+		Size: 1.9 MB (1873217 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ubuntu:rolling` - linux; s390x
