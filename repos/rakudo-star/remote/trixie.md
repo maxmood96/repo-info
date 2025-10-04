@@ -1,4 +1,4 @@
-## `rakudo-star:latest`
+## `rakudo-star:trixie`
 
 ```console
 $ docker pull rakudo-star@sha256:e97b47695b8eb1f735148d8ef71c14d7162d3f13c1f4ea7c6c81cbc58fe5fe69
@@ -11,7 +11,7 @@ $ docker pull rakudo-star@sha256:e97b47695b8eb1f735148d8ef71c14d7162d3f13c1f4ea7
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `rakudo-star:latest` - linux; amd64
+### `rakudo-star:trixie` - linux; amd64
 
 ```console
 $ docker pull rakudo-star@sha256:87dcc7bab5ef5464224b3ca698f4b165bca4d21f3f633a9165eeca824db1f068
@@ -69,7 +69,7 @@ CMD ["raku"]
 		Size: 42.7 MB (42706862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `rakudo-star:latest` - unknown; unknown
+### `rakudo-star:trixie` - unknown; unknown
 
 ```console
 $ docker pull rakudo-star@sha256:76f54d86e49d9f132a73bc72fc4f4b89788b83aae8879fe8d10b5de449761701
@@ -93,7 +93,7 @@ $ docker pull rakudo-star@sha256:76f54d86e49d9f132a73bc72fc4f4b89788b83aae8879fe
 		Size: 13.1 KB (13050 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `rakudo-star:latest` - linux; arm64 variant v8
+### `rakudo-star:trixie` - linux; arm64 variant v8
 
 ```console
 $ docker pull rakudo-star@sha256:1675f9a65b7ff9f96ac4d9ab4de3d28284b43e7d9f6edf4ae5015f1cdf4237fd
@@ -151,7 +151,7 @@ CMD ["raku"]
 		Size: 40.8 MB (40764499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `rakudo-star:latest` - unknown; unknown
+### `rakudo-star:trixie` - unknown; unknown
 
 ```console
 $ docker pull rakudo-star@sha256:406cb4d90287d89900e02531350303abd0731a71d415fffc4635cb3fbb6dc515
