@@ -1,10 +1,10 @@
-# `joomla:5.3.3-php8.3-fpm`
+# `joomla:5.3.4-php8.3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:64fd4f0da4b544712267a9259933a2ea45fbd4326d84a4b0f158b74ded0583ee`
-- Created: `2025-08-19T22:37:33Z`
-- Virtual Size: ~ 775.62 Mb  
+- Image ID: `sha256:03845388e2d594f8b62f6cc2469d7d7a758357b965c7658bc422a818bce9bcaf`
+- Created: `2025-09-30T18:10:08Z`
+- Virtual Size: ~ 775.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
   - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.3.3`
-  - `JOOMLA_SHA512=efc0c5249758f1f7d9915992e01aa44203e86126c59c4c3adec8a7342aec132da2f5e10910fd7e2485ab8f58faa981de6be99cfe3c3b3f3c1e79e7d2d0321388`
+  - `JOOMLA_VERSION=5.3.4`
+  - `JOOMLA_SHA512=1857ea6b9681f48615d6831951def4c7ec10d81332a3882aa3f149a9603094a459ddb5e7fc8f8629c09687b23fff2d8527b8b5cf593bc7b152b34e1ac3e06636`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -4377,12 +4377,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sysprof/48.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sysprof/48.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=257.8-1~deb13u1`
+### `dpkg` source package: `systemd=257.8-1~deb13u2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=257.8-1~deb13u1`
-- `libudev1:amd64=257.8-1~deb13u1`
+- `libsystemd0:amd64=257.8-1~deb13u2`
+- `libudev1:amd64=257.8-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4398,17 +4398,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=257.8-1~deb13u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.dsc' systemd_257.8-1~deb13u1.dsc 8617 SHA256:33cae5644d96e7b107dbc7aba0267a1f2d276c515b973828e5be2bc5f593367e
+$ apt-get source -qq --print-uris systemd=257.8-1~deb13u2
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.dsc' systemd_257.8-1~deb13u2.dsc 8271 SHA256:4e65979b17348341b788be9f7c24a30bb3ec4820a7e0a124da5621c3fdfe5684
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8.orig.tar.gz' systemd_257.8.orig.tar.gz 16385060 SHA256:f280278161446fe3838bedb970c7b3998043ad107f7627735a81483218c6f6f9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.debian.tar.xz' systemd_257.8-1~deb13u1.debian.tar.xz 182904 SHA256:f5581e12e5cbf0fd8c250e473f289a7e66a6c4f8e4ae0762e467fee9faea5183
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.debian.tar.xz' systemd_257.8-1~deb13u2.debian.tar.xz 183536 SHA256:d937a18c390638a2b344d3b4f331d3e73376f40037f5273036c96aeed5b2ea16
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.8-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.8-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 

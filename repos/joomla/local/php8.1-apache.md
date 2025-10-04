@@ -1,10 +1,10 @@
-# `joomla:5.3.3-php8.1-apache`
+# `joomla:5.3.4-php8.1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1f820be10f2456cd2c098b0071fc5c8dca040f06729a03a1294e8a4b1beead4`
-- Created: `2025-08-19T22:37:33Z`
-- Virtual Size: ~ 778.79 Mb  
+- Image ID: `sha256:f5ce14bb8abe52a6304aba7f7141772bfdee483af8d6de7037714d2629a41dfb`
+- Created: `2025-09-30T18:10:08Z`
+- Virtual Size: ~ 778.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.33.tar.xz.asc`
   - `PHP_SHA256=9db83bf4590375562bc1a10b353cccbcf9fcfc56c58b7c8fb814e6865bb928d1`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.3.3`
-  - `JOOMLA_SHA512=efc0c5249758f1f7d9915992e01aa44203e86126c59c4c3adec8a7342aec132da2f5e10910fd7e2485ab8f58faa981de6be99cfe3c3b3f3c1e79e7d2d0321388`
+  - `JOOMLA_VERSION=5.3.4`
+  - `JOOMLA_SHA512=1857ea6b9681f48615d6831951def4c7ec10d81332a3882aa3f149a9603094a459ddb5e7fc8f8629c09687b23fff2d8527b8b5cf593bc7b152b34e1ac3e06636`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -646,11 +646,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.4.10-3`
+### `dpkg` source package: `cups=2.4.10-3+deb13u1`
 
 Binary Packages:
 
-- `libcups2t64:amd64=2.4.10-3`
+- `libcups2t64:amd64=2.4.10-3+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 
@@ -664,17 +664,17 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.4.10-3
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.10-3.dsc' cups_2.4.10-3.dsc 3209 SHA256:45c26bd662f19cc8a33d0dffa2cab25e6bfc3ba4eadad98f7e8b7aa91d3bbb72
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.10.orig.tar.gz' cups_2.4.10.orig.tar.gz 8145236 SHA256:d75757c2bc0f7a28b02ee4d52ca9e4b1aa1ba2affe16b985854f5336940e5ad7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.10-3.debian.tar.xz' cups_2.4.10-3.debian.tar.xz 389240 SHA256:8f3524915b7a9408219fe3c1f3f508aae08acb44cd55385de51922316bd4ba9f
+$ apt-get source -qq --print-uris cups=2.4.10-3+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.10-3%2bdeb13u1.dsc' cups_2.4.10-3+deb13u1.dsc 3241 SHA256:6c937b9c64c4dc59275c133476a581c40eed5c5d7c9145bc091df2ada43b1116
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.10.orig.tar.gz' cups_2.4.10.orig.tar.gz 8145236 SHA256:d75757c2bc0f7a28b02ee4d52ca9e4b1aa1ba2affe16b985854f5336940e5ad7
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.10-3%2bdeb13u1.debian.tar.xz' cups_2.4.10-3+deb13u1.debian.tar.xz 390180 SHA256:33f6b03e5fd18ade03e73b832e376bbf7404095947ca020fcf48f79f4a7065b0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/2.4.10-3/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.4.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.4.10-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/2.4.10-3+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.4.10-3+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.4.10-3+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.14.1-2`
 
@@ -1827,13 +1827,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u1`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u2`
 
 Binary Packages:
 
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u1`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u1`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u1`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u2`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u2`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`)
 
@@ -1866,17 +1866,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u1.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u1.dsc 5136 SHA256:8e81a74a85be19f0aa3511db289955935b3d30b5c655e911dd10df5bf60a9444
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u1.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u1.debian.tar.xz 277660 SHA256:2b07de47ae8270c0054f5de9bef6f79c9560610f3c7f186ec459d048a4e057b8
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u2.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u2.dsc 5161 SHA256:381837e384fda4697b72cea12aa51ba503d4a3d045033f0599c8901394d04144
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u2.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u2.debian.tar.xz 284216 SHA256:028a64ae6fcefed9d71fadcc165fb6dce9ee83c979ab1ad7c1c906c51093ca08
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69~deb13u1`
 
@@ -3334,11 +3334,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.43-1`
+### `dpkg` source package: `linux=6.12.48-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.43-1`
+- `linux-libc-dev=6.12.48-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3352,17 +3352,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.43-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43-1.dsc' linux_6.12.43-1.dsc 219407 SHA256:3a0ade34fe8cbe46ca1e68f9b74db7923d12d3ce14d7702380f87d75b8ed2d43
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43.orig.tar.xz' linux_6.12.43.orig.tar.xz 151168676 SHA256:325d46f815ef470fe3502d67cfe14ced7ecc727132d6290a13227598b0221d63
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.43-1.debian.tar.xz' linux_6.12.43-1.debian.tar.xz 1687580 SHA256:dab5e6c12aafbeea2a921e3d4740bb75474f6616ef38f1e095320213fc7181ad
+$ apt-get source -qq --print-uris linux=6.12.48-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48-1.dsc' linux_6.12.48-1.dsc 219407 SHA256:24a2790d6f213e30fdeae7ebf1f7c159ee07b4d519c2f5699f4b5697190f4426
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48.orig.tar.xz' linux_6.12.48.orig.tar.xz 151183840 SHA256:855183e4e49637975e818ad422ed2cd4e4cc3058cc23b727abd4eb437d0952da
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.48-1.debian.tar.xz' linux_6.12.48-1.debian.tar.xz 1720736 SHA256:ca2f90210388e7ac139b6f395558b996646ab8a163cdb82e57003e5522ab946d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.43-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.43-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.43-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.48-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.48-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.48-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 
@@ -4532,12 +4532,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sysprof/48.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sysprof/48.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=257.8-1~deb13u1`
+### `dpkg` source package: `systemd=257.8-1~deb13u2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=257.8-1~deb13u1`
-- `libudev1:amd64=257.8-1~deb13u1`
+- `libsystemd0:amd64=257.8-1~deb13u2`
+- `libudev1:amd64=257.8-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4553,17 +4553,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=257.8-1~deb13u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.dsc' systemd_257.8-1~deb13u1.dsc 8617 SHA256:33cae5644d96e7b107dbc7aba0267a1f2d276c515b973828e5be2bc5f593367e
+$ apt-get source -qq --print-uris systemd=257.8-1~deb13u2
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.dsc' systemd_257.8-1~deb13u2.dsc 8271 SHA256:4e65979b17348341b788be9f7c24a30bb3ec4820a7e0a124da5621c3fdfe5684
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8.orig.tar.gz' systemd_257.8.orig.tar.gz 16385060 SHA256:f280278161446fe3838bedb970c7b3998043ad107f7627735a81483218c6f6f9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.debian.tar.xz' systemd_257.8-1~deb13u1.debian.tar.xz 182904 SHA256:f5581e12e5cbf0fd8c250e473f289a7e66a6c4f8e4ae0762e467fee9faea5183
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.debian.tar.xz' systemd_257.8-1~deb13u2.debian.tar.xz 183536 SHA256:d937a18c390638a2b344d3b4f331d3e73376f40037f5273036c96aeed5b2ea16
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.8-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.8-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
