@@ -395,11 +395,11 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57cd284dbc3f34d4f70b318c1baae82b1b414078acb6a435096f90adbc562c89`  
-		Last Modified: Fri, 03 Oct 2025 16:59:07 GMT  
+		Last Modified: Sat, 04 Oct 2025 01:41:36 GMT  
 		Size: 188.8 MB (188847975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f3d4967121f50e86fd0d2163013acea4076cbbea2c03ea717201258b0861896`  
-		Last Modified: Fri, 03 Oct 2025 16:59:09 GMT  
+		Last Modified: Sat, 04 Oct 2025 01:41:36 GMT  
 		Size: 317.6 MB (317618782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:535d26a110d708d2d65ac05b56943bfc4639d3a936f6e094b02b290376a29418`  
