@@ -1,10 +1,10 @@
-# `redis:7.4.5-alpine`
+# `redis:7.4.6-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f218e591b571a4129aa29a8566b597d849fba21af7be853d31b03122b20db5e9`
-- Created: `2025-07-06T16:51:58Z`
-- Virtual Size: ~ 41.40 Mb  
+- Image ID: `sha256:61b779ff9097ba6502bd7c0911e675c55af1f86bccd65d68a3e0f7154bb2c216`
+- Created: `2025-10-03T11:58:08Z`
+- Virtual Size: ~ 46.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
-  - `REDIS_VERSION=7.4.5`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.5.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=00bb280528f5d7934bec8ab309b8125088c209131e10609cb1563b91365633bb`
+  - `REDIS_VERSION=7.4.6`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.6.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=73b94484e00fb4c2440b490dc4021142fb0b6efc8b64c6329c10d24f0b531c99`
 
 ## `apk` (`.apk`-based packages)
 
@@ -157,16 +157,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.4-r0 description:
+libcrypto3-3.3.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.4-r0 webpage:
+libcrypto3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.4-r0 installed size:
+libcrypto3-3.3.5-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.4-r0 license:
+libcrypto3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -174,16 +174,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.4-r0 description:
+libssl3-3.3.5-r0 description:
 SSL shared libraries
 
-libssl3-3.3.4-r0 webpage:
+libssl3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.4-r0 installed size:
+libssl3-3.3.5-r0 installed size:
 779 KiB
 
-libssl3-3.3.4-r0 license:
+libssl3-3.3.5-r0 license:
 Apache-2.0
 
 ```
