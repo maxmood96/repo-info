@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7dec7dc2cb2fb09a66a525466910bf44f16d948658ef5cb5efd83a8615582237`
+- Image ID: `sha256:1372e414d7bee87f0874e936d54d380e5f35a2dc302a5f59ee4dcaee955a234d`
 - Created: `2025-09-24T14:35:45Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
@@ -1854,23 +1854,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ilmbase/2.5.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ilmbase/2.5.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u5`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u6`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickcore-dev=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u5`
-- `libmagickwand-dev=8:6.9.11.60+dfsg-1.3+deb11u5`
+- `imagemagick=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickcore-dev=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.3+deb11u6`
+- `libmagickwand-dev=8:6.9.11.60+dfsg-1.3+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickcore-6.q16-6-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1901,13 +1901,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u6.dsc' imagemagick_6.9.11.60+dfsg-1.3+deb11u6.dsc 5131 SHA256:e43d9a8eebd5d34b863f38d18f51e520c333cf22e7fbfa24b17ddd2c63b1980c
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3%2bdeb11u6.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3+deb11u6.debian.tar.xz 276868 SHA256:481aec5e5c2aaba29784c9da9aef83906cdcd3548a0f12ff3ddef7f34b1a5d97
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.3+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.60`
 
@@ -3561,24 +3568,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxrender/1:0.9.10-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxrender/1:0.9.10-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.34-4+deb11u2`
+### `dpkg` source package: `libxslt=1.1.34-4+deb11u3`
 
 Binary Packages:
 
-- `libxslt1-dev:amd64=1.1.34-4+deb11u2`
-- `libxslt1.1:amd64=1.1.34-4+deb11u2`
+- `libxslt1-dev:amd64=1.1.34-4+deb11u3`
+- `libxslt1.1:amd64=1.1.34-4+deb11u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxslt=1.1.34-4+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34-4%2bdeb11u3.dsc' libxslt_1.1.34-4+deb11u3.dsc 2407 SHA256:a5b74a19c08446b5d29a7ec7b5d33aac88e7749cb5a88a5b2203a90e71539fc6
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA256:98b1bd46d6792925ad2dfe9a87452ea2adebf69dcb9919ffd55bf926a7f93f7f
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA256:673d1477552bdd5b0cc665704e77ca70e6be5d2f257e6a5a341c846719d747cf
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34-4%2bdeb11u3.debian.tar.xz' libxslt_1.1.34-4+deb11u3.debian.tar.xz 30680 SHA256:ac56e9014a76af3171e97a3514f1ce9dc3856978391e1e82c89356eb4f900098
+```
 
-- http://snapshot.debian.org/package/libxslt/1.1.34-4+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxslt/1.1.34-4+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.34-4+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.34-4+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.0-1`
 
@@ -4365,21 +4380,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u3
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.dsc' openssl_1.1.1w-0+deb11u3.dsc 2655 SHA256:acb879dc5756d4c3fbb97cbe918737e261e353f4570a3cb3eb85c6c83b13fa47
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.debian.tar.xz' openssl_1.1.1w-0+deb11u3.debian.tar.xz 102344 SHA256:df775854ac0d33d6ef023910d5ee28138c30fa2a5e2c09203c4d0a48dc5f885d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/
 
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
@@ -4411,14 +4418,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/p11-kit/0.23.22-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/p11-kit/0.23.22-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pam=1.4.0-9+deb11u1`
+### `dpkg` source package: `pam=1.4.0-9+deb11u2`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-9+deb11u1`
-- `libpam-modules-bin=1.4.0-9+deb11u1`
-- `libpam-runtime=1.4.0-9+deb11u1`
-- `libpam0g:amd64=1.4.0-9+deb11u1`
+- `libpam-modules:amd64=1.4.0-9+deb11u2`
+- `libpam-modules-bin=1.4.0-9+deb11u2`
+- `libpam-runtime=1.4.0-9+deb11u2`
+- `libpam0g:amd64=1.4.0-9+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -4427,17 +4434,17 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.4.0-9+deb11u1
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-9%2bdeb11u1.dsc' pam_1.4.0-9+deb11u1.dsc 1941 SHA256:190b705cc9daeee1febb84e8ac6f31219065f08ff41c8d38fbbb424b545d5ca4
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-9%2bdeb11u1.debian.tar.xz' pam_1.4.0-9+deb11u1.debian.tar.xz 120148 SHA256:bcaaad9423c3ab32c5c4f9e363595a84fe3c535aa9568e42e560028a4e33dfcf
+$ apt-get source -qq --print-uris pam=1.4.0-9+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0-9%2bdeb11u2.dsc' pam_1.4.0-9+deb11u2.dsc 2601 SHA256:d2978a79eeffd7ef3e7a259a3965b127187a07decf558e7455bcf928970a0acf
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
+'http://deb.debian.org/debian-security/pool/updates/main/p/pam/pam_1.4.0-9%2bdeb11u2.debian.tar.xz' pam_1.4.0-9+deb11u2.debian.tar.xz 140736 SHA256:991c216e703e8fd23ab47a99c389f84e08c4a87801f8baaecf00db0184b84914
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pam/1.4.0-9+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.4.0-9+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.4.0-9+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pam/1.4.0-9+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/pam/1.4.0-9+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pam/1.4.0-9+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.46.2-3`
 
@@ -5189,25 +5196,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.2.0-1+deb11u6`
+### `dpkg` source package: `tiff=4.2.0-1+deb11u7`
 
 Binary Packages:
 
-- `libtiff-dev:amd64=4.2.0-1+deb11u6`
-- `libtiff5:amd64=4.2.0-1+deb11u6`
-- `libtiffxx5:amd64=4.2.0-1+deb11u6`
+- `libtiff-dev:amd64=4.2.0-1+deb11u7`
+- `libtiff5:amd64=4.2.0-1+deb11u7`
+- `libtiffxx5:amd64=4.2.0-1+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/libtiffxx5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tiff=4.2.0-1+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u7.dsc' tiff_4.2.0-1+deb11u7.dsc 2461 SHA256:81940329e678f02202facbcae460dc02a0cddbcfe80b2d96977d51a1cb70cc8c
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz' tiff_4.2.0.orig.tar.gz 2809373 SHA256:eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz.asc' tiff_4.2.0.orig.tar.gz.asc 228 SHA256:119bb62934603ff4d3cd81c739d11904b28812a860773b9b2268cc96a339b14f
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u7.debian.tar.xz' tiff_4.2.0-1+deb11u7.debian.tar.xz 46088 SHA256:50a74d0a12fc402ec425b1b0a49bc18e3cf0698cb9d43b67a81086d1f067c662
+```
 
-- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tiff/4.2.0-1+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.2.0-1+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025b-0+deb11u1`
 
