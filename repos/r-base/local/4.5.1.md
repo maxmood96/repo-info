@@ -59,19 +59,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.5
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.5.dsc' apt_3.1.5.dsc 3091 SHA256:c3def951f685599231b0e5ab0289fd75ef730cdcb3a69e42a83ebe631ac14433
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.5.tar.xz' apt_3.1.5.tar.xz 2429228 SHA256:9a3fb60d23e7ffda0651e64f548db77cade3e33ac4fd1fe469d405ff28bfa8bb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.5/
 
-- https://sources.debian.net/src/apt/3.1.5/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -442,11 +436,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.16.0-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.16.0-1.dsc' curl_8.16.0-1.dsc 3231 SHA256:539df54aca4c0951ad467536e80be90900f31f1048259997fd9074db162f1c8d
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.16.0.orig.tar.gz' curl_8.16.0.orig.tar.gz 4176617 SHA256:a21e20476e39eca5a4fc5cfb00acf84bbc1f5d8443ec3853ad14c26b3c85b970
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.16.0.orig.tar.gz.asc' curl_8.16.0.orig.tar.gz.asc 488 SHA256:f0a9e778d619760b84cd562b917b03de9c62a0f6c60342a3accbee0d18d17c20
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.16.0-1.debian.tar.xz' curl_8.16.0-1.debian.tar.xz 51688 SHA256:ea24d4bc0cb22e8e0ef2610c16dfea23ade18fa8d98dba94f45925df3a2c3928
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0-1.dsc' curl_8.16.0-1.dsc 3231 SHA256:539df54aca4c0951ad467536e80be90900f31f1048259997fd9074db162f1c8d
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0.orig.tar.gz' curl_8.16.0.orig.tar.gz 4176617 SHA256:a21e20476e39eca5a4fc5cfb00acf84bbc1f5d8443ec3853ad14c26b3c85b970
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0.orig.tar.gz.asc' curl_8.16.0.orig.tar.gz.asc 488 SHA256:f0a9e778d619760b84cd562b917b03de9c62a0f6c60342a3accbee0d18d17c20
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0-1.debian.tar.xz' curl_8.16.0-1.debian.tar.xz 51688 SHA256:ea24d4bc0cb22e8e0ef2610c16dfea23ade18fa8d98dba94f45925df3a2c3928
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/8.16.0-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.16.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.16.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -1117,21 +1117,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.dsc' gnutls28_3.8.9-3.dsc 3236 SHA256:607dbc91727ff5d8a51af66e800abab837479de4e18775fc069a7b5ffc780d3d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA256:69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA256:7631d47762865d4ef494492cca794cf0fe6a8be892a4aa02f362ae29006d3054
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.9-3.debian.tar.xz' gnutls28_3.8.9-3.debian.tar.xz 85848 SHA256:f578bd4dd0b35d56aedf002a4a7b504a965a9d1a4587d2ad3a92718a45887cbf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.9-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.9-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.9-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.9-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-9`
 
@@ -1225,14 +1217,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=11.5.0-1
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_11.5.0-1.dsc' harfbuzz_11.5.0-1.dsc 2606 SHA256:b61429466cba0f723cbbd8be63c850cc591162b65cbd2532908443f6bd577917
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_11.5.0.orig.tar.xz' harfbuzz_11.5.0.orig.tar.xz 18154144 SHA256:2d30ba45c4c8ec4de661a1002b4f88d0841ff1a3087f34629275f5436d722109
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_11.5.0-1.debian.tar.xz' harfbuzz_11.5.0-1.debian.tar.xz 19628 SHA256:5becd1851325c2b0e1bfc46ba9773262fa8a641504ec0eb3692c3593566da271
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/harfbuzz/11.5.0-1/
+
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -2631,11 +2622,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp3=1.11.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp3/nghttp3_1.11.0-1.dsc' nghttp3_1.11.0-1.dsc 2218 SHA256:81c5545d89029370703c686a1ac74cb9916bf6c2a144ceb64dc71540d3438c14
-'http://http.debian.net/debian/pool/main/n/nghttp3/nghttp3_1.11.0.orig.tar.xz' nghttp3_1.11.0.orig.tar.xz 405816 SHA256:27d084518f06d78279b050cc9cdff2418f80fb753da019427ce853cec920f33f
-'http://http.debian.net/debian/pool/main/n/nghttp3/nghttp3_1.11.0.orig.tar.xz.asc' nghttp3_1.11.0.orig.tar.xz.asc 833 SHA256:37e41c4a277c5f2708c679f9d3baba7efc0de3a466366044a8e6a6c5b0143a18
-'http://http.debian.net/debian/pool/main/n/nghttp3/nghttp3_1.11.0-1.debian.tar.xz' nghttp3_1.11.0-1.debian.tar.xz 8284 SHA256:a7aa0ae42abae0f5917644bb86006b2fea74154636b521be5c7b84ac47556af4
+'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0-1.dsc' nghttp3_1.11.0-1.dsc 2218 SHA256:81c5545d89029370703c686a1ac74cb9916bf6c2a144ceb64dc71540d3438c14
+'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0.orig.tar.xz' nghttp3_1.11.0.orig.tar.xz 405816 SHA256:27d084518f06d78279b050cc9cdff2418f80fb753da019427ce853cec920f33f
+'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0.orig.tar.xz.asc' nghttp3_1.11.0.orig.tar.xz.asc 833 SHA256:37e41c4a277c5f2708c679f9d3baba7efc0de3a466366044a8e6a6c5b0143a18
+'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0-1.debian.tar.xz' nghttp3_1.11.0-1.debian.tar.xz 8284 SHA256:a7aa0ae42abae0f5917644bb86006b2fea74154636b521be5c7b84ac47556af4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nghttp3/1.11.0-1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp3/1.11.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp3/1.11.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.168-1`
 
@@ -2737,15 +2734,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.3-1
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.5.3-1.dsc' openssl_3.5.3-1.dsc 2637 SHA256:6320ab6e27851c34a1965e2f017f2b389d3ab71632f75ce1ecaff190de767330
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.5.3.orig.tar.gz' openssl_3.5.3.orig.tar.gz 53183370 SHA256:c9489d2abcf943cdc8329a57092331c598a402938054dc3a22218aea8a8ec3bf
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.5.3.orig.tar.gz.asc' openssl_3.5.3.orig.tar.gz.asc 833 SHA256:1fcf5134b47954fabe7d271bad0edd010e71c4ecb1b27bd3d5e3f846d4caf7df
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.5.3-1.debian.tar.xz' openssl_3.5.3-1.debian.tar.xz 48824 SHA256:a42597cb7755f10393b2be0b447365024cfe179b3f02f617c4906638a4e0fc6c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssl/3.5.3-1/
+
 
 ### `dpkg` source package: `p11-kit=0.25.9-2`
 
@@ -3842,11 +3837,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.8.1-1.1
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1.1.dsc' xz-utils_5.8.1-1.1.dsc 2737 SHA256:e5196e84700fac70eaaa69234f7f04f0c1adae690f374cbfda0af11770700ab2
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
-'http://http.debian.net/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1.1.debian.tar.xz' xz-utils_5.8.1-1.1.debian.tar.xz 24688 SHA256:1d8adf3450974c1d41dbd4b032b1976e1b8785c53c360e43688f2e9d75fdb808
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1.1.dsc' xz-utils_5.8.1-1.1.dsc 2737 SHA256:e5196e84700fac70eaaa69234f7f04f0c1adae690f374cbfda0af11770700ab2
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1.1.debian.tar.xz' xz-utils_5.8.1-1.1.debian.tar.xz 24688 SHA256:1d8adf3450974c1d41dbd4b032b1976e1b8785c53c360e43688f2e9d75fdb808
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xz-utils/5.8.1-1.1/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.8.1-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.8.1-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zip=3.0-15`
 
