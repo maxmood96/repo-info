@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:48105d5b079681630f7dff259aae6025213216c964fed719033979a0797adee3`
+- Image ID: `sha256:20a7fb68b08d9b026ab925d55b2de71fedc8f7586ba1d4627c3584828df778b3`
 - Created: `2025-09-19T20:50:17Z`
-- Virtual Size: ~ 514.61 Mb  
+- Virtual Size: ~ 522.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1771,13 +1771,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:10.0p1-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:10.0p1-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.1-1`
+### `dpkg` source package: `openssl=3.5.1-1+deb13u1`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.1-1`
-- `openssl=3.5.1-1`
-- `openssl-provider-legacy=3.5.1-1`
+- `libssl3t64:amd64=3.5.1-1+deb13u1`
+- `openssl=3.5.1-1+deb13u1`
+- `openssl-provider-legacy=3.5.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1789,18 +1789,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.1-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1-1.dsc' openssl_3.5.1-1.dsc 2637 SHA256:e5551ab5a93021c6cf3d1351725d1967715df373e5b7e646c5af5368ebd3417d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1.orig.tar.gz' openssl_3.5.1.orig.tar.gz 53158817 SHA256:529043b15cffa5f36077a4d0af83f3de399807181d607441d734196d889b641f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1.orig.tar.gz.asc' openssl_3.5.1.orig.tar.gz.asc 833 SHA256:6d5d22d4b908aabbfc96c5d04a993b6233506d67a14e184c816fee3e15782c80
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1-1.debian.tar.xz' openssl_3.5.1-1.debian.tar.xz 49812 SHA256:4329f6281915e822a3480957f006cee6e33ec2118fc9144255bf442a53682d0d
+$ apt-get source -qq --print-uris openssl=3.5.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1-1%2bdeb13u1.dsc' openssl_3.5.1-1+deb13u1.dsc 2669 SHA256:b803cf40ee3c1e29c15924b15600ea072923262b3dbc27f94cb57240c8e342d0
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1.orig.tar.gz' openssl_3.5.1.orig.tar.gz 53158817 SHA256:529043b15cffa5f36077a4d0af83f3de399807181d607441d734196d889b641f
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1.orig.tar.gz.asc' openssl_3.5.1.orig.tar.gz.asc 833 SHA256:6d5d22d4b908aabbfc96c5d04a993b6233506d67a14e184c816fee3e15782c80
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1-1%2bdeb13u1.debian.tar.xz' openssl_3.5.1-1+deb13u1.debian.tar.xz 51876 SHA256:8afc153ffa4a49861fb23bb38439257e7cf4de04b569324606c0bb802018cdb6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -2038,12 +2038,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.46.1-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.46.1-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=257.8-1~deb13u1`
+### `dpkg` source package: `systemd=257.8-1~deb13u2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=257.8-1~deb13u1`
-- `libudev1:amd64=257.8-1~deb13u1`
+- `libsystemd0:amd64=257.8-1~deb13u2`
+- `libudev1:amd64=257.8-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2059,17 +2059,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=257.8-1~deb13u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.dsc' systemd_257.8-1~deb13u1.dsc 8617 SHA256:33cae5644d96e7b107dbc7aba0267a1f2d276c515b973828e5be2bc5f593367e
+$ apt-get source -qq --print-uris systemd=257.8-1~deb13u2
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.dsc' systemd_257.8-1~deb13u2.dsc 8271 SHA256:4e65979b17348341b788be9f7c24a30bb3ec4820a7e0a124da5621c3fdfe5684
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8.orig.tar.gz' systemd_257.8.orig.tar.gz 16385060 SHA256:f280278161446fe3838bedb970c7b3998043ad107f7627735a81483218c6f6f9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u1.debian.tar.xz' systemd_257.8-1~deb13u1.debian.tar.xz 182904 SHA256:f5581e12e5cbf0fd8c250e473f289a7e66a6c4f8e4ae0762e467fee9faea5183
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.8-1%7edeb13u2.debian.tar.xz' systemd_257.8-1~deb13u2.debian.tar.xz 183536 SHA256:d937a18c390638a2b344d3b4f331d3e73376f40037f5273036c96aeed5b2ea16
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.8-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.8-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.8-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.8-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
