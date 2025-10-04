@@ -1,10 +1,10 @@
-# `liquibase:4.33-alpine`
+# `liquibase:5.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:98323fa9b91eb9354e55bb7164f54deb7bafe937225883d42b943fed34e475e0`
-- Created: `2025-07-09T14:57:56Z`
-- Virtual Size: ~ 601.53 Mb  
+- Image ID: `sha256:13bf59a8a4e9bd7a622b69f6d3449349e18dbc9c6deeb909f60e8b84666ce109`
+- Created: `2025-09-30T15:04:02Z`
+- Virtual Size: ~ 229.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `org.opencontainers.image.documentation=https://docs.liquibase.com`
   - `org.opencontainers.image.licenses=Apache-2.0`
   - `org.opencontainers.image.vendor=Liquibase`
-  - `org.opencontainers.image.version=4.33.0`
+  - `org.opencontainers.image.version=5.0.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -212,16 +212,16 @@ MIT
 ### `apk` package: `java-common`
 
 ```console
-java-common-0.5-r0 description:
+java-common-1.0-r0 description:
 Java common (updates java links)
 
-java-common-0.5-r0 webpage:
+java-common-1.0-r0 webpage:
 https://git.alpinelinux.org/aports/
 
-java-common-0.5-r0 installed size:
+java-common-1.0-r0 installed size:
 1 B
 
-java-common-0.5-r0 license:
+java-common-1.0-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -382,16 +382,16 @@ X11
 ### `apk` package: `openjdk21-jre-headless`
 
 ```console
-openjdk21-jre-headless-21.0.7_p6-r0 description:
+openjdk21-jre-headless-21.0.8_p9-r0 description:
 Oracle OpenJDK 21 (JRE headless)
 
-openjdk21-jre-headless-21.0.7_p6-r0 webpage:
+openjdk21-jre-headless-21.0.8_p9-r0 webpage:
 https://github.com/openjdk/jdk21u
 
-openjdk21-jre-headless-21.0.7_p6-r0 installed size:
+openjdk21-jre-headless-21.0.8_p9-r0 installed size:
 187 MiB
 
-openjdk21-jre-headless-21.0.7_p6-r0 license:
+openjdk21-jre-headless-21.0.8_p9-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
