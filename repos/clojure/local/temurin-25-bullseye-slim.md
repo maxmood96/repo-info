@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6393f0e00e0d68293be9802ae97b8c447ac4e32dfc6b601dae00a03e49319fa4`
+- Image ID: `sha256:57103d6dc2982bf363dc344e158d556c80002c3e4c9d5a7d4801e0761d4289c8`
 - Created: `2025-09-26T15:53:20Z`
 - Virtual Size: ~ 478.39 Mb  
   (total size of all layers on-disk)
@@ -2329,21 +2329,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u3
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.dsc' openssl_1.1.1w-0+deb11u3.dsc 2655 SHA256:acb879dc5756d4c3fbb97cbe918737e261e353f4570a3cb3eb85c6c83b13fa47
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.debian.tar.xz' openssl_1.1.1w-0+deb11u3.debian.tar.xz 102344 SHA256:df775854ac0d33d6ef023910d5ee28138c30fa2a5e2c09203c4d0a48dc5f885d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/
 
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
