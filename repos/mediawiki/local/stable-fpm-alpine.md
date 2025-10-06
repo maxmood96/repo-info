@@ -1,10 +1,10 @@
-# `mediawiki:1.44.0-fpm-alpine`
+# `mediawiki:1.44.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:44100356310dddc7099322f2d1c3bca9da80858efff26b104f021a7c12297fd2`
-- Created: `2025-09-01T10:37:02Z`
-- Virtual Size: ~ 524.99 Mb  
+- Image ID: `sha256:74c19f3f1fb392ff0701b82e976444bf422580becd67076f259a4972dbe42d79`
+- Created: `2025-10-03T22:07:10Z`
+- Virtual Size: ~ 527.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.33.tar.xz.asc`
   - `PHP_SHA256=9db83bf4590375562bc1a10b353cccbcf9fcfc56c58b7c8fb814e6865bb928d1`
   - `MEDIAWIKI_MAJOR_VERSION=1.44`
-  - `MEDIAWIKI_VERSION=1.44.0`
+  - `MEDIAWIKI_VERSION=1.44.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -539,16 +539,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.0-r0 description:
+libexpat-2.7.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.0-r0 webpage:
+libexpat-2.7.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.0-r0 installed size:
-129 KiB
+libexpat-2.7.3-r0 installed size:
+133 KiB
 
-libexpat-2.7.0-r0 license:
+libexpat-2.7.3-r0 license:
 MIT
 
 ```
