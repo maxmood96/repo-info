@@ -1,17 +1,17 @@
-# `docker:28.4.0-dind`
+# `docker:28.5.0-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:12af9dbadb11a1abd6d67389f127d6d0d2515ce390bb66e053d4ed3b3d6f1406`
-- Created: `2025-09-03T23:04:16Z`
-- Virtual Size: ~ 416.12 Mb  
+- Image ID: `sha256:d9fcc7c017f93c90eb877637eec77bab54feee6b8e16a5b92674fa73cac78739`
+- Created: `2025-10-02T23:04:15Z`
+- Virtual Size: ~ 416.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=28.4.0`
-  - `DOCKER_BUILDX_VERSION=0.28.0`
+  - `DOCKER_VERSION=28.5.0`
+  - `DOCKER_BUILDX_VERSION=0.29.0`
   - `DOCKER_COMPOSE_VERSION=2.39.4`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
@@ -191,16 +191,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -497,16 +497,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.3-r1 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.3-r1 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.3-r1 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.3-r1 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -514,16 +514,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.1-r1 description:
+libcurl-8.14.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.1-r1 webpage:
+libcurl-8.14.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.14.1-r1 installed size:
+libcurl-8.14.1-r2 installed size:
 669 KiB
 
-libcurl-8.14.1-r1 license:
+libcurl-8.14.1-r2 license:
 curl
 
 ```
@@ -565,16 +565,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.2-r0 description:
+libexpat-2.7.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.2-r0 webpage:
+libexpat-2.7.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.2-r0 installed size:
+libexpat-2.7.3-r0 installed size:
 133 KiB
 
-libexpat-2.7.2-r0 license:
+libexpat-2.7.3-r0 license:
 MIT
 
 ```
@@ -735,16 +735,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.3-r1 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.3-r1 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.3-r1 installed size:
+libssl3-3.5.4-r0 installed size:
 823 KiB
 
-libssl3-3.5.3-r1 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -1007,16 +1007,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.3-r1 description:
+openssl-3.5.4-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.3-r1 webpage:
+openssl-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.3-r1 installed size:
+openssl-3.5.4-r0 installed size:
 801 KiB
 
-openssl-3.5.3-r1 license:
+openssl-3.5.4-r0 license:
 Apache-2.0
 
 ```

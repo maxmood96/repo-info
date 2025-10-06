@@ -1,18 +1,18 @@
-# `docker:28.4.0-cli`
+# `docker:28.5.0-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c8c21dcd1430ac1675074be04860baa01830322f9b0160427d5e8cb59b0c2bd`
-- Created: `2025-09-19T11:04:16Z`
-- Virtual Size: ~ 213.96 Mb  
+- Image ID: `sha256:5318c07034b1070773327332274ae100cfd2b187005a9b16f0560bcaf24f6374`
+- Created: `2025-10-02T23:04:15Z`
+- Virtual Size: ~ 214.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=28.4.0`
-  - `DOCKER_BUILDX_VERSION=0.28.0`
+  - `DOCKER_VERSION=28.5.0`
+  - `DOCKER_BUILDX_VERSION=0.29.0`
   - `DOCKER_COMPOSE_VERSION=2.39.4`
   - `DOCKER_TLS_CERTDIR=/certs`
 
@@ -174,16 +174,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -276,16 +276,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.1-r1 description:
+libcurl-8.14.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.1-r1 webpage:
+libcurl-8.14.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.14.1-r1 installed size:
+libcurl-8.14.1-r2 installed size:
 669 KiB
 
-libcurl-8.14.1-r1 license:
+libcurl-8.14.1-r2 license:
 curl
 
 ```
@@ -310,16 +310,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.2-r0 description:
+libexpat-2.7.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.2-r0 webpage:
+libexpat-2.7.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.2-r0 installed size:
+libexpat-2.7.3-r0 installed size:
 133 KiB
 
-libexpat-2.7.2-r0 license:
+libexpat-2.7.3-r0 license:
 MIT
 
 ```
