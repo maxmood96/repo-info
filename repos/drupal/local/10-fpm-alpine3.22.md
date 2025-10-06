@@ -1,10 +1,10 @@
-# `drupal:10.5.3-php8.4-fpm-alpine3.22`
+# `drupal:10.5.4-php8.4-fpm-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4135c35930daa027ded53b6b23048ffdb1b776cdebc214c021affd08dfa423f0`
-- Created: `2025-09-04T15:27:18Z`
-- Virtual Size: ~ 193.73 Mb  
+- Image ID: `sha256:e075396f17f7f938ba29b7169ee2a454708624534e0d87d6a629b81f0b02aab8`
+- Created: `2025-10-02T09:27:16Z`
+- Virtual Size: ~ 201.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc`
   - `PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df`
-  - `DRUPAL_VERSION=10.5.3`
+  - `DRUPAL_VERSION=10.5.4`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -335,16 +335,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.3-r1 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.3-r1 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.3-r1 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.3-r1 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -522,16 +522,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.3-r1 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.3-r1 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.3-r1 installed size:
+libssl3-3.5.4-r0 installed size:
 823 KiB
 
-libssl3-3.5.3-r1 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -692,16 +692,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.3-r1 description:
+openssl-3.5.4-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.3-r1 webpage:
+openssl-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.3-r1 installed size:
+openssl-3.5.4-r0 installed size:
 801 KiB
 
-openssl-3.5.3-r1 license:
+openssl-3.5.4-r0 license:
 Apache-2.0
 
 ```
