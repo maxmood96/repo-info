@@ -1,10 +1,10 @@
-# `tomee:10.1.2-jre21-Temurin-alpine-plume`
+# `tomee:10.1.2-jre25-Temurin-alpine-plume`
 
 ## Docker Metadata
 
-- Image ID: `sha256:15a6245ed847ca5723c0e7370cfb444d0b3c26079ca6f3e299129966ee0f0086`
-- Created: `2025-09-22T09:00:25Z`
-- Virtual Size: ~ 303.29 Mb  
+- Image ID: `sha256:654e157190ceef82ef1ba26072c41122b89a34c615cf6e5212f78e395c92b3ea`
+- Created: `2025-10-05T18:19:29Z`
+- Virtual Size: ~ 340.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9`
+  - `JAVA_VERSION=jdk-25+36`
   - `TOMEE_VER=10.1.2`
   - `TOMEE_BUILD=plume`
 
@@ -296,16 +296,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.14.1-r1 description:
+curl-8.14.1-r2 description:
 URL retrival utility and library
 
-curl-8.14.1-r1 webpage:
+curl-8.14.1-r2 webpage:
 https://curl.se/
 
-curl-8.14.1-r1 installed size:
+curl-8.14.1-r2 installed size:
 260 KiB
 
-curl-8.14.1-r1 license:
+curl-8.14.1-r2 license:
 curl
 
 ```
@@ -412,23 +412,6 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
 
-### `apk` package: `gnupg`
-
-```console
-gnupg-2.4.7-r0 description:
-GNU Privacy Guard 2 - meta package for full GnuPG suite
-
-gnupg-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-2.4.7-r0 installed size:
-0 B
-
-gnupg-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
@@ -480,40 +463,6 @@ GPL-3.0-or-later
 
 ```
 
-### `apk` package: `gnupg-utils`
-
-```console
-gnupg-utils-2.4.7-r0 description:
-GNU Privacy Guard 2 - utility programs
-
-gnupg-utils-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-utils-2.4.7-r0 installed size:
-832 KiB
-
-gnupg-utils-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gnupg-wks-client`
-
-```console
-gnupg-wks-client-2.4.7-r0 description:
-GNU Privacy Guard 2 - Web Key Service client
-
-gnupg-wks-client-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gnupg-wks-client-2.4.7-r0 installed size:
-167 KiB
-
-gnupg-wks-client-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
 ### `apk` package: `gnutls`
 
 ```console
@@ -561,57 +510,6 @@ gpg-agent-2.4.7-r0 installed size:
 642 KiB
 
 gpg-agent-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpg-wks-server`
-
-```console
-gpg-wks-server-2.4.7-r0 description:
-GNU Privacy Guard 2 - Web Key Service server
-
-gpg-wks-server-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpg-wks-server-2.4.7-r0 installed size:
-150 KiB
-
-gpg-wks-server-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpgsm`
-
-```console
-gpgsm-2.4.7-r0 description:
-GNU Privacy Guard 2 - S/MIME version
-
-gpgsm-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpgsm-2.4.7-r0 installed size:
-481 KiB
-
-gpgsm-2.4.7-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `gpgv`
-
-```console
-gpgv-2.4.7-r0 description:
-GNU Privacy Guard 2 - signature verification only
-
-gpgv-2.4.7-r0 webpage:
-https://www.gnupg.org/
-
-gpgv-2.4.7-r0 installed size:
-428 KiB
-
-gpgv-2.4.7-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -687,16 +585,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.3-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.3-r1 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -704,16 +602,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.1-r1 description:
+libcurl-8.14.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.1-r1 webpage:
+libcurl-8.14.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.14.1-r1 installed size:
+libcurl-8.14.1-r2 installed size:
 669 KiB
 
-libcurl-8.14.1-r1 license:
+libcurl-8.14.1-r2 license:
 curl
 
 ```
@@ -721,16 +619,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.2-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.2-r0 license:
 MIT
 
 ```
@@ -942,16 +840,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.3-r1 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.3-r1 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.3-r1 license:
 Apache-2.0
 
 ```
@@ -1146,16 +1044,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.3-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.3-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.3-r1 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.3-r1 license:
 Apache-2.0
 
 ```

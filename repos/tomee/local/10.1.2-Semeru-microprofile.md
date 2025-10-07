@@ -1,10 +1,10 @@
-# `tomee:10.1.2-jre21-Semeru-ubuntu-microprofile`
+# `tomee:10.1.2-jre25-Semeru-ubuntu-microprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f095aa843b327d622493337870dfe4b724f16d8d7b441f777507dddbc52ac0fa`
-- Created: `2025-09-22T09:00:25Z`
-- Virtual Size: ~ 399.77 Mb  
+- Image ID: `sha256:40bc109a054b922ce43d54d40ce292119c1352fd4602d431867eb80f82046f39`
+- Created: `2025-10-05T18:19:29Z`
+- Virtual Size: ~ 399.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9_openj9-0.53.0`
+  - `JAVA_VERSION=jdk-25+36_openj9-0.55.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `TOMEE_VER=10.1.2`
