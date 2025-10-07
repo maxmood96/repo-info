@@ -281,6 +281,10 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3t64/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-9/
+
 
 ### `dpkg` source package: `debconf=1.5.91`
 
