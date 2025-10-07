@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc67adf7a6583e0d280c8fa4a6468882d55c419f2abccd9b37b45b5ae769f1a2`
-- Created: `2025-09-10T10:32:40Z`
+- Image ID: `sha256:a6c3d558702430082feed95543199303e01aaa09fef4912d72b45ee3bc7da83b`
+- Created: `2025-10-03T08:53:08Z`
 - Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,14 +22,14 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.46`
   - `TOMCAT_SHA512=20da89fa77fb8d4dbfccf6c68383751348169542aad9d3cbcaf82011337355b9847b883cc71678fa6cc71ef3f55e8d5d7a09a53238b86011816fa989f9c4ff5e`
-  - `XWIKI_VERSION=17.7.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.7.0`
-  - `XWIKI_DOWNLOAD_SHA256=709d599c0312d23e21dedcb69e8756b05c5085caea78c268fc9806f2a3957edc`
-  - `MARIADB_JDBC_VERSION=3.5.5`
-  - `MARIADB_JDBC_SHA256=81b9b10dbbd823e5dc9d81bc48435c76d7e92297a8515cfb75bc620917df9baa`
-  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.5`
-  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.5.jar`
-  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.5.jar`
+  - `XWIKI_VERSION=17.8.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.8.0`
+  - `XWIKI_DOWNLOAD_SHA256=28e870db170735ef279653543de8c5ca3393f2a2cff5a933d34c6854773807a0`
+  - `MARIADB_JDBC_VERSION=3.5.6`
+  - `MARIADB_JDBC_SHA256=a129703efd7b0f334564d46753de999f09b3a361489a2eb647e6020390981cc9`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.6`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.6.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.6.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -3541,14 +3541,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.dsc' poppler_24.02.0-1ubuntu9.6.dsc 3940 SHA512:2734aba7c7f5882969aca55d0530fefd9e013e4facad1235040aef5678946d6c238e87f514a2a62047af6b5dbbd03591917c2ad968b92dbe2d60bfb8a98e1226
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.debian.tar.xz' poppler_24.02.0-1ubuntu9.6.debian.tar.xz 43112 SHA512:eb41467b5506a10b5cd5743e221470871c733ae1b66904db75eb6ce307b2185bf684f1a0fe7f519760516090d9eacce7250ac6a3497cb213ac0cb94eee43b92f
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 

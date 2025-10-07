@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:82248445829e78e39065448514c3bb17687e56cd7c8f1033b584db0ecaa9db51`
-- Created: `2025-09-10T10:32:40Z`
+- Image ID: `sha256:88ae3c997a79a2b32e7d2e6794f610a2644b02abb235fe5bfd120b52905fe7de`
+- Created: `2025-10-03T14:43:49Z`
 - Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,11 +20,11 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.109`
-  - `TOMCAT_SHA512=29341c17d92b8f72700c7e0626405a63f3ba30737019fbe6a25cafbd929c5e14aa99817e1d4990da11593400e8e5977da9f9f7f9c097d95f820783f33a3cf9b7`
-  - `XWIKI_VERSION=16.10.11`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.11`
-  - `XWIKI_DOWNLOAD_SHA256=9c1d464e35ed8f58f7b47213220db7528cd10732a7428eb9f7ee7c29adc83bbd`
+  - `TOMCAT_VERSION=9.0.110`
+  - `TOMCAT_SHA512=5783b88b4bb2fc1dbd10be072deccec0ec96c35b8de09d65b96a8f846e84f4655ddfa43a22e58ace6bf02a653d80629039c733c4b1ff628fa9501048318537f0`
+  - `XWIKI_VERSION=16.10.12`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.12`
+  - `XWIKI_DOWNLOAD_SHA256=2a0a3f6eb12177b87d2b15e6fc8b955d171a36c6b9e6acfb32f8c4b980652846`
   - `MYSQL_JDBC_VERSION=9.4.0`
   - `MYSQL_JDBC_SHA256=49ed93c8b2bea9cb0929b85a8a28837b191d0f8eac6919fdcef16e36e2cd53b3`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.4.0`
@@ -3529,11 +3529,11 @@ $ apt-get source -qq --print-uris pixman=0.42.2-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.42.2-1build1.diff.gz' pixman_0.42.2-1build1.diff.gz 327276 SHA512:a07846ba47b3f3407e43aefee37efe6265445a8c1e81589a715f175e426ed2a75822cce7545ac94bb368c3eecaaa2ccd7b0c7944aba9b51f0e939403b2f57d1e
 ```
 
-### `dpkg` source package: `poppler=24.02.0-1ubuntu9.6`
+### `dpkg` source package: `poppler=24.02.0-1ubuntu9.7`
 
 Binary Packages:
 
-- `libpoppler134:amd64=24.02.0-1ubuntu9.6`
+- `libpoppler134:amd64=24.02.0-1ubuntu9.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 
@@ -3544,10 +3544,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.dsc' poppler_24.02.0-1ubuntu9.6.dsc 3940 SHA512:2734aba7c7f5882969aca55d0530fefd9e013e4facad1235040aef5678946d6c238e87f514a2a62047af6b5dbbd03591917c2ad968b92dbe2d60bfb8a98e1226
+$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.7.dsc' poppler_24.02.0-1ubuntu9.7.dsc 3940 SHA512:161d2268ff4324675c5ea2c66a2c8d6017aa610e239edc15561584977bfcca4dd7d6bcc9ca91bdb3b19bed139207bc9a1615d84c60c9f2e2850b2effe9685cf1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.debian.tar.xz' poppler_24.02.0-1ubuntu9.6.debian.tar.xz 43112 SHA512:eb41467b5506a10b5cd5743e221470871c733ae1b66904db75eb6ce307b2185bf684f1a0fe7f519760516090d9eacce7250ac6a3497cb213ac0cb94eee43b92f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.7.debian.tar.xz' poppler_24.02.0-1ubuntu9.7.debian.tar.xz 43432 SHA512:e661b69bb0dc2b05669a4b7c93df3b379128c7ed9b41123ffc6fcb813c2b3d17fa72d7526e0fd225921d29a731370200dbcd991adc6a91eb761d9822b8a0834c
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
