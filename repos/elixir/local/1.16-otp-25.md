@@ -2095,20 +2095,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.30.2-1+deb11u4
-'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u4.dsc' git_2.30.2-1+deb11u4.dsc 2907 SHA256:31a011a663fe41d6c200f9597ddd1cb89a659a3491b2af21c8035ffdc5a1d9d1
-'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2.orig.tar.xz' git_2.30.2.orig.tar.xz 6329820 SHA256:41f7d90c71f9476cd387673fcb10ce09ccbed67332436a4cc58d7af32c355faa
-'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u4.debian.tar.xz' git_2.30.2-1+deb11u4.debian.tar.xz 716456 SHA256:1cc7f9a0e67a378b4e537724f55fefc6dae6464fdba37df23db1ef65e8373c0e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u4/
 
-- https://sources.debian.net/src/git/1:2.30.2-1+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.30.2-1+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib-networking=2.66.0-2`
 
@@ -6864,21 +6857,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u3
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.dsc' openssl_1.1.1w-0+deb11u3.dsc 2655 SHA256:acb879dc5756d4c3fbb97cbe918737e261e353f4570a3cb3eb85c6c83b13fa47
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u3.debian.tar.xz' openssl_1.1.1w-0+deb11u3.debian.tar.xz 102344 SHA256:df775854ac0d33d6ef023910d5ee28138c30fa2a5e2c09203c4d0a48dc5f885d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/
 
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `opus=1.3.1-0.1`
 
