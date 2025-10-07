@@ -480,7 +480,7 @@ $ docker pull lightstreamer@sha256:2ac97a495a6ff31aa2a057c79f3cea209a9ea847ad54a
 
 -	Layers:
 	-	`sha256:251ffaa57c6562b4c1c68c9936c8b9567ed22c82211c6186500780cef2bcd5af`  
-		Last Modified: Thu, 02 Oct 2025 08:35:58 GMT  
+		Last Modified: Tue, 07 Oct 2025 13:23:35 GMT  
 		Size: 18.2 KB (18175 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -745,7 +745,7 @@ $ docker pull lightstreamer@sha256:2ac97a495a6ff31aa2a057c79f3cea209a9ea847ad54a
 
 -	Layers:
 	-	`sha256:251ffaa57c6562b4c1c68c9936c8b9567ed22c82211c6186500780cef2bcd5af`  
-		Last Modified: Thu, 02 Oct 2025 08:35:58 GMT  
+		Last Modified: Tue, 07 Oct 2025 13:23:35 GMT  
 		Size: 18.2 KB (18175 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12004,7 +12004,7 @@ $ docker pull lightstreamer@sha256:441418befa836307dcdcd89b5a66e1eebf03b42ec9221
 
 -	Layers:
 	-	`sha256:47be0f86fac641e1afc939d6306739b0115dd08e8f70d012681adb4333d379ed`  
-		Last Modified: Thu, 02 Oct 2025 08:36:35 GMT  
+		Last Modified: Tue, 07 Oct 2025 13:09:06 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12269,7 +12269,7 @@ $ docker pull lightstreamer@sha256:441418befa836307dcdcd89b5a66e1eebf03b42ec9221
 
 -	Layers:
 	-	`sha256:47be0f86fac641e1afc939d6306739b0115dd08e8f70d012681adb4333d379ed`  
-		Last Modified: Thu, 02 Oct 2025 08:36:35 GMT  
+		Last Modified: Tue, 07 Oct 2025 13:09:06 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13851,7 +13851,7 @@ $ docker pull lightstreamer@sha256:441418befa836307dcdcd89b5a66e1eebf03b42ec9221
 
 -	Layers:
 	-	`sha256:47be0f86fac641e1afc939d6306739b0115dd08e8f70d012681adb4333d379ed`  
-		Last Modified: Thu, 02 Oct 2025 08:36:35 GMT  
+		Last Modified: Tue, 07 Oct 2025 13:09:06 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14116,7 +14116,7 @@ $ docker pull lightstreamer@sha256:441418befa836307dcdcd89b5a66e1eebf03b42ec9221
 
 -	Layers:
 	-	`sha256:47be0f86fac641e1afc939d6306739b0115dd08e8f70d012681adb4333d379ed`  
-		Last Modified: Thu, 02 Oct 2025 08:36:35 GMT  
+		Last Modified: Tue, 07 Oct 2025 13:09:06 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
