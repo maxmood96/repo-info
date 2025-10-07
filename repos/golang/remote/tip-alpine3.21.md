@@ -1,7 +1,7 @@
 ## `golang:tip-alpine3.21`
 
 ```console
-$ docker pull golang@sha256:497093d0c7f6dc9db601e25da6bf5d3ecb00667233a99594a2233e4558b310f6
+$ docker pull golang@sha256:c50ba47c321c3eca1b512483a034e7adaac9c42ad8260ad889681d208c92e3ad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull golang@sha256:497093d0c7f6dc9db601e25da6bf5d3ecb00667233a99594a223
 ### `golang:tip-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull golang@sha256:94cee07176702d99e6023d0715fd7301f7602bfca6d8c3b4c74c800e8e4931ba
+$ docker pull golang@sha256:7ad5401746f2aa69d1a46a8b11bfb976f5686ba9a462ebc8d1eb0d3f6472a579
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.8 MB (87781681 bytes)**  
+-	Total Size: **88.5 MB (88528916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48778449a72e75173ce2860aecb47df58a876f8b940b27a54940c1bd87b075c3`
+-	Image ID: `sha256:26a2c2c5e9cc2b2d2436141dc9444be4d3f858c5443454a58e4cd2513cf9312f`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -40,19 +40,19 @@ $ docker pull golang@sha256:94cee07176702d99e6023d0715fd7301f7602bfca6d8c3b4c74c
 ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 WORKDIR /go
 ```
 
@@ -61,16 +61,16 @@ WORKDIR /go
 		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
 		Size: 3.6 MB (3637570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68f7a70b927973cce331a310498ef387c7e702a0356d4afc0b890f8c333678b0`  
-		Last Modified: Mon, 29 Sep 2025 17:59:01 GMT  
-		Size: 282.4 KB (282423 bytes)  
+	-	`sha256:4a7d596846178f48ecf89e51a378b7abc94f10a412ee1db4d440994445c2f6c6`  
+		Last Modified: Mon, 06 Oct 2025 21:03:30 GMT  
+		Size: 291.2 KB (291172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd392ccd6779e7a888cee1ecce65db01995a1886c75ae75a375deb44486fd071`  
-		Last Modified: Mon, 29 Sep 2025 20:26:43 GMT  
-		Size: 83.9 MB (83861530 bytes)  
+	-	`sha256:df330a3159ef2a0bf41805e9465d878d806cf4287e8fdd250ddbc3e024a94e45`  
+		Last Modified: Mon, 06 Oct 2025 21:03:35 GMT  
+		Size: 84.6 MB (84600016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2628684b547922bc611d35941a12603a4127504ba57d969520bc4cc8761b1e1a`  
-		Last Modified: Mon, 29 Sep 2025 17:59:01 GMT  
+	-	`sha256:643a267e6fdbb6a1b8329064aa993e0d53641b1f561be069ef5b25405b465a69`  
+		Last Modified: Mon, 06 Oct 2025 21:03:30 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -81,37 +81,37 @@ WORKDIR /go
 ### `golang:tip-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:b70c8b02b27b771da540f7d10b2ca242169fad3485486a36344ea9a9e7f1c6e0
+$ docker pull golang@sha256:99fb65d29ef7cc19a1bbdb7f7274f6ef8905ecd7ae7b2157de0e93081e57507b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.6 KB (214628 bytes)**  
+-	Total Size: **218.3 KB (218324 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:491620f286463fbfd6391eb841cc9c7fb99e7015ebf9ecc240bb45a091b47755`
+-	Image ID: `sha256:a05279bcc695646de99491a49ce2384ad9b199d6532880c5df83422ac4fd5a38`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:437e756e1229fe6c19507ec2e74ce56ee5f920f7a0449365123c762f68e6c710`  
-		Last Modified: Mon, 29 Sep 2025 20:24:16 GMT  
-		Size: 190.1 KB (190120 bytes)  
+	-	`sha256:7edd72bc1fb3eedc25d27d3d2593a3ad3ea4108b4bf9e8321285d40aeaa59694`  
+		Last Modified: Mon, 06 Oct 2025 23:24:14 GMT  
+		Size: 193.8 KB (193816 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46f6f9ea03c115edb68835331101ccfbc7d71654049a9920f51afa8c65ff9bb8`  
-		Last Modified: Mon, 29 Sep 2025 20:24:17 GMT  
+	-	`sha256:cf9bebfee43359855d73c21d99a0913ad0c6e96a25ced2185e2a98bc2417b973`  
+		Last Modified: Mon, 06 Oct 2025 23:24:14 GMT  
 		Size: 24.5 KB (24508 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-alpine3.21` - linux; arm variant v6
 
 ```console
-$ docker pull golang@sha256:d67be95a0f7833b84b8f123bd54852b7dd32320dc2a7a8812376a8baaf7f642f
+$ docker pull golang@sha256:d73d2b4d63eb4c0a9dfc74b9c2381bcee05cdfed12c1523fcf4b1059b99b5d43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.8 MB (84781639 bytes)**  
+-	Total Size: **85.5 MB (85457483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d0106dc5b44d9aa57a45fb479a325adf799c71cf9fb54b12687738c770d7fb5`
+-	Image ID: `sha256:1739bc5ecae4df2b1886cdfacf6a04250512746d5fb56481c851606e88bc62c6`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -119,19 +119,19 @@ $ docker pull golang@sha256:d67be95a0f7833b84b8f123bd54852b7dd32320dc2a7a8812376
 ADD alpine-minirootfs-3.21.4-armhf.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 WORKDIR /go
 ```
 
@@ -140,17 +140,17 @@ WORKDIR /go
 		Last Modified: Tue, 15 Jul 2025 18:59:41 GMT  
 		Size: 3.4 MB (3363814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd9d786f18824d226ce6669ca79620f5447a2c3d91977043c4fe45022bdb5214`  
-		Last Modified: Mon, 29 Sep 2025 18:01:03 GMT  
-		Size: 283.3 KB (283283 bytes)  
+	-	`sha256:357aeea2630321fb222af7b4f546afce742711209c7b2ea865f10d4f9b4e1622`  
+		Last Modified: Mon, 06 Oct 2025 21:17:52 GMT  
+		Size: 292.3 KB (292349 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:892d2bafb7c748b20043b1cea03995c53d72f0418aa848e1ea104b1890116ea7`  
-		Last Modified: Mon, 29 Sep 2025 18:01:11 GMT  
-		Size: 81.1 MB (81134385 bytes)  
+	-	`sha256:8a4ca929e1e82e3da2a8d3fe64f9852116fdde16db4405daccb287d008513ea4`  
+		Last Modified: Mon, 06 Oct 2025 21:06:14 GMT  
+		Size: 81.8 MB (81801162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:141e2669b8c7f5d8d5c20507090cbc994a336c252e4702989cc6bec98ca043eb`  
-		Last Modified: Mon, 29 Sep 2025 18:01:03 GMT  
-		Size: 125.0 B  
+	-	`sha256:c62229d133d3f28a6a03df56ec80ae491db31f13de92c0bf6231389eb91b2827`  
+		Last Modified: Mon, 06 Oct 2025 21:17:59 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
@@ -160,33 +160,33 @@ WORKDIR /go
 ### `golang:tip-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:216608ad64eb84f98795108fdcebd13186810dc92b1ad2c2f5dab7dedffb58d1
+$ docker pull golang@sha256:26a23a3fd0910e10810a9da0c3b35b2198242a25e3341589e46c0ddb21aa699b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **24.4 KB (24405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5740978a3b5aef7a3ca6a17712769c4f845d6edcb033f4fe63fa8b67e2bb7e75`
+-	Image ID: `sha256:bdce3bfaa748982e9941fdf9aa3b92d48c18513433c729dc287c65200eb3a994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb7a9c8c961991a6303f21136eda79cd6fa715a97a5f99a05e04afaf2dab2023`  
-		Last Modified: Mon, 29 Sep 2025 20:24:20 GMT  
+	-	`sha256:94777997189f7fcfdd68cb6ba2f5d8bd4b73ebfe1ac141312081e4cfa935af55`  
+		Last Modified: Mon, 06 Oct 2025 23:24:17 GMT  
 		Size: 24.4 KB (24405 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-alpine3.21` - linux; arm variant v7
 
 ```console
-$ docker pull golang@sha256:1729bfeb8891d1149e39f99fa12b1fc3da89838af7515113a8d039c85cb7c606
+$ docker pull golang@sha256:9319c750f97fbb8931ed0710d0be689cb81a8e28ae5a29e275c3e2ba55ae121c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.3 MB (84273333 bytes)**  
+-	Total Size: **84.9 MB (84938128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fd8695585f881beef2080d428c93d0361e11aadca2824fdc1bba3105e04d3b6`
+-	Image ID: `sha256:b954b73a7cbea462d6e0577640aa98c444f0f192694ad8e47651ff2d639bf145`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -194,19 +194,19 @@ $ docker pull golang@sha256:1729bfeb8891d1149e39f99fa12b1fc3da89838af7515113a8d0
 ADD alpine-minirootfs-3.21.4-armv7.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 WORKDIR /go
 ```
 
@@ -215,16 +215,16 @@ WORKDIR /go
 		Last Modified: Tue, 15 Jul 2025 18:59:46 GMT  
 		Size: 3.1 MB (3096871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:980e96c943cff30a1ea4a0d6e57166b9277c5004b05284cb7f946dc9107fe4e1`  
-		Last Modified: Mon, 29 Sep 2025 18:04:20 GMT  
-		Size: 282.5 KB (282467 bytes)  
+	-	`sha256:68977947a08c008586c8b254473a69bbe2f6a11b3384d4f250325c40060bd0ba`  
+		Last Modified: Mon, 06 Oct 2025 21:04:18 GMT  
+		Size: 291.2 KB (291207 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2eea36933200b5f141ab18c26e141eacf675fe2778fc8f3cca0727236a934dcf`  
-		Last Modified: Mon, 29 Sep 2025 18:04:27 GMT  
-		Size: 80.9 MB (80893837 bytes)  
+	-	`sha256:113454a922f3bf5f9a74062c96cd1b1dd4f7636e5e5993fd895b9a087d38b9c4`  
+		Last Modified: Mon, 06 Oct 2025 21:04:32 GMT  
+		Size: 81.5 MB (81549892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44ed5b858ad967dafad344eef5bf03cc1f33c62e27a203047e780db04869130b`  
-		Last Modified: Mon, 29 Sep 2025 18:04:20 GMT  
+	-	`sha256:ecbe93d955dc37ac5f3c92eec475228192c16f2ad1c5abbec609a8f0e5b49230`  
+		Last Modified: Mon, 06 Oct 2025 21:04:18 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -235,37 +235,37 @@ WORKDIR /go
 ### `golang:tip-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:84a9b166ed2fe7e3589167a0b1989182357eb49a6471156394811295458e9b87
+$ docker pull golang@sha256:e8ff684badc2a3858977fdc634c7654ffd2367b151ef85fc23e254e6c315230b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.7 KB (214746 bytes)**  
+-	Total Size: **218.4 KB (218442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dbd3c5657c070d974b3967de1a81b518842afc253a0a81cc854e475f9bf268c`
+-	Image ID: `sha256:59c17da2f21f572ce077815e1de010e5e0b23ed91df2da506cd34c9d0b975836`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:be630317c10824232b8385810ab4c8708fc3138dfacefa2fcf3fafa3f90632e5`  
-		Last Modified: Mon, 29 Sep 2025 20:24:23 GMT  
-		Size: 190.1 KB (190126 bytes)  
+	-	`sha256:6c9b36ccd85bc6cd7b577fe157d1832d9e6135d147dd654a78e86df55e6397b0`  
+		Last Modified: Mon, 06 Oct 2025 23:24:20 GMT  
+		Size: 193.8 KB (193822 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4dee089ae211d3a6961892b03c12c80b910de7aeafe4682f462014bc64a1e40b`  
-		Last Modified: Mon, 29 Sep 2025 20:24:24 GMT  
+	-	`sha256:3067ccc805130b8c4b60a8df808ac50d17f54e24294a5c7040cbf77f6384a1e4`  
+		Last Modified: Mon, 06 Oct 2025 23:24:21 GMT  
 		Size: 24.6 KB (24620 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull golang@sha256:d3b97f2399c9aac01a8532b442ee9a75a1d9faebe898423110eeb85e0c681a1b
+$ docker pull golang@sha256:5863b9b96919568350b26052ca94a003f6168baa66db4dd11bf125fdba9414a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.1 MB (84086547 bytes)**  
+-	Total Size: **84.8 MB (84813067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60207300ce9875a8870386e26bce1e66828a3532784c7102ed348309a3f53534`
+-	Image ID: `sha256:7503214ba0573a3e01b410602305a020d3466c47723d34ab50e852c995bd1c2a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -273,19 +273,19 @@ $ docker pull golang@sha256:d3b97f2399c9aac01a8532b442ee9a75a1d9faebe898423110ee
 ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 WORKDIR /go
 ```
 
@@ -294,16 +294,16 @@ WORKDIR /go
 		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
 		Size: 4.0 MB (3986937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6434b1b33ff698779ee6d2701883e92ad890d82d6965dae1f0eb99b4588b9c75`  
-		Last Modified: Mon, 29 Sep 2025 18:02:13 GMT  
-		Size: 284.7 KB (284680 bytes)  
+	-	`sha256:23a155275c8019061e36084e58c9b3989393422e90beac911d07c20570bb767a`  
+		Last Modified: Mon, 06 Oct 2025 21:06:02 GMT  
+		Size: 294.1 KB (294122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e94a779ece8baaa3a2b9ccff68843c683bfb8ad46a4cbd1f1c29fcc7f5e6802e`  
-		Last Modified: Mon, 29 Sep 2025 18:02:35 GMT  
-		Size: 79.8 MB (79814772 bytes)  
+	-	`sha256:49ae6f3de502e34feaea64f03c33850b0abe91d2931d0f357546a0b84a633dd1`  
+		Last Modified: Mon, 06 Oct 2025 21:03:39 GMT  
+		Size: 80.5 MB (80531850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7799853a7b51a035aad88a8620e026a91be08f21ce09e9baf1576b79c312cc7`  
-		Last Modified: Mon, 29 Sep 2025 18:02:15 GMT  
+	-	`sha256:95f4dd55cd65158cb9fd3e66c75a02c08dd414fa9824f45a7d9a43eed4fc50a8`  
+		Last Modified: Mon, 06 Oct 2025 21:06:02 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -314,37 +314,37 @@ WORKDIR /go
 ### `golang:tip-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:66a6376b5fe0babc34a9d01d47c520e1206f791eaf34e112deef6c8807b37cf9
+$ docker pull golang@sha256:b267222c639e78df0ff3c0e665f6e5cf84465780094b8d547a0c0816b4afee67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.8 KB (214796 bytes)**  
+-	Total Size: **218.5 KB (218492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f832f7dc0357860626fa2ebf79141f80f2e1a95f107335ff8c0169f9e037086b`
+-	Image ID: `sha256:58c5506347cccbed260b22f47c3df9146c4281c6c99e1d72b14b74cc7c35510a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f460c2df71e70e22902905e981387739ba446ad34daa851e82e301690d85b54c`  
-		Last Modified: Mon, 29 Sep 2025 20:24:27 GMT  
-		Size: 190.2 KB (190152 bytes)  
+	-	`sha256:3f79d55503191b935671737c1ed3b3ca88ae1193d2d1f895cbcc2a764d695ee2`  
+		Last Modified: Mon, 06 Oct 2025 23:24:24 GMT  
+		Size: 193.8 KB (193848 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9da63b69f71c83c97200be16ce171ef7fd25530ae97bf876268de5480ef70859`  
-		Last Modified: Mon, 29 Sep 2025 20:24:28 GMT  
+	-	`sha256:770ec923564a23abe8d2706dd6b04010dfc0cbac7493055a0f64284c75f4ece4`  
+		Last Modified: Mon, 06 Oct 2025 23:24:25 GMT  
 		Size: 24.6 KB (24644 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-alpine3.21` - linux; 386
 
 ```console
-$ docker pull golang@sha256:6a0d39e92e07030aa0a592831ff64adbe89196002e16d330e2c8fc88e8156920
+$ docker pull golang@sha256:1dae1ace7b55a182b851b8e859f6403cb0f0fb276b50ba2b7a8fdf077ba8a898
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.3 MB (86274452 bytes)**  
+-	Total Size: **86.9 MB (86897979 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4f7c7d918ea93761930bfbf7d71b936331fa1ce03491774dbea8afa8187141d`
+-	Image ID: `sha256:47c668f99e5a041ed64b2dd286d58f7c5a25c8b7b96cf89be143ba24ad5fb08f`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -352,19 +352,19 @@ $ docker pull golang@sha256:6a0d39e92e07030aa0a592831ff64adbe89196002e16d330e2c8
 ADD alpine-minirootfs-3.21.4-x86.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 WORKDIR /go
 ```
 
@@ -373,95 +373,16 @@ WORKDIR /go
 		Last Modified: Tue, 15 Jul 2025 19:04:30 GMT  
 		Size: 3.5 MB (3460726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:998e3ea182d69aa0da08e89ccd1bc193a3669a747d886e751ac2c91dc21a9748`  
-		Last Modified: Mon, 29 Sep 2025 17:58:28 GMT  
-		Size: 282.9 KB (282881 bytes)  
+	-	`sha256:38dd1695376ad43afccb80c035109fb13c5b30c163c0ea84597f5d6ad5ea4c27`  
+		Last Modified: Mon, 06 Oct 2025 21:06:02 GMT  
+		Size: 291.6 KB (291629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fe29e58b8c06a986ae5ca92831db1a0d8e315d4140a28e6305b3b9513f262ee`  
-		Last Modified: Mon, 29 Sep 2025 22:06:46 GMT  
-		Size: 82.5 MB (82530689 bytes)  
+	-	`sha256:3a1c0a8fc757d99c51188cdf4bad50d211862dd20e9507d39b31fbbec343ddd8`  
+		Last Modified: Mon, 06 Oct 2025 21:03:40 GMT  
+		Size: 83.1 MB (83145466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f978a03139e0fb0440efa25ccaa4fe6d2b3cca2be674b4739e2ff46dfc5abba`  
-		Last Modified: Mon, 29 Sep 2025 17:58:28 GMT  
-		Size: 124.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `golang:tip-alpine3.21` - unknown; unknown
-
-```console
-$ docker pull golang@sha256:d924c3ee239343ef3fe3ec1533ccad1553e7673ebe4ff0380628229906e1158f
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.6 KB (214566 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c287ed5a4667a07eaf0fb782def2f88c6c74a17f246755fd77859be65727a27f`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:3a9886822e652fe79937c2341e86f0e48f606a9ec2a1e3dd063d2caec4cc2482`  
-		Last Modified: Mon, 29 Sep 2025 20:24:31 GMT  
-		Size: 190.1 KB (190091 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:95db0c592edeb5db5917e72e1eb27e595948f3bdecce818f5fe138572d182dec`  
-		Last Modified: Mon, 29 Sep 2025 20:24:32 GMT  
-		Size: 24.5 KB (24475 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `golang:tip-alpine3.21` - linux; ppc64le
-
-```console
-$ docker pull golang@sha256:4ed8035be4a4b95e02070f0b1177fcb3f5fbe99eca37ae0e5362fdabd774af93
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.1 MB (85061964 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:befd35f9f926a2f289c0039138780797bce3c4bc13e3efe8d6fcde320003afc5`
--	Default Command: `["\/bin\/sh"]`
-
-```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-ppc64le.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
-CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
-ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
-ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
-COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
-WORKDIR /go
-```
-
--	Layers:
-	-	`sha256:bf93837577694839723892fa29fd11013552ac59944071e2341ac6d6d9876d29`  
-		Last Modified: Tue, 15 Jul 2025 19:00:17 GMT  
-		Size: 3.6 MB (3569125 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba4f87ea37b18b6aa0437373912738d64af4d802d362ee5a870ff483bf726a87`  
-		Last Modified: Mon, 29 Sep 2025 18:34:21 GMT  
-		Size: 285.1 KB (285089 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c4682e6be6673e7aa33301c5b30874cd778044246d060f0fbf3c29475651b8b`  
-		Last Modified: Mon, 29 Sep 2025 18:07:23 GMT  
-		Size: 81.2 MB (81207592 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8cace535c24bac6184aa5bdf1fb5ea33d14b1398dc78612189c14ae920c14c7`  
-		Last Modified: Mon, 29 Sep 2025 18:34:21 GMT  
+	-	`sha256:396aeffd096dc8b5e4c725ae5e80d0158839e88ff8cbe20d86dc838968c60cb9`  
+		Last Modified: Mon, 06 Oct 2025 21:06:02 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -472,25 +393,104 @@ WORKDIR /go
 ### `golang:tip-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:c6f63a4a4e741e2bd961a251e9f8666a14ac6dfd85ebac6f7e7c1b6172069615
+$ docker pull golang@sha256:191bc21b8d8db63f679be04fbab7e94fffdade5855759a53681a53357bb596a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.8 KB (212759 bytes)**  
+-	Total Size: **218.3 KB (218262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bcab2753bd497adf782686c4554de4f0e6f515d11abdbc973272d232585d35e`
+-	Image ID: `sha256:d3e320620f4f7969a478dd3dd242cd5493053fe29778c139e791468ba45e11ef`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:edb90e2fecea3fac3122bd070e47eac21054e9af54790776beefd6ca84a4b46d`  
-		Last Modified: Mon, 29 Sep 2025 20:24:35 GMT  
-		Size: 188.2 KB (188205 bytes)  
+	-	`sha256:8b17c7d99ec10252b33f83404ce8131aebfa2470ee93de84621a38114a7818d3`  
+		Last Modified: Mon, 06 Oct 2025 23:24:28 GMT  
+		Size: 193.8 KB (193787 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:faafd866fa9d8561032f7ef858c6f1271dab8e5557e1dddae3ccb7fb1f5fc39e`  
-		Last Modified: Mon, 29 Sep 2025 20:24:36 GMT  
-		Size: 24.6 KB (24554 bytes)  
+	-	`sha256:15969b0fac93e30d0c4e585dbe562b086380e1d5779935224dee39c534b58de9`  
+		Last Modified: Mon, 06 Oct 2025 23:24:29 GMT  
+		Size: 24.5 KB (24475 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `golang:tip-alpine3.21` - linux; ppc64le
+
+```console
+$ docker pull golang@sha256:b691766106c9fe58b53b991826aacbe88f4850c22fbaf669240c31e16bbc609e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **85.7 MB (85731294 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:57ccf76a1c94f1043955db305c31e65e93d96e008f001ad9626b91ca8711ab3c`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Tue, 15 Jul 2025 11:30:48 GMT
+ADD alpine-minirootfs-3.21.4-ppc64le.tar.gz / # buildkit
+# Tue, 15 Jul 2025 11:30:48 GMT
+CMD ["/bin/sh"]
+# Mon, 06 Oct 2025 05:23:19 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Mon, 06 Oct 2025 05:23:19 GMT
+ENV GOTOOLCHAIN=local
+# Mon, 06 Oct 2025 05:23:19 GMT
+ENV GOPATH=/go
+# Mon, 06 Oct 2025 05:23:19 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Mon, 06 Oct 2025 05:23:19 GMT
+COPY /target/ / # buildkit
+# Mon, 06 Oct 2025 05:23:19 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Mon, 06 Oct 2025 05:23:19 GMT
+WORKDIR /go
+```
+
+-	Layers:
+	-	`sha256:bf93837577694839723892fa29fd11013552ac59944071e2341ac6d6d9876d29`  
+		Last Modified: Tue, 15 Jul 2025 19:00:17 GMT  
+		Size: 3.6 MB (3569125 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5c72ed30b4440614b477e3a87c9a33476b9d0b437a968436db8903fed6fcee5`  
+		Last Modified: Mon, 06 Oct 2025 21:18:20 GMT  
+		Size: 294.6 KB (294580 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:734f43290ecdfba214453228a07057302573d0be977b7f6d3aeae38f2799df4e`  
+		Last Modified: Mon, 06 Oct 2025 21:05:37 GMT  
+		Size: 81.9 MB (81867431 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bc4979bd9db1a7c6a86675796b8a6cafd6088aa86fb06a3e43e30cd9866e8848`  
+		Last Modified: Mon, 06 Oct 2025 21:18:20 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:tip-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:dad9817aa51dbaaf96c223e5b18d41d18040fbbca8d7220ad251197d733a35b2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **216.5 KB (216454 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4bab4e4d8d4fb721ef7860b10a5d13dc771ea4b0370637f0d9dcc2197281c7da`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:383f0b77437b323b5aa64711633650453733f251e261edbec79b2f78aa825363`  
+		Last Modified: Mon, 06 Oct 2025 23:24:32 GMT  
+		Size: 191.9 KB (191901 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:d164206de9214e382beba5c4909faea3b172a815e6db73f15e3b53f25ef2e744`  
+		Last Modified: Mon, 06 Oct 2025 23:24:33 GMT  
+		Size: 24.6 KB (24553 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-alpine3.21` - linux; riscv64
@@ -575,13 +575,13 @@ $ docker pull golang@sha256:e4c24763a10f9c50806a18bc9e59ff4ccf922b0135e502eb5820
 ### `golang:tip-alpine3.21` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:708c7d1b372c3a37a755c9d5411eca64ce04416725fdf1c4bf14346dbd344804
+$ docker pull golang@sha256:a9d7f0dc7f163daf613e2c36345b71834880d8ed68f12dcbc919195a41e39c6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.2 MB (86183690 bytes)**  
+-	Total Size: **86.8 MB (86808411 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a860e6a90403918a07430d6a6526efe2a451366f8aa4441a82406661f4d558ef`
+-	Image ID: `sha256:6ab2f9e903b7ae66026ac537ec349e34f84b33dfbe96c5dfe4853fefab59a9fe`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -589,19 +589,19 @@ $ docker pull golang@sha256:708c7d1b372c3a37a755c9d5411eca64ce04416725fdf1c4bf14
 ADD alpine-minirootfs-3.21.4-s390x.tar.gz / # buildkit
 # Tue, 15 Jul 2025 11:30:48 GMT
 CMD ["/bin/sh"]
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOTOOLCHAIN=local
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV GOPATH=/go
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 COPY /target/ / # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 29 Sep 2025 05:23:19 GMT
+# Mon, 06 Oct 2025 05:23:19 GMT
 WORKDIR /go
 ```
 
@@ -610,16 +610,16 @@ WORKDIR /go
 		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
 		Size: 3.5 MB (3462100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42b403b9db0d1935e14098117e3188eb33a1eb2a0127388863b40f42ddd800c0`  
-		Last Modified: Mon, 29 Sep 2025 18:34:16 GMT  
-		Size: 283.4 KB (283430 bytes)  
+	-	`sha256:51c0d08c3945d6368d73f257f34ee298e8dee1cce97a4a8bd5b3c35a4f5ab3ee`  
+		Last Modified: Mon, 06 Oct 2025 21:15:07 GMT  
+		Size: 292.2 KB (292152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02ed6e6981e4c029c9853a9bbba242bc2c9b41f236141c1f10c1334ce58549f0`  
-		Last Modified: Mon, 29 Sep 2025 18:05:39 GMT  
-		Size: 82.4 MB (82438002 bytes)  
+	-	`sha256:35b71ba158c27a4a233d289bf79be8c87a013b440db0421d74c9dff9585ea4d5`  
+		Last Modified: Mon, 06 Oct 2025 21:06:07 GMT  
+		Size: 83.1 MB (83054001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef54d272fe065523d329f889d667a672ba678a5d4bc05aeede6f78aea761d0fe`  
-		Last Modified: Mon, 29 Sep 2025 18:34:16 GMT  
+	-	`sha256:ed8ab92e39fa2e83c97940ed367640265d9527f15b9af81713066daee42f426e`  
+		Last Modified: Mon, 06 Oct 2025 21:15:07 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -630,23 +630,23 @@ WORKDIR /go
 ### `golang:tip-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:94c43e6a1ab799c03b1a29999651c0fd9c457b220df16d13e299a506f873fdc5
+$ docker pull golang@sha256:cc1cc30a8517241b020c2352eae6e05531c4f0b747fd7d270179f3bc8eb51f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.7 KB (212676 bytes)**  
+-	Total Size: **216.4 KB (216373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a354e9ccb543de089432d4f2ac5d485c48e45d088fee02cf3056c6fcf514755`
+-	Image ID: `sha256:e292b1b7de3a5df7b41c4ac0bf55f71ca45ef494f0888182a5ada1e6b9e93047`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:77bc5e9e1767ff29e36f2f5b508689d4b24ab9aee9057819a2bf998ba16ca544`  
-		Last Modified: Mon, 29 Sep 2025 20:24:39 GMT  
-		Size: 188.2 KB (188169 bytes)  
+	-	`sha256:eaa06b88d3b329b140701a4c3af031910b12998ba4094291485eb213a3366ff1`  
+		Last Modified: Mon, 06 Oct 2025 23:24:36 GMT  
+		Size: 191.9 KB (191865 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:165a7a0e6ebcd150a409e24f1b548583377658546a0f4c92fb53b2ac1c915d80`  
-		Last Modified: Mon, 29 Sep 2025 20:24:40 GMT  
-		Size: 24.5 KB (24507 bytes)  
+	-	`sha256:4aea765158d04cf376f0175b2d740c60f86f6160afb45d24ac7381a9b9db5f3d`  
+		Last Modified: Mon, 06 Oct 2025 23:24:36 GMT  
+		Size: 24.5 KB (24508 bytes)  
 		MIME: application/vnd.in-toto+json
