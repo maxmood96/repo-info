@@ -7763,14 +7763,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.dsc' poppler_24.02.0-1ubuntu9.6.dsc 3940 SHA512:2734aba7c7f5882969aca55d0530fefd9e013e4facad1235040aef5678946d6c238e87f514a2a62047af6b5dbbd03591917c2ad968b92dbe2d60bfb8a98e1226
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.6.debian.tar.xz' poppler_24.02.0-1ubuntu9.6.debian.tar.xz 43112 SHA512:eb41467b5506a10b5cd5743e221470871c733ae1b66904db75eb6ce307b2185bf684f1a0fe7f519760516090d9eacce7250ac6a3497cb213ac0cb94eee43b92f
-```
 
 ### `dpkg` source package: `popt=1.19+dfsg-1build1`
 
