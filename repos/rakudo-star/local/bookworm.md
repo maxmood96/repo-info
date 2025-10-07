@@ -1,4 +1,4 @@
-# `rakudo-star:latest`
+# `rakudo-star:bookworm`
 
 ## Docker Metadata
 
