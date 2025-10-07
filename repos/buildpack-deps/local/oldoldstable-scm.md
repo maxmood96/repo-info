@@ -848,20 +848,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.30.2-1+deb11u4
-'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u4.dsc' git_2.30.2-1+deb11u4.dsc 2907 SHA256:31a011a663fe41d6c200f9597ddd1cb89a659a3491b2af21c8035ffdc5a1d9d1
-'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2.orig.tar.xz' git_2.30.2.orig.tar.xz 6329820 SHA256:41f7d90c71f9476cd387673fcb10ce09ccbed67332436a4cc58d7af32c355faa
-'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u4.debian.tar.xz' git_2.30.2-1+deb11u4.debian.tar.xz 716456 SHA256:1cc7f9a0e67a378b4e537724f55fefc6dae6464fdba37df23db1ef65e8373c0e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u4/
 
-- https://sources.debian.net/src/git/1:2.30.2-1+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.30.2-1+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-13+deb11u13`
 

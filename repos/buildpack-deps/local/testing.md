@@ -1795,20 +1795,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=11.4.5-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_11.4.5-1.dsc' harfbuzz_11.4.5-1.dsc 2597 SHA256:4d6cc1d8d9e328df72bf12b4e2afa13ff5bf4194c449794f3c9280d29bb48154
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_11.4.5.orig.tar.xz' harfbuzz_11.4.5.orig.tar.xz 18150652 SHA256:0f052eb4ab01d8bae98ba971c954becb32be57d7250f18af343b1d27892e03fa
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_11.4.5-1.debian.tar.xz' harfbuzz_11.4.5-1.debian.tar.xz 19580 SHA256:9a1990aefd9850e7894d049b7ad768b9e2b1762f3a39307bb9d71e47fdc78e85
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/11.4.5-1/
 
-- https://sources.debian.net/src/harfbuzz/11.4.5-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/11.4.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/11.4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-2`
 
@@ -3771,20 +3764,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.16.8-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.8-1.dsc' linux_6.16.8-1.dsc 208778 SHA256:a1bc3e4e7a0d317a0aa0a97fa4c88c1db1fda35630cb3c0190c740e38bd9a0be
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.8.orig.tar.xz' linux_6.16.8.orig.tar.xz 155698416 SHA256:b3d6a1b8f7566d45a14d4de216aa11beddddb0a310c0e3b4d814d6a355c4b7a4
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.16.8-1.debian.tar.xz' linux_6.16.8-1.debian.tar.xz 1547628 SHA256:4c51f2254127a44dc97bde6b44ddb763325cf081f5900a823ed8bb69a1f8a61f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.16.8-1/
 
-- https://sources.debian.net/src/linux/6.16.8-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.16.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.16.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -4445,21 +4431,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.3-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.3-1.dsc' openssl_3.5.3-1.dsc 2637 SHA256:6320ab6e27851c34a1965e2f017f2b389d3ab71632f75ce1ecaff190de767330
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.3.orig.tar.gz' openssl_3.5.3.orig.tar.gz 53183370 SHA256:c9489d2abcf943cdc8329a57092331c598a402938054dc3a22218aea8a8ec3bf
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.3.orig.tar.gz.asc' openssl_3.5.3.orig.tar.gz.asc 833 SHA256:1fcf5134b47954fabe7d271bad0edd010e71c4ecb1b27bd3d5e3f846d4caf7df
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.3-1.debian.tar.xz' openssl_3.5.3-1.debian.tar.xz 48824 SHA256:a42597cb7755f10393b2be0b447365024cfe179b3f02f617c4906638a4e0fc6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.5.3-1/
 
-- https://sources.debian.net/src/openssl/3.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.9-2`
 
