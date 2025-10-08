@@ -1,16 +1,16 @@
-# `golang:1.25.1-alpine3.21`
+# `golang:1.25.2-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0224dd4ec527f6c7ae09d858f1532fd72aa1059671b46c8a8ebca096b76acd72`
-- Created: `2025-09-03T18:13:04Z`
-- Virtual Size: ~ 213.96 Mb  
+- Image ID: `sha256:4d40af0f83d4caa50f5150bfcc4c579abaf3499d016c81098958c750f355e607`
+- Created: `2025-10-07T19:07:03Z`
+- Virtual Size: ~ 214.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.25.1`
+  - `GOLANG_VERSION=1.25.2`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
@@ -138,16 +138,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
