@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:de00fb1bd0d6a2989057f3cef4a82d86ae063c1c89fad0ebd9d2c34412a5360a`
-- Created: `2025-09-30T15:04:02Z`
-- Virtual Size: ~ 305.73 Mb  
+- Image ID: `sha256:4fa80f09f1591f9bb325e035e1bf7d8dea2914ef468a50050925036d366ec9f9`
+- Created: `2025-10-03T18:38:32Z`
+- Virtual Size: ~ 305.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -21,10 +21,10 @@
 - Labels:
   - `org.opencontainers.image.description=Liquibase Container Image`
   - `org.opencontainers.image.documentation=https://docs.liquibase.com`
-  - `org.opencontainers.image.licenses=Apache-2.0`
+  - `org.opencontainers.image.licenses=FSL-1.1-ALv2`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.vendor=Liquibase`
-  - `org.opencontainers.image.version=5.0.0`
+  - `org.opencontainers.image.version=5.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1910,9 +1910,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.dsc' systemd_249.11-0ubuntu3.16.dsc 5907 SHA512:1faddef1d1b9d3c90dc2828af76bc4cf315aca5d193975e467854323bb279f4260acf52a228d91f6537ffdfdbb62d2849cad95d87cbb37a3d5f389e5a48d9c57
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.debian.tar.xz' systemd_249.11-0ubuntu3.16.debian.tar.xz 258928 SHA512:ed86a0da87cd7e5981d65eb93e9fc07fdbb167c585b66aed3e20dcd857ef18cd067447636ddf377ba5b80d39db9703a7d1c86461e8e73a6623f8938bca864293
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.dsc' systemd_249.11-0ubuntu3.16.dsc 5907 SHA512:1faddef1d1b9d3c90dc2828af76bc4cf315aca5d193975e467854323bb279f4260acf52a228d91f6537ffdfdbb62d2849cad95d87cbb37a3d5f389e5a48d9c57
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.16.debian.tar.xz' systemd_249.11-0ubuntu3.16.debian.tar.xz 258928 SHA512:ed86a0da87cd7e5981d65eb93e9fc07fdbb167c585b66aed3e20dcd857ef18cd067447636ddf377ba5b80d39db9703a7d1c86461e8e73a6623f8938bca864293
 ```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`

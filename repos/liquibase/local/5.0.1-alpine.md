@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13bf59a8a4e9bd7a622b69f6d3449349e18dbc9c6deeb909f60e8b84666ce109`
-- Created: `2025-09-30T15:04:02Z`
-- Virtual Size: ~ 229.02 Mb  
+- Image ID: `sha256:035afe021663fef6a7602ef254195a6f5bc72dbc286496842c0ac41237c3164e`
+- Created: `2025-10-03T18:38:32Z`
+- Virtual Size: ~ 229.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -16,9 +16,9 @@
 - Labels:
   - `org.opencontainers.image.description=Liquibase Container Image (Alpine)`
   - `org.opencontainers.image.documentation=https://docs.liquibase.com`
-  - `org.opencontainers.image.licenses=Apache-2.0`
+  - `org.opencontainers.image.licenses=FSL-1.1-ALv2`
   - `org.opencontainers.image.vendor=Liquibase`
-  - `org.opencontainers.image.version=5.0.0`
+  - `org.opencontainers.image.version=5.0.1`
 
 ## `apk` (`.apk`-based packages)
 
