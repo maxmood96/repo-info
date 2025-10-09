@@ -182,7 +182,7 @@ $ docker pull cirros@sha256:745351deff6c03aa6cf482971a3cb74112f7ec1c585229c0b68c
 
 -	Layers:
 	-	`sha256:202e6337da159219bf6038f0160e186ba44b129a39984dcc256c177d1135878b`  
-		Last Modified: Wed, 01 Jan 2025 19:16:40 GMT  
+		Last Modified: Fri, 27 Sep 2024 10:13:23 GMT  
 		Size: 7.6 KB (7577 bytes)  
 		MIME: application/vnd.in-toto+json
 
