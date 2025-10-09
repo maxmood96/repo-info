@@ -10,7 +10,7 @@
 ## `krakend:2`
 
 ```console
-$ docker pull krakend@sha256:7bfb05217733bdd654f56b4d0ff153bef9bea746fcc7517c2ec13e62815e010e
+$ docker pull krakend@sha256:1f2fd5954ead40d2230f0b87802e418a98e97aa1873b74e8699d0210224e7447
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -101,20 +101,20 @@ $ docker pull krakend@sha256:93d71d74c822a3e226d8d0fd5303b50884e667ee8f07a0b2d57
 ### `krakend:2` - linux; arm64 variant v8
 
 ```console
-$ docker pull krakend@sha256:fcc0a325c87d9519facb90ead3044106c71ccb4ac31bc1a2ebe169e676e90b72
+$ docker pull krakend@sha256:a2b51c42d960933699fcafe223eb5ece51f9bb2b89b6908957573409b6802526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.2 MB (49186090 bytes)**  
+-	Total Size: **49.2 MB (49191238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c6f57c0d2973ef61b0cd9e5267bebde0ddc5d011a75f5d5fd2b0fccc3c7318a`
+-	Image ID: `sha256:7598a7f5c60bffc882ab8e68415fb2c472c4e2731fe489520f4a7e32ddb92995`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["krakend","run","-c","krakend.json"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Wed, 08 Oct 2025 11:06:42 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Wed, 08 Oct 2025 11:06:42 GMT
 CMD ["/bin/sh"]
 # Wed, 08 Oct 2025 16:20:31 GMT
 LABEL org.opencontainers.image.authors=community@krakend.io
@@ -135,51 +135,51 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d6a990d88595bcd9258c7ae339a53ec9297ef451f40421ab9bd12a801d83e1d`  
-		Last Modified: Wed, 08 Oct 2025 18:08:30 GMT  
-		Size: 463.1 KB (463146 bytes)  
+	-	`sha256:0bcaaefb03766ea7f003739c50717a8b147950a148a90d45c837a7a6a416bff8`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 463.1 KB (463100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b749a62d80a98133d46435037b69d1fb1634e089e240ab247945126d06a0987e`  
-		Last Modified: Wed, 08 Oct 2025 18:08:40 GMT  
-		Size: 44.7 MB (44735331 bytes)  
+	-	`sha256:45fb9d73af0e98161aefe8cb25615c87190378a5d6aa9094cc9a905d49db3a3f`  
+		Last Modified: Wed, 08 Oct 2025 21:28:35 GMT  
+		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06591f25c72efd55f13e53486de943361d6722770f16c627e91600d65569657a`  
-		Last Modified: Wed, 08 Oct 2025 18:08:31 GMT  
-		Size: 644.0 B  
+	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `krakend:2` - unknown; unknown
 
 ```console
-$ docker pull krakend@sha256:3f2b23668e5b41cbf520d30f28ab566044c7f26e4bd1b1d61cb53344bbd6abeb
+$ docker pull krakend@sha256:7bb83f45f00e7f70b48870cf5ea2f608005a7160100edc07c2cfcd033a68f959
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.3 KB (15328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5cdeaa0b9bdf0b7bf5428e631faa9cba1072e3ec8b27a9d3a706bec1d9674ab`
+-	Image ID: `sha256:b523cc5add3f77cf5f7822fac2462f4982ccd5b1ef619143d56d76b73c143f83`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d8198db2c7700c3bf542696109ba8bd7c1ab689bd08ca65f52068a431d7eb151`  
-		Last Modified: Wed, 08 Oct 2025 20:12:25 GMT  
+	-	`sha256:8bd490ef59c1f695946e9808a7e4e3c84ad9eec10d0bb42a31db069d84ee4444`  
+		Last Modified: Wed, 08 Oct 2025 23:12:19 GMT  
 		Size: 15.3 KB (15328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `krakend:2.11`
 
 ```console
-$ docker pull krakend@sha256:7bfb05217733bdd654f56b4d0ff153bef9bea746fcc7517c2ec13e62815e010e
+$ docker pull krakend@sha256:1f2fd5954ead40d2230f0b87802e418a98e97aa1873b74e8699d0210224e7447
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -270,20 +270,20 @@ $ docker pull krakend@sha256:93d71d74c822a3e226d8d0fd5303b50884e667ee8f07a0b2d57
 ### `krakend:2.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull krakend@sha256:fcc0a325c87d9519facb90ead3044106c71ccb4ac31bc1a2ebe169e676e90b72
+$ docker pull krakend@sha256:a2b51c42d960933699fcafe223eb5ece51f9bb2b89b6908957573409b6802526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.2 MB (49186090 bytes)**  
+-	Total Size: **49.2 MB (49191238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c6f57c0d2973ef61b0cd9e5267bebde0ddc5d011a75f5d5fd2b0fccc3c7318a`
+-	Image ID: `sha256:7598a7f5c60bffc882ab8e68415fb2c472c4e2731fe489520f4a7e32ddb92995`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["krakend","run","-c","krakend.json"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Wed, 08 Oct 2025 11:06:42 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Wed, 08 Oct 2025 11:06:42 GMT
 CMD ["/bin/sh"]
 # Wed, 08 Oct 2025 16:20:31 GMT
 LABEL org.opencontainers.image.authors=community@krakend.io
@@ -304,51 +304,51 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d6a990d88595bcd9258c7ae339a53ec9297ef451f40421ab9bd12a801d83e1d`  
-		Last Modified: Wed, 08 Oct 2025 18:08:30 GMT  
-		Size: 463.1 KB (463146 bytes)  
+	-	`sha256:0bcaaefb03766ea7f003739c50717a8b147950a148a90d45c837a7a6a416bff8`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 463.1 KB (463100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b749a62d80a98133d46435037b69d1fb1634e089e240ab247945126d06a0987e`  
-		Last Modified: Wed, 08 Oct 2025 18:08:40 GMT  
-		Size: 44.7 MB (44735331 bytes)  
+	-	`sha256:45fb9d73af0e98161aefe8cb25615c87190378a5d6aa9094cc9a905d49db3a3f`  
+		Last Modified: Wed, 08 Oct 2025 21:28:35 GMT  
+		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06591f25c72efd55f13e53486de943361d6722770f16c627e91600d65569657a`  
-		Last Modified: Wed, 08 Oct 2025 18:08:31 GMT  
-		Size: 644.0 B  
+	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `krakend:2.11` - unknown; unknown
 
 ```console
-$ docker pull krakend@sha256:3f2b23668e5b41cbf520d30f28ab566044c7f26e4bd1b1d61cb53344bbd6abeb
+$ docker pull krakend@sha256:7bb83f45f00e7f70b48870cf5ea2f608005a7160100edc07c2cfcd033a68f959
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.3 KB (15328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5cdeaa0b9bdf0b7bf5428e631faa9cba1072e3ec8b27a9d3a706bec1d9674ab`
+-	Image ID: `sha256:b523cc5add3f77cf5f7822fac2462f4982ccd5b1ef619143d56d76b73c143f83`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d8198db2c7700c3bf542696109ba8bd7c1ab689bd08ca65f52068a431d7eb151`  
-		Last Modified: Wed, 08 Oct 2025 20:12:25 GMT  
+	-	`sha256:8bd490ef59c1f695946e9808a7e4e3c84ad9eec10d0bb42a31db069d84ee4444`  
+		Last Modified: Wed, 08 Oct 2025 23:12:19 GMT  
 		Size: 15.3 KB (15328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `krakend:2.11.1`
 
 ```console
-$ docker pull krakend@sha256:7bfb05217733bdd654f56b4d0ff153bef9bea746fcc7517c2ec13e62815e010e
+$ docker pull krakend@sha256:1f2fd5954ead40d2230f0b87802e418a98e97aa1873b74e8699d0210224e7447
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -439,20 +439,20 @@ $ docker pull krakend@sha256:93d71d74c822a3e226d8d0fd5303b50884e667ee8f07a0b2d57
 ### `krakend:2.11.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull krakend@sha256:fcc0a325c87d9519facb90ead3044106c71ccb4ac31bc1a2ebe169e676e90b72
+$ docker pull krakend@sha256:a2b51c42d960933699fcafe223eb5ece51f9bb2b89b6908957573409b6802526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.2 MB (49186090 bytes)**  
+-	Total Size: **49.2 MB (49191238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c6f57c0d2973ef61b0cd9e5267bebde0ddc5d011a75f5d5fd2b0fccc3c7318a`
+-	Image ID: `sha256:7598a7f5c60bffc882ab8e68415fb2c472c4e2731fe489520f4a7e32ddb92995`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["krakend","run","-c","krakend.json"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Wed, 08 Oct 2025 11:06:42 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Wed, 08 Oct 2025 11:06:42 GMT
 CMD ["/bin/sh"]
 # Wed, 08 Oct 2025 16:20:31 GMT
 LABEL org.opencontainers.image.authors=community@krakend.io
@@ -473,51 +473,51 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d6a990d88595bcd9258c7ae339a53ec9297ef451f40421ab9bd12a801d83e1d`  
-		Last Modified: Wed, 08 Oct 2025 18:08:30 GMT  
-		Size: 463.1 KB (463146 bytes)  
+	-	`sha256:0bcaaefb03766ea7f003739c50717a8b147950a148a90d45c837a7a6a416bff8`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 463.1 KB (463100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b749a62d80a98133d46435037b69d1fb1634e089e240ab247945126d06a0987e`  
-		Last Modified: Wed, 08 Oct 2025 18:08:40 GMT  
-		Size: 44.7 MB (44735331 bytes)  
+	-	`sha256:45fb9d73af0e98161aefe8cb25615c87190378a5d6aa9094cc9a905d49db3a3f`  
+		Last Modified: Wed, 08 Oct 2025 21:28:35 GMT  
+		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06591f25c72efd55f13e53486de943361d6722770f16c627e91600d65569657a`  
-		Last Modified: Wed, 08 Oct 2025 18:08:31 GMT  
-		Size: 644.0 B  
+	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `krakend:2.11.1` - unknown; unknown
 
 ```console
-$ docker pull krakend@sha256:3f2b23668e5b41cbf520d30f28ab566044c7f26e4bd1b1d61cb53344bbd6abeb
+$ docker pull krakend@sha256:7bb83f45f00e7f70b48870cf5ea2f608005a7160100edc07c2cfcd033a68f959
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.3 KB (15328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5cdeaa0b9bdf0b7bf5428e631faa9cba1072e3ec8b27a9d3a706bec1d9674ab`
+-	Image ID: `sha256:b523cc5add3f77cf5f7822fac2462f4982ccd5b1ef619143d56d76b73c143f83`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d8198db2c7700c3bf542696109ba8bd7c1ab689bd08ca65f52068a431d7eb151`  
-		Last Modified: Wed, 08 Oct 2025 20:12:25 GMT  
+	-	`sha256:8bd490ef59c1f695946e9808a7e4e3c84ad9eec10d0bb42a31db069d84ee4444`  
+		Last Modified: Wed, 08 Oct 2025 23:12:19 GMT  
 		Size: 15.3 KB (15328 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `krakend:latest`
 
 ```console
-$ docker pull krakend@sha256:7bfb05217733bdd654f56b4d0ff153bef9bea746fcc7517c2ec13e62815e010e
+$ docker pull krakend@sha256:1f2fd5954ead40d2230f0b87802e418a98e97aa1873b74e8699d0210224e7447
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -608,20 +608,20 @@ $ docker pull krakend@sha256:93d71d74c822a3e226d8d0fd5303b50884e667ee8f07a0b2d57
 ### `krakend:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull krakend@sha256:fcc0a325c87d9519facb90ead3044106c71ccb4ac31bc1a2ebe169e676e90b72
+$ docker pull krakend@sha256:a2b51c42d960933699fcafe223eb5ece51f9bb2b89b6908957573409b6802526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.2 MB (49186090 bytes)**  
+-	Total Size: **49.2 MB (49191238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c6f57c0d2973ef61b0cd9e5267bebde0ddc5d011a75f5d5fd2b0fccc3c7318a`
+-	Image ID: `sha256:7598a7f5c60bffc882ab8e68415fb2c472c4e2731fe489520f4a7e32ddb92995`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["krakend","run","-c","krakend.json"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Wed, 08 Oct 2025 11:06:42 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Wed, 08 Oct 2025 11:06:42 GMT
 CMD ["/bin/sh"]
 # Wed, 08 Oct 2025 16:20:31 GMT
 LABEL org.opencontainers.image.authors=community@krakend.io
@@ -642,43 +642,43 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d6a990d88595bcd9258c7ae339a53ec9297ef451f40421ab9bd12a801d83e1d`  
-		Last Modified: Wed, 08 Oct 2025 18:08:30 GMT  
-		Size: 463.1 KB (463146 bytes)  
+	-	`sha256:0bcaaefb03766ea7f003739c50717a8b147950a148a90d45c837a7a6a416bff8`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 463.1 KB (463100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b749a62d80a98133d46435037b69d1fb1634e089e240ab247945126d06a0987e`  
-		Last Modified: Wed, 08 Oct 2025 18:08:40 GMT  
-		Size: 44.7 MB (44735331 bytes)  
+	-	`sha256:45fb9d73af0e98161aefe8cb25615c87190378a5d6aa9094cc9a905d49db3a3f`  
+		Last Modified: Wed, 08 Oct 2025 21:28:35 GMT  
+		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06591f25c72efd55f13e53486de943361d6722770f16c627e91600d65569657a`  
-		Last Modified: Wed, 08 Oct 2025 18:08:31 GMT  
-		Size: 644.0 B  
+	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
+		Last Modified: Wed, 08 Oct 2025 21:28:33 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `krakend:latest` - unknown; unknown
 
 ```console
-$ docker pull krakend@sha256:3f2b23668e5b41cbf520d30f28ab566044c7f26e4bd1b1d61cb53344bbd6abeb
+$ docker pull krakend@sha256:7bb83f45f00e7f70b48870cf5ea2f608005a7160100edc07c2cfcd033a68f959
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.3 KB (15328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5cdeaa0b9bdf0b7bf5428e631faa9cba1072e3ec8b27a9d3a706bec1d9674ab`
+-	Image ID: `sha256:b523cc5add3f77cf5f7822fac2462f4982ccd5b1ef619143d56d76b73c143f83`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d8198db2c7700c3bf542696109ba8bd7c1ab689bd08ca65f52068a431d7eb151`  
-		Last Modified: Wed, 08 Oct 2025 20:12:25 GMT  
+	-	`sha256:8bd490ef59c1f695946e9808a7e4e3c84ad9eec10d0bb42a31db069d84ee4444`  
+		Last Modified: Wed, 08 Oct 2025 23:12:19 GMT  
 		Size: 15.3 KB (15328 bytes)  
 		MIME: application/vnd.in-toto+json
