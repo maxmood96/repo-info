@@ -1,7 +1,7 @@
 ## `caddy:builder`
 
 ```console
-$ docker pull caddy@sha256:4d2be51cdd15fc6872738bc1f26f7c0606c8bd135e7580d4fe6cf54810b19bb7
+$ docker pull caddy@sha256:8b4ef1aecb03330cf0532b2785a8f0807d0d1c87127054e533ad25b75df3c224
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,19 +26,19 @@ $ docker pull caddy@sha256:4d2be51cdd15fc6872738bc1f26f7c0606c8bd135e7580d4fe6cf
 ### `caddy:builder` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:4eb65fb153a45375ee43fb17580b5f7d75ed90b41d50fd560eb30ba9bfceddaa
+$ docker pull caddy@sha256:51ad4e13256a287e190b8863f8c1afcf044e54c024bf97f3bbe38ddebdcb9c80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.3 MB (72300550 bytes)**  
+-	Total Size: **72.3 MB (72303117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be0fea734e4dc0638cddccf1eee0a22148fd1aa4bc591beb6a35eecadefcc0e5`
+-	Image ID: `sha256:53df702f8ae8580ee43b354bf2c0a791f8122c7164d0f6f0d2a0c6f5a90c09fb`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sat, 23 Aug 2025 03:19:59 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
 CMD ["/bin/sh"]
 # Sat, 23 Aug 2025 03:19:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -75,258 +75,36 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2cb43161fc6dc3c8a304f6194e0dacd0b9f2348b4ccb83df9de4b60a8b389d0`  
-		Last Modified: Tue, 07 Oct 2025 20:48:03 GMT  
-		Size: 291.2 KB (291198 bytes)  
+	-	`sha256:c35fb4624d26424571dfb821ae83d912cb463420dcedd6224f36bb5f96f92542`  
+		Last Modified: Wed, 08 Oct 2025 23:03:29 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e2aec7ef170b5f02e240ef6c8aac64fb96a14688ea0750c962c145c141f3830`  
 		Last Modified: Tue, 07 Oct 2025 20:47:28 GMT  
 		Size: 60.1 MB (60149177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18300489823e7c1e344fa6c1fa8a6350fa3c67b443964dea9c5d46f4c435b0f7`  
-		Last Modified: Tue, 07 Oct 2025 20:48:03 GMT  
-		Size: 126.0 B  
+	-	`sha256:333b49ad6fbf2b99bf7532e840b5bff11ea42e960a0a8851832dbe82fa3d7c00`  
+		Last Modified: Wed, 08 Oct 2025 23:03:29 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68b20c86ec60f4a40d4f6cb2792acf767eb7c231730f86750704e33e042848e7`  
-		Last Modified: Tue, 07 Oct 2025 21:16:10 GMT  
-		Size: 6.2 MB (6213408 bytes)  
+	-	`sha256:1af5a2e9b9fceeb5a3b6fd41d35fe235adac28dc6f667a3a5d24500e317fa91c`  
+		Last Modified: Wed, 08 Oct 2025 23:47:13 GMT  
+		Size: 6.2 MB (6213251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90c691498c0bd60452bfad937bc36beaf34e3d8aa7ee1a8dc1f9dfaf435659ee`  
-		Last Modified: Tue, 07 Oct 2025 21:16:10 GMT  
-		Size: 1.8 MB (1846491 bytes)  
+	-	`sha256:b3cc03736d3cb48227c6f905558b4adf3040b7db1d47e7e1206f6970f1430d1c`  
+		Last Modified: Wed, 08 Oct 2025 23:47:13 GMT  
+		Size: 1.8 MB (1846500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9401882f536f6c992beabe034ee44cbf148cf157e57e032003b3de5ae831c4b7`  
-		Last Modified: Tue, 07 Oct 2025 21:16:09 GMT  
-		Size: 397.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `caddy:builder` - unknown; unknown
-
-```console
-$ docker pull caddy@sha256:fe6f814e59afeb95d4f1b61ef235d0635f3add0c4436772096e6bcd0a1e133d4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.6 KB (300609 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:381be6b1f4f7e94b315cb1bd928774241cd08f1a8f9c805319d2928c0c9b60c2`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:c7f76ca326f0a6d98c7af98ea26615289264ea863102c90eea4dddaf3c040bc6`  
-		Last Modified: Wed, 08 Oct 2025 00:52:26 GMT  
-		Size: 280.5 KB (280495 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:a0247f8ee551f83976ba097f3d93d7cfa32673a7d8dedd82e939893e6fb2133e`  
-		Last Modified: Wed, 08 Oct 2025 00:52:28 GMT  
-		Size: 20.1 KB (20114 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `caddy:builder` - linux; arm variant v6
-
-```console
-$ docker pull caddy@sha256:dbcb4b52a21e563618f662f7945295a4753fd2c6330bbd60e5144964d67eca41
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.7 MB (70740771 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d0dc9068e3fe183a0d5a2ae55a16fbd8d890628395af264a2d89376511e3fff`
--	Default Command: `["\/bin\/sh"]`
-
-```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-armhf.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
-CMD ["/bin/sh"]
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV GOLANG_VERSION=1.25.2
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV GOTOOLCHAIN=local
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV GOPATH=/go
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 23 Aug 2025 03:19:59 GMT
-COPY /target/ / # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-WORKDIR /go
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV XCADDY_VERSION=v0.4.5
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV CADDY_VERSION=v2.10.2
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV XCADDY_SKIP_CLEANUP=1
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV XCADDY_SETCAP=1
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='edea47d552fd9ac0a533386a72acaa95733ce734f347c11e5513469b5dc0eec0a62a6e21cfa93a83ab00b2dad72e0ee0b9bdf267a9654235f70d4c934739a15b' ;; 		armhf)   binArch='armv6'; checksum='29e4b7c484c0045d192fc8e7721c41988c1b8fc529343499ebb2acf94fba60f6e6c25c0944f7fb778ae25d5f8ccca452fc31d0338d6630d9b5219d5f9210ea44' ;; 		armv7)   binArch='armv7'; checksum='7e115fe60be169ffccff6884f1ab8fbe754d117c39618b02aedab9c857f0dcdc3cc6949f76b6a799cd617b509021bb086a4b2c5fb6c74d409d09429ff591a616' ;; 		aarch64) binArch='arm64'; checksum='2933968a6e759a0406dc864000960fe0e605db9f0fe0662ce245897eaa5b529e322d1b14c2b98463a95e13f1dfd85432541b41f459a237daedb8c68a8f6a5bb1' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='10e5f7e7dc885b278ebf4c5a97df4bde85a96fbc529890263f42af0445790a18669f44e318be1ac7639a283499e679ce9dabd8fe248478095d514bc2b72e6cd1' ;; 		riscv64) binArch='riscv64'; checksum='4b108ef51ee3fd567f13cba3d3e2c89f86894e27b2ae5585e9ee20346b17f71a3bdcb968b25cb6d88a9a9671ef73cf82a1c0060e273d9b2e0c0c680369c83280' ;; 		s390x)   binArch='s390x'; checksum='f2e18d550dc12cb06bedda46c47404a2fbfdfb12363483daf41f5c52736a8ad22c72d7c32edb08aac7a18a1f1faee19aa787ac72b7515f07daf77329f4efbc3f' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.4.5/xcaddy_0.4.5_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy; # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-COPY caddy-builder.sh /usr/bin/caddy-builder # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-WORKDIR /usr/bin
-```
-
--	Layers:
-	-	`sha256:06bab5e847c5674d6ec26b342cc11d7a051a6a231e5db8a955d57bc9f4ab5595`  
-		Last Modified: Tue, 15 Jul 2025 18:59:34 GMT  
-		Size: 3.5 MB (3500910 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85ab2d2f547d457177385ee8c584aeec12becde8a813a88d8e3692d56d6bdc11`  
-		Last Modified: Tue, 07 Oct 2025 19:34:31 GMT  
-		Size: 292.4 KB (292396 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a729a3e231583976ae1f9cca817bd27dd00673c51d31bb2652e5b51a3d2ea3d`  
-		Last Modified: Tue, 07 Oct 2025 19:34:35 GMT  
-		Size: 59.1 MB (59074026 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d646ee4c0b471ce651bb2f27d2e4931233fdd6815c76626a4dd325719044b1d7`  
-		Last Modified: Tue, 07 Oct 2025 19:34:30 GMT  
-		Size: 126.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95f6991d0bd1dac463d19255050afce12898c6203eea1afdaffc7e382aa4b6b5`  
-		Last Modified: Tue, 07 Oct 2025 20:12:14 GMT  
-		Size: 6.1 MB (6127845 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8829aa3ae0e4b71cef1f5bbd6677d28717d01f759bc91b802bb881fe92f418a`  
-		Last Modified: Tue, 07 Oct 2025 20:12:17 GMT  
-		Size: 1.7 MB (1745003 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:358c16be77d1aa138673ce1f4bf5b67b4c4eccf657f0acc0b632975954800bbb`  
-		Last Modified: Tue, 07 Oct 2025 20:12:14 GMT  
-		Size: 401.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `caddy:builder` - unknown; unknown
-
-```console
-$ docker pull caddy@sha256:6f23375f3fae2b01324efb52c7047cec90a65be029dbe4af9e2b8f496871b295
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.0 KB (20025 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b7df9e3cbf651eb77e9c6c0209dbc6c40b3dead61d79f24c760a1984356a918`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:92f3d64b31106af35280fbe4f489a177291948ea7aa509b75990dccd2f8d34a7`  
-		Last Modified: Tue, 07 Oct 2025 21:52:47 GMT  
-		Size: 20.0 KB (20025 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `caddy:builder` - linux; arm variant v7
-
-```console
-$ docker pull caddy@sha256:55b114f5252af20f0b160f60b8e33dd28b0c979f9cd4f1223ff5b0ffa6c13045
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69928250 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d481af99da9494069c9116222dd4d7794083456e8e74cd739b338c7f28fbdc2e`
--	Default Command: `["\/bin\/sh"]`
-
-```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-armv7.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
-CMD ["/bin/sh"]
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN apk add --no-cache ca-certificates # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV GOLANG_VERSION=1.25.2
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV GOTOOLCHAIN=local
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV GOPATH=/go
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 23 Aug 2025 03:19:59 GMT
-COPY /target/ / # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-WORKDIR /go
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV XCADDY_VERSION=v0.4.5
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV CADDY_VERSION=v2.10.2
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV XCADDY_SKIP_CLEANUP=1
-# Sat, 23 Aug 2025 03:19:59 GMT
-ENV XCADDY_SETCAP=1
-# Sat, 23 Aug 2025 03:19:59 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='edea47d552fd9ac0a533386a72acaa95733ce734f347c11e5513469b5dc0eec0a62a6e21cfa93a83ab00b2dad72e0ee0b9bdf267a9654235f70d4c934739a15b' ;; 		armhf)   binArch='armv6'; checksum='29e4b7c484c0045d192fc8e7721c41988c1b8fc529343499ebb2acf94fba60f6e6c25c0944f7fb778ae25d5f8ccca452fc31d0338d6630d9b5219d5f9210ea44' ;; 		armv7)   binArch='armv7'; checksum='7e115fe60be169ffccff6884f1ab8fbe754d117c39618b02aedab9c857f0dcdc3cc6949f76b6a799cd617b509021bb086a4b2c5fb6c74d409d09429ff591a616' ;; 		aarch64) binArch='arm64'; checksum='2933968a6e759a0406dc864000960fe0e605db9f0fe0662ce245897eaa5b529e322d1b14c2b98463a95e13f1dfd85432541b41f459a237daedb8c68a8f6a5bb1' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='10e5f7e7dc885b278ebf4c5a97df4bde85a96fbc529890263f42af0445790a18669f44e318be1ac7639a283499e679ce9dabd8fe248478095d514bc2b72e6cd1' ;; 		riscv64) binArch='riscv64'; checksum='4b108ef51ee3fd567f13cba3d3e2c89f86894e27b2ae5585e9ee20346b17f71a3bdcb968b25cb6d88a9a9671ef73cf82a1c0060e273d9b2e0c0c680369c83280' ;; 		s390x)   binArch='s390x'; checksum='f2e18d550dc12cb06bedda46c47404a2fbfdfb12363483daf41f5c52736a8ad22c72d7c32edb08aac7a18a1f1faee19aa787ac72b7515f07daf77329f4efbc3f' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.4.5/xcaddy_0.4.5_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy; # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-COPY caddy-builder.sh /usr/bin/caddy-builder # buildkit
-# Sat, 23 Aug 2025 03:19:59 GMT
-WORKDIR /usr/bin
-```
-
--	Layers:
-	-	`sha256:5ee064f8764b09a64829b58705219a88e0b13243f7f403d66ac0c639640426a5`  
-		Last Modified: Tue, 15 Jul 2025 19:04:18 GMT  
-		Size: 3.2 MB (3219038 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4a288a79ca6a4350337b07c932262e8f347ed6880fe59b5563ac73c9f803137`  
-		Last Modified: Tue, 07 Oct 2025 19:34:07 GMT  
-		Size: 291.2 KB (291250 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b28977543608eb3d47060855462d9576fb750f3b4671b32d32fcc7f41fe2a4f4`  
-		Last Modified: Tue, 07 Oct 2025 19:34:15 GMT  
-		Size: 59.1 MB (59074083 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1816d18ba2c391dce999f8d624e00e98d0750960159838ad5a758a1c823370d0`  
-		Last Modified: Tue, 07 Oct 2025 19:34:07 GMT  
-		Size: 127.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:170a7711e720e61a5bea9c3e9f89d43f9b7cff046fdb448464ff7852495a7a29`  
-		Last Modified: Tue, 07 Oct 2025 20:12:34 GMT  
-		Size: 5.6 MB (5604533 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f37cd6cbc3ecaa5366265b2f2123fd3fc396bbd11f243ebbf65b2818815e3633`  
-		Last Modified: Tue, 07 Oct 2025 20:12:31 GMT  
-		Size: 1.7 MB (1738755 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2a0ee9d76fad199709a7ed41987fed2b3a1328d22f52fe7a471b1d44816e92`  
-		Last Modified: Tue, 07 Oct 2025 20:12:31 GMT  
+	-	`sha256:5112dc17c514a2731df451c977b2d07dcc85a92de085d7bb5a4b91bc0ce4c82a`  
+		Last Modified: Wed, 08 Oct 2025 23:47:12 GMT  
 		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -337,43 +115,43 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:090872a581fa408bbcb6c36b988f85a4bf91ec6e9d77b041b9f7cfece1ae3499
+$ docker pull caddy@sha256:98ba64d7acda52e7aa5d9056ab4725a8a8cea783537ac3b8dcfb2195f72faa2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **303.8 KB (303779 bytes)**  
+-	Total Size: **299.5 KB (299527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:915116088f16b2607edef8699dce078a526f4daf9629312a3752f32988dad930`
+-	Image ID: `sha256:91a9a61f243ef362fef491aae773a56403af8bb6b854b2fa09f468af3e0479a0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19926eb98d13a1aa5d7d42a724a81a9c8ce3766554c90a492738310bbacbf158`  
-		Last Modified: Tue, 07 Oct 2025 21:52:50 GMT  
-		Size: 283.5 KB (283539 bytes)  
+	-	`sha256:506ed6ff9240035f2024e34051bee8976b16d3ee26cf2cdabe617d35a7f93194`  
+		Last Modified: Thu, 09 Oct 2025 00:52:46 GMT  
+		Size: 279.4 KB (279412 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7acb47d7b9f091f502bbefcb2d9b1ddebe7f46211f298501aa5068160accaf25`  
-		Last Modified: Tue, 07 Oct 2025 21:52:51 GMT  
-		Size: 20.2 KB (20240 bytes)  
+	-	`sha256:ae870e496b762160ec6b97390893abd8ffdfc978b257c2a9f6e3adcdc1eeae74`  
+		Last Modified: Thu, 09 Oct 2025 00:52:47 GMT  
+		Size: 20.1 KB (20115 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `caddy:builder` - linux; arm64 variant v8
+### `caddy:builder` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:28c20c8d5c79bff85a1ecdf837438bb14cfe6d39577d09e1736333e030c48174
+$ docker pull caddy@sha256:dd278977f84adc5a1c9129cd836d540cca6de20e6b840ec573aab0b397c39e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.1 MB (70050945 bytes)**  
+-	Total Size: **70.7 MB (70743771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f64bf90acbf44558cd2643514517f920b14a9e7290622e76bb7eb2148d2af3f`
+-	Image ID: `sha256:54154929258f01004552b88277bcaf7ad38ff2c4dcb8862429a52f181a45030a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sat, 23 Aug 2025 03:19:59 GMT
+ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
 CMD ["/bin/sh"]
 # Sat, 23 Aug 2025 03:19:59 GMT
 RUN apk add --no-cache ca-certificates # buildkit
@@ -410,36 +188,145 @@ WORKDIR /usr/bin
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:bb1da3d879939be7df9f182950d2fb201d4fc2e1043677da2037cd6afb084ce0`  
+		Last Modified: Wed, 08 Oct 2025 21:00:16 GMT  
+		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5caf2aa38194e3316af15efb06580b5313b6b61b78cf72e3b0e60a4f16867695`  
-		Last Modified: Tue, 07 Oct 2025 19:34:24 GMT  
-		Size: 294.2 KB (294173 bytes)  
+	-	`sha256:b60994a2fa6b267edd2843cd5fc3f2d8c2924451ede829846056191379774525`  
+		Last Modified: Wed, 08 Oct 2025 22:10:35 GMT  
+		Size: 292.3 KB (292299 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66626199bcfab248906ccbdd0d977cc77ec2231a37f1710a42892109d86b2544`  
-		Last Modified: Tue, 07 Oct 2025 19:34:30 GMT  
-		Size: 57.6 MB (57647819 bytes)  
+	-	`sha256:3a729a3e231583976ae1f9cca817bd27dd00673c51d31bb2652e5b51a3d2ea3d`  
+		Last Modified: Tue, 07 Oct 2025 19:34:35 GMT  
+		Size: 59.1 MB (59074026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9329b66302da068245ed3133e27e7639b7a02a085eea51633dfcc2b5235878c`  
-		Last Modified: Tue, 07 Oct 2025 19:34:23 GMT  
+	-	`sha256:a144a8289ff4ec4a0f9128ce6b7dc6f717724bc579d510f16fa276fe7e0ac938`  
+		Last Modified: Wed, 08 Oct 2025 22:10:35 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b583b391423c5f2cdf00c56a29e8223db59d8e39a0d51927768e24fa0344bea1`  
-		Last Modified: Tue, 07 Oct 2025 20:12:28 GMT  
-		Size: 6.3 MB (6261231 bytes)  
+	-	`sha256:489309bacd6594fd4a34047d1650f9f4bf5780d593a2caa20ba9bec3e528d6ae`  
+		Last Modified: Wed, 08 Oct 2025 23:13:05 GMT  
+		Size: 6.1 MB (6127775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1896c4d7e6f8cb4114d3f54e0711a612f2c56eba974e387bc42ab3a48a3df1a1`  
-		Last Modified: Tue, 07 Oct 2025 20:12:28 GMT  
-		Size: 1.7 MB (1716381 bytes)  
+	-	`sha256:339175886b0ae9c7c18537794d41a7dcd74762c3daafd1b942693c6d1c3d15ec`  
+		Last Modified: Wed, 08 Oct 2025 23:13:05 GMT  
+		Size: 1.7 MB (1744999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:981659c68f611dbe6c2ea8fba91db5ae7cb4eaac38ff210b2fe33d3450b16960`  
-		Last Modified: Tue, 07 Oct 2025 20:12:27 GMT  
+	-	`sha256:201a02dd3c392282efa2642d8ac03370d22fc34571988fbb166b468adad844c9`  
+		Last Modified: Wed, 08 Oct 2025 23:13:04 GMT  
+		Size: 402.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `caddy:builder` - unknown; unknown
+
+```console
+$ docker pull caddy@sha256:685cb42d74489ef73bafcaff243442231e438c0ef42df270840afff3714665d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **20.0 KB (20025 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:302056ff80f819882f6571dd729b211879955d425e4852de6c586d5e99d6f6db`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:43988f3865f7ac3e6778272a9188916e1e19dfb565093bb25a251e38c676315e`  
+		Last Modified: Thu, 09 Oct 2025 00:52:50 GMT  
+		Size: 20.0 KB (20025 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `caddy:builder` - linux; arm variant v7
+
+```console
+$ docker pull caddy@sha256:fcc0ac6222231544ae7ed510400f5c250431a599fdae01d1a14c362367bc68ca
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **69.9 MB (69930578 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5736ca22b1c671c5dfed4b1a6c0385ed46bb8c1b22d1bb63118680b4c7ca55d8`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Sat, 23 Aug 2025 03:19:59 GMT
+ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+CMD ["/bin/sh"]
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV GOLANG_VERSION=1.25.2
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV GOTOOLCHAIN=local
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV GOPATH=/go
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 23 Aug 2025 03:19:59 GMT
+COPY /target/ / # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+WORKDIR /go
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV XCADDY_VERSION=v0.4.5
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV CADDY_VERSION=v2.10.2
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV XCADDY_SKIP_CLEANUP=1
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV XCADDY_SETCAP=1
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='edea47d552fd9ac0a533386a72acaa95733ce734f347c11e5513469b5dc0eec0a62a6e21cfa93a83ab00b2dad72e0ee0b9bdf267a9654235f70d4c934739a15b' ;; 		armhf)   binArch='armv6'; checksum='29e4b7c484c0045d192fc8e7721c41988c1b8fc529343499ebb2acf94fba60f6e6c25c0944f7fb778ae25d5f8ccca452fc31d0338d6630d9b5219d5f9210ea44' ;; 		armv7)   binArch='armv7'; checksum='7e115fe60be169ffccff6884f1ab8fbe754d117c39618b02aedab9c857f0dcdc3cc6949f76b6a799cd617b509021bb086a4b2c5fb6c74d409d09429ff591a616' ;; 		aarch64) binArch='arm64'; checksum='2933968a6e759a0406dc864000960fe0e605db9f0fe0662ce245897eaa5b529e322d1b14c2b98463a95e13f1dfd85432541b41f459a237daedb8c68a8f6a5bb1' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='10e5f7e7dc885b278ebf4c5a97df4bde85a96fbc529890263f42af0445790a18669f44e318be1ac7639a283499e679ce9dabd8fe248478095d514bc2b72e6cd1' ;; 		riscv64) binArch='riscv64'; checksum='4b108ef51ee3fd567f13cba3d3e2c89f86894e27b2ae5585e9ee20346b17f71a3bdcb968b25cb6d88a9a9671ef73cf82a1c0060e273d9b2e0c0c680369c83280' ;; 		s390x)   binArch='s390x'; checksum='f2e18d550dc12cb06bedda46c47404a2fbfdfb12363483daf41f5c52736a8ad22c72d7c32edb08aac7a18a1f1faee19aa787ac72b7515f07daf77329f4efbc3f' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.4.5/xcaddy_0.4.5_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy; # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+COPY caddy-builder.sh /usr/bin/caddy-builder # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+WORKDIR /usr/bin
+```
+
+-	Layers:
+	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.2 MB (3221555 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7b2c26235c37292159dc019803ebd2435f82dd20bd64043f085ba7daa47b28c9`  
+		Last Modified: Wed, 08 Oct 2025 22:13:09 GMT  
+		Size: 291.2 KB (291213 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b28977543608eb3d47060855462d9576fb750f3b4671b32d32fcc7f41fe2a4f4`  
+		Last Modified: Tue, 07 Oct 2025 19:34:15 GMT  
+		Size: 59.1 MB (59074083 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4ac6fb7af5cbe0bd826c2f8c108ebcc4a5d1178c58d9f83207a6d0924695cec3`  
+		Last Modified: Wed, 08 Oct 2025 22:13:09 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7ee4bddc23842993933ad36a6980173dc40135910cecb418f09c0992a2b3833`  
+		Last Modified: Thu, 09 Oct 2025 00:18:29 GMT  
+		Size: 5.6 MB (5604381 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c9f8db293bd3573c23e9a45f392a799aae005480824df7a5a999859894cb372d`  
+		Last Modified: Thu, 09 Oct 2025 00:18:29 GMT  
+		Size: 1.7 MB (1738755 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3ae390009e67d30fac3a4168bf72fd99980a48a8d8b6fa77492ea262af21058`  
+		Last Modified: Thu, 09 Oct 2025 00:18:28 GMT  
 		Size: 401.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -450,24 +337,137 @@ WORKDIR /usr/bin
 ### `caddy:builder` - unknown; unknown
 
 ```console
-$ docker pull caddy@sha256:447b6da8c0ce6c5d234988dc7c21df5d7f99dbd404333a71308b2767579d37bd
+$ docker pull caddy@sha256:1f1fcd305c2aafca9bf21f75d183ed7670b1367ac77155ca78ba24c65e3fdaa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.9 KB (300881 bytes)**  
+-	Total Size: **302.7 KB (302696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8611da94ba3561f3144275732519ec48c1182142d1f1cdd7abdbff7c0605b7d9`
+-	Image ID: `sha256:2db020b21a52865778712f7bee55a0616c6872514d3aaff0497cd5affabcd272`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c60325b592b30ce07432c073988c1b49ceecad95190af6c4e50fbae26d4dd61`  
-		Last Modified: Tue, 07 Oct 2025 21:52:54 GMT  
-		Size: 280.6 KB (280599 bytes)  
+	-	`sha256:94de7df363b098d9951a312fd6d6447237b1b79828cd73ac519a1253fc42ccd6`  
+		Last Modified: Thu, 09 Oct 2025 00:52:53 GMT  
+		Size: 282.5 KB (282456 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e0b0cb881f1d4cc1746c6affd041d1ade0d71b80981ad60e2720fe446b38bc4c`  
-		Last Modified: Tue, 07 Oct 2025 21:52:55 GMT  
+	-	`sha256:a087bd4c28530dcfdfbf34e25942e3e85b157cb73000499dbfd7f3d245e7c0e0`  
+		Last Modified: Thu, 09 Oct 2025 00:52:55 GMT  
+		Size: 20.2 KB (20240 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `caddy:builder` - linux; arm64 variant v8
+
+```console
+$ docker pull caddy@sha256:dfb316bf78bf79a18b348a04e6cc79cd3dc98bd65ed572b975eca9bfe57cc71b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **70.1 MB (70058355 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c13ffc42f9f84c017fcff4fbc0f2a6bf66aec89daf9be478638842fe6d444072`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Sat, 23 Aug 2025 03:19:59 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+CMD ["/bin/sh"]
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV GOLANG_VERSION=1.25.2
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV GOTOOLCHAIN=local
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV GOPATH=/go
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 23 Aug 2025 03:19:59 GMT
+COPY /target/ / # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+WORKDIR /go
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN apk add --no-cache 	ca-certificates 	git 	libcap # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV XCADDY_VERSION=v0.4.5
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV CADDY_VERSION=v2.10.2
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV XCADDY_SKIP_CLEANUP=1
+# Sat, 23 Aug 2025 03:19:59 GMT
+ENV XCADDY_SETCAP=1
+# Sat, 23 Aug 2025 03:19:59 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='edea47d552fd9ac0a533386a72acaa95733ce734f347c11e5513469b5dc0eec0a62a6e21cfa93a83ab00b2dad72e0ee0b9bdf267a9654235f70d4c934739a15b' ;; 		armhf)   binArch='armv6'; checksum='29e4b7c484c0045d192fc8e7721c41988c1b8fc529343499ebb2acf94fba60f6e6c25c0944f7fb778ae25d5f8ccca452fc31d0338d6630d9b5219d5f9210ea44' ;; 		armv7)   binArch='armv7'; checksum='7e115fe60be169ffccff6884f1ab8fbe754d117c39618b02aedab9c857f0dcdc3cc6949f76b6a799cd617b509021bb086a4b2c5fb6c74d409d09429ff591a616' ;; 		aarch64) binArch='arm64'; checksum='2933968a6e759a0406dc864000960fe0e605db9f0fe0662ce245897eaa5b529e322d1b14c2b98463a95e13f1dfd85432541b41f459a237daedb8c68a8f6a5bb1' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='10e5f7e7dc885b278ebf4c5a97df4bde85a96fbc529890263f42af0445790a18669f44e318be1ac7639a283499e679ce9dabd8fe248478095d514bc2b72e6cd1' ;; 		riscv64) binArch='riscv64'; checksum='4b108ef51ee3fd567f13cba3d3e2c89f86894e27b2ae5585e9ee20346b17f71a3bdcb968b25cb6d88a9a9671ef73cf82a1c0060e273d9b2e0c0c680369c83280' ;; 		s390x)   binArch='s390x'; checksum='f2e18d550dc12cb06bedda46c47404a2fbfdfb12363483daf41f5c52736a8ad22c72d7c32edb08aac7a18a1f1faee19aa787ac72b7515f07daf77329f4efbc3f' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.4.5/xcaddy_0.4.5_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy; # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+COPY caddy-builder.sh /usr/bin/caddy-builder # buildkit
+# Sat, 23 Aug 2025 03:19:59 GMT
+WORKDIR /usr/bin
+```
+
+-	Layers:
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:00abc3ba1385e30f6e4c6e0525cb316aa3afd1e3a6ce37bd5dae6bf03aae2b97`  
+		Last Modified: Wed, 08 Oct 2025 21:49:25 GMT  
+		Size: 294.1 KB (294091 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:66626199bcfab248906ccbdd0d977cc77ec2231a37f1710a42892109d86b2544`  
+		Last Modified: Tue, 07 Oct 2025 19:34:30 GMT  
+		Size: 57.6 MB (57647819 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a89982c427569fa227db8454803b4026b779be40fa10f2a70f135a6fa03475dc`  
+		Last Modified: Wed, 08 Oct 2025 21:49:25 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fedf84927274338bffcb8080be43a65ca1681711bf1a0a3d7f074925dd18c8ce`  
+		Last Modified: Wed, 08 Oct 2025 23:15:31 GMT  
+		Size: 6.3 MB (6261404 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4bdad4e3f431b6e543cc8805ca9eba10549a389fccf30553e11fa2575c9de0ff`  
+		Last Modified: Wed, 08 Oct 2025 23:15:30 GMT  
+		Size: 1.7 MB (1716381 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:371c9c0873bd073f11e436f76fbd6c3c13cd6d7c7753a62d73c8aac73c3abf97`  
+		Last Modified: Wed, 08 Oct 2025 23:15:30 GMT  
+		Size: 402.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `caddy:builder` - unknown; unknown
+
+```console
+$ docker pull caddy@sha256:736dbaecbfdb8eee75f00d0101e4b9caa27aeccbe1f4c2f9d966d857d2020c56
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **299.8 KB (299798 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f69d44fe16b38dae8f04d272359c69bd0ebfb2e1ab5b0d4ae18ff392746927d2`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a509840925c5aa3615f0dad1bfd1aacb2502525aec7e2f71a638968663da80ca`  
+		Last Modified: Thu, 09 Oct 2025 00:52:58 GMT  
+		Size: 279.5 KB (279516 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:410c9bb47cd82569f0694d36a59f9a6d8251fb758bfd2328f8c7d5dc12dae8bb`  
+		Last Modified: Thu, 09 Oct 2025 00:52:59 GMT  
 		Size: 20.3 KB (20282 bytes)  
 		MIME: application/vnd.in-toto+json
 
