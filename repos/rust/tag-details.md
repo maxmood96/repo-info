@@ -602,7 +602,7 @@ $ docker pull rust@sha256:23d826b7e724626ad94025031ae49bfd80adcafec90a7cc7e1bb26
 ## `rust:1-alpine`
 
 ```console
-$ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcbab524671d8
+$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -617,19 +617,19 @@ $ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcb
 ### `rust:1-alpine` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:740badb3e8f295625d61f1ac2524ad24a56c87f0551061b3cf12fb30196e054b
+$ docker pull rust@sha256:ee9b9f2ebd8741e4ecf1ade08918e492d642c4e625be481bb7b7954b89e9d504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328784586 bytes)**  
+-	Total Size: **328.8 MB (328784700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:204cfdb0a445077a3850256c5707c617eda026787316d1abd7c32fa2ab264fd8`
+-	Image ID: `sha256:9ffa4185585206d4d98e871b83bebc561866519a6dba20de63e3192e6804528c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -642,41 +642,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78df034cf5e7f9ace7614d44b0888f45b8f311dc485582ab13c709b85dd8487`  
-		Last Modified: Thu, 18 Sep 2025 20:45:02 GMT  
-		Size: 61.6 MB (61607112 bytes)  
+	-	`sha256:55b94f1896c7d7197d473e46aa720688e4b64cabd8c559482b9ad62f5d1c54ea`  
+		Last Modified: Wed, 08 Oct 2025 23:46:44 GMT  
+		Size: 61.6 MB (61604379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080c2047d36e3afde06756bff6903e0a5438c561bc30f9d56296b8414a705620`  
-		Last Modified: Thu, 18 Sep 2025 20:45:17 GMT  
-		Size: 263.4 MB (263377785 bytes)  
+	-	`sha256:39fe284ea8abe7a0d30bbfc5a349ac250b13a8a3d1760d8ee638d1c27fbf60b9`  
+		Last Modified: Wed, 08 Oct 2025 23:48:01 GMT  
+		Size: 263.4 MB (263377869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1-alpine` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:fa6424579f90e17c710d7ff8fdc7166a309861b1ff4899cde70d29d59f88c66b
+$ docker pull rust@sha256:b05da53540ad6b64b76c78df048088711a426b503ce3d7581f4359156aacb4df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **792.4 KB (792356 bytes)**  
+-	Total Size: **795.0 KB (794968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e66a0b590ef67afe96f76cca3210dad232905bd90c5112934a234050383fd5`
+-	Image ID: `sha256:d81b251f281fcb5a2b4f9301b279ee799dbd08e11092d95582b55c6da2b21b4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cdabbc839d8c05dfa924840435e31a713251ff6d877f72d9a364a542bc12ac07`  
-		Last Modified: Thu, 18 Sep 2025 20:44:45 GMT  
-		Size: 780.1 KB (780060 bytes)  
+	-	`sha256:703eec4d4cc485186fb35c31aed213134f9ac25b9ea2420f1fed91ec0b037f1d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:42 GMT  
+		Size: 782.7 KB (782673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7cc6b60164f3639e9612d7c0749e8af6f83a8b85884aa8e61367125dc4ccf35`  
-		Last Modified: Thu, 18 Sep 2025 20:44:46 GMT  
-		Size: 12.3 KB (12296 bytes)  
+	-	`sha256:40831b0dc30117747a9bf98ef753d0b9c681127cd96f9f85d11abebfa5eb8934`  
+		Last Modified: Wed, 08 Oct 2025 23:44:43 GMT  
+		Size: 12.3 KB (12295 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1-alpine` - linux; arm64 variant v8
@@ -926,7 +926,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 52.9 MB (52945612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de7cff9f5a1f683000cf98855496c2efcfbed8bd539ca0dc203b19637697acfb`  
-		Last Modified: Wed, 08 Oct 2025 22:08:22 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:33:09 GMT  
 		Size: 268.6 MB (268591942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4778,7 +4778,7 @@ $ docker pull rust@sha256:23d826b7e724626ad94025031ae49bfd80adcafec90a7cc7e1bb26
 ## `rust:1.90-alpine`
 
 ```console
-$ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcbab524671d8
+$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4793,19 +4793,19 @@ $ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcb
 ### `rust:1.90-alpine` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:740badb3e8f295625d61f1ac2524ad24a56c87f0551061b3cf12fb30196e054b
+$ docker pull rust@sha256:ee9b9f2ebd8741e4ecf1ade08918e492d642c4e625be481bb7b7954b89e9d504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328784586 bytes)**  
+-	Total Size: **328.8 MB (328784700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:204cfdb0a445077a3850256c5707c617eda026787316d1abd7c32fa2ab264fd8`
+-	Image ID: `sha256:9ffa4185585206d4d98e871b83bebc561866519a6dba20de63e3192e6804528c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -4818,41 +4818,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78df034cf5e7f9ace7614d44b0888f45b8f311dc485582ab13c709b85dd8487`  
-		Last Modified: Thu, 18 Sep 2025 20:45:02 GMT  
-		Size: 61.6 MB (61607112 bytes)  
+	-	`sha256:55b94f1896c7d7197d473e46aa720688e4b64cabd8c559482b9ad62f5d1c54ea`  
+		Last Modified: Wed, 08 Oct 2025 23:46:44 GMT  
+		Size: 61.6 MB (61604379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080c2047d36e3afde06756bff6903e0a5438c561bc30f9d56296b8414a705620`  
-		Last Modified: Thu, 18 Sep 2025 20:45:17 GMT  
-		Size: 263.4 MB (263377785 bytes)  
+	-	`sha256:39fe284ea8abe7a0d30bbfc5a349ac250b13a8a3d1760d8ee638d1c27fbf60b9`  
+		Last Modified: Wed, 08 Oct 2025 23:48:01 GMT  
+		Size: 263.4 MB (263377869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1.90-alpine` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:fa6424579f90e17c710d7ff8fdc7166a309861b1ff4899cde70d29d59f88c66b
+$ docker pull rust@sha256:b05da53540ad6b64b76c78df048088711a426b503ce3d7581f4359156aacb4df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **792.4 KB (792356 bytes)**  
+-	Total Size: **795.0 KB (794968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e66a0b590ef67afe96f76cca3210dad232905bd90c5112934a234050383fd5`
+-	Image ID: `sha256:d81b251f281fcb5a2b4f9301b279ee799dbd08e11092d95582b55c6da2b21b4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cdabbc839d8c05dfa924840435e31a713251ff6d877f72d9a364a542bc12ac07`  
-		Last Modified: Thu, 18 Sep 2025 20:44:45 GMT  
-		Size: 780.1 KB (780060 bytes)  
+	-	`sha256:703eec4d4cc485186fb35c31aed213134f9ac25b9ea2420f1fed91ec0b037f1d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:42 GMT  
+		Size: 782.7 KB (782673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7cc6b60164f3639e9612d7c0749e8af6f83a8b85884aa8e61367125dc4ccf35`  
-		Last Modified: Thu, 18 Sep 2025 20:44:46 GMT  
-		Size: 12.3 KB (12296 bytes)  
+	-	`sha256:40831b0dc30117747a9bf98ef753d0b9c681127cd96f9f85d11abebfa5eb8934`  
+		Last Modified: Wed, 08 Oct 2025 23:44:43 GMT  
+		Size: 12.3 KB (12295 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1.90-alpine` - linux; arm64 variant v8
@@ -4988,7 +4988,7 @@ $ docker pull rust@sha256:cd23a3c69910fd364dfbc817804235f19f4d1bd07ef9fd2a2f6860
 ## `rust:1.90-alpine3.20`
 
 ```console
-$ docker pull rust@sha256:88912649ad0fbdd858916e0c929d62ed3d35794e49e31e2eaa33fede3b5afab5
+$ docker pull rust@sha256:703efa00733c999713c4edc4c62f629586128166e819a4be03a01f6818433e7a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5003,19 +5003,19 @@ $ docker pull rust@sha256:88912649ad0fbdd858916e0c929d62ed3d35794e49e31e2eaa33fe
 ### `rust:1.90-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:5c94d6853b63acddd8709cedafe863d534284eca80e107363ac6f7b7fde4bcf4
+$ docker pull rust@sha256:a97b713ba0b992d4855de682705a1671a9f1bdbf56c63106e3b450732ffd31ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322298494 bytes)**  
+-	Total Size: **322.3 MB (322314091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7b8546c405e5a6595d307c207b025e1128181e4e74067140581885774a4d74`
+-	Image ID: `sha256:e2f5a88bc4032951a2b68c4d0695f33ba0c4d4313454952d17e7a3a403713a51`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -5028,41 +5028,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d01725ef6bc383c7f0f0f7269cafc6404fd014654033e93d79bb15ac386768bc`  
-		Last Modified: Thu, 18 Sep 2025 19:08:11 GMT  
-		Size: 55.3 MB (55302023 bytes)  
+	-	`sha256:9a081b9ffe7512b030d0920eb506f7c1bdbd5353c51f1960af8fc4d16a313033`  
+		Last Modified: Wed, 08 Oct 2025 23:48:38 GMT  
+		Size: 55.3 MB (55309661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae35b90b306667f2e212a16dcd3843fbdd28c396ded78aa342b8de6486b28e96`  
-		Last Modified: Thu, 18 Sep 2025 21:02:44 GMT  
-		Size: 263.4 MB (263375994 bytes)  
+	-	`sha256:483b1a71ca7cafce114e0d2124a2448acddbf1e3eda67dfb387c28d92d6b498c`  
+		Last Modified: Wed, 08 Oct 2025 23:49:06 GMT  
+		Size: 263.4 MB (263377374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1.90-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:f1e873b3ea7ec2db4e06873fa7ff04669e2a15d9029d13625b74db8a6702b537
+$ docker pull rust@sha256:24e8dd54d6ad7a7e7dbecca0c8c9e83421a68648c336216f8217e666a50ca241
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **718.3 KB (718340 bytes)**  
+-	Total Size: **721.0 KB (720952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13924403a232adb1f4427be41253c332dd03daa1e064bc29ed2387fb843c7077`
+-	Image ID: `sha256:d368e2e22b7effe99b5a2bc6ccace24606c18a48fa7fb0382074f287232c805e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c0039acd5a2d934e21863ccba254cfc385db013554dea334a26275be6833a5e`  
-		Last Modified: Thu, 18 Sep 2025 20:44:55 GMT  
-		Size: 707.2 KB (707247 bytes)  
+	-	`sha256:f7637da0d7c6704319b9717d659cab4afc248751241fd31c1faae5ecfebbb85f`  
+		Last Modified: Wed, 08 Oct 2025 23:44:30 GMT  
+		Size: 709.9 KB (709860 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:23a76b93d877a4ec40aa4b7f8698e39ee1a6f2ef890c19b5fb9d310151359235`  
-		Last Modified: Thu, 18 Sep 2025 20:44:56 GMT  
-		Size: 11.1 KB (11093 bytes)  
+	-	`sha256:686c296cfedd0c7ba040e33922df421ff0eb8f7e42fc4d42dbd32143f0338fd0`  
+		Last Modified: Wed, 08 Oct 2025 23:44:30 GMT  
+		Size: 11.1 KB (11092 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1.90-alpine3.20` - linux; arm64 variant v8
@@ -5102,7 +5102,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 52.9 MB (52945612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de7cff9f5a1f683000cf98855496c2efcfbed8bd539ca0dc203b19637697acfb`  
-		Last Modified: Wed, 08 Oct 2025 22:08:22 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:33:09 GMT  
 		Size: 268.6 MB (268591942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5198,7 +5198,7 @@ $ docker pull rust@sha256:c9af168eb6594c2d5a5852b3b4d1449cda0c820cf43c688f7a881d
 ## `rust:1.90-alpine3.21`
 
 ```console
-$ docker pull rust@sha256:ab1877f876d865596b47edff98a3660b8cedcfab510bea1877e3e71ec11cf8ee
+$ docker pull rust@sha256:1b3ecdc66183eb821f89f9a085af55b842593d711b95894ec4d90e00dc234198
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5213,19 +5213,19 @@ $ docker pull rust@sha256:ab1877f876d865596b47edff98a3660b8cedcfab510bea1877e3e7
 ### `rust:1.90-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:f465ee64e31105ae94a873f12c2871ab4a1a575a712963e0c49ae1a0fe4d209b
+$ docker pull rust@sha256:ae572f2a6f7d6790ad87264078d4268b6b8618fe1741e61351938474b3981b03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.6 MB (328570896 bytes)**  
+-	Total Size: **328.6 MB (328583689 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:047d70579593f501357470fe1cb2a7bcadf3ab063802c1e6aa0691611fe20f54`
+-	Image ID: `sha256:b473418392e0e4e8bec14410ddb1c78d704e4dda726ae28c63d72ae8d39d461f`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -5238,40 +5238,40 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3637570 bytes)  
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Wed, 08 Oct 2025 12:54:09 GMT  
+		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f272a65ee644d0530a00a5d089333c210c4dcd4ec0dda7534c117af1866e15c9`  
-		Last Modified: Thu, 18 Sep 2025 19:08:34 GMT  
-		Size: 61.6 MB (61557416 bytes)  
+	-	`sha256:129b51f390fdd40aaf39ff5cb8eae55f7068b85b99e151bd9be23bcc2a776817`  
+		Last Modified: Wed, 08 Oct 2025 23:20:40 GMT  
+		Size: 61.6 MB (61563786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3ac32e97308f657738e3c097c39c8fc231b476ccdccc340406e32c85e0558c3`  
-		Last Modified: Thu, 18 Sep 2025 21:00:18 GMT  
-		Size: 263.4 MB (263375910 bytes)  
+	-	`sha256:741a12271e539b62a08b9044001f072cbc32a6fba77e5f9c606417557d0a1da8`  
+		Last Modified: Wed, 08 Oct 2025 23:45:17 GMT  
+		Size: 263.4 MB (263377334 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1.90-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:e00399449650ab5c7c6ce189a75c5974aa4026c5353840083ff5991b28374a7e
+$ docker pull rust@sha256:7cf01932cc651a307073160fdf88a0afd7e41ff56bebf14c0f4636a8a3390341
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **789.2 KB (789170 bytes)**  
+-	Total Size: **791.8 KB (791783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d38f8c55ca20d2527931dfb8a043377297a65a5afe20a0d26de007783bc7a2c8`
+-	Image ID: `sha256:1513a03317b2d74a7ef63f021d267865d8903e96ac1bd5f732609a72d165690c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44a057ea8ec4156da0374023174b4c75784009300e771318c7f2b2140bec08a9`  
-		Last Modified: Thu, 18 Sep 2025 20:45:04 GMT  
-		Size: 778.1 KB (778077 bytes)  
+	-	`sha256:4d06a9911725da4e0a3dca9033e9b573ffd8ec46f3405912a4c481eb4d4060da`  
+		Last Modified: Wed, 08 Oct 2025 23:44:36 GMT  
+		Size: 780.7 KB (780690 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d9ce492f1b7240d3d931ca5ffe876f7399ff35cdb9491bba5354fa58cc76c07b`  
-		Last Modified: Thu, 18 Sep 2025 20:45:05 GMT  
+	-	`sha256:43b6dce726eed8669c3b712d102c9c2206f16dc85add3d7e8aa6d8f8bc9ef41d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:37 GMT  
 		Size: 11.1 KB (11093 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5408,7 +5408,7 @@ $ docker pull rust@sha256:e763d3d764f5a9fc036c72d819f094a91d42bca1e5f3b7befc5e6f
 ## `rust:1.90-alpine3.22`
 
 ```console
-$ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcbab524671d8
+$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5423,19 +5423,19 @@ $ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcb
 ### `rust:1.90-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:740badb3e8f295625d61f1ac2524ad24a56c87f0551061b3cf12fb30196e054b
+$ docker pull rust@sha256:ee9b9f2ebd8741e4ecf1ade08918e492d642c4e625be481bb7b7954b89e9d504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328784586 bytes)**  
+-	Total Size: **328.8 MB (328784700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:204cfdb0a445077a3850256c5707c617eda026787316d1abd7c32fa2ab264fd8`
+-	Image ID: `sha256:9ffa4185585206d4d98e871b83bebc561866519a6dba20de63e3192e6804528c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -5448,41 +5448,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78df034cf5e7f9ace7614d44b0888f45b8f311dc485582ab13c709b85dd8487`  
-		Last Modified: Thu, 18 Sep 2025 20:45:02 GMT  
-		Size: 61.6 MB (61607112 bytes)  
+	-	`sha256:55b94f1896c7d7197d473e46aa720688e4b64cabd8c559482b9ad62f5d1c54ea`  
+		Last Modified: Wed, 08 Oct 2025 23:46:44 GMT  
+		Size: 61.6 MB (61604379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080c2047d36e3afde06756bff6903e0a5438c561bc30f9d56296b8414a705620`  
-		Last Modified: Thu, 18 Sep 2025 20:45:17 GMT  
-		Size: 263.4 MB (263377785 bytes)  
+	-	`sha256:39fe284ea8abe7a0d30bbfc5a349ac250b13a8a3d1760d8ee638d1c27fbf60b9`  
+		Last Modified: Wed, 08 Oct 2025 23:48:01 GMT  
+		Size: 263.4 MB (263377869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1.90-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:fa6424579f90e17c710d7ff8fdc7166a309861b1ff4899cde70d29d59f88c66b
+$ docker pull rust@sha256:b05da53540ad6b64b76c78df048088711a426b503ce3d7581f4359156aacb4df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **792.4 KB (792356 bytes)**  
+-	Total Size: **795.0 KB (794968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e66a0b590ef67afe96f76cca3210dad232905bd90c5112934a234050383fd5`
+-	Image ID: `sha256:d81b251f281fcb5a2b4f9301b279ee799dbd08e11092d95582b55c6da2b21b4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cdabbc839d8c05dfa924840435e31a713251ff6d877f72d9a364a542bc12ac07`  
-		Last Modified: Thu, 18 Sep 2025 20:44:45 GMT  
-		Size: 780.1 KB (780060 bytes)  
+	-	`sha256:703eec4d4cc485186fb35c31aed213134f9ac25b9ea2420f1fed91ec0b037f1d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:42 GMT  
+		Size: 782.7 KB (782673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7cc6b60164f3639e9612d7c0749e8af6f83a8b85884aa8e61367125dc4ccf35`  
-		Last Modified: Thu, 18 Sep 2025 20:44:46 GMT  
-		Size: 12.3 KB (12296 bytes)  
+	-	`sha256:40831b0dc30117747a9bf98ef753d0b9c681127cd96f9f85d11abebfa5eb8934`  
+		Last Modified: Wed, 08 Oct 2025 23:44:43 GMT  
+		Size: 12.3 KB (12295 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1.90-alpine3.22` - linux; arm64 variant v8
@@ -8954,7 +8954,7 @@ $ docker pull rust@sha256:23d826b7e724626ad94025031ae49bfd80adcafec90a7cc7e1bb26
 ## `rust:1.90.0-alpine`
 
 ```console
-$ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcbab524671d8
+$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8969,19 +8969,19 @@ $ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcb
 ### `rust:1.90.0-alpine` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:740badb3e8f295625d61f1ac2524ad24a56c87f0551061b3cf12fb30196e054b
+$ docker pull rust@sha256:ee9b9f2ebd8741e4ecf1ade08918e492d642c4e625be481bb7b7954b89e9d504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328784586 bytes)**  
+-	Total Size: **328.8 MB (328784700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:204cfdb0a445077a3850256c5707c617eda026787316d1abd7c32fa2ab264fd8`
+-	Image ID: `sha256:9ffa4185585206d4d98e871b83bebc561866519a6dba20de63e3192e6804528c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -8994,41 +8994,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78df034cf5e7f9ace7614d44b0888f45b8f311dc485582ab13c709b85dd8487`  
-		Last Modified: Thu, 18 Sep 2025 20:45:02 GMT  
-		Size: 61.6 MB (61607112 bytes)  
+	-	`sha256:55b94f1896c7d7197d473e46aa720688e4b64cabd8c559482b9ad62f5d1c54ea`  
+		Last Modified: Wed, 08 Oct 2025 23:46:44 GMT  
+		Size: 61.6 MB (61604379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080c2047d36e3afde06756bff6903e0a5438c561bc30f9d56296b8414a705620`  
-		Last Modified: Thu, 18 Sep 2025 20:45:17 GMT  
-		Size: 263.4 MB (263377785 bytes)  
+	-	`sha256:39fe284ea8abe7a0d30bbfc5a349ac250b13a8a3d1760d8ee638d1c27fbf60b9`  
+		Last Modified: Wed, 08 Oct 2025 23:48:01 GMT  
+		Size: 263.4 MB (263377869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1.90.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:fa6424579f90e17c710d7ff8fdc7166a309861b1ff4899cde70d29d59f88c66b
+$ docker pull rust@sha256:b05da53540ad6b64b76c78df048088711a426b503ce3d7581f4359156aacb4df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **792.4 KB (792356 bytes)**  
+-	Total Size: **795.0 KB (794968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e66a0b590ef67afe96f76cca3210dad232905bd90c5112934a234050383fd5`
+-	Image ID: `sha256:d81b251f281fcb5a2b4f9301b279ee799dbd08e11092d95582b55c6da2b21b4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cdabbc839d8c05dfa924840435e31a713251ff6d877f72d9a364a542bc12ac07`  
-		Last Modified: Thu, 18 Sep 2025 20:44:45 GMT  
-		Size: 780.1 KB (780060 bytes)  
+	-	`sha256:703eec4d4cc485186fb35c31aed213134f9ac25b9ea2420f1fed91ec0b037f1d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:42 GMT  
+		Size: 782.7 KB (782673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7cc6b60164f3639e9612d7c0749e8af6f83a8b85884aa8e61367125dc4ccf35`  
-		Last Modified: Thu, 18 Sep 2025 20:44:46 GMT  
-		Size: 12.3 KB (12296 bytes)  
+	-	`sha256:40831b0dc30117747a9bf98ef753d0b9c681127cd96f9f85d11abebfa5eb8934`  
+		Last Modified: Wed, 08 Oct 2025 23:44:43 GMT  
+		Size: 12.3 KB (12295 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1.90.0-alpine` - linux; arm64 variant v8
@@ -9278,7 +9278,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 52.9 MB (52945612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de7cff9f5a1f683000cf98855496c2efcfbed8bd539ca0dc203b19637697acfb`  
-		Last Modified: Wed, 08 Oct 2025 22:08:22 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:33:09 GMT  
 		Size: 268.6 MB (268591942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9584,7 +9584,7 @@ $ docker pull rust@sha256:e763d3d764f5a9fc036c72d819f094a91d42bca1e5f3b7befc5e6f
 ## `rust:1.90.0-alpine3.22`
 
 ```console
-$ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcbab524671d8
+$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9599,19 +9599,19 @@ $ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcb
 ### `rust:1.90.0-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:740badb3e8f295625d61f1ac2524ad24a56c87f0551061b3cf12fb30196e054b
+$ docker pull rust@sha256:ee9b9f2ebd8741e4ecf1ade08918e492d642c4e625be481bb7b7954b89e9d504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328784586 bytes)**  
+-	Total Size: **328.8 MB (328784700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:204cfdb0a445077a3850256c5707c617eda026787316d1abd7c32fa2ab264fd8`
+-	Image ID: `sha256:9ffa4185585206d4d98e871b83bebc561866519a6dba20de63e3192e6804528c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -9624,41 +9624,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78df034cf5e7f9ace7614d44b0888f45b8f311dc485582ab13c709b85dd8487`  
-		Last Modified: Thu, 18 Sep 2025 20:45:02 GMT  
-		Size: 61.6 MB (61607112 bytes)  
+	-	`sha256:55b94f1896c7d7197d473e46aa720688e4b64cabd8c559482b9ad62f5d1c54ea`  
+		Last Modified: Wed, 08 Oct 2025 23:46:44 GMT  
+		Size: 61.6 MB (61604379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080c2047d36e3afde06756bff6903e0a5438c561bc30f9d56296b8414a705620`  
-		Last Modified: Thu, 18 Sep 2025 20:45:17 GMT  
-		Size: 263.4 MB (263377785 bytes)  
+	-	`sha256:39fe284ea8abe7a0d30bbfc5a349ac250b13a8a3d1760d8ee638d1c27fbf60b9`  
+		Last Modified: Wed, 08 Oct 2025 23:48:01 GMT  
+		Size: 263.4 MB (263377869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1.90.0-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:fa6424579f90e17c710d7ff8fdc7166a309861b1ff4899cde70d29d59f88c66b
+$ docker pull rust@sha256:b05da53540ad6b64b76c78df048088711a426b503ce3d7581f4359156aacb4df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **792.4 KB (792356 bytes)**  
+-	Total Size: **795.0 KB (794968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e66a0b590ef67afe96f76cca3210dad232905bd90c5112934a234050383fd5`
+-	Image ID: `sha256:d81b251f281fcb5a2b4f9301b279ee799dbd08e11092d95582b55c6da2b21b4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cdabbc839d8c05dfa924840435e31a713251ff6d877f72d9a364a542bc12ac07`  
-		Last Modified: Thu, 18 Sep 2025 20:44:45 GMT  
-		Size: 780.1 KB (780060 bytes)  
+	-	`sha256:703eec4d4cc485186fb35c31aed213134f9ac25b9ea2420f1fed91ec0b037f1d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:42 GMT  
+		Size: 782.7 KB (782673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7cc6b60164f3639e9612d7c0749e8af6f83a8b85884aa8e61367125dc4ccf35`  
-		Last Modified: Thu, 18 Sep 2025 20:44:46 GMT  
-		Size: 12.3 KB (12296 bytes)  
+	-	`sha256:40831b0dc30117747a9bf98ef753d0b9c681127cd96f9f85d11abebfa5eb8934`  
+		Last Modified: Wed, 08 Oct 2025 23:44:43 GMT  
+		Size: 12.3 KB (12295 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1.90.0-alpine3.22` - linux; arm64 variant v8
@@ -12906,7 +12906,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 52.9 MB (52945612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de7cff9f5a1f683000cf98855496c2efcfbed8bd539ca0dc203b19637697acfb`  
-		Last Modified: Wed, 08 Oct 2025 22:08:22 GMT  
+		Last Modified: Thu, 09 Oct 2025 00:33:09 GMT  
 		Size: 268.6 MB (268591942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13212,7 +13212,7 @@ $ docker pull rust@sha256:e763d3d764f5a9fc036c72d819f094a91d42bca1e5f3b7befc5e6f
 ## `rust:alpine3.22`
 
 ```console
-$ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcbab524671d8
+$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13227,19 +13227,19 @@ $ docker pull rust@sha256:7e737341d964ed0ab97a5488e46a1a4d603c77f91930d847cacfcb
 ### `rust:alpine3.22` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:740badb3e8f295625d61f1ac2524ad24a56c87f0551061b3cf12fb30196e054b
+$ docker pull rust@sha256:ee9b9f2ebd8741e4ecf1ade08918e492d642c4e625be481bb7b7954b89e9d504
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328784586 bytes)**  
+-	Total Size: **328.8 MB (328784700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:204cfdb0a445077a3850256c5707c617eda026787316d1abd7c32fa2ab264fd8`
+-	Image ID: `sha256:9ffa4185585206d4d98e871b83bebc561866519a6dba20de63e3192e6804528c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -13252,41 +13252,41 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78df034cf5e7f9ace7614d44b0888f45b8f311dc485582ab13c709b85dd8487`  
-		Last Modified: Thu, 18 Sep 2025 20:45:02 GMT  
-		Size: 61.6 MB (61607112 bytes)  
+	-	`sha256:55b94f1896c7d7197d473e46aa720688e4b64cabd8c559482b9ad62f5d1c54ea`  
+		Last Modified: Wed, 08 Oct 2025 23:46:44 GMT  
+		Size: 61.6 MB (61604379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080c2047d36e3afde06756bff6903e0a5438c561bc30f9d56296b8414a705620`  
-		Last Modified: Thu, 18 Sep 2025 20:45:17 GMT  
-		Size: 263.4 MB (263377785 bytes)  
+	-	`sha256:39fe284ea8abe7a0d30bbfc5a349ac250b13a8a3d1760d8ee638d1c27fbf60b9`  
+		Last Modified: Wed, 08 Oct 2025 23:48:01 GMT  
+		Size: 263.4 MB (263377869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:fa6424579f90e17c710d7ff8fdc7166a309861b1ff4899cde70d29d59f88c66b
+$ docker pull rust@sha256:b05da53540ad6b64b76c78df048088711a426b503ce3d7581f4359156aacb4df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **792.4 KB (792356 bytes)**  
+-	Total Size: **795.0 KB (794968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e66a0b590ef67afe96f76cca3210dad232905bd90c5112934a234050383fd5`
+-	Image ID: `sha256:d81b251f281fcb5a2b4f9301b279ee799dbd08e11092d95582b55c6da2b21b4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cdabbc839d8c05dfa924840435e31a713251ff6d877f72d9a364a542bc12ac07`  
-		Last Modified: Thu, 18 Sep 2025 20:44:45 GMT  
-		Size: 780.1 KB (780060 bytes)  
+	-	`sha256:703eec4d4cc485186fb35c31aed213134f9ac25b9ea2420f1fed91ec0b037f1d`  
+		Last Modified: Wed, 08 Oct 2025 23:44:42 GMT  
+		Size: 782.7 KB (782673 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7cc6b60164f3639e9612d7c0749e8af6f83a8b85884aa8e61367125dc4ccf35`  
-		Last Modified: Thu, 18 Sep 2025 20:44:46 GMT  
-		Size: 12.3 KB (12296 bytes)  
+	-	`sha256:40831b0dc30117747a9bf98ef753d0b9c681127cd96f9f85d11abebfa5eb8934`  
+		Last Modified: Wed, 08 Oct 2025 23:44:43 GMT  
+		Size: 12.3 KB (12295 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:alpine3.22` - linux; arm64 variant v8
