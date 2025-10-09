@@ -1,7 +1,7 @@
 ## `eclipse-mosquitto:2-openssl`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:bf1bc0beda48f64b7a0d9d11a53b1e5ba8dcb30eade4b881701ea93a5af2e99c
+$ docker pull eclipse-mosquitto@sha256:fd9982f5ed92a6c2a90805601d2275f8fbd7f2d47c4cb3836f7db0bdc7a91bec
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -314,19 +314,19 @@ $ docker pull eclipse-mosquitto@sha256:6370be4d19aceb0fbd5b124c2c87e0402716754ab
 ### `eclipse-mosquitto:2-openssl` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:c5488c350f5dd24dadad9cd4f17fb901e5c19c655aad2b5200e1b13e6765c649
+$ docker pull eclipse-mosquitto@sha256:55e3799555ab156bb2681f8c704a54a5e4cfcd5f7f3fc5e0780f1aca2665dff3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4703662 bytes)**  
+-	Total Size: **4.7 MB (4717004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:261086cf76c8ae1045eae146de883b4b4e1d3b2b07585a74edd0db5327a0a55f`
+-	Image ID: `sha256:78bad57c71c86c5cc09ace04f33c4407e41996e8f7e65eda778c2f9300974063`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
 # Fri, 11 Jul 2025 21:38:03 GMT
-ADD alpine-minirootfs-3.22.1-ppc64le.tar.gz / # buildkit
+ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
 # Fri, 11 Jul 2025 21:38:03 GMT
 CMD ["/bin/sh"]
 # Fri, 11 Jul 2025 21:38:03 GMT
@@ -348,59 +348,59 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b762f678859bfa5c3948b5f1b04959aa43c8aba88e2389e281413d303d62a7e3`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 3.7 MB (3727111 bytes)  
+	-	`sha256:85a0f69f026b4a01420490809bed190217e05518f7b718c0bbc1ad4871e0dedf`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:598d40e75e01ba5f8ee266fd023054492d82915ac3f49f83a444daf86c46a430`  
-		Last Modified: Tue, 15 Jul 2025 19:32:10 GMT  
-		Size: 976.2 KB (976182 bytes)  
+	-	`sha256:c11c974846ebf96e89c7ed824f134aeaa7efe931283a9d7b1302263937f660f1`  
+		Last Modified: Thu, 09 Oct 2025 00:35:25 GMT  
+		Size: 984.4 KB (984394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16a66ec1146016da8bb1baa136e66cd23a7149bfc12348b4d5c55b80cbc88c21`  
-		Last Modified: Tue, 15 Jul 2025 19:32:09 GMT  
+	-	`sha256:9f6d92fe473b8a15ff705a92d0e0ad20dfbd35ede09a7533aa328232293a22cb`  
+		Last Modified: Thu, 09 Oct 2025 00:35:25 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-mosquitto:2-openssl` - unknown; unknown
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:b450ce03cfea6b67a993eb756925a53ed23232d2275c5497b5a6868827eac344
+$ docker pull eclipse-mosquitto@sha256:dfc75a3c7225fda9a57d2bf6c47476331f3317b60558141b60bf448b35fd25a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.1 KB (577142 bytes)**  
+-	Total Size: **579.8 KB (579755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac71b152cebb8000dfece12537be7269d07e490d913e61e9bb2d0c077d776b6`
+-	Image ID: `sha256:bec0934704b1555a061a92637466f440cbfce6ca87b4dd97accea2ddf743792d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74e8d114281dbb107e8d6d2ee182798a17bfea6424b839e9ca30ae926b521b03`  
-		Last Modified: Tue, 15 Jul 2025 21:53:04 GMT  
-		Size: 553.8 KB (553841 bytes)  
+	-	`sha256:8d67c33bc72c10bd734fd3179dd0a4c7f515a6adc80d0ebeb82a333d3aaa7754`  
+		Last Modified: Thu, 09 Oct 2025 03:52:40 GMT  
+		Size: 556.5 KB (556454 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e54bf65ed73a4e0b5a33b1372296a06936ad8e41efc390313710de8ba5fff78`  
-		Last Modified: Tue, 15 Jul 2025 21:53:04 GMT  
+	-	`sha256:38d9ca4f5d00ee4e576ed9e5be32679fdfa37e82b8c1515bd6a6028df1298db3`  
+		Last Modified: Thu, 09 Oct 2025 03:52:41 GMT  
 		Size: 23.3 KB (23301 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-mosquitto:2-openssl` - linux; s390x
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:85ae07bf3ad073af0f0af7fb58dc0f512781eccdb6f0c31e6daf50612ce44ccd
+$ docker pull eclipse-mosquitto@sha256:714ef64d63b7401d037e99ad4309ac93de0a21496f422bc59c98d84604953f1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4571095 bytes)**  
+-	Total Size: **4.6 MB (4584555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc82e01b88ac2b1f5c8df9df373ffb83a5eec4e81e6d41e2ae0cc1cdbd7df472`
+-	Image ID: `sha256:2d2ace5d41769be0d3675921b2f33b781476b14cafd3ceb8b6d7bdb268dfeaee`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
 # Fri, 11 Jul 2025 21:38:03 GMT
-ADD alpine-minirootfs-3.22.1-s390x.tar.gz / # buildkit
+ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
 # Fri, 11 Jul 2025 21:38:03 GMT
 CMD ["/bin/sh"]
 # Fri, 11 Jul 2025 21:38:03 GMT
@@ -422,39 +422,39 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:5d29754ce036967079405405a04a54a7d3f8ba85e0057b6bdda3d03aa59c8361`  
-		Last Modified: Tue, 15 Jul 2025 19:00:06 GMT  
-		Size: 3.6 MB (3644971 bytes)  
+	-	`sha256:e6b06613ca2e7cdf3e8ebbe71ca45137242628a4a3a4bfcb7a9f76d0d5b0e653`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb182cecd6220d428abc79a9fab6a3a102621e0342ecee6ec2bea41963fd5773`  
-		Last Modified: Tue, 15 Jul 2025 19:25:47 GMT  
-		Size: 925.8 KB (925755 bytes)  
+	-	`sha256:0b5d88b68ea48b7056b363a65cad875b6529aedb68e730a6b8810c6c954ab67a`  
+		Last Modified: Thu, 09 Oct 2025 00:31:13 GMT  
+		Size: 934.9 KB (934943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b404497ee8b3318091683fd8e588cb79201267c169944a07391a425e19e6c3b`  
-		Last Modified: Tue, 15 Jul 2025 19:25:47 GMT  
-		Size: 369.0 B  
+	-	`sha256:4f931bf215db8d991e87f467ea27f599f7bd89b776f501744da72fdfa680c2ff`  
+		Last Modified: Thu, 09 Oct 2025 00:31:13 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-mosquitto:2-openssl` - unknown; unknown
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:2cfdefb39b91b0272dd90b815cd262c2431acd4de1bcfe0dbe4c1d59875e1af1
+$ docker pull eclipse-mosquitto@sha256:88998e3de15ce944adadfe4ad5f35c3de82fd7fb7912bb367c24bf84bafc92c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **577.0 KB (577016 bytes)**  
+-	Total Size: **579.6 KB (579629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1facae12e068a760cd83dff928546b896ed3b0c20774c0585aea822d98fd174`
+-	Image ID: `sha256:06e5d5d45e9eb55eaf2dfb0c910c3d459d88324e99f373fc2a1f0a550f37632e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:be32caee17fc39e6e23b4ccadd97e582e1264c755c06cd6f0ee2b2c4a8de78ef`  
-		Last Modified: Tue, 15 Jul 2025 21:53:08 GMT  
-		Size: 553.8 KB (553783 bytes)  
+	-	`sha256:b495b27b636165b896b11aba8960ff4857a22e6b0041b385566cd0a5fa804373`  
+		Last Modified: Thu, 09 Oct 2025 03:52:44 GMT  
+		Size: 556.4 KB (556396 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55aea41a178a3e63debf5dfcdbd4123cafcb1133b553477b6c9ccb96cdf45e1e`  
-		Last Modified: Tue, 15 Jul 2025 21:53:08 GMT  
+	-	`sha256:b698fd7806e73fb641a6562f0334e8bfb4bad729d4a57b02447060d8ee17b016`  
+		Last Modified: Thu, 09 Oct 2025 03:52:45 GMT  
 		Size: 23.2 KB (23233 bytes)  
 		MIME: application/vnd.in-toto+json
