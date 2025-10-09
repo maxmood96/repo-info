@@ -656,7 +656,7 @@ CMD ["haxe"]
 ## `haxe:4.0-alpine`
 
 ```console
-$ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf8622960b8c19
+$ docker pull haxe@sha256:f51a0ed91dc0f6947ab127626b4ecda245ba47b5538fd1f1f4bb5a8d254da80a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -669,19 +669,19 @@ $ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf86
 ### `haxe:4.0-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:93b6e85eb2bc9242e1786687dc9280cee8b9283cc0d2866d7c5270ef5963a011
+$ docker pull haxe@sha256:c0197bce7d804f54766cf1e5b27b3a52cd549dacfff18174ad8b271cd0f7258d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 MB (37781281 bytes)**  
+-	Total Size: **37.8 MB (37812110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be482e2fb22a402c1ac989e9f20dccbc9f9814c9ebc5162e5dab67ce5bf3643c`
+-	Image ID: `sha256:885da20aedfe61523370b5a736402a077bfbaf4cf1b68486b2db69888e0f9885`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -700,55 +700,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea843d64b403394bd46c3f701c9574e1b79fc3065241a4687ac6fac02eda2753`  
-		Last Modified: Mon, 21 Jul 2025 17:21:56 GMT  
-		Size: 282.1 KB (282071 bytes)  
+	-	`sha256:27e2835193e4cecd09756045eeaa64430bbd529697002c02c7d757fba183ab8c`  
+		Last Modified: Wed, 08 Oct 2025 23:13:04 GMT  
+		Size: 290.8 KB (290772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df5a1a26411cce4a26ed02ff2c3b09b76b9ff26d4540e963d16dc9e3c2444a7c`  
-		Last Modified: Mon, 21 Jul 2025 17:22:00 GMT  
-		Size: 33.9 MB (33878733 bytes)  
+	-	`sha256:d98537a77b566f384141b43635bdeabce0f50c97b851118150c288e369869243`  
+		Last Modified: Wed, 08 Oct 2025 23:13:08 GMT  
+		Size: 33.9 MB (33894282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:38aab0e4388ec00410f8eead33bc8240f5b12eb3cc1cb46b55e0f1faeccca2fb
+$ docker pull haxe@sha256:c87f7ccd31794f7e2db55f3961cb46ae711cca00be61e348992cc2f6180a6bc0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ee3701f70e360f14cad9c1133c5598cf8bf8fdee313bd5062317d91b537cd88`
+-	Image ID: `sha256:1b1b371294f8325356d7f0b11900002271b50415122f9ad964092a3e0836a354`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41f5a95a303d0733b92f713197ed9e16fc4289525f00665e78680a4a534a0145`  
-		Last Modified: Mon, 21 Jul 2025 18:23:25 GMT  
+	-	`sha256:91c7651c2961ea75fa3016408b3884ce134bbf55f791dea16f82e9f39c98f956`  
+		Last Modified: Thu, 09 Oct 2025 00:23:20 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:22e0a2ec553bec45241302881cf009a42a6245c311caa54074d9646c3bb34307
+$ docker pull haxe@sha256:aeebff0f6e5c0a0b36276525fdbcc81cb918c945ef8fa1f69bda31319559e465
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (39015200 bytes)**  
+-	Total Size: **39.0 MB (39042825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f45c62a9228dbde996688061707eac062ce9bf8152c1906a19828cf90f84b5ed`
+-	Image ID: `sha256:b2be7fd9ddc9155f737711b76a29489da3ee73f9f0cda28717a0e50344112a4b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -767,43 +767,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e71b5219e27de2e371eba3fc3699ed2993ea95d295d6a68aee3d3229389ea3c`  
-		Last Modified: Mon, 21 Jul 2025 19:15:03 GMT  
-		Size: 284.4 KB (284363 bytes)  
+	-	`sha256:43ee6db64fd1715223d9810f53c94a25c421a9ed3f15289b1207141262e68215`  
+		Last Modified: Wed, 08 Oct 2025 21:54:04 GMT  
+		Size: 293.6 KB (293600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ced1a608e8c3cdc4bb62e08fd61681c02ad8096a3d1373ce58a8e306234e7c74`  
-		Last Modified: Mon, 21 Jul 2025 19:15:05 GMT  
-		Size: 34.6 MB (34642469 bytes)  
+	-	`sha256:26ac8953441a8db7f8cf84f5db6f24a0a57abcc8f1b4449fa7cb0c80531b907b`  
+		Last Modified: Wed, 08 Oct 2025 21:58:27 GMT  
+		Size: 34.7 MB (34659848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:f7af9ecb3424b8f4a0fe34c7e5bbf54b1a823bf5c705249fe8c6f30de181a7db
+$ docker pull haxe@sha256:56ac5b6cc6ead67cfe889d3bb094d474c1a7383f56c73a6ec6e3cf99ee252cb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.3 KB (16348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f62ca495b2bac1ad4f067ce367d29956c2555de57cfa79bd390febca67c55fe9`
+-	Image ID: `sha256:0d1ece5a461e768239f65ed9c673cb8645ac2b52e86130f035d81237c138c17a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d358f6f0b2c928dff9fcfacd8140730dcf38d64661b775ef3e31f48e42685687`  
-		Last Modified: Mon, 21 Jul 2025 21:23:30 GMT  
+	-	`sha256:0ff4d2549b37069c90d821c2532314c29fb891d5e1a3036e265450f9991c5dd3`  
+		Last Modified: Thu, 09 Oct 2025 00:23:23 GMT  
 		Size: 16.3 KB (16348 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:abfb3c3256fbaca4ff35f5fb2121235450e4c2ea10e22efa7aa28f66749a13d3
+$ docker pull haxe@sha256:251b23761f225311f5a3dcd261d6cbab940ee25213a8318fffa89959dec7c245
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -816,19 +816,19 @@ $ docker pull haxe@sha256:abfb3c3256fbaca4ff35f5fb2121235450e4c2ea10e22efa7aa28f
 ### `haxe:4.0-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:49a24c14112dee1f382e624ff1978df38bf06730e7372fd9488b14055ec08139
+$ docker pull haxe@sha256:5fdac34362783c4c8d55d00cf2e7697866b796724e6f035ec7f39a891fa65f64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.8 MB (36822184 bytes)**  
+-	Total Size: **36.8 MB (36846786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c9e3ea03e089c19c0c39f83fb0457448f347c02c6fedb0a114336b2bba18ba7`
+-	Image ID: `sha256:688c8293da0dd9a81c219d72dfcf2967f0799897273e1c46acd06eea0af29430`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -847,55 +847,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4a6f9a8512c9b8f485ebf49fe639e8d2ddfcdfa90c7f920a58469a4ab1b1dd1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:52 GMT  
-		Size: 282.5 KB (282534 bytes)  
+	-	`sha256:04438e70f48dfac29c095dec4ee962708655eec344db3c3a0914d8f2a57ea709`  
+		Last Modified: Wed, 08 Oct 2025 23:09:03 GMT  
+		Size: 291.2 KB (291247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1532416be86294b0db8756c70a6db183df170fcc7bee14f6e8906f8405146ad2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:55 GMT  
-		Size: 33.1 MB (33124122 bytes)  
+	-	`sha256:b090b3c87705cbff79203258288acb4c69a6586f2b59fc61f2e419777ae3dea1`  
+		Last Modified: Wed, 08 Oct 2025 23:13:15 GMT  
+		Size: 33.1 MB (33135724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:94a0cb953fa464def41a571e60524c19e3a39a9a4b9a7bf1dcaf2d0b2bde8539
+$ docker pull haxe@sha256:25749d7e4ba2d93f6d8720319af98e19c7bfacd6026f957014622f3bde56620c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.6 KB (15615 bytes)**  
+-	Total Size: **15.6 KB (15614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a33fdb48f24ca4b2471a85c36e21fa1b7dc9fe13491c3c36f2e4fdfb0326991`
+-	Image ID: `sha256:de63c7df308bb3a5a45c171bd0e1e262e5eaa36f381bbc9ae36f7730b457944f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd151ff30b16bb36522067c62439dd13284e03420d0e041c77ac4903f4a1e41b`  
-		Last Modified: Mon, 21 Jul 2025 18:23:26 GMT  
-		Size: 15.6 KB (15615 bytes)  
+	-	`sha256:474e5d851c939e464ee36de6ce7ebc865371f7f9f7e0ba53afa5bc7d9b285a57`  
+		Last Modified: Thu, 09 Oct 2025 00:23:28 GMT  
+		Size: 15.6 KB (15614 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f4f9c7dc5ae1573eda202df009f41f5acdcbfda536b52113e53b92081aec2286
+$ docker pull haxe@sha256:3411c22c47f834bfe5e4e49f8c6543e46148775829d7d3520629878f8d38f3f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.5 MB (37507104 bytes)**  
+-	Total Size: **37.5 MB (37532937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96fbb02cf1647c0d6d4d4ff977ef4aa462eef2ae47b1b9c243c6f26e89ccd335`
+-	Image ID: `sha256:71c25ec00ba3e75609336c3cbb5609fb1a1fd0835a9e2e422105a49823d500fc`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -914,43 +914,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5f3175146606b7d1657fa42cd79c229f316bae1c18e8b52387a844d34b70a04`  
-		Last Modified: Mon, 21 Jul 2025 19:19:48 GMT  
-		Size: 284.8 KB (284817 bytes)  
+	-	`sha256:f5be836d1130f0bc6acdbc544963a58ab41626e0a6c13714d7bebed0b3f97996`  
+		Last Modified: Wed, 08 Oct 2025 21:54:05 GMT  
+		Size: 294.3 KB (294264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5d663e7b476619338fb15b1c4a590b623ed6b0bed0832fb8e28e874440a59c7`  
-		Last Modified: Mon, 21 Jul 2025 19:19:52 GMT  
-		Size: 33.9 MB (33869184 bytes)  
+	-	`sha256:c55a6e485b0e6f5a4e33a1d8a2b486b1ee734da12b568fd365e83ac309786a17`  
+		Last Modified: Wed, 08 Oct 2025 21:58:46 GMT  
+		Size: 33.9 MB (33879372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:62a93c64891481d39406a95ec3225ac4fbc61475a2b90438c64902d3bfdcd78e
+$ docker pull haxe@sha256:c224f08661dd807a67da02f500f07e4eb0f8598ba38ed919421e1193d6ce476c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b54e67de0167ab661ab668b436908d301bdd5e8038e851ded7cef791c2d134a4`
+-	Image ID: `sha256:85f373769a827221140b321640c0e98ce03b6c27482bf713a4d470ae8ac7e789`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1d02a6a2a408acb5a4031e6d2ef1c64593436660a0d86b9d79160ae435a5585`  
-		Last Modified: Mon, 21 Jul 2025 21:23:35 GMT  
+	-	`sha256:0bdcb981636d4fa6df857cd1ce6de1df6829c5573394989b12347c645410e064`  
+		Last Modified: Thu, 09 Oct 2025 00:23:31 GMT  
 		Size: 15.7 KB (15710 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf8622960b8c19
+$ docker pull haxe@sha256:f51a0ed91dc0f6947ab127626b4ecda245ba47b5538fd1f1f4bb5a8d254da80a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -963,19 +963,19 @@ $ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf86
 ### `haxe:4.0-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:93b6e85eb2bc9242e1786687dc9280cee8b9283cc0d2866d7c5270ef5963a011
+$ docker pull haxe@sha256:c0197bce7d804f54766cf1e5b27b3a52cd549dacfff18174ad8b271cd0f7258d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 MB (37781281 bytes)**  
+-	Total Size: **37.8 MB (37812110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be482e2fb22a402c1ac989e9f20dccbc9f9814c9ebc5162e5dab67ce5bf3643c`
+-	Image ID: `sha256:885da20aedfe61523370b5a736402a077bfbaf4cf1b68486b2db69888e0f9885`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -994,55 +994,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea843d64b403394bd46c3f701c9574e1b79fc3065241a4687ac6fac02eda2753`  
-		Last Modified: Mon, 21 Jul 2025 17:21:56 GMT  
-		Size: 282.1 KB (282071 bytes)  
+	-	`sha256:27e2835193e4cecd09756045eeaa64430bbd529697002c02c7d757fba183ab8c`  
+		Last Modified: Wed, 08 Oct 2025 23:13:04 GMT  
+		Size: 290.8 KB (290772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df5a1a26411cce4a26ed02ff2c3b09b76b9ff26d4540e963d16dc9e3c2444a7c`  
-		Last Modified: Mon, 21 Jul 2025 17:22:00 GMT  
-		Size: 33.9 MB (33878733 bytes)  
+	-	`sha256:d98537a77b566f384141b43635bdeabce0f50c97b851118150c288e369869243`  
+		Last Modified: Wed, 08 Oct 2025 23:13:08 GMT  
+		Size: 33.9 MB (33894282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:38aab0e4388ec00410f8eead33bc8240f5b12eb3cc1cb46b55e0f1faeccca2fb
+$ docker pull haxe@sha256:c87f7ccd31794f7e2db55f3961cb46ae711cca00be61e348992cc2f6180a6bc0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ee3701f70e360f14cad9c1133c5598cf8bf8fdee313bd5062317d91b537cd88`
+-	Image ID: `sha256:1b1b371294f8325356d7f0b11900002271b50415122f9ad964092a3e0836a354`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41f5a95a303d0733b92f713197ed9e16fc4289525f00665e78680a4a534a0145`  
-		Last Modified: Mon, 21 Jul 2025 18:23:25 GMT  
+	-	`sha256:91c7651c2961ea75fa3016408b3884ce134bbf55f791dea16f82e9f39c98f956`  
+		Last Modified: Thu, 09 Oct 2025 00:23:20 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:22e0a2ec553bec45241302881cf009a42a6245c311caa54074d9646c3bb34307
+$ docker pull haxe@sha256:aeebff0f6e5c0a0b36276525fdbcc81cb918c945ef8fa1f69bda31319559e465
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (39015200 bytes)**  
+-	Total Size: **39.0 MB (39042825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f45c62a9228dbde996688061707eac062ce9bf8152c1906a19828cf90f84b5ed`
+-	Image ID: `sha256:b2be7fd9ddc9155f737711b76a29489da3ee73f9f0cda28717a0e50344112a4b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -1061,36 +1061,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e71b5219e27de2e371eba3fc3699ed2993ea95d295d6a68aee3d3229389ea3c`  
-		Last Modified: Mon, 21 Jul 2025 19:15:03 GMT  
-		Size: 284.4 KB (284363 bytes)  
+	-	`sha256:43ee6db64fd1715223d9810f53c94a25c421a9ed3f15289b1207141262e68215`  
+		Last Modified: Wed, 08 Oct 2025 21:54:04 GMT  
+		Size: 293.6 KB (293600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ced1a608e8c3cdc4bb62e08fd61681c02ad8096a3d1373ce58a8e306234e7c74`  
-		Last Modified: Mon, 21 Jul 2025 19:15:05 GMT  
-		Size: 34.6 MB (34642469 bytes)  
+	-	`sha256:26ac8953441a8db7f8cf84f5db6f24a0a57abcc8f1b4449fa7cb0c80531b907b`  
+		Last Modified: Wed, 08 Oct 2025 21:58:27 GMT  
+		Size: 34.7 MB (34659848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:f7af9ecb3424b8f4a0fe34c7e5bbf54b1a823bf5c705249fe8c6f30de181a7db
+$ docker pull haxe@sha256:56ac5b6cc6ead67cfe889d3bb094d474c1a7383f56c73a6ec6e3cf99ee252cb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.3 KB (16348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f62ca495b2bac1ad4f067ce367d29956c2555de57cfa79bd390febca67c55fe9`
+-	Image ID: `sha256:0d1ece5a461e768239f65ed9c673cb8645ac2b52e86130f035d81237c138c17a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d358f6f0b2c928dff9fcfacd8140730dcf38d64661b775ef3e31f48e42685687`  
-		Last Modified: Mon, 21 Jul 2025 21:23:30 GMT  
+	-	`sha256:0ff4d2549b37069c90d821c2532314c29fb891d5e1a3036e265450f9991c5dd3`  
+		Last Modified: Thu, 09 Oct 2025 00:23:23 GMT  
 		Size: 16.3 KB (16348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2492,7 +2492,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5-alpine`
 
 ```console
-$ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf8622960b8c19
+$ docker pull haxe@sha256:f51a0ed91dc0f6947ab127626b4ecda245ba47b5538fd1f1f4bb5a8d254da80a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2505,19 +2505,19 @@ $ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf86
 ### `haxe:4.0.5-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:93b6e85eb2bc9242e1786687dc9280cee8b9283cc0d2866d7c5270ef5963a011
+$ docker pull haxe@sha256:c0197bce7d804f54766cf1e5b27b3a52cd549dacfff18174ad8b271cd0f7258d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 MB (37781281 bytes)**  
+-	Total Size: **37.8 MB (37812110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be482e2fb22a402c1ac989e9f20dccbc9f9814c9ebc5162e5dab67ce5bf3643c`
+-	Image ID: `sha256:885da20aedfe61523370b5a736402a077bfbaf4cf1b68486b2db69888e0f9885`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -2536,55 +2536,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea843d64b403394bd46c3f701c9574e1b79fc3065241a4687ac6fac02eda2753`  
-		Last Modified: Mon, 21 Jul 2025 17:21:56 GMT  
-		Size: 282.1 KB (282071 bytes)  
+	-	`sha256:27e2835193e4cecd09756045eeaa64430bbd529697002c02c7d757fba183ab8c`  
+		Last Modified: Wed, 08 Oct 2025 23:13:04 GMT  
+		Size: 290.8 KB (290772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df5a1a26411cce4a26ed02ff2c3b09b76b9ff26d4540e963d16dc9e3c2444a7c`  
-		Last Modified: Mon, 21 Jul 2025 17:22:00 GMT  
-		Size: 33.9 MB (33878733 bytes)  
+	-	`sha256:d98537a77b566f384141b43635bdeabce0f50c97b851118150c288e369869243`  
+		Last Modified: Wed, 08 Oct 2025 23:13:08 GMT  
+		Size: 33.9 MB (33894282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:38aab0e4388ec00410f8eead33bc8240f5b12eb3cc1cb46b55e0f1faeccca2fb
+$ docker pull haxe@sha256:c87f7ccd31794f7e2db55f3961cb46ae711cca00be61e348992cc2f6180a6bc0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ee3701f70e360f14cad9c1133c5598cf8bf8fdee313bd5062317d91b537cd88`
+-	Image ID: `sha256:1b1b371294f8325356d7f0b11900002271b50415122f9ad964092a3e0836a354`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41f5a95a303d0733b92f713197ed9e16fc4289525f00665e78680a4a534a0145`  
-		Last Modified: Mon, 21 Jul 2025 18:23:25 GMT  
+	-	`sha256:91c7651c2961ea75fa3016408b3884ce134bbf55f791dea16f82e9f39c98f956`  
+		Last Modified: Thu, 09 Oct 2025 00:23:20 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:22e0a2ec553bec45241302881cf009a42a6245c311caa54074d9646c3bb34307
+$ docker pull haxe@sha256:aeebff0f6e5c0a0b36276525fdbcc81cb918c945ef8fa1f69bda31319559e465
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (39015200 bytes)**  
+-	Total Size: **39.0 MB (39042825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f45c62a9228dbde996688061707eac062ce9bf8152c1906a19828cf90f84b5ed`
+-	Image ID: `sha256:b2be7fd9ddc9155f737711b76a29489da3ee73f9f0cda28717a0e50344112a4b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -2603,43 +2603,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e71b5219e27de2e371eba3fc3699ed2993ea95d295d6a68aee3d3229389ea3c`  
-		Last Modified: Mon, 21 Jul 2025 19:15:03 GMT  
-		Size: 284.4 KB (284363 bytes)  
+	-	`sha256:43ee6db64fd1715223d9810f53c94a25c421a9ed3f15289b1207141262e68215`  
+		Last Modified: Wed, 08 Oct 2025 21:54:04 GMT  
+		Size: 293.6 KB (293600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ced1a608e8c3cdc4bb62e08fd61681c02ad8096a3d1373ce58a8e306234e7c74`  
-		Last Modified: Mon, 21 Jul 2025 19:15:05 GMT  
-		Size: 34.6 MB (34642469 bytes)  
+	-	`sha256:26ac8953441a8db7f8cf84f5db6f24a0a57abcc8f1b4449fa7cb0c80531b907b`  
+		Last Modified: Wed, 08 Oct 2025 21:58:27 GMT  
+		Size: 34.7 MB (34659848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:f7af9ecb3424b8f4a0fe34c7e5bbf54b1a823bf5c705249fe8c6f30de181a7db
+$ docker pull haxe@sha256:56ac5b6cc6ead67cfe889d3bb094d474c1a7383f56c73a6ec6e3cf99ee252cb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.3 KB (16348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f62ca495b2bac1ad4f067ce367d29956c2555de57cfa79bd390febca67c55fe9`
+-	Image ID: `sha256:0d1ece5a461e768239f65ed9c673cb8645ac2b52e86130f035d81237c138c17a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d358f6f0b2c928dff9fcfacd8140730dcf38d64661b775ef3e31f48e42685687`  
-		Last Modified: Mon, 21 Jul 2025 21:23:30 GMT  
+	-	`sha256:0ff4d2549b37069c90d821c2532314c29fb891d5e1a3036e265450f9991c5dd3`  
+		Last Modified: Thu, 09 Oct 2025 00:23:23 GMT  
 		Size: 16.3 KB (16348 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0.5-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:abfb3c3256fbaca4ff35f5fb2121235450e4c2ea10e22efa7aa28f66749a13d3
+$ docker pull haxe@sha256:251b23761f225311f5a3dcd261d6cbab940ee25213a8318fffa89959dec7c245
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2652,19 +2652,19 @@ $ docker pull haxe@sha256:abfb3c3256fbaca4ff35f5fb2121235450e4c2ea10e22efa7aa28f
 ### `haxe:4.0.5-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:49a24c14112dee1f382e624ff1978df38bf06730e7372fd9488b14055ec08139
+$ docker pull haxe@sha256:5fdac34362783c4c8d55d00cf2e7697866b796724e6f035ec7f39a891fa65f64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.8 MB (36822184 bytes)**  
+-	Total Size: **36.8 MB (36846786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c9e3ea03e089c19c0c39f83fb0457448f347c02c6fedb0a114336b2bba18ba7`
+-	Image ID: `sha256:688c8293da0dd9a81c219d72dfcf2967f0799897273e1c46acd06eea0af29430`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -2683,55 +2683,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4a6f9a8512c9b8f485ebf49fe639e8d2ddfcdfa90c7f920a58469a4ab1b1dd1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:52 GMT  
-		Size: 282.5 KB (282534 bytes)  
+	-	`sha256:04438e70f48dfac29c095dec4ee962708655eec344db3c3a0914d8f2a57ea709`  
+		Last Modified: Wed, 08 Oct 2025 23:09:03 GMT  
+		Size: 291.2 KB (291247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1532416be86294b0db8756c70a6db183df170fcc7bee14f6e8906f8405146ad2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:55 GMT  
-		Size: 33.1 MB (33124122 bytes)  
+	-	`sha256:b090b3c87705cbff79203258288acb4c69a6586f2b59fc61f2e419777ae3dea1`  
+		Last Modified: Wed, 08 Oct 2025 23:13:15 GMT  
+		Size: 33.1 MB (33135724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:94a0cb953fa464def41a571e60524c19e3a39a9a4b9a7bf1dcaf2d0b2bde8539
+$ docker pull haxe@sha256:25749d7e4ba2d93f6d8720319af98e19c7bfacd6026f957014622f3bde56620c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.6 KB (15615 bytes)**  
+-	Total Size: **15.6 KB (15614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a33fdb48f24ca4b2471a85c36e21fa1b7dc9fe13491c3c36f2e4fdfb0326991`
+-	Image ID: `sha256:de63c7df308bb3a5a45c171bd0e1e262e5eaa36f381bbc9ae36f7730b457944f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd151ff30b16bb36522067c62439dd13284e03420d0e041c77ac4903f4a1e41b`  
-		Last Modified: Mon, 21 Jul 2025 18:23:26 GMT  
-		Size: 15.6 KB (15615 bytes)  
+	-	`sha256:474e5d851c939e464ee36de6ce7ebc865371f7f9f7e0ba53afa5bc7d9b285a57`  
+		Last Modified: Thu, 09 Oct 2025 00:23:28 GMT  
+		Size: 15.6 KB (15614 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f4f9c7dc5ae1573eda202df009f41f5acdcbfda536b52113e53b92081aec2286
+$ docker pull haxe@sha256:3411c22c47f834bfe5e4e49f8c6543e46148775829d7d3520629878f8d38f3f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.5 MB (37507104 bytes)**  
+-	Total Size: **37.5 MB (37532937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96fbb02cf1647c0d6d4d4ff977ef4aa462eef2ae47b1b9c243c6f26e89ccd335`
+-	Image ID: `sha256:71c25ec00ba3e75609336c3cbb5609fb1a1fd0835a9e2e422105a49823d500fc`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -2750,43 +2750,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5f3175146606b7d1657fa42cd79c229f316bae1c18e8b52387a844d34b70a04`  
-		Last Modified: Mon, 21 Jul 2025 19:19:48 GMT  
-		Size: 284.8 KB (284817 bytes)  
+	-	`sha256:f5be836d1130f0bc6acdbc544963a58ab41626e0a6c13714d7bebed0b3f97996`  
+		Last Modified: Wed, 08 Oct 2025 21:54:05 GMT  
+		Size: 294.3 KB (294264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5d663e7b476619338fb15b1c4a590b623ed6b0bed0832fb8e28e874440a59c7`  
-		Last Modified: Mon, 21 Jul 2025 19:19:52 GMT  
-		Size: 33.9 MB (33869184 bytes)  
+	-	`sha256:c55a6e485b0e6f5a4e33a1d8a2b486b1ee734da12b568fd365e83ac309786a17`  
+		Last Modified: Wed, 08 Oct 2025 21:58:46 GMT  
+		Size: 33.9 MB (33879372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:62a93c64891481d39406a95ec3225ac4fbc61475a2b90438c64902d3bfdcd78e
+$ docker pull haxe@sha256:c224f08661dd807a67da02f500f07e4eb0f8598ba38ed919421e1193d6ce476c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b54e67de0167ab661ab668b436908d301bdd5e8038e851ded7cef791c2d134a4`
+-	Image ID: `sha256:85f373769a827221140b321640c0e98ce03b6c27482bf713a4d470ae8ac7e789`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1d02a6a2a408acb5a4031e6d2ef1c64593436660a0d86b9d79160ae435a5585`  
-		Last Modified: Mon, 21 Jul 2025 21:23:35 GMT  
+	-	`sha256:0bdcb981636d4fa6df857cd1ce6de1df6829c5573394989b12347c645410e064`  
+		Last Modified: Thu, 09 Oct 2025 00:23:31 GMT  
 		Size: 15.7 KB (15710 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0.5-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf8622960b8c19
+$ docker pull haxe@sha256:f51a0ed91dc0f6947ab127626b4ecda245ba47b5538fd1f1f4bb5a8d254da80a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2799,19 +2799,19 @@ $ docker pull haxe@sha256:100dfe4800cb23285ffae8e09a18ea47a3ad85aee0b5e14ef0bf86
 ### `haxe:4.0.5-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:93b6e85eb2bc9242e1786687dc9280cee8b9283cc0d2866d7c5270ef5963a011
+$ docker pull haxe@sha256:c0197bce7d804f54766cf1e5b27b3a52cd549dacfff18174ad8b271cd0f7258d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 MB (37781281 bytes)**  
+-	Total Size: **37.8 MB (37812110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be482e2fb22a402c1ac989e9f20dccbc9f9814c9ebc5162e5dab67ce5bf3643c`
+-	Image ID: `sha256:885da20aedfe61523370b5a736402a077bfbaf4cf1b68486b2db69888e0f9885`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -2830,55 +2830,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea843d64b403394bd46c3f701c9574e1b79fc3065241a4687ac6fac02eda2753`  
-		Last Modified: Mon, 21 Jul 2025 17:21:56 GMT  
-		Size: 282.1 KB (282071 bytes)  
+	-	`sha256:27e2835193e4cecd09756045eeaa64430bbd529697002c02c7d757fba183ab8c`  
+		Last Modified: Wed, 08 Oct 2025 23:13:04 GMT  
+		Size: 290.8 KB (290772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df5a1a26411cce4a26ed02ff2c3b09b76b9ff26d4540e963d16dc9e3c2444a7c`  
-		Last Modified: Mon, 21 Jul 2025 17:22:00 GMT  
-		Size: 33.9 MB (33878733 bytes)  
+	-	`sha256:d98537a77b566f384141b43635bdeabce0f50c97b851118150c288e369869243`  
+		Last Modified: Wed, 08 Oct 2025 23:13:08 GMT  
+		Size: 33.9 MB (33894282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:38aab0e4388ec00410f8eead33bc8240f5b12eb3cc1cb46b55e0f1faeccca2fb
+$ docker pull haxe@sha256:c87f7ccd31794f7e2db55f3961cb46ae711cca00be61e348992cc2f6180a6bc0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ee3701f70e360f14cad9c1133c5598cf8bf8fdee313bd5062317d91b537cd88`
+-	Image ID: `sha256:1b1b371294f8325356d7f0b11900002271b50415122f9ad964092a3e0836a354`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41f5a95a303d0733b92f713197ed9e16fc4289525f00665e78680a4a534a0145`  
-		Last Modified: Mon, 21 Jul 2025 18:23:25 GMT  
+	-	`sha256:91c7651c2961ea75fa3016408b3884ce134bbf55f791dea16f82e9f39c98f956`  
+		Last Modified: Thu, 09 Oct 2025 00:23:20 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:22e0a2ec553bec45241302881cf009a42a6245c311caa54074d9646c3bb34307
+$ docker pull haxe@sha256:aeebff0f6e5c0a0b36276525fdbcc81cb918c945ef8fa1f69bda31319559e465
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.0 MB (39015200 bytes)**  
+-	Total Size: **39.0 MB (39042825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f45c62a9228dbde996688061707eac062ce9bf8152c1906a19828cf90f84b5ed`
+-	Image ID: `sha256:b2be7fd9ddc9155f737711b76a29489da3ee73f9f0cda28717a0e50344112a4b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -2897,36 +2897,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e71b5219e27de2e371eba3fc3699ed2993ea95d295d6a68aee3d3229389ea3c`  
-		Last Modified: Mon, 21 Jul 2025 19:15:03 GMT  
-		Size: 284.4 KB (284363 bytes)  
+	-	`sha256:43ee6db64fd1715223d9810f53c94a25c421a9ed3f15289b1207141262e68215`  
+		Last Modified: Wed, 08 Oct 2025 21:54:04 GMT  
+		Size: 293.6 KB (293600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ced1a608e8c3cdc4bb62e08fd61681c02ad8096a3d1373ce58a8e306234e7c74`  
-		Last Modified: Mon, 21 Jul 2025 19:15:05 GMT  
-		Size: 34.6 MB (34642469 bytes)  
+	-	`sha256:26ac8953441a8db7f8cf84f5db6f24a0a57abcc8f1b4449fa7cb0c80531b907b`  
+		Last Modified: Wed, 08 Oct 2025 21:58:27 GMT  
+		Size: 34.7 MB (34659848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:f7af9ecb3424b8f4a0fe34c7e5bbf54b1a823bf5c705249fe8c6f30de181a7db
+$ docker pull haxe@sha256:56ac5b6cc6ead67cfe889d3bb094d474c1a7383f56c73a6ec6e3cf99ee252cb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.3 KB (16348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f62ca495b2bac1ad4f067ce367d29956c2555de57cfa79bd390febca67c55fe9`
+-	Image ID: `sha256:0d1ece5a461e768239f65ed9c673cb8645ac2b52e86130f035d81237c138c17a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d358f6f0b2c928dff9fcfacd8140730dcf38d64661b775ef3e31f48e42685687`  
-		Last Modified: Mon, 21 Jul 2025 21:23:30 GMT  
+	-	`sha256:0ff4d2549b37069c90d821c2532314c29fb891d5e1a3036e265450f9991c5dd3`  
+		Last Modified: Thu, 09 Oct 2025 00:23:23 GMT  
 		Size: 16.3 KB (16348 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4328,7 +4328,7 @@ CMD ["haxe"]
 ## `haxe:4.1-alpine`
 
 ```console
-$ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d894350b268
+$ docker pull haxe@sha256:073a7330f79f999e3fe185f00d717a6bcf2853062ce34dcb0b0535f45fd98364
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4341,19 +4341,19 @@ $ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d
 ### `haxe:4.1-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:68e4c8ca2f342d7492b9b1c56bc0119f550677dd3646694fdeb69957c244de4b
+$ docker pull haxe@sha256:3765ca063de6eaf0ca0c8f639316ed6a1d350b1d05a2956261bb30a3dcb0bcba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.0 MB (37982391 bytes)**  
+-	Total Size: **38.0 MB (38017442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a9c92ebf0f1e926061c95c0737ee10ddd2d6e9f90fa843b6d33d72df98ff5d`
+-	Image ID: `sha256:de900811d228da6d46de3951850289cbf1353c32d2fc9f48cd2279b217662359`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -4372,55 +4372,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cbd4a78e83f95c9122af455818881082cb3c5e37aa0802d9574ee453f1302f3`  
-		Last Modified: Mon, 21 Jul 2025 17:21:03 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:207613ff58529132f07afd3481f8d1282be57011b48fe4761f3fccea1a19a50f`  
+		Last Modified: Wed, 08 Oct 2025 23:08:05 GMT  
+		Size: 290.8 KB (290774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14f86cb6ea1bd040438d7f7a102d6a77c1d1db2786cd9289328bf43b05bb375c`  
-		Last Modified: Mon, 21 Jul 2025 17:21:06 GMT  
-		Size: 34.1 MB (34079857 bytes)  
+	-	`sha256:f2cf896702fc25637297da43f42dab6b56f218e92d72677bf101faa6725ba3a4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:42 GMT  
+		Size: 34.1 MB (34099612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:de67ca0707f24a9fd6fb3e48773bd21dc517463ddf0c386cac8f627424151517
+$ docker pull haxe@sha256:353504d61db0b478922c98bb2d91ceaf71b7434a7f5549a6a909a425fb36d6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c8b6a6d4763cd1a8ad8cc113175ef139a03175e7aeba07d2a119f52d69d6a79`
+-	Image ID: `sha256:da523dfafe6f532a1dcb4c3ebd820482c629f164bedb120779febb4cdc228022`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:211a810d9d1d6513b1b4c20b82783920708333f7cd1ec072966d93529954ec63`  
-		Last Modified: Mon, 21 Jul 2025 18:23:51 GMT  
+	-	`sha256:a72f256e8c2799aee5a16ca293590fe77d7e2ebfa7a0a7cc0d501bfb5b3300f4`  
+		Last Modified: Thu, 09 Oct 2025 00:23:47 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4c57a5574d05a0533a0b24656c0fffd46a480ab65a14b8b7d9547de37f278230
+$ docker pull haxe@sha256:0e758251ce7830c8a6acffe7e776c659b4bc8f195c4e7520056bc935a07a28a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39216387 bytes)**  
+-	Total Size: **39.2 MB (39247431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abc443f4a434b71cfc254df9d19f0d2bcf83e89c6742db2d318e82bec75d1ad8`
+-	Image ID: `sha256:383d04955fcef76587ff07caac579c52b45a3e19d6f2c68d0efc0b04c007ceb1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -4439,43 +4439,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40b6cf0930a99a00da4d05a7870d816a46a9ab68b255d35c6063964361e9e6dd`  
-		Last Modified: Mon, 21 Jul 2025 19:00:54 GMT  
-		Size: 284.4 KB (284355 bytes)  
+	-	`sha256:a6d745dec58825419feba59eb6d0195b15bec899fb0ab0a17cbb9272d9b5ba47`  
+		Last Modified: Wed, 08 Oct 2025 22:45:02 GMT  
+		Size: 293.6 KB (293620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de945550b6e0281576d36ee29836680eb7be33a023d7f97b38538c259a891be`  
-		Last Modified: Mon, 21 Jul 2025 19:01:04 GMT  
-		Size: 34.8 MB (34843664 bytes)  
+	-	`sha256:701a1e6c173075a0f689637a0dadba5e3d87a5418aa845453f859648c7d57360`  
+		Last Modified: Thu, 09 Oct 2025 00:23:59 GMT  
+		Size: 34.9 MB (34864434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c83bc0d47007ea42093efaaa218e6ed4a323b417b3d6f5acde070371d58f27b0
+$ docker pull haxe@sha256:cfb8ff045b72c704494e15af2465d43d81ea590e91b00ec13a7f18a84e228ade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.3 KB (16348 bytes)**  
+-	Total Size: **16.3 KB (16347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e1abe8465db59651a92dc911042dfbbf65f46a3b87004bbeac179fc72346f99`
+-	Image ID: `sha256:60cddbbc119515e80a9f8d7611602ba91d13615d081cf7a120e5cdaed24e2172`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bed69502e4ac5439b8cd807e53134af5c9ac5e08f3a1222f6099e1c9e46c6d96`  
-		Last Modified: Mon, 21 Jul 2025 21:23:58 GMT  
-		Size: 16.3 KB (16348 bytes)  
+	-	`sha256:508ec6b5c082d516472197931baca97c25a83224382d11074352ae03a4b86a41`  
+		Last Modified: Thu, 09 Oct 2025 00:23:51 GMT  
+		Size: 16.3 KB (16347 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:225a6c3945716a7f1cfbcee5e022abadeddbb11a66cc329a1e7e7a38b2987ee0
+$ docker pull haxe@sha256:75e3f225b8bf112f4c9597ce7daea100fd0cd1198dee6d9a2e2a9984b8a2c427
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4488,19 +4488,19 @@ $ docker pull haxe@sha256:225a6c3945716a7f1cfbcee5e022abadeddbb11a66cc329a1e7e7a
 ### `haxe:4.1-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:882ed05b786fa791c86bd5f898f62cfab6fa80c3552d095f7b57a8e1232960ca
+$ docker pull haxe@sha256:bbb5f601acab2ce68f3f98f82caa60c2a22d2f675d94c819c8fdbf34048f6079
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.0 MB (37025808 bytes)**  
+-	Total Size: **37.1 MB (37057346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65c1abae206b92a031e64073e2e7129f3541119d7f7059ba10495b276306cfc1`
+-	Image ID: `sha256:a787bd0b6a9b8aa6f8770a0b0ce490325d46ed60b50ccda7eb6a44ff4f314c66`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -4519,55 +4519,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f69cb93990186396007fa48222d8c8063d8936c4f21d88f7b886a70e72d2f524`  
-		Last Modified: Mon, 21 Jul 2025 17:21:10 GMT  
-		Size: 282.5 KB (282540 bytes)  
+	-	`sha256:05fe952d15ec5f43dd28be1d797f44afc4f77d422e481f4349414b74b9be59a8`  
+		Last Modified: Wed, 08 Oct 2025 23:12:04 GMT  
+		Size: 291.2 KB (291242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ed56c3b4bf346a786649c3b3f94e50b19b50269080c25c3209a42a568c63ce0`  
-		Last Modified: Mon, 21 Jul 2025 17:21:18 GMT  
-		Size: 33.3 MB (33327740 bytes)  
+	-	`sha256:9b69421484277f105c1754f40df00cee0af1fc050cae8f912bc5a3b2105a99b1`  
+		Last Modified: Wed, 08 Oct 2025 23:12:08 GMT  
+		Size: 33.3 MB (33346289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:de8a7f105bd55bda56972963fab243c32098a0dd2fabb33ecccae79f48354b94
+$ docker pull haxe@sha256:4268f0732b6ea96c29338df03d446388a0d94d4e41cbb3cde006d09c56771ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:769154be53146dac23629f1c8dc610e9f657e873ef491ffef3938af8e3b7740e`
+-	Image ID: `sha256:10e17a025200b54f9c900fa50ab5da51d9642de3951bedb04038dac90c882d4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6bfb3ac86fb409548f316c9d68ab7652786cc83623c257fc749b63f6866ff1fb`  
-		Last Modified: Mon, 21 Jul 2025 18:23:57 GMT  
+	-	`sha256:c29b651a4046c07d5e7254c87779a99f5efe6bbd1e53e92aa8b46a2779fa1376`  
+		Last Modified: Thu, 09 Oct 2025 00:23:53 GMT  
 		Size: 15.6 KB (15615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f7d1f841ed9140e087ae0706cbdda7a6ed7e498a104ffbfbdc4f509e98d6c684
+$ docker pull haxe@sha256:f6920da8adb1c3d2f42300fe6842f01fd6bf21ee05c83fee7c7ecc34a136f07b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.7 MB (37710133 bytes)**  
+-	Total Size: **37.7 MB (37744272 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fffec8af3ab4c92e8e9c00cdf621bbbe2b726bf5f8a0553c949181719643d5bd`
+-	Image ID: `sha256:1a052b51f877deaeb565bf24e254595e7fb9c121da3271f0b43e098481a55160`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -4586,43 +4586,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3e49c7889e9cc36b233e8314cc41018eb41de07954a8f94058c44b617d95711`  
-		Last Modified: Mon, 21 Jul 2025 19:04:56 GMT  
-		Size: 284.8 KB (284825 bytes)  
+	-	`sha256:f9a90d26839ed624e6df5d5bc6fc86c6fd3b7fe0e55e417a3c77f1eeaf12074c`  
+		Last Modified: Wed, 08 Oct 2025 21:58:02 GMT  
+		Size: 294.3 KB (294256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20d011b00bc39fabef116b3fbb71af119d2bb07e39b2a60f1e24db031c65b12e`  
-		Last Modified: Mon, 21 Jul 2025 19:04:59 GMT  
-		Size: 34.1 MB (34072205 bytes)  
+	-	`sha256:52d36f17e74fe91bd982ca46779ff9d23f3297d827a7c0023a3b647ca4bf30e2`  
+		Last Modified: Wed, 08 Oct 2025 21:58:06 GMT  
+		Size: 34.1 MB (34090715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:7479e4f45d27a17cc5efb3d545ca10db975f659ac3da8ba7b7f8afc0ecc12c74
+$ docker pull haxe@sha256:0d8431a28573ae5700a45989568045412da13285284796860973d4ca439665a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 KB (15709 bytes)**  
+-	Total Size: **15.7 KB (15710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c12bcada8392f1306624642dfe5a345be093e2a6a8345e19aed042fd53c81861`
+-	Image ID: `sha256:812ea075902083a3cb01b76b718398946435e51d52109631f55015f192139bdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56a51c4aca4ebac92b921ff38039d15308d8206d6a51780b01bd9583372b9237`  
-		Last Modified: Mon, 21 Jul 2025 21:24:02 GMT  
-		Size: 15.7 KB (15709 bytes)  
+	-	`sha256:e997e7327b7c6f43b4d63d47e32712c9ed70ef25f488cc20dabe2a0b137b9da1`  
+		Last Modified: Thu, 09 Oct 2025 00:23:57 GMT  
+		Size: 15.7 KB (15710 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d894350b268
+$ docker pull haxe@sha256:073a7330f79f999e3fe185f00d717a6bcf2853062ce34dcb0b0535f45fd98364
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4635,19 +4635,19 @@ $ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d
 ### `haxe:4.1-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:68e4c8ca2f342d7492b9b1c56bc0119f550677dd3646694fdeb69957c244de4b
+$ docker pull haxe@sha256:3765ca063de6eaf0ca0c8f639316ed6a1d350b1d05a2956261bb30a3dcb0bcba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.0 MB (37982391 bytes)**  
+-	Total Size: **38.0 MB (38017442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a9c92ebf0f1e926061c95c0737ee10ddd2d6e9f90fa843b6d33d72df98ff5d`
+-	Image ID: `sha256:de900811d228da6d46de3951850289cbf1353c32d2fc9f48cd2279b217662359`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -4666,55 +4666,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cbd4a78e83f95c9122af455818881082cb3c5e37aa0802d9574ee453f1302f3`  
-		Last Modified: Mon, 21 Jul 2025 17:21:03 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:207613ff58529132f07afd3481f8d1282be57011b48fe4761f3fccea1a19a50f`  
+		Last Modified: Wed, 08 Oct 2025 23:08:05 GMT  
+		Size: 290.8 KB (290774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14f86cb6ea1bd040438d7f7a102d6a77c1d1db2786cd9289328bf43b05bb375c`  
-		Last Modified: Mon, 21 Jul 2025 17:21:06 GMT  
-		Size: 34.1 MB (34079857 bytes)  
+	-	`sha256:f2cf896702fc25637297da43f42dab6b56f218e92d72677bf101faa6725ba3a4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:42 GMT  
+		Size: 34.1 MB (34099612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:de67ca0707f24a9fd6fb3e48773bd21dc517463ddf0c386cac8f627424151517
+$ docker pull haxe@sha256:353504d61db0b478922c98bb2d91ceaf71b7434a7f5549a6a909a425fb36d6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c8b6a6d4763cd1a8ad8cc113175ef139a03175e7aeba07d2a119f52d69d6a79`
+-	Image ID: `sha256:da523dfafe6f532a1dcb4c3ebd820482c629f164bedb120779febb4cdc228022`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:211a810d9d1d6513b1b4c20b82783920708333f7cd1ec072966d93529954ec63`  
-		Last Modified: Mon, 21 Jul 2025 18:23:51 GMT  
+	-	`sha256:a72f256e8c2799aee5a16ca293590fe77d7e2ebfa7a0a7cc0d501bfb5b3300f4`  
+		Last Modified: Thu, 09 Oct 2025 00:23:47 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4c57a5574d05a0533a0b24656c0fffd46a480ab65a14b8b7d9547de37f278230
+$ docker pull haxe@sha256:0e758251ce7830c8a6acffe7e776c659b4bc8f195c4e7520056bc935a07a28a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39216387 bytes)**  
+-	Total Size: **39.2 MB (39247431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abc443f4a434b71cfc254df9d19f0d2bcf83e89c6742db2d318e82bec75d1ad8`
+-	Image ID: `sha256:383d04955fcef76587ff07caac579c52b45a3e19d6f2c68d0efc0b04c007ceb1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -4733,37 +4733,37 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40b6cf0930a99a00da4d05a7870d816a46a9ab68b255d35c6063964361e9e6dd`  
-		Last Modified: Mon, 21 Jul 2025 19:00:54 GMT  
-		Size: 284.4 KB (284355 bytes)  
+	-	`sha256:a6d745dec58825419feba59eb6d0195b15bec899fb0ab0a17cbb9272d9b5ba47`  
+		Last Modified: Wed, 08 Oct 2025 22:45:02 GMT  
+		Size: 293.6 KB (293620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de945550b6e0281576d36ee29836680eb7be33a023d7f97b38538c259a891be`  
-		Last Modified: Mon, 21 Jul 2025 19:01:04 GMT  
-		Size: 34.8 MB (34843664 bytes)  
+	-	`sha256:701a1e6c173075a0f689637a0dadba5e3d87a5418aa845453f859648c7d57360`  
+		Last Modified: Thu, 09 Oct 2025 00:23:59 GMT  
+		Size: 34.9 MB (34864434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c83bc0d47007ea42093efaaa218e6ed4a323b417b3d6f5acde070371d58f27b0
+$ docker pull haxe@sha256:cfb8ff045b72c704494e15af2465d43d81ea590e91b00ec13a7f18a84e228ade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.3 KB (16348 bytes)**  
+-	Total Size: **16.3 KB (16347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e1abe8465db59651a92dc911042dfbbf65f46a3b87004bbeac179fc72346f99`
+-	Image ID: `sha256:60cddbbc119515e80a9f8d7611602ba91d13615d081cf7a120e5cdaed24e2172`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bed69502e4ac5439b8cd807e53134af5c9ac5e08f3a1222f6099e1c9e46c6d96`  
-		Last Modified: Mon, 21 Jul 2025 21:23:58 GMT  
-		Size: 16.3 KB (16348 bytes)  
+	-	`sha256:508ec6b5c082d516472197931baca97c25a83224382d11074352ae03a4b86a41`  
+		Last Modified: Thu, 09 Oct 2025 00:23:51 GMT  
+		Size: 16.3 KB (16347 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1-bullseye`
@@ -6164,7 +6164,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5-alpine`
 
 ```console
-$ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d894350b268
+$ docker pull haxe@sha256:073a7330f79f999e3fe185f00d717a6bcf2853062ce34dcb0b0535f45fd98364
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6177,19 +6177,19 @@ $ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d
 ### `haxe:4.1.5-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:68e4c8ca2f342d7492b9b1c56bc0119f550677dd3646694fdeb69957c244de4b
+$ docker pull haxe@sha256:3765ca063de6eaf0ca0c8f639316ed6a1d350b1d05a2956261bb30a3dcb0bcba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.0 MB (37982391 bytes)**  
+-	Total Size: **38.0 MB (38017442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a9c92ebf0f1e926061c95c0737ee10ddd2d6e9f90fa843b6d33d72df98ff5d`
+-	Image ID: `sha256:de900811d228da6d46de3951850289cbf1353c32d2fc9f48cd2279b217662359`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -6208,55 +6208,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cbd4a78e83f95c9122af455818881082cb3c5e37aa0802d9574ee453f1302f3`  
-		Last Modified: Mon, 21 Jul 2025 17:21:03 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:207613ff58529132f07afd3481f8d1282be57011b48fe4761f3fccea1a19a50f`  
+		Last Modified: Wed, 08 Oct 2025 23:08:05 GMT  
+		Size: 290.8 KB (290774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14f86cb6ea1bd040438d7f7a102d6a77c1d1db2786cd9289328bf43b05bb375c`  
-		Last Modified: Mon, 21 Jul 2025 17:21:06 GMT  
-		Size: 34.1 MB (34079857 bytes)  
+	-	`sha256:f2cf896702fc25637297da43f42dab6b56f218e92d72677bf101faa6725ba3a4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:42 GMT  
+		Size: 34.1 MB (34099612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:de67ca0707f24a9fd6fb3e48773bd21dc517463ddf0c386cac8f627424151517
+$ docker pull haxe@sha256:353504d61db0b478922c98bb2d91ceaf71b7434a7f5549a6a909a425fb36d6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c8b6a6d4763cd1a8ad8cc113175ef139a03175e7aeba07d2a119f52d69d6a79`
+-	Image ID: `sha256:da523dfafe6f532a1dcb4c3ebd820482c629f164bedb120779febb4cdc228022`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:211a810d9d1d6513b1b4c20b82783920708333f7cd1ec072966d93529954ec63`  
-		Last Modified: Mon, 21 Jul 2025 18:23:51 GMT  
+	-	`sha256:a72f256e8c2799aee5a16ca293590fe77d7e2ebfa7a0a7cc0d501bfb5b3300f4`  
+		Last Modified: Thu, 09 Oct 2025 00:23:47 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1.5-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4c57a5574d05a0533a0b24656c0fffd46a480ab65a14b8b7d9547de37f278230
+$ docker pull haxe@sha256:0e758251ce7830c8a6acffe7e776c659b4bc8f195c4e7520056bc935a07a28a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39216387 bytes)**  
+-	Total Size: **39.2 MB (39247431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abc443f4a434b71cfc254df9d19f0d2bcf83e89c6742db2d318e82bec75d1ad8`
+-	Image ID: `sha256:383d04955fcef76587ff07caac579c52b45a3e19d6f2c68d0efc0b04c007ceb1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -6275,43 +6275,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40b6cf0930a99a00da4d05a7870d816a46a9ab68b255d35c6063964361e9e6dd`  
-		Last Modified: Mon, 21 Jul 2025 19:00:54 GMT  
-		Size: 284.4 KB (284355 bytes)  
+	-	`sha256:a6d745dec58825419feba59eb6d0195b15bec899fb0ab0a17cbb9272d9b5ba47`  
+		Last Modified: Wed, 08 Oct 2025 22:45:02 GMT  
+		Size: 293.6 KB (293620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de945550b6e0281576d36ee29836680eb7be33a023d7f97b38538c259a891be`  
-		Last Modified: Mon, 21 Jul 2025 19:01:04 GMT  
-		Size: 34.8 MB (34843664 bytes)  
+	-	`sha256:701a1e6c173075a0f689637a0dadba5e3d87a5418aa845453f859648c7d57360`  
+		Last Modified: Thu, 09 Oct 2025 00:23:59 GMT  
+		Size: 34.9 MB (34864434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c83bc0d47007ea42093efaaa218e6ed4a323b417b3d6f5acde070371d58f27b0
+$ docker pull haxe@sha256:cfb8ff045b72c704494e15af2465d43d81ea590e91b00ec13a7f18a84e228ade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.3 KB (16348 bytes)**  
+-	Total Size: **16.3 KB (16347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e1abe8465db59651a92dc911042dfbbf65f46a3b87004bbeac179fc72346f99`
+-	Image ID: `sha256:60cddbbc119515e80a9f8d7611602ba91d13615d081cf7a120e5cdaed24e2172`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bed69502e4ac5439b8cd807e53134af5c9ac5e08f3a1222f6099e1c9e46c6d96`  
-		Last Modified: Mon, 21 Jul 2025 21:23:58 GMT  
-		Size: 16.3 KB (16348 bytes)  
+	-	`sha256:508ec6b5c082d516472197931baca97c25a83224382d11074352ae03a4b86a41`  
+		Last Modified: Thu, 09 Oct 2025 00:23:51 GMT  
+		Size: 16.3 KB (16347 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1.5-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:225a6c3945716a7f1cfbcee5e022abadeddbb11a66cc329a1e7e7a38b2987ee0
+$ docker pull haxe@sha256:75e3f225b8bf112f4c9597ce7daea100fd0cd1198dee6d9a2e2a9984b8a2c427
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6324,19 +6324,19 @@ $ docker pull haxe@sha256:225a6c3945716a7f1cfbcee5e022abadeddbb11a66cc329a1e7e7a
 ### `haxe:4.1.5-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:882ed05b786fa791c86bd5f898f62cfab6fa80c3552d095f7b57a8e1232960ca
+$ docker pull haxe@sha256:bbb5f601acab2ce68f3f98f82caa60c2a22d2f675d94c819c8fdbf34048f6079
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.0 MB (37025808 bytes)**  
+-	Total Size: **37.1 MB (37057346 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65c1abae206b92a031e64073e2e7129f3541119d7f7059ba10495b276306cfc1`
+-	Image ID: `sha256:a787bd0b6a9b8aa6f8770a0b0ce490325d46ed60b50ccda7eb6a44ff4f314c66`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -6355,55 +6355,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f69cb93990186396007fa48222d8c8063d8936c4f21d88f7b886a70e72d2f524`  
-		Last Modified: Mon, 21 Jul 2025 17:21:10 GMT  
-		Size: 282.5 KB (282540 bytes)  
+	-	`sha256:05fe952d15ec5f43dd28be1d797f44afc4f77d422e481f4349414b74b9be59a8`  
+		Last Modified: Wed, 08 Oct 2025 23:12:04 GMT  
+		Size: 291.2 KB (291242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ed56c3b4bf346a786649c3b3f94e50b19b50269080c25c3209a42a568c63ce0`  
-		Last Modified: Mon, 21 Jul 2025 17:21:18 GMT  
-		Size: 33.3 MB (33327740 bytes)  
+	-	`sha256:9b69421484277f105c1754f40df00cee0af1fc050cae8f912bc5a3b2105a99b1`  
+		Last Modified: Wed, 08 Oct 2025 23:12:08 GMT  
+		Size: 33.3 MB (33346289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:de8a7f105bd55bda56972963fab243c32098a0dd2fabb33ecccae79f48354b94
+$ docker pull haxe@sha256:4268f0732b6ea96c29338df03d446388a0d94d4e41cbb3cde006d09c56771ca5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:769154be53146dac23629f1c8dc610e9f657e873ef491ffef3938af8e3b7740e`
+-	Image ID: `sha256:10e17a025200b54f9c900fa50ab5da51d9642de3951bedb04038dac90c882d4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6bfb3ac86fb409548f316c9d68ab7652786cc83623c257fc749b63f6866ff1fb`  
-		Last Modified: Mon, 21 Jul 2025 18:23:57 GMT  
+	-	`sha256:c29b651a4046c07d5e7254c87779a99f5efe6bbd1e53e92aa8b46a2779fa1376`  
+		Last Modified: Thu, 09 Oct 2025 00:23:53 GMT  
 		Size: 15.6 KB (15615 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1.5-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f7d1f841ed9140e087ae0706cbdda7a6ed7e498a104ffbfbdc4f509e98d6c684
+$ docker pull haxe@sha256:f6920da8adb1c3d2f42300fe6842f01fd6bf21ee05c83fee7c7ecc34a136f07b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.7 MB (37710133 bytes)**  
+-	Total Size: **37.7 MB (37744272 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fffec8af3ab4c92e8e9c00cdf621bbbe2b726bf5f8a0553c949181719643d5bd`
+-	Image ID: `sha256:1a052b51f877deaeb565bf24e254595e7fb9c121da3271f0b43e098481a55160`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -6422,43 +6422,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3e49c7889e9cc36b233e8314cc41018eb41de07954a8f94058c44b617d95711`  
-		Last Modified: Mon, 21 Jul 2025 19:04:56 GMT  
-		Size: 284.8 KB (284825 bytes)  
+	-	`sha256:f9a90d26839ed624e6df5d5bc6fc86c6fd3b7fe0e55e417a3c77f1eeaf12074c`  
+		Last Modified: Wed, 08 Oct 2025 21:58:02 GMT  
+		Size: 294.3 KB (294256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20d011b00bc39fabef116b3fbb71af119d2bb07e39b2a60f1e24db031c65b12e`  
-		Last Modified: Mon, 21 Jul 2025 19:04:59 GMT  
-		Size: 34.1 MB (34072205 bytes)  
+	-	`sha256:52d36f17e74fe91bd982ca46779ff9d23f3297d827a7c0023a3b647ca4bf30e2`  
+		Last Modified: Wed, 08 Oct 2025 21:58:06 GMT  
+		Size: 34.1 MB (34090715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:7479e4f45d27a17cc5efb3d545ca10db975f659ac3da8ba7b7f8afc0ecc12c74
+$ docker pull haxe@sha256:0d8431a28573ae5700a45989568045412da13285284796860973d4ca439665a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 KB (15709 bytes)**  
+-	Total Size: **15.7 KB (15710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c12bcada8392f1306624642dfe5a345be093e2a6a8345e19aed042fd53c81861`
+-	Image ID: `sha256:812ea075902083a3cb01b76b718398946435e51d52109631f55015f192139bdd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56a51c4aca4ebac92b921ff38039d15308d8206d6a51780b01bd9583372b9237`  
-		Last Modified: Mon, 21 Jul 2025 21:24:02 GMT  
-		Size: 15.7 KB (15709 bytes)  
+	-	`sha256:e997e7327b7c6f43b4d63d47e32712c9ed70ef25f488cc20dabe2a0b137b9da1`  
+		Last Modified: Thu, 09 Oct 2025 00:23:57 GMT  
+		Size: 15.7 KB (15710 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1.5-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d894350b268
+$ docker pull haxe@sha256:073a7330f79f999e3fe185f00d717a6bcf2853062ce34dcb0b0535f45fd98364
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6471,19 +6471,19 @@ $ docker pull haxe@sha256:a8a46f752ea3414e6193d9478c7bbd89c14be0d177e6c8c008f74d
 ### `haxe:4.1.5-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:68e4c8ca2f342d7492b9b1c56bc0119f550677dd3646694fdeb69957c244de4b
+$ docker pull haxe@sha256:3765ca063de6eaf0ca0c8f639316ed6a1d350b1d05a2956261bb30a3dcb0bcba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.0 MB (37982391 bytes)**  
+-	Total Size: **38.0 MB (38017442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a9c92ebf0f1e926061c95c0737ee10ddd2d6e9f90fa843b6d33d72df98ff5d`
+-	Image ID: `sha256:de900811d228da6d46de3951850289cbf1353c32d2fc9f48cd2279b217662359`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -6502,55 +6502,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cbd4a78e83f95c9122af455818881082cb3c5e37aa0802d9574ee453f1302f3`  
-		Last Modified: Mon, 21 Jul 2025 17:21:03 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:207613ff58529132f07afd3481f8d1282be57011b48fe4761f3fccea1a19a50f`  
+		Last Modified: Wed, 08 Oct 2025 23:08:05 GMT  
+		Size: 290.8 KB (290774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14f86cb6ea1bd040438d7f7a102d6a77c1d1db2786cd9289328bf43b05bb375c`  
-		Last Modified: Mon, 21 Jul 2025 17:21:06 GMT  
-		Size: 34.1 MB (34079857 bytes)  
+	-	`sha256:f2cf896702fc25637297da43f42dab6b56f218e92d72677bf101faa6725ba3a4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:42 GMT  
+		Size: 34.1 MB (34099612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:de67ca0707f24a9fd6fb3e48773bd21dc517463ddf0c386cac8f627424151517
+$ docker pull haxe@sha256:353504d61db0b478922c98bb2d91ceaf71b7434a7f5549a6a909a425fb36d6e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c8b6a6d4763cd1a8ad8cc113175ef139a03175e7aeba07d2a119f52d69d6a79`
+-	Image ID: `sha256:da523dfafe6f532a1dcb4c3ebd820482c629f164bedb120779febb4cdc228022`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:211a810d9d1d6513b1b4c20b82783920708333f7cd1ec072966d93529954ec63`  
-		Last Modified: Mon, 21 Jul 2025 18:23:51 GMT  
+	-	`sha256:a72f256e8c2799aee5a16ca293590fe77d7e2ebfa7a0a7cc0d501bfb5b3300f4`  
+		Last Modified: Thu, 09 Oct 2025 00:23:47 GMT  
 		Size: 16.2 KB (16229 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1.5-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4c57a5574d05a0533a0b24656c0fffd46a480ab65a14b8b7d9547de37f278230
+$ docker pull haxe@sha256:0e758251ce7830c8a6acffe7e776c659b4bc8f195c4e7520056bc935a07a28a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39216387 bytes)**  
+-	Total Size: **39.2 MB (39247431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abc443f4a434b71cfc254df9d19f0d2bcf83e89c6742db2d318e82bec75d1ad8`
+-	Image ID: `sha256:383d04955fcef76587ff07caac579c52b45a3e19d6f2c68d0efc0b04c007ceb1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -6569,37 +6569,37 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40b6cf0930a99a00da4d05a7870d816a46a9ab68b255d35c6063964361e9e6dd`  
-		Last Modified: Mon, 21 Jul 2025 19:00:54 GMT  
-		Size: 284.4 KB (284355 bytes)  
+	-	`sha256:a6d745dec58825419feba59eb6d0195b15bec899fb0ab0a17cbb9272d9b5ba47`  
+		Last Modified: Wed, 08 Oct 2025 22:45:02 GMT  
+		Size: 293.6 KB (293620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de945550b6e0281576d36ee29836680eb7be33a023d7f97b38538c259a891be`  
-		Last Modified: Mon, 21 Jul 2025 19:01:04 GMT  
-		Size: 34.8 MB (34843664 bytes)  
+	-	`sha256:701a1e6c173075a0f689637a0dadba5e3d87a5418aa845453f859648c7d57360`  
+		Last Modified: Thu, 09 Oct 2025 00:23:59 GMT  
+		Size: 34.9 MB (34864434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c83bc0d47007ea42093efaaa218e6ed4a323b417b3d6f5acde070371d58f27b0
+$ docker pull haxe@sha256:cfb8ff045b72c704494e15af2465d43d81ea590e91b00ec13a7f18a84e228ade
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.3 KB (16348 bytes)**  
+-	Total Size: **16.3 KB (16347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e1abe8465db59651a92dc911042dfbbf65f46a3b87004bbeac179fc72346f99`
+-	Image ID: `sha256:60cddbbc119515e80a9f8d7611602ba91d13615d081cf7a120e5cdaed24e2172`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bed69502e4ac5439b8cd807e53134af5c9ac5e08f3a1222f6099e1c9e46c6d96`  
-		Last Modified: Mon, 21 Jul 2025 21:23:58 GMT  
-		Size: 16.3 KB (16348 bytes)  
+	-	`sha256:508ec6b5c082d516472197931baca97c25a83224382d11074352ae03a4b86a41`  
+		Last Modified: Thu, 09 Oct 2025 00:23:51 GMT  
+		Size: 16.3 KB (16347 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1.5-bullseye`
@@ -8000,7 +8000,7 @@ CMD ["haxe"]
 ## `haxe:4.2-alpine`
 
 ```console
-$ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8be341d7e32
+$ docker pull haxe@sha256:23594208679b7bd4200c2fb4362dce8285969128f53ab62d99433a0e119416f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8013,19 +8013,19 @@ $ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8
 ### `haxe:4.2-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a445b3fd69dd166fb7ddbf9829d761caf3a47a970e4e535513ec422491b39c2d
+$ docker pull haxe@sha256:c47298fa9025805fb7ccebeadc88a47fa1cea8049e9473205b4f680d2886b5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.6 MB (38627569 bytes)**  
+-	Total Size: **38.7 MB (38652017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd5558603b1b16f856f589dd2cb28cda8c68588a663086c59c824e04ebdbd14f`
+-	Image ID: `sha256:ec1b5fcd0323836f7fec9be65412997ee8c52ea0c805b5778aabdb072648bdd6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -8044,55 +8044,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c313493235bc18a05a166473463f386df4d23db46b6c0ef27aefb71e2f9bba8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:e9453fcf0d7590019be5e9332f83464eaa6a552cf253884b7ce3d036a0958fa4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:06 GMT  
+		Size: 290.8 KB (290776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bee553e97233f674d61974b33b9bccd71fbc5a4513aa452accdc590f43cf57b2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:29 GMT  
-		Size: 34.7 MB (34725035 bytes)  
+	-	`sha256:6dfb452ab6a774835af974284f7e58f8c6ea9f0c7ca041f8d8dab689ea6ac2c9`  
+		Last Modified: Wed, 08 Oct 2025 23:11:12 GMT  
+		Size: 34.7 MB (34734185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9dded98626efbf32df77e08676a31d7c5125c8b151aec5d45b8ccff6b476f682
+$ docker pull haxe@sha256:e399ec35d64c7b3afc169d02b563ebfee3a8c0a587a6adc9bfb737bbf9742570
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:972cf8ef10adb5bfddfaf91912010cbea6053954cc94216bfd3ddc5987085ccb`
+-	Image ID: `sha256:7e24d4c9d8812c3ed1774ce6f162c020f591d7fea8af266323992511541e7741`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47d9c7b28d0656abd212710318f2614de99c28c06a1c7a929eee37e06b251655`  
-		Last Modified: Mon, 21 Jul 2025 18:24:24 GMT  
+	-	`sha256:34193d538fd7281ba14b0b714eec759bd1b0c83b010052dc07d3fb6356624189`  
+		Last Modified: Thu, 09 Oct 2025 00:24:13 GMT  
 		Size: 16.2 KB (16243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:7a1f23f329947d3d6c7ff33d983cbf8f22dd9748bc01c96ca6d7b5c76eb32c88
+$ docker pull haxe@sha256:5e6d346f547f121b784d70645db2b9bc61a2f4af7485a7d0d8ae68a307e3ea4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40841100 bytes)**  
+-	Total Size: **40.9 MB (40855436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5bb93e508a7e36d9435878dcb20a36740e61e2ad3e1dcaf7346cd40f304a2e9`
+-	Image ID: `sha256:c0f457052d2367b62a203d3a8ab81fb8fdcc6197cbb7aeab51eed85a5b2beea3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -8111,43 +8111,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba5c54efc0f8a5d9e5087020854db530dfa9e1b38c8cbb08c697ac72583dbff9`  
-		Last Modified: Mon, 21 Jul 2025 18:47:04 GMT  
-		Size: 284.4 KB (284357 bytes)  
+	-	`sha256:e29656a39201254cc74e52d3678634d95518c483ed7bd94941a685eab6d9d5a6`  
+		Last Modified: Wed, 08 Oct 2025 21:56:07 GMT  
+		Size: 293.6 KB (293621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe0d5b519398ae88981c2eb01e7534980b9200ef7c94a2c4a6eebd302a00b43`  
-		Last Modified: Mon, 21 Jul 2025 18:47:08 GMT  
-		Size: 36.5 MB (36468375 bytes)  
+	-	`sha256:144f5b6ced308e4612ab0202d1c32eb1cccb4173312033d6ecb227ac94ff18c3`  
+		Last Modified: Wed, 08 Oct 2025 21:56:12 GMT  
+		Size: 36.5 MB (36472438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d36735f768fad09745f084b68a6c9f4e7a3010aa105b5fad14c711c1411b0fb3
+$ docker pull haxe@sha256:ec01ba319803f5b6b52843fda9d68a8a81d1f3336b90315aaf455e224c2ed162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 KB (16362 bytes)**  
+-	Total Size: **16.4 KB (16361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c34cf85cd3818d809017cbf61d0e8ef42d0406014f2b4867ac93adad9e77d6f9`
+-	Image ID: `sha256:2273e92c809b451ac841947d7551a75713efb61cc4c9b9c325cbae603874c76c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d84e8ba5ae22a76a2b72cea7f4e1a43e52e52db447621da742cc5972ad83e418`  
-		Last Modified: Mon, 21 Jul 2025 21:24:21 GMT  
-		Size: 16.4 KB (16362 bytes)  
+	-	`sha256:941f12f21799234e8b086e11a8517cae9767220098b853691874e5be676e8a28`  
+		Last Modified: Thu, 09 Oct 2025 00:24:16 GMT  
+		Size: 16.4 KB (16361 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:1b00663ea2e8f606f321e1569bf9066c43a21eed5ac341ef3c8e195c87652361
+$ docker pull haxe@sha256:003ec92cd231218f338c988419c721a74e1f772b53489bce9d5d01729f4d6792
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8160,19 +8160,19 @@ $ docker pull haxe@sha256:1b00663ea2e8f606f321e1569bf9066c43a21eed5ac341ef3c8e19
 ### `haxe:4.2-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:cfd8969293a361ba3e952f62e4330fa279dce91657f15ec404854ffb73f8a403
+$ docker pull haxe@sha256:5ef3e2f848a2596e077a745e940724162daeb93c4a6fc64ae7936409f02b909a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.7 MB (37665262 bytes)**  
+-	Total Size: **37.7 MB (37684376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:880d485aafe35166692e61768bebfa597040b542618819f0c0ef7f2142d4b619`
+-	Image ID: `sha256:c7880277ae51fe316f02782c912806ae089ab6eeee10d3033995c60b66deec2a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -8191,55 +8191,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0fc94c9c3753c863991d02745a8ba301194a53d954e4a9217e25a7481229e6f`  
-		Last Modified: Mon, 21 Jul 2025 17:21:29 GMT  
-		Size: 282.5 KB (282526 bytes)  
+	-	`sha256:6c85a3ef14612cdc7d412c80930eae717023a0623d9262a0d287dc22756a8524`  
+		Last Modified: Wed, 08 Oct 2025 23:11:05 GMT  
+		Size: 291.2 KB (291242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a75b94933c6126c1f3c2bcb952476798444c190c356b9b96f813ab0c56b419c2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:31 GMT  
-		Size: 34.0 MB (33967208 bytes)  
+	-	`sha256:7c3f9a18c64e31713c9e933a8f5d0e36dbc3e3bfc6cb283b3744c8eea0479809`  
+		Last Modified: Wed, 08 Oct 2025 23:11:08 GMT  
+		Size: 34.0 MB (33973319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8d641eed2c8355611337b1f771044946e71e3f7a006378e6dca339c38eb6ebc0
+$ docker pull haxe@sha256:07fa861d60c987687c79f73b1461686c150290de4464b9722b907837fdd3bef1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:556fe90defa36657e1ddd11abe8e95f43cf67adc2e3cf29365974177db4095c2`
+-	Image ID: `sha256:dd648f25896c939a9acb8a78881575a85e3bae2c6c9e2f5fb509ae31300c3ee5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b14d3c15d9a2c618ceb0fd8ef4ae5492f61d9dfff95d79a77bc07f509ddf8a51`  
-		Last Modified: Mon, 21 Jul 2025 18:24:28 GMT  
+	-	`sha256:4c3266b434beb8e447cfea69d0615c383cd52a8d71dbacc3ae0a5d7684ead0c1`  
+		Last Modified: Thu, 09 Oct 2025 00:24:18 GMT  
 		Size: 15.6 KB (15629 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:d7f87ded36a2fd3b2e99045a3cb3d9d178d2126b76838c295d5717a586c6ab8b
+$ docker pull haxe@sha256:7d0063786ad9aa0a829215ad6167c3d8489cd3e46b7865eafc83bc5495bb13dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39331090 bytes)**  
+-	Total Size: **39.4 MB (39352406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4730669f3afaf7ba3b910971de89319cccd750aa09ae1d77821fde280fbd88dd`
+-	Image ID: `sha256:c0b057764b85b1eff3d5fbfce7fe0a5f2f524c2c0ff483f66d8381743bbe56cf`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -8258,43 +8258,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:197d2195b9272d659ee9654610fd1d8499cc53da3a55d617a97268931ab1e7b5`  
-		Last Modified: Mon, 21 Jul 2025 18:51:11 GMT  
-		Size: 284.8 KB (284821 bytes)  
+	-	`sha256:5b502afc8ff3c917afa41b5a5bdde9f87c94c45bc03e23a5650187089c5706fb`  
+		Last Modified: Wed, 08 Oct 2025 21:56:30 GMT  
+		Size: 294.3 KB (294255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21e700e38adb00c00a74d84cf2473049acc592cf6897f50cca2d8f5f4c6af27a`  
-		Last Modified: Mon, 21 Jul 2025 18:51:14 GMT  
-		Size: 35.7 MB (35693166 bytes)  
+	-	`sha256:5a6ab5584f0667928a39d30c89b9472838c05ce8450bbd87820694cd5b5ad86f`  
+		Last Modified: Wed, 08 Oct 2025 21:56:32 GMT  
+		Size: 35.7 MB (35698850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:b197913921bbb8dcf4e32744f34e6a5dad5b695df8e4e867cf54749faf1fc237
+$ docker pull haxe@sha256:48fb94a023a64459394cf73cbf8b2ae504e1c7a2e98b7db3d9d3da708cbf3667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cad84d120a7162613e6301ef8b87e3ae9a36d074c5aa0ad59caeb4adfa20bb0`
+-	Image ID: `sha256:d25bf96b4f588ce72f8490075648edf8f80851505a03d13f135dadadcf888457`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f5c2301fcf06656d44f58e87c0bc0fc3f2ab58e29c2e5b157c9a39da84925a1f`  
-		Last Modified: Mon, 21 Jul 2025 21:24:25 GMT  
+	-	`sha256:216142613853640add4f993930059f9cef9522d3d536ad90f59d20cced11dc6a`  
+		Last Modified: Thu, 09 Oct 2025 00:24:22 GMT  
 		Size: 15.7 KB (15724 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8be341d7e32
+$ docker pull haxe@sha256:23594208679b7bd4200c2fb4362dce8285969128f53ab62d99433a0e119416f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8307,19 +8307,19 @@ $ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8
 ### `haxe:4.2-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a445b3fd69dd166fb7ddbf9829d761caf3a47a970e4e535513ec422491b39c2d
+$ docker pull haxe@sha256:c47298fa9025805fb7ccebeadc88a47fa1cea8049e9473205b4f680d2886b5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.6 MB (38627569 bytes)**  
+-	Total Size: **38.7 MB (38652017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd5558603b1b16f856f589dd2cb28cda8c68588a663086c59c824e04ebdbd14f`
+-	Image ID: `sha256:ec1b5fcd0323836f7fec9be65412997ee8c52ea0c805b5778aabdb072648bdd6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -8338,55 +8338,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c313493235bc18a05a166473463f386df4d23db46b6c0ef27aefb71e2f9bba8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:e9453fcf0d7590019be5e9332f83464eaa6a552cf253884b7ce3d036a0958fa4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:06 GMT  
+		Size: 290.8 KB (290776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bee553e97233f674d61974b33b9bccd71fbc5a4513aa452accdc590f43cf57b2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:29 GMT  
-		Size: 34.7 MB (34725035 bytes)  
+	-	`sha256:6dfb452ab6a774835af974284f7e58f8c6ea9f0c7ca041f8d8dab689ea6ac2c9`  
+		Last Modified: Wed, 08 Oct 2025 23:11:12 GMT  
+		Size: 34.7 MB (34734185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9dded98626efbf32df77e08676a31d7c5125c8b151aec5d45b8ccff6b476f682
+$ docker pull haxe@sha256:e399ec35d64c7b3afc169d02b563ebfee3a8c0a587a6adc9bfb737bbf9742570
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:972cf8ef10adb5bfddfaf91912010cbea6053954cc94216bfd3ddc5987085ccb`
+-	Image ID: `sha256:7e24d4c9d8812c3ed1774ce6f162c020f591d7fea8af266323992511541e7741`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47d9c7b28d0656abd212710318f2614de99c28c06a1c7a929eee37e06b251655`  
-		Last Modified: Mon, 21 Jul 2025 18:24:24 GMT  
+	-	`sha256:34193d538fd7281ba14b0b714eec759bd1b0c83b010052dc07d3fb6356624189`  
+		Last Modified: Thu, 09 Oct 2025 00:24:13 GMT  
 		Size: 16.2 KB (16243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:7a1f23f329947d3d6c7ff33d983cbf8f22dd9748bc01c96ca6d7b5c76eb32c88
+$ docker pull haxe@sha256:5e6d346f547f121b784d70645db2b9bc61a2f4af7485a7d0d8ae68a307e3ea4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40841100 bytes)**  
+-	Total Size: **40.9 MB (40855436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5bb93e508a7e36d9435878dcb20a36740e61e2ad3e1dcaf7346cd40f304a2e9`
+-	Image ID: `sha256:c0f457052d2367b62a203d3a8ab81fb8fdcc6197cbb7aeab51eed85a5b2beea3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -8405,37 +8405,37 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba5c54efc0f8a5d9e5087020854db530dfa9e1b38c8cbb08c697ac72583dbff9`  
-		Last Modified: Mon, 21 Jul 2025 18:47:04 GMT  
-		Size: 284.4 KB (284357 bytes)  
+	-	`sha256:e29656a39201254cc74e52d3678634d95518c483ed7bd94941a685eab6d9d5a6`  
+		Last Modified: Wed, 08 Oct 2025 21:56:07 GMT  
+		Size: 293.6 KB (293621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe0d5b519398ae88981c2eb01e7534980b9200ef7c94a2c4a6eebd302a00b43`  
-		Last Modified: Mon, 21 Jul 2025 18:47:08 GMT  
-		Size: 36.5 MB (36468375 bytes)  
+	-	`sha256:144f5b6ced308e4612ab0202d1c32eb1cccb4173312033d6ecb227ac94ff18c3`  
+		Last Modified: Wed, 08 Oct 2025 21:56:12 GMT  
+		Size: 36.5 MB (36472438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d36735f768fad09745f084b68a6c9f4e7a3010aa105b5fad14c711c1411b0fb3
+$ docker pull haxe@sha256:ec01ba319803f5b6b52843fda9d68a8a81d1f3336b90315aaf455e224c2ed162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 KB (16362 bytes)**  
+-	Total Size: **16.4 KB (16361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c34cf85cd3818d809017cbf61d0e8ef42d0406014f2b4867ac93adad9e77d6f9`
+-	Image ID: `sha256:2273e92c809b451ac841947d7551a75713efb61cc4c9b9c325cbae603874c76c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d84e8ba5ae22a76a2b72cea7f4e1a43e52e52db447621da742cc5972ad83e418`  
-		Last Modified: Mon, 21 Jul 2025 21:24:21 GMT  
-		Size: 16.4 KB (16362 bytes)  
+	-	`sha256:941f12f21799234e8b086e11a8517cae9767220098b853691874e5be676e8a28`  
+		Last Modified: Thu, 09 Oct 2025 00:24:16 GMT  
+		Size: 16.4 KB (16361 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2-bookworm`
@@ -10100,7 +10100,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5-alpine`
 
 ```console
-$ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8be341d7e32
+$ docker pull haxe@sha256:23594208679b7bd4200c2fb4362dce8285969128f53ab62d99433a0e119416f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10113,19 +10113,19 @@ $ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8
 ### `haxe:4.2.5-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a445b3fd69dd166fb7ddbf9829d761caf3a47a970e4e535513ec422491b39c2d
+$ docker pull haxe@sha256:c47298fa9025805fb7ccebeadc88a47fa1cea8049e9473205b4f680d2886b5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.6 MB (38627569 bytes)**  
+-	Total Size: **38.7 MB (38652017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd5558603b1b16f856f589dd2cb28cda8c68588a663086c59c824e04ebdbd14f`
+-	Image ID: `sha256:ec1b5fcd0323836f7fec9be65412997ee8c52ea0c805b5778aabdb072648bdd6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -10144,55 +10144,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c313493235bc18a05a166473463f386df4d23db46b6c0ef27aefb71e2f9bba8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:e9453fcf0d7590019be5e9332f83464eaa6a552cf253884b7ce3d036a0958fa4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:06 GMT  
+		Size: 290.8 KB (290776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bee553e97233f674d61974b33b9bccd71fbc5a4513aa452accdc590f43cf57b2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:29 GMT  
-		Size: 34.7 MB (34725035 bytes)  
+	-	`sha256:6dfb452ab6a774835af974284f7e58f8c6ea9f0c7ca041f8d8dab689ea6ac2c9`  
+		Last Modified: Wed, 08 Oct 2025 23:11:12 GMT  
+		Size: 34.7 MB (34734185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9dded98626efbf32df77e08676a31d7c5125c8b151aec5d45b8ccff6b476f682
+$ docker pull haxe@sha256:e399ec35d64c7b3afc169d02b563ebfee3a8c0a587a6adc9bfb737bbf9742570
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:972cf8ef10adb5bfddfaf91912010cbea6053954cc94216bfd3ddc5987085ccb`
+-	Image ID: `sha256:7e24d4c9d8812c3ed1774ce6f162c020f591d7fea8af266323992511541e7741`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47d9c7b28d0656abd212710318f2614de99c28c06a1c7a929eee37e06b251655`  
-		Last Modified: Mon, 21 Jul 2025 18:24:24 GMT  
+	-	`sha256:34193d538fd7281ba14b0b714eec759bd1b0c83b010052dc07d3fb6356624189`  
+		Last Modified: Thu, 09 Oct 2025 00:24:13 GMT  
 		Size: 16.2 KB (16243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2.5-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:7a1f23f329947d3d6c7ff33d983cbf8f22dd9748bc01c96ca6d7b5c76eb32c88
+$ docker pull haxe@sha256:5e6d346f547f121b784d70645db2b9bc61a2f4af7485a7d0d8ae68a307e3ea4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40841100 bytes)**  
+-	Total Size: **40.9 MB (40855436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5bb93e508a7e36d9435878dcb20a36740e61e2ad3e1dcaf7346cd40f304a2e9`
+-	Image ID: `sha256:c0f457052d2367b62a203d3a8ab81fb8fdcc6197cbb7aeab51eed85a5b2beea3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -10211,43 +10211,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba5c54efc0f8a5d9e5087020854db530dfa9e1b38c8cbb08c697ac72583dbff9`  
-		Last Modified: Mon, 21 Jul 2025 18:47:04 GMT  
-		Size: 284.4 KB (284357 bytes)  
+	-	`sha256:e29656a39201254cc74e52d3678634d95518c483ed7bd94941a685eab6d9d5a6`  
+		Last Modified: Wed, 08 Oct 2025 21:56:07 GMT  
+		Size: 293.6 KB (293621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe0d5b519398ae88981c2eb01e7534980b9200ef7c94a2c4a6eebd302a00b43`  
-		Last Modified: Mon, 21 Jul 2025 18:47:08 GMT  
-		Size: 36.5 MB (36468375 bytes)  
+	-	`sha256:144f5b6ced308e4612ab0202d1c32eb1cccb4173312033d6ecb227ac94ff18c3`  
+		Last Modified: Wed, 08 Oct 2025 21:56:12 GMT  
+		Size: 36.5 MB (36472438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d36735f768fad09745f084b68a6c9f4e7a3010aa105b5fad14c711c1411b0fb3
+$ docker pull haxe@sha256:ec01ba319803f5b6b52843fda9d68a8a81d1f3336b90315aaf455e224c2ed162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 KB (16362 bytes)**  
+-	Total Size: **16.4 KB (16361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c34cf85cd3818d809017cbf61d0e8ef42d0406014f2b4867ac93adad9e77d6f9`
+-	Image ID: `sha256:2273e92c809b451ac841947d7551a75713efb61cc4c9b9c325cbae603874c76c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d84e8ba5ae22a76a2b72cea7f4e1a43e52e52db447621da742cc5972ad83e418`  
-		Last Modified: Mon, 21 Jul 2025 21:24:21 GMT  
-		Size: 16.4 KB (16362 bytes)  
+	-	`sha256:941f12f21799234e8b086e11a8517cae9767220098b853691874e5be676e8a28`  
+		Last Modified: Thu, 09 Oct 2025 00:24:16 GMT  
+		Size: 16.4 KB (16361 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2.5-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:1b00663ea2e8f606f321e1569bf9066c43a21eed5ac341ef3c8e195c87652361
+$ docker pull haxe@sha256:003ec92cd231218f338c988419c721a74e1f772b53489bce9d5d01729f4d6792
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10260,19 +10260,19 @@ $ docker pull haxe@sha256:1b00663ea2e8f606f321e1569bf9066c43a21eed5ac341ef3c8e19
 ### `haxe:4.2.5-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:cfd8969293a361ba3e952f62e4330fa279dce91657f15ec404854ffb73f8a403
+$ docker pull haxe@sha256:5ef3e2f848a2596e077a745e940724162daeb93c4a6fc64ae7936409f02b909a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.7 MB (37665262 bytes)**  
+-	Total Size: **37.7 MB (37684376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:880d485aafe35166692e61768bebfa597040b542618819f0c0ef7f2142d4b619`
+-	Image ID: `sha256:c7880277ae51fe316f02782c912806ae089ab6eeee10d3033995c60b66deec2a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -10291,55 +10291,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0fc94c9c3753c863991d02745a8ba301194a53d954e4a9217e25a7481229e6f`  
-		Last Modified: Mon, 21 Jul 2025 17:21:29 GMT  
-		Size: 282.5 KB (282526 bytes)  
+	-	`sha256:6c85a3ef14612cdc7d412c80930eae717023a0623d9262a0d287dc22756a8524`  
+		Last Modified: Wed, 08 Oct 2025 23:11:05 GMT  
+		Size: 291.2 KB (291242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a75b94933c6126c1f3c2bcb952476798444c190c356b9b96f813ab0c56b419c2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:31 GMT  
-		Size: 34.0 MB (33967208 bytes)  
+	-	`sha256:7c3f9a18c64e31713c9e933a8f5d0e36dbc3e3bfc6cb283b3744c8eea0479809`  
+		Last Modified: Wed, 08 Oct 2025 23:11:08 GMT  
+		Size: 34.0 MB (33973319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8d641eed2c8355611337b1f771044946e71e3f7a006378e6dca339c38eb6ebc0
+$ docker pull haxe@sha256:07fa861d60c987687c79f73b1461686c150290de4464b9722b907837fdd3bef1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:556fe90defa36657e1ddd11abe8e95f43cf67adc2e3cf29365974177db4095c2`
+-	Image ID: `sha256:dd648f25896c939a9acb8a78881575a85e3bae2c6c9e2f5fb509ae31300c3ee5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b14d3c15d9a2c618ceb0fd8ef4ae5492f61d9dfff95d79a77bc07f509ddf8a51`  
-		Last Modified: Mon, 21 Jul 2025 18:24:28 GMT  
+	-	`sha256:4c3266b434beb8e447cfea69d0615c383cd52a8d71dbacc3ae0a5d7684ead0c1`  
+		Last Modified: Thu, 09 Oct 2025 00:24:18 GMT  
 		Size: 15.6 KB (15629 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2.5-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:d7f87ded36a2fd3b2e99045a3cb3d9d178d2126b76838c295d5717a586c6ab8b
+$ docker pull haxe@sha256:7d0063786ad9aa0a829215ad6167c3d8489cd3e46b7865eafc83bc5495bb13dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39331090 bytes)**  
+-	Total Size: **39.4 MB (39352406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4730669f3afaf7ba3b910971de89319cccd750aa09ae1d77821fde280fbd88dd`
+-	Image ID: `sha256:c0b057764b85b1eff3d5fbfce7fe0a5f2f524c2c0ff483f66d8381743bbe56cf`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -10358,43 +10358,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:197d2195b9272d659ee9654610fd1d8499cc53da3a55d617a97268931ab1e7b5`  
-		Last Modified: Mon, 21 Jul 2025 18:51:11 GMT  
-		Size: 284.8 KB (284821 bytes)  
+	-	`sha256:5b502afc8ff3c917afa41b5a5bdde9f87c94c45bc03e23a5650187089c5706fb`  
+		Last Modified: Wed, 08 Oct 2025 21:56:30 GMT  
+		Size: 294.3 KB (294255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21e700e38adb00c00a74d84cf2473049acc592cf6897f50cca2d8f5f4c6af27a`  
-		Last Modified: Mon, 21 Jul 2025 18:51:14 GMT  
-		Size: 35.7 MB (35693166 bytes)  
+	-	`sha256:5a6ab5584f0667928a39d30c89b9472838c05ce8450bbd87820694cd5b5ad86f`  
+		Last Modified: Wed, 08 Oct 2025 21:56:32 GMT  
+		Size: 35.7 MB (35698850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:b197913921bbb8dcf4e32744f34e6a5dad5b695df8e4e867cf54749faf1fc237
+$ docker pull haxe@sha256:48fb94a023a64459394cf73cbf8b2ae504e1c7a2e98b7db3d9d3da708cbf3667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cad84d120a7162613e6301ef8b87e3ae9a36d074c5aa0ad59caeb4adfa20bb0`
+-	Image ID: `sha256:d25bf96b4f588ce72f8490075648edf8f80851505a03d13f135dadadcf888457`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f5c2301fcf06656d44f58e87c0bc0fc3f2ab58e29c2e5b157c9a39da84925a1f`  
-		Last Modified: Mon, 21 Jul 2025 21:24:25 GMT  
+	-	`sha256:216142613853640add4f993930059f9cef9522d3d536ad90f59d20cced11dc6a`  
+		Last Modified: Thu, 09 Oct 2025 00:24:22 GMT  
 		Size: 15.7 KB (15724 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2.5-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8be341d7e32
+$ docker pull haxe@sha256:23594208679b7bd4200c2fb4362dce8285969128f53ab62d99433a0e119416f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10407,19 +10407,19 @@ $ docker pull haxe@sha256:fbb9b57e1d400a702ef7e6602808eb0c2a7604976e062462112fd8
 ### `haxe:4.2.5-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a445b3fd69dd166fb7ddbf9829d761caf3a47a970e4e535513ec422491b39c2d
+$ docker pull haxe@sha256:c47298fa9025805fb7ccebeadc88a47fa1cea8049e9473205b4f680d2886b5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.6 MB (38627569 bytes)**  
+-	Total Size: **38.7 MB (38652017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd5558603b1b16f856f589dd2cb28cda8c68588a663086c59c824e04ebdbd14f`
+-	Image ID: `sha256:ec1b5fcd0323836f7fec9be65412997ee8c52ea0c805b5778aabdb072648bdd6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -10438,55 +10438,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c313493235bc18a05a166473463f386df4d23db46b6c0ef27aefb71e2f9bba8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.1 KB (282057 bytes)  
+	-	`sha256:e9453fcf0d7590019be5e9332f83464eaa6a552cf253884b7ce3d036a0958fa4`  
+		Last Modified: Wed, 08 Oct 2025 23:11:06 GMT  
+		Size: 290.8 KB (290776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bee553e97233f674d61974b33b9bccd71fbc5a4513aa452accdc590f43cf57b2`  
-		Last Modified: Mon, 21 Jul 2025 17:21:29 GMT  
-		Size: 34.7 MB (34725035 bytes)  
+	-	`sha256:6dfb452ab6a774835af974284f7e58f8c6ea9f0c7ca041f8d8dab689ea6ac2c9`  
+		Last Modified: Wed, 08 Oct 2025 23:11:12 GMT  
+		Size: 34.7 MB (34734185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9dded98626efbf32df77e08676a31d7c5125c8b151aec5d45b8ccff6b476f682
+$ docker pull haxe@sha256:e399ec35d64c7b3afc169d02b563ebfee3a8c0a587a6adc9bfb737bbf9742570
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 KB (16243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:972cf8ef10adb5bfddfaf91912010cbea6053954cc94216bfd3ddc5987085ccb`
+-	Image ID: `sha256:7e24d4c9d8812c3ed1774ce6f162c020f591d7fea8af266323992511541e7741`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47d9c7b28d0656abd212710318f2614de99c28c06a1c7a929eee37e06b251655`  
-		Last Modified: Mon, 21 Jul 2025 18:24:24 GMT  
+	-	`sha256:34193d538fd7281ba14b0b714eec759bd1b0c83b010052dc07d3fb6356624189`  
+		Last Modified: Thu, 09 Oct 2025 00:24:13 GMT  
 		Size: 16.2 KB (16243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2.5-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:7a1f23f329947d3d6c7ff33d983cbf8f22dd9748bc01c96ca6d7b5c76eb32c88
+$ docker pull haxe@sha256:5e6d346f547f121b784d70645db2b9bc61a2f4af7485a7d0d8ae68a307e3ea4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40841100 bytes)**  
+-	Total Size: **40.9 MB (40855436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5bb93e508a7e36d9435878dcb20a36740e61e2ad3e1dcaf7346cd40f304a2e9`
+-	Image ID: `sha256:c0f457052d2367b62a203d3a8ab81fb8fdcc6197cbb7aeab51eed85a5b2beea3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -10505,37 +10505,37 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba5c54efc0f8a5d9e5087020854db530dfa9e1b38c8cbb08c697ac72583dbff9`  
-		Last Modified: Mon, 21 Jul 2025 18:47:04 GMT  
-		Size: 284.4 KB (284357 bytes)  
+	-	`sha256:e29656a39201254cc74e52d3678634d95518c483ed7bd94941a685eab6d9d5a6`  
+		Last Modified: Wed, 08 Oct 2025 21:56:07 GMT  
+		Size: 293.6 KB (293621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffe0d5b519398ae88981c2eb01e7534980b9200ef7c94a2c4a6eebd302a00b43`  
-		Last Modified: Mon, 21 Jul 2025 18:47:08 GMT  
-		Size: 36.5 MB (36468375 bytes)  
+	-	`sha256:144f5b6ced308e4612ab0202d1c32eb1cccb4173312033d6ecb227ac94ff18c3`  
+		Last Modified: Wed, 08 Oct 2025 21:56:12 GMT  
+		Size: 36.5 MB (36472438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d36735f768fad09745f084b68a6c9f4e7a3010aa105b5fad14c711c1411b0fb3
+$ docker pull haxe@sha256:ec01ba319803f5b6b52843fda9d68a8a81d1f3336b90315aaf455e224c2ed162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 KB (16362 bytes)**  
+-	Total Size: **16.4 KB (16361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c34cf85cd3818d809017cbf61d0e8ef42d0406014f2b4867ac93adad9e77d6f9`
+-	Image ID: `sha256:2273e92c809b451ac841947d7551a75713efb61cc4c9b9c325cbae603874c76c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d84e8ba5ae22a76a2b72cea7f4e1a43e52e52db447621da742cc5972ad83e418`  
-		Last Modified: Mon, 21 Jul 2025 21:24:21 GMT  
-		Size: 16.4 KB (16362 bytes)  
+	-	`sha256:941f12f21799234e8b086e11a8517cae9767220098b853691874e5be676e8a28`  
+		Last Modified: Thu, 09 Oct 2025 00:24:16 GMT  
+		Size: 16.4 KB (16361 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2.5-bookworm`
@@ -12200,7 +12200,7 @@ CMD ["haxe"]
 ## `haxe:4.3-alpine`
 
 ```console
-$ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355f3162147ba
+$ docker pull haxe@sha256:0b76c88bd673aa78de2f996b8ea30a490d3865031f6df9af7ce09c039c7213b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12213,19 +12213,19 @@ $ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355
 ### `haxe:4.3-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a49f70ea7994c0d691a6b6e3e82e2495af2a3c438ba9c28e85ab84ef5f4a12fb
+$ docker pull haxe@sha256:c95f2531f703fa8d7af7c8444fd5bec9319240d88c96a3282e108227a185b5fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.7 MB (39733330 bytes)**  
+-	Total Size: **39.8 MB (39815893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47522217dbf0985253eaaf50c7e5b45207e22d7fb65387feeda179b3f6d8e5d3`
+-	Image ID: `sha256:72ed19747430f2c57d2899df9900d8735f3b3d5f3f54199d02206c007603f213`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12244,55 +12244,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:275f9fe89a62e6b6159af03f5712866b9b9d3ec61ba51b190c07c27c4f27c91f`  
+		Last Modified: Wed, 08 Oct 2025 23:07:19 GMT  
+		Size: 291.2 KB (291157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0607e8afe9fdcc5611c2f61c29fef1f6ac15d80f8c3de4c190f5edc096bd4fec`  
-		Last Modified: Mon, 21 Jul 2025 18:25:27 GMT  
-		Size: 35.7 MB (35651196 bytes)  
+	-	`sha256:decade1bb7443f91565c76cb4c716be61ad7e93f1f3e2c0b38b1b4e5febed911`  
+		Last Modified: Wed, 08 Oct 2025 23:07:14 GMT  
+		Size: 35.7 MB (35722284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:fc4765c95acef7f060d4c4adc0c4f7cd1cb99750e2a0442d2bb792e2607c4493
+$ docker pull haxe@sha256:373d6667097f14f695509b1ceb8abdac1e4e1d7bd2794012af166b809fd9e123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 KB (16030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92cf7449ee7fdaa1a4df7aa06f80caa8a8ec710a25613ee8d72729690795f7e3`
+-	Image ID: `sha256:c0d141eb675a50051a9266d12eeb080c23fb1dc3797ac8d53d9536e171bc01de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f75f373fff385c12fc2a1ff27228928a3fede3c2a402ee0aa51be53e78968c5e`  
-		Last Modified: Mon, 21 Jul 2025 18:25:12 GMT  
+	-	`sha256:5fd9c9c0da4002819b04b7daa5f5601330296fffe0df348a671ec62e16252c57`  
+		Last Modified: Thu, 09 Oct 2025 00:24:40 GMT  
 		Size: 16.0 KB (16030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:d8f981bcb7506fd04be5b9ef6bc2a4f924ec29f5512aaf47fe21ba3dfdf4c167
+$ docker pull haxe@sha256:205e87f9b74e303f6ac6dff6eebb1b778f5b16aed5fd9b95126a31cadf4fc28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.6 MB (41629902 bytes)**  
+-	Total Size: **41.7 MB (41717753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf38c5eeb8c3534b1bffaa079bcde944dd8da41d2551fca960c4d1260dbf5a06`
+-	Image ID: `sha256:1236ef10e7c1f2308f2669acbe239b783cc1c0ebbf549fa7ab1263f904c37422`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12311,43 +12311,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a104af1c526b9f1ccc89df0dd6d0d1b30550db6fb5be156a07a65ca89f6267d1`  
-		Last Modified: Mon, 21 Jul 2025 17:52:10 GMT  
-		Size: 284.7 KB (284698 bytes)  
+	-	`sha256:0f2ae275a19f21c5b974f940d97083815981a2a263282b54d7f92e8ea0f9d322`  
+		Last Modified: Wed, 08 Oct 2025 21:53:34 GMT  
+		Size: 294.1 KB (294096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88c0b0a089df2a61898cd5d2e7222c685f2aee3dec75998463590900ba1652f0`  
-		Last Modified: Mon, 21 Jul 2025 17:52:14 GMT  
-		Size: 37.2 MB (37214454 bytes)  
+	-	`sha256:32f322f94e1916f0ccd67b78b61807beb8c428cc8614850747ad5625574d4f5b`  
+		Last Modified: Wed, 08 Oct 2025 21:53:51 GMT  
+		Size: 37.3 MB (37285588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9e29b54e1a5fda5c335e7389743df17cb250f38cb42cd698676d17daaa74345a
+$ docker pull haxe@sha256:cc31572167c8a6551c5e8817e093bf4dc423a90b330d137de3d4488c303479c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.1 KB (16149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9aa947bbbd759b72ac7232664d220e6582313392828f7dc9fd62f137a4a74388`
+-	Image ID: `sha256:6d1730766eb8ef03ca1b7e4ecfa719f463b4f71baa010a3dc057c95f7f39054a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f2e234befe99073b8382dba397f4affbb0393eb5572b2c4914dcb9c1f19cc7ad`  
-		Last Modified: Mon, 21 Jul 2025 18:25:16 GMT  
+	-	`sha256:ea0194127571185e23d7fe4b8e1d106444c53fb6e1bd178f5831394f9ea3be50`  
+		Last Modified: Thu, 09 Oct 2025 00:24:43 GMT  
 		Size: 16.1 KB (16149 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:4e416045ab842be44a423bae4389e3dca5558aea216f229a89dab9887f98e467
+$ docker pull haxe@sha256:3aae6eacea5b3558a1ebb7515309d2270b88fe2df44c62af53d113bd9ca91a1b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12360,19 +12360,19 @@ $ docker pull haxe@sha256:4e416045ab842be44a423bae4389e3dca5558aea216f229a89dab9
 ### `haxe:4.3-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:88cfdea47898e91d4ed58377264f5563d48741e29d66bfd1d3051c2da713b498
+$ docker pull haxe@sha256:e4584dc3d97434231dae8af829c1708d8946773d3b1c48fef391ded83237f265
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 MB (37846548 bytes)**  
+-	Total Size: **37.9 MB (37868781 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df2665b134998a9754a9d97c8c01186ec3bf963a19c29da5b0bf35b78595c7b7`
+-	Image ID: `sha256:a4785a9ecc1aff3beaca98a719d02f235ad8c17d48fe8c7debebc5e15765ad70`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12391,55 +12391,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbd875480a4fae59285eb52a1ac56c41af70dfafccebe0a98ed4134b4c654eee`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.5 KB (282531 bytes)  
+	-	`sha256:04438e70f48dfac29c095dec4ee962708655eec344db3c3a0914d8f2a57ea709`  
+		Last Modified: Wed, 08 Oct 2025 23:09:03 GMT  
+		Size: 291.2 KB (291247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb2fa11916b0c91b15e664f1165a724a4a254abda481f0a923e18b62b090b685`  
-		Last Modified: Mon, 21 Jul 2025 17:21:25 GMT  
-		Size: 34.1 MB (34148489 bytes)  
+	-	`sha256:5bffe2c1567909426cc0fecebd3720ae3e5e7733e31bc698d130cb7014fd03e3`  
+		Last Modified: Wed, 08 Oct 2025 23:09:07 GMT  
+		Size: 34.2 MB (34157719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:ca908d8ba69212d52f5a8a0090238c662fdc3dcef3d26f330d3dd2e6aaf21b5b
+$ docker pull haxe@sha256:7d6ea2c4f391101c040cb61ab59ba151812abd2bd5c338032ef68aa484d08eff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.2 KB (15220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3ef94811abac78e32ad5ea307d8098a0cc555a43456602e3b22d68f2a6c2035`
+-	Image ID: `sha256:95384a4ee0be2ac22edc86e22a2ed09483ed16d029d9ee59e7ffcfceb91f3b10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:55ebb19239504a8a8af2f8f0b473ebf4e64c17303a41d1f34b23c357ef9eaf37`  
-		Last Modified: Mon, 21 Jul 2025 18:25:16 GMT  
+	-	`sha256:b145358d5896ec7de82f5b4a2efe94aa0338d00107ff56c49ec132ca2c226f73`  
+		Last Modified: Thu, 09 Oct 2025 00:24:47 GMT  
 		Size: 15.2 KB (15220 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:cf10048839ffc790ca34ed55b1321acf3a5a877bcb3d8bf79a1824e6e521072b
+$ docker pull haxe@sha256:25a85a943a8daffbe84007bf9ce2a13764bc9b7d618502edaf6ff80fef0dc66d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39564341 bytes)**  
+-	Total Size: **39.6 MB (39587634 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2974fc1f2ee2535b688e80677bf28214242ed87b6035bfe59ac20c8a4dca9d0a`
+-	Image ID: `sha256:0fe10cd419ae3fd75d38e6fbdc244d5efd986a572e5c5311566d28e9d111b0ce`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12458,43 +12458,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ed5b0271dd879c35420ec565b09db69fdef229a59879ab0ab404ffa28a9a9e`  
-		Last Modified: Mon, 21 Jul 2025 18:04:59 GMT  
-		Size: 284.8 KB (284826 bytes)  
+	-	`sha256:f5be836d1130f0bc6acdbc544963a58ab41626e0a6c13714d7bebed0b3f97996`  
+		Last Modified: Wed, 08 Oct 2025 21:54:05 GMT  
+		Size: 294.3 KB (294264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20a8ef652da78745de8531e409a91ad4ab510bebe696827fa6d66ad05e6a854a`  
-		Last Modified: Mon, 21 Jul 2025 18:05:09 GMT  
-		Size: 35.9 MB (35926412 bytes)  
+	-	`sha256:cc22704f87849629f8be6396274938c5665bae3a106628aff95fc5485b3eaafb`  
+		Last Modified: Wed, 08 Oct 2025 21:54:08 GMT  
+		Size: 35.9 MB (35934069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6b1a68a70d9e0e6532e16742573445333301d3dd45ab71195157dc5005e0c8c8
+$ docker pull haxe@sha256:d7866a12d4340c6ebaf7a08f7a81ede2551428abea25114dadf5f4d26ea39b0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.3 KB (15314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1ad78765fd3b5c00337d1921275598be5a97b691297cd642ce169904dd40819`
+-	Image ID: `sha256:828327f382e99185eb5c125af5a0b841c3352977bd5a5a103d7f23ffec9aab01`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:818125ad8d2bdc4ab44caaa8417bbc924d9037a823ed65e710a1aba795f9d426`  
-		Last Modified: Mon, 21 Jul 2025 18:25:20 GMT  
+	-	`sha256:2a8119b83752aaf709affe1823512b85f4dd1c8d2ecfe5f36cf170f65bf85f75`  
+		Last Modified: Thu, 09 Oct 2025 00:24:50 GMT  
 		Size: 15.3 KB (15314 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:bdd28bf2d88b682aa139ed3d00ffddf1faab7dcc996832d431690a6b76ac30bc
+$ docker pull haxe@sha256:cf1d1b48ceaf1a74ebb3f87f3921a58ba1c4d32d88320073e57cce12606b2be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12507,19 +12507,19 @@ $ docker pull haxe@sha256:bdd28bf2d88b682aa139ed3d00ffddf1faab7dcc996832d431690a
 ### `haxe:4.3-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:ecdc745dbc18264a4ab48030df74878cdadd0671d8165f5a5319ff8554839b78
+$ docker pull haxe@sha256:247e878e2c5d5b011d760a4f5ccad40e17a5918f27923925d26d0ab3659652b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.8 MB (38795849 bytes)**  
+-	Total Size: **38.8 MB (38822687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1856c28bd5042cf570c94f83ae25e9d1c4fd66b8805b668421cf7a01a204e3a3`
+-	Image ID: `sha256:8efab0658cfee57f9523beb456d4dbbf7dbf93058bf58e087a2879b8265d1f8b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12538,55 +12538,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30d1bb2801498c1fbc5a6435791243b2b7a3b961a79df549a0969cbc42c190c1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:30 GMT  
-		Size: 282.1 KB (282071 bytes)  
+	-	`sha256:207613ff58529132f07afd3481f8d1282be57011b48fe4761f3fccea1a19a50f`  
+		Last Modified: Wed, 08 Oct 2025 23:08:05 GMT  
+		Size: 290.8 KB (290774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f880ce4cfcf4f9f98a7373bed525cd565c26e53611ac30502a36c41855afae4`  
-		Last Modified: Mon, 21 Jul 2025 17:21:34 GMT  
-		Size: 34.9 MB (34893301 bytes)  
+	-	`sha256:7174275c1f2089fc7e83782035ea58a8079005b67b258fbb35814acfbd3ec055`  
+		Last Modified: Wed, 08 Oct 2025 23:08:07 GMT  
+		Size: 34.9 MB (34904857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9a9739e2a40817042c4d69b0ddcdb75f929863cd95ee92fa0f308f72714a2db8
+$ docker pull haxe@sha256:46da0f3fc8dba4a9241784fdc38e37db5b25cd3c1df122f42402cde95dbed7e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.2 KB (15222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0894805da7eb5fbb9ef200325c2cdef86c1ab590709f48c02d811caa855278e8`
+-	Image ID: `sha256:221daf1584b3b1fad9df94ea9d8fb8bc6d10804b31f462065e97bf2413960fcf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18ee3ee06e09b8a94849b6352c3fe6f70e7be8f2496a0270967b3fae04448d92`  
-		Last Modified: Mon, 21 Jul 2025 18:25:23 GMT  
+	-	`sha256:660f8cbc76defae7128a4a181e8d3170afa142c25a70dbeebe5125762224344b`  
+		Last Modified: Thu, 09 Oct 2025 00:24:54 GMT  
 		Size: 15.2 KB (15222 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:a72dade72f6f2d471c1de6926cc5e7ec4f2bfabf68cad93f7118b1bce8c96480
+$ docker pull haxe@sha256:39090ca7dfa5bdceb388c47824397232cae204e69324921c48936b1d6418e070
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41078503 bytes)**  
+-	Total Size: **41.1 MB (41093004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c636da0923c156657ad3a8d1cae040ecb312aeeffa95d6146a3b86feeeb6640`
+-	Image ID: `sha256:80d3c257ad643f91dc1670bd1434f3884cee10f2520e006c6bd15861d7e61ab3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12605,43 +12605,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c418c22d624e71a6f7a20596628909765099a5b0c5e6c05e3a0aec3454fbc45e`  
-		Last Modified: Mon, 21 Jul 2025 18:00:50 GMT  
-		Size: 284.4 KB (284358 bytes)  
+	-	`sha256:43ee6db64fd1715223d9810f53c94a25c421a9ed3f15289b1207141262e68215`  
+		Last Modified: Wed, 08 Oct 2025 21:54:04 GMT  
+		Size: 293.6 KB (293600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4315b535ed7419e5f12794462818ea83b37a13a33bf6af12b94af46e13052652`  
-		Last Modified: Mon, 21 Jul 2025 18:00:55 GMT  
-		Size: 36.7 MB (36705777 bytes)  
+	-	`sha256:69a47f3d8ede99fcd146c181f3eed4732f7228a53bf24610868027c75a8272e2`  
+		Last Modified: Wed, 08 Oct 2025 21:54:09 GMT  
+		Size: 36.7 MB (36710027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:e77185309617450b1b4fc8b1f5f7e12afadee3af3ab90bbc6b0987b940f228dd
+$ docker pull haxe@sha256:8c3f3506445a58194603df45634c847a7993677b7f84a480b08a18a5c9085033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.3 KB (15316 bytes)**  
+-	Total Size: **15.3 KB (15317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64d782ed75ec6592b8ea53000fdc3da864d803f819ce7e5e23c297e61ccbc549`
+-	Image ID: `sha256:26f08916dc0cfbe59c1ef155ad959be642ae3a52e0fc70b24f8a7297b5cd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:084168809d56761dd8504509d8ee5eaed398b983f31e3265360b89dd46c743d2`  
-		Last Modified: Mon, 21 Jul 2025 18:25:26 GMT  
-		Size: 15.3 KB (15316 bytes)  
+	-	`sha256:d0c1e2e1527dc9e91a4205fb31eaf24a6bd9cd1fc1990bbff340100876f6e1b1`  
+		Last Modified: Thu, 09 Oct 2025 00:24:57 GMT  
+		Size: 15.3 KB (15317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-alpine3.21`
 
 ```console
-$ docker pull haxe@sha256:815533a4dfa86deb758cbf05188624a741fee9274da3a4af300b0e4b1ebd1d3e
+$ docker pull haxe@sha256:53191987710396305323767bb1e449d664547de1ebbe9ca3349d11b6be6bbbac
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12654,19 +12654,19 @@ $ docker pull haxe@sha256:815533a4dfa86deb758cbf05188624a741fee9274da3a4af300b0e
 ### `haxe:4.3-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:5299428c66cc1d7bb66c4e22e1a8675b5ccf68c17d295353a7d833a6928cb81f
+$ docker pull haxe@sha256:11566f1504528da43e791ee80d367187f4faaa8cc8246b86734fe6bea626a84b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39170050 bytes)**  
+-	Total Size: **39.2 MB (39192727 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8dc0eb57980133f2cf3266aed27cab96ec81d64eca2da6ba605e244742217d2`
+-	Image ID: `sha256:592b8034891fb7c2951ce43587a760ef9f0e0374243b7bcde63806af08a42072`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12685,55 +12685,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3637570 bytes)  
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Wed, 08 Oct 2025 12:54:09 GMT  
+		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8df698a93f81ad3968b4e5868dbabe00ae66cb8e93bf699719165a2eadd20ab7`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282413 bytes)  
+	-	`sha256:ece9e3af53ce96f2c8424544a7e4e157639e343c95263feb3bb505a221b15e9b`  
+		Last Modified: Wed, 08 Oct 2025 23:08:03 GMT  
+		Size: 291.1 KB (291110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1490e7b334b8d378749cfb8e32049dd0f25a0a75aa66645ca287ff2849248c07`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.3 MB (35250067 bytes)  
+	-	`sha256:3523db05ee4658efdc375d1f6e23294268b4122288f1a781da179d517d4b07ce`  
+		Last Modified: Wed, 08 Oct 2025 23:08:13 GMT  
+		Size: 35.3 MB (35259048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6c217d906c72ab3e52d781530d709ff50dcadcee438aa0a26474f578a6b0852d
+$ docker pull haxe@sha256:020d8aa8d8fbf5b486de97f0a25da3128a6dc7a7eac644b3cdcf7954fbfb965a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15422 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bd985c0035e678a42d7c3a3c9ff6e9937886f4b02a8db0dbb79662cb2a20727`
+-	Image ID: `sha256:2c24c29585d03ebf0ff6a4fd1c94d8afca18626d082a947f60837b6a08b24a60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4cc883afa8e68a9e2c07e145a8b8d7e82c030537ea2b29b2552c5008c8f6219`  
-		Last Modified: Mon, 21 Jul 2025 18:25:30 GMT  
+	-	`sha256:569308105efbbdc86a743d1daf8b7746966547f58b9ca6e687b4e0089b50c80f`  
+		Last Modified: Thu, 09 Oct 2025 00:25:00 GMT  
 		Size: 15.4 KB (15422 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:237471f10f75d39d75afcd83f4bc1f8e85fa70a90bd0c8cf6c3c28df1dbff2ff
+$ docker pull haxe@sha256:8d3025836e8ce8c5fb2e9d57474c0f1e874011ea4744c2a457fad419c189587b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41097678 bytes)**  
+-	Total Size: **41.1 MB (41115913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93d42fd2897121098677fbe588a49c7b6c8e8c89c3b56671851779544ca2ff1d`
+-	Image ID: `sha256:d90b14f2a01a41b4d9840e558dce4ca826b86835b610e855345363225795efe9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12752,43 +12752,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:438f424de8532f48e69d42d56e76593f90a705f1dcf2cdbcc58283c0f6856ce9`  
-		Last Modified: Mon, 21 Jul 2025 17:56:35 GMT  
-		Size: 284.7 KB (284674 bytes)  
+	-	`sha256:3165e767f053908b2d71b1950e53628949dfe3343aed4832913641cedba94492`  
+		Last Modified: Wed, 08 Oct 2025 22:43:17 GMT  
+		Size: 294.0 KB (294046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45445d8f4e43486d1cdc4d345341440a78696b9da2492cf9c040cd93f81a80fd`  
-		Last Modified: Mon, 21 Jul 2025 17:56:37 GMT  
-		Size: 36.8 MB (36826067 bytes)  
+	-	`sha256:99222900dd99be0f425702099bc4865fc44543ac1ccc4277830031785d8d7dc4`  
+		Last Modified: Thu, 09 Oct 2025 00:25:16 GMT  
+		Size: 36.8 MB (36829514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:b76a6a6ee19002a2d4c1bb880d2951ba9d6298cb3ea2cc7918121d554c0144d5
+$ docker pull haxe@sha256:fbb7923bbec4e41527255153082a5d3e598da983ebd0181ef1148cb8fb2f2809
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb48a181e978d583b8fdf2af7d3ee1eea786b06519c703c91c5e3023d6d1cac`
+-	Image ID: `sha256:d594bb7179772505e44b559579cfeccfc514e484c36950d89463398eca102ba0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cc6041b28ebb5d4e5d9b4f31605341f5ffca4d73571fd5bc1536d35d8e3305e0`  
-		Last Modified: Mon, 21 Jul 2025 18:25:33 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:c1783512dace1def1fd03c29c19c4237a8958e1b6f0546ac21a02542e9d1cbad`  
+		Last Modified: Thu, 09 Oct 2025 00:25:03 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-alpine3.22`
 
 ```console
-$ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355f3162147ba
+$ docker pull haxe@sha256:0b76c88bd673aa78de2f996b8ea30a490d3865031f6df9af7ce09c039c7213b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12801,19 +12801,19 @@ $ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355
 ### `haxe:4.3-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a49f70ea7994c0d691a6b6e3e82e2495af2a3c438ba9c28e85ab84ef5f4a12fb
+$ docker pull haxe@sha256:c95f2531f703fa8d7af7c8444fd5bec9319240d88c96a3282e108227a185b5fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.7 MB (39733330 bytes)**  
+-	Total Size: **39.8 MB (39815893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47522217dbf0985253eaaf50c7e5b45207e22d7fb65387feeda179b3f6d8e5d3`
+-	Image ID: `sha256:72ed19747430f2c57d2899df9900d8735f3b3d5f3f54199d02206c007603f213`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12832,55 +12832,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:275f9fe89a62e6b6159af03f5712866b9b9d3ec61ba51b190c07c27c4f27c91f`  
+		Last Modified: Wed, 08 Oct 2025 23:07:19 GMT  
+		Size: 291.2 KB (291157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0607e8afe9fdcc5611c2f61c29fef1f6ac15d80f8c3de4c190f5edc096bd4fec`  
-		Last Modified: Mon, 21 Jul 2025 18:25:27 GMT  
-		Size: 35.7 MB (35651196 bytes)  
+	-	`sha256:decade1bb7443f91565c76cb4c716be61ad7e93f1f3e2c0b38b1b4e5febed911`  
+		Last Modified: Wed, 08 Oct 2025 23:07:14 GMT  
+		Size: 35.7 MB (35722284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:fc4765c95acef7f060d4c4adc0c4f7cd1cb99750e2a0442d2bb792e2607c4493
+$ docker pull haxe@sha256:373d6667097f14f695509b1ceb8abdac1e4e1d7bd2794012af166b809fd9e123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 KB (16030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92cf7449ee7fdaa1a4df7aa06f80caa8a8ec710a25613ee8d72729690795f7e3`
+-	Image ID: `sha256:c0d141eb675a50051a9266d12eeb080c23fb1dc3797ac8d53d9536e171bc01de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f75f373fff385c12fc2a1ff27228928a3fede3c2a402ee0aa51be53e78968c5e`  
-		Last Modified: Mon, 21 Jul 2025 18:25:12 GMT  
+	-	`sha256:5fd9c9c0da4002819b04b7daa5f5601330296fffe0df348a671ec62e16252c57`  
+		Last Modified: Thu, 09 Oct 2025 00:24:40 GMT  
 		Size: 16.0 KB (16030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3-alpine3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:d8f981bcb7506fd04be5b9ef6bc2a4f924ec29f5512aaf47fe21ba3dfdf4c167
+$ docker pull haxe@sha256:205e87f9b74e303f6ac6dff6eebb1b778f5b16aed5fd9b95126a31cadf4fc28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.6 MB (41629902 bytes)**  
+-	Total Size: **41.7 MB (41717753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf38c5eeb8c3534b1bffaa079bcde944dd8da41d2551fca960c4d1260dbf5a06`
+-	Image ID: `sha256:1236ef10e7c1f2308f2669acbe239b783cc1c0ebbf549fa7ab1263f904c37422`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -12899,36 +12899,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a104af1c526b9f1ccc89df0dd6d0d1b30550db6fb5be156a07a65ca89f6267d1`  
-		Last Modified: Mon, 21 Jul 2025 17:52:10 GMT  
-		Size: 284.7 KB (284698 bytes)  
+	-	`sha256:0f2ae275a19f21c5b974f940d97083815981a2a263282b54d7f92e8ea0f9d322`  
+		Last Modified: Wed, 08 Oct 2025 21:53:34 GMT  
+		Size: 294.1 KB (294096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88c0b0a089df2a61898cd5d2e7222c685f2aee3dec75998463590900ba1652f0`  
-		Last Modified: Mon, 21 Jul 2025 17:52:14 GMT  
-		Size: 37.2 MB (37214454 bytes)  
+	-	`sha256:32f322f94e1916f0ccd67b78b61807beb8c428cc8614850747ad5625574d4f5b`  
+		Last Modified: Wed, 08 Oct 2025 21:53:51 GMT  
+		Size: 37.3 MB (37285588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9e29b54e1a5fda5c335e7389743df17cb250f38cb42cd698676d17daaa74345a
+$ docker pull haxe@sha256:cc31572167c8a6551c5e8817e093bf4dc423a90b330d137de3d4488c303479c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.1 KB (16149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9aa947bbbd759b72ac7232664d220e6582313392828f7dc9fd62f137a4a74388`
+-	Image ID: `sha256:6d1730766eb8ef03ca1b7e4ecfa719f463b4f71baa010a3dc057c95f7f39054a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f2e234befe99073b8382dba397f4affbb0393eb5572b2c4914dcb9c1f19cc7ad`  
-		Last Modified: Mon, 21 Jul 2025 18:25:16 GMT  
+	-	`sha256:ea0194127571185e23d7fe4b8e1d106444c53fb6e1bd178f5831394f9ea3be50`  
+		Last Modified: Thu, 09 Oct 2025 00:24:43 GMT  
 		Size: 16.1 KB (16149 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14594,7 +14594,7 @@ CMD ["haxe"]
 ## `haxe:4.3.7-alpine`
 
 ```console
-$ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355f3162147ba
+$ docker pull haxe@sha256:0b76c88bd673aa78de2f996b8ea30a490d3865031f6df9af7ce09c039c7213b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14607,19 +14607,19 @@ $ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355
 ### `haxe:4.3.7-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a49f70ea7994c0d691a6b6e3e82e2495af2a3c438ba9c28e85ab84ef5f4a12fb
+$ docker pull haxe@sha256:c95f2531f703fa8d7af7c8444fd5bec9319240d88c96a3282e108227a185b5fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.7 MB (39733330 bytes)**  
+-	Total Size: **39.8 MB (39815893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47522217dbf0985253eaaf50c7e5b45207e22d7fb65387feeda179b3f6d8e5d3`
+-	Image ID: `sha256:72ed19747430f2c57d2899df9900d8735f3b3d5f3f54199d02206c007603f213`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14638,55 +14638,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:275f9fe89a62e6b6159af03f5712866b9b9d3ec61ba51b190c07c27c4f27c91f`  
+		Last Modified: Wed, 08 Oct 2025 23:07:19 GMT  
+		Size: 291.2 KB (291157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0607e8afe9fdcc5611c2f61c29fef1f6ac15d80f8c3de4c190f5edc096bd4fec`  
-		Last Modified: Mon, 21 Jul 2025 18:25:27 GMT  
-		Size: 35.7 MB (35651196 bytes)  
+	-	`sha256:decade1bb7443f91565c76cb4c716be61ad7e93f1f3e2c0b38b1b4e5febed911`  
+		Last Modified: Wed, 08 Oct 2025 23:07:14 GMT  
+		Size: 35.7 MB (35722284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:fc4765c95acef7f060d4c4adc0c4f7cd1cb99750e2a0442d2bb792e2607c4493
+$ docker pull haxe@sha256:373d6667097f14f695509b1ceb8abdac1e4e1d7bd2794012af166b809fd9e123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 KB (16030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92cf7449ee7fdaa1a4df7aa06f80caa8a8ec710a25613ee8d72729690795f7e3`
+-	Image ID: `sha256:c0d141eb675a50051a9266d12eeb080c23fb1dc3797ac8d53d9536e171bc01de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f75f373fff385c12fc2a1ff27228928a3fede3c2a402ee0aa51be53e78968c5e`  
-		Last Modified: Mon, 21 Jul 2025 18:25:12 GMT  
+	-	`sha256:5fd9c9c0da4002819b04b7daa5f5601330296fffe0df348a671ec62e16252c57`  
+		Last Modified: Thu, 09 Oct 2025 00:24:40 GMT  
 		Size: 16.0 KB (16030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:d8f981bcb7506fd04be5b9ef6bc2a4f924ec29f5512aaf47fe21ba3dfdf4c167
+$ docker pull haxe@sha256:205e87f9b74e303f6ac6dff6eebb1b778f5b16aed5fd9b95126a31cadf4fc28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.6 MB (41629902 bytes)**  
+-	Total Size: **41.7 MB (41717753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf38c5eeb8c3534b1bffaa079bcde944dd8da41d2551fca960c4d1260dbf5a06`
+-	Image ID: `sha256:1236ef10e7c1f2308f2669acbe239b783cc1c0ebbf549fa7ab1263f904c37422`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14705,43 +14705,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a104af1c526b9f1ccc89df0dd6d0d1b30550db6fb5be156a07a65ca89f6267d1`  
-		Last Modified: Mon, 21 Jul 2025 17:52:10 GMT  
-		Size: 284.7 KB (284698 bytes)  
+	-	`sha256:0f2ae275a19f21c5b974f940d97083815981a2a263282b54d7f92e8ea0f9d322`  
+		Last Modified: Wed, 08 Oct 2025 21:53:34 GMT  
+		Size: 294.1 KB (294096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88c0b0a089df2a61898cd5d2e7222c685f2aee3dec75998463590900ba1652f0`  
-		Last Modified: Mon, 21 Jul 2025 17:52:14 GMT  
-		Size: 37.2 MB (37214454 bytes)  
+	-	`sha256:32f322f94e1916f0ccd67b78b61807beb8c428cc8614850747ad5625574d4f5b`  
+		Last Modified: Wed, 08 Oct 2025 21:53:51 GMT  
+		Size: 37.3 MB (37285588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9e29b54e1a5fda5c335e7389743df17cb250f38cb42cd698676d17daaa74345a
+$ docker pull haxe@sha256:cc31572167c8a6551c5e8817e093bf4dc423a90b330d137de3d4488c303479c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.1 KB (16149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9aa947bbbd759b72ac7232664d220e6582313392828f7dc9fd62f137a4a74388`
+-	Image ID: `sha256:6d1730766eb8ef03ca1b7e4ecfa719f463b4f71baa010a3dc057c95f7f39054a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f2e234befe99073b8382dba397f4affbb0393eb5572b2c4914dcb9c1f19cc7ad`  
-		Last Modified: Mon, 21 Jul 2025 18:25:16 GMT  
+	-	`sha256:ea0194127571185e23d7fe4b8e1d106444c53fb6e1bd178f5831394f9ea3be50`  
+		Last Modified: Thu, 09 Oct 2025 00:24:43 GMT  
 		Size: 16.1 KB (16149 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:4e416045ab842be44a423bae4389e3dca5558aea216f229a89dab9887f98e467
+$ docker pull haxe@sha256:3aae6eacea5b3558a1ebb7515309d2270b88fe2df44c62af53d113bd9ca91a1b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14754,19 +14754,19 @@ $ docker pull haxe@sha256:4e416045ab842be44a423bae4389e3dca5558aea216f229a89dab9
 ### `haxe:4.3.7-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:88cfdea47898e91d4ed58377264f5563d48741e29d66bfd1d3051c2da713b498
+$ docker pull haxe@sha256:e4584dc3d97434231dae8af829c1708d8946773d3b1c48fef391ded83237f265
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.8 MB (37846548 bytes)**  
+-	Total Size: **37.9 MB (37868781 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df2665b134998a9754a9d97c8c01186ec3bf963a19c29da5b0bf35b78595c7b7`
+-	Image ID: `sha256:a4785a9ecc1aff3beaca98a719d02f235ad8c17d48fe8c7debebc5e15765ad70`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14785,55 +14785,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbd875480a4fae59285eb52a1ac56c41af70dfafccebe0a98ed4134b4c654eee`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.5 KB (282531 bytes)  
+	-	`sha256:04438e70f48dfac29c095dec4ee962708655eec344db3c3a0914d8f2a57ea709`  
+		Last Modified: Wed, 08 Oct 2025 23:09:03 GMT  
+		Size: 291.2 KB (291247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb2fa11916b0c91b15e664f1165a724a4a254abda481f0a923e18b62b090b685`  
-		Last Modified: Mon, 21 Jul 2025 17:21:25 GMT  
-		Size: 34.1 MB (34148489 bytes)  
+	-	`sha256:5bffe2c1567909426cc0fecebd3720ae3e5e7733e31bc698d130cb7014fd03e3`  
+		Last Modified: Wed, 08 Oct 2025 23:09:07 GMT  
+		Size: 34.2 MB (34157719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:ca908d8ba69212d52f5a8a0090238c662fdc3dcef3d26f330d3dd2e6aaf21b5b
+$ docker pull haxe@sha256:7d6ea2c4f391101c040cb61ab59ba151812abd2bd5c338032ef68aa484d08eff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.2 KB (15220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3ef94811abac78e32ad5ea307d8098a0cc555a43456602e3b22d68f2a6c2035`
+-	Image ID: `sha256:95384a4ee0be2ac22edc86e22a2ed09483ed16d029d9ee59e7ffcfceb91f3b10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:55ebb19239504a8a8af2f8f0b473ebf4e64c17303a41d1f34b23c357ef9eaf37`  
-		Last Modified: Mon, 21 Jul 2025 18:25:16 GMT  
+	-	`sha256:b145358d5896ec7de82f5b4a2efe94aa0338d00107ff56c49ec132ca2c226f73`  
+		Last Modified: Thu, 09 Oct 2025 00:24:47 GMT  
 		Size: 15.2 KB (15220 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:cf10048839ffc790ca34ed55b1321acf3a5a877bcb3d8bf79a1824e6e521072b
+$ docker pull haxe@sha256:25a85a943a8daffbe84007bf9ce2a13764bc9b7d618502edaf6ff80fef0dc66d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39564341 bytes)**  
+-	Total Size: **39.6 MB (39587634 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2974fc1f2ee2535b688e80677bf28214242ed87b6035bfe59ac20c8a4dca9d0a`
+-	Image ID: `sha256:0fe10cd419ae3fd75d38e6fbdc244d5efd986a572e5c5311566d28e9d111b0ce`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14852,43 +14852,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ed5b0271dd879c35420ec565b09db69fdef229a59879ab0ab404ffa28a9a9e`  
-		Last Modified: Mon, 21 Jul 2025 18:04:59 GMT  
-		Size: 284.8 KB (284826 bytes)  
+	-	`sha256:f5be836d1130f0bc6acdbc544963a58ab41626e0a6c13714d7bebed0b3f97996`  
+		Last Modified: Wed, 08 Oct 2025 21:54:05 GMT  
+		Size: 294.3 KB (294264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20a8ef652da78745de8531e409a91ad4ab510bebe696827fa6d66ad05e6a854a`  
-		Last Modified: Mon, 21 Jul 2025 18:05:09 GMT  
-		Size: 35.9 MB (35926412 bytes)  
+	-	`sha256:cc22704f87849629f8be6396274938c5665bae3a106628aff95fc5485b3eaafb`  
+		Last Modified: Wed, 08 Oct 2025 21:54:08 GMT  
+		Size: 35.9 MB (35934069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6b1a68a70d9e0e6532e16742573445333301d3dd45ab71195157dc5005e0c8c8
+$ docker pull haxe@sha256:d7866a12d4340c6ebaf7a08f7a81ede2551428abea25114dadf5f4d26ea39b0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.3 KB (15314 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1ad78765fd3b5c00337d1921275598be5a97b691297cd642ce169904dd40819`
+-	Image ID: `sha256:828327f382e99185eb5c125af5a0b841c3352977bd5a5a103d7f23ffec9aab01`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:818125ad8d2bdc4ab44caaa8417bbc924d9037a823ed65e710a1aba795f9d426`  
-		Last Modified: Mon, 21 Jul 2025 18:25:20 GMT  
+	-	`sha256:2a8119b83752aaf709affe1823512b85f4dd1c8d2ecfe5f36cf170f65bf85f75`  
+		Last Modified: Thu, 09 Oct 2025 00:24:50 GMT  
 		Size: 15.3 KB (15314 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:bdd28bf2d88b682aa139ed3d00ffddf1faab7dcc996832d431690a6b76ac30bc
+$ docker pull haxe@sha256:cf1d1b48ceaf1a74ebb3f87f3921a58ba1c4d32d88320073e57cce12606b2be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14901,19 +14901,19 @@ $ docker pull haxe@sha256:bdd28bf2d88b682aa139ed3d00ffddf1faab7dcc996832d431690a
 ### `haxe:4.3.7-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:ecdc745dbc18264a4ab48030df74878cdadd0671d8165f5a5319ff8554839b78
+$ docker pull haxe@sha256:247e878e2c5d5b011d760a4f5ccad40e17a5918f27923925d26d0ab3659652b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.8 MB (38795849 bytes)**  
+-	Total Size: **38.8 MB (38822687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1856c28bd5042cf570c94f83ae25e9d1c4fd66b8805b668421cf7a01a204e3a3`
+-	Image ID: `sha256:8efab0658cfee57f9523beb456d4dbbf7dbf93058bf58e087a2879b8265d1f8b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14932,55 +14932,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30d1bb2801498c1fbc5a6435791243b2b7a3b961a79df549a0969cbc42c190c1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:30 GMT  
-		Size: 282.1 KB (282071 bytes)  
+	-	`sha256:207613ff58529132f07afd3481f8d1282be57011b48fe4761f3fccea1a19a50f`  
+		Last Modified: Wed, 08 Oct 2025 23:08:05 GMT  
+		Size: 290.8 KB (290774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f880ce4cfcf4f9f98a7373bed525cd565c26e53611ac30502a36c41855afae4`  
-		Last Modified: Mon, 21 Jul 2025 17:21:34 GMT  
-		Size: 34.9 MB (34893301 bytes)  
+	-	`sha256:7174275c1f2089fc7e83782035ea58a8079005b67b258fbb35814acfbd3ec055`  
+		Last Modified: Wed, 08 Oct 2025 23:08:07 GMT  
+		Size: 34.9 MB (34904857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9a9739e2a40817042c4d69b0ddcdb75f929863cd95ee92fa0f308f72714a2db8
+$ docker pull haxe@sha256:46da0f3fc8dba4a9241784fdc38e37db5b25cd3c1df122f42402cde95dbed7e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.2 KB (15222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0894805da7eb5fbb9ef200325c2cdef86c1ab590709f48c02d811caa855278e8`
+-	Image ID: `sha256:221daf1584b3b1fad9df94ea9d8fb8bc6d10804b31f462065e97bf2413960fcf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18ee3ee06e09b8a94849b6352c3fe6f70e7be8f2496a0270967b3fae04448d92`  
-		Last Modified: Mon, 21 Jul 2025 18:25:23 GMT  
+	-	`sha256:660f8cbc76defae7128a4a181e8d3170afa142c25a70dbeebe5125762224344b`  
+		Last Modified: Thu, 09 Oct 2025 00:24:54 GMT  
 		Size: 15.2 KB (15222 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:a72dade72f6f2d471c1de6926cc5e7ec4f2bfabf68cad93f7118b1bce8c96480
+$ docker pull haxe@sha256:39090ca7dfa5bdceb388c47824397232cae204e69324921c48936b1d6418e070
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41078503 bytes)**  
+-	Total Size: **41.1 MB (41093004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c636da0923c156657ad3a8d1cae040ecb312aeeffa95d6146a3b86feeeb6640`
+-	Image ID: `sha256:80d3c257ad643f91dc1670bd1434f3884cee10f2520e006c6bd15861d7e61ab3`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14999,43 +14999,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c418c22d624e71a6f7a20596628909765099a5b0c5e6c05e3a0aec3454fbc45e`  
-		Last Modified: Mon, 21 Jul 2025 18:00:50 GMT  
-		Size: 284.4 KB (284358 bytes)  
+	-	`sha256:43ee6db64fd1715223d9810f53c94a25c421a9ed3f15289b1207141262e68215`  
+		Last Modified: Wed, 08 Oct 2025 21:54:04 GMT  
+		Size: 293.6 KB (293600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4315b535ed7419e5f12794462818ea83b37a13a33bf6af12b94af46e13052652`  
-		Last Modified: Mon, 21 Jul 2025 18:00:55 GMT  
-		Size: 36.7 MB (36705777 bytes)  
+	-	`sha256:69a47f3d8ede99fcd146c181f3eed4732f7228a53bf24610868027c75a8272e2`  
+		Last Modified: Wed, 08 Oct 2025 21:54:09 GMT  
+		Size: 36.7 MB (36710027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:e77185309617450b1b4fc8b1f5f7e12afadee3af3ab90bbc6b0987b940f228dd
+$ docker pull haxe@sha256:8c3f3506445a58194603df45634c847a7993677b7f84a480b08a18a5c9085033
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.3 KB (15316 bytes)**  
+-	Total Size: **15.3 KB (15317 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64d782ed75ec6592b8ea53000fdc3da864d803f819ce7e5e23c297e61ccbc549`
+-	Image ID: `sha256:26f08916dc0cfbe59c1ef155ad959be642ae3a52e0fc70b24f8a7297b5cd2105`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:084168809d56761dd8504509d8ee5eaed398b983f31e3265360b89dd46c743d2`  
-		Last Modified: Mon, 21 Jul 2025 18:25:26 GMT  
-		Size: 15.3 KB (15316 bytes)  
+	-	`sha256:d0c1e2e1527dc9e91a4205fb31eaf24a6bd9cd1fc1990bbff340100876f6e1b1`  
+		Last Modified: Thu, 09 Oct 2025 00:24:57 GMT  
+		Size: 15.3 KB (15317 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-alpine3.21`
 
 ```console
-$ docker pull haxe@sha256:815533a4dfa86deb758cbf05188624a741fee9274da3a4af300b0e4b1ebd1d3e
+$ docker pull haxe@sha256:53191987710396305323767bb1e449d664547de1ebbe9ca3349d11b6be6bbbac
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15048,19 +15048,19 @@ $ docker pull haxe@sha256:815533a4dfa86deb758cbf05188624a741fee9274da3a4af300b0e
 ### `haxe:4.3.7-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:5299428c66cc1d7bb66c4e22e1a8675b5ccf68c17d295353a7d833a6928cb81f
+$ docker pull haxe@sha256:11566f1504528da43e791ee80d367187f4faaa8cc8246b86734fe6bea626a84b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39170050 bytes)**  
+-	Total Size: **39.2 MB (39192727 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8dc0eb57980133f2cf3266aed27cab96ec81d64eca2da6ba605e244742217d2`
+-	Image ID: `sha256:592b8034891fb7c2951ce43587a760ef9f0e0374243b7bcde63806af08a42072`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -15079,55 +15079,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3637570 bytes)  
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Wed, 08 Oct 2025 12:54:09 GMT  
+		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8df698a93f81ad3968b4e5868dbabe00ae66cb8e93bf699719165a2eadd20ab7`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282413 bytes)  
+	-	`sha256:ece9e3af53ce96f2c8424544a7e4e157639e343c95263feb3bb505a221b15e9b`  
+		Last Modified: Wed, 08 Oct 2025 23:08:03 GMT  
+		Size: 291.1 KB (291110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1490e7b334b8d378749cfb8e32049dd0f25a0a75aa66645ca287ff2849248c07`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.3 MB (35250067 bytes)  
+	-	`sha256:3523db05ee4658efdc375d1f6e23294268b4122288f1a781da179d517d4b07ce`  
+		Last Modified: Wed, 08 Oct 2025 23:08:13 GMT  
+		Size: 35.3 MB (35259048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6c217d906c72ab3e52d781530d709ff50dcadcee438aa0a26474f578a6b0852d
+$ docker pull haxe@sha256:020d8aa8d8fbf5b486de97f0a25da3128a6dc7a7eac644b3cdcf7954fbfb965a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.4 KB (15422 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bd985c0035e678a42d7c3a3c9ff6e9937886f4b02a8db0dbb79662cb2a20727`
+-	Image ID: `sha256:2c24c29585d03ebf0ff6a4fd1c94d8afca18626d082a947f60837b6a08b24a60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4cc883afa8e68a9e2c07e145a8b8d7e82c030537ea2b29b2552c5008c8f6219`  
-		Last Modified: Mon, 21 Jul 2025 18:25:30 GMT  
+	-	`sha256:569308105efbbdc86a743d1daf8b7746966547f58b9ca6e687b4e0089b50c80f`  
+		Last Modified: Thu, 09 Oct 2025 00:25:00 GMT  
 		Size: 15.4 KB (15422 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:237471f10f75d39d75afcd83f4bc1f8e85fa70a90bd0c8cf6c3c28df1dbff2ff
+$ docker pull haxe@sha256:8d3025836e8ce8c5fb2e9d57474c0f1e874011ea4744c2a457fad419c189587b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41097678 bytes)**  
+-	Total Size: **41.1 MB (41115913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93d42fd2897121098677fbe588a49c7b6c8e8c89c3b56671851779544ca2ff1d`
+-	Image ID: `sha256:d90b14f2a01a41b4d9840e558dce4ca826b86835b610e855345363225795efe9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -15146,43 +15146,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:438f424de8532f48e69d42d56e76593f90a705f1dcf2cdbcc58283c0f6856ce9`  
-		Last Modified: Mon, 21 Jul 2025 17:56:35 GMT  
-		Size: 284.7 KB (284674 bytes)  
+	-	`sha256:3165e767f053908b2d71b1950e53628949dfe3343aed4832913641cedba94492`  
+		Last Modified: Wed, 08 Oct 2025 22:43:17 GMT  
+		Size: 294.0 KB (294046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45445d8f4e43486d1cdc4d345341440a78696b9da2492cf9c040cd93f81a80fd`  
-		Last Modified: Mon, 21 Jul 2025 17:56:37 GMT  
-		Size: 36.8 MB (36826067 bytes)  
+	-	`sha256:99222900dd99be0f425702099bc4865fc44543ac1ccc4277830031785d8d7dc4`  
+		Last Modified: Thu, 09 Oct 2025 00:25:16 GMT  
+		Size: 36.8 MB (36829514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:b76a6a6ee19002a2d4c1bb880d2951ba9d6298cb3ea2cc7918121d554c0144d5
+$ docker pull haxe@sha256:fbb7923bbec4e41527255153082a5d3e598da983ebd0181ef1148cb8fb2f2809
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 KB (15516 bytes)**  
+-	Total Size: **15.5 KB (15515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb48a181e978d583b8fdf2af7d3ee1eea786b06519c703c91c5e3023d6d1cac`
+-	Image ID: `sha256:d594bb7179772505e44b559579cfeccfc514e484c36950d89463398eca102ba0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cc6041b28ebb5d4e5d9b4f31605341f5ffca4d73571fd5bc1536d35d8e3305e0`  
-		Last Modified: Mon, 21 Jul 2025 18:25:33 GMT  
-		Size: 15.5 KB (15516 bytes)  
+	-	`sha256:c1783512dace1def1fd03c29c19c4237a8958e1b6f0546ac21a02542e9d1cbad`  
+		Last Modified: Thu, 09 Oct 2025 00:25:03 GMT  
+		Size: 15.5 KB (15515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-alpine3.22`
 
 ```console
-$ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355f3162147ba
+$ docker pull haxe@sha256:0b76c88bd673aa78de2f996b8ea30a490d3865031f6df9af7ce09c039c7213b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15195,19 +15195,19 @@ $ docker pull haxe@sha256:fb379ba7714d86ab1d4111fd7ab884dc1db7875d5cbba2d6b78355
 ### `haxe:4.3.7-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a49f70ea7994c0d691a6b6e3e82e2495af2a3c438ba9c28e85ab84ef5f4a12fb
+$ docker pull haxe@sha256:c95f2531f703fa8d7af7c8444fd5bec9319240d88c96a3282e108227a185b5fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.7 MB (39733330 bytes)**  
+-	Total Size: **39.8 MB (39815893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47522217dbf0985253eaaf50c7e5b45207e22d7fb65387feeda179b3f6d8e5d3`
+-	Image ID: `sha256:72ed19747430f2c57d2899df9900d8735f3b3d5f3f54199d02206c007603f213`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -15226,55 +15226,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:275f9fe89a62e6b6159af03f5712866b9b9d3ec61ba51b190c07c27c4f27c91f`  
+		Last Modified: Wed, 08 Oct 2025 23:07:19 GMT  
+		Size: 291.2 KB (291157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0607e8afe9fdcc5611c2f61c29fef1f6ac15d80f8c3de4c190f5edc096bd4fec`  
-		Last Modified: Mon, 21 Jul 2025 18:25:27 GMT  
-		Size: 35.7 MB (35651196 bytes)  
+	-	`sha256:decade1bb7443f91565c76cb4c716be61ad7e93f1f3e2c0b38b1b4e5febed911`  
+		Last Modified: Wed, 08 Oct 2025 23:07:14 GMT  
+		Size: 35.7 MB (35722284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:fc4765c95acef7f060d4c4adc0c4f7cd1cb99750e2a0442d2bb792e2607c4493
+$ docker pull haxe@sha256:373d6667097f14f695509b1ceb8abdac1e4e1d7bd2794012af166b809fd9e123
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.0 KB (16030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92cf7449ee7fdaa1a4df7aa06f80caa8a8ec710a25613ee8d72729690795f7e3`
+-	Image ID: `sha256:c0d141eb675a50051a9266d12eeb080c23fb1dc3797ac8d53d9536e171bc01de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f75f373fff385c12fc2a1ff27228928a3fede3c2a402ee0aa51be53e78968c5e`  
-		Last Modified: Mon, 21 Jul 2025 18:25:12 GMT  
+	-	`sha256:5fd9c9c0da4002819b04b7daa5f5601330296fffe0df348a671ec62e16252c57`  
+		Last Modified: Thu, 09 Oct 2025 00:24:40 GMT  
 		Size: 16.0 KB (16030 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7-alpine3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:d8f981bcb7506fd04be5b9ef6bc2a4f924ec29f5512aaf47fe21ba3dfdf4c167
+$ docker pull haxe@sha256:205e87f9b74e303f6ac6dff6eebb1b778f5b16aed5fd9b95126a31cadf4fc28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.6 MB (41629902 bytes)**  
+-	Total Size: **41.7 MB (41717753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf38c5eeb8c3534b1bffaa079bcde944dd8da41d2551fca960c4d1260dbf5a06`
+-	Image ID: `sha256:1236ef10e7c1f2308f2669acbe239b783cc1c0ebbf549fa7ab1263f904c37422`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -15293,36 +15293,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a104af1c526b9f1ccc89df0dd6d0d1b30550db6fb5be156a07a65ca89f6267d1`  
-		Last Modified: Mon, 21 Jul 2025 17:52:10 GMT  
-		Size: 284.7 KB (284698 bytes)  
+	-	`sha256:0f2ae275a19f21c5b974f940d97083815981a2a263282b54d7f92e8ea0f9d322`  
+		Last Modified: Wed, 08 Oct 2025 21:53:34 GMT  
+		Size: 294.1 KB (294096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88c0b0a089df2a61898cd5d2e7222c685f2aee3dec75998463590900ba1652f0`  
-		Last Modified: Mon, 21 Jul 2025 17:52:14 GMT  
-		Size: 37.2 MB (37214454 bytes)  
+	-	`sha256:32f322f94e1916f0ccd67b78b61807beb8c428cc8614850747ad5625574d4f5b`  
+		Last Modified: Wed, 08 Oct 2025 21:53:51 GMT  
+		Size: 37.3 MB (37285588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9e29b54e1a5fda5c335e7389743df17cb250f38cb42cd698676d17daaa74345a
+$ docker pull haxe@sha256:cc31572167c8a6551c5e8817e093bf4dc423a90b330d137de3d4488c303479c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.1 KB (16149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9aa947bbbd759b72ac7232664d220e6582313392828f7dc9fd62f137a4a74388`
+-	Image ID: `sha256:6d1730766eb8ef03ca1b7e4ecfa719f463b4f71baa010a3dc057c95f7f39054a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f2e234befe99073b8382dba397f4affbb0393eb5572b2c4914dcb9c1f19cc7ad`  
-		Last Modified: Mon, 21 Jul 2025 18:25:16 GMT  
+	-	`sha256:ea0194127571185e23d7fe4b8e1d106444c53fb6e1bd178f5831394f9ea3be50`  
+		Last Modified: Thu, 09 Oct 2025 00:24:43 GMT  
 		Size: 16.1 KB (16149 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16988,7 +16988,7 @@ CMD ["haxe"]
 ## `haxe:5.0-alpine`
 
 ```console
-$ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e928ba2b917cf
+$ docker pull haxe@sha256:f4d518d426d75cdf6053dc2282b3b75775fa16a29667c25b27ea30c555db84a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17001,19 +17001,19 @@ $ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e92
 ### `haxe:5.0-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:1930e09e32f698e273daa05ff5862c6ab044af5a1f134c157a6ced2ed944ec7d
+$ docker pull haxe@sha256:34c215eb1bbb798fb3078148fff701ac11a779fce14f854d420c7067f0d98037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39301793 bytes)**  
+-	Total Size: **39.4 MB (39380887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6b019e9a4eaee3f8f651916fc00b9dfccafe40224c2af7dcb9e38cb82bc07c`
+-	Image ID: `sha256:013b701ea91d3a88f941ae837ef2f02b947393276d5a3323dedd640589db0127`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17032,55 +17032,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:655afca13c8bb98bda830e4086d991be41c6beed8708b695fe74e6b5e51b68aa`  
+		Last Modified: Wed, 08 Oct 2025 23:08:37 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce1685851d53c54ca3284215c86adb190ef5a95c82380aeb330415d53434104`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.2 MB (35219659 bytes)  
+	-	`sha256:72c8062dfbc8c1d4673fbf600455401743873153d94d06ca8ac740bbc8141deb`  
+		Last Modified: Wed, 08 Oct 2025 23:08:39 GMT  
+		Size: 35.3 MB (35287287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d241465942c11eb0e02e4102aac2729ebf49d6aa65aee18ae977d9c3ee1b76d7
+$ docker pull haxe@sha256:cf872d24f5899c14ccbf1975a95357bfcef388e8a10b7c2ec398be929035b820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.5 KB (16532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a384f4d8ea804c9a91a6b14cc6397cb23ec6d45f2439fd12d564f49da1fa0fc`
+-	Image ID: `sha256:c1e29a18d8a7644732c2a207d1b1e05d1b37f1419bc6365afa64ecc5f97aa5d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c0a597f2101eadf3e0bf64088215bdfd551a170e3b445912b6b506467d7bd17`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:d6667f270eceb9bd0d6cfa14a7605d830cae89e4ada984dcb7002b4b84c3c7f2`  
+		Last Modified: Thu, 09 Oct 2025 00:25:25 GMT  
 		Size: 16.5 KB (16532 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5be60d862819af0b043a676f2556123d9ccde9ad960f373c1d2bffbf24ac6ed3
+$ docker pull haxe@sha256:c23476bcb5c0d2053134129549a8025798cff4eaf241c4e5634213b256502e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (40993612 bytes)**  
+-	Total Size: **41.1 MB (41077107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afdc7670531fd602848320a55eed7ff74f840a1deae7aa3fe02facb15c33402`
+-	Image ID: `sha256:957ad99399be0097767a34b31c7d27fc4532777991860852fd57070cbd2d8ea9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17099,43 +17099,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ac1ca97ff9183cf3aa030177f1834650d7b9b4759a8232d673004a4279a2eef`  
-		Last Modified: Mon, 21 Jul 2025 18:20:12 GMT  
-		Size: 284.7 KB (284701 bytes)  
+	-	`sha256:697539f9cf61ed069cedb3abefa3df1c51e3a4a42f4bf7809b49cf599ebd9fdf`  
+		Last Modified: Wed, 08 Oct 2025 21:55:02 GMT  
+		Size: 294.1 KB (294095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69cb4b139d1df01c8178c4c50fa6e39bf1decc037b22bff448c1f55701a12e8a`  
-		Last Modified: Mon, 21 Jul 2025 18:20:14 GMT  
-		Size: 36.6 MB (36578161 bytes)  
+	-	`sha256:b848775cc03539d05c9909ae8fd6c2ebf48459dd61a605583a503cd3250b655d`  
+		Last Modified: Wed, 08 Oct 2025 21:55:04 GMT  
+		Size: 36.6 MB (36644943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:65ad2362f26805be4325a3c156968931048ec139934cf2f843133911ca6b5cb9
+$ docker pull haxe@sha256:aca971b109e59cc88e531f5649b62a471e53cd22e943afba96599a2ce74f7e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.7 KB (16675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:032ada9c27fff1e0b6ca19b8f30b75b6b9e18743d10bacc1341e3d065b20ed61`
+-	Image ID: `sha256:377f10758df7f01888d9d6e7a231c0a7441a9ad0c3bc4dd428c04106b6c6871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fecb4b2fbdc90b34376eaa1d6b19aeefeb56a8892056a91fffaeaf5f235d0ead`  
-		Last Modified: Mon, 21 Jul 2025 21:25:04 GMT  
+	-	`sha256:c1a13f939f16fa1f2687b30f6fb5815c9ae57a2570372e977b16fe882552c351`  
+		Last Modified: Thu, 09 Oct 2025 00:25:29 GMT  
 		Size: 16.7 KB (16675 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:e462ff1130275f551f91c76ae2c81bafc207ed5b48acc6ed9618849a298e4480
+$ docker pull haxe@sha256:96d7ec230858f61ff830d2fd646a461091172a475bc48f5a69bcad61435e535d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17148,19 +17148,19 @@ $ docker pull haxe@sha256:e462ff1130275f551f91c76ae2c81bafc207ed5b48acc6ed961884
 ### `haxe:5.0-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:73e389dc64e1ba9ac5c19dbb80424ba3e54288ee023dcb8c44d730725ae72050
+$ docker pull haxe@sha256:f8b32fc5fe0582f48c29f3540ed17e1c4df5a81b6ca32379cc1bf4aaafb8eb77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.4 MB (37410021 bytes)**  
+-	Total Size: **37.4 MB (37424290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d3af76e42b5d299858bd1f0ad54d972c9773e619c6c71e8a81aa454c66a3954`
+-	Image ID: `sha256:a3026e6548f2c823bc0be1513cce851ba0329358a7836be655f987fbedac82a0`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17179,55 +17179,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:936a611be70b3de514a53eab95a01ae0e2ac0a6910239a3704c970b28f24fc39`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.5 KB (282530 bytes)  
+	-	`sha256:20e192579b5f5a03bfe5c9e4c8c85b650ed240e36ca0c9033adb9d864fdb1545`  
+		Last Modified: Wed, 08 Oct 2025 23:10:28 GMT  
+		Size: 291.2 KB (291238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0c509159075e28559eb7b21ae36d96030d35f837730d5270e9b382c9bf3f7e8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:26 GMT  
-		Size: 33.7 MB (33711963 bytes)  
+	-	`sha256:c36e2aee8359f8bffe4cbd5dd0f35d297d96bee01833faa21507f77fefdafcf6`  
+		Last Modified: Wed, 08 Oct 2025 23:10:30 GMT  
+		Size: 33.7 MB (33713237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c4fb774106b0f99d2076408b1b9ad855179c72298dbf28f150c9de2d479e5130
+$ docker pull haxe@sha256:a2ad7f851d8359055ae2786b42f62173e8ece3639dbd9b34a249493374f48238
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f73a73ab7c0e5fbaaddc0ab886da9cac149bcc34d20d015a86e7b0fcb57508d`
+-	Image ID: `sha256:aa9f7f496b7feef7c552c5ede511a91e01a8a62bf060a9e39523a4f3eab2b6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fbc369c8821a397a6cf794b3770e7ad1339440bb70e8e3e97d867cced98b0503`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:17e5f44941ac90d0ea79a9ec20bf48fecf2d78c4b5d604127076b7b280bc6569`  
+		Last Modified: Thu, 09 Oct 2025 00:25:31 GMT  
 		Size: 15.6 KB (15596 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f3d16388ce9781dd86c94b845a3ca8a9712ef5202e1347298729df3b8019dbee
+$ docker pull haxe@sha256:d2ef052b6cc7fd2e127ff3f28e0f46e8137f2042d0eeeb0b9bd2c2e550b4ad02
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.9 MB (38921853 bytes)**  
+-	Total Size: **38.9 MB (38939497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:629f99c1ff13509fa224d9d47e624eb3f03ee29d5d30572f76205af459f44745`
+-	Image ID: `sha256:7137bbfddb3007da2ff0e8d6f47a21a4c0cedc9d63a99db11bfc9647021e34d5`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17246,43 +17246,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2adb5156cdea8774e7f755a4817c8e036d750baf18714286ae1b685e34f50ac`  
-		Last Modified: Mon, 21 Jul 2025 18:32:06 GMT  
-		Size: 284.8 KB (284832 bytes)  
+	-	`sha256:770a5a4f5d55be4769e1885b2b634aa7f1669cd65463b32b3c98167ef46db364`  
+		Last Modified: Wed, 08 Oct 2025 22:45:00 GMT  
+		Size: 294.3 KB (294259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df55016202d15761fd068c8209698e435971db8871192c52719b875cc6175ab0`  
-		Last Modified: Mon, 21 Jul 2025 18:32:09 GMT  
-		Size: 35.3 MB (35283918 bytes)  
+	-	`sha256:ac64273404c9bcb737ea8abab8984a5c3fc89ef399dea282603f21f31e4e3088`  
+		Last Modified: Thu, 09 Oct 2025 00:25:43 GMT  
+		Size: 35.3 MB (35285937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:28f59ddfaf0144b892dc963a6237d70f2ab59e43d21e8a25400fe6ac59a7ad2d
+$ docker pull haxe@sha256:fc035e8e13403a74d96126c8b0e4b74759f253d03705b62b1cf8fad2b4226098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57032cff24472b2a3cb0bb2c1a76d6b6e5df94e3545fb585d61b23c0c8233c9c`
+-	Image ID: `sha256:a889f838d733417b989a71df86d0e5f23a23c87bc3e0f177c607e8f7d4fcc34c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69320d6f4d728682aaf37019ecc564a74f5303294d02c956f28ac6297de2a61e`  
-		Last Modified: Mon, 21 Jul 2025 21:25:07 GMT  
+	-	`sha256:cccbd8ef810142b0841b09f51ddbe5434f6b17277c98df14d3d8abf000b796ed`  
+		Last Modified: Thu, 09 Oct 2025 00:25:34 GMT  
 		Size: 15.7 KB (15703 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:b5f3faa37aa053efe93707b88789ecc2f8187100cb432caa5d652d417f00c7e1
+$ docker pull haxe@sha256:48dac491934885c498e0f5f89509a0df6b8c059d14df63626bbe2dca599f5f9b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17295,19 +17295,19 @@ $ docker pull haxe@sha256:b5f3faa37aa053efe93707b88789ecc2f8187100cb432caa5d652d
 ### `haxe:5.0-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:cbcbed2ad166e6dba1c0a27d5d058930b5439a080641c37dfbd9fb8a3da13668
+$ docker pull haxe@sha256:130f3f3a1542ff1fd3ee5eadcb51413e188e8792a43e3b37194ac728d3cd7ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.4 MB (38367765 bytes)**  
+-	Total Size: **38.4 MB (38387147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1cd07e04f6054337c99c270df3eb9fb10edc7b866990c86bac609d27e0d53b`
+-	Image ID: `sha256:543d160cec24808d9205955a2f067b0c0a8a75f91e4eb1dfa0f03cdeb432b94a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17326,55 +17326,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77fa7f79f1bff6bc7e8ae74dfa2a8c5107e0bc4c2d85841f3220a406c91b2ee4`  
-		Last Modified: Mon, 21 Jul 2025 17:21:08 GMT  
-		Size: 282.1 KB (282067 bytes)  
+	-	`sha256:a6455ea58f84b85727c880ede16bd4aa525d7bb9db69102a99db9dd5622172f1`  
+		Last Modified: Wed, 08 Oct 2025 23:10:24 GMT  
+		Size: 290.8 KB (290778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ff42a2348fd217ff38ed3397b6b7a05d08855d042f4593ec7da14d8d7614521`  
-		Last Modified: Mon, 21 Jul 2025 17:21:02 GMT  
-		Size: 34.5 MB (34465221 bytes)  
+	-	`sha256:3ffed30cfc4d92cc4b67cefcbd8cbf97d5cf0d4d59bc1bfddf271f99965ae932`  
+		Last Modified: Wed, 08 Oct 2025 23:10:30 GMT  
+		Size: 34.5 MB (34469313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c740dbd9e3d8cf74237113d708a4b6ba9fc062597aeb2d9876141f0d68ed4ae5
+$ docker pull haxe@sha256:4e4128911ece8fc7d365642c061d045a80cc3749d911d172c98ac23f4742e496
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0af0ab1e016b82ebd09c427158ae4c147f413c1e4bc424b127823353a76c06ec`
+-	Image ID: `sha256:df27018d45e5a049d13538f6d2951e942f68f50edcd30021ea8d90ef5c1e42f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cda3fdde44bdce3dc932529bf14b67930db1590ea856d76577d0d31fb99b7de0`  
-		Last Modified: Mon, 21 Jul 2025 18:26:21 GMT  
+	-	`sha256:2b2c025c041f99d1125f76597c6998c5b7288848479447cf7e424192cc0f8e75`  
+		Last Modified: Thu, 09 Oct 2025 00:25:39 GMT  
 		Size: 15.6 KB (15598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5710a7f269a9251ed503a7505604eb590f29ab37656363c30a8be0f5785bd988
+$ docker pull haxe@sha256:e6f326ad9be663e825a32240babd56636538459758800963e418bb5826af3cc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.4 MB (40435263 bytes)**  
+-	Total Size: **40.4 MB (40447959 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a481b89bdc53190ee3387be2c20f193fc5d15576f4caf6abb535c204bc757dc`
+-	Image ID: `sha256:b9823e5c1a6c170fdc00aea5a4ad2073a970564cfe204ee6976b30b68b3c1eaa`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17393,43 +17393,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8923e11ef69d991b454f17a156b77ef9bd91532d23093ec819395af85c41da34`  
-		Last Modified: Mon, 21 Jul 2025 18:28:15 GMT  
-		Size: 284.4 KB (284369 bytes)  
+	-	`sha256:44b82cfdc42503f0d0ea595811db718bb59e53ee143afb0eb8bf4ee66c53395a`  
+		Last Modified: Wed, 08 Oct 2025 21:55:31 GMT  
+		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bcfd733348b78ad9b4677804f8bf4606e7a47a5742e849dd851890926a76b51`  
-		Last Modified: Mon, 21 Jul 2025 18:28:21 GMT  
-		Size: 36.1 MB (36062526 bytes)  
+	-	`sha256:e44bed42d688e8a4a1db32b41d0d028ce8a244394766157110f4c3491ac16dce`  
+		Last Modified: Wed, 08 Oct 2025 21:55:35 GMT  
+		Size: 36.1 MB (36064979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8755b13987080ff3941a5b15e66a49491944baa7acc161c515d692d06e6e017f
+$ docker pull haxe@sha256:1f288f101275ed838fd61e031789e0c6495cf77c23d3ee6999a8ca4f440865d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 KB (15704 bytes)**  
+-	Total Size: **15.7 KB (15705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a7d4f8b3ca8bc7fc5c42147808e493bc617e90cf28c9b64d03cd18c803722c`
+-	Image ID: `sha256:ac3fb6bf2c270a63067c9321e77d8dc00a32c4778c97d26d9bc7d6ca2482a878`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b92342d9f7b7b66611f1346be1c1b1629af2f4edd1d5d1803d6903aa0264edda`  
-		Last Modified: Mon, 21 Jul 2025 21:25:11 GMT  
-		Size: 15.7 KB (15704 bytes)  
+	-	`sha256:b479072420fa3fc42965bf4f10270ffc083b7750384379de227fe4272f9bdfe3`  
+		Last Modified: Thu, 09 Oct 2025 00:25:42 GMT  
+		Size: 15.7 KB (15705 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0-alpine3.21`
 
 ```console
-$ docker pull haxe@sha256:3e353cd3aad4418a6a260ec4fe584792a6747feaa254d0491ac112fc3944d6fd
+$ docker pull haxe@sha256:f48c3c8d091141f5d4b48f723b65c6c691d6e197fbb4a10a5b8037323fddfba1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17442,19 +17442,19 @@ $ docker pull haxe@sha256:3e353cd3aad4418a6a260ec4fe584792a6747feaa254d0491ac112
 ### `haxe:5.0-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:f78961f53569afe8aee88287b9f81e7bf815218ed1b53b89ce168d07ec989c9b
+$ docker pull haxe@sha256:cd19e127548625b6bf584749bd073816f94d72062208d4f128170d57caa7a3e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.7 MB (38738571 bytes)**  
+-	Total Size: **38.8 MB (38756318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f053acaeaa44e9d1b4809d1754e092e68aecbcad90115b04216f758218e2eb1b`
+-	Image ID: `sha256:90a115b1edf71872872b2f19c14d621775a43eef0f029f5ad97ca81d459d03ff`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17473,55 +17473,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3637570 bytes)  
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Wed, 08 Oct 2025 12:54:09 GMT  
+		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9636a7c2cb9881c025302234ac56b786a3f69e099715e9f652a0bf57686382e`  
-		Last Modified: Mon, 21 Jul 2025 17:21:13 GMT  
-		Size: 282.4 KB (282416 bytes)  
+	-	`sha256:983d54a9b44b617d2450e81af2279fb1e3f4608ef9beba4f6b5fe46e319343d9`  
+		Last Modified: Wed, 08 Oct 2025 23:29:42 GMT  
+		Size: 291.1 KB (291120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2921fb0aebd43f4e131a1653864a29b515924c1ea373dd404d33df614eb1edc1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:16 GMT  
-		Size: 34.8 MB (34818585 bytes)  
+	-	`sha256:97d004742e5a40e7785f1b599904a0f477b719afcdd615fa5f0bab29d099a2cc`  
+		Last Modified: Wed, 08 Oct 2025 23:29:45 GMT  
+		Size: 34.8 MB (34822629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d5ff0e9d7094282ac7abf45193272449a46903cd6dd38250f3c26558a7272ec1
+$ docker pull haxe@sha256:1247b9e4e71caf24eb75f75b62aa95e3e8d5a3715224d473cd02fbc308d86804
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49cefc895598355d11122d66fe2f6c98c5f4618c3b340d92072b364b9a848d93`
+-	Image ID: `sha256:6c5629b869da78ae4aa907886113cfe9fcf401f1169d8c5f7fae4950980828f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:afa3eb80d4f30d0b12049b0d7f950812f5d6dc9328f2468d2d4a67aa03732072`  
-		Last Modified: Mon, 21 Jul 2025 18:26:25 GMT  
+	-	`sha256:8d5db73a720fc068522a0fddb792db019c0895e4f55349e12c08898581c6d4dd`  
+		Last Modified: Thu, 09 Oct 2025 00:25:43 GMT  
 		Size: 15.6 KB (15598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:b0b505a03b2ad4440539e6e499857faffd87e75ba68bf3d1e82b58e3cc80d935
+$ docker pull haxe@sha256:3f8ae9f93ddda325913373ecfafcf9f3219142e113751d846a77e256655d5d5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.5 MB (40460727 bytes)**  
+-	Total Size: **40.5 MB (40474351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfac9a38f611ce2f93ef843a2ad140cfba8e6b5e0c696e26d46bc32b2e53848a`
+-	Image ID: `sha256:ec0ab168de72c9951eab78ed4a62cee8ef1879a6776f8a948837860fe7a32dcc`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17540,43 +17540,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fce00e7e0713bcc8b7d0b911b7ca9a89d7b9d6cd275ea9ed75b3200025a2863`  
-		Last Modified: Mon, 21 Jul 2025 18:24:18 GMT  
-		Size: 284.7 KB (284668 bytes)  
+	-	`sha256:8fdd0068ee552ec2b74fef27d696bf06cbd6456ab830ac20e1934098873182ca`  
+		Last Modified: Wed, 08 Oct 2025 21:55:03 GMT  
+		Size: 294.0 KB (294044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c020ee0dd93935c4bdb778a377aec32d271cc609886728314f041b918498615`  
-		Last Modified: Mon, 21 Jul 2025 18:24:25 GMT  
-		Size: 36.2 MB (36189122 bytes)  
+	-	`sha256:605e94aca5854aea31cd5a93be548ff1deaa1c9bd25850fc06ae0f6c8b618466`  
+		Last Modified: Wed, 08 Oct 2025 21:55:07 GMT  
+		Size: 36.2 MB (36187954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:21475ee09c03b9f89b41be1ce7180dc7ee7aea9af9e65c2dc200740c74a18030
+$ docker pull haxe@sha256:30269021715bd92593044cf9ebf68be455ddaa57508820af5094cb73ab4e61cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bfe5c2598303c8d091ac729d48c5f2ac197164c0f8756fc4eb420475c67352`
+-	Image ID: `sha256:fc3e1780c54a984820c30bcde96fdfeff4a81cc3e09b6400b917bd23e9cd3c56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3625298f861b3c7920ceaee293171df766dcb9d1e942b718ddf039f6fb1e2983`  
-		Last Modified: Mon, 21 Jul 2025 21:25:15 GMT  
+	-	`sha256:c0f6c2576e032e5c189f7d19983a73f3cb267fe31ec0dc9ac634103f61467234`  
+		Last Modified: Thu, 09 Oct 2025 00:25:47 GMT  
 		Size: 15.7 KB (15705 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0-alpine3.22`
 
 ```console
-$ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e928ba2b917cf
+$ docker pull haxe@sha256:f4d518d426d75cdf6053dc2282b3b75775fa16a29667c25b27ea30c555db84a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17589,19 +17589,19 @@ $ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e92
 ### `haxe:5.0-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:1930e09e32f698e273daa05ff5862c6ab044af5a1f134c157a6ced2ed944ec7d
+$ docker pull haxe@sha256:34c215eb1bbb798fb3078148fff701ac11a779fce14f854d420c7067f0d98037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39301793 bytes)**  
+-	Total Size: **39.4 MB (39380887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6b019e9a4eaee3f8f651916fc00b9dfccafe40224c2af7dcb9e38cb82bc07c`
+-	Image ID: `sha256:013b701ea91d3a88f941ae837ef2f02b947393276d5a3323dedd640589db0127`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17620,55 +17620,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:655afca13c8bb98bda830e4086d991be41c6beed8708b695fe74e6b5e51b68aa`  
+		Last Modified: Wed, 08 Oct 2025 23:08:37 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce1685851d53c54ca3284215c86adb190ef5a95c82380aeb330415d53434104`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.2 MB (35219659 bytes)  
+	-	`sha256:72c8062dfbc8c1d4673fbf600455401743873153d94d06ca8ac740bbc8141deb`  
+		Last Modified: Wed, 08 Oct 2025 23:08:39 GMT  
+		Size: 35.3 MB (35287287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d241465942c11eb0e02e4102aac2729ebf49d6aa65aee18ae977d9c3ee1b76d7
+$ docker pull haxe@sha256:cf872d24f5899c14ccbf1975a95357bfcef388e8a10b7c2ec398be929035b820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.5 KB (16532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a384f4d8ea804c9a91a6b14cc6397cb23ec6d45f2439fd12d564f49da1fa0fc`
+-	Image ID: `sha256:c1e29a18d8a7644732c2a207d1b1e05d1b37f1419bc6365afa64ecc5f97aa5d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c0a597f2101eadf3e0bf64088215bdfd551a170e3b445912b6b506467d7bd17`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:d6667f270eceb9bd0d6cfa14a7605d830cae89e4ada984dcb7002b4b84c3c7f2`  
+		Last Modified: Thu, 09 Oct 2025 00:25:25 GMT  
 		Size: 16.5 KB (16532 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0-alpine3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5be60d862819af0b043a676f2556123d9ccde9ad960f373c1d2bffbf24ac6ed3
+$ docker pull haxe@sha256:c23476bcb5c0d2053134129549a8025798cff4eaf241c4e5634213b256502e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (40993612 bytes)**  
+-	Total Size: **41.1 MB (41077107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afdc7670531fd602848320a55eed7ff74f840a1deae7aa3fe02facb15c33402`
+-	Image ID: `sha256:957ad99399be0097767a34b31c7d27fc4532777991860852fd57070cbd2d8ea9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -17687,36 +17687,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ac1ca97ff9183cf3aa030177f1834650d7b9b4759a8232d673004a4279a2eef`  
-		Last Modified: Mon, 21 Jul 2025 18:20:12 GMT  
-		Size: 284.7 KB (284701 bytes)  
+	-	`sha256:697539f9cf61ed069cedb3abefa3df1c51e3a4a42f4bf7809b49cf599ebd9fdf`  
+		Last Modified: Wed, 08 Oct 2025 21:55:02 GMT  
+		Size: 294.1 KB (294095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69cb4b139d1df01c8178c4c50fa6e39bf1decc037b22bff448c1f55701a12e8a`  
-		Last Modified: Mon, 21 Jul 2025 18:20:14 GMT  
-		Size: 36.6 MB (36578161 bytes)  
+	-	`sha256:b848775cc03539d05c9909ae8fd6c2ebf48459dd61a605583a503cd3250b655d`  
+		Last Modified: Wed, 08 Oct 2025 21:55:04 GMT  
+		Size: 36.6 MB (36644943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:65ad2362f26805be4325a3c156968931048ec139934cf2f843133911ca6b5cb9
+$ docker pull haxe@sha256:aca971b109e59cc88e531f5649b62a471e53cd22e943afba96599a2ce74f7e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.7 KB (16675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:032ada9c27fff1e0b6ca19b8f30b75b6b9e18743d10bacc1341e3d065b20ed61`
+-	Image ID: `sha256:377f10758df7f01888d9d6e7a231c0a7441a9ad0c3bc4dd428c04106b6c6871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fecb4b2fbdc90b34376eaa1d6b19aeefeb56a8892056a91fffaeaf5f235d0ead`  
-		Last Modified: Mon, 21 Jul 2025 21:25:04 GMT  
+	-	`sha256:c1a13f939f16fa1f2687b30f6fb5815c9ae57a2570372e977b16fe882552c351`  
+		Last Modified: Thu, 09 Oct 2025 00:25:29 GMT  
 		Size: 16.7 KB (16675 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19382,7 +19382,7 @@ CMD ["haxe"]
 ## `haxe:5.0.0-alpine`
 
 ```console
-$ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e928ba2b917cf
+$ docker pull haxe@sha256:f4d518d426d75cdf6053dc2282b3b75775fa16a29667c25b27ea30c555db84a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19395,19 +19395,19 @@ $ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e92
 ### `haxe:5.0.0-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:1930e09e32f698e273daa05ff5862c6ab044af5a1f134c157a6ced2ed944ec7d
+$ docker pull haxe@sha256:34c215eb1bbb798fb3078148fff701ac11a779fce14f854d420c7067f0d98037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39301793 bytes)**  
+-	Total Size: **39.4 MB (39380887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6b019e9a4eaee3f8f651916fc00b9dfccafe40224c2af7dcb9e38cb82bc07c`
+-	Image ID: `sha256:013b701ea91d3a88f941ae837ef2f02b947393276d5a3323dedd640589db0127`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19426,55 +19426,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:655afca13c8bb98bda830e4086d991be41c6beed8708b695fe74e6b5e51b68aa`  
+		Last Modified: Wed, 08 Oct 2025 23:08:37 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce1685851d53c54ca3284215c86adb190ef5a95c82380aeb330415d53434104`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.2 MB (35219659 bytes)  
+	-	`sha256:72c8062dfbc8c1d4673fbf600455401743873153d94d06ca8ac740bbc8141deb`  
+		Last Modified: Wed, 08 Oct 2025 23:08:39 GMT  
+		Size: 35.3 MB (35287287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d241465942c11eb0e02e4102aac2729ebf49d6aa65aee18ae977d9c3ee1b76d7
+$ docker pull haxe@sha256:cf872d24f5899c14ccbf1975a95357bfcef388e8a10b7c2ec398be929035b820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.5 KB (16532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a384f4d8ea804c9a91a6b14cc6397cb23ec6d45f2439fd12d564f49da1fa0fc`
+-	Image ID: `sha256:c1e29a18d8a7644732c2a207d1b1e05d1b37f1419bc6365afa64ecc5f97aa5d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c0a597f2101eadf3e0bf64088215bdfd551a170e3b445912b6b506467d7bd17`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:d6667f270eceb9bd0d6cfa14a7605d830cae89e4ada984dcb7002b4b84c3c7f2`  
+		Last Modified: Thu, 09 Oct 2025 00:25:25 GMT  
 		Size: 16.5 KB (16532 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5be60d862819af0b043a676f2556123d9ccde9ad960f373c1d2bffbf24ac6ed3
+$ docker pull haxe@sha256:c23476bcb5c0d2053134129549a8025798cff4eaf241c4e5634213b256502e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (40993612 bytes)**  
+-	Total Size: **41.1 MB (41077107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afdc7670531fd602848320a55eed7ff74f840a1deae7aa3fe02facb15c33402`
+-	Image ID: `sha256:957ad99399be0097767a34b31c7d27fc4532777991860852fd57070cbd2d8ea9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19493,43 +19493,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ac1ca97ff9183cf3aa030177f1834650d7b9b4759a8232d673004a4279a2eef`  
-		Last Modified: Mon, 21 Jul 2025 18:20:12 GMT  
-		Size: 284.7 KB (284701 bytes)  
+	-	`sha256:697539f9cf61ed069cedb3abefa3df1c51e3a4a42f4bf7809b49cf599ebd9fdf`  
+		Last Modified: Wed, 08 Oct 2025 21:55:02 GMT  
+		Size: 294.1 KB (294095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69cb4b139d1df01c8178c4c50fa6e39bf1decc037b22bff448c1f55701a12e8a`  
-		Last Modified: Mon, 21 Jul 2025 18:20:14 GMT  
-		Size: 36.6 MB (36578161 bytes)  
+	-	`sha256:b848775cc03539d05c9909ae8fd6c2ebf48459dd61a605583a503cd3250b655d`  
+		Last Modified: Wed, 08 Oct 2025 21:55:04 GMT  
+		Size: 36.6 MB (36644943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:65ad2362f26805be4325a3c156968931048ec139934cf2f843133911ca6b5cb9
+$ docker pull haxe@sha256:aca971b109e59cc88e531f5649b62a471e53cd22e943afba96599a2ce74f7e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.7 KB (16675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:032ada9c27fff1e0b6ca19b8f30b75b6b9e18743d10bacc1341e3d065b20ed61`
+-	Image ID: `sha256:377f10758df7f01888d9d6e7a231c0a7441a9ad0c3bc4dd428c04106b6c6871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fecb4b2fbdc90b34376eaa1d6b19aeefeb56a8892056a91fffaeaf5f235d0ead`  
-		Last Modified: Mon, 21 Jul 2025 21:25:04 GMT  
+	-	`sha256:c1a13f939f16fa1f2687b30f6fb5815c9ae57a2570372e977b16fe882552c351`  
+		Last Modified: Thu, 09 Oct 2025 00:25:29 GMT  
 		Size: 16.7 KB (16675 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:e462ff1130275f551f91c76ae2c81bafc207ed5b48acc6ed9618849a298e4480
+$ docker pull haxe@sha256:96d7ec230858f61ff830d2fd646a461091172a475bc48f5a69bcad61435e535d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19542,19 +19542,19 @@ $ docker pull haxe@sha256:e462ff1130275f551f91c76ae2c81bafc207ed5b48acc6ed961884
 ### `haxe:5.0.0-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:73e389dc64e1ba9ac5c19dbb80424ba3e54288ee023dcb8c44d730725ae72050
+$ docker pull haxe@sha256:f8b32fc5fe0582f48c29f3540ed17e1c4df5a81b6ca32379cc1bf4aaafb8eb77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.4 MB (37410021 bytes)**  
+-	Total Size: **37.4 MB (37424290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d3af76e42b5d299858bd1f0ad54d972c9773e619c6c71e8a81aa454c66a3954`
+-	Image ID: `sha256:a3026e6548f2c823bc0be1513cce851ba0329358a7836be655f987fbedac82a0`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19573,55 +19573,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:936a611be70b3de514a53eab95a01ae0e2ac0a6910239a3704c970b28f24fc39`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.5 KB (282530 bytes)  
+	-	`sha256:20e192579b5f5a03bfe5c9e4c8c85b650ed240e36ca0c9033adb9d864fdb1545`  
+		Last Modified: Wed, 08 Oct 2025 23:10:28 GMT  
+		Size: 291.2 KB (291238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0c509159075e28559eb7b21ae36d96030d35f837730d5270e9b382c9bf3f7e8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:26 GMT  
-		Size: 33.7 MB (33711963 bytes)  
+	-	`sha256:c36e2aee8359f8bffe4cbd5dd0f35d297d96bee01833faa21507f77fefdafcf6`  
+		Last Modified: Wed, 08 Oct 2025 23:10:30 GMT  
+		Size: 33.7 MB (33713237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c4fb774106b0f99d2076408b1b9ad855179c72298dbf28f150c9de2d479e5130
+$ docker pull haxe@sha256:a2ad7f851d8359055ae2786b42f62173e8ece3639dbd9b34a249493374f48238
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f73a73ab7c0e5fbaaddc0ab886da9cac149bcc34d20d015a86e7b0fcb57508d`
+-	Image ID: `sha256:aa9f7f496b7feef7c552c5ede511a91e01a8a62bf060a9e39523a4f3eab2b6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fbc369c8821a397a6cf794b3770e7ad1339440bb70e8e3e97d867cced98b0503`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:17e5f44941ac90d0ea79a9ec20bf48fecf2d78c4b5d604127076b7b280bc6569`  
+		Last Modified: Thu, 09 Oct 2025 00:25:31 GMT  
 		Size: 15.6 KB (15596 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f3d16388ce9781dd86c94b845a3ca8a9712ef5202e1347298729df3b8019dbee
+$ docker pull haxe@sha256:d2ef052b6cc7fd2e127ff3f28e0f46e8137f2042d0eeeb0b9bd2c2e550b4ad02
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.9 MB (38921853 bytes)**  
+-	Total Size: **38.9 MB (38939497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:629f99c1ff13509fa224d9d47e624eb3f03ee29d5d30572f76205af459f44745`
+-	Image ID: `sha256:7137bbfddb3007da2ff0e8d6f47a21a4c0cedc9d63a99db11bfc9647021e34d5`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19640,43 +19640,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2adb5156cdea8774e7f755a4817c8e036d750baf18714286ae1b685e34f50ac`  
-		Last Modified: Mon, 21 Jul 2025 18:32:06 GMT  
-		Size: 284.8 KB (284832 bytes)  
+	-	`sha256:770a5a4f5d55be4769e1885b2b634aa7f1669cd65463b32b3c98167ef46db364`  
+		Last Modified: Wed, 08 Oct 2025 22:45:00 GMT  
+		Size: 294.3 KB (294259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df55016202d15761fd068c8209698e435971db8871192c52719b875cc6175ab0`  
-		Last Modified: Mon, 21 Jul 2025 18:32:09 GMT  
-		Size: 35.3 MB (35283918 bytes)  
+	-	`sha256:ac64273404c9bcb737ea8abab8984a5c3fc89ef399dea282603f21f31e4e3088`  
+		Last Modified: Thu, 09 Oct 2025 00:25:43 GMT  
+		Size: 35.3 MB (35285937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:28f59ddfaf0144b892dc963a6237d70f2ab59e43d21e8a25400fe6ac59a7ad2d
+$ docker pull haxe@sha256:fc035e8e13403a74d96126c8b0e4b74759f253d03705b62b1cf8fad2b4226098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57032cff24472b2a3cb0bb2c1a76d6b6e5df94e3545fb585d61b23c0c8233c9c`
+-	Image ID: `sha256:a889f838d733417b989a71df86d0e5f23a23c87bc3e0f177c607e8f7d4fcc34c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69320d6f4d728682aaf37019ecc564a74f5303294d02c956f28ac6297de2a61e`  
-		Last Modified: Mon, 21 Jul 2025 21:25:07 GMT  
+	-	`sha256:cccbd8ef810142b0841b09f51ddbe5434f6b17277c98df14d3d8abf000b796ed`  
+		Last Modified: Thu, 09 Oct 2025 00:25:34 GMT  
 		Size: 15.7 KB (15703 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:b5f3faa37aa053efe93707b88789ecc2f8187100cb432caa5d652d417f00c7e1
+$ docker pull haxe@sha256:48dac491934885c498e0f5f89509a0df6b8c059d14df63626bbe2dca599f5f9b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19689,19 +19689,19 @@ $ docker pull haxe@sha256:b5f3faa37aa053efe93707b88789ecc2f8187100cb432caa5d652d
 ### `haxe:5.0.0-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:cbcbed2ad166e6dba1c0a27d5d058930b5439a080641c37dfbd9fb8a3da13668
+$ docker pull haxe@sha256:130f3f3a1542ff1fd3ee5eadcb51413e188e8792a43e3b37194ac728d3cd7ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.4 MB (38367765 bytes)**  
+-	Total Size: **38.4 MB (38387147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1cd07e04f6054337c99c270df3eb9fb10edc7b866990c86bac609d27e0d53b`
+-	Image ID: `sha256:543d160cec24808d9205955a2f067b0c0a8a75f91e4eb1dfa0f03cdeb432b94a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19720,55 +19720,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77fa7f79f1bff6bc7e8ae74dfa2a8c5107e0bc4c2d85841f3220a406c91b2ee4`  
-		Last Modified: Mon, 21 Jul 2025 17:21:08 GMT  
-		Size: 282.1 KB (282067 bytes)  
+	-	`sha256:a6455ea58f84b85727c880ede16bd4aa525d7bb9db69102a99db9dd5622172f1`  
+		Last Modified: Wed, 08 Oct 2025 23:10:24 GMT  
+		Size: 290.8 KB (290778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ff42a2348fd217ff38ed3397b6b7a05d08855d042f4593ec7da14d8d7614521`  
-		Last Modified: Mon, 21 Jul 2025 17:21:02 GMT  
-		Size: 34.5 MB (34465221 bytes)  
+	-	`sha256:3ffed30cfc4d92cc4b67cefcbd8cbf97d5cf0d4d59bc1bfddf271f99965ae932`  
+		Last Modified: Wed, 08 Oct 2025 23:10:30 GMT  
+		Size: 34.5 MB (34469313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c740dbd9e3d8cf74237113d708a4b6ba9fc062597aeb2d9876141f0d68ed4ae5
+$ docker pull haxe@sha256:4e4128911ece8fc7d365642c061d045a80cc3749d911d172c98ac23f4742e496
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0af0ab1e016b82ebd09c427158ae4c147f413c1e4bc424b127823353a76c06ec`
+-	Image ID: `sha256:df27018d45e5a049d13538f6d2951e942f68f50edcd30021ea8d90ef5c1e42f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cda3fdde44bdce3dc932529bf14b67930db1590ea856d76577d0d31fb99b7de0`  
-		Last Modified: Mon, 21 Jul 2025 18:26:21 GMT  
+	-	`sha256:2b2c025c041f99d1125f76597c6998c5b7288848479447cf7e424192cc0f8e75`  
+		Last Modified: Thu, 09 Oct 2025 00:25:39 GMT  
 		Size: 15.6 KB (15598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5710a7f269a9251ed503a7505604eb590f29ab37656363c30a8be0f5785bd988
+$ docker pull haxe@sha256:e6f326ad9be663e825a32240babd56636538459758800963e418bb5826af3cc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.4 MB (40435263 bytes)**  
+-	Total Size: **40.4 MB (40447959 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a481b89bdc53190ee3387be2c20f193fc5d15576f4caf6abb535c204bc757dc`
+-	Image ID: `sha256:b9823e5c1a6c170fdc00aea5a4ad2073a970564cfe204ee6976b30b68b3c1eaa`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19787,43 +19787,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8923e11ef69d991b454f17a156b77ef9bd91532d23093ec819395af85c41da34`  
-		Last Modified: Mon, 21 Jul 2025 18:28:15 GMT  
-		Size: 284.4 KB (284369 bytes)  
+	-	`sha256:44b82cfdc42503f0d0ea595811db718bb59e53ee143afb0eb8bf4ee66c53395a`  
+		Last Modified: Wed, 08 Oct 2025 21:55:31 GMT  
+		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bcfd733348b78ad9b4677804f8bf4606e7a47a5742e849dd851890926a76b51`  
-		Last Modified: Mon, 21 Jul 2025 18:28:21 GMT  
-		Size: 36.1 MB (36062526 bytes)  
+	-	`sha256:e44bed42d688e8a4a1db32b41d0d028ce8a244394766157110f4c3491ac16dce`  
+		Last Modified: Wed, 08 Oct 2025 21:55:35 GMT  
+		Size: 36.1 MB (36064979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8755b13987080ff3941a5b15e66a49491944baa7acc161c515d692d06e6e017f
+$ docker pull haxe@sha256:1f288f101275ed838fd61e031789e0c6495cf77c23d3ee6999a8ca4f440865d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 KB (15704 bytes)**  
+-	Total Size: **15.7 KB (15705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a7d4f8b3ca8bc7fc5c42147808e493bc617e90cf28c9b64d03cd18c803722c`
+-	Image ID: `sha256:ac3fb6bf2c270a63067c9321e77d8dc00a32c4778c97d26d9bc7d6ca2482a878`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b92342d9f7b7b66611f1346be1c1b1629af2f4edd1d5d1803d6903aa0264edda`  
-		Last Modified: Mon, 21 Jul 2025 21:25:11 GMT  
-		Size: 15.7 KB (15704 bytes)  
+	-	`sha256:b479072420fa3fc42965bf4f10270ffc083b7750384379de227fe4272f9bdfe3`  
+		Last Modified: Thu, 09 Oct 2025 00:25:42 GMT  
+		Size: 15.7 KB (15705 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-alpine3.21`
 
 ```console
-$ docker pull haxe@sha256:3e353cd3aad4418a6a260ec4fe584792a6747feaa254d0491ac112fc3944d6fd
+$ docker pull haxe@sha256:f48c3c8d091141f5d4b48f723b65c6c691d6e197fbb4a10a5b8037323fddfba1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19836,19 +19836,19 @@ $ docker pull haxe@sha256:3e353cd3aad4418a6a260ec4fe584792a6747feaa254d0491ac112
 ### `haxe:5.0.0-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:f78961f53569afe8aee88287b9f81e7bf815218ed1b53b89ce168d07ec989c9b
+$ docker pull haxe@sha256:cd19e127548625b6bf584749bd073816f94d72062208d4f128170d57caa7a3e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.7 MB (38738571 bytes)**  
+-	Total Size: **38.8 MB (38756318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f053acaeaa44e9d1b4809d1754e092e68aecbcad90115b04216f758218e2eb1b`
+-	Image ID: `sha256:90a115b1edf71872872b2f19c14d621775a43eef0f029f5ad97ca81d459d03ff`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19867,55 +19867,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3637570 bytes)  
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Wed, 08 Oct 2025 12:54:09 GMT  
+		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9636a7c2cb9881c025302234ac56b786a3f69e099715e9f652a0bf57686382e`  
-		Last Modified: Mon, 21 Jul 2025 17:21:13 GMT  
-		Size: 282.4 KB (282416 bytes)  
+	-	`sha256:983d54a9b44b617d2450e81af2279fb1e3f4608ef9beba4f6b5fe46e319343d9`  
+		Last Modified: Wed, 08 Oct 2025 23:29:42 GMT  
+		Size: 291.1 KB (291120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2921fb0aebd43f4e131a1653864a29b515924c1ea373dd404d33df614eb1edc1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:16 GMT  
-		Size: 34.8 MB (34818585 bytes)  
+	-	`sha256:97d004742e5a40e7785f1b599904a0f477b719afcdd615fa5f0bab29d099a2cc`  
+		Last Modified: Wed, 08 Oct 2025 23:29:45 GMT  
+		Size: 34.8 MB (34822629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d5ff0e9d7094282ac7abf45193272449a46903cd6dd38250f3c26558a7272ec1
+$ docker pull haxe@sha256:1247b9e4e71caf24eb75f75b62aa95e3e8d5a3715224d473cd02fbc308d86804
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49cefc895598355d11122d66fe2f6c98c5f4618c3b340d92072b364b9a848d93`
+-	Image ID: `sha256:6c5629b869da78ae4aa907886113cfe9fcf401f1169d8c5f7fae4950980828f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:afa3eb80d4f30d0b12049b0d7f950812f5d6dc9328f2468d2d4a67aa03732072`  
-		Last Modified: Mon, 21 Jul 2025 18:26:25 GMT  
+	-	`sha256:8d5db73a720fc068522a0fddb792db019c0895e4f55349e12c08898581c6d4dd`  
+		Last Modified: Thu, 09 Oct 2025 00:25:43 GMT  
 		Size: 15.6 KB (15598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:b0b505a03b2ad4440539e6e499857faffd87e75ba68bf3d1e82b58e3cc80d935
+$ docker pull haxe@sha256:3f8ae9f93ddda325913373ecfafcf9f3219142e113751d846a77e256655d5d5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.5 MB (40460727 bytes)**  
+-	Total Size: **40.5 MB (40474351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfac9a38f611ce2f93ef843a2ad140cfba8e6b5e0c696e26d46bc32b2e53848a`
+-	Image ID: `sha256:ec0ab168de72c9951eab78ed4a62cee8ef1879a6776f8a948837860fe7a32dcc`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -19934,43 +19934,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fce00e7e0713bcc8b7d0b911b7ca9a89d7b9d6cd275ea9ed75b3200025a2863`  
-		Last Modified: Mon, 21 Jul 2025 18:24:18 GMT  
-		Size: 284.7 KB (284668 bytes)  
+	-	`sha256:8fdd0068ee552ec2b74fef27d696bf06cbd6456ab830ac20e1934098873182ca`  
+		Last Modified: Wed, 08 Oct 2025 21:55:03 GMT  
+		Size: 294.0 KB (294044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c020ee0dd93935c4bdb778a377aec32d271cc609886728314f041b918498615`  
-		Last Modified: Mon, 21 Jul 2025 18:24:25 GMT  
-		Size: 36.2 MB (36189122 bytes)  
+	-	`sha256:605e94aca5854aea31cd5a93be548ff1deaa1c9bd25850fc06ae0f6c8b618466`  
+		Last Modified: Wed, 08 Oct 2025 21:55:07 GMT  
+		Size: 36.2 MB (36187954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:21475ee09c03b9f89b41be1ce7180dc7ee7aea9af9e65c2dc200740c74a18030
+$ docker pull haxe@sha256:30269021715bd92593044cf9ebf68be455ddaa57508820af5094cb73ab4e61cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bfe5c2598303c8d091ac729d48c5f2ac197164c0f8756fc4eb420475c67352`
+-	Image ID: `sha256:fc3e1780c54a984820c30bcde96fdfeff4a81cc3e09b6400b917bd23e9cd3c56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3625298f861b3c7920ceaee293171df766dcb9d1e942b718ddf039f6fb1e2983`  
-		Last Modified: Mon, 21 Jul 2025 21:25:15 GMT  
+	-	`sha256:c0f6c2576e032e5c189f7d19983a73f3cb267fe31ec0dc9ac634103f61467234`  
+		Last Modified: Thu, 09 Oct 2025 00:25:47 GMT  
 		Size: 15.7 KB (15705 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-alpine3.22`
 
 ```console
-$ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e928ba2b917cf
+$ docker pull haxe@sha256:f4d518d426d75cdf6053dc2282b3b75775fa16a29667c25b27ea30c555db84a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19983,19 +19983,19 @@ $ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e92
 ### `haxe:5.0.0-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:1930e09e32f698e273daa05ff5862c6ab044af5a1f134c157a6ced2ed944ec7d
+$ docker pull haxe@sha256:34c215eb1bbb798fb3078148fff701ac11a779fce14f854d420c7067f0d98037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39301793 bytes)**  
+-	Total Size: **39.4 MB (39380887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6b019e9a4eaee3f8f651916fc00b9dfccafe40224c2af7dcb9e38cb82bc07c`
+-	Image ID: `sha256:013b701ea91d3a88f941ae837ef2f02b947393276d5a3323dedd640589db0127`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -20014,55 +20014,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:655afca13c8bb98bda830e4086d991be41c6beed8708b695fe74e6b5e51b68aa`  
+		Last Modified: Wed, 08 Oct 2025 23:08:37 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce1685851d53c54ca3284215c86adb190ef5a95c82380aeb330415d53434104`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.2 MB (35219659 bytes)  
+	-	`sha256:72c8062dfbc8c1d4673fbf600455401743873153d94d06ca8ac740bbc8141deb`  
+		Last Modified: Wed, 08 Oct 2025 23:08:39 GMT  
+		Size: 35.3 MB (35287287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d241465942c11eb0e02e4102aac2729ebf49d6aa65aee18ae977d9c3ee1b76d7
+$ docker pull haxe@sha256:cf872d24f5899c14ccbf1975a95357bfcef388e8a10b7c2ec398be929035b820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.5 KB (16532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a384f4d8ea804c9a91a6b14cc6397cb23ec6d45f2439fd12d564f49da1fa0fc`
+-	Image ID: `sha256:c1e29a18d8a7644732c2a207d1b1e05d1b37f1419bc6365afa64ecc5f97aa5d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c0a597f2101eadf3e0bf64088215bdfd551a170e3b445912b6b506467d7bd17`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:d6667f270eceb9bd0d6cfa14a7605d830cae89e4ada984dcb7002b4b84c3c7f2`  
+		Last Modified: Thu, 09 Oct 2025 00:25:25 GMT  
 		Size: 16.5 KB (16532 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-alpine3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5be60d862819af0b043a676f2556123d9ccde9ad960f373c1d2bffbf24ac6ed3
+$ docker pull haxe@sha256:c23476bcb5c0d2053134129549a8025798cff4eaf241c4e5634213b256502e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (40993612 bytes)**  
+-	Total Size: **41.1 MB (41077107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afdc7670531fd602848320a55eed7ff74f840a1deae7aa3fe02facb15c33402`
+-	Image ID: `sha256:957ad99399be0097767a34b31c7d27fc4532777991860852fd57070cbd2d8ea9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -20081,36 +20081,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ac1ca97ff9183cf3aa030177f1834650d7b9b4759a8232d673004a4279a2eef`  
-		Last Modified: Mon, 21 Jul 2025 18:20:12 GMT  
-		Size: 284.7 KB (284701 bytes)  
+	-	`sha256:697539f9cf61ed069cedb3abefa3df1c51e3a4a42f4bf7809b49cf599ebd9fdf`  
+		Last Modified: Wed, 08 Oct 2025 21:55:02 GMT  
+		Size: 294.1 KB (294095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69cb4b139d1df01c8178c4c50fa6e39bf1decc037b22bff448c1f55701a12e8a`  
-		Last Modified: Mon, 21 Jul 2025 18:20:14 GMT  
-		Size: 36.6 MB (36578161 bytes)  
+	-	`sha256:b848775cc03539d05c9909ae8fd6c2ebf48459dd61a605583a503cd3250b655d`  
+		Last Modified: Wed, 08 Oct 2025 21:55:04 GMT  
+		Size: 36.6 MB (36644943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:65ad2362f26805be4325a3c156968931048ec139934cf2f843133911ca6b5cb9
+$ docker pull haxe@sha256:aca971b109e59cc88e531f5649b62a471e53cd22e943afba96599a2ce74f7e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.7 KB (16675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:032ada9c27fff1e0b6ca19b8f30b75b6b9e18743d10bacc1341e3d065b20ed61`
+-	Image ID: `sha256:377f10758df7f01888d9d6e7a231c0a7441a9ad0c3bc4dd428c04106b6c6871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fecb4b2fbdc90b34376eaa1d6b19aeefeb56a8892056a91fffaeaf5f235d0ead`  
-		Last Modified: Mon, 21 Jul 2025 21:25:04 GMT  
+	-	`sha256:c1a13f939f16fa1f2687b30f6fb5815c9ae57a2570372e977b16fe882552c351`  
+		Last Modified: Thu, 09 Oct 2025 00:25:29 GMT  
 		Size: 16.7 KB (16675 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21189,7 +21189,7 @@ CMD ["haxe"]
 ## `haxe:5.0.0-preview.1-alpine`
 
 ```console
-$ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e928ba2b917cf
+$ docker pull haxe@sha256:f4d518d426d75cdf6053dc2282b3b75775fa16a29667c25b27ea30c555db84a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21202,19 +21202,19 @@ $ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e92
 ### `haxe:5.0.0-preview.1-alpine` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:1930e09e32f698e273daa05ff5862c6ab044af5a1f134c157a6ced2ed944ec7d
+$ docker pull haxe@sha256:34c215eb1bbb798fb3078148fff701ac11a779fce14f854d420c7067f0d98037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39301793 bytes)**  
+-	Total Size: **39.4 MB (39380887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6b019e9a4eaee3f8f651916fc00b9dfccafe40224c2af7dcb9e38cb82bc07c`
+-	Image ID: `sha256:013b701ea91d3a88f941ae837ef2f02b947393276d5a3323dedd640589db0127`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21233,55 +21233,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:655afca13c8bb98bda830e4086d991be41c6beed8708b695fe74e6b5e51b68aa`  
+		Last Modified: Wed, 08 Oct 2025 23:08:37 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce1685851d53c54ca3284215c86adb190ef5a95c82380aeb330415d53434104`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.2 MB (35219659 bytes)  
+	-	`sha256:72c8062dfbc8c1d4673fbf600455401743873153d94d06ca8ac740bbc8141deb`  
+		Last Modified: Wed, 08 Oct 2025 23:08:39 GMT  
+		Size: 35.3 MB (35287287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d241465942c11eb0e02e4102aac2729ebf49d6aa65aee18ae977d9c3ee1b76d7
+$ docker pull haxe@sha256:cf872d24f5899c14ccbf1975a95357bfcef388e8a10b7c2ec398be929035b820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.5 KB (16532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a384f4d8ea804c9a91a6b14cc6397cb23ec6d45f2439fd12d564f49da1fa0fc`
+-	Image ID: `sha256:c1e29a18d8a7644732c2a207d1b1e05d1b37f1419bc6365afa64ecc5f97aa5d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c0a597f2101eadf3e0bf64088215bdfd551a170e3b445912b6b506467d7bd17`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:d6667f270eceb9bd0d6cfa14a7605d830cae89e4ada984dcb7002b4b84c3c7f2`  
+		Last Modified: Thu, 09 Oct 2025 00:25:25 GMT  
 		Size: 16.5 KB (16532 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-preview.1-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5be60d862819af0b043a676f2556123d9ccde9ad960f373c1d2bffbf24ac6ed3
+$ docker pull haxe@sha256:c23476bcb5c0d2053134129549a8025798cff4eaf241c4e5634213b256502e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (40993612 bytes)**  
+-	Total Size: **41.1 MB (41077107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afdc7670531fd602848320a55eed7ff74f840a1deae7aa3fe02facb15c33402`
+-	Image ID: `sha256:957ad99399be0097767a34b31c7d27fc4532777991860852fd57070cbd2d8ea9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21300,43 +21300,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ac1ca97ff9183cf3aa030177f1834650d7b9b4759a8232d673004a4279a2eef`  
-		Last Modified: Mon, 21 Jul 2025 18:20:12 GMT  
-		Size: 284.7 KB (284701 bytes)  
+	-	`sha256:697539f9cf61ed069cedb3abefa3df1c51e3a4a42f4bf7809b49cf599ebd9fdf`  
+		Last Modified: Wed, 08 Oct 2025 21:55:02 GMT  
+		Size: 294.1 KB (294095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69cb4b139d1df01c8178c4c50fa6e39bf1decc037b22bff448c1f55701a12e8a`  
-		Last Modified: Mon, 21 Jul 2025 18:20:14 GMT  
-		Size: 36.6 MB (36578161 bytes)  
+	-	`sha256:b848775cc03539d05c9909ae8fd6c2ebf48459dd61a605583a503cd3250b655d`  
+		Last Modified: Wed, 08 Oct 2025 21:55:04 GMT  
+		Size: 36.6 MB (36644943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:65ad2362f26805be4325a3c156968931048ec139934cf2f843133911ca6b5cb9
+$ docker pull haxe@sha256:aca971b109e59cc88e531f5649b62a471e53cd22e943afba96599a2ce74f7e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.7 KB (16675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:032ada9c27fff1e0b6ca19b8f30b75b6b9e18743d10bacc1341e3d065b20ed61`
+-	Image ID: `sha256:377f10758df7f01888d9d6e7a231c0a7441a9ad0c3bc4dd428c04106b6c6871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fecb4b2fbdc90b34376eaa1d6b19aeefeb56a8892056a91fffaeaf5f235d0ead`  
-		Last Modified: Mon, 21 Jul 2025 21:25:04 GMT  
+	-	`sha256:c1a13f939f16fa1f2687b30f6fb5815c9ae57a2570372e977b16fe882552c351`  
+		Last Modified: Thu, 09 Oct 2025 00:25:29 GMT  
 		Size: 16.7 KB (16675 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1-alpine3.19`
 
 ```console
-$ docker pull haxe@sha256:e462ff1130275f551f91c76ae2c81bafc207ed5b48acc6ed9618849a298e4480
+$ docker pull haxe@sha256:96d7ec230858f61ff830d2fd646a461091172a475bc48f5a69bcad61435e535d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21349,19 +21349,19 @@ $ docker pull haxe@sha256:e462ff1130275f551f91c76ae2c81bafc207ed5b48acc6ed961884
 ### `haxe:5.0.0-preview.1-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:73e389dc64e1ba9ac5c19dbb80424ba3e54288ee023dcb8c44d730725ae72050
+$ docker pull haxe@sha256:f8b32fc5fe0582f48c29f3540ed17e1c4df5a81b6ca32379cc1bf4aaafb8eb77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.4 MB (37410021 bytes)**  
+-	Total Size: **37.4 MB (37424290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d3af76e42b5d299858bd1f0ad54d972c9773e619c6c71e8a81aa454c66a3954`
+-	Image ID: `sha256:a3026e6548f2c823bc0be1513cce851ba0329358a7836be655f987fbedac82a0`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21380,55 +21380,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:1747dece94917ce1b0256ecd60138ce4deaea1bd35dcb6b2e8afe697dd2f5b71`  
-		Last Modified: Tue, 15 Jul 2025 18:59:51 GMT  
-		Size: 3.4 MB (3415528 bytes)  
+	-	`sha256:17a39c0ba978cc27001e9c56a480f98106e1ab74bd56eb302f9fd4cf758ea43f`  
+		Last Modified: Wed, 08 Oct 2025 12:04:11 GMT  
+		Size: 3.4 MB (3419815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:936a611be70b3de514a53eab95a01ae0e2ac0a6910239a3704c970b28f24fc39`  
-		Last Modified: Mon, 21 Jul 2025 17:21:24 GMT  
-		Size: 282.5 KB (282530 bytes)  
+	-	`sha256:20e192579b5f5a03bfe5c9e4c8c85b650ed240e36ca0c9033adb9d864fdb1545`  
+		Last Modified: Wed, 08 Oct 2025 23:10:28 GMT  
+		Size: 291.2 KB (291238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0c509159075e28559eb7b21ae36d96030d35f837730d5270e9b382c9bf3f7e8`  
-		Last Modified: Mon, 21 Jul 2025 17:21:26 GMT  
-		Size: 33.7 MB (33711963 bytes)  
+	-	`sha256:c36e2aee8359f8bffe4cbd5dd0f35d297d96bee01833faa21507f77fefdafcf6`  
+		Last Modified: Wed, 08 Oct 2025 23:10:30 GMT  
+		Size: 33.7 MB (33713237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c4fb774106b0f99d2076408b1b9ad855179c72298dbf28f150c9de2d479e5130
+$ docker pull haxe@sha256:a2ad7f851d8359055ae2786b42f62173e8ece3639dbd9b34a249493374f48238
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f73a73ab7c0e5fbaaddc0ab886da9cac149bcc34d20d015a86e7b0fcb57508d`
+-	Image ID: `sha256:aa9f7f496b7feef7c552c5ede511a91e01a8a62bf060a9e39523a4f3eab2b6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fbc369c8821a397a6cf794b3770e7ad1339440bb70e8e3e97d867cced98b0503`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:17e5f44941ac90d0ea79a9ec20bf48fecf2d78c4b5d604127076b7b280bc6569`  
+		Last Modified: Thu, 09 Oct 2025 00:25:31 GMT  
 		Size: 15.6 KB (15596 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-preview.1-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f3d16388ce9781dd86c94b845a3ca8a9712ef5202e1347298729df3b8019dbee
+$ docker pull haxe@sha256:d2ef052b6cc7fd2e127ff3f28e0f46e8137f2042d0eeeb0b9bd2c2e550b4ad02
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.9 MB (38921853 bytes)**  
+-	Total Size: **38.9 MB (38939497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:629f99c1ff13509fa224d9d47e624eb3f03ee29d5d30572f76205af459f44745`
+-	Image ID: `sha256:7137bbfddb3007da2ff0e8d6f47a21a4c0cedc9d63a99db11bfc9647021e34d5`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:32:09 GMT
-ADD alpine-minirootfs-3.19.8-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:32:09 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.19.9-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21447,43 +21447,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:07e9a47f0c334cceba1b05e86ef0150c84564a9b9e9d4ae9dc9a5ebc85ef2b7c`  
-		Last Modified: Tue, 15 Jul 2025 19:00:19 GMT  
-		Size: 3.4 MB (3353103 bytes)  
+	-	`sha256:5711127a7748d32f5a69380c27daf1382f2c6674ea7a60d2a3e338818590fea1`  
+		Last Modified: Wed, 08 Oct 2025 12:04:21 GMT  
+		Size: 3.4 MB (3359301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2adb5156cdea8774e7f755a4817c8e036d750baf18714286ae1b685e34f50ac`  
-		Last Modified: Mon, 21 Jul 2025 18:32:06 GMT  
-		Size: 284.8 KB (284832 bytes)  
+	-	`sha256:770a5a4f5d55be4769e1885b2b634aa7f1669cd65463b32b3c98167ef46db364`  
+		Last Modified: Wed, 08 Oct 2025 22:45:00 GMT  
+		Size: 294.3 KB (294259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df55016202d15761fd068c8209698e435971db8871192c52719b875cc6175ab0`  
-		Last Modified: Mon, 21 Jul 2025 18:32:09 GMT  
-		Size: 35.3 MB (35283918 bytes)  
+	-	`sha256:ac64273404c9bcb737ea8abab8984a5c3fc89ef399dea282603f21f31e4e3088`  
+		Last Modified: Thu, 09 Oct 2025 00:25:43 GMT  
+		Size: 35.3 MB (35285937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:28f59ddfaf0144b892dc963a6237d70f2ab59e43d21e8a25400fe6ac59a7ad2d
+$ docker pull haxe@sha256:fc035e8e13403a74d96126c8b0e4b74759f253d03705b62b1cf8fad2b4226098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57032cff24472b2a3cb0bb2c1a76d6b6e5df94e3545fb585d61b23c0c8233c9c`
+-	Image ID: `sha256:a889f838d733417b989a71df86d0e5f23a23c87bc3e0f177c607e8f7d4fcc34c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69320d6f4d728682aaf37019ecc564a74f5303294d02c956f28ac6297de2a61e`  
-		Last Modified: Mon, 21 Jul 2025 21:25:07 GMT  
+	-	`sha256:cccbd8ef810142b0841b09f51ddbe5434f6b17277c98df14d3d8abf000b796ed`  
+		Last Modified: Thu, 09 Oct 2025 00:25:34 GMT  
 		Size: 15.7 KB (15703 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1-alpine3.20`
 
 ```console
-$ docker pull haxe@sha256:b5f3faa37aa053efe93707b88789ecc2f8187100cb432caa5d652d417f00c7e1
+$ docker pull haxe@sha256:48dac491934885c498e0f5f89509a0df6b8c059d14df63626bbe2dca599f5f9b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21496,19 +21496,19 @@ $ docker pull haxe@sha256:b5f3faa37aa053efe93707b88789ecc2f8187100cb432caa5d652d
 ### `haxe:5.0.0-preview.1-alpine3.20` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:cbcbed2ad166e6dba1c0a27d5d058930b5439a080641c37dfbd9fb8a3da13668
+$ docker pull haxe@sha256:130f3f3a1542ff1fd3ee5eadcb51413e188e8792a43e3b37194ac728d3cd7ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.4 MB (38367765 bytes)**  
+-	Total Size: **38.4 MB (38387147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1cd07e04f6054337c99c270df3eb9fb10edc7b866990c86bac609d27e0d53b`
+-	Image ID: `sha256:543d160cec24808d9205955a2f067b0c0a8a75f91e4eb1dfa0f03cdeb432b94a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21527,55 +21527,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01d036902a3ca86e8793073c8094cba44d83a38953a489ac0641f3de017fe2d2`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3620477 bytes)  
+	-	`sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970`  
+		Last Modified: Wed, 08 Oct 2025 12:03:10 GMT  
+		Size: 3.6 MB (3627056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77fa7f79f1bff6bc7e8ae74dfa2a8c5107e0bc4c2d85841f3220a406c91b2ee4`  
-		Last Modified: Mon, 21 Jul 2025 17:21:08 GMT  
-		Size: 282.1 KB (282067 bytes)  
+	-	`sha256:a6455ea58f84b85727c880ede16bd4aa525d7bb9db69102a99db9dd5622172f1`  
+		Last Modified: Wed, 08 Oct 2025 23:10:24 GMT  
+		Size: 290.8 KB (290778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ff42a2348fd217ff38ed3397b6b7a05d08855d042f4593ec7da14d8d7614521`  
-		Last Modified: Mon, 21 Jul 2025 17:21:02 GMT  
-		Size: 34.5 MB (34465221 bytes)  
+	-	`sha256:3ffed30cfc4d92cc4b67cefcbd8cbf97d5cf0d4d59bc1bfddf271f99965ae932`  
+		Last Modified: Wed, 08 Oct 2025 23:10:30 GMT  
+		Size: 34.5 MB (34469313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c740dbd9e3d8cf74237113d708a4b6ba9fc062597aeb2d9876141f0d68ed4ae5
+$ docker pull haxe@sha256:4e4128911ece8fc7d365642c061d045a80cc3749d911d172c98ac23f4742e496
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0af0ab1e016b82ebd09c427158ae4c147f413c1e4bc424b127823353a76c06ec`
+-	Image ID: `sha256:df27018d45e5a049d13538f6d2951e942f68f50edcd30021ea8d90ef5c1e42f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cda3fdde44bdce3dc932529bf14b67930db1590ea856d76577d0d31fb99b7de0`  
-		Last Modified: Mon, 21 Jul 2025 18:26:21 GMT  
+	-	`sha256:2b2c025c041f99d1125f76597c6998c5b7288848479447cf7e424192cc0f8e75`  
+		Last Modified: Thu, 09 Oct 2025 00:25:39 GMT  
 		Size: 15.6 KB (15598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-preview.1-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5710a7f269a9251ed503a7505604eb590f29ab37656363c30a8be0f5785bd988
+$ docker pull haxe@sha256:e6f326ad9be663e825a32240babd56636538459758800963e418bb5826af3cc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.4 MB (40435263 bytes)**  
+-	Total Size: **40.4 MB (40447959 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a481b89bdc53190ee3387be2c20f193fc5d15576f4caf6abb535c204bc757dc`
+-	Image ID: `sha256:b9823e5c1a6c170fdc00aea5a4ad2073a970564cfe204ee6976b30b68b3c1eaa`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:31:35 GMT
-ADD alpine-minirootfs-3.20.7-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:31:35 GMT
+# Sun, 20 Jul 2025 00:36:05 GMT
+ADD alpine-minirootfs-3.20.8-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 00:36:05 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21594,43 +21594,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:13e713f825654e9e4f57146ec84918d478434f708d4d3d9d18d0e7ba2be56801`  
-		Last Modified: Tue, 15 Jul 2025 19:00:10 GMT  
-		Size: 4.1 MB (4088368 bytes)  
+	-	`sha256:c765ae84869fd59a62821873e5413a3e92e36bdc1ced8fab3520334863720a49`  
+		Last Modified: Wed, 08 Oct 2025 12:03:09 GMT  
+		Size: 4.1 MB (4089377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8923e11ef69d991b454f17a156b77ef9bd91532d23093ec819395af85c41da34`  
-		Last Modified: Mon, 21 Jul 2025 18:28:15 GMT  
-		Size: 284.4 KB (284369 bytes)  
+	-	`sha256:44b82cfdc42503f0d0ea595811db718bb59e53ee143afb0eb8bf4ee66c53395a`  
+		Last Modified: Wed, 08 Oct 2025 21:55:31 GMT  
+		Size: 293.6 KB (293603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bcfd733348b78ad9b4677804f8bf4606e7a47a5742e849dd851890926a76b51`  
-		Last Modified: Mon, 21 Jul 2025 18:28:21 GMT  
-		Size: 36.1 MB (36062526 bytes)  
+	-	`sha256:e44bed42d688e8a4a1db32b41d0d028ce8a244394766157110f4c3491ac16dce`  
+		Last Modified: Wed, 08 Oct 2025 21:55:35 GMT  
+		Size: 36.1 MB (36064979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8755b13987080ff3941a5b15e66a49491944baa7acc161c515d692d06e6e017f
+$ docker pull haxe@sha256:1f288f101275ed838fd61e031789e0c6495cf77c23d3ee6999a8ca4f440865d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 KB (15704 bytes)**  
+-	Total Size: **15.7 KB (15705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a7d4f8b3ca8bc7fc5c42147808e493bc617e90cf28c9b64d03cd18c803722c`
+-	Image ID: `sha256:ac3fb6bf2c270a63067c9321e77d8dc00a32c4778c97d26d9bc7d6ca2482a878`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b92342d9f7b7b66611f1346be1c1b1629af2f4edd1d5d1803d6903aa0264edda`  
-		Last Modified: Mon, 21 Jul 2025 21:25:11 GMT  
-		Size: 15.7 KB (15704 bytes)  
+	-	`sha256:b479072420fa3fc42965bf4f10270ffc083b7750384379de227fe4272f9bdfe3`  
+		Last Modified: Thu, 09 Oct 2025 00:25:42 GMT  
+		Size: 15.7 KB (15705 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1-alpine3.21`
 
 ```console
-$ docker pull haxe@sha256:3e353cd3aad4418a6a260ec4fe584792a6747feaa254d0491ac112fc3944d6fd
+$ docker pull haxe@sha256:f48c3c8d091141f5d4b48f723b65c6c691d6e197fbb4a10a5b8037323fddfba1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21643,19 +21643,19 @@ $ docker pull haxe@sha256:3e353cd3aad4418a6a260ec4fe584792a6747feaa254d0491ac112
 ### `haxe:5.0.0-preview.1-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:f78961f53569afe8aee88287b9f81e7bf815218ed1b53b89ce168d07ec989c9b
+$ docker pull haxe@sha256:cd19e127548625b6bf584749bd073816f94d72062208d4f128170d57caa7a3e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.7 MB (38738571 bytes)**  
+-	Total Size: **38.8 MB (38756318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f053acaeaa44e9d1b4809d1754e092e68aecbcad90115b04216f758218e2eb1b`
+-	Image ID: `sha256:90a115b1edf71872872b2f19c14d621775a43eef0f029f5ad97ca81d459d03ff`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21674,55 +21674,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:0368fd46e3c6d237d81390ff086f93aee216df5cfa814041a491453fb0932a12`  
-		Last Modified: Tue, 15 Jul 2025 18:59:48 GMT  
-		Size: 3.6 MB (3637570 bytes)  
+	-	`sha256:f637881d1138581d892d9eb942c56e0ccc7758fe3bdc0f1e6cd66059fdfd8185`  
+		Last Modified: Wed, 08 Oct 2025 12:54:09 GMT  
+		Size: 3.6 MB (3642569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9636a7c2cb9881c025302234ac56b786a3f69e099715e9f652a0bf57686382e`  
-		Last Modified: Mon, 21 Jul 2025 17:21:13 GMT  
-		Size: 282.4 KB (282416 bytes)  
+	-	`sha256:983d54a9b44b617d2450e81af2279fb1e3f4608ef9beba4f6b5fe46e319343d9`  
+		Last Modified: Wed, 08 Oct 2025 23:29:42 GMT  
+		Size: 291.1 KB (291120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2921fb0aebd43f4e131a1653864a29b515924c1ea373dd404d33df614eb1edc1`  
-		Last Modified: Mon, 21 Jul 2025 17:21:16 GMT  
-		Size: 34.8 MB (34818585 bytes)  
+	-	`sha256:97d004742e5a40e7785f1b599904a0f477b719afcdd615fa5f0bab29d099a2cc`  
+		Last Modified: Wed, 08 Oct 2025 23:29:45 GMT  
+		Size: 34.8 MB (34822629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d5ff0e9d7094282ac7abf45193272449a46903cd6dd38250f3c26558a7272ec1
+$ docker pull haxe@sha256:1247b9e4e71caf24eb75f75b62aa95e3e8d5a3715224d473cd02fbc308d86804
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 KB (15598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49cefc895598355d11122d66fe2f6c98c5f4618c3b340d92072b364b9a848d93`
+-	Image ID: `sha256:6c5629b869da78ae4aa907886113cfe9fcf401f1169d8c5f7fae4950980828f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:afa3eb80d4f30d0b12049b0d7f950812f5d6dc9328f2468d2d4a67aa03732072`  
-		Last Modified: Mon, 21 Jul 2025 18:26:25 GMT  
+	-	`sha256:8d5db73a720fc068522a0fddb792db019c0895e4f55349e12c08898581c6d4dd`  
+		Last Modified: Thu, 09 Oct 2025 00:25:43 GMT  
 		Size: 15.6 KB (15598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-preview.1-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:b0b505a03b2ad4440539e6e499857faffd87e75ba68bf3d1e82b58e3cc80d935
+$ docker pull haxe@sha256:3f8ae9f93ddda325913373ecfafcf9f3219142e113751d846a77e256655d5d5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.5 MB (40460727 bytes)**  
+-	Total Size: **40.5 MB (40474351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfac9a38f611ce2f93ef843a2ad140cfba8e6b5e0c696e26d46bc32b2e53848a`
+-	Image ID: `sha256:ec0ab168de72c9951eab78ed4a62cee8ef1879a6776f8a948837860fe7a32dcc`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:30:48 GMT
-ADD alpine-minirootfs-3.21.4-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:30:48 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.21.5-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21741,43 +21741,43 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:d06c6b665c9b4c183a2e300b290a6b4b7db03f803122fe93d91e9178f425e488`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 4.0 MB (3986937 bytes)  
+	-	`sha256:c2fe130f4aabc917e559e7eed7d37b0e21ba13b44520101696887ca892e8c63f`  
+		Last Modified: Wed, 08 Oct 2025 16:24:46 GMT  
+		Size: 4.0 MB (3992353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fce00e7e0713bcc8b7d0b911b7ca9a89d7b9d6cd275ea9ed75b3200025a2863`  
-		Last Modified: Mon, 21 Jul 2025 18:24:18 GMT  
-		Size: 284.7 KB (284668 bytes)  
+	-	`sha256:8fdd0068ee552ec2b74fef27d696bf06cbd6456ab830ac20e1934098873182ca`  
+		Last Modified: Wed, 08 Oct 2025 21:55:03 GMT  
+		Size: 294.0 KB (294044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c020ee0dd93935c4bdb778a377aec32d271cc609886728314f041b918498615`  
-		Last Modified: Mon, 21 Jul 2025 18:24:25 GMT  
-		Size: 36.2 MB (36189122 bytes)  
+	-	`sha256:605e94aca5854aea31cd5a93be548ff1deaa1c9bd25850fc06ae0f6c8b618466`  
+		Last Modified: Wed, 08 Oct 2025 21:55:07 GMT  
+		Size: 36.2 MB (36187954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:21475ee09c03b9f89b41be1ce7180dc7ee7aea9af9e65c2dc200740c74a18030
+$ docker pull haxe@sha256:30269021715bd92593044cf9ebf68be455ddaa57508820af5094cb73ab4e61cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.7 KB (15705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42bfe5c2598303c8d091ac729d48c5f2ac197164c0f8756fc4eb420475c67352`
+-	Image ID: `sha256:fc3e1780c54a984820c30bcde96fdfeff4a81cc3e09b6400b917bd23e9cd3c56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3625298f861b3c7920ceaee293171df766dcb9d1e942b718ddf039f6fb1e2983`  
-		Last Modified: Mon, 21 Jul 2025 21:25:15 GMT  
+	-	`sha256:c0f6c2576e032e5c189f7d19983a73f3cb267fe31ec0dc9ac634103f61467234`  
+		Last Modified: Thu, 09 Oct 2025 00:25:47 GMT  
 		Size: 15.7 KB (15705 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1-alpine3.22`
 
 ```console
-$ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e928ba2b917cf
+$ docker pull haxe@sha256:f4d518d426d75cdf6053dc2282b3b75775fa16a29667c25b27ea30c555db84a9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21790,19 +21790,19 @@ $ docker pull haxe@sha256:0f2869b38698da51d364dadf73b87980865d8dc0f0888ad4706e92
 ### `haxe:5.0.0-preview.1-alpine3.22` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:1930e09e32f698e273daa05ff5862c6ab044af5a1f134c157a6ced2ed944ec7d
+$ docker pull haxe@sha256:34c215eb1bbb798fb3078148fff701ac11a779fce14f854d420c7067f0d98037
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39301793 bytes)**  
+-	Total Size: **39.4 MB (39380887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6b019e9a4eaee3f8f651916fc00b9dfccafe40224c2af7dcb9e38cb82bc07c`
+-	Image ID: `sha256:013b701ea91d3a88f941ae837ef2f02b947393276d5a3323dedd640589db0127`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21821,55 +21821,55 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1803a1510cad87afbcdce2384c0322e73df3c6cf16b5f2925dff34380ce26ba`  
-		Last Modified: Mon, 21 Jul 2025 17:21:05 GMT  
-		Size: 282.4 KB (282445 bytes)  
+	-	`sha256:655afca13c8bb98bda830e4086d991be41c6beed8708b695fe74e6b5e51b68aa`  
+		Last Modified: Wed, 08 Oct 2025 23:08:37 GMT  
+		Size: 291.1 KB (291148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce1685851d53c54ca3284215c86adb190ef5a95c82380aeb330415d53434104`  
-		Last Modified: Mon, 21 Jul 2025 17:21:07 GMT  
-		Size: 35.2 MB (35219659 bytes)  
+	-	`sha256:72c8062dfbc8c1d4673fbf600455401743873153d94d06ca8ac740bbc8141deb`  
+		Last Modified: Wed, 08 Oct 2025 23:08:39 GMT  
+		Size: 35.3 MB (35287287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d241465942c11eb0e02e4102aac2729ebf49d6aa65aee18ae977d9c3ee1b76d7
+$ docker pull haxe@sha256:cf872d24f5899c14ccbf1975a95357bfcef388e8a10b7c2ec398be929035b820
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.5 KB (16532 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a384f4d8ea804c9a91a6b14cc6397cb23ec6d45f2439fd12d564f49da1fa0fc`
+-	Image ID: `sha256:c1e29a18d8a7644732c2a207d1b1e05d1b37f1419bc6365afa64ecc5f97aa5d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c0a597f2101eadf3e0bf64088215bdfd551a170e3b445912b6b506467d7bd17`  
-		Last Modified: Mon, 21 Jul 2025 18:26:16 GMT  
+	-	`sha256:d6667f270eceb9bd0d6cfa14a7605d830cae89e4ada984dcb7002b4b84c3c7f2`  
+		Last Modified: Thu, 09 Oct 2025 00:25:25 GMT  
 		Size: 16.5 KB (16532 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-preview.1-alpine3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:5be60d862819af0b043a676f2556123d9ccde9ad960f373c1d2bffbf24ac6ed3
+$ docker pull haxe@sha256:c23476bcb5c0d2053134129549a8025798cff4eaf241c4e5634213b256502e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (40993612 bytes)**  
+-	Total Size: **41.1 MB (41077107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6afdc7670531fd602848320a55eed7ff74f840a1deae7aa3fe02facb15c33402`
+-	Image ID: `sha256:957ad99399be0097767a34b31c7d27fc4532777991860852fd57070cbd2d8ea9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Sun, 20 Jul 2025 17:22:57 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Sun, 20 Jul 2025 17:22:57 GMT
 CMD ["/bin/sh"]
 # Sun, 20 Jul 2025 17:22:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -21888,36 +21888,36 @@ CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ac1ca97ff9183cf3aa030177f1834650d7b9b4759a8232d673004a4279a2eef`  
-		Last Modified: Mon, 21 Jul 2025 18:20:12 GMT  
-		Size: 284.7 KB (284701 bytes)  
+	-	`sha256:697539f9cf61ed069cedb3abefa3df1c51e3a4a42f4bf7809b49cf599ebd9fdf`  
+		Last Modified: Wed, 08 Oct 2025 21:55:02 GMT  
+		Size: 294.1 KB (294095 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69cb4b139d1df01c8178c4c50fa6e39bf1decc037b22bff448c1f55701a12e8a`  
-		Last Modified: Mon, 21 Jul 2025 18:20:14 GMT  
-		Size: 36.6 MB (36578161 bytes)  
+	-	`sha256:b848775cc03539d05c9909ae8fd6c2ebf48459dd61a605583a503cd3250b655d`  
+		Last Modified: Wed, 08 Oct 2025 21:55:04 GMT  
+		Size: 36.6 MB (36644943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:65ad2362f26805be4325a3c156968931048ec139934cf2f843133911ca6b5cb9
+$ docker pull haxe@sha256:aca971b109e59cc88e531f5649b62a471e53cd22e943afba96599a2ce74f7e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.7 KB (16675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:032ada9c27fff1e0b6ca19b8f30b75b6b9e18743d10bacc1341e3d065b20ed61`
+-	Image ID: `sha256:377f10758df7f01888d9d6e7a231c0a7441a9ad0c3bc4dd428c04106b6c6871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fecb4b2fbdc90b34376eaa1d6b19aeefeb56a8892056a91fffaeaf5f235d0ead`  
-		Last Modified: Mon, 21 Jul 2025 21:25:04 GMT  
+	-	`sha256:c1a13f939f16fa1f2687b30f6fb5815c9ae57a2570372e977b16fe882552c351`  
+		Last Modified: Thu, 09 Oct 2025 00:25:29 GMT  
 		Size: 16.7 KB (16675 bytes)  
 		MIME: application/vnd.in-toto+json
 
