@@ -1,7 +1,7 @@
 ## `rust:1-alpine`
 
 ```console
-$ docker pull rust@sha256:be9d661d882194145e23bfef2fbc180ec515ddc87f4fc7e8b6f43844bb97651f
+$ docker pull rust@sha256:b4b54b176a74db7e5c68fdfe6029be39a02ccbcfe72b6e5a3e18e2c61b57ae26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -146,19 +146,19 @@ $ docker pull rust@sha256:c607f1439fa04f42e5ee6238b6db1961f3c66cfbbf2170d83a67c5
 ### `rust:1-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rust@sha256:df3a39440dd09ebf5cbf474463bfe9efcd976d2c91db782aff5c5234da69f5d8
+$ docker pull rust@sha256:9036b3b6866c1835ae0647bf6e39ed634c24250cbe5ce9323476525325207c8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **350.3 MB (350257839 bytes)**  
+-	Total Size: **350.3 MB (350263091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc8d00107fae752b34d54cb8e5f01f14181d3d4c263ed4f9db06031e9d5414e0`
+-	Image ID: `sha256:4b1c326a8fb61738f78b6e832d76856f610184e585f0bea48eeb0b05acc9a561`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-ppc64le.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Thu, 18 Sep 2025 14:07:21 GMT
+ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
+# Thu, 18 Sep 2025 14:07:21 GMT
 CMD ["/bin/sh"]
 # Thu, 18 Sep 2025 14:07:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
@@ -171,39 +171,39 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 ```
 
 -	Layers:
-	-	`sha256:b762f678859bfa5c3948b5f1b04959aa43c8aba88e2389e281413d303d62a7e3`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 3.7 MB (3727111 bytes)  
+	-	`sha256:85a0f69f026b4a01420490809bed190217e05518f7b718c0bbc1ad4871e0dedf`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a43f831cb02e9dce80eeaa7375c4dfedcfa716f1a4189f26aabe46f50177e8a`  
-		Last Modified: Thu, 18 Sep 2025 19:29:17 GMT  
-		Size: 59.0 MB (59004667 bytes)  
+	-	`sha256:8a56909a4c35c502dd43802ef31d4890df3cd54f15133b9f35dcaab1ec3f3219`  
+		Last Modified: Thu, 09 Oct 2025 05:14:10 GMT  
+		Size: 59.0 MB (59006725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef2095b13eeef0ea854b86e7da0555a732cec1241a55928121a12447b1009672`  
-		Last Modified: Thu, 18 Sep 2025 21:03:58 GMT  
-		Size: 287.5 MB (287526061 bytes)  
+	-	`sha256:cf20f6c21afdba425061e0ba687974793c99c42b22eafef8cce1227eb48c95ad`  
+		Last Modified: Thu, 09 Oct 2025 08:45:22 GMT  
+		Size: 287.5 MB (287524125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1-alpine` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:cd23a3c69910fd364dfbc817804235f19f4d1bd07ef9fd2a2f6860c4daf99515
+$ docker pull rust@sha256:fd67dce82d8a2b47d722b477a74576185f4a69052847396ccba385aec9c0cc45
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **805.0 KB (804995 bytes)**  
+-	Total Size: **807.6 KB (807608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c36b165ce545bf8798baedbadb07d72f9ca234e931f59a2d72072e3d1fda829`
+-	Image ID: `sha256:3c44369fd4d6569b24f091dde0bde6f511b3ece2eeadb14bc5830c655a4e4bf5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b65a6ffe2161f37a4288d569c92724b802ea2c9ed53e68f801ba6d65fdabcb28`  
-		Last Modified: Thu, 18 Sep 2025 20:44:56 GMT  
-		Size: 792.6 KB (792628 bytes)  
+	-	`sha256:ed8dccf24b40112f8c8bfb29e2beac0c23ea4a599fc28af8dd896d2a067e715e`  
+		Last Modified: Thu, 09 Oct 2025 08:44:26 GMT  
+		Size: 795.2 KB (795241 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:03c75b865eab8f36f71ebe1f39aa7efc81e0b0693a8d7fd5252108d42e168593`  
-		Last Modified: Thu, 18 Sep 2025 20:44:56 GMT  
+	-	`sha256:417fb1d78b372874952b95cf42ae7f491a90983707634ae9103ede8f18d7de58`  
+		Last Modified: Thu, 09 Oct 2025 08:44:27 GMT  
 		Size: 12.4 KB (12367 bytes)  
 		MIME: application/vnd.in-toto+json
