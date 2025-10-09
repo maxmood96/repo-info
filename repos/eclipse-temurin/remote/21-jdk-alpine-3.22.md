@@ -1,7 +1,7 @@
 ## `eclipse-temurin:21-jdk-alpine-3.22`
 
 ```console
-$ docker pull eclipse-temurin@sha256:df8ce8302ed2ed1690ef490c633981b07e752b373b5fdf796960fb2eb0d640ea
+$ docker pull eclipse-temurin@sha256:89517925fa675c6c4b770bee7c44d38a7763212741b0d6fca5a5103caab21a97
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,20 +14,20 @@ $ docker pull eclipse-temurin@sha256:df8ce8302ed2ed1690ef490c633981b07e752b373b5
 ### `eclipse-temurin:21-jdk-alpine-3.22` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:7aaf145ac1b4cac2cebce48828e6e7da4039eb3d0b49130533faaf4df104160c
+$ docker pull eclipse-temurin@sha256:59477b37bc856b1639ec73a5abe5b278699b3452ad78323b6f909317308a0e8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **182.9 MB (182935479 bytes)**  
+-	Total Size: **182.9 MB (182946046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:54d17d60983c21f089c889b65cf1aee37299c4d339f251c772d6fc6cbb96de86`
+-	Image ID: `sha256:ac485c3dab1d017bdbc50ed41a74b79ed085ac7e20609665479d1a588ab650bc`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
 CMD ["/bin/sh"]
 # Fri, 01 Aug 2025 11:04:34 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -52,68 +52,68 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2ba33acdd264f217998366b5d5fe9d078029b368628dd7dfecb38c4f20ff184`  
-		Last Modified: Mon, 04 Aug 2025 19:11:55 GMT  
-		Size: 21.1 MB (21104336 bytes)  
+	-	`sha256:0a2a5ff902df392c9f6430cfcee73bfa86c2856161d3162cbe1ec519b6da89a1`  
+		Last Modified: Wed, 08 Oct 2025 23:34:06 GMT  
+		Size: 21.1 MB (21112159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8988afcd1754ba6102804ea7b8ff2f925fc2e53b57ad39c3cde06070767f70ef`  
-		Last Modified: Mon, 04 Aug 2025 20:12:02 GMT  
-		Size: 158.0 MB (158029044 bytes)  
+	-	`sha256:18ef1487a229d2c2defc8ef70f98308c6bb819c1ee443e3f4d90d7399d6edd29`  
+		Last Modified: Wed, 08 Oct 2025 23:36:49 GMT  
+		Size: 158.0 MB (158029025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:960c5713500a85841f1ed2768d6f3a06d30e6af02bebbfc8bdb94124fc679a7c`  
-		Last Modified: Mon, 04 Aug 2025 19:11:54 GMT  
-		Size: 130.0 B  
+	-	`sha256:ede95b48c87bb31f7470a39694663bb7da86718f456e8968ca1fb4e0f2661f20`  
+		Last Modified: Wed, 08 Oct 2025 23:34:03 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4d23bb5eb8f811c49dae8f456527014d33599bb070f12294d58ce498048c7a1`  
-		Last Modified: Mon, 04 Aug 2025 19:11:53 GMT  
-		Size: 2.3 KB (2280 bytes)  
+	-	`sha256:64da9540a58e0598f9af16f6180d6ca8a17f6b7ec33c0b9b6c94ac191adf2cbc`  
+		Last Modified: Wed, 08 Oct 2025 23:34:03 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:21-jdk-alpine-3.22` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:f9adc01034c89cf01c3c9a67bb8e62b676aeb3378a3af5074380df6b9d2cbd76
+$ docker pull eclipse-temurin@sha256:34c29d7b466de247e321e5d2614463164c8f9744fb7600539c4be30d9e8027a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1125695 bytes)**  
+-	Total Size: **1.1 MB (1128308 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bbcfed928af7121cdc8ea12cea4ef3e427cb4d118b72ff360f6606406643a78`
+-	Image ID: `sha256:80b6fef223653d7f8485ca9a5c39c467665a69f1b95b908ccb464525491fcbfb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff694353446c5eb716f1f29e6bb5953e4cc6d30945e1015cee800d0f35267c68`  
-		Last Modified: Mon, 04 Aug 2025 21:20:19 GMT  
-		Size: 1.1 MB (1104252 bytes)  
+	-	`sha256:a7509781589177d4ebb1364b689cce376d192c32cc0f43a05c64122a708d0bde`  
+		Last Modified: Thu, 09 Oct 2025 00:15:10 GMT  
+		Size: 1.1 MB (1106865 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:45600ba14f9f73dad468f2005ba69e9d056e07fd8b5d9178d57137dd10e10350`  
-		Last Modified: Mon, 04 Aug 2025 21:20:20 GMT  
+	-	`sha256:5a14db1b6a71fd3bed429eb6cfc2cdda3bcfe208d2c4b2ea7c6834c133f3b3a3`  
+		Last Modified: Thu, 09 Oct 2025 00:15:11 GMT  
 		Size: 21.4 KB (21443 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:21-jdk-alpine-3.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:0a1431f3a44ad798e7b99f8bc5ef8f85f71001e2659cffabb35096313dacd384
+$ docker pull eclipse-temurin@sha256:b0d74c873f45169812fe70fa41e1891c02ae70ebd1a2ae562a8d2a1cc81a2642
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.3 MB (181304493 bytes)**  
+-	Total Size: **181.3 MB (181327209 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2627136bff4b57cd40dd5a8839822de43ca5bf71f5c3fe2877675cdc51eebad6`
+-	Image ID: `sha256:552d26c7e3f17d30ffe5118e7b3a626988d324b605394c294d93e73f919b1a51`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Fri, 01 Aug 2025 11:04:34 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Fri, 01 Aug 2025 11:04:34 GMT
 CMD ["/bin/sh"]
 # Fri, 01 Aug 2025 11:04:34 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -138,47 +138,47 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20a495748323e0cdac275f94a75856b53137d10e7dd79d59568fe601407fb00e`  
-		Last Modified: Mon, 04 Aug 2025 19:31:51 GMT  
-		Size: 21.1 MB (21148725 bytes)  
+	-	`sha256:b9bd7b864b4356da2df87ea4d5d6475aef6137a29351c1d3ecbe0d04706b6d89`  
+		Last Modified: Wed, 08 Oct 2025 22:58:01 GMT  
+		Size: 21.2 MB (21164177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:686152e11509087fae61a232dd8c14a35ba03ee6d67dc590eff8efd157e12de9`  
-		Last Modified: Mon, 04 Aug 2025 21:27:06 GMT  
-		Size: 156.0 MB (156022610 bytes)  
+	-	`sha256:07cfca150e78f40166bc18346742bcdc896b85bc86876b839dd2bdecfeea4222`  
+		Last Modified: Wed, 08 Oct 2025 22:58:11 GMT  
+		Size: 156.0 MB (156022554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25a5e3450f3fe69d4cac3d21cb8d6c1c51e6d6f96214aa277c280b7b8c543832`  
-		Last Modified: Mon, 04 Aug 2025 19:31:49 GMT  
+	-	`sha256:61b39e649c1874eec7c8c7e132fd4b4a84d5e2a481d34f6e6b71626cda96acc6`  
+		Last Modified: Wed, 08 Oct 2025 22:48:00 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5af7201f64b2984b23a0f6114fdb4930c66ab8886bf4145e5fce7dda16c5f25`  
-		Last Modified: Mon, 04 Aug 2025 19:31:49 GMT  
-		Size: 2.3 KB (2280 bytes)  
+	-	`sha256:8cee7d7d88a0fa09b65df9709dead73cd3ea73a09c5d71cf396727d3453ff025`  
+		Last Modified: Wed, 08 Oct 2025 22:47:59 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:21-jdk-alpine-3.22` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:679a2fdac0b608f33a75fba933cda4fb3e6e14e3217a21681731393ecaeeee1e
+$ docker pull eclipse-temurin@sha256:dc81083107d9d8c5238ae550ac311c5f85b03e584a78ca5f3d2b497e8f8e7041
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1275889 bytes)**  
+-	Total Size: **1.3 MB (1278504 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e3b95582d5b6894dfe9ce44e975bd09c29e11b0cd99ed15c3d2f2cb23cddb4f`
+-	Image ID: `sha256:633ad221d630bc2f048a676264577e66f65061a7d70cd39053b13857defef923`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1a9a651139d3dce2e95f1627d4fba51f1383cf60be60fe29925dec4ed651e43`  
-		Last Modified: Mon, 04 Aug 2025 21:20:23 GMT  
-		Size: 1.3 MB (1254290 bytes)  
+	-	`sha256:a30d98f3473586c23bd14d36aa7b80ee2b77bfff7ca4d726aa929b6a02cf7d3a`  
+		Last Modified: Wed, 08 Oct 2025 23:22:21 GMT  
+		Size: 1.3 MB (1256903 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:38042b48abb9b40a7d487aab8e47b2f4c2d5851bf2a6308d4ffbbf8371b78609`  
-		Last Modified: Mon, 04 Aug 2025 21:20:24 GMT  
-		Size: 21.6 KB (21599 bytes)  
+	-	`sha256:47fe01fabddb307bdec2ef36e7b5b7c2bd2ecb0b4c84e55af313fd9126351207`  
+		Last Modified: Wed, 08 Oct 2025 23:22:23 GMT  
+		Size: 21.6 KB (21601 bytes)  
 		MIME: application/vnd.in-toto+json
