@@ -1,10 +1,10 @@
-# `percona:psmdb-8.0.8`
+# `percona:psmdb-8.0.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:95c23e583b0aeedb1d72b43f55daf1ed5622b137734c0d7e85fae68c4b345e80`
-- Created: `2025-07-07T10:50:23Z`
-- Virtual Size: ~ 818.07 Mb  
+- Image ID: `sha256:f2e4e4daf7617a1774076fe813340f28cf5a5ecf2d6af6e0bfc38acbd63e9ffe`
+- Created: `2025-10-06T13:56:56Z`
+- Virtual Size: ~ 821.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=8.0.8-3`
+  - `PSMDB_VERSION=8.0.12-4`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.8-3.el9`
+  - `FULL_PERCONA_VERSION=8.0.12-4.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=testing`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
@@ -199,6 +199,17 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-21.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
+```
+
+### `rpm` package: `cyrus-sasl-plain-2.1.27-21.el9.x86_64`
+
+Licenses (from `rpm --query`): BSD with advertising
+
+Source:
+
+```console
+$ dnf --quiet download --source --url cyrus-sasl-plain-2.1.27-21.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
 ```
 
@@ -1388,19 +1399,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-8.0.8-3.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.12-4.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-8.0.8-3.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.12-4.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-8.0.8-3.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.12-4.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
