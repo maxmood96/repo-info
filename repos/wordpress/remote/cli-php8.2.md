@@ -1071,7 +1071,7 @@ CMD ["wp" "shell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64b37d255fd2164dd393aed90f26017f3c706361c3fcfdc44117edd952d7ac0a`  
-		Last Modified: Thu, 09 Oct 2025 05:46:37 GMT  
+		Last Modified: Thu, 09 Oct 2025 21:53:27 GMT  
 		Size: 14.1 MB (14133725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:142e77ceeab53ef30d6ee2e9a3cd1e59f474f7774acee0612da6a5e34d3a0088`  
@@ -1289,7 +1289,7 @@ $ docker pull wordpress@sha256:eb09360a6cf4f01bfe1f3791f164b431fd85a27e0803dac56
 		Size: 593.4 KB (593353 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:151e444d2545d4736f6c742f4eaf95d2105ba01d0661da6c82b8e544915aecbb`  
-		Last Modified: Wed, 06 Aug 2025 10:14:30 GMT  
+		Last Modified: Wed, 06 Aug 2025 08:10:24 GMT  
 		Size: 43.4 KB (43377 bytes)  
 		MIME: application/vnd.in-toto+json
 
