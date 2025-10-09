@@ -1,7 +1,7 @@
 ## `node:iron-alpine3.22`
 
 ```console
-$ docker pull node@sha256:876e7b6d45a25acebc6d14af299f6fa9659019bdc0a23492adf76d14722f0ca8
+$ docker pull node@sha256:1ab6fc5a31d515dc7b6b25f6acfda2001821f2c2400252b6cb61044bd9f9ad48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -322,20 +322,20 @@ $ docker pull node@sha256:0b443ace6cc6c1431fbc2cae116a6a35a1a0ef2ee79080df48155f
 ### `node:iron-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:0261d9dbfc18975514ae6d1fef50d5ccd796433b73c78d5765fb681b33a62213
+$ docker pull node@sha256:284d944df7df46bf736dd2f4ad8a71389d92d30262ed715cf7850caac47cc208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.5 MB (50492214 bytes)**  
+-	Total Size: **50.5 MB (50497360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1249e0910ec9db0ce3e8bc1a8fe2a461a4e8369c4e668a0268d0bacd6c84287a`
+-	Image ID: `sha256:45f4d8a043a19a44fe0e2dcc76b26f7abfbf783d35cdb21cb8001e420541c247`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-ppc64le.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Wed, 03 Sep 2025 19:47:58 GMT
+ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
+# Wed, 03 Sep 2025 19:47:58 GMT
 CMD ["/bin/sh"]
 # Wed, 03 Sep 2025 19:47:58 GMT
 ENV NODE_VERSION=20.19.5
@@ -354,64 +354,64 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:b762f678859bfa5c3948b5f1b04959aa43c8aba88e2389e281413d303d62a7e3`  
-		Last Modified: Tue, 15 Jul 2025 18:59:53 GMT  
-		Size: 3.7 MB (3727111 bytes)  
+	-	`sha256:85a0f69f026b4a01420490809bed190217e05518f7b718c0bbc1ad4871e0dedf`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:749b4752c0ad227dadf7a0a55e8b7ce6fd008a9f4fe73b23746273499b2009b1`  
-		Last Modified: Wed, 03 Sep 2025 21:06:52 GMT  
-		Size: 45.5 MB (45504093 bytes)  
+	-	`sha256:d2000e922e3a5adb77dd111ff1721ee5bd33137ff10a4bddb8ca4129b2823a2b`  
+		Last Modified: Thu, 09 Oct 2025 04:34:11 GMT  
+		Size: 45.5 MB (45504108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da0ae453406121985fe933b18f817a34a0f83f86cbb41bd0dc6cb857569fe839`  
-		Last Modified: Wed, 03 Sep 2025 21:06:45 GMT  
-		Size: 1.3 MB (1260564 bytes)  
+	-	`sha256:55f0280c81373f5f0d8127e7d74555eaa7ed0ae724e3840e633a302fdf174e6f`  
+		Last Modified: Thu, 09 Oct 2025 04:34:06 GMT  
+		Size: 1.3 MB (1260565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f18f361af6db716fee6b08c9780f085b82db40c92cdabec12d5015e9a636d81b`  
-		Last Modified: Wed, 03 Sep 2025 21:06:46 GMT  
+	-	`sha256:e82d7b00881afd18bba0830cbbe715773f01c01f84c89db66d925f021b30ae36`  
+		Last Modified: Thu, 09 Oct 2025 04:34:06 GMT  
 		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:iron-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:c91a6ff14bf37731bac2d23e1de0c13c7100909981bf92f749b2d664417294e8
+$ docker pull node@sha256:1766168fc4dba12369c3d89cf9fd5fa130a897e095929392cf7672926cf1e3bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **398.6 KB (398648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70d02d1f2e58867777db10f87259fbf517749b49cb4f31560a21da5ab6c27c9b`
+-	Image ID: `sha256:3b4318f894b09887251bd27b3a95d8d18d67963b59535cb2a5d3ca841619589f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b96d15eee4e6b2e61726d9cb5cfa15d59bd7f419d2c87165aa698604d097273`  
-		Last Modified: Thu, 04 Sep 2025 00:39:01 GMT  
+	-	`sha256:564e214fa770cd231093b99643edace10e6d8f682614fcba7b9f23ff1cec0cdb`  
+		Last Modified: Thu, 09 Oct 2025 06:38:31 GMT  
 		Size: 373.3 KB (373325 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c823521454ea3ef0b2d09cfa47b9320545bfaf28d19cb60af98c22ae4ef88ae`  
-		Last Modified: Thu, 04 Sep 2025 00:39:02 GMT  
+	-	`sha256:c56b434b1376a4f2204a6924b45892b9ed619d5f42d853f2398021022dc7c07c`  
+		Last Modified: Thu, 09 Oct 2025 06:38:32 GMT  
 		Size: 25.3 KB (25323 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:iron-alpine3.22` - linux; s390x
 
 ```console
-$ docker pull node@sha256:14395ee8695dcb2ea2af2af499be2999213dad812dc196b9b6853c365be18763
+$ docker pull node@sha256:20bc2ba2409031e48a1ee52ab14302061e2e1b1c45b2961ee18aa18abc18d137
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.8 MB (48811193 bytes)**  
+-	Total Size: **48.8 MB (48815765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21a14c8c9ff88201e0ef8531df9513c6b3d023828e103ab5eb7613b31291a928`
+-	Image ID: `sha256:330072149a53690aed0764970264ea054d0162570d4a40cb575aa76684c41d03`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-s390x.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Wed, 03 Sep 2025 19:47:58 GMT
+ADD alpine-minirootfs-3.22.2-s390x.tar.gz / # buildkit
+# Wed, 03 Sep 2025 19:47:58 GMT
 CMD ["/bin/sh"]
 # Wed, 03 Sep 2025 19:47:58 GMT
 ENV NODE_VERSION=20.19.5
@@ -430,43 +430,43 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:5d29754ce036967079405405a04a54a7d3f8ba85e0057b6bdda3d03aa59c8361`  
-		Last Modified: Tue, 15 Jul 2025 19:00:06 GMT  
-		Size: 3.6 MB (3644971 bytes)  
+	-	`sha256:e6b06613ca2e7cdf3e8ebbe71ca45137242628a4a3a4bfcb7a9f76d0d5b0e653`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.6 MB (3649244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:484e1f3d89d3eabbe90680f5aa68b43c82ade21f25000467653f9bc7f11ae046`  
-		Last Modified: Wed, 03 Sep 2025 22:03:57 GMT  
-		Size: 43.9 MB (43905220 bytes)  
+	-	`sha256:a9071b53a9a22569a26a2170d073f06669c47c3dd57e9947b0b4d1b2bb0ad318`  
+		Last Modified: Thu, 09 Oct 2025 05:53:22 GMT  
+		Size: 43.9 MB (43905513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aedca4d4c49852250e85c69e97b48284bdbd2c32b8c8a9a7465ec9d205388f84`  
-		Last Modified: Wed, 03 Sep 2025 22:03:52 GMT  
-		Size: 1.3 MB (1260558 bytes)  
+	-	`sha256:7bb8f38aae81914aa3e31759e4cf4767bdd325398a7e5ba6192e36ced66bf35e`  
+		Last Modified: Thu, 09 Oct 2025 05:53:05 GMT  
+		Size: 1.3 MB (1260565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:810c54b6969e57ed1910cba6e56155299e72034169077e7d0cd641d82d73ad35`  
-		Last Modified: Wed, 03 Sep 2025 22:03:52 GMT  
-		Size: 444.0 B  
+	-	`sha256:2837ca5cb5818ccae2e0641b979d71d34e86f97bb060b4578565f1313f39820f`  
+		Last Modified: Thu, 09 Oct 2025 05:53:04 GMT  
+		Size: 443.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:iron-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:332f7187a585c7b0cb70a1b0254fc32fd5be895d24927f54a695301f511b6b19
+$ docker pull node@sha256:f3527ced3bca2e7371f2a40809567f6113b554bb7977050b42f57c7f9c5e64d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **398.5 KB (398520 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca53f3b12962f664e64461dd584ea4611ae558727ce1b51d8fa9ffd38aca90d9`
+-	Image ID: `sha256:fd35de197a6eef75013e1c84f8c756599b0e325aba4860bc07a39e13f2fd610c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:20ccf7614f93edc8bfb02d2e9982cfc382303ef7b1794807c37409c258d3e97b`  
-		Last Modified: Thu, 04 Sep 2025 00:39:06 GMT  
+	-	`sha256:60b6d1950d510fdc4461375a1913d75c382b9713b7152d257d2dfd0db2fa6043`  
+		Last Modified: Thu, 09 Oct 2025 06:38:35 GMT  
 		Size: 373.3 KB (373267 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dce19352356318fd5ee928054e996e06bf559d57f86cb34f27c3dba1374a18dc`  
-		Last Modified: Thu, 04 Sep 2025 00:39:06 GMT  
+	-	`sha256:27a23ccc0c69e6934b831d8a0a0e84ee6e68074467242adedc1742751d42e672`  
+		Last Modified: Thu, 09 Oct 2025 06:38:36 GMT  
 		Size: 25.3 KB (25253 bytes)  
 		MIME: application/vnd.in-toto+json
