@@ -1,7 +1,7 @@
 ## `httpd:alpine`
 
 ```console
-$ docker pull httpd@sha256:dad81abbbcfeb58602b5ac4e11c4336d04db48ea1d69b038185191fb363012be
+$ docker pull httpd@sha256:08598e607ff7fa938e029ae05edbba141ebfb7e256846d24cd71d092a49ef9d3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,19 +26,19 @@ $ docker pull httpd@sha256:dad81abbbcfeb58602b5ac4e11c4336d04db48ea1d69b03818519
 ### `httpd:alpine` - linux; amd64
 
 ```console
-$ docker pull httpd@sha256:600e1972eb965a256355fd095adc86d8803a45857856f9b433d4eb9f370c48ae
+$ docker pull httpd@sha256:e757d348507ee747e6ec32f241ae54742233516ceead870e067b1133a6999ed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.1 MB (20148522 bytes)**  
+-	Total Size: **20.2 MB (20162456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:413c1ac706f85ca3fe6b5fb02e8d77fd8368eea52cfaa8d4542e7c3b9025d947`
+-	Image ID: `sha256:506d7042d2f425de769009b9b643a383ccaa9a714daeaaf1d0e45da3960caf05`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86_64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Wed, 23 Jul 2025 17:31:12 GMT
+ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
 CMD ["/bin/sh"]
 # Wed, 23 Jul 2025 17:31:12 GMT
 RUN set -x 	&& adduser -u 82 -D -S -G www-data www-data # buildkit
@@ -71,172 +71,75 @@ CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8`  
-		Last Modified: Tue, 15 Jul 2025 19:00:01 GMT  
-		Size: 3.8 MB (3799689 bytes)  
+	-	`sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:640af2297e40e46bc1ec9694673477351bb7dc955e044ea64216624b4018a977`  
-		Last Modified: Wed, 23 Jul 2025 21:49:09 GMT  
-		Size: 935.0 B  
+	-	`sha256:e5a1637a5ea0e57b68532eb2c59e9c00aa5b73e6d21bc1f2e486b5080592cc46`  
+		Last Modified: Wed, 08 Oct 2025 22:39:25 GMT  
+		Size: 934.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:222864b721ffccbd4309ad713a31d1db7a56d17369a543a32d3744a917f01725`  
-		Last Modified: Wed, 23 Jul 2025 21:49:09 GMT  
+	-	`sha256:50fa142ca9bcb1a52dd6cc7c8cd19375c3d7c168fa5751a6b5bfc8fb8c1c7f43`  
+		Last Modified: Wed, 08 Oct 2025 22:39:25 GMT  
 		Size: 146.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e3ba26ebd15e9b42642da10052a1cb94d3cf70b837a5b34192943d63b2b2c4f`  
-		Last Modified: Wed, 23 Jul 2025 21:49:10 GMT  
-		Size: 10.6 MB (10589258 bytes)  
+	-	`sha256:843a2f73d27987f41be2716de7109d3da733e67f6b765bd1a509d9488eb33a4d`  
+		Last Modified: Wed, 08 Oct 2025 22:39:26 GMT  
+		Size: 10.6 MB (10600422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4692d2e009ed17015aecb1bb827580bd82860fbb27e67390193b8bca2ed977e`  
-		Last Modified: Wed, 23 Jul 2025 21:49:10 GMT  
-		Size: 5.8 MB (5758176 bytes)  
+	-	`sha256:efa28cc119fe44e224de55f89cd24f440c60de44c565423a017dff218db13796`  
+		Last Modified: Wed, 08 Oct 2025 22:39:26 GMT  
+		Size: 5.8 MB (5758183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49dda30605d3cb7a3079379107af081e2ffc98659f140dccc88bcf52151e39e3`  
-		Last Modified: Wed, 23 Jul 2025 21:49:09 GMT  
-		Size: 286.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `httpd:alpine` - unknown; unknown
-
-```console
-$ docker pull httpd@sha256:c664f4b5f281ba533bd5d85c5351756c2fa8dec22ab5c7dc67a70ad291153afd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1201115 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52bcddf1fa9121da37dc6e4f760975e356370d8c5c5b6986b9216fd011afa7dd`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:5107c4acf83bb9ce6e65f8c96c8ede436f2bad61b95ac25293c26272e2cd7a93`  
-		Last Modified: Wed, 23 Jul 2025 23:53:04 GMT  
-		Size: 1.2 MB (1162866 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:ab9b7fa46d38d335f2735ac6105d84fd793a0c71c2dd5a1aa6c9cddb5e971843`  
-		Last Modified: Wed, 23 Jul 2025 23:53:05 GMT  
-		Size: 38.2 KB (38249 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `httpd:alpine` - linux; arm variant v6
-
-```console
-$ docker pull httpd@sha256:6d7a1a9af876fdbae07ff8f0c997005b06fe34b3bdfc2dd57ccf2e97cfaf2496
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.9 MB (18937449 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:451f4f2622a1dcb9673425d3bfe48e3bae9aade1a9add50b940dc4b249f7b90b`
--	Default Command: `["httpd-foreground"]`
-
-```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-armhf.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
-CMD ["/bin/sh"]
-# Wed, 23 Jul 2025 17:31:12 GMT
-RUN set -x 	&& adduser -u 82 -D -S -G www-data www-data # buildkit
-# Wed, 23 Jul 2025 17:31:12 GMT
-ENV HTTPD_PREFIX=/usr/local/apache2
-# Wed, 23 Jul 2025 17:31:12 GMT
-ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Jul 2025 17:31:12 GMT
-RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX" # buildkit
-# Wed, 23 Jul 2025 17:31:12 GMT
-WORKDIR /usr/local/apache2
-# Wed, 23 Jul 2025 17:31:12 GMT
-RUN set -eux; 	apk add --no-cache 		apr 		apr-util 		apr-util-ldap 		ca-certificates 		perl 	; # buildkit
-# Wed, 23 Jul 2025 17:31:12 GMT
-ENV HTTPD_VERSION=2.4.65
-# Wed, 23 Jul 2025 17:31:12 GMT
-ENV HTTPD_SHA256=58b8be97d9940ec17f7656c0c6b9f41b618aac468b894b534148e3296c53b8b3
-# Wed, 23 Jul 2025 17:31:12 GMT
-ENV HTTPD_PATCHES=
-# Wed, 23 Jul 2025 17:31:12 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		apr-dev 		apr-util-dev 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		patch 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://downloads.apache.org/ 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 		C55AB7B9139EB2263CD1AABC19B033D1760C227B 		26F51EF9A82F4ACB43F1903ED377C9E7D1944C66 	; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*User)\s+daemon\s*$!\1 www-data!g' 		-e 's!^(\s*Group)\s+daemon\s*$!\1 www-data!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 	grep -E '^\s*User www-data$' "$HTTPD_PREFIX/conf/httpd.conf"; 	grep -E '^\s*Group www-data$' "$HTTPD_PREFIX/conf/httpd.conf"; 		deps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-so-deps $deps; 	apk del --no-network .build-deps; 		httpd -v # buildkit
-# Wed, 23 Jul 2025 17:31:12 GMT
-STOPSIGNAL SIGWINCH
-# Wed, 23 Jul 2025 17:31:12 GMT
-COPY httpd-foreground /usr/local/bin/ # buildkit
-# Wed, 23 Jul 2025 17:31:12 GMT
-EXPOSE map[80/tcp:{}]
-# Wed, 23 Jul 2025 17:31:12 GMT
-CMD ["httpd-foreground"]
-```
-
--	Layers:
-	-	`sha256:06bab5e847c5674d6ec26b342cc11d7a051a6a231e5db8a955d57bc9f4ab5595`  
-		Last Modified: Tue, 15 Jul 2025 18:59:34 GMT  
-		Size: 3.5 MB (3500910 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30892ccbe7e313a78cb1ccd70b86836fcb7b4214bd2ca59ecde9084953898be5`  
-		Last Modified: Wed, 23 Jul 2025 21:48:40 GMT  
-		Size: 933.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04bfde8b9ce8b7db0fe4e1f87747545cb12406572266b93a9bb22cd4212d16bf`  
-		Last Modified: Wed, 23 Jul 2025 21:48:40 GMT  
-		Size: 145.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8970ede6b3fbaf3ab8df64cb0d3b22becaf1fd965dcc7695e24292378e64c75c`  
-		Last Modified: Wed, 23 Jul 2025 21:48:41 GMT  
-		Size: 9.8 MB (9807232 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:257094e4aeb9d4a83656e3d65065bb7593a79b2a1ada340313c1443e65ef7c8c`  
-		Last Modified: Wed, 23 Jul 2025 21:48:41 GMT  
-		Size: 5.6 MB (5627910 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc79d67d86102edf39e23644e2e92623719c6bf925cd6bd708d981e575ca4944`  
-		Last Modified: Wed, 23 Jul 2025 21:48:40 GMT  
+	-	`sha256:932e71301ea975508d2b04ea7713a9cc025f7e2f8430b87173515cf1f9f25a22`  
+		Last Modified: Wed, 08 Oct 2025 22:39:25 GMT  
 		Size: 287.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `httpd:alpine` - unknown; unknown
 
 ```console
-$ docker pull httpd@sha256:116057d4d764ac5852068353536312926c16bee8b7c37f2aa38022b08b3ec5ef
+$ docker pull httpd@sha256:2e8d6cae0a0f7de266044097551b074804067bf1552d3c9b09336bb82f9fe483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.2 KB (38178 bytes)**  
+-	Total Size: **1.2 MB (1203728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8aad72f0fcf6a47ff60a777c687a370e25cfd0b015ceb075c0087055498f3d7`
+-	Image ID: `sha256:09fc868bd1a5ae17130089e33df8c719bd91223ecdbd7327b67f2301dedb1501`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7e29c4667c4f9dade20bbc2c374f2c4957371f6cd5213a9762758e2765771acd`  
-		Last Modified: Wed, 23 Jul 2025 23:53:09 GMT  
-		Size: 38.2 KB (38178 bytes)  
+	-	`sha256:1702db3799ecf0872d377b8ca83715613e4f1a997586f6725ea0d2d41e388975`  
+		Last Modified: Wed, 08 Oct 2025 23:52:36 GMT  
+		Size: 1.2 MB (1165479 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:735d42d1ae28f37e6fb2004c4a5d3cae7a9ecee54c4e2cd4ee2fdf879e1344eb`  
+		Last Modified: Wed, 08 Oct 2025 23:52:37 GMT  
+		Size: 38.2 KB (38249 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `httpd:alpine` - linux; arm variant v7
+### `httpd:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull httpd@sha256:79c4622d299197d5447bac5055984fbd4afeebce2c4deb9759f2db6d28e1a282
+$ docker pull httpd@sha256:a3a6662f00ceb892c28ffdcd5aec8b5eceaf137c107711b782f16bc3758c4072
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18133310 bytes)**  
+-	Total Size: **19.0 MB (18964710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f28e39570a9f3c8b2a5e31750739beff87e1512f69d503b2b409eeeb08f82984`
+-	Image ID: `sha256:88391ed6ded489ae0eeb09417e9b7457696d33087cc16aac0ccfbe04a1ad0f9b`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-armv7.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Wed, 23 Jul 2025 17:31:12 GMT
+ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
 CMD ["/bin/sh"]
 # Wed, 23 Jul 2025 17:31:12 GMT
 RUN set -x 	&& adduser -u 82 -D -S -G www-data www-data # buildkit
@@ -269,75 +172,71 @@ CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:5ee064f8764b09a64829b58705219a88e0b13243f7f403d66ac0c639640426a5`  
-		Last Modified: Tue, 15 Jul 2025 19:04:18 GMT  
-		Size: 3.2 MB (3219038 bytes)  
+	-	`sha256:bb1da3d879939be7df9f182950d2fb201d4fc2e1043677da2037cd6afb084ce0`  
+		Last Modified: Wed, 08 Oct 2025 21:00:16 GMT  
+		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a381867a63f5717d1d9f62bc2404c800c89d035d90a97496d49ae9f75eca95e8`  
-		Last Modified: Tue, 15 Jul 2025 19:33:17 GMT  
+	-	`sha256:99e74598f004b58535e274db0114d744ff0181e5cb9a157cd33c0e2384fdb6cc`  
+		Last Modified: Wed, 08 Oct 2025 21:42:29 GMT  
 		Size: 934.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed42615bb6c3aedc7a23d929258f8aaba3cff7b5cc122c7c299e7cb06354696`  
-		Last Modified: Tue, 15 Jul 2025 19:33:16 GMT  
-		Size: 146.0 B  
+	-	`sha256:2253dae2991d3c2b2731fd10b909bfb609cefc73a354c99bf7a6ce7868792c42`  
+		Last Modified: Wed, 08 Oct 2025 21:42:29 GMT  
+		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09649a68db3267d9efe60583285b569e29907a769571795a0926de03900ae916`  
-		Last Modified: Tue, 15 Jul 2025 19:33:20 GMT  
-		Size: 9.6 MB (9596362 bytes)  
+	-	`sha256:dd2a5579259c44041e5c48ddb88f7a0b6e323e8da9d8b3b06f18b1adefda42cd`  
+		Last Modified: Wed, 08 Oct 2025 21:42:30 GMT  
+		Size: 9.8 MB (9831192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04972a12ade8550f93eeeff0e9119695221d13e0291231b1e560952f634d470d`  
-		Last Modified: Wed, 23 Jul 2025 21:51:19 GMT  
-		Size: 5.3 MB (5316506 bytes)  
+	-	`sha256:8080aaf6a1b4c3a306be5c3e731190e158d9a52ae7976494435703b1fc2e5006`  
+		Last Modified: Wed, 08 Oct 2025 21:42:29 GMT  
+		Size: 5.6 MB (5628040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d8a050866f79dc4603fbe493f521ee64b0a470a01eabc0d34e3d5ae4ef68440`  
-		Last Modified: Wed, 23 Jul 2025 21:51:08 GMT  
-		Size: 292.0 B  
+	-	`sha256:7268ce916800ea7c7f4386db0aaa5f5ce342ef818a99425691f62bad1e60ae7a`  
+		Last Modified: Wed, 08 Oct 2025 21:42:29 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `httpd:alpine` - unknown; unknown
 
 ```console
-$ docker pull httpd@sha256:7285c7986314c0f9802c74b34b76344ae7496ae2df84bd01e2b393146cddbe61
+$ docker pull httpd@sha256:9c8c225450dcac848867c633cc0d74965e2f4989773ace4c98dc6478c6273500
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1204317 bytes)**  
+-	Total Size: **38.2 KB (38182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d9d62a87f83b79a47696e24d3dd7596d3e0fd7cee9af3b54a2949bca69b9906`
+-	Image ID: `sha256:5164eda16c59f68ded863efcbffd00fcad05b18ae659eca96ed7abcbae98cce9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb58a406d8dab98009f14d5298e343dda50d1b375d6102b2610f4aede1e6f5ed`  
-		Last Modified: Wed, 23 Jul 2025 23:53:12 GMT  
-		Size: 1.2 MB (1165924 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1e05d200f488bd0695842e0a3ec89ecab90f1ed411c40b08963c5c1b6b75b629`  
-		Last Modified: Wed, 23 Jul 2025 23:53:13 GMT  
-		Size: 38.4 KB (38393 bytes)  
+	-	`sha256:355bf6be5862942e2e56e1e50a15d30d02c7796860bdea3ed535f726aa180236`  
+		Last Modified: Wed, 08 Oct 2025 23:52:41 GMT  
+		Size: 38.2 KB (38182 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `httpd:alpine` - linux; arm64 variant v8
+### `httpd:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull httpd@sha256:639887e20349f5c12c4def96de0ec7d59322511e91205b0324399a150363849e
+$ docker pull httpd@sha256:1f9b4246f6f2315c855cca21f49d455ad25242ea45590ba904603cfce312dba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.6 MB (20579503 bytes)**  
+-	Total Size: **18.1 MB (18149584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee06359578cb7460341a65e2ceeea396958893743ef2ae526ebe4f87dfdedb88`
+-	Image ID: `sha256:37fec5b03f9bda96ade89c7f94029bb15832baced40f1b2d5b1db6e37ccf5a2f`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-aarch64.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Wed, 23 Jul 2025 17:31:12 GMT
+ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
 CMD ["/bin/sh"]
 # Wed, 23 Jul 2025 17:31:12 GMT
 RUN set -x 	&& adduser -u 82 -D -S -G www-data www-data # buildkit
@@ -370,75 +269,176 @@ CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6e174226ea690ced550e5641249a412cdbefd2d09871f3e64ab52137a54ba606`  
-		Last Modified: Tue, 15 Jul 2025 18:59:50 GMT  
-		Size: 4.1 MB (4130750 bytes)  
+	-	`sha256:2763c7fc79b66030222442365f4a0f69d9dbaa11f7fd47a918d29d732d52996c`  
+		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
+		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:804e7b741cbe96c4d47fe33bacc9cdccd7d507b6f4fe4f7ec0573126325b8d7e`  
-		Last Modified: Wed, 23 Jul 2025 22:39:05 GMT  
-		Size: 935.0 B  
+	-	`sha256:66e6bb1db2fb4a5ed161333bc5e1a74aa8ad6025606d9e5e58f1a3823719a1b7`  
+		Last Modified: Wed, 08 Oct 2025 21:43:04 GMT  
+		Size: 933.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c36cfd18a2ad51d56359ec53440df0ce05756b8a599fff2f3e42f570f0ffb1fa`  
-		Last Modified: Wed, 23 Jul 2025 22:39:05 GMT  
+	-	`sha256:df584151e0c792d17d285c4362d9cb679930a26d1f128879ea5c873672420421`  
+		Last Modified: Wed, 08 Oct 2025 21:43:04 GMT  
 		Size: 146.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:929ff044b561476ac0fcdb044d4ed79e6945e250173bb7e9d40a9c789186fdec`  
-		Last Modified: Wed, 23 Jul 2025 22:39:07 GMT  
-		Size: 10.6 MB (10582761 bytes)  
+	-	`sha256:b94ae431b5c49734cbbe7034a8a0b59ab546e2e8a578e60a256c7a913c1e6d37`  
+		Last Modified: Wed, 08 Oct 2025 21:43:05 GMT  
+		Size: 9.6 MB (9610013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc115bca8763a9053cbef541e65e26589c7cb9efd62b573cf84a3d0a9aa43c41`  
-		Last Modified: Wed, 23 Jul 2025 22:39:06 GMT  
-		Size: 5.9 MB (5864593 bytes)  
+	-	`sha256:467001f4705e6ea7e1902eb05331289227031d096240809f463f3ac300e0b220`  
+		Last Modified: Wed, 08 Oct 2025 21:43:04 GMT  
+		Size: 5.3 MB (5316623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad466e11036a65062c7b15363337b0c24c9457d16e3a7943cf00cbb4a129735b`  
-		Last Modified: Wed, 23 Jul 2025 22:39:05 GMT  
+	-	`sha256:9e3434591ba7002f3bf0867b2b8f749c7f8e5b6ac61a2f372a3433ffb82732ef`  
+		Last Modified: Wed, 08 Oct 2025 21:43:04 GMT  
+		Size: 282.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `httpd:alpine` - unknown; unknown
+
+```console
+$ docker pull httpd@sha256:1e21bea69c43e28dba8c33ca4bb293b3c79eacffa3c5c297a9b05a894958f704
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.2 MB (1206934 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:064567cc49e630630dd59c8dba6478a790828e21e928c5d034c13a983df1fb21`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:941eef5234e7305bda93fdc892b90617c06b20eac6f4a88eeab1717c5e2208d6`  
+		Last Modified: Wed, 08 Oct 2025 23:52:44 GMT  
+		Size: 1.2 MB (1168537 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:75dbf3e6bada7ab99237a5ce561f39e6b950694da6cbf2cdc308dc14a52a4980`  
+		Last Modified: Wed, 08 Oct 2025 23:52:45 GMT  
+		Size: 38.4 KB (38397 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `httpd:alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull httpd@sha256:5d19fbadfd0de797f404d49c2ec15da1863d9ed3cae4cfa4775758767128375d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **20.6 MB (20598916 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b3728e4900e1b2ae39cafbee25af29199ccb1d342fda9112bcd60f9f5daee216`
+-	Default Command: `["httpd-foreground"]`
+
+```dockerfile
+# Wed, 23 Jul 2025 17:31:12 GMT
+ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
+CMD ["/bin/sh"]
+# Wed, 23 Jul 2025 17:31:12 GMT
+RUN set -x 	&& adduser -u 82 -D -S -G www-data www-data # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
+ENV HTTPD_PREFIX=/usr/local/apache2
+# Wed, 23 Jul 2025 17:31:12 GMT
+ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 23 Jul 2025 17:31:12 GMT
+RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX" # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
+WORKDIR /usr/local/apache2
+# Wed, 23 Jul 2025 17:31:12 GMT
+RUN set -eux; 	apk add --no-cache 		apr 		apr-util 		apr-util-ldap 		ca-certificates 		perl 	; # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
+ENV HTTPD_VERSION=2.4.65
+# Wed, 23 Jul 2025 17:31:12 GMT
+ENV HTTPD_SHA256=58b8be97d9940ec17f7656c0c6b9f41b618aac468b894b534148e3296c53b8b3
+# Wed, 23 Jul 2025 17:31:12 GMT
+ENV HTTPD_PATCHES=
+# Wed, 23 Jul 2025 17:31:12 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		apr-dev 		apr-util-dev 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		patch 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://downloads.apache.org/ 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 		C55AB7B9139EB2263CD1AABC19B033D1760C227B 		26F51EF9A82F4ACB43F1903ED377C9E7D1944C66 	; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*User)\s+daemon\s*$!\1 www-data!g' 		-e 's!^(\s*Group)\s+daemon\s*$!\1 www-data!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 	grep -E '^\s*User www-data$' "$HTTPD_PREFIX/conf/httpd.conf"; 	grep -E '^\s*Group www-data$' "$HTTPD_PREFIX/conf/httpd.conf"; 		deps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-so-deps $deps; 	apk del --no-network .build-deps; 		httpd -v # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
+STOPSIGNAL SIGWINCH
+# Wed, 23 Jul 2025 17:31:12 GMT
+COPY httpd-foreground /usr/local/bin/ # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
+EXPOSE map[80/tcp:{}]
+# Wed, 23 Jul 2025 17:31:12 GMT
+CMD ["httpd-foreground"]
+```
+
+-	Layers:
+	-	`sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 4.1 MB (4138069 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3cf74392846a9a8926c9bcf815cb007bedf33453f4a2c89dc131fe5e3fe2d176`  
+		Last Modified: Wed, 08 Oct 2025 21:29:05 GMT  
+		Size: 934.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cea5db86f4cbd9592f350d2b3bc44dddd63c513526f306d70102e194a8797a7`  
+		Last Modified: Wed, 08 Oct 2025 21:29:06 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:df2d0f34e82b6d2c4b50a9b87c2a12fc4e7280ae66b30119f4f949fec2871aa7`  
+		Last Modified: Wed, 08 Oct 2025 21:29:15 GMT  
+		Size: 10.6 MB (10594820 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:087deaa6179b2182cd9ed3889853f007f725127a9487a14bfa09d7bed8650b5d`  
+		Last Modified: Wed, 08 Oct 2025 21:29:06 GMT  
+		Size: 5.9 MB (5864629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:164537b042ab33c6faff5d3b1d1aeb184f1ee4c19cf2580fca6e1de0a290504b`  
+		Last Modified: Wed, 08 Oct 2025 21:29:06 GMT  
 		Size: 286.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `httpd:alpine` - unknown; unknown
 
 ```console
-$ docker pull httpd@sha256:1915741e234fda29b9d952dc5725bc15f6364739c5249e977411f024de148671
+$ docker pull httpd@sha256:0e40251bcd9a1564abac1ed68a42b249ef7f128a9accd63c8df1eaa150bfa80a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1201415 bytes)**  
+-	Total Size: **1.2 MB (1204029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:405c8005aeefc1c29a3802e04753215dd0ada7d854d92ae1c907e2db03d23467`
+-	Image ID: `sha256:d3c7c5dbdd8ff9b4339f17d50afbe591634ce48c0fdd88876ff6d85cd88577c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ef06749c14c5ed906d863a89753e17b586bd2994a927ca3b7db2f5993657d90`  
-		Last Modified: Wed, 23 Jul 2025 23:53:16 GMT  
-		Size: 1.2 MB (1162970 bytes)  
+	-	`sha256:4dddf0eb6e6d618fe0b4c3e7bf6bf1cd8e3c9ea0c58a3a72f240df4178f11252`  
+		Last Modified: Wed, 08 Oct 2025 23:52:48 GMT  
+		Size: 1.2 MB (1165583 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1da1d6508cc40a4de8f45480d5561950bc0e0cb6c37f1386bd25f36ed7fcffe4`  
-		Last Modified: Wed, 23 Jul 2025 23:53:17 GMT  
-		Size: 38.4 KB (38445 bytes)  
+	-	`sha256:cd01e984cc4d766d159587e5d78ab19fef4247c6452c9c52b0959d4ab1f86a0b`  
+		Last Modified: Wed, 08 Oct 2025 23:52:49 GMT  
+		Size: 38.4 KB (38446 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `httpd:alpine` - linux; 386
 
 ```console
-$ docker pull httpd@sha256:9a5e765c2ea150d2547f74dd2bbf5e96b14ddc540a0c333ba5054c0e9961fb95
+$ docker pull httpd@sha256:ae11dbe70b3e60214a9ff83ee52ef4219e7e4760f4deb26eb8a58f3b488864e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.5 MB (19470613 bytes)**  
+-	Total Size: **19.5 MB (19483476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2826de5ab988edade83d3f24982a54515fcb8a9599e548181a2e42b1d3d47b7`
+-	Image ID: `sha256:935b7c9bf766b1612d8acba58052dfd923739190d81f9e405a419ab2d57483d5`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Tue, 15 Jul 2025 11:01:16 GMT
-ADD alpine-minirootfs-3.22.1-x86.tar.gz / # buildkit
-# Tue, 15 Jul 2025 11:01:16 GMT
+# Wed, 23 Jul 2025 17:31:12 GMT
+ADD alpine-minirootfs-3.22.2-x86.tar.gz / # buildkit
+# Wed, 23 Jul 2025 17:31:12 GMT
 CMD ["/bin/sh"]
 # Wed, 23 Jul 2025 17:31:12 GMT
 RUN set -x 	&& adduser -u 82 -D -S -G www-data www-data # buildkit
@@ -471,56 +471,56 @@ CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a55f2fb89da4caae0d783c0045a67446dee9bbd977fecb44db9e1231550fa888`  
-		Last Modified: Tue, 15 Jul 2025 19:04:11 GMT  
-		Size: 3.6 MB (3615006 bytes)  
+	-	`sha256:13c6e95c06ae06f126f5e940d6d88c2fec0da715c80878ad225c76ad48d0a31e`  
+		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
+		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:972f93d306d1adedab0147eff2839ad35acb755e7eeb6552c3126666d1ec5443`  
-		Last Modified: Wed, 23 Jul 2025 21:49:06 GMT  
-		Size: 936.0 B  
+	-	`sha256:acaef3e28b045c2d2d0fb533f7e66100df8a95791666ce652c9786872b334786`  
+		Last Modified: Wed, 08 Oct 2025 21:26:05 GMT  
+		Size: 935.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce5416d9d24402a0ce9848be0a5c97e46acc8760473bb12b046621a47355a753`  
-		Last Modified: Wed, 23 Jul 2025 21:49:06 GMT  
-		Size: 147.0 B  
+	-	`sha256:79e1632c096aecc4ec98ac3c580b84a851189d79936006cf805b953b59f3a297`  
+		Last Modified: Wed, 08 Oct 2025 21:26:05 GMT  
+		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad48f8b08ce80f17fcf1c232c56312226ac5bb25ac8514b0a8c08cd53c999783`  
-		Last Modified: Wed, 23 Jul 2025 21:49:07 GMT  
-		Size: 10.2 MB (10155299 bytes)  
+	-	`sha256:32fc11129e043ee626fb7433f72f1be4dccd88b1ac6191618952813471357e88`  
+		Last Modified: Wed, 08 Oct 2025 21:26:06 GMT  
+		Size: 10.2 MB (10164208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78955e42331b2399fc9ef31527d0397d16a1b1520080a6fe3fb6471088ffd61f`  
-		Last Modified: Wed, 23 Jul 2025 21:49:07 GMT  
-		Size: 5.7 MB (5698904 bytes)  
+	-	`sha256:4d5dee64947066da1c95321b2e2b409ea0b21059847aa2cd8d40b01b018013e2`  
+		Last Modified: Wed, 08 Oct 2025 21:26:08 GMT  
+		Size: 5.7 MB (5698939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b1a3d7eceb7ea8006a835aadb70b4249a303aaba3dc322f5f2c78d18e241ac3`  
-		Last Modified: Wed, 23 Jul 2025 21:49:06 GMT  
-		Size: 289.0 B  
+	-	`sha256:8621cb69c4ee05408d517baf360d42b1091d00c3ab3eb355c1075b3574f7b39a`  
+		Last Modified: Wed, 08 Oct 2025 21:26:05 GMT  
+		Size: 286.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `httpd:alpine` - unknown; unknown
 
 ```console
-$ docker pull httpd@sha256:481ceefceb0d7287af43753e132eea9191ca52a79ec348d0d5db813c748d5728
+$ docker pull httpd@sha256:161b2b042b73103974c969ea1e69ce42987f354bec12493383d772571b182551
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1201012 bytes)**  
+-	Total Size: **1.2 MB (1203625 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0ba9984c35d509af09d84e0c76404041f25192e636c66cf788d6c97d7d5a2ca`
+-	Image ID: `sha256:d8ec692a3c04efe24ebe210fd10a411c53646278acc35c86092b5f8204ad3f71`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f7a59d49b762cb27dde5201351d5f88fa7ab310891ce30dadd39bf6482fee74c`  
-		Last Modified: Wed, 23 Jul 2025 23:53:21 GMT  
-		Size: 1.2 MB (1162821 bytes)  
+	-	`sha256:71a762c67d5f1296f20699873542990c309f3690d3c4dd5ac49a5acb3a5e3e4b`  
+		Last Modified: Wed, 08 Oct 2025 23:52:52 GMT  
+		Size: 1.2 MB (1165434 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46647ade7bcb05b682c357f84b7ff2751a7104c876fbc23f63991c7b05ecef6d`  
-		Last Modified: Wed, 23 Jul 2025 23:53:21 GMT  
+	-	`sha256:4c98731f8a91fe47c2dcca9706ed5502c244d4cb3598416f509db43473a6faf3`  
+		Last Modified: Wed, 08 Oct 2025 23:52:53 GMT  
 		Size: 38.2 KB (38191 bytes)  
 		MIME: application/vnd.in-toto+json
 
