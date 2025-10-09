@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c60039f3bf20b7daf1d6bbc11a1659df57facd01f31776056a228f21e2f12f99`
+- Image ID: `sha256:e8798df3f4b34c7e6f52a3727072b2c410704453c6794f69663ce299680c47d3`
 - Created: `2025-05-30T21:14:55Z`
-- Virtual Size: ~ 63.29 Mb  
+- Virtual Size: ~ 63.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -70,16 +70,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.1-r0 description:
+alpine-release-3.22.2-r0 description:
 Alpine release data
 
-alpine-release-3.22.1-r0 webpage:
+alpine-release-3.22.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.1-r0 installed size:
+alpine-release-3.22.2-r0 installed size:
 343 B
 
-alpine-release-3.22.1-r0 license:
+alpine-release-3.22.2-r0 license:
 MIT
 
 ```
@@ -87,16 +87,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.9-r2 description:
+apk-tools-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.9-r2 webpage:
+apk-tools-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.9-r2 installed size:
+apk-tools-2.14.9-r3 installed size:
 68 KiB
 
-apk-tools-2.14.9-r2 license:
+apk-tools-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -104,16 +104,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r18 description:
+busybox-1.37.0-r19 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r18 webpage:
+busybox-1.37.0-r19 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r18 installed size:
+busybox-1.37.0-r19 installed size:
 798 KiB
 
-busybox-1.37.0-r18 license:
+busybox-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -121,16 +121,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r18 description:
+busybox-binsh-1.37.0-r19 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r18 webpage:
+busybox-binsh-1.37.0-r19 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r18 installed size:
+busybox-binsh-1.37.0-r19 installed size:
 1 B
 
-busybox-binsh-1.37.0-r18 license:
+busybox-binsh-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -138,16 +138,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -155,16 +155,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250619-r0 description:
+ca-certificates-bundle-20250911-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250619-r0 webpage:
+ca-certificates-bundle-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250619-r0 installed size:
-207 KiB
+ca-certificates-bundle-20250911-r0 installed size:
+214 KiB
 
-ca-certificates-bundle-20250619-r0 license:
+ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -172,16 +172,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `glib`
 
 ```console
-glib-2.84.3-r0 description:
+glib-2.84.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.84.3-r0 webpage:
+glib-2.84.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.84.3-r0 installed size:
+glib-2.84.4-r0 installed size:
 5249 KiB
 
-glib-2.84.3-r0 license:
+glib-2.84.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -189,16 +189,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.9-r2 description:
+libapk2-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.9-r2 webpage:
+libapk2-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.9-r2 installed size:
+libapk2-2.14.9-r3 installed size:
 179 KiB
 
-libapk2-2.14.9-r2 license:
+libapk2-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -240,16 +240,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -342,16 +342,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.4-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -427,16 +427,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.40.2-r0 description:
+perl-5.40.3-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.40.2-r0 webpage:
+perl-5.40.3-r0 webpage:
 https://www.perl.org/
 
-perl-5.40.2-r0 installed size:
+perl-5.40.3-r0 installed size:
 36 MiB
 
-perl-5.40.2-r0 license:
+perl-5.40.3-r0 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
@@ -733,16 +733,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r18 description:
+ssl_client-1.37.0-r19 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r18 webpage:
+ssl_client-1.37.0-r19 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r18 installed size:
+ssl_client-1.37.0-r19 installed size:
 14 KiB
 
-ssl_client-1.37.0-r18 license:
+ssl_client-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
