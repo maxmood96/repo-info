@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6df631035a8910269b0d1ee636277f3ff3d59ca3b428d20118ee290216d2d743`
+- Image ID: `sha256:b635066dc43129e20e37c95f2235d3e316b7d3b9c2aba40f0ffde2b54e2e6e2d`
 - Created: `2025-09-23T14:32:09Z`
-- Virtual Size: ~ 93.27 Mb  
+- Virtual Size: ~ 93.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1468,12 +1468,12 @@ $ apt-get source -qq --print-uris openldap=2.6.9+dfsg-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg-2ubuntu1.debian.tar.xz' openldap_2.6.9+dfsg-2ubuntu1.debian.tar.xz 184328 SHA512:519c318c45e9d536aa71a8902746c5fe67ea3069939dc447a0534b4749f1f28ff88585b168b87e42f524a2dc92bc96d2345b1a5d0265f20857c42a7431e0b68d
 ```
 
-### `dpkg` source package: `openssl=3.4.1-1ubuntu3`
+### `dpkg` source package: `openssl=3.4.1-1ubuntu4`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.4.1-1ubuntu3`
-- `openssl-provider-legacy=3.4.1-1ubuntu3`
+- `libssl3t64:amd64=3.4.1-1ubuntu4`
+- `openssl-provider-legacy=3.4.1-1ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1485,11 +1485,11 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.4.1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu3.dsc' openssl_3.4.1-1ubuntu3.dsc 2943 SHA512:86749f9780600fd0d5c6cff3e27e5b6a2ec84fc326c50904b96c756eba2da20822916c140abce178606298ceb8610219eb68ed566e08eae74845c5ca8f99c9dd
+$ apt-get source -qq --print-uris openssl=3.4.1-1ubuntu4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu4.dsc' openssl_3.4.1-1ubuntu4.dsc 2844 SHA512:7fff79b497236e824bc5fa2d4b8a6f87c08a4f1e295bb725660cacb96a709e4a4642cabdc4c03ffc7323154048baecc3825c4c835a998efaf5837fbd4ea89725
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1.orig.tar.gz' openssl_3.4.1.orig.tar.gz 18346056 SHA512:1de6307c587686711f05d1e96731c43526fa3af51e4cd94c06c880954b67f6eb4c7db3177f0ea5937d41bc1f8cadcf5bce75025b5c1a46a469376960f1001c5f
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1.orig.tar.gz.asc' openssl_3.4.1.orig.tar.gz.asc 833 SHA512:b007d5a35a7904d5d5e053e232a54b2ba75fb43f80bf1fe2175528e86e31cca8161da09d7417b50359008ce1955497e4d11c46794f15cc7c3220aa92eff99ccb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu3.debian.tar.xz' openssl_3.4.1-1ubuntu3.debian.tar.xz 119736 SHA512:24fed727d4e7ce526d3b0f44b2052e7b4a1584d9fd85bab755761d6e27600d2d7400c7a0c8177e24a0b7c8fb2bdb6c6fd1d2bb07a893e64c61a37a50738cbecd
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.4.1-1ubuntu4.debian.tar.xz' openssl_3.4.1-1ubuntu4.debian.tar.xz 121720 SHA512:17ae44c4a95ee4c0d49236b706083e8a0054b78a6c25f14e1ef4d9b70375db404e96f39214dc02a1d8c92ca708eaa31662ac6041f7574c619ac95834705d1a97
 ```
 
 ### `dpkg` source package: `p11-kit=0.25.5-2ubuntu3`
@@ -1554,11 +1554,11 @@ $ apt-get source -qq --print-uris pam=1.5.3-7ubuntu4.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-7ubuntu4.4.debian.tar.xz' pam_1.5.3-7ubuntu4.4.debian.tar.xz 204472 SHA512:172e0970c28848ec943e91671c3fcd0e82444f7013e278ce4de03106271113e6382a9b89ece1cbb3a6ab44ac5cf6c902019501d69c45efb06bf69d4cdd79f4ed
 ```
 
-### `dpkg` source package: `pcre2=10.45-1`
+### `dpkg` source package: `pcre2=10.45-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.45-1`
+- `libpcre2-8-0:amd64=10.45-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1571,10 +1571,10 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.45-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45-1.dsc' pcre2_10.45-1.dsc 2337 SHA512:97973e68d44bc30766050038affbf71d06130d62971d050d6b09d2af1bfe9b8072ebc00c7275c3d1ff6963716b2d5cd0358135ccf73ecb34fbd3b76cea922c05
+$ apt-get source -qq --print-uris pcre2=10.45-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45-1ubuntu0.1.dsc' pcre2_10.45-1ubuntu0.1.dsc 2318 SHA512:5e2e9fb8f93b52d4345f7d8f30272ba37fe38fc7184e1fa1abaca41b495b97262d3f2855328134ece2c215c03e778520e36db2b75889999b38dca6f8d3292af7
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45.orig.tar.gz' pcre2_10.45.orig.tar.gz 2715958 SHA512:6ec01a05ce65be61e5974dcc2ccd2e2b5c6db183e3a592530205c7d3259b730df3a9ab999d204f3c52e5a14ae88f32f94306b4501eb9629568ce6158985e2fa6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45-1.diff.gz' pcre2_10.45-1.diff.gz 8659 SHA512:2c7444846c31495693f5b94357a9f94b3ccb1664ee9eff68433fc4d0e94dbbf32eb24611718daf8338466283d450bfab547946aabae990803c61efeb091b7964
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.45-1ubuntu0.1.diff.gz' pcre2_10.45-1ubuntu0.1.diff.gz 163076 SHA512:0fc9d8f7fbd244ed7ff0f25da3e9ce9c34d8c39ab076e4d76eccca4d5c68f5657470378f5c37e031f19dfd05a74857e22f2b03c730e1251733a1fa5feed4d400
 ```
 
 ### `dpkg` source package: `perl=5.40.1-2ubuntu0.2`
