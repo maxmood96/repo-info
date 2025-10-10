@@ -1,9 +1,9 @@
-# `ruby:3.4.6-bookworm`
+# `ruby:3.4.7-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2720656f3d1720c641f0cb8db68adf6a5eb5ead27b50cd160ae931fb50daf23`
-- Created: `2025-09-16T05:03:19Z`
+- Image ID: `sha256:87cc204dd1384c977d1f4be08e6100a0d4a6d49099b2e8029f31b89ed3cc7ef5`
+- Created: `2025-10-07T23:03:17Z`
 - Virtual Size: ~ 1.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,9 +11,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.6`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.6.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=804995bc22938aa475127000d3103cb133409ad3955edfc0e7412be66a4859b8`
+  - `RUBY_VERSION=3.4.7`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
