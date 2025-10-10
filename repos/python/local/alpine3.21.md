@@ -1,18 +1,17 @@
-# `python:3.13.7-alpine3.21`
+# `python:3.14.0-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:62e6c3b469ad5d826003ddbac2d4b51d9e3e04574fc6a97552e85c6dfcbe2414`
-- Created: `2025-08-14T21:49:23Z`
-- Virtual Size: ~ 44.38 Mb  
+- Image ID: `sha256:4600ab43dd3523d00fe1105a0b90c409a11f6991c1b25498b2d4edca1d8a5068`
+- Created: `2025-10-08T18:52:37Z`
+- Virtual Size: ~ 46.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.7`
-  - `PYTHON_SHA256=5462f9099dfd30e238def83c71d91897d8caa5ff6ebc7a50f14d4802cdaaa79a`
+  - `PYTHON_VERSION=3.14.0`
+  - `PYTHON_SHA256=2299dae542d395ce3883aca00d3c910307cd68e0b2f7336098c8e7b7eee9f3e9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -70,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.4-r0 description:
+alpine-release-3.21.5-r0 description:
 Alpine release data
 
-alpine-release-3.21.4-r0 webpage:
+alpine-release-3.21.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.4-r0 installed size:
+alpine-release-3.21.5-r0 installed size:
 346 B
 
-alpine-release-3.21.4-r0 license:
+alpine-release-3.21.5-r0 license:
 MIT
 
 ```
@@ -104,16 +103,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r12 description:
+busybox-1.37.0-r13 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r12 webpage:
+busybox-1.37.0-r13 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r12 installed size:
+busybox-1.37.0-r13 installed size:
 798 KiB
 
-busybox-1.37.0-r12 license:
+busybox-1.37.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -121,16 +120,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r12 description:
+busybox-binsh-1.37.0-r13 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r12 webpage:
+busybox-binsh-1.37.0-r13 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r12 installed size:
+busybox-binsh-1.37.0-r13 installed size:
 1 B
 
-busybox-binsh-1.37.0-r12 license:
+busybox-binsh-1.37.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -138,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -155,16 +154,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250619-r0 description:
+ca-certificates-bundle-20250911-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250619-r0 webpage:
+ca-certificates-bundle-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250619-r0 installed size:
-207 KiB
+ca-certificates-bundle-20250911-r0 installed size:
+214 KiB
 
-ca-certificates-bundle-20250619-r0 license:
+ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -206,16 +205,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.4-r0 description:
+libcrypto3-3.3.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.4-r0 webpage:
+libcrypto3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.4-r0 installed size:
+libcrypto3-3.3.5-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.4-r0 license:
+libcrypto3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -274,16 +273,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.4-r0 description:
+libssl3-3.3.5-r0 description:
 SSL shared libraries
 
-libssl3-3.3.4-r0 webpage:
+libssl3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.4-r0 installed size:
+libssl3-3.3.5-r0 installed size:
 779 KiB
 
-libssl3-3.3.4-r0 license:
+libssl3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -393,16 +392,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r3 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r3 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r3 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r3 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```
@@ -410,16 +409,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r12 description:
+ssl_client-1.37.0-r13 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r12 webpage:
+ssl_client-1.37.0-r13 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r12 installed size:
+ssl_client-1.37.0-r13 installed size:
 14 KiB
 
-ssl_client-1.37.0-r12 license:
+ssl_client-1.37.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -472,5 +471,22 @@ zlib-1.3.1-r2 installed size:
 
 zlib-1.3.1-r2 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.6-r2 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.6-r2 webpage:
+https://facebook.github.io/zstd/
+
+zstd-libs-1.5.6-r2 installed size:
+697 KiB
+
+zstd-libs-1.5.6-r2 license:
+BSD-3-Clause OR GPL-2.0-or-later
 
 ```
