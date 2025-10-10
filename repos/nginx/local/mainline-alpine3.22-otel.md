@@ -1,20 +1,20 @@
-# `nginx:1.29.1-alpine-otel`
+# `nginx:1.29.2-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bad9e6fb304b7a770e656f3d30b6eb182ef35f4f09be669d3725104600c9ef1`
-- Created: `2025-08-13T16:34:01Z`
-- Virtual Size: ~ 88.12 Mb  
+- Image ID: `sha256:194265d909cb8f3dc511242664f1a965c1bc0135e8239d5e01145f3163bbe5a6`
+- Created: `2025-10-07T21:06:46Z`
+- Virtual Size: ~ 88.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.1`
+  - `NGINX_VERSION=1.29.2`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.1`
+  - `NJS_VERSION=0.9.3`
   - `NJS_RELEASE=1`
   - `OTEL_VERSION=0.1.2`
 - Labels:
@@ -1147,16 +1147,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.1-r0 description:
+alpine-release-3.22.2-r0 description:
 Alpine release data
 
-alpine-release-3.22.1-r0 webpage:
+alpine-release-3.22.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.1-r0 installed size:
+alpine-release-3.22.2-r0 installed size:
 343 B
 
-alpine-release-3.22.1-r0 license:
+alpine-release-3.22.2-r0 license:
 MIT
 
 ```
@@ -1181,16 +1181,16 @@ BSD-2-Clause AND custom
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.9-r2 description:
+apk-tools-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.9-r2 webpage:
+apk-tools-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.9-r2 installed size:
+apk-tools-2.14.9-r3 installed size:
 68 KiB
 
-apk-tools-2.14.9-r2 license:
+apk-tools-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -1215,16 +1215,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r18 description:
+busybox-1.37.0-r19 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r18 webpage:
+busybox-1.37.0-r19 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r18 installed size:
+busybox-1.37.0-r19 installed size:
 798 KiB
 
-busybox-1.37.0-r18 license:
+busybox-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -1232,16 +1232,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r18 description:
+busybox-binsh-1.37.0-r19 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r18 webpage:
+busybox-binsh-1.37.0-r19 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r18 installed size:
+busybox-binsh-1.37.0-r19 installed size:
 1 B
 
-busybox-binsh-1.37.0-r18 license:
+busybox-binsh-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -1266,16 +1266,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -1283,16 +1283,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250619-r0 description:
+ca-certificates-bundle-20250911-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250619-r0 webpage:
+ca-certificates-bundle-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250619-r0 installed size:
-207 KiB
+ca-certificates-bundle-20250911-r0 installed size:
+214 KiB
 
-ca-certificates-bundle-20250619-r0 license:
+ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -1300,16 +1300,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.14.1-r1 description:
+curl-8.14.1-r2 description:
 URL retrival utility and library
 
-curl-8.14.1-r1 webpage:
+curl-8.14.1-r2 webpage:
 https://curl.se/
 
-curl-8.14.1-r1 installed size:
+curl-8.14.1-r2 installed size:
 260 KiB
 
-curl-8.14.1-r1 license:
+curl-8.14.1-r2 license:
 curl
 
 ```
@@ -1470,16 +1470,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.9-r2 description:
+libapk2-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.9-r2 webpage:
+libapk2-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.9-r2 installed size:
+libapk2-2.14.9-r3 installed size:
 179 KiB
 
-libapk2-2.14.9-r2 license:
+libapk2-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -1538,16 +1538,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -1555,16 +1555,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.1-r1 description:
+libcurl-8.14.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.1-r1 webpage:
+libcurl-8.14.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.14.1-r1 installed size:
+libcurl-8.14.1-r2 installed size:
 669 KiB
 
-libcurl-8.14.1-r1 license:
+libcurl-8.14.1-r2 license:
 curl
 
 ```
@@ -1606,16 +1606,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.1-r0 description:
+libexpat-2.7.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.1-r0 webpage:
+libexpat-2.7.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.1-r0 installed size:
-129 KiB
+libexpat-2.7.3-r0 installed size:
+133 KiB
 
-libexpat-2.7.1-r0 license:
+libexpat-2.7.3-r0 license:
 MIT
 
 ```
@@ -1929,16 +1929,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.4-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -2184,16 +2184,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.8-r0 description:
+libxml2-2.13.9-r0 description:
 XML parsing library, version 2
 
-libxml2-2.13.8-r0 webpage:
+libxml2-2.13.9-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.8-r0 installed size:
+libxml2-2.13.9-r0 installed size:
 1050 KiB
 
-libxml2-2.13.8-r0 license:
+libxml2-2.13.9-r0 license:
 MIT
 
 ```
@@ -2337,16 +2337,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.1-r1 description:
+nginx-1.29.2-r1 description:
 High performance web server
 
-nginx-1.29.1-r1 webpage:
+nginx-1.29.2-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.1-r1 installed size:
+nginx-1.29.2-r1 installed size:
 2647 KiB
 
-nginx-1.29.1-r1 license:
+nginx-1.29.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2354,16 +2354,16 @@ nginx-1.29.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.1-r1 description:
+nginx-module-geoip-1.29.2-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.1-r1 webpage:
+nginx-module-geoip-1.29.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.1-r1 installed size:
+nginx-module-geoip-1.29.2-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.1-r1 license:
+nginx-module-geoip-1.29.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2371,16 +2371,16 @@ nginx-module-geoip-1.29.1-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.1-r1 description:
+nginx-module-image-filter-1.29.2-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.1-r1 webpage:
+nginx-module-image-filter-1.29.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.1-r1 installed size:
+nginx-module-image-filter-1.29.2-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.1-r1 license:
+nginx-module-image-filter-1.29.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2388,16 +2388,16 @@ nginx-module-image-filter-1.29.1-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.1.0.9.1-r1 description:
+nginx-module-njs-1.29.2.0.9.3-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.1.0.9.1-r1 webpage:
+nginx-module-njs-1.29.2.0.9.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.1.0.9.1-r1 installed size:
-8974 KiB
+nginx-module-njs-1.29.2.0.9.3-r1 installed size:
+9156 KiB
 
-nginx-module-njs-1.29.1.0.9.1-r1 license:
+nginx-module-njs-1.29.2.0.9.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2405,16 +2405,16 @@ nginx-module-njs-1.29.1.0.9.1-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.29.1.0.1.2-r1 description:
+nginx-module-otel-1.29.2.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.29.1.0.1.2-r1 webpage:
+nginx-module-otel-1.29.2.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.29.1.0.1.2-r1 installed size:
+nginx-module-otel-1.29.2.0.1.2-r1 installed size:
 723 KiB
 
-nginx-module-otel-1.29.1.0.1.2-r1 license:
+nginx-module-otel-1.29.2.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2422,16 +2422,16 @@ nginx-module-otel-1.29.1.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.1-r1 description:
+nginx-module-xslt-1.29.2-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.1-r1 webpage:
+nginx-module-xslt-1.29.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.1-r1 installed size:
+nginx-module-xslt-1.29.2-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.1-r1 license:
+nginx-module-xslt-1.29.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2524,16 +2524,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r18 description:
+ssl_client-1.37.0-r19 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r18 webpage:
+ssl_client-1.37.0-r19 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r18 installed size:
+ssl_client-1.37.0-r19 installed size:
 14 KiB
 
-ssl_client-1.37.0-r18 license:
+ssl_client-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -2541,16 +2541,16 @@ GPL-2.0-only
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.0-r0 description:
+tiff-4.7.1-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.7.0-r0 webpage:
+tiff-4.7.1-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.0-r0 installed size:
-457 KiB
+tiff-4.7.1-r0 installed size:
+453 KiB
 
-tiff-4.7.0-r0 license:
+tiff-4.7.1-r0 license:
 libtiff
 
 ```
