@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7bd58e41485b36829ce6b90d7ec2d4413e945c0947a326ecf4a38b96629c01e`
+- Image ID: `sha256:a44d74b5b0734ae63a5e98ff7cb8d4c2302c16e3c71270548f2f5b13c2ad6dce`
 - Created: `2024-04-30T21:39:21Z`
 - Virtual Size: ~ 3.46 Gb  
   (total size of all layers on-disk)
@@ -7749,13 +7749,13 @@ $ apt-get source -qq --print-uris pmix=5.0.1-4.1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pmix/pmix_5.0.1-4.1build1.debian.tar.xz' pmix_5.0.1-4.1build1.debian.tar.xz 12084 SHA512:d0d3c3a7c209cf45937e8d05671d7c7a0ebafab3243c4672956861a984435b39a86ed8811adfbbe3aac7465049bd6381040e60c1df5b314b9a214b5b136585f8
 ```
 
-### `dpkg` source package: `poppler=24.02.0-1ubuntu9.6`
+### `dpkg` source package: `poppler=24.02.0-1ubuntu9.7`
 
 Binary Packages:
 
-- `libpoppler-dev:amd64=24.02.0-1ubuntu9.6`
-- `libpoppler-private-dev:amd64=24.02.0-1ubuntu9.6`
-- `libpoppler134:amd64=24.02.0-1ubuntu9.6`
+- `libpoppler-dev:amd64=24.02.0-1ubuntu9.7`
+- `libpoppler-private-dev:amd64=24.02.0-1ubuntu9.7`
+- `libpoppler134:amd64=24.02.0-1ubuntu9.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/doc/libpoppler-private-dev/copyright`, `/usr/share/doc/libpoppler134/copyright`)
 
@@ -7763,9 +7763,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.7.dsc' poppler_24.02.0-1ubuntu9.7.dsc 3940 SHA512:161d2268ff4324675c5ea2c66a2c8d6017aa610e239edc15561584977bfcca4dd7d6bcc9ca91bdb3b19bed139207bc9a1615d84c60c9f2e2850b2effe9685cf1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.7.debian.tar.xz' poppler_24.02.0-1ubuntu9.7.debian.tar.xz 43432 SHA512:e661b69bb0dc2b05669a4b7c93df3b379128c7ed9b41123ffc6fcb813c2b3d17fa72d7526e0fd225921d29a731370200dbcd991adc6a91eb761d9822b8a0834c
+```
 
 ### `dpkg` source package: `popt=1.19+dfsg-1build1`
 
@@ -13186,17 +13191,17 @@ $ apt-get source -qq --print-uris svt-av1=1.7.0+dfsg-2build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/svt-av1/svt-av1_1.7.0%2bdfsg-2build1.debian.tar.xz' svt-av1_1.7.0+dfsg-2build1.debian.tar.xz 6788 SHA512:6a121804e0fae319cbbfa8929bce6ecdecbb3591600ec46adb571f4db69af8fcad4a329d392edc8e4c492222a3e3e8675ebbd937e0e93322a111a3a2d399a6ce
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.10`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.11`
 
 Binary Packages:
 
-- `libpam-systemd:amd64=255.4-1ubuntu8.10`
-- `libsystemd-shared:amd64=255.4-1ubuntu8.10`
-- `libsystemd0:amd64=255.4-1ubuntu8.10`
-- `libudev1:amd64=255.4-1ubuntu8.10`
-- `systemd=255.4-1ubuntu8.10`
-- `systemd-dev=255.4-1ubuntu8.10`
-- `systemd-sysv=255.4-1ubuntu8.10`
+- `libpam-systemd:amd64=255.4-1ubuntu8.11`
+- `libsystemd-shared:amd64=255.4-1ubuntu8.11`
+- `libsystemd0:amd64=255.4-1ubuntu8.11`
+- `libudev1:amd64=255.4-1ubuntu8.11`
+- `systemd=255.4-1ubuntu8.11`
+- `systemd-dev=255.4-1ubuntu8.11`
+- `systemd-sysv=255.4-1ubuntu8.11`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd-shared/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-dev/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -13212,10 +13217,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.10.dsc' systemd_255.4-1ubuntu8.10.dsc 7324 SHA512:c30052292318e7b9b97111798bb17af3e42dd5207550cce735ed027c42ed8eba6f44b807a096410eca54b5a32e710552f8737ff7240332d62a6ad89e3231cdf5
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.11
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.11.dsc' systemd_255.4-1ubuntu8.11.dsc 7324 SHA512:911c29309ba54128641ff4dac6bc86a3b2e276778fb8446daa29747385a7f6781f339ec4ab82bf34085d8156e08da2e9965e1bcabcd1d65ee575b5d82ef18ddf
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.10.debian.tar.xz' systemd_255.4-1ubuntu8.10.debian.tar.xz 252212 SHA512:b19d9768d4cb62450f299b6a31395cbab6f50ac93d3426d4a686391c6dba9f059834d071f71991f58f78b8d28e66f4e74587ec61a7c8ca536a05371e068c6ec9
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.11.debian.tar.xz' systemd_255.4-1ubuntu8.11.debian.tar.xz 256052 SHA512:b8bf683caee235c8c46725592dd8b9c5acc08c3c0709ded98e039c089bc34c04618fc70dae70efdf8ee8bec09f2e124951d31574973c9d6f752ab935b700f7f8
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
