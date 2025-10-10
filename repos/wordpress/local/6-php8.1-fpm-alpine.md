@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:345f88474cbeb90018175e59a566abdc3ced70fa1709748e9906de6dad5aebae`
-- Created: `2025-09-30T18:19:42Z`
-- Virtual Size: ~ 268.67 Mb  
+- Image ID: `sha256:38409ea553b52192a4f8dbbca033e1a472a0428269bc1348d0911d0ab44969cf`
+- Created: `2025-10-01T01:03:19Z`
+- Virtual Size: ~ 268.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -95,16 +95,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.4-r0 description:
+alpine-release-3.21.5-r0 description:
 Alpine release data
 
-alpine-release-3.21.4-r0 webpage:
+alpine-release-3.21.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.4-r0 installed size:
+alpine-release-3.21.5-r0 installed size:
 346 B
 
-alpine-release-3.21.4-r0 license:
+alpine-release-3.21.5-r0 license:
 MIT
 
 ```
@@ -214,16 +214,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r12 description:
+busybox-1.37.0-r13 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r12 webpage:
+busybox-1.37.0-r13 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r12 installed size:
+busybox-1.37.0-r13 installed size:
 798 KiB
 
-busybox-1.37.0-r12 license:
+busybox-1.37.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -231,16 +231,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r12 description:
+busybox-binsh-1.37.0-r13 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r12 webpage:
+busybox-binsh-1.37.0-r13 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r12 installed size:
+busybox-binsh-1.37.0-r13 installed size:
 1 B
 
-busybox-binsh-1.37.0-r12 license:
+busybox-binsh-1.37.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -265,16 +265,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -282,16 +282,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250619-r0 description:
+ca-certificates-bundle-20250911-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250619-r0 webpage:
+ca-certificates-bundle-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250619-r0 installed size:
-207 KiB
+ca-certificates-bundle-20250911-r0 installed size:
+214 KiB
 
-ca-certificates-bundle-20250619-r0 license:
+ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r1 description:
+curl-8.14.1-r2 description:
 URL retrival utility and library
 
-curl-8.12.1-r1 webpage:
+curl-8.14.1-r2 webpage:
 https://curl.se/
 
-curl-8.12.1-r1 installed size:
-246 KiB
+curl-8.14.1-r2 installed size:
+260 KiB
 
-curl-8.12.1-r1 license:
+curl-8.14.1-r2 license:
 curl
 
 ```
@@ -690,16 +690,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.4-r0 description:
+libcrypto3-3.3.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.4-r0 webpage:
+libcrypto3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.4-r0 installed size:
+libcrypto3-3.3.5-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.4-r0 license:
+libcrypto3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -707,16 +707,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r1 description:
+libcurl-8.14.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r1 webpage:
+libcurl-8.14.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r1 installed size:
-628 KiB
+libcurl-8.14.1-r2 installed size:
+669 KiB
 
-libcurl-8.12.1-r1 license:
+libcurl-8.14.1-r2 license:
 curl
 
 ```
@@ -1013,16 +1013,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.4-r0 description:
+libssl3-3.3.5-r0 description:
 SSL shared libraries
 
-libssl3-3.3.4-r0 webpage:
+libssl3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.4-r0 installed size:
+libssl3-3.3.5-r0 installed size:
 779 KiB
 
-libssl3-3.3.4-r0 license:
+libssl3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -1404,16 +1404,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.4-r0 description:
+openssl-3.3.5-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.4-r0 webpage:
+openssl-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.4-r0 installed size:
-769 KiB
+openssl-3.3.5-r0 installed size:
+765 KiB
 
-openssl-3.3.4-r0 license:
+openssl-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -1472,16 +1472,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.48.0-r3 description:
+sqlite-libs-3.48.0-r4 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.48.0-r3 webpage:
+sqlite-libs-3.48.0-r4 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.48.0-r3 installed size:
+sqlite-libs-3.48.0-r4 installed size:
 1549 KiB
 
-sqlite-libs-3.48.0-r3 license:
+sqlite-libs-3.48.0-r4 license:
 blessing
 
 ```
@@ -1489,16 +1489,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r12 description:
+ssl_client-1.37.0-r13 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r12 webpage:
+ssl_client-1.37.0-r13 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r12 installed size:
+ssl_client-1.37.0-r13 installed size:
 14 KiB
 
-ssl_client-1.37.0-r12 license:
+ssl_client-1.37.0-r13 license:
 GPL-2.0-only
 
 ```
