@@ -2414,21 +2414,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.0p1-8
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-8.dsc' openssh_10.0p1-8.dsc 3654 SHA256:81bf219ec7c3cdd13111e0bc6ed1c967e9ca8c2199b5dcb7a3b801e7187486d7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-8.debian.tar.xz' openssh_10.0p1-8.debian.tar.xz 199944 SHA256:f158cdc149735170e8abd84510e2d71502488bbc6a2d652065dd9938cfc150cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.0p1-8/
 
-- https://sources.debian.net/src/openssh/1:10.0p1-8/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.0p1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.0p1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.3-1`
 
@@ -2727,21 +2719,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.7-1
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.7-1.dsc' python3.13_3.13.7-1.dsc 3689 SHA256:a892340907a758f7fc96dcf0815a714723f7e30a4eb1708b4054c698e6830b3c
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.7.orig.tar.xz' python3.13_3.13.7.orig.tar.xz 22769492 SHA256:5462f9099dfd30e238def83c71d91897d8caa5ff6ebc7a50f14d4802cdaaa79a
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.7.orig.tar.xz.asc' python3.13_3.13.7.orig.tar.xz.asc 963 SHA256:5e8fd918d50d4d403f9908ac86933f0c6e2a8f4070586f94bfa7baabee431e7d
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.7-1.debian.tar.xz' python3.13_3.13.7-1.debian.tar.xz 260456 SHA256:dc8735ff4cd4dd3230c19154f3ea0b85f4dc407927f795e9d022af182b01780b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.7-1/
 
-- https://sources.debian.net/src/python3.13/3.13.7-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-3`
 

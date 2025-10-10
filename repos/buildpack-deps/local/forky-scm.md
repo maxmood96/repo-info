@@ -444,21 +444,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.16.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0-1.dsc' curl_8.16.0-1.dsc 3231 SHA256:539df54aca4c0951ad467536e80be90900f31f1048259997fd9074db162f1c8d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0.orig.tar.gz' curl_8.16.0.orig.tar.gz 4176617 SHA256:a21e20476e39eca5a4fc5cfb00acf84bbc1f5d8443ec3853ad14c26b3c85b970
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0.orig.tar.gz.asc' curl_8.16.0.orig.tar.gz.asc 488 SHA256:f0a9e778d619760b84cd562b917b03de9c62a0f6c60342a3accbee0d18d17c20
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.16.0-1.debian.tar.xz' curl_8.16.0-1.debian.tar.xz 51688 SHA256:ea24d4bc0cb22e8e0ef2610c16dfea23ade18fa8d98dba94f45925df3a2c3928
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.16.0-1/
 
-- https://sources.debian.net/src/curl/8.16.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.16.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.16.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -486,20 +478,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-9.dsc' cyrus-sasl2_2.1.28+dfsg1-9.dsc 3306 SHA256:179cda376ee9f9a54098f902174299dd183ae78c703f72b86bd4c3297db4c153
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-9.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-9.debian.tar.xz 99180 SHA256:8215afa01ee2907da0a650bfa6b9cf0fae12f2611a098eedd853b5e71adf6623
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-9/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-9/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-12`
 
@@ -2014,20 +1999,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-1.1
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-1.1.dsc' libzstd_1.5.7+dfsg-1.1.dsc 2404 SHA256:6a064ace09ea15a35eb5d082a594428e2980f30be4b08b2f1e02d974a0058cef
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg.orig.tar.xz' libzstd_1.5.7+dfsg.orig.tar.xz 1834780 SHA256:0c092ef267edce57ba7f3f2645c861f72eaf5e76273c6c3632869423464b90a5
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-1.1.debian.tar.xz' libzstd_1.5.7+dfsg-1.1.debian.tar.xz 23100 SHA256:aea2d502507284e092515943bfc681421614e0ca5179d33947f01ea39ffa9f92
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1.1/
 
-- https://sources.debian.net/src/libzstd/1.5.7+dfsg-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.5.7+dfsg-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -2272,21 +2250,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.11.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0-1.dsc' nghttp3_1.11.0-1.dsc 2218 SHA256:81c5545d89029370703c686a1ac74cb9916bf6c2a144ceb64dc71540d3438c14
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0.orig.tar.xz' nghttp3_1.11.0.orig.tar.xz 405816 SHA256:27d084518f06d78279b050cc9cdff2418f80fb753da019427ce853cec920f33f
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0.orig.tar.xz.asc' nghttp3_1.11.0.orig.tar.xz.asc 833 SHA256:37e41c4a277c5f2708c679f9d3baba7efc0de3a466366044a8e6a6c5b0143a18
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.11.0-1.debian.tar.xz' nghttp3_1.11.0-1.debian.tar.xz 8284 SHA256:a7aa0ae42abae0f5917644bb86006b2fea74154636b521be5c7b84ac47556af4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.11.0-1/
 
-- https://sources.debian.net/src/nghttp3/1.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.11.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ngtcp2=1.15.1-1`
 
@@ -2308,21 +2278,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.15.1-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.15.1-1.dsc' ngtcp2_1.15.1-1.dsc 2575 SHA256:f31e72d09ab77f5fd3df9cdc0732047adfc07bbd22ba339134aa492af6ac2fba
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.15.1.orig.tar.xz' ngtcp2_1.15.1.orig.tar.xz 668640 SHA256:06f2eec7ca76552041050473d992d3063782e26fdff57533cb8cd8c9a6859a17
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.15.1.orig.tar.xz.asc' ngtcp2_1.15.1.orig.tar.xz.asc 833 SHA256:02ec5e9105822a45a7250f710165977be89bdedb8d055b3b81902a454a5e7988
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.15.1-1.debian.tar.xz' ngtcp2_1.15.1-1.debian.tar.xz 9880 SHA256:2e67e69af8fc7d0859e79caac6d998821b6388a35f514e0cc09882684632a659
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.15.1-1/
 
-- https://sources.debian.net/src/ngtcp2/1.15.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.15.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.15.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.8-3`
 
@@ -3329,21 +3291,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `none`
 - `permissive-nowarranty`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.8.1-1.1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1.1.dsc' xz-utils_5.8.1-1.1.dsc 2737 SHA256:e5196e84700fac70eaaa69234f7f04f0c1adae690f374cbfda0af11770700ab2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1.1.debian.tar.xz' xz-utils_5.8.1-1.1.debian.tar.xz 24688 SHA256:1d8adf3450974c1d41dbd4b032b1976e1b8785c53c360e43688f2e9d75fdb808
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.8.1-1.1/
 
-- https://sources.debian.net/src/xz-utils/5.8.1-1.1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.8.1-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.8.1-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
 
