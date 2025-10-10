@@ -171,7 +171,7 @@ CMD ["mvn"]
 		Size: 30.1 MB (30140842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3fb2d5cf1fac34780e8fee07205d0f7c95dbe716214d2fb50e7073179fc8df1`  
-		Last Modified: Thu, 09 Oct 2025 22:55:06 GMT  
+		Last Modified: Fri, 10 Oct 2025 09:52:48 GMT  
 		Size: 203.1 MB (203110487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0e6a34337fd03173367fa616f03e22587130ceca24e2537c4c51a7e7025c361`  
