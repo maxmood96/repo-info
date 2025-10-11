@@ -1,10 +1,10 @@
-# `phpmyadmin:5.2.2-fpm-alpine`
+# `phpmyadmin:5.2.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b97e6802c3b5836011bff77ad5b1f590aba6b9c257d9bf486031a65c88fc7043`
-- Created: `2025-02-01T20:29:24Z`
-- Virtual Size: ~ 156.65 Mb  
+- Image ID: `sha256:9dba1ca8ef1556ff15e373a5a645df486d8286889e877a7848d0c7d2d371ed5b`
+- Created: `2025-10-08T20:49:29Z`
+- Virtual Size: ~ 164.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,20 +16,22 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc`
-  - `PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
+  - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
+  - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
   - `MAX_EXECUTION_TIME=600`
   - `MEMORY_LIMIT=512M`
   - `UPLOAD_LIMIT=2048K`
   - `TZ=UTC`
   - `SESSION_SAVE_PATH=/sessions`
-  - `VERSION=5.2.2`
-  - `SHA256=f881819a3b11e653b0212afaf0cc105db85c767715cb3f5852670f7fc36c9669`
-  - `URL=https://files.phpmyadmin.net/phpMyAdmin/5.2.2/phpMyAdmin-5.2.2-all-languages.tar.xz`
+  - `VERSION=5.2.3`
+  - `SHA256=57881348297c4412f86c410547cf76b4d8a236574dd2c6b7d6a2beebe7fc44e3`
+  - `URL=https://files.phpmyadmin.net/phpMyAdmin/5.2.3/phpMyAdmin-5.2.3-all-languages.tar.xz`
 - Labels:
   - `org.opencontainers.image.authors=The phpMyAdmin Team <developers@phpmyadmin.net>`
   - `org.opencontainers.image.description=Run phpMyAdmin with Alpine, Apache and PHP FPM.`
@@ -39,7 +41,7 @@
   - `org.opencontainers.image.title=Official phpMyAdmin Docker image`
   - `org.opencontainers.image.url=https://github.com/phpmyadmin/docker#readme`
   - `org.opencontainers.image.vendor=phpMyAdmin`
-  - `org.opencontainers.image.version=5.2.2`
+  - `org.opencontainers.image.version=5.2.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -114,16 +116,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.1-r0 description:
+alpine-release-3.22.2-r0 description:
 Alpine release data
 
-alpine-release-3.22.1-r0 webpage:
+alpine-release-3.22.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.1-r0 installed size:
+alpine-release-3.22.2-r0 installed size:
 343 B
 
-alpine-release-3.22.1-r0 license:
+alpine-release-3.22.2-r0 license:
 MIT
 
 ```
@@ -131,16 +133,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.9-r2 description:
+apk-tools-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.9-r2 webpage:
+apk-tools-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.9-r2 installed size:
+apk-tools-2.14.9-r3 installed size:
 68 KiB
 
-apk-tools-2.14.9-r2 license:
+apk-tools-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -199,16 +201,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r18 description:
+busybox-1.37.0-r19 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r18 webpage:
+busybox-1.37.0-r19 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r18 installed size:
+busybox-1.37.0-r19 installed size:
 798 KiB
 
-busybox-1.37.0-r18 license:
+busybox-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -216,16 +218,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r18 description:
+busybox-binsh-1.37.0-r19 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r18 webpage:
+busybox-binsh-1.37.0-r19 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r18 installed size:
+busybox-binsh-1.37.0-r19 installed size:
 1 B
 
-busybox-binsh-1.37.0-r18 license:
+busybox-binsh-1.37.0-r19 license:
 GPL-2.0-only
 
 ```
@@ -250,16 +252,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250619-r0 description:
+ca-certificates-20250911-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250619-r0 webpage:
+ca-certificates-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250619-r0 installed size:
-241 KiB
+ca-certificates-20250911-r0 installed size:
+248 KiB
 
-ca-certificates-20250619-r0 license:
+ca-certificates-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -267,16 +269,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250619-r0 description:
+ca-certificates-bundle-20250911-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250619-r0 webpage:
+ca-certificates-bundle-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250619-r0 installed size:
-207 KiB
+ca-certificates-bundle-20250911-r0 installed size:
+214 KiB
 
-ca-certificates-bundle-20250619-r0 license:
+ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -284,16 +286,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.14.1-r1 description:
+curl-8.14.1-r2 description:
 URL retrival utility and library
 
-curl-8.14.1-r1 webpage:
+curl-8.14.1-r2 webpage:
 https://curl.se/
 
-curl-8.14.1-r1 installed size:
+curl-8.14.1-r2 installed size:
 260 KiB
 
-curl-8.14.1-r1 license:
+curl-8.14.1-r2 license:
 curl
 
 ```
@@ -573,16 +575,16 @@ GPL-3.0-or-later
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.9-r2 description:
+libapk2-2.14.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.9-r2 webpage:
+libapk2-2.14.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.9-r2 installed size:
+libapk2-2.14.9-r3 installed size:
 179 KiB
 
-libapk2-2.14.9-r2 license:
+libapk2-2.14.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -641,16 +643,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.1-r0 description:
+libcrypto3-3.5.4-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.1-r0 webpage:
+libcrypto3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.1-r0 installed size:
+libcrypto3-3.5.4-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.1-r0 license:
+libcrypto3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -658,16 +660,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.14.1-r1 description:
+libcurl-8.14.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.14.1-r1 webpage:
+libcurl-8.14.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.14.1-r1 installed size:
+libcurl-8.14.1-r2 installed size:
 669 KiB
 
-libcurl-8.14.1-r1 license:
+libcurl-8.14.1-r2 license:
 curl
 
 ```
@@ -964,16 +966,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.1-r0 description:
+libssl3-3.5.4-r0 description:
 SSL shared libraries
 
-libssl3-3.5.1-r0 webpage:
+libssl3-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.1-r0 installed size:
-819 KiB
+libssl3-3.5.4-r0 installed size:
+823 KiB
 
-libssl3-3.5.1-r0 license:
+libssl3-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -1321,16 +1323,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.1-r0 description:
+openssl-3.5.4-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.1-r0 webpage:
+openssl-3.5.4-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.1-r0 installed size:
+openssl-3.5.4-r0 installed size:
 801 KiB
 
-openssl-3.5.1-r0 license:
+openssl-3.5.4-r0 license:
 Apache-2.0
 
 ```
@@ -1423,16 +1425,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r18 description:
+ssl_client-1.37.0-r19 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r18 webpage:
+ssl_client-1.37.0-r19 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r18 installed size:
+ssl_client-1.37.0-r19 installed size:
 14 KiB
 
-ssl_client-1.37.0-r18 license:
+ssl_client-1.37.0-r19 license:
 GPL-2.0-only
 
 ```

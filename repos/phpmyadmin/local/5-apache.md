@@ -1,10 +1,10 @@
-# `phpmyadmin:5.2.2-apache`
+# `phpmyadmin:5.2.3-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3139d0aec484b96c87d73dd94668bd5ca6a86018d3442d5c0bbd432840d4559`
-- Created: `2025-02-01T20:29:24Z`
-- Virtual Size: ~ 568.22 Mb  
+- Image ID: `sha256:1dacec7c8bc93c7c76d3d3abc0ab3bf6c209d4d1405dfd8c85170740aa52feb5`
+- Created: `2025-10-08T20:49:29Z`
+- Virtual Size: ~ 574.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -18,20 +18,22 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc`
-  - `PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
+  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
+  - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
+  - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
   - `MAX_EXECUTION_TIME=600`
   - `MEMORY_LIMIT=512M`
   - `UPLOAD_LIMIT=2048K`
   - `TZ=UTC`
   - `SESSION_SAVE_PATH=/sessions`
-  - `VERSION=5.2.2`
-  - `SHA256=f881819a3b11e653b0212afaf0cc105db85c767715cb3f5852670f7fc36c9669`
-  - `URL=https://files.phpmyadmin.net/phpMyAdmin/5.2.2/phpMyAdmin-5.2.2-all-languages.tar.xz`
+  - `VERSION=5.2.3`
+  - `SHA256=57881348297c4412f86c410547cf76b4d8a236574dd2c6b7d6a2beebe7fc44e3`
+  - `URL=https://files.phpmyadmin.net/phpMyAdmin/5.2.3/phpMyAdmin-5.2.3-all-languages.tar.xz`
 - Labels:
   - `org.opencontainers.image.authors=The phpMyAdmin Team <developers@phpmyadmin.net>`
   - `org.opencontainers.image.description=Run phpMyAdmin with Alpine, Apache and PHP FPM.`
@@ -41,7 +43,7 @@
   - `org.opencontainers.image.title=Official phpMyAdmin Docker image`
   - `org.opencontainers.image.url=https://github.com/phpmyadmin/docker#readme`
   - `org.opencontainers.image.vendor=phpMyAdmin`
-  - `org.opencontainers.image.version=5.2.2`
+  - `org.opencontainers.image.version=5.2.3`
 
 ## `dpkg` (`.deb`-based packages)
 
