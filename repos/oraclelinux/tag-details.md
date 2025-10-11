@@ -514,7 +514,7 @@ $ docker pull oraclelinux@sha256:3fac3d84b86523a883865ed8f2af0be8356d4aa35e684ad
 
 -	Layers:
 	-	`sha256:4f9cbc8a8c05259ded9bf3516634c155287aff566191d9c0da39f98bfc94f423`  
-		Last Modified: Mon, 16 Dec 2024 07:25:32 GMT  
+		Last Modified: Wed, 11 Dec 2024 20:29:50 GMT  
 		Size: 5.1 MB (5121617 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:77d014e356117e170e2658308a622945cc432eeaeb8dae01189679438180047e`  
