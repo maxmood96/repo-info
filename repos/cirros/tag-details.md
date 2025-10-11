@@ -134,7 +134,7 @@ $ docker pull cirros@sha256:2d5d76a715653151f91cbbff3abcd2b3fe4e6c4b04bb5e382526
 
 -	Layers:
 	-	`sha256:558bdd82c3a5506301b5b68875cf22cb9a373650dc2614056366c6ad939b6a7d`  
-		Last Modified: Wed, 08 Jan 2025 03:28:04 GMT  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -379,7 +379,7 @@ $ docker pull cirros@sha256:2d5d76a715653151f91cbbff3abcd2b3fe4e6c4b04bb5e382526
 
 -	Layers:
 	-	`sha256:558bdd82c3a5506301b5b68875cf22cb9a373650dc2614056366c6ad939b6a7d`  
-		Last Modified: Wed, 08 Jan 2025 03:28:04 GMT  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -624,7 +624,7 @@ $ docker pull cirros@sha256:2d5d76a715653151f91cbbff3abcd2b3fe4e6c4b04bb5e382526
 
 -	Layers:
 	-	`sha256:558bdd82c3a5506301b5b68875cf22cb9a373650dc2614056366c6ad939b6a7d`  
-		Last Modified: Wed, 08 Jan 2025 03:28:04 GMT  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -869,7 +869,7 @@ $ docker pull cirros@sha256:2d5d76a715653151f91cbbff3abcd2b3fe4e6c4b04bb5e382526
 
 -	Layers:
 	-	`sha256:558bdd82c3a5506301b5b68875cf22cb9a373650dc2614056366c6ad939b6a7d`  
-		Last Modified: Wed, 08 Jan 2025 03:28:04 GMT  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.in-toto+json
 
