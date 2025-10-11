@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:317d4e133feb3f72fede61a29025757410d9f0a9ef478bcefc5bfed75dfde642`
-- Created: `2025-07-16T19:33:24Z`
-- Virtual Size: ~ 207.51 Mb  
+- Image ID: `sha256:1a06d85b6008340d7daf8433508a2ef2c4af15f7af8314fe1324f9579e92b33d`
+- Created: `2025-09-17T00:23:53Z`
+- Virtual Size: ~ 207.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -120,16 +120,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r29 description:
+busybox-1.36.1-r30 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r29 webpage:
+busybox-1.36.1-r30 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r29 installed size:
+busybox-1.36.1-r30 installed size:
 908 KiB
 
-busybox-1.36.1-r29 license:
+busybox-1.36.1-r30 license:
 GPL-2.0-only
 
 ```
@@ -137,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r29 description:
+busybox-binsh-1.36.1-r30 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r29 webpage:
+busybox-binsh-1.36.1-r30 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r29 installed size:
+busybox-binsh-1.36.1-r30 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r29 license:
+busybox-binsh-1.36.1-r30 license:
 GPL-2.0-only
 
 ```
@@ -154,16 +154,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250619-r0 description:
+ca-certificates-bundle-20250911-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250619-r0 webpage:
+ca-certificates-bundle-20250911-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250619-r0 installed size:
-228 KiB
+ca-certificates-bundle-20250911-r0 installed size:
+236 KiB
 
-ca-certificates-bundle-20250619-r0 license:
+ca-certificates-bundle-20250911-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -188,16 +188,16 @@ GPL-2.0-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.4-r0 description:
+libcrypto3-3.3.5-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.4-r0 webpage:
+libcrypto3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.4-r0 installed size:
+libcrypto3-3.3.5-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.4-r0 license:
+libcrypto3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.4-r0 description:
+libssl3-3.3.5-r0 description:
 SSL shared libraries
 
-libssl3-3.3.4-r0 webpage:
+libssl3-3.3.5-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.4-r0 installed size:
+libssl3-3.3.5-r0 installed size:
 800 KiB
 
-libssl3-3.3.4-r0 license:
+libssl3-3.3.5-r0 license:
 Apache-2.0
 
 ```
@@ -273,16 +273,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r29 description:
+ssl_client-1.36.1-r30 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r29 webpage:
+ssl_client-1.36.1-r30 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r29 installed size:
+ssl_client-1.36.1-r30 installed size:
 28 KiB
 
-ssl_client-1.36.1-r29 license:
+ssl_client-1.36.1-r30 license:
 GPL-2.0-only
 
 ```
