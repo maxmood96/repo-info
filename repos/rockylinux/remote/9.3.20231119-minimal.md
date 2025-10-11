@@ -56,7 +56,7 @@ $ docker pull rockylinux@sha256:928b7501e9961a0df8b3036e7014507d55a40a3598116a27
 
 -	Layers:
 	-	`sha256:7cf6eed521e3754fb677f36a0fdd3600ef8d4ad7672628aa8d52d33bd0628855`  
-		Last Modified: Tue, 07 Jan 2025 07:58:11 GMT  
+		Last Modified: Wed, 29 May 2024 20:01:02 GMT  
 		Size: 2.2 MB (2229591 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5537a5e0c3314493b90f3bf1445e9c5da7eee74d91b7c68a4ff1f6592c985b5`  
