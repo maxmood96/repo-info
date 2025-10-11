@@ -70,7 +70,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 47.5 MB (47481235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66b1b8bf952a2fa10e2ed3b6bbace670641c17b4c51b185c34cfbe38ea13f9b6`  
@@ -148,7 +148,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
@@ -239,7 +239,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 47.5 MB (47481235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66b1b8bf952a2fa10e2ed3b6bbace670641c17b4c51b185c34cfbe38ea13f9b6`  
@@ -317,7 +317,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
@@ -408,7 +408,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 47.5 MB (47481235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66b1b8bf952a2fa10e2ed3b6bbace670641c17b4c51b185c34cfbe38ea13f9b6`  
@@ -486,7 +486,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
@@ -577,7 +577,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 47.5 MB (47481235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66b1b8bf952a2fa10e2ed3b6bbace670641c17b4c51b185c34cfbe38ea13f9b6`  
@@ -655,7 +655,7 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Size: 44.7 MB (44735113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:682d876f994d08b18295757d50723537cb72d6e62096eac0e9e200f896815c14`  
