@@ -358,7 +358,7 @@ $ docker pull alpine@sha256:b6acc0cad7b8d985d4aaabe7de1055a4ee2ce3ba0d620430f9d5
 		Size: 76.1 KB (76127 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a2a0dcac4ab036d8c46466868a13cc290ab42a336c72ceedb7a2cabce9d66be5`  
-		Last Modified: Wed, 15 Jan 2025 11:47:26 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:47:43 GMT  
 		Size: 5.1 KB (5130 bytes)  
 		MIME: application/vnd.in-toto+json
 
