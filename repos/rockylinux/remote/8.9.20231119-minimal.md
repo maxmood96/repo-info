@@ -56,7 +56,7 @@ $ docker pull rockylinux@sha256:3088b78d1583f032b826e623f559a9fca744bbb405490160
 		Size: 1.9 MB (1940771 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9ce4ef1271c85e63d14f8a5a289c61205fa9ce777b78f87e54eb6203a9c54c1b`  
-		Last Modified: Fri, 03 Jan 2025 16:19:06 GMT  
+		Last Modified: Wed, 29 May 2024 20:00:50 GMT  
 		Size: 5.4 KB (5383 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -81,7 +81,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9fce7f2b19bbb14963a2473ccdb12aa957656e7312f722f2f357baf65efb3744`  
-		Last Modified: Sat, 14 Dec 2024 18:25:09 GMT  
+		Last Modified: Thu, 30 May 2024 02:36:34 GMT  
 		Size: 35.5 MB (35491291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
