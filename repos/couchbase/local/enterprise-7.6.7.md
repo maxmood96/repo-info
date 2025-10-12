@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89cee9e4a7d8c7fd8cd8062487c605bb37b14d60ac4400b0aa8a40dd92a39c09`
+- Image ID: `sha256:1b5d1ee119d7803570a80a5342fb7a8b10d180d8c6f5e64ae432d22d96546b85`
 - Created: `2025-08-13T18:24:10Z`
-- Virtual Size: ~ 1.84 Gb  
+- Virtual Size: ~ 1.83 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2305,17 +2305,17 @@ $ apt-get source -qq --print-uris sysstat=12.6.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.6.1-2.debian.tar.xz' sysstat_12.6.1-2.debian.tar.xz 38240 SHA512:e2733fcfee6639e86c1c08ab06ffa29e56e11820df1c0dcb09feb8352d20f1bbb714191544ee624d27cd302e09c392d94d9957b3298e276a5a5c93070eb48c6c
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.10`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.11`
 
 Binary Packages:
 
-- `libsystemd-shared:amd64=255.4-1ubuntu8.10`
-- `libsystemd0:amd64=255.4-1ubuntu8.10`
-- `libudev1:amd64=255.4-1ubuntu8.10`
-- `systemd=255.4-1ubuntu8.10`
-- `systemd-dev=255.4-1ubuntu8.10`
-- `systemd-resolved=255.4-1ubuntu8.10`
-- `systemd-timesyncd=255.4-1ubuntu8.10`
+- `libsystemd-shared:amd64=255.4-1ubuntu8.11`
+- `libsystemd0:amd64=255.4-1ubuntu8.11`
+- `libudev1:amd64=255.4-1ubuntu8.11`
+- `systemd=255.4-1ubuntu8.11`
+- `systemd-dev=255.4-1ubuntu8.11`
+- `systemd-resolved=255.4-1ubuntu8.11`
+- `systemd-timesyncd=255.4-1ubuntu8.11`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-dev/copyright`, `/usr/share/doc/systemd-resolved/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
 
@@ -2328,9 +2328,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/shar
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.11
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.11.dsc' systemd_255.4-1ubuntu8.11.dsc 7324 SHA512:911c29309ba54128641ff4dac6bc86a3b2e276778fb8446daa29747385a7f6781f339ec4ab82bf34085d8156e08da2e9965e1bcabcd1d65ee575b5d82ef18ddf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.11.debian.tar.xz' systemd_255.4-1ubuntu8.11.debian.tar.xz 256052 SHA512:b8bf683caee235c8c46725592dd8b9c5acc08c3c0709ded98e039c089bc34c04618fc70dae70efdf8ee8bec09f2e124951d31574973c9d6f752ab935b700f7f8
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
