@@ -63,7 +63,7 @@ $ docker pull busybox@sha256:8ca2610657effa4cd12610a65db1c9e526dd7451b91ccabc34d
 
 -	Layers:
 	-	`sha256:face90767b53b08c19c644ee985fb1d8ba6fd40ed392a1206fcbe1e2313eece9`  
-		Last Modified: Thu, 14 Aug 2025 20:57:27 GMT  
+		Last Modified: Thu, 14 Aug 2025 18:25:33 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -86,7 +86,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:2e51698c209f4878d245e8281a09cf0ca3ecafe06af8c5e6d8a3aaa2c7e1c4e7`  
-		Last Modified: Thu, 14 Aug 2025 21:21:32 GMT  
+		Last Modified: Thu, 14 Aug 2025 21:21:08 GMT  
 		Size: 1.8 MB (1825759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -215,7 +215,7 @@ $ docker pull busybox@sha256:99232d0ad8279393b5d3d38115608b923e9f4def6abe1bb45bf
 
 -	Layers:
 	-	`sha256:f33efdf20bd5cdabb729319275f331df5d199ebe1ad180a0d2e1e1b49da7b328`  
-		Last Modified: Thu, 14 Aug 2025 20:57:35 GMT  
+		Last Modified: Thu, 14 Aug 2025 18:47:04 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -258,7 +258,7 @@ $ docker pull busybox@sha256:0a8ad18a81b2fe3caeab861135324f420cb795d9ac71d6b8c86
 
 -	Layers:
 	-	`sha256:744874fcb26e4b0da534a2fd91763a0d3420546888daad3ad62b0613ad6343cf`  
-		Last Modified: Thu, 14 Aug 2025 20:57:38 GMT  
+		Last Modified: Thu, 14 Aug 2025 18:25:34 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -301,7 +301,7 @@ $ docker pull busybox@sha256:b7ddb229ff6ed11791fd0f63af639999425347faf3bc8faf967
 
 -	Layers:
 	-	`sha256:360bf870c81913a6716f111141aa88548c77437f67f8bf70794707527d0b23a0`  
-		Last Modified: Thu, 14 Aug 2025 20:57:41 GMT  
+		Last Modified: Thu, 14 Aug 2025 18:54:59 GMT  
 		Size: 3.2 KB (3204 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -387,6 +387,6 @@ $ docker pull busybox@sha256:3456be86b68738adba69484915098d827bc8d441a4d225e16e6
 
 -	Layers:
 	-	`sha256:c6054a36088efbe1727e467626c81dd08a1e85647be9c76b1c1d993356493efa`  
-		Last Modified: Thu, 14 Aug 2025 20:57:46 GMT  
+		Last Modified: Thu, 14 Aug 2025 18:33:13 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
