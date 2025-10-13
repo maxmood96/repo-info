@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b033f3bd7a25d95830aa48793389fe4ab62ea5f0e33d7a255858fca2cfddbf70`
+- Image ID: `sha256:03d5400790ca4dc2768ca19767c1adb74583ce81fc042fbcd66dd138f17cc974`
 - Created: `2025-10-08T14:56:20Z`
-- Virtual Size: ~ 2.14 Gb  
+- Virtual Size: ~ 2.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -10433,12 +10433,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=283.pgdg24.04+1`
+### `dpkg` source package: `postgresql-common=285.pgdg24.04+1`
 
 Binary Packages:
 
-- `postgresql-client=18+283.pgdg24.04+1`
-- `postgresql-client-common=283.pgdg24.04+1`
+- `postgresql-client=18+285.pgdg24.04+1`
+- `postgresql-client-common=285.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
