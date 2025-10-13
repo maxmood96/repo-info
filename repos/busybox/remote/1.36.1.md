@@ -129,7 +129,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.22.1
 
 -	Layers:
 	-	`sha256:fe372f33b58b4fb837e53a4fae277fe5709a4446d362ac16efa99a97b4fc98c6`  
-		Last Modified: Tue, 03 Jun 2025 13:35:47 GMT  
+		Last Modified: Mon, 13 Oct 2025 16:51:36 GMT  
 		Size: 947.9 KB (947944 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
