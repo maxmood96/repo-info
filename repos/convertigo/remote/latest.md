@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:8f1f58e7d9daf7ff56befe9abe85e2575dfbed6fbe6f6f4c04c70bcfd95d250e
+$ docker pull convertigo@sha256:a99663eccdbc5c3f67bbf954b2732b14d732babd7872e3ea193aeada8e62ed3f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull convertigo@sha256:8f1f58e7d9daf7ff56befe9abe85e2575dfbed6fbe6f6f4c
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:78741444b7446d9a36a08d8b5f71a5c03c4960f6a87a078d03e687064c192ab9
+$ docker pull convertigo@sha256:10622ba0fe58a4698aeb4584759aacdff28d2bfbb5b762e4b507f0cb932b84eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.4 MB (342412852 bytes)**  
+-	Total Size: **342.4 MB (342413707 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8c9f5db720917c481ac76993d6b33fb3d2f2673647ad67e878c3b0a0029cd33`
+-	Image ID: `sha256:914f21446121a148bf9fe25a0cc43f19a048365e902bb318390f7af49ec78084`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -72,9 +72,9 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 # Thu, 25 Sep 2025 08:36:21 GMT
 ENV TOMCAT_MAJOR=9
 # Thu, 25 Sep 2025 08:36:21 GMT
-ENV TOMCAT_VERSION=9.0.110
+ENV TOMCAT_VERSION=9.0.111
 # Thu, 25 Sep 2025 08:36:21 GMT
-ENV TOMCAT_SHA512=5783b88b4bb2fc1dbd10be072deccec0ec96c35b8de09d65b96a8f846e84f4655ddfa43a22e58ace6bf02a653d80629039c733c4b1ff628fa9501048318537f0
+ENV TOMCAT_SHA512=2a955d97c6ed7d01fbf0392f3e2920129bcd541b259e894f441e411bac3bbe65576bcb3a314f06d624c9d70040828d26aa8a2c4f39d225d73f6a3db7523aa3ba
 # Thu, 25 Sep 2025 08:36:21 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	curl -fL -o upstream-KEYS 'https://www.apache.org/dist/tomcat/tomcat-9/KEYS'; 	gpg --batch --import upstream-KEYS; 	printf '' > filtered-KEYS; 	for key in 		'DCFD35E0BF8CA7344752DE8B6FB21E8933C60243' 		'A9C5DF4D22E99998D9875A5110C01C5A2F6059E7' 		'48F8E69F6390C9F25CFEDCD268248959359E722B' 	; do 		gpg --batch --fingerprint "$key"; 		gpg --batch --export --armor "$key" >> filtered-KEYS; 	done; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --import filtered-KEYS; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version # buildkit
 # Thu, 25 Sep 2025 08:36:21 GMT
@@ -146,17 +146,17 @@ CMD ["convertigo"]
 		Last Modified: Thu, 02 Oct 2025 05:02:56 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8027d673f9110928ca6b5c787ad8b5b8de1ba2a8438a53302495541ccc4e10c`  
-		Last Modified: Mon, 06 Oct 2025 23:12:06 GMT  
-		Size: 138.0 B  
+	-	`sha256:59c7807a2ca83b433297040ef2ab6176cd4e6424349e4b074607b79d8a4e3a31`  
+		Last Modified: Mon, 13 Oct 2025 23:11:40 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85f8506ee94a96d2472774a5ab395df878ab38dbddd1ea15e2612ebc9e792c9b`  
-		Last Modified: Mon, 06 Oct 2025 23:12:09 GMT  
-		Size: 14.0 MB (14004627 bytes)  
+	-	`sha256:597c2b673a4dfb5787da4acaed04f9dfabaf3ca3160030d24a7b96592611a140`  
+		Last Modified: Mon, 13 Oct 2025 23:11:42 GMT  
+		Size: 14.0 MB (14005456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -170,28 +170,28 @@ CMD ["convertigo"]
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af71026a478b4f6781c912794b15ef252ecb486de89ba73deb22e2563e65d2b4`  
-		Last Modified: Tue, 07 Oct 2025 00:12:03 GMT  
-		Size: 1.5 MB (1488914 bytes)  
+	-	`sha256:a196580fd32475d410eb58cfeb8187bb50c91b699fb3cc69828c250571bd2eb6`  
+		Last Modified: Tue, 14 Oct 2025 00:12:44 GMT  
+		Size: 1.5 MB (1488920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cc7d3dcebb2941858eafd0e914929ba563021e949d6d542823b0b2039aec87a`  
-		Last Modified: Tue, 07 Oct 2025 00:12:02 GMT  
-		Size: 4.5 KB (4464 bytes)  
+	-	`sha256:35b5397841270f646c40741e747860bbe2f6f246830747118e6af48585687a34`  
+		Last Modified: Tue, 14 Oct 2025 00:12:44 GMT  
+		Size: 4.5 KB (4469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f924a3ff1fcc9b5b7da407ee0a0f24d5787505830a954261cb11e1843961523`  
-		Last Modified: Tue, 07 Oct 2025 00:12:02 GMT  
-		Size: 28.0 KB (28036 bytes)  
+	-	`sha256:930394073d752ab89632d0e364a8b8ef5df6733716207163e37a5d5c2d8dae20`  
+		Last Modified: Tue, 14 Oct 2025 00:12:44 GMT  
+		Size: 28.0 KB (28038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0d5c3cf1caa9f79993ce73e00f3204cc361f5300cfb917211672cf4944655e6`  
-		Last Modified: Tue, 07 Oct 2025 00:12:17 GMT  
-		Size: 118.8 MB (118834458 bytes)  
+	-	`sha256:adfdeca0792c2f5a6fab0dfb700f8c20615ba1ca689a5906e3368885d5935b52`  
+		Last Modified: Tue, 14 Oct 2025 00:13:05 GMT  
+		Size: 118.8 MB (118834470 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5ca6047f1727f388a902d7448a4ad2964cc988d1c9c71ef0da894f22537fa4e`  
-		Last Modified: Tue, 07 Oct 2025 00:12:02 GMT  
+	-	`sha256:dd23b2093b3f92793c69799dc7b99ae8f401ee89a73a30d8c6cbf54f371156c9`  
+		Last Modified: Tue, 14 Oct 2025 00:12:44 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8183f95fdc7b28b6867438d5b73c06b40121dd23ad20f869c9ba6d0a8617aed7`  
-		Last Modified: Tue, 07 Oct 2025 00:12:02 GMT  
+	-	`sha256:6d9d3d177eb086a46e77591cda8917c6b6c52a6a8d649f535ddfe80d6350fbe4`  
+		Last Modified: Tue, 14 Oct 2025 00:12:44 GMT  
 		Size: 2.4 KB (2419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -202,37 +202,37 @@ CMD ["convertigo"]
 ### `convertigo:latest` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:9f862c4ea47f1c219efbcd280a71a8264366c1130c49edfd4f7ceea29e658d8c
+$ docker pull convertigo@sha256:c3dbf114b4a4d3995c5e3a2df50784d532e6943faefab631c5986fe364983026
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.4 MB (4384002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:805a120f2fb8deb9f03fb3a5a61800d3738161c04755f4e0520bef873c80b07a`
+-	Image ID: `sha256:5a304fbaebb023a5ba1ad8a73a5ea86c433bae0ccab45f4f534cf34e2a089e31`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1ada2fad402097f552978ec0547a278b088026b4a2713a00b49230eb64894142`  
-		Last Modified: Tue, 07 Oct 2025 01:59:24 GMT  
+	-	`sha256:b96a0701a2f4167a0abab7da1ec405a2a1d2f776590b466a48f4fd672fa98d97`  
+		Last Modified: Tue, 14 Oct 2025 01:59:22 GMT  
 		Size: 4.3 MB (4338924 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f8f7c1004986ce84fbb35c597b9a7f878a8a0ef9767c74dff148c043f44e210a`  
-		Last Modified: Tue, 07 Oct 2025 01:59:25 GMT  
+	-	`sha256:6518da70913667670c4b126aed48ae15ea6fbf2baba81aaf7285383d4b706d92`  
+		Last Modified: Tue, 14 Oct 2025 01:59:23 GMT  
 		Size: 45.1 KB (45078 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `convertigo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull convertigo@sha256:5ea68f1e3cb58d3b9aaddb867e3846b17f2c7cd1b193b7f07618b6ef58c7d66d
+$ docker pull convertigo@sha256:f3a4d1d73475e62867a04adad08f4231cd1664ef2f0c5fa395b2d3f7499994a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **339.8 MB (339829163 bytes)**  
+-	Total Size: **339.8 MB (339828867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ec9ddf987deb5ae9a3f64c4664457fb22e41e5d56f1d3286d64ef021604c08f`
+-	Image ID: `sha256:7e038e0598bb375d0634ce3ac9393bc62bd3a1163786591fd142cb2abbe1b044`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -284,9 +284,9 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 # Thu, 25 Sep 2025 08:36:21 GMT
 ENV TOMCAT_MAJOR=9
 # Thu, 25 Sep 2025 08:36:21 GMT
-ENV TOMCAT_VERSION=9.0.110
+ENV TOMCAT_VERSION=9.0.111
 # Thu, 25 Sep 2025 08:36:21 GMT
-ENV TOMCAT_SHA512=5783b88b4bb2fc1dbd10be072deccec0ec96c35b8de09d65b96a8f846e84f4655ddfa43a22e58ace6bf02a653d80629039c733c4b1ff628fa9501048318537f0
+ENV TOMCAT_SHA512=2a955d97c6ed7d01fbf0392f3e2920129bcd541b259e894f441e411bac3bbe65576bcb3a314f06d624c9d70040828d26aa8a2c4f39d225d73f6a3db7523aa3ba
 # Thu, 25 Sep 2025 08:36:21 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	curl -fL -o upstream-KEYS 'https://www.apache.org/dist/tomcat/tomcat-9/KEYS'; 	gpg --batch --import upstream-KEYS; 	printf '' > filtered-KEYS; 	for key in 		'DCFD35E0BF8CA7344752DE8B6FB21E8933C60243' 		'A9C5DF4D22E99998D9875A5110C01C5A2F6059E7' 		'48F8E69F6390C9F25CFEDCD268248959359E722B' 	; do 		gpg --batch --fingerprint "$key"; 		gpg --batch --export --armor "$key" >> filtered-KEYS; 	done; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --import filtered-KEYS; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version # buildkit
 # Thu, 25 Sep 2025 08:36:21 GMT
@@ -358,17 +358,17 @@ CMD ["convertigo"]
 		Last Modified: Thu, 02 Oct 2025 01:18:00 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfdbaa9d44dfa4d6517f2f1fb9f37dc407fd46520ef285e05b07aab655365624`  
-		Last Modified: Mon, 06 Oct 2025 23:12:03 GMT  
-		Size: 138.0 B  
+	-	`sha256:706055969e518cd277be9d756531be29fdc2b80819901ec10cff5bf313a9bf88`  
+		Last Modified: Mon, 13 Oct 2025 23:12:08 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fb6b2b40ebddbe3d5082969c3b531e0661881832e5fae90ab2753d8a2cc7255`  
-		Last Modified: Mon, 06 Oct 2025 23:12:04 GMT  
-		Size: 14.0 MB (14014465 bytes)  
+	-	`sha256:ed0314abe57769e121c750e9c207a35d6fea99eea5cb1547b87bb6c236366444`  
+		Last Modified: Mon, 13 Oct 2025 23:12:09 GMT  
+		Size: 14.0 MB (14014029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -382,28 +382,28 @@ CMD ["convertigo"]
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efcaa4cb5e1fe0043de9d6ad1f04b007f9442d21333d31e279e544fe812bed2d`  
-		Last Modified: Tue, 07 Oct 2025 00:12:12 GMT  
-		Size: 1.4 MB (1391679 bytes)  
+	-	`sha256:42a9454953c7fadd509fb1a68623e96f9b4656131215f339f48f981147bc9e49`  
+		Last Modified: Tue, 14 Oct 2025 00:12:38 GMT  
+		Size: 1.4 MB (1391802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b73fb27c2d6be30aa1337a03b794a6da8e43fa8ff1c64c64dff5deb2f7ab3350`  
-		Last Modified: Tue, 07 Oct 2025 00:12:12 GMT  
-		Size: 4.5 KB (4474 bytes)  
+	-	`sha256:86de973ade717e21a7b6f7a2e107d87328329cd76780d924251cdb1b5efbedaf`  
+		Last Modified: Tue, 14 Oct 2025 00:12:38 GMT  
+		Size: 4.5 KB (4476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82b7e6944eccf2c31892b2027dab350cf52618c7dfc3fd33e640fe9f6cc16456`  
-		Last Modified: Tue, 07 Oct 2025 00:12:11 GMT  
-		Size: 28.0 KB (28037 bytes)  
+	-	`sha256:63b0777eb81629b2394ca13f97352f2a38c89ceed1640f81edf7e16d2d06ff58`  
+		Last Modified: Tue, 14 Oct 2025 00:12:39 GMT  
+		Size: 28.0 KB (28036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f30f16b49536c8b574f8c73e59a4e0790c855b5f1d469e5c47cc09f80231aa1f`  
-		Last Modified: Tue, 07 Oct 2025 00:12:19 GMT  
-		Size: 118.8 MB (118834441 bytes)  
+	-	`sha256:6956484b2ae28bece6e335b0ac2b18776f814a6fdfa60e191b31cec771ebac3b`  
+		Last Modified: Tue, 14 Oct 2025 00:12:32 GMT  
+		Size: 118.8 MB (118834454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9edd4b89150ce3e94ee91ce57967fc32feddcedf22df7819f28eae612ee960c`  
-		Last Modified: Tue, 07 Oct 2025 00:12:11 GMT  
-		Size: 448.0 B  
+	-	`sha256:40fc2685cf7fb5746264ace8a4f3f1c2fa2c661091f2f8055f49d7b88fbe4fb7`  
+		Last Modified: Tue, 14 Oct 2025 00:12:38 GMT  
+		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6f6ca75fe3330c598e316c74b341a3b362426cd54d8e8ae26dd960b16d66187`  
-		Last Modified: Tue, 07 Oct 2025 00:12:12 GMT  
+	-	`sha256:a1451aa34105b9b6ff646dc90b45262f3f02f8eb1f6db54946138966ed9a357f`  
+		Last Modified: Tue, 14 Oct 2025 00:12:38 GMT  
 		Size: 2.4 KB (2419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -414,23 +414,23 @@ CMD ["convertigo"]
 ### `convertigo:latest` - unknown; unknown
 
 ```console
-$ docker pull convertigo@sha256:6469d97fe910179e8b41213608568e40c84b8665f84eb9bdb80c534a806e47cb
+$ docker pull convertigo@sha256:4ad319acbd6dda02e85846a4d6fe022211eb8310bd73c54771f75e1e44cb8fdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.5 MB (4479620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48e819bfa613530e88b3e4ffdd2e971a5629ae14846ff3ecf26d4929fd2b7697`
+-	Image ID: `sha256:ff011be323b9e432ced2771c1dbd787f6d0521d06a55700122d1574afe075225`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ad9d239ff7f73c72795acd068a8331b539bc648fef587699ff270eed2d3e0118`  
-		Last Modified: Tue, 07 Oct 2025 01:59:29 GMT  
+	-	`sha256:f0774f227f09703f61b4dde20f3cb8dfd2c0e6802c6e6edcea2fb273f522e60d`  
+		Last Modified: Tue, 14 Oct 2025 01:59:28 GMT  
 		Size: 4.4 MB (4434390 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f7073a864022a249e98988d7ed53a704150f7d51c61e10519e144ba14c4211e`  
-		Last Modified: Tue, 07 Oct 2025 01:59:30 GMT  
+	-	`sha256:bb72f7caac080e8c386e338664270d62f1ff6e95be5900b7f8f6a96e0df114f1`  
+		Last Modified: Tue, 14 Oct 2025 01:59:29 GMT  
 		Size: 45.2 KB (45230 bytes)  
 		MIME: application/vnd.in-toto+json
