@@ -300,7 +300,7 @@ RUN BusyBox 1.36.1 (glibc), Debian 13
 
 -	Layers:
 	-	`sha256:7b134f084fe94a2a550ab44e99d5cbfcf6f0458669e029a9f5cf178f82befb39`  
-		Last Modified: Fri, 15 Aug 2025 08:42:44 GMT  
+		Last Modified: Tue, 14 Oct 2025 10:00:07 GMT  
 		Size: 1.9 MB (1940221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
