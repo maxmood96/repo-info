@@ -1017,7 +1017,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 5.0 MB (5017294 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72b3d1622e64e67f8158c1140d32d9af9ea1e895d19ca58cc0bd4830ad1a8f49`  
-		Last Modified: Mon, 13 Oct 2025 23:10:51 GMT  
+		Last Modified: Tue, 14 Oct 2025 03:56:57 GMT  
 		Size: 438.2 MB (438220191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ceb81edc858d919a0f3b710cc53f5d04b2eb44fcc42f89b94ef76c6f66606d7`  
@@ -1168,7 +1168,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 5.0 MB (5022825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83eb0e1fa6b2b04253f22566374bc0f083f972ac2347c8ee60fe30084af772ee`  
-		Last Modified: Mon, 13 Oct 2025 23:11:06 GMT  
+		Last Modified: Tue, 14 Oct 2025 03:56:21 GMT  
 		Size: 436.5 MB (436482647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a9467b1b71260b3ed5b355c3b5d180d224b3896ab2af38814fa89e3502256be0`  
@@ -1380,7 +1380,7 @@ $ docker pull logstash@sha256:fe285439cdf2c49e0883499810a750f2316bd5abf51489b162
 		Size: 2.1 MB (2075955 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:316d16e4951c2d176e207b13a54e6ef71ae86169e7e735edfd7702062b5e8e4e`  
-		Last Modified: Mon, 13 Oct 2025 23:10:35 GMT  
+		Last Modified: Tue, 14 Oct 2025 03:56:34 GMT  
 		Size: 29.5 KB (29537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1527,10 +1527,10 @@ $ docker pull logstash@sha256:7377558630100c20935672cc20f53acc039ca03b84b7d1d15b
 
 -	Layers:
 	-	`sha256:47864341c4a31803f977bcee1674a2a453a103e77be86f2abc5ab269a0c986d6`  
-		Last Modified: Mon, 13 Oct 2025 23:10:53 GMT  
+		Last Modified: Tue, 14 Oct 2025 03:56:34 GMT  
 		Size: 2.1 MB (2076527 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5cc1a8b4c3a55662c3860ffd721b12c1d65ed5b01c5a1d861ceac9454c354738`  
-		Last Modified: Mon, 13 Oct 2025 23:10:53 GMT  
+		Last Modified: Tue, 14 Oct 2025 03:56:34 GMT  
 		Size: 29.7 KB (29654 bytes)  
 		MIME: application/vnd.in-toto+json
