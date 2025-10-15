@@ -517,20 +517,13 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3t64/copyright`)
 - `X11`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-9
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-9.dsc' db5.3_5.3.28+dfsg2-9.dsc 2373 SHA256:045f392c75dffc9d4f3bd44978b90ca8d45b935cf0ae4202bf79a760f2ce07b1
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-9.debian.tar.xz' db5.3_5.3.28+dfsg2-9.debian.tar.xz 36412 SHA256:21fe6ee0491c83d0c34fe52e0e0e423946172eff68262584a0cc8ef880c36b74
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-9/
 
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-9/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.91`
 
@@ -3391,10 +3384,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=258-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_258-1.dsc' systemd_258-1.dsc 8571 SHA256:9382998b7cfa83b0e69c3f9b7b9028b9e72bb1b0a21c7b5e22ded146c56ae9ba
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_258.orig.tar.gz' systemd_258.orig.tar.gz 16976853 SHA256:07a580cf21856f468f82b77b82973a926f42ccc696462459b53f8b88893dff8e
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_258-1.debian.tar.xz' systemd_258-1.debian.tar.xz 182188 SHA256:e903f6557b44a274de3797da971cc175ce0aa1d12c3bcb50dfd0f3e69ad96cc4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258-1.dsc' systemd_258-1.dsc 8571 SHA256:9382998b7cfa83b0e69c3f9b7b9028b9e72bb1b0a21c7b5e22ded146c56ae9ba
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.orig.tar.gz' systemd_258.orig.tar.gz 16976853 SHA256:07a580cf21856f468f82b77b82973a926f42ccc696462459b53f8b88893dff8e
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258-1.debian.tar.xz' systemd_258-1.debian.tar.xz 182188 SHA256:e903f6557b44a274de3797da971cc175ce0aa1d12c3bcb50dfd0f3e69ad96cc4
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/systemd/258-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/258-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/258-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
