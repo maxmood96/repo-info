@@ -1,7 +1,7 @@
 ## `drupal:fpm-trixie`
 
 ```console
-$ docker pull drupal@sha256:c76ae31aaaaa3835918900eca72f4f8bac06b78e781be65eee458ed97e0981b6
+$ docker pull drupal@sha256:dd272b34bbcc4a6cb311074c796da9a05bc0e128d4e8ea21300788f98ad5fe25
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -904,13 +904,13 @@ $ docker pull drupal@sha256:4468a81cf3719440184409e303dadf0683db16f19b928ea1a97a
 ### `drupal:fpm-trixie` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:5259cd2b129e092e1cb29bd1e80d564d7b5e743a9f89d238fa653f0a72cae037
+$ docker pull drupal@sha256:f50fa078bbac385f9b5b3d046eab1ad5a3cf208aeebb7287a5d8c0c027011918
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.8 MB (227763559 bytes)**  
+-	Total Size: **227.8 MB (227764013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:349e6361f01a11fa59061790428991e58641ceb1666b8af4907f0e8930da5d97`
+-	Image ID: `sha256:e09451169f4bd22c40c394c3fd6a9c2186807c2e6da6b17fe5811a7c3b90b1b4`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1048,33 +1048,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Fri, 03 Oct 2025 18:10:59 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:871f471be3b12037104cff6d0c6af0bad9c00c0740c610bd051ab56738648c5d`  
-		Last Modified: Fri, 03 Oct 2025 18:11:03 GMT  
-		Size: 20.6 MB (20638853 bytes)  
+	-	`sha256:1d7628b377353e890b55a4b8a2eb9cd7aa11e081fe71c027acbbc9b1a3c9c682`  
+		Last Modified: Wed, 15 Oct 2025 03:54:30 GMT  
+		Size: 20.6 MB (20639307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-trixie` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:5e8f6064e669d2307a707ef066610e4a2ef68766e7af6146a47fa2b2c380c6eb
+$ docker pull drupal@sha256:be3e85ac5608e233a36f7d3e1efff29a63b0b745f4525823cb3a7a0e1307752e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.9 MB (6923255 bytes)**  
+-	Total Size: **6.9 MB (6923253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:51fece12e9d3d5ec59d780ea8ce35aa7ff53bf9a96eb964c5b609345ad5b394b`
+-	Image ID: `sha256:5dfe336484074d943e0c245813604d786fef455b4fa2db7a4f298d4db54abcf1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cfb661a9d6e11adca8962e8e13e6895cce5a967f40b52e5045f4f8acf47b6264`  
-		Last Modified: Fri, 03 Oct 2025 19:58:22 GMT  
+	-	`sha256:9845f1d4898a886ff7a49b81a1f043ea2d5d4ee2ae195c01868307c1eabddc3f`  
+		Last Modified: Wed, 15 Oct 2025 04:56:42 GMT  
 		Size: 6.9 MB (6884771 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:75363d0f0f64ffccd7d7723bb74e2d47db65251fae00248db51987c2f9aadef2`  
-		Last Modified: Fri, 03 Oct 2025 19:58:22 GMT  
-		Size: 38.5 KB (38484 bytes)  
+	-	`sha256:0ec131fbaf4cf60a3d2bc1b78b2f6159ded4e0ffeebce8357d72e71c0170008b`  
+		Last Modified: Wed, 15 Oct 2025 04:56:43 GMT  
+		Size: 38.5 KB (38482 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-trixie` - linux; s390x
