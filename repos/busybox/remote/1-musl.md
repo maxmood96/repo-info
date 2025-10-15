@@ -1,7 +1,7 @@
 ## `busybox:1-musl`
 
 ```console
-$ docker pull busybox@sha256:d4dd339f73a853db3f6897f7ba525cd793467b96d9008ae5da3d2b9e0f5b0d20
+$ docker pull busybox@sha256:5b9c2e4df019f56a2cbb0d7b748208c44cc77c03f793ae1d4bdbdf3e41b044cd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -263,18 +263,18 @@ $ docker pull busybox@sha256:be2f92163ab9a084e6edcacbc970c82397006e8f70dbb6b48bf
 ### `busybox:1-musl` - linux; riscv64
 
 ```console
-$ docker pull busybox@sha256:a730bc9f9367b59798adeb8f020420ad886d065040f27d312f967ca798903dd0
+$ docker pull busybox@sha256:b70ef2c556e4a4b95a1918e51aec4d2130491fd3afc74930c0147c0625a1d75a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **923.4 KB (923440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7e37329b1e59dcccac5f168eb5fe2f4e6429baa0d0f2dce684ec66d0e7632c6`
+-	Image ID: `sha256:5dfd4dafc2fe9b988fb349fb53bf073467f878bd1b6f76400a7b5ba626d49fa5`
 -	Default Command: `["sh"]`
 
 ```dockerfile
 # Thu, 26 Sep 2024 21:31:42 GMT
-RUN BusyBox 1.37.0 (musl), Alpine 3.22.1
+RUN BusyBox 1.37.0 (musl), Alpine 3.22.2
 ```
 
 -	Layers:
@@ -286,20 +286,20 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.22.1
 ### `busybox:1-musl` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:5c1036202ca88a2d590a1b936b3609018d4104a3d3b7733d1a5cd8f21defa671
+$ docker pull busybox@sha256:b8fd948c5b708f8248f9d1e8a536d6912f95411e7359c67add289d77beecea9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05ba8d0d98ed442c81a5d7e7d466208d44d352b14510ccd614467e1ca0c95f24`
+-	Image ID: `sha256:d47ddfaf4413d1e948d57adc529ccf47d83facbec083b15a89d492b39a7a4e95`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0057f9844ffbea95482edb5136d19c54566819b266d89aa52994e7ce060a6efc`  
-		Last Modified: Fri, 10 Oct 2025 09:35:57 GMT  
+	-	`sha256:ef5ef6ef85da24dcf00f3de4b9eefb6d08196e248de29454793b744661d6ed1e`  
+		Last Modified: Wed, 15 Oct 2025 05:57:30 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
