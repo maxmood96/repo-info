@@ -247,7 +247,12 @@ $ docker pull crate@sha256:ef9f9968cc71bca1fab290ca778cfabdef620bde728050bc5c318
 
 ## `crate:5.10.13`
 
-**does not exist** (yet?)
+```console
+$ docker pull crate@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `crate:6.0`
 
@@ -488,7 +493,12 @@ $ docker pull crate@sha256:3b458badeffc4fb02e6886502c1f8389864d6b90558b8b7c0dc6f
 
 ## `crate:6.0.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull crate@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `crate:latest`
 
