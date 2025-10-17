@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4ea895d61e673977b52b962bc96be6f6c43192b79b0a742aa6af720f8dfd8d7`
-- Created: `2025-09-11T16:08:13Z`
+- Image ID: `sha256:a777a56e7f4eebc4430d115db28c0f141c0ba4c6211b5bad6feb2ad1cf9909bb`
+- Created: `2025-10-09T13:18:45Z`
 - Virtual Size: ~ 342.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,26 +14,26 @@
   - `JAVA_VERSION=8.0.8.51`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport`
-  - `LOG_DIR=/logs`
+  - `LOG_DIR=/liberty/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl250920250821-1629`
+  - `BuildLabel=cl251020250923-1355`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=25.0.0.9`
-  - `com.ibm.websphere.liberty.version=25.0.0.9`
-  - `liberty.version=25.0.0.9`
+  - `ProductVersion=25.0.0.10`
+  - `com.ibm.websphere.liberty.version=25.0.0.10`
+  - `liberty.version=25.0.0.10`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl250920250821-1629`
+  - `org.opencontainers.image.revision=cl251020250923-1355`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=25.0.0.9`
+  - `org.opencontainers.image.version=25.0.0.10`
 
 ## `dpkg` (`.deb`-based packages)
 
