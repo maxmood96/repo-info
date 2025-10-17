@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ec55805a3f355cfa044125bd6486fa5aec99f7cd5f1560ced900dc20275cf5b`
-- Created: `2025-09-11T16:09:27Z`
-- Virtual Size: ~ 732.27 Mb  
+- Image ID: `sha256:831c131f76103a6bf080ffd1ba71a4a2ace4e93bb4bffef6fd2c62cd593bdd9f`
+- Created: `2025-10-09T13:17:23Z`
+- Virtual Size: ~ 734.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -17,24 +17,24 @@
   - `JAVA_VERSION=jdk8u462-b08_openj9-0.53.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `LOG_DIR=/logs`
+  - `LOG_DIR=/liberty/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `io.openliberty.version=25.0.0.10-beta`
-  - `liberty.version=25.0.0.10-beta`
+  - `io.openliberty.version=25.0.0.11-beta`
+  - `liberty.version=25.0.0.11-beta`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke`
   - `org.opencontainers.image.description=This image contains the Open Liberty beta runtime with IBM Semeru Runtime Open Edition OpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl250920250821-1629`
+  - `org.opencontainers.image.revision=cl251020250923-1355`
   - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
   - `org.opencontainers.image.title=Open Liberty Beta`
   - `org.opencontainers.image.url=https://openliberty.io/`
   - `org.opencontainers.image.vendor=Open Liberty`
-  - `org.opencontainers.image.version=25.0.0.10-beta`
+  - `org.opencontainers.image.version=25.0.0.11-beta`
 
 ## `dpkg` (`.deb`-based packages)
 
