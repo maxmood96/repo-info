@@ -1,17 +1,17 @@
-# `node:24-bookworm-slim`
+# `node:25-bookworm-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d72b2b94d99fffb88dd92afe1bf27b4bc0f550ce7df2c400174b857d3c0ce33`
-- Created: `2025-10-09T03:08:05Z`
-- Virtual Size: ~ 232.58 Mb  
+- Image ID: `sha256:d4dbfa5abdcd8e7330725ef03dd0898ce7154003b6129ae3e68bb213aa58c0d0`
+- Created: `2025-10-16T00:47:24Z`
+- Virtual Size: ~ 238.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.10.0`
+  - `NODE_VERSION=25.0.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -627,10 +627,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `gcc-12-base:amd64=12.2.0-14+deb12u1`
+- `libatomic1:amd64=12.2.0-14+deb12u1`
 - `libgcc-s1:amd64=12.2.0-14+deb12u1`
 - `libstdc++6:amd64=12.2.0-14+deb12u1`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`

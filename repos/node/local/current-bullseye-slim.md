@@ -1,17 +1,17 @@
-# `node:24-bullseye-slim`
+# `node:25-bullseye-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9120196a14dcc9f881d43c8b5c01373cfced4febc1d0c37b1aee9040b543c0d7`
-- Created: `2025-10-09T03:08:05Z`
-- Virtual Size: ~ 238.87 Mb  
+- Image ID: `sha256:a7031148251b1e6826105f26dd9e74edf217b235a99e8171dc546f371bf18fa2`
+- Created: `2025-10-16T00:47:24Z`
+- Virtual Size: ~ 244.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.10.0`
+  - `NODE_VERSION=25.0.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -549,10 +549,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `gcc-10-base:amd64=10.2.1-6`
+- `libatomic1:amd64=10.2.1-6`
 - `libgcc-s1:amd64=10.2.1-6`
 - `libstdc++6:amd64=10.2.1-6`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`

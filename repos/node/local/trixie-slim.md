@@ -1,17 +1,17 @@
-# `node:24-trixie-slim`
+# `node:25-trixie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd1a778a8220beaec88ae0a4f00f50825ad36af628a06ae76be966e9340d67a4`
-- Created: `2025-10-09T03:08:05Z`
-- Virtual Size: ~ 244.77 Mb  
+- Image ID: `sha256:1e0ed2d33e1f96912b14ebad980b1a2e6b985476923896c129638da90ea727fe`
+- Created: `2025-10-16T00:47:24Z`
+- Virtual Size: ~ 250.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.10.0`
+  - `NODE_VERSION=25.0.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -589,10 +589,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `gcc-14-base:amd64=14.2.0-19`
+- `libatomic1:amd64=14.2.0-19`
 - `libgcc-s1:amd64=14.2.0-19`
 - `libstdc++6:amd64=14.2.0-19`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
