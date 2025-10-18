@@ -1,9 +1,9 @@
-# `adminer:5.4.0-fastcgi`
+# `adminer:5.4.1-fastcgi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2be609740e08f54942af459b510263be9ba31911758fab8e4148c941da668c0f`
-- Created: `2025-09-08T21:09:19Z`
+- Image ID: `sha256:45dbc0f5376b57e9ff0c577b7fe365fc3dec87370df97abee7d1aa7e375da6bb`
+- Created: `2025-10-15T17:23:32Z`
 - Virtual Size: ~ 96.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,9 +21,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc`
   - `PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df`
-  - `ADMINER_VERSION=5.4.0`
-  - `ADMINER_DOWNLOAD_SHA256=7a572ddc4e512d4752902b769ebb400465583d814c9d280c0b7175d51a3159e0`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=1bb363516dc674fed3d7f3823437d9a4ecbbbfca0615612fc3a8a04fe184ae9d`
+  - `ADMINER_VERSION=5.4.1`
+  - `ADMINER_DOWNLOAD_SHA256=3f65364b4cc96b5e4cae1b3e448b7b6fa42b0da1eeba78bed9b3774ade830fce`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=fd96585b1f8728b729551c5a7de3371724c1ccd701afde4c75fd6b990d935a63`
 
 ## `apk` (`.apk`-based packages)
 
