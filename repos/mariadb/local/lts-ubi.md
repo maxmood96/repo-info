@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b7cc49182b554a61c58ec5507938dc4eed4ec2bf2dd0815236ad4161e9d40cd`
+- Image ID: `sha256:38c25dd50f156bf4946aa3d7de901cd2f12f3b1c65553fddececa4eb410e2ce7`
 - Created: `2025-08-10T22:04:52Z`
-- Virtual Size: ~ 491.88 Mb  
+- Virtual Size: ~ 491.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,12 +16,13 @@
   - `MARIADB_VERSION=11.8.3`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-09-18T08:36:33Z`
+  - `build-date=2025-10-15T08:06:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
+  - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=MariaDB Database for relational SQL`
   - `distribution-scope=public`
-  - `io.buildah.version=1.40.1`
+  - `io.buildah.version=1.41.4`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
@@ -33,7 +34,7 @@
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=0c20ee48321f5d64135f6208d1332c0b032df6c3`
+  - `org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -42,7 +43,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0c20ee48321f5d64135f6208d1332c0b032df6c3`
+  - `vcs-ref=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.3`
@@ -275,7 +276,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+https://na.edge.kernel.org/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -525,7 +526,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://na.edge.kernel.org/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2120,7 +2121,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://na.edge.kernel.org/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2131,7 +2132,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://na.edge.kernel.org/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
