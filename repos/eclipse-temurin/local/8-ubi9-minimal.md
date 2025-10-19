@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7cad72c7949024c2fa682d3e83fb05e48b691670aa29a023c3cb836606d1e1d8`
+- Image ID: `sha256:2a5f6209f243e005031d20d1d1a873322661e03aeadbed3a08dea0d03e7cd06e`
 - Created: `2025-08-01T11:04:34Z`
 - Virtual Size: ~ 332.47 Mb  
   (total size of all layers on-disk)
@@ -18,23 +18,24 @@
   - `JAVA_VERSION=jdk8u462-b08`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-09-18T08:36:33Z`
+  - `build-date=2025-10-15T08:06:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
+  - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.40.1`
+  - `io.buildah.version=1.41.4`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
-  - `name=ubi9-minimal`
-  - `org.opencontainers.image.revision=0c20ee48321f5d64135f6208d1332c0b032df6c3`
-  - `release=1758184547`
+  - `name=ubi9/ubi-minimal`
+  - `org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59`
+  - `release=1760515502`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0c20ee48321f5d64135f6208d1332c0b032df6c3`
+  - `vcs-ref=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
