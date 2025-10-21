@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6033b811d3eccccdc94c923ee0cbafd4e6fb255f5edef15cca2eb98b8ddfb62`
+- Image ID: `sha256:a48028ea513ecb3961da8e8ca5f3a2e2e6fd100b77c3e2fed1681c33e81119e8`
 - Created: `2025-08-20T11:59:39Z`
 - Virtual Size: ~ 3.50 Gb  
   (total size of all layers on-disk)
@@ -847,12 +847,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.30.2-1+deb11u4`
+### `dpkg` source package: `git=1:2.30.2-1+deb11u5`
 
 Binary Packages:
 
-- `git=1:2.30.2-1+deb11u4`
-- `git-man=1:2.30.2-1+deb11u4`
+- `git=1:2.30.2-1+deb11u5`
+- `git-man=1:2.30.2-1+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -874,13 +874,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:2.30.2-1+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u5.dsc' git_2.30.2-1+deb11u5.dsc 2362 SHA256:737ffa4d12cc8b7b6af5db2965fe8d2342c59b3b7f747f10401207b15d49a608
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2.orig.tar.xz' git_2.30.2.orig.tar.xz 6329820 SHA256:41f7d90c71f9476cd387673fcb10ce09ccbed67332436a4cc58d7af32c355faa
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.30.2-1%2bdeb11u5.debian.tar.xz' git_2.30.2-1+deb11u5.debian.tar.xz 730140 SHA256:25172c60b33e89191ba4133512523b4c8b670dbcb964fde155ba264bc993395a
+```
 
-- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:2.30.2-1+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.30.2-1+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-13+deb11u13`
 
@@ -1798,11 +1805,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.237-1`
+### `dpkg` source package: `linux=5.10.244-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.237-1`
+- `linux-libc-dev:amd64=5.10.244-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1818,17 +1825,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.237-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.237-1.dsc' linux_5.10.237-1.dsc 209423 SHA256:ef29f35761101074ed0ece195e3b323aebbc27cbf9b8f124316c85b1b0475505
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.237.orig.tar.xz' linux_5.10.237.orig.tar.xz 122062112 SHA256:32efd0b87e8732196a8bcc3edd0f8d4479f4edee844ec9e149c0255c94c4c5ee
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.237-1.debian.tar.xz' linux_5.10.237-1.debian.tar.xz 1740896 SHA256:0e4a1633d59c73c1b7024a4071fbb0cc1280624b2c96e6e34a24c9bf40823179
+$ apt-get source -qq --print-uris linux=5.10.244-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244-1.dsc' linux_5.10.244-1.dsc 209429 SHA256:00564a843655ac1f6e2fd7268177cfb858c967817ac763b5ac255892f9fb8141
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244.orig.tar.xz' linux_5.10.244.orig.tar.xz 122105040 SHA256:94fe544015224ab7b5ca3b391576c0c84be3b655e5e11a49b1e7cea8aa1db6be
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.244-1.debian.tar.xz' linux_5.10.244-1.debian.tar.xz 1759388 SHA256:36ea2de74f287912a440239b6b612fa748fc5e5727c651d32abfb8e1359d696f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.237-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.237-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.237-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.244-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.244-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.244-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2188,24 +2195,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.57+dfsg-3+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.57+dfsg-3+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u3`
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u4`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1w-0+deb11u3`
-- `openssl=1.1.1w-0+deb11u3`
+- `libssl1.1:amd64=1.1.1w-0+deb11u4`
+- `openssl=1.1.1w-0+deb11u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u4.dsc' openssl_1.1.1w-0+deb11u4.dsc 2655 SHA256:11217960854066327404e4c4201b802fc5566b02a12f6b50606658219661f94d
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u4.debian.tar.xz' openssl_1.1.1w-0+deb11u4.debian.tar.xz 102640 SHA256:0662726b1bd75b78ac487ee34fc817475517888bb9d64f43414991a4f601e26c
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
