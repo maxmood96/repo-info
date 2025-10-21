@@ -155,7 +155,7 @@ CMD ["ghci"]
 		Size: 48.4 MB (48358996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dcd5c63af540329b4bb7b69b170dc09efe8725d56036396bf544bdfc44477a46`  
-		Last Modified: Tue, 21 Oct 2025 01:21:24 GMT  
+		Last Modified: Tue, 21 Oct 2025 17:01:36 GMT  
 		Size: 146.4 MB (146430946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47865439ba5ddc6280214eb47d41b9b3b8a129e69bc2aed8f50a7afec6a13328`  
