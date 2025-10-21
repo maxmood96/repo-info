@@ -1,4 +1,4 @@
-## `couchbase:enterprise`
+## `couchbase:enterprise-8.0.0`
 
 ```console
 $ docker pull couchbase@sha256:dc0de77e19542a1386c85ec7dbfaceaadca2fc1c2af8c519917305fe72a0304b
@@ -11,7 +11,7 @@ $ docker pull couchbase@sha256:dc0de77e19542a1386c85ec7dbfaceaadca2fc1c2af8c5199
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `couchbase:enterprise` - linux; amd64
+### `couchbase:enterprise-8.0.0` - linux; amd64
 
 ```console
 $ docker pull couchbase@sha256:0fc42b0f77eb8dae2679fdcd35d06065657d6af6874c35a04fec40601191a15c
@@ -141,7 +141,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 929.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `couchbase:enterprise` - unknown; unknown
+### `couchbase:enterprise-8.0.0` - unknown; unknown
 
 ```console
 $ docker pull couchbase@sha256:8eb5fd79ac4e18c4a609ab55ee3e6cf699c6a805f2b332dcf6f892cbef0a3039
@@ -161,7 +161,7 @@ $ docker pull couchbase@sha256:8eb5fd79ac4e18c4a609ab55ee3e6cf699c6a805f2b332dcf
 		Size: 38.2 KB (38181 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `couchbase:enterprise` - linux; arm64 variant v8
+### `couchbase:enterprise-8.0.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull couchbase@sha256:16d3e5df8fdce5b7ee77130e439867f8f60ad65c7bebde2dfb0074ac585c22a9
@@ -291,7 +291,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 929.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `couchbase:enterprise` - unknown; unknown
+### `couchbase:enterprise-8.0.0` - unknown; unknown
 
 ```console
 $ docker pull couchbase@sha256:d974b47619add8fd6841567b6f82d040b4349a187ee06d273c148ae8d94feadd
