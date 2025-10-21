@@ -1,4 +1,4 @@
-## `debian:testing-slim`
+## `debian:testing-20251020-slim`
 
 ```console
 $ docker pull debian@sha256:12389666073a3095f1ecb46f6608f39ba087007e44c8a2a4ef4cd3e3a9759a00
@@ -21,7 +21,7 @@ $ docker pull debian@sha256:12389666073a3095f1ecb46f6608f39ba087007e44c8a2a4ef4c
 	-	linux; s390x
 	-	unknown; unknown
 
-### `debian:testing-slim` - linux; amd64
+### `debian:testing-20251020-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:a03906634f47efebf42a631d990b68a1920adabf79868b6ba4487871be79eab1
@@ -44,7 +44,7 @@ RUN # debian.sh --arch 'amd64' out/ 'testing' '@1760918400'
 		Size: 30.1 MB (30120930 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:617c335423696b0496f205bf6737b061534cfd5f86980d5853d79e57f2676ed9
@@ -64,7 +64,7 @@ $ docker pull debian@sha256:617c335423696b0496f205bf6737b061534cfd5f86980d5853d7
 		Size: 2.0 MB (1975045 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:testing-slim` - linux; arm variant v7
+### `debian:testing-20251020-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:b06d37ffde308442dc030f8cf63b8c5e63a01e5e7fee4092692f53c1e432a67d
@@ -87,7 +87,7 @@ RUN # debian.sh --arch 'armhf' out/ 'testing' '@1760918400'
 		Size: 26.4 MB (26385462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:5301dce9def250816aa1c84ce53dc5c1925bbb0dca445e078cb59e6151363ca7
@@ -107,7 +107,7 @@ $ docker pull debian@sha256:5301dce9def250816aa1c84ce53dc5c1925bbb0dca445e078cb5
 		Size: 2.0 MB (1976406 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:testing-slim` - linux; arm64 variant v8
+### `debian:testing-20251020-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:d8c3eb72870ab64ceb2300384d873a172abf2f9c989229628b27754b2838f7f8
@@ -130,7 +130,7 @@ RUN # debian.sh --arch 'arm64' out/ 'testing' '@1760918400'
 		Size: 30.2 MB (30243379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:a63d2bb6b693a65d6cdf26d8a9f6f49ddce75071d60c51f6bc811b5fa6da3a50
@@ -150,7 +150,7 @@ $ docker pull debian@sha256:a63d2bb6b693a65d6cdf26d8a9f6f49ddce75071d60c51f6bc81
 		Size: 2.0 MB (1975240 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:testing-slim` - linux; 386
+### `debian:testing-20251020-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:ff22f81b3168d83b173e59b70dc3ef7a6a7bd9e7758284dc6d3e3e53e444244a
@@ -173,7 +173,7 @@ RUN # debian.sh --arch 'i386' out/ 'testing' '@1760918400'
 		Size: 31.5 MB (31490337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:b7acd56f9a4618f4f22227f04442280ef886f85f8fc3ce43e90e6db9a9035622
@@ -193,7 +193,7 @@ $ docker pull debian@sha256:b7acd56f9a4618f4f22227f04442280ef886f85f8fc3ce43e90e
 		Size: 2.0 MB (1972265 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:testing-slim` - linux; ppc64le
+### `debian:testing-20251020-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:4a14e6aeb1bca28b1f3f723ffc816cec29313ddca0cef0213a28795549d717a7
@@ -216,7 +216,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'testing' '@1760918400'
 		Size: 35.2 MB (35230409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:eb54e872222bf26d87b27509462439674cab0cbc4283f809b57b267e33a7d6ad
@@ -236,7 +236,7 @@ $ docker pull debian@sha256:eb54e872222bf26d87b27509462439674cab0cbc4283f809b57b
 		Size: 2.0 MB (1978528 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:testing-slim` - linux; riscv64
+### `debian:testing-20251020-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:81b092730dc94056aa230e2f89490400b4a86396399ca9dc292bcd9e91ae7a8a
@@ -259,7 +259,7 @@ RUN # debian.sh --arch 'riscv64' out/ 'testing' '@1760918400'
 		Size: 28.4 MB (28379884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:5f46021c4d16edb4143715810f85607953a37fb1b7f8d64b18cd715cb1bc5293
@@ -279,7 +279,7 @@ $ docker pull debian@sha256:5f46021c4d16edb4143715810f85607953a37fb1b7f8d64b18cd
 		Size: 2.0 MB (1968921 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `debian:testing-slim` - linux; s390x
+### `debian:testing-20251020-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:b5b57da29ec1800a0f42619d3357443f184a199a58dce2f143cc82704a055be6
@@ -302,7 +302,7 @@ RUN # debian.sh --arch 's390x' out/ 'testing' '@1760918400'
 		Size: 30.0 MB (29981174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `debian:testing-slim` - unknown; unknown
+### `debian:testing-20251020-slim` - unknown; unknown
 
 ```console
 $ docker pull debian@sha256:acd3b33b53f0ad49516e40ab71870f94ef5d5a7ccb6533dcf314871e3528ba55
