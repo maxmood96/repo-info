@@ -3272,9 +3272,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.14.0-33.33
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.14.0-33.33.dsc' linux_6.14.0-33.33.dsc 8940 SHA512:a852eea3e7d309b0132a53e79afff2be3fda508542e28d93a62d60d1a9c4190e29b44893f2bf2b2c99bd4f2f3867c9daa6f647149548ec7d8f68dde79bc180b4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.14.0.orig.tar.gz' linux_6.14.0.orig.tar.gz 242477923 SHA512:2dbb2e8a930c38dd5d8f9d3ef2479177cd9957a4635b7e4e46a2d3dfb152f5f34e5d6aab57f971aa6f9a4b48f2e540f08d9fea7931a61a12d9b8d4d494653ae9
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.14.0-33.33.diff.gz' linux_6.14.0-33.33.diff.gz 2943809 SHA512:f32eaea47271994fdc385f26b5f41960a036bd2a7712e3f0c0d69f97aa86f5b50b450ae5e7f8821c14bc38fc4b4505b60b9b55ef8be9476714bc80c25874f7d9
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.14.0-33.33.dsc' linux_6.14.0-33.33.dsc 8940 SHA512:a852eea3e7d309b0132a53e79afff2be3fda508542e28d93a62d60d1a9c4190e29b44893f2bf2b2c99bd4f2f3867c9daa6f647149548ec7d8f68dde79bc180b4
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.14.0.orig.tar.gz' linux_6.14.0.orig.tar.gz 242477923 SHA512:2dbb2e8a930c38dd5d8f9d3ef2479177cd9957a4635b7e4e46a2d3dfb152f5f34e5d6aab57f971aa6f9a4b48f2e540f08d9fea7931a61a12d9b8d4d494653ae9
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.14.0-33.33.diff.gz' linux_6.14.0-33.33.diff.gz 2943809 SHA512:f32eaea47271994fdc385f26b5f41960a036bd2a7712e3f0c0d69f97aa86f5b50b450ae5e7f8821c14bc38fc4b4505b60b9b55ef8be9476714bc80c25874f7d9
 ```
 
 ### `dpkg` source package: `lto-disabled-list=57`
