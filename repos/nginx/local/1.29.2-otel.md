@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08cf905b68d82cefcbb096912ac0cef897852f3b36dd07ccd201158b22686987`
+- Image ID: `sha256:a113df776919266990f1d296af12a3672f31f29daa50cbbb92e34cbb89d1fbdd`
 - Created: `2025-10-07T21:06:46Z`
-- Virtual Size: ~ 168.48 Mb  
+- Virtual Size: ~ 160.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -3300,11 +3300,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.7.0-3`
+### `dpkg` source package: `tiff=4.7.0-3+deb13u1`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.7.0-3`
+- `libtiff6:amd64=4.7.0-3+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -3313,17 +3313,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3.dsc' tiff_4.7.0-3.dsc 2255 SHA256:d5a9ee9829b123b5cbaaae1ff81a1f376bffd5f56a741ded4e051d6a8cd79ab3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3.debian.tar.xz' tiff_4.7.0-3.debian.tar.xz 24088 SHA256:cfcd813984a236bafff7d6b3e458d771970328c6843b1f9334e44275fd646b3e
+$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.dsc' tiff_4.7.0-3+deb13u1.dsc 2287 SHA256:2456052f090792160c4e5db9a63cb9007e7a63fadbc4ae7abaf10188e5f35e5d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.debian.tar.xz' tiff_4.7.0-3+deb13u1.debian.tar.xz 26320 SHA256:50f5a0cbc8d8ccebc08ff65ec836aaaa870bf8f14aef55d5a7aa949f11834733
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.7.0-3/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025b-4+deb13u1`
 
