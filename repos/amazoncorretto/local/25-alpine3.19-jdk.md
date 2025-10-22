@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e87dcc2e3910df86f9062a04862433f16c25f71728e3f635b0cc7466835411b`
-- Created: `2025-09-17T00:23:53Z`
-- Virtual Size: ~ 362.49 Mb  
+- Image ID: `sha256:ba77f6362afa00ccb5a65844128940e51c175efe4b3f2aa408a65d7cf4967e0f`
+- Created: `2025-10-21T20:48:19Z`
+- Virtual Size: ~ 368.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -66,20 +66,37 @@ MIT
 
 ```
 
+### `apk` package: `alsa-lib`
+
+```console
+alsa-lib-1.2.10-r0 description:
+Advanced Linux Sound Architecture (ALSA) library
+
+alsa-lib-1.2.10-r0 webpage:
+https://alsa-project.org/
+
+alsa-lib-1.2.10-r0 installed size:
+1440 KiB
+
+alsa-lib-1.2.10-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `amazon-corretto-25`
 
 ```console
-amazon-corretto-25-25.0.0.36.2-r0 description:
+amazon-corretto-25-25.0.1.8.1-r0 description:
 Corretto25
 
-amazon-corretto-25-25.0.0.36.2-r0 webpage:
+amazon-corretto-25-25.0.1.8.1-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-25-25.0.0.36.2-r0 installed size:
-390 MiB
+amazon-corretto-25-25.0.1.8.1-r0 installed size:
+389 MiB
 
-amazon-corretto-25-25.0.0.36.2-r0 license:
-https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
+amazon-corretto-25-25.0.1.8.1-r0 license:
+GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
 
@@ -168,6 +185,23 @@ GPL-2.0-or-later
 
 ```
 
+### `apk` package: `libbsd`
+
+```console
+libbsd-0.11.7-r3 description:
+commonly-used BSD functions not implemented by all libcs
+
+libbsd-0.11.7-r3 webpage:
+https://libbsd.freedesktop.org/
+
+libbsd-0.11.7-r3 installed size:
+84 KiB
+
+libbsd-0.11.7-r3 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `libc-utils`
 
 ```console
@@ -202,6 +236,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libmd`
+
+```console
+libmd-1.1.0-r0 description:
+Message Digest functions from BSD systems
+
+libmd-1.1.0-r0 webpage:
+https://www.hadrons.org/software/libmd/
+
+libmd-1.1.0-r0 installed size:
+64 KiB
+
+libmd-1.1.0-r0 license:
+BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
+
+```
+
 ### `apk` package: `libssl3`
 
 ```console
@@ -216,6 +267,142 @@ libssl3-3.1.8-r1 installed size:
 
 libssl3-3.1.8-r1 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libx11`
+
+```console
+libx11-1.8.7-r0 description:
+X11 client-side library
+
+libx11-1.8.7-r0 webpage:
+https://xorg.freedesktop.org/
+
+libx11-1.8.7-r0 installed size:
+3084 KiB
+
+libx11-1.8.7-r0 license:
+X11
+
+```
+
+### `apk` package: `libxau`
+
+```console
+libxau-1.0.11-r3 description:
+X11 authorisation library
+
+libxau-1.0.11-r3 webpage:
+https://xorg.freedesktop.org/
+
+libxau-1.0.11-r3 installed size:
+28 KiB
+
+libxau-1.0.11-r3 license:
+MIT
+
+```
+
+### `apk` package: `libxcb`
+
+```console
+libxcb-1.16-r0 description:
+X11 client-side library
+
+libxcb-1.16-r0 webpage:
+https://xcb.freedesktop.org
+
+libxcb-1.16-r0 installed size:
+1012 KiB
+
+libxcb-1.16-r0 license:
+MIT
+
+```
+
+### `apk` package: `libxdmcp`
+
+```console
+libxdmcp-1.1.4-r3 description:
+X11 Display Manager Control Protocol library
+
+libxdmcp-1.1.4-r3 webpage:
+https://xorg.freedesktop.org/
+
+libxdmcp-1.1.4-r3 installed size:
+40 KiB
+
+libxdmcp-1.1.4-r3 license:
+MIT
+
+```
+
+### `apk` package: `libxext`
+
+```console
+libxext-1.3.5-r3 description:
+X11 miscellaneous extensions library
+
+libxext-1.3.5-r3 webpage:
+https://xorg.freedesktop.org/
+
+libxext-1.3.5-r3 installed size:
+80 KiB
+
+libxext-1.3.5-r3 license:
+MIT
+
+```
+
+### `apk` package: `libxi`
+
+```console
+libxi-1.8.1-r2 description:
+X11 Input extension library
+
+libxi-1.8.1-r2 webpage:
+https://www.x.org
+
+libxi-1.8.1-r2 installed size:
+76 KiB
+
+libxi-1.8.1-r2 license:
+MIT AND X11
+
+```
+
+### `apk` package: `libxrender`
+
+```console
+libxrender-0.9.11-r4 description:
+X Rendering Extension client library
+
+libxrender-0.9.11-r4 webpage:
+https://xorg.freedesktop.org/
+
+libxrender-0.9.11-r4 installed size:
+56 KiB
+
+libxrender-0.9.11-r4 license:
+MIT
+
+```
+
+### `apk` package: `libxtst`
+
+```console
+libxtst-1.2.4-r4 description:
+X11 Testing -- Resource extension library
+
+libxtst-1.2.4-r4 webpage:
+https://wiki.freedesktop.org/xorg/
+
+libxtst-1.2.4-r4 installed size:
+40 KiB
+
+libxtst-1.2.4-r4 license:
+MIT
 
 ```
 
