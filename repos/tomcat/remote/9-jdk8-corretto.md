@@ -1,7 +1,7 @@
 ## `tomcat:9-jdk8-corretto`
 
 ```console
-$ docker pull tomcat@sha256:6d1cd6c03682fcbc4e9a830c4c81d8a5b89c0cd368f009e988d0d2669eb19af0
+$ docker pull tomcat@sha256:30001854f16f617d552dfeff29e67dd483eac10dd4ae5984346d36669b83dfdf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull tomcat@sha256:6d1cd6c03682fcbc4e9a830c4c81d8a5b89c0cd368f009e988d0
 ### `tomcat:9-jdk8-corretto` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:6d0fa7e1cede8d4bfe22b0449b9c3e576231de03f7c52d467b6fb57fa23f01dd
+$ docker pull tomcat@sha256:113379b888e5f2e2a384c681053d839ce8f7976f1789cd3c4ac81ee14dd6f6eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.9 MB (156878079 bytes)**  
+-	Total Size: **157.3 MB (157320525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff1c3f167dbcabaa1815f365da0c93d46ff45e5cf94e1b6a38a8c1c1312d5d1e`
+-	Image ID: `sha256:ac933666c1d1c502b978cecd75ce33930b66e983f0d9606cd1ac591d84bd2c29`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Wed, 17 Sep 2025 00:23:53 GMT
+# Fri, 03 Oct 2025 20:18:37 GMT
 COPY /rootfs/ / # buildkit
-# Wed, 17 Sep 2025 00:23:53 GMT
+# Fri, 03 Oct 2025 20:18:37 GMT
 CMD ["/bin/bash"]
-# Wed, 17 Sep 2025 00:23:53 GMT
-ARG version=1.8.0_462.b08-1
-# Wed, 17 Sep 2025 00:23:53 GMT
-# ARGS: version=1.8.0_462.b08-1
+# Mon, 13 Oct 2025 20:16:15 GMT
+ARG version=1.8.0_472.b08-1
+# Mon, 13 Oct 2025 20:16:15 GMT
+# ARGS: version=1.8.0_472.b08-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-1.8.0-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-1.8.0-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
-# Wed, 17 Sep 2025 00:23:53 GMT
+# Mon, 13 Oct 2025 20:16:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 17 Sep 2025 00:23:53 GMT
+# Mon, 13 Oct 2025 20:16:15 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 # Mon, 13 Oct 2025 20:16:15 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
@@ -70,21 +70,21 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sat, 04 Oct 2025 04:29:16 GMT  
 		Size: 62.9 MB (62940620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d14a39dc653189767e80d97a12ba807e012fdf9da65462a1c0893fd4997ead64`  
-		Last Modified: Mon, 06 Oct 2025 22:12:04 GMT  
-		Size: 75.6 MB (75613516 bytes)  
+	-	`sha256:4a3013d13d82a84e945fa3777cf596ea8fa4cd00c8b0f2b05f3750b615908887`  
+		Last Modified: Tue, 21 Oct 2025 23:23:36 GMT  
+		Size: 76.1 MB (76052249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:632b86e48ef665b0b4a8ab1008e6a4e16f88731302efabf58c715fbf891b6eba`  
-		Last Modified: Mon, 13 Oct 2025 23:12:20 GMT  
+	-	`sha256:12a79515b1a7ccccf7de2d8581bc6b35a7cab5f13a22006531808cfbfcccd36f`  
+		Last Modified: Wed, 22 Oct 2025 02:45:40 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05f3ea921f0ca8fb75d735e0793e2b2ba570e548d44e508475f6a13e8b69a1ea`  
-		Last Modified: Mon, 13 Oct 2025 23:12:21 GMT  
-		Size: 18.3 MB (18323740 bytes)  
+	-	`sha256:f585234d76ed94edc2d27dfb9cbc87a7334c77c420391abc736d1166e5c7aadb`  
+		Last Modified: Wed, 22 Oct 2025 02:45:41 GMT  
+		Size: 18.3 MB (18327453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -94,24 +94,24 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jdk8-corretto` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:ad336ca3012d352d0f2c3a6bb136bdfbb8f91312b3aa79e7b41fbca33004e5a7
+$ docker pull tomcat@sha256:9fb8a84ed85d5336d9f41d1df5b722bccccf8f60e0899df865f9b97d27a7cdb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5470666 bytes)**  
+-	Total Size: **5.5 MB (5473089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e5dc67a17c210561c4cd2092b3912f8788e0eed7c5830eb5f7bc0c749aa3075`
+-	Image ID: `sha256:8f5d4b8050dfd1504a76ded770460e679839da4c8ae09c168d2bffd79155097e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a7a4268fe263f2b2b43c48eb412a21e4bdd59f8ba0855089d7921052ee849f53`  
-		Last Modified: Tue, 14 Oct 2025 02:39:28 GMT  
-		Size: 5.4 MB (5441431 bytes)  
+	-	`sha256:56bc5c02fdd02fa25ce725c11d0ca1fc18cb66f757cddfaec22ed1f866999be7`  
+		Last Modified: Wed, 22 Oct 2025 05:31:21 GMT  
+		Size: 5.4 MB (5443854 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d1b6941c792f9b6ebaa30f2b8548ca15f88e4e771af11e4162c460e3cb7709f9`  
-		Last Modified: Tue, 14 Oct 2025 02:39:29 GMT  
+	-	`sha256:9994ba0faef4d296df81e34dac64f36e57a32cd4eb7dd7fcc298ced4beb0404b`  
+		Last Modified: Wed, 22 Oct 2025 05:31:22 GMT  
 		Size: 29.2 KB (29235 bytes)  
 		MIME: application/vnd.in-toto+json
 
