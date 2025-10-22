@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a0743d15feb46975ad77c3ccae8e59b4809ee04eeeece85ffacfdc05358d961`
-- Created: `2025-09-24T14:35:45Z`
-- Virtual Size: ~ 232.71 Mb  
+- Image ID: `sha256:f1ce5a2017814f3f2b89fe1a82b7bc4cde037edff55f135e1efc9e9868b801e1`
+- Created: `2025-10-21T04:06:16Z`
+- Virtual Size: ~ 232.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.20.0`
+  - `NODE_VERSION=22.21.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1479,23 +1479,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u3`
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u4`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1w-0+deb11u3`
+- `libssl1.1:amd64=1.1.1w-0+deb11u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u4.dsc' openssl_1.1.1w-0+deb11u4.dsc 2655 SHA256:11217960854066327404e4c4201b802fc5566b02a12f6b50606658219661f94d
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u4.debian.tar.xz' openssl_1.1.1w-0+deb11u4.debian.tar.xz 102640 SHA256:0662726b1bd75b78ac487ee34fc817475517888bb9d64f43414991a4f601e26c
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
