@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff1c3f167dbcabaa1815f365da0c93d46ff45e5cf94e1b6a38a8c1c1312d5d1e`
+- Image ID: `sha256:ac933666c1d1c502b978cecd75ce33930b66e983f0d9606cd1ac591d84bd2c29`
 - Created: `2025-10-13T20:16:15Z`
-- Virtual Size: ~ 383.81 Mb  
+- Virtual Size: ~ 384.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -407,7 +407,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/dabf0a30874b63e106a688716e6b49ced2b69a67b842413064e7d9c57964d5b5/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_462.b08-1.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_472.b08-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
@@ -908,15 +908,15 @@ $ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.15
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/dabf0a30874b63e106a688716e6b49ced2b69a67b842413064e7d9c57964d5b5/../../../../../blobstore/d8a4c9708ea57a6b1f4c57fe11f0d7e7fd746498f724046d3d97ca8bd59d8c50/openssl-1.0.2k-24.amzn2.0.15.src.rpm
 ```
 
-### `rpm` package: `openssl11-libs-1.1.1zb-1.amzn2.0.1.x86_64`
+### `rpm` package: `openssl11-libs-1.1.1zd-1.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl11-libs-1.1.1zb-1.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/dabf0a30874b63e106a688716e6b49ced2b69a67b842413064e7d9c57964d5b5/../../../../../blobstore/3b3619602474b10371e0355930c769bb048767966febeda0080e9839b3913180/openssl11-1.1.1zb-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url openssl11-libs-1.1.1zd-1.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/dabf0a30874b63e106a688716e6b49ced2b69a67b842413064e7d9c57964d5b5/../../../../../blobstore/cd2747ed6a640eb6668c5b99f029de97b347b97520e9be72b4e1f6ae90e92056/openssl11-1.1.1zd-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64`
