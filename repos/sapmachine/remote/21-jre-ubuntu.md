@@ -1,7 +1,7 @@
 ## `sapmachine:21-jre-ubuntu`
 
 ```console
-$ docker pull sapmachine@sha256:d99b1451dab9385393f27106408a5860cdf5987b1d4fbe77002883517ac71b14
+$ docker pull sapmachine@sha256:3291eff9eb31ea36c4203b8403e7a99f8e3be47c863fdf7567d6925aa1ce4aa8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,33 +83,33 @@ $ docker pull sapmachine@sha256:3082af5d7f1b9b78796cd78f17945fe51a8909e33690dbdd
 ### `sapmachine:21-jre-ubuntu` - linux; arm64 variant v8
 
 ```console
-$ docker pull sapmachine@sha256:e18d546af8a7c928b9b325536a3bb1293f66b02a9ed69f12410c66dd83f49219
+$ docker pull sapmachine@sha256:3692aa5dd536627ef458b3ad75bda8ea41c4651054f41c738598aeb47ba963e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.2 MB (88247218 bytes)**  
+-	Total Size: **88.3 MB (88285691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff3efbb98f37b9cafc5e2d5527bb6cda2382aa901dfb4816d4ac7cd5a3b561d3`
+-	Image ID: `sha256:df4e168c12bac58eb03b792f827f65937d68edc23b415ffd5423bb11c0d7c8df`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Wed, 01 Oct 2025 13:01:38 GMT
 ARG RELEASE
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Wed, 01 Oct 2025 13:01:38 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Wed, 01 Oct 2025 13:01:38 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Wed, 01 Oct 2025 13:01:38 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Wed, 01 Oct 2025 13:01:40 GMT
 ADD file:d77dea5c49828eb0de89439d2b631bc8ea27cb9ef774412b56a060ba1673487b in / 
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Wed, 01 Oct 2025 13:01:40 GMT
 CMD ["/bin/bash"]
-# Mon, 11 Aug 2025 06:09:32 GMT
-RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg &&     echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-21-jre=21.0.8 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Tue, 21 Oct 2025 21:30:29 GMT
+RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg &&     echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-21-jre=21.0.9 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
+# Tue, 21 Oct 2025 21:30:29 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-21
-# Mon, 11 Aug 2025 06:09:32 GMT
+# Tue, 21 Oct 2025 21:30:29 GMT
 CMD ["bash"]
 ```
 
@@ -118,32 +118,32 @@ CMD ["bash"]
 		Last Modified: Wed, 01 Oct 2025 15:34:19 GMT  
 		Size: 28.9 MB (28861712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e7a92f4a8b12ca6d42fa27266a9a67f3428474d78a9c76798d132ca91c8c266`  
-		Last Modified: Thu, 09 Oct 2025 21:28:11 GMT  
-		Size: 59.4 MB (59385506 bytes)  
+	-	`sha256:65c71e1edc05ec43fe2ee1ac1903816192601410acb9f6b9a3f0446d2185228e`  
+		Last Modified: Wed, 22 Oct 2025 00:05:50 GMT  
+		Size: 59.4 MB (59423979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:21-jre-ubuntu` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:817d7680cc50ffd08a1b9c0662a0ba8659573bc6279953d2fbc96104b8082f89
+$ docker pull sapmachine@sha256:fe2043e8be47aeef3e897ad97135ee8ef8b3ffbd0e6c9177eaefb70e6b56f071
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2529380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f41caa81a24df8da28a9b061e05eda661a86daf068dc9ed8893c01776ef809a`
+-	Image ID: `sha256:67350b3296b358279f1097105070ce4a5253a240805af4cd25fc1480e830d732`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:059bcd6cda581d34e8c14044ff98088b7d54c59c68695a9f90cb92a495b411a9`  
-		Last Modified: Fri, 10 Oct 2025 00:09:52 GMT  
+	-	`sha256:d099ebac392b8c7872995f02fed5530518dd6431588007fa7611caa0ac280b3d`  
+		Last Modified: Wed, 22 Oct 2025 03:07:50 GMT  
 		Size: 2.5 MB (2519148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3bb46365bc0882fd80cff8c044c1560205def087dff80261d023a27a67410ad0`  
-		Last Modified: Fri, 10 Oct 2025 00:09:53 GMT  
+	-	`sha256:4795726b9e0da3b4cdf643a9a77d89aebf99316af76574a45a6c92d2c5d765eb`  
+		Last Modified: Wed, 22 Oct 2025 03:07:49 GMT  
 		Size: 10.2 KB (10232 bytes)  
 		MIME: application/vnd.in-toto+json
 
