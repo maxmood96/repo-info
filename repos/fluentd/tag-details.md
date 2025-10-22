@@ -15,7 +15,7 @@
 ## `fluentd:latest`
 
 ```console
-$ docker pull fluentd@sha256:6756cacbf7f1402e8b6afe1e4bab542b51102d7409996e3560ae3ef2d93796cc
+$ docker pull fluentd@sha256:bfbc613d3be730358bd316faaae8d1ea00bf4e79bbaa20277b4ea94c724ac8fa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -806,19 +806,19 @@ $ docker pull fluentd@sha256:0cf88286dff752f84fb471fbb115c42d3eae9a78dff818199db
 ### `fluentd:latest` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:19257fd319b74e3f24802ed4c56fb507821086554d61797d2c7571bf673ab40f
+$ docker pull fluentd@sha256:109fe1db7da3d7fd3a8053e639fa387ad1be181a2c37af25dc9d1d3c2b506831
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79916894 bytes)**  
+-	Total Size: **76.8 MB (76839412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd8f7526981ee0f88bcd246fb2126186a710585782c356a478e94852c6554006`
+-	Image ID: `sha256:4ee08686caed5f5c26514fe11d511f0899fbfe02b976854f33530280656900e8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Thu, 31 Jul 2025 04:35:05 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1760918400'
 # Thu, 31 Jul 2025 04:35:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
 # Thu, 31 Jul 2025 04:35:05 GMT
@@ -870,64 +870,64 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:924b0740f35a15fc20142be5c392f6b033c8051daecf16d2db38c22d6d73eb53`  
-		Last Modified: Mon, 29 Sep 2025 23:41:29 GMT  
-		Size: 29.8 MB (29837230 bytes)  
+	-	`sha256:71dc03f1fd788f9fc2bbb931d3df17cbfaf0b486bdfb19f4e3b8792a206689a1`  
+		Last Modified: Tue, 21 Oct 2025 00:28:26 GMT  
+		Size: 29.8 MB (29837255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b94219bc2d3f6debe3a1214636652bb4296b7a0c6b41b51c442dbb55b247f6`  
-		Last Modified: Tue, 30 Sep 2025 12:47:37 GMT  
-		Size: 1.3 MB (1294331 bytes)  
+	-	`sha256:3f9d90fd8269c36054fa7349efdb871b36a6dc4cd44a5e97d40aab080c26c16e`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 1.3 MB (1294427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:853d2a8514957d74c25bfc8f6b26ffb41866be42b94c7993401b21f8935aa8c4`  
-		Last Modified: Tue, 30 Sep 2025 13:37:03 GMT  
-		Size: 189.0 B  
+	-	`sha256:a7b5005667ff30a026e6b0b65fdc2e3a88f28423534fabfe21f391e1ec402f75`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f643f8d7858021a97f0967638ee5bcabf0d4351b2c38b20664203c2db9bf4681`  
-		Last Modified: Wed, 08 Oct 2025 19:10:59 GMT  
-		Size: 42.4 MB (42365078 bytes)  
+	-	`sha256:e9d68018e143b792a2439f8d4f28190860e516008a81b377ebcd1a289df3d776`  
+		Last Modified: Tue, 21 Oct 2025 21:12:17 GMT  
+		Size: 39.3 MB (39287640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dec945648ffcc1fed2409183ddc544cf232ac1c087af685ff7ee54c6060b972d`  
-		Last Modified: Wed, 08 Oct 2025 18:23:24 GMT  
-		Size: 144.0 B  
+	-	`sha256:4f2c1459756e415a7835f6e33b11330f1934922c41fac10054b3086dcddf3f24`  
+		Last Modified: Tue, 21 Oct 2025 21:12:14 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80363700389a063bb2a300ec9ebcfde4974f2d6bfb78abf6cca3239797c13891`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 6.4 MB (6417859 bytes)  
+	-	`sha256:49a138a3f1290023b5bfdf124718af4b97c022639fb464d14ad8bb9b95781b26`  
+		Last Modified: Wed, 22 Oct 2025 04:32:41 GMT  
+		Size: 6.4 MB (6417694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6918c2bd181a34ab976a1f192530a09ce8263a654a3d8e95b769b8266fc4a4d2`  
-		Last Modified: Wed, 08 Oct 2025 19:15:06 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:c1d4b65c7eacfe02c8484b8650de905fa600f44e6958a2156f825ec5c48da84d`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 1.2 KB (1181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa535afc3229c39bf7fd5561408c596e68e47702894f3885fe3d8ed18fd69bf4`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 402.0 B  
+	-	`sha256:cf3ecd19ccf0e24381655e06bf398a10688c4aabe53a236cffc180caa55afafd`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7927bfa77504d93e419eaa970fdd479d3dc6d9ae27e52da2be9eb7df5b4767bd`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 478.0 B  
+	-	`sha256:519a4b10dc4e01598f535a7be5f6b8a83edac63a71604e9e0044aa8d2e59fc01`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:latest` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f93deea3367f43c949883113c5711ed39ece5123cc2d3f931d5fe65d0ffc337
+$ docker pull fluentd@sha256:e889edbe4148b2bc8a8786854e0319841729797fb60b9987cbd483faaf4815ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306123 bytes)**  
+-	Total Size: **2.3 MB (2306153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e27f95936067af5345e0c9625558275858d4e3f62a084f8c14d61056bba87594`
+-	Image ID: `sha256:47dee8d763febca47c9723fcbffea59cffaf790c93e61bcb81072d025cfb0c16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb0550db52a599cb463a014a4fefd138fabe3845cbfc96c93e6bfdfda51384e0`  
-		Last Modified: Wed, 08 Oct 2025 20:29:13 GMT  
-		Size: 2.3 MB (2284979 bytes)  
+	-	`sha256:780e4a24c21cff22483b9195e1a195232efed59c915593f8ff4fd65d7e07c685`  
+		Last Modified: Wed, 22 Oct 2025 05:28:33 GMT  
+		Size: 2.3 MB (2285009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f70cb33d30525418356effd750a2c30c72002743758cdcd5598e59cac2f9c835`  
-		Last Modified: Wed, 08 Oct 2025 20:29:14 GMT  
+	-	`sha256:b519f54f97fef09fba83df4bf1df459b68532f911dc0ee6b91d64bd3c85bf9f0`  
+		Last Modified: Wed, 22 Oct 2025 05:28:34 GMT  
 		Size: 21.1 KB (21144 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1491,7 +1491,7 @@ $ docker pull fluentd@sha256:48b41953e35001058187fa9db056f5f99dd35a109572db363ed
 ## `fluentd:v1.16-debian-1`
 
 ```console
-$ docker pull fluentd@sha256:1d2cff92c1d04140dabec24ccf516617017e2444c62101bdc10f32e90be23522
+$ docker pull fluentd@sha256:40e6a8bd46488542eaf189d62260981089227d759eb551f4c7875aac17fcad06
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2294,19 +2294,19 @@ $ docker pull fluentd@sha256:fb76628db3b9f455781c2b2a9f683092660e2f405da29af8464
 ### `fluentd:v1.16-debian-1` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:01480da867f0e8e3a9f839777c251b532d47032ead88b02aabbd51f43dad11d1
+$ docker pull fluentd@sha256:64c057f0852b9b619b5aaf424cf4929517f9714d1417a19e3678b53fb3097986
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.6 MB (77562734 bytes)**  
+-	Total Size: **77.6 MB (77564883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:919f6e46bd8b9f49d6f8dcd8964c2bc1c14a8bacbed1b0bb6c0b25dceb542040`
+-	Image ID: `sha256:aca0e568deab4b2f8f8aab5fe0e65b21a68f3dfbdc6368e186e08b3bbba2d8fc`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Fri, 23 May 2025 01:51:58 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1760918400'
 # Fri, 23 May 2025 01:51:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 01:51:58 GMT
@@ -2360,64 +2360,64 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:ee23af7e2c95e7ad71a0f6edf7e138d45ffffb442811e2b9572806a68ee1338e`  
-		Last Modified: Mon, 29 Sep 2025 23:34:05 GMT  
-		Size: 26.9 MB (26884320 bytes)  
+	-	`sha256:43b0f588b497b17691a3547afa4ae41853829cffde6930e6425ddae4a3f89278`  
+		Last Modified: Tue, 21 Oct 2025 00:21:28 GMT  
+		Size: 26.9 MB (26884356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b594d38a24e78ef7c9a87fa9f61e1d78339a28925514c1022843571403e8187`  
-		Last Modified: Tue, 30 Sep 2025 05:31:13 GMT  
-		Size: 3.2 MB (3170284 bytes)  
+	-	`sha256:e97bdba56190f1fb08f9194edccb759c4eb01e0c9e9cd9581a9dcc0b218fbf08`  
+		Last Modified: Tue, 21 Oct 2025 21:08:16 GMT  
+		Size: 3.2 MB (3170282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:babe9249bd46d0da535b2107e191c7c9cad6c386207176139bcdc91ad4eba789`  
-		Last Modified: Tue, 30 Sep 2025 05:31:13 GMT  
+	-	`sha256:477877bdc5c9d5cb17e9593350b19bee123dcc5837df37f8f45916336d50b7c1`  
+		Last Modified: Tue, 21 Oct 2025 21:08:15 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1187fe667c57e20d150099b3eef84b5b03e017a67f13b7f89db00651fa000f4f`  
-		Last Modified: Tue, 30 Sep 2025 05:41:09 GMT  
-		Size: 33.1 MB (33098002 bytes)  
+	-	`sha256:1cf53a9a381ed64172ccd629811dca6e85de925b32efdf132988ea550319f2b7`  
+		Last Modified: Tue, 21 Oct 2025 21:32:19 GMT  
+		Size: 33.1 MB (33099445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74ec17799121748f0c5cfbef23c572f2e10227eca4e78321cae5570c104f8752`  
-		Last Modified: Tue, 30 Sep 2025 05:41:07 GMT  
+	-	`sha256:94ff583f70a232bc85aa825203eb90748c6d95d8f3922e371890c8e864e40f35`  
+		Last Modified: Tue, 21 Oct 2025 21:32:13 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d57760d984e71611fc7f0ba9f05eef16a27445d7f20d31cdfde5a52343fbc58`  
-		Last Modified: Wed, 01 Oct 2025 04:24:10 GMT  
-		Size: 14.4 MB (14407741 bytes)  
+	-	`sha256:9fe6bdf3d178c56f30361876fd6ac67bf72041debd029ecf4607e706f0bf9940`  
+		Last Modified: Wed, 22 Oct 2025 04:28:57 GMT  
+		Size: 14.4 MB (14408410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfed0390779a01530b9fa50e77da3da0d80f6d443fadb8b783d92dd4c5061b4`  
-		Last Modified: Tue, 30 Sep 2025 15:17:27 GMT  
-		Size: 1.2 KB (1177 bytes)  
+	-	`sha256:0a022ba186ee58707c6be16ea110e5f4401626ef4735473ea9524f86b08ab07a`  
+		Last Modified: Wed, 22 Oct 2025 04:28:55 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6efdbb677199de41c23f3a5400e33a9f4bf6b1abcecc1f80eafa08fb4971dd2`  
-		Last Modified: Tue, 30 Sep 2025 15:17:28 GMT  
-		Size: 403.0 B  
+	-	`sha256:c1478d11718ad46f1690fc447fc14fbc7edb77952329c7a616c2068d4d868e53`  
+		Last Modified: Wed, 22 Oct 2025 04:28:55 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f77efc5638fb8acdd8c82fc2e691e07754282155fd6f5006632a3a87a39ffb22`  
-		Last Modified: Tue, 30 Sep 2025 15:17:26 GMT  
-		Size: 476.0 B  
+	-	`sha256:c8f02e1a24d90cef90950a2cea985e92bd259bcb830c254a3346946fd3f98612`  
+		Last Modified: Wed, 22 Oct 2025 04:28:55 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:5d9f4288c2c83b483fc552ca4b52a100e8d2274ea34ae05a0d902ebc854955ac
+$ docker pull fluentd@sha256:dda6164318a833658c290b2a5187a04619fa1925fc2b2e911eda3040214d0b74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2686351 bytes)**  
+-	Total Size: **2.7 MB (2686381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:030d116d86666312c93ef7292afce3288008cf69a00ea170038bb2cec7dc6712`
+-	Image ID: `sha256:34de03618f7366f5262f9d7c4b90705c4347d64cfc03f9bca785ab8e90f05df1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:039d35eb6395a3a388dff48b197e533329695be814b65007868dd9a0310ac3bb`  
-		Last Modified: Wed, 01 Oct 2025 20:29:05 GMT  
-		Size: 2.7 MB (2665247 bytes)  
+	-	`sha256:201fb5e05445d6a74cac6b3ecbea730793e5edb9b07e6647915f021960e4c9b2`  
+		Last Modified: Wed, 22 Oct 2025 05:28:42 GMT  
+		Size: 2.7 MB (2665277 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:293fa14155c2bbb686e3e2524aabce69ba3f2e5aa71b53fad26a5821b00ce8f5`  
-		Last Modified: Wed, 01 Oct 2025 20:29:06 GMT  
+	-	`sha256:7ecb275755b509740963eff61698a72111597bd0c07a1999bc54a9f5bdd64805`  
+		Last Modified: Wed, 22 Oct 2025 05:28:43 GMT  
 		Size: 21.1 KB (21104 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2981,7 +2981,7 @@ $ docker pull fluentd@sha256:48b41953e35001058187fa9db056f5f99dd35a109572db363ed
 ## `fluentd:v1.16.9-debian-1.0`
 
 ```console
-$ docker pull fluentd@sha256:1d2cff92c1d04140dabec24ccf516617017e2444c62101bdc10f32e90be23522
+$ docker pull fluentd@sha256:40e6a8bd46488542eaf189d62260981089227d759eb551f4c7875aac17fcad06
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3784,19 +3784,19 @@ $ docker pull fluentd@sha256:fb76628db3b9f455781c2b2a9f683092660e2f405da29af8464
 ### `fluentd:v1.16.9-debian-1.0` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:01480da867f0e8e3a9f839777c251b532d47032ead88b02aabbd51f43dad11d1
+$ docker pull fluentd@sha256:64c057f0852b9b619b5aaf424cf4929517f9714d1417a19e3678b53fb3097986
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.6 MB (77562734 bytes)**  
+-	Total Size: **77.6 MB (77564883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:919f6e46bd8b9f49d6f8dcd8964c2bc1c14a8bacbed1b0bb6c0b25dceb542040`
+-	Image ID: `sha256:aca0e568deab4b2f8f8aab5fe0e65b21a68f3dfbdc6368e186e08b3bbba2d8fc`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Fri, 23 May 2025 01:51:58 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1760918400'
 # Fri, 23 May 2025 01:51:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 23 May 2025 01:51:58 GMT
@@ -3850,71 +3850,71 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:ee23af7e2c95e7ad71a0f6edf7e138d45ffffb442811e2b9572806a68ee1338e`  
-		Last Modified: Mon, 29 Sep 2025 23:34:05 GMT  
-		Size: 26.9 MB (26884320 bytes)  
+	-	`sha256:43b0f588b497b17691a3547afa4ae41853829cffde6930e6425ddae4a3f89278`  
+		Last Modified: Tue, 21 Oct 2025 00:21:28 GMT  
+		Size: 26.9 MB (26884356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b594d38a24e78ef7c9a87fa9f61e1d78339a28925514c1022843571403e8187`  
-		Last Modified: Tue, 30 Sep 2025 05:31:13 GMT  
-		Size: 3.2 MB (3170284 bytes)  
+	-	`sha256:e97bdba56190f1fb08f9194edccb759c4eb01e0c9e9cd9581a9dcc0b218fbf08`  
+		Last Modified: Tue, 21 Oct 2025 21:08:16 GMT  
+		Size: 3.2 MB (3170282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:babe9249bd46d0da535b2107e191c7c9cad6c386207176139bcdc91ad4eba789`  
-		Last Modified: Tue, 30 Sep 2025 05:31:13 GMT  
+	-	`sha256:477877bdc5c9d5cb17e9593350b19bee123dcc5837df37f8f45916336d50b7c1`  
+		Last Modified: Tue, 21 Oct 2025 21:08:15 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1187fe667c57e20d150099b3eef84b5b03e017a67f13b7f89db00651fa000f4f`  
-		Last Modified: Tue, 30 Sep 2025 05:41:09 GMT  
-		Size: 33.1 MB (33098002 bytes)  
+	-	`sha256:1cf53a9a381ed64172ccd629811dca6e85de925b32efdf132988ea550319f2b7`  
+		Last Modified: Tue, 21 Oct 2025 21:32:19 GMT  
+		Size: 33.1 MB (33099445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74ec17799121748f0c5cfbef23c572f2e10227eca4e78321cae5570c104f8752`  
-		Last Modified: Tue, 30 Sep 2025 05:41:07 GMT  
+	-	`sha256:94ff583f70a232bc85aa825203eb90748c6d95d8f3922e371890c8e864e40f35`  
+		Last Modified: Tue, 21 Oct 2025 21:32:13 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d57760d984e71611fc7f0ba9f05eef16a27445d7f20d31cdfde5a52343fbc58`  
-		Last Modified: Wed, 01 Oct 2025 04:24:10 GMT  
-		Size: 14.4 MB (14407741 bytes)  
+	-	`sha256:9fe6bdf3d178c56f30361876fd6ac67bf72041debd029ecf4607e706f0bf9940`  
+		Last Modified: Wed, 22 Oct 2025 04:28:57 GMT  
+		Size: 14.4 MB (14408410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfed0390779a01530b9fa50e77da3da0d80f6d443fadb8b783d92dd4c5061b4`  
-		Last Modified: Tue, 30 Sep 2025 15:17:27 GMT  
-		Size: 1.2 KB (1177 bytes)  
+	-	`sha256:0a022ba186ee58707c6be16ea110e5f4401626ef4735473ea9524f86b08ab07a`  
+		Last Modified: Wed, 22 Oct 2025 04:28:55 GMT  
+		Size: 1.2 KB (1180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6efdbb677199de41c23f3a5400e33a9f4bf6b1abcecc1f80eafa08fb4971dd2`  
-		Last Modified: Tue, 30 Sep 2025 15:17:28 GMT  
-		Size: 403.0 B  
+	-	`sha256:c1478d11718ad46f1690fc447fc14fbc7edb77952329c7a616c2068d4d868e53`  
+		Last Modified: Wed, 22 Oct 2025 04:28:55 GMT  
+		Size: 402.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f77efc5638fb8acdd8c82fc2e691e07754282155fd6f5006632a3a87a39ffb22`  
-		Last Modified: Tue, 30 Sep 2025 15:17:26 GMT  
-		Size: 476.0 B  
+	-	`sha256:c8f02e1a24d90cef90950a2cea985e92bd259bcb830c254a3346946fd3f98612`  
+		Last Modified: Wed, 22 Oct 2025 04:28:55 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.16.9-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:5d9f4288c2c83b483fc552ca4b52a100e8d2274ea34ae05a0d902ebc854955ac
+$ docker pull fluentd@sha256:dda6164318a833658c290b2a5187a04619fa1925fc2b2e911eda3040214d0b74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2686351 bytes)**  
+-	Total Size: **2.7 MB (2686381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:030d116d86666312c93ef7292afce3288008cf69a00ea170038bb2cec7dc6712`
+-	Image ID: `sha256:34de03618f7366f5262f9d7c4b90705c4347d64cfc03f9bca785ab8e90f05df1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:039d35eb6395a3a388dff48b197e533329695be814b65007868dd9a0310ac3bb`  
-		Last Modified: Wed, 01 Oct 2025 20:29:05 GMT  
-		Size: 2.7 MB (2665247 bytes)  
+	-	`sha256:201fb5e05445d6a74cac6b3ecbea730793e5edb9b07e6647915f021960e4c9b2`  
+		Last Modified: Wed, 22 Oct 2025 05:28:42 GMT  
+		Size: 2.7 MB (2665277 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:293fa14155c2bbb686e3e2524aabce69ba3f2e5aa71b53fad26a5821b00ce8f5`  
-		Last Modified: Wed, 01 Oct 2025 20:29:06 GMT  
+	-	`sha256:7ecb275755b509740963eff61698a72111597bd0c07a1999bc54a9f5bdd64805`  
+		Last Modified: Wed, 22 Oct 2025 05:28:43 GMT  
 		Size: 21.1 KB (21104 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19-1`
 
 ```console
-$ docker pull fluentd@sha256:6756cacbf7f1402e8b6afe1e4bab542b51102d7409996e3560ae3ef2d93796cc
+$ docker pull fluentd@sha256:bfbc613d3be730358bd316faaae8d1ea00bf4e79bbaa20277b4ea94c724ac8fa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4705,19 +4705,19 @@ $ docker pull fluentd@sha256:0cf88286dff752f84fb471fbb115c42d3eae9a78dff818199db
 ### `fluentd:v1.19-1` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:19257fd319b74e3f24802ed4c56fb507821086554d61797d2c7571bf673ab40f
+$ docker pull fluentd@sha256:109fe1db7da3d7fd3a8053e639fa387ad1be181a2c37af25dc9d1d3c2b506831
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79916894 bytes)**  
+-	Total Size: **76.8 MB (76839412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd8f7526981ee0f88bcd246fb2126186a710585782c356a478e94852c6554006`
+-	Image ID: `sha256:4ee08686caed5f5c26514fe11d511f0899fbfe02b976854f33530280656900e8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Thu, 31 Jul 2025 04:35:05 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1760918400'
 # Thu, 31 Jul 2025 04:35:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
 # Thu, 31 Jul 2025 04:35:05 GMT
@@ -4769,71 +4769,71 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:924b0740f35a15fc20142be5c392f6b033c8051daecf16d2db38c22d6d73eb53`  
-		Last Modified: Mon, 29 Sep 2025 23:41:29 GMT  
-		Size: 29.8 MB (29837230 bytes)  
+	-	`sha256:71dc03f1fd788f9fc2bbb931d3df17cbfaf0b486bdfb19f4e3b8792a206689a1`  
+		Last Modified: Tue, 21 Oct 2025 00:28:26 GMT  
+		Size: 29.8 MB (29837255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b94219bc2d3f6debe3a1214636652bb4296b7a0c6b41b51c442dbb55b247f6`  
-		Last Modified: Tue, 30 Sep 2025 12:47:37 GMT  
-		Size: 1.3 MB (1294331 bytes)  
+	-	`sha256:3f9d90fd8269c36054fa7349efdb871b36a6dc4cd44a5e97d40aab080c26c16e`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 1.3 MB (1294427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:853d2a8514957d74c25bfc8f6b26ffb41866be42b94c7993401b21f8935aa8c4`  
-		Last Modified: Tue, 30 Sep 2025 13:37:03 GMT  
-		Size: 189.0 B  
+	-	`sha256:a7b5005667ff30a026e6b0b65fdc2e3a88f28423534fabfe21f391e1ec402f75`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f643f8d7858021a97f0967638ee5bcabf0d4351b2c38b20664203c2db9bf4681`  
-		Last Modified: Wed, 08 Oct 2025 19:10:59 GMT  
-		Size: 42.4 MB (42365078 bytes)  
+	-	`sha256:e9d68018e143b792a2439f8d4f28190860e516008a81b377ebcd1a289df3d776`  
+		Last Modified: Tue, 21 Oct 2025 21:12:17 GMT  
+		Size: 39.3 MB (39287640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dec945648ffcc1fed2409183ddc544cf232ac1c087af685ff7ee54c6060b972d`  
-		Last Modified: Wed, 08 Oct 2025 18:23:24 GMT  
-		Size: 144.0 B  
+	-	`sha256:4f2c1459756e415a7835f6e33b11330f1934922c41fac10054b3086dcddf3f24`  
+		Last Modified: Tue, 21 Oct 2025 21:12:14 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80363700389a063bb2a300ec9ebcfde4974f2d6bfb78abf6cca3239797c13891`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 6.4 MB (6417859 bytes)  
+	-	`sha256:49a138a3f1290023b5bfdf124718af4b97c022639fb464d14ad8bb9b95781b26`  
+		Last Modified: Wed, 22 Oct 2025 04:32:41 GMT  
+		Size: 6.4 MB (6417694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6918c2bd181a34ab976a1f192530a09ce8263a654a3d8e95b769b8266fc4a4d2`  
-		Last Modified: Wed, 08 Oct 2025 19:15:06 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:c1d4b65c7eacfe02c8484b8650de905fa600f44e6958a2156f825ec5c48da84d`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 1.2 KB (1181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa535afc3229c39bf7fd5561408c596e68e47702894f3885fe3d8ed18fd69bf4`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 402.0 B  
+	-	`sha256:cf3ecd19ccf0e24381655e06bf398a10688c4aabe53a236cffc180caa55afafd`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7927bfa77504d93e419eaa970fdd479d3dc6d9ae27e52da2be9eb7df5b4767bd`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 478.0 B  
+	-	`sha256:519a4b10dc4e01598f535a7be5f6b8a83edac63a71604e9e0044aa8d2e59fc01`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f93deea3367f43c949883113c5711ed39ece5123cc2d3f931d5fe65d0ffc337
+$ docker pull fluentd@sha256:e889edbe4148b2bc8a8786854e0319841729797fb60b9987cbd483faaf4815ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306123 bytes)**  
+-	Total Size: **2.3 MB (2306153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e27f95936067af5345e0c9625558275858d4e3f62a084f8c14d61056bba87594`
+-	Image ID: `sha256:47dee8d763febca47c9723fcbffea59cffaf790c93e61bcb81072d025cfb0c16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb0550db52a599cb463a014a4fefd138fabe3845cbfc96c93e6bfdfda51384e0`  
-		Last Modified: Wed, 08 Oct 2025 20:29:13 GMT  
-		Size: 2.3 MB (2284979 bytes)  
+	-	`sha256:780e4a24c21cff22483b9195e1a195232efed59c915593f8ff4fd65d7e07c685`  
+		Last Modified: Wed, 22 Oct 2025 05:28:33 GMT  
+		Size: 2.3 MB (2285009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f70cb33d30525418356effd750a2c30c72002743758cdcd5598e59cac2f9c835`  
-		Last Modified: Wed, 08 Oct 2025 20:29:14 GMT  
+	-	`sha256:b519f54f97fef09fba83df4bf1df459b68532f911dc0ee6b91d64bd3c85bf9f0`  
+		Last Modified: Wed, 22 Oct 2025 05:28:34 GMT  
 		Size: 21.1 KB (21144 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19-debian-1`
 
 ```console
-$ docker pull fluentd@sha256:6756cacbf7f1402e8b6afe1e4bab542b51102d7409996e3560ae3ef2d93796cc
+$ docker pull fluentd@sha256:bfbc613d3be730358bd316faaae8d1ea00bf4e79bbaa20277b4ea94c724ac8fa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5624,19 +5624,19 @@ $ docker pull fluentd@sha256:0cf88286dff752f84fb471fbb115c42d3eae9a78dff818199db
 ### `fluentd:v1.19-debian-1` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:19257fd319b74e3f24802ed4c56fb507821086554d61797d2c7571bf673ab40f
+$ docker pull fluentd@sha256:109fe1db7da3d7fd3a8053e639fa387ad1be181a2c37af25dc9d1d3c2b506831
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79916894 bytes)**  
+-	Total Size: **76.8 MB (76839412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd8f7526981ee0f88bcd246fb2126186a710585782c356a478e94852c6554006`
+-	Image ID: `sha256:4ee08686caed5f5c26514fe11d511f0899fbfe02b976854f33530280656900e8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Thu, 31 Jul 2025 04:35:05 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1760918400'
 # Thu, 31 Jul 2025 04:35:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
 # Thu, 31 Jul 2025 04:35:05 GMT
@@ -5688,71 +5688,71 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:924b0740f35a15fc20142be5c392f6b033c8051daecf16d2db38c22d6d73eb53`  
-		Last Modified: Mon, 29 Sep 2025 23:41:29 GMT  
-		Size: 29.8 MB (29837230 bytes)  
+	-	`sha256:71dc03f1fd788f9fc2bbb931d3df17cbfaf0b486bdfb19f4e3b8792a206689a1`  
+		Last Modified: Tue, 21 Oct 2025 00:28:26 GMT  
+		Size: 29.8 MB (29837255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b94219bc2d3f6debe3a1214636652bb4296b7a0c6b41b51c442dbb55b247f6`  
-		Last Modified: Tue, 30 Sep 2025 12:47:37 GMT  
-		Size: 1.3 MB (1294331 bytes)  
+	-	`sha256:3f9d90fd8269c36054fa7349efdb871b36a6dc4cd44a5e97d40aab080c26c16e`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 1.3 MB (1294427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:853d2a8514957d74c25bfc8f6b26ffb41866be42b94c7993401b21f8935aa8c4`  
-		Last Modified: Tue, 30 Sep 2025 13:37:03 GMT  
-		Size: 189.0 B  
+	-	`sha256:a7b5005667ff30a026e6b0b65fdc2e3a88f28423534fabfe21f391e1ec402f75`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f643f8d7858021a97f0967638ee5bcabf0d4351b2c38b20664203c2db9bf4681`  
-		Last Modified: Wed, 08 Oct 2025 19:10:59 GMT  
-		Size: 42.4 MB (42365078 bytes)  
+	-	`sha256:e9d68018e143b792a2439f8d4f28190860e516008a81b377ebcd1a289df3d776`  
+		Last Modified: Tue, 21 Oct 2025 21:12:17 GMT  
+		Size: 39.3 MB (39287640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dec945648ffcc1fed2409183ddc544cf232ac1c087af685ff7ee54c6060b972d`  
-		Last Modified: Wed, 08 Oct 2025 18:23:24 GMT  
-		Size: 144.0 B  
+	-	`sha256:4f2c1459756e415a7835f6e33b11330f1934922c41fac10054b3086dcddf3f24`  
+		Last Modified: Tue, 21 Oct 2025 21:12:14 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80363700389a063bb2a300ec9ebcfde4974f2d6bfb78abf6cca3239797c13891`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 6.4 MB (6417859 bytes)  
+	-	`sha256:49a138a3f1290023b5bfdf124718af4b97c022639fb464d14ad8bb9b95781b26`  
+		Last Modified: Wed, 22 Oct 2025 04:32:41 GMT  
+		Size: 6.4 MB (6417694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6918c2bd181a34ab976a1f192530a09ce8263a654a3d8e95b769b8266fc4a4d2`  
-		Last Modified: Wed, 08 Oct 2025 19:15:06 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:c1d4b65c7eacfe02c8484b8650de905fa600f44e6958a2156f825ec5c48da84d`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 1.2 KB (1181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa535afc3229c39bf7fd5561408c596e68e47702894f3885fe3d8ed18fd69bf4`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 402.0 B  
+	-	`sha256:cf3ecd19ccf0e24381655e06bf398a10688c4aabe53a236cffc180caa55afafd`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7927bfa77504d93e419eaa970fdd479d3dc6d9ae27e52da2be9eb7df5b4767bd`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 478.0 B  
+	-	`sha256:519a4b10dc4e01598f535a7be5f6b8a83edac63a71604e9e0044aa8d2e59fc01`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19-debian-1` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f93deea3367f43c949883113c5711ed39ece5123cc2d3f931d5fe65d0ffc337
+$ docker pull fluentd@sha256:e889edbe4148b2bc8a8786854e0319841729797fb60b9987cbd483faaf4815ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306123 bytes)**  
+-	Total Size: **2.3 MB (2306153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e27f95936067af5345e0c9625558275858d4e3f62a084f8c14d61056bba87594`
+-	Image ID: `sha256:47dee8d763febca47c9723fcbffea59cffaf790c93e61bcb81072d025cfb0c16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb0550db52a599cb463a014a4fefd138fabe3845cbfc96c93e6bfdfda51384e0`  
-		Last Modified: Wed, 08 Oct 2025 20:29:13 GMT  
-		Size: 2.3 MB (2284979 bytes)  
+	-	`sha256:780e4a24c21cff22483b9195e1a195232efed59c915593f8ff4fd65d7e07c685`  
+		Last Modified: Wed, 22 Oct 2025 05:28:33 GMT  
+		Size: 2.3 MB (2285009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f70cb33d30525418356effd750a2c30c72002743758cdcd5598e59cac2f9c835`  
-		Last Modified: Wed, 08 Oct 2025 20:29:14 GMT  
+	-	`sha256:b519f54f97fef09fba83df4bf1df459b68532f911dc0ee6b91d64bd3c85bf9f0`  
+		Last Modified: Wed, 22 Oct 2025 05:28:34 GMT  
 		Size: 21.1 KB (21144 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19.0-1.0`
 
 ```console
-$ docker pull fluentd@sha256:6756cacbf7f1402e8b6afe1e4bab542b51102d7409996e3560ae3ef2d93796cc
+$ docker pull fluentd@sha256:bfbc613d3be730358bd316faaae8d1ea00bf4e79bbaa20277b4ea94c724ac8fa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6543,19 +6543,19 @@ $ docker pull fluentd@sha256:0cf88286dff752f84fb471fbb115c42d3eae9a78dff818199db
 ### `fluentd:v1.19.0-1.0` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:19257fd319b74e3f24802ed4c56fb507821086554d61797d2c7571bf673ab40f
+$ docker pull fluentd@sha256:109fe1db7da3d7fd3a8053e639fa387ad1be181a2c37af25dc9d1d3c2b506831
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79916894 bytes)**  
+-	Total Size: **76.8 MB (76839412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd8f7526981ee0f88bcd246fb2126186a710585782c356a478e94852c6554006`
+-	Image ID: `sha256:4ee08686caed5f5c26514fe11d511f0899fbfe02b976854f33530280656900e8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Thu, 31 Jul 2025 04:35:05 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1760918400'
 # Thu, 31 Jul 2025 04:35:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
 # Thu, 31 Jul 2025 04:35:05 GMT
@@ -6607,71 +6607,71 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:924b0740f35a15fc20142be5c392f6b033c8051daecf16d2db38c22d6d73eb53`  
-		Last Modified: Mon, 29 Sep 2025 23:41:29 GMT  
-		Size: 29.8 MB (29837230 bytes)  
+	-	`sha256:71dc03f1fd788f9fc2bbb931d3df17cbfaf0b486bdfb19f4e3b8792a206689a1`  
+		Last Modified: Tue, 21 Oct 2025 00:28:26 GMT  
+		Size: 29.8 MB (29837255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b94219bc2d3f6debe3a1214636652bb4296b7a0c6b41b51c442dbb55b247f6`  
-		Last Modified: Tue, 30 Sep 2025 12:47:37 GMT  
-		Size: 1.3 MB (1294331 bytes)  
+	-	`sha256:3f9d90fd8269c36054fa7349efdb871b36a6dc4cd44a5e97d40aab080c26c16e`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 1.3 MB (1294427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:853d2a8514957d74c25bfc8f6b26ffb41866be42b94c7993401b21f8935aa8c4`  
-		Last Modified: Tue, 30 Sep 2025 13:37:03 GMT  
-		Size: 189.0 B  
+	-	`sha256:a7b5005667ff30a026e6b0b65fdc2e3a88f28423534fabfe21f391e1ec402f75`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f643f8d7858021a97f0967638ee5bcabf0d4351b2c38b20664203c2db9bf4681`  
-		Last Modified: Wed, 08 Oct 2025 19:10:59 GMT  
-		Size: 42.4 MB (42365078 bytes)  
+	-	`sha256:e9d68018e143b792a2439f8d4f28190860e516008a81b377ebcd1a289df3d776`  
+		Last Modified: Tue, 21 Oct 2025 21:12:17 GMT  
+		Size: 39.3 MB (39287640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dec945648ffcc1fed2409183ddc544cf232ac1c087af685ff7ee54c6060b972d`  
-		Last Modified: Wed, 08 Oct 2025 18:23:24 GMT  
-		Size: 144.0 B  
+	-	`sha256:4f2c1459756e415a7835f6e33b11330f1934922c41fac10054b3086dcddf3f24`  
+		Last Modified: Tue, 21 Oct 2025 21:12:14 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80363700389a063bb2a300ec9ebcfde4974f2d6bfb78abf6cca3239797c13891`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 6.4 MB (6417859 bytes)  
+	-	`sha256:49a138a3f1290023b5bfdf124718af4b97c022639fb464d14ad8bb9b95781b26`  
+		Last Modified: Wed, 22 Oct 2025 04:32:41 GMT  
+		Size: 6.4 MB (6417694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6918c2bd181a34ab976a1f192530a09ce8263a654a3d8e95b769b8266fc4a4d2`  
-		Last Modified: Wed, 08 Oct 2025 19:15:06 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:c1d4b65c7eacfe02c8484b8650de905fa600f44e6958a2156f825ec5c48da84d`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 1.2 KB (1181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa535afc3229c39bf7fd5561408c596e68e47702894f3885fe3d8ed18fd69bf4`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 402.0 B  
+	-	`sha256:cf3ecd19ccf0e24381655e06bf398a10688c4aabe53a236cffc180caa55afafd`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7927bfa77504d93e419eaa970fdd479d3dc6d9ae27e52da2be9eb7df5b4767bd`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 478.0 B  
+	-	`sha256:519a4b10dc4e01598f535a7be5f6b8a83edac63a71604e9e0044aa8d2e59fc01`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.0-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f93deea3367f43c949883113c5711ed39ece5123cc2d3f931d5fe65d0ffc337
+$ docker pull fluentd@sha256:e889edbe4148b2bc8a8786854e0319841729797fb60b9987cbd483faaf4815ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306123 bytes)**  
+-	Total Size: **2.3 MB (2306153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e27f95936067af5345e0c9625558275858d4e3f62a084f8c14d61056bba87594`
+-	Image ID: `sha256:47dee8d763febca47c9723fcbffea59cffaf790c93e61bcb81072d025cfb0c16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb0550db52a599cb463a014a4fefd138fabe3845cbfc96c93e6bfdfda51384e0`  
-		Last Modified: Wed, 08 Oct 2025 20:29:13 GMT  
-		Size: 2.3 MB (2284979 bytes)  
+	-	`sha256:780e4a24c21cff22483b9195e1a195232efed59c915593f8ff4fd65d7e07c685`  
+		Last Modified: Wed, 22 Oct 2025 05:28:33 GMT  
+		Size: 2.3 MB (2285009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f70cb33d30525418356effd750a2c30c72002743758cdcd5598e59cac2f9c835`  
-		Last Modified: Wed, 08 Oct 2025 20:29:14 GMT  
+	-	`sha256:b519f54f97fef09fba83df4bf1df459b68532f911dc0ee6b91d64bd3c85bf9f0`  
+		Last Modified: Wed, 22 Oct 2025 05:28:34 GMT  
 		Size: 21.1 KB (21144 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `fluentd:v1.19.0-debian-1.0`
 
 ```console
-$ docker pull fluentd@sha256:6756cacbf7f1402e8b6afe1e4bab542b51102d7409996e3560ae3ef2d93796cc
+$ docker pull fluentd@sha256:bfbc613d3be730358bd316faaae8d1ea00bf4e79bbaa20277b4ea94c724ac8fa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7462,19 +7462,19 @@ $ docker pull fluentd@sha256:0cf88286dff752f84fb471fbb115c42d3eae9a78dff818199db
 ### `fluentd:v1.19.0-debian-1.0` - linux; s390x
 
 ```console
-$ docker pull fluentd@sha256:19257fd319b74e3f24802ed4c56fb507821086554d61797d2c7571bf673ab40f
+$ docker pull fluentd@sha256:109fe1db7da3d7fd3a8053e639fa387ad1be181a2c37af25dc9d1d3c2b506831
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79916894 bytes)**  
+-	Total Size: **76.8 MB (76839412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd8f7526981ee0f88bcd246fb2126186a710585782c356a478e94852c6554006`
+-	Image ID: `sha256:4ee08686caed5f5c26514fe11d511f0899fbfe02b976854f33530280656900e8`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
 # Thu, 31 Jul 2025 04:35:05 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1759104000'
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1760918400'
 # Thu, 31 Jul 2025 04:35:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 	; 	apt-get dist-clean # buildkit
 # Thu, 31 Jul 2025 04:35:05 GMT
@@ -7526,63 +7526,63 @@ CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:924b0740f35a15fc20142be5c392f6b033c8051daecf16d2db38c22d6d73eb53`  
-		Last Modified: Mon, 29 Sep 2025 23:41:29 GMT  
-		Size: 29.8 MB (29837230 bytes)  
+	-	`sha256:71dc03f1fd788f9fc2bbb931d3df17cbfaf0b486bdfb19f4e3b8792a206689a1`  
+		Last Modified: Tue, 21 Oct 2025 00:28:26 GMT  
+		Size: 29.8 MB (29837255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b94219bc2d3f6debe3a1214636652bb4296b7a0c6b41b51c442dbb55b247f6`  
-		Last Modified: Tue, 30 Sep 2025 12:47:37 GMT  
-		Size: 1.3 MB (1294331 bytes)  
+	-	`sha256:3f9d90fd8269c36054fa7349efdb871b36a6dc4cd44a5e97d40aab080c26c16e`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 1.3 MB (1294427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:853d2a8514957d74c25bfc8f6b26ffb41866be42b94c7993401b21f8935aa8c4`  
-		Last Modified: Tue, 30 Sep 2025 13:37:03 GMT  
-		Size: 189.0 B  
+	-	`sha256:a7b5005667ff30a026e6b0b65fdc2e3a88f28423534fabfe21f391e1ec402f75`  
+		Last Modified: Tue, 21 Oct 2025 21:03:57 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f643f8d7858021a97f0967638ee5bcabf0d4351b2c38b20664203c2db9bf4681`  
-		Last Modified: Wed, 08 Oct 2025 19:10:59 GMT  
-		Size: 42.4 MB (42365078 bytes)  
+	-	`sha256:e9d68018e143b792a2439f8d4f28190860e516008a81b377ebcd1a289df3d776`  
+		Last Modified: Tue, 21 Oct 2025 21:12:17 GMT  
+		Size: 39.3 MB (39287640 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dec945648ffcc1fed2409183ddc544cf232ac1c087af685ff7ee54c6060b972d`  
-		Last Modified: Wed, 08 Oct 2025 18:23:24 GMT  
-		Size: 144.0 B  
+	-	`sha256:4f2c1459756e415a7835f6e33b11330f1934922c41fac10054b3086dcddf3f24`  
+		Last Modified: Tue, 21 Oct 2025 21:12:14 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80363700389a063bb2a300ec9ebcfde4974f2d6bfb78abf6cca3239797c13891`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 6.4 MB (6417859 bytes)  
+	-	`sha256:49a138a3f1290023b5bfdf124718af4b97c022639fb464d14ad8bb9b95781b26`  
+		Last Modified: Wed, 22 Oct 2025 04:32:41 GMT  
+		Size: 6.4 MB (6417694 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6918c2bd181a34ab976a1f192530a09ce8263a654a3d8e95b769b8266fc4a4d2`  
-		Last Modified: Wed, 08 Oct 2025 19:15:06 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:c1d4b65c7eacfe02c8484b8650de905fa600f44e6958a2156f825ec5c48da84d`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 1.2 KB (1181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa535afc3229c39bf7fd5561408c596e68e47702894f3885fe3d8ed18fd69bf4`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 402.0 B  
+	-	`sha256:cf3ecd19ccf0e24381655e06bf398a10688c4aabe53a236cffc180caa55afafd`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7927bfa77504d93e419eaa970fdd479d3dc6d9ae27e52da2be9eb7df5b4767bd`  
-		Last Modified: Wed, 08 Oct 2025 19:15:07 GMT  
-		Size: 478.0 B  
+	-	`sha256:519a4b10dc4e01598f535a7be5f6b8a83edac63a71604e9e0044aa8d2e59fc01`  
+		Last Modified: Wed, 22 Oct 2025 04:32:40 GMT  
+		Size: 479.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fluentd:v1.19.0-debian-1.0` - unknown; unknown
 
 ```console
-$ docker pull fluentd@sha256:7f93deea3367f43c949883113c5711ed39ece5123cc2d3f931d5fe65d0ffc337
+$ docker pull fluentd@sha256:e889edbe4148b2bc8a8786854e0319841729797fb60b9987cbd483faaf4815ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306123 bytes)**  
+-	Total Size: **2.3 MB (2306153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e27f95936067af5345e0c9625558275858d4e3f62a084f8c14d61056bba87594`
+-	Image ID: `sha256:47dee8d763febca47c9723fcbffea59cffaf790c93e61bcb81072d025cfb0c16`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb0550db52a599cb463a014a4fefd138fabe3845cbfc96c93e6bfdfda51384e0`  
-		Last Modified: Wed, 08 Oct 2025 20:29:13 GMT  
-		Size: 2.3 MB (2284979 bytes)  
+	-	`sha256:780e4a24c21cff22483b9195e1a195232efed59c915593f8ff4fd65d7e07c685`  
+		Last Modified: Wed, 22 Oct 2025 05:28:33 GMT  
+		Size: 2.3 MB (2285009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f70cb33d30525418356effd750a2c30c72002743758cdcd5598e59cac2f9c835`  
-		Last Modified: Wed, 08 Oct 2025 20:29:14 GMT  
+	-	`sha256:b519f54f97fef09fba83df4bf1df459b68532f911dc0ee6b91d64bd3c85bf9f0`  
+		Last Modified: Wed, 22 Oct 2025 05:28:34 GMT  
 		Size: 21.1 KB (21144 bytes)  
 		MIME: application/vnd.in-toto+json
