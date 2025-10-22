@@ -1,7 +1,7 @@
 ## `bash:devel`
 
 ```console
-$ docker pull bash@sha256:02969b3bff026509c069b4d3e58012dad538339acaf28f4c80262e73c0c65280
+$ docker pull bash@sha256:a7a3edb72863e5b4a75f4ba6aa4ad97bd3fe787eb2014134fcdfaa031a57ca27
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -402,34 +402,34 @@ $ docker pull bash@sha256:75bf915901e75446a2f75c49ae1c63279a236762ad47b15e726d0e
 ### `bash:devel` - linux; ppc64le
 
 ```console
-$ docker pull bash@sha256:7b23690250822659955dad9fe3f0891990e8e41af78727dd81008e19b47e4a1b
+$ docker pull bash@sha256:80e00d284afd4cbb368254d5c65ae35b48b3c1a4938580c2b3402c390a48470f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.0 MB (7009716 bytes)**  
+-	Total Size: **7.0 MB (7006646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b96f734659f8d652984326edac1815247516531d5664992901e3606c64229ac8`
+-	Image ID: `sha256:a9b0d305be6af42c8908a340e1546ecc20cd2be73b6c813a88bbf4fa6db7a9fe`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Oct 2025 04:18:10 GMT
-ENV _BASH_COMMIT=25c6aa5b230167c6471898539c46dd2891d891a5
-# Tue, 07 Oct 2025 04:18:10 GMT
-ENV _BASH_VERSION=devel-20251006
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Tue, 21 Oct 2025 04:18:23 GMT
+ENV _BASH_COMMIT=6edfd0bf647cac5c3af3c15aabf49e27528ddf78
+# Tue, 21 Oct 2025 04:18:23 GMT
+ENV _BASH_VERSION=devel-20251017
+# Tue, 21 Oct 2025 04:18:23 GMT
 COPY alpine-strcpy.patch /usr/local/src/tianon-bash-patches/ # buildkit
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Tue, 21 Oct 2025 04:18:23 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -T2 -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz" || 		wget -O bash.tar.gz "https://github.com/tianon/mirror-bash/archive/$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		for p in /usr/local/src/tianon-bash-patches/*; do 		patch 			--directory=/usr/local/src/bash 			--input="$p" 			--strip=1 		; 	done; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	bash -c 'help' > /dev/null # buildkit
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Tue, 21 Oct 2025 04:18:23 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Tue, 21 Oct 2025 04:18:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Oct 2025 04:18:10 GMT
+# Tue, 21 Oct 2025 04:18:23 GMT
 CMD ["bash"]
 ```
 
@@ -442,37 +442,37 @@ CMD ["bash"]
 		Last Modified: Wed, 08 Oct 2025 21:12:02 GMT  
 		Size: 458.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59480d86251ef4f957431f84c6bf7757bf913629e79e2baeb6b1151cae86f396`  
-		Last Modified: Wed, 08 Oct 2025 21:12:03 GMT  
-		Size: 3.3 MB (3276684 bytes)  
+	-	`sha256:9516e4450cf2de127eaec86bd0c4859b9cc1b4f1edf115278d853cb5785fb8a1`  
+		Last Modified: Wed, 22 Oct 2025 00:21:30 GMT  
+		Size: 3.3 MB (3273612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:330d595490a4d04b99ff22e57dd8882f9ef3122081ed05ceacda05279f479a5b`  
-		Last Modified: Wed, 08 Oct 2025 21:12:02 GMT  
-		Size: 333.0 B  
+	-	`sha256:ec419cea422a77ebf3038c120b45bd54ae2f81a44b49a403076a855bbbde87e8`  
+		Last Modified: Wed, 22 Oct 2025 00:21:30 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:devel` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:a8eafa98511d9fccab1f9bb91f4b7d8f6384df642bc9af47f91f6c9d0a080d2a
+$ docker pull bash@sha256:06efc730806f2a039f25f4b06d0bcad3ca8c7085dc27dbf901d41447ef44a369
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.7 KB (134702 bytes)**  
+-	Total Size: **134.7 KB (134679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd742d2e0bc83c16c15ea1ecdc7550504f81b0b250638b8de7b205b7e1ec37af`
+-	Image ID: `sha256:14ab0c4ff71197731010a62f98bab3c3502e6497f529799c811a8fa7ea755fe0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ddcfc010cae89a32abea38a70ba54ccdda3edafdff8c997e916f5c1cafc7b2df`  
-		Last Modified: Thu, 09 Oct 2025 00:08:05 GMT  
+	-	`sha256:32a33566629b49705ada262bd9408c4c6fef3984b964f4d77ef2bf77627aa3b2`  
+		Last Modified: Wed, 22 Oct 2025 03:02:35 GMT  
 		Size: 116.5 KB (116512 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3a782bc34c187ff0072c12b244b2faca13b1fca1d5290a19ba44983b58857845`  
-		Last Modified: Thu, 09 Oct 2025 00:08:05 GMT  
-		Size: 18.2 KB (18190 bytes)  
+	-	`sha256:40e15d48a0b8e0b604e46d47bb1f443669c5a1b60721a4d2eb6426fe21065771`  
+		Last Modified: Wed, 22 Oct 2025 03:02:36 GMT  
+		Size: 18.2 KB (18167 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:devel` - linux; riscv64
