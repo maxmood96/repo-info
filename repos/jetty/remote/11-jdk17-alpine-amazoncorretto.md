@@ -1,7 +1,7 @@
 ## `jetty:11-jdk17-alpine-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:471ab1c3798afe44691af5ca1585db9f53b703ce7144ff2f0c6bf40f55f73178
+$ docker pull jetty@sha256:e6c50b39d8e7de52fa1d6eecfa994d4dd894dac912d1cfa6576dc82af01df538
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -119,13 +119,13 @@ $ docker pull jetty@sha256:ac527829e6e5a8ce5d354eaf13123c83b4c8d07d2260aab78abbc
 ### `jetty:11-jdk17-alpine-amazoncorretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:d9ce614a063e9a2f28b605bb6b8c191d4acc1b3089454e99aed2a312b93775cb
+$ docker pull jetty@sha256:c011a44c257511bd65400d68801961391851d157e14abbeda96d749ef1fbef85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.9 MB (171863643 bytes)**  
+-	Total Size: **174.3 MB (174267803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c79ac46ec54b1ad5260b85173124581aa2e842c43866a69d99f8bdfcfc30c761`
+-	Image ID: `sha256:4a7ada0e2fc5c36c966545ff080057130773435261b7ccdf8d33755e7ec6087c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -135,9 +135,9 @@ ADD alpine-minirootfs-3.22.2-aarch64.tar.gz / # buildkit
 # Tue, 19 Aug 2025 02:05:55 GMT
 CMD ["/bin/sh"]
 # Tue, 19 Aug 2025 02:05:55 GMT
-ARG version=17.0.16.8.1
+ARG version=17.0.17.10.1
 # Tue, 19 Aug 2025 02:05:55 GMT
-# ARGS: version=17.0.16.8.1
+# ARGS: version=17.0.17.10.1
 RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz &&     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - &&     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz &&     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz &&     wget -O /etc/apk/keys/amazoncorretto.rsa.pub https://apk.corretto.aws/amazoncorretto.rsa.pub &&     SHA_SUM="6cfdf08be09f32ca298e2d5bd4a359ee2b275765c09b56d514624bf831eafb91" &&     echo "${SHA_SUM}  /etc/apk/keys/amazoncorretto.rsa.pub" | sha256sum -c - &&     echo "https://apk.corretto.aws" >> /etc/apk/repositories &&     apk add --no-cache amazon-corretto-17=$version-r0 &&     rm -rf /usr/lib/jvm/java-17-amazon-corretto/lib/src.zip # buildkit
 # Tue, 19 Aug 2025 02:05:55 GMT
 ENV LANG=C.UTF-8
@@ -180,43 +180,43 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
 		Size: 4.1 MB (4138069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8441cae596502c24c1df299139f12ea0010ff305b8532616eb66792872f8b7a`  
-		Last Modified: Wed, 08 Oct 2025 22:59:10 GMT  
-		Size: 144.3 MB (144317433 bytes)  
+	-	`sha256:5c010ce05bd9b6d74dd876e5f1bce365f86d6b710a28f124ed8d1ad6dcd32407`  
+		Last Modified: Tue, 21 Oct 2025 22:13:34 GMT  
+		Size: 146.7 MB (146709717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f731dfec79c6adfea41b0496afb12f1cae37223501ec97b7b6f268c43b33c918`  
-		Last Modified: Wed, 08 Oct 2025 23:00:06 GMT  
-		Size: 23.4 MB (23406264 bytes)  
+	-	`sha256:f8b75183d196dc0fd16993846b97fcf3e8e07424f7101edd3a864d709fe8ff7e`  
+		Last Modified: Tue, 21 Oct 2025 22:14:46 GMT  
+		Size: 23.4 MB (23418140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef9340bd6c12f100a1a36759759cbdded39204bcf63b8fe0e333c2e7ad493bbf`  
-		Last Modified: Wed, 08 Oct 2025 23:00:04 GMT  
+	-	`sha256:c04854f3a46e687a08ec58b0d7572dee1e8a8a2c30e0b71ecf636abc57655f69`  
+		Last Modified: Tue, 21 Oct 2025 22:14:45 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:11-jdk17-alpine-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:e843b3429edec1ae635be56fd3fcde6313da54d5c3a7a62efd2c894df24edbf0
+$ docker pull jetty@sha256:7971411607f7643fb79d56d8a974a4a2ff00ed745b49684e9397498cb0309522
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 KB (637465 bytes)**  
+-	Total Size: **840.0 KB (840044 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67aed3fa3a162a9ff19b255e72f4d50af5cc7d007116c89c8fa7b08c071f515c`
+-	Image ID: `sha256:3ad7ed191fa235e12088203c70eaeb5e6fcca9c83a25fd46b908324f867ebacc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68b29c63c52d99a6f03202960e68d9592b386934161ff9eb325566caafe6dbbc`  
-		Last Modified: Thu, 09 Oct 2025 02:18:12 GMT  
-		Size: 620.3 KB (620254 bytes)  
+	-	`sha256:320821e81a91b894d6f94d2b07b980f8acdd45457d0045d0af0ac4d81a0b87a1`  
+		Last Modified: Wed, 22 Oct 2025 02:16:38 GMT  
+		Size: 822.8 KB (822833 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64e7675e341d89026e1bbfb711836741a5424c42ef0561ffe0c9e1a72a009877`  
-		Last Modified: Thu, 09 Oct 2025 02:18:13 GMT  
+	-	`sha256:080d645dba05d37b8a1d6e0707e24cf1db2ee10ac508d6f30f41ff87f93f14d8`  
+		Last Modified: Wed, 22 Oct 2025 02:16:39 GMT  
 		Size: 17.2 KB (17211 bytes)  
 		MIME: application/vnd.in-toto+json
