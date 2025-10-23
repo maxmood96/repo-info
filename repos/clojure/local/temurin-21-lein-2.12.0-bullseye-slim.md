@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f98c08f9a1ab9225ca6559ea0138f73fa8a0d85e4f8b56e24a39e0eb1fb6ea4`
+- Image ID: `sha256:baccf5132b7cf650d3b9d811ff5dbe8af9e12a6aac1750e820ec8e9536f567bc`
 - Created: `2025-09-26T15:53:20Z`
 - Virtual Size: ~ 412.50 Mb  
   (total size of all layers on-disk)
@@ -1507,28 +1507,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u3`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.1w-0+deb11u3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u3/
-
-
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u4`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.1w-0+deb11u4`
 - `openssl=1.1.1w-0+deb11u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
