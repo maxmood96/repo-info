@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d40929d04ab7dda77b63a142ddca6d663ab4a1827a753f2eadd47316605b2353`
+- Image ID: `sha256:ee17ab877a70d34d92dc616d673baa3ce3bc4c3fb360096c30f3423d7655a426`
 - Created: `2025-10-06T13:56:56Z`
 - Virtual Size: ~ 771.50 Mb  
   (total size of all layers on-disk)
@@ -23,24 +23,25 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-09-18T08:36:33Z`
+  - `build-date=2025-10-15T08:06:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
+  - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.40.1`
+  - `io.buildah.version=1.41.4`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
-  - `name=ubi9-minimal`
+  - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.revision=0c20ee48321f5d64135f6208d1332c0b032df6c3`
-  - `release=1758184547`
+  - `org.opencontainers.image.revision=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59`
+  - `release=1760515502`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0c20ee48321f5d64135f6208d1332c0b032df6c3`
+  - `vcs-ref=d1b15a34ce69ea214e1d32f1f501304f6b8b8c59`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.6`
