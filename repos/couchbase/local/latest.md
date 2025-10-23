@@ -1,10 +1,10 @@
-# `couchbase:7.6.7`
+# `couchbase:8.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b5d1ee119d7803570a80a5342fb7a8b10d180d8c6f5e64ae432d22d96546b85`
-- Created: `2025-08-13T18:24:10Z`
-- Virtual Size: ~ 1.83 Gb  
+- Image ID: `sha256:31f7f08de5932c9afe14601dbb9f04552c5d8bf52f56b8fff500426e2ff6da6c`
+- Created: `2025-10-20T17:17:12Z`
+- Virtual Size: ~ 2.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -323,11 +323,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.1.debian.tar.xz' coreutils_9.4-3ubuntu6.1.debian.tar.xz 41308 SHA512:abbd5d534ad307d8244f5ae6112ebe050306459ec5de4231e5dd1266361157b307c821e8c1e2bbd41f7cf6c7ab796a592fb8d2ef1cb516ae90e8050fb84c1502
 ```
 
-### `dpkg` source package: `couchbase-server=7.6.7-6706-1`
+### `dpkg` source package: `couchbase-server=8.0.0-3777-1`
 
 Binary Packages:
 
-- `couchbase-server=7.6.7-6706-1`
+- `couchbase-server=8.0.0-3777-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
