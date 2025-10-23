@@ -1,10 +1,10 @@
-# `odoo:19.0-20251008`
+# `odoo:19.0-20251021`
 
 ## Docker Metadata
 
-- Image ID: `sha256:03d5400790ca4dc2768ca19767c1adb74583ce81fc042fbcd66dd138f17cc974`
-- Created: `2025-10-08T14:56:20Z`
-- Virtual Size: ~ 2.13 Gb  
+- Image ID: `sha256:e4956f45f43d834a1bf8369f2fcba4f6338b10afceecfe9988a570fbb33a6844`
+- Created: `2025-10-21T11:42:44Z`
+- Virtual Size: ~ 2.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -10016,11 +10016,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=19.0.20251008`
+### `dpkg` source package: `odoo=19.0.20251021`
 
 Binary Packages:
 
-- `odoo=19.0.20251008`
+- `odoo=19.0.20251021`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10904,12 +10904,12 @@ $ apt-get source -qq --print-uris python-idna=3.6-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_3.6-2ubuntu0.1.debian.tar.xz' python-idna_3.6-2ubuntu0.1.debian.tar.xz 8852 SHA512:59ca1316ba4de9e8938eeb43f0993a27373e9f44e167e8ca032a86fd1248e34c8773074cbf97971b4d1db67581b39ac01c2a268eafe7a81f3901b092955e3165
 ```
 
-### `dpkg` source package: `python-ldap=3.4.4-1build1`
+### `dpkg` source package: `python-ldap=3.4.4-1ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `python3-ldap=3.4.4-1build1`
-- `python3-pyldap=3.4.4-1build1`
+- `python3-ldap=3.4.4-1ubuntu0.24.04.1`
+- `python3-pyldap=3.4.4-1ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-ldap/copyright`, `/usr/share/doc/python3-pyldap/copyright`)
 
@@ -10920,10 +10920,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-ldap/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-ldap=3.4.4-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ldap/python-ldap_3.4.4-1build1.dsc' python-ldap_3.4.4-1build1.dsc 2457 SHA512:a9f521a25ec95d43118cda05f020140eed082d953ba45caf970e9f8147e4a9b7cef0f865e48950b82e44f1dd689206303cd2bca12acc0cd13acba6042f64049d
+$ apt-get source -qq --print-uris python-ldap=3.4.4-1ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ldap/python-ldap_3.4.4-1ubuntu0.24.04.1.dsc' python-ldap_3.4.4-1ubuntu0.24.04.1.dsc 2538 SHA512:11d6f03bab20cd7d512e6e978e177d4be6527e48a7305f5bd7a4f655744753f06f0df18b2d1e2eed44dac4ed31d68489fb43e4b1c54e5ba0d0ebe86f436d08b7
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ldap/python-ldap_3.4.4.orig.tar.gz' python-ldap_3.4.4.orig.tar.gz 377889 SHA512:0f29ba7f7aa4c5f5dd429b3f818094e07102ba9bf2dd131e6fa94b648d01cd9dfb564d7b536852037173591c2fa6917dd126eeb4da341b2d44879de4d83eb87c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ldap/python-ldap_3.4.4-1build1.debian.tar.xz' python-ldap_3.4.4-1build1.debian.tar.xz 69808 SHA512:925ad13a165ef1398c0516e4ccc9b4a60bea254f03dc48cf41709f301ff1b8c7c40eb96634473d36197a45bf3260e28c7a633e26afa7b8c0061f3c071b614008
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ldap/python-ldap_3.4.4-1ubuntu0.24.04.1.debian.tar.xz' python-ldap_3.4.4-1ubuntu0.24.04.1.debian.tar.xz 70852 SHA512:269f6bec133a3975a3dcf71f9b0dca4d4939ab3f32e5d60fcee49e9423848fb9d5a887c824f31fbbdc4a7fd57d7dc0666c56211c33202530b67bc881cf5bf13d
 ```
 
 ### `dpkg` source package: `python-magic=2:0.4.27-3`
