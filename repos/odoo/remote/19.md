@@ -383,7 +383,7 @@ CMD ["odoo"]
 		Size: 480.1 KB (480093 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb5814ea53b18e9c5b0f1363392b080a4a2e18f42f5605a36fa8ae272d6fb054`  
-		Last Modified: Tue, 21 Oct 2025 23:50:37 GMT  
+		Last Modified: Thu, 23 Oct 2025 10:04:33 GMT  
 		Size: 383.9 MB (383929359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19bfe0ddf6502e432cf6c5f3c270e9117dd29ef625290bbdeb5cae52330b7089`  
