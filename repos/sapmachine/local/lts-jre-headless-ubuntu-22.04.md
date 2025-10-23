@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e189ba812ed064c314acce93dbc3e6892d7a74e144738da9da6427e64d59abf0`
-- Created: `2025-09-17T04:28:56Z`
-- Virtual Size: ~ 285.75 Mb  
+- Image ID: `sha256:0b2ea1867bda0129f59ea4748483e56d008583b5552262ab3f988528267b3260`
+- Created: `2025-10-21T21:30:17Z`
+- Virtual Size: ~ 241.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1534,11 +1534,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `sapmachine-25-jre-headless=25`
+### `dpkg` source package: `sapmachine-25-jre-headless=25.0.1`
 
 Binary Packages:
 
-- `sapmachine-25-jre-headless=25`
+- `sapmachine-25-jre-headless=25.0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
