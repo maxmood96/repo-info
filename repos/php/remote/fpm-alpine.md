@@ -1,7 +1,7 @@
 ## `php:fpm-alpine`
 
 ```console
-$ docker pull php@sha256:aee4a044beefc7d88d0419aee8825491e02391f37707b8fc0d8edba1a29c1165
+$ docker pull php@sha256:8477fba01452d445ff7db260430181acad450137b3629db7823ab518bdd13d52
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -590,68 +590,68 @@ $ docker pull php@sha256:00244e88c5af40806914e5c5127c6c6be2915b8e6139688114092a4
 ### `php:fpm-alpine` - linux; 386
 
 ```console
-$ docker pull php@sha256:720e63333c31b9227b413c1937cceff25873503ce98348e3dcd39ad12110f474
+$ docker pull php@sha256:8082a01ffaa687b0daf9c9598da3a31905f84ef3aaa50e7ce35d85d9d7240aee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.3 MB (36289260 bytes)**  
+-	Total Size: **36.3 MB (36291635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fdef9598e3ac6607a6d9159a85827b1bbee00ab0f00a43df96f60c62d3982ca9`
+-	Image ID: `sha256:8d5431e2cb8c895e043b320a9ac04e902123b0d456d1d283380ad890e72e7da7`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-x86.tar.gz / # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Thu, 25 Sep 2025 18:46:43 GMT
-ENV PHP_VERSION=8.4.13
-# Thu, 25 Sep 2025 18:46:43 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc
-# Thu, 25 Sep 2025 18:46:43 GMT
-ENV PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
+ENV PHP_VERSION=8.4.14
+# Thu, 23 Oct 2025 18:46:40 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.14.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.14.tar.xz.asc
+# Thu, 23 Oct 2025 18:46:40 GMT
+ENV PHP_SHA256=bac90ee7cf738e814c89b6b27d4d2c4b70e50942a420837e1a22f5fd5f9867a3
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 WORKDIR /var/www/html
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 EXPOSE map[9000/tcp:{}]
-# Thu, 25 Sep 2025 18:46:43 GMT
+# Thu, 23 Oct 2025 18:46:40 GMT
 CMD ["php-fpm"]
 ```
 
@@ -660,72 +660,72 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f10b1c8f28dcc9eea59bc468507a822f9cee5923019a234682b17fffc0e0399e`  
-		Last Modified: Wed, 08 Oct 2025 21:29:25 GMT  
-		Size: 3.5 MB (3522947 bytes)  
+	-	`sha256:db1444848509bdf400cf25254b5a91a7dfdeec4142f50ea44edac57008365d37`  
+		Last Modified: Fri, 24 Oct 2025 18:35:35 GMT  
+		Size: 3.5 MB (3522959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54c8476eb364d29e72f440167fb044ac72dfa85ef77b1c2bc1cfa03c4d8793b9`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
+	-	`sha256:9e864fc1ebc7c6c71faeb528833ccbfc642ca81339edf62dc9fb9bd4038bd68b`  
+		Last Modified: Fri, 24 Oct 2025 18:35:34 GMT  
 		Size: 934.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7115926f8e2adaddbca9f8b1778fc2142df7ec3fdad63b6c6e1c8399109e3b71`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
-		Size: 215.0 B  
+	-	`sha256:d39398f3bb71f09f3f0eea379781fb08dd54d31cdb3be565275e22779b52139b`  
+		Last Modified: Fri, 24 Oct 2025 18:35:34 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0eaf5c5fa7e4fae1e5ce91a8aa7a311895c774277dae69bf3b4395bb7e4b344`  
-		Last Modified: Wed, 08 Oct 2025 21:29:27 GMT  
-		Size: 13.7 MB (13667288 bytes)  
+	-	`sha256:e879b50c2e498ab549b3e24742c30ee380bcb4e6f018700b70b5518424590f74`  
+		Last Modified: Fri, 24 Oct 2025 18:42:33 GMT  
+		Size: 13.7 MB (13665807 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1741bf9292a6bf0fd75328cac116ab9a15c37b4cd92a34c0964795f4c66197b5`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
-		Size: 489.0 B  
+	-	`sha256:fc38abad9de38268e70fccdf96fc473b958031cd3863312a5d0046cf5b76b3f9`  
+		Last Modified: Fri, 24 Oct 2025 18:42:24 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11189242010cb867cbcecd3502a7985368afeda128cc73419725dad71001db06`  
-		Last Modified: Wed, 08 Oct 2025 21:29:27 GMT  
-		Size: 15.4 MB (15426681 bytes)  
+	-	`sha256:0292cc7f774253f31fc2f7a2f1eee4a866a4a145bb10358871dc4a27f1c8b3df`  
+		Last Modified: Fri, 24 Oct 2025 18:42:24 GMT  
+		Size: 15.4 MB (15430524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c9b68bdbae9ced3decd4cee6efcab71157186bc4547f45eb1a9260bb568d846`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
-		Size: 2.5 KB (2450 bytes)  
+	-	`sha256:3eb66778eb86cfb8959efd588322e477a01cd1167e5c3a0f397c7804b7a51fe1`  
+		Last Modified: Fri, 24 Oct 2025 18:42:24 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfeef9f239767fd37ee59bdd0c3b25b7d735e1c8346a5a0361c7054bc6c19888`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
-		Size: 20.1 KB (20052 bytes)  
+	-	`sha256:272bacd0bba02c93fad763ef48351d61c4c7774d19530c32fe056fc0cd32d50d`  
+		Last Modified: Fri, 24 Oct 2025 18:42:24 GMT  
+		Size: 20.0 KB (20045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6ba566a1e9b316fabc4534724f1166d20e2d9ac961956832b0e6fc29cc2da25`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
-		Size: 20.1 KB (20050 bytes)  
+	-	`sha256:6420922474cc847e8cdb4b5cd90cd80c7335494d22836fcb013ea2a6b77ffcd8`  
+		Last Modified: Fri, 24 Oct 2025 18:42:24 GMT  
+		Size: 20.0 KB (20047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60800b2cc2a5800de8152cf69fc39817b8ccda398608111c29365655f269068b`  
-		Last Modified: Wed, 08 Oct 2025 21:29:24 GMT  
-		Size: 9.2 KB (9191 bytes)  
+	-	`sha256:3196a033c4b3d6b6242ae63336336d7ed101f0728e37b07b193aa70e566937e0`  
+		Last Modified: Fri, 24 Oct 2025 18:42:23 GMT  
+		Size: 9.2 KB (9193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `php:fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull php@sha256:a9ef4ebd313450658e47e7c0a68c7000414e4e63e92567ac8d28d571742df00c
+$ docker pull php@sha256:fedd80d7974f59f436db0d847b33e0b732a497b8fc588d2e8335cad3591954b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **333.6 KB (333623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee35f249db7e420836966fb3b6b5e5ccb944942ee0531c0c22d572972557af7`
+-	Image ID: `sha256:8a146ddce67ceb296251780169902916bc0e089a4d21249ee870397aa972034f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b2db0330cd66dd034f4ccf6bfd0cef5fbb4ab26e78129a7a0571c08d79e4057`  
-		Last Modified: Wed, 08 Oct 2025 22:55:47 GMT  
+	-	`sha256:c16702af130060a6d6783e350779ce416fac7219e6cea62b01e21a0305dc11c5`  
+		Last Modified: Fri, 24 Oct 2025 19:56:04 GMT  
 		Size: 281.7 KB (281727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:debeb54d86ed845e4bb49428df08be61e84081624fcc63613a64e7a3616facf5`  
-		Last Modified: Wed, 08 Oct 2025 22:55:48 GMT  
+	-	`sha256:62df236f34783562f1d529a90abe231aa63df006582e41a2379fd76bfcc1a476`  
+		Last Modified: Fri, 24 Oct 2025 19:56:05 GMT  
 		Size: 51.9 KB (51896 bytes)  
 		MIME: application/vnd.in-toto+json
 
