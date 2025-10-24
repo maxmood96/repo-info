@@ -1,10 +1,10 @@
-# `openjdk:26-ea-19-jdk-bookworm`
+# `openjdk:26-ea-20-jdk-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2120bf651bca478f9b5b95f244cb52f3b19e8c7bfc0cab51cdedbdc944928bc`
-- Created: `2025-10-11T00:48:11Z`
-- Virtual Size: ~ 791.60 Mb  
+- Image ID: `sha256:c204f44a918980340af66fa8d13210442c0ca123f1be3255e3f3153598448d06`
+- Created: `2025-10-20T18:48:18Z`
+- Virtual Size: ~ 791.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-26`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=26-ea+19`
+  - `JAVA_VERSION=26-ea+20`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2545,12 +2545,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.17-1~deb12u2`
+### `dpkg` source package: `openssl=3.0.17-1~deb12u3`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.17-1~deb12u2`
-- `openssl=3.0.17-1~deb12u2`
+- `libssl3:amd64=3.0.17-1~deb12u3`
+- `openssl=3.0.17-1~deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2562,18 +2562,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.dsc' openssl_3.0.17-1~deb12u2.dsc 2675 SHA256:8eff0f04976f65df9a00507f286c18f42644d73124e3844258f037ff47c4f6cf
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.17-1%7edeb12u2.debian.tar.xz' openssl_3.0.17-1~deb12u2.debian.tar.xz 55224 SHA256:e5b4c3e1b9caad2da53572fe2b4c7ce027ec17e778630f342d194608472d52f1
+$ apt-get source -qq --print-uris openssl=3.0.17-1~deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17-1%7edeb12u3.dsc' openssl_3.0.17-1~deb12u3.dsc 2501 SHA256:c154f89cb343b8ecda8a3cc09b8626171282266211b23bc9fef2c6276aab672a
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17.orig.tar.gz' openssl_3.0.17.orig.tar.gz 15344831 SHA256:dfdd77e4ea1b57ff3a6dbde6b0bdc3f31db5ac99e7fdd4eaf9e1fbb6ec2db8ce
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17.orig.tar.gz.asc' openssl_3.0.17.orig.tar.gz.asc 833 SHA256:1f2f2c258e4a05affbc8a888accd4a2331a1e6867db6f0178e8bda85aecff62a
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.17-1%7edeb12u3.debian.tar.xz' openssl_3.0.17-1~deb12u3.debian.tar.xz 55920 SHA256:93bdec098a8c7c357b88b0b6608a66b16dcb9b02523f6764c6ee03a85a4352a2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.17-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.17-1~deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.17-1~deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
