@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ac7fa08ce5f966458993bcf089df049b033a71b36cc4899ee6b6c4d58927b1f`
-- Created: `2025-09-30T18:19:42Z`
+- Image ID: `sha256:64f99e2e86957e8ef180a149a8a5c5e06b835e937f708fbaa09324e49b91ae3e`
+- Created: `2025-10-01T01:03:19Z`
 - Virtual Size: ~ 729.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1433,14 +1433,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.24-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.24-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.05.1~dfsg-1`
+### `dpkg` source package: `ghostscript=10.05.1~dfsg-1+deb13u1`
 
 Binary Packages:
 
-- `ghostscript=10.05.1~dfsg-1`
-- `libgs-common=10.05.1~dfsg-1`
-- `libgs10:amd64=10.05.1~dfsg-1`
-- `libgs10-common=10.05.1~dfsg-1`
+- `ghostscript=10.05.1~dfsg-1+deb13u1`
+- `libgs-common=10.05.1~dfsg-1+deb13u1`
+- `libgs10:amd64=10.05.1~dfsg-1+deb13u1`
+- `libgs10-common=10.05.1~dfsg-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1476,17 +1476,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1.dsc' ghostscript_10.05.1~dfsg-1.dsc 2868 SHA256:95fc65daf1ead2a130e37caf37c2dc62526a9232da9287362e85f393a7d97805
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1.debian.tar.xz' ghostscript_10.05.1~dfsg-1.debian.tar.xz 84916 SHA256:8f5df279186e080bddf1d6a6777956fe856f8561be3c34aac31a96b4405a8d35
+$ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.dsc' ghostscript_10.05.1~dfsg-1+deb13u1.dsc 3034 SHA256:368616b13123e2887c54524a685e40856ea9401be3cb3cd0b9c39ba15fcfa818
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u1.debian.tar.xz 87492 SHA256:6490004f76429ef07f78d13d31ad4b55652414065460bd625d561009a0a6215e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.84.4-3~deb13u1`
 
@@ -3814,13 +3814,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.1-1`
+### `dpkg` source package: `openssl=3.5.1-1+deb13u1`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.1-1`
-- `openssl=3.5.1-1`
-- `openssl-provider-legacy=3.5.1-1`
+- `libssl3t64:amd64=3.5.1-1+deb13u1`
+- `openssl=3.5.1-1+deb13u1`
+- `openssl-provider-legacy=3.5.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -3832,18 +3832,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.1-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1-1.dsc' openssl_3.5.1-1.dsc 2637 SHA256:e5551ab5a93021c6cf3d1351725d1967715df373e5b7e646c5af5368ebd3417d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1.orig.tar.gz' openssl_3.5.1.orig.tar.gz 53158817 SHA256:529043b15cffa5f36077a4d0af83f3de399807181d607441d734196d889b641f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1.orig.tar.gz.asc' openssl_3.5.1.orig.tar.gz.asc 833 SHA256:6d5d22d4b908aabbfc96c5d04a993b6233506d67a14e184c816fee3e15782c80
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.1-1.debian.tar.xz' openssl_3.5.1-1.debian.tar.xz 49812 SHA256:4329f6281915e822a3480957f006cee6e33ec2118fc9144255bf442a53682d0d
+$ apt-get source -qq --print-uris openssl=3.5.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1-1%2bdeb13u1.dsc' openssl_3.5.1-1+deb13u1.dsc 2669 SHA256:b803cf40ee3c1e29c15924b15600ea072923262b3dbc27f94cb57240c8e342d0
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1.orig.tar.gz' openssl_3.5.1.orig.tar.gz 53158817 SHA256:529043b15cffa5f36077a4d0af83f3de399807181d607441d734196d889b641f
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1.orig.tar.gz.asc' openssl_3.5.1.orig.tar.gz.asc 833 SHA256:6d5d22d4b908aabbfc96c5d04a993b6233506d67a14e184c816fee3e15782c80
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.1-1%2bdeb13u1.debian.tar.xz' openssl_3.5.1-1+deb13u1.debian.tar.xz 51876 SHA256:8afc153ffa4a49861fb23bb38439257e7cf4de04b569324606c0bb802018cdb6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
@@ -4518,11 +4518,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.7.0-3`
+### `dpkg` source package: `tiff=4.7.0-3+deb13u1`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.7.0-3`
+- `libtiff6:amd64=4.7.0-3+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -4531,17 +4531,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3.dsc' tiff_4.7.0-3.dsc 2255 SHA256:d5a9ee9829b123b5cbaaae1ff81a1f376bffd5f56a741ded4e051d6a8cd79ab3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3.debian.tar.xz' tiff_4.7.0-3.debian.tar.xz 24088 SHA256:cfcd813984a236bafff7d6b3e458d771970328c6843b1f9334e44275fd646b3e
+$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.dsc' tiff_4.7.0-3+deb13u1.dsc 2287 SHA256:2456052f090792160c4e5db9a63cb9007e7a63fadbc4ae7abaf10188e5f35e5d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.debian.tar.xz' tiff_4.7.0-3+deb13u1.debian.tar.xz 26320 SHA256:50f5a0cbc8d8ccebc08ff65ec836aaaa870bf8f14aef55d5a7aa949f11834733
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.7.0-3/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025b-4+deb13u1`
 
