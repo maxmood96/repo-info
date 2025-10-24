@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1548e4e3a73ac5aa2b0c88d53bdb6f841327024cfa04f9d77524854984edd677`
-- Created: `2025-10-03T14:43:49Z`
+- Image ID: `sha256:ae2c848da7149720e5b7162bd9d20946cb7aeb95d1420777d4e8b21cdca8e648`
+- Created: `2025-10-23T13:31:18Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.111`
   - `TOMCAT_SHA512=2a955d97c6ed7d01fbf0392f3e2920129bcd541b259e894f441e411bac3bbe65576bcb3a314f06d624c9d70040828d26aa8a2c4f39d225d73f6a3db7523aa3ba`
-  - `XWIKI_VERSION=16.10.12`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.12`
-  - `XWIKI_DOWNLOAD_SHA256=2a0a3f6eb12177b87d2b15e6fc8b955d171a36c6b9e6acfb32f8c4b980652846`
+  - `XWIKI_VERSION=16.10.13`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.13`
+  - `XWIKI_DOWNLOAD_SHA256=a96dcb7bf8b37f4a686efad29a4474ddeb018d99d86aa8faf98413a06a64ac9d`
   - `MYSQL_JDBC_VERSION=9.4.0`
   - `MYSQL_JDBC_SHA256=49ed93c8b2bea9cb0929b85a8a28837b191d0f8eac6919fdcef16e36e2cd53b3`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.4.0`
