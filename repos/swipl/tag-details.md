@@ -219,7 +219,12 @@ $ docker pull swipl@sha256:3fab9bf4ffeca842bbf31c14a841dc8f7cbc47d2f7b02a2fade19
 
 ## `swipl:9.3.33`
 
-**does not exist** (yet?)
+```console
+$ docker pull swipl@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `swipl:latest`
 
