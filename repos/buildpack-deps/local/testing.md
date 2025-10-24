@@ -134,19 +134,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.8.dsc' apt_3.1.8.dsc 3091 SHA256:01b9301ad6523c89de6e87bed9c42ca5de9caa2af5d0467bd6f3386d6e1729b2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.8.tar.xz' apt_3.1.8.tar.xz 2441040 SHA256:3623a8d27f2e8756ce200dd5f2cbf8aff4780fd3c907ea0434cbba8eb9da668f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.8/
 
-- https://sources.debian.net/src/apt/3.1.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
@@ -1509,21 +1503,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.86.0-5
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.0-5.dsc' glib2.0_2.86.0-5.dsc 5099 SHA256:f3f1faed004c130e4a0e3d08fab643d47fc72712baf365cdc3b1f06152884f33
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.0.orig-unicode-data.tar.xz' glib2.0_2.86.0.orig-unicode-data.tar.xz 660708 SHA256:c1742461e8c0e9673a3453a3127671169de9cb0138493e5c916f1b989530efcd
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.0.orig.tar.xz' glib2.0_2.86.0.orig.tar.xz 5679348 SHA256:b5739972d737cfb0d6fd1e7f163dfe650e2e03740bb3b8d408e4d1faea580d6d
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.86.0-5.debian.tar.xz' glib2.0_2.86.0-5.debian.tar.xz 367712 SHA256:fad2572392dc88714b550b341d572741a27f37e2651cad93715bc7eb10f7ff37
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.86.0-5/
 
-- https://sources.debian.net/src/glib2.0/2.86.0-5/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.86.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.86.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.41-12`
 
@@ -3114,21 +3100,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.8.1-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1-1.dsc' libsemanage_3.8.1-1.dsc 2992 SHA256:b22bfc4ab2cd47fac46cc9e45d418bb30eb540c3e5c1052d6c669f53e180e4e5
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1.orig.tar.gz' libsemanage_3.8.1.orig.tar.gz 184618 SHA256:7b39127b219cc70bfd935a4af6b0f2ba83d4b35c916f253c7e942c23ab490f07
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1.orig.tar.gz.asc' libsemanage_3.8.1.orig.tar.gz.asc 833 SHA256:5b4856cb5823fba1b247ff1b5355692706da68a4df61a936d1b33b1f9e9b2f3d
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1-1.debian.tar.xz' libsemanage_3.8.1-1.debian.tar.xz 37572 SHA256:6d1e5bd4d06bbd25ced1b75fba394c3e2157bd604cf1cd33fb581793d70bd7b8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.8.1-1/
 
-- https://sources.debian.net/src/libsemanage/3.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.8.1-1`
 
@@ -4466,21 +4444,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.0p1-8
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-8.dsc' openssh_10.0p1-8.dsc 3654 SHA256:81bf219ec7c3cdd13111e0bc6ed1c967e9ca8c2199b5dcb7a3b801e7187486d7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-8.debian.tar.xz' openssh_10.0p1-8.debian.tar.xz 199944 SHA256:f158cdc149735170e8abd84510e2d71502488bbc6a2d652065dd9938cfc150cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.0p1-8/
 
-- https://sources.debian.net/src/openssh/1:10.0p1-8/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.0p1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.0p1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.5.4-1`
 
