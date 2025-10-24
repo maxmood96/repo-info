@@ -2256,67 +2256,69 @@ $ docker pull swift@sha256:19f7e28ec001c5bf459ae34cd2c456727e10dc23c4e89928b0e45
 ## `swift:5.10-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:d67aa17beada723438ca611be4989931a2272e604c04fe9791e6218e3fd8eefe
+$ docker pull swift@sha256:e7350c95faf4fba3f9ee5006c72e9810ab1d8cb07e1c6d6743193823d2134d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:5.10-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:5.10-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:dc5f818c570c6007601396ddd6be298907bc3e79a23d67a6734b6c84a664536d
+$ docker pull swift@sha256:fad089cbb1e1135e8da6741277184174dff647de479a5e171a6a56065287ee43
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (4954320432 bytes)**  
+-	Total Size: **5.0 GB (5043031921 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d9b9cfc271446b385fd129fadcc617994a48fdb902ea7df5034e543954ec1cb`
+-	Image ID: `sha256:cccc6f6549e2e5350cf0bd77f4473c74a6a729e642fe9eed1ff54742299c133e`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:53:03 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:27:12 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:53:04 GMT
+# Fri, 24 Oct 2025 18:27:12 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:53:04 GMT
+# Fri, 24 Oct 2025 18:27:13 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:53:05 GMT
+# Fri, 24 Oct 2025 18:27:13 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:53:05 GMT
+# Fri, 24 Oct 2025 18:27:14 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:53:06 GMT
+# Fri, 24 Oct 2025 18:27:14 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:55 GMT
+# Fri, 24 Oct 2025 18:28:02 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:56 GMT
+# Fri, 24 Oct 2025 18:28:03 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:56 GMT
+# Fri, 24 Oct 2025 18:28:03 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:54:30 GMT
+# Fri, 24 Oct 2025 18:28:37 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:54:31 GMT
+# Fri, 24 Oct 2025 18:28:38 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:54:31 GMT
+# Fri, 24 Oct 2025 18:28:38 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:04:04 GMT
+# Fri, 24 Oct 2025 18:38:10 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:04:06 GMT
+# Fri, 24 Oct 2025 18:38:11 GMT
 ARG SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:04:07 GMT
+# Fri, 24 Oct 2025 18:38:12 GMT
 ARG SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286
-# Tue, 14 Oct 2025 21:06:29 GMT
+# Fri, 24 Oct 2025 18:40:38 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:06:31 GMT
+# Fri, 24 Oct 2025 18:40:40 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -2325,73 +2327,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1199eb6cc875deaa8fe74a466047f8ccdc67840172a0bf3045aca720b7b514f0`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9121f84317f0a58e75b9a0e857440048207ff4ab8c58301bd882b698004e891`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5f3078608a3669870c1719f2c189e8947dd4f03620699068afefc12de028428`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1328 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4748d8bd52287ce23c98e46b324b55ad74507be8478ec028f662eb32f2e145d`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c54258baa5168896c5f73f68c4ba3473bf7fcabf817cddb31c480b88bc2ae27`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:212884b69812092ab4b37613af10dcf28de5399ec35f8fbaa327d82d0be6ad97`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1337 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b77c0990d6b2e12606255f58bb22f2d3e80edbf1fd3ecb4c49e6ae03e98e6ff`  
-		Last Modified: Tue, 14 Oct 2025 22:47:57 GMT  
-		Size: 150.3 MB (150319596 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5e4d2c29f546eb74332205d9503bdef5500c4fc1040153b4b593c0bcb7414f1`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:3abd29526875c2119fce6ef9c6b8a25c7755aaa67fcab2bcc4da0e8988e124c8`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5231762f50386784aa4e3fc1d82eed208b7141cb9a265cb2dacf1f9b50b665b`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:af1ed0692bbb2a43abae8f9f4d93064f100d80afe91eaa32d8990c7c1379bfee`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbf7d72f23ebcf464aa81d4495ddb404809a8ede5a47dd67aee74f5cf5c4fdf`  
-		Last Modified: Tue, 14 Oct 2025 21:09:52 GMT  
-		Size: 47.9 MB (47900534 bytes)  
+	-	`sha256:5999acc47d83ad06f567350c05dd71b08c7a2b6b4abe9288e6857b9629ea7250`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edca748a287a35325c6e159d7531a79aa1f9954107e4c9c13faf6d62419b062d`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1342 bytes)  
+	-	`sha256:cdd2f5391fd5fa04c0417f194e1f0f62e48177b784aff7bf36471dc10f19d45d`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92f94123e61ff5e51b17cc7ce2c034ee60bb2bcee21d37afdb42f98a44efc47b`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1324 bytes)  
+	-	`sha256:d8b3b0b998af92dda1d4312e66ea6581e6c341d3a69627ba457899bc5ed9fa43`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49d46005cb71aa620d11d330804d6c1dd7961683b89410841bc49ab2c8f9bc`  
-		Last Modified: Tue, 14 Oct 2025 22:48:10 GMT  
-		Size: 1.7 GB (1686878190 bytes)  
+	-	`sha256:9dc142bed3f2691fccac99f6cd26ba1f86a396e5dd4bb18aea26f19fbc964dfc`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c324201e0914239079ad34ea07a4e00b6db8182251a214cca7e8e8943289a73`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:b106133a770ee240a5332dc2cfae4662090d6765b5a7b3451f3ea728cbf8be1b`  
+		Last Modified: Fri, 24 Oct 2025 19:21:29 GMT  
+		Size: 150.4 MB (150445641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c93f0cb9b3775a8d5b2365d53c80008e4851f7bd008f19b892f45dddd2b544e5`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:c0dea96cdeb828b5081900cbf8e9332e137aa090b3221732e30a30cfcdd272d2`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94e214b20e986e9b9f36d9bc6fedec8b762f712f3e467041f5eee141cc66b380`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54282dc68cc8d5c8776ac2fe559f22f8664a89a9c0f2eee5190e20ea40d55fd4`  
+		Last Modified: Fri, 24 Oct 2025 18:43:39 GMT  
+		Size: 47.9 MB (47883843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:15aebc04986b4409e190dbb021378b42724e1cd10c2387830c524997f5794a77`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aff0be4a32c167bd5aec8de332b872f2cdd79e21674321f331289e7bd846efda`  
-		Last Modified: Tue, 14 Oct 2025 22:48:53 GMT  
-		Size: 1.6 GB (1580185954 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c11797cfb90a394bdb6512775cc8c5e85439106d074b4c63a8d8200aa291ec`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:6dd2f55b174f5fc5cd5d72245cf4de5567bd0e4ea5671245df9f2b37154c0844`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62c8d00693bdc3b5f1e6f52be43a302d27acdc339afc932f80406dcce5dfef4a`  
+		Last Modified: Fri, 24 Oct 2025 19:47:46 GMT  
+		Size: 1.7 GB (1687319079 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f49d25426b84e02de86c527b78c33a872e4fac1449e353f9adf255d67de10dfa`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee3b221e04a237b05db9dc771f829887c8ad4d3bf20e336046e9971f2b886e62`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c071ae39c09a578a4bcf474c153ee3788e2693b33c3802826b70ce4479a4e681`  
+		Last Modified: Fri, 24 Oct 2025 19:48:14 GMT  
+		Size: 1.6 GB (1580173572 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed0aab6a5beeb0cb2f011b073975867448ce8718f167535263231de655b675fc`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.10.1`
@@ -4536,67 +4542,69 @@ $ docker pull swift@sha256:19f7e28ec001c5bf459ae34cd2c456727e10dc23c4e89928b0e45
 ## `swift:5.10.1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:d67aa17beada723438ca611be4989931a2272e604c04fe9791e6218e3fd8eefe
+$ docker pull swift@sha256:e7350c95faf4fba3f9ee5006c72e9810ab1d8cb07e1c6d6743193823d2134d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:5.10.1-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:5.10.1-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:dc5f818c570c6007601396ddd6be298907bc3e79a23d67a6734b6c84a664536d
+$ docker pull swift@sha256:fad089cbb1e1135e8da6741277184174dff647de479a5e171a6a56065287ee43
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (4954320432 bytes)**  
+-	Total Size: **5.0 GB (5043031921 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d9b9cfc271446b385fd129fadcc617994a48fdb902ea7df5034e543954ec1cb`
+-	Image ID: `sha256:cccc6f6549e2e5350cf0bd77f4473c74a6a729e642fe9eed1ff54742299c133e`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:53:03 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:27:12 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:53:04 GMT
+# Fri, 24 Oct 2025 18:27:12 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:53:04 GMT
+# Fri, 24 Oct 2025 18:27:13 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:53:05 GMT
+# Fri, 24 Oct 2025 18:27:13 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:53:05 GMT
+# Fri, 24 Oct 2025 18:27:14 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:53:06 GMT
+# Fri, 24 Oct 2025 18:27:14 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:55 GMT
+# Fri, 24 Oct 2025 18:28:02 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:56 GMT
+# Fri, 24 Oct 2025 18:28:03 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:56 GMT
+# Fri, 24 Oct 2025 18:28:03 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:54:30 GMT
+# Fri, 24 Oct 2025 18:28:37 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:54:31 GMT
+# Fri, 24 Oct 2025 18:28:38 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:54:31 GMT
+# Fri, 24 Oct 2025 18:28:38 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:04:04 GMT
+# Fri, 24 Oct 2025 18:38:10 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:04:06 GMT
+# Fri, 24 Oct 2025 18:38:11 GMT
 ARG SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:04:07 GMT
+# Fri, 24 Oct 2025 18:38:12 GMT
 ARG SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286
-# Tue, 14 Oct 2025 21:06:29 GMT
+# Fri, 24 Oct 2025 18:40:38 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-5.10.1-release/windows10/swift-5.10.1-RELEASE/swift-5.10.1-RELEASE-windows10.exe SWIFT_SHA256=3027762138ACFA1BBE3050FF6613BBE754332E84C9EFA5C23984646009297286 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:06:31 GMT
+# Fri, 24 Oct 2025 18:40:40 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -4605,73 +4613,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1199eb6cc875deaa8fe74a466047f8ccdc67840172a0bf3045aca720b7b514f0`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9121f84317f0a58e75b9a0e857440048207ff4ab8c58301bd882b698004e891`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5f3078608a3669870c1719f2c189e8947dd4f03620699068afefc12de028428`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1328 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4748d8bd52287ce23c98e46b324b55ad74507be8478ec028f662eb32f2e145d`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c54258baa5168896c5f73f68c4ba3473bf7fcabf817cddb31c480b88bc2ae27`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:212884b69812092ab4b37613af10dcf28de5399ec35f8fbaa327d82d0be6ad97`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1337 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b77c0990d6b2e12606255f58bb22f2d3e80edbf1fd3ecb4c49e6ae03e98e6ff`  
-		Last Modified: Tue, 14 Oct 2025 22:47:57 GMT  
-		Size: 150.3 MB (150319596 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5e4d2c29f546eb74332205d9503bdef5500c4fc1040153b4b593c0bcb7414f1`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:3abd29526875c2119fce6ef9c6b8a25c7755aaa67fcab2bcc4da0e8988e124c8`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5231762f50386784aa4e3fc1d82eed208b7141cb9a265cb2dacf1f9b50b665b`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:af1ed0692bbb2a43abae8f9f4d93064f100d80afe91eaa32d8990c7c1379bfee`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bbf7d72f23ebcf464aa81d4495ddb404809a8ede5a47dd67aee74f5cf5c4fdf`  
-		Last Modified: Tue, 14 Oct 2025 21:09:52 GMT  
-		Size: 47.9 MB (47900534 bytes)  
+	-	`sha256:5999acc47d83ad06f567350c05dd71b08c7a2b6b4abe9288e6857b9629ea7250`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edca748a287a35325c6e159d7531a79aa1f9954107e4c9c13faf6d62419b062d`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1342 bytes)  
+	-	`sha256:cdd2f5391fd5fa04c0417f194e1f0f62e48177b784aff7bf36471dc10f19d45d`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92f94123e61ff5e51b17cc7ce2c034ee60bb2bcee21d37afdb42f98a44efc47b`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1324 bytes)  
+	-	`sha256:d8b3b0b998af92dda1d4312e66ea6581e6c341d3a69627ba457899bc5ed9fa43`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb49d46005cb71aa620d11d330804d6c1dd7961683b89410841bc49ab2c8f9bc`  
-		Last Modified: Tue, 14 Oct 2025 22:48:10 GMT  
-		Size: 1.7 GB (1686878190 bytes)  
+	-	`sha256:9dc142bed3f2691fccac99f6cd26ba1f86a396e5dd4bb18aea26f19fbc964dfc`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c324201e0914239079ad34ea07a4e00b6db8182251a214cca7e8e8943289a73`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:b106133a770ee240a5332dc2cfae4662090d6765b5a7b3451f3ea728cbf8be1b`  
+		Last Modified: Fri, 24 Oct 2025 19:21:29 GMT  
+		Size: 150.4 MB (150445641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c93f0cb9b3775a8d5b2365d53c80008e4851f7bd008f19b892f45dddd2b544e5`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:c0dea96cdeb828b5081900cbf8e9332e137aa090b3221732e30a30cfcdd272d2`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:94e214b20e986e9b9f36d9bc6fedec8b762f712f3e467041f5eee141cc66b380`  
+		Last Modified: Fri, 24 Oct 2025 18:43:35 GMT  
+		Size: 1.3 KB (1314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54282dc68cc8d5c8776ac2fe559f22f8664a89a9c0f2eee5190e20ea40d55fd4`  
+		Last Modified: Fri, 24 Oct 2025 18:43:39 GMT  
+		Size: 47.9 MB (47883843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:15aebc04986b4409e190dbb021378b42724e1cd10c2387830c524997f5794a77`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aff0be4a32c167bd5aec8de332b872f2cdd79e21674321f331289e7bd846efda`  
-		Last Modified: Tue, 14 Oct 2025 22:48:53 GMT  
-		Size: 1.6 GB (1580185954 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c11797cfb90a394bdb6512775cc8c5e85439106d074b4c63a8d8200aa291ec`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
+	-	`sha256:6dd2f55b174f5fc5cd5d72245cf4de5567bd0e4ea5671245df9f2b37154c0844`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
 		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62c8d00693bdc3b5f1e6f52be43a302d27acdc339afc932f80406dcce5dfef4a`  
+		Last Modified: Fri, 24 Oct 2025 19:47:46 GMT  
+		Size: 1.7 GB (1687319079 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f49d25426b84e02de86c527b78c33a872e4fac1449e353f9adf255d67de10dfa`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ee3b221e04a237b05db9dc771f829887c8ad4d3bf20e336046e9971f2b886e62`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c071ae39c09a578a4bcf474c153ee3788e2693b33c3802826b70ce4479a4e681`  
+		Last Modified: Fri, 24 Oct 2025 19:48:14 GMT  
+		Size: 1.6 GB (1580173572 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed0aab6a5beeb0cb2f011b073975867448ce8718f167535263231de655b675fc`  
+		Last Modified: Fri, 24 Oct 2025 18:43:34 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.0`
@@ -6816,67 +6828,69 @@ $ docker pull swift@sha256:83822f11b13859092a53a78b61581ac9780c1ffe3e46808aeafc8
 ## `swift:6.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:f6cd4746243ea20cdee8caf12dd92274c036e8667b570c1e674e0c87c3d01674
+$ docker pull swift@sha256:bab15185236e0f66467c571e373602f65bb5a50b21b24ebef89355115e889a84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:6.0-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:6.0-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:3ccfc14ba68b4f41c7a7ecb3423bbdd5de33632ea8f3ac292175012c2afdf5f6
+$ docker pull swift@sha256:f2086ddc6917bf285c41529d83a58f414be06c99cf1271407e5e10f6ea0c215b
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 GB (5142025943 bytes)**  
+-	Total Size: **5.2 GB (5230716491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:667a1cedb27bae813f7bb69ba5a7403228a7a29150bde121302061080ed03454`
+-	Image ID: `sha256:d38f2957b7704e49b889b9669e846e9730cd03e3cf4c8813ff2b5c5d4aeae20e`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:33 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:59 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:34 GMT
+# Fri, 24 Oct 2025 18:27:00 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:35 GMT
+# Fri, 24 Oct 2025 18:27:00 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:35 GMT
+# Fri, 24 Oct 2025 18:27:01 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:36 GMT
+# Fri, 24 Oct 2025 18:27:02 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:37 GMT
+# Fri, 24 Oct 2025 18:27:03 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:29 GMT
+# Fri, 24 Oct 2025 18:27:49 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:30 GMT
+# Fri, 24 Oct 2025 18:27:50 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:31 GMT
+# Fri, 24 Oct 2025 18:27:50 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:54:08 GMT
+# Fri, 24 Oct 2025 18:28:34 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:54:08 GMT
+# Fri, 24 Oct 2025 18:28:34 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:54:09 GMT
+# Fri, 24 Oct 2025 18:28:35 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:45 GMT
+# Fri, 24 Oct 2025 18:38:58 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:46 GMT
+# Fri, 24 Oct 2025 18:38:59 GMT
 ARG SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:47 GMT
+# Fri, 24 Oct 2025 18:39:00 GMT
 ARG SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3
-# Tue, 14 Oct 2025 21:06:28 GMT
+# Fri, 24 Oct 2025 18:41:43 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:06:30 GMT
+# Fri, 24 Oct 2025 18:41:45 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -6885,73 +6899,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4696eaed65e4327792db2a38dd5a0b50702c4492316e55fda12e26a9c920510b`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1324 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4108fee790e50cc676b3fc628b32573af744f860fb0fefe7254b9564163afe64`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1321 bytes)  
+	-	`sha256:ffadc854c2426766c24e423750f06b517f45895695ef1fa01cdb17f22cec2799`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe6520bc1b6db47ac2841537b3d970cfa28eb8eb253fc3382085575f7402e17`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:2efc3d44c1a502df7682748432ba3073069d245c4519fa1d23acb490d93e60c9`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b778c6594156301e16b3da02e14f7a95ea53e37ee3db724ffae161e3102a282c`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:0c122890ec037b486f68d4095a3f1e944b42beda7c7107696e12150485629309`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92f8799a4d491f0f574f770c6ac9daa02fcd9c7ad08c4fcf1beacb8bcb775ff1`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1321 bytes)  
+	-	`sha256:384beb64a57e08dfb00614e245c7f323c3948fd45736a157ea0fd0c0c4a9ca02`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f4ab32276c8394f1bbefdba2308af033ad304b247edff90ec4ee64f990a7d3c`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25398424da67e2a2c7d33bc082753d5bfa4bb748534fcc9c3258fe40cb985d05`  
-		Last Modified: Tue, 14 Oct 2025 22:48:09 GMT  
-		Size: 150.3 MB (150327314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a93c909136a5b8fb4cb81ae4500ca2dfe21855e0544af0a0c110af53328cf01`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d54411a126a7ae728e9664646d9b162eecc8d088efee700142cbaefec45d74a`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db2b0c6392051d40e319c65126c59566601387d5314b6ed53108e1823ae93bba`  
-		Last Modified: Tue, 14 Oct 2025 21:10:13 GMT  
-		Size: 47.9 MB (47897704 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be5728133e63b5d4f69ba6d6773203a9f2b95ab13e913699ccc2d366a7825c00`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:247a6d89b9a365106e7ea3b14e64fb65787a9519e4f256ecc7e7b48d54a14698`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
+	-	`sha256:57c2c26763799df3d4c5183d686f2aef68091e5fee74a9f3bcf49564565e0d99`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
 		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d929f1e940555c282ec14bf2d989d1983cc1cc56fa566a001230d4fa9881cff5`  
-		Last Modified: Tue, 14 Oct 2025 22:48:43 GMT  
-		Size: 1.7 GB (1686900521 bytes)  
+	-	`sha256:58d187955259cad94742acd06d444cb250af8e3d3f916df1b598b47e53fdbeb8`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a368476cd51c3b67e23aa392e58d99302b53b6b339e034760691ea00b8c94a7`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
+	-	`sha256:6cf4da7d0de91e2549d123d41bcdf8f6c50ebfc16e0a615ce8d280ab7e1c88bc`  
+		Last Modified: Fri, 24 Oct 2025 20:05:26 GMT  
+		Size: 150.5 MB (150454725 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c76648caed32c09495203b3cae890d55377dce3d68d0eb13c08c5b0331145128`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3012127f2d56ee37b062359ad869ae4c2a098652fad6589cc20ddbce943c2bb3`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1308 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e90f019752c572233ddcbd1cc7b4178cd77a24b803bed2cf30a4e224713699b7`  
+		Last Modified: Fri, 24 Oct 2025 18:45:05 GMT  
+		Size: 47.9 MB (47895601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f149d2f1e6f44259f124fd07626f4d4a96f1a4d9d0ff4b0b04c47b34bac38e2`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3b320f5326749c1321a99625ac4253de64d9ec1fb0a686a55d98e0e12d83d161`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
 		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452d6fb58047e5004ebdd70160761796d869345ca16d536e0d4b13405d1f0cca`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d8c5331963cffdaf9342f4f4a4ea881d163847ba28d87717f83f69e4270479af`  
+		Last Modified: Fri, 24 Oct 2025 19:48:21 GMT  
+		Size: 1.7 GB (1687291417 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d1ed9f9d999c90a4d0d4437f8e621968050274e02802719ea8c5ae25fc3a1c0`  
-		Last Modified: Tue, 14 Oct 2025 22:48:53 GMT  
-		Size: 1.8 GB (1767864259 bytes)  
+	-	`sha256:f9b3979b1d7fa6a1a92888e8be26eaf62ec18a32820d3e4d592581436143527e`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:858bb8a10ed9221ecf3264c9bc515e71980113d4b52e6e4aa812c07e55ec7338`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:53477b05f4f6390bf9ce3b824fbca4c7173489f82fd143e04025f7494dc67a8a`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95195584be9b5915612d6fe8b12152ce3244678028531dd74d01a2e210233201`  
+		Last Modified: Fri, 24 Oct 2025 19:48:58 GMT  
+		Size: 1.8 GB (1767864804 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a6047786e249a5b5cb700839f534b4658bf66a41b5fcd57ec3449459ffc682a`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.0.3`
@@ -9096,67 +9114,69 @@ $ docker pull swift@sha256:83822f11b13859092a53a78b61581ac9780c1ffe3e46808aeafc8
 ## `swift:6.0.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:f6cd4746243ea20cdee8caf12dd92274c036e8667b570c1e674e0c87c3d01674
+$ docker pull swift@sha256:bab15185236e0f66467c571e373602f65bb5a50b21b24ebef89355115e889a84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:6.0.3-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:6.0.3-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:3ccfc14ba68b4f41c7a7ecb3423bbdd5de33632ea8f3ac292175012c2afdf5f6
+$ docker pull swift@sha256:f2086ddc6917bf285c41529d83a58f414be06c99cf1271407e5e10f6ea0c215b
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 GB (5142025943 bytes)**  
+-	Total Size: **5.2 GB (5230716491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:667a1cedb27bae813f7bb69ba5a7403228a7a29150bde121302061080ed03454`
+-	Image ID: `sha256:d38f2957b7704e49b889b9669e846e9730cd03e3cf4c8813ff2b5c5d4aeae20e`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:33 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:59 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:34 GMT
+# Fri, 24 Oct 2025 18:27:00 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:35 GMT
+# Fri, 24 Oct 2025 18:27:00 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:35 GMT
+# Fri, 24 Oct 2025 18:27:01 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:36 GMT
+# Fri, 24 Oct 2025 18:27:02 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:37 GMT
+# Fri, 24 Oct 2025 18:27:03 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:29 GMT
+# Fri, 24 Oct 2025 18:27:49 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:30 GMT
+# Fri, 24 Oct 2025 18:27:50 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:31 GMT
+# Fri, 24 Oct 2025 18:27:50 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:54:08 GMT
+# Fri, 24 Oct 2025 18:28:34 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:54:08 GMT
+# Fri, 24 Oct 2025 18:28:34 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:54:09 GMT
+# Fri, 24 Oct 2025 18:28:35 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:45 GMT
+# Fri, 24 Oct 2025 18:38:58 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                         }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:46 GMT
+# Fri, 24 Oct 2025 18:38:59 GMT
 ARG SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:47 GMT
+# Fri, 24 Oct 2025 18:39:00 GMT
 ARG SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3
-# Tue, 14 Oct 2025 21:06:28 GMT
+# Fri, 24 Oct 2025 18:41:43 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.0.3-release/windows10/swift-6.0.3-RELEASE/swift-6.0.3-RELEASE-windows10.exe SWIFT_SHA256=AB205D83A38047882DB80E6A88C7D33B651F3BAC96D4515D7CBA5335F37999D3 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:06:30 GMT
+# Fri, 24 Oct 2025 18:41:45 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -9165,73 +9185,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4696eaed65e4327792db2a38dd5a0b50702c4492316e55fda12e26a9c920510b`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1324 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4108fee790e50cc676b3fc628b32573af744f860fb0fefe7254b9564163afe64`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1321 bytes)  
+	-	`sha256:ffadc854c2426766c24e423750f06b517f45895695ef1fa01cdb17f22cec2799`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe6520bc1b6db47ac2841537b3d970cfa28eb8eb253fc3382085575f7402e17`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:2efc3d44c1a502df7682748432ba3073069d245c4519fa1d23acb490d93e60c9`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b778c6594156301e16b3da02e14f7a95ea53e37ee3db724ffae161e3102a282c`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:0c122890ec037b486f68d4095a3f1e944b42beda7c7107696e12150485629309`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92f8799a4d491f0f574f770c6ac9daa02fcd9c7ad08c4fcf1beacb8bcb775ff1`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1321 bytes)  
+	-	`sha256:384beb64a57e08dfb00614e245c7f323c3948fd45736a157ea0fd0c0c4a9ca02`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f4ab32276c8394f1bbefdba2308af033ad304b247edff90ec4ee64f990a7d3c`  
-		Last Modified: Tue, 14 Oct 2025 21:10:09 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25398424da67e2a2c7d33bc082753d5bfa4bb748534fcc9c3258fe40cb985d05`  
-		Last Modified: Tue, 14 Oct 2025 22:48:09 GMT  
-		Size: 150.3 MB (150327314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a93c909136a5b8fb4cb81ae4500ca2dfe21855e0544af0a0c110af53328cf01`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d54411a126a7ae728e9664646d9b162eecc8d088efee700142cbaefec45d74a`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db2b0c6392051d40e319c65126c59566601387d5314b6ed53108e1823ae93bba`  
-		Last Modified: Tue, 14 Oct 2025 21:10:13 GMT  
-		Size: 47.9 MB (47897704 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be5728133e63b5d4f69ba6d6773203a9f2b95ab13e913699ccc2d366a7825c00`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:247a6d89b9a365106e7ea3b14e64fb65787a9519e4f256ecc7e7b48d54a14698`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
+	-	`sha256:57c2c26763799df3d4c5183d686f2aef68091e5fee74a9f3bcf49564565e0d99`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
 		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d929f1e940555c282ec14bf2d989d1983cc1cc56fa566a001230d4fa9881cff5`  
-		Last Modified: Tue, 14 Oct 2025 22:48:43 GMT  
-		Size: 1.7 GB (1686900521 bytes)  
+	-	`sha256:58d187955259cad94742acd06d444cb250af8e3d3f916df1b598b47e53fdbeb8`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a368476cd51c3b67e23aa392e58d99302b53b6b339e034760691ea00b8c94a7`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
+	-	`sha256:6cf4da7d0de91e2549d123d41bcdf8f6c50ebfc16e0a615ce8d280ab7e1c88bc`  
+		Last Modified: Fri, 24 Oct 2025 20:05:26 GMT  
+		Size: 150.5 MB (150454725 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c76648caed32c09495203b3cae890d55377dce3d68d0eb13c08c5b0331145128`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3012127f2d56ee37b062359ad869ae4c2a098652fad6589cc20ddbce943c2bb3`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1308 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e90f019752c572233ddcbd1cc7b4178cd77a24b803bed2cf30a4e224713699b7`  
+		Last Modified: Fri, 24 Oct 2025 18:45:05 GMT  
+		Size: 47.9 MB (47895601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0f149d2f1e6f44259f124fd07626f4d4a96f1a4d9d0ff4b0b04c47b34bac38e2`  
+		Last Modified: Fri, 24 Oct 2025 18:45:01 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3b320f5326749c1321a99625ac4253de64d9ec1fb0a686a55d98e0e12d83d161`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
 		Size: 1.3 KB (1323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452d6fb58047e5004ebdd70160761796d869345ca16d536e0d4b13405d1f0cca`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:d8c5331963cffdaf9342f4f4a4ea881d163847ba28d87717f83f69e4270479af`  
+		Last Modified: Fri, 24 Oct 2025 19:48:21 GMT  
+		Size: 1.7 GB (1687291417 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d1ed9f9d999c90a4d0d4437f8e621968050274e02802719ea8c5ae25fc3a1c0`  
-		Last Modified: Tue, 14 Oct 2025 22:48:53 GMT  
-		Size: 1.8 GB (1767864259 bytes)  
+	-	`sha256:f9b3979b1d7fa6a1a92888e8be26eaf62ec18a32820d3e4d592581436143527e`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:858bb8a10ed9221ecf3264c9bc515e71980113d4b52e6e4aa812c07e55ec7338`  
-		Last Modified: Tue, 14 Oct 2025 21:10:08 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:53477b05f4f6390bf9ce3b824fbca4c7173489f82fd143e04025f7494dc67a8a`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95195584be9b5915612d6fe8b12152ce3244678028531dd74d01a2e210233201`  
+		Last Modified: Fri, 24 Oct 2025 19:48:58 GMT  
+		Size: 1.8 GB (1767864804 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a6047786e249a5b5cb700839f534b4658bf66a41b5fcd57ec3449459ffc682a`  
+		Last Modified: Fri, 24 Oct 2025 18:45:00 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.1`
@@ -11376,67 +11400,69 @@ $ docker pull swift@sha256:9772152102bd792159ac64d8b6f5419346e769ffcb3b8226a857c
 ## `swift:6.1-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:a82aae4d7847a372c4a5959c4483d4ecd4a0cc0ab55f1bbf895332081f8cafd3
+$ docker pull swift@sha256:4d66942980501a3c627e0c206e954a43719150bb0327dc4882fc73a923b71009
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:6.1-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:6.1-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:d6c0fe15cf9db8d12e9c2486cb757453d75cb4df629297d941760d9026d9e016
+$ docker pull swift@sha256:051333451688641464a69e17104a7ab5d5c23ce17735d5e6f2af28eac70c582f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 GB (5232736567 bytes)**  
+-	Total Size: **5.3 GB (5321615443 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba4c5404b94dbf72987f83a24ab3ba70a0149a96f8f4db08e11388b740721770`
+-	Image ID: `sha256:5eddf6d32de03324f155a8d90a7c1ef984b942bf907c913296c7e7c8cd3129cf`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:30 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:56 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:31 GMT
+# Fri, 24 Oct 2025 18:26:57 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:31 GMT
+# Fri, 24 Oct 2025 18:26:57 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:32 GMT
+# Fri, 24 Oct 2025 18:26:58 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:33 GMT
+# Fri, 24 Oct 2025 18:26:59 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:34 GMT
+# Fri, 24 Oct 2025 18:27:00 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:22 GMT
+# Fri, 24 Oct 2025 18:27:59 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:22 GMT
+# Fri, 24 Oct 2025 18:28:00 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:23 GMT
+# Fri, 24 Oct 2025 18:28:01 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:53:58 GMT
+# Fri, 24 Oct 2025 18:28:41 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:59 GMT
+# Fri, 24 Oct 2025 18:28:42 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:54:00 GMT
+# Fri, 24 Oct 2025 18:28:43 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:26 GMT
+# Fri, 24 Oct 2025 18:39:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:27 GMT
+# Fri, 24 Oct 2025 18:39:56 GMT
 ARG SWIFT=https://download.swift.org/swift-6.1.3-release/windows10/swift-6.1.3-RELEASE/swift-6.1.3-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:28 GMT
+# Fri, 24 Oct 2025 18:39:57 GMT
 ARG SWIFT_SHA256=E298FB5EED208E94E02C365772B31976462439446A9C9CD6499309B8BA50D999
-# Tue, 14 Oct 2025 21:06:22 GMT
+# Fri, 24 Oct 2025 18:42:42 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.1.3-release/windows10/swift-6.1.3-RELEASE/swift-6.1.3-RELEASE-windows10.exe SWIFT_SHA256=E298FB5EED208E94E02C365772B31976462439446A9C9CD6499309B8BA50D999 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:06:22 GMT
+# Fri, 24 Oct 2025 18:42:43 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -11445,73 +11471,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3e25b20f472370c897ff0e67099bcadd10f48539516da95c114d224e95231f`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5df37482ab77ed16a4767cf57f9e5dc95281f6445438f0b95038bd7c01bad4e`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7d081deccb4dd20976ef494732fb86b451445cea31179647bcbf9180fae02b6`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e09086ecdc4c0f0e5e9cf8907397be7263d441f70062216731964b36e9685d2`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
+	-	`sha256:5ac2be9e39f3fa899764da8f5d2599fcd413b8c3e2305f1995dafa3302eee1ed`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7e5a4d8166a87084eb54c7d5b779782b09a71d50f0b8fab60d2e603a1488066`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:840e1f061784823df0a27b042c1d35208dac319317abd484ac737e48f412ce2a`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61dba24335446f26795d78fde050aa576e34cda6c978f75e4e3fb9275667413`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:d5d5c3107a0b6e9f0c3fc0fb1ea7d367f1cac32102f3a3316d02eff15334be0a`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aee2e8b528fff7cda14fbdc5d5592db4d86054115fbed933d8e34905318c6123`  
-		Last Modified: Tue, 14 Oct 2025 22:48:29 GMT  
-		Size: 150.3 MB (150319935 bytes)  
+	-	`sha256:bc9bd0165ee15c9cc7f8324be2dd1d8323877a9d9a5144fc027c256f7b5e865b`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d986198960820f8a4bd7b02529dd64ec696ef218a1c7b89f4f747b943c6ee25`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1336 bytes)  
+	-	`sha256:ae80877306d7d95a250e51cb8583197adb1c54060c855650b710f3164a6f2a49`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27f045e21bbbda965c493db03ebcd0a99ac7c1f72ff1267402f3ac770aca06f2`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:9a99148dad1e0f28e32fed874e9680c6c73a4539ff42b5caf45b89f02a19a7ac`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e5c3a93f60d384a0a8337cadb6855c5e6cd8a434411d32ecd473da21da16584`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 47.9 MB (47896162 bytes)  
+	-	`sha256:734f974de3d5c50e09ccd177b50217f7a1b5071abaaf30833345bf1368221a4c`  
+		Last Modified: Fri, 24 Oct 2025 19:48:20 GMT  
+		Size: 150.5 MB (150465748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f69c8237a520475bf4006bd99823786f5a809d88124a7c594434c4041a407dba`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:ab9cd8c3b48d04d0a9f02bdcdd2b8facea57ae2a79f6226da82bc187e621fd09`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dceb45a80720f0c624b8605c8c4d4ba3d4e1e812cb96f9872e81ba879b809a8e`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
+	-	`sha256:0b9708422a59bd30af2e48e3e8b53de8c3aa4730c040c5460ecf802fe65399a4`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:75a54303a3b98c37de9c4f55f101c4c2481a89d331282222effd09182c0ba795`  
+		Last Modified: Fri, 24 Oct 2025 18:46:23 GMT  
+		Size: 47.9 MB (47895159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0fe2fbb35f8d6110905ce820f0d2ef5c4b28f7c79e84ec99ff9b6ca18ed84f7d`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6b5f045bdd7f497f8dc2203dc6bbae9d33d949c1fcc9dac8e57344e2f2fc40d`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6c5179061b914251024a1cd6da2de1dae0708ab8d2dd3870a78eadf46acd7e6`  
-		Last Modified: Tue, 14 Oct 2025 22:48:59 GMT  
-		Size: 1.7 GB (1686835902 bytes)  
+	-	`sha256:29c0cea5b04f89eb38a52eb9142d32b4db8849498e4323765ac1d14ee79313a1`  
+		Last Modified: Fri, 24 Oct 2025 19:50:59 GMT  
+		Size: 1.7 GB (1687395191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ac5c4fac99f217bd23178535ec9090146a4fa2a2dfe658bc0d24d315c19f17f`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:a5ea4259b63163e44940f437f5e35dad9af3dfcd08165fda3f2883429761e3c3`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abe845ff22c160ac4f4e18e2d6c3584d0a7ef5af9cc108e938172dc1136a8d3f`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:4925d0195cb9b46a019ac65bae08b09f95ad7401f4c2cf35dda25709f036ed33`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7eea0860c40d525d42ded5f199fbacf6694e56be2598878f9543617d88d220fe`  
-		Last Modified: Tue, 14 Oct 2025 22:49:01 GMT  
-		Size: 1.9 GB (1858648535 bytes)  
+	-	`sha256:e603754a2ada1b89e3b5a8c49a308d597f6bdb72d1e0e99e833b9c14c7232a3a`  
+		Last Modified: Fri, 24 Oct 2025 19:48:21 GMT  
+		Size: 1.9 GB (1858649440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe0409062a0c578b15ce473f2164a2d9417b8087733a7f6383cf783a3f336fd`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:f937eb2f02949b9528c803440e0f057ddf4aba51f947aee1f4aa6b06210bd26f`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.1.3`
@@ -13656,67 +13686,69 @@ $ docker pull swift@sha256:9772152102bd792159ac64d8b6f5419346e769ffcb3b8226a857c
 ## `swift:6.1.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:a82aae4d7847a372c4a5959c4483d4ecd4a0cc0ab55f1bbf895332081f8cafd3
+$ docker pull swift@sha256:4d66942980501a3c627e0c206e954a43719150bb0327dc4882fc73a923b71009
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:6.1.3-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:6.1.3-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:d6c0fe15cf9db8d12e9c2486cb757453d75cb4df629297d941760d9026d9e016
+$ docker pull swift@sha256:051333451688641464a69e17104a7ab5d5c23ce17735d5e6f2af28eac70c582f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 GB (5232736567 bytes)**  
+-	Total Size: **5.3 GB (5321615443 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba4c5404b94dbf72987f83a24ab3ba70a0149a96f8f4db08e11388b740721770`
+-	Image ID: `sha256:5eddf6d32de03324f155a8d90a7c1ef984b942bf907c913296c7e7c8cd3129cf`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:30 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:56 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:31 GMT
+# Fri, 24 Oct 2025 18:26:57 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:31 GMT
+# Fri, 24 Oct 2025 18:26:57 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:32 GMT
+# Fri, 24 Oct 2025 18:26:58 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:33 GMT
+# Fri, 24 Oct 2025 18:26:59 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:34 GMT
+# Fri, 24 Oct 2025 18:27:00 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:22 GMT
+# Fri, 24 Oct 2025 18:27:59 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:22 GMT
+# Fri, 24 Oct 2025 18:28:00 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:23 GMT
+# Fri, 24 Oct 2025 18:28:01 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:53:58 GMT
+# Fri, 24 Oct 2025 18:28:41 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:59 GMT
+# Fri, 24 Oct 2025 18:28:42 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:54:00 GMT
+# Fri, 24 Oct 2025 18:28:43 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:26 GMT
+# Fri, 24 Oct 2025 18:39:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:27 GMT
+# Fri, 24 Oct 2025 18:39:56 GMT
 ARG SWIFT=https://download.swift.org/swift-6.1.3-release/windows10/swift-6.1.3-RELEASE/swift-6.1.3-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:28 GMT
+# Fri, 24 Oct 2025 18:39:57 GMT
 ARG SWIFT_SHA256=E298FB5EED208E94E02C365772B31976462439446A9C9CD6499309B8BA50D999
-# Tue, 14 Oct 2025 21:06:22 GMT
+# Fri, 24 Oct 2025 18:42:42 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.1.3-release/windows10/swift-6.1.3-RELEASE/swift-6.1.3-RELEASE-windows10.exe SWIFT_SHA256=E298FB5EED208E94E02C365772B31976462439446A9C9CD6499309B8BA50D999 VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:06:22 GMT
+# Fri, 24 Oct 2025 18:42:43 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -13725,73 +13757,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3e25b20f472370c897ff0e67099bcadd10f48539516da95c114d224e95231f`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5df37482ab77ed16a4767cf57f9e5dc95281f6445438f0b95038bd7c01bad4e`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1294 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7d081deccb4dd20976ef494732fb86b451445cea31179647bcbf9180fae02b6`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e09086ecdc4c0f0e5e9cf8907397be7263d441f70062216731964b36e9685d2`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
+	-	`sha256:5ac2be9e39f3fa899764da8f5d2599fcd413b8c3e2305f1995dafa3302eee1ed`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7e5a4d8166a87084eb54c7d5b779782b09a71d50f0b8fab60d2e603a1488066`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:840e1f061784823df0a27b042c1d35208dac319317abd484ac737e48f412ce2a`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61dba24335446f26795d78fde050aa576e34cda6c978f75e4e3fb9275667413`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:d5d5c3107a0b6e9f0c3fc0fb1ea7d367f1cac32102f3a3316d02eff15334be0a`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aee2e8b528fff7cda14fbdc5d5592db4d86054115fbed933d8e34905318c6123`  
-		Last Modified: Tue, 14 Oct 2025 22:48:29 GMT  
-		Size: 150.3 MB (150319935 bytes)  
+	-	`sha256:bc9bd0165ee15c9cc7f8324be2dd1d8323877a9d9a5144fc027c256f7b5e865b`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d986198960820f8a4bd7b02529dd64ec696ef218a1c7b89f4f747b943c6ee25`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1336 bytes)  
+	-	`sha256:ae80877306d7d95a250e51cb8583197adb1c54060c855650b710f3164a6f2a49`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27f045e21bbbda965c493db03ebcd0a99ac7c1f72ff1267402f3ac770aca06f2`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:9a99148dad1e0f28e32fed874e9680c6c73a4539ff42b5caf45b89f02a19a7ac`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e5c3a93f60d384a0a8337cadb6855c5e6cd8a434411d32ecd473da21da16584`  
-		Last Modified: Tue, 14 Oct 2025 21:09:44 GMT  
-		Size: 47.9 MB (47896162 bytes)  
+	-	`sha256:734f974de3d5c50e09ccd177b50217f7a1b5071abaaf30833345bf1368221a4c`  
+		Last Modified: Fri, 24 Oct 2025 19:48:20 GMT  
+		Size: 150.5 MB (150465748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f69c8237a520475bf4006bd99823786f5a809d88124a7c594434c4041a407dba`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:ab9cd8c3b48d04d0a9f02bdcdd2b8facea57ae2a79f6226da82bc187e621fd09`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dceb45a80720f0c624b8605c8c4d4ba3d4e1e812cb96f9872e81ba879b809a8e`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
+	-	`sha256:0b9708422a59bd30af2e48e3e8b53de8c3aa4730c040c5460ecf802fe65399a4`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1326 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:75a54303a3b98c37de9c4f55f101c4c2481a89d331282222effd09182c0ba795`  
+		Last Modified: Fri, 24 Oct 2025 18:46:23 GMT  
+		Size: 47.9 MB (47895159 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0fe2fbb35f8d6110905ce820f0d2ef5c4b28f7c79e84ec99ff9b6ca18ed84f7d`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1289 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6b5f045bdd7f497f8dc2203dc6bbae9d33d949c1fcc9dac8e57344e2f2fc40d`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
 		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6c5179061b914251024a1cd6da2de1dae0708ab8d2dd3870a78eadf46acd7e6`  
-		Last Modified: Tue, 14 Oct 2025 22:48:59 GMT  
-		Size: 1.7 GB (1686835902 bytes)  
+	-	`sha256:29c0cea5b04f89eb38a52eb9142d32b4db8849498e4323765ac1d14ee79313a1`  
+		Last Modified: Fri, 24 Oct 2025 19:50:59 GMT  
+		Size: 1.7 GB (1687395191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ac5c4fac99f217bd23178535ec9090146a4fa2a2dfe658bc0d24d315c19f17f`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:a5ea4259b63163e44940f437f5e35dad9af3dfcd08165fda3f2883429761e3c3`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abe845ff22c160ac4f4e18e2d6c3584d0a7ef5af9cc108e938172dc1136a8d3f`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1302 bytes)  
+	-	`sha256:4925d0195cb9b46a019ac65bae08b09f95ad7401f4c2cf35dda25709f036ed33`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7eea0860c40d525d42ded5f199fbacf6694e56be2598878f9543617d88d220fe`  
-		Last Modified: Tue, 14 Oct 2025 22:49:01 GMT  
-		Size: 1.9 GB (1858648535 bytes)  
+	-	`sha256:e603754a2ada1b89e3b5a8c49a308d597f6bdb72d1e0e99e833b9c14c7232a3a`  
+		Last Modified: Fri, 24 Oct 2025 19:48:21 GMT  
+		Size: 1.9 GB (1858649440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe0409062a0c578b15ce473f2164a2d9417b8087733a7f6383cf783a3f336fd`  
-		Last Modified: Tue, 14 Oct 2025 21:09:38 GMT  
-		Size: 1.3 KB (1319 bytes)  
+	-	`sha256:f937eb2f02949b9528c803440e0f057ddf4aba51f947aee1f4aa6b06210bd26f`  
+		Last Modified: Fri, 24 Oct 2025 18:46:16 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.2`
@@ -16101,67 +16137,69 @@ $ docker pull swift@sha256:078da00a8c6f4ce797631ba6e823afd5280d08e092a0950e959e2
 ## `swift:6.2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:aa83490a57b26bae017e5790e9a50a3914c5ce991a37072ec0b2439d8eab33cc
+$ docker pull swift@sha256:7bae8a24df8fad972f558ec4881573df1b23ed9dfd3930f62424e2503b15f507
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:6.2-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:6.2-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:b0a8aa0744a61e66d597d4c28d0e715abfb2a99ad7b502c34e0faf7d1d5d2f0a
+$ docker pull swift@sha256:4d1c32f8d0cf6bce834245e93f6e4dd3cab859dc87cdbeddc9bc768e08c661af
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5876482192 bytes)**  
+-	Total Size: **6.0 GB (5965300644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b176485745c74b97e191df4f90400b16a19f5ead5458b059b05ff11f8c6b5dee`
+-	Image ID: `sha256:5db543cd74eca9611503a9f3ef07e3d85da1e17341c8a4165cf3531f9840677f`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:26 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:37 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:26 GMT
+# Fri, 24 Oct 2025 18:26:38 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:27 GMT
+# Fri, 24 Oct 2025 18:26:38 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:27 GMT
+# Fri, 24 Oct 2025 18:26:39 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:28 GMT
+# Fri, 24 Oct 2025 18:26:39 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:29 GMT
+# Fri, 24 Oct 2025 18:26:40 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:16 GMT
+# Fri, 24 Oct 2025 18:27:44 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:17 GMT
+# Fri, 24 Oct 2025 18:27:44 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:18 GMT
+# Fri, 24 Oct 2025 18:27:45 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:53:53 GMT
+# Fri, 24 Oct 2025 18:28:23 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:53 GMT
+# Fri, 24 Oct 2025 18:28:23 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:53:54 GMT
+# Fri, 24 Oct 2025 18:28:24 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:32 GMT
+# Fri, 24 Oct 2025 18:38:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:33 GMT
+# Fri, 24 Oct 2025 18:38:56 GMT
 ARG SWIFT=https://download.swift.org/swift-6.2-release/windows10/swift-6.2-RELEASE/swift-6.2-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:33 GMT
+# Fri, 24 Oct 2025 18:38:57 GMT
 ARG SWIFT_SHA256=80FBBC17D4F9EDEC74A83ABBEFEB9FF418FFC2158CD347111583C45E47F9789B
-# Tue, 14 Oct 2025 21:07:15 GMT
+# Fri, 24 Oct 2025 18:42:41 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.2-release/windows10/swift-6.2-RELEASE/swift-6.2-RELEASE-windows10.exe SWIFT_SHA256=80FBBC17D4F9EDEC74A83ABBEFEB9FF418FFC2158CD347111583C45E47F9789B VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:07:15 GMT
+# Fri, 24 Oct 2025 18:42:43 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -16170,73 +16208,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c512f6b55983610901b86450ae83bdef3ed270198876993d34fd529600470d8c`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a93e875fec7fe88613220f7c25867c959779500e1f15322e2210aad378d656b6`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:17d3b407a40004f4378d99f8daba2a40e46f2cf13a13af19ddf2047e45aba1aa`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98eada989903941c90860396e5a4be62d3e47cbe8a250665c3dbb651bf6aba3d`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:aea6099684cb76437299ae3637290bc406c7d867826aaca6e28b61e4adda9905`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bc1e119a96fbfb81a32940289b1cc6714cdcd8e1882f2b387f15d3bd24c52de`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
+	-	`sha256:a2c21520f0f7e85537427d8cd8c39df3a49489d9dcfbd36e3cb20c7e9932dda1`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1328 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:607c1723d53a815b2a91e381351cdc563735e8cf2f523bc0af3191c4d63fd8e7`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7007db907cf98f8797f37231b319ee8e467d9cc852ff2c94f2c462dc564af291`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bead70dcd30d5ccdaf82aa2a052590e2f093aef705f0c07e23984c8e6accf072`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:137b9de45ca3f6222445ac0a406f563f2c8d0184332f4cba8eb34bf599bfe7e9`  
+		Last Modified: Fri, 24 Oct 2025 19:48:45 GMT  
+		Size: 150.5 MB (150467046 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95d1539bd82d63a4bae26155a3a988b51f8b135822637f61cf1ca2c70096df1f`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fcce0d718dca94afca3f06c239645ffa1228f1669afc2ff91ff3bddae771c4a7`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
 		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7f2f7edd1010e9a39e63cdf0fa3519541ccc49d3ea72c0f777772efa4a3008`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:69aa57b871fd21827f48f73450ff983d8600879b711b61af9481389893ddf341`  
+		Last Modified: Fri, 24 Oct 2025 18:46:42 GMT  
+		Size: 47.9 MB (47894577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c67424f84e74402e299fade93a4a963aa2a7aad0bad727240954a8f5ee05d5bc`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:da0220479b2ee9ffff85e7fdbde928c0b782c5e789b01c5e49d776dbfa74acc4`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:538b409ca5b43edbfbdd1a50db782fd6dfd5cfa4afcc443708d98d9d1d6b90b8`  
-		Last Modified: Tue, 14 Oct 2025 22:13:55 GMT  
-		Size: 150.3 MB (150325128 bytes)  
+	-	`sha256:7073c3855cea6c5a25fc1e9e8c87d42c79ae8e11ce51fef02f3e1a841b3502cf`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d8b33bce83a368963dee9f5f21618d1a8e287fbbeb3f1f583e1ca3bc0f6b206`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:765ca2deac360b40e29da3769117fbc927161b760f08a1dd44093acc6ba2b2f2`  
+		Last Modified: Fri, 24 Oct 2025 19:50:39 GMT  
+		Size: 1.7 GB (1687377251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ee9c311a892ed2cb73d4c40a24865d1a758dc0231cd70b8cfdb9e6ab072a6a0`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:d27c18eb65a0d25c0976111787350d2aa103f03f2077cc60ea3a92c5d3470155`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66a75e6185b7a138b53fead4c9142c618e0d06ff7cd3188b26ef203afa1748f9`  
-		Last Modified: Tue, 14 Oct 2025 21:11:24 GMT  
-		Size: 47.9 MB (47896549 bytes)  
+	-	`sha256:677683114ff791344ad4212781f79e7ae540e1158b906f4948fb05bae7722496`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:839d9329156d0100a5c5a716ba55979b1511dc5bbbaff51505cf1e8a7ec66ea7`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:01195224bb320aaea797e49abf9db9eb6cc9603bca91c50282b584607f55b726`  
+		Last Modified: Fri, 24 Oct 2025 19:50:41 GMT  
+		Size: 2.5 GB (2502351825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d8062fe1000e6abe951c0c453eea60a34da8d0228be0ba2ec93745e1e8c8bb`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0ccfffd499285edca5463ee485fbbc4be90be2284b66dbfcc46791923a364f7`  
-		Last Modified: Tue, 14 Oct 2025 22:49:12 GMT  
-		Size: 1.7 GB (1686874279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eabe23654310a5f4ba8f50e2d58dd00e65f0ac9890ccd3d2fc0b4e0fbfd39b13`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1318 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4dfdaf6a0da91e01716ee32475adb19963fda56ad967e90ed55e99c1a59219a`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1329 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:217c71daaf2fd86b116973c257d4d1ff37f7f1395a3ed7ca90392fe5148968ac`  
-		Last Modified: Tue, 14 Oct 2025 22:49:38 GMT  
-		Size: 2.5 GB (2502349994 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18f35cc1c9a69a32ae9452666d95f39a7debe3e4959273bff1065db110db4ad6`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:2d6e61899fbccf12d82489a8640cf4ece6e75d68da895a46b94bccc5d6e32397`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:6.2.0`
@@ -18546,67 +18588,69 @@ $ docker pull swift@sha256:078da00a8c6f4ce797631ba6e823afd5280d08e092a0950e959e2
 ## `swift:6.2.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:aa83490a57b26bae017e5790e9a50a3914c5ce991a37072ec0b2439d8eab33cc
+$ docker pull swift@sha256:7bae8a24df8fad972f558ec4881573df1b23ed9dfd3930f62424e2503b15f507
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:6.2.0-windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:6.2.0-windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:b0a8aa0744a61e66d597d4c28d0e715abfb2a99ad7b502c34e0faf7d1d5d2f0a
+$ docker pull swift@sha256:4d1c32f8d0cf6bce834245e93f6e4dd3cab859dc87cdbeddc9bc768e08c661af
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5876482192 bytes)**  
+-	Total Size: **6.0 GB (5965300644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b176485745c74b97e191df4f90400b16a19f5ead5458b059b05ff11f8c6b5dee`
+-	Image ID: `sha256:5db543cd74eca9611503a9f3ef07e3d85da1e17341c8a4165cf3531f9840677f`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:26 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:37 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:26 GMT
+# Fri, 24 Oct 2025 18:26:38 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:27 GMT
+# Fri, 24 Oct 2025 18:26:38 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:27 GMT
+# Fri, 24 Oct 2025 18:26:39 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:28 GMT
+# Fri, 24 Oct 2025 18:26:39 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:29 GMT
+# Fri, 24 Oct 2025 18:26:40 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:16 GMT
+# Fri, 24 Oct 2025 18:27:44 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:17 GMT
+# Fri, 24 Oct 2025 18:27:44 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:18 GMT
+# Fri, 24 Oct 2025 18:27:45 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:53:53 GMT
+# Fri, 24 Oct 2025 18:28:23 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:53 GMT
+# Fri, 24 Oct 2025 18:28:23 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:53:54 GMT
+# Fri, 24 Oct 2025 18:28:24 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:32 GMT
+# Fri, 24 Oct 2025 18:38:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:33 GMT
+# Fri, 24 Oct 2025 18:38:56 GMT
 ARG SWIFT=https://download.swift.org/swift-6.2-release/windows10/swift-6.2-RELEASE/swift-6.2-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:33 GMT
+# Fri, 24 Oct 2025 18:38:57 GMT
 ARG SWIFT_SHA256=80FBBC17D4F9EDEC74A83ABBEFEB9FF418FFC2158CD347111583C45E47F9789B
-# Tue, 14 Oct 2025 21:07:15 GMT
+# Fri, 24 Oct 2025 18:42:41 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.2-release/windows10/swift-6.2-RELEASE/swift-6.2-RELEASE-windows10.exe SWIFT_SHA256=80FBBC17D4F9EDEC74A83ABBEFEB9FF418FFC2158CD347111583C45E47F9789B VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:07:15 GMT
+# Fri, 24 Oct 2025 18:42:43 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -18615,73 +18659,77 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c512f6b55983610901b86450ae83bdef3ed270198876993d34fd529600470d8c`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a93e875fec7fe88613220f7c25867c959779500e1f15322e2210aad378d656b6`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:17d3b407a40004f4378d99f8daba2a40e46f2cf13a13af19ddf2047e45aba1aa`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98eada989903941c90860396e5a4be62d3e47cbe8a250665c3dbb651bf6aba3d`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:aea6099684cb76437299ae3637290bc406c7d867826aaca6e28b61e4adda9905`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bc1e119a96fbfb81a32940289b1cc6714cdcd8e1882f2b387f15d3bd24c52de`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
+	-	`sha256:a2c21520f0f7e85537427d8cd8c39df3a49489d9dcfbd36e3cb20c7e9932dda1`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1328 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:607c1723d53a815b2a91e381351cdc563735e8cf2f523bc0af3191c4d63fd8e7`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7007db907cf98f8797f37231b319ee8e467d9cc852ff2c94f2c462dc564af291`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bead70dcd30d5ccdaf82aa2a052590e2f093aef705f0c07e23984c8e6accf072`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:137b9de45ca3f6222445ac0a406f563f2c8d0184332f4cba8eb34bf599bfe7e9`  
+		Last Modified: Fri, 24 Oct 2025 19:48:45 GMT  
+		Size: 150.5 MB (150467046 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95d1539bd82d63a4bae26155a3a988b51f8b135822637f61cf1ca2c70096df1f`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fcce0d718dca94afca3f06c239645ffa1228f1669afc2ff91ff3bddae771c4a7`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
 		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7f2f7edd1010e9a39e63cdf0fa3519541ccc49d3ea72c0f777772efa4a3008`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:69aa57b871fd21827f48f73450ff983d8600879b711b61af9481389893ddf341`  
+		Last Modified: Fri, 24 Oct 2025 18:46:42 GMT  
+		Size: 47.9 MB (47894577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c67424f84e74402e299fade93a4a963aa2a7aad0bad727240954a8f5ee05d5bc`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:da0220479b2ee9ffff85e7fdbde928c0b782c5e789b01c5e49d776dbfa74acc4`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:538b409ca5b43edbfbdd1a50db782fd6dfd5cfa4afcc443708d98d9d1d6b90b8`  
-		Last Modified: Tue, 14 Oct 2025 22:13:55 GMT  
-		Size: 150.3 MB (150325128 bytes)  
+	-	`sha256:7073c3855cea6c5a25fc1e9e8c87d42c79ae8e11ce51fef02f3e1a841b3502cf`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d8b33bce83a368963dee9f5f21618d1a8e287fbbeb3f1f583e1ca3bc0f6b206`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:765ca2deac360b40e29da3769117fbc927161b760f08a1dd44093acc6ba2b2f2`  
+		Last Modified: Fri, 24 Oct 2025 19:50:39 GMT  
+		Size: 1.7 GB (1687377251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ee9c311a892ed2cb73d4c40a24865d1a758dc0231cd70b8cfdb9e6ab072a6a0`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:d27c18eb65a0d25c0976111787350d2aa103f03f2077cc60ea3a92c5d3470155`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66a75e6185b7a138b53fead4c9142c618e0d06ff7cd3188b26ef203afa1748f9`  
-		Last Modified: Tue, 14 Oct 2025 21:11:24 GMT  
-		Size: 47.9 MB (47896549 bytes)  
+	-	`sha256:677683114ff791344ad4212781f79e7ae540e1158b906f4948fb05bae7722496`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:839d9329156d0100a5c5a716ba55979b1511dc5bbbaff51505cf1e8a7ec66ea7`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:01195224bb320aaea797e49abf9db9eb6cc9603bca91c50282b584607f55b726`  
+		Last Modified: Fri, 24 Oct 2025 19:50:41 GMT  
+		Size: 2.5 GB (2502351825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d8062fe1000e6abe951c0c453eea60a34da8d0228be0ba2ec93745e1e8c8bb`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0ccfffd499285edca5463ee485fbbc4be90be2284b66dbfcc46791923a364f7`  
-		Last Modified: Tue, 14 Oct 2025 22:49:12 GMT  
-		Size: 1.7 GB (1686874279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eabe23654310a5f4ba8f50e2d58dd00e65f0ac9890ccd3d2fc0b4e0fbfd39b13`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1318 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4dfdaf6a0da91e01716ee32475adb19963fda56ad967e90ed55e99c1a59219a`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1329 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:217c71daaf2fd86b116973c257d4d1ff37f7f1395a3ed7ca90392fe5148968ac`  
-		Last Modified: Tue, 14 Oct 2025 22:49:38 GMT  
-		Size: 2.5 GB (2502349994 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18f35cc1c9a69a32ae9452666d95f39a7debe3e4959273bff1065db110db4ad6`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:2d6e61899fbccf12d82489a8640cf4ece6e75d68da895a46b94bccc5d6e32397`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:amazonlinux2`
@@ -20991,67 +21039,69 @@ $ docker pull swift@sha256:078da00a8c6f4ce797631ba6e823afd5280d08e092a0950e959e2
 ## `swift:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull swift@sha256:aa83490a57b26bae017e5790e9a50a3914c5ce991a37072ec0b2439d8eab33cc
+$ docker pull swift@sha256:7bae8a24df8fad972f558ec4881573df1b23ed9dfd3930f62424e2503b15f507
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.4294; amd64
+	-	windows version 10.0.20348.4297; amd64
 
-### `swift:windowsservercore-ltsc2022` - windows version 10.0.20348.4294; amd64
+### `swift:windowsservercore-ltsc2022` - windows version 10.0.20348.4297; amd64
 
 ```console
-$ docker pull swift@sha256:b0a8aa0744a61e66d597d4c28d0e715abfb2a99ad7b502c34e0faf7d1d5d2f0a
+$ docker pull swift@sha256:4d1c32f8d0cf6bce834245e93f6e4dd3cab859dc87cdbeddc9bc768e08c661af
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5876482192 bytes)**  
+-	Total Size: **6.0 GB (5965300644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b176485745c74b97e191df4f90400b16a19f5ead5458b059b05ff11f8c6b5dee`
+-	Image ID: `sha256:5db543cd74eca9611503a9f3ef07e3d85da1e17341c8a4165cf3531f9840677f`
 -	Default Command: `["powershell.exe","-nologo","-ExecutionPolicy","Bypass"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Tue, 14 Oct 2025 20:52:26 GMT
+# Wed, 22 Oct 2025 21:59:56 GMT
+RUN Install update 10.0.20348.4297
+# Fri, 24 Oct 2025 18:26:37 GMT
 RUN cmd /S /C #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 14 Oct 2025 20:52:26 GMT
+# Fri, 24 Oct 2025 18:26:38 GMT
 RUN cmd /S /C #(nop)  LABEL description=Docker Container for the Swift programming language
-# Tue, 14 Oct 2025 20:52:27 GMT
+# Fri, 24 Oct 2025 18:26:38 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 14 Oct 2025 20:52:27 GMT
+# Fri, 24 Oct 2025 18:26:39 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Tue, 14 Oct 2025 20:52:28 GMT
+# Fri, 24 Oct 2025 18:26:39 GMT
 ARG GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
-# Tue, 14 Oct 2025 20:52:29 GMT
+# Fri, 24 Oct 2025 18:26:40 GMT
 ARG GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
-# Tue, 14 Oct 2025 20:53:16 GMT
+# Fri, 24 Oct 2025 18:27:44 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:GIT});                   Invoke-WebRequest -Uri ${env:GIT} -OutFile git.exe;                             Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:GIT_SHA256});     $Hash = Get-FileHash git.exe -Algorithm sha256;                                 if ($Hash.Hash -eq ${env:GIT_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing git ... ';                                    $Process =                                                                          Start-Process git.exe -Wait -PassThru -NoNewWindow -ArgumentList @(               '/SP-',                                                                         '/VERYSILENT',                                                                  '/SUPPRESSMSGBOXES',                                                            '/NOCANCEL',                                                                    '/NORESTART',                                                                   '/CLOSEAPPLICATIONS',                                                           '/FORCECLOSEAPPLICATIONS',                                                      '/NOICONS',                                                                     '/COMPONENTS="gitlfs"',                                                         '/EditorOption=VIM',                                                            '/PathOption=Cmd',                                                              '/SSHOption=OpenSSH',                                                           '/CURLOption=WinSSL',                                                           '/UseCredentialManager=Enabled',                                                '/EnableSymlinks=Enabled',                                                      '/EnableFSMonitor=Enabled'                                                    );                                                                          if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force git.exe;                                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:17 GMT
+# Fri, 24 Oct 2025 18:27:44 GMT
 ARG PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
-# Tue, 14 Oct 2025 20:53:18 GMT
+# Fri, 24 Oct 2025 18:27:45 GMT
 ARG PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
-# Tue, 14 Oct 2025 20:53:53 GMT
+# Fri, 24 Oct 2025 18:28:23 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:PY39});                  Invoke-WebRequest -Uri ${env:PY39} -OutFile python-3.9.13-amd64.exe;            Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:PY39_SHA256});    $Hash = Get-FileHash python-3.9.13-amd64.exe -Algorithm sha256;                 if ($Hash.Hash -eq ${env:PY39_SHA256}) {                                          Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Python ... ';                                 $Process =                                                                          Start-Process python-3.9.13-amd64.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            'AssociateFiles=0',                                                             'Include_doc=0',                                                                'Include_debug=0',                                                              'Include_lib=1',                                                                'Include_tcltk=0',                                                              'Include_test=0',                                                               'InstallAllUsers=1',                                                            'InstallLauncherAllUsers=0',                                                    'PrependPath=1',                                                                '/quiet'                                                                      );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force python-3.9.13-amd64.exe;                                     Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 20:53:53 GMT
+# Fri, 24 Oct 2025 18:28:23 GMT
 ARG VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe
-# Tue, 14 Oct 2025 20:53:54 GMT
+# Fri, 24 Oct 2025 18:28:24 GMT
 ARG VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
-# Tue, 14 Oct 2025 21:03:32 GMT
+# Fri, 24 Oct 2025 18:38:55 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:VSB});                   Invoke-WebRequest -Uri ${env:VSB} -OutFile vs_buildtools.exe;                   Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:VSB_SHA256});     $Hash = Get-FileHash vs_buildtools.exe -Algorithm sha256;                       if ($Hash.Hash -eq ${env:VSB_SHA256}) {                                           Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Visual Studio Build Tools ... ';              $Process =                                                                          Start-Process vs_buildtools.exe -Wait -PassThru -NoNewWindow -ArgumentList @(           '--quiet',                                                                      '--wait',                                                                       '--norestart',                                                                  '--nocache',                                                                    '--add', 'Microsoft.VisualStudio.Component.Windows11SDK.22000',                 '--add', 'Microsoft.VisualStudio.Component.VC.Tools.x86.x64'                  );                                                                          if ($Process.ExitCode -eq 0 -or $Process.ExitCode -eq 3010) {                     Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force vs_buildtools.exe;                                           Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:03:33 GMT
+# Fri, 24 Oct 2025 18:38:56 GMT
 ARG SWIFT=https://download.swift.org/swift-6.2-release/windows10/swift-6.2-RELEASE/swift-6.2-RELEASE-windows10.exe
-# Tue, 14 Oct 2025 21:03:33 GMT
+# Fri, 24 Oct 2025 18:38:57 GMT
 ARG SWIFT_SHA256=80FBBC17D4F9EDEC74A83ABBEFEB9FF418FFC2158CD347111583C45E47F9789B
-# Tue, 14 Oct 2025 21:07:15 GMT
+# Fri, 24 Oct 2025 18:42:41 GMT
 # ARGS: GIT=https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe GIT_SHA256=BD9B41641A258FD16D99BEECEC66132160331D685DFB4C714CEA2BCC78D63BDB PY39=https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe PY39_SHA256=FB3D0466F3754752CA7FD839A09FFE53375FF2C981279FD4BC23A005458F7F5D SWIFT=https://download.swift.org/swift-6.2-release/windows10/swift-6.2-RELEASE/swift-6.2-RELEASE-windows10.exe SWIFT_SHA256=80FBBC17D4F9EDEC74A83ABBEFEB9FF418FFC2158CD347111583C45E47F9789B VSB=https://download.visualstudio.microsoft.com/download/pr/5536698c-711c-4834-876f-2817d31a2ef2/c792bdb0fd46155de19955269cac85d52c4c63c23db2cf43d96b9390146f9390/vs_BuildTools.exe VSB_SHA256=C792BDB0FD46155DE19955269CAC85D52C4C63C23DB2CF43D96B9390146F9390
 RUN Write-Host -NoNewLine ('Downloading {0} ... ' -f ${env:SWIFT});                 Invoke-WebRequest -Uri ${env:SWIFT} -OutFile installer.exe;                     Write-Host '✓';                                                                 Write-Host -NoNewLine ('Verifying SHA256 ({0}) ... ' -f ${env:SWIFT_SHA256});     $Hash = Get-FileHash installer.exe -Algorithm sha256;                           if ($Hash.Hash -eq ${env:SWIFT_SHA256}) {                                         Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Hash.Hash);                                           exit 1;                                                                       }                                                                               Write-Host -NoNewLine 'Installing Swift ... ';                                  $Process =                                                                          Start-Process installer.exe -Wait -PassThru -NoNewWindow -ArgumentList @(            '/quiet',                                                                       '/norestart'                                                                  );                                                                         if ($Process.ExitCode -eq 0) {                                                    Write-Host '✓';                                                               } else {                                                                          Write-Host ('✘ ({0})' -f $Process.ExitCode);                                    exit 1;                                                                       }                                                                               Remove-Item -Force installer.exe;                                               Remove-Item -ErrorAction SilentlyContinue -Force -Recurse ${env:TEMP}\*
-# Tue, 14 Oct 2025 21:07:15 GMT
+# Fri, 24 Oct 2025 18:42:43 GMT
 CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 ```
 
@@ -21060,71 +21110,75 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Last Modified: Tue, 14 Oct 2025 19:03:59 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c512f6b55983610901b86450ae83bdef3ed270198876993d34fd529600470d8c`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:130d5bf0bd040ed2a9354c6bb5dc8ff89b34e452980249bf817f0b7cb33a21ce`  
+		Last Modified: Fri, 24 Oct 2025 02:37:38 GMT  
+		Size: 88.2 MB (88173861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a93e875fec7fe88613220f7c25867c959779500e1f15322e2210aad378d656b6`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:17d3b407a40004f4378d99f8daba2a40e46f2cf13a13af19ddf2047e45aba1aa`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98eada989903941c90860396e5a4be62d3e47cbe8a250665c3dbb651bf6aba3d`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:aea6099684cb76437299ae3637290bc406c7d867826aaca6e28b61e4adda9905`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bc1e119a96fbfb81a32940289b1cc6714cdcd8e1882f2b387f15d3bd24c52de`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
+	-	`sha256:a2c21520f0f7e85537427d8cd8c39df3a49489d9dcfbd36e3cb20c7e9932dda1`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1328 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:607c1723d53a815b2a91e381351cdc563735e8cf2f523bc0af3191c4d63fd8e7`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7007db907cf98f8797f37231b319ee8e467d9cc852ff2c94f2c462dc564af291`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bead70dcd30d5ccdaf82aa2a052590e2f093aef705f0c07e23984c8e6accf072`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:137b9de45ca3f6222445ac0a406f563f2c8d0184332f4cba8eb34bf599bfe7e9`  
+		Last Modified: Fri, 24 Oct 2025 19:48:45 GMT  
+		Size: 150.5 MB (150467046 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95d1539bd82d63a4bae26155a3a988b51f8b135822637f61cf1ca2c70096df1f`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1288 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fcce0d718dca94afca3f06c239645ffa1228f1669afc2ff91ff3bddae771c4a7`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
 		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7f2f7edd1010e9a39e63cdf0fa3519541ccc49d3ea72c0f777772efa4a3008`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:69aa57b871fd21827f48f73450ff983d8600879b711b61af9481389893ddf341`  
+		Last Modified: Fri, 24 Oct 2025 18:46:42 GMT  
+		Size: 47.9 MB (47894577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c67424f84e74402e299fade93a4a963aa2a7aad0bad727240954a8f5ee05d5bc`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:da0220479b2ee9ffff85e7fdbde928c0b782c5e789b01c5e49d776dbfa74acc4`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:538b409ca5b43edbfbdd1a50db782fd6dfd5cfa4afcc443708d98d9d1d6b90b8`  
-		Last Modified: Tue, 14 Oct 2025 22:13:55 GMT  
-		Size: 150.3 MB (150325128 bytes)  
+	-	`sha256:7073c3855cea6c5a25fc1e9e8c87d42c79ae8e11ce51fef02f3e1a841b3502cf`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d8b33bce83a368963dee9f5f21618d1a8e287fbbeb3f1f583e1ca3bc0f6b206`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:765ca2deac360b40e29da3769117fbc927161b760f08a1dd44093acc6ba2b2f2`  
+		Last Modified: Fri, 24 Oct 2025 19:50:39 GMT  
+		Size: 1.7 GB (1687377251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ee9c311a892ed2cb73d4c40a24865d1a758dc0231cd70b8cfdb9e6ab072a6a0`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:d27c18eb65a0d25c0976111787350d2aa103f03f2077cc60ea3a92c5d3470155`  
+		Last Modified: Fri, 24 Oct 2025 18:46:38 GMT  
+		Size: 1.3 KB (1314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66a75e6185b7a138b53fead4c9142c618e0d06ff7cd3188b26ef203afa1748f9`  
-		Last Modified: Tue, 14 Oct 2025 21:11:24 GMT  
-		Size: 47.9 MB (47896549 bytes)  
+	-	`sha256:677683114ff791344ad4212781f79e7ae540e1158b906f4948fb05bae7722496`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:839d9329156d0100a5c5a716ba55979b1511dc5bbbaff51505cf1e8a7ec66ea7`  
-		Last Modified: Tue, 14 Oct 2025 21:11:11 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:01195224bb320aaea797e49abf9db9eb6cc9603bca91c50282b584607f55b726`  
+		Last Modified: Fri, 24 Oct 2025 19:50:41 GMT  
+		Size: 2.5 GB (2502351825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d8062fe1000e6abe951c0c453eea60a34da8d0228be0ba2ec93745e1e8c8bb`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0ccfffd499285edca5463ee485fbbc4be90be2284b66dbfcc46791923a364f7`  
-		Last Modified: Tue, 14 Oct 2025 22:49:12 GMT  
-		Size: 1.7 GB (1686874279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eabe23654310a5f4ba8f50e2d58dd00e65f0ac9890ccd3d2fc0b4e0fbfd39b13`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1318 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4dfdaf6a0da91e01716ee32475adb19963fda56ad967e90ed55e99c1a59219a`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1329 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:217c71daaf2fd86b116973c257d4d1ff37f7f1395a3ed7ca90392fe5148968ac`  
-		Last Modified: Tue, 14 Oct 2025 22:49:38 GMT  
-		Size: 2.5 GB (2502349994 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18f35cc1c9a69a32ae9452666d95f39a7debe3e4959273bff1065db110db4ad6`  
-		Last Modified: Tue, 14 Oct 2025 21:11:12 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:2d6e61899fbccf12d82489a8640cf4ece6e75d68da895a46b94bccc5d6e32397`  
+		Last Modified: Fri, 24 Oct 2025 18:46:37 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
