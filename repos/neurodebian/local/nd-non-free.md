@@ -82,19 +82,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.8.dsc' apt_3.1.8.dsc 3091 SHA256:01b9301ad6523c89de6e87bed9c42ca5de9caa2af5d0467bd6f3386d6e1729b2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.8.tar.xz' apt_3.1.8.tar.xz 2441040 SHA256:3623a8d27f2e8756ce200dd5f2cbf8aff4780fd3c907ea0434cbba8eb9da668f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.8/
 
-- https://sources.debian.net/src/apt/3.1.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -770,21 +764,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.8-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8-3.dsc' gnupg2_2.4.8-3.dsc 4903 SHA256:a6c9ec6559556ead73be89afd8c6e910dda0ce0b53a213b3bc280bf21793507c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2' gnupg2_2.4.8.orig.tar.bz2 8017685 SHA256:b58c80d79b04d3243ff49c1c3fc6b5f83138eb3784689563bcdd060595318616
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2.asc' gnupg2_2.4.8.orig.tar.bz2.asc 228 SHA256:92982ed45a1ca3af60e04addd6df14569158509364b70694a53f48b6bfed025b
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.8-3.debian.tar.xz' gnupg2_2.4.8-3.debian.tar.xz 116896 SHA256:65622e5e8932a9485dfaae17cf0ec08ffd7e263b970fcac356e561443cb7ec23
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.4.8-3/
 
-- https://sources.debian.net/src/gnupg2/2.4.8-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.4.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.4.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.10-2`
 

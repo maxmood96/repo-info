@@ -82,19 +82,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.8.dsc' apt_3.1.8.dsc 3091 SHA256:01b9301ad6523c89de6e87bed9c42ca5de9caa2af5d0467bd6f3386d6e1729b2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.8.tar.xz' apt_3.1.8.tar.xz 2441040 SHA256:3623a8d27f2e8756ce200dd5f2cbf8aff4780fd3c907ea0434cbba8eb9da668f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.8/
 
-- https://sources.debian.net/src/apt/3.1.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1362,21 +1356,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.8.1-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1-1.dsc' libsemanage_3.8.1-1.dsc 2992 SHA256:b22bfc4ab2cd47fac46cc9e45d418bb30eb540c3e5c1052d6c669f53e180e4e5
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1.orig.tar.gz' libsemanage_3.8.1.orig.tar.gz 184618 SHA256:7b39127b219cc70bfd935a4af6b0f2ba83d4b35c916f253c7e942c23ab490f07
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1.orig.tar.gz.asc' libsemanage_3.8.1.orig.tar.gz.asc 833 SHA256:5b4856cb5823fba1b247ff1b5355692706da68a4df61a936d1b33b1f9e9b2f3d
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.1-1.debian.tar.xz' libsemanage_3.8.1-1.debian.tar.xz 37572 SHA256:6d1e5bd4d06bbd25ced1b75fba394c3e2157bd604cf1cd33fb581793d70bd7b8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.8.1-1/
 
-- https://sources.debian.net/src/libsemanage/3.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.8.1-1`
 
