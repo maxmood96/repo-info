@@ -1369,20 +1369,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.2+dfsg-1+deb11u3
-'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u3.dsc' gdk-pixbuf_2.42.2+dfsg-1+deb11u3.dsc 3186 SHA256:23aba98221041b96d48ee8216e7f4156f248862a4fe895757192386f95f9dfe5
-'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.2+dfsg.orig.tar.xz 6433920 SHA256:f781dca5af4c6536befb1faaa3b82efb9750c52a350842bc82b2aa08ce129ee9
-'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u3.debian.tar.xz' gdk-pixbuf_2.42.2+dfsg-1+deb11u3.debian.tar.xz 37904 SHA256:47ef6b29764befadcda54f2407d2be922ff2d62d90ce65760b5c3190890ff1c6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.30.2-1+deb11u5`
 
