@@ -1,10 +1,10 @@
-# `jetty:12.1.1-amazoncorretto`
+# `jetty:12.1.3-amazoncorretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:214014dbf9a801a0e23a5f7cbe2a81338ae6219a5ab81e38a99e24714eaef020`
-- Created: `2025-09-09T00:35:55Z`
-- Virtual Size: ~ 560.37 Mb  
+- Image ID: `sha256:5020d08bedbcc7366f3b4e3ef777b3196f707a045de7e0af21eeaa78d3e61d03`
+- Created: `2025-10-22T00:53:34Z`
+- Virtual Size: ~ 561.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto`
-  - `JETTY_VERSION=12.1.1`
+  - `JETTY_VERSION=12.1.3`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.1/jetty-home-12.1.1.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.3/jetty-home-12.1.3.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 
 ## `rpm` (`.rpm`-based packages)
@@ -419,7 +419,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/dabf0a30874b63e106a688716e6b49ced2b69a67b842413064e7d9c57964d5b5/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-21-amazon-corretto-devel-21.0.8.9-1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-devel-21.0.9.10-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 

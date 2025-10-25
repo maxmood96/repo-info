@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e00524336fd5d5fdec9aae6367e92ffa3b68332a027661ed6dd937eb773b39ab`
+- Image ID: `sha256:e0d4e94bc5fccb00590a95906448be13203b9aa682a51f43f4ceba307dcd138b`
 - Created: `2025-08-15T04:54:08Z`
-- Virtual Size: ~ 492.34 Mb  
+- Virtual Size: ~ 493.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -419,7 +419,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/dabf0a30874b63e106a688716e6b49ced2b69a67b842413064e7d9c57964d5b5/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-devel-17.0.16.8-1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-devel-17.0.17.10-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
