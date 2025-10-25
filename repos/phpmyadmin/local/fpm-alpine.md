@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9dba1ca8ef1556ff15e373a5a645df486d8286889e877a7848d0c7d2d371ed5b`
+- Image ID: `sha256:50c5ad23af2da0ecd4b86e5801593b73e3298a3c766850619b8f0de6ff2ad5a7`
 - Created: `2025-10-08T20:49:29Z`
-- Virtual Size: ~ 164.32 Mb  
+- Virtual Size: ~ 164.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.26`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.26.tar.xz.asc`
-  - `PHP_SHA256=2f522eefa02c400c94610d07f25c4fd4c771f95e4a1f55102332ccb40663cbd2`
+  - `PHP_VERSION=8.3.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.27.tar.xz.asc`
+  - `PHP_SHA256=c15a09a9d199437144ecfef7d712ec4ca5c6820cf34acc24cc8489dd0cee41ba`
   - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
   - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
@@ -1136,16 +1136,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.8-r0 description:
+libxml2-2.13.9-r0 description:
 XML parsing library, version 2
 
-libxml2-2.13.8-r0 webpage:
+libxml2-2.13.9-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.8-r0 installed size:
+libxml2-2.13.9-r0 installed size:
 1050 KiB
 
-libxml2-2.13.8-r0 license:
+libxml2-2.13.9-r0 license:
 MIT
 
 ```
