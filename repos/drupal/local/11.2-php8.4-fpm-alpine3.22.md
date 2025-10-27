@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87cce944a532c2181607f0c8a95a19d723b94aa432bafb81c64672d6c5d96add`
+- Image ID: `sha256:76e29710c99c86c3940244d543000b60c939a0764568438175b0d0231f667ec3`
 - Created: `2025-10-02T09:46:10Z`
-- Virtual Size: ~ 185.31 Mb  
+- Virtual Size: ~ 185.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc`
-  - `PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df`
+  - `PHP_VERSION=8.4.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.14.tar.xz.asc`
+  - `PHP_SHA256=bac90ee7cf738e814c89b6b27d4d2c4b70e50942a420837e1a22f5fd5f9867a3`
   - `DRUPAL_VERSION=11.2.5`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -573,16 +573,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.8-r0 description:
+libxml2-2.13.9-r0 description:
 XML parsing library, version 2
 
-libxml2-2.13.8-r0 webpage:
+libxml2-2.13.9-r0 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.8-r0 installed size:
+libxml2-2.13.9-r0 installed size:
 1050 KiB
 
-libxml2-2.13.8-r0 license:
+libxml2-2.13.9-r0 license:
 MIT
 
 ```
