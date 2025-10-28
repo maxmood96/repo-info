@@ -1680,21 +1680,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0t64/copyright`, `/usr/sha
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.10-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10-2.dsc' gnutls28_3.8.10-2.dsc 3246 SHA256:d027d055b02186edec5ee60027a94f99c320f3f34bf52186d8109ed5e7d77591
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10.orig.tar.xz' gnutls28_3.8.10.orig.tar.xz 6909856 SHA256:db7fab7cce791e7727ebbef2334301c821d79a550ec55c9ef096b610b03eb6b7
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10.orig.tar.xz.asc' gnutls28_3.8.10.orig.tar.xz.asc 833 SHA256:3d553a902201531938c761f86a093d673b292157c7e742d19cc6c9ccc9eebf6b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.10-2.debian.tar.xz' gnutls28_3.8.10-2.debian.tar.xz 79048 SHA256:edf9aa9eccfa55e416b22a4894fe9e2ca2bdf758203a7771e53a057fab01387c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.10-2/
 
-- https://sources.debian.net/src/gnutls28/3.8.10-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-11`
 
@@ -3684,20 +3676,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.43-0.2
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43-0.2.dsc' libxslt_1.1.43-0.2.dsc 2183 SHA256:a0e623a43c5202c41c76547b6759ab7f1114d7c58a0f1c49b8525798264f5be0
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43.orig.tar.xz' libxslt_1.1.43.orig.tar.xz 1518364 SHA256:5a3d6b383ca5afc235b171118e90f5ff6aa27e9fea3303065231a6d403f0183a
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.43-0.2.debian.tar.xz' libxslt_1.1.43-0.2.debian.tar.xz 22676 SHA256:fc6b72449ef3cfa50e887629b44e0071fcf03578d927d2bc2df6288e2d6aeac9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.43-0.2/
 
-- https://sources.debian.net/src/libxslt/1.1.43-0.2/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.43-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.43-0.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.3`
 
@@ -4004,21 +3989,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.1-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1-2.dsc' mercurial_7.1-2.dsc 2861 SHA256:b1df204d1fc29e3468649556749c4766b5d33dd114066080f497aa4aefe260b1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1.orig.tar.gz' mercurial_7.1.orig.tar.gz 9026915 SHA256:e8d920c83c38c475d8e973be60760a49dc35c3795d64bd6876e56adba622e5cb
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1.orig.tar.gz.asc' mercurial_7.1.orig.tar.gz.asc 659 SHA256:52c366188b3fdafec164ded927aecccbf5b0c5261654a8a7d79adb24d75d13c0
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1-2.debian.tar.xz' mercurial_7.1-2.debian.tar.xz 54872 SHA256:b8242b698b6a5786ce86b784e4ff3f4c8e5e492c6ba7f914ef55a787b0c54a58
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/7.1-2/
 
-- https://sources.debian.net/src/mercurial/7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/7.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-2`
 
