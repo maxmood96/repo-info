@@ -1,9 +1,9 @@
-# `matomo:5.5.0-apache`
+# `matomo:5.5.1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4997dfaba8e1def8589e0062663f95bdd85d334727fb3e42f1c2e33feebecdb0`
-- Created: `2025-10-08T08:44:13Z`
+- Image ID: `sha256:ea927d21b6cca5a784e67481e8cf7543e9b768433e838d2dc54d97e6065b1d3c`
+- Created: `2025-10-21T08:44:12Z`
 - Virtual Size: ~ 590.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,12 +19,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc`
-  - `PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df`
+  - `PHP_VERSION=8.4.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.14.tar.xz.asc`
+  - `PHP_SHA256=bac90ee7cf738e814c89b6b27d4d2c4b70e50942a420837e1a22f5fd5f9867a3`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.5.0`
+  - `MATOMO_VERSION=5.5.1`
 
 ## `dpkg` (`.deb`-based packages)
 
