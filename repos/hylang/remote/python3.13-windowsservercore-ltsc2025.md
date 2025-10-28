@@ -1,7 +1,7 @@
 ## `hylang:python3.13-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull hylang@sha256:4332d23ba83aa1f371c2b6d554951ac7f9c48eaae0c4926cc64c0a747d1fb8a4
+$ docker pull hylang@sha256:07b23818d2548fabfa45b11111dd458595494357ef52f600b9a86518a271a0f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull hylang@sha256:4332d23ba83aa1f371c2b6d554951ac7f9c48eaae0c4926cc64c
 ### `hylang:python3.13-windowsservercore-ltsc2025` - windows version 10.0.26100.6905; amd64
 
 ```console
-$ docker pull hylang@sha256:3d513c56be42be90a704f8402fb530f4b3c544f7fddd3fe3e4bec5ec039dcd60
+$ docker pull hylang@sha256:f432d6fb9e30691655e3d9d0557763c79ea6b1c34f7f2d8f0ce93db790ef22f2
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 GB (3287619012 bytes)**  
+-	Total Size: **3.3 GB (3287858071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58847c4d15a93470dd8401cb4fb5f3a13b7e2c1a36482744e2343a2597ad72c5`
+-	Image ID: `sha256:8915bf32ff243bcc1680df3fa674e6c220c2ea34a45874bed571aa8d93842268`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -39,13 +39,13 @@ ENV PYTHON_SHA256=200ddff856bbff949d2cc1be42e8807c07538abd6b6966d5113a094cf628c5
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f ($env:PYTHON_VERSION -replace '[a-z]+[0-9]*$', ''), $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_SHA256); 	if ((Get-FileHash python.exe -Algorithm sha256).Hash -ne $env:PYTHON_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	$exitCode = (Start-Process python.exe -Wait -NoNewWindow -PassThru 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=1', 			'Include_test=0' 		) 	).ExitCode; 	if ($exitCode -ne 0) { 		Write-Host ('Running python installer failed with exit code: {0}' -f $exitCode); 		Get-ChildItem $env:TEMP | Sort-Object -Descending -Property LastWriteTime | Select-Object -First 1 | Get-Content; 		exit $exitCode; 	} 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 	Remove-Item $env:TEMP/Python*.log -Force; 		$env:PYTHONDONTWRITEBYTECODE = '1'; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
 # Fri, 24 Oct 2025 18:27:00 GMT
 CMD ["python"]
-# Fri, 24 Oct 2025 19:23:13 GMT
+# Tue, 28 Oct 2025 19:15:55 GMT
 ENV HY_VERSION=1.1.0
-# Fri, 24 Oct 2025 19:23:14 GMT
+# Tue, 28 Oct 2025 19:15:56 GMT
 ENV HYRULE_VERSION=1.0.0
-# Fri, 24 Oct 2025 19:25:14 GMT
+# Tue, 28 Oct 2025 19:18:08 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Fri, 24 Oct 2025 19:25:14 GMT
+# Tue, 28 Oct 2025 19:18:08 GMT
 CMD ["hy"]
 ```
 
@@ -82,19 +82,19 @@ CMD ["hy"]
 		Last Modified: Fri, 24 Oct 2025 18:27:17 GMT  
 		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99a3a306dd873db4fd1b3665c19df02bb3ec36986cc7e98d8b90b7eb408e505b`  
-		Last Modified: Fri, 24 Oct 2025 19:25:27 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:b3ced983f29c82db0dfa5b56ef2a55ab36948f8eb0158bd03b6cacfef933f8a5`  
+		Last Modified: Tue, 28 Oct 2025 19:18:22 GMT  
+		Size: 1.3 KB (1321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a486ac1e35ff48681943a9376d17d728f300dbef82510094422b8df2be71992`  
-		Last Modified: Fri, 24 Oct 2025 19:25:27 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:b9054825cdf1cb2813421958db3e0bb1225da74e63c24e1c93b4380e58bc58a6`  
+		Last Modified: Tue, 28 Oct 2025 19:18:22 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bba895f77534ce0c5ebf9512cf11faa25cabae908eb8f8b25d533cf83c4ccf0a`  
-		Last Modified: Fri, 24 Oct 2025 19:25:27 GMT  
-		Size: 8.5 MB (8547914 bytes)  
+	-	`sha256:ed616ee53e60fd90893bb85a6490b3146755eedf1fb43022170448cbf18edfa6`  
+		Last Modified: Tue, 28 Oct 2025 19:18:24 GMT  
+		Size: 8.8 MB (8786951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:631f6727c194cbd482c2ea7f51f29789309319f8055d7d6512ce786f17d2d331`  
-		Last Modified: Fri, 24 Oct 2025 19:25:27 GMT  
-		Size: 1.3 KB (1299 bytes)  
+	-	`sha256:e300922b7f2ed2f7c86708568c06d5350946cca7a00ede0dfbd1472b9d374602`  
+		Last Modified: Tue, 28 Oct 2025 19:18:23 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
