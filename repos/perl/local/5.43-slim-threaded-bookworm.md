@@ -1,13 +1,13 @@
-# `perl:5.43.2-slim-threaded-bookworm`
+# `perl:5.43.4-slim-threaded-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7bb573d50f824ba338fcd24172f382b1f50a8aebf359334836cb642489355c01`
-- Created: `2025-08-24T06:40:17Z`
-- Virtual Size: ~ 182.67 Mb  
+- Image ID: `sha256:d58119f947456469756ba2554f1dee761a06df4b683ab1f1dbb3d7ae6aedbd2f`
+- Created: `2025-10-24T07:13:41Z`
+- Virtual Size: ~ 183.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.43.2","-de0"]`
+- Command: `["perl5.43.4","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
