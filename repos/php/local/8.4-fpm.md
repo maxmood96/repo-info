@@ -1,9 +1,9 @@
-# `php:8.4.13-fpm-trixie`
+# `php:8.4.14-fpm-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81907c64e447160ece0de319c62ab29b50f1c4b6b9db6ee1ed6c78b9b868fb4c`
-- Created: `2025-09-25T18:46:43Z`
+- Image ID: `sha256:a8bdc55d2e2c00b913ea8395590f38c40081bd46e2520405072c0493e88172d7`
+- Created: `2025-10-23T18:46:40Z`
 - Virtual Size: ~ 497.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.13.tar.xz.asc`
-  - `PHP_SHA256=b4f27adf30bcf262eacf93c78250dd811980f20f3b90d79a3dc11248681842df`
+  - `PHP_VERSION=8.4.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.14.tar.xz.asc`
+  - `PHP_SHA256=bac90ee7cf738e814c89b6b27d4d2c4b70e50942a420837e1a22f5fd5f9867a3`
 
 ## `dpkg` (`.deb`-based packages)
 
