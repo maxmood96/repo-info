@@ -1,9 +1,9 @@
-# `node:22-bullseye`
+# `node:24-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:32fc30c4b9ac89aed52ad299a5edd2b00885fc734a049c2773955697074219ff`
-- Created: `2025-10-21T04:06:16Z`
+- Image ID: `sha256:628b2cfe8735e27b8aef809193dddcefe137390060353cfd18964f6c98b0709d`
+- Created: `2025-10-28T21:48:03.849213461Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.21.0`
+  - `NODE_VERSION=24.11.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
