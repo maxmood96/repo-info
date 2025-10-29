@@ -1,7 +1,7 @@
 ## `nginx:mainline-alpine`
 
 ```console
-$ docker pull nginx@sha256:61e01287e546aac28a3f56839c136b31f590273f3b41187a36f46f6a03bbfe22
+$ docker pull nginx@sha256:756e5cea3fcf99e6a63f97ab9196032fe8403070d2724388541ef917c62e13ba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,55 +26,55 @@ $ docker pull nginx@sha256:61e01287e546aac28a3f56839c136b31f590273f3b41187a36f46
 ### `nginx:mainline-alpine` - linux; amd64
 
 ```console
-$ docker pull nginx@sha256:b03ccb7431a2e3172f5cbae96d82bd792935f33ecb88fbf2940559e475745c4e
+$ docker pull nginx@sha256:667473807103639a0aca5b49534a216d2b64f0fb868aaa801f023da0cdd781c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.6 MB (22573196 bytes)**  
+-	Total Size: **22.6 MB (22608023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e7abcdd20216bbeedf1369529564ffd60f830ed3540c477938ca580b645dff5`
+-	Image ID: `sha256:d4918ca78576a537caa7b0c043051c8efc1796de33fee8724ee0fff4a1cabed9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-x86_64.tar.gz / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NGINX_VERSION=1.29.2
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
+ENV NGINX_VERSION=1.29.3
+# Tue, 28 Oct 2025 21:49:51 GMT
 ENV PKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 ENV DYNPKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
+RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
+# Tue, 28 Oct 2025 21:49:51 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:51 GMT
 CMD ["nginx" "-g" "daemon off;"]
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NJS_VERSION=0.9.3
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:11:24 GMT
+ENV NJS_VERSION=0.9.4
+# Tue, 28 Oct 2025 22:11:24 GMT
 ENV NJS_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
+# Tue, 28 Oct 2025 22:11:24 GMT
+RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
 ```
 
 -	Layers:
@@ -82,111 +82,111 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
 		Size: 3.8 MB (3802452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f80aba050eadb732c9571d549167ce0f71adce202ac619ae8786fe6c9eec3374`  
-		Last Modified: Wed, 08 Oct 2025 22:40:04 GMT  
-		Size: 1.8 MB (1806628 bytes)  
+	-	`sha256:8f6a6833e95d43ac524f1f9c5e7c1316c1f3b8e7ae5ba3db4e54b0c5b910e80a`  
+		Last Modified: Tue, 28 Oct 2025 21:50:04 GMT  
+		Size: 1.8 MB (1835502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:621a51978ed7f4a65a4324aaf124c21292fd986ed107e731f860572233073798`  
-		Last Modified: Wed, 08 Oct 2025 22:40:04 GMT  
-		Size: 627.0 B  
+	-	`sha256:194fa24e147df0010e146240d3b4bd25d04180c523dc717e4645b269991483e3`  
+		Last Modified: Tue, 28 Oct 2025 21:50:03 GMT  
+		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03e63548f2091b6073fb9744492242182874f6b2d2554c9f3a94455203a033f0`  
-		Last Modified: Wed, 08 Oct 2025 22:40:03 GMT  
-		Size: 954.0 B  
+	-	`sha256:3eaba6cd10a374d9ed629c26d76a5258e20ddfa09fcef511c98aa620dcf3fae4`  
+		Last Modified: Tue, 28 Oct 2025 21:50:04 GMT  
+		Size: 955.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83ce83cd996042dd16a6124be94e6046da71a9c6b59a6cc48704f6cffca76d7d`  
-		Last Modified: Wed, 08 Oct 2025 22:40:04 GMT  
+	-	`sha256:df413d6ebdc834bccf63178455d406c4d25e2c2d38d2c1ab79ee5494b18e5624`  
+		Last Modified: Tue, 28 Oct 2025 21:50:04 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2d0ea5d3690e523d1c4fc7f288e0b98b6c405d5880fa11d1637483fd5afc74c`  
-		Last Modified: Wed, 08 Oct 2025 22:40:04 GMT  
-		Size: 1.2 KB (1209 bytes)  
+	-	`sha256:d9a55dab5954588333096b28b351999099bea5eb3c68c10e99f175b12c97198d`  
+		Last Modified: Tue, 28 Oct 2025 21:50:04 GMT  
+		Size: 1.2 KB (1208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fb80c2f28bc872ae84429312ddfbc823aca17b7ce107a0f24074294cd3beac5`  
-		Last Modified: Wed, 08 Oct 2025 22:40:04 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:ff8a36d5502a57c3fc8eeff48e578ab433a03b1dd528992ba0d966ddf853309a`  
+		Last Modified: Tue, 28 Oct 2025 21:50:05 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76c9bcaa4163e6fb844375a66c86911591b942e01511e28eec442e187f667f4e`  
-		Last Modified: Wed, 08 Oct 2025 23:34:05 GMT  
-		Size: 17.0 MB (16959526 bytes)  
+	-	`sha256:bdabb0d442710d667f4fd871b5fd215cc2a430a95b192bc508bf945b8e60999b`  
+		Last Modified: Tue, 28 Oct 2025 22:11:38 GMT  
+		Size: 17.0 MB (16965479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-alpine` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:7b2037de684f22d3123054ee2eeb84f3a998921981ed227b4582580ea46e924f
+$ docker pull nginx@sha256:ef9932461b2c0015ce84e93d205dc17648646beb531a24762774fecf5b8609bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **901.8 KB (901834 bytes)**  
+-	Total Size: **901.8 KB (901791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:621ed5d5b16dfdb7a74b62deab71620e11c67f310ed5b160f815bc14086266e9`
+-	Image ID: `sha256:b9e7b74169089e744557379f6d5aa64843ff2117a1da46c13379511630bd1cc7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39c843c2cc24c2455b582bf555f727b51f7e96617e7fbbe0e2569cd4f1d59d02`  
-		Last Modified: Thu, 09 Oct 2025 02:50:23 GMT  
+	-	`sha256:92c9609e2966ee344a02844f9d0c45364470292efa67c9eab3a423e43d962449`  
+		Last Modified: Tue, 28 Oct 2025 23:50:59 GMT  
 		Size: 880.7 KB (880692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad1d2b2822c748328d4145d2946a4e9d65292fc828bb59e8ffd97b1496c32c81`  
-		Last Modified: Thu, 09 Oct 2025 02:50:24 GMT  
-		Size: 21.1 KB (21142 bytes)  
+	-	`sha256:32b5b529380c1a06d17e7493bc4e01d4cccb656ff6163b793199628f5fe0d33c`  
+		Last Modified: Tue, 28 Oct 2025 23:51:00 GMT  
+		Size: 21.1 KB (21099 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nginx:mainline-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nginx@sha256:784f53ee481bf720ac650086add927f56880448b87268b988ecf12c1947e4a67
+$ docker pull nginx@sha256:a32dc17e8c8bc57f81cfc97492bee06c278fde068132d5488b502d57e7ceb7bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 MB (19322349 bytes)**  
+-	Total Size: **19.4 MB (19356349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1539c92149112b67afafb9ed10cd21ceed89ce9569da346ccd110fb0f0c3159c`
+-	Image ID: `sha256:7bffafc0711531d4193f70be24d4aa0434cf559805e12e9177a314f6c71bec15`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-armhf.tar.gz / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NGINX_VERSION=1.29.2
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
+ENV NGINX_VERSION=1.29.3
+# Tue, 28 Oct 2025 21:48:11 GMT
 ENV PKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 ENV DYNPKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
+RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
+# Tue, 28 Oct 2025 21:48:11 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:48:11 GMT
 CMD ["nginx" "-g" "daemon off;"]
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NJS_VERSION=0.9.3
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:16:02 GMT
+ENV NJS_VERSION=0.9.4
+# Tue, 28 Oct 2025 22:16:02 GMT
 ENV NJS_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
+# Tue, 28 Oct 2025 22:16:02 GMT
+RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
 ```
 
 -	Layers:
@@ -194,107 +194,107 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Last Modified: Wed, 08 Oct 2025 21:00:16 GMT  
 		Size: 3.5 MB (3504080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4cc446d527adecc988050c2568d5bc9a7911d70dcbe5d95e8c21458763e7a067`  
-		Last Modified: Wed, 08 Oct 2025 21:43:10 GMT  
-		Size: 1.8 MB (1802907 bytes)  
+	-	`sha256:a6ddad638dde2da0663f6ab03a7cc65b6cd4932403a37569f597f98652916e0c`  
+		Last Modified: Tue, 28 Oct 2025 21:48:25 GMT  
+		Size: 1.8 MB (1829519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55449b67b0c4922fe1a696364be990a912379fbfde94013764283bf49056c548`  
-		Last Modified: Wed, 08 Oct 2025 21:43:09 GMT  
-		Size: 628.0 B  
+	-	`sha256:473a6fe0e865b5c2dae2b5543be9600a4ac73a46cb98717f11f531bef5846175`  
+		Last Modified: Tue, 28 Oct 2025 21:48:24 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc87a95d2bfffb45ccdcbcd2b5d90848fc58c478456b55d1a31c01f09abb964`  
-		Last Modified: Wed, 08 Oct 2025 21:43:09 GMT  
-		Size: 956.0 B  
+	-	`sha256:a318529ddafec5423320f28014b0707e4e2494a4e53b2fc52aad18b871924cfe`  
+		Last Modified: Tue, 28 Oct 2025 21:48:24 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6a65cf31df5ec725614470c00cb14a081e1b912963acdeac5c749b7bb8ced3f`  
-		Last Modified: Wed, 08 Oct 2025 21:43:09 GMT  
-		Size: 405.0 B  
+	-	`sha256:cf17204ee5495517e1b407177d8f167ea3cd763f4700fa7f99bfe9d2e87ebcbd`  
+		Last Modified: Tue, 28 Oct 2025 21:48:24 GMT  
+		Size: 406.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:511722a3e1aca60a2d98ac08b87c774251716de3532346b5c0863140bad8d2f5`  
-		Last Modified: Wed, 08 Oct 2025 21:43:09 GMT  
-		Size: 1.2 KB (1211 bytes)  
+	-	`sha256:91515ef294da73b7c2773173a53250d8ca26c85b0e8a14d4071ed692694fa451`  
+		Last Modified: Tue, 28 Oct 2025 21:48:24 GMT  
+		Size: 1.2 KB (1212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f370778828565f33258329323b59504ea66778db48248b6403c81d85577eae3`  
-		Last Modified: Wed, 08 Oct 2025 21:43:09 GMT  
-		Size: 1.4 KB (1399 bytes)  
+	-	`sha256:497d57a8bdf6557bf42af90b9944b4f186fa36847f598e0871525d495f585c46`  
+		Last Modified: Tue, 28 Oct 2025 21:48:24 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f50d17e70621d75729483bf61f96c46db5d300ca90bc47d4ca5af93bdc916da`  
-		Last Modified: Wed, 08 Oct 2025 22:59:09 GMT  
-		Size: 14.0 MB (14010763 bytes)  
+	-	`sha256:8ff29a7ce3c4685517bf30d6124fbf3b2f833193edc46faf99910eb059d7b998`  
+		Last Modified: Tue, 28 Oct 2025 22:16:21 GMT  
+		Size: 14.0 MB (14018145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-alpine` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:4e36dc3a9ee812ef2e2af0435e688b12229b2e99b8efc954727ac945972b1b06
+$ docker pull nginx@sha256:6f7dcd80a84fc573ab02691f0d5155917de9564f8ca4c9ff671ac1968de24272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **21.1 KB (21055 bytes)**  
+-	Total Size: **21.0 KB (21012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3b1540dc6cea2923bb2c2ef0d695bce9d65bf4da786abe079af366c67856835`
+-	Image ID: `sha256:431a706cb030833380f94d3ab87207146373e0371c5e0a091016a95bff80c285`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb74507fdd289cf984f4081344ac969b95d78caf51fdf6cd39df5e894233bd5d`  
-		Last Modified: Wed, 08 Oct 2025 23:50:36 GMT  
-		Size: 21.1 KB (21055 bytes)  
+	-	`sha256:e87f23e1e77d73366a24670d32b460a52052ee94aad34b5fb7f5492c49d2da42`  
+		Last Modified: Tue, 28 Oct 2025 23:51:03 GMT  
+		Size: 21.0 KB (21012 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nginx:mainline-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull nginx@sha256:f97c1c79c20805ad22ec0455f91c3eb1fe14c3bc77f38f5695e16fa0ed9143ab
+$ docker pull nginx@sha256:18f3a19965f8e4445ac93484e337b14d7ab9af182d95c1efb485cc89d34da211
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19105504 bytes)**  
+-	Total Size: **19.1 MB (19129500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:497e61165dce66fa6b411f8c19d68f056ecea1bf495e9f301b20c7623db1ccd7`
+-	Image ID: `sha256:6a495f983aed006ad418469e33feec6972811924a0ef01ce9ac7c11db55ad672`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-armv7.tar.gz / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NGINX_VERSION=1.29.2
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
+ENV NGINX_VERSION=1.29.3
+# Tue, 28 Oct 2025 21:49:27 GMT
 ENV PKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 ENV DYNPKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
+RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
+# Tue, 28 Oct 2025 21:49:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:49:27 GMT
 CMD ["nginx" "-g" "daemon off;"]
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NJS_VERSION=0.9.3
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:13:01 GMT
+ENV NJS_VERSION=0.9.4
+# Tue, 28 Oct 2025 22:13:01 GMT
 ENV NJS_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
+# Tue, 28 Oct 2025 22:13:01 GMT
+RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
 ```
 
 -	Layers:
@@ -302,57 +302,57 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
 		Size: 3.2 MB (3221555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0275b4735dec2e21942d9a4b5b976d8c8a8fe47e686100d264ce04aaed4ac219`  
-		Last Modified: Wed, 08 Oct 2025 21:51:39 GMT  
-		Size: 1.6 MB (1638330 bytes)  
+	-	`sha256:8c41790f6c39561b0df283ee1973dfa021c263250db3a2ecfe0e03977e5d226e`  
+		Last Modified: Tue, 28 Oct 2025 21:49:46 GMT  
+		Size: 1.7 MB (1660636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b186f27279fa9f7e97169be5420185ce0650263514b86b286dcc3372f13ee9a`  
-		Last Modified: Wed, 08 Oct 2025 21:51:46 GMT  
-		Size: 626.0 B  
+	-	`sha256:2ecf23ea8720ec126dec1f959c490b276943d8dd53aaa39031ea2efe9ea5c4b4`  
+		Last Modified: Tue, 28 Oct 2025 21:49:45 GMT  
+		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c88c7b91095f9fc3ff8fac959f2e225eabbd7661c3b3dedf16735c6a50c4443`  
-		Last Modified: Wed, 08 Oct 2025 21:51:49 GMT  
-		Size: 957.0 B  
+	-	`sha256:55b56b1fffb00af01b0b2573595c5d0f4a1f6d640648c10104917054c66783b6`  
+		Last Modified: Tue, 28 Oct 2025 21:49:45 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fd8e8474bc2b67b2e6a57634ba471b3c5643ac8e2937d31ad4479e8e6d61bdc`  
-		Last Modified: Wed, 08 Oct 2025 21:51:53 GMT  
+	-	`sha256:6453fe4eab703176d808497194ca9e96a41610dbffff352521d712bcda92f694`  
+		Last Modified: Tue, 28 Oct 2025 21:49:46 GMT  
 		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9967daca834b54f525e146a4735c57c60875910e92215e6a8e2def4e9e0d8ee`  
-		Last Modified: Wed, 08 Oct 2025 21:51:57 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:f2119d88e8c28343aa61802927fa3532eccd7e7764784595c57bf7d8edc515c8`  
+		Last Modified: Tue, 28 Oct 2025 21:49:47 GMT  
+		Size: 1.2 KB (1209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:effce4a12f878f88f222ff610de3964c757a8bc002b4fa8ed35ad47e927d3566`  
-		Last Modified: Wed, 08 Oct 2025 21:52:06 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:74b96f2db0ec83238f93b5220ba6b6c96c0940d734d117587a7e9dc5f0631bca`  
+		Last Modified: Tue, 28 Oct 2025 21:49:47 GMT  
+		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1febbe51bc88031773a76e38d20703a0dd8ebff96932100b63ff5d5e716d973b`  
-		Last Modified: Wed, 08 Oct 2025 23:17:08 GMT  
-		Size: 14.2 MB (14241021 bytes)  
+	-	`sha256:2afdae17891d5d12348ca9c0b95715ddf7a200f2c7b71c26c4de44f6958a3c0d`  
+		Last Modified: Tue, 28 Oct 2025 22:13:20 GMT  
+		Size: 14.2 MB (14242712 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-alpine` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:1383619a4b51b12caa276be2e46ffcc1b040c3dcca1c968467ab2bb2794c12d3
+$ docker pull nginx@sha256:b3667213c6859eff54a5fcbf63eed0113f2f1b44c4d5448ba62158739df33aca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **902.0 KB (902046 bytes)**  
+-	Total Size: **902.0 KB (902003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c09d837c5718d051506497c6de426a6d9b3e377bd406e2f4f14c90cc39d8346c`
+-	Image ID: `sha256:f3d6a173cfeb2c757f81833ecb079d6f981ae59acfcdf89a8ce85a53d9d8c7cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e17498eba39c9acf6e0dbb0ae0d7b5a9e3534170204018b286b8c4b7d51577b8`  
-		Last Modified: Wed, 08 Oct 2025 23:50:39 GMT  
+	-	`sha256:94aa25198191ebd24716fbe9d7301f9d96ec8207ec5ee46f4b62db807309bab8`  
+		Last Modified: Tue, 28 Oct 2025 23:51:06 GMT  
 		Size: 880.8 KB (880776 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:da4817ef00ed78292ac6ee0e35260edd595a2d44cab91ee1964bef24fd72cc69`  
-		Last Modified: Wed, 08 Oct 2025 23:50:40 GMT  
-		Size: 21.3 KB (21270 bytes)  
+	-	`sha256:d36fd6853b07c034d699ab679c3bdc6a9310f38bd410a37d811063a8d6c61138`  
+		Last Modified: Tue, 28 Oct 2025 23:51:07 GMT  
+		Size: 21.2 KB (21227 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nginx:mainline-alpine` - linux; arm64 variant v8
@@ -470,55 +470,55 @@ $ docker pull nginx@sha256:c07a2e15989d96136d5ae37ae4558e92653255a3b73902c5075f5
 ### `nginx:mainline-alpine` - linux; 386
 
 ```console
-$ docker pull nginx@sha256:3f59936b406b97f5dc395072b7012e794a74ee570710236ce88fe81d06a1bf5d
+$ docker pull nginx@sha256:eb212fe30b5b70a2ba09a0e3a1db07aea232fda6a6046a2bbf40c7203d3d5745
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **21.7 MB (21746085 bytes)**  
+-	Total Size: **21.8 MB (21782718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b4e052c1b061d035aed085d261c5759cef77f10581946f3aa0b89e9bc2b7e7f`
+-	Image ID: `sha256:eddbf051d938f91b3eb017e14b0535cbe9d4cae16b3e09a44f0c1876cfe38996`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-x86.tar.gz / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NGINX_VERSION=1.29.2
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
+ENV NGINX_VERSION=1.29.3
+# Tue, 28 Oct 2025 21:50:08 GMT
 ENV PKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 ENV DYNPKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
+RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
+# Tue, 28 Oct 2025 21:50:08 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 21:50:08 GMT
 CMD ["nginx" "-g" "daemon off;"]
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NJS_VERSION=0.9.3
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:14:51 GMT
+ENV NJS_VERSION=0.9.4
+# Tue, 28 Oct 2025 22:14:51 GMT
 ENV NJS_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
+# Tue, 28 Oct 2025 22:14:51 GMT
+RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
 ```
 
 -	Layers:
@@ -526,111 +526,111 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Last Modified: Wed, 08 Oct 2025 12:04:34 GMT  
 		Size: 3.6 MB (3618931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8310ca5f31389ac16c335f0c59554ff102f0cd5506cb036a7bf1cb1adb140ba9`  
-		Last Modified: Wed, 08 Oct 2025 21:14:25 GMT  
-		Size: 1.9 MB (1875494 bytes)  
+	-	`sha256:bd914c390b56252d260bf19194061e036fd577b098892b48d885806ba015eed2`  
+		Last Modified: Tue, 28 Oct 2025 21:50:26 GMT  
+		Size: 1.9 MB (1904008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91cfd06ba18372210f0049c0949b4f3fad822b58e36063ee8ca5b85f48b43b79`  
-		Last Modified: Wed, 08 Oct 2025 21:14:24 GMT  
-		Size: 626.0 B  
+	-	`sha256:2e4e9d3ce105cb13a3edacfd258613c969061d465809f416f0a75e6cdf34c8e1`  
+		Last Modified: Tue, 28 Oct 2025 21:50:26 GMT  
+		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6c217ef5ab5559cbb5ef654f5f9d930e4cc0e2bb036ab81ae25edd50c80b94e`  
-		Last Modified: Wed, 08 Oct 2025 21:14:24 GMT  
-		Size: 956.0 B  
+	-	`sha256:00ac5dd09cdd83c64407b69ca645e4860547ae2c2a70fb31ee868d5923c3f034`  
+		Last Modified: Tue, 28 Oct 2025 21:50:26 GMT  
+		Size: 955.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50c3556f4cfae77206797e5b9a6fe4d591102a2ba2ce18562b912e626c98e6b2`  
-		Last Modified: Wed, 08 Oct 2025 21:14:24 GMT  
-		Size: 405.0 B  
+	-	`sha256:6358d4f0274327780fb0215e6b86893a2be513e98985cfa2f74f410754177ed8`  
+		Last Modified: Tue, 28 Oct 2025 21:50:25 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a3f34bfda3c2cc938d0f7ddeb34ffb67b84ecce479ffb3c9701c62f7efda5dd`  
-		Last Modified: Wed, 08 Oct 2025 21:14:24 GMT  
+	-	`sha256:55c0b09860d4108b8a96bffe28cbde9fa358ce059f74e34f0d4494e9852afe0c`  
+		Last Modified: Tue, 28 Oct 2025 21:50:26 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7313e5b2f789ebf3bd27e78ff79242d79acfb98d63d3b1f1a0987ecb39e5eaa5`  
-		Last Modified: Wed, 08 Oct 2025 21:14:24 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:64f1da48c94653fc374e285b708b2401ebaeffba924ab9a6aea2b4251d33f3bc`  
+		Last Modified: Tue, 28 Oct 2025 21:50:26 GMT  
+		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37d945d6546ffc8e6f28d8095601dd60d684152ed0ec3f6abaf6d8efabe3a106`  
-		Last Modified: Wed, 08 Oct 2025 21:49:16 GMT  
-		Size: 16.2 MB (16247063 bytes)  
+	-	`sha256:7bc31a96f107610e45c3f90d0f90a4345aee1542d4a93a8b78b11cf080abd4ff`  
+		Last Modified: Tue, 28 Oct 2025 22:15:05 GMT  
+		Size: 16.3 MB (16255183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-alpine` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:af9cfc9293bea73b77cce23ec8234ebf081fe4b1229175e95d63e19d4349c72a
+$ docker pull nginx@sha256:311778ccbcd481c02674ba561776ba8e9045660fb323eb50fd23849d4b513416
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **901.7 KB (901717 bytes)**  
+-	Total Size: **901.7 KB (901673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7545d11cc6b011848b450ae574a7955d96d3291d3a2601b1757b28c256064c5c`
+-	Image ID: `sha256:00bcc8fa83119c0ae638c43aa202fa38dbe12151e9c281c9ceb661681f160179`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c7fd7a233c55b60e80fcbeec1e744070e63854a3b129df1564175f53ffc8d53`  
-		Last Modified: Wed, 08 Oct 2025 23:50:47 GMT  
+	-	`sha256:27ae73e577e558b2f64a51a8cbe818d27d87b2b9ea6c1526d3dbb0b2762193e9`  
+		Last Modified: Tue, 28 Oct 2025 23:51:12 GMT  
 		Size: 880.6 KB (880637 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86f80d23a60277c001746aa0e154952960ea6f0e5ee0303911e647c565b8d2d9`  
-		Last Modified: Wed, 08 Oct 2025 23:50:48 GMT  
-		Size: 21.1 KB (21080 bytes)  
+	-	`sha256:3f235d05cdd1f13f287bd81926eb4438bc701c255e7bf006a60fe86b1ed8282d`  
+		Last Modified: Tue, 28 Oct 2025 23:51:13 GMT  
+		Size: 21.0 KB (21036 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nginx:mainline-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nginx@sha256:4a58996649d54da3796b6ba936d88e461ce38a05b6791115869b51bf6ee1d734
+$ docker pull nginx@sha256:dde15a9cbccc631a1e0da618ada4aefa853c79a3bce43582225a523329b8f321
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.9 MB (22882380 bytes)**  
+-	Total Size: **22.9 MB (22925903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:913fbac40b0a0739d66fde73a66dc8021905d389c3117b3e7fab94993afd4311`
+-	Image ID: `sha256:1376b0745f15c6703a967cbef09fce85f136d6d8df42863f5f33a15d45d3a6a5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 ADD alpine-minirootfs-3.22.2-ppc64le.tar.gz / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Wed, 08 Oct 2025 11:04:56 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:06 GMT
 LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NGINX_VERSION=1.29.2
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:06 GMT
+ENV NGINX_VERSION=1.29.3
+# Tue, 28 Oct 2025 22:02:06 GMT
 ENV PKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:06 GMT
 ENV DYNPKG_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:06 GMT
+RUN set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             set -x             && KEY_SHA512="e09fa32f0a0eab2b879ccbbc4d0e4fb9751486eedda75e35fac65802cc9faa266425edf83e261137a2f4d16281ce2c1a5f4502930fe75154723da014214f0655"             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if echo "$KEY_SHA512 */tmp/nginx_signing.rsa.pub" | sha512sum -c -; then                 echo "key verification succeeded!";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo "key verification failed!";                 exit 1;             fi             && apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make base                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache gettext-envsubst     && apk add --no-cache tzdata     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d # buildkit
+# Tue, 28 Oct 2025 22:02:06 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:06 GMT
 COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:02:07 GMT
 CMD ["nginx" "-g" "daemon off;"]
-# Tue, 07 Oct 2025 21:06:46 GMT
-ENV NJS_VERSION=0.9.3
-# Tue, 07 Oct 2025 21:06:46 GMT
+# Tue, 28 Oct 2025 22:14:44 GMT
+ENV NJS_VERSION=0.9.4
+# Tue, 28 Oct 2025 22:14:44 GMT
 ENV NJS_RELEASE=1
-# Tue, 07 Oct 2025 21:06:46 GMT
-RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"633b2a8b56bd48527d7e293a255fd706dfbb5a9c47605ff18e91a2a409801043ee00ecb0da5fadf9cdf1d483c5ca848e81c1861870619523e15ca9e494b6e700 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
+# Tue, 28 Oct 2025 22:14:44 GMT
+RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${NJS_RELEASE}     "     && apk add --no-cache --virtual .checksum-deps         openssl     && case "$apkArch" in         x86_64|aarch64)             apk add -X "https://nginx.org/packages/mainline/alpine/v$(egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release)/main" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir="$(mktemp -d)"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre2-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 libedit-dev                 bash                 alpine-sdk                 findutils                 curl             && su nobody -s /bin/sh -c "                 export HOME=${tempDir}                 && cd ${tempDir}                 && curl -f -L -O https://github.com/nginx/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && PKGOSSCHECKSUM=\"249858446828ace0c81ea3e057135aa368f3dab83430cf867bb9fc32598948f29c4bd50908491da704536af1106aa87553f6a76cc126c6833dc9b14dd00564b8 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\"                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 && tar xzvf ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz                 && cd pkg-oss-${NGINX_VERSION}-${PKG_RELEASE}                 && cd alpine                 && make module-geoip module-image-filter module-njs module-xslt                 && apk index --allow-untrusted -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 "             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del --no-network .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && apk del --no-network .checksum-deps     && if [ -n "$tempDir" ]; then rm -rf "$tempDir"; fi     && if [ -f "/etc/apk/keys/abuild-key.rsa.pub" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && apk add --no-cache curl ca-certificates # buildkit
 ```
 
 -	Layers:
@@ -638,57 +638,57 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Last Modified: Wed, 08 Oct 2025 12:04:35 GMT  
 		Size: 3.7 MB (3732241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3260afb518ba06dd5aa3b278046d1a99bdf81dab768a44be5ab6ab962a5dfc8`  
-		Last Modified: Thu, 09 Oct 2025 00:50:22 GMT  
-		Size: 1.9 MB (1867408 bytes)  
+	-	`sha256:ca503ed70b617bcb8d5f9e2c15d5ac732f7cf9a01813a6a2db2fc94ff5dc4b11`  
+		Last Modified: Tue, 28 Oct 2025 22:02:23 GMT  
+		Size: 1.9 MB (1901415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b014981c91cf19aa78d00014fb730677df86df47dfca991e235bf91f0196acf`  
-		Last Modified: Wed, 08 Oct 2025 00:22:04 GMT  
-		Size: 624.0 B  
+	-	`sha256:6bf5b3ef427a4fb89fcdbe6e31cd90d8b3545ca5d23d15e9a89e83a53ca1e4a3`  
+		Last Modified: Tue, 28 Oct 2025 22:02:23 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbe555495d70cf18ec081178c7a82efc7700cb41b526d9978d1b7a7c75da13ce`  
-		Last Modified: Thu, 09 Oct 2025 00:50:21 GMT  
-		Size: 959.0 B  
+	-	`sha256:8c176c5e2210d577d95f81533f9ea9182c00507a656459e9c172261e9cc1494e`  
+		Last Modified: Tue, 28 Oct 2025 22:02:23 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cd985118ce017517b14803c6f459e256cdf8d60940519c3b0d4e1318051491b`  
-		Last Modified: Thu, 09 Oct 2025 00:50:21 GMT  
-		Size: 407.0 B  
+	-	`sha256:bc8f1000b24a84867cd825b40bca94892f378a8b46435fb42ce9b0f6741608d8`  
+		Last Modified: Tue, 28 Oct 2025 22:02:23 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:566578ff744e79a64b60d2c5b8e470471f7c4edb9fe4f5078ebcbafa1f88c50b`  
-		Last Modified: Thu, 09 Oct 2025 00:50:21 GMT  
-		Size: 1.2 KB (1213 bytes)  
+	-	`sha256:21d5c8793cc275811bd0148771225a091c917f74fe3f25af7208824564177d10`  
+		Last Modified: Tue, 28 Oct 2025 22:02:23 GMT  
+		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d837634586838aad6068cde4c1c03acb9cf95523320bb18768308dba620ce59d`  
-		Last Modified: Thu, 09 Oct 2025 00:50:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
+	-	`sha256:d14ab6a7e096427d087e27d11d9aa951626d2128bb9083585777010277103fbd`  
+		Last Modified: Tue, 28 Oct 2025 22:02:23 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1527c41e6b2034f4fc05fc14bd9a54d5758ec4d5d4342b9dca11457f1173fcd`  
-		Last Modified: Thu, 09 Oct 2025 05:24:09 GMT  
-		Size: 17.3 MB (17278125 bytes)  
+	-	`sha256:f1156976f22b472a6a2998ebfed9640c4d20342fcdded1131de0e2b2ffab3956`  
+		Last Modified: Tue, 28 Oct 2025 22:15:10 GMT  
+		Size: 17.3 MB (17287649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nginx:mainline-alpine` - unknown; unknown
 
 ```console
-$ docker pull nginx@sha256:b408950b7f73ed9f2b7abc2b0f7f2d88577eb7af45c1cc5185414ed4238be4a6
+$ docker pull nginx@sha256:1a2055ce8b800364793fe56026f78d58bff893a1fad77a7ed075a4342205aa30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **900.0 KB (900033 bytes)**  
+-	Total Size: **900.0 KB (899990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e1375360391df9edd1d08fa4f22bbfb1dff7dd74ba8b7fbde102938389c3e74`
+-	Image ID: `sha256:fe45a84cc2118083718cd82bc90a96cdbed3652fe7081c8c5ae02aad4f25f790`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1250304921121682fb87b29a17b64a86361620be05015f9ef5d3c5eccc84bf35`  
-		Last Modified: Thu, 09 Oct 2025 08:50:36 GMT  
+	-	`sha256:1fa1a66fa5fcf1219f2c0810cd84b9f447828ab16d1b76e0642459fccb448df6`  
+		Last Modified: Tue, 28 Oct 2025 23:51:16 GMT  
 		Size: 878.8 KB (878811 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2542b2ae0076d9a026a52f4724d05ed5d7c1e4ff24e976b2c83a7fad3edbf1b7`  
-		Last Modified: Thu, 09 Oct 2025 08:50:37 GMT  
-		Size: 21.2 KB (21222 bytes)  
+	-	`sha256:6fce4a17e3fef1cf353ce3bfd64f3b286fa54fda1dc306732235d1a432535347`  
+		Last Modified: Tue, 28 Oct 2025 23:51:16 GMT  
+		Size: 21.2 KB (21179 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nginx:mainline-alpine` - linux; riscv64
