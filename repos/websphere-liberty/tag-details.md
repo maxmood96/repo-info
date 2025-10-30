@@ -206,7 +206,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2778456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07bd027c1b7f086e33aa75118c49973051f6d6e05236a89e019a091c6da79e83`  
-		Last Modified: Thu, 30 Oct 2025 20:22:04 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:24 GMT  
 		Size: 365.5 MB (365506887 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:199b065ce5f0a134db9837afea320d8f014cb2dfac52040c4501de45280f86e8`  
@@ -401,7 +401,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2819783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ac2d0a8669f261ece0ac7bfac2dbcc418ca25fd25ed2132f0db4b513b0571f9`  
-		Last Modified: Thu, 30 Oct 2025 20:19:01 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:20:59 GMT  
 		Size: 365.5 MB (365505864 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5723a29a0dd0e05532d837dd9612404c0447424a5e1f481e3b34fea42e831d7`  
@@ -1003,7 +1003,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2776067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ea9d36fad7bbfb90afbaaeed8956003fc1c59e3c17f8664facaecfd13d7054c`  
-		Last Modified: Thu, 30 Oct 2025 20:27:25 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:24:40 GMT  
 		Size: 365.5 MB (365505905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc383e5c39a16b7627f70ef111e7c27fb4f1c80b4d744bd6c0202f08083e4981`  
@@ -4282,7 +4282,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.7 MB (2748965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b152264c73e796688f31ed3f39428692f8f950184a5c356f21672fc731781329`  
-		Last Modified: Thu, 30 Oct 2025 20:20:53 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:26:09 GMT  
 		Size: 358.8 MB (358792259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d8b4251fa116cedb447f7a43cc54873368f36d735b3caa1df267d0f81dac39da`  
@@ -4477,7 +4477,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2770001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:008cda4533e4b0caf74b51fbcdb26b8104e45093c4518c03a17fb8f5e3f837c8`  
-		Last Modified: Thu, 30 Oct 2025 20:19:03 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:28 GMT  
 		Size: 358.8 MB (358792043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de78b2b3674af58e816912b9510653867825d9490a782ced785f6b20ec497fdb`  
@@ -4505,11 +4505,11 @@ $ docker pull websphere-liberty@sha256:7afde12707e3ca898613c7228ef5083dcb3c3fad8
 
 -	Layers:
 	-	`sha256:cbc632d8651be3aa7604eb8d3c0157d4ecbc6725953361cddcd4048b175fcd70`  
-		Last Modified: Thu, 30 Oct 2025 20:18:56 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:23:52 GMT  
 		Size: 5.9 MB (5925069 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ef869657679322e5739e5edfa28cf414fa1df99bf6939368760a8fbe1b00ad9`  
-		Last Modified: Thu, 30 Oct 2025 20:18:55 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:23:52 GMT  
 		Size: 19.7 KB (19740 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5079,7 +5079,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.7 MB (2716591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa1d6f008f294c7db47083ce3b400258fc964f3c39bcd4c058ef3138b76bb262`  
-		Last Modified: Thu, 30 Oct 2025 20:21:27 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:33 GMT  
 		Size: 358.8 MB (358793350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8cb80e68ea703fd1ea41468fefb678432b3d3fbb1816c68e16ccf04f126a0d99`  
@@ -5274,7 +5274,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2756479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:298ca065bd315b5451582b5793f28abd56272a9589fdf66d02a69a860f1896f3`  
-		Last Modified: Thu, 30 Oct 2025 20:18:55 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:24:57 GMT  
 		Size: 358.8 MB (358792457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3466cdf1ca61d295fcf90b4466e88863d3f1acf0f946193d8dcc39b131cf7ba0`  
@@ -6456,11 +6456,11 @@ $ docker pull websphere-liberty@sha256:825b5350dc27cc7d8c89aa3a5b33a7cae5a79f321
 
 -	Layers:
 	-	`sha256:4e643d60fb2a7d3f1da56628e33b0cce434630e7feac7e4d526545a05db57d68`  
-		Last Modified: Thu, 30 Oct 2025 19:17:10 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:19:56 GMT  
 		Size: 3.9 MB (3887890 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:43458990a7160c0a41d49a87a15c7f04b196766b8fcd10c5df6bf90da0df4ffa`  
-		Last Modified: Thu, 30 Oct 2025 19:17:10 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:20:00 GMT  
 		Size: 39.9 KB (39902 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6627,11 +6627,11 @@ $ docker pull websphere-liberty@sha256:86d6cd4aebfa577adcc96c55325ce193198f952fd
 
 -	Layers:
 	-	`sha256:27e297a6d00daf0bf83cecb56c3aec0660fb2e9b0c8282977bba51e1910238d7`  
-		Last Modified: Thu, 30 Oct 2025 20:04:31 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:19:57 GMT  
 		Size: 3.9 MB (3886250 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:223d9aa2384b7d8f2d1264b7cd55fcd0bd02d5ac2416d16d505de5230d129c42`  
-		Last Modified: Thu, 30 Oct 2025 20:04:31 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:19:57 GMT  
 		Size: 40.0 KB (40030 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6798,11 +6798,11 @@ $ docker pull websphere-liberty@sha256:2c62366f45b3545b815f056af85db6c2e017ef3da
 
 -	Layers:
 	-	`sha256:6fe9de1a5f8bc7445dd8479a2ddfd73d785ffee32e189814d11b8c4079f8a52d`  
-		Last Modified: Thu, 30 Oct 2025 20:13:10 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:23:56 GMT  
 		Size: 3.9 MB (3892511 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2c37b47db0da6bd3c7304dc7526073ed54e0ce53cc69217e9cb1a4b2021a3b17`  
-		Last Modified: Thu, 30 Oct 2025 20:13:10 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:23:57 GMT  
 		Size: 39.9 KB (39936 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6969,11 +6969,11 @@ $ docker pull websphere-liberty@sha256:3670fccb79d93eb9f8f5bdb5fc88f7dd54d31068d
 
 -	Layers:
 	-	`sha256:5a1a4d833387d24919614eb76b164c837fb48a62c32bddb34d6b0459007234aa`  
-		Last Modified: Thu, 30 Oct 2025 20:22:50 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:23:56 GMT  
 		Size: 3.9 MB (3888907 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:70ae2ccd08f69be7b9b6b1f79e50b39955141a50270389a361544b4fd1c62c57`  
-		Last Modified: Thu, 30 Oct 2025 20:22:50 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:23:57 GMT  
 		Size: 39.9 KB (39901 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8358,7 +8358,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2755681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fcbc2b039861a43d1db8ed0f32e675f9b74f50d50a6a1f8a9086dffa676422cd`  
-		Last Modified: Thu, 30 Oct 2025 20:21:26 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:30 GMT  
 		Size: 365.0 MB (364950822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c0aaf72376a053c359bf03e8f4cd43c8a769a5d4652a4c123bf9005c6ea5adc`  
@@ -8553,7 +8553,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2808981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1d2f1d165320ab524fed162cb7acd56207ccaabd57edd1b7a0b3d1c3e92226f`  
-		Last Modified: Thu, 30 Oct 2025 20:19:04 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:36 GMT  
 		Size: 364.9 MB (364949782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4909c343a96859dcb6eee2499604448e15c570b307a28738791f632b9f3d85d0`  
@@ -9155,7 +9155,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.7 MB (2700760 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e4e045da83b9daa8dc7458a66f115a54e4358d923b428368a8033b21a269c0c`  
-		Last Modified: Thu, 30 Oct 2025 20:21:37 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:26:07 GMT  
 		Size: 365.0 MB (364950751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4123d98b8acd73c9f82c446c7d271d003ff62c5374db95560fcbb1c15514340`  
@@ -9350,7 +9350,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2768002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:545e534b6751098f3e5b9609a3065d0103cc9fbbff5fc4cf6ed33965c54671fd`  
-		Last Modified: Thu, 30 Oct 2025 20:18:58 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:16 GMT  
 		Size: 364.9 MB (364949409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:669350437e61bc65942092ea66ad0b2f7a14ebcc6b59bfdfa8b8b1b4ad2195d8`  
@@ -13010,7 +13010,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2778456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8eaa4ae1a0c50cdf532e2c94e7ccab9c888081be818613f0134d6d670751ad9f`  
-		Last Modified: Thu, 30 Oct 2025 20:19:56 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:18 GMT  
 		Size: 365.5 MB (365507007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ffb03fc9a33ad8eb1cbb832720b9f528e1a7adc5d77f370287fe12221e02e40`  
@@ -13205,7 +13205,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2819783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e43622986ffe02aff08c88e052e17a926f4f02b9cf146438f8f4bfee0df2a635`  
-		Last Modified: Thu, 30 Oct 2025 20:18:47 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:19 GMT  
 		Size: 365.5 MB (365506077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c1c18decf45807b53c5e80b2c3768214d14e1bf44c16fd2abe5cdfd760048b4`  
@@ -13400,7 +13400,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.7 MB (2725849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08c7b3c07eb83c3a2ca022e544bfeecfffb87443162acda5eb7d6f666accd5bb`  
-		Last Modified: Thu, 30 Oct 2025 21:00:10 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:25:49 GMT  
 		Size: 365.5 MB (365507303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cfc650a7f5d215c8870757ad62c2dbf89aa8d8f9b682a86ac374b0a2ca7594b8`  
@@ -13807,7 +13807,7 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Size: 2.8 MB (2776067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:13fef9c2eb88418d6adb8001183f0cde94a8b5790f9746b17c127f5f9867d713`  
-		Last Modified: Thu, 30 Oct 2025 20:20:14 GMT  
+		Last Modified: Thu, 30 Oct 2025 22:26:20 GMT  
 		Size: 365.5 MB (365506628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c135bd46b18e41c04ca3d7b7dbe973141682a2cc2da6868e925ffd1c0fb38c38`  
