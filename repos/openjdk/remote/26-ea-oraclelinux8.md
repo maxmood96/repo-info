@@ -1,7 +1,7 @@
 ## `openjdk:26-ea-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:c4389047556771e4177b6a2c210fac640fddbb75eff27abc6e982ec027bf3bfd
+$ docker pull openjdk@sha256:76376eb201165062ee909c6c499a6103986787b812574d22e990499740546754
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -85,70 +85,70 @@ $ docker pull openjdk@sha256:cd26c292ea3fdd70918884de0de199a788c878ed933b20c0b4d
 ### `openjdk:26-ea-oraclelinux8` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:cf5c582bb4627d983ac92d936f20227f44ab1082e431b696b1e424462de9244d
+$ docker pull openjdk@sha256:58f8c4fe95ded0c4878af70e4e9a65a04cff5d6d4ac67109072cea008b684f99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.8 MB (289758900 bytes)**  
+-	Total Size: **289.8 MB (289818893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c92627b1cd899d149ad0ad98284f88f90c90869131c4b5cf7a67bd94d45701e8`
+-	Image ID: `sha256:11325f71d312f722eea80bf7c8454a761d8c0ad55160bc9d01b8cf79511b6630`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 20:07:14 GMT
+# Fri, 31 Oct 2025 17:25:14 GMT
 ADD oraclelinux-8-slim-arm64v8-rootfs.tar.xz / # buildkit
-# Mon, 20 Oct 2025 20:07:14 GMT
+# Fri, 31 Oct 2025 17:25:14 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:12 GMT
 RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all # buildkit
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:23 GMT
 ENV JAVA_HOME=/usr/java/openjdk-26
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:23 GMT
 ENV PATH=/usr/java/openjdk-26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:23 GMT
 ENV LANG=C.UTF-8
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:23 GMT
 ENV JAVA_VERSION=26-ea+21
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:23 GMT
 RUN set -eux; 		arch="$(rpm --query --queryformat='%{ARCH}' rpm)"; 	case "$arch" in 		'x86_64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/21/GPL/openjdk-26-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='3189ce7f96b6fb0b69ce1e8ca7bc626aa30009023f9e2ddf7faeaa5ddf9e8626'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk26/21/GPL/openjdk-26-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='5f2d4dc408e6fe82574fb9ad9cff97da63a897a887198c666cb1bd0987fa690c'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version # buildkit
-# Fri, 24 Oct 2025 18:48:13 GMT
+# Fri, 31 Oct 2025 17:57:23 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:fb2cbf1306f13796052df61db1ffdb76b5d1db3837223eec0859c6a0d6f6cdff`  
-		Last Modified: Tue, 21 Oct 2025 00:12:37 GMT  
-		Size: 50.0 MB (50043445 bytes)  
+	-	`sha256:913708617406390e2c3446d7f989f45259d9e8bc8c18aeb2c7030c867ecfb5d6`  
+		Last Modified: Fri, 31 Oct 2025 17:25:36 GMT  
+		Size: 50.1 MB (50102610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13104b4aab4a4eb128595d400e88a29c48bfd0ea1cae2d777c0f1c307219bb79`  
-		Last Modified: Fri, 24 Oct 2025 23:23:54 GMT  
-		Size: 15.7 MB (15663159 bytes)  
+	-	`sha256:922735ecb64791aed8da7201bb2d9bf61bcb96875576c1d48abb0266f6227831`  
+		Last Modified: Fri, 31 Oct 2025 17:58:03 GMT  
+		Size: 15.7 MB (15663594 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:001518ea2aa87c15470e5090313dcf5e9740acfa0a2c068a11adda0a59270e14`  
-		Last Modified: Sat, 25 Oct 2025 00:41:14 GMT  
-		Size: 224.1 MB (224052296 bytes)  
+	-	`sha256:cc22e09589a0696b566da6cf94bf4cd901f2af9b33752d9b67eaf75c2385a90c`  
+		Last Modified: Fri, 31 Oct 2025 17:57:51 GMT  
+		Size: 224.1 MB (224052689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:26-ea-oraclelinux8` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:75b9fce5c85a99b52c24d434bce5da2b108b2f3cca8ad2d57445e1ceb44009e3
+$ docker pull openjdk@sha256:feae1f10ab91b1a393d00b2ee9ecfdb790aa29c53607493c288b701504edd190
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2464897 bytes)**  
+-	Total Size: **2.5 MB (2464898 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b25fbbbc35ca0e4946b86740c50d02d87f350e80a198727a3b8c3b3e959bf4`
+-	Image ID: `sha256:9de9ca38d54cc60b8c44372a232753142e1c034e429bb1924ebf90d801feb506`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2ddca645141da81b204b4c49dd804130cf3735363129bac21bf78bd8fed0846b`  
-		Last Modified: Sat, 25 Oct 2025 00:24:03 GMT  
-		Size: 2.4 MB (2448716 bytes)  
+	-	`sha256:d2d7c60eb9094cf974411aa45cd3ab982ea54a861932186a8f5d5637e97044a6`  
+		Last Modified: Fri, 31 Oct 2025 18:23:31 GMT  
+		Size: 2.4 MB (2448760 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:881e8631c213a602aaaadf346fc65c983552faf2d4fd9ada3ec20fe1ec7407ee`  
-		Last Modified: Sat, 25 Oct 2025 00:24:04 GMT  
-		Size: 16.2 KB (16181 bytes)  
+	-	`sha256:dacfb3d1f7e1fce1d2ff584d74302b5a714a295a6f72adf77d4669f2a895b7cb`  
+		Last Modified: Fri, 31 Oct 2025 18:23:31 GMT  
+		Size: 16.1 KB (16138 bytes)  
 		MIME: application/vnd.in-toto+json
