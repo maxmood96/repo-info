@@ -1038,20 +1038,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.193-3
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.193-3.dsc' elfutils_0.193-3.dsc 3317 SHA256:d7f9758e60d49a002a744481d74ed9df71b400add816508775ff7f48ae97e49b
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.193.orig.tar.bz2' elfutils_0.193.orig.tar.bz2 11974916 SHA256:7857f44b624f4d8d421df851aaae7b1402cfe6bcdd2d8049f15fc07d3dde7635
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.193-3.debian.tar.xz' elfutils_0.193-3.debian.tar.xz 44852 SHA256:35a45551097618993ee404b8f01fe1141a82fc4744e8a98f7964662fa3581adb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.193-3/
 
-- https://sources.debian.net/src/elfutils/0.193-3/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.193-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.193-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.7.3-1`
 
@@ -1932,20 +1925,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.7+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.7%2bdfsg1-1.dsc' imagemagick_7.1.2.7+dfsg1-1.dsc 5097 SHA256:82c07fd240804227255ecad5fc5b4466a0094038d1120e9872043d10e79f9164
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.7%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.7+dfsg1.orig.tar.xz 10527588 SHA256:e627876db102241d4b803a765edb0dc475e0f60a7284d48f234eebc9aceb24e9
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.7%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.7+dfsg1-1.debian.tar.xz 268564 SHA256:72e40a3765cf04e14b380d669879baaa86378d11da62364c8da92516dcb71acc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.7+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.7+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.7+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.7+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -5325,20 +5311,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=258.1-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1-1.dsc' systemd_258.1-1.dsc 8600 SHA256:cb400db02f3a95de517e36b11958db4dbe87ac8f45f5e39a2cc016b44c64a6da
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1.orig.tar.gz' systemd_258.1.orig.tar.gz 16982663 SHA256:8eb34eaf2f78330217280bd7a923578f37e28d3f3ac5168e336ebc9cad84a34d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1-1.debian.tar.xz' systemd_258.1-1.debian.tar.xz 183164 SHA256:5553971b3615333c4355deb2954677ead263a5e02039b0efc99fbee22e75832e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/258.1-1/
 
-- https://sources.debian.net/src/systemd/258.1-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/258.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/258.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 

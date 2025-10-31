@@ -2111,21 +2111,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.1-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1-2.dsc' mercurial_7.1-2.dsc 2861 SHA256:b1df204d1fc29e3468649556749c4766b5d33dd114066080f497aa4aefe260b1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1.orig.tar.gz' mercurial_7.1.orig.tar.gz 9026915 SHA256:e8d920c83c38c475d8e973be60760a49dc35c3795d64bd6876e56adba622e5cb
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1.orig.tar.gz.asc' mercurial_7.1.orig.tar.gz.asc 659 SHA256:52c366188b3fdafec164ded927aecccbf5b0c5261654a8a7d79adb24d75d13c0
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.1-2.debian.tar.xz' mercurial_7.1-2.debian.tar.xz 54872 SHA256:b8242b698b6a5786ce86b784e4ff3f4c8e5e492c6ba7f914ef55a787b0c54a58
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/7.1-2/
 
-- https://sources.debian.net/src/mercurial/7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/7.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5+20250216-2`
 
@@ -3028,20 +3020,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=258.1-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1-1.dsc' systemd_258.1-1.dsc 8600 SHA256:cb400db02f3a95de517e36b11958db4dbe87ac8f45f5e39a2cc016b44c64a6da
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1.orig.tar.gz' systemd_258.1.orig.tar.gz 16982663 SHA256:8eb34eaf2f78330217280bd7a923578f37e28d3f3ac5168e336ebc9cad84a34d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_258.1-1.debian.tar.xz' systemd_258.1-1.debian.tar.xz 183164 SHA256:5553971b3615333c4355deb2954677ead263a5e02039b0efc99fbee22e75832e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/258.1-1/
 
-- https://sources.debian.net/src/systemd/258.1-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/258.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/258.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
@@ -3211,20 +3196,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.2-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.2-1.dsc' util-linux_2.41.2-1.dsc 4928 SHA256:c29675f1a24b7c9f230ec9378f02db3beb82bd0c9428db0dde793bdd32e67867
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.2.orig.tar.xz' util-linux_2.41.2.orig.tar.xz 9612488 SHA256:6062a1d89b571a61932e6fc0211f36060c4183568b81ee866cf363bce9f6583e
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.2-1.debian.tar.xz' util-linux_2.41.2-1.debian.tar.xz 105140 SHA256:bb5c5f728cf8ed6686f476434bd7818df537b1d6e7606e4f6dface1526175cfa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.2-1/
 
-- https://sources.debian.net/src/util-linux/2.41.2-1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 

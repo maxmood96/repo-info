@@ -3144,14 +3144,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.12.7+dfsg+really2.9.14-0.4ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-0.4ubuntu0.3.dsc' libxml2_2.12.7+dfsg+really2.9.14-0.4ubuntu0.3.dsc 3149 SHA512:c4af0e0149c73cfd75d8a1f518427bb1af1b62efbd2d57f6640971f4b1327010cd332cad3e3688b3b30211c47395f68858830475d68b3604420982734addc1b0
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14.orig.tar.xz' libxml2_2.12.7+dfsg+really2.9.14.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-0.4ubuntu0.3.debian.tar.xz' libxml2_2.12.7+dfsg+really2.9.14-0.4ubuntu0.3.debian.tar.xz 43944 SHA512:30740c8d5cc8a088a92a9ded5e29461279ae18c292586ff4ad05c7b0aab0011668f668ccd6c2e3992c5f6dc4737416033ff2caa8515df1e24e889627f51f025f
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1build1`
 
