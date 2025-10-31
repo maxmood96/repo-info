@@ -1,10 +1,10 @@
-# `gradle:9.1.0-jdk21-jammy`
+# `gradle:9.2.0-jdk21-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6d74c40492e5ed7fd53b181cba1af0baae8e9b514e155c8f584ce497e954c2e`
-- Created: `2025-09-30T09:31:25Z`
-- Virtual Size: ~ 748.04 Mb  
+- Image ID: `sha256:d6d825f3aa7ef4577ebbc4cd336108209301c594b6de0bcf345406c26c00245c`
+- Created: `2025-10-29T17:33:52.562303113Z`
+- Virtual Size: ~ 749.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.8+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.1.0`
+  - `GRADLE_VERSION=9.2.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -242,14 +242,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.8.dsc' binutils_2.38-4ubuntu2.8.dsc 8861 SHA512:e5d24a51c07c0640eef1393912fa3a4481cd626748ebcd236d4185eb0989f34e7d5734862ed357eda520c167eb7c7ec972023303379662cde3f5a28e1b489a41
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.8.debian.tar.xz' binutils_2.38-4ubuntu2.8.debian.tar.xz 323784 SHA512:51e7359655b569ea47a1a64c98524278fc37fe1c18c044e894d0e333dc994e458446735c4bd18ed50fbca3ae1f5c503afe24a5344b56ad6e512d3a447663f270
-```
 
 ### `dpkg` source package: `breezy=3.2.1+bzr7585-1build1`
 
@@ -1596,15 +1591,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.4.dsc' libssh_0.9.6-2ubuntu0.22.04.4.dsc 2884 SHA512:7f12a24fb87638e1079a21ce60e69d62896dfa5e3361f2bbd3f9d73156c5b34e63df0c3b7a870f7081f2aa39fe3008c04144aa1fa5e9b363b5369586aace749d
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.4.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.4.debian.tar.xz 67164 SHA512:1a9e762a5c2523deb134cf1b7fec52631d095139e5e587b06f0818b7351f295363632a6bf8f94d03c60a8297b66e9d0c359913e5d28801300c5d0301d9126e99
-```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.1`
 

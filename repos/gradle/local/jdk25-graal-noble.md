@@ -1,9 +1,9 @@
-# `gradle:9.1.0-jdk25-graal`
+# `gradle:9.2.0-jdk25-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d75973eb9d9a1489b63185bca638cd3ac1fd96fa3460ad17e0260d6a891c500b`
-- Created: `2025-09-30T09:31:25Z`
+- Image ID: `sha256:71154d1f840a41f44fd98e9063b7a8598fe6ca0351414adf0f06443a6e072997`
+- Created: `2025-10-29T17:33:52.993236568Z`
 - Virtual Size: ~ 1.39 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
-  - `JAVA_VERSION=25.0.0`
-  - `GRADLE_VERSION=9.1.0`
+  - `JAVA_VERSION=25.0.1`
+  - `GRADLE_VERSION=9.2.0`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -254,14 +254,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.5.dsc' binutils_2.42-4ubuntu2.5.dsc 10148 SHA512:ed3206d1fe059cd0438dba07ba0e4b23cedb92ebc0f4c53f38d8691dae0bee9ca6f235be2ac19190032d6b8bc7ca972c8d7e7060957b5a9041e5125a250ba1b0
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.5.debian.tar.xz' binutils_2.42-4ubuntu2.5.debian.tar.xz 178692 SHA512:773579805f61129224611a43800ebfd486afc07f61835de81541c7ce64932ea8d76213d9b89f4468b69b7ab9e837c577eb2d0caa9ad62a34f6a2fe551645e655
-```
 
 ### `dpkg` source package: `breezy=3.3.5-6build2`
 
@@ -1736,15 +1731,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.1.dsc' libssh_0.10.6-2ubuntu0.1.dsc 2857 SHA512:8cbb3226535a8c7ea83197db96bc6da9866b8057998588e9cfdb5b62d50518063fbf255c17e8f3b9a7bea58f7feeea5d9ae4c8f3ff4fb1a52b514116f687765a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.1.debian.tar.xz' libssh_0.10.6-2ubuntu0.1.debian.tar.xz 47320 SHA512:346fb67c46e709e239b60a29674e80c7352d9c71c8bf91cc6586d4afe93fbfd09bb8e9c2bfdad62c79a9ce29c8509948027870321fa55e3b58bb28c7436e3320
-```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
 
@@ -1862,19 +1851,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.debian.tar.xz' libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz 21288 SHA512:8d57d913e68ec6722378c7d04b1513ac565b8bdda527f615aaa13f3270c423c1f1ee9575b50330c827de64dc66b25a60cbfe5b53d197346a0cff27d5fb735e40
 ```
 
-### `dpkg` source package: `linux=6.8.0-85.85`
+### `dpkg` source package: `linux=6.8.0-86.87`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-85.85`
+- `linux-libc-dev:amd64=6.8.0-86.87`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-86.87
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-86.87.dsc' linux_6.8.0-86.87.dsc 9321 SHA512:b48479d307b1000fc96030f2c38ee4da5ea38e4527438fb37c52a3b7c2df8507ce4cbf761fc50a2e4c53b6415db33677c09a0ea0edcd808226f9600e97fe1b33
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-86.87.diff.gz' linux_6.8.0-86.87.diff.gz 6062866 SHA512:8ae900aeb32de7fd1bc527e93f502fee4794729285be477d86ef9cc76588ce6cc81477a468e4baca863399574348d3ee5674d2035f77e9c2e32ee9b96c2f2c2a
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
