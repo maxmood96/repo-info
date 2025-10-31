@@ -1,7 +1,7 @@
 ## `rust:1-slim-bullseye`
 
 ```console
-$ docker pull rust@sha256:511c91223741697cf68aa071b1d676f1545ad354760bb2a6f9ec65b4efa2450d
+$ docker pull rust@sha256:27bb82253ec5623ca692d943c7a40d473efb44314997c4b67bb323c63751436a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,24 +18,24 @@ $ docker pull rust@sha256:511c91223741697cf68aa071b1d676f1545ad354760bb2a6f9ec65
 ### `rust:1-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:532c9bafb504801211101abb4e38741bf310e674b45ba05fe837a0c48b18093a
+$ docker pull rust@sha256:064f8abb98af16b4a539b967637dd9dca6f530464b6b8d97d79b5006b9b44fe7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.5 MB (301490013 bytes)**  
+-	Total Size: **303.7 MB (303746156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375eb8ec7a7a87934ba8adca1300d377595f58bbbf6720a63077f2c567e43e17`
+-	Image ID: `sha256:0ecd9ebc9b7c92a25e8ee2dcb2524aca72b5af172bfca9845f186cc7da777371`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 18 Sep 2025 14:07:21 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1760918400'
-# Thu, 18 Sep 2025 14:07:21 GMT
+# Thu, 30 Oct 2025 23:54:28 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Thu, 18 Sep 2025 14:07:21 GMT
-ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.90.0
-# Thu, 18 Sep 2025 14:07:21 GMT
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         gcc         libc6-dev         wget         ;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch##*-}" in         amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='20a06e644b0d9bd2fbdbfd52d42540bdde820ea7df86e92e533c073da0cdd43c' ;;         armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='3b8daab6cc3135f2cd4b12919559e6adaee73a2fbefb830fadf0405c20231d61' ;;         arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='e3853c5a252fca15252d07cb23a1bdd9377a8c6f3efa01531109281ae47f841c' ;;         i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='a5db2c4b29d23e9b318b955dd0337d6b52e93933608469085c924e0d05b1df1f' ;;         *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;     esac;     url="https://static.rust-lang.org/rustup/archive/1.28.2/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;     apt-get remove -y --auto-remove         wget         ;     rm -rf /var/lib/apt/lists/*; # buildkit
+# Thu, 30 Oct 2025 23:54:28 GMT
+ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.91.0
+# Thu, 30 Oct 2025 23:54:28 GMT
+RUN set -eux;         apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         gcc         libc6-dev         wget         ;         arch="$(dpkg --print-architecture)";     case "$arch" in         'amd64')             rustArch='x86_64-unknown-linux-gnu';             rustupSha256='20a06e644b0d9bd2fbdbfd52d42540bdde820ea7df86e92e533c073da0cdd43c';             ;;         'armhf')             rustArch='armv7-unknown-linux-gnueabihf';             rustupSha256='3b8daab6cc3135f2cd4b12919559e6adaee73a2fbefb830fadf0405c20231d61';             ;;         'arm64')             rustArch='aarch64-unknown-linux-gnu';             rustupSha256='e3853c5a252fca15252d07cb23a1bdd9377a8c6f3efa01531109281ae47f841c';             ;;         'i386')             rustArch='i686-unknown-linux-gnu';             rustupSha256='a5db2c4b29d23e9b318b955dd0337d6b52e93933608469085c924e0d05b1df1f';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.28.2/${rustArch}/rustup-init";     wget --progress=dot:giga "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         apt-get remove -y --auto-remove         wget         ;     rm -rf /var/lib/apt/lists/*;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
 -	Layers:
@@ -43,33 +43,33 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 		Last Modified: Tue, 21 Oct 2025 00:19:22 GMT  
 		Size: 30.3 MB (30258365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95330b7f3a0a801883f9715ffac7f513641a9c3c181e15460a2979b4e7981877`  
-		Last Modified: Tue, 21 Oct 2025 08:48:23 GMT  
-		Size: 271.2 MB (271231648 bytes)  
+	-	`sha256:d49af237071c177767bda2ca5a7ec95df1bc3b60e24750998379a60562f06f5b`  
+		Last Modified: Thu, 30 Oct 2025 23:55:10 GMT  
+		Size: 273.5 MB (273487791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:67072e1caa1ac00c1f7896e4cd9c0020bfbf87f34547d25c8406e77ad587f21b
+$ docker pull rust@sha256:0910636208c445e0c505f82319d9fce9337eec8f7aa38d7dcff632cb33816c98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4314957 bytes)**  
+-	Total Size: **4.3 MB (4316316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df21e2a5b857681a8e521b60d9687f161de4cebccf166ef2b31fa12fa8b3bae4`
+-	Image ID: `sha256:9dabc08e120791daa42dd9589f108ebb52709a339832ce0dbe4c1042f64a4cad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:36dcd507b25119bcc46133aaf8f95f2f4b063ba744c8da723dc4c733200e14dd`  
-		Last Modified: Tue, 21 Oct 2025 08:45:21 GMT  
+	-	`sha256:29fbf1341f555965c5ea43e880ababf3b1b6c006ab2e853228b40e4ec7ce4080`  
+		Last Modified: Fri, 31 Oct 2025 02:45:18 GMT  
 		Size: 4.3 MB (4303602 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cc5d4b466b9bdcddd1284d82d1b6e4cd805119fb7d12373a0324ad1da312749c`  
-		Last Modified: Tue, 21 Oct 2025 08:45:22 GMT  
-		Size: 11.4 KB (11355 bytes)  
+	-	`sha256:2a81c19097436e4b31cc0e544c8387795b8b79acc2f03031ead5b7af17ee64ac`  
+		Last Modified: Fri, 31 Oct 2025 02:45:19 GMT  
+		Size: 12.7 KB (12714 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:1-slim-bullseye` - linux; arm variant v7
@@ -101,7 +101,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 		Size: 25.5 MB (25546187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:86f470db143d0044ed53ee3c62d37c264ce9347606e374e60113030bb748254e`  
-		Last Modified: Thu, 30 Oct 2025 21:36:25 GMT  
+		Last Modified: Fri, 31 Oct 2025 00:34:56 GMT  
 		Size: 300.3 MB (300258212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -158,7 +158,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 		Size: 28.7 MB (28748401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5db337e821e80e597fa142716f1cb02566d2cf4168196f5f08a415cfb4a249b7`  
-		Last Modified: Thu, 30 Oct 2025 21:35:15 GMT  
+		Last Modified: Fri, 31 Oct 2025 00:06:25 GMT  
 		Size: 236.0 MB (235967450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -215,7 +215,7 @@ RUN set -eux;         apt-get update;     apt-get install -y --no-install-recomm
 		Size: 31.2 MB (31191494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a8bca4c0d96694e3d489bc0df62c181f63f68bd29966b3d385296b7f25514f0`  
-		Last Modified: Thu, 30 Oct 2025 21:35:46 GMT  
+		Last Modified: Fri, 31 Oct 2025 00:07:28 GMT  
 		Size: 298.7 MB (298729134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
