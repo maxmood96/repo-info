@@ -1,17 +1,17 @@
-# `nginx:1.29.2-alpine-slim`
+# `nginx:1.29.3-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:66d4f94110cd00c5b58c834207419520d8456accc9f6c0c644e49591ea996179`
-- Created: `2025-10-07T21:06:46Z`
-- Virtual Size: ~ 12.46 Mb  
+- Image ID: `sha256:a2ec74d4bccb728e253c287bb746e70b08f1e39f9d82bfaf2dec9960ef68930d`
+- Created: `2025-10-28T21:49:51.775673302Z`
+- Virtual Size: ~ 12.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.2`
+  - `NGINX_VERSION=1.29.3`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.2-r1 description:
+nginx-1.29.3-r1 description:
 High performance web server
 
-nginx-1.29.2-r1 webpage:
+nginx-1.29.3-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.2-r1 installed size:
-2647 KiB
+nginx-1.29.3-r1 installed size:
+2661 KiB
 
-nginx-1.29.2-r1 license:
+nginx-1.29.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -294,16 +294,16 @@ nginx-1.29.2-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```

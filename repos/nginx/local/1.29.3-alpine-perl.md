@@ -1,20 +1,20 @@
-# `nginx:1.29.2-alpine-perl`
+# `nginx:1.29.3-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2d9836b46c00c2bd9883280f0fbd294884513a4cdb0db9025dcb6606a108cb5`
-- Created: `2025-10-07T21:06:46Z`
-- Virtual Size: ~ 91.16 Mb  
+- Image ID: `sha256:86f721376853d48d81b7d8fa6c2d003dac29d0e47045eddb47594238fe8da627`
+- Created: `2025-10-28T22:25:07.457268069Z`
+- Virtual Size: ~ 91.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.2`
+  - `NGINX_VERSION=1.29.3`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.3`
+  - `NJS_VERSION=0.9.4`
   - `NJS_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -993,16 +993,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.2-r1 description:
+nginx-1.29.3-r1 description:
 High performance web server
 
-nginx-1.29.2-r1 webpage:
+nginx-1.29.3-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.2-r1 installed size:
-2647 KiB
+nginx-1.29.3-r1 installed size:
+2661 KiB
 
-nginx-1.29.2-r1 license:
+nginx-1.29.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1010,16 +1010,16 @@ nginx-1.29.2-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.2-r1 description:
+nginx-module-geoip-1.29.3-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.2-r1 webpage:
+nginx-module-geoip-1.29.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.2-r1 installed size:
+nginx-module-geoip-1.29.3-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.2-r1 license:
+nginx-module-geoip-1.29.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1027,16 +1027,16 @@ nginx-module-geoip-1.29.2-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.2-r1 description:
+nginx-module-image-filter-1.29.3-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.2-r1 webpage:
+nginx-module-image-filter-1.29.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.2-r1 installed size:
+nginx-module-image-filter-1.29.3-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.2-r1 license:
+nginx-module-image-filter-1.29.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1044,16 +1044,16 @@ nginx-module-image-filter-1.29.2-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.2.0.9.3-r1 description:
+nginx-module-njs-1.29.3.0.9.4-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.2.0.9.3-r1 webpage:
+nginx-module-njs-1.29.3.0.9.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.2.0.9.3-r1 installed size:
-9156 KiB
+nginx-module-njs-1.29.3.0.9.4-r1 installed size:
+9164 KiB
 
-nginx-module-njs-1.29.2.0.9.3-r1 license:
+nginx-module-njs-1.29.3.0.9.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1061,16 +1061,16 @@ nginx-module-njs-1.29.2.0.9.3-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.29.2-r1 description:
+nginx-module-perl-1.29.3-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.29.2-r1 webpage:
+nginx-module-perl-1.29.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.29.2-r1 installed size:
+nginx-module-perl-1.29.3-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.29.2-r1 license:
+nginx-module-perl-1.29.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1078,16 +1078,16 @@ nginx-module-perl-1.29.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.2-r1 description:
+nginx-module-xslt-1.29.3-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.2-r1 webpage:
+nginx-module-xslt-1.29.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.2-r1 installed size:
+nginx-module-xslt-1.29.3-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.2-r1 license:
+nginx-module-xslt-1.29.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1095,16 +1095,16 @@ nginx-module-xslt-1.29.2-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```
