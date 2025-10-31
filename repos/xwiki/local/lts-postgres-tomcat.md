@@ -2516,15 +2516,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.1.dsc' libssh_0.10.6-2ubuntu0.1.dsc 2857 SHA512:8cbb3226535a8c7ea83197db96bc6da9866b8057998588e9cfdb5b62d50518063fbf255c17e8f3b9a7bea58f7feeea5d9ae4c8f3ff4fb1a52b514116f687765a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.1.debian.tar.xz' libssh_0.10.6-2ubuntu0.1.debian.tar.xz 47320 SHA512:346fb67c46e709e239b60a29674e80c7352d9c71c8bf91cc6586d4afe93fbfd09bb8e9c2bfdad62c79a9ce29c8509948027870321fa55e3b58bb28c7436e3320
-```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
 
@@ -2876,14 +2870,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.5.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.5.dsc 3038 SHA512:29b6940fd822a9cf39c4c23f3aa789153955dfeb540a54954f99abf0ba3e78313c5113cdb5c129741687212aeacd4b1053a94d591e7a2a8c1c9044e7f4f1ab97
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.5.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.5.debian.tar.xz 43244 SHA512:8b9cc8d29807a2c220353cfa05b28d9da2a3ea95c075b8861d75e3802ef3631cd7863b49abea4cf6a43415a009e138f577abcafd98109448a476e5cc720a5d1d
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`
 
