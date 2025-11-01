@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d5d444877d3bb8dd425717de16f94722ea42303ca592dc1c7a53b33f26ece55`
-- Created: `2025-09-29T16:59:55Z`
-- Virtual Size: ~ 311.77 Mb  
+- Image ID: `sha256:3d68509178b07be859f034287852029bec0b3938cf4f4ccb0c232007f58cfad4`
+- Created: `2025-10-30T18:59:07.573202369Z`
+- Virtual Size: ~ 312.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1163,11 +1163,11 @@ $ apt-get source -qq --print-uris libsepol=3.3-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.3-1build1.debian.tar.xz' libsepol_3.3-1build1.debian.tar.xz 15068 SHA512:adb210e2dab83baa49cee624dc5ae44e9f2dff6eb4a0a7bee4b958e99871580df159d0ca339feca31d9c4cdd92d0022a841c35d615436278046379eeb766f1f2
 ```
 
-### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.4`
+### `dpkg` source package: `libssh=0.9.6-2ubuntu0.22.04.5`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.4`
+- `libssh-4:amd64=0.9.6-2ubuntu0.22.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1180,11 +1180,11 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.4.dsc' libssh_0.9.6-2ubuntu0.22.04.4.dsc 2884 SHA512:7f12a24fb87638e1079a21ce60e69d62896dfa5e3361f2bbd3f9d73156c5b34e63df0c3b7a870f7081f2aa39fe3008c04144aa1fa5e9b363b5369586aace749d
+$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.5.dsc' libssh_0.9.6-2ubuntu0.22.04.5.dsc 2750 SHA512:b18f8255da313d01e8883e8b29a38648bd5e40df4d37af010224aacf9cf8e2a4c1320e3d7912e969319c01efe80d97005880346cbb1975008ffa5f91c7bfc4a1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA512:4040ec4af937e95be2e41313ef6d4db60b46b8d4dea10c09402398127c1d1ca8843392d207088aeee3c7ef631c6ae7b66861327dcebf78ed3af0723777619fd1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA512:1b6223efe9e4ce864cd8d97d517f9f0d38c1cd502b5874fdc6a58731038c2830a72ce753f02fc062d9d4d5922107ec9a2e62fe24a704bb5dec0dcfecdb569fe6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.4.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.4.debian.tar.xz 67164 SHA512:1a9e762a5c2523deb134cf1b7fec52631d095139e5e587b06f0818b7351f295363632a6bf8f94d03c60a8297b66e9d0c359913e5d28801300c5d0301d9126e99
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.5.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.5.debian.tar.xz 67620 SHA512:d3b344a719d30b94916252a8c705dbc6c41bb522412c7cafb55b85d4a2cccb81ccaaf9a65a3cd6113a3093addf18a3b71e4c279069ef7d082992e2a43cc25e4f
 ```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.1`

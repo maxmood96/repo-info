@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-21.0.8_9-jdk-noble`
+# `ibm-semeru-runtimes:open-21.0.9_10-jdk-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:02d00f067c0eb4241cc7fee103646751250659fe56ec1d5f6f2f0668b86127f1`
-- Created: `2025-09-29T16:59:55Z`
-- Virtual Size: ~ 534.97 Mb  
+- Image ID: `sha256:2d6934da22cdd368143af09c4a3dfc90b4e3afa3e227b5bb1aaa5794cccdcd89`
+- Created: `2025-10-30T18:57:04.500368423Z`
+- Virtual Size: ~ 535.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.8+9_openj9-0.53.0`
+  - `JAVA_VERSION=jdk-21.0.9+10_openj9-0.56.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -1273,11 +1273,11 @@ $ apt-get source -qq --print-uris libsepol=3.5-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.5-2build1.debian.tar.xz' libsepol_3.5-2build1.debian.tar.xz 27716 SHA512:9b2b126368c5e4f80d80940f7611103745b1da92bec6319f43f64cc3f6a5e13bab25758bad645e973773a4aab74fa3600694061a8368ca2176252320c0d9ebf6
 ```
 
-### `dpkg` source package: `libssh=0.10.6-2ubuntu0.1`
+### `dpkg` source package: `libssh=0.10.6-2ubuntu0.2`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.10.6-2ubuntu0.1`
+- `libssh-4:amd64=0.10.6-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1290,11 +1290,11 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.1.dsc' libssh_0.10.6-2ubuntu0.1.dsc 2857 SHA512:8cbb3226535a8c7ea83197db96bc6da9866b8057998588e9cfdb5b62d50518063fbf255c17e8f3b9a7bea58f7feeea5d9ae4c8f3ff4fb1a52b514116f687765a
+$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.dsc' libssh_0.10.6-2ubuntu0.2.dsc 2723 SHA512:0ce4ad1a7c238fa3dca8523f49833309c47aa55535c7d438d0c7d6a985e5346d2071d791c1847cbeea76502ca73276e1235dda81f075fc3e0ce90240656065f0
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA512:40c62d63c44e882999b71552c237d73fc7364313bd00b15a211a34aeff1b73693da441d2c8d4e40108d00fb7480ec7c5b6d472f9c0784b2359a179632ab0d6c1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA512:214d7920bebc80a8e6838c64ed06e070709a96fabfb4fff657b55f9588bc0e1612887fe887d23de73ad3540f3bb85288e62eb6a11ccd4bc80afbd44d34ba70d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.1.debian.tar.xz' libssh_0.10.6-2ubuntu0.1.debian.tar.xz 47320 SHA512:346fb67c46e709e239b60a29674e80c7352d9c71c8bf91cc6586d4afe93fbfd09bb8e9c2bfdad62c79a9ce29c8509948027870321fa55e3b58bb28c7436e3320
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.2.debian.tar.xz' libssh_0.10.6-2ubuntu0.2.debian.tar.xz 47820 SHA512:92e9d5c401b22570cabac5c80c984b809d8fbcc537b464b7e5ec69eae254046cb56bb1d5029cc7ac11c0e8010f5501bf8495261f1022770eded064e4f6bb637c
 ```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.1`
