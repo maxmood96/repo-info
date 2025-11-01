@@ -2,13 +2,13 @@
 
 # Tags of `r-base`
 
--	[`r-base:4.5.1`](#r-base451)
+-	[`r-base:4.5.2`](#r-base452)
 -	[`r-base:latest`](#r-baselatest)
 
-## `r-base:4.5.1`
+## `r-base:4.5.2`
 
 ```console
-$ docker pull r-base@sha256:fa1972f31def171b83e0911e947ab8b57db143f0fc8a67af4c0d5ac329041646
+$ docker pull r-base@sha256:e61032223b588b3047058ada6ea5067b374e81d24bc1ec0608e909cfbff7c129
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,40 +22,40 @@ $ docker pull r-base@sha256:fa1972f31def171b83e0911e947ab8b57db143f0fc8a67af4c0d
 	-	linux; s390x
 	-	unknown; unknown
 
-### `r-base:4.5.1` - linux; amd64
+### `r-base:4.5.2` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:a5845a19dbe67a49284a328ad2505cf8688aecaf22e4bbbac581044bbbd11c94
+$ docker pull r-base@sha256:80dcd4667e65fa7bea290fdf672e0e7f94ebc6dc9db219a95de51a7667b82aeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **906.8 MB (906793790 bytes)**  
+-	Total Size: **371.0 MB (370987789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ae9d30c37e27b1356e9c214136e538d5a350216a05898eb91b651d8877cf78`
+-	Image ID: `sha256:23adf75f0e66eacc24b0ee18abe92b39556c2b1ccebef10c37934e478f057f27`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:18 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:18 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:25 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:54:04 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:54:04 GMT
 CMD ["R"]
 ```
 
@@ -64,85 +64,85 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:20:25 GMT  
 		Size: 49.8 MB (49759134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f807ca5580e26dd423ba811dc3cd10874294c7d53bd59cadee489efe8af2f0f0`  
-		Last Modified: Tue, 21 Oct 2025 01:42:20 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:623bfc94ca51632aeafdd2ad1bcc5d5533039641f1154acaf685cee6935f1332`  
+		Last Modified: Fri, 31 Oct 2025 22:55:03 GMT  
+		Size: 3.3 KB (3319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb751f1a3c574d232af4930be1ab5722e79453e0d736d8eb1263708e0eeb646`  
-		Last Modified: Tue, 21 Oct 2025 01:42:22 GMT  
-		Size: 27.0 MB (26954569 bytes)  
+	-	`sha256:761426262dd1e92c6aa657b56b42ed8e965a06e75917885b371be2460c58d488`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 27.0 MB (26965882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dafba1d3190b6953d36d66372309237a598779e9309cc61256a3abe3b3d67545`  
-		Last Modified: Tue, 21 Oct 2025 01:42:20 GMT  
-		Size: 868.5 KB (868478 bytes)  
+	-	`sha256:7c2beb94334fa38b22a2149b273de713f0dd4f5296a2d67990301ff7e3462a9e`  
+		Last Modified: Fri, 31 Oct 2025 22:55:03 GMT  
+		Size: 868.5 KB (868490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:340ee36ead8b4f8acf469ad350188ef08afbcab3975a3cffbfe485a66844ed7b`  
-		Last Modified: Tue, 21 Oct 2025 01:42:20 GMT  
-		Size: 350.0 B  
+	-	`sha256:3aa9e991d6443f654e0fd15ad6c39e991808fe067a611a1d0e966cc1f88bd50a`  
+		Last Modified: Fri, 31 Oct 2025 22:55:03 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb66856b0312f97fb4f36f0418572d970715774614d7394d7e6dc211857dfc6`  
-		Last Modified: Tue, 21 Oct 2025 08:58:57 GMT  
-		Size: 829.2 MB (829207948 bytes)  
+	-	`sha256:2c7559c76bd61d2597655920241db157121f15e7af15e76c78352fe436b6f5f7`  
+		Last Modified: Fri, 31 Oct 2025 23:18:28 GMT  
+		Size: 293.4 MB (293390613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `r-base:4.5.1` - unknown; unknown
+### `r-base:4.5.2` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:afc2ae3d73274957376944a0aff6ae5ecc55fa80baa4b4d51a97e1d119e3cd56
+$ docker pull r-base@sha256:1aa2e3a3a465cf91fe7ba4bd73b25bbc074984a5fb69fccfdc74195527c04ec4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12993491 bytes)**  
+-	Total Size: **13.0 MB (12994186 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf7d20993d0f8b8d0c05660ef991961a078ca2f3d1add2f948cad488b39d1a2e`
+-	Image ID: `sha256:38aeb8c95c48c351d1a00b77e93cb585cb0670c6833de6fdd075f73fa430d87a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:690b412d2e2d1f8587ce2b45bff374da4fad441be2d3c7c0e5c0298747d1e31c`  
-		Last Modified: Tue, 21 Oct 2025 09:13:25 GMT  
-		Size: 13.0 MB (12975350 bytes)  
+	-	`sha256:4eb65149be56b21e58c2acb81154f4afb03020d60d101777b62f4f479dd4d4d3`  
+		Last Modified: Sat, 01 Nov 2025 00:13:29 GMT  
+		Size: 13.0 MB (12976088 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d365036e453b121145f3207e78f44be8b7c44432bb6860889fecf006af61528d`  
-		Last Modified: Tue, 21 Oct 2025 09:13:26 GMT  
-		Size: 18.1 KB (18141 bytes)  
+	-	`sha256:87fd0495a8cb65e69298552ad72cd998c17ac7c82a57eca955d0965a13b791bd`  
+		Last Modified: Sat, 01 Nov 2025 00:13:30 GMT  
+		Size: 18.1 KB (18098 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `r-base:4.5.1` - linux; arm64 variant v8
+### `r-base:4.5.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:591fb54c981957a2bce056f8f6be212bc7250596d6fcdf1de4c38062b05eabd8
+$ docker pull r-base@sha256:7a6f0e23be622e4060d6de412ac8e64ffa2bca44aeef4653425bc94d8c091142
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **907.5 MB (907500520 bytes)**  
+-	Total Size: **352.2 MB (352220609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dab448b6bc7f7eaa392e5f62ba67fcab51cd81f70e618b234825fed0fd3b1833`
+-	Image ID: `sha256:4a75d39e01af6691df81221ecb862293e45bda7bc64e534d52bfa5235535da80`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:13 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:13 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:20 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:54:04 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:54:04 GMT
 CMD ["R"]
 ```
 
@@ -151,85 +151,85 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:22:22 GMT  
 		Size: 49.9 MB (49888480 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf77482bc733d7381c63bc2707d12c4d7ec3554c33a3faca7d07baadf78e039e`  
-		Last Modified: Tue, 21 Oct 2025 02:31:44 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:e8fa1b4ca38bc0467ce2fe12b316ef152d30b02b598aee8fda431df1f2e12277`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 3.3 KB (3318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a4e4b6c1e93b6eaa11c4c0da6a6eba1a9d394a5184b500803ed2776bae88cde`  
-		Last Modified: Tue, 21 Oct 2025 10:24:24 GMT  
-		Size: 26.8 MB (26839661 bytes)  
+	-	`sha256:c9f27da6c9f4cedee8353cbb103a9f00bc30cd4bce118c3de06e4a3bd837ce4f`  
+		Last Modified: Fri, 31 Oct 2025 22:55:10 GMT  
+		Size: 26.8 MB (26828152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e853c5faf0330335c12341146ca95b20a4ecde771c1a6551a136fc8f4601ed5f`  
-		Last Modified: Tue, 21 Oct 2025 02:31:45 GMT  
-		Size: 868.5 KB (868482 bytes)  
+	-	`sha256:15081b32dcc026ce4b91321b1ba07e6522275e7ebe6dd557aa5ae274a4d6b36b`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 868.5 KB (868490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2c5b54d539c2470297efb788ee0ef3b6a73a70239950af0a9d812d20a100431`  
-		Last Modified: Tue, 21 Oct 2025 02:31:44 GMT  
-		Size: 349.0 B  
+	-	`sha256:09fd272a91d670381c1cb0981c0e1e89f05dc6b7bda6a7e637ff5e600ee55a6a`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be6d3b16e1704470db91c8ed07ef50204aa7c1a68ea747535b5c83119b8ea720`  
-		Last Modified: Tue, 21 Oct 2025 10:24:51 GMT  
-		Size: 829.9 MB (829900237 bytes)  
+	-	`sha256:d859aee2cf448fd7af9ab0f2818a783cae21fe2efc83bdf30a1283e04f95b150`  
+		Last Modified: Sat, 01 Nov 2025 01:43:42 GMT  
+		Size: 274.6 MB (274631817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `r-base:4.5.1` - unknown; unknown
+### `r-base:4.5.2` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:feedccdadead44bf6b28e5a5f7e513d535c7b41fce24924b297ec445eb5ee760
+$ docker pull r-base@sha256:0dabf4951781161666990f39b5df301633d9194569a7b21daedf278bf718410c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.1 MB (13082739 bytes)**  
+-	Total Size: **13.1 MB (13083433 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d47b09b05dfd8d66b49d80947890d03bf8ecec6eed3b1d3d13f47de411981f6`
+-	Image ID: `sha256:8ead269bc6b4ef936de10ecc0f64e1ff100a9791ef8a964224d5c6a453590e25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7581bf22336c48c64ad4ef82e3d5d1372667252a4ced2f6144aead2793d45438`  
-		Last Modified: Tue, 21 Oct 2025 09:13:38 GMT  
-		Size: 13.1 MB (13064458 bytes)  
+	-	`sha256:33e3bc201884b6998a222c2ea570dc128a007e86ecb145120e81b14e3782d699`  
+		Last Modified: Sat, 01 Nov 2025 00:13:41 GMT  
+		Size: 13.1 MB (13065196 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:49a157e0e38bef743ef34603aed8acdcb5e18075c691c01577b2687c8f1f9c20`  
-		Last Modified: Tue, 21 Oct 2025 09:13:38 GMT  
-		Size: 18.3 KB (18281 bytes)  
+	-	`sha256:3f572d263e4f49b683e6fdd6c45d0561ce926ab40bdc4e42ac76ba0fecb6ec3e`  
+		Last Modified: Sat, 01 Nov 2025 00:13:42 GMT  
+		Size: 18.2 KB (18237 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `r-base:4.5.1` - linux; ppc64le
+### `r-base:4.5.2` - linux; ppc64le
 
 ```console
-$ docker pull r-base@sha256:b6cf10b516ce6c868a1a71ceb9e516d6ae402b06cdbc1934ba846a6aa8a18690
+$ docker pull r-base@sha256:1a2fdc54db36acadcbeae312b58b0a8be0c3bb6a203ceda212c8ecdabb0cfe55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **826.4 MB (826424596 bytes)**  
+-	Total Size: **363.2 MB (363179602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac0300295acc2b6529b0b093693be5af445621932b7d2677a791fd0c65f57969`
+-	Image ID: `sha256:04a142a04378af0ac41ba9a6a39d43606469d05d162f5af40a97ba462f2a4bd7`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:27 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:27 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:42 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:54:32 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:54:32 GMT
 CMD ["R"]
 ```
 
@@ -238,85 +238,85 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:25:25 GMT  
 		Size: 54.9 MB (54875795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85646ea74bf38169f2b9d17182cd4eab987c862b4d4e07664f8e8990e56a2c85`  
-		Last Modified: Tue, 21 Oct 2025 07:11:51 GMT  
-		Size: 3.3 KB (3316 bytes)  
+	-	`sha256:eb59deea1f3c4d4318d222de0507457fbf32e6c87fedcb0155057a28c16a7e96`  
+		Last Modified: Fri, 31 Oct 2025 22:56:23 GMT  
+		Size: 3.3 KB (3317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1d125e1d918ff2a09fef3fb58b3a67138fc205a0e54e2c8469dd7ea702bee33`  
-		Last Modified: Tue, 21 Oct 2025 07:11:55 GMT  
-		Size: 27.2 MB (27213186 bytes)  
+	-	`sha256:f156a288dcf026e045b3b2bc6db2b0b27f75a08a895dd5b4d8f6311ba5954a0b`  
+		Last Modified: Fri, 31 Oct 2025 22:56:26 GMT  
+		Size: 27.2 MB (27229865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415966122a650a0bf87ec9a0569a98817f0c7a22d9869ee9354d978f16660f17`  
-		Last Modified: Tue, 21 Oct 2025 07:11:52 GMT  
-		Size: 868.5 KB (868488 bytes)  
+	-	`sha256:e73f5b02477921e47511b32882c4551e30dccc25ecc588ae19f8a81d4d46be45`  
+		Last Modified: Fri, 31 Oct 2025 22:56:23 GMT  
+		Size: 868.5 KB (868490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b745a59851063c1c18058b6c12d093d528171099e660c8e44ffdfc17e52f2d14`  
-		Last Modified: Tue, 21 Oct 2025 07:11:52 GMT  
-		Size: 350.0 B  
+	-	`sha256:7de467ecd298a96cfd942e9c8290f83c53653dacb5a2e472c2783d05d1314b71`  
+		Last Modified: Fri, 31 Oct 2025 22:56:23 GMT  
+		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ac5e37feca903a44b4b2628d57646209cae4504f3e93d422bc15e53ab413bd9`  
-		Last Modified: Tue, 21 Oct 2025 10:30:00 GMT  
-		Size: 743.5 MB (743463461 bytes)  
+	-	`sha256:6b4c796bf9632e1572c9f8e4a657c5ed3c9a728ce06c4b67ef11c4a48ff41018`  
+		Last Modified: Sat, 01 Nov 2025 01:49:07 GMT  
+		Size: 280.2 MB (280201783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `r-base:4.5.1` - unknown; unknown
+### `r-base:4.5.2` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:d029bf1d8ba2f864bf4bf11aa2166c8490da0c62b930e05739432ccac5e15779
+$ docker pull r-base@sha256:f44ccb02c553a6ec07dafd29591b3641555d9a7e8b53d0d24882a5303464b233
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12979334 bytes)**  
+-	Total Size: **13.0 MB (12980033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fce9f3a27b961e81c6ed6a89d9478250a2e190d774f7b28bde73976e8696a2f`
+-	Image ID: `sha256:ea445277d96f8fbcc1d284e8e2e32fa3e05a8173ab293722a90426e1891f3ac0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:586a2ea968504ad5b995e15045f1ec26ac08a18f147e31e7a0c409c3ffa8d921`  
-		Last Modified: Tue, 21 Oct 2025 09:13:49 GMT  
-		Size: 13.0 MB (12961153 bytes)  
+	-	`sha256:bd245983f87c7f61368c4a2e6b046f3af37c51b21d1c4ae4cc0a64610eba4893`  
+		Last Modified: Sat, 01 Nov 2025 00:13:52 GMT  
+		Size: 13.0 MB (12961895 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4d1e42759477ea10983043b787d372cddb3ebb3e926402a88cd74fcf32f10a19`  
-		Last Modified: Tue, 21 Oct 2025 09:13:50 GMT  
-		Size: 18.2 KB (18181 bytes)  
+	-	`sha256:b049c3b967650e1c34332465741791af842bbf4ab0fdda389a4471abf2e1d906`  
+		Last Modified: Sat, 01 Nov 2025 00:13:53 GMT  
+		Size: 18.1 KB (18138 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `r-base:4.5.1` - linux; s390x
+### `r-base:4.5.2` - linux; s390x
 
 ```console
-$ docker pull r-base@sha256:9ef0644a70df708a82b4424c0f33b7e124432ba58a718cb4e1741e1eccf22284
+$ docker pull r-base@sha256:22971dba9eeacc72289ec2bd2887e1b675887cd2b7563975787332ae8d0694c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **779.4 MB (779372790 bytes)**  
+-	Total Size: **331.0 MB (331029885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53ccf9e2dc3df957952a46a01aa9a8105efbdac2dfd64bc32ba5fe8b44dc5da4`
+-	Image ID: `sha256:d955ce161b16d476742fb9d483b20aa17abd303d1400f24f9571f7e67b95ec6e`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:41 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:41 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:51 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:52 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:52 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:52 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:53 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:53 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:53:44 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:44 GMT
 CMD ["R"]
 ```
 
@@ -325,55 +325,55 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:26:48 GMT  
 		Size: 49.6 MB (49620786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ffd483098a2ae8d97868f3c212e492290cdb452b4e76bc07fa2db8d79cd121`  
-		Last Modified: Tue, 21 Oct 2025 11:41:25 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:897c6fb9d0333be3c4270cb02a32dbdc4522ded35c0a6e282b1acbe4c43a2562`  
+		Last Modified: Fri, 31 Oct 2025 22:54:54 GMT  
+		Size: 3.3 KB (3318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c73c7278129f0efc4442260f21e3f275858b19a591ea9d1ab2d1a0580d49bc49`  
-		Last Modified: Tue, 21 Oct 2025 11:41:26 GMT  
-		Size: 26.9 MB (26908971 bytes)  
+	-	`sha256:054a6bac16c83fdf6f6acf17d0b99c9a24cc9476452e5a4d775fadd5c7092c0b`  
+		Last Modified: Fri, 31 Oct 2025 22:54:57 GMT  
+		Size: 26.9 MB (26909421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e451d816f825973a87233febcba7a5f493fc21b78e24da3d15a013684c680f65`  
-		Last Modified: Tue, 21 Oct 2025 11:41:25 GMT  
-		Size: 924.5 KB (924548 bytes)  
+	-	`sha256:bb6d557edd662cb37de0d8e1f8b5e070832e87398bbb7b3b6175800a2c646fb5`  
+		Last Modified: Fri, 31 Oct 2025 22:54:54 GMT  
+		Size: 924.6 KB (924552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041365f0f3ac7a5a39568a1f5b8b9293b61bd98498243022fcd50c8bf3f4c837`  
-		Last Modified: Tue, 21 Oct 2025 11:41:25 GMT  
-		Size: 349.0 B  
+	-	`sha256:938ea86dc35c0d1383bbf4b613caf886b50a97f7f09e99ba5ccb735745fa31c6`  
+		Last Modified: Fri, 31 Oct 2025 22:54:54 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:357b1194500fefbd0f9741edcd2f749dead2b071e84da68afc36a1d4189117bc`  
-		Last Modified: Wed, 22 Oct 2025 03:29:05 GMT  
-		Size: 701.9 MB (701914825 bytes)  
+	-	`sha256:968bb8e42f93628da0dfb9be58c70a20fa756911bc3c297baa093d7b8c362cc1`  
+		Last Modified: Fri, 31 Oct 2025 22:54:43 GMT  
+		Size: 253.6 MB (253571457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `r-base:4.5.1` - unknown; unknown
+### `r-base:4.5.2` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:ee05fe9d979cf1df8ec9f4543283c9527fff7ad79e60d6c67d6654cff4766586
+$ docker pull r-base@sha256:20c9c1cd95acd7bc50bf1d853989d6cbcd1aacc4255b2db3d7b2e3b258da3991
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12784700 bytes)**  
+-	Total Size: **12.8 MB (12785395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a18cee4b52dce171bff83679fb6eb33cbdfd7f54f565361caaaae548bddc96ec`
+-	Image ID: `sha256:532ac73a39ac229d922b82bab899a96504455858f9dd2a435f2da49dcada3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8378c7d4f396c938998bd2ec1e302c8a2a703e1571d82d25ffdb9d3187f56590`  
-		Last Modified: Tue, 21 Oct 2025 12:13:44 GMT  
-		Size: 12.8 MB (12766560 bytes)  
+	-	`sha256:69e39a23be5b0188222cb273a3a4a6029c7ae8d3b6ec2448a7f6be95bd353cde`  
+		Last Modified: Sat, 01 Nov 2025 00:14:02 GMT  
+		Size: 12.8 MB (12767298 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c8855430796d006c4df81c77db921862f2d6c149c342f1af2ec8649838ee9358`  
-		Last Modified: Tue, 21 Oct 2025 12:13:45 GMT  
-		Size: 18.1 KB (18140 bytes)  
+	-	`sha256:a8a82a8853ec5657d50c2568d531a06a9e66522da337e654ce47c4e6380b8a85`  
+		Last Modified: Sat, 01 Nov 2025 00:14:04 GMT  
+		Size: 18.1 KB (18097 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:fa1972f31def171b83e0911e947ab8b57db143f0fc8a67af4c0d5ac329041646
+$ docker pull r-base@sha256:e61032223b588b3047058ada6ea5067b374e81d24bc1ec0608e909cfbff7c129
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -390,37 +390,37 @@ $ docker pull r-base@sha256:fa1972f31def171b83e0911e947ab8b57db143f0fc8a67af4c0d
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:a5845a19dbe67a49284a328ad2505cf8688aecaf22e4bbbac581044bbbd11c94
+$ docker pull r-base@sha256:80dcd4667e65fa7bea290fdf672e0e7f94ebc6dc9db219a95de51a7667b82aeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **906.8 MB (906793790 bytes)**  
+-	Total Size: **371.0 MB (370987789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00ae9d30c37e27b1356e9c214136e538d5a350216a05898eb91b651d8877cf78`
+-	Image ID: `sha256:23adf75f0e66eacc24b0ee18abe92b39556c2b1ccebef10c37934e478f057f27`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:18 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:18 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:25 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:26 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:54:04 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:54:04 GMT
 CMD ["R"]
 ```
 
@@ -429,85 +429,85 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:20:25 GMT  
 		Size: 49.8 MB (49759134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f807ca5580e26dd423ba811dc3cd10874294c7d53bd59cadee489efe8af2f0f0`  
-		Last Modified: Tue, 21 Oct 2025 01:42:20 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:623bfc94ca51632aeafdd2ad1bcc5d5533039641f1154acaf685cee6935f1332`  
+		Last Modified: Fri, 31 Oct 2025 22:55:03 GMT  
+		Size: 3.3 KB (3319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb751f1a3c574d232af4930be1ab5722e79453e0d736d8eb1263708e0eeb646`  
-		Last Modified: Tue, 21 Oct 2025 01:42:22 GMT  
-		Size: 27.0 MB (26954569 bytes)  
+	-	`sha256:761426262dd1e92c6aa657b56b42ed8e965a06e75917885b371be2460c58d488`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 27.0 MB (26965882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dafba1d3190b6953d36d66372309237a598779e9309cc61256a3abe3b3d67545`  
-		Last Modified: Tue, 21 Oct 2025 01:42:20 GMT  
-		Size: 868.5 KB (868478 bytes)  
+	-	`sha256:7c2beb94334fa38b22a2149b273de713f0dd4f5296a2d67990301ff7e3462a9e`  
+		Last Modified: Fri, 31 Oct 2025 22:55:03 GMT  
+		Size: 868.5 KB (868490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:340ee36ead8b4f8acf469ad350188ef08afbcab3975a3cffbfe485a66844ed7b`  
-		Last Modified: Tue, 21 Oct 2025 01:42:20 GMT  
-		Size: 350.0 B  
+	-	`sha256:3aa9e991d6443f654e0fd15ad6c39e991808fe067a611a1d0e966cc1f88bd50a`  
+		Last Modified: Fri, 31 Oct 2025 22:55:03 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb66856b0312f97fb4f36f0418572d970715774614d7394d7e6dc211857dfc6`  
-		Last Modified: Tue, 21 Oct 2025 08:58:57 GMT  
-		Size: 829.2 MB (829207948 bytes)  
+	-	`sha256:2c7559c76bd61d2597655920241db157121f15e7af15e76c78352fe436b6f5f7`  
+		Last Modified: Fri, 31 Oct 2025 23:18:28 GMT  
+		Size: 293.4 MB (293390613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `r-base:latest` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:afc2ae3d73274957376944a0aff6ae5ecc55fa80baa4b4d51a97e1d119e3cd56
+$ docker pull r-base@sha256:1aa2e3a3a465cf91fe7ba4bd73b25bbc074984a5fb69fccfdc74195527c04ec4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12993491 bytes)**  
+-	Total Size: **13.0 MB (12994186 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf7d20993d0f8b8d0c05660ef991961a078ca2f3d1add2f948cad488b39d1a2e`
+-	Image ID: `sha256:38aeb8c95c48c351d1a00b77e93cb585cb0670c6833de6fdd075f73fa430d87a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:690b412d2e2d1f8587ce2b45bff374da4fad441be2d3c7c0e5c0298747d1e31c`  
-		Last Modified: Tue, 21 Oct 2025 09:13:25 GMT  
-		Size: 13.0 MB (12975350 bytes)  
+	-	`sha256:4eb65149be56b21e58c2acb81154f4afb03020d60d101777b62f4f479dd4d4d3`  
+		Last Modified: Sat, 01 Nov 2025 00:13:29 GMT  
+		Size: 13.0 MB (12976088 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d365036e453b121145f3207e78f44be8b7c44432bb6860889fecf006af61528d`  
-		Last Modified: Tue, 21 Oct 2025 09:13:26 GMT  
-		Size: 18.1 KB (18141 bytes)  
+	-	`sha256:87fd0495a8cb65e69298552ad72cd998c17ac7c82a57eca955d0965a13b791bd`  
+		Last Modified: Sat, 01 Nov 2025 00:13:30 GMT  
+		Size: 18.1 KB (18098 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `r-base:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:591fb54c981957a2bce056f8f6be212bc7250596d6fcdf1de4c38062b05eabd8
+$ docker pull r-base@sha256:7a6f0e23be622e4060d6de412ac8e64ffa2bca44aeef4653425bc94d8c091142
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **907.5 MB (907500520 bytes)**  
+-	Total Size: **352.2 MB (352220609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dab448b6bc7f7eaa392e5f62ba67fcab51cd81f70e618b234825fed0fd3b1833`
+-	Image ID: `sha256:4a75d39e01af6691df81221ecb862293e45bda7bc64e534d52bfa5235535da80`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:13 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:13 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:20 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:22 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:54:04 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:54:04 GMT
 CMD ["R"]
 ```
 
@@ -516,85 +516,85 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:22:22 GMT  
 		Size: 49.9 MB (49888480 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf77482bc733d7381c63bc2707d12c4d7ec3554c33a3faca7d07baadf78e039e`  
-		Last Modified: Tue, 21 Oct 2025 02:31:44 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:e8fa1b4ca38bc0467ce2fe12b316ef152d30b02b598aee8fda431df1f2e12277`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 3.3 KB (3318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a4e4b6c1e93b6eaa11c4c0da6a6eba1a9d394a5184b500803ed2776bae88cde`  
-		Last Modified: Tue, 21 Oct 2025 10:24:24 GMT  
-		Size: 26.8 MB (26839661 bytes)  
+	-	`sha256:c9f27da6c9f4cedee8353cbb103a9f00bc30cd4bce118c3de06e4a3bd837ce4f`  
+		Last Modified: Fri, 31 Oct 2025 22:55:10 GMT  
+		Size: 26.8 MB (26828152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e853c5faf0330335c12341146ca95b20a4ecde771c1a6551a136fc8f4601ed5f`  
-		Last Modified: Tue, 21 Oct 2025 02:31:45 GMT  
-		Size: 868.5 KB (868482 bytes)  
+	-	`sha256:15081b32dcc026ce4b91321b1ba07e6522275e7ebe6dd557aa5ae274a4d6b36b`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 868.5 KB (868490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2c5b54d539c2470297efb788ee0ef3b6a73a70239950af0a9d812d20a100431`  
-		Last Modified: Tue, 21 Oct 2025 02:31:44 GMT  
-		Size: 349.0 B  
+	-	`sha256:09fd272a91d670381c1cb0981c0e1e89f05dc6b7bda6a7e637ff5e600ee55a6a`  
+		Last Modified: Fri, 31 Oct 2025 22:55:06 GMT  
+		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be6d3b16e1704470db91c8ed07ef50204aa7c1a68ea747535b5c83119b8ea720`  
-		Last Modified: Tue, 21 Oct 2025 10:24:51 GMT  
-		Size: 829.9 MB (829900237 bytes)  
+	-	`sha256:d859aee2cf448fd7af9ab0f2818a783cae21fe2efc83bdf30a1283e04f95b150`  
+		Last Modified: Sat, 01 Nov 2025 01:43:42 GMT  
+		Size: 274.6 MB (274631817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `r-base:latest` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:feedccdadead44bf6b28e5a5f7e513d535c7b41fce24924b297ec445eb5ee760
+$ docker pull r-base@sha256:0dabf4951781161666990f39b5df301633d9194569a7b21daedf278bf718410c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.1 MB (13082739 bytes)**  
+-	Total Size: **13.1 MB (13083433 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d47b09b05dfd8d66b49d80947890d03bf8ecec6eed3b1d3d13f47de411981f6`
+-	Image ID: `sha256:8ead269bc6b4ef936de10ecc0f64e1ff100a9791ef8a964224d5c6a453590e25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7581bf22336c48c64ad4ef82e3d5d1372667252a4ced2f6144aead2793d45438`  
-		Last Modified: Tue, 21 Oct 2025 09:13:38 GMT  
-		Size: 13.1 MB (13064458 bytes)  
+	-	`sha256:33e3bc201884b6998a222c2ea570dc128a007e86ecb145120e81b14e3782d699`  
+		Last Modified: Sat, 01 Nov 2025 00:13:41 GMT  
+		Size: 13.1 MB (13065196 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:49a157e0e38bef743ef34603aed8acdcb5e18075c691c01577b2687c8f1f9c20`  
-		Last Modified: Tue, 21 Oct 2025 09:13:38 GMT  
-		Size: 18.3 KB (18281 bytes)  
+	-	`sha256:3f572d263e4f49b683e6fdd6c45d0561ce926ab40bdc4e42ac76ba0fecb6ec3e`  
+		Last Modified: Sat, 01 Nov 2025 00:13:42 GMT  
+		Size: 18.2 KB (18237 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `r-base:latest` - linux; ppc64le
 
 ```console
-$ docker pull r-base@sha256:b6cf10b516ce6c868a1a71ceb9e516d6ae402b06cdbc1934ba846a6aa8a18690
+$ docker pull r-base@sha256:1a2fdc54db36acadcbeae312b58b0a8be0c3bb6a203ceda212c8ecdabb0cfe55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **826.4 MB (826424596 bytes)**  
+-	Total Size: **363.2 MB (363179602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac0300295acc2b6529b0b093693be5af445621932b7d2677a791fd0c65f57969`
+-	Image ID: `sha256:04a142a04378af0ac41ba9a6a39d43606469d05d162f5af40a97ba462f2a4bd7`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:27 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:27 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:42 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:45 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:54:32 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:54:32 GMT
 CMD ["R"]
 ```
 
@@ -603,85 +603,85 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:25:25 GMT  
 		Size: 54.9 MB (54875795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85646ea74bf38169f2b9d17182cd4eab987c862b4d4e07664f8e8990e56a2c85`  
-		Last Modified: Tue, 21 Oct 2025 07:11:51 GMT  
-		Size: 3.3 KB (3316 bytes)  
+	-	`sha256:eb59deea1f3c4d4318d222de0507457fbf32e6c87fedcb0155057a28c16a7e96`  
+		Last Modified: Fri, 31 Oct 2025 22:56:23 GMT  
+		Size: 3.3 KB (3317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1d125e1d918ff2a09fef3fb58b3a67138fc205a0e54e2c8469dd7ea702bee33`  
-		Last Modified: Tue, 21 Oct 2025 07:11:55 GMT  
-		Size: 27.2 MB (27213186 bytes)  
+	-	`sha256:f156a288dcf026e045b3b2bc6db2b0b27f75a08a895dd5b4d8f6311ba5954a0b`  
+		Last Modified: Fri, 31 Oct 2025 22:56:26 GMT  
+		Size: 27.2 MB (27229865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:415966122a650a0bf87ec9a0569a98817f0c7a22d9869ee9354d978f16660f17`  
-		Last Modified: Tue, 21 Oct 2025 07:11:52 GMT  
-		Size: 868.5 KB (868488 bytes)  
+	-	`sha256:e73f5b02477921e47511b32882c4551e30dccc25ecc588ae19f8a81d4d46be45`  
+		Last Modified: Fri, 31 Oct 2025 22:56:23 GMT  
+		Size: 868.5 KB (868490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b745a59851063c1c18058b6c12d093d528171099e660c8e44ffdfc17e52f2d14`  
-		Last Modified: Tue, 21 Oct 2025 07:11:52 GMT  
-		Size: 350.0 B  
+	-	`sha256:7de467ecd298a96cfd942e9c8290f83c53653dacb5a2e472c2783d05d1314b71`  
+		Last Modified: Fri, 31 Oct 2025 22:56:23 GMT  
+		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ac5e37feca903a44b4b2628d57646209cae4504f3e93d422bc15e53ab413bd9`  
-		Last Modified: Tue, 21 Oct 2025 10:30:00 GMT  
-		Size: 743.5 MB (743463461 bytes)  
+	-	`sha256:6b4c796bf9632e1572c9f8e4a657c5ed3c9a728ce06c4b67ef11c4a48ff41018`  
+		Last Modified: Sat, 01 Nov 2025 01:49:07 GMT  
+		Size: 280.2 MB (280201783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `r-base:latest` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:d029bf1d8ba2f864bf4bf11aa2166c8490da0c62b930e05739432ccac5e15779
+$ docker pull r-base@sha256:f44ccb02c553a6ec07dafd29591b3641555d9a7e8b53d0d24882a5303464b233
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12979334 bytes)**  
+-	Total Size: **13.0 MB (12980033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fce9f3a27b961e81c6ed6a89d9478250a2e190d774f7b28bde73976e8696a2f`
+-	Image ID: `sha256:ea445277d96f8fbcc1d284e8e2e32fa3e05a8173ab293722a90426e1891f3ac0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:586a2ea968504ad5b995e15045f1ec26ac08a18f147e31e7a0c409c3ffa8d921`  
-		Last Modified: Tue, 21 Oct 2025 09:13:49 GMT  
-		Size: 13.0 MB (12961153 bytes)  
+	-	`sha256:bd245983f87c7f61368c4a2e6b046f3af37c51b21d1c4ae4cc0a64610eba4893`  
+		Last Modified: Sat, 01 Nov 2025 00:13:52 GMT  
+		Size: 13.0 MB (12961895 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4d1e42759477ea10983043b787d372cddb3ebb3e926402a88cd74fcf32f10a19`  
-		Last Modified: Tue, 21 Oct 2025 09:13:50 GMT  
-		Size: 18.2 KB (18181 bytes)  
+	-	`sha256:b049c3b967650e1c34332465741791af842bbf4ab0fdda389a4471abf2e1d906`  
+		Last Modified: Sat, 01 Nov 2025 00:13:53 GMT  
+		Size: 18.1 KB (18138 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `r-base:latest` - linux; s390x
 
 ```console
-$ docker pull r-base@sha256:9ef0644a70df708a82b4424c0f33b7e124432ba58a718cb4e1741e1eccf22284
+$ docker pull r-base@sha256:22971dba9eeacc72289ec2bd2887e1b675887cd2b7563975787332ae8d0694c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **779.4 MB (779372790 bytes)**  
+-	Total Size: **331.0 MB (331029885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53ccf9e2dc3df957952a46a01aa9a8105efbdac2dfd64bc32ba5fe8b44dc5da4`
+-	Image ID: `sha256:d955ce161b16d476742fb9d483b20aa17abd303d1400f24f9571f7e67b95ec6e`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Mon, 20 Oct 2025 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'testing' '@1760918400'
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:41 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:41 GMT
 RUN useradd -s /bin/bash -m docker 	&& usermod -a -G staff docker # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:51 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:52 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:52 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:52 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:53 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
-ENV R_BASE_VERSION=4.5.1
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:52:53 GMT
+ENV R_BASE_VERSION=4.5.2
+# Fri, 31 Oct 2025 22:53:44 GMT
 RUN apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-docopt                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& chown root:staff "/usr/local/lib/R/site-library" 	&& chmod g+ws "/usr/local/lib/R/site-library" 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 13 Jun 2025 15:18:05 GMT
+# Fri, 31 Oct 2025 22:53:44 GMT
 CMD ["R"]
 ```
 
@@ -690,47 +690,47 @@ CMD ["R"]
 		Last Modified: Tue, 21 Oct 2025 00:26:48 GMT  
 		Size: 49.6 MB (49620786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ffd483098a2ae8d97868f3c212e492290cdb452b4e76bc07fa2db8d79cd121`  
-		Last Modified: Tue, 21 Oct 2025 11:41:25 GMT  
-		Size: 3.3 KB (3311 bytes)  
+	-	`sha256:897c6fb9d0333be3c4270cb02a32dbdc4522ded35c0a6e282b1acbe4c43a2562`  
+		Last Modified: Fri, 31 Oct 2025 22:54:54 GMT  
+		Size: 3.3 KB (3318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c73c7278129f0efc4442260f21e3f275858b19a591ea9d1ab2d1a0580d49bc49`  
-		Last Modified: Tue, 21 Oct 2025 11:41:26 GMT  
-		Size: 26.9 MB (26908971 bytes)  
+	-	`sha256:054a6bac16c83fdf6f6acf17d0b99c9a24cc9476452e5a4d775fadd5c7092c0b`  
+		Last Modified: Fri, 31 Oct 2025 22:54:57 GMT  
+		Size: 26.9 MB (26909421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e451d816f825973a87233febcba7a5f493fc21b78e24da3d15a013684c680f65`  
-		Last Modified: Tue, 21 Oct 2025 11:41:25 GMT  
-		Size: 924.5 KB (924548 bytes)  
+	-	`sha256:bb6d557edd662cb37de0d8e1f8b5e070832e87398bbb7b3b6175800a2c646fb5`  
+		Last Modified: Fri, 31 Oct 2025 22:54:54 GMT  
+		Size: 924.6 KB (924552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041365f0f3ac7a5a39568a1f5b8b9293b61bd98498243022fcd50c8bf3f4c837`  
-		Last Modified: Tue, 21 Oct 2025 11:41:25 GMT  
-		Size: 349.0 B  
+	-	`sha256:938ea86dc35c0d1383bbf4b613caf886b50a97f7f09e99ba5ccb735745fa31c6`  
+		Last Modified: Fri, 31 Oct 2025 22:54:54 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:357b1194500fefbd0f9741edcd2f749dead2b071e84da68afc36a1d4189117bc`  
-		Last Modified: Wed, 22 Oct 2025 03:29:05 GMT  
-		Size: 701.9 MB (701914825 bytes)  
+	-	`sha256:968bb8e42f93628da0dfb9be58c70a20fa756911bc3c297baa093d7b8c362cc1`  
+		Last Modified: Fri, 31 Oct 2025 22:54:43 GMT  
+		Size: 253.6 MB (253571457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `r-base:latest` - unknown; unknown
 
 ```console
-$ docker pull r-base@sha256:ee05fe9d979cf1df8ec9f4543283c9527fff7ad79e60d6c67d6654cff4766586
+$ docker pull r-base@sha256:20c9c1cd95acd7bc50bf1d853989d6cbcd1aacc4255b2db3d7b2e3b258da3991
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12784700 bytes)**  
+-	Total Size: **12.8 MB (12785395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a18cee4b52dce171bff83679fb6eb33cbdfd7f54f565361caaaae548bddc96ec`
+-	Image ID: `sha256:532ac73a39ac229d922b82bab899a96504455858f9dd2a435f2da49dcada3779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8378c7d4f396c938998bd2ec1e302c8a2a703e1571d82d25ffdb9d3187f56590`  
-		Last Modified: Tue, 21 Oct 2025 12:13:44 GMT  
-		Size: 12.8 MB (12766560 bytes)  
+	-	`sha256:69e39a23be5b0188222cb273a3a4a6029c7ae8d3b6ec2448a7f6be95bd353cde`  
+		Last Modified: Sat, 01 Nov 2025 00:14:02 GMT  
+		Size: 12.8 MB (12767298 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c8855430796d006c4df81c77db921862f2d6c149c342f1af2ec8649838ee9358`  
-		Last Modified: Tue, 21 Oct 2025 12:13:45 GMT  
-		Size: 18.1 KB (18140 bytes)  
+	-	`sha256:a8a82a8853ec5657d50c2568d531a06a9e66522da337e654ce47c4e6380b8a85`  
+		Last Modified: Sat, 01 Nov 2025 00:14:04 GMT  
+		Size: 18.1 KB (18097 bytes)  
 		MIME: application/vnd.in-toto+json
