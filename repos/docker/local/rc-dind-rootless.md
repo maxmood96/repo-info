@@ -1,18 +1,18 @@
-# `docker:29.0.0-rc.1-dind-rootless`
+# `docker:29.0.0-rc.2-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:901eeb75114e741253b93f010e305513697a327fa7b614f1132debf13ef0bb12`
-- Created: `2025-10-14T15:11:51Z`
-- Virtual Size: ~ 460.19 Mb  
+- Image ID: `sha256:0c7dc96a0ca41408e7a73d2c439dfebee1714e862e088ba196bed2926456c27f`
+- Created: `2025-11-01T01:10:21.073663929Z`
+- Virtual Size: ~ 458.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.0.0-rc.1`
+  - `DOCKER_VERSION=29.0.0-rc.2`
   - `DOCKER_BUILDX_VERSION=0.29.1`
-  - `DOCKER_COMPOSE_VERSION=2.40.0`
+  - `DOCKER_COMPOSE_VERSION=2.40.3`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -1279,16 +1279,16 @@ Apache-2.0
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```

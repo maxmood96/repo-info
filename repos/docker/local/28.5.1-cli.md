@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1318cd7ee2473ed74409c9c9e8e193689c609675aa0876a493396395e194f8d0`
-- Created: `2025-10-08T16:45:42Z`
-- Virtual Size: ~ 213.99 Mb  
+- Image ID: `sha256:cb35a324baab0f0734b56cc08147911521986885840fe624ca57533b067b4e7e`
+- Created: `2025-10-31T23:55:54.398966038Z`
+- Virtual Size: ~ 214.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=28.5.1`
   - `DOCKER_BUILDX_VERSION=0.29.1`
-  - `DOCKER_COMPOSE_VERSION=2.40.0`
+  - `DOCKER_COMPOSE_VERSION=2.40.3`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -531,16 +531,16 @@ SSH-OpenSSH
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.43-r1 description:
+pcre2-10.46-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.43-r1 webpage:
+pcre2-10.46-r0 webpage:
 https://pcre.org/
 
-pcre2-10.43-r1 installed size:
-707 KiB
+pcre2-10.46-r0 installed size:
+767 KiB
 
-pcre2-10.43-r1 license:
+pcre2-10.46-r0 license:
 BSD-3-Clause
 
 ```
