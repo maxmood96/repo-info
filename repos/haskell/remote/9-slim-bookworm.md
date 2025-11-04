@@ -1,7 +1,7 @@
 ## `haskell:9-slim-bookworm`
 
 ```console
-$ docker pull haskell@sha256:0834186daafff0f1f8c1522110071bf672eefebdc037012f6d48dc30af1e52e8
+$ docker pull haskell@sha256:16dc463589ebcf68e44cd5bc61b43fb18e03e45ff1af67aba60dfb176aa9528a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,183 +14,183 @@ $ docker pull haskell@sha256:0834186daafff0f1f8c1522110071bf672eefebdc037012f6d4
 ### `haskell:9-slim-bookworm` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:bca387c151269b4592fc6fcb0ea8fdc9194562b249184c3f2a31bc7c8e84eb29
+$ docker pull haskell@sha256:8acf9bb58bae511ed476977343fac1de2e51f141245ff029d5f1bfab04b4c81b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **774.2 MB (774226338 bytes)**  
+-	Total Size: **774.2 MB (774222252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4c5067578be45121c6e1d0c78928442d45b278517dcd8844738ce92bc6a1467`
+-	Image ID: `sha256:e627c0acb7655a25ab23517f0e709c213dacd013d98c95b1a6e326c14d270d7c`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 20 Aug 2025 11:59:39 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1760918400'
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:16:51 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:51 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         ca-certificates         curl         dpkg-dev         git         gcc         gnupg         g++         libc6-dev         libffi-dev         libgmp-dev         libnuma-dev         libtinfo-dev         make         netbase         xz-utils         zlib1g-dev &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:51 GMT
 ARG STACK=3.3.1
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:51 GMT
 ARG STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:53 GMT
 # ARGS: STACK=3.3.1 STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442
 RUN set -eux;     cd /tmp;     ARCH="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)";     STACK_URL="https://github.com/commercialhaskell/stack/releases/download/v${STACK}/stack-${STACK}-linux-$ARCH.tar.gz";     case "$ARCH" in         'aarch64')             STACK_SHA256='bdd618ea5a9c921417727011f2ecd78987dffa5cee5e741108baf65a9b5b58ab';             ;;         'x86_64')             STACK_SHA256='88d7e517342c125b0a098d9d578fe53e590618ae4b2427283a27408a1ebd06d8';             ;;         *) echo >&2 "error: unsupported architecture '$ARCH'" ; exit 1 ;;     esac;     curl -sSL "$STACK_URL" -o stack.tar.gz;     echo "$STACK_SHA256 stack.tar.gz" | sha256sum --strict --check;         curl -sSL "$STACK_URL.asc" -o stack.tar.gz.asc;     GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;     gpg --batch --keyserver keyserver.ubuntu.com --receive-keys "$STACK_RELEASE_KEY";     gpg --batch --verify stack.tar.gz.asc stack.tar.gz;     gpgconf --kill all;         tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 "stack-$STACK-linux-$ARCH/stack";     stack config set system-ghc --global true;     stack config set install-ghc --global false;         rm -rf /tmp/*;         stack --version; # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:53 GMT
 ARG CABAL_INSTALL=3.14.1.1
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:53 GMT
 ARG CABAL_INSTALL_RELEASE_KEY=EAF2A9A722C0C96F2B431CA511AAD8CEDEE0CAEF
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:54 GMT
 # ARGS: STACK=3.3.1 STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442 CABAL_INSTALL=3.14.1.1 CABAL_INSTALL_RELEASE_KEY=EAF2A9A722C0C96F2B431CA511AAD8CEDEE0CAEF
 RUN set -eux;     cd /tmp;     ARCH="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)";     CABAL_INSTALL_TAR="cabal-install-$CABAL_INSTALL-$ARCH-linux-deb12.tar.xz";     CABAL_INSTALL_URL="https://downloads.haskell.org/~cabal/cabal-install-$CABAL_INSTALL/$CABAL_INSTALL_TAR";     CABAL_INSTALL_SHA256SUMS_URL="https://downloads.haskell.org/~cabal/cabal-install-$CABAL_INSTALL/SHA256SUMS";     case "$ARCH" in         'aarch64')             CABAL_INSTALL_SHA256='f763fb2af2bc1ff174b7361a7d51109a585954f87a0e14f86d144f3bce28f7a9';             ;;         'x86_64')             CABAL_INSTALL_SHA256='73a463306c771e18ca22c0a9469176ffab0138ec5925adb5364ef47174e1adc5';             ;;         *) echo >&2 "error: unsupported architecture '$ARCH'"; exit 1 ;;     esac;     curl -fSL "$CABAL_INSTALL_URL" -o cabal-install.tar.gz;     echo "$CABAL_INSTALL_SHA256 cabal-install.tar.gz" | sha256sum --strict --check;         curl -sSLO "$CABAL_INSTALL_SHA256SUMS_URL";     curl -sSLO "$CABAL_INSTALL_SHA256SUMS_URL.sig";     GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;     gpg --batch --keyserver keyserver.ubuntu.com --receive-keys "$CABAL_INSTALL_RELEASE_KEY";     gpg --batch --verify SHA256SUMS.sig SHA256SUMS;     grep "$CABAL_INSTALL_SHA256  $CABAL_INSTALL_TAR" SHA256SUMS;     gpgconf --kill all;         tar -xf cabal-install.tar.gz -C /usr/local/bin;         rm -rf /tmp/*;         cabal --version # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:54 GMT
 ARG GHC=9.12.2
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:54 GMT
 ARG GHC_RELEASE_KEY=FFEB7CE81E16A36B3E2DED6F2DE04D4E97DB64AD
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:18:47 GMT
 # ARGS: STACK=3.3.1 STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442 CABAL_INSTALL=3.14.1.1 CABAL_INSTALL_RELEASE_KEY=EAF2A9A722C0C96F2B431CA511AAD8CEDEE0CAEF GHC=9.12.2 GHC_RELEASE_KEY=FFEB7CE81E16A36B3E2DED6F2DE04D4E97DB64AD
 RUN set -eux;     cd /tmp;     ARCH="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)";     GHC_URL="https://downloads.haskell.org/~ghc/$GHC/ghc-$GHC-$ARCH-deb12-linux.tar.xz";     case "$ARCH" in         'aarch64')             GHC_SHA256='bee95bc91a621d8a2e9a9d86dac28ff839605e87316518dae12c779709bd58f1';             ;;         'x86_64')             GHC_SHA256='447ec2fcc773ae9ebc3f39766c719641631274f9b765d7426a8cbe9241677c9f';             ;;         *) echo >&2 "error: unsupported architecture '$ARCH'" ; exit 1 ;;     esac;     curl -sSL "$GHC_URL" -o ghc.tar.xz;     echo "$GHC_SHA256 ghc.tar.xz" | sha256sum --strict --check;         GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;     curl -sSL "$GHC_URL.sig" -o ghc.tar.xz.sig;     gpg --batch --keyserver keyserver.ubuntu.com --receive-keys "$GHC_RELEASE_KEY";     gpg --batch --verify ghc.tar.xz.sig ghc.tar.xz;     gpgconf --kill all;         tar xf ghc.tar.xz;     cd "ghc-$GHC-$ARCH-unknown-linux";     ./configure --prefix "/opt/ghc/$GHC";     make install;         rm -rf /tmp/*;         "/opt/ghc/$GHC/bin/ghc" --version # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:18:47 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:18:47 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:abe1fea375429ba91b23776f15f53da4ed790fa2b779b40d20f21e69bd66de5a`  
-		Last Modified: Tue, 21 Oct 2025 00:19:19 GMT  
-		Size: 28.2 MB (28228321 bytes)  
+	-	`sha256:1adabd6b0d6b8acfa4ad149a984df0977135a7babf423538c7284a02744a4ee8`  
+		Last Modified: Tue, 04 Nov 2025 00:12:15 GMT  
+		Size: 28.2 MB (28228567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5375b0424352c3c8168bec5374a3484412f77ae9b39f9770fb2a8ad01bc9e9b6`  
-		Last Modified: Tue, 21 Oct 2025 01:20:34 GMT  
-		Size: 124.4 MB (124405814 bytes)  
+	-	`sha256:d4cfb066e8ea073b187326e2ceb73719b63ac6f3cf068e01220ee332650003ad`  
+		Last Modified: Tue, 04 Nov 2025 00:20:58 GMT  
+		Size: 124.4 MB (124405960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fa62665a794b5e811905d2a4ba7b559313845ea704ef3a0c275b993df3aa2a9`  
-		Last Modified: Tue, 21 Oct 2025 01:20:19 GMT  
-		Size: 22.2 MB (22220769 bytes)  
+	-	`sha256:57a7aee672952ec57fc5287c88897c2fc64244157db9815d36c703228a209fa9`  
+		Last Modified: Tue, 04 Nov 2025 00:20:35 GMT  
+		Size: 22.2 MB (22220768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9e193177367c933a9dc66d22c22b5a535a444ce459f745c6975bf447c31514b`  
-		Last Modified: Tue, 21 Oct 2025 01:20:20 GMT  
-		Size: 7.6 MB (7607056 bytes)  
+	-	`sha256:701cf9879e02a272ef2359ff406b9b2929b2f45dad581f4d322fbb871747e116`  
+		Last Modified: Tue, 04 Nov 2025 00:20:34 GMT  
+		Size: 7.6 MB (7607047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b387cf26ec68370008cc2fb72bad23006cf41d6980200079508e7094a96ddc7`  
-		Last Modified: Tue, 21 Oct 2025 08:59:32 GMT  
-		Size: 591.8 MB (591764378 bytes)  
+	-	`sha256:1a91568b8b74a210e10545836dbd5db01517b182cafb9c95fa870cece1311976`  
+		Last Modified: Tue, 04 Nov 2025 10:12:07 GMT  
+		Size: 591.8 MB (591759910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haskell:9-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haskell@sha256:9504df22ecdae8f9a03ab9b1360de796d169b3b1b594cbda638b3b174d7387d0
+$ docker pull haskell@sha256:4f95d6082f5301be19c49946cf2f41dc36d846116625a5f4a5aed0cef92eb417
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6632052 bytes)**  
+-	Total Size: **6.6 MB (6632009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1788409be6ace116c00349cd1fe937a9a4d345d2231b9b9fb976755ac969aec`
+-	Image ID: `sha256:e48e8359aa5ca86f60de6a96299302734012a3f356d521e199ec3d70405e084e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eccbb623ad19227a89646d3e820b2e48231a838e84bef55da8112205bcd8919b`  
-		Last Modified: Tue, 21 Oct 2025 08:49:10 GMT  
+	-	`sha256:f70cb06b83412d11d2e68c3977ffb827e957267db5b059130225eb3eded8259e`  
+		Last Modified: Tue, 04 Nov 2025 09:48:32 GMT  
 		Size: 6.6 MB (6605748 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d637f43f23129c31ec62caccc220c7b72278fef42938f38a31c08640f5729df2`  
-		Last Modified: Tue, 21 Oct 2025 08:49:11 GMT  
-		Size: 26.3 KB (26304 bytes)  
+	-	`sha256:6d312f571e0d29c33428f4a8482f2f51174710323a92187a1e5d17bc7e5b5abe`  
+		Last Modified: Tue, 04 Nov 2025 09:48:33 GMT  
+		Size: 26.3 KB (26261 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haskell:9-slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haskell@sha256:f87339f23125d13adb763215915b4e70f85c600fd6c01603d0e30b65da1081c7
+$ docker pull haskell@sha256:cffdf73402cf4ebca2ffbd28b682ee0199414846b0f5478c7f082f502845c743
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **776.7 MB (776711028 bytes)**  
+-	Total Size: **776.7 MB (776712091 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82469382c43210fd5701f250f735a0aa2cba597b5e56864e4e2eb4c6d101637d`
+-	Image ID: `sha256:e5f3b79a161d8ad9ca214ddd498780db664065a88b69a0d952d249d8a3888c24`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Wed, 20 Aug 2025 11:59:39 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1760918400'
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1762202650'
+# Tue, 04 Nov 2025 00:16:59 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:59 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         ca-certificates         curl         dpkg-dev         git         gcc         gnupg         g++         libc6-dev         libffi-dev         libgmp-dev         libnuma-dev         libtinfo-dev         make         netbase         xz-utils         zlib1g-dev &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:59 GMT
 ARG STACK=3.3.1
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:16:59 GMT
 ARG STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:17:02 GMT
 # ARGS: STACK=3.3.1 STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442
 RUN set -eux;     cd /tmp;     ARCH="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)";     STACK_URL="https://github.com/commercialhaskell/stack/releases/download/v${STACK}/stack-${STACK}-linux-$ARCH.tar.gz";     case "$ARCH" in         'aarch64')             STACK_SHA256='bdd618ea5a9c921417727011f2ecd78987dffa5cee5e741108baf65a9b5b58ab';             ;;         'x86_64')             STACK_SHA256='88d7e517342c125b0a098d9d578fe53e590618ae4b2427283a27408a1ebd06d8';             ;;         *) echo >&2 "error: unsupported architecture '$ARCH'" ; exit 1 ;;     esac;     curl -sSL "$STACK_URL" -o stack.tar.gz;     echo "$STACK_SHA256 stack.tar.gz" | sha256sum --strict --check;         curl -sSL "$STACK_URL.asc" -o stack.tar.gz.asc;     GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;     gpg --batch --keyserver keyserver.ubuntu.com --receive-keys "$STACK_RELEASE_KEY";     gpg --batch --verify stack.tar.gz.asc stack.tar.gz;     gpgconf --kill all;         tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 "stack-$STACK-linux-$ARCH/stack";     stack config set system-ghc --global true;     stack config set install-ghc --global false;         rm -rf /tmp/*;         stack --version; # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:17:02 GMT
 ARG CABAL_INSTALL=3.14.1.1
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:17:02 GMT
 ARG CABAL_INSTALL_RELEASE_KEY=EAF2A9A722C0C96F2B431CA511AAD8CEDEE0CAEF
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:17:04 GMT
 # ARGS: STACK=3.3.1 STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442 CABAL_INSTALL=3.14.1.1 CABAL_INSTALL_RELEASE_KEY=EAF2A9A722C0C96F2B431CA511AAD8CEDEE0CAEF
 RUN set -eux;     cd /tmp;     ARCH="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)";     CABAL_INSTALL_TAR="cabal-install-$CABAL_INSTALL-$ARCH-linux-deb12.tar.xz";     CABAL_INSTALL_URL="https://downloads.haskell.org/~cabal/cabal-install-$CABAL_INSTALL/$CABAL_INSTALL_TAR";     CABAL_INSTALL_SHA256SUMS_URL="https://downloads.haskell.org/~cabal/cabal-install-$CABAL_INSTALL/SHA256SUMS";     case "$ARCH" in         'aarch64')             CABAL_INSTALL_SHA256='f763fb2af2bc1ff174b7361a7d51109a585954f87a0e14f86d144f3bce28f7a9';             ;;         'x86_64')             CABAL_INSTALL_SHA256='73a463306c771e18ca22c0a9469176ffab0138ec5925adb5364ef47174e1adc5';             ;;         *) echo >&2 "error: unsupported architecture '$ARCH'"; exit 1 ;;     esac;     curl -fSL "$CABAL_INSTALL_URL" -o cabal-install.tar.gz;     echo "$CABAL_INSTALL_SHA256 cabal-install.tar.gz" | sha256sum --strict --check;         curl -sSLO "$CABAL_INSTALL_SHA256SUMS_URL";     curl -sSLO "$CABAL_INSTALL_SHA256SUMS_URL.sig";     GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;     gpg --batch --keyserver keyserver.ubuntu.com --receive-keys "$CABAL_INSTALL_RELEASE_KEY";     gpg --batch --verify SHA256SUMS.sig SHA256SUMS;     grep "$CABAL_INSTALL_SHA256  $CABAL_INSTALL_TAR" SHA256SUMS;     gpgconf --kill all;         tar -xf cabal-install.tar.gz -C /usr/local/bin;         rm -rf /tmp/*;         cabal --version # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:17:04 GMT
 ARG GHC=9.12.2
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:17:04 GMT
 ARG GHC_RELEASE_KEY=FFEB7CE81E16A36B3E2DED6F2DE04D4E97DB64AD
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:20:24 GMT
 # ARGS: STACK=3.3.1 STACK_RELEASE_KEY=C5705533DA4F78D8664B5DC0575159689BEFB442 CABAL_INSTALL=3.14.1.1 CABAL_INSTALL_RELEASE_KEY=EAF2A9A722C0C96F2B431CA511AAD8CEDEE0CAEF GHC=9.12.2 GHC_RELEASE_KEY=FFEB7CE81E16A36B3E2DED6F2DE04D4E97DB64AD
 RUN set -eux;     cd /tmp;     ARCH="$(dpkg-architecture --query DEB_BUILD_GNU_CPU)";     GHC_URL="https://downloads.haskell.org/~ghc/$GHC/ghc-$GHC-$ARCH-deb12-linux.tar.xz";     case "$ARCH" in         'aarch64')             GHC_SHA256='bee95bc91a621d8a2e9a9d86dac28ff839605e87316518dae12c779709bd58f1';             ;;         'x86_64')             GHC_SHA256='447ec2fcc773ae9ebc3f39766c719641631274f9b765d7426a8cbe9241677c9f';             ;;         *) echo >&2 "error: unsupported architecture '$ARCH'" ; exit 1 ;;     esac;     curl -sSL "$GHC_URL" -o ghc.tar.xz;     echo "$GHC_SHA256 ghc.tar.xz" | sha256sum --strict --check;         GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;     curl -sSL "$GHC_URL.sig" -o ghc.tar.xz.sig;     gpg --batch --keyserver keyserver.ubuntu.com --receive-keys "$GHC_RELEASE_KEY";     gpg --batch --verify ghc.tar.xz.sig ghc.tar.xz;     gpgconf --kill all;         tar xf ghc.tar.xz;     cd "ghc-$GHC-$ARCH-unknown-linux";     ./configure --prefix "/opt/ghc/$GHC";     make install;         rm -rf /tmp/*;         "/opt/ghc/$GHC/bin/ghc" --version # buildkit
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:20:24 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Aug 2025 11:59:39 GMT
+# Tue, 04 Nov 2025 00:20:24 GMT
 CMD ["ghci"]
 ```
 
 -	Layers:
-	-	`sha256:21b7accdc53fc02b56a5c1cccd412be04189e5a5e674fd092ffbedc72596be91`  
-		Last Modified: Tue, 21 Oct 2025 00:18:57 GMT  
-		Size: 28.1 MB (28102190 bytes)  
+	-	`sha256:162e72af9357868b8f7f48fbf3ea23ddd179a309a9f28f2802a2e785239ec09d`  
+		Last Modified: Tue, 04 Nov 2025 00:13:06 GMT  
+		Size: 28.1 MB (28102376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3001e0a114daafd9befef18983f9f04aa9e747298474666dbab813039bcb6c84`  
-		Last Modified: Tue, 21 Oct 2025 01:22:03 GMT  
-		Size: 118.5 MB (118483782 bytes)  
+	-	`sha256:b8ff39a798dd1acbb241b5e7775936c2a6eda56a4dc672e82c2b0d25a3733c5f`  
+		Last Modified: Tue, 04 Nov 2025 00:22:40 GMT  
+		Size: 118.5 MB (118483359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:027b7f412860c2ea4998d4a7005ebd9e7590f59b844e1392c082cc5cb5986893`  
-		Last Modified: Tue, 21 Oct 2025 01:21:55 GMT  
-		Size: 24.5 MB (24528539 bytes)  
+	-	`sha256:c3417dddf8693327e9bde19fd8dd20233cd5e709a7e8f70e0d88810ea79c04ce`  
+		Last Modified: Tue, 04 Nov 2025 00:22:30 GMT  
+		Size: 24.5 MB (24528551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4732d3b5276a14d659ad63549c5936b86bd43b9ac24532a7fef51fc6a2b0da88`  
-		Last Modified: Tue, 21 Oct 2025 01:21:54 GMT  
+	-	`sha256:4eef0c2c6e73e3505187fbb3c7984d49bb31c2a75754f24151cc90f97ff7e8ed`  
+		Last Modified: Tue, 04 Nov 2025 00:22:30 GMT  
 		Size: 14.0 MB (13969022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7fc9322657c14e9254c391bbde199d50c9ac6a48c7b728dec5dd0cb34762c32`  
-		Last Modified: Fri, 24 Oct 2025 10:53:49 GMT  
-		Size: 591.6 MB (591627495 bytes)  
+	-	`sha256:d75e28655ccec17293dcc698bb5f849dd8a1d8e6b648f174d0c58b36ef4f65df`  
+		Last Modified: Tue, 04 Nov 2025 00:22:13 GMT  
+		Size: 591.6 MB (591628783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haskell:9-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haskell@sha256:a56dc6b914224db69321422049948a06e8b769cbe62b84a1590340e4ae80f99b
+$ docker pull haskell@sha256:36b0545572d06005da3183cdff9a3cd58ea76e9a70bb7ec89cd25387173a9ca4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6660686 bytes)**  
+-	Total Size: **6.7 MB (6660643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2365bc71bd66e821d94084bbd0f1ad1fcbe406a389a5faa07add62b4cd8cbd9a`
+-	Image ID: `sha256:82138943213d73d639e1fe1991548ae0994310ee5eb9e2d44ff7937bdf5fde68`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7a856e3f738093db9ae77b6f87067b86b71b8e31084a473dc897bb6f225d25e9`  
-		Last Modified: Tue, 21 Oct 2025 08:48:32 GMT  
+	-	`sha256:308f9bd8f66e66bab224a4b9556dc8ea21191a4c5e911660ad0dadfda5820151`  
+		Last Modified: Tue, 04 Nov 2025 09:48:41 GMT  
 		Size: 6.6 MB (6634207 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1a76f7dd0356dff9de5b9476521d638a6e8085f78dc79a594a850ceaf0814a38`  
-		Last Modified: Tue, 21 Oct 2025 08:48:33 GMT  
-		Size: 26.5 KB (26479 bytes)  
+	-	`sha256:5b4bafe4df4abe2bc1cc62dd13197a888db6eed3da5a75734e508965b2d70eee`  
+		Last Modified: Tue, 04 Nov 2025 09:48:41 GMT  
+		Size: 26.4 KB (26436 bytes)  
 		MIME: application/vnd.in-toto+json
