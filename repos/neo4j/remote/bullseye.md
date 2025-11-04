@@ -1,7 +1,7 @@
 ## `neo4j:bullseye`
 
 ```console
-$ docker pull neo4j@sha256:d1081996365240ff8646671699085d1fc5214ad226c4febd30a54de6052c7541
+$ docker pull neo4j@sha256:aec4fbf9c75656fc745210c243b76ece3a6c03120cde35036331721196059908
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,69 +14,69 @@ $ docker pull neo4j@sha256:d1081996365240ff8646671699085d1fc5214ad226c4febd30a54
 ### `neo4j:bullseye` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:248081202280b4f8a31b508ff42ae2d1eadcc913756b1af14430a5428f97ae30
+$ docker pull neo4j@sha256:af121c00e4c4d59c8e3e34855b3ff2d112194e201014b9fc8e015eea9d649513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.7 MB (401711933 bytes)**  
+-	Total Size: **401.7 MB (401712260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c2e09e2eec7c3d8c21fc7b8b3b4e9d2c3e2ad87ce4de6c6379f6deca598c94f`
+-	Image ID: `sha256:4c7d31415157ec886eba4b66c5ba5b8da98650292a0551b3313d9ca8192dbe19`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
-# Mon, 20 Oct 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1760918400'
-# Thu, 30 Oct 2025 20:49:07 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1762202650'
+# Tue, 04 Nov 2025 00:31:30 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 30 Oct 2025 20:49:07 GMT
+# Tue, 04 Nov 2025 00:31:30 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 30 Oct 2025 20:49:07 GMT
+# Tue, 04 Nov 2025 00:31:30 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=69ade165e3347a132dea6664fce7fda86f391a7aefb1ab00f21ce940ea692f09 NEO4J_TARBALL=neo4j-community-2025.10.1-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 30 Oct 2025 20:49:07 GMT
+# Tue, 04 Nov 2025 00:31:30 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-2025.10.1-unix.tar.gz
-# Thu, 30 Oct 2025 20:49:07 GMT
+# Tue, 04 Nov 2025 00:31:31 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-2025.10.1-unix.tar.gz
 RUN addgroup --gid 7474 --system neo4j && adduser --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --ingroup neo4j neo4j # buildkit
-# Thu, 30 Oct 2025 20:49:07 GMT
+# Tue, 04 Nov 2025 00:31:31 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-2025.10.1-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && sed -i 's/Package Type:.*/Package Type: docker bullseye/' $NEO4J_HOME/packaging_info     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 VOLUME [/data /logs]
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 30 Oct 2025 20:49:25 GMT
+# Tue, 04 Nov 2025 00:31:50 GMT
 CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:d207cc66da44f4d060efb9a20dc200ca0e6b10c76276d0c1db9c735eaee1d506`  
-		Last Modified: Tue, 21 Oct 2025 00:19:22 GMT  
-		Size: 30.3 MB (30258365 bytes)  
+	-	`sha256:cf5f39ef3fca9730ed04aee5f10040ea152a9793dec0d626f4205eeac5ec3fc0`  
+		Last Modified: Tue, 04 Nov 2025 00:13:10 GMT  
+		Size: 30.3 MB (30258596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ce987248665fed2478ce47997f42ce28203fcab2a1bf67f0b59d843c54d0e32`  
-		Last Modified: Thu, 30 Oct 2025 23:46:05 GMT  
-		Size: 157.8 MB (157804743 bytes)  
+	-	`sha256:8eb948c78662305aad3f400874a5e4a732c3cda6fae6982ae5b79336f1139426`  
+		Last Modified: Tue, 04 Nov 2025 00:32:20 GMT  
+		Size: 157.8 MB (157804746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ca9ec796b46f8f03287f254882e44a0496bc308c3b9167f31797ccabb780cd0`  
-		Last Modified: Thu, 30 Oct 2025 20:49:58 GMT  
-		Size: 3.8 KB (3844 bytes)  
+	-	`sha256:565023666538d402fd19872c20d40818aa5c11d4ec49ff7fd1abeb31893e6fa8`  
+		Last Modified: Tue, 04 Nov 2025 00:32:29 GMT  
+		Size: 3.8 KB (3843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afbcb3f6dc81be65a7919aca7d8eee0b8c5bc0011fa1196bc66de45114f80f3b`  
-		Last Modified: Thu, 30 Oct 2025 20:49:58 GMT  
-		Size: 10.0 KB (10022 bytes)  
+	-	`sha256:005340253fb8a6a4189cee7da5152c7acda9b10e27d55fcddca4a8b4e94b6bbf`  
+		Last Modified: Tue, 04 Nov 2025 00:32:29 GMT  
+		Size: 10.0 KB (10021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d35c4f909d8ebec8119775d9ae07ddd8dbdb1f1cb394328815243235e46cd046`  
-		Last Modified: Thu, 30 Oct 2025 23:46:29 GMT  
-		Size: 213.6 MB (213634927 bytes)  
+	-	`sha256:d71aa23c0247ea3026adbe7897f2177db3df16138cc2bde2e763adf5f742dcf8`  
+		Last Modified: Tue, 04 Nov 2025 00:32:22 GMT  
+		Size: 213.6 MB (213635022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 10 Oct 2025 22:54:50 GMT  
@@ -86,24 +86,24 @@ CMD ["neo4j"]
 ### `neo4j:bullseye` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:a577f7259e17500083710faa252cc4432d85bb01997edb8f5955ba11cfb3c967
+$ docker pull neo4j@sha256:c4eaa024c0528ea8a9c89dd66f2b872fda0d70755fd7565aa42b63a6ce860a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.6 MB (4630357 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a18901042d99806005b3975a4d95f57aaf0fcb1e25d9022ceb57244758a9de99`
+-	Image ID: `sha256:69ccbe408c1aba7adf8c51388082aae9e723d6429e4ad2c95cb85c942622f36c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cfc470609b22de03226f375383a4c271a53ee8c50bbbd355195dc4436d02dc2b`  
-		Last Modified: Thu, 30 Oct 2025 23:43:20 GMT  
+	-	`sha256:1a4462ca032e1fbb550164ba5fe8fc851d41315a7675cb8883ead1f8675bf2ea`  
+		Last Modified: Tue, 04 Nov 2025 09:43:19 GMT  
 		Size: 4.6 MB (4606291 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c682fe4675ab168301b54e1a5eb0bb550d72f74fc1e81a98c64c4a8842c511dd`  
-		Last Modified: Thu, 30 Oct 2025 23:43:21 GMT  
+	-	`sha256:316e5abe10f198449b273ce99a0a279e216df9f14695645242810a95b45ba1b7`  
+		Last Modified: Tue, 04 Nov 2025 09:43:19 GMT  
 		Size: 24.1 KB (24066 bytes)  
 		MIME: application/vnd.in-toto+json
 
