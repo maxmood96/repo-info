@@ -1,7 +1,7 @@
 ## `ruby:3-trixie`
 
 ```console
-$ docker pull ruby@sha256:a781637c56bbb3f296880a5cd7d0d930fd7dde6647a34e38d5df0762260b3f25
+$ docker pull ruby@sha256:7128c7bc096501bf88ee4a4fa05561c161dc4f4f959da5f4e04b68a0065358be
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -323,100 +323,100 @@ $ docker pull ruby@sha256:ca9b6cee9739ce0a76b236a5e0b378960acbbc417e4db78abf1584
 ### `ruby:3-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull ruby@sha256:7210f0a750fbf8fc9c7e21b7ea68567ac09cba440487c4fe010e20074375a859
+$ docker pull ruby@sha256:136113edc3bc831d68c0e9f52b3ec99fff8572fb0e778179b305a1bca47d82e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **410.6 MB (410563545 bytes)**  
+-	Total Size: **410.6 MB (410566623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c75a14a2eeabd49577366394a85527cbfbfa09a96917d486583f4c027d033e5`
+-	Image ID: `sha256:1ac4b05393299d3b197427c522ba325d85d7a0ab52fb6d082a30c6a4ee9e832d`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Wed, 31 Jan 2024 23:01:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1760918400'
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1762202650'
+# Tue, 04 Nov 2025 01:29:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 02:20:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Wed, 31 Jan 2024 23:01:46 GMT
+# Tue, 04 Nov 2025 03:15:57 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	apt-get dist-clean # buildkit
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:23:24 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	echo 'gem: --no-document' >> /usr/local/etc/gemrc # buildkit
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV LANG=C.UTF-8
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV RUBY_VERSION=3.4.7
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.7.tar.xz
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV RUBY_DOWNLOAD_SHA256=db425a86f6e07546957578f4946cc700a91e7fd51115a86c56e096f30e0530c7
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		libgdbm-dev 		ruby 	; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.27.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.84.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "$RUBY_DOWNLOAD_URL"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version # buildkit
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 RUN set -eux; 	mkdir "$GEM_HOME"; 	chmod 1777 "$GEM_HOME" # buildkit
-# Tue, 07 Oct 2025 23:03:17 GMT
+# Tue, 04 Nov 2025 04:25:30 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:2a101b2fcb53d61db540cb76da094137d4f0291a93fa41357ab70c3debf4d3c3`  
-		Last Modified: Tue, 21 Oct 2025 00:22:57 GMT  
-		Size: 49.6 MB (49649743 bytes)  
+	-	`sha256:04077a68e2b807cad70ec4dfc0a2e8e1ff1ea6d9523e4c8f042b9a1ae8a54409`  
+		Last Modified: Tue, 04 Nov 2025 00:13:46 GMT  
+		Size: 49.7 MB (49650430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f510ac7d6fe76c0362c0162daee6964c5b93b20f5ddf65021b0bf3bcce16f306`  
-		Last Modified: Tue, 21 Oct 2025 01:47:21 GMT  
-		Size: 25.0 MB (25017463 bytes)  
+	-	`sha256:d0f766ef2ec48737a0f300405019c312acd667d14467b50c402750d1454e3591`  
+		Last Modified: Tue, 04 Nov 2025 01:30:11 GMT  
+		Size: 25.0 MB (25017577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:721433549fef8bfa398445abce4a12b5c7e64775b3de57bfc3ff37c8ed6fc0e4`  
-		Last Modified: Tue, 21 Oct 2025 02:35:46 GMT  
-		Size: 67.6 MB (67583109 bytes)  
+	-	`sha256:186d0d0b2411f880d1a385216013fead1acb2dee0584aac75da87dfdeb1202db`  
+		Last Modified: Tue, 04 Nov 2025 02:21:20 GMT  
+		Size: 67.6 MB (67583874 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f695ddffd81064f15ea19428e2d643e8b560e48e54ae801a8d63c45ad6ac29`  
-		Last Modified: Tue, 21 Oct 2025 04:14:42 GMT  
-		Size: 226.1 MB (226078014 bytes)  
+	-	`sha256:91656fd58bb5f57cac88ac067f1fad07e73ca96589dd592517520d14bd020eb7`  
+		Last Modified: Tue, 04 Nov 2025 04:13:49 GMT  
+		Size: 226.1 MB (226079884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84359ad08fa0e9d58044c2b7f401bfb0fa48a8ad3d7bed1c1e9dc26730bd0fb3`  
-		Last Modified: Tue, 21 Oct 2025 05:04:22 GMT  
+	-	`sha256:2380116f6481180e4b60afb7fd34decbbcd062612cf1bc6fafc36615c55e9162`  
+		Last Modified: Tue, 04 Nov 2025 04:25:57 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868676a45e45186d8cd2bc9947e5c7a1045f0e6249face93db1bf85673b1bfcd`  
-		Last Modified: Tue, 21 Oct 2025 05:04:27 GMT  
-		Size: 42.2 MB (42234884 bytes)  
+	-	`sha256:5792fd14fffce29027f49b2062ecdb6bae348f5267a686f5570655aa95e8163f`  
+		Last Modified: Tue, 04 Nov 2025 04:26:00 GMT  
+		Size: 42.2 MB (42234527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:774264b265540f08417999b5bb8d80476540ca4952f7d7b043e075136c94b73b`  
-		Last Modified: Tue, 21 Oct 2025 05:04:22 GMT  
-		Size: 143.0 B  
+	-	`sha256:468ee7c8a79242ec9c07b62576bb6f4f7c28bab00c59e1f79585981fc84b93c5`  
+		Last Modified: Tue, 04 Nov 2025 04:25:57 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ruby:3-trixie` - unknown; unknown
 
 ```console
-$ docker pull ruby@sha256:f65466fbc64868d61b76b555856f90d0d992cc7534a93099ff70ab41c7990ec0
+$ docker pull ruby@sha256:603769965766b51f03e53f37ec412f820a2939500b880acbeb6de69755b875d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17433190 bytes)**  
+-	Total Size: **17.4 MB (17433146 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae8e417d558a4c10523e86db2162bd6bed5ca425c3135ce24a913b5375c7189b`
+-	Image ID: `sha256:3523e9e67f1982e49cca21bfc9e33e262c82ab7346849e269377a86882871f74`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:670ef531b3eb280700cdefa2edaad6eafb9de1390e14056a2d410b2849cecbd7`  
-		Last Modified: Tue, 21 Oct 2025 08:58:12 GMT  
+	-	`sha256:e88d81085184fc2a05c6761ebb36f24f8665425727d4c57f24cd69027fc98e3b`  
+		Last Modified: Tue, 04 Nov 2025 10:02:15 GMT  
 		Size: 17.4 MB (17410049 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:23a49262d8bf53dc11f9eaeb9a52cc78869cee75a49e68f65c59e776b06de8ff`  
-		Last Modified: Tue, 21 Oct 2025 08:58:13 GMT  
-		Size: 23.1 KB (23141 bytes)  
+	-	`sha256:b4f507f9d487a64bbce21c71bdd75207180020a8486a2e73cb2863ea7a70e903`  
+		Last Modified: Tue, 04 Nov 2025 10:02:16 GMT  
+		Size: 23.1 KB (23097 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ruby:3-trixie` - linux; 386
