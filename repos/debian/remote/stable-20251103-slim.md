@@ -1,12 +1,14 @@
 ## `debian:stable-20251103-slim`
 
 ```console
-$ docker pull debian@sha256:f19d8a9c3ab546886c0645c8a17e0f25a6f5c9f60be9a138e2ecf086cd635a2f
+$ docker pull debian@sha256:ad7db388b4eb8347e1f83e0fc00a7a7f813ea388e4c2258992fb2fdfb83429c3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 2
+-	Platforms: 4
 	-	linux; arm variant v5
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 
 ### `debian:stable-20251103-slim` - linux; arm variant v5
@@ -50,4 +52,47 @@ $ docker pull debian@sha256:66d3f21cb5d8d7c3bf5879828209d8419f25f31aeb6a503fc6bf
 	-	`sha256:13bddbd8cb681abc1049b5b3d4b13386378a354fd63a991594475b4bb7afccc6`  
 		Last Modified: Tue, 04 Nov 2025 01:26:40 GMT  
 		Size: 2.0 MB (1978873 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:stable-20251103-slim` - linux; riscv64
+
+```console
+$ docker pull debian@sha256:bfff14b3a386122162c9d8b743f357a4e596765eb1c21728ef7689d29738932d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **28.3 MB (28275786 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cb2a8547b8736635d0cd7b7a88956e6d3cfb6cd2b5b590731b136cec2c2a99b9`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'stable' '@1762202650'
+```
+
+-	Layers:
+	-	`sha256:b43763ed4aebba602c6aaa89b4e764f9c26238c738b42229edc34f5f42cd1852`  
+		Last Modified: Tue, 04 Nov 2025 00:22:12 GMT  
+		Size: 28.3 MB (28275786 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:stable-20251103-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:b1ff6070f4b981427cfb0ccb8e78d9ffa721eb5173f166d243d9943da1155155
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.0 MB (1969835 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:706206801c023c542bad0996d93f2645c9782d429e7f717bcf622ca1d5a7d628`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e472764916f2d355a8b7804e8f9c150d0fbf32efbc50c49dd64fe95f2ff3b63d`  
+		Last Modified: Tue, 04 Nov 2025 07:29:11 GMT  
+		Size: 2.0 MB (1969835 bytes)  
 		MIME: application/vnd.in-toto+json
