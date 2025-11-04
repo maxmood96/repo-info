@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd7d154a9b247ee8a5550a1ddb7446ebb9e77ce9b658f3158c0c921210aeeb17`
-- Created: `2025-09-17T16:00:47Z`
+- Image ID: `sha256:38db8f6bd0220201b6d5b804271fc9c98f8a42b1f4d81d6a1e21d2394e001655`
+- Created: `2025-11-04T11:02:30.84948556Z`
 - Virtual Size: ~ 1.65 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2553,72 +2553,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gsettings-desktop-schemas/43.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gsettings-desktop-schemas/43.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gssdp=1.6.2-2`
-
-Binary Packages:
-
-- `libgssdp-1.6-0:amd64=1.6.2-2`
-
-Licenses: (parsed from: `/usr/share/doc/libgssdp-1.6-0/copyright`)
-
-- `LGPL-2.1`
-- `LGPL-2.1+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gssdp=1.6.2-2
-'http://deb.debian.org/debian/pool/main/g/gssdp/gssdp_1.6.2-2.dsc' gssdp_1.6.2-2.dsc 2745 SHA256:14d2c15e8e58ef6bc3937b7b9164fd603271ccc64dd1476dc8d80e2c967ccd42
-'http://deb.debian.org/debian/pool/main/g/gssdp/gssdp_1.6.2.orig.tar.xz' gssdp_1.6.2.orig.tar.xz 1144968 SHA256:e9c226feedee090425681260c40daa7c430edce3350a1b0f9f0711389ca4f72e
-'http://deb.debian.org/debian/pool/main/g/gssdp/gssdp_1.6.2-2.debian.tar.xz' gssdp_1.6.2-2.debian.tar.xz 7688 SHA256:5e1007d8f221483b8397416b3b078565be3ad8aea149bdb652540f264804e8c6
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gssdp/1.6.2-2/ (for browsing the source)
-- https://sources.debian.net/src/gssdp/1.6.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gssdp/1.6.2-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gst-plugins-bad1.0=1.22.0-4+deb12u6`
-
-Binary Packages:
-
-- `libgstreamer-plugins-bad1.0-0:amd64=1.22.0-4+deb12u6`
-
-Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-bad1.0-0/copyright`)
-
-- `BSD (2 clause)`
-- `BSD (3 clause)`
-- `GPL-2+`
-- `GPL-3+`
-- `LGPL`
-- `LGPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `MIT/X11 (BSD like)`
-- `MIT/X11 (BSD like) LGPL-2+`
-- `MPL-1.1`
-- `MPL-1.1 GPL`
-- `MPL-1.1 GPL GPL-2+ LGPL (v2`
-- `MPL-1.1 LGPL-2+`
-- `UNKNOWN`
-- `later) (with incorrect FSF address)`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gst-plugins-bad1.0=1.22.0-4+deb12u6
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-bad1.0/gst-plugins-bad1.0_1.22.0-4%2bdeb12u6.dsc' gst-plugins-bad1.0_1.22.0-4+deb12u6.dsc 5828 SHA256:f9d231260253270068d3ff54599945a8611c0b62e273d8ced1a6f6589b7330d9
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-bad1.0/gst-plugins-bad1.0_1.22.0.orig.tar.xz' gst-plugins-bad1.0_1.22.0.orig.tar.xz 5500728 SHA256:3c9d9300f5f4fb3e3d36009379d1fb6d9ecd79c1a135df742b8a68417dd663a1
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-bad1.0/gst-plugins-bad1.0_1.22.0-4%2bdeb12u6.debian.tar.xz' gst-plugins-bad1.0_1.22.0-4+deb12u6.debian.tar.xz 44460 SHA256:10fb9edfdf7d5ca902391ba7c8949b729a832650e4f981c1108ab0c1bbb0b805
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gst-plugins-bad1.0/1.22.0-4+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/gst-plugins-bad1.0/1.22.0-4+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gst-plugins-bad1.0/1.22.0-4+deb12u6/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `gst-plugins-base1.0=1.22.0-3+deb12u5`
 
 Binary Packages:
@@ -2753,58 +2687,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gtk+3.0/3.24.38-2~deb12u3/ (for browsing the source)
 - https://sources.debian.net/src/gtk+3.0/3.24.38-2~deb12u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gtk+3.0/3.24.38-2~deb12u3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gupnp-igd=1.2.0-3`
-
-Binary Packages:
-
-- `libgupnp-igd-1.0-4:amd64=1.2.0-3`
-
-Licenses: (parsed from: `/usr/share/doc/libgupnp-igd-1.0-4/copyright`)
-
-- `GPL-3`
-- `LGPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gupnp-igd=1.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gupnp-igd/gupnp-igd_1.2.0-3.dsc' gupnp-igd_1.2.0-3.dsc 2473 SHA256:9573c6a8358937d7ec102b1bfd52580fc20c097676a3afbb831eea856c5c5392
-'http://deb.debian.org/debian/pool/main/g/gupnp-igd/gupnp-igd_1.2.0.orig.tar.xz' gupnp-igd_1.2.0.orig.tar.xz 26100 SHA256:4b5120098aa13edd27818ba9ee4d7fe961bf540bf50d056ff703c61545e02be1
-'http://deb.debian.org/debian/pool/main/g/gupnp-igd/gupnp-igd_1.2.0-3.debian.tar.xz' gupnp-igd_1.2.0-3.debian.tar.xz 6840 SHA256:38461a358c3880acef4e6eb1350fc11d8fdbafcbeb48004e43425e6dcc7dabe0
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gupnp-igd/1.2.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gupnp-igd/1.2.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gupnp-igd/1.2.0-3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `gupnp=1.6.3-1`
-
-Binary Packages:
-
-- `libgupnp-1.6-0:amd64=1.6.3-1`
-
-Licenses: (parsed from: `/usr/share/doc/libgupnp-1.6-0/copyright`)
-
-- `LGPL-2`
-- `LGPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gupnp=1.6.3-1
-'http://deb.debian.org/debian/pool/main/g/gupnp/gupnp_1.6.3-1.dsc' gupnp_1.6.3-1.dsc 2620 SHA256:2ece2f453d9b5be907c12bc7d39a453262245d113dba4645b9ffc4a18ad250ac
-'http://deb.debian.org/debian/pool/main/g/gupnp/gupnp_1.6.3.orig.tar.xz' gupnp_1.6.3.orig.tar.xz 162260 SHA256:797fcccdc63885cbb262c298394c065cbb09ee2aada90870007f32cb4439dad8
-'http://deb.debian.org/debian/pool/main/g/gupnp/gupnp_1.6.3-1.debian.tar.xz' gupnp_1.6.3-1.debian.tar.xz 9960 SHA256:6e1042e700f7c9496cf69ee8e009ce732f8d66a33906e5bcb97c965c1e890334
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gupnp/1.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/gupnp/1.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gupnp/1.6.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.12-1`
 
@@ -4639,34 +4521,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.0.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libnice=0.1.21-1`
-
-Binary Packages:
-
-- `libnice10:amd64=0.1.21-1`
-
-Licenses: (parsed from: `/usr/share/doc/libnice10/copyright`)
-
-- `GPL`
-- `GPL-2`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libnice=0.1.21-1
-'http://deb.debian.org/debian/pool/main/libn/libnice/libnice_0.1.21-1.dsc' libnice_0.1.21-1.dsc 2439 SHA256:b6e6908b2a6d482176e9522653b2240e768c0d46207ff596bc6e98cf0f14b591
-'http://deb.debian.org/debian/pool/main/libn/libnice/libnice_0.1.21.orig.tar.gz' libnice_0.1.21.orig.tar.gz 460086 SHA256:72e73a2acf20f59093e21d5601606e405873503eb35f346fa621de23e99b3b39
-'http://deb.debian.org/debian/pool/main/libn/libnice/libnice_0.1.21.orig.tar.gz.asc' libnice_0.1.21.orig.tar.gz.asc 195 SHA256:50a7a999fd2ab975bea8279012eea4dd0d341302b42ea4368160bbafa113a625
-'http://deb.debian.org/debian/pool/main/libn/libnice/libnice_0.1.21-1.debian.tar.xz' libnice_0.1.21-1.debian.tar.xz 17232 SHA256:d2dcc1011b2d675c7a189049da5f1d48acb0bd4bcc1100ca7af4fd9021c605fd
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libnice/0.1.21-1/ (for browsing the source)
-- https://sources.debian.net/src/libnice/0.1.21-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libnice/0.1.21-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libnotify=0.8.1-1`
 
 Binary Packages:
@@ -5280,37 +5134,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsoup2.4/2.74.3-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsoup2.4/2.74.3-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libsoup3=3.2.3-0+deb12u2`
-
-Binary Packages:
-
-- `libsoup-3.0-0:amd64=3.2.3-0+deb12u2`
-- `libsoup-3.0-common=3.2.3-0+deb12u2`
-
-Licenses: (parsed from: `/usr/share/doc/libsoup-3.0-0/copyright`, `/usr/share/doc/libsoup-3.0-common/copyright`)
-
-- `Expat`
-- `LGPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `MPL-2.0`
-- `RSA-Other`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libsoup3=3.2.3-0+deb12u2
-'http://deb.debian.org/debian/pool/main/libs/libsoup3/libsoup3_3.2.3-0%2bdeb12u2.dsc' libsoup3_3.2.3-0+deb12u2.dsc 3514 SHA256:b00656d3dc925048e575643f7ea701ffc3d1e2ec677372b77255284e0b810be6
-'http://deb.debian.org/debian/pool/main/libs/libsoup3/libsoup3_3.2.3.orig.tar.xz' libsoup3_3.2.3.orig.tar.xz 1530552 SHA256:3f50c2a883d7e984e31ecbaa35326b4e6bc6357bd3eed9bb4eb49154ebadd2fd
-'http://deb.debian.org/debian/pool/main/libs/libsoup3/libsoup3_3.2.3-0%2bdeb12u2.debian.tar.xz' libsoup3_3.2.3-0+deb12u2.debian.tar.xz 38208 SHA256:34a04a865a644a16d635f55454ba06d52329806de943a95ed245384e6ea077b6
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libsoup3/3.2.3-0+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/libsoup3/3.2.3-0+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup3/3.2.3-0+deb12u2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libssh2=1.10.0-3`
 
 Binary Packages:
@@ -5575,36 +5398,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunwind/1.6.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunwind/1.6.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libva=2.17.0-1`
-
-Binary Packages:
-
-- `libva-drm2:amd64=2.17.0-1`
-- `libva2:amd64=2.17.0-1`
-
-Licenses: (parsed from: `/usr/share/doc/libva-drm2/copyright`, `/usr/share/doc/libva2/copyright`)
-
-- `Expat`
-- `Expat-advertising`
-- `GPL-2`
-- `GPL-2+`
-- `other`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libva=2.17.0-1
-'http://deb.debian.org/debian/pool/main/libv/libva/libva_2.17.0-1.dsc' libva_2.17.0-1.dsc 2450 SHA256:3cf91a923dd7ad70c1c169a8b623b5ffa020804a7fb992ce848ba88b8152ee60
-'http://deb.debian.org/debian/pool/main/libv/libva/libva_2.17.0.orig.tar.gz' libva_2.17.0.orig.tar.gz 276993 SHA256:8940541980ef998a36cd8f6ad905e81838ea4ddf56dc479ed2bebd12711e6001
-'http://deb.debian.org/debian/pool/main/libv/libva/libva_2.17.0-1.debian.tar.xz' libva_2.17.0-1.debian.tar.xz 12060 SHA256:f9413175899831df8b72ba78e7294e7363f11ae9af4b2863613497ffd97a7319
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libva/2.17.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libva/2.17.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libva/2.17.0-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libvisual=0.4.0-19`
 
 Binary Packages:
@@ -5820,7 +5613,6 @@ Binary Packages:
 - `libxcb-shm0-dev:amd64=1.15-1`
 - `libxcb-sync1:amd64=1.15-1`
 - `libxcb-xfixes0:amd64=1.15-1`
-- `libxcb-xkb1:amd64=1.15-1`
 - `libxcb1:amd64=1.15-1`
 - `libxcb1-dev:amd64=1.15-1`
 
@@ -6076,7 +5868,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libxkbcommon-x11-0:amd64=1.5.0-1`
 - `libxkbcommon0:amd64=1.5.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -8722,32 +8513,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/v4l-utils/1.22.1-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/v4l-utils/1.22.1-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `vulkan-loader=1.3.239.0-1`
-
-Binary Packages:
-
-- `libvulkan1:amd64=1.3.239.0-1`
-
-Licenses: (parsed from: `/usr/share/doc/libvulkan1/copyright`)
-
-- `Apache-2.0`
-- `MIT`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris vulkan-loader=1.3.239.0-1
-'http://deb.debian.org/debian/pool/main/v/vulkan-loader/vulkan-loader_1.3.239.0-1.dsc' vulkan-loader_1.3.239.0-1.dsc 2252 SHA256:991b9b9043c2b4b4e8bcb455b42cb01d2a83a7a54355bb8b6037eba1e8cfe08d
-'http://deb.debian.org/debian/pool/main/v/vulkan-loader/vulkan-loader_1.3.239.0.orig.tar.xz' vulkan-loader_1.3.239.0.orig.tar.xz 2422936 SHA256:90ca97151d774ea3f00129ad32be03cdfa310215651ceec0cd9fc2d0d1804d86
-'http://deb.debian.org/debian/pool/main/v/vulkan-loader/vulkan-loader_1.3.239.0-1.debian.tar.xz' vulkan-loader_1.3.239.0-1.debian.tar.xz 8956 SHA256:c38c319e1137549ddea481b811cfb39bca015ddc11876a915ad78c664cb7746e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/vulkan-loader/1.3.239.0-1/ (for browsing the source)
-- https://sources.debian.net/src/vulkan-loader/1.3.239.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vulkan-loader/1.3.239.0-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `wavpack=5.6.0-1`
 
 Binary Packages:
@@ -8803,12 +8568,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.21.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.21.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.48.5-1~deb12u1`
+### `dpkg` source package: `webkit2gtk=2.50.1-1~deb12u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.48.5-1~deb12u1`
-- `libwebkit2gtk-4.0-37:amd64=2.48.5-1~deb12u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.50.1-1~deb12u1`
+- `libwebkit2gtk-4.0-37:amd64=2.50.1-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8847,18 +8612,18 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris webkit2gtk=2.48.5-1~deb12u1
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.48.5-1%7edeb12u1.dsc' webkit2gtk_2.48.5-1~deb12u1.dsc 5196 SHA256:32b22889bea94e21c8cdfee21bf8ec1795966df3a031c9bc0a3cca87fe02f5ad
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.48.5.orig.tar.xz' webkit2gtk_2.48.5.orig.tar.xz 44131936 SHA256:bb64ed9d1cfd58e8b5e89ccad71dd31adfed56336bad7695031ad0b668e1987c
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.48.5.orig.tar.xz.asc' webkit2gtk_2.48.5.orig.tar.xz.asc 833 SHA256:7fe23fa8aac8d768e9aa07462e9b4539ffe9a36a1427d468e42b87dc62008257
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.48.5-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.48.5-1~deb12u1.debian.tar.xz 91036 SHA256:cfb3a5ce3bb4b4d549a6c8c9ba36d2e5d12c95f94add75a858f13fdaeb9b87af
+$ apt-get source -qq --print-uris webkit2gtk=2.50.1-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.1-1%7edeb12u1.dsc' webkit2gtk_2.50.1-1~deb12u1.dsc 5185 SHA256:46a021e0c44bfec5108bfa1ae583d7e452eebde7ac4a1a344b0c0e4221fc5bc9
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.1.orig.tar.xz' webkit2gtk_2.50.1.orig.tar.xz 45269396 SHA256:33e912ee6e3cdb4b9803715f50686af85a60af47f1cf72a6acc6a2db1bb3d9fe
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.1.orig.tar.xz.asc' webkit2gtk_2.50.1.orig.tar.xz.asc 833 SHA256:e7889df60fa2ec3857b9db0cf2dfa783222f0b7fb15a77602d2044f83a200961
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.50.1-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.50.1-1~deb12u1.debian.tar.xz 91612 SHA256:1704a10965d7d24506d2d710b573168285229df3c0d342f0e25d77c4b384b311
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/webkit2gtk/2.48.5-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.48.5-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.48.5-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/webkit2gtk/2.50.1-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.50.1-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.50.1-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1+deb12u1`
 
