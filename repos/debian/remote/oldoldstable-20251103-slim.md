@@ -1,17 +1,62 @@
 ## `debian:oldoldstable-20251103-slim`
 
 ```console
-$ docker pull debian@sha256:f3f0a8b3957f30a9978e402ea25a6b8a5f2ab0599ee1341b10d3581baaafc659
+$ docker pull debian@sha256:2d0a7a177ac5544685bbf7dbca329e3d76de54005e041a39a9a9b755a87e6331
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 6
+-	Platforms: 8
+	-	linux; amd64
+	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
 	-	unknown; unknown
+
+### `debian:oldoldstable-20251103-slim` - linux; amd64
+
+```console
+$ docker pull debian@sha256:a0d6b8a08ab5b2bf7ec0f7f48a6a619fcc038b77e8222691d6037f968592cac0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258597 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a2ccf9efac3e6d0808372569d73f5eaacff4576df8fb12eabf7ed516760955b5`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'amd64' out/ 'oldoldstable' '@1762202650'
+```
+
+-	Layers:
+	-	`sha256:699ad41cd14fd9e8df4c1088aa89f07d4b99ad37d0afd30eb332f7e3efe2e59d`  
+		Last Modified: Tue, 04 Nov 2025 00:13:30 GMT  
+		Size: 30.3 MB (30258597 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:oldoldstable-20251103-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:14cef846226301c910b0bb80c7d618bd9fa6ea84fc503fa6367cef685bedec56
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2667340 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dbd9901f4f0043f40b90fe14dafa47446ac1d8accf5a97fa65ddc440ceaa7ef4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e0454c2f6b2371bea9e7c61e0d2640446dc84769aee38661e7b1c9c640edf530`  
+		Last Modified: Tue, 04 Nov 2025 10:26:04 GMT  
+		Size: 2.7 MB (2667340 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `debian:oldoldstable-20251103-slim` - linux; arm variant v7
 

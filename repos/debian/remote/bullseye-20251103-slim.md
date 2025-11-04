@@ -1,16 +1,18 @@
 ## `debian:bullseye-20251103-slim`
 
 ```console
-$ docker pull debian@sha256:cb1d6d9195dbf0be30775c72ec723285af20d88d547fd47a6468fd7f4abda6ab
+$ docker pull debian@sha256:75e0b7a6158b4cc911d4be07d9f6b8a65254eb8c58df14023c3da5c462335593
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 6
+-	Platforms: 8
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
 	-	unknown; unknown
 	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; 386
 	-	unknown; unknown
 
 ### `debian:bullseye-20251103-slim` - linux; amd64
@@ -140,4 +142,47 @@ $ docker pull debian@sha256:adafefc94a5f576459c5be9c8e92eb77a44118d00f150b12fbfa
 	-	`sha256:db73b780002bb8ca594f07ddb40f156b301c1a4c2acf3b37d04210b3353cd28c`  
 		Last Modified: Tue, 04 Nov 2025 01:23:36 GMT  
 		Size: 2.7 MB (2667536 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:bullseye-20251103-slim` - linux; 386
+
+```console
+$ docker pull debian@sha256:7b802db109477d6f26a6c947572a3527250ae5038e1e9f6fc94d3762f33d7336
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.2 MB (31191667 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b9644eaa94ffb52daa17b03aad30eaf9f467fd6d01e77bef8a00de5373d31ed3`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 03 Nov 2025 20:44:10 GMT
+RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1762202650'
+```
+
+-	Layers:
+	-	`sha256:56d9ac38e76a44e89bc08ed485ad52f65d899438b382b7cf8d3c2d3fbbd6ad3f`  
+		Last Modified: Tue, 04 Nov 2025 00:14:00 GMT  
+		Size: 31.2 MB (31191667 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bullseye-20251103-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:d9406d34f48c76bb3bdd2bf7e6ff0afea2995017ce278ee58b743c3fc6d3cd14
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2664542 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:43935e62b60f6f732b15a73e448088648edfc777246e2bf2ee3d4d7d0d8544cc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:20194b5f4fe9c54d02c1162d1d0a240904a5373d3bb99f2f01ff320e60c890b3`  
+		Last Modified: Tue, 04 Nov 2025 09:46:33 GMT  
+		Size: 2.7 MB (2664542 bytes)  
 		MIME: application/vnd.in-toto+json
